@@ -1,0 +1,213 @@
+              OPERATOR NAMING GRAMMAR
+                 (Redding Notation)
+============================================================
+
+This document defines a general naming scheme for operators
+of the form:
+
+    (generator)_(type)^(regime)
+
+This serves as a universal annotation style for generative,
+transformative, or evaluative operators across all systems.
+
+The canonical operator signature is:
+
+    (generator)_(type)^(regime)
+
+where:
+
+    Generator : the operator family
+    Type      : the functional role
+    Regime    : the operational mode
+
+More formally:
+
+    Operator = G_t^r
+
+with:
+
+    G ∈ Generator Family
+    t ∈ Operator Types
+    r ∈ Operational Regimes
+
+This makes every operator a member of a three-level taxonomy.
+
+
+------------------------------------------------------------
+1. CORE PATTERN
+------------------------------------------------------------
+
+Every operator follows the schema:
+
+    (generator)_(noun/type)^(verb/adjective)
+
+Where:
+
+    generator      = the base operator (Q, Xi, T, D, etc.)
+    noun/type      = operator category or functional role
+    verb/adjective = regime, mode, or rule in effect
+
+This pattern is independent of any specific theory.
+
+
+------------------------------------------------------------
+LEVEL 1 — GENERATOR (Base Family)
+------------------------------------------------------------
+
+Answers the question:
+
+    "What family does this belong to?"
+
+Examples:
+
+    Q     		Q	admissibility
+    Xi    		Ξ	transformation
+    Gamma 		Γ	closure
+    Delta 		Δ	difference
+    Sigma 		Σ	aggregation
+    Pi    		Π	projection
+    Lambda 		Λ	lifting
+    T     		T	transport
+    D     		D	dynamics
+
+These are families, not specific operators.
+
+------------------------------------------------------------
+LEVEL 2 — TYPE (Subscript)
+------------------------------------------------------------
+
+Answers the question:
+
+    "What does this operator do?"
+
+Examples:
+
+    a   admissibility
+    t   transformation
+    c   closure
+    p   projection
+    e   evaluation
+    n   normalization
+    f   filtering
+    m   measurement
+    g   generation
+
+These are roles, not implementations.
+
+
+------------------------------------------------------------
+LEVEL 3 — REGIME (Superscript)
+------------------------------------------------------------
+
+Answers the question:
+
+    "Under what rules is it operating?"
+
+Numeric regimes:
+
+    1   classical
+    2   damped
+    3   hysteretic
+    4   stochastic
+    5   quantum
+    6   nonlinear
+
+Symbolic regimes:
+
+    S   structural
+    F   field
+    D   dynamic
+    L   local
+    G   global
+    A   adaptive
+
+The superscript is a policy selector.
+
+------------------------------------------------------------
+2. LONG-FORM vs SHORT-FORM
+------------------------------------------------------------
+
+Long-form (first appearance):
+
+    Q_admissibility^classical
+    Xi_transformation^structural
+
+Short-form (after definition):
+
+    Q_a^1
+    Xi_t^S
+
+Mapping:
+
+    Q_admissibility^classical  -->  Q_a^1
+
+
+------------------------------------------------------------
+3. EXAMPLE: ADMISSIBILITY GENERATORS
+------------------------------------------------------------
+
+Long-form definitions:
+
+    Q_admissibility^classical   = i
+    Q_admissibility^damped      = i + delta_damped
+    Q_admissibility^hysteretic  = i + delta_hysteretic
+
+Short-form equivalents:
+
+    Q_a^1 = i
+    Q_a^2 = i + delta_a^2
+    Q_a^3 = i + delta_a^3
+
+
+------------------------------------------------------------
+4. EXAMPLE: XI-OPERATORS
+------------------------------------------------------------
+
+Long-form:
+
+    Xi_transformation^structural
+    Xi_transformation^field
+    Xi_transformation^dynamic
+
+Short-form:
+
+    Xi_t^S
+    Xi_t^F
+    Xi_t^D
+
+
+------------------------------------------------------------
+5. SUMMARY
+------------------------------------------------------------
+
+All operators follow:
+
+    (generator)_(type)^(regime)
+
+Rules:
+
+    - Long-form is used on first introduction.
+    - Short-form is used thereafter.
+    - Superscripts index regimes.
+    - Subscripts denote operator type.
+
+Canonical example:
+
+    Q_admissibility^classical = Q_a^1 = i
+
+
+============================================================
+CANONICAL FORM
+============================================================
+
+    G_t^r
+
+Examples:
+
+    Q_a^1     classical admissibility generator
+    Q_a^3     hysteretic admissibility generator
+    Xi_t^S    structural transformation operator
+    Pi_p^L    local projection operator
+    D_m^4     stochastic measurement operator
+
+============================================================
