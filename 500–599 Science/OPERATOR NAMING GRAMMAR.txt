@@ -195,6 +195,33 @@ Canonical example:
 
     Q_admissibility^classical = Q_a^1 = i
 
+------------------------------------------------------------
+6. DOCUMENT-LOCAL ALIASES
+------------------------------------------------------------
+
+The canonical operator identifier is always given by
+
+    G_t^r
+
+or its long-form equivalent.
+
+After an operator has been introduced, authors may define
+document-local aliases or abbreviations to improve readability.
+
+Examples:
+
+    Q_a^1  := Q₀
+    Γ_c^A  := Γ*
+    Ξ_t^S  := ΞS
+
+Such aliases are purely typographical conveniences and have
+no semantic status outside the document in which they are
+defined.
+
+All aliases should be listed in an appendix or notation table.
+
+The canonical identifier G_t^r remains the authoritative
+reference.
 
 ============================================================
 CANONICAL FORM
