@@ -267,3 +267,112 @@ Limitations:
 ============================================================
 END OF PRESIDENTIAL GREATNESS / ADMIRATION MODEL (SEM EDITION)
 ============================================================
+
+============================================================
+FUTURE IMPROVEMENTS & DUAL‑USE APPLICATIONS
+============================================================
+
+The model is intentionally **fully exposed**: every latent, every
+indicator, every path can be tuned, moderated, or replaced. This
+section outlines how the framework can evolve and how it can be
+repurposed beyond U.S. presidents.
+
+============================================================
+IMPROVEMENTS TO OPPORTUNITY (O)
+============================================================
+- Richer crisis taxonomy:
+    Military / Economic / Constitutional / Social crises
+- Temporal weighting:
+    Early‑term vs. late‑term crises may have different leverage
+- External validators:
+    Independent “difficulty of context” ratings to anchor O
+- Nonlinear O:
+    Threshold effects (e.g., mild crises ≠ major crises)
+
+============================================================
+REFINEMENTS TO PERFORMANCE (P)
+============================================================
+- Dynamic P:
+    P₁, P₂, … across time instead of a single static factor
+- Alternative subfactor structures:
+    C, M, R as correlated first‑order factors (not strictly 2nd‑order)
+- Nonlinear performance:
+    Diminishing returns or saturation effects
+- Moderated performance:
+    P moderated by era, polarization, or institutional fragmentation
+
+============================================================
+EXPANDING GREATNESS (G)
+============================================================
+- Public admiration indicators:
+    Gallup, Pew, long‑run approval trajectories
+- Legacy indicators:
+    Textbook citations, memorialization, scholarly networks
+- Time‑decay corrections:
+    Bayesian shrinkage to reduce recency bias
+- Cross‑domain validation:
+    Compare G with independent historical reputation datasets
+
+============================================================
+MODERATORS & INTERACTIONS
+============================================================
+Because the architecture is structural, moderators can be inserted
+cleanly on any path:
+
+- Party system era:
+    Moderates O → P (polarization reduces effective performance)
+- Media environment:
+    Moderates P → G (signal extraction harder in modern era)
+- Institutional fragmentation:
+    Moderates O × P → G (divided government dampens amplification)
+- Normative weighting:
+    Adjust λ_C, λ_M, λ_R to reflect different theories of leadership
+
+============================================================
+BAYESIAN & SIMULATION ENHANCEMENTS
+============================================================
+- Prior sensitivity analysis:
+    Test “skill‑centric”, “morality‑centric”, “regime‑change‑centric”
+    prior structures
+- Small‑N simulation:
+    Evaluate identifiability and estimator bias at N≈45
+- Posterior predictive checks:
+    Ensure model reproduces known historical patterns
+- Counterfactual simulation:
+    “What if Hoover had FDR‑level P given the same O?”
+
+============================================================
+DUAL‑USE APPLICATIONS
+============================================================
+The O–P–G architecture generalizes to any domain where context,
+performance, and evaluation interact.
+
+1. Comparative political leadership:
+    Prime ministers, monarchs, revolutionary leaders
+2. Organizational leadership:
+    CEOs, university presidents, agency heads
+3. Crisis or military leadership:
+    Generals, emergency managers, wartime executives
+4. Cultural/scientific achievement:
+    Artists, scientists, inventors (O = historical moment)
+5. Scenario analysis:
+    Counterfactuals, normative reweighting, era‑specific recalibration
+
+============================================================
+WHY THIS MATTERS
+============================================================
+- The model is not a fixed ranking machine.
+- It is a **transparent, tunable system** where:
+      • O can be redefined
+      • P can be decomposed or reweighted
+      • G can be expanded or corrected
+      • Moderators can be inserted anywhere
+- This makes the framework suitable for:
+      • empirical refinement
+      • theoretical debate
+      • cross‑domain reuse
+      • counterfactual exploration
+
+============================================================
+END OF FUTURE IMPROVEMENTS & DUAL‑USE SECTION
+============================================================
