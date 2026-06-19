@@ -72,31 +72,31 @@ Structural (mediation-enhanced hybrid — preferred):
 4. PATH DIAGRAM (SIMPLIFIED ASCII)
 ============================================================
 
-  [Years]     [War]    [Crises]  [Context]
-     │          │         │         │
+  [Years]  [War]  [Crises]  [Context]
+     │       │       │      │
      └───────┴───────┴──────┘
                     ▼
               ┌─────────────┐
-              │   O (Formative)  │
+              │O (Formative)│
               └─────────────┘
                     │
                     ▼
               ┌──────────┐
-              │      P       │
-              │ (2nd-order)  │
+              │  P       │
+              │ (2 order)│
               └──────────┘
-               │     │     │
-               ▼     ▼     ▼
-              [C]   [M]   [R]
+               │    │    │
+               ▼    ▼    ▼
+              [C]  [M]  [R]
 
                     ▲
                     │
               ┌──────────┐
-              │     G        │◄───[O × P]
+              │     G    │◄───[O × P]
               └──────────┘
                     ▲
-  ┌────────────┴────────────┐
-[C-SPAN]   [Siena]   [Schlesinger]   [Ridings]
+      ┌────────────┴────────────┐
+ [C-SPAN] [Siena] [Schlesinger] [Ridings]
 
 ============================================================
 5. COMPETING SPECIFICATIONS
@@ -280,12 +280,16 @@ repurposed beyond U.S. presidents.
 ============================================================
 IMPROVEMENTS TO OPPORTUNITY (O)
 ============================================================
+
 - Richer crisis taxonomy:
     Military / Economic / Constitutional / Social crises
+
 - Temporal weighting:
     Early‑term vs. late‑term crises may have different leverage
+
 - External validators:
     Independent “difficulty of context” ratings to anchor O
+
 - Nonlinear O:
     Threshold effects (e.g., mild crises ≠ major crises)
 
@@ -362,11 +366,13 @@ performance, and evaluation interact.
 WHY THIS MATTERS
 ============================================================
 - The model is not a fixed ranking machine.
-- It is a **transparent, tunable system** where:
+
+- It is a transparent, tunable system where:
       • O can be redefined
       • P can be decomposed or reweighted
       • G can be expanded or corrected
       • Moderators can be inserted anywhere
+
 - This makes the framework suitable for:
       • empirical refinement
       • theoretical debate
