@@ -1,0 +1,865 @@
+U.S. HOUSING AFFORDABILITY
+============================================================
+
+Convention: In the original spine (below), P can be read as
+ either home price or loan principal depending on context.
+
+Part B disambiguates explicitly: H = home price / value,
+ L = loan principal = H * (1 - down%), V = house value
+ (equivalent to H in most uses).
+
+============================================================
+PART A: COMPLETE ORIGINAL MATH SPINE
+============================================================
+
+1. MONTHLY MORTGAGE PAYMENT (PMT)
+   PMT = [P * (r/12)] / [1 - (1 + r/12)^(-n)]
+
+   Annuity factor form:
+   A_n = (r/12) / [1 - (1 + r/12)^(-n)]
+   => PMT = P * A_n
+
+   Solve for principal:
+   P = PMT * [1 - (1 + r/12)^(-n)] / (r/12)
+
+2. NAR HOUSING AFFORDABILITY INDEX (HAI)
+   HAI = (25 * MFI) / (12 * PMT_PITI)
+
+   Inversions:
+   PMT_PITI = (25 * MFI) / (12 * HAI)
+   MFI      = (12 * HAI * PMT_PITI) / 25
+
+3. PRICE-TO-INCOME RATIO (PIR)
+
+   PIR = Median Home Price / Median Household Income
+
+   Home Price = PIR * Income
+   Income     = Home Price / PIR
+
+4. HOUSING COST BURDEN (Share)
+
+   Share = Total Monthly Payment / Monthly Income
+   Total Payment = m + i + t + maintenance
+
+   Max affordable payment (target burden s):
+   Total Payment_max = s * Monthly Income
+
+5. REQUIRED ANNUAL INCOME (30% rule)
+
+   Required Annual Income 
+	= (Total Monthly Payment * 12) / 0.30
+
+   Max Monthly Payment    
+	= 0.30 * Monthly Income
+
+6. RENT-TO-INCOME RATIO (RTI)
+
+   RTI = Annual Gross Rent / Annual Household Income
+   (Monthly version: Monthly Rent / Monthly Income)
+
+   Rent   = RTI * Income
+   Income = Rent / RTI
+
+7. USER COST OF HOUSING
+
+   Owner Cost = (r + t_p + d - π^e) * V = u * V
+   u = r + t_p + d - π^e
+
+   Inversions:
+   u = Owner Cost / V
+   V = Owner Cost / u
+
+
+8. DYNAMIC HOUSING AFFORDABILITY INDEX (DHAI)
+
+   DHAI = (25 * y) / (u * V)
+        = 25 * y / [(r + t_p + d - π^e) * V]
+
+   Inversions:
+   V = (25 * y) / (DHAI * u)
+   y = (DHAI * u * V) / 25
+
+
+9. HOUSING SUPPLY ELASTICITY (η_s)
+
+   η_s = (%ΔQ_h) / (%ΔP_h)
+
+   or
+
+   d ln Q_h / d ln P_h
+
+   Implied response:
+   %ΔQ_h ≈ η_s * %ΔP_h
+
+10. ERDMANN PRICE/INCOME SLOPE
+
+    Slope = Δ(Price/Income) / Δlog(Income)
+    Let θ = Price/Income, x = log(Income)
+    Slope = Δθ / Δx
+    (more negative slope = more inelastic local supply)
+
+11. PRICE-TO-RENT RATIO
+
+    P / R = 1 / (r + d - π^e)
+
+    Inversions:
+    P = R / (r + d - π^e)
+    R = P * (r + d - π^e)
+
+12. BASIC LOG SUPPLY-DEMAND
+
+    ln P_h = α + β Z_d - γ Z_s
+    (∂ ln P_h / ∂ Z_d decreases as supply elasticity
+	 η_s increases)
+
+
+13. ERDMANN SHORTAGE RULE-OF-THUMB
+
+    +1% homes per capita  =>  -2% rents
+                          =>  -3% prices
+
+    Semi-elasticities:
+    Δln R / Δln Q ≈ -2
+    Δln P / Δln Q ≈ -3
+
+
+COMPOSITE AFFORDABILITY OPERATOR (ALL OUTPUTS AT ONCE)
+============================================================
+Inputs: (P, r, n, t_p, ins_rate, y, π^e, d, down%)
+
+Outputs:
+  PMT          = P * A_n
+  PMT_PITI     = PMT + (t_p + ins_rate)*P/12
+  HAI          = (25 * y) / (12 * PMT_PITI)
+  PIR          = P / y
+  Burden       = PMT_PITI / (y/12)
+  ReqIncome30  = PMT_PITI * 40
+  u            = r + t_p + d - π^e
+  DHAI         = 25 * y / (u * P)
+  P/R          = 1 / (r + d - π^e)
+
+
+============================================================
+PART B: FULL RDG / SID / PED / MFE OVERLAY + LOCAL GEOMETRY
+============================================================
+
+STATE / PARAMETER VECTORS
+-------------------------
+X_state  = (y, r, π^e, n)
+Θ_price  = (down%, t_p, ins_rate, d)
+Ψ_supply = (η_s, Z_s)
+Φ_demand = (Z_d)
+
+Core objects:
+
+  H  = Median Home Price / value
+  V  = House value (equivalent to H)
+  L  = Loan principal = H * (1 - down%)
+  u  = User cost rate = r + t_p + d - π^e
+  R  = equilibrium rent
+  Q_h = housing stock / quantity
+
+
+1. RDG BLOCK – REDUCED DYNAMIC GENERATOR (MICRO OPERATOR)
+============================================================
+
+Inputs: H, down%, r, n, t_p, ins_rate, d, π^e, y
+
+Derived steps:
+
+  L        = H * (1 - down%)
+  i_m      = r / 12
+  A_n      = i_m / [1 - (1 + i_m)^(-n)]
+  PMT      = L * A_n                                     (formula 1)
+  TaxIns   = (t_p + ins_rate) * H / 12
+  PMT_PITI = PMT + TaxIns
+  y_m      = y / 12
+  u        = r + t_p + d - π^e                           (formula 7)
+
+Outputs Z_aff (full affordability vector):
+
+  HAI          = (25 * y) / (12 * PMT_PITI)              (2)
+  PIR          = H / y                                   (3)
+  Burden       = PMT_PITI / y_m                          (4)
+  ReqIncome30  = 40 * PMT_PITI                           (5)
+  RTI          = Rent / y                                (6)
+  DHAI         = (25 * y) / (u * H)                      (8)
+  P/R          = 1 / (r + d - π^e)                       (11)
+  Plus: PMT, PMT_PITI, u
+
+
+2. SID BLOCK – SUPPLY INELASTIC DOMAIN (S / I / D)
+============================================================
+
+[ S ] STRUCTURE
+  η_s, Z_s, down%, t_p, ins_rate, d
+  L = H * (1 - down%)
+
+[ I ] INTERACTION
+  9.  η_s = (%ΔQ_h) / (%ΔP_h) = d ln Q_h / d ln P_h
+ 12.  ln P_h = α + β Z_d - γ Z_s   (γ, β functions of η_s)
+ 13.  Erdmann shortage: +1% Q/capita → -2% R, -3% P
+      Δln R / Δln Q ≈ -2
+      Δln P / Δln Q ≈ -3
+ 10.  (Erdmann slope as supply proxy)
+
+[ D ] DYNAMICS
+  Time paths: Q_h(t), Z_s(t), Z_d(t), η_s(t)
+  Price adjustment: P_h(t+1) - P_h(t) = f(ΔZ_d, ΔZ_s, η_s)
+
+SID generates the structural equilibrium manifold (H, R, Q_h).
+
+
+3. PED BLOCK – PRICE–POWER / EVALUATION / DISTRIBUTION
+============================================================
+
+[ P ] PRICE / POWER
+  7. u = r + t_p + d - π^e
+ 11. P / R = 1 / (r + d - π^e)
+     ⇒ H = R / (r + d - π^e)
+        R = H * (r + d - π^e)
+
+[ E ] EVALUATION
+  3. PIR = H / y
+ 10. Slope = Δ(Price/Income) / Δlog(Income) = Δθ / Δx
+
+[ D ] DISTRIBUTION / DYNAMICS
+  Paths: y(t), r(t), π^e(t)
+  Cross-section: different y_i 
+	→ different PIR_i, Burden_i, HAI_i, DHAI_i
+
+
+4. RDGMFEQ FULL SYSTEM OPERATOR – FULLY EXPANDED COMPOSITION
+============================================================
+
+STATE / PARAMETER VECTORS
+-------------------------
+X_state  = (y, r, π^e, n)
+Θ_price  = (down%, t_p, ins_rate, d)
+Ψ_supply = (η_s, Z_s)
+Φ_demand = (Z_d)
+
+STEP 1: SID_block
+Inputs: Ψ_supply, Φ_demand, Θ_price
+Outputs: (H_SID, R_SID, Q_h, Slope_SID, η_s)
+Equations: 9, 10, 12, 13
+
+STEP 2: PED_block
+Inputs: H_SID, R_SID, X_state, Θ_price
+Outputs: (H, R, u, PIR, P_over_R, Slope_PED)
+Equations: 3, 7, 10, 11
+
+STEP 3: RDG_block
+Inputs: H, down%, r, n, t_p, ins_rate, d, π^e, y
+Outputs: Z_aff = (PMT, PMT_PITI, HAI, PIR, Burden,
+                 ReqIncome30, RTI, u, DHAI, P/R)
+Equations: 1,2,3,4,5,6,7,8,11
+
+FULL COMPOSITION (EXPLICIT)
+Z_aff = RDG_block(
+          PED_block(
+            SID_block(Ψ_supply, Φ_demand, Θ_price),
+            X_state, Θ_price
+          ),
+          down%, r, n, t_p, ins_rate, d, π^e, y
+        )
+
+
+5. LOCAL GEOMETRY – WORKED JACOBIAN SNAPSHOT (FOCUS ON HAI)
+============================================================
+
+HAI = (25 * y) / (12 * PMT_PITI)
+   where PMT_PITI = f(r, H, down%, t_p, ins_rate, n)
+
+Exact log-partials (ceteris paribus):
+  ∂ ln HAI / ∂ ln y      = +1	(exact)
+  ∂ ln HAI / ∂ r         < 0 	(PMT rises with r via annuity)
+  ∂ ln HAI / ∂ ln H      < 0  	(larger loan + property tax/ins)
+  ∂ ln HAI / ∂ down%     > 0	(smaller loan lowers PMT)
+  ∂ ln HAI / ∂ t_p       < 0
+  ∂ ln HAI / ∂ ins_rate  < 0
+
+SID-induced equilibrium effects (Erdmann channel):
+  ∂ ln H / ∂ ln Q ≈ -3
+  ∂ ln R / ∂ ln Q ≈ -2
+
+User-cost cross effects:
+  ∂ u / ∂ r   ≈ +1
+  ∂ u / ∂ π^e ≈ -1
+
+In the full operator, total d ln HAI includes both direct
+ RDG effects and indirect SID-driven price responses. This
+ Jacobian closes the local differential geometry of the
+ entire RDGMFEQ system.
+
+============================================================
+MASTER NOTATION + FORMULA TABLE (RDGMFEQ / SID–PED / RDG)
+============================================================
+
+	[Ψ_supply, Φ_demand, Θ_price]
+                 	│
+                 	▼
+       ┌───────────────────┐
+       │     SID BLOCK     
+       │ (Macro-Manifold)  
+       └───────────────────┘
+                 	│
+                 	▼ (H_SID, R_SID)
+       ┌───────────────────┐
+       │     PED BLOCK     
+       │(Valuation Engine) 
+       └───────────────────┘
+                 	│
+                 	▼ (H, R, u)
+       ┌───────────────────┐
+       │     RDG BLOCK     
+       │ (Micro-Generator) 
+       └───────────────────┘
+                 	│
+                 	▼
+              	[Z_aff]
+
+-------------------------
+CORE SYMBOLS & VARIABLES
+-------------------------
+H        = Home price / value
+V        = House value (≈ H)
+L        = Loan principal = H * (1 - down%)
+R        = Rent
+P        = Price or principal (original spine)
+y        = Annual household income
+y_m      = Monthly income = y / 12
+MFI      = Median family income
+Q_h      = Housing quantity (stock or per-capita)
+Z_s      = Supply shifters (zoning, land, regs)
+Z_d      = Demand shifters
+η_s      = Supply elasticity
+θ        = Price/Income ratio
+x        = log(Income)
+
+-------------------------
+RATES & PARAMETERS
+-------------------------
+r        = Mortgage interest rate (annual)
+i_m      = Monthly rate = r / 12
+n        = Loan term (months)
+t_p      = Property tax rate
+ins_rate = Insurance rate
+d        = Depreciation + maintenance rate
+π^e      = Expected appreciation
+down%    = Down payment rate
+
+-------------------------
+AFFORDABILITY METRICS
+-------------------------
+PMT          = Monthly mortgage payment
+PMT_PITI     = Payment incl. tax + insurance
+HAI          = Housing Affordability Index
+PIR          = Price-to-income ratio
+RTI          = Rent-to-income ratio
+Burden       = Housing cost burden
+ReqIncome30  = Required income at 30% rule
+DHAI         = Dynamic Housing Affordability Index
+u            = User cost rate
+P/R          = Price-to-rent ratio
+Slope        = Erdmann price/income slope
+
+============================================================
+FORMULAS — RDG (MICRO)
+============================================================
+A_n        = (r/12) / [1 - (1 + r/12)^(-n)]
+L          = H * (1 - down%)
+PMT        = L * A_n
+TaxIns     = (t_p + ins_rate) * H / 12
+PMT_PITI   = PMT + TaxIns
+u          = r + t_p + d - π^e
+HAI        = (25 * y) / (12 * PMT_PITI)
+PIR        = H / y
+Burden     = PMT_PITI / (y/12)
+ReqIncome30= 40 * PMT_PITI
+RTI        = Rent / y
+DHAI       = (25 * y) / (u * H)
+P/R        = 1 / (r + d - π^e)
+
+============================================================
+FORMULAS — SID (SUPPLY)
+============================================================
+η_s        = (%ΔQ_h) / (%ΔP_h) = d ln Q_h / d ln P_h
+ln P_h     = α + β Z_d - γ Z_s
+Δln R / Δln Q ≈ -2
+Δln P / Δln Q ≈ -3
+Slope      = Δ(Price/Income) / Δlog(Income)
+
+============================================================
+FORMULAS — PED (PRICE / EVALUATION / DISTRIBUTION)
+============================================================
+u          = r + t_p + d - π^e
+H/R        = 1 / (r + d - π^e)
+PIR        = H / y
+Slope      = Δθ / Δx
+
+============================================================
+OPERATOR STRUCTURE (RDGMFEQ)
+============================================================
+SID_block(Ψ_supply, Φ_demand, Θ_price)
+    → (H_SID, R_SID, Q_h, Slope_SID, η_s)
+
+PED_block(H_SID, R_SID, X_state, Θ_price)
+    → (H, R, u, PIR, P/R, Slope_PED)
+
+RDG_block(H, down%, r, n, t_p, ins_rate, d, π^e, y)
+    → Z_aff
+
+Full composition:
+Z_aff = RDG_block( PED_block( SID_block(...) ) )
+
+============================================================
+APPENDIX: DYNAMIC STATE EVOLUTION (RDGMFEQ OVER TIME)
+============================================================
+
+Embed the static SID → PED → RDG system into a full dynamic
+state‑transition framework:
+
+        X(t+1) = F( X(t), U(t) )
+
+where X(t) contains the evolving macro–micro housing state.
+
+1. STATE VECTOR  X(t)
+============================================================
+X(t) contains all endogenous variables whose values persist
+and evolve across time:
+
+  X(t) =
+  (
+    H(t),        ; home price / value
+    R(t),        ; rent
+    Q_h(t),      ; housing stock / quantity
+    y(t),        ; household income
+    r(t),        ; interest rate
+    π^e(t),      ; expected appreciation
+    t_p(t),      ; property tax rate
+    ins_rate(t), ; insurance rate
+    d(t),        ; depreciation/maintenance rate
+    η_s(t),      ; supply elasticity
+    Z_s(t),      ; supply shifters
+    Z_d(t)       ; demand shifters
+  )
+
+These are the “slow” or persistent components of the system.
+
+2. CONTROL / EXOGENOUS VECTOR  U(t)
+============================================================
+U(t) contains policy, shocks, and external drivers:
+
+  U(t) =
+  (
+    policy_rates(t),      ; monetary policy
+    zoning_changes(t),    ; supply-side policy
+    income_shocks(t),     ; labor market
+    demographic_flows(t), ; household formation
+    credit_conditions(t), ; lending standards
+    macro_shocks(t)       ; inflation, expectations
+  )
+
+3. DYNAMIC TRANSITION LAW
+============================================================
+The full system evolves according to:
+
+  X(t+1) = F( X(t), U(t) )
+
+where F is composed of the three blocks:
+
+  SID_block → PED_block → RDG_block
+
+but now interpreted dynamically.
+
+Explicitly:
+
+  (H_SID(t), R_SID(t), Q_h(t+1), η_s(t+1))
+      = SID_transition( X(t), U(t) )
+
+  (H(t+1), R(t+1), u(t+1), PIR(t+1), P_over_R(t+1))
+      = PED_transition( H_SID(t), R_SID(t), X(t), U(t) )
+
+  Z_aff(t+1)
+      = RDG_block( H(t+1), y(t+1), r(t+1), ... )
+
+Thus:
+
+  X(t+1) =
+  (
+    H(t+1), R(t+1), Q_h(t+1),
+    y(t+1), r(t+1), π^e(t+1),
+    t_p(t+1), ins_rate(t+1), d(t+1),
+    η_s(t+1), Z_s(t+1), Z_d(t+1)
+  )
+
+4. IDENTITY vs. BEHAVIORAL LAW CLASSIFICATION
+============================================================
+
+-------------------------
+IDENTITIES (algebraic)
+-------------------------
+These are true by definition or accounting:
+
+  PMT        	= L * A_n
+  A_n        	= (r/12) / [1 - (1 + r/12)^(-n)]
+  L          	= H * (1 - down%)
+  PMT_PITI   	= PMT + (t_p + ins_rate)*H/12
+  PIR        	= H / y
+  Burden     	= PMT_PITI / (y/12)
+  ReqIncome30	= 40 * PMT_PITI
+  u          	= r + t_p + d - π^e
+  DHAI       	= (25*y)/(u*H)
+  P/R        	= 1/(r + d - π^e)
+
+These do **not** require estimation.
+
+-------------------------
+BEHAVIORAL / EMPIRICAL LAWS
+-------------------------
+These require estimation or calibration:
+
+  ln P_h = α + β Z_d - γ Z_s                (econometric)
+  η_s    = d ln Q_h / d ln P_h              (structural elasticity)
+  Δln R / Δln Q ≈ -2                        (Erdmann empirical)
+  Δln P / Δln Q ≈ -3                        (Erdmann empirical)
+  Slope = Δ(Price/Income)/Δlog(Income)      (empirical)
+
+These are **not identities**; they encode real-world behavior.
+
+5. STATIC SYSTEM AS A ONE‑TIME‑SLICE
+============================================================
+Current RDGMFEQ system corresponds to:
+
+  X(t)  →  SID → PED → RDG  →  Z_aff(t)
+
+This is the instantaneous equilibrium mapping for a single
+period t.
+
+Embedding it in the dynamic law:
+
+  X(t+1) = F( X(t), U(t) )
+
+turns into per‑period operator of dynamic housing system.
+
+============================================================
+APPENDIX: FUNCTIONAL ASSUMPTIONS FOR F, SID, PED, RDG
+============================================================
+
+The dynamic system is:
+
+        X(t+1) = F( X(t), U(t) )
+
+where F is composed of:
+
+        F = RDG ∘ PED ∘ SID
+
+To analyze existence, uniqueness, stability, and calibration,
+we impose admissible functional assumptions on each block.
+
+1. FUNCTIONAL ASSUMPTIONS ON SID, PED, RDG, AND F
+============================================================
+
+SID_block : (Ψ_supply, Φ_demand, Θ_price) → (H_SID, R_SID, Q_h, η_s)
+-----------------------------------------
+Admissible assumptions:
+
+  • Continuous in all arguments
+  • Locally Lipschitz in (Z_s, Z_d, η_s)
+  • Monotone:
+        ∂H_SID/∂Z_s < 0      (more supply → lower prices)
+        ∂H_SID/∂Z_d > 0      (more demand → higher prices)
+  • Differentiable except at zoning discontinuities
+  • May violate global Lipschitz if:
+        – zoning caps bind
+        – supply constraints create kinks
+        – Q_h hits physical lower bounds
+
+PED_block : (H_SID, R_SID, X_state, Θ_price) → (H, R, u, PIR, P/R)
+-----------------------------------------
+Admissible assumptions:
+
+  • Continuous everywhere
+  • Differentiable except at:
+        – regime shifts in expectations π^e
+        – tax bracket discontinuities
+  • Monotone:
+        ∂u/∂r > 0
+        ∂(P/R)/∂r < 0
+  • Globally Lipschitz if r, d, π^e remain bounded
+
+RDG_block : (H, r, n, t_p, ins_rate, d, π^e, y) → Z_aff
+-----------------------------------------
+Admissible assumptions:
+
+  • Fully differentiable (all formulas are identities)
+  • Globally Lipschitz on any compact domain
+  • Monotone:
+        ∂HAI/∂y > 0
+        ∂HAI/∂r < 0
+        ∂Burden/∂y < 0
+
+Full operator F = RDG ∘ PED ∘ SID
+-----------------------------------------
+Properties inherited:
+
+  • Continuous if each block is continuous
+  • Differentiable almost everywhere
+  • Locally Lipschitz if SID is locally Lipschitz
+  • Global Lipschitz only if:
+        – supply constraints are smooth
+        – expectations π^e evolve smoothly
+        – no regime switches
+
+2. FULL JACOBIAN OF THE OPERATOR
+============================================================
+
+We define the Jacobian (Output) of the full mapping:
+
+        J = ∂Z_aff / ∂X
+
+where:
+
+  X = (H, R, Q_h, y, r, π^e, t_p, ins_rate, d, η_s, Z_s, Z_d)
+
+and
+
+  Z_aff = (PMT, PMT_PITI, HAI, PIR, Burden,
+           ReqIncome30, RTI, u, DHAI, P/R)
+
+Block structure of the Jacobian:
+-----------------------------------------
+
+        J =
+        [ ∂Z_aff/∂H      ∂Z_aff/∂R      ∂Z_aff/∂Q_h
+          ∂Z_aff/∂y      ∂Z_aff/∂r      ∂Z_aff/∂π^e
+          ∂Z_aff/∂t_p    ∂Z_aff/∂ins    ∂Z_aff/∂d
+          ∂Z_aff/∂η_s    ∂Z_aff/∂Z_s    ∂Z_aff/∂Z_d ]
+
+Interpretation:
+
+  • Sensitivity: which variables matter most
+  • Conditioning: numerical stability of calibration
+  • Parameter importance: which inputs drive affordability
+  • Stability: eigenvalues of J determine local dynamics
+
+3. EQUILIBRIA OF THE DYNAMIC SYSTEM
+============================================================
+
+A dynamic equilibrium is defined by:
+
+        X* = F( X*, U* )
+
+Meaning:
+
+  • Prices, rents, stock, income, expectations, taxes,
+    insurance, depreciation, elasticity, and shifters
+    all reproduce themselves under the operator.
+
+
+ 	                                      	    [Stable Orbit: |λ_i| < 1]
+
+         	                                                                              ◯
+
+        	                                                                             ╱ ╲
+       	                                                                           ▼    │
+       	                                                                             ╲_╱
+ 			                                    ▲
+ 			                                    │
+ [Macro Parameter Shift: e.g., r or Z_s]   ───┼───► [Bifurcation Boundary]
+		                                                         │
+                                            		     ▼
+                    			[Unstable Spiral: |λ_i| > 1]
+                                         			    ⚡ 
+                                           		     ▼
+
+Existence:
+-----------------------------------------
+If F is continuous on a compact convex domain,
+Brouwer’s fixed point theorem guarantees an equilibrium.
+
+Uniqueness:
+-----------------------------------------
+If F is a contraction:
+
+        ||F(X) – F(Y)|| ≤ k ||X – Y||   with k < 1
+
+then the equilibrium is unique.
+
+Local stability:
+-----------------------------------------
+Compute eigenvalues of the Jacobian at equilibrium:
+
+        λ_i = eigenvalues( J(X*) )
+
+Stable if:
+
+        |λ_i| < 1   for all i
+
+Bifurcations:
+-----------------------------------------
+As parameters vary (e.g., r, π^e, Z_s):
+
+  • A stable equilibrium can become unstable
+  • Multiple equilibria can appear
+  • Price–rent spirals or collapses can emerge
+
+INTERPRETATION
+============================================================
+• When all eigenvalues satisfy |λ_i| < 1:
+      → X(t) converges to X*
+      → prices, rents, stock, expectations stabilize
+
+• When a macro parameter crosses the boundary:
+      → one or more eigenvalues hit |λ_i| = 1
+      → system becomes neutrally stable or oscillatory
+
+• When |λ_i| > 1:
+      → trajectories diverge
+      → price–rent spirals, instability, or regime shifts
+
+4. CALIBRATION FRAMEWORK
+============================================================
+
+┌──────────────────────────────────────────────────────┐
+│                             DATA PIPELINE                                │
+├──────────────────────────┬───────────────────────────┤
+│  OBSERVED INPUTS                   │  ESTIMATED LAWS                     │
+│  • Direct metrics: H(t), R(t),     │  • Statistical parameters: α, β, γ  │
+│    y(t), r(t), t_p, ins_rate, d    │  • Structural elasticity: η_s       │
+│  • Structural units: Q_h, Z_s, Z_d │  • Erdmann empirical shifts         │
+├──────────────────────────┼───────────────────────────┤
+│  ASSUMED PRIMITIVES                │  DERIVED OUTPUTS (Z_aff)            │
+│  • Expectation rules: π^e(t)       │  • Exact Identities: PMT, PIR,      │
+│  • Depreciation profiles           │    PMT_PITI, HAI, Burden, RTI,      │
+│  • Policy reaction functions       │    ReqIncome30, u, DHAI, P/R        │
+└──────────────────────────┴───────────────────────────┘
+
+Every variable in the system should be classified as:
+
+OBSERVED (directly measured)
+-----------------------------------------
+  H(t), R(t), y(t), r(t), t_p(t), ins_rate(t), d(t)
+  Q_h(t), Z_s(t), Z_d(t)
+
+ESTIMATED (econometric)
+-----------------------------------------
+  α, β, γ in ln P_h = α + β Z_d – γ Z_s
+  η_s (supply elasticity)
+  Erdmann elasticities: -2, -3
+  Slope = Δθ / Δx
+
+ASSUMED (model primitives)
+-----------------------------------------
+  π^e(t) expectation rule
+  depreciation structure d(t)
+  policy reaction functions
+  zoning evolution rules
+
+DERIVED (identities)
+-----------------------------------------
+  PMT, PMT_PITI, PIR, HAI, Burden,
+  ReqIncome30, RTI, u, DHAI, P/R
+
+============================================================
+
+	┌─────────────────────────────┐
+ 	│          EXTERNAL DRIVERS U(t)         │
+	│ Monetary Policy, Zoning Changes,       │
+	│ Income/Demographic/Macro Shocks        │
+	└──────────┬──────────────────┘
+                       │
+                       ▼ [Forcing Shock]
+┌────────────────┴────────────────────────────────────┐
+│         DYNAMIC SYSTEM OPERATOR                        				  │
+│                                                        				  │
+│   ┌─────────────┐         ┌───────────┐     ┌─────────┐  │
+│   │   SID BLOCK    	├─────►│   PED BLOCK   ├──►│  RDG BLOCK  │  │
+│   │ (Macro-Supply) 	│        │ (Price/Yield) │     │  (Metrics)  │  │
+│   └───────▲─────┘        └───▲───────┘     └────▲────┘  │
+│           │                          │                       │        │
+└────────┼───────────────────┼────────────────┼──────┘
+            │                          │                      │
+            └───────────────────┴──┬─────────────┘
+                                            │ [Feedback State Matrix Update]
+                  ┌──────────────────┴───────────┐
+                  │           PERSISTENT STATE X(t)         │
+                  │ H, R, Q_h, y, r, π^e, t_p, ins, d, η_s  │
+                  └──────────────────────────────┘
+
+This is the complete maximal representation. All original
+ formulas, the composite operator, block structures,
+ explicit composition steps, Jacobian, master notation,
+ and formula tables coexist in full detail without any
+ compression.
+============================================================
+
+Prototype Python Implementation (RDGMFEQ Core)
+---
+import numpy as np
+
+def annuity_factor(r, n):
+    if r == 0:
+        return 1.0 / n
+    i_m = r / 12
+    return i_m / (1 - (1 + i_m)**(-n))
+
+def rdg_block(H, down_pct, r, n, t_p, ins_rate, d, pi_e, y):
+    L = H * (1 - down_pct)
+    A_n = annuity_factor(r, n)
+    PMT = L * A_n
+    TaxIns = (t_p + ins_rate) * H / 12
+    PMT_PITI = PMT + TaxIns
+    y_m = y / 12
+    u = r + t_p + d - pi_e
+    HAI = (25 * y) / (12 * PMT_PITI) if PMT_PITI > 0 else float('inf')
+    PIR = H / y
+    Burden = PMT_PITI / y_m
+    ReqIncome30 = 40 * PMT_PITI
+    # RTI needs external Rent; placeholder
+    DHAI = (25 * y) / (u * H) if u > 0 else float('inf')
+    P_over_R = 1 / (r + d - pi_e) if (r + d - pi_e) > 0 else float('inf')
+    return {
+        'PMT': PMT, 'PMT_PITI': PMT_PITI, 'HAI': HAI, 'PIR': PIR,
+        'Burden': Burden, 'ReqIncome30': ReqIncome30, 'u': u,
+        'DHAI': DHAI, 'P_over_R': P_over_R
+    }
+
+# Simple SID stub (can be expanded with log-linear or Erdmann rules)
+def sid_block(eta_s, Z_s, Z_d, theta_price):  # placeholder
+    # In practice: solve ln P_h = alpha + beta*Z_d - gamma(eta_s)*Z_s
+    H_sid = 400_000 * np.exp(0.1 * Z_d - 0.05 / eta_s * Z_s)  # toy
+    R_sid = H_sid / 15.0  # approximate
+    Q_h = 1.0  # normalized
+    slope = -0.5 / eta_s  # proxy
+    return H_sid, R_sid, Q_h, slope, eta_s
+
+def ped_block(H_sid, R_sid, X_state, theta_price):
+    y, r, pi_e, n = X_state
+    down_pct, t_p, ins_rate, d = theta_price
+    u = r + t_p + d - pi_e
+    H = H_sid  # or adjusted
+    R = R_sid
+    PIR = H / y
+    P_over_R = 1 / (r + d - pi_e) if (r + d - pi_e) > 0 else float('inf')
+    slope_ped = -1.2  # placeholder
+    return H, R, u, PIR, P_over_R, slope_ped
+
+def rdgmfeq_full(psi_supply, phi_demand, theta_price, X_state):
+    eta_s, Z_s = psi_supply
+    Z_d = phi_demand
+    H_sid, R_sid, Q_h, slope_sid, eta_s = sid_block(eta_s, Z_s, Z_d, theta_price)
+    H, R, u, PIR, P_over_R, slope_ped = ped_block(H_sid, R_sid, X_state, theta_price)
+    down_pct, t_p, ins_rate, d = theta_price
+    y, r, pi_e, n = X_state
+    Z_aff = rdg_block(H, down_pct, r, n, t_p, ins_rate, d, pi_e, y)
+    return Z_aff, {'H': H, 'R': R, 'Q_h': Q_h, 'eta_s': eta_s, 'slope': slope_ped}
+
+# Example usage (mid-2026 US approx)
+X_state = (84000, 0.065, 0.025, 360)
+theta_price = (0.20, 0.01, 0.005, 0.025)
+psi = (0.5, 0.0)   # eta_s, Z_s
+phi = 0.0          # Z_d
+results, meta = rdgmfeq_full(psi, phi, theta_price, X_state)
+print(results)
