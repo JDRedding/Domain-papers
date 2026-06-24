@@ -681,3 +681,33 @@ Q_{t+1}       = next research questions
 END OF FULL NOTATION TABLE
 =====================================================================
 
+HISTORICAL METHOD ARCHITECTURE — MASTER v3.0 (JD Redding)
+================================================================================
+[0] PURPOSE: Reconstruct R from surviving evidence via criticism & synthesis.
+
+[1] FORMULATE QUESTION → Define target + scope + evidence criteria
+
+[2] SOURCE ACQUISITION (broad → filter) → Primary + Secondary
+
+[3] SOURCE CRITICISM
+    External (Authenticity) → Internal (Credibility) → R_vec = (A,C,B,Tq,P)
+
+[4] CONTEXTUALIZATION → Embed in period norms (avoid anachronism)
+
+[5] INTERPRETATION (𝓘) → Causal chains, competing explanations, fact/inference split
+
+[6] SYNTHESIS → Coherent N from validated E; resolve or flag contradictions
+
+[7] REVIEW & REVISION → ℋ iteration on new evidence
+
+FORMAL OVERLAY (Active Throughout)
+• Operators: 𝒯 : R→T ; 𝒪 : T→S ; 𝓘 : S→E ; Composite with Var(E) propagation
+• Reliability: R_i = f(R_vec_i)  [meta-learned]
+• Models: Latent Z, M(t) decay e^{-λt}, long-memory P(H_t | H_<t), hierarchy
+• Inference: SDG/DAG message-passing, Bayesian update, Pareto 𝓝*
+• Consistency: Sheaf gluing + TDA τ = persistence(β₁) on overlaps
+• Optimization & Loop: EVI(S*) + ℋ(H_t, E_t) → (H_{t+1}, Q_{t+1})
+• Meta: (M₀, ℛ) updated via prediction loss ∇
+• Scalability: Budget B + cluster_𝓝 + d_GH pruning
+• Decision: Posterior P(N_i) → δ via U(·)
+================================================================================
