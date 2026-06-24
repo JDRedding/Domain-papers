@@ -1,0 +1,617 @@
+HISTORICAL METHOD ARCHITECTURE 
+=====================================================================
+STRUCTURAL EXTENSIONS 
+=====================================================================
+OPERATOR COMPOSITION
+
+𝒯 : R → T                 = trace formation operator
+𝒪 : T → S                 = observation operator
+𝓘 : S → E                 = interpretation / criticism operator
+𝓘 ∘ 𝒪 ∘ 𝒯 : R → E          = composite observation pipeline
+Var(E)                     = propagated uncertainty
+F(·)                       = functorial mapping of uncertainty/noise
+
+SYNERGY
+H_U                        = local historical reconstruction on region U
+H_V                        = local reconstruction on region V
+H_U|_{U∩V}                 = restriction of H_U to overlap U∩V
+Sheaf condition            = H_U|_{U∩V} = H_V|_{U∩V}
+
+VR_ε                       = Vietoris–Rips complex at scale ε
+β₀, β₁, β₂                 = persistent homology ranks (components, loops, cavities)
+τ                          = consistency tension = persistence(β₁)
+U∩V                        = overlap region
+Persistence module         = homology across ε-scales
+
+META-LEARNING FEEDBACK
+M₀                         = meta-prior
+ℛ                          = inference rules
+(M₀, ℛ) → (M₀', ℛ')         = meta-update
+H_pred(t)                  = predicted historical state at time t
+H_true(t)                  = actual historical reconstruction at time t
+Loss                       = prediction error metric
+∇_{M₀,ℛ} Loss              = gradient on meta-parameters
+f                          = learned reliability function
+λ                          = learned regularization parameter
+
+COMPUTATIONAL SCALABILITY
+----------------------------------
+B ∈ ℕ                      = computational budget
+𝓝                          = narrative manifold
+𝓝*                         = Pareto-optimal narrative set
+d_GH                       = Gromov–Hausdorff distance on 𝓝
+cluster_𝓝(·)               = clustering operator on narrative space
+|𝓝*|                       = number of narratives on Pareto front
+Pruning rule               = if |𝓝*| > B, collapse via clustering
+
+1. OPERATOR COMPOSITION (OBSERVATION PIPELINE)
+----------------------------------------------
+Composite mapping:
+    𝓘 ∘ 𝒪 ∘ 𝒯 : R → E
+
+Where:
+    𝒯 : R → T      (trace formation)
+    𝒪 : T → S      (observation)
+    𝓘 : S → E      (interpretation / criticism)
+
+Each operator introduces uncertainty:
+    R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E
+Noise propagates through composition:
+    Var(E) = F(Var(𝒯), Var(𝒪), Var(𝓘))
+
+Functorial view:
+    F(𝒯) → F(𝒪) → F(𝓘)
+Information loss accumulates monotonically.
+
+---------------------------------------------------------------------
+
+2. CONSISTENCY TENSION
+--------------------------------------------
+Local reconstructions:
+    H_U, H_V on regions U, V
+
+Sheaf condition:
+    H_U |_{U∩V} = H_V |_{U∩V}
+
+Construct persistence module on overlaps:
+    VR_ε(U∩V) → compute β₀, β₁, β₂
+
+Consistency tension:
+    τ = persistence(β₁)   (long-lived loops = incompatibilities)
+
+Global history exists iff τ ≈ 0 across all overlaps.
+
+---------------------------------------------------------------------
+
+3. ADAPTIVE METHODOLOGY
+------------------------------------------------
+Meta-state:
+    (M₀, ℛ)
+
+Meta-update:
+    (M₀, ℛ) → (M₀', ℛ')
+
+Driven by predictive success:
+    Evaluate H_pred(1914 | ≤1910) vs H_true(1914)
+
+Gradient on meta-parameters:
+    ∇_{M₀,ℛ} Loss(prediction_error)
+
+Learns:
+    - reliability function f
+    - regularization λ
+    - causal assumptions
+    - hierarchical priors
+
+---------------------------------------------------------------------
+
+4. COMPUTATIONAL BUDGET (SCALABLE NARRATIVE SEARCH)
+---------------------------------------------------
+Budget parameter:
+    B ∈ ℕ
+
+Controls:
+    - number of narratives tracked on Pareto front
+    - depth of search in 𝓝
+    - resolution of manifold clustering
+
+Narrative clustering:
+    cluster_𝓝(N_i) using d_GH or Riemannian metric
+
+Budget-aware pruning:
+    if |𝓝*| > B:
+        collapse via clustering → retain representatives
+
+=====================================================================
+STRUCTURAL EXTENSIONS
+=====================================================================
+
+1. ONTOLOGICAL SEPARATION (WHAT EXISTS)
+---------------------------------------
+Reality (R)
+    │
+    ▼
+Physical Traces (T)
+    │
+    ▼
+Observed Sources (S)
+    │
+    ▼
+Extracted Evidence (E)
+    │
+    ▼
+Historical Model (H)
+    │
+    ▼
+Narrative Representation (N)
+
+Documents ≠ Evidence.
+Evidence = interpreted, criticized claims extracted from sources.
+
+=====================================================================
+2. EXPLICIT OBSERVATION OPERATORS
+=====================================================================
+
+Trace Formation:
+    𝒯 : R → T
+
+Observation:
+    𝒪 : T → S
+
+Interpretation / Criticism:
+    𝓘 : S → E
+
+Full pipeline:
+    R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E ──▶ H ──▶ N
+
+=====================================================================
+3. RELIABILITY FUNCTION
+=====================================================================
+
+Raw reliability components:
+    R_vec_i = (A_i, C_i, B_i, Tq_i, P_i)
+
+Learned reliability:
+    R_i = f(R_vec_i)
+    f : ℝ⁵ → [0,1]
+
+Reliability‑weighted likelihood:
+    P(S_i | H) = R_i · P(S_i | S0, H, θ)
+
+=====================================================================
+4. EVENT SPACE VS NARRATIVE SPACE
+=====================================================================
+
+Event manifold:
+    𝓔
+
+Narrative manifold:
+    𝓝
+
+Projection:
+    π : 𝓔 → 𝓝
+
+Narrative = compressed trajectory through event space.
+
+=====================================================================
+5. LATENT VARIABLES
+=====================================================================
+
+Hidden structure:
+    Z = latent actors, motives, institutions, lost correspondence
+
+Likelihood:
+    P(E | H, Z)
+
+Posterior:
+    P(H | E) = Σ_Z P(E | H, Z) P(Z | H)
+
+=====================================================================
+6. MISSING EVIDENCE AS A PROCESS
+=====================================================================
+
+Time‑dependent survival:
+    M(t)
+
+Survival probability:
+    P(survival | t) = e^(−λ t)
+
+Material‑specific decay:
+    λ = λ(material_type)
+
+Full likelihood:
+    P(E_obs | H, M(t))
+
+=====================================================================
+7. LONG‑MEMORY TEMPORAL MODEL
+=====================================================================
+
+Instead of Markov:
+    P(H_t | H_{t−1})
+
+Use:
+    P(H_t | H_{<t})
+
+Allows long‑range dependencies and path‑dependent history.
+
+=====================================================================
+8. MULTI‑LEVEL BAYESIAN HIERARCHY
+=====================================================================
+
+Civilizations
+    ↓
+Institutions
+    ↓
+Regions
+    ↓
+Cities
+    ↓
+People
+    ↓
+Documents
+
+Hierarchical priors:
+    P(H_level_k | H_level_{k+1})
+
+Information flows up and down scales.
+
+=====================================================================
+9. MULTI‑OBJECTIVE NARRATIVE OPTIMIZATION (PARETO FRONT)
+=====================================================================
+
+Objectives:
+    explanatory power
+    predictive consistency
+    simplicity
+    coherence
+    completeness
+    causal adequacy
+
+Pareto‑optimal narratives:
+    𝓝* = { N_i : non‑dominated across objectives }
+
+=====================================================================
+10. BAYESIAN EXPERIMENTAL DESIGN
+=====================================================================
+
+Choose next observation:
+    S* = arg max EVI(S)
+
+EVI:
+    EVI(S) = E[ H_before − H_after ]
+
+Active research planner:
+    archives, excavations, digitization targets.
+
+=====================================================================
+11. MESSAGE‑PASSING INFERENCE
+=====================================================================
+
+On SDG and Causal DAG:
+
+Belief propagation:
+    messages m_{i→j}
+
+Update rule:
+    m_{i→j}^{(t+1)} = F(m_{k→i}^{(t)})
+
+Converges to stable beliefs over nodes.
+
+=====================================================================
+12. META‑LEARNING LAYER
+=====================================================================
+
+Meta‑prior:
+    M₀
+
+Inference rules:
+    ℛ
+
+Historical models:
+    H
+
+Meta‑update:
+    (M₀, ℛ) → (M₀', ℛ')
+
+Learns:
+    reliability functions
+    regularization weights
+    causal assumptions
+    prior structures
+
+=====================================================================
+13. FORMAL RESEARCH OPERATOR
+=====================================================================
+
+Define:
+    ℋ : (H_t, E_t) ↦ (H_{t+1}, Q_{t+1})
+
+Where:
+    H_{t+1} = updated historical model
+    Q_{t+1} = next research questions
+
+Iterated application drives investigation.
+
+=====================================================================
+14. SHEAF‑THEORETIC CONSISTENCY
+=====================================================================
+
+Local reconstructions:
+    H_U on region/archive U
+
+Compatibility on overlaps:
+    H_U |_{U∩V} = H_V |_{U∩V}
+
+Global history exists iff local sections glue.
+
+=====================================================================
+15. DECISION LAYER
+=====================================================================
+
+Posterior narratives:
+    P(N_i)
+
+Decision policy:
+    δ(N_i)
+
+Publication / action:
+    A = δ(P(N_i))
+
+Utility‑based:
+    U(N_i) = f(confidence, robustness, significance)
+
+=====================================================================
+ASSOCIATED NOTATION TABLE (COMPLETE)
+=====================================================================
+
+ONTOLOGY:
+    R, T, S, E, H, N, Z, M(t)
+    𝓔 = event manifold
+    𝓝 = narrative manifold
+
+OPERATORS:
+    𝒯 : R → T
+    𝒪 : T → S
+    𝓘 : S → E
+    π : 𝓔 → 𝓝
+    ℋ : (H_t,E_t) → (H_{t+1},Q_{t+1})
+
+RELIABILITY:
+    R_vec = (A,C,B,Tq,P)
+    R_i = f(R_vec_i)
+
+LATENT VARIABLES:
+    Z
+
+TEMPORAL:
+    P(H_t | H_{<t})
+    M(t), e^(−λ t)
+
+HIERARCHY:
+    P(H_k | H_{k+1})
+
+OPTIMIZATION:
+    Pareto front 𝓝*
+    EVI(S)
+    S* = arg max EVI(S)
+
+MESSAGE PASSING:
+    m_{i→j}
+
+META‑LEARNING:
+    M₀, ℛ, (M₀',ℛ')
+
+SHEAF THEORY:
+    H_U, H_V, compatibility on U∩V
+
+DECISION:
+    δ(N_i), U(N_i)
+
+=====================================================================
+END OF CONSOLIDATED ARCHITECTURE — FINAL
+=====================================================================
+=====================================================================
+                 FULL CONSOLIDATED NOTATION TABLE
+=====================================================================
+
+ONTOLOGY & STRUCTURAL OBJECTS
+-----------------------------
+R            = Reality (actual events)
+T            = Physical Traces
+S            = Observed Sources
+E            = Extracted Evidence
+H            = Historical Model
+N            = Narrative Representation
+Z            = Latent historical variables
+M(t)         = Missing-evidence survival process
+𝓔            = Event manifold
+𝓝            = Narrative manifold
+SDG          = Source Dependency Graph
+S0           = Latent root source (stemma ancestor)
+
+=====================================================================
+OBSERVATION & INTERPRETATION OPERATORS
+--------------------------------------
+𝒯 : R → T     = trace formation operator
+𝒪 : T → S     = observation operator
+𝓘 : S → E     = interpretation / criticism operator
+π : 𝓔 → 𝓝     = projection from event space to narrative space
+
+=====================================================================
+RELIABILITY & SOURCE MODELING
+-----------------------------
+R_vec_i       = (A_i, C_i, B_i, Tq_i, P_i)
+A_i           = authenticity
+C_i           = credibility
+B_i           = bias/tendency
+Tq_i          = transmission quality
+P_i           = provenance strength
+
+R_i           = f(R_vec_i)
+f : ℝ⁵ → [0,1] = learned reliability function
+
+P(S_i | H)    = R_i · P(S_i | S0, H, θ)
+
+=====================================================================
+LATENT VARIABLE FORMALISM
+-------------------------
+Z             = hidden actors, motives, institutions, lost data
+P(E | H, Z)   = likelihood with latent structure
+P(H | E)      = Σ_Z P(E | H, Z) P(Z | H)
+
+=====================================================================
+MISSING EVIDENCE (MNAR)
+-----------------------
+M(t)          = time-dependent missingness
+P(survival|t) = e^(−λ t)
+λ             = decay constant (material-specific)
+P(E_obs | H, M(t)) = censored likelihood
+
+=====================================================================
+TEMPORAL MODELS
+----------------
+H_t           = historical state at time t
+H_<t          = full history prior to t
+
+P(H_t | H_{t−1})   = Markov model
+P(H_t | H_<t)      = long-memory model
+
+DBN           = Dynamic Bayesian Network
+SLDS          = Switching Linear Dynamical System
+
+=====================================================================
+CAUSAL INFERENCE
+----------------
+DAG           = Directed Acyclic Graph
+P(all)        = Π P(node | parents(node))
+
+do(X)         = intervention operator
+P(Y | do(X))  = causal effect
+ATE           = E[Y|do(X=1)] − E[Y|do(X=0)]
+
+Back-door criterion:
+   adjust(Z) if Z blocks all back-door paths X ← Z → Y
+
+=====================================================================
+INFORMATION THEORY
+------------------
+H(X)          = entropy
+H(X|Y)        = conditional entropy
+I(X;Y)        = mutual information
+D_KL(P||Q)    = Kullback–Leibler divergence
+⊙             = Hadamard (element-wise) product
+
+Marrou filter:
+   h = I(P; p)
+
+=====================================================================
+TOPOLOGICAL DATA ANALYSIS (TDA)
+-------------------------------
+VR_ε          = Vietoris–Rips complex at scale ε
+β0            = number of connected components
+β1            = number of loops (causal voids)
+β2            = number of cavities (structural gaps)
+
+𝓜            = narrative manifold
+d_GH          = Gromov–Hausdorff distance
+
+=====================================================================
+OPTIMIZATION & SYNTHESIS
+------------------------
+Synthesis*    =
+   arg min [ Σ discrepancy(data_i, model)
+           + λ · complexity(model) ]
+
+λ             = regularization parameter
+discrepancy() = error metric
+complexity()  = model complexity
+
+Pareto front:
+   𝓝* = { N_i : non-dominated across objectives }
+
+=====================================================================
+NARRATIVE FORMALISM
+-------------------
+N             = narrative hypothesis
+P(E|N)        = narrative likelihood
+P(N)          = narrative prior
+
+Narrative MAP:
+   N* = arg max [ P(E|N) P(N) ]
+
+Narrative manifold:
+   𝓝
+
+Projection:
+   π : 𝓔 → 𝓝
+
+=====================================================================
+DEMPSTER–SHAFER THEORY
+----------------------
+m(A)          = belief mass for hypothesis A
+m(U)          = ignorance mass
+K             = conflict measure
+
+Combination:
+   m_1 ⊕ m_2(A) =
+       (1 / (1 − K)) Σ_{B ∩ C = A} m_1(B)m_2(C)
+
+Conflict:
+   K = Σ_{B ∩ C = ∅} m_1(B)m_2(C)
+
+=====================================================================
+BAYESIAN EXPERIMENTAL DESIGN
+----------------------------
+EVI(S)        = expected value of information
+S*            = arg max EVI(S)
+
+=====================================================================
+MESSAGE-PASSING INFERENCE
+-------------------------
+m_{i→j}       = message from node i to j
+m_{i→j}^{(t+1)} = F(m_{k→i}^{(t)})
+
+Belief propagation until convergence.
+
+=====================================================================
+META-LEARNING
+--------------
+M₀            = meta-prior
+ℛ             = inference rules
+(M₀,ℛ) → (M₀',ℛ') = meta-update
+
+Learns:
+   f (reliability)
+   λ (regularization)
+   priors
+   causal assumptions
+
+=====================================================================
+SHEAF-THEORETIC STRUCTURE
+-------------------------
+H_U           = local historical reconstruction on region U
+Compatibility:
+   H_U |_{U∩V} = H_V |_{U∩V}
+
+Global section exists iff all overlaps agree.
+
+=====================================================================
+DECISION THEORY
+----------------
+P(N_i)        = posterior narrative distribution
+δ(N_i)        = decision policy
+A             = δ(P(N_i))
+U(N_i)        = utility of narrative N_i
+
+=====================================================================
+RESEARCH OPERATOR
+-----------------
+ℋ : (H_t, E_t) → (H_{t+1}, Q_{t+1})
+
+H_{t+1}       = updated historical model
+Q_{t+1}       = next research questions
+
+=====================================================================
+END OF FULL NOTATION TABLE
+=====================================================================
+
