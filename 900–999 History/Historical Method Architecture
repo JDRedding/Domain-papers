@@ -540,6 +540,9 @@ Information loss accumulates monotonically.
    - Information loss accumulates monotonically along the chain.
    - Q‑logic governs admissible transitions and noise gating.
 
+Note: 𝒯 : R→T is generative; 𝒪, 𝓘, and ℋ run as inferential
+inversions reconstructing upstream layers
+
 ---------------------------------------------------------------------
 
 2. CONSISTENCY TENSION
