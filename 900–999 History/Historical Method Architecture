@@ -576,6 +576,52 @@ Narrative Representation (N)
 Documents ≠ Evidence.
 Evidence = interpreted, criticized claims extracted from sources.
 
+   ONTOLOGICAL SEPARATION (WHAT EXISTS)
+   RDG NOTATION: SID → PED → Q
+   ONTOLOGICAL LAYERING (SID: S / I / D)
+   [S‑mode]  Reality (R)
+                = what exists independently of observation
+
+   [I‑mode]  Physical Traces (T)
+                = interaction residues left by R
+
+   [I‑mode]  Observed Sources (S)
+                = human‑accessible artifacts (documents, objects)
+
+   [D‑mode]  Extracted Evidence (E)
+                = interpreted, criticized claims derived from S
+
+   [D‑mode]  Historical Model (H)
+                = structured reconstruction of past states
+
+   [D‑mode]  Narrative Representation (N)
+                = communicable, compressed explanation
+
+   Flow:
+      R → T → S → E → H → N
+
+   EVIDENCE VS. DOCUMENTS (PED: Power / Evaluation / Q_slice)
+   Documents ≠ Evidence.
+
+   Evidence = interpreted, filtered, criticized claims
+              extracted from sources S via operator 𝓘.
+
+   PED interpretation:
+      P = extraction power (what can be inferred)
+      E = evaluation of credibility, bias, provenance
+      Q = regime controlling admissibility of claims
+
+   GLOBAL STRUCTURE (SID + PED + Q)
+   - SID separates ontological layers (R, T, S, E, H, N).
+   - PED governs how claims are extracted and evaluated.
+   - Q‑logic enforces admissibility, coherence, and filtering.
+
+   Result:
+      A clean separation between what exists,
+      what is observed,
+      what is interpreted,
+      and what is narrated.
+
 =====================================================================
 2. EXPLICIT OBSERVATION OPERATORS
 =====================================================================
