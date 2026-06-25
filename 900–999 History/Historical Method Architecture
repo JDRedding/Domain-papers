@@ -1923,6 +1923,14 @@ END OF FULL NOTATION TABLE
 
 HISTORICAL METHOD ARCHITECTURE — MASTER 
 ================================================================================
+The architecture defines a domain-agnostic epistemic pipeline:
+Reality R → Traces T → Observations S → Evidence E → Model H → Narrative/Theory N
+
+Differences across fields are confined to:
+• Trace types and regime characteristics (Q_T)
+• Domain-specific semantics of operators
+• Interpretation of components in H (e.g., "actors" vs "particles")
+
 PART I
 Classical Historical Method
 
@@ -1932,12 +1940,14 @@ Classical Historical Method
 [3] SOURCE CRITICISM
     External (Authenticity) → Internal (Credibility) → R_vec = (A,C,B,Tq,P)
 [4] CONTEXTUALIZATION → Embed in period norms (avoid anachronism)
-[5] INTERPRETATION (𝓘) → Causal chains, competing explanations, fact/inference split
+[5] INTERPRETATION (𝓘) → Causal chains, explanations, fact/inference split
 [6] SYNTHESIS → Coherent N from validated E; resolve or flag contradictions
 [7] REVIEW & REVISION → ℋ iteration on new evidence
 
 PART II
 Formal Historical Model
+
+Reality → Trace → Observation → Interpretation → Evidence → Model → Explanation
 
 Definition of H
 State Space
@@ -1945,6 +1955,23 @@ Research Operator
 Evidence Graph
 Uncertainty
 Narrative Projection
+
+Trace = Record residue.
+Observation = measurement or recording of the trace.
+Interpretation = assigning meaning or significance to the observation.
+Evidence = interpreted observations judged relevant to a hypothesis.
+Model = coherent reconstruction or explanation.
+Explanation/Narrative = the communicated form of the model.
+
+H = (G_S, G_C, V, Ctx, W, U, M)
+where
+• G_S : State/Event graph
+• G_C : Causal/Interaction graph
+• V   : Variable/Actor states (incl. latents Z)
+• Ctx : Contextual/Environmental fields
+• W   : Evidence/Observation weights (R_i, M(t))
+• U   : Uncertainty + consistency structure (posteriors, τ)
+• M   : Methodological/meta-state (priors, ℛ, f, λ)
 
 PART III
 Advanced Computational Methods
@@ -1955,6 +1982,16 @@ Message Passing
 Experimental Design
 Meta-Learning
 Decision Layer
+
+RDG Integration
+This universal pipeline is a direct instantiation of the SID-PED-Q engine:
+
+SID: Structure (graphs in H), Interaction (operators), Dynamics (ℋ transitions, long-memory).
+PED: Power (operator capacity), Evaluation (reliability, τ, loss), Dynamics_slice (regimes Q).
+Q: Regime logic gating everything from traces to meta-updates.
+
+The architecture operates as a closure engine that iteratively reconciles observed traces
+with hypothesized model states until a consistent epistemic state is reached.
 
 FORMAL OVERLAY (Active Throughout)
 • Operators: 𝒯 : R→T ; 𝒪 : T→S ; 𝓘 : S→E ; Composite with Var(E) propagation
