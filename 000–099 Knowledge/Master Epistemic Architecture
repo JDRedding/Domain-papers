@@ -100,9 +100,9 @@ FORMAL OVERLAY (Active Throughout)
 ================================================================================
 
 The Historical Method Architecture is a domain-specific instantiation of the
-Universal Epistemic Architecture. It specializes the universal pipeline
+Master Epistemic Architecture. It specializes the universal pipeline
 R→T→S→E→H→N for historical reconstruction by defining history-specific trace
 types, reliability functions, contextual operators, and narrative synthesis.
 
-See:
+For detail, see:
 https://github.com/JDRedding/Domain-papers/blob/main/900–999%20History/Historical%20Method%20Architecture
