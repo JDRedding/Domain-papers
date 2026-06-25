@@ -690,6 +690,45 @@ Learned reliability:
 Reliability‑weighted likelihood:
     P(S_i | H) = R_i · P(S_i | S0, H, θ)
 
+   RELIABILITY FUNCTION (LEARNED SOURCE CREDIBILITY)
+   RDG NOTATION: SID → PED → Q
+   RAW COMPONENTS (SID: S / I / D)
+   [S‑mode]  R_vec_i = (A_i, C_i, B_i, Tq_i, P_i)
+                = authenticity, credibility, bias, transmission
+                  quality, provenance
+
+   Meaning:
+      S = structural decomposition of reliability inputs
+      I = interaction among components (bias × provenance, etc.)
+      D = dynamic influence on downstream inference
+
+   LEARNED RELIABILITY (PED: Power / Evaluation / Q_slice)
+   R_i = f(R_vec_i)
+   f : ℝ⁵ → [0,1]
+
+   Interpretation:
+      P = mapping power of f (how raw components combine)
+      E = evaluation of reliability on a normalized scale
+      Q = regime controlling smoothness / regularization of f
+
+   Notes:
+      - f may be learned via gradient descent
+      - f encodes historical performance of sources
+      - f collapses multi‑dimensional reliability into a single
+        admissibility weight
+
+   RELIABILITY‑WEIGHTED LIKELIHOOD (SID + PED + Q)
+   P(S_i | H) = R_i · P(S_i | S0, H, θ)
+
+   Meaning:
+      - SID: R_i modulates admissibility of source claims
+      - PED: likelihood scaled by reliability weight
+      - Q: governs thresholds for discarding low‑R_i sources
+
+   Result:
+      A principled, learned mechanism for weighting sources
+      based on authenticity, bias, transmission, and provenance.
+
 =====================================================================
 4. EVENT SPACE VS NARRATIVE SPACE
 =====================================================================
