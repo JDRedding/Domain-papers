@@ -386,6 +386,48 @@ Consistency tension:
 
 Global history exists iff τ ≈ 0 across all overlaps.
 
+   CONSISTENCY TENSION (SHEAF + TDA)
+   RDG NOTATION: SID → PED → Q
+   LOCAL RECONSTRUCTIONS (SID: S / I / D)
+   [S‑mode]  H_U, H_V
+                = local reconstructions on regions U, V
+
+   [I‑mode]  Sheaf condition:
+                H_U|_{U∩V} = H_V|_{U∩V}
+
+   [D‑mode]  U∩V
+                = overlap region (gluing locus)
+
+   Meaning:
+      S = admissible local structure
+      I = compatibility on overlaps
+      D = globalizability dynamics
+
+   TDA ON OVERLAPS (PED: Power / Evaluation / Q_slice)
+   VR_ε(U∩V)
+        = Vietoris–Rips complex on overlap at scale ε
+
+   β₀, β₁, β₂
+        = persistent homology ranks
+          (components, loops, cavities)
+
+   τ = persistence(β₁)
+        = consistency tension
+          (long‑lived loops = incompatibilities)
+
+   PED interpretation:
+      P = topological power (detecting structural strain)
+      E = evaluation via persistence
+      Q = ε‑regime controlling feature survival
+
+   GLOBAL CONSISTENCY CRITERION
+   Global history exists iff:
+        τ ≈ 0 across all overlaps
+
+   Meaning:
+      - No persistent β₁ loops → no structural contradictions.
+      - Sheaf compatibility + vanishing tension → coherent global H.
+
 ---------------------------------------------------------------------
 
 3. ADAPTIVE METHODOLOGY
