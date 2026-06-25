@@ -638,6 +638,44 @@ Interpretation / Criticism:
 Full pipeline:
     R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E ──▶ H ──▶ N
 
+   EXPLICIT OBSERVATION OPERATORS
+   RDG NOTATION: SID → PED → Q
+   OPERATOR DEFINITIONS (SID: S / I / D)
+   [S‑mode]  𝒯 : R → T
+                = trace formation (from Reality to Traces)
+
+   [I‑mode]  𝒪 : T → S
+                = observation / structuring (from Traces to Sources)
+
+   [D‑mode]  𝓘 : S → E
+                = interpretation / criticism (from Sources to Evidence)
+
+   Flow:
+      R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E ──▶ H ──▶ N
+
+   Meaning:
+      S = structural extraction (𝒯)
+      I = interaction / observation (𝒪)
+      D = dynamic adjudication (𝓘)
+
+   PIPELINE EXTENSION (PED: Power / Evaluation / Q_slice)
+
+   E → H
+        = evidence aggregated into historical model
+
+   H → N
+        = model compressed into narrative representation
+
+   PED interpretation:
+      P = extraction + structuring power
+      E = evaluation of credibility, bias, uncertainty
+      Q = regime controlling admissibility + filtering
+
+   GLOBAL STRUCTURE (SID + PED + Q)
+   - SID defines the ontological ascent: R → T → S → E → H → N
+   - PED governs evaluation, uncertainty, and admissibility.
+   - Q‑logic enforces coherence and noise‑gating across layers.
+
 =====================================================================
 3. RELIABILITY FUNCTION
 =====================================================================
