@@ -755,6 +755,14 @@ N is intentionally a thin read‑out layer; its feedback into ℋ is
 represented as a narrative‑guided research loop.
 
    ONTOLOGICAL SEPARATION (WHAT EXISTS)
+
+     H  --π-->  N
+     ^          |
+     |          |
+     |   narrative-guided
+     |   research loop
+     +----------+
+
    RDG NOTATION: SID → PED → Q
    ONTOLOGICAL LAYERING (SID: S / I / D)
    [S‑mode]  Reality (R)
@@ -1040,6 +1048,59 @@ Narrative = compressed trajectory through event space.
    Result:
       A principled separation between event‑level reality
       and narrative‑level representation.
+
+=====================================================================
+Q‑NOTATION DISAMBIGUATION
+=====================================================================
+The symbol “Q” appears in three distinct roles. They are related
+but must not be conflated
+
+                 Q  (universal moderation axis)
+                 |
+                 |  continuous relational selector
+                 v
+
+           RDG / MFE / Q Engine Core   
+
+
+   categorical regimes                     semantic questions
+
+        Q_T, Q_O                                 Q_{t+1}
+        (trace/obs)                              (next inquiry)
+        |                                         ^
+        | discrete indices                        |
+        v                                         |
+
+     Generative /          inverse       Historical Update ℋ   
+     Observational       <-----------    produces Q_{t+1}       
+     Regimes          
+
+Legend:
+  Q        = continuous axis
+  Q_T/O    = discrete regimes
+  Q_{t+1}  = semantic output
+
+
+(A) Q : Universal RDG/MFE Moderation Axis (continuous)
+    - Originates in the RDG→MFE→Q engine.
+    - Controls relational slice selection, visibility, and
+      moderation of structural vs dynamical vs evaluative modes.
+    - A geometric/ontological axis, not a regime label.
+
+(B) Q_T, Q_O : Discrete Epistemic Regimes (categorical)
+    - Q_T = trace formation regime index.
+    - Q_O = observation regime index.
+    - These are finite categorical states, not coordinates.
+    - They gate noise thresholds, instrument limits, and
+      admissible inference strength.
+
+(C) Q_{t+1} : Next Research Questions (semantic)
+    - Output of the historical update operator ℋ.
+    - Represents the *semantic frontier* of inquiry.
+    - Not a coordinate, not a regime, not a moderation axis.
+
+Summary:
+  Q (axis) ≠ Q_T/Q_O (regimes) ≠ Q_{t+1} (questions)
 
 =====================================================================
 5. LATENT VARIABLES
