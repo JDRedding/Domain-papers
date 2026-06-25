@@ -1923,22 +1923,38 @@ END OF FULL NOTATION TABLE
 
 HISTORICAL METHOD ARCHITECTURE — MASTER 
 ================================================================================
+PART I
+Classical Historical Method
+
 [0] PURPOSE: Reconstruct R from surviving evidence via criticism & synthesis.
-
 [1] FORMULATE QUESTION → Define target + scope + evidence criteria
-
 [2] SOURCE ACQUISITION (broad → filter) → Primary + Secondary
-
 [3] SOURCE CRITICISM
     External (Authenticity) → Internal (Credibility) → R_vec = (A,C,B,Tq,P)
-
 [4] CONTEXTUALIZATION → Embed in period norms (avoid anachronism)
-
 [5] INTERPRETATION (𝓘) → Causal chains, competing explanations, fact/inference split
-
 [6] SYNTHESIS → Coherent N from validated E; resolve or flag contradictions
-
 [7] REVIEW & REVISION → ℋ iteration on new evidence
+
+PART II
+Formal Historical Model
+
+Definition of H
+State Space
+Research Operator
+Evidence Graph
+Uncertainty
+Narrative Projection
+
+PART III
+Advanced Computational Methods
+
+Bayesian Hierarchies
+Sheaf Consistency
+Message Passing
+Experimental Design
+Meta-Learning
+Decision Layer
 
 FORMAL OVERLAY (Active Throughout)
 • Operators: 𝒯 : R→T ; 𝒪 : T→S ; 𝓘 : S→E ; Composite with Var(E) propagation
