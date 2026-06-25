@@ -139,7 +139,8 @@ Reliability functions
            Event/Narrative Compression
 
 What constitutes one state versus another?
-Two historical models H and H′ are different states if any of the following differ:
+Two historical models H and H′ are different states if
+any of the following differ:
 
 (-) Event differences
 An event is added, removed, or re‑timed
@@ -226,12 +227,12 @@ STRUCTURAL EXTENSIONS
 =====================================================================
 OPERATOR COMPOSITION
 
-𝒯 : R → T                 = trace formation operator
-𝒪 : T → S                 = observation operator
-𝓘 : S → E                 = interpretation / criticism operator
-𝓘 ∘ 𝒪 ∘ 𝒯 : R → E          = composite observation pipeline
-Var(E)                     = propagated uncertainty
-F(·)                       = functorial mapping of uncertainty/noise
+𝒯 : R → T              = trace formation operator
+𝒪 : T → S              = observation operator
+𝓘 : S → E              = interpretation / criticism operator
+𝓘 ∘ 𝒪 ∘ 𝒯 : R → E      = composite observation pipeline
+Var(E)                 = propagated uncertainty
+F(·)                   = functorial mapping of uncertainty/noise
 
  OPERATOR COMPOSITION IN RDG NOTATION (SID → PED → Q)
 ---------------------------------------------------------------
