@@ -450,6 +450,44 @@ Learns:
     - causal assumptions
     - hierarchical priors
 
+   ADAPTIVE METHODOLOGY (META‑LEARNING LOOP)
+   RDG NOTATION: SID → PED → Q
+   META‑STATE (SID: S / I / D)
+   [S‑mode]  (M₀, ℛ)
+                = meta‑state: prior + inference rules
+
+   [D‑mode]  (M₀, ℛ) → (M₀', ℛ')
+                = meta‑update across iterations
+
+   Meaning:
+      S = structural bias of the method
+      I = rule‑interaction governing inference
+      D = dynamic evolution of methodological assumptions
+
+   PREDICTIVE FEEDBACK (PED: Power / Evaluation / Q_slice)
+   Evaluate predictive success:
+        H_pred(1914 | ≤1910)  vs  H_true(1914)
+
+   Gradient on meta‑parameters:
+        ∇_{M₀,ℛ} Loss(prediction_error)
+
+   PED interpretation:
+      P = predictive power of the method
+      E = evaluation via loss/error
+      Q = update‑regime controlling learning rate + stability
+
+   LEARNED COMPONENTS (Q‑slice logic)
+   Learns:
+      - reliability function f
+      - regularization λ
+      - causal assumptions
+      - hierarchical priors
+
+   Q‑logic:
+      - determines when updates occur
+      - gates stability vs. flexibility
+      - enforces coherence across scales
+
 ---------------------------------------------------------------------
 
 4. COMPUTATIONAL BUDGET (SCALABLE NARRATIVE SEARCH)
