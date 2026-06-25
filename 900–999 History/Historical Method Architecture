@@ -377,7 +377,7 @@ H_true(t)                  = actual historical reconstruction at time t
 Loss                       = prediction error metric
 ∇_{M₀,ℛ} Loss              = gradient on meta-parameters
 f                          = learned reliability function
-λ                          = learned regularization parameter
+λ_learned                  = learned regularization parameter
 
    META‑LEARNING FEEDBACK IN RDG NOTATION (SID → PED → Q)
 ---------------------------------------------------------------
@@ -410,7 +410,7 @@ f                          = learned reliability function
    f           = learned reliability function
                  (maps raw components → reliability score)
 
-   λ           = learned regularization parameter
+   λ_learned   = learned regularization parameter
                  (controls stability vs. flexibility)
 
    Q‑slice logic:
@@ -648,7 +648,7 @@ Learns:
    LEARNED COMPONENTS (Q‑slice logic)
    Learns:
       - reliability function f
-      - regularization λ
+      - regularization λ_learned
       - causal assumptions
       - hierarchical priors
 
