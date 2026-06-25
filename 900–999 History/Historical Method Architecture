@@ -210,6 +210,55 @@ Loss                       = prediction error metric
 f                          = learned reliability function
 λ                          = learned regularization parameter
 
+   META‑LEARNING FEEDBACK IN RDG NOTATION (SID → PED → Q)
+---------------------------------------------------------------
+
+   META‑STATE + RULES (SID: S / I / D)
+   [S‑mode]  M₀          = meta‑prior (initial structural bias)
+   [I‑mode]  ℛ           = inference rules (update/compatibility)
+   [D‑mode]  (M₀,ℛ) → (M₀',ℛ')
+                = meta‑update mapping across iterations
+
+   Interpretation:
+      S = admissible meta‑structure
+      I = rule‑interaction / compatibility logic
+      D = dynamic evolution of meta‑parameters
+
+   PREDICTION + ERROR (PED: Power / Evaluation / Q_slice)
+   H_pred(t)   = predicted historical state at time t
+   H_true(t)   = actual reconstructed state at time t
+
+   Loss        = prediction error metric
+   ∇_{M₀,ℛ} Loss
+               = gradient on meta‑parameters
+
+   PED interpretation:
+      P = predictive power of the model
+      E = evaluation via loss/error
+      Q = regime controlling update sensitivity
+
+   LEARNED FUNCTIONS + REGULARIZATION
+   f           = learned reliability function
+                 (maps raw components → reliability score)
+
+   λ           = learned regularization parameter
+                 (controls stability vs. flexibility)
+
+   Q‑slice logic:
+      - Q determines when updates are allowed or suppressed.
+      - λ modulates the “rigidity” of the meta‑prior.
+      - f encodes learned trust in components of the pipeline.
+
+   META‑LEARNING LOOP (SID + PED + Q)
+
+   1. Predict:     H_pred(t)
+   2. Compare:     Loss(H_pred, H_true)
+   3. Update:      (M₀,ℛ) → (M₀',ℛ') via ∇Loss
+   4. Regulate:    Q‑logic + λ enforce stability
+   5. Refine:      f improves reliability weighting
+
+---------------------------------------------------------------
+
 COMPUTATIONAL SCALABILITY
 ----------------------------------
 B ∈ ℕ                      = computational budget
