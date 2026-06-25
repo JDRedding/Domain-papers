@@ -1,14 +1,19 @@
 HISTORICAL METHOD ARCHITECTURE 
 ============================================================
+Classical 7-Step Method + Concise Formal Hooks
+============================================================
+
 [0] PURPOSE
     Reconstruct past events using surviving evidence through
     critical evaluation, contextual analysis, and synthesis.
+    → See: Event–Narrative Space, Long-Memory Temporal Model
 
 ------------------------------------------------------------
 [1] FORMULATE THE QUESTION
     - Define the target phenomenon.
     - Specify scope (time, place, actors, process).
     - Establish what counts as relevant evidence.
+    → See: Multi-Level Bayesian Hierarchy, Research Operator
 
 ------------------------------------------------------------
 [2] SOURCE ACQUISITION
@@ -20,6 +25,8 @@ HISTORICAL METHOD ARCHITECTURE
 
     RULE:
         Gather broadly, filter later.
+
+    → See: Missing Evidence as Process, Bayesian Hierarchy
 
 ------------------------------------------------------------
 [3] SOURCE CRITICISM
@@ -38,6 +45,9 @@ HISTORICAL METHOD ARCHITECTURE
         - Are there contradictions?
         - Is the testimony plausible?
 
+    → See: Reliability Functions, Latent Variables,
+           Survival/Decay Models
+
 ------------------------------------------------------------
 [4] CONTEXTUALIZATION
     - Place the source inside its cultural, political,
@@ -45,12 +55,17 @@ HISTORICAL METHOD ARCHITECTURE
     - Avoid anachronism.
     - Interpret statements according to period norms.
 
+    → See: Event→Narrative Projection, Long-Memory Models
+
 ------------------------------------------------------------
 [5] INTERPRETATION
     - Identify causal chains.
     - Evaluate competing explanations.
-    - Distinguish fact, inference, and speculation.
-    - Map relationships between actors, structures, and events.
+    - Distinguish fact, inference, speculation.
+    - Map relationships between actors, structures, events.
+
+    → See: Message-Passing Inference, Latent Variables,
+           Event/Narrative Compression
 
 ------------------------------------------------------------
 [6] SYNTHESIS
@@ -59,11 +74,33 @@ HISTORICAL METHOD ARCHITECTURE
     - Explicitly state uncertainties.
     - Produce a justified historical argument.
 
+    → See: Pareto-Optimal Narratives, Sheaf Consistency,
+           Multi-Objective Optimization
+
 ------------------------------------------------------------
 [7] REVIEW & REVISION
     - Reassess conclusions when new evidence appears.
     - Re-evaluate assumptions and biases.
     - Update the narrative accordingly.
+
+    → See: Formal Research Operator, Meta-Learning Layer,
+           Decision Layer
+
+------------------------------------------------------------
+ADVANCED SECTIONS (EXPANDED BELOW)
+     1. Reliability Functions
+     2. Event Space vs Narrative Space
+     3. Latent Variables
+     4. Missing Evidence as a Process
+     5. Long-Memory Temporal Model
+     6. Multi-Level Bayesian Hierarchy
+     7. Multi-Objective Narrative Optimization
+     8. Bayesian Experimental Design
+     9. Message-Passing Inference
+    10. Meta-Learning Layer
+    11. Formal Research Operator
+    12. Sheaf-Theoretic Consistency
+    13. Decision Layer
 
 =====================================================================
 STRUCTURAL EXTENSIONS 
@@ -1385,6 +1422,48 @@ Publication / action:
 Utility‑based:
     U(N_i) = f(confidence, robustness, significance)
 
+   DECISION LAYER (POSTERIOR → POLICY → ACTION)
+   RDG NOTATION: SID → PED → Q
+   POSTERIOR NARRATIVES (SID: S / I / D)
+   [S‑mode]  P(N_i)
+                = posterior probability of narrative N_i
+
+   Meaning:
+      S = structural distribution over admissible narratives
+      I = interactions among competing explanations
+      D = dynamic weighting after evidence integration
+
+   DECISION POLICY (PED: Power / Evaluation / Q_slice)
+   δ(N_i)
+        = decision rule mapping narratives to actions
+
+   A = δ(P(N_i))
+        = publication / action chosen from posterior beliefs
+
+   PED interpretation:
+      P = decision‑power (how δ transforms beliefs into actions)
+      E = evaluation of confidence + robustness
+      Q = regime controlling risk tolerance and admissibility
+
+   Notes:
+      - δ may be Bayesian, minimax, threshold‑based, or utility‑based
+      - δ can incorporate ethical, institutional, or scientific norms
+      - δ determines what gets published, emphasized, or withheld
+
+   UTILITY‑BASED DECISIONING (SID + PED + Q)
+   U(N_i) = f(confidence, robustness, significance)
+
+   Meaning:
+      - SID: utility defined over narrative space
+      - PED: evaluates narratives by multi‑factor utility
+      - Q: governs weighting of confidence vs. robustness vs.
+           significance (risk‑sensitive or risk‑neutral regimes)
+
+   Result:
+      A principled mechanism for turning posterior narrative
+      distributions into concrete scholarly actions, guided by
+      confidence, robustness, and significance.
+
 =====================================================================
 ASSOCIATED NOTATION TABLE (COMPLETE)
 =====================================================================
@@ -1640,7 +1719,7 @@ Q_{t+1}       = next research questions
 END OF FULL NOTATION TABLE
 =====================================================================
 
-HISTORICAL METHOD ARCHITECTURE — MASTER v3.0 (JD Redding)
+HISTORICAL METHOD ARCHITECTURE — MASTER 
 ================================================================================
 [0] PURPOSE: Reconstruct R from surviving evidence via criticism & synthesis.
 
