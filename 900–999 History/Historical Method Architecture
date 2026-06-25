@@ -318,7 +318,7 @@ Pruning rule               = if |𝓝*| > B, collapse via clustering
       Narrative frontier remains computationally tractable
       while preserving topological + explanatory diversity.
 
-===============================================================
+---------------------------------------------------------------
 
 1. OPERATOR COMPOSITION (OBSERVATION PIPELINE)
 ----------------------------------------------
