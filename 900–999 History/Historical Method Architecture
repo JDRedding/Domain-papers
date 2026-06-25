@@ -1889,6 +1889,10 @@ D_KL(P||Q)    = Kullback–Leibler divergence
 Marrou filter:
    h = I(P; p)
 
+h = I(P; p) measures how much a narrative perspective P constrains
+or informs a proposition p; it quantifies perspectival filtering in
+Marrou’s sense.
+
 =====================================================================
 TOPOLOGICAL DATA ANALYSIS (TDA)
 -------------------------------
