@@ -500,15 +500,17 @@ Where:
     𝒪 : T → S      (observation)
     𝓘 : S → E      (interpretation / criticism)
 
+𝒯 : R→T is generative; 𝒪, 𝓘, ℋ are inferential inversions.
+
 Each operator introduces uncertainty:
     R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E
+
 Noise propagates through composition:
     Var(E) = F(Var(𝒯), Var(𝒪), Var(𝓘))
 
 Functorial view:
     F(𝒯) → F(𝒪) → F(𝓘)
 Information loss accumulates monotonically.
-
 
    OPERATOR COMPOSITION (OBSERVATION PIPELINE)
    RDG NOTATION: SID → PED → Q
