@@ -744,6 +744,46 @@ Projection:
 
 Narrative = compressed trajectory through event space.
 
+   EVENT SPACE VS NARRATIVE SPACE
+   RDG NOTATION: SID → PED → Q
+   CORE MANIFOLDS (SID: S / I / D)
+   [S‑mode]  𝓔
+                = event manifold (fine‑grained event space)
+
+   [I‑mode]  𝓝
+                = narrative manifold (coarse, structured space)
+
+   [D‑mode]  π : 𝓔 → 𝓝
+                = projection from events to narratives
+
+   Meaning:
+      S = raw event‑level ontology
+      I = interaction structure among events
+      D = dynamic compression into narrative form
+
+   NARRATIVE AS COMPRESSED TRAJECTORY (PED)
+   Narrative = π(trajectory in 𝓔)
+
+   PED interpretation:
+      P = compression power of π
+      E = evaluation of information loss
+      Q = regime controlling granularity of narrative resolution
+
+   Notes:
+      - π discards micro‑events while preserving explanatory arcs
+      - 𝓝 is lower‑dimensional but semantically structured
+      - Different π‑regimes yield different narrative styles
+
+   GLOBAL STRUCTURE (SID + PED + Q)
+   - Event space 𝓔 encodes what *happens*.
+   - Narrative space 𝓝 encodes what is *told* or *explained*.
+   - π governs admissible compressions from events to narratives.
+   - Q‑logic controls how aggressively events are merged.
+
+   Result:
+      A principled separation between event‑level reality
+      and narrative‑level representation.
+
 =====================================================================
 5. LATENT VARIABLES
 =====================================================================
