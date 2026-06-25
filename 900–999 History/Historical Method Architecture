@@ -807,6 +807,75 @@ Interpretation / Criticism:
 Full pipeline:
     R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E ──▶ H ──▶ N
 
+TRACE–REGIME GATING  Q_T  →  Q_O 
+RANGE OF Q_T
+Q_T is a discrete regime index controlling how the trace-
+formation operator  𝒯 : R → T  behaves.
+
+   Q_T ∈ {0, 1, 2, 3}
+
+Meaning of regimes:
+   0 = Null regime      (no trace formation possible)
+   1 = Weak regime      (fragmentary, noisy traces)
+   2 = Normal regime    (standard trace formation)
+   3 = Strong regime    (high-fidelity traces)
+
+Optional continuous form:
+   Q_T ∈ [0,1]
+but the discrete 4-regime model is preferred for logging.
+
+INPUTS TO THE GATE
+The transition from trace regime Q_T to observation regime Q_O
+depends on:
+
+   - Q_T      (trace regime)
+   - η_T      (trace noise)
+   - τ_1, τ_2 (noise thresholds)
+
+These form the triple:
+   (Q_T, η_T, Q_O)
+which is recorded in the system’s operational history.
+
+GATING FUNCTION  G(Q_T, η_T) = Q_O
+The observation regime Q_O is determined by:
+
+   Q_O = G(Q_T, η_T)
+
+Explicit rule:
+
+   If Q_T = 0:
+       Q_O = 0
+
+   If Q_T = 1:
+       If η_T > τ_1:   Q_O = 1
+       Else:           Q_O = 2
+
+   If Q_T = 2:
+       Q_O = 2
+
+   If Q_T = 3:
+       If η_T ≤ τ_2:   Q_O = 3
+       Else:           Q_O = 2
+
+Interpretation:
+   - Null traces → null observation.
+   - Weak traces → weak or normal observation depending on noise.
+   - Normal traces → normal observation.
+   - Strong traces → strong observation unless noise is too high.
+
+The gating rule produces a discrete, auditable transition:
+
+   (Q_T, η_T)  →  Q_O
+
+This allows the machine to log:
+   - which traces were admitted,
+   - how noise affected admissibility,
+   - which observation regime was used.
+
+This makes the time-stepped operator chain:
+   R → T → S → E
+fully reconstructible from logs.
+
    EXPLICIT OBSERVATION OPERATORS
    RDG NOTATION: SID → PED → Q
    OPERATOR DEFINITIONS (SID: S / I / D)
@@ -1031,7 +1100,7 @@ Full likelihood:
    SURVIVAL PROBABILITY (PED: Power / Evaluation / Q_slice)
    P(survival | t) = e^(−λ t)
 
-   λ = λ(material_type)
+   λ_decay = λ_material(material_type)
         = material‑specific decay constant
 
    PED interpretation:
@@ -1040,7 +1109,7 @@ Full likelihood:
       Q = regime controlling decay curves across materials
 
    Notes:
-      - λ encodes fragility (papyrus > parchment > stone)
+      - λ_material encodes fragility (papyrus > parchment > stone)
       - exponential decay models cumulative loss of traces
       - different Q‑regimes correspond to different archival
         environments (dry, humid, fire‑risk, political destruction)
