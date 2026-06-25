@@ -339,6 +339,35 @@ Functorial view:
     F(𝒯) → F(𝒪) → F(𝓘)
 Information loss accumulates monotonically.
 
+
+   OPERATOR COMPOSITION (OBSERVATION PIPELINE)
+   RDG NOTATION: SID → PED → Q
+   COMPOSITE MAPPING
+   𝓘 ∘ 𝒪 ∘ 𝒯 : R → E
+
+   [S‑mode] 𝒯 : R → T        = trace formation
+   [I‑mode] 𝒪 : T → S        = observation / structuring
+   [D‑mode] 𝓘 : S → E        = interpretation / criticism
+
+   Pipeline:
+      R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E
+
+   UNCERTAINTY PROPAGATION (PED)
+   Var(E) = F(Var(𝒯), Var(𝒪), Var(𝓘))
+
+   PED interpretation:
+      P = operator power (transform capacity)
+      E = evaluation of uncertainty
+      Q = regime controlling noise amplification
+
+   FUNCTORIAL VIEW (Q‑slice logic)
+
+   F(𝒯) → F(𝒪) → F(𝓘)
+
+   - Uncertainty transforms covariantly with operators.
+   - Information loss accumulates monotonically along the chain.
+   - Q‑logic governs admissible transitions and noise gating.
+
 ---------------------------------------------------------------------
 
 2. CONSISTENCY TENSION
