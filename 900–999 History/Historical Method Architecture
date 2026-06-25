@@ -1031,6 +1031,44 @@ Objectives:
 Pareto‑optimal narratives:
     𝓝* = { N_i : non‑dominated across objectives }
 
+   MULTI‑OBJECTIVE NARRATIVE OPTIMIZATION (PARETO FRONT)
+   RDG NOTATION: SID → PED → Q
+   OBJECTIVES (SID: S / I / D)
+   [S‑mode]  explanatory power
+   [I‑mode]  predictive consistency
+   [I‑mode]  simplicity
+   [I‑mode]  coherence
+   [I‑mode]  completeness
+   [D‑mode]  causal adequacy
+
+   Meaning:
+      S = structural clarity of narrative explanation
+      I = interaction among competing desiderata
+      D = dynamic adequacy of causal reconstruction
+
+   PARETO‑OPTIMAL NARRATIVES (PED: Power / Evaluation / Q_slice)
+   𝓝* = { N_i : non‑dominated across objectives }
+
+   PED interpretation:
+      P = optimization power across multiple axes
+      E = evaluation via dominance relations
+      Q = regime controlling trade‑off weighting and admissibility
+
+   Notes:
+      - No single objective dominates universally
+      - Narratives on 𝓝* represent optimal compromises
+      - Q‑logic can shift the frontier (e.g., penalize complexity)
+
+   GLOBAL STRUCTURE (SID + PED + Q)
+   - SID: defines the objective space for narrative evaluation
+   - PED: computes the Pareto frontier 𝓝*
+   - Q‑logic: governs trade‑off regimes, pruning, and admissibility
+
+   Result:
+      A principled method for selecting narratives that balance
+      explanatory power, predictive consistency, simplicity,
+      coherence, completeness, and causal adequacy.
+
 =====================================================================
 10. BAYESIAN EXPERIMENTAL DESIGN
 =====================================================================
@@ -1043,6 +1081,48 @@ EVI:
 
 Active research planner:
     archives, excavations, digitization targets.
+
+   BAYESIAN EXPERIMENTAL DESIGN (ACTIVE HISTORICAL INFERENCE)
+   RDG NOTATION: SID → PED → Q
+   NEXT OBSERVATION SELECTION (SID: S / I / D)
+   [D‑mode]  S* = arg max EVI(S)
+                = choose next observation maximizing
+                  expected value of information
+
+   Meaning:
+      S = structural space of possible observations
+      I = interaction between observation and model uncertainty
+      D = dynamic update of research trajectory
+
+   EXPECTED VALUE OF INFORMATION (PED: Power / Evaluation / Q_slice)
+   EVI(S) = E[ H_before − H_after ]
+
+   Interpretation:
+      P = information‑gain power of candidate observation S
+      E = evaluation of entropy reduction
+      Q = regime controlling exploration vs. exploitation
+
+   Notes:
+      - H_before = entropy of posterior before observing S
+      - H_after  = entropy after observing S
+      - EVI quantifies how much uncertainty S is expected to remove
+
+   ACTIVE RESEARCH PLANNER (SID + PED + Q)
+   Applications:
+      - archives
+      - excavations
+      - digitization targets
+      - targeted interviews
+      - forensic document analysis
+
+   Meaning:
+      - SID: defines admissible search space for new evidence
+      - PED: evaluates expected information gain
+      - Q: governs cost, feasibility, and risk constraints
+
+   Result:
+      A principled, quantitative method for deciding
+      *where to look next* in historical research.
 
 =====================================================================
 11. MESSAGE‑PASSING INFERENCE
@@ -1057,6 +1137,50 @@ Update rule:
     m_{i→j}^{(t+1)} = F(m_{k→i}^{(t)})
 
 Converges to stable beliefs over nodes.
+
+   MESSAGE‑PASSING INFERENCE (SDG + CAUSAL DAG)
+   RDG NOTATION: SID → PED → Q
+   GRAPHICAL STRUCTURE (SID: S / I / D)
+   [S‑mode]  SDG / Causal DAG
+                = nodes = variables, edges = causal influence
+
+   [I‑mode]  messages m_{i→j}
+                = information passed along edges
+
+   [D‑mode]  update dynamics
+                m_{i→j}^{(t+1)} = F(m_{k→i}^{(t)})
+
+   Meaning:
+      S = structural adjacency of influence
+      I = interaction via message exchange
+      D = dynamic convergence toward stable beliefs
+
+   BELIEF PROPAGATION (PED: Power / Evaluation / Q_slice)
+   m_{i→j}^{(t+1)} = F(m_{k→i}^{(t)})
+
+   PED interpretation:
+      P = propagation power (how strongly nodes influence each other)
+      E = evaluation of consistency across incoming messages
+      Q = regime controlling damping, stability, and convergence
+
+   Notes:
+      - Works on trees exactly
+      - Works approximately on loopy graphs (loopy BP)
+      - Captures causal + evidential flow simultaneously
+
+   CONVERGENCE TO STABLE BELIEFS (SID + PED + Q)
+   Beliefs converge when:
+        m_{i→j}^{(t+1)} ≈ m_{i→j}^{(t)}
+
+   Meaning:
+      - SID: graph structure defines allowable influence paths
+      - PED: convergence indicates consistent global inference
+      - Q: governs convergence rate, damping, and admissibility
+
+   Result:
+      A distributed inference mechanism where each node updates
+      its belief using only local messages, yet the system
+      converges to a coherent global posterior.
 
 =====================================================================
 12. META‑LEARNING LAYER
