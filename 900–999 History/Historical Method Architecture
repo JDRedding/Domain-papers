@@ -1204,6 +1204,54 @@ Learns:
     causal assumptions
     prior structures
 
+   META‑LEARNING LAYER (ADAPTIVE METHODOLOGICAL EVOLUTION)
+   RDG NOTATION: SID → PED → Q
+   META‑STATE (SID: S / I / D)
+   [S‑mode]  M₀
+                = meta‑prior (initial methodological bias)
+
+   [I‑mode]  ℛ
+                = inference rules (update logic, compatibility)
+
+   [D‑mode]  H
+                = historical models produced under (M₀, ℛ)
+
+   Meaning:
+      S = structural assumptions about how inference works
+      I = interaction rules governing updates
+      D = dynamic generation of historical reconstructions
+
+   META‑UPDATE (PED: Power / Evaluation / Q_slice)
+   (M₀, ℛ) → (M₀', ℛ')
+
+   PED interpretation:
+      P = power to modify the inference engine itself
+      E = evaluation via predictive success + consistency
+      Q = regime controlling stability vs. flexibility
+          (how aggressively meta‑parameters can shift)
+
+   Notes:
+      - Meta‑updates occur after evaluating model performance
+      - Predictive failures trigger adjustments to M₀ and ℛ
+      - Q‑logic prevents runaway adaptation or overfitting
+
+   WHAT THE META‑LAYER LEARNS (SID + PED + Q)
+   Learns:
+      - reliability functions
+      - regularization weights
+      - causal assumptions
+      - prior structures
+
+   Meaning:
+      - SID: expands or contracts admissible methodological space
+      - PED: evaluates which methodological changes improve inference
+      - Q: governs admissibility + smoothness of meta‑updates
+
+   Result:
+      A self‑correcting historical inference engine that adapts
+      its priors, rules, causal assumptions, and regularization
+      based on empirical performance.
+
 =====================================================================
 13. FORMAL RESEARCH OPERATOR
 =====================================================================
@@ -1217,6 +1265,51 @@ Where:
 
 Iterated application drives investigation.
 
+   FORMAL RESEARCH OPERATOR (ITERATED INVESTIGATION DYNAMICS)
+   RDG NOTATION: SID → PED → Q
+   OPERATOR DEFINITION (SID: S / I / D)
+   [S‑mode]  ℋ : (H_t, E_t) ↦ (H_{t+1}, Q_{t+1})
+                = structural map from current model + evidence
+                  to next model + next questions
+
+   Meaning:
+      S = structural transformation of historical models
+      I = interaction between evidence and hypotheses
+      D = dynamic evolution of inquiry across iterations
+
+   UPDATE COMPONENTS (PED: Power / Evaluation / Q_slice)
+   H_{t+1}
+        = updated historical model
+
+   Q_{t+1}
+        = next research questions (uncertainty‑driven)
+
+   PED interpretation:
+      P = inferential power of ℋ to refine H_t
+      E = evaluation of uncertainty → generates Q_{t+1}
+      Q = regime controlling how aggressively questions shift
+          (exploration vs. exploitation)
+
+   Notes:
+      - ℋ encodes the logic of research progression
+      - Q_{t+1} emerges from posterior uncertainty structure
+      - ℋ can be learned, hand‑specified, or hybrid
+
+   ITERATED APPLICATION (SID + PED + Q)
+   Apply ℋ repeatedly:
+        (H_t, E_t) → (H_{t+1}, Q_{t+1})
+                   → (H_{t+2}, Q_{t+2})
+                   → …
+
+   Meaning:
+      - SID: defines the admissible space of research states
+      - PED: evaluates evidence and updates models
+      - Q: governs the evolution of research questions
+
+   Result:
+      A self‑driving research process where each iteration
+      refines the model and generates the next investigative step.
+
 =====================================================================
 14. SHEAF‑THEORETIC CONSISTENCY
 =====================================================================
@@ -1228,6 +1321,53 @@ Compatibility on overlaps:
     H_U |_{U∩V} = H_V |_{U∩V}
 
 Global history exists iff local sections glue.
+
+   SHEAF‑THEORETIC CONSISTENCY (LOCAL → GLOBAL HISTORY)
+   RDG NOTATION: SID → PED → Q
+   LOCAL SECTIONS (SID: S / I / D)
+   [S‑mode]  H_U
+                = local reconstruction on region / archive U
+
+   [I‑mode]  Overlaps U∩V
+                = interaction zones where reconstructions must agree
+
+   [D‑mode]  Restrictions:
+                H_U |_{U∩V} = H_V |_{U∩V}
+
+   Meaning:
+      S = structural local models
+      I = compatibility constraints on overlaps
+      D = dynamic gluing behavior across regions
+
+   SHEAF CONDITION (PED: Power / Evaluation / Q_slice)
+   Local reconstructions glue to a global history H iff:
+        H_U |_{U∩V} = H_V |_{U∩V}   for all overlaps
+
+   PED interpretation:
+      P = power to assemble global structure from local data
+      E = evaluation of compatibility on overlaps
+      Q = regime controlling tolerance for inconsistency
+          (strict sheaf vs. approximate sheaf)
+
+   Notes:
+      - Exact sheaf: strict equality on overlaps
+      - Approximate sheaf: small deviations allowed (TDA, metrics)
+      - Failure to glue indicates missing data or genuine conflict
+
+   GLOBAL HISTORY CRITERION (SID + PED + Q)
+   A global history H exists iff:
+        {H_U} satisfy the sheaf condition on all overlaps.
+
+   Meaning:
+      - SID: defines local domains and restriction maps
+      - PED: checks overlap consistency
+      - Q: governs admissibility of gluing (strict, metric, or
+           persistence‑based)
+
+   Result:
+      A principled criterion for when fragmented archives,
+      regional histories, or partial reconstructions can be
+      unified into a coherent global historical model.
 
 =====================================================================
 15. DECISION LAYER
