@@ -2086,4 +2086,6 @@ FORMAL OVERLAY (Active Throughout)
 • Meta: (M₀, ℛ) updated via prediction loss ∇
 • Scalability: Budget B + cluster_𝓝 + d_GH pruning
 • Decision: Posterior P(N_i) → δ via U(·)
+
+Q (axis) ≠ Q_T/Q_O (regimes) ≠ Q_{t+1} (questions)
 ================================================================================
