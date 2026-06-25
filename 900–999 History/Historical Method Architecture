@@ -8,12 +8,83 @@ Classical 7-Step Method + Concise Formal Hooks
     critical evaluation, contextual analysis, and synthesis.
     → See: Event–Narrative Space, Long-Memory Temporal Model
 
+What exactly is a “historical model” H?
+A historical model H is a structured representation of the
+past that encodes:
+
+what happened
+when it happened
+who was involved
+how events relate causally
+what evidence supports each claim
+what uncertainties remain
+
+In other words:
+
+H is the best current reconstruction of the past, given the
+evidence and the inference rules.
+
+It is not a narrative.
+It is not a document.
+It is not a story.
+
+It is a state of knowledge about the past. H is the
+internal, computational object that exists before compress
+it into a narrative N. H is a multi‑layered object
+containing events, actors, causes, evidence, context, and
+uncertainty.
+
 ------------------------------------------------------------
 [1] FORMULATE THE QUESTION
     - Define the target phenomenon.
     - Specify scope (time, place, actors, process).
     - Establish what counts as relevant evidence.
     → See: Multi-Level Bayesian Hierarchy, Research Operator
+
+A historical model H minimally contains the following state
+variables:
+
+(-) Event structure
+Set of hypothesized events
+Their timestamps (exact or interval)
+Their spatial locations
+Their participants
+
+(-) Causal structure
+Directed edges: “Event A → Event B”
+Strength/credibility of each causal link
+Alternative causal paths
+
+(-) Actor states
+Motives
+Capabilities
+Constraints
+Institutional affiliations
+Latent variables (Z) representing unknowns
+
+(-) Evidence alignment
+Which pieces of evidence support which events
+Reliability weights R_i
+Survival/decay likelihoods M(t)
+Contradictions and tensions
+
+(-) Contextual fields
+Economic conditions
+Political structures
+Cultural norms
+Technological constraints
+
+(-) Uncertainty structure
+Posterior probabilities P(N_i)
+Confidence intervals
+Missingness distributions
+Latent variable posteriors
+
+(-) Meta‑state
+Priors
+Inference rules
+Regularization weights
+Reliability functions
 
 ------------------------------------------------------------
 [2] SOURCE ACQUISITION
@@ -67,6 +138,37 @@ Classical 7-Step Method + Concise Formal Hooks
     → See: Message-Passing Inference, Latent Variables,
            Event/Narrative Compression
 
+What constitutes one state versus another?
+Two historical models H and H′ are different states if any of the following differ:
+
+(-) Event differences
+An event is added, removed, or re‑timed
+An event’s location changes
+An event’s participants change
+
+(-) Causal differences
+A causal link is added or removed
+The strength of a causal link changes
+Competing causal explanations reorder
+
+(-) Evidence differences
+New evidence is added
+Evidence is re‑weighted (reliability update)
+Evidence is re‑interpreted
+Missingness model M(t) changes
+
+(-) Contextual differences
+Updated understanding of institutions, norms, or constraints
+
+(-) Uncertainty differences
+Posterior probabilities shift
+Latent variable distributions change
+
+(-) Meta‑level differences
+Priors change
+Inference rules change
+Regularization parameters change
+
 ------------------------------------------------------------
 [6] SYNTHESIS
     - Integrate validated evidence into a coherent narrative.
@@ -76,6 +178,23 @@ Classical 7-Step Method + Concise Formal Hooks
 
     → See: Pareto-Optimal Narratives, Sheaf Consistency,
            Multi-Objective Optimization
+
+In short:
+
+    A “state” is a complete snapshot of your reconstructed
+     past + your uncertainty + your methodological
+     assumptions.
+
+And:
+
+    A new state is created whenever evidence, interpretation,
+     or inference rules change.
+
+This is why the research operator
+
+    ℋ : (H_t, E_t) → (H_{t+1}, Q_{t+1})  
+
+formalizes the transition between states.
 
 ------------------------------------------------------------
 [7] REVIEW & REVISION
@@ -178,6 +297,7 @@ F(·)                       = functorial mapping of uncertainty/noise
       - regime shifts respect Q‑logic
 
 ---------------------------------------------------------------
+
 
 SYNERGY
 H_U                        = local historical reconstruction on region U
