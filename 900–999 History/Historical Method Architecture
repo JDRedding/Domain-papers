@@ -77,6 +77,71 @@ OPERATOR COMPOSITION
 Var(E)                     = propagated uncertainty
 F(·)                       = functorial mapping of uncertainty/noise
 
+ OPERATOR COMPOSITION IN RDG NOTATION (SID → PED → Q)
+---------------------------------------------------------------
+
+   RAW REALITY R
+        │
+        ▼
+   (SID: Structure / Interaction / Dynamics)
+
+   [S‑mode] 𝒯 : R → T
+      - Structure extraction of traces
+      - Trace noise η_T enters here
+      - SID role: S = admissible trace‑form
+
+   [I‑mode] 𝒪 : T → S
+      - Interaction lifts traces into structured signals
+      - Noise transforms η_T → η_S
+      - SID role: I = relational hinge / coupling
+
+   [D‑mode] 𝓘 : S → E
+      - Dynamics of interpretation → evidence
+      - Noise becomes epistemic η_S → η_E
+      - SID role: D = geometric motion / adjudication
+
+   PED LAYER (Power / Evaluation / Dynamics_slice)
+   𝒯 ↦ (P_T, E_T, Q_T)
+      P_T = trace‑capacity carrier
+      E_T = trace‑coherence metric
+      Q_T = trace‑regime / gating
+
+   𝒪 ↦ (P_O, E_O, Q_O)
+      P_O = structural power of signal formation
+      E_O = evaluation of signal quality
+      Q_O = observation‑regime switching
+
+   𝓘 ↦ (P_I, E_I, Q_I)
+      P_I = interpretive power / semantic lift
+      E_I = coherence of inference
+      Q_I = interpretive regime / threshold logic
+
+   COMPOSITE PIPELINE (SID + PED + Q)
+   R ──𝒯──▶ T ──𝒪──▶ S ──𝓘──▶ E
+
+   SID:   (S → I → D)
+   PED:   (P → E → Q)
+   Q:     regime‑logic governing admissible transitions
+
+   Composite operator:
+      𝓘 ∘ 𝒪 ∘ 𝒯 : R → E
+
+   UNCERTAINTY PROPAGATION
+   Var(E) = total propagated uncertainty
+
+   Functorial lift:
+      F(𝒯) → F(𝒪) → F(𝓘)
+
+   F(·) preserves operator composition:
+      F(𝓘 ∘ 𝒪 ∘ 𝒯) = F(𝓘) ∘ F(𝒪) ∘ F(𝒯)
+
+   Meaning:
+      - noise respects SID structure
+      - uncertainty respects PED evaluation
+      - regime shifts respect Q‑logic
+
+---------------------------------------------------------------
+
 SYNERGY
 H_U                        = local historical reconstruction on region U
 H_V                        = local reconstruction on region V
