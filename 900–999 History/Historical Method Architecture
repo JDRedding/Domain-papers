@@ -154,6 +154,51 @@ VR_ε                       = Vietoris–Rips complex at scale ε
 U∩V                        = overlap region
 Persistence module         = homology across ε-scales
 
+   SHEAF–TDA SYNERGY IN RDG NOTATION (SID → PED → Q)
+---------------------------------------------------------------
+
+   LOCAL RECONSTRUCTIONS (SID: S / I / D)
+   [S‑mode]  H_U        = local reconstruction on region U
+   [S‑mode]  H_V        = local reconstruction on region V
+   [I‑mode]  H_U|_{U∩V} = restriction of H_U to overlap U∩V
+   [I‑mode]  Sheaf condition: H_U|_{U∩V} = H_V|_{U∩V}
+   [D‑mode]  U∩V        = overlap region (gluing locus)
+
+   Meaning:
+      - S: admissible local structure
+      - I: compatibility on overlaps
+      - D: globalization dynamics
+
+   TDA LAYER (PED: Power / Evaluation / Dynamics_slice)
+   VR_ε        = Vietoris–Rips complex at scale ε
+   β₀, β₁, β₂  = persistent homology ranks
+                 (components, loops, cavities)
+
+   τ           = consistency tension
+                 = persistence(β₁)
+
+   Persistence module = homology across ε‑scales
+
+   PED interpretation:
+      P = topological power (connectivity, cycles)
+      E = evaluation via persistence
+      Q = scale‑regime ε controlling feature survival
+
+   SYNERGY (SID + PED + Q)
+
+   - Sheaf compatibility detects **local agreement**.
+   - Persistent homology detects **global topological strain**.
+   - τ measures how much “loop‑level disagreement” persists
+     across scales → a quantitative signal of incompatibility.
+
+   Q‑slice logic:
+      - ε acts as the regime parameter.
+      - Increasing ε tests robustness of historical coherence.
+      - Stable β₁ features indicate structural tension
+        between local reconstructions.
+
+---------------------------------------------------------------
+
 META-LEARNING FEEDBACK
 M₀                         = meta-prior
 ℛ                          = inference rules
