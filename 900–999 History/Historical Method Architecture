@@ -507,6 +507,49 @@ Budget-aware pruning:
     if |𝓝*| > B:
         collapse via clustering → retain representatives
 
+   COMPUTATIONAL BUDGET (SCALABLE NARRATIVE SEARCH)
+   RDG NOTATION: SID → PED → Q
+   BUDGET PARAMETER (SID: S / I / D)
+   [S‑mode]  B ∈ ℕ
+                = structural bound on computational resources
+
+   Controls:
+      - number of narratives tracked on Pareto front
+      - depth of search in 𝓝
+      - resolution of manifold clustering
+
+   SID interpretation:
+      S = admissible resource envelope
+      I = interaction constraints on narrative exploration
+      D = dynamic shaping of search frontier
+
+   NARRATIVE CLUSTERING (PED: Power / Evaluation / Q_slice)
+   cluster_𝓝(N_i)
+        = clustering operator on narrative space
+          using d_GH or Riemannian metric
+
+   d_GH
+        = Gromov–Hausdorff distance on 𝓝
+          (evaluation of geometric similarity)
+
+   PED interpretation:
+      P = clustering / reduction power
+      E = evaluation via geometric metrics
+      Q = regime controlling clustering resolution
+
+   BUDGET‑AWARE PRUNING (SID + PED + Q)
+   If |𝓝*| > B:
+        collapse via clustering → retain representatives
+
+   Meaning:
+      - SID: B sets structural admissibility.
+      - PED: clustering + d_GH evaluate redundancy.
+      - Q: pruning regime determines collapse thresholds.
+
+   Result:
+      Scalable narrative search that preserves
+      explanatory diversity while remaining tractable.
+
 =====================================================================
 STRUCTURAL EXTENSIONS
 =====================================================================
