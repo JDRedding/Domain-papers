@@ -297,7 +297,19 @@ F(·)                       = functorial mapping of uncertainty/noise
       - regime shifts respect Q‑logic
 
 ---------------------------------------------------------------
+A historical model H is a structured state
 
+H = (G_E, G_C, A, C, W, U, M)
+
+where
+
+G_E = event graph
+G_C = causal graph
+A   = actor states
+C   = contextual fields
+W   = evidence weights
+U   = uncertainty state
+M   = methodological state
 
 SYNERGY
 H_U                        = local historical reconstruction on region U
