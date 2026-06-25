@@ -1,5 +1,15 @@
 UNIVERSAL EPISTEMIC ARCHITECTURE — MASTER
 ================================================================================
+
+Epistemic Architecture
+        │
+        ├── Historical reconstruction
+        ├── Scientific modeling
+        ├── Forensic reconstruction
+        ├── Geological inference
+        ├── Astronomical inference
+        └── Other trace-based sciences
+
 Domain-agnostic pipeline for reconstructing hidden structure from noisy traces:
 
 Reality R → Traces T (𝒯) → Observations S (𝒪) → Evidence E (𝓘) → Model H → Narrative/Theory N (π)
@@ -8,6 +18,12 @@ Differences across fields are confined to:
 • Trace types and regime characteristics (Q_T)
 • Domain-specific semantics of operators
 • Interpretation of components in H (e.g. "actors" vs "particles", "events" vs "states")
+
+[REALITY: R] ──(𝒯)──▶ [TRACES: T] ──(Q_T Gating)──▶ [OBSERVATIONS: S]
+                                                              │
+ [MODEL: H] ◀──(Bayesian Mesh)── [EVIDENCE: E] ◀──(𓓘)────────┘
+      │
+   (Proj.)──▶ [NARRATIVE/THEORY: N] ──▶ 𝓝* Pareto Selection
 
 PART I — CLASSICAL HISTORICAL METHOD
 [0] PURPOSE: Reconstruct R from surviving evidence via criticism & synthesis.
@@ -36,6 +52,12 @@ Evidence = Interpreted, weighted, relevant observations.
 Model H = Coherent internal reconstruction.  
 N = Communicated projection of H.
 
+Differences across fields are confined to:
+• Trace types
+• Regime characteristics
+• Operator semantics
+• Interpretation of H
+
 PART III — ADVANCED COMPUTATIONAL LAYERS
 • Multi-Level Bayesian Hierarchies
 • Message-Passing Inference on SDG/DAG
@@ -51,7 +73,19 @@ This pipeline is a direct instantiation of the SID-PED-Q engine:
 - PED: Power (operator capacity), Evaluation (reliability f, τ, loss), Dynamics_slice (Q regimes)
 - Q: Regime logic gating traces → meta-updates
 
-Viewed as a Closure Engine operating on epistemic flux: closing loops between observed traces and inferred model states.
+        [S]TRUCTURE           [P]OWER               [Q] REGIME GATING
+  (Graphs G_S, G_C in H)  (Operator Capacity)    (State Ingestion Valve)
+            │                     │                         │
+            ▼                     ▼                         ▼
+       [I]NTERACTION         [E]VALUATION         [M]ETA-LEARNING LOOP
+   (Operators 𝒯, 𝒪, 𓓘)    (Reliability, τ, Loss)    (Meta-Updates via ∇)
+            │                     │                         │
+            ▼                     ▼                         ▼
+        [D]YNAMICS           [D]YNAMICS_SLICE       [C]LOSURE ENGINE
+  (ℋ Transitions, Memory)   (Regimes Q_O, Q_M)     (Epistemic Flux Cap)
+
+Viewed as a Closure Engine operating on epistemic flux: closing loops between observed
+traces and inferred model states.
 
 FORMAL OVERLAY (Active Throughout)
 • Operators: 𝒯 : R→T ; 𝒪 : T→S ; 𝓘 : S→E ; Composite with Var(E) propagation
@@ -60,7 +94,7 @@ FORMAL OVERLAY (Active Throughout)
 • Inference: SDG/DAG message-passing, Bayesian update, Pareto 𝓝*
 • Consistency: Sheaf gluing + TDA τ
 • Loop: EVI(S*) + ℋ(H_t, E_t) → (H_{t+1}, Q_{t+1})
-• Meta: (M₀, ℛ) updated via prediction loss ∇
+• Meta: (M₀, ℛ) updated via prediction loss ∇ ((M₀, ℛ) → (M₀', ℛ'))
 • Scalability: B + cluster_𝓝 + d_GH
 • Decision: Posterior P(N_i) → δ via U(·)
 ================================================================================
