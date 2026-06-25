@@ -269,6 +269,57 @@ cluster_𝓝(·)               = clustering operator on narrative space
 |𝓝*|                       = number of narratives on Pareto front
 Pruning rule               = if |𝓝*| > B, collapse via clustering
 
+   COMPUTATIONAL SCALABILITY IN RDG NOTATION (SID → PED → Q)
+---------------------------------------------------------------
+
+   CORE OBJECTS (SID: S / I / D)
+   [S‑mode]  B ∈ ℕ
+                = computational budget (structural constraint)
+
+   [I‑mode]  𝓝
+                = narrative manifold (interaction space)
+
+   [D‑mode]  𝓝*
+                = Pareto‑optimal narrative set (dynamic frontier)
+
+   Interpretation:
+      S = admissible resource bounds
+      I = manifold of narrative interactions
+      D = evolving frontier of optimal narratives
+
+   METRICS + OPERATORS (PED: Power / Evaluation / Q_slice)
+   d_GH
+      = Gromov–Hausdorff distance on 𝓝
+        (evaluation of narrative‑space geometry)
+
+   cluster_𝓝(·)
+      = clustering operator on narrative space
+        (power to collapse redundant narratives)
+
+   |𝓝*|
+      = number of narratives on Pareto front
+        (evaluation of frontier complexity)
+
+   PED interpretation:
+      P = clustering / reduction power
+      E = evaluation via d_GH + frontier size
+      Q = regime controlling pruning thresholds
+
+   PRUNING RULE (SID + PED + Q)
+   If |𝓝*| > B:
+        collapse via cluster_𝓝(·)
+
+   Meaning:
+      - SID: B sets structural admissibility.
+      - PED: clustering + d_GH evaluate redundancy.
+      - Q: pruning regime determines when collapse triggers.
+
+   Result:
+      Narrative frontier remains computationally tractable
+      while preserving topological + explanatory diversity.
+
+===============================================================
+
 1. OPERATOR COMPOSITION (OBSERVATION PIPELINE)
 ----------------------------------------------
 Composite mapping:
