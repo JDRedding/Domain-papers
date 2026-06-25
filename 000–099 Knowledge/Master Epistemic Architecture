@@ -99,12 +99,10 @@ FORMAL OVERLAY (Active Throughout)
 • Decision: Posterior P(N_i) → δ via U(·)
 ================================================================================
 
-The full historical instantiation of this epistemic pipeline is developed in the
-Historical Method Architecture, which applies the universal R → T → S → E → H → N
-framework to the domain of historical reconstruction.
-
-It provides the concrete operators, reliability functions, sheaf‑consistency layer,
-meta‑learning loop, and narrative‑selection mechanisms specialized for historical evidence.
+The Historical Method Architecture is a domain-specific instantiation of the
+Universal Epistemic Architecture. It specializes the universal pipeline
+R→T→S→E→H→N for historical reconstruction by defining history-specific trace
+types, reliability functions, contextual operators, and narrative synthesis.
 
 See:
 https://github.com/JDRedding/Domain-papers/blob/main/900–999%20History/Historical%20Method%20Architecture
