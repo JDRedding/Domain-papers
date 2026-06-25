@@ -751,6 +751,9 @@ Narrative Representation (N)
 Documents ≠ Evidence.
 Evidence = interpreted, criticized claims extracted from sources.
 
+N is intentionally a thin read‑out layer; its feedback into ℋ is
+represented as a narrative‑guided research loop.
+
    ONTOLOGICAL SEPARATION (WHAT EXISTS)
    RDG NOTATION: SID → PED → Q
    ONTOLOGICAL LAYERING (SID: S / I / D)
@@ -796,6 +799,16 @@ Evidence = interpreted, criticized claims extracted from sources.
       what is observed,
       what is interpreted,
       and what is narrated.
+
+The Narrative layer N is intentionally thin: it is a read‑out/
+compression layer rather than a full dynamical state. However, N
+feeds back into ℋ by guiding evidence acquisition and model revision.
+
+𝑁 → 𝐻_priorities^research 
+
+ And:
+
+𝑁 → 𝐸_target^archive 
 
 =====================================================================
 2. EXPLICIT OBSERVATION OPERATORS
