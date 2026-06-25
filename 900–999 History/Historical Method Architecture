@@ -797,6 +797,41 @@ Likelihood:
 Posterior:
     P(H | E) = Σ_Z P(E | H, Z) P(Z | H)
 
+   LATENT VARIABLES (HIDDEN STRUCTURE INFERENCE)
+   RDG NOTATION: SID → PED → Q
+   HIDDEN STRUCTURE (SID: S / I / D)
+   [S‑mode]  Z
+                = latent actors, motives, institutions,
+                  lost correspondence, unobserved mechanisms
+
+   Meaning:
+      S = structural unknowns behind observed evidence
+      I = interactions among hidden factors (motives × institutions)
+      D = dynamic influence of Z on historical evolution
+
+   LIKELIHOOD WITH LATENTS (PED: Power / Evaluation / Q_slice)
+   P(E | H, Z)
+        = likelihood of evidence given historical model H
+          and latent structure Z
+
+   PED interpretation:
+      P = explanatory power of hidden variables
+      E = evaluation of model fit under latent assumptions
+      Q = regime controlling admissibility of latent complexity
+
+   POSTERIOR MARGINALIZATION (SID + PED + Q)
+   P(H | E) = Σ_Z P(E | H, Z) P(Z | H)
+
+   Meaning:
+      - SID: Z expands the structural space of possible histories
+      - PED: likelihood integrates over hidden structure
+      - Q: governs how much latent complexity is allowed
+           (regularization, priors, sparsity constraints)
+
+   Result:
+      Historical inference becomes robust to missing actors,
+      lost documents, hidden motives, and unobserved institutions.
+
 =====================================================================
 6. MISSING EVIDENCE AS A PROCESS
 =====================================================================
@@ -813,6 +848,46 @@ Material‑specific decay:
 Full likelihood:
     P(E_obs | H, M(t))
 
+   MISSING EVIDENCE AS A PROCESS (SURVIVORSHIP + DECAY)
+   RDG NOTATION: SID → PED → Q
+   SURVIVAL DYNAMICS (SID: S / I / D)
+   [S‑mode]  M(t)
+                = time‑dependent survival state of evidence
+
+   Meaning:
+      S = structural state of preservation
+      I = interaction with environment (decay, loss, damage)
+      D = dynamic evolution of survival over time
+
+   SURVIVAL PROBABILITY (PED: Power / Evaluation / Q_slice)
+   P(survival | t) = e^(−λ t)
+
+   λ = λ(material_type)
+        = material‑specific decay constant
+
+   PED interpretation:
+      P = decay power (rate of information loss)
+      E = evaluation of survival likelihood
+      Q = regime controlling decay curves across materials
+
+   Notes:
+      - λ encodes fragility (papyrus > parchment > stone)
+      - exponential decay models cumulative loss of traces
+      - different Q‑regimes correspond to different archival
+        environments (dry, humid, fire‑risk, political destruction)
+
+   FULL LIKELIHOOD WITH MISSINGNESS (SID + PED + Q)
+   P(E_obs | H, M(t))
+
+   Meaning:
+      - SID: M(t) determines which traces survive to become S
+      - PED: likelihood conditioned on survival process
+      - Q: governs admissibility of reconstructions under uncertainty
+
+   Result:
+      Missing evidence is not an absence but a *process* —
+      a time‑dependent filter shaping what survives to be observed.
+
 =====================================================================
 7. LONG‑MEMORY TEMPORAL MODEL
 =====================================================================
@@ -824,6 +899,50 @@ Use:
     P(H_t | H_{<t})
 
 Allows long‑range dependencies and path‑dependent history.
+
+   LONG‑MEMORY TEMPORAL MODEL (PATH‑DEPENDENT HISTORY)
+   RDG NOTATION: SID → PED → Q
+   TEMPORAL DEPENDENCE (SID: S / I / D)
+   [S‑mode]  Markov assumption:
+                P(H_t | H_{t−1})
+
+   [D‑mode]  Long‑memory model:
+                P(H_t | H_{<t})
+
+   Meaning:
+      S = structural assumption about temporal dependence
+      I = interaction among past states (multi‑step influence)
+      D = dynamic evolution shaped by entire history, not just
+          the previous state
+
+   PATH‑DEPENDENCE (PED: Power / Evaluation / Q_slice)
+   P(H_t | H_{<t})
+        = allows long‑range dependencies, hysteresis,
+          and cumulative historical effects
+
+   PED interpretation:
+      P = power to incorporate deep temporal structure
+      E = evaluation of model fit across long horizons
+      Q = regime controlling memory depth and decay weighting
+
+   Notes:
+      - Captures slow‑moving institutions
+      - Encodes persistent ideological, economic, or structural
+        forces
+      - Supports non‑Markovian inference and multi‑scale memory
+
+   GLOBAL STRUCTURE (SID + PED + Q)
+   - SID: replaces short‑memory Markov structure with full
+          historical dependence.
+   - PED: evaluates how well long‑memory improves predictive
+          coherence.
+   - Q‑logic: governs how far back the model “remembers”
+              (exponential decay, power‑law memory, or learned
+               attention weights).
+
+   Result:
+      A path‑dependent historical model where the present is
+      shaped by the *entire* trajectory, not just the last step.
 
 =====================================================================
 8. MULTI‑LEVEL BAYESIAN HIERARCHY
@@ -845,6 +964,57 @@ Hierarchical priors:
     P(H_level_k | H_level_{k+1})
 
 Information flows up and down scales.
+
+   MULTI‑LEVEL BAYESIAN HIERARCHY (CIV → INST → REG → CITY → PPL → DOC)
+   RDG NOTATION: SID → PED → Q
+   HIERARCHICAL STRUCTURE (SID: S / I / D)
+   [S‑mode]  Civilizations
+   [I‑mode]  Institutions
+   [I‑mode]  Regions
+   [I‑mode]  Cities
+   [I‑mode]  People
+   [D‑mode]  Documents
+
+   Meaning:
+      S = macro‑structural priors (civilizational scale)
+      I = meso‑level interactions (institutions, regions, cities)
+      D = micro‑level dynamics (people, documents)
+
+   Flow:
+      Civilizations ↓ Institutions ↓ Regions ↓ Cities ↓ People ↓ Documents
+
+   HIERARCHICAL PRIORS (PED: Power / Evaluation / Q_slice)
+   P(H_level_k | H_level_{k+1})
+
+   PED interpretation:
+      P = explanatory power across scales
+      E = evaluation of coherence between levels
+      Q = regime controlling strength of cross‑level coupling
+
+   Notes:
+      - Higher levels constrain lower levels (macro → micro)
+      - Lower levels update higher levels (micro → macro)
+      - Priors encode structural expectations at each scale
+
+   INFORMATION FLOW (SID + PED + Q)
+   Information flows *up* and *down* the hierarchy:
+
+      Upward:
+         Documents → People → Cities → Regions → Institutions → Civilizations
+         (micro evidence updates macro priors)
+
+      Downward:
+         Civilizations → Institutions → Regions → Cities → People → Documents
+         (macro structure constrains micro expectations)
+
+   Q‑logic:
+      - controls how strongly levels influence each other
+      - sets regularization for cross‑scale inference
+      - governs admissibility of multi‑level updates
+
+   Result:
+      A coherent Bayesian hierarchy where historical inference
+      is distributed across scales, not isolated at one level.
 
 =====================================================================
 9. MULTI‑OBJECTIVE NARRATIVE OPTIMIZATION (PARETO FRONT)
