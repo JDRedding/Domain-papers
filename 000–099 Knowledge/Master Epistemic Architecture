@@ -54,6 +54,9 @@ Evidence = Interpreted, weighted, relevant observations.
 Model H = Coherent internal reconstruction.  
 N = Communicated projection of H.
 
+N is intentionally a thin read‑out layer; its feedback into ℋ is
+represented as a narrative‑guided research loop
+
 Differences across fields are confined to:
 • Trace types
 • Regime characteristics
