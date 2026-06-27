@@ -1619,21 +1619,55 @@ All UCG equations, symmetries, and conservation laws are SID/PED
 projections of the RDG curvature engine and evaluation operators.
 
 ============================================================
-============================================================
+
 26. UCG & THE CONTINUUM‑LIMIT (Γ‑MAP)
 ============================================================
 
-Unified Curvature Geometry (UCG) is a sector‑projection of
- the full RDG relational engine. However, UCG is formulated
- directly on smooth bundles (TUB), while RDG is
- fundamentally discrete‑relational.
+The Γ‑Map Program (RDG → UCG Continuum Envelope)
+
+The Γ‑Map is defined only by its role and constraints, not by an
+explicit construction. RDG supplies a relational complex equipped
+with SID/PED operator families and a closure flow Γ acting as a
+continuous semigroup on relational configurations. No fiber‑tags
+or geometric structures are assumed at the RDG level; the
+internal/tangent split of UCG appears only as the smooth shadow of
+distinct operator families under coarse‑graining.
+
+The Γ‑Map is therefore a continuum‑envelope functor:
+
+        Γ_* : RDG_meso  →  UCG_macro
+
+determined by the requirement that it preserve:
+    (i) relational transport structure,
+    (ii) closure invariants,
+    (iii) coherence‑stable meso‑patterns, and
+    (iv) the operator‑family decomposition that becomes the
+         internal/tangent fiber split in the continuum.
+
+Micro‑scale fluctuations are washed out by Γ; meso‑scale coherent
+structures survive; macro‑scale geometry is their differentiable
+envelope. The Γ‑Map is thus the shadow‑projection of
+closure‑stability: it sends persistent relational organization to
+smooth geometric fields. Its explicit form is deferred to future
+work; only its invariance requirements and structural role are
+fixed here.
+
+Unified Curvature Geometry (UCG) is a sector‑projection of the
+full RDG relational engine. However, UCG is formulated directly on
+smooth bundles (TUB), while RDG is fundamentally
+discrete‑relational.
 
 Bridging these requires a continuum‑limit map:
 
         Γ : RDG_discrete  →  UCG_continuum
 
-This section defines Γ in the architecture without
- specifying its explicit form (by design).
+This section defines Γ in the architecture without specifying its
+explicit form (by design).
+
+Do not assume explicit fiber tags at the RDG level. Instead,
+distinguish operator families and scale regimes. The
+internal/tangent split in UCG is the smooth shadow of these
+operator families under the continuum limit.
 
 ------------------------------------------------------------
 A. Role of the Γ‑Map
@@ -1655,7 +1689,6 @@ Symbolically:
         Γ(RDG) = (A_μ ⊕ Γ_μ,  F ⊕ R,  J_μ,  T_μν)
 
 Interpretation:
-
     Γ is the continuum‑limit functor from RDG to UCG.
 
 ------------------------------------------------------------
@@ -1673,15 +1706,14 @@ The Γ‑map must preserve the following RDG invariants:
         (structure, interaction, dynamics)
         (power, evaluation, dynamics)
 
-4. Fiber decomposition:
-        internal ⊕ tangent
+4. Operator‑family decomposition:
+        SID_int ⊕ SID_tang  →  A_μ ⊕ Γ_μ
 
 5. Conservation laws:
         D^μ J_μ = 0
         ∇^μ T_μν = 0
 
 Interpretation:
-
     Γ must send RDG relational invariants to UCG geometric
     invariants.
 
@@ -1697,7 +1729,6 @@ The Γ‑map is not specified here. It must not:
         • choose a limit topology
 
 Interpretation:
-
     Γ is positioned but not constructed.
 
 ------------------------------------------------------------
@@ -1713,8 +1744,8 @@ RDG relational operators:
         J_μ     = Γ(PED_eval_int)
         T_μν    = Γ(PED_eval_tang)
 
-Thus UCG is the Γ‑image of RDG restricted to the internal ⊕ tangent
-fibers.
+Thus UCG is the Γ‑image of RDG under the internal/tangent operator
+family decomposition.
 
 ------------------------------------------------------------
 E. Continuum‑Limit Consistency Conditions
@@ -1724,8 +1755,8 @@ The Γ‑map must satisfy:
 1. Smoothness:
         Γ must produce differentiable fields.
 
-2. Fiber compatibility:
-        Γ respects internal/tangent decomposition.
+2. Operator‑family compatibility:
+        Γ respects the internal/tangent decomposition.
 
 3. Curvature compatibility:
         Γ(C_RDG) = C_UCG
@@ -1734,7 +1765,6 @@ The Γ‑map must satisfy:
         Γ(D_RDG C_RDG = 0)  →  D_C C = 0
 
 Interpretation:
-
     Γ is a relational‑to‑geometric consistency map.
 
 ------------------------------------------------------------
@@ -1745,15 +1775,15 @@ relational structure. Γ sends:
 
         RDG_relations  →  UCG_geometry
 
-UCG is therefore the smooth geometric envelope of RDG’s
- discrete relational triads.
+UCG is therefore the smooth geometric envelope of RDG’s discrete
+relational triads.
 
 ------------------------------------------------------------
 G. Status of Γ
 ------------------------------------------------------------
 Γ is intentionally left as:
 
-        • defined  purpose
+        • defined in purpose
         • defined in constraints
         • defined in placement
         • undefined in explicit form
