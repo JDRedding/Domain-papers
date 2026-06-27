@@ -1,0 +1,308 @@
+UNIFIED CURVATURE GEOMETRY Γ_RDG(UCG) — SPECIFICATION DOCUMENT
+============================================================
+Version: 0.1 (Dual Continuum-Shadow Specification)
+Author: JD Redding
+Purpose:
+    Define what UCG must look like when interpreted as the
+    smooth shadow of RDG under the continuum-envelope map Γ.
+    This document specifies the constraints UCG must satisfy
+    in order to be a valid Γ-image of RDG.
+
+------------------------------------------------------------
+0. PREAMBLE
+------------------------------------------------------------
+UCG is not fundamental; it is the smooth geometric envelope of
+meso-scale RDG relational structure. The map:
+
+        Γ_* : RDG_meso → UCG_macro
+
+is defined by invariants and structural constraints, not by an
+explicit construction. This document specifies the *reverse*
+requirements: what UCG must satisfy to be interpretable as a
+Γ-shadow of RDG.
+
+UCG is the differentiable reflection of RDG closure-stability.
+
+UCG is interpreted as the differentiable reflection of RDG
+closure‑stability. 
+
+------------------------------------------------------------
+MOTIVATION
+------------------------------------------------------------
+The reverse specification is essential because it guides the
+construction of toy models and future Γ‑prototypes. By fixing
+what UCG must look like from the RDG perspective, we constrain
+the search space for Γ, identify which RDG structures must be
+preserved under coarse‑graining, and ensure that any candidate
+Γ‑map produces fields compatible with UCG’s unified connection,
+curvature, and conservation laws. This document is therefore the
+“target profile” for all Γ‑Map development.
+
+------------------------------------------------------------
+1. DOMAIN & CODOMAIN (REVERSED VIEW)
+------------------------------------------------------------
+Domain (shadow-source):
+        UCG_macro = (smooth bundles, I_μ, C_μν, J_μ, T_μν)
+
+Codomain (pre-image class):
+        RDG_meso = (relational complex, SID/PED operator families,
+                    closure flow Γ_t, coherence measures, Q-slice)
+
+Requirement:
+    Every UCG object must correspond to a relational operator
+    family or closure-invariant in RDG.
+
+------------------------------------------------------------
+2. UCG → RDG CORRESPONDENCE REQUIREMENTS
+------------------------------------------------------------
+
+Requirement 1 — Connection Decomposition
+----------------------------------------
+The unified connection must decompose into two operator-family
+shadows:
+
+        I_μ = A_μ ⊕ Γ_μ
+
+where:
+    A_μ   = Γ(SID_int)
+    Γ_μ   = Γ(SID_tang)
+
+Interpretation:
+    UCG’s internal/tangent split must arise from RDG operator
+    families, not from geometric assumptions.
+
+Requirement 2 — Curvature Correspondence
+----------------------------------------
+UCG curvature must be the Γ-image of RDG closure curvature:
+
+        C_μν  = Γ(C_RDG)
+
+with:
+        F = Γ(C_int)
+        R = Γ(C_tang)
+
+Requirement 3 — Conservation Laws as Shadows
+--------------------------------------------
+UCG conservation laws must correspond to RDG relational
+conservation:
+
+        D^μ J_μ = 0        ←→        RDG power/evaluation invariants
+        ∇^μ T_μν = 0       ←→        RDG closure-stability invariants
+
+Requirement 4 — Smoothness as Coherence Envelope
+------------------------------------------------
+UCG smoothness must arise from meso-scale coherence:
+
+        differentiability  ←→  persistence under closure flow Γ_t
+
+Differentiability must arise from meso-scale coherence under the
+closure flow Γ_t.
+
+Requirement 5 — No Extra Structure
+----------------------------------
+UCG must not introduce structures that cannot be shadows of RDG:
+        • no independent metric choice
+        • no independent fiber bundle choice
+        • no independent gauge group choice
+        • no independent manifold triangulation
+
+------------------------------------------------------------
+2A. CORRESPONDENCE SUMMARY TABLE
+------------------------------------------------------------
+A quick reference for UCG → RDG shadow relations:
+
+    +----------------------+-------------------------------+
+    | UCG Object           | RDG Pre-Image (under Γ)       |
+    +----------------------+-------------------------------+
+    | A_μ (internal conn.) | SID_int operator family       |
+    | Γ_μ (tangent conn.)  | SID_tang operator family      |
+    | F_μν (gauge curv.)   | C_int (closure-int sector)    |
+    | R_μν (geom curv.)    | C_tang (closure-tang sector)  |
+    | J_μ (matter current) | PED_eval_int                  |
+    | T_μν (stress-energy) | PED_eval_tang                 |
+    +----------------------+-------------------------------+
+
+Interpretation:
+
+    UCG fields must be interpretable as Γ-shadows of RDG
+    operator families and closure invariants.
+
+------------------------------------------------------------
+3. Γ_RDG(UCG) AXIOMS (REVERSE INVARIANTS)
+------------------------------------------------------------
+
+Axiom A — Shadow Consistency
+----------------------------
+Every UCG field must admit a pre-image under Γ:
+
+        ∀ X_UCG, ∃ Y_RDG such that Γ(Y_RDG) = X_UCG.
+
+Axiom B — Relational Origin
+---------------------------
+UCG geometric objects must arise from RDG relational operators,
+not from pointwise structure.
+
+Axiom C — Closure Fidelity
+--------------------------
+UCG curvature identities (Bianchi, etc.) must correspond to RDG
+closure identities.
+
+Axiom D — Operator-Family Fidelity
+----------------------------------
+The internal/tangent decomposition must correspond to the
+operator-family split in RDG, not to geometric tagging.
+
+Axiom E — Scale Fidelity
+------------------------
+UCG must represent the macro-scale envelope of RDG meso-scale
+coherence patterns.
+
+------------------------------------------------------------
+4. NON-SPECIFICATION CLAUSE
+------------------------------------------------------------
+Γ_RDG(UCG) does NOT specify:
+        • how Γ is constructed
+        • how coarse-graining is performed
+        • how the continuum limit is taken
+        • how differentiability emerges
+        • how operator families separate dynamically
+
+It only specifies what UCG must satisfy to be a valid Γ-shadow.
+
+------------------------------------------------------------
+5. SUMMARY OF UCG AS A Γ-SHADOW
+------------------------------------------------------------
+UCG fields are interpreted as:
+
+        A_μ     = Γ(SID_int)
+        Γ_μ     = Γ(SID_tang)
+        F       = Γ(C_int)
+        R       = Γ(C_tang)
+        J_μ     = Γ(PED_eval_int)
+        T_μν    = Γ(PED_eval_tang)
+
+Thus UCG is the smooth geometric envelope of RDG’s relational
+triads, operator families, and closure invariants.
+
+Quantum Implication:
+        The Ω‑Quantum layer must likewise be interpretable as a
+        Γ‑shadow of quantized RDG, ensuring consistency of the
+        full RDG → UCG → Ω stack.
+
+------------------------------------------------------------
+6. STATUS OF Γ_RDG(UCG)
+------------------------------------------------------------
+
+Γ_RDG(UCG) is:
+        • defined in purpose
+        • defined in constraints
+        • defined in correspondence
+        • defined in invariants
+        • UNDEFINED in explicit form
+
+This document specifies what UCG must be in order to be the
+continuum shadow of RDG.
+
+============================================================
+END OF Γ_RDG(UCG) SPECIFICATION DOCUMENT
+============================================================
+
+PROGRAM: SOLVING THE Γ-MAP PROBLEM
+============================================================
+
+PHASE 0 — FOUNDATIONS (What Γ must do)
+──────────────────────────────────────
+• Complete and adopt the Γ_RDG(UCG) Specification Document
+  (Version 0.2 — Dual Continuum-Shadow Specification).
+• This document serves as the official "target profile":
+  - Defines reverse invariants and correspondence requirements
+  - Lists the axioms Γ_RDG(UCG) must satisfy
+  - Provides the Correspondence Summary Table
+  - Includes Non-Specification Clause and Quantum Implication
+• All subsequent phases must respect this specification.
+
+PHASE 1 — TOY MODELS (Learn how Γ behaves)
+──────────────────────────────────────────
+Build the simplest possible RDG systems and derive their
+continuum limits, checking against the Γ_RDG(UCG) spec.
+
+Toy models (increasing difficulty):
+• 1D chain of triads with closure flow → emergent 1D “metric”
+• Triadic lattice with flux/closure dynamics → emergent 2D geometry
+• Small RDG-MFE-Q or Triad Engine Pocket Game on a graph → emergent connection + curvature
+• Discrete version of Longitudinal Engine or RED GOLEM ladder
+
+For each model ask (and document):
+• What survives coarse-graining / closure flow?
+• What becomes the connection I_μ = A_μ ⊕ Γ_μ?
+• What becomes the structure operator S = S_YM ⊕ S_GR?
+• How does the curvature C = F ⊕ R emerge?
+• Does the result satisfy the Γ_RDG(UCG) axioms and table?
+
+PHASE 2 — OPERATOR-FAMILY DECOMPOSITION
+────────────────────────────────────────
+• Treat internal and tangent sectors as two distinct but coupled
+  operator families in the full RDG framework.
+• Define their interaction via flux/closure at meso scale.
+• Demonstrate how these families naturally separate into F_int and F_tang
+  under the action of Γ (making the split emergent, not assumed).
+
+Goal: The internal/tangent decomposition in UCG must arise from RDG
+operator-family dynamics under the Γ-map.
+
+PHASE 3 — EXPLICIT CONSTRUCTION ATTEMPTS (Prototype Γ)
+──────────────────────────────────────────────────────
+Develop simple candidate maps Γ and test them against the spec.
+
+Approaches (start with simplest):
+A. Statistical / Coarse-graining
+   • Meso-scale averaging on relational configurations
+   • Show persistent closure patterns → differentiable fields
+
+B. Category-theoretic / Functorial
+   • RDG as category of triads + closure morphisms
+   • Γ as functor into smooth bundles + connections
+   • Seek universal properties forcing I_μ and C
+
+C. Renormalization-group style flow
+   • Scale-dependent flow on RDG configurations
+   • Fixed points correspond to smooth UCG solutions
+
+D. Discrete differential geometry
+   • Map triadic structures to simplicial complexes / Regge-like calculus
+   • Controlled continuum limit
+
+Iterate: build → test against Γ_RDG(UCG) spec → refine.
+
+PHASE 4 — BACK-TESTING & CONSISTENCY
+────────────────────────────────────
+For any candidate Γ (even toy-level):
+• Verify it reproduces core UCG structures (F_μν, R^ρ_σμν, Bianchi, conservation laws, etc.)
+• Confirm preservation of relational meaning (holonomy as closure failure, Noether structure, etc.)
+• Test recovery of known solutions (flat space, Schwarzschild, instantons, etc.) from suitable RDG initial data
+• Check consistency with the full Γ_RDG(UCG) Specification Document
+
+PHASE 5 — FULL ARCHITECTURE INTEGRATION
+───────────────────────────────────────
+• Embed the working Γ into the broader RDG framework.
+• Demonstrate how all major RDG engines (FCE variants, Triadic engines,
+  Longitudinal Engine, RED GOLEM, etc.) feed into Γ.
+• Formulate the “Γ-Map Theorem” (or strong conjecture) connecting full RDG to UCG.
+
+PHASE 6 — QUANTUM & BEYOND
+──────────────────────────
+Once the classical Γ-Map is stable:
+• Investigate how quantization commutes with (or is taken before/after) Γ.
+• Explore whether the Ω-Quantum layer (unified holonomy algebra) can be reached
+  directly from a quantized RDG via a quantum analogue of Γ.
+• Ensure the full stack RDG → UCG → Ω-Quantum remains consistent with the spec.
+
+============================================================
+CURRENT STATUS & PRIORITY
+============================================================
+• Phase 0 is now complete with the Γ_RDG(UCG) Specification Document.
+• Immediate priority → Phase 1 (Toy Models).
+• Goal: Produce at least one working toy model that satisfies the spec
+  before moving to more ambitious constructions in Phase 3.
+============================================================
+
