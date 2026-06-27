@@ -2001,3 +2001,108 @@ Relational Hierarchy:
  → {YM, GR} (projections)
 
 ============================================================
+============================================================
+END NOTE — THE Γ‑MAP RESEARCH ROADMAP
+============================================================
+
+The Γ‑Map is the continuum‑envelope functor that sends
+meso‑scale RDG relational structure into macro‑scale UCG
+geometry. Its explicit construction is intentionally deferred;
+only its invariants, constraints, and programmatic role are
+fixed here. The following roadmap outlines the staged
+development of Γ as a research program.
+
+------------------------------------------------------------
+PHASE 0 — FOUNDATIONS (Define What Γ Must Do)
+------------------------------------------------------------
+• Fix the invariants Γ must preserve:
+      (i) relational transport
+      (ii) closure invariance
+      (iii) SID/PED duality
+      (iv) operator‑family decomposition (internal ⊕ tangent)
+      (v) conservation laws
+• Produce a minimal 1–2 page Γ‑Specification Document.
+
+Interpretation:
+    Γ is defined by constraints, not construction.
+
+------------------------------------------------------------
+PHASE 1 — TOY MODELS (Observe Γ in Action)
+------------------------------------------------------------
+Construct simple RDG systems and study their continuum shadows:
+• 1D triad chain → emergent 1D metric‑like structure
+• 2D triadic lattice → emergent curvature patterns
+• RDG‑MFE‑Q pocket engines → emergent connection fields
+• Longitudinal Engine / RED‑GOLEM → emergent fiber split
+
+Questions:
+    What survives closure? What becomes I_μ? What becomes C?
+
+------------------------------------------------------------
+PHASE 2 — OPERATOR‑FAMILY DECOMPOSITION
+------------------------------------------------------------
+Treat “internal” and “tangent” as two operator families in RDG,
+not geometric fibers. Under closure‑stability and coarse‑graining,
+these families separate into:
+
+        SID_int  →  A_μ
+        SID_tang →  Γ_μ
+
+Interpretation:
+    The internal/tangent split is emergent, not assumed.
+
+------------------------------------------------------------
+PHASE 3 — PROTOTYPE Γ CONSTRUCTIONS
+------------------------------------------------------------
+Attempt explicit Γ‑maps in controlled settings:
+
+A. Statistical coarse‑graining
+B. Functorial (RDG‑category → smooth‑bundle category)
+C. Renormalization‑group flow on relational configurations
+D. Discrete differential geometry (simplicial / Regge‑style)
+
+Goal:
+    Produce prototype Γ candidates that work on toy models.
+
+------------------------------------------------------------
+PHASE 4 — BACK‑TESTING & CONSISTENCY
+------------------------------------------------------------
+Verify that any candidate Γ reproduces UCG structures:
+• unified connection I_μ
+• unified curvature C_μν
+• Bianchi identities
+• conservation laws
+• known solutions (flat, Schwarzschild, instantons, etc.)
+
+Interpretation:
+    Γ must be UCG‑compatible.
+
+------------------------------------------------------------
+PHASE 5 — ARCHITECTURE INTEGRATION
+------------------------------------------------------------
+Embed Γ into the full RDG framework:
+• FCE variants
+• triadic engines
+• longitudinal engine
+• Q‑slice dynamics
+• SID/PED structure
+
+Deliverable:
+    The Γ‑Map Theorem (or Conjecture) linking RDG → UCG.
+
+------------------------------------------------------------
+PHASE 6 — QUANTUM EXTENSION (Ω‑Quantum Layer)
+------------------------------------------------------------
+Explore whether quantization commutes with Γ:
+• RDG_Q  →  Ω‑Quantum via Γ?
+• holonomy algebra as quantum shadow?
+
+Interpretation:
+    Classical Γ precedes quantum Γ.
+
+============================================================
+Summary:
+    Γ is the relational‑to‑geometric envelope of RDG.
+    Its purpose, invariants, and placement are fixed.
+    Its explicit form is a staged research program.
+============================================================
