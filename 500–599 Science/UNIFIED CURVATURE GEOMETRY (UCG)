@@ -50,6 +50,8 @@ TABLE OF CONTENTS — UNIFIED CURVATURE GEOMETRY (UCG)
 25.  UCG → RDG Back‑Projection
 26.  UCG & the Continuum‑Limit (Γ‑Map)
 27.  Unified Quantum Holonomy Algebra (Ω‑Quantum Layer)
+END NOTE — THE Γ‑MAP RESEARCH ROADMAP
+APPENDIX: UCG EXPERIMENTAL PROGRAM
 
 ============================================================
 
@@ -2106,3 +2108,63 @@ Summary:
     Its purpose, invariants, and placement are fixed.
     Its explicit form is a staged research program.
 ============================================================
+
+APPENDIX: UCG EXPERIMENTAL PROGRAM
+----------------------------------
+
+1. SATELLITE-BASED INTERFEROMETRY
+   - Objective:
+     Measure polarization-dependent phase shifts (Wigner phases, spin–curvature effects)
+     for photons propagating in Earth's gravitational field.
+   - Setup:
+     * Polarization-sensitive interferometers on ground ↔ satellite links
+     * Multi-satellite closed loops with different altitudes and path geometries
+   - GR Baseline:
+     Predict spin–curvature-induced phases from standard GR only.
+   - UCG Signature:
+     Small additional phase term with mixed-curvature scaling (Γ_RDG/UCG),
+     varying with altitude, energy, and path geometry beyond GR expectations.
+   - Test:
+     Fit data to GR-only vs GR+UCG models; search for systematic excess
+     consistent with UCG mixed-curvature residue.
+
+2. STRONG-FIELD ASTROPHYSICAL OBSERVATIONS
+   - Objective:
+     Detect polarization-dependent birefringence/phase shifts in light from
+     hot plasmas near compact objects (black holes, neutron stars).
+   - Setup:
+     * X-ray and radio polarimetry of accretion disks and jets (e.g., Sgr A*, M87*)
+     * Polarization mapping in gravitational lensing configurations
+   - GR Baseline:
+     Include gravitational Faraday rotation, spin Hall effects, and lensing-induced
+     polarization structure from GR.
+   - UCG Signature:
+     Curvature-dependent residual birefringence/phase shift not captured by GR,
+     with scaling tied to unified curvature rather than pure spin–curvature.
+   - Test:
+     Compare observed polarization vs. GR models; identify small, persistent
+     anomalies that track curvature in the UCG way.
+
+3. LABORATORY / PRECISION ANALOGS
+   - Objective:
+     Probe effective mixed curvature in controlled environments mimicking
+     aspects of spacetime curvature.
+   - Setup:
+     * High-precision optical fibers in accelerated or rotating frames
+     * Atom interferometers / cold atoms in engineered potentials
+   - GR/Effective Baseline:
+     Compute expected polarization phases from GR-equivalent or standard
+     inertial/accelerated-frame physics plus material effects.
+   - UCG Signature:
+     Tiny excess polarization-dependent phase shift with Γ_RDG/UCG scaling,
+     not explainable by GR or known medium/systematics.
+   - Test:
+     Scan phase vs. acceleration, rotation, geometry, and energy; fit to
+     baseline vs baseline+UCG; look for consistent mixed-curvature residue.
+
+------------------------
+Core Discriminator:
+UCG predicts an extra mixed-curvature term on top of GR spin–curvature effects,
+with a distinct scaling law. Absence at the predicted level falsifies UCG;
+presence supports a unified parent-curvature operator beyond GR+Yang–Mills.
+
