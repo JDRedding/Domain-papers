@@ -2166,6 +2166,10 @@ operator leave a tiny SID→PED residue or not?
      Scan phase vs. acceleration, rotation, geometry, and energy; fit to
      baseline vs baseline+UCG; look for consistent mixed-curvature residue.
 
+Torsion has already been constrained to zero, but mixed‑curvature residue
+has never been tested. Both branches of UCG remain physically possible
+until polarization‑phase experiments decide between them.
+
 ------------------------
 Core Discriminator:
 UCG predicts an extra mixed-curvature term on top of GR spin–curvature effects,
