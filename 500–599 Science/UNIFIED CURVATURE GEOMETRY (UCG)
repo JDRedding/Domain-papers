@@ -2112,9 +2112,9 @@ Summary:
 APPENDIX: UCG EXPERIMENTAL PROGRAM
 ----------------------------------
 
-The measurement is transverse — photon polarization — but
-the question is longitudinal: does a unified curvature
-operator leave a tiny SID→PED residue or not?
+The measurement is transverse — photon polarization — but the question is
+longitudinal: does a unified curvature operator leave a tiny SID→PED
+residue or not?
 
 1. SATELLITE-BASED INTERFEROMETRY
    - Objective:
@@ -2166,13 +2166,46 @@ operator leave a tiny SID→PED residue or not?
      Scan phase vs. acceleration, rotation, geometry, and energy; fit to
      baseline vs baseline+UCG; look for consistent mixed-curvature residue.
 
-Torsion has already been constrained to zero, but mixed‑curvature residue
-has never been tested. Both branches of UCG remain physically possible
-until polarization‑phase experiments decide between them.
+PHYSICAL INTERPRETATION OF THE UCG TEST
+-------------------------------------------------
 
-------------------------
+Torsion is mathematically allowed in generalized GR (e.g., Einstein–Cartan),
+but classical and cosmological conditions—dominated by spinless matter—
+naturally enforce T^λ_{μν} = 0. Thus the physical universe occupies the
+torsion-free branch, and gravitational physics conforms to standard GR.
+
+The UCG mixed-curvature residue plays the same structural role.
+
+- It is allowed by the unified curvature operator.
+- It appears only if the SID (longitudinal relational) sector fails to
+  project cleanly into the PED (transverse gauge/geometry) sector.
+- It is not forbidden by any known principle.
+- It has never been experimentally tested.
+- The physical universe may or may not occupy the branch where this residue
+  survives.
+
+Interpretation of outcomes:
+
+1. If the mixed-curvature residue is present:
+   - Supports a single parent curvature operator.
+   - Confirms non-trivial SID→PED projection.
+   - Indicates the non-factorizable branch of UCG is physically realized.
+
+2. If the mixed-curvature residue is absent:
+   - Constrains SID→PED leakage to zero.
+   - Places the universe on the clean-projection (factorizable) branch.
+   - UCG reduces to GR+Yang–Mills, just as EC reduces to torsion-free GR.
+
+Status:
+
+Torsion has already been constrained to zero, but mixed-curvature residue
+has never been tested. Both branches of UCG remain physically possible until
+polarization-phase experiments decide between them.
+
+--------------------------------------------------
 Core Discriminator:
-UCG predicts an extra mixed-curvature term on top of GR spin–curvature effects,
-with a distinct scaling law. Absence at the predicted level falsifies UCG;
-presence supports a unified parent-curvature operator beyond GR+Yang–Mills.
+UCG predicts an extra mixed-curvature term on top of GR spin–curvature
+effects, with a distinct scaling law. Absence at the predicted level
+falsifies UCG; presence supports a unified parent-curvature operator
+beyond GR+Yang–Mills.
 
