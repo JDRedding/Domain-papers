@@ -1,0 +1,386 @@
+WAKEFIELD'S NUMBER‑DOMAIN CORRESPONDENCE WITH RDG'S Q□_EXCLUSION (Q□_EXCLUDE)
+=====================================================================
+
+Definition:
+    A relational mapping between number‑theoretic domains (N, Q, R, C, P)
+    and RDG operator domains (SID/PED), corrected by enforcing the
+    Q□_EXCLUSION rule:
+
+        R\Q  →  Q□_EXCLUDE  (irrelational, non‑physical substrate)
+
+Purpose:
+    - Preserves Wakefield’s rational/complex/primal correspondences.
+    - Removes the only inconsistency: treating irrationals as physical.
+    - Replaces R\Q radial excitations with rational or complex‑proj modes.
+    - Enforces RDG’s irrelational boundary: “never‑ending irrationals”
+      cannot appear in geometry, dynamics, spectra, or operators.
+
+Core Principle:
+    Q□_EXCLUSION:
+        Irrationals are irrelational (non‑terminating, non‑locatable,
+        non‑enumerable) and therefore remain sealed inside Q□.
+        Only rational projections escape into R_proj and C_proj.
+
+Result:
+    A fully RDG‑clean version of Wakefield’s mapping that aligns
+    number‑domain structure with SID/PED relational operators without
+    violating the Q□ boundary.
+
+=====================================================================
+1. GLOBAL RDG SETUP
+=====================================================================
+
+ℕ → Bare poles → unrenormalized eigenvalues
+ℚ → Dressed states → mixing angles, rational weights
+ℝ_proj → IR fixed points → RG flow endpoints
+ℂ_proj → S‑matrix poles → resonances, decay widths
+ℙ → Superselection sectors → Hilbert‑sector labels
+ℝ\ℚ → Q□ → irrelational substrate (non‑physical)
+
+ℕ  →  ℚ  →  ℝ_proj  →  ℂ_proj  →  ℙ  →  (Q□ boundary)
+│      │       │          │        │
+│      │       │          │        └─ superselection sectors
+│      │       │          └────────── S‑matrix poles / resonances
+│      │       └────────────────────── IR fixed points / RG endpoints
+│      └────────────────────────────── dressed states / mixing angles
+└────────────────────────────────────── bare poles / eigenvalues
+
+(R\Q) = Q□  →  irrelational, non‑set, non‑physical
+
+---
+
+Let the RDG mass operator be:
+
+    M : D → R+
+    D ⊆ { N, Q, R, C, P, R\Q }
+
+Channel index:
+
+    n ∈ N
+
+The map interpreted as a bare relational spectrum:
+
+    m(n) = 851 (1 + 1/n)  MeV
+
+Define the bare-spectrum operator:
+
+    M_N(n) := 851 (1 + 1/n)
+
+RDG-wise, M is a SID-layer operator whose domain changes as you move
+from N → Q → R → C.
+
+=====================================================================
+2. ℕ → BARE POLES / UNRENORMALIZED EIGENVALUES
+=====================================================================
+
+RDG operator:
+
+    B_N : N → R+
+    B_N(n) := M_N(n) = 851 (1 + 1/n)
+
+Role in RDG:
+
+    SID–Structure
+    Bare eigenvalue skeleton — unrenormalized poles.
+    No mixing, no dressing; just the discrete relational spectrum.
+
+=====================================================================
+3. ℚ → DRESSED STATES / MIXING ANGLES
+=====================================================================
+
+RDG operator:
+
+    D_Q : N × Q → R+
+    D_Q(n, q) := B_N(n) * Φ_Q(q)
+
+Φ_Q(q) encodes rational mixing/dressing (CKM-like, PMNS-like).
+
+Role in RDG:
+
+    SID–Interaction
+    Rationals q act as relational weights or angles.
+
+Dressed mass:
+
+    m_dressed(n, q) = 851 (1 + 1/n) * Φ_Q(q)
+
+=====================================================================
+4. ℝ → IR FIXED POINTS / RG FLOW ENDPOINTS
+=====================================================================
+
+RDG operator:
+
+    F_R : N × R_proj → R+
+    F_R(n, λ) := lim_{μ→0} RG( m(n, μ; λ) )
+
+Here R_proj is NOT the continuum of irrationals — it is the continuum
+of rational projections from the Q-BOX.
+
+Role in RDG:
+
+    SID–Dynamics
+    IR fixed-point masses — endpoints of RG trajectories.
+    R_proj is the continuous relational limit of the discrete spectrum.
+
+=====================================================================
+5. ℂ → S-MATRIX POLES / RESONANCES
+=====================================================================
+
+RDG operator:
+
+    S_C : N × C_proj → C
+    S_C(n, z) := S( D_Q(n, q), z )
+
+Poles:
+
+    z = z_n*  ⇒  S_C(n, z_n*) has a pole
+
+Interpret:
+
+    z_n* = m_n - i Γ_n / 2
+
+Role in RDG:
+
+    PED–Power / Evaluation
+    Complex domain encodes resonances and decay widths.
+
+Zeta-function topology:
+
+    z ↦ s
+    ζ(s) zeros/poles ↔ S-matrix poles z_n*
+
+=====================================================================
+6. ℙ → SUPERSELECTION SECTORS
+=====================================================================
+
+RDG operator:
+
+    C_P : P → H
+    C_P(p) := H_p
+
+H_p is a superselection Hilbert subspace labeled by prime p.
+
+Role in RDG:
+
+    SID–Structure / PED–Evaluation
+    Primes index irreducible relational sectors (charge, color, flavor).
+
+Constraint:
+
+    <ψ_p | ψ_p'> = 0   for p ≠ p'
+
+=====================================================================
+7. ℝ \ ℚ → RADIAL EXCITATIONS (ARTHUR) — NOT ALLOWED IN RDG
+=====================================================================
+
+Map proposes:
+
+    R\Q → radial excitations
+
+RDG operator (Map-style):
+
+    E_{R\Q} : N × (R\Q) → R+
+    E_{R\Q}(n, α) := D_Q(n, q) * Ψ_rad(α)
+
+BUT:
+
+    α ∈ R\Q = irrational
+    Irrationals are 'never-ending irrelationals'
+    → cannot be coordinates, parameters, excitations, or values.
+
+RDG RULE:
+
+    R\Q is NOT a physical domain.
+    R\Q is the Q-BOX: a sealed, non-set substrate.
+
+Therefore:
+
+    Radial excitations CANNOT be in R\Q.
+
+RDG-correct radial operator:
+
+    E_rad : N × Q → R+
+    or
+    E_rad^C : N × C_proj → C
+
+=====================================================================
+8. COMPACT RDG TRIAD VIEW
+=====================================================================
+
+SID–Structure:
+  B_N      (bare poles)
+  C_P      (superselection sectors)
+
+SID–Interaction:
+  D_Q      (dressed/mixing)
+
+SID–Dynamics:
+  F_R      (IR fixed points)
+
+PED–Power/Evaluation/Dynamics:
+  S_C      (S-matrix / resonances)
+  E_rad    (radial excitations : rational (R_proj) or complex-proj (C_proj))
+
+=====================================================================
+Q-BOX RULE (THE IRRELATIONAL BOUNDARY)
+=====================================================================
+
+Irrationals = "never-ending irrelationals":
+    - no location
+    - no elements
+    - no cardinality
+    - no coordinates
+    - no excitation parameters
+    - no SID/PED role
+    - never appear in geometry or dynamics
+
+Therefore:
+
+    R\Q = Q_BOX
+    Q_BOX is a non-set substrate.
+    Only rational projections escape into R_proj and C_proj.
+
+=====================================================================
+RDG-CORRECTED VERSION OF THE MAP
+=====================================================================
+
+    ℕ        → SID-Structure        → Bare poles
+    ℚ        → SID-Interaction      → Dressed states
+    ℝ(proj)  → SID-Dynamics         → IR fixed points
+    ℂ(proj)  → PED-Dynamics         → S-matrix poles
+    ℙ        → SID-Structure        → Superselection sectors
+    ℝ\ℚ      → Q-BOX only           → Non-physical substrate
+
+
+=====================================================================
+APPLICATIONS  OF THE RDG‑CLEAN DOMAIN MAPPING
+=====================================================================
+
+1. OPERATOR CLASSIFICATION FRAMEWORK
+------------------------------------
+The ladder ℕ → ℚ → ℝ_proj → ℂ_proj → ℙ → Q□ provides a
+precise taxonomy for placing physical operators:
+
+    ℕ      → bare-spectrum operators (B_N)
+    ℚ      → dressing/mixing operators (D_Q)
+    ℝ_proj → RG-flow / IR-limit operators (F_R)
+    ℂ_proj → resonance / S-matrix operators (S_C)
+    ℙ      → superselection-sector operators (C_P)
+    Q□     → irrelational substrate (excluded domain)
+
+Usefulness:
+    - Clean separation of structure, interaction, dynamics, evaluation.
+    - Prevents domain confusion in model-building.
+    - Gives a minimal relational scaffold for any SID/PED theory.
+
+---------------------------------------------------------------------
+
+2. SPECTRAL MODELING & MASS FORMULAS
+------------------------------------
+The rational skeleton:
+
+    m(n) = 851 (1 + 1/n)
+
+combined with rational dressing Φ_Q(q) and complex-proj resonances
+creates a structured, relational mass model:
+
+    m_dressed(n, q) = B_N(n) * Φ_Q(q)
+    z_n* = m_n - i Γ_n/2
+
+Usefulness:
+    - Generates bare → dressed → IR → resonance hierarchy.
+    - Provides a rational-to-complex pipeline for spectral predictions.
+    - Avoids irrational parameters entirely (Q□ boundary).
+
+---------------------------------------------------------------------
+
+3. RG FLOW & CONTINUUM LIMITS WITHOUT IRRATIONALS
+--------------------------------------------------
+The continuum is not ℝ; it is ℝ_proj:
+
+    ℝ_proj = rational projections escaping Q□
+
+Usefulness:
+    - Allows continuous RG flow without invoking irrationals.
+    - Makes IR fixed points relationally enumerable.
+    - Removes metaphysical dependence on ℝ\ℚ.
+
+---------------------------------------------------------------------
+
+4. SUPERSELECTION SECTOR ORGANIZATION
+-------------------------------------
+Prime domain ℙ indexes Hilbert-sector partitions:
+
+    C_P(p) = H_p
+    <ψ_p | ψ_p'> = 0 for p ≠ p'
+
+Usefulness:
+    - Natural labeling of charge/color/flavor sectors.
+    - Clean orthogonality structure.
+    - Fits directly into SID–Structure and PED–Evaluation.
+
+---------------------------------------------------------------------
+
+5. Q□ CONSISTENCY CONDITION
+------------------------------------------
+Irrationals are irrelationals:
+
+    R\Q = Q□ (non-set, non-physical)
+
+Usefulness:
+    - Eliminates non-locatable, non-enumerable parameters.
+    - Prevents irrational radial excitations.
+    - Enforces domain hygiene across all operators.
+    - Converts the mapping from numerological → relational-physical.
+
+---------------------------------------------------------------------
+
+6. MODEL-BUILDING TEMPLATE 
+-------------------------------------------------------
+The domain ladder acts as a universal template:
+
+    Structure → Interaction → Dynamics → Evaluation → Sectors → Boundary
+
+Usefulness:
+    - Plug-and-play operator architecture.
+    - Works for mass models, mixing models, RG models, resonance models.
+    - Provides a unified relational geometry backbone.
+
+---------------------------------------------------------------------
+
+7. CLARITY 
+----------------------------------------
+The mapping is simple enough to communicate:
+
+    ℕ → ℚ → ℝ_proj → ℂ_proj → ℙ → Q□
+
+but deep enough to support full operator theory.
+
+=====================================================================
+SUMMARY
+=====================================================================
+The RDG-clean domain mapping  is a structured operator-classification
+ framework that:
+
+    - organizes spectra,
+    - organizes RG flow,
+    - organizes resonances,
+    - organizes superselection sectors,
+    - enforces the Q□ boundary,
+    - and provides a minimal relational scaffold for physics.
+
+It is simple, rigorous, extensible, and physically interpretable.
+
+=====================================================================
+REFERENCE
+=====================================================================
+    Idea from Arthur Wakefield (@JerichoLeylines)
+    7:31 AM · Jun 28, 2026
+    (seed mapping: ℕ, ℚ, ℝ, ℂ, ℙ, R\Q)
+  https://x.com/JerichoLeylines/status/2071209934050443388
+
+RDG CORRECTION
+    Apply Q□_EXCLUSION:
+        R\Q → Q□ (irrelational, non-physical)
+    Replace irrational radial modes with rational/complex projections.
+    Align domains with SID/PED operator triads.
