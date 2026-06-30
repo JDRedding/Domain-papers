@@ -1,4 +1,4 @@
-SPECIES–AGNOSTIC MASS & MOLE FRAMEWORK : SAM(MF)
+SPECIES–AGNOSTIC MASS (MOLE FRAMEWORK) : SAM(MF)
 ================================================
 This framework alleviates the rigidity imposed by a fixed, defined
 mole by treating the micro–macro scaling factor as a relational
