@@ -131,7 +131,7 @@ Fully dynamic under choice of unit or species
 
 RDG TRIADIC MAPPING
 ---
-		  SID ↔ Macro‑Handle      (M_[unit])
+	SID ↔ Macro‑Handle      (M_[unit])
 	PED ↔ Micro‑Step        (m_μ^X)
 	Q   ↔ Relational Mod    (mole_[unit]^X)
 
@@ -562,7 +562,7 @@ This keeps operator family clean and extensible.
 Species anchors belong in superscripts.
 
 	m_μ^X
-	mole\_[unit]^X
+	mole_[unit]^X
 
 This keeps micro‑domain indexing consistent.
 
@@ -736,12 +736,14 @@ The Inversion Actions
 TENSOR CHARACTER MATRIX 
 
 [1] TENSOR SIGNATURE
+
     Object  :  mole_[unit]^X
     Type    :  Two-Index Relational Tensor
     Index 1 :  Superscript X  (Micro-Anchor)
     Index 2 :  Subscript [unit] (Macro-Handle)
 
 [2] GEOMETRIC MAPPING
+
           ^X  <-- [Micro-Anchor Axis] (Discrete Entry)
           |
           v
@@ -751,6 +753,7 @@ TENSOR CHARACTER MATRIX
        _[unit] <-- [Macro-Handle Axis] (Continuum Field)
 
 [3] FUNCTORIAL ACTION
+
     Ξ_r : Cat(Micro) ⟷ Cat(Macro)
 
 Because the operator action is a closed geometric loop, it can be run
@@ -807,7 +810,7 @@ changing the scale live on.
 
 TRANSFORMATION GEOMETRY FIELD
                
-   [Micro-Axis: Contravariant]       [Macro-Axis: Covariant]
+   [Micro-Axis: Contravariant]            [Macro-Axis: Covariant]
          ∂ m_μ^X / ∂ m_μ^Y                 ∂ M_[new] / ∂ M_[old]
                  \                                /
                   \                              /
@@ -920,10 +923,10 @@ micro → macro flow
 					          Φ_macro
 
 
-        [ Micro Domain ] 			[ Macro Domain ]
+  [ Micro Domain ] 								[ Macro Domain ]
           ---------------------------------------------------------------
-   Discrete micro field 			 Smooth macro field
-   ρ_micro(X, t)				Φ_macro(M_[unit], t)
+   Discrete micro field 			 			Smooth macro field
+   ρ_micro(X, t)								Φ_macro(M_[unit], t)
         |                                              	^
         |  (local scale bridge via Ξ_r)                	|
         v                                              	|
@@ -1116,11 +1119,11 @@ APPLICATIONS OF THE SPECIES–AGNOSTIC MASS & MOLE FRAMEWORK
   Define in-game chemistry systems with arbitrary species and
   units for consistent world simulation.  Construct bulletproof
   thermodynamics for virtual worlds or tabletop games using custom 
-     anchors like gold (^Au197) or magical particles (^Mana), balanced
-   against custom macroscopic handles like grains or starweights.  
-     Model planetary sciences and non-terran chemical reactions by
-   grounding the entire stoichiometric grid on a water (^H2O) or iron 
-    (^Fe56) microscopic floor. 
+  anchors like gold (^Au197) or magical particles (^Mana), balanced
+  against custom macroscopic handles like grains or starweights.  
+  Model planetary sciences and non-terran chemical reactions by
+  grounding the entire stoichiometric grid on a water (^H2O) or iron 
+  (^Fe56) microscopic floor. 
 
 ===============================================================
 
