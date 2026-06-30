@@ -73,6 +73,28 @@ This framework alleviates the rigidity imposed by a fixed,
 defined mole by treating the micro–macro scaling factor as a
 relational quantity rather than a universal constant.
 
+PRIMARY MICRO–MACRO VARIABLES
+^X              : Microscopic anchor species
+m(X)            : Mass of one entity of species X
+N_X             : Micro-step divisor (canonical: N_X = A_X)
+m_μ^X           : Micro-step mass unit = m(X) / N_X
+M_[unit]        : Macro-handle (grain, pound, stone, starweight)
+mole_[unit]^X   : Relational mole tensor = M_[unit] / m_μ^X
+
+Invariant:
+    mole_[unit]^X * m_μ^X = M_[unit]
+
+This is fundamentally a generative framework for creating
+consistent mass-scaling systems rather than a redefinition of
+chemistry.
+
+OPERATOR SET
+Ξᵣ                : Relational scale operator
+Ξᵣ[mole]          : Operator action = M_[unit] / m_μ^X
+Ξ                 : RDG general operator (Tier 2)
+r(m_μ^X, M_[unit]): Lightweight relational function (Tier 3)
+Γ                 : Continuum-limit operator (global aggregator)
+
 Chemistry can be founded on any microscopic anchor or macroscopic
 unit.
 The identity loop guarantees scale closure with zero drift.
@@ -80,9 +102,25 @@ The system is invertible, coordinate-agnostic, and reversible.
 Applications span operator calculus, coarse-graining, multi-scale
 simulation, and category-theoretic functors.
 
-This is fundamentally a generative framework for creating
-consistent mass-scaling systems rather than a redefinition of
-chemistry.
+FIELD-LEVEL VARIABLES
+ρ_micro(X,t)     : Micro-field density (species, position, time)
+Φ_macro(M,t)     : Macro-field mass geometry
+F_Micro          : Space of micro-fields
+F_Macro          : Space of macro-fields
+
+TRANSFORMATION PARAMETERS
+m_amu^Species    : Atomic mass unit = m(Species_atom)/N_Species
+N_unit^Species   : Atoms per macro-unit
+M_sample         : Sample mass in macro-units
+N_sample         : Atom/molecule count in sample
+
+TENSOR & FUNCTOR STRUCTURE
+mole_[unit]^X    : Two-index relational tensor
+    superscript X     → micro anchor
+    subscript [unit]  → macro handle
+
+Ξᵣ : Cat(Micro) → Cat(Macro)
+Γ  : Tensor-field integrator over micro domain
 
 The framework is an analytical and algebraic reformulation of
 what advanced metrology, quantum physics, and multi-scale
