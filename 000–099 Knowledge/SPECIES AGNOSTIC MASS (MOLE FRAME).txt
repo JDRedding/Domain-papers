@@ -12,9 +12,6 @@ macro-unit.
 
 TABLE OF CONTENTS
 ════════════════════════════════════════════════════════════════════════════════
-
-TABLE OF CONTENTS
-
 Overview & Core Identity
 Relational Mass Engine v1.1
 Closure Identity (The Unbreakable Loop)
