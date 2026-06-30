@@ -13,54 +13,35 @@ macro-unit.
 TABLE OF CONTENTS
 ════════════════════════════════════════════════════════════════════════════════
 
-1.  OVERVIEW & CORE IDENTITY ................................................ 
-    1.1  Core Invariant
-    1.2  Canonical Choice (C-12 Example)
-    1.3  Foundational Relationship (Operator vs Generator)
+TABLE OF CONTENTS
 
-2.  RELATIONAL MASS ENGINE v1.1 ............................................. 
-    2.1  [1] MICRO-ANCHOR — ^X
-    2.2  [2] MICRO-STEP — m_μ^X
-    2.3  [3] MACRO-HANDLE — M_[unit]
-    2.4  [4] TENSOR OPERATOR — mole_[unit]^X
-    2.5  RDG Triadic Mapping (SID ↔ PED ↔ Q)
+Overview & Core Identity
+Relational Mass Engine v1.1
+Closure Identity (The Unbreakable Loop)
+Detailed Components
+Advanced Concepts & Extensions
+Applications
+Appendix
 
-3.  CLOSURE IDENTITY (The Unbreakable Loop) ................................. 
-    3.1  Identity Loop Diagram
-    3.2  Interpretation
+1. OVERVIEW & CORE IDENTITY
 
-4.  DETAILED COMPONENTS ..................................................... 
-    4.1  1. MICROSCOPIC ANCHOR (^X)
-    4.2  2. MICROSCOPIC STEP SIZE (m_μ^X)
-    4.3  3. MACROSCOPIC HANDLE (M_[unit])
-    4.4  4. UNIT-RELATIVE MOLE (mole_[unit]^X)
-    4.5  5. THE UNBREAKABLE IDENTITY LOOP
-    4.6  6. TRANSFORMATION BEHAVIOR (Micro-Shift / Macro-Shift)
-    4.7  7. INTERPRETATION LAYER
-    4.8  8. SUMMARY AXIOM
-    4.9  9. SYSTEM CONSEQUENCES
+1.1 Core Invariant
+1.2 Canonical Choice (C-12 Example)
+1.3 Foundational Relationship (Operator vs Generator)
 
-5.  ADVANCED CONCEPTS & EXTENSIONS ......................................... 
-    5.1  The Double-Ended Scale Tuner
-    5.2  Operator Calculus & Γ-Continuum Limit
-    5.3  Transformation Geometry Field
-    5.4  Tensor Character & Functorial Action
-    5.5  RDG-Aligned Coarse-Graining / Lifting
+2. RELATIONAL MASS ENGINE v1.1
 
-6.  APPLICATIONS ........................................................... 
-    6.1  Physical & Chemical Applications
-    6.2  Physics & Astrophysics Applications
-    6.3  Mathematical & RDG Applications
-    6.4  Computational & Simulation Applications
-    6.5  Conceptual, Educational & Game-World Applications
+2.1 MICRO-ANCHOR — ^X
+2.2 MICRO-STEP — m_μ^X
+2.3 MACRO-HANDLE — M_[unit]
+2.4 TENSOR OPERATOR — mole_[unit]^X
+2.5 RDG Triadic Mapping (SID ↔ PED ↔ Q)
 
-APPENDIX ................................................................... 
-    A.1  Relational Mass Engine Notation & Tiers
-    A.2  Style Guide: Operators vs Functions
-    A.3  Canonical Definition Block for Ξᵣ
-    A.4  Symbols & Notation Summary
-    A.5  Multi-Scale Extension Matrix
-    A.6  Selection Compass (RDG-Core)
+3. CLOSURE IDENTITY
+4. DETAILED COMPONENTS (1–9 as before)
+5. ADVANCED CONCEPTS & EXTENSIONS
+6. APPLICATIONS (with the expanded list)
+APPENDIX (Notation, Style Guide, Ξ_r definition, Symbols, etc.)
 
 ================================================================================
 
