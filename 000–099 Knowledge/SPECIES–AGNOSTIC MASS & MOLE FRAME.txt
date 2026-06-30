@@ -27,6 +27,12 @@ This allows the traditional AMU construction while preserving the general
 freedom to choose any divisor 𝑁_𝑋 when a different microscopic step size
 is desired.
 
+The framework is an analytical and algebraic reformulation of what
+advanced metrology, quantum physics, and multi-scale simulation engines
+already do with massive computational effort. It takes processes that
+standard science does via brute-force code conversions and reframes them
+as clean, coordinate-free geometry.
+
 The foundational relationship
 ----------------------------- 
 
