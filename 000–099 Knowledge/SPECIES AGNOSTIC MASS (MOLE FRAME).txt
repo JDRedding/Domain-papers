@@ -23,15 +23,31 @@ mass number of species 𝑋.
 
 For example, for C_12:𝑁_C12=12, so 𝑚_𝜇^C12 = (1/12)𝑚(C12_atom).
 
-This allows the traditional AMU construction while preserving the general
-freedom to choose any divisor 𝑁_𝑋 when a different microscopic step size
-is desired.
+This allows the traditional AMU construction while preserving
+the general freedom to choose any divisor 𝑁_𝑋 when a different
+microscopic step size is desired.
 
-The framework is an analytical and algebraic reformulation of what
-advanced metrology, quantum physics, and multi-scale simulation engines
-already do with massive computational effort. It takes processes that
-standard science does via brute-force code conversions and reframes them
-as clean, coordinate-free geometry.
+This framework alleviates the rigidity imposed by a fixed,
+defined mole by treating the micro–macro scaling factor as a
+relational quantity rather than a universal constant.
+
+Chemistry can be founded on any microscopic anchor or macroscopic
+unit.
+The identity loop guarantees scale closure with zero drift.
+The system is invertible, coordinate-agnostic, and reversible.
+Applications span operator calculus, coarse-graining, multi-scale
+simulation, and category-theoretic functors.
+
+This is fundamentally a generative framework for creating
+consistent mass-scaling systems rather than a redefinition of
+chemistry.
+
+The framework is an analytical and algebraic reformulation of
+what advanced metrology, quantum physics, and multi-scale
+simulation engines already do with massive computational effort.
+It takes processes that standard science does via brute-force
+code conversions and reframes them as clean, coordinate-free
+geometry.
 
 The foundational relationship
 ----------------------------- 
