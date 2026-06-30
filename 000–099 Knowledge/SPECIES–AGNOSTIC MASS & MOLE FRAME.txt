@@ -18,7 +18,7 @@ The core identity:
 Not a definition, it’s an invariant.
 
 Canonical choice:
-For atomic species, a natural convention is𝑁_𝑋=𝐴_𝑋, the atomic
+For atomic species, a natural convention is 𝑁_𝑋=𝐴_𝑋, the atomic
 mass number of species 𝑋.
 
 For example, for C_12:𝑁_C12=12, so 𝑚_𝜇^C12 = (1/12)𝑚(C12_atom).
@@ -36,7 +36,7 @@ An operator preserves a relationship:
 
 	𝑂(𝑥) = 𝑦
 
- Mole operator does exactly thisbalancing ratio:
+ Mole operator does exactly this balancing ratio:
 
 	mole_[𝑢𝑛𝑖𝑡]^𝑋 = (𝑀_𝑢𝑛𝑖𝑡)/(𝑚_𝜇^𝑋)
 
@@ -48,11 +48,11 @@ A generator preserves the identity:
 
 Identity loop:
 
-	mole_[𝑢𝑛𝑖𝑡]^𝑋 ⋅ 𝑚_𝜇^𝑋 = 𝑀[𝑢𝑛𝑖𝑡]
+	mole_[𝑢𝑛𝑖𝑡]^𝑋 ⋅ 𝑚_𝜇^𝑋 = 𝑀_[𝑢𝑛𝑖𝑡]
 
 Not built on conventions, built on identity-preserving generators.
 
-	       			generator
+	       	   generator
 (micro anchor)	   ↔	(macro handle)
 
 Generator-like because:
