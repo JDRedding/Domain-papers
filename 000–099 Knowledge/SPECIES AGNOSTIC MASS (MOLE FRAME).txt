@@ -1,6 +1,11 @@
 SPECIES–AGNOSTIC MASS (MOLE FRAMEWORK) : SAM(MF)
 ================================================
 
+Core idea: Define mass scaling via relational operators instead of 
+fixed constants. The invariant mole_[unit]^X · m_μ^X = M_[unit] 
+ensures internal consistency across any choice of micro-anchor or 
+macro-unit.
+
 ================================================================================
                   SPECIES–AGNOSTIC MASS (MOLE FRAMEWORK) : SAM(MF)
 ================================================================================
