@@ -1,6 +1,8 @@
 # Domain-papers
 The domain‑papers repository is a ten‑domain container that mirrors the Dewey Decimal System’s top‑level classes. Each folder represents a knowledge domain, just the territory in which papers, notes, mappings, and analyses will live.
 
+This repository is intended as a living research library. Papers may remain here indefinitely as standalone works, or they may later be extracted into dedicated repositories as they mature into larger research programs or software projects.
+
 ## 000–099 Knowledge
 General works, encyclopedias, information theory, meta‑knowledge, classification theory, and any papers about knowledge systems themselves.
 
