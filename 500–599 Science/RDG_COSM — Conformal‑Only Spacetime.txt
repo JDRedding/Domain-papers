@@ -18,7 +18,7 @@ structure. The two branches make distinct cosmological predictions.
 
 	                RDG_COSM
 	                   │
-	        ┌───────┴───────┐
+	        ┌──────────┴──────────┐
            	│                     │
            	▼                     ▼
 	  RDG_COSM^Bradonjić      RDG_COSM^substrate
