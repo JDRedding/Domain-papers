@@ -1,0 +1,1173 @@
+RDG_COSM — Conformal‑Only Spacetime Module
+=====================================================================
+Status
+: Research draft / framework
+Subject
+: Relational-geometric models inspired by EPS and related work.
+Current state
+: Conceptual / mathematical development; not experimentally validated.
+
+RDG_COSM^Bradonjić : Bradonjić: “Massless Spacetime”
+=====================================================================
+We adopt Bradonjić's operational argument as one branch of the 
+Conformal‑Only Spacetime Module and introduce a second branch in 
+which a pre-EWSB substrate supplies an effective projective 
+structure. The two branches make distinct cosmological predictions.
+
+	-------------------------------------------------
+
+	                RDG_COSM
+	                   │
+	        ┌───────┴───────┐
+           	│                     │
+           	▼                     ▼
+	  RDG_COSM^Bradonjić      RDG_COSM^substrate
+
+	  PED suppressed          PED substrate-generated
+	  EPS_partial             EPS_full (effective)
+	  Conformal only          Conformal ⊕ Projective
+	  Metric absent           Metric emergent
+
+	-------------------------------------------------
+
+	     [ Phase S0: Deep UV Substrate Microphysics ]
+                                  |
+                                  v
+              [ Phase S1: Substrate-Driven Universe ]
+                                  |
+         ====================================
+         |                                  |
+         v (Choice A: Suppress PED)         v (Choice B: Active Substrate PED)
+   RDG_COSM^Bradonjić                       RDG_COSM^substrate
+   - SID-only (Conformal)                   - SID (+) PED_substrate (Metric)
+   - Proper time: Undefined                 - Proper time: Defined
+   - GR Domain: Post-EWSB only              - GR Domain: Extended to Early Universe
+         |                                  |
+         ====================================
+                                  |
+                                  v  <-- Trigger: Higgs_VEV (T ~ 246 GeV)
+
+              [ Phase S2: RDG_spacetime^massive ]
+              - Full Conformal (+) Projective Metric Geometry
+
+	-------------------------------------------------
+
+Bradonjić’s choice, the one that is not the “choose a point” option,
+is a suppression choice:
+
+	Suppresses the MFE/PED sector.
+
+This is the choice that creates RDG_COSM^Bradonjić.
+This is the choice that justifies the conformal‑only early universe.
+
+Choice 1 - Choose a point (EPS standard)
+----
+This is the classical EPS route:
+
+pick a point
+define null rays
+define massive worldlines
+reconstruct conformal + projective
+obtain metric geometry
+
+Choice 2 - MFE/PED Suppression
+He rejects this as the fundamental description of the early universe 
+because massive worldlines do not exist above EWSB.
+
+Bradonjić’s Choice: MFE/PED Suppression
+Above EWSB, there are no massive particles.
+Therefore the projective sector cannot be physically defined.
+Therefore EPS must be truncated to the conformal sector only.
+
+SID_EWSB^pre = active
+PED_EWSB^pre = suppressed
+
+EPS_ray^light      = active
+EPS_particles^mass = suppressed
+EPS_status         = partial
+
+Geometry = ConformalOnly
+MetricGeometry = Absent
+Translated into physical content:
+
+Worldlines_null     ≠ ∅
+Worldlines_timelike = ∅
+Translated into cosmology:
+
+GR invalid for T > T_EWSB
+Big Bang singularity is an artifact of GR extrapolation
+Metric spacetime begins at EWSB
+This is the second choice.
+
+This is the suppression choice.
+This is the choice that creates RDG_COSM^Bradonjić.
+
+I. PHYSICAL REGIME (Pre‑EWSB)
+---------------------------------------------------------------------
+Temperature:        T > T_EWSB  (~246 GeV)
+Particle masses:    All particles massless
+Worldlines:         Null only
+Geodesics:          Null only
+Timelike direction: Absent
+Proper time:        Undefined
+Massive trajectories: None
+Projective structure: Absent
+Metric geometry:     Absent
+Conformal geometry:  Present
+
+Interpretation:
+    The early universe is NOT pseudo‑Riemannian.
+    It is a conformal relational substrate with no scale.
+
+Phase A: Pre‑EWSB (massless)
+-----------------------------------------
+Substrate_EWSB^pre = NullLayer_conformal
+NullLayer ≡ ConformalOnly ≡ SID_EWSB^pre
+
+Physical content: all particles massless
+Geometric structure: conformal only
+Worldlines: null geodesics only
+Proper time: undefined
+Projective structure: absent
+GR metric: not physically justified
+
+RDG: SID-only
+Geometry: conformal
+Worldlines: null only
+Proper time: undefined
+Projective structure: absent
+Metric: emergent, not defined
+
+SID_EWSB^pre = {
+    S: conformal relational structure only
+    I: massless interaction channels (pure gauge)
+    D: null‑cone propagation (no timelike modes)
+}
+
+PED_EWSB^pre = ∅
+
+    Geometry = SID_conformal
+    RDG_mode = SID-only
+
+Gamma Interphase
+-----------------------------------------
+EWSB = Γ_renorm^activate : SID → SID ⊕ PED
+RDG_Full = SID ⊕ PED
+Γ_renorm^activate = Higgs_VEV → PED_on
+
+SID-only (null, conformal)
+→
+SID ⊕ PED (timelike, projective)
+
+Γ_renorm^activate  ≈  Higgs_VEV_event
+
+Higgs_VEV:
+    - introduces mass
+    - enables timelike geodesics
+    - activates projective structure
+    - completes EPS geometry
+    - switches RDG from SID-only → SID ⊕ PED
+
+Therefore:
+    Γ is the geometric mode-switch
+    Higgs VEV is the physical trigger
+
+Higgs_VEV  →  mass terms appear
+mass terms →  projective geometry becomes definable
+projective geometry →  PED activates
+PED activation →  Γ boundary crossed
+
+Phase B: Post‑EWSB (massive)
+-----------------------------------------
+Physical content: Higgs condensate → mass
+Geometric structure: full pseudo‑Riemannian
+Worldlines: timelike + null geodesics
+Proper time: defined
+Projective structure: present
+GR metric: physically grounded
+
+RDG: SID ⊕ PED
+Geometry: pseudo‑Riemannian
+Worldlines: timelike + null
+Proper time: defined
+Projective structure: present
+Metric: physically grounded
+
+PED_EWSB^post = {
+    P: rest‑energy channels (mass terms)
+    E: evaluation operators tied to proper time
+    D: timelike dynamics (projective geodesics)
+}
+
+    Geometry = SID_conformal ⊕ PED_projective
+    RDG_mode = SID ⊕ PED
+
+---------------------------------------------------------------------
+II. EPS CONSTRUCTION (Ehlers–Pirani–Schild)
+---------------------------------------------------------------------
+EPS construction:
+    - Light rays → conformal structure (SID)
+    - Massive particles → projective structure (PED)
+    - Conformal + Projective = full metric geometry
+
+EPS decomposes geometry into two independent sectors:
+
+    1. EPS_ray^light       → Conformal structure
+    2. EPS_particles^massive → Projective structure
+
+EPS_full = ConformalSector ⊕ ProjectiveSector
+
+---------------------------------------------------------------------
+III. EPS SECTORS (Explicit)
+---------------------------------------------------------------------
+EPS_pre‑EWSB = SID_only
+EPS_post‑EWSB = SID ⊕ PED
+
+Pre‑EWSB:
+    - Only light rays exist
+    - Only conformal structure defined
+    - No projective structure
+    - EPS incomplete → no metric spacetime
+
+EPS_ray^light (massless sector):
+    S: conformal structure from null geodesics
+    I: massless gauge interactions
+    D: null propagation
+
+SID_light = {
+    S: conformal structure
+    I: massless gauge channels
+    D: null propagation
+}
+
+Post‑EWSB:
+    - Mass appears
+    - Timelike geodesics appear
+    - Projective structure activates
+    - EPS complete → metric spacetime emerges
+
+EPS_particles^massive (massive sector):
+    P: projective structure from timelike geodesics
+    E: affine/proper-time parameterization
+    D: timelike propagation/dynamics
+
+PED_mass = {
+    P: rest-energy channels
+    E: proper-time evaluation
+    D: timelike/projective dynamics
+}
+
+---------------------------------------------------------------------
+IV. EMBEDDING EPS IN RDG_spacetime^massless
+---------------------------------------------------------------------
+Q(RDG_COSM)
+---------------------------------------------------------------------
+
+O_EPS^light   : Worldlines_null     → ConformalStructure
+O_EPS^mass    : Worldlines_timelike → ProjectiveStructure
+
+In RDG_COSM:
+    Worldlines_null     ≠ ∅
+    Worldlines_timelike = ∅
+
+Therefore:
+    O_EPS^light   = active
+    O_EPS^mass    = inactive
+
+Result:
+    ConformalStructure   = defined
+    ProjectiveStructure  = undefined
+
+---------------------------------------------------------------------
+
+EPS Status Logic
+	
+ EPS_status = {
+  "full"   	if ConformalSector ≠ ∅ 	AND 	ProjectiveSector ≠ ∅
+  "partial"   	if ConformalSector ≠ ∅ 	AND 	ProjectiveSector = ∅
+  "null"      	if ConformalSector = ∅ 	AND 	ProjectiveSector = ∅
+ }
+
+EPS Embedding Inside RDG_COSM
+	
+ RDG_COSM(EPS) = {
+	    ConformalSector:   EPS_ray^light
+	    ProjectiveSector:  ∅
+	}
+
+EPS_full Evaluation (in this regime)
+	
+ EPS_full 	= EPS_ray^light ⊕ ∅
+	  	= EPS_ray^light
+
+EPS_status Determination
+
+	ConformalSector 		≠ ∅
+	ProjectiveSector	= ∅
+	→ EPS_status 		= "partial"
+
+Geometric Character of RDG_COSM
+
+	Geometry                     			= ConformalOnly
+	MetricGeometry               		= Absent
+	RelationalDistances (scaled) 	= Absent
+	RelationalStructure (scale-free) 	= Present
+
+RDG_COSM.EPS Summary Block
+
+Inputs:
+    - Light rays (null geodesics)
+    - No massive particles
+
+Operators:
+    O_EPS^light   = active
+    O_EPS^mass    = inactive
+
+Outputs:
+    ConformalStructure   = defined
+    ProjectiveStructure  = undefined
+
+Status:
+    EPS reconstruction   = partial / incomplete
+    Geometry             = conformal-only
+
+---------------------------------------------------------------------
+V. GEOMETRIC CONSEQUENCES
+---------------------------------------------------------------------
+1. No proper time:
+    - No clocks
+    - No aging
+    - No timelike intervals
+    - No rest frames
+
+2. No timelike geodesics:
+    - No massive worldlines
+    - No observer trajectories
+    - No affine structure
+
+3. No metric geometry:
+    - No distances
+    - No spacetime intervals
+    - No pseudo‑Riemannian manifold
+
+4. Geometry exists only as:
+    - Light cones
+    - Null relations
+    - Causal ordering
+    - Conformal structure (scale-free)
+
+---------------------------------------------------------------------
+VI. COSMOLOGICAL CONSEQUENCES
+---------------------------------------------------------------------
+1. GR cannot be extrapolated to T > T_EWSB:
+    - GR requires EPS_full (conformal ⊕ projective)
+    - Pre‑EWSB has EPS_partial
+    - Therefore GR is invalid in earliest universe
+
+2. Big Bang singularity is not physically justified:
+    - GR breaks down before reaching t = 0
+    - Metric spacetime does not exist at t = 0
+    - Singularity is an artifact of applying GR outside domain
+
+3. Spacetime “begins” at EWSB:
+    RDG_spacetime^start ≈ EWSB, not t = 0
+
+4. Early universe is a conformal-only phase:
+    - No metric
+    - No proper time
+    - No timelike direction
+    - No massive particles
+    - No projective geometry
+
+---------------------------------------------------------------------
+VII. QUANTUM GRAVITY RELEVANCE
+---------------------------------------------------------------------
+Pre‑EWSB conformal geometry is relevant because:
+    - It provides a natural pre‑metric phase
+    - It is scale-free (conformal), matching many QG frameworks
+    - It supports emergent metric models
+    - It aligns with unimodular/conformal/projective relativity
+    - It offers a physically motivated “pre-geometric” substrate
+
+---------------------------------------------------------------------
+VIII. POSSIBLE RELICS / SIGNATURES OF CONFORMAL-ONLY PHASE
+---------------------------------------------------------------------
+1. Deviations from GR near electroweak scale:
+    - Null propagation anomalies
+    - High-energy scattering deviations
+
+2. Early-universe cosmological imprints:
+    - Modified initial conditions
+    - CMB anomalies (large-angle correlations, power suppression)
+
+3. Geometric phase-transition relics:
+    - Gravitational-wave background features tied to EWSB
+    - Signatures of conformal → metric transition
+
+4. Constraints on quantum gravity:
+    - Rules out models requiring full metric at all energies
+    - Favors emergent-spacetime frameworks
+
+---------------------------------------------------------------------
+IX. SUMMARY OF THE CORE CLAIMS
+---------------------------------------------------------------------
+IXa. Summary of the Bradonjić Branch
+
+Mass does not exist above EWSB.
+Therefore the projective sector is operationally absent.
+Therefore EPS remains partial.
+Therefore metric geometry is not operationally reconstructed.
+GR is not expected to apply in the pre-EWSB regime.
+
+IXb. Summary of the RDG Substrate Branch
+
+If the substrate generates an effective PED before EWSB,
+then EPS is effectively complete.
+Metric geometry may emerge before Standard Model mass generation.
+GR may remain applicable in an extended early-universe regime.
+The cosmological evolution differs from the Bradonjić branch and
+becomes an observational question.
+
+=====================================================================
+
+APPENDIX
+=====================================================================
+RDG/MFE/Q Construction Paths
+=====================================================================
+
+Path A: SID-first (geometry-first)
+-----------------------------------------
+1. Choose point
+2. RDG/SID break:
+       SID = { S_structure, I_interaction, D_dynamics }
+3. Apply Γ_renorm (Q-box):
+       SID → SID ⊕ PED
+4. Result:
+       RDG_full = SID ⊕ PED
+       Geometry: conformal + projective
+       MFE: emerges from SID+PED coupling
+
+
+Path B: MFE/PED-first (energy/dynamics-first)
+-----------------------------------------
+1. Choose point
+2. Choose MFE/PED branch:
+       PED = { P_projective, E_energy, D_dynamics }
+3. Apply Γ_renorm (Q-box):
+       PED → RDG_MFE
+4. Result:
+       RDG_MFE = PED-driven RDG sector
+       Geometry: projective/energetic backbone
+       SID: can be back-filled or co-generated
+
+=====================================================================
+EPS / Bradonjić vs RDG/MFE/Q
+=====================================================================
+
+EPS/Bradonjić Path:
+-----------------------------------------
+PED = suppressed
+→ SID-only (EPS_partial)
+→ conformal-only geometry
+→ RDG_COSM^Bradonjić
+
+Operationally:
+    Choose point → massive worldlines absent
+    → suppress PED
+    → SID-only (EPS_partial)
+    → conformal-only geometry
+    → RDG_COSM^Bradonjić
+
+
+RDG/MFE/Q Path (Conformal-Only vs Full Geometry):
+-----------------------------------------
+Conformal-only RDG_COSM^Bradonjić:
+    PED suppressed above EWSB
+    → EPS_partial
+    → conformal-only geometry
+    → RDG_COSM^Bradonjić
+
+Full-geometry RDG_full:
+    Choose point → SID break
+    → Γ_renorm (Q-box) generates PED
+    → SID ⊕ PED (EPS_full)
+    → full geometry
+    → RDG_full
+
+=====================================================================
+RDG_COSM^substrate
+=====================================================================
+Substrate-Generated Conformal-Only Spacetime
+
+Definition:
+    RDG_COSM^substrate := COSM regime in which the substrate stratum
+    itself generates SID ⊕ PED, without imposing PED suppression
+    at or above the EWSB scale.
+
+Core Idea:
+    - Bradonjić: PED suppressed pre‑EWSB → EPS_partial → conformal-only geometry
+    - Substrate case: PED generated by substrate → EPS_full (or near-full)
+      even in regimes where standard model masses are nominally “off”
+
+A. PHYSICAL REGIME
+---------------------------------------------------------------------
+Temperature:            T ≥ T_substrate_threshold  (not necessarily tied to EWSB)
+Substrate:              active RDG/MFE/Q layer
+Standard Model masses:  may be zero or negligible
+Effective PED:          non-zero due to substrate dynamics
+
+Worldlines:
+    - Null geodesics:        present
+    - Effective timelike:    may be present via substrate-induced PED
+
+Geometry:
+    - Conformal sector (SID):    present
+    - Projective sector (PED):   substrate-generated
+    - EPS_status:                “full” or “near-full” (not strictly partial)
+
+B. EPS EMBEDDING
+---------------------------------------------------------------------
+EPS_ray^light      = active        (SID / conformal sector)
+EPS_particles^mass = active_eff    (PED / projective sector via substrate)
+
+EPS_status_substrate:
+    ConformalSector   ≠ ∅
+    ProjectiveSector  ≠ ∅ (effective, substrate-induced)
+    → EPS_status_substrate = "full" (or effectively full)
+
+Result:
+    Geometry = Conformal ⊕ Projective
+    MetricGeometry = Present (substrate-supported)
+    ProperTime = definable (via effective timelike structure)
+
+C. RDG/MFE/Q VIEW
+---------------------------------------------------------------------
+Substrate path:
+    1. Substrate_RDG/MFE/Q active
+    2. PED branch generated at substrate level:
+           PED_substrate = { P_projective_eff, E_energy_eff, D_dynamics_eff }
+    3. Γ_renorm (Q-box) couples substrate PED to SID:
+           SID ⊕ PED_substrate → RDG_full_eff
+
+RDG_COSM^substrate:
+    - is a COSM (conformal module) in which:
+        SID: conformal relational structure
+        PED: effective projective/energetic structure from substrate
+    - does NOT rely on Standard Model Higgs VEV to activate PED
+    - can support metric-like geometry even in “massless” field regimes
+
+D. CONTRAST WITH RDG_COSM^Bradonjić
+---------------------------------------------------------------------
+RDG_COSM^Bradonjić:
+    - PED suppressed above EWSB
+    - EPS_partial
+    - conformal-only geometry
+    - no metric spacetime
+    - GR invalid in earliest universe
+    - Big Bang singularity framed as GR artifact
+
+RDG_COSM^substrate:
+    - PED generated by substrate (not suppressed)
+    - EPS_full or near-full
+    - conformal ⊕ projective geometry
+    - metric spacetime can exist earlier
+    - GR may be valid in earlier regimes
+    - Big Bang singularity loses geometric necessity/justification
+
+E. SUMMARY
+---------------------------------------------------------------------
+RDG_COSM^substrate:
+    - A conformal-only module structurally (COSM),
+      but with substrate-generated PED that restores projective structure.
+    - It is the explicit counter-case to Bradonjić’s suppression choice:
+      instead of “no PED above EWSB,” it assumes “substrate PED above EWSB.”
+    - This module is the natural home for your bookmark:
+      early SID ⊕ PED → no need for a Big Bang singularity.
+
+=====================================================================
+
+Substrate-Generated SID ⊕ PED (Pre‑EWSB)
+=====================================================================
+
+Premise:
+    If the substrate stratum emergently creates particles with full
+    SID ⊕ PED *before* EWSB, then the early universe does NOT follow
+    Bradonjić’s PED-suppressed conformal-only path.
+
+Substrate condition:
+    PED_substrate ≠ ∅
+    SID_substrate ≠ ∅
+    Γ_renorm active at substrate scale
+    → EPS_full (or effectively full) even when Higgs_VEV = 0
+
+Consequences:
+---------------------------------------------------------------------
+A. Projective structure exists early
+    - Timelike geodesics definable
+    - Affine/proper-time parameterization available
+    - Massive-like trajectories exist via substrate PED
+    - EPS_particles^massive is active_eff
+
+B. Metric geometry exists early
+    - Conformal ⊕ Projective = full metric geometry
+    - Pseudo-Riemannian structure supported by substrate
+    - Proper time and distances meaningful pre‑EWSB
+    - Geometry is NOT restricted to conformal-only
+
+C. GR may be valid earlier
+    - GR requires EPS_full
+    - Substrate provides EPS_full before EWSB
+    - GR’s domain extends further back than Bradonjić allows
+    - GR breakdown at “t = 0” is no longer forced by geometry
+
+D. Big Bang justification collapses
+    - Bradonjić’s singularity argument depends on PED suppression
+    - If PED exists early, metric spacetime exists early
+    - GR extrapolation is not geometrically forbidden
+    - The Big Bang singularity loses its EPS-based foundation
+    - Early universe may be non-singular or substrate-driven
+
+E.Summary:
+---------------------------------------------------------------------
+Substrate-generated SID ⊕ PED (pre‑EWSB) produces:
+    - Early projective structure
+    - Early metric geometry
+    - Earlier validity of GR
+    - Collapse of Bradonjić’s Big Bang justification
+
+This defines:
+    RDG_COSM^substrate
+        = COSM regime with substrate-generated PED
+        = counter-case to RDG_COSM^Bradonjić
+        = early SID ⊕ PED → EPS_full → metric geometry
+        = no forced singularity at t = 0
+
+=====================================================================
+RDG_spacetime^massive 
+=====================================================================
+Post‑EWSB Full Geometry Module
+
+Definition:
+    RDG_spacetime^massive := RDG spacetime regime in which both
+    SID (conformal sector) and PED (projective sector) are active.
+    This corresponds to the post‑EWSB universe where mass exists,
+    timelike geodesics are defined, and full metric geometry is valid.
+
+Physical Trigger:
+    Higgs_VEV ≠ 0
+    → mass terms appear
+    → PED activates
+    → EPS_full reconstructed
+    → metric geometry emerges
+
+---------------------------------------------------------------------
+I. PHYSICAL REGIME (Post‑EWSB)
+---------------------------------------------------------------------
+Temperature:            T < T_EWSB  (~246 GeV)
+Particle masses:        non-zero (Higgs condensate active)
+Worldlines:             null + timelike
+Geodesics:              null + timelike
+Timelike direction:     present
+Proper time:            defined
+Projective structure:   present
+Metric geometry:        present (pseudo‑Riemannian)
+Conformal geometry:     present (SID)
+
+Interpretation:
+    The universe becomes fully geometric in the EPS sense.
+    Both conformal and projective sectors exist.
+    GR is physically justified.
+
+---------------------------------------------------------------------
+II. SID / PED Structure
+---------------------------------------------------------------------
+SID_massive = {
+    S: conformal relational structure
+    I: interaction channels (gauge + mass-coupled)
+    D: null + timelike propagation
+}
+
+PED_massive = {
+    P: projective structure from massive geodesics
+    E: proper-time evaluation operators
+    D: timelike/projective dynamics
+}
+
+RDG_spacetime^massive = SID_massive ⊕ PED_massive
+
+---------------------------------------------------------------------
+III. EPS Embedding
+---------------------------------------------------------------------
+EPS_ray^light        = active
+EPS_particles^mass   = active
+EPS_status           = "full"
+
+EPS_full = {
+    ConformalSector:   EPS_ray^light
+    ProjectiveSector:  EPS_particles^mass
+}
+
+Geometry:
+    Geometry = Conformal ⊕ Projective
+    MetricGeometry = Present
+    ProperTime = Defined
+    AffineStructure = Defined
+
+---------------------------------------------------------------------
+IV. Γ_renorm (Q‑box) Activation
+---------------------------------------------------------------------
+Γ_renorm^activate:
+    SID → SID ⊕ PED
+    triggered by Higgs_VEV
+
+Chain:
+    Higgs_VEV → mass terms
+    mass terms → projective geometry definable
+    projective geometry → PED activates
+    PED activation → EPS_full
+    EPS_full → metric geometry
+
+RDG_mode:
+    SID-only (pre‑EWSB)
+    → SID ⊕ PED (post‑EWSB)
+
+---------------------------------------------------------------------
+V. Geometric Character
+---------------------------------------------------------------------
+RDG_spacetime^massive:
+    - full pseudo‑Riemannian geometry
+    - null + timelike geodesics
+    - proper time defined
+    - distances defined
+    - causal + affine structure
+    - GR valid
+
+RelationalStructure:
+    - scale-free conformal (SID)
+    - scale-bearing projective (PED)
+
+---------------------------------------------------------------------
+VI. Cosmological Interpretation
+---------------------------------------------------------------------
+Post‑EWSB universe:
+    - metric spacetime exists
+    - GR applies
+    - standard cosmology begins
+    - timelike observers exist
+    - clocks and proper time meaningful
+
+RDG_spacetime^massive is the geometric phase in which:
+    - galaxies form
+    - structure grows
+    - cosmological expansion is metric-governed
+    - curvature and stress-energy are well-defined
+
+---------------------------------------------------------------------
+VII. Summary Block
+---------------------------------------------------------------------
+RDG_spacetime^massive = {
+    SID: {
+        S: conformal structure
+        I: gauge + mass-coupled interactions
+        D: null + timelike propagation
+    }
+
+    PED: {
+        P: projective structure
+        E: proper-time evaluation
+        D: timelike/projective dynamics
+    }
+
+    Geometry: Conformal ⊕ Projective
+    EPS_status: full
+    RDG_mode: SID ⊕ PED
+    MetricGeometry: present
+    ProperTime: defined
+}
+=====================================================================
+
+RDG_COSM^substrate Cosmology — 
+=====================================================================
+Early Universe with PED Present
+
+I. Setup: Substrate-Generated SID ⊕ PED
+---------------------------------------------------------------------
+Premise:
+    Substrate_RDG/MFE/Q is active at very high scales and generates:
+        SID_substrate ≠ ∅
+        PED_substrate ≠ ∅
+    before (or independently of) Standard Model EWSB.
+
+Key condition:
+    PED is NOT suppressed pre‑EWSB.
+    → EPS_full (or effectively full) exists from the start.
+    → Metric geometry is supported by substrate dynamics.
+
+---------------------------------------------------------------------
+II. Early Universe Phases (Substrate Case)
+---------------------------------------------------------------------
+
+Phase S0: Substrate Pre-Geometry (deep UV)
+-----------------------------------------
+Content:
+    - Non-metric substrate degrees of freedom (RDG/MFE/Q microphysics)
+    - Pre-geometric relational structure
+
+Geometry:
+    - No classical metric
+    - Pre-EPS relational layer
+    - Γ_renorm not yet in macroscopic regime
+
+Role:
+    - True “pre-spacetime” phase
+    - Where RDG/MFE/Q lives as microphysics
+
+
+Phase S1: Substrate COSM with PED (RDG_COSM^substrate)
+-----------------------------------------
+Trigger:
+    - Substrate dynamics cross a Γ_renorm threshold
+    - SID_substrate and PED_substrate both become effective
+
+Structure:
+    SID_substrate = conformal relational sector
+    PED_substrate = projective/energetic sector
+
+EPS embedding:
+    EPS_ray^light        = active
+    EPS_particles^mass   = active_eff
+    EPS_status           = "full" (effective)
+
+Geometry:
+    - Conformal ⊕ Projective
+    - MetricGeometry_present (substrate-supported)
+    - Proper time definable
+    - Timelike + null effective worldlines
+
+Cosmological behavior:
+    - Early expansion governed by substrate-supported GR-like dynamics
+    - No forced singularity at t = 0
+    - Initial conditions set by substrate phase, not by a metric blow-up
+
+
+Phase S2: Standard Model EWSB
+-----------------------------------------
+Event:
+    Higgs_VEV turns on at T_EWSB
+
+Effect:
+    - Standard Model masses appear
+    - PED_SM (Standard Model projective sector) joins PED_substrate
+    - RDG_spacetime^massive becomes the dominant macroscopic phase
+
+Geometry:
+    - Still Conformal ⊕ Projective
+    - Now supported by both substrate PED and SM PED
+    - GR fully valid in usual sense
+
+---------------------------------------------------------------------
+III. Causal and Geometric Structure (Early Behavior)
+---------------------------------------------------------------------
+With PED present from the start (Phase S1):
+
+    - Timelike curves exist early (effective massive trajectories)
+    - Proper time is meaningful before EWSB
+    - Affine structure is defined
+    - Light cones + timelike cones form a full causal structure
+
+Therefore:
+    - The universe has a genuine metric phase before SM EWSB.
+    - GR-like equations can govern early expansion.
+    - Singular behavior is controlled by substrate dynamics, not by
+      “absence of projective structure.”
+
+---------------------------------------------------------------------
+IV. Contrast with RDG_COSM^Bradonjić
+---------------------------------------------------------------------
+RDG_COSM^Bradonjić:
+    - PED suppressed above EWSB
+    - EPS_partial
+    - Conformal-only geometry
+    - No metric spacetime pre‑EWSB
+    - GR invalid in earliest universe
+    - Big Bang singularity framed as GR extrapolation artifact
+
+RDG_COSM^substrate:
+    - PED generated by substrate from the start
+    - EPS_full (effective)
+    - Conformal ⊕ Projective geometry early
+    - Metric spacetime exists pre‑EWSB
+    - GR may be valid in early regimes
+    - Big Bang singularity loses geometric necessity
+
+---------------------------------------------------------------------
+V. Cosmological Narrative (Substrate Case)
+---------------------------------------------------------------------
+Storyline:
+    1. Substrate pre-geometry (S0) seeds relational microphysics.
+    2. Γ_renorm at substrate scale activates SID_substrate ⊕ PED_substrate (S1).
+    3. Early universe evolves with full metric geometry, driven by substrate RDG/MFE/Q.
+    4. Standard Model EWSB (S2) adds Higgs-based masses, but geometry is already present.
+    5. Cosmology is non-singular or substrate-regularized; “Big Bang” is a transition,
+       not a geometric endpoint.
+
+Core takeaway:
+    RDG_COSM^substrate is the explicit cosmology where:
+        - PED is present from the start,
+        - EPS_full exists early,
+        - metric geometry and GR are not confined to post‑EWSB,
+        - Bradonjić’s conformal-only early universe becomes a special case,
+          not a necessity.
+
+=====================================================================
+
+=====================================================================
+REFERENCES
+=====================================================================
+
+ M. Bradonjić,
+          “Massless Spacetime,” JHEP (2011).
+          Shows that above EWSB, massive worldlines do not exist;
+          projective structure cannot be defined; geometry is conformal-only.
+
+    M. Bradonjić, “Massless Spacetime,” 
+    Journal of High Energy Physics, 2011.
+    Core idea: Above the electroweak scale (T > T_EWSB), 
+    massive worldlines do not exist; therefore the projective 
+    sector (PED) cannot be physically defined. EPS geometry 
+    truncates to its conformal sector only, producing a 
+    conformal‑only spacetime (“massless spacetime”) with 
+    EPS_partial and no metric geometry.
+
+    Key lines from the paper:
+        “In the absence of massive particles, the projective 
+         structure cannot be constructed.”
+        “The geometry of the early universe is conformal-only.”
+
+    This forms the basis of:
+        RDG_COSM^Bradonjić
+        (the PED‑suppressed conformal‑only early universe module)
+
+=====================================================================
+=====================================================================
+FURTHER READING
+=====================================================================
+
+EPS Geometry
+-----------------------------------------
+Ehlers–Pirani–Schild
+
+J. Ehlers, F. A. E. Pirani, A. Schild,
+        “The Geometry of Free Fall and Light Propagation,” (1972).
+        Foundational paper defining conformal and projective structures
+        from null rays and massive worldlines.
+
+A. Schild,
+        “On the Definition of Space and Time in General Relativity,” (1960).
+        Early articulation of conformal/projective decomposition.
+
+J. Ehlers,
+        “Examples of Newtonian Limits of Relativistic Spacetimes,” (1981).
+        Clarifies projective structure and affine parameterization.
+
+Electroweak Symmetry Breaking / Higgs Mechanism
+-----------------------------------------
+P. W. Higgs,
+          “Broken Symmetries and the Masses of Gauge Bosons,” Phys. Rev. Lett. (1964).
+          Introduces the Higgs mechanism; mass generation via VEV.
+
+F. Englert, R. Brout,
+          “Broken Symmetry and the Mass of Gauge Vector Mesons,” (1964).
+          Parallel development of the Higgs mechanism.
+
+S. Weinberg,
+          “A Model of Leptons,” Phys. Rev. Lett. (1967).
+          Electroweak unification; massless → massive transition at ~246 GeV.
+
+ S. Glashow, S. Weinberg, A. Salam,
+          Standard Model electroweak sector; defines the EWSB scale.
+
+Quantum Gravity Context 
+-----------------------------------------
+Conformal / Emergent Metric
+
+G. ’t Hooft,
+        “Local Conformal Symmetry: The Missing Symmetry Component,” (2015).
+        Conformal symmetry as pre‑metric structure.
+
+C. Wetterich,
+        “Emergent Gravity from Quantum Fluctuations,” (2011).
+        Metric emerges from deeper relational substrate.
+
+H. Weyl,
+        “Space–Time–Matter,” (1918).
+        Early conformal geometry; historical precursor to EPS.
+
+=====================================================================
+=====================================================================
+FUTURE WORK
+=====================================================================
+RDG / MFE / Q Framework 
+-----------------------------------------
+Relational Geometry
+
+          “RDG–MFE–Q: Relational Geometry, Mass–Field Evaluation,
+           and Q‑Moderation,” GitHub Repository.
+          Core definitions of SID, PED, Γ_renorm, Q‑box, and RDG spacetime modules.
+
+          “Continuum Γ‑Derivation and RDG Closure Stability,”.
+          Defines Γ_renorm as the SID→SID⊕PED scale‑bridging operator.
+
+          “Relational Electromagnetism and the Electromagnetic Force:
+           RDG‑Transpilation”.
+          Shows RDG/MFE equivalence to Maxwell–Quaternion structures.
+
+=====================================================================
+=====================================================================
+GLOSSARY
+=====================================================================
+
+SID - Structure / Interaction / Dynamics
+    The conformal sector of RDG.  
+    Scale‑free relational geometry derived from null propagation.  
+    Provides conformal structure, gauge interactions, and null dynamics.  
+
+PED - Projective / Evaluation / Dynamics
+    The projective sector of RDG.  
+    Scale‑bearing geometry derived from timelike geodesics and mass.  
+    Provides projective structure, proper‑time evaluation, and timelike dynamics.  
+
+Γ_renorm - Scale‑Bridging Operator
+    The RDG renormalization operator that activates PED from SID.  
+    Represents the SID→SID⊕PED transition.  
+    Physically triggered by Higgs_VEV in standard cosmology.  
+
+Q‑box - Moderation Layer
+    The RDG moderation layer coupling SID and PED.  
+    Governs how projective structure emerges from conformal structure.  
+
+COSM  - Conformal‑Only Spacetime Module
+    RDG module where only SID is active and PED is suppressed or absent.  
+    Conformal geometry only; no metric; no proper time.  
+    RDG_COSM^Bradonjić is the massless spacetime case.
+
+RDG_COSM^substrate
+    COSM regime where substrate dynamics generate PED early.  
+    Conformal ⊕ projective geometry exists pre‑EWSB.  
+    Big Bang singularity loses geometric justification.
+
+RDG_spacetime^massive
+    Post‑EWSB RDG regime where SID⊕PED is fully active.  
+    Full metric geometry; proper time; GR valid.
+
+EPS - Ehlers–Pirani–Schild Framework
+    Geometric reconstruction from physical worldlines.  
+    Null rays → conformal structure.  
+    Massive worldlines → projective structure.  
+    EPS_full = conformal ⊕ projective.
+
+EPS_partial
+    Only conformal structure present (null rays).  
+    No projective structure (no massive worldlines).  
+    Geometry is conformal‑only.
+
+EWSB - Electroweak Symmetry Breaking
+    Higgs_VEV turns on at ~246 GeV.  
+    Mass appears; timelike geodesics appear; PED activates.
+
+NullLayer
+    Conformal‑only relational layer (SID-only).  
+    No proper time; no timelike direction.
+
+Projective Structure
+    Geometry defined by massive worldlines and affine parameterization.  
+    Requires PED.
+
+Metric Geometry
+    Full pseudo‑Riemannian geometry reconstructed from EPS_full.  
+    Requires both SID and PED.
+
+=====================================================================
+=====================================================================
+NOTATION INDEX
+=====================================================================
+
+SID
+    { S_structure, I_interaction, D_dynamics }
+    Conformal sector; null propagation; scale‑free geometry.
+
+PED
+    { P_projective, E_evaluation, D_dynamics }
+    Projective sector; timelike propagation; scale‑bearing geometry.
+
+SID_EWSB^pre
+    SID-only regime above EWSB (massless phase).
+
+PED_EWSB^pre
+    PED suppressed above EWSB.
+
+PED_EWSB^post
+    PED active after EWSB (massive phase).
+
+RDG_COSM
+    Conformal‑Only Spacetime Module.
+
+RDG_COSM^Bradonjić
+    Bradonjić’s massless spacetime (PED suppressed).
+
+RDG_COSM^substrate
+    Substrate-generated SID⊕PED pre‑EWSB.
+
+RDG_spacetime^massive
+    Full SID⊕PED geometry post‑EWSB.
+
+Γ_renorm
+    SID→SID⊕PED scale‑bridging operator.
+
+Γ_renorm^activate
+    Higgs_VEV event triggering PED activation.
+
+Q(RDG_COSM)
+    EPS operators applied to RDG_COSM.
+
+O_EPS^light
+    Operator extracting conformal structure from null rays.
+
+O_EPS^mass
+    Operator extracting projective structure from massive worldlines.
+
+EPS_ray^light
+    Conformal sector of EPS.
+
+EPS_particles^mass
+    Projective sector of EPS.
+
+EPS_status
+    { full, partial, null }
+
+EPS_full
+    Conformal ⊕ Projective.
+
+EPS_partial
+    Conformal only.
+
+NullLayer_conformal
+    SID-only geometry; no PED.
+
+T_EWSB
+    Electroweak symmetry breaking temperature (~246 GeV).
+
+Worldlines_null
+    Null geodesics.
+
+Worldlines_timelike
+    Timelike geodesics.
+
+MetricGeometry
+    Pseudo‑Riemannian geometry reconstructed from EPS_full.
+
+ProperTime
+    Affine parameterization of timelike geodesics.
+
+=====================================================================
+
