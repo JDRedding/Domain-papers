@@ -1,0 +1,19 @@
+RDG Noether Theorem
+-------------------
+Given a SID-automorphism δq = ε K and time shift δt = ε ξ:
+
+Action:
+    S[q] = ∫ L(q, D_t q, t) dt
+
+Variation:
+    δS = ε ∫ D_t[ (∂_{dot q} L) K  -  ξ L ] dt
+
+Define RDG Noether Charge:
+    J_RDG := (∂_{dot q} L) K  -  ξ L
+
+Symmetry Condition:
+    δS = 0  ⇒  D_t(J_RDG) = 0
+
+Interpretation:
+    SID symmetry → PED invariant
+    Q-layer: [J_RDG, H] = 0
