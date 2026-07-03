@@ -699,7 +699,7 @@ Predicts:
 CITATION
 =====================================================================
   • Yampolskiy, R. V. (2014). "The Universe of Minds." arXiv:1410.0369 [cs.AI].
-    doi:10.48550/arXiv.1410.0369
+    doi:10.48550/arXiv.1410.0369 https://arxiv.org/abs/1410.0369
   • Burny - Effective Curiosity @burny_tech 8:13 AM · Jul 3, 2026
     https://x.com/burny_tech/status/2073032507998527559
 
