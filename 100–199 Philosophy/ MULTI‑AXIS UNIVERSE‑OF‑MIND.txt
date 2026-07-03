@@ -696,8 +696,10 @@ Predicts:
      • emergent capability surfaces
 
 =====================================================================
-CITATION
+CITATIONS
 =====================================================================
+General references
+
   • Yampolskiy, R. V. (2014). "The Universe of Minds." arXiv:1410.0369 [cs.AI].
     doi:10.48550/arXiv.1410.0369 https://arxiv.org/abs/1410.0369
   • Burny - Effective Curiosity @burny_tech 8:13 AM · Jul 3, 2026
