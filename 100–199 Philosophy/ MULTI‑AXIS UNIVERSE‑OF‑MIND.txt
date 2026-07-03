@@ -1,6 +1,42 @@
 MULTI‑AXIS UNIVERSE‑OF‑MIND HYPER‑MANIFOLD
 RDG OPERATOR MAPPING
 
+CORE CONCEPTS
+----------------
+Universe of Minds:
+  The total design-space of all possible information-processing systems,
+  across all substrates (biological, digital, hybrid, collective, alien).
+
+Effective Curiosity (Burny):
+  A functional describing how efficiently a system converts novelty into
+  useful internal structure. Balances exploration, compression, and
+  specialization.
+
+RDG (Relational Dynamics Geometry):
+  A tri-layer operator formalism for modeling mind-systems:
+    SID — Structure, Interaction, Dynamics
+    PED — Power, Evaluation, Domain
+    Q   — Constraint / Phase-Sector Modulation
+
+RDG OPERATORS
+O_smooth   : reduces jaggedness
+O_rough    : increases jaggedness
+O_meta     : increases self-mod depth
+O_lock     : freezes or reduces self-mod depth
+O_expand   : increases representation complexity
+O_compress : reduces representation complexity
+O_embed    : increases embodiment coupling
+O_abstract : decreases embodiment coupling
+O_adapt    : increases adaptivity
+O_fix      : decreases adaptivity
+
+Mind-System Coordinates:
+  J — Jaggedness (capability variance)
+  A — Adaptivity (rate of reconfiguration)
+  C — Representation Complexity
+  S — Self-Modification Depth
+  E — Embodiment Coupling
+
                 UNIVERSE OF MINDS (HYBRID FORMALISM)
                 ------------------------------------
 
@@ -237,7 +273,7 @@ We treat each mind-system M as having coordinates:
 
 RDG operators act as flows on these coordinates.
 
-I. CORE RDG OPERATORS (DEFINITIONS)
+I. OPERATORS (DEFINITIONS)
 ---------------------------------------------------------------------
 
 1) O_smooth  : Jaggedness‑reducing operator
@@ -300,7 +336,31 @@ I. CORE RDG OPERATORS (DEFINITIONS)
         • More rigid, slower to change
         • Can increase stability, reduce chaos
 
-II. CLASS‑BY‑CLASS TRAVERSAL CAPABILITIES
+II. MIND CLASSES
+---------------------------------------------------------------------
+Biological-Evolved Systems:
+  High J, Medium A, High E, High C, Low–Med S
+
+Human-Engineered Algorithmic Systems:
+  Low–Med J, Med–High A, Low–Med E, Med–High C, Low S
+
+Self-Modifying Recursive Systems:
+  ↓J, VeryHigh A, Med E, High–VeryHigh C, VeryHigh S
+
+Collective / Distributed Systems:
+  Variable J, Med–High A, Med–High E, High C, Medium S
+
+Hybrid Bio-Digital Systems:
+  Medium J, High A, VeryHigh E, High C, Med–High S
+
+Alien-Substrate Systems:
+  Unknown J/A/E/C/S
+
+Universal Optimization Systems:
+  Minimal J, Maximal A, Variable E, Maximal C, Maximal S
+
+
+CLASS‑BY‑CLASS TRAVERSAL CAPABILITIES
 ---------------------------------------------------------------------
 
 Legend:
