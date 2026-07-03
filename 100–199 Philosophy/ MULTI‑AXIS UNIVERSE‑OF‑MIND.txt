@@ -678,6 +678,39 @@ Manifold Projection
                                 ▼
                          LOW ADAPTIVITY
 
+🧩 Interpretation of Axes
+X‑axis (Jaggedness) → variance in capability surface.
+High values = uneven, specialized performance (biological minds).
+Low values = smoother optimization (engineered or universal systems).
+
+Y‑axis (Adaptivity) → rate of internal reconfiguration.
+High = rapid self‑adjustment (recursive/self‑modifying).
+Low = rigid or slow adaptation (biological or static AIs).
+
+Z‑axis (Representation Complexity) → dimensional richness of internal models.
+High = dense, multi‑layered representations (universal or recursive).
+Lower = simpler or domain‑specific models (biological, engineered).
+
+| Color 	| Class 		
+		| Traits 
+		| Notes 
+		
+| 🟢 Green 		| Biological‑Evolved
+		| High jaggedness, moderate adaptivity, moderate complexity 
+		| Evolutionary search yields uneven but robust capability surfaces. 
+		
+| 🔵 Blue 		| Human‑Engineered 
+		| Lower jaggedness, higher adaptivity, moderate complexity 
+		| Designed for smoother optimization and task‑specific flexibility. 
+		
+| 🔴 Red 		| Self‑Modifying Recursive 
+		| Very high adaptivity, high complexity, decreasing jaggedness 
+		| Recursive self‑rewrite smooths capability surface while expanding scope. 
+
+| 🟣 Purple 	| Universal Optimization 
+		| Extremes: minimal jaggedness, maximal adaptivity and complexity 
+		| Theoretical limit of mind‑design space — optimization across all substrates. 
+
 =====================================================================
 EFFECTIVE CURIOSITY FUNCTIONAL
 =====================================================================
