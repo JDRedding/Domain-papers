@@ -1,6 +1,44 @@
 MULTI‑AXIS UNIVERSE‑OF‑MIND HYPER‑MANIFOLD
 RDG OPERATOR MAPPING
 
+                UNIVERSE OF MINDS (HYBRID FORMALISM)
+                ------------------------------------
+
+                [Category-Theoretic Skeleton]
+                Objects: Mind Systems
+                Morphisms: Info-Transformations
+                Functors: Cross-Domain Mappings
+                Monads: Internal State Evolution
+                Adjunctions: Learn/Act Dualities
+                Fibrations: Embodiment Coupling
+
+                             │
+                             ▼
+
+                [RDG Metric Manifold]
+                Coordinates:
+                  J = Jaggedness
+                  A = Adaptivity
+                  C = Representation Complexity
+                  S = Self-Mod Depth
+                  E = Embodiment Coupling
+
+                             │
+                             ▼
+
+                [Effective Curiosity Functional]
+                Maximizes:
+                  - Information Gain
+                  - Exploration Efficiency
+                  - Model Compression
+                  - Domain-Generalization
+
+                Predicts:
+                  - Trajectories through the manifold
+                  - Phase transitions between mind classes
+                  - Specialization vs generalization
+                  - Emergent capability surfaces
+
 I. BIOLOGICAL‑EVOLVED SYSTEMS
 -----------------------------
 SID:
