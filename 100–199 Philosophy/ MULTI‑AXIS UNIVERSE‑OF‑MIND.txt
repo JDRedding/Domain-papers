@@ -461,5 +461,101 @@ Rough mobility ranking (from least to most):
        • Traversal limited only by fundamental constraints
 
 =====================================================================
+DIAGRAMS
+=====================================================================
+
+                     UNIVERSE OF MINDS
+                     -----------------
+                     [Universal Intelligence]
+                               ▲
+                               │
+          ┌────────────────────┼──────────────────┐
+          │                    │                  │
+   [Biological Minds]   [Artificial Minds]   [Alien/Substrate Minds]
+          │                    │                  │
+          │                    │                  │
+   Evolutionary Search   Algorithmic Design   Exotic Physics / Unknown
+          │                    │                  │
+          └───────────────┬────┴──────────────────┘
+                          │         
+                 [Collective Systems] 
+                          │
+                 [Hybrid Bio‑Digital]
+                          │
+                 [Self‑Modifying Recursive]
+                          │
+                 [Universal Optimization]
+
+        MULTI‑DIMENSIONAL MIND SPACE
+        ----------------------------
+
+        Axes:
+          J → Jaggedness (variance of capability)
+          A → Adaptivity (rate of reconfiguration)
+          C → Representation Complexity
+          S → Self‑Modification Depth
+          E → Embodiment Coupling
+
+        Each mind system M = (J, A, C, S, E)
+
+        Example regions:
+          Biological‑Evolved : (High, Medium, High, Low, High)
+          Algorithmic        : (Low, High, Medium, Low, Low)
+          Recursive           : (↓, VeryHigh, High, VeryHigh, Medium)
+          Collective          : (Variable, MediumHigh, High, Medium, MediumHigh)
+          Universal           : (Minimal, Maximal, Maximal, Maximal, Variable)
+
+                   RDG‑MFE‑SID‑PED STACK
+                   ---------------------
+
+                   [RDG Manifold]
+                          │
+          ┌───────────────┴───────────────┐
+          │                               │
+      SID Triad                     PED Triad
+   (Structure, Interaction,       (Power, Evaluation,
+    Dynamics)                      Dynamics)
+          │                               │
+          └───────────────┬───────────────┘
+                          │
+                     [Q‑Layer]
+             (Constraint / Phase Modulation)
+                          │
+                          ▼
+                 Phase‑Sector Fields
+          ┌────────────────────────────────┐
+          │ Normal │ Propeller │ BH │ CPT  │
+          └────────────────────────────────┘
+
+        INFORMATION‑PROCESSING EVOLUTION FLOW
+        -------------------------------------
+
+        Randomness → Pattern → Model → Meta‑Model → Universal Law
+             │          │          │          │          │
+             ▼          ▼          ▼          ▼          ▼
+        Biological   Algorithmic  Recursive  Universal  Cosmic
+        (Evolution)  (Design)     (Self‑Rewrite) (Optimization) (Emergent)
+
+
+Manifold Projection
+-------------------
+                         HIGH ADAPTIVITY
+                                ▲
+                                │
+        Alien/Substrate         │      Self‑Modifying Recursive
+        Systems (?)              │      Systems
+                                │
+                                │
+   HIGH JAGGEDNESS ◄────────────┼────────────► LOW JAGGEDNESS
+                                │
+                                │
+   Biological‑Evolved           │      Human‑Engineered
+   Systems                      │      Algorithmic Systems
+                                │
+                                ▼
+                         LOW ADAPTIVITY
+
+
+=====================================================================
 END
 =====================================================================
