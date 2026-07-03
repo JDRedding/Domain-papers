@@ -678,8 +678,10 @@ Manifold Projection
                                 ▼
                          LOW ADAPTIVITY
 
+=====================================================================
 EFFECTIVE CURIOSITY FUNCTIONAL
----------------------------------------------------------------------
+=====================================================================
+
 Curiosity(M) = f(
      information gain,
      exploration efficiency,
