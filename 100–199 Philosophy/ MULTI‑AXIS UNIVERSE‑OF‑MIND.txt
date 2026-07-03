@@ -19,6 +19,15 @@ ESSENTIAL IDEAS
 • Self-modifying systems represent a qualitatively different class.
 • Alien minds may be incomprehensible under human cognitive models.
 
+WHY THIS FRAMEWORK MATTERS
+---------------------------------------------------------------------
+• Provides a predictive, measurable geometry of mind-space.
+• Unifies biological, artificial, hybrid, collective, and alien systems.
+• Enables operator-driven modeling of cognitive evolution.
+• Supports analysis of self-modifying and recursive architectures.
+• Extends Yampolskiy’s intellectology into a multi-axis formalism.
+• Integrates Burny’s jaggedness/adaptivity insights into RDG dynamics.
+
 CORE CONCEPTS
 ----------------
 Universe of Minds:
@@ -670,6 +679,21 @@ Manifold Projection
                                 │
                                 ▼
                          LOW ADAPTIVITY
+
+EFFECTIVE CURIOSITY FUNCTIONAL
+---------------------------------------------------------------------
+Curiosity(M) = f(
+     information gain,
+     exploration efficiency,
+     compression quality,
+     generalization power
+)
+
+Predicts:
+     • trajectories through mind-space
+     • specialization vs generalization
+     • phase transitions between mind classes
+     • emergent capability surfaces
 
 =====================================================================
 CITATION
