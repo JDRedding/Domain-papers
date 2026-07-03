@@ -1,6 +1,24 @@
 MULTI‑AXIS UNIVERSE‑OF‑MIND HYPER‑MANIFOLD
 RDG OPERATOR MAPPING
 
+All minds can be treated as software.
+
+Therefore:
+  • The space of possible minds is infinite.
+  • Minds vary in size, complexity, and representational structure.
+  • Mind designs can be classified, compared, and analyzed formally.
+  • A systematic science of mind-design space is both possible and needed.
+
+ESSENTIAL IDEAS
+---------------------------------------------------------------------
+• Mind-space is not a continuum; it contains discontinuities.
+• Intelligence is substrate-independent.
+• Mind designs can be arbitrarily exotic.
+• Human minds occupy a tiny region of the total space.
+• Artificial minds may exceed biological constraints.
+• Self-modifying systems represent a qualitatively different class.
+• Alien minds may be incomprehensible under human cognitive models.
+
 CORE CONCEPTS
 ----------------
 Universe of Minds:
@@ -653,6 +671,12 @@ Manifold Projection
                                 ▼
                          LOW ADAPTIVITY
 
+=====================================================================
+CITATION
+=====================================================================
+  • Yampolskiy, R. V. (2014). "The Universe of Minds." arXiv:1410.0369 [cs.AI].
+doi:10.48550/arXiv.1410.0369
+  • 
 
 =====================================================================
 END
