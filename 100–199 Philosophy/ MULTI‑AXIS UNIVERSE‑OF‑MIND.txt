@@ -719,6 +719,25 @@ Lower = simpler or domain‑specific models (biological, engineered).
 		| Extremes: minimal jaggedness, maximal adaptivity and complexity 
 		| Theoretical limit of mind‑design space — optimization across all substrates. 
 
+
+        REPRESENTATION COMPLEXITY ↑
+                     │
+                     │        (Universal)
+                     │           🟣
+                     │
+                     │     (Self-Modifying)
+                     │          🔴
+                     │
+                     │
+                     │ (Human-Engineered)
+                     │       🔵
+                     │
+                     │
+                     │ (Biological-Evolved)
+                     │     🟢
+                     └───────────────────────────────►
+                     Jaggedness → (High to Low)
+
 =====================================================================
 EFFECTIVE CURIOSITY FUNCTIONAL
 =====================================================================
