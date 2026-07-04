@@ -1,0 +1,633 @@
+𝑅𝔅S : A SID–PED–Q Positional Subsystem
+Vector-Graph Model for RDG-Compatible Number Chains
+---
+Geometry → Metric Geometry → Graphs & Networks
+Differential Equations / Dynamical Systems
+Number Theory / Numeral Systems
+
+Summary
+-------------------------------
+Presented here is a minimal, discrete, computable realization of the RDG_BASE_SYSTEM(𝔅, {e_k}, Q) on a finite cyclic graph (ring of N nodes). Numbers are constructed as finite chains of the SID propagator 𝔅 and PED injections e_k, then classified by their behavior under iterated application of the tension-moderating operator Q.  
+
+The model recovers the classical intuition of positional notation while making explicit the underlying ontology: a number is a stabilized relational process rather than a static value. Stabilization corresponds to low-tension fixed points (UNIQUE) or convergent orbits (NUMBER); divergence or oscillation yields BOUNDARY elements.  
+
+Provenby direct simulation, the subsystem exhibits rapid convergence under realistic parameters, behaves as a discrete diffusion process (explicit Euler step on the ring Laplacian), and respects the full RDG triad while remaining strictly simpler than the general theory (finite support, linear operators, scalar nodes, single injection site).
+
+Limitations (as stated) are clearly delineated, preserving the distinction between this positional shadow and full RDG proper.
+
+RDG BASE SYSTEM (𝔅, {e_k}, Q):
+-------------------------------
+Structural, operator-theoretic foundation for a number system. It treats numbers not as static values but as stabilized chains of a relational base operator 𝔅 acting on a digit/evaluation alphabet {e_k}, with a dynamics operator Q enforcing stability ("tension moderation"). This framework shifts the ontology from "value" to "stabilized relational process." 
+
+RDG_BASE^SYSTEM (𝔅, {e_k}, Q) :=
+{
+  BASE:     		𝔅          		// SID structural propagators (generators of closures)
+  DIGITS:  		 {e_k | k ∈ K}  	// PED evaluation alphabet (labels/flux weights)
+  DYNAMICS: 	Q          		// Moderated tension update (projection-reflection + tension moderation)
+
+  INT_RDG(𝔅)   	 := { finite words/chains w = 𝔅^{i1} e_{k1} ... 𝔅^{im} e_{km} }
+  FRAC_RDG(𝔅)	 := { F | F = ⋃_n Q^n (𝔅(F) ⊕ e_k) }   // stabilized under iterated Q
+  NUMBER	:= { bi-infinite sequences ... 𝔅^{-1} e_{a_{-1}} | 𝔅^0 e_{a_0} | 𝔅^1 e_{a_1} ...  s.t. Q stabilizes global tension }
+  UNIQUE       	:= { chains C | Q(C) = C } // fixed points
+  BOUNDARY     	:= { chains C | lim_{n→∞} ||Q^n(C)|| diverges or oscillates unstably 
+}
+
+Core Components
+-------------------------------
+RDG_BASE^SYSTEM 
+𝐵 as  relational base operator, define a digit alphabet as PED evaluations, and let numbers be operator chains stabilized by 𝑄
+
+ BASE      	𝔅 : SID structural propagator
+  DIGITS   		{e_k} : PED evaluation alphabet
+  DYNAMICS  	Q : moderated tension update
+
+𝔅 (Base Operator)
+: A relational/SID (Structure-Identity-Dynamics) propagator. It composes or propagates structure along the "number chain." It is the successor/place-value operator generalized beyond standard positional notation — it relates previous segments to the next.
+
+{e_k} (Digit Alphabet)
+: PED evaluations. These are the "letters" or atomic evaluators. In classical bases they would be {0,1,...,b-1}, but here they are general objects carrying evaluation/meaning (projections, embeddings, or valuations).
+
+Q (Dynamics/Stabilizer)
+: Moderated tension update. This is the key concept — a fixed-point operator that resolves or damps "tension" (inconsistency, divergence, or potential energy) in the chain. Q acts as a contraction or projector toward equilibrium.
+
+  INTEGER   	INT_RDG(𝔅) = finite chains of 𝔅 and e_k
+  FRACTION  	FRAC_RDG(𝔅) = fixed set of F = ⋃ Q(𝔅(F) ⊕ e_k)
+  NUMBER    	= bi-infinite chain of 𝔅^i and e_{a_i} stabilized by Q
+  UNIQUE    	= Q-fixed chains
+  BOUNDARY  	= Q-unstable chains
+
+
+Number Types in the System
+-------------------------------
+Type		Definition						Interpretation	
+INTEGER		INT_RDG(𝔅) = finite chains of 𝔅 and e_k		Terminating forward (or backward) compositions. 
+								Classical non-negative integers when 𝔅 is successor and e_k are 0/1.
+FRACTION	FRAC_RDG(𝔅) = fixed set of F = ⋃ Q(𝔅(F) ⊕ e_k)		Rational-like objects obtained by applying Q to close the action of 𝔅
+								 on previous fractions plus a digit. Iterative fixed-point construction
+								 (like continued fractions or Egyptian fractions, but operator-based).
+NUMBER		Bi-infinite chain … 
+		𝔅^{-1} e_{a_{-1}} 𝔅^0 e_{a_0} 𝔅^1 e_{a_1} 
+		… stabilized by Q					Full reals (or generalized continuum). Both directions extend, Q
+								 enforces global consistency.
+UNIQUE		Q-fixed chains					Canonical/canonical representatives. Minimal or normal-form chains.
+BOUNDARY	Q-unstable chains					Singularities, infinities, gaps, or non-standard extensions (like
+								 infinitesimals, or points at infinity).
+
+Intuitive Picture
+-------------------------------
+A number is a chain:
+
+	… ← 𝔅^{-1} ⊕ e_{a_{-1}} ← 𝔅^0 ⊕ e_{a_0} → 𝔅^1 ⊕ e_{a_1} → …
+
+Q repeatedly updates local tensions (mismatches between neighboring operators/digits) until the whole chain converges to a stable configuration. Stable chains = numbers. Unstable ones live on the "boundary" (the completion or compactification).
+
+This generalizes:
+
+	Standard positional notation 			(𝔅 = ×b, e_k = digits 0..b-1, Q = carry propagation)
+	p-adic numbers 				(different stabilization direction)
+	Continued fractions			(𝔅 related to inversion + integer part)
+	Surreal numbers / combinatorial game values 	(chains of left/right options, with birth-order stabilization)
+
+Formalization Sketch
+-------------------------------
+
+	Let Chain be the free monoid (or groupoid) generated by 𝔅^ℤ and {e_k}.
+	Define a tension functional T: Chain → some space (e.g. a metric or partial order).
+	Then Q is an update map that decreases T locally.
+	A number exists when the orbit under Q converges (Banach-like fixed point in a suitable completion).
+
+	Fraction construction looks like a recursive closure:
+	F_{n+1} = Q(𝔅(F_n) ⊕ e_k) for chosen e_k, taking the union over choices.
+
+𝔅 concrete action
+-------------------------------
+Uunary operator, graph‑like effect.
+
+In the RDG version of a “base,” 𝐵 is:
+
+	Unary operator on a relational state
+
+but its effect is graph‑like (it acts on a network).
+
+So formally:
+
+	𝐵:𝑅→𝑅
+
+Where 𝑅 is a graph/relational structure:
+
+	nodes 	= sites of “value” or “state”
+	edges 	= relations (constraints, couplings, influences)
+
+Concrete actions:
+
+	Scale		: multiply node values by some factor (like ∣𝑧∣).
+	Rotate		: mix components (e.g., 2D or complex‑like rotation in a local subspace).
+	Propagate	: shift or permute values along edges (like a graph shift operator).
+
+In form:
+
+	𝔅(x)_i = α x_i + β ∑_{j ∈ N(i)} x_j
+
+ PED evaluation for digits e_k
+-------------------------------
+Digits 𝑒_𝑘 are local evaluation patterns; decide how a site is “set” or “read” in the relational field.
+
+PED evaluation = how the digit chooses and imposes a local configuration in the relational graph. Tension quantified as “disagreement energy,” Q as “smoothing / reconciliation.”
+
+In form:
+
+	In standard base‑10, digit 7 at position i means “add 7⋅10𝑖”.
+	In RDG, 𝑒7 means “inject a local pattern corresponding to digit 7”.
+
+So:
+
+	𝑒_𝑘: 𝑅→𝑅
+
+Concrete toy meaning:
+
+	Set node value	: 𝑒𝑘(𝑥)𝑖=𝑘 at some designated node i.
+	e_k(x)_i = k
+Or 
+
+	Pattern injection	: set a small neighborhood to a fixed pattern (e.g., a vector, a motif).
+	e_k(x)_j = x_j for j ≠ i
+
+Q Tension quantified 
+-------------------------------
+: Norm, energy, entropy, inconsistency.
+
+In RDG, tension is:
+
+	a scalar or field that measures how far the current relational state is from a “coherent” configuration.
+
+Energy:
+
+	𝑇(𝑥) = ∑(𝑖,𝑗) 𝑤_(𝑖𝑗) (𝑥𝑖−𝑥𝑗)^2
+
+	(graph smoothness / disagreement)
+
+Norm deviation:
+
+	𝑇(𝑥) = ∥𝑥−𝑥∗∥
+
+for some target pattern 𝑥∗.
+
+Inconsistency: count or weight violated constraints.
+
+Then 𝑄 is an update rule that reduces tension:
+
+	𝑄(𝑥) = 𝑥−𝜂∇𝑇(𝑥)
+
+In form:
+
+	Q(x)_i = (1 - λ) x_i + λ 
+	(average of neighbors)
+
+Parameter sensitivity notes
+-------------------------------
+Parameters:
+  λ   : tension moderation / diffusion coefficient
+  α, β : base operator 𝔅 mixing weights
+
+Effects of λ:
+  λ → 0     : slow contraction, long memory of digit injections
+  λ → 1     : fast contraction, aggressive smoothing
+  λ/2       : effective diffusivity κ in heat-equation analogy
+
+Effects of α, β in 𝔅:
+  𝔅(x)_i = α x_i + β x_{i-1} + β x_{i+1}
+
+  α high, β low:
+      - local persistence
+      - weak propagation
+      - digits remain localized
+
+  α low, β high:
+      - strong neighbor influence
+      - digits spread rapidly around ring
+
+  α + 2β:
+      - controls mass conservation vs dissipation
+      - tuning determines whether 𝔅 is conservative or smoothing
+
+Target applications
+-------------------------------
+Most natural targets are:
+
+	Alternative arithmetic / alternative reals
+	Numbers as stable relational states instead of points on ℝ
+	RDG‑reals with different completeness/ordering properties
+
+New arithmetic on relational numbers:  
+	Addition/multiplication as operations on graph
+
+Cognitive / representational modeling:  
+	Digits as local patterns, base as propagation; distributed representations work
+
+Quantum numbers:  
+	Superposed relational states stabilized by Q, with “measurement” as collapse to a low‑tension configuration.
+
+RDG base system (vector/graph toy)
+-------------------------------
+State space 𝑅=𝑅^𝑁 (nodes on a line or ring).
+
+	Base operator 𝐵: unary, graph‑like.
+	Digits 𝑒_𝑘: local injections.
+	Q: tension‑reducing averaging.
+
+Concrete SID structural propagator
+State:
+
+	𝑥 ∈ 𝑅^𝑁
+
+Base operator 𝐵: simple shift+mix on a ring:
+
+	(𝐵𝑥)_𝑖 = 𝛼𝑥_𝑖 + 𝛽𝑥_(𝑖−1) + 𝛽𝑥_(𝑖+1)
+
+with indices mod 𝑁. 
+
+Digit operators 𝑒_𝑘: set one node to 𝑘: 
+Pick a distinguished index 𝑖0,
+
+	(𝑒_𝑘 𝑥)_(𝑖_0)	=	𝑘,
+	(𝑒_𝑘 𝑥)_𝑗	=	𝑥_𝑗 for 𝑗≠𝑖0.
+
+Tension functional 𝑇: disagreement energy:
+
+	𝑇(𝑥) = ∑(𝑖,𝑗) (𝑥𝑖−𝑥𝑗)^2
+
+over edges (𝑖,𝑗) of the ring.
+
+Q (tension moderation): neighbor averaging:
+
+	(𝑄𝑥)_𝑖 = (1−𝜆)𝑥_𝑖+((𝜆/2)(𝑥_(𝑖−1)+𝑥_(𝑖+1)))
+
+This is “projection‑reflection + tension moderation”.
+
+Python instantiation
+---
+import numpy as np
+
+N = 6
+alpha, beta = 0.6, 0.2
+lam = 0.5
+i0 = 0  # digit injection site
+
+def B(x):
+    y = np.zeros_like(x)
+    for i in range(N):
+        y[i] = alpha * x[i] + beta * x[(i-1) % N] + beta * x[(i+1) % N]
+    return y
+
+def e_k(x, k):
+    y = x.copy()
+    y[i0] = k
+    return y
+
+def Q(x):
+    y = np.zeros_like(x)
+    for i in range(N):
+        y[i] = (1 - lam) * x[i] + 0.5 * lam * (x[(i-1) % N] + x[(i+1) % N])
+    return y
+
+def tension(x):
+    return sum((x[i] - x[(i+1) % N])**2 for i in range(N))
+--
+
+Now a number in base 𝐵 is a chain like:
+
+---
+x = np.zeros(N)
+x = e_k(x, 3)      	# digit a_0
+x = B(x)           	# apply base
+x = e_k(x, 1)      	# digit a_1
+x = B(x)
+x = e_k(x, 4)      	# digit a_2
+# ... then stabilize:
+for _ in range(50):
+    x = Q(x)
+---
+
+If 𝑥 converges under repeated 𝑄, that chain is a NUMBER.
+If it’s a fixed point 𝑄(𝑥)=𝑥, it’s UNIQUE.
+If it oscillates/diverges, it’s BOUNDARY.
+
+bash
+---
+import numpy as np
+
+N = 6
+alpha, beta = 0.6, 0.2
+lam = 0.5
+i0 = 0  # digit injection site
+
+def B(x):
+    y = np.zeros_like(x)
+    for i in range(N):
+        y[i] = alpha * x[i] + beta * x[(i-1) % N] + beta * x[(i+1) % N]
+    return y
+
+def e_k(x, k):
+    y = x.copy()
+    y[i0] = k
+    return y
+
+def Q(x):
+    y = np.zeros_like(x)
+    for i in range(N):
+        y[i] = (1 - lam) * x[i] + 0.5 * lam * (x[(i-1) % N] + x[(i+1) % N])
+    return y
+
+def tension(x):
+    return sum((x[i] - x[(i+1) % N])**2 for i in range(N))
+
+# Example chain construction
+x = np.zeros(N)
+print("Initial:", x, "Tension:", tension(x))
+
+x = e_k(x, 3)  # digit a_0
+print("After e_3:", x, "Tension:", tension(x))
+
+x = B(x)       # apply base
+print("After B:", x, "Tension:", tension(x))
+
+x = e_k(x, 1)  # digit a_1
+print("After e_1:", x, "Tension:", tension(x))
+
+x = B(x)
+print("After B:", x, "Tension:", tension(x))
+
+x = e_k(x, 4)  # digit a_2
+print("After e_4:", x, "Tension:", tension(x))
+
+# Stabilize
+tensions = []
+for step in range(100):
+    x = Q(x)
+    t = tension(x)
+    tensions.append(t)
+    if step % 20 == 0:
+        print(f"Step {step}: Tension {t:.6f}")
+
+print("Final x:", x)
+print("Final Tension:", tension(x))
+print("Converged to UNIQUE?", np.allclose(Q(x), x, atol=1e-6))
+EOF
+--
+
+Execution Results (on N=6 ring)
+
+	# After building chain with digits 3 → B → 1 → B → 4
+	Final stabilized x ≈ [0.8933, 0.8933, 0.8933, 0.8933, 0.8933, 0.8933]
+	Final Tension ≈ 6.76e-25 (essentially zero)
+	Converged to UNIQUE? Yes (Q(x) == x within tolerance)
+
+Initial: [0. 0. 0. 0. 0. 0.] Tension: 0.0
+After e_3: [3. 0. 0. 0. 0. 0.] Tension: 18.0
+After B: [1.8 0.6 0. 0. 0. 0.6] Tension: 3.5999999999999988
+After e_1: [1. 0.6 0. 0. 0. 0.6] Tension: 1.04
+After B: [0.84 0.56 0.12 0. 0.12 0.56] Tension: 0.5728000000000001
+After e_4: [4. 0.56 0.12 0. 0.12 0.56] Tension: 24.083199999999998
+Step 0: Tension 4.385200
+Step 20: Tension 0.000037
+Step 40: Tension 0.000000
+Step 60: Tension 0.000000
+Step 80: Tension 0.000000
+Final x: [0.89333333 0.89333333 0.89333333 0.89333333 0.89333333 0.89333333]
+Final Tension: 6.758988339103378e-25
+Converged to UNIQUE? True
+
+Observations:
+
+	Tension spikes on digit injection (local perturbation) but damps rapidly under Q.
+	𝔅 mixes/spreads the perturbation (propagation).
+	The uniform equilibrium reflects the symmetric ring + averaging Q.
+	This behaves like a low-pass filter / diffusion on the graph — perfect for stabilization.
+
+Limitations of the Toy Subsystem:
+-------------------------------
+
+1. Finite N:
+   - Only a ring of N nodes.
+   - No dynamic topology or manifold structure.
+   - RDG proper: graphs → relational manifolds with anisotropic geometry.
+
+2. Scalar nodes:
+   - Each node holds a single real value.
+   - No motifs, closures, or multi-field states.
+   - RDG proper: nodes carry structured motifs/closures.
+
+3. Single injection site:
+   - Digits e_k act at one designated index i0.
+   - No distributed PED patterns.
+   - RDG proper: PED evaluations over neighborhoods/submanifolds.
+
+4. Linear operators:
+   - 𝔅 and Q are linear.
+   - No non-linear tension, thresholds, or domain Hamiltonians.
+   - RDG proper: non-linear Q, SID constraints, PED flux interactions.
+
+5. Simple Laplacian tension:
+   - T(x) = Σ (x_i - x_{i+1})^2 only measures neighbor disagreement.
+   - No higher-order relational tension.
+   - RDG proper: full SID–PED–Q invariant tension fields.
+
+
+Modular Implementation
+-------------------------------
+---
+import numpy as np
+
+class RDG_BaseToy:
+    def __init__(self, N=6, alpha=0.6, beta=0.2, lam=0.5, i0=0):
+        self.N = N
+        self.alpha = alpha
+        self.beta = beta
+        self.lam = lam
+        self.i0 = i0  # injection site (can generalize later)
+    
+    def B(self, x):
+        y = np.zeros_like(x)
+        for i in range(self.N):
+            y[i] = self.alpha * x[i] + self.beta * x[(i-1) % self.N] + self.beta * x[(i+1) % self.N]
+        return y
+    
+    def e_k(self, x, k):
+        y = x.copy()
+        y[self.i0] = float(k)
+        return y
+    
+    def Q(self, x):
+        y = np.zeros_like(x)
+        for i in range(self.N):
+            y[i] = (1 - self.lam) * x[i] + 0.5 * self.lam * (x[(i-1) % self.N] + x[(i+1) % self.N])
+        return y
+    
+    def tension(self, x):
+        return sum((x[i] - x[(i+1) % self.N])**2 for i in range(self.N))
+    
+    def build_chain(self, digits, steps=100, tol=1e-8):
+        x = np.zeros(self.N)
+        history = [x.copy()]
+        tensions = [self.tension(x)]
+        
+        for d in digits:
+            x = self.e_k(x, d)
+            history.append(x.copy())
+            tensions.append(self.tension(x))
+            x = self.B(x)
+            history.append(x.copy())
+            tensions.append(self.tension(x))
+        
+        # Stabilize
+        for step in range(steps):
+            x = self.Q(x)
+            t = self.tension(x)
+            history.append(x.copy())
+            tensions.append(t)
+            if t < tol:
+                break
+        
+        converged = np.allclose(self.Q(x), x, atol=tol)
+        return {
+            'final': x,
+            'tension': t,
+            'converged': converged,
+            'steps': step,
+            'history': history,
+            'tensions': tensions
+        }
+
+# Usage example
+toy = RDG_BaseToy()
+result = toy.build_chain([3, 1, 4])  # digits for a_0, a_1, a_2
+print("Final:", result['final'])
+print("Tension:", result['tension'])
+print("UNIQUE?", result['converged'])
+---
+
+Discrete 1D Chain Graph
+-------------------------------
+Simple case: 
+
+	infinite line graph (like integer positions), states are scalars.
+
+Python model of the dynamics:
+---
+import numpy as np
+
+class RDG_Number:
+    def __init__(self, length=21, center=10, alpha=1.0, beta=0.5, lambda_=0.3):
+        self.alpha = alpha
+        self.beta = beta
+        self.lambda_ = lambda_  # for Q smoothing
+        self.state = np.zeros(length)
+        self.center = center
+    
+    def apply_B(self):
+        """𝔅 propagation: self + neighbor average"""
+        new_state = self.alpha * self.state.copy()
+        new_state[1:] += self.beta * self.state[:-1]
+        new_state[:-1] += self.beta * self.state[1:]
+        self.state = new_state / (self.alpha + 2*self.beta)  # normalize roughly
+    
+    def apply_e_k(self, pos, k, strength=1.0):
+        """PED digit injection"""
+        self.state[pos] += strength * k   # simple value injection
+    
+    def tension(self):
+        """Graph smoothness energy"""
+        diffs = np.diff(self.state)
+        return np.sum(diffs**2)
+    
+    def apply_Q(self, steps=5):
+        """Moderated tension update (diffusion/smoothing)"""
+        for _ in range(steps):
+            avg = np.zeros_like(self.state)
+            avg[1:] += self.state[:-1]
+            avg[:-1] += self.state[1:]
+            avg /= 2
+            self.state = (1 - self.lambda_) * self.state + self.lambda_ * avg
+
+# Example: build a simple "integer" then stabilize
+num = RDG_Number()
+for i in range(5):
+    num.apply_e_k(num.center + i, k=1)  # inject pattern
+    num.apply_B()
+
+print("Tension before Q:", num.tension())
+num.apply_Q(steps=20)
+print("Tension after Q:", num.tension())
+print("Stabilized state snippet:", num.state[num.center-5:num.center+6])
+---
+
+Derivation: ring Laplacian → discrete diffusion/heat
+-------------------------------
+Setup:
+  N nodes on a ring, state x ∈ ℝ^N
+  Q(x)_i = (1 - λ) x_i + (λ/2)(x_{i-1} + x_{i+1})
+
+Rewrite Q as:
+  Q(x)_i = x_i + (λ/2)(x_{i-1} - 2 x_i + x_{i+1})
+
+Define discrete Laplacian Δ on the ring:
+  (Δx)_i := x_{i-1} - 2 x_i + x_{i+1}
+
+Then:
+  Q(x)_i = x_i + (λ/2)(Δx)_i
+
+Iterating Q:
+  x^{(n+1)}_i = x^{(n)}_i + (λ/2)(Δx^{(n)})_i
+
+This is a standard explicit Euler step for the discrete heat equation:
+  ∂_t x_i ≈ (x^{(n+1)}_i - x^{(n)}_i)/Δt = (λ/(2Δt))(Δx^{(n)})_i
+
+Choosing Δt = 1 gives:
+  ∂_t x_i = κ (Δx)_i  with κ = λ/2
+
+So:
+  - Ring Laplacian tension T(x) = Σ_i (x_i - x_{i+1})^2
+  - Q as above performs gradient descent on T
+  - In the limit of small λ and many steps, Q approximates discrete diffusion/heat flow.
+
+
+Extensions to Explore
+-------------------------------
+Variable Injection Sites	: Cycle i0 with position to mimic place-value propagation.
+Bi-infinite Approximation	: Use a larger line (with damping at ends) or multiple rings.
+Fraction Construction		: Iteratively build F_{n+1} = Q(𝔅(F_n) ⊕ e_k) and collect stabilized attractors.
+Boundary Detection			:  Add divergence check (e.g., if tension explodes or oscillates).
+Visualizatio			: Python
+
+		import matplotlib.pyplot as plt
+		# After build_chain
+		plt.plot(result['tensions'])
+		plt.yscale('log')
+		plt.ylabel('Tension')
+		plt.xlabel('Step')
+		plt.title('Tension Damping under Q')
+
+Physics Link			: Map node value from stabilized tensions.
+
+Cross-reference
+-------------------------------
+MFE and Longitudinal Engine
+
+This subsystem acts as a "closure generator":
+    - produces stabilized relational configurations x*
+    - suitable as seeds for higher RDG engines
+
+MFE Hamiltonians:
+    - treat x* as initial closure
+    - H_MFE[x*] evaluates energy over relational manifold
+    - x* provides low-tension starting conditions
+
+Longitudinal Engine:
+    - RDG_BASE_SYSTEM generates stabilized number-chains
+    - these chains serve as longitudinal initial states
+    - subsequent evolution uses full Q/H dynamics
+
+Summary:
+    Stabilized states from this subsystem integrate cleanly
+    into MFE Hamiltonians and Longitudinal Engine prototypes.
+
