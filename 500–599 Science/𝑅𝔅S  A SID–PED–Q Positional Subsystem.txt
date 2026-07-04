@@ -21,15 +21,15 @@ Structural, operator-theoretic foundation for a number system. It treats numbers
 
 RDG_BASE^SYSTEM (𝔅, {e_k}, Q) :=
 {
-  BASE:     		𝔅          		// SID structural propagators (generators of closures)
-  DIGITS:  		 {e_k | k ∈ K}  	// PED evaluation alphabet (labels/flux weights)
+  BASE:     	𝔅          		// SID structural propagators (generators of closures)
+  DIGITS:  		{e_k | k ∈ K}  	// PED evaluation alphabet (labels/flux weights)
   DYNAMICS: 	Q          		// Moderated tension update (projection-reflection + tension moderation)
 
   INT_RDG(𝔅)   	 := { finite words/chains w = 𝔅^{i1} e_{k1} ... 𝔅^{im} e_{km} }
   FRAC_RDG(𝔅)	 := { F | F = ⋃_n Q^n (𝔅(F) ⊕ e_k) }   // stabilized under iterated Q
-  NUMBER	:= { bi-infinite sequences ... 𝔅^{-1} e_{a_{-1}} | 𝔅^0 e_{a_0} | 𝔅^1 e_{a_1} ...  s.t. Q stabilizes global tension }
-  UNIQUE       	:= { chains C | Q(C) = C } // fixed points
-  BOUNDARY     	:= { chains C | lim_{n→∞} ||Q^n(C)|| diverges or oscillates unstably 
+  NUMBER		 := { bi-infinite sequences ... 𝔅^{-1} e_{a_{-1}} | 𝔅^0 e_{a_0} | 𝔅^1 e_{a_1} ...  s.t. Q stabilizes global tension }
+  UNIQUE       	 := { chains C | Q(C) = C } // fixed points
+  BOUNDARY     	 := { chains C | lim_{n→∞} ||Q^n(C)|| diverges or oscillates unstably 
 }
 
 Core Components
@@ -37,7 +37,7 @@ Core Components
 RDG_BASE^SYSTEM 
 𝐵 as  relational base operator, define a digit alphabet as PED evaluations, and let numbers be operator chains stabilized by 𝑄
 
- BASE      	𝔅 : SID structural propagator
+  BASE      	𝔅 : SID structural propagator
   DIGITS   		{e_k} : PED evaluation alphabet
   DYNAMICS  	Q : moderated tension update
 
@@ -56,22 +56,21 @@ Q (Dynamics/Stabilizer)
   UNIQUE    	= Q-fixed chains
   BOUNDARY  	= Q-unstable chains
 
-
 Number Types in the System
 -------------------------------
-Type		Definition						Interpretation	
-INTEGER		INT_RDG(𝔅) = finite chains of 𝔅 and e_k		Terminating forward (or backward) compositions. 
-								Classical non-negative integers when 𝔅 is successor and e_k are 0/1.
-FRACTION	FRAC_RDG(𝔅) = fixed set of F = ⋃ Q(𝔅(F) ⊕ e_k)		Rational-like objects obtained by applying Q to close the action of 𝔅
-								 on previous fractions plus a digit. Iterative fixed-point construction
-								 (like continued fractions or Egyptian fractions, but operator-based).
+Type		Definition										 Interpretation	
+INTEGER		INT_RDG(𝔅) = finite chains of 𝔅 and e_k		 Terminating forward (or backward) compositions. 
+															 Classical non-negative integers when 𝔅 is successor and e_k are 0/1.
+FRACTION	FRAC_RDG(𝔅) = fixed set of F = ⋃ Q(𝔅(F) ⊕ e_k) Rational-like objects obtained by applying Q to close the action of 𝔅
+								 							 on previous fractions plus a digit. Iterative fixed-point construction
+								 							 (like continued fractions or Egyptian fractions, but operator-based).
 NUMBER		Bi-infinite chain … 
-		𝔅^{-1} e_{a_{-1}} 𝔅^0 e_{a_0} 𝔅^1 e_{a_1} 
-		… stabilized by Q					Full reals (or generalized continuum). Both directions extend, Q
-								 enforces global consistency.
-UNIQUE		Q-fixed chains					Canonical/canonical representatives. Minimal or normal-form chains.
-BOUNDARY	Q-unstable chains					Singularities, infinities, gaps, or non-standard extensions (like
-								 infinitesimals, or points at infinity).
+			𝔅^{-1} e_{a_{-1}} 𝔅^0 e_{a_0} 𝔅^1 e_{a_1} 
+			… stabilized by Q								Full reals (or generalized continuum). Both directions extend, Q
+								 							enforces global consistency.
+UNIQUE		Q-fixed chains									Canonical/canonical representatives. Minimal or normal-form chains.
+BOUNDARY	Q-unstable chains								Singularities, infinities, gaps, or non-standard extensions (like
+								 							infinitesimals, or points at infinity).
 
 Intuitive Picture
 -------------------------------
@@ -83,9 +82,9 @@ Q repeatedly updates local tensions (mismatches between neighboring operators/di
 
 This generalizes:
 
-	Standard positional notation 			(𝔅 = ×b, e_k = digits 0..b-1, Q = carry propagation)
-	p-adic numbers 				(different stabilization direction)
-	Continued fractions			(𝔅 related to inversion + integer part)
+	Standard positional notation 					(𝔅 = ×b, e_k = digits 0..b-1, Q = carry propagation)
+	p-adic numbers 									(different stabilization direction)
+	Continued fractions								(𝔅 related to inversion + integer part)
 	Surreal numbers / combinatorial game values 	(chains of left/right options, with birth-order stabilization)
 
 Formalization Sketch
