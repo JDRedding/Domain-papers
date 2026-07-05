@@ -16,6 +16,12 @@ specification makes that structure explicit using relational
 geometry with three independent channels instead of hidden 
 differential geometry.
 
+Objects that require a notion of infinitesimal structure, 
+lengths, angles, connections, curvature, or smooth 
+trivializations are not defined unless add corresponding 
+channels. Statements about tangent/normal bundles or metric-
+dependent invariants will be informal or require extra structure.
+
 Core Components
 
 Carrier (C₄):
