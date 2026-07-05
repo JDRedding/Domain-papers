@@ -62,7 +62,8 @@ Anything that requires:
     smoothness
     differential forms
 
-is not defined unless add the corresponding channel.
+is not defined unless add the corresponding channel. Any statement 
+involving them is informal unless the required channel is present.
 
 Core Relational Components
 
