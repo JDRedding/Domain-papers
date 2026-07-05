@@ -705,9 +705,9 @@ def invariants(p,q,k):
 =====================================================================
 END OF FUNCTIONALS AND VARIABLES
 =====================================================================
-CODE
+CODE SKETCH 
 =====================================================================
-PYTHON
+PYTHON (tentative)
 ---
 def embed_points(p,q,k, n=200, radius1=1.0, radius2=1.0):
     th1 = np.linspace(0, 2*np.pi, n)
