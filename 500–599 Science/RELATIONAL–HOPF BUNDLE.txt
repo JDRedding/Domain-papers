@@ -685,6 +685,12 @@ Framework Layers (SID/PED/Q)
 | Q 			| Quantitative/Invariant Content 
 | Q_(p,q,k), T_(p,q,k), L_(p,q,k), (p, q, k) tuple 
 
+Special Cases
+
+- Minimal Hopf		: p=1, q=1, k=1 → Q=1, T=1, L=1
+- Prime bundle		: Q_(p,q,k) = 1 (irreducible)
+- Decomposable bundle	: Q_(p,q,k) > 1 (decomposes into Q identical sub-bundles)
+
 =====================================================================
 END OF FILE
 =====================================================================
