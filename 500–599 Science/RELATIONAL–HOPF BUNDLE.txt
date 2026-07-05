@@ -596,5 +596,43 @@ COMPACT VIEW
 =====================================================================
 END OF RDG–HOPF ASCII DIAGRAM
 =====================================================================
+FUNCTIONALS AND VARIABLES
+=====================================================================
+Functions / Mappings
 
+| Name 		  				                | Definition 							
+| Domain → Codomain 
+|------		  				                |------------	
+| C₄ 		  				                | Carrier mapping for 4D closed relational manifold 		
+| S¹ × S¹ → M₄ 
 
+| χ_base 	  				                | Base relational channel (S²-like projection) 		
+| S¹ × S¹ → Z; χ_base(θ₁, θ₂) = pθ₁ + rθ₂ 
+
+| χ_fiber / χ_fib 				            | Fiber relational channel (S¹-like cycle) 			
+| S¹ × S¹ → Z; χ_fib(θ₁, θ₂) = qθ₂ 
+
+| χ_link 	  				                | Linking relational channel (Hopf coupling) 			
+| S¹ × S¹ → Z; χ_link(θ₁, θ₂) = k(θ₁ + θ₂) 
+
+| Γ_(p,q,k) / Γ_Hopf 	  			        | Discrete Hopf generator enforcing fiber closure and linking 
+| (Σ_base Σ_fib Σ_link)^q 
+
+| Σ_base 	  				                | Local relational update operator on base channel 		
+| Acts on χ_base 
+
+| Σ_fib		  				                | Local relational update operator on fiber channel 		
+| Acts on χ_fib 
+
+| Σ_link	  				                | Local relational update operator on linking channel 	
+| Acts on χ_link 
+
+| X(θ₁, θ₂)	  				                | Carrier embedding (Hopf coordinate reinterpretation) 	
+| (R cos(χ_base), R sin(χ_base), r cos(χ_fib), r sin(χ_fib)) 
+
+| Hopf map analog 				            | Classical Hopf map reinterpreted in RDG 			
+| χ_link = χ_base + χ_fiber 
+
+=====================================================================
+END OF FILE
+=====================================================================
