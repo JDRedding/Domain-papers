@@ -5,8 +5,52 @@ bundles, orthogonality, smoothness, metric geometry). The
 Relational Hopf bundle exposes everything explicitly (channels, 
 linking, closure, discrete generators, tension).
 
+Summary: RELATIONAL–HOPF BUNDLE
+This document specifies a Relational Hopf Bundle (RDG_Hopf), which
+is a discrete, relational interpretation of the classical Hopf 
+fibration from topology.
+
+The classical Hopf fibration (S¹ ↪ S³ → S²) describes how circles 
+fiber over a sphere in 4D space, with nontrivial linking. This 
+specification makes that structure explicit using relational 
+geometry with three independent channels instead of hidden 
+differential geometry.
+
+Core Components
+
+Carrier (C₄):
+- A closed 4D relational manifold parameterized by two angles (θ₁, θ₂)
+- Plays the role of S³ in classical topology
+
+*hree Relational Channels:
+- χ_base = pθ₁ + rθ₂ — base directions (S²-like projection)
+- χ_fib = qθ₂ — fiber cycles (S¹-like circles)
+- χ_link = k(θ₁ + θ₂) — encodes Hopf linking between fibers
+
+Discrete Generator (Γ_(p,q,k)):
+- Enforces fiber closure, base consistency, and nontrivial linking
+- Updates all channels in a coordinated, discrete manner
+
+Key Invariants
+
+- Q_(p,q,k) = gcd(p,q,k)
+    — closure charge (how many times channels close together)
+- T_(p,q,k) = |pqk| / Q 
+    — effective closure tension
+- L_(p,q,k) = pk 
+    — RDG linking invariant (analog of classical Hopf invariant)
+
+Organization
+The document also maps the bundle to a three-layer framework (SID/PED/Q):
+- SID: structural identity (what it is)
+- PED: process/evolution (how it evolves)
+- Q: quantitative invariants (what it measures)
+
+This specification makes all topological structure explicit and 
+discrete, avoiding hidden geometric objects.
 
 OBJECT:
+
     A 4D closed relational carrier with 3 internal channels:
 
         - Base channel(s)      (S^2-like relational directions)
