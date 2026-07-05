@@ -662,13 +662,13 @@ Parameters / Integer Winding Coefficients
 
 Structural Components (Bundle Object)
 
-| Name 			| Type 
+| Name 			            | Type 
 | Description 
-|------			|------
-| H_(p,q,k) 		| Bundle object 
+|------			            |------
+| H_(p,q,k) 		        | Bundle object 
 | Complete RDG–Hopf bundle: (C₄, {χ_base, χ_fib, χ_link}, Γ_(p,q,k), Q_(p,q,k), T_(p,q,k), L_(p,q,k)) 
 
-| {χ_base, χ_fib, χ_link} | Channel set 
+| {χ_base, χ_fib, χ_link}     | Channel set 
 | Three independent relational channels 
 
 =====================================================================
