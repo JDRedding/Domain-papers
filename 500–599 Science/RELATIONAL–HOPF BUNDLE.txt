@@ -45,7 +45,7 @@ Carrier (C₄):
 - A closed 4D relational manifold parameterized by two angles (θ₁, θ₂)
 - Plays the role of S³ in classical topology
 
-*hree Relational Channels:
+Three Relational Channels:
 - χ_base = pθ₁ + rθ₂ — base directions (S²-like projection)
 - χ_fib = qθ₂ — fiber cycles (S¹-like circles)
 - χ_link = k(θ₁ + θ₂) — encodes Hopf linking between fibers
