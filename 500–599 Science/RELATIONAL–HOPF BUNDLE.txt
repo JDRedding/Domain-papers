@@ -16,6 +16,8 @@ specification makes that structure explicit using relational
 geometry with three independent channels instead of hidden 
 differential geometry.
 
+Hidden channels (explicit)
+
 Objects that require a notion of infinitesimal structure, 
 lengths, angles, connections, curvature, or smooth 
 trivializations are not defined unless add corresponding 
