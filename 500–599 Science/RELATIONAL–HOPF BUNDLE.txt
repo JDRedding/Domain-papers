@@ -647,6 +647,19 @@ Invariants / Scalar Variables
 | L_(p,q,k) / L_Hopf	                                    | pk 
 | RDG Hopf linking invariant (analog of classical Hopf invariant) 
 
+Parameters / Integer Winding Coefficients
+
+| Name 	| Type 	| Role 
+|------	|------	|------
+| p 	| ℤ 	| Base channel winding coefficient (χ_base multiplier on θ₁) 
+| q 	| ℤ 	| Fiber channel winding coefficient (χ_fib multiplier on θ₂) 
+| k 	| ℤ 	| Linking channel winding coefficient (χ_link multiplier) 
+| r 	| ℤ 	| Secondary base channel coefficient (χ_base multiplier on θ₂) 
+| θ₁ 	| S¹ 	| First angle parameter (domain closure: θ₁ + 1 = θ₁ mod 1) 
+| θ₂ 	| S¹ 	| Second angle parameter (domain closure: θ₂ + 1 = θ₂ mod 1) 
+| R 	| ℝ⁺ 	| Radius scaling for base channel embedding 
+| r 	| ℝ⁺ 	| Radius scaling for fiber channel embedding 
+
 =====================================================================
 END OF FILE
 =====================================================================
