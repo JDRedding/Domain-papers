@@ -1,5 +1,10 @@
 Ξ_QG : GLOBAL QUANTUM-GRAVITY RELATIONAL EVOLUTION OPERATOR
 ============================================================
+Abstract: Ξ_QG is the global unitary relational evolution
+operator on the enlarged Hilbert space H_QG. Bogoliubov mode
+mixing appears only as its exterior shadow.
+
+Summary:
 This specification introduces Ξ_QG, a global, unitary, relational
 quantum‑gravity evolution operator acting on the full Hilbert space
 H_QG = ⊕_Γ (H_matter ⊗ |Γ⟩). The construction provides a complete
@@ -243,3 +248,5 @@ recovering the lost relational degrees of freedom
 ============================================================
 END OF SPECIFICATION
 ============================================================
+v0.1 — 2026-07-05 — Initial operator specification with
+Bogoliubov shadow clarification.
