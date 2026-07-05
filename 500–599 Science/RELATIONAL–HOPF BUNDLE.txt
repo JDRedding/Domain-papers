@@ -16,6 +16,17 @@ specification makes that structure explicit using relational
 geometry with three independent channels instead of hidden 
 differential geometry.
 
+Can talk about:
+
+    relational adjacency
+    closure charge
+    winding structure
+    discrete generators
+    channel tension
+    linking invariants
+
+These are purely relational and require no infinitesimals.
+
 Hidden channels (explicit)
 
 Objects that require a notion of infinitesimal structure, 
@@ -41,17 +52,7 @@ Every smooth or metric‑dependent concept corresponds to a channel:
     tangent‑bundle channel 
         — carries directional derivatives and velocity data
 
-Can talk about:
-
-    relational adjacency
-    closure charge
-    winding structure
-    discrete generators
-    channel tension
-    linking invariants
-
-These are purely relational and require no infinitesimals.
-But anything that requires:
+Anything that requires:
 
     limits
     derivatives
