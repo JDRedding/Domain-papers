@@ -671,6 +671,20 @@ Structural Components (Bundle Object)
 | {χ_base, χ_fib, χ_link}     | Channel set 
 | Three independent relational channels 
 
+Framework Layers (SID/PED/Q)
+
+| Layer 		| Captures 
+| Content 
+|-------		|----------
+| SID 			| Structural Identity 
+| C₄, channels, generator, invariants, type label 
+
+| PED 			| Process/Evolution/Dynamics 
+| Discrete evolution via Γ_(p,q,k), channel updates, phase evolution
+
+| Q 			| Quantitative/Invariant Content 
+| Q_(p,q,k), T_(p,q,k), L_(p,q,k), (p, q, k) tuple 
+
 =====================================================================
 END OF FILE
 =====================================================================
