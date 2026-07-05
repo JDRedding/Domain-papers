@@ -691,6 +691,13 @@ Special Cases
 - Prime bundle		: Q_(p,q,k) = 1 (irreducible)
 - Decomposable bundle	: Q_(p,q,k) > 1 (decomposes into Q identical sub-bundles)
 
+=====================================================================
+END OF FUNCTIONALS AND VARIABLES
+=====================================================================
+CODE SKETCH 
+=====================================================================
+PYTHON (tentative)
+---
 # name=rdg_hopf_example.py
 import math
 import numpy as np
@@ -702,13 +709,6 @@ def invariants(p,q,k):
     L = p*k
     return Q, T, L
 
-=====================================================================
-END OF FUNCTIONALS AND VARIABLES
-=====================================================================
-CODE SKETCH 
-=====================================================================
-PYTHON (tentative)
----
 def embed_points(p,q,k, n=200, radius1=1.0, radius2=1.0):
     th1 = np.linspace(0, 2*np.pi, n)
     th2 = np.linspace(0, 2*np.pi, n)
