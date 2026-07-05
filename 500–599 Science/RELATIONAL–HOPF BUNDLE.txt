@@ -22,7 +22,24 @@ trivializations are not defined unless add corresponding
 channels. Statements about tangent/normal bundles or metric-
 dependent invariants will be informal or require extra structure.
 
-Core Components
+Every smooth or metric‑dependent concept corresponds to a channel:
+
+    metric channel 
+        — carries lengths, angles, inner products
+    connection channel 
+        — carries parallel transport, covariant differentiation
+    infinitesimal channel 
+        — carries first‑order variation data
+    curvature channel 
+        — carries holonomy, torsion, sectional curvature
+    smooth trivialization channel 
+        — carries atlas‑like coherence data
+    normal‑bundle channel 
+        — carries orthogonal complement structure
+    tangent‑bundle channel 
+        — carries directional derivatives and velocity data
+
+Core Relational Components
 
 Carrier (C₄):
 - A closed 4D relational manifold parameterized by two angles (θ₁, θ₂)
