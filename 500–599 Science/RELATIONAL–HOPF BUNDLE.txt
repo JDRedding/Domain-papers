@@ -41,6 +41,28 @@ Every smooth or metric‑dependent concept corresponds to a channel:
     tangent‑bundle channel 
         — carries directional derivatives and velocity data
 
+Can talk about:
+
+    relational adjacency
+    closure charge
+    winding structure
+    discrete generators
+    channel tension
+    linking invariants
+
+These are purely relational and require no infinitesimals.
+But anything that requires:
+
+    limits
+    derivatives
+    orthogonality
+    geodesics
+    curvature
+    smoothness
+    differential forms
+
+is not defined unless add the corresponding channel.
+
 Core Relational Components
 
 Carrier (C₄):
