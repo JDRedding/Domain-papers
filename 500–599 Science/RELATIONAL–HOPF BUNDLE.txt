@@ -633,6 +633,20 @@ Functions / Mappings
 | Hopf map analog 				            | Classical Hopf map reinterpreted in RDG 			
 | χ_link = χ_base + χ_fiber 
 
+Invariants / Scalar Variables
+
+| Name 			                                            | Definition 
+| Interpretation 	                                        |
+|------			                                            |------------
+| Q_(p,q,k) / Q_Hopf	                                    | gcd(p, q, k) 
+| Closure charge: how many times channels close together 
+
+| T_(p,q,k) / T_Hopf	                                    | \|pqk\| / Q_(p,q,k) 
+| Effective closure tension per irreducible Hopf cycle 
+
+| L_(p,q,k) / L_Hopf	                                    | pk 
+| RDG Hopf linking invariant (analog of classical Hopf invariant) 
+
 =====================================================================
 END OF FILE
 =====================================================================
