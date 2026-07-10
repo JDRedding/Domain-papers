@@ -1,0 +1,118 @@
+Token Emergent Relational Mapping Specification
+(TERMS)
+
+STANDARD SPECIFICATION (GLYPH VERSION)
+
+1. TOKEN LAYER
+   1.1 Thing-token: ⧈
+       Structure: (t1, t2, t3)
+       Domain: 𝒯
+       Definition: A relational token representing an instance of a thing-type.
+       Constraints:
+         - ⧈ is not a thing-type
+         - ⧈ ∉ ℛ
+         - ⧈ ≠ ⧉
+
+   1.2 Representation-token: ⧉
+       Structure: (r1, r2, r3)
+       Domain: ℛ
+       Definition: A relational token representing an instance of a representation-type.
+       Constraints:
+         - ⧉ is not a representation-type
+         - ⧉ ∉ 𝒯
+         - ⧉ ≠ ⧈
+
+   1.3 Domain Separation
+       𝒯 ∩ ℛ = ∅
+       Tokens never cross domains.
+
+2. MAPPING LAYER
+   2.1 Forward Mapping: ↦
+       Relation: M→ ⊆ 𝒯 × ℛ
+       Form: ⧈ ↦ ⧉
+       Semantics:
+         - ⧈ displays as ⧉
+         - Non-transformational
+         - Non-identical
+
+   2.2 Reverse Mapping: ↤
+       Relation: M← ⊆ ℛ × 𝒯
+       Form: ⧉ ↤ ⧈
+       Semantics:
+         - ⧉ interprets as ⧈
+         - Non-transformational
+         - Non-identical
+
+   2.3 Mapping Constraints
+       - ⧈ ≠ ⧉
+       - ⧈ ↦ ⧉ does not imply ⧉ ↤ ⧈
+       - Tuples must be well-formed
+       - Multiplicity allowed
+
+3. MUTUAL MAPPING LAYER
+   3.1 Mutual Mapping: ↮
+       Definition: M↮ = M→ ∩ M←
+       Form: ⧈ ↮ ⧉
+       Semantics:
+         - Forward and reverse mappings both hold
+         - ⧈ and ⧉ remain distinct
+         - No collapse of domains
+
+4. COMPOSITION LAYER
+   4.1 Forward Composition
+       If: ⧈1 ↦ ⧉1 and ⧉1 ↤ ⧈2
+       Then: ⧈1 ↦ ⧈2
+
+   4.2 Reverse Composition
+       If: ⧉1 ↤ ⧈1 and ⧈1 ↦ ⧉2
+       Then: ⧉1 ↦ ⧉2
+
+   4.3 Mutual Mapping Closure
+       If: ⧈ ↦ ⧉ and ⧉ ↤ ⧈
+       Then: ⧈ ↮ ⧉
+
+   4.4 Associativity
+       (⧈ ↦ ⧉) ∘ (⧉ ↤ ⧈) = ⧈ ↦ ⧈
+
+   4.5 No Identity Morphisms
+       No token e exists such that:
+         e ↦ x and x ↤ e for all x
+
+   4.6 No Self-Mapping
+       ⧈ ↮ ⧈ is forbidden
+       ⧉ ↮ ⧉ is forbidden
+
+5. CATEGORY LAYER
+   5.1 Objects
+       Ob(𝒞) = 𝒯 ∪ ℛ
+
+   5.2 Morphisms
+       Hom(⧈,⧉) = {⧈ ↦ ⧉}
+       Hom(⧉,⧈) = {⧉ ↤ ⧈}
+       Mutual: {⧈ ↮ ⧉}
+
+   5.3 Composition
+       Defined by Section 4.
+
+   5.4 Category Type
+       - Bipartite relational category
+       - Non-unital
+       - Mutual mappings are self-inverse
+
+6. HIERARCHY LAYER
+   6.1 Layer Ordering
+       L1: ⧈, ⧉
+       L2: ↦, ↤
+       L3: ↮
+       L4: Composition rules
+       L5: Category structure
+       L6: Meta-hierarchy
+
+   6.2 Meta-Structure
+       Higher-order constructs (types, classes, functors) may be added later.
+       Core remains token-level and non-collapsing.
+
+---
+000.4 Systems Theory / General Knowledge Structures
+003.3 Information Structures  
+004.019 Theoretical Foundations of Computing  
