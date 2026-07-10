@@ -1,0 +1,83 @@
+CONSTITUTIONAL DEMOCRATIC REPUBLIC 
+
+A tri‑mode governance manifold with orthogonal operators:
+C‑mode (Constraint), L‑mode (Legitimacy), M‑mode (Mechanism)
+
+C‑MODE : CONSTITUTIONAL CONSTRAINT  (SID‑Structure)
+------------------------------------------------------------
+S : Enumerated Rights
+I : Limited Institutions
+D : Procedural Safeguards
+
+C‑mode defines the allowable state‑space and boundary conditions.
+It prevents runaway majority dynamics by fixing the manifold geometry.
+
+RDG Mapping:
+  SID.Structure   = Rights as S‑tokens
+  SID.Interaction = Institutional limits as I‑tokens
+  SID.Dynamics    = Procedural safeguards as D‑tokens
+
+Formal:
+  C = SID(S, I, D)
+
+L‑MODE : DEMOCRATIC LEGITIMACY  (PED‑Evaluation)
+------------------------------------------------------------
+p : Population Input
+P : Evaluation Signal (popular sovereignty)
+E : Legitimacy Operator
+
+L‑mode supplies the evaluation signal grounding authority in the
+population manifold. Authority originates from the people.
+
+RDG Mapping:
+  PED.Power      = p → P (popular input)
+  PED.Evaluation = legitimacy operator E
+  PED.Dynamics   = update of authority signals
+
+Formal:
+  L = PED(p → P, E)
+
+M‑MODE : REPUBLICAN MECHANISM  (SID‑Interaction + Q‑Moderation)
+------------------------------------------------------------
+R : Representative Channels
+Lw: Law as Update Rule
+Q□: Moderated Transition Operator
+
+M‑mode is the moderated transition operator acting through
+representative channels. Governance is mediated, not direct.
+
+RDG Mapping:
+  SID.Interaction = Representatives R
+  SID.Dynamics    = Law Lw
+  Q‑Moderation    = Q□ (institutional moderation of transitions)
+
+Formal:
+  M = SID(R, Lw) ⊗ Q□
+
+SYNTHESIS
+------------------------------------------------------------
+Governance Manifold G:
+
+  G = C ⊗ L ⊗ M
+
+Expanded:
+
+  G = SID(S, I, D)
+      ⊗ PED(p → P, E)
+      ⊗ [ SID(R, Lw) ⊗ Q□ ]
+
+Interpretation:
+  - C‑mode fixes the geometry (constraints)
+  - L‑mode supplies the evaluation signal (legitimacy)
+  - M‑mode executes moderated transitions (mechanism)
+
+SUMMARY
+------------------------------------------------------------
+A constitutional democratic republic is:
+  C‑mode in constraint,
+  L‑mode in legitimacy,
+  M‑mode in mechanism
+a tri‑mode governance manifold correcting the instability
+of pure democracy by structuring authority, moderating transitions,
+and grounding evaluation in the population.
+
