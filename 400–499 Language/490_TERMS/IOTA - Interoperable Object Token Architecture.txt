@@ -483,7 +483,6 @@ Where:
      TERMS represents resulting states
      JOT/SPOT govern justification and placement
 
-
 ------------------------------------------------------------
 A10. DOT INVOCATION MAPPING
 ------------------------------------------------------------
@@ -546,7 +545,6 @@ DOT_InvocationMapping = {
         MissingResidualDeclaration
     }
 }
-
 
 ------------------------------------------------------------
 A11. ROLE OF DOT IN THE ECOSYSTEM
@@ -880,6 +878,136 @@ Residual Summary
 Residuals preserve context and unresolved assumptions but
 remain strictly non-governing, non-representational, and
 non-interfering with TERMS successor-state logic.
+
+============================================================
+APPENDIX D — FAILURE-MODE SEMANTICS (IOTA BRIDGE)
+============================================================
+
+FailureCriteria (recap)
+---
+    • InvocationOutsideAdmissibilityDomain
+    • CollapseOfOperatorIdentity
+    • ContainmentClaim
+    • UnjustifiedTransition
+    • MissingResidualDeclaration
+
+FailureHandling(IOTA, O_ext, DO)
+---
+When any FailureCriteria is triggered, IOTA must:
+
+1. Structured Failure Object
+---
+    • Produce FailureRecord = {
+        FailureType,
+        InvocationContext,
+        AffectedStates,
+        ResidualStatus,
+        ProvenanceLink
+      }
+    • FailureRecord is stored under GAF and IOTA provenance.
+
+2. GAF Recording
+---
+    • GAF records the failure in the invocation context:
+        – GAF.FailureLog += FailureRecord
+    • GAF may:
+        – block further invocations in the same domain,
+        – require explicit remediation or revision.
+
+3. TERMS Behavior
+---
+    • TERMS receives no valid successor state S_j from the
+      failed invocation.
+    • TERMS must:
+        – treat the transition as non-executed,
+        – avoid partial adoption of S_j,
+        – avoid silent fallback to heuristic rules.
+
+4. SPOT and JOT Behavior
+---
+    • SPOT receives no placement for failed transitions.
+    • JOT receives a failure justification record instead of
+      a representational justification for S_j.
+
+5. Recovery and Revision
+---
+    • Recovery requires:
+        – explicit revision of assumptions,
+        – explicit declaration of residuals,
+        – re-invocation under corrected conditions.
+    • IOTA must not auto-retry without explicit GAF approval.
+
+Failure Summary
+---
+Failure is:
+    • explicit,
+    • recorded,
+    • non-silent,
+    • non-propagating into TERMS representation.
+
+No successor state, placement, or justification is produced
+from a failed invocation.
+
+============================================================
+APPENDIX E — RDG-MODE MAPPING (DO & IOTA INTO SID/PED)
+============================================================
+
+RDG Context
+---
+RDG(SID/PED) and RDGMFEQ remain independent governance and
+computational substrates. IOTA, DO, and external operators
+must map into RDG without contaminating its governance.
+
+SID Mapping (Structure & Interaction)
+---
+    • SID.Structure:
+
+        – records the existence of external operators
+          and Data Objects as external regimes.
+        – preserves OperatorIdentity and DO_Identity
+          as structural references, not as native entities.
+
+    • SID.Interaction:
+
+        – encodes invocation relations:
+
+            Invoke(O_ext, S_i, S_j)
+            IOTA(DO, S_i, S_j)
+
+        – records which regimes interact via IOTA without
+          collapsing them into a single ontology.
+
+PED Mapping (Power & Dynamics)
+---
+    • PED.Power:
+        – represents admissibility decisions as power
+          relations:
+
+            DO_Admissible(S_i → S_j)
+            GAF_Admissible(S_i → S_j)
+            TERMS_Admissible(S_i → S_j)
+
+    • PED.Dynamics:
+
+        – encodes transition flows:
+            S_i → S_j (candidate)
+            S_i ⇢ S_j (adopted under TERMS)
+
+RDG Non-Contamination
+---
+    • IOTA does not govern SID/PED.
+    • DO does not govern SID/PED.
+    • External Operators do not govern SID/PED.
+    • RDG uses these outputs as inputs to relational analysis
+      but retains its own governance and dynamics.
+
+RDG-Mapping Summary
+---
+    • SID records external regimes and their interactions.
+    • PED records admissibility and transition power.
+    • IOTA and DO provide structured inputs; RDG remains
+      sovereign in its own governance and computational
+      logic.
 
 ============================================================
 REFERENCES
