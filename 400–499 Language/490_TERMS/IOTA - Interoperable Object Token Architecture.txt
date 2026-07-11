@@ -513,7 +513,7 @@ TERMS represents the resulting states.
 JOT/SPOT govern justification and placement.
 
 ============================================================
-APPENDIX B — IOTA Interoperability 
+APPENDIX B — IOTA Interoperability for Data Objects
 ============================================================
 
 This appendix specifies how IOTA handles Data Objects (DO). 
