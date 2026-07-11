@@ -47,10 +47,10 @@ Scale Behavior
 
 | Scale 		| Zone 			| Behavior 
 |-------		|------			|----------
-| **Micro** 	| r = 0 		| Seed point initialization 
-| **Meso** 		| r < αR_max 	| Fractal injection & 
+| Micro 		| r = 0 		| Seed point initialization 
+| Meso 			| r < αR_max 	| Fractal injection & 
 									recursive patterning 
-| **Macro** 	| r → R_max 	| Smoothing constraints & 
+| Macro 		| r → R_max 	| Smoothing constraints & 
 									convergence into solved form 
 
 Distinctive Properties
