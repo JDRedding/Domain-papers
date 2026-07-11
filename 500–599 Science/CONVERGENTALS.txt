@@ -425,12 +425,13 @@ Outputs:
 -----------------------------------------------------------------
 
 def ConvergentalsStep(S, G, R_max=1.0, alpha=0.6, k_c=0.05, k_r=0.1, k_t=0.02):
-    r = np.linalg.norm(S, axis=1).max()          # current radius
+    r = np.linalg.norm(S, axis=1).max() # current radius
     I_factor = max(0.0, 1.0 - r / R_max)
     
     # MESO: fractal injection
     if r < alpha * R_max:
-        S = S + I_factor * FractalPerturb(S)     # e.g. noise, Weierstrass, or braid insertion
+        S = S + I_factor * FractalPerturb(S)    
+		# e.g. noise, Weierstrass, or braid insertion
     
     # MACRO: geometry-driven correction
     S = S + I_factor * FlowTowardG(S, G, k_c, k_r, k_t)
@@ -507,8 +508,10 @@ This is topology‑preserving correction.
 Full operator
 -
 
-FlowTowardG(S, G) is the geometry‑aware correction operator that moves the current structure S toward the geometric invariants encoded in G, using curvature, radius, and topological deviation as its guiding fields.
-
+FlowTowardG(S, G) is the geometry‑aware correction operator 
+that moves the current structure S toward the geometric 
+invariants encoded in G, using curvature, radius, and 
+topological deviation as its guiding fields.
 
 function FlowTowardG(S, G):
 
