@@ -1,6 +1,73 @@
                         CONVERGENTALS                          
                  (Fractal-Origin Convergent Form)              
 +---------------------------------------------------------------+
+Summary
+
+This document defines Convergentals, a novel class of geometry-
+aware recursive geometric objects that unify structure and 
+geometry through a four-channel framework (G–S–I–D).
+
+Core Concept
+
+Convergentals begin as fractal-origin objects at the micro scale, 
+expand with recursive complexity through a fractal "meso zone," 
+and converge into a stable geometric form at a macro radius 
+boundary. They're governed by a single symbolic update operator:
+
+	S_{t+1} = Φ(S_t, G)
+
+Key Components
+
+The Four Channels:
+- G (Geometry): Global geometric identity—topology, curvature, 
+	knot class, radius limit (R_max)
+- S (Structure): Local geometric realization that evolves and 
+	carries convergence invariants
+- I (Interaction): Geometry-aware operator that injects fractal 
+	detail at meso scale and tapers near convergence
+- D (Dynamics): State-driven recursion brake that slows 
+	evolution as the system approaches boundaries
+
+The Dual-Engine Operator Φ
+
+The update mechanism balances two opposing forces mediated by 
+radial distance (r_t = ||S_t||):
+
+1. Fractal Injection (F_frac): 
+	Active only in the meso zone (r_t < αR_max), injecting 
+	topological complexity (braids, loops, oscillations)
+2. Geometric Renormalization (F_flow): A triad of flows—curvature 
+	correction, radius correction, and topology preservation—
+	pulling the structure toward G
+
+A taper factor (I_f) ensures smooth transition from fractal 
+expansion to geometric convergence.
+
+Scale Behavior
+
+| Scale 		| Zone 			| Behavior 
+|-------		|------			|----------
+| **Micro** 	| r = 0 		| Seed point initialization 
+| **Meso** 		| r < αR_max 	| Fractal injection & 
+									recursive patterning 
+| **Macro** 	| r → R_max 	| Smoothing constraints & 
+									convergence into solved form 
+
+Distinctive Properties
+
+- Fractal-origin expansion
+- Finite radius boundary (R_max)
+- Knot-compatible (trefoils, braids, torus knots)
+- State-aware dynamics with logistic phase regulation
+- Topology-preserving correction fields
+- Convergence into solvable geometry
+
+The document includes pseudocode implementations, detailed 
+mathematical formulations, and mappings across fractal family 
+classifications (IFS, escape-time, L-systems, space-filling 
+curves, and knot-derived forms).
+
++---------------------------------------------------------------+
 
 DEFINITION:
   A Convergentals is a geometry-aware recursive object whose
