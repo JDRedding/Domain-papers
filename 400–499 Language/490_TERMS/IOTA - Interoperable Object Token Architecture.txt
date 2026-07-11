@@ -483,8 +483,73 @@ Where:
      TERMS represents resulting states
      JOT/SPOT govern justification and placement
 
+
 ------------------------------------------------------------
-A10. ROLE OF DOT IN THE ECOSYSTEM
+A10. DOT INVOCATION MAPPING
+------------------------------------------------------------
+
+DOT_InvocationMapping = {
+
+    SourceRegime        = TERMS.RepresentationalState(S_i),
+    TargetRegime        = TERMS.RepresentationalState(S_j),
+
+    PreservedInvariants = {
+        AdmissibilityStructure,
+        TransitionLegitimacy,
+        OperatorIdentity(⊙),
+        ContextualValidity,
+        RepresentationalRecoverability
+    },
+
+    ResidualStructures = {
+        UnmappedOperatorDependencies,
+        ExternalOperatorAssumptions,
+        NonRepresentationalOperatorSemantics,
+        ContextualResidualsDeclaredUnderGAF
+    },
+
+    AdmissibilityDomain = {
+        DomainOf⊙,
+        ContextualConstraints(GAF),
+        InvocationConditions(IOTA),
+        NonOverrideGuarantee
+    },
+
+    BridgeConditions = {
+        ExplicitInvocation,
+        NonCollapse,
+        NonContainment,
+        OperatorLevelPreservation,
+        TERMSRepresentationOfOutputsOnly
+    },
+
+    NotationBoundaries = {
+        ⊙ remains operator-level,
+        No tokenization,
+        No objectification,
+        No reinterpretation,
+        TERMS notation applies only to S_i, S_j
+    },
+
+    Provenance = {
+        OperatorIdentity(⊙),
+        InvocationContext(GAF),
+        TransitionRecord(IOTA),
+        ExternalReference(Sublexicon⊙)
+    },
+
+    FailureCriteria = {
+        InvocationOutsideAdmissibilityDomain,
+        CollapseOfOperatorIdentity,
+        ContainmentClaim,
+        UnjustifiedTransition,
+        MissingResidualDeclaration
+    }
+}
+
+
+------------------------------------------------------------
+A11. ROLE OF DOT IN THE ECOSYSTEM
 ------------------------------------------------------------
 
 DOT remains:
@@ -499,7 +564,7 @@ DOT can be chosen to governs transitions; TERMS governs
 representation.
 
 ------------------------------------------------------------
-A11. SUMMARY
+A12. SUMMARY
 ------------------------------------------------------------
 
 This appendix preserves external operator identity as an 
