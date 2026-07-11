@@ -289,6 +289,10 @@ Explicitness:
 Traceability:
     Governance processes must be reconstructible.
 
+Non-Override:
+    GAF may record external admissibility but may NOT
+    override or reinterpret external operator semantics.
+
 Non‑collapse:
     No conflation of actors, norms, or domains. No
     representational unit may collapse domain separation or
@@ -302,6 +306,9 @@ Interoperability Integrity:
     External systems may interface (via IOTA)
     but may NOT impose governance.
 
+Contextual Authority:
+    GAF governs invocation context, not external operators.
+
 : Secondary Invariants
 
 Recoverability 
@@ -310,6 +317,14 @@ governance metadata.
 
 Consistency 
 Declared relations must not contradict structural constraints.
+
+Provenance Integrity:
+All external interactions must preserve provenance without 
+importing external governance.
+
+Admissibility Separation:
+External admissibility remains external; internal 
+admissibility remains governed by TERMS.
 
 ------------------------------------------------------------
 8. ROLE IN THE TERMS ECOSYSTEM
