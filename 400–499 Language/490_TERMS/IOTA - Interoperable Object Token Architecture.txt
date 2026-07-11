@@ -79,8 +79,8 @@ Separation — IOTA sits ABOVE TERMS, OUTSIDE
 
 Operator Special Cases
 ---
-DOT receives identical treatment as any other externalS — it
- is not privileged and enters only through IOTA, contributing
+Operator receives identical treatment as any other externalS 
+ — not privileged and enters only through IOTA, contributing
  to JOT/SPOT outputs without governing them
 
 ------------------------------------------------------------
