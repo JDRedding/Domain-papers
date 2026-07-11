@@ -16,12 +16,12 @@ computational kernels or successor‑state logic.
            Governance Analytical Framework
    (governance root for representational systems)
                           │
-     ┌────────────────┼───────────────┐
+     ┌────────────────────┼────────────────────┐
      │                    │                    │
    IOTA                JOT‑TERMS            SPOT‑TERMS
 (interface)       (governed object)   (governed placement)
      │                    │                    │
-     └────────────────┴───────────────┘
+     └────────────────────┴────────────────────┘
                           │
                 TERMS (token substrate)
                           │
@@ -536,7 +536,7 @@ No conflation of actors, norms, domains, or representational identities.
 ---
 Stability
 
- (Invariant)
+(Invariant)
 Identity and provenance persist across revisions.
 
 ---
