@@ -1,0 +1,258 @@
+SPOT‑TERMS - Structured Point of Tokenization [TERMS Layer]
+============================================================
+
+SPOT‑TERMS is the governed representational placement unit
+built on TERMS and governed by GAF. It defines:
+    • where a JOT‑TERMS is placed,
+    • under what structural constraints,
+    • with what admissibility conditions,
+    • and with what provenance.
+
+PURPOSE
+------------------------------------------------------------
+
+SPOT‑TERMS provides:
+
+    • governed representational placement,
+    • explicit structural context,
+    • admissibility conditions for placement,
+    • provenance + revision tracking,
+    • independence from coputation kernels,
+    • the structural coordinate for JOT‑TERMS.
+
+------------------------------------------------------------
+1. TOKEN CONTEXT  (TERMS foundation)
+------------------------------------------------------------
+
+Underlying mutual mapping:
+
+    C_token = (⧈ ↮ ⧉)
+
+Where:
+
+    ⧈ ∈ 𝒯        // Thing‑token domain
+    ⧉ ∈ ℛ        // Representation‑token domain
+    𝒯 ∩ ℛ = ∅    // Domain separation invariant
+
+SPOT‑TERMS does NOT alter TERMS; it adds placement structure.
+
+------------------------------------------------------------
+2. PLACEMENT STRUCTURE  P
+------------------------------------------------------------
+
+P = {
+
+    Locus,          // Coordinate or region of placement
+    Layer,          // Structural layer(s) inhabited
+    Neighborhood,   // Adjacent JOT/SPOT units
+    Relations,      // Declared structural relations
+    Constraints     // Explicit placement rules
+}
+
+Locus:
+    The explicit representational coordinate.
+
+Layer:
+    Local / global / cross‑framework structural layer.
+
+Neighborhood:
+    Declared adjacency to other representational units.
+
+Relations:
+    Ordering, inclusion, overlap, linkage.
+
+Constraints:
+    Non‑collapse, non‑overlap, domain separation, etc.
+
+------------------------------------------------------------
+3. ADMISSIBILITY & MODERATION CONTEXT  A_spot
+------------------------------------------------------------
+
+A_spot = {
+
+    PlacementAdmissibility,
+    ConflictConditions,
+    ResolutionPolicy
+
+}
+
+This is GAF‑level representational governance,
+NOT RDGMFEQ kernel logic.
+
+PlacementAdmissibility:
+    Conditions under which placement is valid.
+
+ConflictConditions:
+    When placements collide or contradict.
+
+ResolutionPolicy:
+    How representational conflicts are resolved.
+
+------------------------------------------------------------
+4. PROVENANCE & REVISION CONTEXT  R_spot
+------------------------------------------------------------
+
+R_spot = {
+    PlacementHistory,
+    PlacementProvenance
+}
+
+PlacementHistory:
+    Ordered record of placement changes.
+
+PlacementProvenance:
+    Identity + authorship + lineage of placement.
+
+------------------------------------------------------------
+5. FORMAL DEFINITION
+------------------------------------------------------------
+
+SPOT‑TERMS = ( C_token , P , A_spot , R_spot )
+
+Where:
+    C_token = (⧈ ↮ ⧉)
+    P       = placement structure
+    A_spot  = admissibility + moderation context
+    R_spot  = provenance + revision context
+
+------------------------------------------------------------
+6. INVARIANTS
+------------------------------------------------------------
+
+ExplicitPlacement:
+    All placement details must be explicit.
+
+Recoverability:
+    Placement must be reconstructible from P and R_spot.
+
+Non‑collapse:
+    Placement cannot erase domain separation or identity.
+
+Consistency:
+    Relations must not contradict constraints.
+
+Stability:
+    All placement changes logged in R_spot.
+
+============================================================
+============================================================
+SPOT‑TERMS — Structural Justification  (A_spot Extension)
+============================================================
+
+Structural Justification (J_spot) provides the explicit
+reasoning that validates why a SPOT‑TERMS placement is
+allowed within the representational structure governed by GAF.
+
+J_spot ensures that every placement:
+    • respects structural constraints,
+    • fits the declared layer,
+    • maintains domain separation,
+    • preserves identity and provenance,
+    • avoids representational collapse.
+
+------------------------------------------------------------
+1. STRUCTURAL JUSTIFICATION  J_spot
+------------------------------------------------------------
+
+A_spot is extended to include J_spot:
+
+    A_spot = {
+        PlacementAdmissibility,
+        ConflictConditions,
+        ResolutionPolicy,
+        J_spot
+    }
+
+Where:
+
+    J_spot = {
+        StructuralFit,
+        LayerFit,
+        NeighborhoodFit,
+        ConstraintFit,
+        ProvenanceFit
+    }
+
+------------------------------------------------------------
+2. COMPONENTS OF J_spot
+------------------------------------------------------------
+
+StructuralFit:
+    Validates that the representational object’s structure
+    is compatible with the placement region.
+
+LayerFit:
+    Ensures the object belongs in the declared structural
+    layer(s): local, global, or cross‑framework.
+
+NeighborhoodFit:
+    Confirms adjacency rules are respected and no conflicts
+    exist with neighboring SPOT/JOT units.
+
+ConstraintFit:
+    Ensures placement constraints are satisfied:
+        • non‑collapse,
+        • non‑overlap,
+        • domain separation,
+        • structural consistency.
+
+ProvenanceFit:
+    Ensures placement is consistent with lineage, authorship,
+    and historical placement.
+
+------------------------------------------------------------
+3. FORMAL ADDITION TO SPOT‑TERMS
+------------------------------------------------------------
+
+Updated definition:
+
+    SPOT‑TERMS = ( C_token , P , A_spot , R_spot )
+
+Where:
+
+    A_spot = {
+        PlacementAdmissibility,
+        ConflictConditions,
+        ResolutionPolicy,
+        J_spot
+    }
+
+------------------------------------------------------------
+4. INVARIANT ALIGNMENT
+------------------------------------------------------------
+
+J_spot reinforces:
+
+    ExplicitPlacement:
+        Justification must be explicit.
+
+    Recoverability:
+        Placement must be reconstructible from P, R_spot,
+        and J_spot.
+
+    Non‑collapse:
+        Justification must preserve domain separation.
+
+    Consistency:
+        Justification must not contradict structural constraints.
+
+    Stability:
+        Justification persists across revisions.
+
+------------------------------------------------------------
+5. SUMMARY
+------------------------------------------------------------
+
+J_spot ensures that every SPOT‑TERMS placement is:
+
+    • structurally valid,
+    • layer‑appropriate,
+    • adjacency‑consistent,
+    • constraint‑respecting,
+    • provenance‑aligned,
+    • fully governed under GAF.
+
+It is the reasoning layer that makes placement legitimate.
+
+============================================================
+

@@ -1,0 +1,299 @@
+     IOTA - Interoperable Object Token Architecture
+                (GAF-TERMS Interface Layer)
+============================================================
+
+IOTA is the interoperability layer that allows data objects
+to be translated into governed representational units
+(JOT‑TERMS) and governed placements (SPOT‑TERMS),
+under the governance rules of GAF.
+
+Description:
+
+    IOTA defines the interoperability layer for importing
+    external Data Objects into the TERMS representational
+    ecosystem. It specifies tokenization, mutual mapping,
+    signature construction (Σ_IOTA), representational
+    admissibility under GAF, governed object construction
+    (JOT‑TERMS), governed placement (SPOT‑TERMS), and
+    provenance preservation. IOTA ensures interoperability
+    without governance contamination and maintains strict
+    separation from computational kernels.
+
+
+IOTA does NOT govern RDG(SID/PED) or RDGMFEQ.
+IOTA does NOT inherit other governance, unless specified.
+
+------------------------------------------------------------
+1. PURPOSE
+------------------------------------------------------------
+IOTA provides:
+    • a clean interface between data objects and other ecosystem,
+    • translation of data objects objects into TERMS tokens,
+    • governance of imported objects under GAF norms,
+    • structural placement via SPOT‑TERMS,
+    • representational justification via JOT‑TERMS,
+    • interoperability without contamination.
+
+IOTA is the "adapter" layer.
+
+------------------------------------------------------------
+2. INPUT DOMAIN  (Data Objects)
+------------------------------------------------------------
+Data  objects arrive with:
+
+    • identity,
+    • transition semantics,
+    • structural assumptions,
+    • provenance.
+
+IOTA receives these as EXTERNAL ACTORS under GAF.
+
+------------------------------------------------------------
+3. TRANSLATION PROCESS  (IOTA Core)
+------------------------------------------------------------
+
+IOTA performs:
+
+    • Tokenization:
+        Convert data object → (⧈, ⧉) TERMS tokens.
+    • Mapping:
+        Establish mutual mapping (⧈ ↮ ⧉).
+    • Signature Construction:
+        Build Σ_IOTA for imported objects.
+    • Justification:
+        Declare representational admissibility under GAF.
+    • Placement:
+        Produce SPOT‑TERMS placement structure.
+    • Provenance:
+        Preserve data object lineage without importing governance.
+
+------------------------------------------------------------
+4. IOTA SIGNATURE  Σ_IOTA
+------------------------------------------------------------
+
+Σ_IOTA = {
+
+    ExternalIdentity,        // identity preserved
+    ImportCommitments,       // assumptions declared explicitly
+    NativeObjects,           // TERMS-level objects created
+    NativeOps,               // operators used in translation
+    BridgeOps,               // data object ↔ TERMS mapping operators
+    ClaimState,              // representational claim of import
+    Placement,               // SPOT‑TERMS placement
+    Admissibility,           // GAF-level admissibility
+    Residuals,               // unresolved data object assumptions
+    Propagation,             // representational propagation rules
+    RevisionHistory,         // changes to imported object
+    Provenance               // lineage + local lineage
+}
+
+------------------------------------------------------------
+5. FORMAL DEFINITION
+------------------------------------------------------------
+IOTA = (
+    Data_Object,
+    TERMS_Tokenization,
+    Σ_IOTA,
+    JOT_TERMS_Construction,
+    SPOT_TERMS_Placement
+)
+
+Where:
+    Data_Object            = external actor
+    TERMS_Tokenization     = (⧈, ⧉, ⧈ ↮ ⧉)
+    Σ_IOTA                 = governance signature
+    JOT_TERMS_Construction = governed representational object
+    SPOT_TERMS_Placement   = governed representational placement
+
+------------------------------------------------------------
+6. INVARIANTS
+------------------------------------------------------------
+InteroperabilityIntegrity:
+    Data objects may interface but may NOT impose governance.
+
+Explicitness:
+    All imported assumptions must be explicit.
+
+Non‑collapse:
+    Data object identity ≠ TERMS identity.
+
+Recoverability:
+    Imported objects must be reconstructible from Σ_IOTA.
+
+Separation:
+    IOTA sits ABOVE TERMS and OUTSIDE RDG/RDGMFEQ.
+
+------------------------------------------------------------
+7. ROLE IN THE ECOSYSTEM
+------------------------------------------------------------
+IOTA governs:
+    • Data object → TERMS translation,
+    • Data object → JOT‑TERMS justification,
+    • Data object → SPOT‑TERMS placement,
+    • Data object provenance preservation.
+
+IOTA does NOT govern:
+
+    • successor-state logic,
+    • moderation,
+    • admissibility.
+
+IOTA is the interoperability bridge under GAF.
+
+============================================================
+APPENDIX — IOTA Interoperability for DOT Objects
+============================================================
+
+This appendix specifies how IOTA handles DOT objects as a
+SUBTYPE of Data Objects. DOT objects are treated as external
+actors entering the TERMS ecosystem and are governed under GAF
+through the IOTA import pipeline.
+
+DOT does NOT impose governance.
+DOT does NOT override GAF.
+DOT is NOT privileged; it is one kind of Data Object.
+
+------------------------------------------------------------
+A1. DOT OBJECT CLASSIFICATION
+------------------------------------------------------------
+
+DOT_Object ∈ DataObjects
+
+DOT objects arrive with:
+
+    • DOT_Identity
+    • DOT_TransitionSemantics
+    • DOT_StructuralAssumptions
+    • DOT_Provenance
+
+These are treated exactly like any other external object.
+
+------------------------------------------------------------
+A2. IOTA IMPORT PIPELINE FOR DOT
+------------------------------------------------------------
+
+IOTA(DOT) performs:
+
+    • Tokenization:
+        DOT_Object → (⧈, ⧉) TERMS tokens
+
+    • Mapping:
+        Establish DOT-specific mutual mapping (⧈ ↮ ⧉)
+
+    • Signature Construction:
+        Build Σ_IOTA(DOT) including DOT lineage + local lineage
+
+    • Justification:
+        Declare representational admissibility under GAF
+
+    • Placement:
+        Produce SPOT‑TERMS placement for DOT-derived tokens
+
+    • Provenance:
+        Preserve DOT provenance without importing DOT governance
+
+------------------------------------------------------------
+A3. IOTA SIGNATURE EXTENSION FOR DOT
+------------------------------------------------------------
+
+Σ_IOTA(DOT) = {
+
+    ExternalIdentity      = DOT_Identity,
+    ImportCommitments     = DOT_Assumptions,
+    NativeObjects         = TERMS tokens derived from DOT,
+    NativeOps             = operators used in DOT translation,
+    BridgeOps             = DOT ↔ TERMS mapping operators,
+    ClaimState            = representational claim of DOT import,
+    Placement             = SPOT‑TERMS placement,
+    Admissibility         = GAF-level admissibility,
+    Residuals             = unresolved DOT assumptions,
+    Propagation           = representational propagation rules,
+    RevisionHistory       = changes to DOT-derived objects,
+    Provenance            = DOT lineage + TERMS lineage
+}
+
+------------------------------------------------------------
+A4. DOT-SPECIFIC INVARIANTS
+------------------------------------------------------------
+
+DOT_InteroperabilityIntegrity:
+    DOT may interface but may NOT impose governance.
+
+DOT_NonCollapse:
+    DOT identity ≠ TERMS identity.
+
+DOT_Explicitness:
+    All DOT assumptions must be explicit in Σ_IOTA(DOT).
+
+DOT_Separation:
+    DOT sits OUTSIDE TERMS and OUTSIDE RDG/RDGMFEQ.
+
+DOT_Recoverability:
+    DOT-derived objects must be reconstructible from Σ_IOTA(DOT).
+
+------------------------------------------------------------
+A5. FORMAL DEFINITION
+------------------------------------------------------------
+
+IOTA(DOT) = (
+    DOT_Object,
+    TERMS_Tokenization,
+    Σ_IOTA(DOT),
+    JOT_TERMS_Construction,
+    SPOT_TERMS_Placement
+)
+
+Where:
+    DOT_Object            = external actor
+    TERMS_Tokenization    = (⧈, ⧉, ⧈ ↮ ⧉)
+    Σ_IOTA(DOT)           = DOT-specific governance signature
+    JOT_TERMS_Construction = governed representational object
+    SPOT_TERMS_Placement   = governed representational placement
+
+------------------------------------------------------------
+A6. ROLE OF DOT IN THE ECOSYSTEM
+------------------------------------------------------------
+
+DOT is treated as:
+
+    • an external representational source,
+    • a Data Object subtype,
+    • an importable structure under GAF,
+    • a non-governing actor,
+    • a contributor to JOT/SPOT via IOTA.
+
+DOT does NOT govern:
+
+    • successor-state logic,
+    • moderation,
+    • Q-slice,
+    • computational admissibility,
+    • propagation,
+    • residual localization.
+
+DOT is interoperable ONLY through IOTA.
+
+------------------------------------------------------------
+A7. SUMMARY
+------------------------------------------------------------
+
+DOT is one kind of Data Object.
+
+IOTA provides the ONLY pathway for DOT → TERMS translation,
+DOT → JOT‑TERMS justification, and DOT → SPOT‑TERMS placement.
+
+GAF governs DOT-derived representational units.
+
+RDG(SID/PED) and RDGMFEQ remain independent.
+
+
+REFERENCES
+============================================================
+
+    Dot Theory Research Group.
+    "Specification for Computationally Governed Representations."
+    Dot Theory Programme.
+    https://www.dottheory.co.uk/paper/specification-for-computationally-governed-representations
+
+============================================================
+

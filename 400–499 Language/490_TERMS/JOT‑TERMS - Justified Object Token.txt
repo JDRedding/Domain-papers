@@ -1,0 +1,133 @@
+JOT‑TERMS - Justified Object Token (TERMS Layer)
+============================================================
+JOT‑TERMS is defined entirely outside the  RDG(SID/PED) / RDGMFEQ kernel.  
+Below is the formal specification, modular and non‑intrusive.
+
+JOT‑TERMS is the governed representational unit built on TERMS.
+It binds:
+    • a Thing‑token (⧈)
+    • a Representation‑token (⧉)
+    • a Constitutional Signature (Σ)
+    • a Justification Statement (Admissibility)
+
+TERMS foundation
+JOT‑TERMS sits directly on TERMS, which provides:
+
+⧈ — thing‑token
+⧉ — representation‑token
+↦, ↤, ↮ — mapping algebra
+domain separation (𝒯 ∩ ℛ = ∅)
+recoverability
+non‑collapse rules
+
+JOT‑TERMS does not modify TERMS — it extends it with governance metadata.
+
+------------------------------------------------------------
+1. TERMS DOMAINS
+------------------------------------------------------------
+Justified Object Token (TERMS‑layer governed representational unit)
+
+A JOT‑TERMS is the governed representational unit constructed on top of the TERMS substrate.
+It binds a thing‑token, a representation‑token, and a governance signature into a single explicit object.
+
+A JOT‑TERMS binds three things:
+
+	A thing‑token (⧈)
+	A representation‑token (⧉)
+	A constitutional signature (Σ)
+
+Thing‑token domain:
+    ⧈ ∈ 𝒯
+
+Representation‑token domain:
+    ⧉ ∈ ℛ
+
+Domain separation invariant:
+    𝒯 ∩ ℛ = ∅
+       ⧈ ≠ ⧉
+
+
+Justified Object Token contains the justification statement (representational admissibility)
+
+This creates a governed representational unit that is explicit, recoverable, and structurally stable.
+
+------------------------------------------------------------
+2. TERMS MAPPING TRIAD
+------------------------------------------------------------
+Forward mapping:
+    ⧈  ↦  ⧉
+
+Reverse mapping:
+    ⧉  ↤  ⧈
+
+Mutual mapping (required for JOT‑TERMS):
+    ⧈  ↮  ⧉
+
+------------------------------------------------------------
+3. CONSTITUTIONAL SIGNATURE  Σ
+------------------------------------------------------------
+Σ = {
+    CID,                // Constitutional Identity
+    Commitments,        // Primitive + Structural + Interpretive
+    NativeObjects,      // Internal representational objects
+    NativeOps,          // Internal operators
+    BridgeOps,          // Interoperability operators
+    ClaimState,         // Declared representational claim
+    Placement,          // Representational placement layer
+    Admissibility,      // Representational admissibility conditions
+    Residuals,          // Unresolved representational differences
+    Propagation,        // Explicit propagation rules
+    RevisionHistory,    // Representational revision chain
+    Provenance          // Identity + authorship + lineage
+}
+
+------------------------------------------------------------
+4. JUSTIFICATION LAYER
+------------------------------------------------------------
+Justification = Admissibility(⧈ ↮ ⧉)
+
+This is NOT RDGMFEQ admissibility.
+It is representational admissibility:
+    • What makes the mapping valid?
+    • What commitments it relies on?
+    • What constraints it obeys?
+    • What assumptions are declared?
+
+------------------------------------------------------------
+5. FORMAL DEFINITION
+------------------------------------------------------------
+JOT‑TERMS  =  ( ⧈ ↮ ⧉ ,  Σ ,  Justification )
+
+------------------------------------------------------------
+6. INVARIANTS
+------------------------------------------------------------
+Explicitness:
+    All components must be explicit.
+
+Recoverability:
+    JOT‑TERMS must be reconstructible from Σ.
+
+Identity Preservation:
+    CID must remain stable across revisions.
+
+Domain Separation:
+    ⧈ and ⧉ remain distinct.
+
+Non‑collapse:
+    No identity morphisms; no conflation of thing and representation.
+
+Signature Completeness:
+    Σ must contain all required fields.
+
+------------------------------------------------------------
+7. PURPOSE
+------------------------------------------------------------
+JOT‑TERMS provides:
+    • governed representational units
+    • explicit comparison between representations
+    • interoperability between frameworks
+    • stable identity + provenance
+    • independence from RDG(SID/PED) and RDGMFEQ
+    • atomic representational structure for your ecosystem
+
+
