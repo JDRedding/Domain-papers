@@ -22,19 +22,65 @@ Description:
 IOTA does NOT govern RDG(SID/PED) or RDGMFEQ.
 IOTA does NOT inherit other governance, unless specified.
 
+IOTA ensures clean, explicit, non-contaminating 
+interoperability for external systems entering a formally 
+governed representational ecosystem.
+
 ------------------------------------------------------------
 1. PURPOSE
 ------------------------------------------------------------
+IOTA is the interoperability layer that bridges external 
+data objects into the TERMS representational ecosystem under 
+GAF (Governance Analytical Framework) governance.
+
 IOTA provides:
 
-    • a clean interface between data objects and other ecosystem,
-    • translation of data objects objects into TERMS tokens,
+    • a clean interface between data objects and other 
+      ecosystem,
+    • translation of data objects objects into TERMS 
+      tokens,
     • governance of imported objects under GAF norms,
     • structural placement via SPOT‑TERMS,
     • representational justification via JOT‑TERMS,
     • interoperability without contamination.
 
-IOTA is the "adapter" layer.
+IOTA serves as an adapter that:
+
+     Translates external data objects into TERMS tokens
+      (⧈, ⧉)
+     Applies GAF governance rules without importing 
+      external governance
+     Produces JOT‑TERMS (governed representational 
+      objects) and SPOT‑TERMS (governed placements)
+     Preserves provenance without governance 
+      contamination
+
+Key Components
+---
+IOTA Signature (Σ_IOTA) documents:
+
+     ExternalIdentity (original object preserved)
+     ImportCommitments (declared assumptions)
+     NativeObjects & NativeOps (TERMS-level constructs)
+     BridgeOps (mapping operators between data objects
+      and TERMS)
+     ClaimState, Placement, Admissibility, Residuals,
+      Propagation, RevisionHistory, Provenance
+
+Critical Invariants
+---
+InteroperabilityIntegrity — Data objects interface but
+ cannot impose governance
+Explicitness — All imports must be explicit
+Non‑collapse — Data object identity ≠ TERMS identity
+Recoverability — Objects reconstructible from Σ_IOTA
+Separation — IOTA sits ABOVE TERMS, OUTSIDE 
+ computational kernels (RDG/RDGMFEQ)
+DOT Objects Special Case
+DOT (Data Object subtype) receives identical treatment 
+ as any other external object — it is not privileged and 
+ enters only through IOTA, contributing to JOT/SPOT 
+ outputs without governing them.
 
 ------------------------------------------------------------
 2. INPUT DOMAIN  (Data Objects)
