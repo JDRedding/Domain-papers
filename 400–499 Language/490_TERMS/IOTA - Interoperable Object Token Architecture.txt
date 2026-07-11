@@ -76,11 +76,10 @@ Non‑collapse — Data object identity ≠ TERMS identity
 Recoverability — Objects reconstructible from Σ_IOTA
 Separation — IOTA sits ABOVE TERMS, OUTSIDE 
  computational kernels (RDG/RDGMFEQ)
-DOT Objects Special Case
-DOT (Data Object subtype) receives identical treatment 
- as any other external object — it is not privileged and 
- enters only through IOTA, contributing to JOT/SPOT 
- outputs without governing them.
+Operator Special Cases
+DOT receives identical treatment as any other externalS — it
+ is not privileged and enters only through IOTA, contributing
+ to JOT/SPOT outputs without governing them
 
 ------------------------------------------------------------
 2. INPUT DOMAIN  (Data Objects)
