@@ -39,8 +39,10 @@ GAF governs JOT‑TERMS, SPOT‑TERMS, and IOTA.
 
 Governance Analytical Framework (GAF)
 ---
-GAF is the governance root for the representational TERMS ecosystem.  
-It governs representational units, representational placement, and interoperability, but does not govern computational kernels.
+GAF is the governance root for the representational TERMS
+ecosystem. It governs representational units, 
+representational placement, and interoperability, but does 
+not govern computational kernels.
 
 ---
 
