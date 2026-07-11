@@ -19,7 +19,6 @@ Description:
     without governance contamination and maintains strict
     separation from computational kernels.
 
-
 IOTA does NOT govern RDG(SID/PED) or RDGMFEQ.
 IOTA does NOT inherit other governance, unless specified.
 
@@ -210,6 +209,7 @@ A3. IOTA SIGNATURE EXTENSION FOR DOT
     Propagation           = representational propagation rules,
     RevisionHistory       = changes to DOT-derived objects,
     Provenance            = DOT lineage + TERMS lineage
+
 }
 
 ------------------------------------------------------------
