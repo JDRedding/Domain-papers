@@ -191,7 +191,7 @@ Instead, IOTA provides:
         ProvenanceReference
     }
 
-This bridge allows GAF‑governed systems to *invoke* DOT
+This bridge allows GAF‑governed systems to invoke DOT
 without redefining DOT’s constitutional role.
 
 ------------------------------------------------------------
@@ -282,7 +282,209 @@ Where:
     JOT/SPOT govern justification and placement
 
 ------------------------------------------------------------
-A8. ROLE OF DOT IN THE ECOSYSTEM
+A8. OPERATOR BRIDGE
+------------------------------------------------------------
+IOTA Operator‑Bridge
+Interoperability Layer for External Operators 
+
+The IOTA Operator‑Bridge provides a neutral, non‑collapsing
+interoperability layer that allows external constitutional 
+operators to be invoked inside a GAF‑governed ecosystem 
+without being imported, redefined, or converted into TERMS
+objects.
+
+This specification ensures:
+     External Operators remains an operator
+     Operators admissibility decisions remain authoritative
+      externally
+     TERMS only encodes resulting representational states
+     GAF governs invocation context, not external Operators
+     IOTA provides the bridge, not reinterpretation
+
+TERMS retains full internal decisional authority. External 
+operators (including ⊙) may be invoked by users of the 
+TERMS ecosystem, but they do not govern TERMS, do not 
+impose admissibility, and do not determine successor‑state 
+logic. Their admissibility decisions remain external, 
+optional, and non‑binding.
+
+IOTA provides a bridge for possible invocation, not a
+dependency.
+
+GAF governs the context of invocation, not the operator
+itself.
+
+TERMS governs representation, justification, placement,
+and decisional logic.
+
+External operators remain external. TERMS remains sovereign.
+
+Summary
+
+     The IOTA Operator‑Bridge:
+     preserves DOT as a constitutional operator (⊙)
+     prevents category collapse
+     maintains operator identity
+     enables admissible invocation
+     records provenance
+     represents only the results of DOT transitions
+
+------------------------------------------------------------
+A9. BRIDGE SSPECIFICATION
+------------------------------------------------------------
+Operator Identity Preservation
+
+External Operator Definition
+---
+An external operator O_ext is any constitutional operator 
+originating outside the TERMS ecosystem.
+
+DOT is treated as:
+
+     O_ext = ⊙
+
+Identity Constraints
+---
+     O_ext must not be tokenized
+     O_ext must not be imported
+     O_ext must not be represented as a Data Object
+     O_ext must not be collapsed into TERMS ontology
+     O_ext must remain external and operator‑level
+
+Operator‑Bridge Architecture
+---
+The Operator‑Bridge is a five‑component interoperability 
+structure:
+
+OperatorBridge(O_ext) = {
+
+    InvocationRules,
+    ContextualBinding,
+    TransitionInterface,
+    AdmissibilityRelay,
+    ProvenanceReference
+
+}
+
+Invocation Rules
+---
+Invocation Form
+
+External operators are invoked through IOTA:
+
+     Invoke(O_ext, S_i, S_j)
+
+Where:
+
+     S_i = initial representational state
+     S_j = candidate successor state
+     O_ext determines admissibility of the transition
+
+Invocation Constraints
+---
+Invocation must be explicit
+Invocation must preserve operator identity
+Invocation must not reinterpret operator semantics
+Invocation must not imply containment or equivalence
+
+Contextual Binding
+---
+IOTA binds external operator invocation to GAF‑governed 
+context:
+
+ContextualBinding(O_ext) = {
+
+    InvocationDomain,
+    OperationalConstraints,
+    Residuals,
+    FailureConditions
+
+}
+
+InvocationDomain
+Defines the operational domain in which O_ext is admissibly
+invoked
+
+Residuals
+Residual structures from O_ext must be preserved and 
+declared
+
+Failure Conditions
+Failure conditions must be explicit
+
+Transition Interface
+---
+The Transition Interface converts operator‑level
+admissibility into TERMS‑level representational structure 
+without redefining the operator.
+
+TransitionInterface(O_ext) = {
+    InputState      = S_i,
+    OutputState     = S_j,
+    Admissible      = O_ext(S_i → S_j),
+    Representation  = TERMS(S_j),
+    Justification   = JOT(S_j),
+    Placement       = SPOT(S_j)
+}
+
+Operator governs admissibility
+O_ext determines whether the transition is admissible.
+
+TERMS governs representation
+TERMS encodes the resulting state S_j.
+
+GAF governs justification context
+GAF records admissibility but does not override O_ext.
+
+SPOT governs placement
+---
+SPOT assigns representational placement.
+
+Admissibility Relay
+DOT’s admissibility decision is relayed into GAF:
+
+If O_ext(S_i → S_j) = admissible:
+    GAF.Admissibility := true
+Else:
+    GAF.Admissibility := false
+
+Relay Constraints
+---
+GAF records DOT’s decision
+GAF governs the context of invocation
+
+Provenance Reference
+---
+IOTA preserves operator provenance:
+
+Provenance(O_ext) = {
+    OperatorIdentity,
+    InvocationContext,
+    TransitionRecord,
+    ExternalReference
+}
+
+Formal Definition
+---
+The complete operator‑bridge is:
+
+IOTA(O_ext) = (
+    OperatorBridge(O_ext),
+    InvocationRules,
+    TransitionInterface,
+    AdmissibilityRelay,
+    ProvenanceReference
+)
+
+Where:
+     O_ext remains external
+     IOTA provides interoperability
+     GAF governs invocation context
+     TERMS represents resulting states
+     JOT/SPOT govern justification and placement
+
+------------------------------------------------------------
+A10. ROLE OF DOT IN THE ECOSYSTEM
 ------------------------------------------------------------
 
 DOT remains:
@@ -293,25 +495,22 @@ DOT remains:
     • referenced by GAF,
     • represented in TERMS only through its outputs.
 
-DOT does NOT become:
-    • a Data Object,
-    • a TERMS token,
-    • a JOT object,
-    • a SPOT placement.
-
-DOT governs transitions; TERMS governs representation.
+DOT can be chosen to governs transitions; TERMS governs
+representation.
 
 ------------------------------------------------------------
-A9. SUMMARY
+A11. SUMMARY
 ------------------------------------------------------------
 
-This appendix preserves DOT’s identity as an operator (⊙).
-IOTA provides a bridge for invoking DOT without redefining it.
+This appendix preserves external operator identity as an 
+operator.
+
+IOTA provides a bridge for invoking these without redefining 
+it.
+
 GAF governs the invocation context.
 TERMS represents the resulting states.
 JOT/SPOT govern justification and placement.
-
-DOT remains external, constitutional, and operator‑level.
 
 ============================================================
 REFERENCES
