@@ -564,21 +564,7 @@ DOT can be chosen to governs transitions; TERMS governs
 representation.
 
 ------------------------------------------------------------
-A12. SUMMARY
-------------------------------------------------------------
-
-This appendix preserves external operator identity as an 
-operator.
-
-IOTA provides a bridge for invoking these without redefining 
-it.
-
-GAF governs the invocation context.
-TERMS represents the resulting states.
-JOT/SPOT govern justification and placement.
-
-------------------------------------------------------------
-A13. BOUNDARY CONDITIONS FOR EXTERNAL OPERATORS
+A12. BOUNDARY CONDITIONS FOR EXTERNAL OPERATORS
 ------------------------------------------------------------
 
 OperatorImportBoundary
@@ -626,7 +612,7 @@ collapse of operator identity and triggers failure handling
 under IOTA.
 
 ------------------------------------------------------------
-A14. ADMISSIBILITY HIERARCHY (DOT, GAF, TERMS)
+A13. ADMISSIBILITY HIERARCHY (DOT, GAF, TERMS)
 ------------------------------------------------------------
 
 AdmissibilityHierarchy = {
@@ -681,6 +667,20 @@ Conflicts are resolved by:
     • DOT remaining authoritative for its own domain,
     • GAF controlling whether invocation occurs,
     • TERMS controlling whether S_j is adopted internally.
+
+------------------------------------------------------------
+A14. SUMMARY
+------------------------------------------------------------
+
+This appendix preserves external operator identity as an 
+operator.
+
+IOTA provides a bridge for invoking these without redefining 
+it.
+
+GAF governs the invocation context.
+TERMS represents the resulting states.
+JOT/SPOT govern justification and placement.
 
 ============================================================
 APPENDIX B — IOTA Interoperability for Data Objects
