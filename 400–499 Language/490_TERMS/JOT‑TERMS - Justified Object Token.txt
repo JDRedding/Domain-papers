@@ -131,3 +131,17 @@ JOT‑TERMS provides:
     • atomic representational structure for your ecosystem
 
 
+============================================================
+REFERENCES
+============================================================
+
+    Governance Analytical Framework (GAF)
+
+        Graduate Institute of International and Development Studies
+        Hufty, Marc. “Governance: Exploring Four Approaches.”
+        Governance Analytical Framework (GAF).
+        Graduate Institute Geneva, 2011.
+        GovernanceFrameworkE.pdf
+        https://repository.graduateinstitute.ch/record/16577
+
+============================================================
