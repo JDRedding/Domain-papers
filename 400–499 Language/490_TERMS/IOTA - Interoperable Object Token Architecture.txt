@@ -330,7 +330,7 @@ Summary
      represents only the results of DOT transitions
 
 ------------------------------------------------------------
-A9. BRIDGE SSPECIFICATION
+A9. BRIDGE SPECIFICATION
 ------------------------------------------------------------
 Operator Identity Preservation
 
