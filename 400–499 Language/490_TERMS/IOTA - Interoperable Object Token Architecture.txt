@@ -513,6 +513,150 @@ TERMS represents the resulting states.
 JOT/SPOT govern justification and placement.
 
 ============================================================
+APPENDIX B — IOTA Interoperability 
+============================================================
+
+This appendix specifies how IOTA handles Data Objects (DO). 
+DO are treated as external actors entering the TERMS 
+ecosystem and are governed under GAF through the IOTA 
+import pipeline.
+
+DO do NOT impose governance.
+DO do NOT override GAF.
+DO are NOT privileged.
+
+------------------------------------------------------------
+B1.  DATA OBJECT (DO) CLASSIFICATION
+------------------------------------------------------------
+
+DO_Object ∈ DataObjects
+
+DO objects arrive with:
+
+    • DO_Identity
+    • DO_TransitionSemantics
+    • DO_StructuralAssumptions
+    • DO_Provenance
+
+These are treated exactly like any other external object.
+
+------------------------------------------------------------
+B2. IOTA IMPORT PIPELINE FOR DATA OBJECTS (DO)
+------------------------------------------------------------
+
+IOTA(DO) performs:
+
+    • Tokenization:
+        DO_Object → (⧈, ⧉) TERMS tokens
+
+    • Mapping:
+        Establish DO-specific mutual mapping (⧈ ↮ ⧉)
+
+    • Signature Construction:
+        Build Σ_IOTA(DO) including lineage + local lineage
+
+    • Justification:
+        Declare representational admissibility under GAF
+
+    • Placement:
+        Produce SPOT‑TERMS placement for DO-derived tokens
+
+    • Provenance:
+        Preserve DO provenance without importing DO governance
+
+------------------------------------------------------------
+B3. IOTA SIGNATURE EXTENSION FOR DATA OBJECTS (DO)
+------------------------------------------------------------
+
+Σ_IOTA(DO) = {
+
+    ExternalIdentity      = DO_Identity,
+    ImportCommitments     = DO_Assumptions,
+    NativeObjects         = TERMS tokens
+    BridgeOps             = DO ↔ TERMS mapping operators,
+    ClaimState            = representational claim of DO import,
+    Placement             = SPOT‑TERMS placement,
+    Admissibility         = GAF-level admissibility,
+    Residuals             = unresolved DO assumptions,
+    Propagation           = representational propagation rules,
+    RevisionHistory       = changes to DO-derived objects,
+    Provenance            = DO lineage + TERMS lineage
+}
+
+------------------------------------------------------------
+B4. DATA OBJECT SPECIFIC INVARIANTS
+------------------------------------------------------------
+
+Data Objects_InteroperabilityIntegrity:
+    DO may interface but may NOT impose governance.
+
+Data Objects_NonCollapse:
+    DO identity ≠ TERMS identity.
+
+Data Objects_Explicitness:
+    All DO assumptions must be explicit in Σ_IOTA(DO).
+
+Data Objects_Separation:
+    DO sits OUTSIDE TERMS and OUTSIDE RDG/RDGMFEQ.
+
+Data Objects_Recoverability:
+    DO-derived objects must be reconstructible from Σ_IOTA(DO).
+
+------------------------------------------------------------
+B5. FORMAL DEFINITION
+------------------------------------------------------------
+
+IOTA(Data_Object) = (
+    Data_Object_Instance,
+    TERMS_Tokenization,
+    Σ_IOTA(Data_Object),
+    JOT_TERMS_Construction,
+    SPOT_TERMS_Placement
+)
+
+Where:
+    Data_Object_Instance   = external actor
+    TERMS_Tokenization     = (⧈, ⧉, ⧈ ↮ ⧉)
+    Σ_IOTA(Data_Object)    = Data Object-specific signatures
+    JOT_TERMS_Construction = governed representational object
+    SPOT_TERMS_Placement   = governed representational placement
+
+------------------------------------------------------------
+B6. ROLE OF DATA OOBJECTS IN THE ECOSYSTEM
+------------------------------------------------------------
+
+Data Objects are treated as:
+
+    • an external representational source,
+    • a Data subtype,
+    • an importable structure under GAF,
+    • a non-governing actor,
+    • a contributor to JOT/SPOT via IOTA.
+
+Data Objects do NOT govern:
+
+    • successor-state logic,
+    • moderation,
+    • Q-slice,
+    • computational admissibility,
+    • propagation,
+    • residual localization.
+
+Data Object is interoperable ONLY through IOTA.
+
+------------------------------------------------------------
+B7. SUMMARY
+------------------------------------------------------------
+
+IOTA provides the ONLY pathway for Data Object → TERMS 
+translation, Data Object → JOT‑TERMS justification, and Data 
+Object → SPOT‑TERMS placement.
+
+GAF governs Data Object-derived representational units.
+
+RDG(SID/PED) and RDGMFEQ remain independent.
+
+============================================================
 REFERENCES
 ============================================================
 
