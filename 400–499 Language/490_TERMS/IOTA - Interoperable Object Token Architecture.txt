@@ -577,6 +577,111 @@ GAF governs the invocation context.
 TERMS represents the resulting states.
 JOT/SPOT govern justification and placement.
 
+------------------------------------------------------------
+A13. BOUNDARY CONDITIONS FOR EXTERNAL OPERATORS
+------------------------------------------------------------
+
+OperatorImportBoundary
+---
+The following conditions ensure that external operators remain
+external and are  never treated as a Data Object or TERMS-
+native construct.
+
+Hard Prohibitions
+---
+    • No tokenization:
+        ⊙ must not be converted into (⧈, ⧉) TERMS tokens.
+    • No Σ_IOTA construction:
+        ⊙ must not appear as an entry in Σ_IOTA.
+    • No JOT/SPOT generation:
+        ⊙ must not be represented as a JOT-TERMS object
+        or SPOT-TERMS placement.
+    • No representational embedding:
+        ⊙ must not be serialized into TERMS objects or
+        embedded in representational notation.
+    • No operator-to-object coercion:
+        ⊙ must not be treated as a Data Object, subtype,
+        or governed actor under GAF.
+
+Semantic Opaqueness
+---
+    • No partial evaluation of ⊙ inside IOTA.
+    • No prediction or approximation of ⊙ admissibility
+      by GAF or TERMS.
+    • No caching or memoization of ⊙ decisions as if they
+      were local rules.
+    • No substitution of ⊙ with local admissibility
+      heuristics.
+
+Boundary Condition Summary
+---
+DOT remains:
+    • external,
+    • operator-level,
+    • non-collapsing,
+    • non-substitutable.
+
+Any violation of these boundary conditions constitutes a
+collapse of operator identity and triggers failure handling
+under IOTA.
+
+------------------------------------------------------------
+A14. ADMISSIBILITY HIERARCHY (DOT, GAF, TERMS)
+------------------------------------------------------------
+
+AdmissibilityHierarchy = {
+    DOT_Admissibility,
+    GAF_Admissibility,
+    TERMS_Admissibility
+}
+
+1. DOT_Admissibility (External Constitutional Layer)
+---
+    • DOT evaluates transitions:
+        ⊙(S_i → S_j) ∈ {admissible, inadmissible}.
+    • DOT’s decision is authoritative for its own domain.
+    • DOT’s decision is relayed but not reinterpreted:
+
+        If ⊙(S_i → S_j) = admissible:
+            GAF_Admissibility := true
+        Else:
+            GAF_Admissibility := false
+
+2. GAF_Admissibility (Governance Context Layer)
+---
+    • GAF governs the context of invocation, not DOT itself.
+    • GAF may:
+        – permit or block invocation of ⊙,
+        – record DOT’s decision as an external source,
+        – apply additional contextual constraints.
+    • GAF may NOT:
+        – override DOT’s admissibility decision,
+        – reinterpret DOT’s semantics,
+        – substitute DOT with local rules.
+
+3. TERMS_Admissibility (Internal Logic Layer)
+---
+    • TERMS governs successor-state logic and internal
+      representational admissibility.
+    • TERMS may:
+        – accept or reject S_j as a valid successor state,
+        – apply internal consistency and moderation rules.
+    • TERMS may NOT:
+        – claim to govern DOT,
+        – treat DOT’s decision as binding on internal logic.
+
+Hierarchy Summary
+---
+    • DOT governs operator-level admissibility.
+    • GAF governs invocation context and records DOT.
+    • TERMS governs internal representation and successor
+      state logic.
+
+Conflicts are resolved by:
+    • DOT remaining authoritative for its own domain,
+    • GAF controlling whether invocation occurs,
+    • TERMS controlling whether S_j is adopted internally.
+
 ============================================================
 APPENDIX B — IOTA Interoperability for Data Objects
 ============================================================
