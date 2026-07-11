@@ -140,7 +140,7 @@ IOTA does NOT govern:
 IOTA is the interoperability bridge under GAF.
 
 ============================================================
-APPENDIX — IOTA Interoperability for External Operators
+APPENDIX A — IOTA Interoperability for External Operators
 ============================================================
 
 This appendix specifies how the IOTA layer interoperates with
@@ -825,6 +825,61 @@ Object → SPOT‑TERMS placement.
 GAF governs Data Object-derived representational units.
 
 RDG(SID/PED) and RDGMFEQ remain independent.
+
+============================================================
+APPENDIX C — RESIDUAL PROPAGATION RULES
+============================================================
+
+Residuals(O_ext, DO)
+---
+Residuals are unresolved assumptions, dependencies, or
+non-representational semantics that arise from external
+operators (O_ext, including ⊙) or Data Objects (DO).
+
+ResidualTypes = {
+    OperatorResiduals,
+    DataObjectResiduals
+}
+
+1. Storage and Localization
+---
+    • Residuals must be stored only in provenance structures:
+        – Provenance(O_ext)
+        – Provenance(DO)
+        – Σ_IOTA(DO).Residuals
+    • Residuals must not be embedded in TERMS objects as
+      representational content.
+    • Residuals must be explicitly declared under GAF.
+
+2. Non-Interference with Successor-State Logic
+---
+    • Residuals must not alter successor-state logic in TERMS.
+    • Residuals must not be used as implicit rules or
+      admissibility criteria.
+    • Residuals must not be treated as moderation signals
+      or Q-slice inputs.
+
+3. No Semantic Leakage
+---
+    • OperatorResiduals must not be used to infer internal
+      semantics of ⊙ or other O_ext.
+    • DataObjectResiduals must not be used to infer hidden
+      governance or privileged status for DO.
+
+4. Propagation Constraints
+---
+    • Residuals may propagate across transitions only as
+      provenance annotations.
+    • Any propagation must:
+        – be explicit,
+        – be recorded under GAF,
+        – not change the admissibility hierarchy.
+
+Residual Summary
+---
+Residuals preserve context and unresolved assumptions but
+remain strictly non-governing, non-representational, and
+non-interfering with TERMS successor-state logic.
 
 ============================================================
 REFERENCES
