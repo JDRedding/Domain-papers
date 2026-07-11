@@ -140,7 +140,7 @@ IOTA does NOT govern:
 IOTA is the interoperability bridge under GAF.
 
 ============================================================
-APPENDIX — IOTA Interoperability for the DOT Operator (⊙)
+APPENDIX — IOTA Interoperability for External Operators
 ============================================================
 
 This appendix specifies how the IOTA layer interoperates with
