@@ -111,8 +111,3 @@ STANDARD SPECIFICATION (GLYPH VERSION)
    6.2 Meta-Structure
        Higher-order constructs (types, classes, functors) may be added later.
        Core remains token-level and non-collapsing.
-
----
-000.4 Systems Theory / General Knowledge Structures
-003.3 Information Structures  
-004.019 Theoretical Foundations of Computing  
