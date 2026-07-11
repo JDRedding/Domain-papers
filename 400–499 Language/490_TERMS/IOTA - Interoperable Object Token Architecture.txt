@@ -26,6 +26,7 @@ IOTA does NOT inherit other governance, unless specified.
 1. PURPOSE
 ------------------------------------------------------------
 IOTA provides:
+
     • a clean interface between data objects and other ecosystem,
     • translation of data objects objects into TERMS tokens,
     • governance of imported objects under GAF norms,
@@ -568,7 +569,7 @@ A12. BOUNDARY CONDITIONS FOR EXTERNAL OPERATORS
 OperatorImportBoundary
 ---
 The following conditions ensure that external operators remain
-external and are  never treated as a Data Object or TERMS-
+external and are never treated as a Data Object or TERMS-
 native construct.
 
 Hard Prohibitions
@@ -783,6 +784,7 @@ IOTA(Data_Object) = (
 )
 
 Where:
+
     Data_Object_Instance   = external actor
     TERMS_Tokenization     = (⧈, ⧉, ⧈ ↮ ⧉)
     Σ_IOTA(Data_Object)    = Data Object-specific signatures
@@ -1008,6 +1010,104 @@ RDG-Mapping Summary
     • IOTA and DO provide structured inputs; RDG remains
       sovereign in its own governance and computational
       logic.
+
+============================================================
+APPENDIX F — IOTA GAF TERMS PIPELINE
+============================================================
+
+                      EXTERNAL REGIMES
+        (Operators ⊙, Other O_ext, Data Objects DO)
+        ------------------------------------------------
+                 |                         |
+                 |                         |
+                 v                         v
+
+        +----------------+        +----------------+
+        |  External      |        |  External      |
+        |  Operators     |        |  Data Objects  |
+        |  (O_ext, ⊙)   |        |  (DO)          |
+        +----------------+        +----------------+
+                 |                         |
+                 |  Invoke(O_ext, S_i,S_j) |
+                 |------------------------>|
+                 |                         |
+                 v                         v
+
+        ================================================
+        IOTA — Interoperable Object Token Architecture
+        (GAF–TERMS Interface Layer)
+        ================================================
+
+        +------------------------------------------------+
+        |                    IOTA                        |
+        |------------------------------------------------|
+        |  OperatorBridge(O_ext):                        |
+        |    - InvocationRules                           |
+        |    - ContextualBinding (InvocationDomain,      |
+        |      Residuals, FailureConditions)             |
+        |    - TransitionInterface                       |
+        |    - AdmissibilityRelay                        |
+        |    - ProvenanceReference                       |
+        |                                                |
+        |  DataObjectImport(DO):                         |
+        |    - Tokenization (DO → ⧈, ⧉)                 |
+        |    - Mapping (⧈ ↮ ⧉)                          |
+        |    - Σ_IOTA(DO) construction                   |
+        |    - JOT/SPOT construction                     |
+        |    - Provenance preservation                   |
+        +------------------------------------------------+
+                 |                         |
+                 |                         |
+                 v                         v
+
+        +----------------+        +----------------+
+        |  GAF           |        |  Σ_IOTA        |
+        |  Governance    |        |  Signatures    |
+        |  Layer         |        |  (DO, O_ext)   |
+        +----------------+        +----------------+
+                 |
+                 |  Records:
+                 |    - InvocationContext
+                 |    - DOT_Admissibility
+                 |    - FailureRecord
+                 |    - Residuals (provenance-only)
+                 v
+
+        ================================================
+        TERMS — Sovereign Representational Ecosystem
+        ================================================
+
+        +------------------------------------------------+
+        |                    TERMS                       |
+        |------------------------------------------------|
+        |  Internal Admissibility & Successor-State Logic|
+        |  Moderation, Q-slice, RDG(SID/PED), RDGMFEQ    |
+        |                                                |
+        |  Receives from IOTA/GAF:                       |
+        |    - S_i, S_j (candidate states)               |
+        |    - JOT-TERMS (justified objects)             |
+        |    - SPOT-TERMS (placements)                   |
+        |    - External provenance references            |
+        |                                                |
+        |  TERMS decides:                                |
+        |    - whether S_j is adopted as successor state |
+        |    - internal admissibility, moderation,       |
+        |      propagation                               |
+        +------------------------------------------------+
+
+FLOW SUMMARY
+------------
+
+External Operators (⊙, O_ext):
+    O_ext  →  IOTA.OperatorBridge  →  GAF (context, record)  →  TERMS (candidate S_j)
+
+Data Objects (DO):
+    DO     →  IOTA.ImportPipeline  →  Σ_IOTA(DO), JOT/SPOT   →  GAF (admissibility) → TERMS
+
+Key Boundaries:
+    - DOT/O_ext remain external, operator-level, non-collapsing.
+    - DO remain external data sources, never governing.
+    - IOTA bridges; GAF governs context; TERMS remains sovereign
 
 ============================================================
 REFERENCES
