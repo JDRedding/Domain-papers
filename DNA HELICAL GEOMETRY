@@ -42,7 +42,7 @@ Iteration rule:
 xₙ₊₁ = S(θ,h)xₙ
 gₙ   = g₀ σⁿ
 
-This defines a cyclic subgroup of **[SE(3)](ca://s?q=Explain_SE3_in_simple_terms)**.
+This defines a cyclic subgroup of SE(3).
 
 
 III. ATOMIC ORBITS
@@ -76,7 +76,7 @@ These are the “flower” symmetry patterns.
 IV. DNA PARAMETER SETS
 ───────────────────
 
-          bp/turn     Rotation      Handedness
+bp/turn     Rotation      Handedness
 
 A-DNA       11         +32.7°         Right
 B-DNA      10.5        +34.3°         Right
