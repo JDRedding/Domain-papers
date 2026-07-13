@@ -3,6 +3,75 @@ LANGUAGE STRUCTURED GEOMETRY
 Including special topics (e.g., bilingualism, multilingualism)
 Class here interdisciplinary works on language and literature
 
+TRIAD DIAGRAM
+============================================================
+
+                    +-----------------------------+
+                    |         SID_meta            |
+                    |  (Semantic–Interaction)     |
+                    +-----------------------------+
+                               |
+                               |  governs
+                               v
++---------------------------------------------------------------+
+|                           SID_struct                          |
+|      (Phonology / Morphology / Syntax / Writing Systems)      |
++---------------------------------------------------------------+
+                               |
+                               |  instantiates
+                               v
++---------------------------------------------------------------+
+|                           SID_object                          |
+|      (Language Families 420–499: EN, DE, FR, ES, LAT, GR…)    |
++---------------------------------------------------------------+
+
+PED LAYERS (POWER–EVALUATION–DYNAMICS)
+
+    SID_meta   → PED_meta
+    meaning, reference, pragmatics, terminology, acquisition
+
+    SID_struct → PED_struct
+    synchronic analysis, encoding, diachrony, indexing
+
+    SID_object → PED_object
+    orthography, dialects, historical layers
+
+RDG-MODES (RELATIONAL MODES)
+
+    SID_meta   → semantic / pragmatic / cognitive modes
+    SID_struct → structural / temporal / acoustic / syntactic modes
+    SID_object → analytic/synthetic / tonal/non-tonal / historical modes
+
+FULL TRIAD (COMPOSITE)
+
+                +-------------------------------------------+
+                |                 SID_meta                  |
+                |   global semantic–interaction operators   |
+                +-------------------------------------------+
+                               |
+                               v
+                +-------------------------------------------+
+                |                 SID_struct                |
+                |   linguistic core operators               |
+                +-------------------------------------------+
+                               |
+                               v
+                +-------------------------------------------+
+                |                 SID_object                |
+                |   language manifold                       |
+                +-------------------------------------------+
+
+                PED overlays each tier
+                RDG-modes define relational behavior
+
+RDG PATTERN 
+    Operators first
+    Objects second
+    Interactions third
+
+SID_meta ∪ SID_struct ∪ SID_object
+ with PED and RDG-modes providing operational geometry
+
 0. GLOBAL RDG ORIENTATION
 ============================================================
 Geometry of Linguistic Objects
