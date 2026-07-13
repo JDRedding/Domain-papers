@@ -215,12 +215,10 @@ RDG:
    Spectral curvature, modular geometry, orbit stratification,
    discovery operators linking Monster representations to modular forms.
 
-============================================================
-EXAMPLE: ONE MONSTER ELEMENT THROUGH SID–PED–RDG
-============================================================
+
+5. EXAMPLE: ONE MONSTER ELEMENT THROUGH SID–PED–RDG
 
 SID LAYER — STRUCTURAL INPUT
-------------------------------------------------------------
 Choose a Monster element:
    g ∈ 𝕄  with order p  (one of Ogg’s primes)
 
@@ -236,9 +234,7 @@ Structural coefficients:
 SID summary:
    (g, V_n) provide the raw structural carriers for Moonshine.
 
-
 PED LAYER — OPERATIONAL DYNAMICS
-------------------------------------------------------------
 Define the McKay–Thompson series:
    T_g(q) = q^{-1} + Σ_{n ≥ 0} a_n(g) q^n
 
@@ -257,8 +253,7 @@ PED summary:
    Monster action + modular flow produce the q-dynamic signature
    encoded in T_g(q).
 
-
-5. RELATIONAL GEOMETRY
+6. RELATIONAL GEOMETRY
    The modular geometry of T_g(q) reveals the Moonshine
    correspondence as a geometric fixed point of the Monster–modular
    coupling.
@@ -280,7 +275,7 @@ Discovery boundary:
       (SID × PED) → RDG
       yields genus-0 Moonshine correspondence for g.
 
-6. PURPOSE 
+7. PURPOSE 
 
 This establishes the RDG-compatible foundation for:
 
@@ -290,7 +285,7 @@ This establishes the RDG-compatible foundation for:
    - Monster representation packets,
    - replicable function dynamics.
 
-7. FURTHER READING
+8. FURTHER READING
 
 ---
 Monster & VOAs
