@@ -215,8 +215,29 @@ RDG:
    Spectral curvature, modular geometry, orbit stratification,
    discovery operators linking Monster representations to modular forms.
 
+5. RELATIONAL GEOMETRY
+   The modular geometry of T_g(q) reveals the Moonshine
+   correspondence as a geometric fixed point of the Monster–modular
+   coupling.
 
-5. EXAMPLE: ONE MONSTER ELEMENT THROUGH SID–PED–RDG
+Curvature signal:
+   T_g(q) is a Hauptmodul for Γ0(p)^+
+   (genus-0 modular curve)
+
+Orbit strata:
+   Orb_RDG(n) = { a_n(h) : h ∈ conj(g) }
+   Coefficient packets align with Monster conjugacy classes.
+
+Character geometry:
+   χ_n(g) = a_n(g)
+   Encodes spectral curvature of g acting on V_n.
+
+Discovery boundary:
+   Fixed-point condition:
+      (SID × PED) → RDG
+      yields genus-0 Moonshine correspondence for g.
+
+6. EXAMPLE: ONE MONSTER ELEMENT THROUGH SID–PED–RDG
 
 SID LAYER — STRUCTURAL INPUT
 Choose a Monster element:
@@ -252,28 +273,6 @@ Replication operator:
 PED summary:
    Monster action + modular flow produce the q-dynamic signature
    encoded in T_g(q).
-
-6. RELATIONAL GEOMETRY
-   The modular geometry of T_g(q) reveals the Moonshine
-   correspondence as a geometric fixed point of the Monster–modular
-   coupling.
-
-Curvature signal:
-   T_g(q) is a Hauptmodul for Γ0(p)^+
-   (genus-0 modular curve)
-
-Orbit strata:
-   Orb_RDG(n) = { a_n(h) : h ∈ conj(g) }
-   Coefficient packets align with Monster conjugacy classes.
-
-Character geometry:
-   χ_n(g) = a_n(g)
-   Encodes spectral curvature of g acting on V_n.
-
-Discovery boundary:
-   Fixed-point condition:
-      (SID × PED) → RDG
-      yields genus-0 Moonshine correspondence for g.
 
 7. PURPOSE 
 
