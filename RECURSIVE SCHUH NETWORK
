@@ -1,0 +1,70 @@
+RECURSIVE SCHUH NETWORK
+(Owen Schuh 2011 hand‑drawn recursive artwork)
+=========================================
+
+1. CORE ITERATION (Atomic Primitive)
+   x_{n+1} = f(x_n)
+   -----------------------------------------
+   x_n : scalar/vector state at step n
+   f   : local update (logistic, threshold, affine, etc.)
+   → Every operator below is a lifted version of this.
+
+2. SID STRUCTURAL UPDATE (Degree / Branch)
+   d_{i,n+1} = Σ_{j ∈ N(i)} g(d_{j,n})
+   -----------------------------------------
+   N(i) : neighbor set
+   g    : local transform (sum, max, clamp, sigmoid)
+
+3. PED OPERATIONAL PROPAGATION (Weighted Flow)
+   S_{k+1,i} = f( Σ_j a_{ij} * S_{k,j} )
+   ----------------------------------------
+   a_{ij} : adjacency weight
+   f      : activation (sign, tanh, step, ReLU-like)
+
+4. RDG GLOBAL RECURRENCE (Full-System Evolution)
+   X_n = g(X_{n-1}, θ)
+   ----------------------------------------
+   X_n : full grid/graph state vector
+   θ   : fixed parameters
+   g   : global transformation (composition of locals)
+
+5. GEOMETRIC BRANCH EXTENSION (Dendritic Growth)
+   L_{n+1} = r * L_n + Θ(α)
+   -----------------------------------------
+   L_n  : branch length/level
+   r    : scaling factor
+   Θ(α) : directional/angle offset
+
+6. EMERGENT POTENTIAL / FLOW (Global Accumulation)
+   Φ(i) = Σ_{paths p: i→j} w(p)
+   w(p) = Π_{(u,v) ∈ p} h(a_{uv})
+   ---------------------------------------
+   h     : edge-weight transform
+   paths : recursively accumulated
+
+=========================================
+UNIFIED TRI-MODE RDG FORM 
+(SID + PED + RDG)
+=========================================
+
+SID (Structure):
+   Graph G = (V, E)
+   Adjacency A = (a_{ij})
+   Neighbor sets N(i)
+
+PED (Dynamics):
+   Local operators:
+      F(x), G(d), H(a,S), Θ(α)
+
+RDG (Relational Geometry):
+   Global evolution:
+      X_{n+1} = Γ(X_n)
+
+   Composite recursive generator:
+      Γ = F ⊕ G ⊕ H ⊕ Θ
+
+========================================
+This operator block treats the entire recursive artwork as a
+single iterative generator acting on a structured grid/graph,
+producing organic recursive loops and branching structures.
+========================================
