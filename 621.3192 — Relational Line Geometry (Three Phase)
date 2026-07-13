@@ -1,8 +1,12 @@
-
-
 Relational Line Geometry – Three Phase
-An RDG‑native geometric formalization of three‑phase line voltage behavior, sign‑cycle structure, and √3 quotient projection.
 
+DOMAIN: 621.3192 — Electric Power Transmission (Three‑Phase Systems)
+SUBSTRATE: RDG–MFE–Q (Relational Dynamic Geometry, Momentum Flux Engine, Quotient)
+ABSTRACT:
+  An RDG‑native geometric formalization of three‑phase line voltage behavior,
+  sign‑cycle structure, and √3 quotient projection. Reinterprets classical
+  electrical engineering (phase → line transformation) as a tri‑mode SID
+  geometry with Q‑moderated relational lift.
 
 RDG–MFE–Q  TRI-MODE ENGINE — POSITIVE–POSITIVE–NEGATIVE
 
