@@ -1,0 +1,42 @@
+
+
+Relational Line Geometry – Three Phase
+
+RDG–MFE–Q  TRI-MODE ENGINE — POSITIVE–POSITIVE–NEGATIVE
+
+RDG = Relational Dynamic Geometry
+      3 locked modes: R (Structure), D (Interaction), G (Dynamics)
+      120° rotational separation
+MFE = Momentum Flux Engine
+      smooth rotational power, constant torque envelope
+Q   = Quotient Controller
+      √3 scaling between phase-space and line-space
+
+RDG PHASE MODES
+  v_R(t) = V_m · sin(ωt)
+  v_D(t) = V_m · sin(ωt − 120°)
+  v_G(t) = V_m · sin(ωt − 240°)
+
+SIGN CYCLE (every 60°)
+  30°–90°     ++−     90°–150°    +−−     150°–210°   −−+
+  210°–270°   −+−     270°–330°   −++     330°–30°    +−+
+
+++− EXAMPLE at ωt ≈ 60° (V_m = 1)
+  Phase   Sign   Value          Line (Q projection)
+  v_R     +      +0.866         V_RD ≈ +1.732
+  v_D     +      +0.000         V_DG ≈ +1.732
+  v_G     −      -0.866         V_GR ≈ -1.732
+
+MFE POWER FLOW (constant)
+  P_total = v_R i_R + v_D i_D + v_G i_G ≈ 3 V_ph I_ph cosφ
+
+Q-BOX CONTROLLER
+  Q = V_line / V_phase = √3 ≈ 1.732
+  230 V phase → 400 V line    |    254 V phase → 440 V line
+  Never additive (no 660 V)
+
+WHY ++− EXISTS (RDG-native)
+  • RDG 120° lock creates rotating imbalance
+  • Two modes share sign, one opposes → drives MFE rotation
+  • Q lifts the geometry from phase to line space
+  • Result: smooth, constant-torque flux engine
