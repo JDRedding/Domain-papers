@@ -1,52 +1,26 @@
-QUANTUM HARMONIC OSCILLATOR — RDG FORM
+================================================================================
+RDG FORM — QUANTUM HARMONIC OSCILLATOR
+================================================================================
 
 SID (Structure):
     ξ = sqrt(mω/ħ) x
     H_n(ξ)  Hermite polynomials
     ψ_n(x) = N H_n(ξ) exp(-ξ²/2)
 
+SID.Structure:
+    - Quadratic potential bowl:  V(x) = (1/2) m ω² x²
+    - Canonical coordinate:      x
+    - Canonical momentum:        p = -i ħ ∂/∂x
+    - Dimensionless coordinate:  ξ = sqrt(mω/ħ) x
+    - Hermite basis:             {H_n(ξ)}  (orthogonal polynomial tower)
+
+--------------------------------------------------------------------------------
+
 PED (Dynamics):
     a  = sqrt(mω/(2ħ)) ( x + (i/(mω)) p )
     a† = sqrt(mω/(2ħ)) ( x - (i/(mω)) p )
     N = a† a
     H = ħω (N + 1/2)
-
-Q-slice (Closure):
-    exp(-ξ²/2) moderates the Hermite tower
-    ensures ∫ |ψ_n|² dx = 1
-    enforces finite-energy closure
-
-Energy:
-    E_n = ħω(n + 1/2)
-
-Orthogonality:
-    ∫ ψ_m ψ_n dx = δ_mn
-
-R-mode (Structure):
-    - Quadratic geometry
-    - Hermite polynomial basis
-    - Dimensionless coordinate ξ
-
-D-mode (Interaction):
-    - Ladder operators (a, a†)
-    - Commutation relations [a, a†] = 1
-    - Number operator N
-
-G-mode (Dynamics):
-    - Energy tower E_n = ħω(n + 1/2)
-    - Time evolution exp(-iHt/ħ)
-    - Propagation via ladder operators
-
-Q-slice:
-    - Gaussian moderation:
-        exp(-ξ²/2)
-    - Closure under Hermite tower:
-        ψ_n(x) = N H_n(ξ) exp(-ξ²/2)
-    - Ensures:
-        • square-integrability
-        • orthogonality
-        • finite energy
-        • bounded propagation
 
 PED.Power:
     - Hamiltonian quadratic form:
@@ -68,9 +42,46 @@ PED.Dynamics:
     - Time evolution:
         |n(t)⟩ = exp(-i ω (n + 1/2) t) |n⟩
 
-SID.Structure:
-    - Quadratic potential bowl:  V(x) = (1/2) m ω² x²
-    - Canonical coordinate:      x
-    - Canonical momentum:        p = -i ħ ∂/∂x
-    - Dimensionless coordinate:  ξ = sqrt(mω/ħ) x
-    - Hermite basis:             {H_n(ξ)}  (orthogonal polynomial tower)
+--------------------------------------------------------------------------------
+
+Q-slice (Closure):
+    - Gaussian moderation:
+        exp(-ξ²/2)
+    - Closure under Hermite tower:
+        ψ_n(x) = N H_n(ξ) exp(-ξ²/2)
+    - Ensures:
+        • square-integrability
+        • orthogonality
+        • finite energy
+        • bounded propagation
+
+--------------------------------------------------------------------------------
+
+Energy:
+    E_n = ħω(n + 1/2)
+
+Orthogonality:
+    ∫ ψ_m ψ_n dx = δ_mn
+
+--------------------------------------------------------------------------------
+
+RDG Tri-Mode Mapping:
+
+R-mode (Structure):
+    - Quadratic geometry
+    - Hermite polynomial basis
+    - Dimensionless coordinate ξ
+
+D-mode (Interaction):
+    - Ladder operators (a, a†)
+    - Commutation relations [a, a†] = 1
+    - Number operator N
+
+G-mode (Dynamics):
+    - Energy tower E_n = ħω(n + 1/2)
+    - Time evolution exp(-iHt/ħ)
+    - Propagation via ladder operators
+
+================================================================================
+END RDG QHO BLOCK
+================================================================================
