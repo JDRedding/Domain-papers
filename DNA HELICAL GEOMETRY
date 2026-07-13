@@ -1,16 +1,14 @@
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                RDG INTERPRETATION OF DNA HELICAL GEOMETRY                   ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+DNA HELICAL GEOMETRY
 
 I. GENERIC HELICAL MODEL
-──────────────────────────────────────────────────────────────────────────────
+──────────────────────
 
 Backbone Curve
 
               ⎡ R cos(t) ⎤
 r(t) =        ⎢ R sin(t) ⎥
-              ⎢  P·t      ⎥
-              ⎣ ──────    ⎦
+              ⎢  P·t     ⎥
+              ⎣ ──────  ⎦
                 2π
 
 Parameters:
@@ -22,13 +20,13 @@ Left-handed Z-DNA
 
               ⎡ R cos(t) ⎤
 r(t) =        ⎢-R sin(t) ⎥
-              ⎢  P·t      ⎥
-              ⎣ ──────    ⎦
+              ⎢  P·t     ⎥
+              ⎣ ──────  ⎦
                 2π
 
 
 II. SCREW OPERATOR
-──────────────────────────────────────────────────────────────────────────────
+──────────────────
 
 Single generator:
 
@@ -48,7 +46,7 @@ This defines a cyclic subgroup of **[SE(3)](ca://s?q=Explain_SE3_in_simple_terms
 
 
 III. ATOMIC ORBITS
-──────────────────────────────────────────────────────────────────────────────
+────────────────
 
 Initial atomic coordinates:
 
@@ -72,11 +70,11 @@ produces orbit rosettes:
       ✶                 ✶
            ✶ ✶ ✶ ✶ ✶
 
-These are thr “flower” symmetry patterns.
+These are the “flower” symmetry patterns.
 
 
 IV. DNA PARAMETER SETS
-──────────────────────────────────────────────────────────────────────────────
+───────────────────
 
           bp/turn     Rotation      Handedness
 
@@ -95,7 +93,7 @@ The generator σ remains the same.
 
 
 V. GROUP THEORY
-──────────────────────────────────────────────────────────────────────────────
+──────────────
 
 Generator:
 
@@ -112,24 +110,23 @@ DNA is therefore a discrete screw subgroup of
 
 
 VI. RDG INTERPRETATION
-──────────────────────────────────────────────────────────────────────────────
+────────────────────
 
-                  SAME GENERATOR
-                        │
-                        ▼
+              SAME GENERATOR
+
+                     │
+                     ▼
 
              σ = (Rz(θ), h)
-
-                        │
-         ┌──────────────┼──────────────┐
-         │              │              │
-         ▼              ▼              ▼
-
+                      |
+     ┌──────────────┼──────────────┐
+     │                │               │
+     ▼               ▼               ▼
       A-DNA          B-DNA          C-DNA
-         │              │              │
-         └──────────────┼──────────────┘
-                        │
-                        ▼
+      │               │               │
+      └─────────────┼──────────────┘
+                      │
+                      ▼
                      Z-DNA
 
 Only parameter values change.
@@ -137,25 +134,29 @@ The generator does not.
 
 
 VII. RDG TRIAD
-──────────────────────────────────────────────────────────────────────────────
+────────────
 
-┌────────────────────────────┬──────────────────────────────────────────────┐
-│ RDG Layer                  │ DNA Interpretation                           │
-├────────────────────────────┼──────────────────────────────────────────────┤
-│ SID.Structure              │ Screw generator σ = (Rz(θ), h)               │
-│                            │ Fundamental operator                         │
-├────────────────────────────┼──────────────────────────────────────────────┤
-│ PED.Power                  │ Twist angle θ                                │
-│ PED.Evaluation             │ Radius R, Pitch P, Atomic offsets            │
-│ PED.Dynamics               │ Iteration n, Rise h                          │
-├────────────────────────────┼──────────────────────────────────────────────┤
-│ RDG.Relational Geometry    │ Projected atomic orbits                      │
-│                            │ Flower symmetry / curvature signatures       │
-└────────────────────────────┴──────────────────────────────────────────────┘
+RDG Layer       
+│ DNA Interpretation                           
+
+SID.Structure 
+│ Screw generator σ = (Rz(θ), h)               
+
+ Fundamental operator
+│ PED.Power                  
+│ Twist angle θ                                │
+│ PED.Evaluation             
+│ Radius R, Pitch P, Atomic offsets            │
+│ PED.Dynamics               
+│ Iteration n, Rise h                          
+
+RDG.Relational Geometry    
+│ Projected atomic orbits                      │                
+│ Flower symmetry / curvature signatures       
 
 
 VIII. TWO-TIER REPRESENTATION
-──────────────────────────────────────────────────────────────────────────────
+──────────────────────────
 
 Tier 1 — Operator Space
 
@@ -176,8 +177,8 @@ Orbit Plot
 Top-view Flower Geometry
 
 
-IX. RDG CONCLUSION
-──────────────────────────────────────────────────────────────────────────────
+IX. CONCLUSION
+─────────────────
 
 Same recursive generator
         ↓
@@ -189,6 +190,4 @@ Different projected orbit geometries
         ↓
 Different curvature signatures
 
-DNA forms A, B, C, and Z are parameterizations of a single screw-symmetry
-process in SE(3), making DNA a natural instance of RDG recursive geometric
-dynamics.
+DNA forms A, B, C, and Z are parameterizations of a single screw-symmetry process in SE(3), making DNA a natural instance of RDG recursive geometric dynamics.
