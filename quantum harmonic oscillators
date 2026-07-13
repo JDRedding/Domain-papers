@@ -1,0 +1,23 @@
+QUANTUM HARMONIC OSCILLATOR — RDG FORM
+
+SID (Structure):
+    ξ = sqrt(mω/ħ) x
+    H_n(ξ)  Hermite polynomials
+    ψ_n(x) = N H_n(ξ) exp(-ξ²/2)
+
+PED (Dynamics):
+    a  = sqrt(mω/(2ħ)) ( x + (i/(mω)) p )
+    a† = sqrt(mω/(2ħ)) ( x - (i/(mω)) p )
+    N = a† a
+    H = ħω (N + 1/2)
+
+Q-slice (Closure):
+    exp(-ξ²/2) moderates the Hermite tower
+    ensures ∫ |ψ_n|² dx = 1
+    enforces finite-energy closure
+
+Energy:
+    E_n = ħω(n + 1/2)
+
+Orthogonality:
+    ∫ ψ_m ψ_n dx = δ_mn
