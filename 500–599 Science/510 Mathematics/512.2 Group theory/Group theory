@@ -1,0 +1,269 @@
+                    GROUP THEORY
+============================================================
+
+1. STRUCTURE
+   A group is a pair (G, ★) where:
+     ★ : G × G → G     (binary operation)
+
+   The axioms:
+
+   (1) Closure
+       For all a, b ∈ G:
+         a ★ b ∈ G
+
+   (2) Associativity
+       For all a, b, c ∈ G:
+         (a ★ b) ★ c = a ★ (b ★ c)
+
+   (3) Identity
+       There exists e ∈ G such that for all a ∈ G:
+         e ★ a = a ★ e = a
+
+   (4) Inverse
+       For each a ∈ G there exists a⁻¹ ∈ G such that:
+         a ★ a⁻¹ = a⁻¹ ★ a = e
+
+   If additionally:
+         a ★ b = b ★ a   for all a, b ∈ G
+   then (G, ★) is an Abelian group.
+
+------------------------------------------------------------
+
+2. EXAMPLES
+
+   (A) Additive integers
+       (ℤ, +)
+       Operation: addition
+       Identity: 0
+       Inverse: −a
+
+   (B) Nonzero real numbers
+       (ℝ \ {0}, ×)
+       Operation: multiplication
+       Identity: 1
+       Inverse: 1/a
+
+   (C) Permutation groups
+       Sₙ = all bijections on {1,...,n}
+       Operation: composition
+       Non-Abelian for n ≥ 3
+
+   (D) Symmetry groups
+       Rotations/reflections preserving a shape
+       Example: Dihedral group Dₙ
+
+------------------------------------------------------------
+
+3. STRUCTURAL PILLARS
+
+   (A) Group Actions
+       A group G acts on a set X via:
+         G × X → X
+       Encodes symmetry, orbits, stabilizers.
+
+   (B) Homomorphisms
+       φ : G → H such that:
+         φ(a ★ b) = φ(a) ★ φ(b)
+       Kernels, images, quotient groups.
+
+   (C) Classification
+       Finite simple groups:
+         - Cyclic of prime order
+         - Alternating Aₙ (n ≥ 5)
+         - Lie-type families
+         - 26 sporadic groups
+
+   (D) Representation Theory
+       Linear actions:
+         ρ : G → GL(V)
+       Characters, irreducibles, modules.
+
+------------------------------------------------------------
+
+4. APPLICATIONS
+
+   Physics:
+     Gauge groups, particle symmetries, crystallography.
+
+   Chemistry:
+     Molecular point groups, reaction symmetry.
+
+   Computer Science:
+     Automata, error-correcting codes.
+
+   Cryptography:
+     Cyclic groups, elliptic curves.
+
+   Mathematics:
+     Galois theory, geometry, topology.
+
+
+        GROUP THEORY — RDG-COMPATIBLE STRUCTURAL FORM
+------------------------------------------------------------
+
+RDG TRI-MODE DECOMPOSITION:
+   SID = Structural (typed spaces, admissible sets, closure rules)
+   PED = Power/Evaluation/Dynamics (operations, morphisms, flows)
+   RDG = Relational Discovery Geometry (actions, curvature, reps)
+
+------------------------------------------------------------
+A. SID LAYER — STRUCTURAL PRIMITIVES
+------------------------------------------------------------
+
+SID.1  Typed Space
+   G_[unit] : admissible carrier set
+   ★ : G_[unit] × G_[unit] → G_[unit]
+       (binary operator typed over G_[unit])
+
+SID.2  Closure Condition
+   For all a, b ∈ G_[unit]:
+       a ★ b ∈ G_[unit]
+
+SID.3  Associativity Condition
+   For all a, b, c ∈ G_[unit]:
+       (a ★ b) ★ c = a ★ (b ★ c)
+
+SID.4  Identity Element
+   ∃ e ∈ G_[unit] such that:
+       e ★ a = a ★ e = a
+
+SID.5  Inverse Element
+   ∀ a ∈ G_[unit], ∃ a⁻¹ ∈ G_[unit] such that:
+       a ★ a⁻¹ = a⁻¹ ★ a = e
+
+SID.6  Abelian Condition (optional)
+   ∀ a, b ∈ G_[unit]:
+       a ★ b = b ★ a
+
+------------------------------------------------------------
+B. PED LAYER — OPERATIONAL ENGINE
+------------------------------------------------------------
+
+PED.1  Operation Engine
+   Power(M,F) → evaluation of ★ over G_[unit]
+   Evaluation(p,P) → morphism-level consistency
+   Dynamics(Q_slice) → invertibility + identity stability
+
+PED.2  Homomorphisms
+   φ : G → H
+   PED condition:
+       φ(a ★ b) = φ(a) ★ φ(b)
+   Kernel:
+       Ker(φ) = { x ∈ G : φ(x) = e_H }
+   Quotient:
+       G / Ker(φ)  (PED-stable factorization)
+
+PED.3  Group Actions
+   α : G × X → X
+   PED-flow:
+       α(g₁ ★ g₂, x) = α(g₁, α(g₂, x))
+   Stabilizer:
+       Stab(x) = { g ∈ G : α(g, x) = x }
+   Orbit:
+       Orb(x) = { α(g, x) : g ∈ G }
+
+PED.4  Representations
+   ρ : G → GL(V)
+   PED-linearization:
+       ρ(a ★ b) = ρ(a) · ρ(b)
+   Character:
+       χ(g) = trace(ρ(g))
+
+PED.5  Classification Engine
+   Simple groups = PED-irreducible units:
+       - Cyclic of prime order
+       - Alternating Aₙ (n ≥ 5)
+       - Lie-type families
+       - 26 sporadic groups
+
+------------------------------------------------------------
+C. RDG LAYER — RELATIONAL DISCOVERY GEOMETRY
+------------------------------------------------------------
+
+RDG.1  Action Geometry
+   RDG curvature emerges from:
+       (G acting on X)
+   Relation operator Ξ:
+       Ξ : (SID × PED) → RDG
+       Ξ encodes orbit structure, stabilizer geometry,
+       and admissible quotient formation.
+
+RDG.2  Morphism Curvature
+   Homomorphisms induce:
+       RDG-kernels (flat directions)
+       RDG-images (curved symmetry sectors)
+   Quotients correspond to:
+       collapse of SID-structure along PED-null flows.
+
+RDG.3  Representation Geometry
+   ρ : G → GL(V)
+   RDG curvature:
+       eigenstructure of ρ(g)
+       character table = spectral geometry of G
+   Irreducibles = RDG-minimal curvature packets.
+
+RDG.4  Symmetry Manifolds
+   Physical/chemical/algorithmic systems:
+       symmetry group G
+       configuration space X
+       RDG-action:
+           G ⊲ X
+       Curvature = constraints, invariants, conserved quantities.
+
+RDG.5  Discovery Boundary
+   RDG identifies:
+       - invariant subspaces
+       - orbit stratifications
+       - quotient geometries
+       - spectral decompositions
+   These form the “geometry of symmetry” underlying group theory.
+
+------------------------------------------------------------
+D. EXAMPLES IN TRI-MODE FORM
+------------------------------------------------------------
+
+(A) (ℤ, +)
+   SID: integers + addition
+   PED: additive homomorphisms, kernels = nℤ
+   RDG: lattice geometry, translation symmetry
+
+(B) (ℝ\{0}, ×)
+   SID: nonzero reals + multiplication
+   PED: scaling morphisms
+   RDG: dilation geometry
+
+(C) Sₙ
+   SID: permutations on {1,...,n}
+   PED: composition engine, cycle structure
+   RDG: orbit geometry on n-point configurations
+
+(D) Dₙ
+   SID: rotations + reflections
+   PED: semidirect product structure
+   RDG: polygon symmetry manifold
+
+------------------------------------------------------------
+E. SUMMARY 
+------------------------------------------------------------
+
+Group theory studies algebraic symmetry.
+  
+The axioms define minimal structure.
+The power comes from:
+
+     - actions
+     - morphisms
+     - representations
+     - classification
+     - applications
+
+SID gives the admissible structural shell.
+PED supplies the operational/morphism engine.
+RDG reveals the geometric, spectral, and relational content.
+
+Group theory = symmetry encoded as:
+   SID (structure)
+   PED (operation)
+   RDG (geometry)
+
+============================================================
