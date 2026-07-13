@@ -30,3 +30,16 @@ STRUCTURAL DUALITY
 
 Valid when circuit size << wavelength.
 Beyond that → distributed/transmission line models.
+
+-----------------------------------------------------------
+
+STRUCTURAL DUALITY (SERIES vs PARALLEL)
+- R and L: additive in series, harmonic in parallel
+- C: harmonic in series, additive in parallel
+-----------------------------------------------------------
+
+RDG MAPPING (LUMPED REGIME)
+SID: structural primitives R, C, L as 0D objects
+PED: dynamic laws (V=IR, Q=CV, V=L·di/dt)
+Q-slice: moderates temporal propagation only (no spatial layer)
+No MFE geometry; no distributed fields
