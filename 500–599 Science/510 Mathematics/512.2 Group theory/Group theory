@@ -1,6 +1,50 @@
                     GROUP THEORY
 ============================================================
 
+This file is an educational guide on group theory, 
+structured in two complementary formats:
+
+Classical Presentation (Sections 1-4)
+Structure: Defines a group as a set with a binary operation 
+satisfying closure, associativity, identity, and inverse 
+axioms
+
+Examples: Integer addition, nonzero reals under 
+multiplication, permutation groups, dihedral symmetry
+groups
+
+Pillars: Group actions, homomorphisms, classification of 
+finite simple groups, and representation theory
+
+Applications: Physics (gauge symmetry), chemistry 
+(molecular symmetry), computer science, cryptography, and 
+pure mathematics
+
+RDG-Compatible Tri-Mode Form (Sections A-E)
+The second half reframes group theory using a custom 
+SID-PED-RDG decomposition:
+
+SID (Structural): Typed spaces and closure rules
+PED (Operational): Operations, morphisms, and dynamics—
+including homomorphisms, actions, and representations
+
+RDG (Relational Discovery Geometry): Geometric 
+interpretation of orbits, stabilizers, kernels, and 
+spectral structure
+
+This tri-mode lens emphasizes that group theory encodes 
+symmetry across three dimensions: structural 
+foundations, operational mechanisms, and geometric/
+relational content.
+
+The file essentially serves as both a standard 
+mathematical reference and a demonstration of how 
+classical algebraic concepts can be reinterpreted 
+through the RDG framework used elsewhere in the 
+Domain-papers repository.
+
+============================================================
+
 1. STRUCTURE
    A group is a pair (G, ★) where:
      ★ : G × G → G     (binary operation)
