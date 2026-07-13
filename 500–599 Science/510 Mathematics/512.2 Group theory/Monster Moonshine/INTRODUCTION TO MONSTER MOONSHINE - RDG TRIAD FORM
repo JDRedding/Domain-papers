@@ -54,6 +54,28 @@ PED supplies the operational engines (actions, morphisms, q-dynamics).
 RDG supplies the relational geometry (spectral curvature, orbit strata,
 modular flow, and discovery operators).
 
+---
+The Monster & VOAs (core Moonshine sources)
+These are the foundational texts for Monstrous Moonshine:
+
+Borcherds — construction of the Monster Lie algebra; proof of Moonshine.
+Frenkel–Lepowsky–Meurman — construction of the Moonshine module 𝑉♮.
+Conway–Norton — original Moonshine conjectures.
+Tuite — uniqueness of the Moonshine module.
+Zhu — modular invariance of VOA characters.
+
+These are the “sun” behind the Monster’s “moonlight.”
+---
+Knot theory & topological field theory 
+
+Burke–Zieschang — knots.
+Turaev — quantum invariants of knots and 3‑manifolds.
+Kodiyalam–Sunder — TQFT from subfactors.
+Hsu — quilts and the 6‑transposition property.
+
+These are the topological sources behind the link, twists, and the origin of S and T.
+---
+
 1. SID LAYER — STRUCTURAL PRIMITIVES FOR MOONSHINE
 
 SID.1  Monster Group Carrier
@@ -160,3 +182,42 @@ This establishes the RDG-compatible foundation for:
    - Monster representation packets,
    - replicable function dynamics.
 
+6. FURTHER READING
+
+---
+Monster & VOAs
+---
+J.H.Conway and S.P.Norton, “Monstrous moonshine”, Bull.London Math.Soc.11
+(1979),308–339.
+
+J.H.Conway and N. J.A.Sloane, Sphere Packings, Lattices and Groups, 3rd edn
+(Springer,Berlin,1999).
+
+R.E.Borcherds, “Vertex algebras, Kac-Moody algebras, and the Monster”, Proc.
+Natl.Acad.Sci.(USA)83(1986),3068–3071.
+
+R.E.Borcherds, “Monstrous moonshine and monstrous Lie superalgebras”, Invent.
+math.109(1992)405–444.
+
+I. Frenkel, J. Lepowsky, and A. Meurman, Vertex Operator Algebras and the Monster
+(Academic Press, San Diego, 1988).
+
+M. Tuite, “On the relationship between Monstrous moonshine and the uniqueness of
+the Moonshine module”, Commun. Math. Phys. 166 (1995), 495–532.
+
+Y. Zhu, “Modular invariance of characters of vertex operator algebras”, J. Amer.
+Math. Soc. 9 (1996), 237–302.
+
+----
+Knot theory & topological field theory
+---
+G.Burke and H.Zieschang, Knots (deGruyter,Berlin,1995).
+
+V. G. Turaev, Quantum Invariants of Knots and 3-Manifolds (de Gruyter, Berlin,
+1994).
+
+V. Kodiyalam and V. S. Sunder, Topological Quantum Field Theories from Subfactors
+(Chapman & Hall, New York, 2001).
+
+T. Hsu, Quilts: Central Extensions, Braid Actions, and Finite Groups, Lecture Notes
+in Math 1731 (Springer, Berlin, 2000).
