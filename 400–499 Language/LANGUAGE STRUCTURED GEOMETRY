@@ -1,0 +1,140 @@
+LANGUAGE STRUCTURED GEOMETRY 
+============================================================
+Including special topics (e.g., bilingualism, multilingualism)
+Class here interdisciplinary works on language and literature
+
+0. GLOBAL RDG ORIENTATION
+============================================================
+Geometry of Linguistic Objects
+
+TIER A: META-LANGUAGE
+    - Operators governing meaning, reference, pragmatics, terminology,
+      acquisition, psycholinguistic dynamics.
+
+TIER B: OBJECT-LANGUAGE
+    - Operators governing structure of actual languages: phonology,
+      morphology, syntax, writing systems, dialects, historical change.
+
+RDG VIEW:
+    SID = Structure–Interaction–Dynamics of linguistic classes
+    PED = Power–Evaluation–Dynamics when applied to real artifacts
+    RDG-mode = Semantic / Syntactic / Historical / Applied geometry
+
+1. META-LANGUAGE OPERATORS 
+============================================================
+
+ PHILOSOPHY OF LANGUAGE
+    SID: semantic-logic operator
+    PED: presupposition, entailment, reference
+    RDG-mode: semantic geometry
+    NOTE: Intersects logic, philosophy, semiotics
+
+– TERMINOLOGY & LEXICOLOGY
+    SID: vocabulary-structure operator
+    PED: term formation, domain lexicons
+    RDG-mode: lexical geometry
+
+– PRAGMATICS & SEMIOTICS
+    SID: interaction operator
+    PED: discourse force, communicative context
+    RDG-mode: interaction geometry
+
+– SOCIOLINGUISTIC GROUPS & GEOGRAPHIC TREATMENT
+    SID: population-index operator
+    PED: ethnolinguistics, group variation
+    RDG-mode: population geometry
+
+2. LINGUISTIC CORE OPERATORS 
+============================================================
+
+ DESCRIPTIVE LINGUISTICS
+    SID: structural decomposition (phonology → morphology → syntax)
+    PED: synchronic analysis
+    RDG-mode: structural geometry
+
+ WRITING SYSTEMS
+    SID: symbol-encoding operator
+    PED: alphabets, ideographs, braille, punctuation
+    RDG-mode: encoding geometry
+
+ ETYMOLOGY
+    SID: diachronic operator
+    PED: word origins, historical development
+    RDG-mode: temporal geometry
+
+ DICTIONARIES
+    SID: lexical-index operator
+    PED: mapping lexical items → definitions
+    RDG-mode: index geometry
+
+ PHONOLOGY & PHONETICS
+    SID: sound-structure operator
+    PED: phonemes, suprasegmentals, morphophonology
+    RDG-mode: acoustic geometry
+
+ GRAMMAR
+    SID: syntactic-morphological operator
+    PED: word classes, syntax, sentence structure
+    RDG-mode: syntactic geometry
+
+ HISTORICAL LINGUISTICS & DIALECTOLOGY
+    SID: diachronic-variation operator
+    PED: dialects, patois, language change
+    RDG-mode: evolution geometry
+
+ APPLIED LINGUISTICS & USAGE
+    SID: prescriptive-usage operator
+    PED: translation, interpreting, second-language teaching
+    RDG-mode: applied geometry
+
+ SIGN LANGUAGES
+    SID: manual-visual operator
+    PED: sign systems, fingerspelling, linguistic structure
+    RDG-mode: manual-visual geometry
+
+3. LANGUAGE MANIFOLD
+============================================================
+Each language family = node in manifold.
+Operators instantiate with language-specific parameters.
+
+ ENGLISH
+ GERMANIC
+ FRENCH / ROMANCE
+ ITALIAN / ROMANIAN / SARDINIAN / ETC.
+ SPANISH / PORTUGUESE / GALICIAN
+ LATIN / ITALIC
+ GREEK / HELLENIC
+ OTHER LANGUAGES
+
+SID: phoneme inventory, morphology type, syntax rules
+PED: orthography, dialects, historical layers
+RDG-mode: analytic/synthetic, tonal/non-tonal, etc.
+
+4. RDG SYNTHESIS
+============================================================
+Functional calculus, not taxonomy.
+
+LAYER 1 — META-LANGUAGE
+    Rules for talking about language.
+
+LAYER 2 — STRUCTURAL OPERATORS 
+    Rules for analyzing language.
+
+LAYER 3 — LANGUAGE OBJECTS
+    Actual languages as geometric objects.
+
+RDG FORM:
+    SID_meta ∪ SID_struct ∪ SID_object
+    PED gives operational meaning in classification.
+
+
+5. INSIGHT
+============================================================
+
+The operator algebra:
+    - Meta-operators 
+    - Structural operators 
+    - Object instantiations
+
+ RDG pattern:
+    Operators first → Objects second → Interactions third.
