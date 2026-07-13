@@ -250,10 +250,11 @@ Monster module:
 Structural coefficients:
    dim(V_1) = 196884
    dim(V_2) = 21493760
-   etc.
+   ...
 
 SID summary:
-   (g, V_n) provide the raw structural carriers for Moonshine.
+   (g, V_n) supply the structural carriers for the Moonshine
+   correspondence.
 
 PED LAYER — OPERATIONAL DYNAMICS
 Define the McKay–Thompson series:
@@ -273,6 +274,29 @@ Replication operator:
 PED summary:
    Monster action + modular flow produce the q-dynamic signature
    encoded in T_g(q).
+
+RDG LAYER — RELATIONAL GEOMETRY
+Curvature signal:
+   T_g(q) is a Hauptmodul for Γ0(p)^+
+   (genus‑0 modular curve)
+
+Orbit strata:
+   Orb_RDG(n) = { a_n(h) : h ∈ conj(g) }
+   Coefficient packets align with Monster conjugacy classes.
+
+Character geometry:
+   χ_n(g) = a_n(g)
+   Encodes spectral curvature of g acting on V_n.
+
+Discovery boundary:
+   Fixed-point condition:
+      (SID × PED) → RDG
+      yields the genus‑0 Moonshine correspondence for g.
+
+RDG summary:
+   The modular geometry of T_g(q) reveals the Moonshine
+   correspondence as a geometric fixed point of the Monster–modular
+   coupling.
 
 7. PURPOSE 
 
