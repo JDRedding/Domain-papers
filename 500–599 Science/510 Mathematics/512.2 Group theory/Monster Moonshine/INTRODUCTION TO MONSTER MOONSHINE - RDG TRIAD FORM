@@ -42,6 +42,11 @@ forms—by treating it as a coherent three-layer system where structural
 carriers (SID) feed into operational engines (PED), which reveal 
 relational geometry (RDG).
 
+This document focuses on the Monster Moonshine sector of the RDG 
+program: the case where the algebraic carrier is the Monster group and 
+the modular outputs are genus‑0 Hauptmoduls. Generalised Moonshine 
+extends the same SID–PED–RDG structure.
+
 0. ABSTRACT 
 
 Why “Moonshine”?
@@ -146,6 +151,7 @@ PED.2  q-Dynamics
    These generate SL(2,ℤ), the modular group.
 
 PED.3  Moonshine Morphism
+
    Φ : 𝕄 → Aut(f(q))
    PED condition:
       Φ(g) acts by permuting coefficients or replicable sectors.
@@ -164,6 +170,11 @@ PED.5  Replication Operator
 3. RDG LAYER 
 
 RDG.1  Curvature of Modular Flow
+By curvature here we mean any quantitative measure of how far a
+modular object deviates from a generic or random q-series — e.g. 
+genus‑0 behavior, replication constraints, or unusually sparse 
+coefficient patterns
+
    Modular transformations induce RDG-curvature on q-expansions:
       RDG-curvature = deviation from trivial coefficient symmetry.
 
