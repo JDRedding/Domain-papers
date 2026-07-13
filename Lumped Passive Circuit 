@@ -1,0 +1,32 @@
+LUMPED-ELEMENT MODEL (0-DIMENSIONAL)
+====================================
+Assumptions:
+• Point objects (no internal fields)
+• Single V across, single I through
+• No propagation delay
+• Time-domain: ODEs only
+
+RESISTOR (R)
+Symbol:   ~\/\/~
+Law:      V = I * R
+Series:   R_T  = R1 + R2 + ...
+Parallel: 1/R_T = 1/R1 + 1/R2 + ...
+
+CAPACITOR (C)
+Symbol:   | |
+Law:      Q = C * V    (I = C dV/dt)
+Series:   1/C_T = 1/C1 + 1/C2 + ...
+Parallel: C_T   = C1 + C2 + ...
+
+INDUCTOR (L)
+Symbol:   ~~~ (coil)
+Law:      V = L * (di/dt)
+Series:   L_T  = L1 + L2 + ...
+Parallel: 1/L_T = 1/L1 + 1/L2 + ...
+
+STRUCTURAL DUALITY
+• R & L : additive in series, harmonic in parallel
+• C     : harmonic in series, additive in parallel
+
+Valid when circuit size << wavelength.
+Beyond that → distributed/transmission line models.
