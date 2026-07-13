@@ -1,0 +1,106 @@
+THEORY OF GENERALISED MOONSHINE 
+CORE BLUEPRINT (RDG FORM)
+
+1. MOONSHINE TRIPLE
+A Generalised Moonshine structure is a triple:
+
+   (A, F(A), M(A))
+
+SID: Algebraic carrier A
+   - finite group
+   - lattice
+   - Lie algebra / affine algebra
+   - quantum group
+   - subfactor / tensor category
+
+PED: Field-theoretic engine F(A)
+   - VOA
+   - CFT
+   - modular tensor category
+   - TQFT
+
+RDG: Modular/automorphic output M(A)
+   - characters, partition functions
+   - modular forms, automorphic functions
+   - S,T matrices, fusion coefficients
+   - knot / 3-manifold invariants
+
+2. AXIOMS OF THE THEORY
+
+AXIOM 1 — Field-Theoretic Realisation
+   Each admissible algebraic object A canonically generates:
+      F(A) = VOA/CFT/TQFT
+   capturing its representation geometry.
+
+AXIOM 2 — Modular Data Extraction
+   From F(A), extract:
+      S(A), T(A), N^c_ab(A)
+   satisfying:
+      - SL(2,Z) relations
+      - Verlinde formula
+      - integrality + positivity
+
+AXIOM 3 — Automorphic Output
+   Modular data + characters yield:
+      M(A) = {modular forms, automorphic objects, invariants}
+   with:
+      - genus classification
+      - congruence properties
+      - Galois symmetries
+
+AXIOM 4 — Recurrence Principle
+   The same S,T,fusion structures recur across:
+      VOAs, CFT, quantum groups, subfactors, TQFT, knots.
+   The theory explains this recurrence.
+
+3. CLASSIFICATION GOALS
+Goal 1 — Classify Moonshine Types
+   - Monster-type: trivial fusion ring, extreme genus-0
+   - Affine-type: rich fusion, standard modular forms
+   - Finite-group TQFT-type: group doubles
+   - Lattice-type: theta functions, Siegel forms
+
+Goal 2 — Organise by:
+   - fusion ring geometry
+   - modular data invariants
+   - genus / curvature regime
+   - topological realisation (3-manifolds, knots)
+   - automorphic complexity
+
+4. GENUS-0 AS A REGIME
+Genus-0 is not the definition of Moonshine.
+It is a curvature regime:
+   - modular curve is a sphere
+   - replication constraints
+   - extreme modular symmetry
+
+Higher-genus regimes are equally valid:
+   - mapping class group representations
+   - automorphic forms beyond SL(2,Z)
+   - geometric Moonshine in higher dimensions
+
+5. RDG TRIAD INTERPRETATION
+SID:
+   A = algebraic carrier (group, lattice, algebra, subfactor)
+
+PED:
+   F(A) = field-theoretic engine (VOA/CFT/TQFT)
+   S,T,N = operational modular data
+
+RDG:
+   M(A) = modular/automorphic geometry
+   curvature, genus, orbit strata, invariants
+
+Generalised Moonshine = classification of the functor:
+   A  →  (F(A), M(A))
+
+6. MONSTROUS MOONSHINE AS A SPECIAL CASE
+A = Monster group 𝕄
+F(A) = Moonshine VOA V♮
+M(A) = genus-0 Hauptmoduls T_g(q)
+
+Special features:
+   - trivial fusion ring
+   - extreme genus-0 curvature
+   - replication phenomena
+   - unique VOA realisation
