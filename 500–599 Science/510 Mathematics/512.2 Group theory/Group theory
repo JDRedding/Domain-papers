@@ -97,8 +97,9 @@
    Mathematics:
      Galois theory, geometry, topology.
 
-        GROUP THEORY — RDG-COMPATIBLE STRUCTURAL FORM
 ------------------------------------------------------------
+
+5. GROUP THEORY — RDG-COMPATIBLE STRUCTURAL FORM
 
 RDG TRI-MODE DECOMPOSITION:
    SID = Structural (typed spaces, admissible sets, closure rules)
@@ -242,8 +243,8 @@ D. EXAMPLES IN TRI-MODE FORM
    RDG: polygon symmetry manifold
 
 ------------------------------------------------------------
-E. SUMMARY 
-------------------------------------------------------------
+
+6. SUMMARY 
 
 Group theory studies algebraic symmetry.
   
@@ -264,5 +265,3 @@ Group theory = symmetry encoded as:
    SID (structure)
    PED (operation)
    RDG (geometry)
-
-============================================================
