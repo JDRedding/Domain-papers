@@ -1,0 +1,287 @@
+================================================================================
+CONWAY RUBRIC
+================================================================================
+RUBRIC CUBE × CONWAY POLYHEDRON NOTATION
+RDG-NATIVE
+
+SECTION 1 — SPACE AND LATTICE (RUBRIC CUBE)
+-------------------------------------------
+Ambient space: ℝ³ with Cartesian coordinates (x, y, z).
+
+Discrete lattice of cube centers:
+    C = { (x,y,z) | x,y,z ∈ {−1,0,1} }      |C| = 27
+
+Strata:
+    • Body center:        B = { (0,0,0) }
+    • Face centers:       F = { (±1,0,0), (0,±1,0), (0,0,±1) }          (6)
+    • Edge centers:       E_C = { exactly two coordinates ±1, one 0 }   (12)
+    • Corners:            K = { (ε1,ε2,ε3) | εi ∈ {−1,+1} }             (8)
+
+Build stages:
+    C1 = B
+    C2 = C1 ∪ F
+    C3 = C2 ∪ K
+    C4 = C = {−1,0,1}³
+
+--------------------------------------------------------------------------------
+
+SECTION 2 — GEOMETRY OF EACH CUBE
+---------------------------------
+Side length: s = 1
+Half-side:  h = 1/2
+
+Vertex generator for cube centered at c ∈ C:
+    V(c) = { c + (i h, j h, k h) | i,j,k ∈ {−1,+1} }
+
+Edges of cube at c:
+    E(c) = { [v,w] | v,w ∈ V(c), v and w differ in exactly one coordinate by s }
+
+--------------------------------------------------------------------------------
+
+SECTION 3 — LAYER PREDICATES (SID.INTERACTION)
+----------------------------------------------
+Top layer:       L_top(p)      ⇔ p.z = +1
+Bottom layer:    L_bottom(p)   ⇔ p.z = −1
+Front layer:     L_front(p)    ⇔ p.y = +1
+Back layer:      L_back(p)     ⇔ p.y = −1
+Right layer:     L_right(p)    ⇔ p.x = +1
+Left layer:      L_left(p)     ⇔ p.x = −1
+
+Indicator form:
+    χ_layer(p) = 1 if predicate true, else 0
+
+--------------------------------------------------------------------------------
+
+SECTION 4 — ROTATION OPERATORS (SID.DYNAMICS)
+---------------------------------------------
+Axis rotations (SO(3)):
+
+R_x(θ) =
+    [ 1      0        0     ]
+    [ 0   cosθ   −sinθ ]
+    [ 0   sinθ    cosθ ]
+
+R_y(θ) =
+    [ cosθ   0   sinθ ]
+    [ 0      1     0  ]
+    [ −sinθ  0   cosθ ]
+
+R_z(θ) =
+    [ cosθ  −sinθ   0 ]
+    [ sinθ   cosθ   0 ]
+    [ 0        0    1 ]
+
+Restricted layer rotation:
+    T_layer,axis(θ)(p) =
+        if L_layer(p) then R_axis(θ) p
+        else p
+
+Permutation action:
+    Each T_layer,axis(θ) induces a bijection on C.
+    Group of all layer moves:
+        G_layers ⊂ Sym(27)
+
+--------------------------------------------------------------------------------
+
+SECTION 5 — TIME-DEPENDENT DYNAMICS (PED.DYNAMICS)
+--------------------------------------------------
+Normalized time: t ∈ [0, T]
+
+Build phase:
+    C_active(t) transitions through {C1, C2, C3, C4}
+
+Layer moves:
+    For move i:
+        θ_i(t) ramps from 0 → target angle (±π/2, ±π, ...)
+        Apply T_layer_i(θ_i(t)) to centers and vertices
+
+Global orbit:
+    φ(t) = ω t + φ0
+    R_global(t) = R_y(φ(t)) or composition with R_x, R_z
+
+--------------------------------------------------------------------------------
+
+SECTION 6 — PROJECTION (PED.EVALUATION)
+---------------------------------------
+Perspective projection:
+    Given rotated point (X,Y,Z):
+        (x_s, y_s) = f * ( X/(Z+d),  Y/(Z+d) )
+
+Orthographic projection:
+        (x_s, y_s) = (X, Y)
+
+--------------------------------------------------------------------------------
+
+SECTION 7 — RENDERING
+---------------------
+Wireframe only:
+    • Neon green emissive edges
+    • Black background
+    • Active cubes: C_active(t)
+    • Active vertices: V_active(t) = ⋃_{c ∈ C_active(t)} V(c after transforms)
+    • Active edges:    E_active(t) = ⋃_{c ∈ C_active(t)} E(c after transforms)
+
+================================================================================
+SECTION 8 — CONWAY POLYHEDRON NOTATION
+================================================================================
+
+Conway notation describes convex polyhedra using:
+    • Seeds (capital letters)
+    • Operators (lowercase letters)
+Operators apply right-to-left:
+    op_k ... op_2 op_1 Seed
+
+--------------------------------------------------------------------------------
+
+SEEDS (CAPITAL LETTERS)
+-----------------------
+Platonic solids:
+    T   = Tetrahedron
+    O   = Octahedron
+    C   = Cube
+    I   = Icosahedron
+    D   = Dodecahedron
+
+Other seeds:
+    Pn  = n-gonal prism
+    An  = n-gonal antiprism
+    Yn  = n-gonal pyramid
+    Jn  = Johnson solid n
+    H   = Hexagonal tiling
+
+--------------------------------------------------------------------------------
+
+OPERATORS (LOWERCASE LETTERS)
+-----------------------------
+Primary operators:
+    d   = Dual
+    t   = Truncate
+    a   = Ambo / Rectify
+    e   = Expand / Cantellate
+    k   = Kis
+    j   = Join (j = da)
+    g   = Gyro
+    s   = Snub
+    b   = Bevel (b = ta)
+    o   = Ortho (o = de)
+
+Extended:
+    m   = Meta
+    r   = Reflect
+    p   = Propeller
+
+Identities:
+    aa = e
+    da = j
+    d^2 = identity
+
+--------------------------------------------------------------------------------
+
+EXAMPLES USING CUBE SEED (C)
+----------------------------
+C       = Cube
+dC      = Octahedron
+tC      = Truncated cube
+aC      = Cuboctahedron
+eC      = Rhombicuboctahedron
+kC      = Tetrakis hexahedron
+jC      = Rhombic dodecahedron
+taC     = Truncated cuboctahedron
+gtC     = Gyro-truncated cube
+
+--------------------------------------------------------------------------------
+
+SECTION 9 — RUBRIC CUBE × CONWAY MAPPING
+----------------------------------------
+Rubric Cube lattice:
+    L = {−1,0,1}³   (27 centers)
+
+Mapping to Conway operators:
+    • Rectification (a):
+        resembles rotating layers to edge midpoints.
+    • Truncation (t):
+        resembles removing corner nodes (±1,±1,±1).
+    • Expansion (e):
+        resembles outward displacement of face centers.
+    • Kis (k):
+        resembles adding pyramids on faces (face-center extrusion).
+    • Dual (d):
+        swaps face centers ↔ corner centers.
+
+Thus the Rubric Cube lattice provides a discrete geometric substrate for
+Conway operator actions, enabling RDG-style operator evaluation.
+
+================================================================================
+SECTION 10 — RDG TRIAD MAPPING
+================================================================================
+
+SID.Structure:
+    • Seed polyhedron = initial structural graph
+    • Rubric Cube lattice = discrete coordinate model
+    • Conway operators = structural transforms
+
+SID.Interaction:
+    • Operator application rules
+    • Layer predicates for restricted transforms
+    • Duality and truncation as interaction rewrites
+
+SID.Dynamics:
+    • Operator chains (e.g., taC, daC)
+    • Restricted rotations T_layer,axis(θ)
+    • Time-parametrized operator evaluation
+
+PED.Power:
+    • Angle ramps θ(t)
+    • Extrusion magnitudes
+    • Displacement parameters
+
+PED.Evaluation:
+    • Projection
+    • Rendering
+
+PED.Dynamics:
+    • Sequential operator execution
+    • Animation of polyhedral transformations
+
+================================================================================
+SECTION 11 — FULL OPERATOR (RDG-NATIVE)
+================================================================================
+
+OPERATOR RubricCubeConway
+
+STATE:
+    Lattice C = {−1,0,1}³
+    Geometry: V(c), E(c)
+    Seeds S ∈ {T,O,C,I,D,Pn,An,Yn,Jn,H}
+    Operators O = {d,t,a,e,k,j,g,s,b,o,m,r,p}
+    Layer predicates: L_top, L_bottom, L_front, L_back, L_right, L_left
+    Rotations: R_x, R_y, R_z
+    Restricted rotations: T_layer,axis(θ)
+    Projection: perspective or orthographic
+
+INPUT:
+    Seed S
+    Operator chain O = (o1, o2, ..., ok)
+    BuildSchedule
+    MoveSequence
+    GlobalOrbit
+    ProjectionParams
+
+OUTPUT:
+    Polyhedron P = o1(o2(... ok(S) ...))
+    Transformed lattice C_active(t)
+    Screen coordinates S(t)
+
+DYNAMICS:
+    1. Parse operator chain right-to-left.
+    2. Apply Conway operators to structural graph.
+    3. Apply Rubric Cube restricted rotations.
+    4. Update face-vertex-edge sets.
+    5. Project vertices.
+    6. Render wireframe edges.
+
+END OPERATOR
+
+================================================================================
+END OF BLOCK
+================================================================================
