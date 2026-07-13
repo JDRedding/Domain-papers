@@ -1,7 +1,46 @@
 
 INTRODUCTION TO MONSTER MOONSHINE — RDG TRIAD FORM
-
 RDG Structural Geometry for Monstrous Moonshine
+
+Summary
+This document introduces Monstrous Moonshine through an RDG 
+Triadic Framework — a three-layer structural approach:
+
+The Three Layers:
+
+SID (Structural Layer): Establishes the basic mathematical 
+objects:
+
+The Monster group (𝕄), a massive sporadic simple group
+Graded modules V built from Monster representations
+The modular function j(q), whose coefficients match Monster
+representation dimensions
+Replicable functions that self-replicate under specific
+transformations
+
+PED (Operational Layer): Defines how these objects interact:
+
+Monster group actions on the graded module space
+q-dynamics driven by modular transformations (generators of 
+SL(2,ℤ))
+McKay–Thompson series that trace Monster group actions
+Replication operators that transform functions systematically
+
+RDG (Relational Geometry Layer): Interprets the geometric 
+relationships:
+
+Spectral curvature of modular flows and Monster actions
+Orbit stratification that organizes Monster conjugacy classes
+Character geometry that encodes Monster action curvature
+Discovery operators identifying modular submanifolds and Moonshine 
+correspondences
+
+Purpose:
+The framework provides a unified entry point into Monstrous Moonshine —
+the striking correspondence between the Monster group and modular 
+forms—by treating it as a coherent three-layer system where structural 
+carriers (SID) feed into operational engines (PED), which reveal 
+relational geometry (RDG).
 
 0. ABSTRACT 
 
