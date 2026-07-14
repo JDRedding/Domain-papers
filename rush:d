@@ -184,10 +184,6 @@ H = full relational space above.
 FINAL NOTE
 ----------
 
-H_RDG^Harmonics := (SID(H), PED(H))
-K(A,B) := A∘B − B∘A
-γ minimizes Σ ||K(O_i, O_{i+1})||
-
 T := C
 
 S (Structure Sets):
@@ -240,6 +236,21 @@ Low-curvature (geodesic-like):
 High-curvature:
     C  →  E7  →  A7  →  Db7  →  C
     (stacked Δ and τ, strong K(Φ5, τ), K(Δ, τ))
+
+The general harmonic manifold applies to:
+
+ acoustics
+ electromagnetism
+ resonance engineering
+ nonlinear dynamics
+ signal processing
+ wave physics
+
+H_RDG^Harmonics := (SID(H), PED(H))
+K(A,B) := A∘B − B∘A
+γ minimizes Σ ||K(O_i, O_{i+1})||
+
+The operator‑geometry that underlies all harmonic systems, not just musical ones. 
 
 END OF UNIFIED SUMMARY
 ================================================================================
