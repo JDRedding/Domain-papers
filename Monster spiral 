@@ -44,3 +44,109 @@ Projection Γ                    Collapse to center
 Iteration                       Fractal meso expansion
 Radius limit                    Macro horizon R_max
 ---------------------------------------------------------
+
+MONSTER → CONVERGENTALS MAP      
+
+INPUT SPACE
+-----------
+Monster relational data:
+    χ(g) ∈ ℂ^194   (character values)
+Magnitude map:
+    L_i = |χ_i(g)| or N(χ_i(g))
+
+-----------------------------------
+PROJECTION OPERATOR Γ
+------------------------------
+Γ is NOT linear.
+
+Γ is a nonlinear, geometry-aware map composed of:
+
+    Γ = FlowTowardG ∘ MagnitudeMap ∘ MonsterData
+
+Where:
+
+    FlowTowardG = F_curv + F_rad + F_top
+        F_curv : curvature correction
+        F_rad  : radius renormalization
+        F_top  : topology deviation penalty
+
+    F_frac : fractal injection (meso zone)
+    I_f    : taper factor = max(0, 1 - r / R_max)
+    D_t    : logistic brake = 1 / (1 + exp(5(r/R_max - 0.9)))
+
+Explicit update form:
+
+    S_{t+1} =
+        S_t
+        + I_f(r_t) * ( 1_{r_t < α R_max} * F_frac(S_t)
+                       + F_flow(S_t, G) )
+
+--------------------------------
+CONVERGENCE CONDITIONS
+----------------------------------
+Convergence occurs when:
+
+    r_t → R_max                     (finite radius boundary)
+    I_f → 0                         (taper shuts off recursion)
+    D_t → 0                         (logistic brake halts dynamics)
+    F_curv → 0                      (curvature matches G)
+    F_top → 0                       (topology preserved)
+    F_rad → 0                       (radius stabilized)
+
+This creates a contraction region near R_max.
+
+---------------------------------
+EMERGENT CENTER (NO FIAT)
+---------------------------------
+The center point is NOT defined manually.
+
+It emerges from Monster data:
+
+    S_0 = Γ( χ(1A) )
+
+Where χ(1A) is the identity class character vector:
+    minimal magnitudes → minimal radius → r = 0
+
+
+--------------------------
+SPIRAL EMERGENCE
+-------------------------------
+A “spiral-like” trajectory requires:
+
+1. Monotonic radius:
+       r_{t+1} ≥ r_t,  r_t ≤ R_max
+
+2. Angular progression:
+       θ_{t+1} ≠ θ_t   (non-radial motion)
+
+3. Bounded shell:
+       r_t ∈ [0, R_max]
+
+4. Fractal meso injection:
+       F_frac active for r < α R_max
+
+5. Geometric smoothing near boundary:
+       F_flow dominates as r → R_max
+
+This produces:
+    - fractal-origin complexity (meso)
+    - smooth curvature (macro)
+    - bounded radius (horizon)
+    - spiral-like path in chosen subspace
+
+----------------------------
+Γ is:
+    • nonlinear
+    • geometry-aware
+    • radius-bounded
+    • fractal-injecting in meso zone
+    • smoothing near macro boundary
+
+Iteration:
+    S_{t+1} = Φ(S_t, G)
+
+Produces:
+    • emergent center (from Monster identity class)
+    • fractal meso-scale growth
+    • spiral-like geometric trajectory
+    • convergence at finite radius R_max
