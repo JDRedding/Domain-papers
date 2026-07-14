@@ -5,9 +5,6 @@
 H_RDG^Harmonics = H_RDG
 H_RDG := (SID(H), PED(H))
 
-H_RDG^Harmonics = H_RDG
-H_RDG := (SID(H), PED(H))
-
 Where:
 - S = {DTS, PMS, FCS, BCS, SDS, TTP, BDS} ∪ relations under T := C
 - I = {Φ5, ρ, β, Δ, τ, Ω}  (morphisms S → S)
