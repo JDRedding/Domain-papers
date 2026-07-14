@@ -1,5 +1,6 @@
 ================================================================================
 CONWAY RUBRIC
+The canonical operator lattice of polyhedral geometry
 ================================================================================
 RUBRIC CUBE × CONWAY POLYHEDRON NOTATION
 RDG-NATIVE
@@ -13,6 +14,39 @@ an animation/rendering pipeline that connects Conway polyhedron operators to
 discrete lattice operations and layer-based animations. It is set up to be
 implementable: defining coordinate data, transforms, time parametrization,
 projection, and wireframe rendering choices.
+
+SID LAYER — Structural Genesis
+---
+3×3×3 lattice grid (Rubric Cube centers)
+Discrete lattice 𝐶 = {−1,0, 1}3
+Modular rotations 𝑅𝑥,𝑅𝑦,𝑅𝑧
+Layer predicates: Top, Bottom, Front, Back, Right, Left
+
+lattice → rotating cube → polyhedral seed
+SID.Structure — Geometry & Symmetry
+
+Q LAYER — Operator Closure
+---
+Q with orbiting operator symbols (d, t, a, e, k, j)
+Conway operator algebra 𝑂 = {𝑑,𝑡,𝑎,𝑒,𝑘,𝑗,𝑔,𝑠,𝑏,𝑜,𝑚,𝑟,𝑝}
+Closure → Stabilization → Polyhedral Manifold
+
+operator chain → transformed polyhedron → expanded lattice
+Q.Structure — Conway Closure & Transformation
+
+PED LAYER — Dynamic Evaluation
+---
+Visual: central glowing Rubric Conway Operator symbol (ℜ)
+Operator chain: 𝑃 = 𝑜1(𝑜2(... 𝑜𝑘(𝑆)...))
+Restricted rotations: 𝑇layer, axis(𝜃)
+Projection: (𝑥𝑠, 𝑦𝑠) = 𝑓 (𝑋/(𝑍+𝑑), 𝑌/(𝑍+𝑑))
+
+operator algebra → projection → rendered wireframe polyhedron
+PED.Dynamics — Evaluation & Rendering
+
+---
+The Conway Rubric encodes the Relational Geometry of Polyhedral Operators  
+Geometry’s Bridge between Conway Notation and RDG Structural Dynamics.
 
 SECTION 1 — SPACE AND LATTICE (RUBRIC CUBE)
 -------------------------------------------
