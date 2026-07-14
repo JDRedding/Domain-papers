@@ -44,6 +44,22 @@ Chain := Φ5⁻¹ ∘ Δ
 
 Harmonic operators naturally partition into force‑operators, color‑operators, and resolution‑operator.
 
+Operators:
+    Φ5  = fifth-motion
+    ρ   = mode-rotation
+    β   = parallel-borrow
+    Δ   = applied-dominant
+    τ   = tritone-sub
+    Ω   = backdoor-resolution
+
+Commutators [A,B] = A∘B - B∘A (functional sense):
+
+    [Φ5, Δ] ≠ 0    (circle motion vs. tonicization)
+    [Φ5, τ] ≠ 0    (fifth vs. tritone path)
+    [ρ,  β] ≠ 0    (mode vs. parallel-minor)
+    [β,  Ω] ≈ 0    (Ω embeds β on IV→iv7)
+    [Δ,  τ] ≠ 0    (V-of-X vs. subbed V-of-X)
+
 PRIMITIVE SETS (Building Blocks from the Original Music Theory Tree)
 -------------------------------------------------------------------
 TONIC CENTER:                T  := C
