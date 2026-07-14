@@ -2,6 +2,7 @@
           RELATIONAL UNIFIED SPACE HARMONICS: DIATONICS (RUSH:D)
 ================================================================================
 
+H_RDG^Harmonics = H_RDG
 H_RDG := (SID(H), PED(H))
 
 SID–PED Mapping
