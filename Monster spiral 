@@ -36,3 +36,11 @@ Emergent geometry             G geometry channel
 Needs a boundary              R_max macro radius limit
 Converges to a point          r → R_max
 ---------------------------------------------------------
+MONSTER DATA                     CONVERGENTALS
+---------------------------------------------------------
+Identity class (1A)             Micro seed S₀
+Character magnitudes            Minimal radius r = 0
+Projection Γ                    Collapse to center
+Iteration                       Fractal meso expansion
+Radius limit                    Macro horizon R_max
+---------------------------------------------------------
