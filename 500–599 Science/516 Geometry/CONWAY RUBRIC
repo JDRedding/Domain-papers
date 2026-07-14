@@ -4,8 +4,22 @@ CONWAY RUBRIC
 RUBRIC CUBE × CONWAY POLYHEDRON NOTATION
 RDG-NATIVE
 
+The document defines a discrete 3×3×3 "Rubric Cube" lattice as a geometric
+substrate for interpreting Conway polyhedron operators and animating them 
+with restricted layer rotations and rendering rules.
+
+The document is both a mathematical/algorithmic specification and a design for
+an animation/rendering pipeline that connects Conway polyhedron operators to
+discrete lattice operations and layer-based animations. It is set up to be
+implementable: defining coordinate data, transforms, time parametrization,
+projection, and wireframe rendering choices.
+
 SECTION 1 — SPACE AND LATTICE (RUBRIC CUBE)
 -------------------------------------------
+Ambient space: ℝ³. Lattice C = {−1,0,1}³ (27 cube centers).
+Strata of lattice: body center, face centers (6), edge centers (12), corners (8).
+Build stages: incremental sets C1..C4 adding centers, faces, corners, full lattice.
+
 Ambient space: ℝ³ with Cartesian coordinates (x, y, z).
 
 Discrete lattice of cube centers:
@@ -27,6 +41,9 @@ Build stages:
 
 SECTION 2 — GEOMETRY OF EACH CUBE
 ---------------------------------
+Unit cubes (side s = 1); vertex generator V(c) and edge set E(c) for each cube 
+centered at c ∈ C.
+
 Side length: s = 1
 Half-side:  h = 1/2
 
@@ -40,6 +57,9 @@ Edges of cube at c:
 
 SECTION 3 — LAYER PREDICATES (SID.INTERACTION)
 ----------------------------------------------
+Boolean predicates to identify six layers (top, bottom, front, back, right,
+left) based on coordinates; indicator form χ_layer.
+
 Top layer:       L_top(p)      ⇔ p.z = +1
 Bottom layer:    L_bottom(p)   ⇔ p.z = −1
 Front layer:     L_front(p)    ⇔ p.y = +1
@@ -54,6 +74,11 @@ Indicator form:
 
 SECTION 4 — ROTATION OPERATORS (SID.DYNAMICS)
 ---------------------------------------------
+Standard axis rotation matrices R_x, R_y, R_z.
+Restricted rotations T_layer,axis(θ) apply an axis rotation only to points in
+a chosen lattice layer, inducing permutations of the 27 centers. Defines group
+G_layers ⊂ Sym(27).
+
 Axis rotations (SO(3)):
 
 R_x(θ) =
@@ -85,6 +110,10 @@ Permutation action:
 
 SECTION 5 — TIME-DEPENDENT DYNAMICS (PED.DYNAMICS)
 --------------------------------------------------
+Time parameter t ∈ [0,T]; C_active(t) evolves through build stages.
+Layer moves are animated by time ramps θ_i(t) from 0 → target angles (±π/2, ±π, ...).
+Global orbit (continuous rotation) R_global(t) can be composed with layer moves.
+
 Normalized time: t ∈ [0, T]
 
 Build phase:
@@ -103,6 +132,9 @@ Global orbit:
 
 SECTION 6 — PROJECTION (PED.EVALUATION)
 ---------------------------------------
+Perspective projection formula (with focal factor f and offset d) and 
+orthographic projection (X,Y).
+
 Perspective projection:
     Given rotated point (X,Y,Z):
         (x_s, y_s) = f * ( X/(Z+d),  Y/(Z+d) )
@@ -114,6 +146,9 @@ Orthographic projection:
 
 SECTION 7 — RENDERING
 ---------------------
+Wireframe rendering rules: neon green emissive edges on black background; 
+active cubes/vertices/edges determined by C_active(t) and transformed geometry.
+
 Wireframe only:
     • Neon green emissive edges
     • Black background
@@ -124,10 +159,18 @@ Wireframe only:
 ================================================================================
 SECTION 8 — CONWAY POLYHEDRON NOTATION
 ================================================================================
+Quick reference: seeds (T,O,C,I,D, Pn, etc.) and operators (d, t, a, e, k, j, 
+g, s, b, o, m, r, p).
+
+Operator composition is right-to-left; key identities listed (aa = e, da = j, 
+d^2 = identity).
+
+Examples for cube seed (C → dC, tC, aC, eC, kC, jC, taC, gtC).
 
 Conway notation describes convex polyhedra using:
     • Seeds (capital letters)
     • Operators (lowercase letters)
+
 Operators apply right-to-left:
     op_k ... op_2 op_1 Seed
 
@@ -193,6 +236,19 @@ gtC     = Gyro-truncated cube
 
 SECTION 9 — RUBRIC CUBE × CONWAY MAPPING
 ----------------------------------------
+Mapping: Rubric Cube ↔ Conway operators
+Intuitive correspondences:
+
+ a (rectify / ambo): related to moving toward edge midpoints / layer rotations
+ t (truncate): removing corners
+ e (expand): displacing face centers outward
+ k (kis): extruding pyramids from faces
+ d (dual): swaps face-center and corner roles
+
+Claim: the Rubric Cube lattice can serve as a discrete geometric substrate to 
+model Conway operator actions and enable RDG-style (render-dynamics-geometry)
+evaluation.
+
 Rubric Cube lattice:
     L = {−1,0,1}³   (27 centers)
 
@@ -214,6 +270,14 @@ Conway operator actions, enabling RDG-style operator evaluation.
 ================================================================================
 SECTION 10 — RDG TRIAD MAPPING
 ================================================================================
+Frames the system in RDG terms (SID structure/interaction/dynamics, PED power/
+evaluation/dynamics).
+
+Parameters for animation: angle ramps, extrusion magnitudes, displacement 
+parameters.
+
+Evaluation: project and render animated transforms; sequentially apply operator 
+chains.
 
 SID.Structure:
     • Seed polyhedron = initial structural graph
@@ -246,6 +310,12 @@ PED.Dynamics:
 ================================================================================
 SECTION 11 — FULL OPERATOR (RDG-NATIVE)
 ================================================================================
+Formalizes state (lattice, geometry, seeds, operators, layer predicates, 
+rotations, projections), inputs (seed, operator chain, build schedule, move 
+sequence, global orbit, projection params), outputs (resulting polyhedron, 
+transformed lattice C_active(t), screen coordinates), and dynamics (parse 
+operators right-to-left, apply Conway operators, apply restricted rotations, 
+update faces/edges/vertices, project, render).
 
 OPERATOR RubricCubeConway
 
