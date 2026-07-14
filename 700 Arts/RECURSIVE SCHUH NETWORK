@@ -1,6 +1,6 @@
 RECURSIVE SCHUH NETWORK
-(Owen Schuh 2011 hand‑drawn recursive artwork)
 ===========================================================
+(Owen Schuh 2011 hand‑drawn recursive artwork)
 
 1. CORE ITERATION (Atomic Primitive)
    x_{n+1} = f(x_n)
@@ -92,10 +92,8 @@ RDG = Geometry(Θ, Γ)
 Full-System Recurrence:
    X_{n+1} = Γ(X_n)
 
-===========================================================
 UNIFIED TRI-MODE RDG FORM 
 (SID + PED + RDG)
-===========================================================
 
 SID (Structure):
    Graph G = (V, E)
