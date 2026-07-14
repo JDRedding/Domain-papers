@@ -2,6 +2,28 @@
           RELATIONAL UNIFIED SPACE HARMONICS: DIATONICS (RUSH:D)
 ================================================================================
 
+H_RDG := (SID(H), PED(H))
+
+SID–PED Mapping
+
+SID(Harmony):
+    S := {DTS, PMS, FCS, BCS, SDS, TTP, BDS}
+    I := {Φ5, ρ, β, Δ, τ, Ω}
+    D := {Resolution paths, tonicizations, modal rotations}
+
+PED(Harmony):
+    Power(M,F)      := Φ5, Δ, τ        (motion, applied force, chromatic tension)
+    Evaluation(p,P) := β, ρ            (modal color, borrowed evaluation)
+    Dynamics(Q)     := Ω, cadential flow, tritone collapse
+
+Harmonic Operators
+Φ5 : S → S        (fifth-motion morphism)
+ρ   : S → S        (mode-rotation morphism)
+β   : S → S        (parallel-borrow morphism)
+Δ   : S → S        (applied-dominant morphism)
+τ   : S → S        (tritone-sub morphism)
+Ω   : S → S        (backdoor-resolution morphism)
+
 PRIMITIVE SETS (Building Blocks from the Original Music Theory Tree)
 -------------------------------------------------------------------
 TONIC CENTER:                T  := C
