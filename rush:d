@@ -1,0 +1,112 @@
+================================================================================
+          RELATIONAL UNIFIED SPACE HARMONICS: DIATONICS (RUSH:D)
+================================================================================
+
+PRIMITIVE SETS (Building Blocks from the Original Music Theory Tree)
+-------------------------------------------------------------------
+TONIC CENTER:                T  := C
+
+DIATONIC TRIAD SET (DTS):    { I(CM), ii(Dm), iii(Em), IV(FM), V(GM), vi(Am), vii°(Bdim) }
+
+PARALLEL MODE SET (PMS):     { Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian }
+
+FIFTH-CYCLE SET (FCS):       { ... F, C, G, D, A, E, B, F♯/G♭, C♯/D♭ ... }  (Circle of Fifths)
+
+TRITONE PAIR SET (TTP):      { (G7,Db7), (D7,Ab7), (A7,Eb7), (E7,Bb7), (B7,F7) }
+
+BORROWED CHORD SET (BCS):    { ♭III(Eb), iv(Fm), ♭VI(Ab), ♭VII(Bb) }   (from parallel minor)
+
+SECONDARY DOMINANT SET (SDS):{ D7→G(V), A7→Dm(ii), C7→F(IV), E7→Am(vi), B7→Em(iii) }
+
+BACKDOOR SET (BDS):          { Fm7 → Bb7 → Cmaj7 }   (iv7–♭VII7–I)
+
+================================================================================
+RELATIONAL OPERATORS (How Sets Transform & Connect)
+----------------------------------------------------
+
+1. FIFTH-MOTION OPERATOR          Φ5(X) = perfect fifth above X
+   (Core of functional harmony, Circle of Fifths, dominant resolution)
+   Φ5(C) = G     Φ5⁻¹(C) = F
+   Drives secondary dominants, circle progressions, key relationships.
+
+2. MODE ROTATION OPERATOR         ρⁿ(Ionian) = nth rotated mode
+   (Generates PMS from major scale)
+   ρ¹ = Dorian, ρ² = Phrygian, ρ³ = Lydian, ρ⁴ = Mixolydian,
+   ρ⁵ = Aeolian, ρ⁶ = Locrian.
+
+3. PARALLEL BORROW OPERATOR       β(X) = borrowed parallel-minor version
+   (Modal Interchange source)
+   β(IV) = iv(Fm), β(I) = ♭III(Eb), etc. → feeds BCS.
+
+4. APPLIED DOMINANT OPERATOR      Δ(X) = V7 of X
+   (Temporary tonicization)
+   Δ(V) = D7→G, Δ(ii) = A7→Dm, etc. → builds SDS.
+
+5. TRITONE SUBSTITUTION OPERATOR  τ(V7) = dominant a tritone away
+   (Chromatic reharmonization)
+   τ(G7) = Db7 (shares 3rd/7th tritone) → links to TTP.
+
+6. BACKDOOR RESOLUTION OPERATOR   Ω(T) = iv7–♭VII7–I path
+   (Deceptive/soulful cadence via modal interchange)
+   Ω(C) = Fm7–Bb7–Cmaj7.
+
+================================================================================
+UNIFIED HARMONIC GEOMETRY (H = Multi-Layer Relational Space)
+----------------------------------------------------------------
+H := (DTS ∪ PMS ∪ BCS ∪ SDS ∪ TTP ∪ BDS ∪ FCS , {Φ5, ρ, β, Δ, τ, Ω})
+
+Layered View:
+- Layer 1 (Core): DTS anchored at T=C (original Tree center)
+- Layer 2 (Color): PMS encircles via ρ (modes circle)
+- Layer 3 (Motion): FCS governs via Φ5 (Circle of Fifths)
+- Layer 4 (Borrowing): BCS attaches via β (modal interchange)
+- Layer 5 (Tension): SDS attaches via Δ (secondary dominants)
+- Layer 6 (Chromatic): TTP attaches via τ (tritone subs)
+- Layer 7 (Resolution): BDS attaches via Ω (backdoor)
+
+Transformation Chains (Examples):
+- Diatonic → Secondary Dominant → Fifth Resolution:   X∈DTS → Δ(X) → Φ5⁻¹(target)
+- Diatonic → Borrow → Backdoor:                       β(IV)=Fm → Ω(C)=Fm7–Bb7–C
+- Dominant → Tritone Sub → Tonic:                     G7 → τ(G7)=Db7 → C
+- Mode Rotation → Borrow → Diatonic:                  ρⁿ(Ionian) → β → DTS
+
+================================================================================
+INTERCONNECTIONS & PRACTICAL POWER
+----------------------------------
+All techniques expand the original circular Music Theory Tree without leaving 
+the tonal center:
+- Tree → Diatonic foundation (DTS + PMS)
+- Circle of Fifths → Navigation & function (FCS + Φ5)
+- Modal tools → Emotional color (β + Ω + PMS)
+- Chromatic tools → Sophistication (Δ + τ)
+
+Result: A complete toolkit used across jazz (standards like Misty, Stella), pop/rock (Beatles, Radiohead, Stevie Wonder), soul, classical, and film.
+
+================================================================================
+COMPACT SUMMARY BLOCK (Copy-Paste Ready Reference)
+---------------------------------------------------
+T = C
+DTS = {C, Dm, Em, F, G, Am, Bdim}
+PMS = {Ionian ... Locrian}
+BCS = {Eb, Fm, Ab, Bb}
+SDS = {D7→G, A7→Dm, C7→F, E7→Am, B7→Em}
+TTP = {G7↔Db7, ...}
+BDS = {Fm7→Bb7→C}
+
+Operators: Φ5(fifths), ρ(modes), β(borrow), Δ(secondary dom), τ(tritone), Ω(backdoor)
+
+H = full relational space above.
+
+================================================================================
+FINAL NOTE
+----------
+Start with the Tree (diatonic + modes). 
+Layer Circle of Fifths for motion. 
+Add borrowing (modal interchange/backdoor), applied dominants, and tritone subs 
+for color & tension. 
+
+This unified geometry turns basic harmony into expressive, professional-level 
+music. Explore, practice in C, transpose with the Circle, and create.
+
+END OF UNIFIED SUMMARY
+================================================================================
