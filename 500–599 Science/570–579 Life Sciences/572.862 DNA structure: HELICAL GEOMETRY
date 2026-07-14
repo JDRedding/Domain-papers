@@ -1,9 +1,16 @@
 DNA HELICAL GEOMETRY
+This document presents a mathematical framework for understanding 
+DNA structure through the lens of Recursive Geometric Dynamics (RDG).
 
 I. GENERIC HELICAL MODEL
 ──────────────────────
+DNA's helical structure can be described as a screw operator in 3D 
+space—a combination of rotation about the z-axis and translation 
+along it. The same generator applies to all DNA forms (A, B, C, and Z).
 
 Backbone Curve
+Backbone curve: Parametric equations describe the helix using radius 
+(R), pitch (P), and angular parameter (t)
 
               ⎡ R cos(t) ⎤
 r(t) =        ⎢ R sin(t) ⎥
@@ -27,6 +34,11 @@ r(t) =        ⎢-R sin(t) ⎥
 
 II. SCREW OPERATOR
 ──────────────────
+Screw operator σ = (Rz(θ), h): Rotation by angle θ and translation by 
+height h
+
+Repeated application of this operator constructs the full double 
+helix as a cyclic subgroup of SE(3) (Special Euclidean group)
 
 Single generator:
 
@@ -43,7 +55,6 @@ xₙ₊₁ = S(θ,h)xₙ
 gₙ   = g₀ σⁿ
 
 This defines a cyclic subgroup of SE(3).
-
 
 III. ATOMIC ORBITS
 ────────────────
@@ -75,6 +86,8 @@ These are the “flower” symmetry patterns.
 
 IV. DNA PARAMETER SETS
 ───────────────────
+DNA Conformations
+All four DNA forms use the same generator but with different parameters:
 
 bp/turn     Rotation      Handedness
 
@@ -178,6 +191,10 @@ Top-view Flower Geometry
 
 IX. CONCLUSION
 ─────────────────
+Rather than treating each DNA form as structurally distinct, the RDG 
+interpretation shows they're all parameterizations of a single 
+screw-symmetry process—only R, P, θ, and h values change, while 
+the underlying generator remains constant.
 
 Same recursive generator
         ↓
@@ -189,4 +206,9 @@ Different projected orbit geometries
         ↓
 Different curvature signatures
 
-DNA forms A, B, C, and Z are parameterizations of a single screw-symmetry process in SE(3), making DNA a natural instance of RDG recursive geometric dynamics.
+DNA forms A, B, C, and Z are parameterizations of a single screw-
+symmetry process in SE(3), making DNA a natural instance of RDG 
+recursive geometric dynamics.
+
+Projecting atomic orbits creates characteristic "flower" symmetry 
+patterns that serve as curvature signatures for each conformation.
