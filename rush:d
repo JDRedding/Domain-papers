@@ -60,6 +60,19 @@ Commutators [A,B] = A∘B - B∘A (functional sense):
     [β,  Ω] ≈ 0    (Ω embeds β on IV→iv7)
     [Δ,  τ] ≠ 0    (V-of-X vs. subbed V-of-X)
 
+Harmonic Curvature Tensor:
+    K(A,B) := A∘B - B∘A
+
+Curvature Directions:
+    Functional:   K(Φ5, Δ) ≠ 0
+    Chromatic:    K(Φ5, τ) ≠ 0
+    Modal:        K(ρ, β)  ≠ 0
+    Cadential:    K(β, Ω) ≈ 0
+
+Interpretation:
+    K ≠ 0  → curved harmonic space (tension, drift, chromaticity)
+    K = 0  → flat harmonic space (commuting operators)
+
 PRIMITIVE SETS (Building Blocks from the Original Music Theory Tree)
 -------------------------------------------------------------------
 TONIC CENTER:                T  := C
