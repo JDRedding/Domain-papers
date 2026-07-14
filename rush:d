@@ -183,6 +183,11 @@ H = full relational space above.
 ================================================================================
 FINAL NOTE
 ----------
+
+H_RDG^Harmonics := (SID(H), PED(H))
+K(A,B) := A∘B − B∘A
+γ minimizes Σ ||K(O_i, O_{i+1})||
+
 T := C
 
 S (Structure Sets):
