@@ -1,3 +1,7 @@
++====================================================================+
+|                     MONSTER → CONVERGENTALS MAP                    |
++====================================================================+
+
 MONSTER (all conjugacy classes)
     χ_i(g) → irrational relational values
 
@@ -16,47 +20,41 @@ ITERATION (all classes)
 RESULT
     Spiral-like geometric structure across the entire Monster
 
+----------------------------------------------------------------------
 MONSTER SPIRAL                    CONVERGENTALS
----------------------------------------------------------------
+----------------------------------------------------------------------
 Relational magnitudes            S : Structure
 Projection operator Γ            I : Interaction
 Iterative update                 D : Dynamics
 Emergent 3-D spiral              G : Geometry
----------------------------------------------------------------
+----------------------------------------------------------------------
 Micro seed (χ-values)            Micro seed (S₀)
 Fractal-like meso growth         Meso fractal injection
 Radius-bound smoothing           Macro geometric flow
 Convergent spiral form           Convergent solved geometry
 
+----------------------------------------------------------------------
 MONSTER SPIRAL                CONVERGENTALS
----------------------------------------------------------
+----------------------------------------------------------------------
 Fractal-like growth           F_frac (meso injection)
 Iterative projection Γ        I(S) interaction operator
 Emergent geometry             G geometry channel
 Needs a boundary              R_max macro radius limit
 Converges to a point          r → R_max
----------------------------------------------------------
+----------------------------------------------------------------------
 MONSTER DATA                     CONVERGENTALS
----------------------------------------------------------
+----------------------------------------------------------------------
 Identity class (1A)             Micro seed S₀
 Character magnitudes            Minimal radius r = 0
 Projection Γ                    Collapse to center
 Iteration                       Fractal meso expansion
 Radius limit                    Macro horizon R_max
----------------------------------------------------------
+----------------------------------------------------------------------
 
-MONSTER → CONVERGENTALS MAP      
++====================================================================+
+|                        PROJECTION OPERATOR Γ                       |
++====================================================================+
 
-INPUT SPACE
------------
-Monster relational data:
-    χ(g) ∈ ℂ^194   (character values)
-Magnitude map:
-    L_i = |χ_i(g)| or N(χ_i(g))
-
------------------------------------
-PROJECTION OPERATOR Γ
-------------------------------
 Γ is NOT linear.
 
 Γ is a nonlinear, geometry-aware map composed of:
@@ -81,9 +79,9 @@ Explicit update form:
         + I_f(r_t) * ( 1_{r_t < α R_max} * F_frac(S_t)
                        + F_flow(S_t, G) )
 
---------------------------------
+----------------------------------------------------------------------
 CONVERGENCE CONDITIONS
-----------------------------------
+----------------------------------------------------------------------
 Convergence occurs when:
 
     r_t → R_max                     (finite radius boundary)
@@ -95,9 +93,9 @@ Convergence occurs when:
 
 This creates a contraction region near R_max.
 
----------------------------------
+----------------------------------------------------------------------
 EMERGENT CENTER (NO FIAT)
----------------------------------
+----------------------------------------------------------------------
 The center point is NOT defined manually.
 
 It emerges from Monster data:
@@ -107,10 +105,9 @@ It emerges from Monster data:
 Where χ(1A) is the identity class character vector:
     minimal magnitudes → minimal radius → r = 0
 
-
---------------------------
+----------------------------------------------------------------------
 SPIRAL EMERGENCE
--------------------------------
+----------------------------------------------------------------------
 A “spiral-like” trajectory requires:
 
 1. Monotonic radius:
@@ -134,7 +131,9 @@ This produces:
     - bounded radius (horizon)
     - spiral-like path in chosen subspace
 
-----------------------------
+----------------------------------------------------------------------
+Γ SUMMARY
+----------------------------------------------------------------------
 Γ is:
     • nonlinear
     • geometry-aware
@@ -150,3 +149,5 @@ Produces:
     • fractal meso-scale growth
     • spiral-like geometric trajectory
     • convergence at finite radius R_max
+
++====================================================================+
