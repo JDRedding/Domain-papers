@@ -2,6 +2,16 @@ RECURSIVE SCHUH NETWORK
 ===========================================================
 (Owen Schuh 2011 hand‑drawn recursive artwork)
 
+The file "RECURSIVE SCHUH NETWORK" (Owen Schuh, 2011) 
+defines a compact mathematical/speculative framework for 
+generating hand‑drawn recursive artwork as a graph‑based 
+iterative system. It lists six primitive operator types 
+(local iteration, structural update, flow propagation, 
+global recurrence, geometric branch growth, and emergent 
+potential) and then unifies them into a tri‑mode RDG 
+generator (SID + PED + RDG) whose global update is 
+X_{n+1} = Γ(X_n) with Γ = F ⊕ G ⊕ H ⊕ Θ.
+
 1. CORE ITERATION (Atomic Primitive)
    x_{n+1} = f(x_n)
    -----------------------------------------------------------
