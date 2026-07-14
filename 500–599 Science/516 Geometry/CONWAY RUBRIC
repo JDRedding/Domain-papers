@@ -18,7 +18,7 @@ projection, and wireframe rendering choices.
 SID LAYER — Structural Genesis
 ---
 3×3×3 lattice grid (Rubric Cube centers)
-Discrete lattice 𝐶 = {−1,0, 1}3
+Discrete lattice 𝐶 = {−1, 0, 1}^3
 Modular rotations 𝑅𝑥,𝑅𝑦,𝑅𝑧
 Layer predicates: Top, Bottom, Front, Back, Right, Left
 
@@ -39,7 +39,7 @@ PED LAYER — Dynamic Evaluation
 Visual: central glowing Rubric Conway Operator symbol (ℜ)
 Operator chain: 𝑃 = 𝑜1(𝑜2(... 𝑜𝑘(𝑆)...))
 Restricted rotations: 𝑇layer, axis(𝜃)
-Projection: (𝑥𝑠, 𝑦𝑠) = 𝑓 (𝑋/(𝑍+𝑑), 𝑌/(𝑍+𝑑))
+Projection: (𝑥_𝑠, 𝑦_𝑠) = 𝑓 (𝑋/(𝑍+𝑑), 𝑌/(𝑍+𝑑))
 
 operator algebra → projection → rendered wireframe polyhedron
 PED.Dynamics — Evaluation & Rendering
