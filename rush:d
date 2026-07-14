@@ -5,6 +5,20 @@
 H_RDG^Harmonics = H_RDG
 H_RDG := (SID(H), PED(H))
 
+H_RDG^Harmonics = H_RDG
+H_RDG := (SID(H), PED(H))
+
+Where:
+- S = {DTS, PMS, FCS, BCS, SDS, TTP, BDS} ∪ relations under T := C
+- I = {Φ5, ρ, β, Δ, τ, Ω}  (morphisms S → S)
+- PED partitions I into:
+    • Power(M,F)   := {Φ5, Δ, τ}
+    • Evaluation(p,P) := {ρ, β}
+    • Dynamics(Q)  := {Ω}
+
+Curvature: K(A,B) := [A,B] = A∘B − B∘A  (non-commutativity = harmonic tension)
+Harmonic Geodesics γ minimize cumulative C(γ) = Σ ||K(O_i, O_{i+1})|| within tonal constraints.
+
 SID–PED Mapping
 
 SID(Harmony):
