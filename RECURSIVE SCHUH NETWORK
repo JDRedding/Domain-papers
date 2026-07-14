@@ -1,36 +1,36 @@
 RECURSIVE SCHUH NETWORK
 (Owen Schuh 2011 hand‑drawn recursive artwork)
-=========================================
+===========================================================
 
 1. CORE ITERATION (Atomic Primitive)
    x_{n+1} = f(x_n)
-   -----------------------------------------
+   -----------------------------------------------------------
    x_n : scalar/vector state at step n
    f   : local update (logistic, threshold, affine, etc.)
    → Every operator below is a lifted version of this.
 
 2. SID STRUCTURAL UPDATE (Degree / Branch)
    d_{i,n+1} = Σ_{j ∈ N(i)} g(d_{j,n})
-   -----------------------------------------
+   -----------------------------------------------------------
    N(i) : neighbor set
    g    : local transform (sum, max, clamp, sigmoid)
 
 3. PED OPERATIONAL PROPAGATION (Weighted Flow)
    S_{k+1,i} = f( Σ_j a_{ij} * S_{k,j} )
-   ----------------------------------------
+   -----------------------------------------------------------
    a_{ij} : adjacency weight
    f      : activation (sign, tanh, step, ReLU-like)
 
 4. RDG GLOBAL RECURRENCE (Full-System Evolution)
    X_n = g(X_{n-1}, θ)
-   ----------------------------------------
+   -----------------------------------------------------------
    X_n : full grid/graph state vector
    θ   : fixed parameters
    g   : global transformation (composition of locals)
 
 5. GEOMETRIC BRANCH EXTENSION (Dendritic Growth)
    L_{n+1} = r * L_n + Θ(α)
-   -----------------------------------------
+   -----------------------------------------------------------
    L_n  : branch length/level
    r    : scaling factor
    Θ(α) : directional/angle offset
@@ -38,14 +38,64 @@ RECURSIVE SCHUH NETWORK
 6. EMERGENT POTENTIAL / FLOW (Global Accumulation)
    Φ(i) = Σ_{paths p: i→j} w(p)
    w(p) = Π_{(u,v) ∈ p} h(a_{uv})
-   ---------------------------------------
+   -----------------------------------------------------------
    h     : edge-weight transform
    paths : recursively accumulated
 
-=========================================
+===========================================================
+RECURSIVE SCHUH NETWORK — RDG TRI-MODE GENERATOR
+===========================================================
+
+STATE:
+   X_n = { x_n(i), d_n(i), S_n(i), L_n(i), α_n(i) } over i ∈ V
+
+GLOBAL UPDATE:
+   X_{n+1} = Γ(X_n)
+
+Γ DECOMPOSITION:
+   Γ = F ⊕ G ⊕ H ⊕ Θ
+
+-----------------------------------------------------------
+1. F : Atomic Local Update (Core Iteration)
+-----------------------------------------------------------
+   x_{n+1}(i) = f( x_n(i) )
+
+-----------------------------------------------------------
+2. G : SID Structural Update (Degree / Branch)
+-----------------------------------------------------------
+   d_{n+1}(i) = Σ_{j ∈ N(i)} g( d_n(j) )
+
+-----------------------------------------------------------
+3. H : PED Weighted Flow Propagation
+-----------------------------------------------------------
+   S_{n+1}(i) = f( Σ_j a_{ij} * S_n(j) )
+
+-----------------------------------------------------------
+4. Θ : Geometric Branch Extension (Angle + Length)
+-----------------------------------------------------------
+   L_{n+1}(i) = r * L_n(i) + Θ( α_n(i) )
+   α_{n+1}(i) = α_n(i) + Δα(i)
+
+-----------------------------------------------------------
+EMERGENT POTENTIAL (Optional Global Accumulation)
+-----------------------------------------------------------
+   Φ(i) = Σ_{paths p: i→j} Π_{(u,v) ∈ p} h(a_uv)
+
+===========================================================
+RDG FORMAL SYNTHESIS
+===========================================================
+
+SID = Structure(G, A, N)
+PED = Dynamics(F, G, H)
+RDG = Geometry(Θ, Γ)
+
+Full-System Recurrence:
+   X_{n+1} = Γ(X_n)
+
+===========================================================
 UNIFIED TRI-MODE RDG FORM 
 (SID + PED + RDG)
-=========================================
+===========================================================
 
 SID (Structure):
    Graph G = (V, E)
