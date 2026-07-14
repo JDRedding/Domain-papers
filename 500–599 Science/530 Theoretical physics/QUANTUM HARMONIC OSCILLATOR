@@ -1,6 +1,17 @@
 ================================================================================
 QUANTUM HARMONIC OSCILLATOR : RDG FORM
 ================================================================================
+Quantum Mechanics
+    Subentry: Quantum Harmonic Oscillator (QHO)
+        - Canonical solvable quantum system
+        - Hermite–Gaussian eigenbasis
+        - Ladder-operator algebra
+        - Spectral tower E_n = ħω(n + 1/2)
+        - RDG tri-mode mapping:
+            SID: quadratic structure
+            PED: operator dynamics
+            Q-slice: Gaussian closure
+================================================================================
 
 SID (Structure):
     ξ = sqrt(mω/ħ) x
