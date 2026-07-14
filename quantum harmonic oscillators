@@ -83,5 +83,67 @@ G-mode (Dynamics):
     - Propagation via ladder operators
 
 ================================================================================
-END RDG QHO BLOCK
+QHO Hamiltonian
+================================================================================
+
+RDG.H_QHO  :=  ( H_SID , H_PED , H_Q )
+
+    H_SID : structural quadratic form
+        H_SID(x, p) = p²/(2m) + (1/2) m ω² x²
+
+    H_PED : operator lift
+        H_PED = ħω (N + 1/2)
+
+    H_Q   : moderated spectral action
+        H_Q ψ_n = ħω (n + 1/2) ψ_n
+        with ψ_n(x) = N H_n(ξ) exp(-ξ²/2)
+
+Q-slice.H (Moderated Hamiltonian):
+
+    Basis:
+        ψ_n(x) = N H_n(ξ) exp(-ξ²/2)
+
+    Closure:
+        H ψ_n(x) = E_n ψ_n(x)
+        E_n = ħω (n + 1/2)
+
+    Moderation:
+        - Gaussian factor exp(-ξ²/2) ensures:
+            • square-integrability
+            • finite energy
+            • bounded propagation
+        - Hermite tower {H_n(ξ)} provides:
+            • complete eigenbasis
+            • orthogonality: ∫ ψ_m ψ_n dx = δ_mn
+
+PED.H (Operator Hamiltonian):
+
+    Ladder operators:
+        a  = sqrt(mω/(2ħ)) ( x + (i/(mω)) p )
+        a† = sqrt(mω/(2ħ)) ( x - (i/(mω)) p )
+
+    Number operator:
+        N = a† a
+
+    Operator lift:
+        H_PED = ħω (N + 1/2)
+
+    Spectral action:
+        H_PED |n⟩ = ħω (n + 1/2) |n⟩
+
+SID.H (Structural Hamiltonian):
+
+    Coordinates:
+        x  : canonical position
+        p  : canonical momentum = -i ħ ∂/∂x
+
+    Quadratic potential:
+        V(x) = (1/2) m ω² x²
+
+    Dimensionless coordinate:
+        ξ = sqrt(mω/ħ) x
+
+    Structural Hamiltonian (coordinate form):
+        H_SID(x, p) = p²/(2m) + (1/2) m ω² x²
+
 ================================================================================
