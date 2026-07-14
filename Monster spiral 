@@ -1,0 +1,17 @@
+MONSTER (all conjugacy classes)
+    χ_i(g) → irrational relational values
+
+MAGNITUDE MAP (all classes)
+    L_i(g) = |χ_i(g)| or N(χ_i(g))
+
+PROJECTION (all classes)
+    Γ : ℝ^194 → ℝ^(71×59×47)
+
+POINT GENERATION (all classes)
+    P(g) = Γ(L_1(g), ..., L_194(g))
+
+ITERATION (all classes)
+    P_{n+1}(g) = Γ(P_n(g))
+
+RESULT
+    Spiral-like geometric structure across the entire Monster
