@@ -216,5 +216,13 @@ A harmonic geodesic γ is a sequence of operators {O_i} such that:
 
     3) Subject to musical constraints (e.g. must pass through a target chord or mode).
 
+Low-curvature (geodesic-like):
+    C  →  Am  →  Dm  →  G  →  C
+    (mostly inside DTS, Φ5 and Δ aligned)
+
+High-curvature:
+    C  →  E7  →  A7  →  Db7  →  C
+    (stacked Δ and τ, strong K(Φ5, τ), K(Δ, τ))
+
 END OF UNIFIED SUMMARY
 ================================================================================
