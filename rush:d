@@ -24,6 +24,26 @@ Harmonic Operators
 τ   : S → S        (tritone-sub morphism)
 Ω   : S → S        (backdoor-resolution morphism)
 
+Transformation Chains
+Path_1 (Diatonic → Secondary → Fifth):
+    DTS --Δ--> SDS --Φ5⁻¹--> DTS
+
+Path_2 (Borrow → Backdoor):
+    DTS --β--> BCS --Ω--> DTS
+
+Path_3 (Dominant → Tritone → Tonic):
+    V7 --τ--> TTP --Φ5⁻¹--> I
+
+Path_4 (Mode → Borrow → Diatonic):
+    PMS --ρⁿ--> PMS --β--> BCS --resolve--> DTS
+
+Operator chains
+Chain := Ω ∘ β ∘ ρⁿ
+Chain := Φ5⁻¹ ∘ τ
+Chain := Φ5⁻¹ ∘ Δ
+
+Harmonic operators naturally partition into force‑operators, color‑operators, and resolution‑operator.
+
 PRIMITIVE SETS (Building Blocks from the Original Music Theory Tree)
 -------------------------------------------------------------------
 TONIC CENTER:                T  := C
@@ -122,6 +142,32 @@ H = full relational space above.
 ================================================================================
 FINAL NOTE
 ----------
+T := C
+
+S (Structure Sets):
+    DTS = {C, Dm, Em, F, G, Am, Bdim}
+    PMS = {Ionian ... Locrian}
+    FCS = {F, C, G, D, A, E, B, F#, C#}
+    BCS = {Eb, Fm, Ab, Bb}
+    SDS = {D7→G, A7→Dm, C7→F, E7→Am, B7→Em}
+    TTP = {G7↔Db7, D7↔Ab7, A7↔Eb7, E7↔Bb7, B7↔F7}
+    BDS = {Fm7→Bb7→C}
+
+I (Interaction Operators):
+    Φ5 = fifth-motion
+    ρ  = mode-rotation
+    β  = parallel-borrow
+    Δ  = applied-dominant
+    τ  = tritone-sub
+    Ω  = backdoor-resolution
+
+PED Mapping:
+    Power(M,F)      = {Φ5, Δ, τ}
+    Evaluation(p,P) = {ρ, β}
+    Dynamics(Q)     = {Ω}
+
+H_RDG := (S, I, PED)
+
 Start with the Tree (diatonic + modes). 
 Layer Circle of Fifths for motion. 
 Add borrowing (modal interchange/backdoor), applied dominants, and tritone subs 
