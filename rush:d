@@ -252,5 +252,46 @@ K(A,B) := A∘B − B∘A
 
 The operator‑geometry that underlies all harmonic systems, not just musical ones. 
 
+Operator–physics identity sketches
+Φ5  (fifth-motion)
+    Music:    step by perfect fifth, circle of fifths, dominant motion.
+    Physics:  frequency stepping / harmonic generation (n → 3/2 n, etc.),
+              moving along harmonic series, energy transfer between modes.
+
+ρ   (mode-rotation)
+    Music:    rotate scale degrees, change mode (Ionian → Dorian → ...).
+    Physics:  phase / mode rotation in a resonant system,
+              cycling through eigenmodes or phase states of an oscillator.
+
+β   (parallel-borrow)
+    Music:    borrow from parallel minor/major (C → Cm colors).
+    Physics:  shift to a nearby potential well / configuration,
+              detuning into a neighboring resonance basin (slightly different parameters).
+
+Δ   (applied-dominant)
+    Music:    V of X, temporary tonicization, driven tension toward a target.
+    Physics:  driven resonance / external forcing,
+              applying a drive at or near a natural frequency to focus energy on a mode.
+
+τ   (tritone-sub)
+    Music:    substitute dominant a tritone away, same tritone, different root.
+    Physics:  quadrature / orthogonal substitution,
+              90° phase rotation, swapping one basis vector for another with same “core” interaction.
+
+Ω   (backdoor-resolution)
+    Music:    iv7–♭VII7–I, soulful/detour resolution via borrowed color.
+    Physics:  dissipative / indirect relaxation path,
+              system returns to equilibrium via a side channel (not the direct steepest descent).
+
+K(A,B) (harmonic curvature)
+    Music:    non-commutativity of operators = tension, drift, chromatic pull.
+    Physics:  non-commuting operations in a field or resonant medium,
+              curvature of configuration space, path-dependent energy/tension.
+
+γ (harmonic geodesic)
+    Music:    least-tension progression under constraints (smooth changes).
+    Physics:  minimum-action / minimum-loss path in a resonant or field system,
+              optimal routing of energy with minimal curvature.
+
 END OF UNIFIED SUMMARY
 ================================================================================
