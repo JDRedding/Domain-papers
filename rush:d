@@ -205,5 +205,16 @@ for color & tension.
 This unified geometry turns basic harmony into expressive, professional-level 
 music. Explore, practice in C, transpose with the Circle, and create.
 
+Given H_RDG = (S, I, PED) and curvature K(A,B),
+
+A harmonic geodesic γ is a sequence of operators {O_i} such that:
+
+    1) γ starts and ends in a chosen tonal neighborhood (e.g. DTS around T = C)
+    2) The cumulative curvature along γ is minimized:
+
+       C(γ) := Σ ||K(O_i, O_{i+1})||
+
+    3) Subject to musical constraints (e.g. must pass through a target chord or mode).
+
 END OF UNIFIED SUMMARY
 ================================================================================
