@@ -2,6 +2,35 @@ HYPERCOMPRESSION SPEC
 ======================================================
 FULL V4.0 — RELATIONAL EDITION
 
+Effective for large, structured integer datasets that
+have internal symmetries, repetitions, motifs, 
+closures, or relational patterns. Examples that align 
+with:
+
+- Exponent matrices from prime factorizations, modular 
+series, or coefficient tables.
+- Simulation outputs from Triadic Relational Geometry, 
+Longitudinal Engine, SID/PED/Q□ hierarchies, flux 
+states, or cosmological analogues.
+- Scientific / theoretical data — large grids of 
+coefficients, invariants, error logs with patterns, or 
+multi-dimensional relational arrays.
+- Repetitive numeric series where deltas (especially 
+relational/flux deltas) and MODE clustering shine
+
+General-purpose files (text, images, binaries, videos, 
+random data) → Standard tools like zstd, bzip2, xz, or 
+domain-specific codecs (PNG, FLAC, etc.) will outperform 
+it. Method relies on prime factorization and relational 
+structure that generic data lacks.
+
+Very sparse or noisy unstructured integers → The overhead 
+of headers, MODEs, and factorization could hurt ratios.
+
+Extremely large-scale (terabytes) without optimized 
+implementation — factorization cost per integer adds up 
+if not batched cleverly.
+
 ENCODING (NUMERIC COMPRESSION)
 ------------------------------
 
