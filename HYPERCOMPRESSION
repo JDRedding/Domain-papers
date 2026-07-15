@@ -1,5 +1,61 @@
 HYPERCOMPRESSION SPEC
 
+REPLICATION WORKFLOW
+====================
+
+STEP 0 — CHOOSE PRIME SET
+- Pick primes: {2,3,5,7,11,13,17,19,...}
+- This defines radix alphabet.
+
+STEP 1 — INGEST RAW DATA
+- Load integer table T[row][col].
+- Ensure symmetry or repeated structure.
+
+STEP 2 — NORMALIZE
+- For each value x:
+    xn = sign(x) * log(|x|+1)
+
+STEP 3 — FACTORIZE
+- For each xn:
+    compute prime exponents (a,b,c,d,...)
+
+STEP 4 — DELTA ENCODE
+- For each exponent sequence:
+    d[i] = e[i] - e[i-1]
+
+STEP 5 — MODE DISCOVERY
+- Cluster rows by similarity.
+- Assign MODE ID to each cluster.
+- Store MODE rules once.
+
+STEP 6 — PACK FIELDS
+- For each row:
+    pack exponents into fixed-width fields (e.g. 29 bits)
+- Output PACKED[row][field]
+
+STEP 7 — BUILD VISUAL MAP
+- For each packed field:
+    decode → primes/exponents
+    color  = prime
+    intensity = exponent magnitude
+    glyph = role (raw, delta, mode, flag)
+    place cell at (row, col)
+
+STEP 8 — BUILD DECODER LEGEND
+- ASCII table mapping:
+    color → prime
+    intensity → exponent range
+    glyph → role
+    position → index
+
+STEP 9 — REVERSIBILITY TEST
+- Decode visual → exponents → integer → raw.
+- Confirm match with original T[row][col].
+
+STEP 10 — EXPORT CODEX
+- Save ASCII + visual map as the final hypercompressed codex.
+====================
+
 ENCODING (NUMERIC COMPRESSION)
 ---------------------------------------
 
