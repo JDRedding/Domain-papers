@@ -171,7 +171,6 @@ MAP (COLOR/GLYPH VISUAL CODING)
      * reverse normalization.
    - Confirm reconstructed values match original dataset.
 
-
 SUMMARY
 -------
 - encode numbers via normalization, prime factorization, mixed-radix packing, mode reuse, and delta encoding.
