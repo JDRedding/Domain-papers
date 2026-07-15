@@ -204,6 +204,39 @@ REFERENCE TOPICS SUMMARY
 8. Metadata channels (mode, normalization, relational operators)
 9. Decoder design (full reversibility)
 
+┌─────────────────────────────────────────────────────────────┐
+│                        GLOBAL HEADER                        │
+│  - Prime list                                               │
+│  - Grid dimensions (rows × columns)                         │
+│  - MODE table (list of MODE objects)                        │
+│  - Visual alphabet version                                  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     PER-MODE HEADERS                        │
+│  (one per cluster/group)                                    │
+│  - Prime subset used                                        │
+│  - Delta scheme (none / intra / inter / second-order)       │
+│  - Intensity bin edges                                      │
+│  - Packing method                                           │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                           PAYLOAD                           │
+│  Packed fields containing exact exponent vectors            │
+│  (after delta encoding + chosen packing strategy)           │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                            FOOTER                           │
+│  - Compression statistics                                   │
+│  - Checksum (e.g. CRC32 or SHA256)                          │
+│  - Optional original size / packed size                     │
+└─────────────────────────────────────────────────────────────┘
+
 Implementation Sketch 
 ------------------------
 (quick starter in Python, adaptable to your portable env)
