@@ -1,178 +1,124 @@
 HYPERCOMPRESSION SPEC
-
-REPLICATION WORKFLOW
-====================
-
-STEP 0 — CHOOSE PRIME SET
-- Pick primes: {2,3,5,7,11,13,17,19,...}
-- This defines radix alphabet.
-
-STEP 1 — INGEST RAW DATA
-- Load integer table T[row][col].
-- Ensure symmetry or repeated structure.
-
-STEP 2 — NORMALIZE
-- For each value x:
-    xn = sign(x) * log(|x|+1)
-
-STEP 3 — FACTORIZE
-- For each xn:
-    compute prime exponents (a,b,c,d,...)
-
-STEP 4 — DELTA ENCODE
-- For each exponent sequence:
-    d[i] = e[i] - e[i-1]
-
-STEP 5 — MODE DISCOVERY
-- Cluster rows by similarity.
-- Assign MODE ID to each cluster.
-- Store MODE rules once.
-
-STEP 6 — PACK FIELDS
-- For each row:
-    pack exponents into fixed-width fields (e.g. 29 bits)
-- Output PACKED[row][field]
-
-STEP 7 — BUILD VISUAL MAP
-- For each packed field:
-    decode → primes/exponents
-    color  = prime
-    intensity = exponent magnitude
-    glyph = role (raw, delta, mode, flag)
-    place cell at (row, col)
-
-STEP 8 — BUILD DECODER LEGEND
-- ASCII table mapping:
-    color → prime
-    intensity → exponent range
-    glyph → role
-    position → index
-
-STEP 9 — REVERSIBILITY TEST
-- Decode visual → exponents → integer → raw.
-- Confirm match with original T[row][col].
-
-STEP 10 — EXPORT CODEX
-- Save ASCII + visual map as the final hypercompressed codex.
-====================
+=====================
 
 ENCODING (NUMERIC COMPRESSION)
----------------------------------------
+------------------------------
 
 1. INPUT DATA
    - Start with a structured integer dataset:
      * e.g. coefficients b[n,k], atomic properties, modular series, etc.
    - Requirement: data has internal symmetry / repetition.
+   - (Hook) Pre-scan dataset for repeating motifs using pattern search.
 
 2. NORMALIZATION
    - Convert raw integers to a normalized magnitude:
      * x' = sign(x) * log(|x| + 1)
-   - Goal: bring values into a compact, symmetric range for visual + radix encoding.
+   - Goal: compact, symmetric range for visual + radix encoding.
+   - (Hook) Store normalization rule as MODE flag.
 
 3. PRIME / MIXED-RADIX ENCODING
-   - Express each (non-zero) integer as a product of primes:
-     * n = 2^a * 3^b * 5^c * 7^d * 11^e * 13^f * ... (up to chosen prime set)
-   - Store exponents (a, b, c, d, e, f, ...) instead of n directly.
-   - This defines a mixed-radix representation:
-     * each exponent is a digit in a prime-based number system.
+   - Express each (non-zero) integer as:
+     * n = 2^a * 3^b * 5^c * 7^d * 11^e * 13^f * ...
+   - Store exponents (a, b, c, d, e, f, ...).
+   - Mixed-radix representation = prime-based digit system.
+   - (Hook) Prime set defined in header block.
 
 4. ADAPTIVE MODE SELECTION
-   - Group rows/series with similar patterns.
-   - Assign each group a MODE:
-     * MODE = local encoding rule (e.g. which primes, which normalization, which delta scheme).
-   - Reuse MODE definitions across similar series to avoid re-storing rules.
+   - Cluster rows/series with similar exponent patterns.
+   - Assign MODE = local encoding rule.
+   - Reuse MODE definitions across similar series.
+   - (Hook) MODE table stored separately for reuse.
 
 5. DELTA (SIGNED DIFFERENCE) ENCODING
-   - Instead of storing each exponent sequence directly:
-     * store differences between consecutive exponents or coefficients.
-   - Example:
+   - Store differences instead of raw exponents:
      * d[i] = e[i] - e[i-1]
-   - This reduces magnitude and improves compressibility.
+   - Reduces magnitude → improves compressibility.
+   - (Hook) Delta flag stored in glyph layer.
 
 6. PACKING INTO FIXED FIELDS
-   - Pack exponent sets into fixed-width integer fields (e.g. 29-bit words).
+   - Pack exponent sets into fixed-width fields (e.g. 29-bit words).
    - Each field encodes multiple prime exponents:
      * field = f(a, b, c, d, e, f, ...)
-   - Result: dense, reversible integer payload.
+   - Dense, reversible integer payload.
+   - (Hook) Field map stored in header.
 
 7. BYTE-LEVEL COMPRESSION RESULT
-   - Compare:
-     * RAW payload size vs. PACKED payload size.
-   - Typical outcome:
-     * ~8–10% savings (e.g. 14,965 B → 13,698 B).
+   - Compare RAW vs PACKED payload size.
+   - Typical outcome: ~8–10% savings.
+   - (Hook) Compression report appended to codex footer.
 
 
 MAP (COLOR/GLYPH VISUAL CODING)
----------------------------------------------------
+-------------------------------
 
 1. VISUAL ALPHABET
-   - Define:
-     * COLORS: 8–16 distinct hues.
-     * GLYPHS: 4–8 shapes (circle, triangle, square, diamond, bar, etc.).
-     * INTENSITY: 2–4 brightness levels.
+   - COLORS: 8–16 hues.
+   - GLYPHS: 4–8 shapes.
+   - INTENSITY: 2–4 brightness levels.
+   - (Hook) Alphabet table stored in legend.
 
 2. COLOR → PRIME MAPPING
-   - Assign each color to a prime:
-     * red    → 2
-     * blue   → 3
-     * green  → 5
-     * yellow → 7
-     * purple → 11
-     * cyan   → 13
-     * etc.
-   - Color identity encodes which prime factor is being represented.
+   - red    → 2
+   - blue   → 3
+   - green  → 5
+   - yellow → 7
+   - purple → 11
+   - cyan   → 13
+   - etc.
+   - (Hook) Color map stored in legend.
 
 3. INTENSITY → EXPONENT MAPPING
-   - Brightness level encodes exponent magnitude:
-     * low    → small exponent
-     * medium → moderate exponent
-     * high   → large exponent
-   - Optionally use discrete bands (e.g. 0–3, 4–7, 8+).
+   - low    → small exponent
+   - medium → moderate exponent
+   - high   → large exponent
+   - Optional bands: 0–3, 4–7, 8+
+   - (Hook) Intensity map stored in legend.
 
 4. GLYPH → ROLE MAPPING
-   - Assign glyph shapes to structural roles:
-     * circle  → raw coefficient
-     * triangle→ delta (difference) value
-     * square  → MODE index / rule marker
-     * diamond → normalization / special flag
-   - This lets one diagram carry multiple data types.
+   - circle   → raw coefficient
+   - triangle → delta value
+   - square   → MODE index
+   - diamond  → normalization flag
+   - (Hook) Glyph map stored in legend.
 
 5. GRID LAYOUT
-   - Define a 2D grid:
-     * ROWS    → series / sequences / objects
-     * COLUMNS → positions / indices / coefficients
-     * BANDS   → functional regions (e.g. specific modes, ranges, or classes)
-   - The grid is the “genome” of the dataset.
+   - ROWS    → series / sequences / objects
+   - COLUMNS → positions / indices / coefficients
+   - BANDS   → functional regions
+   - (Hook) Grid schema stored in header.
 
 6. CELL RENDERING
-   - For each packed integer field:
-     * decode prime exponents.
-     * for each prime:
-       - choose COLOR (prime identity).
-       - choose INTENSITY (exponent magnitude).
-       - choose GLYPH (role).
-     * place the resulting symbol at (row, column) in the grid.
+   - For each packed field:
+     * decode prime exponents
+     * choose COLOR (prime)
+     * choose INTENSITY (exponent)
+     * choose GLYPH (role)
+     * place symbol at (row, column)
+   - (Hook) Rendering rules stored in header.
 
 7. DECODER LEGEND
-   - Provide a small ASCII/visual legend:
-     * color ↔ prime
-     * brightness ↔ exponent range
-     * glyph ↔ role
-     * row/column ↔ index meaning
-   - This is the “decoder ring” that makes the codex reversible.
+   - color ↔ prime
+   - brightness ↔ exponent range
+   - glyph ↔ role
+   - row/column ↔ index meaning
+   - (Hook) Legend placed at bottom of codex.
 
 8. REVERSIBILITY CHECK
-   - To decode:
-     * read cell → identify color, intensity, glyph, position.
-     * map color → prime.
-     * map intensity → exponent.
-     * reconstruct n = ∏ prime^exponent.
-     * reverse delta encoding.
-     * reverse normalization.
-   - Confirm reconstructed values match original dataset.
+   - read cell → identify color, intensity, glyph, position
+   - map color → prime
+   - map intensity → exponent
+   - reconstruct n = ∏ prime^exponent
+   - reverse delta encoding
+   - reverse normalization
+   - confirm match with original dataset
+   - (Hook) Reversibility test stored in footer.
+
 
 SUMMARY
 -------
-- encode numbers via normalization, prime factorization, mixed-radix packing, mode reuse, and delta encoding.
-- map packed structure into a visual codex using color (prime), intensity (exponent), glyph (role), and grid position (index).
-- Result: a hypercompressed, fully reversible, visually searchable representation of a large numeric structure.
+- encode numbers via normalization, prime factorization, mixed-radix packing,
+  mode reuse, and delta encoding.
+- map packed structure into a visual codex using color (prime), intensity
+  (exponent), glyph (role), and grid position (index).
+- Result: a hypercompressed, fully reversible, visually searchable representation
+  of a large numeric structure.
