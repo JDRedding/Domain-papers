@@ -1,71 +1,71 @@
-HYPERCOMPRESSION SPEC
-=================================
+HYPERCOMPRESSION SPEC 
+======================================================
+FULL V4.0 — RELATIONAL EDITION
 
 ENCODING (NUMERIC COMPRESSION)
 ------------------------------
 
 1. INPUT DATA
-   - Structured integer dataset:
-       coefficients b[n,k], atomic properties, modular series, etc.
-   - Must contain internal symmetry or repetition.
-   - Pre-scan for repeating motifs or clusters.
+   - Structured integer dataset with internal symmetry.
+   - Supports relational datasets (SID/PED/Q□, flux engines, triads).
+   - Pre-scan for motifs, closures, attractors, relational invariants.
 
-2. NORMALIZATION (FOR VISUALIZATION ONLY)
-   - Normalized value:
-       x' = sign(x) * log(|x| + 1)
-   - DO NOT normalize before factorization.
-   - Use normalized values only for:
+2. NORMALIZATION (VISUAL ONLY)
+   - x' = sign(x) * log(|x| + 1)
+   - Never used for factorization.
+   - Used only for:
        * prime-set selection
-       * exponent intensity binning
-       * visual scaling
-   - Exact exponent is always stored in packed data.
+       * exponent binning
+       * relational intensity scaling
 
 3. PRIME / MIXED-RADIX ENCODING
    - Factor original integer:
-       n = 2^a * 3^b * 5^c * 7^d * 11^e * 13^f * ...
-   - Store exponent vector (a, b, c, d, e, f, ...).
-   - Prime set typically:
-       {2,3,5,7,11,13,17,19,23,...}
-   - Rare large primes:
-       * use ESCAPE glyph/color
-       * store raw integer in side-channel
+       n = 2^a * 3^b * 5^c * 7^d * ...
+   - Store exact exponent vector.
+   - Prime set may be extended using:
+       * Dual Decimal System
+       * relational prime hierarchies
+   - Rare primes → ESCAPE glyph + raw integer side-channel.
 
-4. ADAPTIVE MODE SELECTION
-   - Cluster rows/series with similar exponent patterns.
-   - MODE is a small serializable object containing:
+4. ADAPTIVE MODE SELECTION (RELATIONAL)
+   - MODE is a serializable object containing:
        * prime set (or subset)
        * delta scheme (none / intra / inter / second-order)
-       * intensity bin edges (if MODE-specific)
+       * intensity bin edges
        * packing method
-   - Reuse MODE definitions across similar rows.
+       * relational operator (SID/PED/Q□)
+       * closure invariant (triadic or flux-based)
+   - MODE may encode:
+       * triadic relational geometry (TRG)
+       * SID/PED/Q□ hierarchy
+       * relational deltas (differences in invariants)
+       * flux invariants (Momentum Flux Engine)
+       * closure operators (σ-invariant stabilizers)
 
-5. DELTA (SIGNED DIFFERENCE) ENCODING
-   - Two recommended layers:
-       A. Intra-row delta:
-           d[i] = e[i] - e[i-1]
-       B. Inter-row delta:
-           d_row[r] = e_row[r] - e_row[r-1]
-   - Optional refinements:
-       * second-order deltas
-       * run-length + delta hybrids
-       * sparse-delta encoding
+5. DELTA ENCODING (MULTI-LAYER)
+   - A. Intra-row delta:
+         d[i] = e[i] - e[i-1]
+   - B. Inter-row delta:
+         d_row[r] = e_row[r] - e_row[r-1]
+   - C. Relational delta:
+         d_rel = invariant(row) - invariant(prev_row)
+   - D. Flux delta:
+         d_flux = flux_state - flux_closure
+   - Optional:
+         second-order deltas, run-length hybrids, sparse deltas.
 
 6. PACKING STRATEGY
-   - Simple method:
-       * fixed-width fields (29-bit or 32-bit)
-   - Advanced method:
-       * variable-length fields with prefix codes
-       * Elias-gamma or Fibonacci coding on exponent magnitudes
-       * small header per field describing:
-           - prime set used
-           - bit widths per exponent
-   - Packed fields must store exact exponent values.
+   - Fixed-width (29/32-bit) or variable-length prefix-coded.
+   - Advanced relational packing:
+       * Q-Box / quaternion-like packing of exponent clusters
+       * multi-point relational primitives
+       * hyperfunction-based packing for SID/PED/Q□ blocks
+   - Packed fields store exact exponent values.
 
 7. BYTE-LEVEL COMPRESSION RESULT
-   - Compare RAW vs PACKED payload size.
-   - Typical savings:
-       ~8–10% (e.g., 14,965 B → 13,698 B)
-   - Store compression statistics in footer.
+   - Typical savings: 8–10%.
+   - Flux/closure datasets may compress further.
+   - Footer stores compression statistics + checksum.
 
 
 MAP (COLOR/GLYPH VISUAL CODING)
@@ -74,87 +74,80 @@ MAP (COLOR/GLYPH VISUAL CODING)
 1. VISUAL ALPHABET
    - COLORS: 8–16 hues.
    - GLYPHS: 4–8 shapes.
-   - INTENSITY: 2–4 brightness levels.
-   - Alphabet table stored in legend.
+   - INTENSITY: 2–4 brightness bins.
+   - Supports relational glyphs (tri-lobe, flux arrows, SID/PED markers).
 
 2. COLOR → PRIME MAPPING
-   - Example:
-       red    → 2
-       blue   → 3
-       green  → 5
-       yellow → 7
-       purple → 11
-       cyan   → 13
    - Color encodes prime identity.
+   - Extended prime sets may use relational color families.
 
 3. INTENSITY → EXPONENT BINNING
-   - Brightness is derived from exponent magnitude.
-   - Brightness does NOT store exponent; exponent is stored in packed data.
+   - Brightness derived from exponent magnitude.
+   - Exponent always stored exactly in packed data.
    - Suggested bins:
-       bin0: 0–2
-       bin1: 3–5
-       bin2: 6–10
-       bin3: 11+
-   - Bin edges must be documented clearly.
+       0–2, 3–5, 6–10, 11+
 
 4. GLYPH → ROLE MAPPING
    - circle   → raw coefficient
    - triangle → delta value
    - square   → MODE index
    - diamond  → normalization flag
-   - Additional glyphs:
-       * ESCAPE (rare primes)
-       * metadata markers
+   - relational glyphs:
+       * tri-lobe (triadic operator)
+       * flux arrow (flux state)
+       * closure ring (fixed-point)
+       * Q-box (multi-point relational primitive)
+   - ESCAPE glyph for rare primes.
 
 5. ZERO & SIGN HANDLING
-   - Zero:
-       * dedicated glyph (e.g., hollow circle)
-   - Sign:
-       * glyph orientation (up/down)
-       * or sign-color layer
-       * or metadata bit
+   - Zero → dedicated glyph (hollow circle).
+   - Sign → orientation, color temperature, or metadata bit.
 
 6. GRID LAYOUT
-   - ROWS    → series / sequences / objects
-   - COLUMNS → positions / indices / coefficients
-   - BANDS   → functional regions (modes, ranges, classes)
-   - Grid schema stored in header.
+   - ROWS    → series / relational objects / flux states
+   - COLUMNS → indices / coefficients / relational points
+   - BANDS   → MODE regions / SID/PED/Q□ blocks / flux closures
 
 7. CELL RENDERING
-   - For each packed field:
-       * decode prime exponents
-       * choose COLOR (prime)
-       * choose INTENSITY (exponent bin)
-       * choose GLYPH (role)
-       * place symbol at (row, column)
-   - Rendering rules stored in header.
+   - Decode packed field → exponent vector.
+   - Choose:
+       * COLOR (prime)
+       * INTENSITY (exponent bin)
+       * GLYPH (role or relational operator)
+       * ORIENTATION (sign)
+   - Place symbol at (row, column).
 
 8. METADATA CHANNELS
-   - Escape codes
-   - Mode identifiers
-   - Normalization flags
-   - Delta-level indicators
-   - Packing header references
+   - MODE identifiers
+   - relational operator tags
+   - flux closure flags
+   - delta-level indicators
+   - escape codes
+   - packing header references
 
 9. DECODER LEGEND
    - Must include:
        * color → prime
        * intensity → exponent bin
        * glyph → role
+       * relational glyph → operator/invariant
        * orientation → sign
        * escape rules
        * zero rules
        * row/column → index meaning
 
 10. REVERSIBILITY CHECK
-   - Decode cell → color, intensity, glyph, position.
+   - Decode cell → color, intensity, glyph, orientation.
    - Map color → prime.
    - Map intensity → exponent bin.
-   - Reconstruct:
-       n = ∏ prime^exponent
-   - Reverse delta layers.
-   - Reverse normalization.
-   - Confirm match with original integer.
+   - Reconstruct integer from exact exponent.
+   - Reverse:
+       * relational deltas
+       * flux deltas
+       * intra-row deltas
+       * inter-row deltas
+       * normalization
+   - Confirm exact match with original integer.
 
 
 HEADER / FOOTER STRUCTURE
@@ -165,12 +158,16 @@ GLOBAL HEADER
    - grid dimensions
    - MODE table
    - visual alphabet version
+   - ontology metadata (RDG version, FCE variant)
+   - derivational chain pointers (links to other domain papers)
 
 PER-MODE HEADERS
    - prime subset
    - delta scheme
    - intensity bin edges
    - packing method
+   - relational operator (SID/PED/Q□)
+   - flux closure metadata
 
 PAYLOAD
    - packed fields (exact exponent data)
@@ -178,27 +175,31 @@ PAYLOAD
 FOOTER
    - compression statistics
    - checksum
+   - optional per-band or per-MODE checksums
 
 
 SUMMARY
 -------
 - Exact exponents are always stored; intensity bins are visual only.
-- MODE is a serializable object defining prime set, delta scheme,
-  bin edges, and packing method.
-- Header/footer structure ensures reversibility, consistency,
-  and long-term readability.
-- Result: a fully reversible, visually searchable, structurally
-  compressed representation of large integer datasets.
+- MODE is a relational object supporting SID/PED/Q□, flux engines,
+  triadic geometry, and closure invariants.
+- Relational deltas and flux deltas allow deeper compression.
+- Q-box and multi-point relational packing support vectorized exponent
+  compression.
+- Header/footer structure supports ontology metadata and derivational
+  chains.
+- Result: a fully reversible, relationally-aware, visually searchable,
+  structurally compressed representation of large integer datasets.
 
 
-REFERENCE SUMMARY
+REFERENCE TOPICS SUMMARY
 ------------------------
-1. Pattern search for structured data
+1. Pattern search for structured or relational data
 2. Normalization strategy for reversible encoding
 3. Prime-set design and escape mechanisms
-4. Delta encoding strategies (intra-row, inter-row, second-order)
-5. Mixed-radix packing strategies (fixed, variable, prefix-coded)
-6. Visual alphabet design (colors, glyphs, intensity bins)
+4. Delta encoding strategies (intra-row, inter-row, relational, flux)
+5. Mixed-radix and relational packing strategies
+6. Visual alphabet design (colors, glyphs, relational symbols)
 7. Sign and zero encoding
-8. Metadata channels (mode, normalization, delta-level, escape)
+8. Metadata channels (mode, normalization, relational operators)
 9. Decoder design (full reversibility)
