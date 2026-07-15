@@ -1,51 +1,71 @@
 HYPERCOMPRESSION SPEC
-=====================
+=================================
 
 ENCODING (NUMERIC COMPRESSION)
 ------------------------------
 
 1. INPUT DATA
-   - Start with a structured integer dataset:
-     * e.g. coefficients b[n,k], atomic properties, modular series, etc.
-   - Requirement: data has internal symmetry / repetition.
-   - (Hook) Pre-scan dataset for repeating motifs using pattern search.
+   - Structured integer dataset:
+       coefficients b[n,k], atomic properties, modular series, etc.
+   - Must contain internal symmetry or repetition.
+   - Pre-scan for repeating motifs or clusters.
 
-2. NORMALIZATION
-   - Convert raw integers to a normalized magnitude:
-     * x' = sign(x) * log(|x| + 1)
-   - Goal: compact, symmetric range for visual + radix encoding.
-   - (Hook) Store normalization rule as MODE flag.
+2. NORMALIZATION (FOR VISUALIZATION ONLY)
+   - Normalized value:
+       x' = sign(x) * log(|x| + 1)
+   - DO NOT normalize before factorization.
+   - Use normalized values only for:
+       * prime-set selection
+       * exponent intensity binning
+       * visual scaling
+   - Exact exponent is always stored in packed data.
 
 3. PRIME / MIXED-RADIX ENCODING
-   - Express each (non-zero) integer as:
-     * n = 2^a * 3^b * 5^c * 7^d * 11^e * 13^f * ...
-   - Store exponents (a, b, c, d, e, f, ...).
-   - Mixed-radix representation = prime-based digit system.
-   - (Hook) Prime set defined in header block.
+   - Factor original integer:
+       n = 2^a * 3^b * 5^c * 7^d * 11^e * 13^f * ...
+   - Store exponent vector (a, b, c, d, e, f, ...).
+   - Prime set typically:
+       {2,3,5,7,11,13,17,19,23,...}
+   - Rare large primes:
+       * use ESCAPE glyph/color
+       * store raw integer in side-channel
 
 4. ADAPTIVE MODE SELECTION
    - Cluster rows/series with similar exponent patterns.
-   - Assign MODE = local encoding rule.
-   - Reuse MODE definitions across similar series.
-   - (Hook) MODE table stored separately for reuse.
+   - MODE is a small serializable object containing:
+       * prime set (or subset)
+       * delta scheme (none / intra / inter / second-order)
+       * intensity bin edges (if MODE-specific)
+       * packing method
+   - Reuse MODE definitions across similar rows.
 
 5. DELTA (SIGNED DIFFERENCE) ENCODING
-   - Store differences instead of raw exponents:
-     * d[i] = e[i] - e[i-1]
-   - Reduces magnitude → improves compressibility.
-   - (Hook) Delta flag stored in glyph layer.
+   - Two recommended layers:
+       A. Intra-row delta:
+           d[i] = e[i] - e[i-1]
+       B. Inter-row delta:
+           d_row[r] = e_row[r] - e_row[r-1]
+   - Optional refinements:
+       * second-order deltas
+       * run-length + delta hybrids
+       * sparse-delta encoding
 
-6. PACKING INTO FIXED FIELDS
-   - Pack exponent sets into fixed-width fields (e.g. 29-bit words).
-   - Each field encodes multiple prime exponents:
-     * field = f(a, b, c, d, e, f, ...)
-   - Dense, reversible integer payload.
-   - (Hook) Field map stored in header.
+6. PACKING STRATEGY
+   - Simple method:
+       * fixed-width fields (29-bit or 32-bit)
+   - Advanced method:
+       * variable-length fields with prefix codes
+       * Elias-gamma or Fibonacci coding on exponent magnitudes
+       * small header per field describing:
+           - prime set used
+           - bit widths per exponent
+   - Packed fields must store exact exponent values.
 
 7. BYTE-LEVEL COMPRESSION RESULT
    - Compare RAW vs PACKED payload size.
-   - Typical outcome: ~8–10% savings.
-   - (Hook) Compression report appended to codex footer.
+   - Typical savings:
+       ~8–10% (e.g., 14,965 B → 13,698 B)
+   - Store compression statistics in footer.
 
 
 MAP (COLOR/GLYPH VISUAL CODING)
@@ -55,70 +75,130 @@ MAP (COLOR/GLYPH VISUAL CODING)
    - COLORS: 8–16 hues.
    - GLYPHS: 4–8 shapes.
    - INTENSITY: 2–4 brightness levels.
-   - (Hook) Alphabet table stored in legend.
+   - Alphabet table stored in legend.
 
 2. COLOR → PRIME MAPPING
-   - red    → 2
-   - blue   → 3
-   - green  → 5
-   - yellow → 7
-   - purple → 11
-   - cyan   → 13
-   - etc.
-   - (Hook) Color map stored in legend.
+   - Example:
+       red    → 2
+       blue   → 3
+       green  → 5
+       yellow → 7
+       purple → 11
+       cyan   → 13
+   - Color encodes prime identity.
 
-3. INTENSITY → EXPONENT MAPPING
-   - low    → small exponent
-   - medium → moderate exponent
-   - high   → large exponent
-   - Optional bands: 0–3, 4–7, 8+
-   - (Hook) Intensity map stored in legend.
+3. INTENSITY → EXPONENT BINNING
+   - Brightness is derived from exponent magnitude.
+   - Brightness does NOT store exponent; exponent is stored in packed data.
+   - Suggested bins:
+       bin0: 0–2
+       bin1: 3–5
+       bin2: 6–10
+       bin3: 11+
+   - Bin edges must be documented clearly.
 
 4. GLYPH → ROLE MAPPING
    - circle   → raw coefficient
    - triangle → delta value
    - square   → MODE index
    - diamond  → normalization flag
-   - (Hook) Glyph map stored in legend.
+   - Additional glyphs:
+       * ESCAPE (rare primes)
+       * metadata markers
 
-5. GRID LAYOUT
+5. ZERO & SIGN HANDLING
+   - Zero:
+       * dedicated glyph (e.g., hollow circle)
+   - Sign:
+       * glyph orientation (up/down)
+       * or sign-color layer
+       * or metadata bit
+
+6. GRID LAYOUT
    - ROWS    → series / sequences / objects
    - COLUMNS → positions / indices / coefficients
-   - BANDS   → functional regions
-   - (Hook) Grid schema stored in header.
+   - BANDS   → functional regions (modes, ranges, classes)
+   - Grid schema stored in header.
 
-6. CELL RENDERING
+7. CELL RENDERING
    - For each packed field:
-     * decode prime exponents
-     * choose COLOR (prime)
-     * choose INTENSITY (exponent)
-     * choose GLYPH (role)
-     * place symbol at (row, column)
-   - (Hook) Rendering rules stored in header.
+       * decode prime exponents
+       * choose COLOR (prime)
+       * choose INTENSITY (exponent bin)
+       * choose GLYPH (role)
+       * place symbol at (row, column)
+   - Rendering rules stored in header.
 
-7. DECODER LEGEND
-   - color ↔ prime
-   - brightness ↔ exponent range
-   - glyph ↔ role
-   - row/column ↔ index meaning
-   - (Hook) Legend placed at bottom of codex.
+8. METADATA CHANNELS
+   - Escape codes
+   - Mode identifiers
+   - Normalization flags
+   - Delta-level indicators
+   - Packing header references
 
-8. REVERSIBILITY CHECK
-   - read cell → identify color, intensity, glyph, position
-   - map color → prime
-   - map intensity → exponent
-   - reconstruct n = ∏ prime^exponent
-   - reverse delta encoding
-   - reverse normalization
-   - confirm match with original dataset
-   - (Hook) Reversibility test stored in footer.
+9. DECODER LEGEND
+   - Must include:
+       * color → prime
+       * intensity → exponent bin
+       * glyph → role
+       * orientation → sign
+       * escape rules
+       * zero rules
+       * row/column → index meaning
+
+10. REVERSIBILITY CHECK
+   - Decode cell → color, intensity, glyph, position.
+   - Map color → prime.
+   - Map intensity → exponent bin.
+   - Reconstruct:
+       n = ∏ prime^exponent
+   - Reverse delta layers.
+   - Reverse normalization.
+   - Confirm match with original integer.
+
+
+HEADER / FOOTER STRUCTURE
+-------------------------
+
+GLOBAL HEADER
+   - prime list
+   - grid dimensions
+   - MODE table
+   - visual alphabet version
+
+PER-MODE HEADERS
+   - prime subset
+   - delta scheme
+   - intensity bin edges
+   - packing method
+
+PAYLOAD
+   - packed fields (exact exponent data)
+
+FOOTER
+   - compression statistics
+   - checksum
 
 
 SUMMARY
 -------
-- encode numbers via normalization, prime factorization, mixed-radix packing,
-  mode reuse, and delta encoding.
-- map packed structure into a visual codex using color (prime), intensity
-  (exponent), glyph (role), and grid position (index).
-- Result: a hypercompressed, fully reversible, visually searchable representation
-  of a large numeric structure.
+- Exact exponents are always stored; intensity bins are visual only.
+- MODE is a serializable object defining prime set, delta scheme,
+  bin edges, and packing method.
+- Header/footer structure ensures reversibility, consistency,
+  and long-term readability.
+- Result: a fully reversible, visually searchable, structurally
+  compressed representation of large integer datasets.
+
+
+REFERENCE SUMMARY
+------------------------
+1. Pattern search for structured data
+2. Normalization strategy for reversible encoding
+3. Prime-set design and escape mechanisms
+4. Delta encoding strategies (intra-row, inter-row, second-order)
+5. Mixed-radix packing strategies (fixed, variable, prefix-coded)
+6. Visual alphabet design (colors, glyphs, intensity bins)
+7. Sign and zero encoding
+8. Metadata channels (mode, normalization, delta-level, escape)
+9. Decoder design (full reversibility)
