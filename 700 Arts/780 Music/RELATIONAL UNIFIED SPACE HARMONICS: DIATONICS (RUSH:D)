@@ -1,6 +1,18 @@
 ================================================================================
           RELATIONAL UNIFIED SPACE HARMONICS: DIATONICS (RUSH:D)
 ================================================================================
+Summary: Relational Unified Space Harmonics 
+
+This document presents a mathematical framework for music harmony grounded in 
+abstract algebra and differential geometry. Here's the core structure:
+
+Main Concept
+H_RDG^Harmonics = A unified relational space that models harmonic 
+relationships through:
+
+Structures (S): Seven chord/mode sets anchored in C major
+Interactions (I): Six harmonic operators that transform between sets
+Partitioning (PED): Operators grouped by function (Power, Evaluation, Dynamics)
 
 H_RDG^Harmonics = H_RDG
 H_RDG := (SID(H), PED(H))
@@ -14,7 +26,8 @@ Where:
     • Dynamics(Q)  := {Ω}
 
 Curvature: K(A,B) := [A,B] = A∘B − B∘A  (non-commutativity = harmonic tension)
-Harmonic Geodesics γ minimize cumulative C(γ) = Σ ||K(O_i, O_{i+1})|| within tonal constraints.
+Harmonic Geodesics γ minimize cumulative C(γ) = Σ ||K(O_i, O_{i+1})|| within
+tonal constraints.
 
 SID–PED Mapping
 
@@ -27,6 +40,15 @@ PED(Harmony):
     Power(M,F)      := Φ5, Δ, τ        (motion, applied force, chromatic tension)
     Evaluation(p,P) := β, ρ            (modal color, borrowed evaluation)
     Dynamics(Q)     := Ω, cadential flow, tritone collapse
+
+The Seven Building Blocks (S)
+DTS – Diatonic triads (C, Dm, Em, F, G, Am, Bdim)
+PMS – Parallel modes (Ionian through Locrian)
+FCS – Circle of Fifths (F, C, G, D, A, E, B...)
+BCS – Borrowed chords (Eb, Fm, Ab, Bb from parallel minor)
+SDS – Secondary dominants (D7→G, A7→Dm, etc.)
+TTP – Tritone pairs (G7↔Db7, D7↔Ab7, etc.)
+BDS – Backdoor resolution (Fm7–Bb7–C)
 
 Harmonic Operators
 Φ5 : S → S        (fifth-motion morphism)
@@ -49,12 +71,21 @@ Path_3 (Dominant → Tritone → Tonic):
 Path_4 (Mode → Borrow → Diatonic):
     PMS --ρⁿ--> PMS --β--> BCS --resolve--> DTS
 
+The Six Operators (I)
+Φ5 – Fifth-motion (circle of fifths navigation)
+ρ – Mode rotation (scale degree transformation)
+β – Parallel borrow (modal interchange)
+Δ – Applied dominant (secondary tonicization)
+τ – Tritone substitution (chromatic reharmonization)
+Ω – Backdoor resolution (deceptive cadence)
+
 Operator chains
 Chain := Ω ∘ β ∘ ρⁿ
 Chain := Φ5⁻¹ ∘ τ
 Chain := Φ5⁻¹ ∘ Δ
 
-Harmonic operators naturally partition into force‑operators, color‑operators, and resolution‑operator.
+Harmonic operators naturally partition into force‑operators, color‑operators, 
+and resolution‑operator.
 
 Operators:
     Φ5  = fifth-motion
@@ -91,17 +122,22 @@ PRIMITIVE SETS
 
 TONIC CENTER:                T  := C
 
-DIATONIC TRIAD SET (DTS):    { I(CM), ii(Dm), iii(Em), IV(FM), V(GM), vi(Am), vii°(Bdim) }
+DIATONIC TRIAD SET (DTS):    { I(CM), ii(Dm), iii(Em), IV(FM), V(GM), vi(Am), 
+                              vii°(Bdim) }
 
-PARALLEL MODE SET (PMS):     { Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian }
+PARALLEL MODE SET (PMS):     { Ionian, Dorian, Phrygian, Lydian, Mixolydian, 
+                              Aeolian, Locrian }
 
-FIFTH-CYCLE SET (FCS):       { ... F, C, G, D, A, E, B, F♯/G♭, C♯/D♭ ... }  (Circle of Fifths)
+FIFTH-CYCLE SET (FCS):       { ... F, C, G, D, A, E, B, F♯/G♭, C♯/D♭ ... }  
+                              (Circle of Fifths)
 
 TRITONE PAIR SET (TTP):      { (G7,Db7), (D7,Ab7), (A7,Eb7), (E7,Bb7), (B7,F7) }
 
-BORROWED CHORD SET (BCS):    { ♭III(Eb), iv(Fm), ♭VI(Ab), ♭VII(Bb) }   (from parallel minor)
+BORROWED CHORD SET (BCS):    { ♭III(Eb), iv(Fm), ♭VI(Ab), ♭VII(Bb) }   (from 
+                              parallel minor)
 
-SECONDARY DOMINANT SET (SDS):{ D7→G(V), A7→Dm(ii), C7→F(IV), E7→Am(vi), B7→Em(iii) }
+SECONDARY DOMINANT SET (SDS):{ D7→G(V), A7→Dm(ii), C7→F(IV), E7→Am(vi), 
+                              B7→Em(iii) }
 
 BACKDOOR SET (BDS):          { Fm7 → Bb7 → Cmaj7 }   (iv7–♭VII7–I)
 
@@ -180,7 +216,8 @@ SDS = {D7→G, A7→Dm, C7→F, E7→Am, B7→Em}
 TTP = {G7↔Db7, ...}
 BDS = {Fm7→Bb7→C}
 
-Operators: Φ5(fifths), ρ(modes), β(borrow), Δ(secondary dom), τ(tritone), Ω(backdoor)
+Operators: Φ5(fifths), ρ(modes), β(borrow), Δ(secondary dom), τ(tritone), 
+Ω(backdoor)
 
 H = full relational space above.
 
@@ -231,7 +268,8 @@ A harmonic geodesic γ is a sequence of operators {O_i} such that:
 
        C(γ) := Σ ||K(O_i, O_{i+1})||
 
-    3) Subject to musical constraints (e.g. must pass through a target chord or mode).
+    3) Subject to musical constraints (e.g. must pass through a target chord or 
+       mode).
 
 Low-curvature (geodesic-like):
     C  →  Am  →  Dm  →  G  →  C
@@ -296,3 +334,13 @@ K(A,B) (harmonic curvature)
     Music:    least-tension progression under constraints (smooth changes).
     Physics:  minimum-action / minimum-loss path in a resonant or field system,
               optimal routing of energy with minimal curvature.
+
+Harmonic Curvature
+The document introduces K(A,B) = A∘B − B∘A (non-commutativity) as harmonic 
+tension. Harmonic geodesics minimize cumulative curvature—smooth progressions 
+stay "flat" while chromatic moves create "curved space."
+
+Physics Mapping
+The framework extends beyond music to acoustics, electromagnetism, resonance 
+engineering, and signal processing—treating the operator-geometry as universal 
+across harmonic systems.
