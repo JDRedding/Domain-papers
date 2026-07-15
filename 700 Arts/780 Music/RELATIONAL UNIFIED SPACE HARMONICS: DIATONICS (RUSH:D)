@@ -85,8 +85,10 @@ Interpretation:
     K ≠ 0  → curved harmonic space (tension, drift, chromaticity)
     K = 0  → flat harmonic space (commuting operators)
 
-PRIMITIVE SETS (Building Blocks from the Original Music Theory Tree)
+PRIMITIVE SETS 
 -------------------------------------------------------------------
+(Building Blocks from the Original Music Theory Tree)
+
 TONIC CENTER:                T  := C
 
 DIATONIC TRIAD SET (DTS):    { I(CM), ii(Dm), iii(Em), IV(FM), V(GM), vi(Am), vii°(Bdim) }
@@ -104,6 +106,7 @@ SECONDARY DOMINANT SET (SDS):{ D7→G(V), A7→Dm(ii), C7→F(IV), E7→Am(vi), 
 BACKDOOR SET (BDS):          { Fm7 → Bb7 → Cmaj7 }   (iv7–♭VII7–I)
 
 ================================================================================
+
 RELATIONAL OPERATORS (How Sets Transform & Connect)
 ----------------------------------------------------
 
@@ -163,7 +166,8 @@ the tonal center:
 - Modal tools → Emotional color (β + Ω + PMS)
 - Chromatic tools → Sophistication (Δ + τ)
 
-Result: A complete toolkit used across jazz (standards like Misty, Stella), pop/rock (Beatles, Radiohead, Stevie Wonder), soul, classical, and film.
+Result: A complete toolkit used across jazz (standards like Misty, Stella), 
+pop/rock (Beatles, Radiohead, Stevie Wonder), soul, classical, and film.
 
 ================================================================================
 COMPACT SUMMARY BLOCK (Copy-Paste Ready Reference)
@@ -292,6 +296,3 @@ K(A,B) (harmonic curvature)
     Music:    least-tension progression under constraints (smooth changes).
     Physics:  minimum-action / minimum-loss path in a resonant or field system,
               optimal routing of energy with minimal curvature.
-
-END OF UNIFIED SUMMARY
-================================================================================
