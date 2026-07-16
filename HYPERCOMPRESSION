@@ -484,8 +484,7 @@ def hypercompress_triadic_3d(data_3d, prime_set):
 ```
 
 ---
-
-## **Triadic Delta Engine (SID / PED / Q□ / TRIAD)**  
+Triadic Delta Engine (SID / PED / Q□ / TRIAD)
 Explicit about the relational semantics.
 
 ```
@@ -518,7 +517,7 @@ def apply_triadic_deltas(E, modes):
 ```
 
 ---
-*Q‑Box Packing (Quaternion‑like Triadic Primitive)
+Q‑Box Packing (Quaternion‑like Triadic Primitive)
 
 ```
 def qbox_pack(D, modes):
