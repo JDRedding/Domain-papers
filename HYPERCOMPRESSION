@@ -391,3 +391,80 @@ This projection represents the natural evolution of the 2D lattice
 into a higher-dimensional, relationally balanced geometry — a
 living manifold of structure, flux, and closure.
 
+# =============================================
+# HYPERCOMPRESSION 3D TRIADIC MANIFOLD
+# SID/PED/Q□ Relational Extension
+# =============================================
+
+def hypercompress_triadic_3d(data_3d):
+    """
+    data_3d: 3D tensor [Z (Q□ iterations), Y (PED/flux), X (SID/structure)]
+              containing integer values (coefficients, exponents, etc.)
+    """
+    
+    # 1. INPUT & PRE-SCAN
+    grid_shape = data_3d.shape  # (Z, Y, X)
+    # Pre-scan for motifs, closures, and triadic invariants
+    invariants = detect_triadic_invariants(data_3d)  # σ-stabilizers, attractors
+    
+    # 2. PRIME FACTORIZATION (per voxel)
+    exponents_3d = factor_to_exponents_3d(data_3d, prime_set)
+    
+    # 3. ADAPTIVE TRIADIC MODE SELECTION
+    modes = cluster_triadic_modes(exponents_3d)
+    # Each MODE now includes:
+    #   - prime_subset
+    #   - delta_scheme (intra-SID, inter-PED, diagonal-Q)
+    #   - relational_operator (SID/PED/Q□)
+    #   - closure_invariant
+    
+    # 4. MULTI-LAYER DELTA ENCODING (Triadic)
+    deltas = apply_triadic_deltas(exponents_3d, modes)
+    # Types:
+    #   - Intra-layer (within SID slice)
+    #   - Inter-layer (PED/flux across Z)
+    #   - Diagonal triadic (SID ↔ PED ↔ Q□ closures)
+    
+    # 5. RELATIONAL Q-BOX PACKING
+    packed = qbox_pack(deltas, modes)
+    # Q-Box: compresses small triadic neighborhoods (SID,PED,Q) as single primitive
+    # using hyperfunction or quaternion-like encoding
+    
+    # 6. VISUAL MANIFOLD RENDERING
+    visual_manifold = render_triadic_glyph_manifold(
+        exponents_3d,
+        modes,
+        projection="orthogonal_3d"   # or "spherical_hilbert"
+    )
+    # Uses: color→prime, intensity→exponent bin, glyph→role (tri-lobe, flux arrow, etc.)
+    
+    # 7. HEADER / FOOTER
+    header = build_triadic_header(
+        grid_shape=grid_shape,
+        modes=modes,
+        ontology={"framework": "RDG", "variant": "FCE-TRIADIC"},
+        derivational_pointers=["../500-599 Science/RDG-Core.md"]
+    )
+    
+    payload = packed
+    footer = build_footer(stats=compression_stats, checksum=compute_checksum(payload))
+    
+    return header + payload + footer, visual_manifold
+
+
+# Helper functions (stubs)
+def detect_triadic_invariants(data_3d):
+    # Find stable closures across SID-PED-Q□ dimensions
+    pass
+
+def apply_triadic_deltas(exponents_3d, modes):
+    # Compute intra-SID, inter-PED, and diagonal relational deltas
+    pass
+
+def qbox_pack(deltas, modes):
+    # Vectorized packing of small triadic groups using relational primitives
+    pass
+
+def render_triadic_glyph_manifold(exponents_3d, modes, projection="orthogonal_3d"):
+    # Output SVG / voxel grid / point-cloud with tri-lobes, flux arrows, etc.
+    pass
