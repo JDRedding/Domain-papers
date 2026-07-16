@@ -2,11 +2,16 @@ HYPERCOMPRESSION SPEC
 ======================================================
 FULL V4.0 — RELATIONAL EDITION
 
-Effective for large, structured integer datasets that
-have internal symmetries, repetitions, motifs, 
-closures, or relational patterns. Examples that align 
-with:
+Summary
+This document outlines a compression algorithm 
+specifically designed for large, structured integer 
+datasets with internal patterns, symmetries, and 
+relational structures. 
 
+Key Components
+
+When to Use:
+---
 - Exponent matrices from prime factorizations, modular 
 series, or coefficient tables.
 - Simulation outputs from Triadic Relational Geometry, 
@@ -18,21 +23,28 @@ multi-dimensional relational arrays.
 - Repetitive numeric series where deltas (especially 
 relational/flux deltas) and MODE clustering shine
 
-General-purpose files (text, images, binaries, videos, 
-random data) → Standard tools like zstd, bzip2, xz, or 
-domain-specific codecs (PNG, FLAC, etc.) will outperform 
-it. Method relies on prime factorization and relational 
-structure that generic data lacks.
-
-Very sparse or noisy unstructured integers → The overhead 
-of headers, MODEs, and factorization could hurt ratios.
-
-Extremely large-scale (terabytes) without optimized 
-implementation — factorization cost per integer adds up 
-if not batched cleverly.
+When NOT to Use:
+---
+- General-purpose files (text, images, video) — 
+ standard tools like zstd, bzip2, xz are better
+- Very sparse or noisy unstructured data — overhead 
+ hurts compression ratios
 
 ENCODING (NUMERIC COMPRESSION)
 ------------------------------
+Core Encoding Strategy
+---
+Prime Factorization: Factor each integer into prime 
+ exponents (e.g., n = 2^a × 3^b × 5^c...)
+Adaptive MODE Selection: Groups data by relational 
+ patterns, delta schemes, and closure invariants
+Multi-Layer Delta Encoding: Applies intra-row, 
+ inter-row, relational, and flux deltas to reduce 
+ redundancy
+Packing: Uses fixed or variable-length encoding 
+ (preserving exact exponents)
+Byte-Level Compression: Achieves ~8–10% savings, more 
+ for flux/closure datasets
 
 1. INPUT DATA
    - Structured integer dataset with internal symmetry.
@@ -99,6 +111,18 @@ ENCODING (NUMERIC COMPRESSION)
 
 MAP (COLOR/GLYPH VISUAL CODING)
 -------------------------------
+Visual Mapping
+---
+Renders the compressed data as a searchable, reversible 
+glyph grid:
+
+Colors → Prime identity
+Intensity/Brightness → Exponent magnitude (visual only; 
+ exact values stored)
+Glyphs → Role (circle = coefficient, triangle = delta, 
+ square = MODE index, etc.)
+Relational Glyphs → Triadic operators, flux arrows, 
+ closure rings
 
 1. VISUAL ALPHABET
    - COLORS: 8–16 hues.
