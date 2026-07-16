@@ -391,80 +391,201 @@ This projection represents the natural evolution of the 2D lattice
 into a higher-dimensional, relationally balanced geometry — a
 living manifold of structure, flux, and closure.
 
-# =============================================
-# HYPERCOMPRESSION 3D TRIADIC MANIFOLD
-# SID/PED/Q□ Relational Extension
-# =============================================
+Triadic Hypercompression — Pseudocode (SID / PED / Q□)
+------------------------
+```
+# ============================================================
+# HYPERCOMPRESSION — TRIADIC MANIFOLD EDITION (V4.1)
+# SID / PED / Q□ Relational Compression Pipeline
+# ============================================================
 
-def hypercompress_triadic_3d(data_3d):
+def hypercompress_triadic_3d(data_3d, prime_set):
     """
-    data_3d: 3D tensor [Z (Q□ iterations), Y (PED/flux), X (SID/structure)]
-              containing integer values (coefficients, exponents, etc.)
+    data_3d: 3D tensor indexed as:
+             Z = Q□ (closure / iteration)
+             Y = PED (flux / field)
+             X = SID (structure / exponent topology)
     """
-    
-    # 1. INPUT & PRE-SCAN
-    grid_shape = data_3d.shape  # (Z, Y, X)
-    # Pre-scan for motifs, closures, and triadic invariants
-    invariants = detect_triadic_invariants(data_3d)  # σ-stabilizers, attractors
-    
-    # 2. PRIME FACTORIZATION (per voxel)
-    exponents_3d = factor_to_exponents_3d(data_3d, prime_set)
-    
-    # 3. ADAPTIVE TRIADIC MODE SELECTION
-    modes = cluster_triadic_modes(exponents_3d)
-    # Each MODE now includes:
-    #   - prime_subset
-    #   - delta_scheme (intra-SID, inter-PED, diagonal-Q)
-    #   - relational_operator (SID/PED/Q□)
-    #   - closure_invariant
-    
-    # 4. MULTI-LAYER DELTA ENCODING (Triadic)
-    deltas = apply_triadic_deltas(exponents_3d, modes)
-    # Types:
-    #   - Intra-layer (within SID slice)
-    #   - Inter-layer (PED/flux across Z)
-    #   - Diagonal triadic (SID ↔ PED ↔ Q□ closures)
-    
-    # 5. RELATIONAL Q-BOX PACKING
-    packed = qbox_pack(deltas, modes)
-    # Q-Box: compresses small triadic neighborhoods (SID,PED,Q) as single primitive
-    # using hyperfunction or quaternion-like encoding
-    
-    # 6. VISUAL MANIFOLD RENDERING
-    visual_manifold = render_triadic_glyph_manifold(
-        exponents_3d,
+
+    # --------------------------------------------------------
+    # 1. PRE-SCAN: detect motifs, closures, σ-stabilizers
+    # --------------------------------------------------------
+    grid_shape = data_3d.shape
+    invariants = detect_triadic_invariants(data_3d)
+    # invariants[z][y][x] = relational signature
+
+    # --------------------------------------------------------
+    # 2. PRIME FACTORIZATION → exponent tensor
+    # --------------------------------------------------------
+    exponents = factor_to_exponents_3d(data_3d, prime_set)
+    # exponents[z][y][x] = [v2, v3, v5, ...]
+
+    # --------------------------------------------------------
+    # 3. MODE SELECTION (triadic)
+    # --------------------------------------------------------
+    modes = cluster_triadic_modes(exponents, invariants)
+    # MODE fields:
+    #   prime_subset
+    #   delta_scheme (SID / PED / Q□ / TRIAD)
+    #   relational_operator
+    #   closure_invariant
+    #   packing_method
+    #   region (voxel set)
+
+    # --------------------------------------------------------
+    # 4. DELTA ENCODING (SID, PED, Q□, TRIAD)
+    # --------------------------------------------------------
+    deltas = apply_triadic_deltas(exponents, modes)
+    # deltas.sid[z][y][x]
+    # deltas.ped[z][y][x]
+    # deltas.qbox[z][y][x]
+    # deltas.triad[z][y][x]
+
+    # --------------------------------------------------------
+    # 5. Q-BOX PACKING (triadic primitive)
+    # --------------------------------------------------------
+    packed_stream = qbox_pack(deltas, modes)
+    # Each Q-Box encodes a triadic neighborhood:
+    #   (SID delta, PED delta, Q□ delta, TRIAD delta)
+
+    # --------------------------------------------------------
+    # 6. VISUAL MANIFOLD (optional)
+    # --------------------------------------------------------
+    visual = render_triadic_glyph_manifold(
+        exponents,
         modes,
-        projection="orthogonal_3d"   # or "spherical_hilbert"
+        projection="orthogonal_3d"
     )
-    # Uses: color→prime, intensity→exponent bin, glyph→role (tri-lobe, flux arrow, etc.)
-    
+
+    # --------------------------------------------------------
     # 7. HEADER / FOOTER
+    # --------------------------------------------------------
     header = build_triadic_header(
         grid_shape=grid_shape,
         modes=modes,
         ontology={"framework": "RDG", "variant": "FCE-TRIADIC"},
-        derivational_pointers=["../500-599 Science/RDG-Core.md"]
     )
-    
-    payload = packed
-    footer = build_footer(stats=compression_stats, checksum=compute_checksum(payload))
-    
-    return header + payload + footer, visual_manifold
 
+    footer = build_footer(
+        stats=compute_stats(packed_stream),
+        checksum=compute_checksum(packed_stream)
+    )
 
-# Helper functions (stubs)
-def detect_triadic_invariants(data_3d):
-    # Find stable closures across SID-PED-Q□ dimensions
-    pass
+    return header, packed_stream, footer, visual
+```
 
-def apply_triadic_deltas(exponents_3d, modes):
-    # Compute intra-SID, inter-PED, and diagonal relational deltas
-    pass
+---
 
-def qbox_pack(deltas, modes):
-    # Vectorized packing of small triadic groups using relational primitives
-    pass
+## **Triadic Delta Engine (SID / PED / Q□ / TRIAD)**  
+Explicit about the relational semantics.
 
-def render_triadic_glyph_manifold(exponents_3d, modes, projection="orthogonal_3d"):
-    # Output SVG / voxel grid / point-cloud with tri-lobes, flux arrows, etc.
-    pass
+```
+def apply_triadic_deltas(E, modes):
+
+    D = init_delta_tensor_like(E)
+
+    for z in range(E.Z):
+        for y in range(E.Y):
+            for x in range(E.X):
+
+                # SID delta (structural)
+                if x > 0:
+                    D.sid[z][y][x] = E[z][y][x] - E[z][y][x-1]
+
+                # PED delta (flux)
+                if y > 0:
+                    D.ped[z][y][x] = E[z][y][x] - E[z][y-1][x]
+
+                # Q□ delta (closure iteration)
+                if z > 0:
+                    D.qbox[z][y][x] = E[z][y][x] - E[z-1][y][x]
+
+                # TRIAD delta (invariant difference)
+                inv_curr = invariant(E[z][y][x])
+                inv_prev = invariant(E[z-1][y-1][x-1]) if (z>0 and y>0 and x>0) else 0
+                D.triad[z][y][x] = inv_curr - inv_prev
+
+    return D
+```
+
+---
+*Q‑Box Packing (Quaternion‑like Triadic Primitive)
+
+```
+def qbox_pack(D, modes):
+
+    stream = []
+
+    for MODE in modes:
+
+        region = MODE.region
+        scheme = MODE.packing_method
+
+        for (z,y,x) in region:
+
+            sid   = D.sid[z][y][x]
+            ped   = D.ped[z][y][x]
+            qsig  = D.qbox[z][y][x]
+            tri   = D.triad[z][y][x]
+
+            qbox = encode_qbox(
+                sid_delta=sid,
+                ped_delta=ped,
+                q_delta=qsig,
+                tri_delta=tri,
+                scheme=scheme
+            )
+
+            stream.append(qbox)
+
+    return stream
+```
+
+---
+Triadic MODE Selection (Relational Clustering)
+
+```
+def cluster_triadic_modes(exponents, invariants):
+
+    clusters = cluster_by_relational_similarity(exponents, invariants)
+    modes = []
+
+    for C in clusters:
+
+        MODE = {
+            "prime_subset"       : choose_primes(C),
+            "delta_scheme"       : choose_delta_scheme(C),
+            "relational_operator": choose_operator(C),   # SID / PED / Q□
+            "closure_invariant"  : detect_closure(C),
+            "packing_method"     : choose_packing(C),
+            "region"             : C.region
+        }
+
+        modes.append(MODE)
+
+    return modes
+```
+
+---
+Triadic Manifold Rendering (Sphere Projection)
+
+```
+def render_triadic_glyph_manifold(E, modes, projection):
+
+    manifold = new_graph()
+
+    for MODE in modes:
+
+        node = manifold.add_node(
+            color     = prime_color(MODE.prime_subset),
+            intensity = exponent_bin(MODE),
+            glyph     = relational_glyph(MODE.relational_operator),
+            position  = project_region(MODE.region, projection)
+        )
+
+        manifold.add_edges(node, sid_neighbors(MODE))
+        manifold.add_edges(node, ped_neighbors(MODE))
+        manifold.add_edges(node, q_neighbors(MODE))
+
+    return manifold
+```
