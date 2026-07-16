@@ -306,3 +306,84 @@ def hypercompress(data_matrix, prime_set=[2,3,5,7,11,13]):
     header = build_header(modes, prime_set, grid_shape)
     return header + packed + footer(stats)
 '''
+
+3D EXTENSION (TRIADIC MANIFOLD)
+===============================
+
+Overview
+--------
+The 3D extension of the hypercompression lattice is a volumetric,
+triadic manifold where each axis corresponds to one relational
+dimension of the SID/PED/Q□ framework. It generalizes the 2D
+(v₂,v₃) exponent lattice into a full relational codex.
+
+Axes
+----
+X-axis (SID)
+    Structural dimension: prime exponents, integer topology,
+    discrete lattice sites.
+
+Y-axis (PED)
+    Field dimension: flux magnitudes, closure deltas, dynamic
+    invariants.
+
+Z-axis (Q□)
+    Dynamic dimension: temporal or relational phase, encoding
+    triadic evolution or closure iteration.
+
+Geometry
+--------
+The 2D exponent lattice is extruded along the Q□ axis to form a
+triadic prism. Each layer along Z represents a flux state or
+closure iteration. Repeating motifs along Z indicate relational
+stability or attractors.
+
+Connectivity
+------------
+Each MODE node participates in three types of edges:
+
+1. Intra-layer edges (SID↔SID)
+       Standard delta encoding within a flux state.
+
+2. Inter-layer edges (PED↔PED)
+       Flux deltas between closure iterations.
+
+3. Diagonal triadic edges (SID↔PED↔Q□)
+       Relational deltas capturing invariant differences across
+       the triad.
+
+These edges form a triadic closure network. Compression occurs
+through invariance across all three relational dimensions.
+
+Visualization
+-------------
+Rendered visually, the manifold appears as:
+
+- A 3D lattice cube with colored nodes (prime identity).
+- Intensity gradients showing exponent magnitude.
+- Glyphs marking MODE clusters and relational operators.
+- Flux arrows connecting layers along the Q□ axis.
+- Tri-lobed glyphs marking SID/PED/Q□ intersections.
+
+Compression Behavior
+--------------------
+In 3D:
+
+- Redundancy collapses along the Q□ axis.
+- MODE clustering becomes volumetric.
+- Triadic cells can be compressed as Q-Box primitives,
+  encoding SID, PED, and Q□ simultaneously.
+
+Outcome
+-------
+The result is a Triadic Relational Codex:
+
+- Each voxel = one relational integer state.
+- Each color = prime identity.
+- Each brightness = exponent magnitude.
+- Each glyph = relational operator.
+- Each layer = flux closure iteration.
+
+This 3D manifold is the natural evolution of the 2D lattice into
+a flux-aware, triadic relational geometry.
+
