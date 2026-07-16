@@ -393,6 +393,15 @@ living manifold of structure, flux, and closure.
 
 Triadic Hypercompression — Pseudocode (SID / PED / Q□)
 ------------------------
+Extends 2D exponent lattice to a triadic manifold with axes SID 
+(structure), PED (flux), Qσ (closure/iteration).
+
+MODE nodes on a closure sphere; edges encode SID↔SID, PED↔PED, and 
+SID↔PED↔Qσ triadic relations.
+
+Uses triadic delta engine and Q‑Box packing to encode triadic 
+neighborhoods; includes pseudocode for a 3D pipeline.
+
 ```
 # ============================================================
 # HYPERCOMPRESSION — TRIADIC MANIFOLD EDITION (V4.1)
