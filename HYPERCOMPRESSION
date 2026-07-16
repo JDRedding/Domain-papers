@@ -312,78 +312,82 @@ def hypercompress(data_matrix, prime_set=[2,3,5,7,11,13]):
 
 Overview
 --------
-The 3D extension of the hypercompression lattice is a volumetric,
-triadic manifold where each axis corresponds to one relational
-dimension of the SID/PED/Q□ framework. It generalizes the 2D
-(v₂,v₃) exponent lattice into a full relational codex.
+The 3D extension of the hypercompression lattice is a relational
+projection of the SID/PED/Qσ framework onto an abstract closure
+sphere. Each node represents a MODE or prime identity, and each
+edge encodes a relational delta, flux transition, or closure link.
+The manifold generalizes the 2D (v₂,v₃) exponent lattice into a
+higher-dimensional relational codex.
 
-Axes
-----
-X-axis (SID)
-    Structural dimension: prime exponents, integer topology,
-    discrete lattice sites.
+Axes and Dimensions
+-------------------
+SID (Structural)
+    Prime exponents and integer topology — the discrete lattice
+    foundation projected radially across the sphere.
 
-Y-axis (PED)
-    Field dimension: flux magnitudes, closure deltas, dynamic
-    invariants.
+PED (Field/Flux)
+    Field magnitudes, closure deltas, and dynamic invariants —
+    the flux layer defining relational connectivity.
 
-Z-axis (Q□)
-    Dynamic dimension: temporal or relational phase, encoding
-    triadic evolution or closure iteration.
+Qσ (Dynamic/Relational Phase)
+    Temporal or iterative closure dimension — the evolution of
+    relational states across flux iterations.
 
 Geometry
 --------
-The 2D exponent lattice is extruded along the Q□ axis to form a
-triadic prism. Each layer along Z represents a flux state or
-closure iteration. Repeating motifs along Z indicate relational
-stability or attractors.
+The lattice is projected orthogonally onto a triadic closure
+sphere. Each MODE node lies on the surface, normalized by its
+relational magnitude. The resulting structure forms a balanced
+network of SID, PED, and Qσ interactions — a flux-aware manifold
+of relational invariants.
 
 Connectivity
 ------------
-Each MODE node participates in three types of edges:
+Each MODE node participates in three edge types:
 
-1. Intra-layer edges (SID↔SID)
-       Standard delta encoding within a flux state.
+1. SID↔SID (intra-structural)
+       Standard delta encoding within a flux layer.
 
-2. Inter-layer edges (PED↔PED)
+2. PED↔PED (inter-flux)
        Flux deltas between closure iterations.
 
-3. Diagonal triadic edges (SID↔PED↔Q□)
+3. SID↔PED↔Qσ (triadic)
        Relational deltas capturing invariant differences across
        the triad.
 
-These edges form a triadic closure network. Compression occurs
-through invariance across all three relational dimensions.
+These edges form a closure network projected onto the sphere,
+where compression emerges from invariance across all relational
+dimensions.
 
 Visualization
 -------------
 Rendered visually, the manifold appears as:
 
-- A 3D lattice cube with colored nodes (prime identity).
-- Intensity gradients showing exponent magnitude.
-- Glyphs marking MODE clusters and relational operators.
-- Flux arrows connecting layers along the Q□ axis.
-- Tri-lobed glyphs marking SID/PED/Q□ intersections.
+- A spherical lattice of colored nodes (primes or MODEs).
+- Lines showing closures, deltas, and flux states.
+- Tri-lobed glyphs marking SID/PED/Qσ intersections.
+- Orthogonal projection of higher-dimensional relational structure.
 
 Compression Behavior
 --------------------
-In 3D:
+In this spherical form:
 
-- Redundancy collapses along the Q□ axis.
-- MODE clustering becomes volumetric.
-- Triadic cells can be compressed as Q-Box primitives,
-  encoding SID, PED, and Q□ simultaneously.
+- Redundancy collapses along the Qσ dimension.
+- MODE clustering becomes radial and volumetric.
+- Triadic cells compress as Q-Box primitives, encoding SID, PED,
+  and Qσ simultaneously.
 
 Outcome
 -------
 The result is a Triadic Relational Codex:
 
-- Each voxel = one relational integer state.
-- Each color = prime identity.
-- Each brightness = exponent magnitude.
-- Each glyph = relational operator.
-- Each layer = flux closure iteration.
+- Each node = one relational integer state.
+- Each color = prime identity or MODE cluster.
+- Each line = relational delta or flux transition.
+- Each glyph = closure operator.
+- The sphere = flux-aware closure boundary.
 
-This 3D manifold is the natural evolution of the 2D lattice into
-a flux-aware, triadic relational geometry.
+This projection represents the natural evolution of the 2D lattice
+into a higher-dimensional, relationally balanced geometry — a
+living manifold of structure, flux, and closure.
 
