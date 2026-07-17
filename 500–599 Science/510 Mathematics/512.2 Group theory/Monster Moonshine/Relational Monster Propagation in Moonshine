@@ -40,13 +40,16 @@ Motivation
 Moonshine is traditionally presented as a sequence of isolated 
 mathematical miracles. This paper unifies the five layers:
 
-Witt design
-Golay code
-Leech lattice
-Moonshine VOA
-Griess algebra
+     Witt design
+     Golay code
+     Leech lattice
+     Moonshine VOA
+     Griess algebra
 
 into a single relational propagation chain.
+
+S(5,8,24) ──► Golay Code ──► Leech Lattice ──► Griess Algebra ──► Moonshine VOA
+     M24           C24       Co0, Co1, Co2         M              M
 
 Monster symmetry is not an accident — it is a propagated relational 
 invariant seeded by the Witt design and activated by a Golay‑
@@ -84,7 +87,16 @@ Each block is an 8‑subset satisfying 5‑design conditions
 
 Automorphism group: M₂₄
 
+THE PROJECTION CHAIN 
 RDG Interpretation
+Level	Structure	                    Dimension	          Symmetry	          Γ Analog
+0	     Witt Design S(5,8,24)	     24 points	          M24	               Combinatorial seed
+1	     Extended Binary Golay Code	C₂²³ + parity	     M24	               Binary magnitude map
+2	     Leech Lattice	               Λ₂₄ (24D)	          Co₀, Co₁, Co₂	     Lattice projection
+3	     Griess Algebra	               196,884D	          Monster M	          Character magnitude space
+4	     Moonshine VOA	               V^♮ (infinite)	     Monster M	          Γ : ℝ¹⁹⁴ → ℝ^(71×59×47)
+
+
 SID‑Structure layer:
 
      Structure: incidence geometry
