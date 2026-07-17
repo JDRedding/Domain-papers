@@ -116,6 +116,21 @@ The Golay code is the unique perfect 3‑error‑correcting code — this rigidi
    - No short roots
    - Co_0 symmetry
 
+R²⁴ thickening
+Codewords → lattice vectors via Construction A.
+
+No short roots
+Λ₂₄ has no vectors of norm 2 — crucial for orbifold consistency.
+
+Symmetry
+Automorphism groups:
+
+     Co₀
+     Co₁
+     Co₂
+
+This is the maximal symmetry before the twist.
+
 5. The Z₂ Boundary Twist
    - Orbifold as relational gate
    - Golay-controlled twist
