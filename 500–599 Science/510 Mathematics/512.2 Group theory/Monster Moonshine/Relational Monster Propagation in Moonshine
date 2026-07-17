@@ -162,6 +162,23 @@ This is the PED boundary operator in RDG terms.
    - Modular invariance
    - Monster action
 
+The Moonshine VOA:
+
+     𝑉^♮ = 𝑉_Λ^+ ⊕ 𝑉_Λ^𝑇
+
+has full automorphism group:
+
+     Aut(𝑉^♮) = 𝑀
+
+Twisted sector fusion
+Fractional modes create new intertwining operators.
+
+Modular invariance
+The partition function becomes the j‑function minus 744.
+
+Monster action
+Every Monster element acts as a VOA automorphism.
+
 7. Weight-2 Projection
    - Griess algebra
    - Non-associative structure
