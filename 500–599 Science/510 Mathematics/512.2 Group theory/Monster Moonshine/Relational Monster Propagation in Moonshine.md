@@ -367,7 +367,7 @@ In RDG terms:
 
 - **SID-Structure:** Witt design
 - **SID-Interaction:** Golay code
-- **SID$\to$PED Dynamics:** Leech lattice
+- **SID $\to$ PED Dynamics:** Leech lattice
 - **Boundary operator:** $\mathbb{Z}_2$ twist
 - **PED-Dynamics closure:** Monster VOA
 
