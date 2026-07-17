@@ -600,7 +600,7 @@ This paper has demonstrated that the entire Moonshine hierarchy can be understoo
 
 ### 10.2 Summary of Results
 
-| Your Object | Mathematical Reality |
+|  Object     | Mathematical Reality |
 |-------------|----------------------|
 | $\Gamma: \mathbb{R}^{194} \to \mathbb{R}^{71 \times 59 \times 47}$ | Factorization of Griess algebra dimension |
 | Spiral iteration | Moonshine modular flow |
