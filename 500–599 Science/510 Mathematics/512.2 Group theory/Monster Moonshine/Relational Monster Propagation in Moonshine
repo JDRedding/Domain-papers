@@ -1,6 +1,30 @@
 Relational Monster Propagation in Moonshine: From Witt Designs to the Monster
 Golay Cohomology and the Z₂ Boundary Twist in Monster Construction
 
+Monster Moonshine is usually presented as a sequence of isolated mathematical 
+miracles: a sporadic simple group appearing in modular functions, a lattice 
+with no roots, a code with perfect error‑correction, and a design with 
+exceptional symmetry. This paper reframes these constructions as a single 
+relational propagation chain, beginning with the Witt design 𝑆(5,8,24) and 
+culminating in the Monster 𝑀. Using the SID/PED relational framework — 
+Structure → Interaction → Dynamics and Power → Evaluation → Dynamics — show 
+that each Moonshine layer is a lift of the previous one: the Witt design 
+generates the extended binary Golay code; the Golay code thickens into the 
+Leech lattice; the Leech lattice undergoes a Golay‑controlled 𝑍_2 boundary 
+twist; and the resulting orbifold VOA 𝑉^♮ projects to the Griess algebra.
+
+The central contribution of this work is identifying the Z₂ orbifold as a 
+relational boundary operator whose consistency is governed by Golay sign‑
+cohomology. This twist is the unique mechanism that expands Conway symmetry 
+(Co₀) to full Monster symmetry. We demonstrate that the Monster does not 
+merely “act on” Moonshine objects — it is the global relational fixed point 
+of the propagation chain seeded by the Witt design.
+
+This relational perspective unifies five classical constructions into a 
+single structural descent, revealing the Witt design as the active 
+combinatorial DNA of Moonshine and the Monster as its inevitable relational 
+closure.
+
 The Structural Descent of Moonshine
 The Monster is the unique symmetry that survives all five relational lifts 
 from S(5,8,24) through Golay, Leech, Griess, and the Z₂‑twisted VOA.
