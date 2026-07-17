@@ -109,7 +109,8 @@ Golay’s parity structure determines:
      cocycle constraints
 
 Error‑correcting interpretation
-The Golay code is the unique perfect 3‑error‑correcting code — this rigidity is what later forces Monster consistency.
+The Golay code is the unique perfect 3‑error‑correcting code — this 
+rigidity is what later forces Monster consistency.
 
 4. Lift to the Leech Lattice
    - R²⁴ thickening
@@ -135,6 +136,26 @@ This is the maximal symmetry before the twist.
    - Orbifold as relational gate
    - Golay-controlled twist
    - Why Monster cannot appear without it
+
+Orbifold as relational gate
+The involution θ(x) = −x splits the lattice VOA into:
+
+     V_Λ⁺ (untwisted fixed sector)
+     V_Λ⁻ (twisted sector)
+
+Golay‑controlled twist
+The Golay code determines:
+
+     which lattice vectors flip
+     how twisted states fuse
+     how modular invariance is restored
+
+Why Monster cannot appear without it
+Co₁ is too small.
+The twist introduces fractional moding and new fusion rules that 
+allow Monster action.
+
+This is the PED boundary operator in RDG terms.
 
 6. Emergence of V^natural
    - Twisted sector fusion
