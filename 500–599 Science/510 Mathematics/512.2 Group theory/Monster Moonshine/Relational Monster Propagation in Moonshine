@@ -213,6 +213,17 @@ This is the maximal symmetry before the twist.
    - Golay-controlled twist
    - Why Monster cannot appear without it
 
+Golay Cohomology and the Monster Gate
+The passage from the Leech lattice Λ_24 to the Moonshine VOA 𝑉^♮ is the 
+critical boundary where Conway symmetry (Co₀) gives way to full Monster
+symmetry. This transition is not a cosmetic modification of the lattice
+VOA 𝑉_Λ; it is a relational boundary operator — a twist — whose 
+consistency is governed by the Golay code.
+
+This section formalizes the twist as a Z₂ orbifold gate, explains why 
+it is necessary, and shows how Golay sign‑cohomology determines the 
+only viable twist that yields the Monster.
+
 Orbifold as relational gate
 The involution θ(x) = −x splits the lattice VOA into:
 
