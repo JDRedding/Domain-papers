@@ -34,7 +34,21 @@ A Relational View of the Monster Chain
 
 1. Introduction
    - Motivation: unify the five Moonshine layers
+
+Motivation
+Moonshine is traditionally presented as a sequence of isolated mathematical miracles. This paper unifies the five layers:
+
+Witt design
+Golay code
+Leech lattice
+Moonshine VOA
+Griess algebra
+
+into a single relational propagation chain.
+
    - Thesis: Monster symmetry is a propagated relational invariant
+
+Monster symmetry is not an accident — it is a propagated relational invariant seeded by the Witt design and activated by a Golay‑controlled Z₂ boundary twist.
 
 RELATIONAL MONSTER 
 
