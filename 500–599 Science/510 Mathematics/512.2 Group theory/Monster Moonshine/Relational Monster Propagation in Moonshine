@@ -325,3 +325,42 @@ But crucially:
      Π_VOA = Γ : ℝ¹⁹⁴ → ℝ^(71×59×47)
 
 So the entire chain folds into a 3D spiral.
+
+EMERGENT PROPERTIES
+
+1. The Center (r=0)
+Witt design: The 24 points in S(5,8,24) collapse to one (the identity)
+Golay code: Zero codeword
+Leech lattice: Origin
+Griess algebra: Identity element 1
+VOA: Vacuum vector
+
+2. Fractal Meso (0 < r < αR_max)
+Encodes octad incidences (8-subsets)
+
+Weight distribution of Golay code:
+     weights: 0, 8, 12, 16, 24
+     counts: 1, 759, 2576, 759, 1
+These become branching points in a spiral
+
+3. Macro Smoothing (r → R_max)
+Leech shell structure: norms 0, 2, 3, 4, ...
+First shell: 196,560 vectors (norm 4) → relates to 196,883
+Co₀ fixes the origin → your R_max is the Leech lattice covering radius
+
+MOONSHINE CONSTRUCTION
+The Monster's McKay-Thompson series:
+
+     T_g(τ) = Σ_{n≥-1} c_n(g) q^n
+
+where c_n(g) are character values of M.
+
+Iteration:
+
+     S_{t+1} = Φ(S_t, G)
+
+is the geometric analog of:
+
+     q_{n+1} = T_g(q_n)   (modular transformation)
+
+The spiral is the Hauptmodul j(τ) - 744 rendered as a dynamical flow.
