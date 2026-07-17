@@ -656,7 +656,7 @@ $$r_t \to R_{max}, \qquad I_f \to 0, \qquad F_{curv} \to 0, \qquad F_{top} \to 0
 
 ---
 
-## References
+## Further Reading
 
 1. Conway, J.H., Sloane, N.J.A. *Sphere Packings, Lattices and Groups*
 2. Frenkel, I.B., Lepowsky, J., Meurman, A. *Vertex Operator Algebras and the Monster*
