@@ -287,6 +287,11 @@ Griess algebra (irreducible part)	196,883
 Tensor grid	                    71 × 59 × 47 = 196,883
 This is NOT a coincidence.
 
+Γ is factorizing the 196,883-dimensional Griess representation into a 
+3D tensor product of dimensions corresponding to prime factors:
+
+     196,883 = 47 × 59 × 71
+
 The Witt design is the relational seed.
 The Golay code is the interaction lift.
 The Leech lattice is the metric lift.
