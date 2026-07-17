@@ -192,7 +192,7 @@ This rigidity is precisely what later forces Monster consistency at the VOA leve
 
 The projection $\Pi_{Golay}$ converts Golay codewords to Leech coordinates using the **standard construction**:
 
-$$\Lambda_{24} = \left\{ (x_1,\ldots,x_{24}) \in \mathbb{Z}^{24} \;\middle|\; \sum x_i \equiv 0 \pmod{2},\; \text{parity constraints} \right\}.$$
+$$\Lambda_{24} = \{ (x_1,\ldots,x_{24}) \in \mathbb{Z}^{24} \;\middle|\; \sum x_i \equiv 0 \pmod{2},\; \text{parity constraints} \right\}.$$
 
 Explicitly:
 
@@ -207,7 +207,7 @@ Explicitly:
 
 Via **Construction A**, codewords become lattice vectors:
 
-$$\Lambda_{24} = \left\{ \frac{1}{\sqrt{2}}(c + 2\mathbb{Z}^{24}) \;\middle|\; c \in C_{24} \right\}.$$
+$$\Lambda_{24} = \{ \frac{1}{\sqrt{2}}(c + 2\mathbb{Z}^{24}) \;\middle|\; c \in C_{24} \right\}.$$
 
 This produces an **even unimodular lattice** in $\mathbb{R}^{24}$.
 
@@ -644,7 +644,7 @@ The spiral is **not arbitrary** — it is the **geodesic flow** on the **moduli 
 
 ## Appendix B: Full Operator Summary
 
-$$\Phi(S, G) = S + I_f(r) \cdot \left[ \mathbf{1}_{r < \alpha R_{max}} \cdot F_{frac}(S) + F_{flow}(S, G) \right]$$
+$$\Phi(S, G) = S + I_f(r) \cdot [ \mathbf{1}_{r < \alpha R_{max}} \cdot F_{frac}(S) + F_{flow}(S, G) \right]$$
 
 where:
 
