@@ -303,3 +303,13 @@ The Moonshine VOA is the relational closure.
 The Griess algebra is the finite shadow.
 
 Monster symmetry is the inevitable fixed point of this propagation chain.
+
+SPIRAL AS MOONSHINE COORDINATIZATION
+The spiral now has a hierarchical interpretation:
+
+Radius Zone	Corresponds To	                         Symmetry
+r = 0	     Identity class (1A)	                    Trivial
+Meso (fractal)	Golay codeword weights (0,8,12,16,24)	M24
+Transition	Leech lattice shells (norm 0,2,3,4,...)	Co₀
+Macro (R_max)	Griess algebra eigenvalues	          Monster M
+Spiral winding	McKay-Thompson series coefficients	     Modular group
