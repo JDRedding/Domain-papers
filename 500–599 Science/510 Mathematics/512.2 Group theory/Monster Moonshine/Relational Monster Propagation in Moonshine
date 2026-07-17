@@ -227,8 +227,8 @@ only viable twist that yields the Monster.
 Orbifold as relational gate
 The involution θ(x) = −x splits the lattice VOA into:
 
-     V_Λ⁺ (untwisted fixed sector)
-     V_Λ⁻ (twisted sector)
+     V⁺_Λ (untwisted fixed sector)
+     V⁻_Λ (twisted sector)
 
 Golay‑controlled twist
 The Golay code determines:
@@ -243,6 +243,117 @@ The twist introduces fractional moding and new fusion rules that
 allow Monster action.
 
 This is the PED boundary operator in RDG terms.
+
+5.1 The Involution θ(x) = −x as a Relational Gate
+The Leech lattice VOA 𝑉_Λ carries an involution 
+
+     𝜃 : 𝑉_Λ → 𝑉_Λ,      𝜃(𝑥) = −𝑥. 
+
+This involution is not merely a symmetry; it is a boundary operator 
+that partitions the VOA into two relational sectors:
+
+Untwisted fixed sector:
+
+     𝑉_Λ^+ = { 𝑣 ∈ 𝑉_Λ : 𝜃(𝑣) = 𝑣 }
+
+Twisted sector:
+
+     𝑉_Λ^− = states with fractional moding induced by 𝜃
+
+The Monster cannot act on 𝑉_Λ alone. It requires the fusion of 
+these two sectors.
+
+5.2 Why the Untwisted Lattice VOA Cannot Host the Monster
+The automorphism group of the untwisted lattice VOA is:
+
+     Aut (𝑉_Λ)=Co_1. 
+
+This is already enormous, but it is not the Monster. The obstruction 
+is structural:
+
+     Co₁ preserves the even unimodular quadratic form of the lattice.
+     Monster elements outside Co₁ do not preserve this form.
+     Therefore, Monster symmetry cannot act on 𝑉_Λ without altering 
+      the relational boundary conditions.
+
+The Z₂ twist is the mechanism that breaks the pure lattice symmetry 
+and expands it.
+
+5.3 Golay Sign‑Cohomology: The Twist’s Consistency Conditions
+The twist is not arbitrary. It is governed by the Golay code’s parity 
+structure.
+
+Golay sign‑cohomology determines:
+
+     which lattice vectors receive sign flips
+     how twisted states fuse
+     how conformal weights shift
+     how modular invariance is restored
+     how the orbifold partition function closes under SL₂(ℤ)
+
+This is the interaction‑to‑dynamics lift in the SID→PED framework.
+
+The Golay code acts as the cohomological controller of the twist, 
+ensuring that the orbifold is consistent and that the resulting VOA 
+admits Monster symmetry.
+
+5.4 Fractional Moding and the Expansion of Symmetry
+The twisted sector introduces states with half‑integer moding. These 
+states:
+
+     enlarge the fusion algebra
+     create new intertwining operators
+     break Conway‑only invariance
+     allow Monster elements to act consistently
+
+This is the moment where the relational structure seeded in the 
+Witt design becomes fully activated.
+
+5.5 Construction of the Moonshine VOA
+The orbifold VOA is:
+
+     𝑉^♮ = 𝑉_Λ^+ ⊕ 𝑉_Λ^𝑇,
+
+where 𝑉_Λ^𝑇 is the twisted module.
+
+The resulting automorphism group is: 
+
+     Aut (𝑉^♮) = 𝑀.
+
+The Monster appears only after the twist.
+It is not present at the lattice level, nor at the code level, nor 
+at the design level.
+It is the relational closure of the twist.
+
+5.6 RDG Interpretation: The Twist as a Q‑Moderated Boundary Operator
+
+In RDG terms:
+
+     SID‑Structure: Witt design
+     SID‑Interaction: Golay code
+     SID→PED Dynamics: Leech lattice
+     Boundary operator: Z₂ twist
+     PED‑Dynamics closure: Monster VOA
+
+The twist is a Q‑moderated nonlinear gate that activates latent
+Golay/Witt relational structure and forces the emergence of Monster
+symmetry.
+
+The Monster is the global relational fixed point of this boundary
+operation.
+
+5.7 Summary of the Twist’s Role
+
+The Z₂ twist:
+
+     breaks Conway symmetry
+     activates Golay cohomology
+     introduces fractional moding
+     restores modular invariance
+     expands the automorphism group
+     yields the Monster
+
+It is the critical hinge of the entire Moonshine chain.
 
 6. Emergence of V^natural
    - Twisted sector fusion
