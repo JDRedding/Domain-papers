@@ -34,6 +34,7 @@ A Relational View of the Monster Chain
 
 1. Introduction
    - Motivation: unify the five Moonshine layers
+   - Thesis: Monster symmetry is a propagated relational invariant
 
 Motivation
 Moonshine is traditionally presented as a sequence of isolated 
@@ -46,8 +47,6 @@ Moonshine VOA
 Griess algebra
 
 into a single relational propagation chain.
-
-   - Thesis: Monster symmetry is a propagated relational invariant
 
 Monster symmetry is not an accident — it is a propagated relational 
 invariant seeded by the Witt design and activated by a Golay‑
@@ -77,6 +76,22 @@ Full Automorphism Group: Monster M
    - Incidence structure
    - M_24 action
    - RDG interpretation (SID layer)
+
+Relational Seed: S(5,8,24)
+24 points, 759 blocks
+
+Each block is an 8‑subset satisfying 5‑design conditions
+
+Automorphism group: M₂₄
+
+RDG Interpretation
+SID‑Structure layer:
+
+     Structure: incidence geometry
+     Interaction: block stabilizers
+     Dynamics: permutation action of M₂₄
+
+This is the “DNA” of Moonshine.
 
 3. Propagation to the Golay Code
    - F₂-span
