@@ -32,10 +32,29 @@ A Relational View of the Monster Chain
 | 5. Algebra  | [Griess]         | Monster M                  |
 +-------------------------------------------------------------+
 
-
 1. Introduction
    - Motivation: unify the five Moonshine layers
    - Thesis: Monster symmetry is a propagated relational invariant
+
+RELATIONAL MONSTER 
+
+Witt Design S(5,8,24)
+Automorphism Group: M24
+        |
+        v
+Extended Binary Golay Code
+        |
+        v
+Leech Lattice (24-dimensional)
+Automorphism Groups: Co0, Co1, Co2
+        |
+        v
+Griess Algebra (196,884-dimensional)
+Automorphism Group: Monster M
+        |
+        v
+Moonshine VOA V^natural
+Full Automorphism Group: Monster M
 
 2. Relational Seed: S(5,8,24)
    - Incidence structure
@@ -70,6 +89,21 @@ A Relational View of the Monster Chain
 8. RDG/MFE Interpretation
    - Twist as Q-moderated boundary operator
    - Propagation operators
+
+S(5,8,24)  --[structural lift]-->  C_24 (Binary Golay)
+   |                                   |
+   v                                   v
+M24  ------------------------->  Co0, Co1, Co2
+   |                                   |
+   v                                   v
+Leech Λ_24  --[metric lift]-->  Griess Algebra 𝔊_196884
+   |                                   |
+   v                                   v
+Co0 --------------------------->  Monster 𝕄
+   |                                   |
+   v                                   v
+Moonshine VOA V^natural    Aut(V^natural) = Monster 𝕄
+
    - Monster as global relational fixed point
 
 9. Conclusion
