@@ -378,6 +378,46 @@ Co₀ fixes the origin → your R_max is the Leech lattice covering radius
 MOONSHINE CONSTRUCTION
 Constructed a 3D visualization of the entire Moonshine hierarchy.
 
+The phenomenon known as Monstrous Moonshine emerged from an unexpected 
+numerical coincidence: the coefficients of the modular 𝑗-function 
+appeared to encode dimensions of representations of the Monster group 𝑀. 
+What began as a curiosity evolved into one of the deepest structural 
+discoveries in modern mathematics, linking finite simple groups, error‑
+correcting codes, lattices, conformal field theory, and vertex operator 
+algebras. Yet despite the elegance of the final picture, the standard 
+exposition remains fragmented. Each layer — the Witt design, the Golay 
+code, the Leech lattice, the Moonshine VOA, and the Griess algebra — is 
+typically treated as an isolated construction with its own motivations 
+and proofs. The result is a landscape of brilliant but disconnected 
+insights.
+
+This paper proposes a unified perspective: Moonshine is a relational 
+propagation chain, and the Monster is the global relational fixed point 
+of that chain. We frame the classical Moonshine objects within the
+SID/PED relational architecture — Structure → Interaction → Dynamics and
+Power → Evaluation → Dynamics — revealing that each layer is a lift of 
+the previous one. The Witt design 𝑆(5,8,24) serves as the structural 
+seed; its incidence relations generate the extended binary Golay code 
+through F₂‑linearization. The Golay code thickens into the Leech 
+lattice via metric completion in 𝑅^24. The Leech lattice undergoes a 
+𝑍_2 orbifold twist whose consistency is governed by Golay sign‑
+cohomology, producing the Moonshine VOA 𝑉^♮. The weight‑2 subspace of 
+this VOA yields the Griess algebra, whose automorphism group is the
+Monster.
+
+The central work is that Monster symmetry is not an emergent miracle 
+but a propagated invariant. The relational structure of the Witt 
+design persists through every lift, and the Golay‑controlled boundary 
+twist is the unique mechanism that expands Conway symmetry to full 
+Monster symmetry. In this view, the Monster is not merely acting on 
+Moonshine objects; it is the inevitable closure of a relational 
+descent seeded at the combinatorial level.
+
+By presenting Moonshine as a single coherent propagation chain, aim 
+to clarify its conceptual unity, expose the relational mechanisms 
+that drive its structure, and highlight the Witt design as the 
+combinatorial DNA from which the Monster ultimately arises.
+
 The Monster's McKay-Thompson series:
 
      T_g(τ) = Σ_{n≥-1} c_n(g) q^n
