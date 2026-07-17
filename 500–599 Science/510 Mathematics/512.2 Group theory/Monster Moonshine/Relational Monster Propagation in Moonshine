@@ -88,9 +88,7 @@ Each block is an 8‑subset satisfying 5‑design conditions
 Automorphism group: M₂₄
 
 THE PROJECTION CHAIN 
-
 RDG Interpretation
-
 Level	Structure			     Dimension	     Symmetry	     Γ Analog
 
 0	Witt Design S(5,8,24)		24 points     	M24		     Combinatorial seed
@@ -98,6 +96,43 @@ Level	Structure			     Dimension	     Symmetry	     Γ Analog
 2	Leech Lattice			     Λ₂₄ (24D)	     Co₀, Co₁,      Co₂	Lattice projection
 3	Griess Algebra			     196,884D	     Monster M	     Character magnitude space
 4	Moonshine VOA			     V^♮ (infinite)	Monster M	     Γ : ℝ¹⁹⁴ → ℝ^(71×59×47)
+
+Projection operator Γ is actually a cascade:
+
+     Γ = Π_VOA ∘ Π_Griess ∘ Π_Leech ∘ Π_Golay ∘ Π_Witt
+
+Where each Π is:
+
+     Π_Witt: S(5,8,24) → Binary Vectors
+          Maps 24 points to octads (8-subsets)
+          Produces incidence vectors in F₂²⁴
+          M24 acts transitively
+
+Π_Golay: Binary → Integer Lattice
+Converts Golay codewords (weight 0,8,12,16,24) to Leech coordinates
+Uses the standard construction:
+
+     Λ₂₄ = { (x₁,...,x₂₄) ∈ Z²⁴ | Σx_i ≡ 0 mod 2, parity constraints }
+
+Π_Leech: 24D → 196,884D
+
+     Maps Leech vectors to Griess algebra elements
+     Uses the frame (24 mutually orthogonal idempotents)
+     Co₀ automorphisms become M via conjugation
+
+Π_Griess: 196,884D → V^♮
+Vertex operator construction:
+
+     V^♮ = ⊕_{n≥0} V_n
+     V_0 = C · 1,  V₁ = 0,  V₂ = Griess algebra
+
+196,883 = dim(V₂) - 1 (the Monster's smallest nontrivial irrep)
+
+Π_VOA: V^♮ →  3D Tensor
+
+     Π_VOA : V^♮ → ℝ^(71×59×47)
+
+This is a nonlinear projection—it's the Moonshine module's character map collapsed to geometry.
 
 SID‑Structure layer:
 
