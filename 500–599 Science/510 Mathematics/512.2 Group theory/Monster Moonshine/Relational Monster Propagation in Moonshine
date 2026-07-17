@@ -1,1 +1,47 @@
+Relational Monster Propagation in Moonshine: From Witt Designs to the Monster
+Golay Cohomology and the Z₂ Boundary Twist in Monster Construction
 
+The Structural Descent of Moonshine
+A Relational View of the Monster Chain
+
+1. Introduction
+   - Motivation: unify the five Moonshine layers
+   - Thesis: Monster symmetry is a propagated relational invariant
+
+2. Relational Seed: S(5,8,24)
+   - Incidence structure
+   - M_24 action
+   - RDG interpretation (SID layer)
+
+3. Propagation to the Golay Code
+   - F₂-span
+   - Sign-cohomology
+   - Error-correcting interpretation
+
+4. Lift to the Leech Lattice
+   - R²⁴ thickening
+   - No short roots
+   - Co_0 symmetry
+
+5. The Z₂ Boundary Twist
+   - Orbifold as relational gate
+   - Golay-controlled twist
+   - Why Monster cannot appear without it
+
+6. Emergence of V^natural
+   - Twisted sector fusion
+   - Modular invariance
+   - Monster action
+
+7. Weight-2 Projection
+   - Griess algebra
+   - Non-associative structure
+   - Monster as automorphism group
+
+8. RDG/MFE Interpretation
+   - Twist as Q-moderated boundary operator
+   - Propagation operators
+   - Monster as global relational fixed point
+
+9. Conclusion
+   - The Witt design as Moonshine’s DNA
