@@ -98,6 +98,19 @@ This is the “DNA” of Moonshine.
    - Sign-cohomology
    - Error-correcting interpretation
 
+F₂‑linearization
+The Witt design’s blocks generate the extended binary Golay code.
+
+Sign‑cohomology
+Golay’s parity structure determines:
+
+     sign assignments
+     twist compatibility
+     cocycle constraints
+
+Error‑correcting interpretation
+The Golay code is the unique perfect 3‑error‑correcting code — this rigidity is what later forces Monster consistency.
+
 4. Lift to the Leech Lattice
    - R²⁴ thickening
    - No short roots
