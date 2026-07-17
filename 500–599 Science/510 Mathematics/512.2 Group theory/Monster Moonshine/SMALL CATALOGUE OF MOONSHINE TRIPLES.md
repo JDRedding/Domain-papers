@@ -1,5 +1,5 @@
 SMALL CATALOGUE OF MOONSHINE TRIPLES
-============================================================
+------------------------------------------------------------
 (SID–PED–RDG FORM)
 
 Each entry is a Moonshine triple:
