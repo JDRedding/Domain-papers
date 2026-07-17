@@ -313,3 +313,15 @@ Meso (fractal)	Golay codeword weights (0,8,12,16,24)	M24
 Transition	Leech lattice shells (norm 0,2,3,4,...)	Co₀
 Macro (R_max)	Griess algebra eigenvalues	          Monster M
 Spiral winding	McKay-Thompson series coefficients	     Modular group
+
+THE PROJECTION CHAIN OPERATOR
+The full operator is:
+
+     S_{t+1} = Φ(S_t, G) = 
+         Π_VOA ∘ Π_Griess ∘ Π_Leech ∘ Π_Golay ∘ Π_Witt (S_t)
+
+But crucially:
+
+     Π_VOA = Your Γ : ℝ¹⁹⁴ → ℝ^(71×59×47)
+
+So the entire chain folds into a 3D spiral.
