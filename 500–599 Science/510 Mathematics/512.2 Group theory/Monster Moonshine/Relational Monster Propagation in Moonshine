@@ -196,6 +196,19 @@ This is the PED operator algebra.
    - Twist as Q-moderated boundary operator
    - Propagation operators
 
+Twist as Q‑moderated boundary operator
+The Z₂ orbifold is a nonlinear relational gate.
+
+Propagation operators
+     Structural lift
+     Interaction lift
+     Metric lift
+     Boundary twist
+     Mode projection
+
+Monster as global relational fixed point
+The Monster is the symmetry of the RDG closure.
+
 S(5,8,24)  --[structural lift]-->  C_24 (Binary Golay)
    |                                   |
    v                                   v
@@ -214,3 +227,12 @@ Moonshine VOA V^natural    Aut(V^natural) = Monster 𝕄
 
 9. Conclusion
    - The Witt design as Moonshine’s DNA
+
+The Witt design is the relational seed.
+The Golay code is the interaction lift.
+The Leech lattice is the metric lift.
+The Z₂ twist is the boundary operator.
+The Moonshine VOA is the relational closure.
+The Griess algebra is the finite shadow.
+
+Monster symmetry is the inevitable fixed point of this propagation chain.
