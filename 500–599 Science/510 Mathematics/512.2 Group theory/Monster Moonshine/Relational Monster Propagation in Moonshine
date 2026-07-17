@@ -2,7 +2,36 @@ Relational Monster Propagation in Moonshine: From Witt Designs to the Monster
 Golay Cohomology and the Z₂ Boundary Twist in Monster Construction
 
 The Structural Descent of Moonshine
+     SID: Structure → Interaction → Dynamics
+     PED: Power → Evaluation → Dynamics
+
+     [ S(5,8,24) ]  SID-Structure seed
+          │  (linearization over F_2)
+          ▼
+     [  C_24     ]  SID→PED Interaction lift
+          │  (metric completion in R^24)
+          ▼
+     [  /\_24    ]  SID→PED Dynamics lift
+          │  (Z_2 orbifold; twist from Golay sign-cohomology)
+          ▼
+     [ V^natural ]  Full RDG closure (Monster symmetry)
+          │  (W_2 projection; algebraic shadow)
+          ▼
+     [  Griess   ]  PED-operator algebra (196,884-dim)
+
 A Relational View of the Monster Chain
++-------------------------------------------------------------+
+|                     RELATIONAL PROPAGATION                  |
++-------------------------------------------------------------+
+| LEVEL       | STRUCTURE        | SYMMETRY GROUP             |
+|-------------+------------------+----------------------------|
+| 1. Design   | [S(5,8,24)]      | M24                        |
+| 2. Code     | [C_24]           | M24                        |
+| 3. Lattice  | [Λ_24]           | Co_0, Co_1, Co_2           |
+| 4. Vertex   | [V^natural]      | Monster M                  |
+| 5. Algebra  | [Griess]         | Monster M                  |
++-------------------------------------------------------------+
+
 
 1. Introduction
    - Motivation: unify the five Moonshine layers
