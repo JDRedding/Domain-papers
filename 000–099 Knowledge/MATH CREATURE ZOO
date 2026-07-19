@@ -1,0 +1,651 @@
+STRANGE MATH CREATURE ZOO
+Dewey Domain: 000–099 Knowledge
+Subclass: 000.4 Classification Systems
+Type: Mnemonic Taxonomy / Knowledge‑Organization Artifact
+Author: J. Redding
+Status: Living Document
+Purpose: Cross‑domain mnemonic system mapping mathematical structures to creature‑taxonomy metaphors.
+
+Overview
+The Strange Math Creature Zoo is a mnemonic classification system that organizes mathematical concepts into themed “wings” populated by metaphorical creatures. It functions as a knowledge‑organization scaffold, not a mathematical research paper. Its role in the domain‑papers repository is to provide cross‑domain indexing, memory aids, and conceptual mapping structures.
+
+Contents
+The Zoo consists of multiple wings, each representing a mathematical territory:
+
+3.1 Core Wings
+Shadow & Symmetry Wing
+Cayley–Hopf Wing
+Topological Terrarium
+Lattice Garden
+
+3.2 Expansion I
+Number Theory Grove
+Category Theory Arboretum
+Logic & Computation Labyrinth
+Graph Theory Glade (optional)
+
+3.3 Expansion II
+Measure & Integration Marshland
+PDE Dunes
+Algebraic Geometry Orchard
+Set Theory Savannah
+Differential Geometry Range
+Stochastic Process Wetlands
+Operator Algebra Observatory (optional)
+
+3.4 Expansion III
+Homotopy Highlands
+Noncommutative Geometry Quarry
+p‑Adic Rainforest
+Quantum Group Glade
+Ergodic Theory Tundra
+Higher Category Theory Canyon
+Operator Theory Tidepool
+Game Theory Savannah
+Information Theory Icefield
+
+3.5 Expansion IV
+Sheaf Theory Highlands
+Higher Topos Territory
+Model Category Badlands
+Nonlinear Dynamics Jungle
+Supergeometry Sanctuary
+Lie Superalgebra Caves
+Operator K‑Theory Ridge
+Synthetic Differential Geometry Garden
+Large Cardinal Mountain Range
+Quantum Field Theory Expanse
+
+3.6 RDGMFEQ Expansion
+A dedicated operator‑ecology mapping for RDG/MFE/Q systems:
+
+SID Triad Domain
+PED Triad Domain
+RME Reservoir
+Q‑Slice Modulation Zone
+Relational Operator Ecology
+Geometric Flow Terrace
+State‑Space Stratum
+Nonlinear Coupling Basin
+Diagnostic Stream
+
+COMPLETE LEDGER
+Where Logic Roams Wild
+
+Mike Dupont (@introsp3ctor) posted (https://x.com/introsp3ctor/status/2078627110344630519) a digital "Strange Math Creature Portrait Gallery" featuring a grid of 12 illustrated creatures that creatively personify mathematical concepts like quaternions, E8 lattices, Möbius strips, Klein bottles, and projective geometry.
+
+Each creature includes a binomial-style scientific name, descriptive lore referencing specific math properties such as norms, roots, and dimensions, plus thematic tags covering shadow symmetry, topology, and algebraic structures.
+The thread continues with expanded fantasy-style zoo posters and museum exhibit scenes portraying the same creatures, merging whimsical visual art with abstract mathematical ideas.
+
+SHADOW & SYMMETRY WING
+──────────────────────────────────
+[01] Shadow Moth                 
+→ Mock modular forms / Eichler integrals
+[06] Calabi–Yau Cat              
+→ 6D compactified manifolds (string theory)
+[02] Mandelbrot Mantis           
+→ Fractal recursion, boundary radius 2
+[196884] Moonshine Giant         
+→ Monster group & modular functions
+
+CAYLEY–HOPF WING
+──────────────────────────────────
+[720] Dirac Flamingo             
+→ Spinor rotation symmetry (720° phase)
+[04] Quaternion Griffin         
+ → Quaternion algebra, 4D rotation space
+[07] Fano Fox                    
+→ Fano plane, finite projective geometry
+[16] Sedenion Hydra              
+→ 16D algebra with zero divisors
+
+TOPOLOGICAL TERRARIUM
+──────────────────────────────────
+[03] Poincaré Penguin            
+→ 3D manifold topology (Poincaré conjecture)
+[11] Lorenz Snail                
+→ Chaotic attractor, nonlinear system
+[04] Hopf Jellyfish              
+→ Hopf fibration (S³ → S²)
+[02] Möbius Owl                  
+→ Möbius strip, one-sided surface
+[11] Klein Bottle Serpent        
+→ Non-orientable surface
+[02] Projective Ray              
+→ Real projective plane, antipodal identification
+
+LATTICE GARDEN
+──────────────────────────────────
+[240] E₈ Crystal Stag            
+→ E₈ lattice, 240 root vectors
+[4096] Golay Firefly             
+→ Golay code, 24-bit error correction
+[196560] Leech Lattice Hedgehog  
+→ Leech lattice, densest 24D packing
+
+
+STRANGE MATH CREATURE ZOO EXPANSION
+
+The post (https://x.com/JDRedding/status/2078680334389203225) expands a creative "Strange Math Creature Zoo" thread by @JDRedding, adding a NUMBER THEORY GROVE, CATEGORY THEORY ARBORETUM, and LOGIC & COMPUTATION LABYRINTH with whimsical animal mappings like Prime Hydra for infinitely many primes and Lambda Lemur for lambda calculus.
+
+It builds on the prior ledger post featuring math structures as creatures in themed wings such as shadow symmetry, Cayley-Hopf, topological terrarium, and lattice garden, using concise descriptions linking concepts to animal behaviors.
+The format serves as an engaging mnemonic device for advanced mathematics, turning abstract topics like Riemann zeta function, functors, Turing machines, and NP problems into vivid, story-like zoo exhibits.
+
+
+NUMBER THEORY GROVE
+───────────────────────────────────
+[∞] Prime Hydra                 
+→ Infinitely many primes; heads regenerate via Euclid’s proof
+[ζ] Zeta Serpent                
+→ Riemann zeta function; coils around nontrivial zeros
+[φ] Golden Jackal               
+→ Golden ratio; self-similar proportions in its gait
+[τ] Modular Tortoise            
+→ Modular arithmetic; shell marked with congruence classes
+[ℵ₀] Diophantine Beetle         
+→ Integer solutions; carapace etched with Pell equations
+
+CATEGORY THEORY ARBORETUM
+───────────────────────────────────
+[⊢] Functor Fox                 
+→ Structure-preserving mappings; trails arrows between habitats
+[∘] Composition Lynx            
+→ Morphism chaining; leaps only along composable paths
+[Δ] Simplicial Sparrow          
+→ Simplicial sets; nests built from n-simplex frames
+[⊗] Monoidal Moose              
+→ Tensor products; antlers combine objects with associative force
+[Ω] Topos Owl                   
+→ Generalized spaces; sees truth values as geometric shapes
+
+LOGIC & COMPUTATION LABYRINTH
+───────────────────────────────────
+[λ] Lambda Lemur                
+→ Lambda calculus; tail curls into nested abstractions
+[TM] Turing Tiger               
+→ Decidability; stripes encode halting/non-halting patterns
+[⊨] Model Mongoose              
+→ Model theory; burrows through structures satisfying formulas
+[μ] Fixed-Point Ferret          
+→ Recursion theory; loops until reaching stable behavior
+[NP] Complexity Coyote          
+→ NP problems; hunts solutions through exponential terrain
+
+OPTIONAL MINI-WING: GRAPH THEORY GLADE
+───────────────────────────────────
+[χ] Chromatic Chameleon         
+→ Graph coloring; changes hue to minimize color count
+[↻] Eulerian Egret              
+→ Eulerian circuits; walks every path exactly once
+[★] Ramsey Raven                
+→ Ramsey theory; finds unavoidable patterns in any flock
+[⊿] Hypergraph Hare             
+→ Higher-order edges; leaps across multi-node connections
+
+STRANGE MATH CREATURE ZOO EXPANSION II
+
+MEASURE & INTEGRATION MARSHLAND
+───────────────────────────────────
+[∫] Lebesgue Lynx               
+→ Measure theory; stalks sets of non-intuitive size
+[∞→0] Sigma-Algebra Swan        
+→ Nested measurable structures; feathers partition the marsh
+[⊕] Radon Raven                 
+→ Signed measures; croaks in positive/negative decomposition
+[∂] Boundary Badger             
+→ Lives on measure-zero edges; thrives where functions jump
+[μ*] Outer-Measure Otter        
+→ Extends measure to wild subsets; swims through coverings
+
+PARTIAL DIFFERENTIAL EQUATION DUNES
+───────────────────────────────────
+[Δ] Laplace Lizard              
+→ Harmonic functions; rests only where divergence vanishes
+[∂t] Heatflow Hare              
+→ Heat equation; leaves diffusing footprints in the sand
+[Ψ] Schrödinger Shark           
+→ Wave equations; oscillates through probability currents
+[∇·] Divergence Dingo           
+→ Vector fields; howls at flux imbalance
+[∇×] Curl Coyote                
+→ Rotational fields; spins dust devils around its den
+
+ALGEBRAIC GEOMETRY ORCHARD
+───────────────────────────────────
+[𝒱] Variety Vulture             
+→ Polynomial solution sets; circles over irreducible loci
+[𝒞] Curve Cougar                
+→ Genus-defined behavior; leaps through Riemann surfaces
+[Pic] Picard Panther            
+→ Line bundles; stripes encode divisor classes
+[Jac] Jacobian Jay              
+→ Abelian varieties; flits between group-law perches
+[Spec] Spectrum Stork           
+→ Prime ideals; nests in the fibers of morphisms
+
+SET THEORY SAVANNAH
+───────────────────────────────────
+[ℵ₁] Cardinal Caribou           
+→ Infinite sizes; antlers branch into uncountable hierarchies
+[⊂] Inclusion Ibex              
+→ Subset relations; climbs chains of containment
+[∈] Membership Meerkat          
+→ Pops in/out of sets; behavior defined by elementhood
+[⊥] Forcing Falcon              
+→ Independence proofs; dives through generic extensions
+[ω] Ordinal Ocelot              
+→ Well-ordered climbs; never descends infinitely
+
+DIFFERENTIAL GEOMETRY RANGE
+──────────────────────────────────
+[g] Metric Moose                
+→ Distances on manifolds; antlers curve with signature
+[Γ] Connection Cougar           
+→ Parallel transport; prowls along geodesics
+[R] Curvature Crane             
+→ Riemann tensor; wings warp space around them
+[κ] Geodesic Gecko              
+→ Shortest paths; scurries along minimal curves
+[H] Mean-Curvature Heron        
+→ Surface flow; feathers smooth out irregularities
+
+STOCHASTIC PROCESS WETLANDS
+───────────────────────────────────
+[W_t] Brownian Bear             
+→ Random motion; wanders with nowhere to be
+[λ] Poisson Pelican             
+→ Jump processes; dives at random intervals
+[𝒢] Gaussian Gator              
+→ Normal distribution; lurks around the mean
+[Markov] Markov Moth            
+→ Memoryless transitions; flutters state-to-state
+[Mart] Martingale Marmot        
+→ Fair-game expectations; never gambles ahead
+
+OPTIONAL MINI-WING: OPERATOR ALGEBRA OBSERVATORY
+───────────────────────────────────
+[𝒞*] C*-Algebra Condor          
+→ Norm-closed operators; circles over bounded transformations
+[𝒲] von Neumann Nightjar        
+→ Projection lattices; calls echo through Hilbert space
+[Spec] Spectral Spider           
+→ Eigenvalues; spins webs of decompositions
+[U] Unitary Urchin               
+→ Norm-preserving rotations; rolls along complex phases
+
+STRANGE MATH CREATURE ZOO 
+EXPANSION III
+Where Mathematics Mutates
+
+HOMOTOPY HIGHLANDS
+───────────────────────────────────
+[π₁] Fundamental Group Falcon      
+→ Loops up to deformation; cries in equivalence classes
+[πₙ] Higher-Homotopy Hydra         
+→ Multiple heads for each dimension n
+[∞] Infinity-Group Ibex            
+→ Lives in ∞-categories; climbs morphism towers
+[ΩX] Loopspace Lynx                
+→ Retraces loops on a space; tail forms based loops
+[Ho] Homotopy Horse                
+→ Moves only by continuous deformation
+
+NONCOMMUTATIVE GEOMETRY QUARRY
+───────────────────────────────────
+[𝒜] Algebraic Anteater             
+→ Eats commutativity; snout probes operator algebras
+[θ] Moyal Mole                      
+→ Burrows through star-products; leaves noncommuting tracks
+[Tr] Trace Tortoise                
+→ Cyclic invariants; shell marked with tr(AB)=tr(BA)
+[Spec] Spectral Salamander         
+→ Lives on eigenvalue spectra of operators
+[Cyc] Cyclic Cohomology Crane      
+→ Nests in periodic cohomology cycles
+
+p-ADIC RAINFOREST
+───────────────────────────────────
+[p] p-Adic Panther                 
+→ Measures distance by divisibility; leaps in ultrametric jumps
+[ℚₚ] Local-Field Lemur             
+→ Lives in completions of rationals; tail encodes valuations
+[Oₚ] p-Adic Orchid                  
+→ Blossoms in ring of integers; petals form residue classes
+[GLₙ(ℚₚ)] Bruhat Bison             
+ → Moves through p-adic groups; hooves follow Bruhat cells
+[ζₚ] Local-Zeta Zebra              
+→ Stripes encode Euler factors of global zeta functions
+
+QUANTUM GROUP GLADE
+───────────────────────────────────
+[U_q] q-Deformed Quokka            
+→ Behavior changes with deformation parameter q
+[R] R-Matrix Raccoon               
+→ Braids interactions; tail twists Yang–Baxter solutions
+[Hopf] Hopf-Algebra Heron          
+→ Co-multiplication wings; antipode beak
+[Rep] Representation Ram           
+→ Charges through irreducible modules
+[⊗_q] Quantum-Tensor Tahr          
+→ Combines states with q-twisted fusion rules
+
+ERGODIC THEORY TUNDRA
+───────────────────────────────────
+[T] Transformation Tern            
+→ Flies in measure-preserving orbits
+[Mix] Mixing Marmot                
+→ Future states forget the past; tunnels in chaotic patterns
+[Inv] Invariant-Ibis               
+→ Stands only on invariant sets
+[Ent] Entropy Elk                  
+→ Antlers measure unpredictability
+[Rec] Recurrence Rhea              
+→ Always returns; migrates in Poincaré cycles
+
+HIGHER CATEGORY THEORY CANYON
+───────────────────────────────────
+[2-Cat] Bicategory Bison           
+→ Has 1-morphisms and 2-morphisms; horns form commutative squares
+[n-Cat] n-Category Newt            
+→ Body segments represent higher morphisms
+[Adj] Adjunction Antelope          
+→ Paired functors; leaps in unit/counit symmetry
+[Kan] Kan-Kompleteness Koala       
+→ Fills horns in simplicial sets
+[Coend] Coend Coyote               
+→ Howls in universal constructions
+
+OPERATOR THEORY TIDEPOOL
+───────────────────────────────────
+[Bound] Bounded-Operator Octopus   
+→ Arms extend over norm-bounded transformations
+[Comp] Compact-Operator Crab       
+→ Scuttles toward finite-rank approximations
+[Spec] Spectrum Squid              
+→ Ink clouds shaped like eigenvalues
+[Res] Resolvent Ray                
+→ Swims near poles of (A - λI)⁻¹
+[Norm] Norm-Nautilus               
+→ Shell spirals with operator norms
+
+GAME THEORY SAVANNAH
+───────────────────────────────────
+[Nash] Nash Nightjar               
+→ Perches at equilibrium; never deviates
+[ZeroSum] Zero-Sum Zebra           
+→ Stripes encode payoff matrices
+[Coop] Cooperative Coyote          
+→ Forms coalitions; hunts in Shapley-value packs
+[Dyn] Dynamic-Game Dingo           
+→ Strategies evolve over time
+[Evo] Evolutionary Egret           
+→ Fitness-based behavior; adapts to payoff landscapes
+
+INFORMATION THEORY ICEFIELD
+───────────────────────────────────
+[H] Entropy Hawk                   
+→ Wings measure uncertainty
+[KL] KL-Divergence Dolphin         
+→ Swims between distributions; senses asymmetry
+[I] Mutual-Information Ibex        
+→ Connects signals; horns encode shared structure
+[Code] Coding-Caribou              
+→ Antlers shaped like prefix-free trees
+[Cap] Channel-Capacity Crane       
+→ Soars at Shannon limits
+
+STRANGE MATH CREATURE ZOO 
+EXPANSION IV
+Where Mathematics Stops Pretending To Be Normal
+
+SHEAF THEORY HIGHLANDS
+───────────────────────────────────
+[𝒮] Sheaf Stag                   
+→ Local data glued globally; antlers branch into open covers
+[Stalk] Stalk Stoat              
+→ Lives at points; behavior determined by germ-level info
+[Presheaf] Presheaf Parrot      
+→ Assigns data to opens; mimics restriction maps
+[Sh] Sheafification Sheep        
+→ Converts chaos to consistency; wool forms exact sequences
+[Sec] Section Serpent            
+→ Slithers along continuous selections of local data
+
+HIGHER TOPOS TERRITORY
+───────────────────────────────────
+[∞-Topos] Infinity-Topos Ibex    
+→ Habitat built from ∞-groupoids; climbs homotopy ladders
+[Geom] Geometric Morphism Moth   
+→ Flutters between toposes; wings preserve finite limits
+[Sub] Subobject Sable            
+→ Tracks generalized truth values
+[Desc] Descent Donkey            
+→ Assembles objects from compatible local pieces
+[Shape] Shape Shark              
+→ Swims through homotopy types of spaces
+
+MODEL CATEGORY BADLANDS
+───────────────────────────────────
+[W] Weak-Equivalence Wolf        
+→ Howls only at homotopy equivalences
+[Cof] Cofibration Cougar         
+→ Leaps into left-lifting properties
+[Fib] Fibration Falcon           
+→ Glides through right-lifting properties
+[Quillen] Quillen Quokka         
+→ Lives in adjunction pairs; hops between model structures
+[Ho(C)] Homotopy-Coyote          
+→ Roams the homotopy category; ignores non-essential paths
+
+NONLINEAR DYNAMICS JUNGLE
+───────────────────────────────────
+[Attr] Attractor Ape             
+→ Settles into stable patterns; beats chaotic drums
+[Bif] Bifurcation Buffalo        
+→ Splits behavior at parameter thresholds
+[Chaos] Chaos Chameleon          
+→ Changes unpredictably; sensitive to initial conditions
+[LimitCycle] Cycle Lynx          
+→ Runs in closed periodic loops
+[Fractal] Fractal Frog           
+→ Self-similar skin; jumps in recursive patterns
+
+SUPERGEOMETRY SANCTUARY
+───────────────────────────────────
+[θ] Grassmann Gecko              
+→ Anti-commuting coordinates; tail flips sign on contact
+[Super] Supermanifold Macaw      
+→ Combines bosonic and fermionic directions
+[Q] SUSY Quail                   
+→ Supersymmetry transformations; feathers encode supercharges
+[Cliff] Clifford Cat             
+→ Gamma matrices; purrs in spinor space
+[Spin] Spinor Sparrow            
+→ Chirps in half-integer representations
+
+LIE SUPERALGEBRA CAVES
+───────────────────────────────────
+[𝔤] Superalgebra Salamander     
+→ Mixes even/odd generators; skin glows in Z₂ grading
+[Rep] Representation Rat         
+→ Scurries through irreducible modules
+[Cartan] Cartan Cobra            
+→ Coils around root systems
+[Odd] Odd-Root Ocelot            
+→ Jumps unpredictably; sign flips in brackets
+[Weyl] Weyl-Weasel               
+→ Reflects symmetries across hyperplanes
+
+OPERATOR K-THEORY RIDGE
+───────────────────────────────────
+[K₀] K-Zero Kiwi                 
+→ Classifies projections; feathers form equivalence classes
+[K₁] K-One Osprey                
+→ Classifies unitaries; circles in homotopy loops
+[Ind] Index Ibex                 
+→ Measures Fredholm operators; horns encode integer invariants
+[Fred] Fredholm Fox              
+→ Lives near compact perturbations
+[Ext] Extension Eagle            
+→ Nests in short exact sequences
+
+SYNTHETIC DIFFERENTIAL GEOMETRY GARDEN
+───────────────────────────────────
+[Inf] Infinitesimal Iguana       
+→ Moves only in nilpotent directions
+[SDG] Synthetic Sloth            
+→ Treats infinitesimals as real; slow but precise
+[Micro] Microline Mongoose       
+→ Lives on microlinear spaces
+[Der] Derivation Deer            
+→ Antlers branch like tangent vectors
+[Jet] Jet Jaguar                 
+→ Tracks higher-order behavior in stalks
+
+LARGE CARDINAL MOUNTAIN RANGE
+───────────────────────────────────
+[Inacc] Inaccessible Ibex        
+→ Too large to reach; stands beyond regular cardinals
+[Meas] Measurable Moose          
+→ Carries ultrafilters on its antlers
+[Woodin] Woodin Wolf             
+→ Howls at determinacy; lives near the foundations of math
+[Super] Supercompact Stork       
+→ Wings span huge elementary embeddings
+[Huge] Huge Hawk                 
+→ Soars above the hierarchy; existence reshapes universes
+
+QUANTUM FIELD THEORY EXPANSE
+───────────────────────────────────
+[Φ] Scalar-Field Fox             
+→ Vibrates with local degrees of freedom
+[Aμ] Gauge Gazelle               
+→ Leaps through fiber bundles; horns encode gauge potentials
+[Loop] Feynman Ferret            
+→ Tunnels through loop diagrams
+[Ren] Renormalization Raven      
+→ Pecks away infinities
+[Path] Path-Integral Panther     
+→ Pads through all possible histories at once
+
+
+RDGMFEQ EXPANSION
+THE OPERATOR WILDLANDS
+Where Relations, Flux, and Q‑Slices Become Fauna
+
+RDG TRIAD DOMAIN (SID)
+───────────────────────────────────
+[SID-S] Structure Stag               
+→ Holds relational primitives; antlers encode adjacency tensors
+[SID-I] Interaction Ibex             
+→ Mediates operator coupling; hooves mark commutation zones
+[SID-D] Dynamics Darter              
+→ Evolves relational states; tail traces Δ-relational flow
+[Γ] Coarse-Grain Gryphon             
+→ Compresses microstructure into macrostate; wings fold scales
+[Rel] Relation Raccoon               
+→ Lives only in binary/multi-ary links; paws manipulate morphisms
+
+MFE TRIAD DOMAIN (PED)
+───────────────────────────────────
+[PED-P] Power Panther                
+→ Tracks instantaneous survival-power; muscles store flux
+[PED-E] Evaluation Eagle             
+→ Performs nonlinear scoring; eyes detect boundary resets
+[PED-D] Dynamics Drake               
+→ Bipolar coupled evolution; wings beat in ± flux cycles
+[Flux] Momentum-Flux Fox             
+→ Carries bidirectional flow; tail oscillates in Q-slice rhythm
+[Reset] Boundary-Reset Ram           
+→ Charges through discontinuities; horns mark state resets
+
+MASTER EQUATION RESERVOIR (RME)
+───────────────────────────────────
+[RME] Master-Equation Moose          
+→ Filters noisy diagnostics; antlers encode memory kernels
+[Hist] Memory-Hysteresis Hyena       
+→ Stores temporal lag; laugh echoes past states
+[Score] Survival-Score Serpent       
+→ Slithers along long-term viability gradients
+[Nonlin] Nonlinear-Nexus Newt        
+→ Lives in saturation zones; skin changes with thresholding
+[Input] Fresh-Input Falcon           
+→ Drops new data into the reservoir; wings beat at sampling rate
+
+Q-SLICE MODULATION ZONE
+───────────────────────────────────
+[Q+] Positive-Q Quoll                
+→ Amplifies constructive flux; fur glows with coherence
+[Q−] Negative-Q Nighthawk            
+→ Dampens destructive flux; feathers absorb instability
+[Q∂] Boundary-Q Beetle               
+→ Crawls along slice edges; detects sign flips
+[Qmix] Mixed-Q Mongoose              
+→ Switches polarity; tail flicks between ± regimes
+[Qstab] Stability Stoat              
+→ Lives only where Q moderates runaway dynamics
+
+RELATIONAL OPERATOR ECOLOGY
+───────────────────────────────────
+[⊕] Merge-Morphism Manta             
+→ Combines relational operators; fins fold compositionally
+[⊗] Tensor-Tapir                     
+→ Expands dimensionality; trunk handles multi-mode products
+[Adj] Adjoint Antelope               
+→ Mirrors operators; horns reflect dual structure
+[Comp] Composition Coyote            
+→ Chains operators; runs only along valid sequences
+[Inv] Inversion Ibis                 
+→ Flips operator direction; wings reverse relational flow
+
+GEOMETRIC FLOW TERRACE
+───────────────────────────────────
+[Grad] Gradient Gecko                
+→ Climbs steepest relational ascent
+[Div] Divergence Dolphin             
+→ Surfaces where flux accumulates
+[Curl] Curl Crane                    
+→ Spins around rotational RDG modes
+[Flow] Relational-Flow Ferret        
+→ Tunnels through continuous operator evolution
+[Field] Field-Falcon                 
+→ Patrols vector-valued relational landscapes
+
+STATE-SPACE STRATUM
+───────────────────────────────────
+[State] State-Space Stork            
+→ Nests in high-dimensional RDG/MFE coordinates
+[Phase] Phase-Porpoise               
+→ Swims through attractors and limit cycles
+[Manifold] Manifold Marmot           
+→ Burrows through curved relational geometry
+[Slice] Slice-Salamander             
+→ Lives on cross-sections of RDG/MFE evolution
+[Orbit] Orbit-Ocelot                 
+→ Tracks recurrent relational trajectories
+
+NONLINEAR COUPLING BASIN
+───────────────────────────────────
+[Couple] Coupling Cougar             
+→ Links SID↔PED triads; leaps across operator bridges
+[Sat] Saturation Seal                
+→ Flattens extreme flux; barks at clipped dynamics
+[Thresh] Threshold Thrush            
+→ Chirps at boundary crossings
+[Fold] Fold-Falcon                   
+→ Performs bifurcation folds in RDG/MFE transitions
+[Kick] Impulse Ibex                  
+→ Delivers instantaneous perturbations; hooves mark delta spikes
+
+DIAGNOSTIC STREAM
+───────────────────────────────────
+[Noise] Noise-Numbat                 
+→ Injects stochastic variation; fur crackles with randomness
+[Filter] Filter-Fox                  
+→ Smooths diagnostics; tail performs convolution
+[Signal] Signal-Swan                 
+→ Glides along coherent patterns
+[Resid] Residual-Raven               
+→ Picks at leftover error terms
+[Norm] Norm-Narwhal                 
+→ Measures magnitude of relational states
