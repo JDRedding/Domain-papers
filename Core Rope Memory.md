@@ -1,4 +1,5 @@
 # Core Rope Memory — RDG / SID–PED Model
+621.39 — Computer engineering / digital electronics
 
 ## Legend
 
