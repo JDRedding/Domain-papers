@@ -1,6 +1,6 @@
 # Triadic sequent calculus
 
-### 1. Sequent form
+### Sequent form
 
 A **triadic sequent** is written:
 
@@ -14,7 +14,7 @@ Classical sequents are the special case $$\(\tau = 1\)$$.
 
 ---
 
-### 2. Semantic clause (core idea)
+### Semantic clause (core idea)
 
 Given truth space $$\(\mathcal{T} = \{0,1\} \cup [0.1,0.9]\)$$:
 
@@ -46,7 +46,7 @@ $$
 
 ---
 
-### 3. Structural rules (triadic versions)
+### Structural rules (triadic versions)
 
 All structural rules preserve or *lower* $$\(\tau\)$$, never raise it.
 
@@ -65,7 +65,7 @@ All structural rules preserve or *lower* $$\(\tau\)$$, never raise it.
 
 ---
 
-### 4. Logical rules (matching connectives)
+### Logical rules (matching connectives)
 
 Use triadic operators as the semantic backbone.
 
