@@ -4,11 +4,13 @@ A logic system whose truth space, operators, and inference rules are explicitly 
 Classical logic is binary and cannot model triads.
 So merge the strongest features of:
 
+```
 - Łukasiewicz logic — continuous truth
 - Kleene logic — discrete triadic truth
 - Paraconsistent logic — contradiction tolerance
 - Quantum logics — non‑commutative operators
 - Semiotic triads — relational triads
+```
 
 into the unified system: Triadic Meta‑Logic (TML).
 
