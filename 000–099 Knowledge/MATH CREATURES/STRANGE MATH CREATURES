@@ -8,7 +8,8 @@ Dewey Domain: 000–099 Knowledge
 Subclass: 000.4 Classification Systems
 Type: Mnemonic Taxonomy / Knowledge‑Organization Artifact
 
-Purpose: Cross‑domain mnemonic system mapping mathematical structures to creature‑taxonomy metaphors.
+Purpose: Cross‑domain mnemonic system mapping mathematical structures 
+to creature‑taxonomy metaphors.
 
 Versioning
 v1.0 — Core Wings (Mike Dupont's (@introsp3ctor) original list)
@@ -18,10 +19,16 @@ v4.0 — RDGMFEQ Operator Wildlands
 v5.0 — Integration into domain‑papers repository
 
 Overview
-The Strange Math Creature Zoo is a mnemonic classification system that organizes mathematical concepts into themed “wings” populated by metaphorical creatures. It functions as a knowledge‑organization scaffold, not a mathematical research paper. Its role in the domain‑papers repository is to provide cross‑domain indexing, memory aids, and conceptual mapping structures.
+The Strange Math Creature Zoo is a mnemonic classification system 
+that organizes mathematical concepts into themed “wings” populated 
+by metaphorical creatures. It functions as a knowledge‑organization 
+scaffold, not a mathematical research paper. Its role in the domain‑
+papers repository is to provide cross‑domain indexing, memory aids, 
+and conceptual mapping structures.
 
 Contents
-The Zoo consists of multiple wings, each representing a mathematical territory:
+The Zoo consists of multiple wings, each representing a mathematical 
+territory:
 
 3.1 Core Wings
 Shadow & Symmetry Wing
@@ -83,10 +90,21 @@ Diagnostic Stream
 COMPLETE LEDGER
 Where Logic Roams Wild
 
-Mike Dupont (@introsp3ctor) posted (https://x.com/introsp3ctor/status/2078627110344630519) a digital "Strange Math Creature Portrait Gallery" featuring a grid of 12 illustrated creatures that creatively personify mathematical concepts like quaternions, E8 lattices, Möbius strips, Klein bottles, and projective geometry.
+Mike Dupont (@introsp3ctor) posted 
+(https://x.com/introsp3ctor/status/2078627110344630519) a digital 
+"Strange Math Creature Portrait Gallery" featuring a grid of 12 
+illustrated creatures that creatively personify mathematical 
+concepts like quaternions, E8 lattices, Möbius strips, Klein 
+bottles, and projective geometry.
 
-Each creature includes a binomial-style scientific name, descriptive lore referencing specific math properties such as norms, roots, and dimensions, plus thematic tags covering shadow symmetry, topology, and algebraic structures.
-The thread continues with expanded fantasy-style zoo posters and museum exhibit scenes portraying the same creatures, merging whimsical visual art with abstract mathematical ideas.
+Each creature includes a binomial-style scientific name, 
+descriptive lore referencing specific math properties such as 
+norms, roots, and dimensions, plus thematic tags covering shadow 
+symmetry, topology, and algebraic structures.
+
+The thread continues with expanded fantasy-style zoo posters and 
+museum exhibit scenes portraying the same creatures, merging 
+whimsical visual art with abstract mathematical ideas.
 
 SHADOW & SYMMETRY WING
 ──────────────────────────────────
@@ -137,11 +155,21 @@ LATTICE GARDEN
 
 STRANGE MATH CREATURE ZOO EXPANSION
 
-The post (https://x.com/JDRedding/status/2078680334389203225) expands a creative "Strange Math Creature Zoo" thread by @JDRedding, adding a NUMBER THEORY GROVE, CATEGORY THEORY ARBORETUM, and LOGIC & COMPUTATION LABYRINTH with whimsical animal mappings like Prime Hydra for infinitely many primes and Lambda Lemur for lambda calculus.
+The post (https://x.com/JDRedding/status/2078680334389203225) 
+expands a creative "Strange Math Creature Zoo" thread by 
+@JDRedding, adding a NUMBER THEORY GROVE, CATEGORY THEORY 
+ARBORETUM, and LOGIC & COMPUTATION LABYRINTH with whimsical 
+animal mappings like Prime Hydra for infinitely many primes 
+and Lambda Lemur for lambda calculus.
 
-It builds on the prior ledger post featuring math structures as creatures in themed wings such as shadow symmetry, Cayley-Hopf, topological terrarium, and lattice garden, using concise descriptions linking concepts to animal behaviors.
-The format serves as an engaging mnemonic device for advanced mathematics, turning abstract topics like Riemann zeta function, functors, Turing machines, and NP problems into vivid, story-like zoo exhibits.
-
+It builds on the prior ledger post featuring math structures 
+as creatures in themed wings such as shadow symmetry, Cayley-
+Hopf, topological terrarium, and lattice garden, using concise 
+descriptions linking concepts to animal behaviors.
+The format serves as an engaging mnemonic device for advanced
+mathematics, turning abstract topics like Riemann zeta 
+function, functors, Turing machines, and NP problems into 
+vivid, story-like zoo exhibits.
 
 NUMBER THEORY GROVE
 ───────────────────────────────────
