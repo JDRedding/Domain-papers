@@ -2,7 +2,7 @@
 A logic system whose truth space, operators, and inference rules are explicitly designed to support triadic structures, continuous uncertainty, contradiction tolerance, and non‑commutative relational modes. A hybrid of Łukasiewicz, Kleene, paraconsistent, quantum, and semiotic logics into a single coherent structure capable of modeling triadic coupling, trifoil dynamics, and RDG/MFE‑style operator geometry.
 
 Classical logic is binary and cannot model triads.
-So merge the strongest features of:
+So we merge the strongest features of:
 
 ```
 - Łukasiewicz logic — continuous truth
