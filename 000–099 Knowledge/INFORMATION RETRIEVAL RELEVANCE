@@ -1,0 +1,133 @@
+INFORMATION RETRIEVAL RELEVANCE — HOW TO MEASURE “ABOUTNESS” PRECISELY
+================================================================================
+
+“Aboutness” is the core of topical relevance: the degree to which a document is
+*about* the topic expressed by a query (or information need). It is distinct from
+other relevance facets (utility, novelty, authority, recency, user task fit, etc.).
+
+Precise measurement has two layers:
+  1. Operational / system-side   (what IR engines actually compute)
+  2. Evaluative / gold-standard  (how humans or multi-faceted judgments define
+     ground truth)
+
+1. CLASSIC AND STILL-FOUNDATIONAL FORMULATIONS
+--------------------------------------------------------------------------------
+
+Cranfield / TREC paradigm (the empirical gold standard)
+  • Binary or graded human judgments: “Is this document relevant to this topic?”
+  • Aboutness is treated as a binary or 4–5-level graded relation between a fixed
+    topic statement and a document.
+  • Metrics: Precision@k, MAP, nDCG, ERR, RBP.
+    These measure ranking quality relative to human aboutness labels, not
+    aboutness itself.
+  • Limitation: aboutness is left as an unanalyzed primitive; judges are
+    instructed “if the document is about the topic…”.
+
+Logical / model-theoretic view (early formal IR)
+  • A document D is about a query Q if D ⊨ Q under some interpretation
+    (Boolean, fuzzy, or probabilistic).
+  • Van Rijsbergen’s logical uncertainty principle and the “aboutness” relation
+    D ⊨_a Q.
+  • Modern descendants: description-logic based IR, ontology-mediated retrieval.
+
+2. VECTOR-SPACE AND PROBABILISTIC MEASURES OF ABOUTNESS (COMPUTABLE)
+--------------------------------------------------------------------------------
+
+Approach                  | Aboutness signal                  | Precision of “about”     | Key idea / formula
+--------------------------+-----------------------------------+--------------------------+-----------------------------------------------
+TF-IDF / BM25             | Term overlap weighted by rarity   | Coarse; bag-of-words     | BM25 score sum
+Language models           | Query likelihood P(Q|D) or KL     | Better topical focus     | Dirichlet / Jelinek-Mercer smoothed
+Dense retrieval           | Cosine / dot product in embedding | Strong semantic          | sim(E_Q, E_D)  (BERT, Contriever, E5, GTE…)
+  (bi-encoders)           | space                             | aboutness                |
+Cross-encoders / re-rankers| Joint encoding of [Q; D]         | Highest current precision| MonoT5, RankLLaMA, RankGPT
+Aspect / intent-aware     | Multi-vector or multi-aspect      | Captures multi-faceted   | ColBERT, COIL, multi-vector dense
+Graph / knowledge-based   | Entity linking + graph proximity  | Explicit aboutness via   | Entity-oriented IR, KG-augmented dense
+                          | or RDF path entailment            | concepts                 |
+
+3. MORE PRECISE, THEORETICALLY GROUNDED NOTIONS OF ABOUTNESS
+--------------------------------------------------------------------------------
+
+A. Topical compositionality / aboutness operators
+   • A document is about topic T to degree α if its content can be decomposed
+     into a core about T plus residual.
+   • Formalized via:
+       – Lattice theory (aboutness as meet/join in a concept lattice)
+       – Rough-set or fuzzy-set approximations of the topic
+       – Information-theoretic: I(D; T) / H(T)  (normalized mutual information)
+
+B. Intentional vs. extentional aboutness
+   • Extensional : the set of objects/events the document talks about overlaps
+                   the set the query is about.
+   • Intentional : the document is written with the purpose of conveying
+                   information about the topic (harder; needs discourse/intent
+                   modeling).
+
+C. Modern neural + symbolic hybrids
+   • Query expansion / rewriting with LLMs → better capture of aboutness facets.
+   • Chain-of-thought or “reason about the topic first” prompting before retrieval.
+   • Atomic fact / claim decomposition: break query into atomic propositions;
+     measure coverage + fidelity of document sentences to those atoms.
+   • Entailment-based: D is about Q if a strong NLI model judges that D entails
+     the core propositions of Q (or vice-versa for specificity).
+
+D. Multi-dimensional / graded aboutness
+   Recent TREC and SIGIR work treats aboutness as multi-graded and multi-aspect:
+     – Topicality
+     – Coverage      (how much of the topic)
+     – Specificity / focus  (how little off-topic material)
+     – Depth
+     – Authority on the topic
+   Human assessors or LLM-as-judge score each dimension separately; aggregation
+   yields a richer aboutness vector.
+
+4. PRACTICAL RECIPE FOR MEASURING ABOUTNESS PRECISELY TODAY
+--------------------------------------------------------------------------------
+
+1. Define the information need as a structured object, not a string:
+     Core topic + facets + must-include / must-exclude + granularity
+     (overview vs. deep dive).
+
+2. Obtain high-quality labels
+     • Prefer multi-grade + multi-aspect human judgments.
+     • Or high-agreement LLM judges with carefully engineered rubrics
+       (“Rate topical aboutness 0–3; justify with evidence spans”).
+
+3. System-side scorer (choose by latency/accuracy needs)
+     • Fast:     BM25 + dense bi-encoder (hybrid)
+     • Accurate: cross-encoder or LLM re-ranker prompted explicitly for aboutness
+                 (“How topically about is this document to the query?
+                  Score 0–10 and list supporting passages”).
+
+4. Evaluation metrics that respect graded aboutness
+     • nDCG, ERR, RBP with graded gains
+     • Aspect-aware metrics (e.g. α-nDCG if multiple intents)
+     • Coverage + fidelity metrics if using claim decomposition
+
+5. Diagnostic tools
+     • Attention / attribution maps showing which parts of the document drive
+       the aboutness score
+     • Counterfactual: remove sentences and measure score drop → identifies the
+       aboutness-bearing content
+
+5. OPEN RESEARCH FRONTIERS (WHERE “PRECISE” IS STILL BEING DEFINED)
+--------------------------------------------------------------------------------
+
+  • Causal aboutness (does the document cause the user to learn about the topic?)
+  • Dynamic / session aboutness (aboutness relative to evolving knowledge state)
+  • Cross-lingual and multimodal aboutness
+  • Formal verification of aboutness via theorem provers + LLMs (embryonic)
+  • Relational / geometric views of aboutness
+      (topic and document as points or trajectories in a latent manifold;
+       aboutness as geodesic proximity or flux through a topic region)
+
+BOTTOM LINE
+--------------------------------------------------------------------------------
+
+There is no single scalar that perfectly captures aboutness.
+
+The most precise current practice is:
+  • multi-aspect graded human (or carefully validated LLM) labels as ground truth
+  • hybrid sparse + dense + cross-encoder scoring for ranking
+  • evaluation with graded, intent-aware metrics
+
+================================================================================
