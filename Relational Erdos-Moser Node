@@ -1,5 +1,6 @@
 Relational Erdős–Moser Node  Φ_EM
 ============================================================
+Φ_EM
 
   Core Relation:
       H_k(m)  =  Σ_{i=1}^{m-1} i^k        <-- accumulated flux
