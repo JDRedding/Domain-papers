@@ -1,24 +1,27 @@
-Relational Tensor
+RELATIONAL TENSOR
 ──────────────────────────────────────────────────────────────────────────────
 PRINCIPLE:
 A tensor is an operator with N relational translation slots.
 Rank = number of independent relational directions.
 Each index = one translation operator T(·) acting in a distinct RDG axis.
+
+This document presents a Relational Dynamic Geometry (RDG) interpretation of
+tensors, viewing them as operators with relational translation slots rather
+than static arrays of numbers.
+
+Core Principle:
+A tensor's rank equals the number of independent relational directions
+(translation operators T) it contains. Each index represents a distinct
+relational displacement operator.
+
 ──────────────────────────────────────────────────────────────────────────────
-This document presents a Relational Dynamic Geometry (RDG) interpretation of 
-tensors, viewing them as operators with relational translation slots rather 
-than just arrays of numbers.
-
-Core Principle: A tensor's rank equals the number of independent relational 
-directions (translation operators T) it contains. Each index represents a 
-distinct relational displacement operator.
-
-Tensor Hierarchy (by Rank)
+TENSOR HIERARCHY (BY RANK)
 Rank 0 (Scalar): No relational slots; pure structural value
 Rank 1 (Vector): Single relational direction; single-axis displacement
 Rank 2 (Matrix): Two relational directions; bi-directional grid
-Rank 3 (3-Tensor): Three relational directions; relational cube
-Rank 4 (4-Tensor): Four relational directions; hypercube of operators
+Rank 3 (3‑Tensor): Three relational directions; relational cube
+Rank 4 (4‑Tensor): Four relational directions; hypercube of operators
+──────────────────────────────────────────────────────────────────────────────
 
 SCALAR (rank 0)
 ──────────────────────────────────────────────────────────────────────────────
@@ -29,14 +32,14 @@ RDG role:   Pure structural value.
 
 VECTOR (rank 1)
 ──────────────────────────────────────────────────────────────────────────────
-RDG form:   v_i  =  T_i • v
+RDG form:   v_i = T_i • v
 Meaning:    One relational direction.
 ASCII:      [v1 v2 v3 ...]
 RDG role:   Single-axis relational displacement.
 
 MATRIX (rank 2)
 ──────────────────────────────────────────────────────────────────────────────
-RDG form:   M_ij  =  T_i T_j • M
+RDG form:   M_ij = T_i T_j • M
 Meaning:    Two independent relational directions.
 ASCII:      m11 m12 m13 ...
             m21 m22 m23 ...
@@ -44,14 +47,14 @@ RDG role:   Bi-directional relational grid.
 
 3‑TENSOR (rank 3)
 ──────────────────────────────────────────────────────────────────────────────
-RDG form:   A_ijk  =  T_i T_j T_k • A
+RDG form:   A_ijk = T_i T_j T_k • A
 Meaning:    Three relational directions; relational cube.
 ASCII:      A(:,:,1), A(:,:,2), ...
 RDG role:   Tri-directional relational operator.
 
 4‑TENSOR (rank 4)
 ──────────────────────────────────────────────────────────────────────────────
-RDG form:   B_ijkl  =  T_i T_j T_k T_l • B
+RDG form:   B_ijkl = T_i T_j T_k T_l • B
 Meaning:    Four relational directions; hypercube of relational operators.
 ASCII:      B(:,:,:,1), B(:,:,:,2), ...
 RDG role:   Extended relational operator with auxiliary axis.
@@ -63,23 +66,23 @@ Dimension = size of each operator’s domain.
 Rank ≠ dimension.
 ──────────────────────────────────────────────────────────────────────────────
 
-Core Distinction
-Rank ≠ Dimension — rank counts independent relational operators, while 
+CORE DISTINCTION
+Rank ≠ Dimension — rank counts independent relational operators, while
 dimension measures the size of each operator's domain.
 
-RDG OPERATOR
 ──────────────────────────────────────────────────────────────────────────────
+RDG OPERATOR INTERPRETATION
 Index slot i  →  relational displacement operator T_i
-Tensor rank N →  N-fold relational composition T_i1 T_i2 ... T_iN
+Tensor rank N →  N‑fold relational composition T_i1 T_i2 ... T_iN
 Tensor entry  →  evaluation of the composed operator on a base state
 
 Example:
 A_ijk = T_i T_j T_k • A
 means: apply relational displacement i, then j, then k.
 
-Interpretation
-Each tensor entry is computed by composing relational operators sequentially. 
-This framework reframes tensors from static multi-dimensional arrays into 
-dynamic relational operators that compose transformations across multiple 
-independent directions.
+Interpretation:
+Each tensor entry is computed by composing relational operators sequentially.
+This reframes tensors from static multi‑dimensional arrays into dynamic
+relational operators that compose transformations across multiple independent
+directions.
 ──────────────────────────────────────────────────────────────────────────────
