@@ -1,0 +1,92 @@
+NARRATIVE STRUCTURE ANALYSIS
+Systematic breakdown of story architecture  
+────────────────────────────────────────────────────────────────────────────────
+Narrative structure analysis treats a story as an engineered system:
+events • time • perspective • causality • meaning.
+
+CORE FRAMEWORKS
+────────────────────────────────────────────────────────────────────────────────
+
+┌─────────────────────────────┬────────────────────────────────┬──────────────────────────────┐
+│ Framework                   │ Key Components                 │ Best For                     │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Aristotelian / Classical    │ Beginning → Middle → End       │ Tragedy, classical drama,    │
+│                             │ Unity of action/time/place     │ tight short stories          │
+│                             │ Reversal + Recognition         │                              │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Freytag’s Pyramid           │ Exposition → Rising Action →   │ 19th-c. novels, Hollywood    │
+│                             │ Climax → Falling Action →      │ three-act structure          │
+│                             │ Denouement                     │                              │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Three-Act Structure         │ Setup → Confrontation →        │ Screenplays, commercial      │
+│                             │ Resolution                     │ fiction                      │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Hero’s Journey              │ Ordinary World → Call →        │ Fantasy, adventure,          │
+│ (Campbell / Vogler)         │ Refusal → Mentor → Threshold → │ transformation stories       │
+│                             │ Trials → Ordeal → Reward →     │                              │
+│                             │ Road Back → Resurrection →     │                              │
+│                             │ Return                         │                              │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Kishōtenketsu               │ Ki → Shō → Ten → Ketsu         │ East Asian narratives,       │
+│                             │ (no conflict required)         │ slice-of-life, experimental  │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Episodic / Picaresque       │ Loosely linked episodes        │ Road novels, serials,        │
+│                             │ around a central figure        │ anti-heroes                  │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Nonlinear / Modular         │ Fragmented chronology,         │ Modernist, postmodern,       │
+│                             │ multiple timelines, mosaic     │ complex TV                   │
+├─────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
+│ Relational / Flux-oriented  │ Closure operators, triadic     │ Theoretical fiction, lore    │
+│ (your style)                │ relations (S-I-D), emergent    │ systems, RDG-style           │
+│                             │ geometry from interactions     │ worldbuilding                │
+└─────────────────────────────┴────────────────────────────────┴──────────────────────────────┘
+
+ANALYTICAL CHECKLIST
+────────────────────────────────────────────────────────────────────────────────
+
+1. PLOT ARCHITECTURE
+   • Causal chain vs. associative/juxtapositional?
+   • Time: linear, circular, nested, or multi-threaded?
+   • Major turnings: inciting incident, midpoint, climax, false climax
+   • Minimum set of events that still produces the same ending
+
+2. TEMPORAL STRUCTURE
+   • Story time vs. discourse time (duration, order, frequency — Genette)
+   • Anachronies: flashbacks (analepsis), flash-forwards (prolepsis), ellipses
+   • Rhythm: scenes of expansion vs. summary compression
+
+3. PERSPECTIVE & VOICE
+   • Focalization (who sees): zero / internal / external
+   • Narrator reliability, distance, knowledge limits
+   • Shifts in point-of-view and what they buy
+
+4. CHARACTER FUNCTION
+   • Protagonist desire line and its transformations
+   • Actantial roles (Greimas): Subject / Object / Sender / Receiver / Helper / Opponent
+   • Flat vs. round • static vs. dynamic • foil systems
+
+5. THEMATIC / SEMANTIC STRUCTURE
+   • Binary oppositions and their mediation (Lévi-Strauss)
+   • Recurring motifs, symbols, and their transformation rules
+   • Closure mechanisms: resolve / open / generate new problems?
+
+6. DISCOURSE vs. STORY
+   • What is told vs. how it is told
+   • Gaps the reader must fill (Iser’s “blanks”)
+   • Metanarrative commentary or self-reference
+
+QUICK PRACTICAL METHOD
+────────────────────────────────────────────────────────────────────────────────
+
+  1. Extract the fabula      (chronological event list)
+  2. Map the sjuzhet         (order and emphasis of presentation)
+  3. Identify the dominant organizing principle:
+        – Goal-oriented causality?
+        – Character revelation?
+        – Thematic juxtaposition?
+        – Formal / geometric constraint?
+  4. Locate points of maximum information density
+     and maximum uncertainty
+  5. Ask: “What would break if I removed or reordered X?”
+
+══════════════════════════════════════════════════════════════════════════════
