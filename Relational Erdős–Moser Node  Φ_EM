@@ -1,0 +1,103 @@
+Relational Erdős–Moser Node  Φ_EM
+============================================================
+
+  Core Relation:
+      H_k(m)  =  Σ_{i=1}^{m-1} i^k        <-- accumulated flux
+      A_k(m)  =  m^k                      <-- local attractor bound
+
+      Φ_EM(m,k) = H_k(m) - A_k(m)
+                 = (historical flux) - (single-node attractor)
+
+------------------------------------------------------------
+ Flux Geometry vs. Attractor Geometry
+------------------------------------------------------------
+
+  Historical Flux (Left Side):
+      i = 1 ... m-1
+      each node contributes flux density i^k
+
+      ASCII view:
+          i=1:   |*
+          i=2:   |****
+          i=3:   |*********
+          ...
+          i=m-1: |****************...(superlinear)
+
+      Accumulation:
+          H_k(m) = ∫ Flux(i^k) over discrete path
+
+  Local Attractor (Right Side):
+      single node at m
+      flux density = m^k
+
+      ASCII view:
+          m:     |**************************** (one big spike)
+
+------------------------------------------------------------
+ Collapse Map Γ: H_k(m) → A_k(m)
+------------------------------------------------------------
+
+  For k = 1:
+      linear growth → collapse possible
+      relational distances preserved
+      Φ_EM = 0 has integer solution
+
+  For k > 1:
+      superlinear curvature → collapse impossible
+      Γ cannot be an isometry
+      residual strain appears
+
+      ASCII strain visualization:
+
+          Historical Flux:
+              |*
+              |****
+              |*********
+              |****************
+              |*************************
+              (curved accumulation)
+
+          Attractor:
+              |************************************************
+              (single-node spike)
+
+          Collapse Attempt:
+              H_k(m)  --->  m^k
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              mismatch → phase-lock failure
+
+------------------------------------------------------------
+ Phase-Lock Condition
+------------------------------------------------------------
+
+  Required:
+      integrated multi-node flux must synchronize with
+      single-node attractor state.
+
+  Actual:
+      nonlinear phase gradient across nodes
+      attractor cannot absorb curvature
+      → discrete residual noise
+      → Φ_EM ≠ 0 for all integer m when k > 1
+
+------------------------------------------------------------
+ Interpretation Summary
+------------------------------------------------------------
+
+  Φ_EM is a relational incompatibility operator:
+      - detects geometric strain
+      - measures collapse failure
+      - encodes phase mismatch
+      - expresses impossibility of compressing
+        a distributed power-law history into
+        a single power-law state
+
+============================================================
+============================================================
+
+  collapse operator Γ
+  strain tensor S_EM
+  dynamical flux evolution
+  continuum limit Γ→∞
+
+============================================================
