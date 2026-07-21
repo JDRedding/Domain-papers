@@ -5,7 +5,7 @@ A tensor is an operator with N relational translation slots.
 Rank = number of independent relational directions.
 Each index = one translation operator T(·) acting in a distinct RDG axis.
 ──────────────────────────────────────────────────────────────────────────────
-This document presents a Relational Domain Grid (RDG) interpretation of 
+This document presents a Relational Dynamic Geometry (RDG) interpretation of 
 tensors, viewing them as operators with relational translation slots rather 
 than just arrays of numbers.
 
