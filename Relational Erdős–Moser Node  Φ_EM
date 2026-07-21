@@ -84,6 +84,20 @@ Relational Erdős–Moser Node  Φ_EM
  Interpretation Summary
 ------------------------------------------------------------
 
+[ Distributed Memory ]                   [ Singular Attractor ]
+  H_k(m) = Σ i^k                            A_k(m) = m^k
+  
+  Multi-node gradient path                  Single-node state bound
+  High spatial entropy                      Zero spatial entropy
+  Curvature built from history             Static point geometry
+            \                                   /
+             \                                 /
+              -->  Collapse Operator  <--
+                           Γ
+                           |
+                     Phase Mismatch!
+                     (S_EM > 0 for k > 1)
+
   Φ_EM is a relational incompatibility operator:
       - detects geometric strain
       - measures collapse failure
