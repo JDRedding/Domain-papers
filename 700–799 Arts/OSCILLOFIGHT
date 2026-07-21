@@ -1,0 +1,100 @@
+OSCILLOFIGHT: POCKET RESONANCE
+A Micro Boxing Pocket Game
+
+COMPONENTS
+- 1d6
+- Pencil
+- This sheet
+
+
+FIGHTER SHEETS
+------------------------------------------------------------
+P1 BOXER
+HP: 9     Drive: 0     Snap: 0
+Stance: Idle / Jab / Cross / Hook / Shell
+
+P2 BOXER
+HP: 9     Drive: 0     Snap: 0
+Stance: Idle / Jab / Cross / Hook / Shell
+
+
+RING (1D LINE)
+------------------------------------------------------------
+P1 [■] ------------------------------ [■] P2
+
+(Optional footwork: advance / retreat 1 step)
+
+
+ENGINE CORE (Pocket Version)
+------------------------------------------------------------
+ROLL 1d6 → Apply Base Changes
+
+ROLL   Drive   Snap
+1      +0      -2
+2      +0      -1
+3      +0       0
+4      +1       0
+5      +2       0
+6      +3       0
+
+CARRY-OVER (Next Round)
+- If Drive went up last round  → +1 Snap
+- If Snap went down last round → +1 Drive
+
+LIMITS
+Drive stays between -4 and +4
+Snap stays between -4 and +4
+
+
+MOVES
+------------------------------------------------------------
+JAB
+- Needs Drive ≥ 0
+- Damage = 1 + Snap
+
+CROSS
+- Needs Drive ≥ 1
+- Damage = 2 + Snap
+- Costs 1 Drive
+
+HOOK
+- Needs Drive ≥ 2
+- Damage = 3 + Snap
+- Costs 2 Drive
+
+SHELL (High Guard)
+- Reduce incoming damage by (1 + Drive)
+- Snap -1
+
+IDLE
+- No change
+
+
+ROUND ORDER
+------------------------------------------------------------
+1. Both fighters pick stance (secret)
+2. Roll 1d6
+3. Apply Drive and Snap changes
+4. Apply Carry-Over
+5. Enforce Limits
+6. Resolve stances simultaneously
+7. Deal damage
+8. Check for LIGHTS OUT
+
+
+FINISH
+------------------------------------------------------------
+HP ≤ 0 → LIGHTS OUT (Opponent wins by TKO)
+
+
+GLOSSARY
+------------------------------------------------------------
+Drive  = weight transfer / push behind the punch
+Snap   = sting / whip / extension on the shot
+Carry-Over = rebound after a big swing or drained flurry
+Limits = you can’t load forever or go completely slack
+
+JAB   = range finder / rhythm keeper
+CROSS = power straight (costs Drive)
+HOOK  = committed swing (high cost, high payoff)
+SHELL = high guard, absorb shot, lose Snap
