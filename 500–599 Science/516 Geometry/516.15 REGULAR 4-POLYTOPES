@@ -1,0 +1,118 @@
+REGULAR 4-POLYTOPES (SCHLÄFLI SYMBOLS)
+=====================================================================
+516.15 (Geometry in four dimensions)
+Schläfli symbol: {p, q, r}
+Meaning:
+  - Cells are {p, q} polyhedra
+  - r cells meet around each edge
+
+List of the six regular 4-polytopes:
+  5-cell (4-simplex)        : {3, 3, 3}
+  8-cell (tesseract)        : {4, 3, 3}
+  16-cell                   : {3, 3, 4}
+  24-cell                   : {3, 4, 3}
+  120-cell                  : {5, 3, 3}
+  600-cell                  : {3, 3, 5}
+
+Duality:
+  Dual({p, q, r}) = {r, q, p}
+
+=====================================================================
+
+Tesseract {4,3,3}:
+  V = 16
+  E = 32
+  F = 24   (square faces)
+  C = 8    (cubic cells)
+
+600-cell {3,3,5}:
+  V = 120
+  E = 720
+  F = 1200 (triangular faces)
+  C = 600  (tetrahedral cells)
+
+General regular 4-polytope formulas (schematic):
+  Let G = symmetry group order of the polytope.
+  Then counts follow:
+    V = G / |Stab(vertex)|
+    E = G / |Stab(edge)|
+    F = G / |Stab(face)|
+    C = G / |Stab(cell)|
+
+Symmetry group orders:
+  5-cell      : 120
+  8-cell      : 384
+  16-cell     : 384
+  24-cell     : 1152
+  120-cell    : 14400
+  600-cell    : 14400
+
+VERTEX COORDINATES (CANONICAL EMBEDDINGS IN R^4)
+=====================================================================
+
+Tesseract {4,3,3}:
+  All sign combinations of:
+    (±1, ±1, ±1, ±1)
+
+24-cell {3,4,3}:
+  Even permutations of:
+    (±1, ±1, 0, 0)
+  Plus:
+    (±1/2, ±1/2, ±1/2, ±1/2)
+
+600-cell {3,3,5}:
+  Uses golden ratio:
+    φ = (1 + sqrt(5)) / 2
+  Coordinate sets include:
+    (0, ±1, ±φ, ±φ^-1) and cyclic permutations
+  (Full list is 120 points in symmetric φ-based patterns.)
+
+PETRIE POLYGONS
+=====================================================================
+
+Definition:
+  Skew Hamiltonian cycles in the 1-skeleton of the polytope.
+  Each Petrie polygon is a closed path where every consecutive
+  triple of vertices forms a face, but no four consecutive do.
+
+Use:
+  Reveal hidden symmetries in orthographic projections.
+
+STEREOGRAPHIC PROJECTION FROM S^3 TO R^3
+=====================================================================
+
+Given point (x, y, z, w) on S^3 with w != 1:
+
+  Stereographic map:
+    (x, y, z, w)  -->  ( X, Y, Z )
+
+  Where:
+    X = x / (1 - w)
+    Y = y / (1 - w)
+    Z = z / (1 - w)
+
+Properties:
+  - Conformal (angle-preserving)
+  - Great circles on S^3 map to circles or lines in R^3
+
+ORTHOGRAPHIC / SCHLEGEL PROJECTIONS
+=====================================================================
+
+Orthographic:
+  Linear projection dropping one coordinate:
+    (x, y, z, w) --> (x, y, z)
+
+Schlegel (cell-centered):
+  Project through a chosen cell to visualize adjacency
+  and nesting of cells in 3D.
+
+STRUCTURE
+=====================================================================
+
+Regular 4-polytopes:
+  - Defined by {p, q, r}
+  - Duals via {r, q, p}
+  - Combinatorics from group actions
+  - Coordinates in R^4 with high symmetry
+  - Projected to R^3 via stereographic, orthographic, Schlegel
+  - Petrie polygons reveal hidden adjacency cycles
