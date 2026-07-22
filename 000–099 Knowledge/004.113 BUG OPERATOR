@@ -1,0 +1,140 @@
+BUG OPERATOR — FORMALIZATION                   
+============================================================
+004 – Data processing & computer science
+004.1 – Computer science theory
+004.11 – Computability & complexity
+004.112 – Automata theory (Turing machines, CA)
+004.113 – Formal languages & rewriting systems
+
+1. Evolution and Closure
+------------------------
+
+Let:
+    E(x)   = evolution of state x
+    Γ(y)   = closure / foldback operator applied to y
+    I      = conserved relational identity
+    R      = relational manifold
+
+Closed evolution requires:
+    Γ(E(x)) ∈ R
+
+If Γ exists and is valid:
+    E(x) → Γ(E(x)) → I
+
+If Γ is missing:
+    Γ(E(x)) = undefined
+
+
+2. Bug Operator Definition
+--------------------------
+
+The RDG bug operator is:
+
+    B(x) = E(x) - Γ(E(x))
+
+Interpretation:
+    If Γ(E(x)) exists:
+        B(x) = deviation from closure
+    If Γ(E(x)) is undefined:
+        B(x) = undefined   ← ontology cannot define bugs
+
+
+3. Strong vs Partial Closure
+----------------------------
+
+Strong closure:
+    Γ(E(x)) = I
+    B(x) = 0
+
+Partial closure (bounded bug):
+    Γ(E(x)) ∈ R_safe ⊂ R
+    B(x) ≠ 0 but |B(x)| ≤ ε
+
+No closure (Wolfram / Robert case):
+    Γ does not exist
+    B(x) = undefined
+    → system cannot classify deviations
+    → "fractal insanity"
+
+
+4. ASCII Evolution Diagram
+--------------------------
+
+Closed RDG system:
+
+    x0 ──E──> x1 ──E──> x2 ──E──> x3 ...
+                 │
+                 ▼
+                Γ
+                 │
+                 ▼
+                 I   (identity preserved)
+
+Bug:
+    B(xi) = xi - I
+
+
+Non-closed ruliological system:
+
+    x0 ──E──> x1 ──E──> x2 ──E──> x3 ...
+                 │
+                 ▼
+               (Γ missing)
+                 │
+                 ▼
+           infinite branching
+           self-similar drift
+           no identity foldback
+
+Bug:
+    B(xi) = undefined
+
+
+5. Minimal TM/CA Example
+------------------------
+
+Spec:
+    f(n) = n + 1
+
+Actual TM:
+    f(n) = n + 1 except n ≡ 7 (mod 8)
+    f(7) = 9
+
+Define:
+    E(n) = TM output
+    Γ(E(n)) = n + 1
+
+Then:
+    B(5) = 6 - 6 = 0
+    B(7) = 9 - 8 = 1
+
+If Γ were missing:
+    B(n) = undefined
+
+
+6. Why Wolfram Is “Just Observing the Box”
+------------------------------------------
+
+His ontology has:
+    - E(x) defined
+    - Γ missing
+    - no closure
+    - no identity manifold
+    - no invariant space
+    - no foldback morphism
+
+Therefore:
+    B(x) = undefined
+
+He can only:
+    observe evolution,
+    catalog glitches,
+    visualize sprawl,
+    describe irreducibility.
+
+He cannot:
+    classify bugs,
+    define invariants,
+    close the manifold.
+
+============================================================
