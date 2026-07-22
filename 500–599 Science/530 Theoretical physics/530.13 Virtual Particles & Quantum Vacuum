@@ -1,50 +1,117 @@
 Virtual Particles & Quantum Vacuum 
 530.13 — Quantum field theory (QFT)
-In short, the ground state has structure and energy, 
-it's the dynamic potential enabling particle physics 
-and possibly spacetime itself.
+In short, the ground state has structure and energy, it's the 
+dynamic potential enabling particle physics and possibly 
+spacetime itself.
 
-The ground state is not empty ... it is the active 
-relational field from which excitations and geometry 
-arise.
+The ground state is not empty ... it is the active relational 
+field from which excitations and geometry arise.
 
 Key Equations 
 
 1. Time–energy relation
    ΔE Δt ≳ ħ/2
 
+   DeltaE * DeltaT >= hbar/2
+   -> Minimal condition for virtual excitations (short-lived
+      energy fluctuations allowed by quantum uncertainty).
+
 2. Scalar Feynman propagator
    D_F(x - y) = ∫ d^4k / (2π)^4 * [ i / (k^2 - m^2 + iε) ] * e^{-ik·(x - y)}
+
+   D_F(x - y) =
+      ∫ d^4k / (2*pi)^4 *
+        [ i / (k^2 - m^2 + i*epsilon) ] *
+        exp( -i * k · (x - y) )
+
+   -> Green's function for a scalar field: amplitude for a
+      disturbance at x to appear at y.
 
 3. Virtual exchange factor
    1 / (q^2 - m^2 + iε)
 
+   1 / ( q^2 - m^2 + i*epsilon )
+
+   -> Internal-line factor in diagrams: virtual propagator
+      carrying momentum q
+
 4. Vacuum two-point function
    ⟨0 | T φ(x) φ(y) | 0⟩ = D_F(x - y) ≠ 0
 
+   <0 | T phi(x) phi(y) | 0> = D_F(x - y) != 0
+
+   -> Vacuum is not empty; correlations exist even with no
+      particles.
+
 5. Zero-point energy
    E_0 = (1/2) Σ_k ħ ω_k
+
+   E_0 = (1/2) * Sum_k ( hbar * omega_k )
+
+   -> Each mode contributes (1/2) hbar * omega.
+      Origin of vacuum energy
 
 6. Field operator expansion
    φ(x) = ∫ d^3k / [ (2π)^3 √(2ω_k) ] *
           ( a_k e^{-ik·x} + a_k† e^{ik·x} )
 
+   phi(x) =
+      ∫ d^3k / [ (2*pi)^3 * sqrt(2*omega_k) ] *
+        ( a_k * exp(-i*k·x) + a_k^dagger * exp(i*k·x) )
+
+   -> Creation and annihilation operators build the field
+      from modes.
+
 7. One-loop vacuum bubble
    i ∫ d^4k / (2π)^4 * [ 1 / (k^2 - m^2 + iε) ]
+
+   i * ∫ d^4k / (2*pi)^4 *
+        [ 1 / (k^2 - m^2 + i*epsilon) ]
+
+   -> Closed loop with no external legs: pure vacuum
+      fluctuation.
 
 8. Feynman rules (internal lines)
    Scalar:  i / (p^2 - m^2 + iε)
    Fermion: i ( /p + m ) / (p^2 - m^2 + iε)
 
+   Scalar:
+      i / ( p^2 - m^2 + i*epsilon )
+   Fermion:
+      i * ( p_slash + m ) / ( p^2 - m^2 + i*epsilon )
+
+   -> Propagators inserted for internal lines.
+
 9. Mass renormalization counterterm
    m_0^2 = m_r^2 + δm^2
    δm^2 ∝ ∫^Λ d^4k / (k^2 - m^2)
 
+   m_0^2 = m_r^2 + delta_m^2
+   delta_m^2 ∝ ∫^Lambda d^4k / ( k^2 - m^2 )
+
+   -> Bare mass = renormalized mass + divergent correction.
+
 10. Vacuum energy density (cutoff)
     ρ_vac ≈ Λ^4 / (16π^2)
+
+    rho_vac ≈ Lambda^4 / (16*pi^2)
+
+    -> Quartic divergence from summing zero-point modes up
+       to cutoff Lambda.
 
 11. Dyson series (S-matrix)
     S = T exp( -i ∫ H_int(t) dt )
 
+    S = T exp( -i ∫ H_int(t) dt )
+
+    -> Time-ordered exponential generating all perturbative
+       interactions.
+
 12. Wick’s theorem
     T(φ_1 ... φ_n) = :N(...): + all contractions
+
+    T( phi1 ... phin ) =
+       : N( ... ) :  +  all contractions
+
+    -> Converts time-ordered products into normal-ordered
+       ones plus propagators.
