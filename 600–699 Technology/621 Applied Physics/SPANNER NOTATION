@@ -1,0 +1,62 @@
+============================================================
+                 SPANNER NOTATION DIAGRAMS 
+============================================================
+
+1. OPEN‑END SPANNER
+   <||>            Open jaws (flat faces)
+   <||>__          Offset implied by asymmetry
+
+------------------------------------------------------------
+
+2. RING SPANNER
+   [==]--          Closed ring (6/12‑point)
+        \_
+
+------------------------------------------------------------
+
+3. COMBINATION SPANNER
+   <||>----[==]    Open end + ring end
+
+------------------------------------------------------------
+
+4. ADJUSTABLE SPANNER
+   <||>{=}         Movable jaw + adjuster
+
+------------------------------------------------------------
+
+5. SOCKET SPANNER (RATCHET)
+   --(O)==[ ]      Ratchet head + socket
+
+------------------------------------------------------------
+
+6. BOX / TUBE SPANNER
+   |[]----[]|      Tube body + hex ends
+
+------------------------------------------------------------
+
+7. FLARE NUT SPANNER
+   [=/ ]--         Slotted ring for tubing
+
+------------------------------------------------------------
+
+8. RATCHETING SPANNER
+   [=>]---         Ring with ratchet pawl direction
+
+------------------------------------------------------------
+
+9. TORQUE WRENCH
+   --(O)==[ ]=<T>  Drive head + torque indicator
+
+============================================================
+Notation Key
+============================================================
+<||>     Open jaws
+[==]     Closed ring
+{=}      Adjustable jaw mechanism
+(O)      Ratchet head
+[ ]      Socket
+|[]----[]| Tube with hex ends
+[=/ ]    Flare slot
+[=>]     Ratchet direction
+<T>      Torque measurement element
+============================================================
