@@ -1,0 +1,273 @@
+MATHEMATICAL NOTATIONS REFERENCE  
+=== No. 1 | Common Mathematical Notations ===
+Symbol          Meaning
++               Plus
+-               Minus
+×               Multiply
+÷               Divide
+=               Equal
+≠               Not Equal
+±               Plus or Minus
+≈               Approximately equal
+<               Less than
+>               Greater than
+≤               Less or equal
+≥               Greater or equal
+≮               Not less than
+≯               Not greater than
+≰               Not less or equal
+≱               Not greater or equal
+≪               Much less than
+≫               Much greater than
+≡               Congruent
+∼               Similar
+a²              Square
+aⁿ              n-th power
+√a              Square root
+ⁿ√a             n-th root
+a ∝ b           Proportional
+%               Percent
+a : b           Ratio
+a!              Factorial
+a!!             Double factorial
+ⁿa              Tetration
+Pᵣⁿ             Permutation
+Cᵣⁿ             Combination
+|a|             Absolute value
+⌊a⌋             Floor function
+⌈a⌉             Ceiling function
+{a}             Decimal part (fractional part)
+
+=== No. 2 | Set Theory & Logic Symbols ===
+Symbol          Meaning
+a ∈ A           Belongs to
+A ∋ a           Contains
+a ∉ A           Does not belong to
+A ⊂ B           Proper Subset of
+A ⊆ B           Improper Subset of (subset of)
+A ⊃ B           Superset of
+ℕ               Natural Numbers
+ℤ               Integers
+ℚ               Rational Numbers
+ℝ               Real Numbers
+𝔸 / A           Algebraic Numbers
+ℂ               Complex Numbers
+n(A)            Cardinality
+ξ / 𝒰           Universal Set
+∅               Null Set (Empty Set)
+A \ B           Set Difference
+A ∪ B           Union
+A ∩ B           Intersection
+A'              Complement Set
+:               Such That
+{a, b, c}       Set
+∃               There exists
+∄               There does not exist
+∃!              Only one exists (unique existence)
+A ⇒ B           Implies
+A ⇔ B           If and only if (Mutually Implies)
+A ⇏ B           Does not imply
+¬A              Not
+a ∨ b           Or
+a ∧ b           And
+A ⊢ B           Proves
+A ⊬ B           Does not yield (does not prove)
+∴               Therefore
+∵               Because
+∀               For all
+□               End of Proof
+
+=== No. 3 | Geometry & Measurement Symbols ===
+Symbol                  Meaning
+a°                      Degree
+aᶜ / rad                Radian
+aᵍ                      Gradian
+∠ABC                    Angle
+∡ABC                    Measured Angle
+∢A                      Spherical Angle
+[ABC]                   Area of
+∟                       Right Angle
+△ABC                    Triangle
+a°b'c"                  Arcminute / Arcsecond
+l₁ ∥ l₂                 Parallel to
+l₁ ⊥ l₂                 Perpendicular to
+π                       Pi (Constant)
+τ (2π)                  Tau (2π)
+⌒AB                     Arc
+O                       Origin
+m_AB                    Gradient (slope)
+(x, y)                  Coordinates
+AB (with dots)          Line Segment
+AB (double arrow)       Line
+AB (arrow)              Ray
+l₁ (equation)           Equation of Line
+○C₁                     Circle
+Π₁                      Plane
+Golden Ratio symbol     Golden Ratio
+h (vertical)            Vertical Height
+|a| (vector)            Vector Length (magnitude)
+||a||                   Vector Length (norm)
+û                       Unit Vector
+[ABC] (shaded)          Area of
+AB (vector arrow)       Vector
+u · v                   Dot Product
+u × v                   Cross Product
+u ∧ v                   Wedge Product
+<u, v>                  Inner Product
+u ⊗ v                   Outer Product
+
+=== No. 4 | Calculus & Analysis Notations ===
+Symbol                  Meaning
+e                       Euler's Number
+logₐ b                  Logarithm (base a)
+lg a                    Common Logarithm (base 10)
+ln a                    Natural Logarithm
+inf(A)                  Infimum
+sup(A)                  Supremum
+Σ (n=a to b)            Summation
+Π (n=a to b)            Product
+lim (x→0)               Limit
+sinh θ                  Hyperbolic Sine
+cosh θ                  Hyperbolic Cosine
+tanh θ                  Hyperbolic Tangent
+f'(x)                   1st Derivative (Lagrange)
+dy/dx                   1st Derivative (Leibniz)
+ẋ                       1st Derivative (Newton)
+f''(x)                  2nd Derivative (Lagrange)
+d²y/dx²                 2nd Derivative (Leibniz)
+ẍ                       2nd Derivative (Newton)
+Δx                      Change in
+δx                      Small change in
+δy/δx                   Ratio of small change
+∂y/∂x                   Partial Derivative
+∫ₐᵇ f dx                Integral
+∭ᵥ f dV                 Triple Integral
+∇f                      Gradient (Scalar Field)
+∇ · F                   Divergence (Vector Field)
+∇ × F                   Curl of Vector Field
+∇²f                     Laplacian (Div Grad)
+∮ f dz                  Contour Integral
+∯ᵥ f dV                 Closed Volume Integral
+sgn(x)                  Sign Function
+B(x, y)                 Beta Function
+Γ(n)                    Gamma Function
+ζ(s)                    Riemann Zeta
+ε, δ                    A very small number
+γ                       Euler-Mascheroni constant
+
+=== No. 5 | Statistics Notations ===
+Symbol                  Meaning
+P(A)                    Probability
+P(A|B)                  Probability Given (Conditional)
+E(X)                    Expected Value
+Q₁                      Lower Quartile
+Q₃                      Upper Quartile
+f                       Frequency (with histogram)
+N                       Population Size
+n                       Sample Size
+μ                       Population Mean
+x̄                       Sample Mean
+σₓ                      Population Std. Dev.
+Sₓ                      Sample Std. Dev.
+p                       Probability of Success
+q                       Probability of Failure
+max(A)                  Maximum
+min(A)                  Minimum
+Var(X)                  Variance
+x̃                       Median
+U(a,b)                  Uniform Distribution
+Bin(n,p)                Binomial Distribution
+Geo(p)                  Geometric Distribution
+N(μ,σ²)                 Normal Distribution
+Γ(α,β)                  Gamma Distribution
+exp(λ)                  Exponential Distribution
+χ²(x)                   Chi-Square Distribution
+corr(x,y)               Correlation
+r                       Sample Correlation
+Ω                       Sample Space
+H₀                      Null Hypothesis
+H₁                      Alternative Hypothesis
+α                       False Positive Rate (Type I error)
+β                       False Negative Rate (Type II error)
+β₁                      Regression Coefficient
+α                       Intercept Coefficient
+R²                      Coefficient of Determination
+ν                       Degree of Freedom
+
+=== No. 6 | Advanced Mathematics & Special Symbols ===
+Symbol                  Meaning
+z                       z-score
+π̂                       Population Proportion
+p̂                       Sample Proportion
+t                       t-value
+PMF                     Probability Mass Function
+PDF                     Probability Density Function
+i                       Imaginary Unit
+Z                       Imaginary Number
+z̄                       Complex Conjugate
+z*                      Complex Conjugate
+Re(z)                   Real Part
+Im(z)                   Imaginary Part
+H                       Quaternions
+O                       Octonions
+S                       Sedenions
+R(z)                    Real Part (of quaternion/octonion)
+Im(z)                   Imaginary Part
+Arg(z)                  Argument
+ABCD (overline)         Concatenate
+∞                       Infinity
+ℵ₀                      Aleph-Null
+w.r.t.                  With Respect to
+IFF                     If and only if
+f ∘ g                   Composite Function
+a ↦ b                   Maps to
+A ≅ B                   Isomorphic Graph
+S(n)                    Successor Function
+Pred(n)                 Predecessor Function
+A(a, b)                 Ackermann Function
+R²                      Euclidean Plane
+Kₙ                      Complete Graph
+Kₙ,ₘ                    Complete Bipartite Graph
+Cₙ                      Cycle
+Pₙ                      Path
+a ↑ b                   Knuth's Up-Arrow
+g₆₄                     Graham's Number
+
+=== No. 7 | Trigonometry, Linear Algebra & Matrix Notations ===
+Symbol                  Meaning
+sin θ                   Sine
+cos θ                   Cosine
+tan θ                   Tangent
+sec θ                   Secant
+csc θ                   Cosecant
+cot θ                   Cotangent
+sin⁻¹ θ                 Arcsine
+cos⁻¹ θ                 Arccosine
+tan⁻¹ θ                 Arctangent
+sec⁻¹ θ                 Arcsecant
+csc⁻¹ θ                 Arccosecant
+cot⁻¹ θ                 Arccotangent
+χ                       Euler Characteristic
+V                       Number of Vertices
+E                       Number of Edges
+F                       Number of Faces
+a | b                   Divides
+a ∤ b                   Does not divide
+( a b )                 Matrix          ( c d )
+I                       Identity Matrix
+det(M)                  Determinant
+| a b |                 Determinant     ( c d )
+adj(M)                  Adjugate Matrix
+M⁻¹                     Inverse Matrix
+A ⊗ B                   Kronecker Product
+Mᵀ                      Transpose
+rank(M)                 Rank (Kernel)
+dim(V)                  Dimension
+ker(M)                  Kernel (Null space)
+span(M)                 Span (Column space)
+δᵢⱼₖ                    Kronecker Delta
+x mod y                 Modulo
+π(x)                    Prime Counting Function
+φ(n)                    Euler's Totient Function
+a < b                   Precedes
+a > b                   Succeeds
