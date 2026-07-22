@@ -17,7 +17,8 @@ Key Equations
       energy fluctuations allowed by quantum uncertainty).
 
 2. Scalar Feynman propagator
-   D_F(x - y) = ∫ d^4k / (2π)^4 * [ i / (k^2 - m^2 + iε) ] * e^{-ik·(x - y)}
+   D_F(x - y) = ∫ d^4k / (2π)^4 * [ i / (k^2 - m^2 + iε) ] 
+    * e^{-ik·(x - y)}
 
    D_F(x - y) =
       ∫ d^4k / (2*pi)^4 *
