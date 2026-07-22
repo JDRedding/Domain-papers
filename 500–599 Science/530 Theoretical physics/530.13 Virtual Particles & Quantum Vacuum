@@ -1,0 +1,42 @@
+Virtual Particles & Quantum Vacuum 
+530.13 — Quantum field theory (QFT)
+Key Equations 
+
+1. Time–energy relation
+   ΔE Δt ≳ ħ/2
+
+2. Scalar Feynman propagator
+   D_F(x - y) = ∫ d^4k / (2π)^4 * [ i / (k^2 - m^2 + iε) ] * e^{-ik·(x - y)}
+
+3. Virtual exchange factor
+   1 / (q^2 - m^2 + iε)
+
+4. Vacuum two-point function
+   ⟨0 | T φ(x) φ(y) | 0⟩ = D_F(x - y) ≠ 0
+
+5. Zero-point energy
+   E_0 = (1/2) Σ_k ħ ω_k
+
+6. Field operator expansion
+   φ(x) = ∫ d^3k / [ (2π)^3 √(2ω_k) ] *
+          ( a_k e^{-ik·x} + a_k† e^{ik·x} )
+
+7. One-loop vacuum bubble
+   i ∫ d^4k / (2π)^4 * [ 1 / (k^2 - m^2 + iε) ]
+
+8. Feynman rules (internal lines)
+   Scalar:  i / (p^2 - m^2 + iε)
+   Fermion: i ( /p + m ) / (p^2 - m^2 + iε)
+
+9. Mass renormalization counterterm
+   m_0^2 = m_r^2 + δm^2
+   δm^2 ∝ ∫^Λ d^4k / (k^2 - m^2)
+
+10. Vacuum energy density (cutoff)
+    ρ_vac ≈ Λ^4 / (16π^2)
+
+11. Dyson series (S-matrix)
+    S = T exp( -i ∫ H_int(t) dt )
+
+12. Wick’s theorem
+    T(φ_1 ... φ_n) = :N(...): + all contractions
