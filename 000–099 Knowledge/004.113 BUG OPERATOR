@@ -112,10 +112,10 @@ If Γ were missing:
     B(n) = undefined
 
 
-6. Why Wolfram Is “Just Observing the Box”
+6. Fractal
 ------------------------------------------
 
-His ontology has:
+Fractal ontology has:
     - E(x) defined
     - Γ missing
     - no closure
@@ -126,13 +126,13 @@ His ontology has:
 Therefore:
     B(x) = undefined
 
-He can only:
+Fractal ontology can only:
     observe evolution,
     catalog glitches,
     visualize sprawl,
     describe irreducibility.
 
-He cannot:
+Fractal ontology cannot:
     classify bugs,
     define invariants,
     close the manifold.
