@@ -1,0 +1,81 @@
+GENERIC GAME RECORD TEMPLATE
+========================================================
+GAME_RECORD Γ
+========================================================
+
+GAME_ID: <unique identifier>
+GAME_NAME: <string>
+VERSION: <string>
+
+PLAYERS
+--------------------------------------------------------
+P := { p1, p2, ..., pn }
+
+For each player pi:
+    pi.ID        : <string>
+    pi.Name      : <string>
+    pi.Stats     : <key-value map>
+    pi.Actions   : <list of action entries>
+
+STATE_SPACE
+--------------------------------------------------------
+State s ∈ S:
+    s.ID         : <string>
+    s.Mode       : SEQ | SIM
+    s.Active     : { players }
+    s.Info       : <snapshot>
+    s.History    : <list of transition IDs>
+
+Initial State:
+    s0.ID        : <string>
+
+ACTION_LOG
+--------------------------------------------------------
+Action entry α_k:
+    α_k.ID       : <string>
+    α_k.State    : <state ID>
+    α_k.Profile  : { (pi : ai) }
+    α_k.Timestamp: <time>
+
+RANDOM_LOG
+--------------------------------------------------------
+Random event r_k:
+    r_k.ID       : <string>
+    r_k.State    : <state ID>
+    r_k.Dist     : <distribution>
+    r_k.Outcome  : <value>
+    r_k.Timestamp: <time>
+
+TRANSITION_LOG
+--------------------------------------------------------
+Transition τ_k:
+    τ_k.ID       : <string>
+    τ_k.From     : <state ID>
+    τ_k.Input    : <action ID or random ID>
+    τ_k.To       : <state ID>
+    τ_k.Timestamp: <time>
+
+TERMINAL_OUTCOME
+--------------------------------------------------------
+Terminal state s_T:
+    s_T.ID       : <string>
+    s_T.Info     : <snapshot>
+
+Outcome ω:
+    ω.Utilities  : { (pi : U(pi)) }
+    ω.Metadata   : <optional>
+
+EQUIVALENCE_METADATA (optional)
+--------------------------------------------------------
+Canonical_Form   : <normalized tree ID>
+Transformations  : <list of applied equivalence ops>
+Distance_Vector  : <metrics>
+
+========================================================
+REFERENCS
+📚 Formal Game Grammar and Equivalence
+Paul Riggins & David McPherson  
+2020 IEEE Conference on Games (CoG), Osaka, Japan, pp. 206–213  
+arXiv: arXiv:2101.00992 [cs.LO]
+DOI: 10.48550/arXiv.2101.00992
+Conference DOI: 10.1109/CoG47356.2020.9231594
