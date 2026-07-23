@@ -1,0 +1,239 @@
+PENNEY’S GAME : Pattern-Matching Coin Contest
+============================================================
+
+1. OVERVIEW
+------------------------------------------------------------
+Penney’s Game is a two-player contest played with a fair coin.
+Each player selects a 3-symbol sequence made of H (heads) and
+T (tails). The coin is flipped repeatedly until one sequence
+appears as a contiguous block. The player whose sequence
+appears first wins the round.
+
+2. COMPONENTS
+------------------------------------------------------------
+- Fair coin (H/T)
+- Two players: Player A and Player B
+- Each player chooses a 3-symbol pattern from {H, T}
+
+3. GAME SETUP
+------------------------------------------------------------
+Step 1:
+Player A chooses any 3-symbol sequence XYZ.
+
+Step 2:
+Player B chooses the counter-sequence ¬Y X Z
+        where ¬Y is the opposite of Y:
+            H → T
+            T → H
+
+A chooses first (public)
+B chooses second (public)
+→ B has structural advantage
+→ Non-transitive cycles appear
+→ Markov chain has biased absorption probabilities
+
+Example:
+    A chooses: HHT
+    B chooses: THH
+
+4. HOW TO PLAY
+------------------------------------------------------------
+1. Flip a fair coin repeatedly.
+2. Track the running sequence of flips.
+3. If the last 3 flips match Player A’s sequence, A wins.
+4. If the last 3 flips match Player B’s sequence, B wins.
+5. Only the FIRST appearance matters.
+
+5. NON-TRANSITIVITY
+------------------------------------------------------------
+Penney’s Game is non-transitive:
+
+    A beats B
+    B beats C
+    C beats A
+
+There is no universal "best" sequence. Advantage depends on
+the opponent’s choice.
+
+6. PLAYER B’S OPTIMAL STRATEGY
+------------------------------------------------------------
+Given A’s sequence: XYZ
+B should choose:   ¬Y X Z
+
+This guarantees:
+    P(B wins) ∈ [2/3 , 3/4]
+
+Examples:
+    A = HHH   → B = THH
+    A = HTT   → B = THT
+    A = THH   → B = HTH
+
+7. MARKOV CHAIN MODEL (ABSORBING)
+------------------------------------------------------------
+
+7.1 State Types
+
+Transient states:
+    Partial matches (suffixes) of either pattern.
+
+Absorbing states:
+    A = Player A’s full pattern appears
+    B = Player B’s full pattern appears
+
+7.2 Canonical Matrix Form
+
+P = [ Q  R ]
+    [ 0  I ]
+
+Where:
+    Q = transient → transient transitions
+    R = transient → absorbing transitions
+    I = identity matrix on absorbing states
+
+7.3 Fundamental Matrix
+
+N = (I - Q)^(-1)
+
+Interpretation:
+    N[i,j] = expected number of visits to transient state j
+             starting from transient state i
+             before absorption.
+
+7.4 Derived Quantities
+
+Absorption probabilities:   B = N * R
+Expected flips to finish:   t = N * 1_vector
+
+8. EXAMPLE: HHH vs THH
+------------------------------------------------------------
+
+8.1 States
+
+Transient:
+    S0 = ""
+    S1 = "H"
+    S2 = "HH"
+    S3 = "T"
+    S4 = "TH"
+
+Absorbing:
+    A = "HHH"
+    B = "THH"
+
+8.2 Transition Table
+
+State   Flip H →      Flip T →
+-----------------------------------------------
+S0        S1            S3
+S1        S2            S3
+S2        A             S3
+S3        S4            S3
+S4        B             S3
+A         A             A
+B         B             B
+
+8.3 Q Matrix (order: S0, S1, S2, S3, S4)
+Q =
+[ 0     1/2    0     1/2    0   ]
+[ 0      0    1/2    1/2    0   ]
+[ 0      0     0     1/2    0   ]
+[ 0      0     0     1/2   1/2  ]
+[ 0      0     0     1/2    0   ]
+
+8.4 R Matrix
+R =
+[ 0    0 ]
+[ 0    0 ]
+[ 1/2  0 ]
+[ 0    0 ]
+[ 0   1/2 ]
+
+9. WIN PROBABILITIES (GENERAL)
+------------------------------------------------------------
+Given A’s sequence XYZ
+and B’s optimal sequence ¬Y X Z:
+
+    P(B wins) ∈ [0.666..., 0.75]
+    P(A wins) ∈ [0.25, 0.333...]
+
+10. OPTIONAL VARIANTS
+------------------------------------------------------------
+
+LENGTH‑4 OR LENGTH‑n PATTERNS
+---
+Players choose patterns of length n.
+Effects:
+    - State space grows to O(n^2)
+    - Overlaps more complex
+    - Non-transitivity persists for n ≥ 3
+    - Counter-strategy generalizes
+Markov chain:
+    - More transient states
+    - Same absorbing structure
+    - N = (I - Q)^(-1) still applies
+
+BIASED COINS (p ≠ 0.5)
+---
+P(H) = p, P(T) = 1 - p
+Effects:
+    - Asymmetric transitions
+    - Some patterns become more likely
+    - Non-transitivity shifts
+Markov chain:
+    - Replace 1/2 with p or (1-p)
+    - Absorption probabilities change
+
+MULTI‑PLAYER CYCLIC TOURNAMENTS
+---
+More than two players choose patterns.
+Effects:
+    - Explicit dominance cycles
+    - Directed tournament graphs
+Markov chain:
+    - Multiple absorbing states
+    - Larger R matrix
+
+PATTERN‑AVOIDANCE GAMES
+---
+Players try to avoid their opponent’s pattern.
+Effects:
+    - Win condition inverted
+    - “Safe” patterns become strategic
+Markov chain:
+    - Absorbing states represent loss
+    - Expected time to failure is key
+
+SECRET GUESSES
+---
+A chooses secretly
+B chooses secretly
+→ No counter-strategy
+→ No prefix hijacking
+→ No non-transitivity
+→ Game becomes fair (P = 0.5 each)
+
+11. SUMMARY
+------------------------------------------------------------
+Penney’s Game is a non-transitive, pattern-matching contest
+with deep probabilistic structure. The second player always
+has an optimal counter-sequence that gives a significant
+advantage. Absorbing Markov chains provide exact calculations
+for win probabilities and expected game length.
+
+============================================================
+REFERENCE
+------------------------------------------------------------
+James Brofos
+"A Markov Chain Analysis of a Pattern Matching Coin Game"
+arXiv:1406.2212 (2014)
+https://arxiv.org/abs/1406.2212
+
+Key contributions:
+    - Full absorbing Markov chain construction
+    - Fundamental matrix analysis
+    - Expected flip counts
+    - Absorption probabilities
+    - Proof of optimal counter-strategy
+    - Demonstration of non-transitivity
+
+============================================================
