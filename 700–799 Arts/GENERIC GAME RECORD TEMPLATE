@@ -1,5 +1,46 @@
 GENERIC GAME RECORD TEMPLATE
 ========================================================
+# Summary
+
+This file is a **template and reference guide for 
+recording game data** in a standardized format. It 
+defines a structured schema (`GAME_RECORD Γ`) for 
+capturing complete information about any game, 
+including:
+
+- Players
+: ID, name, stats, and action history
+
+- State Space
+: Game states with mode (sequential or simultaneous), 
+  active players, and history
+
+- Action Log
+: Timestamped player moves tied to specific states
+
+- Random Log
+: Stochastic events (coin flips, dice rolls, etc.) 
+  with outcomes
+
+- Transition Log
+: State changes triggered by actions or random events
+
+- Terminal Outcome
+: Final state and payoffs (utilities) for each player
+
+- Equivalence Metadata (optional)
+: Canonical forms and transformations for comparing 
+  structurally similar games
+
+The template is designed to be **game-agnostic**—it works 
+for any game type (board games, card games, probability 
+games like Penney's Game, etc.).
+
+The file cites a 2020 IEEE conference paper on formal 
+game grammars and equivalence, indicating this schema 
+is grounded in formal game theory research for 
+normalizing and comparing game records systematically.
+
 GAME_RECORD Γ
 ========================================================
 
