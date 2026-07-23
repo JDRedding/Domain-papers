@@ -1,0 +1,116 @@
+GENERIC BOARD/CARD GAME RECORD TEMPLATE
+========================================================
+BOARD_OR_CARD_GAME_RECORD Γ
+========================================================
+
+GAME_ID: <unique identifier>
+GAME_NAME: <string>
+VERSION: <string>
+
+--------------------------------------------------------
+PLAYERS
+--------------------------------------------------------
+P := { p1, p2, ..., pn }
+
+For each player pi:
+    pi.ID            : <string>
+    pi.Name          : <string>
+    pi.Score         : <int or map>
+    pi.Hand          : <list of card IDs>        ; card games
+    pi.Pieces        : <list of piece IDs>       ; board games
+    pi.Resources     : <map>                     ; optional
+    pi.Status        : <active | eliminated | etc>
+
+--------------------------------------------------------
+COMPONENTS
+--------------------------------------------------------
+Deck D (if applicable):
+    D.ID             : <string>
+    D.Cards          : <list of card IDs>
+    D.Discard        : <list of card IDs>
+
+Board B (if applicable):
+    B.ID             : <string>
+    B.Layout         : <ASCII or symbolic>
+    B.Zones          : <list>
+    B.Pieces         : <map of piece → location>
+
+Tokens / Resources:
+    T := { t1, t2, ..., tk }
+    Each t:
+        t.ID         : <string>
+        t.Type       : <currency | victory | etc>
+        t.Owner      : <player ID or neutral>
+
+--------------------------------------------------------
+TURN_STRUCTURE
+--------------------------------------------------------
+Turn τ_k:
+    τ_k.ID           : <int>
+    τ_k.Player       : <player ID>
+    τ_k.Phase        : <DRAW | MAIN | ACTION | END>
+    τ_k.Timestamp    : <time>
+
+--------------------------------------------------------
+ACTION_LOG
+--------------------------------------------------------
+Action α_k:
+    α_k.ID           : <string>
+    α_k.Turn         : <turn ID>
+    α_k.Player       : <player ID>
+    α_k.Action       : <PLAY_CARD | MOVE_PIECE | DRAW | DISCARD | BUY | TRADE>
+    α_k.Targets      : <list of card IDs, piece IDs, or zones>
+    α_k.Result       : <state change>
+    α_k.Timestamp    : <time>
+
+--------------------------------------------------------
+RANDOM_LOG
+--------------------------------------------------------
+Random event r_k:
+    r_k.ID           : <string>
+    r_k.Source       : <shuffle | draw | dice | spinner>
+    r_k.Dist         : <distribution>
+    r_k.Outcome      : <value>
+    r_k.Timestamp    : <time>
+
+--------------------------------------------------------
+STATE_SNAPSHOTS
+--------------------------------------------------------
+Snapshot s_k:
+    s_k.ID           : <string>
+    s_k.Turn         : <turn ID>
+    s_k.Player_Hands : <map>
+    s_k.Board_State  : <map>
+    s_k.Resources    : <map>
+    s_k.Metadata     : <optional>
+
+--------------------------------------------------------
+SCORING
+--------------------------------------------------------
+Score entry σ_k:
+    σ_k.ID           : <string>
+    σ_k.Player       : <player ID>
+    σ_k.Change       : <int>
+    σ_k.Reason       : <objective | card effect | territory>
+    σ_k.Timestamp    : <time>
+
+--------------------------------------------------------
+TERMINAL_OUTCOME
+--------------------------------------------------------
+Terminal state s_T:
+    s_T.ID           : <string>
+    s_T.Turn         : <turn ID>
+
+Outcome ω:
+    ω.Winner         : <player ID or tie>
+    ω.Final_Scores   : <map>
+    ω.Metadata       : <optional>
+
+--------------------------------------------------------
+EQUIVALENCE_METADATA (optional)
+--------------------------------------------------------
+Canonical_Form       : <normalized game tree ID>
+Transformations      : <list of applied equivalence ops>
+Distance_Vector      : <metrics>
+
+========================================================
