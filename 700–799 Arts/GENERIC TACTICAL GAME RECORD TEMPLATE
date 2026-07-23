@@ -1,0 +1,125 @@
+GENERIC TACTICAL GAME RECORD TEMPLATE
+========================================================
+TACTICAL_COMBAT_RECORD Γ
+========================================================
+
+COMBAT_ID: <unique identifier>
+SCENARIO_NAME: <string>
+VERSION: <string>
+
+--------------------------------------------------------
+PARTIES
+--------------------------------------------------------
+P := { p1, p2, ..., pn }   ; players or factions
+
+For each party pi:
+    pi.ID          : <string>
+    pi.Name        : <string>
+    pi.Units       : { u1, u2, ..., uk }
+
+--------------------------------------------------------
+UNITS
+--------------------------------------------------------
+Unit u:
+    u.ID           : <string>
+    u.Name         : <string>
+    u.Type         : <class/archetype>
+    u.Stats:
+        HP         : <int>
+        ATK        : <int>
+        DEF        : <int>
+        SPD        : <int>
+        RNG        : <int>
+        SPECIAL    : <list>
+    u.Position     : <x,y>
+    u.Status       : { NORMAL | STUNNED | DOWN | DEAD }
+    u.Inventory    : <list>
+    u.Owner        : <party ID>
+
+--------------------------------------------------------
+BATTLEFIELD
+--------------------------------------------------------
+Grid G:
+    Dimensions     : <width x height>
+    Terrain_Map    : <ASCII or symbolic>
+    Obstacles      : <list>
+    Cover_Zones    : <list>
+    Special_Areas  : <list>
+
+--------------------------------------------------------
+INITIATIVE_TRACK
+--------------------------------------------------------
+Round r:
+    r.ID           : <int>
+    r.Order        : <ordered list of unit IDs>
+    r.Timestamp    : <time>
+
+--------------------------------------------------------
+ACTION_LOG
+--------------------------------------------------------
+Action entry α_k:
+    α_k.ID         : <string>
+    α_k.Round      : <round ID>
+    α_k.Actor      : <unit ID>
+    α_k.Action     : <MOVE | ATTACK | ABILITY | ITEM | DEFEND>
+    α_k.Targets    : <list of unit IDs or coordinates>
+    α_k.Result     : <hit/miss, damage, status effects>
+    α_k.Position   : <new position if moved>
+    α_k.Timestamp  : <time>
+
+--------------------------------------------------------
+RANDOM_LOG
+--------------------------------------------------------
+Random event r_k:
+    r_k.ID         : <string>
+    r_k.Source     : <attack roll, ability roll, crit check>
+    r_k.Dist       : <distribution>
+    r_k.Outcome    : <value>
+    r_k.Timestamp  : <time>
+
+--------------------------------------------------------
+DAMAGE_LOG
+--------------------------------------------------------
+Damage entry δ_k:
+    δ_k.ID         : <string>
+    δ_k.Actor      : <unit ID>
+    δ_k.Target     : <unit ID>
+    δ_k.Amount     : <int>
+    δ_k.Type       : <physical/magic/true/etc>
+    δ_k.Resulting_HP: <int>
+    δ_k.Status_Change: <optional>
+    δ_k.Timestamp  : <time>
+
+--------------------------------------------------------
+STATE_SNAPSHOTS
+--------------------------------------------------------
+Snapshot s_k:
+    s_k.ID         : <string>
+    s_k.Round      : <round ID>
+    s_k.Units      : <full unit list with stats>
+    s_k.Battlefield: <terrain + positions>
+    s_k.Metadata   : <optional>
+
+--------------------------------------------------------
+TERMINAL_OUTCOME
+--------------------------------------------------------
+Terminal state s_T:
+    s_T.ID         : <string>
+    s_T.Round      : <round ID>
+    s_T.Survivors  : <list of unit IDs>
+    s_T.Defeated   : <list of unit IDs>
+
+Outcome ω:
+    ω.Winner       : <party ID>
+    ω.Loot         : <optional>
+    ω.XP           : <optional>
+    ω.Metadata     : <optional>
+
+--------------------------------------------------------
+EQUIVALENCE_METADATA (optional)
+--------------------------------------------------------
+Canonical_Form     : <normalized combat tree ID>
+Transformations    : <list of applied equivalence ops>
+Distance_Vector    : <metrics>
+
+========================================================
