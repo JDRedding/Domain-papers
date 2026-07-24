@@ -1,6 +1,7 @@
 𝑅𝔅S : A SID–PED–Q Positional Subsystem
 Vector-Graph Model for RDG-Compatible Number Chains
 ---
+510.5 — Numerical Systems, Number Theory (Computational / Structural)
 Geometry → Metric Geometry → Graphs & Networks
 Differential Equations / Dynamical Systems
 Number Theory / Numeral Systems
