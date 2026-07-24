@@ -273,3 +273,19 @@ x mod y                 Modulo
 φ(n)                    Euler's Totient Function
 a < b                   Precedes
 a > b                   Succeeds
+
+=== No. 8 | Circle‑Family Operators & Special Composition Symbols ===
+Symbol	Meaning
+∘	                      Function composition: (𝑓∘𝑔)(𝑥)=𝑓(𝑔(𝑥))
+∘̸	                      Not composable / composition not defined
+⊙	                    Hadamard (elementwise) product of matrices/vectors
+⨀	                    Symmetric product (commutative bilinear operator)
+⊗	                    Tensor (Kronecker) product — already in your list but belongs here structurally
+⨂	                    Large tensor product (category theory / multilinear algebra)
+⊕	                    Direct sum (vector spaces, modules, representations)
+⨁	                    Large direct sum (indexed families)
+⊘	                    Circle‑slash: division‑like operator in abstract algebra
+⊚	                    Double composition / special morphism composition
+⊛	                    Convolution operator (signal processing, probability)
+⊗̸	                    Tensor product not defined
+⊙̸	                    Hadamard product not defined
