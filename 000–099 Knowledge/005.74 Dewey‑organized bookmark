@@ -64,6 +64,13 @@ collection according to Dewey Decimal logic.
 🔢 Custom Dewey Number for a Specific Bookmark File Type
 Here are precise assignments for different bookmark file formats:
 
+File Type	Dewey Number	Guided Link
+GitHub data file (MD, JSON, YAML, HTML)	005.74	005.74 Data files
+GitHub code file	005.1–005.3	005.13 Programming languages
+GitHub documentation about a subject	Subject‑based	Classify_by_subject
+GitHub database file (SQLite)	005.75	005.75 Databases
+GitHub schema/standard file	005.26	005.26 Standards
+
 Browser bookmark HTML file
 005.74 — Data files
 005.26 — Data interchange standards (HTML export format)
