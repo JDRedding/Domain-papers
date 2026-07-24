@@ -2,7 +2,7 @@ The closure test
 501 — Philosophy and theory of science
 --------------------------------------------------
 A framework F with state space S and evolution/ 
-generation map  Γ: S → S is realistically closed 
+generation map Γ: S → S is realistically closed 
 if and only if the Closure, Completeness, Causality,
 Consistency conditions simultaneously hold.
 
