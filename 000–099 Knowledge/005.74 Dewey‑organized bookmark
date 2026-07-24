@@ -1,0 +1,116 @@
+005.74 — Data files and databases
+
+This bookmark file is a a full Dewey‑organized bookmark hierarchy by 
+treating each bookmark as an item classified under the subject it 
+points to, while the file itself lives in the 005s.
+
+📚 Dewey‑Organized Hierarchy for Bookmark Collections
+This is a structural template can use to organize any digital bookmark 
+collection according to Dewey Decimal logic.
+
+000 – Generalities
+000 General reference — encyclopedias, general knowledge hubs
+004–006 Computer science — programming, AI, operating systems
+007–009 Miscellany — unusual topics, trivia
+
+100 – Philosophy & Psychology
+110 Metaphysics
+120 Epistemology
+150 Psychology
+
+200 – Religion
+210 Natural theology
+
+230 Christianity
+
+290 Other religions
+
+300 – Social Sciences
+320 Political science
+330 Economics
+370 Education
+
+400 – Language
+410 Linguistics
+420 English language
+490 Other languages
+
+500 – Science
+510 Mathematics
+520 Astronomy
+540 Chemistry
+
+600 – Technology
+610 Medicine
+620 Engineering
+650 Management
+
+700 – Arts & Recreation
+730 Sculpture
+740 Drawing & design
+790 Games & sports
+
+800 – Literature
+810 American literature
+820 English literature
+890 Other literatures
+
+900 – History & Geography
+910 Geography & travel
+
+930 Ancient history
+970 North American history
+
+🔢 Custom Dewey Number for a Specific Bookmark File Type
+Here are precise assignments for different bookmark file formats:
+
+Browser bookmark HTML file
+005.74 — Data files
+005.26 — Data interchange standards (HTML export format)
+
+Browser bookmark JSON file
+005.74 — Data files
+005.72 — Data structures (JSON)
+
+Bookmark database (SQLite)
+005.75 — Databases
+
+Bookmark sync file (e.g., Firefox Sync metadata)
+005.73 — Data encryption & security
+005.74 — Data files
+
+Bookmark manager application (e.g., Raindrop, Pinboard)
+005.43 — Software utilities
+
+🗂 Mapping of Digital File Types to Dewey Classes
+
+Documents
+PDF → 005.74 (data files)
+DOCX → 005.74
+TXT → 005.74
+
+Images
+JPEG → 006.6 (digital imaging)
+PNG → 006.6
+SVG → 006.6
+
+Audio
+MP3 → 006.7 (digital audio)
+WAV → 006.7
+
+Video
+MP4 → 006.7
+MKV → 006.7
+
+Data
+CSV → 005.74
+JSON → 005.72 / 005.74
+XML → 005.72 / 005.26
+
+Executables
+EXE → 005.43
+APP → 005.43
+
+Archives
+ZIP → 005.74
+TAR → 005.74
