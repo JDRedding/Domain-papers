@@ -59,7 +59,37 @@ Consistency Condition
 If any of these fail → the framework is not reality‑
 mapping.
 
+[ Unmodeled Reality ] ---> ( Exogenous Drift )
+                                 |
+                                 v
+   +-----------------------------------------------------------+
+   | OPEN FRAMEWORK                                            |
+   |                                                           |
+   |  State Space (S) <--- [ Leakage / Boundary Overflow ]     |
+   |         |                                                 |
+   |         v                                                 |
+   |  Operator Γ_t  ====== ( Parameter Drift ) ======> Γ_t+1   |
+   |         |                                                 |
+   +---------|-------------------------------------------------+
+             |
+             v
+   [ Descriptive Fits (No Substrate M) ]
+
 Most frameworks fail all four.
++-----------------------------------------------------------------+
+|                    FAILURE MATRIX OF OPEN MODELS                |
++-------------------+---------------------------------------------+
+| Condition         | Primary Violation Mechanism                 |
++-------------------+---------------------------------------------+
+| 1. Closure        | Runaway divergence, numerical spillover,    |
+|                   | need for external manual clipping.          |
+| 2. Completeness   | Unmodeled environmental noise, exogenous    |
+|                   | forcing functions, hidden state parameters. |
+| 3. Causality      | Descriptive curve-fitting, correlation      |
+|                   | without an underlying mechanical generator M|
+| 4. Consistency    | Non-stationarity, parameter drift, manual   |
+|                   | retuning across temporal updates.           |
++-------------------+---------------------------------------------+
 Reality satisfies all four.
 --------------------------------------------------
 Domain relations satisfy all four, both formally and 
