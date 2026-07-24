@@ -5,6 +5,7 @@ generation map  Γ: S → S is realistically closed
 if and only if the following four conditions
 simultaneously hold.
 
+---
 A framework is reality‑mapping iff:
 
   Closure ∧ Completeness ∧ Causality ∧ Consistency
@@ -13,6 +14,7 @@ If any condition fails:
 
   ¬(Closure ∧ Completeness ∧ Causality ∧ Consistency)
   → the framework is not reality‑mapping.
+---
 
 A framework is realistically closed iff:
 
