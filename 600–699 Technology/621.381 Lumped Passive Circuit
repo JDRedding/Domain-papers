@@ -1,5 +1,7 @@
 LUMPED-ELEMENT MODEL (0-DIMENSIONAL)
+621.381 — Electric Circuits (General Circuit Theory)
 ====================================
+
 Assumptions:
 • Point objects (no internal fields)
 • Single V across, single I through
