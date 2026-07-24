@@ -1,5 +1,20 @@
 How RDG appplies to religion structurally (SID/PED triads)
 -------------------------------------
+This file documents how RDG (Relational Dynamical Geometry)
+applies to religion as a structural system using two 
+complementary frameworks.
+
+RDG provides a complete relational geometry of belief 
+systems by modeling how religious structures evolve, how 
+power and authority operate within them, and how doctrinal
+systems change under pressure or new evidence.
+
+The framework essentially treats religion as a dynamical 
+system with measurable relational properties, allowing for 
+formal analysis of religious institutional change and 
+belief evolution.
+-------------------------------------
+
 RDG is generator-based and closure-first, meaning:
 
   Belief systems can be treated as closure operators on propositions.
