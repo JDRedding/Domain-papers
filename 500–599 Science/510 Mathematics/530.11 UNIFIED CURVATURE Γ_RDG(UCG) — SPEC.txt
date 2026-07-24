@@ -1,4 +1,5 @@
 UNIFIED CURVATURE GEOMETRY Γ_RDG(UCG) — SPECIFICATION DOCUMENT
+530.11 — Theoretical Physics (Field Theory, GR, Gauge Theory, Unification)
 ============================================================
 Version: 0.1 (Dual Continuum-Shadow Specification)
 Author: JD Redding
