@@ -1,6 +1,8 @@
                         CONVERGENTALS                          
                  (Fractal-Origin Convergent Form)              
 +---------------------------------------------------------------+
+510.84 — Advanced Mathematical Structures
+
 Summary
 
 This document defines Convergentals, a novel class of geometry-
