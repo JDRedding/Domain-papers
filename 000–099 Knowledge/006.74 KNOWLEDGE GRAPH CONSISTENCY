@@ -1,6 +1,7 @@
 KNOWLEDGE GRAPH CONSISTENCY
 Avoiding Contradictions in Large Graphs
 ================================================================================
+006.74 — Data mining / Knowledge representation / Knowledge graphs
 
 Knowledge graphs (KGs) encode entities, relations, and facts as nodes + edges
 (or higher-order structures). At small scale they are easy to keep coherent.
