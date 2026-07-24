@@ -1,5 +1,6 @@
 SPECIES–AGNOSTIC MASS (MOLE FRAMEWORK) : SAM(MF)
 ================================================
+530.1 — Theoretical Physics / Physical Quantities
 
 Core idea: Define mass scaling via relational operators instead of 
 fixed constants. The invariant mole_[unit]^X · m_μ^X = M_[unit] 
