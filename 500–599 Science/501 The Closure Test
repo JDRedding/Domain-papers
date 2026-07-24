@@ -3,8 +3,8 @@ The closure test
 --------------------------------------------------
 A framework F with state space S and evolution/ 
 generation map  Γ: S → S is realistically closed 
-if and only if the following four conditions
-simultaneously hold.
+if and only if the Closure, Completeness, Causality,
+Consistency conditions simultaneously hold.
 
 ---
 A framework is reality‑mapping iff:
