@@ -1,9 +1,10 @@
 The closure test
+--------------------------------------------------
 A framework is realistically closed iff:
 
 Closure Condition  
 
-  ∀𝑋∈State, Γ(𝑋)∈State
+  ∀𝑋 ∈ State, Γ(𝑋) ∈ State
 
 Completeness Condition
 
@@ -16,7 +17,6 @@ Causality Condition
 Consistency Condition
 
   Γ is stable across time
-
 
 If any of these fail → the framework is not reality‑mapping.
 Most frameworks fail all four.
