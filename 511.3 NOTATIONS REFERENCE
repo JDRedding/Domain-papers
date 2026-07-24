@@ -1,6 +1,76 @@
 MATHEMATICAL NOTATIONS REFERENCE  
 511.3 — Mathematical Symbols & Notation
 
+=== No. 0 | Major Mathematical Notations ===
+These are symbols that appear frequently in modern mathematics but are missing from your reference.
+
+A. Algebra & General Operators
+∗ — Generic binary operation
+⋅ — Scalar multiplication
+⨳ — Semidirect product
+≜ — “Defined as”
+≔ — Definition assignment
+≟ — Equality to be determined
+∝̸ — Not proportional
+
+B. Set Theory & Logic
+⊈ — Not a subset
+⊉ — Not a superset
+⊻ — XOR
+⊼ — NAND
+⊽ — NOR
+↦ — Maps to (you have it but not in set theory section)
+↣ — Injective function
+↠ — Surjective function
+↪ — Embedding
+↩ — Left hook (inclusion)
+
+C. Calculus & Analysis
+∂² — Second partial derivative
+∇· — Divergence (you have it but not the dot form)
+∇× — Curl (same note)
+dμ — Measure element
+𝒟 — Function space / distribution space
+⨍ — Mean integral
+
+D. Probability & Statistics
+KL(p‖q) — Kullback–Leibler divergence
+H(X) — Shannon entropy
+I(X;Y) — Mutual information
+Cov(X,Y) — Covariance
+F(x) — Cumulative distribution function
+f_X(x) — PDF of X
+
+E. Linear Algebra & Tensor Calculus
+∥A∥ — Matrix norm
+⟨A,B⟩ — Frobenius inner product
+εᵢⱼₖ — Levi‑Civita symbol
+∂ᵢ — Indexed partial derivative
+A⁺ — Moore–Penrose pseudoinverse
+diag(a₁,…,aₙ) — Diagonal matrix operator
+
+F. Number Theory
+≡ (mod n) — Congruence modulo
+ordₙ(a) — Multiplicative order
+vₚ(n) — p‑adic valuation
+σ(n) — Sum of divisors
+ω(n) — Number of distinct prime factors
+
+G. Geometry & Topology
+∂M — Boundary of a manifold
+int(A) — Interior
+cl(A) — Closure
+conv(A) — Convex hull
+diam(A) — Diameter
+
+H. Category Theory
+idₓ — Identity morphism
+Hom(A,B) — Hom‑set
+End(A) — Endomorphisms
+Aut(A) — Automorphisms
+⊗ᶜ — Monoidal tensor
+⇒ — Natural transformation
+
 === No. 1 | Common Mathematical Notations ===
 Symbol          Meaning
 +               Plus
@@ -275,7 +345,7 @@ a < b                   Precedes
 a > b                   Succeeds
 
 === No. 8 | Circle‑Family Operators & Special Composition Symbols ===
-Symbol	Meaning
+Symbol	                Meaning
 ∘	                      Function composition: (𝑓∘𝑔)(𝑥)=𝑓(𝑔(𝑥))
 ∘̸	                      Not composable / composition not defined
 ⊙	                    Hadamard (elementwise) product of matrices/vectors
