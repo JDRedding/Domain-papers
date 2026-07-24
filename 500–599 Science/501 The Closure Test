@@ -6,6 +6,21 @@ generation map  Γ: S → S is realistically closed
 if and only if the Closure, Completeness, Causality,
 Consistency conditions simultaneously hold.
 
+                  +-----------------------+
+                  |    REALISTIC CLOSURE   |
+                  +-----------+-----------+
+                              |
+        +---------------------+---------------------+
+        |                     |                     |
+  [ CLOSURE ]          [ COMPLETENESS ]        [ CAUSALITY ]
+  Γ(S) ⊆ S             Causes(Γ) ⊆ S           M ⇝ Γ
+  No Out-of-Bounds     Zero Exogenous          Physical Substrate
+  Leakage              Hidden Variables        Grounding
+                               |
+                        [ CONSISTENCY ]
+                        Γ_t = Γ_(t+1)
+                        Stationary Laws
+
 ---
 A framework is reality‑mapping iff:
 
