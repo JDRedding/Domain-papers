@@ -1,6 +1,7 @@
               OPERATOR NAMING GRAMMAR
                  (Redding Notation)
 ============================================================
+510.18 — Mathematical Logic, Symbolic Systems, and Formal Languages
 
 This document defines a general naming scheme for operators
 of the form:
