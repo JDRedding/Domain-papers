@@ -1,7 +1,7 @@
 The closure test
 --------------------------------------------------
 A framework F with state space S and evolution/ 
-generation map  Γ: S -> S is realistically closed 
+generation map  Γ: S → S is realistically closed 
 if and only if the following four conditions
 simultaneously hold.
 
@@ -21,11 +21,13 @@ Causality Condition
 
   Γ corresponds to a real causal mechanism
   ∃M such that M generates Γ
+  M ⇝ Γ
 
 Consistency Condition
 
   Γ is stable across time
   Γ_𝑡 = Γ_(𝑡+1) = Γ
+  ∀t, Γt​=Γ
 
 If any of these fail → the framework is not reality‑mapping.
 Most frameworks fail all four.
