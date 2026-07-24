@@ -1,4 +1,5 @@
 RELATIONAL–HOPF (RDG_Hopf) BUNDLE (FULL SPECIFICATION)
+514.83 — Topology (Fiber Bundles, Fibrations, Linking)
 =====================================================================
 The classical Hopf fibration hides structure (normal bundles, tangent 
 bundles, orthogonality, smoothness, metric geometry). The 
