@@ -1,6 +1,8 @@
 GRAHAM SEQUENCE (STRUCTURE)
 ============================================================
 511.33 — Large numbers / combinatorics-related number theory
+This file documents Graham's Number and the recursive sequence that defines it.
+
 Definition:
     g(1)   = 3 ↑↑↑↑ 3
     g(n+1) = 3 ↑^(g(n)) 3
@@ -22,6 +24,29 @@ SID for the Graham recursion
     𝑆 = 𝑔(𝑛)→𝑔(𝑛+1)
     𝐼 = 𝑔(𝑛)→↑𝑔(𝑛)
     𝐷 = 𝑔(𝑛)→↑𝑔(𝑛)𝑔(𝑛+1)
+
+Key Points:
+g(1) = 3 ↑↑↑↑ 3 (3 tetrated with 4 arrows)
+g(n+1) = 3 ↑^(g(n)) 3 (each step uses the previous result 
+as the arrow count)
+g(64) = Graham's Number
+
+Core Concept: The sequence uses a hyperoperator ladder 
+where each operator is more powerful than the last:
+
+    ↑^1 = exponentiation (a^b)
+    ↑^2 = tetration (power towers)
+    ↑^3 = pentation (hyper-tetration)
+    ↑^4 = hexation (hyper-pentation)
+    ↑^k = k-arrow hyperoperation
+
+The Recursion: Each term defines the number of arrows for 
+the next term. This creates incomprehensibly fast growth—g(1) 
+is already massive, and g(2) uses g(1) as its arrow count, 
+making it vastly larger. By g(64), the number is beyond 
+practical computation.
+
+Graham's Number Fact: The last 12 digits are known: ...7262464195387
 
 ------------------------------------------------------------
                  EXPANSION STRUCTURE (NOT VALUES)
