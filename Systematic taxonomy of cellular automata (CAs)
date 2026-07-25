@@ -296,23 +296,32 @@ Phenotype objects = dynamical behaviors
 
 Morphisms = rule perturbations → dynamical transitions
 
+Constraints:
+
+	fixed alphabet
+	fixed neighborhood
+	no rule‑table degeneracy
+	no trivial absorbing states
+
+Monotonicity is a good heuristic, but not a theorem.
+
 1. Increasing genotype richness → increasing dynamical complexity
 
-Simple rule tables → fixed points
-λ & mean‑field → periodic orbits
-Z‑reverse → multi‑basin attractors
-μ‑sensitivity → symbolic/topological dynamics
-obstruction → chaotic sensitivity
-Kolmogorov complexity → full chaotic expansivity & transitivity
+	Simple rule tables → fixed points
+	λ & mean‑field → periodic orbits
+	Z‑reverse → multi‑basin attractors
+	μ‑sensitivity → symbolic/topological dynamics
+	obstruction → chaotic sensitivity
+	Kolmogorov complexity → full chaotic expansivity & transitivity
 
 2. The functor is monotone
-More complex genotype descriptors never map to simpler phenotypes.
+	More complex genotype descriptors never map to simpler phenotypes.
 
 3. The functor is many‑to‑one
-Different genotype descriptors can map to the same phenotype class.
+	Different genotype descriptors can map to the same phenotype class.
 
 4. The functor is not invertible
-Phenotype does not uniquely determine genotype.
+	Phenotype does not uniquely determine genotype.
 
 4. The Five CA Families (the core taxonomy)
 -----------------------------------------------------------------------------------------
