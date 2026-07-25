@@ -258,21 +258,21 @@ TREE AS A SEQUENCE OF OPERATOR INDICES
 
 ============================================================
 ============================================================
-                 RDG-STYLE MAPPING OF g(n) 
+                 RDG-STYLE MAPPING OF g(n)
 ============================================================
 
 We treat each g(n) as:
 
-    - SID: "operator index"
-    - PED: "hyperoperation on base 3"
-    - RDG: "recursion on operator index"
+    SID : operator index (structure slice)
+    PED : hyperoperation on base 3 (engine field slice)
+    RDG : recursion on operator index (relational substrate)
 
 ------------------------------------------------------------
 BASIC OBJECTS
 ------------------------------------------------------------
 
 Let:
-    H(k) := (OP k) = "k-arrow operator on base 3"
+    H(k) = OP_k = "k-arrow operator on base 3"
 
 Concrete:
     H(k)(3,3) = 3 ↑^k 3
@@ -285,9 +285,9 @@ Then:
 RDG VIEW: MODES
 ------------------------------------------------------------
 
-Mode 1 (SID: index space):
+Mode 1 — SID (index space):
     Objects: k ∈ ℕ
-    Role: index of hyperoperator
+    Role: operator index
     Examples:
         k = 4
         k = g(1)
@@ -295,16 +295,16 @@ Mode 1 (SID: index space):
         ...
         k = g(63)
 
-Mode 2 (PED: operator action):
+Mode 2 — PED (operator action):
     Objects: H(k)
-    Role: map (a,b) ↦ a ↑^k b
+    Role: (a,b) ↦ a ↑^k b
     Examples:
-        H(4)(3,3) = g(1)
-        H(g(1))(3,3) = g(2)
-        H(g(2))(3,3) = g(3)
+        H(4)(3,3)     = g(1)
+        H(g(1))(3,3)  = g(2)
+        H(g(2))(3,3)  = g(3)
 
-Mode 3 (RDG: recursion structure):
-    Objects: sequence (g(n))_n
+Mode 3 — RDG (recursion structure):
+    Objects: sequence { g(n) }
     Rule:
         g(1)   = H(4)(3,3)
         g(n+1) = H(g(n))(3,3)
@@ -313,24 +313,23 @@ Mode 3 (RDG: recursion structure):
 RDG-STYLE SEQUENCE SUMMARY
 ------------------------------------------------------------
 
-SID layer:
+SID layer (indices):
     k_1   = 4
     k_2   = g(1)
     k_3   = g(2)
     ...
     k_64  = g(63)
 
-PED layer:
+PED layer (operator action):
     g(1)   = H(k_1)(3,3)
     g(2)   = H(k_2)(3,3)
     g(3)   = H(k_3)(3,3)
     ...
     g(64)  = H(k_64)(3,3)
 
-RDG layer:
-    Recursion:
-        g(1)   = H(4)(3,3)
-        g(n+1) = H(g(n))(3,3)
+RDG layer (recursion):
+    g(1)   = H(4)(3,3)
+    g(n+1) = H(g(n))(3,3)
 
 ------------------------------------------------------------
 GRAHAM'S NUMBER IN RDG TERMS
@@ -345,9 +344,10 @@ Where:
     g(1)  = H(4)(3,3)
 
 So:
-    - SID: indices explode via recursion.
-    - PED: each step applies a new, stronger operator.
-    - RDG: the sequence is a recursion on operator strength.
+    SID : indices escalate via recursion
+    PED : each step applies a stronger operator
+    RDG : recursion on operator strength
 
 ============================================================
+
 
