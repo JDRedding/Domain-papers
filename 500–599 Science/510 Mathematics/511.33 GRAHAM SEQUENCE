@@ -9,6 +9,20 @@ Meaning:
     ↑^k    = k-arrow hyperoperator
     g(64)  = Graham's Number
 
+SID(G) = ( S(G), I(G), D(G) )
+
+Where:
+
+    S(G) = invariant structural edges
+    I(G) = operational / interaction edges
+    D(G) = dynamic / inferred transitions
+
+SID for the Graham recursion
+
+    𝑆 = 𝑔(𝑛)→𝑔(𝑛+1)
+    𝐼 = 𝑔(𝑛)→↑𝑔(𝑛)
+    𝐷 = 𝑔(𝑛)→↑𝑔(𝑛)𝑔(𝑛+1)
+
 ------------------------------------------------------------
                  EXPANSION STRUCTURE (NOT VALUES)
 ------------------------------------------------------------
