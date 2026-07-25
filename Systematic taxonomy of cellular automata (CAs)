@@ -100,6 +100,8 @@ This induces a global update rule Φ on the configuration space.
 | [Non-uniform CA]                      | removes rule uniformity | spatial/temporal rule         |
 | (ν-CA)                                | across space/time       | distributions; hybrid rules   |
 +-------------------------------------------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------+
 | Family                                | Phenotypic Behavior     | Typical Applications          |
 |---------------------------------------+-------------------------+-------------------------------|
 | [Asynchronous CA]                     | desynchronized waves;   | biology; distributed systems; |
