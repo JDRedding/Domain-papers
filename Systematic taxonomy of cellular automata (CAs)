@@ -542,8 +542,53 @@ Cross-family equivalences
     ν-CA ↔ MSCA: heterogeneous rules emulate expanded alphabets
 -----------------------------------------------------------------------------------------
 
+6. Universality Overview
+-----------------------------------------------------------------------------------------
+| Family | Universality status | Canonical examples | Notes
 
-6. Applications Overview
+| Classical CA (baseline) 
+| Well‑established universal CAs 
+| Rule 110, Game of Life, various 1D/2D CAs 
+| Universality proven via simulation of Turing machines or tag systems. 
+
+| Asynchronous CA (ACA) 
+| Universality possible but more delicate 
+| Asynchronous variants of Life and other CAs 
+| Asynchrony can preserve universality if update schemes are constrained; too much 
+	randomness can destroy it. 
+
+| Stochastic CA (SCA) 
+| Computational universality vs probabilistic universality 
+| Probabilistic CAs, majority‑vote, Ising‑like models 
+| Often studied via ergodic/Markov properties; universality framed in terms of 
+	probabilistic computation rather than exact simulation. 
+
+| Multi‑state CA (MSCA) 
+| Universality typically easier to achieve 
+| Multi‑state generalizations of Life, lattice gas automata | Larger alphabets 
+	allow simpler encodings of Turing machines and circuits. 
+
+| Extended‑neighborhood CA (ENCA) 
+| Universality very common 
+| Higher‑radius 1D CAs, 2D CAs with extended stencils 
+| Extended neighbourhoods can simulate multi‑state and non‑uniform behavior, 
+	making universality construction straightforward. 
+
+| Non‑uniform CA (ν‑CA)*
+| Universality almost trivial to encode 
+| Space‑varying rule CAs, programmable media 
+| By varying rules in space/time, one can “hard‑wire” computation into the 
+	medium; universality is usually not the hard part but control is. 
+
+Classical CA: universality is nontrivial and celebrated (Rule 110, Life).
+
+MSCA / ENCA / ν‑CA: universality is structurally “cheap”—extra states, larger 
+neighbourhoods, or non‑uniform rules make encoding computation easier.
+
+ACA / SCA: universality depends on how much randomness/desynchrony you allow; too 
+much destroys reliable computation, moderate amounts can still simulate Turing machines.
+
+7. Applications Overview
 -----------------------------------------------------------------------------------------
 CA applications across domains:
 
