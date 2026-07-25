@@ -1,76 +1,6 @@
 MATHEMATICAL NOTATIONS REFERENCE  
 511.3 — Mathematical Symbols & Notation
 
-=== No. 0 | Major Mathematical Notations ===
-These are symbols that appear frequently in modern mathematics but are missing from your reference.
-
-A. Algebra & General Operators
-∗ — Generic binary operation
-⋅ — Scalar multiplication
-⨳ — Semidirect product
-≜ — “Defined as”
-≔ — Definition assignment
-≟ — Equality to be determined
-∝̸ — Not proportional
-
-B. Set Theory & Logic
-⊈ — Not a subset
-⊉ — Not a superset
-⊻ — XOR
-⊼ — NAND
-⊽ — NOR
-↦ — Maps to (you have it but not in set theory section)
-↣ — Injective function
-↠ — Surjective function
-↪ — Embedding
-↩ — Left hook (inclusion)
-
-C. Calculus & Analysis
-∂² — Second partial derivative
-∇· — Divergence (you have it but not the dot form)
-∇× — Curl (same note)
-dμ — Measure element
-𝒟 — Function space / distribution space
-⨍ — Mean integral
-
-D. Probability & Statistics
-KL(p‖q) — Kullback–Leibler divergence
-H(X) — Shannon entropy
-I(X;Y) — Mutual information
-Cov(X,Y) — Covariance
-F(x) — Cumulative distribution function
-f_X(x) — PDF of X
-
-E. Linear Algebra & Tensor Calculus
-∥A∥ — Matrix norm
-⟨A,B⟩ — Frobenius inner product
-εᵢⱼₖ — Levi‑Civita symbol
-∂ᵢ — Indexed partial derivative
-A⁺ — Moore–Penrose pseudoinverse
-diag(a₁,…,aₙ) — Diagonal matrix operator
-
-F. Number Theory
-≡ (mod n) — Congruence modulo
-ordₙ(a) — Multiplicative order
-vₚ(n) — p‑adic valuation
-σ(n) — Sum of divisors
-ω(n) — Number of distinct prime factors
-
-G. Geometry & Topology
-∂M — Boundary of a manifold
-int(A) — Interior
-cl(A) — Closure
-conv(A) — Convex hull
-diam(A) — Diameter
-
-H. Category Theory
-idₓ — Identity morphism
-Hom(A,B) — Hom‑set
-End(A) — Endomorphisms
-Aut(A) — Automorphisms
-⊗ᶜ — Monoidal tensor
-⇒ — Natural transformation
-
 === No. 1 | Common Mathematical Notations ===
 Symbol          Meaning
 +               Plus
@@ -109,6 +39,13 @@ Cᵣⁿ             Combination
 ⌊a⌋             Floor function
 ⌈a⌉             Ceiling function
 {a}             Decimal part (fractional part)
+∗               Generic binary operation
+⋅               Scalar multiplication
+⨳              Semidirect product
+≜              “Defined as”
+≔              Definition assignment
+≟              Equality to be determined
+∝̸               Not proportional
 
 === No. 2 | Set Theory & Logic Symbols ===
 Symbol          Meaning
@@ -148,6 +85,29 @@ A ⊬ B           Does not yield (does not prove)
 ∵               Because
 ∀               For all
 □               End of Proof
+⊈               Not a subset
+⊉               Not a superset
+⊻               XOR
+⊼               NAND
+⊽               NOR
+↦              Maps to (you have it but not in set theory section)
+↣               Injective function
+↠               Surjective function
+↪               Embedding
+↩               Left hook (inclusion)
+⊨                Semantic entailment
+⊭                Not semantically entailed
+≺≺               Elementary substructure
+⊩                Forcing (set theory)
+λx. f(x)          Lambda abstraction
+∀x∈A             Bounded quantifier
+∃x!               Unique existence (you have ∃! but not the bound form)
+idₓ               Identity morphism
+Hom(A,B)          Hom‑set
+End(A)             Endomorphisms
+Aut(A)             Automorphisms
+⊗ᶜ              Monoidal tensor
+⇒                Natural transformation
 
 === No. 3 | Geometry & Measurement Symbols ===
 Symbol                  Meaning
@@ -187,6 +147,27 @@ u × v                   Cross Product
 u ∧ v                   Wedge Product
 <u, v>                  Inner Product
 u ⊗ v                   Outer Product
+∂M                      Boundary of a manifold
+int(A)                  Interior
+cl(A)                   Closure
+conv(A)                 Convex hull
+diam(A)                 Diameter
+‖f‖ₚ                    Lᵖ norm
+⟨f,g⟩                   Inner product in function space
+supp(f)                Support of a function
+ess sup                Essential supremum
+χ_A                    Indicator function
+δ(x)                   Dirac delta
+ℒ{f}                   Laplace transform
+ℱ{f}                   Fourier transform
+∇ₓY                    Covariant derivative
+Γᵢⱼᵏ                   Christoffel symbols
+gᵢⱼ                    Metric tensor
+Rᵢⱼₖˡ                  Riemann curvature tensor
+Ric                   Ricci tensor
+∂/∂xᵢ                 Coordinate derivative
+dω                   Exterior derivative
+ω∧η                   Wedge product of differential forms
 
 === No. 4 | Calculus & Analysis Notations ===
 Symbol                  Meaning
@@ -226,6 +207,18 @@ B(x, y)                 Beta Function
 ζ(s)                    Riemann Zeta
 ε, δ                    A very small number
 γ                       Euler-Mascheroni constant
+∂²                     Second partial derivative
+∇·                     Divergence (you have it but not the dot form)
+∇×                     Curl (same note)
+dμ                     Measure element
+𝒟                      Function space / distribution space
+⨍                      Mean integral
+∥A∥                   Matrix norm
+⟨A,B⟩                  Frobenius inner product
+εᵢⱼₖ                   Levi‑Civita symbol
+∂ᵢ                    ndexed partial derivative
+A⁺                   Moore–Penrose pseudoinverse
+diag(a₁,…,aₙ)          Diagonal matrix operator
 
 === No. 5 | Statistics Notations ===
 Symbol                  Meaning
@@ -265,6 +258,12 @@ H₁                      Alternative Hypothesis
 α                       Intercept Coefficient
 R²                      Coefficient of Determination
 ν                       Degree of Freedom
+KL(p‖q)                 Kullback–Leibler divergence
+H(X)                    Shannon entropy
+I(X;Y)                  Mutual information
+Cov(X,Y)                Covariance
+F(x)                    Cumulative distribution function
+f_X(x)                  PDF of X
 
 === No. 6 | Advanced Mathematics & Special Symbols ===
 Symbol                  Meaning
@@ -304,6 +303,20 @@ Cₙ                      Cycle
 Pₙ                      Path
 a ↑ b                   Knuth's Up-Arrow
 g₆₄                     Graham's Number
+≡ (mod n)               Congruence modulo
+ordₙ(a)                Multiplicative order
+vₚ(n)                  p‑adic valuation
+σ(n)                  Sum of divisors
+ω(n)                  Number of distinct prime factors
+≼                     Preorder
+≺                    Strict precedence
+⊑                    Domain‑theory order
+⊔                    Join (least upper bound)
+⊓                    Meet (greatest lower bound)
+⋖                   Cover relation
+↑A                  Upward closure
+↓A                  Downward closure
+
 
 === No. 7 | Trigonometry, Linear Algebra & Matrix Notations ===
 Symbol                  Meaning
