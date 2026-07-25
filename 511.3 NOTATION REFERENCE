@@ -1,0 +1,4411 @@
+NOTATION REFERENCE
+511.3 — Mathematical Symbols & Notation
+
+=== No. 0 | Global Operators & Meta‑Symbols ===
+These symbols apply across all branches of mathematics and define meta‑operations,
+definitions, or global conventions.
+
+Symbol        Meaning
+------        -------
+*             Generic binary operation
+⋅             Scalar multiplication / generic multiplication dot
+≜             “Defined as” (definitional equality)
+≔             Definition assignment (left side is defined to be right side)
+≟             Equality to be determined / query equality
+%             Percent
+w.r.t.        With respect to
+IFF           If and only if (logical biconditional)
+λx.f(x)       Lambda abstraction (function definition)
+a : b         Ratio
+a ∝ b         Proportional
+∝̸            Not proportional
+a ↑ b         Knuth up‑arrow notation (hyper‑operations)
+ⁿa            Tetration (hyper‑exponentiation)
+ABCD̅         Concatenate (string or sequence)
+∞             Infinity
+ℵ₀            Aleph‑null (smallest infinite cardinal)
+g₆₄           Graham’s number
+
+
+=== No. 1 | Common Mathematical Notations ===
+
+Symbol          Meaning
+------          -------
++               Plus
+-               Minus
+×               Multiply
+÷               Divide
+=               Equal
+≠               Not Equal
+±               Plus or Minus
+≈               Approximately equal
+<               Less than
+>               Greater than
+≤               Less or equal
+≥               Greater or equal
+≮               Not less than
+≯               Not greater than
+≰               Not less or equal
+≱               Not greater or equal
+≪               Much less than
+≫               Much greater than
+≡               Congruent
+∼               Similar
+a²              Square
+aⁿ              n-th power
+√a              Square root
+ⁿ√a             n-th root
+a ∝ b           Proportional
+%               Percent
+a : b           Ratio
+a!              Factorial
+a!!             Double factorial
+ⁿa              Tetration
+Pᵣⁿ             Permutation
+Cᵣⁿ             Combination
+|a|             Absolute value
+⌊a⌋             Floor function
+⌈a⌉             Ceiling function
+{a}             Decimal part (fractional part)
+*               Generic binary operation
+⋅               Scalar multiplication
+⨳              Semidirect product
+≜              “Defined as”
+≔              Definition assignment
+≟              Equality to be determined
+∝̸             Not proportional
+
+=== No. 2 | Set Theory & Logic Symbols ===
+
+Symbol          Meaning
+------          -------
+a ∈ A           Belongs to
+A ∋ a           Contains
+a ∉ A           Does not belong to
+A ⊂ B           Proper Subset of
+A ⊆ B           Improper Subset of (subset of)
+A ⊃ B           Superset of
+ℕ               Natural Numbers
+ℤ               Integers
+ℚ               Rational Numbers
+ℝ               Real Numbers
+𝔸 / A           Algebraic Numbers
+ℂ               Complex Numbers
+n(A)            Cardinality
+ξ / 𝒰           Universal Set
+∅               Null Set (Empty Set)
+A \ B           Set Difference
+A ∪ B           Union
+A ∩ B           Intersection
+A'              Complement Set
+:               Such That
+{a, b, c}       Set
+∃               There exists
+∄               There does not exist
+∃!              Only one exists (unique existence)
+A ⇒ B           Implies
+A ⇔ B           If and only if (Mutually Implies)
+A ⇏ B           Does not imply
+¬A              Not
+a ∨ b           Or
+a ∧ b           And
+A ⊢ B           Proves
+A ⊬ B           Does not yield (does not prove)
+∴               Therefore
+∵               Because
+∀               For all
+□               End of Proof
+⊈               Not a subset
+⊉               Not a superset
+⊻               XOR
+⊼               NAND
+⊽               NOR
+↦               Maps to
+↣               Injective function
+↠               Surjective function
+↪               Embedding
+↩               Left hook (inclusion)
+⊨               Semantic entailment
+⊭               Not semantically entailed
+≺≺             Elementary substructure
+⊩               Forcing (set theory)
+λx. f(x)        Lambda abstraction
+∀x∈A           Bounded quantifier
+∃x!             Unique existence (bounded form)
+idₓ             Identity morphism
+Hom(A,B)        Hom‑set
+End(A)          Endomorphisms
+Aut(A)          Automorphisms
+⊗ᶜ             Monoidal tensor
+⇒               Natural transformation
+
+=== No. 3 | Geometry & Measurement Symbols ===
+
+Symbol                  Meaning
+------                  -------
+a°                      Degree
+aᶜ / rad                Radian
+aᵍ                      Gradian
+∠ABC                    Angle
+∡ABC                    Measured Angle
+∢A                      Spherical Angle
+[ABC]                   Area of
+∟                       Right Angle
+△ABC                    Triangle
+a°b'c"                  Arcminute / Arcsecond
+l₁ ∥ l₂                 Parallel to
+l₁ ⊥ l₂                 Perpendicular to
+π                       Pi (Constant)
+τ (2π)                  Tau (2π)
+⌒AB                     Arc
+O                       Origin
+m_AB                    Gradient (slope)
+(x, y)                  Coordinates
+AB (with dots)          Line Segment
+AB (double arrow)       Line
+AB (arrow)              Ray
+l₁ (equation)           Equation of Line
+○C₁                     Circle
+Π₁                      Plane
+Golden Ratio symbol     Golden Ratio
+h (vertical)            Vertical Height
+|a| (vector)            Vector Length (magnitude)
+||a||                   Vector Length (norm)
+û                       Unit Vector
+[ABC] (shaded)          Area of
+AB (vector arrow)       Vector
+u · v                   Dot Product
+u × v                   Cross Product
+u ∧ v                   Wedge Product
+<u, v>                  Inner Product
+u ⊗ v                   Outer Product
+
+∂M                      Boundary of a manifold
+int(A)                  Interior
+cl(A)                   Closure
+conv(A)                 Convex hull
+diam(A)                 Diameter
+
+‖f‖ₚ                    Lᵖ norm
+⟨f,g⟩                   Inner product in function space
+supp(f)                 Support of a function
+ess sup                 Essential supremum
+χ_A                     Indicator function
+δ(x)                    Dirac delta
+ℒ{f}                    Laplace transform
+ℱ{f}                    Fourier transform
+
+∇ₓY                    Covariant derivative
+Γᵢⱼᵏ                   Christoffel symbols
+gᵢⱼ                    Metric tensor
+Rᵢⱼₖˡ                  Riemann curvature tensor
+Ric                     Ricci tensor
+∂/∂xᵢ                  Coordinate derivative
+dω                      Exterior derivative
+ω∧η                    Wedge product of differential forms
+
+=== No. 4 | Calculus & Analysis Notations ===
+
+Symbol                  Meaning
+------                  -------
+e                       Euler's Number
+logₐ b                  Logarithm (base a)
+lg a                    Common Logarithm (base 10)
+ln a                    Natural Logarithm
+inf(A)                  Infimum
+sup(A)                  Supremum
+Σ (n=a to b)            Summation
+Π (n=a to b)            Product
+lim (x→0)               Limit
+
+sinh θ                  Hyperbolic Sine
+cosh θ                  Hyperbolic Cosine
+tanh θ                  Hyperbolic Tangent
+
+f'(x)                   1st Derivative (Lagrange)
+dy/dx                   1st Derivative (Leibniz)
+ẋ                       1st Derivative (Newton)
+
+f''(x)                  2nd Derivative (Lagrange)
+d²y/dx²                 2nd Derivative (Leibniz)
+ẍ                       2nd Derivative (Newton)
+
+Δx                      Change in
+δx                      Small change in
+δy/δx                   Ratio of small change
+∂y/∂x                   Partial Derivative
+
+∫ₐᵇ f dx                Integral
+∭ᵥ f dV                 Triple Integral
+∮ f dz                  Contour Integral
+∯ᵥ f dV                 Closed Volume Integral
+
+∇f                      Gradient (Scalar Field)
+∇ · F                   Divergence (Vector Field)
+∇ × F                   Curl of Vector Field
+∇²f                     Laplacian (Div Grad)
+
+sgn(x)                  Sign Function
+B(x, y)                 Beta Function
+Γ(n)                    Gamma Function
+ζ(s)                    Riemann Zeta
+ε, δ                    A very small number
+γ                       Euler-Mascheroni constant
+
+∂²                     Second partial derivative
+∇·                     Divergence (dot form)
+∇×                     Curl (cross form)
+dμ                     Measure element
+𝒟                      Function space / distribution space
+⨍                      Mean integral
+
+∥A∥                   Matrix norm
+⟨A,B⟩                  Frobenius inner product
+εᵢⱼₖ                   Levi‑Civita symbol
+∂ᵢ                    Indexed partial derivative
+A⁺                    Moore–Penrose pseudoinverse
+diag(a₁,…,aₙ)          Diagonal matrix operator
+
+=== No. 5 | Statistics Notations ===
+
+Symbol                  Meaning
+------                  -------
+P(A)                    Probability
+P(A|B)                  Probability Given (Conditional)
+E(X)                    Expected Value
+Q₁                      Lower Quartile
+Q₃                      Upper Quartile
+f                       Frequency (with histogram)
+N                       Population Size
+n                       Sample Size
+μ                       Population Mean
+x̄                      Sample Mean
+σₓ                      Population Std. Dev.
+Sₓ                      Sample Std. Dev.
+p                       Probability of Success
+q                       Probability of Failure
+max(A)                  Maximum
+min(A)                  Minimum
+Var(X)                  Variance
+x̃                      Median
+
+U(a,b)                  Uniform Distribution
+Bin(n,p)                Binomial Distribution
+Geo(p)                  Geometric Distribution
+N(μ,σ²)                 Normal Distribution
+Γ(α,β)                  Gamma Distribution
+exp(λ)                  Exponential Distribution
+χ²(x)                   Chi-Square Distribution
+
+corr(x,y)               Correlation
+r                       Sample Correlation
+Ω                       Sample Space
+
+H₀                      Null Hypothesis
+H₁                      Alternative Hypothesis
+α                       False Positive Rate (Type I error)
+β                       False Negative Rate (Type II error)
+β₁                      Regression Coefficient
+α                       Intercept Coefficient
+R²                      Coefficient of Determination
+ν                       Degree of Freedom
+
+KL(p‖q)                 Kullback–Leibler divergence
+H(X)                    Shannon entropy
+I(X;Y)                  Mutual information
+Cov(X,Y)                Covariance
+F(x)                    Cumulative distribution function
+f_X(x)                  PDF of X
+
+=== No. 6 | Advanced Mathematics & Special Symbols ===
+
+Symbol                  Meaning
+------                  -------
+z                       z-score
+π̂                      Population Proportion
+p̂                      Sample Proportion
+t                       t-value
+
+PMF                     Probability Mass Function
+PDF                     Probability Density Function
+
+i                       Imaginary Unit
+Z                       Imaginary Number
+z̄                      Complex Conjugate
+z*                      Complex Conjugate
+Re(z)                   Real Part
+Im(z)                   Imaginary Part
+R(z)                    Real Part (of quaternion/octonion)
+Im(z)                   Imaginary Part
+Arg(z)                  Argument
+
+H                       Quaternions
+O                       Octonions
+S                       Sedenions
+
+ABCD (overline)         Concatenate
+∞                       Infinity
+ℵ₀                      Aleph-Null
+w.r.t.                  With Respect to
+IFF                     If and only if
+
+f ∘ g                   Composite Function
+a ↦ b                   Maps to
+A ≅ B                   Isomorphic Graph
+
+S(n)                    Successor Function
+Pred(n)                 Predecessor Function
+A(a, b)                 Ackermann Function
+
+R²                      Euclidean Plane
+Kₙ                      Complete Graph
+Kₙ,ₘ                    Complete Bipartite Graph
+Cₙ                      Cycle
+Pₙ                      Path
+
+a ↑ b                   Knuth's Up-Arrow
+g₆₄                     Graham's Number
+
+≡ (mod n)               Congruence modulo
+ordₙ(a)                 Multiplicative order
+vₚ(n)                   p-adic valuation
+σ(n)                    Sum of divisors
+ω(n)                    Number of distinct prime factors
+
+≼                      Preorder
+≺                      Strict precedence
+⊑                      Domain-theory order
+⊔                      Join (least upper bound)
+⊓                      Meet (greatest lower bound)
+⋖                      Cover relation
+↑A                     Upward closure
+↓A                     Downward closure
+
+=== No. 7 | Trigonometry, Linear Algebra & Matrix Notations ===
+
+Symbol                  Meaning
+------                  -------
+sin θ                   Sine
+cos θ                   Cosine
+tan θ                   Tangent
+sec θ                   Secant
+csc θ                   Cosecant
+cot θ                   Cotangent
+
+sin⁻¹ θ                 Arcsine
+cos⁻¹ θ                 Arccosine
+tan⁻¹ θ                 Arctangent
+sec⁻¹ θ                 Arcsecant
+csc⁻¹ θ                 Arccosecant
+cot⁻¹ θ                 Arccotangent
+
+χ                       Euler Characteristic
+V                       Number of Vertices
+E                       Number of Edges
+F                       Number of Faces
+
+a | b                   Divides
+a ∤ b                   Does not divide
+
+( a  b )                Matrix
+( c  d )
+
+I                       Identity Matrix
+det(M)                  Determinant
+| a  b |                Determinant
+| c  d |
+
+adj(M)                  Adjugate Matrix
+M⁻¹                     Inverse Matrix
+A ⊗ B                   Kronecker Product
+Mᵀ                      Transpose
+
+rank(M)                 Rank
+dim(V)                  Dimension
+ker(M)                  Kernel (Null space)
+span(M)                 Span (Column space)
+
+δᵢⱼₖ                   Kronecker Delta
+x mod y                 Modulo
+
+π(x)                    Prime Counting Function
+φ(n)                    Euler's Totient Function
+
+a < b                   Precedes
+a > b                   Succeeds
+
+
+=== No. 8 | Circle‑Family Operators & Special Composition Symbols ===
+
+Symbol                  Meaning
+------                  -------
+∘                       Function composition: (f ∘ g)(x) = f(g(x))
+∘̸                      Not composable / composition not defined
+
+⊙                       Hadamard (elementwise) product of matrices/vectors
+⨀                      Symmetric product (commutative bilinear operator)
+
+⊗                       Tensor (Kronecker) product
+⨂                      Large tensor product (category theory / multilinear algebra)
+
+⊕                       Direct sum (vector spaces, modules, representations)
+⨁                      Large direct sum (indexed families)
+
+⊘                       Circle‑slash: division‑like operator in abstract algebra
+⊚                       Double composition / special morphism composition
+⊛                       Convolution operator (signal processing, probability)
+
+⊗̸                      Tensor product not defined
+⊙̸                      Hadamard product not defined
+
+=== No. 9 | Programming, Algorithms & Discrete Structures Notations ===
+
+Symbol                  Meaning
+------                  -------
+:=                      Assignment
+≔                      Definition assignment (alternate form)
+==                      Equality test (programming)
+!=                      Inequality test
+<=                      Less or equal (programming)
+>=                      Greater or equal (programming)
+
+→                       Mapping / function arrow
+↦                       Maps to (algorithmic form)
+⇒                       Yields / produces (algorithmic step)
+⇐                       Receives / is assigned from
+
+∅                       Empty list / empty structure
+[]                      Empty list literal
+[a₁, a₂, …, aₙ]         List / array
+⟨a₁, a₂, …, aₙ⟩         Tuple
+{a₁, a₂, …, aₙ}         Set literal
+⟨k : v⟩                 Key–value pair (map/dictionary element)
+
+|A|                     Size of a list, array, or set
+len(A)                  Length of a list or string
+dom(f)                  Domain of a function
+cod(f)                  Codomain of a function
+
+⋃                      Union over an index set
+⋂                      Intersection over an index set
+⊎                      Disjoint union
+⊕                      XOR (bitwise)
+∧                      AND (bitwise)
+∨                      OR (bitwise)
+¬                      NOT (bitwise)
+
+Σ                      Summation (algorithmic)
+Π                      Product (algorithmic)
+∑_{i=1..n}             Summation over range
+∏_{i=1..n}             Product over range
+
+O(n)                    Big‑O complexity
+Ω(n)                    Big‑Omega complexity
+Θ(n)                    Big‑Theta complexity
+o(n)                    Little‑o complexity
+ω(n)                    Little‑omega complexity
+
+⋯                      Ellipsis (continuation)
+…                      Range / sequence continuation
+↻                      Loop / iteration indicator
+↺                      Repeat / cycle indicator
+
+⊤                      True
+⊥                      False
+
+⊢ e                     Expression is derivable
+⊣ e                     Expression ends / terminates
+
+⟦e⟧                    Semantic interpretation of expression e
+⟨e⟩                    Syntactic form of expression e
+
+∥A∥                    Norm of a vector (algorithmic context)
+#A                     Cardinality / count
+
+=== No. 10 | Physics & Engineering Symbols ===
+
+Symbol                  Meaning
+------                  -------
+Δ                       Change in / difference
+δ                       Infinitesimal variation
+∂                       Partial derivative (physical context)
+∇                       Gradient / del operator
+∇·                      Divergence
+∇×                      Curl
+
+v                       Velocity
+a                       Acceleration
+t                       Time
+s                       Displacement
+x(t)                    Position as a function of time
+ẋ(t)                    Velocity (time derivative)
+ẍ(t)                    Acceleration (time derivative)
+
+F                       Force
+m                       Mass
+p                       Momentum
+L                       Angular momentum
+τ                       Torque
+I                       Moment of inertia
+
+E                       Energy
+K                       Kinetic energy
+U                       Potential energy
+W                       Work
+P                       Power
+
+ρ                       Density
+σ                       Stress
+ε                       Strain
+η                       Viscosity
+κ                       Thermal conductivity
+
+T                       Temperature
+ΔT                      Temperature difference
+C                       Heat capacity
+Q                       Heat / thermal energy
+S                       Entropy
+
+μ₀                      Vacuum permeability
+ε₀                      Vacuum permittivity
+c                       Speed of light
+h                       Planck constant
+ħ                       Reduced Planck constant
+
+q                       Electric charge
+V                       Voltage / electric potential
+I                       Electric current
+R                       Resistance
+C                       Capacitance
+L                       Inductance
+
+E⃗                      Electric field
+B⃗                      Magnetic field
+H⃗                      Magnetic intensity
+J⃗                      Current density
+
+λ                       Wavelength
+ν                       Frequency
+ω                       Angular frequency
+k                       Wave number
+
+f(t)                    Signal / input function
+g(t)                    Output / response function
+*                       Convolution (engineering context)
+
+=== No. 11 | Logic, Type Theory & Formal Semantics ===
+
+Symbol                  Meaning
+------                  -------
+⊢                       Provability / syntactic entailment
+⊬                       Not provable
+⊨                       Semantic entailment
+⊭                       Not semantically entailed
+
+λx. e                   Lambda abstraction
+λx:A. e                 Typed lambda abstraction
+e₁ e₂                   Function application
+e[x := v]               Substitution of x with v in expression e
+
+α                       Type variable
+β                       Type variable
+τ                       Type
+σ                       Type
+Γ                       Typing context
+Δ                       Constraint context
+
+Γ ⊢ e : τ               Expression e has type τ under context Γ
+Γ ⊢ τ₁ = τ₂             Type equality judgment
+Γ ⊢ τ₁ <: τ₂            Subtyping judgment
+
+∀x. P(x)                Universal quantification
+∃x. P(x)                Existential quantification
+∃!x. P(x)               Unique existence
+∀x∈A. P(x)              Bounded universal quantifier
+∃x∈A. P(x)              Bounded existential quantifier
+
+→                       Function type
+×                       Product type
++                       Sum type
+⊕                       Disjoint sum type
+⊤                       True / top type
+⊥                       False / bottom type
+¬                       Negation
+∧                       Conjunction
+∨                       Disjunction
+
+μX. F(X)                Least fixed point
+νX. F(X)                Greatest fixed point
+
+⟦e⟧                    Denotational semantics of expression e
+⟦e⟧ρ                   Semantics under environment ρ
+⟨e⟩                    Syntactic form of expression e
+
+e ↦ e'                  Evaluation step (small‑step semantics)
+e ⇓ v                   Evaluation to value v (big‑step semantics)
+e ⇑                    Divergence / non‑termination
+
+≡β                     Beta equivalence
+≡η                     Eta equivalence
+≡α                     Alpha equivalence
+
+→*                     Reflexive transitive closure of →
+↦*                     Multi‑step reduction
+
+□                      End of proof
+
+=== No. 12 | Category Theory & Abstract Algebra Operators ===
+
+Symbol                  Meaning
+------                  -------
+A → B                   Morphism from A to B
+A ↣ B                   Injective morphism
+A ↠ B                   Surjective morphism
+A ↪ B                   Monomorphism (embedding)
+A ↩ B                   Inclusion morphism
+
+idₐ                     Identity morphism on object A
+Hom(A,B)                Hom‑set of morphisms A → B
+End(A)                  Endomorphisms of A
+Aut(A)                  Automorphisms of A
+
+F : C → D               Functor from category C to D
+F(A)                    Image of object A under functor F
+F(f)                    Image of morphism f under functor F
+
+η : F ⇒ G               Natural transformation η from functor F to G
+ηₐ                     Component of η at object A
+
+⊗                       Tensor product (monoidal)
+⊗ᶜ                     Monoidal tensor (category‑theoretic)
+I                       Monoidal unit object
+α                       Associator isomorphism
+λ                       Left unitor
+ρ                       Right unitor
+
+A ⊕ B                   Direct sum (categorical or algebraic)
+A ⨁ B                   Large direct sum (indexed family)
+A × B                   Product of objects
+A + B                   Coproduct of objects
+
+lim F                   Limit of functor F
+colim F                 Colimit of functor F
+∏ᵢ Aᵢ                  Product over index i
+⨿ᵢ Aᵢ                  Coproduct over index i
+
+A ← B → C               Span
+A → B ← C               Cospan
+
+A ≅ B                   Isomorphism of objects
+A ≃ B                   Equivalence of objects
+A ≈ B                   Weak equivalence
+
+A ⋉ B                   Semidirect product
+A × B                   Direct product
+A * B                   Free product
+
+⟨x⟩                    Subgroup generated by x
+⟨S⟩                    Subgroup generated by set S
+
+ker(f)                  Kernel of morphism f
+coker(f)                Cokernel of morphism f
+im(f)                   Image of f
+coim(f)                 Coimage of f
+
+A ↦ f(A)                Object mapping under f
+f ∘ g                   Composition of morphisms
+g ∘ f                   Reverse composition
+
+A^op                    Opposite category of A
+Cᵒᵖ                    Opposite category C
+
+U                       Forgetful functor
+F                       Free functor
+F ⊣ U                   Adjunction (F left adjoint to U)
+
+A → B → C               Composable morphisms
+A ← B ← C               Reverse composable morphisms
+
+A ≺ B                   Precedence / ordering relation
+A ⊑ B                   Domain‑theoretic order
+A ⊔ B                   Join (least upper bound)
+A ⊓ B                   Meet (greatest lower bound)
+
+=== No. 13 | Algebraic Structures & Group Theory Notation ===
+
+Symbol                  Meaning
+------                  -------
+G                       Group
+H ≤ G                   H is a subgroup of G
+H < G                   H is a proper subgroup of G
+N ⫳ G                   N is a normal subgroup of G
+
+e                       Identity element
+g⁻¹                     Inverse of element g
+g · h                   Group operation
+gh                      Group multiplication (implicit)
+
+⟨g⟩                    Subgroup generated by g
+⟨S⟩                    Subgroup generated by set S
+ord(g)                  Order of element g
+|G|                     Order (size) of group G
+
+G × H                   Direct product of groups
+G ⊕ H                   Direct sum (abelian groups)
+G ⋉ H                   Semidirect product
+G * H                   Free product
+
+G/Z(G)                  Quotient group by center
+G/N                     Quotient group by normal subgroup N
+Z(G)                    Center of group G
+C_G(g)                  Centralizer of g in G
+N_G(H)                  Normalizer of H in G
+
+φ : G → H               Group homomorphism
+ker(φ)                  Kernel of homomorphism φ
+im(φ)                   Image of homomorphism φ
+φ⁻¹(H)                  Preimage of H under φ
+
+G ≅ H                   Groups are isomorphic
+G ≃ H                   Groups are equivalent (structure‑preserving)
+
+R                       Ring
+R*                      Group of units of ring R
+R[x]                    Polynomial ring over R
+R[[x]]                  Formal power series ring
+R/I                     Quotient ring
+
+F                       Field
+K                       Field (alternate)
+𝔽ₚ                     Finite field of order p
+char(F)                 Characteristic of field F
+
+M                       Module
+M ⊕ N                   Direct sum of modules
+Hom_R(M,N)              R‑module homomorphisms
+
+V                       Vector space
+dim(V)                  Dimension of vector space V
+span(S)                 Span of set S
+basis(V)                Basis of V
+
+a ⊗ b                   Tensor product of vectors
+V ⊗ W                   Tensor product of vector spaces
+
+L                       Lattice
+a ⊔ b                   Join (least upper bound)
+a ⊓ b                   Meet (greatest lower bound)
+a ≼ b                   Lattice order
+
+=== No. 14 | Topology & Manifold Notation ===
+
+Symbol                  Meaning
+------                  -------
+X                       Topological space
+τ                       Topology on X
+U ∈ τ                   U is an open set
+F = X \ U               Closed set (complement of open)
+cl(A)                   Closure of A
+int(A)                  Interior of A
+bd(A)                   Boundary of A
+Ā                      Closure (alternate notation)
+A°                      Interior (alternate notation)
+
+x ~ y                   Equivalence relation
+X/~                     Quotient space
+π : X → X/~             Quotient map
+
+f : X → Y               Continuous map
+f ∈ C⁰                  Continuous function
+f ∈ Cᵏ                  k‑times continuously differentiable
+f ∈ C^∞                 Smooth function
+
+(X, d)                  Metric space
+d(x,y)                  Distance between x and y
+B_r(x)                  Open ball of radius r
+\bar{B}_r(x)            Closed ball of radius r
+
+X is Hausdorff          T₂ separation property
+X is regular            T₃ separation property
+X is normal             T₄ separation property
+X is compact            Every open cover has finite subcover
+X is connected          Cannot be separated into two disjoint open sets
+X is path‑connected     Any two points joined by continuous path
+
+M                       Manifold
+dim(M)                  Dimension of manifold M
+p ∈ M                   Point on manifold
+(TₚM)                   Tangent space at p
+(TₚM)*                  Cotangent space at p
+v ∈ TₚM                 Tangent vector
+ω ∈ (TₚM)*              Cotangent vector / 1‑form
+
+φ : U → ℝⁿ              Coordinate chart
+{(Uᵢ, φᵢ)}              Atlas
+Jᵢⱼ                     Jacobian of chart transition φᵢ ∘ φⱼ⁻¹
+
+d                       Exterior derivative
+∧                       Wedge product
+Ωᵏ(M)                   Space of k‑forms on M
+∫_γ ω                   Integral of 1‑form over curve γ
+∫_S ω                   Integral of k‑form over k‑surface S
+
+∂M                      Boundary of manifold M
+M̄                      Manifold closure
+M°                      Manifold interior
+
+∇                       Connection (generic)
+∇ₓY                    Covariant derivative
+Γᵢⱼᵏ                   Christoffel symbols
+g                       Riemannian metric
+gᵢⱼ                    Metric components
+R                       Curvature tensor
+Ric                     Ricci tensor
+Scal                    Scalar curvature
+
+=== No. 15 | Tensor Calculus & Advanced Differential Geometry ===
+
+Symbol                  Meaning
+------                  -------
+T                       Tensor
+Tᵢⱼ                     Covariant tensor components
+Tⁱⱼ                     Mixed tensor components
+Tⁱʲ                     Contravariant tensor components
+
+gᵢⱼ                    Metric tensor (covariant)
+gⁱʲ                    Inverse metric (contravariant)
+gᵢⱼ vⁱ                 Lowering an index
+gⁱʲ vⱼ                 Raising an index
+
+∇                       Covariant derivative
+∇ₖTᵢⱼ                 Covariant derivative of tensor T
+∇·T                    Divergence of tensor
+∇×T                    Curl‑like tensor operator
+
+Γᵢⱼᵏ                   Christoffel symbols
+Γᵢⱼᵏ vⱼ               Connection acting on vector v
+Γᵢⱼᵏ Tⱼₗ              Connection acting on tensor T
+
+Rᵢⱼₖˡ                  Riemann curvature tensor
+Rᵢⱼ                    Ricci tensor
+R                       Scalar curvature
+Rm                     Full curvature operator
+
+LₓT                    Lie derivative of tensor T along vector field X
+Lₓg                    Lie derivative of metric g
+[X, Y]                 Lie bracket of vector fields X and Y
+
+φ*                     Pullback of map φ
+φ_*                    Pushforward of map φ
+φ*ω                    Pullback of differential form ω
+φ_*v                   Pushforward of vector v
+
+ω ∈ Ωᵏ(M)              k‑form on manifold M
+dω                     Exterior derivative
+ω ∧ η                  Wedge product of forms
+⋆ω                     Hodge star operator
+δω                     Codifferential
+
+vol_g                  Riemannian volume form
+∫_M ω                  Integral of form ω over manifold M
+∫_∂M ω                Integral over boundary
+
+∇²f                    Laplace–Beltrami operator
+Δf                     Laplacian (alternate notation)
+□f                     D’Alembert operator (wave operator)
+
+K                      Sectional curvature
+H                      Mean curvature
+A                      Second fundamental form
+∇ₙ                     Normal derivative
+
+=== No. 16 | Functional Analysis & Operator Theory ===
+
+Symbol                  Meaning
+------                  -------
+X                       Normed linear space
+‖x‖                    Norm of element x
+⟨x, y⟩                 Inner product (Hilbert space)
+H                       Hilbert space
+B(X)                    Bounded linear operators on X
+
+T : X → Y               Linear operator
+T*                      Adjoint operator
+T⁻¹                     Inverse operator (if exists)
+Tⁿ                      n‑fold composition of T
+Id                      Identity operator
+
+‖T‖                    Operator norm
+‖T‖ₒₚ                  Operator norm (explicit)
+‖T‖_{HS}               Hilbert–Schmidt norm
+‖T‖_{tr}               Trace norm
+
+σ(T)                    Spectrum of operator T
+ρ(T)                    Resolvent set of T
+R(λ, T)                 Resolvent operator (λI − T)⁻¹
+λ ∈ σ(T)                λ is an eigenvalue / spectral value
+λI − T                  Shifted operator
+
+T is compact            Maps bounded sets to relatively compact sets
+T is self‑adjoint       T = T*
+T is normal             TT* = T*T
+T is unitary            T*T = TT* = I
+T is positive           ⟨Tx, x⟩ ≥ 0
+
+dom(T)                  Domain of unbounded operator T
+ran(T)                  Range of T
+ker(T)                  Kernel of T
+T†                      Moore–Penrose pseudoinverse (operator form)
+
+C₀(X)                   Continuous functions vanishing at infinity
+Lᵖ(X)                   Lᵖ space
+L²(X)                   Hilbert space of square‑integrable functions
+H¹(X)                   Sobolev space
+
+f ∈ 𝒟                   Test function (smooth, compact support)
+f ∈ 𝒮                   Schwartz function
+𝒟'                      Space of distributions
+𝒮'                      Tempered distributions
+
+Tf                      Action of operator T on function f
+⟨T, f⟩                 Distribution pairing
+
+e^{tT}                  Semigroup generated by T
+T(t)                    Strongly continuous semigroup
+A                       Generator of semigroup
+A = lim_{t→0} (T(t)x − x)/t   Generator definition
+
+φ(T)                    Functional calculus
+p(T)                    Polynomial functional calculus
+f(T)                    Borel functional calculus
+
+Δ                       Laplacian (operator form)
+□                       D’Alembert operator
+Λ                       Fractional Laplacian
+(-Δ)^{s}                Fractional power of Laplacian
+
+spec(T)                 Spectrum (alternate notation)
+specₚ(T)                Point spectrum
+spec_c(T)               Continuous spectrum
+spec_r(T)               Residual spectrum
+
+=== No. 17 | Measure Theory & Probability Foundations ===
+
+Symbol                  Meaning
+------                  -------
+(Ω, 𝔽, μ)               Measure space
+Ω                       Sample space / underlying set
+𝔽                       Sigma‑algebra
+μ                       Measure
+P                       Probability measure
+Q                       Alternate measure
+
+A ∈ 𝔽                   A is measurable
+σ(Aᵢ)                   Sigma‑algebra generated by sets Aᵢ
+σ(X)                    Sigma‑algebra generated by random variable X
+
+μ(A)                    Measure of set A
+P(A)                    Probability of event A
+Q ≪ P                   Q is absolutely continuous w.r.t. P
+Q ⟂ P                   Q is singular w.r.t. P
+
+dμ                      Measure element
+dP                      Probability measure element
+dQ                      Alternate measure element
+
+∫ f dμ                  Integral of f w.r.t. measure μ
+∫_A f dμ                Integral over set A
+∫ f dP                  Expectation under probability P
+∫ f dQ                  Expectation under probability Q
+
+χ_A                     Indicator function of set A
+supp(f)                 Support of function f
+ess sup f               Essential supremum
+ess inf f               Essential infimum
+
+f ∈ Lᵖ(μ)               f is p‑integrable
+‖f‖ₚ                    Lᵖ norm
+L²(μ)                   Hilbert space of square‑integrable functions
+L¹(μ)                   Integrable functions
+L∞(μ)                   Essentially bounded functions
+
+μ × ν                   Product measure
+∫∫ f dμ dν             Fubini/Tonelli double integral
+∫ f(x,y) d(μ×ν)         Integral over product space
+
+dQ/dP                   Radon–Nikodym derivative
+E_P[f | 𝔾]              Conditional expectation under P
+E[f | X]                Conditional expectation given X
+Var(X)                  Variance
+Cov(X,Y)                Covariance
+
+Xₙ → X                  Convergence (generic)
+Xₙ → X a.s.             Almost sure convergence
+Xₙ → X in P             Convergence in probability
+Xₙ → X in Lᵖ            Convergence in Lᵖ norm
+Xₙ ⇒ X                  Convergence in distribution
+
+φ_X(t)                  Characteristic function
+M_X(t)                  Moment generating function
+K_X(t)                  Cumulant generating function
+
+ℒ(X)                    Law/distribution of X
+ℒ(Xₙ) ⇒ ℒ(X)            Weak convergence of laws
+
+=== No. 18 | Optimization, Variational Methods & Convex Analysis ===
+
+Symbol                  Meaning
+------                  -------
+min f(x)                Minimization problem
+max f(x)                Maximization problem
+argmin f(x)             Minimizer of f
+argmax f(x)             Maximizer of f
+
+∇f(x)                   Gradient of f
+∇²f(x)                  Hessian of f
+H_f(x)                  Hessian (alternate notation)
+
+∂f(x)                   Subdifferential of convex function f
+g ∈ ∂f(x)               Subgradient g at x
+f*                      Fenchel conjugate
+f*(y)                   Conjugate evaluated at y
+
+⟨x, y⟩                 Inner product (optimization context)
+‖x‖                    Norm
+‖x‖₂                   Euclidean norm
+‖x‖₁                   L1 norm
+‖x‖∞                   Infinity norm
+
+C                       Convex set
+x ∈ ri(C)               Relative interior of C
+x ∈ bd(C)               Boundary of C
+conv(A)                 Convex hull of A
+cone(A)                 Conic hull of A
+
+L(x, λ)                 Lagrangian
+λ                       Lagrange multiplier
+μ                       Dual variable
+∇ₓL                    Gradient of L w.r.t. x
+∇_λL                   Gradient of L w.r.t. λ
+
+KKT                    Karush–Kuhn–Tucker conditions
+λ ≥ 0                  Dual feasibility
+g(x) ≤ 0               Primal inequality constraint
+h(x) = 0               Primal equality constraint
+λ g(x) = 0             Complementary slackness
+
+x⁺                     Next iterate
+xₖ                     k‑th iterate
+xₖ₊₁                   Next iterate (explicit)
+αₖ                     Step size / learning rate
+
+prox_f(x)              Proximal operator of f
+prox_{λf}(x)           Scaled proximal operator
+proj_C(x)              Projection onto set C
+
+T                      Monotone operator
+T⁻¹                    Inverse operator
+Id                     Identity operator
+(Id + T)⁻¹             Resolvent of T
+
+VI(F, C)               Variational inequality problem
+⟨F(x), y − x⟩ ≥ 0      Variational inequality condition
+
+saddle(x, y)           Saddle‑point problem
+minₓ maxᵧ L(x, y)      Saddle formulation
+
+∇f(x) = 0              Stationary point
+∇²f(x) ≻ 0             Positive definite Hessian
+∇²f(x) ⪰ 0             Positive semidefinite Hessian
+
+f is convex            f(θx + (1−θ)y) ≤ θf(x) + (1−θ)f(y)
+f is strongly convex   f(x) − (m/2)‖x‖² is convex
+f is Lipschitz         ‖f(x) − f(y)‖ ≤ L‖x − y‖
+
+∂C                     Boundary of convex set C
+C°                     Polar set of C
+C*                     Dual cone of C
+
+=== No. 19 | Stochastic Processes & Time‑Series Analysis ===
+
+Symbol                  Meaning
+------                  -------
+{Xₜ}                    Stochastic process indexed by t
+Xₜ                     Value of process at time t
+ΔXₜ                    Increment Xₜ − Xₜ₋₁
+ℱₜ                     Filtration up to time t
+ℱₛ ⊆ ℱₜ                Increasing filtration
+
+E[Xₜ | ℱₛ]             Conditional expectation given filtration
+E[Xₜ | ℱₜ]             Adapted process condition
+Xₜ is adapted          Xₜ measurable w.r.t. ℱₜ
+
+Mₜ                     Martingale
+Mₜ is martingale       E[Mₜ | ℱₛ] = Mₛ for s ≤ t
+Sₜ                     Submartingale
+Sₜ                     Supermartingale
+
+Wₜ                     Standard Brownian motion
+Wₜ − Wₛ ~ N(0, t−s)    Brownian increments
+⟨W⟩ₜ                  Quadratic variation of Brownian motion
+
+dXₜ                    Stochastic differential
+dWₜ                    Brownian increment
+dXₜ = μ dt + σ dWₜ     Ito SDE
+∫₀ᵗ σ(s) dWₛ           Ito integral
+∫₀ᵗ μ(s) ds            Lebesgue integral
+
+Ito’s lemma            d f(Xₜ) = f'(Xₜ)dXₜ + (1/2)f''(Xₜ)(dXₜ)²
+(dWₜ)² = dt            Ito rule
+dWₜ dt = 0             Ito rule
+(dt)² = 0              Ito rule
+
+λ                      Intensity (Poisson)
+Nₜ                     Poisson process
+Nₜ − Nₛ ~ Poisson(λ(t−s))   Poisson increments
+
+Xₜ is Markov           P(Xₜ | ℱₜ₋₁) = P(Xₜ | Xₜ₋₁)
+P_{ij}                 Transition probability
+Pⁿ                     n‑step transition matrix
+π                      Stationary distribution
+πP = π                 Stationarity condition
+
+AR(p)                  Autoregressive model
+MA(q)                  Moving‑average model
+ARMA(p,q)              Combined model
+ARIMA(p,d,q)           Integrated model
+
+φ₁, φ₂, …              AR coefficients
+θ₁, θ₂, …              MA coefficients
+d                      Differencing order
+
+εₜ                     Innovation / noise term
+σ²                     Innovation variance
+
+γ(k)                   Autocovariance at lag k
+ρ(k)                   Autocorrelation at lag k
+ACF                    Autocorrelation function
+PACF                   Partial autocorrelation function
+
+X̂ₜ                    Forecast / prediction
+X̂ₜ|ₜ₋₁                One‑step‑ahead forecast
+eₜ                     Forecast error
+
+Kₜ                     Kalman gain
+Pₜ                     Error covariance
+xₜ                     State estimate
+zₜ                     Observation
+
+=== No. 20 | Information Theory & Coding Theory ===
+
+Symbol                  Meaning
+------                  -------
+H(X)                    Entropy of random variable X
+H(X|Y)                  Conditional entropy
+H(X,Y)                  Joint entropy
+H(p)                    Entropy of distribution p
+
+I(X;Y)                  Mutual information
+I(X;Y|Z)                Conditional mutual information
+I(X→Y)                  Directed information
+
+D(P‖Q)                  Kullback–Leibler divergence
+D_{KL}(P‖Q)             KL divergence (alternate notation)
+D_{JS}(P‖Q)             Jensen–Shannon divergence
+
+R                       Rate (bits per symbol)
+C                       Channel capacity
+C = max_{p(x)} I(X;Y)   Shannon capacity formula
+
+X → Y                   Channel input/output relation
+p(y|x)                  Channel transition probability
+W(y|x)                  Channel law (alternate notation)
+
+A_εⁿ                    Typical set (weakly typical)
+T_εⁿ(X)                 Typical set of X
+xⁿ                      n‑length sequence
+P_{xⁿ}                  Empirical distribution of sequence xⁿ
+
+ℓ(x)                    Codeword length
+L                       Average codeword length
+L ≥ H(X)                Source coding lower bound
+L → H(X)                Optimal coding limit
+
+R(D)                    Rate–distortion function
+D                       Distortion measure
+d(x, x̂)                Distortion between x and reconstruction x̂
+
+E                       Error event
+P_e                    Probability of error
+P_e → 0                 Vanishing error probability
+
+𝒞                      Code
+|𝒞|                     Code size
+𝒞 ⊆ Σⁿ                 Code over alphabet Σ
+d(x,y)                  Hamming distance
+d_min                  Minimum distance of code
+
+G                       Generator matrix
+H                       Parity‑check matrix
+Gx                      Encoding operation
+Hx                      Syndrome
+
+s                       Syndrome vector
+s = Hx                  Syndrome equation
+x̂                      Decoded estimate
+
+BSC(p)                  Binary symmetric channel
+BEC(ε)                  Binary erasure channel
+AWGN                    Additive white Gaussian noise channel
+
+Q(x)                    Gaussian tail function
+BER                     Bit error rate
+SER                     Symbol error rate
+
+log                     Logarithm (base 2 unless specified)
+ln                      Natural logarithm
+
+=== No. 21 | Computational Complexity & Formal Languages ===
+
+Symbol                  Meaning
+------                  -------
+L                       Formal language
+Σ                       Alphabet
+Σ*                      Set of all finite strings over Σ
+ε                       Empty string
+|x|                     Length of string x
+
+x ∈ L                   x is in language L
+x ∉ L                   x is not in language L
+L₁ ∪ L₂                 Union of languages
+L₁ ∩ L₂                 Intersection of languages
+L₁ ∘ L₂                 Concatenation of languages
+L*                      Kleene star of L
+
+G                       Grammar
+G = (V, Σ, R, S)        Grammar components
+V                       Variables / nonterminals
+R                       Production rules
+S                       Start symbol
+
+A → α                   Production rule
+⇒                       One-step derivation
+⇒*                     Multi-step derivation
+L(G)                    Language generated by grammar G
+
+DFA                    Deterministic finite automaton
+NFA                    Nondeterministic finite automaton
+PDA                    Pushdown automaton
+TM                     Turing machine
+
+δ                      Transition function
+q₀                     Initial state
+F                       Set of accepting states
+⊢                       Turing machine configuration step
+⊢*                     Multi-step configuration
+
+P                       Polynomial-time complexity class
+NP                      Nondeterministic polynomial-time
+coNP                   Complement of NP
+EXP                    Exponential time
+PSPACE                 Polynomial space
+LSPACE                 Logarithmic space
+
+NPC                    NP-complete
+NPH                    NP-hard
+P = NP                 Equality question
+P ≠ NP                 Inequality question
+
+A ≤ₚ B                 Polynomial-time reduction
+A ≤ₘ B                 Many-one reduction
+A ≤ₜ B                 Turing reduction
+A ≡ₚ B                 Polynomial-time equivalence
+
+TIME(f(n))             Time complexity bound
+SPACE(f(n))            Space complexity bound
+
+O(f(n))                Big-O time bound
+Ω(f(n))                Big-Omega bound
+Θ(f(n))                Big-Theta bound
+
+DTIME(f(n))            Deterministic time class
+NTIME(f(n))            Nondeterministic time class
+DSPACE(f(n))           Deterministic space class
+NSPACE(f(n))           Nondeterministic space class
+
+HALT                   Halting problem
+K                      Kolmogorov complexity
+K(x)                   Kolmogorov complexity of string x
+U                      Universal Turing machine
+U(x)                   Output of universal machine on input x
+
+rec                    Recursive languages
+r.e.                   Recursively enumerable languages
+co-r.e.                Complement of recursively enumerable
+
+φ(e)                   Partial computable function
+dom(φ)                 Domain of partial function φ
+
+=== No. 22 | Numerical Methods & Scientific Computing ===
+
+Symbol                  Meaning
+------                  -------
+A x = b                 Linear system
+x⁽ᵏ⁾                   k-th iterate
+x⁽ᵏ⁺¹⁾                 Next iterate
+r⁽ᵏ⁾ = b − A x⁽ᵏ⁾       Residual at iteration k
+‖r⁽ᵏ⁾‖                 Residual norm
+
+A⁻¹                    Inverse matrix (if exists)
+Aᵀ                     Transpose
+A*                     Conjugate transpose
+A⁺                     Moore–Penrose pseudoinverse
+
+κ(A)                   Condition number of matrix A
+ρ(A)                   Spectral radius
+σᵢ(A)                  Singular values
+λᵢ(A)                  Eigenvalues
+
+CG                     Conjugate gradient method
+GMRES                  Generalized minimal residual method
+BiCG                   Biconjugate gradient
+BiCGSTAB               Stabilized BiCG
+Jacobi                 Jacobi iteration
+Gauss–Seidel           Gauss–Seidel iteration
+SOR                    Successive over-relaxation
+
+Δt                     Time step
+Δx                     Spatial step
+h                      Step size (generic)
+N                      Number of grid points
+
+D⁺f                    Forward difference
+D⁻f                    Backward difference
+D⁰f                    Central difference
+∂f/∂x ≈ D⁰f            Finite-difference approximation
+
+∇ₕ                     Discrete gradient
+Δₕ                     Discrete Laplacian
+∂ₜu ≈ (uⁿ⁺¹ − uⁿ)/Δt   Time discretization
+
+uⁿ                     Approximation at time step n
+uᵢ                     Approximation at spatial index i
+uᵢⁿ                    Approximation at (i,n)
+
+A_h                    Discrete operator
+L_h                    Discrete differential operator
+M_h                    Mass matrix (FEM)
+K_h                    Stiffness matrix (FEM)
+
+φᵢ                     Basis function (FEM)
+u_h                    Finite element approximation
+∫ φᵢ φⱼ dx             Element mass matrix entry
+∫ ∇φᵢ · ∇φⱼ dx         Element stiffness matrix entry
+
+Qₙ(f)                  Quadrature rule
+wᵢ                     Quadrature weights
+xᵢ                     Quadrature nodes
+∑ wᵢ f(xᵢ)             Numerical integration
+
+E_h                    Discretization error
+‖u − u_h‖              Approximation error
+O(hᵖ)                  Convergence rate
+
+stable                 Numerical stability condition
+consistent             Consistency condition
+convergent             Convergence condition
+
+CFL                    Courant–Friedrichs–Lewy condition
+Δt ≤ C Δx              CFL stability constraint
+
+FFT                    Fast Fourier transform
+DFT                    Discrete Fourier transform
+û(k)                  Fourier coefficient
+
+precond(A)             Preconditioner for A
+M⁻¹A                   Preconditioned operator
+
+=== No. 23 | Graph Theory & Network Science ===
+
+Symbol                  Meaning
+------                  -------
+G = (V, E)              Graph with vertices V and edges E
+V                       Vertex set
+E                       Edge set
+|V|                     Number of vertices
+|E|                     Number of edges
+
+u ~ v                   Undirected edge between u and v
+(u, v)                  Directed edge from u to v
+deg(v)                  Degree of vertex v
+deg⁺(v)                 Out-degree
+deg⁻(v)                 In-degree
+
+A                       Adjacency matrix
+Aᵢⱼ                    Entry of adjacency matrix
+D                       Degree matrix
+L                       Graph Laplacian
+L = D − A               Combinatorial Laplacian
+L_norm                  Normalized Laplacian
+
+P                       Path
+C                       Cycle
+u ↝ v                   Path from u to v
+dist(u, v)              Graph distance
+diam(G)                 Diameter of graph
+rad(G)                  Radius of graph
+
+G is connected          Single connected component
+G is k-connected        k-vertex connectivity
+κ(G)                    Vertex connectivity
+λ(G)                    Edge connectivity
+
+T                       Tree
+leaf                    Vertex of degree 1
+root                    Distinguished vertex in rooted tree
+height(T)               Height of tree
+depth(v)                Depth of vertex v
+
+MST                     Minimum spanning tree
+w(e)                    Weight of edge e
+∑ w(e)                  Total weight of edges
+cut(S, V\S)             Cut between S and its complement
+min cut                 Minimum cut value
+
+f                       Flow function
+c(e)                    Capacity of edge e
+f(e)                    Flow on edge e
+max flow                Maximum flow value
+f ≤ c                   Capacity constraint
+
+χ(G)                    Chromatic number
+ω(G)                    Clique number
+α(G)                    Independence number
+β(G)                    Vertex cover number
+
+Kₙ                      Complete graph on n vertices
+Cₙ                      Cycle graph
+Pₙ                      Path graph
+Sₙ                      Star graph
+Qₙ                      n-dimensional hypercube
+
+λ₁, λ₂, …               Eigenvalues of Laplacian
+φ₁, φ₂, …               Eigenvectors of Laplacian
+λ₂                      Algebraic connectivity
+
+G(n, p)                 Erdős–Rényi random graph
+p                       Edge probability
+E[deg(v)]               Expected degree
+P(G connected)          Probability graph is connected
+
+centrality(v)           Generic centrality measure
+C_deg(v)                Degree centrality
+C_clo(v)                Closeness centrality
+C_bet(v)                Betweenness centrality
+C_eig(v)                Eigenvector centrality
+
+Aⁿ                      n-step adjacency (paths of length n)
+reach(u)                Reachable set from u
+
+=== No. 24 | Quantum Mechanics & Quantum Information ===
+
+Symbol                  Meaning
+------                  -------
+|ψ⟩                     Ket (state vector)
+⟨ψ|                     Bra (dual vector)
+⟨φ|ψ⟩                  Inner product
+|ψ⟩⟨ψ|                 Projector onto |ψ⟩
+ρ                       Density matrix
+Tr(ρ) = 1               Normalization condition
+ρ ≥ 0                   Positive semidefinite
+
+H                       Hamiltonian
+U                       Unitary operator
+U = e^{-iHt}            Time-evolution operator
+i                       Imaginary unit
+ħ                      Reduced Planck constant
+
+⟨A⟩                    Expectation value of observable A
+Â                      Observable operator
+spec(A)                 Spectrum of observable A
+ΔA                      Standard deviation of observable A
+
+[A, B]                  Commutator AB − BA
+{A, B}                  Anticommutator AB + BA
+[A, B] = 0              Operators commute
+[A, B] ≠ 0              Operators do not commute
+
+σₓ, σᵧ, σ_z            Pauli matrices
+I₂                      2×2 identity matrix
+H_gate                  Hadamard gate
+X_gate                  Pauli-X gate
+Y_gate                  Pauli-Y gate
+Z_gate                  Pauli-Z gate
+
+|0⟩, |1⟩               Computational basis states
+|+⟩, |−⟩               Hadamard basis states
+|ψ⟩ = α|0⟩ + β|1⟩       Qubit superposition
+
+⊗                       Tensor product
+|ψ⟩ ⊗ |φ⟩              Composite state
+ρ₁ ⊗ ρ₂                Composite density matrix
+
+Tr₂(ρ)                  Partial trace over subsystem 2
+ρ_A                    Reduced density matrix of subsystem A
+
+E                      POVM element
+{Eᵢ}                    POVM measurement set
+pᵢ = Tr(Eᵢ ρ)           Measurement probability
+
+𝒩                      Quantum channel
+𝒩(ρ)                    Action of channel on state ρ
+CPTP                   Completely positive trace-preserving
+Kᵢ                     Kraus operator
+𝒩(ρ) = ∑ Kᵢ ρ Kᵢ†       Kraus representation
+
+S(ρ)                    Von Neumann entropy
+S(ρ) = −Tr(ρ log ρ)     Entropy formula
+I(A:B)                  Quantum mutual information
+D(ρ‖σ)                  Quantum relative entropy
+
+|Φ⁺⟩                    Bell state
+|Φ⁻⟩                    Bell state
+|Ψ⁺⟩                    Bell state
+|Ψ⁻⟩                    Bell state
+ent(ρ)                  Entanglement measure (generic)
+
+CNOT                    Controlled-NOT gate
+CZ                      Controlled-Z gate
+SWAP                    Swap gate
+
+⟨ψ|A|ψ⟩                Expectation of A in state ψ
+⟨φ|U|ψ⟩                Transition amplitude
+|⟨φ|ψ⟩|²               Transition probability
+
+H ⊗ I                   Local operator on first subsystem
+I ⊗ H                   Local operator on second subsystem
+
+𝒬                      Quantum operation (generic)
+
+=== No. 25 | Machine Learning & Statistical Modeling ===
+
+Symbol                  Meaning
+------                  -------
+X                       Input variable / feature
+y                       Output variable / label
+ŷ                       Model prediction
+f_θ(x)                  Model with parameters θ
+θ                       Parameter vector
+θ⁽ᵏ⁾                   Parameters at iteration k
+
+L(θ)                    Loss function
+ℓ(y, ŷ)                 Pointwise loss
+J(θ)                    Objective function
+∇θL                    Gradient of loss
+∇²θL                   Hessian of loss
+
+MSE                    Mean squared error
+MAE                    Mean absolute error
+CE                     Cross-entropy loss
+KL                     KL divergence loss
+
+argmin_θ L(θ)          Parameter optimization
+θ ← θ − α ∇θL          Gradient descent update
+α                      Learning rate
+β₁, β₂                 Momentum coefficients (Adam)
+
+X ∈ ℝⁿ                 Feature vector
+W                      Weight matrix
+b                      Bias vector
+Wx + b                 Linear model
+
+σ(z)                   Sigmoid activation
+ReLU(z)                ReLU activation
+tanh(z)                Hyperbolic tangent activation
+softmax(z)             Softmax activation
+
+h                      Hidden representation
+h⁽ᵏ⁾                  Hidden state at layer k
+W⁽ᵏ⁾                  Weight matrix at layer k
+
+k(x, x')               Kernel function
+K                      Kernel matrix
+k_RBF                  Radial basis function kernel
+k_poly                 Polynomial kernel
+
+p(y|x, θ)              Likelihood
+p(θ)                   Prior
+p(θ|D)                 Posterior
+p(D|θ)                 Evidence / marginal likelihood
+MAP                    Maximum a posteriori estimate
+MLE                    Maximum likelihood estimate
+
+E-step                 Expectation step (EM)
+M-step                 Maximization step (EM)
+Q(θ|θ_old)             EM auxiliary function
+
+μ                      Mean
+Σ                      Covariance matrix
+𝒩(μ, Σ)                Multivariate normal distribution
+Σ⁻¹                    Precision matrix
+
+Xₜ                     Time-series input
+φ                      AR coefficient
+θ                      Model parameter (generic)
+
+train                  Training dataset
+val                    Validation dataset
+test                   Test dataset
+
+TP                     True positives
+FP                     False positives
+TN                     True negatives
+FN                     False negatives
+
+accuracy               Classification accuracy
+precision              Precision metric
+recall                 Recall metric
+F1                     F1 score
+
+ROC                    Receiver operating characteristic
+AUC                    Area under ROC curve
+
+∥θ∥₂                  L2 regularization
+∥θ∥₁                  L1 regularization
+λ                      Regularization strength
+
+dropout                Dropout operator
+batchnorm              Batch normalization
+BN(x)                  Batchnorm transform
+
+𝒟                     Dataset
+|𝒟|                    Dataset size
+xᵢ                     i-th sample
+yᵢ                     i-th label
+
+f(x; θ)                Model notation (explicit)
+
+
+=== No. 26 | Deep Learning Architecture & Training Notation ===
+
+Symbol                  Meaning
+------                  -------
+x                       Input tensor
+y                       Output tensor
+ŷ                       Model prediction
+θ                       Parameter set
+W                       Weight matrix / tensor
+b                       Bias vector / tensor
+
+f(x; θ)                Neural network function
+h⁽ˡ⁾                   Hidden representation at layer l
+W⁽ˡ⁾                   Weight matrix at layer l
+b⁽ˡ⁾                   Bias at layer l
+
+z⁽ˡ⁾ = W⁽ˡ⁾ h⁽ˡ⁻¹⁾ + b⁽ˡ⁾    Pre-activation
+h⁽ˡ⁾ = φ(z⁽ˡ⁾)               Activation
+
+φ_ReLU                  ReLU activation
+φ_GELU                  GELU activation
+φ_SiLU                  SiLU / Swish activation
+φ_softmax               Softmax activation
+
+⊙                       Elementwise multiplication
+⊗                       Tensor product
+⋆                       Convolution operator (generic)
+
+K                       Convolution kernel
+x ⋆ K                   Convolution
+stride                  Convolution stride
+padding                 Convolution padding
+dilation                Convolution dilation
+
+BN(x)                   Batch normalization
+LN(x)                   Layer normalization
+IN(x)                   Instance normalization
+
+dropout(x)              Dropout operator
+p_drop                  Dropout probability
+
+RNN                    Recurrent neural network
+hₜ                     Hidden state at time t
+xₜ                     Input at time t
+
+LSTM                   Long short-term memory unit
+cₜ                     Cell state
+iₜ, fₜ, oₜ             Input, forget, output gates
+gₜ                     Candidate cell update
+
+GRU                    Gated recurrent unit
+rₜ, zₜ                 Reset and update gates
+
+Q, K, V                Query, key, value tensors
+Attn(Q,K,V)            Attention mechanism
+softmax(QKᵀ / √dₖ) V    Scaled dot-product attention
+
+MHA                    Multi-head attention
+headᵢ                  i-th attention head
+concat(headᵢ)          Concatenation of heads
+
+Transformer            Transformer architecture
+FFN                    Feed-forward network
+pos_enc                Positional encoding
+x + pos_enc            Position-enriched input
+
+residual(x)            Residual connection
+x + f(x)               Skip connection
+
+∇θL                    Gradient of loss w.r.t. parameters
+∂L/∂W⁽ˡ⁾              Layer-wise gradient
+∂L/∂h⁽ˡ⁾              Backpropagated gradient
+
+Adam                   Adam optimizer
+mₜ, vₜ                First and second moment estimates
+θₜ₊₁ = θₜ − α m̂ₜ/(√v̂ₜ+ε)   Adam update rule
+
+SGD                    Stochastic gradient descent
+momentum               Momentum term
+NAG                    Nesterov accelerated gradient
+
+lr                     Learning rate
+lr_schedule            Learning-rate schedule
+warmup                 Warmup phase
+cosine_decay           Cosine decay schedule
+
+epoch                  Full pass over dataset
+batch                  Mini-batch of samples
+B                      Batch size
+xᵢ                     i-th sample in batch
+
+grad_clip              Gradient clipping
+‖∇θL‖ ≤ τ              Clipping threshold τ
+
+loss_train             Training loss
+loss_val               Validation loss
+acc_val                Validation accuracy
+
+early_stop             Early stopping criterion
+checkpoint             Saved model state
+
+frozen parameters      Non-trainable parameters
+fine-tune              Train selected layers only
+
+embedding              Learned representation
+E                      Embedding matrix
+E[x]                   Embedding lookup
+
+logits                 Pre-softmax outputs
+temperature            Softmax temperature scaling
+
+=== No. 27 | Computer Architecture & Systems Programming ===
+
+Symbol                  Meaning
+------                  -------
+CPU                     Central processing unit
+ALU                     Arithmetic logic unit
+FPU                     Floating-point unit
+ISA                     Instruction set architecture
+x86, ARM                Common ISAs
+
+R0, R1, ...             General-purpose registers
+PC                      Program counter
+SP                      Stack pointer
+FP                      Frame pointer
+LR                      Link register (ARM)
+FLAGS                   Condition flags register
+
+mov                     Move instruction
+add                     Addition
+sub                     Subtraction
+mul                     Multiplication
+div                     Division
+cmp                     Compare
+jmp                     Jump
+call                    Function call
+ret                     Return from function
+
+stack                   LIFO memory region
+heap                    Dynamically allocated memory
+.text                   Code segment
+.data                   Initialized data segment
+.bss                    Uninitialized data segment
+
+&x                      Address of x
+*x                      Dereference pointer x
+x->y                    Access field y through pointer x
+x.y                     Access field y of struct x
+
+malloc(n)               Allocate n bytes
+free(p)                 Free memory at pointer p
+new                     Allocate object (C++/Java)
+delete                  Deallocate object (C++)
+
+sizeof(T)               Size of type T in bytes
+alignof(T)              Alignment requirement of T
+
+thread                  Lightweight execution unit
+process                 Independent execution context
+pid                     Process identifier
+tid                     Thread identifier
+
+fork()                  Create new process
+exec()                  Replace process image
+wait()                  Wait for child process
+exit()                  Terminate process
+
+mutex                   Mutual exclusion lock
+lock(m)                 Acquire mutex m
+unlock(m)               Release mutex m
+condvar                 Condition variable
+signal(c)               Wake one waiting thread
+broadcast(c)            Wake all waiting threads
+
+atomic<T>               Atomic variable of type T
+x.fetch_add(n)          Atomic addition
+x.compare_exchange      Atomic CAS operation
+
+cache                   CPU cache
+L1, L2, L3              Cache levels
+cache hit               Data found in cache
+cache miss              Data not found in cache
+
+TLB                     Translation lookaside buffer
+MMU                     Memory management unit
+page                    Virtual memory page
+page fault              Missing page in memory
+
+syscall                 System call
+read(fd, buf, n)        Read n bytes from file descriptor
+write(fd, buf, n)       Write n bytes
+open(path, flags)       Open file
+close(fd)               Close file descriptor
+
+errno                   Error code variable
+EINTR                   Interrupted system call
+ENOMEM                  Out of memory
+EIO                     I/O error
+
+endian                  Byte order
+big-endian              Most significant byte first
+little-endian           Least significant byte first
+
+0xNN                    Hexadecimal literal
+0bNN                    Binary literal
+0oNN                    Octal literal
+
+SIGINT                  Interrupt signal
+SIGKILL                 Kill signal
+SIGSEGV                 Segmentation fault
+SIGCHLD                 Child process terminated
+
+ptrdiff_t               Pointer difference type
+uintptr_t               Unsigned integer type for pointers
+volatile                Prevent compiler reordering
+restrict                No aliasing guarantee
+
+O(n)                    Time complexity (systems context)
+O(1)                    Constant-time operation
+
+=== No. 28 | Cryptography & Security Protocols ===
+
+Symbol                  Meaning
+------                  -------
+K                       Key (generic)
+K_pub                   Public key
+K_priv                  Private key
+sk                      Secret key
+pk                      Public key (alternate)
+k                       Symmetric key
+
+Enc_K(m)                Encryption of message m with key K
+Dec_K(c)                Decryption of ciphertext c with key K
+c                       Ciphertext
+m                       Plaintext
+
+H(m)                    Hash of message m
+h                       Hash output
+HMAC_K(m)               Keyed-hash message authentication code
+
+σ                       Digital signature
+Sign_sk(m)              Signature of m under secret key sk
+Verify_pk(m, σ)         Signature verification
+
+⊕                       XOR operation
+||                      Concatenation
+∥                      Concatenation (alternate)
+⟂                      Failure / reject symbol
+
+PRG                     Pseudorandom generator
+PRF                     Pseudorandom function
+PRP                     Pseudorandom permutation
+G                       Randomness generator
+r                       Random nonce
+
+AES                     Advanced Encryption Standard
+DES                     Data Encryption Standard
+RSA                     RSA cryptosystem
+ECC                     Elliptic-curve cryptography
+
+g                       Generator of group
+p                       Large prime
+q                       Group order
+a, b                    Secret exponents
+gᵃ, gᵇ                  Public values
+
+DH                      Diffie–Hellman key exchange
+K = g^{ab}              Shared secret
+ECDH                    Elliptic-curve Diffie–Hellman
+
+N                       Nonce
+IV                      Initialization vector
+CTR                     Counter mode
+CBC                     Cipher-block chaining
+GCM                     Galois/Counter mode
+
+MAC                     Message authentication code
+tag                     Authentication tag
+Verify_K(m, tag)        MAC verification
+
+λ                      Security parameter
+poly(λ)                 Polynomial in λ
+negl(λ)                 Negligible function in λ
+
+A                       Adversary
+Adv_A                   Advantage of adversary A
+A ⊣⊢ protocol           A interacts with protocol
+
+IND-CPA                 Indistinguishability under chosen-plaintext attack
+IND-CCA                 Indistinguishability under chosen-ciphertext attack
+EUF-CMA                 Existential unforgeability under chosen-message attack
+
+commit(m)               Commitment to message m
+open(c)                 Opening of commitment
+binding                 Binding property
+hiding                  Hiding property
+
+ZK                      Zero-knowledge proof
+P                       Prover
+V                       Verifier
+⟨P, V⟩                  Interactive proof system
+soundness               Soundness property
+completeness            Completeness property
+
+OTP                     One-time pad
+c = m ⊕ k               OTP encryption
+k must be random        OTP requirement
+
+hashchain               Hash chain
+Hⁿ(m)                   n-fold hash
+
+salt                    Random salt for hashing
+pepper                  Secret server-side salt
+
+TLS                     Transport Layer Security
+ClientHello             Client initiation message
+ServerHello             Server response
+cert                    Certificate
+sig                     Certificate signature
+
+KDF                     Key-derivation function
+HKDF                    HMAC-based KDF
+derive(K, info)         Key derivation
+
+entropy                 Randomness measure
+RNG                     Random number generator
+CSPRNG                  Cryptographically secure RNG
+
+=== No. 29 | Control Theory & Dynamical Systems ===
+
+Symbol                  Meaning
+------                  -------
+x(t)                    State at time t
+u(t)                    Control input
+y(t)                    Output
+ẋ(t)                    Time derivative of state
+ẍ(t)                    Second derivative of state
+
+ẋ = f(x, u)            Nonlinear system dynamics
+ẋ = Ax + Bu            Linear time-invariant (LTI) system
+y = Cx + Du             Output equation
+
+A                       State matrix
+B                       Input matrix
+C                       Output matrix
+D                       Feedthrough matrix
+
+Φ(t)                    State transition matrix
+e^{At}                  Matrix exponential (LTI transition)
+
+G(s)                    Transfer function
+G(s) = C(sI − A)⁻¹B + D Transfer function (state-space form)
+s                       Laplace variable
+
+U(s), Y(s)              Laplace transforms of u(t), y(t)
+Y(s) = G(s)U(s)         Input-output relation
+
+poles(G)                Poles of transfer function
+zeros(G)                Zeros of transfer function
+Re(λ) < 0               Stable eigenvalue condition
+
+K                       Feedback gain
+u = −Kx                 State feedback control
+A − BK                  Closed-loop matrix
+
+r(t)                    Reference signal
+e(t) = r(t) − y(t)      Tracking error
+
+PID                    Proportional–Integral–Derivative controller
+u(t) = Kp e + Ki ∫e dt + Kd ė   PID law
+Kp, Ki, Kd              PID gains
+
+L                      Lyapunov function
+L̇                     Time derivative of Lyapunov function
+L̇ < 0                 Stability condition
+∇L                    Gradient of Lyapunov function
+
+controllable           System controllability
+rank([B AB A²B …])     Controllability matrix
+observable             System observability
+rank([Cᵀ AᵀCᵀ …]ᵀ)     Observability matrix
+
+H∞                     H-infinity control
+‖G‖∞                   H-infinity norm
+LQR                    Linear quadratic regulator
+J = ∫(xᵀQx + uᵀRu) dt   LQR cost
+
+Q, R                   LQR weighting matrices
+P                      Riccati solution
+K = R⁻¹BᵀP             LQR gain
+
+Kalman filter          Optimal state estimator
+x̂                     Estimated state
+P̂                     Estimated covariance
+Kf                     Kalman gain
+
+ω                      Frequency variable
+Bode plot              Magnitude/phase vs frequency
+Nyquist plot           Stability plot
+gain margin            Stability margin
+phase margin           Stability margin
+
+sat(u)                 Saturation nonlinearity
+deadzone               Dead-zone nonlinearity
+hysteresis             Hysteresis effect
+
+discrete-time          Discrete-time system
+xₖ₊₁ = A_d xₖ + B_d uₖ  Discrete dynamics
+yₖ = C_d xₖ + D_d uₖ    Discrete output
+
+z                      Z-transform variable
+G(z)                   Discrete transfer function
+
+=== No. 30 | Game Theory & Economic Equilibrium ===
+
+Symbol                  Meaning
+------                  -------
+N                       Set of players
+i, j                    Player indices
+Aᵢ                     Action set of player i
+aᵢ                     Action of player i
+a = (a₁, …, aₙ)         Action profile
+uᵢ(a)                  Utility/payoff of player i under profile a
+
+BRᵢ(a₋ᵢ)               Best response of player i to opponents’ actions
+aᵢ ∈ BRᵢ(a₋ᵢ)          Best-response condition
+NE                     Nash equilibrium
+a*                     Nash equilibrium action profile
+uᵢ(a*) ≥ uᵢ(aᵢ, a*₋ᵢ)   Nash equilibrium inequality
+
+Δ(Aᵢ)                  Mixed-strategy simplex for player i
+σᵢ                     Mixed strategy of player i
+σ = (σ₁, …, σₙ)         Mixed-strategy profile
+uᵢ(σ)                  Expected utility under mixed strategies
+
+CE                     Correlated equilibrium
+π                      Correlation device
+π(a)                   Probability of recommending action profile a
+
+SG                     Strategic-form game
+EG                     Extensive-form game
+tree                   Game tree
+info set               Information set
+perfect info           Perfect-information game
+imperfect info         Imperfect-information game
+
+SPNE                   Subgame-perfect Nash equilibrium
+rollback               Backward induction
+payoff vector          Payoff tuple for all players
+
+Vᵢ                     Value of player i in repeated game
+δ                      Discount factor
+∞-horizon              Infinite-horizon repeated game
+Folk theorem           Characterization of repeated-game equilibria
+
+mechanism              Mechanism design structure
+allocation rule        Outcome mapping
+payment rule           Transfer/payment mapping
+IC                     Incentive compatibility
+IR                     Individual rationality
+
+VCG                    Vickrey–Clarke–Groves mechanism
+pᵢ                     Payment of player i
+x                      Allocation outcome
+
+auction                Auction mechanism
+bidᵢ                   Bid of player i
+vᵢ                     Valuation of player i
+2nd-price              Second-price (Vickrey) auction
+winner                 Highest bidder
+price                  Second-highest bid
+
+market                 Market environment
+S                      Supply
+D                      Demand
+p                      Price
+p*                     Equilibrium price
+Q*                     Equilibrium quantity
+
+Walrasian eq           Walrasian (competitive) equilibrium
+xᵢ                     Allocation to agent i
+p·xᵢ ≤ wᵢ              Budget constraint
+MRS                    Marginal rate of substitution
+MRT                    Marginal rate of transformation
+
+Pareto                 Pareto efficiency
+Pareto frontier        Set of Pareto-optimal allocations
+uᵢ ↑                   Utility improvement for player i
+
+replicator dynamics    Evolutionary update rule
+ẋᵢ                    Change in population share of strategy i
+fitness                Payoff-as-fitness interpretation
+
+ESS                    Evolutionarily stable strategy
+σ is ESS               Stability condition against mutants
+
+=== No. 31 | Formal Logic, Proof Systems & Type Theory ===
+
+Symbol                  Meaning
+------                  -------
+⊤                       True
+⊥                       False
+¬P                      Negation
+P ∧ Q                   Conjunction
+P ∨ Q                   Disjunction
+P → Q                   Implication
+P ↔ Q                   Biconditional
+
+∀x P(x)                 Universal quantifier
+∃x P(x)                 Existential quantifier
+∃!x P(x)                Unique existence
+
+⊢ P                     P is provable
+Γ ⊢ P                   P is provable from assumptions Γ
+⊨ P                     P is logically valid
+Γ ⊨ P                   P is semantically entailed by Γ
+
+MP                      Modus ponens
+MT                      Modus tollens
+P ⊢ P ∨ Q               Introduction rule
+P ∧ Q ⊢ P               Elimination rule
+
+⟨proof⟩                Proof object (generic)
+derivation              Sequence of inference steps
+
+SK                     Hilbert-style axiom system S–K
+NK                     Natural deduction system
+
+λx. t                   Lambda abstraction
+t u                     Function application
+(λx. t) u               Beta reduction
+t →β t'                 Beta reduction step
+η-reduction             Eta reduction
+
+FV(t)                   Free variables of term t
+BV(t)                   Bound variables of term t
+α-equivalence           Renaming of bound variables
+
+Type                    Generic type
+A : Type                A is a type
+t : A                   Term t has type A
+Γ ⊢ t : A               Typing judgment
+
+A → B                   Function type
+A × B                   Product type
+A + B                   Sum type
+Unit                    Unit type
+Void                    Empty type
+
+Πx:A. B(x)              Dependent function type (Pi type)
+Σx:A. B(x)              Dependent pair type (Sigma type)
+
+Id_A(x,y)               Identity type
+refl_x                  Reflexivity constructor
+
+Curry–Howard            Proposition-as-type correspondence
+P ↔ A                   Logical proposition P corresponds to type A
+proof ↔ term            Proof corresponds to term inhabiting type
+
+induction              Induction principle
+recursion              Recursion principle
+
+≡                       Definitional equality
+=                       Propositional equality
+≃                       Equivalence of types
+≈                       Logical equivalence
+
+⊢ P :: proof            P has a proof object
+⊢ t : A                 t inhabits type A
+
+□                       End of proof
+qed                     End of proof (alternate)
+
+model                   Structure interpreting logic
+M ⊨ P                   Model M satisfies P
+
+Kripke frame            Frame for modal logic
+◇P                      Possibility
+□P                      Necessity
+
+μX. F(X)                Least fixed point
+νX. F(X)                Greatest fixed point
+
+normal form             Fully reduced term
+canonical form          Canonical representative of type
+
+context Γ               Typing or proof context
+weakening               Add unused assumption
+contraction             Merge duplicate assumptions
+exchange                Reorder assumptions
+
+cut rule                Sequent calculus cut rule
+cut elimination         Cut-elimination theorem
+
+⊢ Γ ⇒ Δ                 Sequent
+⇒                       Sequent arrow
+
+=== No. 32 | Category Theory & Abstract Algebraic Structures ===
+
+Symbol                  Meaning
+------                  -------
+𝒞                       Category
+Obj(𝒞)                  Objects of category 𝒞
+Hom_𝒞(A,B)             Morphisms from A to B in 𝒞
+f : A → B               Morphism f from A to B
+id_A                   Identity morphism on A
+g ∘ f                   Composition of morphisms
+
+iso                    Isomorphism
+f is iso               f has inverse morphism
+A ≅ B                  Isomorphic objects
+
+F : 𝒞 → 𝒟              Functor from 𝒞 to 𝒟
+F(f)                   Action of functor on morphism f
+Id_𝒞                  Identity functor on 𝒞
+
+η : F ⇒ G              Natural transformation η from F to G
+η_A                   Component of η at object A
+nat.ity                Naturality condition
+
+lim                    Limit
+colim                  Colimit
+cone                   Cone over diagram
+cocone                 Cocone over diagram
+terminal               Terminal object
+initial                Initial object
+1                      Terminal object (alternate)
+0                      Initial object (alternate)
+
+A × B                  Product of A and B
+A + B                  Coproduct of A and B
+π₁, π₂                 Product projections
+ι₁, ι₂                 Coproduct injections
+
+⊗                       Monoidal tensor
+I                       Monoidal unit
+α                       Associator
+λ, ρ                   Left/right unitors
+σ                       Symmetry (braiding)
+
+adjunction             Adjunction between functors
+F ⊣ G                  F left adjoint to G
+unit η                 Unit of adjunction
+counit ε               Counit of adjunction
+
+monad                  Monad structure
+T                      Monad functor
+η                      Unit
+μ                      Multiplication
+Kleisli                Kleisli category
+
+Grp                    Category of groups
+Ring                   Category of rings
+Mod_R                  Category of R-modules
+Vect_k                 Category of vector spaces over field k
+
+G                       Group
+e                       Identity element
+g⁻¹                    Inverse of g
+gh                      Group multiplication
+
+φ : G → H              Group homomorphism
+ker φ                  Kernel of homomorphism
+im φ                   Image of homomorphism
+
+R                       Ring
+1_R                    Multiplicative identity
+0_R                    Additive identity
+a + b                  Ring addition
+ab                     Ring multiplication
+
+M                       Module over ring R
+r·m                    Scalar multiplication
+
+k                       Field
+V                       Vector space over k
+dim(V)                 Dimension of V
+
+⟨v₁, …, vₙ⟩            Span of vectors
+basis                  Basis of vector space
+lin.indep              Linear independence
+
+End(V)                 Endomorphisms of V
+Aut(V)                 Automorphisms of V
+
+A                       Algebra (generic)
+A-module               Module over algebra A
+
+U(𝔤)                   Universal enveloping algebra of Lie algebra 𝔤
+[ x, y ]               Lie bracket
+ad_x                   Adjoint action
+
+Spec(R)                Spectrum of ring R
+ideal                  Ideal of ring
+max ideal              Maximal ideal
+prime ideal            Prime ideal
+
+monoid                 Monoid structure
+semigroup              Semigroup structure
+groupoid               Category where all morphisms are isomorphisms
+
+fibration              Fibration (categorical)
+opfibration            Opfibration
+pullback               Pullback (fiber product)
+pushout                Pushout (fiber coproduct)
+
+Yoneda                 Yoneda embedding
+h_A                    Hom(A, -)
+⟨A, -⟩                 Representable functor
+Yoneda lemma           Fundamental lemma
+
+Nat(F,G)               Set of natural transformations
+Fun(𝒞,𝒟)               Functor category
+𝒞ᵒᵖ                   Opposite category
+
+=== No. 33 | Topology & Geometric Structures ===
+
+Symbol                  Meaning
+------                  -------
+X                       Topological space
+τ                       Topology on X
+U ∈ τ                   U is an open set
+F = X \ U               Closed set (complement of open)
+cl(A)                   Closure of A
+int(A)                  Interior of A
+bd(A)                   Boundary of A
+
+x ∈ A                   Point x in set A
+x → y                   Sequence converging to y
+lim xₙ = x              Limit of sequence
+
+f : X → Y               Continuous map
+f⁻¹(U) ∈ τ_X            Continuity condition
+homeo                   Homeomorphism
+X ≅ Y                   Homeomorphic spaces
+
+compact                 Compact space
+loc.compact             Locally compact
+connected               Connected space
+path-connected          Path-connected space
+
+⊆                       Subset
+⊂                       Proper subset
+A ∪ B                   Union
+A ∩ B                   Intersection
+
+basis                   Basis for topology
+subbasis                Subbasis for topology
+nbhd(x)                 Neighborhood of x
+
+metric space            Space with metric d
+d(x,y)                  Distance between x and y
+B_r(x)                  Open ball of radius r
+
+complete                Complete metric space
+Cauchy                  Cauchy sequence
+
+manifold                Topological manifold
+dim(M)                  Dimension of manifold M
+chart                   Coordinate chart
+atlas                   Collection of charts
+transition map          Change-of-coordinates map
+
+T_pM                    Tangent space at p
+T*M                    Cotangent space
+vector field            Section of tangent bundle
+differential df         Pushforward of f
+
+π : E → B               Fiber bundle projection
+fiber π⁻¹(b)            Fiber over b
+section                 Right inverse of π
+trivial bundle          Product bundle B × F
+
+covering space          Covering map p : E → X
+deck transformation     Automorphism of covering
+
+homotopy                Continuous deformation
+f ≃ g                   f homotopic to g
+π₁(X)                   Fundamental group
+[γ]                     Homotopy class of loop γ
+
+Hₙ(X)                   n-th homology group
+Hⁿ(X)                   n-th cohomology group
+∂                      Boundary operator
+δ                      Coboundary operator
+
+CW complex              Cell complex
+simplicial complex      Combinatorial complex
+|K|                     Geometric realization of complex K
+
+χ(X)                    Euler characteristic
+genus                   Genus of surface
+
+quotient space          Space X/~ under equivalence relation
+q : X → X/~             Quotient map
+
+embedding               Injective continuous map with homeomorphic image
+immersion               Locally injective differential map
+submanifold             Embedded manifold
+
+oriented                Orientation structure
+orientation form        Volume form
+
+geodesic                Locally length-minimizing curve
+metric tensor g         Riemannian metric
+∇                      Levi-Civita connection
+R                      Riemann curvature tensor
+Ric                    Ricci curvature
+scal                   Scalar curvature
+
+=== No. 34 | Partial Differential Equations & Variational Methods ===
+
+Symbol                  Meaning
+------                  -------
+u(x,t)                  PDE solution (generic)
+∂ₜu                    Time derivative
+∂ᵢu                    Spatial derivative
+∇u                     Gradient
+Δu                     Laplacian
+∇·u                    Divergence
+∇×u                    Curl
+
+u_t = f(u)              PDE in time
+u_t = Δu                Heat equation
+u_tt = Δu               Wave equation
+−Δu = f                 Poisson equation
+∂ₜu + ∇·(u v) = 0       Transport equation
+
+Ω                       Domain
+∂Ω                     Boundary of domain
+n                       Outward unit normal vector
+∂ₙu = ∇u·n              Normal derivative
+
+BC                      Boundary condition
+u = g on ∂Ω             Dirichlet boundary condition
+∂ₙu = h on ∂Ω           Neumann boundary condition
+αu + β∂ₙu = γ           Robin boundary condition
+
+H¹(Ω)                   Sobolev space
+H₀¹(Ω)                  Sobolev space with zero boundary values
+L²(Ω)                   Square-integrable functions
+‖u‖_{H¹}               Sobolev norm
+
+weak form               Weak formulation of PDE
+∫Ω ∇u·∇v dx            Bilinear form (elliptic)
+∫Ω f v dx              Linear functional
+
+a(u,v)                  Bilinear form
+ℓ(v)                    Linear form
+a(u,v) = ℓ(v)           Variational problem
+
+Euler–Lagrange          Euler–Lagrange equation
+δJ(u)                   First variation of functional J
+J[u]                    Functional
+J[u] = ∫Ω F(x,u,∇u) dx  Variational integral
+
+Green’s function        Fundamental solution
+G(x,y)                  Green’s function for operator
+u(x) = ∫Ω G(x,y)f(y)dy  Representation formula
+
+δ                       Dirac delta distribution
+⟨δ, φ⟩ = φ(0)           Distribution action
+D'                      Space of distributions
+
+weak solution           Solution in distributional sense
+u ∈ H¹(Ω)               Weak solution regularity
+∂ₜu ∈ L²(Ω)            Weak time derivative
+
+elliptic                Elliptic operator
+parabolic               Parabolic operator
+hyperbolic              Hyperbolic operator
+
+λ                       Eigenvalue
+φ                       Eigenfunction
+−Δφ = λφ                Eigenvalue problem
+spec(−Δ)                Spectrum of Laplacian
+
+energy                  Energy functional
+E[u]                    Energy of solution u
+Ė[u]                   Time derivative of energy
+
+PDE system              Coupled PDEs
+u = (u₁, …, uₙ)         Vector-valued PDE
+
+∂ᵢⱼu                   Second derivative ∂²u/∂xᵢ∂xⱼ
+Hess(u)                 Hessian matrix of u
+
+PDE operator L          Linear operator
+L(u) = f                PDE in operator form
+
+u ≈ u_h                 Numerical approximation
+Galerkin                Galerkin method
+Ritz                    Ritz method
+FEM                     Finite element method
+
+stability               Stability condition
+coercive                Coercivity of bilinear form
+bounded                 Boundedness of bilinear form
+
+regularity              Regularity of solution
+u ∈ C^k                 k-times continuously differentiable
+u ∈ H^s                 Sobolev regularity
+
+characteristic curve    Curve solving PDE characteristic ODE
+
+=== No. 35 | Linear Algebra, Matrix Analysis & Operator Identities ===
+
+Symbol                  Meaning
+------                  -------
+A, B, C                 Matrices / linear operators
+x, y                    Vectors
+Ax                      Action of matrix A on vector x
+Aᵀ                     Transpose
+A*                     Conjugate transpose
+A⁻¹                    Inverse (if exists)
+A⁺                     Moore–Penrose pseudoinverse
+
+‖x‖₂                   Euclidean norm
+‖A‖₂                   Operator 2-norm
+‖A‖_F                  Frobenius norm
+κ(A)                   Condition number of A
+ρ(A)                   Spectral radius
+
+λᵢ                     Eigenvalues
+vᵢ                     Eigenvectors
+Avᵢ = λᵢ vᵢ            Eigenvalue equation
+spec(A)                Spectrum of A
+
+A = QΛQ⁻¹              Diagonalization
+Λ                      Diagonal matrix of eigenvalues
+Q                      Eigenvector matrix
+
+A = UΣV*               Singular value decomposition (SVD)
+U, V                   Unitary matrices
+Σ                      Diagonal matrix of singular values
+σᵢ                    Singular values
+
+A = PJP⁻¹              Jordan normal form
+J                      Jordan matrix
+P                      Change-of-basis matrix
+
+tr(A)                  Trace of A
+det(A)                 Determinant of A
+rank(A)                Rank of A
+null(A)                Null space of A
+range(A)               Column space of A
+
+proj_V(x)              Projection of x onto subspace V
+P_V                    Projection operator
+P_V² = P_V             Idempotence of projection
+
+orth(V)                Orthogonal complement of V
+V ⊥ W                  V orthogonal to W
+Q orthonormal          Q has orthonormal columns
+
+A ⊗ B                  Kronecker product
+A ⊙ B                  Hadamard (elementwise) product
+A ∘ B                  Composition of operators
+
+∂A/∂x                 Matrix derivative
+∂(Ax)/∂A              Derivative of Ax w.r.t. A
+∇ₓ f(x)               Gradient of scalar function f
+∇²ₓ f(x)              Hessian matrix
+
+A ≽ 0                 Positive semidefinite
+A ≻ 0                 Positive definite
+xᵀAx ≥ 0              PSD condition
+xᵀAx > 0              PD condition
+
+A = LLᵀ               Cholesky factorization
+L                      Lower-triangular factor
+
+A = QR                QR decomposition
+Q                      Orthogonal/unitary matrix
+R                      Upper-triangular matrix
+
+A = LU                LU decomposition
+L                      Lower-triangular matrix
+U                      Upper-triangular matrix
+
+A⁻¹ = adj(A)/det(A)   Adjugate formula
+adj(A)                Adjugate matrix
+
+I                      Identity matrix
+0                      Zero matrix
+Eᵢⱼ                    Matrix with 1 at (i,j) and 0 elsewhere
+
+A + εI                Regularization shift
+A + uvᵀ               Rank-one update
+Sherman–Morrison       (A + uvᵀ)⁻¹ identity
+
+block matrix           Matrix partitioned into blocks
+diag(a₁,…,aₙ)          Diagonal matrix
+blkdiag(A₁,…,Aₙ)       Block diagonal matrix
+
+Aᵏ                    Matrix power
+e^{A}                  Matrix exponential
+log(A)                 Matrix logarithm
+
+comm(A,B)             Commutator AB − BA
+anticomm(A,B)         Anticommutator AB + BA
+
+A ≈ A_h               Numerical approximation
+cond(A)               Conditioning measure
+stable                Stability of operator
+
+=== No. 36 | Fourier Analysis, Harmonic Analysis & Signal Processing ===
+
+Symbol                  Meaning
+------                  -------
+f(t)                    Time-domain signal
+F(ω)                    Frequency-domain representation
+ω                      Angular frequency
+ξ                      Frequency variable (alternate)
+k                      Fourier mode index
+
+∫ f(t) dt               Integral of signal
+⟨f, g⟩                 Inner product of functions
+‖f‖₂                   L2 norm of f
+
+F(ω) = ∫ f(t)e^{-iωt}dt  Fourier transform
+f(t) = (1/2π)∫ F(ω)e^{iωt}dω  Inverse Fourier transform
+
+F[k]                    Discrete Fourier transform (DFT)
+f[n]                    Discrete-time signal
+DFT(f)[k]               DFT of f
+IDFT(F)[n]              Inverse DFT
+
+FFT                     Fast Fourier transform
+IFFT                    Inverse FFT
+
+a₀, aₙ, bₙ             Fourier series coefficients
+f(t) = a₀ + ∑(aₙ cos nt + bₙ sin nt)  Fourier series
+
+δ(t)                    Dirac delta
+δ(t - t₀)               Shifted delta
+rect(t)                 Rectangular function
+sinc(t)                 Sinc function
+
+*                       Convolution operator
+(f * g)(t)              Convolution of f and g
+F(ω)G(ω)                Convolution theorem (frequency domain)
+
+H(ω)                    Transfer function
+Y(ω) = H(ω)X(ω)         Input-output relation in frequency domain
+
+LPF                     Low-pass filter
+HPF                     High-pass filter
+BPF                     Band-pass filter
+BSF                     Band-stop filter
+
+h[n]                    Impulse response
+x[n] * h[n]             Linear time-invariant filtering
+y[n]                    Filtered output
+
+Z-transform             Z-transform of discrete signal
+X(z)                    Z-transform
+z                      Complex variable for Z-transform
+
+STFT                    Short-time Fourier transform
+STFT_f(t, ω)            Time-frequency representation
+window(t)               Window function
+
+wavelet                 Wavelet function
+ψ(t)                    Mother wavelet
+ψ_{a,b}(t)              Scaled/translated wavelet
+W_f(a,b)                Wavelet transform
+
+bandwidth               Frequency width of signal
+support                 Region where signal is nonzero
+aliasing                Frequency overlap due to sampling
+Nyquist rate            Minimum sampling rate (2× highest frequency)
+
+sampling                Discrete measurement of signal
+x[n] = f(nT)            Sampled signal
+T                      Sampling period
+fs = 1/T                Sampling frequency
+
+modulation              Frequency shifting
+AM                      Amplitude modulation
+FM                      Frequency modulation
+
+Hilbert transform       Quadrature transform
+H(f)(t)                 Hilbert transform of f
+analytic signal         f + iH(f)
+
+Parseval                Parseval identity
+∫ |f(t)|² dt = ∫ |F(ω)|² dω  Energy equality
+
+orth basis              Orthogonal basis of functions
+e^{iωt}                 Complex exponential basis
+φₙ                     Orthonormal basis function
+
+spectrogram             Time-frequency energy plot
+power spectrum          |F(ω)|²
+phase spectrum          arg(F(ω))
+
+LTI system              Linear time-invariant system
+shift-invariant         Invariance under time shift
+
+=== No. 37 | Probability Theory, Random Processes & Statistical Distributions ===
+
+Symbol                  Meaning
+------                  -------
+Ω                       Sample space
+𝒜                       Sigma-algebra
+P                      Probability measure
+(Ω, 𝒜, P)              Probability space
+
+A ∈ 𝒜                  Event
+P(A)                   Probability of event A
+Aᶜ                     Complement of A
+A ∪ B                  Union of events
+A ∩ B                  Intersection of events
+
+X                       Random variable
+X : Ω → ℝ               Real-valued random variable
+E[X]                    Expectation
+Var(X)                  Variance
+Cov(X,Y)                Covariance
+Corr(X,Y)               Correlation
+
+E[X|Y]                  Conditional expectation
+P(A|B)                  Conditional probability
+Bayes                   Bayes’ rule
+P(A|B) = P(B|A)P(A)/P(B) Bayes formula
+
+X ⟂ Y                   Independence
+X ⟂ Y | Z               Conditional independence
+
+f_X(x)                  Probability density function (pdf)
+F_X(x)                  Cumulative distribution function (cdf)
+p_X(k)                  Probability mass function (pmf)
+
+δ(x)                    Dirac delta (distribution)
+1_A(x)                  Indicator function of event A
+
+μ                       Mean
+σ²                      Variance
+σ                       Standard deviation
+
+𝒩(μ,σ²)                Normal distribution
+Exp(λ)                  Exponential distribution
+Poisson(λ)              Poisson distribution
+Bin(n,p)                Binomial distribution
+Geom(p)                 Geometric distribution
+Unif(a,b)               Uniform distribution
+Gamma(α,β)              Gamma distribution
+Beta(α,β)               Beta distribution
+χ²(k)                   Chi-square distribution
+t(k)                    Student-t distribution
+
+MGF_X(t)                Moment-generating function
+CF_X(t)                 Characteristic function
+Laplace_X(s)            Laplace transform of distribution
+
+Xₙ → X                  Convergence (generic)
+Xₙ → X a.s.             Almost-sure convergence
+Xₙ → X in prob          Convergence in probability
+Xₙ → X in dist          Convergence in distribution
+LLN                     Law of large numbers
+CLT                     Central limit theorem
+
+Sₙ = X₁ + … + Xₙ        Partial sum
+Zₙ = (Sₙ − nμ)/(σ√n)    Standardized sum (CLT)
+
+process                 Stochastic process
+X(t)                    Process indexed by t
+Xₙ                     Discrete-time process
+{X_t}                   Family of random variables
+
+Markov chain            Markov process
+P_ij                    Transition probability
+π                       Stationary distribution
+πP = π                  Stationarity condition
+
+martingale              Martingale process
+E[Xₙ₊₁ | 𝒜ₙ] = Xₙ       Martingale property
+submartingale           Submartingale
+supermartingale         Supermartingale
+
+stopping time           Random time satisfying measurability
+τ                       Stopping time
+optional stopping       Optional stopping theorem
+
+Brownian motion         Standard Wiener process
+B(t)                    Brownian motion at time t
+B(0)=0                  Initial condition
+indep increments        Independent increments
+Gaussian increments     Normal increments
+
+Ito integral            Stochastic integral
+∫ f dB                 Ito integral
+dX = μ dt + σ dB        Ito SDE
+
+Fokker–Planck           Fokker–Planck equation
+Kolmogorov forward      Forward equation
+Kolmogorov backward     Backward equation
+
+entropy                 Shannon entropy
+H(X)                    Entropy of X
+I(X;Y)                  Mutual information
+D(P‖Q)                  KL divergence
+
+risk                    Expected loss
+E[L(X)]                 Risk functional
+
+=== No. 38 | Numerical Optimization, Convex Analysis & Algorithmic Methods ===
+
+Symbol                  Meaning
+------                  -------
+f(x)                    Objective function
+min f(x)                Minimization problem
+argmin f(x)             Minimizer of f
+∇f(x)                   Gradient of f
+∇²f(x)                  Hessian of f
+g(x)                    Constraint function
+
+convex                  Convex function or set
+concave                 Concave function
+∂f(x)                   Subgradient of f
+∂f(x) ∋ v               v is a subgradient of f
+f convex ⇒ ∂f nonempty  Subgradient existence
+
+C                       Convex set
+x ∈ C                   x is feasible
+proj_C(x)               Projection onto C
+P_C(x)                  Projection operator
+
+L(x,λ)                  Lagrangian
+λ                      Lagrange multiplier
+KKT                    Karush–Kuhn–Tucker conditions
+stationarity            ∇f(x) + ∑ λᵢ ∇gᵢ(x) = 0
+primal feasibility      gᵢ(x) ≤ 0
+dual feasibility        λᵢ ≥ 0
+comp. slackness         λᵢ gᵢ(x) = 0
+
+dual problem            Optimization dual
+d(λ)                    Dual function
+max d(λ)                Dual maximization
+strong duality          primal optimum = dual optimum
+
+prox_f(x)               Proximal operator of f
+prox_f(x) = argmin_u f(u) + (1/2)‖u−x‖²
+soft-threshold          Prox operator for L1 norm
+
+GD                     Gradient descent
+x_{k+1} = x_k − α∇f(x_k)  GD update
+α                      Step size / learning rate
+line search             Step-size selection
+Armijo                  Armijo condition
+Wolfe                   Wolfe conditions
+
+SGD                    Stochastic gradient descent
+x_{k+1} = x_k − α g_k   Stochastic update
+g_k                    Stochastic gradient estimate
+
+momentum               Momentum term
+v_{k+1} = βv_k + ∇f(x_k)
+x_{k+1} = x_k − αv_{k+1}
+
+NAG                    Nesterov accelerated gradient
+x_{k+1} = y_k − α∇f(y_k)
+y_k = x_k + β(x_k − x_{k−1})
+
+Newton                 Newton’s method
+x_{k+1} = x_k − (∇²f(x_k))⁻¹ ∇f(x_k)
+
+quasi-Newton           Approximate Hessian methods
+BFGS                   BFGS update
+LBFGS                  Limited-memory BFGS
+
+barrier method         Interior-point method
+φ(x)                   Barrier function
+f(x) + μφ(x)           Barrier objective
+μ                      Barrier parameter
+
+trust region           Trust-region method
+‖p‖ ≤ Δ                Trust-region constraint
+Δ                      Trust-region radius
+
+conjugate gradient     CG method
+p_k                    Search direction
+A p_k                  Matrix-vector product
+
+coordinate descent     Coordinate-wise optimization
+update xᵢ only         Single-coordinate update
+
+ADMM                   Alternating direction method of multipliers
+x-update               Primal update
+z-update               Auxiliary update
+λ-update               Dual update
+
+Lipschitz              Lipschitz continuity
+‖∇f(x) − ∇f(y)‖ ≤ L‖x−y‖  Gradient Lipschitz constant
+
+strongly convex        Strong convexity
+f(x) − f(x*) ≥ (m/2)‖x−x*‖²  Strong convexity inequality
+
+condition number        κ = L/m for strongly convex f
+convergence rate        Algorithmic rate (GD: O(1/k), accelerated: O(1/k²))
+
+stochastic process      Optimization with randomness
+variance reduction       Reduce gradient variance
+SVRG                    Stochastic variance-reduced gradient
+
+projection step         Enforce constraints
+x_{k+1} = proj_C(x_k − α∇f(x_k))
+
+penalty method          Add penalty for constraint violation
+f(x) + ρ‖g(x)‖          Penalty objective
+ρ                      Penalty parameter
+
+augmented Lagrangian    Lagrangian + penalty term
+AL(x,λ)                Augmented Lagrangian
+
+termination criteria    Stop condition
+‖∇f(x)‖ ≤ ε            Gradient tolerance
+|f(x_k)−f(x_{k−1})| ≤ ε Objective tolerance
+
+=== No. 39 | Information Geometry, Statistical Manifolds & Divergence Structures ===
+
+Symbol                  Meaning
+------                  -------
+𝒫                       Statistical manifold of distributions
+p(x;θ)                  Parametric family of densities
+θ                       Natural parameter
+η                       Expectation parameter
+Θ                       Parameter space
+
+ℓ(θ)                    Log-likelihood
+∂ᵢℓ                    Partial derivative of log-likelihood
+∂ᵢ∂ⱼℓ                 Second derivative of log-likelihood
+
+gᵢⱼ                    Fisher information metric
+gᵢⱼ = E[∂ᵢℓ ∂ⱼℓ]       Fisher metric definition
+g⁻¹                    Inverse Fisher metric
+
+∇                      Levi-Civita connection
+∇^{(e)}                Exponential connection
+∇^{(m)}                Mixture connection
+dual connections        Dual affine connections
+
+exp family              Exponential family
+p(x;θ) = h(x)exp(θ·T(x) − A(θ))
+A(θ)                    Log-partition function
+T(x)                    Sufficient statistic
+
+η = E[T(x)]             Expectation parameter
+θ ↔ η                   Dual coordinate systems
+
+KL(p‖q)                 Kullback–Leibler divergence
+D(p‖q)                  Divergence (generic)
+B_F(p,q)                Bregman divergence for convex F
+B_F(p,q) = F(p) − F(q) − ∇F(q)·(p−q)
+
+mirror map              Mirror descent map
+ψ                      Mirror potential
+∇ψ                     Mirror embedding
+MD update               Mirror descent update
+
+nat.grad                Natural gradient
+θ_{k+1} = θ_k − α g⁻¹ ∇ℓ  Natural gradient update
+
+geodesic                Shortest path under Fisher metric
+γ(t)                    Geodesic curve
+∇_{γ̇}γ̇ = 0            Geodesic equation
+
+curvature               Riemannian curvature
+Rᵢⱼₖₗ                  Curvature tensor
+flat                    Zero curvature
+dually flat             Flat under dual connections
+
+I-projection            Information projection
+M-projection            Mixture projection
+p_I                    I-projection onto manifold
+p_M                    M-projection onto manifold
+
+entropy                 Shannon entropy
+H(p)                    Entropy of distribution p
+∇H                     Entropy gradient
+
+score function          Gradient of log-likelihood
+s(x;θ) = ∂θ log p(x;θ)
+
+Fisher–Rao              Fisher–Rao metric
+FR distance             Geodesic distance under Fisher metric
+
+Amari α-connection      α-connection family
+∇^{(α)}                α-connection
+α = ±1                 Exponential/mixture connections
+
+dual flatness           Dual affine coordinate systems
+θ-coordinates           Natural coordinates
+η-coordinates           Expectation coordinates
+
+transport               Parallel transport
+PTᵧ→ₓ(v)               Transport of vector v from y to x
+
+statistical curvature    Curvature of statistical model
+κ                      Curvature scalar
+
+information potential    Potential generating divergence
+F                      Convex potential
+∇F                     Gradient of potential
+
+metric tensor           Riemannian metric
+g                      Fisher metric tensor
+
+Jacobian                Jacobian matrix of transformation
+J                      Jacobian determinant
+
+pullback metric         Metric induced by mapping
+φ* g                   Pullback of metric g by φ
+
+embedding               Embedding of statistical manifold
+immersion               Immersion map
+
+duality                 Dual coordinate systems
+Legendre                Legendre transform
+F*                     Convex conjugate of F
+
+=== No. 40 | Quantum Field Theory, Gauge Theory & Operator Formalism ===
+
+Symbol                  Meaning
+------                  -------
+φ(x)                    Scalar field
+A_μ(x)                  Gauge field
+ψ(x)                    Fermion field
+χ(x)                    Generic field
+x = (t,⃗x)              Spacetime point
+
+ℒ                      Lagrangian density
+S = ∫ℒ d⁴x             Action functional
+δS = 0                 Stationary action principle
+Euler–Lagrange eq      ∂ℒ/∂φ − ∂_μ(∂ℒ/∂(∂_μφ)) = 0
+
+∂_μ                    Partial derivative
+∂^μ                    Raised-index derivative
+□ = ∂_μ∂^μ             D’Alembert operator
+
+ℒ = ½(∂φ)² − V(φ)      Scalar field Lagrangian
+V(φ)                   Potential
+m                      Mass parameter
+
+ψ̄ = ψ†γ⁰              Dirac adjoint
+γ^μ                    Gamma matrices
+{γ^μ,γ^ν} = 2η^{μν}    Clifford algebra
+ℒ_Dirac                Dirac Lagrangian
+
+A_μ                    Gauge potential
+F_μν = ∂_μA_ν − ∂_νA_μ Field strength tensor
+F^a_μν                 Non-Abelian field strength
+D_μ                    Covariant derivative
+D_μ = ∂_μ + igA_μ      Gauge-covariant derivative
+
+G                      Gauge group
+T^a                    Lie algebra generators
+[ T^a, T^b ] = if^{abc} Structure constants
+
+U(x)                   Gauge transformation
+φ → Uφ                 Field transformation
+A_μ → U A_μ U⁻¹ − (i/g)(∂_μU)U⁻¹  Gauge transformation law
+
+ℒ = −¼F_μνF^{μν}       Yang–Mills Lagrangian
+g                      Gauge coupling constant
+
+π(x)                   Canonical momentum conjugate to φ
+[ φ(x), π(y) ] = iδ(x−y) Canonical commutation relation
+{ ψ(x), ψ†(y) } = δ(x−y) Canonical anticommutation
+
+|0⟩                    Vacuum state
+a_k, a†_k              Annihilation/creation operators
+H                      Hamiltonian operator
+P_μ                    Momentum operator
+
+⟨0|T{φ(x)φ(y)}|0⟩      Time-ordered two-point function
+Δ_F(x−y)               Feynman propagator
+G_F                    Propagator (generic)
+
+path integral          Functional integral
+∫Dφ e^{iS[φ]}          Path-integral formulation
+Z                      Partition function
+Z[J]                   Generating functional with source J
+
+W[J]                   Connected generating functional
+Γ[φ]                   Effective action
+1PI                    One-particle-irreducible diagrams
+
+vertex                 Interaction vertex
+propagator             Internal line
+Feynman rules          Diagrammatic rules
+
+renormalization        Removal of divergences
+Λ                      Cutoff scale
+μ                      Renormalization scale
+β(g)                   Beta function
+RG flow                Renormalization-group flow
+
+symmetry               Invariance of action
+Noether current        Conserved current
+j^μ                    Noether current
+Q                      Conserved charge
+
+spontaneous breaking   Spontaneous symmetry breaking
+⟨φ⟩ ≠ 0               Nonzero vacuum expectation value
+Goldstone boson        Massless excitation from broken symmetry
+
+Higgs field            Scalar field with potential
+m_H                    Higgs mass
+v                      Vacuum expectation value
+
+topological charge     Topological invariant
+instanton              Nonperturbative solution
+θ-term                 Topological term in action
+
+BRST                   BRST symmetry
+ghost fields           Fadeev–Popov ghosts
+c, c̄                  Ghost/antighost fields
+
+S-matrix               Scattering matrix
+⟨f|S|i⟩                Transition amplitude
+σ                      Cross section
+M                      Scattering amplitude
+
+unitarity              Conservation of probability
+optical theorem        Im( M ) ∝ |M|² relation
+
+operator product       OPE
+O(x)O(y) ~ ∑ C_n(x−y)O_n(y)  OPE expansion
+
+=== No. 41 | Statistical Mechanics, Thermodynamics & Ensemble Theory ===
+
+Symbol                  Meaning
+------                  -------
+Ω                       Microstate space
+E                       Energy of microstate
+N                       Particle number
+V                       Volume
+T                       Temperature
+β = 1/(k_B T)           Inverse temperature
+k_B                    Boltzmann constant
+
+S                       Entropy
+S = k_B ln Ω            Microcanonical entropy
+H                      Thermodynamic entropy (generic)
+
+Z                      Partition function (canonical)
+Z = ∑_i e^{-βE_i}       Canonical partition sum
+ln Z                   Log-partition function
+
+F                      Helmholtz free energy
+F = -k_B T ln Z         Free energy definition
+G                      Gibbs free energy
+H_th                   Enthalpy
+U                      Internal energy
+
+⟨E⟩                    Expected energy
+⟨A⟩                    Ensemble average of observable A
+ΔE²                    Energy variance
+C_V                    Heat capacity at constant volume
+
+ρ                      Density matrix
+ρ = e^{-βH}/Z          Canonical density operator
+Tr                    Trace operator
+⟨A⟩ = Tr(ρA)           Quantum ensemble average
+
+microcanonical          Microcanonical ensemble
+canonical               Canonical ensemble
+grand canonical         Grand-canonical ensemble
+
+Ξ                      Grand partition function
+Ξ = ∑_{N,E} e^{-β(E−μN)}  Grand-canonical sum
+μ                      Chemical potential
+
+P                      Pressure
+P = -∂F/∂V             Pressure from free energy
+σ                      Entropy density
+ε                      Energy density
+
+phase space             Classical phase space
+Γ                      Phase-space point
+∫ dΓ                   Phase-space integral
+
+Liouville               Liouville equation
+∂ρ/∂t = {H,ρ}          Classical Liouville equation
+{ , }                  Poisson bracket
+
+correlation             Correlation function
+C(t) = ⟨A(t)A(0)⟩       Time correlation
+G(x−y)                 Spatial correlation
+
+order parameter         Quantity distinguishing phases
+m                      Magnetization (Ising model)
+φ                      Field order parameter
+
+phase transition        Change of phase
+critical point          Critical parameter value
+χ                      Susceptibility
+ξ                      Correlation length
+
+mean-field              Mean-field approximation
+m = ⟨s⟩                Mean-field magnetization
+self-consistency        m = tanh(βJm)
+
+Ising model             Spin model
+s_i = ±1                Spin variable
+H = −J∑ s_i s_j         Ising Hamiltonian
+
+partitioning            Coarse-graining
+RG                     Renormalization group
+b                      Rescaling factor
+flow eq                 RG flow equation
+
+entropy production      Nonequilibrium thermodynamics
+σ_prod                 Entropy production rate
+J                      Flux
+X                      Thermodynamic force
+
+Kubo                    Kubo formula
+⟨A⟩ response           Linear response theory
+transport coeff         Transport coefficient
+
+fluctuation             Fluctuation–dissipation relation
+⟨A²⟩ − ⟨A⟩²            Fluctuation magnitude
+
+free energy landscape   Energy surface over configuration space
+minima                  Stable states
+barriers                Transition barriers
+
+Boltzmann factor        e^{-βE}
+Maxwell–Boltzmann       Classical velocity distribution
+f(v)                   Velocity distribution
+
+entropy functional      S[ρ]
+variational principle   δ(S − βU − αN) = 0
+
+=== No. 42 | Differential Geometry, Connections & Tensor Calculus ===
+
+Symbol                  Meaning
+------                  -------
+M                       Smooth manifold
+dim(M)                  Dimension of manifold
+p ∈ M                   Point on manifold
+U ⊆ M                   Coordinate neighborhood
+x^i                    Local coordinates
+
+T_pM                    Tangent space at p
+T*M                    Cotangent space at p
+v ∈ T_pM                Tangent vector
+ω ∈ T*_pM               Covector
+
+∂/∂x^i                 Coordinate basis vector
+dx^i                   Dual basis covector
+v = v^i ∂/∂x^i          Vector expansion
+ω = ω_i dx^i            Covector expansion
+
+tensor                  Multilinear map
+T ∈ (T*M)^r ⊗ (T_pM)^s  (r,s)-tensor
+T_{i₁…i_r}^{j₁…j_s}     Tensor components
+
+g                       Riemannian metric
+g_{ij}                  Metric components
+g^{ij}                  Inverse metric
+‖v‖² = g(v,v)           Norm induced by metric
+
+∇                      Covariant derivative
+∇_v w                  Covariant derivative of w along v
+∇_i v^j                Components of covariant derivative
+
+Γ^k_{ij}               Christoffel symbols
+Γ^k_{ij} = ½ g^{kl}(∂_i g_{jl} + ∂_j g_{il} − ∂_l g_{ij})
+
+geodesic                Curve with zero acceleration
+γ(t)                    Geodesic curve
+∇_{γ̇}γ̇ = 0            Geodesic equation
+γ̈^k + Γ^k_{ij}γ̇^iγ̇^j = 0  Geodesic components
+
+R                      Riemann curvature tensor
+R^l_{ijk}              Curvature components
+R(X,Y)Z                Curvature operator
+
+Ric                    Ricci curvature
+Ric_{ij}               Ricci tensor components
+scal                   Scalar curvature
+scal = g^{ij}Ric_{ij}  Scalar curvature definition
+
+K                      Sectional curvature
+K(σ)                   Curvature of 2-plane σ
+
+∇·v                    Divergence of vector field
+∇×v                    Curl (in 3D)
+Δf                     Laplace–Beltrami operator
+Δf = ∇·∇f              Laplacian on manifold
+
+Ω¹(M)                  Space of 1-forms
+Ω^k(M)                 Space of k-forms
+ω ∧ η                  Wedge product
+dω                     Exterior derivative
+d² = 0                 Nilpotency of exterior derivative
+
+∫_γ ω                  Integral of 1-form along curve γ
+∫_Σ ω                  Integral of k-form over k-surface Σ
+
+Lie bracket            Commutator of vector fields
+[X,Y]                  Lie bracket
+[X,Y] = XY − YX        Definition
+
+Lie derivative         Derivative along flow
+ℒ_X T                  Lie derivative of tensor T along X
+
+connection             Rule for differentiating vector fields
+torsion                Torsion tensor
+T(X,Y) = ∇_X Y − ∇_Y X − [X,Y]
+
+holonomy               Parallel transport around loops
+PT_γ                   Parallel transport along γ
+
+bundle                 Fiber bundle
+π : E → M              Projection map
+section                Smooth selection of fiber elements
+
+principal bundle       Bundle with structure group G
+connection 1-form      Gauge connection
+curvature 2-form       Gauge curvature
+
+Hodge star             Hodge dual operator
+*ω                     Hodge dual of ω
+Δ = dδ + δd            Hodge Laplacian
+
+volume form            Top-degree form
+vol_M                  Riemannian volume form
+∫_M vol_M              Total volume
+
+Jacobian               Jacobian matrix of coordinate change
+J                      Jacobian determinant
+
+isometry               Metric-preserving map
+φ* g = g               Pullback metric condition
+
+embedding               Injective immersion with homeomorphic image
+immersion               Map with injective differential
+submanifold             Embedded manifold
+
+frame                   Basis of tangent space
+orthonormal frame       Frame with g(e_i,e_j)=δ_ij
+
+connection coefficients  Christoffel symbols in frame
+ω^i_j                  Connection 1-forms
+Ω^i_j                  Curvature 2-forms
+
+Cartan structure eqs    Cartan’s equations
+de^i + ω^i_j ∧ e^j = 0  First structure equation
+Ω^i_j = dω^i_j + ω^i_k ∧ ω^k_j  Second structure equation
+
+=== No. 43 | Complex Analysis, Holomorphic Functions & Conformal Structures ===
+
+Symbol                  Meaning
+------                  -------
+z = x + iy              Complex variable
+ℂ                       Complex plane
+Re(z)                   Real part of z
+Im(z)                   Imaginary part of z
+|z|                     Modulus
+arg(z)                  Argument (angle)
+
+f(z)                    Complex function
+holomorphic             Complex differentiable
+analytic                Representable by power series
+f'(z)                   Complex derivative
+
+∂/∂z, ∂/∂z̄            Wirtinger derivatives
+∂/∂z = ½(∂/∂x − i∂/∂y)
+∂/∂z̄ = ½(∂/∂x + i∂/∂y)
+
+CR eqns                 Cauchy–Riemann equations
+u_x = v_y, u_y = −v_x   CR conditions for f = u + iv
+
+contour                 Curve in complex plane
+∮_γ f(z) dz             Contour integral
+Cauchy integral         f(z₀) = (1/2πi)∮ f(z)/(z−z₀) dz
+
+residue                 Residue at pole
+Res(f,z₀)               Residue of f at z₀
+∮ f(z) dz = 2πi ∑ Res   Residue theorem
+
+singularity             Non-analytic point
+pole                    Pole of order n
+essential               Essential singularity
+removable               Removable singularity
+
+Laurent series          Expansion around singularity
+f(z) = ∑ a_n (z−z₀)^n   Laurent expansion
+principal part          Negative-power terms
+
+meromorphic             Holomorphic except poles
+entire                  Holomorphic on all ℂ
+
+branch cut              Cut for multi-valued functions
+branch point            Point where function is multi-valued
+analytic continuation    Extension of analytic function
+
+log z                   Complex logarithm
+z^α                     Complex power
+√z                      Complex square root
+
+conformal               Angle-preserving map
+f'(z) ≠ 0               Conformal condition
+Mobius                  Möbius transformation
+f(z) = (az + b)/(cz + d) Möbius form
+
+Riemann surface         Surface supporting multi-valued functions
+chart                   Local coordinate patch
+atlas                   Collection of charts
+
+complex manifold        Manifold with holomorphic charts
+holomorphic map         Complex-differentiable map between manifolds
+
+harmonic                Laplace equation solution
+Δu = 0                  Harmonic function
+u = Re(f)               Real part of holomorphic function is harmonic
+
+Green’s function        Fundamental solution in complex domain
+Poisson kernel          Boundary kernel for harmonic extension
+
+Schwarz lemma           Bound for holomorphic maps
+maximum modulus         Maximum modulus principle
+
+Joukowski               Conformal map for airfoil theory
+z + 1/z                 Joukowski transform
+
+complex integral        Integral over complex domain
+∫∫_D f(z) dA           Area integral
+
+w = f(z)                Complex mapping
+image(f)                Image of domain under f
+preimage(f)             Preimage under f
+
+holomorphic 1-form      Differential form of type (1,0)
+dz                      Holomorphic differential
+dz̄                     Anti-holomorphic differential
+
+∂, ∂̄                  Dolbeault operators
+∂² = 0, ∂̄² = 0         Nilpotency
+∂∂̄                    Mixed operator
+
+Laplace–Beltrami        Laplacian on complex manifold
+Δ = 4∂∂̄               Complex Laplacian
+
+Jacobian                Jacobian of complex map
+J = |f'(z)|²            Conformal scaling factor
+
+resolvent               (zI − A)⁻¹ in operator theory
+spectrum                Complex spectrum of operator
+
+=== No. 44 | Algebraic Topology, Homology, Cohomology & Fundamental Structures ===
+
+Symbol                  Meaning
+------                  -------
+X                       Topological space
+C_n(X)                  n-chains on X
+∂_n                    Boundary operator
+∂_{n}∂_{n+1} = 0        Boundary nilpotency
+
+Z_n(X)                  n-cycles (ker ∂_n)
+B_n(X)                  n-boundaries (im ∂_{n+1})
+H_n(X) = Z_n/B_n        n-th homology group
+
+cochain                 Dual of chain
+C^n(X)                  n-cochains
+δ                      Coboundary operator
+δ² = 0                 Coboundary nilpotency
+H^n(X)                  n-th cohomology group
+
+pair (X,A)              Topological pair
+H_n(X,A)                Relative homology
+long exact seq          Long exact sequence of pair
+
+f_*                     Induced map on homology
+f^*                     Induced map on cohomology
+
+π₁(X)                   Fundamental group
+[γ]                     Homotopy class of loop γ
+covering space          Space with projection p : E → X
+deck transformation     Automorphism of covering
+
+CW complex              Cell complex
+cell                    Building block of CW complex
+attaching map           Map gluing cells
+
+simplicial complex      Combinatorial complex
+Δ^n                     Standard n-simplex
+|K|                     Geometric realization
+
+chain complex           Sequence of abelian groups with boundary maps
+… → C_{n+1} → C_n → C_{n-1} → …
+
+exact                   Exactness at group G: im = ker
+short exact seq         0 → A → B → C → 0
+
+tensor product          Tensoring chain complexes
+Künneth                 Künneth theorem
+H_n(X×Y)                Homology of product space
+
+cup product             Cohomology product
+α ∪ β                   Cup product
+cap product             Homology–cohomology pairing
+α ∩ c                   Cap product
+
+Poincaré duality        Duality on oriented manifolds
+H^k(M) ≅ H_{n−k}(M)     Duality relation
+
+Mayer–Vietoris          MV sequence for union of spaces
+H_n(U∪V)                Homology of union
+
+spectral sequence       Computational tool for filtered complexes
+E_r^{p,q}               Page r entry
+d_r                    Differential on page r
+E_∞                    Limiting page
+
+fibration               Fiber bundle with homotopy lifting
+π : E → B              Projection
+F                      Fiber
+long exact seq π        Homotopy LES of fibration
+
+characteristic class    Cohomology class describing bundle
+c₁, c₂,…                Chern classes
+p₁, p₂,…                Pontryagin classes
+e                      Euler class
+w₁, w₂,…                Stiefel–Whitney classes
+
+orientation class       Fundamental class in top homology
+[ M ]                   Fundamental class of manifold M
+
+degree                  Degree of map between manifolds
+deg(f)                  Integer degree
+
+homotopy group          Higher homotopy groups
+π_n(X)                  n-th homotopy group
+π_n(S^k)                Homotopy of spheres
+
+Hurewicz                Hurewicz homomorphism
+h : π_n(X) → H_n(X)     Map from homotopy to homology
+
+Whitehead               Whitehead product
+[α,β]                   Product of homotopy classes
+
+loop space              Space of loops ΩX
+ΩX                      Based loop space
+ΣX                      Suspension of X
+
+Eilenberg–MacLane       K(G,n) spaces
+K(G,n)                  Space with π_n = G and others trivial
+
+universal coefficient   UCT for homology/cohomology
+Tor, Ext                Derived functors in UCT
+
+cohomology ring         Ring structure on H^*(X)
+graded                  Graded algebra structure
+
+chain homotopy          Homotopy between chain maps
+f ≃ g                   Chain-homotopic maps
+
+homotopy equivalence    Maps inducing isomorphisms on homotopy groups
+X ≃ Y                   Homotopy equivalent spaces
+
+cellular boundary       Boundary formula for CW complex
+∂e^n                   Boundary of n-cell
+
+Bockstein               Bockstein homomorphism
+β                      Connecting homomorphism
+
+universal cover         Simply connected covering space
+π₁(X) trivial           Condition for universal cover
+
+Postnikov tower         Decomposition by homotopy groups
+k-invariant             Obstruction class
+
+cofibration             Map with homotopy extension property
+mapping cone            Cone construction
+mapping cylinder        Cylinder construction
+
+=== No. 45 | Nonlinear Dynamics, Chaos Theory & Dynamical Systems ===
+
+Symbol                  Meaning
+------                  -------
+x(t)                    State variable at time t
+ẋ = f(x)                Autonomous ODE system
+ẋ = f(x,t)              Non-autonomous system
+f                      Vector field
+φ_t(x)                  Flow map at time t
+
+fixed point             Equilibrium point
+f(x*) = 0               Fixed-point condition
+stable                  Stable equilibrium
+unstable                Unstable equilibrium
+asymptotic stable       Converges to equilibrium as t→∞
+
+Df(x)                   Jacobian of f at x
+eig(Df(x))              Eigenvalues of Jacobian
+linearization           Linear approximation near fixed point
+
+λ_i                    Eigenvalues
+Re(λ_i) < 0             Stable linearization
+Re(λ_i) > 0             Unstable linearization
+
+phase space             State space of system
+trajectory              Solution curve in phase space
+orbit                   Set of points visited by trajectory
+
+limit cycle             Closed periodic orbit
+period T                Period of oscillation
+stable cycle            Attracting limit cycle
+unstable cycle          Repelling limit cycle
+
+bifurcation             Qualitative change in dynamics
+parameter μ             Bifurcation parameter
+μ_c                    Critical parameter value
+
+saddle-node             Saddle-node bifurcation
+transcritical           Transcritical bifurcation
+pitchfork               Pitchfork bifurcation
+Hopf                    Hopf bifurcation
+λ(μ)                   Eigenvalue crossing condition
+
+Poincaré map            Return map on section
+P                      Poincaré return operator
+fixed point of P        Periodic orbit of flow
+
+invariant set           Set preserved by dynamics
+invariant manifold      Stable/unstable manifolds
+W^s(x*)                 Stable manifold
+W^u(x*)                 Unstable manifold
+
+chaos                   Sensitive dependence on initial conditions
+Lyapunov exponent       Exponential divergence rate
+λ_L                    Largest Lyapunov exponent
+λ_L > 0                Chaotic behavior
+
+strange attractor       Fractal attractor
+fractal dimension       Dimension of attractor
+Cantor-like             Fractal structure
+
+logistic map            x_{n+1} = r x_n (1 − x_n)
+r                      Control parameter
+period-doubling         Route to chaos
+
+Feigenbaum δ            Feigenbaum constant
+δ ≈ 4.669               Universal scaling constant
+
+Bernoulli shift         Chaotic map
+symbolic dynamics       Coding of trajectories
+
+Hamiltonian system      System with conserved energy
+H(x,p)                  Hamiltonian
+ẋ = ∂H/∂p              Hamilton’s equations
+ṗ = −∂H/∂x             Hamilton’s equations
+
+area-preserving         Symplectic map
+J                      Symplectic matrix
+Jᵀ = −J                Symplectic condition
+
+KAM theory              Kolmogorov–Arnold–Moser theory
+invariant torus         Quasi-periodic orbit
+small divisors          Resonance obstruction
+
+ergodic                 Time average = space average
+mixing                  Strong statistical mixing
+measure-preserving      Preserves volume measure
+
+entropy rate            Kolmogorov–Sinai entropy
+h_{KS}                 KS entropy
+
+discrete system         Iterated map
+x_{n+1} = F(x_n)        Discrete-time dynamics
+
+basin of attraction      Set of initial conditions converging to attractor
+multistability          Multiple attractors
+
+homoclinic orbit        Orbit leaving and returning to same saddle
+heteroclinic orbit      Orbit connecting different saddles
+Smale horseshoe         Canonical chaotic structure
+
+PDE-induced dynamics    Infinite-dimensional dynamical system
+attractor dimension     Dimension of global attractor
+
+=== No. 46 | Game Theory, Mechanism Design & Strategic Interaction ===
+
+Symbol                  Meaning
+------                  -------
+N                       Set of players
+i ∈ N                   Player index
+S_i                    Strategy set of player i
+s_i ∈ S_i               Pure strategy
+s = (s_1,…,s_n)         Strategy profile
+
+u_i(s)                  Utility/payoff of player i
+u_i : S → ℝ             Utility function
+BR_i(s_{−i})            Best response of player i
+BR_i(s_{−i}) = argmax_{s_i} u_i(s_i,s_{−i})
+
+Nash equilibrium        Fixed point of best responses
+s*                     Nash equilibrium profile
+u_i(s*_i,s*_{−i}) ≥ u_i(s_i,s*_{−i})  Nash condition
+
+dominant strategy       Strategy best regardless of others
+s_i^D                  Dominant strategy
+u_i(s_i^D,s_{−i}) ≥ u_i(s_i,s_{−i})
+
+mixed strategy          Probability distribution over S_i
+σ_i                    Mixed strategy of player i
+σ = (σ_1,…,σ_n)         Mixed strategy profile
+Δ(S_i)                 Simplex of mixed strategies
+
+expected payoff         Payoff under mixed strategies
+u_i(σ) = E[u_i(s)]      Expected utility
+
+correlated equilibrium   CE distribution over strategy profiles
+π(s)                   Correlation device
+incentive constraints    CE inequalities
+
+extensive form          Game tree representation
+node                    Decision point
+information set         Set of indistinguishable nodes
+subgame                 Portion of game tree
+SPE                     Subgame perfect equilibrium
+
+backward induction      Solve game from terminal nodes
+rollback                Backward solution method
+
+zero-sum                u_1 + u_2 = 0
+minimax                 Minimax value
+v = max_{σ_1} min_{σ_2} u_1(σ_1,σ_2)
+
+Pareto                  Pareto efficiency
+Pareto frontier         Set of Pareto-optimal outcomes
+
+mechanism               Mapping from actions to outcomes
+M = (A,g,p)             Mechanism: actions, allocation, payments
+a_i                    Action of player i
+g(a)                   Allocation rule
+p_i(a)                 Payment rule
+
+IC                     Incentive compatibility
+DSIC                   Dominant-strategy IC
+BIC                    Bayesian IC
+
+VCG                    Vickrey–Clarke–Groves mechanism
+p_i = externality_i     VCG payment formula
+
+auction                 Allocation via bidding
+b_i                    Bid of player i
+second-price            Vickrey auction
+winner pays 2nd bid     Vickrey rule
+
+reserve price           Minimum acceptable bid
+r                      Reserve value
+
+Bayesian game           Game with types
+θ_i                    Type of player i
+T_i                    Type space
+beliefs                 Probability over types
+u_i(s_i,s_{−i},θ_i)     Type-dependent utility
+
+signaling               Strategic information transmission
+sender/receiver         Signaling game roles
+pooling                 Same signal for multiple types
+separating              Different signals for different types
+
+repeated game           Iterated interaction
+discount factor δ       Weight on future payoffs
+Folk theorem            Characterization of equilibria in repeated games
+
+coalition               Group of players
+v(C)                   Value of coalition C
+core                    Set of stable allocations
+Shapley                 Shapley value
+φ_i                    Shapley value of player i
+
+evolutionary game       Dynamics of strategies
+replicator eq           Replicator dynamics
+ẋ_i = x_i(u_i − ū)     Replicator equation
+
+risk dominance          Stability concept for equilibria
+payoff dominance        Higher-payoff equilibrium
+
+mechanism feasibility   Constraints on allocation/payment
+budget balance          ∑ p_i = 0
+individual rationality  u_i ≥ 0
+
+implementation          Achieving desired outcome via mechanism
+social choice           Collective decision rule
+Gibbard–Satterthwaite   Impossibility theorem
+
+=== No. 47 | Formal Logic, Proof Theory & Deductive Systems ===
+
+Symbol                  Meaning
+------                  -------
+p, q, r                 Propositional variables
+⊤                      Truth
+⊥                      Falsehood
+¬p                     Negation
+p ∧ q                   Conjunction
+p ∨ q                   Disjunction
+p → q                   Implication
+p ↔ q                   Biconditional
+
+⊢                      Provability
+⊨                      Semantic entailment
+Γ ⊢ φ                  φ derivable from Γ
+Γ ⊨ φ                  φ true in all models of Γ
+
+∀x φ                   Universal quantifier
+∃x φ                   Existential quantifier
+φ(x)                   Predicate applied to x
+R(x,y)                 Binary relation
+
+term                   Element of domain
+formula                Logical expression
+free variable          Variable not bound by quantifier
+bound variable         Variable bound by quantifier
+
+=                      Equality predicate
+≠                      Inequality
+
+⊢ φ                    φ is a theorem
+⊢ ¬φ                   φ is refutable
+
+modus ponens           Inference rule
+p, p→q ⊢ q             MP rule
+
+modus tollens          Inference rule
+¬q, p→q ⊢ ¬p           MT rule
+
+intro/elimination      Introduction/elimination rules
+∧-intro                Conjunction introduction
+∧-elim                 Conjunction elimination
+∨-intro                Disjunction introduction
+→-intro                Implication introduction
+→-elim                 Implication elimination
+
+⊢ φ→ψ                  Deduction theorem
+Γ, φ ⊢ ψ  ⇔  Γ ⊢ φ→ψ   Deduction equivalence
+
+sequent calculus        Gentzen-style proof system
+Γ ⊢ Δ                  Sequent
+cut rule               Cut inference
+cut elimination         Cut-elimination theorem
+
+LK                     Classical sequent calculus
+LJ                     Intuitionistic sequent calculus
+
+natural deduction       Proof system with intro/elim rules
+proof tree              Tree of inference steps
+
+normal form             Normal proof form
+β-reduction             Reduction of proof terms
+η-expansion             Expansion of proof terms
+
+λ-calculus              Formal system of functions
+λx. t                  Lambda abstraction
+t u                    Application
+α, β, η                Lambda conversion rules
+
+Curry–Howard           Correspondence between proofs and programs
+type                   Proposition-as-type
+term                   Proof-as-program
+
+⊢ t : A                Term t has type A
+A → B                  Function type
+A × B                  Product type
+A + B                  Sum type
+
+induction              Proof by induction
+structural induction    Induction on syntax
+recursion              Recursive definition
+
+fixed point            Fixed-point operator
+μX. φ(X)               Least fixed point
+νX. φ(X)               Greatest fixed point
+
+modal logic            Logic with modalities
+□φ                     Necessity
+◇φ                     Possibility
+Kripke frame           Structure for modal semantics
+R                      Accessibility relation
+
+temporal logic         Time-indexed logic
+X φ                    Next operator
+F φ                    Eventually
+G φ                    Globally
+U                      Until operator
+
+μ-calculus             Modal fixed-point logic
+μX. φ(X)               Least fixed point
+νX. φ(X)               Greatest fixed point
+
+soundness              All provable statements are valid
+completeness           All valid statements are provable
+compactness            Finite satisfiability implies satisfiability
+
+consistency            No contradictions derivable
+inconsistency          Contradiction derivable
+⊢ ⊥                   Inconsistent theory
+
+model                  Structure interpreting formulas
+valuation              Assignment of truth values
+satisfiable            Has a model
+valid                  True in all models
+
+Herbrand               Herbrand universe
+Skolem                 Skolemization
+prenex form            Quantifiers moved to front
+CNF                    Conjunctive normal form
+DNF                    Disjunctive normal form
+
+resolution             Automated inference rule
+p∨A, ¬p∨B ⊢ A∨B        Resolution step
+
+proof complexity        Complexity of proofs
+proof length            Number of inference steps
+cut rank               Rank of cut formula
+
+inference system        Set of rules
+axiom                  Base rule
+rule schema            Template for rules
+
+provability logic       Logic of formal provability
+□φ                     “φ is provable”
+Löb                   Löb’s theorem
+
+arithmetization         Encoding syntax into arithmetic
+Gödel numbering         Numbering of formulas
+incompleteness          Gödel incompleteness theorem
+
+=== No. 48 | Automata Theory, Formal Languages & Computation Models ===
+
+Symbol                  Meaning
+------                  -------
+Σ                       Alphabet
+Σ*                      Set of all finite strings
+ε                       Empty string
+w ∈ Σ*                  String over Σ
+|w|                     Length of string w
+
+L ⊆ Σ*                  Formal language
+concatenation           String concatenation
+w = uv                  Concatenation of u and v
+
+DFA                    Deterministic finite automaton
+NFA                    Nondeterministic finite automaton
+A = (Q,Σ,δ,q₀,F)        Automaton definition
+Q                      Set of states
+δ                      Transition function
+q₀                     Start state
+F                      Accepting states
+
+δ(q,a)                 DFA transition
+δ(q,a) ⊆ Q             NFA transition
+δ*(q,w)                Extended transition on string w
+
+regular                Regular language
+regex                  Regular expression
+(a|b)*                 Kleene star
+ab|c                   Alternation
+
+closure properties      Regular language closure
+union                  L₁ ∪ L₂
+intersection           L₁ ∩ L₂
+complement             Σ* \ L
+concatenation          L₁L₂
+Kleene star            L*
+
+CFG                    Context-free grammar
+G = (V,Σ,R,S)          Grammar definition
+V                      Variables
+R                      Production rules
+S                      Start symbol
+
+A → α                  Production rule
+derivation             Sequence of rule applications
+parse tree             Tree representation of derivation
+
+PDA                    Pushdown automaton
+stack                  Memory stack
+push/pop               Stack operations
+
+context-free           Context-free language
+ambiguous              Grammar with multiple parse trees
+Chomsky normal form    CNF grammar form
+
+TM                     Turing machine
+M = (Q,Σ,Γ,δ,q₀,q_acc,q_rej)
+Γ                      Tape alphabet
+δ                      Transition function
+q_acc                  Accept state
+q_rej                  Reject state
+
+configuration           Instantaneous description
+tape                   Infinite tape
+head                   Read/write head
+
+computable             Computable function
+partial computable      Partial recursive function
+recursive              Decidable language
+r.e.                   Recursively enumerable language
+
+Church–Turing          Church–Turing thesis
+λ-calculus             Equivalent computation model
+μ-recursive            Recursive functions
+
+halting problem         Undecidable problem
+HP                     Halting problem
+HP ∉ decidable         Undecidability
+
+reduction               Mapping reduction
+A ≤_m B                Many-one reduction
+A ≤_T B                Turing reduction
+
+complexity              Computational complexity
+time(f(n))             Time complexity
+space(f(n))            Space complexity
+
+P                      Polynomial-time class
+NP                     Nondeterministic polynomial-time
+coNP                   Complement of NP
+EXP                    Exponential-time class
+PSPACE                 Polynomial-space class
+
+NP-complete            Hardest problems in NP
+SAT                    Boolean satisfiability
+3SAT                   3-clause SAT
+Clique                 Clique problem
+VertexCover            Vertex cover problem
+
+poly-time reduction     Reduction computable in polynomial time
+A ≤_p B                Polynomial-time reduction
+
+hierarchy               Complexity hierarchy
+P ⊆ NP ⊆ PSPACE ⊆ EXP  Standard inclusions
+
+oracle                 Oracle machine
+M^A                    Machine with oracle A
+
+universal TM           Universal Turing machine
+U                      Universal machine
+U simulates M          Simulation relation
+
+regular vs CFL          Language class comparison
+regular ⊂ CFL           Proper inclusion
+
+Myhill–Nerode          Minimization theorem
+equivalence classes     Distinguishability classes
+minimal DFA             Smallest DFA recognizing L
+
+pumping lemma           Regular language lemma
+CFL pumping lemma       Context-free pumping lemma
+
+decision problem        Problem with yes/no answer
+search problem          Problem requiring witness
+optimization problem    Problem requiring best solution
+
+=== No. 49 | Category Theory II — Monoidal, Enriched, Higher & Adjunction Structures ===
+
+Symbol                  Meaning
+------                  -------
+𝒞                       Category
+⊗                      Monoidal product
+I                      Monoidal unit
+(𝒞,⊗,I)                Monoidal category
+
+a_{X,Y,Z}              Associator
+a_{X,Y,Z} : (X⊗Y)⊗Z → X⊗(Y⊗Z)
+l_X                    Left unitor
+r_X                    Right unitor
+coherence              Pentagon & triangle identities
+
+braiding               Braided monoidal structure
+c_{X,Y}                Braiding isomorphism
+c_{X,Y} : X⊗Y → Y⊗X
+symmetric              Symmetric monoidal category
+c_{Y,X}∘c_{X,Y} = id    Symmetry condition
+
+closed monoidal         Monoidal closed category
+[X,Y]                  Internal hom
+X⊗Y → Z ≅ X → [Y,Z]    Currying isomorphism
+
+enriched               Enriched category
+𝒞 enriched in 𝒱         Hom-objects in 𝒱
+𝒞(X,Y) ∈ Obj(𝒱)        Enriched hom-object
+composition            Morphism in 𝒱
+id_X                   Identity in enriched sense
+
+V-cat                  Category enriched over V
+V-functor              Enriched functor
+V-natural              Enriched natural transformation
+
+adjunction             Pair of functors with unit/counit
+F ⊣ G                  F left adjoint to G
+η : id → GF            Unit of adjunction
+ε : FG → id            Counit of adjunction
+triangle identities     Adjunction coherence
+
+monad                  Monad on category 𝒞
+T                      Endofunctor
+η                      Unit
+μ                      Multiplication
+T² → T                 Monad multiplication
+algebra                T-algebra
+
+comonad                Dual notion
+δ                      Comultiplication
+ε                      Counit
+coalgebra              Comonad coalgebra
+
+Kleisli                Kleisli category of monad T
+X → Y in Kl(T)         Morphism X → TY in 𝒞
+
+Eilenberg–Moore         EM category of monad T
+T-alg                  Category of T-algebras
+
+limit                  Universal cone
+colimit                Universal cocone
+weighted limit         Enriched limit
+coend                  Coend construction
+∫^X F(X,X)             Coend notation
+end                    End construction
+∫_X F(X,X)             End notation
+
+Kan extension           Extension along functor
+Lan_F G                Left Kan extension
+Ran_F G                Right Kan extension
+
+Yoneda                 Yoneda embedding
+y : 𝒞 → [𝒞^op,Set]      Yoneda functor
+𝒞(X,−)                Representable functor
+
+density                 Density of functor
+dense                   Dense functor condition
+
+bicategory             Category with 2-morphisms
+objects                0-cells
+morphisms              1-cells
+2-morphisms            2-cells
+horizontal comp        Composition of 1-cells
+vertical comp          Composition of 2-cells
+
+pseudofunctor          Functor up to coherent isomorphism
+pseudonatural          Natural transformation up to iso
+modification           2-morphism between pseudonaturals
+
+2-limit                Limit in 2-category
+2-adjunction           Adjunction in 2-category
+
+monoidal functor       Functor preserving monoidal structure
+strong monoidal        With coherent isomorphisms
+lax monoidal           With comparison maps
+
+operad                 Algebraic structure for operations
+O(n)                   Operations of arity n
+algebra over operad    Structure defined by operad
+
+higher category         n-category
+∞-category             Infinity category
+simplicial set         Model for ∞-category
+horn filling           Kan condition
+
+quasi-category         Joyal’s model of ∞-categories
+inner horn             Horn for ∞-category
+fibration              Categorical fibration
+
+coherence laws         Higher associativity laws
+Mac Lane               Coherence theorem
+
+monoidal naturality     Natural transformations respecting ⊗
+tensorial strength      Strength for monoidal functor
+
+Day convolution         Monoidal structure on functor category
+(F ⊗ G)(X)             Convolution formula
+
+profunctor             Distributor between categories
+𝒞(X,Y)                 Hom-object as profunctor
+composition via coends  Profunctor composition
+
+double category         Category with horizontal & vertical arrows
+square                 2-dimensional cell
+
+internal category       Category object in another category
+group object            Internal group
+ring object             Internal ring
+
+fibration (categorical) Grothendieck fibration
+cartesian morphism      Morphism with universal lifting
+opfibration             Dual notion
+
+adjoint equivalence     Equivalence via adjunction
+F ⊣ G with iso unit/counit  Adjoint equivalence
+
+monoidal center         Drinfeld center
+Z(𝒞)                   Center of monoidal category
+half-braiding           Structure in center
+
+trace                   Categorical trace
+Tr(f)                  Trace of endomorphism f
+
+=== No. 50 | Measure Theory II — Integration, Lp Spaces, Radon–Nikodym & Product Measures ===
+
+Symbol                  Meaning
+------                  -------
+(Ω,𝒜,μ)                 Measure space
+μ                      Measure
+σ-finite               Countable union of finite-measure sets
+complete               All subsets of null sets are measurable
+
+f measurable           Measurable function
+∫ f dμ                 Integral of f w.r.t. μ
+∫_A f dμ               Integral over measurable set A
+
+simple function         Finite linear combination of indicators
+f = ∑ a_i 1_{A_i}       Simple function representation
+
+monotone convergence    MCT theorem
+f_n ↑ f ⇒ ∫ f_n dμ → ∫ f dμ
+
+dominated convergence   DCT theorem
+|f_n| ≤ g, f_n→f ⇒ ∫ f_n→∫ f
+
+Fatou                   Fatou’s lemma
+∫ liminf f_n ≤ liminf ∫ f_n
+
+L^p(μ)                  Lp space
+‖f‖_p = (∫ |f|^p dμ)^{1/p}  Lp norm
+L^∞                    Essentially bounded functions
+‖f‖_∞ = ess sup |f|    Essential supremum
+
+Lp duality              Dual spaces
+(L^p)* = L^q            Duality for 1<p<∞, 1/p+1/q=1
+
+weak conv               Weak convergence
+f_n ⇀ f                 Weak convergence in Lp
+weak* conv              Weak-star convergence
+μ_n ⇀* μ                Weak* convergence of measures
+
+signed measure          Measure taking positive/negative values
+Jordan decomposition    μ = μ⁺ − μ⁻
+Hahn decomposition       Ω = P ⊔ N with μ≥0 on P, μ≤0 on N
+
+absolute continuity      μ ≪ ν
+μ ≪ ν ⇔ μ(A)=0 when ν(A)=0
+
+Radon–Nikodym           RN theorem
+dμ/dν                   Radon–Nikodym derivative
+μ(A) = ∫_A (dμ/dν) dν   RN representation
+
+density                  Derivative of measure
+f = dμ/dν               Density of μ w.r.t. ν
+
+product measure          μ×ν on Ω×Λ
+Fubini                   Fubini’s theorem
+∫∫ f dμ dν = ∫∫ f dν dμ  Iterated integrals
+
+Tonelli                  Tonelli’s theorem
+Nonnegative f ⇒ iterated integrals exist
+
+pushforward              Pushforward measure
+T_*μ(A) = μ(T^{-1}(A))  Pushforward definition
+
+image measure            Measure induced by mapping
+law of X                Distribution of random variable X
+
+convolution              Convolution of measures
+μ * ν                   Convolution measure
+(μ*ν)(A) = ∫ μ(A−y) dν(y)
+
+regular measure          Regularity on topological spaces
+inner regular            Approx by compact sets
+outer regular            Approx by open sets
+
+Borel measure            Measure on Borel σ-algebra
+Radon measure            Regular Borel measure finite on compacts
+
+integration on manifold  Measure from volume form
+∫_M f dvol              Integral over manifold
+
+change of variables      Transformation formula
+∫ f(T(x))|det DT(x)| dx  Change-of-variables rule
+
+conditional measure      Disintegration of measure
+μ = ∫ μ_x dν(x)         Measure disintegration
+
+Kolmogorov extension     Consistency ⇒ measure on product space
+projective family        Consistent finite-dimensional distributions
+
+capacity                 Outer measure-like set function
+Choquet                  Choquet capacity theorem
+
+Hardy–Littlewood         Maximal operator
+Mf                      Maximal function
+weak-type inequality     μ({Mf>α}) ≤ C‖f‖_1/α
+
+Sobolev spaces           W^{k,p}
+‖f‖_{W^{k,p}}           Sobolev norm
+weak derivative          Distributional derivative
+
+BV                      Bounded variation functions
+TV(f)                   Total variation
+
+measure algebra          Boolean algebra modulo null sets
+completion               Complete measure algebra
+
+ergodic measure          Invariant measure under transformation
+T-invariant              μ(T^{-1}(A)) = μ(A)
+ergodic                  Only trivial invariant sets
+
+spectral measure         Measure from spectral theorem
+E(λ)                    Projection-valued measure
+A = ∫ λ dE(λ)           Spectral decomposition
+
+integration operator     Integral operator
+Tf(x) = ∫ K(x,y)f(y)dμ  Kernel operator
+
+Carathéodory             Measure construction
+outer measure → measure  Carathéodory criterion
