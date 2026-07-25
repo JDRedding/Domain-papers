@@ -1,118 +1,118 @@
 📁 Automata_Theory
 Linked Project: RAM — Relational Automata Manifolds
 The CA taxonomy and RDG mappings are developed in the main RAM project:
-
 RAM-Relational-Automata-Manifolds 
 https://github.com/JDRedding/RAM-Relational-Automata-Manifolds
 
 📁 Computation_Models
 📁 Discrete_Dynamics
 📁 Cellular_Automata
-Name: Wolfram MathWorld — Cellular Automaton
-URL: https://mathworld.wolfram.com/CellularAutomaton.html
+ Wolfram MathWorld — Cellular Automaton
+ https://mathworld.wolfram.com/CellularAutomaton.html
 
 📁 Automata_Theory
 📁 Formal_Languages
 📁 Regular
 📁 DFA
-Name: Hopcroft–Ullman DFA Definition (Stanford CS Theory Notes)
-URL: https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/08/Slides08.pdf 
+ Hopcroft–Ullman DFA Definition (Stanford CS Theory Notes)
+ https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/08/Slides08.pdf 
 
 📁 NFA
-Name: NFA Definition — Stanford CS Theory Notes
-URL: https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/09/Slides09.pdf
+ NFA Definition — Stanford CS Theory Notes
+ https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/09/Slides09.pdf
 
 📁 Regex
-Name: Regular Expressions — Regular Languages (MIT OCW)
-URL: https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec03/ 
+ Regular Expressions — Regular Languages (MIT OCW)
+ https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec03/ 
 
 📁 Myhill–Nerode
-Name: Myhill–Nerode Theorem — Cornell CS
-URL: https://www.cs.cornell.edu/courses/cs4820/2019sp/lectures/lec05-myhill-nerode.pdf (cs.cornell.edu in Bing)
+ Myhill–Nerode Theorem — Cornell CS
+ https://www.cs.cornell.edu/courses/cs4820/2019sp/lectures/lec05-myhill-nerode.pdf (cs.cornell.edu in Bing)
 
 📁 Context_Free
 📁 CFG
-Name: Context-Free Grammars — MIT OCW
-URL: https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec05/ 
+ Context-Free Grammars — MIT OCW
+ https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec05/ 
 
 📁 PDA
-Name: Pushdown Automata — Stanford CS Theory Notes
-URL: https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/11/Slides11.pdf
+ Pushdown Automata — Stanford CS Theory Notes
+ https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/11/Slides11.pdf
 
 📁 CNF
-Name: Chomsky Normal Form — University of Washington CSE
-URL: https://courses.cs.washington.edu/courses/cse311/17sp/lectures/lecture17.pdf
+ Chomsky Normal Form — University of Washington CSE
+ https://courses.cs.washington.edu/courses/cse311/17sp/lectures/lecture17.pdf
 
 📁 Decidability
 📁 TM
-Name: Turing Machines — Stanford CS Theory Notes
-URL: https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/13/Slides13.pdf 
+ Turing Machines — Stanford CS Theory Notes
+ https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/13/Slides13.pdf 
 
 📁 r.e._languages
-Name: Recursively Enumerable Languages — MIT OCW
-URL: https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec12/ 
+ Recursively Enumerable Languages — MIT OCW
+ https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec12/ 
 
 📁 Reductions
-Name: Reductions — MIT OCW
-URL: https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec13/ 
+ Reductions — MIT OCW
+ https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec13/ 
 
 📁 Halting_Problem
-Name: Halting Problem — Stanford CS Theory Notes
-URL: https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/14/Slides14.pdf 
+ Halting Problem — Stanford CS Theory Notes
+ https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/14/Slides14.pdf 
 
 📁 Computation_Models
 📁 Universal_Computation
 📁 Turing_Machines
-Name: Universal Turing Machines — MathWorld
-URL: https://mathworld.wolfram.com/UniversalTuringMachine.html 
+ Universal Turing Machines — MathWorld
+ https://mathworld.wolfram.com/UniversalTuringMachine.html 
 
 📁 Lambda_Calculus
-Name: Lambda Calculus — University of Cambridge
-URL: https://www.cl.cam.ac.uk/teaching/2122/Lambda/ 
+ Lambda Calculus — University of Cambridge
+ https://www.cl.cam.ac.uk/teaching/2122/Lambda/ 
 
 📁 Mu_Recursive_Functions
-Name: μ‑Recursive Functions — Stanford Encyclopedia of Philosophy
-URL: https://plato.stanford.edu/entries/recursive-functions/ 
+ μ‑Recursive Functions — Stanford Encyclopedia of Philosophy
+ https://plato.stanford.edu/entries/recursive-functions/ 
 
 📁 Discrete_Dynamics
 📁 Cellular_Automata
-(Already given above)
+ Discrete Dynamics Lab
+ https://www.ddlab.com/
 
 📁 Cellular_Automata Subfolders
 These are the best canonical sources for each CA subtype.
 
 📁 Classical_CA
-Name: Classical Cellular Automata — Wolfram MathWorld
-URL: https://mathworld.wolfram.com/CellularAutomaton.html 
+ Classical Cellular Automata — Wolfram MathWorld
+ https://mathworld.wolfram.com/CellularAutomaton.html 
 
 📁 Asynchronous_CA
-Name: Asynchronous Cellular Automata — Santa Fe Institute
-URL: https://www.santafe.edu/research/results/working-papers/asynchronous-cellular-automata 
+ Asynchronous Cellular Automata — Santa Fe Institute
+ https://www.santafe.edu/research/results/working-papers/asynchronous-cellular-automata 
 
 📁 Stochastic_CA
-Name: Stochastic Cellular Automata — Scholarpedia
-URL: http://www.scholarpedia.org/article/Stochastic_cellular_automata 
+ Stochastic Cellular Automata — Scholarpedia
+ http://www.scholarpedia.org/article/Stochastic_cellular_automata 
 
 📁 MultiState_CA
-Name: Multi-State Cellular Automata — Scholarpedia
-URL: http://www.scholarpedia.org/article/Cellular_automata 
+ Multi-State Cellular Automata — Scholarpedia
+ http://www.scholarpedia.org/article/Cellular_automata 
 
 📁 ExtendedNeighborhood_CA
-Name: Extended Neighborhood / Larger Radius CA — Wolfram MathWorld
-URL: https://mathworld.wolfram.com/Neighborhood.html 
+ Extended Neighborhood / Larger Radius CA — Wolfram MathWorld
+ https://mathworld.wolfram.com/Neighborhood.html 
 
 📁 NonUniform_CA
-Name: Non-Uniform Cellular Automata — arXiv survey
-URL: https://arxiv.org/abs/0906.3248
+ Non-Uniform Cellular Automata — arXiv survey
+ https://arxiv.org/abs/0906.3248
 
 📁 Genotype_Lattice
-Name: Langton’s λ & CA Genotype Measures — Physica D
-URL: https://www.sciencedirect.com/science/article/pii/016727899090239X 
+ Langton’s λ & CA Genotype Measures — Physica D
+ https://www.sciencedirect.com/science/article/pii/016727899090239X 
 
 📁 Phenotype_Lattice
-Name: CA Dynamical Behavior / Phenotypes — Scholarpedia
-URL: http://www.scholarpedia.org/article/Cellular_automata_dynamics 
+ CA Dynamical Behavior / Phenotypes — Scholarpedia
+ http://www.scholarpedia.org/article/Cellular_automata_dynamics 
 
 📁 CrossFamily_Equivalences
-Name: CA Equivalences & Simulation — Wolfram NKS
-URL: https://www.wolframscience.com/nks/
+ CA Equivalences & Simulation — Wolfram NKS
+ https://www.wolframscience.com/nks/
