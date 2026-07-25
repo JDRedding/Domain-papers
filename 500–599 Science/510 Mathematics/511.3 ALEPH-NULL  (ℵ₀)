@@ -1,0 +1,55 @@
+ALEPH-NULL  (ℵ₀)  —  STRUCTURE
+============================================================
+511.3 Set theory (cardinals, ordinals, ℵ₀, continuum c, etc.)
+Definition:
+  ℵ₀ = the cardinality class of all sets admitting a bijection
+        with the natural numbers N = {0,1,2,3,...}.
+
+Structural Interpretation:
+  ℵ₀ = |ω|
+    where:
+      ω = the first infinite ordinal
+      |·| = the cardinal-collapse map (forgetting order)
+
+  Thus:
+      ordinal ω  → encodes order-type
+      cardinal ℵ₀ → encodes size-type
+
+Countable Sets:
+  A set X is countable  ⇔  ∃ bijection f : X → N.
+  Examples:
+    - N (naturals)
+    - Z (integers)
+    - Q (rationals)
+  All have cardinality ℵ₀.
+
+Uncountable Sets:
+  Some sets cannot be indexed by N.
+  Example:
+    - R (reals) has cardinality c > ℵ₀.
+
+Algebra of ℵ₀:
+  Finite additions:
+      ℵ₀ + n = ℵ₀
+      ℵ₀ · n = ℵ₀
+
+  Countable additions/products:
+      ℵ₀ + ℵ₀ = ℵ₀
+      ℵ₀ · ℵ₀ = ℵ₀
+
+  Structural reason:
+      ω ⊔ ω   has order-type ω
+      ω × ω   has a bijection with ω (diagonal enumeration)
+
+Why ℵ₀ is “smallest infinite”:
+  - No finite cardinal equals ℵ₀.
+  - Any infinite cardinal κ satisfies κ ≥ ℵ₀.
+  - ℵ₀ is the initial infinite fixed point of bijection-size.
+
+Summary:
+  ℵ₀ is the base unit of infinite cardinality:
+      the size of any set indexable by ω,
+      stable under finite and countable algebraic operations,
+      and strictly smaller than the continuum c.
+
+============================================================
