@@ -1,0 +1,39 @@
+Automata_Theory/
+    Computation_Models/
+        Discrete_Dynamics/
+            Cellular_Automata/
+
+
+Automata_Theory/
+    Formal_Languages/
+        Regular/
+            DFA/
+            NFA/
+            Regex/
+            Myhill-Nerode/
+        Context_Free/
+            CFG/
+            PDA/
+            CNF/
+        Decidability/
+            TM/
+            r.e._languages/
+            Reductions/
+            Halting_Problem/
+    Computation_Models/
+        Universal_Computation/
+            Turing_Machines/
+            Lambda_Calculus/
+            Mu_Recursive_Functions/
+        Discrete_Dynamics/
+            Cellular_Automata/
+                Classical_CA/
+                Asynchronous_CA/
+                Stochastic_CA/
+                MultiState_CA/
+                ExtendedNeighborhood_CA/
+                NonUniform_CA/
+                Genotype_Lattice/
+                Phenotype_Lattice/
+                CrossFamily_Equivalences/
+
