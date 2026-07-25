@@ -2,6 +2,7 @@ NOTATION REFERENCE
 511.3 — Mathematical Symbols & Notation
 
 TABLE OF CONTENTS — Mathematical Symbol Atlas (Sections 1–50)
+See the end of the document for the HIERARCHICAL TABLE OF CONTENTS
 
  No. 0 | Global Operators & Meta‑Symbols 
  No. 1 | Common Mathematical Notations 
@@ -54,8 +55,6 @@ TABLE OF CONTENTS — Mathematical Symbol Atlas (Sections 1–50)
  No. 48 | Automata Theory, Formal Languages & Computation Models 
  No. 49 | Category Theory II — Monoidal, Enriched, Higher & Adjunction Structures 
  No. 50 | Measure Theory II — Integration, Lp Spaces, Radon–Nikodym & Product Measures 
-
-
 
 === No. 0 | Global Operators & Meta‑Symbols ===
 These symbols apply across all branches of mathematics and define meta‑operations,
@@ -4465,3 +4464,85 @@ Tf(x) = ∫ K(x,y)f(y)dμ  Kernel operator
 
 Carathéodory             Measure construction
 outer measure → measure  Carathéodory criterion
+
+
+===============================================================
+        HIERARCHICAL TABLE OF CONTENTS — SECTIONS 0–50
+===============================================================
+
+I. FOUNDATIONS & CORE MATHEMATICAL LANGUAGE
+    0. Global Operators & Meta‑Symbols
+    1. Common Mathematical Notations
+    2. Set Theory & Logic Symbols
+    3. Geometry & Measurement Symbols
+    4. Calculus & Analysis Notations
+    5. Statistics Notations
+    6. Advanced Mathematics & Special Symbols
+    7. Trigonometry, Linear Algebra & Matrix Notations
+    8. Circle‑Family Operators & Special Composition Symbols
+
+II. COMPUTER SCIENCE, ALGORITHMS & DISCRETE MATHEMATICS
+    9. Programming, Algorithms & Discrete Structures
+    21. Computational Complexity & Formal Languages
+    27. Computer Architecture & Systems Programming
+    28. Cryptography & Security Protocols
+    48. Automata Theory, Formal Languages & Computation Models
+
+III. PHYSICS, ENGINEERING & APPLIED SCIENCES
+    10. Physics & Engineering Symbols
+    24. Quantum Mechanics & Quantum Information
+    40. Quantum Field Theory, Gauge Theory & Operator Formalism
+    41. Statistical Mechanics, Thermodynamics & Ensemble Theory
+
+IV. LOGIC, SEMANTICS & TYPE THEORY
+    11. Logic, Type Theory & Formal Semantics
+    31. Formal Logic, Proof Systems & Type Theory
+    47. Formal Logic, Proof Theory & Deductive Systems
+
+V. ALGEBRA, CATEGORY THEORY & ABSTRACT STRUCTURES
+    12. Category Theory & Abstract Algebra Operators
+    13. Algebraic Structures & Group Theory Notation
+    32. Category Theory & Abstract Algebraic Structures
+    49. Category Theory II — Monoidal, Enriched, Higher & Adjunction Structures
+
+VI. TOPOLOGY, GEOMETRY & MANIFOLDS
+    14. Topology & Manifold Notation
+    33. Topology & Geometric Structures
+    42. Differential Geometry, Connections & Tensor Calculus
+    43. Complex Analysis, Holomorphic Functions & Conformal Structures
+    44. Algebraic Topology, Homology, Cohomology & Fundamental Structures
+    39. Information Geometry, Statistical Manifolds & Divergence Structures
+
+VII. ANALYSIS, PDEs & OPERATOR THEORY
+    15. Tensor Calculus & Advanced Differential Geometry
+    16. Functional Analysis & Operator Theory
+    17. Measure Theory & Probability Foundations
+    34. Partial Differential Equations & Variational Methods
+    35. Linear Algebra, Matrix Analysis & Operator Identities
+    36. Fourier Analysis, Harmonic Analysis & Signal Processing
+    50. Measure Theory II — Lp Spaces, Radon–Nikodym & Product Measures
+
+VIII. PROBABILITY, STATISTICS & STOCHASTIC PROCESSES
+    19. Stochastic Processes & Time‑Series Analysis
+    20. Information Theory & Coding Theory
+    37. Probability Theory, Random Processes & Statistical Distributions
+
+IX. OPTIMIZATION, ALGORITHMS & NUMERICAL METHODS
+    18. Optimization, Variational Methods & Convex Analysis
+    22. Numerical Methods & Scientific Computing
+    38. Numerical Optimization, Convex Analysis & Algorithmic Methods
+
+X. GRAPHS, NETWORKS & COMBINATORICS
+    23. Graph Theory & Network Science
+
+XI. MACHINE LEARNING, DEEP LEARNING & STATISTICAL MODELING
+    25. Machine Learning & Statistical Modeling
+    26. Deep Learning Architecture & Training Notation
+
+XII. CONTROL, DYNAMICS & GAME THEORY
+    29. Control Theory & Dynamical Systems
+    45. Nonlinear Dynamics, Chaos Theory & Dynamical Systems
+    30. Game Theory & Economic Equilibrium
+    46. Game Theory, Mechanism Design & Strategic Interaction
+
+===============================================================
