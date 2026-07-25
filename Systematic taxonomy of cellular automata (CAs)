@@ -296,14 +296,21 @@ Phenotype objects = dynamical behaviors
 
 Morphisms = rule perturbations → dynamical transitions
 
-Constraints:
+Constraint‑restricted domain
+---
+Let
 
-	fixed alphabet
-	fixed neighborhood
-	no rule‑table degeneracy
-	no trivial absorbing states
+	𝐺𝑒𝑛𝑜𝑡𝑦𝑝𝑒_reg
 
-Monotonicity is a good heuristic, but not a theorem.
+be the subcategory satisfying:
+
+	Fixed alphabet
+	Fixed neighborhood
+	No rule‑table degeneracy
+	No trivial absorbing states
+
+Then the functor 𝐹 : 𝐺𝑒𝑛𝑜𝑡𝑦𝑝𝑒_reg → 𝑃ℎ𝑒𝑛𝑜𝑡𝑦𝑝𝑒 is monotone.
+---
 
 1. Increasing genotype richness → increasing dynamical complexity
 
