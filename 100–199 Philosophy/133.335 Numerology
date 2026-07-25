@@ -1,0 +1,128 @@
+NUMEROLOGY 
+133.3     Divination systems
+---
+100–199   Philosophy & Psychology
+130–139   Paranormal, Occult, Esoteric Systems
+133       Specific topics in the occult
+============================================================
+🔢 What numerology is
+Numerology is a symbolic interpretive system that assigns
+meaning to numbers derived from birth dates and names. It is
+not a science; it is a structured symbolic framework blending:
+
+- Pythagorean number philosophy
+- Chaldean numerology
+- Hebrew gematria
+- Modern divination systems
+
+Numbers encode archetypal patterns that map to personality,
+motivation, and life trajectory.
+
+🧩 Core idea
+Numbers from your birth date and full name are reduced to 
+single digits (1–9), except for “master numbers” 11, 22, and 
+33. Each digit corresponds to a symbolic theme—leadership, 
+intuition, creativity, discipline, etc. 
+
+  Core Objects
+  ----------------------------------------------------------
+  LIFE PATH        -> birth‑date reduction
+  DESTINY          -> full‑name reduction
+  SOUL URGE        -> vowel‑reduction
+  PERSONALITY      -> consonant‑reduction
+  BIRTHDAY         -> day‑of‑month archetype
+
+All numerology reduces numbers to single digits (1–9), except
+for master numbers 11, 22, 33.
+
+Digit reduction:
+    N → sum_of_digits(N)
+    Repeat until N ∈ {1..9, 11, 22, 33}
+
+Birth date → Life Path Number  
+Full name → Destiny Number  
+Vowels → Soul Urge Number  
+Consonants → Personality Number  
+Birth day → Birthday Number
+
+Each object corresponds to a distinct interpretive operator:
+
+      operator_LP : person → global trajectory
+      operator_DN : person → functional talents
+      operator_SU : person → internal drives
+      operator_PN : person → external presentation
+      operator_BD : person → innate trait‑accent
+
+  DIGIT ARCHETYPES (1–9)
+============================================================
+
+  1 : Independence / Initiation / Vector‑Origin
+  2 : Harmony / Duality / Relational Coupling
+  3 : Creativity / Expression / Expansion
+  4 : Structure / Order / Constraint‑Grid
+  5 : Freedom / Change / Mobility
+  6 : Responsibility / Care / Stabilization
+  7 : Analysis / Introspection / Depth‑Probe
+  8 : Power / Ambition / Executive Force
+  9 : Compassion / Completion / Global Reach
+
+  MASTER NUMBERS (non‑reduced)
+============================================================
+🕯 Master Numbers (11, 22, 33)
+These are not reduced because they’re considered especially 
+potent:
+
+  11 : Intuition / Illumination / Signal‑Amplification
+  22 : Master Builder / System‑Architect / Macro‑Execution
+  33 : Teacher / Compassion‑Vector / Service‑Field
+
+  DIGIT REDUCTION RULE
+============================================================
+🧮 How calculations work
+All numerology uses digit reduction:
+Add digits until you reach 1–9.
+Keep 11, 22, 33 intact.
+Names use letter-to-number mappings (A=1, B=2 … I=9, J=1, etc.).
+
+  Let N be any integer or letter‑sum.
+
+      Reduce:  N → sum_of_digits(N)
+      Repeat until N ∈ {1..9, 11, 22, 33}
+
+  Example:
+      1984 → 1+9+8+4 = 22  (stop: master number)
+
+  NAME MAPPING (Pythagorean)
+============================================================
+Letter → Number mapping:
+Name‑sum → Destiny Number
+
+  A=1  B=2  C=3  D=4  E=5  F=6  G=7  H=8  I=9
+  J=1  K=2  L=3  M=4  N=5  O=6  P=7  Q=8  R=9
+  S=1  T=2  U=3  V=4  W=5  X=6  Y=7  Z=8
+
+  Vowels: A, E, I, O, U  (for Soul Urge)
+  Consonants: all others (for Personality)
+
+  SYSTEM VIEW (structural)
+============================================================
+Numerology treats digits as archetypal modes:
+
+      mode_1 .. mode_9, plus master_modes {11,22,33}
+
+Each mode acts like a symbolic operator:
+
+      mode_k : person → thematic tendencies
+
+Birth‑date → global operator (Life Path)  
+Name‑sum  → functional operator (Destiny)  
+Vowels    → internal‑drive operator (Soul Urge)  
+Consonants→ external‑presentation operator (Personality)
+
+Life Path Number
+============================================================
+Life Path Number = reduced sum of:
+    month + day + year
+
+Master numbers (11, 22, 33) remain intact.
+
