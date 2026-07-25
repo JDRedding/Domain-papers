@@ -1,0 +1,267 @@
+Systematic taxonomy of cellular automata (CAs) 
+A unified family tree for:
+
+	better cross‑family mapping
+	clearer genotype/phenotype tools
+	more interdisciplinary coherence
+
+Five major families — asynchronous, stochastic, multi‑state, extended‑neighbourhood, and non‑uniform — and analyzing each through definition, variations, genotype, phenotype, and applications. It aims to replace the fragmented CA literature with 
+
+1. Classical CA Framework (the baseline)
+
+The classical CA as a sextuple  
+
+	𝐶=⟨𝑇, 𝑆, 𝑠, 𝑠_0, 𝑁, 𝜙⟩
+  
+with:
+
+	𝑇 	— tessellation (grid)
+	𝑆 	— finite state set
+	𝑠 	— output function giving cell state at time 𝑡
+	𝑠_0 	— initial condition
+	𝑁 	— neighbourhood
+	𝜙 	— local update rule
+
+This induces a global update rule Φ on the configuration space.
+
+                           Cellular Automata (CA)
+                                     │
+                                     ▼
+                         ┌────────────────────────┐
+                         │   Classical CA (base)  │
+                         │  (uniform, synchronous │
+                         │   deterministic rules) │
+                         └────────────────────────┘
+                                     │
+                                     ▼
+        ┌───────────────────────────────────────────────────────────────┐
+        │                     Extended CA Families                      │
+        └───────────────────────────────────────────────────────────────┘
+                                     │
+                                     ▼
+     ┌──────────────────────────────────────────────────────────────────────────┐
+     │                                                                          │
+     ▼                                                                          ▼
+┌───────────────┐                                                      ┌────────────────┐
+│ Asynchronous   │                                                      │ Stochastic     │
+│ CA (ACA)       │                                                      │ CA (SCA)       │
+└───────────────┘                                                      └────────────────┘
+     │                                                                          │
+     │                                                                          │
+     ▼                                                                          ▼
+ update schedule variations                                          probabilistic rules
+ temporal/spatial desync                                             noise-driven dynamics
+     │                                                                          │
+     ▼                                                                          ▼
+     ┌──────────────────────────────────────────────────────────────────────────┐
+     │                                                                          │
+     ▼                                                                          ▼
+┌────────────────┐                                                      ┌──────────────────────┐
+│ Multi-state     │                                                      │ Extended-neighborhood│
+│ CA (MSCA)       │                                                      │ CA (ENCA)            │
+└────────────────┘                                                      └──────────────────────┘
+     │                                                                          │
+     │                                                                          │
+     ▼                                                                          ▼
+ k-ary, continuous, fuzzy states                                   larger radius, memory,
+ richer local rule tables                                          irregular tessellations,
+                                                                   reversible CAs
+     │                                                                          │
+     ▼                                                                          ▼
+     ┌──────────────────────────────────────────────────────────────────────────┐
+     │                                                                          │
+     ▼                                                                          ▼
+                           ┌──────────────────────────┐
+                           │ Non-uniform CA (ν-CA)    │
+                           └──────────────────────────┘
+                                      │
+                                      ▼
+                           spatial/temporal rule heterogeneity
+                           hybrid systems, adaptive dynamics
+
++-------------------------------------------------------------------------------------------------+
+| Family                                | Core Relaxation         | Genotype Structure            |
+|---------------------------------------+-------------------------+-------------------------------|
+| [Asynchronous CA]                     | removes synchrony       | update schedules;             |
+| (ACA)                                 |                         | temporal/spatial ordering     |
++---------------------------------------+-------------------------+-------------------------------+
+| [Stochastic CA]                       | removes determinism     | probability kernels;          |
+| (SCA)                                 | adds randomness         | stochastic rule tables        |
++---------------------------------------+-------------------------+-------------------------------+
+| [Multi-state CA]                      | expands state alphabet  | k-ary/continuous states;      |
+| (MSCA)                                | beyond binary           | richer rule tables            |
++---------------------------------------+-------------------------+-------------------------------+
+| [Extended-neighborhood CA]            | enlarges/generalizes    | graph neighborhoods;          |
+| (ENCA)                                | neighborhood structure  | memory operators; reversibility|
++---------------------------------------+-------------------------+-------------------------------+
+| [Non-uniform CA]                      | removes rule uniformity | spatial/temporal rule         |
+| (ν-CA)                                | across space/time       | distributions; hybrid rules   |
++-------------------------------------------------------------------------------------------------+
+| Family                                | Phenotypic Behavior     | Typical Applications          |
+|---------------------------------------+-------------------------+-------------------------------|
+| [Asynchronous CA]                     | desynchronized waves;   | biology; distributed systems; |
+|                                       | noise-like dynamics     | asynchronous circuits         |
++---------------------------------------+-------------------------+-------------------------------+
+| [Stochastic CA]                       | ensemble behavior;      | epidemiology; chemistry;      |
+|                                       | probabilistic phases    | ecology; reaction-diffusion   |
++---------------------------------------+-------------------------+-------------------------------+
+| [Multi-state CA]                      | multi-phase domains;    | physics; biology; materials;  |
+|                                       | complex attractors      | complex systems               |
++---------------------------------------+-------------------------+-------------------------------+
+| [Extended-neighborhood CA]            | long-range correlations;| network science; reversible   |
+|                                       | reversible dynamics     | physics; lattice gas models   |
++---------------------------------------+-------------------------+-------------------------------+
+| [Non-uniform CA]                      | heterogeneous dynamics; | hybrid modeling; adaptive     |
+|                                       | adaptive regimes        | systems; multi-scale sims     |
++-------------------------------------------------------------------------------------------------+
+
+2. Elementary Cellular Automata (ECA)
+
+A special case: 
+
+	1‑D, binary states, radius‑1 neighbourhood.
+
+This yields 256 Wolfram rules, reducible to 88 independent rules under reflection/complement symmetries.
+Rule 110 is highlighted as a minimal universal CA. 
+
+Boundary conditions (BCs) are catalogued:
+
+	fixed
+	periodic
+	adiabatic
+	reflexive
+	intermediate
+	random
+	distributed
+
+Each BC alters information propagation and pattern formation. 
+
+3. Genotype vs Phenotype
+
+The paper distinguishes:
+
+Genotypic tools (rule‑table based)
+Examples include:
+
+	Langton’s λ
+	mean‑field parameters
+	Z‑reverse parameter
+	μ‑sensitivity
+	obstruction parameter
+	Kolmogorov complexity
+
+These quantify rule‑level structure. 
+
+Phenotypic tools (behavior‑based)
+Examples include:
+
+	attractor structure
+	topological dynamics
+	sensitivity
+	expansivity
+	transitivity
+
+These quantify emergent behavior. 
+
+4. The Five CA Families (the core taxonomy)
+
+4.1 Asynchronous CAs (ACA)
+
+Relax synchronous updating.
+
+Variations include:
+
+	partially asynchronous
+	fully asynchronous
+	temporal asynchrony
+
+Genotype: update schedule
+Phenotype: stochastic‑like behavior, loss of classical invariants
+Applications: computational models, biological systems. 
+
+4.2 Stochastic CAs (SCA)
+
+Introduce randomness into update rule or neighbourhood.
+Variations:
+
+	local vs global spatial dependence
+
+	temporal stochasticity
+
+Genotype: probability distributions
+Phenotype: ensemble behavior, noise‑driven transitions
+Applications: chemistry, epidemiology, ecology. 
+
+4.3 Multi‑state CAs (MSCA)
+
+Generalize binary states to k‑ary, continuous, or fuzzy states.
+Variations:
+
+	ternary
+	k‑nary
+	continuous‑valued
+	fuzzy
+
+Genotype: expanded state alphabet
+Phenotype: richer pattern classes
+Applications: modelling complex physical/biological systems. 
+
+4.4 Extended‑neighbourhood CAs (ENCA)
+
+Generalize neighbourhood structure.
+Variations:
+
+	larger neighbourhood radius
+	higher dimensions
+	irregular tessellations
+	network automata
+	memory CAs
+	reversible CAs
+
+Genotype: neighbourhood graph
+Phenotype: long‑range correlations, reversible dynamics
+Applications: physics, network science. 
+
+4.5 Non‑uniform CAs (ν‑CAs)
+
+Allow rule variation across space or time.
+Variations:
+
+	purely temporal
+	spatiotemporal
+	hybrid
+
+Genotype: rule distribution
+Phenotype: heterogeneous dynamics
+Applications: adaptive modelling, hybrid systems. 
+
+5. Cross‑family Equivalences
+
+Many CA types belong to multiple families due to mathematical equivalence.
+  
+Example:
+
+	asynchronous updates can mimic stochasticity
+	non‑uniform rules can emulate multi‑state behavior
+	extended neighbourhoods can simulate multi‑state CAs
+
+6. Applications Overview
+
+CA applications across domains:
+
+	computer science 
+		(cryptography, compression, pattern recognition)
+	biology
+	chemistry
+	ecology
+	epidemiology
+	geology
+	medical science
+	physics
+	sociology
+	traffic
+	urban planning
+
+Each domain uses different CA families depending on modelling needs. 
+
+
