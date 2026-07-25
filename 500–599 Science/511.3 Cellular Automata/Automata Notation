@@ -1,0 +1,126 @@
+Automata Theory, Formal Languages & Computation Models 
+
+Symbol                  Meaning
+------                  -------
+Σ                       Alphabet
+Σ*                      Set of all finite strings
+ε                       Empty string
+w ∈ Σ*                  String over Σ
+|w|                     Length of string w
+
+L ⊆ Σ*                  Formal language
+concatenation           String concatenation
+w = uv                  Concatenation of u and v
+
+DFA                    Deterministic finite automaton
+NFA                    Nondeterministic finite automaton
+A = (Q,Σ,δ,q₀,F)        Automaton definition
+Q                      Set of states
+δ                      Transition function
+q₀                     Start state
+F                      Accepting states
+
+δ(q,a)                 DFA transition
+δ(q,a) ⊆ Q             NFA transition
+δ*(q,w)                Extended transition on string w
+
+regular                Regular language
+regex                  Regular expression
+(a|b)*                 Kleene star
+ab|c                   Alternation
+
+closure properties      Regular language closure
+union                  L₁ ∪ L₂
+intersection           L₁ ∩ L₂
+complement             Σ* \ L
+concatenation          L₁L₂
+Kleene star            L*
+
+CFG                    Context-free grammar
+G = (V,Σ,R,S)          Grammar definition
+V                      Variables
+R                      Production rules
+S                      Start symbol
+
+A → α                  Production rule
+derivation             Sequence of rule applications
+parse tree             Tree representation of derivation
+
+PDA                    Pushdown automaton
+stack                  Memory stack
+push/pop               Stack operations
+
+context-free           Context-free language
+ambiguous              Grammar with multiple parse trees
+Chomsky normal form    CNF grammar form
+
+TM                     Turing machine
+M = (Q,Σ,Γ,δ,q₀,q_acc,q_rej)
+Γ                      Tape alphabet
+δ                      Transition function
+q_acc                  Accept state
+q_rej                  Reject state
+
+configuration           Instantaneous description
+tape                   Infinite tape
+head                   Read/write head
+
+computable             Computable function
+partial computable      Partial recursive function
+recursive              Decidable language
+r.e.                   Recursively enumerable language
+
+Church–Turing          Church–Turing thesis
+λ-calculus             Equivalent computation model
+μ-recursive            Recursive functions
+
+halting problem         Undecidable problem
+HP                     Halting problem
+HP ∉ decidable         Undecidability
+
+reduction               Mapping reduction
+A ≤_m B                Many-one reduction
+A ≤_T B                Turing reduction
+
+complexity              Computational complexity
+time(f(n))             Time complexity
+space(f(n))            Space complexity
+
+P                      Polynomial-time class
+NP                     Nondeterministic polynomial-time
+coNP                   Complement of NP
+EXP                    Exponential-time class
+PSPACE                 Polynomial-space class
+
+NP-complete            Hardest problems in NP
+SAT                    Boolean satisfiability
+3SAT                   3-clause SAT
+Clique                 Clique problem
+VertexCover            Vertex cover problem
+
+poly-time reduction     Reduction computable in polynomial time
+A ≤_p B                Polynomial-time reduction
+
+hierarchy               Complexity hierarchy
+P ⊆ NP ⊆ PSPACE ⊆ EXP  Standard inclusions
+
+oracle                 Oracle machine
+M^A                    Machine with oracle A
+
+universal TM           Universal Turing machine
+U                      Universal machine
+U simulates M          Simulation relation
+
+regular vs CFL          Language class comparison
+regular ⊂ CFL           Proper inclusion
+
+Myhill–Nerode          Minimization theorem
+equivalence classes     Distinguishability classes
+minimal DFA             Smallest DFA recognizing L
+
+pumping lemma           Regular language lemma
+CFL pumping lemma       Context-free pumping lemma
+
+decision problem        Problem with yes/no answer
+search problem          Problem requiring witness
+optimization problem    Problem requiring best solution
