@@ -46,8 +46,8 @@ This induces a global update rule Φ on the configuration space.
      │                                                                          │
      ▼                                                                          ▼
 ┌───────────────┐                                                      ┌────────────────┐
-│ Asynchronous   │                                                      │ Stochastic     │
-│ CA (ACA)       │                                                      │ CA (SCA)       │
+│ Asynchronous  │                                                      │ Stochastic     │
+│ CA (ACA)      │                                                      │ CA (SCA)       │
 └───────────────┘                                                      └────────────────┘
      │                                                                          │
      │                                                                          │
@@ -60,8 +60,8 @@ This induces a global update rule Φ on the configuration space.
      │                                                                          │
      ▼                                                                          ▼
 ┌────────────────┐                                                      ┌──────────────────────┐
-│ Multi-state     │                                                      │ Extended-neighborhood│
-│ CA (MSCA)       │                                                      │ CA (ENCA)            │
+│ Multi-state    │                                                      │ Extended-neighborhood│
+│ CA (MSCA)      │                                                      │ CA (ENCA)            │
 └────────────────┘                                                      └──────────────────────┘
      │                                                                          │
      │                                                                          │
