@@ -3,75 +3,59 @@ NOTATION REFERENCE
 
 TABLE OF CONTENTS — Mathematical Symbol Atlas (Sections 1–50)
 
-Core Foundations
-1. Common Mathematical Notations
-2. Set Theory & Logic Symbols 
-3. Geometry & Measurement Symbols  
-4. Calculus & Analysis Notations 
-5. Statistics Notations
-6. Advanced Mathematics & Special Symbols 
-7. Trigonometry, Linear Algebra & Matrix Notations
-8. Circle‑Family Operators & Special Composition Symbols  
+ No. 0 | Global Operators & Meta‑Symbols 
+ No. 1 | Common Mathematical Notations 
+ No. 2 | Set Theory & Logic Symbols 
+ No. 3 | Geometry & Measurement Symbols 
+ No. 4 | Calculus & Analysis Notations 
+ No. 5 | Statistics Notations 
+ No. 6 | Advanced Mathematics & Special Symbols 
+ No. 7 | Trigonometry, Linear Algebra & Matrix Notations 
+ No. 8 | Circle‑Family Operators & Special Composition Symbols 
+ No. 9 | Programming, Algorithms & Discrete Structures Notations 
+ No. 10 | Physics & Engineering Symbols 
+ No. 11 | Logic, Type Theory & Formal Semantics 
+ No. 12 | Category Theory & Abstract Algebra Operators 
+ No. 13 | Algebraic Structures & Group Theory Notation 
+ No. 14 | Topology & Manifold Notation 
+ No. 15 | Tensor Calculus & Advanced Differential Geometry 
+ No. 16 | Functional Analysis & Operator Theory 
+ No. 17 | Measure Theory & Probability Foundations 
+ No. 18 | Optimization, Variational Methods & Convex Analysis 
+ No. 19 | Stochastic Processes & Time‑Series Analysis 
+ No. 20 | Information Theory & Coding Theory 
+ No. 21 | Computational Complexity & Formal Languages 
+ No. 22 | Numerical Methods & Scientific Computing 
+ No. 23 | Graph Theory & Network Science 
+ No. 24 | Quantum Mechanics & Quantum Information 
+ No. 25 | Machine Learning & Statistical Modeling 
+ No. 26 | Deep Learning Architecture & Training Notation 
+ No. 27 | Computer Architecture & Systems Programming 
+ No. 28 | Cryptography & Security Protocols 
+ No. 29 | Control Theory & Dynamical Systems 
+ No. 30 | Game Theory & Economic Equilibrium 
+ No. 31 | Formal Logic, Proof Systems & Type Theory 
+ No. 32 | Category Theory & Abstract Algebraic Structures 
+ No. 33 | Topology & Geometric Structures 
+ No. 34 | Partial Differential Equations & Variational Methods 
+ No. 35 | Linear Algebra, Matrix Analysis & Operator Identities 
+ No. 36 | Fourier Analysis, Harmonic Analysis & Signal Processing 
+ No. 37 | Probability Theory, Random Processes & Statistical Distributions 
+ No. 38 | Numerical Optimization, Convex Analysis & Algorithmic Methods 
+ No. 39 | Information Geometry, Statistical Manifolds & Divergence Structures 
+ No. 40 | Quantum Field Theory, Gauge Theory & Operator Formalism 
+ No. 41 | Statistical Mechanics, Thermodynamics & Ensemble Theory 
+ No. 42 | Differential Geometry, Connections & Tensor Calculus 
+ No. 43 | Complex Analysis, Holomorphic Functions & Conformal Structures 
+ No. 44 | Algebraic Topology, Homology, Cohomology & Fundamental Structures 
+ No. 45 | Nonlinear Dynamics, Chaos Theory & Dynamical Systems 
+ No. 46 | Game Theory, Mechanism Design & Strategic Interaction 
+ No. 47 | Formal Logic, Proof Theory & Deductive Systems 
+ No. 48 | Automata Theory, Formal Languages & Computation Models 
+ No. 49 | Category Theory II — Monoidal, Enriched, Higher & Adjunction Structures 
+ No. 50 | Measure Theory II — Integration, Lp Spaces, Radon–Nikodym & Product Measures 
 
-Algebra, Structures & Operators
-9. Abstract Algebra I — Groups, Rings, Fields 
-10. Linear Algebra II — Operators, Spectra, Decompositions  
-11. Multilinear Algebra & Tensor Calculus  
-12. Representation Theory & Characters  
-13. Lie Groups & Lie Algebras
-14. Algebraic Structures — Modules, Ideals, Morphisms  
 
-Analysis, PDEs & Functional Spaces
-15. Real Analysis II — Measure, Integration, Convergence 
-16. Functional Analysis — Operators, Banach/Hilbert Spaces  
-17. Partial Differential Equations**  
-18. Harmonic Analysis & Fourier Operators  
-19. Spectral Theory & Operator Algebras  
-20. Distribution Theory & Sobolev Spaces  
-
-Probability, Stochastic Processes & Information
-21. Probability Theory  
-22. Random Variables, Expectation & Variance  
-23. Stochastic Processes & Martingales  
-24. Information Theory & Divergences  
-25. Bayesian Inference & Statistical Models  
-
-Optimization, Algorithms & Numerical Methods
-26. Optimization Theory
-27. Convex Analysis & Duality 
-28. Numerical Methods & Approximation 
-29. Variational Calculus
-30. Control Theory & Dynamical Optimization  
-
-Topology, Geometry & Manifolds
-31. Topology I — Basic Structures 
-32. Topology II — Continuity, Compactness, Connectedness 
-33. Manifold Theory
-34. Riemannian Geometry 
-35. Geometric Analysis 
-36. Information Geometry
-37. Symplectic Geometry 
-38. Topology III — Advanced Structures 
-39. Algebraic Topology I**  
-
-Physics, QFT & Statistical Mechanics
-40. Quantum Field Theory & Gauge Theory 
-41. Statistical Mechanics & Thermodynamics 
-
-Advanced Geometry & Analysis
-42. Differential Geometry, Connections & Tensor Calculus
-43. Complex Analysis & Conformal Structures
-44. Algebraic Topology II — Homology, Cohomology, Spectral Sequences 
-
-Dynamics, Games, Logic & Computation
-45. Nonlinear Dynamics & Chaos Theory 
-46. Game Theory & Mechanism Design
-47. Formal Logic, Proof Theory & Deductive Systems
-48. Automata Theory, Formal Languages & Computation Models 
-
-Measure Theory II & Advanced Integration
-49. Category Theory II — Monoidal, Enriched, Higher Structures 
-50. Measure Theory II — Lp Spaces, Radon–Nikodym, Product Measures 
 
 === No. 0 | Global Operators & Meta‑Symbols ===
 These symbols apply across all branches of mathematics and define meta‑operations,
