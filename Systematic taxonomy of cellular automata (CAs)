@@ -1,11 +1,14 @@
 Systematic taxonomy of cellular automata (CAs) 
+
 A unified family tree for:
 
 	better cross‑family mapping
 	clearer genotype/phenotype tools
 	more interdisciplinary coherence
 
-Five major families — asynchronous, stochastic, multi‑state, extended‑neighbourhood, and non‑uniform — and analyzing each through definition, variations, genotype, phenotype, and applications. It aims to replace the fragmented CA literature with 
+Five major families — asynchronous, stochastic, multi‑state, extended‑neighbourhood, and non‑uniform 
+— and analyzing each through definition, variations, genotype, phenotype, and applications. It aims 
+to replace the fragmented CA literature.
 
 1. Classical CA Framework (the baseline)
 
@@ -264,4 +267,6 @@ CA applications across domains:
 
 Each domain uses different CA families depending on modelling needs. 
 
-
+7. Reference
+Rollier, A., Goles, E., & Dubroca, G. (2024). A Comprehensive Taxonomy of Cellular Automata. arXiv:2401.08408.
+https://arxiv.org/html/2401.08408v2
