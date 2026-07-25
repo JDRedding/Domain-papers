@@ -1,6 +1,78 @@
 NOTATION REFERENCE
 511.3 — Mathematical Symbols & Notation
 
+TABLE OF CONTENTS — Mathematical Symbol Atlas (Sections 1–50)
+
+Core Foundations
+1. Common Mathematical Notations
+2. Set Theory & Logic Symbols 
+3. Geometry & Measurement Symbols  
+4. Calculus & Analysis Notations 
+5. Statistics Notations
+6. Advanced Mathematics & Special Symbols 
+7. Trigonometry, Linear Algebra & Matrix Notations
+8. Circle‑Family Operators & Special Composition Symbols  
+
+Algebra, Structures & Operators
+9. Abstract Algebra I — Groups, Rings, Fields 
+10. Linear Algebra II — Operators, Spectra, Decompositions  
+11. Multilinear Algebra & Tensor Calculus  
+12. Representation Theory & Characters  
+13. Lie Groups & Lie Algebras
+14. Algebraic Structures — Modules, Ideals, Morphisms  
+
+Analysis, PDEs & Functional Spaces
+15. Real Analysis II — Measure, Integration, Convergence 
+16. Functional Analysis — Operators, Banach/Hilbert Spaces  
+17. Partial Differential Equations**  
+18. Harmonic Analysis & Fourier Operators  
+19. Spectral Theory & Operator Algebras  
+20. Distribution Theory & Sobolev Spaces  
+
+Probability, Stochastic Processes & Information
+21. Probability Theory  
+22. Random Variables, Expectation & Variance  
+23. Stochastic Processes & Martingales  
+24. Information Theory & Divergences  
+25. Bayesian Inference & Statistical Models  
+
+Optimization, Algorithms & Numerical Methods
+26. Optimization Theory
+27. Convex Analysis & Duality 
+28. Numerical Methods & Approximation 
+29. Variational Calculus
+30. Control Theory & Dynamical Optimization  
+
+Topology, Geometry & Manifolds
+31. Topology I — Basic Structures 
+32. Topology II — Continuity, Compactness, Connectedness 
+33. Manifold Theory
+34. Riemannian Geometry 
+35. Geometric Analysis 
+36. Information Geometry
+37. Symplectic Geometry 
+38. Topology III — Advanced Structures 
+39. Algebraic Topology I**  
+
+Physics, QFT & Statistical Mechanics
+40. Quantum Field Theory & Gauge Theory 
+41. Statistical Mechanics & Thermodynamics 
+
+Advanced Geometry & Analysis
+42. Differential Geometry, Connections & Tensor Calculus
+43. Complex Analysis & Conformal Structures
+44. Algebraic Topology II — Homology, Cohomology, Spectral Sequences 
+
+Dynamics, Games, Logic & Computation
+45. Nonlinear Dynamics & Chaos Theory 
+46. Game Theory & Mechanism Design
+47. Formal Logic, Proof Theory & Deductive Systems
+48. Automata Theory, Formal Languages & Computation Models 
+
+Measure Theory II & Advanced Integration
+49. Category Theory II — Monoidal, Enriched, Higher Structures 
+50. Measure Theory II — Lp Spaces, Radon–Nikodym, Product Measures 
+
 === No. 0 | Global Operators & Meta‑Symbols ===
 These symbols apply across all branches of mathematics and define meta‑operations,
 definitions, or global conventions.
