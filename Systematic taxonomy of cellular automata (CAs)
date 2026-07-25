@@ -332,6 +332,50 @@ Example:
 	non‑uniform rules can emulate multi‑state behavior
 	extended neighbourhoods can simulate multi‑state CAs
 
+Mapping of CA Families
+-----------------------------------------------------------------------------------------
+Classical CA (baseline)
+    SID: Structure = uniform grid; Interaction = synchronous local rule; Dynamics = Φ
+    PED: Power = deterministic φ; Evaluation = fixed rule-table; Dynamics = global update
+
+-----------------------------------------------------------------------------------------
+Asynchronous CA (ACA)
+    SID: Interaction relaxation → temporal desynchronization
+    PED: Dynamics(Q_slice) becomes schedule-dependent
+    RDG-mode: Interaction-mode perturbation
+
+-----------------------------------------------------------------------------------------
+Stochastic CA (SCA)
+    SID: Structure unchanged; Interaction probabilistic
+    PED: Power(M,F) replaced by probability kernels
+    RDG-mode: Power-mode perturbation
+
+-----------------------------------------------------------------------------------------
+Multi-state CA (MSCA)
+    SID: Structure expanded (state alphabet enlargement)
+    PED: Evaluation(p,P) becomes k-ary/continuous
+    RDG-mode: Evaluation-mode expansion
+
+-----------------------------------------------------------------------------------------
+Extended-neighborhood CA (ENCA)
+    SID: Interaction graph expanded (nonlocal, memory, reversible)
+    PED: Dynamics(Q_slice) includes extended dependency radius
+    RDG-mode: Interaction + Dynamics-mode expansion
+
+-----------------------------------------------------------------------------------------
+Non-uniform CA (ν-CA)
+    SID: Structure becomes heterogeneous (spatial/temporal rule variation)
+    PED: Evaluation(p,P) becomes distributed; Power(M,F) varies across space/time
+    RDG-mode: Structure + Evaluation-mode heterogeneity
+
+-----------------------------------------------------------------------------------------
+Cross-family equivalences
+    ACA ↔ SCA: Interaction desync mimics probabilistic kernels
+    ENCA ↔ MSCA: extended neighborhoods emulate multi-state richness
+    ν-CA ↔ MSCA: heterogeneous rules emulate expanded alphabets
+-----------------------------------------------------------------------------------------
+
+
 6. Applications Overview
 
 CA applications across domains:
