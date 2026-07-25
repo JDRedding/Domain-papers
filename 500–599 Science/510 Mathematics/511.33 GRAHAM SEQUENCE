@@ -1,7 +1,8 @@
 GRAHAM SEQUENCE (STRUCTURE)
 ============================================================
 511.33 — Large numbers / combinatorics-related number theory
-This file documents Graham's Number and the recursive sequence that defines it.
+This file documents Graham's Number and the recursive 
+sequence that defines it.
 
 Definition:
     g(1)   = 3 ↑↑↑↑ 3
@@ -46,7 +47,9 @@ is already massive, and g(2) uses g(1) as its arrow count,
 making it vastly larger. By g(64), the number is beyond 
 practical computation.
 
-Graham's Number Fact: The last 12 digits are known: ...7262464195387
+Graham's Number Fact: The last 12 digits are known: 
+
+                    ...7262464195387
 
 ------------------------------------------------------------
                  EXPANSION STRUCTURE (NOT VALUES)
