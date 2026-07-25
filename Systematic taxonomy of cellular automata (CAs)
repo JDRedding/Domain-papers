@@ -1,5 +1,5 @@
 Systematic taxonomy of cellular automata (CAs) 
-
+-----------------------------------------------------------------------------------------
 A unified family tree for:
 
 	better cross‑family mapping
@@ -11,7 +11,7 @@ Five major families — asynchronous, stochastic, multi‑state, extended‑neig
 to replace the fragmented CA literature.
 
 1. Classical CA Framework (the baseline)
-
+-----------------------------------------------------------------------------------------
 The classical CA as a sextuple  
 
 	𝐶=⟨𝑇, 𝑆, 𝑠, 𝑠_0, 𝑁, 𝜙⟩
@@ -119,7 +119,7 @@ This induces a global update rule Φ on the configuration space.
 +-------------------------------------------------------------------------------------------------+
 
 2. Elementary Cellular Automata (ECA)
-
+-----------------------------------------------------------------------------------------
 A special case: 
 
 	1‑D, binary states, radius‑1 neighbourhood.
@@ -140,7 +140,7 @@ Boundary conditions (BCs) are catalogued:
 Each BC alters information propagation and pattern formation. 
 
 3. Genotype vs Phenotype
-
+-----------------------------------------------------------------------------------------
 Genotypic tools (rule‑table based)
 The lattice moves from simple rule tables → activity measures → statistical descriptors → symmetry 
 markers → sensitivity metrics → constraint metrics → full algorithmic complexity.
@@ -183,7 +183,6 @@ markers → sensitivity metrics → constraint metrics → full algorithmic comp
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Kolmogorov complexity (algorithmic complexity of rule table; maximal layer)  │
 └──────────────────────────────────────────────────────────────────────────────┘
-
 
 Examples include:
 
@@ -251,6 +250,22 @@ Examples include:
 These quantify emergent behavior. 
 
 4. The Five CA Families (the core taxonomy)
+-----------------------------------------------------------------------------------------
+The taxonomy is not a partition — it’s a cover.
+
+                 Classical CA
+                       │
+                       ▼
+   ┌──────────────────────────────────────────────┐
+   │                Overlap Core                  │
+   └──────────────────────────────────────────────┘
+    ACA ↔ SCA ↔ ν‑CA ↔ MSCA ↔ ENCA (all connected)
+
+Major overlap clusters:
+A. Temporal cluster: ACA ↔ SCA ↔ ν‑CA
+B. State cluster: MSCA ↔ ENCA ↔ ν‑CA
+C. Graph cluster: ENCA ↔ ν‑CA
+D. Stochastic cluster: SCA ↔ ACA ↔ ν‑CA
 
 4.1 Asynchronous CAs (ACA)
 
@@ -323,7 +338,7 @@ Phenotype: heterogeneous dynamics
 Applications: adaptive modelling, hybrid systems. 
 
 5. Cross‑family Equivalences
-
+-----------------------------------------------------------------------------------------
 Many CA types belong to multiple families due to mathematical equivalence.
   
 Example:
@@ -331,6 +346,93 @@ Example:
 	asynchronous updates can mimic stochasticity
 	non‑uniform rules can emulate multi‑state behavior
 	extended neighbourhoods can simulate multi‑state CAs
+
+This is the hidden generator of the five families.
+
+	Synchrony 			→ Asynchrony
+	Determinism 		→ Stochasticity
+	Binary alphabet 	→ Multi‑state
+	Locality 			→ Extended neighbourhood
+	Uniformity 			→ Non‑uniformity
+
+CA Family Overlap Diagram 
+-----------------------------------------------------------------------------------------
+Each CA family relaxes one classical axiom, but relaxing one axiom often implicitly relaxes another, creating overlap regions.
+
+1. ACA ↔ SCA (Asynchronous ↔ Stochastic)
+Overlap reason:  
+Asynchronous update schedules behave like random temporal kernels.
+
+ACA introduces temporal desynchronization
+SCA introduces probabilistic rule application
+
+Overlap region:  
+“Random asynchronous CA”
+→ asynchronous updates drawn from a probability distribution.
+
+Asynchronous CA
+Stochastic CA
+
+2. ENCA ↔ MSCA (Extended‑neighborhood ↔ Multi‑state)
+Overlap reason:  
+Increasing neighbourhood radius can encode multi‑state behavior by embedding extra state into spatial context.
+
+ENCA expands neighbourhood graph
+MSCA expands state alphabet
+
+Overlap region:  
+“Neighborhood‑encoded multi‑state CA”
+→ multi‑state rules simulated via extended spatial context.
+
+Extended‑neighborhood CA
+Multi‑state CA
+
+3. ν‑CA ↔ MSCA (Non‑uniform ↔ Multi‑state)
+Overlap reason:  
+Spatially varying rules emulate multi‑state behavior by treating rule‑variation as an implicit state dimension.
+
+	ν‑CA introduces rule heterogeneity
+	MSCA introduces state heterogeneity
+
+Overlap region:  
+“Heterogeneous‑rule multi‑state CA”
+→ rule variation acts like a hidden multi‑state alphabet.
+	
+	Non‑uniform CA
+	Multi‑state CA
+
+4. ACA ↔ ν‑CA (Asynchronous ↔ Non‑uniform)
+Overlap reason:  
+Temporal non‑uniformity (ACA) is a special case of spatiotemporal non‑uniformity (ν‑CA).
+
+	ACA: non‑uniform timing
+	ν‑CA: non‑uniform rules
+
+Overlap region:  
+“Schedule‑heterogeneous CA”
+→ rule heterogeneity + timing heterogeneity.
+
+5. SCA ↔ ν‑CA (Stochastic ↔ Non‑uniform)
+Overlap reason:  
+Random rule selection is a stochastic form of non‑uniformity.
+
+	SCA: probability kernels
+	ν‑CA: rule distributions
+
+Overlap region:  
+“Probabilistic non‑uniform CA”
+→ rule distributions sampled stochastically.
+
+6. ENCA ↔ ν‑CA (Extended‑neighborhood ↔ Non‑uniform)
+Overlap reason:  
+Non‑uniform rules often require extended neighbourhoods to propagate heterogeneity.
+
+	ENCA: expanded neighbourhood graph
+	ν‑CA: heterogeneous rule sets
+
+Overlap region:  
+“Graph‑heterogeneous CA”
+→ rule variation tied to neighbourhood structure.
 
 Mapping of CA Families
 -----------------------------------------------------------------------------------------
@@ -377,7 +479,7 @@ Cross-family equivalences
 
 
 6. Applications Overview
-
+-----------------------------------------------------------------------------------------
 CA applications across domains:
 
 	computer science 
@@ -396,5 +498,6 @@ CA applications across domains:
 Each domain uses different CA families depending on modelling needs. 
 
 7. Reference
+-----------------------------------------------------------------------------------------
 Rollier, A., Goles, E., & Dubroca, G. (2024). A Comprehensive Taxonomy of Cellular Automata. arXiv:2401.08408.
 https://arxiv.org/html/2401.08408v2
