@@ -125,19 +125,47 @@ A special case:
 	1‑D, binary states, radius‑1 neighbourhood.
 
 This yields 256 Wolfram rules, reducible to 88 independent rules under reflection/complement symmetries.
-Rule 110 is highlighted as a minimal universal CA. 
+Rule 110 is highlighted as a minimal universal CA. Each Boundary condition (BC) alters information 
+propagation and pattern formation. 
 
-Boundary conditions (BCs) are catalogued:
+| Boundary condition
+| Genotypic effect
+| Phenotypic effect on patterns
+| Typical use / interpretation
 
-	fixed
-	periodic
-	adiabatic
-	reflexive
-	intermediate
-	random
-	distributed
+| Fixed | **State at edges clamped** to a constant value; rule table unchanged but applied with fixed edge context. 
+| Suppresses propagation at borders; can create absorbing regions and bias pattern growth inward. 
+| Modelling walls, sinks, or external fields that pin the boundary. 
 
-Each BC alters information propagation and pattern formation. 
+| Periodic 
+| Edges identified (wrap‑around)**; lattice becomes a topological ring/torus. 
+| Eliminates edges; supports travelling waves and global cycles; patterns can circulate indefinitely. 
+| Studying intrinsic dynamics without boundary artifacts; idealized infinite medium. 
+
+| Adiabatic 
+| Edge copies interior state without flux; boundary mimics nearest inner cell. 
+| Reduces gradient at borders; patterns tend to “flatten” near edges, minimizing discontinuities. 
+| Approximating insulated or no‑flux boundaries in physical/chemical models. 
+
+| Reflexive 
+| Mirror extension at edges; neighbourhood reflects across boundary. 
+| Creates symmetric pattern echoes; can stabilize or reinforce symmetric structures. 
+| Symmetry‑preserving setups; modelling reflective barriers. 
+
+| Intermediate 
+| **Hybrid between fixed and periodic (e.g., one side fixed, one side periodic). 
+| Asymmetric propagation; patterns drift or bias toward one side; mixed edge effects. 
+| Directional transport, driven media, or semi‑open systems. 
+
+| Random 
+| Boundary states sampled from a distribution at each step or initialization. 
+| Injects noise at edges; can seed randomness, trigger phase transitions, or destabilize regular patterns. 
+| Stochastic environments, fluctuating reservoirs, or noisy inputs. 
+
+| Distributed 
+| Boundary values follow a prescribed spatial profile (gradient, pattern, field). 
+| Imposes large‑scale structure; patterns interact with external gradients, leading to complex interfaces. 
+| Modelling external fields, gradients, or inhomogeneous environments. 
 
 3. Genotype vs Phenotype
 -----------------------------------------------------------------------------------------
@@ -248,6 +276,41 @@ Examples include:
 	transitivity
 
 These quantify emergent behavior. 
+
+Genotype → Phenotype Functor 
+-----------------------------------------------------------------------------------------
+Functor Definition
+A Cellular Automaton induces a functor
+
+	𝐹: 𝐺𝑒𝑛𝑜𝑡𝑦𝑝𝑒 ⟶ 𝑃ℎ𝑒𝑛𝑜𝑡𝑦𝑝𝑒
+
+where:
+
+Genotype objects = rule‑table descriptors
+(e.g., Langton’s λ, mean‑field parameters, Z‑reverse, μ‑sensitivity, obstruction parameter, Kolmogorov complexity)
+
+Phenotype objects = dynamical behaviors
+(e.g., attractor structure, topological dynamics, sensitivity, expansivity, transitivity)
+
+Morphisms = rule perturbations → dynamical transitions
+
+1. Increasing genotype richness → increasing dynamical complexity
+
+Simple rule tables → fixed points
+λ & mean‑field → periodic orbits
+Z‑reverse → multi‑basin attractors
+μ‑sensitivity → symbolic/topological dynamics
+obstruction → chaotic sensitivity
+Kolmogorov complexity → full chaotic expansivity & transitivity
+
+2. The functor is monotone
+More complex genotype descriptors never map to simpler phenotypes.
+
+3. The functor is many‑to‑one
+Different genotype descriptors can map to the same phenotype class.
+
+4. The functor is not invertible
+Phenotype does not uniquely determine genotype.
 
 4. The Five CA Families (the core taxonomy)
 -----------------------------------------------------------------------------------------
