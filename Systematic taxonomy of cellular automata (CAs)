@@ -141,9 +141,50 @@ Each BC alters information propagation and pattern formation.
 
 3. Genotype vs Phenotype
 
-The paper distinguishes:
-
 Genotypic tools (rule‑table based)
+The lattice moves from simple rule tables → activity measures → statistical descriptors → symmetry 
+markers → sensitivity metrics → constraint metrics → full algorithmic complexity.
+
+                          Genotype Lattice
+                          (rule-table structure)
+                                      │
+                                      ▼
+                         ┌──────────────────────┐
+                         │  Binary Rule Table   │
+                         │  (ECA baseline)      │
+                         └──────────────────────┘
+                                      │
+                                      ▼
+                     ┌────────────────────────────────┐
+                     │ Langton’s λ (activity measure) │
+                     └────────────────────────────────┘
+                                      │
+                                      ▼
+                 ┌──────────────────────────────────────────┐
+                 │ Mean-field parameters (statistical rule) │
+                 └──────────────────────────────────────────┘
+                                      │
+                                      ▼
+           ┌────────────────────────────────────────────────────────┐
+           │ Z-reverse parameter (symmetry / reversibility marker)  │
+           └────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+        ┌──────────────────────────────────────────────────────────────┐
+        │ μ-sensitivity (rule sensitivity to perturbations)            │
+        └──────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │ Obstruction parameter (rule constraints; forbidden transitions)        │
+   └────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Kolmogorov complexity (algorithmic complexity of rule table; maximal layer)  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
 Examples include:
 
 	Langton’s λ
@@ -156,6 +197,49 @@ Examples include:
 These quantify rule‑level structure. 
 
 Phenotypic tools (behavior‑based)
+The lattice moves from simple attractors → periodic behavior → multi‑basin structure → symbolic/
+topological dynamics → chaotic sensitivity → expansive chaos → full topological transitivity.
+
+                          Phenotype Lattice
+                          (emergent behavior)
+                                      │
+                                      ▼
+                         ┌──────────────────────┐
+                         │  Fixed Points        │
+                         │  (simple attractors) │
+                         └──────────────────────┘
+                                      │
+                                      ▼
+                     ┌────────────────────────────────┐
+                     │ Limit Cycles (periodic orbits) │
+                     └────────────────────────────────┘
+                                      │
+                                      ▼
+                 ┌──────────────────────────────────────────┐
+                 │ Attractor Structure (multi-basin)        │
+                 └──────────────────────────────────────────┘
+                                      │
+                                      ▼
+           ┌────────────────────────────────────────────────────────┐
+           │ Topological Dynamics (shift, mixing, symbolic regimes) │
+           └────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+        ┌──────────────────────────────────────────────────────────────┐
+        │ Sensitivity (chaos onset; dependence on initial conditions)  │
+        └──────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │ Expansivity (divergence of nearby configurations)                      │
+   └────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Transitivity (full chaotic regime; dense orbit structure)                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
 Examples include:
 
 	attractor structure
