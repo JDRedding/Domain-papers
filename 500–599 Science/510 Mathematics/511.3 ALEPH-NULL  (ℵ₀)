@@ -52,4 +52,90 @@ Summary:
       stable under finite and countable algebraic operations,
       and strictly smaller than the continuum c.
 
+OPERATOR FORM OF ALEPH-NULL (ℵ₀)
+------------------------------------------------------------
+
+Object:
+  ℵ₀  :=  | ω |
+
+Interpretation:
+  |·|  =  Cardinal-Collapse Operator
+  ω    =  Minimal Infinite Ordinal (RDG-ordinal mode)
+
+Thus:
+  ℵ₀ is the SIZE-INVARIANT of ω under collapse.
+
+Tri-Mode Embedding
+------------------------------------------------------------
+
+SID (Structure–Interaction–Dynamics):
+
+  S-mode (Structure):
+      S(ℵ₀) := EquivClass( X , X ≅ N )
+      where N = {0,1,2,...}
+
+  I-mode (Interaction):
+      I(ℵ₀) :=  Bij( X , N )
+      (existence of a bijection defines membership in ℵ₀-class)
+
+  D-mode (Dynamics):
+      D(ℵ₀) := Closure under:
+                 - finite sum
+                 - finite product
+                 - countable sum
+                 - countable product
+               encoded as:
+                 ℵ₀ ⊕ ℵ₀ = ℵ₀
+                 ℵ₀ ⊗ ℵ₀ = ℵ₀
+
+Operator-Clean Notation
+------------------------------------------------------------
+
+  ℵ₀  =  Card( ω )
+       =  Collapse_Ω( ω )
+       =  Ω₀
+
+Where:
+  Card(·)        = cardinal abstraction operator
+  Collapse_Ω(·)  = RDG collapse-to-cardinality operator
+  Ω₀             = RDG name for the initial infinite cardinal
+
+Ladder (Ordinal → Cardinal → Continuum)
+------------------------------------------------------------
+
+  ω    --Collapse-->   ℵ₀    --PowerSet-->   c
+
+  ω    = order-type
+  ℵ₀   = size-type
+  c    = continuum cardinal
+
 ============================================================
+DIAGRAM — ω, ℵ₀, c
+============================================================
+
+                 ORDINALS                    CARDINALS
+                 --------                    ---------
+
+                     ω   ------------------>   ℵ₀
+                   (first                     (first
+                infinite ordinal)          infinite cardinal)
+                     |                            |
+                     |                            |
+                     |                            |
+                     v                            v
+
+        ω < ω₁ < ω₂ < ...                ℵ₀ < ℵ₁ < ℵ₂ < ...
+
+                     |                            |
+                     |                            |
+                     |                            |
+                     v                            v
+
+   REAL LINE STRUCTURE ----------------------->   c
+   (uncountable; requires                     (cardinality of
+    infinite binary expansion)                 the continuum)
+
+Key Relations:
+  - ω is the order-type of N.
+  - ℵ₀ = |ω| (cardinal-collapse of ω).
+  - c > ℵ₀ (Cantor’s theorem).
