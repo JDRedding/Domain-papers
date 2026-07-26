@@ -7,29 +7,38 @@ network architecture, which uses multiple layers of cell types to
 optimize coverage, capacity, and speed.
 
 System State
-x(t) — Network state at time t  
+
+           x(t) — Network state at time t  
+
 Includes: user position, beam direction, link quality, LOS/NLOS 
 condition, cell tier (macro/micro/small/femto), blockage state.
 
 Control Input
-u(t) — Network control actions
+
+           u(t) — Network control actions
+
 Beam steering, power allocation, handover decisions, scheduling, 
 modulation/coding selection.
 
 Output
-y(t) — User‑perceived performance
+
+           y(t) — User‑perceived performance
+
 Throughput, latency, SINR, coverage quality.
 
 Dynamics
 Because mmWave propagation is nonlinear, blockage‑driven, and 
 environment‑dependent:
 
-ẋ(t) = f(x(t), u(t))  
+           ẋ(t) = f(x(t), u(t)) 
+
 Nonlinear dynamics describing mobility, attenuation, beam tracking, 
 and cell transitions.
 
 Sub‑6 GHz macro/micro layers behave more like LTI approximations:
-ẋ(t) = Ax + Bu  
+
+           ẋ(t) = Ax + Bu  
+
 Where A encodes path‑loss and mobility, B encodes power/beam control.
 
 ┌─────────────────────────────────────┐
