@@ -6,6 +6,19 @@ This document provides a visual and textual overview of 5G heterogeneous
 network architecture, which uses multiple layers of cell types to 
 optimize coverage, capacity, and speed.
 
+Multi‑layer nonlinear  system:
+
+           Macro/micro = LTI stable modes
+           Small/mmWave = nonlinear, hybrid, mode‑switching dynamics
+           Blockage = state jumps
+           Beam tracking = feedback control
+           Handover = hybrid transition
+           Mobility = time‑varying A(t)
+           Rain fade = perturbation
+           RIS/massive MIMO = feedback stabilization (A − BK)
+           Throughput/SINR = output y(t)
+           Network optimization = LQR/H∞‑like control problem
+
 System State
 
            x(t) — Network state at time t  
