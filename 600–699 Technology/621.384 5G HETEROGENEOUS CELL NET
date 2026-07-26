@@ -431,9 +431,8 @@ These make mmWave a nonlinear hybrid system, not an LTI system.
 ------------------------------------------------------------------------
 5G scheduling is discrete:
 
-xₖ₊₁ = A_d xₖ + B_d uₖ
-
-yₖ = C_d xₖ + D_d uₖ
+           xₖ₊₁ = A_d xₖ + B_d uₖ
+           yₖ = C_d xₖ + D_d uₖ
 
 Beam tracking, HARQ, and scheduling operate in discrete slots 
 (0.125–1 ms).
