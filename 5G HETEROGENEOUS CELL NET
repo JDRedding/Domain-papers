@@ -83,30 +83,34 @@ environments.
   for modern 5G devices as users move between environments.                   
 ------------------------------------------------------------------------
 
-mm Wave (millimeter-wave) frequencies—typically 24–100 GHz in 5G Frequency Range 
-2 (FR2)—offer massive bandwidth for multi-gigabit speeds and low latency. 
-However, their short wavelengths (roughly 1–10 mm) create severe propagation 
-challenges that limit range, reliability, and ease of deployment compared with 
-Sub-6 GHz bands.
+mm Wave (millimeter-wave) frequencies—typically 24–100 GHz in 5G 
+Frequency Range 2 (FR2)—offer massive bandwidth for multi-gigabit 
+speeds and low latency. However, their short wavelengths (roughly 
+1–10 mm) create severe propagation challenges that limit range, 
+reliability, and ease of deployment compared with Sub-6 GHz bands.
 
-High Free-Space Path LossPath loss increases with the square of frequency 
-(Friis transmission equation). At 28 GHz, free-space path loss is roughly 20–22 
-dB higher than at ~2–3 GHz for the same distance. A single antenna therefore 
-delivers far less power at the receiver. 
-This forces networks to use highly directional, high-gain phased-array antennas 
-and short cell radii (often 100–300 m or less) rather than the multi-kilometer 
-coverage of macro cells.
+High Free-Space Path LossPath loss increases with the square of 
+frequency (Friis transmission equation). At 28 GHz, free-space path 
+loss is roughly 20–22 dB higher than at ~2–3 GHz for the same 
+distance. A single antenna therefore delivers far less power at the 
+receiver. 
+
+This forces networks to use highly directional, high-gain phased-
+array antennas and short cell radii (often 100–300 m or less) rather 
+than the multi-kilometer coverage of macro cells.
 
 Atmospheric and Weather Attenuation
 ---
-Gaseous absorption: Oxygen and water vapor absorb energy. Many mmWave bands 
-experience only modest extra loss (1–2 dB/km) under clear conditions, but 
-peaks occur near 60 GHz (oxygen) and certain water-vapor lines. 
+Gaseous absorption: Oxygen and water vapor absorb energy. Many 
+mm Wave bands experience only modest extra loss (1–2 dB/km) under 
+clear conditions, but peaks occur near 60 GHz (oxygen) and certain 
+water-vapor lines. 
 
 Rain fade
-: Raindrops are comparable in size to the wavelength, causing scattering and 
-absorption. Heavy rain can produce 5–20 dB/km attenuation (higher at upper 
-mm Wave frequencies), reducing link reliability during storms. 
+: Raindrops are comparable in size to the wavelength, causing 
+scattering and absorption. Heavy rain can produce 5–20 dB/km 
+attenuation (higher at upper mm Wave frequencies), reducing link 
+reliability during storms. 
 
 Fog, hail, and humidity add further variable losses.
 ---
