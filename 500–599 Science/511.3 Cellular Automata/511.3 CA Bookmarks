@@ -5,11 +5,16 @@ RAM-Relational-Automata-Manifolds
 https://github.com/JDRedding/RAM-Relational-Automata-Manifolds
 
 📁 Computation_Models
+
  Catalog of Cellular Automata
  https://doc.sagemath.org/html/en/reference/dynamics/sage/dynamics/cellular_automata/catalog.html
 
+ Cellular Automaton
+ https://www.emergentmind.com/topics/cellular-automaton-ca-frameworks
+
 📁 Discrete_Dynamics
 📁 Cellular_Automata
+
  Wolfram MathWorld — Cellular Automaton
  https://mathworld.wolfram.com/CellularAutomaton.html
 
@@ -17,10 +22,12 @@ https://github.com/JDRedding/RAM-Relational-Automata-Manifolds
 📁 Formal_Languages
 📁 Regular
 📁 DFA
+
  Hopcroft–Ullman DFA Definition (Stanford CS Theory Notes)
  https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/08/Slides08.pdf 
 
 📁 NFA
+
  NFA Definition — Stanford CS Theory Notes
  https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/09/Slides09.pdf
 
@@ -29,11 +36,13 @@ https://github.com/JDRedding/RAM-Relational-Automata-Manifolds
  https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec03/ 
 
 📁 Myhill–Nerode
+
  Myhill–Nerode Theorem — Cornell CS
  https://www.cs.cornell.edu/courses/cs4820/2019sp/lectures/lec05-myhill-nerode.pdf (cs.cornell.edu in Bing)
 
 📁 Context_Free
 📁 CFG
+
  Context-Free Grammars — MIT OCW
  https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec05/ 
 
@@ -42,33 +51,40 @@ https://github.com/JDRedding/RAM-Relational-Automata-Manifolds
  https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/11/Slides11.pdf
 
 📁 CNF
+
  Chomsky Normal Form — University of Washington CSE
  https://courses.cs.washington.edu/courses/cse311/17sp/lectures/lecture17.pdf
 
 📁 Decidability
 📁 TM
+
  Turing Machines — Stanford CS Theory Notes
  https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/13/Slides13.pdf 
 
 📁 r.e._languages
+
  Recursively Enumerable Languages — MIT OCW
  https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec12/ 
 
 📁 Reductions
+
  Reductions — MIT OCW
  https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-fall-2005/resources/mit6_045jf05_lec13/ 
 
 📁 Halting_Problem
+
  Halting Problem — Stanford CS Theory Notes
  https://web.stanford.edu/class/archive/cs/cs103/cs103.1202/lectures/14/Slides14.pdf 
 
 📁 Computation_Models
 📁 Universal_Computation
 📁 Turing_Machines
+
  Universal Turing Machines — MathWorld
  https://mathworld.wolfram.com/UniversalTuringMachine.html 
 
 📁 Lambda_Calculus
+
  Lambda Calculus — University of Cambridge
  https://www.cl.cam.ac.uk/teaching/2122/Lambda/ 
 
@@ -78,10 +94,12 @@ https://github.com/JDRedding/RAM-Relational-Automata-Manifolds
 
 📁 Discrete_Dynamics
 📁 Cellular_Automata
+
  Discrete Dynamics Lab
  https://www.ddlab.com/
 
 📁 Cellular_Automata Subfolders
+
 These are the best canonical sources for each CA subtype.
 
 📁 Classical_CA
@@ -89,26 +107,32 @@ These are the best canonical sources for each CA subtype.
  https://mathworld.wolfram.com/CellularAutomaton.html 
 
 📁 Asynchronous_CA
+
  Asynchronous Cellular Automata — Santa Fe Institute
  https://www.santafe.edu/research/results/working-papers/asynchronous-cellular-automata 
 
 📁 Stochastic_CA
+
  Stochastic Cellular Automata — Scholarpedia
  http://www.scholarpedia.org/article/Stochastic_cellular_automata 
 
 📁 MultiState_CA
+
  Multi-State Cellular Automata — Scholarpedia
  http://www.scholarpedia.org/article/Cellular_automata 
 
 📁 ExtendedNeighborhood_CA
+
  Extended Neighborhood / Larger Radius CA — Wolfram MathWorld
  https://mathworld.wolfram.com/Neighborhood.html 
 
 📁 NonUniform_CA
+
  Non-Uniform Cellular Automata — arXiv survey
  https://arxiv.org/abs/0906.3248
 
 📁 Genotype_Lattice
+
  Langton’s λ & CA Genotype Measures — Physica D
  https://www.sciencedirect.com/science/article/pii/016727899090239X 
 
