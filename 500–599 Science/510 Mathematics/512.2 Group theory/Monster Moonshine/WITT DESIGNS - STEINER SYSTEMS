@@ -56,6 +56,62 @@ Order: 95 040
 CODING THEORY LINK
 Extended ternary Golay code G₁₂ → Witt design S(5,6,12) → M₁₂
 
+DERIVED DESIGN  
+Fix a point x ∈ X.  
+Consider all hexads B containing x.  
+Delete x from each block:
+
+B' = B \ {x}.
+
+The resulting blocks B' form a 4-design S(4,5,11) on the remaining 11 points.
+
+RESIDUAL STRUCTURE  
+Remove all hexads containing x.  
+The remaining hexads form a regular incidence structure on 11 points,  
+with uniform pair/triple/quadruple incidence inherited from the λ-values.
+
+This parallels the S(5,8,24) → S(4,7,23) derived design.
+
+INTERSECTION SPECTRUM FOR S(5,6,12) 
+Two distinct hexads intersect in:
+
+{0, 2, 4}
+
+Complements give:
+
+{0, 6}
+
+Thus the small Witt design shares the same “even intersection” phenomenon  
+as the large Witt design S(5,8,24), though with different parameters.
+
+OPERATOR FORM 
+Define the completion operator  
+
+    W₁₂ : C(X,5) → C(X,6)  
+
+where X = {0,1,...,11}.
+
+Properties:
+
+• Extension  
+  For every 5-subset T ⊆ X,  
+  T ⊆ W₁₂(T).
+
+• Uniqueness  
+  W₁₂(T₁) = W₁₂(T₂)  
+  ⇔  
+  T₁ and T₂ lie in the same hexad.
+
+• Equivariance  
+  For every g ∈ M₁₂,  
+  W₁₂(g·T) = g·W₁₂(T).
+
+• Incidence regularity  
+  The λ-values (λ₂=30, λ₃=12, λ₄=4, λ₅=1) encode the intersection constraints  
+  for all pairs, triples, 4-sets, and 5-sets.
+
+This operator is the exact analogue of the S(5,8,24) completion operator W₂₄.
+
 PART 2 — STEINER SYSTEM S(5,8,24)  (THE LARGE WITT DESIGN)
 ================================================================================
 24 points, 759 blocks (octads)
@@ -129,8 +185,59 @@ Both arise as the supports of minimum-weight codewords in the corresponding
 perfect Golay codes.
 M₁₂ can be realized as a stabilizer inside M₂₄.
 
+GROUP EMBEDDING M₁₂ < M₂₄
+================================================================================
+
+GROUP EMBEDDING  
+The Mathieu group M₁₂ occurs naturally as a point-stabilizer inside M₂₄:
+
+M₁₂ = Stab_{M₂₄}(x)
+
+for any point x ∈ {1,...,24}.
+
+Consequently:
+
+• S(5,6,12) is the derived design of S(5,8,24).  
+• Hexads correspond to octads containing a fixed point.  
+• The Golay-code construction of S(5,6,12) is inherited from G₂₄.
+
+This is the structural link between the two Witt designs.
+
 SUMMARY TABLE
 ================================================================================
 Design          Points  Block size  # Blocks  Aut group   Order of Aut
 S(5,6,12)         12         6        132       M₁₂         95 040
 S(5,8,24)         24         8        759       M₂₄     244 823 040
+
+UNIFIED WITT SCHEMA TABLE
+================================================================================
+
+UNIFIED WITT SCHEMA  
+The two Witt designs fit into a single structural pipeline:
+
+Layer        | S(5,6,12)              | S(5,8,24)
+-------------|-------------------------|------------------------------
+Code         | G₁₂ (ternary Golay)     | G₂₄ (binary Golay)
+Design       | Small Witt (12 points)  | Large Witt (24 points)
+Group        | M₁₂                     | M₂₄
+Lattice      | —                       | Leech lattice Λ₂₄
+Moonshine    | —                       | Monster group 𝕄
+
+This table summarizes the “Witt layer” inside the moonshine tower.
+
+LEECH LATTICE CONNECTION*
+================================================================================
+
+LEECH LATTICE CONNECTION  
+The extended binary Golay code G₂₄ is the glue code of the Leech lattice Λ₂₄.
+
+Key facts:
+
+• Octads correspond to minimal vectors in Λ₂₄.  
+• M₂₄ acts as a subgroup of Co₀, the full automorphism group of Λ₂₄.  
+• The Monster group 𝕄 contains Co₀ as a subgroup.  
+• Thus the large Witt design S(5,8,24) sits directly on the moonshine pathway:
+
+G₂₄ → Λ₂₄ → Co₀ → 𝕄.
+
+This is the bridge from Steiner systems to Monster Moonshine.
