@@ -6,7 +6,7 @@ This document provides a visual and textual overview of 5G heterogeneous
 network architecture, which uses multiple layers of cell types to 
 optimize coverage, capacity, and speed.
 
-Multi‑layer nonlinear  system:
+Multi‑layer nonlinear system:
 
            Macro/micro = LTI stable modes
            Small/mmWave = nonlinear, hybrid, mode‑switching dynamics
