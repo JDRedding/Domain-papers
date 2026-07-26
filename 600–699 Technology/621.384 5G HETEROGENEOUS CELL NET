@@ -6,6 +6,32 @@ This document provides a visual and textual overview of 5G heterogeneous
 network architecture, which uses multiple layers of cell types to 
 optimize coverage, capacity, and speed.
 
+System State
+x(t) — Network state at time t  
+Includes: user position, beam direction, link quality, LOS/NLOS 
+condition, cell tier (macro/micro/small/femto), blockage state.
+
+Control Input
+u(t) — Network control actions
+Beam steering, power allocation, handover decisions, scheduling, 
+modulation/coding selection.
+
+Output
+y(t) — User‑perceived performance
+Throughput, latency, SINR, coverage quality.
+
+Dynamics
+Because mmWave propagation is nonlinear, blockage‑driven, and 
+environment‑dependent:
+
+ẋ(t) = f(x(t), u(t))  
+Nonlinear dynamics describing mobility, attenuation, beam tracking, 
+and cell transitions.
+
+Sub‑6 GHz macro/micro layers behave more like LTI approximations:
+ẋ(t) = Ax + Bu  
+Where A encodes path‑loss and mobility, B encodes power/beam control.
+
 ┌─────────────────────────────────────┐
 │       5G HETNET ARCHITECTURE        │
 ├─────────────────────────────────────┤
@@ -66,6 +92,34 @@ Quantitative cell radius ranges for each tier
  Small (mmWave)              : 50–300 m
  Femto                       : 10–30 m
 
+State Matrix A
+Represents environmental evolution:
+           mobility
+           LOS→NLOS transitions
+           rain fade
+           human blockage
+           cell boundary crossings
+mm Wave has large eigenvalues (fast dynamics), Sub‑6 GHz has small 
+eigenvalues (slow dynamics).
+
+Input Matrix B
+Represents network control authority:
+           beamforming
+           power control
+           handover triggers
+           antenna switching
+Dense small‑cell networks have high‑rank B (more control authority).
+
+Output Matrix C
+Maps internal state to user experience:
+           C extracts SINR, throughput, latency from x(t).
+
+Feedthrough D
+Instantaneous effects:
+           sudden blockage
+           hand shadowing
+           glass attenuation
+These behave like D u(t): immediate degradation.
 
 LOS vs NLOS mmWave Propagation
 ------------------------------------------------------------------------
@@ -90,9 +144,7 @@ geometry.
 
 LOS (Line‑of‑Sight) Path Loss
 Dominated by free‑space loss
-
 Scales with frequency² (Friis)
-
 Predictable and stable
 
 Typical values at 28 GHz:
@@ -115,6 +167,24 @@ Distance	LOS Path Loss     NLOS Path Loss	 Δ (Extra NLOS Loss)
 100 m	93–96 dB	       120–140 dB	 +25–45 dB
 200 m	99–102 dB	       130–150+ dB	 +30–50 dB
 300 m	103–106 dB	       140–160+ dB	 +35–55 dB
+
+LOS vs NLOS
+ LOS path loss ≈ stable LTI mode
+ NLOS path loss ≈ nonlinear jump mode
+
+Blockage causes:
+           state discontinuity
+           mode switching
+           large Δx(t)
+
+Rain Fade
+ Acts like a time‑varying A(t):
+  heavy rain → A(t) becomes more negative → faster decay of signal.
+
+Beam Tracking
+           Beam direction = part of x(t)
+           Beam steering = u(t)
+           Tracking failure = instability (Re(λ) > 0)
 
 LOS (Line-of-Sight)
 -------------------
@@ -284,6 +354,92 @@ mobility while using mmWave for capacity hotspots.
 Even with these techniques, widespread outdoor-to-indoor coverage 
 remains limited, and many commercial deployments stay concentrated in 
 dense urban or venue settings rather than becoming ubiquitous.
+
+📡 Handover as a Control‑System Transition
+------------------------------------------------------------------------
+Handover is a hybrid system:
+ẋ = f_i(x,u)     (within cell i)
+x(t⁺) = g(x(t⁻))  (handover jump)
+Ping‑pong events = oscillatory closed‑loop dynamics
+Unstable mobility = Re(λ) > 0 in the closed‑loop matrix A − BK
+
+📡 Stability 
+------------------------------------------------------------------------
+Lyapunov Function L(x)
+Represents link quality or SINR.
+
+L̇ < 0 → stable connection
+L̇ > 0 → degrading link
+L̇ ≫ 0 → mmWave outage (blockage, NLOS, rain)
+
+RIS (reconfigurable intelligent surfaces) act like feedback gain K, 
+stabilizing the link by redirecting beams.
+
+📡 Control Performance Metrics
+------------------------------------------------------------------------
+Transfer Function
+For Sub‑6 GHz macro/micro layers:
+G(s) = C(sI − A)⁻¹B + D
+mmWave cannot be fully described by G(s) because it is nonlinear, 
+discontinuous, and mode‑switching.
+
+Poles & Zeros
+Macro/micro: poles in Re(λ) < 0 → stable coverage
+
+mmWave: poles move with environment → quasi‑unstable
+
+Gain/Phase Margins
+Mobility reduces phase margin (beam misalignment).
+Blockage reduces gain margin (attenuation).
+
+📡 Optimal Control 
+------------------------------------------------------------------------
+LQR
+Network tries to minimize:
+
+           J = ∫(xᵀQx + uᵀRu) dt
+
+Where:
+           Q penalizes poor SINR, outages
+           R penalizes excessive power, beam switching, handovers
+
+Dense small‑cell networks → higher Q (more sensitivity to state changes).
+
+Kalman Filter
+---
+Used for:
+           user position estimation
+           beam prediction
+           blockage prediction
+
+x̂(t) = estimated user state
+P̂(t) = covariance of mobility uncertainty
+Kf = Kalman gain for beam tracking
+
+📡 Nonlinearities
+------------------------------------------------------------------------
+mmWave propagation includes:
+
+           sat(u)              — power saturation
+           deadzone            — no signal until LOS restored
+           hysteresis          — handover thresholds
+           mode switching      — LOS/NLOS transitions
+
+These make mmWave a nonlinear hybrid system, not an LTI system.
+
+📡 Discrete‑Time Interpretation (5G NR)
+------------------------------------------------------------------------
+5G scheduling is discrete:
+
+xₖ₊₁ = A_d xₖ + B_d uₖ
+
+yₖ = C_d xₖ + D_d uₖ
+
+Beam tracking, HARQ, and scheduling operate in discrete slots 
+(0.125–1 ms).
+
+Z‑domain transfer functions G(z) describe Sub‑6 GHz behavior well; 
+mm Wave remains nonlinear.
 
 MOBILITY CHALLENGES — mmWave (28–39 GHz)
 ------------------------------------------------------------------------
