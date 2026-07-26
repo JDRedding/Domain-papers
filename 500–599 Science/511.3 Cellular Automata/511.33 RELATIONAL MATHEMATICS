@@ -7,16 +7,29 @@ mapping calculus, and structured relational operators.
 Core Contributions
 Domain Construction: Provides purely relational formulas for 
 extracting domains and codomains without set notation:
-
 dom(R) = (R · Rᵀ) ∩ I_A — a foundational invariant
+
+DOM(R) ALGEBRAIC EXTRACTION
+   
+   A-Domain        B-Codomain
+   +------+        +------+
+   |  a1  |------->|  b1  |
+   |      |<-------|      |  (R · Rᵀ maps a1 -> b1 -> a1)
+   |  a2  |---\    +------+
+   +------+    \->+------+
+                  |  b2  |
+                  +------+
+   
+   (R · Rᵀ) ∩ I_A = {(a1, a1), (a2, a2)}  [Diagonal Subset of I_A]
+
 Eliminates the need for explicit set comprehension
 Binary Mapping Calculus: Characterizes functions as relations via 
 left-uniqueness:
-
 A relation f is a mapping ⟺ fᵀ · f ⊆ I_A
 Derives composition laws, factorization identities, and restriction 
 operators
 Treats functions as pure relational objects
+
 Three Structured Operators:
 
 Kronecker (R ⊗ S): Parallel relational application on product spaces
@@ -523,6 +536,15 @@ PRIMITIVE STRUCTURE
        I_A  =  SID-identity on A
        I_A(a,a') = 1 iff a = a'
 
+LEFT-UNIQUENESS (MAPPING)         NON-MAPPING (ONE-TO-MANY)
+   
+   A        B                        A        B
+  (a1)---->b1                       (a1)---->b1
+  (a2)----/                         (a1)---->b2
+  
+  fᵀ · f ⊆ I_B                       fᵀ · f ⊈ I_B
+  (Valid Mapping)                    (Violation)
+
 TRANSLATION OF OPERATORS
 
    Converse:
@@ -597,6 +619,15 @@ TRANSLATION OF KRONECKER, STRICT FORK, STRICT JOIN
        Kronecker      R ⊗ S
        Strict Fork    R ⋔ S
        Strict Join    R ⋎ S
+
+    KRONECKER (⊗)            STRICT FORK (⋔)           STRICT JOIN (⋎)
+    Parallel Product           Shared Domain            Shared Codomain
+    
+    (A×C) ---> (B×D)           A ---> (B × C)            (A × C) ---> B
+    
+      a ---R---> b               /---R---> b               a ---R---\
+      c ---S---> d             a                           c ---S---> b
+                                 \---S---> c
 
    RDG decomposes every relation into:
 
