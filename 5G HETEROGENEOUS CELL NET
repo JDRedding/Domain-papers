@@ -4,6 +4,24 @@
 This document provides a visual and textual overview of 5G heterogeneous 
 network architecture, which uses multiple layers of cell types to 
 optimize coverage, capacity, and speed.
+
+┌─────────────────────────────────────┐
+│       5G HETNET ARCHITECTURE        │
+├─────────────────────────────────────┤
+│ Macro  : Sub-6 GHz (Wide Area)      │
+│ Micro  : Sub-6 GHz (Urban Density)  │
+│ Small  : mmWave    (High Capacity)  │
+│ Femto  : Indoor/Wi-Fi (Local Spot)  │
+└─────────────────────────────────────┘
+
+┌─────────────────────────────────────┐
+│     MMWAVE ATTENUATION SOURCES      │
+├─────────────────────────┬───────────┤
+│ Exterior Low-E Glass    │ 30–40+ dB │
+│ Human Body Blockage     │ 20–40  dB │
+│ Heavy Rain Fade         │ 5–20 dB/km│
+└─────────────────────────┴───────────┘
+
 ------------------------------------------------------------------------
 
            [📱 5G] ································ [📱 5G]                        
