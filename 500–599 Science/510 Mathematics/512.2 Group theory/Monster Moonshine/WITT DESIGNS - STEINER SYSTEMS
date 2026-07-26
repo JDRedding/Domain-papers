@@ -191,6 +191,7 @@ Proof uses intersection constraints, Golay code structure, and M₂₄ transitiv
 
 RELATION BETWEEN THE TWO WITT DESIGNS
 ================================================================================
+
 • S(5,6,12)  ↔  extended ternary Golay code  ↔  Mathieu group M₁₂
 • S(5,8,24)  ↔  extended binary Golay code   ↔  Mathieu group M₂₄
 
@@ -201,6 +202,10 @@ M₁₂ can be realized as a stabilizer inside M₂₄.
 
 GROUP EMBEDDING M₁₂ < M₂₄
 ================================================================================
+
+M24 (24 points)
+ └── Stab(x) = M23 ──> S(4,7,23) on 23 points
+ └── Stab(Dodecad of 12 pts) = M12 ──> S(5,6,12) on 12 points
 
 GROUP EMBEDDING  
 The Mathieu group M₁₂ occurs naturally as a point-stabilizer inside M₂₄:
