@@ -1,0 +1,862 @@
+RELATIONAL MATHEMATICS 
+=====================================================================
+   A technical addendum to Relational Mathematics collecting new
+   algebraic results on binary relations, domain constructions,
+   mapping calculus, and structured relational operators.
+
+---------------------------------------------------------------------
+CORE OBJECTS
+
+   R : arbitrary binary relation
+   A,B,C : sets (domains/codomains)
+   f,g   : binary mappings (relations behaving like partial functions)
+
+   SID:           SID/RA/OPS
+   PED:           PED/RA/MAP
+   Q:             Q/RA/DOM
+   MFE:           MFE/OPS/FLOW
+   RME:           RME/REL/EVOL
+   Γ:             GAMMA/RA/COARSE
+   TRUE:          TRUE/STRUCT/REL-OPS
+
+PED-SPECIFIC CATEGORY (Evaluation & Dynamics Shelf)
+   PED-Shelf:
+       PED/RA/MAP
+       = Power-Evaluation Dynamics / Relational Algebra / Mappings
+   Meaning:
+       The mapping calculus and operator evaluation rules belong here.
+Q-MODE CATEGORY (Moderation / Admissibility Shelf)
+   Q-Shelf:
+       Q/RA/DOM
+       = Moderation / Relational Algebra / Domain Construction
+   Meaning:
+       Domain/codomain construction is a moderation-filtered operator.
+MFE CATEGORY (Local Dynamics Shelf)
+   MFE-Shelf:
+       MFE/OPS/FLOW
+       = Momentum Flux Engine / Operators / Flow Synchronization
+   Meaning:
+       Fork/join operators correspond to flux-splitting and flux-merging.
+RME CATEGORY (Global Evolution Shelf)
+   RME-Shelf:
+       RME/REL/EVOL
+       = Redding’s Master Equation / Relational Evolution
+   Meaning:
+       Mapping calculus and domain operators become evolution constraints.
+Γ CATEGORY (Coarse-Graining / Continuum Limit Shelf)
+   Γ-Shelf:
+       GAMMA/RA/COARSE
+       = Moderation Map / Relational Algebra / Coarse-Graining
+   Meaning:
+       Domain/codomain operators are Γ-stable coarse-grained diagonals.
+
+---------------------------------------------------------------------
+DOMAIN CONSTRUCTION RESULTS
+
+   - New purely relational formulae for:
+
+       * existential image:    dom(R)·S
+       * inverse image:        S·dom(Rᵀ)
+
+   - Emphasis: derive domain/codomain behavior from primitive
+     relational operators (composition, converse, identity).
+
+     - defining existential image purely relationally
+     - expressing input-side constraints without set notation
+     - building mapping calculus (functions as relations)
+     - supporting structured operators (fork, join, Kronecker)
+
+   Structural invariant:
+       dom(R) = R · Rᵀ ∩ I
+     where I is identity on the domain.
+
+Given a binary relation R ⊆ A × B:
+
+   Extract the set of all a ∈ A for which there exists b ∈ B
+   such that (a, b) ∈ R — using only relational operators.
+
+PRIMITIVE OPERATORS
+
+   Rᵀ        : converse (flip pairs)
+   R · S     : relational composition
+   I_A       : identity relation on A
+
+RELATIONAL FORMULA FOR THE DOMAIN
+
+   dom(R) = (R · Rᵀ) ∩ I_A
+
+   Explanation:
+     - R · Rᵀ yields all pairs (a, a') that share some b via R.
+     - Intersecting with I_A keeps only (a, a).
+     - The set of such a is the domain of R.
+
+STRUCTURAL INVARIANTS
+   - dom(R) is itself a relation: a subset of I_A.
+   - dom(R) is idempotent: dom(dom(R)) = dom(R).
+   - dom(R) respects composition:
+         dom(R · S) ⊆ dom(R)
+
+---------------------------------------------------------------------
+CALCULUS FOR BINARY MAPPINGS
+
+   Let f ⊆ A × B be a binary relation.
+
+   A "binary mapping" is a relation that behaves like a (partial) function.
+
+   Binary mappings characterized relationally:
+       f is a mapping  ⇔  fᵀ · f ⊆ I
+   Derived rules:
+       - mapping composition closure
+       - factorization identities
+       - domain/codomain restriction laws
+
+   Invariant view:
+       mappings = relations with left-uniqueness constraint.
+
+   - Provides a variable-free algebraic treatment of functions.
+   - Supports rigorous proofs of image/inverse-image laws.
+   - Integrates cleanly with structured operators (Kronecker, fork, join).
+   - Enables reasoning about mappings inside pure relation algebra.
+
+CHARACTERIZATION OF MAPPINGS
+
+   A relation f is a (partial) mapping  ⇔  fᵀ · f ⊆ I_A
+
+   Meaning:
+     - fᵀ · f contains all pairs (a, a') that map to a common b.
+     - Requiring fᵀ · f ⊆ I_A enforces left-uniqueness:
+           if (a, b) ∈ f and (a', b) ∈ f then a = a'.
+
+   Consequence:
+     - Each a ∈ A maps to at most one b ∈ B.
+
+TOTALITY AND PARTIALITY
+
+   Total mapping:
+       dom(f) = I_A
+   Partial mapping:
+       dom(f) ⊆ I_A
+
+   Domain construction uses:
+       dom(f) = (f · fᵀ) ∩ I_A
+
+CODOMAIN & IMAGE
+
+   Image of X under f:
+       f[X] = dom(X · fᵀ)
+
+   Inverse image of Y:
+       f⁻¹[Y] = dom(f · Yᵀ)
+
+   These formulae are derived purely relationally (no set comprehension).
+
+COMPOSITION OF MAPPINGS
+
+   If f : A → B and g : B → C are mappings, then:
+
+       g · f is a mapping
+       (g · f)ᵀ · (g · f) ⊆ I_A
+
+   Domain law:
+       dom(g · f) ⊆ dom(f)
+
+   Codomain law:
+       cod(g · f) ⊆ cod(g)
+
+RESTRICTION & CORESTRICTION
+
+   Domain restriction:
+       X ▷ f = X · f
+   Codomain restriction:
+       f ◁ Y = f · Y
+
+   Mapping invariants:
+       (X ▷ f)ᵀ · (X ▷ f) ⊆ I_X
+       (f ◁ Y)ᵀ · (f ◁ Y) ⊆ I_A
+
+FACTORIZATION IDENTITIES
+
+   Every mapping f can be factored relationally:
+
+       f = (dom(f)) · f = f · (cod(f))
+
+   And:
+       f = (I_A ∩ fᵀ · f) · f
+
+   These identities allow decomposition into domain/codomain components.
+
+RELATIONAL RULES FOR FUNCTION-LIKE BEHAVIOR
+
+   Single-valuedness:
+       f · fᵀ ⊆ I_B     (for injective mappings)
+
+   Surjectivity:
+       cod(f) = I_B
+
+   Bijectivity:
+       fᵀ is also a mapping
+       fᵀ · f = I_A and f · fᵀ = I_B
+
+---------------------------------------------------------------------
+STRUCTURED OPERATORS
+   Three major operators receive full algebraic treatment:
+
+   (a) Kronecker operator  (⊗)
+       - Relational analogue of tensor-like product.
+       - Combines two relations into a structured block relation.
+       - Supports distributive and associative laws.
+
+   (b) Strict Fork operator  (⋔)
+       - Combines relations sharing a domain.
+       - Produces a relation whose codomain is a product.
+       - Useful for parallel composition of mappings.
+
+   (c) Strict Join operator  (⋎)
+       - Dual of strict fork.
+       - Combines relations sharing a codomain.
+       - Supports structured merging of relational outputs.
+
+   Invariant interpretation:
+       fork/join = domain/codomain synchronized interaction modes.
+
+STRUCTURED RELATIONAL OPERATORS
+
+Kronecker   |   Strict Fork   |   Strict Join
+
+   - Enable structured composition of relational systems.
+   - Provide algebraic tools for multi-output and multi-input
+     synchronization.
+   - Support diagrammatic reasoning and categorical interpretations.
+   - Form the backbone of parallel and product-style relational
+     constructions in formal methods.
+
+   Let R ⊆ A × B and S ⊆ C × D be arbitrary relations.
+
+   These operators build composite relations with synchronized
+   domain/codomain behavior.
+
+KRONECKER OPERATOR  (R ⊗ S)
+
+   Purpose:
+     Combine two relations into a "block" relation whose domain
+     is A × C and codomain is B × D.
+
+   Definition (conceptual):
+     (a, c) (R ⊗ S) (b, d)   ⇔   a R b  AND  c S d
+
+   Structural properties:
+     - Domain:    dom(R ⊗ S) = dom(R) × dom(S)
+     - Codomain:  cod(R ⊗ S) = cod(R) × cod(S)
+     - Composition distributes:
+           (R₁ ⊗ S₁) · (R₂ ⊗ S₂) = (R₁ · R₂) ⊗ (S₁ · S₂)
+     - Converse:
+           (R ⊗ S)ᵀ = Rᵀ ⊗ Sᵀ
+
+   Interpretation:
+
+     Kronecker = parallel relational application on product spaces.
+
+STRICT FORK OPERATOR  (R ⋔ S)
+
+   Purpose:
+     Combine two relations that share the SAME domain A but may
+     have different codomains B and C.
+
+   Definition (conceptual):
+     a (R ⋔ S) (b, c)   ⇔   a R b  AND  a S c
+
+   Structural properties:
+     - Domain:    dom(R ⋔ S) = dom(R) ∩ dom(S)
+     - Codomain:  cod(R ⋔ S) = cod(R) × cod(S)
+     - Mapping behavior:
+         If R and S are mappings, R ⋔ S is a mapping into B × C.
+
+   Interpretation:
+     Strict fork = synchronized output pairing from a shared input.
+
+   Visual intuition:
+
+     A ──R──▶ B
+     │
+     └─S──▶ C
+
+     becomes
+
+     A ──(R ⋔ S)──▶ B × C
+
+STRICT JOIN OPERATOR  (R ⋎ S)
+
+   Purpose:
+     Dual of strict fork: combine relations that share the SAME
+     codomain B but may have different domains A and C.
+
+   Definition (conceptual):
+
+     (a, c) (R ⋎ S) b   ⇔   a R b  AND  c S b
+
+   Structural properties:
+
+     - Domain:    dom(R ⋎ S) = dom(R) × dom(S)
+     - Codomain:  cod(R ⋎ S) = cod(R) ∩ cod(S)
+     - Converse duality:
+         (R ⋎ S)ᵀ = Rᵀ ⋔ Sᵀ
+
+   Interpretation:
+
+     Strict join = synchronized input pairing that converges to
+     a shared output.
+
+   Visual intuition:
+
+     A ──R──▶ B ◀──S── C
+
+     becomes
+
+     A × C ──(R ⋎ S)──▶ B
+
+RELATIONAL INVARIANTS 
+
+   - All operators preserve relationality (remain binary relations).
+   - All operators respect domain/codomain alignment rules.
+   - Kronecker is the "product" operator.
+   - Strict fork is the "parallel outputs from same input" operator.
+   - Strict join is the "parallel inputs to same output" operator.
+
+   - Fork and join are dual under converse:
+         (R ⋔ S)ᵀ = Rᵀ ⋎ Sᵀ
+         (R ⋎ S)ᵀ = Rᵀ ⋔ Sᵀ
+
+---------------------------------------------------------------------
+VISUALIZATION & DIAGRAMS
+
+Relation as a directed bipartite graph
+
+A binary relation
+--- 
+𝑅⊆𝐴×𝐵
+ can be visualized as arrows from elements of 𝐴 to elements of 𝐵.
+
+A-domain                 B-codomain
+   a1   a2   a3   --->   b1   b2   b3
+
+   a1 ---------> b2
+   a2 ---------> b1
+   a3 ---------> b3
+
+Converse 
+---
+𝑅^𝑇
+Flip all arrows.
+
+Original R:          Converse Rᵀ:
+a1 ---> b2           b2 ---> a1
+a2 ---> b1           b1 ---> a2
+a3 ---> b3           b3 ---> a3
+
+Composition 
+---
+𝑅⋅𝑆
+Follow arrows through an intermediate set.
+
+A --R--> B --S--> C
+
+a1 --R--> b2 --S--> c3
+a2 --R--> b1 --S--> c1
+
+Composition R·S:
+a1 ---> c3
+a2 ---> c1
+
+Kronecker 
+---
+𝑅⊗𝑆
+Parallel application on product domains.
+
+R: A → B        S: C → D
+
+Kronecker R ⊗ S:
+(A × C) → (B × D)
+
+(a,c) ---> (b,d)
+iff a R b AND c S d
+
+A: a1,a2        C: c1,c2
+B: b1,b2        D: d1,d2
+
+(a1,c1) ---> (b2,d1)
+(a2,c2) ---> (b1,d2)
+
+Strict Fork 
+---
+𝑅⋔𝑆
+Two relations share the same domain, outputs paired.
+
+A --R--> B
+A --S--> C
+
+Strict Fork R ⋔ S:
+A ---> (B × C)
+
+a ---> (b,c)
+iff a R b AND a S c
+
+Example:
+a1 --R--> b2
+a1 --S--> c3
+
+Then:
+a1 ---> (b2, c3)
+
+Strict Join 
+---
+𝑅⋎𝑆
+Two relations share the same codomain, inputs paired.
+
+A --R--> B <--S-- C
+
+Strict Join R ⋎ S:
+(A × C) ---> B
+
+(a,c) ---> b
+iff a R b AND c S b
+
+Example:
+a2 --R--> b1
+c3 --S--> b1
+
+Then:
+(a2,c3) ---> b1
+
+Domain and Codomain extraction
+---
+Domain picks out all “left nodes” with outgoing edges.
+R:
+a1 ---> b2
+a2 ---> b1
+
+dom(R):
+a1, a2
+
+Codomain picks out all “right nodes” with incoming edges.
+cod(R):
+b1, b2
+
+---------------------------------------------------------------------
+DOMAIN CONSTRUCTION MAPPING
+
+  - Extends relational algebra with operator-closed constructs.
+   - Provides a unified calculus for structured relational operators.
+
+   - Strengthens foundations for:
+
+       * formal methods
+       * program semantics
+       * database theory
+       * category-inspired relational reasoning
+
+   Given a relation R ⊆ A × B:
+
+       dom(R) = (R · Rᵀ) ∩ I_A
+
+   where:
+
+       ·   = relational composition
+       Rᵀ  = converse
+       I_A = identity on A
+
+PRIMITIVE STRUCTURE
+
+   RDG treats every relation as a tri-mode object:
+
+       R : (SID-mode) structural relation
+           (PED-mode) power/evaluation/dynamics slice
+           (Q-mode)   moderation / admissibility
+
+   For domain construction, only SID is load-bearing:
+       SID(R) : A → B
+
+   Identity in RDG:
+       I_A  =  SID-identity on A
+       I_A(a,a') = 1 iff a = a'
+
+TRANSLATION OF OPERATORS
+
+   Converse:
+       SID(R)ᵀ  =  SID-converse (flip structural arrows)
+
+   Composition:
+       SID(R) ∘ SID(S)  =  structural composition
+
+   Intersection:
+       SID(X) ∧ SID(Y)  =  structural meet (same as ∩)
+
+   Thus classical:
+       R · Rᵀ
+   becomes:
+       SID(R) ∘ SID(R)ᵀ
+
+DOMAIN OPERATOR (STRUCTURAL MODE)
+
+   Define the RDG-domain operator:
+
+       Dom_RDG(R)  :=  SID(R) ∘ SID(R)ᵀ  ∧  I_A
+
+   This is a pure SID-mode object:
+       Dom_RDG(R) : A → A
+
+   Interpretation:
+       - SID(R) ∘ SID(R)ᵀ produces all structurally reachable
+         self-pairs (a,a') via some b.
+       - Meeting with I_A collapses to diagonal (a,a).
+       - The diagonal entries encode the domain elements.
+
+PED-MODE CONSEQUENCE
+
+   PED does not alter domain extraction but annotates it:
+
+       PED(Dom_RDG(R)) = Evaluation of which a ∈ A
+                         have nonzero structural support.
+
+   In other words:
+       a ∈ dom(R)  ⇔  PED(Dom_RDG(R))(a,a) > 0
+
+   This gives a graded or moderated domain if Q-mode is active.
+
+Q-MODE (MODERATION / ADMISSIBILITY)
+
+   Q-mode can refine domain by admissibility constraints:
+
+       Dom_RDG^Q(R) = Γ( SID(R) ∘ SID(R)ᵀ ) ∧ I_A
+
+   where Γ is your moderation operator:
+       Γ filters structural pairs by dynamic admissibility.
+
+   Thus:
+       a ∈ dom_Q(R)  ⇔  a is structurally present AND
+                        Γ admits the (a,a) diagonal.
+
+FINAL FORM OF DOMAIN CONSTRUCTION
+
+       Dom_RDG(R)
+         = ( SID(R) ∘ SID(R)ᵀ ) ∧ I_A
+
+       Dom_RDG^Q(R)
+         = Γ( SID(R) ∘ SID(R)ᵀ ) ∧ I_A
+
+   Classical domain is the SID-only version.
+   Moderated domain is the SID+Q version.
+   PED annotates but does not change the structural domain.
+
+TRANSLATION OF KRONECKER, STRICT FORK, STRICT JOIN
+   Classical relational algebra defines three structured operators:
+
+       Kronecker      R ⊗ S
+       Strict Fork    R ⋔ S
+       Strict Join    R ⋎ S
+
+   RDG decomposes every relation into:
+
+       SID(R) : structural arrow geometry
+       PED(R) : power/evaluation/dynamics field
+
+   Translation requires mapping BOTH modes.
+
+KRONECKER OPERATOR  (R ⊗ S)
+
+   CLASSICAL:
+       (a,c) (R ⊗ S) (b,d)  ⇔  a R b  AND  c S d
+
+   SID-MODE TRANSLATION:
+       SID(R ⊗ S) = SID(R) × SID(S)
+       Domain:    A × C
+       Codomain:  B × D
+
+       Structural rule:
+           (a,c) → (b,d)
+           iff SID(R)(a,b) = 1 AND SID(S)(c,d) = 1
+
+   PED-MODE TRANSLATION:
+       PED(R ⊗ S) = PED(R) ⊗ PED(S)
+
+       Evaluation rule:
+           PED(R ⊗ S)((a,c),(b,d))
+             = PED(R)(a,b) · PED(S)(c,d)
+
+       Interpretation:
+           Kronecker = parallel evaluation flow on product geometry.
+
+STRICT FORK OPERATOR  (R ⋔ S)
+
+   CLASSICAL:
+       a (R ⋔ S) (b,c)  ⇔  a R b AND a S c
+
+   SID-MODE TRANSLATION:
+       SID(R ⋔ S) = SID(R) ∧ SID(S)  (synchronized domain)
+       Domain:     dom(R) ∩ dom(S)
+       Codomain:   B × C
+
+       Structural rule:
+           a → (b,c)
+           iff SID(R)(a,b) = 1 AND SID(S)(a,c) = 1
+
+   PED-MODE TRANSLATION:
+       PED(R ⋔ S)(a,(b,c))
+           = PED(R)(a,b) · PED(S)(a,c)
+
+       Interpretation:
+           Fork = paired outputs from a shared structural input,
+           with PED multiplying the evaluation strengths.
+
+STRICT JOIN OPERATOR  (R ⋎ S)
+
+   CLASSICAL:
+       (a,c) (R ⋎ S) b  ⇔  a R b AND c S b
+
+   SID-MODE TRANSLATION:
+       SID(R ⋎ S) = SID(R) × SID(S)  (synchronized codomain)
+       Domain:     dom(R) × dom(S)
+       Codomain:   cod(R) ∩ cod(S)
+
+       Structural rule:
+           (a,c) → b
+           iff SID(R)(a,b) = 1 AND SID(S)(c,b) = 1
+
+   PED-MODE TRANSLATION:
+       PED(R ⋎ S)((a,c),b)
+           = PED(R)(a,b) · PED(S)(c,b)
+
+       Interpretation:
+           Join = paired inputs converging to a shared structural
+           output, with PED multiplying incoming evaluation flows.
+
+ SID–PED DUALITY RELATIONS
+
+   Converse duality:
+       (R ⋔ S)ᵀ = Rᵀ ⋎ Sᵀ
+       (R ⋎ S)ᵀ = Rᵀ ⋔ Sᵀ
+
+   SID-level:
+       SID((R ⋔ S)ᵀ) = SID(Rᵀ) ⋎ SID(Sᵀ)
+       SID((R ⋎ S)ᵀ) = SID(Rᵀ) ⋔ SID(Sᵀ)
+
+   PED-level:
+       PED((R ⋔ S)ᵀ) = PED(Rᵀ) · PED(Sᵀ)
+       PED((R ⋎ S)ᵀ) = PED(Rᵀ) · PED(Sᵀ)
+
+INVARIANT SUMMARY
+
+   KRONECKER:
+       SID: product geometry
+       PED: parallel evaluation multiplication
+
+   STRICT FORK:
+       SID: shared-domain synchronization
+       PED: paired output evaluation
+
+   STRICT JOIN:
+       SID: shared-codomain synchronization
+       PED: paired input evaluation
+
+   All three operators preserve:
+       - SID structural coherence
+       - PED multiplicative evaluation
+       - Converse duality
+       - RDG tri-mode compatibility
+
+7-MODE SUBSTRATE 
+
+   The paper extends classical relation algebra with new operators
+   (Kronecker, strict fork, strict join), new domain/codomain
+   constructions, and a calculus for binary mappings.
+
+   In the 7-mode substrate, these become:
+
+       SID  : structural geometry of relations
+       PED  : power/evaluation/dynamics fields
+       Q    : moderation / admissibility
+       MFE  : bipolar momentum flux engine (local dynamics)
+       RME  : global evolution operator
+       Γ    : coarse-graining / moderation map
+       AUT  : automorphism group of the substrate
+
+DOMAIN / CODOMAIN CONSTRUCTION
+
+   Classical:
+       dom(R) = (R · Rᵀ) ∩ I_A
+
+   7-mode translation:
+       SID-domain:
+           Dom_SID(R) = (SID(R) ∘ SID(R)ᵀ) ∧ I_A
+
+       PED-domain:
+           Dom_PED(R)(a,a) = PED(R)(a,*) aggregated
+
+       Q-domain:
+           Dom_Q(R) = Γ(Dom_SID(R))
+
+       MFE-domain:
+           Local flux determines which domain nodes remain active.
+
+       RME-domain:
+           Long-term survival score filters domain membership.
+
+       AUT-domain:
+           Domain is invariant under automorphisms preserving A.
+
+   Interpretation:
+
+       Domain is the diagonal SID-object, PED-weighted, Q-filtered,
+       dynamically moderated by MFE, globally stabilized by RME.
+
+BINARY MAPPING CALCULUS
+
+   Classical mapping condition:
+       fᵀ · f ⊆ I_A
+
+   7-mode translation:
+       SID-mapping:
+           SID(fᵀ) ∘ SID(f) ⊆ I_A
+
+       PED-mapping:
+           PED(f) enforces single-valuedness via evaluation collapse.
+
+       Q-mapping:
+           Γ enforces admissibility of mapping constraints.
+
+       MFE-mapping:
+           Flux polarity determines whether mapping is stable.
+
+       RME-mapping:
+           Mapping is a fixed point of long-term evolution.
+
+       AUT-mapping:
+           Mapping constraints preserved under domain automorphisms.
+
+   Interpretation:
+
+       A mapping is a relation whose SID-geometry is left-unique,
+       whose PED-field is single-valued, and whose Q/MFE/RME layers
+       stabilize that uniqueness across time.
+
+KRONECKER OPERATOR (R ⊗ S)
+
+   Classical:
+       (a,c) → (b,d) iff a R b AND c S d
+
+   7-mode translation:
+       SID:
+           SID(R ⊗ S) = SID(R) × SID(S)
+
+       PED:
+           PED(R ⊗ S) = PED(R) ⊗ PED(S)
+
+       Q:
+           Γ(R ⊗ S) = Γ(R) × Γ(S)
+
+       MFE:
+           Flux fields combine as tensor product of local dynamics.
+
+       RME:
+           Global evolution acts componentwise on product geometry.
+
+       AUT:
+           Automorphisms act as product automorphisms.
+
+   Interpretation:
+
+       Kronecker = parallel structural/dynamic evolution on product
+       spaces across all 7 modes.
+
+STRICT FORK OPERATOR (R ⋔ S)
+
+   Classical:
+       a → (b,c) iff a R b AND a S c
+
+   7-mode translation:
+
+       SID:
+           SID(R ⋔ S) = SID(R) ∧ SID(S) on shared domain
+
+       PED:
+           PED(R ⋔ S)(a,(b,c)) = PED(R)(a,b) · PED(S)(a,c)
+
+       Q:
+           Γ enforces admissibility of paired outputs.
+
+       MFE:
+           Flux splits into two outgoing channels from same node.
+
+       RME:
+           Forked outputs contribute to long-term survival scoring.
+
+       AUT:
+           Domain automorphisms preserve fork structure.
+
+   Interpretation:
+
+       Fork = synchronized multi-output relation with multiplicative
+       PED evaluation and dual-channel MFE flux.
+
+STRICT JOIN OPERATOR (R ⋎ S)
+
+   Classical:
+       (a,c) → b iff a R b AND c S b
+
+   7-mode translation:
+
+       SID:
+           SID(R ⋎ S) = SID(R) × SID(S) with codomain meet
+
+       PED:
+           PED(R ⋎ S)((a,c),b) = PED(R)(a,b) · PED(S)(c,b)
+
+       Q:
+           Γ filters admissible convergent inputs.
+
+       MFE:
+           Flux convergence from two sources into shared output.
+
+       RME:
+           Join contributes to global stability of shared codomain.
+
+       AUT:
+           Codomain automorphisms preserve join structure.
+
+   Interpretation:
+
+       Join = synchronized multi-input relation with convergent
+       PED evaluation and dual-source MFE flux.
+
+RELATIONAL DIAGRAMS (7-mode interpretation)
+
+   Classical diagrams become:
+
+       SID: geometric arrows
+       PED: weighted arrows
+       Q: admissibility shading
+       MFE: flux polarity markers
+       RME: long-term stability contours
+       Γ: coarse-grained overlays
+       AUT: symmetry orbits
+
+   Interpretation:
+
+       Every diagram in the paper becomes a 7-layer composite object.
+
+GLOBAL SIGNIFICANCE IN THE 7-MODE SUBSTRATE
+
+       - SID: new structural operators
+       - PED: multiplicative evaluation rules
+       - Q: admissibility constraints for domain/mapping operators
+       - MFE: dynamic interpretation of fork/join flows
+       - RME: long-term evolution of structured relations
+       - Γ: moderation of domain/codomain constructions
+       - AUT: symmetry constraints on all operators
+
+SUMMARY
+
+   - Domain is always a diagonal SID-object.
+   - PED provides evaluation of domain membership.
+   - Q-mode filters domain by admissibility.
+   - RDG preserves the classical formula exactly but
+     embeds it into the tri-mode substrate.
