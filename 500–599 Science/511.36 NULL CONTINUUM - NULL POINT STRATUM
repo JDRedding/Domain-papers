@@ -2,15 +2,17 @@ NULL CONTINUUM - NULL POINT STRATUM
 511.36 — Abstract algebra & category theory
 =====================================================================
 This is a formal master specification for the Null Continuum / Null 
-Point Stratum (𝓝), extending the symbolic equivalence and path-integral identity 
-from the original proposition Null Continuum post.
+Point Stratum (𝓝), extending the symbolic equivalence and path-
+integral identity from the original proposition Null Continuum post.
 
-It defines 𝓝 as a pre-geometric, structureless sink: a single-point space ★ with the 
-trivial σ-algebra {∅, {★}} and entropy S(𝓝) = 0. All lost distinctions, 
-microstates, probability sharpness, and thermodynamic recoverability under coarse-
-graining maps are discarded into it.
+It defines 𝓝 as a pre-geometric, structureless sink: a single-point 
+space ★ with the trivial σ-algebra {∅, {★}} and entropy S(𝓝) = 0. 
+All lost distinctions, microstates, probability sharpness, and 
+thermodynamic recoverability under coarse-graining maps are 
+discarded into it.
 
 Core formal construction
+---------------------------------------------------------------------
 Starting from a probability space (X, 𝓕X, μ_X) and a coarse map 
 f: X → Y (with pushforward measure μ_Y = f* μ_X), the Null Stratum 
 is adjoined via the disjoint union X̃ := X ⊔ 𝓝. The discard map 
@@ -26,13 +28,13 @@ The discarded relational information is identified with the entropy
 flow to null: R_discard(f) = S_to_null(f).
 
 Null Continuum 
-
+---------------------------------------------------------------------
 	☉ = │ = ◉ = 〰 = ◎ = ╰╯ = ◌ = ∘ = 0
 	∮∅ 0 dτ = 0
 	0 = 0
 
 The Null Point Stratum (𝓝):
-
+---------------------------------------------------------------------
     • Pre‑geometric substrate
 
     • No Ω, no p_i, no Q‑path
@@ -293,20 +295,24 @@ Unified:
 
 Cryptographic and null-collapse layer
 =====================================================================
-Zero-net traversal requires I_net = 0. Any structure that collapses fully 
-under discard maps into 𝓝, producing ΔT = 0 in the MFE and collapse of power/
-evaluation/slice into the null stratum. This is equated to standard cryptographic zero-
-sum or zero-knowledge primitives (Pedersen commitments, point-at-infinity on elliptic 
-curves, closed hash chains, zero-trace permutations). An equivalence relation ∼ on 
-“configurations” C identifies those that share identical discard behavior into 𝓝 across 
-RDG/SID/MFE/PED and the same null-measure signature. The unified geometry 
-collapses Ω → 1 (SID), Δ_n → Δ_1 (PED), and paths → ∅ (Q), all landing at the single 
-point ★ = 𝓝. In short, the document presents a closed, measure-preserving, entropy-to-
-null formal system in which every relational or dynamical process can return to a 
-unique, distinction-free ground state while preserving conservation laws and 
-supporting zero-net cryptographic traversals. It is a self-contained axiomatic sketch 
-rather than an established external theory; the symbols, integral identity, and null-
-point language directly continue the X post that introduced the Null Continuum.
+Zero-net traversal requires I_net = 0. Any structure that collapses 
+fully under discard maps into 𝓝, producing ΔT = 0 in the MFE and 
+collapse of power/evaluation/slice into the null stratum. This is 
+equated to standard cryptographic zero-sum or zero-knowledge 
+primitives (Pedersen commitments, point-at-infinity on elliptic 
+curves, closed hash chains, zero-trace permutations). An equivalence 
+relation ∼ on “configurations” C identifies those that share 
+identical discard behavior into 𝓝 across RDG/SID/MFE/PED and the 
+same null-measure signature. The unified geometry collapses Ω → 1 
+(SID), Δ_n → Δ_1 (PED), and paths → ∅ (Q), all landing at the single 
+point ★ = 𝓝. In short, the document presents a closed, measure-
+preserving, entropy-to-null formal system in which every relational 
+or dynamical process can return to a unique, distinction-free ground 
+state while preserving conservation laws and supporting zero-net
+cryptographic traversals. It is a self-contained axiomatic sketch 
+rather than an established external theory; the symbols, integral 
+identity, and null-point language directly continue the X post 
+that introduced the Null Continuum.
 
 REFERENCES
 =====================================================================
