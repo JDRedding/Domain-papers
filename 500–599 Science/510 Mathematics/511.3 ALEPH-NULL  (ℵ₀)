@@ -12,8 +12,8 @@ Structural Interpretation:
       |·| = the cardinal-collapse map (forgetting order)
 
   Thus:
-      ordinal ω  → encodes order-type
-      cardinal ℵ₀ → encodes size-type
+      ω + ω = ω·2 ≠ ω   ordinal ω  → encodes order-type
+      |ω + ω| = ℵ₀      cardinal ℵ₀ → encodes size-type
 
 Countable Sets:
   A set X is countable  ⇔  ∃ bijection f : X → N.
