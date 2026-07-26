@@ -898,3 +898,49 @@ SUMMARY
    - Q-mode filters domain by admissibility.
    - RDG preserves the classical formula exactly but
      embeds it into the tri-mode substrate.
+
+=====================================================================
+REFERENCES AND FURTHER READING
+=====================================================================
+
+G. Schmidt and T. Ströhlein,
+    "Relations and Graphs: Discrete Mathematics for Computer Scientists."
+    Springer, 1993.
+
+G. Schmidt,
+    "Relational Mathematics."
+    Cambridge University Press, 2011.
+
+G. Birkhoff,
+    "Lattice Theory."
+    American Mathematical Society, 3rd edition, 1967.
+
+R. Maddux,
+    "Relation Algebras."
+    Elsevier, 2006.
+
+A. Tarski,
+    "On the Calculus of Relations."
+    Journal of Symbolic Logic, vol. 6, 1941, pp. 73–89.
+
+J. van Benthem,
+    "The Logic of Time."
+    Springer, 1983.
+
+B. Jónsson and A. Tarski,
+    "Boolean Algebras with Operators."
+    American Journal of Mathematics, vol. 73, 1951, pp. 891–939.
+
+G. Schmidt and H. Winter,
+    "Relational Methods in Computer Science."
+    Technical reports and lecture notes, Universität der Bundeswehr München,
+    2000–2014.
+
+G. Schmidt,
+    "Scrapbook of Relational Calculus."
+    Unpublished notes, 2008–2013.
+
+T. Winter,
+     "Diagrammatic Reasoning in Relational Algebra."
+     Internal seminar notes, 2012–2014.
+=====================================================================
