@@ -117,18 +117,17 @@ SID (Structure–Interaction–Dynamics):
                  ℵ₀ ⊗ ℵ₀ = ℵ₀
 
 ------------------------------------------------------------
+Ladder (Ordinal → Cardinal → Continuum)
+------------------------------------------------------------
 
-  ℵ₀  =  Card( ω )
+  ℵ₀   =  Card( ω )
        =  Collapse_Ω( ω )
        =  Ω₀
 
 Where:
   Card(·)        = cardinal abstraction operator
-  Collapse_Ω(·)  = RDG collapse-to-cardinality operator
-  Ω₀             = RDG name for the initial infinite cardinal
-
-Ladder (Ordinal → Cardinal → Continuum)
-------------------------------------------------------------
+  Collapse_Ω(·)  = collapse-to-cardinality operator
+  Ω₀             = initial infinite cardinal
 
   ω    --Collapse-->   ℵ₀    --PowerSet-->   c
 
