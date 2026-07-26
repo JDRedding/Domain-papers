@@ -143,5 +143,6 @@ When δ is universal:
     - halting is undecidable,
     - complexity classes P, NP, PSPACE, EXP arise naturally.
 
-Thus the full automata‑theoretic toolkit—regular languages, CFGs, PDAs, Myhill–Nerode, pumping, reductions—extends cleanly to CA dynamics.
+Thus the full automata‑theoretic toolkit—regular languages, CFGs, PDAs,
+Myhill–Nerode, pumping, reductions—extends cleanly to CA dynamics.
 
