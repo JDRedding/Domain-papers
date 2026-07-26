@@ -1,5 +1,14 @@
 CELLULAR AUTOMATA SIMULATION WORKFLOW
+511.3 Cellular Automata
 ======================================================================
+Summary: This file is a compact workflow and runnable example code 
+for simulating two kinds of cellular automata — 1D elementary cellular 
+automata (ECA) and 2D Conway’s Game of Life — plus notes on expected 
+behavior, example rules/patterns, and generated output images.
+
+Purpose: document the CA models, verify correct rule/neighbor 
+handling, and provide runnable examples that produce visualization 
+images.
 
 SECTION 1 — ELEMENTARY CELLULAR AUTOMATON (ECA)
 ----------------------------------------------------------------------
@@ -147,6 +156,20 @@ CA engine demonstrates:
 
 ======================================================================
 Generating cellular automata simulations
+The ECA code contains a leftover variable lookup = rule_bin[::-1] and 
+inline comments showing the author checked ordering; the actual mapping
+used (rule_bin[7 - neighborhoods]) is consistent with the standard 
+Wolfram ordering (MSB for 111).
+
+ECA uses constant zero padding (not periodic boundaries) unless changed.
+
+Game-of-Life step returns a boolean array from logical ops; plotted/
+saved images use binary colormap.
+
+Outputs produced by the file
+Saved images: /tmp/eca_rules.png and /tmp/gol_glider.png (from the
+example runs).
+Printed rule tables for Rules 30, 90, 110.
 
 Executed code
 
