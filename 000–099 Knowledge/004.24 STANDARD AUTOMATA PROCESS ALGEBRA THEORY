@@ -1,0 +1,481 @@
+STANDARD AUTOMATA PROCESS ALGEBRA THEORY
+    004.22  Formal languages & automata theory
+    004.24  Process algebra & concurrency theory
+=====================================================================
+The classical automata theory from the 1950s–1970s already contains 
+a rigorous algebraic foundation for modeling complex and concurrent 
+systems. Modern process algebras (CSP, CCS, ACP, etc.) often reinvent 
+these ideas in syntactic form, losing the structural clarity provided 
+by machine homomorphisms and machine products. Automata theory 
+already solved the compositionality problem. Process algebra added 
+syntax but weakened the algebraic backbone.
+
+1. Classical automata theory is sufficient for modeling concurrency.
+2. Machine homomorphisms provide the correct notion of abstraction.
+3. Machine products provide the correct notion of composition.
+4. Process algebra adds syntactic complexity without structural gain.
+5. A return to automata-theoretic foundations yields cleaner semantics.
+
+Return to:
+
+    - explicit state-machine products,
+    - structure-preserving homomorphisms,
+    - algebraic abstraction via morphisms rather than syntactic laws,
+    - concurrency as machine-product interaction rather than calculus.
+
+For invariant‑driven reasoning (like a substrate):
+
+- Homomorphisms = invariant-preserving maps.
+- Products = canonical concurrency constructors.
+- Automata = explicit state geometry rather than syntactic shadows.
+- The viewpoint aligns with:
+
+      operator-clean,
+      algebra-first,
+      morphism-centric,
+      structure-preserving semantics.
+
+It is essentially a return to algebraic concurrency.
+
+- Concurrency should be modeled via algebraic products, not syntactic
+  operators.
+
+- Behavioral abstraction should be defined via homomorphisms, not
+  bisimulation.
+
+- System design benefits from explicit state structure rather than
+  hiding it behind process terms.
+
+- A “structural realism” approach:
+
+      state machines + morphisms + products
+
+  as the canonical foundation for concurrent system semantics.
+
+The unification works because process algebra is a syntactic layer, 
+while automata are the invariant geometry underneath. By forcing 
+every process term to become an automaton, you eliminate the 
+syntactic fragility of bisimulation and recover the algebraic clarity 
+of machine products and homomorphisms. This is exactly the “return to 
+algebraic concurrency” described.
+
+=====================================================================
+MACHINE HOMOMORPHISMS
+
+Objects:
+    Deterministic state machines (automata).
+
+   Structure-preserving maps between automata:
+       h : M → N
+   that respect transitions:
+       h(δ_M(s, a)) = δ_N(h(s), a)
+
+   Purpose:
+       - abstraction
+       - refinement
+       - behavioral compression
+       - compositional reasoning
+
+   Claim:
+       Homomorphisms give a cleaner semantics for “behavioral
+       equivalence” than bisimulation-based process algebra.
+
+Operators:
+    ×   = machine product (concurrency constructor)
+    h   = homomorphism (abstraction / refinement)
+
+Machine Product:
+    M × N has state space S_M × S_N
+    Transition:
+        δ((s,t), a) = (δ_M(s,a), δ_N(t,a))
+
+Homomorphism:
+    h(δ_M(s,a)) = δ_N(h(s), a)
+
+Algebraic Laws:
+    (M × N) × P  ≅  M × (N × P)
+    M × N        ≅  N × M
+    M × I        ≅  M
+    (h_M × h_N)(s,t) = (h_M(s), h_N(t))
+
+Interpretation:
+    × = concurrency
+    h = abstraction
+    Automata = explicit state geometry
+
+Purpose:
+    Provide a clean algebraic foundation for building,
+    composing, and abstracting complex concurrent systems.
+
+---------------------------------------------------------------------
+AUTOMATA HOMOMORPHISMS → 7-MODE SUBSTRATE
+Given a classical automaton homomorphism:
+    h : M → N
+with the defining law:
+    h( δ_M(s, a) ) = δ_N( h(s), a )
+
+We reinterpret h inside the RDG substrate as a tri-mode relational map:
+    H = (H_SID, H_PED, H_Q)
+
+Each component corresponds to one of the substrate’s structural triads.
+
+SID-MODE: STRUCTURE / INTERACTION / DYNAMICS
+H_SID handles the geometry of states and transitions.
+
+1. Structure-Preservation:
+       H_SID.Structure : S_M → S_N
+   This is the raw state-map:
+       H_SID.Structure(s) = h(s)
+
+2. Interaction-Preservation:
+       H_SID.Interaction(a) = a
+   Events/actions are preserved exactly (same alphabet).
+
+3. Dynamics-Preservation:
+       H_SID.Dynamics( δ_M(s,a) ) = δ_N( H_SID.Structure(s), a )
+
+This is precisely the classical homomorphism law, reinterpreted as
+SID-dynamic invariance.
+
+PED-MODE: POWER / EVALUATION / DYNAMICS (FIELD TRIAD)
+H_PED handles the “field-side” meaning of transitions.
+
+1. Power Flow:
+       H_PED.Power(s,a) = moderation of influence of event a on s
+   The homomorphism ensures that power-flow patterns are preserved
+   under abstraction:
+       Power_M(s,a) ≈ Power_N(h(s),a)
+
+2. Evaluation Consistency:
+       H_PED.Evaluation(s) = evaluation of state s under abstraction
+   The homomorphism compresses evaluation geometry:
+       Eval_M(s) → Eval_N(h(s))
+
+3. Dynamics Slice:
+       H_PED.Dynamics( δ_M(s,a) ) = δ_N( h(s), a )
+   Same as SID, but interpreted as field evolution.
+
+Q-MODE: MODERATION LAYER
+H_Q ensures the homomorphism is admissible under RDG moderation.
+
+Q-mode enforces:
+    - boundary conditions,
+    - admissibility constraints,
+    - nonlinear moderation of transitions,
+    - compatibility with the RDG evolution operator.
+
+Formally:
+    H_Q(s,a) = Q( s, a, h(s), δ_M, δ_N )
+
+Admissibility condition:
+    Q enforces that the compressed transition is allowed:
+        Q( s, a ) ⇒ h(δ_M(s,a)) = δ_N(h(s),a)
+
+7-MODE ASSEMBLY
+The complete mapping is:
+
+    H = (H_SID.Structure,
+         H_SID.Interaction,
+         H_SID.Dynamics,
+         H_PED.Power,
+         H_PED.Evaluation,
+         H_PED.Dynamics,
+         H_Q)
+
+This is the 7-mode representation of a classical automata homomorphism.
+
+- SID handles the explicit geometry of states and transitions.
+- PED handles the meaning, evaluation, and power-flow of transitions.
+- Q ensures the homomorphism respects RDG moderation constraints.
+
+Thus:
+    Classical homomorphism = tri-mode invariant map.
+
+---------------------------------------------------------------------
+MACHINE PRODUCTS
+       Process algebra’s parallel composition operators are syntactic
+       shadows of machine products, but less algebraically grounded.
+
+Automata:
+    - explicit state geometry
+    - canonical product for concurrency
+    - homomorphisms for abstraction
+    - algebraic invariants preserved
+    - compositional by construction
+
+Process Algebra:
+    - syntax-driven
+    - concurrency via operational rules
+    - abstraction via bisimulation
+    - equivalence depends on calculus
+    - geometry hidden behind terms
+
+   Classical automata theory defines products of machines:
+
+       M × N
+
+   with combined state space:
+
+       S_M × S_N
+
+   and synchronized or interleaved transition rules.
+
+   Purpose:
+       - natural model of concurrency
+       - modular construction of large systems
+       - algebraic transparency
+
+---------------------------------------------------------------------
+CONCURRENCY AS PRODUCT
+
+   Concurrency emerges from:
+       - independent state components,
+       - shared events,
+       - synchronized transitions.
+
+   No need for:
+       - bespoke calculi,
+       - labeled transition systems with extra rules,
+       - operational semantics with ad-hoc operators.
+
+   Classical automata already provide:
+       - compositionality,
+       - abstraction via homomorphisms,
+       - modularity,
+       - algebraic invariants.
+
+---------------------------------------------------------------------
+CRITIQUE OF PROCESS ALGEBRA
+
+       - Process algebra is overly syntactic.
+       - Bisimulation equivalence is brittle and non-structural.
+       - Algebraic laws are not grounded in machine morphisms.
+       - The semantics often obscure the underlying state structure.
+
+   Automata theory:
+
+       - is older,
+       - is more algebraic,
+       - has stronger invariants,
+       - handles concurrency via products without extra machinery.
+
+---------------------------------------------------------------------
+AUTOMATA  vs  PROCESS ALGEBRA
+----------------------------------
+[Automata Foundation]
+    Classical state-machine theory (1950s–1970s).
+    Objects: explicit states, transitions, morphisms.
+    Semantics: algebraic, geometric, structural.
+
+[Process Algebra Foundation]
+    Syntactic calculi (CSP, CCS, ACP).
+    Objects: process terms, operators, rewrite laws.
+    Semantics: operational rules + bisimulation.
+
+----------------------------------
+[Automata State Space]
+    Concrete, explicit S.
+    Geometry is visible and manipulable.
+
+[Process Algebra State Space]
+    Implicit; emerges only after LTS expansion.
+    Geometry is hidden behind syntax.
+
+----------------------------------
+[Automata Transitions]
+    δ : S × A → S
+    Pure structural map; algebraic invariants preserved.
+
+[Process Algebra Transitions]
+    Derived by operational semantics rules.
+    Often ad-hoc, calculus-specific.
+
+----------------------------------
+[Automata Composition]
+    Machine product M × N.
+    Canonical concurrency operator.
+    Associative, commutative (up to iso), identity exists.
+
+[Process Algebra Composition]
+    Parallel operator || or |.
+    Defined by syntactic rules; not algebraically canonical.
+
+----------------------------------
+[Automata Abstraction]
+    Homomorphisms h : M → N.
+    Structure-preserving; invariant-driven.
+
+[Process Algebra Abstraction]
+    Bisimulation equivalence.
+    Behavioral but not strictly structural.
+
+----------------------------------
+[Automata Equivalence]
+    Morphism-based; algebraic compression.
+
+[Process Algebra Equivalence]
+    Bisimulation; sensitive to syntactic formulation.
+
+----------------------------------
+[Automata Concurrency]
+    Emerges from product geometry.
+    No extra rules needed.
+
+[Process Algebra Concurrency]
+    Requires operational semantics + synchronization laws.
+
+----------------------------------
+[Automata Modularity]
+    Guaranteed by product + homomorphism algebra.
+
+[Process Algebra Modularity]
+    Depends on calculus-specific rewrite laws.
+
+----------------------------------
+[Automata Semantics]
+    Algebraic, invariant-preserving, geometric.
+
+[Process Algebra Semantics]
+    Operational, syntactic, rule-based.
+
+----------------------------------
+[Automata View] 
+    “State geometry first.”
+
+[Process Algebra View] 
+    “Syntax first; geometry later.”
+
+=====================================================================
+UNIFIED ALGEBRA: AUTOMATA ⊗ PROCESS ALGEBRA
+
+    A single algebra where:
+        - Automata give explicit geometry (states, transitions, products)
+        - Process algebra gives syntactic operators (choice, parallel, hiding)
+    The unification is achieved by mapping all process operators into
+    machine-level constructions that preserve automata invariants.
+
+=====================================================================
+OBJECTS
+Automata:
+    M = (S, A, δ)
+
+Process Terms:
+    P ::= a.P | P + Q | P || Q | P \ L | ...
+
+Unified Object:
+    U(P) = automaton extracted from P
+    U(M) = automaton itself
+
+Thus:
+    Obj(UNIFY) = { automata }  ∪  { automata extracted from process terms }
+
+=====================================================================
+MORPHISMS
+Automata morphisms:
+    h : M → N
+    h(δ_M(s,a)) = δ_N(h(s),a)
+
+Process algebra equivalences:
+    P ~ Q  (bisimulation)
+
+Unified morphism:
+    H : U(P) → U(Q)
+    defined as the *unique homomorphism* consistent with bisimulation.
+
+Key law:
+    bisimulation  ⇒  existence of a homomorphism
+    homomorphism  ⇒  canonical abstraction
+
+=====================================================================
+COMPOSITION
+Automata product:
+    M × N
+
+Process parallel:
+    P || Q
+
+Unified operator:
+    U(P || Q)  =  U(P) × U(Q)
+
+Thus:
+    parallel composition = machine product
+
+This is the core unification:
+    process algebra’s concurrency operator is reinterpreted as
+    automata’s canonical product.
+
+=====================================================================
+SYNTAX → GEOMETRY MAP
+Choice:
+    U(P + Q) = disjoint union automaton with initial nondeterministic branch
+
+Prefix:
+    U(a.P) = automaton with a single a-transition into U(P)
+
+Hiding:
+    U(P \ L) = automaton where transitions labeled in L become τ
+
+Recursion:
+    U(X = P) = least fixed point of U(P)
+
+All process operators become automata constructors.
+
+=====================================================================
+SEMANTICS
+Automata semantics:
+    algebraic, geometric, invariant-preserving
+
+Process algebra semantics:
+    operational, rule-based
+
+Unified semantics:
+    Every process term is interpreted as an automaton.
+    Every automaton is already an object of the unified algebra.
+
+Thus:
+    semantics = automata semantics
+    syntax = process algebra syntax
+    glue = U(·) mapping
+
+=====================================================================
+EQUIVALENCE
+Automata:
+    homomorphism-based abstraction
+
+Process algebra:
+    bisimulation
+
+Unified equivalence:
+    P ~ Q  ⇔  U(P) and U(Q) are homomorphically equivalent
+
+This restores structural invariants to process algebra.
+
+=====================================================================
+CONCURRENCY
+Automata:
+    concurrency = product geometry
+
+Process algebra:
+    concurrency = || operator + rules
+
+Unified:
+    P || Q  interpreted as  U(P) × U(Q)
+
+Thus:
+    concurrency is geometric, not syntactic.
+
+=====================================================================
+FULL UNIFIED ALGEBRA
+UNIFY = ( Obj, Morph, ⊗, +, hide, prefix, fix )
+
+Where:
+
+    Obj   = automata + extracted automata
+    Morph = homomorphisms consistent with bisimulation
+    ⊗     = machine product (parallel)
+    +     = disjoint union (choice)
+    hide  = label abstraction
+    prefix= transition constructor
+    fix   = recursion operator
+
+This is a complete algebraic system.
