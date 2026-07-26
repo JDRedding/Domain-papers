@@ -1,0 +1,315 @@
+NULL CONTINUUM - NULL POINT STRATUM
+511.36 — Abstract algebra & category theory
+=====================================================================
+This is a formal master specification for the Null Continuum / Null 
+Point Stratum (𝓝), extending the symbolic equivalence and path-integral identity 
+from the original proposition Null Continuum post.
+
+It defines 𝓝 as a pre-geometric, structureless sink: a single-point space ★ with the 
+trivial σ-algebra {∅, {★}} and entropy S(𝓝) = 0. All lost distinctions, 
+microstates, probability sharpness, and thermodynamic recoverability under coarse-
+graining maps are discarded into it.
+
+Core formal construction
+Starting from a probability space (X, 𝓕X, μ_X) and a coarse map 
+f: X → Y (with pushforward measure μ_Y = f* μ_X), the Null Stratum 
+is adjoined via the disjoint union X̃ := X ⊔ 𝓝. The discard map 
+d_f sends points in the retained set R_f to their image under f 
+and points in the discarded set D_f to ★. 
+
+Measure is c onserved:
+
+   μX(X)=μY(Y)+μ𝓝({★}).mu_X(X) 
+    = mu_Y(Y) + mu_𝓝({★}).mu_X(X) = mu_Y(Y) + mu_𝓝({★})
+
+The discarded relational information is identified with the entropy 
+flow to null: R_discard(f) = S_to_null(f).
+
+
+Null Continuum 
+
+	☉ = │ = ◉ = 〰 = ◎ = ╰╯ = ◌ = ∘ = 0
+	∮∅ 0 dτ = 0
+	0 = 0
+
+The Null Point Stratum (𝓝):
+
+    • Pre‑geometric substrate
+
+    • No Ω, no p_i, no Q‑path
+    • No coordinates, no distinctions
+    • Sink of all relational discard
+    • Absorbing boundary of RDG
+    • S(𝓝) = 0
+
+    • Trivial σ‑algebra: 𝓕_𝓝 = { ∅ , {★} }
+
+Representation:
++-----------------------------+
+|         NULL POINT          |
+|   [  no structure exists ]  |
+|   [  no distinctions   ]    |
+|   [  no coordinates    ]    |
++-----------------------------+
+
+All lost structure returns to 𝓝:
+    R_discard(f) = S(X) − S(Y)
+    Lost microstates → 𝓝
+    Lost probability sharpness → 𝓝
+    Lost thermodynamic recoverability → 𝓝
+
+FORMAL NULL STRATUM CONSTRUCTION
+=====================================================================
+
+State space:
+    (X, 𝓕_X, μ_X)
+
+Coarse map:
+    f : X → Y
+    μ_Y = f_* μ_X
+
+Null Stratum:
+    𝓝 := {★}
+    𝓕_𝓝 = { ∅ , {★} }
+    S(𝓝) = 0
+
+Extended space:
+    X̃ := X ⊔ 𝓝
+
+Discard map:
+    d_f : X → Y ⊔ 𝓝
+    d_f(x) = f(x) if x ∈ R_f
+    d_f(x) = ★    if x ∈ D_f
+
+Measure conservation:
+    μ_X(X) = μ_Y(Y) + μ_𝓝({★})
+
+Entropy interpretation:
+    R_discard(f) = S_to_null(f)
+
+RDG → SID → MFE → PED 
+=====================================================================
+RDG (Relational Directed Geometry): Objects and directed relations G = (Obj, 
+Rel). Morphisms preserve existing arrows without adding new ones; sub-RDGs 
+are component-wise inclusions.
+
+SID (Structure–Interaction–Dynamics): Layers a geometry as S(G) ⊆ I(G) ⊆ D(G) 
+⊆ G, where S is the invariant skeleton, I the operational links, and D the 
+completed dynamical paths.
+
+MFE (Momentum–Flux Engine): A bipolar dynamical system on states E(t) = (M, F, 
+M̄, F̄) with update map Φ, living in a domain D_MFE ⊆ ℝ⁴. It maintains bounded 
+oscillation via the pairs (M, M̄) and (F, F̄) with no runaway or dead-stall.
+
+PED (Power–Evaluation–Dynamic-slice): Extracts power P(E) = ½(M² + F²), an 
+evaluation functional V, and the next dynamic slice Φ(E).
+
+0. SCOPE
+--------
+RDG  = Relational Directed Geometry
+SID  = Structure–Interaction–Dynamics
+MFE  = Momentum–Flux Engine
+PED  = Power–Evaluation–Dynamic-slice
+
+Flow:
+        RDG  →  SID  →  MFE  →  PED
+
+1. RDG — RELATIONAL DIRECTED GEOMETRY
+=====================================================================
+
+RDG object:
+    G = (Obj, Rel)
+
+Sub-RDG:
+    G ⊆ H  iff Obj(G) ⊆ Obj(H) and Rel(G) ⊆ Rel(H)
+
+Morphisms:
+    f : G → H
+    (M1) a→b in G ⇒ f(a)→f(b) in H
+    (M2) no extra edges created
+
+2. SID — STRUCTURE / INTERACTION / DYNAMICS
+=====================================================================
+
+SID(G) = ( S(G), I(G), D(G) )
+
+2.1 STRUCTURE S(G)
+    invariant edges, definitional skeleton
+    S(G) ⊆ G
+
+2.2 INTERACTION I(G)
+    operational links, OP/STR/LOOP
+    S(G) ⊆ I(G) ⊆ G
+
+2.3 DYNAMICS D(G)
+    inferred transitions, path completion
+    I(G) ⊆ D(G) ⊆ G
+
+SID consistency:
+    S ⊆ I ⊆ D ⊆ G
+
+3. MFE — MOMENTUM–FLUX ENGINE
+=====================================================================
+
+Engine:
+        ( M , F )
+        ( M̄ , F̄ )
+
+State:
+    E(t) = (M, F, M̄, F̄)
+
+Domain:
+    D_MFE ⊆ ℝ⁴
+
+Update:
+    E(t+1) = Φ(E(t))
+
+Bipolar pairs:
+    (M, M̄), (F, F̄)
+    no runaway, no dead‑stall, bounded oscillation
+
+4. PED — POWER / EVALUATION / DYNAMIC-SLICE
+=====================================================================
+
+PED(E) = ( P(E), Eval(E), D_slice(E) )
+
+Power:
+    P(E) = ½(M² + F²)
+
+Evaluation:
+    Eval(E) = V(M, F, M̄, F̄)
+
+Dynamic slice:
+    D_slice(E) = Φ(E)
+
+5. SID → MFE COUPLING
+=====================================================================
+
+SID outputs:
+    σ(G) = structural pressure
+    ρ(G) = relational tension
+
+Modulate MFE:
+    θ_M = θ_M⁰ + α_σ σ(G)
+    θ_F = θ_F⁰ + β_ρ ρ(G)
+
+Modulate PED:
+    λ_P = λ_P⁰ + κ_Pσ σ(G)
+    λ_E = λ_E⁰ + κ_Eρ ρ(G)
+
+6. MFE → PED COUPLING
+=====================================================================
+
+MFE updates depend on PED:
+    M(t+1)   = f_M( E ; P, Eval )
+    F(t+1)   = f_F( E ; P, Eval )
+    M̄(t+1)  = f_M̄( E ; P, Eval )
+    F̄(t+1)  = f_F̄( E ; P, Eval )
+
+7. ENGINE INVARIANTS
+=====================================================================
+
+B(t) = M - F  
+C(t) = M̄ + F̄  
+T(t) = M + F + M̄ + F̄  
+
+Axioms:
+    T bounded  
+    C activates when |B| large  
+    P and Eval regulate T  
+
+8. CRYPTOGRAPHIC ZERO-NET TRAVERSAL
+=====================================================================
+
+Zero-net traversal invariant:
+    Traversal(C) → no net information
+    I_net = 0
+
+Cryptographic Null collapse:
+    R_discard(C) → 𝓝
+
+SID collapse:
+    S_C → 𝓝
+    I_C → 𝓝
+    D_C → 𝓝
+
+MFE collapse:
+    T(t+1) - T(t) = 0
+
+PED collapse:
+    P_C → 𝓝
+    Eval_C → 𝓝
+    D_slice_C → 𝓝
+
+Cryptographic equivalents:
+    • zero‑knowledge roundtrip
+    • Pedersen zero‑sum commitment
+    • ECC traversal → point‑at‑infinity
+    • hash‑chain closed loop
+    • zero‑trace permutation network
+
+9. RDG CRYPTOGRAPHIC EQUIVALENCE CLASS
+=====================================================================
+
+Equivalence relation:
+    C1 ∼ C2  iff:
+
+(E1) RDG discard:
+    G_C1 → 𝓝  ⇔  G_C2 → 𝓝
+
+(E2) SID discard:
+    S_C1 → 𝓝 ⇔ S_C2 → 𝓝
+    I_C1 → 𝓝 ⇔ I_C2 → 𝓝
+    D_C1 → 𝓝 ⇔ D_C2 → 𝓝
+
+(E3) MFE neutrality:
+    ΔT_C1 = 0 ⇔ ΔT_C2 = 0
+
+(E4) PED collapse:
+    P_C1 → 𝓝 ⇔ P_C2 → 𝓝
+    Eval_C1 → 𝓝 ⇔ Eval_C2 → 𝓝
+    D_slice_C1 → 𝓝 ⇔ D_slice_C2 → 𝓝
+
+(E5) Null conservation:
+    μ_X = μ_Y + μ_𝓝  (same null signature)
+
+Equivalence class:
+    [C]_{RDG} = { D | D ∼ C }
+
+10. UNIFIED NULL GEOMETRY (SID / PED / Q)
+=====================================================================
+
+SID:
+	Ω → 1
+
+PED:
+	Δ_n → Δ_1
+
+Q:
+	Path(X) → ∅
+
+Unified:
+
+	𝓝 = ★
+
+Cryptographic and null-collapse layer
+=====================================================================
+Zero-net traversal requires I_net = 0. Any structure that collapses fully 
+under discard maps into 𝓝, producing ΔT = 0 in the MFE and collapse of power/
+evaluation/slice into the null stratum. This is equated to standard cryptographic zero-
+sum or zero-knowledge primitives (Pedersen commitments, point-at-infinity on elliptic 
+curves, closed hash chains, zero-trace permutations). An equivalence relation ∼ on 
+“configurations” C identifies those that share identical discard behavior into 𝓝 across 
+RDG/SID/MFE/PED and the same null-measure signature. The unified geometry 
+collapses Ω → 1 (SID), Δ_n → Δ_1 (PED), and paths → ∅ (Q), all landing at the single 
+point ★ = 𝓝. In short, the document presents a closed, measure-preserving, entropy-to-
+null formal system in which every relational or dynamical process can return to a 
+unique, distinction-free ground state while preserving conservation laws and 
+supporting zero-net cryptographic traversals. It is a self-contained axiomatic sketch 
+rather than an established external theory; the symbols, integral identity, and null-
+point language directly continue the X post that introduced the Null Continuum.
+
+REFERENCES
+=====================================================================
+𝙼𝚒𝚔𝚎 🜎, @OhWellMike; The Null Continuum
+https://x.com/OhWellMike/status/2081159862663155865
