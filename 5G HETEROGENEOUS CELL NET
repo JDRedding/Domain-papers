@@ -1,6 +1,9 @@
 5G CELL STRUCTURE   
 ------------------------------------------------------------------------
-5G HETEROGENEOUS NETWORK                                 
+5G HETEROGENEOUS NETWORK 
+This document provides a visual and textual overview of 5G heterogeneous 
+network architecture, which uses multiple layers of cell types to 
+optimize coverage, capacity, and speed.
 ------------------------------------------------------------------------
 
            [📱 5G] ································ [📱 5G]                        
@@ -40,6 +43,12 @@
 
 5G CELL TYPES – QUICK SUMMARY
 ------------------------------------------------------------------------
+These four tiers work together in a layered (heterogeneous) system: 
+macro cells provide broad coverage, micros add capacity, small cells 
+deliver extreme speeds in dense areas, and femtos handle indoor 
+connectivity. This multi-tier approach delivers better speed, higher 
+capacity, and seamless connectivity as users move between different 
+environments.
 
   1. MACRO CELL                                                               
      Covers large areas (cities, highways).                                   
