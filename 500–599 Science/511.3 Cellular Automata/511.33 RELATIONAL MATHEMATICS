@@ -57,32 +57,38 @@ CORE OBJECTS
    Γ:             GAMMA/RA/COARSE
    TRUE:          TRUE/STRUCT/REL-OPS
 
-PED-SPECIFIC CATEGORY (Evaluation & Dynamics Shelf)
-   PED-Shelf:
+RDG CATEGORY (Structural Geometry)
+   SID:
+       SID/RA/OPS
+       = Structural Interaction Dynamics / Relation Algebra / Operators
+   Meaning:
+       This extends the operator-geometry of relations.
+PED-SPECIFIC CATEGORY (Evaluation & Dynamics)
+   PED:
        PED/RA/MAP
        = Power-Evaluation Dynamics / Relational Algebra / Mappings
    Meaning:
        The mapping calculus and operator evaluation rules belong here.
-Q-MODE CATEGORY (Moderation / Admissibility Shelf)
-   Q-Shelf:
+Q-MODE CATEGORY (Moderation / Admissibility)
+   Q:
        Q/RA/DOM
        = Moderation / Relational Algebra / Domain Construction
    Meaning:
        Domain/codomain construction is a moderation-filtered operator.
 MFE CATEGORY (Local Dynamics Shelf)
-   MFE-Shelf:
+   MFE:
        MFE/OPS/FLOW
        = Momentum Flux Engine / Operators / Flow Synchronization
    Meaning:
        Fork/join operators correspond to flux-splitting and flux-merging.
-RME CATEGORY (Global Evolution Shelf)
-   RME-Shelf:
+RME CATEGORY (Global Evolution)
+   RME:
        RME/REL/EVOL
        = Redding’s Master Equation / Relational Evolution
    Meaning:
        Mapping calculus and domain operators become evolution constraints.
-Γ CATEGORY (Coarse-Graining / Continuum Limit Shelf)
-   Γ-Shelf:
+Γ CATEGORY (Coarse-Graining / Continuum Limit)
+   Γ:
        GAMMA/RA/COARSE
        = Moderation Map / Relational Algebra / Coarse-Graining
    Meaning:
