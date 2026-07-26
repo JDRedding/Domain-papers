@@ -14,6 +14,9 @@ Structural Interpretation:
   Thus:
       ω + ω = ω·2 ≠ ω   ordinal ω  → encodes order-type
       |ω + ω| = ℵ₀      cardinal ℵ₀ → encodes size-type
+  Also,
+      |ω × ω| = ℵ₀
+  via Cantor's diagonal (pairing) bijection.
 
 Countable Sets:
   A set X is countable  ⇔  ∃ bijection f : X → N.
@@ -45,6 +48,8 @@ Why ℵ₀ is “smallest infinite”:
   - No finite cardinal equals ℵ₀.
   - Any infinite cardinal κ satisfies κ ≥ ℵ₀.
   - ℵ₀ is the initial infinite fixed point of bijection-size.
+    : ℵ₀ is the first invariant produced by the cardinal-
+      collapse operator.
 
 Summary:
   ℵ₀ is the base unit of infinite cardinality:
@@ -88,7 +93,6 @@ SID (Structure–Interaction–Dynamics):
                  ℵ₀ ⊕ ℵ₀ = ℵ₀
                  ℵ₀ ⊗ ℵ₀ = ℵ₀
 
-Operator-Clean Notation
 ------------------------------------------------------------
 
   ℵ₀  =  Card( ω )
@@ -104,6 +108,12 @@ Ladder (Ordinal → Cardinal → Continuum)
 ------------------------------------------------------------
 
   ω    --Collapse-->   ℵ₀    --PowerSet-->   c
+
+Standard:  Card(ω)
+↓
+Interpretation: Collapse Ω(ω)
+↓
+Symbol:   Ω₀ [Operator-Clean Notation]
 
   ω    = order-type
   ℵ₀   = size-type
@@ -134,6 +144,7 @@ DIAGRAM — ω, ℵ₀, c
    REAL LINE STRUCTURE ----------------------->   c
    (uncountable; requires                     (cardinality of
     infinite binary expansion)                 the continuum)
+
 
 Key Relations:
   - ω is the order-type of N.
