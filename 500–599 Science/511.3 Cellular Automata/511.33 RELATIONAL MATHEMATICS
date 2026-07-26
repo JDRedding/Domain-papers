@@ -1,8 +1,46 @@
 RELATIONAL MATHEMATICS 
 =====================================================================
-   A technical documents on Relational Mathematics collecting 
-   algebraic results on binary relations, domain constructions,
-   mapping calculus, and structured relational operators.
+A technical documents on Relational Mathematics collecting 
+algebraic results on binary relations, domain constructions,
+mapping calculus, and structured relational operators.
+
+Core Contributions
+Domain Construction: Provides purely relational formulas for 
+extracting domains and codomains without set notation:
+
+dom(R) = (R · Rᵀ) ∩ I_A — a foundational invariant
+Eliminates the need for explicit set comprehension
+Binary Mapping Calculus: Characterizes functions as relations via 
+left-uniqueness:
+
+A relation f is a mapping ⟺ fᵀ · f ⊆ I_A
+Derives composition laws, factorization identities, and restriction 
+operators
+Treats functions as pure relational objects
+Three Structured Operators:
+
+Kronecker (R ⊗ S): Parallel relational application on product spaces
+Strict Fork (R ⋔ S): Synchronized multi-output from a shared domain
+Strict Join (R ⋎ S): Synchronized multi-input converging to shared codomain
+
+This document presents a comprehensive technical framework extending 
+classical relational algebra with three new structured operators and 
+a complete calculus for binary relations.
+
+7-Mode Substrate Integration
+The framework embeds classical relational algebra into a richer 7-layer structure:
+
+SID: Structural geometry
+PED: Power/evaluation/dynamics
+Q: Moderation/admissibility filters
+MFE: Local flux dynamics
+RME: Global evolution constraints
+Γ: Coarse-graining operator
+AUT: Automorphism symmetries
+
+Each operator (domain, mapping, fork, join, Kronecker) is translated across 
+all seven modes, enabling rigorous treatment of formal methods, program 
+semantics, and category-theoretic relational reasoning.
 
 ---------------------------------------------------------------------
 CORE OBJECTS
