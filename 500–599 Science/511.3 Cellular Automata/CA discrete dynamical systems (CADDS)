@@ -945,7 +945,7 @@ Common types:
 - [Open boundaries] 
   neighbors outside the lattice are ignored or treated as empty.
 
-ASCII EXAMPLE (periodic):
+EXAMPLE (periodic):
 
     index:   0 1 2 3 4 5
     wrap:    5 0 1 2 3 4
@@ -1037,3 +1037,9 @@ Spacetime:
     t=1:  011110
     t=2:  111011
     t=3:  110101
+
+=====================================================================
+References 
+------------------------------------------------------------------
+Bagnoli, F. (1998). Cellular Automata. arXiv:cond-mat/9810012.
+https://arxiv.org/abs/cond-mat/9810012
