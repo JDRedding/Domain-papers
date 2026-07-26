@@ -285,6 +285,23 @@ Even with these techniques, widespread outdoor-to-indoor coverage
 remains limited, and many commercial deployments stay concentrated in 
 dense urban or venue settings rather than becoming ubiquitous.
 
+MOBILITY CHALLENGES — mmWave (28–39 GHz)
+------------------------------------------------------------------------
+Short range + narrow beams + sparse multipath
+→ Mobility becomes a high‑frequency failure mode.
+
+[📡 mmWave Small Cell]───▶(LOS Beam)───▶[📱 User]
+        │
+        │  User turns / hand blocks
+        ▼
+   Beam Lost (20–40 dB)
+        │
+        ├──▶ Beam Sweep (ms)
+        │
+        ├──▶ NLOS Reflection (weak)
+        │
+        └──▶ Handover Triggered (ping‑pong risk)
+
 Mitigations and Ongoing Work
 ------------------------------------------------------------------------
 Engineers compensate with massive MIMO arrays, precise beam tracking, 
