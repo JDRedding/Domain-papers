@@ -1,3 +1,11 @@
+511.3 Cellular Automata / Automata Theory
+511.31 — Deterministic cellular automata
+511.32 — Probabilistic / stochastic CA
+511.33 — Information‑theoretic automata
+511.34 — Computational universality in CA
+511.35 — Emergence, gliders, particles, domains
+
+511.36 — CA classification frameworks
 📁 Automata_Theory
 Linked Project: RAM — Relational Automata Manifolds
 The CA taxonomy and RDG mappings are developed in the main RAM project.
