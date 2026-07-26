@@ -1,0 +1,146 @@
+Improved Estimators of Causal Emergence (Ψ(k,q)) and Application
+to Cellular Automata as a Computational Theory
+
+CORE IDEA
+-----------------------------------------------------------------------
+Causal emergence measures compare:
+    Global predictive information:      I(V_t ; V_t')
+minus
+    Sum of local predictive information: Σ_i I(X_i,t ; V_t')
+
+The naive estimator Ψ becomes unreliable in large systems because
+redundant information is subtracted too many times. The paper introduces
+a corrected estimator Ψ(k,q) that re-adds redundancy atoms using the
+redundancy lattice.
+
+Ψ(k,q) is a tunable, lattice-based correction that interpolates between:
+    q = 0   → original Ψ
+    q = 1   → global redundancy correction
+    q = n-1 → full synergy approximation
+
+This yields stable, meaningful emergence estimates even for large,
+highly redundant systems.
+
+REDUNDANCY LATTICE INTUITION
+-----------------------------------------------------------------------
+Each marginal MI term I(X_i ; V') contains:
+    - unique information
+    - redundant information
+    - synergistic information
+
+Redundant atoms appear in multiple marginals. When subtracting Σ I(X_i),
+redundancy is over-subtracted. Ψ(k,q) fixes this by adding back specific
+redundancy atoms according to lattice order.
+
+The redundancy lattice is a poset:
+    bottom nodes = global redundancy
+    middle nodes = partial redundancy
+    top nodes    = unique + synergy
+
+Ψ(k,q) adds back atoms from the bottom up, controlled by q.
+
+FORMAL DEFINITION OF Ψ(k,q)
+-----------------------------------------------------------------------
+Ψ(k,q) = Ψ(k) + Σ_{r = n-q+1 to n} Σ_{α : |α| = r} C^n_{q,r} * I_cap^α
+
+Where:
+    Ψ(k)        = original emergence estimator at scale k
+    I_cap^α     = redundancy atom for subset α
+    C^n_{q,r}   = correction coefficients
+    q           = expansion order (0..n-1)
+
+Interpretation:
+    q = 1   → add global redundancy atom
+    q = 2   → add redundancy of (n-1)-sized subsets
+    ...
+    q = n-1 → approximate full synergy
+
+APPLICATION TO CELLULAR AUTOMATA (CA)
+-----------------------------------------------------------------------
+Cellular automata (CA) are ideal systems for Ψ(k,q) because they contain:
+    - large homogeneous domains (redundancy)
+    - gliders and particles (synergy)
+    - boundaries and defects (mixed atoms)
+
+Mapping:
+    CA local update rule       → transition kernel P(V'|V)
+    CA global configuration    → V_t
+    CA local neighborhoods     → X_i,t
+    CA patterns                → synergy atoms
+    CA domains                 → redundancy atoms
+
+Thus Ψ(k,q) becomes a computational theory:
+    Computation = synergistic information flow
+    Redundancy = stable background domains
+    Mixed atoms = interfaces, boundaries, defects
+
+Ψ(k,q) identifies:
+    - where computation happens
+    - which structures carry synergistic information
+    - how domains suppress or enable computation
+
+CLASSIFICATION OF CA VIA Ψ(k,q)
+-----------------------------------------------------------------------
+High redundancy:
+    Wolfram Class I/II (fixed or periodic)
+High synergy:
+    Wolfram Class IV (complex, computational)
+Low everything:
+    Wolfram Class III (chaotic)
+
+Gliders:
+    mobile synergy clusters
+Collisions:
+    synergy spikes
+Domains:
+    redundancy basins
+Boundaries:
+    mixed atoms
+
+Ψ(k,q) provides a principled, information-theoretic classification of CA.
+
+COMPATIBLE MAPPING
+-----------------------------------------------------------------------
+ Triads:
+    SID = Structure, Interaction, Dynamics
+    PED = Power, Evaluation, Dynamics
+    Q-moderation = operator adjusting informational weights
+
+Mapping:
+    Redundancy lattice        → SID.Structure
+    Synergy atoms             → SID.Interaction
+    Transition kernel         → SID.Dynamics
+    Correction coefficients   → PED.Evaluation
+    q-order expansion         → Q-moderation operator
+
+Thus Ψ(k,q) is a Q-moderated evaluation operator over SID atoms.
+
+COMPUTATIONAL CONSEQUENCES
+-----------------------------------------------------------------------
+Ψ(k,q) yields:
+    - a definition of computation in CA
+    - a measure of computational capacity
+    - a detector for gliders and particles
+    - a structural map of CA dynamics
+    - a synergy-based explanation of universality (e.g., Rule 110)
+
+Capacity metric:
+    Capacity = max_q Ψ(k,q)
+
+SUMMARY 
+-----------------------------------------------------------------------
+Ψ(k,q) is a lattice-corrected causal-emergence estimator that:
+    - fixes redundancy over-subtraction
+    - scales to large systems
+    - identifies synergy-driven computation
+    - maps naturally onto cellular automata
+    - aligns cleanly with RDG relational substrate theory
+
+It provides a unified, structural, information-theoretic computational
+framework for cellular automata.
+
+Reference
+-----------------------------------------------------------------------------------------
+Sas, M. I., Rosas, F. E., Rajpal, H., Bor, D., Jensen, H. J., & Mediano, P. A. M. (2025).
+Improved estimators of causal emergence for large systems. arXiv:2601.00013 [physics.soc-ph]
+
