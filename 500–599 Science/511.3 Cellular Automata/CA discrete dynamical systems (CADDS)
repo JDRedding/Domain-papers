@@ -1,5 +1,9 @@
 CA discrete dynamical systems (CADDS)
 =====================================================================
+This comprehensive pedagogical document bridges cellular automata 
+(CA) theory with statistical mechanics and dynamical systems, 
+presenting two complementary perspectives. 
+
 Cellular automata can be understood through two distinct but deeply 
 compatible lenses:
 
@@ -52,6 +56,12 @@ information and computation. Together, they reveal CA as both:
 
 This duality is one of the reasons cellular automata remain 
 central in complex systems research.
+
+Central Theme
+---
+Simple local rules → complex emergent macroscopic behavior—CA reveal 
+how both physical processes and computation arise from discrete 
+locality.
 
 PURPOSE 
 ------------------------------------------------------------------
