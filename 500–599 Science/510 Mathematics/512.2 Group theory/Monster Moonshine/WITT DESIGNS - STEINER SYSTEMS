@@ -1,6 +1,20 @@
 WITT DESIGNS — COMPLETE STRUCTURAL REFERENCE
 S(5,6,12)  +  S(5,8,24)
 ================================================================================
+WITT DESIGNS — STRUCTURAL OVERVIEW
+The two Witt designs S(5,6,12) and S(5,8,24) form the core of the Golay–Mathieu
+layer inside the Moonshine tower. They arise as the supports of minimum-weight
+codewords in the ternary and binary Golay codes, and their automorphism groups
+are the sporadic Mathieu groups M₁₂ and M₂₄.
+
+These designs are the unique Steiner systems with parameters (5,6,12) and
+(5,8,24). Their completion operators W₁₂ and W₂₄ extend any 5-subset to a
+unique block, with full equivariance under M₁₂ and M₂₄.
+
+S(5,8,24) sits directly on the Leech lattice Λ₂₄, linking Golay codes to
+Conway’s group Co₀ and ultimately to the Monster group 𝕄.
+
+This document provides a complete structural reference for both Witt designs.
 
 PART 1 — STEINER SYSTEM S(5,6,12)  (THE SMALL WITT DESIGN)
 ================================================================================
