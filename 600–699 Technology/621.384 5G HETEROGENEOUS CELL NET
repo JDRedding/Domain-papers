@@ -58,7 +58,114 @@ optimize coverage, capacity, and speed.
   📡 MACRO CELL   → Coverage (Sub-6 GHz)                                      
   📡 MICRO CELL   → Capacity (Sub-6 GHz)                                      
   📡 SMALL CELL   → High Capacity (mmWave)                                    
-  📡 FEMTO CELL   → Indoor (Wi-Fi/5G)                                         
+  📡 FEMTO CELL   → Indoor (Wi-Fi/5G)        
+
+Quantitative cell radius ranges for each tier
+ Macro (Sub‑6 GHz)           : 1–20 km
+ Micro (Sub‑6 GHz)           : 200–2000 m
+ Small (mmWave)              : 50–300 m
+ Femto                       : 10–30 m
+
+
+LOS vs NLOS mmWave Propagation
+------------------------------------------------------------------------
+                         [📡 mmWave Small Cell]
+                                ┌───────────┐
+                                │ 28–39 GHz │
+                                └─────┬─────┘
+                                      │  (LOS: strong)
+                                      │
+                                      │
+                         ┌────────────▼────────────┐
+                         │        USER DEVICE      │
+                         │          📱             │
+                         └─────────────────────────┘
+
+
+📡 LOS vs NLOS Path Loss — Quantitative Comparison (mm Wave)
+------------------------------------------------------------------------
+Takeaway: At mmWave, NLOS links are typically 20–40 dB worse than LOS at 
+the same distance, and sometimes >50 dB worse depending on materials and 
+geometry.
+
+LOS (Line‑of‑Sight) Path Loss
+Dominated by free‑space loss
+
+Scales with frequency² (Friis)
+
+Predictable and stable
+
+Typical values at 28 GHz:
+100 m: ~93–96 dB
+200 m: ~99–102 dB
+300 m: ~103–106 dB
+
+NLOS (Non‑Line‑of‑Sight) Path Loss
+Dominated by reflection, scattering, and diffraction loss
+
+Highly dependent on environment
+
+Typical values at 28 GHz:
+100 m: ~120–140 dB
+200 m: ~130–150+ dB
+300 m: ~140–160+ dB
+
+LOS vs NLOS Delta (28 GHz)
+Distance	LOS Path Loss     NLOS Path Loss	 Δ (Extra NLOS Loss)
+100 m	93–96 dB	       120–140 dB	 +25–45 dB
+200 m	99–102 dB	       130–150+ dB	 +30–50 dB
+300 m	103–106 dB	       140–160+ dB	 +35–55 dB
+
+LOS (Line-of-Sight)
+-------------------
+Direct, unobstructed path
+Low attenuation (~93–106 dB @ 100–300 m)
+
+        [📡]───────────────▶[📱]
+             Strong LOS beam
+
+
+NLOS (Non-Line-of-Sight)
+------------------------
+Obstacle blocks LOS → signal must reflect
+
+        [📡]───────X────────▶[📱]
+                 (Blockage: 20–40 dB)
+
+        Reflection Path (Specular)
+        [📡]───▶│Glass│───▶[📱]
+                 ▲  ▲
+                 │  └─ Reflection loss (10–25 dB)
+                 └──── Material penetration loss (30–40+ dB)
+
+
+Diffraction Failure (mmWave)
+----------------------------
+mmWave cannot bend around corners effectively
+
+        [📡]───▶ Corner
+                 │
+                 │  (Diffraction loss: 20–40+ dB)
+                 ▼
+               [📱]
+        Weak / unusable NLOS link
+
+
+Human Body Blockage
+-------------------
+A person or hand blocks the beam
+
+        [📡]──────▶🚶──▶[📱]
+                     ▲
+                     └── Human body loss (20–40 dB)
+
+
+Summary Geometry
+----------------
+LOS:   Straight, strong, predictable
+NLOS:  Reflected, fragile, +25–50 dB worse
+Block: Deep fade, sudden outage
+
 
 5G CELL TYPES – QUICK SUMMARY
 ------------------------------------------------------------------------
@@ -117,6 +224,9 @@ receiver.
 This forces networks to use highly directional, high-gain phased-
 array antennas and short cell radii (often 100–300 m or less) rather 
 than the multi-kilometer coverage of macro cells.
+
+mmWave uplink is far more constrained than downlink due to handset 
+power limits. 
 
 Atmospheric and Weather Attenuation
 ---
