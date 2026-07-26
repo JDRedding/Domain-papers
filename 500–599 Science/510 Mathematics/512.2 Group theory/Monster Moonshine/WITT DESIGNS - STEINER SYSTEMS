@@ -134,7 +134,3 @@ SUMMARY TABLE
 Design          Points  Block size  # Blocks  Aut group   Order of Aut
 S(5,6,12)         12         6        132       M₁₂         95 040
 S(5,8,24)         24         8        759       M₂₄     244 823 040
-
-================================================================================
-(End of combined reference — fully copyable & shareable)
-================================================================================
