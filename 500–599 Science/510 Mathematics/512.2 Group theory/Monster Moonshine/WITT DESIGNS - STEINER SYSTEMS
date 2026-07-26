@@ -1,0 +1,140 @@
+WITT DESIGNS — COMPLETE STRUCTURAL REFERENCE
+S(5,6,12)  +  S(5,8,24)
+================================================================================
+
+PART 1 — STEINER SYSTEM S(5,6,12)  (THE SMALL WITT DESIGN)
+================================================================================
+12 points, 132 blocks (hexads)
+Every 5 points lie in exactly one block of size 6.
+
+DEFINITION
+A Steiner system S(t,k,v) is a pair (X,B) where |X|=v, each block B ∈ B has
+|B|=k, and every t-subset of X is contained in exactly one block.
+
+For S(5,6,12):
+• v = 12 points
+• k = 6 points per block (hexad)
+• t = 5
+• Every 5-subset lies in exactly one hexad
+
+POINT SET
+X = {0,1,2,3,4,5,6,7,8,9,10,11}
+
+PARAMETERS AND DERIVED NUMBERS
+v   = 12
+b   = 132
+r   = 66
+λ₂  = 30
+λ₃  = 12
+λ₄  = 4
+λ₅  = 1
+
+λₛ = binom(12-s,5-s) / binom(6-s,5-s)
+
+EXISTENCE & CONSTRUCTION
+Unique up to isomorphism. Constructed from the extended ternary Golay code G₁₂:
+supports of the weight-6 codewords (264 nonzero weight-6 words → 132 hexads).
+
+EXAMPLE HEXADS (first 10 of 132)
+{0,1,2,3,4,5}, {0,1,2,6,7,8}, {0,1,3,6,9,10}, {0,2,4,6,9,11},
+{1,3,5,6,8,11}, {2,3,5,7,9,11}, {0,4,5,7,10,11}, {1,4,5,8,9,10},
+{2,4,7,8,10,11}, {3,4,6,8,9,10}, … (122 more)
+
+STEINER PROPERTY
+Every 5-subset lies in exactly one hexad.
+binom(12,5) = 792 = 132 × 6
+
+COMPLEMENT PROPERTY
+If B is a hexad then so is its complement X\B.
+132 blocks form 66 complementary pairs. Design is self-dual.
+
+AUTOMORPHISM GROUP
+Aut(S(5,6,12)) ≅ M₁₂ (Mathieu group)
+Order: 95 040
+5-transitive on the 12 points
+
+CODING THEORY LINK
+Extended ternary Golay code G₁₂ → Witt design S(5,6,12) → M₁₂
+
+PART 2 — STEINER SYSTEM S(5,8,24)  (THE LARGE WITT DESIGN)
+================================================================================
+24 points, 759 blocks (octads)
+Every 5 points lie in exactly one block of size 8.
+
+DEFINITION
+A Steiner system S(t,k,n) is a pair (X, B) with:
+|X| = n points
+B = set of k-element blocks
+Every t-subset of X lies in exactly one block
+
+For the Witt design: t = 5, k = 8, n = 24
+
+POINT SET
+X = {1, 2, ..., 24}
+
+BLOCK PARAMETERS
+Block size:          k = 8
+Total blocks:        b = C(24,5) / C(8,5) = 42 504 / 56 = 759
+Replication number:  r = C(23,4) / C(7,4) = 8 855 / 35 = 253
+
+INTERSECTION SPECTRUM
+Two distinct blocks intersect in {0, 2, 4}
+Never in {1, 3, 5, 6, 7}
+
+AUTOMORPHISM GROUP
+Aut(S(5,8,24)) = M₂₄
+Order: 244 823 040
+5-transitive on 24 points
+Transitive on blocks and flags (x,B)
+
+CODING THEORY LINK
+Extended binary Golay code G₂₄:
+• Length 24, dimension 12, minimum distance 8
+• Perfect 3-error-correcting code
+• Weight-8 codewords ↔ blocks of S(5,8,24)
+• Total weight-8 codewords = 759
+
+DERIVED / RESIDUAL DESIGNS
+Derived design (fix point x, keep blocks containing x): S(4,7,23)
+Residual design (remove blocks containing x): strongly regular graph (23,22,21,20)
+
+OPERATOR FORM (RDG-COMPATIBLE)
+Define operator W : C(X,5) → C(X,8)
+Properties:
+• Extension:          W(T) ⊇ T
+• Uniqueness:         W(T₁) = W(T₂) ⇔ T₁,T₂ ⊆ same block
+• Intersection regularity: |W(T₁) ∩ W(T₂)| ∈ {0,2,4}
+• Global relational symmetry: W is M₂₄-equivariant
+
+KEY IDENTITIES
+C(24,5) = 42 504
+C(8,5)  = 56
+b       = 759
+
+C(23,4) = 8 855
+C(7,4)  = 35
+r       = 253
+
+UNIQUENESS
+S(5,8,24) is unique up to isomorphism.
+Proof uses intersection constraints, Golay code structure, and M₂₄ transitivity.
+
+RELATION BETWEEN THE TWO WITT DESIGNS
+================================================================================
+• S(5,6,12)  ↔  extended ternary Golay code  ↔  Mathieu group M₁₂
+• S(5,8,24)  ↔  extended binary Golay code   ↔  Mathieu group M₂₄
+
+Both are the unique Steiner systems of their parameters.
+Both arise as the supports of minimum-weight codewords in the corresponding
+perfect Golay codes.
+M₁₂ can be realized as a stabilizer inside M₂₄.
+
+SUMMARY TABLE
+================================================================================
+Design          Points  Block size  # Blocks  Aut group   Order of Aut
+S(5,6,12)         12         6        132       M₁₂         95 040
+S(5,8,24)         24         8        759       M₂₄     244 823 040
+
+================================================================================
+(End of combined reference — fully copyable & shareable)
+================================================================================
