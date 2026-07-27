@@ -1,16 +1,30 @@
+This file is a short, step-by-step model of a classic analog AM radio 
+receiver, listing each stage with the signal equation and key 
+relationships so you can follow how the modulated audio m(t) is 
+transmitted, converted to an intermediate frequency, detected, and 
+amplified to audio.
+
+Detailed points (stage-by-stage)
+
 1. Transmitted AM Radio Signal (antenna receives)
+A carrier cos at fc, amplitude modulated by m(t).
+
    s_RF(t) = A_c [1 + m(t)] cos(2 π f_c t)
 
 2. RF Amplifier
+Simple gain applied to the received RF.
+
    s_RF,amp(t) = G_RF * s_RF(t)
 
 3. Local Oscillator
+Provides the mixing tone.
+
    s_LO(t) = A_LO cos(2 π f_LO t)
 
 4. Mixer (multiplication)
    s_mix(t) = s_RF,amp(t) * s_LO(t)
 
-   Expanded:
+   Expanded (show sum and difference terms):
    s_mix(t) = (G_RF A_c A_LO / 2) [1 + m(t)] *
               [ cos(2 π (f_c + f_LO) t) + cos(2 π (f_c - f_LO) t) ]
 
@@ -18,9 +32,13 @@
    f_IF = |f_c - f_LO|
 
 5. IF Amplifier + Band-pass Filter
+BPF selects the desired difference (IF) component and amplifies it.
+
    s_IF(t) = G_IF A_IF [1 + m(t)] cos(2 π f_IF t)
 
 6. Detector (Envelope Detector)
+Final gain applied to the recovered audio.
+
    e(t) = |G_IF A_IF [1 + m(t)]|
 
    After DC blocking:
@@ -28,3 +46,11 @@
 
 7. Audio Amplifier
    s_out(t) = G_audio * s_audio(t)
+
+Notes / assumptions implied by the file
+
+Idealized components (linear gains, perfect LO, ideal band-pass filtering, 
+simple envelope detection).
+
+No explicit treatment of noise, nonlinearity of mixers/detectors, or 
+demodulation details beyond envelope detection.
