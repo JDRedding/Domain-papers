@@ -1,0 +1,209 @@
+511.3 CART COMPUTATIONAL MODEL
+==============================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document defines an abstract computational model for CART:
+how to represent states, apply operators, and run the full
+relational‑tension pipeline as a symbolic machine.
+
+
+============================================================
+1. CART MACHINE OVERVIEW
+============================================================
+
+A CART machine is a tuple:
+
+    M_CART = (Σ, C, K, D, Q, H, ε)
+
+Where:
+- Σ  = input alphabet (symbols used to build configurations)
+- C  = state space (carrier)
+- K  = resolution transition
+- D  = defect evaluation
+- Q  = identity class construction
+- H  = hierarchy assignment
+- ε  = admissibility threshold
+
+
+============================================================
+2. STATE SPACE (C)
+============================================================
+
+Computational states:
+    s ∈ C
+
+Each s is a **symbolic relational configuration** built from Σ.
+
+Constraints:
+- No coordinates or geometric fields.
+- States are purely structural (trees, records, ADTs, etc.).
+- C is finite or countable in typical implementations.
+
+
+============================================================
+3. TRANSITION FUNCTIONS
+============================================================
+
+Kernel transition:
+    K : C → C
+
+Defect evaluation:
+    D : C → Δ
+
+Quotient construction:
+    Q : C → C/K
+
+Hierarchy assignment:
+    H : C/K → {Tier1, Tier2, Tier3}
+
+
+============================================================
+4. BASIC COMPUTATION STEP
+============================================================
+
+Given input configuration s₀ ∈ C:
+
+Step 1 — Resolution:
+    s₁ = K(s₀)
+
+Step 2 — Defect:
+    δ₁ = D(s₀)
+
+Step 3 — Identity:
+    I₁ = Q(s₀)   (or Q(s₁), equivalent)
+
+Step 4 — Hierarchy:
+    t₁ = H(I₁)
+
+Output:
+    (s₁, δ₁, I₁, t₁)
+
+This is one full CART evaluation of a single configuration.
+
+
+============================================================
+5. ADMISSIBILITY CHECK
+============================================================
+
+Admissibility predicate:
+
+    Adm(s) := D(s) ≤ ε
+
+Computation:
+- Given s ∈ C:
+    1) compute δ = D(s)
+    2) check δ ≤ ε
+- If true, s is admissible; otherwise, inadmissible.
+
+Admissible identity:
+- I = Q(s) is admissible iff Adm(s) holds.
+
+
+============================================================
+6. MULTI-STATE COMPUTATION (BATCH MODE)
+============================================================
+
+Given a finite set S ⊆ C:
+
+For each s ∈ S:
+    s₁ = K(s)
+    δ₁ = D(s)
+    I₁ = Q(s)
+    t₁ = H(I₁)
+
+Collect results:
+    R = { (s, s₁, δ₁, I₁, t₁) | s ∈ S }
+
+This yields:
+- canonical forms for all states
+- defect values
+- identity classes
+- hierarchy tiers
+
+
+============================================================
+7. IDENTITY CLASS CONSTRUCTION (Q)
+============================================================
+
+Implementation as a computational operation:
+
+Algorithm Q_Construct(S):
+    Input: S ⊆ C
+    Output: partition of S into identity classes
+
+    1. For each s ∈ S, compute k_s = K(s)
+    2. Group all s with equal k_s into the same class
+    3. Return set of classes { [s] }
+
+This realizes C/K as a partition of C.
+
+
+============================================================
+8. HIERARCHY COMPUTATION (H)
+============================================================
+
+Given identity classes { [s] }:
+
+Algorithm H_Assign(Classes):
+    Input: Classes = { [s] }
+    Output: tier assignment for each class
+
+    For each [s] in Classes:
+        1. Compute structural complexity of K(s)
+        2. Map complexity to Tier1 / Tier2 / Tier3
+        3. Store H([s]) = tier
+
+This realizes H as a discrete depth function.
+
+
+============================================================
+9. CART AS AN ABSTRACT EVALUATOR
+============================================================
+
+Define an evaluator:
+
+    Eval_CART : C → (C × Δ × C/K × {Tier1,Tier2,Tier3})
+
+Such that:
+
+    Eval_CART(s) =
+        let s₁ = K(s)
+            δ₁ = D(s)
+            I₁ = Q(s)
+            t₁ = H(I₁)
+        in (s₁, δ₁, I₁, t₁)
+
+This is the **canonical computational interpretation** of CART.
+
+
+============================================================
+10. COMPUTATIONAL INVARIANTS
+============================================================
+
+Invariant CI1 — Idempotent Resolution
+    K(K(s)) = K(s)
+
+Invariant CI2 — Zero Defect Canonicality
+    D(s) = 0 ⇔ s = K(s)
+
+Invariant CI3 — Quotient Stability
+    Q(K(s)) = Q(s)
+
+Invariant CI4 — Hierarchy Stability
+    H(Q(s)) = H(Q(K(s)))
+
+Invariant CI5 — Ultrametric Consistency
+    u satisfies ultrametric inequality over identity classes.
+
+
+============================================================
+11. ONE-LINE COMPUTATIONAL SUMMARY
+============================================================
+The CART computational model is an abstract evaluator that takes a
+symbolic relational configuration, resolves it, measures its residual
+tension, assigns it to an identity class, and locates that identity in
+a tiered entanglement hierarchy.
