@@ -1,0 +1,30 @@
+1. Transmitted AM Radio Signal (antenna receives)
+   s_RF(t) = A_c [1 + m(t)] cos(2 π f_c t)
+
+2. RF Amplifier
+   s_RF,amp(t) = G_RF * s_RF(t)
+
+3. Local Oscillator
+   s_LO(t) = A_LO cos(2 π f_LO t)
+
+4. Mixer (multiplication)
+   s_mix(t) = s_RF,amp(t) * s_LO(t)
+
+   Expanded:
+   s_mix(t) = (G_RF A_c A_LO / 2) [1 + m(t)] *
+              [ cos(2 π (f_c + f_LO) t) + cos(2 π (f_c - f_LO) t) ]
+
+   Intermediate frequency:
+   f_IF = |f_c - f_LO|
+
+5. IF Amplifier + Band-pass Filter
+   s_IF(t) = G_IF A_IF [1 + m(t)] cos(2 π f_IF t)
+
+6. Detector (Envelope Detector)
+   e(t) = |G_IF A_IF [1 + m(t)]|
+
+   After DC blocking:
+   s_audio(t)  ∝  m(t)
+
+7. Audio Amplifier
+   s_out(t) = G_audio * s_audio(t)
