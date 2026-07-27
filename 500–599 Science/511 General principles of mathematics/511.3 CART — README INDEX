@@ -4,28 +4,39 @@ Domain-papers/500–599 Science
 511 General principles of mathematics
 511.3 Coordinate-Free Algebra Relational Tensioner (CART)
 
-This README provides an index of all CART documents in the 511.3 section.
-Each file corresponds to a formal component of the CART substrate.
+This README provides a complete index of all CART documents in the 511.3 section.
+Each file corresponds to a formal component of the CART substrate or its meta‑theory.
 
 
-------------------------------------------------------------
+============================================================
 CART CORE DOCUMENTS
-------------------------------------------------------------
+============================================================
 
 511.3 CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
     The master overview of CART.
     Defines the five-component substrate:
-        C  = Carrier (raw relational field)
-        K  = Kernel (tension-resolution operator)
-        D  = Defect (residual tension)
+        C   = Carrier (raw relational field)
+        K   = Kernel (tension-resolution operator)
+        D   = Defect (residual tension)
         C/K = Quotient (identity formation)
-        H  = Hierarchy (relational entanglement depth)
+        H   = Hierarchy (relational entanglement depth)
     Provides the canonical one-page specification.
 
+511.3 CART MASTER SPECIFICATION
+    The unified, authoritative specification of CART.
+    Integrates:
+        - components
+        - axioms
+        - operator algebra
+        - inference calculus
+        - relational modes
+        - hierarchy tiers
+        - canonical diagrams
 
-------------------------------------------------------------
+
+============================================================
 CART FORMAL FOUNDATIONS
-------------------------------------------------------------
+============================================================
 
 511.3 CART AXIOM SYSTEM
     The complete axiom set governing:
@@ -34,7 +45,7 @@ CART FORMAL FOUNDATIONS
         - Defect axioms
         - Quotient axioms
         - Hierarchy axioms
-    Defines the substrate as a formal algebraic system.
+    Defines CART as a formal algebraic system.
 
 511.3 CART INFERENCE CALCULUS
     The full inference system for CART.
@@ -56,10 +67,56 @@ CART FORMAL FOUNDATIONS
         - canonical operator pipeline
     Establishes how operators interact and compose.
 
+511.3 CART FORMAL SEMANTICS
+    Defines the denotational semantics ⟦C⟧, ⟦K⟧, ⟦D⟧, ⟦C/K⟧, ⟦H⟧.
+    Provides semantic meaning for:
+        - resolution
+        - defect
+        - identity
+        - hierarchy
+    Includes semantic laws and interpretation pipeline.
 
-------------------------------------------------------------
+511.3 CART SEMANTIC PROOF OBLIGATIONS
+    Lists all obligations required for semantic correctness.
+    Ensures:
+        - operator stability
+        - identity consistency
+        - ultrametric validity
+        - pipeline soundness
+        - coordinate-free invariance
+
+
+============================================================
+CART META-THEORETIC DOCUMENTS
+============================================================
+
+511.3 CART META-THEORY
+    Describes CART as a full mathematical theory.
+    Covers:
+        - class of CART models
+        - meta-properties
+        - identity lattice
+        - tension order
+        - pre-identity vs post-identity phases
+        - open meta-theoretic questions
+
+511.3 CART SOUNDNESS AND COMPLETENESS THEOREM
+    States the intended soundness and completeness results:
+        Soundness: all derivable judgments are semantically valid.
+        Completeness: all universally valid semantic facts are derivable.
+
+511.3 CART SEMANTIC COMMUTATIVITY LAWS
+    Defines semantic commutativity and compatibility laws:
+        - Q ∘ K = Q
+        - H ∘ Q ∘ K = H ∘ Q
+        - H ∘ Q ∘ D = H ∘ Q
+        - D ∘ K ≤ D (order-compatible)
+    Shows how identity and hierarchy commute over resolution.
+
+
+============================================================
 CART STRUCTURAL DECOMPOSITIONS
-------------------------------------------------------------
+============================================================
 
 511.3 CART RELATIONAL-MODE DECOMPOSITION
     Decomposes CART into five relational modes:
@@ -70,10 +127,43 @@ CART STRUCTURAL DECOMPOSITIONS
         R4 — Hierarchy Mode (H)
     Shows how the substrate expresses different relational perspectives.
 
+511.3 CART TIER‑MODE SYNTHESIS
+    Synthesizes relational modes with hierarchy tiers.
+    Shows:
+        - pre-tier modes (R0–R2)
+        - identity-tier modes (R3–R4)
+        - tier depth semantics
+        - tier-mode flow and stratification
 
-------------------------------------------------------------
+
+============================================================
+CART COMPUTATION & IMPLEMENTATION
+============================================================
+
+511.3 CART COMPUTATIONAL MODEL
+    Defines CART as an abstract evaluator:
+        Eval_CART(s) = (K(s), D(s), Q(s), H(Q(s)))
+    Includes:
+        - state space
+        - transition functions
+        - batch evaluation
+        - admissibility
+        - invariants
+
+511.3 CART IMPLEMENTATION NOTES
+    Provides guidance for implementing CART in software.
+    Covers:
+        - representation of C
+        - canonicalization strategies for K
+        - mismatch functions for D
+        - identity grouping for Q
+        - tier assignment for H
+    Includes pitfalls and invariants.
+
+
+============================================================
 CART DIAGRAMS & REPRESENTATIONS
-------------------------------------------------------------
+============================================================
 
 511.3 CART DIAGRAM (PlantUML)
     UML-style diagram of the CART substrate.
@@ -86,23 +176,55 @@ CART DIAGRAMS & REPRESENTATIONS
         - Tier enumeration
         - Ultrametric structure
 
+511.3 CART — Denotational Semantics Diagram
+    PlantUML diagram showing:
+        - semantic domains
+        - interpretation functions
+        - semantic pipeline
+        - evaluator structure
 
-------------------------------------------------------------
+
+============================================================
+CART CROSS-REFERENCING
+============================================================
+
+511.3 CART CROSS‑REFERENCE MAP
+    Maps all CART documents to each other.
+    Shows:
+        - how axioms relate to operators
+        - how inference rules relate to semantics
+        - how relational modes relate to tiers
+        - how diagrams reflect the algebra
+
+
+============================================================
 CART DIRECTORY STRUCTURE (SUMMARY)
-------------------------------------------------------------
+============================================================
 
 511.3 CART/
     ├── 511.3 CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
+    ├── 511.3 CART MASTER SPECIFICATION
     ├── 511.3 CART AXIOM SYSTEM
     ├── 511.3 CART INFERENCE CALCULUS
     ├── 511.3 CART OPERATOR ALGEBRA
+    ├── 511.3 CART FORMAL SEMANTICS
+    ├── 511.3 CART SEMANTIC PROOF OBLIGATIONS
+    ├── 511.3 CART SEMANTIC COMMUTATIVITY LAWS
+    ├── 511.3 CART SOUNDNESS AND COMPLETENESS THEOREM
+    ├── 511.3 CART META-THEORY
     ├── 511.3 CART RELATIONAL-MODE DECOMPOSITION
-    └── 511.3 CART DIAGRAM (PlantUML)
+    ├── 511.3 CART TIER‑MODE SYNTHESIS
+    ├── 511.3 CART COMPUTATIONAL MODEL
+    ├── 511.3 CART IMPLEMENTATION NOTES
+    ├── 511.3 CART CROSS‑REFERENCE MAP
+    ├── 511.3 CART DIAGRAM (PlantUML)
+    └── 511.3 CART — Denotational Semantics Diagram
 
 
-------------------------------------------------------------
+============================================================
 ONE-LINE SUMMARY
-------------------------------------------------------------
-The CART README index organizes all documents defining the coordinate-free
-algebra relational tensioner, including its axioms, inference calculus,
-operator algebra, relational modes, and structural diagrams.
+============================================================
+The CART README index now catalogs the entire 511.3 CART corpus—core
+specifications, axioms, calculus, semantics, meta-theory, diagrams,
+computational models, and structural decompositions—forming a complete,
+coherent mathematical system for coordinate-free relational tension.
