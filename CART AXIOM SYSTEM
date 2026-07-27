@@ -1,0 +1,153 @@
+CART AXIOM SYSTEM
+=================
+A coordinate‑free algebra relational tensioner
+
+CART = (C, K, D, C/K, H)
+
+This document defines the axioms governing the five components:
+Carrier, Kernel, Defect, Quotient, and Hierarchy.
+
+
+------------------------------------------------------------
+1. CARRIER AXIOMS — RAW RELATIONAL FIELD
+------------------------------------------------------------
+
+Axiom C1 — Existence
+C is a nonempty set of relational configurations.
+
+Axiom C2 — Coordinate‑Free
+Elements of C have no coordinates, geometry, metric, or embedding.
+
+Axiom C3 — Closure
+C is closed under its native relational operations (if any are defined).
+
+Axiom C4 — Pre‑Resolution
+No element of C is assumed consistent, canonical, or admissible prior to K.
+
+
+------------------------------------------------------------
+2. KERNEL AXIOMS — TENSION‑RESOLUTION OPERATOR
+------------------------------------------------------------
+
+Axiom K1 — Endomorphism
+K : C → C is a total function.
+
+Axiom K2 — Idempotence
+For all x ∈ C:
+    K(K(x)) = K(x)
+(Once resolved, stays resolved.)
+
+Axiom K3 — Contractivity
+For all x ∈ C:
+    K(x) is relationally no more tense than x.
+(Formally: D(K(x)) ≤ D(x) once D is defined.)
+
+Axiom K4 — Canonicality
+K(x) is the canonical representative of the identity class of x.
+
+Axiom K5 — Stability
+If x is already canonical, then K(x) = x.
+
+
+------------------------------------------------------------
+3. DEFECT AXIOMS — RESIDUAL RELATIONAL TENSION
+------------------------------------------------------------
+
+Axiom D1 — Defect Map
+D : C → Δ, where Δ is a defect domain.
+
+Axiom D2 — Kernel Agreement
+For all x ∈ C:
+    D(x) = 0  ⇔  x = K(x)
+(Zero defect means fully resolved.)
+
+Axiom D3 — Residual Tension
+For all x ∈ C:
+    D(x) ≥ 0
+(Defect is nonnegative in its domain.)
+
+Axiom D4 — Deviation
+D(x) depends only on the relational mismatch between x and K(x).
+
+Axiom D5 — Monotonicity Under Resolution
+For all x ∈ C:
+    D(K(x)) ≤ D(x)
+
+
+------------------------------------------------------------
+4. QUOTIENT AXIOMS — IDENTITY FORMATION
+------------------------------------------------------------
+
+Axiom Q1 — Kernel Equivalence
+Define x ~ y  iff  K(x) = K(y).
+
+Axiom Q2 — Equivalence Relation
+The relation ~ is reflexive, symmetric, and transitive.
+
+Axiom Q3 — Identity Classes
+C/K is the set of equivalence classes [x] under ~.
+
+Axiom Q4 — Canonical Representative
+For each class [x], K(x) is the unique canonical representative.
+
+Axiom Q5 — Admissibility
+A state x is admissible iff:
+    D(x) ≤ ε
+for some fixed threshold ε.
+
+Axiom Q6 — Class Admissibility
+A class [x] is admissible iff at least one (equivalently all) of its members
+satisfy D(x) ≤ ε.
+
+
+------------------------------------------------------------
+5. HIERARCHY AXIOMS — RELATIONAL ENTANGLEMENT DEPTH
+------------------------------------------------------------
+
+Axiom H1 — Ultrametric Structure
+H assigns an ultrametric u to admissible classes in C/K.
+
+Axiom H2 — Ultrametric Inequality
+For all classes A, B, C:
+    u(A, C) ≤ max(u(A, B), u(B, C))
+
+Axiom H3 — Tiered Depth
+H partitions classes into ordinal tiers:
+    Tier‑1 (shallow)
+    Tier‑2 (intermediate)
+    Tier‑3 (deep)
+
+Axiom H4 — Depth Monotonicity
+If u(A, B) < u(A, C), then depth(A) < depth(C).
+
+Axiom H5 — Identity Preservation
+If K(x) = K(y), then u([x], [y]) = 0.
+
+Axiom H6 — Entanglement Interpretation
+Depth corresponds to relational entanglement complexity, not geometry.
+
+
+------------------------------------------------------------
+6. INTEGRATED CART AXIOM
+------------------------------------------------------------
+For all x ∈ C:
+
+    (1) K resolves relational tension.
+    (2) D measures residual tension.
+    (3) C/K forms identity classes via kernel equality.
+    (4) H organizes identity classes by entanglement depth.
+    (5) All operations are coordinate‑free and purely relational.
+
+This integrated axiom ensures the five components operate as a single,
+coherent, coordinate‑free relational tension algebra.
+
+
+------------------------------------------------------------
+7. ONE-LINE CART AXIOMATIC SUMMARY
+------------------------------------------------------------
+CART is a coordinate‑free algebra in which:
+- the Carrier holds raw relational configurations,
+- the Kernel resolves relational tension,
+- the Defect measures residual tension,
+- the Quotient forms identity classes,
+- and the Hierarchy orders those identities by relational entanglement depth.
