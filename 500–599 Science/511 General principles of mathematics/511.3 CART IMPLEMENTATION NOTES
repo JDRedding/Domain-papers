@@ -1,0 +1,227 @@
+511.3 CART IMPLEMENTATION NOTES
+===============================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+These implementation notes describe how to *realize*, *simulate*, or
+*instantiate* the CART substrate in a computational, symbolic, or
+formal‑logic environment. They do not prescribe a specific programming
+language or framework; instead, they define invariant implementation
+requirements.
+
+
+============================================================
+1. IMPLEMENTATION PHILOSOPHY
+============================================================
+CART is **coordinate‑free**, **non‑geometric**, **non‑categorical**, and
+**purely relational**. Any implementation must preserve:
+
+- no coordinates  
+- no metric space  
+- no embedding  
+- no geometric interpretation  
+- no category‑theoretic objects unless explicitly wrapped  
+
+The implementation must treat all components as **algebraic operators**
+over a discrete relational domain.
+
+
+============================================================
+2. IMPLEMENTING THE CARRIER (C)
+============================================================
+
+C is the raw relational field.
+
+Implementation requirements:
+- Represent C as a discrete set or list of relational configurations.
+- Each configuration must be internally structured but **not spatial**.
+- No coordinate fields, no geometric metadata.
+- C must support:
+    - enumeration
+    - membership
+    - relational comparison (not numeric distance)
+
+Recommended representation:
+- Symbolic structures (records, tuples, algebraic data types)
+- Graph‑free relational objects
+- Pure symbolic states
+
+
+============================================================
+3. IMPLEMENTING THE KERNEL (K)
+============================================================
+
+K : C → C is the tension‑resolution operator.
+
+Implementation requirements:
+- K must be **idempotent**:
+      K(K(x)) = K(x)
+- K must be **contractive**:
+      D(K(x)) ≤ D(x)
+- K must produce a **canonical representative**.
+
+Implementation strategy:
+- Define a normalization or canonicalization function.
+- Ensure normalization is stable (idempotent).
+- Ensure normalization reduces relational inconsistency.
+
+Examples:
+- Structural simplification
+- Constraint enforcement
+- Pattern canonicalization
+
+
+============================================================
+4. IMPLEMENTING THE DEFECT (D)
+============================================================
+
+D : C → Δ measures residual relational tension.
+
+Implementation requirements:
+- D(x) = δ(x, K(x))
+- D(x) = 0 ⇔ x = K(x)
+- D must be monotonic under K.
+
+Implementation strategy:
+- Define δ as a symbolic mismatch measure.
+- δ must compare structure, not coordinates.
+- δ must be invariant under canonicalization.
+
+Possible δ implementations:
+- Count mismatched fields
+- Count violated constraints
+- Structural difference measure
+
+
+============================================================
+5. IMPLEMENTING THE QUOTIENT (C/K)
+============================================================
+
+Identity classes are formed by kernel equality.
+
+Implementation requirements:
+- Equivalence: x ~ y ⇔ K(x) = K(y)
+- Identity class: [x] = { y | K(y) = K(x) }
+- Admissibility: D(x) ≤ ε
+
+Implementation strategy:
+- Use a hash map keyed by K(x).
+- Group all states with identical canonical representatives.
+- Store canonical representative explicitly.
+
+Notes:
+- Quotient formation must not depend on defect.
+- Defect only determines admissibility, not identity.
+
+
+============================================================
+6. IMPLEMENTING THE HIERARCHY (H)
+============================================================
+
+H assigns entanglement depth tiers.
+
+Implementation requirements:
+- H : C/K → {Tier1, Tier2, Tier3}
+- Ultrametric u must satisfy:
+      u(A,C) ≤ max(u(A,B), u(B,C))
+
+Implementation strategy:
+- Define u as a symbolic depth measure over identity classes.
+- Depth must reflect structural entanglement, not geometry.
+- Tier assignment must be ordinal, not numeric.
+
+Possible depth measures:
+- Number of constraints in canonical form
+- Structural complexity of identity class
+- Layer count in canonical representation
+
+
+============================================================
+7. CANONICAL PIPELINE IMPLEMENTATION
+============================================================
+
+The full CART pipeline:
+
+    x ∈ C
+      ↓ K
+    K(x)
+      ↓ D
+    D(x)
+      ↓ Q
+    [x]
+      ↓ H
+    tier([x])
+
+Implementation notes:
+- Each stage must be pure and deterministic.
+- No stage may introduce coordinates or geometry.
+- Pipeline must be composable:
+      H(Q(D(K(x))))
+
+
+============================================================
+8. IMPLEMENTATION INVARIANTS
+============================================================
+
+Invariant I1 — Idempotence
+    K(K(x)) = K(x)
+
+Invariant I2 — Zero‑Defect Identity
+    D(x) = 0 ⇔ x = K(x)
+
+Invariant I3 — Quotient Stability
+    Q(K(x)) = Q(x)
+
+Invariant I4 — Hierarchy Stability
+    H(Q(x)) = H(Q(K(x)))
+
+Invariant I5 — Ultrametric Consistency
+    u satisfies ultrametric inequality
+
+Invariant I6 — Coordinate‑Free Guarantee
+    No component introduces coordinates.
+
+
+============================================================
+9. IMPLEMENTATION PITFALLS
+============================================================
+
+Pitfall P1 — Introducing geometry
+    Any coordinate, metric, or spatial representation violates CART.
+
+Pitfall P2 — Non‑idempotent kernel
+    If K(K(x)) ≠ K(x), identity formation breaks.
+
+Pitfall P3 — Defect tied to raw structure
+    D must compare x to K(x), not x to other raw states.
+
+Pitfall P4 — Quotient depending on defect
+    Identity is determined solely by K, not D.
+
+Pitfall P5 — Numeric depth
+    Depth must be ordinal tiers, not continuous values.
+
+
+============================================================
+10. IMPLEMENTATION CHECKLIST
+============================================================
+
+[ ] C is discrete and coordinate‑free  
+[ ] K is idempotent and contractive  
+[ ] D measures mismatch between x and K(x)  
+[ ] Q groups states by canonical representative  
+[ ] H assigns tiers based on ultrametric depth  
+[ ] Pipeline x → K → D → Q → H is stable  
+[ ] No geometric or coordinate data introduced  
+
+
+============================================================
+11. ONE-LINE SUMMARY
+============================================================
+CART implementation requires a coordinate‑free relational domain, an
+idempotent resolution operator, a mismatch‑based defect measure, a
+canonical quotient, and an ultrametric hierarchy, all composed into a
+stable relational pipeline.
