@@ -1,0 +1,315 @@
+CART INFERENCE CALCULUS
+=======================
+A coordinate-free algebra relational tensioner
+CART = (C, K, D, C/K, H)
+
+This calculus defines how to reason about:
+- resolution (via K),
+- residual tension (via D),
+- identity formation (via C/K),
+- and entanglement depth (via H).
+
+
+------------------------------------------------------------
+0. NOTATION
+------------------------------------------------------------
+x, y, z      ∈ C          (carrier elements)
+[x], [y]    ∈ C/K        (identity classes)
+D(x)        ∈ Δ          (defect values)
+u([x],[y]) ∈ ℝ≥0        (ultrametric distance)
+depth([x]) ∈ {1,2,3}    (Tier‑1, Tier‑2, Tier‑3)
+
+Judgment forms:
+- x ⊢ resolved          (“x is resolved”)
+- x ⊢ admissible        (“x is admissible”)
+- [x] ⊢ id              (“[x] is an identity class”)
+- [x] ⊢ tier(n)         (“[x] is at tier n”)
+- [x] ≡ [y]             (“[x] and [y] share identity”)
+
+
+------------------------------------------------------------
+1. RESOLUTION RULES (K)
+------------------------------------------------------------
+
+[R-Intro]  Resolution by Kernel
+--------------------------------
+Premise:  x ∈ C
+Conclusion:
+    x ⊢ K(x)
+
+Interpretation:
+- Any raw configuration x can be resolved via K(x).
+
+
+[R-Idempotent]  Stability of Resolution
+---------------------------------------
+Premise:  x ⊢ K(x)
+Conclusion:
+    K(K(x)) = K(x)
+
+Interpretation:
+- Once resolved, further resolution does not change the result.
+
+
+[R-Resolved-Judgment]
+---------------------
+Premise:  K(x) = x
+Conclusion:
+    x ⊢ resolved
+
+Interpretation:
+- If x is its own kernel image, x is resolved.
+
+
+[R-Resolution-Monotonicity]
+---------------------------
+Premise:  x ⊢ resolved
+Conclusion:
+    D(x) = 0
+
+Interpretation:
+- Resolved states have zero residual tension.
+
+
+------------------------------------------------------------
+2. DEFECT RULES (D)
+------------------------------------------------------------
+
+[D-Def]  Defect Definition
+--------------------------
+Premise:  x ∈ C
+Conclusion:
+    D(x) = δ(x, K(x))
+
+Interpretation:
+- Defect is defined as deviation between x and its resolved form.
+
+
+[D-Zero-Defect-Equivalence]
+---------------------------
+Premise:  D(x) = 0
+Conclusion:
+    x = K(x)
+
+Interpretation:
+- Zero defect implies x is already canonical.
+
+
+[D-Resolution-Reduces-Defect]
+-----------------------------
+Premise:  x ∈ C
+Conclusion:
+    D(K(x)) ≤ D(x)
+
+Interpretation:
+- Applying K never increases residual tension.
+
+
+[D-Admissibility-Threshold]
+---------------------------
+Premise:  D(x) ≤ ε
+Conclusion:
+    x ⊢ admissible
+
+Interpretation:
+- States with defect below threshold ε are admissible.
+
+
+------------------------------------------------------------
+3. IDENTITY / QUOTIENT RULES (C/K)
+------------------------------------------------------------
+
+[Q-Equiv-Def]  Kernel Equivalence
+---------------------------------
+Premise:  K(x) = K(y)
+Conclusion:
+    x ~ y
+
+Interpretation:
+- States sharing the same kernel image are equivalent.
+
+
+[Q-Class-Formation]
+-------------------
+Premise:  x ∈ C
+Conclusion:
+    [x] = { y ∈ C | K(y) = K(x) }
+
+Interpretation:
+- Identity class [x] is the set of all states with the same resolved identity.
+
+
+[Q-Canonical-Rep]
+-----------------
+Premise:  x ∈ C
+Conclusion:
+    K(x) ∈ [x]
+
+Interpretation:
+- The kernel image K(x) is the canonical representative of [x].
+
+
+[Q-Class-Admissibility]
+-----------------------
+Premises:
+    x ∈ [c]
+    x ⊢ admissible
+Conclusion:
+    [c] ⊢ admissible
+
+Interpretation:
+- If one member of a class is admissible, the class is admissible.
+
+
+[Q-Class-Equivalence]
+---------------------
+Premise:
+    K(x) = K(y)
+Conclusion:
+    [x] ≡ [y]
+
+Interpretation:
+- Identity classes with the same canonical representative are identical.
+
+
+------------------------------------------------------------
+4. HIERARCHY / ULTRAMETRIC RULES (H)
+------------------------------------------------------------
+
+[H-Ultrametric-Def]
+-------------------
+Premise:
+    [x], [y] ∈ C/K
+Conclusion:
+    u([x],[y]) ∈ ℝ≥0
+
+Interpretation:
+- Ultrametric distance is defined over identity classes.
+
+
+[H-Ultrametric-Inequality]
+--------------------------
+Premise:
+    [x], [y], [z] ∈ C/K
+Conclusion:
+    u([x],[z]) ≤ max(u([x],[y]), u([y],[z]))
+
+Interpretation:
+- Ultrametric inequality holds for all triples of classes.
+
+
+[H-Zero-Distance-Identity]
+--------------------------
+Premise:
+    K(x) = K(y)
+Conclusion:
+    u([x],[y]) = 0
+
+Interpretation:
+- Identity-equivalent classes have zero ultrametric distance.
+
+
+[H-Tier-Assignment]
+-------------------
+Premise:
+    [x] ∈ C/K
+Conclusion:
+    depth([x]) ∈ {1,2,3}
+
+Interpretation:
+- Each identity class is assigned a tier (1, 2, or 3).
+
+
+[H-Tier-Monotonicity]
+---------------------
+Premises:
+    u([a],[b]) < u([a],[c])
+Conclusion:
+    depth([b]) ≤ depth([c])
+
+Interpretation:
+- Greater ultrametric distance corresponds to equal or greater depth.
+
+
+[H-Entanglement-Reading]
+------------------------
+Premise:
+    depth([x]) = n
+Conclusion:
+    [x] has relational entanglement of tier n
+
+Interpretation:
+- Tier encodes relational entanglement complexity, not geometry.
+
+
+------------------------------------------------------------
+5. COMPOSITE INFERENCE PATTERNS
+------------------------------------------------------------
+
+[CI-Resolve-Then-Class]
+-----------------------
+Premises:
+    x ∈ C
+Steps:
+    1) compute K(x)
+    2) form [x]
+Conclusion:
+    x ⊢ K(x), [x] ⊢ id
+
+Interpretation:
+- Any raw configuration can be resolved and assigned to an identity class.
+
+
+[CI-Resolve-Then-Defect-Then-Admissible]
+----------------------------------------
+Premises:
+    x ∈ C
+Steps:
+    1) compute K(x)
+    2) compute D(x)
+    3) check D(x) ≤ ε
+Conclusion:
+    x ⊢ admissible  (if D(x) ≤ ε)
+
+Interpretation:
+- Admissibility is inferred via resolution and defect evaluation.
+
+
+[CI-Class-Depth-Inference]
+--------------------------
+Premises:
+    x ∈ C
+    x ⊢ admissible
+Steps:
+    1) form [x]
+    2) compute depth([x])
+Conclusion:
+    [x] ⊢ tier(depth([x]))
+
+Interpretation:
+- Admissible identities are assigned a depth tier via H.
+
+
+[CI-Identity-Equivalence-Chain]
+-------------------------------
+Premises:
+    K(x) = K(y)
+    K(y) = K(z)
+Conclusion:
+    [x] ≡ [z]
+
+Interpretation:
+- Identity equivalence is transitive via kernel equality.
+
+
+------------------------------------------------------------
+6. ONE-LINE CALCULUS SUMMARY
+------------------------------------------------------------
+The CART inference calculus allows you to:
+
+- resolve raw configurations via K,
+- measure residual tension via D,
+- form identity classes via C/K,
+- and infer entanglement depth via H,
+
+all in a coordinate-free, relational-tension framework.
