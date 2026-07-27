@@ -1,0 +1,177 @@
+CART RELATIONAL-MODE DECOMPOSITION
+==================================
+A coordinate-free algebra relational tensioner
+CART = (C, K, D, C/K, H)
+
+Goal:
+Decompose the CART substrate into distinct RELATIONAL MODES:
+- raw mode
+- resolution mode
+- defect mode
+- identity mode
+- hierarchy mode
+
+Each mode is a way the relational field “shows up” structurally.
+
+
+------------------------------------------------------------
+0. RELATIONAL MODES OVERVIEW
+------------------------------------------------------------
+
+Mode R0 — Raw Relational Mode
+Mode R1 — Resolution Mode
+Mode R2 — Defect Mode
+Mode R3 — Identity Mode
+Mode R4 — Hierarchy Mode
+
+These modes correspond directly to:
+C, K, D, C/K, H.
+
+
+------------------------------------------------------------
+1. MODE R0 — RAW RELATIONAL MODE (C)
+------------------------------------------------------------
+
+Definition:
+- R0 is the mode in which configurations are seen as unresolved relational states.
+
+Structural features:
+- Domain: C
+- No canonical form
+- No admissibility
+- No depth
+- No identity class
+
+Relational character:
+- Pure potential.
+- All tensions are present but unmeasured.
+- No distinction between “noise” and “structure”.
+
+View:
+- “What exists before any resolution or evaluation.”
+
+
+------------------------------------------------------------
+2. MODE R1 — RESOLUTION MODE (K)
+------------------------------------------------------------
+
+Definition:
+- R1 is the mode in which configurations are viewed through the lens of K.
+
+Structural features:
+- Operator: K : C → C
+- Idempotent: K(K(x)) = K(x)
+- Contractive: D(K(x)) ≤ D(x)
+
+Relational character:
+- Tension is actively being resolved.
+- Each configuration is mapped toward a canonical relational pattern.
+- The focus is on “what this configuration wants to become.”
+
+View:
+- “How the field resolves itself into stable relational identities.”
+
+
+------------------------------------------------------------
+3. MODE R2 — DEFECT MODE (D)
+------------------------------------------------------------
+
+Definition:
+- R2 is the mode in which configurations are evaluated by residual tension.
+
+Structural features:
+- Operator: D : C → Δ
+- D(x) = δ(x, K(x))
+- D(x) = 0 ⇔ x = K(x)
+
+Relational character:
+- Tension is quantified.
+- The gap between raw and resolved is made explicit.
+- The focus is on mismatch, inconsistency, deviation, unresolved load.
+
+View:
+- “How far this configuration is from its resolved identity.”
+
+
+------------------------------------------------------------
+4. MODE R3 — IDENTITY MODE (C/K)
+------------------------------------------------------------
+
+Definition:
+- R3 is the mode in which configurations are grouped into identity classes.
+
+Structural features:
+- Equivalence: x ~ y ⇔ K(x) = K(y)
+- Identity class: [x] = { y | K(y) = K(x) }
+- Admissibility: D(x) ≤ ε
+
+Relational character:
+- Tension is collapsed into identity bundles.
+- Many raw states share one resolved identity.
+- The focus is on “who this configuration is, once resolved.”
+
+View:
+- “Which relational identity this configuration belongs to.”
+
+
+------------------------------------------------------------
+5. MODE R4 — HIERARCHY MODE (H)
+------------------------------------------------------------
+
+Definition:
+- R4 is the mode in which identity classes are ordered by entanglement depth.
+
+Structural features:
+- Operator: H : C/K → {Tier1, Tier2, Tier3}
+- Ultrametric: u([x],[y]) with u(A,C) ≤ max(u(A,B), u(B,C))
+
+Relational character:
+- Identities are stratified by complexity.
+- Depth encodes how entangled, layered, or structurally dense an identity is.
+- The focus is on “how deep this identity sits in the relational stack.”
+
+View:
+- “How structurally entangled this identity is relative to others.”
+
+
+------------------------------------------------------------
+6. MODE TRANSITIONS
+------------------------------------------------------------
+
+R0 → R1  (C → K)
+- From raw relational field to resolution mode.
+- Question: “What is this configuration’s canonical form?”
+
+R1 → R2  (K → D)
+- From resolution to defect evaluation.
+- Question: “How much unresolved tension remains?”
+
+R2 → R3  (D → C/K)
+- From defect to identity formation.
+- Question: “Which identity class does this configuration belong to?”
+
+R3 → R4  (C/K → H)
+- From identity to hierarchy.
+- Question: “How deep is this identity in the entanglement hierarchy?”
+
+
+------------------------------------------------------------
+7. RELATIONAL-MODE TABLE (CONDENSED)
+------------------------------------------------------------
+
+Mode   | Domain   | Focus                    | Question
+-------+----------+--------------------------+-------------------------------
+R0     | C        | raw configurations       | What exists?
+R1     | K(x)     | resolution               | What is its canonical form?
+R2     | D(x)     | residual tension         | How far from resolved?
+R3     | [x]      | identity class           | Who/what is it?
+R4     | H([x])   | entanglement depth       | How deep/complex is it?
+
+
+------------------------------------------------------------
+8. ONE-LINE SUMMARY
+------------------------------------------------------------
+CART relational‑mode decomposition views the same substrate through
+five distinct relational lenses: raw field (C), resolution (K),
+residual tension (D), identity (C/K), and entanglement depth (H),
+each mode exposing a different structural aspect of relational tension.
