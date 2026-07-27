@@ -1,0 +1,219 @@
+CART OPERATOR ALGEBRA
+=====================
+A coordinate‑free algebra relational tensioner
+CART = (C, K, D, C/K, H)
+
+This algebra defines the operators, compositions, identities,
+and interaction laws between the five components.
+
+
+------------------------------------------------------------
+0. OPERATOR SET
+------------------------------------------------------------
+The CART operator algebra consists of:
+
+    Id      : identity operator
+    K       : kernel (tension-resolution operator)
+    D       : defect (residual tension operator)
+    Q       : quotient constructor (identity formation)
+    H       : hierarchy operator (entanglement depth)
+
+Composite operators:
+    KD      : defect-after-resolution
+    QK      : quotient-after-resolution
+    HQ      : hierarchy-after-quotient
+    HK      : hierarchy-after-resolution
+    HD      : hierarchy-after-defect
+
+
+------------------------------------------------------------
+1. IDENTITY OPERATOR
+------------------------------------------------------------
+
+(Id1) Identity
+    Id(x) = x
+
+(Id2) Left Identity
+    Id ∘ K = K
+
+(Id3) Right Identity
+    K ∘ Id = K
+
+(Id4) Idempotence
+    Id ∘ Id = Id
+
+
+------------------------------------------------------------
+2. KERNEL OPERATOR (K)
+------------------------------------------------------------
+
+(K1) Endomorphism
+    K : C → C
+
+(K2) Idempotence
+    K ∘ K = K
+
+(K3) Contractive Law
+    D(K(x)) ≤ D(x)
+
+(K4) Canonical Representative
+    K(x) ∈ Q(x)
+
+(K5) Kernel Fixed Points
+    K(x) = x  ⇔  x is canonical
+
+
+------------------------------------------------------------
+3. DEFECT OPERATOR (D)
+------------------------------------------------------------
+
+(D1) Defect Definition
+    D(x) = δ(x, K(x))
+
+(D2) Zero Defect Identity
+    D(x) = 0  ⇔  K(x) = x
+
+(D3) Monotonicity Under K
+    D(K(x)) ≤ D(x)
+
+(D4) Defect Composition
+    D ∘ K = D(K(x))
+
+(D5) Defect Ordering
+    x ≤_def y  ⇔  D(x) ≤ D(y)
+
+
+------------------------------------------------------------
+4. QUOTIENT OPERATOR (Q)
+------------------------------------------------------------
+
+(Q1) Quotient Formation
+    Q(x) = [x] = { y ∈ C | K(y) = K(x) }
+
+(Q2) Kernel Equivalence
+    K(x) = K(y)  ⇔  Q(x) = Q(y)
+
+(Q3) Canonical Representative
+    K(x) ∈ Q(x)
+
+(Q4) Quotient Idempotence
+    Q(Q(x)) = Q(x)
+
+(Q5) Admissibility
+    x admissible ⇔ D(x) ≤ ε
+
+(Q6) Class Admissibility
+    Q(x) admissible ⇔ D(x) ≤ ε
+
+
+------------------------------------------------------------
+5. HIERARCHY OPERATOR (H)
+------------------------------------------------------------
+
+(H1) Hierarchy Assignment
+    H([x]) = depth([x]) ∈ {1,2,3}
+
+(H2) Ultrametric Law
+    u([x],[z]) ≤ max(u([x],[y]), u([y],[z]))
+
+(H3) Zero-Distance Identity
+    K(x) = K(y)  ⇒  u([x],[y]) = 0
+
+(H4) Depth Monotonicity
+    u([a],[b]) < u([a],[c])  ⇒  H([b]) ≤ H([c])
+
+(H5) Hierarchy Idempotence
+    H(H([x])) = H([x])
+
+
+------------------------------------------------------------
+6. OPERATOR COMPOSITION LAWS
+------------------------------------------------------------
+
+(OC1) Resolution → Defect
+    KD(x) = D(K(x))
+
+(OC2) Resolution → Quotient
+    QK(x) = Q(K(x)) = Q(x)
+
+(OC3) Quotient → Hierarchy
+    HQ(x) = H(Q(x))
+
+(OC4) Resolution → Hierarchy
+    HK(x) = H(Q(K(x))) = H(Q(x))
+
+(OC5) Defect → Hierarchy
+    HD(x) = H(Q(x))  (defect does not change identity class)
+
+(OC6) Full Pipeline
+    H ∘ Q ∘ D ∘ K = H ∘ Q ∘ K
+
+Interpretation:
+- Defect does not affect identity formation or hierarchy.
+- Kernel determines identity.
+- Hierarchy depends only on identity.
+
+
+------------------------------------------------------------
+7. ALGEBRAIC RELATIONS BETWEEN OPERATORS
+------------------------------------------------------------
+
+(AR1) Kernel dominates Identity
+    K ∘ Id = K
+
+(AR2) Kernel dominates Defect
+    D ∘ K ≤ D
+
+(AR3) Kernel determines Quotient
+    Q ∘ K = Q
+
+(AR4) Quotient determines Hierarchy
+    H ∘ Q = H
+
+(AR5) Hierarchy ignores Defect
+    H ∘ D = H ∘ Id
+
+
+------------------------------------------------------------
+8. FIXED POINTS
+------------------------------------------------------------
+
+(FP1) Kernel Fixed Points
+    K(x) = x
+
+(FP2) Defect Fixed Points
+    D(x) = 0
+
+(FP3) Quotient Fixed Points
+    Q(x) = [x]
+
+(FP4) Hierarchy Fixed Points
+    H([x]) = tier([x])
+
+
+------------------------------------------------------------
+9. CANONICAL CART OPERATOR PIPELINE
+------------------------------------------------------------
+
+For any x ∈ C:
+
+    x
+    ↓ K
+    K(x)
+    ↓ D
+    D(x)
+    ↓ Q
+    [x]
+    ↓ H
+    tier([x])
+
+This is the canonical operator flow of the CART algebra.
+
+
+------------------------------------------------------------
+10. ONE-LINE SUMMARY
+------------------------------------------------------------
+The CART operator algebra defines how resolution (K), residual tension (D),
+identity formation (Q), and entanglement depth (H) interact through
+idempotent, contractive, quotient-preserving, and ultrametric operators
+in a coordinate-free relational substrate.
