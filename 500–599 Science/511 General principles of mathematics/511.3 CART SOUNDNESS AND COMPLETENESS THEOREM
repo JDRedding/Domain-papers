@@ -1,0 +1,138 @@
+511.3 CART SOUNDNESS AND COMPLETENESS THEOREM
+============================================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document states the **soundness** and **completeness** theorems
+for the CART inference calculus with respect to the intended
+coordinate‑free relational semantics.
+
+
+============================================================
+1. CART LOGICAL FRAMEWORK
+============================================================
+
+Language:
+- sorts: C, Δ, C/K, Tier
+- function symbols: K, D, Q, H, u
+- relation symbols: ~, admissible, tier_n, resolved
+
+Theory:
+- axioms: CART AXIOM SYSTEM (C, K, D, Q, H)
+- rules: CART INFERENCE CALCULUS (resolution, defect, identity, hierarchy)
+
+Semantics:
+- models: CART models M = (C, K, D, C/K, H) satisfying all axioms
+- interpretation: CART FORMAL SEMANTICS document
+
+
+============================================================
+2. SOUNDNESS THEOREM (INFORMAL STATEMENT)
+============================================================
+
+Theorem (Soundness of CART):
+    Every judgment derivable in the CART inference calculus
+    is **semantically valid** in all CART models.
+
+Formally:
+    If ⊢_CART  φ
+    then M ⊨ φ for every CART model M.
+
+Where:
+- ⊢_CART denotes derivability using CART rules and axioms.
+- M ⊨ φ means φ holds under the CART formal semantics in M.
+
+
+============================================================
+3. COMPLETENESS THEOREM (INFORMAL STATEMENT)
+============================================================
+
+Theorem (Completeness of CART):
+    Every statement about resolution, defect, identity, or hierarchy
+    that is **true in all CART models** is derivable in the CART
+    inference calculus.
+
+Formally:
+    If M ⊨ φ for every CART model M
+    then ⊢_CART φ.
+
+Thus:
+- The CART calculus is complete for its intended semantic domain:
+  relational tension over (C, K, D, C/K, H).
+
+
+============================================================
+4. SOUNDNESS SKETCH (STRUCTURAL)
+============================================================
+
+Key points:
+
+- Resolution rules respect K axioms:
+    R‑Intro, R‑Idempotent, R‑Resolved
+    → all mirror K1–K5 and their semantics.
+
+- Defect rules respect D axioms:
+    D‑Def, D‑Zero, D‑Monotonicity
+    → all mirror D1–D5.
+
+- Identity rules respect Q axioms:
+    Q‑Equiv, Q‑Class, Q‑Canon
+    → all mirror Q1–Q6.
+
+- Hierarchy rules respect H axioms:
+    H‑Ultrametric, H‑Tier, H‑Mono
+    → all mirror H1–H6.
+
+Because each inference rule is a direct reflection of a semantic law,
+no derivation can produce a judgment that violates any CART model.
+
+
+============================================================
+5. COMPLETENESS SKETCH (STRUCTURAL)
+============================================================
+
+Key idea:
+
+- Any semantic fact about:
+    - K (resolution),
+    - D (defect),
+    - Q (identity),
+    - H (hierarchy),
+  that holds in all models must be a consequence of the axioms.
+
+- The inference calculus is designed to:
+    - introduce,
+    - propagate,
+    - and combine
+  exactly those constraints present in the axiom system.
+
+Thus:
+- If a statement cannot be derived, one can construct a model
+  that satisfies all axioms but falsifies that statement,
+  showing it is not semantically valid in all CART models.
+
+
+============================================================
+6. META-LEVEL STATUS
+============================================================
+
+These theorems are stated at the **meta‑level**:
+
+- Full formal proofs would live in a separate meta‑proof document.
+- Here, the theorems serve as the **intended correctness claims**
+  for the CART calculus relative to its semantics.
+
+They anchor CART as a **sound and complete** theory of
+coordinate‑free relational tension.
+
+
+============================================================
+7. ONE-LINE SUMMARY
+============================================================
+The CART inference calculus is sound and complete: everything it
+derives is valid in all CART models, and every universally valid
+statement about resolution, defect, identity, and hierarchy is
+derivable from its axioms and rules.
