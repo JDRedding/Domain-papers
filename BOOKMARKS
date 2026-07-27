@@ -10,8 +10,7 @@ BOOKMARKS/
 │   ├── GitHub — https://github.com
 │   ├── MDN Web Docs — https://developer.mozilla.org
 │   ├── Ars Technica — https://arstechnica.com
-│   ├── ACM Digital Library — https://dl.acm.org
-│   └── Agda Wiki — https://wiki.portal.chalmers.se/agda/pmwiki.php
+│   └── ACM Digital Library — https://dl.acm.org
 │
 ├── 007–009 Miscellany
 │   ├── Atlas Obscura — https://www.atlasobscura.com
@@ -76,6 +75,7 @@ BOOKMARKS/
 │   │   ├── Univalent Mathematics https://unimath.github.io/UniMath/
 │   │   ├── Rocq Prover https://rocq-prover.org/
 │   │   ├── Rocq GitHub https://github.com/rocq-prover/rocq
+│   │   ├── Agda Wiki — https://wiki.portal.chalmers.se/agda/pmwiki.php
 │   │   └── OEIS — https://oeis.org
 │   ├── 520 Astronomy
 │   │   ├── NASA — https://www.nasa.gov
