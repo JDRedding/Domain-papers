@@ -1,0 +1,62 @@
+@startuml
+title CART — Coordinate-Free Algebra Relational Tensioner
+
+' Core classes
+class Carrier {
+    - configurations : Set
+    --
+    + describe()
+}
+
+class Kernel {
+    - idempotent : boolean
+    - contractive : boolean
+    --
+    + apply(x : Carrier)
+    + resolve(x : Carrier)
+}
+
+class Defect {
+    - defectValue
+    --
+    + compute(x : Carrier, kx : Carrier)
+    + evaluate()
+}
+
+class AdmissibilityQuotient {
+    - classes : Set
+    --
+    + classOf(x : Carrier)
+    + isAdmissible(x : Carrier)
+}
+
+class Hierarchy {
+    - tier : Tier
+    - u : Ultrametric
+    --
+    + depthOf(class)
+    + neighbors(class)
+}
+
+' Supporting types
+class Ultrametric {
+    + u(a, b)
+}
+
+enum Tier {
+    Tier1
+    Tier2
+    Tier3
+}
+
+' Relationships (pipeline)
+Carrier --> Kernel : input
+Kernel --> Defect : K(x)
+Defect --> AdmissibilityQuotient : D(x)
+AdmissibilityQuotient --> Hierarchy : admissible classes
+
+' Hierarchy uses Tier and Ultrametric
+Hierarchy --> Tier
+Hierarchy --> Ultrametric
+
+@enduml
