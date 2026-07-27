@@ -13,6 +13,9 @@ mathematical structure that doesn't rely on geometric embeddings or coordinates.
 It's essentially a system of abstract relational algebra with logical 
 organization principles.
 
+CART is structurally compatible with UniMath, Rocq, and Coq but ontologically 
+orthogonal. CART is the identity-collapse layer of a univalent system.
+
 Core Components
 ---
 CART is defined as a 5-tuple: CART = (C, K, D, C/K, H)
