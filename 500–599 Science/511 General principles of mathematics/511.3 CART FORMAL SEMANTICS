@@ -1,0 +1,228 @@
+511.3 CART FORMAL SEMANTICS
+===========================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document defines the **formal semantics** of CART:  
+the meaning of each component, operator, and relational construct  
+in a precise, interpretation‑stable, coordinate‑free manner.
+
+Semantics here means:  
+**how each part of CART denotes, evaluates, and transforms relational structure.**
+
+
+============================================================
+1. SEMANTIC DOMAIN
+============================================================
+
+The semantic universe of CART is:
+
+    ⟦CART⟧ = (⟦C⟧, ⟦K⟧, ⟦D⟧, ⟦C/K⟧, ⟦H⟧)
+
+Where each ⟦·⟧ is a semantic interpretation function.
+
+All semantics are **non‑geometric**, **non‑metric**, **non‑coordinate**,  
+and purely **relational**.
+
+
+============================================================
+2. SEMANTICS OF THE CARRIER (⟦C⟧)
+============================================================
+
+⟦C⟧ is the domain of **raw relational configurations**.
+
+Semantic meaning:
+- A configuration is a relational structure with unresolved tension.
+- No coordinates or geometric interpretation exist.
+- No canonical identity is assigned.
+- No depth or hierarchy is defined.
+
+Formally:
+    ⟦C⟧ = { relational states before resolution }
+
+C is the semantic ground layer.
+
+
+============================================================
+3. SEMANTICS OF THE KERNEL (⟦K⟧)
+============================================================
+
+⟦K⟧ is the **resolution semantics**.
+
+Given x ∈ C:
+
+    ⟦K⟧(x) = the canonical relational pattern extracted from x
+
+Semantic meaning:
+- K interprets x as “what x resolves into.”
+- K removes inconsistent relational structure.
+- K produces the identity‑bearing core of x.
+
+Idempotence semantics:
+    ⟦K⟧(⟦K⟧(x)) = ⟦K⟧(x)
+
+Contractive semantics:
+    ⟦D⟧(⟦K⟧(x)) ≤ ⟦D⟧(x)
+
+K is the semantic stabilizer.
+
+
+============================================================
+4. SEMANTICS OF THE DEFECT (⟦D⟧)
+============================================================
+
+⟦D⟧ is the **residual tension semantics**.
+
+Given x ∈ C:
+
+    ⟦D⟧(x) = semantic deviation between x and ⟦K⟧(x)
+
+Semantic meaning:
+- D measures how far x is from its canonical identity.
+- D is a relational mismatch function.
+- D is zero exactly when x is already canonical.
+
+Zero‑defect semantics:
+    ⟦D⟧(x) = 0  ⇔  x = ⟦K⟧(x)
+
+D is the semantic inconsistency measure.
+
+
+============================================================
+5. SEMANTICS OF THE QUOTIENT (⟦C/K⟧)
+============================================================
+
+⟦C/K⟧ is the **identity semantics**.
+
+Given x ∈ C:
+
+    ⟦C/K⟧(x) = the identity class of x
+
+Formally:
+    ⟦C/K⟧(x) = { y ∈ C | ⟦K⟧(y) = ⟦K⟧(x) }
+
+Semantic meaning:
+- Identity is determined solely by kernel equality.
+- All states resolving to the same canonical pattern share identity.
+- Defect does not affect identity; only admissibility.
+
+Admissibility semantics:
+    x admissible ⇔ ⟦D⟧(x) ≤ ε
+
+Identity is the semantic collapse of tension into canonical form.
+
+
+============================================================
+6. SEMANTICS OF THE HIERARCHY (⟦H⟧)
+============================================================
+
+⟦H⟧ is the **entanglement depth semantics**.
+
+Given an identity class [x]:
+
+    ⟦H⟧([x]) = tier([x]) ∈ {Tier1, Tier2, Tier3}
+
+Semantic meaning:
+- Depth is an ultrametric interpretation of identity complexity.
+- Tier‑1: shallow identity
+- Tier‑2: intermediate identity
+- Tier‑3: deep identity
+
+Ultrametric semantics:
+    u([x],[z]) ≤ max(u([x],[y]), u([y],[z]))
+
+Hierarchy is the semantic stratification of identity.
+
+
+============================================================
+7. SEMANTICS OF THE OPERATOR PIPELINE
+============================================================
+
+The full semantic pipeline is:
+
+    x
+    ↓ ⟦K⟧
+    canonical form
+    ↓ ⟦D⟧
+    residual tension
+    ↓ ⟦C/K⟧
+    identity class
+    ↓ ⟦H⟧
+    entanglement depth
+
+Semantic interpretation:
+- ⟦K⟧ extracts identity.
+- ⟦D⟧ measures deviation.
+- ⟦C/K⟧ collapses identity.
+- ⟦H⟧ assigns depth.
+
+
+============================================================
+8. SEMANTICS OF RELATIONAL MODES
+============================================================
+
+Mode semantics:
+
+R0 Raw Mode:
+    ⟦R0⟧(x) = x as unresolved relational potential
+
+R1 Resolution Mode:
+    ⟦R1⟧(x) = ⟦K⟧(x)
+
+R2 Defect Mode:
+    ⟦R2⟧(x) = ⟦D⟧(x)
+
+R3 Identity Mode:
+    ⟦R3⟧(x) = ⟦C/K⟧(x)
+
+R4 Hierarchy Mode:
+    ⟦R4⟧(x) = ⟦H⟧(⟦C/K⟧(x))
+
+Modes are semantic lenses over the same substrate.
+
+
+============================================================
+9. SEMANTICS OF TIER‑MODE SYNTHESIS
+============================================================
+
+Tier semantics attach only at identity and hierarchy modes:
+
+    ⟦R3⟧(x) → Tier‑1/2/3
+    ⟦R4⟧(x) → Tier‑1/2/3
+
+Pre‑tier semantics:
+    ⟦R0⟧, ⟦R1⟧, ⟦R2⟧
+
+Tier semantics:
+    ⟦R3⟧, ⟦R4⟧
+
+
+============================================================
+10. FORMAL SEMANTIC LAWS
+============================================================
+
+Law S1 — Identity Determination
+    ⟦C/K⟧(x) = ⟦C/K⟧(y) ⇔ ⟦K⟧(x) = ⟦K⟧(y)
+
+Law S2 — Zero‑Defect Canonicality
+    ⟦D⟧(x) = 0 ⇔ x = ⟦K⟧(x)
+
+Law S3 — Depth Preservation
+    ⟦H⟧(⟦C/K⟧(x)) = ⟦H⟧(⟦C/K⟧(⟦K⟧(x)))
+
+Law S4 — Ultrametric Identity
+    ⟦K⟧(x) = ⟦K⟧(y) ⇒ u([x],[y]) = 0
+
+Law S5 — Semantic Stability
+    ⟦K⟧, ⟦D⟧, ⟦C/K⟧, ⟦H⟧ are all idempotent.
+
+
+============================================================
+11. ONE-LINE FORMAL SEMANTICS SUMMARY
+============================================================
+CART formal semantics interpret resolution, deviation, identity, and
+entanglement depth as a coherent relational meaning pipeline, mapping
+raw configurations into canonical identities and stratified tiers.
