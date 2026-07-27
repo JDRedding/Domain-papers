@@ -1,0 +1,53 @@
+Error Types and Meaning
+519.5 - Statistical Mathematics
+001.42 - Research methods and statistics 
+------------------------------------------------------------------------------------
+This is the primary paper for hypothesis testing, Type I/II errors, and statistical 
+power. This file explains the fundamental concepts of statistical hypothesis testing 
+errors and power:
+
+Type I Error (False Positive)
+: Rejecting a true null hypothesis, occurs with probability α
+Type II Error (False Negative)
+: Failing to reject a false null hypothesis, occurs with probability β
+Statistical Power
+: The ability of a test to detect a true effect (1 - β)
+
+Core 
+A Type I error is rejecting a true null (false positive).
+A Type II error is failing to reject a false null (false negative).
+Power is the probability your test correctly detects the effect when it truly exists.
+
+Type I Error (False Positive)
+α = P(Reject H₀ | H₀ is true)
+
+Type II Error (False Negative)
+β = P(Fail to reject H₀ | Hₐ is true)
+  = P(Fail to reject H₀ | H₀ is false)
+
+Statistical Power
+Power = 1 - β
+      = P(Reject H₀ | Hₐ is true)
+
+How α, β, and Power Interact
+Lowering α (stricter threshold) usually increases β, reducing power.
+Increasing sample size reduces β, increasing power.
+Larger effect sizes increase power.
+Higher variance increases β, reducing power.
+
+Concept	Definition	          Probability Expression
+Type I Error	False positive	𝛼=𝑃(Reject 𝐻_0∣𝐻_0 true)
+Type II Error	False negative	𝛽=𝑃(Fail to reject 𝐻_0∣𝐻_𝑎 true)
+Power	True positive rate	    1−𝛽=𝑃(Reject 𝐻_0∣𝐻_𝑎 true)
+
+These trade-offs are the backbone of experimental design.
+
+Key Relationships: The file highlights critical trade-offs in experimental design:
+
+Stricter thresholds (lower α) typically increase β and reduce power
+Larger sample sizes decrease β and increase power
+Bigger effect sizes and lower variance both improve power
+
+Bottom Line: These three metrics (α, β, and Power) are interconnected and form the 
+foundation for designing rigorous statistical experiments. You must balance Type I 
+and Type II error risks based on your research context.
