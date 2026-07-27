@@ -82,5 +82,6 @@ Envelope of the AM signal:
 For u <= 1 this simplifies to:
   A(t) = Ac * (1 + u * cos(2*pi*fm*t))
 
-After diode detection + low-pass filter (and DC blocking) the original message m(t) is recovered.
+After diode detection + low-pass filter (and DC blocking) the 
+original message m(t) is recovered.
 
