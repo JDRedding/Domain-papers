@@ -1,5 +1,38 @@
 AMPLITUDE MODULATION (AM) EQUATIONS 
+This file gives a compact reference for basic AM theory: time‑domain 
+signal definitions, frequency‑domain components, power relationships, 
+bandwidth, and envelope (receiver) detection.
 
+Key points and equations
+-----------------------------------------------------------------------
+Time‑domain signals
+Carrier
+  : c(t) = Ac cos(2πfc t)
+Message
+  : m(t) = Am cos(2πfm t)
+AM signal
+  : s(t) = [Ac + m(t)] cos(2πfc t) = Ac[1 + u cos(2πfm t)] cos(2πfc t)
+Modulation index
+  : u = Am / Ac (0 < u ≤ 1 to avoid overmodulation)
+Expanded (shows sidebands)
+  : s(t) = Ac cos(2πfc t) + (u Ac / 2)[cos 2π(fc+fm)t + cos 2π(fc−fm)t]
+
+Power relations
+Carrier power (load R)
+  : Pc = Ac^2 / (2R)
+Total transmitted power
+  : Pt = Pc (1 + u^2 / 2)
+Power in both sidebands combined
+  : PSB = Pc (u^2 / 2)
+
+Receiver / envelope detection
+Envelope
+  : A(t) = Ac |1 + u cos(2πfm t)|, 
+which for u ≤ 1 simplifies to Ac(1 + u cos 2πfm t)
+
+After diode detection + low‑pass filtering (and DC blocking) the 
+original message m(t) is recovered.
+-----------------------------------------------------------------------
 1. TIME-DOMAIN SIGNALS (TRANSMITTER)
 
 Carrier signal:
