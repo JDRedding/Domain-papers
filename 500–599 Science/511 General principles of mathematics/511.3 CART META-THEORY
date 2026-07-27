@@ -1,0 +1,192 @@
+511.3 CART META-THEORY
+======================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document describes the **meta‑theory** of CART:  
+global properties, model structure, meta‑results, and how the
+entire substrate behaves as a mathematical theory rather than
+just a single algebraic object.
+
+
+============================================================
+1. CART AS A THEORY OF MODELS
+============================================================
+
+A CART **model** is any structure:
+
+    M = (C, K, D, C/K, H)
+
+such that:
+- all CART axioms hold,
+- all semantic proof obligations are satisfied,
+- all implementation invariants are preserved.
+
+The **class of CART models** is the set of all such M.
+
+Meta‑view:
+- CART is not one algebra; it is a **theory** describing a family
+  of coordinate‑free relational tension algebras.
+
+
+============================================================
+2. SIGNATURE AND SENTENCES
+============================================================
+
+CART signature Σ_CART includes:
+- sorts: C, Δ, C/K, Tier
+- function symbols: K, D, Q, H, u
+- relation symbols: ~, admissible, tier_n
+
+CART sentences:
+- axioms (C, K, D, Q, H)
+- operator laws
+- semantic laws
+- ultrametric constraints
+
+Meta‑view:
+- CART is a **first‑order algebraic theory** over a non‑geometric
+  relational signature.
+
+
+============================================================
+3. META-PROPERTIES OF CART
+============================================================
+
+Meta‑Property M1 — Coordinate‑Free Invariance
+    Any isomorphism between models that preserves C, K, D, Q, H
+    is a valid CART isomorphism; no coordinates are ever referenced.
+
+Meta‑Property M2 — Kernel‑Determined Identity
+    Identity is entirely determined by K; D and H are **meta‑data**
+    layered on top of kernel‑equivalence.
+
+Meta‑Property M3 — Defect as Meta‑Metric
+    D behaves like a “tension metric” but is not geometric; it is
+    a meta‑measure of deviation from canonicality.
+
+Meta‑Property M4 — Hierarchy as Meta‑Order
+    H induces a partial order on identity classes via tier depth,
+    forming a stratified meta‑structure over C/K.
+
+Meta‑Property M5 — Pipeline as Meta‑Evaluator
+    The composite x → K → D → Q → H is the **canonical evaluator**
+    for any CART model.
+
+
+============================================================
+4. SOUNDNESS AND COMPLETENESS (META-LEVEL)
+============================================================
+
+Soundness (informal):
+- Any derivation in the CART inference calculus is valid in all
+  CART models (respects axioms and semantics).
+
+Completeness (informal):
+- Any statement about resolution, defect, identity, or hierarchy
+  that holds in all CART models is derivable from the CART axioms
+  plus the inference calculus.
+
+Meta‑view:
+- CART is designed so that its **axioms + calculus** are intended
+  to be sound and complete for the intended semantics of
+  relational tension—though formal proofs would live in a separate
+  meta‑proof document.
+
+
+============================================================
+5. META-STRUCTURE: LATTICE OF IDENTITIES
+============================================================
+
+Identity classes C/K form a meta‑structure:
+
+- Equivalence classes under ~
+- Admissible subset under D(x) ≤ ε
+- Tiered stratification under H
+
+Meta‑result:
+- (C/K, ≤_tier) forms a **tiered poset**:
+    [x] ≤ [y]  iff  H([x]) ≤ H([y])
+
+This poset is the **meta‑hierarchy** of relational identities.
+
+
+============================================================
+6. META-STRUCTURE: TENSION ORDER
+============================================================
+
+Define tension order on C:
+
+    x ≤_def y  ⇔  D(x) ≤ D(y)
+
+Meta‑result:
+- (C, ≤_def) is a **preorder** compatible with K:
+    x ≤_def y ⇒ K(x) = K(y) or K(x) “no more tense” than K(y).
+
+This gives a meta‑ordering of configurations by residual tension.
+
+
+============================================================
+7. META-RELATION BETWEEN MODES AND TIERS
+============================================================
+
+Modes:
+    R0–R4 (raw, resolution, defect, identity, hierarchy)
+Tiers:
+    Tier1–Tier3 (shallow, intermediate, deep)
+
+Meta‑result:
+- Modes R0–R2 are **pre‑identity meta‑states**.
+- Modes R3–R4 are **identity‑bearing meta‑states** with tier depth.
+- Tier depth is only meaningful once identity is formed.
+
+Thus:
+- CART meta‑theory distinguishes **pre‑identity** vs **post‑identity**
+  phases of relational tension.
+
+
+============================================================
+8. META-INTERPRETATION: CART AS A LENS
+============================================================
+
+CART can be viewed as a **lens** on any relational system:
+
+Given any relational universe U:
+- choose C as its configuration space,
+- define K as its canonicalization,
+- define D as its deviation measure,
+- define C/K as its identity partition,
+- define H as its depth stratification.
+
+Meta‑view:
+- CART is a **portable theory**: a way to impose a structured
+  tension/identity/hierarchy view on arbitrary relational domains.
+
+
+============================================================
+9. META-THEORETIC QUESTIONS (OPEN)
+============================================================
+
+Examples of meta‑questions CART invites:
+
+- Existence: For a given relational domain, does a CART model exist?
+- Uniqueness: Is the CART model unique up to isomorphism?
+- Minimality: What is the minimal K that yields a valid CART?
+- Expressiveness: Which relational phenomena can be captured
+  purely via (C, K, D, C/K, H)?
+- Extension: How does CART interact with probabilistic, temporal,
+  or categorical enrichments?
+
+These belong to the **meta‑research space** around CART.
+
+
+============================================================
+10. ONE-LINE META-THEORY SUMMARY
+============================================================
+CART meta‑theory treats the coordinate‑free algebra of relational
+tension as a full mathematical theory of models, identities, and
+hierarchies, describing not just one algebra but an entire class
+of invariant relational substrates.
