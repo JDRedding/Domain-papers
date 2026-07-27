@@ -1,0 +1,166 @@
+511.3 CART CROSS‑REFERENCE MAP
+==============================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+This document maps all CART components, operators, axioms, inference rules,
+and relational modes across the full 511.3 CART corpus. It shows how each
+file relates to the others and how the five-part substrate interlocks.
+
+
+------------------------------------------------------------
+0. CART SUBSTRATE (MASTER REFERENCE)
+------------------------------------------------------------
+CART = (C, K, D, C/K, H)
+
+C   = Carrier (raw relational field)
+K   = Kernel (tension-resolution operator)
+D   = Defect (residual relational tension)
+C/K = Quotient (identity formation)
+H   = Hierarchy (relational entanglement depth)
+
+Every other CART document references these five components.
+
+
+------------------------------------------------------------
+1. CROSS‑REFERENCE: CART → AXIOM SYSTEM
+------------------------------------------------------------
+CART AXIOM SYSTEM defines the formal laws governing each component.
+
+Carrier axioms:
+    C1–C4  → define raw relational field
+
+Kernel axioms:
+    K1–K5  → define resolution, idempotence, contractivity
+
+Defect axioms:
+    D1–D5  → define residual tension, zero-defect identity
+
+Quotient axioms:
+    Q1–Q6  → define identity formation, admissibility
+
+Hierarchy axioms:
+    H1–H6  → define ultrametric depth, tier structure
+
+Cross‑link:
+    Every axiom corresponds directly to one of the five CART components.
+
+
+------------------------------------------------------------
+2. CROSS‑REFERENCE: CART → INFERENCE CALCULUS
+------------------------------------------------------------
+The inference calculus provides reasoning rules for each component.
+
+Resolution rules:
+    R‑Intro, R‑Idempotent, R‑Resolved-Judgment
+    → correspond to Kernel axioms K1–K5
+
+Defect rules:
+    D‑Def, D‑Zero-Defect, D‑Monotonicity
+    → correspond to Defect axioms D1–D5
+
+Identity rules:
+    Q‑Equiv-Def, Q‑Class-Formation, Q‑Canonical-Rep
+    → correspond to Quotient axioms Q1–Q6
+
+Hierarchy rules:
+    H‑Ultrametric, H‑Tier-Assignment, H‑Tier-Monotonicity
+    → correspond to Hierarchy axioms H1–H6
+
+Composite inference patterns:
+    Resolve → Defect → Identity → Hierarchy
+    → matches the canonical CART operator pipeline.
+
+
+------------------------------------------------------------
+3. CROSS‑REFERENCE: CART → OPERATOR ALGEBRA
+------------------------------------------------------------
+The operator algebra defines how the five operators compose.
+
+Identity operator:
+    Id laws → relate to C (Carrier) and K (Kernel)
+
+Kernel operator:
+    K laws → match K axioms and resolution rules
+
+Defect operator:
+    D laws → match D axioms and defect rules
+
+Quotient operator:
+    Q laws → match Q axioms and identity rules
+
+Hierarchy operator:
+    H laws → match H axioms and hierarchy rules
+
+Operator composition:
+    KD, QK, HQ, HK, HD
+    → correspond to inference calculus composite patterns
+
+Canonical pipeline:
+    x → K → D → Q → H
+    → corresponds to relational-mode transitions R0→R4.
+
+
+------------------------------------------------------------
+4. CROSS‑REFERENCE: CART → RELATIONAL-MODE DECOMPOSITION
+------------------------------------------------------------
+Relational modes correspond directly to CART components:
+
+R0 Raw Mode      → Carrier (C)
+R1 Resolution    → Kernel (K)
+R2 Defect        → Defect (D)
+R3 Identity      → Quotient (C/K)
+R4 Hierarchy     → Hierarchy (H)
+
+Mode transitions:
+    R0 → R1 → R2 → R3 → R4
+    → correspond to operator pipeline K, D, Q, H
+
+Mode questions:
+    R0: What exists?
+    R1: What is its canonical form?
+    R2: How far from resolved?
+    R3: Who/what is it?
+    R4: How deep is it?
+
+Cross‑link:
+    Each relational mode is the “phenomenological view” of one CART operator.
+
+
+------------------------------------------------------------
+5. CROSS‑REFERENCE: CART → PLANTUML DIAGRAM
+------------------------------------------------------------
+PlantUML diagram nodes correspond exactly to CART components:
+
+Carrier      → C
+Kernel       → K
+Defect       → D
+Quotient     → C/K
+Hierarchy    → H
+Tier enum    → H axioms (tier structure)
+Ultrametric  → H axioms (distance structure)
+
+Diagram arrows:
+    Carrier → Kernel → Defect → Quotient → Hierarchy
+    → matches operator algebra and inference calculus pipeline.
+
+
+------------------------------------------------------------
+6. FULL CROSS‑REFERENCE MATRIX
+------------------------------------------------------------
+Component | Axiom System | Inference Calculus | Operator Algebra | Relational Modes | Diagram
+----------+--------------+--------------------+------------------+------------------+---------
+C         | C1–C4        | R0 rules           | Id laws          | R0 Raw Mode      | Carrier
+K         | K1–K5        | Resolution rules   | K laws           | R1 Resolution    | Kernel
+D         | D1–D5        | Defect rules       | D laws           | R2 Defect        | Defect
+C/K       | Q1–Q6        | Identity rules     | Q laws           | R3 Identity      | Quotient
+H         | H1–H6        | Hierarchy rules    | H laws           | R4 Hierarchy     | Hierarchy
+
+
+------------------------------------------------------------
+7. ONE-LINE SUMMARY
+------------------------------------------------------------
+The CART cross‑reference map shows how every CART document—axioms, calculus,
+operator algebra, relational modes, and diagrams—interlocks through the five
+core components (C, K, D, C/K, H) and the canonical pipeline x → K → D → Q → H.
