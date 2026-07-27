@@ -1,0 +1,23 @@
++---------------------------------------------------------------+
+|  MCB = Miniature Circuit Breaker                              |
+|                                                               |
+|  An automatically operated electrical switch that protects    |
+|  low-voltage circuits from damage caused by excess current    |
+|  (overload or short circuit).                                 |
+|                                                               |
+|  • Rated typically up to ~125 A                               |
+|  • Commonly used in homes, commercial & light industrial      |
+|    panels (DIN-rail mounted)                                  |
+|  • Resettable (unlike fuses that must be replaced)            |
+|                                                               |
+|  How it works (thermal-magnetic):                             |
+|  - Overload  → bimetallic strip heats & bends → trips         |
+|  - Short circuit → electromagnetic coil trips almost instantly|
+|                                                               |
+|  Standard ratings: 6A, 10A, 16A, 20A, 25A, 32A, 40A, 63A...   |
+|  Charts match these to kW loads (assuming ~230 V) to select   |
+|  the right breaker for the circuit.                           |
+|                                                               |
+|  Purpose: Protect wiring & equipment, prevent overheating     |
+|  and fire hazards. Modern replacement for many fuses.         |
++---------------------------------------------------------------+
