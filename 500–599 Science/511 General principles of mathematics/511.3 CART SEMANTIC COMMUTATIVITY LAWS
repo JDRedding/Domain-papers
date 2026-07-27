@@ -1,0 +1,163 @@
+511.3 CART SEMANTIC COMMUTATIVITY LAWS
+======================================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document states the **semantic commutativity and compatibility laws**
+for the CART operators and their denotational semantics ⟦·⟧.  
+It captures when and how K, D, Q, and H “commute” or stabilize with respect
+to each other, at the level of meaning rather than syntax.
+
+
+============================================================
+1. SETUP: OPERATORS AND SEMANTICS
+============================================================
+
+Operators:
+    K : C → C
+    D : C → Δ
+    Q : C → C/K
+    H : C/K → {Tier1, Tier2, Tier3}
+
+Semantic interpretations:
+    ⟦K⟧, ⟦D⟧, ⟦C/K⟧, ⟦H⟧
+
+Canonical pipeline:
+    x → K → D → Q → H
+
+
+============================================================
+2. KERNEL–QUOTIENT COMMUTATIVITY
+============================================================
+
+Law KC‑1 — Quotient Stability under Kernel
+    Q(K(x)) = Q(x)
+
+Semantic form:
+    ⟦C/K⟧(⟦K⟧(x)) = ⟦C/K⟧(x)
+
+Meaning:
+- Applying K before forming the identity class does not change
+  which identity class x belongs to.
+- Identity depends only on the canonical representative, not on
+  whether resolution has already been applied.
+
+Law KC‑2 — Kernel‑Quotient Commutativity (Diagram)
+    Q ∘ K = Q
+
+Thus:
+    Q(K(x)) and Q(x) are semantically identical.
+
+
+============================================================
+3. QUOTIENT–HIERARCHY COMMUTATIVITY
+============================================================
+
+Law QH‑1 — Hierarchy Stability under Kernel
+    H(Q(x)) = H(Q(K(x)))
+
+Semantic form:
+    ⟦H⟧(⟦C/K⟧(x)) = ⟦H⟧(⟦C/K⟧(⟦K⟧(x)))
+
+Meaning:
+- Depth assignment is invariant under pre‑resolution.
+- Once identity is formed, hierarchy does not care whether x
+  was raw or already resolved.
+
+Law QH‑2 — Hierarchy–Quotient Commutativity (Diagram)
+    H ∘ Q ∘ K = H ∘ Q
+
+Thus:
+    H(Q(K(x))) and H(Q(x)) are semantically identical.
+
+
+============================================================
+4. DEFECT–QUOTIENT NON-COMMUTATIVITY (BUT COMPATIBILITY)
+============================================================
+
+Law DQ‑1 — Defect Does Not Commute with Quotient
+    In general, D(Q(x)) is undefined or meaningless.
+
+Semantic constraint:
+- D is defined on C (raw/resolved configurations),
+  not on C/K (identity classes).
+
+Compatibility law:
+    Q depends only on K, not on D:
+        Q(x) = Q(y) ⇔ K(x) = K(y)
+    regardless of D(x), D(y).
+
+Meaning:
+- Defect and quotient live on different semantic domains.
+- They do not commute, but they are **compatible** via K.
+
+
+============================================================
+5. DEFECT–HIERARCHY COMMUTATIVITY (AT SEMANTIC LEVEL)
+============================================================
+
+Law DH‑1 — Hierarchy Ignores Defect
+    H(Q(D(x))) = H(Q(x))
+
+Semantic reading:
+- Defect evaluation does not change identity class.
+- Hierarchy depends only on identity, not on defect.
+
+Since Q(D(x)) is interpreted as “identity of x after defect
+evaluation” but identity is determined solely by K, we have:
+
+    Q(D(x)) = Q(x)
+    ⇒ H(Q(D(x))) = H(Q(x))
+
+Thus:
+- At the semantic level, H ∘ Q ∘ D = H ∘ Q.
+
+
+============================================================
+6. KERNEL–DEFECT COMPATIBILITY
+============================================================
+
+Law KD‑1 — Defect Monotonicity under Kernel
+    D(K(x)) ≤ D(x)
+
+Semantic reading:
+- Applying K reduces or preserves residual tension.
+- K and D do not commute, but they are **order‑compatible**.
+
+Order‑compatibility law:
+    For all x:
+        D(K(x)) ≤ D(x)
+    ⇒ K is contractive with respect to the defect order.
+
+
+============================================================
+7. GLOBAL COMMUTATIVITY SUMMARY (PIPELINE)
+============================================================
+
+At the semantic level, the following equalities hold:
+
+(1) Q ∘ K = Q
+(2) H ∘ Q ∘ K = H ∘ Q
+(3) H ∘ Q ∘ D = H ∘ Q
+(4) D ∘ K ≤ D   (order‑compatibility, not equality)
+
+Thus, the **semantically stable pipeline** is:
+
+    H ∘ Q ∘ D ∘ K  ≡  H ∘ Q ∘ K  ≡  H ∘ Q
+
+Meaning:
+- Defect and kernel are “internal” to the tension process.
+- Identity and hierarchy are “external” and commute over
+  different ways of reaching canonical form.
+
+
+============================================================
+8. ONE-LINE SUMMARY
+============================================================
+CART semantic commutativity laws state that quotient and hierarchy
+are invariant under kernel and defect, while kernel and defect are
+order‑compatible but non‑commutative—yielding a stable meaning
+pipeline where identity and depth commute over resolution.
