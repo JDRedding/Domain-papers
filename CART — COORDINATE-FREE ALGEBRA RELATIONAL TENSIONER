@@ -1,0 +1,317 @@
+CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
+=====================================================
+1. OVERVIEW
+-----------
+CART is a coordinate-free algebra that:
+
+- Resolves relational tension
+- Measures residual tension
+- Forms identity classes
+- Organizes them by depth of relational entanglement
+
+CART is defined as a five-component algebraic substrate:
+
+    CART = (C, K, D, C/K, H)
+
+Where:
+
+- C   = raw relational field
+- K   = tension-resolution operator
+- D   = residual tension
+- C/K = identity formation
+- H   = relational entanglement hierarchy
+
+
+2. FORMAL COMPONENT DEFINITIONS
+-------------------------------
+
+2.1 Carrier (C) — Raw Relational Field
+--------------------------------------
+- C is a set of relational configurations.
+- No coordinates.
+- No geometry.
+- No metric.
+- No embedding.
+- Pure relational potential.
+
+Interpretation:
+- The Carrier is the unresolved relational field.
+- It contains all possible relational configurations before consistency is enforced.
+- It is the pre-resolved relational universe.
+
+
+2.2 Kernel (K) — Tension-Resolution Operator
+--------------------------------------------
+- K : C → C.
+- Idempotent: K(K(x)) = K(x) for all x ∈ C.
+- Contractive (informal): K(x) is structurally closer to an ideal or canonical form.
+- Defines canonical representatives of relational configurations.
+
+Relational interpretation:
+- The Kernel resolves relational tension by enforcing:
+  - consistency
+  - coherence
+  - canonical structure
+- Idempotent: once resolved, stays resolved.
+- Contractive: reduces relational inconsistency.
+- Canonical: produces the “resolved identity” of a configuration.
+- It is the relational stabilizer.
+
+
+2.3 Defect (D) — Residual Relational Tension
+--------------------------------------------
+- D : C → Δ, where Δ is a defect space.
+- D(x) = δ(x, K(x)) for some deviation metric or measure δ.
+- D(x) quantifies inconsistency between x and K(x).
+- D(x) may be scalar, vector, or structured, depending on δ.
+
+Relational interpretation:
+- Defect is the amount of unresolved relational tension after kernel resolution.
+- It measures:
+  - mismatch
+  - inconsistency
+  - deviation
+  - unresolved relational load
+- It defines how “off-pattern” a configuration is.
+- It is the relational deviation measure.
+
+
+2.4 Admissibility Quotient (C/K) — Identity Formation
+------------------------------------------------------
+- Define equivalence relation ~ on C:
+  
+      x ~ y  iff  K(x) = K(y)
+
+- Quotient space: C / K = set of equivalence classes [x].
+- Each equivalence class [x] is a relational identity bundle:
+  - all states that resolve to the same canonical relational pattern
+  - all states with the same “resolved identity”
+- Admissibility constraint:
+  
+      D(x) ≤ ε
+
+  for some threshold ε.
+- Admissible states: those whose defect is within allowed bounds.
+
+Relational interpretation:
+- The quotient forms identity bundles via kernel equality.
+- All configurations that resolve to the same identity belong to the same class.
+- This is the identity-formation layer.
+
+
+2.5 Hierarchy (H) — Depth of Relational Entanglement
+-----------------------------------------------------
+- H is an ultrametric hierarchy over admissible classes in C/K.
+- Tiers: Tier1, Tier2, Tier3 (ordinal depth levels).
+- Ultrametric distance u([x], [y]) satisfies:
+
+      u([x], [z]) ≤ max(u([x], [y]), u([y], [z]))
+
+- Tier1: shallow structure, low complexity.
+- Tier2: intermediate structure, medium complexity.
+- Tier3: deep structure, high complexity.
+
+Relational interpretation:
+- Hierarchy tiers correspond to depth of relational entanglement:
+  - Tier-1: shallow relational structure
+  - Tier-2: intermediate relational structure
+  - Tier-3: deep relational structure
+- This is the relational depth geometry, but still coordinate-free.
+- Hierarchy measures how deeply entangled a relational identity is.
+
+
+3. CART SUMMARY
+---------------
+One-line definition:
+
+    CART is a coordinate-free algebra that resolves relational tension,
+    measures residual tension, forms identity classes, and organizes them
+    by depth of relational entanglement.
+
+Formal tuple:
+
+    CART = (C, K, D, C/K, H)
+
+- C   : carrier (raw relational field)
+- K   : kernel (tension-resolution operator)
+- D   : defect (residual relational tension)
+- C/K : quotient (identity formation)
+- H   : hierarchy (relational entanglement depth)
+
+
+4. CONDENSED GLOSSARY
+---------------------
+
+Carrier (C)
+-----------
+- The base set of representable relational states.
+- Discrete algebraic domain on which all operators act.
+- Raw relational field; pre-resolved relational universe.
+
+Kernel (K)
+----------
+- A projection from C to C enforcing structural consistency.
+- Idempotent and contractive; defines canonical forms.
+- Tension-resolution operator; relational stabilizer.
+
+Defect (D)
+----------
+- A function measuring deviation between a state and its kernel image.
+- Used to quantify inconsistency or error.
+- Residual relational tension after resolution.
+
+Defect Space (Δ)
+----------------
+- The codomain of D.
+- Contains defect values (scalar, vector, or structured).
+
+Admissibility Quotient (C/K)
+----------------------------
+- Equivalence classes of states under kernel equality.
+- Represents structurally identical states.
+- Identity-formation layer; admissibility determined by defect thresholds.
+
+Equivalence Class [x]
+---------------------
+- The set of all y ∈ C such that K(y) = K(x).
+- A single node in the quotient space; a relational identity bundle.
+
+Hierarchy (H)
+-------------
+- An ultrametric organization of admissible classes.
+- Encodes structural depth and neighborhood relations.
+- Measures relational entanglement depth.
+
+Tier1 / Tier2 / Tier3
+---------------------
+- Ordinal hierarchy levels in H.
+- Tier1: shallow; Tier2: intermediate; Tier3: deep relational structure.
+
+Ultrametric Distance (u)
+------------------------
+- A distance function on classes satisfying:
+  
+      u(a, c) ≤ max(u(a, b), u(b, c))
+
+- Used to define hierarchical depth and clustering.
+
+Admissible State
+----------------
+- A state x ∈ C such that D(x) ≤ ε for a chosen threshold ε.
+- Considered structurally acceptable within the substrate.
+
+Substrate
+---------
+- The tuple (C, K, D, C/K, H).
+- The complete mathematical structure, independent of implementation.
+
+
+5. UML CLASS DIAGRAM (TEXT OVERVIEW)
+------------------------------------
+
++------------------+
+|     Carrier      |
++------------------+
+| - configurations |
+| - representation |
++------------------+
+
+          |
+          v
+
++------------------+
+|      Kernel      |
++------------------+
+| - idempotent     |
+| - contractive    |
++------------------+
+| + apply(x)       |
+| + resolve(x)     |
++------------------+
+
+          |
+          v
+
++------------------+
+|      Defect      |
++------------------+
+| - defectValue    |
++------------------+
+| + compute(x,Kx)  |
+| + evaluate()     |
++------------------+
+
+          |
+          v
+
++---------------------------+
+|   AdmissibilityQuotient  |
++---------------------------+
+| - classes                |
++---------------------------+
+| + classOf(x)             |
+| + isAdmissible(x)        |
++---------------------------+
+
+          |
+          v
+
++---------------------------+
+|      Hierarchy           |
++---------------------------+
+| - tier: {Tier1,Tier2,Tier3} |
++---------------------------+
+| + depthOf(class)          |
+| + neighbors(class)        |
++---------------------------+
+
+
+6. PLANTUML REPRESENTATION (OPTIONAL)
+-------------------------------------
+
+@startuml
+
+class Carrier {
+    - configurations
+    - representation
+}
+
+class Kernel {
+    - idempotent
+    - contractive
+    + apply(x)
+    + resolve(x)
+}
+
+class Defect {
+    - defectValue
+    + compute(x, Kx)
+    + evaluate()
+}
+
+class AdmissibilityQuotient {
+    - classes
+    + classOf(x)
+    + isAdmissible(x)
+}
+
+class Hierarchy {
+    - tier : Tier
+    + depthOf(class)
+    + neighbors(class)
+}
+
+enum Tier {
+    Tier1
+    Tier2
+    Tier3
+}
+
+Carrier --> Kernel
+Kernel --> Defect
+Defect --> AdmissibilityQuotient
+AdmissibilityQuotient --> Hierarchy
+Hierarchy --> Tier
+
+@enduml
+
