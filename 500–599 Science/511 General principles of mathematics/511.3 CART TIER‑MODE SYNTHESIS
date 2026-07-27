@@ -1,0 +1,167 @@
+511.3 CART TIER‑MODE SYNTHESIS
+==============================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document synthesizes the CART relational modes (R0–R4)
+with the CART hierarchy tiers (Tier‑1, Tier‑2, Tier‑3),
+producing a unified vertical structure of relational tension.
+
+
+============================================================
+0. PURPOSE OF SYNTHESIS
+============================================================
+Relational modes describe *how* a configuration is viewed.
+Hierarchy tiers describe *how deep* its identity sits.
+
+This synthesis binds them:
+
+    Mode R0 → Tier‑0 (pre‑tier)
+    Mode R1 → Tier‑0 (pre‑tier)
+    Mode R2 → Tier‑0 (pre‑tier)
+    Mode R3 → Tier‑1/2/3 (identity tier)
+    Mode R4 → Tier‑1/2/3 (hierarchy tier)
+
+Only identity and hierarchy modes (R3, R4) admit tier depth.
+Raw, resolution, and defect modes (R0–R2) are pre‑tier states.
+
+
+============================================================
+1. RELATIONAL MODES (R0–R4)
+============================================================
+
+R0 Raw Mode      → C
+R1 Resolution    → K
+R2 Defect        → D
+R3 Identity      → C/K
+R4 Hierarchy     → H
+
+Modes R0–R2 describe *tension evolution*.
+Modes R3–R4 describe *identity depth*.
+
+
+============================================================
+2. HIERARCHY TIERS (T1–T3)
+============================================================
+
+Tier‑1: Shallow identity  
+Tier‑2: Intermediate identity  
+Tier‑3: Deep identity  
+
+Tiers apply only to identity classes [x] and their hierarchical depth.
+
+
+============================================================
+3. MODE–TIER ALIGNMENT TABLE
+============================================================
+
+Mode   | Component | Description                     | Tier Applicability
+-------+-----------+---------------------------------+--------------------
+R0     | C         | raw relational field            | Tier‑0 (none)
+R1     | K         | resolution / canonicalization   | Tier‑0 (none)
+R2     | D         | residual tension measurement    | Tier‑0 (none)
+R3     | C/K       | identity formation              | Tier‑1/2/3
+R4     | H         | entanglement depth              | Tier‑1/2/3
+
+Interpretation:
+- Modes R0–R2 are *pre‑tier* relational states.
+- Modes R3–R4 are *tiered* relational identities.
+
+
+============================================================
+4. SYNTHESIS: RELATIONAL EVOLUTION → TIER DEPTH
+============================================================
+
+The full relational evolution pipeline:
+
+    R0 Raw
+        ↓
+    R1 Resolution
+        ↓
+    R2 Defect
+        ↓
+    R3 Identity
+        ↓
+    R4 Hierarchy
+
+Tier depth attaches at R3 and R4:
+
+    R3 Identity → Tier‑1/2/3
+    R4 Hierarchy → Tier‑1/2/3 (same identity, deeper interpretation)
+
+Thus:
+
+    R0–R2: tension evolution
+    R3–R4: identity depth
+
+
+============================================================
+5. TIER‑MODE SYNTHESIS MATRIX
+============================================================
+
+Mode | Tier | Meaning
+-----+------+---------------------------------------------------------
+R0   | 0    | Raw relational potential; no identity; no depth
+R1   | 0    | Canonicalization in progress; identity not yet formed
+R2   | 0    | Residual tension measured; identity not yet assigned
+R3   | 1    | Shallow identity; low entanglement
+R3   | 2    | Intermediate identity; moderate entanglement
+R3   | 3    | Deep identity; high entanglement
+R4   | 1    | Hierarchy confirms shallow identity depth
+R4   | 2    | Hierarchy confirms intermediate identity depth
+R4   | 3    | Hierarchy confirms deep identity depth
+
+Key insight:
+- R3 assigns identity.
+- R4 interprets identity depth.
+
+
+============================================================
+6. TIER‑MODE FLOW DIAGRAM (ASCII)
+============================================================
+
+Raw → Resolution → Defect → Identity → Hierarchy
+ |        |           |         |           |
+R0        R1          R2        R3          R4
+ |        |           |         |           |
+Tier‑0    Tier‑0      Tier‑0    Tier‑1/2/3  Tier‑1/2/3
+
+Identity formation (R3) is the “tier gate.”
+Hierarchy (R4) is the “tier interpreter.”
+
+
+============================================================
+7. TIER‑MODE SEMANTIC SYNTHESIS
+============================================================
+
+Tier‑1 (Shallow)
+----------------
+- Identity minimally entangled.
+- Few relational constraints.
+- Low ultrametric depth.
+- R3 and R4 both reflect shallow structure.
+
+Tier‑2 (Intermediate)
+---------------------
+- Identity moderately entangled.
+- Multiple relational constraints.
+- Medium ultrametric depth.
+- R3 and R4 reflect layered structure.
+
+Tier‑3 (Deep)
+-------------
+- Identity highly entangled.
+- Many relational constraints.
+- High ultrametric depth.
+- R3 and R4 reflect dense relational structure.
+
+
+============================================================
+8. ONE-LINE SYNTHESIS SUMMARY
+============================================================
+CART tier‑mode synthesis binds relational evolution (R0–R4) to identity
+depth (Tier‑1/2/3), showing how raw tension becomes resolved identity and
+how that identity acquires hierarchical entanglement.
