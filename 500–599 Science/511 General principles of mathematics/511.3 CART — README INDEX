@@ -1,0 +1,108 @@
+511.3 CART — README INDEX
+=========================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate-Free Algebra Relational Tensioner (CART)
+
+This README provides an index of all CART documents in the 511.3 section.
+Each file corresponds to a formal component of the CART substrate.
+
+
+------------------------------------------------------------
+CART CORE DOCUMENTS
+------------------------------------------------------------
+
+511.3 CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
+    The master overview of CART.
+    Defines the five-component substrate:
+        C  = Carrier (raw relational field)
+        K  = Kernel (tension-resolution operator)
+        D  = Defect (residual tension)
+        C/K = Quotient (identity formation)
+        H  = Hierarchy (relational entanglement depth)
+    Provides the canonical one-page specification.
+
+
+------------------------------------------------------------
+CART FORMAL FOUNDATIONS
+------------------------------------------------------------
+
+511.3 CART AXIOM SYSTEM
+    The complete axiom set governing:
+        - Carrier axioms
+        - Kernel axioms
+        - Defect axioms
+        - Quotient axioms
+        - Hierarchy axioms
+    Defines the substrate as a formal algebraic system.
+
+511.3 CART INFERENCE CALCULUS
+    The full inference system for CART.
+    Includes:
+        - resolution rules
+        - defect rules
+        - identity rules
+        - hierarchy rules
+        - composite inference patterns
+    Provides sequent-style reasoning over the substrate.
+
+511.3 CART OPERATOR ALGEBRA
+    Defines the algebra of operators:
+        Id, K, D, Q, H
+    Includes:
+        - operator laws
+        - composition laws
+        - fixed points
+        - canonical operator pipeline
+    Establishes how operators interact and compose.
+
+
+------------------------------------------------------------
+CART STRUCTURAL DECOMPOSITIONS
+------------------------------------------------------------
+
+511.3 CART RELATIONAL-MODE DECOMPOSITION
+    Decomposes CART into five relational modes:
+        R0 — Raw Mode (C)
+        R1 — Resolution Mode (K)
+        R2 — Defect Mode (D)
+        R3 — Identity Mode (C/K)
+        R4 — Hierarchy Mode (H)
+    Shows how the substrate expresses different relational perspectives.
+
+
+------------------------------------------------------------
+CART DIAGRAMS & REPRESENTATIONS
+------------------------------------------------------------
+
+511.3 CART DIAGRAM (PlantUML)
+    UML-style diagram of the CART substrate.
+    Includes:
+        - Carrier
+        - Kernel
+        - Defect
+        - Quotient
+        - Hierarchy
+        - Tier enumeration
+        - Ultrametric structure
+
+
+------------------------------------------------------------
+CART DIRECTORY STRUCTURE (SUMMARY)
+------------------------------------------------------------
+
+511.3 CART/
+    ├── 511.3 CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
+    ├── 511.3 CART AXIOM SYSTEM
+    ├── 511.3 CART INFERENCE CALCULUS
+    ├── 511.3 CART OPERATOR ALGEBRA
+    ├── 511.3 CART RELATIONAL-MODE DECOMPOSITION
+    └── 511.3 CART DIAGRAM (PlantUML)
+
+
+------------------------------------------------------------
+ONE-LINE SUMMARY
+------------------------------------------------------------
+The CART README index organizes all documents defining the coordinate-free
+algebra relational tensioner, including its axioms, inference calculus,
+operator algebra, relational modes, and structural diagrams.
