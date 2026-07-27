@@ -4,6 +4,8 @@ CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
 =====================================================
 CART Summary
 ---
+CART is the 0-dimensional quotient-completion of the UniMath/Coq identity system.
+
 CART (Coordinate-Free Algebra Relational Tensioner) is a mathematical framework 
 for resolving and organizing relational tension without using coordinates or 
 geometric embeddings. CART is a coordinate-free formal algebra—a theoretical 
