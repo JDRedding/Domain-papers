@@ -1,0 +1,51 @@
+AMPLITUDE MODULATION (AM) EQUATIONS 
+
+1. TIME-DOMAIN SIGNALS (TRANSMITTER)
+
+Carrier signal:
+  c(t) = Ac * cos(2*pi*fc*t)
+
+Modulating (message) signal:
+  m(t) = Am * cos(2*pi*fm*t)
+
+AM modulated signal:
+  s(t) = [Ac + m(t)] * cos(2*pi*fc*t)
+       = Ac * [1 + u * cos(2*pi*fm*t)] * cos(2*pi*fc*t)
+
+Modulation index:
+  u = Am / Ac          (0 < u <= 1 for no overmodulation)
+
+Expanded form (with sidebands):
+  s(t) = Ac * cos(2*pi*fc*t)
+       + (u*Ac)/2 * [ cos(2*pi*(fc+fm)*t) + cos(2*pi*(fc-fm)*t) ]
+
+2. FREQUENCY-DOMAIN REPRESENTATION
+
+- Carrier component at fc          with amplitude Ac
+- Upper sideband at (fc + fm)      with amplitude (u*Ac)/2
+- Lower sideband at (fc - fm)      with amplitude (u*Ac)/2
+
+Bandwidth of the AM signal:
+  B = 2 * fm
+
+3. POWER RELATIONS
+
+Total transmitted power:
+  Pt = Pc * (1 + u^2 / 2)
+
+where carrier power:
+  Pc = (Ac^2) / (2*R)     (for load R)
+
+Power in both sidebands:
+  P_SB = Pc * (u^2 / 2)
+
+4. RECEIVER SIDE (ENVELOPE DETECTION)
+
+Envelope of the AM signal:
+  A(t) = Ac * |1 + u * cos(2*pi*fm*t)|
+
+For u <= 1 this simplifies to:
+  A(t) = Ac * (1 + u * cos(2*pi*fm*t))
+
+After diode detection + low-pass filter (and DC blocking) the original message m(t) is recovered.
+
