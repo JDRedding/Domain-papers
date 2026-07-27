@@ -1,0 +1,63 @@
+@startuml
+title CART — Denotational Semantics Diagram
+
+' ============================================================
+'   SEMANTIC DOMAINS
+' ============================================================
+
+class "⟦C⟧  (Carrier Semantics)" as Csem {
+    Raw relational configurations
+    Unresolved relational potential
+}
+
+class "⟦K⟧  (Kernel Semantics)" as Ksem {
+    Resolution operator
+    Canonical relational pattern
+    Idempotent: ⟦K⟧∘⟦K⟧ = ⟦K⟧
+}
+
+class "⟦D⟧  (Defect Semantics)" as Dsem {
+    Residual tension measure
+    δ(x, ⟦K⟧(x))
+    Zero-defect identity
+}
+
+class "⟦C/K⟧  (Identity Semantics)" as Qsem {
+    Identity class formation
+    Collapse by kernel equality
+}
+
+class "⟦H⟧  (Hierarchy Semantics)" as Hsem {
+    Entanglement depth
+    Tier1 / Tier2 / Tier3
+    Ultrametric structure
+}
+
+' ============================================================
+'   SEMANTIC INTERPRETATION FLOW
+' ============================================================
+
+Csem --> Ksem : ⟦K⟧(x)\nResolution
+Ksem --> Dsem : ⟦D⟧(x)\nResidual tension
+Csem --> Qsem : ⟦C/K⟧(x)\nIdentity formation
+Qsem --> Hsem : ⟦H⟧([x])\nDepth assignment
+
+' ============================================================
+'   PIPELINE (COMPOSED SEMANTICS)
+' ============================================================
+
+class "⟦Eval_CART⟧" as Eval {
+    ⟦Eval_CART⟧(x) =
+        (⟦K⟧(x),
+         ⟦D⟧(x),
+         ⟦C/K⟧(x),
+         ⟦H⟧(⟦C/K⟧(x)))
+}
+
+Eval --> Csem : input x
+Eval --> Ksem : resolution
+Eval --> Dsem : defect
+Eval --> Qsem : identity
+Eval --> Hsem : hierarchy
+
+@enduml
