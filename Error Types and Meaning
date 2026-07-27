@@ -1,0 +1,30 @@
+Error Types and Meaning
+
+Core 
+A Type I error is rejecting a true null (false positive).
+A Type II error is failing to reject a false null (false negative).
+Power is the probability your test correctly detects the effect when it truly exists.
+
+Type I Error (False Positive)
+α = P(Reject H₀ | H₀ is true)
+
+Type II Error (False Negative)
+β = P(Fail to reject H₀ | Hₐ is true)
+  = P(Fail to reject H₀ | H₀ is false)
+
+Statistical Power
+Power = 1 - β
+      = P(Reject H₀ | Hₐ is true)
+
+How α, β, and Power Interact
+Lowering α (stricter threshold) usually increases β, reducing power.
+Increasing sample size reduces β, increasing power.
+Larger effect sizes increase power.
+Higher variance increases β, reducing power.
+
+Concept	Definition	          Probability Expression
+Type I Error	False positive	𝛼=𝑃(Reject 𝐻_0∣𝐻_0 true)
+Type II Error	False negative	𝛽=𝑃(Fail to reject 𝐻_0∣𝐻_𝑎 true)
+Power	True positive rate	    1−𝛽=𝑃(Reject 𝐻_0∣𝐻_𝑎 true)
+
+These trade-offs are the backbone of experimental design.
