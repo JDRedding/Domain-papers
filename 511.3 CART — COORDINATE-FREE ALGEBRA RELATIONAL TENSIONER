@@ -1,5 +1,43 @@
 CART — COORDINATE-FREE ALGEBRA RELATIONAL TENSIONER
+511 = General principles of mathematics
+511.3 — Mathematical logic (Symbolic logic)
 =====================================================
+CART Summary
+---
+CART (Coordinate-Free Algebra Relational Tensioner) is a mathematical framework 
+for resolving and organizing relational tension without using coordinates or 
+geometric embeddings. CART is a coordinate-free formal algebra—a theoretical 
+mathematical structure that doesn't rely on geometric embeddings or coordinates. 
+It's essentially a system of abstract relational algebra with logical 
+organization principles.
+
+Core Components
+---
+CART is defined as a 5-tuple: CART = (C, K, D, C/K, H)
+
+Carrier (C) — The raw relational field; all possible 
+relational configurations before resolution
+
+Kernel (K) — An idempotent operator that resolves tension by enforcing 
+consistency and producing canonical forms
+
+Defect (D) — Measures residual unresolved tension (deviation between a state 
+and its resolved form)
+
+Admissibility Quotient (C/K) — Forms identity bundles by grouping states 
+that resolve to the same canonical pattern; filters by a defect threshold
+
+Hierarchy (H) — An ultrametric organization of identity classes into three 
+tiers (Tier1=shallow, Tier2=intermediate, Tier3=deep) based on relational 
+entanglement depth
+
+---
+
+CART resolves relational tension through the kernel, quantifies what remains
+unresolved via defect, groups equivalent resolved states into identity classes, 
+and finally organizes those classes by structural complexity—all without relying 
+on coordinate systems or metrics.
+
 1. OVERVIEW
 -----------
 CART is a coordinate-free algebra that:
