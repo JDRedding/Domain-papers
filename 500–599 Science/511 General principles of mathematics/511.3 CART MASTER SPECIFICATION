@@ -1,0 +1,288 @@
+511.3 CART MASTER SPECIFICATION
+===============================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate-Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This master specification defines the complete structure of CART:
+its components, axioms, operator algebra, inference calculus,
+relational modes, and canonical diagrams.
+
+
+============================================================
+1. CART SUBSTRATE DEFINITION
+============================================================
+
+CART is a coordinate-free algebra defined as the 5-tuple:
+
+    CART = (C, K, D, C/K, H)
+
+Where:
+
+C   = Carrier (raw relational field)
+K   = Kernel (tension-resolution operator)
+D   = Defect (residual relational tension)
+C/K = Quotient (identity formation)
+H   = Hierarchy (relational entanglement depth)
+
+CART is non-geometric, non-coordinate, non-categorical, and purely relational.
+
+
+============================================================
+2. COMPONENT SPECIFICATIONS
+============================================================
+
+------------------------------------------------------------
+2.1 Carrier (C) — Raw Relational Field
+------------------------------------------------------------
+- C is a nonempty set of relational configurations.
+- No coordinates, geometry, metric, or embedding.
+- Pure relational potential.
+- Pre-resolution domain.
+
+Interpretation:
+    The unresolved relational field.
+
+
+------------------------------------------------------------
+2.2 Kernel (K) — Tension-Resolution Operator
+------------------------------------------------------------
+- K : C → C
+- Idempotent: K(K(x)) = K(x)
+- Contractive: D(K(x)) ≤ D(x)
+- Produces canonical representatives.
+
+Interpretation:
+    The relational stabilizer.
+
+
+------------------------------------------------------------
+2.3 Defect (D) — Residual Relational Tension
+------------------------------------------------------------
+- D : C → Δ
+- D(x) = δ(x, K(x))
+- D(x) = 0 ⇔ x = K(x)
+- Measures mismatch between raw and resolved states.
+
+Interpretation:
+    The relational deviation measure.
+
+
+------------------------------------------------------------
+2.4 Quotient (C/K) — Identity Formation
+------------------------------------------------------------
+- x ~ y ⇔ K(x) = K(y)
+- Identity class: [x] = { y | K(y) = K(x) }
+- Admissibility: D(x) ≤ ε
+
+Interpretation:
+    Relational identity bundles.
+
+
+------------------------------------------------------------
+2.5 Hierarchy (H) — Relational Entanglement Depth
+------------------------------------------------------------
+- H : C/K → {Tier1, Tier2, Tier3}
+- Ultrametric: u([x],[y])
+- u(A,C) ≤ max(u(A,B), u(B,C))
+
+Interpretation:
+    Depth of relational entanglement.
+
+
+============================================================
+3. AXIOM SYSTEM
+============================================================
+
+------------------------------------------------------------
+3.1 Carrier Axioms
+------------------------------------------------------------
+C1: C is nonempty.
+C2: C is coordinate-free.
+C3: C is closed under native operations.
+C4: No element is assumed canonical before K.
+
+
+------------------------------------------------------------
+3.2 Kernel Axioms
+------------------------------------------------------------
+K1: K is total.
+K2: K(K(x)) = K(x).
+K3: D(K(x)) ≤ D(x).
+K4: K(x) is canonical.
+K5: K(x) = x ⇔ x is resolved.
+
+
+------------------------------------------------------------
+3.3 Defect Axioms
+------------------------------------------------------------
+D1: D(x) = δ(x, K(x)).
+D2: D(x) = 0 ⇔ x = K(x).
+D3: D(K(x)) ≤ D(x).
+D4: D measures mismatch only.
+D5: D(x) ≥ 0.
+
+
+------------------------------------------------------------
+3.4 Quotient Axioms
+------------------------------------------------------------
+Q1: x ~ y ⇔ K(x) = K(y).
+Q2: ~ is an equivalence relation.
+Q3: C/K = set of identity classes.
+Q4: K(x) is canonical representative.
+Q5: x admissible ⇔ D(x) ≤ ε.
+Q6: [x] admissible ⇔ D(x) ≤ ε.
+
+
+------------------------------------------------------------
+3.5 Hierarchy Axioms
+------------------------------------------------------------
+H1: H assigns depth tiers.
+H2: Ultrametric inequality holds.
+H3: K(x)=K(y) ⇒ u([x],[y])=0.
+H4: Greater u ⇒ greater depth.
+H5: H is idempotent.
+H6: Depth encodes entanglement.
+
+
+============================================================
+4. OPERATOR ALGEBRA
+============================================================
+
+Operators:
+    Id, K, D, Q, H
+
+Composition laws:
+    KD(x) = D(K(x))
+    QK(x) = Q(x)
+    HQ(x) = H(Q(x))
+    HK(x) = H(Q(x))
+    HD(x) = H(Q(x))
+
+Canonical pipeline:
+    x → K → D → Q → H
+
+Fixed points:
+    K(x)=x, D(x)=0, Q(x)=[x], H([x])=tier.
+
+
+============================================================
+5. INFERENCE CALCULUS
+============================================================
+
+Resolution rules:
+    R-Intro: x ⊢ K(x)
+    R-Idempotent: K(K(x))=K(x)
+    R-Resolved: K(x)=x ⇒ x resolved
+
+Defect rules:
+    D-Def: D(x)=δ(x,K(x))
+    D-Zero: D(x)=0 ⇒ x=K(x)
+    D-Mono: D(K(x)) ≤ D(x)
+
+Identity rules:
+    Q-Equiv: K(x)=K(y) ⇒ x~y
+    Q-Class: [x]={y|K(y)=K(x)}
+    Q-Canon: K(x)∈[x]
+
+Hierarchy rules:
+    H-Ultra: ultrametric inequality
+    H-Tier: depth([x])∈{1,2,3}
+    H-Mono: u ordering ⇒ depth ordering
+
+Composite inference:
+    x → K(x) → D(x) → [x] → tier([x])
+
+
+============================================================
+6. RELATIONAL-MODE DECOMPOSITION
+============================================================
+
+R0 Raw Mode      → C
+R1 Resolution    → K
+R2 Defect        → D
+R3 Identity      → C/K
+R4 Hierarchy     → H
+
+Mode transitions:
+    R0 → R1 → R2 → R3 → R4
+
+Mode questions:
+    R0: What exists?
+    R1: What is its canonical form?
+    R2: How far from resolved?
+    R3: Who/what is it?
+    R4: How deep is it?
+
+
+============================================================
+7. CANONICAL CART DIAGRAM (ASCII UML)
+============================================================
+
++------------------+
+|     Carrier      |
++------------------+
+| raw relational   |
+| configurations   |
++------------------+
+
+          |
+          v
+
++------------------+
+|      Kernel      |
++------------------+
+| idempotent       |
+| contractive      |
++------------------+
+
+          |
+          v
+
++------------------+
+|      Defect      |
++------------------+
+| residual tension |
++------------------+
+
+          |
+          v
+
++---------------------------+
+|      Quotient (C/K)      |
++---------------------------+
+| identity classes         |
++---------------------------+
+
+          |
+          v
+
++---------------------------+
+|        Hierarchy         |
++---------------------------+
+| Tier1 / Tier2 / Tier3    |
++---------------------------+
+
+
+============================================================
+8. MASTER SUMMARY
+============================================================
+
+CART is a coordinate-free algebra that:
+- resolves relational tension (K),
+- measures residual tension (D),
+- forms identity classes (C/K),
+- and organizes them by entanglement depth (H),
+all over a raw relational field (C).
+
+It is the unified substrate for relational tension analysis
+in the 511.3 mathematical framework.
+
+
+============================================================
+9. ONE-LINE MASTER SPEC
+============================================================
+CART is the complete coordinate-free algebra of relational tension:
+resolution, deviation, identity, and entanglement depth.
