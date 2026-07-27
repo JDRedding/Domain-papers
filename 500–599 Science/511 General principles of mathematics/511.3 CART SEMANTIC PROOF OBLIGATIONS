@@ -1,0 +1,200 @@
+511.3 CART SEMANTIC PROOF OBLIGATIONS
+=====================================
+Domain-papers/500–599 Science
+511 General principles of mathematics
+511.3 Coordinate‑Free Algebra Relational Tensioner (CART)
+
+CART = (C, K, D, C/K, H)
+
+This document defines the **semantic proof obligations** required to ensure
+that any implementation, formalization, or interpretation of CART satisfies
+its intended meaning. These obligations guarantee that the semantics of
+resolution, defect, identity, and hierarchy remain stable, invariant, and
+coordinate‑free.
+
+
+============================================================
+0. PURPOSE OF PROOF OBLIGATIONS
+============================================================
+Proof obligations ensure:
+
+- semantic correctness  
+- operator consistency  
+- identity stability  
+- ultrametric validity  
+- relational‑mode coherence  
+- tier‑depth soundness  
+
+They are required for any formal semantics, computational model,
+or mathematical instantiation of CART.
+
+
+============================================================
+1. CARRIER SEMANTIC OBLIGATIONS (C)
+============================================================
+
+Obligation C‑1 — Non‑Geometric Domain
+    Prove: No element of C contains coordinates, metrics, or embeddings.
+
+Obligation C‑2 — Structural Closure
+    Prove: All native relational operations preserve membership in C.
+
+Obligation C‑3 — Pre‑Resolution Purity
+    Prove: No canonical identity is derivable without applying K.
+
+Obligation C‑4 — Relational Consistency
+    Prove: Every configuration in C is interpretable as a relational state.
+
+
+============================================================
+2. KERNEL SEMANTIC OBLIGATIONS (K)
+============================================================
+
+Obligation K‑1 — Idempotence
+    Prove: For all x ∈ C, K(K(x)) = K(x).
+
+Obligation K‑2 — Contractivity
+    Prove: D(K(x)) ≤ D(x).
+
+Obligation K‑3 — Canonicality
+    Prove: K(x) is the unique canonical representative of [x].
+
+Obligation K‑4 — Stability
+    Prove: K(x) = x ⇒ x is semantically resolved.
+
+Obligation K‑5 — Resolution Soundness
+    Prove: K removes relational inconsistency without introducing new structure.
+
+
+============================================================
+3. DEFECT SEMANTIC OBLIGATIONS (D)
+============================================================
+
+Obligation D‑1 — Defect Definition
+    Prove: D(x) = δ(x, K(x)) for a well‑defined mismatch function δ.
+
+Obligation D‑2 — Zero‑Defect Identity
+    Prove: D(x) = 0 ⇔ x = K(x).
+
+Obligation D‑3 — Monotonicity Under Resolution
+    Prove: D(K(x)) ≤ D(x).
+
+Obligation D‑4 — Non‑Negativity
+    Prove: D(x) ≥ 0 for all x ∈ C.
+
+Obligation D‑5 — Semantic Invariance
+    Prove: D depends only on relational mismatch, not coordinates or geometry.
+
+
+============================================================
+4. QUOTIENT SEMANTIC OBLIGATIONS (C/K)
+============================================================
+
+Obligation Q‑1 — Equivalence Relation
+    Prove: x ~ y ⇔ K(x) = K(y) is reflexive, symmetric, and transitive.
+
+Obligation Q‑2 — Identity Class Correctness
+    Prove: [x] = { y | K(y) = K(x) }.
+
+Obligation Q‑3 — Canonical Representative
+    Prove: K(x) ∈ [x] and is unique.
+
+Obligation Q‑4 — Quotient Idempotence
+    Prove: Q(Q(x)) = Q(x).
+
+Obligation Q‑5 — Admissibility Soundness
+    Prove: D(x) ≤ ε ⇒ [x] is admissible.
+
+Obligation Q‑6 — Defect Independence
+    Prove: Identity depends only on K, not on D.
+
+
+============================================================
+5. HIERARCHY SEMANTIC OBLIGATIONS (H)
+============================================================
+
+Obligation H‑1 — Ultrametric Validity
+    Prove: u satisfies u(A,C) ≤ max(u(A,B), u(B,C)).
+
+Obligation H‑2 — Zero‑Distance Identity
+    Prove: K(x) = K(y) ⇒ u([x],[y]) = 0.
+
+Obligation H‑3 — Tier Assignment Correctness
+    Prove: H([x]) ∈ {Tier1, Tier2, Tier3}.
+
+Obligation H‑4 — Depth Monotonicity
+    Prove: u([a],[b]) < u([a],[c]) ⇒ H([b]) ≤ H([c]).
+
+Obligation H‑5 — Hierarchy Idempotence
+    Prove: H(H([x])) = H([x]).
+
+Obligation H‑6 — Entanglement Semantics
+    Prove: Tier depth corresponds to relational entanglement, not geometry.
+
+
+============================================================
+6. PIPELINE SEMANTIC OBLIGATIONS
+============================================================
+
+Obligation P‑1 — Pipeline Correctness
+    Prove: x → K → D → Q → H is semantically well‑typed.
+
+Obligation P‑2 — Pipeline Stability
+    Prove: H(Q(D(K(x)))) = H(Q(K(x))).
+
+Obligation P‑3 — Pipeline Idempotence
+    Prove: Reapplying the pipeline yields identical results.
+
+Obligation P‑4 — Mode Alignment
+    Prove: R0→R1→R2→R3→R4 corresponds exactly to C→K→D→C/K→H.
+
+Obligation P‑5 — Tier Gate Correctness
+    Prove: Only R3 and R4 admit tier depth.
+
+
+============================================================
+7. RELATIONAL-MODE SEMANTIC OBLIGATIONS
+============================================================
+
+Obligation RM‑1 — Mode Soundness
+    Prove: Each mode ⟦R_i⟧ corresponds to its component’s semantics.
+
+Obligation RM‑2 — Mode Purity
+    Prove: R0–R2 contain no tier semantics.
+
+Obligation RM‑3 — Identity Mode Correctness
+    Prove: R3 = ⟦C/K⟧.
+
+Obligation RM‑4 — Hierarchy Mode Correctness
+    Prove: R4 = ⟦H⟧ ∘ ⟦C/K⟧.
+
+Obligation RM‑5 — Mode Transition Validity
+    Prove: R0→R1→R2→R3→R4 is monotonic in semantic refinement.
+
+
+============================================================
+8. GLOBAL SEMANTIC CONSISTENCY OBLIGATIONS
+============================================================
+
+Obligation G‑1 — Coordinate‑Free Guarantee
+    Prove: No semantic interpretation introduces coordinates.
+
+Obligation G‑2 — Operator Coherence
+    Prove: All operators commute with semantic interpretation.
+
+Obligation G‑3 — Identity Preservation
+    Prove: If K(x)=K(y), all semantic interpretations treat x and y identically.
+
+Obligation G‑4 — Depth Preservation
+    Prove: H(Q(x)) = H(Q(K(x))).
+
+Obligation G‑5 — Semantic Completeness
+    Prove: Every configuration has a well‑defined semantic pipeline result.
+
+
+============================================================
+9. ONE-LINE SUMMARY
+============================================================
+CART semantic proof obligations ensure that resolution, defect, identity,
+and hierarchy behave exactly as intended in every formal, computational,
+or mathematical interpretation of the coordinate‑free relational substrate.
