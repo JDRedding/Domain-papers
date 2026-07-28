@@ -1,3 +1,7 @@
+The pillars note contrasts standard category-theory and type-theory concepts with an alternative "simple ontology" in which identity is canonical (no paths, no higher structure). It argues that by changing the ontology of identity you can eliminate ∞-groupoids, universe ladders, coherence laws, complex fibrations, and recursion constraints — producing a finite, collapsed categorical universe where morphisms reduce to canonicalization.
+
+Rather than “fixing” category or type theory piecemeal, change the underlying ontology of identity so that infinite higher structures cannot arise. The result is a finite categorical universe with dramatically simplified semantics.
+
 ## 🜁 **Categorical objects**  
 A categorical object is simply a thing you can talk about abstractly, without needing coordinates or internal representation.
 
