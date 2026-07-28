@@ -1,0 +1,27 @@
+EVAL(E) → LEGITIMACY SCORE (0–10)
+============================================================
+
+Raw Evaluation Function:
+    Eval(E) =
+        α * exp(-|M|)
+      + β * cos(F)
+      + γ * sin^2(M̄)
+      + δ * F̄
+
+Normalization:
+    N(E) = ( Eval(E) - Eval_min ) / ( Eval_max - Eval_min )
+
+Legitimacy Score:
+    L(E) = 10 * N(E)
+
+Star Mapping:
+    0–2   → ★☆☆☆☆
+    2–4   → ★★☆☆☆
+    4–6   → ★★★☆☆
+    6–8   → ★★★★☆
+    8–10  → ★★★★★
+
+Output:
+    L(E) ∈ [0 , 10]
+
+============================================================
