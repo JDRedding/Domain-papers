@@ -1,0 +1,321 @@
+UniMath
+005.1 Programming‑Languages
+510 Mathematical‑Logic proof‑assistant material
+============================================================
+UniMath is a formalized‑mathematics library built on the Coq
+proof assistant, grounded in univalent foundations and 
+homotopy type theory (HoTT). It provides a constructive, 
+equivalence‑centric environment for developing machine‑
+verified mathematics with strict foundational discipline.
+
+UniMath — Univalent Foundations Library for Coq
+
+CLASS
+Univalent Foundations / Homotopy Type Theory (HoTT)
+
+SHAPE
+Equivalence‑centric, intensional, constructive, categorical.
+
+KEY FEATURES
+
+Univalent
+: equality behaves like equivalence; structures identified 
+  up to iso.
+Constructive
+: proofs correspond to programs; no classical axioms.
+Intensional
+: identity types reflect computational structure.
+Categorical
+: category theory is the backbone of most constructions.
+Modular
+: library split into coherent packages with strict 
+  boundaries.
+Total
+: proofs and constructions must be computationally 
+  meaningful.
+
+STRENGTHS
+
+Strong categorical infrastructure.
+Clean constructive foundations.
+Machine‑checked mathematics.
+Modular library design.
+Ideal for equivalence‑respecting mathematics.
+Supports large‑scale formalization projects.
+
+============================================================
+UNIVALENT FOUNDATIONS
+
+Univalence: equivalences between types are equalities.
+This allows mathematics to be developed up to isomorphism
+rather than up to strict syntactic equality.
+
+Equality = equivalence.
+Structures identified up to iso.
+Eliminates many extensionality headaches.
+Central axiom of UniMath.
+
+Consequences:
+  Category theory becomes natural.
+  Algebraic structures behave well under equivalence.
+  Proofs become modular and transportable.
+
+============================================================
+CONSTRUCTIVE MATHEMATICS
+
+UniMath is fully constructive:
+No excluded middle.
+No choice principles unless explicitly added.
+Proofs correspond to computational content.
+All constructions must be executable.
+
+This aligns UniMath with intuitionistic logic and 
+computational semantics.
+
+============================================================
+CATEGORY THEORY CORE
+
+UniMath’s largest and most mature component is its category 
+theory library.
+
+Categories, functors, natural transformations.
+Limits, colimits, adjunctions, monads.
+Higher categorical structures.
+Constructive versions of classical results.
+
+Category theory is not an add‑on — it is the structural
+backbone of UniMath.
+
+============================================================
+MODULAR LIBRARY DESIGN
+
+Packages include:
+
+Foundations
+MoreFoundations
+CategoryTheory
+Algebra
+NumberSystems
+Topology
+Combinatorics
+K-theory (experimental)
+
+Each package is designed to be independent and composable.
+
+============================================================
+INTENSIONAL TYPE THEORY
+
+UniMath inherits Coq’s intensional equality:
+Identity types reflect computation.
+Extensionality must be added explicitly.
+Univalence mitigates intensional friction but does not 
+eliminate it.
+
+This shapes how equality, equivalence, and transport behave.
+
+============================================================
+COQ‑BASED PROOF DEVELOPMENT
+
+UniMath uses Coq as its proof engine:
+
+  Tactics for constructive reasoning.
+  Strict termination and definitional equality.
+  Proofs are machine‑checked.
+
+No general dependent pattern matching (restricted for safety).
+
+============================================================
+COMMON USE CASES
+
+Formalization of category theory.
+Constructive algebra and number systems.
+Homotopy‑type‑theoretic mathematics.
+Machine‑verified proofs.
+Research in univalent foundations.
+
+Development of equivalence‑respecting mathematical 
+frameworks.
+
+============================================================
+BASIC EXAMPLE
+
+A tiny UniMath‑style snippet (Coq):
+
+---
+Require Import UniMath.Foundations.All.
+
+Definition nat_plus (m n : nat) : nat := m + n.
+
+Lemma nat_plus_comm (m n : nat) :
+  nat_plus m n = nat_plus n m.
+Proof.
+  apply Nat.add_comm.
+Qed.
+---
+
+This is trivial, but illustrates the UniMath style:
+
+  explicit imports,
+  constructive definitions,
+
+proofs via Coq’s intensional equality.
+
+============================================================
+STRUCTURAL & PHILOSOPHICAL LIMITS
+
+UniMath is powerful, but its foundational shape is not 
+neutral. It inherits deep structural constraints from:
+
+  intensional type theory
+  constructive logic
+  univalence
+  categorical primacy
+  Coq’s termination discipline
+
+These shape what mathematics feels natural — and what feels 
+distorted.
+
+EQUIVALENCE‑CENTRIC FOUNDATIONS
+UniMath assumes:
+
+  equivalence is fundamental
+  equality is intensional
+  structures are identified up to iso
+  transport is central
+
+Consequences:
+
+  extensional equality is non‑primitive
+  tuple‑heavy mathematics becomes awkward
+  reasoning must be encoded categorically
+
+RELATIONS ARE NON‑PRIMITIVE
+Relations are encoded as:
+
+  predicates
+  dependent functions
+  categorical morphisms
+
+This makes:
+
+  equivalence relations
+  partial orders
+  semantics
+  multi‑agent systems
+  graph theory
+
+feel heavier than in relational foundations.
+
+TUPLES ARE SECOND‑CLASS
+UniMath uses:
+
+  Σ‑types
+  records
+  dependent pairs
+
+But tuples are not primitive:
+
+  multi‑arity structures become nested
+  projections become verbose
+  constraints become deeply dependent
+
+INTENSIONAL EQUALITY LIMITS EXTENSIONAL REASONING
+Even with univalence:
+
+  extensional equality is not default
+  proofs require transport machinery
+  identical structures may not be equal definitionally
+
+This is a core friction point.
+
+TOTALITY & CONSTRUCTIVITY SHAPE EXPRESSIVENESS
+Because UniMath is constructive:
+
+  partiality is disallowed
+  classical reasoning must be encoded
+  some theorems become unprovable
+  some structures become unnatural to encode
+
+This is foundational, not incidental.
+
+PROOFS CAN BE BRITTLE
+Because everything is encoded via:
+
+  dependent types
+  equivalences
+  transports
+  categorical morphisms
+
+Small changes can break large proof chains.
+
+NOT IDEAL FOR SEMANTIC DOMAINS
+UniMath is awkward for:
+
+  operational semantics
+  denotational semantics
+  multi‑agent systems
+  graph theory
+  database theory
+  constraint systems
+
+These domains want:
+
+  primitive tuples
+  extensional equality
+  partiality
+  multi‑arity constructs
+  
+UniMath’s foundations resist these.
+
+PHILOSOPHICAL MISALIGNMENT
+
+UniMath assumes:
+
+  equivalence is primary
+  equality is intensional
+  computation is constructive
+  category theory is central
+  termination is mandatory
+
+But many mathematical domains assume:
+
+  extensional equality
+  primitive tuples
+
+============================================================
+SUMMARY
+
+UniMath is a powerful, rigorous environment for:
+
+  constructive mathematics
+  category theory
+  univalent foundations
+  homotopy type theory
+  machine‑verified proofs
+
+Its strengths come from:
+
+  equivalence‑centric foundations
+  categorical structure
+  constructive logic
+  modular library design
+
+Its limitations come from:
+
+  intensional equality
+  lack of primitive relations
+  tuple‑secondary foundations
+  constructive totality
+  categorical primacy
+
+UniMath shape is univalent, constructive, intensional, and 
+categorical. This shape is powerful for some domains and 
+limiting for others.
+
+============================================================
+WEBSITES
+
+https://github.com/UniMath/UniMath  
+https://unimath.github.io/UniMath/  
+https://homotopytypetheory.org/  
+https://voevodsky.github.io/  
