@@ -10,8 +10,31 @@ developers to write programs whose correctness can be
 formally proven inside the Agda system. Below is a detailed 
 description of its aspects.
 
+Agda — Dependently Typed Functional Language & Proof System
+
+CLASS
+    Constructive Type Theory / Dyadic Function Calculus
+
+SHAPE
+    Dyadic, function‑centric, intensional, total.
+
  KEY FEATURES
 ------------------------------------------------------------
+- Dyadic: reasoning is expressed through unary/binary functions.
+- Constructive: proofs must be computational; existence is explicit.
+- Intensional: equality is based on computation, not extensional form.
+- Total: all functions must terminate; partiality is disallowed.
+- Non‑relational: relations are encoded indirectly as predicates.
+- Tuple‑secondary: tuples exist only through Σ‑types and records
+
+STRENGTHS
+------------------------------------------------------------
+- Precise dependent types.
+- Correct‑by‑construction programming.
+- Interactive proof development.
+- Strong termination guarantees.
+- Clean inductive definitions.
+- Ideal for constructive mathematics.
 
 1. DEPENDENT TYPES
 Dependently Typed: Agda allows types to depend on values. 
@@ -88,7 +111,7 @@ valid inputs and outputs enforced at compile time.
 - Exploration of dependent types.
 - Designing APIs with strong compile-time guarantees.
 
- BASIC EXAMPLE
+BASIC EXAMPLE
 ------------------------------------------------------------
 Example
 Here is a simple example of defining natural numbers and 
@@ -279,6 +302,11 @@ It is its shape:
 These commitments make Agda powerful for certain domains
 but fundamentally limited for semantic, or multi-entity 
 mathematics.
+
+Agda is not wrong, but it is shaped. Its shape is dyadic,
+constructive, and intensional. This shape is powerful for 
+certain domains and fundamentally limiting for others — 
+especially tuple-based or extensional mathematics.
 ============================================================
 
 WEBSITES
