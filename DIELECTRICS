@@ -163,3 +163,148 @@ Energy density under fixed V vs fixed Q:
   - Capacitor designers always think in fixed-V terms.
 
 =====================================================================
+MODELING DIELECTRICS IN PURE DATA (Pd)
+FULL FRAMEWORK
+=====================================================================
+
+OVERVIEW
+---------------------------------------------------------------------
+Pure Data can model dielectrics because:
+  - Pd handles continuous-time signals (E-fields, D-fields).
+  - Pd supports stateful processes (polarization memory).
+  - Pd supports linear and nonlinear operators (κ, χ_e, hysteresis).
+  - Pd supports modular abstractions (each polarization mechanism).
+  - Pd supports feedback loops (ferroelectric behavior, relaxation).
+
+We treat Pd signals as "fields" and Pd objects as "operators."
+
+1. CORE VARIABLES AS Pd SIGNALS
+---------------------------------------------------------------------
+E(t)      Electric field            → audio-rate signal
+P(t)      Polarization              → audio-rate signal with memory
+D(t)      Displacement field        → derived signal
+κ         Relative permittivity     → control-rate parameter
+χ_e       Susceptibility            → control-rate parameter
+ε₀        Vacuum permittivity       → constant (control-rate)
+ε         Absolute permittivity     → control-rate parameter
+
+Voltage V(t) and charge Q(t) can also be Pd signals.
+
+2. BASIC LINEAR DIELECTRIC MODEL IN Pd
+---------------------------------------------------------------------
+Given:
+  P(t) = ε₀ * (κ - 1) * E(t)
+  D(t) = ε₀ * E(t) + P(t)
+       = κ * ε₀ * E(t)
+
+Pd implementation:
+  [E~] →[*~ κ]→[*~ ε₀]→[D~]
+
+Polarization path:
+  [E~]→[*~ (κ - 1)]→[*~ ε₀]→[P~]
+
+These can be abstractions:
+  dielectric.pd
+  polarization.pd
+  displacement.pd
+
+3. FREQUENCY-DEPENDENT PERMITTIVITY IN Pd
+---------------------------------------------------------------------
+Real materials have:
+  ε(ω) = ε'(ω) - j ε''(ω)
+
+Pd implementation:
+  - Use filters to model relaxation.
+  - Use complex operators via paired signals (real/imag).
+
+Debye relaxation:
+  P(t) + τ dP/dt = ε₀(κ - 1)E(t)
+
+Pd patch:
+  [E~]
+    |
+  [lop~ cutoff = 1/τ] → gives P(t)
+
+Lorentz oscillator:
+  d²P/dt² + γ dP/dt + ω₀² P = α E
+
+Pd patch:
+  [E~]→[bp~ ω₀ γ]→[*~ α]→[P~]
+
+4. SPACE-CHARGE POLARIZATION IN Pd
+---------------------------------------------------------------------
+Space-charge = slow accumulation at boundaries.
+
+Pd implementation:
+  - Use integrators.
+  - Use very low-frequency filters.
+
+Patch:
+  [E~]→[lop~ 0.1 Hz]→[P_sc~]
+
+5. FERROELECTRIC (NONLINEAR) MODEL IN Pd
+---------------------------------------------------------------------
+Ferroelectrics have hysteresis:
+  P = P_s * tanh(E/E_c)
+
+Pd implementation:
+  [E~]→[/~ E_c]→[tanh~]→[*~ P_s]→[P~]
+
+Add memory via feedback:
+  [P~]→[delwrite~]→[delread~]→[mix]→[P~]
+
+6. CAPACITOR MODEL IN Pd
+---------------------------------------------------------------------
+Capacitance:
+  C = κ ε₀ (A/d)
+
+Voltage-charge relation:
+  Q(t) = C * V(t)
+
+Pd patch:
+  [V~]→[*~ C]→[Q~]
+
+Energy:
+  U(t) = (1/2) C V(t)²
+
+Pd patch:
+  [V~]→[*~ V]→[*~ (C/2)]→[U~]
+
+7. FULL DIELECTRIC BLOCK IN Pd
+---------------------------------------------------------------------
+
+             +------------------------------+
+             |        DIELECTRIC BLOCK      |
+[E~]-------->| polarization mechanisms       |
+             |   electronic: [bp~]          |
+             |   ionic:      [bp~]          |
+             |   dipolar:    [lop~]         |
+             |   space-charge:[lop~ slow]   |
+             +------------------------------+
+                       |
+                       v
+                [sum of P~]
+                       |
+                       v
+             +------------------------------+
+             |   D = ε₀E + P                |
+             +------------------------------+
+                       |
+                       v
+             +------------------------------+
+             |   capacitor model            |
+             |   Q = C V                    |
+             |   U = 1/2 C V²               |
+             +------------------------------+
+
+8. WHAT CAN DO IN Pd WITH THIS MODEL
+---------------------------------------------------------------------
+- Simulate dielectric relaxation.
+- Visualize polarization vs field.
+- Model capacitor charging with real dielectric physics.
+- Build ferroelectric hysteresis loops.
+- Create audio-rate "materials" with dielectric-like responses.
+- Build modular dielectric abstractions for reuse.
+
+=====================================================================
+
