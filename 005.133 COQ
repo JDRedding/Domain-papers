@@ -1,5 +1,7 @@
 
 COQ
+005.133 programming languages / software tools
+511.36 mathematical logic / proof theory
 ============================================================
 Coq — Interactive Theorem Prover & Formal Verification System
 
@@ -34,7 +36,37 @@ FOUNDATIONAL CHARACTER
 - Tactic‑layered
   : proofs are built through meta‑level scripts.
 
+CIC (Calculus of Inductive Constructions)
 ------------------------------------------------------------
+CIC is a type theory that combines higher-order logic with 
+dependent types.
+
+It supports constructive proofs, meaning all proofs 
+correspond to explicit constructions, which aligns with 
+the Curry-Howard correspondence: proofs are programs and 
+propositions are types.
+
+Key features include:
+Inductive types (e.g., natural numbers, lists, trees).
+Dependent function types (Π-types), which allow function
+ types to depend on values.
+Rich type hierarchy, enabling formal verified computation 
+ alongside proofs.
+
+Gallina
+------------------------------------------------------------
+Gallina is the specification language and term language of 
+certain proof assistants built on the CIC.
+
+In Gallina, can:
+    Define functions and data types.
+    State theorems.
+    Write proof scripts interactively to build checked 
+     proofs.
+
+Gallina is purely functional and strongly typed, with no 
+side effects, for formal reasoning.
+
 STRENGTHS
 ------------------------------------------------------------
 - Powerful tactic system (auto, lia, omega, rewrite, etc.).
@@ -44,7 +76,6 @@ STRENGTHS
 - Strong support for inductive types and formal mathematics.
 - Mature tooling (CoqIDE, Proof General, VSCode extensions).
 
-------------------------------------------------------------
 LIMITATIONS (STRUCTURAL)
 ------------------------------------------------------------
 1. Dyadic Foundations (Masked by Tactics)
@@ -79,7 +110,6 @@ LIMITATIONS (STRUCTURAL)
        - cannot prove its own consistency
    This is inherent.
 
-------------------------------------------------------------
 LIMITATIONS (PRACTICAL)
 ------------------------------------------------------------
 - Steep learning curve for tactic‑based proof development.
@@ -89,7 +119,6 @@ LIMITATIONS (PRACTICAL)
 - Documentation varies in quality.
 - Requires significant expertise for industrial projects.
 
-------------------------------------------------------------
 DOMAIN FIT
 ------------------------------------------------------------
 Excellent for:
@@ -104,7 +133,6 @@ Poor fit for:
     - Semantic models 
     - Lightweight or exploratory programming
 
-------------------------------------------------------------
 ROCQ (Reasoning on Coq Queries)
 ------------------------------------------------------------
 A complementary automation framework for Coq.
@@ -124,7 +152,6 @@ LIMITATIONS
     - Dependent on Coq’s underlying limitations.
     - Automation can obscure proof structure.
 
-------------------------------------------------------------
 ESSENTIAL CRITIQUE
 ------------------------------------------------------------
 Coq is powerful because of its tactic layer, not because its
