@@ -325,7 +325,7 @@ This is the fundamental axis along which the HOL family diverges.
 
 ---
 
-## 🔍 Non-obvious insight  
+## 🔍 Insight  
 The **real difference** is not the automation *tools* but the **automation philosophy**:
 
 - **Isabelle/HOL**: automation is the *default*, manual proofs are the exception.  
@@ -334,3 +334,112 @@ The **real difference** is not the automation *tools* but the **automation philo
 
 This philosophical divergence explains why Isabelle/HOL excels in large-scale engineering proofs, HOL4 in industrial verification, and HOL Light in foundational mathematics.
 
+**Concise takeaway:**  
+All HOL provers share the same *logical* foundation, but their **kernel designs** differ radically in *size*, *primitives*, *trust model*, and *engineering philosophy*.  
+HOL Light has the **smallest, purest kernel**, HOL4 has a **traditional but slightly richer kernel**, and Isabelle/HOL has a **layered kernel** due to its meta‑logic framework.
+
+---
+
+## 🧩 What a “HOL kernel” actually is  
+A HOL kernel is the **trusted core** that implements the primitive inference rules of classical higher‑order logic.  
+It is responsible for:
+
+- Constructing **theorems**  
+- Checking **inference rules**  
+- Enforcing **typing**  
+- Maintaining **soundness**  
+
+Everything else—automation, tactics, proof scripts—is *untrusted* and must call the kernel to produce theorems.
+
+This is the essence of the **LCF architecture**.
+
+---
+
+## 🧠 1. HOL Light — *The minimal kernel*
+
+HOL Light’s kernel is famously tiny: **~400 lines of OCaml**.  
+It is the closest living descendant of the original LCF philosophy.
+
+### Kernel characteristics
+- **Only equality is primitive**  
+- All logical connectives (`∧`, `∨`, `¬`, `⇒`) are *defined*  
+- Very small set of primitive inference rules  
+- No derived rules baked into the kernel  
+- Extremely strict term and type checking  
+- No overloading, no type classes, no meta-logic
+
+### Impact
+- Maximum trust: tiny kernel = tiny trusted base  
+- Predictable behavior  
+- Ideal for foundational mathematics (e.g., Flyspeck)  
+- Automation must be built externally
+
+---
+
+## 🧠 2. HOL4 — *The traditional HOL kernel*
+
+HOL4’s kernel is larger than HOL Light’s but still compact and faithful to the original HOL88 design.
+
+### Kernel characteristics
+- Primitive constants include equality, boolean connectives, quantifiers  
+- Extensionality is an **axiom schema**  
+- More inference rules are primitive compared to HOL Light  
+- ML-style polymorphism  
+- Limited overloading  
+- No meta-logic layer
+
+### Impact
+- More convenient than HOL Light for engineering proofs  
+- Still highly trustworthy and explicit  
+- Automation is predictable but less minimalistic  
+- Good balance between usability and kernel purity
+
+---
+
+## 🧠 3. Isabelle/HOL — *The layered kernel*
+
+Isabelle’s kernel is **not a HOL kernel**.  
+It is a kernel for a **generic meta-logic**, and HOL is implemented *on top* of it as an object logic.
+
+### Kernel characteristics
+- Meta-logic provides:  
+  - Meta-level implication  
+  - Meta-level quantification  
+  - Proof terms  
+  - Contextual reasoning  
+- HOL is encoded using Isabelle’s logical framework  
+- Type classes, locales, and overloading are supported at the meta-level  
+- Extensionality is a **derived rule**, not primitive
+
+### Impact
+- Most expressive of the HOL family  
+- Supports declarative proofs (Isar)  
+- Enables powerful automation (simp, blast, Sledgehammer)  
+- Trusted base is larger and more complex  
+- HOL is not “hardwired” into the kernel
+
+---
+
+## 📊 Comparison Table — Kernel Design
+
+| Feature | **HOL Light** | **HOL4** | **Isabelle/HOL** |
+|--------|-------------------------|-------------------------|-------------------------|
+| Kernel size | Very small (~400 LOC) | Small–medium | Medium–large |
+| Primitive constants | Equality only | Equality + booleans + quantifiers | Equality + implication + quantifiers (meta-level) |
+| Extensionality | Kernel rule | Axiom schema | Derived rule |
+| Logic implementation | Direct | Direct | Encoded in meta-logic |
+| Overloading | None | Limited | Extensive |
+| Type classes | No | No | Yes |
+| Proof style | Procedural | Procedural | Declarative (Isar) |
+| Trust base | Smallest | Small | Largest |
+
+---
+
+## 🔍Insight  
+The **real difference** is not kernel size but **kernel philosophy**:
+
+- **HOL Light**: “Trust as little as possible.”  
+- **HOL4**: “Trust a bit more for convenience.”  
+- **Isabelle/HOL**: “Trust a framework that can host many logics.”
+
+This explains why Isabelle/HOL excels at automation and modular reasoning, HOL4 at industrial verification, and HOL Light at foundational mathematics.
