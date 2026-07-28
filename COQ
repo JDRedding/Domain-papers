@@ -1,0 +1,139 @@
+
+COQ
+============================================================
+Coq — Interactive Theorem Prover & Formal Verification System
+
+CLASS
+    Higher‑Order Logic 
+    / Inductive Type Theory 
+    / Tactic‑Driven Proofs
+
+SHAPE
+    Dyadic core, tactic‑layered, intensional foundations with
+    optional classical axioms.
+
+SUMMARY
+    Coq is a proof assistant built on the Calculus of Inductive
+    Constructions (CIC). It supports interactive, tactic‑based
+    proof development, extensive automation, and extraction of
+    verified programs. Coq is widely used in academia and 
+    industry for formal verification, cryptographic proofs, 
+    compiler correctness, and large mathematical 
+    formalizations.
+
+FOUNDATIONAL CHARACTER
+------------------------------------------------------------
+- Dyadic
+  : core logic is function‑centric, though tactics mask this.
+- Constructive
+  : CIC is constructive, but classical axioms may be added.
+- Intensional
+  : equality is intensional unless extended.
+- Total
+  : Gallina functions are total; partiality must be encoded.
+- Tactic‑layered
+  : proofs are built through meta‑level scripts.
+
+------------------------------------------------------------
+STRENGTHS
+------------------------------------------------------------
+- Powerful tactic system (auto, lia, omega, rewrite, etc.).
+- Large ecosystem: MathComp, SSReflect, Coq Standard Library.
+- Industrial adoption (CompCert, Fiat‑Crypto, EverCrypt).
+- Extraction to OCaml, Haskell, Scheme.
+- Strong support for inductive types and formal mathematics.
+- Mature tooling (CoqIDE, Proof General, VSCode extensions).
+
+------------------------------------------------------------
+LIMITATIONS (STRUCTURAL)
+------------------------------------------------------------
+1. Dyadic Foundations (Masked by Tactics)
+   Coq’s core calculus is function‑first. Tactics hide this, 
+   but some mathematics still requires indirect encodings.
+
+2. Intensional Equality
+   Coq’s equality is intensional; extensional reasoning 
+    requires:
+       - setoids
+       - rewriting frameworks
+       - additional axioms
+   This complicates algebraic and relational domains.
+
+3. Totality Constraint
+   Gallina disallows partial functions.
+   Partiality must be encoded via:
+       - option types
+       - monads
+       - inductive relations
+   This distorts natural semantic definitions.
+
+4. Encoding Overhead
+   Predicates over tuples, not primitive objects.
+   Multi‑entity semantics (operational semantics, transition 
+   systems) become verbose and brittle.
+
+5. Incompleteness
+   As a dyadic system capable of arithmetic:
+       - Coq is incomplete
+       - cannot prove all true statements
+       - cannot prove its own consistency
+   This is inherent.
+
+------------------------------------------------------------
+LIMITATIONS (PRACTICAL)
+------------------------------------------------------------
+- Steep learning curve for tactic‑based proof development.
+- Proof scripts can be brittle under refactoring.
+- Automation can obscure underlying logical structure.
+- Performance issues in large developments.
+- Documentation varies in quality.
+- Requires significant expertise for industrial projects.
+
+------------------------------------------------------------
+DOMAIN FIT
+------------------------------------------------------------
+Excellent for:
+    - Verified compilers (CompCert)
+    - Cryptographic proofs (Fiat‑Crypto, EverCrypt)
+    - Formal mathematics (MathComp)
+    - Protocol verification
+    - Large-scale proof engineering
+
+Poor fit for:
+    - Tuple‑native systems
+    - Semantic models 
+    - Lightweight or exploratory programming
+
+------------------------------------------------------------
+ROCQ (Reasoning on Coq Queries)
+------------------------------------------------------------
+A complementary automation framework for Coq.
+
+CHARACTER
+    - Automates repetitive proof patterns.
+    - Operates over structured queries.
+    - Leverages Coq’s tactic engine and libraries.
+
+STRENGTHS
+    - Reduces manual proof effort.
+    - Helps with systematic verification tasks.
+    - Useful for query‑centered reasoning.
+
+LIMITATIONS
+    - Less widely adopted.
+    - Dependent on Coq’s underlying limitations.
+    - Automation can obscure proof structure.
+
+------------------------------------------------------------
+ESSENTIAL CRITIQUE
+------------------------------------------------------------
+Coq is powerful because of its tactic layer, not because its
+foundations are tuple‑native. Its core calculus is dyadic, 
+intensional, constructive, and total — the same structural
+constraints seen in Agda, but masked by automation.
+
+This makes Coq extremely effective for large verification,
+yet still philosophically limited for semantic domains where 
+tuples and extensional equality are natural primitives.
+
+============================================================
