@@ -1,5 +1,7 @@
 # The HOL family
-160 Logic
+- 160 Logic
+- 511 Symbolic logic
+- 511.3 Mathematical logic
 
 This a clear, structured comparison of the HOL family of theorem provers (Isabelle/HOL, HOL4, HOL Light), explaining their common logical foundations (LCF-style classical higher-order logic) and the practical differences in kernel design, type-system extensions, treatment of equality/extensionality, partiality, and automation philosophy.
 
