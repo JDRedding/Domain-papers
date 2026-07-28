@@ -106,6 +106,16 @@ LIMITATIONS (STRUCTURAL)
    Coq’s core calculus is function‑first. Tactics hide this, 
    but some mathematics still requires indirect encodings.
 
+   Coq’s CIC is function‑/term‑centric — tuples encodings 
+   are not primitive and must be modeled via records, 
+   inductive types, or nested functions. This is a 
+   structural limitation shared by other dependent‑type 
+   provers (Agda, Lean) and contrasts with HOL‑style or 
+   set‑theoretic systems (Isabelle/HOL, HOL4, Mizar), where
+   tuples, products, and extensional equality are more 
+   directly supported, often making semantic and relational 
+   modeling more straightforward.
+
 2. Intensional Equality
    Coq’s equality is intensional; extensional reasoning 
     requires:
