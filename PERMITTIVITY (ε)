@@ -1,0 +1,36 @@
+PERMITTIVITY (ε)                                            
+HOW A MATERIAL RESPONDS TO AN ELECTRIC FIELD                
+                                                              
+          ┌─────────────────┐                                 
+          │  D⃗ = ε E⃗        │                                 
+          └─────────────────┘                                 
+                                                              
+  D⃗ = ELECTRIC FLUX DENSITY                                   
+  E⃗ = ELECTRIC FIELD INTENSITY                                
+  ε  = PERMITTIVITY (F/m)                                     
+                                                              
+                                                              
+      CAPACITOR                                       
+                                                              
+     +  +  +  +  +          -  -  -  -  -                     
+     │  │  │  │  │          │  │  │  │  │                     
+     │  │  │  │  │  E →→→→  │  │  │  │  │                     
+     │  │  │  │  │          │  │  │  │  │                     
+     +--+--+--+--+          ---+--+--+--+-    
+
+     DIELECTRIC                                          
+     (MATERIAL)                                         
+                                                                                                                        
+     PLATE ──────────────────┐                                
+                             │ d                              
+     DIELECTRIC ─────────────┤                                
+                             │                                
+     PLATE ──────────────────┘                                
+                                                              
+
+  RELEVANCE                                                   
+                                                              
+  C = ε (A / d)                                               
+                                                              
+  • HIGHER ε  ⇒  HIGHER C                                     
+  • STORES ENERGY IN ELECTRIC FIELD                           
