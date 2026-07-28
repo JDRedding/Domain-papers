@@ -5,7 +5,7 @@
 
 This a clear, structured comparison of the HOL family of theorem provers (Isabelle/HOL, HOL4, HOL Light), explaining their common logical foundations (LCF-style classical higher-order logic) and the practical differences in kernel design, type-system extensions, treatment of equality/extensionality, partiality, and automation philosophy.
 
-The group of interactive theorem provers that all implement **classical higher‑order logic (HOL)** following the **LCF architecture**. They share a common logical core but differ in engineering philosophy, automation, libraries, and kernel size.  
+The HOL family group of interactive theorem provers all implement **classical higher‑order logic (HOL)** following the **LCF architecture**. They share a common logical core but differ in engineering philosophy, automation, libraries, and kernel size.  
 The three major members are **Isabelle/HOL**, **HOL4**, and **HOL Light**.
 
 ---
