@@ -1,4 +1,6 @@
 AGDA 
+005.1 Programming-Languages
+510 Mathematical-Logic proof‑assistant material
 ============================================================
 Agda is a dependently typed functional programming language 
 and proof assistant, primarily used for formal verification, 
