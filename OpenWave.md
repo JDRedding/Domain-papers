@@ -1,0 +1,107 @@
+# OpenWave 
+
+[OpenWave](https://github.com/openwave-labs/openwave) is a **full classical‑field physics simulator** built around lattice PDEs, topology, and nonlinear potentials — essentially a “lattice‑QFT‑like” environment but without quantization, aimed at testing whether *classical* field theories can reproduce particle‑scale phenomena.
+
+---
+
+## ⚛️ Core Identity  
+OpenWave is an **open‑source subatomic physics simulator** that evolves **3D classical fields** 
+on a GPU‑accelerated lattice (Taichi). It tests whether particles, forces, and EM waves can emerge 
+from deterministic field equations enriched with **topology** and **nonlinearity**.   
+
+---
+
+## 🧭 Scientific Position  
+The project sits in the lineage of **de Broglie–Bohm pilot waves**, **wave‑structure‑of‑matter**, **topological solitons**, and **hydrodynamic quantum analogs**.  
+Its central question:  
+> Can a classical Lagrangian field theory, with the right topology + nonlinear potentials, reproduce particle‑scale observables?
+
+This includes:  
+- **Charge quantization**  
+- **Lepton mass ratios**  
+- **Coulomb interaction**  
+- **Zitterbewegung**  
+- **Quark confinement**  
+- **Photon propagation**  
+- **Thermal coupling**
+
+Each candidate model is tested against **public pass/fail criteria** in `MODELS.md`.
+
+---
+
+## 🧩 Computational Architecture  
+OpenWave provides three complementary modeling frameworks:
+
+### 1. **Scalar‑Field Models**  
+Discrete 3D lattice, PDE evolution, similar to lattice QCD but classical.  
+Great for matter formation, solitons, and force emergence.
+
+### 2. **Vector‑Field Models**  
+Director‑field / order‑parameter frameworks (e.g., Landau‑de Gennes, SU(2)/S³).  
+Used for topological defects, charge quantization, and spin geometry.
+
+### 3. **Granule‑Motion Model**  
+Educational visualization: oscillating particles with phase‑shifted motion.
+
+All run on the same numerical engine.
+
+---
+
+## 🧪 Simulation Workflows  
+### **Static Numerical Validation**  
+Boundary‑value solvers (SciPy) check whether a Lagrangian admits stable particle solutions.
+
+### **Dynamic Field Simulation**  
+GPU‑accelerated time evolution of full 3D fields:  
+- scattering  
+- modulation  
+- perturbation studies  
+- multi‑particle interactions  
+- cause‑effect experiments
+
+Instrumentation includes:  
+- energy monitoring  
+- field probes  
+- cross‑section profiles  
+- CSV export  
+- automated visualization
+
+---
+
+## 🧠 Theoretical Contributors  
+OpenWave hosts multiple competing frameworks:
+
+- **Jeff Yee** — Energy Wave Theory  
+- **Jarek Duda** — Landau‑de Gennes particle analogs  
+- **Manfried Faber** — SU(2)/S³ solitonic fermions  
+- **Robert Close** — nonlinear vector wave → Dirac equation  
+- **Paul Werbos** — chaoitons, Chern‑Simons charge  
+- **Marc Fleury** — toroidal EM electron  
+- **Blake Shatto** — S³/2I topology + representation theory
+
+Each model is evaluated against shared observables.
+
+---
+
+## 🛠 Installation (Python ≥ 3.12)
+```
+git clone https://github.com/openwave-labs/openwave.git
+cd openwave
+pip install .
+```
+
+Then run xperiments:
+```
+xperiment selector openwave -x
+```
+
+---
+
+## 📚 Key Documents  
+- **TUTORIAL.md** — start here  
+- **SYS_ARCH.md** — architecture  
+- **MODELS.md** — pass/fail criteria  
+- **AI_HYGIENE.md** — rules for AI contributors  
+- **REPRODUCE.md** — reproduce published results  
+
+---
