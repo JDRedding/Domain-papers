@@ -1,0 +1,256 @@
+Robespierre Virtue–Terror System
+============================================================
+Robespierre’s 5 February 1794 speech was the endpoint of a
+long evolution:
+
+Virtue from Rousseau
+Virtue under emergency from revolutionary crisis
+Terror as justice from political necessity
+Virtue × Terror as the engine of revolutionary power
+Revolutionary government as force in defense of liberty
+Collapse when the balance failed
+
+ENLIGHTENMENT ROOTS
+----------------------
+- Draws heavily from Rousseau.
+- Core belief: republics survive only through civic virtue.
+- Virtue = moral reason + commitment to the common good.
+
+REVOLUTIONARY EMERGENCY
+--------------------------
+- 1792–1793: invasion, rebellion, famine, factionalism.
+- Robespierre concludes ordinary virtue is insufficient.
+- Virtue must become active, militant, enforced.
+
+TERROR AS JUSTICE
+--------------------
+- Defines terror as “prompt, severe, inflexible justice.”
+- Terror is NOT separate from virtue.
+- Terror = virtue under urgent conditions (virtue accelerated).
+
+MUTUAL NECESSITY
+-------------------
+- Famous formula:
+      “Virtue without terror is powerless;
+       terror without virtue is fatal.”
+- Revolutionary power = V × T.
+- Collapse conditions:
+      T = 0 → power = 0
+      V = 0 → terror becomes tyranny
+
+REVOLUTIONARY GOVERNMENT
+---------------------------
+- Calls it “despotism of liberty against tyranny.”
+- People → reason
+- Enemies → terror
+- Government must defend the republic through moral force + coercive force.
+
+0. OBJECT SET
+-------------
+Obj = { V, T, J, P_peace, P_rev, R, G }
+
+V       = Virtue
+T       = Terror
+J       = Justice (prompt, severe, inflexible)
+P_peace = Peacetime Power
+P_rev   = Revolutionary Power
+R       = Routing (People/Enemies)
+G       = Revolutionary Government
+
+------------------------------------------------------------
+1. RDG — RELATIONAL DIRECTED GEOMETRY
+------------------------------------------------------------
+
+Rel =
+    V -> J
+    J -> T
+    V -> T            (emanation)
+    V -> P_peace      (P_peace = f(V))
+    (V,T) -> P_rev    (P_rev = V * T)
+    R -> T            (enemies -> terror)
+    R -> Reason       (people -> reason)
+    G -> P_rev
+
+RDG:
+    G = ( Obj , Rel )
+
+------------------------------------------------------------
+2. SID — STRUCTURE / INTERACTION / DYNAMICS
+------------------------------------------------------------
+
+2.1 STRUCTURE LAYER S(G)
+------------------------
+Rel_S =
+    V -> J
+    J -> T
+    V -> T
+    V -> P_peace
+    (V,T) -> P_rev
+
+S(G) = ( {V,T,J,P_peace,P_rev} , Rel_S )
+
+2.2 INTERACTION LAYER I(G)
+--------------------------
+Rel_I =
+    Rel_S
+    + R -> T
+    + R -> Reason
+    + G -> P_rev
+
+I(G) = ( {V,T,J,P_peace,P_rev,R,G} , Rel_I )
+
+2.3 DYNAMICS LAYER D(G)
+-----------------------
+Rel_D =
+    Rel_I
+    + V -> P_rev      (via T)
+    + R -> P_rev      (via T)
+
+D(G) = ( {V,T,J,P_peace,P_rev,R,G} , Rel_D )
+
+SID CONSISTENCY:
+    S(G) ⊆ I(G) ⊆ D(G) ⊆ G
+
+------------------------------------------------------------
+3. MFE — MOMENTUM–FLUX ENGINE
+------------------------------------------------------------
+
+Engine State:
+    E(t) = ( M(t), F(t), M̄(t), F̄(t) )
+
+Interpretation:
+    M   = Virtue Momentum  (maps to V)
+    F   = Terror Flux      (maps to T)
+    M̄  = Counter-Virtue   (vice, corruption)
+    F̄  = Counter-Terror   (impunity, paralysis)
+
+STRICT MATCH TO ORIGINAL EQUATIONS:
+-----------------------------------
+Set:
+    M = V
+    F = T
+
+Emanation rule:
+    T = kV
+    => F = kM
+
+Revolutionary power:
+    P_rev = V * T
+    => P_rev = M * F
+
+Peacetime power:
+    P_peace = f(V)
+    => P_peace = f(M)
+
+Collapse conditions:
+    If F = 0:  P_rev = 0
+    If M = 0:  P_rev = -∞
+
+Update Rules:
+    M(t+1)   = f_M( M, F, M̄, F̄ )
+    F(t+1)   = f_F( M, F, M̄, F̄ )
+    M̄(t+1)  = f_M̄( M, F, M̄, F̄ )
+    F̄(t+1)  = f_F̄( M, F, M̄, F̄ )
+
+------------------------------------------------------------
+4. PED — POWER / EVALUATION / DYNAMIC-SLICE
+------------------------------------------------------------
+
+PED(E) = ( P(E), Eval(E), D_slice(E) )
+
+4.1 POWER
+---------
+STRICT MATCH:
+    P(E) = M * F
+
+This is exactly:
+    P_rev = V * T
+
+4.2 EVALUATION
+--------------
+Eval(E) = V(M, F, M̄, F̄)
+
+Interpretation:
+    legitimacy landscape
+    justice constraints
+    collapse penalties
+
+Example:
+    Eval(E) =
+        α * exp(-|M|)
+      + β * cos(F)
+      + γ * sin^2(M̄)
+      + δ * F̄
+
+4.3 DYNAMIC-SLICE
+-----------------
+D_slice(E) = Φ(E)
+or
+D_slice(E) ≈ ∇P - ∇Eval
+
+------------------------------------------------------------
+5. SID → MFE COUPLING
+------------------------------------------------------------
+
+SID outputs:
+    σ(G) = structural pressure
+    ρ(G) = relational tension
+
+These modulate MFE thresholds:
+    θ_M = θ_M0 + α_σ * σ(G)
+    θ_F = θ_F0 + β_ρ * ρ(G)
+
+And PED coefficients:
+    λ_P = λ_P0 + κ_Pσ * σ(G)
+    λ_E = λ_E0 + κ_Eρ * ρ(G)
+
+------------------------------------------------------------
+6. MFE → PED COUPLING
+------------------------------------------------------------
+
+MFE updates depend on PED fields:
+
+    M(t+1)   = f_M( E ; P(E), Eval(E) )
+    F(t+1)   = f_F( E ; P(E), Eval(E) )
+    M̄(t+1)  = f_M̄( E ; P(E), Eval(E) )
+    F̄(t+1)  = f_F̄( E ; P(E), Eval(E) )
+
+Principles:
+    P(E)    → amplifies drive
+    Eval(E) → shapes wells
+    D_slice → determines flow
+
+------------------------------------------------------------
+7. ENGINE INVARIANTS
+------------------------------------------------------------
+
+B(t) = M - F
+C(t) = M̄ + F̄
+T_tot(t) = M + F + M̄ + F̄
+
+Axioms:
+    T_tot bounded
+    C activates when |B| large
+    P and Eval regulate T_tot
+
+------------------------------------------------------------
+8. MINIMAL EXAMPLES
+------------------------------------------------------------
+
+HISTORICAL OUTCOME
+---------------------
+- Logic justified escalating purges in 1794.
+- When virtue lost credibility, terror became fatal.
+- System collapsed with Robespierre’s fall (July 1794).
+
+Example A: exact product engine
+-------------------------------
+P(E) = M * F
+Eval(E) = cos(F) + sin^2(M̄)
+D_slice(E) = Φ(E)
+
+Example B: collapse-triggered engine
+------------------------------------
+If F = 0:  P = 0
+If M = 0:  P = -∞
+
