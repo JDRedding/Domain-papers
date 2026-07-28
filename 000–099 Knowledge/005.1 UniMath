@@ -310,7 +310,16 @@ Its limitations come from:
 
 UniMath shape is univalent, constructive, intensional, and 
 categorical. This shape is powerful for some domains and 
-limiting for others.
+limiting for others. UniMath adds additional constraints:
+
+  no general dependent pattern matching
+  no classical axioms
+  strict constructive discipline
+  equivalence‑centric foundations
+  categorical primacy
+
+This pushes UniMath even further away from tuple‑centric
+foundations.
 
 ============================================================
 WEBSITES
