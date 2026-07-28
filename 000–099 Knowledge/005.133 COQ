@@ -36,6 +36,30 @@ FOUNDATIONAL CHARACTER
 - Tactic‑layered
   : proofs are built through meta‑level scripts.
 
+Tools/languages
+: Ltac (and Ltac2), ssreflect, Mtac, Equations, Program, 
+type classes/canonical structures, universe polymorphism.
+
+Libraries & major projects
+: MathComp (with SSReflect), CompCert, Fiat‑Crypto, 
+EverCrypt, CertiCrypt, CoqStandardLibrary.
+
+Usability features
+: proof engineering techniques, modular developments, 
+sledgehammer‑style automation (external tools exist but 
+are limited), Coq's IDEs (CoqIDE, Proof General, VS Code 
+extension).
+
+Performance/scale
+: note improvements and community patterns (ssreflect/
+MathComp style, careful use of opaque/transparent lemmas, 
+modularization) that mitigate brittleness.
+
+Interoperability
+: Coq has extraction and foreign function interfaces 
+but care is needed when using side effects or non‑
+constructive axioms.
+
 CIC (Calculus of Inductive Constructions)
 ------------------------------------------------------------
 CIC is a type theory that combines higher-order logic with 
@@ -55,8 +79,8 @@ Rich type hierarchy, enabling formal verified computation
 
 Gallina
 ------------------------------------------------------------
-Gallina is the specification language and term language of 
-certain proof assistants built on the CIC.
+Gallina is Coq's specification/programming language (the 
+term language of Coq's CIC)
 
 In Gallina, can:
     Define functions and data types.
