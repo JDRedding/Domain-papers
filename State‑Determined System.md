@@ -2,7 +2,7 @@
  
 RDG is a state‑determined formalism: 
 
-	the *state (S) is the system, 
+	the state (S) is the system, 
 
 and all future behavior is generated from it through the MFE flux engine.
 
