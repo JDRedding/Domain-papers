@@ -1,6 +1,5 @@
 ROBESPIERRE VIRTUE–TERROR SYSTEM
 ============================================================
-
 Robespierre’s 5 February 1794 speech becomes the core engine:
 Virtue × Terror under emergency → Revolutionary Power.
 The updated system incorporates external pressures, factions,
@@ -38,9 +37,24 @@ REVOLUTIONARY GOVERNMENT
 - Enemies → terror
 - Government defends liberty via moral + coercive force.
 
+
+Robespierre Virtue–Terror System
 ============================================================
-0. OBJECT SET (EXTENDED)
-============================================================
+
+0. OBJECT SET
+------------------------------------------------------------
+Obj = { V, T, J, P_peace, P_rev, R, G }
+
+V       = Virtue
+T       = Terror
+J       = Justice (prompt, severe, inflexible)
+P_peace = Peacetime Power
+P_rev   = Revolutionary Power
+R       = Routing (People/Enemies)
+G       = Revolutionary Government
+
+OBJECT SET (EXTENDED)
+------------------------------------------------------------
 Obj_ext = {
     V, T, J,
     P_peace, P_rev,
@@ -60,9 +74,25 @@ Obj_ext = {
     A                  // anachronism meta-variable
 }
 
-============================================================
-1. RDG — RELATIONAL DYNAMIC GEOMETRY (EXTENDED)
-============================================================
+------------------------------------------------------------
+1. RDG — RELATIONAL DIRECTED GEOMETRY
+------------------------------------------------------------
+
+Rel =
+    V -> J
+    J -> T
+    V -> T            (emanation)
+    V -> P_peace      (P_peace = f(V))
+    (V,T) -> P_rev    (P_rev = V * T)
+    R -> T            (enemies -> terror)
+    R -> Reason       (people -> reason)
+    G -> P_rev
+
+RDG:
+    G = ( Obj , Rel )
+
+RELATIONAL DYNAMIC GEOMETRY (EXTENDED)
+------------------------------------------------------------
 Rel_ext =
     V -> J
     J -> T
@@ -89,11 +119,47 @@ Rel_ext =
 RDG:
     G_ext = ( Obj_ext , Rel_ext )
 
-============================================================
-2. SID — STRUCTURE / INTERACTION / DYNAMICS (EXTENDED)
-============================================================
+------------------------------------------------------------
+2. SID — STRUCTURE / INTERACTION / DYNAMICS
+------------------------------------------------------------
 
-2.1 STRUCTURE S(G_ext)
+2.1 STRUCTURE LAYER S(G)
+------------------------
+Rel_S =
+    V -> J
+    J -> T
+    V -> T
+    V -> P_peace
+    (V,T) -> P_rev
+
+S(G) = ( {V,T,J,P_peace,P_rev} , Rel_S )
+
+2.2 INTERACTION LAYER I(G)
+--------------------------
+Rel_I =
+    Rel_S
+    + R -> T
+    + R -> Reason
+    + G -> P_rev
+
+I(G) = ( {V,T,J,P_peace,P_rev,R,G} , Rel_I )
+
+2.3 DYNAMICS LAYER D(G)
+-----------------------
+Rel_D =
+    Rel_I
+    + V -> P_rev      (via T)
+    + R -> P_rev      (via T)
+
+D(G) = ( {V,T,J,P_peace,P_rev,R,G} , Rel_D )
+
+SID CONSISTENCY:
+    S(G) ⊆ I(G) ⊆ D(G) ⊆ G
+
+STRUCTURE / INTERACTION / DYNAMICS (EXTENDED)
+------------------------------------------------------------
+
+2.4 STRUCTURE S(G_ext)
 ------------------------
 Rel_S_ext =
     V -> J
@@ -104,7 +170,7 @@ Rel_S_ext =
 
 S(G_ext) = ( {V,T,J,P_peace,P_rev} , Rel_S_ext )
 
-2.2 INTERACTION I(G_ext)
+2.5 INTERACTION I(G_ext)
 --------------------------
 Rel_I_ext =
     Rel_S_ext
@@ -122,7 +188,7 @@ Rel_I_ext =
 
 I(G_ext) = ( Obj_ext , Rel_I_ext )
 
-2.3 DYNAMICS D(G_ext)
+2.6 DYNAMICS D(G_ext)
 -----------------------
 Rel_D_ext =
     Rel_I_ext
@@ -136,9 +202,49 @@ D(G_ext) = ( Obj_ext , Rel_D_ext )
 SID CONSISTENCY:
     S(G_ext) ⊆ I(G_ext) ⊆ D(G_ext) ⊆ G_ext
 
-============================================================
-3. MFE — MOMENTUM–FLUX ENGINE (EXTENDED)
-============================================================
+------------------------------------------------------------
+3. MFE — MOMENTUM–FLUX ENGINE
+------------------------------------------------------------
+
+Engine State:
+    E(t) = ( M(t), F(t), M̄(t), F̄(t) )
+
+Interpretation:
+    M   = Virtue Momentum  (maps to V)
+    F   = Terror Flux      (maps to T)
+    M̄  = Counter-Virtue   (vice, corruption)
+    F̄  = Counter-Terror   (impunity, paralysis)
+
+STRICT MATCH TO ORIGINAL EQUATIONS:
+-----------------------------------
+Set:
+    M = V
+    F = T
+
+Emanation rule:
+    T = kV
+    => F = kM
+
+Revolutionary power:
+    P_rev = V * T
+    => P_rev = M * F
+
+Peacetime power:
+    P_peace = f(V)
+    => P_peace = f(M)
+
+Collapse conditions:
+    If F = 0:  P_rev = 0
+    If M = 0:  P_rev = -∞
+
+Update Rules:
+    M(t+1)   = f_M( M, F, M̄, F̄ )
+    F(t+1)   = f_F( M, F, M̄, F̄ )
+    M̄(t+1)  = f_M̄( M, F, M̄, F̄ )
+    F̄(t+1)  = f_F̄( M, F, M̄, F̄ )
+
+MOMENTUM–FLUX ENGINE (EXTENDED)
+------------------------------------------------------------
 
 Engine State:
     E(t) = ( M(t), F(t), M̄(t), F̄(t) )
@@ -184,17 +290,52 @@ Update Rules (extended):
       + Σ_i θ_i * F_i(t)
       + ξ_F(t)
 
-============================================================
-4. PED — POWER / EVALUATION / DYNAMIC-SLICE (EXTENDED)
-============================================================
+------------------------------------------------------------
+4. PED — POWER / EVALUATION / DYNAMIC-SLICE
+------------------------------------------------------------
 
 PED(E) = ( P(E), Eval(E), D_slice(E) )
 
 4.1 POWER
 ---------
+STRICT MATCH:
     P(E) = M * F
 
+This is exactly:
+    P_rev = V * T
+
 4.2 EVALUATION
+--------------
+Eval(E) = V(M, F, M̄, F̄)
+
+Interpretation:
+    legitimacy landscape
+    justice constraints
+    collapse penalties
+
+Example:
+    Eval(E) =
+        α * exp(-|M|)
+      + β * cos(F)
+      + γ * sin^2(M̄)
+      + δ * F̄
+
+4.3 DYNAMIC-SLICE
+-----------------
+D_slice(E) = Φ(E)
+or
+D_slice(E) ≈ ∇P - ∇Eval
+
+PED — POWER / EVALUATION / DYNAMIC-SLICE (EXTENDED)
+------------------------------------------------------------
+
+PED(E) = ( P(E), Eval(E), D_slice(E) )
+
+4.4 POWER
+---------
+    P(E) = M * F
+
+4.5 EVALUATION
 --------------
 Eval(E) =
       α(t) * exp(-|M|)
@@ -209,16 +350,30 @@ Interpretation:
     collapse penalties
     anachronism correction
 
-4.3 DYNAMIC-SLICE
+4.6 DYNAMIC-SLICE
 -----------------
     D_slice(E) = Φ(E)
     or
     D_slice(E) ≈ ∇P - ∇Eval
 
-============================================================
-5. SID → MFE COUPLING (EXTENDED)
-============================================================
+------------------------------------------------------------
+5. SID → MFE COUPLING
+------------------------------------------------------------
 
+SID outputs:
+    σ(G) = structural pressure
+    ρ(G) = relational tension
+
+These modulate MFE thresholds:
+    θ_M = θ_M0 + α_σ * σ(G)
+    θ_F = θ_F0 + β_ρ * ρ(G)
+
+And PED coefficients:
+    λ_P = λ_P0 + κ_Pσ * σ(G)
+    λ_E = λ_E0 + κ_Eρ * ρ(G)
+
+SID → MFE COUPLING (EXTENDED)
+------------------------------------------------------------
 SID outputs:
     σ(G_ext) = structural pressure
     ρ(G_ext) = relational tension
@@ -231,18 +386,45 @@ PED coefficient modulation:
     λ_P = λ_P0 + κ_Pσ * σ(G_ext)
     λ_E = λ_E0 + κ_Eρ * ρ(G_ext)
 
-============================================================
-6. MFE → PED COUPLING (EXTENDED)
-============================================================
+------------------------------------------------------------
+6. MFE → PED COUPLING
+------------------------------------------------------------
+
+MFE updates depend on PED fields:
+
+    M(t+1)   = f_M( E ; P(E), Eval(E) )
+    F(t+1)   = f_F( E ; P(E), Eval(E) )
+    M̄(t+1)  = f_M̄( E ; P(E), Eval(E) )
+    F̄(t+1)  = f_F̄( E ; P(E), Eval(E) )
+
+Principles:
+    P(E)    → amplifies drive
+    Eval(E) → shapes wells
+    D_slice → determines flow
+
+MFE → PED COUPLING (EXTENDED)
+------------------------------------------------------------
 
     M(t+1)   = f_M( E ; P(E), Eval(E), D_slice(E) )
     F(t+1)   = f_F( E ; P(E), Eval(E), D_slice(E) )
     M̄(t+1)  = f_M̄( E ; P(E), Eval(E), D_slice(E) )
     F̄(t+1)  = f_F̄( E ; P(E), Eval(E), D_slice(E) )
 
-============================================================
-7. ENGINE INVARIANTS (EXTENDED)
-============================================================
+------------------------------------------------------------
+7. ENGINE INVARIANTS
+------------------------------------------------------------
+
+B(t) = M - F
+C(t) = M̄ + F̄
+T_tot(t) = M + F + M̄ + F̄
+
+Axioms:
+    T_tot bounded
+    C activates when |B| large
+    P and Eval regulate T_tot
+
+ENGINE INVARIANTS (EXTENDED)
+------------------------------------------------------------
 
     B(t) = M - F
     C(t) = M̄ + F̄
@@ -255,9 +437,24 @@ Axioms:
     shocks create discontinuities
     parameter drift alters basins
 
+------------------------------------------------------------
+8. MINIMAL EXAMPLES
+------------------------------------------------------------
+
+Example A: exact product engine
+-------------------------------
+P(E) = M * F
+Eval(E) = cos(F) + sin^2(M̄)
+D_slice(E) = Φ(E)
+
+Example B: collapse-triggered engine
+------------------------------------
+If F = 0:  P = 0
+If M = 0:  P = -∞
+
 ============================================================
 8. HISTORICAL OUTCOME (UPDATED)
-============================================================
+------------------------------------------------------------
 - War, scarcity, popular pressure, and factions amplify terror.
 - Committees act as institutional flux multipliers.
 - Stochastic shocks destabilize virtue momentum.
