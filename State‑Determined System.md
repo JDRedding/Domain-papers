@@ -136,3 +136,7 @@ This is the exact mathematical statement.
 
 ---
 
+### References
+
+Donella Meadows, "A Philosophical Look at System Dynamics". 
+https://www.youtube.com/watch?v=XL_lOoomRTA @donellameadows1939
