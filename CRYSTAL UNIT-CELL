@@ -1,5 +1,47 @@
 CRYSTAL UNIT-CELL
 ============================================================
+GENERIC TEMPLATE
+Axes:
+  x = e1
+  y = e2
+  z = e3
+
+Length markers:
+  (=)   equal length
+  (≠)   distinct length
+
+Angle markers:
+  +     right angle (90°)
+  / \   oblique angle (≠ 90°)
+  XXX°  explicit numeric angle (e.g. 120°)
+
+RDG Triad:
+  S = Structure   (length relations)
+  I = Interaction (angle relations)
+  D = Dynamics    (symmetry operators)
+
+SYSTEM_NAME
+S: |e1| RELATION |e2| RELATION |e3|
+I: ∠(e1,e2) = ANGLE1 ,  ∠(e2,e3) = ANGLE2 ,  ∠(e1,e3) = ANGLE3
+D: {LIST_OF_SYMMETRY_OPERATORS}
+
+  - Conventional axis choice (e.g. unique axis b = y)
+  - Special constraints (e.g. α = β = γ ≠ 90°)
+  - Centering type if extending to Bravais lattices
+
+Skeleton:
+
+        z (Lz)
+        |
+        |
+        +------ y (Ly)
+       /
+      x (Lx)
+
+Flexible angle placement examples:
+  • Orthogonal: use “+”
+  • Oblique: use “/” or “\” with angle label
+  • Explicit: write the degree value next to the edge
 
 ------------------------------------------------------------
 0. LEGEND
