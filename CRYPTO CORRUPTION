@@ -122,3 +122,122 @@
         realized E[R] < 0, E[I] > 0.
 
 +---------------------------------------------------------------+
+ CRYPTO CORRUPTION OPERATOR          
++================================================================+
+
+  RDG TRIAD MODES
+  ----------------
+    SID = { S, I, D }   = Structure, Interaction, Dynamics
+    PED = { P, E, D }   = Power, Evaluation, Dynamics
+
+  DOMAIN OBJECTS
+  --------------
+    S_pac      = S_crypto / S              ; political‑spending structure
+    S_econ     = (P, G, F, C_crime)        ; economic‑structure tuple
+    S_payoff   = (R, I, L)                 ; payoff‑structure tuple
+    S_reg      = (L_PAC, E)                ; regulatory‑dependence tuple
+
+ OPERATOR DEFINITIONS                       
++================================================================+
+
+  1. STRUCTURE OPERATOR  (SID:S)
+     ----------------------------
+       Ω_S  =  S_pac
+       Ω_S  =  α  ≈ 0.37
+
+     Interpretation:
+       High α → high structural political influence.
+
+
+  2. INTERACTION OPERATOR (SID:I)
+     ----------------------------
+       Ω_I  =  S_econ
+       Ω_I  =  (P ≈ 0, G >> P, F ↑, C_crime ≠ 0)
+
+     Interpretation:
+       Interaction domain dominated by speculation + fraud incentives.
+
+
+  3. DYNAMICS OPERATOR (SID:D)
+     --------------------------
+       Ω_D  =  S_payoff
+       Ω_D  =  (E[R] < 0, E[I] > 0, R + I - L ≈ 0)
+
+     Interpretation:
+       Zero‑ to negative‑sum dynamics; retail loses, insiders gain.
+
+
+ PED‑SIDE OPERATORS                         
++================================================================+
+
+  4. POWER OPERATOR (PED:P)
+     -----------------------
+       Π_P  =  L_PAC / S
+       Π_P  =  α  (same scalar reused as power‑weight)
+
+     Interpretation:
+       Power concentration proportional to spending share.
+
+
+  5. EVALUATION OPERATOR (PED:E)
+     ----------------------------
+       Π_E  =  E
+       Π_E  =  regulatory‑gap dependence / arbitrage exposure
+
+     Interpretation:
+       High E → system profits depend on weak regulation.
+
+
+  6. DYNAMICS OPERATOR (PED:D)
+     --------------------------
+       Π_D(s) = (1 - s)
+       where s ∈ [0,1] = regulatory strictness
+
+     Interpretation:
+       Lower s → higher arbitrage throughput.
+
+ CORRUPTION OPERATOR                    
++================================================================+
+
+  Define corruption operator K_RDG as SID→PED coupling:
+
+       K_RDG  =  Ω_S ⊗ Π_P  +  Ω_I ⊗ Π_E  +  Ω_D ⊗ Π_D
+
+  In scalar‑compressed form:
+
+       K_RDG  =  α · E · (1 - s)
+
+  Or equivalently:
+
+       K_RDG  ∝  α · E
+
+  Under crypto conditions:
+       α high (≈ 0.37)
+       E high
+       s low (lobby pressure)
+
+  Therefore:
+       K_RDG → high
+
+
+ SUMMARY
++================================================================+
+
+  SID side:
+      Ω_S: α ≈ 0.37
+      Ω_I: P ≈ 0, G >> P, F ↑, C_crime ≠ 0
+      Ω_D: E[R] < 0 < E[I]
+
+  PED side:
+      Π_P: α
+      Π_E: E high
+      Π_D: (1 - s)
+
+  Coupling:
+      K_RDG = α · E · (1 - s)
+
+  Result:
+      Crypto sector ≈ structurally zero‑sum,
+      fraud‑incentivized, politically captured system
+      with high RDG‑mode corruption operator magnitude.
+
