@@ -1,0 +1,74 @@
+TLA+ 
+============================================================
+004.0212  — Formal Methods (Computer Science)
+
+SYSTEM OVERVIEW
+---------------
+TLA+ = Tuple + Logic + Actions
+       A mathematical specification language for describing
+       and verifying system behaviors over time.
+
+CORE PILLARS
+------------
+
+1. RELATIONAL MODELING
+   --------------------
+Relational foundations
+
+   - States built from sets, functions, relations.
+   - System components modeled as mappings:
+         ServerStatus = [ server -> status ]
+         LockOwner    = [ lock -> process ]
+   - Emphasis on set-theoretic operators:
+         UNION, DOMAIN, OVERRIDE, FILTER
+
+2. TUPLE-BASED STATE MODEL
+   ------------------------
+   - A "state" = tuple of variable assignments.
+   - Example:
+         State = << pc, mem, inbox, outbox >>
+   - Actions relate current-state to next-state:
+         Action == pc' = pc + 1 /\ mem' = mem
+
+   (see: [State tuples](ca://s?q=Describe_state_tuples_in_TLA%2B))
+
+3. TEMPORAL LOGIC
+   ---------------
+Temporal operators
+
+   - Behaviors = infinite sequences of states.
+   - Safety:   []P      ("always P")
+   - Liveness: <>Q      ("eventually Q")
+   - Used to specify correctness of distributed systems.
+
+4. SEMANTIC MODELING
+   ------------------
+Module semantics
+
+   - Meaning of a spec = set of all behaviors satisfying it.
+   - TLC explores reachable behaviors.
+   - TLAPS proves symbolic invariants.
+
+------------------------------------------------------------
+
+TLA+ =
+   +-------------------------------+
+   |  RELATIONS   → structure      |
+   |  TUPLES      → state          |
+   |  ACTIONS     → transitions    |
+   |  TEMPORAL    → behaviors      |
+   |  SEMANTICS   → meaning        |
+   +-------------------------------+
+
+------------------------------------------------------------
+RDG-COMPATIBLE VIEW (STRUCTURE / INTERACTION / DYNAMICS)
+------------------------------------------------------------
+SID (Structure / Interaction / Dynamics)
+PED (Power / Evaluation / Dynamics)
+
+Mapping:
+   RELATIONAL      → SID.Structure
+   TUPLES          → SID.Interaction (state relations)
+   TEMPORAL LOGIC  → SID.Dynamics (behavioral evolution)
+   SEMANTICS       → PED.Evaluation + Dynamics
+
