@@ -1,0 +1,207 @@
+RELATIONAL MONSTER PROPAGATION IN MOONSHINE
+===============================================================
+
+Core Thesis:
+    Monster symmetry is NOT a miracle.
+    It is the relational fixed point of a propagation chain:
+
+        S(5,8,24) → Golay → Leech → Z2 Twist → V^natural → Griess
+
+    Each layer is a lift of the previous one under SID/PED operators.
+
+1. SID / PED RELATIONAL FRAMEWORK
+---------------------------------------------------------------
+
+SID: Structure → Interaction → Dynamics
+PED: Power → Evaluation → Dynamics
+
+Propagation:
+    Structure (Witt)
+        → Interaction (Golay)
+        → Dynamics (Leech)
+        → Boundary Twist (Z2)
+        → Closure (V^natural)
+        → Operator Algebra (Griess)
+
+Monster = global relational fixed point.
+
+2. THE RELATIONAL SEED: WITT DESIGN S(5,8,24)
+---------------------------------------------------------------
+
+24 points
+759 octads (8-subsets)
+Every 5-subset lies in exactly one octad.
+
+Symmetry: M24
+
+ASCII:
+    [ S(5,8,24) ]
+        |
+        +-- incidence geometry
+        +-- parity constraints
+        +-- octad structure
+        +-- M24 action
+
+This is the combinatorial DNA of Moonshine.
+
+3. FIRST LIFT: GOLAY CODE C_24
+---------------------------------------------------------------
+
+Π_Witt: S(5,8,24) → F2^24
+
+Golay parameters:
+    Length: 24
+    Dimension: 12
+    Min weight: 8
+    Weight distribution:
+        0^1, 8^759, 12^2576, 16^759, 24^1
+
+Golay sign-cohomology:
+    - determines Z2 twist
+    - determines parity flips
+    - determines cocycle constraints
+
+ASCII:
+    [ S(5,8,24) ] --Π_Witt--> [ C_24 ]
+        M24 symmetry preserved
+
+4. SECOND LIFT: LEECH LATTICE Λ_24
+---------------------------------------------------------------
+
+Π_Golay: C_24 → Λ_24 via Construction A
+
+Properties:
+    - even unimodular
+    - 24-dimensional
+    - NO norm-2 roots (crucial)
+    - symmetry: Co0, Co1, Co2
+
+    [ C_24 ] --Π_Golay--> [ Λ_24 ]
+        M24 → Co0 symmetry expansion
+
+5. THE CRITICAL HINGE: Z2 BOUNDARY TWIST
+---------------------------------------------------------------
+
+Involution:
+    θ(x) = -x
+
+Splits VOA:
+    V_Λ^+  (untwisted)
+    V_Λ^-  (twisted, fractional moding)
+
+Golay controls:
+    - which vectors flip
+    - fusion rules
+    - conformal weight shifts
+    - modular invariance
+
+    [ Λ_24 ]
+        |
+        +-- apply θ
+        |
+        +-- Z2 orbifold (Golay-controlled)
+        |
+        v
+    [ V^natural ]
+
+Monster symmetry appears ONLY here.
+
+6. EMERGENCE OF V^NATURAL (MOONSHINE VOA)
+---------------------------------------------------------------
+
+V^natural = V_Λ^+ ⊕ V_Λ^T
+
+Properties:
+    - Aut(V^natural) = Monster M
+    - Partition function = j(τ) - 744
+    - McKay-Thompson series T_g(τ)
+
+    [ V^natural ]
+        |
+        +-- fractional modes
+        +-- modular invariance
+        +-- Monster action
+
+7. WEIGHT-2 PROJECTION → GRIESS ALGEBRA
+---------------------------------------------------------------
+
+V_2^natural = Griess algebra
+
+Dimensions:
+    Full: 196,884
+    Irreducible part: 196,883
+
+Properties:
+    - commutative
+    - non-associative
+    - automorphism group = Monster
+
+    [ V^natural ] --Π_Griess--> [ Griess ]
+        Monster symmetry preserved
+
+8. FINAL PROJECTION: Π_VOA → 3D TENSOR
+---------------------------------------------------------------
+
+Π_VOA: V^natural → R^(71 × 59 × 47)
+
+Prime factorization:
+    196,883 = 47 × 59 × 71
+
+ASCII:
+    [ Griess 196,883D ]
+        |
+        +-- factorization into primes
+        |
+        v
+    [ 71 × 59 × 47 tensor ]
+
+This is the geometric collapse of Monster representation data.
+
+9. FULL PROJECTION CASCADE Γ
+---------------------------------------------------------------
+
+Γ = Π_VOA ∘ Π_Griess ∘ Π_Leech ∘ Π_Golay ∘ Π_Witt
+
+    S(5,8,24)
+        ↓ Π_Witt
+    C_24
+        ↓ Π_Golay
+    Λ_24
+        ↓ Π_Leech
+    Griess
+        ↓ Π_VOA
+    Tensor(71×59×47)
+
+10. SPIRAL COORDINATIZATION OF MOONSHINE
+---------------------------------------------------------------
+
+Radius zones:
+    r = 0        → identity (1A)
+    meso         → Golay weights (M24)
+    transition   → Leech shells (Co0)
+    macro        → Griess eigenvalues (Monster)
+    winding      → McKay-Thompson coefficients
+
+ spiral:
+
+    center: vacuum
+    |
+    +-- Golay fractal ring
+    |
+    +-- Leech shell expansion
+    |
+    +-- Monster macro horizon
+    |
+    +-- modular winding (j(τ)-744)
+
+11. FINAL STATEMENT
+---------------------------------------------------------------
+
+    Witt → Golay → Leech → Twist → VOA → Griess → Tensor
+    |        |        |        |        |         |
+    v        v        v        v        v         v
+    M24 → M24 → Co0 → Monster → Monster → Monster → Monster
+
+Monster symmetry is the inevitable relational fixed point.
+
+===============================================================
