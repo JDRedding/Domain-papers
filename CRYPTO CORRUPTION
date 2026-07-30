@@ -1,8 +1,24 @@
  CRYPTO CORRUPTION MODEL                      
 +---------------------------------------------------------------+
+The following is a  compact model framing the crypto industry as
+a largely speculative, zero- to negative-sum system with high
+structural corruption and political capture. Retail investors
+lose on average while insiders gain, and a large crypto share
+of corporate political spending plus regulatory‑gap dependence
+drives low regulatory strictness.
+
+Crypto behaves like a speculative casino that uses political 
+spending to preserve regulatory gaps, producing systematic 
+retail losses and insider gains.
 
   VARIABLES
   ---------
+  Variables: defines spending and payoff variables (S, S_crypto, 
+  α), economic activities (P productive output, G speculation, F 
+  fraud, C_crime), payoffs (R retail, I insider, L losses), 
+  lobbying (L_PAC), regulatory‑gap dependence (E), and corruption 
+  weights (β, γ).
+
     S              = total tracked corporate political spending
     S_crypto       = crypto‑aligned political spending
     α              = crypto share of corporate spending
@@ -23,6 +39,10 @@
 +---------------------------------------------------------------+
  FORMAL SYSTEM (STRUCTURAL)          
 +---------------------------------------------------------------+
+Empirical example: uses Public Citizen (June 2026) numbers to 
+estimate α ≈ 0.37 (crypto ≈ 37% of tracked corporate political 
+spending).
+
 
   1. POLITICAL SPENDING SHARE
      ------------------------
