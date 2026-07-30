@@ -1,0 +1,45 @@
+PVS - Prototype Verification System
+============================================================
+Domain = Formal Methods / Program Verification
+      005.13  Programming languages & methods
+      511.3   Mathematical logic
+      519.2   Computational mathematics
+
+1. FUNCTIONAL EXTENSIONALITY
+------------------------------------------------------------
+- Equality of functions is EXTENSIONAL:
+      f = g  <=>  ∀x. f(x) = g(x)
+- Built directly into PVS logic.
+- Makes reasoning about higher‑order functions natural.
+
+2. PRIMITIVE TUPLES
+------------------------------------------------------------
+- Tuples are FIRST-CLASS:
+      [a, b, c]
+- True product types, not encoded records.
+- Integrates cleanly with dependent types & subtypes.
+
+3. PARTIAL FUNCTIONS
+------------------------------------------------------------
+- Partiality handled via:
+      • Subtypes
+      • Dependent types
+      • TCCs (Type‑Correctness Conditions)
+- PVS forces proof obligations whenever domain constraints
+  must be shown.
+
+4. STRONG AUTOMATION
+------------------------------------------------------------
+- Built‑in decision procedures:
+      • Equality
+      • Linear arithmetic
+      • BDD-based propositional simplification
+      • Symbolic model checking
+- Automatically discharges most TCCs.
+- Industrial‑strength automation.
+
+6. RELATIONSHIPS
+------------------------------------------------------------
+- Extensionality + tuples → clean modeling of structures.
+- Partial functions + dependent types → safe specifications.
+- Automation → PVS handles the grunt work.
