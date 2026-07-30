@@ -30,7 +30,6 @@ S: |e1| = |e2| = |e3|
 I: all angles = 90°
 D: C4x, C4y, C4z
 
-ASCII:
         z
         |
         |
@@ -75,7 +74,6 @@ D: C6z
 
   - Hexagonal basal plane angle (x,y) = 120° is correctly shown.
 
-ASCII:
         z (≠)
         |
         |
