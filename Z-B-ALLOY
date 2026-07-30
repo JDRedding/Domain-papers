@@ -1,0 +1,61 @@
+Z / B / ALLOY
+FORMAL METHODS 
+===============================================================
+
+RELATIONAL FOUNDATIONS
+----------------------
+Z:      Classical set theory; relations = sets of tuples.
+B:      Same as Z; relational calculus + substitution rules.
+Alloy:  Typed finite relational logic; everything is a relation.
+
+Key Distinction:
+Z/B = infinite mathematical universe.
+Alloy = finite SAT-scope relational universe.
+
+---------------------------------------------------------------
+SCHEMA / STRUCTURING CALCULUS
+------------------------------
+Z:      Schema calculus (declarations + predicates).
+        Supports inclusion, hiding, renaming, Δ/Ξ change schemas.
+
+B:      Machines, variables, invariants, operations.
+        No schema calculus, but operations serve similar role.
+
+Alloy:  Signatures + facts; no schema calculus.
+        Structure emerges from relational constraints.
+
+---------------------------------------------------------------
+MULTI-ARITY RELATIONS
+---------------------
+Z:      n-ary relations via n-tuples; projection via set comprehension.
+B:      Same as Z; multi-arity exists but less emphasized.
+Alloy:  First-class n-ary relations.
+        Built-in operators: join, transpose, product, closure.
+
+Key Distinction:
+Alloy treats multi-arity as the *primary modeling tool*.
+
+---------------------------------------------------------------
+EXTENSIONAL EQUALITY
+--------------------
+Z:      Two sets/relations equal iff same members.
+B:      Same classical extensionality.
+Alloy:  Extensional equality enforced in SAT encoding.
+
+Key Distinction:
+Z/B = mathematical extensionality.
+Alloy = computational extensionality (finite model).
+
+---------------------------------------------------------------
+CONCEPTUAL SUMMARY
+------------------
+Z/B:    Heavyweight, infinite, set-theoretic, structured.
+Alloy:  Lightweight, finite, relational, SAT-analyzed.
+
+All share:
+- Relational semantics
+- Extensional equality
+- Multi-arity relations
+- Formal specification intent
+
+===============================================================
