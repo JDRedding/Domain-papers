@@ -1,0 +1,32 @@
+M I Z A R   F O U N D A T I O N S
+============================================================
+
+[1] FOUNDATIONAL BASIS
+------------------------------------------------------------
+• Core Logic: ZF-style set theory
+• Added Axiom: Tarski–Grothendieck Universe (TG)
+• Strength: ≈ ZFC + inaccessible cardinal
+• Everything is a set; equality is EXTENSIONAL.
+
+  EXTENSIONAL EQUALITY:
+      A = B  <=>  ∀x (x ∈ A ↔ x ∈ B)
+
+[2] PRIMITIVE CONSTRUCTIONS
+------------------------------------------------------------
+• Tuples: primitive objects, not Kuratowski encodings
+• Ordered pairs: primitive (TARSKI:def 2)
+• Relations: primitive sets of ordered pairs
+
+  Rich relational calculus:
+      - domain
+      - range
+      - inverse
+      - composition
+      - relational image
+
+[3] MIZAR STYLE
+------------------------------------------------------------
+• Set-theoretic universe
+• Soft typing layer
+• Structures built on extensional equality
+• Mathematical objects = sets with structure
