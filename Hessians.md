@@ -1,4 +1,5 @@
-# Hessian and Related Curvature Objects
+# Hessians
+## Hessian and Related Curvature Objects
 
 Let $\(L(\theta)\)$ be a scalar loss (or empirical risk) with parameters $\(\theta \in \mathbb{R}^d\)$.
 
