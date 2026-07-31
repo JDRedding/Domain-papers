@@ -1,3 +1,15 @@
+LEAN Automated reasoning
+003.54 (Automated reasoning / AI systems for reasoning) 
+511.3 (Mathematical logic / symbolic logic) 
+
+This file is a structured note about the Lean proof assistant and the Aristotle 
+autonomous-proving agent. It lists reasons not to use Lean, gives an overview 
+of Lean (identity, components, workflow, keywords, links), describes the 
+Aristotle agent (what it is, its core loop, why it matters), enumerates 
+Aristotle’s capabilities (fill sorries, formalize math, prove from prompts), 
+covers Lean basics and a short comparison with Coq and Agda, and finishes with 
+why Aristotle chooses Lean.
+
 _ROOT
 └─ Reasons NOT to Use Lean
    ├─ Steep learning curve
