@@ -8,7 +8,7 @@ Surface play stays simple. The deeper cosmology lives in the shared Flux track, 
 
 ### 1. Core Components
 
-**Card Categories (from the sets we built)**
+**Card Categories (from the sets)**
 
 | Layer | Cards | Role |
 |-------|-------|------|
