@@ -1,0 +1,116 @@
+M I Z A R   F O U N D A T I O N S
+============================================================
+511.3224 Large cardinals & universes
+
+The file "Mizar Foundations" outlines the foundational choices and 
+style of the Mizar formalization framework: a ZF-style set theory 
+extended with the Tarski–Grothendieck universe, primitive tuple/pair/
+relation constructions, and a soft-typing, set‑based style where 
+mathematical objects are sets up to extensional equality.
+
+[1] FOUNDATIONAL BASIS
+------------------------------------------------------------
+• Core Logic: ZF-style set theory
+• Added Axiom: Tarski–Grothendieck Universe (TG)
+• Strength: ≈ ZFC + inaccessible cardinal
+• Everything is a set; equality is EXTENSIONAL.
+
+  EXTENSIONAL EQUALITY:
+      A = B  <=>  ∀x (x ∈ A ↔ x ∈ B)
+
+[2] PRIMITIVE CONSTRUCTIONS
+------------------------------------------------------------
+• Tuples: primitive objects, not Kuratowski encodings
+• Ordered pairs: primitive (TARSKI:def 2)
+• Relations: primitive sets of ordered pairs
+
+  Rich relational calculus:
+      - domain
+      - range
+      - inverse
+      - composition
+      - relational image
+
+[3] MIZAR STYLE
+------------------------------------------------------------
+• Set-theoretic universe
+• Soft typing layer
+• Structures built on extensional equality
+• Mathematical objects = sets with structure
+
+[4] DRAWBACKS AND REASONS NOT TO USE MIZAR FOUNDATIONS
+------------------------------------------------------------
+• SET-ONLY ONTOLOGY
+    Everything is a set. No native type theory, no higher-order
+    primitives. Users wanting inductive types, dependent types,
+    or polymorphism must encode them manually as set-structures.
+
+• SOFT TYPING LIMITATIONS
+    Typing is predicate-based and non-coercive. Type errors often
+    manifest as failed proofs rather than structural mismatches.
+    Complex structures require many auxiliary registrations.
+
+• FIRST-ORDER ONLY
+    No higher-order logic. Quantifying over predicates, functions,
+    or classes requires encodings. This can make some modern
+    mathematics (especially category theory or HoTT-style work)
+    more verbose than in HOL/Coq/Lean.
+
+• TG AXIOM STRENGTH
+    Tarski–Grothendieck implies inaccessible cardinals. Some users
+    prefer weaker foundations (pure ZFC, NBG, ETCS, HoTT) and may
+    view TG as stronger than necessary for everyday mathematics.
+
+• PRIMITIVE TUPLES / RELATIONS
+    While convenient, these primitives differ from standard
+    Kuratowski encodings. Porting proofs to other systems often
+    requires translation layers or re-encoding of tuples/relations.
+
+• LEGACY INFRASTRUCTURE
+    Mizar’s language and tooling are mature but older. Integration
+    with modern proof ecosystems (Lean, Coq, Isabelle) is limited.
+    Automation is intentionally conservative, requiring more manual
+    guidance compared to newer systems.
+
+• CATEGORY-THEORETIC FRICTION
+    Large categories are “small” only relative to a TG universe.
+    Users who prefer explicit size distinctions (small/large/locally
+    small) may find Mizar’s universe-based approach less transparent.
+
+• STEEP LEARNING CURVE
+    The combination of soft typing, strict syntax, and conservative
+    automation can be challenging for newcomers. Proofs often require
+    detailed justification steps that other systems automate.
+
+[5] THE “FALLACY OF INFINITIES”
+------------------------------------------------------------
+The Tarski–Grothendieck axiom postulates the existence of infinite 
+universes, each of which corresponds to aninaccessible cardinal. This 
+commits the system to extremely large infinities without mathematical
+necessity.
+
+Core objections:
+    • UNNECESSARY 
+        Most mathematics does not require inaccessible cardinals. 
+        TG introduces far more set-theoretic power than typical 
+        ZFC developments.
+
+    • SIZE-OBSCURING
+        Treating large categories as “small relative to a
+        universe” hides genuine size distinctions. Some
+        category-theoretic arguments become less transparent.
+
+    • FOUNDATIONAL INFLATION
+        TG inflates ontology: instead of proving existence
+        of large structures, the axiom grants them wholesale.
+
+    • PHILOSOPHICAL SKEPTICISM
+        Grothendieck universes are seen by some as a
+        convenience axiom rather than a principled foundation.
+        Assuming huge sets exist simply because they make 
+        category theory tidy.
+
+    • PORTABILITY COST
+        Formalizations relying on TG may not translate
+        directly to weaker systems (ZFC, NBG, ETCS, HoTT),
+        requiring re‑engineering of size arguments.
