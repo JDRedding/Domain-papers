@@ -1,6 +1,6 @@
 # State‑Determined System
  
-RDG is a state‑determined formalism: 
+RDG can be treated as a state‑determined formalism: 
 
 	the state (S) is the system, 
 
