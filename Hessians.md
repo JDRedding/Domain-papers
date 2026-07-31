@@ -1,6 +1,8 @@
 # Hessians
 This note collects practical curvature objects and approximations used to incorporate second‑order information into optimization without forming the full Hessian.
 
+Hessians aren’t new at all, but they are suddenly everywhere because modern machine learning, large‑scale optimization, and scientific computing have finally reached the scale where second‑order curvature information is both computable and useful. The recent surge is driven by breakthroughs in efficient Hessian approximation, spectral analysis, and preconditioning, making Hessians practical even for massive models.
+
 It covers definitions, efficient computations (HVP), stochastic estimators (Hutchinson), adaptive diagonal approximations (AdaHessian), structured approximations (Gauss–Newton / GGN, K‑FAC), and quasi‑Newton methods (L‑BFGS). It emphasizes computational cost and practical trade‑offs.
 
 ## Hessian and Related Curvature Objects
