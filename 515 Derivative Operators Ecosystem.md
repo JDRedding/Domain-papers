@@ -1,4 +1,7 @@
 # 🌐 The Derivative Operators Ecosystem
+
+This document catalogs derivative operators into eight families grouped by the kind of change they measure (linear, curvature, flow, field structure, higher-order, functional, geometric, and statistical/optimization), gives representative examples for each family, and states the guiding question each family answers.
+
 Derivative operators fall into *families*, each defined by the *kind of change* they measure: linear, curvature, flow, variation, structure, or geometry.
 
 ---
