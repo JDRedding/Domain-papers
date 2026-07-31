@@ -1,0 +1,92 @@
+TURNER DIAGONAL
+============================================================
+
+A Turner-move is a rotation.
+
+Diagonal = geometric or algebraic cases
+
+THE TURN: Rotate the frame so all cases align with a single invariant structure.
+
+: DIAGONAL = IDENTITY_GRAPH  ⊕  NON-ADJACENT_MATCHING
+
+1. IDENTITY_GRAPH  (invariant)
+============================================================
+
+Definition:
+    The diagonal morphism Δ_X : X → X×X
+    The equal-coordinate locus {(x,x)}
+
+Interpretation:
+    S: identity structure
+    I: identity pairing
+    D: trivial dynamics (no displacement)
+
+Diagram:
+
+        X
+        |\
+        | \
+        |  \
+        |   \
+        v    v
+      X×X <-- Δ_X
+
+This is the structural anchor. Everything else is a projection,
+shadow, or deformation of this identity graph.
+
+2. NON-ADJACENT MATCHING  (extended scope)
+============================================================
+
+Any privileged cross-connection under indexing, ordering, or symmetry that is NOT adjacency.
+
+Examples:
+    - polygon diagonals
+    - matrix diagonals
+    - anti-diagonals
+    - cube/tesseract space diagonals
+    - Cantor diagonal argument
+    - diagonal matrices
+
+Interpretation:
+    S: same underlying set or indexing scheme
+    I: cross-connection rule (non-adjacent)
+    D: displacement or symmetry-induced correspondence
+
+ASCII Diagram (generic):
+
+        a ---- x ---- b
+         \           /
+          \         /
+           \       /
+            \     /
+             \   /
+              \ /
+               *
+            (diagonal)
+
+3. The Turner Rotation (⊕)
+============================================================
+
+⊕ is NOT an algebraic sum.
+⊕ is a conceptual union:
+
+    - Left term = invariant essence
+    - Right term = full scope of realizations
+    - Together = the Turner pivot: a rotated frame revealing a single structural core behind many surface forms
+
+Interpretation:
+
+        STATE_0:   [ scattered meanings ]
+        TURN:     [ rotate frame ]
+        STATE_1:    [ unified invariant ]
+
+4. Turner-Diagonal Operator
+============================================================
+
+DIAGONAL  ≡  IDENTITY_GRAPH  ⊕  NON-ADJACENT_MATCHING
+
+This is the Turner move:
+a rotation that preserves structure while revealing the
+deep invariant behind all uses of diagonal.
+
+============================================================
