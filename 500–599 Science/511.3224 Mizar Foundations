@@ -8,6 +8,11 @@ extended with the Tarski–Grothendieck universe, primitive tuple/pair/
 relation constructions, and a soft-typing, set‑based style where 
 mathematical objects are sets up to extensional equality.
 
+The Tarski–Grothendieck axiom is labeled “stronger” only because
+it assumes the existence of very large infinite universes. This
+does not imply superiority; it simply reflects the classical
+classification of axioms by the infinities they posit.
+
 [1] FOUNDATIONAL BASIS
 ------------------------------------------------------------
 • Core Logic: ZF-style set theory
@@ -30,6 +35,13 @@ mathematical objects are sets up to extensional equality.
       - inverse
       - composition
       - relational image
+
+This refer only to a technical notion used in classical set theory:
+the existence of larger infinite objects.
+
+    • not “more powerful” in a practical sense
+    • not “more expressive” for everyday mathematics
+    • not a philosophical ranking of foundations
 
 [3] MIZAR STYLE
 ------------------------------------------------------------
@@ -103,6 +115,14 @@ Core objections:
     • FOUNDATIONAL INFLATION
         TG inflates ontology: instead of proving existence
         of large structures, the axiom grants them wholesale.
+
+        An axiom is called stronger when it asserts the existence
+        of more expansive infinite sets (e.g., inaccessible cardinals).
+        This is a statement about consistency strength, not usefulness.
+
+        An axiom is called weaker when it commits to fewer or smaller
+        infinite sets. It does not imply inferiority or practical limits;
+        it simply avoids assuming certain large infinities.
 
     • PHILOSOPHICAL SKEPTICISM
         Grothendieck universes are seen by some as a
