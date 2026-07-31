@@ -1,0 +1,122 @@
+# Dual‑axis fortress
+
+A defensive spine running Gatehouse → Battlement → Great Hall → 
+Chapel, and a domestic spine running Kitchen → Guardroom → Guest 
+Chambers → Upper Chapel → Solar. The courtyard acts as the global 
+mixing node.
+
+## 🔗 RDG Tri‑Mode Mapping
+
+### **SID (Structure–Interaction–Dynamics)**
+- **Structure:** Gatehouse, Battlement, Armories  
+- **Interaction:** Great Hall, Guest Chambers  
+- **Dynamics:** Kitchens, Storage, Utility
+
+### **PED (Power–Evaluation–Dynamics)**
+- **Power:** Lord’s Solar, Gatehouse, Battlement  
+- **Evaluation:** Chapels (lower + upper), Library  
+- **Dynamics:** Kitchens, Guardroom, Bedrooms
+
+The **courtyard** is the global Q‑moderation node — the place where flows reset, mix, and redistribute.
+
+FIRST FLOOR
+
+
+     [Armory]──[Utility]──[Chapel]──[Storage]──[Utility]──[Armory]
+               │                                       │
+          [Great Hall]──[Kitchen]──[Guardroom]         │
+               │                                       │
+          [Battlement]                              [Guest]
+               │                                   [Chambers]
+          [Gatehouse]──[Armory]                        │
+               │                                   [Chapel]
+               │                                   [Storage]
+               │
+               └────────────── COURTYARD ──────────────┘
+                              (fountain)
+
+
+SECOND FLOOR
+
+
+          [Lord's Solar]──[Lady's Bedchamber]──[Bedrooms]
+               │                   │
+          [Battlement]         [Library]
+               │                   │
+          [Gatehouse]          [Upper Chapel]
+               │                   │
+               │               [Bedrooms]──[Solar]
+               │
+               └───── COURTYARD ───┘
+
+---
+
+## 🏰 Structure
+
+### **1. Defensive Spine — Gatehouse → Battlement → Great Hall → Chapel**
+This is the “S‑mode” (Structure) backbone:
+- Gatehouse anchors entry control.
+- Battlement provides vertical defense and observation.
+- Great Hall is the political heart — the “I‑mode” (Interaction) node where outside meets inside.
+- Chapel stabilizes the moral‑ritual axis.
+
+This spine is unusually **continuous**, meaning the lord can move from sacred → political → defensive zones without crossing domestic space.
+
+---
+
+### **2. Domestic Spine — Kitchen → Guardroom → Guest → Upper Chapel → Solar**
+This is the “D‑mode” (Dynamics) backbone:
+- Kitchen → Guardroom: service + security.
+- Guest Chambers: hospitality buffer.
+- Upper Chapel: private ritual.
+- Solar: private governance.
+
+This spine is more **vertical**, rising from labor → semi‑public → private → elite.
+
+---
+
+## 🧭 First Floor — Functional Flow
+
+### **Armory Cluster**  
+Two armories flank the long axis, plus one near the Gatehouse. This triangulates weapon access:
+- West armory supports Great Hall + Chapel.
+- East armory supports Guest Wing.
+- Gatehouse armory supports rapid deployment.
+
+### **Great Hall**  
+Central social/political chamber. Its adjacency to Kitchen and Battlement is classic:
+- Kitchen → Great Hall = service flow.
+- Great Hall → Battlement = authority → defense flow.
+
+### **Chapel + Storage**  
+Chapel sits between utility nodes, suggesting ritual purity emerging from labor. Storage adjacency implies offerings, supplies, and ritual logistics.
+
+### **Courtyard**  
+The courtyard is the global mixing node:
+- Fountain = symbolic purification.
+- All flows eventually pass through or around it.
+
+---
+
+## 🧱 Second Floor — Power & Privacy
+
+### **Lord’s Solar**  
+Primary governance chamber. Its adjacency to:
+- Battlement = oversight.
+- Lady’s Bedchamber = domestic-political unity.
+
+### **Lady’s Bedchamber**  
+Placed between Solar and Bedrooms, forming a mediating node:
+- Symbolically: lineage, continuity, household authority.
+- Functionally: private access control.
+
+### **Library**  
+Library sits on the domestic spine, not the defensive one. This implies:
+- Knowledge = household continuity rather than military strategy.
+- Upper Chapel adjacency = sacred learning.
+
+### **Upper Chapel**  
+Private ritual space for the elite. Its link to Bedrooms and Solar forms a triad:
+- Ritual → Rest → Rule.
+
+---
