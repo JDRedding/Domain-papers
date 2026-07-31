@@ -165,4 +165,4 @@ The product $\(H_k g\)$ is computed via a two‑loop recursion in $\(O(md)\)$ ti
 
 ## Summary
 
-These methods provide practical ways to approximate or exploit curvature in optimization, reducing the naive \(O(d^2)\)–\(O(d^3)\) cost of full Newton steps to linear or near‑linear cost in the number of parameters.
+These methods provide practical ways to approximate or exploit curvature in optimization, reducing the naive $\(O(d^2)\)–\(O(d^3)\)$ cost of full Newton steps to linear or near‑linear cost in the number of parameters.
