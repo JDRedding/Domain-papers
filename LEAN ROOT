@@ -1,0 +1,105 @@
+_ROOT
+└─ Reasons NOT to Use Lean
+   ├─ Steep learning curve
+   ├─ Mathlib still incomplete in some areas
+   ├─ Syntax unfamiliar to non-FP users
+   ├─ Harder for classical mathematicians
+   ├─ Not ideal for non-math formal verification
+   └─ Smaller ecosystem than Coq for industry proofs
+
+LEAN
+├─ Lean (Proof Assistant)
+│  │  └─ Documentation page
+│  │     https://leanprover-community.github.io/mathlib4_docs/
+│  │ 
+│  ├─ Identity
+│  │  ├─ Dependently typed language
+│  │  ├─ Formal proof assistant
+│  │  └─ Built at Microsoft Research
+│  │
+│  ├─ Components
+│  │  ├─ Language (Lean 4)
+│  │  ├─ Kernel (proof checker)
+│  │  ├─ Elaborator (type inference)
+│  │  └─ mathlib (massive math library)
+│  │
+│  ├─ Workflow
+│  │  ├─ Write definitions
+│  │  ├─ State theorems
+│  │  ├─ Write proofs (or `sorry`)
+│  │  └─ Kernel verifies correctness
+│  │  └─ Theorem Proving in Lean 
+│  │      https://leanprover.github.io/theorem_proving_in_lean4/
+│  │
+│  └─ Keywords
+│     ├─ def
+│     ├─ theorem
+│     ├─ by
+│     ├─ simp
+│     └─ sorry (placeholder)
+│
+├─ Aristotle (Formal Reasoning Agent)
+│  ├─ Identity
+│  │  ├─ Autonomous Lean 4 proof generator
+│  │  ├─ Multi-hour agentic search
+│  │  └─ Natural-language → Lean → verified proofs
+│  │
+│  ├─ Core Loop
+│  │  ├─ Read input (Lean or English)
+│  │  ├─ Build Lean structures
+│  │  ├─ Attempt proofs
+│  │  ├─ Repair gaps
+│  │  ├─ Compress proofs
+│  │  └─ Return Lean-verified output
+│  │
+│  └─ Why it matters
+│     ├─ First AI acting like a mathematician
+│     ├─ Works directly in Lean ecosystem
+│     └─ Bridges informal → formal mathematics
+│
+├─ Capabilities
+│  ├─ Fill Sorries
+│  │  ├─ Input: Lean file with `sorry`
+│  │  ├─ Output: Fully verified proofs
+│  │  └─ Behavior: Gap repair + proof synthesis
+│  │
+│  ├─ Formalize Mathematics
+│  │  ├─ Input: English math (paper, notes)
+│  │  ├─ Output: Lean definitions + proofs
+│  │  └─ Behavior: Auto-formalization pipeline
+│  │
+│  └─ Prove from Prompts
+│     ├─ Input: Plain English theorem
+│     ├─ Output: Lean theorem + proof
+│     └─ Behavior: NL → Lean → kernel verification
+│
+├─ Lean Basics
+│  ├─ Definitions (`def`)
+│  ├─ Theorems (`theorem`)
+│  ├─ Proof blocks (`by ...`)
+│  ├─ Tactics (`simp`, `intro`, `apply`)
+│  ├─ `sorry` as placeholder
+│  └─ Learn Lean https://lean-lang.org/learn/
+│
+├─ Lean vs Coq vs Agda
+│  ├─ Coq
+│  │  ├─ Oldest (1984)
+│  │  ├─ French (INRIA)
+│  │  └─ Heavy formal verification
+│  │
+│  ├─ Agda
+│  │  ├─ Swedish (Chalmers)
+│  │  ├─ FP/type-theory oriented
+│  │  └─ Popular in Haskell circles
+│  │
+│  └─ Lean
+│     ├─ Fast, modern, self-hosting
+│     └─ Massive mathlib + AI ecosystem
+│
+└─ Why Aristotle Uses Lean
+   ├─ Fast kernel → quick verification
+   ├─ Math library (mathlib)
+   ├─ Syntax easier for AI
+   └─ Community + tooling
+
+
