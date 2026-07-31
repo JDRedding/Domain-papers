@@ -1,4 +1,8 @@
 # Hessians
+This note collects practical curvature objects and approximations used to incorporate second‑order information into optimization without forming the full Hessian.
+
+It covers definitions, efficient computations (HVP), stochastic estimators (Hutchinson), adaptive diagonal approximations (AdaHessian), structured approximations (Gauss–Newton / GGN, K‑FAC), and quasi‑Newton methods (L‑BFGS). It emphasizes computational cost and practical trade‑offs.
+
 ## Hessian and Related Curvature Objects
 
 Let $\(L(\theta)\)$ be a scalar loss (or empirical risk) with parameters $\(\theta \in \mathbb{R}^d\)$.
