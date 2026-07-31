@@ -2,6 +2,24 @@
 
 This document catalogs derivative operators into eight families grouped by the kind of change they measure (linear, curvature, flow, field structure, higher-order, functional, geometric, and statistical/optimization), gives representative examples for each family, and states the guiding question each family answers.
 
+```
+STRUCTURE-MODE (linearization)
+    ↓
+INTERACTION-MODE (curvature)
+    ↓
+DYNAMICS-MODE (flow/transport)
+    ↓
+FIELD-MODE (gradient/div/curl)
+    ↓
+HIGHER-MODE (nested tensors)
+    ↓
+FUNCTIONAL-MODE (variation)
+    ↓
+GEOMETRIC-MODE (curved spaces)
+    ↓
+OPTIMIZATION-MODE (sensitivity)
+```
+
 Derivative operators fall into *families*, each defined by the *kind of change* they measure: linear, curvature, flow, variation, structure, or geometry.
 
 ---
@@ -102,3 +120,125 @@ These measure sensitivity, curvature, and uncertainty.
 - **Adjoint operators** — dual linearization operators.
 
 These operators answer: **“How does a system respond to perturbations?”**
+
+# **RDG‑Operators Ecosystem**
+
+**Takeaway:** The eight families defined correspond to eight *modes of change*: linear, curvature, flow, field‑structure, higher‑order, functional, geometric, and statistical/optimization. Each family answers a distinct *guiding question* about how objects evolve, deform, or respond.
+
+---
+
+## 1️⃣ **Local Linearization**  
+**Guiding question:** **“What is the first‑order linear behavior of this object?”**
+
+These operators extract the *tangent approximation* of a function, field, or map.
+
+- **Directional derivative** — rate of change along a chosen direction.  
+- **Fréchet derivative** — full linearization in Banach spaces.  
+- **Gateaux derivative** — directional derivative in infinite‑dimensional spaces.  
+- **Pushforward** — derivative as a tangent‑space map.  
+- **Lie derivative** — linear change along a flow.  
+- **Exterior derivative** — linearization of differential forms.
+
+**RDG note:** These are pure **Structure‑mode** operators: they extract the linear skeleton of an object.
+
+---
+
+## 2️⃣ **Curvature & Second‑Order**  
+**Guiding question:** **“How does this object bend or curve?”**
+
+These measure *second‑order deviation* from linearity.
+
+- **Second variation** — curvature of a functional.  
+- **Second Fréchet derivative** — infinite‑dimensional curvature.  
+- **Laplacian** — trace of second‑order change.  
+- **D’Alembertian** — spacetime wave operator.  
+- **Riemann curvature tensor** — intrinsic curvature of a manifold.  
+- **Christoffel symbols** — connection coefficients encoding second‑order geometry.
+
+**RDG note:** These are **Interaction‑mode** operators: they measure how linear pieces fail to commute or align.
+
+---
+
+## 3️⃣ **Flow & Transport**  
+**Guiding question:** **“How does this object change as it moves?”**
+
+These operators track change *along trajectories, flows, or evolution laws*.
+
+- **Material derivative** — change following a moving particle.  
+- **Lie derivative** — change along a vector field’s flow.  
+- **Time‑evolution generator** — infinitesimal dynamics.  
+- **Hamiltonian operator** — generator of symplectic flow.  
+- **Poisson bracket** — derivative‑like operator on phase space.
+
+**RDG note:** These are **Dynamics‑mode** operators: they encode evolution, flux, and transport.
+
+---
+
+## 4️⃣ **Field‑Structure**  
+**Guiding question:** **“How does this field behave locally?”**
+
+These operators measure structured change inside vector/tensor fields.
+
+- **Gradient** — spatial rate of change.  
+- **Divergence** — net outflow.  
+- **Curl** — rotation.  
+- **Jacobian** — local linear structure of a field.
+
+**RDG note:** These are the **PED‑side primitives**: Power, Evaluation, Dynamics.
+
+---
+
+## 5️⃣ **Higher‑Order Tensor Derivatives**  
+**Guiding question:** **“How does change itself change?”**
+
+These generalize differentiation to arbitrary order.
+
+- **Third derivative tensor** — rank‑3 curvature‑of‑curvature.  
+- **n‑th derivative tensor** — rank‑n generalization.  
+- **Multilinear differential operators** — n‑linear maps of derivatives.
+
+**RDG note:** These are **Structure‑Interaction hybrids**, capturing nested curvature.
+
+---
+
+## 6️⃣ **Functional Derivatives**  
+**Guiding question:**  
+**“How does the output of a functional change when the input function changes?”**
+
+These operate on *functionals*, not functions.
+
+- **Functional derivative** — derivative of a functional.  
+- **Euler–Lagrange operator** — extremal condition.  
+- **Second variation** — curvature of a functional.  
+- **Variational derivative** — general functional derivative.
+
+**RDG note:** These are the **SID‑side variational operators**, mapping structure into dynamics.
+
+---
+
+## 7️⃣ **Geometric & Manifold**  
+**Guiding question:**  
+**“How does change behave when space itself is curved?”**
+
+These operators respect manifold structure.
+
+- **Covariant derivative** — derivative respecting curvature.  
+- **Exterior derivative** — derivative of differential forms.  
+- **Lie derivative** — change along flows.  
+- **Hodge star** — duality interacting with derivatives.
+
+**RDG note:** These are **Structure‑Dynamics couplers** on curved spaces.
+
+---
+
+## 8️⃣ **Optimization & Statistical**  
+**Guiding question:**  
+**“How does a system respond to perturbations?”**
+
+These measure sensitivity, curvature, and uncertainty.
+
+- **Fisher information matrix** — curvature of probability models.  
+- **Sensitivity operators** — derivative of outputs w.r.t parameters.  
+- **Adjoint operators** — dual linearization operators.
+
+**RDG note:** These are the **evaluation‑of‑evaluation** operators: meta‑sensitivity.
