@@ -1,5 +1,12 @@
 CRYSTAL UNIT-CELL
 ============================================================
+This file is a compact, human-readable template and quick-
+reference for crystallographic unit-cell (crystal system) 
+conventions. It defines notation, diagrams, and the key 
+properties of the seven crystal systems, plus a compact 
+operator table.
+============================================================
+
 GENERIC TEMPLATE
 Axes:
   x = e1
@@ -42,6 +49,29 @@ Flexible angle placement examples:
   • Orthogonal: use “+”
   • Oblique: use “/” or “\” with angle label
   • Explicit: write the degree value next to the edge
+
+Sections 0–7: one block per crystal system:
+------------------------------------------------------------
+Cubic 
+— e1=e2=e3, all angles 90°, symmetry C4x/C4y/C4z, sketch.
+
+Tetragonal
+— e1=e2≠e3, all 90°, symmetry C4z.
+
+Orthorhombic 
+— e1≠e2≠e3, all 90°, symmetries C2x/C2y/C2z.
+
+Hexagonal 
+— e1=e2≠e3, angles: (e1,e2)=120°, others 90°, symmetry C6z.
+
+Trigonal (Rhombohedral) 
+— e1=e2=e3, α=β=γ≠90°, symmetry C3.
+
+Monoclinic 
+— e1≠e2≠e3, single oblique angle β = ∠(x,z), unique axis b = y, symmetry C2y or σ.
+
+Triclinic 
+— all lengths and angles distinct, no symmetry.
 
 ------------------------------------------------------------
 0. LEGEND
