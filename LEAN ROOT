@@ -7,7 +7,7 @@ _ROOT
    ├─ Not ideal for non-math formal verification
    └─ Smaller ecosystem than Coq for industry proofs
 
-LEAN
+LEAN https://lean-lang.org/
 ├─ Lean (Proof Assistant)
 │  │  └─ Documentation page
 │  │     https://leanprover-community.github.io/mathlib4_docs/
