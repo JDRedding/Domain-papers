@@ -1,4 +1,6 @@
 # LLMs Can’t Jump, Relational Version
+- 509 — Philosophy & theory of science
+- 006.3 — Artificial intelligence / machine learning.
 
 The Scientific Invention Position Paper "LLMs can’t jump," argues that scientific invention is 
 a distinct, foundational mode of scientific activity - not reducible to discovery or theory‑
