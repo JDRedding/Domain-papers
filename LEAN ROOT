@@ -39,6 +39,11 @@ LEAN
 │     └─ sorry (placeholder)
 │
 ├─ Aristotle (Formal Reasoning Agent)
+│  │  ├─ Documentation 
+│  │  │   https://aristotle.harmonic.fun/dashboard/docs/overview
+│  │  └─ Dashboard 
+│  │      https://aristotle.harmonic.fun/dashboard/ 
+│  │
 │  ├─ Identity
 │  │  ├─ Autonomous Lean 4 proof generator
 │  │  ├─ Multi-hour agentic search
