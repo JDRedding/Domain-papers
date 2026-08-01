@@ -1,8 +1,7 @@
 # Mathematical Space
-
 Mathematics is sometimes seen as being huge, irreducible, non‑associative, chaotic, strange, irrational space, and full of missed paths, is exactly what happens when you look at math from the wrong layer of the stack.
 
-In a simple framework, all of that apparent wildness comes from **layer mixing**.
+This note delineates how mathematics only looks huge, chaotic, or irrational when different conceptual layers are mixed. Properties like irreducibility, non‑associativity, non‑commutativity, and irrationality are presented as artifacts of projecting a rich generator/substrate layer into rational/relational layers. Separating the layers yielding a clean pipeline of reflection rather than fundamental chaos. In a simple framework, all of that apparent wildness comes from **layer mixing**.
 
 Most of the things:
 
@@ -21,7 +20,7 @@ are not fundamental properties of mathematics, but artifacts of projecting the g
 Irreducibility only exists **after quotienting**:
 
 $$
-Q : I \to Q
+Q : Image_{Instance}^{Individual} \to Q
 $$
 
 It is a rational invariant, not a generator property.  
