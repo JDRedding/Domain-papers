@@ -286,9 +286,7 @@ $$
 
 Let $\(\{\pi_n\}\)$ range over all sequences of finite-dimensional unitary representations
 
-$
-\pi_n : G \to U(d_n).
-$
+$\pi_n : {G} \to \{U}(\{d}_{n}$)
 
 For each $\(\pi_n\)$, compare $\(\pi_n\)$ to $\(\lambda_G\)$ via normalized Hilbert–Schmidt distance on matrix coefficients (viewing $\(\lambda_G\)$ through finite truncations or appropriate finite subsets \(F_n \subset G\)):
 
