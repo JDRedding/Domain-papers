@@ -1,5 +1,12 @@
-# Nonsofic Moonshine Precursor
+# 🧬 Nonsofic Moonshine Precursor
 ## Moonshine‑style rigidity–expansion approximation failure analytic classification invariant correspondence
+
+Classical moonshine:  
+**analytic rigidity → algebraic uniqueness**
+
+Nonsofic moonshine:  
+**analytic pathology → algebraic obstruction**
+
 
 ## 🧩 Core Conceptual Bridge
 
@@ -69,13 +76,3 @@ $$
 $$
 
 This is the exact obstruction behind non‑soficity, non‑hyperlinearity, and non‑Connes‑embeddability.
-
----
-
-## 🧬 Nonsofic Moonshine Precursor
-
-Classical moonshine:  
-**analytic rigidity → algebraic uniqueness**
-
-Nonsofic moonshine:  
-**analytic pathology → algebraic obstruction**
