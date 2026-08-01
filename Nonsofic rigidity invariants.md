@@ -33,7 +33,7 @@ This is the cleanest “Property (T) obstruction” invariant.
 
 $$\mathcal{R}(G) := \inf_{\pi} \lambda_1(\Delta_\pi)$$
 
-where $\(\Delta_\pi\)$ is the Laplacian of a unitary representation \(\pi\). For sofic groups, approximating representations force  $$\mathcal{R}(G) = 0.$$ For nonsofic groups, rigidity forces $$\mathcal{R}(G) > 0.$$
+where $\(\Delta_\pi\)$ is the Laplacian of a unitary representation $\(\pi\)$. For sofic groups, approximating representations force  $$\mathcal{R}(G) = 0.$$ For nonsofic groups, rigidity forces $$\mathcal{R}(G) > 0.$$
 
 ---
 
