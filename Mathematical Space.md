@@ -1,6 +1,6 @@
 # Mathematical Space
 
-Mathematics as being huge, irreducible, non‑associative, chaotic, strange, irrational space, and full of missed paths, is exactly what happens when you look at math from the wrong layer of the stack.
+Mathematics is sometimes seen as being huge, irreducible, non‑associative, chaotic, strange, irrational space, and full of missed paths, is exactly what happens when you look at math from the wrong layer of the stack.
 
 In a simple framework, all of that apparent wildness comes from **layer mixing**.
 
