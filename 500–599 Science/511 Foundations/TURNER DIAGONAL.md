@@ -1,5 +1,5 @@
 # TURNER DIAGONAL
-511 General principles of mathematics
+511 Foundations
  
 This note defines the "Turner Diagonal": a conceptual move (a rotation or "turn") that reveals a single invariant structure behind various uses of "diagonal." It represents DIAGONAL as the conceptual union (⊕) of an IDENTITY GRAPH (the diagonal morphism Δ_X) and NON‑ADJACENT MATCHING (off‑diagonal / cross‑connection structure), and it builds a Turner operator T that decomposes transformations of forms into Identity (0th), Linear/Jacobian (1st), and Curvature/Hessian (2nd) components.
 
