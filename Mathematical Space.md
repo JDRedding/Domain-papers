@@ -26,7 +26,7 @@ $$
 It is a rational invariant, not a generator property.  
 Nothing in Q□ ($$□_{substrate}^{irrational}$$) or G ($$Generator_{space}^{coarse}$$) is irreducible because those layers have **no partitions**.
 
-Irreducibility is a $Q_{phenomenon}^{Layer}$, not a universal mathematical truth.
+Irreducibility is a $Q_{Layer}^{phenomenon}$, not a universal mathematical truth.
 
 ---
 
