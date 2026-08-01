@@ -4,36 +4,6 @@
 - 320 Political science/governance (social flows)
 - 200 Religion  (chapel/ritual)
 
-A conceptual plan that organizes a castle estate into two 
-overlapping spines — a defensive (public/political) spine and a 
-domestic (service→private) spine — with a central courtyard 
-acting as the global mixing/reset node. Maps spatial program to 
-analytic frameworks to show how structure, interaction, dynamics 
-and power, evaluation, dynamics align with rooms and flows.
-
-The plan emphasizes controlled circulation and overlapping 
-functional/power relationships: continuous public/defensive axis 
-for authority and ritual, and a vertical domestic axis for service 
-and privacy, all coordinated by a central courtyard that equalizes 
-and redirects flows.
-
-A defensive spine running Gatehouse → Battlement → Great Hall → 
-Chapel, and a domestic spine running Kitchen → Guardroom → Guest 
-Chambers → Upper Chapel → Solar. The courtyard acts as the global 
-mixing node.
-
-First floor: Armory cluster triangulates weapon access (west/east/
-gatehouse armories). Great Hall adjacent to Kitchen (service) and 
-Battlement (authority→defense). Chapel sits amid utility/storage 
-implying ritual tied to labor. Courtyard gathers flows.
-
-Second floor: Lord’s Solar (governance) adjacent to Battlement and 
-Lady’s Bedchamber. Lady’s Bedchamber mediates Solar ↔ Bedrooms. 
-Library on domestic spine (knowledge as household continuity). 
-Upper Chapel links Bedrooms and Solar to form ritual→rest→rule 
-triad.
-
-# 🏰 **Castle Typology**  
 This plan describes a **fortified medieval castle estate**, not a 
 palace or civic complex. Every spatial decision is grounded in 
 **castle logic**: defense, authority, domestic hierarchy, and ritual 
@@ -92,6 +62,38 @@ serving:
 Their placement within utility and domestic flows reflects 
 medieval norms where **ritual is embedded in labor and 
 lineage**.
+
+# 🏰 **Castle Typology**  
+
+The conceptual plan that organizes a castle estate into two 
+overlapping spines — a defensive (public/political) spine and a 
+domestic (service→private) spine — with a central courtyard 
+acting as the global mixing/reset node. Maps spatial program to 
+analytic frameworks to show how structure, interaction, dynamics 
+and power, evaluation, dynamics align with rooms and flows.
+
+The plan emphasizes controlled circulation and overlapping 
+functional/power relationships: continuous public/defensive axis 
+for authority and ritual, and a vertical domestic axis for service 
+and privacy, all coordinated by a central courtyard that equalizes 
+and redirects flows.
+
+A defensive spine running Gatehouse → Battlement → Great Hall → 
+Chapel, and a domestic spine running Kitchen → Guardroom → Guest 
+Chambers → Upper Chapel → Solar. The courtyard acts as the global 
+mixing node.
+
+First floor: Armory cluster triangulates weapon access (west/east/
+gatehouse armories). Great Hall adjacent to Kitchen (service) and 
+Battlement (authority→defense). Chapel sits amid utility/storage 
+implying ritual tied to labor. Courtyard gathers flows.
+
+Second floor: Lord’s Solar (governance) adjacent to Battlement and 
+Lady’s Bedchamber. Lady’s Bedchamber mediates Solar ↔ Bedrooms. 
+Library on domestic spine (knowledge as household continuity). 
+Upper Chapel links Bedrooms and Solar to form ritual→rest→rule 
+triad.
+
 
 ---
 
