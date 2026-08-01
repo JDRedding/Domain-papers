@@ -3,7 +3,7 @@
 
 ## 🧩 Core Conceptual Bridge
 
-THe [Failure of Finite Approximation](https://github.com/JDRedding/Domain-papers/blob/main/500%E2%80%93599%20Science/512%20Algebra/512.5%20Failure%20of%20Finite%20Approximation.md) note already isolates the **minimal obstruction package** behind non‑soficity, non‑hyperlinearity, and non‑Connes‑embeddability:
+The [Failure of Finite Approximation](https://github.com/JDRedding/Domain-papers/blob/main/500%E2%80%93599%20Science/512%20Algebra/512.5%20Failure%20of%20Finite%20Approximation.md) note already isolates the **minimal obstruction package** behind non‑soficity, non‑hyperlinearity, and non‑Connes‑embeddability:
 
 > **Forced approximation** (rigidity + expansion)  
 > **vs.**  
