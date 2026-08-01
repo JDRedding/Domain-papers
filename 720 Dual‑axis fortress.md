@@ -4,7 +4,7 @@
 - 320 Political science/governance (social flows)
 - 200 Religion  (chapel/ritual)
 
-A conceptual plan that organizes a building/estate into two 
+A conceptual plan that organizes a castle estate into two 
 overlapping spines — a defensive (public/political) spine and a 
 domestic (service→private) spine — with a central courtyard 
 acting as the global mixing/reset node. Maps spatial program to 
