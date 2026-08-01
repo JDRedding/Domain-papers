@@ -1,4 +1,9 @@
 # Dual‑axis fortress
+- 720 Architecture (built‑environment plan)
+- 355 Military science (fortification/defense design)
+- 320 Political science/governance (social flows)
+- 200 Religion  (chapel/ritual)
+
 A conceptual plan that organizes a building/estate into two 
 overlapping spines — a defensive (public/political) spine and a 
 domestic (service→private) spine — with a central courtyard 
