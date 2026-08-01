@@ -1,0 +1,122 @@
+## **Rigidity, Expansion, and the Failure of Finite Approximation in Group Theory and Operator Algebras**
+
+### **Definition (canonical obstruction package)**  
+A finitely generated group \(G\) exhibits **rigidity–expansion approximation failure** when:
+
+1. **Demand for approximation:**  
+   Its **rigidity** (Kazhdan’s property (T), spectral-gap phenomena, or other fixed‑point properties) and/or its **geometric expansion** (a coarsely or isometrically embedded family of expanders in a Cayley graph) *force* the existence of good finite or matrix approximations of the regular representation.
+
+2. **Refusal of approximation:**  
+   Its **quotient lattice** and **unitary representation theory** *refuse* to supply such approximations:  
+   - the residual chain collapses (too few or only trivial finite quotients),  
+   - no sequence of matrix models approximates the regular representation in the normalized Hilbert–Schmidt metric or in the ultraproduct topology.
+
+This tension — *forced approximation* vs. *structural refusal* — is the minimal shared core behind every known candidate for non‑soficity, non‑hyperlinearity, and non‑Connes‑embeddability.
+
+---
+
+## **Unified sources and consequences**
+
+### **Concrete realizations of the obstruction package**
+- **Non‑residually finite Property (T) groups**  
+  (rigidity without finite quotients)
+
+- **Gromov monsters**  
+  (Cayley graphs containing expanders)
+
+- **Arzhantseva–Delzant graphical small‑cancellation groups**  
+  (expanders built directly into the presentation)
+
+- **High‑density random groups**  
+  (wild or trivial finite‑quotient structure; spectral gap)
+
+- **Candidate non‑hyperlinear groups**  
+  (failure of matrix approximation)
+
+### **Analytic and operator‑algebraic consequences**
+- **Exotic \(\mathrm{II}_1\) factors**  
+  (non‑hyperfinite, non‑approximable)
+
+- **Non‑Connes‑embeddable von Neumann algebras**  
+  (no embedding into the ultrapower of the hyperfinite factor)
+
+- **Breakdown of soficity and hyperlinearity**  
+  (failure of permutation and unitary approximations)
+
+Everything else in the broader landscape is either:
+
+- a **source** of such groups (construction techniques), or  
+- a **consequence** (analytic, algebraic, or operator‑algebraic pathology).
+
+## Diagrammatic schema
+
+```text
+[ Rigidity / Expansion Layer ]
+    - Kazhdan Property (T)
+    - Spectral gap
+    - Embedded expanders in Cayley graph
+                |
+                v
+[ Demand for Approximation ]
+    - Almost-homomorphisms into Sym(F)
+    - Matrix models of regular representation
+    - Hyperlinear / sofic / Connes-embeddable heuristics
+                |
+                v
+[ Structural Refusal ]
+    - Non-residual finiteness (few/trivial finite quotients)
+    - No good unitary/matrix approximations
+    - Collapse of residual chains
+                |
+                v
+[ Approximation Failure ]
+    - Non-soficity (no finite permutation approximations)
+    - Non-hyperlinearity (no matrix approximations)
+    - Failure of graph/hyperfinite limits
+                |
+                v
+[ Operator-Algebraic Pathology ]
+    - Exotic II₁ factors
+    - Non-Connes-embeddable von Neumann algebras
+    - Breakdown of standard entropy / surjunctivity / direct finiteness frameworks
+```
+
+---
+
+## Formal template for a non‑sofic group
+
+**Template:**  
+A finitely generated group \(G\) is a *candidate non‑sofic monster* if it satisfies:
+
+1. **Rigidity / expansion:**
+   - **(R1)** \(G\) has Kazhdan’s property (T), or a strong spectral-gap property for its unitary representations;  
+   - **(R2)** The Cayley graph of \(G\) (for some finite generating set) coarsely or isometrically contains a family of expanders.
+
+2. **Failure of residual finiteness / finite quotients:**
+   - **(Q1)** \(G\) is not residually finite;  
+   - **(Q2)** Every chain of finite index normal subgroups stabilizes or degenerates (no rich residual tower);  
+   - **(Q3)** Finite quotients of \(G\) are too sparse or trivial to support sofic approximations.
+
+3. **Failure of matrix / unitary approximation:**
+   - **(M1)** There is no sequence of unitary representations \(\pi_n : G \to U(d_n)\) such that the associated matrix models approximate the regular representation in the normalized Hilbert–Schmidt metric;  
+   - **(M2)** The group von Neumann algebra \(L(G)\) is not hyperlinear and does not embed into an ultrapower of the hyperfinite II₁ factor.
+
+4. **Approximation failure conclusion:**
+   - **(S1)** \(G\) is not sofic (no asymptotic finite permutation approximations);  
+   - **(H1)** \(G\) is not hyperlinear;  
+   - **(C1)** \(L(G)\) is not Connes‑embeddable.
+
+---
+
+## Classification table of constructions vs. obstruction package
+
+| Class / Construction                                      | Rigidity (T / spectral gap) | Embedded expanders | Residual finiteness fails | Matrix / hyperlinear issues | Operator‑algebra pathology (CEP, II₁) |
+|-----------------------------------------------------------|-----------------------------|--------------------|---------------------------|-----------------------------|----------------------------------------|
+| **Non‑residually finite Property (T) groups**            | **Yes** (T)                | Often yes          | **Yes**                   | Suspected issues           | Strong candidate for exotic II₁       |
+| **Gromov monster groups**                                | Often yes / strong gap     | **Yes (built‑in)** | Often yes                 | Suspected non‑hyperlinear  | Candidate non‑Connes‑embeddable        |
+| **Arzhantseva–Delzant graphical small‑cancellation**     | Often yes / strong gap     | **Yes (graphical)**| Often yes                 | Suspected non‑hyperlinear  | Exotic II₁ factors expected            |
+| **High‑density random groups (Gromov density model)**    | **Yes (w.h.p.)**           | Yes (expander‑like)| **Yes (few/trivial quot.)**| Strong candidate           | Deep CEP‑style pathologies             |
+| **Candidate non‑hyperlinear groups (abstract)**          | Maybe                      | Maybe              | Maybe                     | **Yes (by definition)**    | **Yes (non‑Connes‑embeddable)**       |
+| **Classical residually finite Property (T) groups**      | **Yes (T)**                | Sometimes          | **No (RF holds)**         | Likely hyperlinear/sofic   | Typically Connes‑embeddable            |
+| **Amenable groups**                                      | No                         | No                 | Often yes                 | Hyperlinear, sofic         | Connes‑embeddable                      |
+
