@@ -1,5 +1,7 @@
 ## **Rigidity, Expansion, and the Failure of Finite Approximation in Group Theory and Operator Algebras**
 
+This note outlines a unifying “obstruction package” that explains why certain finitely generated groups resist finite or matrix approximations, linking rigidity (e.g., Property (T), spectral gap) and geometric expansion (embedded expanders) to failures of residual finiteness, soficity, hyperlinearity, and Connes‑embeddability. Approximation is forced by rigidity/expansion but refused by the group’s quotient/representation structure; that tension is the core behind known candidates for non-sofic, non-hyperlinear, and non‑Connes‑embeddable groups.
+
 ### **Definition (canonical obstruction package)**  
 A finitely generated group \(G\) exhibits **rigidity–expansion approximation failure** when:
 
