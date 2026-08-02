@@ -121,22 +121,22 @@ Choosing the right one depends on **material durability**, **design versatility*
 ### **Daily Wear**
 - **Vermeil**  
 - **Minimalist**  
-- **Men’s_Chains**  
+- **Men’s Chains**  
 
 ### **Gifting**
 - **Rose_Gold**  
 - **Stacked_Looks**  
-- **Classic_Studs**  
+- **Classic Studs**  
 
 ### **Wedding / Engagement**
 - **Platinum**  
-- **White_Gold**  
-- **Lab_Grown_Diamonds**  
+- **White Gold**  
+- **Lab Grown_Diamonds**  
 
 ### **Anniversary**
-- **Solid_Gold**  
-- **Gemstone_Rings**  
-- **Statement_Pieces**  
+- **Solid Gold**  
+- **Gemstone Rings**  
+- **Statement Pieces**  
 
 ---
 
