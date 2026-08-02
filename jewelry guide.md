@@ -322,13 +322,8 @@ Three numeric maps derived from lookup tables:
 
 ### 3. Compatibility Filter (Hard Constraints)
 
-##
-\mathbb{I}(C;B,M) =
-\begin{cases}
-1 & \text{if } p(C)\le B \text{ and metal of } C \text{ matches } M \\
-0 & \text{otherwise}
-\end{cases}
-$$
+    I(C; B, M) = 1  if  p(C) ≤ B and metal(C) matches M
+                 0  otherwise
 
 This enforces budget and metal feasibility.
 
