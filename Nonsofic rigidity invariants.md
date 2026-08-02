@@ -8,7 +8,7 @@ They are the “spectral fingerprints” of non‑soficity; the invariants that 
 ## 🧩 **1. Rigidity invariant** 
 Formal definition
   
-Let $\(G\)$ be finitely generated. A **nonsofic rigidity invariant** is a quantity. These invariants are the analytic witnesses of non‑approximability.
+Let $G$ be finitely generated. A **nonsofic rigidity invariant** is a quantity. These invariants are the analytic witnesses of non‑approximability.
 
 $$\mathcal{I}(G)$$
 
@@ -51,7 +51,7 @@ This is the algebraic obstruction.
 
 $$\mathcal{Q}(G) := \lim_{n\to\infty} |G/N_n|$$
 
-for any chain of finite‑index normal subgroups \(N_n\).
+for any chain of finite‑index normal subgroups $N_n$.
 
 Sofic groups require rich residual towers:  $$\mathcal{Q}(G) = \infty.$$
 Nonsofic groups often satisfy $$\mathcal{Q}(G) = 1.$$
@@ -154,15 +154,15 @@ $\alpha_R,\alpha_E,\alpha_Q,\alpha_M > 0$ are fixed weights (normalization const
   :=
   \inf_{\{\pi_n\}} \big\|\lambda_G - \pi_n\big\|_{2}$$
 
-  where $\lambda_G$ is the left‑regular representation on $\ell^2(G)$, and $\pi_n : G \to U(d_n)$ ranges over all sequences of finite‑dimensional unitary representations, with $\(\|\cdot\|_2\)$ the normalized Hilbert–Schmidt distance on matrix coefficients.  
+  where $\lambda_G$ is the left‑regular representation on $\ell^2(G)$, and $\pi_n : G \to U(d_n)$ ranges over all sequences of finite‑dimensional unitary representations, with $\|\cdot\|_2$ the normalized Hilbert–Schmidt distance on matrix coefficients.  
 
-  Hyperlinear/sofic groups satisfy $\(\mathcal{M}(G)=0\)$; non‑hyperlinear/nonsofic groups force $\(\mathcal{M}(G)>0\)$.
+  Hyperlinear/sofic groups satisfy $\mathcal{M}(G)=0$; non‑hyperlinear/nonsofic groups force $\mathcal{M}(G)>0$.
 
 ---
 
 ### Normalization and threshold
 
-To turn $\(\mathcal{N}(G)\)$ into a **nonsofic detector**, fix a reference class $\(\mathcal{F}\)$ of “fully approximable” groups (e.g. residually finite, hyperlinear, Connes‑embeddable). 
+To turn $\mathcal{N}(G)$ into a **nonsofic detector**, fix a reference class $\mathcal{F}$ of “fully approximable” groups (e.g. residually finite, hyperlinear, Connes‑embeddable). 
 Define the **finite‑approximation baseline**:
 
 $$\mathcal{N}_{\mathrm{finite}}
@@ -177,18 +177,18 @@ $$\boxed{
 G \text{ is nonsofic, non‑hyperlinear, and non‑Connes‑embeddable.}
 }$$
 
-In practice, one tunes the weights $\(\alpha_R,\alpha_E,\alpha_Q,\alpha_M\)$ so that:
+In practice, one tunes the weights $\alpha_R,\alpha_E,\alpha_Q,\alpha_M\)$ so that:
 
-- approximable groups cluster with $\(\mathcal{N}(G)\)$ near or below $\(\mathcal{N}_{\mathrm{finite}}\)$,
-- explicit nonsofic constructions push at least one component (often $\(\mathcal{E}\)$ or $\(\mathcal{M}\))$ far beyond that baseline.
+- approximable groups cluster with $\mathcal{N}(G)\)$ near or below $\mathcal{N}_{\mathrm{finite}}$,
+- explicit nonsofic constructions push at least one component (often $\mathcal{E}$ or $\mathcal{M}$) far beyond that baseline.
 
 ### 1. Setup
 
-Let $\(G\)$ be a finitely generated group, with:
+Let $G$ be a finitely generated group, with:
 
-- **Group von Neumann algebra:** $\(L(G)\)$  
-- **Left-regular representation:** $\(\lambda_G : G \to \mathcal{U}(\ell^2(G))\)$  
-- **Cayley graph:** $\(\mathrm{Cay}(G,S)\)$ for a fixed finite generating set $\(S\)$.
+- **Group von Neumann algebra:** $L(G)$  
+- **Left-regular representation:** $\lambda_G : G \to \mathcal{U}(\ell^2(G))$  
+- **Cayley graph:** $\mathrm{Cay}(G,S)$ for a fixed finite generating set $S$.
 
 The **Nonsofic Rigidity Index** is a scalar invariant
 
@@ -200,7 +200,7 @@ built from four obstruction components, each measuring a different mode of force
 
 #### Baseline and criterion
 
-Let $\(\mathcal{F}\)$ be a reference class of fully approximable groups (e.g. residually finite, hyperlinear, Connes-embeddable). Define the **finite-approximation baseline**:
+Let $\mathcal{F}$ be a reference class of fully approximable groups (e.g. residually finite, hyperlinear, Connes-embeddable). Define the **finite-approximation baseline**:
 
 $$
 \mathcal{N}_{\mathrm{finite}}
@@ -222,7 +222,7 @@ $$
 
 ### 2. Component invariants
 
-#### (a) Rigidity component $\(\mathcal{R}(G)\)$
+#### (a) Rigidity component $\mathcal{R}(G)$
 
 For each unitary representation $\pi : {G} \to \{U}(\{H}_\pi$), let $\Delta\pi$ be the associated Laplacian:
 
@@ -240,14 +240,14 @@ $$
 \inf_{\pi} \lambda_1(\Delta_\pi),
 $$
 
-where $\(\lambda_1(\Delta_\pi)\)$ is the bottom of the nonzero spectrum of $\(\Delta_\pi\)$.
+where $\lambda_1(\Delta_\pi)$ is the bottom of the nonzero spectrum of $\Delta_\pi$.
 
-- For groups admitting good finite/matrix approximations, $\(\mathcal{R}(G)\)$ tends to $\(0\)$.
-- Strong Property ($T$) or spectral gap pushes $\(\mathcal{R}(G)\)$ away from $\(0\)$.
+- For groups admitting good finite/matrix approximations, $\mathcal{R}(G)\)$ tends to $0$.
+- Strong Property ($T$) or spectral gap pushes $\mathcal{R}(G)$ away from $0$.
 
-#### (b) Expansion component $\(\mathcal{E}(G)\)$
+#### (b) Expansion component $\mathcal{E}(G)$
 
-Let $\(\{X_n\}\)$ range over all families of finite graphs that embed (coarsely or isometrically) into $\(\mathrm{Cay}(G,S)\)$. For each $\(X_n\)$, let $\(h(X_n)\)$ be its Cheeger constant.
+Let $\{X_n\}$ range over all families of finite graphs that embed (coarsely or isometrically) into $\mathrm{Cay}(G,S)$. For each $X_n$, let $h(X_n)$ be its Cheeger constant.
 
 Define
 
@@ -259,11 +259,11 @@ $$
 $$
 
 - Sofic groups cannot support arbitrarily strong embedded expanders compatible with finite permutation approximations.
-- Nonsofic candidates can have $\(\mathcal{E}(G)\)$ large or unbounded.
+- Nonsofic candidates can have $\mathcal{E}(G)$ large or unbounded.
 
-#### (c) Residual-collapse component \(\mathcal{Q}(G)\)
+#### (c) Residual-collapse component \mathcal{Q}(G)
 
-Let \((N_n)\) range over all descending chains of finite-index normal subgroups of $\(G\)$:
+Let (N_n) range over all descending chains of finite-index normal subgroups of $G$:
 
 $$
 G \ge N_1 \ge N_2 \ge \cdots,\quad [G:N_n] < \infty.
@@ -279,16 +279,16 @@ $$
 \right).
 $$
 
-- For residually finite groups with rich finite quotients, $\([G:N_n]\to\infty\)$ and $\(\mathcal{Q}(G)=0\)$.
-- When residual chains stabilize or collapse (few/trivial finite quotients), $\(\mathcal{Q}(G) > 0\)$.
+- For residually finite groups with rich finite quotients, $[G:N_n]\to\infty$ and $\mathcal{Q}(G)=0$.
+- When residual chains stabilize or collapse (few/trivial finite quotients), $\mathcal{Q}(G) > 0$.
 
-#### (d) Matrix-approximation component $\(\mathcal{M}(G)\)$
+#### (d) Matrix-approximation component $\mathcal{M}(G)$
 
-Let $\(\{\pi_n\}\)$ range over all sequences of finite-dimensional unitary representations
+Let $\{\pi_n\}$ range over all sequences of finite-dimensional unitary representations
 
 $\pi_n : {G} \to \{U}(\{d}_{n}$)
 
-For each $\pi_n\$, compare $\pi_n\$ to $\lambda_G\$ via normalized Hilbert–Schmidt distance on matrix coefficients (viewing $\(\lambda_G\)$ through finite truncations or appropriate finite subsets $\(F_n \subset G\))$:
+For each $\pi_n\$, compare $\pi_n\$ to $\lambda_G\$ via normalized Hilbert–Schmidt distance on matrix coefficients (viewing $\lambda_G\)$ through finite truncations or appropriate finite subsets $F_n \subset G$:
 
 $$
 \|\lambda_G - \pi_n\|_2
@@ -310,14 +310,14 @@ $$
 \|\lambda_G - \pi_n\|_2.
 $$
 
-- Hyperlinear/sofic groups satisfy $\(\mathcal{M}(G)=0\)$.
-- Non-hyperlinear/nonsofic groups force $\(\mathcal{M}(G)>0\)$.
+- Hyperlinear/sofic groups satisfy $\mathcal{M}(G)=0$.
+- Non-hyperlinear/nonsofic groups force $\mathcal{M}(G)>0$.
 
 ---
 
 ### 3. The Nonsofic Rigidity Index
 
-Fix positive weights $\(\alpha_R,\alpha_E,\alpha_Q,\alpha_M > 0\)$. Define:
+Fix positive weights $\alpha_R,\alpha_E,\alpha_Q,\alpha_M > 0$. Define:
 
 $$
 \boxed{
@@ -333,5 +333,5 @@ $$
 }
 $$
 
-This is the **full Nonsofic Rigidity Index**: a single scalar measuring how strongly $\(G\)$ exhibits rigidity–expansion approximation failure.
+This is the **full Nonsofic Rigidity Index**: a single scalar measuring how strongly $G$ exhibits rigidity–expansion approximation failure.
 
