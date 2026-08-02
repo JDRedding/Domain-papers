@@ -28,3 +28,7 @@
 |   Cross-System References: __________________________________ |
 +---------------------------------------------------------------+
 004.019	Data structures
+This file is a concise template for a "DATA CORE RECORD" — a 
+standardized record structure for logging an observation, its 
+processed value, relevant metadata, system state variables, 
+operational boundary conditions, and operator notes.
