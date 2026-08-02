@@ -1,0 +1,660 @@
+package Root_000_999 {
+
+  package K_000_099_Knowledge {
+    class K000_Knowledge_Foundations
+    class K001_Epistemology
+    class K002_Classification_Systems
+    class K003_Information_Organization
+    class K004_Knowledge_Representation
+    class K005_Semantics
+    class K006_Pragmatics
+    class K007_Cognitive_Models
+    class K008_Learning_Systems
+    class K009_Meta_Knowledge
+
+    class K010_Information
+    class K011_Data_Structures
+    class K012_Records_Archives
+    class K013_Libraries_Catalogs
+    class K014_Media_Theory
+    class K015_Communication_Systems
+    class K016_Documentation
+    class K017_Publishing
+    class K018_Digital_Knowledge
+    class K019_Media_Literacy
+
+    class K020_Cognition
+    class K021_Learning_Theory
+    class K022_Memory_Systems
+    class K023_Problem_Solving
+    class K024_Creativity
+    class K025_Decision_Theory
+    class K026_Cognitive_Bias
+    class K027_Expertise
+    class K028_Metacognition
+    class K029_Knowledge_Transfer
+
+    class K040_Culture
+    class K041_Social_Knowledge
+    class K042_Language
+    class K043_Symbol_Systems
+    class K044_Education
+    class K045_History_of_Knowledge
+    class K046_Ethics_of_Knowledge
+    class K047_Knowledge_Institutions
+    class K048_Collective_Memory
+    class K049_Knowledge_Diffusion
+
+    class K060_Computational_Knowledge
+    class K061_Machine_Learning
+    class K062_Neural_Systems
+    class K063_Knowledge_Graphs
+    class K064_Reasoning_Systems
+    class K065_Cognitive_Architectures
+    class K066_AI_Ethics
+    class K067_Human_AI_Interaction
+    class K068_Autonomous_Knowledge_Systems
+    class K069_Knowledge_Automation
+
+    class K080_Critical_Thinking
+    class K081_Methodology
+    class K082_Problem_Analysis
+    class K083_Decision_Support
+    class K084_Knowledge_Engineering
+    class K085_Verification_Validation
+    class K086_Applied_Logic
+    class K087_Heuristics
+    class K088_Decision_Analytics
+    class K089_Knowledge_Management
+    class K099_Applied_Epistemics
+  }
+
+  package P_100_199_Philosophy {
+    class P100_Philosophy_Foundations
+    class P101_Metaphysics
+    class P102_Ontology
+    class P103_Epistemology
+    class P104_Logic
+    class P105_Philosophy_of_Language
+    class P106_Philosophy_of_Mind
+    class P107_Phenomenology
+    class P108_Hermeneutics
+    class P109_Philosophical_Methods
+
+    class P110_Ethics
+    class P111_Metaethics
+    class P112_Normative_Ethics
+    class P113_Applied_Ethics
+    class P114_Aesthetics
+    class P115_Value_Theory
+    class P116_Moral_Psychology
+    class P117_Social_Political_Ethics
+    class P118_Virtue_Theory
+    class P119_Ethical_Systems
+
+    class P130_Social_Philosophy
+    class P131_Political_Philosophy
+    class P132_Philosophy_of_Law
+    class P133_Philosophy_of_History
+    class P134_Cultural_Philosophy
+    class P135_Critical_Theory
+    class P136_Feminist_Philosophy
+    class P137_Philosophy_of_Education
+    class P138_Philosophy_of_Religion
+    class P139_Comparative_Philosophy
+
+    class P150_Formal_Logic
+    class P151_Informal_Logic
+    class P152_Philosophy_of_Mathematics
+    class P153_Philosophy_of_Science
+    class P154_Philosophy_of_Technology
+    class P155_Systems_Philosophy
+    class P156_Structuralism
+    class P157_Analytic_Philosophy
+    class P158_Continental_Philosophy
+    class P159_Conceptual_Engineering
+
+    class P170_Philosophical_Cosmology
+    class P171_Naturalism
+    class P172_Idealism
+    class P173_Realism
+    class P174_Existentialism
+    class P175_Pragmatism
+    class P176_Structural_Metaphysics
+    class P177_Process_Philosophy
+    class P178_Philosophy_of_Nature
+    class P179_Worldview_Systems
+
+    class P190_Applied_Philosophy
+    class P191_Philosophical_Analysis
+    class P192_Decision_Philosophy
+    class P193_Ethics_of_Technology
+    class P194_Environmental_Philosophy
+    class P195_Biomedical_Philosophy
+    class P196_Legal_Reasoning
+    class P197_Philosophical_Counseling
+    class P198_Interdisciplinary_Philosophy
+    class P199_Meta_Philosophy
+  }
+
+  package R_200_299_Religion {
+    class R200_Religion_Foundations
+    class R201_Comparative_Religion
+    class R202_Theology
+    class R203_Mythology
+    class R204_Sacred_Texts
+    class R205_Ritual_Theory
+    class R206_Religious_Experience
+    class R207_Spirituality
+    class R208_Religious_Symbolism
+    class R209_Religious_Methods
+
+    class R210_Ancient_Religions
+    class R211_Indigenous_Traditions
+    class R212_Abrahamic_Traditions
+    class R213_Dharmic_Traditions
+    class R214_East_Asian_Traditions
+    class R215_New_Religious_Movements
+    class R216_Mystical_Traditions
+    class R217_Esoteric_Systems
+    class R218_Syncretic_Traditions
+    class R219_Religious_History
+
+    class R230_Doctrine
+    class R231_Religious_Cosmology
+    class R232_Religious_Anthropology
+    class R233_Soteriology
+    class R234_Eschatology
+    class R235_Theodicy
+    class R236_Faith_Belief
+    class R237_Religious_Ethics
+    class R238_Virtue_Holiness
+    class R239_Religious_Worldview_Systems
+
+    class R250_Worship
+    class R251_Ritual_Practice
+    class R252_Sacred_Space
+    class R253_Clergy_Leadership
+    class R254_Religious_Community
+    class R255_Pilgrimage
+    class R256_Festivals_Holy_Days
+    class R257_Religious_Law
+    class R258_Moral_Discipline
+    class R259_Devotional_Systems
+
+    class R270_Religion_Culture
+    class R271_Religion_Politics
+    class R272_Religion_Science
+    class R273_Religion_Philosophy
+    class R274_Religion_Ethics
+    class R275_Religion_Psychology
+    class R276_Religion_Art
+    class R277_Religion_Literature
+    class R278_Religion_Technology
+    class R279_Religion_Globalization
+
+    class R290_Applied_Religion
+    class R291_Interfaith_Studies
+    class R292_New_Spiritualities
+    class R293_Occult_Esoteric_Studies
+    class R294_Mysticism_Contemplation
+    class R295_Religious_Innovation
+    class R296_Religion_Health
+    class R297_Religion_Ecology
+    class R298_Religion_Conflict
+    class R299_Meta_Religion
+  }
+
+  package S_300_399_Social_Sciences {
+    class S300_Social_Science_Foundations
+    class S301_Theory_Models
+    class S302_Social_Research_Methods
+    class S303_Social_Systems
+    class S304_Social_Dynamics
+    class S305_Social_Networks
+    class S306_Culture_Meaning
+    class S307_Social_Roles
+    class S308_Social_Institutions
+    class S309_Social_Theory
+
+    class S310_Psychology
+    class S311_Cognitive_Psychology
+    class S312_Behavioral_Psychology
+    class S313_Developmental_Psychology
+    class S314_Social_Psychology
+    class S315_Personality_Theory
+    class S316_Emotion_Motivation
+    class S317_Cognitive_Bias
+    class S318_Mental_Health
+    class S319_Applied_Psychology
+
+    class S330_Sociology
+    class S331_Social_Stratification
+    class S332_Demography
+    class S333_Urban_Studies
+    class S334_Rural_Studies
+    class S335_Social_Change
+    class S336_Deviance_Crime
+    class S337_Social_Problems
+    class S338_Community_Studies
+    class S339_Cultural_Sociology
+
+    class S350_Political_Science
+    class S351_Political_Theory
+    class S352_Comparative_Politics
+    class S353_International_Relations
+    class S354_Public_Policy
+    class S355_Public_Administration
+    class S356_Political_Behavior
+    class S357_Law_Government
+    class S358_Security_Studies
+    class S359_Geopolitics
+
+    class S370_Economics
+    class S371_Microeconomics
+    class S372_Macroeconomics
+    class S373_Behavioral_Economics
+    class S374_Development_Economics
+    class S375_International_Economics
+    class S376_Labor_Economics
+    class S377_Public_Finance
+    class S378_Economic_Systems
+    class S379_Economic_History
+
+    class S390_Anthropology
+    class S391_Cultural_Anthropology
+    class S392_Archaeology
+    class S393_Linguistic_Anthropology
+    class S394_Physical_Anthropology
+    class S395_Human_Geography
+    class S396_Migration_Studies
+    class S397_Global_Studies
+    class S398_Intercultural_Studies
+    class S399_Interdisciplinary_Social_Science
+  }
+
+  package L_400_499_Language {
+    class L400_Language_Foundations
+    class L401_Linguistic_Theory
+    class L402_Grammar
+    class L403_Syntax
+    class L404_Semantics
+    class L405_Pragmatics
+    class L406_Phonetics
+    class L407_Phonology
+    class L408_Morphology
+    class L409_Linguistic_Methods
+
+    class L410_Historical_Linguistics
+    class L411_Proto_Languages
+    class L412_Indo_European_Languages
+    class L413_Afroasiatic_Languages
+    class L414_Sino_Tibetan_Languages
+    class L415_Niger_Congo_Languages
+    class L416_Austronesian_Languages
+    class L417_Native_American_Languages
+    class L418_Language_Contact
+    class L419_Linguistic_Typology
+
+    class L430_Psycholinguistics
+    class L431_Language_Acquisition
+    class L432_Neurolinguistics
+    class L433_Cognitive_Semantics
+    class L434_Cognitive_Grammar
+    class L435_Bilingualism
+    class L436_Language_Thought
+    class L437_Speech_Perception
+    class L438_Language_Disorders
+    class L439_Cognitive_Pragmatics
+
+    class L450_Sociolinguistics
+    class L451_Dialects_Variation
+    class L452_Language_Culture
+    class L453_Discourse_Analysis
+    class L454_Conversation_Analysis
+    class L455_Pragmatic_Variation
+    class L456_Language_Power
+    class L457_Language_Policy
+    class L458_Communication_Theory
+    class L459_Intercultural_Communication
+
+    class L470_Writing_Systems
+    class L471_Orthography
+    class L472_Stylistics
+    class L473_Rhetoric
+    class L474_Narrative_Theory
+    class L475_Poetics
+    class L476_Translation_Studies
+    class L477_Lexicography
+    class L478_Writing_Composition
+    class L479_Literary_Linguistics
+
+    class L490_Computational_Linguistics
+    class L491_NLP
+    class L492_Machine_Translation
+    class L493_Speech_Technology
+    class L494_Language_Modeling
+    class L495_Text_Mining
+    class L496_Corpus_Linguistics
+    class L497_Language_Engineering
+    class L498_HC_Language_Interaction
+    class L499_Applied_Linguistics
+  }
+
+  package T_500_599_Science {
+    class T500_Science_Foundations
+    class T501_Scientific_Method
+    class T502_Research_Methods
+    class T503_Systems_Theory
+    class T504_Dynamics
+    class T505_Information_Theory
+    class T506_Complexity_Science
+    class T507_Computation
+    class T508_Structural_Mathematics
+    class T509_AI_Cognitive_Systems
+
+    class T510_Mathematics
+    class T511_Foundations
+    class T512_Algebra
+    class T513_Number_Theory
+    class T514_Topology
+    class T515_Analysis
+    class T516_Geometry
+    class T517_Manifolds
+    class T518_Graph_Theory
+    class T519_Logic
+
+    class T520_Astronomy
+    class T521_Celestial_Mechanics
+    class T522_Observational_Physics
+    class T523_Relativity
+    class T524_Quantum_Physics
+    class T525_Field_Theory
+    class T526_Wave_Mechanics
+    class T527_Materials
+    class T528_Thermodynamics
+    class T529_Statistical_Physics
+    class T530_Theoretical_Physics
+
+    class T540_Chemistry
+    class T541_Biochemistry
+    class T550_Earth_Sciences
+    class T560_Paleobiology
+    class T570_Life_Sciences
+    class T580_Biology
+    class T590_Ecology
+    class T599_Applied_Science
+  }
+
+  package Tech_600_699_Technology {
+    class Tech600_Technology_Foundations
+    class Tech601_Engineering_Principles
+    class Tech602_Technical_Systems
+    class Tech603_Innovation_Theory
+    class Tech604_Human_Technology_Interaction
+    class Tech605_Safety_Reliability
+    class Tech606_Standards_Protocols
+    class Tech607_Systems_Engineering
+    class Tech608_Technical_Methods
+    class Tech609_Technology_Ethics
+
+    class Tech610_Computing
+    class Tech611_Computer_Architecture
+    class Tech612_Operating_Systems
+    class Tech613_Software_Engineering
+    class Tech614_Programming_Languages
+    class Tech615_Databases
+    class Tech616_Networks
+    class Tech617_Cybersecurity
+    class Tech618_Cloud_Computing
+    class Tech619_Distributed_Systems
+
+    class Tech630_Automation
+    class Tech631_Robotics
+    class Tech632_Control_Systems
+    class Tech633_Embedded_Systems
+    class Tech634_Machine_Intelligence
+    class Tech635_AI_Engineering
+    class Tech636_Human_Robot_Interaction
+    class Tech637_Autonomous_Systems
+    class Tech638_Sensors_Perception
+    class Tech639_Applied_AI
+
+    class Tech650_Mechanical_Engineering
+    class Tech651_Electrical_Engineering
+    class Tech652_Civil_Engineering
+    class Tech653_Chemical_Engineering
+    class Tech654_Industrial_Engineering
+    class Tech655_Manufacturing_Systems
+    class Tech656_Materials_Engineering
+    class Tech657_Energy_Systems
+    class Tech658_Transportation_Technology
+    class Tech659_Industrial_Automation
+
+    class Tech670_Communication_Technology
+    class Tech671_Telecommunications
+    class Tech672_Digital_Media
+    class Tech673_Interface_Design
+    class Tech674_VR_AR
+    class Tech675_Multimedia_Systems
+    class Tech676_HCI
+    class Tech677_Digital_Infrastructure
+    class Tech678_Information_Access
+    class Tech679_Communication_Security
+
+    class Tech690_Emerging_Technologies
+    class Tech691_Biotechnology
+    class Tech692_Nanotechnology
+    class Tech693_Quantum_Technology
+    class Tech694_Space_Technology
+    class Tech695_Environmental_Technology
+    class Tech696_Medical_Technology
+    class Tech697_Defense_Technology
+    class Tech698_Tech_Policy_Regulation
+    class Tech699_Meta_Technology
+  }
+
+  package A_700_799_Arts {
+    class A700_Arts_Foundations
+    class A701_Aesthetics
+    class A702_Art_Theory
+    class A703_Art_History
+    class A704_Creative_Process
+    class A705_Artistic_Methods
+    class A706_Criticism_Interpretation
+    class A707_Symbolism
+    class A708_Art_Culture
+    class A709_Art_Technology
+
+    class A710_Painting
+    class A711_Drawing
+    class A712_Sculpture
+    class A713_Printmaking
+    class A714_Photography
+    class A715_Film_Cinematography
+    class A716_Digital_Art
+    class A717_Illustration
+    class A718_Design
+    class A719_Mixed_Media
+
+    class A730_Theatre
+    class A731_Dance
+    class A732_Music
+    class A733_Vocal_Arts
+    class A734_Instrumental_Arts
+    class A735_Acting
+    class A736_Performance_Theory
+    class A737_Stagecraft
+    class A738_Choreography
+    class A739_Musical_Composition
+
+    class A750_Literature
+    class A751_Fiction
+    class A752_Poetry
+    class A753_Drama
+    class A754_Creative_Writing
+    class A755_Literary_Theory
+    class A756_Narrative_Studies
+    class A757_Rhetorical_Arts
+    class A758_Scriptwriting
+    class A759_Literary_Criticism
+
+    class A770_Music_Theory
+    class A771_Composition
+    class A772_Sound_Design
+    class A773_Audio_Engineering
+    class A774_Ethnomusicology
+    class A775_Music_Performance
+    class A776_Sonic_Art
+    class A777_Music_Technology
+    class A778_Acoustics
+    class A779_Music_Culture
+
+    class A790_Decorative_Arts
+    class A791_Textile_Arts
+    class A792_Fashion
+    class A793_Architecture
+    class A794_Industrial_Design
+    class A795_Craft_Making
+    class A796_Decorative_Media
+    class A797_Interdisciplinary_Arts
+    class A798_Art_Society
+    class A799_Meta_Art
+  }
+
+  package Lit_800_899_Literature {
+    class Lit800_Literature_Foundations
+    class Lit801_Literary_Theory
+    class Lit802_Literary_Criticism
+    class Lit803_Narrative_Theory
+    class Lit804_Poetics
+    class Lit805_Rhetoric
+    class Lit806_Literary_Methods
+    class Lit807_Symbolism_Motifs
+    class Lit808_Genre_Theory
+    class Lit809_Literature_Culture
+
+    class Lit810_Fiction
+    class Lit811_Short_Fiction
+    class Lit812_Novels
+    class Lit813_Genre_Fiction
+    class Lit814_Literary_Fiction
+    class Lit815_Experimental_Fiction
+    class Lit816_Narrative_Voice
+    class Lit817_Character_Theory
+    class Lit818_World_Building
+    class Lit819_Fiction_Society
+
+    class Lit830_Poetry
+    class Lit831_Classical_Poetry
+    class Lit832_Modern_Poetry
+    class Lit833_Prosody
+    class Lit834_Poetic_Devices
+    class Lit835_Poetic_Forms
+    class Lit836_Epic_Poetry
+    class Lit837_Performance_Poetry
+    class Lit838_Poetry_Music
+    class Lit839_Poetic_Interpretation
+
+    class Lit850_Drama
+    class Lit851_Classical_Drama
+    class Lit852_Modern_Drama
+    class Lit853_Tragedy
+    class Lit854_Comedy
+    class Lit855_Scriptwriting
+    class Lit856_Dramatic_Structure
+    class Lit857_Dialogue_Theory
+    class Lit858_Performance_Studies
+    class Lit859_Drama_Society
+
+    class Lit870_Literary_History
+    class Lit871_Ancient_Literature
+    class Lit872_Medieval_Literature
+    class Lit873_Renaissance_Literature
+    class Lit874_Enlightenment_Literature
+    class Lit875_Romantic_Literature
+    class Lit876_Modernist_Literature
+    class Lit877_Postmodern_Literature
+    class Lit878_World_Literature
+    class Lit879_Comparative_Literature
+
+    class Lit890_Creative_Writing
+    class Lit891_Essay_Nonfiction
+    class Lit892_Literary_Journalism
+    class Lit893_Technical_Writing
+    class Lit894_Professional_Writing
+    class Lit895_Editing_Publishing
+    class Lit896_Translation
+    class Lit897_Writing_Systems
+    class Lit898_Interdisciplinary_Literature
+    class Lit899_Meta_Literature
+  }
+
+  package H_900_999_History {
+    class H900_History_Foundations
+    class H901_Historiography
+    class H902_Historical_Method
+    class H903_Chronology
+    class H904_Archaeology
+    class H905_Primary_Sources
+    class H906_Secondary_Analysis
+    class H907_Historical_Theory
+    class H908_Historical_Geography
+    class H909_History_Culture
+
+    class H910_Ancient_Civilizations
+    class H911_Classical_Greece
+    class H912_Roman_Empire
+    class H913_Ancient_Near_East
+    class H914_Ancient_Asia
+    class H915_Ancient_Africa
+    class H916_Pre_Columbian_Americas
+    class H917_Classical_Warfare
+    class H918_Classical_Culture
+    class H919_Classical_Decline
+
+    class H930_Medieval_Europe
+    class H931_Byzantine_History
+    class H932_Islamic_Golden_Age
+    class H933_Medieval_Asia
+    class H934_African_Kingdoms
+    class H935_Viking_History
+    class H936_Crusades
+    class H937_Renaissance
+    class H938_Reformation
+    class H939_Early_Modern_Empires
+
+    class H950_Enlightenment
+    class H951_Industrial_Revolution
+    class H952_Age_of_Revolutions
+    class H953_Colonialism
+    class H954_Modern_Asia
+    class H955_Modern_Africa
+    class H956_Modern_Middle_East
+    class H957_Modern_Europe
+    class H958_Modern_Americas
+    class H959_Global_Trade_Migration
+
+    class H970_World_Wars
+    class H971_Cold_War
+    class H972_Decolonization
+    class H973_Globalization
+    class H974_International_Organizations
+    class H975_Human_Rights_History
+    class H976_Technological_History
+    class H977_Environmental_History
+    class H978_Cultural_History
+    class H979_Contemporary_Conflicts
+
+    class H990_Regional_History
+    class H991_Biographical_History
+    class H992_Military_History
+    class H993_Economic_History
+    class H994_Social_History
+    class H995_Intellectual_History
+    class H996_Religious_History
+    class H997_History_of_Science
+    class H998_History_of_Art_Literature
+    class H999_Meta_History
+  }
+}
