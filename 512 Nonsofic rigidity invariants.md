@@ -1,4 +1,6 @@
 # **Nonsofic Rigidity Invariants** 
+512 Algebra — Group theory
+
 This note proposes a formal framework of analytic invariants that detect and quantify non‑soficity in finitely generated groups by packaging several complementary obstructions into a single scalar, the Nonsofic Rigidity Index ${𝒩(G)}$. Analytic quantities that *measure*, *encode*, and *certify* the failure of finite approximation in a group. They are the “spectral fingerprints” of non‑soficity; the invariants that stay stable under all finite or matrix approximations, yet take values that **no approximable group can achieve**. They are the exact dual of modular invariant: instead of encoding hidden symmetry, they encode **hidden obstruction**.
 
 ---
