@@ -84,7 +84,7 @@ Before choosing a piece, ground your decision in four core factors:
 | **Men’s Jewelry** | Daily wear | Varies | $–$$$$ | Chains, rings, bracelets |
 | **Stacked Looks** | Fashion-forward | N/A | $–$$$ | Layering aesthetics |
 
-### **🧭 Budget → Metal Mapping **
+### **🧭 Budget → Metal Mapping**
 
 - **$** — Steel, Silver, **Gold_Plated**  
 - **$$** — High‑grade Silver, **Gold_Vermeil**, Titanium  
