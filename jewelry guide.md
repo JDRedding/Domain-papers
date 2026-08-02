@@ -2,6 +2,8 @@
 
 This note is a comprehensive buyer's guide for selecting jewelry across different materials, styles, and occasions. Maps jewelry categories (solid gold, sterling silver, platinum, minimalist designs, stud earrings, bangles, hypoallergenic options) against four decision factors: budget, metal type, style, and occasion. The guide emphasizes that jewelry selection hinges on three factors—material durability, design versatility, and comfort/sensitivity—allowing buyers to match pieces to their specific needs and lifestyle.
 
+     [Occasion & Budget] ──► [Metal Selection] ──► [Style & Profile]
+
 ---
 
 ## 🧭 Jewelry Selection Checklist
@@ -12,6 +14,39 @@ Before choosing a piece, ground your decision in four core factors:
 * **Metal Type:** Gold, Silver, Platinum, or Titanium/Steel
 * **Style:** Minimalist, Classic, or Bold
 * **Occasion:** Daily wear, Gifting, Wedding, or Anniversary
+
+┌─────────────────────────────────────────┐
+  │ 1. BUDGET                               │
+  │    • $   (< $50)    : Silver / Steel    │
+  │    • $$  ($50–$300) : High Silver / Gold│
+  │    • $$$ ($300–$1k) : 14k/18k Gold      │
+  │    • $$$$($1k+)     : Platinum / Gems   │
+  └────────────────────┬────────────────────┘
+                       │
+                       ▼
+  ┌─────────────────────────────────────────┐
+  │ 2. METAL TYPE                           │
+  │    • Platinum  : Zero tarnish, heavy    │
+  │    • Solid Gold: Classic, non-reactive  │
+  │    • Sterling  : Bright, needs polish   │
+  │    • Titanium  : Ultra-light, inert     │
+  └────────────────────┬────────────────────┘
+                       │
+                       ▼
+  ┌─────────────────────────────────────────┐
+  │ 3. STYLE                                │
+  │    • Minimalist: Thin bands, low profile│
+  │    • Classic   : Solitaires, studs      │
+  │    • Bold      : Statement, thick links │
+  └────────────────────┬────────────────────┘
+                       │
+                       ▼
+  ┌─────────────────────────────────────────┐
+  │ 4. OCCASION                             │
+  │    • Daily     : Flush sets, smooth edge│
+  │    • Gift      : Adjustable, universal  │
+  │    • Wedding   : High-durability metals │
+  └─────────────────────────────────────────┘
 
 ---
   
