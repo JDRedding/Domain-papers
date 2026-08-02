@@ -261,7 +261,7 @@ $$
 - Sofic groups cannot support arbitrarily strong embedded expanders compatible with finite permutation approximations.
 - Nonsofic candidates can have $\mathcal{E}(G)$ large or unbounded.
 
-#### (c) Residual-collapse component \mathcal{Q}(G)
+#### (c) Residual-collapse component $\mathcal{Q}(G)$
 
 Let (N_n) range over all descending chains of finite-index normal subgroups of $G$:
 
