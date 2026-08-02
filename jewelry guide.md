@@ -301,7 +301,13 @@ $$
 **Category Set**  
 - $C \in \mathcal{C}$
 
-$$\mathcal{C} = \{\text{Solid Gold},\;\text{Sterling Silver},\;\text{Platinum},\;\text{Minimalist},\;\text{Studs},\;\text{Bangles},\;\text{Hypoallergenic}\}$$
+       C = Solid Gold,
+           Sterling Silver,
+           Platinum,
+           Minimalist,
+           Studs,
+           Bangles,
+           Hypoallergenic
 
 ---
 
