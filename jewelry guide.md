@@ -15,7 +15,8 @@ Before choosing a piece, ground your decision in four core factors:
 * **Style:** Minimalist, Classic, or Bold
 * **Occasion:** Daily wear, Gifting, Wedding, or Anniversary
 
-┌─────────────────────────────────────────┐
+```
+  ┌─────────────────────────────────────────┐
   │ 1. BUDGET                               │
   │    • $   (< $50)    : Silver / Steel    │
   │    • $$  ($50–$300) : High Silver / Gold│
@@ -47,7 +48,7 @@ Before choosing a piece, ground your decision in four core factors:
   │    • Gift      : Adjustable, universal  │
   │    • Wedding   : High-durability metals │
   └─────────────────────────────────────────┘
-
+```
 ---
   
 ## 🧭  Comparison Table
