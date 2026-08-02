@@ -4,9 +4,9 @@ Measuring : number of *distinct relational configurations modulo symmetry*
 
 Closest mathematical analogue is *entropy‑style quotient counting*: counting equivalence classes under a relation, weighted by structural complexity.
 
-## 🧩RDG notion of “counting”
-RDG is not element‑based.  
-It is **relation‑based**, **operator‑driven**, and **dynamically moderated**.
+## 🧩Relational notion of “counting”
+Relations are not element‑based.  
+They are **relation‑based**, **operator‑driven**, and **dynamically moderated**.
 
 Thus:
 
