@@ -1,4 +1,7 @@
 # **Full-Spectrum Jewelry Guide**
+
+This note is a comprehensive buyer's guide for selecting jewelry across different materials, styles, and occasions. Maps jewelry categories (solid gold, sterling silver, platinum, minimalist designs, stud earrings, bangles, hypoallergenic options) against four decision factors: budget, metal type, style, and occasion. The guide emphasizes that jewelry selection hinges on three factors—material durability, design versatility, and comfort/sensitivity—allowing buyers to match pieces to their specific needs and lifestyle.
+
 ---
 
 ## 🧭 Jewelry Selection Checklist
