@@ -42,18 +42,12 @@ Before choosing a piece, ground your decision in four core factors:
 **Solid gold, sterling silver, platinum, minimalist designs, comfort‑focused pieces, and hypoallergenic options each serve different needs.**  
 Choosing the right one depends on **material durability**, **design versatility**, and **comfort/sensitivity**.
 
-## 🎨 Style & Versatility
-
-* **Minimalist Necklaces:** Clean geometric lines that layer well with other chains.
-* **Classic Studs:** Universal timeless staples suitable for both work and events.
-* **Simple Bangles:** Stacking-friendly designs for subtle wrist detail.
-  
 ---
 
-## 🌟 Material Breakdown (Gold, Silver, Platinum)
+### 🌟 Material Breakdown (Gold, Silver, Platinum)
 Material determines longevity, shine, and price. Here’s how each behaves in real-world wear:
 
-### **Solid Gold Jewelry**  
+#### **Solid Gold Jewelry**  
 - Best for heirloom durability  
 - Doesn’t tarnish  
 - Ideal for daily wear and special events  
@@ -61,7 +55,7 @@ Material determines longevity, shine, and price. Here’s how each behaves in re
 * **Pros:** Does not tarnish, highly durable, holds value over time.
 * **Best Use:** Daily wear, investment pieces, and milestone celebrations.
   
-### **Sterling Silver Jewelry**  
+#### **Sterling Silver Jewelry**  
 - Affordable, bright, and versatile  
 - Tarnish can be polished away  
 - Great for everyday minimalist looks  
@@ -69,11 +63,10 @@ Material determines longevity, shine, and price. Here’s how each behaves in re
 * **Pros:** Bright, highly affordable, classic aesthetic.
 * **Consideration:** Requires periodic polishing to maintain shine.
   
-### **Platinum Jewelry**  
+#### **Platinum Jewelry**  
 - Most durable precious metal  
 - Hypoallergenic  
 - Premium for engagement, luxury, and milestone gifts  
-
 
 * **Pros:** Naturally hypoallergenic, dense weight, zero metal loss over time.
 * **Best Use:** Engagement rings and high-end heirloom gifts.
@@ -82,6 +75,10 @@ Material determines longevity, shine, and price. Here’s how each behaves in re
 
 ## 🎨 Design Versatility (Minimalist, Classic, Simple)
 These pieces adapt to any outfit — casual, work, or formal.
+
+* **Minimalist Necklaces:** Clean geometric lines that layer well with other chains.
+* **Classic Studs:** Universal timeless staples suitable for both work and events.
+* **Simple Bangles:** Stacking-friendly designs for subtle wrist detail.
 
 ### **Minimalist Necklaces**  
 - Clean lines, geometric shapes, everyday-friendly  
@@ -113,9 +110,3 @@ Perfect for sensitive skin, long wear, or flexible sizing.
 - Ideal for sensitive ears or skin  
 
 ---
-
-
-
-
-
-
