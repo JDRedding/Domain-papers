@@ -18,8 +18,8 @@ $$\mu_{RDG}(X) = \int_{X/\sim_{RDG}} \rho(x)\, d\lambda(x)$$
 
 where:
 
-- \(\lambda\) is the **quotient geometry base measure** (SID volume form)  
-- \(\rho(x)\) is the **PED/Q‑moderated relational density**  
+- $\lambda$ is the **quotient geometry base measure** (SID volume form)  
+- $\rho(x)$ is the **PED/Q‑moderated relational density**  
 - the domain of integration is the **quotient geometry**, not the raw space  
 
 This is the continuous version of:
