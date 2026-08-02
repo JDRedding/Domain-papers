@@ -8,11 +8,11 @@ geometry has curvature, density, or flux that must be integrated.
 
 ## Definition
 
-Let \(X\) be an RDG relational geometry.  
-Let \(\sim_{RDG}\) be the SID/PED structural equivalence relation.  
-Let \(X/\!\sim_{RDG}\) be the quotient relational manifold.
+Let $X$ be an RDG relational geometry.  
+Let $\sim_{RDG}$ be the SID/PED structural equivalence relation.  
+Let $X/\!\sim_{RDG}$ be the quotient relational manifold.
 
-A **relational measure** on \(X\) is a functional:
+A **relational measure** on $X$ is a functional:
 
 $$\mu_{RDG}(X) = \int_{X/\sim_{RDG}} \rho(x)\, d\lambda(x)$$
 
