@@ -5,7 +5,7 @@
 
 Before choosing a piece, ground your decision in four core factors:
 
-* **Budget:** $ (Under $50) to$$$$ ($1,000+)
+* **Budget:** $ (Under $50) to $$$$ ($1,000+)
 * **Metal Type:** Gold, Silver, Platinum, or Titanium/Steel
 * **Style:** Minimalist, Classic, or Bold
 * **Occasion:** Daily wear, Gifting, Wedding, or Anniversary
