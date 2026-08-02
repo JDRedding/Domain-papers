@@ -299,15 +299,14 @@ $$
 - $O \in \{\text{Daily}, \text{Gift}, \text{Wed}, \text{Ann}\}$
 
 **Category Set**  
-- $C \in \mathcal{C}$
-
-       C = Solid Gold,
-           Sterling Silver,
-           Platinum,
-           Minimalist,
-           Studs,
-           Bangles,
-           Hypoallergenic
+- $C \in \mathcal{C}$ 
+  - Solid Gold,
+  - Sterling Silver,
+  - Platinum,
+  - Minimalist,
+  - Studs,
+  - Bangles,
+  - Hypoallergenic
 
 ---
 
