@@ -1,0 +1,38 @@
+# 🔍 Non‑sofic group
+
+A **non‑sofic group** is a group that fails to satisfy the *soficity property* — meaning it 
+cannot be approximated by finite symmetric groups in a way that preserves the group’s 
+multiplication structure.  
+
+Non‑sofic groups challenge deep assumptions in:
+- **Group theory** — breaking the conjecture that all groups are sofic.
+- **Operator algebras** — since soficity connects to Connes’s embedding problem.
+- **Dynamics and computation** — as soficity relates to entropy and symbolic dynamics.
+
+---
+
+### 🧩 **Sofic groups**
+A group \( G \) is *sofic* if, for every finite subset and tolerance \( \varepsilon > 0 \), 
+there exists a finite symmetric group \( S_n \) and a map \( \phi: G \to S_n \) that 
+approximately preserves multiplication and injectivity.  
+
+Intuitively, sofic groups behave like “almost finite” groups — they can be modeled by 
+permutations up to small error.
+
+---
+
+### 🚫 **Non‑sofic groups**
+A *non‑sofic group* is one for which no such approximation exists.  
+Until recently, all known groups were believed to be sofic — the property seemed universal. 
+Constructing an explicit non‑sofic group therefore resolves a major open question: **not 
+all countable groups admit finite permutation approximations.**
+
+---
+
+### 🧠 **Construction**
+The known construction uses:
+- **Property‑(T) expanders**, which are highly connected graphs derived from groups with strong rigidity.
+- The **binary Leavitt algebra**, providing a non‑amenable algebraic framework.
+Together, these yield a group that violates the approximation condition defining soficity.
+
+
