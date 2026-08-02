@@ -264,3 +264,99 @@ Perfect for sensitive skin, long wear, or flexible sizing.
 - Popular for men’s wedding bands  
 
 ---
+
+**Multi-attribute utility scoring model**
+
+The guide is a classic hierarchical multi-criteria decision problem.  The cleanest, most practical, and fully rigorous way to encode it is a **weighted utility function** over discrete attributes, combined with a sequential filtering step that mirrors the flowchart.
+
+$$
+[\text{Occasion and Budget}] \to [\text{Metal}] \to [\text{Style}]
+$$
+
+1. Sets and discrete variables
+
+B ∈ {1,2,3,4}
+    (budget: $, $$, $$$, $$$$)
+
+M ∈ {Pt, Au, Ag, Ti}
+    (platinum, solid gold, sterling silver, titanium/steel)
+
+S ∈ {Min, Cla, Bol}
+    (minimalist, classic, bold)
+
+O ∈ {Daily, Gift, Wed, Ann}
+    (occasion)
+
+C ∈ 𝒞
+    (the 7 categories in the guide)
+
+𝒞 = {
+    Solid Gold,
+    Sterling Silver,
+    Platinum,
+    Minimalist,
+    Studs,
+    Bangles,
+    Hypoallergenic
+}
+
+2. Attribute score functions (lookup → numeric maps)
+
+d(C) ∈ [1,5]
+    durability (star rating)
+
+p(C) ∈ {1,2,3,4}
+    price band
+
+v(C, S, O) ∈ [0,1]
+    style + occasion compatibility
+
+3. Compatibility filter (hard constraints)
+
+I(C; B, M) =
+    1   if  p(C) ≤ B  AND  metal(C) matches M
+    0   otherwise
+
+4. Utility function (objective)
+
+User weights:
+    w_d, w_p, w_v ≥ 0
+    w_d + w_p + w_v = 1
+    (default: each = 1/3)
+
+U(C; B, M, S, O) =
+    I(C; B, M) *
+    (
+        w_d * d(C)/5
+      + w_p * (1 - |p(C) - B|/3)
+      + w_v * v(C, S, O)
+    )
+
+5. Optimal recommendation
+
+C*(B, M, S, O) =
+    argmax over C ∈ 𝒞 of U(C; B, M, S, O)
+
+If multiple categories tie, return the full set.
+
+6. Compact matrix form
+
+Let:
+    D ∈ ℝ^{|𝒞|}     durability vector
+    P ∈ ℝ^{|𝒞|}     price vector
+    V(S,O) ∈ ℝ^{|𝒞|} compatibility vector
+    I(B,M) ∈ {0,1}^{|𝒞|} feasibility vector
+
+Then:
+
+    U =
+        I(B,M) ⊙
+        (
+            w_d * (D / 5)
+          + w_p * (1 - |P - B·1| / 3)
+          + w_v * V(S,O)
+        )
+
+C* is the index of the maximal entry of U.
+
+---
