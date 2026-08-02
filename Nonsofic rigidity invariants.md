@@ -135,7 +135,7 @@ $\alpha_R,\alpha_E,\alpha_Q,\alpha_M > 0$ are fixed weights (normalization const
   \sup \{ h(X_n) : X_n \hookrightarrow \mathrm{Cay}(G) \}$$
   
   where $h(X_n)$ is the Cheeger constant of an embedded expander family $X_n$ in a Cayley graph of $G$.  
-  Sofic groups cannot support arbitrarily strong embedded expanders in a way compatible with finite permutation approximations; nonsofic candidates can have $\(\mathcal{E}(G)\)$ large or unbounded.
+  Sofic groups cannot support arbitrarily strong embedded expanders in a way compatible with finite permutation approximations; nonsofic candidates can have $\mathcal{E}(G)$ large or unbounded.
 
 - **Residual‑collapse component**
   
@@ -177,9 +177,9 @@ $$\boxed{
 G \text{ is nonsofic, non‑hyperlinear, and non‑Connes‑embeddable.}
 }$$
 
-In practice, one tunes the weights $\alpha_R,\alpha_E,\alpha_Q,\alpha_M\)$ so that:
+In practice, one tunes the weights $\alpha_R,\alpha_E,\alpha_Q,\alpha_M$ so that:
 
-- approximable groups cluster with $\mathcal{N}(G)\)$ near or below $\mathcal{N}_{\mathrm{finite}}$,
+- approximable groups cluster with $\mathcal{N}(G)$ near or below $\mathcal{N}_{\mathrm{finite}}$,
 - explicit nonsofic constructions push at least one component (often $\mathcal{E}$ or $\mathcal{M}$) far beyond that baseline.
 
 ### 1. Setup
@@ -242,7 +242,7 @@ $$
 
 where $\lambda_1(\Delta_\pi)$ is the bottom of the nonzero spectrum of $\Delta_\pi$.
 
-- For groups admitting good finite/matrix approximations, $\mathcal{R}(G)\)$ tends to $0$.
+- For groups admitting good finite/matrix approximations, $\mathcal{R}(G)$ tends to $0$.
 - Strong Property ($T$) or spectral gap pushes $\mathcal{R}(G)$ away from $0$.
 
 #### (b) Expansion component $\mathcal{E}(G)$
@@ -288,7 +288,7 @@ Let $\{\pi_n\}$ range over all sequences of finite-dimensional unitary represent
 
 $\pi_n : {G} \to \{U}(\{d}_{n}$)
 
-For each $\pi_n\$, compare $\pi_n\$ to $\lambda_G\$ via normalized Hilbert–Schmidt distance on matrix coefficients (viewing $\lambda_G\)$ through finite truncations or appropriate finite subsets $F_n \subset G$:
+For each $\pi_n\$, compare $\pi_n\$ to $\lambda_G\$ via normalized Hilbert–Schmidt distance on matrix coefficients (viewing $\lambda_G$ through finite truncations or appropriate finite subsets $F_n \subset G$:
 
 $$
 \|\lambda_G - \pi_n\|_2
