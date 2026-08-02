@@ -269,6 +269,10 @@ Perfect for sensitive skin, long wear, or flexible sizing.
 
 The guide is a classic hierarchical multi-criteria decision problem.  The cleanest, most practical, and fully rigorous way to encode it is a **weighted utility function** over discrete attributes, combined with a sequential filtering step that mirrors the flowchart.
 
+$$
+[\text{Occasion and Budget}] \to [\text{Metal}] \to [\text{Style}]
+$$
+
 Inputs: Budget B (1–4), Metal M (Pt, Au, Ag, Ti), Style S (Min, Cla, Bol), Occasion O (Daily, Gift, Wed, Ann).
 
 Categories C are the candidate item types (gold, silver, platinum, minimalist, studs, bangles, hypoallergenic).
@@ -280,10 +284,6 @@ Feasibility filter enforces p(C) ≤ B and metal(C) matches M.
 Utility U is a weighted sum (weights w_d, w_p, w_v; default equal) combining normalized durability, closeness to budget, and style/occasion compatibility; the recommended category maximizes U.
 
 Matrix notation and argmax selection included for implementation.
-
-$$
-[\text{Occasion and Budget}] \to [\text{Metal}] \to [\text{Style}]
-$$
 
 ### 1. Sets and Discrete Variables
 
