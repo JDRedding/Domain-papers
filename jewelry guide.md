@@ -51,7 +51,9 @@ Before choosing a piece, ground your decision in four core factors:
 ```
 ---
   
-## 🧭  Comparison Table
+## 🧭  Comparison Tables
+
+### Main
 
 | Category | Best For | Material Strength | Price Range | Example |
 |---------|----------|------------------|-------------|---------|
@@ -63,7 +65,7 @@ Before choosing a piece, ground your decision in four core factors:
 | **Bangles** | Stacking, simple style | Silver/Steel | $–$$ | Sterling Bangles |
 | **Hypoallergenic** | Sensitive skin | Titanium/Steel | $–$$ | Titanium Studs |
 
-### 📊 Quick Tables
+### 📊 Quick Reference
 
 | Category | Durability | Price | Best For |
 | --- | --- | --- | --- |
