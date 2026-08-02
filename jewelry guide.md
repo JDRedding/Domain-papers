@@ -265,7 +265,7 @@ Perfect for sensitive skin, long wear, or flexible sizing.
 
 ---
 
-**Multi-attribute utility scoring model**
+## **Multi-attribute utility scoring model**
 
 The guide is a classic hierarchical multi-criteria decision problem.  The cleanest, most practical, and fully rigorous way to encode it is a **weighted utility function** over discrete attributes, combined with a sequential filtering step that mirrors the flowchart.
 
@@ -273,90 +273,92 @@ $$
 [\text{Occasion and Budget}] \to [\text{Metal}] \to [\text{Style}]
 $$
 
-1. Sets and discrete variables
+### 1. Sets and Discrete Variables
 
-B ∈ {1,2,3,4}
-    (budget: $, $$, $$$, $$$$)
+**Budget**  
+- $B \in \{1,2,3,4\}$  
+  - 1 = $  
+  - 2 = $$  
+  - 3 = $$$  
+  - 4 = $$$$
 
-M ∈ {Pt, Au, Ag, Ti}
-    (platinum, solid gold, sterling silver, titanium/steel)
+**Metal Type**  
+- $M \in \{\text{Pt}, \text{Au}, \text{Ag}, \text{Ti}\}$  
+  - Pt = Platinum  
+  - Au = Solid Gold  
+  - Ag = Sterling Silver  
+  - Ti = Titanium / Steel
 
-S ∈ {Min, Cla, Bol}
-    (minimalist, classic, bold)
+**Style**  
+- $S \in \{\text{Min}, \text{Cla}, \text{Bol}\}$  
+  - Min = Minimalist  
+  - Cla = Classic  
+  - Bol = Bold
 
-O ∈ {Daily, Gift, Wed, Ann}
-    (occasion)
+**Occasion**  
+- $O \in \{\text{Daily}, \text{Gift}, \text{Wed}, \text{Ann}\}$
 
-C ∈ 𝒞
-    (the 7 categories in the guide)
+**Category Set**  
+- $C \in \mathcal{C}$
 
-𝒞 = {
-    Solid Gold,
-    Sterling Silver,
-    Platinum,
-    Minimalist,
-    Studs,
-    Bangles,
-    Hypoallergenic
-}
+$$\mathcal{C} = \{\text{Solid Gold},\;\text{Sterling Silver},\;\text{Platinum},\;\text{Minimalist},\;\text{Studs},\;\text{Bangles},\;\text{Hypoallergenic}\}$$
 
-2. Attribute score functions (lookup → numeric maps)
+---
 
-d(C) ∈ [1,5]
-    durability (star rating)
+### 2. Attribute Score Functions
 
-p(C) ∈ {1,2,3,4}
-    price band
+Three numeric maps derived from lookup tables:
 
-v(C, S, O) ∈ [0,1]
-    style + occasion compatibility
+- **Durability:**  
+ $d(C) \in [1,5]$
 
-3. Compatibility filter (hard constraints)
+- **Price Band:**  
+  $p(C) \in \{1,2,3,4\}$
 
-I(C; B, M) =
-    1   if  p(C) ≤ B  AND  metal(C) matches M
-    0   otherwise
+- **Style + Occasion Compatibility:**  
+  $v(C, S, O) \in [0,1]$
 
-4. Utility function (objective)
+---
 
-User weights:
-    w_d, w_p, w_v ≥ 0
-    w_d + w_p + w_v = 1
-    (default: each = 1/3)
+### 3. Compatibility Filter (Hard Constraints)
 
-U(C; B, M, S, O) =
-    I(C; B, M) *
-    (
-        w_d * d(C)/5
-      + w_p * (1 - |p(C) - B|/3)
-      + w_v * v(C, S, O)
-    )
+$$\mathbb{I}(C;B,M) =\begin{cases}1 & \text{if } p(C)\le B \text{ and metal of } C \text{ matches } M \\ 0 & \text{otherwise}\end{cases}$$
 
-5. Optimal recommendation
+This enforces budget and metal feasibility.
 
-C*(B, M, S, O) =
-    argmax over C ∈ 𝒞 of U(C; B, M, S, O)
+---
 
-If multiple categories tie, return the full set.
+### 4. Utility Function
 
-6. Compact matrix form
+User preference weights:
+
+- $w_d, w_p, w_v \ge 0$  
+- $w_d + w_p + w_v = 1$ 
+- Default: $w_d = w_p = w_v = \frac{1}{3}$
+
+$$U(C;B,M,S,O)=\mathbb{I}(C;B,M)\Bigl(w_d\cdot\frac{d(C)}{5}+w_p\cdot\bigl(1-\tfrac{|p(C)-B|}{3}\bigr)+w_v\cdot v(C,S,O)\Bigr)$$
+
+---
+
+### 5. Optimal Recommendation
+
+$$C^\star(B,M,S,O)=\arg\max_{C\in\mathcal{C}} U(C;B,M,S,O)$$
+
+If multiple categories tie, return all maximizers.
+
+---
+
+### 6. Matrix Form
 
 Let:
-    D ∈ ℝ^{|𝒞|}     durability vector
-    P ∈ ℝ^{|𝒞|}     price vector
-    V(S,O) ∈ ℝ^{|𝒞|} compatibility vector
-    I(B,M) ∈ {0,1}^{|𝒞|} feasibility vector
+
+- $\mathbf{D} \in \mathbb{R}^{|\mathcal{C}|}$ — durability vector  
+- $\mathbf{P} \in \mathbb{R}^{|\mathcal{C}|}$ — price vector  
+- $\mathbf{V}(S,O) \in \mathbb{R}^{|\mathcal{C}|}$ — compatibility vector  
+- $\mathbf{I}(B,M) \in \{0,1\}^{|\mathcal{C}|}$ — feasibility vector  
 
 Then:
 
-    U =
-        I(B,M) ⊙
-        (
-            w_d * (D / 5)
-          + w_p * (1 - |P - B·1| / 3)
-          + w_v * V(S,O)
-        )
+$$\mathbf{U}=\mathbf{I}(B,M)\odot\bigl(w_d\tfrac{\mathbf{D}}{5}+w_p\bigl(\mathbf{1}-\tfrac{|\mathbf{P}-B\mathbf{1}|}{3}\bigr)+w_v\mathbf{V}(S,O)\bigr)$$
 
-C* is the index of the maximal entry of U.
-
----
+The optimal category is the index of the maximum entry of $\mathbf{U}$.
