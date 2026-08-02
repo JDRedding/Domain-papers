@@ -63,7 +63,7 @@ Before choosing a piece, ground your decision in four core factors:
 | **Bangles** | Stacking, simple style | Silver/Steel | $–$$ | Sterling Bangles |
 | **Hypoallergenic** | Sensitive skin | Titanium/Steel | $–$$ | Titanium Studs |
 
- ## 📊 Quick Tables
+### 📊 Quick Tables
 
 | Category | Durability | Price | Best For |
 | --- | --- | --- | --- |
@@ -72,17 +72,19 @@ Before choosing a piece, ground your decision in four core factors:
 | **Platinum** | Maximum | $$$$ | Engagement & milestones |
 | **Titanium / Steel** | Maximum | $–$$ | Sensitive skin & daily wear |
 
+### Alternatives
+
 | Category | Best For | Durability | Price | Notes |
 |---------|----------|-----------|-------|-------|
-| **Rose_Gold** | Romantic gifts | High | $$$ | Warm tone, durable |
-| **White_Gold** | Bridal, modern | High | $$$ | Needs rhodium replating |
-| **Gold_Vermeil** | Budget gold | Medium | $$ | Thick gold layer |
-| **Gold_Plated** | Trend pieces | Low | $ | Best for occasional wear |
-| **Lab_Grown_Diamonds** | Engagement | Max | $$$ | Ethical, affordable |
-| **Men’s_Jewelry** | Daily wear | Varies | $–$$$$ | Chains, rings, bracelets |
-| **Stacked_Looks** | Fashion-forward | N/A | $–$$$ | Layering aesthetics |
+| **Rose Gold** | Romantic gifts | High | $$$ | Warm tone, durable |
+| **White Gold** | Bridal, modern | High | $$$ | Needs rhodium replating |
+| **Gold Vermeil** | Budget gold | Medium | $$ | Thick gold layer |
+| **Gold Plated** | Trend pieces | Low | $ | Best for occasional wear |
+| **Lab Grown Diamonds** | Engagement | Max | $$$ | Ethical, affordable |
+| **Men’s Jewelry** | Daily wear | Varies | $–$$$$ | Chains, rings, bracelets |
+| **Stacked Looks** | Fashion-forward | N/A | $–$$$ | Layering aesthetics |
 
-## **🧭 Budget → Metal Mapping **
+### **🧭 Budget → Metal Mapping **
 
 - **$** — Steel, Silver, **Gold_Plated**  
 - **$$** — High‑grade Silver, **Gold_Vermeil**, Titanium  
@@ -208,7 +210,7 @@ These pieces adapt to any outfit — casual, work, or formal.
 ### **Simple Bangles**  
 - Stackable, minimalist, and easy to pair
 
-  ## **🧔 Men’s Jewelry Categories**
+## **🧔 Men’s Jewelry Categories**
 
 ### **Men’s_Chains**  
 - Box, curb, rope, and figaro styles  
