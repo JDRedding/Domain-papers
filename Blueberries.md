@@ -14,7 +14,7 @@ Fiber: Provide dietary fiber to support digestive health
 Antioxidants: Rich in anthocyanins, flavonoids, and polyphenols, which contribute to their deep blue color and protect against oxidative stress
 One cup of fresh blueberries (about 148 grams) typically contains roughly 84 calories, 21 grams of carbohydrates, 4 grams of fiber, and 15 grams of natural sugar.
 
-### Health Benefits
+### 🧑‍⚕️ Health Benefits
 Heart Health: Blueberries may help reduce blood pressure and LDL cholesterol, supporting cardiovascular health due to their antioxidant and anti-inflammatory properties.
 
 Brain Function: Regular consumption has been linked to improved memory and cognitive performance, potentially slowing age-related cognitive decline.
