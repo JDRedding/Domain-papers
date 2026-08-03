@@ -381,7 +381,7 @@ Encodes how well the category fits the **style** and **occasion** (e.g., platinu
 
 ### **Combined Utility**
 The three normalized components are added, then masked by feasibility.  
-The result is a **single scalar score** representing how well a category fits the user’s constraints and preferences.
+The result is a **single scalar score** representing how well a category fits the user’s constraints and preferences:
 
 $$
 U(C;B,M,S,O)=\mathbb{I}(C;B,M)\Bigl(
@@ -391,7 +391,7 @@ w_d\cdot\frac{d(C)}{5}
 \Bigr)
 $$
 
-becomes a **scoring operator**:
+It becomes a **scoring operator**:
 
 - **Operator:** $\mathsf{UScore} : (\mathsf{C},\mathsf{B},\mathsf{M},\mathsf{S},\mathsf{O}) \to \mathbb{R}_{\ge 0}$
 
