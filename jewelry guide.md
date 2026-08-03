@@ -279,7 +279,7 @@ Relational **evaluation pipeline**:
 2. **Category layer:** all $\mathsf{C} \in \mathcal{C}$ active.
 3. **Constraint layer:** apply $\mathsf{Feasible}(C,B,M)$ to mask categories.
 4. **Scoring layer:** compute $\mathsf{UDur},\mathsf{UBud},\mathsf{UCompat},\mathsf{URaw},\mathsf{UScore}$.
-5. **Selection layer:** apply $\mathsf{SelectBest}$ to get $C^\star$.
+5. **Selection layer:** apply $\mathsf{Select_{Best}}$ to get $C^\star$.
 
 Relational encoding: nodes = attributes & categories, relations = attribute maps, operators = feasibility, scoring, and argmax.
 
@@ -383,7 +383,7 @@ $$
 
 is an relational **selection operator**:
 
-- **Operator:** $\mathsf{SelectBest} : (\{\mathsf{UScore}(C,B,M,S,O)\}_{C\in\mathcal{C}}) \to 2^{\mathcal{C}}$
+- **Operator:** $\mathsf{Select_{Best}} : (\{\mathsf{UScore}(C,B,M,S,O)\}_{C\in\mathcal{C}}) \to 2^{\mathcal{C}}$
 - **Semantics:** returns the set of category nodes achieving the maximal $\mathsf{UScore}$.
 
 This is a higher-order node that consumes the vector of scores and outputs one or more winning category nodes.
