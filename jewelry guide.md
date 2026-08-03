@@ -568,8 +568,3 @@ INTER  : Feasible, UDur, UBud, UCompat, URaw, UScore
 DYNAM  : SelectBest
 OUTPUT : Recommended category set
 ```
-
-This exactly mirrors the document’s flow:
-
-> “[Occasion & Budget] → [Metal] → [Style]”  
-> “Utility U is a weighted sum… the recommended category maximizes U.”
