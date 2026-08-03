@@ -1,5 +1,5 @@
 # **Jewelry Guide**
-- 658.834 Consumer decision model
+- Consumer decision model
 - 745.5 Jewelry 
 - 796.27 Decorative Media / metalwork
 
