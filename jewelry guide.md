@@ -344,7 +344,44 @@ In relational terms: this is a **filter node** that prunes category nodes failin
 
 ### 4. Relational utility operator
 
-Utility
+The utility equation is a **three‑term weighted score** applied only to categories that pass the **feasibility filter**.
+
+### **Feasibility Gate**
+The indicator $\mathbb{I}(C;B,M)$ enforces hard constraints:  
+- the category’s price band must be **within budget**, and  
+- its metal type must **match the chosen metal** (or be metal‑agnostic).  
+
+If a category fails this gate, its utility is **forced to zero**.
+
+### **Durability Term**
+
+$$
+w_d\cdot\frac{d(C)}{5}
+$$
+
+Normalizes durability to \([0,1]\) and weights it. Higher‑durability materials (e.g., platinum, hypoallergenic titanium) score higher.
+
+### **Budget‑Closeness Term**
+
+$$
+w_p\cdot\left(1-\frac{|p(C)-B|}{3}\right)
+$$
+
+Rewards categories whose price band is **close to the user’s budget**.  
+Perfect match → score 1  
+Three bands away → score 0
+
+### **Compatibility Term**
+
+$$
+w_v\cdot v(C,S,O)
+$$
+
+Encodes how well the category fits the **style** and **occasion** (e.g., platinum for weddings, stacked looks for daily minimalist wear).
+
+### **Combined Utility**
+The three normalized components are added, then masked by feasibility.  
+The result is a **single scalar score** representing how well a category fits the user’s constraints and preferences.
 
 $$
 U(C;B,M,S,O)=\mathbb{I}(C;B,M)\Bigl(
