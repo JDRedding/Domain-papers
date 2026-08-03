@@ -279,7 +279,7 @@ Relational **evaluation pipeline**:
 2. **Category layer:** all $\mathsf{C} \in \mathcal{C}$ active.
 3. **Constraint layer:** apply $\mathsf{Feasible}(C,B,M)$ to mask categories.
 4. **Scoring layer:** compute $\mathsf{UDur},\mathsf{UBud},\mathsf{UCompat},\mathsf{URaw},\mathsf{UScore}$.
-5. **Selection layer:** apply $\mathsf{SelectBest}\) to get \(C^\star$.
+5. **Selection layer:** apply $\mathsf{SelectBest}$ to get $C^\star$.
 
 Relational encoding: nodes = attributes & categories, relations = attribute maps, operators = feasibility, scoring, and argmax.
 
