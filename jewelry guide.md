@@ -99,21 +99,21 @@ Before choosing a piece, ground decisions in four core factors:
 **Solid gold, sterling silver, platinum, minimalist designs, comfort‑focused pieces, and hypoallergenic options each serve different needs.**  
 Choosing the right one depends on **material durability**, **design versatility**, and **comfort/sensitivity**.
 
-### **Stacked_Looks**  
+### **Stacked Looks**  
 - Layered necklaces  
 - Multi‑bangle stacks  
 - Ring stacks (mixed metals encouraged)  
 
-### **Statement_Pieces**  
+### **Statement Pieces**  
 - Oversized chains  
 - Bold cuffs  
 - Large gemstone rings  
 
-### **Vintage_Styles**  
+### **Vintage Styles**  
 - Art Deco, Victorian, Retro  
 - Great for gifting or special events  
 
-### **Modern_Minimalist**  
+### **Modern Minimalist**  
 - Ultra‑thin profiles  
 - Geometric shapes  
 - Matte finishes  
@@ -167,7 +167,7 @@ Material determines longevity, shine, and price. Here’s how each behaves in re
 * **Pros:** Naturally hypoallergenic, dense weight, zero metal loss over time.
 * **Best Use:** Engagement rings and high-end heirloom gifts.
 
-#### **🪙 Metals & Finishes **
+#### 🪙 **Metals & Finishes **
 
 ##### **Rose Gold**  
 - Warm, copper‑infused tone  
