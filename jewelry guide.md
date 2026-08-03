@@ -182,17 +182,17 @@ Material determines longevity, shine, and price. Here’s how each behaves in re
 - Rhodium plating requires periodic refresh  
 - Ideal for modern, minimalist, or bridal sets  
 
-##### **Gold_Vermeil**  
+##### **Gold Vermeil**  
 - Sterling silver base + thick gold layer  
 - More durable than gold‑plated  
 - Budget‑friendly alternative to solid gold  
 
-##### **Gold_Plated**  
+##### **Gold Plated**  
 - Lowest‑cost gold look  
 - Best for occasional wear  
 - Not ideal for daily friction or water exposure  
 
-##### **Lab_Grown_Diamonds**  
+##### **Lab Grown Diamonds**  
 - Chemically identical to natural diamonds  
 - 30–70% lower cost  
 - Excellent for engagement rings or studs  
