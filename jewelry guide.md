@@ -91,10 +91,10 @@ Before choosing a piece, ground decisions in four core factors:
 
 ### **🧭 Budget → Metal Mapping**
 
-- **$** — Steel, Silver, **Gold_Plated**  
-- **$$** — High‑grade Silver, **Gold_Vermeil**, Titanium  
-- **$$$** — 14k/18k Gold, **Rose_Gold**, **White_Gold**  
-- **$$$$** — Platinum, **Lab_Grown_Diamonds**, Natural Diamonds  
+- **$** — Steel, Silver, **Gold Plated**  
+- **$$** — High‑grade Silver, **Gold Vermeil**, Titanium  
+- **$$$** — 14k/18k Gold, **Rose Gold**, **White Gold**  
+- **$$$$** — Platinum, **Lab Grown Diamonds**, Natural Diamonds  
 
 ---
 
@@ -127,14 +127,14 @@ Choosing the right one depends on **material durability**, **design versatility*
 - **Men’s Chains**  
 
 ### **Gifting**
-- **Rose_Gold**  
-- **Stacked_Looks**  
+- **Rose Gold**  
+- **Stacked Looks**  
 - **Classic Studs**  
 
 ### **Wedding / Engagement**
 - **Platinum**  
 - **White Gold**  
-- **Lab Grown_Diamonds**  
+- **Lab Grown Diamonds**  
 
 ### **Anniversary**
 - **Solid Gold**  
