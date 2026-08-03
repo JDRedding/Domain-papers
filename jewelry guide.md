@@ -385,6 +385,191 @@ is an relational **selection operator**:
 
 - **Operator:** $\mathsf{Best} : (\{\mathsf{UScore}(C,B,M,S,O)\}_{C\in\mathcal{C}}) \to 2^{\mathcal{C}}$
 - **Semantics:** returns the set of category nodes achieving the maximal $\mathsf{UScore}$.
+---
 
-This is a higher-order node that consumes the vector of scores and outputs one or more winning category nodes.
+# **Node Declarations (SID: Structure Layer)**
 
+```
+NODE Budget        : Enum{1,2,3,4}
+NODE Metal         : Enum{Pt,Au,Ag,Ti}
+NODE Style         : Enum{Min,Cla,Bol}
+NODE Occasion      : Enum{Daily,Gift,Wed,Ann}
+
+NODE Category      : Enum{
+    SolidGold, SterlingSilver, Platinum, Minimalist,
+    Studs, Bangles, Hypoallergenic,
+    RoseGold, WhiteGold, GoldVermeil, GoldPlated,
+    LabGrownDiamonds, MensJewelry, StackedLooks,
+    StatementPieces
+}
+```
+
+---
+
+# **Attribute Maps (SID → Interaction Edges)**
+Each attribute becomes a **typed edge** from Category → Scalar.
+
+### **Durability**
+```
+EDGE Durability(Category) : Real
+```
+
+Populate with your values:
+
+```
+Durability(SolidGold)        = 4
+Durability(SterlingSilver)   = 3
+Durability(Platinum)         = 5
+Durability(Minimalist)       = 3
+Durability(Studs)            = 3.5
+Durability(Bangles)          = 3
+Durability(Hypoallergenic)   = 5
+Durability(RoseGold)         = 4
+Durability(WhiteGold)        = 3.8
+Durability(GoldVermeil)      = 3
+Durability(GoldPlated)       = 1.5
+Durability(LabGrownDiamonds) = 5
+Durability(MensJewelry)      = 4
+Durability(StackedLooks)     = 3
+Durability(StatementPieces)  = 3.5
+```
+
+---
+
+### **Price Band**
+Nominal value = lower end of the range.
+
+```
+EDGE Price(Category) : Int
+```
+
+```
+Price(SolidGold)        = 3
+Price(SterlingSilver)   = 1
+Price(Platinum)         = 4
+Price(Minimalist)       = 1
+Price(Studs)            = 1
+Price(Bangles)          = 1
+Price(Hypoallergenic)   = 1
+Price(RoseGold)         = 3
+Price(WhiteGold)        = 3
+Price(GoldVermeil)      = 2
+Price(GoldPlated)       = 1
+Price(LabGrownDiamonds) = 3
+Price(MensJewelry)      = 1
+Price(StackedLooks)     = 1
+Price(StatementPieces)  = 2
+```
+
+---
+
+### **MetalOf**
+```
+EDGE MetalOf(Category) : Enum{Pt,Au,Ag,Ti,None}
+```
+
+```
+MetalOf(SolidGold)        = Au
+MetalOf(RoseGold)         = Au
+MetalOf(WhiteGold)        = Au
+MetalOf(GoldVermeil)      = Au
+MetalOf(GoldPlated)       = Au
+
+MetalOf(SterlingSilver)   = Ag
+MetalOf(Platinum)         = Pt
+
+MetalOf(Hypoallergenic)   = Ti
+MetalOf(MensJewelry)      = Ti   // titanium option
+
+MetalOf(Minimalist)       = None
+MetalOf(Studs)            = None
+MetalOf(Bangles)          = None
+MetalOf(StackedLooks)     = None
+MetalOf(StatementPieces)  = None
+MetalOf(LabGrownDiamonds) = None
+```
+
+---
+
+### **Compatibility Tensor**
+Use a 3‑input interaction operator:
+
+```
+EDGE Compat(Category, Style, Occasion) : Real[0..1]
+```
+
+Already defined the tensor; simply store it.
+
+---
+
+# **Interaction Operators (I‑Layer)**
+
+### **Feasibility Operator**
+```
+OP Feasible(C,B,M) : Bool =
+    ( Price(C) <= B )
+    AND
+    ( MetalOf(C) == M OR MetalOf(C) == None )
+```
+
+This is a **hard mask** operator.
+
+---
+
+### **Utility Sub‑operators**
+```
+CONST wd = 1/3
+CONST wp = 1/3
+CONST wv = 1/3
+
+OP UDur(C) =
+    wd * (Durability(C) / 5)
+
+OP UBud(C,B) =
+    wp * (1 - abs(Price(C) - B)/3)
+
+OP UCompat(C,S,O) =
+    wv * Compat(C,S,O)
+
+OP URaw(C,B,S,O) =
+    UDur(C) + UBud(C,B) + UCompat(C,S,O)
+```
+
+---
+
+### **Masked Utility**
+```
+OP UScore(C,B,M,S,O) =
+    IF Feasible(C,B,M)
+    THEN URaw(C,B,S,O)
+    ELSE 0
+```
+
+---
+
+# **Dynamic Operator (D‑Layer)**
+
+### **Selection Dynamic**
+```
+DYN SelectBest(B,M,S,O) : Set(Category) =
+    argmax_C UScore(C,B,M,S,O)
+```
+
+This is a standard dynamic: consume a vector of scores, return the maximizers.
+
+---
+
+# **Full Pipeline (SID → I → D)**
+
+```
+INPUT  : B, M, S, O
+STRUCT : Category nodes + attribute edges
+INTER  : Feasible, UDur, UBud, UCompat, URaw, UScore
+DYNAM  : SelectBest
+OUTPUT : Recommended category set
+```
+
+This exactly mirrors the document’s flow:
+
+> “[Occasion & Budget] → [Metal] → [Style]”  
+> “Utility U is a weighted sum… the recommended category maximizes U.”
