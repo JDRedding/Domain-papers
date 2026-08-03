@@ -167,7 +167,7 @@ Material determines longevity, shine, and price. Here’s how each behaves in re
 * **Pros:** Naturally hypoallergenic, dense weight, zero metal loss over time.
 * **Best Use:** Engagement rings and high-end heirloom gifts.
 
-#### 🪙 **Metals & Finishes **
+#### **🪙 Metals & Finishes**
 
 ##### **Rose Gold**  
 - Warm, copper‑infused tone  
