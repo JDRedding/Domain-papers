@@ -3,7 +3,7 @@
 **Cox (inhomogeneous Poisson) point process of identical vertical segments driven by a smooth noise+gradient scalar field.**
 
 Core idea
-— the inhomogeneous (or Cox) Poisson point process 
+- the inhomogeneous (or Cox) Poisson point process 
 - scalar field $\lambda(x,y)$ 
 
 ### 1. Core stochastic model
