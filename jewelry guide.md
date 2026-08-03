@@ -8,7 +8,7 @@ This note is a comprehensive buyer's guide for selecting jewelry across differen
 
 ## 🧭 Jewelry Selection Checklist
 
-Before choosing a piece, ground your decision in four core factors:
+Before choosing a piece, ground decisions in four core factors:
 
 * **Budget:** $ (Under $50) to $$$$ ($1,000+)
 * **Metal Type:** Gold, Silver, Platinum, or Titanium/Steel
@@ -269,114 +269,122 @@ Perfect for sensitive skin, long wear, or flexible sizing.
 
 The guide is a classic hierarchical multi-criteria decision problem.  The cleanest, most practical, and fully rigorous way to encode it is a **weighted utility function** over discrete attributes, combined with a sequential filtering step that mirrors the flowchart.
 
+Relational textual flow
+
+> \[Occasion & Budget] → [Metal] → [Style]
+
+Relational **evaluation pipeline**:
+
+1. **Input layer:** instantiate nodes \(\mathsf{B},\mathsf{M},\mathsf{S},\mathsf{O}\).
+2. **Category layer:** all \(\mathsf{C} \in \mathcal{C}\) active.
+3. **Constraint layer:** apply \(\mathsf{Feasible}(C,B,M)\) to mask categories.
+4. **Scoring layer:** compute \(\mathsf{UDur},\mathsf{UBud},\mathsf{UCompat},\mathsf{URaw},\mathsf{UScore}\).
+5. **Selection layer:** apply \(\mathsf{SelectBest}\) to get \(C^\star\).
+
+Relational encoding: nodes = attributes & categories, relations = attribute maps, operators = feasibility, scoring, and argmax.
+
+---
+
+### 1. Node types
+
+**Entity nodes**
+
+- **Budget node**  
+  $\mathsf{B} \in \{1,2,3,4\}$
+
+- **Metal node**  
+  $\mathsf{M} \in \{\text{Pt},\text{Au},\text{Ag},\text{Ti}\}$
+
+- **Style node**  
+  $\mathsf{S} \in \{\text{Min},\text{Cla},\text{Bol}\}$
+
+- **Occasion node**  
+  $\mathsf{O} \in \{\text{Daily},\text{Gift},\text{Wed},\text{Ann}\}$
+
+- **Category node**  
+  $\mathsf{C} \in \mathcal{C} = \{\text{SolidGold},\text{SterlingSilver},\text{Platinum},\text{Minimalist},\text{Studs},\text{Bangles},\text{Hypoallergenic}\}$
+
+---
+
+### 2. Relations / edges
+
+We turn each attribute map into a relation:
+
+- **Durability relation**  
+  $\mathsf{Dur} : \mathsf{C} \to [1,5]$
+
+- **Price relation**  
+  $\mathsf{Price} : \mathsf{C} \to \{1,2,3,4\}$
+
+- **Compatibility relation**  
+  $\mathsf{Compat} : (\mathsf{C},\mathsf{S},\mathsf{O}) \to [0,1]$
+
+- **Metal-of-category relation**  
+  $\mathsf{MetalOf} : \mathsf{C} \to \{\text{Pt},\text{Au},\text{Ag},\text{Ti},\text{None}\}$
+
+These are edges from category nodes to scalar attribute nodes (or hyperedges for $\mathsf{Compat}$).
+
+---
+
+### 3. Constraint operator (feasibility filter)
+
+ **Constraint operator**:
+
+- **Operator:** $\mathsf{Feasible} : (\mathsf{C},\mathsf{B},\mathsf{M}) \to \{0,1\}$
+- **Definition:**
+
 $$
-[\text{Occasion and Budget}] \to [\text{Metal}] \to [\text{Style}]
+\mathsf{Feasible}(C,B,M) =
+\mathbf{1}\big(\mathsf{Price}(C)\le B \land \mathsf{MetalOf}(C)=M\big)
 $$
 
-Inputs: Budget B (1–4), Metal M (Pt, Au, Ag, Ti), Style S (Min, Cla, Bol), Occasion O (Daily, Gift, Wed, Ann).
-
-Categories C are the candidate item types (gold, silver, platinum, minimalist, studs, bangles, hypoallergenic).
-
-Scores: durability d(C) ∈ [1..5], price p(C) ∈ {1..4}, compatibility v(C,S,O) ∈ [0,1].
-
-Feasibility filter enforces p(C) ≤ B and metal(C) matches M.
-
-Utility U is a weighted sum (weights w_d, w_p, w_v; default equal) combining normalized durability, closeness to budget, and style/occasion compatibility; the recommended category maximizes U.
-
-Matrix notation and argmax selection included for implementation.
-
-### 1. Sets and Discrete Variables
-
-**Budget**  
-- $B \in \{1,2,3,4\}$  
-  - 1 = $  
-  - 2 = $$  
-  - 3 = $$$  
-  - 4 = $$$$
-
-**Metal Type**  
-- $M \in \{\text{Pt}, \text{Au}, \text{Ag}, \text{Ti}\}$  
-  - Pt = Platinum  
-  - Au = Solid Gold  
-  - Ag = Sterling Silver  
-  - Ti = Titanium / Steel
-
-**Style**  
-- $S \in \{\text{Min}, \text{Cla}, \text{Bol}\}$  
-  - Min = Minimalist  
-  - Cla = Classic  
-  - Bol = Bold
-
-**Occasion**  
-- $O \in \{\text{Daily}, \text{Gift}, \text{Wed}, \text{Ann}\}$
-
-**Category Set**  
-- $C \in \mathcal{C}$ 
-  - Solid Gold,
-  - Sterling Silver,
-  - Platinum,
-  - Minimalist,
-  - Studs,
-  - Bangles,
-  - Hypoallergenic
+In relational terms: this is a **filter node** that prunes category nodes failing the relation constraints.
 
 ---
 
-### 2. Attribute Score Functions
+### 4. Relational utility operator
 
-Three numeric maps derived from lookup tables:
+Utility
 
-- **Durability:**  
- $d(C) \in [1,5]$
+$$
+U(C;B,M,S,O)=\mathbb{I}(C;B,M)\Bigl(
+w_d\cdot\frac{d(C)}{5}
++w_p\cdot\bigl(1-\tfrac{|p(C)-B|}{3}\bigr)
++w_v\cdot v(C,S,O)
+\Bigr)
+$$
 
-- **Price Band:**  
-  $p(C) \in \{1,2,3,4\}$
+becomes a **scoring operator**:
 
-- **Style + Occasion Compatibility:**  
-  $v(C, S, O) \in [0,1]$
+- **Operator:** $\mathsf{UScore} : (\mathsf{C},\mathsf{B},\mathsf{M},\mathsf{S},\mathsf{O}) \to \mathbb{R}_{\ge 0}$
 
----
+- **Decomposition:**
+- 
+  - **Durability term node:**  
+    $\mathsf{UDur}(C) = w_d \cdot \mathsf{Dur}(C)/5$
+  - **Budget-closeness term node:**  
+    $\mathsf{UBud}(C,B) = w_p \cdot \bigl(1 - |\mathsf{Price}(C)-B|/3\bigr)$
+  - **Compatibility term node:**  
+    $\mathsf{UCompat}(C,S,O) = w_v \cdot \mathsf{Compat}(C,S,O)$
+  - **Combine:**  
+    $\mathsf{URaw}(C,B,M,S,O) = \mathsf{UDur}(C) + \mathsf{UBud}(C,B) + \mathsf{UCompat}(C,S,O)$
+  - **Mask by feasibility:**  
+    $\mathsf{UScore}(C,B,M,S,O) = \mathsf{Feasible}(C,B,M) \cdot \mathsf{URaw}(C,B,M,S,O)$
 
-### 3. Compatibility Filter (Hard Constraints)
-
-    I(C; B, M) = 1  if  p(C) ≤ B and metal(C) matches M
-                 0  otherwise
-
-This enforces budget and metal feasibility.
-
----
-
-### 4. Utility Function
-
-User preference weights:
-
-- $w_d, w_p, w_v \ge 0$  
-- $w_d + w_p + w_v = 1$ 
-- Default: $w_d = w_p = w_v = \frac{1}{3}$
-
-$$U(C;B,M,S,O)=\mathbb{I}(C;B,M)\Bigl(w_d\cdot\frac{d(C)}{5}+w_p\cdot\bigl(1-\tfrac{|p(C)-B|}{3}\bigr)+w_v\cdot v(C,S,O)\Bigr)$$
+Each of these is a node in the relations with edges from the relevant inputs.
 
 ---
 
-### 5. Optimal Recommendation
+### 5. Relational argmax selection operator
 
-$$C^\star(B,M,S,O)=\arg\max_{C\in\mathcal{C}} U(C;B,M,S,O)$$
+$$
+C^\star(B,M,S,O)=\arg\max_{C\in\mathcal{C}} U(C;B,M,S,O)
+$$
 
-If multiple categories tie, return all maximizers.
+is an relational **selection operator**:
 
----
+- **Operator:** $\mathsf{SelectBest} : (\{\mathsf{UScore}(C,B,M,S,O)\}_{C\in\mathcal{C}}) \to 2^{\mathcal{C}}$
+- **Semantics:** returns the set of category nodes achieving the maximal $\mathsf{UScore}$.
 
-### 6. Matrix Form
+This is a higher-order node that consumes the vector of scores and outputs one or more winning category nodes.
 
-Let:
-
-- $\mathbf{D} \in \mathbb{R}^{|\mathcal{C}|}$ — durability vector  
-- $\mathbf{P} \in \mathbb{R}^{|\mathcal{C}|}$ — price vector  
-- $\mathbf{V}(S,O) \in \mathbb{R}^{|\mathcal{C}|}$ — compatibility vector  
-- $\mathbf{I}(B,M) \in \{0,1\}^{|\mathcal{C}|}$ — feasibility vector  
-
-Then:
-
-$$\mathbf{U}=\mathbf{I}(B,M)\odot\bigl(w_d\tfrac{\mathbf{D}}{5}+w_p\bigl(\mathbf{1}-\tfrac{|\mathbf{P}-B\mathbf{1}|}{3}\bigr)+w_v\mathbf{V}(S,O)\bigr)$$
-
-The optimal category is the index of the maximum entry of $\mathbf{U}$.
