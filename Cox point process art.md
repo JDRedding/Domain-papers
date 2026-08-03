@@ -71,42 +71,38 @@ points = poisson_sample(lambda_fn, D, n_expected)
 for (x, y) in points:
     draw_line((x, y - ℓ/2), (x, y + ℓ/2), color="black", width=w)
 ```
-### 4. Generative regimes
-Here are the most interesting regimes that still stay faithful to the Cox / inhomogeneous Poisson construction with identical vertical segments:
+### 5. Generative regimes
 
-**Extremal gradient** : 
-Very strong ${a y}$ term → near-empty top, dense overlapping forest at the bottom.
- 
-**Inverted gradient** : 
-Dense at the top, sparse/empty at the bottom (anti-gravity feel).
+All regimes keep the same mark (identical vertical segment); only \(\lambda(x,y)\) changes.
 
-**Blob-dominated / island** : 
-Weak gradient, very strong localized Gaussians → a few dense floating clusters of segments in a sea of emptiness.
+- **Extremal vertical gradient:**  
+  **Strong \(a y\)** → near-empty top, dense overlapping forest at the bottom.
 
-**Pure correlated noise (no mean gradient)** : 
-Only the noise term → roughly uniform average density but with strong organic clumping and voids (classic Cox texture).
+- **Inverted gradient:**  
+  Dense at the top, sparse at the bottom → “anti-gravity” feel.
 
-**High-frequency / fine-scale noise** : 
-Small correlation length → finer, more fractal-looking density variations, almost stippled in places.
+- **Blob-dominated / islands:**  
+  Weak gradient, strong localized Gaussians → a few dense floating clusters in a mostly empty field.
 
-**Lattice / columnar bias** : 
-Explicitly lean into the discrete lattice + Bernoulli thinning version from your original description → more regular vertical columns with occasional missing sites.
+- **Pure correlated noise:**  
+  No mean gradient, only noise → roughly uniform average density with organic clumps and voids (canonical Cox texture).
 
-**Rarefied / sparse** : 
-Overall low intensity → elegant, almost calligraphic scattering of isolated segments.
+- **High-frequency noise:**  
+  Short correlation length → fine, almost stippled density variations.
 
-**Saturated / continuous forest** : 
-Very high intensity → segments heavily overlap into dark continuous vertical masses with soft organic edges.
+- **Lattice / columnar bias:**  
+  Emphasize the discrete lattice + Bernoulli thinning → regular vertical columns with occasional missing sites.
 
-**Horizontal or diagonal gradient** : 
-Density varies left-to-right or along a diagonal instead of purely vertical.
+- **Rarefied / sparse:**  
+  Low overall intensity → isolated, calligraphic segments.
 
-**Radial / center-out** : 
-Intensity falls off from a central high-density core.
+- **Saturated / continuous forest:**  
+  Very high intensity → overlapping segments forming dark vertical masses with soft edges.
 
-A combination (or multi-regime pass) creates layered interference: one regime’s dense regions can sit inside another’s voids, producing nested clumps, crossed gradients, and more complex organic structure than any single field. The vertical segments stay identical, so the only variation is spatial density from the combined intensity fields.
-A few combinations:
+- **Horizontal / diagonal gradient:**  
+  Density varies left–right or along a diagonal instead of vertically.
 
-Double: normal (bottom-heavy) + inverted (top-heavy) → dense bands at both top and bottom with a sparse middle band, plus noise interaction.
-Double: bottom-heavy + strong blob islands → dense base with floating dense clusters above.
-Triple: bottom-heavy + inverted + pure correlated noise → richest texture, multiple overlapping scales of clumping.
+- **Radial / center-out:**  
+  Intensity decays away from a central high-density core.
+
+**Layered regimes:** combining multiple fields \(f_1,f_2,\dots\) (e.g. gradients + blobs + noise) yields nested clumps, crossed gradients, and multi-scale structure. The marks remain identical; all visual richness comes from the superposed intensity fields.
