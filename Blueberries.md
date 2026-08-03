@@ -16,8 +16,11 @@ One cup of fresh blueberries (about 148 grams) typically contains roughly 84 cal
 
 ### Health Benefits
 Heart Health: Blueberries may help reduce blood pressure and LDL cholesterol, supporting cardiovascular health due to their antioxidant and anti-inflammatory properties.
+
 Brain Function: Regular consumption has been linked to improved memory and cognitive performance, potentially slowing age-related cognitive decline.
+
 Blood Sugar Regulation: They may help improve insulin sensitivity and moderately reduce blood sugar levels for people with type 2 diabetes.
+
 Digestive Health: The fiber content promotes gut regularity and supports a healthy microbiome.
 Anti-Inflammatory Effects: Polyphenols in blueberries reduce inflammation at a cellular level, which may help with chronic diseases.
 
@@ -28,10 +31,12 @@ Blueberries are versatile and can be enjoyed in numerous ways:
 - Baked goods such as muffins, pancakes, and pies
 - Jams, sauces, and preserves
 - Frozen for long-term storage without losing most of their nutritional value
-- 
+
 ### 🧑‍🌾 Growing and Storage Tips
 Seasonal Availability: Fresh blueberries are typically in season from late spring through the summer, but frozen berries are available year-round.
+
 Storage: Store fresh blueberries in the fridge for 5–10 days. Wash only before eating to prevent spoilage. Frozen blueberries can last several months and are convenient for smoothies and baking.
+
 Cultivation: Blueberries thrive in acidic soil with good drainage, full sunlight, and consistent watering. Patio or backyard blueberry bushes are also available for personal cultivation.
 Varieties
 
@@ -40,7 +45,10 @@ Varieties
 - Lowbush (wild) blueberries: Smaller berries with intense flavor, higher antioxidant levels
 - Rabbiteye blueberries: Popular in southern U.S. states, heat-tolerant with a unique flavor
 
-Blueberries combine taste, nutritional value, and health benefits, making them an excellent addition to a balanced diet. They are universally recognized for their antioxidant properties, heart and brain support, and versatility in culinary preparations.
+Blueberries combine taste, nutritional value, and health benefits, making them an 
+excellent addition to a balanced diet. They are universally recognized for their 
+antioxidant properties, heart and brain support, and versatility in culinary 
+preparations.
 
 Fresh blueberries make an excellent stand‑in for bilberries, and the core reason is 
 that their **flavor intensity, size, and culinary behavior overlap enough** to work 
