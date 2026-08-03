@@ -21,12 +21,7 @@ $$
 - **Field \(f\):**  
   “Noise + gradient + blobs” is exactly a Cox-process style construction:
 
-$$
-  f(x,y)
-  = a y
-  + b\,\mathrm{noise}(cx,cy)
-  + \sum_k w_k \exp\Bigl(-\frac{\|(x,y)-\mathbf{c}_k\|^2}{\sigma_k^2}\Bigr),
-$$
+$$f(x,y) = a y + b\,\mathrm{noise}(cx,cy) + \sum_k w_k \exp\Bigl(-\frac{\|(x,y)-\mathbf{c}_k\|^2}{\sigma_k^2}\Bigr)$$
 
   - **Vertical gradient:** denser at bottom.
   - **Organic clumping:** via noise + Gaussians.
