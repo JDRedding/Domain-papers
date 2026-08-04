@@ -1,96 +1,149 @@
 
-# **🏛️ 300–309 • Social Science Foundations**
-These categories define the primitives of social inquiry.
+Class 200: Religion
 
-- **300 Social Science Foundations** — Nature, scope, and methods of social sciences.  
-- **301 Theory & Models** — Structural, functional, interpretive frameworks.  
-- **302 Research Methods** — Qualitative, quantitative, mixed‑method designs.  
-- **303 Social Systems** — Institutions, norms, structures.  
-- **304 Social Dynamics** — Change, conflict, adaptation.  
-- **305 Social Networks** — Graphs, ties, flows, influence.  
-- **306 Culture & Meaning** — Symbols, narratives, identity.  
-- **307 Social Roles** — Status, expectations, behavior.  
-- **308 Social Institutions** — Family, religion, education, law.  
-- **309 Social Theory** — Classical and contemporary frameworks.
+This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries). Headings use the conventional summary forms.
 
----
+200 Religion
+| Number | Heading |
+|--------|---------|
+| 200 | Religion |
+| 201 | Religious mythology, social theology |
+| 202 | Doctrines |
+| 203 | Public worship & other practices |
+| 204 | Religious experience, life & practice |
+| 205 | Religious ethics |
+| 206 | Leaders & organization |
+| 207 | Missions & religious education |
+| 208 | Sources |
+| 209 | Sects & reform movements |
 
-# **🧠 310–329 • Psychology & Human Behavior**
-This block covers individual and group behavior, cognition, and development.
+210 Philosophy & theory of religion
+| Number | Heading |
+|--------|---------|
+| 210 | Philosophy & theory of religion |
+| 211 | Concepts of God |
+| 212 | Existence, knowability & attributes of God |
+| 213 | Creation |
+| 214 | Theodicy |
+| 215 | Science & religion |
+| 216 | [Unassigned] |
+| 217 | [Unassigned] |
+| 218 | Humankind |
+| 219 | [Unassigned] |
 
-- **310 Psychology** — Human behavior, cognition, emotion.  
-- **311 Cognitive Psychology** — Perception, memory, reasoning.  
-- **312 Behavioral Psychology** — Conditioning, reinforcement.  
-- **313 Developmental Psychology** — Lifespan development.  
-- **314 Social Psychology** — Group behavior, influence, identity.  
-- **315 Personality Theory** — Traits, temperament, structure.  
-- **316 Emotion & Motivation** — Drives, affect, regulation.  
-- **317 Cognitive Bias** — Heuristics, errors, distortions.  
-- **318 Mental Health** — Well‑being, disorders, therapy.  
-- **319 Applied Psychology** — Organizational, educational, clinical.
+220 The Bible
+| Number | Heading |
+|--------|---------|
+| 220 | Bible |
+| 221 | Old Testament (Tanakh) |
+| 222 | Historical books of Old Testament |
+| 223 | Poetic books of Old Testament |
+| 224 | Prophetic books of Old Testament |
+| 225 | New Testament |
+| 226 | Gospels & Acts |
+| 227 | Epistles |
+| 228 | Revelation (Apocalypse) |
+| 229 | Apocrypha & pseudepigrapha |
 
----
+230 Christianity & Christian theology
+| Number | Heading |
+|--------|---------|
+| 230 | Christianity & Christian theology |
+| 231 | God |
+| 232 | Jesus Christ & his family |
+| 233 | Humankind |
+| 234 | Salvation & grace |
+| 235 | Spiritual beings |
+| 236 | Eschatology |
+| 237 | [Unassigned] |
+| 238 | Creeds & catechisms |
+| 239 | Apologetics & polemics |
 
-# **🌍 330–349 • Sociology & Society**
-This block defines collective behavior, social structures, and cultural systems.
+240 Christian practice & observance (Christian moral & devotional theology)
+| Number | Heading |
+|--------|---------|
+| 240 | Christian moral & devotional theology |
+| 241 | Christian ethics |
+| 242 | Devotional literature |
+| 243 | Evangelistic writings for individuals |
+| 244 | [Unassigned] |
+| 245 | [Unassigned] |
+| 246 | Use of art in Christianity |
+| 247 | Church furnishings & articles |
+| 248 | Christian experience, practice, life |
+| 249 | Christian observances in family life |
 
-- **330 Sociology** — Society, groups, institutions.  
-- **331 Social Stratification** — Class, status, inequality.  
-- **332 Demography** — Population, migration, trends.  
-- **333 Urban Studies** — Cities, infrastructure, planning.  
-- **334 Rural Studies** — Agriculture, rural life, development.  
-- **335 Social Change** — Movements, revolutions, modernization.  
-- **336 Deviance & Crime** — Norm violation, criminology.  
-- **337 Social Problems** — Poverty, conflict, inequality.  
-- **338 Community Studies** — Local networks, cohesion.  
-- **339 Cultural Sociology** — Meaning systems, identity.
+250 Christian pastoral practice & religious orders
+| Number | Heading |
+|--------|---------|
+| 250 | Christian pastoral practice & religious orders |
+| 251 | Preaching (Homiletics) |
+| 252 | Texts of sermons |
+| 253 | Pastoral office (Pastoral theology) |
+| 254 | Parish administration |
+| 255 | Religious congregations & orders |
+| 256 | [Unassigned] |
+| 257 | [Unassigned] |
+| 258 | [Unassigned] |
+| 259 | Pastoral care of families & persons |
 
----
+260 Christian organization, social work & worship
+| Number | Heading |
+|--------|---------|
+| 260 | Christian organization, social work & worship |
+| 261 | Social theology |
+| 262 | Ecclesiology |
+| 263 | Days, times, places of observance |
+| 264 | Public worship |
+| 265 | Sacraments, other rites & acts |
+| 266 | Missions |
+| 267 | Associations for religious work |
+| 268 | Religious education |
+| 269 | Spiritual renewal |
 
-# **🏛️ 350–369 • Political Science & Governance**
-This block covers power, authority, institutions, and political behavior.
+270 History of Christianity
+| Number | Heading |
+|--------|---------|
+| 270 | History of Christianity |
+| 271 | Religious orders in church history |
+| 272 | Persecutions in church history |
+| 273 | Doctrinal controversies & heresies |
+| 274 | History of Christianity in Europe |
+| 275 | History of Christianity in Asia |
+| 276 | History of Christianity in Africa |
+| 277 | History of Christianity in North America |
+| 278 | History of Christianity in South America |
+| 279 | History of Christianity in other areas |
 
-- **350 Political Science** — Power, governance, institutions.  
-- **351 Political Theory** — Justice, authority, legitimacy.  
-- **352 Comparative Politics** — Systems, regimes, structures.  
-- **353 International Relations** — Diplomacy, conflict, cooperation.  
-- **354 Public Policy** — Design, evaluation, implementation.  
-- **355 Public Administration** — Bureaucracy, management.  
-- **356 Political Behavior** — Voting, participation, opinion.  
-- **357 Law & Government** — Legal systems, constitutions.  
-- **358 Security Studies** — Defense, strategy, risk.  
-- **359 Geopolitics** — Territory, power, global dynamics.
+280 Christian denominations & sects
+| Number | Heading |
+|--------|---------|
+| 280 | Christian denominations & sects |
+| 281 | Early church & Eastern churches |
+| 282 | Roman Catholic Church |
+| 283 | Anglican churches |
+| 284 | Protestants of Continental origin |
+| 285 | Presbyterian, Reformed, Congregational |
+| 286 | Baptist, Disciples of Christ, Adventist |
+| 287 | Methodist & related churches |
+| 288 | [Unassigned] |
+| 289 | Other denominations & sects |
 
----
+290 Other religions
+| Number | Heading |
+|--------|---------|
+| 290 | Other religions |
+| 291 | [Unassigned] |
+| 292 | Classical (Greek & Roman) religion |
+| 293 | Germanic religion |
+| 294 | Religions of Indic origin |
+| 295 | Zoroastrianism |
+| 296 | Judaism |
+| 297 | Islam, Babism & Bahai Faith |
+| 298 | (Optional number) |
+| 299 | Religions not provided for elsewhere |
 
-# **💰 370–389 • Economics & Human Systems**
-This block defines economic behavior, markets, and resource systems.
-
-- **370 Economics** — Scarcity, value, allocation.  
-- **371 Microeconomics** — Firms, consumers, markets.  
-- **372 Macroeconomics** — Growth, inflation, cycles.  
-- **373 Behavioral Economics** — Bias, heuristics, decision‑making.  
-- **374 Development Economics** — Poverty, growth, institutions.  
-- **375 International Economics** — Trade, finance, globalization.  
-- **376 Labor Economics** — Work, wages, employment.  
-- **377 Public Finance** — Taxation, spending, budgeting.  
-- **378 Economic Systems** — Capitalism, socialism, mixed models.  
-- **379 Economic History** — Evolution of markets and institutions.
-
----
-
-# **🧭 390–399 • Anthropology, Human Geography & Interdisciplinary Studies**
-This block covers human origins, cultural variation, and spatial systems.
-
-- **390 Anthropology** — Human origins, culture, society.  
-- **391 Cultural Anthropology** — Ritual, kinship, symbolism.  
-- **392 Archaeology** — Material culture, excavation, history.  
-- **393 Linguistic Anthropology** — Language, communication, identity.  
-- **394 Physical Anthropology** — Evolution, biology, variation.  
-- **395 Human Geography** — Space, place, environment.  
-- **396 Migration Studies** — Movement, diaspora, borders.  
-- **397 Global Studies** — Globalization, systems, flows.  
-- **398 Intercultural Studies** — Cross‑cultural interaction.  
-- **399 Interdisciplinary Social Science** — Bridges across social domains.
-
----
+Notes  
+The schedule has a well-known strong emphasis on Christianity (especially 220–280). Most non-Christian religions are concentrated in the 290s.  
+An optional chronological/regional arrangement for 220–290 exists in the full schedules/Manual to reduce Christian bias for libraries that prefer it.  
+Further decimal expansions exist in the complete schedules (e.g., detailed subdivisions under 294 for Buddhism/Hinduism, 297 for Islam, specific Christian denominations under 280–289, etc.).
