@@ -8,7 +8,7 @@
 | **Hot-water / Steam** | Varies (often gas) | Grease, oil, mold, dumpster pads | Heats water for better cleaning of organic/greasy messes. |
 | **Battery / Cordless** | Lower PSI | Small touch-ups | Limited runtime and power. |
 
-### Key Specs That Matter for Maintenance Work
+### Key Specs That Matter 
 - **PSI (pounds per square inch)**: Cleaning force. 1,500–2,500 PSI covers most apartment exterior and hardscape work. Higher risk of damage above ~3,000 PSI on softer surfaces.
 - **GPM (gallons per minute)**: Volume of water. Higher GPM = faster cleaning. Look for 1.5–2.5+ GPM for efficiency.
 - **Cleaning Units (CU)** = PSI × GPM. Rough rule of thumb for real work capacity.
@@ -16,7 +16,7 @@
 - **Hose length & quality**: Longer high-pressure hose improves reach around buildings.
 - **Pump type**: Axial (lighter duty) vs. triplex (more durable for frequent use).
 
-### Practical Tips for Apartment/Property Work
+### Practical Tips 
 - Soft surfaces (vinyl siding, painted wood, certain concrete sealers) can be damaged by high pressure or close nozzle distance. Keep 12–18 inches away and use wider tips.
 - Pre-treat with detergent for mold, mildew, oil, or dumpster residue, then rinse.
 - Watch for electrical outlets, window seals, AC units, and light fixtures—water intrusion is a common work-order follow-up.
@@ -45,8 +45,8 @@ Each item is a Guided Link so you can jump straight into whichever direction you
 
 ---
 
-## 🔧 PSI/GPM Reality Check for Property Maintenance
-Most apartment maintenance teams end up in one of three practical bands:
+## 🔧 PSI/GPM Reality Check for Maintenance
+Most maintenance teams end up in one of three practical bands:
 
 ### 1. **Light/General Exterior (Electric)**
 - **PSI:** 1,600–2,000  
