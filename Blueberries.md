@@ -98,11 +98,11 @@ Blueberries thrive in theity **only when soil acidity, drainage, and sunlight ar
 ---
 
 ## 🍇 Variety Selection (Optimized)
-- **Northern Highbush** — Best match for KC’s Zone 6 climate; requires 800–1000 chill hours.  
+- **Northern Highbush** — Best match for Zone 6 climate; requires 800–1000 chill hours.  
 - **Rabbiteye** — More heat‑tolerant; useful as climate variability increases.  
 - **Cross‑pollination** boosts yield by **20–50%** and improves berry size/sweetness.
 
-**KC Note:**  
+**Note:**  
 Avoid Southern Highbush — they break dormancy too early during our freeze–thaw cycles.
 
 ---
@@ -163,7 +163,7 @@ Avoid Southern Highbush — they break dormancy too early during our freeze–th
 - Cclay soil **must** be amended; blueberries fail in unmodified clay.  
 - Our freeze–thaw cycles mean **mulch depth and drainage** matter more here than in coastal or northern climates.  
 - Summer droughts require **consistent irrigation**; blueberries do not tolerate drying out.  
-- Consider **annual sulfur applications** — KC rainfall and irrigation water tend to raise pH over time.
+- Consider **annual sulfur applications** — rainfall and irrigation water tend to raise pH over time.
 
 ---
 
