@@ -2,7 +2,13 @@
 Complete Rule Set (Full System Specification)
 
 ## **1. Core Objective**
-Build the largest mathematical empire by generating **Cash**, **Math Points (MP)**, and **Knowledge**, unlocking deeper math domains, automating production, and achieving **Prestige Paradigm Shifts**.
+Build the largest mathematical empire by generating:
+**Cash**, 
+**Math Points (MP)**, and 
+**Knowledge**, 
+unlocking deeper math domains, 
+automating production, and 
+achieving **Prestige Paradigm Shifts**.
 
 ---
 
@@ -266,4 +272,3 @@ Future subsystems?
 - Prestige Eras  
 - Building Synergies
 
-Pick one and I’ll build it out into a complete design document.
