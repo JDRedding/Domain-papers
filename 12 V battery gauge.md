@@ -165,5 +165,3 @@ Once calibrated, the gauge is **stable, repeatable, temperature‑robust**, and 
 - A **version with 10 LEDs**  
 - A **Li‑ion version**  
 - A **schematic with trimmer and test points**  
-
-Just tell me which direction you want to take.
