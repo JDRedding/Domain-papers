@@ -1,5 +1,9 @@
 # REINFORCING STEEL (REBAR) IN RCC
-Rebar in RCC comes in four main forms — **plain bars**, **deformed bars**, **assembled cages**, and **welded wire mesh** — each defined by surface geometry, bond behavior, and structural role. Below is a tight, structured recap of your full ASCII sheet.
+Rebar in RCC comes in four main forms — 
+- **plain bars**, 
+- **deformed bars**, 
+- **assembled cages**, and 
+- **welded wire mesh** 
 
 ---
 
