@@ -98,7 +98,7 @@ Use chemical injectors only with **soap nozzle** (low pressure). For stronger mi
 
 ---
 
-## 📋 Work-Order Style Notes (Apartment Maintenance)
+## 📋 Work-Order Style Notes (Maintenance)
 - **Sidewalk cleaning:**  
   - Pre-treat stains → surface cleaner → edge rinse  
 - **Dumpster pad:**  
