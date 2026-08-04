@@ -89,7 +89,91 @@ Seasonal Availability: Fresh blueberries are typically in season from late sprin
 Storage: Store fresh blueberries in the fridge for 5–10 days. Wash only before eating to prevent spoilage. Frozen blueberries can last several months and are convenient for smoothies and baking.
 
 Cultivation: Blueberries thrive in acidic soil with good drainage, full sunlight, and consistent watering. Patio or backyard blueberry bushes are also available for personal cultivation.
-Varieties
+
+---
+
+## 🌱 Core   
+Blueberries thrive in theity **only when soil acidity, drainage, and sunlight are tightly controlled**. With the right varieties, proper pH management, consistent moisture, and annual pruning, you can reliably produce high‑quality fruit and store it for weeks.
+
+---
+
+## 🍇 Variety Selection (Optimized)
+- **Northern Highbush** — Best match for KC’s Zone 6 climate; requires 800–1000 chill hours.  
+- **Rabbiteye** — More heat‑tolerant; useful as climate variability increases.  
+- **Cross‑pollination** boosts yield by **20–50%** and improves berry size/sweetness.
+
+**KC Note:**  
+Avoid Southern Highbush — they break dormancy too early during our freeze–thaw cycles.
+
+---
+
+## ☀️ Site & Soil Preparation
+- **Sunlight** — 6–8 hours direct sun; south‑facing is ideal.  
+- **Soil pH** — Target **4.0–5.5**. Clay tends to sit around 6.5–7.2, so sulfur amendments are almost always required.  
+- **Drainage** — Raised beds or mounded rows prevent root rot.  
+- **Spacing** — Highbush: 4–6 ft; Rabbiteye: 6–8 ft; Rows: 8–10 ft.
+
+---
+
+## 🌿 Planting & Cultivation
+- **Timing** — Early spring or fall; avoid frozen or saturated soil.  
+- **Bare‑root prep** — Soak 1–2 hours before planting.  
+- **Containers** — 18–24" pots with peat/pine bark/perlite mix.  
+- **Mulch** — Pine needles or bark, 2–4". Maintain a gap around stems.  
+- **Watering** — 1–2" per week; drip irrigation preferred.
+
+---
+
+## 🔧 Fertilization & Mineral Management
+- Use **ammonium sulfate** or blueberry‑specific fertilizers.  
+- Apply in **early spring** and **post‑flowering**.  
+- **Iron deficiency** (yellow leaves) = pH too high → correct with sulfur or chelated iron.
+
+---
+
+## ✂️ Pruning & Annual Maintenance
+- **Dormant‑season pruning** (late winter).  
+- Remove: dead canes, weak shoots, and wood older than 5–6 years.  
+- Maintain **4–8 strong canes** per bush.  
+- First 1–2 years: remove flower buds to build root strength.
+
+---
+
+## 🐦 Pest & Bird Management
+- **Birds** — Netting is the only truly reliable method.  
+- **Insects** — Aphids, maggots; use neem or insecticidal soap sparingly.  
+- **Disease** — Airflow + proper spacing + mulch = prevention.
+
+---
+
+## 🫐 Harvesting
+- **Ripeness** — Deep blue, slight softness, detach easily.  
+- **Picking frequency** — 3–7 rounds per season.  
+- **Handling** — Shallow containers; avoid crushing.
+
+---
+
+## ❄️ Storage
+- **Short‑term** — 32°F, 85% humidity, up to **2 weeks**.  
+- **Long‑term** — Freeze on trays first, then store airtight.
+
+---
+
+## 📌Specific Notes (Extra Useful)
+- Cclay soil **must** be amended; blueberries fail in unmodified clay.  
+- Our freeze–thaw cycles mean **mulch depth and drainage** matter more here than in coastal or northern climates.  
+- Summer droughts require **consistent irrigation**; blueberries do not tolerate drying out.  
+- Consider **annual sulfur applications** — KC rainfall and irrigation water tend to raise pH over time.
+
+---
+
+## To-Do:
+- A **step‑by‑step planting plan**  
+- A **soil amendment recipe**  
+- A **variety selection matrix**  
+- A **year‑round care calendar**  
+
+## Varieties
 
 ### 🍇 Common blueberry types include:
 - Highbush blueberries: Most widely cultivated, larger berries, grown commercially
