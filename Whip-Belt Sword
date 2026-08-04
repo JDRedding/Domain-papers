@@ -1,0 +1,33 @@
+Whip-Belt Sword (or Urumi-Belt Blade)
+
+A segmented, flexible sword that collapses into a sturdy belt for everyday wear. In combat it uncoils into a whip-like blade that can strike at range or lock rigid for precise cuts. Perfect for a generic fantasy RPG (D&D 5e-style or similar systems).
+
+Basic Stats (5e-compatible)
+Weapon Type**: Martial Melee Weapon  
+Cost**: 75 gp  
+Weight**: 3 lb  
+Damage**: 1d8 slashing (rigid mode) or 1d6 slashing (whip mode)  
+Properties**: Finesse, Versatile (1d10 when used two-handed in rigid mode), Special  
+Range**: Melee (5 ft rigid) or Reach (10 ft whip mode)
+
+Special Properties
+Belt Mode**: While worn as a belt, the weapon is fully concealed. It requires a free hand and a bonus action to uncoil into either rigid sword or whip form. Donning or doffing it as clothing takes the same time as normal armor/clothing.
+Mode Switch**: As a bonus action, switch between:
+  Rigid Mode: Standard sword. Can be used for opportunity attacks and benefits from the Versatile property.
+  Whip Mode: Gains the Reach property (10 ft). Attacks made in this mode have disadvantage against targets within 5 ft. The flexible blade can wrap around limbs or objects (see below).
+Entangle**: When you hit a Medium or smaller creature with a whip-mode attack, you can attempt to grapple it using the weapon (contested Strength (Athletics) check). While grappled this way the target is restrained by the blade until it succeeds on a DC 13 Strength or Dexterity check as an action, or until you release it (no action).
+Concealable**: While in belt mode, Perception checks to notice the weapon have disadvantage unless the observer is actively searching you.
+
+Optional Advanced Features (for higher-tier or magical versions)
+Masterwork / +1 version**: +1 to attack and damage. The belt form can be locked so it cannot be removed without the wearer’s consent (or a successful DC 15 Strength check).
+Magical “Serpent’s Coil”**: The blade can extend to 15 ft reach in whip mode once per short rest. On a critical hit in whip mode, the target is automatically restrained until the start of your next turn.
+Attunement (Rare)**: While attuned, you can use a reaction when hit by a melee attack to make an opportunity attack with the weapon in whip mode against the attacker (if they are within reach).
+
+Flavor / Lore Hook
+Crafted by wandering bladesmiths who valued discretion as much as lethality. The interlocking metal segments are tempered to flex like a whip yet lock rigid with a twist of the hilt. Popular among spies, duelists, and adventurers who prefer not to look armed until the moment of truth. Some claim the design was inspired by southern flexible swords of distant lands; others say it was first seen on the belts of certain colorful plane-hopping heroes.
+
+Quick Item Card (for player handout)
+Whip-Belt Sword  
+Martial weapon, finesse, versatile (1d10), special  
+1d8 slashing (rigid) / 1d6 slashing + reach (whip)  
+Bonus action to draw/switch modes. Can grapple on whip hit. Concealed while worn as a belt.
