@@ -1,94 +1,149 @@
+Class 100: Philosophy & psychology
 
-# **🏛️ 100–109 • Philosophy Foundations**
-These categories define the core primitives of philosophical inquiry.
+This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries). Headings follow the conventional summary forms.
 
-- **100 Philosophy Foundations** — Nature, scope, and aims of philosophy.  
-- **101 Metaphysics** — Being, existence, causation, identity.  
-- **102 Ontology** — Categories of being, structure of reality.  
-- **103 Epistemology** — Knowledge, justification, belief.  
-- **104 Logic** — Formal reasoning, inference, validity.  
-- **105 Philosophy of Language** — Meaning, reference, truth conditions.  
-- **106 Philosophy of Mind** — Consciousness, intentionality, mental states.  
-- **107 Phenomenology** — Lived experience, perception, subjectivity.  
-- **108 Hermeneutics** — Interpretation, understanding, textual meaning.  
-- **109 Philosophical Methods** — Analysis, dialectic, conceptual engineering.
+100 Philosophy & psychology
+| Number | Heading |
+|--------|---------|
+| 100 | Philosophy & psychology |
+| 101 | Theory of philosophy |
+| 102 | Miscellany |
+| 103 | Dictionaries & encyclopedias |
+| 104 | [Unassigned] |
+| 105 | Serial publications |
+| 106 | Organizations & management |
+| 107 | Education, research & related topics |
+| 108 | Groups of people |
+| 109 | History & collected biography |
 
----
+110 Metaphysics
+| Number | Heading |
+|--------|---------|
+| 110 | Metaphysics |
+| 111 | Ontology |
+| 112 | [Unassigned] |
+| 113 | Cosmology |
+| 114 | Space |
+| 115 | Time |
+| 116 | Change |
+| 117 | Structure |
+| 118 | Force & energy |
+| 119 | Number & quantity |
 
-# **⚖️ 110–129 • Ethics & Value Theory**
-This block defines the operators governing moral reasoning, value, and normativity.
+120 Epistemology, causation & humankind
+| Number | Heading |
+|--------|---------|
+| 120 | Epistemology, causation & humankind |
+| 121 | Epistemology |
+| 122 | Causation |
+| 123 | Determinism & indeterminism |
+| 124 | Teleology |
+| 125 | [Unassigned] |
+| 126 | The self |
+| 127 | The unconscious & the subconscious |
+| 128 | Humankind |
+| 129 | Origin & destiny of individual souls |
 
-- **110 Ethics** — Moral principles, right action.  
-- **111 Metaethics** — Nature of moral facts, realism vs anti‑realism.  
-- **112 Normative Ethics** — Consequentialism, deontology, virtue ethics.  
-- **113 Applied Ethics** — Bioethics, tech ethics, environmental ethics.  
-- **114 Aesthetics** — Beauty, art, taste, aesthetic judgment.  
-- **115 Value Theory** — Goodness, worth, utility.  
-- **116 Moral Psychology** — Moral cognition, motivation.  
-- **117 Social & Political Ethics** — Justice, rights, equality.  
-- **118 Virtue Theory** — Character, flourishing.  
-- **119 Ethical Systems** — Structured moral frameworks.
+130 Parapsychology & occultism
+| Number | Heading |
+|--------|---------|
+| 130 | Parapsychology & occultism |
+| 131 | Parapsychological & occult methods |
+| 132 | [Unassigned] |
+| 133 | Specific topics in parapsychology & occultism |
+| 134 | [Unassigned] |
+| 135 | Dreams & mysteries |
+| 136 | [Unassigned] |
+| 137 | Divinatory graphology |
+| 138 | Physiognomy |
+| 139 | Phrenology |
 
----
+140 Specific philosophical schools and viewpoints
+| Number | Heading |
+|--------|---------|
+| 140 | Specific philosophical schools and viewpoints |
+| 141 | Idealism & related systems |
+| 142 | Critical philosophy |
+| 143 | Bergsonism & intuitionism |
+| 144 | Humanism & related systems |
+| 145 | Sensationalism |
+| 146 | Naturalism & related systems |
+| 147 | Pantheism & related systems |
+| 148 | Eclecticism, liberalism & traditionalism |
+| 149 | Other philosophical systems |
 
-# **🌍 130–149 • Social, Political & Cultural Philosophy**
-This block covers collective structures, governance, and meaning systems.
+150 Psychology
+| Number | Heading |
+|--------|---------|
+| 150 | Psychology |
+| 151 | [Unassigned] |
+| 152 | Perception, movement, emotions & drives |
+| 153 | Mental processes & intelligence |
+| 154 | Subconscious & altered states |
+| 155 | Differential & developmental psychology |
+| 156 | Comparative psychology |
+| 157 | [Unassigned] |
+| 158 | Applied psychology |
+| 159 | [Unassigned] |
 
-- **130 Social Philosophy** — Society, norms, institutions.  
-- **131 Political Philosophy** — State, authority, liberty.  
-- **132 Philosophy of Law** — Legal reasoning, justice.  
-- **133 Philosophy of History** — Historical meaning, causation.  
-- **134 Cultural Philosophy** — Culture, identity, interpretation.  
-- **135 Critical Theory** — Power, ideology, social critique.  
-- **136 Feminist Philosophy** — Gender, embodiment, equality.  
-- **137 Philosophy of Education** — Learning, pedagogy, knowledge aims.  
-- **138 Philosophy of Religion** — God, faith, metaphysical theology.  
-- **139 Comparative Philosophy** — Cross‑cultural philosophical traditions.
+160 Philosophical logic
+| Number | Heading |
+|--------|---------|
+| 160 | Philosophical logic |
+| 161 | Induction |
+| 162 | Deduction |
+| 163 | [Unassigned] |
+| 164 | [Unassigned] |
+| 165 | Fallacies & sources of error |
+| 166 | Syllogisms |
+| 167 | Hypotheses |
+| 168 | Argument & persuasion |
+| 169 | Analogy |
 
----
+170 Ethics (Moral philosophy)
+| Number | Heading |
+|--------|---------|
+| 170 | Ethics |
+| 171 | Ethical systems |
+| 172 | Political ethics |
+| 173 | Ethics of family relationships |
+| 174 | Occupational ethics |
+| 175 | Ethics of recreation, leisure, communication & media |
+| 176 | Ethics of sex & reproduction |
+| 177 | Ethics of social relations |
+| 178 | Ethics of consumption |
+| 179 | Other ethical norms |
 
-# **🧩 150–169 • Logic, Reasoning & Conceptual Systems**
-This block defines the formal and informal operators of reasoning.
+180 Ancient, medieval & eastern philosophy
+| Number | Heading |
+|--------|---------|
+| 180 | Ancient, medieval & eastern philosophy |
+| 181 | Eastern philosophy |
+| 182 | Pre-Socratic Greek philosophies |
+| 183 | Sophistic, Socratic & related Greek philosophies |
+| 184 | Platonic philosophy |
+| 185 | Aristotelian philosophy |
+| 186 | Skeptic and Neoplatonic philosophies |
+| 187 | Epicurean philosophy |
+| 188 | Stoic philosophy |
+| 189 | Medieval Western philosophy |
 
-- **150 Formal Logic** — Propositional, predicate, modal logic.  
-- **151 Informal Logic** — Argumentation, fallacies.  
-- **152 Philosophy of Mathematics** — Foundations, abstraction, truth.  
-- **153 Philosophy of Science** — Scientific reasoning, theory structure.  
-- **154 Philosophy of Technology** — Tools, systems, human–machine relations.  
-- **155 Systems Philosophy** — Holism, emergence, complexity.  
-- **156 Structuralism** — Structures, relations, meaning.  
-- **157 Analytic Philosophy** — Clarity, logic, conceptual analysis.  
-- **158 Continental Philosophy** — Phenomenology, existentialism, critique.  
-- **159 Conceptual Engineering** — Refining and redesigning concepts.
+190 Modern western philosophy
+| Number | Heading |
+|--------|---------|
+| 190 | Modern western philosophy |
+| 191 | United States and Canada |
+| 192 | British Isles |
+| 193 | Germany and Austria |
+| 194 | France |
+| 195 | Italy |
+| 196 | Spain and Portugal |
+| 197 | Former Soviet Union / Russia |
+| 198 | Scandinavia |
+| 199 | Other geographic areas |
 
----
-
-# **🌌 170–189 • Metaphysical Systems & Worldviews**
-This block covers large‑scale philosophical frameworks and existential inquiry.
-
-- **170 Cosmology (Philosophical)** — Universe, origins, metaphysical structure.  
-- **171 Naturalism** — Nature as fundamental reality.  
-- **172 Idealism** — Mind‑dependent reality.  
-- **173 Realism** — Mind‑independent reality.  
-- **174 Existentialism** — Meaning, freedom, authenticity.  
-- **175 Pragmatism** — Action, consequences, usefulness.  
-- **176 Structural Metaphysics** — Relations, patterns, ontic structure.  
-- **177 Process Philosophy** — Becoming, change, dynamism.  
-- **178 Philosophy of Nature** — Natural order, teleology.  
-- **179 Worldview Systems** — Coherent global frameworks.
-
----
-
-# **🛠️ 190–199 • Applied Philosophy**
-This block defines how philosophical reasoning is used in real‑world contexts.
-
-- **190 Applied Philosophy** — Practical reasoning, real‑world problems.  
-- **191 Philosophical Analysis** — Conceptual decomposition.  
-- **192 Decision Philosophy** — Rational choice, value alignment.  
-- **193 Ethics of Technology** — AI, automation, digital ethics.  
-- **194 Environmental Philosophy** — Ecology, sustainability, value.  
-- **195 Biomedical Philosophy** — Health, personhood, medical ethics.  
-- **196 Legal Reasoning** — Interpretation, justification.  
-- **197 Philosophical Counseling** — Reasoning for personal development.  
-- **198 Interdisciplinary Philosophy** — Bridges to science, art, culture.  
-- **199 Meta‑Philosophy** — Philosophy of philosophy itself.
+Notes  
+This is the official Third Summary level. Further decimal expansions exist in the full schedules (e.g., under 153 for specific cognitive processes, 155 for developmental stages, 170s for applied ethics topics, etc.).  
+Psychology is deliberately placed in the 150s (within Philosophy & psychology) rather than with the natural sciences.  
+Parapsychology/occultism (130s) and the historical/geographic arrangement of philosophy (180–190) are distinctive features of DDC.
+ 
