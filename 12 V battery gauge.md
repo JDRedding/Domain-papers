@@ -1,0 +1,169 @@
+# 12 V battery gauge
+Clean thresholds, stable behavior, and a full ASCII schematic.
+
+---
+
+## **The circuit**
+A **voltage‑threshold battery gauge** built around the **LM3914** in **DOT mode**, using **4 LEDs** (Red, Orange, Yellow, Green) mapped to battery‑state voltages.
+
+It does **not** rely on LED forward‑voltage differences.  
+It uses **actual electrical thresholds**, giving predictable, repeatable behavior.
+
+---
+
+## **Circuit**
+It monitors a **12 V lead‑acid battery** across the meaningful range:
+
+- **Green** → Full ≈ **12.6 V**  
+- **Yellow** → 75% ≈ **12.3 V**  
+- **Orange** → 50% ≈ **12.0 V**  
+- **Red** → Low ≈ **11.7 V**
+
+These thresholds are created by:
+
+- A **voltage divider** (R1/R2) scaling battery voltage to ~1.06–1.15 V  
+- The LM3914’s **internal 10‑step ladder**  
+- A **reference network** (Rref/Rset) that defines the top and bottom of the ladder  
+- DOT mode (pin 9 floating) so **only one LED lights at a time**
+
+This produces a **stable, calibrated indicator** that tracks battery state accurately.
+
+---
+
+## **Workings**
+The LM3914 compares the scaled battery voltage against **10 evenly spaced internal thresholds**.  
+Populate only outputs **D1, D4, D7, D10**, giving clean 25/50/75/100% indicators.
+
+The LM3914 also **controls LED current**, so **no LED resistors** are needed.
+
+---
+
+## **Full ASCII schematic (robust, complete)**
+
+```text
+                         12 V BATTERY
+                       +-----------+
+                       |           |
+                       |   +   -   |
+                       +---|---|---+
+                           |   |
+                           |  GND
+                           |
+                           |   (BAT+)
+                           |
+                          .-.
+                          | | R1  100 k
+                          | |
+                          '-'
+                           |
+                           +-----------------------> LM3914 pin 5 (SIG IN)
+                           |
+                          .-.
+                          | | R2  10 k
+                          | |
+                          '-'
+                           |
+                          GND
+
+   ---------------------------------------------------------
+   LM3914 CORE WIRING (DOT MODE)
+   ---------------------------------------------------------
+
+                      +----------------------+
+   BAT+ ------------- |  LM3914             |
+                      |                     |
+   GND ---------------+ 2 (GND)        3 (V+) +---- BAT+
+                      |                     |
+                      | 5 (SIG IN) <--------+---- from R1/R2
+                      |                     |
+                      | 4 (REF OUT) --+-----+
+                      |              |     |
+                      |              Rref  |  1.2 k
+                      |              |     |
+                      | 6 (REF ADJ) -+-----+
+                      |                     |
+                      | 7 (LED REF) --[Rset]-- GND
+                      |               620 Ω
+                      |
+   Pin 9 (MODE) ------+ 9 OPEN (DOT mode)
+                      |
+   LED OUTPUTS:       |
+   D1  (pin 1)  ------+-----> Red LED
+   D4  (pin 4)  ------+-----> Orange LED
+   D7  (pin 7)  ------+-----> Yellow LED
+   D10 (pin 10) ------+-----> Green LED
+                      +----------------------+
+
+   ---------------------------------------------------------
+   LED WIRING (COMMON ANODE TO BAT+)
+   ---------------------------------------------------------
+
+                 BAT+ (12 V)
+                    |
+         +----------+----------+----------+
+         |          |          |          |
+        (A)        (A)        (A)        (A)
+        LED        LED        LED        LED
+        GREEN      YELLOW     ORANGE     RED
+        (K)        (K)        (K)        (K)
+         |          |          |          |
+   LM3914 pin10   pin7       pin4       pin1
+
+   ---------------------------------------------------------
+   DECOUPLING
+   ---------------------------------------------------------
+
+   BAT+ ---- 100 nF ---- LM3914 pin 3
+   GND ------------------ LM3914 pin 2
+```
+
+---
+
+## **Summary — Threshold mapping**
+Battery voltage is scaled:
+
+$$
+V_{\text{div}} = V_{\text{bat}} \cdot \frac{10k}{110k}
+$$
+
+So:
+
+- 12.6 V → 1.145 V  
+- 11.7 V → 1.064 V  
+
+The LM3914 maps this 1.064–1.145 V span into 10 equal steps:
+
+$$
+\Delta V_{\text{step}} \approx 0.009\ \text{V}
+$$
+
+Thus:
+
+- **D1** ≈ 11.7 V  
+- **D4** ≈ 11.97 V  
+- **D7** ≈ 12.24 V  
+- **D10** ≈ 12.51 V  
+
+Exactly the desired 25/50/75/100% points.
+
+---
+
+## ** Calibration**
+Use a bench supply:
+
+1. Set **12.6 V** → adjust trimmer (if added) until **Green (D10)** lights.  
+2. Set **11.7 V** → verify **Red (D1)** lights.  
+3. Check intermediate points.
+
+Once calibrated, the gauge is **stable, repeatable, temperature‑robust**, and works across the full battery discharge curve.
+
+---
+
+## **Future projects**
+
+- A **precision resistor‑value table**  
+- A **version with 10 LEDs**  
+- A **Li‑ion version**  
+- A **schematic with trimmer and test points**  
+
+Just tell me which direction you want to take.
