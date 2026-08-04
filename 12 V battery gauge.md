@@ -119,7 +119,7 @@ The LM3914 also **controls LED current**, so **no LED resistors** are needed.
 
 ---
 
-## **Summary — Threshold mapping**
+## **Threshold mapping**
 Battery voltage is scaled:
 
 $$
