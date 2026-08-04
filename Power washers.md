@@ -1,8 +1,38 @@
 **Power washers** (pressure washers) are high-pressure water cleaning tools commonly used in residential property maintenance for exterior surfaces, concrete, siding, decks, dumpsters, and make-ready units.
 
+### Common Types
+| Type | Typical PSI Range | Best For | Notes |
+|------|-------------------|----------|-------|
+| **Electric** | 1,300–2,000 PSI | Light residential cleaning, vehicles, patios | Quieter, no gas fumes, needs outlet. Good for apartments. |
+| **Gas** | 2,000–4,000+ PSI | Heavy concrete, driveways, siding, commercial | More power, portable, louder, requires fuel/oil maintenance. |
+| **Hot-water / Steam** | Varies (often gas) | Grease, oil, mold, dumpster pads | Heats water for better cleaning of organic/greasy messes. |
+| **Battery / Cordless** | Lower PSI | Small touch-ups | Limited runtime and power. |
+
+### Key Specs That Matter for Maintenance Work
+- **PSI (pounds per square inch)**: Cleaning force. 1,500–2,500 PSI covers most apartment exterior and hardscape work. Higher risk of damage above ~3,000 PSI on softer surfaces.
+- **GPM (gallons per minute)**: Volume of water. Higher GPM = faster cleaning. Look for 1.5–2.5+ GPM for efficiency.
+- **Cleaning Units (CU)** = PSI × GPM. Rough rule of thumb for real work capacity.
+- **Nozzles / tips**: 0° (pencil jet, aggressive), 15°, 25°, 40° (wide fan), and soap nozzle. Always start wide and increase pressure carefully.
+- **Hose length & quality**: Longer high-pressure hose improves reach around buildings.
+- **Pump type**: Axial (lighter duty) vs. triplex (more durable for frequent use).
+
+### Practical Tips for Apartment/Property Work
+- Soft surfaces (vinyl siding, painted wood, certain concrete sealers) can be damaged by high pressure or close nozzle distance. Keep 12–18 inches away and use wider tips.
+- Pre-treat with detergent for mold, mildew, oil, or dumpster residue, then rinse.
+- Watch for electrical outlets, window seals, AC units, and light fixtures—water intrusion is a common work-order follow-up.
+- Cold water is fine for most dirt; hot water helps with grease and biological growth.
+- Safety: eye protection, closed-toe shoes, no pointing at people or animals, and be aware of kickback on high-PSI machines.
+- Maintenance on the machine itself: check oil (gas models), flush pump with pump protector/antifreeze if storing in freezing weather, clean inlet filter, and inspect O-rings/hose fittings regularly.
+
+### Quick Selection Guidance
+- Occasional light work / electric-only sites → mid-range electric (around 1,800–2,000 PSI).
+- Regular concrete, sidewalks, dumpster pads, heavy exterior cleaning → gas unit in the 2,700–3,200 PSI range with decent GPM.
+- Heavy grease or commercial pads → consider hot-water capability if budget allows.
+specific brands/models in a certain PSI/GPM range, parts/troubleshooting, nozzle charts, detergent options, or work-order style notes for pressure-washing jobs? Just say what you’re dealing with (surface type, frequency, electric vs gas constraints, etc.).
+
 ---
 
-## ⚙️ Operator-Level Add‑Ons You Might Want Next
+## ⚙️ Operator-Level Add‑Ons 
 Each item is a Guided Link so you can jump straight into whichever direction you need.
 
 - **Brand/model picks** — Electric, gas, hot-water, 1.5–4.0 GPM ranges  
