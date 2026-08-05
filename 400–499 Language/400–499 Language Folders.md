@@ -1,7 +1,5 @@
 **Class 400: Language**
 
-This is the standard **Third Summary** (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries).
-
 ### 400 Language
 | Number | Heading |
 |--------|---------|
