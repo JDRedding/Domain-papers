@@ -4,7 +4,7 @@ Physical competition was a proving ground for the supposed biological superiorit
 ---
 
 ## 🧠 Core Ideology: Sport as Racial Proof  
-Nazi leaders believed athletic performance revealed racial worth. Physical strength, discipline, and endurance were framed as innate Aryan traits. Weakness was treated as biological inferiority. Hitler himself emphasized forging a “violent, imperious, fearless, cruel youth,” using sport to cultivate soldiers and eliminate the “weak.”   [DW](https://www.dw.com/en/sport-in-germany-under-the-nazis-ideology-and-propaganda/a-72384625)
+Nazi leaders believed athletic performance revealed racial worth. Physical strength, discipline, and endurance were framed as innate Aryan traits. Weakness was treated as biological inferiority. Hitler himself emphasized forging a “violent, imperious, fearless, cruel youth,” using sport to cultivate soldiers and eliminate the “weak.” 
 
 This ideology meant:
 
@@ -15,7 +15,7 @@ This ideology meant:
 ---
 
 ## 🚫 Exclusion and Purging of Non‑Aryans  
-Beginning in 1933, Germany’s athletic organizations adopted explicit “Aryans only” policies. Jews and Roma were systematically expelled from clubs, teams, and facilities.   [considerthesourceny.org](https://considerthesourceny.org/teaching-holocaust-and-genocide/holocaust-resources-time-period/indoctrination-and-discrimination/supplemental-readings/1936-olympics)
+Beginning in 1933, Germany’s athletic organizations adopted explicit “Aryans only” policies. Jews and Roma were systematically expelled from clubs, teams, and facilities.   
 
 Examples include:
 
@@ -23,12 +23,12 @@ Examples include:
 - **Daniel Prenn**, top-ranked tennis player, removed from the Davis Cup team.  
 - **Gretel Bergmann**, world-class high jumper, excluded from the 1936 Olympic team despite being one of Germany’s best athletes.
 
-These exclusions aligned with the broader racial laws, including the 1935 Nuremberg Laws stripping Jews of citizenship.   [considerthesourceny.org](https://considerthesourceny.org/teaching-holocaust-and-genocide/holocaust-resources-time-period/indoctrination-and-discrimination/supplemental-readings/1936-olympics)
+These exclusions aligned with the broader racial laws, including the 1935 Nuremberg Laws stripping Jews of citizenship. 
 
 ---
 
 ## 🏛️ Sport as State Indoctrination  
-Physical training was mandatory in Nazi youth organizations — Hitler Youth, League of German Girls, and others. The goal was to produce bodies ready for war and minds loyal to the regime.   [DW](https://www.dw.com/en/sport-in-germany-under-the-nazis-ideology-and-propaganda/a-72384625)
+Physical training was mandatory in Nazi youth organizations — Hitler Youth, League of German Girls, and others. The goal was to produce bodies ready for war and minds loyal to the regime. 
 
 Key features:
 
@@ -41,14 +41,14 @@ Sport was a pipeline into the armed forces, not a neutral activity.
 ---
 
 ## 🌍 International Sport and the Aryan Narrative  
-The Nazis initially rejected international competition — especially the Olympics — because it contradicted their racial worldview. They opposed “international understanding” and disliked competing with “enemy nations.”   [DW](https://www.dw.com/en/sport-in-germany-under-the-nazis-ideology-and-propaganda/a-72384625)
+The Nazis initially rejected international competition — especially the Olympics — because it contradicted their racial worldview. They opposed “international understanding” and disliked competing with “enemy nations.” 
 
-However, once they realized the propaganda value of the 1936 Olympics, they reversed course. The Games became a global showcase for Aryan superiority — architecturally, aesthetically, and ideologically.   [History](https://www.history.com/articles/1936-olympics-hitler-nazi-party)
+However, once they realized the propaganda value of the 1936 Olympics, they reversed course. The Games became a global showcase for Aryan superiority — architecturally, aesthetically, and ideologically.  
 
 ---
 
 ## 🏅 The Propaganda Backfire: Jesse Owens  
-The Berlin Olympics were intended to validate Nazi racial theory. Instead, Black athletes — most famously Jesse Owens — excelled. Owens’ four gold medals directly contradicted Nazi claims of Aryan athletic dominance.   [Google Books](https://books.google.com/books/about/The_1936_Berlin_Olympics_Race_Power_and.html?id=n_ylEAAAQBAJ)
+The Berlin Olympics were intended to validate Nazi racial theory. Instead, Black athletes — most famously Jesse Owens — excelled. Owens’ four gold medals directly contradicted Nazi claims of Aryan athletic dominance. 
 
 The regime responded by:
 
