@@ -1,62 +1,146 @@
-# **📘 500–509 • General Science & Mathematical Foundations**
-These categories define the *meta‑operators* of science: how knowledge is generated, structured, and transformed.
+**Class 500: Natural sciences & mathematics**
 
-- **500 Science Foundations** — Core axioms, epistemic primitives, and universal scientific constraints.  
-- **501 Scientific Method** — Hypothesis → test → inference cycles; falsifiability operators.  
-- **502 Research Methods** — Quantitative, qualitative, mixed‑method, and computational research pipelines.  
-- **503 Systems Theory** — RDG‑friendly: structure–interaction–dynamics triads.  
-- **504 Dynamics** — Time‑evolution operators, stability, attractors, bifurcations.  
-- **505 Information Theory** — Entropy, coding, channels, mutual information.  
-- **506 Complexity Science** — Emergence, self‑organization, multi‑scale behavior.  
-- **507 Computation** — Algorithms, automata, computability, complexity classes.  
-- **508 Structural Mathematics** — Category theory, algebraic structures, morphisms.  
-- **509 AI & Cognitive Systems** — Learning operators, cognitive architectures, symbolic–subsymbolic integration.
+### 500 Natural sciences & mathematics
+| Number | Heading |
+|--------|---------|
+| 500 | Natural sciences & mathematics |
+| 501 | Philosophy & theory |
+| 502 | Miscellany |
+| 503 | Dictionaries & encyclopedias |
+| 504 | [Unassigned] |
+| 505 | Serial publications |
+| 506 | Organizations & management |
+| 507 | Education, research & related topics |
+| 508 | Natural history |
+| 509 | Historical, geographic & persons treatment |
 
----
+### 510 Mathematics
+| Number | Heading |
+|--------|---------|
+| 510 | Mathematics |
+| 511 | General principles of mathematics |
+| 512 | Algebra |
+| 513 | Arithmetic |
+| 514 | Topology |
+| 515 | Analysis |
+| 516 | Geometry |
+| 517 | [Unassigned] |
+| 518 | Numerical analysis |
+| 519 | Probabilities & applied mathematics |
 
-# **📐 510–519 • Mathematics**
-This block defines the formal languages and operator spaces underlying all scientific modeling.
+### 520 Astronomy & allied sciences
+| Number | Heading |
+|--------|---------|
+| 520 | Astronomy & allied sciences |
+| 521 | Celestial mechanics |
+| 522 | Techniques, equipment & materials |
+| 523 | Specific celestial bodies & phenomena |
+| 524 | [Unassigned] |
+| 525 | Earth (Astronomical geography) |
+| 526 | Mathematical geography |
+| 527 | Celestial navigation |
+| 528 | Ephemerides |
+| 529 | Chronology |
 
-- **510 Mathematics** — Global mathematical landscape.  
-- **511 Foundations** — Set theory, logic, axioms, proof theory.  
-- **512 Algebra** — Groups, rings, fields, modules, operators.  
-- **513 Number Theory** — Primes, modular arithmetic, Diophantine structures.  
-- **514 Topology** — Continuity, connectedness, invariants.  
-- **515 Analysis** — Limits, measure, integration, functional spaces.  
-- **516 Geometry** — Metric spaces, curvature, symmetries.  
-- **517 Manifolds** — Smooth structures, charts, tensors.  
-- **518 Graph Theory** — Networks, connectivity, flows.  
-- **519 Logic** — Formal inference, model theory, computability.
+### 530 Physics
+| Number | Heading |
+|--------|---------|
+| 530 | Physics |
+| 531 | Classical mechanics; solid mechanics |
+| 532 | Fluid mechanics; liquid mechanics |
+| 533 | Gas mechanics |
+| 534 | Sound & related vibrations |
+| 535 | Light & infrared & ultraviolet phenomena |
+| 536 | Heat |
+| 537 | Electricity & electronics |
+| 538 | Magnetism |
+| 539 | Modern physics |
 
----
+### 540 Chemistry & allied sciences
+| Number | Heading |
+|--------|---------|
+| 540 | Chemistry & allied sciences |
+| 541 | Physical chemistry |
+| 542 | Techniques, equipment & materials |
+| 543 | Analytical chemistry |
+| 544 | [Unassigned] |
+| 545 | [Unassigned] |
+| 546 | Inorganic chemistry |
+| 547 | Organic chemistry |
+| 548 | Crystallography |
+| 549 | Mineralogy |
 
-# **🌌 520–539 • Physical Sciences**
-This block captures the structure of the physical universe from cosmic scale to quantum scale.
+### 550 Earth sciences
+| Number | Heading |
+|--------|---------|
+| 550 | Earth sciences |
+| 551 | Geology, hydrology & meteorology |
+| 552 | Petrology |
+| 553 | Economic geology |
+| 554 | Earth sciences of Europe |
+| 555 | Earth sciences of Asia |
+| 556 | Earth sciences of Africa |
+| 557 | Earth sciences of North America |
+| 558 | Earth sciences of South America |
+| 559 | Earth sciences of other areas |
 
-- **520 Astronomy** — Cosmic structures, stellar evolution.  
-- **521 Celestial Mechanics** — Orbital dynamics, N‑body systems.  
-- **522 Observational Physics** — Measurement, instrumentation, detection.  
-- **523 Relativity** — Special & general relativity, spacetime geometry.  
-- **524 Quantum Physics** — Operators, states, measurement, entanglement.  
-- **525 Field Theory** — Classical & quantum fields, gauge symmetries.  
-- **526 Wave Mechanics** — Wave equations, dispersion, interference.  
-- **527 Materials** — Solid-state physics, microstructure, mechanical properties.  
-- **528 Thermodynamics** — Energy, entropy, equilibrium.  
-- **529 Statistical Physics** — Ensembles, fluctuations, emergent behavior.  
-- **530 Theoretical Physics** — Unified models, symmetry, mathematical physics.
+### 560 Paleontology; paleozoology
+| Number | Heading |
+|--------|---------|
+| 560 | Paleontology; paleozoology |
+| 561 | Paleobotany; fossil microorganisms |
+| 562 | Fossil invertebrates |
+| 563 | Fossil marine & seashore invertebrates |
+| 564 | Fossil mollusks & molluscoids |
+| 565 | Fossil arthropods |
+| 566 | Fossil chordates |
+| 567 | Fossil cold-blooded vertebrates; fossil fishes |
+| 568 | Fossil birds |
+| 569 | Fossil mammals |
 
----
+### 570 Biology (Life sciences)
+| Number | Heading |
+|--------|---------|
+| 570 | Biology |
+| 571 | Physiology & related subjects |
+| 572 | Biochemistry |
+| 573 | Specific physiological systems in animals |
+| 574 | [Unassigned / limited] |
+| 575 | Specific parts & physiological systems in plants |
+| 576 | Genetics & evolution |
+| 577 | Ecology |
+| 578 | Natural history of organisms |
+| 579 | Natural history of microorganisms, fungi, algae |
 
-# **🧬 540–599 • Life Sciences & Applied Sciences**
-This block covers chemical foundations, biological systems, ecological dynamics, and applied scientific domains.
+### 580 Plants (Botany)
+| Number | Heading |
+|--------|---------|
+| 580 | Plants (Botany) |
+| 581 | Specific topics in natural history of plants |
+| 582 | Plants noted for characteristics & flowers |
+| 583 | Dicotyledons |
+| 584 | Monocotyledons |
+| 585 | Gymnosperms; conifers |
+| 586 | Seedless plants |
+| 587 | Vascular seedless plants |
+| 588 | Bryophytes |
+| 589 | [Unassigned] |
 
-- **540 Chemistry** — Atomic structure, reactions, bonding.  
-- **541 Biochemistry** — Molecular pathways, enzymes, metabolism.  
-- **550 Earth Sciences** — Geology, climate, planetary systems.  
-- **560 Paleobiology** — Fossils, evolutionary history.  
-- **570 Life Sciences** — Biological principles and systems.  
-- **580 Biology** — Cells, organisms, physiology.  
-- **590 Ecology** — Ecosystems, population dynamics, biomes.  
-- **599 Applied Science** — Engineering, technology, translational science.
+### 590 Animals (Zoology)
+| Number | Heading |
+|--------|---------|
+| 590 | Animals (Zoology) |
+| 591 | Specific topics in natural history of animals |
+| 592 | Invertebrates |
+| 593 | Marine & seashore invertebrates |
+| 594 | Mollusks & molluscoids |
+| 595 | Arthropods |
+| 596 | Chordates |
+| 597 | Cold-blooded vertebrates; fishes |
+| 598 | Birds |
+| 599 | Mammals |
 
----
+**Notes**  
+- This is the pure/natural sciences class. Applied sciences and technology begin at 600.  
+- Further decimal expansions are extensive (e.g., under 512 Algebra, 530 Physics specialties, 551 Geology subdivisions, 599 Mammals including humans at 599.9).  
+- Natural history of specific organisms often combines numbers from 570–590 with organism groups.
