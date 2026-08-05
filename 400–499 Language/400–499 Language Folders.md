@@ -1,97 +1,148 @@
+**Class 400: Language**
 
-# **🗣️ 400–409 • Language Foundations**
-These categories define the core primitives of linguistic systems.
+This is the standard **Third Summary** (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries).
 
-- **400 Language Foundations** — Nature, structure, and functions of language.  
-- **401 Linguistic Theory** — Formal models, generative systems.  
-- **402 Grammar** — Rules, structure, constraints.  
-- **403 Syntax** — Phrase structure, dependency, ordering.  
-- **404 Semantics** — Meaning, reference, truth conditions.  
-- **405 Pragmatics** — Context, intention, use.  
-- **406 Phonetics** — Speech sounds, articulation.  
-- **407 Phonology** — Sound systems, patterns, constraints.  
-- **408 Morphology** — Word formation, inflection, derivation.  
-- **409 Linguistic Methods** — Fieldwork, corpus analysis, modeling.
+### 400 Language
+| Number | Heading |
+|--------|---------|
+| 400 | Language |
+| 401 | Philosophy & theory |
+| 402 | Miscellany |
+| 403 | Dictionaries & encyclopedias |
+| 404 | Special topics |
+| 405 | Serial publications |
+| 406 | Organizations & management |
+| 407 | Education, research & related topics |
+| 408 | Groups of people |
+| 409 | Geographic treatment & biography |
 
----
+### 410 Linguistics
+| Number | Heading |
+|--------|---------|
+| 410 | Linguistics |
+| 411 | Writing systems |
+| 412 | Etymology |
+| 413 | Dictionaries |
+| 414 | Phonology & phonetics |
+| 415 | Grammar |
+| 416 | [Unassigned] |
+| 417 | Dialectology & historical linguistics |
+| 418 | Standard usage & applied linguistics |
+| 419 | Sign languages |
 
-# **📚 410–429 • Language Families & Historical Linguistics**
-This block covers linguistic evolution, families, and comparative structures.
+### 420 English & Old English languages
+| Number | Heading |
+|--------|---------|
+| 420 | English & Old English |
+| 421 | English writing system & phonology |
+| 422 | English etymology |
+| 423 | English dictionaries |
+| 424 | [Unassigned] |
+| 425 | English grammar |
+| 426 | [Unassigned] |
+| 427 | English language variations |
+| 428 | Standard English usage |
+| 429 | Old English (Anglo-Saxon) |
 
-- **410 Historical Linguistics** — Change, reconstruction, evolution.  
-- **411 Proto‑Languages** — Proto‑Indo‑European, proto‑Semitic, etc.  
-- **412 Indo‑European Languages** — Romance, Germanic, Slavic, Indo‑Iranian.  
-- **413 Afroasiatic Languages** — Semitic, Berber, Cushitic.  
-- **414 Sino‑Tibetan Languages** — Chinese, Tibetan, Burmese.  
-- **415 Niger‑Congo Languages** — Bantu and related families.  
-- **416 Austronesian Languages** — Polynesian, Malayic, Filipino.  
-- **417 Native American Languages** — Algic, Uto‑Aztecan, Quechuan.  
-- **418 Language Contact** — Borrowing, creoles, convergence.  
-- **419 Linguistic Typology** — Structural comparison across languages.
+### 430 Germanic languages; German
+| Number | Heading |
+|--------|---------|
+| 430 | Germanic languages; German |
+| 431 | German writing systems & phonology |
+| 432 | German etymology |
+| 433 | German dictionaries |
+| 434 | [Unassigned] |
+| 435 | German grammar |
+| 436 | [Unassigned] |
+| 437 | German language variations |
+| 438 | Standard German usage |
+| 439 | Other Germanic languages |
 
----
+### 440 Romance languages; French
+| Number | Heading |
+|--------|---------|
+| 440 | Romance languages; French |
+| 441 | French writing systems & phonology |
+| 442 | French etymology |
+| 443 | French dictionaries |
+| 444 | [Unassigned] |
+| 445 | French grammar |
+| 446 | [Unassigned] |
+| 447 | French language variations |
+| 448 | Standard French usage |
+| 449 | Occitan, Catalan, Franco-Provençal |
 
-# **🧠 430–449 • Cognitive & Psycholinguistics**
-This block defines the cognitive operators underlying language processing.
+### 450 Italian, Romanian & related languages
+| Number | Heading |
+|--------|---------|
+| 450 | Italian, Romanian & related languages |
+| 451 | Italian writing systems & phonology |
+| 452 | Italian etymology |
+| 453 | Italian dictionaries |
+| 454 | [Unassigned] |
+| 455 | Italian grammar |
+| 456 | [Unassigned] |
+| 457 | Italian language variations |
+| 458 | Standard Italian usage |
+| 459 | Romanian & Rhaeto-Romanic |
 
-- **430 Psycholinguistics** — Processing, comprehension, production.  
-- **431 Language Acquisition** — First and second language learning.  
-- **432 Neurolinguistics** — Brain regions, disorders, pathways.  
-- **433 Cognitive Semantics** — Conceptual metaphor, mental models.  
-- **434 Cognitive Grammar** — Usage‑based structures.  
-- **435 Bilingualism** — Code‑switching, cognitive effects.  
-- **436 Language & Thought** — Sapir‑Whorf, conceptual framing.  
-- **437 Speech Perception** — Auditory processing, phonetic cues.  
-- **438 Language Disorders** — Aphasia, dyslexia, impairments.  
-- **439 Cognitive Pragmatics** — Intent, inference, social cognition.
+### 460 Spanish, Portuguese, Galician
+| Number | Heading |
+|--------|---------|
+| 460 | Spanish, Portuguese, Galician |
+| 461 | Spanish writing systems & phonology |
+| 462 | Spanish etymology |
+| 463 | Spanish dictionaries |
+| 464 | [Unassigned] |
+| 465 | Spanish grammar |
+| 466 | [Unassigned] |
+| 467 | Spanish language variations |
+| 468 | Standard Spanish usage |
+| 469 | Portuguese |
 
----
+### 470 Latin & Italic languages
+| Number | Heading |
+|--------|---------|
+| 470 | Latin & Italic languages |
+| 471 | Classical Latin writing & phonology |
+| 472 | Classical Latin etymology |
+| 473 | Classical Latin dictionaries |
+| 474 | [Unassigned] |
+| 475 | Classical Latin grammar |
+| 476 | [Unassigned] |
+| 477 | Old, postclassical & Vulgar Latin |
+| 478 | Classical Latin usage |
+| 479 | Other Italic languages |
 
-# **🌍 450–469 • Sociolinguistics & Communication**
-This block covers language as a social, cultural, and communicative system.
+### 480 Classical & modern Greek languages
+| Number | Heading |
+|--------|---------|
+| 480 | Classical & modern Greek languages |
+| 481 | Classical Greek writing & phonology |
+| 482 | Classical Greek etymology |
+| 483 | Classical Greek dictionaries |
+| 484 | [Unassigned] |
+| 485 | Classical Greek grammar |
+| 486 | [Unassigned] |
+| 487 | Preclassical & postclassical Greek |
+| 488 | Classical Greek usage |
+| 489 | Other Hellenic languages (incl. Modern Greek) |
 
-- **450 Sociolinguistics** — Variation, identity, social meaning.  
-- **451 Dialects & Variation** — Regional, social, stylistic.  
-- **452 Language & Culture** — Symbolism, worldview, norms.  
-- **453 Discourse Analysis** — Conversation, narrative, structure.  
-- **454 Conversation Analysis** — Turn‑taking, repair, interaction.  
-- **455 Pragmatic Variation** — Politeness, formality, context.  
-- **456 Language & Power** — Ideology, rhetoric, framing.  
-- **457 Language Policy** — Standardization, rights, planning.  
-- **458 Communication Theory** — Signals, channels, noise.  
-- **459 Intercultural Communication** — Cross‑cultural interaction.
+### 490 Other languages
+| Number | Heading |
+|--------|---------|
+| 490 | Other languages |
+| 491 | East Indo-European & Celtic languages |
+| 492 | Afro-Asiatic languages; Semitic languages |
+| 493 | Non-Semitic Afro-Asiatic languages |
+| 494 | Altaic, Uralic, Hyperborean & Dravidian |
+| 495 | Languages of East & Southeast Asia |
+| 496 | African languages |
+| 497 | North American native languages |
+| 498 | South American native languages |
+| 499 | Austronesian & other languages |
 
----
-
-# **✍️ 470–489 • Writing, Literature & Expression**
-This block covers written language, narrative systems, and expressive forms.
-
-- **470 Writing Systems** — Alphabets, syllabaries, logographies.  
-- **471 Orthography** — Spelling, conventions, reform.  
-- **472 Stylistics** — Style, register, rhetorical form.  
-- **473 Rhetoric** — Persuasion, argument, technique.  
-- **474 Narrative Theory** — Story structure, plot, voice.  
-- **475 Poetics** — Meter, form, literary devices.  
-- **476 Translation Studies** — Equivalence, fidelity, adaptation.  
-- **477 Lexicography** — Dictionary design, definitions.  
-- **478 Writing & Composition** — Craft, clarity, structure.  
-- **479 Literary Linguistics** — Language in literature.
-
----
-
-# **🤖 490–499 • Computational Linguistics & Applied Language Systems**
-This block defines artificial language systems, NLP, and applied linguistic technology.
-
-- **490 Computational Linguistics** — Algorithms, corpora, models.  
-- **491 Natural Language Processing** — Parsing, generation, embeddings.  
-- **492 Machine Translation** — Statistical, neural, hybrid.  
-- **493 Speech Technology** — ASR, TTS, voice interfaces.  
-- **494 Language Modeling** — Probabilistic and neural models.  
-- **495 Text Mining** — Extraction, classification, clustering.  
-- **496 Corpus Linguistics** — Large‑scale language data.  
-- **497 Language Engineering** — Tools, pipelines, systems.  
-- **498 Human–Computer Language Interaction** — Interfaces, dialogue systems.  
-- **499 Applied Linguistics** — Education, assessment, real‑world use.
-
-
-RDG Operator Map • UML Hierarchy • Cross‑Domain Lattice
+**Notes**  
+- Specific languages and language families occupy 420–490. Further subdivisions for writing systems, etymology, dictionaries, grammar, dialects, etc., are added using **Table 4**.  
+- Linguistics (general science of language) is concentrated at 410–419.  
+- Sign languages are at 419.
