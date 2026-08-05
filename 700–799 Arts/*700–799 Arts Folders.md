@@ -1,98 +1,149 @@
+ 
+Class 700: The arts (fine & decorative arts) / Arts & recreation
+ 
 
----
+700 The arts
+| Number | Heading |
+|--------|---------|
+| 700 | The arts |
+| 701 | Philosophy & theory |
+| 702 | Miscellany |
+| 703 | Dictionaries & encyclopedias |
+| 704 | Special topics |
+| 705 | Serial publications |
+| 706 | Organizations & management |
+| 707 | Education, research & related topics |
+| 708 | Galleries, museums & private collections |
+| 709 | Historical, geographic & persons treatment |
 
-# **🎨 700–709 • Arts Foundations**
-These categories define the primitives of artistic creation and interpretation.
+710 Area planning & landscape architecture
+| Number | Heading |
+|--------|---------|
+| 710 | Area planning & landscape architecture |
+| 711 | Area planning |
+| 712 | Landscape architecture |
+| 713 | Landscape architecture of trafficways |
+| 714 | Water features |
+| 715 | Woody plants |
+| 716 | Herbaceous plants |
+| 717 | Structures in landscape architecture |
+| 718 | Landscape design of cemeteries |
+| 719 | Natural landscapes |
 
-- **700 Arts Foundations** — Nature, purpose, and functions of art.  
-- **701 Aesthetics** — Beauty, form, perception, value.  
-- **702 Art Theory** — Movements, frameworks, conceptual models.  
-- **703 Art History** — Periods, styles, evolution.  
-- **704 Creative Process** — Imagination, technique, iteration.  
-- **705 Artistic Methods** — Mediums, tools, practices.  
-- **706 Criticism & Interpretation** — Analysis, meaning, evaluation.  
-- **707 Symbolism** — Metaphor, iconography, motifs.  
-- **708 Art & Culture** — Social context, identity, influence.  
-- **709 Art & Technology** — Digital art, media, hybrid forms.
+720 Architecture
+| Number | Heading |
+|--------|---------|
+| 720 | Architecture |
+| 721 | Architectural structure |
+| 722 | Architecture to ca. 300 |
+| 723 | Architecture from ca. 300 to 1399 |
+| 724 | Architecture from 1400 |
+| 725 | Public structures |
+| 726 | Buildings for religious purposes |
+| 727 | Buildings for education & research |
+| 728 | Residential & related buildings |
+| 729 | Design & decoration |
 
----
+730 Sculpture & related arts
+| Number | Heading |
+|--------|---------|
+| 730 | Plastic arts; sculpture |
+| 731 | Processes, forms & subjects of sculpture |
+| 732 | Sculpture to ca. 500 |
+| 733 | Greek, Etruscan & Roman sculpture |
+| 734 | Sculpture from ca. 500 to 1399 |
+| 735 | Sculpture from 1400 |
+| 736 | Carving & carvings |
+| 737 | Numismatics & sigillography |
+| 738 | Ceramic arts |
+| 739 | Art metalwork |
 
-# **🖼️ 710–729 • Visual Arts**
-This block covers visual mediums, techniques, and representational systems.
+740 Drawing & decorative arts
+| Number | Heading |
+|--------|---------|
+| 740 | Drawing & decorative arts |
+| 741 | Drawing & drawings |
+| 742 | Perspective |
+| 743 | Drawing & drawings by subject |
+| 744 | [Unassigned] |
+| 745 | Decorative arts |
+| 746 | Textile arts |
+| 747 | Interior decoration |
+| 748 | Glass |
+| 749 | Furniture & accessories |
 
-- **710 Painting** — Color, composition, style.  
-- **711 Drawing** — Line, shading, form.  
-- **712 Sculpture** — Material, volume, space.  
-- **713 Printmaking** — Etching, lithography, relief.  
-- **714 Photography** — Light, framing, digital processes.  
-- **715 Film & Cinematography** — Motion, editing, narrative.  
-- **716 Digital Art** — Generative, interactive, computational.  
-- **717 Illustration** — Visual storytelling, stylization.  
-- **718 Design** — Graphic, industrial, visual systems.  
-- **719 Mixed Media** — Hybrid materials, experimental forms.
+750 Painting & paintings
+| Number | Heading |
+|--------|---------|
+| 750 | Painting & paintings |
+| 751 | Techniques, equipment, materials & forms |
+| 752 | Color |
+| 753 | Symbolism, allegory, mythology & legend |
+| 754 | Genre paintings |
+| 755 | Religion |
+| 756 | [Unassigned] |
+| 757 | Human figures |
+| 758 | Other subjects |
+| 759 | Historical, geographic & persons treatment |
 
----
+760 Printmaking & prints
+| Number | Heading |
+|--------|---------|
+| 760 | Graphic arts; printmaking & prints |
+| 761 | Relief processes (Block printing) |
+| 762 | [Unassigned] |
+| 763 | Lithographic processes |
+| 764 | Chromolithography & serigraphy |
+| 765 | Metal engraving |
+| 766 | Mezzotinting, aquatinting & related processes |
+| 767 | Etching & drypoint |
+| 768 | [Unassigned] |
+| 769 | Prints |
 
-# **🎭 730–749 • Performing Arts**
-This block defines embodied, temporal, and expressive artistic systems.
+770 Photography, computer art, film, video
+| Number | Heading |
+|--------|---------|
+| 770 | Photography, photographs & computer art |
+| 771 | Techniques, equipment & materials |
+| 772 | Metallic salt processes |
+| 773 | Pigment processes of printing |
+| 774 | Holography |
+| 775 | Digital photography |
+| 776 | Computer art (Digital art) |
+| 777 | [Unassigned] |
+| 778 | Fields & kinds of photography |
+| 779 | Photographs |
 
-- **730 Theatre** — Performance, staging, dramaturgy.  
-- **731 Dance** — Movement, rhythm, choreography.  
-- **732 Music** — Melody, harmony, rhythm.  
-- **733 Vocal Arts** — Singing, voice technique.  
-- **734 Instrumental Arts** — Performance, technique.  
-- **735 Acting** — Character, emotion, embodiment.  
-- **736 Performance Theory** — Ritual, presence, audience.  
-- **737 Stagecraft** — Lighting, sound, set design.  
-- **738 Choreography** — Structure, movement design.  
-- **739 Musical Composition** — Form, orchestration, creation.
+780 Music
+| Number | Heading |
+|--------|---------|
+| 780 | Music |
+| 781 | General principles & musical forms |
+| 782 | Vocal music |
+| 783 | Music for single voices; the voice |
+| 784 | Instruments & instrumental ensembles |
+| 785 | Ensembles with one instrument per part |
+| 786 | Keyboard & other instruments |
+| 787 | Stringed instruments |
+| 788 | Wind instruments |
+| 789 | (Optional number) |
 
----
+790 Recreational & performing arts
+| Number | Heading |
+|--------|---------|
+| 790 | Recreational & performing arts |
+| 791 | Public performances |
+| 792 | Stage presentations |
+| 793 | Indoor games & amusements |
+| 794 | Indoor games of skill |
+| 795 | Games of chance |
+| 796 | Athletic & outdoor sports & games |
+| 797 | Aquatic & air sports |
+| 798 | Equestrian sports & animal racing |
+| 799 | Fishing, hunting & shooting |
 
-# **📚 750–769 • Literary Arts**
-This block covers narrative, poetic, and textual artistic systems.
-
-- **750 Literature** — Narrative, imagination, expression.  
-- **751 Fiction** — Storytelling, character, plot.  
-- **752 Poetry** — Meter, imagery, sound.  
-- **753 Drama** — Dialogue, conflict, structure.  
-- **754 Creative Writing** — Craft, voice, technique.  
-- **755 Literary Theory** — Structuralism, postmodernism, critique.  
-- **756 Narrative Studies** — Story structure, perspective.  
-- **757 Rhetorical Arts** — Persuasion, style, argument.  
-- **758 Scriptwriting** — Screenplays, teleplays, structure.  
-- **759 Literary Criticism** — Interpretation, analysis.
-
----
-
-# **🎶 770–789 • Music, Sound & Sonic Arts**
-This block defines auditory, acoustic, and compositional systems.
-
-- **770 Music Theory** — Harmony, counterpoint, form.  
-- **771 Composition** — Structure, orchestration.  
-- **772 Sound Design** — Texture, synthesis, effects.  
-- **773 Audio Engineering** — Recording, mixing, mastering.  
-- **774 Ethnomusicology** — Cultural music systems.  
-- **775 Music Performance** — Technique, interpretation.  
-- **776 Sonic Art** — Experimental sound, installations.  
-- **777 Music Technology** — Digital tools, production.  
-- **778 Acoustics** — Physics of sound.  
-- **779 Music & Culture** — Identity, tradition, influence.
-
----
-
-# **🧵 790–799 • Applied, Decorative & Interdisciplinary Arts**
-This block covers material, craft, and hybrid artistic systems.
-
-- **790 Decorative Arts** — Ornament, pattern, craft.  
-- **791 Textile Arts** — Weaving, fabric, design.  
-- **792 Fashion** — Style, identity, industry.  
-- **793 Architecture** — Space, structure, form.  
-- **794 Industrial Design** — Objects, usability, aesthetics.  
-- **795 Craft & Making** — Handmade, artisanal techniques.  
-- **796 Decorative Media** — Ceramics, glass, metalwork.  
-- **797 Interdisciplinary Arts** — Hybrid, experimental, cross‑modal.  
-- **798 Art & Society** — Influence, activism, public art.  
-- **799 Meta‑Art** — Reflexive study of artistic systems.
-
----
+Notes  
+This class covers fine arts, decorative arts, performing arts, music, and recreation/sports.  
+Literature is separated into the 800s.  
+Further decimal expansions are extensive (especially under 750 Painting, 780 Music, and 796 Sports).
+ 
