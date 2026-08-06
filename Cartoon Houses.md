@@ -3,7 +3,9 @@
 - SpongeBob’s pineapple
 SpongeBob’s pineapple is a bright orange-yellow pineapple, complete with green leaves on top, situated in the underwater city of Bikini Bottom. The house is stylized with large, round windows and a wooden door, often decorated with a nautical porthole and a small mailbox. Its interior is surprisingly spacious, featuring multiple rooms, including SpongeBob’s living room, kitchen, bedroom, and bathroom, which align with whimsical and cartoonish designs that reflect his bubbly personality. The exterior is immediately recognizable for its quirky shape and cheerful aesthetic.
   
-- Dragon Ball’s Kame House  
+- Dragon Ball’s Kame House
+Kame House is a small, pink, single-story house situated on a tiny, uninhabited island surrounded by ocean. Despite its modest size, it is instantly recognizable for its vivid color and tropical setting. The front of the house typically features a simple porch and a well-kept lawn, often with palm trees, creating a relaxing seaside environment suited to Master Roshi's leisurely lifestyle.
+
 - The Simpsons’ suburban home  
 - The Flintstones’ stone-age dwelling  
 - Dexter’s Laboratory house  
