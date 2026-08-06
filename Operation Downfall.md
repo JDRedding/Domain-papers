@@ -167,8 +167,106 @@ These included:
 
 **Key takeaway:** Japan’s defensive plan for Operation Downfall—**Ketsu-Go**—organized nearly all remaining home‑island forces into two massive General Armies: **1st General Army** defending Tokyo and central Honshu, and **2nd General Army** defending Kyushu, Shikoku, and Hokkaido. These formations included **dozens of infantry divisions, armored divisions, mixed brigades, and militia**, positioned exactly where the Allies planned to land.  
 
-Below is a structured, citation‑grounded breakdown of the Japanese Order of Battle.
+Here is a clean, structurally explicit **ASCII diagram** of the **Japanese defensive layout** for Operation Downfall (Ketsu-Go).  
+It emphasizes **geography**, **command hierarchy**, and **division placement**, using a relational-first layout that matches your abstraction style.
 
+---
+
+## Japanese Home Island Defense (Ketsu-Go)
+
+```text
+                         ┌──────────────────────────────────────────┐
+                         │              1st GENERAL ARMY            │
+                         │        (Tokyo / Central Honshu)          │
+                         └──────────────────────────────────────────┘
+                                      /           |            \
+                                     /            |             \
+                                    /             |              \
+                         ┌────────────┐   ┌────────────┐   ┌────────────┐
+                         │ 12th AREA  │   │ 13th AREA  │   │ 11th AREA  │
+                         │   ARMY     │   │   ARMY     │   │   ARMY     │
+                         └────────────┘   └────────────┘   └────────────┘
+                         Tokyo Plain       Nagoya Region      Sendai Region
+                         (18 ID + 2 AD)    (6 ID)             (6 ID)
+
+                                (ID = Infantry Division, AD = Armored Division)
+
+   HONSHU (MAIN ISLAND)
+   ===========================================================================
+
+                     [Tokyo] ★
+                       │
+                       │  Strongest concentration of forces
+                       │  • 12th Area Army: 18 infantry divisions
+                       │  • 2 armored divisions
+                       │  • 36th Army (strategic reserve)
+                       │
+                       ▼
+
+        ┌──────────────────────────────────────────────────────────────┐
+        │                     KANTO PLAIN (CORONET TARGET)             │
+        │   Expected Allied landing zone → Japan massed divisions here │
+        └──────────────────────────────────────────────────────────────┘
+
+
+   ===========================================================================
+
+   KYUSHU (OLYMPIC TARGET)
+   ┌────────────────────────────────────────────────────────────────────────┐
+   │                         2nd GENERAL ARMY                               │
+   │                     (Kyushu / Shikoku / Hokkaido)                      │
+   └────────────────────────────────────────────────────────────────────────┘
+
+                     ┌────────────┐   ┌────────────┐   ┌────────────┐
+                     │ 16th AREA  │   │ 15th AREA  │   │  5th AREA   │
+                     │   ARMY     │   │   ARMY     │   │   ARMY      │
+                     └────────────┘   └────────────┘   └────────────┘
+                     Kyushu            Shikoku/E. Honshu   Hokkaido
+                     (14 ID + 2 AD)    (8 ID)              (5 ID)
+
+   KYUSHU DEFENSE LAYOUT
+   ----------------------
+   Southern Beaches (expected landings):
+   • 14 infantry divisions positioned around Miyazaki, Ariake Bay, Satsuma
+   • 2 armored divisions held inland for counterattack
+   • Heavy coastal fortifications + artillery belts
+   • Kamikaze airfields ringed around the island
+
+   ===========================================================================
+
+   SHIKOKU
+   --------
+   • 15th Area Army elements
+   • 8 infantry divisions guarding eastern approaches to Osaka/Kyoto
+
+   ===========================================================================
+
+   HOKKAIDO
+   --------
+   • 5th Area Army
+   • 5 infantry divisions guarding northern approaches
+   • Secondary theater but still fortified
+
+   ===========================================================================
+
+   NATIONAL RESERVE & MILITIA
+   ---------------------------
+   • 25 Independent Mixed Brigades
+   • 3 Guards Brigades
+   • 7 Tank Brigades
+   • Patriotic Citizens Fighting Corps (civilian militia)
+     – Men 15–60, Women 17–40
+     – Expected to resist with improvised weapons
+
+   ===========================================================================
+
+   AIR GENERAL ARMY
+   ----------------
+   • Remaining fighters/bombers consolidated for kamikaze operations
+   • Severe fuel shortages → limited conventional sorties
+```
+
+---
 ---
 
 ## 🏯 1st General Army — Defense of Tokyo & Central Honshu  
