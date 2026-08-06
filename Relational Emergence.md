@@ -67,7 +67,7 @@ This ontology represents an advanced meta-framework for systematically analyzing
 It is most relevant for researchers in complex systems, cognitive science, social organization, and any field concerned with emergent relational dynamics.
 
 # References, further reading, and related literature
-[https://github.com/JDRedding/RDG-MFE-Q](https://github.com/JDRedding/RDG-MFE-Q)
-[Relational Ontology](https://philarchive.org/s/%20Relational%20Ontology) in Philosophy and Cognitive Science, PhilArchive
-[Emergent Consciousness and Plural Cognitive Ecology](https://www.academia.edu/150281577/Relational_Emergent_Consciousness_A_path_to_a_plural_cognitive_ecology) Academia.edu
-[Relational Emergence](https://x.com/OhWellMike/status/2085427070864413062), 𝙼𝚒𝚔𝚎 🜎, @OhWellMike
+- [https://github.com/JDRedding/RDG-MFE-Q](https://github.com/JDRedding/RDG-MFE-Q)
+- [Relational Ontology](https://philarchive.org/s/%20Relational%20Ontology) in Philosophy and Cognitive Science, PhilArchive
+- [Emergent Consciousness and Plural Cognitive Ecology](https://www.academia.edu/150281577/Relational_Emergent_Consciousness_A_path_to_a_plural_cognitive_ecology) Academia.edu
+- [Relational Emergence](https://x.com/OhWellMike/status/2085427070864413062), 𝙼𝚒𝚔𝚎 🜎, @OhWellMike
