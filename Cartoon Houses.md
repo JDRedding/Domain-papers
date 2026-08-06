@@ -14,7 +14,7 @@ The Simpsons' home is a classic representation of an American suburban house and
   
 - The Flintstones’ stone-age dwelling
 
-
+The Flintstones’ home is portrayed as a typical suburban house of the 1960s, but constructed entirely from stone and other primitive materials. The exterior walls are made of roughly hewn rocks, boulders, or stone slabs, giving the appearance of a hand-carved, rugged dwelling. The roof often resembles flattened stone or sometimes large slabs of driftwood topped with stone tiles, and the chimney is similarly crafted from rock. Windows and doors are simple, sometimes framed with stone beams.
   
 - Dexter’s Laboratory house
 
