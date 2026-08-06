@@ -127,16 +127,6 @@ Air units included P‑51, P‑38, P‑47 fighter groups; B‑24, B‑25, A‑26
 
 ---
 
-## 🗾 Japanese Forces Opposing Olympic  
-Japan’s **Ketsu-Go** defense plan concentrated **~350,000 defenders** on Kyushu (updated from earlier estimates of 80,000–206,000).  
-These included:  
-- Infantry divisions  
-- Coastal defense brigades  
-- Air units prepared for mass kamikaze attacks  
-- Civilian militias expected to resist with improvised weapons   
-
----
-
 ## 🏯 Operation Coronet (Tokyo Plain) — Ground Forces  
 Coronet would dwarf Olympic. Planned for **March 1946**, it involved:
 
@@ -167,4 +157,90 @@ The landing zones on the **Kantō Plain** would have required two massive army g
 
 ---
 
+## 🗾 Japanese Forces Opposing Olympic  
+Japan’s **Ketsu-Go** defense plan concentrated **~350,000 defenders** on Kyushu (updated from earlier estimates of 80,000–206,000).  
+These included:  
+- Infantry divisions  
+- Coastal defense brigades  
+- Air units prepared for mass kamikaze attacks  
+- Civilian militias expected to resist with improvised weapons   
+
+**Key takeaway:** Japan’s defensive plan for Operation Downfall—**Ketsu-Go**—organized nearly all remaining home‑island forces into two massive General Armies: **1st General Army** defending Tokyo and central Honshu, and **2nd General Army** defending Kyushu, Shikoku, and Hokkaido. These formations included **dozens of infantry divisions, armored divisions, mixed brigades, and militia**, positioned exactly where the Allies planned to land.  
+
+Below is a structured, citation‑grounded breakdown of the Japanese Order of Battle.
+
+---
+
+## 🏯 1st General Army — Defense of Tokyo & Central Honshu  
+Field Marshal Hajime Sugiyama commanded the primary defensive force protecting the Tokyo region. It controlled **three Area Armies** across central Honshu.   
+
+### Area Armies under 1st General Army  
+- **13th Area Army** — HQ Nagoya  
+  - Controlled **6 infantry divisions**  
+- **12th Area Army** — HQ Tokyo  
+  - Controlled **2 armored divisions + 18 infantry divisions**  
+- **11th Area Army** — HQ Sendai  
+  - Controlled **6 infantry divisions**  
+
+### Strategic Reserve  
+- **36th Army** — Tokyo region reserve  
+
+### Air Command  
+- **Air General Army** — controlled remaining air assets (severely depleted by 1945)  
+
+---
+
+## 🛡️ 2nd General Army — Defense of Kyushu, Shikoku & Hokkaido  
+Field Marshal Shunroku Hata commanded the second major defensive grouping, covering the southern and northern approaches.  
+
+### Area Armies under 2nd General Army  
+- **5th Area Army** — HQ Sapporo (Hokkaido)  
+  - **5 infantry divisions**  
+- **15th Area Army** — HQ Osaka (Eastern Honshu + Shikoku)  
+  - **8 infantry divisions**  
+- **16th Area Army** — HQ Fukuoka (Kyushu)  
+  - **2 armored divisions + 14 infantry divisions**  
+
+Kyushu was the expected landing site for **Operation Olympic**, so Japan concentrated its strongest remaining formations there.
+
+---
+
+## ⚔️ Additional Defensive Formations  
+Japan supplemented its Area Armies with numerous independent units: 
+- **25 Independent Mixed Brigades**  
+- **3 Guards Brigades**  
+- **7 Tank Brigades**  
+- Large civilian militia formations (Patriotic Citizens Fighting Corps), including men aged 15–60 and women aged 17–40.
+
+---
+
+## ✈️ Air Forces  
+Japan’s air forces were consolidated under the **Air General Army**, but by mid‑1945:  
+- Aircraft production was collapsing  
+- Fuel shortages were severe  
+- Remaining planes were prioritized for **kamikaze** operations against the invasion fleet  
+
+---
+
+## 🧭 Strategic Logic of Ketsu-Go  
+Japan correctly predicted Allied invasion points:  
+- **Kyushu** (Operation Olympic)  
+- **Tokyo Plain** (Operation Coronet)
+
+Thus, they concentrated their four armored divisions and the bulk of infantry divisions in these two regions. The expectation was to inflict catastrophic casualties during the beach landings and force a negotiated peace.
+
+---
+
+## 📊 Summary Table — Japanese Order of Battle (Home Islands)
+
+| Region | Command | Forces |
+|-------|---------|--------|
+| **Tokyo / Central Honshu** | 1st General Army | 13th, 12th, 11th Area Armies; 36th Army; ~26 infantry divisions + 2 armored |
+| **Kyushu** | 16th Area Army | 14 infantry divisions + 2 armored |
+| **Shikoku / Eastern Honshu** | 15th Area Army | 8 infantry divisions |
+| **Hokkaido** | 5th Area Army | 5 infantry divisions |
+| **Nationwide** | Independent Brigades | 25 mixed brigades, 3 guards brigades, 7 tank brigades |
+| **Air Forces** | Air General Army | Remaining fighters/bombers, kamikaze units |
+
+---
  [operationdownfalldata.com](https://www.operationdownfalldata.com/olympic)
