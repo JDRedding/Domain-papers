@@ -1,3 +1,19 @@
+**Operation Downfall** was the Allied plan to invade Japan in 1945, which was ultimately never carried out due to Japan’s surrender following the atomic bombings and Soviet entry into the war.
+
+## Background and Objectives
+By mid-1945, Japan was facing severe military and economic setbacks, and the Allies sought to end the Pacific War. Operation Downfall was conceived as a massive two-phase operation to ensure Japan’s unconditional surrender. Its objectives were to capture key Japanese territories, force capitulation, and prevent further Allied casualties from the ongoing conflict in the Pacific.
+
+##Plan and Composition
+
+The operation was divided into two main parts:
+
+Operation Olympic: Scheduled for November 1945, this phase aimed to invade the southern Japanese island of Kyushu, the southernmost major island. Kyushu was to serve as a staging ground for the final invasion, controlling airfields and ports essential for supporting deeper operations. Allied planners anticipated intense resistance, with large numbers of Japanese civilians and military personnel defending the island.
+
+Operation Coronet: Planned for spring 1946, this phase targeted the Tokyo Plain on the main island of Honshu, near the capital, and would have been the most ambitious amphibious assault in history. The operation would involve millions of Allied troops, supported by naval and air bombardment, including strategic bombing campaigns. The goal was to crush Japanese military capability at its core and secure unconditional surrender.
+
+## Expected Challenges and Casualties
+
+Allied planners anticipated extremely high casualties due to Japan’s preparation for total defense, including mobilization of civilians, women, and teenagers in militias. Estimates suggested hundreds of thousands of Allied casualties and potentially millions of Japanese deaths, both military and civilian, if the invasion proceeded. Defensive fortifications, widespread kamikaze attacks, and guerrilla tactics raised concerns about prolonged and devastating combat.
 
 Map of Operation Downfall, the invasion of the Japanese home islands if Japan had not surrendered following the dropping of the Atomic Bombs on Hiroshima and Nagasaki. That map captures the immense scale of **Operation Downfall**, the planned Allied invasion of Japan that was ultimately canceled after Japan’s surrender in August 1945. It’s divided into two major phases:  
 
@@ -341,4 +357,13 @@ Thus, they concentrated their four armored divisions and the bulk of infantry di
 | **Air Forces** | Air General Army | Remaining fighters/bombers, kamikaze units |
 
 ---
- [operationdownfalldata.com](https://www.operationdownfalldata.com/olympic)
+
+## Cancellation and Historical Impact
+
+Operation Downfall was never executed because Japan surrendered following the atomic bombings of Hiroshima and Nagasaki in August 1945 and the Soviet Union’s declaration of war on Japan. The combination of these factors convinced Japanese leadership that further resistance was futile, avoiding the need for a full-scale invasion. Historians consider the operation’s planning to illustrate both the immense scale and deadly potential of a conventional invasion of Japan and its influence on the Allied decision to use atomic weapons.
+
+In summary, Operation Downfall represents one of the largest planned military operations in history, marked by its unprecedented scale, anticipated casualties, and its role in shaping the final weeks of World War II in the Pacific. Its cancellation helped prevent potentially catastrophic loss of life for both Allied troops and Japanese civilians.
+
+---
+
+[operationdownfalldata.com](https://www.operationdownfalldata.com/olympic)
