@@ -22,8 +22,8 @@ Dexter's family home is depicted as a two-story house with pink walls, a brown r
   
 - Hey Arnold’s boarding house
 
+The Sunset Arms Boarding House, located at fictional 4040 Vine Street, is owned by Arnold's grandparents, Phil and Gertrude Shortman. Grandpa Phil also shares ownership with his twin sister Mitzi, and the house has a long family history, with Phil’s father having acquired it in a card game during the 1890s. The building is depicted as an older, multi-room urban tenement typical of large northern cities, and it houses a community of eccentric tenants alongside Arnold and his family.
 
-  
 - Kids Next Door treehouse
 
 
