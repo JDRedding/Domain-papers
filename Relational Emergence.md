@@ -1,4 +1,5 @@
-# Relational Emergence Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distinction Reproducible Classification Criteria 
+# Relational Emergence 
+Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distinction Reproducible Classification Criteria 
 
 Relational Emergence – Indicates the study of how system-level properties arise from interactions among constituent parts, emphasizing relational rather than purely reductionist accounts.
 
