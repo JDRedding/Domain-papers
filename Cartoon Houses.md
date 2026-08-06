@@ -18,7 +18,7 @@ The Flintstones’ home is portrayed as a typical suburban house of the 1960s, b
   
 - Dexter’s Laboratory house
 
-
+Dexter's family home is depicted as a two-story house with pink walls, a brown roof featuring two dormers, a chimney, and a small garage. While the first two seasons maintain this classic pink look, the third and fourth seasons simplified the exterior to white. The house sits in the fictional suburb of Genius Grove, providing the impression of an ordinary neighborhood juxtaposed with Dexter’s extraordinary secret.
   
 - Hey Arnold’s boarding house
 
