@@ -3,7 +3,7 @@
 ## Background and Objectives
 By mid-1945, Japan was facing severe military and economic setbacks, and the Allies sought to end the Pacific War. Operation Downfall was conceived as a massive two-phase operation to ensure Japan’s unconditional surrender. Its objectives were to capture key Japanese territories, force capitulation, and prevent further Allied casualties from the ongoing conflict in the Pacific.
 
-##Plan and Composition
+## Plan and Composition
 
 The operation was divided into two main parts:
 
