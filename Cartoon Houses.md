@@ -28,7 +28,7 @@ The Sunset Arms Boarding House, located at fictional 4040 Vine Street, is owned 
 
 The Sector V Treehouse is the main headquarters for the Kids Next Door (KND) Sector V. It grows from a 560-year-old tree located in the center of Numbuh 1's house in Virginia and integrates various salvaged parts such as ship bows and space shuttle noses. The treehouse serves as a self-contained living and operations center, supporting the KND operatives with sleeping quarters, mission planning areas, and defense systems.
   
--  The Griffin House – Family Guy
+-  The Griffin House 
 
 The Griffins live in a pastel-colored, two-story suburban house in Quahog, Rhode Island. With a distinctive garage, screened porch, and yard where many of Peter’s antics occur, the home mirrors traditional suburban architecture 
 
