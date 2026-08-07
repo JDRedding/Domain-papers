@@ -244,6 +244,7 @@ VALIS is a **revelation engine**.
 ---
 
 # **I. Core Literary Foundations of VALIS**
+
 Philip K. Dick’s *VALIS* (1981) is a semi‑autobiographical, metaphysical science‑fiction novel built around three central operators:
 
 ### **1. Horselover Fat / Philip K. Dick Split**
@@ -260,6 +261,26 @@ Philip K. Dick’s *VALIS* (1981) is a semi‑autobiographical, metaphysical sci
 - **Pink‑beam gnosis**  
   Dick’s real 1974 visions form the basis of the Exegesis and the metaphysics of VALIS.
 - **Outcome:** A million‑word symbolic reasoning journal attempting to decode reality.
+
+---
+
+Three central operators:
+
+1. Split-identity operator:
+
+$$
+\text{Split} : \text{Dick} \mapsto (\text{Fat}, \text{Dick}).
+$$
+
+Creates internal epistemic debate: revelation vs. delusion.
+
+2. VALIS itself (already defined above).
+
+3. 2-3-74 experience:
+
+$$
+\text{Pink-beam event}_{1974} \mapsto \text{Exegesis} \quad (\text{million-word decoding process}).
+$$
 
 ---
 
