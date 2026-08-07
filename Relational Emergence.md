@@ -324,7 +324,7 @@ Relational emergence provides a rigorous, cross-disciplinary framework for under
 
 ✔ Reasonable disagreement is expected — this framework clarifies concepts; it does not replace empirical investigation.
 
-Conclusion
+# Conclusion
 This ontology represents an advanced meta-framework for systematically analyzing and classifying emergent organizational properties across disciplines while maintaining clear ontological and epistemic distinctions, with emphasis on methodological reproducibility.
 It is most relevant for researchers in complex systems, cognitive science, social organization, and any field concerned with emergent relational dynamics.
 
