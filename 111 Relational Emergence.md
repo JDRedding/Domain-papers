@@ -508,9 +508,9 @@ It is most relevant for researchers in complex systems, cognitive science, socia
 
 # References, further reading, and related literature
 - [RDG-MFE-Q](https://github.com/JDRedding/RDG-MFE-Q) repo; [Closure Stability Conjecture](https://github.com/JDRedding/RDG-MFE-Q/blob/main/_Paper/%20Redding's%20Closure%20Stability%20Conjecture.pdf)
-- [Relational Ontology, v. 3.0](https://philarchive.org/s/%20Relational%20Ontology) in Philosophy and Cognitive Science, PhilArchive
+- [Relational Ontology](https://philarchive.org/s/%20Relational%20Ontology) in Philosophy and Cognitive Science, PhilArchive
 - [Choose point](https://x.com/JDRedding/status/2053839104526393796) JD Redding, @JDRedding
-- [Relational Emergence](https://x.com/OhWellMike/status/2085427070864413062), 𝙼𝚒𝚔𝚎 🜎, @OhWellMike
+- [Relational Emergence, v. 3.0](https://x.com/OhWellMike/status/2085427070864413062), 𝙼𝚒𝚔𝚎 🜎, @OhWellMike
 - [Emergent Consciousness and Plural Cognitive Ecology](https://www.academia.edu/150281577/Relational_Emergent_Consciousness_A_path_to_a_plural_cognitive_ecology) Academia.edu
 
 ## **Keywords**  
