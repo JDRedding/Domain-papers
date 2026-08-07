@@ -370,6 +370,17 @@ The BIP is Dick’s internal state made mythic.
 ---
 
 # **IV. VALIS as Corrective Information**
+
+Counter-operator triple:
+
+$$
+\begin{align*}
+\text{Revelation operator} &\colon \text{gnosis} = \text{new interpretive frame}, \\
+\text{Information injection} &\colon \text{pink beam} \equiv \text{high-bandwidth reality patch}, \\
+\text{Identity bifurcation} &\colon \text{Fat/Dick} = \text{mind under forced model revision}.
+\end{align*}
+$$
+
 VALIS acts as a **counter‑operator** to the Empire/BIP system.
 
 ### **1. Gnostic Revelation**
