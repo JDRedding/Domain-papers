@@ -1,6 +1,9 @@
 # Relational Emergence 
 Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distinction Reproducible Classification Criteria 
 
+The document defines a cross‑disciplinary ontology for “relational emergence”: how system‑level properties arise from relations among parts rather than from parts themselves. It provides a formal operator view, an ontological vs. epistemic distinction, a four‑category taxonomy (A–D) with examples, a reproducible decision protocol for classification, and suggested applications and verification methods.
+
+## Terminology 
 Relational Emergence – Indicates the study of how system-level properties arise from interactions among constituent parts, emphasizing relational rather than purely reductionist accounts.
 
 Cross-Disciplinary Ontology of Organization – A framework that spans multiple disciplines (e.g., biology, sociology, physics, cognitive science) for classifying organizational structures or emergent phenomena.
