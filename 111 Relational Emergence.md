@@ -1,7 +1,34 @@
-# Relational Emergence 
+# 111 Relational Emergence 
 Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distinction Reproducible Classification Criteria 
+**Author:** JD Redding  
+**Title:** *Relational Emergence: A Cross‑Disciplinary Ontology of Organization with Ontological/Epistemic Distinctions and Reproducible Classification Criteria*   
+**Description:** 1 document (text) — diagrams, tables  
+
+- **111 Ontology**
+- 303 Social Processes / Social Structure
+- 500 — Natural Sciences / Complexity Science
+- 160 — Logic / Formal Structures
+- 150 — Psychology / Cognitive Science
+- 000 — General Works / Information Science**
+  
+## **Abstract**  
+A cross‑disciplinary ontology of emergent phenomena grounded in relational organization rather than constituent properties. The work distinguishes four substrates of emergence—physical, interactional, formal, and cognitive—and provides a reproducible classification protocol using ontological/epistemic tags. Applicable to natural sciences, social systems, cognitive science, formal theory, and multi‑agent systems.
 
 The document defines a cross‑disciplinary ontology for “relational emergence”: how system‑level properties arise from relations among parts rather than from parts themselves. It provides a formal operator view, an ontological vs. epistemic distinction, a four‑category taxonomy (A–D) with examples, a reproducible decision protocol for classification, and suggested applications and verification methods.
+
+## **Subjects**  
+- Emergence (Philosophy)  
+- Ontology  
+- Relational Ontology  
+- Complex Systems  
+- Organization (Theory of knowledge)  
+- Systems Theory  
+- Social Structure  
+- Cognitive Systems  
+- Formal Structures (Philosophy)  
+- Interdisciplinary Classification  
+
+---
 
 ## Terminology 
 Relational Emergence – Indicates the study of how system-level properties arise from interactions among constituent parts, emphasizing relational rather than purely reductionist accounts.
@@ -485,3 +512,5 @@ It is most relevant for researchers in complex systems, cognitive science, socia
 - [Relational Emergence](https://x.com/OhWellMike/status/2085427070864413062), 𝙼𝚒𝚔𝚎 🜎, @OhWellMike
 - [Emergent Consciousness and Plural Cognitive Ecology](https://www.academia.edu/150281577/Relational_Emergent_Consciousness_A_path_to_a_plural_cognitive_ecology) Academia.edu
 
+## **Keywords**  
+Relational emergence; ontology; epistemology; SID/PED; relational geometry; emergent property; emergent relation; emergent construct; cognitive abstraction; Q‑slice moderation; organization‑level predicates; complexity; cross‑disciplinary ontology; classification criteria.
