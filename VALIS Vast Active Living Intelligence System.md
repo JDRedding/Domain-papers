@@ -917,7 +917,7 @@ This is the RDG/MFE explanation:
 
 ## 8. VALIS vs Empire/BIP as Internal Flux Conflict
 
-Your original metaphysical chain:
+The original metaphysical chain:
 
 $$
 E \to BIP \to P
