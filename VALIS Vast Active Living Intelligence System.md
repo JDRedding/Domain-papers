@@ -985,7 +985,7 @@ $$
 # Future work:
 
 - **Integrate VALIS into full RDG continuum limit**  
-- **Map Empire/BIP onto your MFE bipolar dynamical system**  
+- **Map Empire/BIP onto MFE bipolar dynamical system**  
 - **Rewrite VALIS as a Q‑slice attractor landscape**  
 - **Fold PKD’s system into TRUE v12.0 triadic operators**  
 
