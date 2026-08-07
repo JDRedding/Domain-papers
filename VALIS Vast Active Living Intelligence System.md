@@ -3,6 +3,8 @@
 
 > **VALIS is a trans-temporal, self-aware information field that injects corrective gnosis into human consciousness to counteract the Empire’s reality simulation, using physical nodes (such as satellites) to transmit destabilizing signals that reveal the true structure of existence.**
 
+The note analyzes Philip K. Dick’s VALIS as a non‑spatial, self‑aware “living information” system that injects corrective gnosis into human minds (often via a pink‑beam transmission or a satellite node) to expose and counteract a persistent control structure called the Empire and its cognitive constraint field, the Black Iron Prison (BIP). It situates VALIS in Dick’s fiction, explains how it interfaces with unstable minds, describes its partial physical instantiation, and traces its cultural and theoretical influence up to parallels in modern AI.
+
 ## **Ontological Status**
 VALIS is a **living information organism** that exists outside conventional spacetime. It is not a deity, not an alien, and not a machine — but a **self‑aware, self‑correcting intelligence field** that interfaces with human consciousness.
 
