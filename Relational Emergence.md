@@ -200,15 +200,15 @@ Emergent from material/physical organization of constituents (macroscopic, nonlo
 #### B. Emergent relations  
 Emergent from interaction/relational organization (networks, norms, institutions, coordination).
 
-### C. Fundamental construct  
+### C. Emergent construct  
 Emergent from formal/mathematical organization of theories and symmetries; not in the substrate, but in the structure.
 
 ### D. Abstraction / concepts  
-Emergent from cognitive/cultural organization of symbols, meanings, and practices.
+Emergent from cognitive or cultural organization of symbols, meanings, and conceptual systems; not grounded in physical or substrates.
 
 ```
 ┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
-│ A. EMERGENT PROPERTY        │ B. EMERGENT RELATIONS       │ C. FUNDAMENTAL CONSTRUCT    │ D. ABSTRACTION / CONCEPTS   │
+│ A. EMERGENT PROPERTY        │ B. EMERGENT RELATIONS       │ C. EMERGENT CONSTRUCT       │ D. ABSTRACTION / CONCEPTS   │
 ├─────────────────────────────┼─────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
 │ Emergent from physical      │ Emergent from interaction   │ Emergent from formal        │ Emergent from cognitive /   │
 │ organization of matter;     │ and relational organization │ and mathematical structure  │ cultural organization of    │
@@ -238,14 +238,12 @@ A(O)  = Ontological Emergent Property
 A(E)  = Epistemic Emergent Property
 B(O)  = Ontological Emergent Relation
 B(E)  = Epistemic Emergent Relation
-C     = Fundamental Construct
+C     = Emergent Construct
 D     = Abstraction / Concept
 
 ```
 
 # Applications 
-
-Descriptive Convenience → Epistemic (Useful Model) → Weak Emergence → Strong Emergence → Ontological (Real & Causally Efficacious)
 
 ```
 1. Can K be meaningfully attributed to a single constituent?
@@ -272,12 +270,17 @@ Descriptive Convenience → Epistemic (Useful Model) → Weak Emergence → Stro
 
 4. Does K arise from formal, mathematical, or theoretical
    organization (spaces, symmetries, representational frameworks)
-   rather than from physical or social substrates?
+   rather than from physical or social substrates? (i.e., K is part
+   of the structure of description rather than the structure of the
+   described system)
    │
    ├── Yes → CLASSIFY AS C (Emergent Formal Construct)
    │
    └── No  → CLASSIFY AS D (Emergent Cognitive / Cultural Concept)
 ```
+
+### A/B spectrum (only)
+Descriptive Convenience → Epistemic (Useful Model) → Weak Emergence → Strong Emergence → Ontological (Real & Causally Efficacious)
 
 Different disciplines and philosophical positions will place the same phenomena at different points on this spectrum.
 
