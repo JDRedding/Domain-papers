@@ -161,7 +161,7 @@ $$
 \end{align*}
 $$
 
-Selection rule (as stated in the note):
+Selection rule:
 
 $$
 \mathcal{V} \text{ selects } m \in \mathcal{U},\quad \text{not by prophetic status but by reconfigurability}.
