@@ -10,7 +10,7 @@ Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distincti
 - 500 — Natural Sciences / Complexity Science
 - 160 — Logic / Formal Structures
 - 150 — Psychology / Cognitive Science
-- 000 — General Works / Information Science**
+- 000 — General Works / Information Science
   
 ## **Abstract**  
 A cross‑disciplinary ontology of emergent phenomena grounded in relational organization rather than constituent properties. The work distinguishes four substrates of emergence—physical, interactional, formal, and cognitive—and provides a reproducible classification protocol using ontological/epistemic tags. Applicable to natural sciences, social systems, cognitive science, formal theory, and multi‑agent systems.
