@@ -35,6 +35,8 @@ Many concepts denote properties of the organization of constituents,
      [R] is the SID‑side relational geometry operator
      [F] is the PED‑side evaluative flux operator
      P is the emergent global predicate
+
+SID specifies the structural and interaction geometry; PED specifies the power‑evaluative dynamics. Their separation ensures that relational structure and flux evaluation remain distinct operators. Q‑slice moderation governs how relational configurations are sampled, stabilized, or reset across time, preventing naive additive or local interpretations.
      
 $P(x_i)$ is only a local diagnostic, not a determinant of the global state, with the rejection:
 
