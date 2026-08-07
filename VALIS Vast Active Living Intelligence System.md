@@ -469,6 +469,24 @@ The summary:
 | **Black Iron Prison** | Enforces cognitive confinement | VALIS breaks perceptual occlusion |
 | **VALIS** | — | Injects corrective, destabilizing information |
 
+The table formalized as opposition of operators:
+
+$$
+\begin{array}{c|c|c}
+\text{System Operator} & \text{Function} & \text{Counter-Function} \\
+\hline
+E & \text{generates illusion of progress} & \mathcal{V} \text{ reveals continuity} \\
+BIP & \text{enforces cognitive confinement} & \mathcal{V} \text{ breaks perceptual occlusion} \\
+\mathcal{V} & — & \text{injects corrective, destabilizing information}
+\end{array}
+$$
+
+Canonical statement:
+
+$$
+\text{The Empire never ended because it is structural, not historical.} \qquad \mathcal{V} = \text{counter-structure}.
+$$
+
 **Takeaway:**  
 *The Empire never ended because it is not historical — it is structural. VALIS is the counter‑structure.*
 
