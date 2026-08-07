@@ -307,6 +307,8 @@ Each layer **emerges from the organization of the previous one**, adding new mod
 Thus, the taxonomy is not merely classificatory — it is **genealogical**, describing how increasingly abstract forms of organization arise from earlier relational geometries.
 
 # Applications 
+Emergence spans four relational geometries: physical systems (A) where matter organizes through spatial, energetic, and coherent relations to produce macroscopic predicates like superconductivity or temperature; interactional systems (B) where organisms, agents, and institutions generate relational patterns such as ecosystems, norms, markets, and meanings; formal systems (C) where axioms, symmetries, and representational frameworks create theoretical constructs like spacetime, gauge symmetry, and information bounds; and cognitive/cultural systems (D) where concepts, symbols, narratives, and shared meanings give rise to abstractions such as numbers, justice, beauty, and probability. Each layer introduces a new relational geometry, producing emergent predicates that cannot be reduced to the constituents of the layer beneath it.
+
 ## **A. Emergence from Physical Relational Geometry**  
 Physical emergence arises from **material organization**, where constituents are physical entities (particles, fields, molecules, cells) and the relational geometry is defined by:
 
