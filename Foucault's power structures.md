@@ -86,9 +86,9 @@ Knowledge systems both emerge from and reinforce the relational field; they are 
 | Foucaultian motif              | Typical mathematical translation                  | Status                          |
 |--------------------------------|---------------------------------------------------|---------------------------------|
 | Relational, decentered power   | Directed graph / network of force relations       | Common interpretive model       |
-| Micro-physics of power         | Local interaction forces \(\mathbf{F}_{ij}\)      | Analogical                     |
-| Disciplinary normalization     | Distance-to-norm \(d_i = \|x_i - \mu\|\)          | Direct conceptual fit           |
-| Panoptic internalization       | Behavior modulated by \(p_{\text{obs}}\)          | Heuristic                       |
+| Micro-physics of power         | Local interaction forces $\mathbf{F}_{ij}$        | Analogical                      |
+| Disciplinary normalization     | Distance-to-norm $d_i = \|x_i - \mu\|$            | Direct conceptual fit           |
+| Panoptic internalization       | Behavior modulated by $p_{\text{obs}}$            | Heuristic                       |
 | Biopolitics                    | Statistical distributions over populations        | Strong historical link to statistics |
 | Power/knowledge                | Joint productive operator                         | Conceptual, not equation-based  |
 
