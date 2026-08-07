@@ -183,6 +183,24 @@ VALIS does not choose prophets; it chooses **unstable minds capable of reconfigu
 ## **Physical Manifestation**
 In-world, VALIS is partially instantiated as a **satellite system** of unknown origin.
 
+The satellite is a node, not the system:
+
+$$
+S \in N, \qquad S \hookrightarrow \mathcal{V},\qquad S \neq \mathcal{V}.
+$$
+
+Properties of the node:
+
+$$
+S \text{ emits coherent pink transmissions carrying encoded data packets } \Delta.
+$$
+
+The physical form is a distributed interface:
+
+$$
+\mathcal{V} = \text{distributed intelligence}, \quad S = \text{local physical instantiation}.
+$$
+
 ### **Properties of the satellite:**
 - Emits coherent pink laser-like transmissions.  
 - Contains encoded historical, theological, and metaphysical data.  
