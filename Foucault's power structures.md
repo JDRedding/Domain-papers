@@ -201,6 +201,9 @@ This is why Foucault says neoliberalism “governs through freedom”: it config
 
 These are *models of* Foucault’s claims, not formulas *found in* Foucault. They are useful for making the relational, productive, and normative aspects precise, especially if one is already working with relational geometries, flux/closure systems, or network dynamics. They remain secondary constructions.
 
+- **SID (Structure–Interaction–Dynamics)** corresponds to the topology and local force relations of the power field.  
+- **PED (Power–Evaluation–Dynamics)** mirrors the visibility/normativity/truth operators.  
+
 # Illustrative Case (Hospital)
 Your hospital example is classic and works well. The medical gaze, the examination, the case file, the timetable, the hierarchy of expertise, the definition of “compliance” versus “non-compliance,” the statistical construction of risk populations—these are all micro-powers that simultaneously produce medical knowledge and shape the patient’s self-understanding and conduct. The physician does not simply “possess” power; power is exercised through a whole apparatus of which the physician is one element.
 
