@@ -108,7 +108,7 @@ $$
 
 - $E$ = Empire (generative operator of the illusion of historical progress),  
 - $BIP = \Phi(E)$ = Black Iron Prison (constraint field),  
-- $P = \Psi(BIP)$) = human perceptual state under occlusion.
+- $P = \Psi(BIP)$ = human perceptual state under occlusion.
 
 VALIS is the counter-operator:
 
