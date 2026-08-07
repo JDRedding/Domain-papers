@@ -278,6 +278,34 @@ D     = Abstraction / Concept
 
 ```
 
+Here’s a **concise, clean section** that captures the genealogy of emergence without bloating your document. It states the philosophical point directly, explains the historical layering, and makes clear why your taxonomy differs from conventional ones.
+
+You can drop this in **right after the Four‑Category Taxonomy** or **right before the Conclusion**.
+
+---
+
+# Categories Classifications
+
+Most taxonomies treat physical, biological, social, formal, and cognitive emergence as **separate types**. This ontology takes a different view: the four categories (A–D) reflect **successive historical and organizational layers**, not isolated boxes.
+
+Emergence unfolds across time as new relational geometries become possible:
+
+- **A → Physical relational geometry**  
+  Material organization produces macroscopic predicates (coherence, phase behavior, statistical aggregates).
+
+- **B → Interactional relational geometry**  
+  Once physical systems form agents and populations, new relational structures arise—ecological coupling, signaling, norms, institutions.
+
+- **C → Formal relational geometry**  
+  Interactional systems eventually generate stabilized representational frameworks—symmetries, invariances, theoretical constructs.
+
+- **D → Cognitive/cultural relational geometry**  
+  Formal systems enable symbolic, conceptual, and cultural organization—meanings, values, abstractions, inferential patterns.
+
+Each layer **emerges from the organization of the previous one**, adding new modes of relation and new global predicates that did not exist earlier in history.
+
+Thus, the taxonomy is not merely classificatory — it is **genealogical**, describing how increasingly abstract forms of organization arise from earlier relational geometries.
+
 # Applications 
 Here’s the expansion you asked for, J. — a **dedicated section** that deepens each of the four emergence substrates (A/B/C/D).  
 This integrates seamlessly with your document and uses your RDG framing (SID/PED/Q‑slice, relational geometry, organization‑level predicates).
