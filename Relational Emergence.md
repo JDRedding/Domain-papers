@@ -201,7 +201,7 @@ D     = Abstraction / Concept
 
 ```
 
-# Applications and Cross-Verification
+# Applications 
 
 Descriptive Convenience → Epistemic (Useful Model) → Weak Emergence → Strong Emergence → Ontological (Real & Causally Efficacious)
 
@@ -239,11 +239,27 @@ Descriptive Convenience → Epistemic (Useful Model) → Weak Emergence → Stro
 
 Different disciplines and philosophical positions will place the same phenomena at different points on this spectrum.
 
+## Ontological vs. Epistemic Assignment (for A and B only)
+```
+┌────────────────────────────────────────────────────────────┐
+│ Ontological (O)                                            │
+│ K is treated as genuinely real and causally efficacious    │
+│ at its own level (often exhibits downward causation or     │
+│ irreducibility).                                           │
+├────────────────────────────────────────────────────────────┤
+│ Epistemic (E)                                              │
+│ K is a highly useful description that could, in principle, │
+│ be reduced to lower-level dynamics.                        │
+└────────────────────────────────────────────────────────────┘
+```
+
 Potential domains of application include:
 - Complex Systems Science – Understanding patterns of organization in adaptive systems.
 - Social and Cognitive Sciences – Classifying emergent properties in institutions or consciousness.
 - Natural Sciences – Identifying emergent behavior in ecosystems and cellular networks.
 - Artificial Intelligence and Multi-Agent Systems – Using relational ontology to model collective intelligence or swarm behavior.
+
+# Cross-Verification
 
 A cross-disciplinary approach allows:
 
