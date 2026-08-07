@@ -41,6 +41,7 @@ Ontological/Epistemic Distinction – "Ontological/epistemic distinction" separa
 Reproducible Classification Criteria – Implies that the ontology aims for methodological rigor, with standards allowing consistent categorization of emergent phenomena across domains.
 
 # Theoretical Foundation
+This framework builds upon traditions in relational ontology, systems theory, and emergence studies, but differs by (1) treating emergence as genealogical rather than merely classificatory, (2) explicitly separating ontological from epistemic assignments, and (3) embedding the framework within the relational dynamic geometry formalism.
 
 ## Ontology 
 The systematic study of being and existence, including entities, categories, and their relationships.
