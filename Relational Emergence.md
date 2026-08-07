@@ -208,7 +208,7 @@ Emergent from interaction/relational organization (networks, norms, institutions
 Emergent from organization of theories and symmetries; not in the substrate, but in the structure.
 
 ### D. Abstraction / concepts  
-Emergent from cognitive or cultural organization of symbols, meanings, and conceptual systems; not grounded in physical substrates.
+Emergent from cognitive or cultural organization of symbols, meanings, and conceptual systems; not grounded in physical or structural substrates.
 
 ```
 ┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
