@@ -205,6 +205,38 @@ D     = Abstraction / Concept
 
 Descriptive Convenience → Epistemic (Useful Model) → Weak Emergence → Strong Emergence → Ontological (Real & Causally Efficacious)
 
+```
+1. Can K be meaningfully attributed to a single constituent?
+   │
+   ├── Yes → Go to Step 4 (likely C or D)
+   │
+   └── No
+       │
+2. Does K arise from interactions among many constituents?
+   │
+   ├── No → Reconsider: K may be intrinsic or a misidentified abstraction
+   │
+   └── Yes
+       │
+3. Does K require collective scale, coherence, or organization
+   to exist (i.e., it does not appear at the level of pairwise
+   relations alone)?
+   │
+   ├── Yes → K depends on emergent physical organization.
+   │         CLASSIFY AS A (Emergent Property)
+   │
+   └── No  → K is constituted entirely by relational structure.
+             CLASSIFY AS B (Emergent Relational Structure)
+
+4. Does K arise from formal, mathematical, or theoretical
+   organization (spaces, symmetries, representational frameworks)
+   rather than from physical or social substrates?
+   │
+   ├── Yes → CLASSIFY AS C (Emergent Formal Construct)
+   │
+   └── No  → CLASSIFY AS D (Emergent Cognitive / Cultural Concept)
+```
+
 Different disciplines and philosophical positions will place the same phenomena at different points on this spectrum.
 
 Potential domains of application include:
