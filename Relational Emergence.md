@@ -248,6 +248,144 @@ D     = Abstraction / Concept
 ```
 
 # Applications 
+Here’s the expansion you asked for, J. — a **dedicated section** that deepens each of the four emergence substrates (A/B/C/D).  
+This integrates seamlessly with your document and uses your RDG framing (SID/PED/Q‑slice, relational geometry, organization‑level predicates).
+
+## **A. Emergence from Physical Relational Geometry**  
+Physical emergence arises from **material organization**, where constituents are physical entities (particles, fields, molecules, cells) and the relational geometry is defined by:
+
+- spatial adjacency  
+- coupling strengths  
+- field coherence  
+- thermodynamic thresholds  
+- flux moderation  
+- nonlocal physical constraints  
+
+Here, **SID** corresponds to physical structure (topology, adjacency, coupling), and **PED** corresponds to physical flux dynamics (energy flow, coherence, dissipation).
+
+Examples include:
+
+- superconductivity (phase coherence)  
+- temperature (statistical aggregation)  
+- quorum sensing (chemical signaling thresholds)  
+- turbulence (nonlinear flow patterns)  
+
+These phenomena require **collective physical organization** and cannot be reduced to any single constituent.  
+They are emergent predicates of the physical relational geometry.
+
+---
+
+## **B. Emergence from Interaction / Social / Biological Relational Geometry**  
+Relational emergence arises from **patterns of interaction**, not from material substrates.  
+Constituents may be:
+
+- organisms  
+- agents  
+- individuals  
+- institutions  
+- species  
+- signals  
+
+The relational geometry is defined by:
+
+- communication pathways  
+- influence networks  
+- coordination structures  
+- norms and constraints  
+- ecological coupling  
+- feedback loops  
+
+Here, **SID** corresponds to interaction topology (who affects whom), and **PED** corresponds to evaluative dynamics (power, influence, resource flow, coordination).
+
+Examples include:
+
+- ecosystems (multi-species coupling)  
+- social norms (distributed constraint systems)  
+- market price (distributed valuation)  
+- kinship systems (relational identity structures)  
+- language meaning (semantic networks)  
+
+These phenomena arise from **interaction geometry**, not physical coherence.  
+They are emergent predicates of relational organization.
+
+---
+
+## **C. Emergence from Formal / Theoretical Relational Geometry**  
+Formal emergence arises from **structures of description**, not from physical or social substrates.  
+
+Constituents are:
+
+- axioms  
+- symmetries  
+- representational frameworks  
+- theoretical constructs  
+- formal constraints  
+
+The relational geometry is defined by:
+
+- invariance relations  
+- transformation groups  
+- representational mappings  
+- structural dependencies  
+- theoretical coherence conditions  
+
+Here, **SID** corresponds to formal structure (symmetry groups, manifolds, Hilbert spaces), and **PED** corresponds to evaluative dynamics within the theory (action principles, stability margins, information bounds).
+
+Examples include:
+
+- spacetime (GR’s geometric structure)  
+- gauge symmetry (constraints on fields)  
+- Hilbert space (quantum representational geometry)  
+- diffeomorphism invariance (coordinate freedom)  
+- channel capacity (information-theoretic constraint)  
+
+These are emergent from **formal relational geometry** — the structure of the theory itself — not from physical or cognitive substrates.
+
+---
+
+## **D. Emergence from Cognitive / Cultural Relational Geometry**  
+Cognitive emergence arises from **symbolic and cultural organization**, where constituents are:
+
+- concepts  
+- symbols  
+- meanings  
+- narratives  
+- norms  
+- inferential patterns  
+
+The relational geometry is defined by:
+
+- semantic associations  
+- cultural conventions  
+- inferential rules  
+- conceptual hierarchies  
+- symbolic mappings  
+- shared meaning structures  
+
+Here, **SID** corresponds to conceptual structure (semantic networks, inferential relations), and **PED** corresponds to evaluative dynamics (interpretation, relevance, cultural weighting).
+
+Examples include:
+
+- numbers (symbolic abstraction)  
+- algorithms (procedural conceptual structures)  
+- justice (normative conceptual geometry)  
+- beauty (aesthetic relational pattern)  
+- probability (conceptual measure of uncertainty)  
+
+These phenomena arise from **cognitive/cultural relational geometry**, not physical, social, or formal substrates.
+
+---
+
+# **Summary of Substrate-Specific Emergence**
+
+| Category | Substrate | Constituents | Relational Geometry | Examples |
+|---------|-----------|--------------|----------------------|----------|
+| **A** | Physical | particles, fields, molecules | spatial, energetic, coherent | superconductivity, temperature |
+| **B** | Interaction / Social / Biological | agents, organisms, institutions | influence, coordination, ecological | ecosystems, norms, markets |
+| **C** | Formal / Theoretical | axioms, symmetries, structures | invariance, representation, constraint | spacetime, gauge symmetry |
+| **D** | Cognitive / Cultural | concepts, symbols, meanings | semantic, cultural, inferential | numbers, justice, algorithms |
+
+Each substrate produces emergent predicates through **SID relational geometry**, **PED evaluative dynamics**, and **Q‑slice moderation**, but the *nature of the constituents and relations* differs.
 
 Potential domains of application include:
 - Complex Systems Science – Understanding patterns of organization in adaptive systems.
