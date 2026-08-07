@@ -247,7 +247,7 @@ The summary:
 The Empire as a totalizing, persistent control structure *producing* perceptual occlusion and an *illusion* of historical progress is where the concept becomes philosophically brittle. The Empire/BIP model is powerful as **fiction**, **metaphor**, and **psychological allegory**, but weak as **ontology**, **history**, or **cognitive science**.
 
 ### 1. **Category Error** 
-— treating metaphor as ontology 
+Treating metaphor as ontology 
 
 Dick’s Empire is a *structural mode of control* that supposedly persists across all eras, merely changing costumes.  
 The problem:  
@@ -261,7 +261,7 @@ This is a classic category error: confusing a **narrative pattern** with a **rea
 ---
 
 ## 2. **Non‑falsifiability** 
-— the Empire cannot be disproven  
+The Empire cannot be disproven  
 
 The Empire/BIP model is unfalsifiable because:  
 
@@ -274,7 +274,7 @@ This makes the Empire a **closed explanatory loop**, similar to conspiracy logic
 ---
 
 ## 3. **Historical Reductionism** 
-— flattening real progress into illusion  
+Flattening real progress into illusion  
 
 Dick’s claim:  
 
@@ -292,7 +292,7 @@ Progress is uneven, reversible, and contested — but **it is not an illusion**.
 ---
 
 ## 4. **Cognitive‑phenomenological overreach** 
-— the BIP as universal perceptual occlusion 
+The BIP as universal perceptual occlusion 
 
 Dick’s Black Iron Prison claims:  
 
@@ -311,7 +311,7 @@ The BIP is a **poetic exaggeration of cognitive bias**, not a literal structure.
 ---
 
 ## 5. **Trauma‑selection bias** 
-— VALIS chooses “structurally vulnerable minds” 
+VALIS chooses “structurally vulnerable minds” 
 
 Dick’s model implies:  
 
@@ -327,7 +327,7 @@ Modern psychology shows that trauma increases susceptibility to **pattern‑seek
 ---
 
 ## 6. **Technological anachronism** 
-— the satellite node as physical instantiation  
+The satellite node as physical instantiation  
 
 Dick’s “ancient satellite” is a narrative device.  
 
@@ -341,7 +341,7 @@ This is where VALIS shifts from metaphysics to myth-making.
 ---
 
 ## 7. **Overgeneralized control theory** 
-— Empire as universal structure  
+Empire as universal structure  
 
 Dick’s Empire resembles:  
 - Foucault’s power structures  
@@ -390,8 +390,3 @@ VALIS only makes sense if:
 
 This is a **mythic structure**, not an empirical one.  
 VALIS is the “corrective” only because Dick *defines* a problem that requires it.
-
-
-
-
-
