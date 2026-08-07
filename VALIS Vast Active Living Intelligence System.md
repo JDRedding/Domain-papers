@@ -645,7 +645,7 @@ Dick’s Empire resembles:
 - Marx’s ideology  
 - Baudrillard’s simulation  
 - Gnostic archons
-- 
+
 But Dick collapses all of these into a single operator.
 
 Critique:  
