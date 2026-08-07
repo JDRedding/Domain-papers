@@ -246,7 +246,7 @@ The summary:
 **Dick’s Empire/BIP model is a *literary‑metaphysical metaphor*, not an empirically defensible description of reality.**  
 The Empire as a totalizing, persistent control structure *producing* perceptual occlusion and an *illusion* of historical progress is where the concept becomes philosophically brittle. The Empire/BIP model is powerful as **fiction**, **metaphor**, and **psychological allegory**, but weak as **ontology**, **history**, or **cognitive science**.
 
-##Empire/BIP Concept failures 
+## Empire/BIP Concept failures 
 
 ### 1. **Category Error** 
 — treating metaphor as ontology 
