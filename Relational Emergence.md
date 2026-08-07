@@ -210,9 +210,9 @@ Emergent from cognitive or cultural organization of symbols, meanings, and conce
 ┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
 │ A. EMERGENT PROPERTY        │ B. EMERGENT RELATIONS       │ C. EMERGENT CONSTRUCT       │ D. ABSTRACTION / CONCEPTS   │
 ├─────────────────────────────┼─────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
-│ Emergent from physical      │ Emergent from interaction   │ Emergent from formal        │ Emergent from cognitive /   │
-│ organization of matter;     │ and relational organization │ and mathematical structure  │ cultural organization of    │
-│ macroscopic, nonlocal.      │ (networks, norms, systems). │ of theories and symmetries. │ symbols and meanings.       │
+│ Emergent from physical      │ Emergent from interaction   │ Emergent from structure     │ Emergent from cognitive /   │
+│ organization of matter;     │ and relational organization │ and symmetries.             │ cultural organization of    │
+│ macroscopic, nonlocal.      │ (networks, norms, systems). │                             │ symbols and meanings.       │
 ├─────────────────────────────┼─────────────────────────────┼─────────────────────────────┼─────────────────────────────┤
 │ A(O): Superconductivity     │ B(O): Ecosystems            │ C: Spacetime (GR)           │ D: Numbers                  │
 │                             │       Social Norms          │    Hilbert Space            │    Algorithms               │
@@ -268,13 +268,13 @@ D     = Abstraction / Concept
    └── No  → K is constituted entirely by relational structure.
              CLASSIFY AS B (Emergent Relational Structure)
 
-4. Does K arise from formal, mathematical, or theoretical
-   organization (spaces, symmetries, representational frameworks)
-   rather than from physical or social substrates? (i.e., K is part
+4. Does K arise from mathematical or theoretical organization
+   (spaces, symmetries, representational frameworks) rather
+   than from physical or social substrates? (i.e., K is part
    of the structure of description rather than the structure of the
    described system)
    │
-   ├── Yes → CLASSIFY AS C (Emergent Formal Construct)
+   ├── Yes → CLASSIFY AS C (Emergent Construct)
    │
    └── No  → CLASSIFY AS D (Emergent Cognitive / Cultural Concept)
 ```
