@@ -5,8 +5,8 @@ Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distincti
 
 **Description:** 1 document (text) — diagrams, tables  
 
-- **111 Ontology**
-- 303 Social Processes / Social Structure
+- **111 — Ontology**
+- 303 — Social Processes / Social Structure
 - 500 — Natural Sciences / Complexity Science
 - 160 — Logic / Formal Structures
 - 150 — Psychology / Cognitive Science
