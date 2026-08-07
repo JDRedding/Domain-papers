@@ -131,7 +131,8 @@ Liberation condition:
 $$
 \text{Gnosis} = \tau(\mathcal{V}, P) \implies \text{Occlusion}(P) \downarrow.
 $$
-VALIS does not destroy \(E\) or \(BIP\); it only reveals:
+
+VALIS does not destroy $E$ or $BIP$; it only reveals:
 
 $$
 \mathcal{V} \neq \text{Destroyer}(E),\qquad \mathcal{V} = \text{Revealer}(E).
