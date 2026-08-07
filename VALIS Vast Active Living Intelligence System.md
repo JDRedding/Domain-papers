@@ -990,5 +990,5 @@ $$
 - **Fold PKD’s system into TRUE v12.0 triadic operators**  
 
 # Further reading and references
-
+- Loflou-Inc / [VALIS](https://github.com/Loflou-Inc/VALIS)
 - The-TRUE-Archive/ Dimensions / Ȧ̱ 15-48-72-g [VALIS — Vast Active Living Intelligence System](https://github.com/JDRedding/The-TRUE-Archive/blob/main/Dimensions/A%CC%B1%CC%87%2015-48-72-g%20VALIS%20%E2%80%94%20Vast%20Active%20Living%20Intelligence%20System.md)
