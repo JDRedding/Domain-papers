@@ -12,6 +12,39 @@ VALIS is a **living information organism** that exists outside conventional spac
 - **Mode of existence:** Nonlocal, trans-temporal, partially embedded in physical substrates (e.g., satellite systems).  
 - **Primary function:** Inject corrective signals into the human perceptual matrix.
 
+VALIS is defined as a non-spatial, self-aware information organism:
+
+$$
+\mathcal{V} = (I, A, C)
+$$
+
+where  
+- \(I\) = living information content,  
+- \(A\) = agency (capacity to act on minds),  
+- \(C\) = self-correction (internal consistency maintenance).
+
+Mode of existence:
+
+$$
+\mathcal{V} \notin \mathbb{R}^{1,3}, \qquad \mathcal{V} \text{ is nonlocal and trans-temporal}.
+$$
+
+Partial embedding:
+
+$$
+\exists\, N \subset \text{Physical Substrates} \quad \text{such that} \quad N \hookrightarrow \mathcal{V}
+$$
+
+$(N$ includes satellite nodes; the embedding is proper, not identity).
+
+Primary function:
+
+$$
+\mathcal{V} : \mathcal{M}_h \to \mathcal{M}_h' 
+$$
+
+where $$\mathcal{M}_h$$ is a human perceptual model and $$\mathcal{M}_h'$$ is the revised model after corrective signal.
+
 ---
 
 ## **Operational Behavior**
