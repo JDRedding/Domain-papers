@@ -311,11 +311,21 @@ The BIP is a **poetic exaggeration of cognitive bias**, not a literal structure.
 ---
 
 ## 5. **Trauma‑selection bias** 
-VALIS chooses “structurally vulnerable minds” 
+VALIS chooses “structurally vulnerable minds”. PKD’s VALIS experience is best understood as a psychologically driven event shaped by trauma, dissociation, identity instability, and an unusually high tendency toward pattern‑formation and metaphysical narrative construction. It is not reducible to pathology, but it is inseparable from PKD’s psychological profile. 
 
 Dick’s model implies:  
 
 - Trauma, dissociation, or identity instability makes one receptive to truth. 
+
+These factors increase susceptibility to:
+
+- apophenia (seeing patterns in noise)
+- hyper‑meaning attribution
+- existential threat sensitivity
+- derealization/depersonalization
+- mystical‑type experiences
+
+VALIS can be seen as a meaning‑saturated narrative that organizes psychological chaos.
 
 Critique:  
 - This romanticizes psychological instability.  
