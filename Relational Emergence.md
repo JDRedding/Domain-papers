@@ -205,10 +205,10 @@ Emergent from material/physical organization of constituents (macroscopic, nonlo
 Emergent from interaction/relational organization (networks, norms, institutions, coordination).
 
 ### C. Emergent construct  
-Emergent from formal/mathematical organization of theories and symmetries; not in the substrate, but in the structure.
+Emergent from organization of theories and symmetries; not in the substrate, but in the structure.
 
 ### D. Abstraction / concepts  
-Emergent from cognitive or cultural organization of symbols, meanings, and conceptual systems; not grounded in physical or substrates.
+Emergent from cognitive or cultural organization of symbols, meanings, and conceptual systems; not grounded in physical substrates.
 
 ```
 ┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
