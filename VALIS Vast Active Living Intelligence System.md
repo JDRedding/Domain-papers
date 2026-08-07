@@ -289,6 +289,23 @@ Dick’s split into Horselover Fat and Philip K. Dick is not just a literary dev
 # **II. The Empire Never Ended** 
 Structural Metaphysics
 
+World-state operator:
+
+$$
+E_{\text{never-ended}} \equiv \text{“Rome is a mode of control, not a historical period.”}
+$$
+
+Four sub-operators:
+
+$$
+\begin{align*}
+\text{Gnostic} &\colon E = \text{Demiurge’s false world}, \\
+\text{Metahistorical} &\colon \text{Imperial mode persists across costumes}, \\
+\text{Orthogonal time} &\colon \text{linear history is false overlay}, \\
+\text{Epistemic entrapment} &\colon E \text{ hides its own persistence by simulating progress}.
+\end{align*}
+$$
+
 Dick’s most famous metaphysical claim functions as a **world‑state operator**, not a slogan.
 
 ### **1. Gnostic Interpretation**
