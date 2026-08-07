@@ -210,5 +210,15 @@ Your hospital example is classic and works well. The medical gaze, the examinati
 # Relation to Broader Theoretical Interests
 If one is working with relational, flux, or closure-based frameworks (where structure and dynamics are generated through relations rather than grounded in substances or sovereign points), Foucault’s power analysis is a natural point of contact. Power here is not an external force applied to pre-given subjects; it is the relational medium in which subjects, norms, and truths are continuously produced and stabilized. Resistance appears as the possibility of alternative closures or different relational configurations within the same field. The Panoptic diagram and the biopolitical management of populations can be read as particular historical topologies of relational control.
 
+If treat Foucault’s power as a **field with closure tendencies**, then:
+
+- discipline = local closure on bodies  
+- biopolitics = statistical closure on populations  
+- governmentality = meta-closure on the field’s rationality  
+- resistance = alternative closures within the same field
+
+This is why Foucault integrates so naturally into relational-dynamic systems: he is already describing a **flux-based, closure-generating field**.
+
+
 # Conclusion
 Foucault’s power structures emphasize relational, diffuse, productive, and knowledge-embedded dynamics. They reveal how everyday practices, institutions, and discourses perpetuate power, while also highlighting sites of possible resistance. This perspective allows for a nuanced understanding of societal organization beyond conventional hierarchies.
