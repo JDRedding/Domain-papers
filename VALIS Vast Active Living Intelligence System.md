@@ -272,7 +272,7 @@ $$
 \text{Split} : \text{Dick} \mapsto (\text{Fat}, \text{Dick}).
 $$
 
-Creates internal epistemic debate: revelation vs. delusion.
+   Creates internal epistemic debate: revelation vs. delusion.
 
 2. VALIS itself (already defined above).
 
