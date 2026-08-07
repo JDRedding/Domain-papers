@@ -307,9 +307,6 @@ Each layer **emerges from the organization of the previous one**, adding new mod
 Thus, the taxonomy is not merely classificatory — it is **genealogical**, describing how increasingly abstract forms of organization arise from earlier relational geometries.
 
 # Applications 
-Here’s the expansion you asked for, J. — a **dedicated section** that deepens each of the four emergence substrates (A/B/C/D).  
-This integrates seamlessly with your document and uses your RDG framing (SID/PED/Q‑slice, relational geometry, organization‑level predicates).
-
 ## **A. Emergence from Physical Relational Geometry**  
 Physical emergence arises from **material organization**, where constituents are physical entities (particles, fields, molecules, cells) and the relational geometry is defined by:
 
