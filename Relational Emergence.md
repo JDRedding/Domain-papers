@@ -180,9 +180,9 @@ B emerges from interaction/social/biological relational geometry
 C emerges from formal/mathematical relational geometry
 D emerges from cognitive/cultural relational geometry
 
-*Consciousness is placed in A(O) for the purposes of this taxonomy, though
-alternative placements (e.g., B(O)) exist depending on theoretical
-commitments.
+* Consciousness is placed in A(O) for the purposes of this taxonomy, though
+  alternative placements (e.g., B(O)) exist depending on theoretical
+  commitments.
 ```
 
 ### A & B
