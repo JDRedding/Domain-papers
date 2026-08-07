@@ -282,8 +282,6 @@ $$
 \text{Pink-beam event}_{1974} \mapsto \text{Exegesis} \quad (\text{million-word decoding process}).
 $$
 
----
-
 Dick’s split into Horselover Fat and Philip K. Dick is not just a literary device — it reflects a real psychological strategy. Fat carries the mystical, paranoid, ecstatic interpretations. Dick carries the skeptical, rational, self‑critical voice. This resembles dissociative coping, not in the clinical sense of Dissociative Identity Disorder, but in the sense of creating internal sub‑agents to manage overwhelming experiences. It’s a way to hold contradictory worldviews without collapse. The 2‑3‑74 event is a classic “mystical‑seizure” profile that produces a sense of revelation, belief in hidden messages, conviction of cosmic significance, and narrative restructuring of identity. Dick interpreted this through Gnosticism, cybernetics, and sci‑fi — the frameworks he already lived inside.
 
 ---
