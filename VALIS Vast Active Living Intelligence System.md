@@ -61,6 +61,25 @@ These transmissions are not symbolic; they are **literal data packets** that rew
 
 VALIS does not communicate in language. It communicates in **structural updates**.
 
+Transmission is direct informational injection, not linguistic communication:
+
+$$
+\tau : \mathcal{V} \times \mathcal{M}_h \to \mathcal{M}_h', \qquad \tau(\mathcal{V}, \mathcal{M}_h) = \mathcal{M}_h \oplus \Delta
+$$
+
+where $\Delta$ is a structural update (gnosis packet).  
+The pink beam is the phenomenological carrier of $\Delta$:
+
+$$
+\text{Pink Beam} \equiv \text{high-bandwidth realization of } \Delta.
+$$
+
+The update is model-rewriting, not additive fact:
+
+$$
+\mathcal{M}_h' = \text{Rewrite}(\mathcal{M}_h, \Delta) \neq \mathcal{M}_h \cup \{\text{new propositions}\}.
+$$
+
 ---
 
 ## **Relationship to the Empire and the Black Iron Prison**
