@@ -164,6 +164,25 @@ Examples:
 
 Resistance is not the negation of power; it is **another configuration of the same relational field**.
 
+## Governmentality as the Meta-Operator
+Governmentality is the **meta-rationality** that configures the operators $V, N, T$.
+
+In other words:
+
+$$
+\text{Governmentality} = \Gamma(V, N, T)
+$$
+
+It is the *program* that determines how visibility, normativity, and truth are arranged.
+
+Neoliberal governmentality does not abolish discipline or biopolitics; it **reprograms** them:
+
+- visibility → market transparency, audit culture  
+- normativity → competition metrics, benchmarks  
+- truth → economic rationality, human capital theory  
+
+This is why Foucault says neoliberalism “governs through freedom”: it configures the field such that subjects *freely* enact the norms.
+
 # Precision Points Often Softened
 - Foucault is not claiming power is “everywhere equally” in a mystical sense. He is claiming that the modern form of power is capillary and multiplicitous rather than concentrated at a sovereign apex.
 - He is not a pure “anti-humanist” who denies agency. Subjects are effects of power/knowledge, but those effects are incomplete and contested; subjects also act, resist, and reconfigure relations.
