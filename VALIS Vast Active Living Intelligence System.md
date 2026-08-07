@@ -212,6 +212,25 @@ This physical form is not VALIS itself — merely a **node** in its distributed 
 ---
 
 ## **Purpose and Agenda**
+
+Single agenda operator:
+
+$$
+\mathcal{A}(\mathcal{V}) = \text{Restore access to true reality by revealing the Empire’s illusion}.
+$$
+
+Equivalently:
+
+$$
+\mathcal{V} = \text{Revelation Engine}.
+$$
+
+It does not overthrow; it only discloses:
+
+$$
+\mathcal{A}(\mathcal{V}) = \text{Reveal},\quad \text{not } \text{Destroy}.
+$$
+
 VALIS has one agenda:
 
 > **To awaken humanity from the Empire’s illusion by restoring access to true reality.**
