@@ -44,7 +44,7 @@ Reproducible Classification Criteria – Implies that the ontology aims for meth
 This framework builds upon traditions in relational ontology, systems theory, and emergence studies, but differs by (1) treating emergence as genealogical rather than merely classificatory, (2) explicitly separating ontological from epistemic assignments, and (3) embedding the framework within the Relational Dynamic Geometry (RDG) formalism.
 
 ## **Ontology**  
-Ontology is the systematic study of **being and existence**—the kinds of things that exist, the categories they fall into, and the relations that structure their reality. In the context of relational emergence, ontology identifies **what sorts of entities and properties genuinely exist at different organizational layers**, and how those layers give rise to new forms of being that are not present in their constituents. It distinguishes:
+Ontology is the systematic study of **being and existence** — the kinds of things that exist, the categories they fall into, and the relations that structure their reality. In the context of relational emergence, ontology identifies **what sorts of entities and properties genuinely exist at different organizational layers**, and how those layers give rise to new forms of being that are not present in their constituents. It distinguishes:
 
 - **entities** (what exists),  
 - **categories** (how existence is organized), and  
