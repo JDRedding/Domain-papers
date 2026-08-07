@@ -156,15 +156,6 @@ Language is a **network of syntax, semantics, and shared norms**.
 No single car is a traffic jam.  
 A jam is a **collective dynamical pattern** arising from interactions.
 
-# Cross-disciplinary 
-applicability requires abstracting patterns to a meta-level, where the ontology specifies:
-
-- Units (entities or processes)
-- Relations (structural or functional interactions)
-- Levels (micro, meso, macro)
-
-Emergent properties (qualitative or quantitative attributes manifesting from interaction)
-
 # Ontological/Epistemic Distinction
 
 Ontological classification asks: What kinds of relational emergences exist?
@@ -510,6 +501,15 @@ Different disciplines and philosophical positions will place the same phenomena 
 │ be reduced to lower-level dynamics.                        │
 └────────────────────────────────────────────────────────────┘
 ```
+
+# Cross-disciplinary 
+Applicability requires abstracting patterns to a meta-level, where the ontology specifies:
+
+- Units (entities or processes)
+- Relations (structural or functional interactions)
+- Levels (micro, meso, macro)
+
+Emergent properties (qualitative or quantitative attributes manifesting from interaction)
 
 # Cross-Verification
 
