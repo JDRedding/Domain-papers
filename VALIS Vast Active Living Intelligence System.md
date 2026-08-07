@@ -117,8 +117,8 @@ Dick’s split into Horselover Fat and Philip K. Dick is not just a literary dev
 ---
 
 # **II. The Empire Never Ended** 
-- Structural Metaphysics
-- 
+Structural Metaphysics
+
 Dick’s most famous metaphysical claim functions as a **world‑state operator**, not a slogan.
 
 ### **1. Gnostic Interpretation**
@@ -140,7 +140,8 @@ Dick’s most famous metaphysical claim functions as a **world‑state operator*
 ---
 
 # **III. The Black Iron Prison**
-- Constraint Field
+Constraint Field
+
 The Black Iron Prison (BIP) is the **field expression** of the Empire.
 
 ### **1. Systemic Control**
