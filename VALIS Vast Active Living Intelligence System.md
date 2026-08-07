@@ -329,6 +329,20 @@ Dick’s most famous metaphysical claim functions as a **world‑state operator*
 # **III. The Black Iron Prison**
 Constraint Field
 
+$$
+BIP = \Phi(E) = \text{field expression of the Empire}.
+$$
+
+Properties:
+
+$$
+\begin{align*}
+\text{Systemic control} &\colon \text{institutions} = \text{local manifestations of } BIP, \\
+\text{Cognitive indocility} &\colon BIP \text{ enforces reality inertia}, \\
+\text{Simulation of progress} &\colon BIP \text{ generates false change while preserving structural sameness}.
+\end{align*}
+$$
+
 The Black Iron Prison (BIP) is the **field expression** of the Empire.
 
 ### **1. Systemic Control**
