@@ -1,7 +1,8 @@
 # 111 Relational Emergence 
 Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distinction Reproducible Classification Criteria 
+
 **Author:** JD Redding  
-**Title:** *Relational Emergence: A Cross‑Disciplinary Ontology of Organization with Ontological/Epistemic Distinctions and Reproducible Classification Criteria*   
+
 **Description:** 1 document (text) — diagrams, tables  
 
 - **111 Ontology**
