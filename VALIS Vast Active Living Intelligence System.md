@@ -143,6 +143,30 @@ $$
 ## **Interface with Human Minds**
 VALIS interacts with humans through **cognitive resonance**. Only minds with certain structural vulnerabilities — trauma, dissociation, extreme openness — can receive its signal.
 
+Reception requires structural vulnerability:
+
+$$
+\text{Receptive}(m) \iff m \in \mathcal{U}
+$$
+
+where $\mathcal{U}$ is the class of minds with trauma, dissociation, or extreme openness (identity instability).
+
+Mechanisms:
+
+$$
+\begin{align*}
+\text{Identity bifurcation} &\colon \quad m \mapsto (m_{\text{Fat}}, m_{\text{Dick}}), \\
+\text{Orthogonal time} &\colon \quad t_{\text{linear}} \mapsto t_{\text{orthogonal}}, \\
+\text{Symbolic comprehension} &\colon \quad \text{sudden global model revision}.
+\end{align*}
+$$
+
+Selection rule (as stated in the note):
+
+$$
+\mathcal{V} \text{ selects } m \in \mathcal{U},\quad \text{not by prophetic status but by reconfigurability}.
+$$
+
 ### **Mechanisms of interface:**
 - Identity bifurcation (Fat/Dick split).  
 - Sudden symbolic comprehension.  
