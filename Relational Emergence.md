@@ -138,6 +138,46 @@ Example: empirical criteria for identifying subsystem coordination or functional
 Reproducible criteria enable validation across studies and fields.
 
 ## FOUR-CATEGORY TAXONOMY
+```
+A. EMERGENT PROPERTY                  B. EMERGENT RELATIONAL STRUCTURE
+─────────────────────────────────     ─────────────────────────────────
+Emergent from physical organization   Emergent from interaction and
+of matter; macroscopic, nonlocal,     relational geometry among many
+and dependent on collective physical  constituents; defined entirely
+coherence or system-level dynamics.   by patterns of relations.
+
+Superconductivity          O          Ecosystem                     O
+Temperature                E          Social Norms                  O
+Consciousness*             O          Market Price                  E
+Quorum Sensing             O          Language Meaning              O
+Phase Transition           O          Power Structure               O
+Traffic Flow               E          Traffic Network               E
+Gene Expression            O          Kinship System                O
+Turbulence                 E          Species Population            O
+
+
+C. EMERGENT CONSTRUCT                 D. EMERGENT ABSTRACTION / CONCEPTS
+─────────────────────────────────     ─────────────────────────────────
+Emergent from formal, mathematical    Emergent from cognitive or cultural
+organization of theories, symmetries, organization of symbols, meanings,
+and representational frameworks;      and conceptual systems; not tied to
+not emergent from physical substrate. physical or formal substrates.
+
+Spacetime                             Number
+Gauge Symmetry                        Algorithm
+Hilbert Space                         Beauty
+Diffeomorphism Invariance             Justice
+Non-Euclidean Geometry                Probability
+Action Principle                      Cardinality
+Control Theory (Stability Margins)    Moral Relatives
+Information Theory (Channel Capacity) Theorem
+
+
+A emerges from physical relational geometry
+B emerges from interaction/social/biological relational geometry
+C emerges from formal/mathematical relational geometry
+D emerges from cognitive/cultural relational geometry
+```
 
 ### A & B
 These are the categories where the operator form easily applies. 
@@ -159,7 +199,7 @@ Emergent from material/physical organization of constituents (macroscopic, nonlo
 Emergent from interaction/relational organization (networks, norms, institutions, coordination).
 
 ### C. Fundamental construct  
-Emergent from formal/mathematical organization of theories and symmetries; not in the substrate, but in the structure of description.
+Emergent from formal/mathematical organization of theories and symmetries; not in the substrate, but in the structure.
 
 ### D. Abstraction / concepts  
 Emergent from cognitive/cultural organization of symbols, meanings, and practices.
@@ -280,8 +320,8 @@ It is most relevant for researchers in complex systems, cognitive science, socia
 
 # References, further reading, and related literature
 - [RDG-MFE-Q](https://github.com/JDRedding/RDG-MFE-Q) repo; [Closure Stability Conjecture](https://github.com/JDRedding/RDG-MFE-Q/blob/main/_Paper/%20Redding's%20Closure%20Stability%20Conjecture.pdf)
+- [Relational Ontology](https://philarchive.org/s/%20Relational%20Ontology) in Philosophy and Cognitive Science, PhilArchive
 - [Choose point](https://x.com/JDRedding/status/2053839104526393796) JD Redding, @JDRedding
 - [Relational Emergence](https://x.com/OhWellMike/status/2085427070864413062), 𝙼𝚒𝚔𝚎 🜎, @OhWellMike
-- [Relational Ontology](https://philarchive.org/s/%20Relational%20Ontology) in Philosophy and Cognitive Science, PhilArchive
 - [Emergent Consciousness and Plural Cognitive Ecology](https://www.academia.edu/150281577/Relational_Emergent_Consciousness_A_path_to_a_plural_cognitive_ecology) Academia.edu
 
