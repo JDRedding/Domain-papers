@@ -249,6 +249,12 @@ D     = Abstraction / Concept
 
 # Applications 
 
+Potential domains of application include:
+- Complex Systems Science – Understanding patterns of organization in adaptive systems.
+- Social and Cognitive Sciences – Classifying emergent properties in institutions or consciousness.
+- Natural Sciences – Identifying emergent behavior in ecosystems and cellular networks.
+- Artificial Intelligence and Multi-Agent Systems – Using relational ontology to model collective intelligence or swarm behavior.
+
 ```
 1. Can K be meaningfully attributed to a single constituent?
    │
@@ -301,12 +307,6 @@ Different disciplines and philosophical positions will place the same phenomena 
 │ be reduced to lower-level dynamics.                        │
 └────────────────────────────────────────────────────────────┘
 ```
-
-Potential domains of application include:
-- Complex Systems Science – Understanding patterns of organization in adaptive systems.
-- Social and Cognitive Sciences – Classifying emergent properties in institutions or consciousness.
-- Natural Sciences – Identifying emergent behavior in ecosystems and cellular networks.
-- Artificial Intelligence and Multi-Agent Systems – Using relational ontology to model collective intelligence or swarm behavior.
 
 # Cross-Verification
 
