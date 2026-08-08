@@ -1,5 +1,5 @@
 ## 🗺️ Cartographic Style Guide
-Fantasy Maps (Ruins & Relics Edition)
+*Fantasy Maps (Ruins & Relics Edition)*
 
 The cartographic style guide is a reference to helps mapmakers maintain consistency, clarity, and professionalism in map design by standardizing symbols, colors, typography, layouts, and overall visual hierarchy. Embracing a cartographic style guide is essential for any mapmaker aiming to produce coherent, professional, and user-friendly maps, whether for print, digital, or interactive formats.
 
