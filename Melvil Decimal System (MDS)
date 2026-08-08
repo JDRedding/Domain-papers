@@ -1,0 +1,60 @@
+The Melvil Decimal System (MDS) is a library classification system designed 
+to organize books and materials by subjects, enabling easier access and 
+efficient cataloging.
+
+Overview
+The Melvil Decimal System was created by Melvil Dewey in 1876 and is more 
+commonly known today as the Dewey Decimal Classification (DDC), though some 
+references might use "Melvil Decimal System" to emphasize its founder’s name. 
+The system is widely used in libraries around the world to categorize and arrange books according to subject matter.
+Structure
+MDS organizes knowledge into 10 main classes, each represented by a three-
+digit number ranging from 000 to 900:
+
+000 – General works, computer science, information
+100 – Philosophy and psychology
+200 – Religion
+300 – Social sciences
+400 – Language
+500 – Natural sciences and mathematics
+600 – Technology (applied sciences)
+700 – Arts and recreation
+800 – Literature
+900 – History and geography
+
+Each main class is further subdivided into 10 divisions, which themselves 
+can be broken down into 10 sections, allowing for detailed categorization. 
+For example, 510 represents Mathematics (500 is Natural sciences), and 516 
+represents Geometry.
+
+Principles and Features
+Decimal notation: The use of decimals allows for hierarchical and limitless 
+subdivision of subjects.
+
+Flexibility: New topics can be integrated without major restructuring.
+
+Universal applicability: Designed for general knowledge, making it suitable 
+for libraries of all sizes.
+
+Ease of use: Numeric codes simplify shelving and retrieval compared to 
+purely alphabetical arrangements.
+
+Application
+In practice, libraries label books with MDS numbers on the spine to group 
+similar subjects together, helping both librarians and patrons locate 
+materials quickly. Many modern libraries also integrate the system into 
+digital cataloging software, linking MDS numbers with metadata and search 
+functions.
+
+Historical Significance
+
+The MDS, or Dewey Decimal System, revolutionized library management by 
+providing a standardized, systematic classification. While alternative 
+systems like the Library of Congress Classification exist, MDS remains 
+popular worldwide due to its simplicity and scalability. Its adoption 
+facilitated the growth of public, academic, and school libraries in the 
+20th century.
+
+In summary, the Melvil Decimal System is a structured, hierarchical 
+method for organizing library materials by subject, making it easier 
+to access, manage, and expand collections efficiently.
