@@ -39,7 +39,7 @@ KITCHEN WALL (studs behind drywall)
                 ↓ SHELF DROPS DOWN
 
 ----------------------------------------------------
-|  SLOT PLATES (female) mounted to shelf underside |
+|  SLOT PLATES (female) mounted to shelf           |
 ----------------------------------------------------
 
                 ↓ LOCKING MECHANISM
