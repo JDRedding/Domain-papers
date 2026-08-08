@@ -206,6 +206,19 @@ These are *models of* Foucault’s claims, not formulas *found in* Foucault. The
 - **SID (Structure–Interaction–Dynamics)** corresponds to the topology and local force relations of the power field.  
 - **PED (Power–Evaluation–Dynamics)** mirrors the visibility/normativity/truth operators.  
 
+### Compact Canonical Form
+
+$$
+\begin{align*}
+G_t &= (V_t, E_t, W_t)\\
+P_t &= \Phi(G_t) = (V \circ N \circ T)(G_t)\\
+x_i &\leftarrow N(x_i)\\
+P(x) &\leftarrow \Psi(P(x))\\
+R &= \{r_k : G_t \mapsto G_t'\}\\
+\Gamma &\text{ configures } (V,N,T)
+\end{align*}
+$$
+
 # Illustrative Case (Hospital)
 Your hospital example is classic and works well. The medical gaze, the examination, the case file, the timetable, the hierarchy of expertise, the definition of “compliance” versus “non-compliance,” the statistical construction of risk populations—these are all micro-powers that simultaneously produce medical knowledge and shape the patient’s self-understanding and conduct. The physician does not simply “possess” power; power is exercised through a whole apparatus of which the physician is one element.
 
