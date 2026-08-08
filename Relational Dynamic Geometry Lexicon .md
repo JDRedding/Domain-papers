@@ -1,6 +1,8 @@
 # Relational Dynamic Geometry Lexicon  
 **Domain‑note block**
 
+The note defines a domain‑annotation layer (D) that labels geometric/analytic objects with semantic atoms (σ) without changing their structure, and it catalogs symbols grouped by mathematical domain with how RDG treats each group.
+
 **Concise takeaway:**  
 All symbols below form a **Domain Annotation** 
 
