@@ -14,6 +14,47 @@
 - Graticule lines every **5°** or **10°** depending on map scale.  
 - Latitude/longitude labels in small caps.
 
+#### 1. Equirectangular (Plate Carrée) Projection
+The simplest equal-spaced latitude–longitude grid used for familiarity and easy labeling:
+
+$
+\begin{align*}
+x &= R\,(\lambda - \lambda_0)\cos\varphi_1 \\
+y &= R\,(\varphi - \varphi_0)
+\end{align*}
+$
+
+- $\lambda, \varphi$: longitude and latitude (radians)  
+- $\lambda_0, \varphi_0$: central meridian and reference parallel  
+- $R$: radius of the generating sphere (or fictitious planetary radius in world units)  
+- $\varphi_1$: standard parallel (often $04 for pure plate carrée)  
+
+Graticule lines every $5^\circ$ or $10^\circ$ are simply constant - $\lambda$ or constant - $\varphi$ isolines under this mapping.
+
+#### 2. Mercator (and pseudo-Mercator) Projection
+The conformal cylindrical projection commonly approximated for fantasy maps:
+
+$$
+\begin{align*}
+x &= R\,(\lambda - \lambda_0) \\
+y &= R\,\ln\left[\tan\left(\frac{\pi}{4} + \frac{\varphi}{2}\right)\right]
+\end{align*}
+$$
+
+or equivalently
+
+$$
+y = R\,\operatorname{artanh}(\sin\varphi).
+$$
+
+Scale factor $k$ increases with latitude:
+
+$$
+k(\varphi) = \frac{1}{\cos\varphi}.
+$$
+
+Pseudo-Mercator variants simply replace the true spherical formulas with a slightly adjusted \(R\) or a clipped polar cutoff to keep the map finite.
+
 ### **Scale**
 - Define a diegetic unit (e.g., *Avenian Miles*).  
 - Use a **bar scale**, not numeric-only scale, for visual clarity.
