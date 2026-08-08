@@ -1,4 +1,8 @@
 # Cartoon Houses 
+- 791.436 animation/animated film & television studies
+- 741.5 art/illustration techniques, cartoon 
+- 720 Architecture 
+- 709 Art criticism
 
 - SpongeBob’s pineapple
 
