@@ -4,7 +4,7 @@
 The cartographic style guide is a reference to helps mapmakers maintain consistency, clarity, and professionalism in map design by standardizing symbols, colors, typography, layouts, and overall visual hierarchy. Embracing a cartographic style guide is essential for any mapmaker aiming to produce coherent, professional, and user-friendly maps, whether for print, digital, or interactive formats.
 
 #### Purpose and Importance
-Cartographic style guides provide structured guidance for designing maps in a consistent manner, enhancing both usability and interpretability. They ensure that visual elements—such as color palettes, line weights, typography, symbolization, and spatial relationships—convey information effectively and intuitively. Consistency in map design helps users quickly understand geographic data and reinforces credibility and professionalism in cartographic work.
+Cartographic style guides provide structured guidance for designing maps in a consistent manner, enhancing both usability and interpretability. They ensure that visual elements — such as color palettes, line weights, typography, symbolization, and spatial relationships — convey information effectively and intuitively. Consistency in map design helps users quickly understand geographic data and reinforces credibility and professionalism in cartographic work.
 
 ### **Core Aesthetic Principles**
 - **Monochrome Engraving** — black‑and‑white linework with controlled hachures; evokes historical atlases and surveyor charts.  
