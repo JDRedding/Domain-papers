@@ -1,0 +1,101 @@
+**Semiotic Formalization: Symbol → Meaning as Weighted Graph**
+
+### Formal Definition
+
+Let $G = (V, E, w)$ be a directed weighted graph modeling the semiotic mapping from design elements (signifiers) to semantic associations (signifieds).
+
+- **Nodes $V$**:  
+  $V = D \cup S$  
+  where  
+  - $D = \{d_1, d_2, \dots \}$ are *design elements* (the material/perceptible carriers):  
+    color, shape, material, location, scale, texture, orientation, sequence, etc.  
+  - $S = \{s_1, s_2, \dots \}$ are *semantic associations* (the interpretive contents):  
+    optimism, identity, world-logic, authority, danger, belonging, transcendence, etc.
+
+- **Edges $E$**:  
+  Directed edges $e = (d, s) \in E$ represent the *symbolic encoding* relation  
+  “design element $d$ encodes / evokes semantic association $s$”.
+
+- **Weight function $w: E \to [0,1]$**:  
+  $w(d,s)$ quantifies the *strength of symbolic encoding*  
+  (0 = no conventional or perceptual link; 1 = near-deterministic or culturally saturated link).
+
+The fundamental semiotic arrow is therefore realized as the weighted directed edge:
+
+$$
+d \xrightarrow{w(d,s)} s
+$$
+
+### Graph-Theoretic Properties of Interest
+
+1. **Out-degree of a design element**  
+   $\mathrm{deg}^+(d)$ = number of distinct meanings a single form can carry (polysemy).
+
+2. **In-degree of a semantic node**  
+   $\mathrm{deg}^-(s)$ = number of distinct forms that can encode the same meaning (synonymy / redundancy of expression).
+
+3. **Path strength**  
+   For a path $d_1 \to s_a \to d_2 \to s_b$, the composite strength can be defined multiplicatively or by min-weight, depending on whether one models independent reinforcement or bottleneck constraint.
+
+4. **Semantic clusters**  
+   Strongly connected components or dense subgraphs within $S$ (or bipartite dense blocks between $D$ and $S$) correspond to coherent “world-logics” or stylistic regimes.
+
+5. **Encoding capacity**  
+   The total weighted cut between a chosen subset of design elements and the semantic layer measures how much meaning that formal vocabulary can stably support.
+
+### Minimal Working Example (ASCII)
+
+```
+Design Layer (D)                  Semantic Layer (S)
+─────────────────                 ──────────────────
+
+  [Gold] ──0.85──→ Optimism
+     │               │
+     │0.70           │0.40
+     ↓               ↓
+  [Circle] ──0.65──→ Identity ──0.55──→ World-Logic
+     │               
+     │0.30           
+     ↓               
+  [Center] ──0.90──→ Authority
+```
+
+Edge list with weights:
+- (Gold, Optimism) = 0.85  
+- (Gold, Identity) = 0.70  
+- (Circle, Identity) = 0.65  
+- (Circle, Optimism) = 0.40  
+- (Center, Authority) = 0.90  
+- (Identity, World-Logic) = 0.55  
+
+### Algebraic Presentation
+
+Adjacency matrix $A$ (rows = design elements, columns = semantic associations):
+
+$$
+A_{d,s} = w(d,s)
+$$
+
+A higher-order semiotic operator can be obtained by composition with a semantic–semantic relation matrix \( R \) (how meanings themselves relate):
+
+$$
+M = A R
+$$
+
+where $M$ now maps pure design configurations onto more complex interpretive complexes.
+
+### Closure Condition (optional theoretical tightening)
+
+A design configuration $C \subset D$) is said to *stabilize* a semantic regime $\Sigma \subset S$ when the restricted weighted cut satisfies
+
+$$
+\sum_{d \in C,\, s \in \Sigma} w(d,s) \;\ge\; \theta
+$$
+
+for some threshold \( \theta \) that the theorist sets as the minimal encoding strength required for the regime to be legible / operative.
+
+This yields a clean graph-theoretic criterion for when a set of formal choices successfully “carries” a given world-logic.
+
+---
+
+The model is bipartite at base (design ↔ meaning) but can be extended to multipartite or recursive graphs if one wishes to treat secondary signs, meta-signs, or design–design formal relations as first-class nodes.
