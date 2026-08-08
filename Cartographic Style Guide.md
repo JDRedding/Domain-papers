@@ -89,7 +89,7 @@ $$
 
 (haversine form). Ground distance $d = R\Delta\sigma$.
 
-#### 6. Coordinate Labeling
+#### Coordinate Labeling
 Latitude/longitude labels in small caps follow the usual sexagesimal or decimal degree conventions; conversion is trivial:
 
 $$
