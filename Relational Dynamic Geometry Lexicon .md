@@ -119,7 +119,7 @@ Each symbol is a **domain‑semantic atom** $\sigma$ usable as $\mathcal{D}_\sig
 - **Wedge of Forms** — ω∧η
 
 # 🔥 Role Insight  
-RDG *receives* them as domain‑semantic atoms and binds them to SID objects.**
+RDG *receives* them as domain‑semantic atoms and binds them to SID objects.
 
 Meaning:
 
@@ -130,6 +130,7 @@ Meaning:
 - Some symbols **are topological operators** (closure, interior)
 
 RDG handles each differently.
+
 ---
 
 # 🧩 How RDG Handles Each Symbol  
