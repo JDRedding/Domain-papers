@@ -1,6 +1,6 @@
 # Foucault's power structures
 - 301 Sociology — social theory
-= 320 Political science
+- 320 Political science
 - 365 Penology & prison administration
 - 306 Culture & institutions 
 - 303 Social processes 
