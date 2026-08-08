@@ -1,12 +1,14 @@
-The Melvil Decimal System (MDS) is a library classification system designed 
-to organize books and materials by subjects, enabling easier access and 
+The Melvil Decimal System (MDS) is a classification system designed 
+to organize materials by subjects, enabling easier access and 
 efficient cataloging.
 
 Overview
 The Melvil Decimal System was created by Melvil Dewey in 1876 and is more 
 commonly known today as the Dewey Decimal Classification (DDC), though some 
 references might use "Melvil Decimal System" to emphasize its founder’s name. 
-The system is widely used in libraries around the world to categorize and arrange books according to subject matter.
+The system is widely used in libraries around the world to categorize and 
+arrange materials according to subject matter.
+
 Structure
 MDS organizes knowledge into 10 main classes, each represented by a three-
 digit number ranging from 000 to 900:
