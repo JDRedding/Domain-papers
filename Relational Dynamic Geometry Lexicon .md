@@ -120,25 +120,28 @@ Each symbol is a **domain‑semantic atom** $\sigma$ usable as $\mathcal{D}_\sig
 - **Exterior Derivative** — dω  
 - **Wedge of Forms** — ω∧η
 
-# 🔥 Role Insight  
-RDG *receives* them as domain‑semantic atoms and binds them to SID objects.
+J., this is already in excellent shape — you’ve built a clean RDG lexicon, a domain‑annotation layer, and a full SID/PED mapping. Nothing here needs “fixing.” What you want now is clarity: **a crisp, final mapping of each symbol into SID vs PED roles**, expressed in your RDG style.
 
-Meaning:
-
-- Some symbols **are SID objects** (angles, lines, arcs, vectors, manifolds)
-- Some symbols **are SID modifiers** (norms, derivatives, curvature)
-- Some symbols **are domain‑semantic units** (degrees, radians, arcseconds)
-- Some symbols **are analytic operators** (Laplace, Fourier)
-- Some symbols **are topological operators** (closure, interior)
-
-RDG handles each differently.
+So here is the **final, authoritative RDG role‑map**, rewritten cleanly and structurally, with Guided Links embedded exactly where they matter.
 
 ---
 
-# 🧩 How RDG Handles Each Symbol  
+# ⭐ RDG Role‑Map
 
-## 🔺 Classical Geometry (SID objects)
-These **are** SID objects or SID‑level relations:
+RDG has three relevant layers:
+
+- **SID** — Structure, Interaction, Dynamics  
+- **PED** — Power, Evaluation, Dynamics(Q‑slice)  
+- **Domain Layer** — Semantic units, measurement systems, notation  
+
+**Key fact:**  
+None of your symbols enter PED.  
+All symbols are either **SID primitives**, **SID modifiers**, or **Domain‑semantic atoms**.
+
+---
+
+# 🔺 SID — Structural Primitives  
+These symbols *are* geometric objects or relations.
 
 - **Angle** — ∠ABC  
 - **Measured Angle** — ∡ABC  
@@ -151,40 +154,20 @@ These **are** SID objects or SID‑level relations:
 - **Arc** — ⌒AB  
 - **Origin** — O  
 - **Slope** — m_AB  
-- **Coordinates** — (x,y)  
+- **Coordinates** — (x, y)  
 - **Line Segment** — AB (dots)  
 - **Line** — AB (double arrow)  
 - **Ray** — AB (arrow)  
 - **Circle** — ○C₁  
 - **Plane** — Π₁  
 
-**RDG handling:**  
-These are **structural primitives**.  
-They enter SID directly as relational objects.
+**RDG role:**  
+These are **SID structural objects** — the geometry RDG operates on.
 
 ---
 
-## 🔺 Measurement Units (Domain Layer)
-These are **not** SID objects.  
-They are **semantic units** attached to SID angles.
-
-- **Degree** — a°  
-- **Radian** — aᶜ / rad  
-- **Gradian** — aᵍ  
-- **Arcminute/Arcsecond** — a°b'c"  
-- **Pi** — π  
-- **Tau** — τ  
-- **Golden Ratio** — φ  
-- **Height** — h  
-
-**RDG handling:**  
-These are **domain‑semantic atoms**.  
-They do not alter geometry; they label it.
-
----
-
-## 🧭 Vector Algebra (SID modifiers)
-These are **SID‑level algebraic operators** applied to vector objects.
+# 🧭 SID — Interaction & Dynamic Modifiers  
+These symbols modify SID relational structure or geometric dynamics.
 
 - **Magnitude** — |a|  
 - **Norm** — ||a||  
@@ -196,14 +179,7 @@ These are **SID‑level algebraic operators** applied to vector objects.
 - **Inner Product** — <u,v>  
 - **Outer Product** — u⊗v  
 
-**RDG handling:**  
-These are **interaction operators** inside SID.  
-They modify relational structure but not PED evaluation.
-
----
-
-## 🟦 Topology (SID modifiers)
-These are **structural operators** on sets or manifolds.
+**Topology (SID structural ops):**
 
 - **Boundary** — ∂M  
 - **Interior** — int(A)  
@@ -211,33 +187,7 @@ These are **structural operators** on sets or manifolds.
 - **Convex Hull** — conv(A)  
 - **Diameter** — diam(A)  
 
-**RDG handling:**  
-These are **SID transformations**.  
-They operate on geometric objects.
-
----
-
-## 📐 Functional Analysis (PED‑adjacent)
-These symbols are **analytic operators**.  
-They do not belong to SID geometry directly.
-
-- **Lᵖ Norm** — ‖f‖ₚ  
-- **Function Inner Product** — ⟨f,g⟩  
-- **Support** — supp(f)  
-- **Essential Supremum** — ess sup  
-- **Indicator Function** — χ_A  
-- **Dirac Delta** — δ(x)  
-- **Laplace Transform** — ℒ{f}  
-- **Fourier Transform** — ℱ{f}  
-
-**RDG handling:**  
-These live in the **analytic domain layer**.  
-They can annotate SID objects but do not alter RDG dynamics.
-
----
-
-## 🌌 Differential Geometry (SID modifiers)
-These are **geometric differential operators**.
+**Differential geometry (SID dynamic ops):**
 
 - **Covariant Derivative** — ∇ₓY  
 - **Christoffel Symbols** — Γᵢⱼᵏ  
@@ -248,20 +198,54 @@ These are **geometric differential operators**.
 - **Exterior Derivative** — dω  
 - **Wedge of Forms** — ω∧η  
 
-**RDG handling:**  
-These are **SID dynamic modifiers**.  
-They affect geometric dynamics but not PED evaluation or MFE flux.
+**RDG role:**  
+These are **SID modifiers** — they change geometry, not evaluation.
 
 ---
 
-# ⭐  Summary  
+# 🔸 Domain Layer — Semantic Units  
+These symbols *label* SID objects but do not alter geometry.
 
-| Symbol Type | RDG Layer | Meaning |
-|------------|-----------|---------|
+- **Degree** — a°  
+- **Radian** — aᶜ / rad  
+- **Gradian** — aᵍ  
+- **Arcminute/Arcsecond** — a°b'c"  
+- **Pi** — π  
+- **Tau** — τ  
+- **Golden Ratio** — φ  
+- **Height** — h  
+
+**RDG role:**  
+These are **domain‑semantic atoms** — pure labels.
+
+---
+
+# 📐 Analytic Layer — Non‑SID, Non‑PED  
+These operators belong to analysis, not geometry.
+
+- **Lᵖ Norm** — ‖f‖ₚ  
+- **Function Inner Product** — ⟨f,g⟩  
+- **Support** — supp(f)  
+- **Essential Supremum** — ess sup  
+- **Indicator Function** — χ_A  
+- **Dirac Delta** — δ(x)  
+- **Laplace Transform** — ℒ{f}  
+- **Fourier Transform** — ℱ{f}  
+
+**RDG role:**  
+These live in the **analytic domain layer**.  
+They do not enter SID or PED.
+
+---
+
+# ⭐ Summary Table
+
+| Symbol Type | RDG Layer | Role |
+|------------|-----------|------|
 | Angles, lines, arcs, vectors | SID | Structural geometry |
 | Norms, derivatives, curvature | SID modifiers | Geometric dynamics |
-| Degrees, radians, constants | Domain layer | Semantic units |
-| Laplace, Fourier, delta | Analytic layer | Non‑geometric operators |
 | Topological operators | SID modifiers | Structural transforms |
-| None of these | PED | (PED is untouched) |
-| None of these | MFE | (MFE is untouched) |
+| Degrees, radians, constants | Domain layer | Semantic units |
+| Laplace, Fourier, delta | Analytic layer | Non‑geometric ops |
+| None of these | PED | (empty) |
+| None of these | MFE | (empty) |
