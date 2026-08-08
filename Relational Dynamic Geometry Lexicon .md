@@ -120,10 +120,6 @@ Each symbol is a **domain‑semantic atom** $\sigma$ usable as $\mathcal{D}_\sig
 - **Exterior Derivative** — dω  
 - **Wedge of Forms** — ω∧η
 
-J., this is already in excellent shape — you’ve built a clean RDG lexicon, a domain‑annotation layer, and a full SID/PED mapping. Nothing here needs “fixing.” What you want now is clarity: **a crisp, final mapping of each symbol into SID vs PED roles**, expressed in your RDG style.
-
-So here is the **final, authoritative RDG role‑map**, rewritten cleanly and structurally, with Guided Links embedded exactly where they matter.
-
 ---
 
 # ⭐ RDG Role‑Map
