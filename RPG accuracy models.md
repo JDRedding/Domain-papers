@@ -318,5 +318,143 @@ perceived competence.
 - Designers must carefully calibrate thresholds to avoid trivializing challenges.
 
 ---
+Semi‑bounded accuracy is the “middle path” between the swingy accessibility of bounded accuracy and the simulationist precision of unbounded accuracy. It’s a *predictability‑first* design philosophy that uses probability curves, fixed thresholds, and controlled bonus growth to make characters feel reliably competent without eliminating randomness.
 
+---
+
+## Core idea  
+**Semi‑bounded accuracy uses multiple dice to create a bell curve and fixes the success threshold so that skill matters more than luck, but luck still matters.**
+
+It’s not about capping bonuses (bounded) or letting them explode (unbounded).  
+It’s about *shaping the probability distribution* so that:
+
+- Experts succeed consistently  
+- Novices struggle predictably  
+- Randomness adds texture, not chaos  
+
+---
+
+## 🎲 The mathematical foundation: bell curves vs. flat distributions  
+Bounded accuracy uses a d20 → flat distribution → every number equally likely.  
+Semi‑bounded accuracy uses dice like 2d10, 3d6, or 4d6 → bell curve → most results cluster around the mean.
+
+### Why this matters  
+With 2d10:
+
+- Mean = 11  
+- Standard deviation ≈ 3  
+- Extreme results (2 or 20) are rare  
+- Middle results (9–13) are common
+
+This means:
+
+- A +6 expert modifier shifts the entire curve upward → reliable competence  
+- A +0 novice modifier leaves the curve centered → predictable struggle  
+- Luck still exists but doesn’t dominate outcomes
+
+This is the heart of semi‑bounded accuracy.
+
+---
+
+## 🎯 The fixed threshold principle  
+Semi‑bounded accuracy typically uses a **fixed success threshold** (e.g., 20).  
+This creates a stable “target” that players can reason about.
+
+### Why fixed thresholds matter  
+In unbounded accuracy, DCs escalate endlessly.  
+In bounded accuracy, DCs are static but randomness overwhelms skill.
+
+Semi‑bounded accuracy says:
+
+> “Keep the DC fixed, and let skill determine how often you beat it.”
+
+This creates a *clean, interpretable progression curve*.
+
+---
+
+## 📈 How progression works  
+Progression is neither shallow (bounded) nor explosive (unbounded).  
+Instead, bonuses grow slowly but meaningfully.
+
+Example progression:
+
+- Novice: +0  
+- Trained: +3  
+- Expert: +6  
+- Master: +9  
+
+On 2d10:
+
+- Novice succeeds ~10–20% of the time  
+- Expert succeeds ~60–70% of the time  
+- Master succeeds ~85–95% of the time  
+
+This models real-world competence curves far better than a d20.
+
+---
+
+## 🧩 Structural properties (for your modeling brain)
+
+### 1. **Predictability**  
+The bell curve makes outcomes cluster.  
+This supports systems where:
+
+- Planning matters  
+- Training matters  
+- Expertise feels earned  
+- Randomness is spice, not chaos
+
+### 2. **Bounded but meaningful growth**  
+Bonuses don’t explode, but they matter more than in bounded accuracy.
+
+### 3. **Stable world model**  
+Because thresholds don’t escalate, the world feels consistent:
+
+- A locked door is always DC 20  
+- A master locksmith is always good at opening it  
+- A novice is always bad at opening it  
+
+No treadmill effect.
+
+### 4. **Designer control**  
+Designers can tune:
+
+- Dice count → curve width  
+- Bonus growth → competence slope  
+- Threshold → difficulty anchor  
+
+This gives more control than either bounded or unbounded accuracy.
+
+---
+
+## ⚠️ Trade-offs  
+### 1. Less dramatic highs/lows  
+Bell curves reduce critical swings.  
+Some players miss the wild chaos of d20 systems.
+
+### 2. Slightly more math  
+Players must understand probability curves (though only intuitively).
+
+### 3. Calibration sensitivity  
+If bonuses grow too fast, the curve breaks.  
+If thresholds are too low, everything becomes trivial.
+
+---
+
+## 🧠 Why designers choose semi‑bounded accuracy  
+Because it balances:
+
+- **Accessibility** (bounded)  
+- **Simulation** (unbounded)  
+- **Predictability** (unique to semi‑bounded)  
+
+It’s ideal for games that want:
+
+- Competence to matter  
+- Randomness to add texture  
+- Progression to feel meaningful  
+- The world to remain stable  
+- Encounter design to be simple  
+
+It’s the “Goldilocks zone” of TTRPG math.
 
