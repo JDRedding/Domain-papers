@@ -14,12 +14,12 @@ At its core, domain‑papers is a **long‑horizon intellectual workspace**. It 
 - **Evolution** — allowing mature works to branch into independent projects.  
 - **Continuity** — preserving the lineage of ideas, even after extraction.
 
-This makes the repository valuable not only for active researchers but also for future collaborators who want to understand how concepts emerged, interacted, and transformed over time.
+This makes the repository valuable not only for active researchers but also for future users who want to understand how concepts emerged, interacted, and transformed over time.
 
 ---
 
 ## Intended Use  
-This library is meant for active researchers, collaborators, and future contributors who want to engage with the evolving body of work. It provides:
+This library is meant for active researchers, collaborators, and future users who want to engage with the evolving body of work. It provides:
 
 - A **centralized home** for ongoing research.  
 - A **transparent view** into the development of ideas over time.  
