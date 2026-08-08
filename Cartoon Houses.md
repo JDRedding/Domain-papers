@@ -130,7 +130,8 @@ Some houses *are* the plot.
 
 ---
 
-## **📦 Full Structured JSON (RDG‑clean, ASCII‑stable)**
+## 📦 Structured JSON 
+RDG‑clean, ASCII‑stable
 
 ```json
 {
