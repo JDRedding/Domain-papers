@@ -264,7 +264,15 @@ R &= \{r_k : G_t \mapsto G_t'\}\\
 $$
 
 # Illustrative Case (Hospital)
-Your hospital example is classic and works well. The medical gaze, the examination, the case file, the timetable, the hierarchy of expertise, the definition of “compliance” versus “non-compliance,” the statistical construction of risk populations—these are all micro-powers that simultaneously produce medical knowledge and shape the patient’s self-understanding and conduct. The physician does not simply “possess” power; power is exercised through a whole apparatus of which the physician is one element.
+Consider a hospital ward:
+
+- Physicians and nurses exercise micro-powers through rules, examinations, and schedules.
+- Patients internalize these norms, adopting identities like “compliant patient” or “sick individual.”
+- Medical knowledge defines what counts as normal/abnormal, shaping both behavior and societal perception.
+- 
+Foucault’s analysis shows that power moves through societal structures rather than residing in a single institution, influencing individuals in subtle, often invisible ways.
+
+The hospital example is classic. The medical gaze, the examination, the case file, the timetable, the hierarchy of expertise, the definition of “compliance” versus “non-compliance,” the statistical construction of risk populations—these are all micro-powers that simultaneously produce medical knowledge and shape the patient’s self-understanding and conduct. The physician does not simply “possess” power; power is exercised through a whole apparatus of which the physician is one element.
 
 # Relation to Broader Theoretical Interests
 If one is working with relational, flux, or closure-based frameworks (where structure and dynamics are generated through relations rather than grounded in substances or sovereign points), Foucault’s power analysis is a natural point of contact. Power here is not an external force applied to pre-given subjects; it is the relational medium in which subjects, norms, and truths are continuously produced and stabilized. Resistance appears as the possibility of alternative closures or different relational configurations within the same field. The Panoptic diagram and the biopolitical management of populations can be read as particular historical topologies of relational control.
