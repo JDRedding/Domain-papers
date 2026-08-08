@@ -5,6 +5,28 @@ Foucault’s power is best understood as an emergent, productive, and distribute
 # Core Reconfiguration
 Foucault does not deny that sovereign, top-down power exists. He argues it is no longer the primary or most interesting form in modern societies. From the classical age onward, a different modality becomes dominant: power that is **relational, capillary, productive, and knowledge-generating**.
 
+```
+                  ┌──────────────────────────────┐
+                  │   Truth-Production (T)       │
+                  │ Categorization, Diagnoses,   │
+                  │ Discursive Regimes           │
+                  └──────────────┬───────────────┘
+                                 │
+                                 ▼
+┌──────────────────────────────┐ │ ┌──────────────────────────────┐
+│    Panoptic Visibility (V)   │◄┼─┤  Disciplinary Normativity (N)│
+│ Architecture, Monitoring,    │ │ │ Mean μ, Deviation d_i,       │
+│ Asymmetric Gaze              │ └─► Corrective Feedback          │
+└──────────────┬───────────────┘   └──────────────┬───────────────┘
+               │                                  │
+               └─────────────────┬────────────────┘
+                                 ▼
+                   ┌───────────────────────────┐
+                   │ Subject Formation & Field │
+                   │  Closure: x_i(t) → x*     │
+                   └───────────────────────────┘
+```
+
 ## Relational character of power (network / graph model)
 **Relational, not possessed.** Power is not a substance or capacity that someone “has.” It is exercised in and through relations. The moment one tries to locate it in a single agent, institution, or class, one misses its actual operation.
 
