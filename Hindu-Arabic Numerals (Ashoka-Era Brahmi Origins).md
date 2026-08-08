@@ -3,6 +3,32 @@
 
 This note traces the evolution of our Hindu–Arabic digits from Ashoka‑era Brahmi symbols to the later invention of positional place‑value notation with zero, showing that Ashoka’s inscriptions preserve the graphic ancestors of modern digits but not the full positional system.
 
+```
+[ Ashokan Brahmi ] (c. 250 BCE)
+  ├── Non-positional / Additive system
+  └── Base glyphs for 1-9 (1=stroke, 4=cross)
+         │
+         ▼
+[ Gupta / Regional Scripts ] (4th-6th C. CE)
+  ├── Visual forms curve & connect
+  └── Integration of Place-Value Concept & Śūnya (0)
+         │
+         ▼
+[ Classic Indian Positional System ] (6th-9th C. CE)
+  ├── Formalized by Brahmagupta (628 CE)
+  └── Epigraphic proof at Gwalior (876 CE)
+         │
+         ├────────────────────────────────┐
+         ▼                                ▼
+[ Eastern Arabic ]               [ Western Ghubār ]
+(Middle East)                    (North Africa / Spain)
+                                          │
+                                          ▼
+                                 [ European / Modern ]
+                                 (Fibonacci / Printing Press)
+
+```
+
 The claim that Ashoka’s 3rd‑century BCE inscriptions already contain the “Hindu‑Arabic numeral system” is only partially correct. What *does* appear in Ashoka’s edicts are the **Brahmi numerals**, the earliest securely dated numeral symbols of the Indian subcontinent and the direct graphic ancestors of our modern digits 1–9. However, the **full positional decimal system**, including the concept and symbol for **zero**, emerged many centuries later.
 
 ---
