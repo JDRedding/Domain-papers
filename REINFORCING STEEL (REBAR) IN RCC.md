@@ -5,6 +5,149 @@ Rebar in RCC comes in four main forms —
 - **assembled cages**, and 
 - **welded wire mesh** 
 
+**Key mathematical formulas and equations for reinforcing steel (rebar) in RCC (Reinforced Cement Concrete), primarily per IS 456:2000 Limit State Design.**
+
+### 1. Basic Geometric & Weight Formulas
+
+**Cross-sectional area of one circular bar**  
+\[
+A = \frac{\pi d^{2}}{4}
+\]  
+where  
+- \(A\) = area (mm²)  
+- \(d\) or \(\phi\) = nominal diameter of bar (mm)
+
+**Unit weight of steel bar**  
+\[
+W = \frac{d^{2}}{162} \quad \text{(kg/m)}
+\]  
+(Derivation from density 7850 kg/m³; \(d\) in mm). Common site approximation.
+
+### 2. Development Length (Anchorage Length)
+
+As per IS 456 Clause 26.2.1:  
+\[
+L_{d} = \frac{\phi \cdot \sigma_{s}}{4 \tau_{bd}}
+\]  
+where  
+- \(L_d\) = development length (mm)  
+- \(\phi\) = bar diameter (mm)  
+- \(\sigma_s\) = stress in bar at the section considered = \(0.87 f_y\) (for fully stressed bars)  
+- \(\tau_{bd}\) = design bond stress (N/mm²)
+
+**Design bond stress \(\tau_{bd}\) (plain bars in tension):**  
+M20 → 1.2, M25 → 1.4, M30 → 1.5, M35 → 1.7, M40 → 1.9 N/mm².
+
+**Modifiers:**  
+- Deformed (HYSD/TMT) bars: multiply \(\tau_{bd}\) by **1.6**  
+- Bars in compression: further multiply by **1.25**
+
+**Typical values for deformed bars (Fe 415):**  
+- M20 tension ≈ 47\(\phi\)  
+- M25 tension ≈ 40\(\phi\)  
+- Compression values are lower (≈ 38\(\phi\) for M20 Fe 415).
+
+### 3. Flexural Design – Singly Reinforced Rectangular Section (Limit State)
+
+**Equilibrium of forces (neutral axis depth):**  
+\[
+0.36 f_{ck} b x_u = 0.87 f_y A_{st}
+\]  
+\[
+x_u = \frac{0.87 f_y A_{st}}{0.36 f_{ck} b}
+\]
+
+**Ultimate moment of resistance:**  
+\[
+M_u = 0.87 f_y A_{st} (d - 0.42 x_u)
+\]  
+or equivalently  
+\[
+M_u = 0.36 f_{ck} b x_u (d - 0.42 x_u)
+\]
+
+**Limiting (balanced) moment of resistance:**  
+\[
+M_{u,\lim} = 0.36 \left(\frac{x_{u,\max}}{d}\right) \left[1 - 0.42\left(\frac{x_{u,\max}}{d}\right)\right] f_{ck} b d^{2}
+\]
+
+**Limiting \(x_{u,\max}/d\):**  
+- Fe 250 → 0.53  
+- Fe 415 → 0.48  
+- Fe 500 → 0.46  
+
+**Area of tension steel required (from \(M_u\)):**  
+\[
+A_{st} = \frac{f_{ck} b d}{2 \times 0.87 f_y} \left[1 - \sqrt{1 - \frac{4.6 M_u}{f_{ck} b d^{2}}}\right]
+\]
+
+### 4. Minimum & Maximum Reinforcement Limits (Beams)
+
+**Minimum tension reinforcement (IS 456 Cl. 26.5.1.1):**  
+\[
+A_{st,\min} = \frac{0.85\, b\, d}{f_y}
+\]
+
+**Maximum tension or compression reinforcement:**  
+\[
+A_{st,\max} = A_{sc,\max} = 0.04\, b\, D
+\]  
+(\(D\) = overall depth)
+
+### 5. Shear Reinforcement (Stirrups)
+
+**Minimum shear reinforcement:**  
+\[
+\frac{A_{sv}}{b s_v} \ge \frac{0.4}{0.87 f_y}
+\]  
+or  
+\[
+A_{sv} \ge \frac{0.4 b s_v}{0.87 f_y}
+\]  
+where  
+- \(A_{sv}\) = total cross-sectional area of stirrup legs  
+- \(s_v\) = spacing of stirrups  
+- \(b\) = breadth of beam  
+- \(f_y\) ≤ 415 N/mm² for this check
+
+### 6. Axially Loaded Short Columns (IS 456 Cl. 39.3)
+
+\[
+P_u = 0.4 f_{ck} A_c + 0.67 f_y A_{sc}
+\]  
+where  
+- \(P_u\) = factored axial load  
+- \(A_c\) = area of concrete  
+- \(A_{sc}\) = area of longitudinal steel  
+- \(A_g = A_c + A_{sc}\) (gross area)
+
+**Limits for columns:**  
+- Minimum longitudinal steel: 0.8% of gross area  
+- Maximum longitudinal steel: 6% of gross area (preferablyically limited to ~4%)  
+- Minimum 4 bars in rectangular columns, 6 in circular.
+
+### Notation Summary (Common Symbols)
+
+| Symbol       | Meaning                                      |
+|--------------|----------------------------------------------|
+| \(A_{st}\)   | Area of tension steel                        |
+| \(A_{sc}\)   | Area of compression steel                    |
+| \(A_{sv}\)   | Area of shear reinforcement (stirrups)       |
+| \(b\)        | Width of beam / shorter column dimension     |
+| \(d\)        | Effective depth                              |
+| \(D\)        | Overall depth                                |
+| \(f_{ck}\)   | Characteristic compressive strength of concrete |
+| \(f_y\)      | Characteristic yield strength of steel       |
+| \(\phi\) or \(d\) | Bar diameter                            |
+| \(x_u\)      | Depth of neutral axis                        |
+| \(L_d\)      | Development length                           |
+| \(\tau_{bd}\)| Design bond stress                           |
+| \(\sigma_s\) | Stress in steel                              |
+| \(M_u\)      | Ultimate moment of resistance                |
+| \(P_u\)      | Ultimate axial load                          |
+
+These are the core equations used in day-to-day RCC design involving rebar under IS 456. Working Stress Method formulas exist but are rarely used now. For ACI 318 or Eurocode 2 the constants and factors differ (e.g., \(\phi\) factors, different stress block parameters).
+
 ---
 
 ### 🧱 **Core Purpose of Reinforcement**
