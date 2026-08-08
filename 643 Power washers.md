@@ -1,4 +1,12 @@
-**Power washers** (pressure washers) are high-pressure water cleaning tools commonly used in residential property maintenance for exterior surfaces, concrete, siding, decks, dumpsters, and make-ready units.
+# Power washers
+- 643 Home improvement / household maintenance 
+- 648.5 House/exterior cleaning 
+- 629.2872 Automobile care 
+
+**Power washers** (pressure washers) are high-pressure water cleaning tools commonly used in residential property maintenance for exterior surfaces, concrete, siding, decks, dumpsters, and make-ready units. This note is a practical operator/maintenance guide to choosing, using, and maintaining power washers for residential/property work. It explains machine types, important specs (PSI/GPM/CU), safe operating/nozzle practices, selection recommendations for common use-cases, parts that matter, chemical guidance, and short work-order workflows.
+
+## Purpose
+: Guidance for property-maintenance teams on equipment selection, safe operation, routine maintenance, and job-focused procedures.
 
 ### Common Types
 | Type | Typical PSI Range | Best For | Notes |
