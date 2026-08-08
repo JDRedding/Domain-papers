@@ -458,3 +458,6 @@ It’s ideal for games that want:
 
 It’s the “Goldilocks zone” of TTRPG math.
 
+## Conlusion
+
+The math system is a design philosophy: the accuracy model determines how characters grow, how often they succeed, how much luck versus skill matters, how complex play is, and how accessible the game is. Choosing bounded, unbounded, or semi‑bounded is therefore a deliberate value decision about the player experience.
