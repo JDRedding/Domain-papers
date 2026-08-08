@@ -131,19 +131,6 @@ $$
 ## Biopolitics and statistical populations
 **Biopower / biopolitics.** From the later 1970s lectures (*Society Must Be Defended*, *Security, Territory, Population*, *The Birth of Biopolitics*), Foucault tracks a further mutation: power that takes the population as its object—birth rates, public health, hygiene, insurance, statistics, the management of life itself. This is not the same as discipline (which targets the individual body); it operates at the level of the species and the milieu.
 
-At the level of populations Foucault’s biopolitics operates through statistical distributions rather than individual bodies:
-
-- birth rates, mortality, morbidity, risk curves,  
-- normal distributions and averages (the “average man” of Quetelet-style social physics),  
-- techniques that act on the milieu and on regularities of the species.
-
-A schematic statement is that power regulates the parameters of a population distribution $P(x)$ rather than the trajectory of each individual $x_i$. Norms appear as means, variances, and thresholds extracted from the collective data.
-
-The key insight:  
-Discipline targets **individual bodies**, biopolitics targets **population distributions**.  
-**Discipline normalizes individuals; biopolitics normalizes populations.**  
-But both are *normalizing* in different registers.
-
 ```
 [ Micro Scale: Disciplinary Mechanics ]
   Individual Nodes x_i
@@ -159,6 +146,18 @@ But both are *normalizing* in different registers.
   Field Evolution: P(x, t+1) = Ψ(P(x, t))
   Target: Population Parameters (Mean μ, Variance σ², Thresholds)
 ```
+At the level of populations Foucault’s biopolitics operates through statistical distributions rather than individual bodies:
+
+- birth rates, mortality, morbidity, risk curves,  
+- normal distributions and averages (the “average man” of Quetelet-style social physics),  
+- techniques that act on the milieu and on regularities of the species.
+
+A schematic statement is that power regulates the parameters of a population distribution $P(x)$ rather than the trajectory of each individual $x_i$. Norms appear as means, variances, and thresholds extracted from the collective data.
+
+The key insight:  
+Discipline targets **individual bodies**, biopolitics targets **population distributions**.  
+**Discipline normalizes individuals; biopolitics normalizes populations.**  
+But both are *normalizing* in different registers.
 
 ### **Discipline (micro-scale):**
 
