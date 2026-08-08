@@ -44,7 +44,7 @@ $$
 or equivalently
 
 $$
-y = R\,\operatorname{artanh}(\sin\varphi).
+y = R\,\text{artanh}(\sin\varphi).
 $$
 
 Scale factor $k$ increases with latitude:
