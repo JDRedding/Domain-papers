@@ -66,13 +66,14 @@ ANTI‑LIFT LOCK (screw + washer OR metal tab)
 
 ### **Slot Plates**
 ```
-   SLOT PLATE (female)
-   ============================
-   |             [vertical]    |
-   | o   o   o   (top holes)   |
-   | o   o   o   (bottom holes)|
-   |     o   o   (middle)      |
-   ============================
+   SLOT PLATE (female) [vertical]
+   ===|==|===========
+   |  |--|   o o     | (top bar) 
+   |  |  |   o o     |
+   |  |--|   o o     | (bottom bar)
+   |  |  |   o o     | 
+   ===|==|===========
+
 ```
 
 ---
