@@ -4,6 +4,8 @@
 - 720 Architecture 
 - 709 Art criticism
 
+This note, "**Cartoon Houses**," catalogs iconic residential settings from animated series, analyzes their architectural themes and symbolism, and traces how cartoon architecture evolved from the early 20th century to the present.
+
 - SpongeBob’s pineapple
 
 SpongeBob’s pineapple is a bright orange-yellow pineapple, complete with green leaves on top, situated in the underwater city of Bikini Bottom. The house is stylized with large, round windows and a wooden door, often decorated with a nautical porthole and a small mailbox. Its interior is surprisingly spacious, featuring multiple rooms, including SpongeBob’s living room, kitchen, bedroom, and bathroom, which align with whimsical and cartoonish designs that reflect his bubbly personality. The exterior is immediately recognizable for its quirky shape and cheerful aesthetic.
