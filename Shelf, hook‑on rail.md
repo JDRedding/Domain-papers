@@ -31,20 +31,26 @@ KITCHEN WALL (studs behind drywall)
 ||||||||||||||||||||||||||||||||||||
 
 [ BACKER BOARD ]
-====================================================
-|  HOOK PLATES (male) mounted solidly to board     |
-|  using multiple screws into the board            |
-====================================================
+
+ ||==============================================||
+ |||                                            |||
+ ||==============================================||
+ |                                                |
+
+HOOK PLATES (male) mounted solidly to board ends    
+using multiple screws into the board    
 
                 ↓ SHELF DROPS DOWN
 
+-||----------------------------------------------||-
+|||                                              |||
 ----------------------------------------------------
-|  SLOT PLATES (female) mounted to shelf           |
-----------------------------------------------------
+SLOT PLATES (female) mounted to shelf
 
                 ↓ LOCKING MECHANISM
 
 ANTI‑LIFT LOCK (screw + washer OR metal tab)
+
 ```
 
 ---
