@@ -1,4 +1,5 @@
 # Wavefunction‑causation
+
 This note contrasts the standard wavefunction‑centric formulation of quantum theory with an alternative causation‑centric framing that treats quantum evolution as explicit microphysical causal processes, and it lists research directions connecting the two views.
 ---
 
