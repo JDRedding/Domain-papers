@@ -269,7 +269,7 @@ Consider a hospital ward:
 - Physicians and nurses exercise micro-powers through rules, examinations, and schedules.
 - Patients internalize these norms, adopting identities like “compliant patient” or “sick individual.”
 - Medical knowledge defines what counts as normal/abnormal, shaping both behavior and societal perception.
-- 
+  
 Foucault’s analysis shows that power moves through societal structures rather than residing in a single institution, influencing individuals in subtle, often invisible ways.
 
 The hospital example is classic. The medical gaze, the examination, the case file, the timetable, the hierarchy of expertise, the definition of “compliance” versus “non-compliance,” the statistical construction of risk populations—these are all micro-powers that simultaneously produce medical knowledge and shape the patient’s self-understanding and conduct. The physician does not simply “possess” power; power is exercised through a whole apparatus of which the physician is one element.
