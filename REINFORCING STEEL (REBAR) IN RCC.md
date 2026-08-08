@@ -1,5 +1,5 @@
 # Reinforcing Steel (Rebar) in RCC 
-— Expanded Technical Markdown Guide
+— Technical Guide
 
 Reinforcing steel is the backbone of RCC (Reinforced Cement Concrete), providing tensile strength, ductility, crack control, and confinement. This expanded guide consolidates geometric formulas, IS 456:2000 design provisions, structural mechanics, detailing rules, and RDG/MFE operator mappings.
 
