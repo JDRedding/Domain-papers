@@ -18,4 +18,4 @@ Enabled longer-distance food transport without spoilage, revolutionizing food di
 Historical Context
 While earlier refrigeration concepts existed—Oliver Evans (1767), Jacob Perkins (1834), John Gorrie (1844), and Carl von Linden’s liquefaction process (1870s)—Marshall’s 1899 patent was the first to integrate automatic control into a domestic refrigeration system patentyogi.com. His company, the Automatic Refrigeration Company, later introduced household refrigerators in 1914 and became Kelvinator Corp.
 
-In summary: Albert T. Marshall’s 1899 patent was a turning point in refrigeration history, laying the groundwork for mode
+In short, Albert T. Marshall’s 1899 patent was the first U.S. refrigerator patent and a turning point in the history of refrigeration, enabling the modern era of automatic, reliable cooling.
