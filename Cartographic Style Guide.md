@@ -1,4 +1,5 @@
-## 🗺️ Cartographic Style Guide for Fantasy Maps (Ruins & Relics Edition)
+## 🗺️ Cartographic Style Guide
+Fantasy Maps (Ruins & Relics Edition)
 
 ### **1. Core Aesthetic Principles**
 - **Monochrome Engraving** — black‑and‑white linework with controlled hachures; evokes historical atlases and surveyor charts.  
