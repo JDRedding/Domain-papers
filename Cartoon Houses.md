@@ -6,6 +6,21 @@
 
 This note, "**Cartoon Houses**," catalogs iconic residential settings from animated series, analyzes their architectural themes and symbolism, and traces how cartoon architecture evolved from the early 20th century to the present.
 
+Cartoon Houses
+ Architecture
+ 
+  Cartoon Home table
+    1. Early–Mid 20th Century
+    2. 1960s–1970s
+    3. 1980s–2000s
+    4. 2000s–Present
+    
+  🧩 Symbolism Breakdown
+    1. Identity Encoding
+    2. World Logic Signaling
+    3. Emotional Atmosphere
+    4. Narrative Function
+
 ## Architecture 
 - SpongeBob’s pineapple
 
