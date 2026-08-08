@@ -53,11 +53,38 @@ $$
 k(\varphi) = \frac{1}{\cos\varphi}.
 $$
 
-Pseudo-Mercator variants simply replace the true spherical formulas with a slightly adjusted \(R\) or a clipped polar cutoff to keep the map finite.
+Pseudo-Mercator variants simply replace the true spherical formulas with a slightly adjusted $R$ or a clipped polar cutoff to keep the map finite.
 
 ### **Scale**
 - Define a diegetic unit (e.g., *Avenian Miles*).  
 - Use a **bar scale**, not numeric-only scale, for visual clarity.
+
+A diegetic unit (e.g., Avenian mile) is related to map distance by the representative fraction (RF):
+
+$$
+\text{RF} = \frac{D_{\text{map}}}{D_{\text{ground}}} = \frac{1}{S}.
+$$
+
+For a bar scale of length $L_{\text{bar}}$ representing ground distance $D$:
+
+$$
+L_{\text{bar}} = \frac{D}{S}.
+$$
+
+On an equirectangular map the local ground distance corresponding to a map increment $\Delta x, \Delta y$ is approximately
+
+$$
+ds \approx R\sqrt{(\Delta\lambda\cos\varphi)^2 + (\Delta\varphi)^2}.
+$$
+
+#### Spherical Distance (useful for placing features consistently)
+Great-circle distance between two points $(\varphi_1,\lambda_1)$ and $(\varphi_2,\lambda_2)$:
+
+$$
+\Delta\sigma = 2\arcsin\sqrt{\sin^2\left(\frac{\Delta\varphi}{2}\right) + \cos\varphi_1\cos\varphi_2\sin^2\left(\frac{\Delta\lambda}{2}\right)}
+$$
+
+(haversine form). Ground distance $d = R\Delta\sigma$.
 
 ### **Compass Rose**
 - Minimalist: four cardinal points only.  
@@ -142,6 +169,9 @@ Pseudo-Mercator variants simply replace the true spherical formulas with a sligh
 ---
 
 ## 📐 7. Line Weight System
+Line-Weight Hierarchy as Visual Order
+
+While artistic, the recommended weights (0.8–1.0 pt coastlines, 0.6 pt borders/major rivers, $\ldots$, 0.2 pt graticule) can be treated as a discrete visual scale ordered by semantic importance. No deeper formula is required; the numerical sequence itself encodes the ranking.
 
 - **0.8–1.0 pt** — coastlines (primary visual anchor).  
 - **0.6 pt** — borders, major rivers.  
