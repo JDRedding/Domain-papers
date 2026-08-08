@@ -36,8 +36,8 @@ This preserves:
 
 ---
 
-# 📘 Unified Domain‑Note Lexicon for RDG  
-Each symbol is a **domain‑semantic atom** #\sigma# usable as #\mathcal{D}_\sigma#.
+# 📘 Unified Domain‑Note Lexicon 
+Each symbol is a **domain‑semantic atom** #\sigma# usable as $\mathcal{D}_\sigma$.
 
 ---
 
