@@ -113,3 +113,226 @@ Homes set the emotional baseline.
 Some houses *are* the plot.  
 - **KND treehouse** = rebellion & imagination  
 
+---
+
+## **📦 Full Structured JSON (RDG‑clean, ASCII‑stable)**
+
+```json
+{
+  "cartoon_houses": [
+    {
+      "name": "SpongeBob’s pineapple",
+      "series": "SpongeBob SquarePants",
+      "description": "A bright orange-yellow pineapple with green leaves, round windows, a wooden door with a nautical porthole, and a surprisingly spacious interior.",
+      "architectural_theme": "Tropical surrealism",
+      "symbolism": "Whimsy & individuality"
+    },
+    {
+      "name": "Kame House",
+      "series": "Dragon Ball",
+      "description": "A small, pink, single-story house on a tiny island with a porch, palm trees, and a relaxed seaside atmosphere.",
+      "architectural_theme": "Island minimalism",
+      "symbolism": "Solitude & training"
+    },
+    {
+      "name": "The Simpsons’ home",
+      "series": "The Simpsons",
+      "description": "A two-story suburban house with a garage and yard in the fictional town of Springfield.",
+      "architectural_theme": "Suburban realism",
+      "symbolism": "Middle-class satire"
+    },
+    {
+      "name": "Flintstones’ dwelling",
+      "series": "The Flintstones",
+      "description": "A stone-age suburban home built from boulders, slabs, and primitive materials.",
+      "architectural_theme": "Prehistoric stone",
+      "symbolism": "Nostalgia for simplicity"
+    },
+    {
+      "name": "Dexter’s Laboratory house",
+      "series": "Dexter’s Laboratory",
+      "description": "A two-story suburban home with pink walls (later white), dormers, chimney, and a garage, hiding Dexter’s secret lab.",
+      "architectural_theme": "Modernist exterior / sci-fi interior",
+      "symbolism": "Dual identity"
+    },
+    {
+      "name": "Sunset Arms Boarding House",
+      "series": "Hey Arnold!",
+      "description": "An older multi-room urban boarding house with long family history and diverse tenants.",
+      "architectural_theme": "Urban brownstone",
+      "symbolism": "Community & diversity"
+    },
+    {
+      "name": "Kids Next Door treehouse",
+      "series": "Codename: Kids Next Door",
+      "description": "A massive improvised fortress built into a 560-year-old tree, integrating salvaged parts and serving as HQ.",
+      "architectural_theme": "Improvised fortress",
+      "symbolism": "Imagination & rebellion"
+    },
+    {
+      "name": "The Griffin House",
+      "series": "Family Guy",
+      "description": "A pastel-colored two-story suburban home with garage and screened porch.",
+      "architectural_theme": "Suburban realism",
+      "symbolism": "Domestic chaos & satire"
+    },
+    {
+      "name": "Powerpuff Girls’ Home",
+      "series": "The Powerpuff Girls",
+      "description": "A modest two-story home in Townsville, doubling as a superhero base and lab.",
+      "architectural_theme": "Modest suburban / science hybrid",
+      "symbolism": "Heroism & experimentation"
+    },
+    {
+      "name": "Johnny Bravo’s House",
+      "series": "Johnny Bravo",
+      "description": "A colorful modern-style suburban home reflecting Johnny’s bachelor lifestyle.",
+      "architectural_theme": "Modern suburban",
+      "symbolism": "Comedy & self-image"
+    }
+  ],
+
+  "houses_table": [
+    {
+      "cartoon_home": "Flintstones House",
+      "series": "The Flintstones",
+      "architectural_theme": "Prehistoric stone",
+      "symbolism": "Nostalgia for simplicity"
+    },
+    {
+      "cartoon_home": "SpongeBob’s Pineapple",
+      "series": "SpongeBob SquarePants",
+      "architectural_theme": "Tropical surrealism",
+      "symbolism": "Whimsy & individuality"
+    },
+    {
+      "cartoon_home": "Kame House",
+      "series": "Dragon Ball",
+      "architectural_theme": "Island minimalism",
+      "symbolism": "Solitude & training"
+    },
+    {
+      "cartoon_home": "Simpsons Home",
+      "series": "The Simpsons",
+      "architectural_theme": "Suburban realism",
+      "symbolism": "Middle-class satire"
+    },
+    {
+      "cartoon_home": "Dexter’s Lab",
+      "series": "Dexter’s Laboratory",
+      "architectural_theme": "Modernist exterior / sci-fi interior",
+      "symbolism": "Dual identity"
+    },
+    {
+      "cartoon_home": "Hey Arnold Boarding House",
+      "series": "Hey Arnold!",
+      "architectural_theme": "Urban brownstone",
+      "symbolism": "Community & diversity"
+    },
+    {
+      "cartoon_home": "Kids Next Door Treehouse",
+      "series": "KND",
+      "architectural_theme": "Improvised fortress",
+      "symbolism": "Imagination & rebellion"
+    }
+  ],
+
+  "timeline_phases": [
+    {
+      "period": "Early–Mid 20th Century",
+      "theme": "Symbolic, minimal, stage-set architecture",
+      "bullets": [
+        "Flat backdrops",
+        "Repetitive backgrounds",
+        "Architecture as prop"
+      ]
+    },
+    {
+      "period": "1960s–1970s",
+      "theme": "Utopian, experimental, graphic-narrative architecture",
+      "bullets": [
+        "Jetsons futurism",
+        "Psychedelic worlds",
+        "Architecture as ideology"
+      ]
+    },
+    {
+      "period": "1980s–2000s",
+      "theme": "Character-driven iconic homes",
+      "bullets": [
+        "Architecture as identity",
+        "Emotional, lived-in spaces",
+        "Urban realism in some shows"
+      ]
+    },
+    {
+      "period": "2000s–Present",
+      "theme": "Hyper-detailed, cinematic, digital",
+      "bullets": [
+        "3D hybrid worlds",
+        "Complex interiors",
+        "Architecture as immersive worldbuilding"
+      ]
+    }
+  ],
+
+  "drivers_of_evolution": [
+    "Technology",
+    "Cultural mood",
+    "Narrative function"
+  ],
+
+  "symbolism_sections": {
+    "identity_encoding": {
+      "summary": "Homes reflect characters.",
+      "examples": [
+        "SpongeBob’s pineapple = optimism",
+        "Dexter’s house = duality"
+      ]
+    },
+    "world_logic_signaling": {
+      "summary": "Architecture shows what rules the universe follows.",
+      "examples": [
+        "Flintstones house = prehistoric satire",
+        "Kame House = solitude"
+      ]
+    },
+    "emotional_atmosphere": {
+      "summary": "Homes set the emotional baseline.",
+      "examples": [
+        "Simpsons house = suburban satire",
+        "Hey Arnold boarding house = community warmth"
+      ]
+    },
+    "narrative_function": {
+      "summary": "Some houses are the plot.",
+      "examples": [
+        "KND treehouse = rebellion & imagination"
+      ]
+    }
+  },
+
+  "headings": [
+    "Cartoon Houses",
+    "Architecture",
+    "Cartoon Home table",
+    "1. Early–Mid 20th Century",
+    "2. 1960s–1970s",
+    "3. 1980s–2000s",
+    "4. 2000s–Present",
+    "🧩 Symbolism Breakdown",
+    "1. Identity Encoding",
+    "2. World Logic Signaling",
+    "3. Emotional Atmosphere",
+    "4. Narrative Function"
+  ]
+}
+```
+
+---
+
+## Future Work
+
+- a **relational schema** for these objects  
+- a **RDG tri‑mode mapping** of houses → SID/PED roles  
+   implement any of the semantic functions listed (e.g., `[parse_house_entry]`, `[identify_symbolism]`, `[summarize_timeline]`).
