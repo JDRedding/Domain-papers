@@ -293,6 +293,3 @@ Rebar moderates survival‑flux via:
 | \(P_u\)      | Ultimate axial load                          |
 
 These are the core equations used in day-to-day RCC design involving rebar under IS 456. Working Stress Method formulas exist but are rarely used now. For ACI 318 or Eurocode 2 the constants and factors differ (e.g., \(\phi\) factors, different stress block parameters).
-
-- Result: high strength + ductility + weldability
-
