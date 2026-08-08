@@ -1,5 +1,5 @@
 ## Domain‑Papers  
-The **domain‑papers** repository is a ten‑domain container that mirrors a decimal system’s top‑level classes. Each folder represents a distinct knowledge territory — a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross‑pollinate. The structure is intentionally broad and durable, giving you a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
+The **domain‑papers** repository is a ten‑domain container that mirrors a decimal system’s top‑level classes. Each folder represents a distinct knowledge territory — a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross‑pollinate. The structure is intentionally broad and durable, giving a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
 
 This repository functions as a **living research library**. Works may remain here indefinitely as standalone artifacts, or they may later be extracted into dedicated repositories as they mature into larger research programs, formal papers, or software projects. The library is designed to support both incubation and expansion without forcing premature consolidation.
 
@@ -81,9 +81,6 @@ This repository is designed to support the full arc of research activity:
 - **Synthesis and integration** — Related works may be merged, reorganized, or reframed as broader theories or systems.  
 - **Extraction and expansion** — Mature works may be split into their own repositories, where they become formal papers, frameworks, or software implementations.  
 - **Archival continuity** — Even after extraction, early versions and developmental notes remain here as part of the historical record of the research process.
-
----
-
 ## Core Principles  
 - **Ongoing evolution** — The repository is never “finished.” It expands organically as new insights emerge, old ideas are revisited, and connections between works become clearer.  
 - **Low‑friction capture** — Early thoughts, fragments, and exploratory sketches are welcome. The library prioritizes capturing ideas quickly rather than polishing them prematurely.  
