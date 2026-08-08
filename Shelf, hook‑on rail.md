@@ -167,18 +167,10 @@ WALL STUDS
 
 BACKER BOARD (anchored to studs)
 ====================================================
-| HOOK PLATE (male)                                |
-| o o o   top holes                                 |
-| o o o   bottom holes                              |
-|   o o   middle holes                              |
 ====================================================
 
 SHELF UNDERSIDE
 ----------------------------------------------------
-| SLOT PLATE (female)                               |
-| o o o   top holes                                 |
-| o o o   bottom holes                              |
-|   o o   middle holes                              |
 ----------------------------------------------------
 
 SHELF DROPS DOWN INTO HOOKS
@@ -198,6 +190,7 @@ ANTI‑LIFT LOCK
 DOWNWARD SHEAR LOAD: OK
 FORWARD TORQUE: minimal
 UPWARD LIFT: prevented by washer lock
+
 ```
 
 ---
