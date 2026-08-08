@@ -1,4 +1,4 @@
-A pink beam of light is best understood as a **heart-centered spiritual symbol**—a convergence of unconditional love, emotional healing, and gentle divine guidance. Descriptions align closely with how multiple spiritual traditions interpret pink light, and the themes highlighted are strongly supported across contemporary spiritual literature.
+A **pink beam of light** is best understood as a *heart-centered spiritual symbol* — a convergence of unconditional love, emotional healing, and gentle divine guidance. Descriptions align closely with how multiple spiritual traditions interpret pink light, and the themes highlighted are strongly supported across contemporary spiritual literature.
 
 ### 🌞 Essence
 A pink beam of light symbolizes:
