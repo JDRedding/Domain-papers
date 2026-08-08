@@ -1,8 +1,6 @@
 This note compares three **TTRPG accuracy models** — *bounded, unbounded, and semi‑bounded* — arguing that the choice of accuracy model is a core design philosophy because it shapes player feeling, progression, randomness vs. skill, and encounter design. It defines each model, explains the math behind it, lists design goals and trade-offs, and shows when a designer would pick each approach. 
 
-**Bounded, unbounded, and semi‑bounded accuracy represent three different philosophies about how randomness, 
-skill, and progression should interact in mainstream TTRPG.** Each approach creates a distinct feel for players—swingy 
-accessibility, crunchy specialization, or predictable expertise.
+**Bounded, unbounded, and semi‑bounded accuracy represent three different philosophies about how randomness, skill, and progression should interact in mainstream TTRPG.** Each approach creates a distinct feel for players — swingy accessibility, crunchy specialization, or predictable expertise.
 
 ## 🧩 Why the math system *is* a design philosophy  
 Academic work on TTRPG systems emphasizes that mechanics, randomness, and resolution models 
