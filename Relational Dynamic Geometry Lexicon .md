@@ -2,8 +2,10 @@
 **Domain‑note block**
 
 **Concise takeaway:**  
-All symbols below form a **Domain Annotation Layer** **Domain Annotation Layer** \( \mathcal{D} \).  
-Each symbol is a **domain‑semantic atom** \( \sigma \) that can annotate any object in RDG without altering its structure.
+All symbols below form a **Domain Annotation Layer** 
+
+#**Domain Annotation Layer** $\mathcal{D}$.  
+Each symbol is a **domain‑semantic atom**$\sigma$ that can annotate any object without altering its structure.
 
 ---
 
