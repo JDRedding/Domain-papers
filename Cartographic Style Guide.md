@@ -15,6 +15,8 @@ Fantasy Maps (Ruins & Relics Edition)
 - Graticule lines every **5°** or **10°** depending on map scale.  
 - Latitude/longitude labels in small caps.
 
+The following relations fully underwrite the projection, graticule, scale-bar, and labeling rules given in the style guide. For a concrete planetary radius or a specific Avenian-mile conversion factor, the same equations are simply re-parameterized with the chosen $R$ and $S$.
+
 #### 1. Equirectangular (Plate Carrée) Projection
 The simplest equal-spaced latitude–longitude grid used for familiarity and easy labeling:
 
@@ -86,6 +88,13 @@ $$
 $$
 
 (haversine form). Ground distance $d = R\Delta\sigma$.
+
+#### 6. Coordinate Labeling
+Latitude/longitude labels in small caps follow the usual sexagesimal or decimal degree conventions; conversion is trivial:
+
+$$
+\varphi_{\text{decimal}} = \varphi^\circ + \frac{\varphi'}{60} + \frac{\varphi''}{3600}.
+$$
 
 ### **Compass Rose**
 - Minimalist: four cardinal points only.  
