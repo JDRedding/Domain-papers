@@ -38,6 +38,109 @@ Bounded accuracy limits how much bonuses can grow. D&D 5e is the canonical examp
 **Why designers choose it:**  
 It keeps the game approachable, reduces math load, and preserves encounter variety.
 
+Bounded accuracy isn’t just “keeping numbers small.” It’s a *probability‑shaping philosophy* that deliberately constrains how characters grow, how challenges scale, and how randomness interacts with skill.
+
+---
+
+## Core idea  
+**Bounded accuracy keeps modifiers within a narrow band so that the die roll remains the dominant variable.**  
+This creates a game where *accessibility, encounter flexibility, and broad participation* matter more than simulationist precision.
+
+---
+
+## 🎯 What bounded accuracy *actually* enforces  
+### 1. **A fixed effective range of competence**  
+In D&D 5e, most characters operate between +0 and +10 on checks. That means:
+
+- A goblin with +4 to hit can still threaten a level 15 fighter.  
+- A level 1 rogue with +5 Stealth can still meaningfully attempt a DC 20 check.  
+- A level 20 wizard with +11 Arcana can still fail a DC 15 check.
+
+This is intentional: bounded accuracy keeps the *effective difficulty space* small so designers don’t need escalating DCs or ACs.
+
+---
+
+### 2. **The die dominates the outcome**  
+A d20 has a flat distribution: every result is equally likely.  
+If your modifier is +7, the die still contributes ~75% of the variance.
+
+This creates the “swinginess” people talk about:
+
+- Experts sometimes fail easy tasks.  
+- Novices sometimes succeed at hard tasks.  
+- Luck feels loud.
+
+Bounded accuracy *embraces* this because it keeps the game dramatic and accessible.
+
+---
+
+### 3. **Specialization is shallow**  
+Because bonuses are capped:
+
+- Ability scores max at +5  
+- Proficiency maxes at +6  
+- Magic items rarely exceed +3  
+- Expertise is one of the few exceptions (+12 max)
+
+This means the difference between a novice (+2) and an expert (+10) is only 8 points—less than half the die’s range.
+
+Bounded accuracy intentionally compresses the skill gap.
+
+---
+
+### 4. **Encounter design becomes flexible**  
+Because numbers don’t inflate:
+
+- Low‑level monsters remain viable at high levels.  
+- Designers can reuse stat blocks without recalibrating.  
+- Mixed‑level parties can share spotlight time.
+
+This is why 5e can throw hordes of goblins at level 10 characters and still create tension.
+
+---
+
+## 🧠 Why designers choose bounded accuracy  
+### Accessibility  
+New players don’t need to track stacking bonuses or escalating DCs.
+
+### Narrative consistency  
+A dragon is always dangerous. A locked door is always a challenge.  
+The world doesn’t “scale” with the party.
+
+### Spotlight sharing  
+Generalists and specialists can meaningfully contribute in the same scenes.
+
+### Lower cognitive load  
+Fewer modifiers → faster adjudication → smoother play.
+
+---
+
+## ⚠️ The hidden costs  
+### 1. **Competence feels inconsistent**  
+Because randomness dominates, long‑term mastery is hard to model.  
+A legendary thief can still botch a simple lockpick.
+
+### 2. **Progression feels flat**  
+Leveling up rarely produces dramatic jumps in capability.
+
+### 3. **Optimization is limited**  
+Players who enjoy deep buildcrafting may feel constrained.
+
+### 4. **Simulation suffers**  
+If want a world where experts almost never fail routine tasks, bounded accuracy fights you.
+
+---
+
+## 🧩 How bounded accuracy fits into TTRPG math philosophy  
+Bounded accuracy is the “accessibility-first” paradigm:
+
+- **Bounded** → keep numbers small  
+- **Flat distribution** → keep randomness loud  
+- **Slow progression** → keep challenges relevant  
+- **Low specialization** → keep parties balanced  
+
+It’s a deliberate choice to prioritize *playability over realism* and *drama over predictability*.
+
 ---
 
 ## 📈 Unbounded Accuracy 
@@ -57,6 +160,135 @@ attack bonuses, AC, skill modifiers, and item bonuses can stack into the +20s or
 
 **Why designers choose it:**  
 It creates a strong sense of growth and mastery—characters become *reliably* competent.
+
+---
+
+## Core idea  
+**Unbounded accuracy allows character bonuses to grow without strict caps, so skill eventually overwhelms randomness.**  
+Systems like Pathfinder, D&D 3.5, and GURPS exemplify this.
+
+---
+
+## 📈 What unbounded accuracy *actually* enforces  
+### 1. **A widening competence gap**  
+As characters level, their bonuses escalate:
+
+- Attack bonuses can reach +25 or more  
+- Skills can exceed +30  
+- AC and DCs scale upward to match  
+- Magic items add stacking modifiers  
+- Feats and class features multiply bonuses
+
+This creates a *divergent progression curve*: novices and experts rapidly separate.
+
+**Result:**  
+High-level characters succeed at routine tasks almost automatically, while low-level characters cannot meaningfully attempt high-level challenges.
+
+This is the opposite of bounded accuracy’s “everyone can try.”
+
+---
+
+### 2. **Skill dominates randomness**  
+In a d20 system, a +25 bonus means:
+
+- Minimum roll = 26  
+- Maximum roll = 45  
+- A DC 30 check is trivial  
+- A DC 40 check is achievable  
+- A DC 15 check is automatic
+
+The die becomes a *fine-tuning noise source*, not the primary determinant.
+
+This is why unbounded systems feel less “swingy” and more simulationist.
+
+---
+
+### 3. **Specialization becomes deep and meaningful**  
+Because bonuses stack, players can build characters who:
+
+- Never fail certain tasks  
+- Routinely exceed DCs by 20+  
+- Outperform generalists by massive margins  
+- Exploit synergies between feats, items, and class features
+
+This supports a **high‑agency, high‑optimization** playstyle.
+
+It also encourages system mastery—players who understand the math can create extremely effective builds.
+
+---
+
+### 4. **Encounter design becomes tightly tuned**  
+Because numbers escalate:
+
+- Monsters must scale with the party  
+- DCs must increase to remain challenging  
+- CR/EL systems become mathematically sensitive  
+- Small miscalculations can break encounters
+
+Designers must carefully calibrate progression curves to avoid runaway difficulty inflation.
+
+---
+
+## 🧠 Why designers choose unbounded accuracy  
+### Simulationist consistency  
+Experts almost never fail routine tasks.  
+Novices cannot perform expert-level tasks.  
+This matches real-world competence curves.
+
+### Rewarding mastery  
+Players who invest in optimization feel powerful and unique.
+
+### Predictability  
+High bonuses produce stable outcomes, reducing randomness.
+
+### Deep buildcrafting  
+The system supports:
+
+- Synergy hunting  
+- Feat chains  
+- Item stacking  
+- Multiclass optimization  
+- Mathematical tuning
+
+This appeals to players who enjoy crunchy, strategic systems.
+
+---
+
+## ⚠️ The hidden costs  
+### 1. **Math-heavy gameplay**  
+Players must track:
+
+- Multiple stacking bonuses  
+- Conditional modifiers  
+- Escalating DCs  
+- Buff/debuff states  
+- Item synergies
+
+This increases cognitive load.
+
+### 2. **Party imbalance**  
+Optimized characters can overshadow casual players.
+
+A min-maxed rogue with +32 Stealth makes the +12 Stealth ranger irrelevant.
+
+### 3. **Encounter brittleness**  
+If a monster’s AC is off by 3 points, the fight becomes trivial or impossible.
+
+### 4. **Accessibility challenges**  
+New players may feel overwhelmed by the math and build complexity.
+
+---
+
+## 🧩 How unbounded accuracy fits into TTRPG math philosophy  
+Unbounded accuracy is the “simulationist mastery” paradigm:
+
+- **Unbounded** → let numbers scale  
+- **Skill-dominant** → reduce randomness  
+- **Deep specialization** → reward system mastery  
+- **Escalating DCs** → maintain challenge  
+- **High differentiation** → experts feel truly expert  
+
+It’s a deliberate choice to prioritize *realistic competence curves, optimization depth, and predictable outcomes* over accessibility or swingy drama.
 
 ---
 
