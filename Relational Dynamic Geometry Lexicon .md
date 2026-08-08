@@ -29,7 +29,7 @@ These do **not** alter SID or PED; they only *label* objects.
 Every symbol becomes a **domain annotation operator**:
 
 $$
-\mathcal{D}_\sigma(X^{object}) = (X, \sigma_{symbol})
+\mathcal{D}_\sigma(X^{object}) = (X^{object}, \sigma_{symbol})
 $$
 
 Where:
