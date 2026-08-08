@@ -233,7 +233,7 @@ While artistic, the recommended weights (0.8–1.0 pt coastlines, 0.6 pt borders
 
 ---
 
-## next steps
+## Future Work
 
 - **A printable PDF-style layout**  
 - **A symbol sheet for  artists**  
