@@ -144,6 +144,22 @@ Discipline targets **individual bodies**, biopolitics targets **population distr
 **Discipline normalizes individuals; biopolitics normalizes populations.**  
 But both are *normalizing* in different registers.
 
+```
+[ Micro Scale: Disciplinary Mechanics ]
+  Individual Nodes x_i
+  Trajectory Update: Δx_i = -k ‖x_i - μ‖
+  Target: Individual Body Alignment
+
+               │
+               │ Scale Transition (Aggregation & Statistics)
+               ▼
+
+[ Macro Scale: Biopolitical Field Mechanics ]
+  Density Distribution P(x, t)
+  Field Evolution: P(x, t+1) = Ψ(P(x, t))
+  Target: Population Parameters (Mean μ, Variance σ², Thresholds)
+```
+
 ### **Discipline (micro-scale):**
 
 $$
