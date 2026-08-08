@@ -1,3 +1,10 @@
+# Foucault's power structures
+- 301 Sociology — social theory
+= 320 Political science
+- 365 Penology & prison administration
+- 306 Culture & institutions 
+- 303 Social processes 
+
 Michel Foucault, the French philosopher and social theorist, reconceptualized power beyond traditional notions of top-down authority. **Foucault’s account of power is one of the most influential (and contested) shifts in 20th-century social theory.** His work emphasizes diffuse, relational, and productive aspects of power, which contrast sharply with classic hierarchical or sovereign models. This note reconceives Foucault’s theory of power as a dynamic, relational field rather than a possession of a sovereign: power emerges from many local relations (modeled as a directed graph $G_t$ with weighted edges $W_t$) and is produced through coupled operators of visibility, normativity, and truth.
 
 Foucault’s power is best understood as an emergent, productive, and distributed set of coupled operations (visibility, normativity, truth) that shape subjects and populations and that can be modeled heuristically with graphs, operators, and statistical descriptions. 
