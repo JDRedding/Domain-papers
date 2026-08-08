@@ -18,12 +18,12 @@ Fantasy Maps (Ruins & Relics Edition)
 #### 1. Equirectangular (Plate Carrée) Projection
 The simplest equal-spaced latitude–longitude grid used for familiarity and easy labeling:
 
-$
+$$
 \begin{align*}
 x &= R\,(\lambda - \lambda_0)\cos\varphi_1 \\
 y &= R\,(\varphi - \varphi_0)
 \end{align*}
-$
+$$
 
 - $\lambda, \varphi$: longitude and latitude (radians)  
 - $\lambda_0, \varphi_0$: central meridian and reference parallel  
