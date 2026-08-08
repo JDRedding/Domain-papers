@@ -1,5 +1,5 @@
-# History of the Hindu–Arabic Numeral System  
-### With Emphasis on Ashoka-Era Brahmi Origins and the Later Development of Positional Notation
+# Hindu–Arabic Numeral System  
+### History With Emphasis on Ashoka-Era Brahmi Origins and the Later Development of Positional Notation
 
 The claim that Ashoka’s 3rd‑century BCE inscriptions already contain the “Hindu‑Arabic numeral system” is only partially correct. What *does* appear in Ashoka’s edicts are the **Brahmi numerals**, the earliest securely dated numeral symbols of the Indian subcontinent and the direct graphic ancestors of our modern digits 1–9. However, the **full positional decimal system**, including the concept and symbol for **zero**, emerged many centuries later.
 
