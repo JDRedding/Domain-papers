@@ -13,6 +13,18 @@ Cartographic style guides provide structured guidance for designing maps in a co
 
 Visual Design Principles: Include color schemes, typographic hierarchy, and layout standards. Effective guides recommend 3–5 primary colors for elements like water, vegetation, urban areas, and transportation networks, using accessible palettes suitable for colorblind users. Fonts are selected for readability and hierarchy, with defined text sizes for major cities, minor cities, and annotations.
 
+- Line‑weight hierarchy is a semantic encoding system.  
+Ensure visual priority is mathematically consistent across all maps.
+
+- Projection formulas allow automated map generation.  
+Feed these directly into a map‑rendering engine.
+
+- Diegetic authenticity rule prevents stylistic drift.  
+This is the single most important rule for long‑term consistency.
+
+- Lore integration rules allow cultural variation without fragmentation.  
+This is how you maintain a unified atlas across multiple factions.
+
 ---
 
 ## 🧭 Geographic Projection & Layout
@@ -209,6 +221,7 @@ While artistic, the recommended weights (0.8–1.0 pt coastlines, 0.6 pt borders
 ---
 
 ## 📚 Lore Integration Rules
+Lore elements (calendars, heraldry, cultural motifs) are allowed but constrained by the core aesthetic. This prevents the map from becoming a collage of inconsistent fantasy tropes.
 
 ### **Calendars & Dates**
 - Always include the world’s calendar system.  
