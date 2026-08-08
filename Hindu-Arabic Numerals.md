@@ -105,4 +105,4 @@ By the 15th–16th centuries, the shapes of the digits had stabilized into the f
 ## In Short
 
 Ashoka’s inscriptions preserve the **ancestral shapes** of the digits we use today.  
-The **revolutionary conceptual system**—place value plus zero—that made those shapes globally transformative emerged roughly a millennium later within the Indian mathematical tradition and then spread westward through Arabic scholarship.
+The **revolutionary conceptual system** — place value plus zero — that made those shapes globally transformative emerged roughly a millennium later within the Indian mathematical tradition and then spread westward through Arabic scholarship.
