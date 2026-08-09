@@ -58,6 +58,52 @@ This principle anticipated later utilitarian developments by thinkers like Jerem
 ### **Aesthetics and the Internal Senses**
 Beyond ethics, Hutcheson contributed significantly to **aesthetics**. He proposed an **internal sense of beauty**, a faculty that perceives harmony, proportion, and “uniformity amidst variety” without conscious reasoning. He linked this aesthetic sense to his moral sense theory, arguing that both beauty and moral goodness are experienced immediately and affectively—rooted in human nature rather than external instruction.
 
+Hutcheson’s treatment of beauty is philosophical rather than strictly mathematical, but he deliberately adopts what he calls “the Mathematical Style” to express his central criterion. Hutcheson never quantifies  $U$ or $V$ with numerical measures, nor does he supply an explicit functional form beyond the product. 
+
+In An Inquiry into the Original of Our Ideas of Beauty and Virtue (1725), Section II, he writes that beauty  
+> “seems to be in a compound Ratio of Uniformity and Variety: so that where the Uniformity of Bodies is equal, the Beauty is as the Variety; and where the Variety is equal, the Beauty is as the Uniformity.”
+
+In modern notation this is expressed as the product (compound ratio):
+
+$$
+B \propto U \times V
+$$
+
+or, equivalently,
+
+$$
+B = k \cdot U \cdot V
+$$
+
+where  
+- $B$ = degree of beauty (the pleasure registered by the internal sense),  
+- $U$ = degree of uniformity,  
+- $V$= degree of variety,  
+- $k$ = some positive constant.
+
+This immediately yields the two proportionalities he states:
+
+Holding uniformity fixed:  
+
+$$
+   B \propto V \quad (U = \text{constant})
+$$
+
+Holding variety fixed:  
+
+$$
+   B \propto U \quad (V = \text{constant})
+$$
+
+Illustrations he gives (still qualitative)
+
+> Regular polygons (equal uniformity, increasing variety):  
+>  equilateral triangle  isosceles > scalene triangle; square > rhombus > irregular quadrilateral, etc.).
+
+#### Beauty of theorems
+
+Hutcheson also applies the same idea to mathematics itself. A general theorem is beautiful precisely because it unites an “amazing variety” (infinitely many particular cases) under a single uniform principle. 
+
 Hutcheson’s core idea: beauty is perceived by an **internal sense** that operates immediately, affectively, and without discursive reasoning. This aligns closely with his broader moral psychology, where **moral goodness** is likewise apprehended through a **moral sense** that produces instantaneous feelings of approval or disapproval. The two faculties mirror each other in structure and function. Hutcheson treats **aesthetic** and **moral** perception as parallel, innate faculties that register *“uniformity amidst variety”* in objects and *benevolent affections* in actions, producing immediate pleasure without the mediation of reasoning.   
 
 ### 🌿 Internal sense of beauty  
