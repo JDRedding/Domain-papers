@@ -204,7 +204,7 @@ $$Po(V,P) = \sum_{k=1}^{4} \beta_k\, Po_k(V,P)$$
 
 Effectively:
 
-- Decomposing $\mathcal{Po}$) into **four subspaces**  
+- Decomposing $\mathcal{Po}$ into **four subspaces**  
 - Adding another **layer of weights** \(\beta_k\) that shape the **local geometry** of policy space.
 
 So the full geometry is:
