@@ -64,7 +64,9 @@ This pattern resembles planetary (or planar) maintenance, not invasion.
 The rapid scientific or magical advances made during the imprisonment period may not be accidental. The Anchors’ materials, fields, or residual energies may have been deliberately comprehensible — a kind of forced uplift. The survivors emerge not only alive but significantly more advanced than before.
 
 ### 7. Future Campaign Work
-- Deeper analysis of the Anchors’ possible purpose  
-- Detailed timeline reconstruction for setting  
-- Scientific/magical interpretation of the energy field  
-- Full worldbuilding expansion (aftermath, factions, lingering artifacts, second wave, etc.)
+Here are natural expansions, each linked for easy continuation:
+
+- Purpose of the Anchors — cosmic custodians, ancient failsafes, forgotten terraforming engines; Deeper analysis of the Anchors’ possible purpose  
+- Full timeline — a structured chronology for campaign bible; Detailed timeline reconstruction for setting  
+- Energy field science/magic — how it works, how it fails, how it can be exploited; Scientific/magical interpretation of the energy field  
+- Worldbuilding expansion — factions, relics, cults, new technologies, geopolitical shifts  (aftermath, lingering artifacts, second wave, etc.) 
