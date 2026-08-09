@@ -205,12 +205,74 @@ AI *can* be used ethically (as with their sponsor), but that’s not the norm.
 
 ---
 
-# 🧭 Conclusion
+# 🧭 
+
 The argument is that the economy is stuck in a loop where:
 - innovation slows  
 - growth must continue  
 - extraction increases  
-- quality collapses  
+- quality collapses
+  
+```
++--------------------------------------------------------------+
+|                        PlatformModel                         |
++--------------------------------------------------------------+
+| - αu : Real                                                  |
+| - αm : Real                                                  |
+| - βu : Real                                                  |
+| - βm : Real                                                  |
+| - ε10 : Real                                                 |
+| - ε30 : Real                                                 |
+| - δu : Real                                                  |
+| - δm : Real                                                  |
+| - ϕu : Real                                                  |
+| - ϕm : Real                                                  |
+| - ε2 : Real                                                  |
+| - ε4 : Real                                                  |
+| - γ  : Real                                                  |
+| - Investment : Real                                          |
++--------------------------------------------------------------+
+| + gu(nm : Real, Q : Real) : Real                             |
+| + gm(nu : Real, Q : Real) : Real                             |
+| + ε1(Q : Real, Pu : Real) : Real                             |
+| + ε3(Q : Real, Pm : Real) : Real                             |
+| + UpdatePlatform(state : PlatformState,                      |
+|                  fees : FeeVector) : PlatformState           |
++--------------------------------------------------------------+
+
+
++---------------------------+
+|       PlatformState       |
++---------------------------+
+| - nu : Real               |
+| - nm : Real               |
+| - Q  : Real               |
++---------------------------+
+| + getNu() : Real          |
+| + getNm() : Real          |
+| + getQ()  : Real          |
++---------------------------+
+
+
++---------------------------+
+|        FeeVector          |
++---------------------------+
+| - Pu : Real               |
+| - Pm : Real               |
++---------------------------+
+| + getPu() : Real          |
+| + getPm() : Real          |
++---------------------------+
+
+
+Relationships:
+-------------
+PlatformModel "uses" PlatformState
+PlatformModel "uses" FeeVector
+
+PlatformModel.UpdatePlatform(...) 
+    → returns a new PlatformState
+```
 
 And that individuals can resist by:
 - buying repairable goods  
