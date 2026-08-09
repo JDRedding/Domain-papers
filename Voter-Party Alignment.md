@@ -33,7 +33,7 @@ The model uses **relational geometry**—voters and parties are points in a comb
 - $g_V$ — the voter metric tensor
 - $V(t), P(t)$ — the dynamic trajectories
 
-Geometric objects
+#### Geometric objects
 
 The model decomposes voter-party alignment into three independent dimensions:
 
