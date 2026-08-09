@@ -89,7 +89,7 @@ Although less widely remembered today, his ideas continue to inform contemporary
 
 ```
 +----------------------+
-| FrancisHutcheson     
+| FrancisHutcheson     |
 +----------------------+
 | nationality: Scots-Irish 
 | role: Professor of Moral Philosophy 
@@ -103,7 +103,7 @@ Although less widely remembered today, his ideas continue to inform contemporary
           | 1..*
           v
 +----------------------+
-| MoralSenseKernel     
+| MoralSenseKernel     |
 +----------------------+
 | doctrine: innate moral sense 
 | principle: greatest happiness 
