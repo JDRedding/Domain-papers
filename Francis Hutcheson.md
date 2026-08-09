@@ -58,6 +58,25 @@ This principle anticipated later utilitarian developments by thinkers like Jerem
 ### **Aesthetics and the Internal Senses**
 Beyond ethics, Hutcheson contributed significantly to **aesthetics**. He proposed an **internal sense of beauty**, a faculty that perceives harmony, proportion, and “uniformity amidst variety” without conscious reasoning. He linked this aesthetic sense to his moral sense theory, arguing that both beauty and moral goodness are experienced immediately and affectively—rooted in human nature rather than external instruction.
 
+Hutcheson’s core idea is exactly what you’ve summarized: beauty is perceived by an **internal sense** that operates immediately, affectively, and without discursive reasoning. This aligns closely with his broader moral psychology, where **moral goodness** is likewise apprehended through a **moral sense** that produces instantaneous feelings of approval or disapproval. The two faculties mirror each other in structure and function. Hutcheson treats **aesthetic** and **moral** perception as parallel, innate faculties that register *“uniformity amidst variety”* in objects and *benevolent affections* in actions, producing immediate pleasure without the mediation of reasoning.   
+
+### 🌿 Internal sense of beauty  
+- **Internal sense** — a non‑inferential mental faculty that perceives beauty beyond the five external senses. It processes the raw data of sight and hearing into an *aesthetic response*.   
+- **Uniformity amidst variety** — Hutcheson’s most famous criterion for beauty. Beautiful objects exhibit harmonious order: enough regularity to be intelligible, enough variety to be interesting. 
+- **Absolute vs. relative beauty** — absolute beauty arises from the internal structure of a single object; relative beauty arises from resemblance or imitation (e.g., art representing nature).    
+- **Immediate pleasure** — the internal sense produces pleasure directly, not through reasoning or utility. Beauty is “the idea raised in us” by harmonious forms. 
+
+### ⚖️ Connection to the moral sense  
+- **Moral sense** — a parallel faculty that perceives moral qualities such as benevolence. It produces feelings of approbation or disapprobation.
+  
+- **Shared structure** — both senses:
+  - operate passively (the mind is *affected* by qualities in objects or actions)  
+  - produce immediate pleasure or pain  
+  - reveal qualities that are not reducible to external sensation  
+- **Human nature as foundation** — Hutcheson argues against Hobbesian egoism: humans possess innate benevolence and innate sensitivity to beauty. These faculties are part of our natural constitution, not learned conventions.  
+
+Hutcheson’s integration of aesthetics and ethics helped shift Enlightenment thought toward **sentimentalism**: the idea that feeling, not reason alone, grounds our judgments of beauty and virtue. His work influenced **Adam Smith**, **Hume**, and later utilitarian thinkers.
+
 ---
 
 ### **Political Philosophy and Influence**
