@@ -24,15 +24,15 @@ Geometric objects
 
 - **Voter:**
   
-  \[
+$$
   V = ( \mathbf{i}_V,\ \mathbf{v}_V,\ \mathbf{t}_V )
-  \]
+$$
   
 - **Party:**
   
-  \[
+$$
   P = ( \mathbf{i}_P,\ \mathbf{p}_P,\ \mathbf{t}_P )
-  \]
+$$
 
 Each component is itself a vector in a subspace:
 
