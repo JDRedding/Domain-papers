@@ -1,15 +1,11 @@
-# 📚 BOOKMARKS (Collapsible Table Format)
-
+# 📚 BOOKMARKS
 ---
 
-<details>
-<summary><strong>Symbaloo</strong></summary>
+<strong>Main</strong>
 
 | Site | URL |
 |------|-----|
 | Symbaloo | [https://www.symbaloo.com](https://www.symbaloo.com) |
-
-</details>
 
 ---
 
