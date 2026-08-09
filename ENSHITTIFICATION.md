@@ -274,7 +274,7 @@ PlatformModel.UpdatePlatform(...)
     → returns a new PlatformState
 ```
 
-And that individuals can resist by:
+Individuals can resist by:
 - buying repairable goods  
 - avoiding subscriptions  
 - supporting durable products  
