@@ -163,6 +163,26 @@ Have:
 - **Changing relational distances** and alignments over time  
 - Possible **critical points** where $P^*(t)$ (preferred party) flips as trajectories cross relational thresholds.
 
+## “Hybrid” views
+
+Relational geometry view of “hybrid” voters
+
+Define the **alignment difference**:
+
+$$\Delta(V) = |A(V,D) - A(V,R)|$$
+
+Geometrically:
+
+- Small $\Delta(V)$ means $V$ lies near the **relational bisector** between $D$ and $R$ under their personal metric $g_V$.
+- The “hybrid zone” is a **region** in $\mathcal{A}$ where many voters have low $\Delta$.
+
+You can imagine:
+
+- A **manifold of voters** embedded in $\mathcal{A}$  
+- Two **moving party points**  
+- A **relational field** $A(V,P)$ defined over all voter–party pairs  
+- Regions where the field is nearly equal for both parties—your hybrid band.
+- 
 ---
 
 ## **Optional Four‑Domain Policy Expansion**  
