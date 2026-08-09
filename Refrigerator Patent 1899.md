@@ -4,6 +4,8 @@
 
 On August 8, 1899, American inventor Albert T. Marshall was granted U.S. Patent No. 630,617 for his “Automatic expansion-valve for refrigerating apparatus”. This marked the first patent for a refrigerator in the United States and represented a major leap in refrigeration technology.
 
+> ... invention relates to a regulator for antomatically controlling the flow of the refrigerating medium in the pipes of a refrigerating apparatus; and the object of my invention is to provide. a strong, simple, inexpensive, and durable regulator for automatically controlling the flow of the refrigerating medium, so as to produce the greatest possible efficiency of the apparatus in connection with which the same is employed.
+
 # What the Patent Covered
 Marshall’s design introduced an automatic expansion valve that regulated the admission of the refrigerating medium (anhydrous ammonia) to the expansion pipes or chambers. The system combined a thermostat and rheostat to automatically control the pump motor, allowing the refrigerator to cycle on and off based on internal temperature. It also included an automatic motor cut-off in case of emergencies and a means to regulate the water used for cooling the refrigerant
 
