@@ -91,7 +91,7 @@ Enshittification (also called product decay) is the process where a thing slowly
                                          │
                                          ▼
                      ┌────────────────────────────────────────┐
-                     │ FINAL QUESTION: WAS IT WORTH IT?       │
+                     │ FINAL QUESTION: IS IT WORTH IT?        │
                      │ → Yes, because it represents autonomy, │
                      │   durability, and resistance.          │
                      └────────────────────────────────────────┘
