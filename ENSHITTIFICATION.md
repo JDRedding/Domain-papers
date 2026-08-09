@@ -159,9 +159,9 @@ So companies turn to:
 # 🛠️ The Experiment: Restoring Old Technology
 To demonstrate the contrast, buy and restore **older, high‑quality technology** as a physical example 
 
-what engineering looked like before shareholder primacy dominated product design
+What engineering looked like before shareholder primacy dominated product design
 
-The restoration becomes a metaphor:
+Restoration becomes a metaphor:
 - Old tech = built to last  
 - New tech = built to extract  
 
