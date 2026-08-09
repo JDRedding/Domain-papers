@@ -182,7 +182,7 @@ Geometrically:
   
 ---
 
-## **Optional Four‑Domain Policy Expansion**  
+## **Four‑Domain Policy Expansion**  
 If policy is decomposed into governance, economic, social/cultural, and foreign‑policy domains:
 
 $$
