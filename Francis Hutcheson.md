@@ -110,15 +110,6 @@ The result is a clean mapping: Hutcheson’s moral sense becomes the *human cogn
 
 ---
 
-##### 🧭 Why this matters for your system  
-Hutcheson gives you a **historical anchor** for the kernel concept:
-
-- He believed moral evaluation is **immediate** → kernel operators are primitive.  
-- He believed benevolence is **primary** → kernel’s δ(e) and λ(e) encode this.  
-- He believed happiness is **maximized** → kernel’s closure operator C(e).  
-
----
-
 ### **Aesthetics and the Internal Senses**
 Beyond ethics, Hutcheson contributed significantly to **aesthetics**. He proposed an **internal sense of beauty**, a faculty that perceives harmony, proportion, and “uniformity amidst variety” without conscious reasoning. He linked this aesthetic sense to his moral sense theory, arguing that both beauty and moral goodness are experienced immediately and affectively—rooted in human nature rather than external instruction.
 
