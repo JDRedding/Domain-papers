@@ -7,9 +7,27 @@ This formalization captures the structural idea:
 - Voters are typically **hybrid**, not purely aligned.  
 - A two‑party system compresses a multi‑dimensional value space into a binary choice.
 
+This note presents a **three-axis political alignment model** that formalizes how voters align with political parties.
+
+- **Composite Score**: Overall alignment is a weighted combination of all three axes: $A(V,P) = w_I \cdot I(V,P) + w_{Po} \cdot Po(V,P) + w_T \cdot T(V,P)$
+- **Hybrid Voters**: Voters near the "relational bisector" between parties have low alignment difference ($\Delta$), capturing voters who aren't strongly tied to either party
+- **Dynamic Model**: Both voters and parties have trajectories over time, allowing alignment to shift as positions evolve
+- **Multi-Domain Policy**: Policy can be further decomposed into four domains (governance, economic, social/cultural, foreign), each with its own weight
+
+### Geometric Perspective
+
+The model uses **relational geometry**—voters and parties are points in a combined alignment space $\mathcal{A} = \mathcal{I} \times \mathcal{Po} \times \mathcal{T}$, and alignment is defined by maps between pairs of points rather than individual coordinates. This captures the intuition that a two-party system compresses a multi-dimensional value space into a binary choice.
+
 ---
 
 ### **Core Notation**
+
+The model decomposes voter-party alignment into three independent dimensions:
+
+1. **Identity Alignment** — Cultural, demographic, and symbolic similarity (measured via cosine similarity of identity vectors)
+2. **Policy Alignment** — Agreement on substantive issues (measured as distance in an n-dimensional policy space)
+3. **Moral-Tone Alignment** — Agreement on style and values like respect, optimism, pragmatism (measured via similarity of tone vectors)
+   
 - $V$ — the voter  
 - $D, R$ — the two major U.S. political parties  
 - $I(V,P)$ — identity alignment between voter $V$ and party $P$  
