@@ -192,3 +192,24 @@ $$
 
 Each $Po_k$ is computed using the same distance or issue‑agreement method as above.
 
+#### Four‑domain expansion as a layered geometry
+
+When split policy into four domains (governance, economic, social/cultural, foreign):
+
+$$\mathbf{p}_P = (\mathbf{p}_{P}^{(g)},\mathbf{p}_{P}^{(e)},\mathbf{p}_{P}^{(s)},\mathbf{p}_{P}^{(f)})$$
+
+and:
+
+$$Po(V,P) = \sum_{k=1}^{4} \beta_k\, Po_k(V,P)$$
+
+Effectively:
+
+- Decomposing $\mathcal{Po}$) into **four subspaces**  
+- Adding another **layer of weights** \(\beta_k\) that shape the **local geometry** of policy space.
+
+So the full geometry is:
+
+- **Multi‑layered** (identity, policy domains, tone)  
+- **Relational** (defined by maps between points, not just coordinates)  
+- **Dynamic** (trajectories over time)  
+- **Observer‑dependent** (each voter carries their own metric).
