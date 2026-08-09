@@ -21,13 +21,6 @@ The model uses **relational geometry**—voters and parties are points in a comb
 ---
 
 ### **Core Notation**
-
-The model decomposes voter-party alignment into three independent dimensions:
-
-1. **Identity Alignment** — Cultural, demographic, and symbolic similarity (measured via cosine similarity of identity vectors)
-2. **Policy Alignment** — Agreement on substantive issues (measured as distance in an n-dimensional policy space)
-3. **Moral-Tone Alignment** — Agreement on style and values like respect, optimism, pragmatism (measured via similarity of tone vectors)
-   
 - $V$ — the voter  
 - $D, R$ — the two major U.S. political parties  
 - $I(V,P)$ — identity alignment between voter $V$ and party $P$  
@@ -37,6 +30,12 @@ The model decomposes voter-party alignment into three independent dimensions:
 - $A(V,P)$ — overall alignment score
 
 Geometric objects
+
+The model decomposes voter-party alignment into three independent dimensions:
+
+1. **Identity Alignment** — Cultural, demographic, and symbolic similarity (measured via cosine similarity of identity vectors)
+2. **Policy Alignment** — Agreement on substantive issues (measured as distance in an n-dimensional policy space)
+3. **Moral-Tone Alignment** — Agreement on style and values like respect, optimism, pragmatism (measured via similarity of tone vectors)
 
 **Voters and parties as points in a relational space**
 
