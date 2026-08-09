@@ -4,9 +4,9 @@
 **Everything feels worse now** — products, services, software, appliances, cars — and that this decline is not due to technological regression or incompetent engineers. Instead, it’s the result of **economic incentives that reward extraction over quality**.
 
 The term combines "shit" with the suffix "-ification," humorously emphasizing degradation. It is commonly used in technology and social media criticism, describing how once-popular platforms become less enjoyable or functional over time. Examples include:
-- Social media networks increasing intrusive advertisements.
-- Online marketplaces introducing stricter seller fees or algorithmic biases affecting visibility.
-- Streaming services prioritizing content that maximizes profit over artistic quality.
+- Media networks increasing intrusive advertisements.
+- Marketplaces introducing stricter seller fees or algorithmic biases affecting visibility.
+- Services prioritizing content that maximizes profit over artistic quality.
   
 The concept conveys the idea that systems naturally degrade when business models favor monetization or growth over user satisfaction, often leading to user frustration and eventual platform decline.
 
@@ -17,6 +17,91 @@ Enshittification (also called product decay) is the process where a thing slowly
 ## Context and Origin
 
 "Enshittification" gained attention through tech commentary and online essays, particularly in discussions by writers like Cory Doctorow and Ben Thompson, who analyze platform economics and digital society. Ben Thompson, for instance, articulates platform lifecycle theory, explaining that platforms inevitably cycle through stages of initial user focus, monetization, and eventual quality degradation, which the term "enshittification" humorously captures.
+
+## **Concept Map: Enshittification**
+
+```
+                     ┌────────────────────────────────────────┐
+                     │      ROOT CAUSE: ECONOMIC INCENTIVES   │
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
+         ┌────────────────────────────────────────────────────────────────┐
+         │ SHAREHOLDER PRIMACY → Short-term profit > quality, longevity   │
+         │ Planned obsolescence → “Designed to fail”                      │
+         │ Subscription creep → Rentership replaces ownership             │
+         │ Market consolidation → No alternatives → captive consumers     │
+         └────────────────────────────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │         ENSHITTIFICATION               │
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │ TECHNOLOGY AS EXTRACTION               │
+                     │ Innovation slowed, but growth must     │
+                     │ continue → extraction replaces progress│
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
+         ┌────────────────────────────────────────────────────────────────┐
+         │ ROLE OF AI                                                     │
+         │ - Used to cut labor costs                                      │
+         │ - Used to automate support, reduce staff                       │
+         │ - Rarely used to improve product quality                       │
+         │ - Ethical AI is possible (sponsor example)                     │
+         └────────────────────────────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │  PERSONAL RESPONSE: BUYING THE 190E    │
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │ RESTORATION JOURNEY                    │
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │   META-POINT: FAILURE IS OK            │
+                     │   Mechanical failure = fixable         │
+                     │   Digital failure = locked, permanent  │
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
+         ┌────────────────────────────────────────────────────────────────┐
+         │ ECONOMIC ENDGAME                                               │
+         │ - More subscriptions                                           │
+         │ - Less ownership                                               │
+         │ - Lower quality                                                │
+         │ - Higher prices                                                │
+         │ - Fewer choices                                                │
+         └────────────────────────────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │ WHAT CAN WE DO?                        │
+                     └────────────────────────────────────────┘
+         ┌────────────────────────────────────────────────────────────────┐
+         │ PRACTICAL RESISTANCE                                           │
+         │ - Buy repairable goods                                         │
+         │ - Avoid subscriptions                                          │
+         │ - Support durable products                                     │
+         │ - Learn basic repairs                                          │
+         │ - Choose companies that build things to last                   │
+         └────────────────────────────────────────────────────────────────┘
+                                         │
+                                         ▼
+                     ┌────────────────────────────────────────┐
+                     │ FINAL QUESTION: WAS IT WORTH IT?       │
+                     │ → Yes, because it represents autonomy, │
+                     │   durability, and resistance.          │
+                     └────────────────────────────────────────┘
+
+```
 
 ## Implications
 
@@ -34,6 +119,14 @@ In essence, "enshittification" is a critical lens, highlighting the tension betw
 
 # 🧩 Why Things Feel Worse
 The decline in quality as a **systemic economic failure**, not a technological one.
+
+         ┌────────────────────────────────────────────────────────────────┐
+         │ DIGITAL EXAMPLES                                               │
+         └────────────────────────────────────────────────────────────────┘
+
+         ┌────────────────────────────────────────────────────────────────┐
+         │ PHYSICAL EXAMPLES                                              │
+         └────────────────────────────────────────────────────────────────┘
 
 ### **1. Technology is advancing — but products aren’t**
 That emphasizes that engineers are smarter and more capable than ever. Yet products feel cheaper, flimsier, and more disposable.
