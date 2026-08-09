@@ -1,5 +1,9 @@
+**"*Enshittification*"** is a slang term used to describe the process by which a platform, service, or system gradually deteriorates in quality due to prioritization of profit, growth, or corporate interests over user experience.
+
 # 🧭 Core
 **Everything feels worse now** — products, services, software, appliances, cars — and that this decline is not due to technological regression or incompetent engineers. Instead, it’s the result of **economic incentives that reward extraction over quality**.
+
+Enshittification (also called product decay) is the process where a thing slowly gets worse over time — first by providing a good for users, then by degrading it to benefit business customers, and finally by worsening it for both users and businesses to boost short-term profits. The term was popularized by Canadian writer Cory Doctorow starting in 2022.
 
 ---
 
