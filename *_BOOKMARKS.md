@@ -183,6 +183,7 @@
 | Space Time | [https://space.pointdynamics.com/app/](https://space.pointdynamics.com/app/) |
 | Cosmolapse | [https://cosmolapse.com/](https://cosmolapse.com/) |
 | Galaxy Sandbox | [https://galaxysandbox.app/](https://galaxysandbox.app/) |
+| Sol Map | [https://universe.matteobeu.com/](https://universe.matteobeu.com/) |
 
 ### 540 Chemistry  
 | Site | URL |
