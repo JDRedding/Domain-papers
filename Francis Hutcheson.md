@@ -98,13 +98,58 @@ $$
 Illustrations he gives (still qualitative)
 
 > Regular polygons (equal uniformity, increasing variety):  
->  equilateral triangle  isosceles > scalene triangle; square > rhombus > irregular quadrilateral, etc.).
+> equilateral triangle  isosceles > scalene triangle; square > rhombus > irregular quadrilateral, etc.).
 
 #### Beauty of theorems
 
 Hutcheson also applies the same idea to mathematics itself. A general theorem is beautiful precisely because it unites an “amazing variety” (infinitely many particular cases) under a single uniform principle. 
 
-Hutcheson’s core idea: beauty is perceived by an **internal sense** that operates immediately, affectively, and without discursive reasoning. This aligns closely with his broader moral psychology, where **moral goodness** is likewise apprehended through a **moral sense** that produces instantaneous feelings of approval or disapproval. The two faculties mirror each other in structure and function. Hutcheson treats **aesthetic** and **moral** perception as parallel, innate faculties that register *“uniformity amidst variety”* in objects and *benevolent affections* in actions, producing immediate pleasure without the mediation of reasoning.   
+##### 🧩 Conversion of Hutcheson’s Beauty Formula  
+
+Uniformity is structural regularity: symmetry, repetition, predictable pattern.  
+
+```
+U  ≡  S_mode   (SID.Structure)
+```
+Variety is multiplicity, differentiation, richness of relational distinctions.  
+
+```
+V  ≡  I_mode   (SID.Interaction)
+```
+Beauty is the internal‑sense valuation signal — exactly PED’s evaluative channel:
+
+```
+B  ≡  E_mode   (PED.Evaluation)
+```
+The product $U \times V$ becomes a **bipolar coupling operator**:
+
+```
+E_mode  =  k · Coupling(S_mode , I_mode)
+E = k * ( S ⊗ I )
+```
+
+Where `⊗` is the cross‑mode relational product.
+
+**Hutcheson’s core idea**: beauty is perceived by an **internal sense** that operates immediately, affectively, and without discursive reasoning. This aligns closely with his broader moral psychology, where **moral goodness** is likewise apprehended through a **moral sense** that produces instantaneous feelings of approval or disapproval. The two faculties mirror each other in structure and function. Hutcheson treats **aesthetic** and **moral** perception as parallel, innate faculties that register *“uniformity amidst variety”* in objects and *benevolent affections* in actions, producing immediate pleasure without the mediation of reasoning.   
+
+Putting it all together:
+
+```
+PED.Evaluation  =  k * ( SID.Structure ⊗ SID.Interaction )
+E  =  k * ( S ⊗ I )
+```
+
+##### **1. Structural Regularity (S)**  
+Uniformity contributes stability, coherence, and compressibility.
+
+##### **2. Interactional Richness (I)**  
+Variety contributes differentiation, relational spread, and informational expansion.
+
+##### **3. Evaluative Output (E)**  
+Beauty is the **felt value** of the S–I coupling.
+
+##### **4. Bipolarity**  
+If either S or I collapses to zero, the coupling collapses — matching Hutcheson’s claim that pure monotony or pure chaos is not beautiful.
 
 ### 🌿 Internal sense of beauty  
 - **Internal sense** — a non‑inferential mental faculty that perceives beauty beyond the five external senses. It processes the raw data of sight and hearing into an *aesthetic response*.   
