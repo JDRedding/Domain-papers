@@ -68,7 +68,7 @@ Points:
 
 - **Identity relation:**  
 
-  $$I(V,P) = \operatorname{sim}(\mathbf{i}_V,\mathbf{i}_P)$$
+  $$I(V,P) = \{sim}(\mathbf{i}_V,\mathbf{i}_P)$$
   
 - **Policy relation:**
 
@@ -76,7 +76,7 @@ Points:
   
 - **Tone relation:**
   
-  $$T(V,P) = \operatorname{sim}(\mathbf{t}_V,\mathbf{t}_P)$$
+  $$T(V,P) = \{sim}(\mathbf{t}_V,\mathbf{t}_P)$$
   
 ---
 
