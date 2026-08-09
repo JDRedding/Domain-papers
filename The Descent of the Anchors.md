@@ -5,6 +5,14 @@ A single coherent narrative arc for any campaign: **Arrival → Stasis → Activ
 ### Core Takeaway
 The Anchors (or Pillars, Monoliths, Spires, whatever you name them) behave less like invaders and more like planetary-scale infrastructure executing a predetermined, non-human protocol: arrival, calibration, containment, shielding, and withdrawal. Their “imprisonment” of the local population appears incidental to a larger operation.
 
+| Phase | Function | Evidence |
+| --- | --- | --- |
+| **Arrival** | Deploy infrastructure | Perfect grid, uniform scale |
+| **Dormancy** | Calibration / waiting | Extended silence |
+| **Activation** | Establish containment | Barrier, animal reaction |
+| **Shielding** | Protect world | Catastrophe deflected |
+| **Departure** | Mission complete | Immediate withdrawal |
+
 ### 1. The Arrival Phase
 - Global (or regional) descent — hundreds or thousands of immense structures fall in a controlled, uniform pattern and embed themselves like anchors.
 - Widespread confusion — religious awe, political panic, scientific paralysis. No movement, no communication from the objects.
