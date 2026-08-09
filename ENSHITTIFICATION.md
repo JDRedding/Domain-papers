@@ -22,11 +22,11 @@ Enshittification (also called product decay) is the process where a thing slowly
 
 Understanding enshittification is valuable for:
 
-^^Consumers^^: Recognizing changes in policies or strategies that may affect user experience.
+**Consumers**: Recognizing changes in policies or strategies that may affect user experience.
 
-^^Developers^^: Balancing growth and monetization with maintaining quality to retain users.
+**Developers**: Balancing growth and monetization with maintaining quality to retain users.
 
-^^Analysts^^: Evaluating companies’ long-term sustainability beyond short-term profit metrics.
+**Analysts**: Evaluating companies’ long-term sustainability beyond short-term profit metrics.
 
 In essence, "enshittification" is a critical lens, highlighting the tension between profitability and quality, and warning users and creators about inevitable compromises if revenue incentives dominate.
 
