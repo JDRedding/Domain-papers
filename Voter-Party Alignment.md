@@ -15,8 +15,8 @@ This note presents a **three-axis political alignment model** that formalizes ho
 - **Multi-Domain Policy**: Policy can be further decomposed into four domains (governance, economic, social/cultural, foreign), each with its own weight
 
 ### Geometric Perspective
-
-The model uses **relational geometry**—voters and parties are points in a combined alignment space $\mathcal{A} = \mathcal{I} \times \mathcal{Po} \times \mathcal{T}$, and alignment is defined by maps between pairs of points rather than individual coordinates. This captures the intuition that a two-party system compresses a multi-dimensional value space into a binary choice.
+ 
+The model uses **relational geometry** — voters and parties are points in a combined alignment space $\mathcal{A} = \mathcal{I} \times \mathcal{Po} \times \mathcal{T}$, and alignment is defined by maps between pairs of points rather than individual coordinates. This captures the intuition that a two-party system compresses a multi-dimensional value space into a binary choice.
 
 ---
 
