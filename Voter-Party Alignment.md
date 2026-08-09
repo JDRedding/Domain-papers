@@ -120,6 +120,12 @@ $$
 
 with $A(V,P) \in [0,1]$.
 
+These are **relational maps**:
+
+$$I,\ Po,\ T : \mathcal{A} \times \mathcal{A} \to [0,1]$$
+
+They don’t live *inside* the space — they **act on pairs of points** in the space.
+
 ---
 
 ## **Decision Rule**
