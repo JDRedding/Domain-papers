@@ -205,7 +205,7 @@ AI *can* be used ethically (as with their sponsor), but that’s not the norm.
 
 ---
 
-# 🧭 UML Class Diagram
+# 🧭 UML Diagrams
 
 The diagram is that the economy is stuck in a loop where:
 - innovation slows  
