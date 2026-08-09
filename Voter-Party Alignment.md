@@ -22,11 +22,14 @@ Geometric objects
 
 **Voters and parties as points in a relational space**
 
-- **Voter:**  
+- **Voter:**
+  
   \[
   V = ( \mathbf{i}_V,\ \mathbf{v}_V,\ \mathbf{t}_V )
   \]
-- **Party:**  
+  
+- **Party:**
+  
   \[
   P = ( \mathbf{i}_P,\ \mathbf{p}_P,\ \mathbf{t}_P )
   \]
