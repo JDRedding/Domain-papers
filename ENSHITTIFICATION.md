@@ -56,16 +56,6 @@ Enshittification (also called product decay) is the process where a thing slowly
                                          │
                                          ▼
                      ┌────────────────────────────────────────┐
-                     │  PERSONAL RESPONSE: BUYING THE 190E    │
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
-                     │ RESTORATION JOURNEY                    │
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
                      │   META-POINT: FAILURE IS OK            │
                      │   Mechanical failure = fixable         │
                      │   Digital failure = locked, permanent  │
@@ -85,6 +75,11 @@ Enshittification (also called product decay) is the process where a thing slowly
                      ┌────────────────────────────────────────┐
                      │ WHAT CAN WE DO?                        │
                      └────────────────────────────────────────┘
+                     ┌────────────────────────────────────────┐
+                     │ RESTORATION                            │
+                     └────────────────────────────────────────┘
+                                         │
+                                         ▼
          ┌────────────────────────────────────────────────────────────────┐
          │ PRACTICAL RESISTANCE                                           │
          │ - Buy repairable goods                                         │
