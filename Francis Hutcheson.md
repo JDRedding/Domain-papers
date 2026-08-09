@@ -27,9 +27,6 @@ In 1729, Hutcheson became **Professor of Moral Philosophy** at the University of
 
 Hutcheson died on August 8, 1746, in Dublin while visiting Ireland.
 
-
-Excellent — the infographic you uploaded is structured almost like a **conceptual system architecture**, which makes it perfect for UML modeling. Let’s extract its logical components and express them as UML diagrams.
-
 ---
 
 ## 🧠 **Interpretation**
