@@ -142,6 +142,20 @@ So companies turn to:
 
 ---
 
+### Notation
+
+| Symbol | Meaning |
+|--------|---------|
+| $n_u(t)$ | Mass (or number) of end users at time \( t \) |
+| $n_m(t)$| Mass of merchants / advertisers / content providers at time \( t \) |
+| $g_u(n_m)$| Cross-side affinity / attractiveness of the merchant side for users |
+| $g_m(n_u)$ | Cross-side affinity of the user side for merchants |
+| $\varepsilon_1, \varepsilon_3$ | Baseline attrition (churn) rates of users and merchants |
+| $\varepsilon_2, \varepsilon_4$ | Growth / conversion intensities |
+| $P_u(t), P_m(t)$ | Effective prices / fees / extraction rates charged to users and merchants |
+| $Q(t)$| Platform quality (service quality, friction inverse, ad load inverse, etc.) |
+| $\pi$ | Platform profit |
+
 # 🛠️ The Experiment: Restoring Old Technology
 To demonstrate the contrast, buy and restore **older, high‑quality technology** as a physical example 
 
