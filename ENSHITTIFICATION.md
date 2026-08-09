@@ -1,286 +1,172 @@
-**"*Enshittification*"** is a slang term used to describe the process by which a platform, service, or system gradually deteriorates in quality due to prioritization of profit, growth, or corporate interests over user experience.
+# **Enshittification: A Overview**
 
-# 🧭 Core
-**Everything feels worse now** — products, services, software, appliances, cars — and that this decline is not due to technological regression or incompetent engineers. Instead, it’s the result of **economic incentives that reward extraction over quality**.
+**Enshittification** is an informal term describing the progressive degradation of a platform, product, or service as corporate incentives shift from delivering value to extracting profit. Although humorous in origin, the concept captures a serious and increasingly visible pattern across digital platforms, consumer goods, and modern business models.
 
-The term combines "shit" with the suffix "-ification," humorously emphasizing degradation. It is commonly used in technology and social media criticism, describing how once-popular platforms become less enjoyable or functional over time. Examples include:
-- Media networks increasing intrusive advertisements.
-- Marketplaces introducing stricter seller fees or algorithmic biases affecting visibility.
-- Services prioritizing content that maximizes profit over artistic quality.
-  
-The concept conveys the idea that systems naturally degrade when business models favor monetization or growth over user satisfaction, often leading to user frustration and eventual platform decline.
-
-Enshittification (also called product decay) is the process where a thing slowly gets worse over time — first by providing a good for users, then by degrading it to benefit business customers, and finally by worsening it for both users and businesses to boost short-term profits. The term was popularized by Canadian writer Cory Doctorow starting in 2022.
+At its core, enshittification reflects a structural economic dynamic: **products and services worsen not because technology regresses or engineers become less capable, but because economic incentives increasingly reward extraction over quality.** As firms mature, consolidate market power, and face pressure for continuous growth, user experience becomes subordinate to monetization.
 
 ---
 
-## Context and Origin
+## **Definition and Origins**
 
-"Enshittification" gained attention through tech commentary and online essays, particularly in discussions by writers like Cory Doctorow and Ben Thompson, who analyze platform economics and digital society. Ben Thompson, for instance, articulates platform lifecycle theory, explaining that platforms inevitably cycle through stages of initial user focus, monetization, and eventual quality degradation, which the term "enshittification" humorously captures.
+The term blends “shit” with the suffix “‑ification,” emphasizing the gradual transformation of once‑useful systems into frustrating, low‑quality experiences. Canadian writer **Cory Doctorow** popularized the term beginning in 2022, using it to describe the lifecycle of digital platforms that initially delight users, then pivot toward advertiser or merchant interests, and ultimately degrade service for all participants in pursuit of short‑term profit.
+
+Technology analysts such as **Ben Thompson** have articulated similar lifecycle theories: platforms begin by prioritizing users, shift toward monetization once scale is achieved, and eventually decline as incentives favor revenue extraction over long‑term value creation.
+
+---
+
+## **Why Enshittification Happens**
+
+### **Economic Incentives**
+The root cause lies in structural economic pressures:
+
+- **Shareholder primacy** prioritizes quarterly returns over durability or user satisfaction.  
+- **Planned obsolescence** encourages products designed to fail on predictable schedules.  
+- **Subscription creep** replaces ownership with perpetual rent‑seeking.  
+- **Market consolidation** reduces consumer choice, enabling firms to degrade quality without losing customers.
+
+These forces create an environment where degradation is not accidental—it is economically rational.
+
+---
+
+## **Technology as a Vehicle for Extraction**
+
+Although technological capability continues to advance, innovation increasingly serves monetization rather than product improvement. When genuine breakthroughs slow, firms turn to:
+
+- subscription models  
+- lock‑in ecosystems  
+- aggressive data extraction  
+- cost‑cutting in materials and manufacturing  
+- reduced repairability  
+- friction‑based revenue strategies  
+
+The result is a paradox: **technology improves, but products worsen.**
+
+---
+
+## **Role of Artificial Intelligence**
+
+Artificial intelligence exemplifies this dynamic. While AI has the potential to enhance products and services, corporate deployment often focuses on:
+
+- reducing labor costs  
+- automating customer support  
+- increasing margins  
+- scaling extraction mechanisms  
+
+Ethical and user‑centric applications of AI are possible, but they remain exceptions rather than the norm.
+
+---
 
 ## **Concept Map: Enshittification**
 
 ```
-                     ┌────────────────────────────────────────┐
-                     │      ROOT CAUSE: ECONOMIC INCENTIVES   │
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-         ┌────────────────────────────────────────────────────────────────┐
-         │ SHAREHOLDER PRIMACY → Short-term profit > quality, longevity   │
-         │ Planned obsolescence → “Designed to fail”                      │
-         │ Subscription creep → Rentership replaces ownership             │
-         │ Market consolidation → No alternatives → captive consumers     │
-         └────────────────────────────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
-                     │         ENSHITTIFICATION               │
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
-                     │ TECHNOLOGY AS EXTRACTION               │
-                     │ Innovation slowed, but growth must     │
-                     │ continue → extraction replaces progress│
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-         ┌────────────────────────────────────────────────────────────────┐
-         │ ROLE OF AI                                                     │
-         │ - Used to cut labor costs                                      │
-         │ - Used to automate support, reduce staff                       │
-         │ - Rarely used to improve product quality                       │
-         │ - Ethical AI is possible (sponsor example)                     │
-         └────────────────────────────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
-                     │   META-POINT: FAILURE IS OK            │
-                     │   Mechanical failure = fixable         │
-                     │   Digital failure = locked, permanent  │
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-         ┌────────────────────────────────────────────────────────────────┐
-         │ ECONOMIC ENDGAME                                               │
-         │ - More subscriptions                                           │
-         │ - Less ownership                                               │
-         │ - Lower quality                                                │
-         │ - Higher prices                                                │
-         │ - Fewer choices                                                │
-         └────────────────────────────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
-                     │ WHAT CAN WE DO?                        │
-                     └────────────────────────────────────────┘
-                     ┌────────────────────────────────────────┐
-                     │ RESTORATION                            │
-                     └────────────────────────────────────────┘
-                                         │
-                                         ▼
-         ┌────────────────────────────────────────────────────────────────┐
-         │ PRACTICAL RESISTANCE                                           │
-         │ - Buy repairable goods                                         │
-         │ - Avoid subscriptions                                          │
-         │ - Support durable products                                     │
-         │ - Learn basic repairs                                          │
-         │ - Choose companies that build things to last                   │
-         └────────────────────────────────────────────────────────────────┘
-                                         │
-                                         ▼
-                     ┌────────────────────────────────────────┐
-                     │ FINAL QUESTION: IS IT WORTH IT?        │
-                     │ → Yes, because it represents autonomy, │
-                     │   durability, and resistance.          │
-                     └────────────────────────────────────────┘
+ROOT CAUSE: ECONOMIC INCENTIVES
+│
+├─ Shareholder primacy → short-term profit over quality
+├─ Planned obsolescence → engineered failure cycles
+├─ Subscription creep → rentership replaces ownership
+└─ Market consolidation → captive consumers
 
+ENSHITTIFICATION
+│
+└─ Technology used for extraction rather than improvement
+
+ROLE OF AI
+│
+├─ Labor reduction
+├─ Automated support
+└─ Minimal product enhancement
+
+META-POINT: FAILURE
+│
+├─ Mechanical failure → fixable
+└─ Digital failure → locked, permanent
+
+ECONOMIC ENDGAME
+│
+├─ More subscriptions
+├─ Less ownership
+├─ Lower quality
+├─ Higher prices
+└─ Fewer choices
+
+WHAT CAN WE DO?
+│
+└─ PRACTICAL RESISTANCE
+   ├─ Buy repairable goods
+   ├─ Avoid subscriptions
+   ├─ Support durable products
+   ├─ Learn basic repairs
+   └─ Choose companies that build things to last
+
+FINAL QUESTION: IS IT WORTH IT?
+→ Yes. Durability and autonomy are forms of resistance.
 ```
 
-## Implications
+---
 
-Understanding enshittification is valuable for:
+## **Digital and Physical Examples**
 
-**Consumers**: Recognizing changes in policies or strategies that may affect user experience.
+Enshittification manifests across industries:
 
-**Developers**: Balancing growth and monetization with maintaining quality to retain users.
+### **Digital**
+- Social networks increasing ad load  
+- Marketplaces imposing higher seller fees  
+- Streaming services fragmenting content and raising prices  
+- Software shifting from one‑time purchase to subscription models  
 
-**Analysts**: Evaluating companies’ long-term sustainability beyond short-term profit metrics.
-
-In essence, "enshittification" is a critical lens, highlighting the tension between profitability and quality, and warning users and creators about inevitable compromises if revenue incentives dominate.
+### **Physical**
+- Appliances designed with shorter lifespans  
+- Cars burdened with unnecessary electronics and subscription‑locked features  
+- Consumer goods manufactured with cheaper materials and reduced repairability  
 
 ---
 
-# 🧩 Why Things Feel Worse
-The decline in quality as a **systemic economic failure**, not a technological one.
+## **Formal Notation (Platform Economics)**
 
-         ┌────────────────────────────────────────────────────────────────┐
-         │ DIGITAL EXAMPLES                                               │
-         └────────────────────────────────────────────────────────────────┘
-
-         ┌────────────────────────────────────────────────────────────────┐
-         │ PHYSICAL EXAMPLES                                              │
-         └────────────────────────────────────────────────────────────────┘
-
-### **1. Technology is advancing — but products aren’t**
-That emphasizes that engineers are smarter and more capable than ever. Yet products feel cheaper, flimsier, and more disposable.
-
-### **2. Planned obsolescence is only the surface**
-The deeper issue is **enshittification**:  
-Companies degrade products intentionally once they have enough market power to trap consumers.
-
-### **3. Innovation slowed, but growth demands didn’t**
-Economic structures require **constant growth**, but technological breakthroughs no longer arrive fast enough to sustain it.  
-So companies turn to:
-- subscriptions  
-- lock‑in ecosystems  
-- cost‑cutting  
-- data extraction  
-- reduced durability  
-- reduced repairability  
-
----
-
-### Notation
+The phenomenon aligns with established models of two‑sided markets:
 
 | Symbol | Meaning |
 |--------|---------|
-| $n_u(t)$ | Mass (or number) of end users at time \( t \) |
-| $n_m(t)$| Mass of merchants / advertisers / content providers at time \( t \) |
-| $g_u(n_m)$| Cross-side affinity / attractiveness of the merchant side for users |
-| $g_m(n_u)$ | Cross-side affinity of the user side for merchants |
-| $\varepsilon_1, \varepsilon_3$ | Baseline attrition (churn) rates of users and merchants |
-| $\varepsilon_2, \varepsilon_4$ | Growth / conversion intensities |
-| $P_u(t), P_m(t)$ | Effective prices / fees / extraction rates charged to users and merchants |
-| $Q(t)$| Platform quality (service quality, friction inverse, ad load inverse, etc.) |
-| $\pi$ | Platform profit |
+| \( n_u(t) \) | User mass at time \( t \) |
+| \( n_m(t) \) | Merchant/advertiser/content‑provider mass |
+| \( g_u(n_m) \) | User‑side affinity from merchant participation |
+| \( g_m(n_u) \) | Merchant‑side affinity from user participation |
+| \( \varepsilon_1, \varepsilon_3 \) | Attrition rates |
+| \( \varepsilon_2, \varepsilon_4 \) | Growth intensities |
+| \( P_u, P_m \) | Platform extraction rates (fees, ads, subscriptions) |
+| \( Q(t) \) | Platform quality |
+| \( \pi \) | Platform profit |
 
-# 🛠️ The Experiment: Restoring Old Technology
-To demonstrate the contrast, buy and restore **older, high‑quality technology** as a physical example 
-
-What engineering looked like before shareholder primacy dominated product design
-
-Restoration becomes a metaphor:
-- Old tech = built to last  
-- New tech = built to extract  
+These models predict the lifecycle Doctorow describes: early value creation, lock‑in, extraction, and eventual decline.
 
 ---
 
-# 📉 The Economic Argument
-The economy is “imploding” because:
+## **Restoring Old Technology as Demonstration**
 
-### **1. Companies extract more value from consumers than ever**
-Digital platforms, appliances, cars, and software all follow the same pattern:
-- Start good  
-- Gain users  
-- Remove features  
-- Add fees  
-- Reduce quality  
-- Increase prices  
+Restoring older, high‑quality technology—such as durable appliances or mechanically robust vehicles—illustrates what engineering looked like before profit extraction dominated design. These artifacts embody:
 
-### **2. Competition collapses**
-Market consolidation means consumers have fewer alternatives, enabling companies to degrade products without losing customers.
+- longevity  
+- repairability  
+- material quality  
+- user‑centric design  
 
-### **3. Subscriptions replace ownership**
-The shift from buying to renting creates permanent revenue streams — but worse products.
+They serve as tangible counterexamples to modern product decay.
 
 ---
 
-# 🤖 The Role of AI
-AI is framed as a **new extraction tool**, not a quality‑improving technology.
+## **Economic Implications**
 
-Corporations use AI to:
-- replace workers  
-- automate support  
-- reduce costs  
-- increase margins  
+Enshittification signals deeper structural issues:
 
-Rather than:
-- improve products  
-- enhance user experience  
-- create new value  
+1. **Extraction exceeds value creation.**  
+2. **Competition collapses**, enabling degradation without consequence.  
+3. **Ownership erodes**, replaced by perpetual payment models.  
+4. **Long‑term sustainability declines**, even as short‑term profits rise.
 
-AI *can* be used ethically (as with their sponsor), but that’s not the norm.
+Understanding these dynamics helps consumers, developers, and analysts anticipate platform trajectories and evaluate business models beyond quarterly metrics.
 
 ---
 
-# 🧭 UML Diagrams
+## **Conclusion**
 
-The diagram is that the economy is stuck in a loop where:
-- innovation slows  
-- growth must continue  
-- extraction increases  
-- quality collapses
-  
-```
-+--------------------------------------------------------------+
-|                        PlatformModel                         |
-+--------------------------------------------------------------+
-| - αu : Real                                                  |
-| - αm : Real                                                  |
-| - βu : Real                                                  |
-| - βm : Real                                                  |
-| - ε10 : Real                                                 |
-| - ε30 : Real                                                 |
-| - δu : Real                                                  |
-| - δm : Real                                                  |
-| - ϕu : Real                                                  |
-| - ϕm : Real                                                  |
-| - ε2 : Real                                                  |
-| - ε4 : Real                                                  |
-| - γ  : Real                                                  |
-| - Investment : Real                                          |
-+--------------------------------------------------------------+
-| + gu(nm : Real, Q : Real) : Real                             |
-| + gm(nu : Real, Q : Real) : Real                             |
-| + ε1(Q : Real, Pu : Real) : Real                             |
-| + ε3(Q : Real, Pm : Real) : Real                             |
-| + UpdatePlatform(state : PlatformState,                      |
-|                  fees : FeeVector) : PlatformState           |
-+--------------------------------------------------------------+
-
-
-+---------------------------+
-|       PlatformState       |
-+---------------------------+
-| - nu : Real               |
-| - nm : Real               |
-| - Q  : Real               |
-+---------------------------+
-| + getNu() : Real          |
-| + getNm() : Real          |
-| + getQ()  : Real          |
-+---------------------------+
-
-
-+---------------------------+
-|        FeeVector          |
-+---------------------------+
-| - Pu : Real               |
-| - Pm : Real               |
-+---------------------------+
-| + getPu() : Real          |
-| + getPm() : Real          |
-+---------------------------+
-
-
-Relationships:
--------------
-PlatformModel "uses" PlatformState
-PlatformModel "uses" FeeVector
-
-PlatformModel.UpdatePlatform(...) 
-    → returns a new PlatformState
-```
-
-Individuals can resist by:
-- buying repairable goods  
-- avoiding subscriptions  
-- supporting durable products  
-- learning basic repairs  
-- choosing companies that build things to last  
-
-## External articles
-
-- [I Bought And Restored "Old" Technology To Prove The Economy Is Imploding](https://www.youtube.com/watch?v=C_0xBbEFjLk)  > “Everything SUCKS now and we all know it… it’s more than just planned obsolescence — the slop is everywhere.”
+Enshittification provides a critical lens for examining modern products and platforms. It highlights the tension between profitability and quality, warns of the consequences of unchecked extraction, and underscores the importance of repairability, durability, and user‑centric design. While individuals cannot reverse systemic incentives, they can make choices that support long‑lasting goods and resist the economic pressures that drive product decay.
