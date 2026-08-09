@@ -5,7 +5,7 @@ Sci‑fi and conspiracy‑themed songs
 Fun, catchy, and extraterrestrial — very Hecklefish‑compatible.
 
 - **[Why Files on Repeat](https://www.youtube.com/watch?v=kQN-eQOSiOg)** - the Why Files Theme Tune Song Music
-- **The Firm – “Star Trekkin’”** — Pure novelty sci‑fi chaos.  
+- **[The Firm – “Star Trekkin’](https://www.youtube.com/watch?v=FCARADb9asE)** — Pure novelty sci‑fi chaos.  
 - **Flight of the Conchords – “Robots”** — Comedy + dystopian robot takeover.
 
 ---
