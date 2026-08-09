@@ -9,7 +9,7 @@ Fun, catchy, and extraterrestrial — very Hecklefish‑compatible.
 
 - **[Why Files on Repeat](https://www.youtube.com/watch?v=kQN-eQOSiOg)** - the Why Files Theme Tune Song Music
 - **[The Firm – “Star Trekkin’](https://www.youtube.com/watch?v=FCARADb9asE)** — Pure novelty sci‑fi chaos.  
-- **Flight of the Conchords – “Robots”** — Comedy + dystopian robot takeover.
+- **[Flight of the Conchords – “Robots”](https://www.youtube.com/watch?v=2IPAOxrH7Ro)** — Comedy + dystopian robot takeover.
 
 ---
 
