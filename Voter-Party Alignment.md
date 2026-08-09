@@ -28,6 +28,10 @@ The model uses **relational geometry**—voters and parties are points in a comb
 - $T(V,P)$ — moral‑tone alignment  
 - $w_I, w_{Po}, w_T$ — non‑negative weights with $w_I + w_{Po} + w_T = 1$  
 - $A(V,P)$ — overall alignment score
+- $\mathcal{A}$ — the alignment space 
+- $I, Po, T$ — the relational operators
+- $g_V$ — the voter metric tensor
+- $V(t), P(t)$ — the dynamic trajectories
 
 Geometric objects
 
