@@ -1,7 +1,17 @@
 ## **Francis Hutcheson (1694–1746)**
-: Life, Thought, and Legacy
+*Life, Thought, and Legacy*
 
 Francis Hutcheson was a Scots-Irish philosopher and a foundational figure of the Scottish Enlightenment. Best known for developing **moral sense theory** and for elevating **benevolence** as the core of virtue, he shaped the intellectual climate that influenced **Adam Smith**, **David Hume**, and key thinkers of the American Revolution.
+
+## 🧩 **Key Entities and Relationships**
+
+| **Entity** | **Attributes / Notes** | **Relationships** |
+|-------------|------------------------|-------------------|
+| **Francis Hutcheson** | Scots-Irish philosopher, Glasgow professor, architect of moral sense theory | Central node connecting all subsystems |
+| **Moral Sense Kernel** | Innate moral faculty perceiving virtue and vice | Core doctrine component |
+| **Aesthetic Sense Module** | Internal sense of beauty, harmony, and variety | Linked to Moral Sense Kernel |
+| **Political Deployment Layer** | Natural rights, consent-based authority, resistance to tyranny | Depends on Moral Sense Kernel |
+| **Legacy System** | Downstream influence on Hume, Smith, Jefferson | Receives outputs from all modules |
 
 ---
 
@@ -17,7 +27,22 @@ In 1729, Hutcheson became **Professor of Moral Philosophy** at the University of
 
 Hutcheson died on August 8, 1746, in Dublin while visiting Ireland.
 
+
+Excellent — the infographic you uploaded is structured almost like a **conceptual system architecture**, which makes it perfect for UML modeling. Let’s extract its logical components and express them as UML diagrams.
+
 ---
+
+## 🧠 **Interpretation**
+### 🔄 **Sequence Diagram (Idea Flow)**
+
+```
+FrancisHutcheson -> MoralSenseKernel: Develop moral sense theory
+MoralSenseKernel -> AestheticSenseModule: Integrate internal sense of beauty
+AestheticSenseModule -> PoliticalDeployment: Fuse moral + aesthetic principles
+PoliticalDeployment -> LegacySystem: Influence Enlightenment and American thought
+LegacySystem -> FuturePhilosophy: Continue citation and adaptation
+```
+
 
 ### **Moral Sense Theory**
 Hutcheson’s most influential contribution is his **moral sense theory**, which holds that humans possess an innate faculty enabling them to perceive virtue and vice directly, not merely through rational calculation. According to Hutcheson:
@@ -59,6 +84,80 @@ Hutcheson’s work profoundly shaped the Scottish Enlightenment and influenced m
 - Liberal political theory  
 
 Although less widely remembered today, his ideas continue to inform contemporary discussions in ethics, political philosophy, and aesthetics. Institutions such as the **Francis Hutcheson Institute** preserve and promote his intellectual legacy.
+
+## ⚙️ **UML Class Diagram (Conceptual Model)**
+
+```
++----------------------+
+| FrancisHutcheson     
++----------------------+
+| nationality: Scots-Irish 
+| role: Professor of Moral Philosophy 
+| lifespan: 1694–1746 
++----------------------+
+| +developMoralSense() 
+| +teachEthics()       
+| +influenceThinkers() 
++----------------------+
+          |
+          | 1..*
+          v
++----------------------+
+| MoralSenseKernel     
++----------------------+
+| doctrine: innate moral sense 
+| principle: greatest happiness 
+| status: active/stable 
++----------------------+
+| +perceiveVirtueVice() 
+| +evaluateActions()    
++----------------------+
+          |
+          | 1..1
+          v
++----------------------+
+| AestheticSenseModule |
++----------------------+
+| harmony: uniformity amidst variety 
+| perception: immediate/non-rational 
+| status: integrated 
++----------------------+
+| +perceiveBeauty() 
+| +linkToMoralSense() 
++----------------------+
+          |
+          | 1..*
+          v
++----------------------+
+| PoliticalDeployment  |
++----------------------+
+| rights: natural, unalienable 
+| authority: consent-based 
+| influence: American Revolution 
+| status: deployed 1776 
++----------------------+
+| +applyMoralPrinciples() 
+| +justifyResistance()    
++----------------------+
+          |
+          | 1..*
+          v
++----------------------+
+| LegacySystem         |
++----------------------+
+| downstream: Hume, Smith, Jefferson 
+| output: moral psychology + politics 
+| status: foundational 
++----------------------+
+| +propagateIdeas() 
++----------------------+
+```
+
+Hutcheson’s philosophy is a **modular cognitive system**:
+- The **Moral Sense Kernel** acts as the root class.
+- The **Aesthetic Module** and **Political Layer** are dependent subsystems.
+- The **Legacy System** represents downstream inheritance and propagation.
+
 
 ---
 
