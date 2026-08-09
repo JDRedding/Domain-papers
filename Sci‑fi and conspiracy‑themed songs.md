@@ -5,8 +5,6 @@ Sci‑fi and conspiracy‑themed songs
 Fun, catchy, and extraterrestrial — very Hecklefish‑compatible.
 
 - **[Why Files on Repeat](https://www.youtube.com/watch?v=kQN-eQOSiOg)** - the Why Files Theme Tune Song Music
-- **Lemon Demon – “Touch‑Tone Telephone”** — A conspiracy theorist anthem with a killer hook.  
-- **The Aquabats – “Super Rad!”** — Sci‑fi superhero camp with high‑energy ska.  
 - **The Firm – “Star Trekkin’”** — Pure novelty sci‑fi chaos.  
 - **Flight of the Conchords – “Robots”** — Comedy + dystopian robot takeover.
 
