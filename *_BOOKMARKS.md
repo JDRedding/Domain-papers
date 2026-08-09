@@ -184,6 +184,7 @@
 | Cosmolapse | [https://cosmolapse.com/](https://cosmolapse.com/) |
 | Galaxy Sandbox | [https://galaxysandbox.app/](https://galaxysandbox.app/) |
 | Sol Map | [https://universe.matteobeu.com/](https://universe.matteobeu.com/) |
+| The Universe in 3D | [https://in-the-sky.org/ngc3d.php](https://in-the-sky.org/ngc3d.php) |
 
 ### 540 Chemistry  
 | Site | URL |
