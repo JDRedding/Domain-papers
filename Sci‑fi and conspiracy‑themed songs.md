@@ -1,4 +1,7 @@
-Sci‑fi and conspiracy‑themed songs 
+# Sci‑fi and conspiracy‑themed songs 
+
+This is a curated, themed playlist of songs and film/TV themes grouped around sci‑fi, conspiracy, and strange/otherworldly moods — from upbeat alien novelty and paranoid conspiracy tracks to cinematic fanfares, first‑contact wonder, cyberpunk/dystopia, and modern blockbuster scoring. Each section lists example tracks or themes and a short mood note.
+
 ---
 
 ## 👽 Upbeat Sci‑Fi & Alien‑Themed Songs  
