@@ -18,6 +18,33 @@ This formalization captures the structural idea:
 - $w_I, w_{Po}, w_T$ — non‑negative weights with $w_I + w_{Po} + w_T = 1$  
 - $A(V,P)$ — overall alignment score
 
+Geometric objects
+
+**Voters and parties as points in a relational space**
+
+- **Voter:**  
+  \[
+  V = ( \mathbf{i}_V,\ \mathbf{v}_V,\ \mathbf{t}_V )
+  \]
+- **Party:**  
+  \[
+  P = ( \mathbf{i}_P,\ \mathbf{p}_P,\ \mathbf{t}_P )
+  \]
+
+Each component is itself a vector in a subspace:
+
+- **Identity space:** $\mathcal{I} \subset \mathbb{R}^{k_I}$  
+- **Policy space:** $\mathcal{Po} \subset \mathbb{R}^{k_{Po}}$  
+- **Tone space:** $\mathcal{T} \subset \mathbb{R}^{k_T}$
+
+So the full **alignment space** is:
+
+$$
+\mathcal{A} = \mathcal{I} \times \mathcal{Po} \times \mathcal{T}
+$$
+
+Voters and parties are **configurations** in $\mathcal{A}$.
+
 ---
 
 ## **Axis Definitions**
