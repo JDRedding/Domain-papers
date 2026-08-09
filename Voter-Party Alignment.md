@@ -141,7 +141,27 @@ $$
 \Delta = |A(V,D) - A(V,R)|
 $$
 
-Small \(\Delta\) indicates the voter is not strongly aligned with either party.
+Small $\Delta$ indicates the voter is not strongly aligned with either party.
+
+Make it **dynamic**:
+
+- Parties move over time:
+  
+$$P(t) = ( \mathbf{i}_P(t),\ \mathbf{p}_P(t),\ \mathbf{t}_P(t) )$$
+  
+- Voters evolve too:
+  
+$$V(t) = ( \mathbf{i}_V(t),\ \mathbf{v}_V(t),\ \mathbf{t}_V(t) )$$
+
+Alignment becomes a **time‑dependent relational field**:
+
+$$A_t(V,P) = A\big(V(t), P(t)\big)$$
+
+Have:
+
+- **Trajectories** of parties and voters in $\mathcal{A}$ 
+- **Changing relational distances** and alignments over time  
+- Possible **critical points** where $P^*(t)$ (preferred party) flips as trajectories cross relational thresholds.
 
 ---
 
