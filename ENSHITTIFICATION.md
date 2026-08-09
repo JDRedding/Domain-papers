@@ -3,7 +3,20 @@
 # 🧭 Core
 **Everything feels worse now** — products, services, software, appliances, cars — and that this decline is not due to technological regression or incompetent engineers. Instead, it’s the result of **economic incentives that reward extraction over quality**.
 
+The term combines "shit" with the suffix "-ification," humorously emphasizing degradation. It is commonly used in technology and social media criticism, describing how once-popular platforms become less enjoyable or functional over time. Examples include:
+- Social media networks increasing intrusive advertisements.
+- Online marketplaces introducing stricter seller fees or algorithmic biases affecting visibility.
+- Streaming services prioritizing content that maximizes profit over artistic quality.
+  
+The concept conveys the idea that systems naturally degrade when business models favor monetization or growth over user satisfaction, often leading to user frustration and eventual platform decline.
+
 Enshittification (also called product decay) is the process where a thing slowly gets worse over time — first by providing a good for users, then by degrading it to benefit business customers, and finally by worsening it for both users and businesses to boost short-term profits. The term was popularized by Canadian writer Cory Doctorow starting in 2022.
+
+---
+
+## Context and Origin
+
+"Enshittification" gained attention through tech commentary and online essays, particularly in discussions by writers like Cory Doctorow and Ben Thompson, who analyze platform economics and digital society. Ben Thompson, for instance, articulates platform lifecycle theory, explaining that platforms inevitably cycle through stages of initial user focus, monetization, and eventual quality degradation, which the term "enshittification" humorously captures.
 
 ---
 
@@ -94,4 +107,4 @@ And that individuals can resist by:
 
 ## External articles
 
-- > “Everything SUCKS now and we all know it… it’s more than just planned obsolescence — the slop is everywhere.”   [youtube.com](https://www.youtube.com/watch?v=C_0xBbEFjLk)
+- [I Bought And Restored "Old" Technology To Prove The Economy Is Imploding](https://www.youtube.com/watch?v=C_0xBbEFjLk)  > “Everything SUCKS now and we all know it… it’s more than just planned obsolescence — the slop is everywhere.”
