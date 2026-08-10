@@ -128,10 +128,3 @@ Notable works:
   - Vector analysis  
   - Mathematical physics  
 
----
-
-## **See Also**
-- **Lord Kelvin**  
-- **James Clerk Maxwell**  
-- **Quaternions**  
-- **Knot Theory**  
