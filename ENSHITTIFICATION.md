@@ -312,3 +312,46 @@ Understanding these dynamics helps consumers, developers, and analysts anticipat
 ## **Conclusion**
 
 Enshittification provides a critical lens for examining modern products and platforms. It highlights the tension between profitability and quality, warns of the consequences of unchecked extraction, and underscores the importance of repairability, durability, and user‑centric design. While individuals cannot reverse systemic incentives, they can make choices that support long‑lasting goods and resist the economic pressures that drive product decay.
+
+This formalization accurately captures the core dynamics of two‑sided platforms and the sequential transition from growth to extraction. It situates enshittification within the standard Rochet–Tirole and Armstrong framework, where platforms act as intermediaries between two participant groups connected through cross‑side network effects. The discrete‑time recursions
+
+$$
+n_u(t+1) = (1-\varepsilon_1)n_u(t) + \varepsilon_2\, g_u(n_m(t)),
+$$
+
+$$
+n_m(t+1) = (1-\varepsilon_3)n_m(t) + \varepsilon_4\, g_m(n_u(t)),
+$$
+
+provide a transparent representation of the interaction between attrition, growth intensity, and cross‑side affinity. In the early stages, high values of $g_u$ and $g_m$ generate rapid joint expansion, while the platform maintains low extraction rates $P_u, P_m$ and high quality $Q$. As user and merchant masses grow, switching costs increase, participation constraints weaken, and the platform gains the ability to raise $P_u$ and $P_m$ while allowing $Q$ to decline, thereby maximizing short‑run profit $\pi$.
+
+---
+
+## **Phase Dynamics**
+
+### **Phases 1–2: Value Creation → Critical Mass**  
+During the initial growth phase, positive feedback through the affinity functions $g_u$ and $g_m$ dominates. Low extraction and high quality keep attrition rates $\varepsilon_1$ and $\varepsilon_3$ small, enabling the platform to accumulate a large, increasingly locked‑in user and merchant base.
+
+### **Phases 3–4: Extraction → Enshittification**  
+Once participation constraints loosen, the platform optimizes $\pi(P_u, P_m, n_u, n_m)$ with respect to higher fees, increased ad load, subscription requirements, and reduced service quality. These actions directly weaken the effective affinities $g_u$ and $g_m$—potentially turning them negative—and increase attrition. Lock‑in slows the outflow, allowing extraction to continue for an extended period despite declining user experience.
+
+### **Phase 5: Endgame**  
+Eventually, $n_u$ and $n_m$ plateau or begin a slow decline. Network effects collapse, further price increases accelerate attrition, and the platform increasingly functions as a rent‑extraction mechanism rather than a value‑creation intermediary. Although reported profits may remain high for some time, long‑term sustainability deteriorates until lock‑in finally erodes.
+
+---
+
+## **Extensions for Greater Realism**
+
+To close the model, attrition rates and affinity functions should depend explicitly on extraction and quality:
+
+$$
+\varepsilon_1 = \varepsilon_1(P_u, Q), \qquad \varepsilon_3 = \varepsilon_3(P_m, Q),
+$$
+
+$$
+g_u = g_u(n_m, P_u, Q), \qquad g_m = g_m(n_u, P_m, Q).
+$$
+
+Higher extraction levels or lower quality increase attrition and weaken (or reverse) cross‑side benefits. Quality itself can be modeled as a control variable that the platform may strategically degrade to reduce costs and boost short‑term profit. These feedback mechanisms transform the system into a controlled dynamical model whose trajectories naturally exhibit the canonical enshittification pattern: rapid growth, plateau with rising extraction, and eventual collapse once attrition exceeds residual lock‑in.
+
+The same logic applies—with only minor interpretive adjustments—to physical products that transition from durable ownership models to subscription ‑ or permission‑based access. In both digital and physical contexts, the formal structure demonstrates why short‑term profit maximization can systematically undermine long‑term value creation once competitive discipline weakens.
