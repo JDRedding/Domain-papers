@@ -327,20 +327,20 @@ provide a transparent representation of the interaction between attrition, growt
 
 ---
 
-## **Phase Dynamics**
+#### **Phase Dynamics**
 
-### **Phases 1–2: Value Creation → Critical Mass**  
+##### **Phases 1–2: Value Creation → Critical Mass**  
 During the initial growth phase, positive feedback through the affinity functions $g_u$ and $g_m$ dominates. Low extraction and high quality keep attrition rates $\varepsilon_1$ and $\varepsilon_3$ small, enabling the platform to accumulate a large, increasingly locked‑in user and merchant base.
 
-### **Phases 3–4: Extraction → Enshittification**  
+##### **Phases 3–4: Extraction → Enshittification**  
 Once participation constraints loosen, the platform optimizes $\pi(P_u, P_m, n_u, n_m)$ with respect to higher fees, increased ad load, subscription requirements, and reduced service quality. These actions directly weaken the effective affinities $g_u$ and $g_m$—potentially turning them negative—and increase attrition. Lock‑in slows the outflow, allowing extraction to continue for an extended period despite declining user experience.
 
-### **Phase 5: Endgame**  
+##### **Phase 5: Endgame**  
 Eventually, $n_u$ and $n_m$ plateau or begin a slow decline. Network effects collapse, further price increases accelerate attrition, and the platform increasingly functions as a rent‑extraction mechanism rather than a value‑creation intermediary. Although reported profits may remain high for some time, long‑term sustainability deteriorates until lock‑in finally erodes.
 
 ---
 
-## **Extensions for Greater Realism**
+#### **Extensions for Greater Realism**
 
 To close the model, attrition rates and affinity functions should depend explicitly on extraction and quality:
 
