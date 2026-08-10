@@ -1,4 +1,4 @@
-# **Enshittification: A Overview**
+# 🧭 **Enshittification: A Overview**
 
 **Enshittification** is an informal term describing the progressive degradation of a platform, product, or service as corporate incentives shift from delivering value to extracting profit. Although humorous in origin, the concept captures a serious and increasingly visible pattern across digital platforms, consumer goods, and modern business models.
 
@@ -56,7 +56,7 @@ Ethical and user‑centric applications of AI are possible, but they remain exce
 
 ---
 
-## **Concept Map: Enshittification**
+## 🧩 **Concept Map: Enshittification**
 
 ```
 ROOT CAUSE: ECONOMIC INCENTIVES
@@ -275,7 +275,7 @@ They serve as tangible counterexamples to modern product decay. The restoration 
 
 ---
 
-## **Economic Implications**
+## 📉 **Economic Implications**
 
 Enshittification signals deeper structural issues:
 
