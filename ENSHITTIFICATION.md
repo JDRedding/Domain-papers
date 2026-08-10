@@ -283,6 +283,15 @@ They serve as tangible counterexamples to modern product decay. The restoration 
 - Old tech = built to last
 - New tech = built to extract
 
+### Practical demonstration value
+Restoring such technology is not nostalgia for its own sake. It is an empirical check:
+- Document the original design choices (materials, tolerances, modularity).
+- Measure the effort, cost, and skill required to return it to service.
+- Compare failure modes and remaining useful life against a contemporary equivalent.
+- Note where modern materials or techniques actually improve on the old design (better seals, coatings, electronics when they are not locked down) and where they degrade it.
+
+The restored object then stands as physical evidence rather than rhetoric. People can see and operate something that was engineered under different incentives. The pattern is not universal—some modern industrial and professional equipment remains highly durable and repairable — but in mass-market consumer goods the shift toward extraction is well-documented and observable. Restoring the older artifacts simply makes the difference visible and tactile.
+
 ---
 
 ## 📉 **Economic Implications**
