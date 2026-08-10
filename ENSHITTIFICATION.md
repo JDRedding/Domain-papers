@@ -139,6 +139,125 @@ The phenomenon aligns with established models of two‑sided markets:
 
 These models predict the lifecycle Doctorow describes: early value creation, lock‑in, extraction, and eventual decline.
 
+                           ┌──────────────────────────────┐
+                           │     ENSHITTIFICATION         │
+                           │  (Degradation for profit)    │
+                           └───────────────┬──────────────┘
+                                           │
+                                           ▼
+                   ┌────────────────────────────────────────────┐
+                   │ TWO-SIDED MARKET STRUCTURE (R–T, Armstrong)│
+                   └────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ PLATFORM = INTERMEDIARY BETWEEN TWO GROUPS                         │
+      │ Users (u) ↔ Merchants/Advertisers/Content Providers (m)            │
+      │ Network effects: g_u(n_m), g_m(n_u)                                │
+      └────────────────────────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ DYNAMICS (canonical form)                                          │
+      │ n_u(t+1) = (1−ε₁)n_u(t) + ε₂ g_u(n_m(t))                           │
+      │ n_m(t+1) = (1−ε₃)n_m(t) + ε₄ g_m(n_u(t))                           │
+      │                                                                    │
+      │ Interpretation:                                                    │
+      │ - ε parameters = churn, growth, lock-in                            │
+      │ - g functions = cross-side network effects                         │
+      │ - n_u, n_m = masses locked into the platform                       │
+      └────────────────────────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+                     ┌────────────────────────────────────────────┐
+                     │ PHASE 1: VALUE CREATION                    │
+                     │ (High g_u, high g_m → rapid growth)        │
+                     └────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ PLATFORM SUBSIDIZES QUALITY                                        │
+      │ - Low prices (P_u, P_m)                                            │
+      │ - High service quality                                             │
+      │ - No ads, no subscriptions                                         │
+      │ - Strong engineering focus                                         │
+      │                                                                    │
+      └────────────────────────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+                     ┌────────────────────────────────────────────┐
+                     │ PHASE 2: CRITICAL MASS                     │
+                     │ (n_u, n_m large → switching costs rise)    │
+                     └────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ LOCK-IN EMERGES                                                    │
+      │ - Users depend on platform                                         │
+      │ - Merchants depend on access to user base                          │
+      │ - Switching costs ↑                                                │
+      │                                                                    │
+      └────────────────────────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+                     ┌────────────────────────────────────────────┐
+                     │ PHASE 3: EXTRACTION                         │
+                     │ (Profit-maximizing P_u, P_m adjustments)    │
+                     └────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ PLATFORM RAISES PRICES / REDUCES QUALITY                           │
+      │ - Increase P_u (subscriptions, fees)                               │
+      │ - Increase P_m (ad rates, seller fees)                             │
+      │ - Reduce service quality                                           │
+      │ - Introduce friction intentionally                                 │
+      │                                                                    │
+      │ Formal mechanism:                                                  │
+      │   Platform maximizes π(P_u, P_m, n_u, n_m) subject to participation│
+      │   constraints. Once n_u, n_m are large, constraints loosen.        │
+      │                                                                    │
+      └────────────────────────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+                     ┌────────────────────────────────────────────┐
+                     │ PHASE 4: ENSHITTIFICATION                  │
+                     │ (Full extraction →  experience collapses)  │
+                     └────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ FORMAL ECONOMIC INTERPRETATION                                     │
+      │                                                                    │
+      │ 1. g_u(n_m) and g_m(n_u) weaken                                    │
+      │    (network effects become negative)                               │
+      │                                                                    │
+      │ 2. ε₁, ε₃ (attrition) rise                                         │
+      │    (users and merchants churn, but slowly due to lock-in)          │
+      │                                                                    │
+      │ 3. Platform compensates by raising P_u, P_m further                │
+      │    (accelerating degradation)                                      │
+      │                                                                    │
+      │ 4. Quality spirals downward                                        │
+      │                                                                    │
+      └────────────────────────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+                     ┌────────────────────────────────────────────┐
+                     │ PHASE 5: ECONOMIC ENDGAME                  │
+                     └────────────────────────────────────────────┘
+                                           │
+                                           ▼
+      ┌────────────────────────────────────────────────────────────────────┐
+      │ ENDGAME IN FORMAL TERMS                                            │
+      │                                                                    │
+      │ - n_u, n_m plateau (market saturation)                             │
+      │ - g_u, g_m collapse (negative network effects)                     │
+      │ - P_u, P_m rise until attrition outweighs lock-in                  │
+      │ - Platform becomes rent-extraction machine                         │
+      │                                                                    │
+      └────────────────────────────────────────────────────────────────────┘
+
 ---
 
 ## **Restoring Old Technology as Demonstration**
