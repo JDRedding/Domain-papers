@@ -269,6 +269,16 @@ Restoring older, high‑quality technology—such as durable appliances or mecha
 - material quality  
 - user‑centric design  
 
+Durable appliances, mechanically robust vehicles, tools, and instruments from earlier eras often embody longevity, repairability, higher material integrity in critical parts, and designs oriented toward the user’s ability to maintain and keep the object working. Modern counterparts frequently prioritize cost reduction, sealed modules, software lock-in, thin margins, and replacement cycles. The restoration process itself becomes the demonstration: you can still open, diagnose, source or fabricate parts for, and return many older machines to reliable service decades later. That is rarer with much of today’s consumer technology.
+
+### Built to last vs. built to extract
+
+Pre-planned-obsolescence and pre-extreme-cost-optimization designs accepted higher upfront material and labor costs because the product was expected to deliver years or decades of service and remain serviceable. Contemporary design frequently optimizes for first-sale margin, supply-chain simplicity, and recurring revenue (parts, subscriptions, forced upgrades). The result is accelerated product decay that is engineered rather than inevitable.
+
+Tangible counterexamples matter more than abstract critique. A restored mechanical washing machine, tractor, typewriter, camera, or vehicle that still functions well after 40–70 years demonstrates what was once routine engineering practice. The same object’s modern equivalent often cannot be economically or practically restored to equivalent longevity.
+
+Repairability is the clearest differentiator. Older machines commonly used standard fasteners, accessible assemblies, service manuals, and replaceable wear items. Many current products use proprietary fasteners, glued or welded modules, software authentication of parts, and designs that make independent repair uneconomical or impossible.
+
 They serve as tangible counterexamples to modern product decay. The restoration becomes a metaphor:
 - Old tech = built to last
 - New tech = built to extract
