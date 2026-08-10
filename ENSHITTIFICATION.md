@@ -127,15 +127,15 @@ The phenomenon aligns with established models of two‑sided markets:
 
 | Symbol | Meaning |
 |--------|---------|
-| \( n_u(t) \) | User mass at time \( t \) |
-| \( n_m(t) \) | Merchant/advertiser/content‑provider mass |
-| \( g_u(n_m) \) | User‑side affinity from merchant participation |
-| \( g_m(n_u) \) | Merchant‑side affinity from user participation |
-| \( \varepsilon_1, \varepsilon_3 \) | Attrition rates |
-| \( \varepsilon_2, \varepsilon_4 \) | Growth intensities |
-| \( P_u, P_m \) | Platform extraction rates (fees, ads, subscriptions) |
-| \( Q(t) \) | Platform quality |
-| \( \pi \) | Platform profit |
+| $n_u(t)$ | User mass at time $t$ |
+| $n_m(t)$ | Merchant/advertiser/content‑provider mass |
+| $g_u(n_m)$ | User‑side affinity from merchant participation |
+| $g_m(n_u)$ | Merchant‑side affinity from user participation |
+| $\varepsilon_1, \varepsilon_3$ | Attrition rates |
+| $\varepsilon_2, \varepsilon_4$ | Growth intensities |
+| $P_u, P_m$ | Platform extraction rates (fees, ads, subscriptions) |
+| $Q(t)$ | Platform quality |
+| $\pi$ | Platform profit |
 
 These models predict the lifecycle Doctorow describes: early value creation, lock‑in, extraction, and eventual decline.
 
