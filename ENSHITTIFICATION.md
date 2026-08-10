@@ -260,16 +260,18 @@ These models predict the lifecycle Doctorow describes: early value creation, loc
 
 ---
 
-## **Restoring Old Technology as Demonstration**
+## 🛠️ Experiment: Restoring Old Technology
+**Restoring Old Technology as Demonstration**
 
 Restoring older, high‑quality technology—such as durable appliances or mechanically robust vehicles—illustrates what engineering looked like before profit extraction dominated design. These artifacts embody:
-
 - longevity  
 - repairability  
 - material quality  
 - user‑centric design  
 
-They serve as tangible counterexamples to modern product decay.
+They serve as tangible counterexamples to modern product decay. The restoration becomes a metaphor:
+- Old tech = built to last
+- New tech = built to extract
 
 ---
 
