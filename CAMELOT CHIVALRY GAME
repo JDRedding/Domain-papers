@@ -1,0 +1,262 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║                         C A M E L O T                            ║
+║                                                                  ║
+║         (Originally published as CHIVALRY)                       ║
+║                                                                  ║
+║         A Game of Skill for Two Players                          ║
+║         Invented by George S. Parker                             ║
+║         Patent US 1,780,038 (1930)                               ║
+║                                                                  ║
+║              COMPLETE RULESET BOOKLET                            ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────┐
+│  1. INTRODUCTION                                                 │
+└──────────────────────────────────────────────────────────────────┘
+
+Camelot is a two-player abstract strategy game combining the 
+freedom of movement of medieval combat with elements of chess 
+and checkers. Pieces begin in open battle formation near the 
+center of the board rather than on the back ranks. The object 
+is either to occupy the opponent’s two goal squares (the 
+“castle”) with two of your own pieces, or to capture all of 
+the opponent’s pieces while retaining at least two of your own.
+
+The game emphasizes tactical combinations, multi-directional 
+leaps, and the powerful “Knight’s Charge.”
+
+┌──────────────────────────────────────────────────────────────────┐
+│  2. EQUIPMENT                                                    │
+└──────────────────────────────────────────────────────────────────┘
+
+• Board of 160 squares (checkered, alternating colors).
+• Two sets of 14 pieces each:
+    – 10 Men (foot soldiers / lower order)
+    – 4 Knights (mounted / higher order)
+• Pieces of contrasting colors (traditionally White/Red vs 
+  Black/Yellow). Knights are distinguished by a head, 
+  projection, or different shape/color marking.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  3. THE BOARD                                                    │
+└──────────────────────────────────────────────────────────────────┘
+
+The board is roughly rectangular but stepped at the ends:
+
+  • Central body: 10 transverse rows of 12 squares.
+  • Each end narrows symmetrically:
+      – One row of 10 squares
+      – One row of 8 squares
+      – Two adjacent goal squares (the Castle) projecting 
+        outward at mid-width.
+
+The two Castle squares at each end are usually marked with 
+stars or similar symbols. All squares are playable resting 
+places for any piece. Movement is possible in eight directions 
+(orthogonal and diagonal) on the existing squares.
+
+White’s Castle occupies the two squares at the bottom end 
+(commonly labeled F1 and G1).  
+Black’s Castle occupies the two squares at the top end 
+(commonly labeled F16 and G16).
+
+┌──────────────────────────────────────────────────────────────────┐
+│  4. SETUP                                                        │
+└──────────────────────────────────────────────────────────────────┘
+
+Pieces start in opposing battle lines near the center of the 
+board, with two empty transverse rows between the forces. 
+Each side is well advanced from its own Castle.
+
+Standard starting positions (files A–L left to right, ranks 
+1–16 bottom to top; White at bottom):
+
+  White Knights : C6, D7, I7, J6
+  White Men     : D6, E6, E7, F6, F7, G6, G7, H6, H7, I6
+
+  Black Knights : C11, D10, I10, J11
+  Black Men     : D11, E10, E11, F10, F11, G10, G11, H10, H11, I11
+
+(The board is often marked with dots or symbols indicating 
+these starting squares.)
+
+White moves first. Players alternate turns. On each turn a 
+player must move exactly one of their own pieces.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  5. MOVEMENT RULES                                               │
+└──────────────────────────────────────────────────────────────────┘
+
+All movement is in any of the eight directions (horizontal, 
+vertical, or diagonal) along straight lines of adjacent 
+squares. A piece may never land on or jump over an occupied 
+square except as specifically allowed by the leap rules below.
+
+There are four types of moves:
+
+────────────────────────────────────────────────────────────────────
+5.1  PLAIN MOVE  (Men and Knights)
+────────────────────────────────────────────────────────────────────
+Move one square in any direction to an adjacent empty square.
+(Identical to the move of a King in chess.)
+
+────────────────────────────────────────────────────────────────────
+5.2  CANTER  (Men and Knights)
+────────────────────────────────────────────────────────────────────
+Leap over an adjacent friendly piece (Man or Knight) to the 
+empty square immediately beyond it in a straight line.
+
+• Multiple successive canters are allowed in a single turn.
+• Direction may change after each individual leap.
+• Friendly pieces leaped over remain on the board.
+• A canter is always optional (never forced).
+• A piece may not end a canter on the square from which it 
+  began the move (no null moves / “passing”).
+
+Purpose: rapid repositioning, advance, retreat, or support.
+
+────────────────────────────────────────────────────────────────────
+5.3  JUMP (Capture)  (Men and Knights)
+────────────────────────────────────────────────────────────────────
+Leap over an adjacent enemy piece to the empty square 
+immediately beyond it in a straight line, capturing and 
+removing the enemy piece from the board.
+
+• Multiple successive jumps are allowed (and required when 
+  possible) in a single turn.
+• Direction may change after each individual jump.
+• Captured pieces are removed immediately.
+• A series of jumps must continue until no further jump is 
+  available from the landing square.
+
+────────────────────────────────────────────────────────────────────
+5.4  KNIGHT’S CHARGE  (Knights only)
+────────────────────────────────────────────────────────────────────
+A single compound move consisting of one or more Canters 
+followed immediately by one or more Jumps, in that order only.
+
+• Canters first, then jumps. The two phases may not be mixed 
+  or reversed.
+• Multiple canters and multiple jumps are permitted.
+• Direction may change after each individual leap.
+• If, after any canter, the Knight lands next to an exposed 
+  enemy piece that can be jumped, it must jump (unless a 
+  different continuation of the same charge later captures 
+  elsewhere).
+• Once jumping begins, the Knight must continue jumping as 
+  long as further captures are available.
+• A Knight’s Charge is never obligatory in itself; however, 
+  once a canter portion brings the Knight next to a capturable 
+  enemy, the jump becomes required as part of that charge.
+
+Men cannot perform a Knight’s Charge.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  6. CAPTURE OBLIGATIONS                                          │
+└──────────────────────────────────────────────────────────────────┘
+
+• If any jump (ordinary or as part of a Knight’s Charge) is 
+  available, the player must make a capturing move that turn.
+• The obligation is satisfied by any legal capture (ordinary 
+  Jump or Knight’s Charge). The player is not required to make 
+  the longest possible capture.
+• A pure canter or plain move is illegal when a capture is 
+  possible.
+• Exception: A Knight’s Charge is not forced merely because it 
+  is possible. If the only way to capture is via a Knight’s 
+  Charge, the player is not obliged to capture.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  7. CASTLE / GOAL RULES                                          │
+└──────────────────────────────────────────────────────────────────┘
+
+• The object squares (Castles) at each end are the two adjacent 
+  goal squares.
+
+• A player may not enter their own Castle by a Plain Move or 
+  a Canter. A piece may land on its own Castle only by jumping 
+  an enemy piece that stands adjacent to the Castle (or during 
+  the jumping portion of a Knight’s Charge).
+
+• If a piece jumps into its own Castle and can continue jumping 
+  out, it must do so as part of the same move. If it cannot 
+  continue, it must leave the Castle on the player’s next turn 
+  (and must capture if a jump is available from that position).
+
+• Once a piece enters the opponent’s Castle it may not leave 
+  the Castle area (except to move between the two Castle 
+  squares themselves). A player is limited to a small number 
+  of such inter-Castle moves (commonly two per game under 
+  modern interpretations).
+
+• A player may not permanently occupy their own Castle merely 
+  to block the opponent.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  8. WINNING CONDITIONS                                           │
+└──────────────────────────────────────────────────────────────────┘
+
+A player wins by achieving any one of the following:
+
+  1. Occupying both of the opponent’s Castle squares with any 
+     two of their own pieces (Men or Knights).
+
+  2. Capturing all of the opponent’s pieces while still 
+     retaining two or more of their own pieces.
+
+  3. Having two or more pieces remaining while the opponent 
+     has no legal move.
+
+The game is a draw if both players are reduced to one piece 
+(or fewer) each.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  9. ADDITIONAL NOTES                                             │
+└──────────────────────────────────────────────────────────────────┘
+
+• Pieces of either type may occupy any square on the board 
+  (no restricted zones except the special Castle entry rules).
+
+• There is no “flying” or long-range non-leaping movement; all 
+  leaps are short (over one adjacent piece to the square 
+  immediately beyond).
+
+• The game has no element of chance. Skill, calculation of 
+  multi-leap combinations, and control of the center and 
+  flanks decide the outcome.
+
+• The original patent stresses the simulation of open medieval 
+  battlefield combat: forces start advanced, pieces may freely 
+  advance, retire, or move laterally/diagonally, and Knights 
+  can charge through friendly ranks into the enemy.
+
+┌──────────────────────────────────────────────────────────────────┐
+│ 10. EXAMPLE SEQUENCE (from the patent description)               │
+└──────────────────────────────────────────────────────────────────┘
+
+A typical long Knight’s Charge might involve:
+
+  Canter over a friendly Knight → land  
+  Canter laterally over a friendly Man → land  
+  Jump diagonally over an enemy Man (capture) → land  
+  Jump forward over another enemy Man (capture) → land  
+  Jump diagonally backward over an enemy Knight (capture) → land  
+  Jump over a final enemy Knight (capture) → final landing square.
+
+Such multi-directional combinations are the hallmark of high-level 
+play.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  END OF RULESET                                                  │
+│                                                                  │
+│  Play with clarity, calculate deeply, and enjoy the freedom      │
+│  of the open field.                                              │
+└──────────────────────────────────────────────────────────────────┘
+
+# External links
+* US1780038A https://patents.google.com/patent/US1780038A/en
+* Official website World Camelot Federation (WCF) http://www.worldcamelotfederation.com/)
+* Zillions of Games free Camelot rules file https://www.zillions-of-games.com/cgi-bin/zilligames/submissions.cgi/66545?do=show;id=36)
+* igGameCenter Camelot rules with illustrations https://www.iggamecenter.com/info/en/camelot.html 
