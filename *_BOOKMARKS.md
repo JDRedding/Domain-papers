@@ -320,6 +320,7 @@
 | Site | URL |
 |------|-----|
 | Hyperspace | [https://evolvecode.io/hyperspace/index.html](https://evolvecode.io/hyperspace/index.html) |
+| wine-assembly |[https://wine-assembly.berrry.app/](https://wine-assembly.berrry.app/) |
 
 </details>
 
