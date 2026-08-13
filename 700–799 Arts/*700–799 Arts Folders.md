@@ -129,14 +129,25 @@ Class 700: The arts (fine & decorative arts) / Arts & recreation
 | 789 | (Optional number) |
 
 790 Recreational & performing arts
+
 | Number | Heading |
 |--------|---------|
 | 790 | Recreational & performing arts |
 | 791 | Public performances |
 | 792 | Stage presentations |
+
+Indoor Games 
+
+| Number | Heading |
+|--------|---------|
 | 793 | Indoor games & amusements |
 | 794 | Indoor games of skill |
 | 795 | Games of chance |
+
+Outdoor Games
+
+| Number | Heading |
+|--------|---------|
 | 796 | Athletic & outdoor sports & games |
 | 797 | Aquatic & air sports |
 | 798 | Equestrian sports & animal racing |
