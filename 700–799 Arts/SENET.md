@@ -238,3 +238,26 @@ WIN:
 - **Power:** Throw values (1–5).  
 - **Evaluation:** Position relative to special squares; risk of reset.  
 - **Dynamics:** Flow through symbolic houses; bottlenecks; tempo control.
+
+---
+
+## 🜁 SENET board
+This [SENET board](https://github.com/JDRedding/Domain-papers/blob/main/700%E2%80%93799%20Arts/SENET%20board.png) design closely resembles the **British Museum’s Senet replica** and the **Metropolitan Museum’s 18th‑Dynasty examples**.  It’s ideal for playing under **Kendall’s Rules** or the **WikiHow variant** mentioned.
+
+### 🜂 Structural Accuracy
+- It has **30 squares**, the canonical Senet layout.  
+- The **serpentine numbering** (1–10, then 11–20, then 21–30) matches the archaeological pattern found on New Kingdom boards.  
+- The **special houses** (Rebirth, Happiness, Water, Sun, Moon) correspond to the symbolic “afterlife” squares.
+
+### 🜃 Functional Playability
+- The grid spacing is clear enough for coins or small tokens.  
+- The engraved symbols make it easy to identify special squares without confusion.  
+- The wooden frame prevents pieces from sliding — practical for physical play.
+
+- ### 🜁 Symbolic Fidelity
+- The **House of Rebirth**, **House of Happiness**, and **House of Water** are all present — these are the three critical “endgame” squares.  
+- The addition of **House of the Sun** and **House of the Moon** is a stylistic flourish found on some museum replicas; doesn’t alter gameplay but enrich the cosmological symbolism.  
+- The **ankh**, **waves**, **triangles**, and **dots** are authentic Egyptian motifs used to mark safe or special squares.
+
+
+
