@@ -1,0 +1,66 @@
+**OPGW (Optical Fiber Composite Overhead Ground Wire)** 
+Dual-purpose cable used on high-voltage transmission lines.
+It serves as a conventional overhead ground/shield wire (for lightning protection and fault current return) while embedding optical fibers for telecommunications, SCADA, protection signaling, and data transmission.
+
+It is installed at the top of transmission towers in the shield-wire position.
+
+### Key Standards
+- **IEEE Std 1138-2021** (revision of 2009): Primary standard covering performance, testing, design, installation, in-service, and maintenance requirements for OPGW. It addresses electrical, mechanical, optical, environmental, and packaging aspects.
+- **IEC 60794-4** (and related parts such as 60794-4-10): Sectional specification for aerial optical cables along power lines, including OPGW.
+- Fiber standards: ITU-T G.652.D (most common), sometimes G.655 or G.657.
+- Wire standards: ASTM B415 (aluminum-clad steel), ASTM B398 / IEC 60104 (aluminum alloy), IEC 61232, etc.
+
+### Construction Types
+OPGW designs protect the optical fibers (typically in gel-filled loose tubes) within a metallic structure while providing the required mechanical strength and electrical conductivity. Common configurations include:
+
+- **Central tube** (stainless steel tube or aluminum tube housing the fibers).
+- **Stranded/layer designs** (single or multi-layer outer armor of aluminum-clad steel (ACS) and/or aluminum alloy (AA) wires).
+- Hybrid options such as aluminum-clad stainless steel tube or PBT loose tubes inside aluminum pipes.
+
+Fiber counts typically range from 12–96 (common), with high-count designs reaching 144–288 or more.
+
+### Optical Specifications (Typical for G.652.D Fiber)
+- Attenuation: ≤ 0.34–0.36 dB/km at 1310 nm; ≤ 0.20–0.22 dB/km at 1550 nm; ≤ 0.22–0.25 dB/km at 1625 nm.
+- Mode field diameter: ≈ 9.2 ± 0.4 μm at 1310 nm.
+- Cladding diameter: 125 ± 0.7 μm.
+- Chromatic dispersion, PMD, and other parameters per ITU-T G.652.D.
+- Fibers are color-coded and protected against hydrogen, moisture, and mechanical stress.
+
+### Mechanical Specifications (Typical Ranges)
+These vary significantly by design (lightweight vs. high-strength for long spans or high fault levels):
+
+| Parameter                  | Typical Range                  | Notes |
+|----------------------------|--------------------------------|-------|
+| Overall diameter           | 9–20 mm (often 11–15 mm)      | Constrained by tower hardware |
+| Unit weight                | 250–800+ kg/km                | Lower weight reduces tower loading |
+| Rated/Ultimate Tensile Strength (RTS/UTS) | 40–200+ kN                  | Fiber unit strength usually excluded from rating |
+| Modulus of elasticity      | 70–140 kN/mm²                 | |
+| Coefficient of linear expansion | 13–20 × 10⁻⁶ /°C            | |
+| Minimum bending radius     | Static: 15D–20D; Dynamic/installation higher (often 150–450 mm) | D = cable diameter |
+
+Everyday stress is typically limited to 16–25% of RTS; maximum allowable tension often ≤ 40% RTS.
+
+### Electrical and Thermal Specifications
+- DC resistance (20 °C): Typically 0.3–1.0 Ω/km (lower for higher aluminum content).
+- Short-circuit current capacity: Expressed as I²t (kA²s), commonly 20–200+ kA²s (temperature rise limited, e.g., from 40 °C ambient to 180–200 °C final).
+- Equivalent 1-second short-circuit current: Often 5–15+ kA depending on design.
+- Lightning withstand and fault-current dissipation are critical design drivers; larger outer wires improve lightning resistance.
+
+### Environmental and Other Requirements
+- Operating temperature: Typically –40 °C to +70/85 °C.
+- Installation temperature: –20/–10 °C to +50/60 °C.
+- Design life: 30–60 years.
+- Must withstand aeolian vibration, galloping, crush, impact, creep, water ingress, and temperature cycling per IEEE 1138 / IEC tests.
+- Packaging: Supplied on reels with specified maximum continuous lengths (often several km).
+
+### Design Considerations
+OPGW is customized for each transmission line based on:
+- Required short-circuit rating and lightning performance.
+- Mechanical loading (span length, ice/wind, sag-tension).
+- Fiber count and type for the communication system.
+- Compatibility with existing ground wire hardware and towers.
+- Corrosion environment (e.g., aluminum cladding preferred in some coastal areas).
+
+Manufacturers (AFL, Prysmian, ZTT, Sterlite, Incab, etc.) publish extensive catalogs of standard and custom designs meeting IEEE 1138 and IEC requirements. Actual parameters for a project are selected or engineered to match the specific line’s electrical, mechanical, and optical needs.
+
+For project-specific designs, refer to manufacturer datasheets or utility standards that reference IEEE 1138-2021.
