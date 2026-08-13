@@ -1,4 +1,4 @@
-**OPGW (Optical Fiber Composite Overhead Ground Wire)** 
+# **OPGW (Optical Fiber Composite Overhead Ground Wire)** 
 Dual-purpose cable used on high-voltage transmission lines.
 It serves as a conventional overhead ground/shield wire (for lightning protection and fault current return) while embedding optical fibers for telecommunications, SCADA, protection signaling, and data transmission.
 
