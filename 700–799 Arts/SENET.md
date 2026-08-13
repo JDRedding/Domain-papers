@@ -242,7 +242,7 @@ WIN:
 ---
 
 ## 🜁 SENET board
-This [SENET board](https://github.com/JDRedding/Domain-papers/blob/main/700%E2%80%93799%20Arts/SENET%20board.png) design closely resembles the **British Museum’s Senet replica** and the **Metropolitan Museum’s 18th‑Dynasty examples**.  It’s ideal for playing under **Kendall’s Rules** or the **WikiHow variant** mentioned.
+This [SENET board](https://github.com/JDRedding/Domain-papers/blob/main/700%E2%80%93799%20Arts/SENET%20board.png) design closely resembles the **British Museum’s Senet replica** and the **Metropolitan Museum’s 18th‑Dynasty examples**.  It’s ideal for playing under **Kendall’s Rules** or the **variant** mentioned.
 
 ### 🜂 Structural Accuracy
 - It has **30 squares**, the canonical Senet layout.  
