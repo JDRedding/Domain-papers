@@ -1,4 +1,6 @@
 ## Domain‑Papers  
+005.1	Software documentation
+
 The **domain‑papers** repository is a ten‑domain container that mirrors a decimal system’s top‑level classes. Each folder represents a distinct knowledge territory — a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross‑pollinate. The structure is intentionally broad and durable, giving a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
 
 This repository functions as a **living research library**. Works may remain here indefinitely as standalone artifacts, or they may later be extracted into dedicated repositories as they mature into larger research programs, formal papers, or software projects. The library is designed to support both incubation and expansion without forcing premature consolidation.
