@@ -1,0 +1,240 @@
+#  SENET 
+— FORMAL RULEBOOK
+
+## 0. PURPOSE
+This rulebook defines a complete, playable version of **Kendall’s reconstructed Senet**, the academically grounded interpretation of the ancient Egyptian game. Optional sections note **modern variants** for comparison.
+
+---
+
+## 1. COMPONENTS
+
+### 1.1 Board Layout (Serpentine Numbering)
+```
+Row 1 → (left to right)
+  1  2  3  4  5  6  7  8  9 10
+
+Row 2 ← (right to left)
+ 20 19 18 17 16 15 14 13 12 11
+
+Row 3 → (left to right)
+ 21 22 23 24 25 26 27 28 29 30
+```
+
+Movement path:
+```
+1 → 10 → 11 → 20 → 21 → 30 → off-board
+```
+
+### 1.2 Pawns
+- Kendall: **7 pawns per player**.  
+- variant: **5 pawns per player**.
+
+### 1.3 Throwing Implements
+Kendall:
+- Throw **5 coins**; heads = 1 point → movement value 1–5.
+
+variant:
+- Throw **4 sticks**; blank sides count upward:
+```
+1 blank → move 1
+2 blanks → move 2
+3 blanks → move 3
+4 blanks → move 4
+0 blanks → move 5
+```
+- Extra turns on 1, 4, or 5.
+
+---
+
+## 2. SETUP
+
+### 2.1 Initial Placement
+Place pawns **alternating** on squares **1–14**:
+```
+A: 1, 3, 5, 7, 9, 11, 13
+B: 2, 4, 6, 8, 10, 12, 14
+```
+
+variant:
+```
+A: 1, 3, 5, 7, 9
+B: 2, 4, 6, 8, 10
+```
+
+### 2.2 Starting Square
+Square **15** = House of Rebirth.  
+Symbolic beginning of the spiritual journey.
+
+---
+
+## 3. TURN STRUCTURE
+
+### 3.1 Throw Phase
+Kendall:
+- Toss 5 coins → heads = movement value.
+
+variant:
+- Toss 4 sticks → blanks determine movement.
+
+### 3.2 Move Phase
+- Choose **one pawn**.
+- Move forward along the serpentine path.
+- Only one pawn per square.
+
+### 3.3 Occupied Destination Rule
+Kendall:
+- Landing on opponent → **swap positions**.
+
+variant:
+- Landing on opponent → **capture** (opponent returns to your starting square).
+
+### 3.4 Extra Turns
+Kendall:
+- **No extra turns**.
+
+variant:
+- Extra turn on throws of **1, 4, or 5**.
+
+---
+
+## 4. SPECIAL SQUARES
+
+### 4.1 Square 15 — House of Rebirth
+- Return point for pawns forced back from Square 27.
+
+### 4.2 Square 26 — House of Happiness
+- **Mandatory stop** before exiting the board.
+
+### 4.3 Square 27 — House of Water
+- If a pawn on **28–30** cannot exit due to an invalid throw:
+  - Pawn moves **back to 27**.
+  - Next move must return to **15**.
+
+### 4.4 Square 28 — House of the Three Truths
+- Pawn may leave only on a **throw of 3**.
+
+### 4.5 Square 29 — House of Re‑Atoum
+- Pawn may leave only on a **throw of 2**.
+
+### 4.6 Square 30 — Final House
+- Pawn may leave on **any valid throw**.
+
+---
+
+## 5. EXITING THE BOARD 
+
+A pawn may exit only if:
+
+1. It has landed on **26**.  
+2. It is on **28, 29, or 30**.  
+3. The throw matches the square’s requirement:
+
+```
+28 → must throw 3
+29 → must throw 2
+30 → any valid throw
+```
+
+### 5.1 Failure to Exit
+- Pawn moves back to **27**.
+- Next move returns to **15**.
+
+---
+
+## 6. BLOCKING & INTERACTION RULES
+
+### 6.1 No Captures (Kendall)
+- Only **swaps**, never removal.
+
+### 6.2 Blockades (variant)
+- Three adjacent opponent pawns form a **barrier** you cannot pass.
+
+### 6.3 Safe Groups (variant)
+- Two adjacent opponent pawns cannot be captured.
+
+---
+
+## 7. WIN CONDITION
+Kendall:
+- First player to remove **all 7 pawns** wins.
+
+variant:
+- First player to remove **all 5 pawns** wins.
+
+---
+
+## 8. QUICK REFERENCE
+
+```
+THROW:
+ 5 coins → heads = movement (1–5)
+
+MOVE:
+ Choose one pawn → advance along serpentine path
+
+OCCUPIED DESTINATION:
+ Swap with opponent pawn
+
+SPECIAL SQUARES:
+ 15 → Rebirth (return point)
+ 26 → Mandatory stop
+ 27 → Water (reset to 15)
+ 28 → Exit only on 3
+ 29 → Exit only on 2
+ 30 → Exit on any valid throw
+
+EXIT RULE:
+ Must have visited 26
+ Must be on 28–30
+ Must match exit throw requirement
+
+WIN:
+ Remove all 7 pawns
+```
+
+---
+
+## 9. OPTIONAL MODERN RULESET
+
+```
+PAWNS:
+ 5 per player
+
+THROW:
+ 4 sticks → blanks = movement
+ Extra turn on 1, 4, 5
+
+CAPTURE:
+ Landing on opponent → opponent returns to your starting square
+
+BLOCKADES:
+ 3 adjacent pawns = impassable
+
+SAFE GROUPS:
+ 2 adjacent pawns cannot be captured
+
+SPECIAL SQUARES:
+ 15 → return to square 1
+ 26 → mandatory stop
+ 27 → must use same pawn next turn; may return to 15 or try for 4 blanks
+ 28 → exit only on 3 blanks
+ 29 → exit only on 2 blanks
+ 30 → exit on any blanks
+
+WIN:
+ Remove all 5 pawns
+```
+
+---
+
+## 10. SUMMARY
+
+### SID (Structure–Interaction–Dynamics)
+- **Structure:** 30‑square serpentine track; special houses at 15, 26–29.  
+- **Interaction:** Swaps or captures; mandatory stops; conditional exits.  
+- **Dynamics:** Stochastic movement; reset loops; race-to-exit.
+
+### PED (Power–Evaluation–Dynamics)
+- **Power:** Throw values (1–5).  
+- **Evaluation:** Position relative to special squares; risk of reset.  
+- **Dynamics:** Flow through symbolic houses; bottlenecks; tempo control.
