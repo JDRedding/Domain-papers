@@ -251,8 +251,7 @@ This [SENET board](https://github.com/JDRedding/Domain-papers/blob/main/700%E2%8
 
 ### 🜃 Functional Playability
 - The grid spacing is clear enough for coins or small tokens.  
-- The engraved symbols make it easy to identify special squares without confusion.  
-- The wooden frame prevents pieces from sliding — practical for physical play.
+- The symbols make it easy to identify special squares without confusion.  
 
 - ### 🜁 Symbolic Fidelity
 - The **House of Rebirth**, **House of Happiness**, and **House of Water** are all present — these are the three critical “endgame” squares.  
