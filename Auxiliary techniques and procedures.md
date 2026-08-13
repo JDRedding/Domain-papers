@@ -1,0 +1,45 @@
+# Auxiliary techniques and procedures; apparatus, equipment, materials
+Natural sciences & mathematics
+
+The *supporting methods and tools* used across scientific and mathematical disciplines — everything that enables experimentation, measurement, computation, and analysis. 
+
+### 🧠 How in practice
+
+The **infrastructure that makes scientific work possible**, the toolbox behind physics, chemistry, biology, and mathematics.
+
+### 🔧 Core Components
+
+#### 1. **Auxiliary techniques**  
+Methods that support primary scientific investigation.  
+- Sample preparation (centrifugation, staining, fixation)  
+- Calibration and standardization procedures  
+- Numerical methods and computational techniques  
+- Error analysis and uncertainty quantification  
+
+#### 2. **Laboratory procedures**  
+Standardized workflows used across natural sciences.  
+- Titration, chromatography, spectrometry  
+- Sterilization, aseptic technique  
+- Measurement protocols and instrument operation  
+
+#### 3. **Scientific apparatus**  
+Physical tools enabling observation, manipulation, or measurement.  
+- Microscopes, telescopes, spectrometers  
+- Balances, calorimeters, oscilloscopes  
+- Sensors and probes (temperature, pressure, pH, radiation)
+
+#### 4. **Equipment systems**  
+Integrated setups rather than single devices.  
+- Clean rooms  
+- High‑performance computing clusters  
+- Particle detectors  
+- Environmental chambers  
+
+#### 5. **Materials**  
+Substances used to conduct experiments or build apparatus.  
+- Reagents, solvents, catalysts  
+- Alloys, polymers, composites  
+- Biological media, buffers, substrates  
+
+---
+
