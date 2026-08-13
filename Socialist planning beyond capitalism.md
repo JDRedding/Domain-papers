@@ -1,0 +1,203 @@
+# **Socialist planning beyond capitalism**
+A multi‑layer coordination architecture that replaces price‑mediated allocation with algorithmic, participatory, and cybernetic mechanisms for aggregating information, setting priorities, and executing production.** Its feasibility hinges on computational tractability, institutional design, and the integration of local knowledge into global plans.
+
+---
+
+## 1. Core structural principles  
+### 🏭 **Collective Ownership**  
+Ownership becomes a governance problem rather than a property-rights problem. The key distinction is not “state vs private” but **who controls the surplus and who sets production priorities**. Collective ownership can be:
+
+- State-administered (classical central planning)  
+- Cooperative (Yugoslav-style self-management)  
+- Polycentric (municipal, sectoral, or federated councils)  
+- Digital commons (platform cooperatives, open production networks)
+
+The mechanism-level question: **How does ownership structure map into decision rights and information flows?**
+
+### 📊 **Planning as Coordination**  
+Planning replaces market price signals with:
+
+- Input-output matrices  
+- Constraint satisfaction systems  
+- Optimization routines  
+- Cybernetic feedback loops  
+- Participatory preference aggregation
+
+The planner’s job is not “micromanage everything” but **solve a large-scale resource allocation problem under social objectives**.
+
+### ❤️ **Social Need over Profit**  
+This requires **explicit objective functions**, e.g.:
+
+- Minimize unmet basic needs  
+- Minimize ecological damage  
+- Maximize long-term resilience  
+- Maximize equality of access  
+- Maintain sectoral stability
+
+Unlike profit, these objectives must be **constructed**, not emergent.
+
+### 🗳️ **Participatory Decision-Making**  
+Democratic planning is a *signal-processing problem*: how to translate millions of preferences into coherent production targets. Mechanisms include:
+
+- Nested councils  
+- Digital deliberation platforms  
+- Sortition-based assemblies  
+- Preference aggregation algorithms  
+- Participatory budgeting extended to production
+
+---
+
+## 2. Theoretical mechanisms  
+### 🔁 **Input-Output & Cybernetics**  
+Leontief matrices give a static snapshot of interdependencies. Cybernetics (Beer’s Viable System Model) adds:
+
+- Real-time feedback  
+- Error correction  
+- Adaptive control  
+- Distributed autonomy
+
+This shifts planning from “blueprints” to **dynamic regulation**.
+
+### 📐 **Mathematical Optimization**  
+Planning becomes a constrained optimization problem:
+
+$$
+\text{Maximize } W(x) \quad \text{subject to } Ax \leq b
+$$
+
+Where:  
+- $W(x)$ = social welfare function  
+- $A$ = technical coefficients  
+- $b$ = resource constraints  
+- $x$ = production vector
+
+Modern proposals use:
+
+- Linear programming  
+- Mixed-integer programming  
+- Multi-objective optimization  
+- Agent-based simulation  
+- Distributed constraint satisfaction
+
+### 🧠 **Information Aggregation**  
+Hayek’s critique is fundamentally about **distributed epistemics**. Modern responses include:
+
+- IoT-based real-time inventory tracking  
+- Machine learning demand forecasting  
+- Decentralized planning protocols  
+- Federated learning for local knowledge integration  
+- Blockchain-style audit trails for transparency
+
+The frontier question: **Can computational systems substitute for price signals as information carriers?**
+
+---
+
+## 3. Historical and contemporary examples  
+### 🛠️ **Soviet Central Planning**  
+Strengths:  
+- Rapid industrialization  
+- Large-scale mobilization  
+- High investment rates
+
+Failures:  
+- Soft budget constraints  
+- Chronic shortages  
+- Low consumer responsiveness  
+- Information bottlenecks
+
+### 🤝 **Yugoslav Self-Management**  
+A hybrid model with:  
+- Worker councils  
+- Market-like coordination  
+- National investment planning
+
+It solved some Soviet problems but introduced others (e.g., inflation, regional disparities).
+
+### 🌐 **Digital & Ecological Planning**  
+Emerging models include:
+
+- Algorithmic coordination platforms  
+- Ecological planning with carbon budgets  
+- Participatory digital planning (e.g., Taiwan’s vTaiwan as a proto-model)  
+- Post-market provisioning systems (e.g., Barcelona’s municipalist networks)
+
+---
+
+## 4. What “beyond capitalism” actually means  
+### 🚫 **Post-Market Allocation**  
+Markets may remain for non-essential goods, but essentials (healthcare, housing, energy, food) shift to planned provisioning.
+
+### 🔄 **Socialization of Surplus**  
+Investment becomes a collective decision problem:  
+- Democratic investment boards  
+- Sectoral planning councils  
+- Long-term ecological constraints
+
+### 🧩 **Adaptive Planning**  
+Planning becomes iterative, not static. Think:
+
+- Continuous feedback  
+- Real-time data  
+- Rolling plans  
+- Dynamic reallocation
+
+### 🌱 **Ethical & Ecological Constraints**  
+Ecology becomes a **hard constraint**, not an externality.
+
+---
+
+## 5. Challenges  
+### ⚙️ **Computational Complexity**  
+Large economies produce NP-hard allocation problems. Solutions require:
+
+- Decomposition  
+- Distributed optimization  
+- Heuristics  
+- Multi-agent coordination
+
+### 🚀 **Innovation Without Markets**  
+Innovation must be institutionally designed:
+
+- Public R&D ecosystems  
+- Open innovation networks  
+- Cooperative competition  
+- Prize systems  
+- Democratic technology councils
+
+### 🗳️ **Democratic Effectiveness**  
+Participation must be meaningful, not symbolic. Requires:
+
+- Clear decision rights  
+- Transparent data  
+- Accessible interfaces  
+- Anti-capture mechanisms
+
+### 🌍 **Flexibility vs Stability**  
+Planned systems must handle shocks:
+
+- Supply chain disruptions  
+- Climate events  
+- Technological shifts  
+- Geopolitical pressures
+
+---
+
+## Synthesis  
+
+- Uses computational tools instead of price signals  
+- Embeds democratic input instead of shareholder control  
+- Treats ecology as a binding constraint  
+- Socializes surplus and long-term investment  
+- Operates adaptively rather than rigidly  
+
+It is fundamentally a **coordination problem**, not an ideological slogan.
+
+---
+
+## Future Work
+
+- A **formal mechanism design model** of post-market allocation  
+- A **taxonomy** of planning architectures (centralized, polycentric, cybernetic, algorithmic)  
+- A **comparative analysis** of planning vs market information flows  
+- A **dynamical systems model** of adaptive planning (aligned with your RDG/MFE interests)
+
