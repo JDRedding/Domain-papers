@@ -1,5 +1,5 @@
 # *Ogre*
-—components, units, movement, combat, scenarios, and strategy. 
+— components, units, movement, combat, scenarios, and strategy. 
 
 ## Core takeaway
 **Ogre is an asymmetric wargame built around a single unstoppable cybernetic tank versus a combined‑arms defender force, with gameplay defined by subsystem-targeted combat, terrain‑modulated movement, and scenario‑driven force balance.** 
