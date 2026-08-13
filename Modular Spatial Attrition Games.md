@@ -1,0 +1,167 @@
+# **Modular Spatial Attrition Games**
+General Ruleset 
+
+## **1. 🧩 Game Entities**  
+Entities are composite objects made of discrete components.
+
+### **1.1 Entity Structure**
+Each entity is defined as:
+- **Core Node** — the critical component whose loss defeats the entity.  
+- **Component Set** — attachable modules that provide attributes, capabilities, or defenses.  
+- **Attribute Set** — non‑physical modifiers (skills, runes, traits, scripts).
+
+### **1.2 Component Properties**
+Each component has:
+- Name  
+- Function  
+- Defense/Block value  
+- Weight/Cost  
+- Special effects  
+- Removal consequence  
+
+### **1.3 Entity Defeat**
+An entity is defeated when:
+- Its **Core Node** is removed  
+- OR a rule‑defined terminal condition is met (e.g., integrity ≤ 0)
+
+---
+
+## **2. 🌐 Spatial Manifold**  
+Play occurs on a structured, modular board.
+
+### **2.1 Board Structure**
+- The board is a **graph** of positions (hexes, squares, nodes).  
+- Boards may be **expanded** by attaching additional segments.  
+- Each position may have **modifiers** (terrain, hazards, buffs).
+
+### **2.2 Movement**
+Movement is determined by:
+- Chance (dice/cards)  
+- Rules (range, adjacency, terrain effects)  
+- Entity attributes (speed modules, flight modules, teleport runes)
+
+### **2.3 Occupancy**
+Positions may:
+- Hold one entity  
+- Hold multiple entities (if rules allow)  
+- Trigger effects when entered
+
+---
+
+## **3. 🎲 Stochastic Operators**  
+Randomization drives movement, targeting, and attribute acquisition.
+
+### **3.1 Movement Operator**
+A random device determines:
+- Distance  
+- Direction  
+- Special movement events  
+
+### **3.2 Targeting Operator**
+A random device selects:
+- Which component is affected  
+- Which entity is targeted  
+- Which spatial region is influenced  
+
+### **3.3 Attribute Injection Operator**
+A random device selects:
+- Which attribute card is drawn  
+- Which module becomes available  
+- Which rule‑patch is applied
+
+---
+
+## **4. 🃏 Attribute Cards**  
+Cards represent modular rule‑patches.
+
+### **4.1 Card Types**
+- **Module Cards** — attachable components (armor, shields, plating, sensors).  
+- **Skill Cards** — abilities or rule‑bending powers.  
+- **Rune Cards** — magical or special‑effect powers.  
+- **Event Cards** — one‑time effects.
+
+### **4.2 Card Structure**
+Each card contains:
+- Name  
+- Attribute/Effect description  
+- Attack/Defense/Block values  
+- Cost (points, energy, influence)  
+- Icon/Metadata  
+- Special rules  
+
+### **4.3 Card Acquisition**
+Cards may be gained by:
+- Chance draw  
+- Purchase  
+- Achievement  
+- Spatial triggers  
+- Entity interactions
+
+---
+
+## **5. ⚔️ Interaction & Attrition**  
+Entities interact through component‑level effects.
+
+### **5.1 Interaction Types**
+- Attack  
+- Block  
+- Spell/Effect  
+- Terrain interaction  
+- Module activation  
+
+### **5.2 Attrition Resolution**
+When an entity is targeted:
+1. A random operator selects a component.  
+2. The component is removed or disabled.  
+3. Attribute sets update accordingly.  
+4. If the removed component is the **Core Node**, the entity is defeated.
+
+### **5.3 Component Removal Effects**
+Removing a component may:
+- Reduce capabilities  
+- Disable movement  
+- Remove defenses  
+- Trigger cascading failures  
+- Modify spatial interaction
+
+---
+
+## **6. 🏆 Victory Conditions**  
+Victory is determined by survival or objective completion.
+
+### **6.1 Survival Victory**
+A player wins if:
+- They have the last remaining undefeated entity  
+- OR they meet a survival threshold
+
+### **6.2 Objective Victory**
+Alternative victory conditions:
+- Capture zones  
+- Complete quests  
+- Accumulate points  
+- Achieve dominance thresholds  
+- Maintain Core Node integrity for N turns
+
+---
+
+## **7. 📐 Turn Structure**  
+A typical turn consists of:
+
+1. **Draw Phase** — acquire cards or resources  
+2. **Movement Phase** — move entities on the spatial manifold  
+3. **Interaction Phase** — attack, cast, activate modules  
+4. **Attrition Phase** — resolve component removal  
+5. **Maintenance Phase** — update states, discard, recharge  
+6. **End Phase** — check victory conditions
+
+---
+
+## **8. 🔧 Optional Advanced Rules**  
+These can be toggled on/off depending on complexity.
+
+- **Fog of War** — hidden components or attributes  
+- **Energy Systems** — modules require energy to activate  
+- **Crafting/Upgrades** — combine components into new modules  
+- **Terrain Effects** — spatial modifiers alter attrition  
+- **Faction Bonuses** — alignment‑based modifiers  
+- **AI Agents** — autonomous entities with rule scripts  
