@@ -24,12 +24,12 @@ $$
 $$
 
 **Notation:**
-- \( F(t) \): Cumulative fraction (or proportion) of the potential market that has adopted by time \( t \) (\( 0 \leq F(t) \leq 1 \)).
-- \( f(t) = \frac{dF}{dt} \): Adoption rate (density) at time \( t \).
-- \( p \): Coefficient of innovation (external influence, advertising, etc.; typically small, e.g., ~0.03 or less).
-- \( q \): Coefficient of imitation (internal influence, word-of-mouth; typically ~0.3–0.5).
+- $F(t)$: Cumulative fraction (or proportion) of the potential market that has adopted by time $t$ ($0 \leq F(t) \leq 1$).
+- $f(t) = \frac{dF}{dt}$: Adoption rate (density) at time $t$.
+- $p$: Coefficient of innovation (external influence, advertising, etc.; typically small, e.g., ~0.03 or less).
+- $q$: Coefficient of imitation (internal influence, word-of-mouth; typically ~0.3–0.5).
 
-Closed-form solution (with \( F(0) = 0 \)):
+Closed-form solution (with $F(0) = 0$):
 
 $$
 F(t) = \frac{1 - e^{-(p+q)t}}{1 + \frac{q}{p} e^{-(p+q)t}}
@@ -64,17 +64,17 @@ $$
 y_t = y_{t-1} + \mu + n_t
 $$
 
-where \( y_t = \ln p_t \) (log cost or performance), \( \mu \) is the drift (average rate of improvement), and \( n_t \) is noise. More refined versions use an integrated moving-average process IMA(1,1) to capture autocorrelation.
+where \$y_t = \ln p_t$ (log cost or performance), $\mu$ is the drift (average rate of improvement), and $n_t$ is noise. More refined versions use an integrated moving-average process IMA(1,1) to capture autocorrelation.
 
 ### 3. Increasing Returns, Path Dependence, and Technological Lock-In (Arthur-type models)
 These formalize how early chance events can lead to one technology dominating (lock-in), even if it is not superior—relevant to soft technological determinism or historical contingency arguments.
 
 In a simple two-technology competing model with increasing returns (network effects or learning), the difference in adopters \( d(t) = n_A(t) - n_B(t) \) can cross absorbing barriers:
 
-- Lock-in to technology A occurs when \( d(t) > S_0 \) (a threshold depending on agent preferences and returns parameters).
-- Lock-in to B when \( d(t) < R_0 \).
+- Lock-in to technology A occurs when $d(t) > S_0$ (a threshold depending on agent preferences and returns parameters).
+- Lock-in to B when $d(t) < R_0$.
 
-Payoffs or attractiveness typically increase linearly with the number of prior adopters (increasing returns parameter \( r \) or \( s > 0 \)). Once a barrier is crossed, the process is locked; the outcome is path-dependent and non-ergodic (small historical events are not averaged away).
+Payoffs or attractiveness typically increase linearly with the number of prior adopters (increasing returns parameter $r$ or $s > 0$). Once a barrier is crossed, the process is locked; the outcome is path-dependent and non-ergodic (small historical events are not averaged away).
 
 ### 4. Related Growth / Combinatorial Innovation Models
 Hyperbolic or super-exponential growth models (sometimes linked to population–technology feedbacks) appear in long-run macrosystem studies:
@@ -83,13 +83,13 @@ $$
 \frac{dN}{dt} = a N^2 \quad \text{(or similar forms)}
 $$
 
-leading to solutions of the form \( N(t) \propto 1/(t_0 - t) \). Combinatorial “adjacent possible” (TAP-style) models count possible new combinations:
+leading to solutions of the form $N(t) \propto 1/(t_0 - t)$. Combinatorial “adjacent possible” (TAP-style) models count possible new combinations:
 
 $$
 M_{t+1} = (1 - \mu) M_t + \sum_{i=1}^{M_t} \alpha_i \binom{M_t}{i}
 $$
 
-where \( M_t \) is the number of existing elements/technologies, and \( \alpha_i \) are realization probabilities.
+where $M_t$ is the number of existing elements/technologies, and $\alpha_i$ are realization probabilities.
 
 ### Important Caveats
 - These are *models of technological change and diffusion*, not equations that “prove” or fully capture philosophical claims about the essence of technology, ethical responsibility, or strong determinism.
