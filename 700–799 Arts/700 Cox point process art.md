@@ -1,4 +1,6 @@
 # **Cox point process art**
+- 700 mathematical generative art
+- 510.72 Probability processes
 
 **Cox (inhomogeneous Poisson) point process of identical vertical segments driven by a smooth noise+gradient scalar field.**
 
