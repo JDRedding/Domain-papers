@@ -136,7 +136,7 @@ Class 700: The arts (fine & decorative arts) / Arts & recreation
 | 791 | Public performances |
 | 792 | Stage presentations |
 
-Indoor Games 
+Indoor Games (793 Games)
 
 | Number | Heading |
 |--------|---------|
