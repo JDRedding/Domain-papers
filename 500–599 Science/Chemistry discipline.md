@@ -19,8 +19,10 @@ Chemistry and allied sciences cover general chemistry, the theory, methods, and 
 
 This subdivision is the most equation-intensive, covering thermodynamics, kinetics, quantum mechanics, spectroscopy, and electrochemistry.
 
-- **Ideal gas law**  
-  $$ PV = nRT $$  
+- **Ideal gas law**
+  
+  $$ PV = nRT $$
+  
   where $P$ = pressure, $V$ = volume, $n$ = amount of substance (moles), $R$ = gas constant, $T$ = absolute temperature.
 
 - **First law of thermodynamics**  
