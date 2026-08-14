@@ -1,0 +1,41 @@
+**LPPLS (Log-Periodic Power Law Singularity) model equations**
+
+The core LPPLS formula describes the expected log-price trajectory during a financial bubble (driven by positive macro-feedback / herding that produces faster-than-exponential growth ending in a finite-time singularity):
+
+$$
+E[\ln p(t)] = A + B(t_c - t)^m + C(t_c - t)^m \cos\bigl(\omega \ln(t_c - t) - \phi\bigr)
+$$
+
+(or the absolute-value version often used in practice for numerical stability around and beyond \(t_c\)):
+
+$$
+E[\ln p(t)] = A + B|t_c - t|^m + C|t_c - t|^m \cos\bigl(\omega \ln|t_c - t| - \phi\bigr)
+$$
+
+### Associated notation
+- $p(t)$: asset price at time $t$
+- $t_c$: critical time (most probable end of the bubble / transition point)
+- $A$: expected log-price at the critical time $t_c$
+- $B$: amplitude of the pure power-law acceleration (typically $B < 0$ for upward bubbles)
+- $C$: amplitude of the log-periodic oscillations
+- $m$: power-law exponent $(0 < m < 1$ produces a finite-time singularity in the growth rate)
+- $\omega$: angular log-frequency of the oscillations (linked to the preferred scaling ratio $\lambda = e^{2\pi/\omega}$)
+- $\phi$: phase of the oscillations
+
+### Reformulated (Filimonov–Sornette) version for stable calibration
+Using the trigonometric expansion $C_1 = C\cos\phi$, $C_2 = C\sin\phi$ (signs can vary by convention) yields four linear parameters:
+
+$$
+E[\ln p(t)] = A + B(t_c - t)^m + C_1(t_c - t)^m\cos\bigl(\omega\ln(t_c - t)\bigr) + C_2(t_c - t)^m\sin\bigl(\omega\ln(t_c - t)\bigr)
+$$
+
+### Underlying crash hazard rate
+The price formula is obtained by integrating the no-arbitrage condition $mu(t) = \kappa h(t)$ with the log-periodic power-law hazard rate of a crash:
+
+$$
+h(t) = B'(t_c - t)^{m-1}\Bigl[1 + \beta\cos\bigl(\omega\ln(t_c - t) - \phi'\bigr)\Bigr]
+$$
+
+(where $B'$ and $\beta$ are related to the price-model coefficients $B$ and $C$).
+
+These equations encode the two key signatures of the model: (1) super-exponential acceleration from positive feedback (\(m < 1\)) and (2) accelerating log-periodic oscillations that reflect discrete scale invariance in the hierarchy of market corrections.
