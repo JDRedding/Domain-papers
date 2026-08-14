@@ -38,4 +38,4 @@ $$
 
 (where $B'$ and $\beta$ are related to the price-model coefficients $B$ and $C$).
 
-These equations encode the two key signatures of the model: (1) super-exponential acceleration from positive feedback $(m < 1$) and (2) accelerating log-periodic oscillations that reflect discrete scale invariance in the hierarchy of market corrections.
+These equations encode the two key signatures of the model: (1) super-exponential acceleration from positive feedback $(m < 1)$ and (2) accelerating log-periodic oscillations that reflect discrete scale invariance in the hierarchy of market corrections.
