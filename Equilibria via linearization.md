@@ -11,7 +11,7 @@ $$
 \dot{\mathbf{x}} = \mathbf{f}(\mathbf{x}), \qquad \mathbf{x} \in \mathbb{R}^n,
 $$
 
-where \(\mathbf{f}:\mathbb{R}^n\to\mathbb{R}^n\) is smooth. An equilibrium (fixed point) \(\mathbf{x}^*\) satisfies
+where $\mathbf{f}:\mathbb{R}^n\to\mathbb{R}^n$ is smooth. An equilibrium (fixed point) $\mathbf{x}^*$ satisfies
 
 $$
 \mathbf{f}(\mathbf{x}^*) = \mathbf{0}.
