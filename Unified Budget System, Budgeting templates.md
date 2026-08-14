@@ -221,7 +221,6 @@ Fixed Expenses:   ________
 Variable Expenses:________
 Debt Payments:    ________
 Savings Allocated:________
-Weekly Net:       ________
 
 __________________________________________________
 
