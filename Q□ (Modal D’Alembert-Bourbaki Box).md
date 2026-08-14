@@ -16,13 +16,14 @@ $$
 
 This says:
 
-- First take the **irrational substrate**  
+- First take the **irrational substrate**
+  (π, e, √2, non‑terminating ratios, non‑relational generators)
 
 $$
 Q_{\text{substrate}}^{\text{irrational}}
 $$
 
-  (π, e, √2, non‑terminating ratios, non‑relational generators)
+  
 
 - Then apply the **quotient operator**  
   (collapse irrational structure into admissible relational form)
