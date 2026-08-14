@@ -83,6 +83,23 @@ These categories appear in every module so the system stays unified.
 
 ## **Module Templates**
 
+---
+
+## **📅 Daily & Weekly Budgets**
+Daily and weekly templates help you track short‑cycle spending and income allocation.
+
+### **Daily Budget Templates**
+- **Daily logs** from Monday–Sunday  
+- **Spending‑by‑category** lists  
+- **Budget vs actual** totals  
+- Ideal for **cash envelope systems** and quick check‑ins
+
+### **Weekly Budget Templates**
+- **Weekly income tracking**  
+- **Customizable categories** for bills, debts, expenses  
+- Styles range from **aesthetic/cute** to **professional/structural**  
+- All formats support **printable** and **editable** versions
+
 ### ** Daily Module (D‑LOG)**
 Purpose: micro‑tracking + habit formation.
 
@@ -121,6 +138,19 @@ Weekly Net: ________
 Weekly sheets summarize daily logs and push totals into monthly.
 
 ---
+
+## **📆 Monthly & Yearly Budgets**
+These templates help you monitor medium‑ and long‑term financial performance.
+
+### **Monthly Budget Planners**
+- **Income/expense/savings tracking**  
+- **Graphical spending summaries**  
+- Built‑in **KPIs**, **50/30/20 rule checks**, and **month‑to‑month comparisons**
+
+### **Yearly Budget Planners**
+- **Annual overview** with month breakdowns  
+- **Forecasting** for recurring or seasonal expenses  
+- **Visual summaries** for quick interpretation
 
 ### **Monthly Module (M‑PLAN)**
 Purpose: performance + KPIs.
@@ -190,38 +220,6 @@ Running Totals:
 ```
 
 Everything flows into this ledger.
-
----
-
-## **📅 Daily & Weekly Budgets**
-Daily and weekly templates help you track short‑cycle spending and income allocation.
-
-### **Daily Budget Templates**
-- **Daily logs** from Monday–Sunday  
-- **Spending‑by‑category** lists  
-- **Budget vs actual** totals  
-- Ideal for **cash envelope systems** and quick check‑ins
-
-### **Weekly Budget Templates**
-- **Weekly income tracking**  
-- **Customizable categories** for bills, debts, expenses  
-- Styles range from **aesthetic/cute** to **professional/structural**  
-- All formats support **printable** and **editable** versions
-
----
-
-## **📆 Monthly & Yearly Budgets**
-These templates help you monitor medium‑ and long‑term financial performance.
-
-### **Monthly Budget Planners**
-- **Income/expense/savings tracking**  
-- **Graphical spending summaries**  
-- Built‑in **KPIs**, **50/30/20 rule checks**, and **month‑to‑month comparisons**
-
-### **Yearly Budget Planners**
-- **Annual overview** with month breakdowns  
-- **Forecasting** for recurring or seasonal expenses  
-- **Visual summaries** for quick interpretation
 
 ---
 
