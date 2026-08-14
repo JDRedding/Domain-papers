@@ -1,4 +1,7 @@
 # *Full* Unicode Box‑drawing Table 
+Unicode block coverage
+
+The entire block spans: U+2500 – U+257F
 
 # **1. Single‑line box drawing**
 ### **Corners**
@@ -164,12 +167,4 @@ Rare but part of the block:
 ╳  U+2573   diagonal X
 ```
 
----
-
-# **8. Full Unicode block coverage**
-The entire block spans:
-
-```
-U+2500 – U+257F
-```
 
