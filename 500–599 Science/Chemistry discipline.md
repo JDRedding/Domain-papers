@@ -283,9 +283,9 @@ Step-by-Step Methodology
 2. **Convert weight percent to moles of each oxide**  
    Divide the wt% of each oxide by its molecular weight (MW):  
    
-   $$
-   \text{moles of oxide} = \frac{\text{wt\%}}{\text{MW}}
-   $$
+$$
+\text{moles of oxide} = \frac{\text{wt\%}}{\text{MW}}
+$$
 
 3. **Convert oxide moles to cation moles (and oxygen moles)**  
    Multiply the moles of each oxide by the number of cations (and the number of oxygen atoms) it contributes. Common values include:
@@ -307,14 +307,14 @@ Step-by-Step Methodology
    - Sum the oxygen atoms obtained in step 3.  
    - Calculate the normalization factor:  
 
-     $$
-     \text{factor} = \frac{\text{desired number of oxygens per formula unit}}{\text{total oxygen atoms calculated}}
-     $$
+$$
+\text{factor} = \frac{\text{desired number of oxygens per formula unit}}{\text{total oxygen atoms calculated}}
+$$
        
    - Multiply every cation amount by this factor.
 
 5. **Construct the mineral formula**  
-   Arrange the normalized cation numbers in the conventional structural formula of the mineral (e.g., \$athrm{(Mg,Fe)_2SiO_4}$ for olivine), grouping cations by crystallographic site when required.
+   Arrange the normalized cation numbers in the conventional structural formula of the mineral (e.g., $athrm{(Mg,Fe)_2SiO_4}$ for olivine), grouping cations by crystallographic site when required.
 
 6. **Optional: Verify charge balance**  
    - Calculate the total positive charge contributed by all cations (using their formal oxidation states: Si⁴⁺, Al³⁺, Mg²⁺, Fe²⁺, Fe³⁺, Ca²⁺, Na⁺, etc.).  
