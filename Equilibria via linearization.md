@@ -17,7 +17,7 @@ $$
 \mathbf{f}(\mathbf{x}^*) = \mathbf{0}.
 $$
 
-The local behaviour of trajectories near $\mathbf{x}^*$) is completely determined (when the equilibrium is hyperbolic) by the *Jacobian matrix** of the vector field evaluated at the equilibrium:
+The local behaviour of trajectories near $\mathbf{x}^*$) is completely determined (when the equilibrium is hyperbolic) by the *Jacobian matrix* of the vector field evaluated at the equilibrium:
 
 $$
 A = D\mathbf{f}(\mathbf{x}^) = \Bigl(\tfrac{\partial f_i}{\partial x_j}(\mathbf{x}^)\Bigr)_{1\le i,j\le n}.
