@@ -198,7 +198,7 @@ Mathematical relations appear mainly in kinetics, stereochemistry, and physical 
 - **Specific rotation** (polarimetry / optical activity)  
 
 $$ 
-[\alpha] = \frac{\alpha}{c\cdot l} 
+\alpha = \frac{\alpha}{c\cdot l} 
 $$  
 
   where $[\alpha]$ = specific rotation, $\alpha$ = observed rotation (degrees), $c$ = concentration (g mL$^{-1}$), $l$ = path length (dm).
