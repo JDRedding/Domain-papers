@@ -475,3 +475,82 @@ $$
 | **SID stability** | \( S,I,D \) invariance under Γ | Relational consistency |
 | **PED stability** | \( P,E,\text{dipoles} \) preserved under Γ | Flux consistency |
 | **Q admissibility** | \( Q□ := □(Q_{\text{irr}}) \) | Sealed irrational substrate |
+
+## 🧩 **What the “irrational substrate” actually is**
+
+The irrational substrate in RDG–MFE–Q is **not**:
+
+- a subfield of ℝ  
+- a topological space  
+- a measure space  
+- a σ‑algebra  
+- a ring  
+- a vector space  
+
+It is a **generator class**, not a number system.
+
+It has:
+
+- **no addition**  
+- **no multiplication**  
+- **no topology**  
+- **no measure**  
+- **no ordering**  
+- **no coordinates**
+
+It is a **pre‑relational substrate**, not a mathematical field.
+
+---
+
+## 🔲 **Why algebraic and transcendental irrationals are grouped together**
+
+Do **not** classify numbers by algebraic degree.  
+Classify them by **relational admissibility**.
+
+### **Criterion**
+
+An element belongs to the irrational substrate iff:
+
+$$
+\text{it cannot be represented by a finite relational closure.}
+$$
+
+Both algebraic irrationals (√2) and transcendental irrationals (π, e) fail this criterion.
+
+Thus:
+
+- √2 → infinite descent under relational closure  
+- π → infinite descent under relational closure  
+- e → infinite descent under relational closure  
+
+So they are grouped together because **they share the same failure mode**:
+
+> **They cannot stabilize under SID/PED closure.**
+
+RDG does not care whether the failure is algebraic or transcendental.  
+It only cares whether the element can be made relationally stable.
+
+---
+
+## 🧱 **The correct algebraic/topological classification**
+
+Here is the formal classification table:
+
+| Object | Type | Why |
+|--------|------|-----|
+| **Rational numbers** | Field | Closed under SID/PED |
+| **Algebraic irrationals** | Field extension | Not SID‑stable |
+| **Transcendental irrationals** | Non‑algebraic extension | Not SID‑stable |
+| **Irrational substrate** | **Generator class** | Must be sealed |
+| **Q□** | **Bourbaki structural box** | Prevents inspection |
+
+---
+
+## 🧩 **Why grouping all irrationals is necessary**
+
+Because RDG is **relational**, not numerical.
+Thus all irrationals are grouped together because:
+
+> **They all break relational closure in the same way.**
+
+This is the structural reason.
