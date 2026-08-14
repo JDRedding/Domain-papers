@@ -14,7 +14,7 @@ V(x) = \frac{1}{2} m \omega^{2} x^{2}
 $$
 
 **Notation**  
-- $m$): particle mass  
+- $m$: particle mass  
 - $\omega$: angular frequency of the oscillator  
 - $x$: position coordinate  
 
