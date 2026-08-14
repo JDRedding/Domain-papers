@@ -367,7 +367,7 @@ $$
 \Gamma \longrightarrow C_\Gamma \longrightarrow d_\Gamma \longrightarrow g
 $$
 
-This is the missing formal chain.
+This is the chain.
 
 ---
 
