@@ -274,7 +274,7 @@ Shares many crystallographic formulas; additional relations involve composition 
 - **Chemical formula calculation from weight percent** (normative mineralogy)  
   Convert oxide weight percentages to molecular proportions, then allocate to mineral end-members (e.g., for olivine: $\mathrm{(Mg,Fe)_2SiO_4}$).
 
-Step-by-Step Methodology for Calculating Mineral Formulas from Oxide Weight Percentages 
+Step-by-Step Methodology
 *(This procedure can be simplified further depending on the mineral type and site-occupancy rules.)*
 
 1. **Gather weight-percent data**  
