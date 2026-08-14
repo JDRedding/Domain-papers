@@ -14,7 +14,7 @@ Chemistry and allied sciences cover general chemistry, the theory, methods, and 
 
 ## Subclasses
 
-541 Physical Chemistry
+### 541 Physical Chemistry
 : Deals with the physical principles underlying chemical interactions, chemical thermodynamics, kinetics, quantum chemistry, spectroscopy, and molecular physics. Books on the theory and methods of physical chemistry are included here.
 
 This subdivision is the most equation-intensive, covering thermodynamics, kinetics, quantum mechanics, spectroscopy, and electrochemistry.
