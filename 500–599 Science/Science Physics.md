@@ -14,45 +14,58 @@ Key mathematical equations and formulas for the main Physics subdivisions (with 
 – Includes Newtonian mechanics, statics, dynamics, elasticity, and the physics of rigid bodies.
 
 Newton’s second law  
-\[
+
+$$
 \mathbf{F} = m\mathbf{a} = m\frac{d\mathbf{v}}{dt} = \frac{d\mathbf{p}}{dt}
-\]  
+$$
+
 where \(\mathbf{F}\) = net force, \(m\) = mass, \(\mathbf{a}\) = acceleration, \(\mathbf{v}\) = velocity, \(\mathbf{p} = m\mathbf{v}\) = momentum.
 
 Equations of motion (constant acceleration)  
-\[
+
+$$
 v = u + at, \quad s = ut + \frac{1}{2}at^{2}, \quad v^{2} = u^{2} + 2as
-\]  
+$$
+
 (\(u\) = initial velocity, \(v\) = final velocity, \(s\) = displacement, \(a\) = acceleration, \(t\) = time).
 
 Work–energy theorem / kinetic energy  
-\[
+$$
 W = \Delta K = \frac{1}{2}m(v^{2} - u^{2}), \quad K = \frac{1}{2}mv^{2}
-\]  
+$$
+
 (\(W\) = work, \(K\) = kinetic energy).
 
 Hooke’s law (elasticity)  
-\[
+
+$$
 \mathbf{F} = -k\mathbf{x}
-\]  
+$$
+
 (\(k\) = spring constant, \(\mathbf{x}\) = displacement).
 
 Simple harmonic motion  
-\[
+
+$$
 \frac{d^{2}x}{dt^{2}} + \omega^{2}x = 0, \quad \omega = \sqrt{\frac{k}{m}}, \quad x(t) = A\sin(\omega t + \varphi)
-\]  
+$$
+
 (\(A\) = amplitude, \(\varphi\) = phase).
 
 Lagrangian / Euler–Lagrange  
-\[
+
+$$
 \frac{d}{dt}\left(\frac{\partial L}{\partial\dot{q}{i}}\right) - \frac{\partial L}{\partial q{i}} = 0, \quad L = T - V
-\]  
+$$
+
 (\(L\) = Lagrangian, \(T\) = kinetic energy, \(V\) = potential energy, \(q_{i}\) = generalized coordinates).
 
 Hamiltonian equations  
-\[
+
+$$
 \dot{q}{i} = \frac{\partial H}{\partial p{i}}, \quad \dot{p}{i} = -\frac{\partial H}{\partial q{i}}, \quad H = \mathbf{p}\cdot\dot{\mathbf{q}} - L
-\]  
+$$ 
+
 (\(H\) = Hamiltonian, \(p_{i}\) = conjugate momenta).
 
 ### 532 Fluid mechanics (liquid mechanics)
