@@ -54,6 +54,86 @@ Game Night or Competitive Play – Using official rules ensures clarity during c
 
 ### Technical terms used in card games
 
+Mathematical equations and formulas commonly associated with card games (especially for combinatorial counting, probability calculations, scoring, and analysis of games such as Poker, Blackjack, Bridge, and general deck dealing) rely on standard discrete mathematics and probability notation.
+
+#### Core Combinatorial Notation and Formulas
+The binomial coefficient (combinations) counts the number of ways to choose $k$ cards from a deck of $n$ cards without regard to order:
+
+$$
+\binom{n}{k} = C(n,k) = \frac{n!}{k!(n-k)!}
+$$
+
+where $n!$ denotes the factorial $n! = n \times (n-1) \times \cdots \times 1$, and $0! = 1$.
+
+The number of permutations (ordered selections) is:
+
+$$
+P(n,k) = \frac{n!}{(n-k)!}
+$$
+
+For a standard 52-card deck the total number of possible 5-card poker hands is:
+
+$$
+\binom{52}{5} = 2{,}598{,}960
+$$
+
+#### Poker Hand Probabilities
+The probability of a specific hand type is the number of favorable hands divided by the total number of hands:
+
+$$
+P(\text{hand type}) = \frac{\text{number of ways to form the hand}}{\binom{52}{5}}
+$$
+
+Classic exact counts (for reference) include:
+
+- Royal flush: $4$
+- Straight flush (including royal): $40$
+- Four of a kind: $624$
+- Full house: $3{,}744$
+- Flush: $5{,}108$
+- Straight: $10{,}200$
+- Three of a kind: $54{,}912$
+- Two pair: $123{,}552$
+- One pair: $1{,}098{,}240$
+- High card: $1{,}302{,}540$
+
+#### Conditional Probability and Sequential Draws
+Bayes’ theorem and the definition of conditional probability appear frequently when cards are dealt sequentially:
+
+$$
+P(A \mid B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+For drawing without replacement the hypergeometric probability of obtaining exactly $k$ successes in $n$ draws from a population of size $N$ containing $K$ successes is:
+
+$$
+P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}
+$$
+
+#### Expected Value
+The expected value of a random variable $X$ (e.g., payoff of a bet or hand strength) is:
+
+$$
+E[X] = \sum_{i} x_i P(X = x_i)
+$$
+
+or, in continuous approximations, the corresponding integral. In card games this is routinely used for pot odds, equity calculations, and optimal strategy.
+
+#### Bridge and Trick-Taking Scoring 
+- / Probability Fragments
+In contract bridge the probability that a particular suit is distributed in a given pattern among the remaining cards follows the hypergeometric distribution above. Basic trick-probability approximations sometimes employ the binomial distribution when independence is assumed:
+
+$$
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+$$
+
+Scoring formulas themselves are rule-based rather than purely mathematical (e.g., contract points, overtricks, slam bonuses), but the underlying combinatorial counts remain the same.
+
+#### Shuffling and Randomness
+A perfectly random shuffle of a deck of $n$ cards has $n!$ possible orderings, each with probability $1/n!$. The number of riffle shuffles needed to approach uniformity is governed by the total-variation distance to the uniform distribution; a well-known result states that roughly $\frac{3}{2}\log_2 n$ riffle shuffles suffice for a 52-card deck.
+
+These are the principal equations and the associated standard mathematical notation used throughout the analysis of official card-game rules, probabilities, and strategies. Specific games may introduce additional specialized scoring functions, but they are built on the combinatorial and probabilistic foundations shown above.
+
 # Keywords 
 acol
 advanced
