@@ -29,9 +29,9 @@ $$
 \det(A-\lambda I)=0.
 $$
 
-Two-dimensional case (\(n=2\))
+Two-dimensional case $(n=2)$
 
-Let the eigenvalues of \(A\) be \(\lambda_1,\lambda_2\).
+Let the eigenvalues of $A$ be $\lambda_1,\lambda_2$.
 
 Node (source or sink)**  
   Both eigenvalues real and of the same sign:
