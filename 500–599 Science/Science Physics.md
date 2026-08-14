@@ -9,6 +9,8 @@ The classification in the Dewey Decimal System covers the broad field of physics
 ## Subcategories 
 Key mathematical equations and formulas for the main Physics subdivisions (with standard notation). These are foundational or representative equations commonly associated with each area; many fields have extensive further specializations. The system further breaks down physics into more specific areas to organize topics systematically:
 
+---
+
 ### 531 Classical mechanics (solid mechanics)
 – Includes Newtonian mechanics, statics, dynamics, elasticity, and the physics of rigid bodies.
 
@@ -67,6 +69,8 @@ $$
 
 ($H$ = Hamiltonian, $p_{i}$ = conjugate momenta).
 
+---
+
 ### 532 Fluid mechanics (liquid mechanics)
 – Focuses on the behavior of fluids, hydrodynamics, and the mechanics of liquids in motion or at rest.
 
@@ -102,6 +106,8 @@ $$
 
 ($\rho_{f}$ = fluid density, $V_{\text{imm}}$ = immersed volume).
 
+---
+
 ### 533 Gas mechanics 
 – Deals with the behavior of gases, gas laws, thermodynamic systems involving gases, and kinetic theory.
 -  Pneumatics (gas mechanics)
@@ -133,6 +139,8 @@ Boyle’s / Charles’ / Gay-Lussac relations (special cases of ideal gas law)
 $$
 pV = \text{const}\ (T\text{ fixed}), \quad \frac{V}{T} = \text{const}\ (p\text{ fixed}), \quad \frac{p}{T} = \text{const}\ (V\text{ fixed}).
 $$
+
+---
 
 ### 534 Sound & related vibrations
 – Covers acoustics, sound waves, vibration theory, and related physical phenomena.
@@ -168,6 +176,8 @@ I = \frac{p^{2}}{2\rho c}, \quad Z = \rho c
 $$  
 
 ($I$ = intensity, $Z$ = acoustic impedance).
+
+---
 
 ### 535 Light & infrared & ultraviolet phenomena 
 – Focuses on optics, propagation of light, refraction, reflection, and other electromagnetic phenomena within visible, infrared, and ultraviolet ranges.
@@ -213,6 +223,8 @@ Plane EM wave
 $$
 \mathbf{E} = \mathbf{E}{0}\sin(kx - \omega t), \quad \mathbf{B} = \mathbf{B}{0}\sin(kx - \omega t),\quad |\mathbf{B}| = \frac{|\mathbf{E}|}{c}.
 $$
+
+---
 
 ### 536 Heat (thermodynamics / heat transfer)
 – Covers thermodynamics, heat transfer, temperature, and the laws governing energy transformation in systems.
@@ -265,6 +277,8 @@ $$
 
 ($T_{H}, T_{C}$ = hot/cold reservoir temperatures).
 
+---
+
 ### 537 Electricity & electronics 
 – Encompasses electrostatics, current electricity, circuits, electric fields, electromagnetism, and electronic applications.
 
@@ -294,6 +308,8 @@ $$
 $$  
 
 Maxwell’s equations (as listed under 535) also govern electricity and electronics, especially time-varying fields and circuits with capacitance/inductance.
+
+---
 
 ### 538 Magnetism 
 – Focused on magnetic fields, magnetic properties of materials, and related phenomena.
@@ -327,6 +343,8 @@ $$
 $$  
 
 (Again, Maxwell’s equations fully unify electricity and magnetism.)
+
+---
 
 539 Modern physics – Deals with concepts developed after classical physics, including relativity, quantum mechanics, nuclear physics, and particle physics.
 
