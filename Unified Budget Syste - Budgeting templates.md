@@ -85,7 +85,7 @@ These categories appear in every module so the system stays unified.
 
 ---
 
-## **📅 Daily & Weekly Budgets**
+## 📅 **Daily & Weekly Budgets**
 Daily and weekly templates help you track short‑cycle spending and income allocation.
 
 ### **Daily Budget Templates**
