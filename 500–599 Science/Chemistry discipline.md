@@ -89,7 +89,7 @@ $$
 M = \frac{n}{V} = \frac{m}{M_r V} 
 $$  
 
-  where $M$ = molarity (mol L$^{-1})$, $n$ = moles of solute, $V$ = volume of solution (L), $m$ = mass of solute, $M_r$ = molar mass.
+  where $M$ = molarity (mol $L^{-1}$), $n$ = moles of solute, $V$ = volume of solution (L), $m$ = mass of solute, $M_r$ = molar mass.
 
 - **Dilution equation**  
 
