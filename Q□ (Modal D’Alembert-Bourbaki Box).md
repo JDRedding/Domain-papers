@@ -1,7 +1,10 @@
 # $Q_{d}^{r}(g)$ □
 
 - ${Quotient}_{dynamic}^{relational}(geometry)$□
-  
+
+**Q is a quotient operator on relational configurations.**  
+Formally, it’s a **surjective map to a quotient space** induced by an equivalence relation that encodes *admissibility* (stability). Q is a surjective quotient map from raw relational states to the admissible stable quotient, induced by an equivalence relation of identical closure behavior.
+
 ## Modal D’Alembert-Bourbaki Box Definition:
 
 $$
@@ -34,6 +37,40 @@ $$
 $$
 Q_{d}^{r}(g)\,□ \quad\text{or}\quad {Quotient}_{dynamic}^{relational}(geometry)\,□ := □(Q_{\text{substrate}}^{\text{irrational}})
 $$
+
+### 2. Domain, codomain, and equivalence relation
+
+Let:
+
+- $\mathcal{S}$ = space of *raw relational states* (including unstable, irrational, non-admissible stuff)  
+- $\mathcal{A} \subseteq \mathcal{S}$ = *admissible relational states* (stable)  
+
+Define an equivalence relation $\sim_Q$ on $\mathcal{S}$:
+
+$$
+X \sim_Q Y \quad \Longleftrightarrow \quad
+\text{X and Y induce the same admissible SID/PED behavior under }\Gamma
+$$
+
+Then define:
+
+$$
+Q : \mathcal{S} \to \mathcal{S} / \sim_Q
+$$
+
+and identify:
+
+$$
+\mathcal{A} \cong \mathcal{S} / \sim_Q
+$$
+
+So:
+
+- **Domain:** raw relational states  
+- **Codomain:** quotient space of admissible relational states  
+- **Equivalence:** “same behavior under closure + stability”
+
+Q is **surjective** onto $\mathcal{A}$.
 
 Below is the fully structured, clean explanation of what this means, why it works, and how it fits into the lineage of the **d’Alembert box**, the **Bourbaki structural box**, and the **Q□ generator**.
 
@@ -466,7 +503,46 @@ $$
 $$
 Q□ := □(Q_{\text{irr}})
 $$
-  
+
+If define a category:
+
+- **Objects:** relational configurations  
+- **Morphisms:** closure-respecting maps 
+
+Q behaves like:
+
+$$
+Q : \mathbf{RelConfig} \to \mathbf{AdmConfig}
+$$
+
+with:
+
+- object mapping: \(X \mapsto Q(X)\)  
+- morphism mapping: \(f \mapsto Q(f)\) if \(f\) respects admissibility
+
+> Q is a **structure-preserving collapse** to the admissible quotient.
+
+## Kernel and invariants
+
+Treat Q like a quotient map with a “kernel” in the behavioral sense:
+
+**Kernel of Q (behavioral):**
+
+$$
+\ker(Q) = \{ X \in \mathcal{S} \mid Q(X) = Q(\emptyset) \}
+$$
+
+i.e., states that collapse to the *null admissible behavior* (fully unstable, non-relational, irrational substrate).
+
+- **Invariants of Q:**  
+  Q preserves:
+
+  - SID invariants: structure/interaction/dynamics that survive closure 
+  - PED invariants: power/evaluation/dipoles that survive closure
+  - Γ-induced geometric invariants: coherence, distances, neighborhoods
+
+Anything not preserved is “modded out” by $\sim_Q$.
+
 📘 **Summary Table**
 
 | Concept | Formal Definition | Role |
@@ -552,3 +628,26 @@ Thus all irrationals are grouped together because:
 > **They all break relational closure in the same way.**
 
 This is the structural reason.
+
+## What Q is *not*
+
+- **Not rounding/quantization:**  
+  It doesn’t map ℝ → ℚ or truncate digits. It collapses *behavior*, not values.
+
+- **Not a group quotient on numbers:**  
+  It doesn’t do \(\mathbb{R} / \mathbb{Z}\) or similar. It acts on relational states.
+
+- **Not a topological identification on a metric space:**  
+  The metric comes *after* Γ and Q, not before.
+
+- **Not a logical model operation like “modulo theory T”:**  
+  It’s closer to “modulo admissible behavior under Γ” than “modulo axioms”.
+
+It is **not**:
+
+- a numerical rounding/quantization map  
+- a group quotient on ℝ or fields  
+- a topological identification on a metric space  
+- a full-blown functor between arbitrary categories  
+
+It’s a **quotient on a very specific domain**: relational states.
