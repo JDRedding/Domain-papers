@@ -306,13 +306,50 @@ This denotes that the irrational substrate is enclosed within a structural box, 
 - Admissibility Constraint: Ensures only rational relational configurations are permitted.
 - Infinite Regress Prevention: Avoids the endless pursuit of irrational expansions such as the digits of $\pi$.
 
-### Structural Interpretation
+#### Structural Interpretation
 
 The sealed box operator combines elements from:
 
 - D'Alembert Operator: Represents wave propagation and structural encapsulation.
 - Modal Logic Necessity: Implies that the enclosed content is necessarily sealed.
 - Bourbaki Structural Box: Treats the interior as irrelevant to external relational structures.
+
+### **Semantics of □ — Unified Axiomatic Core**
+
+Axioms:
+
+1. **Opacity (sealed interior)**  
+
+$$
+   X \neq Y \Rightarrow □X = □Y \text{ does not imply } X=Y
+$$
+
+2. **Idempotence**  
+
+$$
+   □(□X) = □X
+$$
+
+3. **Many‑to‑one collapse**  
+
+$$
+   \exists X \neq Y : □X = □Y
+$$
+
+4. **Invariant emission**  
+
+$$
+   \text{Obs}(□X) = \text{Obs}(X)
+$$
+
+   for all admissible observables.
+
+Then:
+
+- PDE □ is a model  
+- Modal □ is a model  
+- Bourbaki □ is a model  
+- Q□ as the **RDG model**
 
 ### Framework Usage
 
