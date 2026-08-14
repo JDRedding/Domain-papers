@@ -191,7 +191,7 @@ The Effective Atomic Number (EAN) of a complex is the total number of electrons 
 
     EAN = Valence electrons (metal) + Electrons (ligands) − Charge (complex (for cation))
     
-According to the 18-electron rule, transition metals tend to form stable complexes when their EAN equals 18, analogous to the noble gas configuration for main group elements, as this fills the metal’s 4s, 4p, and 3d orbitals (or generally s, p, d orbitals for the relevant period). This rule is particularly relevant for transition metals and organometallic complexes.
+According to the 18-electron rule, transition metals tend to form stable complexes when their EAN equals 18, analogous to the noble gas configuration for main group elements, as this fills the metal’s 4s, 4p, and 3d orbitals (or generally s, p, d orbitals for the relevant period). This rule is particularly relevant for transition metals and organometallic complexes. The EAN or 18-electron rule is a guiding principle in transition-metal chemistry, helping to rationalize the stability and geometry of organometallic complexes and predict their reactivity.
 
   Often expressed as counting valence electrons contributed by metal + ligands = 18 (or sometimes 16).
 
@@ -273,6 +273,53 @@ Shares many crystallographic formulas; additional relations involve composition 
 
 - **Chemical formula calculation from weight percent** (normative mineralogy)  
   Convert oxide weight percentages to molecular proportions, then allocate to mineral end-members (e.g., for olivine: $\mathrm{(Mg,Fe)_2SiO_4}$).
+
+Step-by-Step Methodology for Calculating Mineral Formulas from Oxide Weight Percentages 
+*(This procedure can be simplified further depending on the mineral type and site-occupancy rules.)*
+
+1. **Gather weight-percent data**  
+   Obtain the chemical composition of the mineral expressed as oxide weight percentages (wt%).
+
+2. **Convert weight percent to moles of each oxide**  
+   Divide the wt% of each oxide by its molecular weight (MW):  
+   
+   $$
+   \text{moles of oxide} = \frac{\text{wt\%}}{\text{MW}}
+   $$
+
+3. **Convert oxide moles to cation moles (and oxygen moles)**  
+   Multiply the moles of each oxide by the number of cations (and the number of oxygen atoms) it contributes. Common values include:
+
+   | Oxide   | Cations per formula unit | Oxygens per formula unit |
+   |---------|--------------------------|--------------------------|
+   | SiO₂    | 1                        | 2                        |
+   | Al₂O₃   | 2                        | 3                        |
+   | FeO / MgO / CaO / MnO | 1          | 1                        |
+   | Fe₂O₃   | 2                        | 3                        |
+   | Na₂O / K₂O | 2                     | 1                        |
+   | H₂O     | 2 (as H)                 | 1                        |
+   | …       | …                        | …                        |
+
+   This yields the absolute number of moles of each cation and the total number of oxygen atoms.
+
+4. **Normalize to a fixed oxygen basis**  
+   Mineral formulas are conventionally written on a fixed number of oxygen atoms (e.g., 4 for olivine, 6 for pyroxene, 8 for feldspar, 22–24 for micas, etc.).  
+   - Sum the oxygen atoms obtained in step 3.  
+   - Calculate the normalization factor:  
+
+     $$
+     \text{factor} = \frac{\text{desired number of oxygens per formula unit}}{\text{total oxygen atoms calculated}}
+     $$
+       
+   - Multiply every cation amount by this factor.
+
+5. **Construct the mineral formula**  
+   Arrange the normalized cation numbers in the conventional structural formula of the mineral (e.g., \$athrm{(Mg,Fe)_2SiO_4}$ for olivine), grouping cations by crystallographic site when required.
+
+6. **Optional: Verify charge balance**  
+   - Calculate the total positive charge contributed by all cations (using their formal oxidation states: Si⁴⁺, Al³⁺, Mg²⁺, Fe²⁺, Fe³⁺, Ca²⁺, Na⁺, etc.).  
+   - Confirm that this sum equals the total negative charge from oxygen $(2 \times$ number of oxygens).  
+   - Round the final cation coefficients to values that are chemically and crystallographically reasonable, then write the completed formula.
 
 - **Density / specific gravity** (same form as crystallography)  
 
