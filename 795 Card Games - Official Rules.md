@@ -373,25 +373,9 @@ These classify *any* card game orthogonally to mechanics.
 ---
 
 ## Topics
-
-Related:
-
-- trick‑taking games  
-- shedding games  
-- matching games  
-- gambling games  
-- solitaire families  
-- tarot‑derived systems  
+Follow‑up topic:
 - mathematical/probability sheets  
 - historical rule editions
-
-Follow‑up topic:
-
-- **poker**  
-- **bridge**  
-- **blackjack**  
-- **solitaire**  
-- **tarot deck**  
 - **Texas Hold'em**  
 - **bidding**  
 - **card play**  
@@ -402,7 +386,6 @@ Follow‑up topic:
 - **RPG**
 
 Optional: Mode Mapping  
-
 - **Structure (S)** → deck topology, legal moves  
 - **Interaction (I)** → trick‑taking vs shedding vs climbing  
 - **Dynamics (D)** → stochastic vs deterministic transitions  
