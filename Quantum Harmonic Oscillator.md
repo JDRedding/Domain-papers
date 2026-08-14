@@ -1,6 +1,12 @@
 # Quantum Harmonic Oscillator 
 Equations and Notation
 
+A quantum harmonic oscillator's zero-point energy, where even the ground state (n=0) retains E₀ = ½ℏω, preventing the system from ever fully stopping due to inherent quantum uncertainty.
+
+Energy levels are evenly spaced as Eₙ = ℏω(n + ½), derived from Schrödinger's 1926 wave mechanics, serving as a foundational model for molecular vibrations, phonons, and quantum field theory.
+
+The included wave function probability densities for states n=0 to 6, emphasizing nodes, orthogonality, and the non-zero ground state motion central to quantum behavior at absolute zero.
+
 ### 1. Potential Energy
 
 $$
