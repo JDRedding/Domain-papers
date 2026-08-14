@@ -1,7 +1,9 @@
 # Hypercube (tesseract) view of dimensional analysis
+Hypercube Dimensional Matrix
 
 Dimensional analysis by mapping quantities [L^a T^b M^c Θ^d] with exponents ranging from -3 to 3 onto a 4D hypercube, treating its 16 vertices as pure dimensional states and 32 edges as transitions between them.
-The accompanying diagram titled "Hypercube Dimensional Matrix" illustrates symmetric axes for length, time, mass, and angle with reciprocal and inverse labels, framing measurement units as a geometric object.
+The accompanying notation illustrates symmetric axes for length, time, mass, and angle with reciprocal and inverse labels, framing measurement units as a geometric object.
+
 This view underpins practical applications in physics-informed neural networks, automatic equation checkers, and multi-physics simulations that maintain dimensional consistency by rejecting incompatible additions like meters to seconds.
 
 ### Core dimensional representation
