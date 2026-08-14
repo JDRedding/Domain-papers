@@ -90,7 +90,7 @@ $$
 For the 4-dimensional case (tesseract) this immediately gives the numbers stated in the post:  
 $V_4 = 16$ vertices  
 
-32 edges (the post explicitly mentions these; the standard formula is \(E_n = n\cdot 2^{n-1}\), which equals 32 when \(n=4\)).
+32 edges (the post explicitly mentions these; the standard formula is $E_n = n\cdot 2^{n-1}$, which equals 32 when \(n=4\)).
 
 3. Associated notation  
 Base dimensions: $L$ (length), $T$ (time), $M$ (mass), $\Theta$ (temperature/angle)  
