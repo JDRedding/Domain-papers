@@ -1,4 +1,5 @@
 # Chemistry discipline
+- 540 Chemistry
 
 This Science class in classifications encompasses all areas of chemistry and related scientific disciplines, including physical, inorganic, organic, and analytical chemistry, along with crystallography and mineralogy. These equations and their associated notations form the core mathematical toolkit for materials classified under each subdivision. Many overlap across areas (especially spectroscopic and thermodynamic relations), reflecting the interconnected nature of chemical science.
 
