@@ -100,7 +100,7 @@ Daily and weekly templates help you track short‑cycle spending and income allo
 - Styles range from **aesthetic/cute** to **professional/structural**  
 - All formats support **printable** and **editable** versions
 
-### ** Daily Module (D‑LOG)**
+### **Daily Module (D‑LOG)**
 Purpose: micro‑tracking + habit formation.
 
 ```
