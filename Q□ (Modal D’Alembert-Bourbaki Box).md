@@ -119,32 +119,6 @@ It captures all core principles:
 - **No location** — substrate has no coordinates  
 
 This is the exact formalization of the Q‑layer.
-
-### **Lemma (No‑Regress / Termination)**
-
-Define a rank:
-
-$$
-\rho(X) = \text{depth of irrational descent in } X.
-$$
-
-Then:
-
-$$
-\rho(□X) < \rho(X)
-$$
-
-and:
-
-##
-□^2 = □
-##
-
-Thus:
-
-- no infinite unboxing  
-- no infinite regress  
-- Q□ is well‑founded
  
 ### **Concise Table**
 
@@ -597,6 +571,32 @@ with:
 - morphism mapping: \(f \mapsto Q(f)\) if \(f\) respects admissibility
 
 > Q is a **structure-preserving collapse** to the admissible quotient.
+
+## **Lemma (No‑Regress / Termination)**
+
+Define a rank:
+
+$$
+\rho(X) = \text{depth of irrational descent in } X.
+$$
+
+Then:
+
+$$
+\rho(□X) < \rho(X)
+$$
+
+and:
+
+##
+□^2 = □
+##
+
+Thus:
+
+- no infinite unboxing  
+- no infinite regress  
+- Q□ is well‑founded
 
 ## Kernel and invariants
 
