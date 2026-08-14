@@ -306,7 +306,172 @@ Q□ means:
 - Interior: forbidden; π, e, √2 live here  
 - Purpose: enforce admissibility, stability, quotienting  
 
+# Appendix
+## symbols/concepts
+The definition of the following domains, dynamics, or how the induce geometry g are defined in other relational dynamic geometry notes. See those for either the dynamical system definition or a mapping Γ → geometric structure. Below are given compatible definitions* for each undefined symbol.
 
+---
 
+## ⚙️ **Closure Flow Γ — formal definition**  
+### **Definition (Closure Flow)** 
 
+Let  
+- $P$ = primitive state space (finite or countable set of relational atoms)  
+- $\mathcal{R} \subseteq P \times P$ = relational configuration  
+- $\mathcal{C}$ = space of closure states (coherence fields, invariants, admissible triads)
 
+A **closure flow** is a map:
+
+$$
+\Gamma : (P, \mathcal{R}) \longrightarrow \mathcal{C}
+$$
+
+with the following properties:
+
+- **Extensive**:
+  
+$$
+  X \subseteq \Gamma(X)
+$$
+
+- **Monotone**:  
+
+$$
+  X \subseteq Y \Rightarrow \Gamma(X) \subseteq \Gamma(Y)
+$$
+
+- **Idempotent**:  
+
+$$
+  \Gamma(\Gamma(X)) = \Gamma(X)
+$$
+
+- **Coherence‑inducing**:  
+
+$$
+  C_\Gamma : P \times P \to \mathbb{R}_{\ge 0}
+$$
+
+  is a coherence density derived from Γ.
+
+### **Geometry induction**  
+The metric is:
+
+$$
+d_\Gamma(A,B) := \inf_{\gamma} \int C_\Gamma(\gamma(t),\dot{\gamma}(t))\,dt
+$$
+
+Thus:
+
+\[
+\Gamma \longrightarrow C_\Gamma \longrightarrow d_\Gamma \longrightarrow g
+\]
+
+This is the missing formal chain.
+
+---
+
+## 🔺 **2. SID / PED Stability — formal criteria**  
+
+### **SID Triad (Structure–Interaction–Dynamics)**  
+A relational configuration \(X\) is **SID‑stable** iff:
+
+1. **Structure stability**
+
+$$
+S(X) = S(\Gamma(X))
+$$
+
+   (closure does not alter structural invariants)
+
+3. **Interaction stability**  
+
+$$
+I(X) \subseteq I(\Gamma(X))
+$$
+   (interactions do not collapse under closure)
+
+4. **Dynamics stability**
+
+$$
+   D(\Gamma(X)) \text{ is well‑posed}
+$$
+
+   (closure produces a valid dynamical update)
+
+### **PED Triad (Power–Evaluation–Dipole)**  
+A flux configuration \(F\) is **PED‑stable** iff:
+
+1. **Power coherence**  
+
+$$
+   P(F) \ge 0
+$$
+
+2. **Evaluation consistency**  
+
+$$
+   E(F) = E(\Gamma(F))
+$$
+
+3. **Dipole admissibility**  
+
+$$
+   \text{dipoles}(F) \subseteq \text{dipoles}(\Gamma(F))
+$$
+
+SID governs **relational geometry**,  
+PED governs **flux dynamics**.
+
+---
+
+## 🔲 **3. Q‑Layer / Admissibility — formal definition**  
+Notation:
+
+$$
+Q_{d}^{r}(g)\,□ := □(Q_{\text{substrate}}^{\text{irrational}})
+$$
+
+is correct. Here is the formal definition.
+
+### **Definition (Q‑layer admissibility operator)**  
+Let:
+
+- $Q_{\text{irr}}$ = irrational substrate (π, e, √2, non‑terminating ratios)  
+- $Q_{\text{rat}}$ = rational relational domain  
+- □ = Bourbaki–modal sealed box operator
+
+Define:
+
+$$
+Q := Q_{d}^{r}(g) : Q_{\text{irr}} \to Q_{\text{rat}}
+$$
+
+with:
+
+- **Surjective quotienting**
+  
+$$
+  Q_{\text{rat}} = Q(Q_{\text{irr}})
+$$
+
+- **Admissibility constraint**
+- 
+$$
+  X \in Q_{\text{rat}} \iff X \text{ is SID/PED‑stable}
+$$
+
+- **Sealed irrational substrate**
+- 
+$$
+  Q□ := □(Q_{\text{irr}})
+$$
+  
+📘 **Summary Table (all three definitions)**
+
+| Concept | Formal Definition | Role |
+|--------|-------------------|------|
+| **Closure flow Γ** | \( \Gamma : (P,\mathcal{R}) \to \mathcal{C} \) | Generates geometry |
+| **SID stability** | \( S,I,D \) invariance under Γ | Relational consistency |
+| **PED stability** | \( P,E,\text{dipoles} \) preserved under Γ | Flux consistency |
+| **Q admissibility** | \( Q□ := □(Q_{\text{irr}}) \) | Sealed irrational substrate |
