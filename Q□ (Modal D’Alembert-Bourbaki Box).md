@@ -41,10 +41,10 @@ Below is the fully structured, clean explanation of what this means, why it work
 ### 🧩 **Meaning of $Q_{d}^{r}(g)\,□$**  
 Break the notation into its components:
 
-- **\(Q\)** — the **quotient** operator  
-- **\(d\)** — **dynamic** (admissibility changes with closure flow Γ)  
-- **\(r\)** — **relational** (acts only on rational relational configurations)  
-- **\(g\)** — **geometry** (the geometry induced by Γ, not background space)  
+- **$Q$** — the **quotient** operator  
+- **$d$** — **dynamic** (admissibility changes with closure flow Γ)  
+- **$r$** — **relational** (acts only on rational relational configurations)  
+- **$g$** — **geometry** (the geometry induced by Γ, not background space)  
 - **□** — the **sealed box operator** (d’Alembert → modal → Bourbaki lineage)
 
 Thus:
