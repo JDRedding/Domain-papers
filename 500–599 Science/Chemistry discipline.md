@@ -185,7 +185,14 @@ $$
 
   (approximate for the same ligand and metal).
 
-- **Effective atomic number (EAN) rule / 18-electron rule** (coordination compounds)  
+- **Effective atomic number (EAN) rule / 18-electron rule** (coordination compounds)
+
+The Effective Atomic Number (EAN) of a complex is the total number of electrons surrounding the central metal atom, calculated as:
+
+    EAN=Valence electrons of the metal+Electrons donated by ligands−Charge on the complex (for cation)
+    
+According to the 18-electron rule, transition metals tend to form stable complexes when their EAN equals 18, analogous to the noble gas configuration for main group elements, as this fills the metal’s 4s, 4p, and 3d orbitals (or generally s, p, d orbitals for the relevant period). This rule is particularly relevant for transition metals and organometallic complexes.
+
   Often expressed as counting valence electrons contributed by metal + ligands = 18 (or sometimes 16).
 
 ---
