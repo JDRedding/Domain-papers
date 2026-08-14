@@ -3,7 +3,7 @@ This Science class in classifications encompasses all areas of chemistry and rel
 ## Practical Use
 Researchers often use the class and its subclasses to organize chemistry mathematics and materials systematically. When searching or cataloging chemistry-related things, understanding these subclasses helps quickly locate infomation, methods, or other things on a particular subfield, from laboratory manuals to advanced research monographs. The reserved numbers provide flexibility for new topics that might emerge in the future reasearch.
 
-**Key mathematical equations and formulas** associated with the main subdivisions of Dewey Decimal Class 540 (Chemistry and allied sciences) are listed below. These represent foundational or highly characteristic relations in each area, with standard notation explained. (Note that 544 and 545 remain unassigned and thus have no dedicated equations.)
+**Key mathematical equations and formulas** associated with the main subdivisions of Chemistry and allied sciences are listed below. These represent foundational or highly characteristic relations in each area, with standard notation explained. (Note that 544 and 545 remain unassigned and thus have no dedicated equations.)
 
 This structure ensures efficient categorization, subject-based retrieval, and academic clarity for Researchers in chemistry and allied sciences.
 
