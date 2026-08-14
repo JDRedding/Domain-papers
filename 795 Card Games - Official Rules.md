@@ -126,16 +126,18 @@ $$
 
 Classic exact counts (for reference) include:
 
-- Royal flush: $4$
-- Straight flush (including royal): $40$
-- Four of a kind: $624$
-- Full house: $3{,}744$
-- Flush: $5{,}108$
-- Straight: $10{,}200$
-- Three of a kind: $54{,}912$
-- Two pair: $123{,}552$
-- One pair: $1{,}098{,}240$
-- High card: $1{,}302{,}540$
+| Hand | Counts |
+|------|-----|
+|  Royal flush: | $4$ | 
+|  Straight flush (including royal): |  $40$
+|  Four of a kind: |  $624$
+|  Full house: |  $3{,}744$
+|  Flush: |  $5{,}108$
+|  Straight:  | $10{,}200$
+|  Three of a kind: |  $54{,}912$
+|  Two pair:  | $123{,}552$
+| One pair: |  $1{,}098{,}240$
+| High card: |  $1{,}302{,}540$
 
 #### Conditional Probability and Sequential Draws
 
