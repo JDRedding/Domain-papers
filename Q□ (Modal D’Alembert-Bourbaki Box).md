@@ -532,9 +532,7 @@ It only cares whether the element can be made relationally stable.
 
 ---
 
-## 🧱 **The correct algebraic/topological classification**
-
-Here is the formal classification table:
+## 🧱 **The algebraic/topological classification**
 
 | Object | Type | Why |
 |--------|------|-----|
