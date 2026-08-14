@@ -573,6 +573,8 @@ with:
 > Q is a **structure-preserving collapse** to the admissible quotient.
 
 ## **Lemma (No‑Regress / Termination)**
+- no infinite unboxing  
+- no infinite regress  
 
 Define a rank:
 
@@ -591,12 +593,6 @@ and:
 $$
 □^2 = □
 $$
-
-Thus:
-
-- no infinite unboxing  
-- no infinite regress  
-- Q□ is well‑founded
 
 ## Kernel and invariants
 
