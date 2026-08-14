@@ -5,8 +5,8 @@ Researchers often use the class and its subclasses to organize chemistry mathema
 
 This structure ensures efficient categorization, subject-based retrieval, and academic clarity for students, educators, and researchers in chemistry and allied sciences.
 
-##Overview 
-Class 540 is designated for Chemistry and allied sciences. It covers general chemistry, the theory, methods, and applications of chemical study, as well as scientific areas closely related to chemistry that are typically found in libraries under this classification. It provides a framework to organize books and research materials according to the chemistry subfields.
+## Overview 
+Chemistry and allied sciences cover general chemistry, the theory, methods, and applications of chemical study, as well as scientific areas closely related to chemistry that are typically under this classification. It provides a framework to organize materials according to the chemistry subfields.
 
 ## Subclasses
 
