@@ -169,12 +169,20 @@ $$
 Equations often involve bonding models, thermodynamics of ionic solids, and coordination chemistry.
 
 - **Born–Landé equation** (lattice energy approximation)  
-$$ U = \frac{N_A M |z^+ z^-| e^2}{4\pi\varepsilon_0 r_0}\left(1 - \frac{1}{n}\right) $$  
+
+$$ 
+U = \frac{N_A M |z^+ z^-| e^2}{4\pi\varepsilon_0 r_0}\left(1 - \frac{1}{n}\right) 
+$$  
+
   where $U$ = lattice energy, $N_A$ = Avogadro’s number, $M$ = Madelung constant, $z^+, z^-$ = ion charges, $e$ = elementary charge, $\varepsilon_0$ = vacuum permittivity, $r_0$ = internuclear distance, $n$ = Born exponent.
 
 - **Crystal-field splitting energy** (ligand-field theory)  
   Notation: $\Delta_o$ (octahedral) or $\Delta_t$ (tetrahedral), with the relation  
-$$ \Delta_t = \frac{4}{9}\Delta_o $$  
+
+$$ 
+\Delta_t = \frac{4}{9}\Delta_o 
+$$ 
+
   (approximate for the same ligand and metal).
 
 - **Effective atomic number (EAN) rule / 18-electron rule** (coordination compounds)  
@@ -188,16 +196,31 @@ $$ \Delta_t = \frac{4}{9}\Delta_o $$
 Mathematical relations appear mainly in kinetics, stereochemistry, and physical properties of organic compounds.
 
 - **Specific rotation** (polarimetry / optical activity)  
-$$ [\alpha] = \frac{\alpha}{c\cdot l} $$  
+
+$$ 
+[\alpha] = \frac{\alpha}{c\cdot l} 
+$$  
+
   where $[\alpha]$ = specific rotation, $\alpha$ = observed rotation (degrees), $c$ = concentration (g mL$^{-1}$), $l$ = path length (dm).
 
 - **Rate law for a simple organic reaction** (example second-order)  
-$$ \text{rate} = k[\mathrm{A}][\mathrm{B}] $$  
+
+$$ 
+\text{rate} = k[\mathrm{A}][\mathrm{B}]
+$$  
+
   or integrated form for second-order:  
-$$ \frac{1}{[\mathrm{A}]} - \frac{1}{[\mathrm{A}]_0} = kt $$
+
+$$ 
+\frac{1}{[\mathrm{A}]} - \frac{1}{[\mathrm{A}]_0} = kt 
+$$
 
 - **Hammett equation** (linear free-energy relationship)  
-$$ \log\frac{k}{k_0} = \sigma\rho $$  
+
+$$ 
+\log\frac{k}{k_0} = \sigma\rho 
+$$  
+
   where $k, k_0$ = rate (or equilibrium) constants for substituted and unsubstituted compounds, $\sigma$ = substituent constant, $\rho$ = reaction constant.
 
 ---
@@ -208,15 +231,27 @@ $$ \log\frac{k}{k_0} = \sigma\rho $$
 Highly geometric and diffraction-based.
 
 - **Bragg’s law**  
-$$ n\lambda = 2d\sin\theta $$  
+
+$$ 
+n\lambda = 2d\sin\theta 
+$$  
+
   where $n$ = order of reflection (integer), $\lambda$ = wavelength of X-rays, $d$ = interplanar spacing, $\theta$ = Bragg angle.
 
 - **Interplanar spacing for cubic crystals**  
-$$ d_{hkl} = \frac{a}{\sqrt{h^2 + k^2 + l^2}} $$  
+
+$$ 
+d_{hkl} = \frac{a}{\sqrt{h^2 + k^2 + l^2}} 
+$$  
+
   where $a$ = lattice parameter, $hkl$ = Miller indices.
 
 - **Crystal density**  
-$$ \rho = \frac{ZM}{N_A V} $$  
+
+$$ 
+\rho = \frac{ZM}{N_A V} 
+$$  
+
   where $\rho$ = density, $Z$ = number of formula units per unit cell, $M$ = molar mass, $N_A$ = Avogadro’s number, $V$ = unit-cell volume.
 
 - **Miller indices notation**  
@@ -233,11 +268,19 @@ Shares many crystallographic formulas; additional relations involve composition 
   Convert oxide weight percentages to molecular proportions, then allocate to mineral end-members (e.g., for olivine: $\mathrm{(Mg,Fe)_2SiO_4}$).
 
 - **Density / specific gravity** (same form as crystallography)  
-$$ \rho = \frac{ZM}{N_A V} $$  
+
+$$ 
+\rho = \frac{ZM}{N_A V} 
+$$  
+
   (notation as above).
 
 - **Refractive index relation (simplified Lorentz–Lorenz)**  
-$$ \frac{n^2 - 1}{n^2 + 2} = \frac{4\pi}{3}N\alpha $$  
+
+$$
+\frac{n^2 - 1}{n^2 + 2} = \frac{4\pi}{3}N\alpha
+$$ 
+
   where $n$ = refractive index, $N$ = number density of molecules, $\alpha$ = polarizability.
 
 
