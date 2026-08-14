@@ -636,7 +636,7 @@ This is the structural reason.
   It doesn’t map ℝ → ℚ or truncate digits. It collapses *behavior*, not values.
 
 - **Not a group quotient on numbers:**  
-  It doesn’t do $\mathbb{R} / \mathbb{Z}$ or similar. It acts on relational states.
+  It doesn’t do $\mathbb{R}$ / $\mathbb{Z}$ or similar. It acts on relational states.
 
 - **Not a topological identification on a metric space:**  
   The metric comes *after* Γ and Q, not before.
