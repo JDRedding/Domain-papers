@@ -20,7 +20,7 @@
     621.3  Electronics & Computers
 ```
 
-Cluster (3) dominates numerically — **33,501 items** — which is typical because modern catalogs treat electronics as the largest engineering domain.
+Cluster (3) dominates numerically — **most covered items** — which is typical because modern catalogs treat electronics as the largest engineering domain.
 
 ### **621.0 — General Mechanical Engineering**   
 Broad, discipline‑wide mechanical engineering: fundamentals, surveys, multi‑topic works.
