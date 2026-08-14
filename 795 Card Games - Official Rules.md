@@ -1,7 +1,20 @@
+# Card Games
+- Official Rules
 The official rules of card games provide standardized instructions for playing, scoring, and determining winners across hundreds of popular games, with resources available from online guides and authoritative books.
 - 795 Card games
 
-Comprehensive Online Resources
+## Direct summary
+- This note is a short overview of resources and background for "795 — Card games." It points readers to comprehensive online and print references for official card-game rules, explains practical uses, and lists relevant keywords and game types.
+
+## Key points
+- Primary online resources: links to an Official Game Rules website (A–Z card games) and Bicycle Cards' how-to-play guides for common games (Poker, Bridge, Canasta).
+- Authoritative print reference: Albert H. Morehead’s Official Rules of Card Games (covers ~300+ games, scoring, terminology).
+- Historical sources: editions from the United States Playing Card Company for historical rule evolution.
+- Practical uses: learning/teaching gameplay, ensuring consistency for casual or tournament play, and researching historical rule changes or variations.
+- Keywords: a long list of related topics (poker, bridge, solitaire, blackjack, bidding, card play, strategy, history, etc.).
+- Repo context: stored under the 795 Card games Dewey-class folder in the Domain-papers repo.
+
+## Comprehensive Online Resources
 
 Official Game Rules Website https://officialgamerules.org/card-games/ – This site offers an extensive A-Z guide of card games, from classic trick-taking games to modern party games, providing rules, scoring instructions, and strategies for each game. It also features curated lists of all-time favorite card games and regularly updated rules information
 
@@ -9,19 +22,19 @@ Users can download a free e-book compiled with the most popular and essential ga
 
 Bicycle Cards Guide https://bicyclecards.com/how-to-play/ – Bicycle provides easy-to-follow instructions for popular card games such as Poker, Bridge, and Canasta, catering to beginners and seasoned players alike 
 
-Authoritative Book References
+## Authoritative Book References
 
 Albert H. Morehead’s Official Rules of Card Games – This classic reference includes rules for over 300 card games, covering areas such as contract bridge, etiquette, teaching games to children, and game choice for different occasions
 
 The book also provides technical terms and detailed scoring methods, making it an authoritative source for formal or competitive play.
 
-Historical Sources
+## Historical Sources
 
 United States Playing Card Company Editions – Historic compilations, such as the Ninth Edition issued by the US Playing Card Company, revise rules for popular social games and include additions of lesser-known games 
 
 These editions are valuable for understanding the evolution of card game standards and the historical interpretation of rules.
 
-Practical Use
+## Practical Use
 
 Learning and Teaching – Online guides and books are suitable for individual learning, teaching children, or instructing new players. They clarify gameplay, scoring procedures, and common variations.
 
@@ -31,7 +44,7 @@ Reference and Correction – Historical editions offer insight into authorized v
 
 For direct access, users can explore the Official Game Rules website for updated rules, consult Official Rules of Card Games by Albert H. Morehead, or browse digital copies from the United States Playing Card Company archives 
 
-Official Game Rules
+## Official Game Rules
 
 These sources collectively cover virtually all card games, from traditional favorites like Poker and Bridge to modern and social party games.
 
