@@ -2,9 +2,9 @@
 - Budgeting Templates
 Full ecosystem 
 
-The file describes the "Unified Budget System (UBS v1.0)", a single, consistent budgeting framework that runs four synchronized time layers (Daily → Weekly → Monthly → Yearly) feeding into a Master Ledger. It provides template structures, core category taxonomy, usage guidance, KPIs (e.g., 50/30/20), and several specialized plug‑in budgets (projects, holiday, savings goals, spending diet).
+The file describes the Unified Budget System (UBS v1.0)", a single, consistent budgeting framework that runs four synchronized time layers feeding into a Master Ledger. It provides template structures, core category taxonomy, usage guidance, KPIs (e.g., 50/30/20), and several specialized plug‑in budgets (projects, holiday, savings goals, spending diet).
 
-A unified budget system works by running **four synchronized layers** — Daily → Weekly → Monthly → Yearly — all feeding a single master ledger. Specialized budgets (projects, holidays, savings goals) plug into the same structure using modular sub‑ledgers. Everything rolls up into one dashboard.
+A unified budget system works by running **four synchronized layers** — Daily → Weekly → Monthly → Yearly — all in a single master ledger. Specialized budgets (projects, holidays, savings goals) plug into the same structure using modular sub‑ledgers. Everything rolls up into one dashboard.
 
 The unified budget system is one framework that handles **daily**, **weekly**, **monthly**, **yearly**, and **special‑purpose** budgeting without switching templates or workflows. Below is a complete, structured system built in ASCII‑clean form, with clear operators, flows, and category logic. 
 
