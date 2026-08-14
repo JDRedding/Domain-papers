@@ -324,6 +324,6 @@
 | deepwiki | [https://deepwiki.com/](https://deepwiki.com/) |
 | Incompetech | [https://incompetech.com/](https://incompetech.com/) |
 | Librarything mds | [https://www.librarything.com/mds/0XX](https://www.librarything.com/mds/0XX) |
-
+| ExcelX | [https://excelx.com/](https://excelx.com/)
 </details>
 
