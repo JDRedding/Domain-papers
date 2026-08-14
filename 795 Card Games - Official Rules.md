@@ -121,6 +121,7 @@ or, in continuous approximations, the corresponding integral. In card games this
 
 #### Bridge and Trick-Taking Scoring 
 - / Probability Fragments
+
 In contract bridge the probability that a particular suit is distributed in a given pattern among the remaining cards follows the hypergeometric distribution above. Basic trick-probability approximations sometimes employ the binomial distribution when independence is assumed:
 
 $$
