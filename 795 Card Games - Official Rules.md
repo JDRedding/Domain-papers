@@ -16,7 +16,11 @@ The official rules of card games provide standardized instructions for playing, 
 - Keywords: a long list of related topics (poker, bridge, solitaire, blackjack, bidding, card play, strategy, history, etc.).
 - Repo context: stored under the 795 Card games Dewey-class folder in the Domain-papers repo.
 
-## Comprehensive Online Resources
+## Official Game Rules
+
+These sources collectively cover virtually all card games, from traditional favorites like Poker and Bridge to modern and social party games.
+
+### Comprehensive Online Resources
 
 Official Game Rules Website https://officialgamerules.org/card-games/ – This site offers an extensive A-Z guide of card games, from classic trick-taking games to modern party games, providing rules, scoring instructions, and strategies for each game. It also features curated lists of all-time favorite card games and regularly updated rules information
 
@@ -24,7 +28,7 @@ Users can download a free e-book compiled with the most popular and essential ga
 
 Bicycle Cards Guide https://bicyclecards.com/how-to-play/ – Bicycle provides easy-to-follow instructions for popular card games such as Poker, Bridge, and Canasta, catering to beginners and seasoned players alike 
 
-## Authoritative Book References
+### Authoritative Book References
 
 Albert H. Morehead’s Official Rules of Card Games – This classic reference includes rules for over 300 card games, covering areas such as contract bridge, etiquette, teaching games to children, and game choice for different occasions
 
@@ -46,11 +50,7 @@ Reference and Correction – Historical editions offer insight into authorized v
 
 For direct access, users can explore the Official Game Rules website for updated rules, consult Official Rules of Card Games by Albert H. Morehead, or browse digital copies from the United States Playing Card Company archives 
 
-## Official Game Rules
-
-These sources collectively cover virtually all card games, from traditional favorites like Poker and Bridge to modern and social party games.
-
-Keywords 
+# Keywords 
 acol
 advanced
 backgammon
