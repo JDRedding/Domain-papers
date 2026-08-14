@@ -182,7 +182,7 @@ Purpose: allocation + envelope control.
 WEEKLY SHEET (W‑SHEET)
 --------------------------------------------------
 
-Week #: ____________     Start Date: ____________
+Week #: ____________     Start Date:  ____________
                           End Date:   ____________
 
 INCOME TOTALS
@@ -193,7 +193,7 @@ INCOME TOTALS
 FIXED EXPENSES
   - __________________________ Amount: ___________
   - __________________________ Amount: ___________
-  Fixed Total: __________________________________
+  Fixed Total: ___________________________________
 
 VARIABLE EXPENSES
   - __________________________ Amount: ___________
@@ -202,7 +202,7 @@ VARIABLE EXPENSES
 
 DEBT PAYMENTS
   - __________________________ Amount: ___________
-  Debt Total: ___________________________________
+  Debt Total: ____________________________________
 
 SAVINGS
   - __________________________ Amount: ___________
@@ -214,10 +214,10 @@ WEEKLY SUMMARY
   Weekly Net:     ________________________________
 
 NOTES
-Fixed Expenses:   ________
-Variable Expenses:________
-Debt Payments:    ________
-Savings Allocated:________
+Fixed Expenses:    _____.__
+Variable Expenses: _____.__
+Debt Payments:     _____.__
+Savings Allocated: _____.__
 
 __________________________________________________
 
