@@ -14,7 +14,7 @@ $$
 where $\mathbf{f}:\mathbb{R}^n\to\mathbb{R}^n$ is smooth. An equilibrium (fixed point) $\mathbf{x}^*$ satisfies
 
 $$
-\mathbf{f}(\mathbf{x}^*) = \mathbf{0}.
+\mathbf{f}( \mathbf{x}^* ) = \mathbf{0}.
 $$
 
 The local behaviour of trajectories near $\mathbf{x}^*$ is completely determined (when the equilibrium is hyperbolic) by the *Jacobian matrix* of the vector field evaluated at the equilibrium:
