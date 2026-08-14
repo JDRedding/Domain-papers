@@ -87,8 +87,8 @@ $$
 ($p$ = pressure, $v$ = speed, $g$ = gravity, $y$ = height).
 
 Navier–Stokes equations (momentum)  
-$$
 
+$$
 \rho\left(\frac{\partial\mathbf{u}}{\partial t} + \mathbf{u}\cdot\nabla\mathbf{u}\right) = -\nabla p + \nabla\cdot\mathbf{T}_{D} + \mathbf{f}
 $$  
 
@@ -110,7 +110,7 @@ Ideal gas law
 
 $$
 pV = nRT = Nk_{B}T
-$$  
+$$
 
 ($p$ = pressure, $V$ = volume, $n$ = amount of substance in moles, $R$ = gas constant, $T$ = absolute temperature, $N$ = number of molecules, $k_{B}$ = Boltzmann constant).
 
