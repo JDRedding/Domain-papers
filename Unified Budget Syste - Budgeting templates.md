@@ -1,5 +1,5 @@
 # **Unified Budget System (UBS v1.0)**  
-- Budgeting templates
+- Budgeting Templates
 Full ecosystem 
 
 A unified budget system works by running **four synchronized layers** — Daily → Weekly → Monthly → Yearly — all feeding a single master ledger. Specialized budgets (projects, holidays, savings goals) plug into the same structure using modular sub‑ledgers. Everything rolls up into one dashboard.
