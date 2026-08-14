@@ -119,6 +119,32 @@ It captures all core principles:
 - **No location** — substrate has no coordinates  
 
 This is the exact formalization of the Q‑layer.
+
+### **Lemma (No‑Regress / Termination)**
+
+Define a rank:
+
+$$
+\rho(X) = \text{depth of irrational descent in } X.
+$$
+
+Then:
+
+$$
+\rho(□X) < \rho(X)
+$$
+
+and:
+
+##
+□^2 = □
+##
+
+Thus:
+
+- no infinite unboxing  
+- no infinite regress  
+- Q□ is well‑founded
  
 ### **Concise Table**
 
