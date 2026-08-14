@@ -308,7 +308,7 @@ Q□ means:
 
 # Appendix
 ## symbols/concepts
-The definition of the following domains, dynamics, or how the induce geometry g are defined in other relational dynamic geometry notes. See those for either the dynamical system definition or a mapping Γ → geometric structure. Below are given compatible definitions* for each undefined symbol.
+The definition of the following domains, dynamics, or how the induce geometry g are defined in other relational dynamic geometry notes. See those for either the dynamical system definition or a mapping Γ → geometric structure. Below are given brief compatible definitions for each undefined symbol.
 
 ---
 
