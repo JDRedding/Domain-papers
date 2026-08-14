@@ -1,5 +1,5 @@
 # Stochastic feedback
-**A common mathematical description of stochastic feedback** (especially the simple scalar case studied in control theory and dynamical systems) is the discrete-time multiplicative process
+**A common mathematical description of stochastic feedback** (especially the simple scalar case studied in control theory and dynamical systems) is the discrete-time multiplicative process.
 
 These expressions capture the idea that *stochastic feedback* can generate rich dynamics (heavy-tailed distributions, stability conditions that differ for mean/median/variance, emergent structure, adaptive behaviour, etc.) even when the individual deterministic modes would not.
 
@@ -7,7 +7,7 @@ $$
 x_{k+1} = a_k \, x_k, \qquad k = 0,1,2,\dots
 $$
 
-where the $a_k$ are independent random variables drawn from some distribution $f_a(a)$ (the stochastic feedback gain or multiplicative noise).  
+is where the $a_k$ are independent random variables drawn from some distribution $f_a(a)$ (the stochastic feedback gain or multiplicative noise).  
 
 This is equivalent to a pure feedback loop around a unit delay with a random gain. Taking logarithms yields the additive form
 
