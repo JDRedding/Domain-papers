@@ -102,13 +102,13 @@ $$
 - **Percent yield**  
 
 $$ 
-\% \text{ yield} = \left(\frac{\text{actual yield}}{\text{theoretical yield}}\right) \times 100 
+\text{ yield} = \left(\frac{\text{actual yield}}{\text{theoretical yield}}\right) \times 100 
 $$
 
 - **Relative error / percentage error** (common in apparatus calibration and measurement)  
 
 $$ 
-\% \text{ error} = \left(\frac{\text{experimental value} - \text{true value}}{\text{true value}}\right) \times 100 
+\text{ error} = \left(\frac{\text{experimental value} - \text{true value}}{\text{true value}}\right) \times 100 
 $$
 
 ---
