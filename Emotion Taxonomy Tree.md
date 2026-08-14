@@ -108,7 +108,7 @@ An Emotion Taxonomy Tree
 └── Boredom
 ```
 ────────────────────────────────────────
-Noted as (outdated):
+#### Noted as (outdated):
 ```
 • Melancholy (outdated)
 • Ecstasy (outdated)
@@ -126,6 +126,7 @@ Noted as (outdated):
 • Apathy (outdated)
 ```
 ────────────────────────────────────────
+
 Rooted in Experience • Growing through Awareness • Bearing Understanding
 
 Note: Some languages lack exact equivalents for basic emotion words, merge categories differently, or lack a general word for “emotion” itself
