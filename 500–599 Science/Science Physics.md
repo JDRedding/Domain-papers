@@ -3,7 +3,7 @@ In classifications, Science denotes Physics, encompassing all fundamental concep
 
 The formulas use conventional SI notation and are the most widely taught or applied starting points in each subdivision. Deeper or specialized topics (e.g., general relativity, quantum field theory, turbulent flow closures, nonlinear optics) introduce many additional equations. By using the category and its subcategories, one can access resources spanning from introductory physics concepts to advanced, specialized research in both theoretical and applied physics.
 
-General Description
+## General Description
 The classification in the Dewey Decimal System covers the broad field of physics. This category includes the general principles, laws, and concepts of physical science as well as the foundational theories that explain natural phenomena. Books or resources listed address the nature of matter and energy, the fundamental forces, and the mathematical descriptions of physical happenings.
 
 ## Subcategories 
