@@ -10,9 +10,9 @@ This structure ensures efficient categorization, subject-based retrieval, and ac
 ## Overview 
 Chemistry and allied sciences cover general chemistry, the theory, methods, and applications of chemical study, as well as scientific areas closely related to chemistry that are typically under this classification. It provides a framework to organize materials according to the chemistry subfields.
 
-## Subclasses
-
 ---
+
+## Subclasses
 
 541 Physical Chemistry
 : Deals with the physical principles underlying chemical interactions, chemical thermodynamics, kinetics, quantum chemistry, spectroscopy, and molecular physics. Books on the theory and methods of physical chemistry are included here.
