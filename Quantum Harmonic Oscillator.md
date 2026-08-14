@@ -22,7 +22,7 @@ $$
 
 $$
 -\frac{\hbar^{2}}{2m} \frac{d^{2}\psi(x)}{dx^{2}} + \frac{1}{2} m \omega^{2} x^{2} \psi(x) = E \psi(x)
-$
+$$
 
 **Notation**  
 - $\hbar = \frac{h}{2\pi}$: reduced Planck’s constant  
