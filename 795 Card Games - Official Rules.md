@@ -1,7 +1,9 @@
 # Card Games
 - Official Rules
+- - 795 Card games
+    
 The official rules of card games provide standardized instructions for playing, scoring, and determining winners across hundreds of popular games, with resources available from online guides and authoritative books.
-- 795 Card games
+
 
 ## Direct summary
 - This note is a short overview of resources and background for "795 — Card games." It points readers to comprehensive online and print references for official card-game rules, explains practical uses, and lists relevant keywords and game types.
