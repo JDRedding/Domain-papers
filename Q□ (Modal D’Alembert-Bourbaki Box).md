@@ -371,7 +371,7 @@ This is the missing formal chain.
 
 ---
 
-## 🔺 **2. SID / PED Stability — formal criteria**  
+## 🔺 **2. SID / PED Stability**  
 
 ### **SID Triad (Structure–Interaction–Dynamics)**  
 A relational configuration \(X\) is **SID‑stable** iff:
@@ -425,7 +425,7 @@ PED governs **flux dynamics**.
 
 ---
 
-## 🔲 **3. Q‑Layer / Admissibility — formal definition**  
+## 🔲 **3. Q‑Layer / Admissibility**  
 Notation:
 
 $$
@@ -467,7 +467,7 @@ $$
   Q□ := □(Q_{\text{irr}})
 $$
   
-📘 **Summary Table (all three definitions)**
+📘 **Summary Table**
 
 | Concept | Formal Definition | Role |
 |--------|-------------------|------|
