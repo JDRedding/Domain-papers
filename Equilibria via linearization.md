@@ -17,13 +17,13 @@ $$
 \mathbf{f}(\mathbf{x}^*) = \mathbf{0}.
 $$
 
-The local behaviour of trajectories near \(\mathbf{x}^\) is completely determined (when the equilibrium is hyperbolic) by the *Jacobian matrix** of the vector field evaluated at the equilibrium:
+The local behaviour of trajectories near $\mathbf{x}^*$) is completely determined (when the equilibrium is hyperbolic) by the *Jacobian matrix** of the vector field evaluated at the equilibrium:
 
 $$
 A = D\mathbf{f}(\mathbf{x}^) = \Bigl(\tfrac{\partial f_i}{\partial x_j}(\mathbf{x}^)\Bigr)_{1\le i,j\le n}.
 $$
 
-The eigenvalues \(\lambda\in\mathbb{C}\) of \(A\) are the roots of the characteristic polynomial
+The eigenvalues $\lambda\in\mathbb{C}$ of $A$ are the roots of the characteristic polynomial
 
 $$
 \det(A-\lambda I)=0.
@@ -40,11 +40,11 @@ $$
   \lambda_1,\lambda_2\in\mathbb{R},\qquad \lambda_1\lambda_2>0.
 $$
 
-  \(\lambda_1>0\), \(\lambda_2>0\): repelling node (source)  
-  \(\lambda_10\): repelling focus  
-  \(\alpha<0\): attracting focus
+  $\lambda_1>0$, $\lambda_2>0$: repelling node (source)  
+  $\lambda_10$: repelling focus  
+  $\alpha<0$: attracting focus
 
-(When \(\alpha=0\) one obtains a linear centre, which is non-hyperbolic and requires higher-order terms.)
+(When $\alpha=0$ one obtains a linear centre, which is non-hyperbolic and requires higher-order terms.)
 
 Higher-dimensional / mixed case
 
@@ -72,5 +72,5 @@ $$
 \{Re}(\lambda)\neq 0\quad\text{for every eigenvalue }\lambda\text{ of }A.
 $$
 
-In that case the Hartman–Grobman theorem guarantees that the nonlinear flow is topologically equivalent to the linear flow \(\dot{\mathbf{y}}=A\mathbf{y}\) in a neighbourhood of \(\mathbf{x}^*\).
+In that case the Hartman–Grobman theorem guarantees that the nonlinear flow is topologically equivalent to the linear flow $\dot{\mathbf{y}}=A\mathbf{y}$ in a neighbourhood of $\mathbf{x}^*$.
 
