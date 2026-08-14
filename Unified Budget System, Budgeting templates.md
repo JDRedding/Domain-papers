@@ -124,13 +124,12 @@ Daily and weekly templates help you track short‑cycle spending and income allo
 ### **Daily Module (D‑LOG)**
 Purpose: micro‑tracking + habit formation.
 
+Minimal, pen‑and‑paper friendly, unified categories.
 ```
-DAY LOG (D‑LOG)
+DAY LOG (D‑LOG; YYYY‑MM‑DD)
 --------------------------------------------------
-Date: YYYY‑MM‑DD
+Date:     ‑    ‑
 ==================================================
-
-Date: _______________________
 
 INCOME
   - Source: __________________ Amount: ___________
@@ -183,12 +182,51 @@ Purpose: allocation + envelope control.
 WEEKLY SHEET (W‑SHEET)
 --------------------------------------------------
 Week #: ____
-Income Total: ________
-Fixed Expenses: ________
-Variable Expenses: ________
-Debt Payments: ________
-Savings Allocated: ________
-Weekly Net: ________
+==================================================
+          WEEKLY BUDGET SHEET (W‑SHEET)
+==================================================
+Week #: ____________     Start Date: ____________
+                          End Date:   ____________
+
+INCOME TOTALS
+  - __________________________ Amount: ___________
+  - __________________________ Amount: ___________
+  Weekly Income Total: ___________________________
+
+FIXED EXPENSES
+  - __________________________ Amount: ___________
+  - __________________________ Amount: ___________
+  Fixed Total: __________________________________
+
+VARIABLE EXPENSES
+  - __________________________ Amount: ___________
+  - __________________________ Amount: ___________
+  Variable Total: ________________________________
+
+DEBT PAYMENTS
+  - __________________________ Amount: ___________
+  Debt Total: ___________________________________
+
+SAVINGS
+  - __________________________ Amount: ___________
+  Savings Total: _________________________________
+
+WEEKLY SUMMARY
+  Total Income:   ________________________________
+  Total Expenses: ________________________________
+  Weekly Net:     ________________________________
+
+NOTES
+Fixed Expenses:   ________
+Variable Expenses:________
+Debt Payments:    ________
+Savings Allocated:________
+Weekly Net:       ________
+
+__________________________________________________
+
+__________________________________________________
+==================================================
 ```
 
 Weekly sheets summarize daily logs and push totals into monthly.
