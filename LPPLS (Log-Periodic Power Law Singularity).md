@@ -6,7 +6,7 @@ $$
 E[\ln p(t)] = A + B(t_c - t)^m + C(t_c - t)^m \cos\bigl(\omega \ln(t_c - t) - \phi\bigr)
 $$
 
-(or the absolute-value version often used in practice for numerical stability around and beyond \(t_c\)):
+(or the absolute-value version often used in practice for numerical stability around and beyond $t_c$):
 
 $$
 E[\ln p(t)] = A + B|t_c - t|^m + C|t_c - t|^m \cos\bigl(\omega \ln|t_c - t| - \phi\bigr)
