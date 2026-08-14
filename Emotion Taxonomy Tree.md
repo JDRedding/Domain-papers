@@ -108,7 +108,7 @@ An Emotion Taxonomy Tree
 └── Boredom
 ```
 ────────────────────────────────────────
-#### Noted as (outdated):
+#### Outdated:
 ```
 • Melancholy (outdated)
 • Ecstasy (outdated)
