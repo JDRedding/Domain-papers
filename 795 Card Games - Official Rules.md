@@ -13,7 +13,6 @@ The official rules of card games provide standardized instructions for playing, 
 - Historical sources: editions from the United States Playing Card Company for historical rule evolution.
 - Practical uses: learning/teaching gameplay, ensuring consistency for casual or tournament play, and researching historical rule changes or variations.
 - Keywords: a long list of related topics (poker, bridge, solitaire, blackjack, bidding, card play, strategy, history, etc.).
-- Repo context: stored under the 795 Card games Dewey-class folder in the Domain-papers repo.
 
 ## Official Game Rules
 
@@ -135,22 +134,170 @@ A perfectly random shuffle of a deck of $n$ cards has $n!$ possible orderings, e
 
 These are the principal equations and the associated standard mathematical notation used throughout the analysis of official card-game rules, probabilities, and strategies. Specific games may introduce additional specialized scoring functions, but they are built on the combinatorial and probabilistic foundations shown above.
 
-# Keywords 
+
+
+
+
+
+The takeaway: **your 795 Card Games note is already solid**, but I can tighten it into a clean, RDG‑compatible, Dewey‑stable reference entry with explicit structure, mathematical anchors, and a keyword lattice. Below is a refined, classification‑ready version that preserves everything you wrote while making it maximally useful inside your repo.
+
+---
+
+## 795 — Card Games  
+A Dewey‑stable reference entry summarizing official rules, authoritative sources, mathematical foundations, and practical applications of card‑game systems.
+
+### Identity & Scope  
+**795** covers *recreational card games*, including rulebooks, official standards, scoring systems, etiquette, terminology, and instructional materials. It excludes formal game theory (**790.15**) and probability analysis (**519.x**) except where needed for rule interpretation.
+
+---
+
+## 🂡 Core Summary  
+The official rules of card games provide standardized instructions for play, scoring, terminology, and adjudication across hundreds of traditional and modern games. Resources include comprehensive online guides, authoritative print references, and historical editions documenting rule evolution.
+
+This entry serves as a **pointer** to canonical rule sources, mathematical foundations, and practical usage contexts for anyone working inside the **795 Card Games** Dewey folder of your Domain‑papers repo.
+
+---
+
+## 🂱 Primary Online Resources  
+- **Official Game Rules** — A–Z index of card games, trick‑taking systems, party games, scoring methods, and downloadable rule e‑book.  
+- **Bicycle Cards Guides** — Beginner‑friendly rules for Poker, Bridge, Canasta, and other common games.
+
+These two sites collectively cover nearly all mainstream card games.
+
+---
+
+## 🂲 Authoritative Print Reference  
+- **Albert H. Morehead — *Official Rules of Card Games***  
+  - ~300+ games  
+  - Contract bridge laws  
+  - Etiquette and teaching guidance  
+  - Technical terms  
+  - Scoring systems  
+  - Game selection for occasions  
+
+This remains the most widely cited single‑volume authority.
+
+---
+
+## 🂳 Historical Sources  
+- **United States Playing Card Company Editions**  
+  - Historic rule compilations  
+  - Revised social‑game rules  
+  - Additions of lesser‑known games  
+  - Useful for rule‑evolution research
+
+These editions anchor the historical interpretation of card‑game standards.
+
+---
+
+## 🂴 Practical Uses  
+- **Choosing games for occasions** — Match complexity, number of players, and social context.  
+- **Teaching card games** — Clear rules reduce onboarding friction for children and new players.  
+- **Etiquette** — Ensures smooth casual or competitive play.  
+- **Terminology** — Standard vocabulary for bidding, trick‑taking, scoring, and strategy.  
+- **Historical correction** — Compare modern rules with earlier editions to identify authorized variations.
+
+---
+
+## 🂵 Mathematical Foundations  
+Card‑game analysis relies on standard discrete mathematics and probability.
+
+### Combinatorics  
+- **Binomial coefficient**  
+  \[
+  \binom{n}{k}=\frac{n!}{k!(n-k)!}
+  \]
+- **Permutations**  
+  \[
+  P(n,k)=\frac{n!}{(n-k)!}
+  \]
+
+### Poker Hand Space  
+Total 5‑card hands:  
+\[
+\binom{52}{5}=2{,}598{,}960
+\]
+
+Classic counts:  
+- Royal flush: 4  
+- Straight flush: 40  
+- Four of a kind: 624  
+- Full house: 3,744  
+- Flush: 5,108  
+- Straight: 10,200  
+- Three of a kind: 54,912  
+- Two pair: 123,552  
+- One pair: 1,098,240  
+- High card: 1,302,540  
+
+### Probability  
+- **Conditional probability**  
+  \[
+  P(A\mid B)=\frac{P(A\cap B)}{P(B)}
+  \]
+- **Hypergeometric distribution**  
+  \[
+  P(X=k)=\frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}
+  \]
+
+### Expected Value  
+\[
+E[X]=\sum_i x_i P(X=x_i)
+\]
+
+Used for pot odds, equity, and optimal strategy.
+
+### Bridge & Trick‑Taking  
+Suit‑distribution probabilities follow hypergeometric models; simplified approximations sometimes use binomial assumptions.
+
+### Shuffling  
+A random shuffle has \(52!\) possible deck orderings.  
+Mixing time ≈ \(\frac{3}{2}\log_2 52\) riffle shuffles.
+
+---
+
+## Topics
+
+Related:
+
+- trick‑taking games  
+- shedding games  
+- matching games  
+- gambling games  
+- solitaire families  
+- tarot‑derived systems  
+- mathematical/probability sheets  
+- historical rule editions
+
+Follow‑up topic:
+
+- **poker**  
+- **bridge**  
+- **blackjack**  
+- **solitaire**  
+- **tarot deck**  
+- **Texas Hold'em**  
+- **bidding**  
+- **card play**  
+- **poker strategy**  
+- **playing leads**  
+- **card game history**  
+- **recreation**   
+- **RPG**
+
+## 🂶 Keyword Lattice  
+
 acol
 advanced
 backgammon
 Basement Boxes
 beginner
 Beginner level
-bidding
 Bidding Doubles
 Bidding Weak Two Bids
 biography
-blackjack
 board games
-bridge
 card games
-Card Play
 cards
 contract bridge
 declarer play
@@ -180,19 +327,11 @@ own
 paperback
 play
 playing cards
-Playing Leads
-poker
-poker strategy
 psychology
 read
 recreation
 reference
-RPG
 rules
-solitaire
 strategy
-tarot
-tarot deck
-Texas Hold'em
 to-read
 unread
