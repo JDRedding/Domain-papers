@@ -348,9 +348,9 @@ $$
 
 ---
 
-539 Modern physics – Deals with concepts developed after classical physics, including relativity, quantum mechanics, nuclear physics, and particle physics.
+### 539 Modern physics 
+– Deals with concepts developed after classical physics, including relativity, quantum mechanics, nuclear physics, and particle physics.
 
-### 539 Modern physics
 ***Mass–energy equivalence*** (special relativity)  
 
 $$
