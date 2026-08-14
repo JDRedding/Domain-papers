@@ -25,7 +25,8 @@ Class 540 is designated for Chemistry and allied sciences. It covers general che
 ### 546 Inorganic Chemistry
 : Includes the study of inorganic compounds, their properties, synthesis, and reactions. It covers the chemistry of metals, nonmetals, coordination compounds, and organometallic compounds.
 
-### 547 Organic Chemistry: Covers carbon-containing compounds, their structures, reactions, synthesis, mechanism, and application. Topics include hydrocarbons, functional groups, polymers, and medicinal chemistry.
+### 547 Organic Chemistry
+: Covers carbon-containing compounds, their structures, reactions, synthesis, mechanism, and application. Topics include hydrocarbons, functional groups, polymers, and medicinal chemistry.
 
 ### 548 Crystallography
 : Deals with crystal structures, crystallographic methods, X-ray diffraction, crystal symmetry, lattice theory, and the study of solid-state structures.
