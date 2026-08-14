@@ -83,6 +83,27 @@ These categories appear in every module so the system stays unified.
 
 ## **Module Templates**
 
+### **Master Ledger (UBS‑LEDGER)**
+Purpose: unified control + global view.
+
+```
+UBS‑LEDGER
+--------------------------------------------------
+| Date | Category | Subcategory | Amount | Type |
+|------|----------|-------------|--------|------|
+| ...  | ...      | ...         | ...    | ...  |
+
+Running Totals:
+  Income: ________
+  Expenses: ________
+  Savings: ________
+  Debt: ________
+  Projects: ________
+  Special Events: ________
+```
+
+Everything flows into this ledger.
+
 ---
 
 ## 📅 **Daily & Weekly Budgets**
@@ -197,29 +218,6 @@ Seasonal Forecast:
 
 Yearly Net: ________
 ```
-
----
-
-### **Master Ledger (UBS‑LEDGER)**
-Purpose: unified control + global view.
-
-```
-UBS‑LEDGER
---------------------------------------------------
-| Date | Category | Subcategory | Amount | Type |
-|------|----------|-------------|--------|------|
-| ...  | ...      | ...         | ...    | ...  |
-
-Running Totals:
-  Income: ________
-  Expenses: ________
-  Savings: ________
-  Debt: ________
-  Projects: ________
-  Special Events: ________
-```
-
-Everything flows into this ledger.
 
 ---
 
