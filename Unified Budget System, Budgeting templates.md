@@ -178,6 +178,7 @@ Daily logs feed weekly totals automatically.
 ### **Weekly Module (W‑SHEET)**
 Purpose: allocation + envelope control.
 
+Rolls up daily logs into a single printable sheet.
 ```
 WEEKLY SHEET (W‑SHEET)
 --------------------------------------------------
