@@ -12,32 +12,11 @@ Chemistry and allied sciences cover general chemistry, the theory, methods, and 
 
 ## Subclasses
 
+---
+
 541 Physical Chemistry
 : Deals with the physical principles underlying chemical interactions, chemical thermodynamics, kinetics, quantum chemistry, spectroscopy, and molecular physics. Books on the theory and methods of physical chemistry are included here.
 
-### 542 Techniques, Equipment & Materials
-: Covers laboratory techniques, chemical apparatus, instrumentation, and general materials used in chemical experimentation. This includes chemical preparation methods, laboratory safety, glassware, and experimental procedures.
-
-### 543 Analytical Chemistry
-: Focuses on methods and techniques for analyzing substances, including qualitative and quantitative analysis, spectroscopy, chromatography, titrimetry, and modern analytical instrumentation.
-
-### 544 [Unassigned] and 545 [Unassigned]
-: These numbers are currently not designated for any specific chemistry topic, reserved for potential future expansion of the classification system.
-
-### 546 Inorganic Chemistry
-: Includes the study of inorganic compounds, their properties, synthesis, and reactions. It covers the chemistry of metals, nonmetals, coordination compounds, and organometallic compounds.
-
-### 547 Organic Chemistry
-: Covers carbon-containing compounds, their structures, reactions, synthesis, mechanism, and application. Topics include hydrocarbons, functional groups, polymers, and medicinal chemistry.
-
-### 548 Crystallography
-: Deals with crystal structures, crystallographic methods, X-ray diffraction, crystal symmetry, lattice theory, and the study of solid-state structures.
-
-### 549 Mineralogy
-: Focuses on the chemistry, composition, and classification of minerals, including their formation, physical properties, and chemical analysis. Mineralogical studies with a chemical perspective are categorized here.
-
-
-### 541 Physical Chemistry
 This subdivision is the most equation-intensive, covering thermodynamics, kinetics, quantum mechanics, spectroscopy, and electrochemistry.
 
 - **Ideal gas law**  
@@ -69,7 +48,11 @@ This subdivision is the most equation-intensive, covering thermodynamics, kineti
   \[ A = \varepsilon cl \]  
   where \(A\) = absorbance, \(\varepsilon\) = molar absorptivity, \(c\) = concentration, \(l\) = path length.
 
+---
+
 ### 542 Techniques, Equipment & Materials
+: Covers laboratory techniques, chemical apparatus, instrumentation, and general materials used in chemical experimentation. This includes chemical preparation methods, laboratory safety, glassware, and experimental procedures.
+
 Formulas here are primarily practical laboratory calculations rather than theoretical derivations.
 
 - **Molarity (concentration)**  
@@ -86,7 +69,11 @@ Formulas here are primarily practical laboratory calculations rather than theore
 - **Relative error / percentage error** (common in apparatus calibration and measurement)  
   \[ \% \text{ error} = \left(\frac{\text{experimental value} - \text{true value}}{\text{true value}}\right) \times 100 \]
 
+---
+
 ### 543 Analytical Chemistry
+: Focuses on methods and techniques for analyzing substances, including qualitative and quantitative analysis, spectroscopy, chromatography, titrimetry, and modern analytical instrumentation.
+
 Focuses on quantitative relationships used in qualitative/quantitative analysis, instrumental methods, and data treatment.
 
 - **Beer–Lambert law** (spectrophotometry)  
@@ -108,7 +95,16 @@ Focuses on quantitative relationships used in qualitative/quantitative analysis,
   \[ s = \sqrt{\frac{\sum_{i=1}^{N}(x_i - \bar{x})^2}{N-1}} \]  
   where \(x_i\) = individual measurements, \(\bar{x}\) = mean, \(N\) = number of measurements.
 
+---
+
+### 544 [Unassigned] and 545 [Unassigned]
+: These numbers are currently not designated for any specific chemistry topic, reserved for potential future expansion of the classification system.
+
+---
+
 ### 546 Inorganic Chemistry
+: Includes the study of inorganic compounds, their properties, synthesis, and reactions. It covers the chemistry of metals, nonmetals, coordination compounds, and organometallic compounds.
+
 Equations often involve bonding models, thermodynamics of ionic solids, and coordination chemistry.
 
 - **Born–Landé equation** (lattice energy approximation)  
@@ -123,7 +119,11 @@ Equations often involve bonding models, thermodynamics of ionic solids, and coor
 - **Effective atomic number (EAN) rule / 18-electron rule** (coordination compounds)  
   Often expressed as counting valence electrons contributed by metal + ligands = 18 (or sometimes 16).
 
+---
+
 ### 547 Organic Chemistry
+: Covers carbon-containing compounds, their structures, reactions, synthesis, mechanism, and application. Topics include hydrocarbons, functional groups, polymers, and medicinal chemistry.
+
 Mathematical relations appear mainly in kinetics, stereochemistry, and physical properties of organic compounds.
 
 - **Specific rotation** (polarimetry / optical activity)  
@@ -139,7 +139,11 @@ Mathematical relations appear mainly in kinetics, stereochemistry, and physical 
   \[ \log\frac{k}{k_0} = \sigma\rho \]  
   where \(k, k_0\) = rate (or equilibrium) constants for substituted and unsubstituted compounds, \(\sigma\) = substituent constant, \(\rho\) = reaction constant.
 
+---
+
 ### 548 Crystallography
+: Deals with crystal structures, crystallographic methods, X-ray diffraction, crystal symmetry, lattice theory, and the study of solid-state structures.
+
 Highly geometric and diffraction-based.
 
 - **Bragg’s law**  
@@ -156,8 +160,12 @@ Highly geometric and diffraction-based.
 
 - **Miller indices notation**  
   Planes are denoted \((hkl)\); directions \([uvw]\).
+  
+---
 
 ### 549 Mineralogy
+: Focuses on the chemistry, composition, and classification of minerals, including their formation, physical properties, and chemical analysis. Mineralogical studies with a chemical perspective are categorized here.
+
 Shares many crystallographic formulas; additional relations involve composition and physical properties.
 
 - **Chemical formula calculation from weight percent** (normative mineralogy)  
