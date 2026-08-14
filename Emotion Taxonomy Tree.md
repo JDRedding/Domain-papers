@@ -1,9 +1,10 @@
-EMOTIONS
+# EMOTIONS
 
 Cultural variations in emotions are substantial, even though some broad patterns appear shared. The taxonomy tree below (centered on Joy, Sadness, Fear, Anger, Surprise, and Disgust, with many Western subordinates) reflects a common discrete “basic emotions” framework popularized by researchers like Paul Ekman. Cross-cultural research shows both partial universality and clear cultural shaping of how emotions are categorized, experienced, valued, expressed, and labeled; Networks of related concepts (colexification) do differ by language family and geography, though. Large-scale studies find consistency. Emotion concepts across many languages tend to organize primarily around two dimensions: hedonic valence (joy-sad; pleasant–unpleasant) and physiological arousal (high–low activation). 
 
 This note of the tree is useful as a language map organized around discrete basic categories with many fine-grained positive terms under Joy, partly biologically grounded, but shaped by social practices and cultural evolution. In short, the tree captures one coherent cultural model well. Emotion life can be diverse (in categories, states, and norms) than presented in this single taxonomy.
 
+## Taxonomy Tree
 An Emotion Taxonomy Tree
 │
 ├── JOY
@@ -93,7 +94,7 @@ An Emotion Taxonomy Tree
     └── Cynicism
 
 ────────────────────────────────────────
-Additional / Root-level emotions:
+## Additional / Root-level emotions:
 
 ┌── Embarrassment
 ├── Jealousy
