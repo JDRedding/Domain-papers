@@ -1,0 +1,133 @@
+# **Pipe‑track Laying Game**
+US2162876A (Fully Rewritten, Clean, Play‑Ready)
+
+
+## 🎯 Core Idea  
+Each player builds a continuous path across a **21×21 board** using directional tiles. Your goal is to **force an opponent into a position where they cannot legally extend their path**. When a player is blocked, they are eliminated, and their tiles remain on the board as permanent obstacles.
+
+---
+
+## 🧩 Components  
+### Board  
+- 21×21 grid (441 spaces).  
+- **Start squares**: center of each side.  
+- **Obstacles**:  
+  - One **central cross** (5 squares).  
+  - Four **corner L‑shaped barriers**.
+
+### Tiles  
+Each player gets **18 tiles**:  
+- 2 × Horizontal  
+- 2 × Vertical  
+- 2 × Cross  
+- 2 × T‑junction  
+- 2 × Inverted T‑junction  
+- 8 × Corner tiles (4 distinct corner shapes × 2 each)
+
+Each tile has:  
+- A **directional line pattern**  
+- An **orientation mark** (two dots) that must face the player when placed
+
+---
+
+## 🕹️ Setup  
+1. Each player chooses a color and takes 18 tiles.  
+2. Each player sits facing one side of the board.  
+3. The Start square on that side is their entry point.
+
+---
+
+## 🔄 Turn Structure  
+Players take turns placing **one tile**.
+
+### Placement Rules  
+- The tile must be placed on an **empty square**.  
+- The tile’s directional line must **continue the line** from the previously placed tile in that player’s path.  
+- The orientation mark must face the player.  
+- Tiles may **not** be placed on:  
+  - Obstacle squares  
+  - Occupied squares  
+  - Barrier squares
+
+If you cannot legally place a tile, you are **eliminated**.
+
+---
+
+## ♻️ Path Recycling (The Six‑Tile Rule)  
+Once you have placed **six tiles**, you may “recycle” your path:
+
+- Remove the **last tile** in your path.  
+- Move it to the **front** of your path (as the next tile).  
+- This frees unused tiles for future turns.
+
+You may recycle **any number of times**.
+
+---
+
+## ☠️ Elimination  
+If you cannot extend your path legally, you are eliminated.  
+Your tiles **stay on the board** as obstacles.
+
+---
+
+## 🧮 Scoring (3–4 Players)  
+Scoring begins **after the first elimination**.
+
+Each remaining player earns **1 point per additional move** they can make after the first player is eliminated.
+
+Example:  
+- A eliminated  
+- B makes 2 more moves → 2 points  
+- C makes 5 more moves → 5 points  
+- D makes 8 more moves → 8 points
+
+Highest score wins.
+
+---
+
+## 🎯 Objective  
+Block your opponents so they cannot move, while keeping your own path open for future moves.
+
+Skill comes from:  
+- Managing directional continuity  
+- Navigating obstacles  
+- Controlling future mobility  
+- Timing your recycling moves
+
+---
+
+## 🔁 Two‑Player Variant  
+A more competitive race‑style mode.
+
+### Goal  
+Complete a full loop:  
+- Start → around the central cross → back to Start  
+- Final tile’s line must exit at the board edge
+
+### Temporary Blocking  
+You may temporarily block your opponent.  
+They may resume movement once you move your blocking tile.
+
+### Scoring  
+- First to finish scores **2 points per extra move** the opponent makes.  
+- Each player also scores **1 point per unused tile**.  
+- If one player cannot return to Start:  
+  - The other scores **10 points**.  
+  - Extra moves do not count.  
+- If neither returns → draw.
+
+---
+
+## 🧠 Strategy Summary  
+- Build paths that threaten opponents while preserving your own escape routes.  
+- Use corner tiles to redirect opponents into dead ends.  
+- Use recycling to refresh your tile options mid‑game.  
+- Control the central cross and corner barriers—they shape the entire flow of play.
+
+---
+
+## 📌 Future Work
+- **a modern printable rulebook layout**  
+- **a full strategy guide**  
+- **an ASCII diagram of the 21×21 board**  
+- **a modernized tile‑design set**  
