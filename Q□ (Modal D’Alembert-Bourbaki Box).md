@@ -456,13 +456,13 @@ $$
 $$
 
 - **Admissibility constraint**
-- 
+  
 $$
   X \in Q_{\text{rat}} \iff X \text{ is SID/PED‑stable}
 $$
 
 - **Sealed irrational substrate**
-- 
+  
 $$
   Q□ := □(Q_{\text{irr}})
 $$
