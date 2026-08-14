@@ -2,8 +2,7 @@
 - Official Rules
 - - 795 Card games
     
-The official rules of card games provide standardized instructions for playing, scoring, and determining winners across hundreds of popular games, with resources available from online guides and authoritative books.
-
+The official rules of card games provide standardized instructions for playing, scoring, and determining winners across hundreds of popular games, with resources available from online guides and authoritative books. With complete rules on popular card games, including the new international laws of contract bridge, this includes  sections on: choosing games for particular occasions, teaching card games to children, the etiquette of card games, technical terms used in card games, and more.
 
 ## Direct summary
 - This note is a short overview of resources and background for "795 — Card games." It points readers to comprehensive online and print references for official card-game rules, explains practical uses, and lists relevant keywords and game types.
@@ -42,13 +41,18 @@ These editions are valuable for understanding the evolution of card game standar
 
 ## Practical Use
 
-Learning and Teaching – Online guides and books are suitable for individual learning, teaching children, or instructing new players. They clarify gameplay, scoring procedures, and common variations.
-
-Game Night or Competitive Play – Using official rules ensures clarity during casual play or tournaments, reduces disputes, and maintains consistency across players.
+### Choosing games for particular occasions
+For direct access, users can explore the Official Game Rules website for updated rules, consult Official Rules of Card Games by Albert H. Morehead, or browse digital copies from the United States Playing Card Company archives 
 
 Reference and Correction – Historical editions offer insight into authorized variations and rule changes over time, crucial for enthusiasts or researchers interested in card game history.
 
-For direct access, users can explore the Official Game Rules website for updated rules, consult Official Rules of Card Games by Albert H. Morehead, or browse digital copies from the United States Playing Card Company archives 
+### Teaching card games 
+Learning and Teaching – Online guides and books are suitable for individual learning, teaching children, or instructing new players. They clarify gameplay, scoring procedures, and common variations.
+
+### Etiquette of card games
+Game Night or Competitive Play – Using official rules ensures clarity during casual play or tournaments, reduces disputes, and maintains consistency across players.
+
+### Technical terms used in card games
 
 # Keywords 
 acol
