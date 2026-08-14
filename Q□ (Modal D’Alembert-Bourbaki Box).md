@@ -105,7 +105,7 @@ Only external relations matter.
 
 ---
 
-## ⚡ **1. Maxwell → d’Alembert → Q□ lineage**
+## ⚡ **Maxwell → d’Alembert → Q□ lineage**
 
 ### **A. Maxwell’s quaternion operator (1870s)**  
 Maxwell’s original formulation used quaternion operators (∇, ∇×, ∇·) bundled into a single algebraic object.  
@@ -168,7 +168,7 @@ This is the **historical and structural chain**.
 
 ---
 
-## 🔲 **2. Bourbaki structural definition of Q□**
+## 🔲 **Bourbaki structural definition of Q□**
 
 ### **Formal Bourbaki‑style definition**
 
@@ -235,10 +235,45 @@ That way lies madness
 π is **Q‑excluded**, so Q□ must remain sealed.
 
 ---
+## Sealed Irrational Axioms
+
+The Sealed Irrational Axiom establishes that irrational substrates must remain uninspectable within the relational dynamic geometry framework. This axiom ensures stability and prevents infinite regress by enforcing strict boundaries around irrational elements.
+
+### Formal Statement
+#### Axiom: Sealed Irrational Substrate
+
+Let $Q_{\text{substrate}}^{\text{irrational}}$ represent the set of all irrational and non-relational elements. Define the sealed box operator as: 
+
+$$
+Q_{d}^{r}(g),\Box := \Box(Q_{\text{substrate}}^{\text{irrational}})
+$$
+
+This denotes that the irrational substrate is enclosed within a structural box, preventing direct inspection or interaction.
+
+### Properties
+
+- Uninspectable Interior: The contents of the box cannot be examined or accessed.
+- Stability Enforcement: Prevents irrational leakage into relational domains.
+- Admissibility Constraint: Ensures only rational relational configurations are permitted.
+- Infinite Regress Prevention: Avoids the endless pursuit of irrational expansions such as the digits of $\pi$.
+
+### Structural Interpretation
+
+The sealed box operator combines elements from:
+
+- D'Alembert Operator: Represents wave propagation and structural encapsulation.
+- Modal Logic Necessity: Implies that the enclosed content is necessarily sealed.
+- Bourbaki Structural Box: Treats the interior as irrelevant to external relational structures.
+
+### Framework Usage
+
+Within the RDG–MFE–Q framework, the sealed irrational axiom ensures that irrational elements do not disrupt relational dynamics. It maintains coherence and supports the integrity of the relational geometry.
+
+The Sealed Irrational Axiom is fundamental to maintaining the structure and stability of relational dynamic geometry. By enforcing strict boundaries around irrational substrates, it preserves the coherence and admissibility of the system.
 
 ---
 
-## 📚 **3. □ in PDE, modal logic, and RDG**
+## 📚 **□ in PDE, modal logic, and RDG**
 
 Q□ means:
 
@@ -270,9 +305,6 @@ Q□ means:
 - Structure: Bourbaki structural box + modal necessity + generator layer  
 - Interior: forbidden; π, e, √2 live here  
 - Purpose: enforce admissibility, stability, quotienting  
-
-
-
 
 
 
