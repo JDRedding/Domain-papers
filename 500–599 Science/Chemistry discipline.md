@@ -338,3 +338,169 @@ $$
   where $n$ = refractive index, $N$ = number density of molecules, $\alpha$ = polarizability.
 
 
+Below is a **tight, RDG‑compatible ASCII cheat sheet** for **all chemistry subclasses (541–549)**, built directly from the uploaded document and formatted in stable ASCII blocks.  
+Citations included where required.
+
+> *“Key mathematical equations and formulas associated with the main subdivisions of Chemistry… are listed below.”*  
+> *“This Science class in classifications encompasses all areas of chemistry…”*  
+
+---
+
+# CHEMISTRY CHEAT SHEETs  
+
+```
+
+541 : PHYSICAL CHEMISTRY
+===========================================================
+Ideal Gas Law:
+    PV = nRT
+
+First Law (Thermo):
+    ΔU = q + w
+
+Gibbs Free Energy:
+    ΔG = ΔH - TΔS
+    ΔG = ΔG° + RT ln(Q)
+
+Arrhenius (Kinetics):
+    k = A * exp(-Ea / (R*T))
+
+Schrödinger (Time‑Independent):
+    Ĥ ψ = E ψ
+
+Nernst (Electrochem):
+    E = E° - (RT / (nF)) * ln(Q)
+
+Beer–Lambert (Spectroscopy):
+    A = ε * c * l
+```
+
+---
+
+```
+
+542 : TECHNIQUES, EQUIPMENT, MATERIALS
+===========================================================
+Molarity:
+    M = n / V = m / (Mr * V)
+
+Dilution:
+    C1 * V1 = C2 * V2
+
+Percent Yield:
+    yield% = (actual / theoretical) * 100
+
+Percent Error:
+    error% = ((experimental - true) / true) * 100
+```
+
+---
+
+```
+
+543 : ANALYTICAL CHEMISTRY
+===========================================================
+Beer–Lambert:
+    A = ε * c * l
+
+Henderson–Hasselbalch:
+    pH = pKa + log10([A-] / [HA])
+
+Chromatography:
+    Rf = (distance analyte) / (distance solvent front)
+
+Capacity Factor (HPLC/GC):
+    k' = (tR - t0) / t0
+
+Standard Deviation:
+    s = sqrt( Σ(xi - x̄)^2 / (N - 1) )
+```
+
+---
+
+```
+
+544 : UNASSIGNED
+545 : UNASSIGNED
+===========================================================
+(No equations; reserved for future expansion.)
+```
+
+---
+
+```
+
+546 : INORGANIC CHEMISTRY
+===========================================================
+Born–Landé (Lattice Energy):
+    U = (NA * M * |z+ * z-| * e^2) / (4π ε0 r0) * (1 - 1/n)
+
+Crystal Field Splitting:
+    Δt = (4/9) * Δo
+
+Effective Atomic Number (EAN):
+    EAN = valence_e(metal) + ligand_e - charge
+    18‑electron rule: stable when total = 18
+```
+
+---
+
+```
+
+547 : ORGANIC CHEMISTRY
+===========================================================
+Specific Rotation:
+    [α] = α / (c * l)
+
+Second‑Order Rate Law:
+    rate = k[A][B]
+    1/[A] - 1/[A0] = k*t
+
+Hammett Equation:
+    log(k / k0) = σ * ρ
+```
+
+---
+
+```
+
+548 : CRYSTALLOGRAPHY
+===========================================================
+Bragg’s Law:
+    nλ = 2 d sin(θ)
+
+Cubic Interplanar Spacing:
+    d(hkl) = a / sqrt(h^2 + k^2 + l^2)
+
+Crystal Density:
+    ρ = (Z * M) / (NA * V)
+
+Miller Indices:
+    Planes: (hkl)
+    Directions: [uvw]
+```
+
+---
+
+```
+
+549 : MINERALOGY
+===========================================================
+Oxide → Cation Conversion:
+    moles_oxide = wt% / MW
+
+Cation/Oxygen Counting:
+    multiply by cations_per_oxide and oxygens_per_oxide
+
+Normalize to Oxygen Basis:
+    factor = desired_O / total_O
+    cation_norm = cation_raw * factor
+
+Density:
+    ρ = (Z * M) / (NA * V)
+
+Lorentz–Lorenz (Refractive Index):
+    (n^2 - 1) / (n^2 + 2) = (4π/3) * N * α
+```
+
+---
