@@ -331,19 +331,19 @@ with the following properties:
 - **Extensive**:
   
 $$
-  X \subseteq \Gamma(X)
+X \subseteq \Gamma(X)
 $$
 
 - **Monotone**:  
 
 $$
-  X \subseteq Y \Rightarrow \Gamma(X) \subseteq \Gamma(Y)
+X \subseteq Y \Rightarrow \Gamma(X) \subseteq \Gamma(Y)
 $$
 
 - **Idempotent**:  
 
 $$
-  \Gamma(\Gamma(X)) = \Gamma(X)
+\Gamma(\Gamma(X)) = \Gamma(X)
 $$
 
 - **Coherence‑inducing**:  
@@ -363,9 +363,9 @@ $$
 
 Thus:
 
-\[
+$$
 \Gamma \longrightarrow C_\Gamma \longrightarrow d_\Gamma \longrightarrow g
-\]
+$$
 
 This is the missing formal chain.
 
@@ -389,12 +389,13 @@ $$
 $$
 I(X) \subseteq I(\Gamma(X))
 $$
+
    (interactions do not collapse under closure)
 
 4. **Dynamics stability**
 
 $$
-   D(\Gamma(X)) \text{ is well‑posed}
+D(\Gamma(X)) \text{ is well‑posed}
 $$
 
    (closure produces a valid dynamical update)
@@ -405,13 +406,13 @@ A flux configuration \(F\) is **PED‑stable** iff:
 1. **Power coherence**  
 
 $$
-   P(F) \ge 0
+P(F) \ge 0
 $$
 
 2. **Evaluation consistency**  
 
 $$
-   E(F) = E(\Gamma(F))
+E(F) = E(\Gamma(F))
 $$
 
 3. **Dipole admissibility**  
@@ -452,19 +453,19 @@ with:
 - **Surjective quotienting**
   
 $$
-  Q_{\text{rat}} = Q(Q_{\text{irr}})
+Q_{\text{rat}} = Q(Q_{\text{irr}})
 $$
 
 - **Admissibility constraint**
   
 $$
-  X \in Q_{\text{rat}} \iff X \text{ is SID/PED‑stable}
+X \in Q_{\text{rat}} \iff X \text{ is SID/PED‑stable}
 $$
 
 - **Sealed irrational substrate**
   
 $$
-  Q□ := □(Q_{\text{irr}})
+Q□ := □(Q_{\text{irr}})
 $$
   
 📘 **Summary Table**
