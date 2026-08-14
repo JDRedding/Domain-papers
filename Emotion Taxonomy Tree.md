@@ -5,6 +5,7 @@ Cultural variations in emotions are substantial, even though some broad patterns
 This note of the tree is useful as a language map organized around discrete basic categories with many fine-grained positive terms under Joy, partly biologically grounded, but shaped by social practices and cultural evolution. In short, the tree captures one coherent cultural model well. Emotion life can be diverse (in categories, states, and norms) than presented in this single taxonomy.
 
 ## Taxonomy Tree
+```
 An Emotion Taxonomy Tree
 │
 ├── JOY
@@ -92,10 +93,10 @@ An Emotion Taxonomy Tree
     ├── Bitterness
     ├── Restlessness
     └── Cynicism
-
+```
 ────────────────────────────────────────
 ## Additional / Root-level emotions:
-
+```
 ┌── Embarrassment
 ├── Jealousy
 ├── Envy
@@ -105,10 +106,10 @@ An Emotion Taxonomy Tree
 ├── Sympathy
 ├── Relief
 └── Boredom
-
+```
 ────────────────────────────────────────
 Noted as (outdated):
-
+```
 • Melancholy (outdated)
 • Ecstasy (outdated)
 • Bliss (outdated)
@@ -123,7 +124,7 @@ Noted as (outdated):
 • Restlessness (outdated)
 • Cynicism (outdated)
 • Apathy (outdated)
-
+```
 ────────────────────────────────────────
 Rooted in Experience • Growing through Awareness • Bearing Understanding
 
