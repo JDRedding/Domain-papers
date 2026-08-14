@@ -11,7 +11,7 @@ The official rules of card games provide standardized instructions for playing, 
 
 The official rules of card games provide standardized instructions for play, scoring, terminology, and adjudication across hundreds of traditional and modern games. Resources include comprehensive online guides, authoritative print references, and historical editions documenting rule evolution.
 
-This entry serves as a **pointer** to canonical rule sources, mathematical foundations, and practical usage contexts for anyone working inside the **795 Card Games** Dewey folder of your Domain‑papers repo.
+This entry serves as a **pointer** to canonical rule sources, mathematical foundations, and practical usage contexts for anyone working inside the folder of the Domain‑papers repo.
 
 ## Key points
 - Primary online resources: links to an Official Game Rules website (A–Z card games) and Bicycle Cards' how-to-play guides for common games (Poker, Bridge, Canasta).
