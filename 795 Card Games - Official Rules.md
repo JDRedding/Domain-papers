@@ -186,6 +186,192 @@ Mixing time ≈ $\frac{3}{2}\log_2 52$ riffle shuffles.
 
 ---
 
+# Card Game Taxonomy  
+A formal classification of recreational card games based on **mechanics**, **information structure**, **victory conditions**, and **interaction patterns**.
+
+## Mechanical Families
+
+### 🂡 **Trick‑Taking Games**  
+Games where players play one card per “trick,” highest card (or trump) wins the trick.  
+Includes: Bridge, Whist, Spades, Hearts, Euchre, Pinochle, Tarot.
+
+Sub‑types:  
+- **Plain‑suit trick‑taking** (no bidding, fixed trump)  
+- **Bidding & contract** (Bridge, Skat)  
+- **Point‑trick** (Pinochle, Tarot)  
+- **Avoidance trick** (Hearts)
+
+---
+
+### 🂢 **Shedding Games**  
+Goal: empty your hand first.  
+Includes: Crazy Eights, Uno, President, Speed.
+
+Sub‑types:  
+- **Match‑rank shedding**  
+- **Match‑suit shedding**  
+- **Action‑card shedding** (Uno‑style)
+
+---
+
+### 🂣 **Matching / Rummy Games**  
+Goal: form sets/runs.  
+Includes: Gin Rummy, Canasta, Rummikub (tile variant), 500 Rummy.
+
+Sub‑types:  
+- **Set‑forming**  
+- **Run‑forming**  
+- **Meld‑management** (Canasta)
+
+---
+
+### 🂤 **Accumulation / Fishing Games**  
+Goal: capture cards from a central layout.  
+Includes: Casino, Scopa, Go‑Fish (child variant).
+
+Sub‑types:  
+- **Arithmetic capture** (Casino)  
+- **Match capture** (Scopa)
+
+---
+
+### 🂥 **Climbing Games**  
+Players play increasingly stronger combinations; winner sheds all cards first.  
+Includes: Big Two, Dou Dizhu, Tichu.
+
+Sub‑types:  
+- **Combination‑climbing**  
+- **Power‑structure climbing** (Dou Dizhu roles)
+
+---
+
+### 🂦 **Comparative / Showdown Games**  
+Hands are compared directly; no trick structure.  
+Includes: Poker, Baccarat, Casino War.
+
+Sub‑types:  
+- **Betting games** (Poker)  
+- **Banker games** (Baccarat)  
+- **High‑card games**
+
+---
+
+### 🂧 **Solitaire / Patience Games**  
+Single‑player, layout‑manipulation puzzles.  
+Includes: Klondike, Spider, FreeCell, Pyramid.
+
+Sub‑types:  
+- **Tableau‑driven**  
+- **Cell‑driven**  
+- **Build‑sequence**
+
+---
+
+### 🂨 **Casino & Gambling Games**  
+House‑banked or probability‑driven games.  
+Includes: Blackjack, Pai Gow Poker, Three‑Card Poker.
+
+Sub‑types:  
+- **Fixed‑strategy** (Blackjack basic strategy)  
+- **Hybrid poker‑casino**
+
+---
+
+### 🂩 **Tarot & Divinatory Systems**  
+Tarot decks used for trick‑taking or symbolic interpretation.  
+Includes: French Tarot (game), Rider‑Waite (divination).
+
+Sub‑types:  
+- **Game‑tarot**  
+- **Divination‑tarot**
+
+---
+
+## Structural Dimensions 
+Cross‑Cutting Axes
+
+These classify *any* card game orthogonally to mechanics.
+
+### 🂪 **Information Structure**  
+- **Perfect information** (no hidden cards): some solitaire variants  
+- **Imperfect information**: most multiplayer games  
+- **Asymmetric information**: Dou Dizhu, some bidding games
+
+---
+
+### 🂫 **Randomness & Determinism**  
+- **High randomness**: War, Uno  
+- **Moderate randomness**: Poker, Blackjack  
+- **Low randomness**: Bridge (post‑deal)
+
+---
+
+### 🂬 **Interaction Pattern**  
+- **Competitive**  
+- **Partnership** (Bridge, Euchre)  
+- **Cooperative** (some modern designs)  
+- **Solo** (Solitaire)
+
+---
+
+### 🂭 **Victory Condition**  
+- **Point accumulation**  
+- **First‑to‑finish** (shedding)  
+- **Contract fulfillment** (Bridge)  
+- **Hand comparison** (Poker)
+
+---
+
+## Full Tree 
+
+```
+795 Card Games
+│
+├── 795.1 Trick‑Taking
+│   ├── Plain‑suit
+│   ├── Bidding/Contract
+│   ├── Point‑trick
+│   └── Avoidance
+│
+├── 795.2 Shedding
+│   ├── Rank‑match
+│   ├── Suit‑match
+│   └── Action‑card
+│
+├── 795.3 Matching / Rummy
+│   ├── Set‑forming
+│   ├── Run‑forming
+│   └── Meld‑management
+│
+├── 795.4 Fishing / Capture
+│   ├── Arithmetic
+│   └── Match‑capture
+│
+├── 795.5 Climbing
+│   ├── Combination‑climbing
+│   └── Role‑climbing
+│
+├── 795.6 Showdown / Comparative
+│   ├── Betting
+│   ├── Banker
+│   └── High‑card
+│
+├── 795.7 Solitaire / Patience
+│   ├── Tableau
+│   ├── Cell‑based
+│   └── Sequence‑building
+│
+├── 795.8 Casino / Gambling
+│   ├── Fixed‑strategy
+│   └── Hybrid poker‑casino
+│
+└── 795.9 Tarot Systems
+    ├── Game‑tarot
+    └── Divination‑tarot
+```
+
+---
+
 ## Topics
 
 Related:
@@ -214,6 +400,13 @@ Follow‑up topic:
 - **card game history**  
 - **recreation**   
 - **RPG**
+
+Optional: Mode Mapping  
+
+- **Structure (S)** → deck topology, legal moves  
+- **Interaction (I)** → trick‑taking vs shedding vs climbing  
+- **Dynamics (D)** → stochastic vs deterministic transitions  
+- **Power/Evaluation/Dynamics (PED)** → scoring, equity, Q‑slice moderation  
 
 ## 🂶 Keyword Lattice  
 
