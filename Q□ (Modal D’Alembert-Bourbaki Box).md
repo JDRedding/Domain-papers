@@ -3,6 +3,7 @@
 - ${Quotient}_{dynamic}^{relational}(geometry)$□
 
 **Q is a quotient operator on relational configurations.**  
+
 Formally, it’s a **surjective map to a quotient space** induced by an equivalence relation that encodes *admissibility* (stability). Q is a surjective quotient map from raw relational states to the admissible stable quotient, induced by an equivalence relation of identical closure behavior.
 
 ## Modal D’Alembert-Bourbaki Box Definition:
