@@ -240,6 +240,16 @@ That way lies madness
 
 ## 📚 **3. □ in PDE, modal logic, and RDG**
 
+Q□ means:
+
+- irrational substrate  
+- sealed interior  
+- admissibility boundary  
+- quotient stability  
+- no regress  
+- no coordinates  
+- no location  
+
 ### **A. PDE / Physics (d’Alembert operator)**  
 - Symbol: **□**  
 - Meaning: Lorentz‑invariant wave operator  
@@ -260,17 +270,6 @@ That way lies madness
 - Structure: Bourbaki structural box + modal necessity + generator layer  
 - Interior: forbidden; π, e, √2 live here  
 - Purpose: enforce admissibility, stability, quotienting  
-
-Q□ means:
-
-- irrational substrate  
-- sealed interior  
-- admissibility boundary  
-- quotient stability  
-- no regress  
-- no coordinates  
-- no location  
-
 
 
 
