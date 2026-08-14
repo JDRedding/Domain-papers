@@ -1,4 +1,4 @@
-**LPPLS (Log-Periodic Power Law Singularity) model equations**
+# **LPPLS (Log-Periodic Power Law Singularity) model equations**
 
 The core LPPLS formula describes the expected log-price trajectory during a financial bubble (driven by positive macro-feedback / herding that produces faster-than-exponential growth ending in a finite-time singularity):
 
