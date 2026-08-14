@@ -346,10 +346,9 @@ Citations included where required.
 
 ---
 
-# CHEMISTRY CHEAT SHEETs  
+# CHEMISTRY CHEAT SHEETS 
 
 ```
-
 541 : PHYSICAL CHEMISTRY
 ===========================================================
 Ideal Gas Law:
@@ -373,8 +372,8 @@ Nernst (Electrochem):
 
 Beer–Lambert (Spectroscopy):
     A = ε * c * l
-```
 
+```
 ---
 
 ```
@@ -392,8 +391,8 @@ Percent Yield:
 
 Percent Error:
     error% = ((experimental - true) / true) * 100
-```
 
+```
 ---
 
 ```
@@ -414,6 +413,7 @@ Capacity Factor (HPLC/GC):
 
 Standard Deviation:
     s = sqrt( Σ(xi - x̄)^2 / (N - 1) )
+
 ```
 
 ---
@@ -424,6 +424,7 @@ Standard Deviation:
 545 : UNASSIGNED
 ===========================================================
 (No equations; reserved for future expansion.)
+
 ```
 
 ---
@@ -441,6 +442,7 @@ Crystal Field Splitting:
 Effective Atomic Number (EAN):
     EAN = valence_e(metal) + ligand_e - charge
     18‑electron rule: stable when total = 18
+
 ```
 
 ---
@@ -458,6 +460,7 @@ Second‑Order Rate Law:
 
 Hammett Equation:
     log(k / k0) = σ * ρ
+
 ```
 
 ---
@@ -478,6 +481,7 @@ Crystal Density:
 Miller Indices:
     Planes: (hkl)
     Directions: [uvw]
+
 ```
 
 ---
@@ -501,6 +505,7 @@ Density:
 
 Lorentz–Lorenz (Refractive Index):
     (n^2 - 1) / (n^2 + 2) = (4π/3) * N * α
+
 ```
 
 ---
