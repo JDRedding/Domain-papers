@@ -73,6 +73,18 @@ So:
 
 Q is **surjective** onto $\mathcal{A}$.
 
+Q‑Equivalence Relation is thus: 
+
+$$
+X \sim_Q Y \iff \forall O \in \mathcal{O},\; O(X)=O(Y)
+$$
+
+Where:
+
+- $\mathcal{O}$ is a **finite or parametric family of admissible observables**,  
+- each observable is **SID/PED‑stable**,  
+- and each observable is **Γ‑respecting**.
+
 Below is the fully structured, clean explanation of what this means, why it works, and how it fits into the lineage of the **d’Alembert box**, the **Bourbaki structural box**, and the **Q□ generator**.
 
 ### 🧩 **Meaning of $Q_{d}^{r}(g)\,□$**  
