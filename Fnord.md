@@ -99,7 +99,7 @@ $$
 d' = z(\text{Hit rate}) - z(\text{False-alarm rate})
 $$
 
-Here the “signal” is the fnord itself (or the affective charge attached to it). High $d'$ means the observer can reliably discriminate the cue; low $d'$ (or a strongly biased criterion) produces the classic experience of missing it while still feeling the residual anxiety. Apophenia appears as a lowered decision criterion that inflates false alarms—seeing fnords everywhere. In signal-detection language the decision criterion $c$ can itself be a function of current $V$ or of the prior $P(H)$. Lowering $c$ when $V$ is high produces the classic “*seeing fnords everywhere*” regime without changing sensitivity $d'$.
+Here the “*signal*” is the fnord itself (or the affective charge attached to it). High $d'$ means the observer can reliably discriminate the cue; low $d'$ (or a strongly biased criterion) produces the classic experience of missing it while still feeling the residual anxiety. Apophenia appears as a lowered decision criterion that inflates false alarms—seeing fnords everywhere. In signal-detection language the decision criterion $c$ can itself be a function of current $V$ or of the prior $P(H)$. Lowering $c$ when $V$ is high produces the classic “*seeing fnords everywhere*” regime without changing sensitivity $d'$.
 
 ### Bayesian belief updating 
 *pattern-seeking / “something is wrong”*
