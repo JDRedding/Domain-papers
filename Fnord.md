@@ -11,6 +11,7 @@ That gives three separable components:
 - **Affect** — the conditioned emotional response  
 - **Inference** — the belief‑update or interpretive shift  
 
+## Introduction
 Fnord began it's life as a nonsense word that originated in Discordianism and gained its famous meaning — and cultural staying power — through The Illuminatus! Trilogy (1975) by Robert Shea and Robert Anton Wilson. In short, fnord is both a specific plot device about subliminal control and a lasting meme for the idea that much of what shapes public perception operates just below conscious awareness. The trilogy popularized it as a tool for questioning authority, media, and the construction of reality itself. "Fnord" is a fictional, satirical term symbolizing hidden or disorienting messages in society, primarily propagated through literature and countercultural media references.
 
 Fnord is a deliberately ambiguous, fictional device used to explore how hidden cues shape perception.
