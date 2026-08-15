@@ -4,7 +4,7 @@ A *full* **Micro - Meso - Macro** *cosmic–subatomic size ladder*.
 ---
 
 ## 📏 **Cosmic–Subatomic Size Taxonomy**  
-List spans **92 orders of magnitude**, from \(10^{-35}\,\text{m}\) scale objects (Planck regime) up to \(10^{22}\,\text{m}\) (multiverse scale). A *hierarchical size‑class system* so can use it as a reference, a rulebook scaffold, or a cosmology ladder.
+List spans **92 orders of magnitude**, from  $10^{-35}\,\text{m}$ scale objects (Planck regime) up to $10^{22}\,\text{m}$ (multiverse scale). A *hierarchical size‑class system* so can use it as a reference, a rulebook scaffold, or a cosmology ladder.
 
 - **Micro:** up to \(10^{-3}\,\text{m}\) (1 millimeter) — subatomic, atomic, molecular, cellular, tiny particles.  
 - **Meso:** \(10^{-3}\,\text{m}\) to \(10^{7}\,\text{m}\) (10,000 km) — organisms, human artifacts, terrain, small worlds.  
