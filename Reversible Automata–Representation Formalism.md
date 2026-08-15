@@ -398,13 +398,13 @@ Spectrum of $A$ is real and lies in $[-2|\Sigma|,2|\Sigma|]$ ; $\lambda_1=2|\Sig
 Character of the permutation representation:
 
 $$
-\chi(g)=\operatorname{tr}(U_g)=\#\{\text{fixed points of }g\}.
+\chi(g)=\{tr}(U_g)=\#\{\text{fixed points of }g\}.
 $$
 
 Burnside (number of orbits):
 
 $$
-k=\frac1{|G|}\sum_{g\in G}\chi(g)=\frac1{|G|}\sum_{g\in G}\operatorname{tr}(U_g).
+k=\frac1{|G|}\sum_{g\in G}\chi(g)=\frac1{|G|}\sum_{g\in G}\{tr}(U_g).
 $$
 
 Cycle index:
@@ -462,7 +462,7 @@ Characters: $\chi(e)=3$, $\chi(a)=\chi(a^2)=0$.
 - $G\curvearrowright Q$ — group action  
 - $U_a$ — unitary permutation matrix  
 - $\mathrm{Orb}(q),\mathrm{Stab}(q)$ — orbit / stabilizer  
-- $\chi(g)=\operatorname{tr}(U_g)$ — permutation character  
+- $\chi(g)=\{tr}(U_g)$ — permutation character  
 - $A$ — adjacency / generating operator  
 - $F:\mathbf{B}\Sigma^*\to\mathbf{FinSet}^\times$ — categorical functor  
 
