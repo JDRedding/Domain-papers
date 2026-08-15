@@ -13,7 +13,7 @@ This document maps Bourbaki set-theory notation and ideas into a relational/dyna
 
 ---
 
-## ∅ — empty set → RDG’s empty region  
+## ∅ — empty set → empty region  
 Bourbaki’s ∅ is a purely extensional object.  
 ∅ becomes a **region with no content**:
 
@@ -50,9 +50,9 @@ Bourbaki defines △ as the Boolean ring addition on subsets.
 
 Implements this as:
 
-\[
+$$
 A \triangle B = (A\setminus B)\cup(B\setminus A)
-\]
+$$
 
 But adds **flux semantics**:
 
@@ -102,7 +102,7 @@ This preserves Bourbaki’s structural cardinal arithmetic while embedding it in
 
 ---
 
-## Structural layer: Bourbaki → Deep mapping
+## Structural layer
 
 ### Sets → regions  
 A Bourbaki set becomes an **region**, i.e., a node‑set equipped with Structure, Interaction, and Dynamics.
@@ -152,8 +152,6 @@ $$
 R : X \to Y
 $$
 
-**Mapping:** 
-
 $$
 R \subseteq X \times Y \quad\longleftrightarrow\quad R : X \to Y
 $$
@@ -167,8 +165,6 @@ $$
 
 A graph is a set + a relation on that set.
 A region + an interaction pattern.
-
-**Mapping:**  
 
 $$
 (E, R) \quad\longleftrightarrow\quad \text{Region }E\text{ with interaction }R
@@ -210,10 +206,6 @@ $$
 f : X \to Y,\quad \text{and each }x\text{ has exactly one target}.
 $$
 
----
-
-## **Mapping**
-
 $$
 f \subseteq X \times Y 
 \quad\longleftrightarrow\quad 
@@ -252,10 +244,6 @@ A relation $R : X \to X$ satisfying:
 2. $x R y \Rightarrow y R x$  
 3. $x R y,\ y R z \Rightarrow x R z$
 
----
-
-### **Mapping**
-
 $$
 \sim \subseteq X \times X 
 \quad\longleftrightarrow\quad 
@@ -281,13 +269,77 @@ $$
 
 Same construction: partition the set by the relation.
 
----
-
-### **Mapping**
-
 $$
 X / \sim \quad\longleftrightarrow\quad X / R
 $$
 
 Both sides describe the same abstract object:  
 a set of equivalence classes.
+
+---
+
+## **Orders**
+A relation $\le \subseteq X \times X$ satisfying:
+
+1. **Reflexive:**  
+   $$
+   x \le x
+   $$
+
+2. **Antisymmetric:**  
+   $$
+   x \le y,\ y \le x \Rightarrow x = y
+   $$
+
+3. **Transitive:**  
+   $$
+   x \le y,\ y \le z \Rightarrow x \le z
+   $$
+
+---
+
+### **Partial order**
+A relation $R : X \to X$ satisfying the same three axioms:
+
+1.$x R x $  
+2.$x R y,\ y R x \Rightarrow x = y $  
+3.$x R y,\ y R z \Rightarrow x R z $
+
+$$
+\le \subseteq X \times X 
+\quad\longleftrightarrow\quad 
+R : X \to X \text{ with reflexive, antisymmetric, transitive constraints}
+$$
+
+---
+
+### **Total orders**
+
+A partial order with the additional property:
+
+$$
+\forall x,y \in X,\quad x \le y \text{ or } y \le x.
+$$
+
+or,
+
+$$
+\forall x,y,\quad x R y \text{ or } y R x.
+$$
+
+$$
+\text{Total order on }X \quad\longleftrightarrow\quad \text{Relation }R\text{ where all pairs are comparable}
+$$
+
+---
+
+### **Well‑order**
+A total order in which **every nonempty subset has a least element**.
+
+Every nonempty subregion has a minimal element under $R$.
+
+$$
+\text{Well‑order on }X \quad\longleftrightarrow\quad \text{Relation }R\text{ with minimal elements for all nonempty subsets}
+$$
+
+---
