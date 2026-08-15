@@ -17,7 +17,7 @@ Fnord is a deliberately ambiguous, fictional device used to explore how hidden c
 It began as Discordian satire, became a literary symbol of subliminal control, and now functions as a cultural shorthand for nonsense, disinformation, and ironic commentary.
 
 ## 🧠 The “fnord experience” in one sentence
-A fnord is **an unseen structural cue that produces felt affect and biased inference**, creating the subjective sense that “something is wrong” without knowing why.
+A fnord is **an unseen structural cue that produces felt affect and biased inference**, creating the subjective sense that “*something is wrong*” without knowing why.
 
 ## Cultural Usage
 - In Discordianism and some countercultural circles, "fnord" symbolizes ignorance, hidden control, or societal manipulation.
