@@ -45,7 +45,7 @@ The word first appears unexplained in the text (e.g., during an acid trip: “*T
 “*Seeing the fnords*” therefore means breaking the conditioning — becoming aware of the hidden manipulative elements in media and language, reclaiming autonomy, and reading between the lines. It is a metaphor for critical perception and resistance to propaganda.
 
 ## Cultural Impact
-The concept fits the trilogy’s larger satirical, nonlinear exploration of conspiracy theories, Discordianism, counterculture, perception (“reality tunnels”), and the absurdity of seeking absolute order in a chaotic world. The books mix historical Illuminati lore, occultism, sex, drugs, anarchism, and wild fiction without claiming any single “truth.”
+The concept fits the trilogy’s larger satirical, nonlinear exploration of conspiracy theories, Discordianism, counterculture, perception (“*reality tunnels*”), and the absurdity of seeking absolute order in a chaotic world. The books mix historical Illuminati lore, occultism, sex, drugs, anarchism, and wild fiction without claiming any single “truth.”
 
 ### 🎭 Cultural fnords vs. psychological fnords
 The distilled taxonomy:
