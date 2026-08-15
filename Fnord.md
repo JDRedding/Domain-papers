@@ -166,7 +166,9 @@ $F$ then indexes the intensity of the “fnord experience”: affect is present,
 
 Subliminal/affective priming effects can be folded in empirically as shifts in reaction time or evaluative ratings that scale with $F$, without needing a new closed-form equation.
 
-### 📐 structured, mechanism‑level fnord model
+### 📐 Fnord model
+Structured, mechanism‑level
+
 Fnords become a *general operator class*, not just a literary device.
 
 $$
