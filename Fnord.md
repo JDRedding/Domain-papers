@@ -1,7 +1,7 @@
 # Fnord
 ***Fnord*** is one of those rare countercultural inventions that behaves like a semantic virus: invented as nonsense, weaponized as satire, and eventually absorbed into psychology‑adjacent discourse as a metaphor for unseen influence.
 
-The cleanest definition is:
+The definition is:
 
 > A fnord is a **non‑reportable cue** that produces **reportable affect** and **biased inference**.
 
@@ -118,7 +118,7 @@ $$
 \Delta V = \alpha\beta(\lambda - V)
 $$
 
-This is the cleanest formal analog for the affective component. The fnord acts as a conditioned stimulus whose associative strength $V$ grows toward the asymptotic value $\lambda$ (threat/unease) even when the observer never consciously reports the cue. The learning-rate parameters $\alpha,\beta$ can be small, producing slow, persistent attachment that feels “unexplained.”
+This is the formal analog for the affective component. The fnord acts as a conditioned stimulus whose associative strength $V$ grows toward the asymptotic value $\lambda$ (threat/unease) even when the observer never consciously reports the cue. The learning-rate parameters $\alpha,\beta$ can be small, producing slow, persistent attachment that feels “unexplained.”
 
 ### 🧬 Fnord operator
 
@@ -133,7 +133,7 @@ $$
 \underbrace{\text{KL}(P(H\mid D)\,\|\,P(H))}_{\text{Inference}}
 $$
 
-This is the clean tri‑mode structure:
+This is the tri‑mode structure:
 
 - **Structure** → missed cue  
 - **Interaction** → affective strength  
