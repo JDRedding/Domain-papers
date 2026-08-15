@@ -247,4 +247,115 @@ Examples:
 
 ---
 
+## 🌀 Fnord Operator 
+*A bounded perturbation term for subliminal cues, affective charge, and biased inference.*
 
+Fnord is modeled as a **bounded perturbation operator** that injects ambiguity, misdirection, and cognitive noise into the Discordian dynamics without violating the global bound **R<sub>max</sub>**. It formalizes the Discordian idea of unseen cues producing emotional and interpretive shifts. Fnord is a bounded perturbation operator that injects subliminal
+cues, affective charge, and biased inference into Discordian bounded-chaos dynamics. It modifies chaotic evolution, network correlations, Markov drift, and social tension fields while remaining constrained by R_max.
+
+---
+
+### 1. Fnord Perturbation in Chaotic Evolution
+
+```text
+Q_{t+1} = f(Q_t) + η_t + F_t
+```
+
+W#here:
+
+- `F_t` — Fnord perturbation  
+- `||F_t|| ≤ R_max` — bounded by the global radius  
+- `η_t` — novelty / absurdity  
+- `f(Q_t)` — chaos/satire operator  
+
+Fnord ensures persistent ambiguity and interpretive instability.
+
+---
+
+### 2. Fnord Detection (Signal‑Detection Theory)
+
+```text
+d' = z(Hit rate) - z(False-alarm rate)
+```
+
+Low `d'` → the fnord is **not consciously detected**, but affective response persists.
+
+---
+
+### 3. Fnord Bayesian Inference
+
+```text
+P(H | D) = [P(D | H) P(H)] / P(D)
+```
+
+Even subliminal cues shift the posterior toward threat or hidden‑order hypotheses.
+
+---
+
+### 4. Fnord Affect (Rescorla–Wagner)
+
+```text
+ΔV = αβ(λ - V)
+```
+
+Fnords increase associative threat strength even when the cue is not consciously perceived.
+
+---
+
+### 5. Composite Fnord Operator
+
+```text
+F = V · (1 - Φ(d'_conscious)) · KL(P(H|D) || P(H))
+```
+
+Where:
+
+- `V` — affective strength  
+- `1 - Φ(d')` — probability the cue is **not** consciously detected  
+- `KL(...)` — belief shift  
+
+This is the formal tri‑mode structure: missed cue, affective charge, belief update.
+
+---
+
+### 6. Bounded Fnord Operator
+
+```text
+F_norm = (V/λ) · (1 - Φ(d')) · tanh(KL(P(H|D) || P(H)))
+```
+
+This keeps Fnord inside the global radius:
+
+```text
+||F_norm|| ≤ R_max
+```
+
+---
+
+### 7. Fnord in Networks and Drift
+
+#### Belief correlations
+
+```text
+⟨x_i x_j⟩ = ⟨x_i⟩⟨x_j⟩ + Δ_ij + F_ij
+```
+
+#### Markov drift
+
+```text
+P(X_{t+1}=j | X_t=i) = p_ij + F_ij
+```
+
+Fnord prevents collapse into mean‑field simplicity and ensures perpetual drift.
+
+---
+
+### 8. Fnord in Social Tension PDE
+
+```text
+∂U/∂t = D ∇² U + F(S,t)
+```
+
+Fnord introduces bounded, non‑semantic turbulence into social tension.
+
+---
