@@ -1,0 +1,14 @@
+PAVÉ (RECTANGULAR PARALLELEPIPED)
+---------------------------------
+Dimensions: a, b, c
+Volume: V = a*b*c
+
+n-D Hyperrectangle:
+Intervals: [a_i, b_i]
+Lengths:   L_i = b_i - a_i
+Volume:    V = Π_i L_i
+
+Mapping:
+S: axis frame, lengths L_i
+I: multiplicative composition V = Π_i L_i
+D: ∂V/∂L_k = Π_{i≠k} L_i (optional)
