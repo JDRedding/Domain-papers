@@ -1,0 +1,92 @@
+CONTINUUM–LIMIT OPERATOR STACK
+=====================================================================
+
+Relational geometry manifold:
+    X_RDG  =  SID ⊗ PED ⊗ Σ_Q
+
+Metric tensor (structural–energetic–spectral):
+    g_{ij} = SID_i ⊗ PED_j ⊗ Σ_Q
+
+Continuous moderation flow:
+    dγ^i / dt  =  -g^{ij} ∂_j V_RDG  +  Γ^i_smooth
+
+Potential field (PED):
+    V_RDG : X_RDG → ℝ
+
+Spectral moderation field (Q-mode continuum):
+    Γ_smooth : X_RDG → T X_RDG
+
+Invariant SID manifold (center manifold):
+    M_SID = { c ∈ X_RDG | Γ_smooth(c) = 0 }
+
+Continuous collapse map (long-time limit):
+    Π_∞ = lim_{t→∞} Φ_t
+    Π_∞ : X_RDG → M_SID
+
+
+DYNAMIC COUPLING TENSORS
+=====================================================================
+
+1. Metric tensor:
+    g_{ij} = SID_i ⊗ PED_j ⊗ Σ_Q
+
+2. Velocity coupling:
+    dγ^i / dt = -g^{ij} ∂_j V_RDG + Γ^i_smooth
+
+3. Moderation curvature tensor:
+    R^i_{jkl} =
+        ∂_k Γ^i_{jl} - ∂_l Γ^i_{jk}
+        + Γ^i_{km} Γ^m_{jl}
+        - Γ^i_{lm} Γ^m_{jk}
+
+4. Asymptotic invariance condition:
+    lim_{t→∞} || ∇_{γ(t)} Γ_smooth ||_g = 0
+
+
+CONTINUOUS ORBIT GEOMETRY
+=====================================================================
+
+        +------------------------------------------------------+
+        |             Continuous Spectral Flow                 |
+        |                                                      |
+        |   γ(0) → γ(t) → γ(t+Δt) → ...                        |
+        |     ^                                        |       |
+        |     |________________________________________|       |
+        |            ( structure carried along curve)          |
+        +------------------------------------------------------+
+                               |
+                               |  (collapse via Π_∞ :
+                               |  dissipation + moderation)
+                               v
+        +------------------------------------------------------+
+        |           Stable Manifold   M_SID                    |
+        |   (Γ_smooth = 0; invariant under the flow)           |
+        +------------------------------------------------------+
+
+DISCRETE → CONTINUUM COMPARISON
+=====================================================================
+
+FIELDS (Frobenius):
+    Discrete:   φ(x) = x^p
+    Continuum:  no natural Γ_smooth exists (finite-field obstruction)
+    Collapse:   Π_∞ is only metaphorical (Norm / Trace → F_p)
+
+GROUPS (center retraction):
+    Discrete:   r(g) = (det g)^{1/n} I
+    Continuum:  possible Γ_smooth = gradient-like flow toward Z(G)
+    Collapse:   Π_∞ can be realized as a continuous scalar-limit flow
+
+SHARED CONTINUUM STRUCTURE
+=====================================================================
+
+    Continuous flow (rich)
+        -- Γ_smooth moderation + Π_∞ collapse -->
+    Stable manifold (center)
+
+Where:
+    • Σ_Q encodes spectral / orbit geometry
+    • SID encodes structural core
+    • PED encodes energetic potential
+    • Γ_smooth is the continuous moderation operator
+    • Π_∞ is the long-time collapse map into M_SID
+=====================================================================
