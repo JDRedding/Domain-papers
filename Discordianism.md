@@ -277,6 +277,41 @@ Examples:
 
 ---
 
+## 🧩 Fnord and Grid‑Relative Truth  
+*A Discordian interpretation of perception, inference, and bounded chaos*
+
+Fnord formalizes the quote:
+
+> “Truth is grid‑relative; chaos is grid‑revealed.”
+
+In this model:
+
+- **The grid = the observer’s detection threshold, priors, and affective state.**  
+- **Fnord = the operator that perturbs that grid.**  
+- **R<sub>max</sub> = the boundary of the grid, not the truth.**
+
+Different observers (different grids) produce different interpretations of the same chaotic input:
+
+```text
+Chaos → Grid → Ordered/Disordered
+```
+
+Fnord modifies the grid by altering:
+
+- cue detection (`d'`)  
+- affective strength (`V`)  
+- belief shift (`KL divergence`)  
+
+Thus:
+
+- **Fnord is the mathematical mechanism of grid‑relative truth.**  
+- **Truth changes when the grid changes.**  
+- **Chaos remains the same; interpretation does not.**
+
+This matches the Discordian principle that capital‑T Truth is irrelevant, while little‑t truth is a function of the interpretive grid.
+
+---
+
 ## 🌀 Fnord Operator 
 *A bounded perturbation term for subliminal cues, affective charge, and biased inference.*
 
