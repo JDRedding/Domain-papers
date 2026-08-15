@@ -5,7 +5,7 @@ Discordianism is a modern, satirical religion that venerates chaos and promotes 
 
 ## **Abstract**
 
-This model formalizes Discordianism as a **bounded chaotic system** in which belief, interpretation, and social tension evolve through nonlinear, entropy‑maximizing dynamics constrained by a single global radius \(R_{\max}\). Chaos is free to propagate, drift, and destabilize structure, but never diverges beyond the finite domain defined by \(R_{\max}\). The model incorporates **bounded stochastic evolution**, **finite‑state entropy**, **network‑level anti‑closure**, and **non‑absorbing Markov drift**, producing perpetual instability without collapse.
+This model formalizes Discordianism as a **bounded chaotic system** in which belief, interpretation, and social tension evolve through nonlinear, entropy‑maximizing dynamics constrained by a single global radius $R_{\max}$. Chaos is free to propagate, drift, and destabilize structure, but never diverges beyond the finite domain defined by $R_{\max}$. The model incorporates **bounded stochastic evolution**, **finite‑state entropy**, **network‑level anti‑closure**, and **non‑absorbing Markov drift**, producing perpetual instability without collapse.
 
 To capture Discordianism’s satirical epistemology, the model integrates **Fnord**, a tri‑component operator representing non‑reportable cues that generate affective charge and biased inference. Fnord perturbs detection thresholds, associative strength, and Bayesian belief updates while remaining bounded by $R_{\max}$. This yields a formal mechanism for **grid‑relative truth**: chaos is constant, but its interpretation depends on the observer’s perceptual grid, priors, and affective state. Changing the grid changes the truth.
 
