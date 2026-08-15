@@ -118,7 +118,7 @@ All Discordian dynamics obey:
 
 ---
 
-## 8. RDG-Compatible Summary (No Convergentals)
+## 8. Summary 
 
 ### SID  
 - **Structure:** chaotic belief patterns  
