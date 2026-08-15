@@ -183,7 +183,7 @@ $$
 
 or simply the product of three $[0,1]$ terms.
 
-#### 🔧 **Refinement 1: Drift‑diffusion detection**
+#### 🔧 **Drift‑diffusion detection**
 Key term: **drift‑diffusion model**
 
 $$
