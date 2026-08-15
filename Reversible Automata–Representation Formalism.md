@@ -30,20 +30,20 @@ It establishes a functorial bridge from automatic combinatorics to linear algebr
 
 The sequence provided outlines a deep categorical and algebraic landscape connecting discrete dynamical systems (permutation automata) to abstract monoid actions through higher-level structures. Let us analyze and link each step rigorously.
 
-1. Permutation Automata
+### 1. Permutation Automata
    
 A permutation automaton is a finite automaton where each input symbol induces a permutation on the set of states. Formally, if Q is the set of states and Σ the input alphabet, each a∈Σ acts as a bijection 
 πa:Q→Q. These are reversible finite-state systems in the sense that the state transition can be undone, making the system an instance of a reversible dynamical system.
 
-3. Reversible Systems
+### 3. Reversible Systems
    
 Reversibility ensures that the time evolution map is bijective, which allows the system to satisfy properties analogous to unitary evolution in linear spaces. Algebraically, the reversible transformations form a group G⊆Sym(Q), the symmetric group on Q.
 
-4. Group Actions
+### 4. Group Actions
    
 Given a group G acting on a set Q, the action is defined as a map G×Q→Q satisfying g_1​ ⋅(g_2​ ⋅q)=(g_1 g_2​)⋅q and e⋅q=q. In this context, the reversible automaton induces a permutation group action on the state-space, encoding symmetry and orbits.
 
-5. Functors
+### 5. Functors
 
 Lift the combinatorial structure to the categorical level:
 Define a category Aut of automata with morphisms as transition-respecting maps.
@@ -52,7 +52,7 @@ A functor F:Aut → Vect_C assigns to each automaton a complex vector space of s
 
 This functorial perspective translates discrete permutations into linear representations, enabling the use of representation-theoretic tools.
 
-5. Unitary Representations
+### 5. Unitary Representations
 
 Since permutations are bijective, the associated linear operators are unitary under the standard Hermitian inner product on C^Q
 
@@ -60,19 +60,23 @@ $$U_{\pi_a} \colon \mathbb{C}^Q \to \mathbb{C}^Q, \quad U_{\pi_a} \ket{q} = \ket
 
 Thus, every permutation automaton corresponds to a unitary representation of its associated permutation group. Spectral decomposition is available because unitary operators are diagonalizable over C.
 
-6. Spectral Data
+### 6. Spectral Data
+
 Unitary operators admit a spectrum of eigenvalues λ∈C with ∣λ∣=1. Spectral data provides:
 
 Invariant subspaces corresponding to irreducible components.
 
 Eigenbasis decomposition, which can facilitate dynamical analysis, long-term behavior, or quantum analogues (quantum automata).
 
-7. From Monoids to Monoid Actions
+### 7. From Monoids to Monoid Actions
+
 If we relax reversibility (non-invertible transitions), the set of all transition operators forms a monoid (M,⋅) under composition. Formally:
 
 Let M=⟨π_a :a∈Σ⟩ under composition.
 
 The action of M on Q (or on C^Q) defines a monoid action: M×Q→Q satisfying m_1 ⋅(m_2 ⋅q)=(m_1 m_2​)⋅q and 1⋅q=q. This closure generalizes group actions to non-invertible dynamics, bridging automata theory with semigroup and monoid representation theory.
+
+---
 
 ```
 SUMMARY MAPPING — STRUCTURE → ALGEBRAIC / CATEGORICAL OBJECT
