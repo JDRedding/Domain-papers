@@ -1,5 +1,7 @@
 # Reversible Automata–Representation Formalism
 
+This document builds a formal bridge from finite reversible automata (permutation automata) to linear/unitary representation theory and spectral analysis, then generalizes to monoid (non‑invertible) actions. It shows how combinatorial automata → group actions → functorial lifts to vector spaces → unitary representations → spectral data (characters, eigenvalues, adjacency/operator spectra) give structural and dynamical insights (orbits ↔ invariant subspaces, spectral gap ↔ mixing), and it records notation, examples, and implications (quantum, thermodynamic, categorical).
+
 ```
 +------------------+     Functor F     +--------------------+
 | Permutation Auto | ----------------> |  Category FinSet^× |
