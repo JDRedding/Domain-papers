@@ -46,4 +46,49 @@ In modern usage, calling something a "fnord" often playfully signals that the sp
 - A tag for irony, surrealism, or absurdity, often written as (fnord) at the end of a sentence. 
 - A symbol of countercultural commentary, signaling that something is intentionally nonsensical or manipulative. 
 
+# Fnord equations 
+
+### Signal detection 
+*noticing vs. missing the fnord*
+
+$$
+d' = z(\text{Hit rate}) - z(\text{False-alarm rate})
+$$
+
+Here the “signal” is the fnord itself (or the affective charge attached to it). High $d'$ means the observer can reliably discriminate the cue; low $d'$ (or a strongly biased criterion) produces the classic experience of missing it while still feeling the residual anxiety. Apophenia appears as a lowered decision criterion that inflates false alarms—seeing fnords everywhere.
+
+### Bayesian belief updating 
+*pattern-seeking / “something is wrong”*
+
+$$
+P(H \mid D) = \frac{P(D \mid H)\,P(H)}{P(D)}
+$$
+
+$H$ is the hypothesis “threat / conspiracy / hidden order is present.” Even weak or non-conscious data $D$ (the subliminal cue) can shift posterior probability enough to generate residual anxiety or confirmatory search, especially when the prior $P(H)$ is already elevated.
+
+### Rescorla–Wagner 
+*anxiety attached to unseen triggers*
+
+$$
+\Delta V = \alpha\beta(\lambda - V)
+$$
+
+This is the cleanest formal analog for the affective component. The fnord acts as a conditioned stimulus whose associative strength $V$ grows toward the asymptotic value $\lambda$ (threat/unease) even when the observer never consciously reports the cue. The learning-rate parameters $\alpha,\beta$ can be small, producing slow, persistent attachment that feels “unexplained.”
+
+### Minimal “fnord” composite
+The compact way to combine them is to treat the unconscious residual as a product of associative strength and residual uncertainty:
+
+$$
+F = V \cdot (1 - \Phi(d'_{\text{conscious}})) \cdot \text{KL}\bigl(P(H\mid D)\,\|\,P(H)\bigr)
+$$
+
+- $V$ = current associative (affective) strength from the Rescorla–Wagner update  
+- $1 - \Phi(d'_{\text{conscious}})$ = probability mass still below conscious detection threshold  
+- $\text{KL}$ = Kullback–Leibler divergence measuring how much the Bayesian update has moved belief  
+
+$F$ then indexes the intensity of the “fnord experience”: affect is present, the cue itself is not fully reportable, and belief has been nudged.
+
+Subliminal/affective priming effects can be folded in empirically as shifts in reaction time or evaluative ratings that scale with $F$, without needing a new closed-form equation.
+
+These rgive a shared notation for the detection failure, the belief shift, and the lingering affective charge that together constitute a fnord. Refinements (hierarchical Bayesian versions, drift-diffusion models of the detection process, or state-dependent learning rates) await further work.
 
