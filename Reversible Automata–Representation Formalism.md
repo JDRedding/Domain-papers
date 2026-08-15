@@ -284,3 +284,186 @@ $$U_a = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}$$
 If $\mathcal{H} = (\mathbb{C}^2)^{\otimes m}$ (a register of $m$ qubits), reversible classical automata correspond to **permutation quantum gates** (e.g., CNOT, Toffoli).
 2. **Thermodynamic Interpretation:**
 Because $U_a$ is doubly stochastic, the uniform distribution on $Q$ is stationary under all generator updates, matching the microcanonical ensemble in statistical mechanics.
+
+# Appendix - Core equations and notation  
+
+### 1. Permutation automaton
+
+$$
+\mathcal{A}=(Q,\Sigma,\delta,q_0,F)
+$$
+
+- $Q$): finite set of states, $n=|Q|$
+- $\Sigma$: finite alphabet
+- $\delta:Q\times\Sigma\to Q$
+
+**Permutation condition**
+
+$$
+\forall a\in\Sigma,\quad\delta_a:Q\to Q,\quad q\mapsto\delta(q,a)\quad\text{is bijective},
+$$
+
+i.e. $\delta_a\in\mathrm{Sym}(Q)\cong S_n.$
+
+**Transition group**
+
+$$
+G=\langle\delta_a:a\in\Sigma\rangle\le\mathrm{Sym}(Q).
+$$
+
+**Word action**
+
+$$
+q(w)=q_0\cdot\delta_{a_1}\cdots\delta_{a_k},\qquad w=a_1\dots a_k.
+$$
+
+### 2. Reversible dynamical system / group action
+Representation of generators:
+
+$$
+\rho:\Sigma\to\mathrm{Sym}(Q).
+$$
+
+Free-monoid (actually group) action:
+
+$$
+\Phi:\Sigma^*\times Q\to Q,\qquad\Phi(w,q)=\rho(w)(q).
+$$
+
+Generated group action:
+
+$$
+G\curvearrowright Q.
+$$
+
+**Orbit and stabilizer**
+
+$$
+\mathrm{Orb}(q)=\{g\cdot q:g\in G\},\qquad
+\mathrm{Stab}(q)=\{g\in G:g\cdot q=q\}.
+$$
+
+Orbit-stabilizer theorem:
+
+$$
+|\mathrm{Orb}(q)|=\frac{|G|}{|\mathrm{Stab}(q)|}.
+$$
+
+### 3. Regular representations (Cayley case)
+Identify $Q$ with the underlying set of $G$:
+
+- Right: $\delta(g,s)=g\cdot s$
+- Left: $\delta(g,s)=s\cdot g$
+
+### 4. Categorical form
+Functor from the one-object category \(\mathbf{B}\Sigma^*\) (or \(\mathbf{B}G\)):
+
+$$
+F:\mathbf{B}\Sigma^*\to\mathbf{FinSet}^\times,\qquad F(\ast)=Q,\quad F(a)=\delta_a.
+$$
+
+### 5. Unitary representation
+Hilbert space $\mathcal{H}=\ell^2(Q)\cong\mathbb{C}^n$.
+
+Permutation matrix of $\delta_a$$:
+
+$$
+(U_a)_{i,j}=\begin{cases}
+1 & \text{if }\delta_a(j)=i,\\
+0 & \text{otherwise}.
+\end{cases}
+$$
+
+Unitary property:
+
+$$
+U_a^\dagger U_a=I.
+$$
+
+Unitary representation:
+
+$$
+U:G\to\mathrm{U}(n),\qquad g\mapsto U_g.
+$$
+
+**Generating (adjacency) operator**
+
+$$
+A=\sum_{a\in\Sigma}(U_a+U_a^\dagger).
+$$
+
+Spectrum of $A$ is real and lies in $[-2|\Sigma|,2|\Sigma|]$ ; $\lambda_1=2|\Sigma|$ with multiplicity equal to the number of orbits.
+
+### 6. Characters and cycle index
+Character of the permutation representation:
+
+$$
+\chi(g)=\operatorname{tr}(U_g)=\#\{\text{fixed points of }g\}.
+$$
+
+Burnside (number of orbits):
+
+$$
+k=\frac1{|G|}\sum_{g\in G}\chi(g)=\frac1{|G|}\sum_{g\in G}\operatorname{tr}(U_g).
+$$
+
+Cycle index:
+
+$$
+Z(G)=\frac1{|G|}\sum_{g\in G}\prod_{k=1}^n x_k^{c_k(g)},
+$$
+
+where $c_k(g)$ is the number of cycles of length $k$ in $g$.
+
+### 7. Hilbert-space decomposition
+
+$$
+\mathcal{H}=\bigoplus_i\ell^2(\mathrm{Orb}(q_i)).
+$$
+
+Each summand is a subrepresentation.
+
+### 8. Monoid generalization (non-reversible case)
+
+$$
+\rho:M\to\mathrm{End}(Q)\quad\text{(or }\mathrm{End}(\mathbb{C}^Q)\text{)},
+$$
+
+where $M=\langle\delta_a:a\in\Sigma\rangle$ is the monoid generated under composition. The action satisfies
+
+$$
+m_1\cdot(m_2\cdot q)=(m_1m_2)\cdot q,\qquad 1\cdot q=q.
+$$
+
+### Key structural equivalences
+- Reversibility \$\iff$ each $U_a$ is unitary (entropy conservation).
+- Orbits $\iff$ invariant subspaces / blocks of the representation.
+- Spectral gap of \(A\) controls mixing rate of the random walk on \(Q\).
+
+### Canonical 3-state example
+Generator $\delta_a=(1\ 2\ 3)$:
+
+$$
+U_a=\begin{pmatrix}
+0 & 0 & 1 \\
+1 & 0 & 0 \\
+0 & 1 & 0
+\end{pmatrix}.
+$$
+
+Eigenvalues: the cube roots of unity $\{1,\omega,\omega^2\}$.  
+Characters: $\chi(e)=3$, $\chi(a)=\chi(a^2)=0$.
+
+**Core notation dictionary**
+- $Q,n=|Q|$ — state space  
+- $\Sigma$ — generators  
+- $\delta_a,\rho(a)$ — permutation updates  
+- $G=\langle\delta_a\rangle$ — transition group  
+- $G\curvearrowright Q$ — group action  
+- $U_a$ — unitary permutation matrix  
+- $\mathrm{Orb}(q),\mathrm{Stab}(q)$ — orbit / stabilizer  
+- $\chi(g)=\operatorname{tr}(U_g)$ — permutation character  
+- $A$ — adjacency / generating operator  
+- $F:\mathbf{B}\Sigma^*\to\mathbf{FinSet}^\times$ — categorical functor  
+
+These are the fundamental equations and the associated notation of the formalism.
