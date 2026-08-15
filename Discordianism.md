@@ -3,7 +3,7 @@
 
 Discordianism is a modern, satirical religion that venerates chaos and promotes playful, absurdist perspectives on order, society, and spirituality. This note defines a mathematical "Bounded Chaos" model of Discordianism — a satire-forward, entropy‑maximizing belief system — using a set of bounded dynamical equations and a single global bound R_max to prevent divergence while preserving playful, nonconvergent behavior. Discordianism is both a satirical social critique and an alternative spiritual perspective that celebrates chaos, creativity, and absurdity. Its influence extends beyond religion into cultural, philosophical, and humorous domains, encouraging followers to question convention, embrace paradox, and find humor in the unpredictability of life.
 
-# **Abstract**
+## **Abstract**
 
 This model formalizes Discordianism as a **bounded chaotic system** in which belief, interpretation, and social tension evolve through nonlinear, entropy‑maximizing dynamics constrained by a single global radius \(R_{\max}\). Chaos is free to propagate, drift, and destabilize structure, but never diverges beyond the finite domain defined by \(R_{\max}\). The model incorporates **bounded stochastic evolution**, **finite‑state entropy**, **network‑level anti‑closure**, and **non‑absorbing Markov drift**, producing perpetual instability without collapse.
 
