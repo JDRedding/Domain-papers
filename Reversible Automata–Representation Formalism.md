@@ -398,7 +398,7 @@ Spectrum of $A$ is real and lies in $[-2|\Sigma|,2|\Sigma|]$ ; $\lambda_1=2|\Sig
 Character of the permutation representation:
 
 $$
-\chi(g)=\{tr}(U_g)=\{\text{◉} \{\text{fixed points of }g\}.
+\chi(g)=\{tr}(U_g)=\{\text{◉}} \{\text{fixed points of }g\}.
 $$
 
 Burnside (number of orbits):
