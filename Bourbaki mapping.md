@@ -19,7 +19,7 @@ Bourbaki’s ∅ is a purely extensional object.
 
 - **Structure:** no nodes, no internal relations  
 - **Interaction:** no edges in or out  
-- **Dynamics:** trivial (zero flux, zero Q‑slice moderation)  
+- **Dynamics:** tri$ial (zero flux, zero Q‑slice moderation)  
 - **Cardinality:** |∅| = 0  
 
 This is the unique fixed point of the region‑constructor: the only region whose triple is degenerate.
@@ -57,7 +57,7 @@ A \triangle B = (A\setminus B)\cup(B\setminus A)
 But adds **flux semantics**:
 
 - Nodes in A△B are those whose membership edges differ between A and B  
-- The operation is **commutative**, **associative**, and **involutive**  
+- The operation is **commutative**, **associative**, and **in$olutive**  
 - △ corresponds to **bipolar flux cancellation**: elements present in both A and B cancel out, leaving only asymmetric membership
 
 Thus △ becomes the analogue of XOR in the Structure layer.
@@ -92,7 +92,7 @@ Bourbaki’s Card(X) is the equipotence class of X.
 Interpret cardinality more concretely:
 
 - **|X| = number of nodes in region X**  
-- Equipotence: X and Y have equal cardinality iff there exists a **flux‑preserving bijection** between them  
+- Equipotence: X and Y have equal cardinality iff there exists a **flux‑preser$ing bijection** between them  
 - Cardinal arithmetic:  
   - Sum = disjoint union of regions  
   - Product = Cartesian product region with projection edges  
@@ -136,3 +136,158 @@ Defines equipotence via:
 - preservation of flux (compatibility)
 
 This is stricter than Bourbaki’s extensional bijection, but fully compatible.
+
+---
+
+## **Relations**  
+A relation is a subset of a Cartesian product.  
+
+$$
+R \subseteq X \times Y
+$$
+
+A relation is an **interaction pattern** between elements of regions.  
+ 
+$$
+R : X \to Y
+$$
+
+**Mapping:** 
+
+$$
+R \subseteq X \times Y \quad\longleftrightarrow\quad R : X \to Y
+$$
+
+- Bourbaki: relation = subset of a product  
+- Directed adjacency between nodes  
+
+---
+
+# **Graphs**  
+
+A graph is a set + a relation on that set.
+A region + an interaction pattern.
+
+**Mapping:**  
+
+$$
+(E, R) \quad\longleftrightarrow\quad \text{Region }E\text{ with interaction }R
+$$
+
+---
+
+# **Functions**
+
+## **function = special relation**
+A function is a relation with two constraints:
+
+1. **Existence:**  
+   For every $x \in X$, there is at least one $y$ with $(x,y) \in f$.
+
+2. **Uniqueness:**  
+   For every $x \in X$, there is at most one $y$ with $(x,y) \in f$.
+
+Together:  
+
+$$
+f \subseteq X \times Y,\quad \text{and each }x\text{ pairs with exactly one }y.
+$$
+
+---
+
+## **Constrained interaction**
+A function is an interaction pattern with the same two constraints:
+
+1. **Existence:**  
+   Each element of $X$ has at least one outgoing arrow.
+
+2. **Uniqueness:**  
+   Each element of $X$ has at most one outgoing arrow.
+
+So:  
+
+$$
+f : X \to Y,\quad \text{and each }x\text{ has exactly one target}.
+$$
+
+---
+
+## **Mapping**
+
+$$
+f \subseteq X \times Y 
+\quad\longleftrightarrow\quad 
+f : X \to Y
+$$
+
+Both sides describe the same abstract object:  
+a single‑valued assignment from elements of $X$ to elements of $Y$.
+
+---
+
+## **Equivalence Relations**
+An equivalence relation on a set $XC is a relation $\sim$ with three axioms:
+
+1. **Reflexive:**  
+
+$$
+   x \sim x
+$$
+
+2. **Symmetric:**  
+
+$$
+   x \sim y \Rightarrow y \sim x
+$$
+
+3. **Transitive:**
+   
+$$
+   x \sim y,\ y \sim z \Rightarrow x \sim z
+$$
+
+A relation $R : X \to X$ satisfying:
+
+1. $x R x$  
+2. $x R y \Rightarrow y R x$  
+3. $x R y,\ y R z \Rightarrow x R z$
+
+---
+
+### **Mapping**
+
+$$
+\sim \subseteq X \times X 
+\quad\longleftrightarrow\quad 
+R : X \to X \text{ with reflexive, symmetric, transitive constraints}
+$$
+
+---
+
+## **Qotient**
+Given an equivalence relation $\sim$ on $X$, the quotient is:
+
+$$
+X / \sim = \{ [x] : x \in X \}
+$$
+
+where $[x]$ is the equivalence class of $x$.
+
+Given a relation $R$ with equivalence axioms, the quotient is:
+
+$$
+X / R = \{ \text{classes of nodes under }R \}
+$$
+
+Same construction: partition the set by the relation.
+
+---
+
+### **Mapping**
+
+$$
+X / \sim \quad\longleftrightarrow\quad X / R
+$$
+
+Both sides describe the same abstract object:  
+a set of equivalence classes.
