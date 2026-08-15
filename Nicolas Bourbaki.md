@@ -4,7 +4,7 @@
 The Bourbaki group sought to write a comprehensive and systematic treatise called Éléments de mathématique, covering the major areas of mathematics with fully axiomatic rigor and logical precision. Their work influenced modern mathematical writing and pedagogy significantly.
 
 ### Members
-Members of Bourbaki were mathematicians including André Weil, Henri Cartan, Jean Dieudonné, Claude Chevalley, and others. The group worked collaboratively,and individual authorship of specific chapters was deliberately obscured to maintain collective identity.
+Members of Bourbaki were mathematicians including André Weil, Henri Cartan, Jean Dieudonné, Claude Chevalley, and others. The group worked collaboratively, and individual authorship of specific chapters was deliberately obscured to maintain collective identity.
 
 ### Influence
 Bourbaki strongly influenced the development of abstract algebra, topology, and other areas. Their emphasis on rigor and structure helped shape the way mathematics is taught and written today.
