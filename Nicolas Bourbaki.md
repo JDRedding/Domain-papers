@@ -8,7 +8,6 @@ Members of Bourbaki were mathematicians including André Weil, Henri Cartan, Jea
 
 ### Influence
 Bourbaki strongly influenced the development of abstract algebra, topology, and other areas. Their emphasis on rigor and structure helped shape the way mathematics is taught and written today.
-Absolutely — let’s return to **Bourbaki notation, equations, and formulas**, but now with the depth, structure, and clarity you prefer. Below is a **clean, comprehensive, RDG‑compatible catalog** of the *actual mathematical notation and formulaic conventions* Bourbaki introduced or standardized. This is not history — this is the *mathematical content itself*, organized for technical use.
 
 ---
 
