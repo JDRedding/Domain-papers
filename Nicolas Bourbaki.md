@@ -173,3 +173,259 @@ Bourbaki’s work is known for its formalism, abstract structures, and concise s
 ## Interesting Facts
 The group used pseudonyms and wrote under the Bourbaki name even after many of the original members had left. Bourbaki’s approach has been sometimes criticized for being too abstract and formal, but also praised for unifying mathematical knowledge.
 
+## Appendix
+
+### Bourbaki equation sheet. 
+
+---
+
+#### **SET THEORY**  
+#### ================================
+
+```
+Empty set:
+    ∅ = {}
+
+Power set:
+    P(X) = { A : A ⊆ X }
+
+Union / intersection / difference:
+    A ∪ B
+    A ∩ B
+    A \ B
+
+Symmetric difference:
+    A △ B = (A \ B) ∪ (B \ A)
+
+Cartesian product:
+    X × Y = { (x,y) : x ∈ X, y ∈ Y }
+
+Equivalence relation:
+    x ~ y  <=>  (x,y) ∈ R
+
+Quotient set:
+    X/~ = { [x] : x ∈ X }
+```
+
+---
+
+#### **FUNCTIONS & MAPPINGS**  
+#### ======================================
+
+```
+Function:
+    f : X → Y
+
+Image:
+    Im(f) = { f(x) : x ∈ X }
+
+Preimage:
+    f^{-1}(A) = { x ∈ X : f(x) ∈ A }
+
+Injective:
+    f(x1) = f(x2)  =>  x1 = x2
+
+Surjective:
+    ∀ y ∈ Y, ∃ x ∈ X : f(x) = y
+
+Bijective:
+    f injective AND surjective
+
+Composition:
+    (g ∘ f)(x) = g(f(x))
+
+Kernel:
+    Ker(f) = { x : f(x) = e }
+```
+
+---
+
+#### **TOPOLOGY**  
+#### ================================
+
+```
+Topology:
+    T ⊆ P(X)
+    ∅ ∈ T, X ∈ T
+    Arbitrary unions of T are in T
+    Finite intersections of T are in T
+
+Neighborhood filter:
+    V(x) = { U ∈ T : x ∈ U }
+
+Closure:
+    Cl(A) = ⋂ { C : A ⊆ C, C closed }
+
+Interior:
+    Int(A) = ⋃ { U : U ⊆ A, U open }
+
+Filter:
+    F ⊆ P(X)
+    F ≠ ∅
+    A ∈ F, A ⊆ B => B ∈ F
+    A,B ∈ F => A ∩ B ∈ F
+
+Convergence:
+    F → x  <=>  V(x) ⊆ F
+```
+
+---
+
+#### **GEOMETRY / SPECIAL OBJECTS**  
+#### ==========================================
+
+```
+Pavé (parallelotope):
+    P = Π_{i=1..n} [a_i, b_i]
+
+Boule (ball):
+    B(x,r) = { y : d(x,y) < r }
+
+Barrel (TVS):
+    Barrel = convex ∩ balanced ∩ absorbing ∩ closed
+```
+
+---
+
+#### **GROUP THEORY**  
+#### ================================
+
+```
+Group:
+    (G, ·), identity e, inverse g^{-1}
+
+Subgroup:
+    H ≤ G
+
+Homomorphism:
+    f(gh) = f(g) f(h)
+
+Kernel:
+    Ker(f) = { g : f(g) = e }
+
+Image:
+    Im(f) = f(G)
+
+Quotient group:
+    G/H
+```
+
+---
+
+#### **RINGS & MODULES**  
+#### ================================
+
+```
+Ring:
+    (R, +, ·)
+
+Module:
+    M over R
+
+Endomorphisms:
+    End(X) = { f : X → X }
+
+Automorphisms:
+    Aut(X) = { f : X → X bijective }
+```
+
+---
+
+#### **LINEAR ALGEBRA**  
+#### ================================
+
+```
+Vector space:
+    V over field K
+
+Basis:
+    { v_i }_{i ∈ I }
+
+Dimension:
+    dim(V) = |I|
+
+Linear map:
+    T(av + bw) = aT(v) + bT(w)
+
+Rank:
+    rank(T) = dim(Im(T))
+```
+
+---
+
+#### **ANALYSIS**  
+#### ================================
+
+```
+Measure space:
+    (X, M, μ)
+
+Measurable function:
+    f^{-1}((a,b)) ∈ M
+
+Integral:
+    ∫_X f dμ
+
+Essential supremum:
+    ess sup f = inf { a : μ({ x : f(x) > a }) = 0 }
+
+Lp spaces:
+    L^p(X) = { f : ∫ |f|^p dμ < ∞ }
+
+Support:
+    supp(f) = Cl({ x : f(x) ≠ 0 })
+```
+
+---
+
+#### **CALCULUS**  
+#### ================================
+
+```
+Derivative:
+    f'(x) = lim_{h→0} (f(x+h) - f(x)) / h
+
+Chain rule:
+    (g ∘ f)'(x) = g'(f(x)) f'(x)
+
+Differential:
+    df = f'(x) dx
+```
+
+---
+
+#### **STRUCTURES & MORPHISMS**  
+#### ==========================================
+
+```
+Structure:
+    S = (X, R, O)
+    X = underlying set
+    R = relations
+    O = operations
+
+Morphism:
+    f : S → S'
+    f preserves all R and O
+
+Isomorphism:
+    f bijective morphism
+```
+
+---
+
+
+#### **DANGEROUS BEND**  
+#### ================================
+
+```
+☡   (dangerous bend)
+☣   (double dangerous bend)
+```
+
+ASCII equivalents:
+
+```
+/!\   dangerous bend
+/!!\  double dangerous bend
+```
