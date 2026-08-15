@@ -282,16 +282,19 @@ a set of equivalence classes.
 A relation $\le \subseteq X \times X$ satisfying:
 
 1. **Reflexive:**  
+
    $$
    x \le x
    $$
 
 2. **Antisymmetric:**  
+
    $$
    x \le y,\ y \le x \Rightarrow x = y
    $$
 
-3. **Transitive:**  
+3. **Transitive:**
+   
    $$
    x \le y,\ y \le z \Rightarrow x \le z
    $$
@@ -301,9 +304,9 @@ A relation $\le \subseteq X \times X$ satisfying:
 ### **Partial order**
 A relation $R : X \to X$ satisfying the same three axioms:
 
-1.$x R x $  
-2.$x R y,\ y R x \Rightarrow x = y $  
-3.$x R y,\ y R z \Rightarrow x R z $
+1. $x R x$  
+2. $x R y,\ y R x \Rightarrow x = y$  
+3. $x R y,\ y R z \Rightarrow x R z$
 
 $$
 \le \subseteq X \times X 
