@@ -17,16 +17,16 @@ Discordianism was founded in the late 1950s by Greg Hill (Malaclypse the Younger
 
 ## Core Beliefs and Concepts
 
-- Eris and Chaos
+- **Eris and Chaos**
   : Discordianism worships Eris, the goddess of chaos, conflict, and confusion. Chaos is seen as a fundamental and natural aspect of existence, promoting creativity, spontaneity, and freedom from dogmatic structures.
 
-- Law of Fives
+- **Law of Fives**
   : This humorous principle states that all things happen in fives, or are related to five in some way, highlighting the human tendency to find patterns even in randomness.
 
-- Principia Discordia Philosophy
+- **Principia Discordia Philosophy**
   : Core ideas revolve around absurdism, skepticism of order, and the interplay between chaos and structure. It emphasizes playfulness and encourages embracing life’s contradictions.
 
-- Five-Year Rule and Recognition of Paradox
+- **Five-Year Rule and Recognition of Paradox**
   : Discordians often acknowledge that truth can be subjective, and paradoxes and humor are essential tools to question rigid thought patterns.
 
 ## Practices and Holidays
