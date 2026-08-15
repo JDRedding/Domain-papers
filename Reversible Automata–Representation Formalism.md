@@ -232,7 +232,7 @@ Monoids provide a natural framework for irreversible processes, extending the ut
 
 Group-theoretic and monoid-theoretic functors unify discrete automata theory with modern representation theory, quantum computation, and categorical dynamics.
 
-This sequence encapsulates an elegant algebraic and categorical abstraction pipeline for automata, placing permutation systems within the broader context of monoids and their linear/unitary actions.
+This sequence encapsulates an algebraic and categorical abstraction pipeline for automata, placing permutation systems within the broader context of monoids and their linear/unitary actions.
 
 ---
 
