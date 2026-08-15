@@ -22,6 +22,12 @@ SPLITTING:
    - Vertex positions                       - Multigrid offsets
    - Edge vectors Δx                        - Selection window filter
 
+
+Space / Domain, Operator, Dynamics, Parameter Behavior
+- Physical Space (R2), T_∥​, Expanding transformation, Scaled by λ=∣σ1​(β)∣>1
+- Internal Space (Rp−3), T_⊥​, Contracting transformation, Scaled by matrix A⊥​ with ∣σj​(β)∣<1
+- State Space (X=Λ×S×C), T_comb​, Combinatorial tile division, Driven by substitution matrix M
+
 ------------------------------------------------------------
 T_parallel  :  Λ → R^2
 ------------------------------------------------------------
