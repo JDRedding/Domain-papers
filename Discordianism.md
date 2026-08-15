@@ -1,6 +1,8 @@
 # 📘 Discordianism: Bounded Chaos Model  
 *A mathematical specification for modeling Discordianism as a bounded chaotic, entropy‑maximizing belief system.*
 
+This note defines a mathematical "Bounded Chaos" model of Discordianism — a satire-forward, entropy‑maximizing belief system — using a set of bounded dynamical equations and a single global bound R_max to prevent divergence while preserving playful, nonconvergent behavior.
+
 ---
 
 ## 1. Core Chaotic Evolution (Bounded)
