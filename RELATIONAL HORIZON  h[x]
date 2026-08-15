@@ -1,0 +1,120 @@
+RELATIONAL HORIZON  h[x]
+============================================================
+  h[x] is the minimal closure-geodesic distance from x to any
+  point where the coordinate metric dq becomes undefined or
+  divergent.  The level set h[x] = h0 is the relational event
+  horizon separating RDG-exterior geometry from the Q-box
+  interior.
+
+BASE SETS
+---------
+  I        = inverse-limit index set from refinement system {G_h}
+  Q        = Q-box interior (uninspectable region)
+  E        = I \ Q  (RDG exterior)
+
+DISTANCES
+---------
+  1. Closure geodesic distance:
+       dΓ(A,B) = inf_{x(0)=A, x(T)=B} ∫_0^T CΓ(x(t), ẋ(t)) dt
+
+  2. Discounted closure trajectory distance:
+       dΓ^(λ)(x,y) = ∫_0^∞ e^{-λ t} || Γ_t(x) - Γ_t(y) || dt   (λ > 0)
+
+  3. Constructed coordinate metric (depth–refinement–constraint):
+       dq(x,y) = coordinate-induced metric
+                 (may diverge or be undefined near Q)
+
+KEY PRINCIPLE
+-------------
+  Relational geometry uses dΓ.
+  Coordinate geometry uses dq.
+  The horizon is where dq fails but dΓ remains finite.
+
+DEFINITION OF RELATIONAL THICKNESS
+----------------------------------
+  For any x ∈ I:
+
+      h[x] := inf_{y ∈ Q} { dΓ(x,y)  |  dq(x,y) = ∞ }
+
+  Interpretation:
+    - Search over all interior points y ∈ Q.
+    - Require dq(x,y) = ∞ (coordinate metric breaks).
+    - Measure relational distance dΓ(x,y) (still finite).
+    - The smallest such dΓ is the horizon thickness at x.
+
+ALTERNATE FORM (DISCOUNTED METRIC)
+----------------------------------
+  h[x] := inf_{y ∈ Q} { dΓ^(λ)(x,y) | dq(x,y) = ∞ }
+
+  Same meaning:
+    finite relational separation,
+    infinite coordinate separation.
+
+EVENT HORIZON SET
+-----------------
+  Choose critical thickness h0 > 0.
+
+      H := { x ∈ I | h[x] = h0 }
+
+  Interpretation:
+    - H is the relational event horizon.
+    - Inside H: dq fails, Q-box interior.
+    - Outside H: dq stable, RDG geometry valid.
+
+GEOMETRIC INTERPRETATION
+------------------------
+  - dΓ finite  → relationally reachable
+  - dq infinite → coordinate geometry breaks
+  - h[x] measures how close x is to the breakdown boundary
+  - H is the boundary where RDG geometry collapses
+  - Q is the interior beyond inspection
+
+============================================================
+============================================================
+APPENDIX A — ADJACENCY AS ROUGH APPROXIMATION
+============================================================
+  Adjacency provides a rough combinatorial scaffold for I,
+  but cannot define the relational horizon.  Only closure-
+  geodesic distances dΓ (or discounted dΓ^(λ)) correctly
+  capture the breakdown boundary where dq fails and Q-box
+  interior begins.
+
+ADJACENCY DISTANCE (COMBINATORIAL)
+----------------------------------
+  d_adj(x,y) = minimal number of adjacency steps across refinements
+
+PROPERTIES
+----------
+  - Purely combinatorial
+  - No geometry, no coherence density
+  - No Γ-flow, no closure geodesics
+  - Valid only far from Q-box interior
+
+RELATION TO dΓ
+--------------
+  d_adj(x,y)  ≈  rough upper bound on dΓ(x,y)
+  d_adj(x,y)  ≠  substitute for dΓ(x,y)
+
+BREAKDOWN NEAR HORIZON
+----------------------
+  As x → H:
+    - Γ-flow becomes highly non-uniform
+    - adjacency neighborhoods distort
+    - d_adj loses correlation with dΓ
+    - coordinate metric dq diverges
+    - relational metric dΓ remains finite
+
+USE CASE
+--------
+  d_adj is acceptable for:
+    - coarse exploration of I
+    - rough neighborhood estimates
+    - debugging refinement structures
+
+  d_adj is NOT acceptable for:
+    - defining h[x]
+    - locating H
+    - measuring relational thickness
+    - any Γ-consistent geometry
+============================================================
+
