@@ -48,7 +48,7 @@ The word first appears unexplained in the text (e.g., during an acid trip: “Th
 The concept fits the trilogy’s larger satirical, nonlinear exploration of conspiracy theories, Discordianism, counterculture, perception (“reality tunnels”), and the absurdity of seeking absolute order in a chaotic world. The books mix historical Illuminati lore, occultism, sex, drugs, anarchism, and wild fiction without claiming any single “truth.”
 
 ### 🎭 Cultural fnords vs. psychological fnords
-Your write‑up already nails the cultural history, but here’s the distilled taxonomy:
+The distilled taxonomy:
 
 #### 🌀 **Discordian fnord**
 Absurdist, chaotic, symbolic nonsense  
