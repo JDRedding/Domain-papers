@@ -76,6 +76,11 @@ $$
   P = \prod_{i=1}^n [a_i,b_i]
 $$
 
+   Structure: $L_i = (b_i - a_i)$  
+   Interaction: $V = Π_i L_i$  
+   Dynamics: $∂V/∂L_k = Π_{i≠k} L_i$
+
+
 - **boule** — ball  
 
 $$B(x,r) = { y | d(x,y) < r }$$
