@@ -252,7 +252,7 @@ $$
 
 ---
 
-## **Qotient**
+## **Quotient**
 Given an equivalence relation $\sim$ on $X$, the quotient is:
 
 $$
