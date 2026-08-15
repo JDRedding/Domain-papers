@@ -175,7 +175,7 @@ The group used pseudonyms and wrote under the Bourbaki name even after many of t
 
 ## Appendix
 
-### Bourbaki equation sheet. 
+### Bourbaki equation sheet
 
 ---
 
@@ -429,3 +429,4 @@ ASCII equivalents:
 /!\   dangerous bend
 /!!\  double dangerous bend
 ```
+---
