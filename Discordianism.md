@@ -250,8 +250,7 @@ Examples:
 ## 🌀 Fnord Operator 
 *A bounded perturbation term for subliminal cues, affective charge, and biased inference.*
 
-Fnord is modeled as a **bounded perturbation operator** that injects ambiguity, misdirection, and cognitive noise into the Discordian dynamics without violating the global bound **R<sub>max</sub>**. It formalizes the Discordian idea of unseen cues producing emotional and interpretive shifts. Fnord is a bounded perturbation operator that injects subliminal
-cues, affective charge, and biased inference into Discordian bounded-chaos dynamics. It modifies chaotic evolution, network correlations, Markov drift, and social tension fields while remaining constrained by R_max.
+Fnord is modeled as a **bounded perturbation operator** that injects ambiguity, misdirection, and cognitive noise into the Discordian dynamics without violating the global bound **R<sub>max</sub>**. It formalizes the Discordian idea of unseen cues producing emotional and interpretive shifts. 
 
 ---
 
