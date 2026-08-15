@@ -90,5 +90,5 @@ $F$ then indexes the intensity of the “fnord experience”: affect is present,
 
 Subliminal/affective priming effects can be folded in empirically as shifts in reaction time or evaluative ratings that scale with $F$, without needing a new closed-form equation.
 
-These rgive a shared notation for the detection failure, the belief shift, and the lingering affective charge that together constitute a fnord. Refinements (hierarchical Bayesian versions, drift-diffusion models of the detection process, or state-dependent learning rates) await further work.
+These give a shared notation for the detection failure, the belief shift, and the lingering affective charge that together constitute a fnord. Refinements (hierarchical Bayesian versions, drift-diffusion models of the detection process, or state-dependent learning rates) await further work.
 
