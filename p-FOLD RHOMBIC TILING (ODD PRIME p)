@@ -1,5 +1,6 @@
 p-FOLD RHOMBIC TILING (ODD PRIME p)
 ============================================================
+Projection Architecture K to R^2 ⊕ R^(p-3)
 
 MODULE:
   Λ = Z[ζ_p]  (cyclotomic module of rank p−1)
