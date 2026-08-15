@@ -10,6 +10,18 @@ SPLITTING:
   Physical embedding: σ_1(ζ_p) = exp(2πi/p)
   Internal embeddings: σ_j(ζ_p) = exp(2πij/p), j = 2..(p−1)/2
 
+            High-Dimensional Cyclotomic Module: Λ = Z[ζ_p]
+                                   │
+              ┌────────────────────┴────────────────────┐
+              │                                         │
+              ▼                                         ▼
+    Physical Projection (T_parallel)          Internal Projection (T_perp)
+              │                                         │
+              ▼                                         ▼
+   Physical 2D Space (R^2)                  Window Space (R^{p-3})
+   - Vertex positions                       - Multigrid offsets
+   - Edge vectors Δx                        - Selection window filter
+
 ------------------------------------------------------------
 T_parallel  :  Λ → R^2
 ------------------------------------------------------------
