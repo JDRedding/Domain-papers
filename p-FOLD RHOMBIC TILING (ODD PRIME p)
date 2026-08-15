@@ -1,0 +1,84 @@
+p-FOLD RHOMBIC TILING (ODD PRIME p)
+============================================================
+
+MODULE:
+  Λ = Z[ζ_p]  (cyclotomic module of rank p−1)
+  ζ_p = exp(2πi/p)
+
+SPLITTING:
+  K = Q(ζ_p)  →  R^2  ⊕  R^(p−3)
+  Physical embedding: σ_1(ζ_p) = exp(2πi/p)
+  Internal embeddings: σ_j(ζ_p) = exp(2πij/p), j = 2..(p−1)/2
+
+------------------------------------------------------------
+T_parallel  :  Λ → R^2
+------------------------------------------------------------
+Definition:
+  For x = Σ_{k=0}^{p−2} n_k ζ_p^k,
+
+  T_parallel(x) =
+      ( Σ_k n_k cos(2πk/p) ) * u1
+    + ( Σ_k n_k sin(2πk/p) ) * u2
+
+Interpretation:
+  Physical-space placement of vertices.
+  Rhomb edges = T_parallel(x2 − x1).
+
+------------------------------------------------------------
+T_perp  :  Λ → R^(p−3)
+------------------------------------------------------------
+Definition:
+  For x = Σ_{k=0}^{p−2} n_k ζ_p^k,
+
+  T_perp(x) =
+    ( Σ_k n_k cos(4πk/p),
+      Σ_k n_k cos(6πk/p),
+      ...
+      Σ_k n_k cos(2π((p−1)/2)k/p) )
+
+Interpretation:
+  Internal-space window coordinates.
+  Multigrid offsets = translations in T_perp-space.
+
+------------------------------------------------------------
+T_comb  :  (Λ × S × C) → (Λ × S × C)
+------------------------------------------------------------
+State space:
+  S = {1,2,...,(p−1)/2}   (rhomb shape index)
+  C = combinatorial local configuration data
+  X = Λ × S × C
+
+Substitution matrix:
+  M ∈ Z^{((p−1)/2) × ((p−1)/2)}
+  Column m gives counts of rhomb types produced by inflating type m.
+
+Action:
+  T_comb(x, m, c) = { ( x_i , m_i , c_i ) }_{i=1..N_m }
+  where:
+    m_i determined by M_{m_i,m}
+    x_i = β x + u_{m,i}
+    β = Pisano unit in Z[ζ_p + ζ_p^{-1}]
+    u_{m,i} ∈ Λ are displacement vectors
+
+Interpretation:
+  Pure combinatorial evolution under inflation.
+  Tile types and adjacency rules encoded by M and u_{m,i}.
+
+------------------------------------------------------------
+INFLATION AUTOMORPHISM  T : Λ → Λ
+------------------------------------------------------------
+Definition:
+  T(x) = β x
+  β ∈ Z[ζ_p + ζ_p^{-1}] is a Pisano unit
+
+Decomposition:
+  Physical:   T_parallel(x) → λ * T_parallel(x)
+              λ = |σ_1(β)| > 1
+
+  Internal:   T_perp(x) → A_perp * T_perp(x)
+              A_perp = matrix of β under embeddings σ_2..σ_{(p−1)/2}
+              |σ_j(β)| < 1 for j ≥ 2
+
+  Comb:       Tile types evolve via substitution matrix M
+
+============================================================
