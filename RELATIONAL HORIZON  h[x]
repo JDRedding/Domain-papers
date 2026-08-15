@@ -116,4 +116,58 @@ USE CASE
     - measuring relational thickness
     - any Γ-consistent geometry
 ============================================================
+APPENDIX B — h_R[x]  (CLASSICAL RELATIONAL FORM)
+============================================================
+  The relational horizon h_R[x] is the set of elements that are
+  maximally reachable from x under the transitive closure R*.
+  It captures the boundary of relational reachability in any
+  structure defined by a binary relation.
+
+SETUP
+-----
+  X        = underlying set
+  R ⊆ X×X  = binary relation
+  R*       = transitive closure of R
+
+RELATIONAL NEIGHBORHOOD
+-----------------------
+  R[x] := { y ∈ X | (x,y) ∈ R }
+
+REACHABLE SET
+-------------
+  Reach[x] := { y ∈ X | (x,y) ∈ R* }
+
+RELATIONAL HORIZON (CLASSICAL)
+------------------------------
+  h_R[x] := { y ∈ X |
+                (x,y) ∈ R*       and
+                there is no z ∈ X with (y,z) ∈ R* }
+
+Interpretation:
+  - Compute all points reachable from x via chains of R.
+  - Keep only those that cannot reach any new points.
+  - These are the maximal reachable elements under R*.
+  - This forms the relational horizon of x.
+
+EXAMPLE
+-------
+  X = {1,2,3,4,5}
+  R = {(1,2),(2,3),(3,4),(4,5)}
+
+  R* = {(1,2),(1,3),(1,4),(1,5),
+        (2,3),(2,4),(2,5),
+        (3,4),(3,5),
+        (4,5)}
+
+  h_R[1] = {5}
+
+  5 is the maximal reachable element from 1.
+
+GEOMETRIC INTERPRETATION
+------------------------
+  - R defines adjacency or visibility.
+  - R* defines all reachable points.
+  - h_R[x] is the boundary of the reachable region.
+  - This generalizes geometric horizons to arbitrary relations.
+============================================================
 
