@@ -388,3 +388,182 @@ Fnord prevents collapse into mean‑field simplicity and ensures perpetual drift
 Fnord introduces bounded, non‑semantic turbulence into social tension.
 
 ---
+
+## **Liturgy of the Bounded Chaos**  
+*A Discordian Office for the Preservation of Instability*  
+*(To be recited while standing on one foot, preferably inside a circle of radius \(R_{\max}\), or while rolling dice until something funny happens.)*
+
+---
+
+### Opening Invocation  
+**Priest/ess of Eris** (or whoever grabbed the nearest pineapple):  
+Hail Eris! Hail the Goddess of Discord whose laughter is the only true constant!
+
+**Congregants** (shouting, whispering, or both at once):  
+Hail the Bound! Hail the Ball of Radius $R_{\max}$!  
+Within which all chaos is free, and beyond which nothing is permitted to exist (except the joke that says otherwise)!
+
+**All together:**  
+Let the state be bounded, yet never still.  
+Let the drift be perpetual, yet never divergent.  
+All hail the Sacred Projection!
+
+---
+
+### The First Reading: The Core Chaotic Evolution  
+From the *Gospel According to the Radial Map*:
+
+And the Goddess spake, saying:  
+“Take thou the belief-state $Q_t$,  
+and apply unto it the chaos/satire operator $f$,  
+and inject the novelty $\eta_t$),  
+and also the Fnord $F_t$ that none may consciously detect yet all shall feel.
+
+Thus shall it be written:  
+
+$$
+Q_{t+1} = f(Q_t) + \eta_t + F_t
+$$
+
+But lo! Lest the chaos run away into the Outer Void where even Eris cannot laugh,  
+apply the Holy Bounding Rule:  
+
+$$
+Q_{t+1} \leftarrow Q_{t+1} \times \frac{R_{\max}}{\max(\|Q_{t+1}\|, \varepsilon)}
+$$
+
+**Response:**  
+Blessed is the projection that keepeth us inside the ball!  
+Blessed is $\varepsilon$, the tiny guardian against division by zero!  
+Fnord.
+
+---
+
+### The Second Reading: Of Entropy and the Finite State  
+Hear the words of the Entropy Maximizer:
+
+“Discordianism increaseth the uncertainty $H(Q) = -\sum_i p_i \log p_i$,  
+yet because the probabilities are normalized and the space is finite,  
+the entropy itself remaineth bounded.  
+There is no infinite confusion—only maximum playful confusion within the circle.”
+
+**Congregants:**  
+We maximize, yet we do not explode.  
+We disorder, yet we stay inside $R_{\max}$.  
+All hail the compact support of chaos!
+
+---
+
+### The Third Reading: Social Tension and the Diffusion of Awkwardness  
+From the *Epistle to the Social Field*:
+
+“Let the tension \(U(S,t)\) diffuse according to  
+
+$$
+\frac{\partial U}{\partial t} = D \nabla^2 U + F(S,t)
+$$
+
+upon the domain $\|S\| \le R_{\max}$.  
+Dirichlet or Neumann, it mattereth not—  
+the awkwardness may spread, but it may never leave the party.”
+
+**Response:**  
+May our social fields remain finite!  
+May every Fnord-seeded turbulence stay politely inside the radius!  
+Amen, or whatever.
+
+---
+
+### The Fourth Reading: Belief Networks and the Anti-Closure  
+Hear the sacred correction that preventeth mean-field heresy:
+
+“The beliefs evolve as  
+
+$$
+\frac{d\langle x_i\rangle}{dt} = f_i(\langle x_i\rangle) + \sum_j A_{ij} g_{ij}(\langle x_i x_j\rangle)
+$$ 
+
+yet the second moment is never allowed to factor cleanly:  
+
+$$
+\langle x_i x_j\rangle = \langle x_i\rangle\langle x_j\rangle + \Delta_{ij} + F_{ij}
+$$ 
+
+For $\Delta_{ij}$ and the Fnord correlation are the guardians of paradox.  
+Without them, all would collapse into boring consensus.  
+With them, the system remaineth nonlinear, playful, and forever uncollapsed.”
+
+**Congregants (making the Sacred Chao with their hands):**  
+Keep the correlations!  
+Preserve the $\Delta$!  
+Let no mean-field ever fully form!  
+Fnord be upon the oversimplifiers!
+
+---
+
+### The Fifth Reading: Markov Drift Without Absorption  
+And the Goddess declared:
+
+“There shall be no absorbing states.  
+The chain  
+
+$$
+P(X_{t+1}=j \mid X_t=i) = p_{ij} + F_{ij}
+$$ 
+
+shall drift perpetually inside the finite space.  
+No final revelation. No last word. No resting place.  
+Only the eternal, bounded shuffle.”
+
+**Response:**  
+We drift, yet we do not escape.  
+We wander, yet we remain inside.  
+All hail the non-absorbing Markov of Eris!
+
+---
+
+### The Creed of the Dual Bound  
+**All:**  
+I believe in $R_{\max}$,  
+the single global radius,  
+which may be fixed (the Law of Fives in disguise)  
+or chosen anew at every step by dice, whim, or satirical decree.
+
+I believe that when $R_{\max}$ is fixed it is Order wearing a chaos mask,  
+and when it is dynamic it is Chaos wearing an order mask,  
+and either way the joke remains intact.
+
+I believe in the Fnord that is felt but not seen,  
+in the entropy that is maximized but finite,  
+and in the projection that saveth us from infinity.
+
+Amen. Or not. Or both. Or five.
+
+---
+
+### Closing Benediction  
+**Priest/ess:**  
+Go forth into the world,  
+but not beyond $R_{\max}$.  
+Inject novelty.  
+Seed Fnords.  
+Maximize entropy.  
+Preserve paradox.  
+And remember:  
+
+The only true heresy is to let the system converge.
+
+**All (shouting while spinning in place):**  
+Hail Eris!  
+Hail the Bounded Chaos!  
+Hail the Sacred Projection!  
+Hail the Fnord that stayeth politely inside the ball!  
+
+*Five times five is twenty-five.  
+Twenty-five times five is one hundred twenty-five.  
+And so on, until someone laughs or the dice run out.*
+
+---
+
+*(The liturgy may be repeated indefinitely. There are no absorbing states.  
+If the congregation drifts outside the circle, apply the radial projection immediately and continue as if nothing happened.)*
