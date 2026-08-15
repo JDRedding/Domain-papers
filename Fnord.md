@@ -40,7 +40,7 @@ Advertisements contain no fnords, which encourages consumerism as a comforting a
 
 The Illuminati (in the books’ conspiratorial framework) use this mechanism to keep the population docile and controllable. A fearful populace is easier to govern.
 
-The word first appears unexplained in the text (e.g., during an acid trip: “*The only good fnord is a dead fnord*”). Its full significance is revealed later when a character is hypnotized and recalls the childhood conditioning: “*If you don’t see the fnord it can’t eat you...*” It is also implied that “fnord” itself is a stand-in for whatever actual trigger word or technique is used, since most readers would be conditioned not to notice the real one.
+The word first appears unexplained in the text (e.g., during an acid trip: “*The only good fnord is a dead fnord*”). Its full significance is revealed later when a character is hypnotized and recalls the childhood conditioning: “*If you don’t see the fnord it can’t eat you...*” It is also implied that “*fnord*” itself is a stand-in for whatever actual trigger word or technique is used, since most readers would be conditioned not to notice the real one.
 
 “*Seeing the fnords*” therefore means breaking the conditioning — becoming aware of the hidden manipulative elements in media and language, reclaiming autonomy, and reading between the lines. It is a metaphor for critical perception and resistance to propaganda.
 
