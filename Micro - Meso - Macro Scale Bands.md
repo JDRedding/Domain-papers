@@ -1,5 +1,5 @@
 # Micro - Meso - Macro Scale Bands
-A *full* **Micro - Meso - Macro** *cosmic–subatomic size ladder.  
+A *full* **Micro - Meso - Macro** *cosmic–subatomic size ladder*.  
 
 ---
 
