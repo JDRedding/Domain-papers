@@ -115,6 +115,7 @@ USE CASE
     - locating H
     - measuring relational thickness
     - any Γ-consistent geometry
+
 ============================================================
 APPENDIX B — h_R[x]  (CLASSICAL RELATIONAL FORM)
 ============================================================
@@ -170,4 +171,3 @@ GEOMETRIC INTERPRETATION
   - h_R[x] is the boundary of the reachable region.
   - This generalizes geometric horizons to arbitrary relations.
 ============================================================
-
