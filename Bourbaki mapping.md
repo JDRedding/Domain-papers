@@ -402,3 +402,50 @@ X \sim Y \quad\longleftrightarrow\quad X \sim Y
 $$
  
 **Existence of a bijection**.
+
+---
+
+## **Cartesian Products & Function Spaces**
+
+### **Cartesian Product**
+- Cartesian product = ordered pairs  
+- Function space = set of all functions  
+
+The Cartesian product of sets $X$ and $Y$ is:
+
+$$
+X \times Y = \{(x,y) : x \in X,\ y \in Y\}.
+$$
+
+The Cartesian product of regions $X$ and $Y$ is:
+
+$$
+X \times Y = \{(x,y) : x \in X,\ y \in Y\}.
+$$
+
+$$
+X \times Y \quad\longleftrightarrow\quad X \times Y
+$$
+
+### **Function Space**
+
+The set of all functions from $X$ to $Y$ is:
+
+$$
+Y^X = \{ f : X \to Y \}.
+$$
+
+This is the “exponential” in set theory.
+
+The region of all functions from $X$ to $Y$ is:
+
+$$
+Y^X = \{ f : X \to Y \}.
+$$
+
+$$
+Y^X \quad\longleftrightarrow\quad Y^X
+$$
+
+---
+
