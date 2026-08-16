@@ -12,6 +12,34 @@ Abstract Axiomatisation
 - It does not depend on the nature of the distinguished element.  
 - It only depends on the **cardinality‑three collapse** of the orbit under two generators.
 
+## System Dynamics & Flow
+```
+  +---------------------------------------+
+  |    Structured Object Space: S         |
+  |                                       |
+  |   Distinguished Element (F)           |
+  |             |                         |
+  |             v                         |
+  |   Monoid Orbit: <T1, T2> * F          |
+  +---------------------------------------+
+                    |
+                    | Collapse Map: Φ
+                    v
+  +---------------------------------------+
+  |   Collapsed Orbit: O_Φ(F) ⊂ C         |
+  |                                       |
+  |     +--------+  T1 / T2  +--------+   |
+  |     |   P1   | --------> |   P2   |   |
+  |     +--------+           +--------+   |
+  |       ^                    |          |
+  |       |       +--------+   |          |
+  |       +------ |   P3   | <--+         |
+  |               +--------+              |
+  |                                       |
+  |   Cardinality |O_Φ(F)| = 3            |
+  |   Closed under induced actions        |
+  +---------------------------------------+
+```
 ### **Triadic System (5‑tuple definition)**  
 
 A triadic system is a tuple  
