@@ -196,7 +196,7 @@ n=\begin{cases}
 \end{cases}
 $$
 
-(The precise initial sets occupy each player’s half of the Alquerque grid plus the appropriate wing(s).)
+(The precise initial sets occupy each player’s half of the grid plus the appropriate wing(s).)
 
 ---
 
@@ -473,7 +473,7 @@ $$
 N_{\text{royal}}[v] = N[v] \cup \{ \text{additional permitted steps} \}
 $$
 
-(exact enlargement depends on local rules, commonly one extra orthogonal or diagonal step).
+  (exact enlargement depends on local rules, commonly one extra orthogonal or diagonal step).
 
 - **Wing Lock.**  
   Let $W\subset V$ be the vertex set of a triangular wing. If $W\subseteq S_i$, then no piece of player $3-i$ may enter any vertex of $W$.
