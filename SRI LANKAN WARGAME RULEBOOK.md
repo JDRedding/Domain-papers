@@ -337,6 +337,50 @@ Strategy guidance: Emphasis on wing control (flanks/ambush), central 5×5 grid d
 
 Optional local variants: Royal Soldier (last unit gains extra moves), Wing Lock (full wing prevents entry), Double Chop (double capture grants extra move).
 
+### Board Representation
+Model the board as an undirected graph $G = (V, E)$, where:
+- $V$ is the set of intersection points (vertices),
+- $E$ is the set of legal movement/capture lines (edges).
+
+Decompose $V = C \cup W$, where:
+- $C$ is the central $5 \times 5$ Alquerque grid ($|C| = 25$),
+- $W = W_1 \cup W_2 \cup \dots$ is the union of the triangular wings.
+
+The subgraph induced by $C$ has the classic Alquerque line structure (orthogonal + selected diagonals). Each wing $W_i$ is a triangular subgraph attached to the boundary of $C$.
+
+### Soldier Density
+Let $n$ be the total number of pieces on the board at a given moment and $|V|$ the total number of points.  
+**Density** is
+
+$$
+\delta = \frac{n}{|V|}.
+$$
+
+High initial density corresponds to $\delta$ close to $1$ (nearly full board), producing the congested opening phase. As captures occur, $\delta$ decreases, transitioning through the explosive mid-game into a sparse positional end-game.
+
+### Mobility and Central Grid Dominance
+The **mobility** of a point $v \in V$ is its graph degree:
+
+$$
+\mu(v) = \deg(v) = |\{ u \in V : \{v,u\} \in E \}|.
+$$
+
+The central grid maximizes average mobility:
+
+$$
+\overline{\mu}_C = \frac{1}{|C|} \sum_{v \in C} \mu(v) > \overline{\mu}_{W_i}
+$$
+
+for any wing.  
+
+A player’s **tactical control** of the center can be quantified by the occupied high-mobility subset:
+
+$$
+\mathcal{T} = \sum_{v \in C \cap \text{own pieces}} \mu(v).
+$$
+
+Higher $\mathcal{T}$ correlates with more available capture routes and greater freedom of movement.
+
 ### 7.1 Wing Control
 The triangular wings serve as:
 - Flanking routes  
@@ -344,6 +388,28 @@ The triangular wings serve as:
 - Safe retreat zones  
 
 Loss of access to a wing frequently collapses a player’s position.
+
+Define the **wing-access indicator** for wing $W_i$:
+
+$$
+\alpha_i =
+\begin{cases}
+1 & \text{if the player can move a piece into or through } W_i, \\
+0 & \text{otherwise}.
+\end{cases}
+$$
+
+Loss of wing access is expressed by $\alpha_i = 0$. Strategic collapse risk rises when
+
+$$
+\sum_i \alpha_i
+$$
+
+falls (especially if both flanking wings are lost). Under the optional **Wing Lock** variant, a fully occupied wing satisfies
+
+$$
+|W_i \cap \text{occupied}| = |W_i| \implies \text{entry forbidden}.
+$$
 
 ### 7.2 Optional Captures
 Because captures are not mandatory:
