@@ -91,7 +91,19 @@ $$
 
 All rules of the three Sri Lankan games are completely determined by the choice of the concrete graph $G$ (31- or 37-vertex) and the initial partition $(S_1,S_2)$. The Indian triangular family differs only in that $C(P)$ is **mandatory** whenever non-empty, and multi-captures must be continued to exhaustion.
 
-This notation is sufficient for rigorous analysis, computer implementation, or combinatorial-game-theoretic study.
+The game phases can be characterized by density thresholds:
+
+$$
+\begin{align*}
+\text{Congested opening:} &\quad \delta \gtrsim 0.8, \\
+\text{Explosive mid-game:} &\quad 0.4 \lesssim \delta \lesssim 0.8, \\
+\text{Positional end-game:} &\quad \delta \lesssim 0.4.
+\end{align*}
+$$
+
+(Exact numerical cut-offs are approximate and depend on the precise wing sizes.)
+
+These formulas supply a precise notational framework for the strategic principles of wing control, central-grid dominance, optional-capture tactics, and density-driven phase structure. This notation is sufficient for rigorous analysis, computer implementation, or combinatorial-game-theoretic study.
 
 ### 2.1 Base Alquerque Grid (5 × 5)
 
