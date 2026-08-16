@@ -51,7 +51,6 @@ DRAW CONDITIONS (simple form)
               END OF RULES
 ========================================
 ```
-Mechanism‑indexed classification that makes the relationships between these variants explicit.
 
 All 19 variants fall into **five mechanical superfamilies** based on *movement geometry*, *capture geometry*, and *king range*:  
 1. **Orthogonal Men / Orthogonal Kings** (Turkish-line)  
@@ -61,6 +60,7 @@ All 19 variants fall into **five mechanical superfamilies** based on *movement g
 5. **Special Win-Condition or Setup Variants** (Misère, Diagonal-start)
 
 ## 🧠 *Mechanics‑first taxonomy*
+Mechanism‑indexed classification that makes the relationships between these variants explicit.
 The *true* structural divide in draughts is not board size or king range — it’s **capture geometry**.  
 Once know whether men capture:
 
