@@ -41,8 +41,6 @@ Why It’s Interesting
 - Each candidate placement must be checked against both the queen-attack graph (rows, columns, diagonals) *and* the knight-attack graph.
 - Practical solvers therefore rely on systematic backtracking, constraint propagation, symmetry reduction (rotations and reflections of the board), or integer-linear-programming formulations—exactly the techniques used for the N-Queens family and other fairy-chess independence problems.
 
-
-
 ### Notation
 - Board squares are pairs $(r,c)$ with $r,c\in\{1,2,\dots,n\}$.
 - Let $S=\{(r_1,c_1),\dots,(r_n,c_n)\}$ be a set of $n$ distinct occupied squares.
