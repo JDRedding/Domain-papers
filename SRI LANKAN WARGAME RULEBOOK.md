@@ -509,14 +509,46 @@ $$
 
 ## 10. Appendix: Board Templates
 
-### Blank Sixteen Soldiers Board
+### Blank Sixteen Soldiers Board (Extended)
+```
+    o---o---o
+     \  |  /
+      o-o-o
+       \|/
+o---o---o---o---o
+| \ | / | \ | / |
+o---o---o---o---o
+| / | \ | / | \ |
+o---o---o---o---o
+| \ | / | / | \ |
+o---o---o---o---o
+| / | \ | \ | / |
+o---o---o---o---o
+       /|\
+      o-o-o
+     /  |  \
+    o---o---o
 ```
 
+### Blank Peralikatuma / Kotu Ellima Board (4-wing, Extended)
 ```
-
-### Blank Peralikatuma / Kotu Ellima Board (4-wing)
-```
-
+          o---o---o
+           \  |  /
+            o-o-o
+             \|/
+o     o---o---o---o---o     o
+|\    | \ | / | \ | / |    /|
+| o   o---o---o---o---o   o |
+| | \ | / | \ | / | \ | / | |
+o-o---o---o---o---o---o---o-o
+| | / | \ | / | / | \ | \ | |
+| o   o---o---o---o---o   o |
+|/    | / | \ | \ | / |    \|
+o     o---o---o---o---o     o
+             /|\
+            o-o-o
+           /  |  \
+          o---o---o
 ```
 (Left and right wings attach similarly.)
 
