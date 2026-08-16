@@ -167,5 +167,5 @@ $$
 \sigma_1, \sigma_2 \in \{1, 2, 3\}^{\{1, 2, 3\}}
 $$ 
 
-represent the permutation/transformation profiles on the collapsed set).
+represent the permutation/transformation profiles on the collapsed set.
 
