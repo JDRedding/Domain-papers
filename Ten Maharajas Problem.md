@@ -1,5 +1,38 @@
 The **Ten Maharajas Problem** is a chess-based puzzle in the Zillions of Games collection, where the goal is to place ten Maharaja pieces on a standard 8×8 chessboard so that no two attack each other. The Ten Maharajas Problem is a mathematical puzzle inspired by chess involving the placement of ten specialized pieces on a board under non-conflict constraints. Its main challenge is combinatorial, akin to the N-Queens family of problems. While historically evocative in name, it does not concern actual historical maharajas beyond nominal inspiration. In short, the puzzle is a pure combinatorial-optimisation / constraint-satisfaction task whose historical name is only decorative; the real interest lies in the extra power of the Maharaja and the resulting increase in search difficulty relative to ordinary queens.
 
+## Key Points about the Puzzle
+
+Aspect : 
+Detail
+
+Number of Pieces : 
+10 Maharajas
+
+Objective : 
+Place all pieces without conflict or threats
+
+Domain : 
+Game/puzzle logic, combinatorial optimization
+
+Approach Techniques : 
+Constraint satisfaction, backtracking, combinatorial enumeration
+
+### **Definition**
+A *Maharaja* (also called an **Amazon** or **superqueen**) is the fairy‑chess piece whose legal moves are the union of:
+
+- **Queen moves** (orthogonal + diagonal rays), and  
+- **Knight moves** (the 8 L‑shaped leaps).
+
+Thus two squares $p=(r,c)$ and $q=(r',c')$ are in attack relation  
+$[p\sim q]$ if:
+
+- $r=r'$ (same row),  
+- $c=c'$ (same column),  
+- $|r-r'|=|c-c'|$ (same diagonal),  
+- or $(|r-r'|,|c-c'|)\in\{(1,2),(2,1)\}$ (knight attack).
+
+The *Ten Maharajas Problem* asks for a set of *10* such pieces placed on a board so that **no two attack each other**.
+
 ## Nature of the Problem
 The Ten Maharajas Problem is a non-attacking placement puzzle in which 10 Maharaja pieces must be placed on a board so that none attacks another. A Maharaja (also called an Amazon or superqueen in fairy chess) combines the moves of a queen (any number of squares horizontally, vertically, or diagonally) and a knight (the familiar L-shaped leap).
 
@@ -86,6 +119,24 @@ $$
 
 (The second family of inequalities can be written explicitly by enumerating the four queen rays and the eight possible knight leaps from each square.)
 
+## **Critical Independence Threshold**
+The independence number satisfies:
+
+$$
+\alpha(G_n) < n \quad\text{for } n\le 9,
+$$
+$$
+\alpha(G_n) = n \quad\text{for } n\ge 10.
+$$
+
+Thus:
+
+- On **8×8**, the maximum is **6** non‑attacking Amazons.  
+- On **9×9**, the maximum is **8**.  
+- On **10×10**, the maximum jumps to **10**, and the Ten Maharajas Problem becomes feasible.
+
+This is the Amazon analogue of the classical N‑Queens threshold.
+
 ### Counting solutions
 Let $Q_A(n)$ denote the number of solutions (distinct placements of $n$ non-attacking Amazons on an $n\times n$ board). It is known that
 
@@ -118,25 +169,77 @@ $$
 
 These equations and the associated notation completely characterise the combinatorial constraints of the puzzle.
 
-## Key Points about the Puzzle
+## **Graph‑Theoretic Formulation**
+Let the **Maharaja graph** $G_n$ be the graph whose:
 
-Aspect : 
-Detail
+- vertices are the $n^2$ squares of the $n\times n$ board,  
+- edges join any pair of squares that attack each other.
 
-Number of Pieces : 
-10 Maharajas
+A placement of $n$ Maharajas is a size‑$n$ **independent set** in $G_n$.
 
-Objective : 
-Place all pieces without conflict or threats
+The puzzle asks whether:
 
-Domain : 
-Game/puzzle logic, combinatorial optimization
+$$
+\alpha(G_{10}) = 10,
+$$
 
-Approach Techniques : 
-Constraint satisfaction, backtracking, combinatorial enumeration
+and if so, to exhibit such an independent set.
+
+## **Constraint Geometry**
+The constraints combine:
+
+- **Queen constraints** (4 ray families per square),  
+- **Knight constraints** (8 discrete leaps),  
+- **Row/column exclusivity**,  
+- **Diagonal exclusivity**,  
+- **Knight‑graph exclusivity**.
+
+This makes the Amazon far more restrictive than the queen:  
+even placements that avoid all queen lines can still fail via knight conflicts.
 
 ### Relation to known results
 OEIS sequences and independent computational enumerations give the number of ways to place $k$ non-attacking Amazons on boards of various sizes; those tables confirm that the independence number for Amazons on 8×8 is 6, while larger boards admit correspondingly larger sets. The Zillions “Ten Maharajas Problem” is simply the concrete instance that asks for a feasible (and preferably all distinct) solutions when $k=10$.
+
+## **ILP Formulation**
+Binary variables:
+
+$$
+x_{r,c}\in\{0,1\}.
+$$
+
+Constraints:
+
+1. **Exactly 10 pieces**  
+   $$
+   \sum_{r=1}^{10}\sum_{c=1}^{10} x_{r,c} = 10.
+   $$
+
+2. **Non‑attack constraints**  
+   For every attacking pair $(r,c)\sim(r',c')$:
+   $$
+   x_{r,c} + x_{r',c'} \le 1.
+   $$
+
+This is a pure feasibility ILP with ~100 variables and ~thousands of pairwise constraints.
+
+---
+
+## **Combinatorial Search Character**
+- Search space size:
+  
+  $$
+  \binom{100}{10} \approx 2.63\times 10^{13}.
+  $$
+  
+- Heavy pruning via:
+  - row/column exclusivity,  
+  - diagonal exclusivity,  
+  - knight‑graph pruning,  
+  - symmetry reduction under $D_4$,  
+  - backtracking with forward checking.
+
+The problem is computationally similar to **N‑Queens with extra edges**.
+
 
 ## Sources
 Zillions of Games listing notes the problem among other chess and puzzle variants, indicating its combinatorial puzzle nature.
