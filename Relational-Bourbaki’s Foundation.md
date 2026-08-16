@@ -79,7 +79,7 @@ Bourbaki’s ∅ is a purely extensional object.
 
 - **Structure:** no nodes, no internal relations  
 - **Interaction:** no edges in or out  
-- **Dynamics:** tri$ial (zero flux, zero Q‑slice moderation)  
+- **Dynamics:** trivial (zero flux, zero Q‑slice moderation)  
 - **Cardinality:** |∅| = 0  
 
 This is the unique fixed point of the region‑constructor: the only region whose triple is degenerate.
@@ -152,7 +152,7 @@ Bourbaki’s Card(X) is the equipotence class of X.
 Interpret cardinality more concretely:
 
 - **|X| = number of nodes in region X**  
-- Equipotence: X and Y have equal cardinality iff there exists a **flux‑preser$ing bijection** between them  
+- Equipotence: X and Y have equal cardinality iff there exists a **flux‑preserving bijection** between them  
 - Cardinal arithmetic:  
   - Sum = disjoint union of regions  
   - Product = Cartesian product region with projection edges  
