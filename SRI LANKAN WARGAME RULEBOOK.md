@@ -349,13 +349,13 @@ Egara-guti further expands Dash-guti, adding more intersection points and lines:
 
 ```
    o---o---o---o---o---o
-    \  |  |  |  |  /
-     \ |  |  |  | /
-      \|  |  |  |/
-o---o--o--o--o--o--o--o---o
-      /|  |  |  |\
-     / |  |  |  | \
-    /  |  |  |  |  \
+    \  |   |   |   |  /
+     \ |   |   |   | /
+      \|   |   |   |/
+o---o--o---o-o-o---o--o---o
+      /|   |   |   |\
+     / |   |   |   | \
+    /  |   |   |   |  \
    o---o---o---o---o---o
 ```
 
@@ -376,9 +376,9 @@ Pretwa employs a circular board with radial lines and triangular subdivisions:
 ```
        o
      / | \
-   o--o--o
-   |  |  |
-   o--o--o
+   o---o---o
+   |   |   |
+   o---o---o
      \ | /
        o
 ```
@@ -451,26 +451,26 @@ o---o--o--o---o
 ### 8.2 Dash-guti (expanded)
 ```
    o---o---o---o---o
-    \  |  |  |  /
-     \ |  |  | /
-      \|  |  |/
-o---o--o--o--o--o---o
-      /|  |  |\
-     / |  |  | \
-    /  |  |  |  \
+    \  |   |   |  /
+     \ |   |   | /
+      \|   |   |/
+o---o--o---o---o--o---o
+      /|   |   |\
+     / |   |   | \
+    /  |   |   |  \
    o---o---o---o---o
 ```
 
 ### 8.3 Egara-guti (larger)
 ```
    o---o---o---o---o---o
-    \  |  |  |  |  /
-     \ |  |  |  | /
-      \|  |  |  |/
-o---o--o--o--o--o--o--o---o
-      /|  |  |  |\
-     / |  |  |  | \
-    /  |  |  |  |  \
+    \  |   |   |   |  /
+     \ |   |   |   | /
+      \|   |   |   |/
+o---o--o---o---o---o--o--o---o
+      /|   |   |   |\
+     / |   |   |   | \
+    /  |   |   |   |  \
    o---o---o---o---o---o
 ```
 
@@ -478,9 +478,9 @@ o---o--o--o--o--o--o--o---o
 ```
        o
      / | \
-   o--o--o
-   |  |  |
-   o--o--o
+   o---o---o
+   |   |   |
+   o---o---o
      \ | /
        o
 ```
