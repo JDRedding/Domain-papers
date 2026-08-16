@@ -582,11 +582,10 @@ PARAMETER GROUPS
 - DRAW_RULES:  {repetition, no-progress, agreed}
 ```
 ---
-```
 VARIANT ENCODINGS (EXAMPLES)
-============================================================
 
 AMERICAN / ENGLISH CHECKERS
+```
 ---------------------------
 BOARD:        SIZE=8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
 MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=diag-forward
@@ -597,8 +596,9 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move,
               PROMOTE_CONT=continue-as-king (next turn)
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=none/free
 WIN/DRAW:     WIN_COND=capture-all OR block-all
-
+```
 INTERNATIONAL 10x10
+```
 -------------------
 BOARD:        SIZE=10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
 MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=diag-any
@@ -609,8 +609,9 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move,
               PROMOTE_CONT=continue-as-king (next turn)
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-pieces
 WIN/DRAW:     WIN_COND=capture-all OR block-all
-
+```
 RUSSIAN (SHASHKI)
+```
 -----------------
 BOARD:        SIZE=8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
 MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=diag-any
@@ -621,8 +622,9 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=mid-sequence,
               PROMOTE_CONT=continue-as-king
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=none/free
 WIN/DRAW:     WIN_COND=capture-all OR block-all
-
+```
 TURKISH (DAMA)
+```
 --------------
 BOARD:        SIZE=8x8, SQUARES=all, START_ROWS=2, MEN_COUNT=16
 MEN MOVE:     MOVE_DIR=orth-forward+side, CAPTURE_DIR=orth-any
@@ -632,8 +634,9 @@ KING MOVE:    MOVE_DIR=orth-any, MOVE_RANGE=flying,
 PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-pieces
 WIN/DRAW:     WIN_COND=capture-all OR block-all
-
+```
 FRISIAN 10x10
+```
 -------------
 BOARD:        SIZE=10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
 MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=8-dir
