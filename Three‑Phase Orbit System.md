@@ -169,3 +169,16 @@ $$
 
 represent the permutation/transformation profiles on the collapsed set.
 
+### Canonical factorization
+
+The construction realises a commutative diagram of monoid actions:
+
+$$
+\begin{CD}
+\langle T_1,T_2\rangle\cdot F @>{\Phi}>> \{P_1,P_2,P_3\}\\
+@V{T_j}VV @VV{\bar T_j}V\\
+\langle T_1,T_2\rangle\cdot F @>{\Phi}>> \{P_1,P_2,P_3\}
+\end{CD}
+$$
+
+i.e., the infinite (or large) monoid action factors through a 3-element quotient.
