@@ -1,6 +1,8 @@
 # **Coin Games**  
 Coin Impartial Games on a 1D Track
 
+The number of coins ($n$ coins) is usually 4. Any amount can be used.
+
 This formalizes four related impartial combinatorial games played with an **arbitrary number $n \geq 1$ of coins** on a **one-dimensional board**:
 
 - **Coins**
