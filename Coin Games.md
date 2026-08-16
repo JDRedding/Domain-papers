@@ -145,23 +145,23 @@ The player who cannot move loses.
 
 - **Board:** A linear track of squares labeled
 
-  $$
-  0, 1, 2, \dots, M
-  $$
+$$
+0, 1, 2, \dots, M
+$$
 
   for some fixed integer $M \ge n-1$.
 - **Pieces:** $n$ indistinguishable **coins**, each occupying a distinct square.
 - **Position notation:** A position is a sorted tuple
 
-  $$
-  (a_1, a_2, \dots, a_n)
-  $$
+$$
+(a_1, a_2, \dots, a_n)
+$$
 
   with
 
-  $$
-  0 \le a_1 < a_2 < \dots < a_n \le M.
-  $$
+$$
+0 \le a_1 < a_2 < \dots < a_n \le M.
+$$
 
 ### 1.2 Play convention
 
@@ -206,9 +206,9 @@ These are the **packed configurations**: coins occupy the lowest available squar
 - **Impartial graph game:** Coins-$n$ is a finite impartial game on the state graph of $n$-coin configurations.
 - **SG computation:** For fixed $M$, the SG value
 
-  $$
-  G(a_1,\dots,a_n)
-  $$
+$$
+G(a_1,\dots,a_n)
+$$
 
   can be computed by **dynamic programming**:
   - For each position, list all legal moves.
@@ -256,9 +256,9 @@ Let the coins be at $a_1 < a_2 < \dots < a_n$. Define **gaps**:
 
 - **Internal gaps:**
 
-  $$
-  g_i = a_{i+1} - a_i - 1 \quad \text{for } i = 1,\dots,n-1.
-  $$
+$$
+g_i = a_{i+1} - a_i - 1 \quad \text{for } i = 1,\dots,n-1.
+$$
 
 Intuitively, $g_i$ is the number of empty squares between consecutive coins (or between 0 and the first coin).
 
@@ -269,9 +269,9 @@ Classical analysis of sliding-coin games shows:
 - Each gap $g_i$ behaves like a **Nim heap of size $g_i$**.
 - The SG value of the position is:
 
-  $$
-  G = g_0 \oplus g_1 \oplus \dots \oplus g_{n-1},
-  $$
+$$
+G = g_0 \oplus g_1 \oplus \dots \oplus g_{n-1},
+$$
 
   where $\oplus$ denotes **nim-sum** (bitwise XOR).
 
@@ -279,9 +279,9 @@ Thus:
 
 - **P-positions:** Those with
 
-  $$
-  g_0 \oplus g_1 \oplus \dots \oplus g_{n-1} = 0.
-  $$
+$$
+g_0 \oplus g_1 \oplus \dots \oplus g_{n-1} = 0.
+$$
 
 - **N-positions:** All others.
 
@@ -411,9 +411,9 @@ Interpretation:
   - The SG value of a disjunctive sum of positions is the **nim-sum** of their SG values.
 - For fixed $M$, the number of $n$-coin positions is:
 
-  $$
-  \binom{M+1}{n},
-  $$
+$$
+\binom{M+1}{n},
+$$
   
   which is tractable for moderate $n$ and $M$.
 
