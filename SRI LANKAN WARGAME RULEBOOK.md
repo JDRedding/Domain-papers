@@ -6,6 +6,23 @@
 
 This note is a concise rulebook for a family of Sri Lankan Alquerque-style war-games (Sixteen Soldiers, Peralikatuma, Kotu Ellima). It defines board geometry, piece counts, movement and (short‑leap) capture rules, win conditions, strategic guidance, optional local variants, and an appendix comparing related Indian triangular war-games.
 
+- Short-leap (Alquerque/draughts-style) captures along marked lines.
+- Captures **optional** (not mandatory) — the main contrast with the Indian games.
+- Movement to any adjacent vacant point along a line (orthogonal or diagonal where marked).
+- One piece moved per turn; move **or** capture, not both.
+- Win by capturing all opposing pieces, immobilizing the opponent, or resignation.
+- Boards built on the classic 5×5 Alquerque grid (25 points) plus triangular wings.
+
+| Game              | Wings | Points | Soldiers per side |
+|-------------------|-------|--------|-------------------|
+| Sixteen Soldiers  | 2     | 31     | 16                |
+| Peralikatuma      | 4     | 37     | 23                |
+| Kotu Ellima       | 4     | 37     | 24                |
+
+Mandatory captures (including required multi-captures), forced centre opening in most cases, majority-of-pieces win when no further captures possible, and progressive board expansions from the 19-point Lau Kata Kati hourglass.
+
+The strategic notes (wing control, optional-capture tactics, central-grid dominance, density effects) and the optional traditional variants (Royal Soldier, Wing Lock, Double Chop) are useful additions.
+
 ## 1. Overview
 
 Sri Lankan war-games belonging to the Alquerque family are two-player abstract strategy games characterised by:
