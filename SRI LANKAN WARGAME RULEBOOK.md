@@ -78,6 +78,21 @@ $$
 
 and the three points are collinear on a marked board line (i.e., the geometric embedding admits a straight segment through them). Write $\mathcal{L}_2$ for the set of all such ordered triples.
 
+### 8. Graph-theoretic
+
+$$
+\begin{align*}
+\text{Board} &\quad G=(V,E),\\
+\text{Position} &\quad P=(S_1,S_2,t),\quad S_1\cap S_2=\emptyset,\\
+\text{Move} &\quad p\to q\quad\text{with }\{p,q\}\in E,\; q\text{ vacant},\\
+\text{Capture} &\quad (x,y,z)\in\mathcal{L}_2\quad\text{with }x\in S_t,\; y\in S_{3-t},\; z\text{ vacant}.
+\end{align*}
+$$
+
+All rules of the three Sri Lankan games are completely determined by the choice of the concrete graph $G$ (31- or 37-vertex) and the initial partition $(S_1,S_2)$. The Indian triangular family differs only in that $C(P)$ is **mandatory** whenever non-empty, and multi-captures must be continued to exhaustion.
+
+This notation is sufficient for rigorous analysis, computer implementation, or combinatorial-game-theoretic study.
+
 ### 2.1 Base Alquerque Grid (5 × 5)
 
 ```
