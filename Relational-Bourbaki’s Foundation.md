@@ -12,6 +12,8 @@ This document maps Bourbaki set-theory notation and ideas into a relational/dyna
     
 The mapping provided reinterprets Nicolas Bourbaki’s extensional, axiomatic set theory into an operational, dynamic-graph semantics. By elevating static sets into regions (node-sets enriched with internal relations, external interactions, and continuous flux dynamics), classical set-theoretic constructs acquire a physics-like substrate without losing their rigorous algebraic properties. Reinterpreting Bourbaki set-theoretic concepts as a relational/dynamic-graph semantics by treating sets as regions (node-sets) equipped with three aspects: Structure (nodes & internal relations), Interaction (edges between regions/nodes), and Dynamics (flux, moderation). By mapping Bourbaki's purely extensional universe onto dynamic regions, axiomatic set theory is seamlessly converted into a computational substrate suitable for dynamic systems, relational physics, and structural graph modeling.
 
+The document preserves Bourbaki’s extensional algebraic structure while adding relational/dynamic interpretations (flux, edge-types, dynamics), making algebraic constructions into concrete graph/region operations.
+
 ## Bourbaki-to-Relational Grammar
 ```
           [ Bourbaki Concrete Base ]
@@ -50,7 +52,6 @@ The mapping provided reinterprets Nicolas Bourbaki’s extensional, axiomatic se
 - Partial, total, well-orders are relations with the usual axioms, recast as interaction constraints plus minimal-element conditions for well-orders.
 - τ-operator: Bourbaki's τ is a choice/selection operator — here a selector that picks some element satisfying a predicate (undefined if none exist).
 - Species of structures: A species is a template (numbers of underlying sets, relations, operations, axioms). Concrete Bourbaki structures map to relational species (templates instantiated by regions and interaction patterns).
-- Emphasis: The document preserves Bourbaki’s extensional algebraic structure while adding relational/dynamic interpretations (flux, edge-types, dynamics), making algebraic constructions into concrete graph/region operations.
 
 ## Notation 
 
