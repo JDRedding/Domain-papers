@@ -1,149 +1,155 @@
 
-Class 200: Religion
+# Class 300–399 Social Sciences
 
-This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries). Headings use the conventional summary forms.
+---
 
-200 Religion
+## **300–399 Social Sciences**
+
+### **300 Sociology, Anthropology & Social Sciences**
 | Number | Heading |
 |--------|---------|
-| 200 | Religion |
-| 201 | Religious mythology, social theology |
-| 202 | Doctrines |
-| 203 | Public worship & other practices |
-| 204 | Religious experience, life & practice |
-| 205 | Religious ethics |
-| 206 | Leaders & organization |
-| 207 | Missions & religious education |
-| 208 | Sources |
-| 209 | Sects & reform movements |
+| 300 | Social sciences, sociology & anthropology |
+| 301 | Sociology & anthropology |
+| 302 | Social interaction |
+| 303 | Social processes |
+| 304 | Factors affecting social behavior |
+| 305 | Social groups |
+| 306 | Culture & institutions |
+| 307 | Communities |
+| 308 | [Unassigned] |
+| 309 | [Unassigned] |
 
-210 Philosophy & theory of religion
+### **310 Statistics**
 | Number | Heading |
 |--------|---------|
-| 210 | Philosophy & theory of religion |
-| 211 | Concepts of God |
-| 212 | Existence, knowability & attributes of God |
-| 213 | Creation |
-| 214 | Theodicy |
-| 215 | Science & religion |
-| 216 | [Unassigned] |
-| 217 | [Unassigned] |
-| 218 | Humankind |
-| 219 | [Unassigned] |
+| 310 | Statistics |
+| 311 | [Unassigned] |
+| 312 | Population statistics |
+| 313 | Population statistics |
+| 314 | Population statistics |
+| 315 | Population statistics (Asia) |
+| 316 | Population statistics (Europe) |
+| 317 | Population statistics (North America) |
+| 318 | Population statistics (South America) |
+| 319 | Population statistics (Other areas) |
 
-220 The Bible
+### **320 Political Science**
 | Number | Heading |
 |--------|---------|
-| 220 | Bible |
-| 221 | Old Testament (Tanakh) |
-| 222 | Historical books of Old Testament |
-| 223 | Poetic books of Old Testament |
-| 224 | Prophetic books of Old Testament |
-| 225 | New Testament |
-| 226 | Gospels & Acts |
-| 227 | Epistles |
-| 228 | Revelation (Apocalypse) |
-| 229 | Apocrypha & pseudepigrapha |
+| 320 | Political science (General) |
+| 321 | Systems of governments & states |
+| 322 | Relation of state to organized groups |
+| 323 | Civil & political rights |
+| 324 | The political process |
+| 325 | International migration & colonization |
+| 326 | Slavery & emancipation |
+| 327 | International relations |
+| 328 | Legislative process |
+| 329 | [Unassigned] |
 
-230 Christianity & Christian theology
+### **330 Economics**
 | Number | Heading |
 |--------|---------|
-| 230 | Christianity & Christian theology |
-| 231 | God |
-| 232 | Jesus Christ & his family |
-| 233 | Humankind |
-| 234 | Salvation & grace |
-| 235 | Spiritual beings |
-| 236 | Eschatology |
-| 237 | [Unassigned] |
-| 238 | Creeds & catechisms |
-| 239 | Apologetics & polemics |
+| 330 | Economics (General) |
+| 331 | Labor economics |
+| 332 | Financial economics |
+| 333 | Land, energy & natural resources |
+| 334 | Cooperatives |
+| 335 | Socialism & related systems |
+| 336 | Public finance |
+| 337 | International economics |
+| 338 | Production |
+| 339 | Macroeconomics |
 
-240 Christian practice & observance (Christian moral & devotional theology)
+### **340 Law**
 | Number | Heading |
 |--------|---------|
-| 240 | Christian moral & devotional theology |
-| 241 | Christian ethics |
-| 242 | Devotional literature |
-| 243 | Evangelistic writings for individuals |
-| 244 | [Unassigned] |
-| 245 | [Unassigned] |
-| 246 | Use of art in Christianity |
-| 247 | Church furnishings & articles |
-| 248 | Christian experience, practice, life |
-| 249 | Christian observances in family life |
+| 340 | Law (General) |
+| 341 | International law |
+| 342 | Constitutional & administrative law |
+| 343 | Military, tax, trade, industrial law |
+| 344 | Labor, social, education, cultural law |
+| 345 | Criminal law |
+| 346 | Private law |
+| 347 | Civil procedure & courts |
+| 348 | Law (Collected texts) |
+| 349 | Law of specific jurisdictions & areas |
 
-250 Christian pastoral practice & religious orders
+### **350 Public Administration & Military Science**
 | Number | Heading |
 |--------|---------|
-| 250 | Christian pastoral practice & religious orders |
-| 251 | Preaching (Homiletics) |
-| 252 | Texts of sermons |
-| 253 | Pastoral office (Pastoral theology) |
-| 254 | Parish administration |
-| 255 | Religious congregations & orders |
-| 256 | [Unassigned] |
-| 257 | [Unassigned] |
-| 258 | [Unassigned] |
-| 259 | Pastoral care of families & persons |
+| 350 | Public administration & military science |
+| 351 | Central government |
+| 352 | Local government |
+| 353 | Specific fields of administration |
+| 354 | Administration of economy |
+| 355 | Military science |
+| 356 | Military organization & discipline |
+| 357 | Military weapons |
+| 358 | Air & other specialized military services |
+| 359 | Naval forces |
 
-260 Christian organization, social work & worship
+### **360 Social Problems & Services**
 | Number | Heading |
 |--------|---------|
-| 260 | Christian organization, social work & worship |
-| 261 | Social theology |
-| 262 | Ecclesiology |
-| 263 | Days, times, places of observance |
-| 264 | Public worship |
-| 265 | Sacraments, other rites & acts |
-| 266 | Missions |
-| 267 | Associations for religious work |
-| 268 | Religious education |
-| 269 | Spiritual renewal |
+| 360 | Social problems & services |
+| 361 | General social welfare |
+| 362 | Social welfare problems & services |
+| 363 | Other social problems & services |
+| 364 | Criminology |
+| 365 | Penal & related institutions |
+| 366 | Associations |
+| 367 | General clubs & associations |
+| 368 | Insurance |
+| 369 | Miscellaneous associations |
 
-270 History of Christianity
+### **370 Education**
 | Number | Heading |
 |--------|---------|
-| 270 | History of Christianity |
-| 271 | Religious orders in church history |
-| 272 | Persecutions in church history |
-| 273 | Doctrinal controversies & heresies |
-| 274 | History of Christianity in Europe |
-| 275 | History of Christianity in Asia |
-| 276 | History of Christianity in Africa |
-| 277 | History of Christianity in North America |
-| 278 | History of Christianity in South America |
-| 279 | History of Christianity in other areas |
+| 370 | Education (General) |
+| 371 | Schools & their activities |
+| 372 | Elementary education |
+| 373 | Secondary education |
+| 374 | Adult education |
+| 375 | Curriculum |
+| 376 | Education of women |
+| 377 | Ethical education |
+| 378 | Higher education |
+| 379 | Public policy issues in education |
 
-280 Christian denominations & sects
+### **380 Commerce, Communications & Transportation**
 | Number | Heading |
 |--------|---------|
-| 280 | Christian denominations & sects |
-| 281 | Early church & Eastern churches |
-| 282 | Roman Catholic Church |
-| 283 | Anglican churches |
-| 284 | Protestants of Continental origin |
-| 285 | Presbyterian, Reformed, Congregational |
-| 286 | Baptist, Disciples of Christ, Adventist |
-| 287 | Methodist & related churches |
-| 288 | [Unassigned] |
-| 289 | Other denominations & sects |
+| 380 | Commerce & communications |
+| 381 | Internal commerce (Domestic trade) |
+| 382 | International commerce (Foreign trade) |
+| 383 | Postal communications |
+| 384 | Telecommunication |
+| 385 | Rail transport |
+| 386 | Water transport |
+| 387 | Air & space transport |
+| 388 | Transportation & ground transport |
+| 389 | Metrology & standardization |
 
-290 Other religions
+### **390 Customs, Etiquette & Folklore**
 | Number | Heading |
 |--------|---------|
-| 290 | Other religions |
-| 291 | [Unassigned] |
-| 292 | Classical (Greek & Roman) religion |
-| 293 | Germanic religion |
-| 294 | Religions of Indic origin |
-| 295 | Zoroastrianism |
-| 296 | Judaism |
-| 297 | Islam, Babism & Bahai Faith |
-| 298 | (Optional number) |
-| 299 | Religions not provided for elsewhere |
+| 390 | Customs, etiquette & folklore |
+| 391 | Costumes & personal appearance |
+| 392 | Customs of life cycle & domestic life |
+| 393 | Death customs & practices |
+| 394 | General social customs |
+| 395 | Etiquette & manners |
+| 396 | [Unassigned in DDC 23; see 305.4 for women's topics] |
+| 397 | Folklore & tales |
+| 398 | Folklore & legends |
+| 399 | Customs of other social groups |
 
-Notes  
-The schedule has a well-known strong emphasis on Christianity (especially 220–280). Most non-Christian religions are concentrated in the 290s.  
-An optional chronological/regional arrangement for 220–290 exists in the full schedules/Manual to reduce Christian bias for libraries that prefer it.  
-Further decimal expansions exist in the complete schedules (e.g., detailed subdivisions under 294 for Buddhism/Hinduism, 297 for Islam, specific Christian denominations under 280–289, etc.).
+---
+
+## **Notes**
+- The 300s are broader and more diverse than the 200s (Religion), covering society, politics, economics, law, education, and commerce.
+- **340–349 (Law)** form a substantial section comparable to the emphasis on Christianity in the 200s.
+- **370–379 (Education)** provides detailed coverage of all educational levels.
+- The 390s are notably shorter and focus on social customs rather than formal systems.
+- In DDC 23, **396 was reassigned**; women's topics were relocated to **305.4** within the social groups section.
