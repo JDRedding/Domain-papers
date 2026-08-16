@@ -103,19 +103,19 @@ where $W$ (resp. $B$) is the set of White (resp. Black) pieces. Each piece carri
 Directions are integer vectors $d=(d_x,d_y)\in\mathbb{Z}^2\setminus\{(0,0)\}$.
 
 - Diagonal:
-- 
+  
   $$
   D_{\text{diag}} = \bigl\{(\pm1,\pm1)\bigr\}.
   $$
   
 - Orthogonal:
-- 
+  
   $$
   D_{\text{orth}} = \bigl\{(\pm1,0),(0,\pm1)\bigr\}.
   $$
   
 - Eight directions:
--  
+- 
   $$
   D_8 = D_{\text{diag}}\cup D_{\text{orth}}.
   $$
@@ -132,12 +132,13 @@ $$
 A piece of type $t$ at square $p\in S$ may move in direction set $D_t$ with range $r_t\in\{\text{short},\text{flying}\}$.
 
 - Short move:
-- 
+  
   $$
   \{Move}_{\text{short}}(p,d) = \{p+d\} \quad\text{provided }p+d\in S\text{ is empty}.
   $$
   
 - Flying move:  
+
   $$
   \{Move}_{\text{fly}}(p,d) = \{p+k d \mid k=1,2,\dots,\;p+k d\in S,\;\text{all intermediate squares empty}\}.
   $$
@@ -152,7 +153,7 @@ $$
 A capture jumps over an enemy piece. Let $e$ be the enemy colour.
 
 - Short capture (adjacent jump):
-- 
+  
   $$
   \{Cap}_{\text{short}}(p,d) = 
   \begin{cases}
@@ -162,7 +163,7 @@ A capture jumps over an enemy piece. Let $e$ be the enemy colour.
   $$
 
 - Flying capture (long-range):
-- 
+  
   $$
   \{Cap}_{\text{fly}}(p,d) = 
   \bigl\{p+k d \bigm| 
@@ -209,13 +210,13 @@ Let $\mathcal{C}(P)$ be the set of all legal capturing sequences in position $P$
 
 - Free choice: any $\gamma\in\mathcal{C}(P)$ may be selected.  
 - Maximum pieces:
-- 
+  
   $$
   \mathcal{C}_{\max}(P) = \{\gamma\in\mathcal{C}(P)\mid |\gamma|\text{ is maximal}\}.
   $$
   
 - Value-based (Frisian-style): assign values $v(\text{man})=1$, $v(\text{king})=v_k>1$ (usually $1<v_k<2$); maximise total captured value
-- 
+  
   $$
   V(\gamma)=\sum_{i} v(\text{piece jumped at step }i).
   $$
@@ -234,7 +235,7 @@ $$
 
 ### 8. Terminal conditions
 - Ordinary win:
-- 
+  
   $$
   W_{\text{ord}}(P) = 
   \bigl(W=\emptyset\bigr)\;\lor\;
@@ -242,7 +243,7 @@ $$
   $$
   
 - Misère win:
-- 
+  
   $$
   W_{\text{mis}}(P) = 
   \bigl(W=\emptyset\bigr)\;\lor\;
