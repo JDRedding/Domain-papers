@@ -1,7 +1,7 @@
 # Coin Games
 Coin Impartial Games on a 1D Track
 
-This repository formalizes four related impartial combinatorial games played with **six coins** on a **one‑dimensional board**:
+This repository formalizes four related impartial combinatorial games played with **coins** on a **one‑dimensional board**:
 
 - **Coins**
 - **Sliding**
