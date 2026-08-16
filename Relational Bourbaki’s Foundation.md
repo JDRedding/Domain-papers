@@ -1,3 +1,5 @@
+# Relational Bourbaki’s Foundation 
+
 This document maps Bourbaki set-theory notation and ideas into a relational/dynamic graph semantics — treating sets as regions (node-sets with structure, interaction, and dynamics) and enriching classical extensional operations with edge-based membership and flux/dynamics semantics. 
 
     Bourbaki’s foundation 
