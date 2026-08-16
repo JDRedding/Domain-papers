@@ -74,20 +74,25 @@ Movement, capture, promotion, priority, and terminal conditions are expressed in
 
 ---
 
-## **1. Board and Positions**
+### **1. Board and Positions**
 Let the board be a finite grid  
+
 $$
 B = \{0,1,\dots,N_x-1\} \times \{0,1,\dots,N_y-1\},
 $$
+
 with $N_x = N_y \in \{8,10\}$.
 
 **Dark‑square restriction (most variants):**
+
 $$
 S = \{(x,y)\in B \mid x+y \equiv 1 \pmod{2}\}
 $$
+
 (or $x+y\equiv 0\pmod{2}$, depending on orientation).
 
 **Full‑board (Turkish):**  
+
 $$
 S = B.
 $$
@@ -95,63 +100,73 @@ $$
 Orientation parameter $\omega\in\{\text{standard},\text{NW},\text{NE}\}$ rotates or reflects axes; geometry remains isomorphic.
 
 A position is a pair of disjoint finite sets:
+
 $$
 P = (W,B),\qquad W,B\subset S,\quad W\cap B=\emptyset,
 $$
+
 with each piece carrying a type $t\in\{\text{man},\text{king}\}$.
 
 ---
 
-## **2. Direction Sets**
+### **2. Direction Sets**
 Directions are integer vectors $d=(d_x,d_y)\in\mathbb{Z}^2\setminus\{(0,0)\}$.
 
 **Diagonal:**  
+
 $$
 D_{\text{diag}} = \{(\pm1,\pm1)\}.
 $$
 
 **Orthogonal:**  
+
 $$
 D_{\text{orth}} = \{(\pm1,0),(0,\pm1)\}.
 $$
 
 **Eight directions:**  
+
 $$
 D_8 = D_{\text{diag}} \cup D_{\text{orth}}.
 $$
 
 Forward half‑spaces for colour $c\in\{+1,-1\}$ (White = +1 advancing in +y):
+
 $$
 D_{\text{fwd}}(c) = \{d\in D \mid c\cdot d_y > 0\}.
 $$
 
 ---
 
-## **3. Movement Predicates**
+### **3. Movement Predicates**
 A piece of type $t$ at square $p\in S$ moves in direction set $D_t$ with range $r_t\in\{\text{short},\text{flying}\}$.
 
 **Short move:**  
+
 $$
 \{Move_{\text{short}}(p,d)\} = \{p+d\}\quad\text{if }p+d\in S\text{ is empty}.
 $$
 
 **Flying move:**  
+
 $$
 \{Move_{\text{fly}}(p,d)\} =
 \{p+k d \mid k\ge1,\;p+k d\in S,\;\text{all intermediate squares empty}\}.
 $$
 
 Thus:
+
 $$
 M(p,t) = \bigcup_{d\in D_t} Move_{r_t}(p,d).
 $$
 
 ---
 
-## **4. Capture Predicates**
+### **4. Capture Predicates**
 A capture jumps over an enemy piece of colour $e$.
 
 **Short capture:**  
+
 $$
 Cap_{\text{short}}(p,d)=
 \begin{cases}
@@ -161,6 +176,7 @@ Cap_{\text{short}}(p,d)=
 $$
 
 **Flying capture:**  
+
 $$
 Cap_{\text{fly}}(p,d)=
 \{p+k d \mid \exists\,1\le m<k,\;
@@ -175,22 +191,26 @@ $$
 - $\lambda=\text{final-square-only}$: additional terminal constraints
 
 Single captures:
+
 $$
 C(p,t)=\bigcup_{d\in D_t^{\text{cap}}} Cap_{r_t}(p,d).
 $$
 
 ---
 
-## **5. Multi‑Jump Sequences**
+### **5. Multi‑Jump Sequences**
 A legal capturing sequence is:
+
 $$
 \gamma=(p_0,p_1,\dots,p_\ell),\qquad \ell\ge1,
 $$
+
 with each step a capture and no piece jumped twice (unless variant rules allow).
 
 Let $\Gamma(p,t)$ be all maximal sequences from $p$.
 
 **Promotion (Russian‑style mid‑sequence):**
+
 $$
 Promote(p,t)=
 \begin{cases}
@@ -203,12 +223,13 @@ If promotion occurs at $p_i$, continue with new type $t' = Promote(p_i,t)$.
 
 ---
 
-## **6. Capture Priority**
+### **6. Capture Priority**
 Let $\mathcal{C}(P)$ be all legal capturing sequences.
 
 **Free choice:** any $\gamma\in\mathcal{C}(P)$.
 
 **Maximum pieces:**
+
 $$
 \mathcal{C}_{\max}(P)=\{\gamma\in\mathcal{C}(P)\mid |\gamma|\text{ maximal}\}.
 $$
@@ -216,6 +237,7 @@ $$
 **Value‑based (Frisian):**  
 Assign $v(\text{man})=1$, $v(\text{king})=v_k>1$.  
 Maximise:
+
 $$
 V(\gamma)=\sum_i v(\text{piece jumped at step }i).
 $$
@@ -224,7 +246,8 @@ $$
 
 ---
 
-## **7. Legal Moves**
+### **7. Legal Moves**
+
 $$
 L(P)=
 \begin{cases}
@@ -235,14 +258,17 @@ $$
 
 ---
 
-## **8. Terminal Conditions**
+### **8. Terminal Conditions**
+
 **Ordinary win:**
+
 $$
 W_{\text{ord}}(P)=
 (W=\emptyset)\;\lor\;(L(P)=\emptyset\text{ for side to move}).
 $$
 
 **Misère win:**
+
 $$
 W_{\text{mis}}(P)=
 (W=\emptyset)\;\lor\;(L(P)=\emptyset\text{ for side to move}).
@@ -254,7 +280,7 @@ $$
 
 ---
 
-## **9. Superfamily Instantiation**
+### **9. Superfamily Instantiation**
 | Family | $D_{\text{men}}^{\text{move}}$ | $D_{\text{men}}^{\text{cap}}$ | $r_{\text{king}}$ | $D_{\text{king}}$ |
 |--------|----------------------------------|---------------------------------|---------------------|---------------------|
 | Orthogonal (Turkish) | orth‑fwd+side | orth | flying | orth |
@@ -267,7 +293,7 @@ Other parameters (board size, promotion timing, landing rule $\lambda$, priority
 
 ---
 
-## **Completeness**
+### **Completeness**
 Every legal move, multi‑jump, promotion, priority decision, and terminal condition is expressible via the predicates and equations above.
 
 ---
