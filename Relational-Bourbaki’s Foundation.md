@@ -39,14 +39,14 @@ The document preserves Bourbaki’s extensional algebraic structure while adding
 └──────────────────────────────────────────────┘
 ```
 
-Relational-Bourbaki sits in an intermediate position. It keeps Bourbaki’s concrete structural vocabulary and species idea but makes the relations explicitly operational and dynamic (regions, edges, flux). This moves it closer to the morphism-centric spirit of category theory while remaining grounded in graph-like carriers that are immediately usable for computation and neural message passing. Where pure category theory often stays highly abstract, Relational-Bourbaki prioritizes an executable, flux-aware graph semantics that can serve as a bridge between classical structural foundations and modern geometric/deep learning on graphs.
+Relational-Bourbaki sits in an intermediate third-way position. It keeps Bourbaki’s concrete structural vocabulary and species idea but makes the relations explicitly operational and dynamic (regions, edges, flux). This moves it closer to the morphism-centric spirit of category theory while remaining grounded in graph-like carriers that are immediately usable for computation and neural message passing. Where pure category theory often stays highly abstract, Relational-Bourbaki prioritizes an executable, flux-aware graph semantics that can serve as a bridge between classical structural foundations and modern geometric/deep learning on graphs. The result is a structuralist foundation grounded in concrete or controlled carriers, relations, and species templates. No commitment to the infinite apparatus of category theory or toposes is required or implied.
 
 ### Relations are already objects
 In classical Bourbaki a relation is merely a subset of a product. In relational dynamic geometry, a relation is a full geometric-dynamical entity (carriers, flux rules, closure conditions, transport data). Once the interaction layer of a region is filled by relations rather than bare sets of pairs, the species template can demand that those relations satisfy the axioms of a category (or of a functor, natural transformation, etc.) and the existing flux-compatibility conditions.
 
 ### Transportability is inherited.
 The lasting contribution of Bourbaki is the metamathematical demand that the defining data be transportable under isomorphism. Because dynamic geometry relations already come with their own transport data, any species built from them automatically inherits a robust form of transportability (including flux-preservation). Categories therefore become legitimate instances of relational species instead of foreign objects that break the framework. Categories are simply one more species whose interaction slots are occupied by relations that happen to satisfy composition, units, and the ambient geometric dynamics. Categories remain optional and, in the general case, largely rejected.
-So the Relational-Bourbaki foundation stays firmly on the side of concrete, finite-or-controlled carriers + relations + species templates. No commitment to the infinite categorical machinery is required or implied.
+So the Relational-Bourbaki foundation stays firmly on the side of concrete, finite-or-controlled carriers + relations + species templates. 
 
 ## Core mapping patterns
 - Sets → Regions: a set is a region (nodes + structure + dynamics).
