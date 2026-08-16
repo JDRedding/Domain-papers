@@ -78,7 +78,7 @@ $$
 
 and the three points are collinear on a marked board line (i.e., the geometric embedding admits a straight segment through them). Write $\mathcal{L}_2$ for the set of all such ordered triples.
 
-### 8. Graph-theoretic
+### Graph-theoretics
 
 $$
 \begin{align*}
