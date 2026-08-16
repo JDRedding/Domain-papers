@@ -560,7 +560,19 @@ One step along any line to an adjacent vacant point.
 Dash-guti enlarges the Lau Kata Kati hourglass by adding extra ranks and lines:
 
 ```
-
+o-----o-----o
+ \    |    /
+  o---o---o
+   \  |  /
+    o-o-o
+   / \|/ \
+  o---o---o
+   \ /|\ /
+    o-o-o
+   /  |  \
+  o---o---o
+ /    |    \
+o-----o-----o
 ```
 
 ### Pieces
