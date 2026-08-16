@@ -4,6 +4,8 @@
 
 ---
 
+This note is a concise rulebook for a family of Sri Lankan Alquerque-style war-games (Sixteen Soldiers, Peralikatuma, Kotu Ellima). It defines board geometry, piece counts, movement and (short‑leap) capture rules, win conditions, strategic guidance, optional local variants, and an appendix comparing related Indian triangular war-games.
+
 ## 1. Overview
 
 Sri Lankan war-games belonging to the Alquerque family are two-player abstract strategy games characterised by:
