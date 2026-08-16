@@ -178,12 +178,17 @@ $$
 **Flying capture:**  
 
 $$
-  \{Cap}_{\text{fly}}(p,d) = 
-  \bigl\{p+k d \bigm| 
-  \exists\,1\le m<k,\;
-  p+m d\text{ is the unique enemy on the ray},\;
-  \text{all other squares on the ray empty},\;
-  p+k d\in S\text{ empty}\bigr\}.
+\begin{align*}
+\{Cap}_{\mathrm{fly}}(p,d)
+&=
+\{
+  p+kd
+  |
+  k > m \ge 1,\ 
+  p+md\text{ is the unique enemy on the ray},\ 
+  p+kd\text{ is empty}
+\}.
+\end{align*}
 $$
 
 **Landing rule parameter $\lambda$:**
