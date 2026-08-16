@@ -145,23 +145,19 @@ o---o---o---o---o
 ### 2.3 Peralikatuma / Kotu Ellima Board (Alquerque + 4 Wings)
 
 ```
-    o---o---o
-     \  |  /
-      o-o-o
-       \|/
-o---o---o---o---o
-| \ | / | \ | / |
-o---o---o---o---o
-| / | \ | / | \ |
-o---o---o---o---o
-| \ | / | / | \ |
-o---o---o---o---o
-| / | \ | \ | / |
-o---o---o---o---o
-       /|\
-      o-o-o
-     /  |  \
-    o---o---o
+          o-o-o
+           \|/
+    o---o---o---o---o
+    | \ | / | \ | / |
+o   o---o---o---o---o   o
+| \ | / | \ | / | \ | / | 
+o---o---o---o---o---o---o
+| / | \ | / | / | \ | \ | 
+o   o---o---o---o---o   o
+    | / | \ | \ | / |
+    o---o---o---o---o
+           /|\
+          o-o-o
 ```
 
 Left and right wings attach in the same manner to the east and west sides.
