@@ -317,11 +317,11 @@ Let the coins be at positions $a_1 < a_2 < \dots < a_n$.
 
 The Sprague–Grundy value is given by the Welter function:
 
-$$
-G = a_1 \oplus a_2 \oplus \dots \oplus a_n
-\oplus \bigoplus_{1\le i<j\le n}
-\bigl(2^{\mathrm{ord}_2(a_i-a_j)+1}-1\bigr)
-$$
+```
+G = (a1 XOR a2 XOR ... XOR an)
+    XOR
+    ( ⊕_{i<j} ( 2^(ord2(ai - aj) + 1) - 1 ) )
+```
 
 where:
 
