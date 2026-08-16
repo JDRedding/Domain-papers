@@ -1,8 +1,4 @@
 
-# Class 300–399 Social Sciences
-
----
-
 ## **300–399 Social Sciences**
 
 ### **300 Sociology, Anthropology & Social Sciences**
