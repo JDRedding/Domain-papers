@@ -173,7 +173,7 @@ All four games share this framework; only the move rules differ.
 
 ---
 
-## 2. Coins-$n$ (1-step local left, no jump)
+## 2. Coins - $n$ (1-step local left, no jump)
 
 ### 2.1 Rules
 
