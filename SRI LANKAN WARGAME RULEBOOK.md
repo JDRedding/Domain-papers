@@ -187,6 +187,26 @@ $$
 
 ## 4. Movement Rules
 
+### Movement (non-capturing)
+
+A **legal non-capturing move** by player $t$ is a pair $(p,q)$ satisfying  
+
+$$
+\begin{align*}
+p&\in S_t,\\
+q&\notin S_1\cup S_2,\\
+\{p,q\}&\in E.
+\end{align*}
+$$
+
+The resulting position is  
+
+$$
+P' = \bigl((S_t\setminus\{p\})\cup\{q\},\; S_{3-t},\; 3-t\bigr)
+$$
+
+(with the opponent’s set unchanged).
+
 ### 4.1 Turn Structure
 - Players alternate turns.  
 - Each turn a player moves **one** soldier.  
