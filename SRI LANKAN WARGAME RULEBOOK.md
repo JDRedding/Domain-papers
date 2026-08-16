@@ -158,6 +158,10 @@ A draw may be declared by mutual agreement or when neither player can force prog
 
 ## 7. Strategic Principles
 
+Strategy guidance: Emphasis on wing control (flanks/ambush), central 5×5 grid dominance (high mobility), using optional-capture rules tactically (baiting, stalling), and dealing with high initial density.
+
+Optional local variants: Royal Soldier (last unit gains extra moves), Wing Lock (full wing prevents entry), Double Chop (double capture grants extra move).
+
 ### 7.1 Wing Control
 The triangular wings serve as:
 - Flanking routes  
