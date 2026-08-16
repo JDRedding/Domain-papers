@@ -576,7 +576,19 @@ This appendix covers:
 Two triangles joined at a single apex, forming a 19-point hourglass:
 
 ```
-
+o-----o-----o
+ \    |    /
+  o---o---o
+   \  |  /
+    o-o-o
+     \|/ 
+      o
+     /|\ 
+    o-o-o
+   /  |  \
+  o---o---o
+ /    |    \
+o-----o-----o
 ```
 
 ### Pieces
