@@ -732,7 +732,19 @@ Gol-skuish uses a star-like board with triangular lobes:
 
 ### 8.1 Lau Kata Kati (19-point)
 ```
-
+o-----o-----o
+ \    |    /
+  o---o---o
+   \  |  /
+    o-o-o
+     \|/
+      o
+     /|\
+    o-o-o
+   /  |  \
+  o---o---o
+ /    |    \
+o-----o-----o
 ```
 
 ### 8.2 Dash-guti (expanded)
