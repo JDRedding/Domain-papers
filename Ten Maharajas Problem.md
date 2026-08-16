@@ -17,6 +17,46 @@ Game/puzzle logic, combinatorial optimization
 Approach Techniques : 
 Constraint satisfaction, backtracking, combinatorial enumeration
 
+## Relational Ten Maharajas 
+(10×10 Amazon Independence)
+
+```
+OBJECTS:
+    BOARD = { (r,c) | r,c ∈ {1..10} }
+    STATE = S ⊂ BOARD, |S| = 10
+
+OPERATORS:
+    ATTACK(p,q) =
+        (p ≠ q) ∧ (
+            (p.r = q.r) ∨
+            (p.c = q.c) ∨
+            (|p.r - q.r| = |p.c - q.c|) ∨
+            ((|p.r - q.r|, |p.c - q.c|) ∈ {(1,2),(2,1)})
+        )
+
+SID:
+    S = BOARD structure
+    I = ATTACK relation
+    D = FILTER_NONATTACK(S) = { S | ∀ p,q ∈ S, ATTACK(p,q)=0 }
+
+PED:
+    PED_ATTACK = ATTACK
+
+RDGMFEQ:
+    Relation_MAHARAJA(S) =
+        1 iff (|S|=10) ∧ (∀ p,q ∈ S, ATTACK(p,q)=0)
+        0 otherwise
+
+EVOLUTION:
+    S_{t+1} = Π_NONATTACK(S_t)
+
+SOLUTION:
+    SOL = {(1,2),(2,4),(3,6),(4,8),(5,10),(6,1),(7,3),(8,5),(9,7),(10,9)}
+
+```
+
+---
+
 ### **Definition**
 A *Maharaja* (also called an **Amazon** or **superqueen**) is the fairy‑chess piece whose legal moves are the union of:
 
