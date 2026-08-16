@@ -644,8 +644,10 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-value,
               VALUE_MODEL=king>man but <2 men
 WIN/DRAW:     WIN_COND=capture-all OR block-all
-
+```
+---
 MISÈRE (LOSING)
+```
 ---------------
 Same parameters as chosen base variant,
 except:
