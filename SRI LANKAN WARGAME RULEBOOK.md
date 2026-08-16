@@ -109,13 +109,13 @@ These formulas supply a precise notational framework for the strategic principle
 
 ```
 o---o---o---o---o
-|   |   |   |   |
+| \ | / | \ | / |
 o---o---o---o---o
-|   |   |   |   |
+| / | \ | / | \ |
 o---o---o---o---o
-|   |   |   |   |
+| \ | / | / | \ |
 o---o---o---o---o
-|   |   |   |   |
+| / | \ | \ | / |
 o---o---o---o---o
 ```
 
