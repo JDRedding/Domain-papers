@@ -12,73 +12,74 @@ List spans **92 orders of magnitude**, from  $10^{-35}\,\text{m}$ scale objects 
 
 ---
 
-### Micro scale
+### Micro (≤ ~10⁻³ m / 1 mm)
+**Sub-Planck / pre-geometric / subatomic / nuclear / atomic / molecular / cellular / micro-objects**
 
-**Sub‑Planck / subatomic / nuclear / atomic / molecular / cellular / micro‑objects**
+- **Singularity** — 0  
+- **Quantum Foam** — \(1.6 \times 10^{-35}\) m  
+- **Brane** — ~Planck scale  
+- **Planck Particle** — \(1.15 \times 10^{-34}\) m  
 
-- **Singularity**  
-- **Quantum Foam**  
-- **Brane**  
-- **Planck Particle**  
-- **Neutrino**  
-- **Top Quark**  
-- **Preon**  
-- **Bottom Quark**  
-- **Charm Quark**  
-- **Strange Quark**  
-- **Up Quark**  
-- **Down Quark**  
-- **Electron**  
-- **String**  
-- **Neutron**  
-- **Higgs Boson**  
-- **Proton**  
-- **Uranium Nucleus**  
-- **Helium Atom**  
-- **Dicarbon Molecule**  
+- **Neutrino** — ~1 yoctometer  
+- **Top Quark** — ~100 ym  
+- **Preon** — ~2 zm  
+- **Bottom Quark** — ~30 zm  
+- **Charm Quark** — ~100 zm  
+- **Strange Quark** — ~400 zm  
+- **Up Quark** — ~1 am  
+- **Down Quark** — ~1 am  
+- **Electron** — ~1 am  
+- **String** — ~1 am  
+
+- **Neutron** — ~1 fm  
+- **Higgs Boson** — ~1 fm  
+- **Proton** — ~1.75 fm  
+- **Uranium Nucleus** — ~15 fm  
+
+- **Helium Atom** — ~62 pm  
 - **Oxygen Atom**  
 - **Hydrogen Atom**  
-- **Carbon Atom**  
+- **Carbon Atom** — ~120 pm  
 - **Beryllium Atom**  
-- **Water Molecule**  
+- **Dicarbon Molecule**  
+- **Water Molecule** — ~280 pm  
 - **Lithium Atom**  
 - **Diamond Cell**  
-- **Salt Cell**  
-- **Caesium Atom**  
-- **Buckyball**  
-- **Nucleotide**  
-- **Transistor**  
+- **Salt Cell** — ~560 pm  
+- **Caesium Atom** — ~596 pm  
+
+- **Buckyball** — ~1 nm  
+- **Nucleotide** — ~1.5 nm  
+- **Transistor** — ~7 nm  
 - **Porcine Circovirus**  
-- **Antibody**  
+- **Antibody** — ~15 nm  
 - **Hepatitis B Virus**  
-- **Human Immunodeficiency Virus**  
-- **Megavirus**  
-- **Lysosome**  
-- **Mitochondrion**  
-- **Cell Nucleus**  
-- **Red Blood Cell**  
+- **Human Immunodeficiency Virus (HIV)** — ~90 nm  
+- **Megavirus** — ~440 nm  
+
+- **Lysosome** — ~1 µm  
+- **Mitochondrion** — ~4 µm  
+- **Cell Nucleus** — ~7 µm  
+- **Red Blood Cell** — ~7 µm  
 - **Chloroplast**  
-- **White Blood Cell**  
-- **Grain of Pollen**  
-- **Dust Mite**  
+- **White Blood Cell** — ~10 µm  
+- **Grain of Pollen / Pollen Grain** — ~50 µm  
+- **Dust Mite** — ~275 µm  
 - **Pixel**  
 - **Grain of Sand**  
 - **Grain of Sugar**  
-- **Grain of Salt**
+- **Grain of Salt**  
 
----
+### Meso (~10⁻³ m to ~10⁷ m / 1 mm to ~10,000 km)
+**Organisms, objects, structures, terrain, small celestial bodies**
 
-### Meso scale
-
-**Organisms, objects, structures, terrain, small celestial bodies (≤10,000 km)**
-
-- **Flea**  
+- **Flea** — ~1.5 mm  
 - **Sesame Seed**  
-- **Ant**  
+- **Ant** — ~5 mm  
 - **Grain of Rice**  
 - **Sunflower Seed**  
 - **Coffee Bean**  
-- **Bee**  
+- **Bee** — ~1.2 cm  
 - **Golf Ball**  
 - **Rubik's Cube**  
 - **Apple**  
@@ -86,245 +87,109 @@ List spans **92 orders of magnitude**, from  $10^{-35}\,\text{m}$ scale objects 
 - **CD**  
 - **Pen**  
 - **Banana**  
-- **Cat**  
+- **Cat** — ~46 cm  
 - **Beach Ball**  
 - **2008 TS26**  
 - **Rapier**  
 - **Rafflesia**  
 - **Pizote**  
-- **Human**  
+- **Human** — ~1.69 m  
 - **Sunflower**  
-- **Elephant**  
-- **Giraffe**  
+- **Elephant** — ~5 m  
+- **Giraffe** — ~5.2 m  
 - **Giant Earthworm**  
 - **Tennis Court**  
 - **Oak Tree**  
-- **Blue Whale**  
-- **Train**  
-- **Boeing 747**  
-- **Redwood Tree**  
+- **Blue Whale** — ~33 m  
+- **Train** — ~50 m  
+- **Boeing 747** — ~70 m  
+- **Redwood Tree** — ~100 m  
 - **Apophis**  
-- **Burj Khalifa**  
-- **Cruithne**  
+- **Burj Khalifa** — ~828 m  
+- **Cruithne** — ~5 km  
 - **PSR J0348+0432 A**  
-- **Manhattan**  
+- **Manhattan** — ~21 km  
 - **Olympus Mons**  
 - **Ganymed**  
-- **Ceres**  
+- **Ceres** — ~975 km  
 - **Makemake**  
 - **Haumea**  
 - **Eris**  
-- **Pluto**  
+- **Pluto** — ~2374 km  
 - **Mercury**  
 - **Ganymede**  
 - **Mars**  
 - **Venus**  
-- **Earth**
+- **Earth** — ~12,756 km  
 
----
-
-### Macro scale
-
-**Planets (large), stars, nebulae, galaxies, clusters, voids, universe, multiverse**
+### Macro (> ~10⁷ m)
+**Large planets, stars, nebulae, galaxies, clusters, voids, universe, multiverse**
 
 - **Neptune**  
 - **Uranus**  
 - **EBLM J0555-57Ab**  
 - **Saturn**  
-- **Jupiter**  
+- **Jupiter** — ~142,985 km  
 - **TRAPPIST-1**  
 - **GQ Lupi b**  
-- **The Sun**  
+- **The Sun** — ~1.39 Gm  
 - **Algol B**  
 - **Sagittarius A\***  
 - **Aldebaran**  
-- **Rigel**  
+- **Rigel** — ~110 Gm  
 - **Deneb**  
 - **Antares A**  
-- **Betelguese**  
+- **Betelgeuse** — ~1.3 Tm  
 - **VV Cephei A**  
 - **Mu Cephei**  
 - **VY Canis Majoris**  
 - **HR 5171 A**  
-- **UY Scuti**  
-- **Quasi-Star**  
+- **UY Scuti** — ~2.3 Tm  
+- **Quasi-Star** — ~10 Tm  
 - **Kuiper Belt**  
-- **TON 618**  
-- **Stingray Nebula**  
+- **TON 618** — ~200 Tm  
+
+- **Stingray Nebula** — ~1.5 Pm  
 - **Spirograph Nebula**  
 - **Cat's Eye Nebula**  
 - **Homunculus Nebula**  
 - **Boomerang Nebula**  
 - **Ant Nebula**  
 - **Ring Nebula**  
-- **Helix Nebula**  
-- **Omega Centauri**  
+- **Helix Nebula** — ~5.74 ly  
+- **Omega Centauri** — ~172 ly  
 - **Segue 2**  
-- **Tarantula Nebula**  
+- **Tarantula Nebula** — ~1862 ly  
 - **GN-z11**  
 - **Messier 32**  
 - **Small Magellanic Cloud**  
 - **Large Magellanic Cloud**  
-- **Sombrero Galaxy**  
+- **Sombrero Galaxy** — ~49k ly  
 - **Black Eye Galaxy**  
 - **Triangulum Galaxy**  
 - **Whirlpool Galaxy**  
 - **Pinwheel Galaxy**  
-- **Milky Way Galaxy**  
-- **Andromeda Galaxy**  
-- **Tadpole Galaxy**  
+- **Milky Way Galaxy** — ~200k ly  
+- **Andromeda Galaxy** — ~220k ly  
+- **Tadpole Galaxy** — ~280k ly  
 - **Abell 2029**  
-- **Local Group**  
-- **Virgo Cluster**  
+
+- **Local Group** — ~10M ly  
+- **Virgo Cluster** — ~14M ly  
 - **Local Void**  
-- **Boötes Void**  
-- **Shapley Supercluster**  
-- **Laniakea Supercluster**  
+- **Boötes Void** — ~330M ly  
+- **Shapley Supercluster** — ~400M ly  
+- **Laniakea Supercluster** — ~500M ly  
 - **Eridanus Supervoid**  
 - **CfA2 Great Wall**  
 - **Pisces-Cetus Supercluster Complex**  
 - **Giant Void**  
-- **Sloan Great Wall**  
+- **Sloan Great Wall** — ~1.4B ly  
 - **KBC Void**  
-- **Huge-LQG**  
-- **Giant GRB Ring**  
-- **Hercules-Corona Borealis Great Wall**  
-- **Observable Universe**  
-- **Universe**  
-- **Multiverse**
+- **Huge-LQG** — ~4B ly  
+- **Giant GRB Ring** — ~7.5B ly  
+- **Hercules-Corona Borealis Great Wall** — ~16.3B ly  
 
----
-
-### **1. Planck & Pre‑Geometric Regime (≤10⁻³⁵ m)**
-- **Singularity** — 0  
-- **Quantum Foam** — \(1.6\times10^{-35}\,\text{m}\)  
-- **Brane** — same scale  
-- **Planck Particle** — \(1.15\times10^{-34}\,\text{m}\)
-
----
-
-### **2. Sub‑Quark Regime (10⁻³⁵–10⁻²¹ m)**
-- **Neutrino** — 1 yoctometer  
-- **Top Quark** — 100 ym  
-- **Preon** — 2 zm  
-- **Bottom Quark** — 30 zm  
-- **Charm Quark** — 100 zm  
-- **Strange Quark** — 400 zm  
-- **Up Quark** — 1 am  
-- **Down Quark** — 1 am  
-- **Electron** — 1 am  
-- **String** — 1 am
-
----
-
-### **3. Nuclear Regime (10⁻¹⁵–10⁻¹² m)**
-- **Neutron** — 1 fm  
-- **Higgs Boson** — 1 fm  
-- **Proton** — 1.75 fm  
-- **Uranium Nucleus** — 15 fm
-
----
-
-### **4. Atomic Regime (10⁻¹²–10⁻⁹ m)**
-- **Helium Atom** — 62 pm  
-- **Carbon Atom** — 120 pm  
-- **Water Molecule** — 280 pm  
-- **Salt Cell** — 560 pm  
-- **Caesium Atom** — 596 pm
-
----
-
-### **5. Molecular / Nano Regime (10⁻⁹–10⁻⁶ m)**
-- **Buckyball** — 1 nm  
-- **Nucleotide** — 1.5 nm  
-- **Transistor** — 7 nm  
-- **Antibody** — 15 nm  
-- **HIV** — 90 nm  
-- **Megavirus** — 440 nm
-
----
-
-### **6. Cellular Regime (10⁻⁶–10⁻³ m)**
-- **Lysosome** — 1 µm  
-- **Mitochondrion** — 4 µm  
-- **Cell Nucleus** — 7 µm  
-- **Red Blood Cell** — 7 µm  
-- **White Blood Cell** — 10 µm  
-- **Pollen Grain** — 50 µm  
-- **Dust Mite** — 275 µm
-
----
-
-### **7. Macro‑Biological Regime (mm–m)**
-- **Flea** — 1.5 mm  
-- **Ant** — 5 mm  
-- **Bee** — 1.2 cm  
-- **Cat** — 46 cm  
-- **Human** — 1.69 m  
-- **Elephant** — 5 m  
-- **Giraffe** — 5.2 m  
-- **Blue Whale** — 33 m
-
----
-
-### **8. Terrestrial Objects (m–km)**
-- **Train** — 50 m  
-- **Boeing 747** — 70 m  
-- **Redwood Tree** — 100 m  
-- **Burj Khalifa** — 828 m  
-- **Cruithne** — 5 km  
-- **Manhattan** — 21 km
-
----
-
-### **9. Planetary Regime (10³–10⁵ km)**
-- **Ceres** — 975 km  
-- **Pluto** — 2374 km  
-- **Earth** — 12,756 km  
-- **Jupiter** — 142,985 km  
-- **The Sun** — 1.39 Gm
-
----
-
-### **10. Stellar Regime (10⁶–10⁹ km)**
-- **Rigel** — 110 Gm  
-- **Betelgeuse** — 1.3 Tm  
-- **UY Scuti** — 2.3 Tm  
-- **Quasi‑Star** — 10 Tm  
-- **TON 618** — 200 Tm
-
----
-
-### **11. Nebular / Cluster Regime (10¹⁵–10¹⁸ m)**
-- **Stingray Nebula** — 1.5 Pm  
-- **Helix Nebula** — 5.74 ly  
-- **Omega Centauri** — 172 ly  
-- **Tarantula Nebula** — 1862 ly
-
----
-
-### **12. Galactic Regime (10⁴–10⁶ ly)**
-- **Sombrero Galaxy** — 49k ly  
-- **Milky Way** — 200k ly  
-- **Andromeda** — 220k ly  
-- **Tadpole Galaxy** — 280k ly
-
----
-
-### **13. Supercluster / Void Regime (10⁶–10⁹ ly)**
-- **Local Group** — 10M ly  
-- **Virgo Cluster** — 14M ly  
-- **Boötes Void** — 330M ly  
-- **Shapley Supercluster** — 400M ly  
-- **Laniakea** — 500M ly  
-- **Sloan Great Wall** — 1.4B ly  
-- **Huge‑LQG** — 4B ly  
-- **GRB Ring** — 7.5B ly  
-- **Hercules–Corona Borealis Great Wall** — 16.3B ly
-
----
-
-### **14. Cosmological Regime (10¹⁰–10¹³ ly)**
-- **Observable Universe** — 93.7B ly  
-- **Universe** — 23.25T ly  
-- **Multiverse** — 8 quadrillion ly
+- **Observable Universe** — ~93.7B ly  
+- **Universe** — ~23.25T ly  
+- **Multiverse** — ~8 quadrillion ly  
