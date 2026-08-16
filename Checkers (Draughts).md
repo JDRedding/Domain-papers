@@ -543,6 +543,14 @@ These modify the *objective* or *initial deployment* rather than core movement g
 
 ---
 # UNIFIED PARAMETRIC DRAUGHTS ENGINE
+
+USAGE
+
+1. Choose parameter values for BOARD, MEN, KING, PROMOTION,
+   CAPTURE PRIORITY, WIN/DRAW.
+2. The resulting tuple defines a complete draughts variant.
+3. All 19 listed variants are special cases of this engine.
+
 ```
 PARAMETER GROUPS
 ----------------
@@ -582,9 +590,17 @@ PARAMETER GROUPS
 - DRAW_RULES:  {repetition, no-progress, agreed}
 ```
 ---
-VARIANT ENCODINGS (EXAMPLES)
+## MISÈRE (LOSING)
+```
+---------------
+Same parameters as chosen base variant,
+except:
+- WIN_COND=misere (you win by losing all pieces or having no moves).
+```
+---
+## VARIANT ENCODINGS (EXAMPLES)
 
-AMERICAN / ENGLISH CHECKERS
+### AMERICAN / ENGLISH CHECKERS
 ```
 ---------------------------
 BOARD:        SIZE=8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
@@ -597,7 +613,7 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move,
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=none/free
 WIN/DRAW:     WIN_COND=capture-all OR block-all
 ```
-INTERNATIONAL 10x10
+### INTERNATIONAL 10x10
 ```
 -------------------
 BOARD:        SIZE=10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
@@ -610,7 +626,7 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move,
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-pieces
 WIN/DRAW:     WIN_COND=capture-all OR block-all
 ```
-RUSSIAN (SHASHKI)
+### RUSSIAN (SHASHKI)
 ```
 -----------------
 BOARD:        SIZE=8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
@@ -623,7 +639,7 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=mid-sequence,
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=none/free
 WIN/DRAW:     WIN_COND=capture-all OR block-all
 ```
-TURKISH (DAMA)
+### TURKISH (DAMA)
 ```
 --------------
 BOARD:        SIZE=8x8, SQUARES=all, START_ROWS=2, MEN_COUNT=16
@@ -635,7 +651,7 @@ PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move
 CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-pieces
 WIN/DRAW:     WIN_COND=capture-all OR block-all
 ```
-FRISIAN 10x10
+### FRISIAN 10x10
 ```
 -------------
 BOARD:        SIZE=10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
@@ -648,22 +664,4 @@ CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-value,
               VALUE_MODEL=king>man but <2 men
 WIN/DRAW:     WIN_COND=capture-all OR block-all
 ```
----
-MISÈRE (LOSING)
-```
----------------
-Same parameters as chosen base variant,
-except:
-- WIN_COND=misere (you win by losing all pieces or having no moves).
-```
----
-```
-USAGE
-============================================================
-1. Choose parameter values for BOARD, MEN, KING, PROMOTION,
-   CAPTURE PRIORITY, WIN/DRAW.
-2. The resulting tuple defines a complete draughts variant.
-3. All 19 listed variants are special cases of this engine.
-============================================================
-```
----
+
