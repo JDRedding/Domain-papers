@@ -551,43 +551,43 @@ These modify the *objective* or *initial deployment* rather than core movement g
 2. The resulting tuple defines a complete draughts variant.
 3. All 19 listed variants are special cases of this engine.
 
-```
 PARAMETER GROUPS
+```
 ----------------
 
 [BOARD]
-- SIZE:        {8x8, 10x10}
-- SQUARES:     {dark-only, all}
-- START_ROWS:  {2, 3}
-- MEN_COUNT:   {12, 15, 16, 20}
-- ORIENTATION: {standard, NW-diagonal, NE-diagonal}
+- SIZE:           {8x8, 10x10}
+- SQUARES:        {dark-only, all}
+- START_ROWS:     {2, 3}
+- MEN_COUNT:      {12, 15, 16, 20}
+- ORIENTATION:    {standard, NW-diagonal, NE-diagonal}
 
 [MEN MOVEMENT]
-- MOVE_DIR:    {diag-forward, orth-forward, orth-forward+side}
-- MOVE_RANGE:  {short}   ; men always 1 square
-- CAPTURE_DIR: {diag-forward, diag-any, orth-any, 8-dir}
-- CAPTURE_RANGE:{short}  ; men always jump 1 enemy
+- MOVE_DIR:       {diag-forward, orth-forward, orth-forward+side}
+- MOVE_RANGE:     {short}   ; men always 1 square
+- CAPTURE_DIR:    {diag-forward, diag-any, orth-any, 8-dir}
+- CAPTURE_RANGE:  {short}  ; men always jump 1 enemy
 
 [KING MOVEMENT]
-- MOVE_DIR:    {diag-any, orth-any, 8-dir}
-- MOVE_RANGE:  {short, flying}
-- CAPTURE_DIR: {diag-any, orth-any, 8-dir}
-- CAPTURE_RANGE:{short, flying}
-- LAND_RULE:   {free-beyond, behind-captured, final-square-only}
+- MOVE_DIR:       {diag-any, orth-any, 8-dir}
+- MOVE_RANGE:     {short, flying}
+- CAPTURE_DIR:    {diag-any, orth-any, 8-dir}
+- CAPTURE_RANGE:  {short, flying}
+- LAND_RULE:      {free-beyond, behind-captured, final-square-only}
 
 [PROMOTION]
-- PROMOTE_RANK:{last-rank}
-- PROMOTE_TIME:{end-of-move, mid-sequence}
-- PROMOTE_CONT:{continue-as-king, stop-on-promotion}
+- PROMOTE_RANK:   {last-rank}
+- PROMOTE_TIME:   {end-of-move, mid-sequence}
+- PROMOTE_CONT:   {continue-as-king, stop-on-promotion}
 
 [CAPTURE PRIORITY]
-- CAPTURE_REQ: {mandatory, optional}
-- PRIORITY:    {none/free, max-pieces, max-value, strict-hierarchy}
-- VALUE_MODEL: {man=1, king>man, custom}
+- CAPTURE_REQ:    {mandatory, optional}
+- PRIORITY:       {none/free, max-pieces, max-value, strict-hierarchy}
+- VALUE_MODEL:    {man=1, king>man, custom}
 
 [WIN / DRAW]
-- WIN_COND:    {capture-all, block-all, misere}
-- DRAW_RULES:  {repetition, no-progress, agreed}
+- WIN_COND:       {capture-all, block-all, misere}
+- DRAW_RULES:     {repetition, no-progress, agreed}
 ```
 ---
 ### MISÈRE (LOSING)
@@ -595,7 +595,7 @@ PARAMETER GROUPS
 ---------------
 Same parameters as chosen base variant,
 except:
-- WIN_COND=misere (you win by losing all pieces or having no moves).
+- WIN_COND = misere (you win by losing all pieces or having no moves).
 ```
 ---
 ## VARIANT ENCODINGS (EXAMPLES)
@@ -603,65 +603,65 @@ except:
 ### AMERICAN / ENGLISH CHECKERS
 ```
 ---------------------------
-BOARD:        SIZE=8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
-MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=diag-forward
-KING MOVE:    MOVE_DIR=diag-any, MOVE_RANGE=short,
-              CAPTURE_DIR=diag-any, CAPTURE_RANGE=short,
-              LAND_RULE=behind-captured (effectively 1 square)
-PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move,
-              PROMOTE_CONT=continue-as-king (next turn)
-CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=none/free
-WIN/DRAW:     WIN_COND=capture-all OR block-all
+BOARD:        SIZE= 8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
+MEN MOVE:     MOVE_DIR= diag-forward, CAPTURE_DIR=diag-forward
+KING MOVE:    MOVE_DIR= diag-any, MOVE_RANGE=short,
+              CAPTURE_DIR= diag-any, CAPTURE_RANGE=short,
+              LAND_RULE= behind-captured (effectively 1 square)
+PROMOTION:    PROMOTE_RANK= last-rank, PROMOTE_TIME=end-of-move,
+              PROMOTE_CONT= continue-as-king (next turn)
+CAPTURE PRIO: CAPTURE_REQ= mandatory, PRIORITY=none/free
+WIN/DRAW:     WIN_COND= capture-all OR block-all
 ```
 ### INTERNATIONAL 10x10
 ```
 -------------------
-BOARD:        SIZE=10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
-MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=diag-any
-KING MOVE:    MOVE_DIR=diag-any, MOVE_RANGE=flying,
-              CAPTURE_DIR=diag-any, CAPTURE_RANGE=flying,
-              LAND_RULE=free-beyond
-PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move,
-              PROMOTE_CONT=continue-as-king (next turn)
-CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-pieces
-WIN/DRAW:     WIN_COND=capture-all OR block-all
+BOARD:        SIZE= 10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
+MEN MOVE:     MOVE_DIR= diag-forward, CAPTURE_DIR=diag-any
+KING MOVE:    MOVE_DIR= diag-any, MOVE_RANGE=flying,
+              CAPTURE_DIR= diag-any, CAPTURE_RANGE=flying,
+              LAND_RULE= free-beyond
+PROMOTION:    PROMOTE_RANK =last-rank, PROMOTE_TIME=end-of-move,
+              PROMOTE_CONT= continue-as-king (next turn)
+CAPTURE PRIO: CAPTURE_REQ= mandatory, PRIORITY=max-pieces
+WIN/DRAW:     WIN_COND= capture-all OR block-all
 ```
 ### RUSSIAN (SHASHKI)
 ```
 -----------------
-BOARD:        SIZE=8x8, SQUARES=dark-only, START_ROWS=3, MEN_COUNT=12
-MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=diag-any
-KING MOVE:    MOVE_DIR=diag-any, MOVE_RANGE=flying,
-              CAPTURE_DIR=diag-any, CAPTURE_RANGE=flying,
+BOARD:        SIZE= 8x8, SQUARES= dark-only, START_ROWS=3, MEN_COUNT=12
+MEN MOVE:     MOVE_DIR= diag-forward, CAPTURE_DIR=diag-any
+KING MOVE:    MOVE_DIR= diag-any, MOVE_RANGE=flying,
+              CAPTURE_DIR= diag-any, CAPTURE_RANGE=flying,
               LAND_RULE=free-beyond
-PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=mid-sequence,
-              PROMOTE_CONT=continue-as-king
-CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=none/free
-WIN/DRAW:     WIN_COND=capture-all OR block-all
+PROMOTION:    PROMOTE_RANK= last-rank, PROMOTE_TIME=mid-sequence,
+              PROMOTE_CONT= continue-as-king
+CAPTURE PRIO: CAPTURE_REQ= mandatory, PRIORITY=none/free
+WIN/DRAW:     WIN_COND= capture-all OR block-all
 ```
 ### TURKISH (DAMA)
 ```
 --------------
-BOARD:        SIZE=8x8, SQUARES=all, START_ROWS=2, MEN_COUNT=16
-MEN MOVE:     MOVE_DIR=orth-forward+side, CAPTURE_DIR=orth-any
-KING MOVE:    MOVE_DIR=orth-any, MOVE_RANGE=flying,
-              CAPTURE_DIR=orth-any, CAPTURE_RANGE=flying,
-              LAND_RULE=free-beyond
-PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move
-CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-pieces
-WIN/DRAW:     WIN_COND=capture-all OR block-all
+BOARD:        SIZE= 8x8, SQUARES= all, START_ROWS=2, MEN_COUNT=16
+MEN MOVE:     MOVE_DIR= orth-forward+side, CAPTURE_DIR=orth-any
+KING MOVE:    MOVE_DIR= orth-any, MOVE_RANGE=flying,
+              CAPTURE_DIR= orth-any, CAPTURE_RANGE=flying,
+              LAND_RULE= free-beyond
+PROMOTION:    PROMOTE_RANK= last-rank, PROMOTE_TIME=end-of-move
+CAPTURE PRIO: CAPTURE_REQ= mandatory, PRIORITY=max-pieces
+WIN/DRAW:     WIN_COND= capture-all OR block-all
 ```
 ### FRISIAN 10x10
 ```
 -------------
-BOARD:        SIZE=10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
-MEN MOVE:     MOVE_DIR=diag-forward, CAPTURE_DIR=8-dir
-KING MOVE:    MOVE_DIR=8-dir, MOVE_RANGE=flying,
-              CAPTURE_DIR=8-dir, CAPTURE_RANGE=flying,
-              LAND_RULE=free-beyond
-PROMOTION:    PROMOTE_RANK=last-rank, PROMOTE_TIME=end-of-move
-CAPTURE PRIO: CAPTURE_REQ=mandatory, PRIORITY=max-value,
-              VALUE_MODEL=king>man but <2 men
-WIN/DRAW:     WIN_COND=capture-all OR block-all
+BOARD:        SIZE= 10x10, SQUARES=dark-only, START_ROWS=4, MEN_COUNT=20
+MEN MOVE:     MOVE_DIR= diag-forward, CAPTURE_DIR=8-dir
+KING MOVE:    MOVE_DIR= 8-dir, MOVE_RANGE=flying,
+              CAPTURE_DIR= 8-dir, CAPTURE_RANGE=flying,
+              LAND_RULE= free-beyond
+PROMOTION:    PROMOTE_RANK= last-rank, PROMOTE_TIME=end-of-move
+CAPTURE PRIO: CAPTURE_REQ= mandatory, PRIORITY=max-value,
+              VALUE_MODEL= king>man but <2 men
+WIN/DRAW:     WIN_COND= capture-all OR block-all
 ```
 
