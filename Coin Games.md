@@ -16,6 +16,128 @@ All four are:
 
 They differ only in **move rules** and thus in their **Sprague–Grundy (SG) structure**.
 
+| Game | How far can a coin move? | Can it move right? | Can it jump over coins? | What ends the game? |
+|------|---------------------------|---------------------|--------------------------|----------------------|
+| **Coins‑6** | 1 square left | No | No | No coin has an empty square to its left |
+| **Sliding** | Any number of empty squares left | No | No | No coin has an empty square to its left |
+| **Welter** | Any empty square left | No | **Yes** | No coin has an empty square to its left |
+| **Turning** | 1 square left or right | **Yes** | No | No coin has an empty square to its left or right |
+
+---
+
+# **Coins**
+
+**Board:**  
+A straight line of squares numbered from 0 up to some maximum number (for example 0–20).
+
+**Pieces:**  
+Six coins. Each coin sits on one square. No two coins may share a square.
+
+**Goal:**  
+If it’s your turn and you have no legal move, you lose.
+
+**How a move works:**  
+On your turn, you may pick **any one coin** and slide it **one square to the left**, but only if that square is empty.
+
+**Restrictions:**  
+- A coin cannot move right.  
+- A coin cannot jump over another coin.  
+- A coin cannot move off the board (square 0 is the leftmost square).
+
+**When the game ends:**  
+The game ends when **every coin is blocked** — meaning each coin either sits on square 0 or has another coin immediately to its left.  
+The player who cannot move loses.
+
+---
+
+# **Sliding Game**
+
+**Board:**  
+Same straight line of numbered squares.
+
+**Pieces:**  
+Six coins, each on its own square.
+
+**Goal:**  
+If you have no legal move on your turn, you lose.
+
+**How a move works:**  
+On your turn, you may pick **any one coin** and slide it **left any number of squares**, stopping on any empty square you choose.
+
+**Restrictions:**  
+- The coin may only slide through **empty squares**.  
+- The coin must stop **before** the next coin to its left.  
+- No jumping over coins.  
+- No rightward movement.
+
+**Example:**  
+If a coin is at square 10 and squares 9, 8, and 7 are empty, but square 6 has a coin, you may slide the coin to 9, 8, or 7 — your choice.
+
+**When the game ends:**  
+The game ends when **no coin has any empty square to its left**.  
+The player who cannot move loses.
+
+---
+
+# **Welter’s Game**
+
+**Board:**  
+Same straight line of numbered squares.
+
+**Pieces:**  
+Six coins.
+
+**Goal:**  
+If you have no legal move on your turn, you lose.
+
+**How a move works:**  
+On your turn, you may pick **any one coin** and move it to **any empty square to its left**, no matter how far away.
+
+**Key difference from Sliding:**  
+You **may jump over other coins**.  
+The squares between the starting square and the destination do **not** need to be empty.
+
+**Restrictions:**  
+- The destination square must be empty.  
+- The destination must be strictly to the left.  
+- No rightward movement.
+
+**Example:**  
+If a coin is at square 12, and square 3 is empty, you may move the coin directly from 12 to 3 even if squares 11, 10, 9, 8, 7, 6, 5, and 4 are occupied.
+
+**When the game ends:**  
+The game ends when **no coin has any empty square to its left**.  
+The player who cannot move loses.
+
+---
+
+# **Turning Game**
+
+**Board:**  
+Same straight line of numbered squares.
+
+**Pieces:**  
+Six coins.
+
+**Goal:**  
+If you have no legal move on your turn, you lose.
+
+**How a move works:**  
+On your turn, you may pick **any one coin** and move it **one square left or one square right**, as long as the destination square is empty.
+
+**Restrictions:**  
+- No jumping over coins.  
+- A coin cannot move off the board.  
+- Only one‑square moves are allowed.
+
+**Example:**  
+If a coin is at square 10, you may move it to 9 or 11, provided that square is empty.
+
+**When the game ends:**  
+The game ends when **every coin is blocked on both sides** — meaning each coin has no empty square immediately to its left or right.  
+The player who cannot move loses.
+
+---
 ---
 
 ## 1. Common framework
