@@ -124,17 +124,7 @@ o---o---o---o---o
 ### 2.2 Sixteen Soldiers Board (Alquerque + 2 Wings)
 
 ```
-        o
-       / \
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-       \ /
-        o
+
 ```
 
 - Total points: 25 + 6 = **31**  
@@ -143,17 +133,7 @@ o---o---o---o---o
 ### 2.3 Peralikatuma / Kotu Ellima Board (Alquerque + 4 Wings)
 
 ```
-        o
-       / \
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-       \ /
-        o
+
 ```
 
 Left and right wings attach in the same manner to the east and west sides.
@@ -507,32 +487,12 @@ $$
 
 ### Blank Sixteen Soldiers Board
 ```
-        o
-       / \
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-       \ /
-        o
+
 ```
 
 ### Blank Peralikatuma / Kotu Ellima Board (4-wing)
 ```
-        o
-       / \
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-       \ /
-        o
+
 ```
 (Left and right wings attach similarly.)
 
@@ -560,15 +520,7 @@ This appendix covers:
 Two triangles joined at a single apex, forming a 19-point hourglass:
 
 ```
-   o---o---o
-    \  |  /
-     \ | /
-      \|/
-o---o--o--o---o
-      /|\
-     / | \
-    /  |  \
-   o---o---o
+
 ```
 
 ### Pieces
@@ -608,19 +560,7 @@ One step along any line to an adjacent vacant point.
 Dash-guti enlarges the Lau Kata Kati hourglass by adding extra ranks and lines:
 
 ```
-           o---o---o
-          / \ / \ / \
-         o---o---o---o
-        / \ / \ / \ / \
-       o---o---o---o---o
-         \ / \ | / \ /
-          o---o-o---o     
-         / \ / | \ / \
-       o---o---o---o---o
-        \ / \ / \ / \ /
-         o---o---o---o
-          \ / \ / \ /
-           o---o---o
+
 ```
 
 ### Pieces
@@ -641,15 +581,7 @@ Win conditions remain the same.
 Egara-guti further expands Dash-guti, adding more intersection points and lines:
 
 ```
-   o---o---o---o---o---o
-    \  |   |   |   |  /
-     \ |   |   |   | /
-      \|   |   |   |/
-o---o--o---o-o-o---o--o---o
-      /|   |   |   |\
-     / |   |   |   | \
-    /  |   |   |   |  \
-   o---o---o---o---o---o
+
 ```
 
 ### Pieces
@@ -667,13 +599,7 @@ Identical to Lau Kata Kati: mandatory captures, required multi-captures, and maj
 Pretwa employs a circular board with radial lines and triangular subdivisions:
 
 ```
-       o
-     / | \
-   o---o---o
-   |   |   |
-   o---o---o
-     \ | /
-       o
+
 ```
 
 ### Pieces
@@ -694,11 +620,7 @@ Pretwa employs a circular board with radial lines and triangular subdivisions:
 Gol-skuish uses a star-like board with triangular lobes:
 
 ```
-      o
-     / \
-o---o---o---o
-     \ /
-      o
+
 ```
 
 ### Pieces
@@ -730,59 +652,25 @@ o---o---o---o
 
 ### 8.1 Lau Kata Kati (19-point)
 ```
-   o---o---o
-    \  |  /
-     \ | /
-      \|/
-o---o--o--o---o
-      /|\
-     / | \
-    /  |  \
-   o---o---o
+
 ```
 
 ### 8.2 Dash-guti (expanded)
 ```
-   o---o---o---o---o
-    \  |   |   |  /
-     \ |   |   | /
-      \|   |   |/
-o---o--o---o---o--o---o
-      /|   |   |\
-     / |   |   | \
-    /  |   |   |  \
-   o---o---o---o---o
+
 ```
 
 ### 8.3 Egara-guti (larger)
 ```
-   o---o---o---o---o---o
-    \  |   |   |   |  /
-     \ |   |   |   | /
-      \|   |   |   |/
-o---o--o---o---o---o--o--o---o
-      /|   |   |   |\
-     / |   |   |   | \
-    /  |   |   |   |  \
-   o---o---o---o---o---o
+
 ```
 
 ### 8.4 Pretwa (circular)
 ```
-       o
-     / | \
-   o---o---o
-   |   |   |
-   o---o---o
-     \ | /
-       o
+
 ```
 
 ### 8.5 Gol-skuish (star)
 ```
-      o
-     / \
-o---o---o---o
-     \ /
-      o
+
 ```
