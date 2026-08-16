@@ -402,6 +402,10 @@ Once know whether men capture:
 
 … can predict almost the entire tactical character of the game.
 
+**Flying** (in draughts/checkers) means:
+
+> **A king can move and capture any distance along a straight line until blocked.**
+
 ---
 
 # **📐 MECHANICS-FIRST TAXONOMY**
