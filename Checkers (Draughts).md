@@ -85,7 +85,7 @@ King range:
 --------------------------------------------------------------------
 ```
 
-## VARIANTS
+## VARIANT CHECKERS
 
 ### ARMENIAN (TAMA)
 ```
