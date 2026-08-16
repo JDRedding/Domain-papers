@@ -226,6 +226,33 @@ Movement is free in all directions from the start of the game.
 
 ## 5. Capture Rules
 
+### Capture (short leap)
+
+A **legal capture** by player $t$ is a triple $(x,y,z)\in\mathcal{L}_2$ such that 
+
+$$
+\begin{align*}
+x&\in S_t,\\
+y&\in S_{3-t},\\
+z&\notin S_1\cup S_2.
+\end{align*}
+$$  
+
+Execution removes the captured soldier and relocates the capturing soldier:  
+
+$$
+\begin{align*}
+S_t' &= (S_t\setminus\{x\})\cup\{z\},\\
+S_{3-t}' &= S_{3-t}\setminus\{y\}.
+\end{align*}
+$$  
+
+The new position is $P'=(S_t',S_{3-t}',3-t)$.
+
+**Multi-capture.**  
+
+After a capture the same soldier may continue capturing if another legal leap exists from its new location. Because captures are **optional**, a player may stop after any number of leaps (including zero). Formally, a multi-capture is a finite sequence of successive single captures by the same piece; each intermediate landing point must satisfy the vacancy and adjacency conditions above.
+
 ### 5.1 Capture Method
 Captures use the short leap:
 
