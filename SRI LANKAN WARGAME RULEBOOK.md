@@ -124,7 +124,23 @@ o---o---o---o---o
 ### 2.2 Sixteen Soldiers Board (Alquerque + 2 Wings)
 
 ```
-
+    o---o---o
+     \  |  /
+      o-o-o
+       \|/
+o---o---o---o---o
+| \ | / | \ | / |
+o---o---o---o---o
+| / | \ | / | \ |
+o---o---o---o---o
+| \ | / | / | \ |
+o---o---o---o---o
+| / | \ | \ | / |
+o---o---o---o---o
+       /|\
+      o-o-o
+     /  |  \
+    o---o---o
 ```
 
 - Total points: 25 + 6 = **31**  
