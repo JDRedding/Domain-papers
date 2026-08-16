@@ -184,8 +184,8 @@ $$
 \{
   p+kd
   |
-  k > m \ge 1,\ 
-  p+md\text{ is the unique enemy on the ray},\ 
+  k > m \ge 1,\\ 
+  p+md\text{ is the unique enemy on the ray},\\ 
   p+kd\text{ is empty}
 \}.
 \end{align*}
@@ -257,7 +257,7 @@ $$
 $$
 L(P)=
 \begin{cases}
-\bigcup_{p\in\text{own pieces}}\Gamma(p,t_p) & \mathcal{C}(P)\neq\emptyset,\$$4pt]
+\bigcup_{p\in\text{own pieces}}\Gamma(p,t_p) & \text{if }\mathcal{C}(P)\neq\emptyset,\\
 \bigcup_{p\in\text{own pieces}}M(p,t_p) & \text{otherwise}.
 \end{cases}
 $$
