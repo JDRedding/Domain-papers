@@ -849,3 +849,123 @@ o-o-o-o-o--o--o----.----o--o--o-o-o-o-o
        \ o------------------o  /
         o--------------------o
 ```
+
+Here’s a **clean, visual, side‑by‑side comparison chart** of the **Sri Lankan Alquerque‑family war‑games** versus the **Indian triangular war‑games**.  
+No template fits this domain (they’re not sports equipment or video games), so I’m giving you a **hand‑crafted structured chart** optimized for clarity and analysis.
+
+---
+
+## ⚔️ COMPARISON APPENDIX 
+— Sri Lankan vs Indian War‑Games
+
+### **Board Geometry**
+```
+SRI LANKAN FAMILY (Alquerque + Wings)
+-------------------------------------
+Base: 5×5 Alquerque grid (25 points)
+Sixteen Soldiers: +2 wings → 31 points
+Peralikatuma:     +4 wings → 37 points
+Kotu Ellima:      +4 wings → 37 points
+
+INDIAN TRIANGULAR FAMILY (Hourglass expansions)
+-----------------------------------------------
+Lau Kata Kati:   19‑point hourglass
+Dash‑guti:       Expanded hourglass (~25 points)
+Egara‑guti:      Larger expansion (~33 points)
+Pretwa:          Circular‑triangular (~21 points)
+Gol‑skuish:      Star‑triangular (~20 points)
+```
+
+---
+
+### **Capture Rules**
+```
+SRI LANKAN
+-----------
+• Short‑leap captures
+• Captures OPTIONAL
+• Multi‑capture OPTIONAL
+• Positional, formation‑driven tempo
+
+INDIAN
+-------
+• Short‑leap captures
+• Captures MANDATORY
+• Multi‑capture REQUIRED
+• Forced centre opening (Lau Kata Kati)
+• Highly tactical, forcing sequences
+```
+
+---
+
+### **Opening Structure**
+```
+SRI LANKAN
+-----------
+• Full occupation of half‑board + wings
+• No forced opening capture
+• Dense, positional opening
+
+INDIAN
+-------
+• Full occupation except centre
+• Centre is forced opening capture
+• Immediate tactical engagement
+```
+
+---
+
+### **Piece Count**
+```
+SRI LANKAN
+-----------
+Sixteen Soldiers: 16 per side
+Peralikatuma:     23 per side
+Kotu Ellima:      24 per side
+
+INDIAN
+-------
+Lau Kata Kati:  9 per side
+Dash‑guti:     10 per side
+Egara‑guti:    11 per side
+Pretwa:        12 per side
+Gol‑skuish:    10–12 per side
+```
+
+---
+
+### **Strategic Character**
+```
+SRI LANKAN
+-----------
+• Wing control (flanks, ambush pockets)
+• Central grid dominance (high mobility)
+• Optional‑capture tactics (baiting, stalling)
+• Density‑driven phase transitions
+
+INDIAN
+-------
+• Forced captures → sharp tactical play
+• Multi‑jump sequences dominate outcomes
+• Centre control is immediate and decisive
+• Less stalling; more forced exchanges
+```
+
+---
+
+### **Structural Summary Table**
+
+| Feature | Sri Lankan Family | Indian Triangular Family |
+|--------|-------------------|--------------------------|
+| Board Type | Alquerque + wings | Hourglass / triangular / circular |
+| Points | 31–37 | 19–33 (varies) |
+| Capture Rule | **Optional** | **Mandatory** |
+| Multi‑Capture | Optional | Required |
+| Opening | No forced capture | Forced centre capture |
+| Tempo | Positional + tactical | Highly tactical, forcing |
+| Key Games | Sixteen Soldiers, Peralikatuma, Kotu Ellima | Lau Kata Kati, Dash‑guti, Egara‑guti, Pretwa, Gol‑skuish |
+
+---
+
+
+
