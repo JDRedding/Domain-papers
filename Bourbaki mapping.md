@@ -449,3 +449,64 @@ $$
 
 ---
 
+## **Species of Structures**
+- A **structure** is a tuple of sets + relations + operations.  
+- A **species** is a template describing what such tuples look like.  
+
+A *structure* consists of:
+
+- one or more underlying sets  
+- one or more relations on those sets  
+- one or more operations on those sets  
+
+Formally, a structure is just:
+
+$$
+(X_1, X_2, \dots;\ R_1, R_2, \dots;\ O_1, O_2, \dots)
+$$
+
+sets + relations + operations.
+
+---
+
+## **Species of structures**
+A *species* is a **template** describing:
+
+- how many sets there are  
+- how many relations  
+- how many operations  
+- and what axioms they satisfy  
+
+It is an abstract pattern.  
+
+- how many regions  
+- how many interaction patterns  
+- how many operations  
+- and what axioms they satisfy  
+
+Same abstract role:  
+a pattern that concrete structures instantiate.
+
+$$
+\text{Bourbaki structure} 
+\quad\longleftrightarrow\quad 
+\text{Relational structure}
+$$
+
+$$
+\text{Bourbaki species} 
+\quad\longleftrightarrow\quad 
+\text{Relational species}
+$$
+
+Concrete structures are instances of that pattern.
+
+Example species:  
+- groups  
+- topological spaces  
+- vector spaces  
+- ordered sets  
+- Boolean algebras  
+
+But the definition is purely schematic.
+
