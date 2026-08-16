@@ -14,6 +14,7 @@ BOARD
 - 8x8 board.
 - Only the dark squares are used.
 - Each player starts with 12 men on the first three dark rows.
+- Men always move exactly one square, but not always diagonally.
 
 TURN STRUCTURE
 1. On your turn, you must move one piece.
