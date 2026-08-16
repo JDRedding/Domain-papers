@@ -1,4 +1,14 @@
-This document maps Bourbaki set-theory notation and ideas into a relational/dynamic graph semantics — treating sets as regions (node-sets with structure, interaction, and dynamics) and enriching classical extensional operations with edge-based membership and flux/dynamics semantics. Reinterpreting Bourbaki set-theoretic concepts as a relational/dynamic-graph semantics by treating sets as regions (node-sets) equipped with three aspects: Structure (nodes & internal relations), Interaction (edges between regions/nodes), and Dynamics (flux, Q-slice moderation).
+This document maps Bourbaki set-theory notation and ideas into a relational/dynamic graph semantics — treating sets as regions (node-sets with structure, interaction, and dynamics) and enriching classical extensional operations with edge-based membership and flux/dynamics semantics. 
+
+    Bourbaki’s foundation 
+    sets + relations + functions + equivalence + quotients + orders + choice + equipotence + 
+    products + function spaces + species.
+    
+    Relational foundation 
+    regions + interaction + morphisms + equivalence + quotients + orders + selection + 
+    equipotence + products + function spaces + species.
+    
+Reinterpreting Bourbaki set-theoretic concepts as a relational/dynamic-graph semantics by treating sets as regions (node-sets) equipped with three aspects: Structure (nodes & internal relations), Interaction (edges between regions/nodes), and Dynamics (flux, Q-slice moderation).
 
 ## Core mapping patterns
 - Sets → Regions: a set is a region (nodes + structure + dynamics).
