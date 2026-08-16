@@ -18,7 +18,7 @@ They differ only in **move rules** and thus in their **Sprague–Grundy (SG) str
 
 | Game | How far can a coin move? | Can it move right? | Can it jump over coins? | What ends the game? |
 |------|---------------------------|---------------------|--------------------------|----------------------|
-| **Coins‑6** | 1 square left | No | No | No coin has an empty square to its left |
+| **Coins** | 1 square left | No | No | No coin has an empty square to its left |
 | **Sliding** | Any number of empty squares left | No | No | No coin has an empty square to its left |
 | **Welter** | Any empty square left | No | **Yes** | No coin has an empty square to its left |
 | **Turning** | 1 square left or right | **Yes** | No | No coin has an empty square to its left or right |
