@@ -24,7 +24,7 @@ All three share identical movement and capture rules; they differ only in board 
 
 ---
 
-## 2. Board Geometry (ASCII)
+## 2. Board Geometry ()
 
 ### 2.1 Base Alquerque Grid (5 × 5)
 
@@ -208,7 +208,7 @@ These are not universal.
 
 ---
 
-## 10. Appendix: ASCII Board Templates
+## 10. Appendix: Board Templates
 
 ### Blank Sixteen Soldiers Board
 ```
@@ -255,7 +255,7 @@ This appendix covers:
 5. Pretwa (circular-triangular cousin)  
 6. Gol-skuish (rare variant)  
 7. Structural comparison tables  
-8. ASCII board references  
+8.  board references  
 
 ---
 
@@ -427,7 +427,7 @@ o---o---o---o
 
 ---
 
-## 8. ASCII Board Appendix
+## 8. Board Appendix
 
 ### 8.1 Lau Kata Kati (19-point)
 ```
