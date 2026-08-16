@@ -326,6 +326,6 @@
 | Librarything mds | [https://www.librarything.com/mds/0XX](https://www.librarything.com/mds/0XX) |
 | ExcelX | [https://excelx.com/](https://excelx.com/) |
 | Euclidean Space | [https://www.euclideanspace.com/](https://www.euclideanspace.com/) |
-| Theories of anything | [https://theoriesofanything.com/index.html](https://theoriesofanything.com/index.html) |
+| Theories of anything research | [https://theoriesofanything.com/research/)](https://theoriesofanything.com/research/) |
 </details>
 
