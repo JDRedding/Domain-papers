@@ -10,15 +10,11 @@ The Ten Maharajas Problem is the special case $n=10$ of the $n$-superqueens (or 
 
 It is a direct generalization of the classic N-Queens problem, but the added knight power makes the pieces far stronger, so the combinatorial constraints are stricter. On a standard 8×8 board the maximum number of mutually non-attacking Amazons is only 6; 7 or more is impossible. Consequently the natural setting for *ten* such pieces is a larger board .
 
-These typically involve:
-A finite board (often 8×8 or larger, akin to a chessboard).  Most commonly, the board is 10×10 (that Zillions itself mentions in connection with the puzzle).
+These typically involve: A finite board (often 8×8 or larger, akin to a chessboard).  Most commonly, the board is 10×10 (that Zillions itself mentions in connection with the puzzle). Distinct pieces, in this case, ten “Maharaja” pieces, modeled after a fairy chess piece with extended movement capabilities beyond the standard king or queen. A Maharaja piece is a combination of a queen and a knight, they must be placed so that no two are attacking each other. Constraints that require the placement of all pieces such that they do not threaten or attack each other, similar in principle to the classical N-Queens Problem.
 
-Distinct pieces (in this case, ten “Maharaja” pieces, modeled after a fairy chess piece with extended movement capabilities beyond the standard king or queen). A Maharaja piece is a combination of a queen and a knight, they must be placed so that no two are attacking each other
+## Computational Challenge
 
-Constraints that require the placement of all pieces such that they do not threaten or attack each other, similar in principle to the classical N-Queens Problem.
-
-Computational Challenge:
-Combinatorial optimization: You must examine placements that satisfy non-intersecting, non-attacking conditions.
+Combinatorial optimization: must examine placements that satisfy non-intersecting, non-attacking conditions.
 
 Symmetry considerations: Solutions often leverage board symmetry to reduce redundant searches.
 
