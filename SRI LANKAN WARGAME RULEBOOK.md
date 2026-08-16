@@ -43,7 +43,40 @@ All three share identical movement and capture rules; they differ only in board 
 
 ---
 
-## 2. Board Geometry ()
+## 2. Board Geometry 
+
+### 1. Board as a graph
+
+Let the board be an undirected simple graph  
+
+$$
+G = (V, E),
+$$  
+
+where  
+- $V$ is the finite set of **points** (vertices),  
+- $E \subseteq \binom{V}{2}$ is the set of **lines** (edges).  
+
+Two points $u,v\in V$ are **adjacent** if $\{u,v\}\in E$.
+
+**Cardinalities** (from the rulebook):  
+
+$$
+\begin{align*}
+|V_{\text{Sixteen Soldiers}}| &= 31, \\
+|V_{\text{Peralikatuma}}| = |V_{\text{Kotu Ellima}}| &= 37.
+\end{align*}
+$$  
+
+(The underlying 5×5 Alquerque grid contributes the induced subgraph on 25 vertices; triangular wings add the remaining vertices and edges.)
+
+A **straight line of length 2** is a triple $(x,y,z)$ of distinct vertices such that  
+
+$$
+\{x,y\},\{y,z\}\in E
+$$  
+
+and the three points are collinear on a marked board line (i.e., the geometric embedding admits a straight segment through them). Write $\mathcal{L}_2$ for the set of all such ordered triples.
 
 ### 2.1 Base Alquerque Grid (5 × 5)
 
