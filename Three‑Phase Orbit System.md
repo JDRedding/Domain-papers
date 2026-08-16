@@ -155,5 +155,17 @@ Because the image $\{P_1, P_2, P_3\}$ is closed under the induced action of both
 | **$P_2$** | $\Phi(T_1(s_2)) = P_{\sigma_1(2)}$ | $\Phi(T_2(s_2)) = P_{\sigma_2(2)}$ |
 | **$P_3$** | $\Phi(T_1(s_3)) = P_{\sigma_1(3)}$ | $\Phi(T_2(s_3)) = P_{\sigma_2(3)}$ |
 
-*(where $s_k \in \Phi^{-1}(P_k)$ and $\sigma_1, \sigma_2 \in \{1, 2, 3\}^{\{1, 2, 3\}}$ represent the permutation/transformation profiles on the collapsed set).*
+where 
+
+$$
+s_k \in \Phi^{-1}(P_k)
+$$ 
+
+and 
+
+$$
+\sigma_1, \sigma_2 \in \{1, 2, 3\}^{\{1, 2, 3\}}
+$$ 
+
+represent the permutation/transformation profiles on the collapsed set).
 
