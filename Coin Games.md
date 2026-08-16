@@ -205,7 +205,7 @@ These are the **packed configurations**: coins occupy the lowest available squar
 
 ### 2.3 CGT / SG behavior
 
-- **Impartial graph game:** Coins-$n$ is a finite impartial game on the state graph of $n$-coin configurations.
+- **Impartial graph game:** Coins - $n$ is a finite impartial game on the state graph of $n$-coin configurations.
 - **SG computation:** For fixed $M$, the SG value
 
 $$
@@ -221,7 +221,7 @@ $$
 
 Important subtlety:
 
-- Coins-$n$ is **not** simply “each movable coin = heap of size 1, SG = XOR of number of movable coins”.
+- Coins - $n$ is **not** simply “each movable coin = heap of size 1, SG = XOR of number of movable coins”.
 - Moving one coin can open or close moves for others; SG depends on the **full pattern** of occupied and empty squares.
 
 ---
@@ -387,7 +387,7 @@ Terminal positions:
 
 The four games can be classified along several axes:
 
-| Axis            | Coins-$n$                     | Sliding                         | Welter                        | Turning                          |
+| Axis            | Coins - $n$                     | Sliding                         | Welter                        | Turning                          |
 |-----------------|---------------------------------|----------------------------------|--------------------------------|-----------------------------------|
 | **Range**       | Local (1 step)                  | Local (multi-step)              | Global (any left square)      | Local (1 step)                    |
 | **Direction**   | Left only                       | Left only                       | Left only                     | Bidirectional (left & right)     |
@@ -400,7 +400,7 @@ Interpretation:
 - **Direction:** Whether coins can move only left or both left and right.
 - **Jumping:** Whether coins may jump over other coins.
 - **SG locality:**
-  - Coins-$n$: local moves, but SG depends on interactions; no simple heap decomposition.
+  - Coins - $n$: local moves, but SG depends on interactions; no simple heap decomposition.
   - Sliding: SG is a clean XOR of gap sizes.
   - Welter: SG given by a non-local function of positions and their differences.
   - Turning: SG arises from local graph components.
@@ -420,7 +420,7 @@ $$
   which is tractable for moderate $n$ and $M$.
 
 - **Computation strategies:**
-  - **Coins-$n$, Turning:** SG via recursive mex / dynamic programming on the state graph.
+  - **Coins - $n$, Turning:** SG via recursive mex / dynamic programming on the state graph.
   - **Sliding:** SG via gap decomposition (no recursion once gaps are known).
   - **Welter:** SG via the closed Welter function (no recursion).
 
@@ -500,7 +500,7 @@ No. Moves are 1-step and cannot jump, so coins never cross.
 
 ## **A.5 Sprague–Grundy (SG) Behavior**
 
-**Q: Why does Coins-$n$ require dynamic programming?**  
+**Q: Why does Coins - $n$ require dynamic programming?**  
 Because moving one coin can open or close moves for others. SG depends on the **full pattern**, not just gaps.
 
 **Q: Why is Sliding just XOR of gaps?**  
