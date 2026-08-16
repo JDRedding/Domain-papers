@@ -348,16 +348,6 @@ Decompose $V = C \cup W$, where:
 
 The subgraph induced by $C$ has the classic Alquerque line structure (orthogonal + selected diagonals). Each wing $W_i$ is a triangular subgraph attached to the boundary of $C$.
 
-### Soldier Density
-Let $n$ be the total number of pieces on the board at a given moment and $|V|$ the total number of points.  
-**Density** is
-
-$$
-\delta = \frac{n}{|V|}.
-$$
-
-High initial density corresponds to $\delta$ close to $1$ (nearly full board), producing the congested opening phase. As captures occur, $\delta$ decreases, transitioning through the explosive mid-game into a sparse positional end-game.
-
 ### Mobility and Central Grid Dominance
 The **mobility** of a point $v \in V$ is its graph degree:
 
@@ -430,6 +420,15 @@ High initial density produces:
 - A congested early game  
 - An explosive mid-game  
 - A positional end-game
+
+Let $n$ be the total number of pieces on the board at a given moment and $|V|$ the total number of points.  
+**Density** is
+
+$$
+\delta = \frac{n}{|V|}.
+$$
+
+High initial density corresponds to $\delta$ close to $1$ (nearly full board), producing the congested opening phase. As captures occur, $\delta$ decreases, transitioning through the explosive mid-game into a sparse positional end-game.
 
 ---
 
