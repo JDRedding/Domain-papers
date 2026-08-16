@@ -686,13 +686,18 @@ Identical to Lau Kata Kati: mandatory captures, required multi-captures, and maj
 
 ---
 
-## 5. Pretwa — Circular-Triangular Cousin
+## 5. Pretwa  — Circular-Triangular Cousin
 
 Pretwa employs a circular board with radial lines and triangular subdivisions:
 
 ```
-
+       o-----o 
+      / \   / \
+     o----o----o
+      \  /  \ /
+       o-----o
 ```
+(This is a condensed version)
 
 ### Pieces
 12 per player (varies by region).
@@ -796,6 +801,15 @@ o-----o-----o
 
 ### 8.4 Pretwa (circular)
 ```
+    o-------------o
+   /  o---------o  \
+  /  /  o-----o  \  \
+ /  /  / \   / \  \  \
+o--o--o----o----o--o--o
+ \  \  \  /  \ /  /  /
+  \  \  o-----o  /  /
+   \  o---------o  /
+    o------------o
 
 ```
 
