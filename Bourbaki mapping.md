@@ -365,7 +365,7 @@ That’s all Bourbaki requires:
 A selector applied to a condition $P(x)$ on a region $X$:
 
 $$
-\tau(P) = \text{“some element of }X\text{ satisfying} P.”
+\tau(P) = \text{“some element of }X\text{ satisfying"} P
 $$
 
 Same abstract role:  
@@ -374,7 +374,7 @@ Same abstract role:
 $$
 \tau(P)_{\text{Bourbaki}}
 \quad\longleftrightarrow\quad
-\tau(P)_{\text{RDG}}
+\tau(P)_{\text{Relation}}^{\text{Dynamic}}
 $$
 
 Both sides describe the same abstract object:  
