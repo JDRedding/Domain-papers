@@ -42,7 +42,7 @@ DRAW CONDITIONS (simple form)
               END OF RULES
 ========================================
 ```
-### **Kings **
+### **Kings**
 
 **Flying** (in draughts/checkers) means:
 
@@ -67,6 +67,8 @@ A **short king** is a king that:
   (no long-range movement, no long-range capture landing)
 - **Cannot “fly”**  
   (cannot move or capture across multiple empty squares)
+
+## VARIANTS
 
 ARMENIAN (TAMA)
 ```
