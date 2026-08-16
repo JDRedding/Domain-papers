@@ -41,6 +41,12 @@ The document preserves Bourbaki’s extensional algebraic structure while adding
 
 Relational-Bourbaki sits in an intermediate position. It keeps Bourbaki’s concrete structural vocabulary and species idea but makes the relations explicitly operational and dynamic (regions, edges, flux). This moves it closer to the morphism-centric spirit of category theory while remaining grounded in graph-like carriers that are immediately usable for computation and neural message passing. Where pure category theory often stays highly abstract, Relational-Bourbaki prioritizes an executable, flux-aware graph semantics that can serve as a bridge between classical structural foundations and modern geometric/deep learning on graphs.
 
+### Relations are already objects
+In classical Bourbaki a relation is merely a subset of a product. In relational dynamic geometry, a relation is a full geometric-dynamical entity (carriers, flux rules, closure conditions, transport data). Once the interaction layer of a region is filled by relations rather than bare sets of pairs, the species template can demand that those relations satisfy the axioms of a category (or of a functor, natural transformation, etc.) and the existing flux-compatibility conditions.
+
+### Transportability is inherited.
+The lasting contribution of Bourbaki is the metamathematical demand that the defining data be transportable under isomorphism. Because dynamic geometry relations already come with their own transport data, any species built from them automatically inherits a robust form of transportability (including flux-preservation). Categories therefore become legitimate instances of relational species instead of foreign objects that break the framework. Categories are simply one more species whose interaction slots are occupied by relations that happen to satisfy composition, units, and the ambient geometric dynamics.
+
 ## Core mapping patterns
 - Sets → Regions: a set is a region (nodes + structure + dynamics).
 - Membership x ∈ X → typed membership edge (Member(x,X)).
