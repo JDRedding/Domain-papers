@@ -124,6 +124,27 @@ o---o---o---o---o
 ### 2.2 Sixteen Soldiers Board (Alquerque + 2 Wings)
 
 ```
+      o-o-o
+       \|/
+o---o---o---o---o
+| \ | / | \ | / |
+o---o---o---o---o
+| / | \ | / | \ |
+o---o---o---o---o
+| \ | / | / | \ |
+o---o---o---o---o
+| / | \ | \ | / |
+o---o---o---o---o
+       /|\
+      o-o-o
+```
+
+- Total points: 25 + 6 = **31**  
+- Wings attach to the north and south sides of the grid.
+
+### 2.3 Peralikatuma / Kotu Ellima Board (Alquerque + 4 Wings)
+
+```
     o---o---o
      \  |  /
       o-o-o
@@ -141,15 +162,6 @@ o---o---o---o---o
       o-o-o
      /  |  \
     o---o---o
-```
-
-- Total points: 25 + 6 = **31**  
-- Wings attach to the north and south sides of the grid.
-
-### 2.3 Peralikatuma / Kotu Ellima Board (Alquerque + 4 Wings)
-
-```
-
 ```
 
 Left and right wings attach in the same manner to the east and west sides.
