@@ -570,3 +570,108 @@ Never.
 
 **Q: Can I add or remove coins mid-game?**  
 Not in these rules.
+
+---
+
+# **Appendix B — Definition Glossary**
+
+## **B.1 Board and Position Terms**
+
+- **Board** — The finite linear track of squares labeled  
+  `0, 1, 2, …, M`.  
+  All coins must remain within this range.
+
+- **Square** — A single position on the board. Each square may hold at most one coin.
+
+- **Coin** — An indistinguishable token occupying exactly one square. Coins have no identity; only their positions matter.
+
+- **Position** — A sorted tuple  
+  `(a1 < a2 < … < an)`  
+  listing all occupied squares.
+
+- **Occupied square** — A square containing a coin.
+
+- **Empty square** — A square containing no coin.
+
+---
+
+## **B.2 Move and Blocking Terms**
+
+- **Legal move** — A move permitted by the rules of the specific game variant.
+
+- **Left move** — Moving a coin to a strictly smaller square index.
+
+- **Right move** — Moving a coin to a strictly larger square index (Turning only).
+
+- **Jump** — Moving a coin to a square while passing over occupied squares. Allowed only in Welter.
+
+- **Slide** — Moving a coin through consecutive empty squares (Coins and Sliding).
+
+- **Blocked** — A coin is blocked in a direction if the adjacent square in that direction is either occupied or off-board.
+
+- **Terminal position** — A position where **no legal moves** exist for the current player.
+
+---
+
+## **B.3 Gap and Locality Terms**
+
+- **Gap** — The number of empty squares between consecutive coins (or between square 0 and the first coin).  
+  Formally:  
+  `g0 = a1 - 0`  
+  `gi = a(i+1) - ai - 1`.
+
+- **Local move** — A move restricted to adjacent squares or contiguous empty squares.
+
+- **Global move** — A move that may target any empty square to the left, regardless of intervening occupancy (Welter).
+
+---
+
+## **B.4 Game-Theoretic Terms**
+
+- **Impartial game** — A game where both players have the same available moves from any position.
+
+- **Normal-play** — The player who makes the **last legal move** wins.
+
+- **Sprague–Grundy value** (SG value, nimber) — A non-negative integer assigned to each position, defined recursively as the mex of SG values of its options.
+
+- **mex** — The **minimum excluded** non-negative integer from a set.
+
+- **P-position** — A position with SG value `0`. The previous player wins with perfect play.
+
+- **N-position** — A position with SG value non-zero. The next player wins with perfect play.
+
+- **Nim-sum** — Bitwise XOR of integers. Used to combine SG values of independent components.
+
+- **Disjunctive sum** — A combination of independent games where a move consists of playing in exactly one component.
+
+---
+
+## **B.5 Variant-Specific Terms**
+
+### **Coins**
+- **1-step left move** — A coin may move only one square left if empty.
+
+### **Sliding**
+- **Multi-step slide** — A coin may slide left through any number of consecutive empty squares.
+
+### **Welter**
+- **Jumping move** — A coin may move to any empty square left of its current position, even if intervening squares are occupied.
+
+- **Welter function** — The closed-form SG formula involving XOR of positions and pairwise 2-adic terms.
+
+### **Turning**
+- **Bidirectional move** — A coin may move left or right by one square if empty.
+
+- **Movable region** — A connected segment of squares where coins can move without crossing or being blocked.
+
+---
+
+## **B.6 Implementation Terms**
+
+- **State graph** — The directed acyclic graph of all legal positions and moves.
+
+- **Dynamic programming SG** — Computing SG values by evaluating positions in increasing order of complexity.
+
+- **Indistinguishable tokens** — Coins have no identity; only their positions matter.
+
+---
