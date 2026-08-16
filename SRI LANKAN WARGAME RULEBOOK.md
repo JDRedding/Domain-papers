@@ -45,7 +45,7 @@ All three share identical movement and capture rules; they differ only in board 
 
 ## 2. Board Geometry 
 
-### 1. Board as a graph
+### Board as a graph
 
 Let the board be an undirected simple graph  
 
@@ -59,7 +59,7 @@ where
 
 Two points $u,v\in V$ are **adjacent** if $\{u,v\}\in E$.
 
-**Cardinalities** (from the rulebook):  
+**Cardinalities**:  
 
 $$
 \begin{align*}
@@ -150,6 +150,38 @@ Left and right wings attach in the same manner to the east and west sides.
 - Pieces occupy the player’s half of the grid, two adjacent wings, and one additional point (fuller occupation than Peralikatuma).
 
 Pieces are called **soldiers**. Captured soldiers are said to be **chopped**.
+
+### Positions and pieces
+
+A **position** is a triple  
+
+$$
+P = (S_1,S_2,t),
+$$ 
+
+where  
+- $S_1,S_2\subseteq V$ are the sets of points occupied by Player 1 and Player 2 respectively,  
+- $S_1\cap S_2=\emptyset$ (no two pieces occupy the same point),  
+- $t\in\{1,2\}$ is the player to move.  
+
+The **soldiers** of player $i$ are the elements of $S_i$.  
+Initial positions satisfy  
+
+$$
+|S_1|=|S_2|=n,
+$$  
+
+where  
+
+$$
+n=\begin{cases}
+16 & \text{(Sixteen Soldiers)},\\
+23 & \text{(Peralikatuma)},\\
+24 & \text{(Kotu Ellima)}.
+\end{cases}
+$$
+
+(The precise initial sets occupy each player’s half of the Alquerque grid plus the appropriate wing(s).)
 
 ---
 
