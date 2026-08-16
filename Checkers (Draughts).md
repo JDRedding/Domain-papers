@@ -402,9 +402,22 @@ Once know whether men capture:
 
 … can predict almost the entire tactical character of the game.
 
+### **“Flying” draughts**
 **Flying** (in draughts/checkers) means:
 
 > **A king can move and capture any distance along a straight line until blocked.**
+
+A **flying king** is a king that:
+
+1. **Moves any number of squares** along its allowed directions  
+   (diagonal in International/Russian/Pool; orthogonal in Turkish; 8‑direction in Frisian).
+
+2. **Captures at long range** by jumping over an enemy piece that may be several squares away.
+
+3. **Continues sliding after the capture** to any empty square beyond the captured piece  
+   (except in variants that force landing immediately behind the captured piece).
+
+4. **Can chain multiple long-range captures** in one turn.
 
 ---
 
