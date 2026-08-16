@@ -15,23 +15,13 @@ BOARD
 - Only the dark squares are used.
 - Each player starts with 12 men on the first three dark rows.
 
-PIECES
-- MEN: move 1 square.
-- KINGS: move 1 square.
-
 TURN STRUCTURE
 1. On your turn, you must move one piece.
 2. If you can capture, you must capture.
 
-MOVEMENT
-- Men move into an empty square.
-- Kings move into an empty square.
-
 CAPTURING
 - A capture is made by jumping over an adjacent enemy piece
   into the empty square immediately beyond it.
-- Men capture only forward.
-- Kings capture forward or backward.
 - Multiple jumps are allowed and must be taken if available.
 
 PROMOTION
