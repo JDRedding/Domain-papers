@@ -3,7 +3,6 @@
 This note defines an abstract "Three‑Phase Orbit" or "Triadic" system: a minimal, structure‑agnostic axiomatization that captures when the orbit of a distinguished element under two generators collapses (via a collapse map) to exactly three points which are closed under the induced actions.
 
 ## Purpose
-: an abstract axiomatisation that does not rely on specific analysis/algebra/topology/dynamics — it only requires that the orbit collapses to three elements under a chosen collapse map.
 
 Abstract Axiomatisation
 - It does not depend on analysis, arithmetic, algebra, topology, or dynamics.  
@@ -11,6 +10,8 @@ Abstract Axiomatisation
 - It does not depend on the nature of the generators.  
 - It does not depend on the nature of the distinguished element.  
 - It only depends on the **cardinality‑three collapse** of the orbit under two generators.
+
+: an abstract axiomatisation that does not rely on specific analysis/algebra/topology/dynamics — it only requires that the orbit collapses to three elements under a chosen collapse map.
 
 ## System Dynamics & Flow
 ```
