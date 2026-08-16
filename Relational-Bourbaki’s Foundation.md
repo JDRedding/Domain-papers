@@ -1,4 +1,5 @@
 # Relational-Bourbaki’s Foundation 
+510.1 Mathematical structures & foundations
 
 Bourbaki’s *Éléments de mathématique* is often described as a relational foundation because it treats mathematics as a unified discipline built on the concept of mathematical structure rather than on primitive objects. In this view, the *objects* of mathematics are not given independently but are defined through their relations to other objects within a given structure.
 
