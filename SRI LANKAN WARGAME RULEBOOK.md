@@ -1,32 +1,32 @@
-# **SRI LANKAN WARGAME RULEBOOK**  
-### *Sixteen Soldiers • Peralikatuma • Kotu Ellima*  
-### *Expanded Alquerque War‑Game Family*
+**SRI LANKAN WARGAME RULEBOOK**  
+*Sixteen Soldiers • Peralikatuma • Kotu Ellima*  
+*Expanded Alquerque War-Game Family*
 
 ---
 
-## **1. OVERVIEW**
+## 1. Overview
 
-Sri Lankan war‑games in the Alquerque family are **two‑player abstract strategy games** using:
+Sri Lankan war-games belonging to the Alquerque family are two-player abstract strategy games characterised by:
 
-- **Short‑leap captures** (draughts / Alquerque style)  
-- **Expanded Alquerque boards** with triangular wings  
-- **Full initial occupation of each player’s half**  
-- **Non‑mandatory captures** (unlike Indian war‑games)  
-- **High‑mobility, high‑attrition tactical play**
+- Short-leap captures (draughts / Alquerque style)  
+- Expanded Alquerque boards featuring triangular wings  
+- Full initial occupation of each player’s half of the board  
+- Non-mandatory captures (in contrast to related Indian war-games)  
+- High-mobility, high-attrition tactical play  
 
-The three canonical games:
+The three canonical games are:
 
 1. **Sixteen Soldiers** — 2 wings, 16 pieces per side  
 2. **Peralikatuma** — 4 wings, 23 pieces per side  
 3. **Kotu Ellima** — 4 wings, 24 pieces per side  
 
-All three share identical movement and capture rules; only the **board geometry** and **piece count** differ.
+All three share identical movement and capture rules; they differ only in board geometry and piece count.
 
 ---
 
-## **2. BOARD GEOMETRY (ASCII)**
+## 2. Board Geometry (ASCII)
 
-### **2.1 Base Alquerque Grid (5×5)**
+### 2.1 Base Alquerque Grid (5 × 5)
 
 ```
 o---o---o---o---o
@@ -42,9 +42,7 @@ o---o---o---o---o
 
 25 points.
 
----
-
-### **2.2 Sixteen Soldiers Board (Alquerque + 2 Wings)**
+### 2.2 Sixteen Soldiers Board (Alquerque + 2 Wings)
 
 ```
         o
@@ -60,12 +58,10 @@ o---o---o---o---o
         o
 ```
 
-- **Total points:** 25 + 6 = **31**  
-- Wings attach to **north** and **south** sides.
+- Total points: 25 + 6 = **31**  
+- Wings attach to the north and south sides of the grid.
 
----
-
-### **2.3 Peralikatuma / Kotu Ellima Board (Alquerque + 4 Wings)**
+### 2.3 Peralikatuma / Kotu Ellima Board (Alquerque + 4 Wings)
 
 ```
         o
@@ -79,180 +75,142 @@ o---o---o---o---o
 o---o---o---o---o
        \ /
         o
-
-        o
-       / \
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-       \ /
-        o
 ```
 
-Actually represented as **four wings**, one on each side of the grid:
+Left and right wings attach in the same manner to the east and west sides.
 
-```
-        o
-       / \
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-|   |   |   |   |
-o---o---o---o---o
-       \ /
-        o
-
-(Left and right wings attach similarly)
-```
-
-- **Total points:** 25 + 12 = **37**
+- Total points: 25 + 12 = **37**
 
 ---
 
-## **3. PIECES**
+## 3. Pieces
 
-### **Sixteen Soldiers**
+**Sixteen Soldiers**  
 - 16 pieces per player  
-- Pieces occupy:
-  - Player’s half of the Alquerque grid  
-  - The nearest triangular wing  
+- Pieces occupy the player’s half of the Alquerque grid plus the nearest triangular wing.
 
-### **Peralikatuma**
+**Peralikatuma**  
 - 23 pieces per player  
-- Occupy:
-  - Player’s half of the grid  
-  - Two adjacent wings  
+- Pieces occupy the player’s half of the grid plus two adjacent wings.
 
-### **Kotu Ellima**
+**Kotu Ellima**  
 - 24 pieces per player  
-- Occupy:
-  - Player’s half of the grid  
-  - Two adjacent wings  
-  - One additional point (fuller occupation than Peralikatuma)
+- Pieces occupy the player’s half of the grid, two adjacent wings, and one additional point (fuller occupation than Peralikatuma).
 
-Pieces are called **soldiers**.  
-Captured soldiers are said to be **chopped**.
+Pieces are called **soldiers**. Captured soldiers are said to be **chopped**.
 
 ---
 
-## **4. MOVEMENT RULES**
+## 4. Movement Rules
 
-### **4.1 Turn Structure**
+### 4.1 Turn Structure
 - Players alternate turns.  
-- A player uses **one soldier** per turn.  
-- A soldier may **move** or **capture**, but not both.
+- Each turn a player moves **one** soldier.  
+- A soldier may either move or capture, but not both in the same turn.
 
-### **4.2 Movement**
-A soldier may move to any **adjacent vacant point** along a line.
+### 4.2 Movement
+A soldier may move to any adjacent vacant point along a marked line.
 
-Movement directions:
-- Orthogonal (horizontal/vertical)  
-- Diagonal (where lines exist)  
-- Into or out of triangular wings  
+Movement is possible:
+- Orthogonally (horizontal or vertical)  
+- Diagonally (where lines exist)  
+- Into or out of the triangular wings  
 
-Movement is **free in all directions from the start**.
+Movement is free in all directions from the start of the game.
 
 ---
 
-## **5. CAPTURE RULES**
+## 5. Capture Rules
 
-### **5.1 Capture Method**
-Captures use the **short leap**:
+### 5.1 Capture Method
+Captures use the short leap:
 
 ```
 [Your soldier] adjacent to [enemy soldier]
-Leap over enemy → land on vacant point immediately beyond
+Leap over the enemy → land on the vacant point immediately beyond
 Enemy soldier is removed (“chopped”)
 ```
 
-### **5.2 Capture Conditions**
-- Leap must follow the board’s lines.  
-- Leap must be in a straight line.  
-- Landing point must be vacant.  
+### 5.2 Capture Conditions
+- The leap must follow the board’s lines.  
+- The leap must be in a straight line.  
+- The landing point must be vacant.  
 - Captures are **not mandatory**.  
-- Multi‑capture is allowed but optional.
+- Multi-captures are permitted but optional.
 
-This is the key difference from Indian war‑games (Lau Kata Kati, Dash‑guti, Egara‑guti), where captures are compulsory.
+This non-compulsory capture rule is the principal difference from Indian war-games such as Lau Kata Kati, Dash-guti and Egara-guti, in which captures are compulsory.
 
 ---
 
-## **6. WIN CONDITIONS**
+## 6. Win Conditions
 
 A player wins by:
 
-1. **Capturing all enemy soldiers**, or  
-2. **Immobilizing** the opponent (no legal moves), or  
-3. Opponent resigns.
+1. Capturing all enemy soldiers, or  
+2. Immobilising the opponent (no legal moves remaining), or  
+3. The opponent resigning.
 
-Draws may occur if:
-- Both players agree, or  
-- Neither player can force progress.
+A draw may be declared by mutual agreement or when neither player can force progress.
 
 ---
 
-## **7. STRATEGIC PRINCIPLES**
+## 7. Strategic Principles
 
-### **7.1 Wing Control**
-Triangular wings act as:
+### 7.1 Wing Control
+The triangular wings serve as:
 - Flanking routes  
 - Ambush pockets  
 - Safe retreat zones  
 
-Losing access to a wing often collapses your position.
+Loss of access to a wing frequently collapses a player’s position.
 
-### **7.2 Optional Captures**
+### 7.2 Optional Captures
 Because captures are not mandatory:
-- You can **stall** to avoid giving multi‑jump opportunities.  
-- You can **build formations** before attacking.  
-- You can **bait** the opponent into bad trades.
+- A player may stall to avoid creating multi-jump opportunities for the opponent.  
+- Formations can be built before launching an attack.  
+- The opponent can be baited into unfavourable exchanges.
 
-### **7.3 Central Grid Dominance**
-The 5×5 Alquerque grid is the **tactical core**:
-- Most lines  
-- Most mobility  
+### 7.3 Central Grid Dominance
+The 5 × 5 Alquerque grid is the tactical core of the board:
+- Greatest number of lines  
+- Highest mobility  
 - Most capture routes  
 
-Wing control is strategic; grid control is tactical.
+Wing control is primarily strategic; grid control is primarily tactical.
 
-### **7.4 Soldier Density**
-High initial density means:
-- Early game is congested  
-- Midgame is explosive  
-- Endgame is positional
-
----
-
-## **8. GAME‑BY‑GAME SUMMARY TABLE**
-
-| Game | Board | Wings | Points | Soldiers | Capture Rule | Notes |
-|------|-------|--------|---------|-----------|----------------|--------|
-| **Sixteen Soldiers** | Alquerque | 2 | 31 | 16 | Optional | Most common variant |
-| **Peralikatuma** | Alquerque | 4 | 37 | 23 | Optional | Larger armies |
-| **Kotu Ellima** | Alquerque | 4 | 37 | 24 | Optional | Fullest occupation |
+### 7.4 Soldier Density
+High initial density produces:
+- A congested early game  
+- An explosive mid-game  
+- A positional end-game
 
 ---
 
-## **9. OPTIONAL ADVANCED RULES (TRADITIONAL VARIANTS)**
+## 8. Game-by-Game Summary
 
-These appear in some villages:
-
-- **“Royal Soldier”**: last surviving soldier gains extended movement.  
-- **“Wing Lock”**: occupying all points of a wing locks it from enemy entry.  
-- **“Double Chop”**: capturing two soldiers in one turn grants an extra move.  
-
-These are not universal; include only if desired.
+| Game              | Board      | Wings | Points | Soldiers | Capture Rule | Notes                  |
+|-------------------|------------|-------|--------|----------|--------------|------------------------|
+| Sixteen Soldiers  | Alquerque  | 2     | 31     | 16       | Optional     | Most common variant    |
+| Peralikatuma      | Alquerque  | 4     | 37     | 23       | Optional     | Larger armies          |
+| Kotu Ellima       | Alquerque  | 4     | 37     | 24       | Optional     | Fullest occupation     |
 
 ---
 
-## **10. APPENDIX: ASCII BOARD TEMPLATES**
+## 9. Optional Advanced Rules (Traditional Variants)
 
-### **Blank Sixteen Soldiers Board**
+The following rules appear in some village traditions and may be included if desired:
+
+- **Royal Soldier**: The last surviving soldier gains extended movement.  
+- **Wing Lock**: Occupying every point of a wing prevents enemy entry.  
+- **Double Chop**: Capturing two soldiers in one turn grants an extra move.
+
+These are not universal.
+
+---
+
+## 10. Appendix: ASCII Board Templates
+
+### Blank Sixteen Soldiers Board
 ```
         o
        / \
@@ -267,9 +225,7 @@ o---o---o---o---o
         o
 ```
 
-### **Blank Peralikatuma / Kotu Ellima Board**
-(Full 4‑wing version)
-
+### Blank Peralikatuma / Kotu Ellima Board (4-wing)
 ```
         o
        / \
@@ -282,32 +238,31 @@ o---o---o---o---o
 o---o---o---o---o
        \ /
         o
-
-(Left and right wings attach similarly)
 ```
+(Left and right wings attach similarly.)
 
 ---
 
-# **APPENDIX: LAU KATA KATI & RELATED GAMES**  
-### *(Indian Triangular War‑Game Family)*
+# Appendix: Lau Kata Kati & Related Games  
+*(Indian Triangular War-Game Family)*
 
 This appendix covers:
 
-1. **Lau Kata Kati** (core game)  
-2. **Butterfly** (Mozambique twin)  
-3. **Dash‑guti** (board expansion)  
-4. **Egara‑guti** (board expansion)  
-5. **Pretwa** (circular‑triangular cousin)  
-6. **Gol‑skuish** (rare variant)  
-7. **Structural comparison tables**  
-8. **ASCII board references**
+1. Lau Kata Kati (core game)  
+2. Butterfly (Mozambique twin)  
+3. Dash-guti (board expansion)  
+4. Egara-guti (board expansion)  
+5. Pretwa (circular-triangular cousin)  
+6. Gol-skuish (rare variant)  
+7. Structural comparison tables  
+8. ASCII board references  
 
 ---
 
-## **1. LAU KATA KATI — Core Specification**
+## 1. Lau Kata Kati — Core Specification
 
-### **Board Geometry**
-Two triangles joined at a single apex, forming a 19‑point hourglass.
+### Board Geometry
+Two triangles joined at a single apex, forming a 19-point hourglass:
 
 ```
    o---o---o
@@ -321,41 +276,41 @@ o---o--o--o---o
    o---o---o
 ```
 
-### **Pieces**
+### Pieces
 - 9 per player  
-- All points filled except the center  
-- Center is the **forced opening capture point**
+- All points occupied except the centre  
+- The centre is the forced opening capture point  
 
-### **Movement**
-- One step along any line to an adjacent vacant point
+### Movement
+One step along any line to an adjacent vacant point.
 
-### **Capture**
+### Capture
 - Mandatory  
 - Short leap (Alquerque style)  
-- Multi‑capture required if available  
-- Captures follow board lines only
+- Multi-capture required when available  
+- Captures must follow board lines  
 
-### **Win Conditions**
-- Capture all enemy pieces  
-- Or immobilize opponent  
-- If no captures remain: majority wins; equal = draw
-
----
-
-## **2. BUTTERFLY (Mozambique)**  
-**Status:** *Exact twin* of Lau Kata Kati  
-**Board:** Identical 19‑point hourglass  
-**Rules:** Identical  
-**Significance:** Confirms a historical transmission between India and East Africa
+### Win Conditions
+- Capture all enemy pieces, or  
+- Immobilise the opponent  
+- If no further captures are possible, the player with the majority of pieces wins; equal numbers result in a draw.
 
 ---
 
-## **3. DASH‑GUTI — Expanded Lau Kata Kati**
+## 2. Butterfly (Mozambique)
 
-### **Board Geometry**
-Dash‑guti expands the Lau Kata Kati hourglass by adding extra ranks and lines.
+**Status**: Exact twin of Lau Kata Kati  
+**Board**: Identical 19-point hourglass  
+**Rules**: Identical  
 
-ASCII (simplified):
+**Significance**: Demonstrates historical transmission between India and East Africa.
+
+---
+
+## 3. Dash-guti — Expanded Lau Kata Kati
+
+### Board Geometry
+Dash-guti enlarges the Lau Kata Kati hourglass by adding extra ranks and lines:
 
 ```
    o---o---o---o---o
@@ -369,26 +324,22 @@ o---o--o--o--o--o---o
    o---o---o---o---o
 ```
 
-### **Pieces**
-- 10 per player (sometimes 11 depending on region)
+### Pieces
+10 per player (occasionally 11, depending on region).
 
-### **Rules**
-- Movement identical  
-- **Mandatory captures**  
-- Multi‑capture required  
-- Same win conditions
+### Rules
+Movement identical to Lau Kata Kati.  
+Captures are mandatory; multi-captures are required.  
+Win conditions remain the same.
 
-### **Notes**
-Dash‑guti is the **first expansion tier** of Lau Kata Kati.
+**Notes**: Dash-guti constitutes the first expansion tier of Lau Kata Kati.
 
 ---
 
-## **4. EGARA‑GUTI — Larger Expansion**
+## 4. Egara-guti — Larger Expansion
 
-### **Board Geometry**
-Egara‑guti expands Dash‑guti further, adding more intersection points and lines.
-
-ASCII (compressed):
+### Board Geometry
+Egara-guti further expands Dash-guti, adding more intersection points and lines:
 
 ```
    o---o---o---o---o---o
@@ -402,25 +353,19 @@ o---o--o--o--o--o--o--o---o
    o---o---o---o---o---o
 ```
 
-### **Pieces**
-- 11 per player (sometimes 12)
+### Pieces
+11 per player (sometimes 12).
 
-### **Rules**
-Same as Lau Kata Kati:
-- Mandatory captures  
-- Multi‑capture required  
-- Majority‑wins endgame
+### Rules
+Identical to Lau Kata Kati: mandatory captures, required multi-captures, and majority-wins endgame.
 
-### **Notes**
-Egara‑guti is the **second expansion tier**, structurally analogous to “Alquerque‑4” expansions.
+**Notes**: Egara-guti is the second expansion tier, structurally analogous to certain Alquerque expansions.
 
 ---
 
-## **5. PRETWA — Circular Triangular Cousin**
+## 5. Pretwa — Circular-Triangular Cousin
 
-Pretwa uses a **circular board** with radial lines and triangular subdivisions.
-
-ASCII (schematic):
+Pretwa employs a circular board with radial lines and triangular subdivisions:
 
 ```
        o
@@ -432,28 +377,22 @@ ASCII (schematic):
        o
 ```
 
-### **Pieces**
-- 12 per player (varies)
+### Pieces
+12 per player (varies by region).
 
-### **Rules**
+### Rules
 - Mandatory captures  
 - Short leap  
-- Multi‑capture required  
-- Movement along radial and circular lines
+- Multi-capture required  
+- Movement along both radial and circular lines  
 
-### **Notes**
-Pretwa is not an expansion of Lau Kata Kati but shares:
-- Mandatory capture  
-- Full initial occupation except center  
-- Indian war‑game structure
+**Notes**: Pretwa is not a direct expansion of Lau Kata Kati but shares the mandatory-capture rule, full initial occupation (except the centre), and overall Indian war-game structure.
 
 ---
 
-## **6. GOL‑SKUISH — Rare Variant**
+## 6. Gol-skuish — Rare Variant
 
-Gol‑skuish uses a **star‑like board** with triangular lobes.
-
-ASCII (schematic):
+Gol-skuish uses a star-like board with triangular lobes:
 
 ```
       o
@@ -463,36 +402,34 @@ o---o---o---o
       o
 ```
 
-### **Pieces**
-- 10–12 per player (regional)
+### Pieces
+10–12 per player (regional variation).
 
-### **Rules**
+### Rules
 - Mandatory captures  
-- Multi‑capture required  
-- Movement along star‑triangular lines
+- Multi-capture required  
+- Movement along the star-triangular lines  
 
-### **Notes**
-Gol‑skuish is the **least documented** member of the family.
-
----
-
-# **7. STRUCTURAL COMPARISON TABLE**
-
-| Game | Board | Points | Pieces | Capture Rule | Opening Rule | Relation |
-|------|--------|---------|---------|----------------|----------------|-----------|
-| **Lau Kata Kati** | Hourglass | 19 | 9 | Mandatory | Forced center capture | Core |
-| **Butterfly** | Hourglass | 19 | 9 | Mandatory | Forced center capture | Twin |
-| **Dash‑guti** | Expanded hourglass | ~25 | 10 | Mandatory | Forced center capture | Expansion 1 |
-| **Egara‑guti** | Larger expansion | ~33 | 11 | Mandatory | Forced center capture | Expansion 2 |
-| **Pretwa** | Circular‑triangular | ~21 | 12 | Mandatory | Forced center capture | Cousin |
-| **Gol‑skuish** | Star‑triangular | ~20 | 10–12 | Mandatory | Forced center capture | Rare variant |
+**Notes**: Gol-skuish is the least-documented member of the family.
 
 ---
 
-# **8. ASCII BOARD APPENDIX**
+## 7. Structural Comparison Table
 
-### **8.1 Lau Kata Kati (19‑point)**
+| Game            | Board                | Points | Pieces | Capture Rule | Opening Rule            | Relation        |
+|-----------------|----------------------|--------|--------|--------------|-------------------------|-----------------|
+| Lau Kata Kati   | Hourglass            | 19     | 9      | Mandatory    | Forced centre capture   | Core            |
+| Butterfly       | Hourglass            | 19     | 9      | Mandatory    | Forced centre capture   | Twin            |
+| Dash-guti       | Expanded hourglass   | ~25    | 10     | Mandatory    | Forced centre capture   | Expansion 1     |
+| Egara-guti      | Larger expansion     | ~33    | 11     | Mandatory    | Forced centre capture   | Expansion 2     |
+| Pretwa          | Circular-triangular  | ~21    | 12     | Mandatory    | Forced centre capture   | Cousin          |
+| Gol-skuish      | Star-triangular      | ~20    | 10–12  | Mandatory    | Forced centre capture   | Rare variant    |
 
+---
+
+## 8. ASCII Board Appendix
+
+### 8.1 Lau Kata Kati (19-point)
 ```
    o---o---o
     \  |  /
@@ -505,8 +442,7 @@ o---o--o--o---o
    o---o---o
 ```
 
-### **8.2 Dash‑guti (expanded)**
-
+### 8.2 Dash-guti (expanded)
 ```
    o---o---o---o---o
     \  |  |  |  /
@@ -519,8 +455,7 @@ o---o--o--o--o--o---o
    o---o---o---o---o
 ```
 
-### **8.3 Egara‑guti (larger)**
-
+### 8.3 Egara-guti (larger)
 ```
    o---o---o---o---o---o
     \  |  |  |  |  /
@@ -533,8 +468,7 @@ o---o--o--o--o--o--o--o---o
    o---o---o---o---o---o
 ```
 
-### **8.4 Pretwa (circular)**
-
+### 8.4 Pretwa (circular)
 ```
        o
      / | \
@@ -545,8 +479,7 @@ o---o--o--o--o--o--o--o---o
        o
 ```
 
-### **8.5 Gol‑skuish (star)**
-
+### 8.5 Gol-skuish (star)
 ```
       o
      / \
@@ -554,5 +487,3 @@ o---o---o---o
      \ /
       o
 ```
-
----
