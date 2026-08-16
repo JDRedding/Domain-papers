@@ -542,7 +542,7 @@ These modify the *objective* or *initial deployment* rather than core movement g
 | **NE Diagonal** | 8×8 | Base rules | Short | Base | Special |
 
 ---
-UNIFIED PARAMETRIC DRAUGHTS ENGINE
+# UNIFIED PARAMETRIC DRAUGHTS ENGINE
 ```
 PARAMETER GROUPS
 ----------------
