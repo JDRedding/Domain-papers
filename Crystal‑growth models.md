@@ -8,7 +8,7 @@ $$
 
 Every mechanism — diffusion‑limited, nucleation‑limited, attachment‑limited, curvature‑driven, anisotropic faceting — enters through:
 
-- the **form of \(M\)**,
+- the **form of $M$**,
 - the **boundary conditions**,
 - the **geometry** of the interface.
 
@@ -56,8 +56,8 @@ $$
 
 This is the universal kinetic law. Everything else is a specialization of:
 
-- the **mobility** \(M\),
-- the **effective driving force** \(\Delta\mu_\text{eff}\),
+- the **mobility** $M$,
+- the **effective driving force** $\Delta\mu_\text{eff}$,
 - the **geometry** of the interface.
 
 **Linear attachment kinetics:**
@@ -137,10 +137,10 @@ $$
 v_n = M\left[\Delta\mu - \gamma(\mathbf{n})\Omega\kappa_\gamma\right].
 $$
 
-- **\(\gamma(\mathbf{n})\)** — anisotropic surface energy  
-- **\(\kappa_\gamma\)** — anisotropic curvature  
+- **$\gamma(\mathbf{n})$** — anisotropic surface energy  
+- **$\kappa_\gamma$** — anisotropic curvature  
 
-Facets correspond to cusps in \(\gamma(\mathbf{n})\).
+Facets correspond to cusps in $\gamma(\mathbf{n})$.
 
 ---
 
