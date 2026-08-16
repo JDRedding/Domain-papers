@@ -372,6 +372,17 @@ The following rules appear in some village traditions and may be included if des
 
 These are not universal.
 
+### Optional variants 
+
+- **Royal Soldier.**  
+  When $|S_i|=1$, the unique remaining soldier $r\in S_i$ may move any positive integer number of steps along a straight line of consecutive vacant points (i.e., the ordinary adjacency relation is replaced by the transitive closure restricted to a single geometric line).
+
+- **Wing Lock.**  
+  Let $W\subset V$ be the vertex set of a triangular wing. If $W\subseteq S_i$, then no piece of player $3-i$ may enter any vertex of $W$.
+
+- **Double Chop.**  
+  If a single turn captures two or more enemy soldiers, the capturing player receives an extra turn (the turn counter $t$ is not flipped).
+
 ---
 
 ## 10. Appendix: Board Templates
