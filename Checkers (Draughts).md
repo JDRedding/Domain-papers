@@ -73,80 +73,98 @@ The following notation and equations encode the unified parametric engine and th
 
 ### 1. Board and positions
 Let the board be a finite grid  
+
 $$
 B = \{0,1,\dots,N_x-1\} \times \{0,1,\dots,N_y-1\}
 $$ 
+
 with $N_x = N_y = 8$ or $10$.
 
-- Dark-square restriction (most variants):  
+- Dark-square restriction (most variants):
+- 
   $$
   S = \bigl\{(x,y)\in B \bigm| x+y \equiv 1 \pmod{2}\bigr\}
-  $$ 
+  $$
+  
   (or $x+y \equiv 0 \pmod{2}$, depending on orientation).  
 - Full-board (Turkish): $S = B$.
 
 Orientation parameter $\omega\in\{\text{standard},\text{NW},\text{NE}\}$ simply rotates or reflects the coordinate axes; the geometry remains isomorphic.
 
 A position is a pair of disjoint finite sets  
+
 $$
 P = (W,B),\qquad W,B\subset S,\quad W\cap B=\emptyset,
 $$ 
+
 where $W$ (resp. $B$) is the set of White (resp. Black) pieces. Each piece carries a type $t\in\{\text{man},\text{king}\}$.
 
 ### 2. Direction sets
 Directions are integer vectors $d=(d_x,d_y)\in\mathbb{Z}^2\setminus\{(0,0)\}$.
 
-- Diagonal:  
+- Diagonal:
+- 
   $$
   D_{\text{diag}} = \bigl\{(\pm1,\pm1)\bigr\}.
   $$
-- Orthogonal:  
+  
+- Orthogonal:
+- 
   $$
   D_{\text{orth}} = \bigl\{(\pm1,0),(0,\pm1)\bigr\}.
   $$
-- Eight directions:  
+  
+- Eight directions:
+-  
   $$
   D_8 = D_{\text{diag}}\cup D_{\text{orth}}.
   $$
 
-Forward half-spaces (relative to a player’s colour $c\in\{+1,-1\}$, where $+1$ means White advances in the positive-$y$ direction):  
+Forward half-spaces (relative to a player’s colour $c\in\{+1,-1\}$, where $+1$ means White advances in the positive-$y$ direction): 
+
 $$
 D_{\text{fwd}}(c) = \{d\in D \mid c\cdot d_y > 0\}
 $$ 
+
 (and analogously for sideways, etc.).
 
 ### 3. Movement predicates
 A piece of type $t$ at square $p\in S$ may move in direction set $D_t$ with range $r_t\in\{\text{short},\text{flying}\}$.
 
-- Short move:  
+- Short move:
+- 
   $$
-  \operatorname{Move}_{\text{short}}(p,d) = \{p+d\} \quad\text{provided }p+d\in S\text{ is empty}.
+  \{Move}_{\text{short}}(p,d) = \{p+d\} \quad\text{provided }p+d\in S\text{ is empty}.
   $$
+  
 - Flying move:  
   $$
-  \operatorname{Move}_{\text{fly}}(p,d) = \{p+k d \mid k=1,2,\dots,\;p+k d\in S,\;\text{all intermediate squares empty}\}.
+  \{Move}_{\text{fly}}(p,d) = \{p+k d \mid k=1,2,\dots,\;p+k d\in S,\;\text{all intermediate squares empty}\}.
   $$
 
 Thus the set of pure (non-capturing) moves for a piece is  
+
 $$
-M(p,t) = \bigcup_{d\in D_t}\operatorname{Move}_{r_t}(p,d).
+M(p,t) = \bigcup_{d\in D_t}\{Move}_{r_t}(p,d).
 $$
 
 ### 4. Capture (jump) predicates
 A capture jumps over an enemy piece. Let $e$ be the enemy colour.
 
-- Short capture (adjacent jump):  
+- Short capture (adjacent jump):
+- 
   $$
-  \operatorname{Cap}_{\text{short}}(p,d) = 
+  \{Cap}_{\text{short}}(p,d) = 
   \begin{cases}
   \{p+2d\} & \text{if }p+d\text{ occupied by enemy, }p+2d\in S\text{ empty},\\
   \emptyset & \text{otherwise}.
   \end{cases}
   $$
 
-- Flying capture (long-range):  
+- Flying capture (long-range):
+- 
   $$
-  \operatorname{Cap}_{\text{fly}}(p,d) = 
+  \{Cap}_{\text{fly}}(p,d) = 
   \bigl\{p+k d \bigm| 
   \exists\,1\le m<k,\;
   p+m d\text{ is the unique enemy on the ray},\;
@@ -160,36 +178,44 @@ Landing rule parameter $\lambda$:
 - $\lambda=\text{final-square-only}$: additional terminal constraints.
 
 The set of single captures is  
+
 $$
-C(p,t) = \bigcup_{d\in D_t^{\text{cap}}}\operatorname{Cap}_{r_t}(p,d).
+C(p,t) = \bigcup_{d\in D_t^{\text{cap}}}\{Cap}_{r_t}(p,d).
 $$
 
 ### 5. Multi-jump sequences
 A legal capturing sequence is a finite path  
+
 $$
 \gamma = (p_0,p_1,\dots,p_\ell),\qquad \ell\ge1,
 $$ 
+
 such that each consecutive pair realises a capture and no piece is jumped twice (or the variant-specific “already-jumped” rule). The set of all maximal sequences starting from $p$ is denoted $\Gamma(p,t)$.
 
 Promotion may occur mid-sequence (Russian-style):  
+
 $$
-\operatorname{Promote}(p,t) = 
+\{Promote}(p,t) = 
 \begin{cases}
 \text{king} & \text{if }p\text{ lies on the opponent’s back rank and }t=\text{man},\\
 t & \text{otherwise}.
 \end{cases}
 $$ 
-If promotion is mid-sequence, the piece continues with the new type $t'=\operatorname{Promote}(p_i,t)$.
+
+If promotion is mid-sequence, the piece continues with the new type $t'=\{Promote}(p_i,t)$.
 
 ### 6. Capture priority
 Let $\mathcal{C}(P)$ be the set of all legal capturing sequences in position $P$.
 
 - Free choice: any $\gamma\in\mathcal{C}(P)$ may be selected.  
-- Maximum pieces:  
+- Maximum pieces:
+- 
   $$
   \mathcal{C}_{\max}(P) = \{\gamma\in\mathcal{C}(P)\mid |\gamma|\text{ is maximal}\}.
   $$
-- Value-based (Frisian-style): assign values $v(\text{man})=1$, $v(\text{king})=v_k>1$ (usually $1<v_k<2$); maximise total captured value  
+  
+- Value-based (Frisian-style): assign values $v(\text{man})=1$, $v(\text{king})=v_k>1$ (usually $1<v_k<2$); maximise total captured value
+- 
   $$
   V(\gamma)=\sum_{i} v(\text{piece jumped at step }i).
   $$
@@ -197,6 +223,7 @@ Let $\mathcal{C}(P)$ be the set of all legal capturing sequences in position $P$
 Mandatory capture: if $\mathcal{C}(P)\ne\emptyset$ then only capturing moves are legal.
 
 ### 7. Legal moves of a position
+
 $$
 L(P) = 
 \begin{cases}
@@ -206,18 +233,22 @@ L(P) =
 $$
 
 ### 8. Terminal conditions
-- Ordinary win:  
+- Ordinary win:
+- 
   $$
   W_{\text{ord}}(P) = 
   \bigl(W=\emptyset\bigr)\;\lor\;
   \bigl(L(P)=\emptyset\text{ for the side to move}\bigr).
   $$
-- Misère win:  
+  
+- Misère win:
+- 
   $$
   W_{\text{mis}}(P) = 
   \bigl(W=\emptyset\bigr)\;\lor\;
   \bigl(L(P)=\emptyset\text{ for the side to move}\bigr)
-  $$ 
+  $$
+  
   (the player who has no pieces or no moves wins).
 
 Draw predicates (simple form):  
@@ -236,7 +267,6 @@ Draw predicates (simple form):
 All other parameters (board size, promotion timing, landing rule $\lambda$, priority function, etc.) are chosen independently, recovering every concrete variant listed in the source document.
 
 This formalisation is complete: every legal move, multi-jump, promotion, priority decision and terminal condition is expressed by the predicates and equations above.
-
 
 ## BASIC CHECKERS (AMERICAN / ENGLISH)
 ```
