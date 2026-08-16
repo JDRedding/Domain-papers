@@ -1,7 +1,7 @@
 # **Coin Games**  
 Coin Impartial Games on a 1D Track
 
-This formalizes four related impartial combinatorial games played with an **arbitrary number \(n \geq 1\) of coins** on a **one-dimensional board**:
+This formalizes four related impartial combinatorial games played with an **arbitrary number $n \geq 1$ of coins** on a **one-dimensional board**:
 
 - **Coins**
 - **Sliding**
@@ -28,10 +28,10 @@ They differ only in **move rules** and thus in their **Sprague–Grundy (SG) str
 # **Coins**
 
 **Board:**  
-A straight line of squares numbered from 0 up to some maximum number \(M\).
+A straight line of squares numbered from 0 up to some maximum number $M$.
 
 **Pieces:**  
-\(n\) coins. Each coin sits on one square. No two coins may share a square.
+$n$ coins. Each coin sits on one square. No two coins may share a square.
 
 **Goal:**  
 If it is your turn and you have no legal move, you lose.
@@ -56,7 +56,7 @@ The player who cannot move loses.
 Same straight line of numbered squares.
 
 **Pieces:**  
-\(n\) coins, each on its own square.
+$n$ coins, each on its own square.
 
 **Goal:**  
 If you have no legal move on your turn, you lose.
@@ -85,7 +85,7 @@ The player who cannot move loses.
 Same straight line of numbered squares.
 
 **Pieces:**  
-\(n\) coins.
+$n$ coins.
 
 **Goal:**  
 If you have no legal move on your turn, you lose.
@@ -117,7 +117,7 @@ The player who cannot move loses.
 Same straight line of numbered squares.
 
 **Pieces:**  
-\(n\) coins.
+$n$ coins.
 
 **Goal:**  
 If you have no legal move on your turn, you lose.
@@ -147,8 +147,8 @@ The player who cannot move loses.
   $$
   0, 1, 2, \dots, M
   $$
-  for some fixed integer \(M \ge n-1\).
-- **Pieces:** \(n\) indistinguishable **coins**, each occupying a distinct square.
+  for some fixed integer $M \ge n-1$.
+- **Pieces:** $n$ indistinguishable **coins**, each occupying a distinct square.
 - **Position notation:** A position is a sorted tuple
   $$
   (a_1, a_2, \dots, a_n)
@@ -168,13 +168,13 @@ All four games share this framework; only the move rules differ.
 
 ---
 
-## 2. Coins-\(n\) (1-step local left, no jump)
+## 2. Coins-$n$ (1-step local left, no jump)
 
 ### 2.1 Rules
 
-- A coin at square \(a_i\) may move to square \(a_i - 1\) if:
-  - \(a_i > 0\), and
-  - square \(a_i - 1\) is **empty**.
+- A coin at square $a_i$ may move to square $a_i - 1$ if:
+  - $a_i > 0$, and
+  - square $a_i - 1$ is **empty**.
 - No jumping is allowed.
 - No rightward moves are allowed.
 
@@ -188,16 +188,16 @@ followed by re-sorting the tuple.
 
 A position is **terminal** if **no coin** has an empty left neighbor. Equivalently:
 
-- For each coin at \(a_i\):
-  - either \(a_i = 0\), or
-  - square \(a_i - 1\) is occupied by another coin.
+- For each coin at $a_i$:
+  - either $a_i = 0$, or
+  - square $a_i - 1$ is occupied by another coin.
 
 These are the **packed configurations**: coins occupy the lowest available squares with no gaps immediately to their left.
 
 ### 2.3 CGT / SG behavior
 
-- **Impartial graph game:** Coins-\(n\) is a finite impartial game on the state graph of \(n\)-coin configurations.
-- **SG computation:** For fixed \(M\), the SG value
+- **Impartial graph game:** Coins-$n$ is a finite impartial game on the state graph of $n$-coin configurations.
+- **SG computation:** For fixed $M$, the SG value
   $$
   G(a_1,\dots,a_n)
   $$
@@ -210,7 +210,7 @@ These are the **packed configurations**: coins occupy the lowest available squar
 
 Important subtlety:
 
-- Coins-\(n\) is **not** simply “each movable coin = heap of size 1, SG = XOR of number of movable coins”.
+- Coins-$n$ is **not** simply “each movable coin = heap of size 1, SG = XOR of number of movable coins”.
 - Moving one coin can open or close moves for others; SG depends on the **full pattern** of occupied and empty squares.
 
 ---
@@ -219,10 +219,10 @@ Important subtlety:
 
 ### 3.1 Rules
 
-- A coin at square \(a_i\) may slide left to any square \(b\) such that:
-  - \(0 \le b < a_i\),
-  - square \(b\) is **empty**, and
-  - all squares strictly between \(b\) and \(a_i\) are **empty**.
+- A coin at square $a_i$ may slide left to any square $b$ such that:
+  - $0 \le b < a_i$,
+  - square $b$ is **empty**, and
+  - all squares strictly between $b$ and $a_i$ are **empty**.
 - The coin stops just before the next occupied square or at 0.
 - No jumping over occupied squares is allowed.
 - No rightward moves are allowed.
@@ -231,11 +231,11 @@ Formally, a move is:
 $$
 (a_1,\dots,a_i,\dots,a_n) \to (a_1,\dots,b,\dots,a_n)
 $$
-with \(b\) chosen as above, followed by re-sorting.
+with $b$ chosen as above, followed by re-sorting.
 
 ### 3.2 Gap decomposition
 
-Let the coins be at \(a_1 < a_2 < \dots < a_n\). Define **gaps**:
+Let the coins be at $a_1 < a_2 < \dots < a_n$. Define **gaps**:
 
 - **Initial gap:**
   $$
@@ -246,18 +246,18 @@ Let the coins be at \(a_1 < a_2 < \dots < a_n\). Define **gaps**:
   g_i = a_{i+1} - a_i - 1 \quad \text{for } i = 1,\dots,n-1.
   $$
 
-Intuitively, \(g_i\) is the number of empty squares between consecutive coins (or between 0 and the first coin).
+Intuitively, $g_i$ is the number of empty squares between consecutive coins (or between 0 and the first coin).
 
 ### 3.3 SG value
 
 Classical analysis of sliding-coin games shows:
 
-- Each gap \(g_i\) behaves like a **Nim heap of size \(g_i\)**.
+- Each gap $g_i$ behaves like a **Nim heap of size $g_i$**.
 - The SG value of the position is:
   $$
   G = g_0 \oplus g_1 \oplus \dots \oplus g_{n-1},
   $$
-  where \(\oplus\) denotes **nim-sum** (bitwise XOR).
+  where $\oplus$ denotes **nim-sum** (bitwise XOR).
 
 Thus:
 
@@ -275,9 +275,9 @@ This is the standard “sliding coins / Silver Dollar without the dollar” resu
 
 ### 4.1 Rules
 
-- A coin at square \(a_i\) may move to any empty square \(b\) such that:
-  - \(0 \le b < a_i\),
-  - square \(b\) is **empty**.
+- A coin at square $a_i$ may move to any empty square $b$ such that:
+  - $0 \le b < a_i$,
+  - square $b$ is **empty**.
 - Jumping over other coins is allowed; intervening squares may be occupied.
 - No rightward moves are allowed.
 
@@ -285,13 +285,13 @@ Formally, a move is:
 $$
 (a_1,\dots,a_i,\dots,a_n) \to (a_1,\dots,b,\dots,a_n)
 $$
-with \(b\) chosen as above, followed by re-sorting.
+with $b$ chosen as above, followed by re-sorting.
 
 This is the classical **Welter / Sato game**.
 
 ### 4.2 Welter function and SG
 
-Let the coins be at positions \(a_1 < a_2 < \dots < a_n\).
+Let the coins be at positions $a_1 < a_2 < \dots < a_n$.
 
 The Sprague–Grundy value is given by the Welter function:
 $$
@@ -301,8 +301,8 @@ G = a_1 \oplus a_2 \oplus \dots \oplus a_n
 $$
 where:
 
-- \(\oplus\) is bitwise nim-sum  
-- \(\mathrm{ord}_2(k)\) is the 2-adic valuation of \(k\) (the highest power of 2 dividing \(k\))
+- $\oplus$ is bitwise nim-sum  
+- $\mathrm{ord}_2(k)$ is the 2-adic valuation of $k$ (the highest power of 2 dividing $k$)
 
 Key facts:
 
@@ -312,8 +312,8 @@ Key facts:
 
 The function is **non-local**:
 
-- SG depends on the **pairwise differences** \(a_i - a_j\), not just on the positions themselves.
-- Simple XOR of the \(a_i\) alone is not sufficient.
+- SG depends on the **pairwise differences** $a_i - a_j$, not just on the positions themselves.
+- Simple XOR of the $a_i$ alone is not sufficient.
 
 Alternative formulations via the **mating function** exist and are equivalent.
 
@@ -323,9 +323,9 @@ Alternative formulations via the **mating function** exist and are equivalent.
 
 ### 5.1 Rules
 
-- A coin at square \(a_i\) may move to:
-  - \(a_i - 1\) if \(a_i > 0\) and square \(a_i - 1\) is empty, or
-  - \(a_i + 1\) if \(a_i < M\) and square \(a_i + 1\) is empty.
+- A coin at square $a_i$ may move to:
+  - $a_i - 1$ if $a_i > 0$ and square $a_i - 1$ is empty, or
+  - $a_i + 1$ if $a_i < M$ and square $a_i + 1$ is empty.
 - No jumping is allowed.
 
 Formally, a move is:
@@ -338,7 +338,7 @@ This is a **token-sliding impartial game** on a path graph.
 
 ### 5.2 Graph view and SG
 
-- The board is a path graph on vertices \(0,\dots,M\).
+- The board is a path graph on vertices $0,\dots,M$.
 - Coins occupy vertices; legal moves are along edges to empty vertices.
 - The position decomposes into **independent regions** (connected components) where coins can move without crossing a jam or boundary.
 
@@ -353,7 +353,7 @@ Conceptual SG structure:
 
 Terminal positions:
 
-- Every coin is blocked on both sides (or at the ends) \(\Rightarrow\) no legal moves \(\Rightarrow\) SG = 0.
+- Every coin is blocked on both sides (or at the ends) $\Rightarrow$ no legal moves $\Rightarrow$ SG = 0.
 
 ---
 
@@ -361,7 +361,7 @@ Terminal positions:
 
 The four games can be classified along several axes:
 
-| Axis            | Coins-\(n\)                     | Sliding                         | Welter                        | Turning                          |
+| Axis            | Coins-$n$                     | Sliding                         | Welter                        | Turning                          |
 |-----------------|---------------------------------|----------------------------------|--------------------------------|-----------------------------------|
 | **Range**       | Local (1 step)                  | Local (multi-step)              | Global (any left square)      | Local (1 step)                    |
 | **Direction**   | Left only                       | Left only                       | Left only                     | Bidirectional (left & right)     |
@@ -374,7 +374,7 @@ Interpretation:
 - **Direction:** Whether coins can move only left or both left and right.
 - **Jumping:** Whether coins may jump over other coins.
 - **SG locality:**
-  - Coins-\(n\): local moves, but SG depends on interactions; no simple heap decomposition.
+  - Coins-$n$: local moves, but SG depends on interactions; no simple heap decomposition.
   - Sliding: SG is a clean XOR of gap sizes.
   - Welter: SG given by a non-local function of positions and their differences.
   - Turning: SG arises from local graph components.
@@ -385,13 +385,13 @@ Interpretation:
 
 - All four games are **impartial** and **normal-play**, so the **Sprague–Grundy theorem** applies:
   - The SG value of a disjunctive sum of positions is the **nim-sum** of their SG values.
-- For fixed \(M\), the number of \(n\)-coin positions is:
+- For fixed $M$, the number of $n$-coin positions is:
   $$
   \binom{M+1}{n},
   $$
-  which is tractable for moderate \(n\) and \(M\).
+  which is tractable for moderate $n$ and $M$.
 
 - **Computation strategies:**
-  - **Coins-\(n\), Turning:** SG via recursive mex / dynamic programming on the state graph.
+  - **Coins-$n$, Turning:** SG via recursive mex / dynamic programming on the state graph.
   - **Sliding:** SG via gap decomposition (no recursion once gaps are known).
   - **Welter:** SG via the closed Welter function (no recursion).
