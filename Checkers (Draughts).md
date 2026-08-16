@@ -1,4 +1,5 @@
 # Checkers/Draughts 
+This note is a comprehensive, mechanics-first rulebook and formal specification for draughts/checkers: it gives a short prose ruleset, a formal mathematical engine for variants, and a taxonomy + encodings for ~19 historical and modern variants.
 
 ```
 BASIC CHECKERS / DRAUGHTS
