@@ -3,7 +3,7 @@ Coin Impartial Games on a 1D Track
 
 This repository formalizes four related impartial combinatorial games played with **six coins** on a **one‑dimensional board**:
 
-- **Coins‑6**
+- **Coins**
 - **Sliding**
 - **Welter’s Game**
 - **Turning**
@@ -25,23 +25,22 @@ They differ only in **move rules** and thus in their **Sprague–Grundy (SG) str
 - **Board:** A linear track of squares labeled
   
 $$
-  0, 1, 2, \dots, M
-  $$
-
+0, 1, 2, \dots, M
+$$
 
   for some fixed integer $M \ge 5$.
 - **Pieces:** Six indistinguishable **coins**, each occupying a distinct square.
 - **Position notation:** A position is a sorted tuple
   
 $$
-  (a_1, a_2, a_3, a_4, a_5, a_6)
-  $$
+(a_1, a_2, a_3, a_4, a_5, a_6)
+$$
 
   with
   
 $$
-  0 \le a_1 < a_2 < \dots < a_6 \le M.
-  $$
+0 \le a_1 < a_2 < \dots < a_6 \le M.
+$$
 
 
 ### 1.2 Play convention
@@ -66,11 +65,9 @@ All four games share this framework; only the move rules differ.
 
 Formally, a move is:
 
-
 $$
 (a_1,\dots,a_i,\dots,a_6) \to (a_1,\dots,a_i-1,\dots,a_6)
 $$
-
 
 followed by re‑sorting the tuple.
 
@@ -89,11 +86,9 @@ These are the **packed configurations**: coins occupy the lowest available squar
 - **Impartial graph game:** Coins‑6 is a finite impartial game on the state graph of 6‑coin configurations.
 - **SG computation:** For fixed $M$, the SG value
   
-
 $$
-  G(a_1,\dots,a_6)
-  $$
-
+G(a_1,\dots,a_6)
+$$
 
   can be computed by **dynamic programming**:
   - For each position, list all legal moves.
@@ -136,14 +131,14 @@ Let the coins be at $a_1 < a_2 < \dots < a_n$ (here $n=6$). Define **gaps**:
 - **Initial gap:**
   
 $$
-  g_0 = a_1 - 0
-  $$
+g_0 = a_1 - 0
+$$
 
 - **Internal gaps:**
 
 $$
-  g_i = a_{i+1} - a_i - 1 \quad \text{for } i = 1,\dots,n-1.
-  $$
+g_i = a_{i+1} - a_i - 1 \quad \text{for } i = 1,\dots,n-1.
+$$
 
 Intuitively, $g_i$ is the number of empty squares between consecutive coins (or between 0 and the first coin).
 
@@ -155,8 +150,8 @@ Classical analysis of sliding‑coin games shows:
 - The SG value of the position is:
 
 $$
-  G = g_0 \oplus g_1 \oplus \dots \oplus g_{n-1},
-  $$
+G = g_0 \oplus g_1 \oplus \dots \oplus g_{n-1},
+$$
 
   where $\oplus$ denotes **nim‑sum** (bitwise XOR).
 
@@ -165,8 +160,8 @@ Thus:
 - **P‑positions:** Those with
   
 $$
-  g_0 \oplus g_1 \oplus \dots \oplus g_{n-1} = 0.
-  $$
+g_0 \oplus g_1 \oplus \dots \oplus g_{n-1} = 0.
+$$
 
 - **N‑positions:** All others.
 
@@ -238,7 +233,6 @@ $$
 (a_1,\dots,a_i,\dots,a_6) \to (a_1,\dots,a_i \pm 1,\dots,a_6)
 $$
 
-
 with the target square chosen as above, followed by re‑sorting.
 
 This is a **token‑sliding impartial game** on a path graph.
@@ -294,11 +288,9 @@ Interpretation:
   - The SG value of a disjunctive sum of positions is the **nim‑sum** of their SG values.
 - For fixed $M$, the number of 6‑coin positions is:
   
-
 $$
-  \binom{M+1}{6},
-  $$
-
+\binom{M+1}{6},
+$$
 
   which is tractable for moderate $M$.
 
