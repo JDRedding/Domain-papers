@@ -2,10 +2,12 @@
 
 ```
 BASIC CHECKERS / DRAUGHTS
-No variant‑specific minimal ruleset.
-a **simple, basic, concise ASCII rulebook**
-covering the *core universal mechanics*
-of draughts/checkers. 
+----------------------------------------
+Non-variant‑specific minimal ruleset
+----------------------------------------
+A simple, basic, concise ASCII rulebook
+covering the core universal mechanics of
+draughts/checkers
 ========================================
 
 BOARD
