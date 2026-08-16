@@ -212,6 +212,15 @@ $$
 - Each turn a player moves **one** soldier.  
 - A soldier may either move or capture, but not both in the same turn.
 
+On player $t$’s turn the legal actions are the set  
+
+$$
+A(P) = M(P)\cup C(P),
+$$  
+
+where $M(P)$ is the set of non-capturing moves and $C(P)$ is the set of (possibly multi-)captures.  
+Exactly one action from $A(P)$ is chosen; the turn then passes.
+
 ### 4.2 Movement
 A soldier may move to any adjacent vacant point along a marked line.
 
