@@ -664,4 +664,3 @@ CAPTURE PRIO: CAPTURE_REQ= mandatory, PRIORITY=max-value,
               VALUE_MODEL= king>man but <2 men
 WIN/DRAW:     WIN_COND= capture-all OR block-all
 ```
-
