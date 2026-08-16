@@ -346,3 +346,59 @@ $$
 $$
 
 ---
+
+## **The τ‑operator**
+
+### **τ as a choice operator** 
+A symbol τ applied to a property $P(x)$ denotes:
+
+$$
+\tau(P) = \text{“some }x\text{ such that }P(x)\text{ holds.”}
+$$
+
+If no such $x$ exists, τ(P) is undefined.
+
+That’s all Bourbaki requires:  
+**τ picks one element satisfying a condition.**
+
+### **τ as a selector**
+A selector applied to a condition $P(x)$ on a region $X$:
+
+$$
+\tau(P) = \text{“some element of }X\text{ satisfying} P.”
+$$
+
+Same abstract role:  
+**τ picks one element satisfying a condition.**
+
+$$
+\tau(P)_{\text{Bourbaki}}
+\quad\longleftrightarrow\quad
+\tau(P)_{\text{RDG}}
+$$
+
+Both sides describe the same abstract object:  
+**a choice operator with no further structure.**
+
+---
+
+## **Equipotence**
+Two sets $X$ and $Y$ are **equipotent** if there exists a bijection between them.
+
+Formally:
+
+$$
+X \sim Y \quad\text{iff}\quad \exists f : X \to Y \text{ that is bijective}.
+$$
+
+Two regions $X$ and $Y$ are **equipotent** if there exists a bijection between them.
+
+$$
+X \sim Y \quad\text{iff}\quad \exists f : X \to Y \text{ that is bijective}.
+$$
+
+$$
+X \sim Y \quad\longleftrightarrow\quad X \sim Y
+$$
+ 
+**Existence of a bijection**.
