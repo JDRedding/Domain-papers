@@ -44,6 +44,17 @@ DRAW CONDITIONS (simple form)
 ```
 ### **Kings**
 
+A **short king** is a king that:
+
+- **Moves exactly 1 square** per move  
+  (in its allowed directions: diagonal, orthogonal, or both depending on the variant)
+- **Captures by jumping over an adjacent enemy**  
+  (never over a distant enemy)
+- **Cannot slide or travel multiple squares**  
+  (no long-range movement, no long-range capture landing)
+- **Cannot “fly”**  
+  (cannot move or capture across multiple empty squares)
+
 **Flying** (in draughts/checkers) means:
 
 > **A king can move and capture any distance along a straight line until blocked.**
@@ -56,17 +67,6 @@ A **flying king** is a king that:
 3. **Continues sliding after the capture** to any empty square beyond the captured piece  
    (except in variants that force landing immediately behind the captured piece).
 4. **Can chain multiple long-range captures** in one turn.
-
-A **short king** is a king that:
-
-- **Moves exactly 1 square** per move  
-  (in its allowed directions: diagonal, orthogonal, or both depending on the variant)
-- **Captures by jumping over an adjacent enemy**  
-  (never over a distant enemy)
-- **Cannot slide or travel multiple squares**  
-  (no long-range movement, no long-range capture landing)
-- **Cannot “fly”**  
-  (cannot move or capture across multiple empty squares)
 
 ## BASIC CHECKERS (AMERICAN / ENGLISH)
 ```
