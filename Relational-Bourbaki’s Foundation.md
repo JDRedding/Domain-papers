@@ -117,7 +117,7 @@ $$
 But adds **flux semantics**:
 
 - Nodes in A△B are those whose membership edges differ between A and B  
-- The operation is **commutative**, **associative**, and **in$olutive**  
+- The operation is **commutative**, **associative**, and **involutive**  
 - △ corresponds to **bipolar flux cancellation**: elements present in both A and B cancel out, leaving only asymmetric membership
 
 Thus △ becomes the analogue of XOR in the Structure layer.
