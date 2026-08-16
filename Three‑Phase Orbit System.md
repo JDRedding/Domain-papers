@@ -43,6 +43,9 @@ Abstract Axiomatisation
 ```
 ### **Triadic System (5‑tuple definition)**  
 
+* **Minimal Triadic Engine:** This definition establishes the formal mathematical threshold for triadic stability. Any continuous, discrete, or categorical system that satisfies $\vert{}\Phi(\langle T_1, T_2 \rangle \cdot F)\vert{} = 3$ instantly inherits deterministic 3-state phase dynamics under composition.
+* **Invariance Under Projection:** The dynamics do not require $T_1$ or $T_2$ to be finite or periodic in $\mathcal{S}$; periodicity or fixed-cycle behavior only needs to manifest *post-collapse* in image space $\mathcal{C}$.
+
 A triadic system is a tuple  
 
 $$
@@ -125,5 +128,32 @@ $$
 
 closed under the induced action of $\Phi\circ T_1$ and $\Phi\circ T_2$.
 
+### **Core Structural Properties**
 
+1. **Monoid Generator Action**
+The orbit $\mathcal{O}(F) = \langle T_1, T_2 \rangle \cdot F$ represents all accessible states reached via compositions of $T_1$ and $T_2$:
+
+$$\mathcal{O}(F) = \{ g(F) \mid g \in \langle T_1, T_2 \rangle \}$$
+
+2. **Phase Boundary & Projection**
+The collapse map $\Phi: \mathcal{S} \to \mathcal{C}$ quotient-maps the high-dimensional or infinite state trajectory to a discrete 3-point residue set:
+
+$$\mathcal{O}_\Phi(F) = \{P_1, P_2, P_3\} \subset \mathcal{C}$$
+
+3. **Induced Closure**
+For every collapsed state $P_k \in \{P_1, P_2, P_3\}$ and generator $j \in \{1, 2\}$, there exists a unique mapping within the set:
+
+$$\forall s \in \mathcal{O}(F), \quad \Phi(T_j(s)) \in \{P_1, P_2, P_3\}$$
+
+### **Action Map Matrix**
+
+Because the image $\{P_1, P_2, P_3\}$ is closed under the induced action of both operators, the system can be explicitly represented as a pair of transition functions $\bar{T}_1, \bar{T}_2: \{P_1, P_2, P_3\} \to \{P_1, P_2, P_3\}$:
+
+| Current State | Induced $\bar{T}_1$ Action | Induced $\bar{T}_2$ Action |
+| --- | --- | --- |
+| **$P_1$** | $\Phi(T_1(s_1)) = P_{\sigma_1(1)}$ | $\Phi(T_2(s_1)) = P_{\sigma_2(1)}$ |
+| **$P_2$** | $\Phi(T_1(s_2)) = P_{\sigma_1(2)}$ | $\Phi(T_2(s_2)) = P_{\sigma_2(2)}$ |
+| **$P_3$** | $\Phi(T_1(s_3)) = P_{\sigma_1(3)}$ | $\Phi(T_2(s_3)) = P_{\sigma_2(3)}$ |
+
+*(where $s_k \in \Phi^{-1}(P_k)$ and $\sigma_1, \sigma_2 \in \{1, 2, 3\}^{\{1, 2, 3\}}$ represent the permutation/transformation profiles on the collapsed set).*
 
