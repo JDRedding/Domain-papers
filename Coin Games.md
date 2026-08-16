@@ -423,3 +423,150 @@ $$
   - **Coins-$n$, Turning:** SG via recursive mex / dynamic programming on the state graph.
   - **Sliding:** SG via gap decomposition (no recursion once gaps are known).
   - **Welter:** SG via the closed Welter function (no recursion).
+
+---
+
+# **Appendix A — Frequently Asked Questions (FAQ)**
+
+## **A.1 Board Size and Boundaries**
+
+**Q: Is the board size $M$ fixed for the entire game?**  
+Yes. Each game instance chooses a fixed finite board $0..M$. All moves must remain within this range.
+
+**Q: Can the board be infinite?**  
+Not in this rulebook. An infinite board changes SG behavior (especially for Sliding and Turning), so the rules assume a finite $M$.
+
+**Q: How large must $M$ be?**  
+At minimum, $M \ge n-1$ so the initial position is legal. Larger $M$ simply allows more movement.
+
+---
+
+## **A.2 Coin Identity and Sorting**
+
+**Q: Are coins distinguishable?**  
+No. Coins are identical tokens. Only the **set of occupied squares** matters.
+
+**Q: Why do we “re-sort” after a move?**  
+Sorting is not a physical action; it is a **notation convention**. Positions are always written as a sorted tuple  
+$(a_1 < a_2 < \dots < a_n)$  
+to avoid ambiguity.
+
+---
+
+## **A.3 Terminal Positions**
+
+### **Coins, Sliding, Welter**
+
+**Q: When is a position terminal?**  
+When **no coin has an empty square to its left**.  
+A coin at square $a_i$ is blocked if:
+
+- $a_i = 0$, or  
+- $a_i - 1$ is occupied.
+
+### **Turning**
+
+**Q: What does “blocked on both sides” mean?**  
+A coin at $a_i$ is blocked if:
+
+- Left neighbor: $a_i - 1$ is occupied or off-board  
+- Right neighbor: $a_i + 1$ is occupied or off-board
+
+The game ends only when **every** coin satisfies both conditions.
+
+**Q: Do adjacent coins automatically make the position terminal?**  
+No. Adjacent coins block each other on one side, but they may still move on the other side if space exists.
+
+---
+
+## **A.4 Move Legality Clarifications**
+
+### **Sliding**
+
+**Q: Can a coin slide past another coin?**  
+No. All intermediate squares must be empty.
+
+### **Welter**
+
+**Q: Can a coin jump over other coins?**  
+Yes. Only the **destination** square must be empty.
+
+### **Turning**
+
+**Q: Can coins pass each other?**  
+No. Moves are 1-step and cannot jump, so coins never cross.
+
+---
+
+## **A.5 Sprague–Grundy (SG) Behavior**
+
+**Q: Why does Coins-$n$ require dynamic programming?**  
+Because moving one coin can open or close moves for others. SG depends on the **full pattern**, not just gaps.
+
+**Q: Why is Sliding just XOR of gaps?**  
+Because each gap behaves like an independent Nim heap. No move affects more than one gap.
+
+**Q: Why is Welter non-local?**  
+Because SG depends on pairwise 2-adic valuations of differences $a_i - a_j$. This is a global interaction.
+
+**Q: Why are Turning SG values small?**  
+Turning decomposes into **local movable regions** on a path graph. Each region has SG in $\{0,1,2\}$.
+
+---
+
+## **A.6 Cycles and Termination**
+
+**Q: Can the game loop forever?**  
+No. In all four games, coins never pass each other, and movement is monotone or bounded. The state graph is **acyclic**.
+
+**Q: Can a position repeat?**  
+Yes, but only trivially (e.g., moving right then left in Turning). Repetition does not create cycles because the game graph still has no infinite descending chains.
+
+---
+
+## **A.7 Implementation Notes**
+
+**Q: Do I need to track coin labels?**  
+No. Treat positions as sets of occupied squares.
+
+**Q: Do I need to track move history?**  
+No. SG depends only on the current position.
+
+**Q: Are illegal moves ever ambiguous?**  
+No. All move rules are local and deterministic.
+
+---
+
+## **A.8 Relation to Classical Games**
+
+**Q: Is Turning the same as Turning Toads or Dawson’s Kayles?**  
+No. This Turning game is **bidirectional token sliding**, not the classical frog/toad or Kayles variants.
+
+**Q: Is Sliding the Silver Dollar game?**  
+Yes, except without the “dollar” piece.
+
+**Q: Is Welter the classical Welter/Sato game?**  
+Yes. The SG formula matches the standard Welter function.
+
+---
+
+## **A.9 Strategy Questions**
+
+**Q: Are P-positions always unique?**  
+Yes. SG = 0 uniquely characterizes P-positions.
+
+**Q: Can I combine multiple boards?**  
+Yes. The disjunctive sum of positions has SG equal to the XOR of their SG values.
+
+---
+
+## **A.10 Miscellaneous**
+
+**Q: Can coins move off the board?**  
+No.
+
+**Q: Can two coins occupy the same square?**  
+Never.
+
+**Q: Can I add or remove coins mid-game?**  
+Not in these rules.
