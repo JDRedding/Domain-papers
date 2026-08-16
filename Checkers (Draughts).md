@@ -81,12 +81,13 @@ $$
 with $N_x = N_y = 8$ or $10$.
 
 - Dark-square restriction (most variants):
-- 
-  $$
-  S = \bigl\{(x,y)\in B \bigm| x+y \equiv 1 \pmod{2}\bigr\}
-  $$
+
+$$
+S = \bigl\{(x,y)\in B \bigm| x+y \equiv 1 \pmod{2}\bigr\}
+$$
   
-  (or $x+y \equiv 0 \pmod{2}$, depending on orientation).  
+  (or $x+y \equiv 0 \pmod{2}$, depending on orientation). 
+  
 - Full-board (Turkish): $S = B$.
 
 Orientation parameter $\omega\in\{\text{standard},\text{NW},\text{NE}\}$ simply rotates or reflects the coordinate axes; the geometry remains isomorphic.
@@ -104,21 +105,21 @@ Directions are integer vectors $d=(d_x,d_y)\in\mathbb{Z}^2\setminus\{(0,0)\}$.
 
 - Diagonal:
   
-  $$
-  D_{\text{diag}} = \bigl\{(\pm1,\pm1)\bigr\}.
-  $$
+$$
+D_{\text{diag}} = \bigl\{(\pm1,\pm1)\bigr\}.
+$$
   
 - Orthogonal:
   
-  $$
-  D_{\text{orth}} = \bigl\{(\pm1,0),(0,\pm1)\bigr\}.
-  $$
+$$
+D_{\text{orth}} = \bigl\{(\pm1,0),(0,\pm1)\bigr\}.
+$$
   
 - Eight directions:
-- 
-  $$
-  D_8 = D_{\text{diag}}\cup D_{\text{orth}}.
-  $$
+ 
+$$
+D_8 = D_{\text{diag}}\cup D_{\text{orth}}.
+$$
 
 Forward half-spaces (relative to a player’s colour $c\in\{+1,-1\}$, where $+1$ means White advances in the positive-$y$ direction): 
 
@@ -133,15 +134,15 @@ A piece of type $t$ at square $p\in S$ may move in direction set $D_t$ with rang
 
 - Short move:
   
-  $$
-  \{Move}_{\text{short}}(p,d) = \{p+d\} \quad\text{provided }p+d\in S\text{ is empty}.
-  $$
+$$
+\{Move}_{\text{short}}(p,d) = \{p+d\} \quad\text{provided }p+d\in S\text{ is empty}.
+$$
   
 - Flying move:  
 
-  $$
-  \{Move}_{\text{fly}}(p,d) = \{p+k d \mid k=1,2,\dots,\;p+k d\in S,\;\text{all intermediate squares empty}\}.
-  $$
+$$
+\{Move}_{\text{fly}}(p,d) = \{p+k d \mid k=1,2,\dots,\;p+k d\in S,\;\text{all intermediate squares empty}\}.
+$$
 
 Thus the set of pure (non-capturing) moves for a piece is  
 
@@ -154,24 +155,24 @@ A capture jumps over an enemy piece. Let $e$ be the enemy colour.
 
 - Short capture (adjacent jump):
   
-  $$
-  \{Cap}_{\text{short}}(p,d) = 
-  \begin{cases}
-  \{p+2d\} & \text{if }p+d\text{ occupied by enemy, }p+2d\in S\text{ empty},\\
-  \emptyset & \text{otherwise}.
-  \end{cases}
-  $$
+$$
+\{Cap}_{\text{short}}(p,d) = 
+\begin{cases}
+\{p+2d\} & \text{if }p+d\text{ occupied by enemy, }p+2d\in S\text{ empty},\\
+\emptyset & \text{otherwise}.
+\end{cases}
+$$
 
 - Flying capture (long-range):
   
-  $$
-  \{Cap}_{\text{fly}}(p,d) = 
-  \bigl\{p+k d \bigm| 
-  \exists\,1\le m<k,\;
-  p+m d\text{ is the unique enemy on the ray},\;
-  \text{all other squares on the ray empty},\;
-  p+k d\in S\text{ empty}\bigr\}.
-  $$
+$$
+\{Cap}_{\text{fly}}(p,d) = 
+\bigl\{p+k d \bigm| 
+\exists\,1\le m<k,\;
+p+m d\text{ is the unique enemy on the ray},\;
+\text{all other squares on the ray empty},\;
+p+k d\in S\text{ empty}\bigr\}.
+$$
 
 Landing rule parameter $\lambda$:  
 - $\lambda=\text{behind}$: force $k=m+1$;  
@@ -211,15 +212,15 @@ Let $\mathcal{C}(P)$ be the set of all legal capturing sequences in position $P$
 - Free choice: any $\gamma\in\mathcal{C}(P)$ may be selected.  
 - Maximum pieces:
   
-  $$
-  \mathcal{C}_{\max}(P) = \{\gamma\in\mathcal{C}(P)\mid |\gamma|\text{ is maximal}\}.
-  $$
+$$
+\mathcal{C}_{\max}(P) = \{\gamma\in\mathcal{C}(P)\mid |\gamma|\text{ is maximal}\}.
+$$
   
 - Value-based (Frisian-style): assign values $v(\text{man})=1$, $v(\text{king})=v_k>1$ (usually $1<v_k<2$); maximise total captured value
   
-  $$
-  V(\gamma)=\sum_{i} v(\text{piece jumped at step }i).
-  $$
+$$
+V(\gamma)=\sum_{i} v(\text{piece jumped at step }i).
+$$
 
 Mandatory capture: if $\mathcal{C}(P)\ne\emptyset$ then only capturing moves are legal.
 
@@ -236,19 +237,19 @@ $$
 ### 8. Terminal conditions
 - Ordinary win:
   
-  $$
-  W_{\text{ord}}(P) = 
-  \bigl(W=\emptyset\bigr)\;\lor\;
-  \bigl(L(P)=\emptyset\text{ for the side to move}\bigr).
-  $$
+$$
+W_{\text{ord}}(P) = 
+\bigl(W=\emptyset\bigr)\;\lor\;
+\bigl(L(P)=\emptyset\text{ for the side to move}\bigr).
+$$
   
 - Misère win:
   
-  $$
-  W_{\text{mis}}(P) = 
-  \bigl(W=\emptyset\bigr)\;\lor\;
-  \bigl(L(P)=\emptyset\text{ for the side to move}\bigr)
-  $$
+$$
+W_{\text{mis}}(P) = 
+\bigl(W=\emptyset\bigr)\;\lor\;
+\bigl(L(P)=\emptyset\text{ for the side to move}\bigr)
+$$
   
   (the player who has no pieces or no moves wins).
 
