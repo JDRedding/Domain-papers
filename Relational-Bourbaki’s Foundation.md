@@ -39,6 +39,8 @@ The document preserves Bourbaki’s extensional algebraic structure while adding
 └──────────────────────────────────────────────┘
 ```
 
+Relational-Bourbaki sits in an intermediate position. It keeps Bourbaki’s concrete structural vocabulary and species idea but makes the relations explicitly operational and dynamic (regions, edges, flux). This moves it closer to the morphism-centric spirit of category theory while remaining grounded in graph-like carriers that are immediately usable for computation and neural message passing. Where pure category theory often stays highly abstract, Relational-Bourbaki prioritizes an executable, flux-aware graph semantics that can serve as a bridge between classical structural foundations and modern geometric/deep learning on graphs.
+
 ## Core mapping patterns
 - Sets → Regions: a set is a region (nodes + structure + dynamics).
 - Membership x ∈ X → typed membership edge (Member(x,X)).
