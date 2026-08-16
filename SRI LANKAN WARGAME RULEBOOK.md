@@ -365,14 +365,6 @@ $$
 \mu(v) = \deg(v) = |\{ u \in V : \{v,u\} \in E \}|.
 $$
 
-The central grid maximizes average mobility:
-
-$$
-\overline{\mu}_C = \frac{1}{|C|} \sum_{v \in C} \mu(v) > \overline{\mu}_{W_i}
-$$
-
-for any wing.  
-
 A player’s **tactical control** of the center can be quantified by the occupied high-mobility subset:
 
 $$
@@ -421,7 +413,15 @@ Because captures are not mandatory:
 The 5 × 5 Alquerque grid is the tactical core of the board:
 - Greatest number of lines  
 - Highest mobility  
-- Most capture routes  
+- Most capture routes
+
+The central grid maximizes average mobility:
+
+$$
+\overline{\mu}_C = \frac{1}{|C|} \sum_{v \in C} \mu(v) > \overline{\mu}_{W_i}
+$$
+
+for any wing.  
 
 Wing control is primarily strategic; grid control is primarily tactical.
 
