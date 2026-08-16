@@ -567,3 +567,11 @@ Example species:
 
 But the definition is purely schematic.
 
+---
+
+## Technical notes
+
+- Bourbaki’s $\subset$ is non-strict; the document correctly maps the strict case to $\subsetneq$ (or $\subsetneq$) with an extra cardinality or flux-asymmetry condition.
+- Equipotence is strengthened to *flux-preserving bijection*. This is compatible with classical equipotence; the extra condition is simply a refinement available once dynamics are present.
+- The empty region is correctly identified as the unique degenerate fixed point.
+- Power-set can be realized either as a second-order region or as a type-level constructor; both readings are legitimate inside Bourbaki’s structuralist framework.
