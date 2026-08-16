@@ -1,4 +1,4 @@
-**Coin Games**  
+# **Coin Games**  
 Coin Impartial Games on a 1D Track
 
 This formalizes four related impartial combinatorial games played with an **arbitrary number \(n \geq 1\) of coins** on a **one-dimensional board**:
