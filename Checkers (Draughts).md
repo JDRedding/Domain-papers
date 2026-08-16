@@ -42,6 +42,346 @@ DRAW CONDITIONS (simple form)
 ========================================
 ```
 
+ARMENIAN (TAMA)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: orthogonal forward + sideways + diagonal forward.
+- Kings: 8 directions (orthogonal + diagonal).
+
+Capture geometry:
+- Men: orthogonal (forward + sideways).
+- Kings: mostly orthogonal; some diagonal variants.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Adds orthogonal movement/capture; kings fly; men move partly diagonal.
+
+--------------------------------------------------------------------
+```
+CENTRAL-SOUTH GERMAN
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only.
+- Kings: diagonal forward/backward; must land behind capture.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Similar to BASIC but stricter king landing rules.
+
+--------------------------------------------------------------------
+```
+CHECKERS (AMERICAN / ENGLISH)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only.
+- Kings: diagonal forward/backward.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Essentially identical to BASIC.
+
+--------------------------------------------------------------------
+```
+CHECKERS 10x10 (15 MEN)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal all directions (flying).
+
+Capture geometry:
+- Men: diagonal all directions.
+- Kings: diagonal all directions.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Flying kings + backward capture for men + 10×10 board.
+
+--------------------------------------------------------------------
+```
+INTERNATIONAL 10x10 (20 MEN)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal all directions (flying).
+
+Capture geometry:
+- Men: diagonal all directions.
+- Kings: diagonal all directions.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Flying kings + backward capture + maximum-capture rule.
+
+--------------------------------------------------------------------
+```
+DOUBLE-BACK
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward; some backward movement variants.
+- Kings: diagonal both directions (short or flying depending on source).
+
+Capture geometry:
+- Men: diagonal forward + backward emphasis.
+- Kings: diagonal both directions.
+
+King range:
+- Kings: short or flying (variant-dependent).
+
+Difference from BASIC:
+- Adds backward movement/capture for men.
+
+--------------------------------------------------------------------
+```
+FRISIAN 10x10
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: all 8 directions (orthogonal + diagonal).
+
+Capture geometry:
+- Men: all 8 directions.
+- Kings: all 8 directions.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Orthogonal captures + flying kings + 8-direction capture.
+
+--------------------------------------------------------------------
+```
+GERMAN (DAMESPIEL)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only.
+- Kings: diagonal forward/backward; must land behind capture.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Mandatory landing behind captured piece.
+
+--------------------------------------------------------------------
+```
+GOTHIC (ALTDEUTSCHES DAMESPIEL)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: 5 directions (forward, diagonal, sideways).
+- Kings: same 5 directions.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Adds sideways captures; no backward capture for men.
+
+--------------------------------------------------------------------
+```
+ITALIAN
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only; cannot capture kings.
+- Kings: diagonal forward/backward.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Men cannot capture kings; strict capture priority rules.
+
+--------------------------------------------------------------------
+```
+LOSING / SUICIDE / MISÈRE
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Same as base variant chosen (often Russian).
+
+Capture geometry:
+- Same as base variant.
+
+King range:
+- Same as base variant.
+
+Difference from BASIC:
+- Win by losing all pieces or having no moves.
+
+--------------------------------------------------------------------
+```
+NW DIAGONAL
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward along NW–SE army orientation.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only.
+- Kings: diagonal forward/backward.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Same rules, different starting geometry.
+
+--------------------------------------------------------------------
+```
+NE DIAGONAL
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward along NE–SW army orientation.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only.
+- Kings: diagonal forward/backward.
+
+King range:
+- Kings: short.
+
+Difference from BASIC:
+- Same rules, different starting geometry.
+
+--------------------------------------------------------------------
+```
+POOL (AMERICAN POOL CHECKERS)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal all directions (flying).
+
+Capture geometry:
+- Men: diagonal all directions.
+- Kings: diagonal all directions.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Flying kings + backward capture + free-choice capture.
+
+--------------------------------------------------------------------
+```
+RUSSIAN (SHASHKI)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal all directions (flying).
+
+Capture geometry:
+- Men: diagonal all directions.
+- Kings: diagonal all directions.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Men promote mid-capture and continue as king.
+
+--------------------------------------------------------------------
+```
+SCANDINAVIAN (MAKVÆR / RELATED)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal + orthogonal (varies).
+
+Capture geometry:
+- Men: diagonal + orthogonal.
+- Kings: diagonal + orthogonal.
+
+King range:
+- Kings: usually flying.
+
+Difference from BASIC:
+- Orthogonal captures; often flying kings.
+
+--------------------------------------------------------------------
+```
+SPANISH
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal all directions (often flying).
+
+Capture geometry:
+- Men: diagonal all directions.
+- Kings: diagonal all directions.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Flying kings + backward capture; Iberian capture priorities.
+
+--------------------------------------------------------------------
+```
+TURKISH (DAMA)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: orthogonal forward + sideways.
+- Kings: orthogonal all directions.
+
+Capture geometry:
+- Men: orthogonal only.
+- Kings: orthogonal only.
+
+King range:
+- Kings: flying.
+
+Difference from BASIC:
+- Orthogonal-only movement/capture; flying kings; uses all 64 squares.
+--------------------------------------------------------------------
+```
+
 All 19 variants fall into **five mechanical superfamilies** based on *movement geometry*, *capture geometry*, and *king range*:  
 1. **Orthogonal Men / Orthogonal Kings** (Turkish-line)  
 2. **Diagonal Men / Short Kings** (English-line)  
