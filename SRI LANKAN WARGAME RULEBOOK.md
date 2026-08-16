@@ -444,6 +444,16 @@ High initial density corresponds to $\delta$ close to $1$ (nearly full board), p
 
 ## 9. Optional Advanced Rules (Traditional Variants)
 
+A **simple capture** exists along an edge when an opposing piece occupies an adjacent vertex and the landing vertex beyond it is empty.  
+
+Because captures are optional, a player may choose a non-capturing move even when a capture is available. The **baiting/stalling value** of a position can be viewed as the difference
+
+$$
+\Delta = M_{\text{forced}} - M_{\text{optional}},
+$$
+
+where $M_{\text{forced}}$ is the material loss under mandatory capture and $M_{\text{optional}}$ is the expected material under free choice (including formation-building).
+
 The following rules appear in some village traditions and may be included if desired:
 
 - **Royal Soldier**: The last surviving soldier gains extended movement.  
@@ -457,11 +467,27 @@ These are not universal.
 - **Royal Soldier.**  
   When $|S_i|=1$, the unique remaining soldier $r\in S_i$ may move any positive integer number of steps along a straight line of consecutive vacant points (i.e., the ordinary adjacency relation is replaced by the transitive closure restricted to a single geometric line).
 
+  When only one own piece remains, it becomes a **Royal Soldier** whose move set is enlarged. If the ordinary move set of a piece is the closed neighborhood $N[v]$, the royal version may use
+  
+$$
+N_{\text{royal}}[v] = N[v] \cup \{ \text{additional permitted steps} \}
+$$
+
+(exact enlargement depends on local rules, commonly one extra orthogonal or diagonal step).
+
 - **Wing Lock.**  
   Let $W\subset V$ be the vertex set of a triangular wing. If $W\subseteq S_i$, then no piece of player $3-i$ may enter any vertex of $W$.
 
 - **Double Chop.**  
-  If a single turn captures two or more enemy soldiers, the capturing player receives an extra turn (the turn counter $t$ is not flipped).
+  If a single turn captures two or more enemy soldiers, the capturing player receives an extra turn (the turn counter $t$ is not flipped). Under the **Double Chop** variant, a double capture ($k=2$) awards an extra move, formally adding one extra turn after any path of length exactly 2.
+  
+A **multi-jump sequence** of length $k$ is a path
+
+$$
+v_0 \to v_1 \to \dots \to v_k
+$$
+
+in which each consecutive pair realizes a capture.  
 
 ---
 
