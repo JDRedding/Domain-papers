@@ -464,7 +464,7 @@ These are not universal.
 
 ### Optional variants 
 
-- **Royal Soldier.**  
+- **Royal Soldier**  
   When $|S_i|=1$, the unique remaining soldier $r\in S_i$ may move any positive integer number of steps along a straight line of consecutive vacant points (i.e., the ordinary adjacency relation is replaced by the transitive closure restricted to a single geometric line).
 
   When only one own piece remains, it becomes a **Royal Soldier** whose move set is enlarged. If the ordinary move set of a piece is the closed neighborhood $N[v]$, the royal version may use
@@ -475,19 +475,19 @@ $$
 
   (exact enlargement depends on local rules, commonly one extra orthogonal or diagonal step).
 
-- **Wing Lock.**  
+- **Wing Lock**  
   Let $W\subset V$ be the vertex set of a triangular wing. If $W\subseteq S_i$, then no piece of player $3-i$ may enter any vertex of $W$.
 
-- **Double Chop.**  
+- **Double Chop**  
   If a single turn captures two or more enemy soldiers, the capturing player receives an extra turn (the turn counter $t$ is not flipped). Under the **Double Chop** variant, a double capture ($k=2$) awards an extra move, formally adding one extra turn after any path of length exactly 2.
   
-A **multi-jump sequence** of length $k$ is a path
+  A **multi-jump sequence** of length $k$ is a path
 
 $$
 v_0 \to v_1 \to \dots \to v_k
 $$
 
-in which each consecutive pair realizes a capture.  
+  in which each consecutive pair realizes a capture.  
 
 ---
 
