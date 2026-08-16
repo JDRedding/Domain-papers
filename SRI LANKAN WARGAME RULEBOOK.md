@@ -661,7 +661,19 @@ Win conditions remain the same.
 Egara-guti further expands Dash-guti, adding more intersection points and lines:
 
 ```
-
+o-----o-----o
+ \    |    /
+  o---o---o
+  |\  |  /|
+  | o-o-o |
+  |  \|/  |
+  |   o   |
+  |  /|\  |
+  | o-o-o |
+  |/  |  \|
+  o---o---o
+ /    |    \
+o-----o-----o
 ```
 
 ### Pieces
