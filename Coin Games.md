@@ -144,19 +144,19 @@ The player who cannot move loses.
 ### 1.1 Board and pieces
 
 - **Board:** A linear track of squares labeled
-  \[
+  $$
   0, 1, 2, \dots, M
-  \]
+  $$
   for some fixed integer \(M \ge n-1\).
 - **Pieces:** \(n\) indistinguishable **coins**, each occupying a distinct square.
 - **Position notation:** A position is a sorted tuple
-  \[
+  $$
   (a_1, a_2, \dots, a_n)
-  \]
+  $$
   with
-  \[
+  $$
   0 \le a_1 < a_2 < \dots < a_n \le M.
-  \]
+  $$
 
 ### 1.2 Play convention
 
@@ -179,9 +179,9 @@ All four games share this framework; only the move rules differ.
 - No rightward moves are allowed.
 
 Formally, a move is:
-\[
+$$
 (a_1,\dots,a_i,\dots,a_n) \to (a_1,\dots,a_i-1,\dots,a_n)
-\]
+$$
 followed by re-sorting the tuple.
 
 ### 2.2 Terminal positions
@@ -198,9 +198,9 @@ These are the **packed configurations**: coins occupy the lowest available squar
 
 - **Impartial graph game:** Coins-\(n\) is a finite impartial game on the state graph of \(n\)-coin configurations.
 - **SG computation:** For fixed \(M\), the SG value
-  \[
+  $$
   G(a_1,\dots,a_n)
-  \]
+  $$
   can be computed by **dynamic programming**:
   - For each position, list all legal moves.
   - Take the **mex** (minimum excluded value) of the SG values of successor positions.
@@ -228,9 +228,9 @@ Important subtlety:
 - No rightward moves are allowed.
 
 Formally, a move is:
-\[
+$$
 (a_1,\dots,a_i,\dots,a_n) \to (a_1,\dots,b,\dots,a_n)
-\]
+$$
 with \(b\) chosen as above, followed by re-sorting.
 
 ### 3.2 Gap decomposition
@@ -238,13 +238,13 @@ with \(b\) chosen as above, followed by re-sorting.
 Let the coins be at \(a_1 < a_2 < \dots < a_n\). Define **gaps**:
 
 - **Initial gap:**
-  \[
+  $$
   g_0 = a_1 - 0
-  \]
+  $$
 - **Internal gaps:**
-  \[
+  $$
   g_i = a_{i+1} - a_i - 1 \quad \text{for } i = 1,\dots,n-1.
-  \]
+  $$
 
 Intuitively, \(g_i\) is the number of empty squares between consecutive coins (or between 0 and the first coin).
 
@@ -254,17 +254,17 @@ Classical analysis of sliding-coin games shows:
 
 - Each gap \(g_i\) behaves like a **Nim heap of size \(g_i\)**.
 - The SG value of the position is:
-  \[
+  $$
   G = g_0 \oplus g_1 \oplus \dots \oplus g_{n-1},
-  \]
+  $$
   where \(\oplus\) denotes **nim-sum** (bitwise XOR).
 
 Thus:
 
 - **P-positions:** Those with
-  \[
+  $$
   g_0 \oplus g_1 \oplus \dots \oplus g_{n-1} = 0.
-  \]
+  $$
 - **N-positions:** All others.
 
 This is the standard “sliding coins / Silver Dollar without the dollar” result.
@@ -282,9 +282,9 @@ This is the standard “sliding coins / Silver Dollar without the dollar” resu
 - No rightward moves are allowed.
 
 Formally, a move is:
-\[
+$$
 (a_1,\dots,a_i,\dots,a_n) \to (a_1,\dots,b,\dots,a_n)
-\]
+$$
 with \(b\) chosen as above, followed by re-sorting.
 
 This is the classical **Welter / Sato game**.
@@ -294,11 +294,11 @@ This is the classical **Welter / Sato game**.
 Let the coins be at positions \(a_1 < a_2 < \dots < a_n\).
 
 The Sprague–Grundy value is given by the Welter function:
-\[
+$$
 G = a_1 \oplus a_2 \oplus \dots \oplus a_n
 \oplus \bigoplus_{1\le i<j\le n}
 \bigl(2^{\mathrm{ord}_2(a_i-a_j)+1}-1\bigr)
-\]
+$$
 where:
 
 - \(\oplus\) is bitwise nim-sum  
@@ -329,9 +329,9 @@ Alternative formulations via the **mating function** exist and are equivalent.
 - No jumping is allowed.
 
 Formally, a move is:
-\[
+$$
 (a_1,\dots,a_i,\dots,a_n) \to (a_1,\dots,a_i\pm 1,\dots,a_n)
-\]
+$$
 with the target square chosen as above, followed by re-sorting.
 
 This is a **token-sliding impartial game** on a path graph.
@@ -386,9 +386,9 @@ Interpretation:
 - All four games are **impartial** and **normal-play**, so the **Sprague–Grundy theorem** applies:
   - The SG value of a disjunctive sum of positions is the **nim-sum** of their SG values.
 - For fixed \(M\), the number of \(n\)-coin positions is:
-  \[
+  $$
   \binom{M+1}{n},
-  \]
+  $$
   which is tractable for moderate \(n\) and \(M\).
 
 - **Computation strategies:**
