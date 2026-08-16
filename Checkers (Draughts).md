@@ -544,7 +544,7 @@ These modify the *objective* or *initial deployment* rather than core movement g
 ---
 # UNIFIED PARAMETRIC DRAUGHTS ENGINE
 
-USAGE
+### USAGE
 
 1. Choose parameter values for BOARD, MEN, KING, PROMOTION,
    CAPTURE PRIORITY, WIN/DRAW.
@@ -590,7 +590,7 @@ PARAMETER GROUPS
 - DRAW_RULES:  {repetition, no-progress, agreed}
 ```
 ---
-## MISÈRE (LOSING)
+### MISÈRE (LOSING)
 ```
 ---------------
 Same parameters as chosen base variant,
