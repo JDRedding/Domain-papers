@@ -10,7 +10,27 @@ This document maps Bourbaki set-theory notation and ideas into a relational/dyna
     regions + interaction + morphisms + equivalence + quotients + orders + selection + 
     equipotence + products + function spaces + species.
     
-Reinterpreting Bourbaki set-theoretic concepts as a relational/dynamic-graph semantics by treating sets as regions (node-sets) equipped with three aspects: Structure (nodes & internal relations), Interaction (edges between regions/nodes), and Dynamics (flux, Q-slice moderation).
+The mapping provided reinterprets Nicolas Bourbaki’s extensional, axiomatic set theory into an operational, dynamic-graph semantics. By elevating static sets into regions (node-sets enriched with internal relations, external interactions, and continuous flux dynamics), classical set-theoretic constructs acquire a physics-like substrate without losing their rigorous algebraic properties. Reinterpreting Bourbaki set-theoretic concepts as a relational/dynamic-graph semantics by treating sets as regions (node-sets) equipped with three aspects: Structure (nodes & internal relations), Interaction (edges between regions/nodes), and Dynamics (flux, Q-slice moderation).
+
+## Bourbaki-to-Relational Grammar
+```
+          [ Bourbaki Concrete Base ]
+                     │
+      ┌──────────────┴──────────────┐
+      ▼                             ▼
+  Sets / Elements              Relations / Maps
+      │                             │
+ (Node Typing)                (Directed Adjacency)
+      │                             │
+      ▼                             ▼
+┌──────────────────────────────────────────────┐
+│             RELATIONAL REGION                │
+│                                              │
+│  Structure   : Nodes & Intrinsic Edges       │
+│  Interaction : Cross-Region Morphisms        │
+│  Dynamics    : Flux & State Evolution        │
+└──────────────────────────────────────────────┘
+```
 
 ## Core mapping patterns
 - Sets → Regions: a set is a region (nodes + structure + dynamics).
