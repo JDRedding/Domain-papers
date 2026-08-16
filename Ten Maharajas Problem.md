@@ -212,16 +212,16 @@ Constraints:
 
 1. **Exactly 10 pieces**  
 
-   $$
-   \sum_{r=1}^{10}\sum_{c=1}^{10} x_{r,c} = 10.
-   $$
+$$
+\sum_{r=1}^{10}\sum_{c=1}^{10} x_{r,c} = 10.
+$$
 
 2. **Non‑attack constraints**  
    For every attacking pair $(r,c)\sim(r',c')$:
 
-   $$
-   x_{r,c} + x_{r',c'} \le 1.
-   $$
+$$
+x_{r,c} + x_{r',c'} \le 1.
+$$
 
 This is a pure feasibility ILP with ~100 variables and ~thousands of pairwise constraints.
 
