@@ -163,6 +163,7 @@ $$
 ---
 
 ### **4. Capture Predicates**
+
 A capture jumps over an enemy piece of colour $e$.
 
 **Short capture:**  
@@ -178,23 +179,22 @@ $$
 **Flying capture:**  
 
 $$
-\begin{align*}
-\{Cap}_{\mathrm{fly}}(p,d)
+\begin{aligned}
+Cap_{\mathrm{fly}}(p,d)
 &=
 \{
-  p+kd
-  |
-  k > m \ge 1,\\ 
-  p+md\text{ is the unique enemy on the ray},\\ 
-  p+kd\text{ is empty}
+p+kd\;|\;
+k>m\ge1,\;
+p+md\text{ is the unique enemy on the ray},\;
+p+kd\text{ is empty}
 \}.
-\end{align*}
+\end{aligned}
 $$
 
-**Landing rule parameter $\lambda$:**
-- $\lambda=\text{behind}$: enforce $k=m+1$
-- $\lambda=\text{free-beyond}$: any $k>m$
-- $\lambda=\text{final-square-only}$: additional terminal constraints
+**Landing rule parameter \(\lambda\):**
+- \(\lambda=\text{behind}\): enforce \(k=m+1\)
+- \(\lambda=\text{free-beyond}\): any \(k>m\)
+- \(\lambda=\text{final-square-only}\): additional terminal constraints
 
 Single captures:
 
