@@ -292,6 +292,28 @@ A player wins by:
 
 A draw may be declared by mutual agreement or when neither player can force progress.
 
+### Terminal positions and outcome
+
+A position $P$ is **terminal** if  
+
+$$
+A(P)=\emptyset
+$$  
+
+(or the opponent has already resigned).  
+
+Outcome function $\omega$:  
+
+$$
+\omega(P)=\begin{cases}
++1 & \text{if }S_{3-t}=\emptyset\text{ or }A(P)=\emptyset\text{ for the player to move},\\
+-1 & \text{(symmetric for the opponent)},\\
+0 & \text{draw by mutual agreement or perpetual inability to progress}.
+\end{cases}
+$$  
+
+(The conventional combinatorial-game values $+1$ = first-player win, $-1$ = second-player win may be assigned according to who faces the terminal position.)
+
 ---
 
 ## 7. Strategic Principles
