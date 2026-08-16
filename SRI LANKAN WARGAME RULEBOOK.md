@@ -657,6 +657,19 @@ Gol-skuish uses a star-like board with triangular lobes:
 
 ### 8.2 Dash-guti (expanded)
 ```
+o-----o-----o
+ \    |    /
+  o---o---o
+   \  |  /
+    o-o-o
+   / \|/ \
+  o---o---o
+   \ /|\ /
+    o-o-o
+   /  |  \
+  o---o---o
+ /    |    \
+o-----o-----o
 
 ```
 
