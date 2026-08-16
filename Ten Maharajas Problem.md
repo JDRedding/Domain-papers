@@ -270,9 +270,9 @@ This is a pure feasibility ILP with ~100 variables and ~thousands of pairwise co
 ## **Combinatorial Search Character**
 - Search space size:
   
-  $$
-  \binom{100}{10} \approx 2.63\times 10^{13}.
-  $$
+$$
+\binom{100}{10} \approx 2.63\times 10^{13}.
+$$
   
 - Heavy pruning via:
   - row/column exclusivity,  
