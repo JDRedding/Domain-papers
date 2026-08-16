@@ -68,6 +68,23 @@ A **short king** is a king that:
 - **Cannot “fly”**  
   (cannot move or capture across multiple empty squares)
 
+## BASIC CHECKERS (AMERICAN / ENGLISH)
+```
+--------------------------------------------------------------------
+Movement geometry:
+- Men: diagonal forward.
+- Kings: diagonal forward/backward (short).
+
+Capture geometry:
+- Men: diagonal forward only.
+- Kings: diagonal forward/backward.
+
+King range:
+- Kings: short.
+
+--------------------------------------------------------------------
+```
+
 ## VARIANTS
 
 ### ARMENIAN (TAMA)
@@ -105,25 +122,6 @@ King range:
 
 Difference from BASIC:
 - Similar to BASIC but stricter king landing rules.
-
---------------------------------------------------------------------
-```
-### CHECKERS (AMERICAN / ENGLISH)
-```
---------------------------------------------------------------------
-Movement geometry:
-- Men: diagonal forward.
-- Kings: diagonal forward/backward (short).
-
-Capture geometry:
-- Men: diagonal forward only.
-- Kings: diagonal forward/backward.
-
-King range:
-- Kings: short.
-
-Difference from BASIC:
-- Essentially identical to BASIC.
 
 --------------------------------------------------------------------
 ```
