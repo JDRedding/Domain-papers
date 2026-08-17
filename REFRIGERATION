@@ -1,0 +1,150 @@
+REFRIGERATION CYCLE 
+============================================================
+
+CORE VAPOR-COMPRESSION CYCLE
+----------------------------
+1. COMPRESSOR
+   • Raises refrigerant pressure + temperature.
+   • Output: hot, high-pressure vapor.
+   • Enables heat rejection at condenser.
+
+2. CONDENSER COIL
+   • Rejects heat to room air.
+   • Vapor → high-pressure liquid.
+   • Head pressure reflects condenser health.
+
+3. CAPILLARY TUBE (Expansion Device)
+   • Restricts flow; drops pressure sharply.
+   • Sets mass-flow rate.
+   • Liquid → low-pressure mixture.
+
+4. EVAPORATOR COIL
+   • Refrigerant boils at low pressure.
+   • Absorbs heat from cabinet interior.
+   • Cooling occurs ONLY here.
+
+5. THERMOSTAT / SENSOR
+   • Cycles compressor to maintain set temperature.
+   • Controls duty cycle.
+
+6. REFRIGERANT (R600a)
+   • Isobutane.
+   • High efficiency, low GWP.
+   • Very sensitive to charge amount.
+
+FLOW DIAGRAM
+------------------------------------------------------------
+        +------------------+
+        |   COMPRESSOR     |
+        |  (High Pressure) |
+        +--------+---------+
+                 |
+                 v
+        +------------------+
+        |   CONDENSER      |
+        |  (Heat Rejected) |
+        +--------+---------+
+                 |
+                 v
+        +------------------+
+        |  CAPILLARY TUBE  |
+        | (Pressure Drop)  |
+        +--------+---------+
+                 |
+                 v
+        +------------------+
+        |   EVAPORATOR     |
+        | (Heat Absorbed)  |
+        +--------+---------+
+                 |
+                 v
+        +------------------+
+        |   RETURN LINE    |
+        | (Low Pressure)   |
+        +------------------+
+
+COMPONENT FAILURE MODES (FIELD-RELEVANT)
+============================================================
+
+COMPRESSOR FAILURES
+-------------------
+• Locked rotor → click-hum cycling, no pressure differential.
+• Weak compression → warm suction, low ΔT across condenser.
+• Open windings → dead compressor.
+• Overheating → high amps, hot shell.
+
+CONDENSER FAILURES
+------------------
+• Dirty coil → high head pressure, poor cooling.
+• Failed condenser fan → compressor overheating, slow cabinet cooling.
+
+EVAPORATOR FAILURES
+-------------------
+• Frost blockage → airflow collapse, warm fridge.
+• Failed evaporator fan → freezer OK, fridge warm.
+• Uneven frost → sealed-system issue.
+
+CAPILLARY / FILTER-DRIER FAILURES
+---------------------------------
+• Restriction → low suction, cold cap tube inlet, partial frost pattern.
+• Moisture freeze → intermittent cooling.
+
+THERMOSTAT / SENSOR FAILURES
+-----------------------------
+• Stuck closed → compressor runs continuously.
+• Stuck open → compressor never starts.
+• Thermistor drift → erratic cycling.
+
+DEFROST SYSTEM FAILURES
+------------------------
+• Failed heater/timer/sensor → evaporator encased in ice, airflow collapse.
+
+START DEVICE FAILURES
+----------------------
+• Relay/overload → intermittent or no compressor start.
+
+DIAGNOSTIC PRESSURE/TEMPERATURE MAPPING
+============================================================
+
+SUCTION PRESSURE (Low Side)
+---------------------------
+• Too high → weak compressor, high load, overcharge.
+• Too low → restriction, undercharge, low load.
+
+DISCHARGE PRESSURE (High Side)
+------------------------------
+• Too high → dirty condenser, failed fan, overcharge.
+• Too low → undercharge, weak compressor.
+
+LINE TEMPERATURES
+-----------------
+• Suction line: cool, not frosty (unless low charge/restriction).
+• Discharge line: hot; warm = compressor not doing work.
+
+EVAPORATOR FROST PATTERN
+------------------------
+• Full, even → healthy.
+• Partial → sealed-system issue.
+• Solid block → defrost failure.
+
+TECHNICIAN WORKFLOW 
+============================================================
+
+1. Verify power + control board call for cool.
+2. Check condenser coil + fan (fastest fix).
+3. Evaluate compressor behavior (amps, shell temp, start device).
+4. Inspect evaporator airflow (fan, frost pattern, damper).
+5. Test thermistors (resistance vs. temp chart).
+6. Only then consider sealed-system work (charge, restriction, compressor).
+
+KEY CONCEPTS
+============================================================
+• Compressor
+• Condenser coil
+• Capillary tube
+• Evaporator coil
+• Thermostat
+• R600a refrigerant
+• Failure-mode decision tree
+• Pressure/temperature diagnostic table
+• Brand-specific symptom mapping
