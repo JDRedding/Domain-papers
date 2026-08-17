@@ -676,5 +676,5 @@ Not in these rules.
 
 ---
 
-## External articles
+# External Articles
 - welter Game https://welter.fuglede.dk/
