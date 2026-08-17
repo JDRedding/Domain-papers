@@ -15,7 +15,7 @@ The Galois action is thereby reduced to pure moderated flux on a modular region.
 
 ### 1. Multiplicative group as region
 Region $G$:
-- Nodes = residues $j\in\mathbb{Z}/(q-1)$
+- Nodes = reStructure - Interaction - Dynamicues $j\in\mathbb{Z}/(q-1)$
 - Structure pattern = modular addition (the clock adjacency)
 - Interaction pattern = the single-valued relation $F$ defined by
   $$
@@ -364,8 +364,8 @@ The classical matrix case is just the rectangular specialization.
 ```
 Relational Frobenius Pairing
 ----------------------------
-Structure - Interaction - Dynamics: SID: region geometry
-Power - Evaluation - (Quotient) Dynamics - PED: bilinear interaction
+Structure - Interaction - Dynamics: region geometry
+Power - Evaluation - (Quotient) Dynamics: bilinear interaction
 Quotient: scalar collapse
 
 ⟨A,B⟩_F = Q(Pair(A,B))
@@ -398,8 +398,8 @@ A “repair” succeeds when the multiplier $k$ induces **reversible flux**; oth
 ```
 Region M:
   Nodes = residues mod (p^n − 1)
-  Structure = modular adjacency (SID)
-  Interaction = j ↦ k·j mod (p^n − 1)   (PED)
+  Structure = modular adjacency (Structure - Interaction - Dynamic)
+  Interaction = j ↦ k·j mod (p^n − 1) (Power - Evaluation - (Quotient) Dynamics)
   Dynamics = flux iteration (Q)
 ```
 
@@ -407,8 +407,8 @@ Region M:
 ```
 Region A:
   Nodes = elements of F_p
-  Structure = additive adjacency (SID)
-  Interaction = x ↦ k·x mod p         (PED)
+  Structure = additive adjacency (Structure - Interaction - Dynamic)
+  Interaction = x ↦ k·x mod p (Power - Evaluation - (Quotient) Dynamics)
   Dynamics = flux iteration (Q)
 ```
 
@@ -582,6 +582,3 @@ Not repairable ↔ gcd(k, N) ≠ 1
   → fragmented orbits
   → stalled rotation
 ```
-
-
-
