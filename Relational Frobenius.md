@@ -144,7 +144,7 @@ All classical matrix‑analytic identities follow from the triad:
 - interaction (bilinear pairing)  
 - evaluation (flux collapse)
 
-The Frobenius pairing is shown to be the **unique preserving, PED‑compatible, Q‑stable bilinear form** on rectangular regions.
+The Frobenius pairing is shown to be the **unique preserving, compatible, stable bilinear form** on rectangular regions.
 
 ---
 
