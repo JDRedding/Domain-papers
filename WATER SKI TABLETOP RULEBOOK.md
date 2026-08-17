@@ -1,0 +1,424 @@
+# WATER SKI — TABLETOP RULEBOOK  
+## EDITION v1.1
+
+```
+============================================================
+                 WATER SKI — TABLETOP RULEBOOK
+                      Boardgame Edition
+============================================================
+```
+# FULL RULEBOOK (v1.1)
+
+## 2. COMPONENTS
+```
+2.1 River Tiles (modular)
+     - Straight
+     - Bend Left / Bend Right
+     - Rapids (Level 3)
+     - Dock / Pier
+     - Swamp
+
+2.2 Tokens
+     - Rocks
+     - Logs
+     - Piers
+     - Alligators
+     - Rogue Boats
+     - Ramps (10k / 20k)
+
+2.3 Player Pieces
+     - Boat Marker
+     - Skier Marker (tethered)
+     - 4 Skier Life Tokens
+
+2.4 Dice
+     - Boat Die (D6)
+     - Skier Die (D6)
+     - Hazard Die (D8)
+     - Lane Die (D3)
+
+2.5 Score Track or Notepad
+```
+
+---
+
+## 3. LANES & POSITIONS
+```
+The river has exactly 3 lanes:
+   [Left] [Center] [Right]
+
+Boat and Skier each occupy one lane.
+
+Tow-Line Constraint:
+   After Skier movement, Skier must be
+   ≤ 1 lane away from Boat.
+   (Illegal positions are corrected by shifting Skier toward Boat.)
+```
+
+---
+
+## 4. OBJECTIVE
+```
+Survive the river, avoid hazards, and score points through jumps.
+Game ends when all Skier Lives are lost or tiles run out.
+Highest score wins.
+```
+
+---
+
+## 5. SETUP
+```
+5.1 Shuffle River Tiles.
+5.2 Reveal first tile; place Boat + Skier at its start.
+5.3 Place 4 Skier Life Tokens.
+5.4 Score starts at 0.
+5.5 Co-op Mode:
+      Player A = Boat
+      Player B = Skier
+```
+
+---
+
+## 6. TURN STRUCTURE
+```
+(1) Reveal Next Tile
+(2) Populate Hazards
+(3) Boat Movement
+(4) Skier Movement
+(5) Hazard Resolution
+(6) Ramp Resolution
+(7) End-of-Turn Check
+```
+
+---
+
+## 7. POPULATING HAZARDS
+Roll **Hazard Die (D8)**:
+
+```
+1–2: Rock
+3–4: Log
+5:   Rogue Boat
+6–7: Alligator (Swamp/Open Water only)
+8:   Ramp
+```
+
+Then roll **Lane Die (D3)** to determine placement lane.
+
+If the result is the Boat’s current lane, reroll once.
+
+---
+
+## 8. BOAT MOVEMENT PHASE
+```
+Roll Boat Die (D6):
+1–2: Forward 1, no lateral shift
+3–4: Forward 1, may shift 1 lane
+5–6: Forward 2, may shift 1 lane
+```
+
+Boat **cannot** enter hazard or ramp spaces.
+
+---
+
+## 9. SKIER MOVEMENT PHASE
+```
+Roll Skier Die (D6):
+1–2: Follow Boat path exactly
+3–4: Follow + shift 1 lane
+5–6: Follow + shift up to 2 lanes
+```
+
+Skier **may** enter ramp spaces.
+
+Tow-Line Constraint enforced after movement.
+
+---
+
+## 10. RAPIDS (LEVEL 3 ONLY)
+Rapids tiles apply:
+
+```
+Boat:
+   - Mandatory lateral shift of 1 lane (player chooses direction).
+   - Boat Die result +1 (max 6).
+
+Skier:
+   - Skier Die results reduced:
+        1–3: Follow exactly
+        4–5: Shift 1 lane
+        6:   Shift up to 2 lanes
+```
+
+This increases pressure and simulates unstable water.
+
+---
+
+## 11. HAZARD RESOLUTION
+If Boat or Skier enters a hazard:
+
+```
+ROCK: Crash → Lose 1 Life
+LOG: Skier Prone → -5,000 pts
+PIER: Boat Damage → Next Boat Die roll -1
+ROGUE BOAT: Crash → Lose 1 Life
+ALLIGATOR:
+      Roll Skier Die:
+         1–3: Lose 1 Life
+         4–6: Escape
+```
+
+Remove hazard after resolution.
+
+---
+
+## 12. BOAT–SKIER COLLISION LOGIC
+### 12.1 Boat Hits Hazard
+```
+Immediate crash.
+Lose 1 Life.
+Reset both pieces to start of current tile.
+Next tile remains in play.
+```
+
+### 12.2 Skier Hits Hazard Boat Avoided
+```
+Resolve hazard normally.
+Tow-Line Snap Check:
+   Roll Skier Die:
+      1–2: Tow-line snaps → Boat pulled 1 lane toward hazard
+      3–6: Tow-line holds → no effect
+```
+
+### 12.3 Shared Space Clarification
+```
+Boat may NOT share space with ramps.
+Skier may share space with ramps.
+Neither may share space with hazards.
+```
+
+---
+
+## 13. RAMP RESOLUTION
+```
+Standard Ramp: +10,000 pts
+Double Ramp:   +20,000 pts
+
+Trick Roll:
+   1–2: Clean Jump
+   3–4: Stylish (+2,000)
+   5–6: Perfect (+5,000)
+```
+
+### Jump Combo Multiplier
+```
+Each consecutive successful jump increases multiplier:
+   1st jump: x1
+   2nd jump: x1.1
+   3rd jump: x1.2
+   4th+:     x1.3 (cap)
+
+Multiplier applies to base ramp points only.
+Reset on crash or missed ramp.
+```
+
+---
+
+## 14. LIFE LOSS & RESET
+```
+Lose 1 Life → Reset Boat + Skier to start of current tile.
+Hazards on current tile are cleared.
+Next tile stays in play.
+```
+
+---
+
+## 15. LEVEL PROGRESSION
+```
+Level 1: Basic hazards
+Level 2: Add alligators + rogue boats
+Level 3: Rapids tiles + movement pressure
+```
+
+Advance every 6 tiles.
+
+---
+
+## 16. SCORING SUMMARY (REFINED)
+```
+Ramp Jump: +10k / +20k
+Stylish: +2k
+Perfect: +5k
+Jump Combo Multiplier: x1 → x1.3
+
+Avoid hazards for 3 turns: +2,000 pts
+Clear tile without damage: +1,500 pts
+Complete level: +5,000 pts
+```
+
+---
+
+## 17. OPTIONAL VARIANTS
+```
+17.1 Arcade Mode
+      - Double hazard rolls.
+      - Boat Die +1 always.
+
+17.2 Froggo Mode
+      - 3 Lives only.
+      - All ramps are Double Ramps.
+      - Alligators attack on 1–4.
+
+17.3 Competitive Co-op
+      - Boat scores hazard-avoidance bonuses.
+      - Skier scores jump bonuses.
+      - Highest individual score wins.
+```
+
+# 🌊 ASCII RIVER TILE SET (v1.1)
+
+## 1. **Straight Tile**
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   [   ]      [   ]      [   ]         |
+|   [   ]      [   ]      [   ]         |
+|   [   ]      [   ]      [   ]         |
+|                                       |
+|   (Place hazards by D3 roll)          |
++---------------------------------------+
+```
+
+---
+
+## 2. **Bend Left Tile**
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   [   ]      [   ]      [   ]         |
+|   [   ]      [   ]      [   ]         |
+|   [   ] <--- River bends left          |
+|         (Boat lateral shift allowed)  |
++---------------------------------------+
+```
+
+---
+
+## 3. **Bend Right Tile**
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   [   ]      [   ]      [   ]         |
+|   [   ]      [   ]      [   ]         |
+|   [   ] ---> River bends right         |
+|         (Boat lateral shift allowed)  |
++---------------------------------------+
+```
+
+---
+
+## 4. **Rapids Tile**
+(Level 3 pressure tile)
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   ~~~~       ~~~~       ~~~~          |
+|   ~~~~ RAPIDS ~~~~ RAPIDS ~~~~        |
+|   ~~~~       ~~~~       ~~~~          |
+|                                       |
+| Mandatory Boat lateral shift          |
+| Skier control reduced                 |
++---------------------------------------+
+```
+
+---
+
+## 5. **Dock / Pier Tile**
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   [###]     [   ]      [   ]          |
+|   [###]     [   ]      [   ]          |
+|   [###]     [   ]      [   ]          |
+|   PIER occupies Left lane             |
+|   (Boat cannot enter pier spaces)     |
++---------------------------------------+
+```
+
+---
+
+## 6. **Swamp Tile**
+(Alligator‑eligible tile)
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   {~~~}     {~~~}     {~~~}           |
+|   SWAMP     SWAMP     SWAMP           |
+|   {~~~}     {~~~}     {~~~}           |
+|                                       |
+| Alligators may spawn here             |
++---------------------------------------+
+```
+
+---
+
+## 7. **Open Water Tile**
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   [   ]      [   ]      [   ]         |
+|   WATER      WATER      WATER         |
+|   [   ]      [   ]      [   ]         |
+|                                       |
+| Alligators allowed; ramps allowed     |
++---------------------------------------+
+```
+
+---
+
+## 8. **Ramp Tile**
+(Place ramp tokens on any lane)
+```
++---------------------------------------+
+|   LANE L     LANE C     LANE R        |
+|                                       |
+|   [ ^ ]      [   ]      [   ]         |
+|   RAMP       [   ]      [   ]         |
+|   (Skier only; Boat cannot enter)     |
+|                                       |
+| Use Standard or Double Ramp tokens    |
++---------------------------------------+
+```
+
+---
+
+# 9. **Hazard Overlay Key**
+Use these symbols when sketching hazards directly onto tiles:
+
+```
+ROCK        = (O)
+LOG         = (=)
+PIER        = [###]
+ALLIGATOR   = {A}
+ROGUE BOAT  = <RB>
+RAMP        =  ^
+```
+
+---
+
+# 10. **Compact Tile Set**
+If you want a smaller footprint:
+
+```
++---+---+---+
+|   |   |   |
+|   |   |   |
++---+---+---+
+```
