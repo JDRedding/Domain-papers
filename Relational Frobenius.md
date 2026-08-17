@@ -169,7 +169,7 @@ No linear algebra is assumed; this is just a region with coordinates.
 
 ---
 
-## **2. Interaction Pattern: Entrywise Pairing (PED)**
+## **2. Interaction Pattern: Entrywise Pairing**
 
 Define the relational interaction:
 
@@ -190,7 +190,7 @@ This is the primitive that later becomes $A^T BR in classical notation.
 
 ---
 
-## **3. Collapse Operator: Diagonal Flux Summation (Q)**
+## **3. Collapse Operator: Diagonal Flux Summation**
 
 Define the evaluation flux:
 
