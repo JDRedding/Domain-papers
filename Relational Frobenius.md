@@ -1,5 +1,5 @@
 # Relational Frobenius 
-Bourbaki theory
+**Bourbaki theory**
 
 Everything required by classical finite-field Frobenius is expressed using only the native Relational-Bourbaki primitives:
 
