@@ -1,6 +1,18 @@
 REFRIGERATION CYCLE 
 ============================================================
 
+CONCEPTS
+============================================================
+• Compressor
+• Condenser coil
+• Capillary tube
+• Evaporator coil
+• Thermostat
+• R600a refrigerant
+• Failure-mode decision tree
+• Pressure/temperature diagnostic table
+• Brand-specific symptom mapping
+
 CORE VAPOR-COMPRESSION CYCLE
 ----------------------------
 1. COMPRESSOR
@@ -137,14 +149,113 @@ TECHNICIAN WORKFLOW
 5. Test thermistors (resistance vs. temp chart).
 6. Only then consider sealed-system work (charge, restriction, compressor).
 
-KEY CONCEPTS
+VAPOR-COMPRESSION REFRIGERATION CYCLE
 ============================================================
-• Compressor
-• Condenser coil
-• Capillary tube
-• Evaporator coil
-• Thermostat
-• R600a refrigerant
-• Failure-mode decision tree
-• Pressure/temperature diagnostic table
-• Brand-specific symptom mapping
+
+STANDARD NOTATION
+-----------------
+h   = specific enthalpy (kJ/kg)
+s   = specific entropy (kJ/kg·K)
+P   = pressure (kPa or bar)
+T   = absolute temperature (K)
+ṁ  = mass flow rate (kg/s)
+q   = specific heat transfer (kJ/kg)
+w   = specific work (kJ/kg)
+Q̇  = heat transfer rate (kW)
+Ẇ  = power (kW)
+COP = coefficient of performance
+
+State points:
+1 = compressor inlet (evaporator outlet)
+2 = compressor outlet (condenser inlet)
+3 = condenser outlet (expansion device inlet)
+4 = expansion device outlet (evaporator inlet)
+
+1. COMPRESSOR WORK
+============================================================
+
+Specific compressor work:
+    w_c = h_2 - h_1
+
+Isentropic relation:
+    s_2s = s_1
+    h_2s = h(P_2, s_1)
+
+Actual compressor work with isentropic efficiency η_is:
+    w_c = (h_2s - h_1) / η_is
+or
+    h_2 = h_1 + (h_2s - h_1)/η_is
+
+2. CONDENSER HEAT REJECTION
+============================================================
+
+Specific heat rejected:
+    q_H = h_2 - h_3
+
+3. EXPANSION PROCESS
+============================================================
+
+Isenthalpic throttling (capillary tube):
+    h_4 = h_3
+
+4. EVAPORATOR REFRIGERATION EFFECT
+============================================================
+
+Specific cooling:
+    q_L = h_1 - h_4
+        = h_1 - h_3
+
+5. COEFFICIENT OF PERFORMANCE
+============================================================
+
+COP:
+    COP = q_L / w_c
+        = (h_1 - h_4) / (h_2 - h_1)
+        = (h_1 - h_3) / (h_2 - h_1)
+
+Carnot limit:
+    COP_Carnot = T_L / (T_H - T_L)
+
+6. RATE EQUATIONS
+============================================================
+
+Cooling capacity:
+    Q̇_L = ṁ * q_L
+         = ṁ (h_1 - h_4)
+
+Compressor power:
+    Ẇ_c = ṁ * w_c
+         = ṁ (h_2 - h_1)
+
+Condenser heat rejection:
+    Q̇_H = ṁ (h_2 - h_3)
+         = Q̇_L + Ẇ_c
+
+7. MASS FLOW & PRESSURE RELATIONS
+============================================================
+
+Mass flow from cooling load:
+    ṁ = Q̇_L / (h_1 - h_4)
+
+Pressure ratio:
+    r_p = P_2 / P_1
+        = P_cond / P_evap
+
+8. COMPRESSOR VOLUMETRIC EFFICIENCY
+============================================================
+
+Approximate volumetric efficiency:
+    η_v = 1 - C[(P_2/P_1)^(1/γ) - 1]
+
+C = clearance ratio
+γ = specific heat ratio of refrigerant vapor
+
+9. SATURATION RELATION
+============================================================
+
+For any refrigerant (e.g., R600a):
+    P_sat ↔ T_sat via refrigerant property tables/software.
+
+No simple closed-form equation; use REFPROP or tables.
+
+
