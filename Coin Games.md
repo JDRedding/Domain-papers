@@ -676,5 +676,122 @@ Not in these rules.
 
 ---
 
+# **Appendix C — Rule Clarifications & Edge Cases**
+
+This appendix resolves subtle or easily misunderstood aspects of the four coin games.  
+It is intended for implementers, CGT analysts, and anyone verifying correctness of SG computations.
+
+---
+
+## **C.1 Board Size and Boundaries**
+
+- The **board** is always a **finite** interval of squares `0..M`.  
+- The value of `M` is **fixed for the entire game instance**.  
+- All moves must remain within this interval; coins cannot move off-board.  
+- Larger `M` increases mobility (especially in Sliding, Welter, and Turning), but does not change the rules.
+
+**Clarification:**  
+Welter’s global-left rule does **not** imply an infinite board. The destination must still lie within `0..M`.
+
+---
+
+## **C.2 Coin Identity and Position Representation**
+
+- Coins are **indistinguishable** tokens.  
+- A position is always represented as a **sorted tuple** `(a1 < a2 < … < an)`.  
+- Sorting is a **notation convention**, not a game action.  
+- Only the **set of occupied squares** matters; coin labels do not exist.
+
+**Clarification:**  
+Implementations should treat positions as sorted lists or bitsets, not as labeled objects.
+
+---
+
+## **C.3 Blocking and Terminal Conditions**
+
+### **Coins, Sliding, Welter**
+A coin at `ai` is **blocked on the left** if:
+
+- `ai = 0`, or  
+- square `ai − 1` is occupied.
+
+A position is **terminal** when **no coin** has an empty square to its left.
+
+### **Turning**
+A coin at `ai` is blocked if:
+
+- Left neighbor: `ai − 1` is occupied or off-board  
+- Right neighbor: `ai + 1` is occupied or off-board
+
+A position is terminal when **every coin** is blocked on **both** sides.
+
+**Clarification:**  
+Adjacent coins do **not** automatically create a terminal position.  
+Example: `(5,6,8)` is not terminal because coins at 5 and 6 can still move outward.
+
+---
+
+## **C.4 Move Legality Subtleties**
+
+### **Coins**
+- Only **1-step left** moves are allowed.  
+- No jumping.  
+- No rightward movement.
+
+### **Sliding**
+- A coin may slide left through **consecutive empty squares only**.  
+- It must stop **before** the next occupied square.  
+- No jumping.
+
+### **Welter**
+- A coin may move to **any empty square** left of its current position.  
+- Jumping over occupied squares is allowed.  
+- Only the **destination** must be empty.
+
+### **Turning**
+- A coin may move **one square left or right** if empty.  
+- No jumping.  
+- Coins can never pass each other.
+
+**Clarification:**  
+Turning is **not** the classical Turning Toads or Dawson’s Kayles; it is pure bidirectional token sliding.
+
+---
+
+## **C.5 Sprague–Grundy Structural Clarifications**
+
+- **Coins‑n:** SG must be computed via **dynamic programming**; moves interact and no closed form exists.  
+- **Sliding:** SG is exactly the **nim‑sum of gaps**.  
+- **Welter:** SG is given by the **Welter function**, involving XOR of positions and pairwise 2‑adic terms.  
+- **Turning:** SG decomposes into **independent movable regions**, each with small SG values (0,1,2).
+
+**Clarification:**  
+All four games are impartial and normal-play, so SG theory applies without modification.
+
+---
+
+## **C.6 Acyclicity and Repetition**
+
+- The state graph of each game is **acyclic**.  
+- Moves never increase any coin’s maximum reachable region in a way that allows cycles.  
+- Repeated positions may occur (e.g., Turning: right then left), but cannot form infinite loops.
+
+**Clarification:**  
+Acyclicity guarantees SG values are well-defined.
+
+---
+
+## **C.7 Implementation Notes**
+
+- Treat positions as **sorted sets** of occupied squares.  
+- Use **bitsets** or sorted arrays for efficient SG computation.  
+- For Coins and Turning, use **DP over the state graph**.  
+- For Sliding and Welter, use **closed-form SG formulas**.
+
+**Clarification:**  
+SG computation does not require tracking move history; only the current position matters.
+
+---
+
 # External Articles
 - welter Game https://welter.fuglede.dk/
