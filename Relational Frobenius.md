@@ -97,3 +97,36 @@ Interaction $j\to 2j\bmod 15$
 - Three OrbitRegions of period 4  
 → species of degrees 1, 2 and 4.
 
+## ⭐ **Finite‑Field Constraints**  
+A finite field \(\mathbb{F}_q\) is **not** defined for arbitrary numbers \(a\) and \(b\).  
+The parameters must satisfy two strict conditions:
+
+### **Prime constraint**  
+
+$$
+p = a \quad\text{must be a prime number.}
+$$
+
+Only primes work:  
+2, 3, 5, 7, 11, …
+
+This is because every finite field is built over a **prime field** \(\mathbb{F}_p\).  
+If \(p\) is not prime, no field exists.
+
+### **Prime‑power constraint**  
+
+$$
+q = b = p^k \quad\text{for some integer } k\ge 1.
+$$
+
+So \(q\) must be a **prime power**, not an arbitrary integer.
+
+### 3. **Multiplicative region size is forced**  
+Once \(p\) and \(k\) are chosen:
+
+$$
+|\mathbb{F}_q^\times| = q - 1 = p^k - 1.
+$$
+
+This is the size of the exponent‑clock region.  
+It cannot be changed.
