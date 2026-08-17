@@ -353,7 +353,7 @@ This generalizes Frobenius to:
 - tensors,
 - relational databases,
 - operator networks,
-- RDG species.
+- Relational Dynamic Geometry species.
 
 The classical matrix case is just the rectangular specialization.
 
@@ -527,7 +527,7 @@ When $\gcd(k, |R|)\neq 1$:
 - This cannot return to its starting point.  
 - This shows arrows “twisting” or “stalling.”
 
-This is exactly the RDG notion of **flux‑orbit fragmentation**.
+This is exactly the Relational Dynamic Geometry notion of **flux‑orbit fragmentation**.
 
 ---
 
@@ -541,7 +541,7 @@ When $\gcd(k, |R|)=1$:
 - The dial is reversible.  
 - This shows smooth rotation.
 
-This is the RDG notion of **flux‑stable reversible species**.
+This is the Relational Dynamic Geometry notion of **flux‑stable reversible species**.
 
 ---
 
