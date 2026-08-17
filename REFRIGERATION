@@ -305,4 +305,141 @@ For any refrigerant (e.g., R600a):
 
 No simple closed-form equation; use REFPROP or tables.
 
+SUPERHEATING & SUBCOOLING 
+============================================================
+
+STATE POINTS (REFERENCE)
+------------------------
+1 = Compressor inlet (evaporator outlet)
+2 = Compressor outlet (condenser inlet)
+3 = Condenser outlet (expansion inlet)
+4 = Expansion outlet (evaporator inlet)
+
+. SUPERHEATING
+============================================================
+
+DEFINITION
+----------
+Superheating = vapor temperature above saturation temperature
+at evaporator (suction) pressure.
+
+Formula:
+    ΔT_sh = T_1 - T_sat(P_1)
+
+Where:
+    T_1       = actual suction-line temperature
+    T_sat(P1) = saturation temperature at suction pressure
+
+WHERE IT OCCURS
+---------------
+• Inside evaporator (useful superheat)
+• Suction line (additional superheat)
+
+ASCII DIAGRAM (EVAPORATOR REGION)
+---------------------------------
+Saturated vapor →→→ Superheated vapor
+
+    |<---- saturation line ---->|<-- superheat -->|
+    h_sat(P1)                   h_1
+
+EFFECTS — POSITIVE
+------------------
+• Ensures dry vapor enters compressor.
+• Prevents liquid slugging.
+• Provides margin for load variation.
+
+EFFECTS — NEGATIVE
+------------------
+• h_1 increases.
+• Refrigeration effect q_L = h_1 - h_4 increases slightly.
+• Compressor work w_c = h_2 - h_1 increases.
+• COP usually decreases or stays neutral.
+• Discharge temperature rises.
+• Higher specific volume → lower ṁ for fixed displacement → lower capacity.
+
+TYPICAL VALUES
+--------------
+Domestic/light commercial: 5–10 K (9–18 °F)
+
+2. SUBCOOLING
+============================================================
+
+DEFINITION
+----------
+Subcooling = liquid temperature below saturation temperature
+at condenser (discharge) pressure.
+
+Formula:
+    ΔT_sc = T_sat(P_3) - T_3
+
+Where:
+    T_3       = actual liquid-line temperature
+    T_sat(P3) = saturation temperature at condenser pressure
+
+WHERE IT OCCURS
+---------------
+• End of condenser coil
+• Liquid-line subcooler
+• Suction–liquid heat exchanger (some systems)
+
+ASCII DIAGRAM (CONDENSER REGION)
+--------------------------------
+Saturated liquid ←←← Subcooled liquid
+
+    |<-- subcooling -->|<---- saturation line ---->|
+    h_3                h_sat(P3)
+
+EFFECTS — POSITIVE
+------------------
+• h_3 decreases.
+• Expansion is isenthalpic → h_4 = h_3.
+• Refrigeration effect increases:
+      q_L = h_1 - h_4 = h_1 - h_3
+• COP increases:
+      COP = (h_1 - h_3) / (h_2 - h_1)
+• Less flash gas → better evaporator utilization.
+• Ensures pure liquid feed to expansion device.
+
+EFFECTS — NEGATIVE
+------------------
+• Very few; excessive subcooling may require larger condenser or more fan power.
+
+TYPICAL VALUES
+--------------
+5–15 K (9–27 °F)
+
+3. TABLE
+============================================================
+
+| Parameter                  | Superheating                     | Subcooling                         |
+|----------------------------|----------------------------------|------------------------------------|
+| Refrigeration effect q_L   | Slight increase                  | Clear increase                     |
+| Compressor work w_c        | Increases                        | Essentially unchanged              |
+| COP                        | Slight decrease / neutral        | Increases                          |
+| Cooling capacity           | Often decreases (lower ṁ)        | Increases                          |
+| Compressor protection      | Essential                        | Indirect (better liquid feed)      |
+| Discharge temperature      | Increases                        | Little direct effect               |
+
+4. P–h DIAGRAM MOVEMENTS
+============================================================
+
+SUPERHEAT (STATE 1):
+    Horizontal move → right of saturated vapor line at P_evap.
+
+SUBCOOL (STATE 3):
+    Horizontal move → left of saturated liquid line at P_cond.
+
+ASCII P–h SKETCH (QUALITATIVE)
+-------------------------------
+        h →
+    +------------------------------------------------------+
+P ↑ |                (superheat →)                         |
+    |        2 ●------------------------------● 3' (subcool)|
+    |          |                              |
+    |          |                              |
+    |        1'● (superheated)                ● 3 (sat liq) |
+    |        1 ●------------------------------● 4           |
+    +------------------------------------------------------+
+
+============================================================
 
