@@ -381,14 +381,13 @@ Frobenius norm:
 # **Appendix: Relational Frobenius Repair Mechanism**
 **Frobenius repair = invertibility of a relational multiplier $k$** on a finite region.
 
-This appendix abstracts the animation into a general relational mechanism.
+This appendix abstracts the idea into a general relational mechanism.
 
-Two dials appear:
+Two dials:
 
 1. **Multiplicative dial**: the cyclic region $F_{p^n}^\times$ of size $p^n - 1$.  
 2. **Additive dial**: the prime field $F_p$ with trace‑based interaction.
 
-The animation shows arrows rotating around each dial.  
 A “repair” succeeds when the multiplier $k$ induces **reversible flux**; otherwise the flux **jams**.
 
 ---
@@ -439,7 +438,7 @@ This is the relational version of **invertibility**.
 
 ---
 
-## **3. Multiplicative Dial Repair**
+## **3. Multiplicative Repair**
 
 Region size:
 
@@ -458,20 +457,20 @@ If true:
 - Flux orbits are full cycles.  
 - Arrows rotate cleanly.  
 - Every node has a unique predecessor.  
-- The dial is reversible.
+- This is reversible.
 
 If false:
 
 - Flux collapses into smaller cycles.  
 - Arrows jam or twist without progress.  
 - No inverse exists.  
-- The dial is not repairable.
+- This is not repairable.
 
 This is the relational version of **multiplicative cyclic groups**.
 
 ---
 
-## **4. Additive Dial Repair**
+## **4. Additive Repair**
 
 Region size:
 
@@ -490,13 +489,13 @@ $$
 Since $p$ is prime, this means:
 
 - All nonzero $k$ are invertible.
-- Only $k=0$ jams the dial.
+- Only $k=0$ jams.
 
 This is the relational version of **additive field automorphisms**.
 
 ---
 
-## **5. The Three Example Fields in the Animation**
+## **5. The Three Example Fields**
 
 ### **GF(9)**  
 - $p=3$, $n=2$, region size $3^2 - 1 = 8$.  
@@ -525,8 +524,8 @@ When $\gcd(k, |R|)\neq 1$:
 - Flux orbits shrink.  
 - The region decomposes into smaller species.  
 - The multiplier loses reversibility.  
-- The dial cannot return to its starting point.  
-- The animation shows arrows “twisting” or “stalling.”
+- This cannot return to its starting point.  
+- This shows arrows “twisting” or “stalling.”
 
 This is exactly the RDG notion of **flux‑orbit fragmentation**.
 
@@ -540,7 +539,7 @@ When $\gcd(k, |R|)=1$:
 - Every node has a unique predecessor.  
 - Orbits are full cycles.  
 - The dial is reversible.  
-- The animation shows smooth rotation.
+- This shows smooth rotation.
 
 This is the RDG notion of **flux‑stable reversible species**.
 
@@ -561,7 +560,7 @@ $$
 $$
 
 Thus Frobenius is always “repairable” on the multiplicative dial.  
-The animation generalizes this idea to **arbitrary multipliers $k$**.
+This generalizes this idea to **arbitrary multipliers $k$**.
 
 This is the relational version of **Frobenius flux**.
 
