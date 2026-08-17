@@ -675,3 +675,6 @@ Not in these rules.
 - **Indistinguishable tokens** — Coins have no identity; only their positions matter.
 
 ---
+
+## External articles
+- welter Game https://welter.fuglede.dk/
