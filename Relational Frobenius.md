@@ -29,9 +29,10 @@ $F$ is a total function-relation on $G$:
 - Edge target is ordinary multiplication by the integer $p$ modulo $q-1$
 
 Flux is simply repeated application:
-\[
+
+$$
 j\;\xrightarrow{F}\;pj\;\xrightarrow{F}\;p^2j\;\xrightarrow{F}\;\dots
-\]
+$$
 
 ### 3. Cyclotomic cosets as flux-orbit regions
 For each starting node $j$ the flux-orbit region is the subregion
@@ -46,9 +47,11 @@ These subregions partition $G$.
 
 ### 4. Period = dynamic closure degree
 The length of OrbitRegion($j$) is the period of the flux:
-\[
+
+$$
 \operatorname{Period}(j)=\min\{d>0:F^d(j)=j\}.
-\]
+$$
+
 Every such period divides $k$.
 
 ### 5. Fixed (gold) nodes and the prime-field region
