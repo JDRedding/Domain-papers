@@ -49,7 +49,7 @@ These subregions partition $G$.
 The length of OrbitRegion($j$) is the period of the flux:
 
 $$
-\operatorname{Period}(j)=\min\{d>0:F^d(j)=j\}.
+\{Period}(j)=\min\{d>0:F^d(j)=j\}.
 $$
 
 Every such period divides $k$.
