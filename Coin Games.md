@@ -794,4 +794,4 @@ SG computation does not require tracking move history; only the current position
 ---
 
 # External Articles
-- welter Game https://welter.fuglede.dk/
+- Welter's Game https://welter.fuglede.dk/
