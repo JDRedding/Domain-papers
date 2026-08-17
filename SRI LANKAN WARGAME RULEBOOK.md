@@ -849,10 +849,6 @@ o-o-o-o-o--o--o----.----o--o--o-o-o-o-o
        \ o------------------o  /
         o--------------------o
 ```
-
-Here’s a **clean, visual, side‑by‑side comparison chart** of the **Sri Lankan Alquerque‑family war‑games** versus the **Indian triangular war‑games**.  
-No template fits this domain (they’re not sports equipment or video games), so I’m giving you a **hand‑crafted structured chart** optimized for clarity and analysis.
-
 ---
 
 ## ⚔️ COMPARISON APPENDIX 
