@@ -186,7 +186,7 @@ here is:
 : (i,j) ↦ a_ij b_ij
 ```
 
-This is the primitive that later becomes $A^T BR in classical notation.
+This is the primitive that later becomes $A^T B$ in classical notation.
 
 ---
 
