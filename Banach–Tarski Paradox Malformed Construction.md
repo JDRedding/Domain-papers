@@ -2,7 +2,10 @@
 
 **Banach–Tarski is not a paradox.**
 
-It is a malformed construction that only works in a structure‑free extensional universe.  
+Banach–Tarski is internally valid only after accepting the extensional set-theoretic primitives that generate it. If those primitives are inadequate as an ontology of regions, then Banach–Tarski is not a paradox of the relational universe; it is a consequence of an inadequate representation of regions.
+
+It is a malformed construction that only works in a structure‑free extensional universe. The mathematical framework that makes Banach–Tarski possible has already admitted an impoverished notion of object, membership, equivalence, and transformation. Therefore, the resulting construction is formally valid inside that framework but malformed as a representation of any kind of relational framework intended to describe reality.
+
 Once sets are replaced by regions with structure, interaction, and dynamics, the required pieces cannot be formed, the required bijections cannot be typed, and the required group actions cannot be realized. The theorem cannot even be stated in the relational grammar.
 
 ---
