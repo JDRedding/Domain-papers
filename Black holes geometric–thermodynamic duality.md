@@ -5,9 +5,9 @@ The Schwarzschild radius grows **linearly** with mass, the Hawking temperature f
 
 If take the mass $M$ as the loop parameter $t$, then:
 
-- $ R_s(M) \sim M $  
-- $ T(M) \sim M^{-1} $  
-- $ S(M) \sim M^2 $
+- $R_s(M) \sim M$  
+- $T(M) \sim M^{-1}$  
+- $S(M) \sim M^2$
 
 Plotting these in $\log M, \log R_s, \log T, \log S$ space gives a **three‑branch, cyclic, non‑self‑intersecting curve**. When projected into 3D, it is homeomorphic to a trefoil embedding.
 
