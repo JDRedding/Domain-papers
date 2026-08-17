@@ -364,9 +364,9 @@ The classical matrix case is just the rectangular specialization.
 ```
 Relational Frobenius Pairing
 ----------------------------
-SID: region geometry
-PED: bilinear interaction
-Q: scalar collapse
+Structure - Interaction - Dynamics: SID: region geometry
+Power - Evaluation - (Quotient) Dynamics - PED: bilinear interaction
+Quotient: scalar collapse
 
 ⟨A,B⟩_F = Q(Pair(A,B))
         = ∑ a_ij b_ij
