@@ -334,7 +334,7 @@ This is the Bourbaki‑clean relational definition.
 
 ## **9. Generalized Frobenius for Arbitrary Regions**
 
-Let $RR be any finite region with:
+Let $R$ be any finite region with:
 
 - adjacency structure,
 - a bilinear interaction relation,
