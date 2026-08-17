@@ -244,6 +244,18 @@ COP:
 Carnot limit:
     COP_Carnot = T_L / (T_H - T_L)
 
+COP\text{COP}\text{COP}
+ = coefficient of performance (dimensionless)  
+
+Subscripts:  ( 1 ) = compressor inlet (evaporator outlet)  
+( 2 ) = compressor outlet (condenser inlet)  
+( 3 ) = condenser outlet (expansion device inlet)  
+( 4 ) = expansion device outlet (evaporator inlet)  
+( L ) = low-temperature (evaporator / refrigerated space)  
+( H ) = high-temperature (condenser / ambient)  
+( c ) = compressor  
+( is ) = isentropic
+
 6. RATE EQUATIONS
 ============================================================
 
