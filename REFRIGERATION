@@ -3,15 +3,43 @@ REFRIGERATION CYCLE
 
 CONCEPTS
 ============================================================
-• Compressor
-• Condenser coil
-• Capillary tube
-• Evaporator coil
-• Thermostat
-• R600a refrigerant
-• Failure-mode decision tree
-• Pressure/temperature diagnostic table
-• Brand-specific symptom mapping
+• Compressor – Most expensive single component. Weak 
+compression often shows as low discharge temperature and 
+small temperature rise across the condenser.  
+
+• Condenser coil – Air-cooled; performance is highly 
+sensitive to dirt and ambient temperature.  
+
+• Capillary tube – Fixed-orifice device. Restriction is 
+diagnosed by a large temperature drop at the inlet and 
+low suction pressure.  
+
+• Evaporator coil – Cooling only happens here. Airflow is 
+as important as refrigerant flow.  
+
+• Thermostat / sensor – Modern units use NTC thermistors; 
+resistance falls as temperature rises.  
+
+• Refrigerant R600a – Hydrocarbon; flammable in high 
+concentrations, so leak checks and proper ventilation 
+matter. Charge is typically 40–60 g in small domestic 
+units.  
+
+• Failure-mode decision tree – Start with “Is the 
+compressor running?” → “Is the condenser rejecting heat?” 
+→ “Is the evaporator absorbing heat and moving air?” 
+→ sealed system only if the first three are healthy.  
+
+• Pressure/temperature table – For R600a the saturation 
+temperature at a given pressure is the key reference 
+(e.g., ~ –20 °C to –25 °C evaporating for a typical 
+freezer).  
+
+• Brand-specific symptom mapping – Varies (e.g., some 
+Samsung/LG models have known damper or board issues; 
+many Whirlpool/GE units are more classic capillary 
+systems). Symptom → component mapping is best done 
+with model-specific service data.
 
 CORE VAPOR-COMPRESSION CYCLE
 ----------------------------
