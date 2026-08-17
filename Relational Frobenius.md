@@ -376,4 +376,213 @@ Quotient: scalar collapse
 Frobenius norm:
 |A|_F² = ⟨A,A⟩_F = ∑ a_ij²
 ```
+---
+
+# **Appendix: Relational Frobenius Repair Mechanism**
+**Frobenius repair = invertibility of a relational multiplier $k$** on a finite region.
+
+This appendix abstracts the animation into a general relational mechanism.
+
+Two dials appear:
+
+1. **Multiplicative dial**: the cyclic region $F_{p^n}^\times$ of size $p^n - 1$.  
+2. **Additive dial**: the prime field $F_p$ with trace‑based interaction.
+
+The animation shows arrows rotating around each dial.  
+A “repair” succeeds when the multiplier $k$ induces **reversible flux**; otherwise the flux **jams**.
+
+---
+
+## **1. Regions and Interactions**
+
+### **Multiplicative region**
+```
+Region M:
+  Nodes = residues mod (p^n − 1)
+  Structure = modular adjacency (SID)
+  Interaction = j ↦ k·j mod (p^n − 1)   (PED)
+  Dynamics = flux iteration (Q)
+```
+
+### **Additive region**
+```
+Region A:
+  Nodes = elements of F_p
+  Structure = additive adjacency (SID)
+  Interaction = x ↦ k·x mod p         (PED)
+  Dynamics = flux iteration (Q)
+```
+
+Both are pure relational systems.
+
+---
+
+## **2. Repair Criterion (General Form)**
+
+A multiplier $k$ is **repairable** on a region $R$ iff the flux map
+
+$$
+F_k : r \mapsto k r
+$$
+
+is **invertible** on that region.
+
+This is equivalent to:
+
+$$
+\gcd(k, |R|) = 1.
+$$
+
+Where $|R|$ is the region’s cycle length.
+
+This is the relational version of **invertibility**.
+
+---
+
+## **3. Multiplicative Dial Repair**
+
+Region size:
+
+$$
+|F_{p^n}^\times| = p^n - 1.
+$$
+
+Repair condition:
+
+$$
+\gcd(k,\, p^n - 1) = 1.
+$$
+
+If true:
+
+- Flux orbits are full cycles.  
+- Arrows rotate cleanly.  
+- Every node has a unique predecessor.  
+- The dial is reversible.
+
+If false:
+
+- Flux collapses into smaller cycles.  
+- Arrows jam or twist without progress.  
+- No inverse exists.  
+- The dial is not repairable.
+
+This is the relational version of **multiplicative cyclic groups**.
+
+---
+
+## **4. Additive Dial Repair**
+
+Region size:
+
+$$
+|F_p| = p.
+$$
+
+Repair condition:
+
+$$
+k \text{ invertible mod } p
+\quad\Longleftrightarrow\quad
+\gcd(k,p)=1.
+$$
+
+Since $p$ is prime, this means:
+
+- All nonzero $k$ are invertible.
+- Only $k=0$ jams the dial.
+
+This is the relational version of **additive field automorphisms**.
+
+---
+
+## **5. The Three Example Fields in the Animation**
+
+### **GF(9)**  
+- $p=3$, $n=2$, region size $3^2 - 1 = 8$.  
+- Repair requires $\gcd(k,8)=1$.  
+- Good multipliers: 1, 3, 5, 7.  
+- Bad multipliers: 2, 4, 6.
+
+### **GF(125)**  
+- $p=5$, $n=3$, region size $5^3 - 1 = 124$.  
+- Repair requires $\gcd(k,124)=1$.  
+- Many multipliers jam because 124 has large composite structure.
+
+### **GF(729)**  
+- $p=3$, $n=6$, region size $3^6 - 1 = 728$.  
+- Repair requires $\gcd(k,728)=1$.  
+- 728 has rich factorization → many jammed multipliers.
+
+These examples illustrate how the **region size** determines the **repair landscape**.
+
+---
+
+## **6. Relational Interpretation of “Jamming”**
+
+When $\gcd(k, |R|)\neq 1$:
+
+- Flux orbits shrink.  
+- The region decomposes into smaller species.  
+- The multiplier loses reversibility.  
+- The dial cannot return to its starting point.  
+- The animation shows arrows “twisting” or “stalling.”
+
+This is exactly the RDG notion of **flux‑orbit fragmentation**.
+
+---
+
+## **7. Relational Interpretation of “Repair”**
+
+When $\gcd(k, |R|)=1$:
+
+- Flux is a permutation of the region.  
+- Every node has a unique predecessor.  
+- Orbits are full cycles.  
+- The dial is reversible.  
+- The animation shows smooth rotation.
+
+This is the RDG notion of **flux‑stable reversible species**.
+
+---
+
+## **8. Frobenius Connection**
+
+The Frobenius map $x \mapsto x^p$ is itself a multiplier on the exponent dial:
+
+$$
+j \mapsto p j \mod (p^n - 1).
+$$
+
+Its invertibility is guaranteed because:
+
+$$
+\gcd(p, p^n - 1) = 1.
+$$
+
+Thus Frobenius is always “repairable” on the multiplicative dial.  
+The animation generalizes this idea to **arbitrary multipliers $k$**.
+
+This is the relational version of **Frobenius flux**.
+
+---
+
+## **9. Summary**
+
+```
+Region R with size N
+Multiplier k
+
+Repairable ↔ gcd(k, N) = 1
+  → reversible flux
+  → full orbits
+  → clean rotation
+
+Not repairable ↔ gcd(k, N) ≠ 1
+  → jammed flux
+  → fragmented orbits
+  → stalled rotation
+```
+
+
 
