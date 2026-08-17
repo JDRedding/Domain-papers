@@ -963,5 +963,6 @@ INDIAN
 
 ---
 
-
+## External Articles
+- [Alquerque](https://github.com/OMerkel/Alquerque), https://github.com/OMerkel/Alquerque
 
