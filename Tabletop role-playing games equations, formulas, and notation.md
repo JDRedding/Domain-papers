@@ -1,5 +1,6 @@
-
+# Tabletop role-playing games
 **Common mathematical equations, formulas, and notation used in tabletop role-playing games (especially D&D-style systems).**
+
 These formulas cover the vast majority of mathematical calculations used in Dungeons & Dragons, Pathfinder, and most other polyhedral-dice RPGs.
 
 ### Dice Notation
