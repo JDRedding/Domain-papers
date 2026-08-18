@@ -65,6 +65,7 @@ Probability of success (normal roll):
 $$
 P(\text{success}) = \frac{21 - M}{20} \quad (1 \le M \le 20)
 $$
+
 (or 0 if $M > 20$, 1 if $M \le 1$).
 
 **Advantage** (roll 2d20, take the higher):
@@ -83,7 +84,7 @@ $$
 The number of ways to get sum $k$ with $N$ dice of $S$ sides can be found via generating functions or the inclusion-exclusion formula:
 
 $$
-\#\text{ways}(k) = \sum_{i=0}^{\lfloor (k-N)/S \rfloor} (-1)^i \binom{N}{i} \binom{k - S i - 1}{N-1}
+\text{ways}(k) = \sum_{i=0}^{\lfloor (k-N)/S \rfloor} (-1)^i \binom{N}{i} \binom{k - S i - 1}{N-1}
 $$
 
 Then
