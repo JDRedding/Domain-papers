@@ -1,3 +1,5 @@
+> “Mathematical rigor is not an end, but a means to clarity and truth.” -- Emil Leon Post
+
 > "It is to the writer's continuing amazement that ten years after Godel's remarkable
 >  achievement current views on the nature of mathematics are thereby affected
 >  only to the point of seeing the need of many formal systems, instead of a universal
