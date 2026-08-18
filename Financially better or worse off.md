@@ -86,6 +86,6 @@ $$
 | $I_{t} $, $I_{T}$      | Nominal income/wage in periods $t $ and $T $   |
 | $\mathrm{CPI}_{t} $, $\mathrm{CPI}_{T}$ | Consumer Price Index in the respective periods |
 | $\pi$                     | Cumulative inflation rate (decimal) between $t $ and $T $ |
-| $X_{\mathrm{real},T}^{(t\{dollars})}$ | Real value of a period-$T $ amount expressed in period-$t $ dollars |
+| $X_{\mathrm{real},T}^{(t_\{dollars})}$ | Real value of a period-$T $ amount expressed in period-$t $ dollars |
 | $\mathrm{PP}_{u}$         | Purchasing-power measure in period $u $           |
 | $\%\Delta$                | Percentage change                                    |
