@@ -88,6 +88,6 @@ $$
 | $\mathrm{CPI}_t$ | Consumer Price Index in period $t$ (original/base period) |
 | $\mathrm{CPI}_T$ | Consumer Price Index in period $T$ (target period) |
 | $\pi$                     | Cumulative inflation rate (decimal) between $t $ and $T $ |
-| $X_{\mathrm{real},T}^{(t^\{dollars})}$ | Real value of a period-$T$ amount expressed in period-$t$ dollars |
+| $X_{\mathrm{real},T}^{(t^\{\$})}$ | Real value of a period - $T$ amount expressed in period-$t$ dollars |
 | $\mathrm{PP}_{u}$         | Purchasing-power measure in period $u $           |
 | $\{Percent}%\Delta$                | Percentage change                                    |
