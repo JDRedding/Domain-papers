@@ -1,0 +1,95 @@
+# “Elfspire” 
+The 1980 fantasy painting "Elfspire" by Thomas Blackshear, showing a knight with sword and shield confronting a large dragon breathing fire near a castle spire and statue.
+Blackshear, an acclaimed illustrator who began his career in the late 1970s, created this artwork for an uncompleted book project by author John Pocsik that was promoted in magazines like Starlog and Epic Illustrated.
+
+## **RPG math**
+
+The painting depicts a dramatic confrontation: a heavily armored knight (sword and shield raised) standing before a towering dragon that is unleashing a cone of fire near a castle spire and a stone statue. We can treat this as a classic D&D 5e-style combat encounter and apply the standard formulas. These calculations turn the static 1980 fantasy illustration into a fully quantified combat round using the standard RPG equations for modifiers, hit chance, expected damage, and saving throws.
+
+### Scene Setup (hypothetical 5e stats)
+- **Knight**: Level 8 Fighter, Strength 18 (+4), proficiency bonus +3, plate armor + shield → AC 20.  
+  Longsword attack: $1\mathrm{d}20 + 7$ to hit, damage $1\mathrm{d}8 + 4$.
+- **Dragon**: Adult red dragon (simplified for the painting).  
+  AC 19, breath weapon DC 21 (Dexterity save for half), fire damage $18\mathrm{d}6$.
+
+### 1. Ability Modifier
+Knight’s Strength score of 18 yields:
+
+$$
+\left\lfloor \frac{18 - 10}{2} \right\rfloor = +4
+$$
+
+### 2. Attack Roll Success Chance
+Knight needs to hit AC 19:
+
+$$
+M = 19 - 7 = 12 \quad \text{(minimum on the d20)}
+$$
+
+Normal hit probability:
+
+$$
+P(\text{hit}) = \frac{21 - 12}{20} = \frac{9}{20} = 45\%
+$$
+
+With advantage (e.g., flanking or Help action from an ally near the statue):
+
+$$
+P(\text{hit with advantage}) = 1 - \left( \frac{11}{20} \right)^2 = 1 - 0.3025 = 69.75\%
+$$
+
+### 3. Expected Damage on a Hit
+Longsword damage average:
+
+$$
+E[1\mathrm{d}8 + 4] = \frac{8 + 1}{2} + 4 = 4.5 + 4 = 8.5
+$$
+
+Expected damage per attack (factoring hit chance):
+
+$$
+0.45 \times 8.5 \approx 3.825
+$$
+
+With advantage:
+
+$$
+0.6975 \times 8.5 \approx 5.93
+$$
+
+### 4. Dragon’s Fire Breath (the central threat in the painting)
+The dragon is breathing fire directly at the knight.  
+Dexterity save DC 21. Assume the knight has Dexterity 12 (+1) and proficiency in Dexterity saves (+3) → total +4.
+
+Minimum needed on the d20:
+
+$$
+M = 21 - 4 = 17
+$$
+
+Success probability (normal):
+
+$$
+P(\text{save}) = \frac{21 - 17}{20} = 20\%
+$$
+
+With advantage (e.g., shield raised or Cover from the statue/spire):
+
+$$
+P(\text{save with advantage}) = 1 - \left( \frac{16}{20} \right)^2 = 1 - 0.64 = 36\%
+$$
+
+Full damage on a failed save:
+
+$$
+E[18\mathrm{d}6] = 18 \times 3.5 = 63
+$$
+
+Half damage on a successful save: 31.5.
+
+Expected damage from one breath:
+- Normal: $0.80 \times 63 + 0.20 \times 31.5 = 50.4 + 6.3 = 56.7$
+- With advantage: $0.64 \times 63 + 0.36 \times 31.5 \approx 40.3 + 11.3 = 51.6$
+
+### 5. Putting It Together – Survival Odds
+If the knight has ~90 hit points (typical for a level-8 Fighter), a single full-strength breath has a high chance of dropping him unless he succeeds on the save or has resistance. The painting freezes the exact moment the fire is about to hit, so the mathematical “climax” is the Dexterity save probability (20 % normal / 36 % with advantage) determining whether the knight is scorched for ~63 damage or “only” ~32.
