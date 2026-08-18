@@ -90,20 +90,18 @@ $$
 After symmetry breaking these generate the fermion mass matrices $m_f = Y_f v/\sqrt2$.
 
 **Complete fermion quantum numbers (one generation)**
+(The same pattern repeats for the second and third generations.)
 
 | Field | $SU(3)_C$ | $SU(2)_L$ | $Y$ | $T_3$ | $Q = T_3 + Y/2$ |
 |-------|-------------|-------------|-------|---------|-------------------|
-| $$Q_L| 3 | 2 | $+1/6$ | $\pm 1/2$ | $+2/3,\ -1/3$ |
+| $Q_L$ | 3 | 2 | $+1/6$ | $\pm 1/2$ | $+2/3,\ -1/3$ |
 | $u_R$ | 3 | 1 | $+2/3$ | 0 | $+2/3$ |
 | $d_R$ | 3 | 1 | $-1/3$ | 0 | $-1/3$ |
-| $$L_L | 1 | 2 | $-1/2$ | $\pm 1/2$ | $0,\ -1$ |
+| $L_L$ | 1 | 2 | $-1/2$ | $\pm 1/2$ | $0,\ -1$ |
 | $e_R$ | 1 | 1 | $-1$ | 0 | $-1$ |
 
 $$Q_L = \begin{pmatrix} u \\ d \end{pmatrix}_L$$
 
 $$L_L = \begin{pmatrix} \nu \\ e \end{pmatrix}_L$$
-
-(The same pattern repeats for the second and third generations.)
-
 
 
