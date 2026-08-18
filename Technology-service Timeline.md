@@ -1,0 +1,71 @@
+# Technology-service Timeline
+Existence ordered data pairs 
+
+$$
+(n,\ \text{item},\ y_n)
+$$ 
+
+where $n$ is the chart number, the item is the technology/service, and $y_n$ is the year given in the chart.
+
+$n \in \{1,2,\dots,50\}$ – chart index  
+$y_n$ – introduction year given on the chart (integer)  
+The set of all points can be written compactly as  
+
+$$
+\mathcal{T} = \{ (n,\ \text{item}_n,\ y_n) | n=1,\dots,50 \}
+$$
+
+$$
+\begin{align*}
+(1,\ &\text{World Wide Web},\ 1991)\\
+(2,\ &\text{Smartphones},\ 1994)\\
+(3,\ &\text{Digital TV},\ 1998)\\
+(4,\ &\text{DVD},\ 1996)\\
+(5,\ &\text{Wi-Fi},\ 1997)\\
+(6,\ &\text{USB},\ 1996)\\
+(7,\ &\text{Bluetooth},\ 1999)\\
+(8,\ &\text{Camera Phones},\ 1999)\\
+(9,\ &\text{BlackBerry},\ 1999)\\
+(10,\ &\text{Nokia 9000 Communicator},\ 1996)\\
+(11,\ &\text{QR Code},\ 1994)\\
+(12,\ &\text{Google},\ 1998)\\
+(13,\ &\text{Amazon},\ 1994)\\
+(14,\ &\text{eBay},\ 1995)\\
+(15,\ &\text{PayPal},\ 1998)\\
+(16,\ &\text{Hotmail},\ 1996)\\
+(17,\ &\text{ICQ},\ 1996)\\
+(18,\ &\text{Yahoo!},\ 1994)\\
+(19,\ &\text{Netflix},\ 1997)\\
+(20,\ &\text{TiVo},\ 1999)\\
+(21,\ &\text{Napster},\ 1999)\\
+(22,\ &\text{Blogger},\ 1999)\\
+(23,\ &\text{Wikipedia},\ 2001)\\
+(24,\ &\text{iPod},\ 2001)\\
+(25,\ &\text{Xbox},\ 2001)\\
+(26,\ &\text{PlayStation 2},\ 2000)\\
+(27,\ &\text{LinkedIn},\ 2003)\\
+(28,\ &\text{Steam},\ 2003)\\
+(29,\ &\text{Skype},\ 2003)\\
+(30,\ &\text{Facebook},\ 2004)\\
+(31,\ &\text{Gmail},\ 2004)\\
+(32,\ &\text{Flickr},\ 2004)\\
+(33,\ &\text{Google Earth},\ 2005)\\
+(34,\ &\text{YouTube},\ 2005)\\
+(35,\ &\text{Google Maps},\ 2005)\\
+(36,\ &\text{Nintendo Wii},\ 2006)\\
+(37,\ &\text{Twitter},\ 2006)\\
+(38,\ &\text{Blu-ray},\ 2006)\\
+(39,\ &\text{iPhone},\ 2007)\\
+(40,\ &\text{Android},\ 2008)\\
+(41,\ &\text{App Store},\ 2008)\\
+(42,\ &\text{Kindle},\ 2007)\\
+(43,\ &\text{Spotify},\ 2008)\\
+(44,\ &\text{Airbnb},\ 2008)\\
+(45,\ &\text{Tesla Roadster},\ 2008)\\
+(46,\ &\text{Google Chrome},\ 2008)\\
+(47,\ &\text{Dropbox},\ 2007)\\
+(48,\ &\text{WhatsApp},\ 2009)\\
+(49,\ &\text{Uber},\ 2009)\\
+(50,\ &\text{Bitcoin},\ 2009)
+\end{align*}
+$$
