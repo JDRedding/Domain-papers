@@ -101,4 +101,3 @@ After symmetry breaking these generate the fermion mass matrices $m_f = Y_f v/\s
 
 (The same pattern repeats for the second and third generations.)
 
-These are the fundamental equations and the associated notation that underlie every feature shown in the Standard-Model diagram of the original post.
