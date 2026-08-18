@@ -140,6 +140,7 @@ $$
 $$
 
 **Right triangle** ($C = \pi/2$)  
+
 $$
 \cosh c = \cosh a\cosh b,\qquad
 \sinh a = \sinh c\sin A,\qquad
