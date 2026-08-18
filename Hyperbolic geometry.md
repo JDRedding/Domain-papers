@@ -57,7 +57,7 @@ $$
 For points $z,w \in \mathbb{D}$,
 
 $$
-d(z,w) = 2\,\operatorname{artanh}\left|\frac{z-w}{1-\overline{z}w}\right| = \operatorname{arcosh}\left(1 + \frac{2|z-w|^2}{(1-|z|^2)(1-|w|^2)}\right).
+d(z,w) = 2\,{artanh}\left|\frac{z-w}{1-\overline{z}w}\right| = {arcosh}\left(1 + \frac{2|z-w|^2}{(1-|z|^2)(1-|w|^2)}\right).
 $$
 
 Equivalently,
@@ -71,7 +71,7 @@ This is exactly the standard arcosh form.
 **Upper half-plane**  
 
 $$
-d(z,w) = \operatorname{arcosh}\left(1 + \frac{|z-w|^2}{2\,\operatorname{Im}(z)\,\operatorname{Im}(w)}\right).
+d(z,w) = {arcosh}\left(1 + \frac{|z-w|^2}{2\,{Im}(z)\,{Im}(w)}\right).
 $$
 
 Matches the canonical $\mathrm{PSL}(2,\mathbb{R})$-invariant distance.
@@ -121,17 +121,17 @@ $$
 $$
 
 $$
-\operatorname{arsinh} x = \ln\bigl(x + \sqrt{x^2+1}\bigr),\qquad
-\operatorname{arcosh} x = \ln\bigl(x + \sqrt{x^2-1}\bigr)\ (x\ge 1).
+{arsinh} x = \ln\bigl(x + \sqrt{x^2+1}\bigr),\qquad
+{arcosh} x = \ln\bigl(x + \sqrt{x^2-1}\bigr)\ (x\ge 1).
 $$
 
-Definitions of $\sinh$, $\cosh$, $\tanh$, $\operatorname{arsinh}$, and $\operatorname{arcosh}$ match the standard analytic definitions used in all hyperbolic geometry formulas.
+Definitions of $\sinh$, $\cosh$, $\tanh$, ${arsinh}$, and ${arcosh}$ match the standard analytic definitions used in all hyperbolic geometry formulas.
 
 ### Area and angle defect
 For a geodesic triangle with angles $A,B,C$ (curvature $K=-1$), the area is
 
 $$
-\operatorname{Area} = \pi - (A+B+C).
+{Area} = \pi - (A+B+C).
 $$
 
 This is the classical **angular defect theorem**, confirmed in multiple sources.
@@ -139,7 +139,7 @@ This is the classical **angular defect theorem**, confirmed in multiple sources.
 More generally, the Gaussian curvature form yields
 
 $$
-\operatorname{Area}(\Omega) = -\int_\Omega K\,dA = \int_\Omega dA
+{Area}(\Omega) = -\int_\Omega K\,dA = \int_\Omega dA
 $$
 
 when $K\equiv -1$.  
@@ -147,7 +147,7 @@ when $K\equiv -1$.
 Equivalently, for any region $\Omega$,
 
 $$
-\operatorname{Area}(\Omega)=\int_\Omega dA,
+{Area}(\Omega)=\int_\Omega dA,
 $$
 
 since $K=-1$ makes the curvature term $-K\,dA=dA$.
