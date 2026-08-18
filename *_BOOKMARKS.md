@@ -328,6 +328,7 @@
 | Euclidean Space | [https://www.euclideanspace.com/](https://www.euclideanspace.com/) |
 | Theories of anything research | [https://theoriesofanything.com/research/)](https://theoriesofanything.com/research/) |
 | Eelfquest | [https://elfquest.com/](https://elfquest.com/)|
+| playground (microsoft) | [https://playground.microsoft.ai/](https://playground.microsoft.ai/) |
 
 </details>
 
