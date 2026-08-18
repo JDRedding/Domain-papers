@@ -1,3 +1,6 @@
+# Emil Leon Post
+> “Mathematical rigor is not an end, but a means to clarity and truth.”
+
 **Emil Leon Post (1897–1954)** was a Polish-born American mathematician and logician whose work significantly advanced mathematical logic, computability theory, and the foundations of mathematics. He is recognized as a pioneer alongside figures such as Kurt Gödel, Alonzo Church, and Alan Turing, particularly for formalizing aspects of effective computation and exploring the limits of decidability. His work remains central to understanding the limits of mechanical computation and formal reasoning.
 
 Born on February 11, 1897, in Augustów (then in the Russian Empire, now Poland) to a Polish-Jewish family, Post immigrated to New York City in 1904. He earned a B.S. from the City College of New York (1917) and an A.M. (1918) and Ph.D. (1920) from Columbia University under Cassius Jackson Keyser. His career included a postdoctoral year at Princeton and long-term teaching at City College of New York (from 1936). He struggled with manic-depressive illness throughout much of his adult life and died of a heart attack in 1954 following electroshock treatment.
