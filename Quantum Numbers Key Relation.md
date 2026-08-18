@@ -44,19 +44,9 @@ $$
 After electroweak symmetry breaking the physical photon and $Z$ fields are the orthogonal combinations
 
 $$
-\begin{pmatrix}
-A_\mu \\
-Z_\mu
-\end{pmatrix}
-=
-\begin{pmatrix}
-\cos\theta_W & \sin\theta_W \\
--\sin\theta_W & \cos\theta_W
-\end{pmatrix}
-\begin{pmatrix}
-B_\mu \\
-W_\mu^3
-\end{pmatrix}
+A_\mu = \cos\theta_W\, B_\mu + \sin\theta_W\, W_\mu^3, \\
+\qquad
+Z_\mu = -\sin\theta_W\, B_\mu + \cos\theta_W\, W_\mu^3.
 $$
 
 where the weak mixing angle satisfies $\tan\theta_W = g'/g$.
