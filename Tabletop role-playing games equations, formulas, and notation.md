@@ -90,7 +90,7 @@ $$
 Then
 
 $$
-P(\text{sum} = k) = \frac{\#\text{ways}(k)}{S^N}
+P(\text{sum} = k) = \frac{\text{ways}(k)}{S^N}
 $$
 
 ### Damage Rolls
