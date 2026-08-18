@@ -19,7 +19,7 @@ $$
 or as a percentage:
 
 $$
-\pi_{\%} = \pi \times 100\%
+\pi_{percent} = \pi \times 100 {percent}
 $$
 
 - \(\mathrm{CPI}_{t}$, \(\mathrm{CPI}_{T}$: Consumer Price Index in periods $t$ and $T$.
