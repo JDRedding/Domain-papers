@@ -84,7 +84,8 @@ $$
 | $T$                       | Later period ($T > t $)                           |
 | $X_{t} $, $X_{T}$      | Nominal quantity in periods $t $ and $T $      |
 | $I_{t} $, $I_{T}$      | Nominal income/wage in periods $t $ and $T $   |
-| $$\mathrm{CPI}_{t} \{dollars}, \{dollars} \mathrm{CPI}_{T}$$ | Consumer Price Index in the respective periods |
+| $\mathrm{CPI}_t$ | Consumer Price Index in period $t$ (original/base period) |
+| $\mathrm{CPI}_T$ | Consumer Price Index in period $T$ (target period) |
 | $\pi$                     | Cumulative inflation rate (decimal) between $t $ and $T $ |
 | $X_{\mathrm{real},T}^{(t \{dollars})}$ | Real value of a period-$T$ amount expressed in period-$t$ dollars |
 | $\mathrm{PP}_{u}$         | Purchasing-power measure in period $u $           |
