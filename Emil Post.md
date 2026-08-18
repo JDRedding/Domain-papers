@@ -18,7 +18,7 @@ Born on February 11, 1897, in Augustów (then in the Russian Empire, now Poland)
 ### Legacy
 Post’s production systems, correspondence problem, and work on recursive enumerability and degrees directly shaped theoretical computer science, automata theory, formal languages, and complexity theory. His emphasis on the absolute unsolvability of certain combinatorial problems and the creative yet limited nature of mathematical thinking remains influential. Despite publishing relatively few papers and receiving less contemporary recognition than some peers (partly due to delayed publication and health issues), his results are foundational and continue to be cited.
 
-**Selected references** (corrected/expanded):
+**Selected references**:
 - Emil L. Post, “Introduction to a General Theory of Elementary Propositions,” *American Journal of Mathematics* 43 (1921): 163–185.
 - Emil L. Post, “Finite Combinatory Processes—Formulation 1,” *Journal of Symbolic Logic* 1 (1936): 103–105.
 - Emil L. Post, “Formal Reductions of the General Combinatorial Decision Problem,” *American Journal of Mathematics* 65 (1943): 197–215.
