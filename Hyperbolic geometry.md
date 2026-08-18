@@ -86,7 +86,6 @@ $$
 
 Matches the canonical PSL(2,ℝ)‑invariant distance.  
 
-
 ### **Disk model** 
 
 $$
@@ -98,7 +97,6 @@ $$
 $$
 
 This is exactly the standard arcosh form.  
-
 
 ### **Hyperboloid model**  
 
@@ -118,9 +116,11 @@ with induced metric from Minkowski space. This model gives the cleanest distance
 Hyperbolic trigonometry (triangle with sides $a,b,c$ and opposite angles $A,B,C$)
 
 **Law of cosines**  
+
 $$
 \cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C,
 $$
+
 $$
 \cos C = -\cos A\cos B + \sin A\sin B\cosh c.
 $$
