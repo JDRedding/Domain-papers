@@ -7,7 +7,7 @@ $$
 \%\Delta X = \frac{X_{T} - X_{t}}{X_{t}} \times 100\%
 $$
 
-- \(X$: any nominal quantity (income, wage, price, expenses, net worth, etc.).
+- $X$: any nominal quantity (income, wage, price, expenses, net worth, etc.).
 
 ### 2. Inflation rate between the two periods
 Using the Consumer Price Index (CPI):
@@ -22,7 +22,7 @@ $$
 \pi_{percent} = \pi \times 100 {percent}
 $$
 
-- \(\mathrm{CPI}_{t}$, \(\mathrm{CPI}_{T}$: Consumer Price Index in periods $t$ and $T$.
+- $\mathrm{CPI}_{t}$, $\mathrm{CPI}_{T}$: Consumer Price Index in periods $t$ and $T$.
 
 ### 3. Real (inflation-adjusted) value in base-period dollars
 Express a period-$T $ amount in period-$t $ purchasing-power terms:
@@ -48,9 +48,9 @@ $$
 \%\Delta I_{\mathrm{real}} = \left( \frac{I_{T} / \mathrm{CPI}_{T}}{I_{t} / \mathrm{CPI}_{t}} - 1 \right) \times 100\%
 $$
 
-- \(I_{t}$, \(I_{T}$: nominal income (or wage, disposable income, etc.) in the respective periods.
-- \(\%\Delta I_{\mathrm{real}} > 0$ → higher real purchasing power (better off, all else equal).
-- \(\%\Delta I_{\mathrm{real}} < 0$ → lower real purchasing power (worse off).
+- $I_{t}$, $I_{T}$: nominal income (or wage, disposable income, etc.) in the respective periods.
+- $\%\Delta I_{\mathrm{real}} > 0$ → higher real purchasing power (better off, all else equal).
+- $\%\Delta I_{\mathrm{real}} < 0$ → lower real purchasing power (worse off).
 
 ### 5. Purchasing-power index
 
