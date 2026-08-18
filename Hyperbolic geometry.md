@@ -89,14 +89,6 @@ $$
 This is exactly the standard arcosh form.  
 
 **Hyperboloid model**  
-The sheet $\{ (x,y,t) \in \mathbb{R}^{2,1} : x^2 + y^2 - t^2 = -1,\ t > 0 \}$ of the two-sheeted hyperboloid in Minkowski space, with the induced Riemannian metric from the ambient Lorentzian metric $dx^2 + dy^2 - dt^2$.
-
-$$
-\cosh d(u,v)=-\langle u,v\rangle_{\text{Minkowski}}.
-$$
-
-This is the defining relation for the hyperboloid model.
-
 If $u,v$ are points on the hyperboloid, then
 
 $$
@@ -108,6 +100,14 @@ x^2+y^2-t^2=-1,\quad t>0,
 $$
 
 with induced metric from Minkowski space. This model gives the cleanest distance formula via Lorentzian inner product.
+
+The sheet $\{ (x,y,t) \in \mathbb{R}^{2,1} : x^2 + y^2 - t^2 = -1,\ t > 0 \}$ of the two-sheeted hyperboloid in Minkowski space, with the induced Riemannian metric from the ambient Lorentzian metric $dx^2 + dy^2 - dt^2$.
+
+$$
+\cosh d(u,v)=-\langle u,v\rangle_{\text{Minkowski}}.
+$$
+
+This is the defining relation for the hyperboloid model.
 
 ## 🔺 Hyperbolic triangle trigonometry
 Hyperbolic trigonometry (triangle with sides $a,b,c$ and opposite angles $A,B,C$)
