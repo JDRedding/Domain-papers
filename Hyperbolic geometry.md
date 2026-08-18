@@ -147,30 +147,6 @@ $$
 \tanh a = \tanh c\cos B.
 $$
 
-### Area and angle defect
-
-For a geodesic triangle with angles $A,B,C$,
-
-$$
-{Area} = \pi - (A+B+C)
-$$
-
-(the angular defect). More generally, the Gaussian curvature form yields
-
-$$
-{Area}(\Omega) = -\int_\Omega K\,dA = \int_\Omega dA
-$$
-
-when $K\equiv -1$.
-
-$$
-\cosh c=\cosh a\cosh b,\qquad 
-\sinh a=\sinh c\sin A,\qquad 
-\tanh a=\tanh c\cos B.
-$$
-
-These are exactly the standard right‑triangle relations.
-
 ### Common hyperbolic functions (used throughout)
 
 $$
@@ -183,7 +159,6 @@ $$
 {arsinh} x = \ln\bigl(x + \sqrt{x^2+1}\bigr),\qquad
 {arcosh} x = \ln\bigl(x + \sqrt{x^2-1}\bigr)\ (x\ge 1).
 $$
-
 
 Definitions of $\sinh$, $\cosh$, $\tanh$, ${arsinh}$, and ${arcosh}$ match the standard analytic definitions used in all hyperbolic geometry formulas. 
 
@@ -205,6 +180,22 @@ $$
 $$
 
 since $K=-1$ makes the curvature term $-K\,dA=dA$.
+
+More generally, the Gaussian curvature form yields
+
+$$
+{Area}(\Omega) = -\int_\Omega K\,dA = \int_\Omega dA
+$$
+
+when $K\equiv -1$.
+
+$$
+\cosh c=\cosh a\cosh b,\qquad 
+\sinh a=\sinh c\sin A,\qquad 
+\tanh a=\tanh c\cos B.
+$$
+
+These are exactly the standard right‑triangle relations.
 
 ---
 
