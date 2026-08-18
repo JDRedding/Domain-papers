@@ -22,7 +22,7 @@ $$
 \pi_{percent} = \pi \times 100 {percent}
 $$
 
-- $\mathrm{CPI}_{t}$, $\mathrm{CPI}_{T}$: Consumer Price Index in periods $t$ and $T$.
+- $\mathrm{CPI}_{t}$, $\mathrm{CPI}_{T}$ : Consumer Price Index in periods $t$ and $T$.
 
 ### 3. Real (inflation-adjusted) value in base-period dollars
 Express a period-$T $ amount in period-$t $ purchasing-power terms:
@@ -32,6 +32,7 @@ X_{\mathrm{real},T}^{(t\$)} = X_{T} \times \frac{\mathrm{CPI}_{t}}{\mathrm{CPI}_
 $$
 
 Equivalently:
+
 $$
 X_{\mathrm{real},T}^{(t\$)} = \frac{X_{T}}{1 + \pi}
 $$
