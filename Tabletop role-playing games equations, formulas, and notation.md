@@ -112,9 +112,9 @@ $$
 ### Other Useful Formulas
 - **Probability of rolling at least $n$** when taking the highest of $x$ dice with $y$ sides:
 
-  $$
-  P(\ge n) = 1 - \left( \frac{n-1}{y} \right)^x
-  $$
+$$
+P(\ge n) = 1 - \left( \frac{n-1}{y} \right)^x
+$$
 
 - Single-face probability on a fair die: $1/S$
 - Critical hit (natural 20 on d20): always $1/20 = 5\%$ (or higher with expanded crit range)
