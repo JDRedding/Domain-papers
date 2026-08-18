@@ -23,5 +23,5 @@ Post’s production systems, correspondence problem, and work on recursive enume
 - Emil L. Post, “Finite Combinatory Processes—Formulation 1,” *Journal of Symbolic Logic* 1 (1936): 103–105.
 - Emil L. Post, “Formal Reductions of the General Combinatorial Decision Problem,” *American Journal of Mathematics* 65 (1943): 197–215.
 - Emil L. Post, “Recursively Enumerable Sets of Positive Integers and Their Decision Problems,” *Bulletin of the American Mathematical Society* 50 (1944): 284–316.
-- Emil L. Post, “A Variant of a Recursively Unsolvable Problem” (introducing PCP), *Bulletin of the American Mathematical Society* 52 (1946): 264–268.
+- Emil L. Post, “[A Variant of a Recursively Unsolvable Problem](https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-52/issue-4/A-variant-of-a-recursively-unsolvable-problem/bams/1183507843.pdf)” (introducing PCP), *Bulletin of the American Mathematical Society* 52 (1946): 264–268.
 - Emil L. Post, “Recursive Unsolvability of a Problem of Thue,” *Journal of Symbolic Logic* 12 (1947): 1–11.
