@@ -1,4 +1,4 @@
-**Hyperbolic geometry**  
+# **Hyperbolic geometry**  
 **Hyperbolic geometry** (constant Gaussian curvature $K = -1$) uses the following standard models, metrics, distance formulas, and trigonometric identities. Notation is conventional.
 
 All the formulas listed are exactly the standard toolkit for **constant-curvature $K=-1$** hyperbolic geometry. Below is a clean, structured presentation with consistent notation, correctness, and a few clarifying connections across models.
