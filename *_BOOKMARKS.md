@@ -327,5 +327,8 @@
 | ExcelX | [https://excelx.com/](https://excelx.com/) |
 | Euclidean Space | [https://www.euclideanspace.com/](https://www.euclideanspace.com/) |
 | Theories of anything research | [https://theoriesofanything.com/research/)](https://theoriesofanything.com/research/) |
+| Eelfquest | [https://elfquest.com/](https://elfquest.com/)|
+
 </details>
+
 
