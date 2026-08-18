@@ -1,0 +1,27 @@
+**Emil Leon Post (1897–1954)** was a Polish-born American mathematician and logician whose work significantly advanced mathematical logic, computability theory, and the foundations of mathematics. He is recognized as a pioneer alongside figures such as Kurt Gödel, Alonzo Church, and Alan Turing, particularly for formalizing aspects of effective computation and exploring the limits of decidability. His work remains central to understanding the limits of mechanical computation and formal reasoning.
+
+Born on February 11, 1897, in Augustów (then in the Russian Empire, now Poland) to a Polish-Jewish family, Post immigrated to New York City in 1904. He earned a B.S. from the City College of New York (1917) and an A.M. (1918) and Ph.D. (1920) from Columbia University under Cassius Jackson Keyser. His career included a postdoctoral year at Princeton and long-term teaching at City College of New York (from 1936). He struggled with manic-depressive illness throughout much of his adult life and died of a heart attack in 1954 following electroshock treatment.
+
+### Key Contributions
+- **Propositional logic and early metamathematics**: In his doctoral dissertation (published 1921 as “Introduction to a General Theory of Elementary Propositions”), Post proved the consistency and completeness of the propositional calculus of Whitehead and Russell’s *Principia Mathematica*, independently developed (and systematically applied) truth tables, and explored multi-valued logics. He also introduced related notions of completeness and consistency. Note that the year is 1921 (not 1936 as sometimes misstated).
+
+- **Anticipation of incompleteness and undecidability**: In the early 1920s (especially during his Princeton year), Post obtained results closely anticipating Gödel’s incompleteness theorems and the undecidability results of Church and Turing, working with “normal systems” and combinatorial decision problems. He delayed full publication (partly due to a desire for complete analysis and personal difficulties); a later account of this anticipation appeared posthumously. He corresponded with Gödel about this in the 1930s.
+
+- **Models of computation**: Independently of Turing, Post developed “Formulation 1” (1936), a model of computation essentially equivalent to the Turing machine (sometimes called a Post machine or Post–Turing machine), emphasizing finite combinatory processes and instructions. In the 1920s–1940s he also developed Post canonical (production) systems and normal systems, which model computation via string rewriting/symbol transformation rules and influenced formal language theory and automata.
+
+- **Post Correspondence Problem (PCP)**: Introduced in 1946, this is a simple undecidable decision problem about matching sequences of pairs of strings. It became a fundamental tool for proving undecidability results in formal language theory and beyond.
+
+- **Recursive functions, recursively enumerable sets, and degrees of unsolvability**: Post’s influential 1944 paper “Recursively Enumerable Sets of Positive Integers and Their Decision Problems” helped establish the structure theory of r.e. sets and degrees of unsolvability. He formulated “Post’s problem” (existence of intermediate degrees between computable and the halting problem), later solved affirmatively. His 1943 paper “Formal Reductions of the General Combinatorial Decision Problem” showed reductions among combinatorial decision problems (including to normal form). In 1947 he proved the recursive unsolvability of the word problem for semigroups (a classical problem posed by Thue in 1914).
+
+- **Other work**: Contributions include polyadic groups, generalized differentiation, and inversion formulas.
+
+### Legacy
+Post’s production systems, correspondence problem, and work on recursive enumerability and degrees directly shaped theoretical computer science, automata theory, formal languages, and complexity theory. His emphasis on the absolute unsolvability of certain combinatorial problems and the creative yet limited nature of mathematical thinking remains influential. Despite publishing relatively few papers and receiving less contemporary recognition than some peers (partly due to delayed publication and health issues), his results are foundational and continue to be cited.
+
+**Selected references** (corrected/expanded):
+- Emil L. Post, “Introduction to a General Theory of Elementary Propositions,” *American Journal of Mathematics* 43 (1921): 163–185.
+- Emil L. Post, “Finite Combinatory Processes—Formulation 1,” *Journal of Symbolic Logic* 1 (1936): 103–105.
+- Emil L. Post, “Formal Reductions of the General Combinatorial Decision Problem,” *American Journal of Mathematics* 65 (1943): 197–215.
+- Emil L. Post, “Recursively Enumerable Sets of Positive Integers and Their Decision Problems,” *Bulletin of the American Mathematical Society* 50 (1944): 284–316.
+- Emil L. Post, “A Variant of a Recursively Unsolvable Problem” (introducing PCP), *Bulletin of the American Mathematical Society* 52 (1946): 264–268.
+- Emil L. Post, “Recursive Unsolvability of a Problem of Thue,” *Journal of Symbolic Logic* 12 (1947): 1–11.
