@@ -32,15 +32,6 @@ $$
 ds^2 = \frac{dx^2 + dy^2}{y^2}.
 $$
 
-**Hyperboloid model**  
-The sheet $\{ (x,y,t) \in \mathbb{R}^{2,1} : x^2 + y^2 - t^2 = -1,\ t > 0 \}$ of the two-sheeted hyperboloid in Minkowski space, with the induced Riemannian metric from the ambient Lorentzian metric $dx^2 + dy^2 - dt^2$.
-
-$$
-\cosh d(u,v)=-\langle u,v\rangle_{\text{Minkowski}}.
-$$
-
-This is the defining relation for the hyperboloid model.
-
 ### Distance formulas
 
 **Poincaré disk**  
@@ -63,7 +54,6 @@ Equivalently,
 $$
 \tanh\frac{d(z,w)}{2} = \left|\frac{z-w}{1-\overline{z}w}\right|.
 $$
-
 
 ## 🌀 Models and metrics (constant curvature $K=-1$)
 
@@ -98,7 +88,14 @@ $$
 
 This is exactly the standard arcosh form.  
 
-### **Hyperboloid model**  
+**Hyperboloid model**  
+The sheet $\{ (x,y,t) \in \mathbb{R}^{2,1} : x^2 + y^2 - t^2 = -1,\ t > 0 \}$ of the two-sheeted hyperboloid in Minkowski space, with the induced Riemannian metric from the ambient Lorentzian metric $dx^2 + dy^2 - dt^2$.
+
+$$
+\cosh d(u,v)=-\langle u,v\rangle_{\text{Minkowski}}.
+$$
+
+This is the defining relation for the hyperboloid model.
 
 If $u,v$ are points on the hyperboloid, then
 
