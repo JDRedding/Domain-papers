@@ -32,7 +32,7 @@ These are axis-aligned segments of constant $x$.
 The main form is a parallelogram $\mathcal{P}$ defined by a base point $\mathbf{p}$ and two linearly independent vectors $\mathbf{u},\mathbf{v}$:
 
 $$
-\mathcal{P} = \bigl\{\mathbf{p} + s\mathbf{u} + t\mathbf{v}\ \big|\ s,t\in[0,1]\bigr\}.
+\mathcal{P} = \{\mathbf{p} + s\mathbf{u} + t\mathbf{v}\ \big|\ s,t\in[0,1]\}.
 $$
 
 The filling lines are parallel to $\mathbf{u}$ and spaced along the direction of $\mathbf{v}$:
