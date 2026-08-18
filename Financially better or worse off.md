@@ -4,7 +4,7 @@
 ### 1. Percentage change (nominal)
 
 $$
-\%\Delta X = \frac{X_{T} - X_{t}}{X_{t}} \times 100\%
+\{Percentage}\Delta X = \frac{X_{T} - X_{t}}{X_{t}} \times 100\{Percentage}
 $$
 
 - $X$: any nominal quantity (income, wage, price, expenses, net worth, etc.).
