@@ -1,7 +1,7 @@
 # Hyperbolic geometry
 **Hyperbolic geometry** (constant Gaussian curvature $K = -1$) uses the following standard models, metrics, distance formulas, and trigonometric identities. Notation is conventional.
 
-All the formulas listed are exactly the standard toolkit for **constant‑curvature $K=-1$** hyperbolic geometry. Below is a clean, structured consolidation — matching notation, confirming correctness, and adding a few clarifying connections across models.
+All the formulas listed are exactly the standard toolkit for **constant‑curvature $K=-1$** hyperbolic geometry. Below is a clean, structured notation, correctness, and a few clarifying connections across models.
 
 - They are exactly the ones used in Escher‑style tessellations (Poincaré disk).  
 - They are the backbone of PSL(2,ℝ) isometries and modern hyperbolic embeddings in machine learning. 
