@@ -46,12 +46,14 @@ The provided summary accurately captures the mathematical underpinnings of Ray K
 
 * **Single Exponential (Constant Resources):**
 Given $V = C_1 W$ and $W = C_2 \int_0^t V \, dt$, taking the time derivative yields:
+
 $$\frac{dW}{dt} = C_1 C_2 W$$
 
 Integrating directly produces $W(t) = W_0 e^{C_1 C_2 t}$, establishing standard exponential growth.
 
 * **Double Exponential (Exponentially Escalating Resources):**
 When resource allocation $N(t) = c_3 e^{c_4 t}$ is factored into knowledge accumulation $\frac{dW}{dt} = C_2 N V$, substitution gives:
+
 $$\frac{dW}{dt} = C_1 C_2 c_3 e^{c_4 t} W$$
 
 Separating variables ($\frac{1}{W} dW = C_1 C_2 c_3 e^{c_4 t} dt$) and integrating both sides:
@@ -68,8 +70,8 @@ Models of the form $\frac{dW}{dt} = k W^p$ (for $p > 1$) yield finite-time singu
 
 * **Architecture:** Models the human neocortex as a distributed network of $\sim 3 \times 10^8$ pattern recognition modules (PRMs), each containing $\sim 100$ neurons.
 * **Formal Engine:** Operates via Hierarchical Hidden Markov Models (HHMMs), utilizing standard probabilistic state transitions:
+* 
 $$P(O \mid \lambda) = \sum_{Q} P(O, Q \mid \lambda)$$
-
 
 where $O$ represents lower-level feature inputs and $Q$ represents internal state configurations, optimized via expectation-maximization (e.g., Baum-Welch) or evolutionary search.
 
