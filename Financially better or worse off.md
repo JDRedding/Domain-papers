@@ -1,5 +1,5 @@
 # Financially better or worse off
-**Generalized mathematical formulas** for assessing whether someone is financially better or worse off between any two dates (earlier period $t$ and later period $T $, with $T > t$). These formulas apply to any pair of dates. Substitute the appropriate CPI values and your own income/cost figures for periods $t$ and $T$ to obtain a quantitative answer.
+**Generalized mathematical formulas** for assessing whether someone is financially better or worse off between any two dates (earlier period $t$ and later period $T $, with $T > t$). These formulas apply to any pair of dates. Substitute the appropriate CPI values and income/cost figures for periods $t$ and $T$ to obtain a quantitative answer.
 
 ---
 
@@ -97,7 +97,7 @@ $$
 ---
 
 **Takeaway:**  
-**Pure mathematical formulas** describing whether you’re financially better or worse off. Below is a clean, ASCII‑stable, RDG‑compatible block of equations you can directly use.
+**Pure mathematical formulas** describing whether financially better or worse off. Below is a clean, ASCII‑stable, RDG‑compatible block of equations can directly use.
 
 ---
 
@@ -132,7 +132,7 @@ $$
 $$
 
 **Notation:**  
-- $C_t$ — cost‑of‑living index (CPI or your personal basket)
+- $C_t$ — cost‑of‑living index (CPI or personal basket)
 
 ---
 
