@@ -1,7 +1,7 @@
 # Ray Kurzweil
 Inventor and futurist
 
-Ray Kurzweil is a **transformative American inventor and futurist** whose work in **OCR**, **text‑to‑speech**, **speech recognition**, and **music synthesis** helped define modern assistive technology and digital instruments. He is equally influential as a public intellectual, forecasting **exponential technological growth**, **human‑AI convergence**, and the **2045 singularity**. 
+Ray Kurzweil is a **transformative American inventor and futurist** whose work in **OCR**, **text‑to‑speech**, **speech recognition**, and **music synthesis** helped define modern assistive technology and digital instruments. He is equally influential as a public intellectual, forecasting **exponential technological growth**, **human‑AI convergence**, and the **2045 singularity**. In short, Kurzweil’s strength lies in tracking exponential information-technology progress and offering a unified, hierarchical view of intelligence. His timelines and biological predictions have required more adjustment, yet the core thesis that intelligence and technology compound nonlinearly continues to shape debates in 2026.
 
 ---
 
@@ -100,7 +100,7 @@ As of mid-2026 interviews (including appearances on the Moonshots podcast), Kurz
 
 Comparisons with other futurists highlight Kurzweil’s distinctive mix of optimism, quantitative timelines, and human-machine merger emphasis.
 
-Vernor Vinge** (who popularized the modern singularity concept in the early 1990s) treated it more as an “event horizon” of radical unpredictability beyond which human forecasting breaks down. Kurzweil is far more specific and confident about the post-singularity world (longevity, expanded minds, molecular manufacturing, cosmic expansion of intelligence).
+Vernor Vinge (who popularized the modern singularity concept in the early 1990s) treated it more as an “event horizon” of radical unpredictability beyond which human forecasting breaks down. Kurzweil is far more specific and confident about the post-singularity world (longevity, expanded minds, molecular manufacturing, cosmic expansion of intelligence).
 Nick Bostrom** focuses heavily on the control/alignment problem and existential risks of superintelligence. Where Kurzweil stresses utopian potential and seamless merger, Bostrom emphasizes the difficulty of ensuring outcomes remain beneficial once systems exceed human understanding.
 
 Figures such as Hans Moravec share overlapping views on robotics and post-biological futures. More recent voices (e.g., some statements from Sam Altman or Elon Musk) sometimes compress timelines further or declare aspects of singularity already present, placing Kurzweil in a relatively “conservative” position among accelerationist circles on the final 2045 date while remaining aggressive compared with median academic AI researcher surveys from earlier decades.
@@ -111,4 +111,4 @@ His Pattern Recognition Theory of Mind (PRTM), detailed in How to Create a Mind 
 
 The theory draws on Kurzweil’s own earlier work in hierarchical pattern recognition systems and parallels earlier models such as the neocognitron and Jeff Hawkins’ Hierarchical Temporal Memory. It underpins his confidence that reverse-engineering the brain (or sufficiently emulating its core algorithms) will yield human-level AI, and that the genome encodes a relatively compact “recursive probabilistic fractal” description of the system. Critics note that the core hierarchical pattern idea is not entirely novel, that the theory is more descriptive than rigorously falsifiable in its full form, and that it may understate other aspects of brain function (subcortical contributions, embodiment, continuous dynamics). Nonetheless, it remains a coherent, engineering-oriented framework that has influenced how some approach both neuroscience-inspired AI and the feasibility of mind uploading or deep brain-computer interfaces.
 
-In short, Kurzweil’s strength lies in tracking exponential information-technology progress and offering a unified, hierarchical view of intelligence. His timelines and biological predictions have required more adjustment, yet the core thesis that intelligence and technology compound nonlinearly continues to shape debates in 2026.
+
