@@ -70,7 +70,7 @@ Models of the form $\frac{dW}{dt} = k W^p$ (for $p > 1$) yield finite-time singu
 
 * **Architecture:** Models the human neocortex as a distributed network of $\sim 3 \times 10^8$ pattern recognition modules (PRMs), each containing $\sim 100$ neurons.
 * **Formal Engine:** Operates via Hierarchical Hidden Markov Models (HHMMs), utilizing standard probabilistic state transitions:
-* 
+
 $$P(O \mid \lambda) = \sum_{Q} P(O, Q \mid \lambda)$$
 
 where $O$ represents lower-level feature inputs and $Q$ represents internal state configurations, optimized via expectation-maximization (e.g., Baum-Welch) or evolutionary search.
