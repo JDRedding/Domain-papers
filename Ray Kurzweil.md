@@ -40,8 +40,6 @@ His central theories:
 - **Pattern recognition as the basis of human thought** — A theme running through his inventions and cognitive models.   
 - **Human‑AI merger** — Human‑level AI by **2029**, full singularity by **2045**. 
 
-The provided summary accurately captures the mathematical underpinnings of Ray Kurzweil’s work.
-
 **Law of Accelerating Returns (LOAR)**
 
 * **Single Exponential (Constant Resources):**
