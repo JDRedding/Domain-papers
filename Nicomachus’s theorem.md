@@ -1,4 +1,4 @@
-**Nicomachus’s theorem** 
+# **Nicomachus’s theorem** 
 
 These formulas hold for every positive integer $n$.
 The sum-of-cubes identity) states that the sum of the first $n$ cubes equals the square of the sum of the first $n$ positive integers:
