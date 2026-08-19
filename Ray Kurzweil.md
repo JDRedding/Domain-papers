@@ -1,7 +1,7 @@
 # Ray Kurzweil
 Inventor and futurist
 
-Ray Kurzweil is a **transformative American inventor and futurist** whose work in **OCR**, **text‑to‑speech**, **speech recognition**, and **music synthesis** helped define modern assistive technology and digital instruments. He is equally influential as a public intellectual, forecasting **exponential technological growth**, **human‑AI convergence**, and the **2045 singularity**. In short, Kurzweil’s strength lies in tracking exponential information-technology progress and offering a unified, hierarchical view of intelligence. His timelines and biological predictions have required more adjustment, yet the core thesis that intelligence and technology compound nonlinearly continues to shape debates in 2026.
+Ray Kurzweil is a **transformative American inventor and futurist** whose work in **OCR**, **text‑to‑speech**, **speech recognition**, and **music synthesis** helped define modern assistive technology and digital instruments. He is equally influential as a public intellectual, forecasting **exponential technological growth**, **human‑AI convergence**, and the **2045 singularity**. In short, Kurzweil’s strength lies in tracking exponential information-technology progress and offering a unified, hierarchical view of intelligence. His timelines and biological predictions have required more adjustment, yet the core thesis that intelligence and technology compound nonlinearly continues to shape debates.
 
 ---
 
