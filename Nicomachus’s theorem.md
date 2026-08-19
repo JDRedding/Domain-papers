@@ -1,7 +1,7 @@
 # **Nicomachus’s theorem** 
 
 These formulas hold for every positive integer $n$.
-The sum-of-cubes identity) states that the sum of the first $n$ cubes equals the square of the sum of the first $n$ positive integers:
+The **sum-of-cubes identity** states that the sum of the first $n$ cubes equals the square of the sum of the first $n$ positive integers:
 
 $$
 1^{3} + 2^{3} + 3^{3} + \cdots + n^{3} = (1 + 2 + 3 + \cdots + n)^{2}
