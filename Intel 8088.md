@@ -1,6 +1,6 @@
 # Intel 8088
 
-**The Intel 8088 features a 16-bit internal architecture with an 8-bit external data bus.** This means the CPU’s registers, ALU, and internal data paths operate on 16-bit quantities, while the external data bus that connects to memory and I/O devices is only 8 bits wide. The 8086 uses a full 16-bit external data bus; the 8088 is otherwise architecturally identical except for this external-bus difference.
+**The Intel 8088 features a 16-bit internal architecture with an 8-bit external data bus.** This means the CPU’s registers, ALU, and internal data paths operate on 16-bit quantities, while the external data bus that connects to memory and I/O devices is only 8 bits wide. The 8086 uses a full 16-bit external data bus; the 8088 is otherwise architecturally identical except for this external-bus difference. This matches the classic 8088 design: a 16-bit internal machine constrained by an 8-bit external data path. These relations fully capture the mathematical distinction between the 16-bit internal architecture and the 8-bit external bus of the 8088.
 
 ```
 8088 Architecture (Structural Summary)
@@ -97,4 +97,52 @@ $$
 
 where $S$ and $O$ are 16-bit quantities, yielding the 20-bit physical address.
 
-These relations fully capture the mathematical distinction between the 16-bit internal architecture and the 8-bit external bus of the 8088.
+# Formal Structural Summary
+
+Execution Unit (EU) — fully 16-bit
+
+$$
+\begin{align*}
+W_{\text{ALU}} &= 16 \text{ bits} \\
+W_{\text{reg}} &= 16 \text{ bits} \\
+W_{\text{int-bus}} &= 16 \text{ bits}
+\end{align*}
+$$
+
+Micro-operations are identical to those of the 8086.
+
+Bus Interface Unit (BIU) — 8-bit external interface
+
+$$
+\begin{align*}
+W_{\text{data}} &= 8 \text{ bits} \\
+W_{\text{addr}} &= 20 \text{ bits} \\
+Q_{\text{prefetch}} &= 4 \text{ bytes}
+\end{align*}
+$$
+
+Word (16-bit) transfer cost:
+
+$$
+N_{\text{cycles}} = \left\lceil \frac{16}{8} \right\rceil = 2
+$$
+
+Instruction fetch is serialized over the 8-bit bus.
+
+Performance relationship
+
+$$
+\text{Throughput}{\text{EU}} > \text{Throughput}{\text{BIU}}
+$$
+
+BIU is the bottleneck.  
+Memory-heavy code is slowed by the factor $\approx 2$ on word accesses.  
+Register-heavy code (operating entirely inside the EU) is essentially unaffected.
+
+Physical address formation
+
+$$
+PA = (S \ll 4) + O = 16 \cdot S + O
+$$
+
+where $S$ (segment) and $O$ (offset) are both 16-bit quantities, producing a 20-bit physical address.
