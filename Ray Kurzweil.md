@@ -7,8 +7,7 @@ Ray Kurzweil is a **transformative American inventor and futurist** whose work i
 
 ## **Early Life & Education**
 Kurzweil was born **February 12, 1948**, in **Queens, New York**, to secular Jewish parents who had fled Nazi persecution.   
-He showed early talent in **programming** and **music composition**, winning the **1965 International Science Fair** with a program that mimicked classical composers.  
-He graduated from **MIT in 1970** with a degree in **computer science and literature**, already having sold a college‑matching software system for $100,000 plus royalties.  
+He showed early talent in **programming** and **music composition**, winning the **1965 International Science Fair** with a program that mimicked classical composers. He graduated from **MIT in 1970** with a degree in **computer science and literature**, already having sold a college‑matching software system for $100,000 plus royalties.  
 
 ---
 
@@ -22,8 +21,7 @@ He graduated from **MIT in 1970** with a degree in **computer science and litera
 ---
 
 ## **Google & Later Career**
-Since **2012**, Kurzweil has served as **Director of Engineering at Google**, leading teams in **machine intelligence** and **natural language understanding**.
-He also co‑founded **Singularity University**, shaping discourse around exponential technologies.
+Since **2012**, Kurzweil has served as **Director of Engineering at Google**, leading teams in **machine intelligence** and **natural language understanding**. He also co‑founded **Singularity University**, shaping discourse around exponential technologies.
 
 ---
 
