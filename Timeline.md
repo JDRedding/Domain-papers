@@ -1,0 +1,19 @@
+# Timeline
+
+Existence ordered data pairs 
+
+$$
+(n,\ \text{item},\ y_n)
+$$ 
+
+where $n$ is the chart number, the item, and $y_n$ is the year given in the chart.
+
+$n \in \{1,2,\dots,x\}$ – chart index  
+$y_n$ – introduction year given on the chart (integer)  
+$x$ – the total number of items
+
+The set of all points can be written compactly as  
+
+$$
+\mathcal{T} = \{ (n,\ \text{item}_n,\ y_n) | n=1,\dots,x \}
+$$
