@@ -1,6 +1,8 @@
 # Financially better or worse off
 **Generalized mathematical formulas** for assessing whether someone is financially better or worse off between any two dates (earlier period $t$ and later period $T $, with $T > t$). These formulas apply to any pair of dates. Substitute the appropriate CPI values and your own income/cost figures for periods $t$ and $T$ to obtain a quantitative answer.
 
+---
+
 ### 1. Percentage change (nominal)
 
 $$
@@ -81,13 +83,166 @@ $$
 ### Notation summary
 | Symbol                        | Meaning                                              |
 |-------------------------------|------------------------------------------------------|
-| $t$                       | Earlier (base) period                                |
-| $T$                       | Later period ($T > t $)                           |
-| $X_{t} $, $X_{T}$      | Nominal quantity in periods $t $ and $T $      |
+| $t$                       | Earlier (base) period   |
+| $T$                       | Later period ($T > t $) |
+| $X_{t} $, $X_{T}$      | Nominal quantity in periods $t $ and $T $ |
 | $I_{t} $, $I_{T}$      | Nominal income/wage in periods $t $ and $T $   |
 | $\mathrm{CPI}_t$ | Consumer Price Index in period $t$ (original/base period) |
 | $\mathrm{CPI}_T$ | Consumer Price Index in period $T$ (target period) |
 | $\pi$                     | Cumulative inflation rate (decimal) between $t $ and $T $ |
 | $X_{\mathrm{real},T}^{(t^\{dollar})}$ | Real value of a period - $T$ amount expressed in period - $t$ dollars |
-| $\mathrm{PP}_{u}$         | Purchasing-power measure in period $u $           |
-| $\{Percent}%\Delta$                | Percentage change                                    |
+| $\mathrm{PP}_{u}$         | Purchasing-power measure in period $u$ |
+| $\{Percent}%\Delta$                | Percentage change   |
+
+---
+
+**Takeaway:**  
+**Pure mathematical formulas** describing whether you’re financially better or worse off. Below is a clean, ASCII‑stable, RDG‑compatible block of equations you can directly use.
+
+---
+
+## 📐 **Financial Delta Equations**
+
+### 1. **Real Income Change**
+
+$$
+\text{RealIncome}_{t} = \frac{Y_{t}}{1+\pi_{t}}
+$$
+
+$$
+\Delta \text{RealIncome} = \text{RealIncome}_{now} - \text{RealIncome}_{earlier}
+$$
+
+**Notation:**  
+
+- $Y_t$ — nominal income at time $t$  
+- $\pi_t$ — inflation rate between earlier and $t$  
+- Positive $\Delta \text{RealIncome}$ ⇒ better off.
+
+---
+
+### 2. **Real Purchasing Power Index**
+$$
+\text{PPI}_{t} = \frac{Y_{t}}{C_{t}}
+$$
+
+$$
+\Delta \text{PPI} = \text{PPI}_{now} - \text{PPI}_{earlier}
+$$
+
+**Notation:**  
+- $C_t$ — cost‑of‑living index (CPI or your personal basket)
+
+---
+
+### 3. **Debt Burden Ratio**
+
+$$
+\text{DBR}_{t} = \frac{D_{t}}{Y_{t}}
+$$
+
+$$
+\Delta \text{DBR} = \text{DBR}_{now} - \text{DBR}_{earlier}
+$$
+
+**Notation:**  
+- $D_t$ — total debt obligations  
+- Higher DBR ⇒ worse off.
+
+---
+
+### 4. **Interest Cost Load**
+
+$$
+\text{ICL}_{t} = r_{t} \cdot D_{t}
+$$
+
+$$
+\Delta \text{ICL} = \text{ICL}_{now} - \text{ICL}_{earlier}
+$$
+
+**Notation:**  
+- $r_t$ — effective interest rate  
+- Higher ICL ⇒ worse off.
+
+---
+
+### 5. **Savings Position**
+
+$$
+\text{SavingsRate}_{t} = \frac{S_{t}}{Y_{t}}
+$$
+
+$$
+\Delta \text{SavingsRate} = \text{SavingsRate}_{now} - \text{SavingsRate}_{earlier}
+$$
+
+**Notation:**  
+
+- $S_t$ — annual savings  
+- Higher savings rate ⇒ better off.
+
+---
+
+### 6. **Net Financial Position (NFP)**
+This is the combined scalar can use as a “final score.”
+
+$$
+\text{NFP}_{t} = 
+\left( \frac{Y_{t}}{1+\pi_{t}} \right)
+- D_{t}
+- r_{t}D_{t}
++ S_{t}
+$$
+
+$$
+\Delta \text{NFP} = \text{NFP}_{now} - \text{NFP}_{earlier}
+$$
+
+If  
+
+$$
+\Delta \text{NFP} < 0
+$$  
+
+you are **worse off**.  
+If  
+
+$$
+\Delta \text{NFP} > 0
+$$  
+
+you are **better off**.
+
+---
+
+## 📊 **Optional: riadic decomposition**
+
+### PED‑side (Power–Evaluation–Dynamics)
+
+$$
+\text{Power}_{t} = Y_{t}
+$$
+
+$$
+\text{Evaluation}_{t} = \frac{1}{1+\pi_{t}}
+$$
+
+$$
+\text{Dynamics}_{t} = \frac{d}{dt}(Y_{t} - D_{t})
+$$
+
+### SID‑side (Structure–Interaction–Dynamics)
+
+$$
+\text{Structure}_{t} = C_{t}
+$$
+
+$$
+\text{Interaction}_{t} = r_{t}D_{t}
+$$
+
+$$
+\text{Dynamics}_{t} = \frac{d}{dt}\text{NFP}_{t}
+$$
+
