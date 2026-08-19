@@ -122,6 +122,7 @@ $$
 ---
 
 ### 2. **Real Purchasing Power Index**
+
 $$
 \text{PPI}_{t} = \frac{Y_{t}}{C_{t}}
 $$
@@ -146,6 +147,7 @@ $$
 $$
 
 **Notation:**  
+
 - $D_t$ — total debt obligations  
 - Higher DBR ⇒ worse off.
 
@@ -187,13 +189,7 @@ $$
 ### 6. **Net Financial Position (NFP)**
 This is the combined scalar can use as a “final score.”
 
-$$
-\text{NFP}_{t} = 
-\left( \frac{Y_{t}}{1+\pi_{t}} \right)
-- D_{t}
-- r_{t}D_{t}
-+ S_{t}
-$$
+$$\text{NFP}_{t} = \left( \frac{Y_{t}}{1+\pi_{t}} \right)- D_{t}- r_{t}D_{t}+ S_{t}$$
 
 $$
 \Delta \text{NFP} = \text{NFP}_{now} - \text{NFP}_{earlier}
@@ -205,14 +201,15 @@ $$
 \Delta \text{NFP} < 0
 $$  
 
-you are **worse off**.  
+are **worse off**.  
+ 
 If  
 
 $$
 \Delta \text{NFP} > 0
 $$  
 
-you are **better off**.
+are **better off**.
 
 ---
 
