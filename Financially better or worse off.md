@@ -213,7 +213,7 @@ are **better off**.
 
 ---
 
-## 📊 **Optional: riadic decomposition**
+## 📊 **Optional: Triadic decomposition**
 
 ### PED‑side (Power–Evaluation–Dynamics)
 
