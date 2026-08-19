@@ -329,6 +329,7 @@
 | Theories of anything research | [https://theoriesofanything.com/research/)](https://theoriesofanything.com/research/) |
 | Eelfquest | [https://elfquest.com/](https://elfquest.com/)|
 | playground (microsoft) | [https://playground.microsoft.ai/](https://playground.microsoft.ai/) |
+| Orbat-mapper | [https://orbat-mapper.app/](https://orbat-mapper.app/) |
 
 </details>
 
