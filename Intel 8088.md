@@ -2,6 +2,28 @@
 
 **The Intel 8088 features a 16-bit internal architecture with an 8-bit external data bus.** This means the CPU’s registers, ALU, and internal data paths operate on 16-bit quantities, while the external data bus that connects to memory and I/O devices is only 8 bits wide. The 8086 uses a full 16-bit external data bus; the 8088 is otherwise architecturally identical except for this external-bus difference.
 
+```
+8088 Architecture (Structural Summary)
+-----------------------------------------
+EU (16-bit):ALU: 16
+Registers: 16
+Internal bus: 16
+Micro-ops identical to 8086
+
+BIU (8-bit external):Data bus: 8
+Address bus: 20
+Prefetch queue: 4 bytes
+Word transfer: 2 cycles
+Serialized instruction fetch
+
+Performance Consequence:EU > BIU (BIU is bottleneck)
+Memory-heavy code slows
+Register-heavy code unaffected
+
+Address Formation:
+  PA = (Segment << 4) + Offset
+```
+
 ### Core architectural parameters
 
 - Internal data width:
