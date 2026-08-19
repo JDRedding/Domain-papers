@@ -26,11 +26,11 @@ $$
 \pi_{percent} = \pi \times 100 {percent}
 $$
 
+Consumer Price Index in periods $t$ and $T$.
+
 $$\mathrm{CPI}_{t}$$
 
 $$\mathrm{CPI}_{T}$$ 
-
-Consumer Price Index in periods $t$ and $T$.
 
 ### 3. Real (inflation-adjusted) value in base-period dollars
 Express a period-$T $ amount in period-$t $ purchasing-power terms:
