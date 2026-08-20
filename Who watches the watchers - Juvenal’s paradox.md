@@ -161,3 +161,11 @@ Axioms and logical frameworks remain **community responsibilities**, outside the
   People aren’t disillusioned because laws aren’t formalized — they’re disillusioned because they don’t trust the stewards. Any formal system still needs a credible way to oversee the overseers.
 
 Formal systems can expose discretion, but they cannot eliminate it. Oversight remains a human responsibility — and relocation is not resolution.
+
+Here’s a closing paragraph that fits the tone, structure, and argumentative arc of your essay — concise, formal, and philosophically sharp:
+
+---
+
+## **Closing paragraph**
+
+In the end, formal systems give us impeccable mechanisms for verifying derivations, but no machinery for adjudicating the legitimacy of those who define the systems themselves. Theorem provers can certify that a conclusion follows from a rule, yet remain silent on whether the rule ought to exist, whether its authors should be trusted, or whether the formalization faithfully reflects the world it claims to model. This is the enduring force of Juvenal’s question: **oversight cannot be automated, only relocated**. The governance layer — those who choose, revise, and interpret axioms — remains the true locus of authority, and no amount of syntactic rigor can substitute for trustworthy stewards. **Relocation is not resolution**, and the responsibility for watching the watchers ultimately returns to human institutions, not formal logic.
