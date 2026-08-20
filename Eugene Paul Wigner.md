@@ -1,5 +1,5 @@
-# **Eugene Paul Wigner****
-Eugene Paul Wigner (1902–1995)** was a Hungarian‑American theoretical physicist whose introduction of **group theory** into quantum mechanics reshaped modern physics. He received the **1963 Nobel Prize in Physics** for applying symmetry principles to nuclear and particle physics.  Wigner’s students included **John Bardeen**, **Victor Weisskopf**, **Frederick Seitz**, and many others. His collected works span **500+ papers**, and his concepts permeate modern physics. He died **January 1, 1995**, in Princeton.  He is also widely remembered for his influential essay **“The Unreasonable Effectiveness of Mathematics in the Natural Sciences” (1960)**
+# **Eugene Paul Wigner**
+**Eugene Paul Wigner (1902–1995)** was a Hungarian‑American theoretical physicist whose introduction of **group theory** into quantum mechanics reshaped modern physics. He received the **1963 Nobel Prize in Physics** for applying symmetry principles to nuclear and particle physics.  Wigner’s students included **John Bardeen**, **Victor Weisskopf**, **Frederick Seitz**, and many others. His collected works span **500+ papers**, and his concepts permeate modern physics. He died **January 1, 1995**, in Princeton.  He is also widely remembered for his influential essay **“The Unreasonable Effectiveness of Mathematics in the Natural Sciences” (1960)**
 
 ### ⚛️ **Manhattan Project & Nuclear Engineering**
 - In **1939**, Wigner and **Leó Szilárd** helped draft the famous **Einstein–Szilárd letter** urging Roosevelt to consider nuclear chain reactions. 
