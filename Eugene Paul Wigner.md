@@ -19,11 +19,9 @@ These contributions remain central in **quantum information**, **condensed matte
 
 ---
 
-The “Wigner point,” the core state, is a physical system is anchored by a canonical state that defines its symmetry, its allowable transformations, and its identity.
-
 ## ⭐ 1. What the **Wigner point** is  
 
-In Poincaré representation theory, Wigner picks a **canonical four‑momentum**:
+The “Wigner point,” the core state, is a physical system is anchored by a canonical state that defines its symmetry, its allowable transformations, and its identity. In Poincaré representation theory, Wigner picks a **canonical four‑momentum**:
 
 - Massive: \( p^\mu = (m,0,0,0) \)  
 - Massless: \( p^\mu = (\omega,0,0,\omega) \)
