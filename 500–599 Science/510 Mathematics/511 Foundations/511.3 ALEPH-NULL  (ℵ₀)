@@ -250,7 +250,29 @@ completed infinities.
 Summary
 -------
 Cantor’s ℵ₀ and the continuum c belong to classical set theory.
-They do *not* belong to the relational ontology.
+They do not belong to the relational ontology.
 
-============================================================
+---
+
+## **Contrast: Continuum Signature vs Continuum Cardinality**
+
+Cantorian ontology
+| Continuum cardinality 2^ℵ₀ | ❌ Forbidden | Completed infinite set
+
+Exponential richness
+| Continuum signature | ✔ Allowed | Arbitrarily fine finite families
+
+The signature is behavioral.  
+The cardinality is ontological.
+
+Resolution n: Distinguishable states ≥ 2^n
+
+n = 1   →   2 states
+n = 2   →   4 states
+n = 3   →   8 states
+n = 10  →   1024 states
+n = 20  →   1,048,576 states
+...
+n → ∞   →   arbitrarily large finite families
+```
 
