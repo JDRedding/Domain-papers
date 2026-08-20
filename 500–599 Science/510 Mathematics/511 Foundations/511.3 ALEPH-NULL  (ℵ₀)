@@ -172,3 +172,85 @@ Key Relations:
   - ω is the order-type of N.
   - ℵ₀ = |ω| (cardinal-collapse of ω).
   - c > ℵ₀ (Cantor’s theorem).
+
+============================================================
+CANTOR EXCISION NOTE — ℵ₀ CONTEXT
+============================================================
+
+Purpose
+-------
+This note clarifies the role of Cantorian cardinality theory
+within the ALEPH-NULL (ℵ₀) structure sheet, and explains why
+Cantor’s hierarchy is *mathematically valid* but *ontologically
+incompatible* with a relational operator stack.
+
+Scope
+-----
+The ℵ₀ sheet is a classical set-theoretic reference document.
+It describes:
+
+    • ordinals (ω, ω₁, …)
+    • cardinals (ℵ₀, ℵ₁, …)
+    • collapse operators (|·|)
+    • continuum cardinal c
+    • diagonalization and bijection theory
+
+These belong to standard ZFC mathematics and are included here
+for structural completeness only.
+
+Excision Principle
+------------------
+Cantorian objects (ℵ₀, 2^ℵ₀, c, etc.) are *not* permitted as
+ontological commitments.
+
+Reason:
+    • RDG requires finite foundations.
+    • Q□ is not a set.
+    • G is a coarse-grained quotient, not a power-set object.
+    • I is finite-resolution and partitionable.
+    • Q is rational and many-to-one.
+    • Operate only on finite relational configurations.
+    • Infinite behavior must arise from finite-resolution limits,
+      never from completed infinite sets.
+
+Thus:
+    Cantor’s hierarchy is valid *mathematically*,
+    but invalid *as a model of relational ontology*.
+
+Allowed Use
+-----------
+Cantor’s theory may appear:
+
+    • in classical reference sheets (such as this ℵ₀ document)
+    • in historical or structural explanations
+    • in comparisons between ordinal and cardinal modes
+    • in operator-form descriptions of collapse maps
+
+Forbidden Use
+-------------
+Cantor’s hierarchy may *not* appear:
+
+    • in definitions of Q□, G, R, I, Q, RDG, or MFE
+    • in any operator pipeline
+    • as a literal size of Image(R)
+    • as a foundational object in generator or meso layers
+    • as a cardinality claim about observables
+
+Constructive Replacement
+------------------------
+Whenever continuum richness is required, it must be
+expressed constructively:
+
+    For every finite resolution n ∈ ℕ,
+    there exist ≥ 2^n distinguishable meso-layer states.
+
+This preserves continuum-like behavior without invoking
+completed infinities.
+
+Summary
+-------
+Cantor’s ℵ₀ and the continuum c belong to classical set theory.
+They do *not* belong to the relational ontology.
+
+============================================================
+
