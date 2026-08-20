@@ -64,22 +64,22 @@ This is **pure syntax**.
 There is **no operator** inside $\mathcal{F}$ that expresses:
 
 - **Legitimacy of axioms**
-- 
-  $$
-  \mathrm{Legit}(\mathcal{A})
-  $$
+  
+$$
+\mathrm{Legit}(\mathcal{A})
+$$
 
 - **Authority of maintainers**
-- 
-  $$
-  \mathrm{Auth}(a)
-  $$
+
+$$
+\mathrm{Auth}(a)
+$$
 
 - **Correspondence to reality**
-- 
-  $$
-  \mathcal{A} \models_{\text{world}} \text{“this matches reality”}
-  $$
+  
+$$
+\mathcal{A} \models_{\text{world}} \text{“this matches reality”}
+$$
 
 None are definable in the object language $\mathcal{L}$.  
 None appear in the inductive definition of $\mathrm{Prov}(\mathcal{F})$.  
