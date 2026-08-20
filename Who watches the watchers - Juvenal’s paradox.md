@@ -159,3 +159,5 @@ Axioms and logical frameworks remain **community responsibilities**, outside the
 
 - **Public‑trust version**  
   People aren’t disillusioned because laws aren’t formalized — they’re disillusioned because they don’t trust the stewards. Any formal system still needs a credible way to oversee the overseers.
+
+Formal systems can expose discretion, but they cannot eliminate it. Oversight remains a human responsibility — and relocation is not resolution.
