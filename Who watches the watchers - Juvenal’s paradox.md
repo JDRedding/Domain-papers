@@ -1,6 +1,10 @@
 # **Who watches the watchers?**  
 *A formal‑systems perspective on Juvenal’s paradox*
 
+This note delineates how automated theorem provers can rigorously check syntactic correctness but are structurally blind to questions of legitimacy, authority, and real‑world fidelity. Formal systems compute provability (the least fixed point of a derivability operator) and produce ⊢ consequences, but they contain no internal operator to evaluate whether axioms are justified, whether maintainers are authoritative, or whether the formalization matches reality. Semantic consequence (models, satisfaction, ⊨) and soundness/completeness are meta‑level notions outside the prover. As a result, the real “watchers” are the human maintainers who choose, revise, and interpret axioms and rules — the accountability problem is merely relocated to that governance layer. The note closes with a modern restatement: technically, provers can’t prove legitimacy; publicly, distrust concerns stewards, not formalization per se.
+
+---
+
 Automated theorem provers can verify logical proofs but offer no mechanism to evaluate the legitimacy or trustworthiness of individuals who set the foundational axioms. Their domain is **syntactic correctness**, not **epistemic legitimacy**. They enforce structure, not stewardship.
 
 The phrase *“Who watches the watchers?”* originates from Juvenal’s *Quis custodiet ipsos custodes?* (1st–2nd century CE). It asks a timeless question about accountability: **when power is granted to overseers, who ensures they themselves do not abuse it?**
