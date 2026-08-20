@@ -23,8 +23,8 @@ These contributions remain central in **quantum information**, **condensed matte
 
 The “Wigner point,” the core state, is a physical system is anchored by a canonical state that defines its symmetry, its allowable transformations, and its identity. In Poincaré representation theory, Wigner picks a **canonical four‑momentum**:
 
-- Massive: \( p^\mu = (m,0,0,0) \)  
-- Massless: \( p^\mu = (\omega,0,0,\omega) \)
+- Massive: $p^\mu = (m,0,0,0)$  
+- Massless: $p^\mu = (\omega,0,0,\omega)$
 
 This chosen momentum is the **anchor** for:
 
@@ -43,8 +43,8 @@ This is exactly why some authors casually call it the **Wigner point**.
 
 MFE has:
 
-- a **triadic internal state** \((M,F,R)\)  
-- a **tension sign** \(\sigma\)  
+- a **triadic internal state** $(M,F,R)$  
+- a **tension sign** $\sigma$
 - a **constraint‑generated coherence**  
 - a **canonical “rest” configuration** that defines its allowable flips and transitions
 
