@@ -6,6 +6,21 @@ The classical Cantorian cardinality of the natural numbers,
 used only in the ALEPH‑NULL structural sheet,
 never as an ontological object inside RDG‑MFE‑Q.
 
+Although Cantorian cardinality (ℵ₀, 2^ℵ₀, c and related 
+power‑set constructions) is mathematically valid and retained 
+here for reference and comparison, it is explicitly excluded 
+as an ontological commitment in the RDG/MFE/Q framework: 
+completed infinities, literal cardinalities, and power‑set 
+objects must not be used as foundational primitives, operator 
+inputs, or claims about observables (e.g., in generator/meso 
+layers or operator pipelines). Instead, continuum‑like 
+richness must be expressed constructively via finite‑
+resolution families S_n with |S_n| ≥ 2^n for each finite n, 
+so that arbitrarily fine, exponentially large behavior can 
+emerge from strictly finite stages; Cantor’s hierarchy may 
+therefore appear only in historical or explanatory contexts, 
+not as a literal ontology or operational resource.
+
 ℵ₀ (pronounced “aleph-null” or “aleph-zero”) is the 
 smallest infinite cardinal number in set theory. Formally, 
 it is defined as the cardinality of the set of natural 
