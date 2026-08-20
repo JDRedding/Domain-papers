@@ -1,0 +1,287 @@
+# Wizard of Wor 
+
+A **finite‑state, grid‑based, event‑driven system**. Every mechanic — movement, spawning, scoring, invisibility, wrap‑around, and dungeon progression — can be expressed as discrete update rules over a small maze graph with ≤6 active monsters.
+
+## 🧮 Full State Machine (Formal)
+
+Let global state be:
+
+$$
+\Sigma = (D, M, S, L, \mathcal{G}, W, \{E_i\}, R)
+$$
+
+| **Component** | **Meaning** | **Type / Domain** | **Role in Game Logic** |
+| --- | --- | --- | --- |
+| **D** | Current dungeon number | Integer $D \\ge 1$ | Controls monster replacement rules, speed scaling, maze layout, Worluk/Wizard eligibility |
+| **M** | Score multiplier | $M \\in \\{1,2\\}$ | Doubles score for next dungeon if Worluk is killed |
+| **S** | Player score | Non‑negative integer | Updated by kills: $S \\leftarrow S + M\\cdot P(E)$ |
+| **L** | Lives remaining | Integer $L \\ge 0$ | Decrements on Worrior death; game ends at $L=0$ |
+| $\\mathcal{G}$ | Maze graph | Directed graph $(V,E)$ | Defines valid movement, wrap‑around doors, wall constraints |
+| **W** | Worrior state | Tuple $(p_W, d_W, s_W)$ | Player position, facing, and active shot (one at a time) |
+| $E_i$ | Monster set | Finite set of tuples $(p_i, d_i, s_i, \\text{type}_i, \\text{visible}_i)$ | All active enemies (≤6): Burwor, Garwor, Thorwor, Worluk, Wizard |
+| **R** | Radar state | Projection $f(\\{p_i\\})$ | Shows approximate monster positions, including invisible ones |
+
+Dungeon loop:
+
+```
+START_DUNGEON(D):
+    spawn 6 Burwors
+    while monsters remain:
+        update movement
+        update invisibility
+        update shots
+        resolve collisions
+        apply replacement rules
+    if D >= 2:
+        spawn Worluk
+        resolve escape/kill
+    maybe spawn Wizard
+    D ← D + 1
+    apply multiplier M
+    award extra life if S ≥ 10,000 (2600)
+```
+
+---
+
+# 🧩 1. Maze, Entities, and State Space  
+Let the maze be a directed graph  
+
+$$
+\mathcal{G} = (V, E)
+$$  
+
+where each vertex $v \in V$ is a corridor cell (≈11×6 grid in Atari 2600; larger in arcade), and edges represent valid movement directions.
+
+### Entities  
+
+- **Worrior** \(W\)  
+- **Burwor** \(B\)  
+- **Garwor** \(G\)  
+- **Thorwor** \(T\)  
+- **Worluk** \(L_k\)  
+- **Wizard** \(Z\)
+
+Each entity has:
+
+- Position $p \in V$
+- Facing direction $d \in \mathcal{D} = \{\text{Up, Down, Left, Right}\}$
+- Optional active shot $s \in V \cup \varnothing$
+
+Maximum monsters simultaneously: **6**  
+
+---
+
+# 🎯 2. Scoring System (Discrete Update Rules)
+
+Base point values (before multiplier):
+
+$$
+P(B)=100,\quad P(G)=200,\quad P(T)=500,\quad P(W_{\text{other}})=1000,\quad P(L_k)=1000,\quad P(Z)=2500
+$$
+
+Score update:
+
+$$
+S_{t+1} = S_t + M_t \cdot P(E)
+$$
+
+Multiplier update:
+
+$$
+M_{t+1} =
+\begin{cases}
+2 & \text{if } E = L_k \text{ (Worluk killed)}\\
+M_t & \text{otherwise}
+\end{cases}
+$$
+
+Extra life:
+
+$$
+\text{If } S \ge 10{,}000 \text{ and no bonus yet awarded: } L \leftarrow L+1
+$$
+
+Arcade extra lives occur at fixed dungeon thresholds (manual‑documented but variable by DIP switches).
+
+Friendly fire:
+
+$$
+S_{\text{shooter}} \leftarrow S_{\text{shooter}} + 1000,\quad L_{\text{victim}} \leftarrow L_{\text{victim}} - 1
+$$
+
+
+---
+
+# 🧨 3. Movement and Projectile Rules
+
+### Movement  
+For any entity:
+
+$$
+p_{t+1} =
+\begin{cases}
+p_t + d & \text{if } (p_t, p_t+d) \in E \\
+p_t & \text{otherwise}
+\end{cases}
+$$
+
+Arcade joystick allows **reorientation without movement** (light tap)  
+
+### Projectile  
+Each entity may have **one active shot**:
+
+$$
+s_{t+1} =
+\begin{cases}
+s_t + d_s & \text{if path open} \\
+\varnothing & \text{if collision with wall or entity}
+\end{cases}
+$$
+
+Shot destruction rule:
+
+- If $s_t$ enters a monster cell → monster dies, shot removed.
+- If $s_t$ enters a wall cell → shot removed.
+- If $s_t$ enters a Worrior cell → Worrior dies.
+
+---
+
+# 👁 4. Invisibility Rules (Garwor / Thorwor)
+
+Garwors and Thorwors cloak:
+
+$$
+\text{visible}(G,T) =
+\begin{cases}
+\text{true} & \text{if same row or column as any Worrior}\\
+\text{false} & \text{otherwise}
+\end{cases}
+$$
+
+Radar always shows approximate positions regardless of visibility   
+---
+
+# 🔄 5. Side Door Teleportation
+
+Let left door be $v_L$, right door $v_R$.
+
+Teleport rule:
+
+$$
+p_{t+1} =
+\begin{cases}
+v_R & \text{if } p_t = v_L \\
+v_L & \text{if } p_t = v_R \\
+p_t & \text{otherwise}
+\end{cases}
+$$
+
+After use:
+
+$$
+\text{door.active} \leftarrow \text{false for } \Delta t
+$$
+
+Doors reactivate after a short delay; Worluk can still use them during escape attempt
+
+---
+
+# 🧬 6. Enemy Spawning & Replacement Logic
+
+Initial dungeon state:
+
+$$
+\text{Monsters} = \{B_1, B_2, \dots, B_6\}
+$$
+
+Replacement rules (from manuals):
+
+### Burwor → Garwor  
+Dungeon $D$:
+
+$$
+\text{Number of Burwors replaced by Garwors} =
+\begin{cases}
+1 & D=1 \\
+2 & D=2 \\
+3 & D=3 \\
+4 & D=4 \\
+5 & D=5 \\
+6 & D\ge 6
+\end{cases}
+$$
+
+
+### Garwor → Thorwor  
+Every Garwor killed spawns a Thorwor:
+
+$$
+G \xrightarrow{\text{death}} T
+$$
+
+### Thorwor → Worluk trigger  
+If $D \ge 2$, after **last Thorwor** dies:
+
+$$
+T_{\text{last}} \xrightarrow{\text{death}} L_k
+$$
+
+### Worluk escape  
+Worluk moves toward nearest side door; if it reaches:
+
+$$
+L_k \xrightarrow{\text{door}} \text{escape}
+$$
+
+If killed:
+
+$$
+M_{next} = 2
+$$
+
+### Wizard appearance  
+After Worluk resolves:
+
+$$
+\Pr(Z\text{ appears}) = p_D
+$$
+
+Wizard teleports rapidly and fires lightning bolts (manual description)  
+
+---
+
+# 🧠 7. Dungeon Completion & Progression
+
+Dungeon ends when:
+
+$$
+\text{All } (B,G,T) \text{ cleared AND Worluk resolved}
+$$
+
+Then:
+
+$$
+D \leftarrow D+1
+$$
+
+Maze layout chosen from predefined set (Arena, Pit, etc.)  
+
+---
+
+# 🔥 8. Worrior Death & Respawn
+
+If Worrior dies:
+
+$$
+L \leftarrow L-1
+$$
+
+Backup Worrior appears in corner box; player has **10 seconds** to enter before forced entry  
+
+Game over:
+
+$$
+L = 0
+$$
+
+---
