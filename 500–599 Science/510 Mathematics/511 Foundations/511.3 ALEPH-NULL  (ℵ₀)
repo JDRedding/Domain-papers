@@ -399,3 +399,18 @@ It is the continuum’s *shadow*, not the continuum itself.
 
 ============================================================
 
+ℵ₀ᵣₑₗₐₜᵢₒₙₐₗ denotes the strictly classical Cantorian cardinality 
+of the natural numbers, used only as a reference or comparator 
+within relational systems. It refers to the size‑invariant 
+obtained by collapsing the first infinite ordinal ω under the 
+cardinal‑collapse operator |·|, but carries no ontological 
+weight. In relational contexts, ℵ₀ᵣₑₗₐₜᵢₒₙₐₗ signals that the 
+citation is descriptive rather than foundational: it does not 
+specify the size of any generator or meso layer, does not imply 
+completed infinities or power‑set objects, and does not 
+function as an operator input. All continuum‑like behavior 
+must instead be expressed constructively through finite‑
+resolution families Sₙ with |Sₙ| ≥ 2ⁿ. Thus ℵ₀ᵣₑₗₐₜᵢₒₙₐₗ is the 
+relationally‑safe interpretation of ℵ₀ — a classical structural 
+invariant used only for explanation and comparison, never as 
+part of the relational ontology.
