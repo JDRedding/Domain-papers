@@ -1,0 +1,103 @@
+# **Sensors**
+**Five functional families** — thermal, optical, mechanical, chemical, and acoustic — each defined by a specific physical transduction mechanism. A **minimal basis**, get:
+
+```
+{ Resistive, Capacitive, Piezoelectric, Optical, Magnetic, Acoustic, Time-of-flight }
+```
+
+Everything else in sensor engineering is either:
+
+- a refinement (e.g., thermocouples vs thermistors),  
+- a hybrid (e.g., IMUs combining accel + gyro + magnetometer), or  
+- a domain‑specific packaging (e.g., automotive O₂ sensors).
+
+---
+
+## 🧭 Taxonomy (mechanism → sensor)
+```
+THERMAL
+  └─ Thermistor (Temperature)
+
+OPTICAL
+  ├─ LDR (Light)
+  └─ RGB Sensor (Color)
+
+MECHANICAL
+  ├─ Ultrasonic (Proximity)
+  ├─ Piezoelectric (Pressure)
+  ├─ PIR (Motion)
+  ├─ MEMS Accelerometer
+  └─ MEMS Gyroscope
+
+MAGNETIC
+  └─ Hall Effect Sensor
+
+CHEMICAL
+  └─ MQ‑series Gas Sensor
+
+ACOUSTIC
+  └─ Microphone (Sound)
+```
+
+## 🧩 Mechanisms
+Each sensor represents a **distinct physical transduction class**:
+
+- **Resistive:** Thermistor, LDR, MQ  
+- **Capacitive:** Humidity, MEMS accel/gyro  
+- **Piezoelectric:** Pressure, PIR  
+- **Time-of-flight:** Ultrasonic  
+- **Magnetic Lorentz-force:** Hall  
+- **Optical spectral:** RGB  
+- **Acoustic diaphragm:** Microphone  
+
+## 🔍 Details (mechanism‑level)
+
+### 1. **Thermistor** — Temperature  
+Changes resistance with temperature via semiconductor carrier mobility.  
+- **Type:** NTC (resistance ↓ with temp ↑) or PTC.  
+- **Use:** HVAC, appliances, battery packs.
+
+### 2. **LDR** — Light  
+Photoconductive material (CdS) reduces resistance when photons excite carriers.  
+- **Use:** Night lights, ambient sensing.
+
+### 3. **Ultrasonic Sensor** — Proximity  
+Emits 40 kHz pulses; measures echo time-of-flight.  
+- **Use:** Robotics, parking assist.
+
+### 4. **Piezoelectric Sensor** — Pressure  
+Crystals generate voltage under mechanical stress.  
+- **Use:** Force plates, vibration sensing.
+
+### 5. **Capacitive Humidity Sensor** — Humidity  
+Dielectric constant changes with absorbed moisture → capacitance shift.  
+- **Use:** HVAC, weather stations.
+
+### 6. **MQ Gas Sensor** — Gas  
+Heated tin‑oxide layer changes resistance when exposed to target gases.  
+- **Use:** CO, LPG, smoke detection.
+
+### 7. **PIR Sensor** — Motion  
+Detects changes in IR radiation from warm bodies using pyroelectric elements.  
+- **Use:** Security, occupancy sensing.
+
+### 8. **MEMS Accelerometer** — Acceleration  
+Micro‑machined proof mass + capacitive plates measure acceleration/tilt.  
+- **Use:** Phones, drones, wearables.
+
+### 9. **MEMS Gyroscope** — Rotation  
+Vibrating mass experiences Coriolis force → measurable capacitive change.  
+- **Use:** Stabilization, IMUs.
+
+### 10. **Hall Effect Sensor** — Magnetic  
+Magnetic field deflects carriers → transverse voltage.  
+- **Use:** Motor commutation, current sensing.
+
+### 11. **RGB Color Sensor** — Color  
+Photodiodes with spectral filters measure R/G/B intensity.  
+- **Use:** Sorting, color recognition.
+
+### 12. **Microphone** — Sound  
+Converts pressure waves to electrical signals (electret, MEMS, dynamic).  
+- **Use:** Audio, voice detection.
+
