@@ -21,6 +21,23 @@ emerge from strictly finite stages; Cantor’s hierarchy may
 therefore appear only in historical or explanatory contexts, 
 not as a literal ontology or operational resource.
 
+When ℵ₀ is cited in this system, it refers strictly to the 
+classical Cantorian cardinality of the natural numbers — 
+the size‑invariant obtained by collapsing the first 
+infinite ordinal ω under the cardinal‑collapse operator |·|.
+It is retained only as a mathematical reference point for 
+discussing countability, ordinal–cardinal structure, and 
+historical set‑theoretic context. ℵ₀ is not an ontological 
+object within the RDG/MFE/Q framework: it is never used as 
+a foundational primitive, never as a literal size of any 
+generator or meso layer, and never as a claim about 
+observables. In all relational‑operator contexts, continuum‑
+like richness must instead be expressed constructively 
+through finite‑resolution families Sₙ with |Sₙ| ≥ 2ⁿ, 
+ensuring that arbitrarily fine behavior emerges from 
+strictly finite stages. Thus ℵ₀ is a classical structural 
+comparator, not a component of the relational ontology.
+
 ℵ₀ (pronounced “aleph-null” or “aleph-zero”) is the 
 smallest infinite cardinal number in set theory. Formally, 
 it is defined as the cardinality of the set of natural 
