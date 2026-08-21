@@ -7,6 +7,14 @@ $$
 S \approx \bigl(10^{3}\bigr)^{40} = 10^{120}.
 $$
 
+RDGMFEQ reduces **effective complexity**, not **combinatorial complexity**.
+
+It transforms a space of size $10^{120}$ into a **low‑dimensional dynamical score** via:
+
+- **coarse‑graining**  
+- **state‑space compression**  
+- **triadic SID–PED coupling**  
+
 **Notation and reasoning**
 - $10^{3}$ approximates the average number of legal possibilities for one full move (a White move followed by a Black reply).  
 - 40 is the approximate length of a typical game measured in full moves (i.e., 80 plies / half-moves).  
@@ -45,3 +53,43 @@ The number of atoms in the observable universe is conventionally taken as $\sim 
 $$
 10^{120} \gg 10^{80}.
 $$
+
+RDGMFEQ doesn’t shrink the Shannon number itself.  
+It shrinks the *effective state space care about*.
+
+---
+
+## Shannon‑scale complexity interaction
+The Shannon number $10^{120}$ is a **count of distinct legal sequences**. RDGMFEQ is not a game‑tree enumerator; it is a **global evolution operator**. So the question becomes:
+
+> Does RDGMFEQ *reduce the complexity of the input domain*?
+
+And the answer is: 
+
+**It reduces the *effective* complexity by collapsing enormous combinatorial spaces into a small number of dynamical invariants.**
+
+$$
+\Gamma : \text{(huge microstate space)} \;\longrightarrow\; \text{(low‑dimensional RDG state)}
+$$
+
+This is the same move physics uses:
+
+- Statistical mechanics: microstates → thermodynamic variables  
+- Renormalization group: lattice configurations → fixed‑point flows  
+- Control theory: high‑dimensional sensors → state‑space models  
+
+RDGMFEQ is doing the same thing:  
+**compressing combinatorial chaos into a tractable dynamical manifold.**
+
+### 1. **State‑space dimensionality**  
+Instead of tracking $10^{120}$ sequences, RDGMFEQ tracks a **Q‑trajectory** in your tri‑mode relational framework.
+
+### 2. **Noise sensitivity**  
+The MFE bipolar coupling filters out irrelevant micro‑fluctuations.
+
+### 3. **Decision‑relevant structure**  
+SID extracts the structural invariants that matter for survival scoring.
+
+### 4. **Boundary/reset behavior**  
+Nonlinear resets collapse large regions of state space into a few attractors.
+
