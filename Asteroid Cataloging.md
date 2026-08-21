@@ -1,0 +1,121 @@
+**Real‑time, continuously updated, multi‑agency system** that integrates discovery, confirmation, orbit modeling, physical characterization, and risk assessment. 
+
+## 🪐 **1. Finding Asteroids**
+Lead term: **NEO Discovery**  
+
+It is the *foundation* for any asteroid‑mining or planetary‑defense program.
+
+U.S. asteroid cataloging begins with wide‑field sky surveys funded by NASA’s **Near‑Earth Observations Program**, including:  
+- Catalina Sky Survey  
+- Pan‑STARRS  
+- ATLAS  
+- LINEAR  
+These telescopes scan the sky nightly for moving objects. 
+
+When a new moving object is detected, its initial position is sent to the **Minor Planet Center (MPC)**, the global clearinghouse for asteroid observations.   
+
+### Mission Planning 
+Selecting Targets for Mining or Exploration
+
+Lead term: **Mission Targeting**  
+
+Once cataloged, asteroids are ranked by:  
+- Accessibility (Δv)  
+- Composition  
+- Rotation stability  
+- Size  
+- Mining feasibility  
+- Scientific value
+
+---
+
+## 🔭 2. Confirmation
+Verifying the Object Exists
+Lead term: **NEO Confirmation**  
+The MPC posts candidate objects to the **NEO Confirmation Page**, prompting observatories worldwide to perform follow‑up observations.  
+Multiple observations allow astronomers to confirm:  
+- The object is real  
+- It is not a satellite, artifact, or noise  
+- Its motion is consistent with an asteroid
+
+The MPC then assigns a provisional designation and begins orbit computation.   
+
+---
+
+## 🧮 3. Orbit Determination: 
+Calculating the Trajectory
+
+Lead term: **Orbit Modeling**  
+Once confirmed, the object’s orbit is computed using:  
+- Weighted telescopic observations  
+- Radar ranging (Goldstone, Arecibo legacy)  
+- Photometric data  
+- Dynamical modeling
+
+NASA’s **Center for Near‑Earth Object Studies (CNEOS)** performs high‑precision orbit calculations and stores results in the **JPL Small‑Body Database (SBDB)**.   
+
+CNEOS also runs:  
+- **Sentry** — automated impact‑risk scanning for the next 100 years  
+- **Scout** — rapid orbit modeling for newly discovered objects before confirmation   
+
+---
+
+## 🧪 4. Physical Characterization: 
+Determining Composition & Structure
+
+Lead term: **Asteroid Composition**  
+To know whether an asteroid is mineable, the U.S. uses:  
+- Infrared spectroscopy (NEOWISE, IRTF)  
+- Radar imaging (Goldstone Solar System Radar)  
+- Light‑curve analysis  
+- Thermal modeling
+
+These measurements reveal:  
+- Metal content (M‑type)  
+- Water/volatile content (C‑type)  
+- Silicate content (S‑type)  
+- Rotation rate  
+- Surface cohesion  
+- Size and shape
+
+All data feeds into CNEOS and the SBDB.
+
+---
+
+## 🗂️ 5. Catalog Integration
+Building the National Database
+
+Lead term: **Asteroid Catalog**  
+The U.S. maintains several interconnected catalogs:
+
+### A. **Minor Planet Center (MPC)**  
+- Global repository for all asteroid observations  
+- Assigns designations  
+- Computes preliminary orbits  
+- Tracks discovery circumstances  
+
+### B. **JPL Small‑Body Database (SBDB)**  
+- High‑precision orbital elements  
+- Physical parameters  
+- Daily updates for new discoveries  
+
+### C. **CNEOS NEO Database**  
+- Specialized for near‑Earth objects  
+- Includes impact probabilities  
+- Provides close‑approach tables  
+
+Together, these form the U.S. national asteroid catalog.
+
+---
+
+## 🛡️ 6. Risk Assessment
+Identifying Hazardous Objects
+
+Lead term: **Impact Risk**  
+CNEOS uses:  
+- **Sentry** (long‑term risk)  
+- **Scout** (rapid early risk)  
+- Close‑approach modeling  
+- Impact‑scenario simulations
+
+If an asteroid shows a concerning trajectory, CNEOS alerts NASA’s **Planetary Defense Coordination Office (PDCO)**. 
