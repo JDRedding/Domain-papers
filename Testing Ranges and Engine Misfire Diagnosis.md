@@ -1,0 +1,101 @@
+# Testing Ranges and Engine Misfire Diagnosis
+
+Testing Ignition Coil Resistance, Spark Plug Heat Range, and Engine Misfire Diagnosis are closely related diagnostic topics that build on basic multimeter resistance checks (like the earlier spark-plug test). None involve complex derived mathematical equations beyond basic electrical definitions. Below are the relevant formulas (where they exist), associated notation, typical values, and practical interpretation. In summary, the only equation will normally encounter is the basic definition of resistance $R = V/I$. All other work is direct measurement against manufacturer specifications and systematic elimination of possible causes. Always consult the specific service data for your engine before replacing parts.
+
+---
+
+### 🔧 Quick Takeaway  
+Primary should be **fractions of an ohm**.  
+Secondary should be **thousands of ohms**.  
+**OL** = open winding.  
+**0 Ω** = shorted winding.
+
+---
+
+### 📘 Coil Resistance Reference 
+(Technician Format)
+
+- **Primary_winding** — measured across the two low‑voltage terminals  
+  - Typical: **0.4–2.0 Ω**  
+  - Some designs: **up to ~2.5 Ω**  
+  - **Too high** → weak spark, overheating  
+  - **Too low** → shorted turns, high current draw
+
+- **Secondary_winding** — measured from a primary terminal to the HV tower  
+  - Typical: **6 kΩ–15 kΩ**  
+  - Extended range: **5 kΩ–30 kΩ** depending on design  
+  - **OL** → open secondary  
+  - **Very low (<3 kΩ)** → shorted turns
+
+- **Ohm’s_law** only applies if you’re measuring voltage/current instead of direct resistance:  
+
+$$
+R = \frac{V}{I}
+$$
+
+---
+
+### 🧰 Practical Field Notes 
+(the stuff manuals never say)
+
+- **Use the lowest range that still reads accurately.**  
+  On a cheap meter, the 200‑Ω range gives better resolution for primaries.
+
+- **Stabilize the leads.**  
+  A shaky connection can swing a 0.8‑Ω coil between 0.5 and 1.2 Ω.
+
+- **Temperature matters.**  
+  Hot coils read slightly higher; cold coils slightly lower.
+
+- **Compare left/right or bank‑to‑bank.**  
+  If one coil reads 0.6 Ω primary and the others are 1.2 Ω, that coil is suspect even if “in spec.”
+
+---
+
+### 🧪 Quick Diagnostic Table
+
+| Test | Good Reading | Bad Reading | Meaning |
+|------|--------------|-------------|---------|
+| **Primary_resistance** | 0.4–2.0 Ω | OL or <0.2 Ω | Open or shorted primary |
+| **Secondary_resistance** | 6k–15k Ω | OL or <3k Ω | Open or shorted secondary |
+| **Continuity_check** | Beep + stable ohms | No beep / OL | Broken winding |
+| **Spark_output** | Strong blue spark | Weak/orange/no spark | Coil failing under load |
+
+---
+
+## Quick procedure  
+Disconnect the coil and battery. Set multimeter to the lowest ohms range ( $\approx 200\, \Omega$ ) for primary; higher range ( ${20}\,\mathrm{k} \Omega$ or auto) for secondary.  Probe the appropriate terminals.  Readings outside the manufacturer range indicate a faulty coil.
+
+## Spark Plug Heat Range
+There is no mathematical formula that calculates heat range. It is a manufacturer-assigned index describing how quickly the plug transfers heat from the firing tip to the cylinder head.
+
+### Key physical principle  
+Heat transfer path length is controlled mainly by the length of the ceramic insulator nose:  
+Longer nose → slower heat transfer → “hotter” plug  
+Shorter nose → faster heat transfer → “colder” plug  
+
+Notation and manufacturer conventions (not interchangeable): 
+
+- NGK / DENSO: higher number = colder plug (e.g., NGK 5 is hotter than NGK 9)  
+- Bosch / Champion / Autolite: higher number = hotter plug
+  
+Use the OEM-recommended heat range unless the engine has been modified (higher compression, turbo, etc., usually requires a colder plug).
+
+## Engine Misfire Diagnosis
+No algebraic equations are used in routine diagnosis. Modern ECUs detect misfires by monitoring variations in crankshaft rotational speed (via the crankshaft position sensor). A misfiring cylinder produces a measurable slowdown in angular velocity.
+
+Common diagnostic trouble codes (DTCs)  
+
+$\mathrm{P0300}$ : random / multiple-cylinder misfire  
+$\mathrm{P0301}$ – $\mathrm{P0308}$ (or higher): misfire on a specific cylinder number  
+
+### Practical diagnostic sequence
+- Retrieve codes and freeze-frame data with an OBD-II scanner.  
+- Inspect/replace spark plugs (most common cause).  
+- Test or swap ignition coils (use the resistance method above).  
+- Check fuel injectors (audible click, resistance, or balance test).  
+- Perform compression or leak-down test if mechanical issues are suspected.  
+- Examine fuel trims, vacuum leaks, and sensors (MAF, O2, etc.).  
+
+Symptoms include rough idle, hesitation, loss of power, increased fuel consumption, and illuminated Check Engine light. Start with the easiest checks (plugs and coils) before moving to fuel or mechanical tests.
+
