@@ -58,3 +58,113 @@ INPUT TERMINALS
 A (10A FUSED)  :  High current input (up to 10A)
 COM            :  Common (Negative) terminal
 V Ω →+ -||     :  Voltage, Resistance, Diode, Capacitance, Frequency, Continuity
+
+============================================================
+                 DIGITAL MULTIMETER ASCII SHEET
+============================================================
+
+ DIAL SYMBOLS:
+   V==   : DC Voltage
+   V~    : AC Voltage
+   A==   : DC Current
+   A~    : AC Current
+   Ω     : Resistance
+   )))   : Continuity (buzzer)
+   →|+   : Diode Test
+   -||-  : Capacitance
+   Hz    : Frequency
+
+============================================================
+ VOLTAGE / CURRENT / RESISTANCE (OHM'S LAW)
+============================================================
+   V = I * R
+   I = V / R
+   R = V / I
+
+   Use:
+     V==  : measure DC rails, boards, sensors
+     V~   : measure mains, AC outputs
+     A==  : inline DC current
+     A~   : clamp AC current
+     Ω    : element, fuse, winding checks
+
+============================================================
+ POWER
+============================================================
+   P = V * I
+   P = I^2 * R
+   P = V^2 / R
+
+   Field use:
+     Heating elements, motors, load verification
+
+============================================================
+ AC / TRUE-RMS
+============================================================
+   VRMS = sqrt( (1/T) * ∫ v(t)^2 dt )
+   Vpeak = VRMS * sqrt(2)
+   Vpp   = 2 * Vpeak
+
+   Notes:
+     120 VRMS → ~170 Vpeak
+     True-RMS required for non-sine loads
+
+============================================================
+ RESISTANCE & CONTINUITY
+============================================================
+   Continuity beeps when:
+     R < R_threshold   (typically 30–50 Ω)
+
+   Notes:
+     Beep ≠ good load
+     Elements can beep but still be weak/open under power
+
+============================================================
+ DIODE TEST
+============================================================
+   Forward drop:
+     VF ≈ 0.6–0.7 V (silicon)
+
+   Meter applies small current and reads drop.
+
+============================================================
+ CAPACITANCE
+============================================================
+   XC = 1 / (2π f C)
+   E  = (1/2) * C * V^2
+
+   Notes:
+     Higher XC = weaker run cap
+     Capacitance mode uses low-frequency test pulses
+
+============================================================
+ FREQUENCY
+============================================================
+   f = 1 / T
+   T = 1 / f
+
+   Use:
+     Board PWM, inverter outputs, tach signals
+
+============================================================
+ FIELD TEST QUICK VALUES
+============================================================
+   Heating element: 8–12 Ω typical (dryer)
+   Thermal fuse: 0 Ω (open = bad)
+   High-limit: 0 Ω (open = tripped)
+   Motor windings: low Ω but not zero
+   Diode: 0.6–0.7 V forward, OL reverse
+   Run cap: within ±5–10% of rating
+
+============================================================
+ SAFETY ASCII
+============================================================
+   ONE-HAND RULE:
+     Keep one hand behind back when probing mains.
+
+   PROBE ASCII:
+     [RED +] → hot/positive
+     [BLK -] → neutral/ground/common
+
+============================================================
+
