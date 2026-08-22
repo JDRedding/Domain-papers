@@ -250,7 +250,7 @@ The model does all of these.
 
 * Survivor transmission to Egyptian records is possible in principle (Atlantic → Iberian/Maghreb → Mediterranean corridors existed in the Pleistocene–Holocene transition), but it is a long, multi-stage chain with no intermediate archaeological markers currently linking this specific mid-ocean morphology to the Egyptian–Platonic tradition.
 
-## Furture work
+## Future work
 
 * High-resolution multibeam + sub-bottom profiling of the Irving–Cruiser–Hyères triad to quantify actual annular shelves, breach geometry, and debris fields.
 * Better constraints on post-Miocene vertical motions (how much additional subsidence since the last time the summits were near sea level).
