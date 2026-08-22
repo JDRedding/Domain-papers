@@ -40,7 +40,7 @@ The distinction highlighted touches on one of the most common debates in power e
 | **Fault Role** | Provides low impedance to trip breaker | Limits voltage spikes and stabilizes phase voltages |
 | **Primary Goal** | Human life protection (shocks) | Grid/circuit equipment protection |
 
-**3. Engineering Recommendations for the Post**
+**3. Engineering Recommendations**
 
 * **Clarify the Standard:** Mention that *Earthing* is primarily IEC terminology, whereas *Grounding* is standard in NEC regions.
 * **Emphasize Bonding:** A copper rod driven into the earth does **not** clear circuit breakers during a line-to-chassis fault by itself (earth impedance is too high). A low-impedance metallic **bonded return path** back to the neutral source is what actually trips the overcurrent protective device (OCPD).
