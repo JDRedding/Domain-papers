@@ -108,15 +108,11 @@ Interpretations:
 
 The Babylonian systems appear as the **discrete limit**:
 
-$$
-\boxed{\lambda_{n+1} = \lambda_n + F_{\text{arith}}(n)}
-$$
+$$\boxed{\lambda_{n+1} = \lambda_n + F_{\text{arith}}(n)}$$
 
 which corresponds to sampling the continuous model via:
 
-$$
-\lambda(t) = \arg(\vec{\rho}(t)).
-$$
+$$\lambda(t) = \arg(\vec{\rho}(t)).$$
 
 ---
 
@@ -124,15 +120,11 @@ $$
 
 ### **A. Discrete operator (Babylonian)**  
 
-$$
-\mathcal{A}:\ (\lambda_n,t_n)\mapsto(\lambda_{n+1},t_{n+1})
-$$
+$$\mathcal{A}:\ (\lambda_n,t_n)\mapsto(\lambda_{n+1},t_{n+1})$$
 
 ### **B. Continuous circular operator (Greek / Islamic / Copernican)**  
 
-$$
-\mathcal{C}:\ t\mapsto \vec{\rho}(t)=\sum R_k\hat{u}(\omega_k t + \phi_k + H_k(t))
-$$
+$$\mathcal{C}:\ t\mapsto \vec{\rho}(t)=\sum R_k\hat{u}(\omega_k t + \phi_k + H_k(t))$$
 
 Everything else is a special case.
 
@@ -142,14 +134,7 @@ Everything else is a special case.
 
 All geometric pre‑Keplerian models — including Islamic equant‑free reconstructions — fit into:
 
-$$
-\vec{\rho}(t)
-=
-\sum_{k=1}^{N}
-R_k\,\hat{u}\!\bigl(\theta_k(t)\bigr),
-\qquad
-\theta_k(t)=\omega_k t+\phi_k+H_k(t).
-$$
+$$\vec{\rho}(t)=\sum_{k=1}^{N}R_k\,\hat{u}\!\bigl(\theta_k(t)\bigr),\qquad\theta_k(t)=\omega_k t+\phi_k+H_k(t).$$
 
 Interpretation:
 
@@ -165,21 +150,11 @@ The operator’s **form is invariant**; only the decomposition of $H_k(t)$ chang
 
 Complex form (unit radius):
 
-$$
-z(t)=\left(1-\frac12\right)e^{i\theta}-\frac12 e^{-i\theta}=i\sin\theta.
-$$
+$$z(t)=\left(1-\frac12\right)e^{i\theta}-\frac12 e^{-i\theta}=i\sin\theta.$$
 
 Contribution to $\vec{\rho}(t)$:
 
-$$
-\vec{\rho}_{\text{Tusi}}(t)
-=
-R\left[
-\left(1-\frac12\right)\hat{u}(\theta(t))
--
-\frac12 \hat{u}(-\theta(t))
-\right].
-$$
+$$\vec{\rho}_{\text{Tusi}}(t)=R\left[\left(1-\frac12\right)\hat{u}(\theta(t))-\frac12 \hat{u}(-\theta(t))\right].$$
 
 This is simply **two uniform circular terms** with opposite angular velocities.  
 No equant, no non‑uniform angle — yet the vector sum produces the required linear oscillation.
@@ -190,13 +165,7 @@ In the unified operator, these are just two indices $k$.
 
 ## **Ibn al‑Shāṭir’s Models in the Same Schema**
 
-$$
-\vec{\rho}(t)
-=
-\underbrace{R_0\,\hat{u}(\omega_0 t + \phi_0)}_{\text{main deferent}}
-+
-\underbrace{\sum_{j} r_j\,\hat{u}(\omega_j t + \phi_j)}_{\text{secondary epicycles / couples}}.
-$$
+$$\vec{\rho}(t)=\underbrace{R_0\,\hat{u}(\omega_0 t + \phi_0)}_{\text{main deferent}}+\underbrace{\sum_{j} r_j\,\hat{u}(\omega_j t + \phi_j)}_{\text{secondary epicycles / couples}}.$$
 
 - All angles remain **strictly uniform**.  
 - Apparent equant behavior arises from the **vector sum**, not from non‑uniform motion.
@@ -214,11 +183,7 @@ Same operator; different decomposition.
 
 ## **ʿUrḍī’s Lemma as Functional Equivalence**
 
-$$
-\sum_k R_k\,\hat{u}(\theta_k(t))
-=
-\sum_\ell R'_\ell\,\hat{u}(\theta'_\ell(t)),
-$$
+$$\sum_k R_k\,\hat{u}(\theta_k(t))=\sum_\ell R'_\ell\,\hat{u}(\theta'_\ell(t)),$$
 
 with all angles uniform.  
 Different centers and radii, same $\vec{\rho}(t)$.  
@@ -232,27 +197,14 @@ Two broad classes:
 
 ### **Non‑geometric (Babylonian)**  
 
-$$
-\lambda_{n+1} = \lambda_n + F_{\text{arith}}(n),
-\qquad
-t_{n+1} = t_n + G_{\text{arith}}(n).
-$$
+$$\lambda_{n+1} = \lambda_n + F_{\text{arith}}(n),\qquadt_{n+1} = t_n + G_{\text{arith}}(n).$$
 
 ### **Geometric (Greek, Islamic, Copernican)** 
 
-$$
-\vec{\rho}(t)
-=
-\sum_{k}
-R_k\,\hat{u}\!\bigl(\omega_k t + \phi_k + H_k(t)\bigr),
-$$
+$$\vec{\rho}(t)=\sum_{k}R_k\,\hat{u}\!\bigl(\omega_k t + \phi_k + H_k(t)\bigr),$$
 
 with Islamic models characterized by:
 
-$$
-H_k(t)
-=
-\text{combinations of uniform circles (Ṭūsī couples, secondary epicycles)}.
-$$
+$$H_k(t)=\text{combinations of uniform circles (Ṭūsī couples, secondary epicycles)}.$$
 
 Same functional shell; different constraints on the admissible form of $H_k(t)$.
