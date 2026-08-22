@@ -249,7 +249,7 @@ This matches Plato’s:
 
 > “In a single day and night of misfortune…”
 
-The collapse is **real geology**, not myth.
+The catastrophic collapse mechanism is **real geology**, not myth.
 
 ---
 
@@ -264,7 +264,7 @@ If a ring‑city existed on Irving:
 - Egyptians preserve the story  
 - Plato records it
 
-This is exactly how ancient city geometry propagates.
+This is how ancient city geometry propagates. This provides a plausible mechanism by which spatial memory could propagate after catastrophic displacement.
 
 ```
 Atlantic settlement
