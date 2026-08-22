@@ -186,6 +186,8 @@ The Irving model is a **volcanic version** of the same topology.
 ---
 
 ## **7. Catastrophic Destruction**
+**Plausible Catastrophic Mechanism:** Volcanic sector collapse (flank failure) along with post-glacial eustatic sea-level fluctuations provides a physical trigger for rapid submersion ("single day and night").
+
 Hyères shows:
 
 - sector collapse  
@@ -194,8 +196,6 @@ Hyères shows:
 - structural breach  
 - subsidence  
 - Younger Dryas sea‑level rise
-
-* **Plausible Catastrophic Mechanism:** Volcanic sector collapse (flank failure) along with post-glacial eustatic sea-level fluctuations provides a physical trigger for rapid submersion ("single day and night").
 
 This matches Plato’s:
 
