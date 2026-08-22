@@ -301,4 +301,75 @@ So, the terms are:
 
 Thus the lattice is not a set of elements but an **internal object of $\mathbf{C}$** whose “elements” are generalized morphisms $1 \to F([1])$. The entire construction is point‑free, relational, and triadic: the lattice emerges from the interaction of SID‑structure, PED‑semantics, and RDG‑mapping, not from any underlying set of points.
 
+This document is a mathematical paper about free lattices in abstract algebra and category theory—it's not a source code file with executable functions and variables. However, I can extract the key mathematical definitions, concepts, and symbols used:
+
+## APPENDIX: Mathematical Definitions & Concepts
+This document presents lattices as **purely syntactic and relational objects**, without reference to point-sets or underlying "carriers"—the algebraic structure emerges entirely from formal rules and quotients.
+
+### Core Structures
+
+| Term | Definition |
+|------|-----------|
+| **$\mathbb{T}_{\mathrm{Lat}}$** | Small category with finite products representing lattice theory; objects are arities $[n]$ |
+| **$L(G)$ or $L$** | Free lattice on a set of generators $G$; quotient $T(G)/{\equiv_E}$ |
+| **$T(G)$** | Raw term algebra—all finite expressions built from generators using $\wedge,\vee$ |
+| **$\equiv_E$** | Smallest congruence on $T(G)$ containing lattice axioms (associativity, commutativity, etc.) |
+| **$\mathbf{C}$** | Any category with finite products (topos, symmetric monoidal category) |
+| **$\mathbf{Set}$** | Category of sets |
+| **$\mathbf{Lat}$** | Category of lattices |
+| **$\mathbf{Frm}$** | Category of frames |
+| **$\mathbf{DLat}$** | Category of bounded distributive lattices |
+
+### Operations & Axioms
+
+| Symbol | Meaning |
+|--------|---------|
+| **$\wedge$** | Meet (lattice conjunction) |
+| **$\vee$** | Join (lattice disjunction) |
+| **$0, 1$** | Bottom and top elements (for bounded lattices) |
+| **Associativity** | $(x \wedge y) \wedge z = x \wedge (y \wedge z)$ |
+| **Commutativity** | $x \wedge y = y \wedge x$ |
+| **Idempotence** | $x \wedge x = x$ |
+| **Absorption** | $x \vee (x \wedge y) = x$ |
+| **Distributivity** | $a\wedge\bigvee_i b_i = \bigvee_i (a\wedge b_i)$ |
+
+### Key Functions & Maps
+
+| Function | Purpose |
+|----------|---------|
+| **$U: \mathbf{Lat} \to \mathbf{Set}$** | Forgetful functor (strips lattice structure to underlying set) |
+| **$F: \mathbf{Set} \to \mathbf{Lat}$** | Free lattice functor (left adjoint to $U$) |
+| **$F(G) = T(G)/{\equiv_E}$** | Explicit formula for free lattice on generators $G$ |
+| **$\eta: G \hookrightarrow L$** | Inclusion map sending generators to equivalence classes |
+| **$G: L \to L$** | Closure operator on lattice $L$ |
+| **$\mathrm{Fix}(G)$** | Fixed points of closure operator: $\{x \in L : G(x) = x\}$ |
+| **$\mathcal{I}: \mathbf{DLat} \to \mathbf{Frm}$** | Ideal monad; maps distributive lattices to frames |
+| **$\mathrm{Idl}(D)$** | Ideal lattice of a distributive lattice $D$ |
+
+### Categorical Structures
+
+| Concept | Role |
+|---------|------|
+| **Adjunction** | $F \dashv U$: free functor left-adjoint to forgetful functor |
+| **Universal Property** | Any map $G \to M$ (into lattice $M$) extends uniquely to lattice homomorphism $L \to M$ |
+| **Functor** | $F: \mathbb{T}_{\mathrm{Lat}} \to \mathbf{C}$—interprets lattice theory internally to category $\mathbf{C}$ |
+| **Product Preservation** | Functors preserve finite products (structure-preserving maps) |
+
+### Signature (Formal Grammar)
+
+```
+Σ = {∧, ∨}              (or {∧, ∨, 0, 1} for bounded lattices)
+
+Term Formation:
+t ::= g | t₁ ∧ t₂ | t₁ ∨ t₂    (g ∈ G)
+```
+
+### Key Theorems & Results
+
+| Result | Statement |
+|--------|-----------|
+| **Whitman's Theorem (1941)** | Decidability of equivalence in free lattices via canonical word forms and relational conditions |
+| **Freeness** | $L(G)$ is the free lattice: unique homomorphisms extend formal assignments |
+| **Congruence** | Quotient $T(G)/{\equiv_E}$ well-defines lattice operations on equivalence classes |
+
 
