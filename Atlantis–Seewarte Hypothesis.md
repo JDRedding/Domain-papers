@@ -317,7 +317,7 @@ The model does all of these.
 
 ---
 
-### A. High-resolution bathymetry of the region and define:
+### A. High-resolution bathymetry
 #### **1. Center**
 Find the geometric center of the proposed Irving structure.
 
