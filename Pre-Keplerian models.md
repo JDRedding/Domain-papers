@@ -197,7 +197,7 @@ Two broad classes:
 
 ### **Non‑geometric (Babylonian)**  
 
-$$\lambda_{n+1} = \lambda_n + F_{\text{arith}}(n),\q quadt_{n+1} = t_n + G_{\text{arith}}(n).$$
+$$\lambda_{n+1} = \lambda_n + F_{\text{arith}}(n), \qquadt_{n+1} = t_n + G_{\text{arith}}(n).$$
 
 ### **Geometric (Greek, Islamic, Copernican)** 
 
