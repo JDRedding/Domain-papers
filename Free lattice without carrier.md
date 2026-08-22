@@ -21,7 +21,7 @@ $$
 \mathbb{T}_{\mathrm{Lat}} \longrightarrow \mathbf{C},
 $$  
 
-where $\mathbf{C}$ is any category equipped with finite products—such as a topos or a symmetric monoidal category. In this formulation, the lattice is interpreted internally to \(\mathbf{C}\), and no appeal to $\mathbf{Set}$ or to a point‑based carrier is required.
+where $\mathbf{C}$ is any category equipped with finite products — such as a topos or a symmetric monoidal category. In this formulation, the lattice is interpreted internally to $\mathbf{C}$, and no appeal to $\mathbf{Set}$ or to a point‑based carrier is required.
 
 ## Null generator
 
