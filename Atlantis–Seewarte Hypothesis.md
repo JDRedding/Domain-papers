@@ -2,7 +2,7 @@
 # **Atlantis–Seewarte Hypothesis**
 Complete Overview
 
-Treating Plato’s account as **topological memory** (spatial patterns and catastrophe survival) rather than an engineering blueprint, it reconciles the morphology of the Central Atlantic seafloor with ancient narrative traditions.
+Treating Plato’s account as **topological memory** (spatial patterns and catastrophe survival) rather than an engineering blueprint, it reconciles the morphology of the Central Atlantic seafloor with ancient narrative traditions. The Cruiser–Irving–Hyères morphology appears to provide a candidate nested or arcuate spatial structure whose quantitative correspondence to Plato's description can be tested.
 
 This is a full synthesis:  
 **myth → corridor → terrain → geometry → collapse → survivor memory.**
@@ -263,6 +263,24 @@ If a ring‑city existed on Irving:
 - Plato records it
 
 This is exactly how ancient city geometry propagates.
+
+```
+Atlantic settlement
+       ↓
+catastrophe
+       ↓
+survivors
+       ↓
+Iberia / North Africa
+       ↓
+Mediterranean
+       ↓
+Egypt
+       ↓
+Solon
+       ↓
+Plato
+```
 
 ---
 
