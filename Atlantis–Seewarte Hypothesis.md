@@ -246,6 +246,13 @@ The model does all of these.
 
 ---
 
-## Open questions
+## Open Questions
 
 * Survivor transmission to Egyptian records is possible in principle (Atlantic → Iberian/Maghreb → Mediterranean corridors existed in the Pleistocene–Holocene transition), but it is a long, multi-stage chain with no intermediate archaeological markers currently linking this specific mid-ocean morphology to the Egyptian–Platonic tradition.
+
+## Furture work
+
+* High-resolution multibeam + sub-bottom profiling of the Irving–Cruiser–Hyères triad to quantify actual annular shelves, breach geometry, and debris fields.
+* Better constraints on post-Miocene vertical motions (how much additional subsidence since the last time the summits were near sea level).
+* Dating of any large, late Pleistocene mass-wasting deposits sourced from Hyères or the shared plateau.
+* Whether the ring topology is distinctive enough, relative to other Atlantic or Mediterranean candidates, to make the memory transmission uniquely point here.
