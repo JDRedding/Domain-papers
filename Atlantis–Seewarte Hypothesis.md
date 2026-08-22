@@ -314,3 +314,77 @@ The model does all of these.
 * Better constraints on post-Miocene vertical motions (how much additional subsidence since the last time the summits were near sea level).
 * Dating of any large, late Pleistocene mass-wasting deposits sourced from Hyères or the shared plateau.
 * Whether the ring topology is distinctive enough, relative to other Atlantic or Mediterranean candidates, to make the memory transmission uniquely point here.
+
+---
+
+* Take high-resolution bathymetry of the region and define:
+
+**1. Center**
+
+Find the geometric center of the proposed Irving structure.
+
+**2. Radial profile**
+
+Calculate elevation as a function of azimuth and radius:
+
+$$
+z(r,\theta)
+$$
+
+**3. Annularity**
+
+Measure whether there are statistically significant radial bands:
+
+$$
+z(r) \rightarrow
+\text{high} \rightarrow
+\text{low} \rightarrow
+\text{high} \rightarrow
+\text{low}
+$$
+
+rather than merely choosing contours that visually resemble rings.
+
+**4. Symmetry**
+
+Measure how close the alleged rings are to concentric:
+
+$$
+\epsilon =
+\frac{\sigma(r_{\text{ring}})}{\bar r_{\text{ring}}}
+$$
+
+**5. Radial connectivity**
+
+Test whether channels/gaps actually produce approximately radial corridors.
+
+**6. Sector-collapse signature**
+
+Test whether Hyères possesses the morphological characteristics expected from a large sector failure:
+
+```
+      intact rim
+   ┌───────────────┐
+  /                 \
+ /                   \
+|       central       |
+|       edifice       |
+ \                   /
+  \______      _____/
+         \____/
+        breach
+```
+
+**7. Debris field**
+
+Coherent submarine mass-wasting deposit whose source geometry points back toward Hyères.
+
+Compare it against **control sites**.
+
+Select 20–50 Atlantic/Mediterranean volcanic seamounts of comparable size and age and run exactly the same radial/topological analysis.
+
+$$
+P(\text{Atlantis-like topology}\mid\text{ordinary volcanic morphology})
+$$
+
+
