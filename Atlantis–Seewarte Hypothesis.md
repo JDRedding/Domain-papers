@@ -68,9 +68,25 @@ This is the **volcanic region** in the central Atlantic containing:
 
 The Seewarte region is a **multi‑peak volcanic plateau** with natural ring‑like geometry.
 
+```
++-------------------------------------+
+|      ATLANTIS-SEEWARTE MODEL        |
+|                                     |
+|           [ CRUISER ARC ]           |
+|            (North Rim)              |
+|                 |                   |
+|         ~ ~ ~ ~ | ~ ~ ~ ~           |
+|       ~  +-------------+  ~         |
+|      ~   | IRVING CORE |   ~        |
+|      ~   |  (Acropolis)|   ~        |
+|       ~  +-------------+  ~         |
+|         ~ ~ ~ ~ | ~ ~ ~ ~           |
+|                 |                   |
+|         [ HYERES BREACH ]           |
+|        (Sector Collapse)            |
++-------------------------------------+
 
-
-
+```
 
 ---
 
