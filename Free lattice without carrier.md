@@ -301,8 +301,6 @@ So, the terms are:
 
 Thus the lattice is not a set of elements but an **internal object of $\mathbf{C}$** whose “elements” are generalized morphisms $1 \to F([1])$. The entire construction is point‑free, relational, and triadic: the lattice emerges from the interaction of SID‑structure, PED‑semantics, and RDG‑mapping, not from any underlying set of points.
 
-This document is a mathematical paper about free lattices in abstract algebra and category theory—it's not a source code file with executable functions and variables. However, I can extract the key mathematical definitions, concepts, and symbols used:
-
 ## APPENDIX: Mathematical Definitions & Concepts
 This document presents lattices as **purely syntactic and relational objects**, without reference to point-sets or underlying "carriers"—the algebraic structure emerges entirely from formal rules and quotients.
 
