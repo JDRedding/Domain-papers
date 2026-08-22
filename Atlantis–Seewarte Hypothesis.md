@@ -318,12 +318,31 @@ The model does all of these.
 ---
 
 ### High-resolution bathymetry of the region and define:
-
-**1. Center**
-
+#### **1. Center**
 Find the geometric center of the proposed Irving structure.
 
-**2. Radial profile**
+Acquire high‑resolution bathymetry
+
+Need detailed seafloor data over Irving, Cruiser, and Hyères to move beyond visual impressions.
+
+Compile existing multibeam data for the Great Meteor–Seewarte complex
+
+Identify gaps and target them with new surveys (e.g., SEAMAP‑style underway mapping)
+
+Grid data at sufficiently fine resolution to resolve shelves, rims, and breaches
+
+#### **2. Radial profile**
+Compute radial elevation profiles
+
+Core Geometry
+
+Test whether Irving really has central–ring–outer‑rim structure in quantitative terms.
+
+Define a geometric center for the Irving edifice
+
+Extract elevation as a function of radius and azimuth
+
+Look for systematic high–low–high–low bands (central peak → inner low → shelf → outer low/lagoon → outer rim)
 
 Calculate elevation as a function of azimuth and radius:
 
@@ -331,7 +350,18 @@ $$
 z(r,\theta)
 $$
 
-**3. Annularity**
+#### **3. Annularity**
+Measure annularity and concentricity
+
+Topology Test
+
+Check if the ‘rings’ are statistically real, not just eye‑picked contours.
+
+Identify candidate ring bands from the radial profile
+
+Quantify radius and variance for each band
+
+Classify rings as ‘Atlantis‑like’ only if 𝜖 is small (near‑concentric)
 
 Measure whether there are statistically significant radial bands:
 
@@ -345,7 +375,19 @@ $$
 
 rather than merely choosing contours that visually resemble rings.
 
-**4. Symmetry**
+#### **4. Symmetry**
+
+Analyze Hyères for sector‑collapse signatures
+
+Failure Mechanics
+
+Determine whether Hyères really is a breached outer rim with mass‑wasting scars.
+
+Map scarps, amphitheater shapes, and headwall geometries on Hyères
+
+Identify downslope chutes and depositional lobes
+
+Cross‑check with turbidite records from the Madeira Abyssal Plain for large flank‑collapse events sourced from the Great Meteor–Cruiser complex
 
 Measure how close the alleged rings are to concentric:
 
@@ -358,7 +400,7 @@ $$
 
 Test whether channels/gaps actually produce approximately radial corridors.
 
-**6. Sector-collapse signature**
+### **6. Sector-collapse signature**
 
 Test whether Hyères possesses the morphological characteristics expected from a large sector failure:
 
@@ -375,7 +417,18 @@ breach   \____/
        
 ```
 
-**7. Debris field**
+#### **7. Debris field**
+Map debris fields and source direction
+
+Evidence Chain
+
+Tie mass‑wasting deposits back to Hyères to support a catastrophic breach scenario.
+
+Use sub‑bottom profiling and sediment cores to locate thick mass‑wasting units
+
+Model runout paths and back‑project them to likely source areas
+
+Compare timing of major slides with late Pleistocene sea‑level lowstands and rise
 
 Coherent submarine mass-wasting deposit whose source geometry points back toward Hyères. Compare it against **control sites**. Select 20–50 Atlantic/Mediterranean volcanic seamounts of comparable size and age and run exactly the same radial/topological analysis.
 
@@ -383,4 +436,39 @@ $$
 P(\text{Atlantis-like topology}\mid\text{ordinary volcanic morphology})
 $$
 
+### **8. Subsidence vs sea‑level**
 
+Quantify subsidence vs sea‑level history
+
+Feasibility
+
+Test whether Irving, Cruiser, and Hyères could have been subaerial around 9600 BCE.
+
+Combine age and flexure models for the Great Meteor–Seewarte chain
+
+Estimate vertical motions since emergence using gravity, seismic, and flexure data
+
+Compare summit depths + subsidence with global sea‑level curves to see if an emergent phase at ~9600 BCE is physically plausible
+
+Compare against control seamounts
+
+Discrimination
+
+Show that the Seewarte topology is unusually ‘Atlantis‑like’ relative to ordinary volcanic morphology.
+
+Select 20–50 Atlantic/Mediterranean seamounts of similar size and age
+
+Run the same radial/annularity/collapse analysis on each
+
+### **9. Assess narrative transmission**
+
+Synthesis
+
+Integrate the geophysical results with what we know about human movement and myth transmission.
+
+Check whether an emergent Seewarte platform fits known navigation and migration corridors
+
+Evaluate how many steps (Atlantic → Iberia/Maghreb → Mediterranean → Egypt → Plato) are required
+
+
+  
