@@ -317,7 +317,7 @@ The model does all of these.
 
 ---
 
-### High-resolution bathymetry of the region and define:
+### A. High-resolution bathymetry of the region and define:
 #### **1. Center**
 Find the geometric center of the proposed Irving structure.
 
@@ -436,7 +436,7 @@ $$
 P(\text{Atlantis-like topology}\mid\text{ordinary volcanic morphology})
 $$
 
-### **8. Subsidence vs sea‑level**
+### **B. Subsidence vs sea‑level**
 
 Quantify subsidence vs sea‑level history
 
@@ -460,7 +460,7 @@ Select 20–50 Atlantic/Mediterranean seamounts of similar size and age
 
 Run the same radial/annularity/collapse analysis on each
 
-### **9. Assess narrative transmission**
+### **C. Assess narrative transmission**
 
 Synthesis
 
