@@ -102,11 +102,45 @@ $$
 
 ### 4.3 Confusion Index  
 
+#### Movement vector  
+
 $$
-C = \sum_{i=1}^{N_{\text{fielders}}} 
-\mathbf{1}\{
-\vec{r}_{i}(t+1)-\vec{r}_{i}(t)\ \text{points away from ball}
-\}
+\Delta \vec{r}_i(t) = \vec{r}_i(t+1) - \vec{r}_i(t)
+$$
+
+#### Direction from fielder to ball  
+
+$$
+\vec{d}_i(t) = \vec{r}_{\text{ball}}(t) - \vec{r}_i(t)
+$$
+
+#### “Moving away from the ball”  
+A fielder is confused if the movement vector points opposite the ball direction:
+
+$$
+\Delta \vec{r}_i(t) \cdot \vec{d}_i(t) < 0
+$$
+
+#### Index  
+
+$$
+C = \sum_{i=1}^{N_{\text{fielders}}}
+\mathbf{1}\{\Delta \vec{r}_i(t) \cdot \vec{d}_i(t) < 0\}
+$$
+
+Or,
+
+#### Distance to ball  
+
+$$
+D_i(t) = \|\vec{r}_{\text{ball}}(t) - \vec{r}_i(t)\|
+$$
+
+#### Index (simple)  
+
+$$
+C = \sum_{i=1}^{N_{\text{fielders}}}
+\mathbf{1}\{D_i(t+1) > D_i(t)\}
 $$
 
 ---
