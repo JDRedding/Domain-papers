@@ -95,7 +95,7 @@ $$
 $$
 \vec{r}_{i}(t+1)=
 \begin{cases}
-\vec{r}_{i}(t)+\operatorname{sgn}\big(\vec{r}_{\text{ball}}(t)-\vec{r}_{i}(t)\big) & \text{if ball in infield} \\
+\vec{r}_{i}(t)+{sgn}\big(\vec{r}_{\text{ball}}(t)-\vec{r}_{i}(t)\big) & \text{if ball in infield} \\
 \vec{r}_{i}(t) & \text{if ball in void}
 \end{cases}
 $$
