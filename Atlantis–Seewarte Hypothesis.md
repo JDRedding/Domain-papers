@@ -192,7 +192,7 @@ The Irving model is a **volcanic version** of the same topology.
 ## **7. Catastrophic Destruction**
 **Plausible Catastrophic Mechanism:** Volcanic sector collapse (flank failure) along with post-glacial eustatic sea-level fluctuations provides a physical trigger for rapid submersion ("single day and night").
 
-Current basaltic sampling along the Seewarte / Great Meteor seamount chain dates major volcanic construction to the Tertiary/Miocene periods. To fit a terminal-Pleistocene human timeframe, the structural changes are around **late-stage mass wasting, erosional breaching, and local flank destabilization**, rather than primary caldera formation.
+The late-stage mass wasting capable of destroying a hypothetical settlement is a secondary event on already-mature, largely subsided volcanoes. Current basaltic sampling along the Seewarte / Great Meteor seamount chain dates major volcanic construction to the Tertiary/Miocene periods. A terminal-Pleistocene human timeframe, the structural changes are around **late-stage mass wasting, erosional breaching, and local flank destabilization**, rather than primary caldera formation.
 
 Hyères shows:
 
