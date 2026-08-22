@@ -1,5 +1,6 @@
 
-# **Complete Overview of the Atlantis–Seewarte Hypothesis**
+# **Atlantis–Seewarte Hypothesis**
+Complete Overview
 
 This is a full synthesis:  
 **myth → corridor → terrain → geometry → collapse → survivor memory.**
