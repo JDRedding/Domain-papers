@@ -43,7 +43,7 @@ Euler developed the totient function $\varphi(n)$, proved results on primes, and
 ### **Infinitesimal calculus**  
 Euler standardized notation, clarified derivatives, and made calculus computationally powerful. His influence is visible in every modern textbook.
 
-### **Series for $ e $**  
+### **Series for $e$**  
 The infinite expansion  
 
 $$
