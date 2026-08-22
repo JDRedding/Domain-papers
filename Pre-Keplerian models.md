@@ -24,15 +24,18 @@ $$
 $$
 
 where  
+
 - $\lambda_n$ = longitude at event $n$  
 - $F_{\text{arith}}(n)$ = a **piecewise** or **linear** function of the event index
 
 ### **Piecewise constant**  
+
 $$
 F_{\text{arith}}(n) = w_i \quad \text{if } \lambda_n \in Z_i.
 $$
 
 ### **Linear zigzag**  
+
 $$
 F_{\text{arith}}(n+1) = F_{\text{arith}}(n) \pm d.
 $$
@@ -56,10 +59,7 @@ $$
 
 with  
 
-$$
-\hat{u}(\theta) = (\cos\theta,\ \sin\theta), \qquad
-\theta_k(t) = \omega_k t + \phi_k + H_k(t).
-$$
+$$\hat{u}(\theta) = (\cos\theta,\ \sin\theta), \qquad \theta_k(t) = \omega_k t + \phi_k + H_k(t).$$
 
 ### **Uniform circular component**  
 
@@ -69,9 +69,7 @@ $$
 
 ### **Eccentric component**  
 
-$$
-\vec{\rho}(t) = R\hat{u}(\theta(t)) - \vec{e}.
-$$
+$$\vec{\rho}(t) = R\hat{u}(\theta(t)) - \vec{e}.$$
 
 ### **Equant component (non‑uniform)**  
 
@@ -91,16 +89,7 @@ All geometric models are **vector sums of circles**.
 
 ## **3. Unified abstraction for *all* pre‑Keplerian models**
 
-$$
-\boxed{
-\vec{\rho}(t)
-=
-\sum_{k=1}^{N}
-R_k\,\hat{u}\!\left(
-\omega_k t + \phi_k + H_k(t)
-\right)
-}
-$$
+$$\boxed{\vec{\rho}(t)=\sum_{k=1}^{N}R_k\,\hat{u}\!\left(\omega_k t + \phi_k + H_k(t)\right)}$$
 
 with:
 
