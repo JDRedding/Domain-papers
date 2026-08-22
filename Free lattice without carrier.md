@@ -1,7 +1,7 @@
 # Free lattice without carrier
 **Point-free, purely syntactic construction** 
 
-This note constructs free lattices (and frames) purely syntactically — generators are formal combinators, not elements of any underlying “carrier” or point-set. The lattice is the quotient of the term algebra by the lattice identities. The key point is that “*point-free*” does **not** mean “*structure-free*.” It means that the structure is not *defined by reference to an underlying collection of points*.
+This note constructs free lattices (and frames) purely syntactically — generators are formal combinators, not elements of any underlying “carrier” or point-set. The lattice is the quotient of the term algebra by the lattice identities. The key point is that “*point-free*” does **not** mean “*structure-free*.” It means that the structure is not *defined by reference to an underlying collection of points*. Mathematical objects do not cease to have carriers, a carrier of geometric points is not primitive to the construction.
 
 The lattice emerges entirely from relational axioms rather than point-set substrates, by treating generators as formal syntactic combinators and constructing the free object as a quotiented term algebra. This is the foundation of **pointless topology** (locales), where spaces are studied purely via their open-set algebra rather than underlying sets of points.
 
@@ -17,9 +17,61 @@ The same pattern extends immediately to any other algebraic theory (Heyting alge
 
 ## Null generator:
 
+$$
+{
+\text{syntax}
+\rightarrow
+\text{equational closure}
+\rightarrow
+L
+\rightarrow
+\text{closure operator}
+\rightarrow
+{Fix}(G)
+}
+$$
+
 - **Initial lattice $L$:** take it as a free lattice (or free frame) on a set of *relation‑combinator symbols*.
 - **No carrier:** those symbols are not “elements of a world”; they’re just primitive operations in the theory.
 - **Closure $G$:** acts on $L$; fixed points $\mathrm{Fix}(G)$ give you the emergent domain.
+
+$$
+\text{Closure }G:L\to L,
+\qquad
+{Fix}(G)
+$$
+
+as the emergent domain.
+
+If
+
+$$
+G:L\rightarrow L
+$$
+
+is a closure operator satisfying
+
+$$
+x\leq G(x),
+$$
+
+$$
+G(G(x))=G(x),
+$$
+
+and
+
+$$
+x\leq y\Rightarrow G(x)\leq G(y),
+$$
+
+then
+
+$$ 
+{Fix}(G) = {x\in L:G(x)=x}
+$$
+
+is itself a structured object.
 
 **Signature**  
 
@@ -188,4 +240,20 @@ Because ${F}(G) \cong \text{Terms}(G)/{\equiv}$, the universal mapping property 
 4. **Point-Free Locales & the Ideal Completion:** When extended to frames ($\mathbf{Frm}$), the ideal lattice monad $\mathcal{I}$ embeds a bounded distributive lattice $\mathbf{DLat}$ into a frame where joins commute with finite meets:
 
 $$\mathcal{I}(L) = \{ I \subseteq L \mid I \text{ is a downward-closed, directed-join closed ideal} \}$$
+
+## APPENDIX: **Point-free** senses 
+These are related but **not identical**.
+
+### A. Syntactically point-free
+No geometric points occur in the construction:
+
+$$
+T(G)/{\equiv}
+$$
+
+### B. Algebraically point-free
+The structure is specified through operations and laws rather than through a concrete representation such as subsets of $X$.
+
+### C. Spatially point-free
+Locale theory does not require enough points to reconstruct an ordinary topological space.
 
