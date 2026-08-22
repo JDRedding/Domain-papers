@@ -225,6 +225,24 @@ LGM / ~9600 BCE
 
 If this was an inhabited subaerial landscape around the proposed period, geological evidence should exist for substantial post-emergence subsidence.
 
+```
+Late Pleistocene
+       │
+       ├── volcanic edifice already ancient
+       │
+       ├── long erosion / subsidence
+       │
+       ├── hypothetical human occupation?
+       │
+       ├── ~10th millennium BCE
+       │
+       ├── possible flank instability / mass wasting
+       │
+       └── continuing postglacial sea-level rise
+                  ↓
+             final isolation
+```
+
 This matches Plato’s:
 
 > “In a single day and night of misfortune…”
