@@ -130,7 +130,7 @@ No primitive point carrier $X$. The construction requires no a priori carrier of
 ```
 
 **Term algebra**  
-Let ${G}$ be any set of symbols (the “generators”). The set $T({G})$ of $\Sigma$-terms is defined inductively exactly as you wrote:
+Let ${G}$ be any set of symbols (the “generators”). The set $T({G})$ of $\Sigma$-terms is defined inductively exactly as:
 
 $$
 t ::= g \mid t_1\wedge t_2 \mid t_1\vee t_2,\qquad g\in{G}.
