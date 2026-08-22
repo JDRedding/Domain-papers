@@ -195,6 +195,8 @@ Hyères shows:
 - subsidence  
 - Younger Dryas sea‑level rise
 
+* **Plausible Catastrophic Mechanism:** Volcanic sector collapse (flank failure) along with post-glacial eustatic sea-level fluctuations provides a physical trigger for rapid submersion ("single day and night").
+
 This matches Plato’s:
 
 > “In a single day and night of misfortune…”
