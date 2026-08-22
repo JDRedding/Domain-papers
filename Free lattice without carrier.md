@@ -253,7 +253,7 @@ Because ${F}(G) \cong \text{Terms}(G)/{\equiv}$, the universal mapping property 
 
 $$\mathcal{I}(L) = \{ I \subseteq L \mid I \text{ is a downward-closed, directed-join closed ideal} \}$$
 
-## APPENDIX: **Point-free** senses 
+## APPENDIX: **Point-Free** Senses 
 These are related but **not identical**.
 
 ### A. Syntactically point-free
