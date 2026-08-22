@@ -1,6 +1,8 @@
 # Free lattice without carrier
 **Point-free, purely syntactic construction** 
 
+This note constructs free lattices (and frames) purely syntactically — generators are formal combinators, not elements of any underlying “carrier” or point-set. The lattice is the quotient of the term algebra by the lattice identities.
+
 The lattice emerges entirely from relational axioms rather than point-set substrates,  by treating generators as formal syntactic combinators and constructing the free object as a quotiented term algebra. This is the foundation of **pointless topology** (locales), where spaces are studied purely via their open-set algebra rather than underlying sets of points.
 
 **Universal algebra** and **categorical logic** decouple algebraic structure from underlying set-theoretic carriers.
