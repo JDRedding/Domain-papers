@@ -104,9 +104,9 @@ $$
 
 $$
 C = \sum_{i=1}^{N_{\text{fielders}}} 
-\mathbf{1}\left\{
+\mathbf{1}\{
 \vec{r}_{i}(t+1)-\vec{r}_{i}(t)\ \text{points away from ball}
-\right\}
+\}
 $$
 
 ---
