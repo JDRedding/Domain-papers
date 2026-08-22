@@ -28,7 +28,7 @@ The identity $e^{i\pi} + 1 = 0$ ties together five fundamental constants — $e,
 ### **Euler–Maclaurin formula**  
 A bridge between discrete sums and continuous integrals. It shows how to approximate sums using integrals plus correction terms involving **Bernoulli numbers**. This formula underlies numerical analysis and asymptotic expansions.
 
-### **Euler’s constant $ \gamma $**  
+### **Euler’s constant $\gamma$**  
 Defined as the limiting difference between harmonic numbers and the natural logarithm. It appears in integrals, prime number theory, and special functions — still mysterious, still not known to be rational or irrational.
 
 ### **Graph theory**  
