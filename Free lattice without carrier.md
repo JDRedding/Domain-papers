@@ -123,6 +123,19 @@ and is the free lattice on ${G}$. The universal property is the usual one: any s
 
 The generators themselves appear only as formal symbols. The map ${G}\hookrightarrow L$ that sends each generator to its equivalence class is injective (free lattices on any set of generators are known to embed the generators), but that embedding is a consequence of the construction, not an assumption that the generators already live inside some ambient set of “points.”
 
+### Frames and the ideal monad
+
+For frames the same pattern works, with two changes:
+
+1. The signature is enlarged to allow arbitrary (set-indexed) joins.
+2. The equational theory includes the infinite distributive law
+
+$$
+a\wedge\bigvee_i b_i = \bigvee_i (a\wedge b_i).
+$$
+
+Equivalently, start from a distributive lattice $D$ and form the frame ${Idl}(D)$ of its ideals ordered by inclusion. Joins are unions of ideals; finite meets are intersections of ideals. This construction is the free-frame functor on the category of distributive lattices (the “ideal lattice monad”). Again the construction is purely algebraic; no space of points is presupposed.
+
 ### Deep Perspective
 
 To take this construction to its purest expression:
