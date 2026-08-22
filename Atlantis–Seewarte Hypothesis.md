@@ -400,6 +400,14 @@ $$
 
 Test whether channels/gaps actually produce approximately radial corridors.
 
+Discrimination
+
+Show that the Seewarte topology is unusually ‘Atlantis‑like’ relative to ordinary volcanic morphology.
+
+Select 20–50 Atlantic/Mediterranean seamounts of similar size and age
+
+Run the same radial/annularity/collapse analysis on each
+
 #### **6. Sector-collapse signature**
 
 Test whether Hyères possesses the morphological characteristics expected from a large sector failure:
@@ -451,14 +459,6 @@ Estimate vertical motions since emergence using gravity, seismic, and flexure da
 Compare summit depths + subsidence with global sea‑level curves to see if an emergent phase at ~9600 BCE is physically plausible
 
 Compare against control seamounts
-
-Discrimination
-
-Show that the Seewarte topology is unusually ‘Atlantis‑like’ relative to ordinary volcanic morphology.
-
-Select 20–50 Atlantic/Mediterranean seamounts of similar size and age
-
-Run the same radial/annularity/collapse analysis on each
 
 ### **C. Assess narrative transmission**
 
