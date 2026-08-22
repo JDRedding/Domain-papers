@@ -1,6 +1,6 @@
 # **Function‑Level Abstraction of All Pre‑Keplerian Planetary Models**
 
-You’re asking for the **function‑level abstraction** — a single mathematical schema capable of expressing:
+**Function‑level abstraction** — a single mathematical schema capable of expressing:
 
 - Babylonian **non‑geometric** step/zigzag recurrences  
 - Greek **geometric** eccentric, equant, and epicycle constructions  
