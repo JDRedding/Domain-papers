@@ -400,7 +400,7 @@ $$
 
 Test whether channels/gaps actually produce approximately radial corridors.
 
-### **6. Sector-collapse signature**
+#### **6. Sector-collapse signature**
 
 Test whether Hyères possesses the morphological characteristics expected from a large sector failure:
 
