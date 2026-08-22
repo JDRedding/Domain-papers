@@ -2,6 +2,8 @@
 # **Atlantis–Seewarte Hypothesis**
 Complete Overview
 
+Treating Plato’s account as **topological memory** (spatial patterns and catastrophe survival) rather than an engineering blueprint, it reconciles the morphology of the Central Atlantic seafloor with ancient narrative traditions.
+
 This is a full synthesis:  
 **myth → corridor → terrain → geometry → collapse → survivor memory.**
 
