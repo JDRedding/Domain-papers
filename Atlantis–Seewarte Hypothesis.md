@@ -205,6 +205,24 @@ Hyères shows:
 
 The summits of Cruiser, Irving, and Hyères currently sit roughly 250 to 300+ meters below sea level. During the Last Glacial Maximum (and through the Younger Dryas boundary, c. 9600 BCE), global sea levels were lower by roughly 120–130 meters. For these peaks to have been subaerial islands in 9600 BCE, the model requires significant **syn- or post-collapse tectonic subsidence** (lithospheric sagging, fault down-dropping) in addition to global sea-level rise.
 
+Present
+        sea level
+----------------------------
+          ↓
+       Irving
+       -250 m
+
+
+LGM / ~9600 BCE
+        sea level
+--------------------
+       -120 m
+
+       Irving
+       -250 m
+
+If this was an inhabited subaerial landscape around the proposed period, geological evidence should exist for substantial post-emergence subsidence.
+
 This matches Plato’s:
 
 > “In a single day and night of misfortune…”
