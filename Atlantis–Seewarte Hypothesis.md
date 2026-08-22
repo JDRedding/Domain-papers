@@ -245,3 +245,7 @@ They never:
 The model does all of these.
 
 ---
+
+## Open questions
+
+* Survivor transmission to Egyptian records is possible in principle (Atlantic → Iberian/Maghreb → Mediterranean corridors existed in the Pleistocene–Holocene transition), but it is a long, multi-stage chain with no intermediate archaeological markers currently linking this specific mid-ocean morphology to the Egyptian–Platonic tradition.
