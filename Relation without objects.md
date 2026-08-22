@@ -30,6 +30,7 @@ No underlying set of “objects” is assumed; the “objects” are exactly the
 > **Observables are structure‑preserving morphisms from the G‑closed class into a measurement lattice.**
 
 You derive observables from closure classes by treating **observables as morphisms out of the closed class**—i.e., as *structure‑preserving maps* from the fixed‑point lattice into a measurement lattice.  
+
 In RDGMFEQ terms: **observables are functorial projections from the G‑closed class $C$**.
 
 This is the only way to extract measurable quantities without smuggling objects or background structure.
