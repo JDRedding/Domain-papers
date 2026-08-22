@@ -214,9 +214,13 @@ $$
 \mathbb{T}_{\text{Lat}} \longrightarrow \mathbf{C},
 $$
 
-where $\mathbf{C}$ is any category with finite products—such as a topos or a symmetric monoidal category. In this formulation, the lattice is interpreted internally to $\mathbf{C}$, bypassing $\mathbf{Set}$ entirely.
+where $\mathbf{C}$ is any category with finite products—such as a topos or a symmetric monoidal category. In this formulation, the lattice is interpreted internally to $\mathbf{C}$, bypassing $\mathbf{Set}$ entirely. Internally interpreting the theory in C changes the ambient semantic category; it doesn't mean set-theoretic foundations have disappeared.
 
 2. **The Adjunction Perspective:** The syntactic free construction represents the left adjoint to the forgetful functor:
+
+$$F:\mathbf{Set}\rightleftarrows\mathbf{Lat}:U, \qquad F\dashv U.$$
+
+Or, 
 
 $${F} \dashv {U} : \mathbf{Lat} \to \mathbf{Set}$$
 
