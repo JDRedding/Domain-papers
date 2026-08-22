@@ -1,5 +1,5 @@
 # Free lattice without carrier
-Point-free, purely syntactic construction 
+**Point-free, purely syntactic construction** 
 
 The lattice emerges entirely from relational axioms rather than point-set substrates,  by treating generators as formal syntactic combinators and constructing the free object as a quotiented term algebra. This is the foundation of **pointless topology** (locales), where spaces are studied purely via their open-set algebra rather than underlying sets of points.
 
