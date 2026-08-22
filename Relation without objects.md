@@ -1,4 +1,5 @@
 # Relation without objects
+An objectless relation, domain-free, where the domain is recovered as the lattice of fixed points. This concept underpins point-free topology, frame theory, and domain-free logics.
 
 > **A “relation without objects” that is a domain-free closure operator whose fixed points constitute the domain is precisely a _nucleus_ on a lattice or locale.**
 
