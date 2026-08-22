@@ -24,7 +24,15 @@ Grounded in a coherent geologic version that fits:
 - the geometry  
 - the survivor logic  
 - the Atlantic corridor
-  
+
+### **Core of the Hypothesis**
+
+* **Topological Fidelity over Metrology:** Ancient oral traditions preserve spatial invariants—concentricity, radial access, elevation hierarchy—while losing or mythologizing absolute scale (stades).
+* **Volcanic Caldera Morphometry:** The Cruiser–Irving–Hyères triad naturally provides the nested ring geometry:
+* **Central Plug/Cone:** Irving summit (acropolis).
+* **Inter-caldera Moats/Shelves:** Irving annular plateau.
+* **Outer Somma Rim:** Cruiser (intact north arc) paired with Hyères (fractured south arc).
+
 ---
 
 ## **1. Mythic Origin: What Plato Actually Describes**
@@ -100,10 +108,6 @@ This is the **actual geometric nucleus** that matches Plato’s pattern.
 - Surrounded by lower shelves  
 - Perfect analogue for Plato’s “central island”
 
-
-
-
-
 ### **Irving Shelf = Inner Land Ring**
 - Broad, flat volcanic shelf  
 - Encircles the summit  
@@ -117,10 +121,6 @@ This is the **actual geometric nucleus** that matches Plato’s pattern.
 - Intact  
 - Forms the northern half of the outer ring
 
-
-
-
-
 ### **Hyères = South Outer Ring (Collapsed)**
 - Irregular  
 - Lower  
@@ -129,9 +129,15 @@ This is the **actual geometric nucleus** that matches Plato’s pattern.
 - Classic **sector collapse**  
 - Forms the destroyed southern half of the outer ring
 
+## **Geological & Bathymetric Comparison**
 
-
-
+| Feature in Plato | Geomorphic Analogue (Seewarte) | Structural State |
+| --- | --- | --- |
+| **Central Acropolis** | Irving Seamount Peak | High volcanic uplift / plug |
+| **Inner Rings** | Irving Wave-cut Shelf / Depressions | Annular volcanic terrace |
+| **Outer Rampart (North)** | Cruiser Seamount Arc | Intact structural ridge |
+| **Outer Rampart (South)** | Hyères Seamount Complex | Scarped / sector-collapsed flank |
+| **Submersion Catastrophe** | Flank failure + Meltwater Pulse | Rapid subsidence & mass wasting |
 
 This triad is the **only part** of the region with true concentric geometry.
 
