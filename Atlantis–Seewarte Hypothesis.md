@@ -167,6 +167,8 @@ The **layout** is the memory that survives.
 ## **6. The Settlement Logic**
 The model matches known ancient settlement patterns:
 
+Tracing maritime transmission from the mid-Atlantic (approx. 30°–32°N, 28°–30°W) requires viable early navigation corridors toward the proto-Mediterranean or Atlantic Iberian/Maghreb coastlines during the Pleistocene–Holocene transition.
+
 ### **Volcanic Ring Cities**
 - Central cone  
 - Shelf ring  
@@ -188,6 +190,8 @@ The Irving model is a **volcanic version** of the same topology.
 ## **7. Catastrophic Destruction**
 **Plausible Catastrophic Mechanism:** Volcanic sector collapse (flank failure) along with post-glacial eustatic sea-level fluctuations provides a physical trigger for rapid submersion ("single day and night").
 
+Current basaltic sampling along the Seewarte / Great Meteor seamount chain dates major volcanic construction to the Tertiary/Miocene periods. To fit a terminal-Pleistocene human timeframe, the structural changes are around **late-stage mass wasting, erosional breaching, and local flank destabilization**, rather than primary caldera formation.
+
 Hyères shows:
 
 - sector collapse  
@@ -196,6 +200,8 @@ Hyères shows:
 - structural breach  
 - subsidence  
 - Younger Dryas sea‑level rise
+
+The summits of Cruiser, Irving, and Hyères currently sit roughly 250 to 300+ meters below sea level. During the Last Glacial Maximum (and through the Younger Dryas boundary, c. 9600 BCE), global sea levels were lower by roughly 120–130 meters. For these peaks to have been subaerial islands in 9600 BCE, the model requires significant **syn- or post-collapse tectonic subsidence** (lithospheric sagging, fault down-dropping) in addition to global sea-level rise.
 
 This matches Plato’s:
 
@@ -237,4 +243,3 @@ They never:
 The model does all of these.
 
 ---
-
