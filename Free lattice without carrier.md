@@ -1,9 +1,9 @@
 # Free lattice without carrier
 **Point-free, purely syntactic construction** 
 
-This note constructs free lattices (and frames) purely syntactically — generators are formal combinators, not elements of any underlying “carrier” or point-set. The lattice is the quotient of the term algebra by the lattice identities.
+This note constructs free lattices (and frames) purely syntactically — generators are formal combinators, not elements of any underlying “carrier” or point-set. The lattice is the quotient of the term algebra by the lattice identities. The key point is that “*point-free*” does **not** mean “*structure-free*.” It means that the structure is not *defined by reference to an underlying collection of points*.
 
-The lattice emerges entirely from relational axioms rather than point-set substrates,  by treating generators as formal syntactic combinators and constructing the free object as a quotiented term algebra. This is the foundation of **pointless topology** (locales), where spaces are studied purely via their open-set algebra rather than underlying sets of points.
+The lattice emerges entirely from relational axioms rather than point-set substrates, by treating generators as formal syntactic combinators and constructing the free object as a quotiented term algebra. This is the foundation of **pointless topology** (locales), where spaces are studied purely via their open-set algebra rather than underlying sets of points.
 
 **Universal algebra** and **categorical logic** decouple algebraic structure from underlying set-theoretic carriers.
 
@@ -76,7 +76,7 @@ $$
 
 No evaluation map, no underlying set of points, no power-set construction—pure syntax.
 
-Let ${G}$ be a set of **generators**, but treat them as *formal relation‑combinators*, not “elements of a set”.
+Let ${G}$ be a set of **generators**, but treat them as *formal relations*, not “elements of a set”.
 
 - **Raw terms:** all finite expressions built from ${G}$ using $\wedge,\vee$:
 
