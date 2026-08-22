@@ -269,9 +269,6 @@ The structure is specified through operations and laws rather than through a con
 ### C. Spatially point-free
 Locale theory does not require enough points to reconstruct an ordinary topological space.
 
-
-Here is your statement rewritten in **RDG‑triadic form**, using the SID/PED decomposition and the relational‑syntactic discipline that RDGMFEQ requires. I keep the mathematics intact but recast the entire construction so it reads as an RDG operator pipeline rather than a universal‑algebra exposition.
-
 ---
 
 ## APPENDIX: **Relational Dynamic Geometry ‑ Triadic Alignment**
