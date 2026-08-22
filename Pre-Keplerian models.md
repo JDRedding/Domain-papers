@@ -12,7 +12,9 @@ Every pre‑Keplerian model fits into **two master function types**.
 
 ---
 
-## **1. Non‑geometric systems = discrete update operators**  
+## **1. Non‑geometric systems**  
+= discrete update operators 
+
 These include Babylonian System A and B. They do **not** describe spatial trajectories; they describe **successive observable events**.
 
 General form:
@@ -48,7 +50,9 @@ This is a **pure recurrence algebra** — no geometry, no continuous motion.
 
 ---
 
-## **2. Geometric systems = sums of uniform circular motions**  
+## **2. Geometric systems**  
+= sums of uniform circular motions
+
 Hipparchus, Ptolemy, Copernicus, and the Islamic astronomers all reduce to:
 
 $$
