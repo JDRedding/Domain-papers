@@ -1,6 +1,8 @@
 
 # **Atlantis–Seewarte Hypothesis**
-Complete Overview
+The Seewarte/Cruiser–Irving–Hyères complex is a falsifiable candidate for the geological substrate underlying a possible Atlantic ring-city tradition, because its proposed central–annular–outer-rim topology and sector-collapse morphology can be quantitatively tested against both Plato's spatial description and control volcanic terrains
+
+## Complete Overview
 
 Treating Plato’s account as **topological memory** (spatial patterns and catastrophe survival) rather than an engineering blueprint, it reconciles the morphology of the Central Atlantic seafloor with ancient narrative traditions. The Cruiser–Irving–Hyères morphology appears to provide a candidate nested or arcuate spatial structure whose quantitative correspondence to Plato's description can be tested.
 
