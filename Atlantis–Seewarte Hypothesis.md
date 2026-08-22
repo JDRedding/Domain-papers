@@ -24,7 +24,7 @@ Grounded in a coherent geologic version that fits:
 - the geometry  
 - the survivor logic  
 - the Atlantic corridor
-- 
+  
 ---
 
 ## **1. Mythic Origin: What Plato Actually Describes**
