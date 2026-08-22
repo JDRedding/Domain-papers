@@ -274,7 +274,7 @@ Here is your statement rewritten in **RDG‑triadic form**, using the SID/PED de
 
 ---
 
-## APPENDIX: **Relational Dynamic Geometry ‑ Triadic Alignment*
+## APPENDIX: **Relational Dynamic Geometry ‑ Triadic Alignment**
 
 A lattice theory is treated as an **structured triad**, not as a set‑based algebra. Its presentation is a small category  
 
