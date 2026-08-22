@@ -317,7 +317,7 @@ The model does all of these.
 
 ---
 
-* Take high-resolution bathymetry of the region and define:
+### High-resolution bathymetry of the region and define:
 
 **1. Center**
 
@@ -363,25 +363,21 @@ Test whether channels/gaps actually produce approximately radial corridors.
 Test whether Hyères possesses the morphological characteristics expected from a large sector failure:
 
 ```
-      intact rim
-   ┌───────────────┐
-  /                 \
- /                   \
-|       central       |
-|       edifice       |
- \                   /
-  \______      _____/
-         \____/
-        breach
+       "intact" rim
+    ┌───────────────┐
+   /                 /  breach
+  /                /   /  
+ |       central     / |
+ |  /     edifice      |
+  /  /                /
+   /______      _____/
+breach   \____/
+       
 ```
 
 **7. Debris field**
 
-Coherent submarine mass-wasting deposit whose source geometry points back toward Hyères.
-
-Compare it against **control sites**.
-
-Select 20–50 Atlantic/Mediterranean volcanic seamounts of comparable size and age and run exactly the same radial/topological analysis.
+Coherent submarine mass-wasting deposit whose source geometry points back toward Hyères. Compare it against **control sites**. Select 20–50 Atlantic/Mediterranean volcanic seamounts of comparable size and age and run exactly the same radial/topological analysis.
 
 $$
 P(\text{Atlantis-like topology}\mid\text{ordinary volcanic morphology})
