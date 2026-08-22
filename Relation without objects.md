@@ -1,5 +1,5 @@
 # Relation without objects
-This note outlines a sophisticated philosophical and mathematical framework for defining a domain and its observable quantities without assuming any pre-existing objects or structure—a "null generator." The domain is constructed as the fixed points of a domain-free closure operator (nucleus) on a lattice. Instead of assuming objects exist and then defining relations over them, the relation itself generates the objects through its fixed points.
+This note outlines a sophisticated philosophical and mathematical framework for defining a domain and its observable quantities without assuming any pre-existing objects or structure — a "null generator." The domain is constructed as the fixed points of a domain-free closure operator (nucleus) on a lattice. Instead of assuming objects exist and then defining relations over them, the relation itself generates the objects through its fixed points.
 
 An objectless relation, domain-free, where the domain is recovered as the lattice of fixed points. This concept underpins point-free topology, frame theory, and domain-free logics.
 
