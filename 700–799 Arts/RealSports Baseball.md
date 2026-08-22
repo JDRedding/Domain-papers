@@ -1,7 +1,6 @@
-# 🎮 Complete rulebook  
- Board‑Game Style Mathematical Ruleset
-
 # 🎮 **RealSports Baseball**
+# Complete rulebook  
+Board‑Game Style Mathematical Ruleset
 
 ## 1. Field Geometry  
 The field is a **diamond + infinite outfield**.
