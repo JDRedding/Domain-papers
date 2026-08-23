@@ -153,6 +153,7 @@ $$
 \end{aligned}
 $$
 
+These four conditions jointly characterize the unique minimal generative basis compatible with the invariant structure of the system.
 
 ## 🔷 **Final Universal Expression**
 This is the **canonical definition** of a minimal generative basis.
