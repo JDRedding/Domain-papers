@@ -412,7 +412,7 @@ $$
 
 - **Non‑unique bases:** there may exist many distinct subsets $B \subseteq U_{\mathcal I}$ with $|B| = k^{\*}$ and $G_{\mathcal O}(B) \supseteq X_{\text{target}}$.
 
-Thus, the **mode count** $k^{*}$ is unique, but the **minimal generative basis** is generally not unique as a set.
+Thus, the **mode count** $k^{\*}$ is unique, but the **minimal generative basis** is generally not unique as a set.
 
 ### Equivalence classes of bases
 
@@ -434,7 +434,7 @@ The framework therefore treats $k^{\*}$ as the invariant **mode count**, and $\m
 ## APPENDIX: Non‑redundancy and saturation 
 
 > “Adding more primitives does not expand generative power.  
-> Every admissible primitive outside $B^{*}$ is redundant.”   
+> Every admissible primitive outside $B^{\*}$ is redundant.”   
 
 ### Element-wise non‑redundancy
 
@@ -1459,12 +1459,12 @@ The 4-mode basis is therefore both strictly minimal and algebraically saturated.
 
 ## **Appendix: MFE Formal Theorem**
 
-Flux invariants : dynamic closure : $k^{*}_{\mathrm{MFE}} = 4$  
+Flux invariants : dynamic closure : $k^{\*}_{\mathrm{MFE}} = 4$  
 
 This establishes the MFE mode count as a **derived theorem**, not an empirical assumption. Combining existence, minimality, and non‑redundancy:
 
 $$
-k^{*}_{\mathrm{MFE}} = 4.
+k^{\*}_{\mathrm{MFE}} = 4.
 $$
 
 The MFE basis $\{p, P, A, Q\}$ is therefore:
@@ -1477,7 +1477,7 @@ The MFE basis $\{p, P, A, Q\}$ is therefore:
 This appendix formalizes the statement:
 
 $$
-k^{*}_{\mathrm{MFE}} = 4
+k^{\*}_{\mathrm{MFE}} = 4
 $$
 
 as a **derived theorem** of invariant‑restricted closure.  
@@ -1520,11 +1520,7 @@ MFE primitives : $U_{\mathcal I_{\mathrm{MFE}}}$
 
 From the invariants, the admissible primitive universe is:
 
-$$
-U_{\mathcal I_{\mathrm{MFE}}}
-=
-\{ p,\; P,\; A,\; Q,\; \text{all invariant‑compatible flux primitives} \}.
-$$
+$$U_{\mathcal I_{\mathrm{MFE}}}=\{ p,\; P,\; A,\; Q,\; \text{all invariant‑compatible flux primitives} \}.$$
 
 Where the canonical MFE primitives are:
 
@@ -1587,7 +1583,7 @@ This includes:
 Let $(U_{\mathcal I_{\mathrm{MFE}}}, \mathcal O_{\mathrm{MFE}}, G_{\mathcal O_{\mathrm{MFE}}})$ be the MFE generative system defined above. Then:
 
 $$
-k^{*}_{\mathrm{MFE}}
+k^{\*}_{\mathrm{MFE}}
 =
 \min_{B \subseteq U_{\mathcal I_{\mathrm{MFE}}}}
 \{ |B| \mid G_{\mathcal O_{\mathrm{MFE}}}(B) \supseteq X_{\mathrm{MFE}} \}
@@ -1608,7 +1604,7 @@ We show that a 4‑element set exists whose closure spans the entire MFE express
 Let:
 
 $$
-B^{*} = \{ p,\; P,\; A,\; Q \}.
+B^{\*} = \{ p,\; P,\; A,\; Q \}.
 $$
 
 Under $\mathcal O_{\mathrm{MFE}}$:
@@ -1628,7 +1624,7 @@ Together, these generate:
 Thus:
 
 $$
-G_{\mathcal O_{\mathrm{MFE}}}(B^{*}) \supseteq X_{\mathrm{MFE}}.
+G_{\mathcal O_{\mathrm{MFE}}}(B^{\*}) \supseteq X_{\mathrm{MFE}}.
 $$
 
 This establishes **existence** of a complete 4‑mode basis.
@@ -1699,16 +1695,16 @@ This establishes **minimality**.
 
 ### **Non‑Redundancy and Saturation**
 
-For any admissible primitive $q \in U_{\mathcal I_{\mathrm{MFE}}} \setminus B^{*}$:
+For any admissible primitive $q \in U_{\mathcal I_{\mathrm{MFE}}} \setminus B^{\*}$:
 
 $$
-q \in G_{\mathcal O_{\mathrm{MFE}}}(B^{*}).
+q \in G_{\mathcal O_{\mathrm{MFE}}}(B^{\*}).
 $$
 
 Thus:
 
 $$
-G_{\mathcal O_{\mathrm{MFE}}}(B^{*} \cup \{q\}) = G_{\mathcal O_{\mathrm{MFE}}}(B^{*}).
+G_{\mathcal O_{\mathrm{MFE}}}(B^{\*} \cup \{q\}) = G_{\mathcal O_{\mathrm{MFE}}}(B^{\*}).
 $$
 
 This proves **non‑redundancy**.
