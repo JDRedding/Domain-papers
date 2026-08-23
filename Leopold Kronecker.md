@@ -657,4 +657,6 @@ where $P$ is the content (gcd of coefficients) of the norm. Explicit algorithmic
 
 ## Further Reading and References
 * Leopold Kronecker, Grundzüge der Arithmetik algebraischer Zahlkörper, 1870.
+* [Group properties of the residue classes of certain Kronecker modular systems and some related generalizations in number theory](https://archive.org/details/grouppropertieso00kirc/page/1/mode/2up)
+by Kircher, Edward August Theodore
 * Emil Artin, Algebra, zur Geschichte der modularen Restklassensysteme.
