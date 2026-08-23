@@ -329,7 +329,7 @@ This distinction ensures that the minimal generative basis is defined relative t
 - the **expressive requirements** of the system, and  
 - the **structural invariants** that must be preserved under closure.
 
-## **A.X Target Universe and Invariant Structure**
+## **Target Universe and Invariant Structure**
 
 A generative system typically specifies two distinct mathematical objects:
 
@@ -436,3 +436,70 @@ G(B^{*}) \supseteq X_{\text{target}}.
 $$
 
 In this case, invariants constrain the generative vocabulary, but do not fully determine the expressive universe.
+
+The formalization correctly elevates the mode-count equation to the fundamental algebraic primitive, decoupling the derivation from algorithmic information theory (Kolmogorov complexity) and framing it purely as invariant-restricted closure over a generating set.
+
+Here is the structured, publication-ready revision of the appendix section, cleaned of conversational artifacts and ready for direct insertion:
+
+---
+
+# APPENDIX: The Fundamental Mode‑Count Equation
+
+### Minimal Cardinality Under Invariant‑Restricted Closure
+
+The foundational quantity of a generative system is the minimal cardinality of the primitive set required to span the target expressive universe under an admissible operational algebra. This quantity is not an architectural choice; it is strictly constrained by the invariant requirements and the closure operator.
+
+Let:
+
+* $\mathcal{I}$ denote the set of structural invariant constraints.
+* $U_{\mathcal{I}}$ denote the universe of admissible primitives satisfying $\mathcal{I}$.
+* $\mathcal{O}$ denote the admissible operation algebra.
+* $G_{\mathcal{O}}(B)$ denote the algebraic closure of a subset $B \subseteq U_{\mathcal{I}}$ under $\mathcal{O}$.
+* $X_{\text{target}}$ denote the target expressive space.
+
+The fundamental mode-count equation is defined as:
+
+$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\text{target}} \}$$
+
+This defines the minimal cardinality of any generative basis compatible with the invariant structure $\mathcal{I}$.
+
+---
+
+### 1 Formal Dependency Hierarchy
+
+The mode-count equation induces a strict, four-stage unidirectional dependency chain:
+
+$$\mathcal{I} \;\longrightarrow\; U_{\mathcal{I}} \;\longrightarrow\; G_{\mathcal{O}}(\,\cdot\,) \;\longrightarrow\; k^{*}$$
+
+* **Invariant Constraints ($\mathcal{I}$):** Establish the admissibility criteria for candidate elements.
+* **Admissible Primitive Universe ($U_{\mathcal{I}}$):** Defines the maximal ambient vocabulary of invariant-compliant generators.
+* **Algebraic Closure ($G_{\mathcal{O}}$):** Maps candidate generator subsets to their span within the expressive universe under $\mathcal{O}$.
+* **Minimal Cardinality ($k^{*}$):** The global infimum over all valid generator cardinalities whose closure covers $X_{\text{target}}$.
+
+Consequently, mode dimensionality $k^{*}$ is strictly derived rather than postulated.
+
+---
+
+### 2 Completeness, Minimality, and Reducibility
+
+For an optimal basis $B^{*} \subseteq U_{\mathcal{I}}$ achieving the infimum $\vert{}B^{*}\vert{} = k^{*}$, the equation guarantees two structural properties:
+
+* **Completeness:**
+
+$$G_{\mathcal{O}}(B^{*}) \supseteq X_{\text{target}}$$
+
+* **Minimality (Irreducibility):**
+
+$$\forall B' \subset B^{*}, \quad G_{\mathcal{O}}(B') \not\supseteq X_{\text{target}}$$
+
+No proper subset of $B^{*}$ can span $X_{\text{target}}$ under $\mathcal{O}$.
+
+---
+
+### 3 Invariant-Sourced Expressive Targets
+
+When the target space is itself fully specified by the realization of the invariants, $X_{\text{target}} \equiv {Gen}(\mathcal{I})$, the formulation simplifies to:
+
+$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq {Gen}(\mathcal{I}) \}$$
+
+This represents the canonical formulation for self-contained, invariant-closed algebraic structures.
