@@ -105,7 +105,7 @@ His ideas live on in modern computational and constructive approaches.
 ---
 
 ## 📌 Kronecker vs. Cantor  
-The **Kronecker–Cantor conflict** is one of the most important foundational clashes in the history of mathematics. It wasn’t a personal feud—it was a deep philosophical collision between two incompatible visions of what mathematics *is allowed to be*.  
+The **Kronecker–Cantor conflict** is one of the most important foundational clashes in the history of mathematics. It wasn’t a personal feud—it was a deep philosophical collision between two incompatible visions of what mathematics *is allowed to be*. Kronecker believed Cantor’s infinities were illegitimate metaphysics; Cantor believed Kronecker’s finitism was a prison that prevented mathematics from advancing.
 
 ### ⚔️ Conflict with Georg Cantor  
 Kronecker’s most famous controversy was with **Georg Cantor****, whose set theory introduced actual infinities and transfinite numbers.
@@ -218,11 +218,6 @@ This is the same philosophical divide later seen between:
 
 Kronecker is the ancestor of constructive mathematics.  
 Cantor is the ancestor of modern set theory.
-
----
-
-## 📌 The conflict in one sentence  
-**Kronecker believed Cantor’s infinities were illegitimate metaphysics; Cantor believed Kronecker’s finitism was a prison that prevented mathematics from advancing.**
 
 ---
 
