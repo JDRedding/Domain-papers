@@ -386,12 +386,14 @@ $$
 
 Then:
 
-1. Tschantz provides an embedding  
+1. Tschantz provides an embedding
+   
    $$
    \iota:FL(\omega)\hookrightarrow[a,b].
    $$
 
-2. Apply the closure operator:  
+2. Apply the closure operator:
+   
    $$
    G\circ\iota(FL(\omega))\subseteq[a,b].
    $$
@@ -422,7 +424,29 @@ $$
 [a,b]_{\mathrm{Fix}} := \{x\in\mathrm{Fix}(G)\mid a\le x\le b\}.
 $$
 
-If $[a,b]_{\mathrm{Fix}}$ is infinite and $\mathrm{Fix}(G)\hookrightarrow L$ is a lattice embedding, then $[a,b]_{\mathrm{Fix}}$ is an infinite interval in $L$ as well.
+**If the fixed‑point interval**  
+
+$$
+[a,b]_{\mathrm{Fix}}=\{x\in\mathrm{Fix}(G)\mid a\le x\le b\}
+$$
+
+**is infinite, and the inclusion**  
+
+$$
+\mathrm{Fix}(G)\hookrightarrow L
+$$
+
+**is a lattice embedding, then**  
+
+$$
+[a,b]_{\mathrm{Fix}}
+$$
+
+**is an infinite interval of $L$ as well.**
+
+Or,
+
+**An infinite interval inside $\mathrm{Fix}(G)$ remains infinite when viewed inside the ambient free lattice $L$, provided the inclusion $\mathrm{Fix}(G)\hookrightarrow L$ preserves the lattice structure.**
 
 By Tschantz:
 
