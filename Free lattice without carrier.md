@@ -303,7 +303,6 @@ So, the terms are:
 
 Thus the lattice is not a set of elements but an **internal object of $\mathbf{C}$** whose “elements” are generalized morphisms $1 \to F([1])$. The entire construction is point‑free, relational, and triadic: the lattice emerges from the interaction of SID‑structure, PED‑semantics, and RDG‑mapping, not from any underlying set of points.
 
-
 ## **APPENDIX: Tschantz Intervals**
 **Free‑Countable Substructure, and Closure‑Fixed Domains**
 
@@ -388,15 +387,15 @@ Then:
 
 1. Tschantz provides an embedding
    
-   $$
-   \iota:FL(\omega)\hookrightarrow[a,b].
-   $$
+$$
+\iota:FL(\omega)\hookrightarrow[a,b].
+$$
 
 2. Apply the closure operator:
    
-   $$
-   G\circ\iota(FL(\omega))\subseteq[a,b].
-   $$
+$$
+G\circ\iota(FL(\omega))\subseteq[a,b].
+$$
 
 3. Because $G$ is extensive and monotone, the image is a **$G$-closed sublattice** of $[a,b]$.
 
