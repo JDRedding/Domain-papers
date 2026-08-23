@@ -110,23 +110,23 @@ This means that if you take any number field whose Galois group over $\mathbb{Q}
 ---
 
 #### 🧩 Core  
-A **cyclotomic field** $\mathbb{Q}(\zeta_m)$ is created by adjoining a primitive \(m\)-th root of unity to $\mathbb{Q}$. These fields have abelian Galois groups, and the theorem says:
+A **cyclotomic field** $\mathbb{Q}(\zeta_m)$ is created by adjoining a primitive $m$-th root of unity to $\mathbb{Q}$. These fields have abelian Galois groups, and the theorem says:
 
 - Cyclotomic fields are not just examples of abelian extensions—they **generate all of them**.  
-- Any abelian extension \(K/\mathbb{Q}\) sits inside some $\mathbb{Q}(\zeta_m)$.
-- 
+- Any abelian extension $K/ {Q}$ sits inside some ${Q}(\zeta_m)$.
+  
 This gives a complete classification of abelian extensions of $\mathbb{Q}$.
 
 ---
 
 #### 🔧 Conductor  
-For each abelian extension \(K/\mathbb{Q}\), there is a **minimal** integer \(m\) such that:
+For each abelian extension $K/\mathbb{Q}$, there is a **minimal** integer $m$ such that:
 
 $$
 K \subseteq \mathbb{Q}(\zeta_m).
 $$
 
-This integer is called the **conductor** of the extension. It encodes how primes split and ramify in \(K\).   
+This integer is called the **conductor** of the extension. It encodes how primes split and ramify in $K$.   
 
 ---
 
