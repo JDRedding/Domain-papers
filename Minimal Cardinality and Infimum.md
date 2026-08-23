@@ -116,7 +116,7 @@ This mirrors the classical example $\inf\{1/n\}=0$ but stays finite.
 
 ## 3. Comparative Analysis (Relational Dynamic Geometry‑Mode)
 
-| Feature | **Minimal Relational Dynamic Geometry cardinality** | **Relational Dynamic Geometry infimum** |
+| Feature | **Minimal Relational Cardinality** | **Relational Infimum** |
 |--------|-----------------------------------------------|-------------------------------------------|
 | Domain | Finite-resolution families $S_n$ | Finite relational posets $P_n$ |
 | Nature of “smallest” | Smallest quotient cardinality | Greatest lower bound |
