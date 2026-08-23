@@ -539,7 +539,7 @@ Where:
 
 #### **Congruence as Q‑Operator**
 
-# **1. Relational dynamic geometr Layer — Structure / Relations**
+#### **1.Structure / Relations**
 
 Relational dynamic geometry is the **carrier‑free relational lattice**.  
 Kronecker’s congruence is *exactly* a relational reduction:
