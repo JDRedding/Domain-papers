@@ -372,4 +372,8 @@ t ::= g | t₁ ∧ t₂ | t₁ ∨ t₂    (g ∈ G)
 | **Freeness** | $L(G)$ is the free lattice: unique homomorphisms extend formal assignments |
 | **Congruence** | Quotient $T(G)/{\equiv_E}$ well-defines lattice operations on equivalence classes |
 
-
+## External references and further reading
+* Dilworth, Lattices with Unique Complements, and foundational results on free lattices.
+* Birkhoff, Lattice Theory (Third Edition), particularly chapter on free lattices and term algebras.
+* Universal Algebra texts: explore carrier-free constructions via initial objects.
+* [Free Lattices](https://pubs.ams.org/ebooks/surv/042/), Mathematical Surveys and Monographs
