@@ -651,6 +651,171 @@ It is **not** used to determine $k^{\*}$; it is used **after** completeness and 
 
 ---
 
+# **Appendix: Tractability and Complexity**  
+**Algorithmic Tractability and Complexity of Computing $B^{\*}$** 
+
+- The minimal generative basis problem is NP‑hard in general.  
+- It is polynomial‑time solvable in linear, matroidal, and algebraic systems.  
+- Practical heuristics exist for general systems.  
+- RDG and MFE avoid NP‑hardness because their structure is fixed and low‑dimensional.  
+- The framework is computationally realistic when closure is tractable and invariants are well‑structured.
+
+### **The Minimal Generative Basis Problem**
+
+The core computational problem is:
+
+$$
+\text{Given } (U_{\mathcal I}, \mathcal O, G_{\mathcal O}, X_{\text{target}}),\quad
+\text{find } B^{\*} \subseteq U_{\mathcal I}
+$$
+such that:
+
+1. **Completeness:**  
+
+$$
+G_{\mathcal O}(B^{\*}) \supseteq X_{\text{target}}
+$$
+
+2. **Minimality:**  
+
+$$
+\forall B' \subsetneq B^{\*},\quad G_{\mathcal O}(B') \not\supseteq X_{\text{target}}
+$$
+
+3. **Cardinality optimality:**  
+
+$$
+|B^{\*}| = k^{\*}
+$$
+
+This is a **set‑selection optimization problem** over the power set of $U_{\mathcal I}$, with constraints defined by the closure operator.
+
+### **General Complexity: NP‑Hardness**
+
+In the general case, computing $B^{\*}$ is **NP‑hard**.
+
+This follows from reductions to classical NP‑hard problems:
+
+- **Minimum set cover**  
+  (closure as coverage of target elements)
+- **Minimum generator problem**  
+  (in semigroups, monoids, and groups)
+- **Minimum hitting set**  
+  (dual formulation of set cover)
+- **Minimum basis selection**  
+  (in general closure systems without matroid structure)
+
+Thus:
+
+> **In arbitrary generative systems, finding $B^{\*}$ is computationally intractable in the worst case.**
+
+This is not a defect of the framework; it is a universal property of minimal generator problems.
+
+### **Tractable Special Cases**
+
+Despite the general NP‑hardness, many important systems admit **polynomial‑time algorithms** for computing minimal bases.
+
+#### **Linear Algebra (Vector Spaces)**
+
+If $G_{\mathcal O}$ is linear span:
+
+- Basis computation reduces to rank tests.
+- Gaussian elimination yields a basis in $O(n^{3})$.
+- All bases have equal cardinality (dimension).
+
+This is the canonical tractable case.
+
+#### **Matroidal Closure**
+
+If $(U_{\mathcal I}, G_{\mathcal O})$ forms a **matroid**:
+
+- All bases have equal cardinality.
+- Greedy algorithms find a basis in polynomial time.
+- Exchange properties guarantee structural regularity.
+
+Many algebraic systems (linear independence, algebraic independence, graphic matroids) fall into this category.
+
+#### **Finitary Algebraic Closure**
+
+If $G_{\mathcal O}$ is **algebraic** (every element depends on a finite subset):
+
+- Minimal bases can be found by incremental augmentation.
+- Complexity depends on the cost of evaluating dependence relations.
+
+This includes algebraic matroids, polynomial dependence, and certain dynamical systems.
+
+### **Practical General Systems**
+
+For systems outside the tractable classes, one uses **approximation or heuristic methods**.
+
+#### **Greedy Approximation**
+
+Iteratively add the primitive that most increases the closure:
+
+$$
+B_{t+1} = B_{t} \cup \{ p \in U_{\mathcal I} \text{ maximizing } |G_{\mathcal O}(B_{t} \cup \{p\})| \}
+$$
+
+This is analogous to greedy set cover:
+
+- Achieves logarithmic approximation guarantees in set‑cover‑like systems.
+- Often performs well in practice.
+
+#### **Pruning and Branch‑and‑Bound**
+
+Search the power set of $U_{\mathcal I}$ with pruning rules:
+
+- If $G_{\mathcal O}(B)$ already fails to reach required invariants, prune.
+- If $|B|$ already exceeds current best, prune.
+- If adding any primitive cannot increase closure enough, prune.
+
+This is exponential in worst case but feasible for small universes.
+
+#### **Structural Decomposition**
+
+Exploit structure in $\mathcal O$:
+
+- Decompose closure into independent components.
+- Solve minimal basis problems in each component.
+- Combine results.
+
+This is effective when invariants factorize (e.g., RDG vs. MFE).
+
+### **Complexity of Closure Evaluation**
+
+The computational bottleneck is often evaluating:
+
+$$
+G_{\mathcal O}(B)
+$$
+
+For many systems:
+
+- **Linear closure:** polynomial time  
+- **Lie closure:** exponential in worst case  
+- **Dynamical closure:** may require simulation or fixed‑point computation  
+- **Relational closure:** may require graph traversal or constraint propagation  
+
+Thus, the complexity of computing $B^{\*}$ depends critically on the complexity of evaluating closure.
+
+### **Algorithmic Status**
+
+The RDG and MFE systems avoid NP‑hardness because:
+
+- Their invariants $\mathcal I$ are **structurally constrained**.
+- Their admissible primitive universes $U_{\mathcal I}$ are **small and fixed**.
+- Their closure operators $G_{\mathcal O}$ have **low algebraic complexity**.
+- Their mode counts (3 and 4) are **derived theorems**, not outputs of a search.
+
+Thus:
+
+> **RDG and MFE do not require solving the general minimal generator problem.  
+> Their mode counts follow from structural theorems, not algorithmic search.**
+
+This is why the framework is computationally feasible in your domain.
+
+---
+
 ## **APPENDIX: Minimal Generative Bases Under Invariant‑Restricted Closure**
 This appendix formalizes the universal mathematical principle:
 
@@ -851,7 +1016,7 @@ $$
 and the stronger condition must be used:
 
 $$
-G(B^{*}) \supseteq X_{\text{target}}.
+G(B^{\*}) \supseteq X_{\text{target}}.
 $$
 
 In this case, invariants constrain the generative vocabulary, but do not fully determine the expressive universe.
@@ -878,7 +1043,7 @@ Let:
 
 The fundamental mode-count equation is defined as:
 
-$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\text{target}} \}$$
+$$k^{\*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\text{target}} \}$$
 
 This defines the minimal cardinality of any generative basis compatible with the invariant structure $\mathcal{I}$.
 
@@ -888,14 +1053,14 @@ This defines the minimal cardinality of any generative basis compatible with the
 
 The mode-count equation induces a strict, four-stage unidirectional dependency chain:
 
-$$\mathcal{I} \;\longrightarrow\; U_{\mathcal{I}} \;\longrightarrow\; G_{\mathcal{O}}(\,\cdot\,) \;\longrightarrow\; k^{*}$$
+$$\mathcal{I} \;\longrightarrow\; U_{\mathcal{I}} \;\longrightarrow\; G_{\mathcal{O}}(\,\cdot\,) \;\longrightarrow\; k^{\*}$$
 
 * **Invariant Constraints ($\mathcal{I}$):** Establish the admissibility criteria for candidate elements.
 * **Admissible Primitive Universe ($U_{\mathcal{I}}$):** Defines the maximal ambient vocabulary of invariant-compliant generators.
 * **Algebraic Closure ($G_{\mathcal{O}}$):** Maps candidate generator subsets to their span within the expressive universe under $\mathcal{O}$.
-* **Minimal Cardinality ($k^{*}$):** The global infimum over all valid generator cardinalities whose closure covers $X_{\text{target}}$.
+* **Minimal Cardinality ($k^{\*}$):** The global infimum over all valid generator cardinalities whose closure covers $X_{\text{target}}$.
 
-Consequently, mode dimensionality $k^{*}$ is strictly derived rather than postulated.
+Consequently, mode dimensionality $k^{\*}$ is strictly derived rather than postulated.
 
 ---
 
@@ -904,13 +1069,13 @@ Consequently, mode dimensionality $k^{*}$ is strictly derived rather than postul
 For an optimal basis 
 
 $$
-B^{*} \subseteq U_{\mathcal I}
+B^{\*} \subseteq U_{\mathcal I}
 $$
 
 achieving the infimum
 
 $$
-| B^{\*} | = k^{*}
+| B^{\*} | = k^{\*}
 $$
 
 the equation guarantees two structural properties:
@@ -918,13 +1083,13 @@ the equation guarantees two structural properties:
 
 * **Completeness:**
 
-$$G_{\mathcal{O}}(B^{*}) \supseteq X_{\text{target}}$$
+$$G_{\mathcal{O}}(B^{\*}) \supseteq X_{\text{target}}$$
 
 * **Minimality (Irreducibility):**
 
-$$\forall B' \subset B^{*}, \quad G_{\mathcal{O}}(B') \not\supseteq X_{\text{target}}$$
+$$\forall B' \subset B^{\*}, \quad G_{\mathcal{O}}(B') \not\supseteq X_{\text{target}}$$
 
-No proper subset of $B^{*}$ can span $X_{\text{target}}$ under $\mathcal{O}$.
+No proper subset of $B^{\*}$ can span $X_{\text{target}}$ under $\mathcal{O}$.
 
 ---
 
@@ -932,7 +1097,7 @@ No proper subset of $B^{*}$ can span $X_{\text{target}}$ under $\mathcal{O}$.
 
 When the target space is itself fully specified by the realization of the invariants, $X_{\text{target}} \equiv {Gen}(\mathcal{I})$, the formulation simplifies to:
 
-$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq {Gen}(\mathcal{I}) \}$$
+$$k^{\*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq {Gen}(\mathcal{I}) \}$$
 
 This represents the canonical formulation for self-contained, invariant-closed algebraic structures.
 
@@ -945,7 +1110,7 @@ The relational dynamic geometry (RDG) mode count is uniquely fixed by:
 * Algebraic closure operator $G_{\mathcal{O}}(\cdot)$
 * Cardinality infimum achieving target inclusion $X_{\mathrm{RDG}}$
 
-$$k^{*}_{\mathrm{RDG}} = 3$$
+$$k^{\*}_{\mathrm{RDG}} = 3$$
 
 is an algebraically derived theorem, not an empirical assumption.
 
@@ -961,7 +1126,7 @@ Let:
 
 The minimal mode count is defined by:
 
-$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ |B| \;|\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{RDG}} \}$$
+$$k^{\*} = \min_{B \subseteq U_{\mathcal{I}}} \{ |B| \;|\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{RDG}} \}$$
 
 This quantity is strictly forced by the closure structure.
 
@@ -983,7 +1148,7 @@ To establish that the RDG system requires exactly three modes, two conditions mu
 
 Together, (1) and (2) yield:
 
-$$k^{*}_{\mathrm{RDG}} = 3$$
+$$k^{\*}_{\mathrm{RDG}} = 3$$
 
 ---
 
@@ -1017,7 +1182,7 @@ The $\mathrm{MFE}$ mode count is fixed entirely by:
 * Admissible coupling universe $U_{\mathcal{I}_{\mathrm{MFE}}}$
 * Generative closure $G_{\mathcal{O}}(\cdot)$
 
-$$k^{*}_{\mathrm{MFE}} = 4$$
+$$k^{\*}_{\mathrm{MFE}} = 4$$
 
 This establishes that the 4-variable dynamic basis is a derived mathematical necessity rather than a structural postulate.
 
@@ -1034,7 +1199,7 @@ Let:
 
 The minimal operational cardinality is defined by:
 
-$$k^{*}_{\mathrm{MFE}} = \min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{MFE}} \}.$$
+$$k^{\*}_{\mathrm{MFE}} = \min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{MFE}} \}.$$
 
 ### Existence and Minimality Conditions
 
@@ -1054,7 +1219,7 @@ $$\forall\, B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B\vert{} < 4
 
 Together, these conditions yield:
 
-$$k^{*}_{\mathrm{MFE}} = 4.$$
+$$k^{\*}_{\mathrm{MFE}} = 4.$$
 
 ### Closure Progression and Cardinality Thresholds
 
