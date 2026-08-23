@@ -418,12 +418,6 @@ Thus $G$ acts as a **complexity filter** on the unavoidable free structure insid
 
 #### **5. Infinite Intervals Inside the Emergent Domain**
 
-Consider the fixed‑point interval:
-
-$$
-[a,b]_{\mathrm{Fix}} := \{x\in\mathrm{Fix}(G)\mid a\le x\le b\}.
-$$
-
 **If the fixed‑point interval**  
 
 $$
