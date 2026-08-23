@@ -673,7 +673,7 @@ Let:
 
 The minimal operational cardinality is defined by:
 
-$$k^{*}_{\mathrm{MFE}} = \min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\left\{ \vert{}B\vert{} \;\middle\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{MFE}} \right\}.$$
+$$k^{*}_{\mathrm{MFE}} = \min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{MFE}} \}.$$
 
 #### Existence and Minimality Conditions
 
