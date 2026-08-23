@@ -354,7 +354,7 @@ Their relationship determines how completeness and minimality must be formulated
 
 ---
 
-## **A.X.1 Inclusion Relation**
+## **1 Inclusion Relation**
 
 In general, the invariant set is a **subset** of the target universe:
 
@@ -366,7 +366,7 @@ The invariants represent the **structural constraints** that must survive genera
 
 ---
 
-## **A.X.2 Two Equivalent Formulations of Completeness**
+## **2 Two Equivalent Formulations of Completeness**
 
 Depending on how the system is defined, completeness can be expressed in either of two ways.
 
@@ -398,15 +398,18 @@ This is appropriate when the invariants are the fundamental specification and th
 
 ---
 
-## **A.X.3 When the Two Definitions Coincide**
+## **3 When the Two Definitions Coincide**
 
 If the expressive universe is *entirely determined* by the invariant structure, then:
 
 $$
 G(B^{*}) \supseteq X_{\text{target}}
-\quad\Longleftrightarrow\quad
-G(B^{*}) \supseteq \mathcal I.
 $$
+
+$$
+\text{iff } G(B^{*}) \supseteq \mathcal{I}
+$$
+
 
 This occurs when:
 
@@ -418,7 +421,7 @@ i.e., the invariants generate the full expressive universe.
 
 ---
 
-## **A.X.4 When the Two Definitions Differ**
+## **4 When the Two Definitions Differ**
 
 If the target universe contains structures **beyond** the invariant set, then:
 
