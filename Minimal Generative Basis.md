@@ -666,7 +666,7 @@ In the Momentum–Flux Engine ($\mathrm{MFE}$), the required mode count is stric
 
 Let:
 
-* $U_{\mathcal{I}_{\mathrm{MFE}}}$ be the admissible primitive universe governed by the non-equilibrium coupling invariants $\mathcal{I}_{\mathrm{MFE}}$.
+* $U_{\mathcal I_{\mathrm{MFE}}}$ be the admissible primitive universe determined by the MFE invariants,
 * $\mathcal{O}$ be the admissible operational algebra (generating rotation, flux coupling, momentum transfer, and attractor feedback).
 * $G_{\mathcal{O}}(B)$ be the closure of a candidate primitive set $B$ under $\mathcal{O}$.
 * $X_{\mathrm{MFE}}$ be the complete dynamic state space of the self-sustaining engine.
