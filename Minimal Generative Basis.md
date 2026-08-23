@@ -15,6 +15,23 @@ The final universal form is:
 
 This merges set‑theoretic minimality, logical quantification, and the complexity closure principle.
 
+```
++------------------------------------+
+|     MINIMAL GENERATIVE BASIS       |
+|                                    |
+|   U  : Candidate Universe          |
+|   B* : {b_1, ..., b_k} (Basis)     |
+|   O  : Operation Algebra           |
+|                                    |
+|      [ B* ] ---< O >---> X_target  |
+|         |                   ^      |
+|     min K(B*)               |      |
+|     (No proper subset suffices)    |
+|     (No superset adds capacity)    |
++------------------------------------+
+
+```
+
 ## Universal Mathematical Form
 
 Let:
