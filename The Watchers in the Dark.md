@@ -2,7 +2,7 @@
 Abstracted Archetype
 
 **Short version:**  
-The Watchers in the Dark are **resistant, robed entities** who act as **silent guides**. They are **psychic**, **immune to corruption**, and **deeply tied to ancient secrets**. They carry relics, maintain forbidden places, and appear only during moments of significance.
+The Watchers in the Dark are **resistant, robed entities** who act as **silent guides**. They are **psychic**, **immune to corruption**, and **deeply tied to ancient secrets**. No one knows what they really look like, for they are covered in large green robes and resist all psionics that try to scry them. They carry relics, maintain forbidden places, and appear only during moments of significance.
 
 ---
 
