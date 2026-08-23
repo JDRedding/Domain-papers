@@ -517,7 +517,7 @@ $$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\
 
 This represents the canonical formulation for self-contained, invariant-closed algebraic structures.
 
-# APPENDIX: Mode Count as a Derived Quantity
+## APPENDIX: Mode Count as a Derived Quantity
 
 The relational dynamic geometry mode count is uniquely fixed by:
 
@@ -530,7 +530,7 @@ $$k^{*}_{\mathrm{RDG}} = 3$$
 
 is an algebraically derived theorem, not an empirical assumption.
 
-## Minimal Cardinality Under Closure
+### Minimal Cardinality Under Closure
 
 In a generative system, the number of required modes is not chosen arbitrarily; it is derived from the invariant structure, the admissible primitive universe, and the closure operator.
 
@@ -548,7 +548,7 @@ This quantity is strictly forced by the closure structure.
 
 ---
 
-## Existence and Minimality Conditions
+### Existence and Minimality Conditions
 
 To establish that the RDG system requires exactly three modes, two conditions must hold:
 
@@ -566,7 +566,7 @@ $$k^{*}_{\mathrm{RDG}} = 3$$
 
 ---
 
-## Closure Failure and Closure Success
+### Closure Failure and Closure Success
 
 The structural bifurcation across cardinalities is:
 
@@ -576,7 +576,7 @@ Modes 1 and 2 are structurally deficient; mode 3 is the infimum cardinality at w
 
 ---
 
-## Non-Redundancy and Saturation
+### Non-Redundancy and Saturation
 
 If every admissible primitive outside the minimal triad $B^*$ is already spanned by the closure:
 
