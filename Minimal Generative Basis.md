@@ -1702,3 +1702,164 @@ G_{\mathcal O_{\mathrm{MFE}}}(B^{\*} \cup \{q\}) = G_{\mathcal O_{\mathrm{MFE}}}
 $$
 
 This proves **non‑redundancy**.
+
+## **Appendix: Category‑Theoretic Precision in Generative Systems**  
+The categorical minimal generative basis is:
+
+$$
+B^{\*} =
+\{ B \subseteq U_{\mathcal I} \mid
+\langle B \rangle_{\circ} = C,\;
+\forall B' \subsetneq B,\; \langle B' \rangle_{\circ} \neq C,\;
+\forall f \in U_{\mathcal I} \setminus B,\; f \in \langle B \rangle_{\circ}
+\}.
+$$
+
+Earlier sections used the phrase:
+
+$$
+\langle B^{\*} \rangle = C
+$$
+
+to indicate that a set $B^{\*}$ “generates” a category $C$.  
+However, *generation* in category theory has multiple meanings:
+
+- generating **objects** under limits/colimits,  
+- generating **morphisms** under composition,  
+- generating a category as a **free completion**,  
+- generating a category via **dense subcategories**,  
+- generating via **representable functors**.
+
+This appendix fixes a single, precise notion of generation appropriate for generative‑basis frameworks.
+
+### **Chosen Notion of Generation**
+: Free Category on a Graph
+
+The generative systems in your framework (RDG, MFE, relational/dynamical operators) are most naturally modeled as:
+
+- primitives = **generating morphisms**,  
+- closure = **composition**,  
+- expressive universe = **all morphisms reachable by composition**.
+
+Thus the correct categorical notion is:
+
+> **Generation under composition in the free category on a directed graph.**
+
+This is the simplest and most structurally faithful notion for operator‑based systems.
+
+### **Formal Definition**
+Free category : composition closure
+
+Let:
+
+- $C$ be a category,  
+- $B$ be a set of morphisms in $C$,  
+- $\mathrm{Comp}(B)$ be the set of all finite compositions of morphisms in $B$ (including identities).
+
+#### **Definition**  
+Categorical Generation
+
+A set of morphisms $B$ **generates** a category $C$ under composition if:
+
+$$
+\forall f \in \mathrm{Mor}(C),\quad f \in \mathrm{Comp}(B).
+$$
+
+Equivalently:
+
+$$
+\langle B \rangle_{\circ} = C,
+$$
+
+where $\langle B \rangle_{\circ}$ denotes the smallest subcategory of $C$ containing $B$ and closed under composition and identities.
+
+### **Minimal Generative Basis in a Category**
+Categorical basis
+
+Given the definition above, the minimal generative basis problem becomes:
+
+$$
+B^{\*} = 
+\min_{B \subseteq U_{\mathcal I}}
+\{ |B| \mid \langle B \rangle_{\circ} = C \}.
+$$
+
+This aligns perfectly with your general framework:
+
+- $U_{\mathcal I}$ = admissible morphisms,  
+- $\mathcal O$ = composition,  
+- $G_{\mathcal O}(B) = \langle B \rangle_{\circ}$,  
+- $X_{\text{target}} = C$.
+
+Thus the categorical case is a **specialization** of the general generative‑basis formalism.
+---
+
+### **J.5 Minimality and Non‑Redundancy in Categories**
+
+The three universal constraints become:
+
+#### **Completeness**
+$$
+\langle B^{\*} \rangle_{\circ} = C.
+$$
+
+#### **Minimality**
+$$
+\forall B' \subsetneq B^{\*},\quad \langle B' \rangle_{\circ} \neq C.
+$$
+
+#### **Non‑Redundancy**
+For every admissible morphism $f \in U_{\mathcal I} \setminus B^{\*}$:
+
+$$
+f \in \langle B^{\*} \rangle_{\circ}.
+$$
+
+This matches the element‑wise saturation condition (Appendix D).
+
+## **Alternative Notions of Generation (for completeness)**
+
+Although the free‑category notion is chosen for your system, other notions exist.  
+We list them for clarity and future extension.
+
+### **Generators via Representable Functors**
+
+A set of objects $G$ generates a category if:
+
+$$
+\mathrm{Hom}(G, -)
+$$
+
+is jointly conservative (detects isomorphisms).
+
+### **Dense Subcategories**
+
+A subcategory $D \subseteq C$ is dense if every object of $C$ is a colimit of objects in $D$.
+
+### **Generators under Colimits**
+Dense subcategory : representable functors
+
+A set of objects generates $C$ if every object is a colimit of diagrams built from them.
+
+These notions are more abstract and not needed for RDG/MFE, but they are included for completeness.
+
+# **Free‑Category Notions**
+
+RDG and MFE primitives behave like:
+
+- **operators**,  
+- **update maps**,  
+- **relational/dynamical morphisms**.
+
+Their expressive universes are:
+
+- all relational geometries reachable by composing $M, F, R$,  
+- all flux dynamics reachable by composing $p, P, A, Q$.
+
+Thus:
+
+- primitives = **generating morphisms**,  
+- closure = **composition**,  
+- expressive universe = **reachable morphisms**.
+
+This is exactly the free‑category generative structure.
