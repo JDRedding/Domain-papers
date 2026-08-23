@@ -367,7 +367,7 @@ Among all complete bases, $B^{*}$ minimizes description length.
 
 ---
 
-# **APPENDIX: Target Universe vs. Invariant Requirements**
+## **APPENDIX: Target Universe vs. Invariant Requirements**
 The relationship between the target universe and the invariant set determines the correct completeness condition:
 
 - If the target universe is explicitly specified:  
@@ -502,7 +502,7 @@ Here is the structured, publication-ready revision of the appendix section, clea
 
 ---
 
-# APPENDIX: The Fundamental Mode‑Count Equation
+## APPENDIX: The Fundamental Mode‑Count Equation
 
 ### Minimal Cardinality Under Invariant‑Restricted Closure
 
