@@ -266,6 +266,7 @@ w_n(i) =
 $$
 
 2. **Visited field update:**
+
 $$
 v_n(i) =
 \begin{cases}
