@@ -1216,12 +1216,11 @@ $$
 \}.
 $$
 
-These invariants are **externally specified** (Appendix E) and do not depend on any candidate basis.
+These invariants are **externally specified** and do not depend on any candidate basis.
 
 - **Relational curvature** requires a non‑degenerate triadic relational frame.  
 - **Bidirectional interaction** requires at least two independent relational axes.  
 - **Memory/attractor mediation** requires a third independent mode to prevent collapse into a dyadic limit cycle.
-
 
 ### **Admissible Primitive Universe**
 RDG primitives
