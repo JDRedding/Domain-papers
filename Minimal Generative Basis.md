@@ -304,3 +304,132 @@ K(B) \;|\; G(B) \supseteq X_{\text{target}}
 $$
 
 Among all complete bases, $B^{*}$ minimizes description length.
+
+---
+
+# **APPENDIX: Target Universe vs. Invariant Requirements**
+The relationship between the target universe and the invariant set determines the correct completeness condition:
+
+- If the target universe is explicitly specified:  
+
+$$
+G(B^{*}) \supseteq X_{\text{target}}.
+$$
+
+- If the invariants define the expressive universe:
+  
+$$
+X_{\text{target}} = \operatorname{Gen}(\mathcal I)
+\quad\text{and}\quad
+G(B^{*}) \supseteq \mathcal I.
+$$
+
+This distinction ensures that the minimal generative basis is defined relative to both:
+
+- the **expressive requirements** of the system, and  
+- the **structural invariants** that must be preserved under closure.
+
+## **A.X Target Universe and Invariant Structure**
+
+A generative system typically specifies two distinct mathematical objects:
+
+1. **The target expressive universe**
+   
+$$
+X_{\text{target}}
+$$
+
+   the full set of structures the system must be able to generate.
+
+2. **The invariant requirement set**  
+
+$$
+\mathcal I
+$$
+
+   the structural, relational, or dynamical invariants that must be preserved or reproduced under generative closure.
+
+These two sets are related but not identical.  
+Their relationship determines how completeness and minimality must be formulated.
+
+---
+
+## **A.X.1 Inclusion Relation**
+
+In general, the invariant set is a **subset** of the target universe:
+
+$$
+\mathcal I \subseteq X_{\text{target}}.
+$$
+
+The invariants represent the **structural constraints** that must survive generative evolution, while the target universe represents the **full expressive capacity** of the system.
+
+---
+
+## **A.X.2 Two Equivalent Formulations of Completeness**
+
+Depending on how the system is defined, completeness can be expressed in either of two ways.
+
+### **Formulation 1 — Target‑Driven Completeness**
+
+The generative basis must span the entire target universe:
+
+$$
+G(B^{*}) \supseteq X_{\text{target}}.
+$$
+
+This is appropriate when the target universe is explicitly specified.
+
+### **Formulation 2 — Invariant‑Driven Completeness**
+
+If the invariants *define* the expressive universe, then:
+
+$$
+X_{\text{target}} = \operatorname{Gen}(\mathcal I),
+$$
+
+and completeness becomes:
+
+$$
+G(B^{*}) \supseteq \mathcal I.
+$$
+
+This is appropriate when the invariants are the fundamental specification and the target universe is the closure of those invariants.
+
+---
+
+## **A.X.3 When the Two Definitions Coincide**
+
+If the expressive universe is *entirely determined* by the invariant structure, then:
+
+$$
+G(B^{*}) \supseteq X_{\text{target}}
+\quad\Longleftrightarrow\quad
+G(B^{*}) \supseteq \mathcal I.
+$$
+
+This occurs when:
+
+$$
+X_{\text{target}} = \operatorname{Gen}(\mathcal I),
+$$
+
+i.e., the invariants generate the full expressive universe.
+
+---
+
+## **A.X.4 When the Two Definitions Differ**
+
+If the target universe contains structures **beyond** the invariant set, then:
+
+$$
+\mathcal I \subsetneq X_{\text{target}},
+$$
+
+and the stronger condition must be used:
+
+$$
+G(B^{*}) \supseteq X_{\text{target}}.
+$$
+
+In this case, invariants constrain the generative vocabulary, but do not fully determine the expressive universe.
