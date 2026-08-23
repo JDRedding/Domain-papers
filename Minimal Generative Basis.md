@@ -1225,7 +1225,7 @@ These invariants are **externally specified** (Appendix E) and do not depend on 
 
 ### **Admissible Primitive Universe**
 
-$U_{\mathcal I_{\mathrm{RDG}}}\ - RDG primitives
+$U_{\mathcal I_{\mathrm{RDG}}}$ - RDG primitives
 
 From the invariants, the admissible primitive universe is:
 
