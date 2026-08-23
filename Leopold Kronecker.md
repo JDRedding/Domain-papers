@@ -535,8 +535,6 @@ Where:
 - **Momentum flux engine** interprets $x^p$ and $y^p$ as phase‑geometry (Frobenius).  
 - **Quotient** performs the quotient collapse modulo $p$.
 
----
-
 #### **Congruence as Q‑Operator**
 
 #### **1.Structure / Relations**
@@ -561,8 +559,6 @@ $$
 $$
 
 Where $Q_p$ is the relational quotient operator.
-
----
 
 #### **2. Evaluation / Geometry**
 
@@ -590,8 +586,6 @@ So the momentum flux engine sees Kronecker’s congruence as:
 $$
 \text{MFE: } \Phi_p \;\xrightarrow{\text{phase collapse}}\; (x-y^p)(x^p-y).
 $$
-
----
 
 #### **3. Q Layer — Quotient / Collapse / Moderation**
 The Q‑operator is defined as:
@@ -627,14 +621,6 @@ Q_p(\Phi_p) = (x-y^p)(x^p-y).
 $$
 
 This is the exact behavior of the Q‑operator.
-
-
-
-
-
-
-
-
 
 ### Additional Notes on Kronecker’s Constructive Approach
 Kronecker’s theory of **divisors / Modulsysteme** (his alternative to Dedekind ideals) works with systems of indeterminate forms and congruence arithmetic modulo polynomial relations rather than infinite sets. A typical modern transcription involves greatest-common-divisor content of norms of linear forms:
