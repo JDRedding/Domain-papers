@@ -474,7 +474,7 @@ This stronger property is not assumed universally; it is invoked only when the g
 The original condition
 
 $$
-\forall B'' \supsetneq B^{*},\quad G_{\mathcal O}(B'') = G_{\mathcal O}(B^{*})
+\forall B'' \supsetneq B^{\*},\quad G_{\mathcal O}(B'') = G_{\mathcal O}(B^{\*})
 $$
 
 is now understood as a **global saturation** statement. The framework refines this by:
