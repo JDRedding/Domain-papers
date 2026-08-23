@@ -307,7 +307,7 @@ Thus the lattice is not a set of elements but an **internal object of $\mathbf{C
 ## **APPENDIX: Tschantz Intervals**
 **Free‑Countable Substructure, and Closure‑Fixed Domains**
 
-#### **1. Interval Structure in Free Lattices (SID Layer)**
+### **1. Interval Structure in Free Lattices (SID Layer)**
 
 Let  
 
@@ -331,7 +331,7 @@ This is the SID‑structural notion of an interval: no points, no carrier, no sp
 
 ---
 
-#### **2. Tschantz’s Theorem (SID → PED Transition)**
+### **2. Tschantz’s Theorem (SID → PED Transition)**
 
 **Tschantz’s Theorem.**  
 If $[a,b]\subseteq L$ is infinite, then there exists a lattice embedding
@@ -352,7 +352,7 @@ In triadic terms:
 
 ---
 
-#### **3. Closure Operators and Emergent Domains**
+### **3. Closure Operators and Emergent Domains**
 
 Let  
 
@@ -376,7 +376,7 @@ This is a **structured sublattice** of $L$ whenever $G$ preserves meets and join
 
 ---
 
-#### **4. Tschantz Inside Closure‑Stable Intervals**
+### **4. Tschantz Inside Closure‑Stable Intervals**
 
 Suppose $[a,b]\subseteq L$ is infinite and **$G$-stable**:
 
@@ -416,7 +416,7 @@ Thus $G$ acts as a **complexity filter** on the unavoidable free structure insid
 
 ---
 
-#### **5. Infinite Intervals Inside the Emergent Domain**
+### **5. Infinite Intervals Inside the Emergent Domain**
 
 **If the fixed‑point interval**  
 
@@ -456,7 +456,7 @@ This is a **closure‑stable version** of Tschantz’s Theorem.
 
 ---
 
-#### **6. Triadic Summary (SID / PED / RDG)**
+### **6. Triadic Summary (SID / PED / RDG)**
 
 - **SID:** Intervals are purely syntactic order‑objects.  
 - **PED:** Free lattice dynamics force countable free substructure in any infinite interval.  
