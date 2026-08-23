@@ -1819,9 +1819,33 @@ This is exactly the free‑category generative structure.
 The minimal generative basis framework is robust under small perturbations of invariants, operations, and closure.  
 Exact systems (RDG, MFE) maintain stable mode counts, while empirical systems may require approximate closure and sensitivity analysis*
 
-### **Motivation**
-
+### **Robustness**
 Approximate invariants : closure sensitivity
+
+#### **Exact systems**
+
+- invariants are structural,  
+- primitive universes are discrete,  
+- closure operators are algebraically rigid,  
+- mode counts are stable.
+
+Thus:
+
+$$
+k^{\*}_{\mathrm{RDG}} = 3,
+\qquad
+k^{\*}_{\mathrm{MFE}} = 4
+$$
+
+are robust under perturbations.
+
+#### **Empirical or noisy systems**
+
+- use $\varepsilon$-closure,  
+- compute approximate bases,  
+- analyze sensitivity of invariants.
+
+Mode count may vary depending on perturbation magnitude.
 
 The minimal generative basis framework assumes:
 
@@ -1983,29 +2007,3 @@ Properties:
 - As $\varepsilon \to 0$, $B^{\*}_{\varepsilon} \to B^{\*}$.  
 - Approximate bases are useful in noisy or empirical systems.
 
-### **Robustness Summary**
-
-#### **Exact systems**
-
-- invariants are structural,  
-- primitive universes are discrete,  
-- closure operators are algebraically rigid,  
-- mode counts are stable.
-
-Thus:
-
-$$
-k^{\*}_{\mathrm{RDG}} = 3,
-\qquad
-k^{\*}_{\mathrm{MFE}} = 4
-$$
-
-are robust under perturbations.
-
-### **Empirical or noisy systems:**
-
-- use $\varepsilon$-closure,  
-- compute approximate bases,  
-- analyze sensitivity of invariants.
-
-Mode count may vary depending on perturbation magnitude.
