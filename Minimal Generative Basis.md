@@ -1580,16 +1580,10 @@ This includes:
 ### **Theorem Statement**
 
 ### **Theorem (MFE Mode Count).**  
+
 Let $(U_{\mathcal I_{\mathrm{MFE}}}, \mathcal O_{\mathrm{MFE}}, G_{\mathcal O_{\mathrm{MFE}}})$ be the MFE generative system defined above. Then:
 
-$$
-k^{\*}_{\mathrm{MFE}}
-=
-\min_{B \subseteq U_{\mathcal I_{\mathrm{MFE}}}}
-\{ |B| \mid G_{\mathcal O_{\mathrm{MFE}}}(B) \supseteq X_{\mathrm{MFE}} \}
-=
-4.
-$$
+$$k^{\*}_{\mathrm{MFE}}=\min_{B \subseteq U_{\mathcal I_{\mathrm{MFE}}}}\{ |B| \mid G_{\mathcal O_{\mathrm{MFE}} (B) \supseteq X_{\mathrm{MFE}} \}=4$$
 
 ### **Proof Structure**
 
