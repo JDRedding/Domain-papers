@@ -417,8 +417,10 @@ $$
 
 **Common uses**  
 - Identity matrix entries:
-
-$$(I)_{ij} = \delta_{ij}$$.  
+- 
+$$
+(I)_{ij} = \delta_{ij}
+$$
 
 - Extraction in sums: $\sum_i a_i \delta_{ik} = a_k$.  
 - Tensor form (mixed): $\delta^i_j$.
