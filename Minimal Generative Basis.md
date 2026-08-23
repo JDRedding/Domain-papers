@@ -217,3 +217,14 @@ This is the mathematical skeleton behind:
 - 4 momentum flux engine modes  
 
 All of these are **minimal generative bases** under closure. This is why RDG (=3) and MFE (=4) are not arbitrary — they satisfy the universal form above.
+
+### Why Closure Forces Dimensionality
+
+In bounded, self-correcting systems (such as slow–fast relational architectures), the number of modes is constrained by the interaction topology:
+
+1. **A Monad ($k=1$)** has only self-identity; it cannot produce differential dynamics or relational tension.
+2. **A Dyad ($k=2$)** produces oscillation, opposition, or collapse, but lacks an internal frame of reference or independent curvature.
+3. **A Triad ($k=3$)** is the minimal basis capable of hosting **relational opposition + memory/attractor mediation** without collapsing into a degenerate 1D/2D limit cycle.
+4. **Coupled Systems ($k=5$ or $2 \times 3$ with interlock)** form the minimal closed manifold where a field generator (Evaluative Field) and a kinetic actor (Geometric Motion) dynamically sustain and self-correct without external forcing.
+
+Whenever $G(B') \not\supseteq \mathcal{I}$, the system fails to self-stabilize or fails to span the necessary relational state space; whenever $B'' \supsetneq B^*$, additional parameters collapse into linear or functional dependence.
