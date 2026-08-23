@@ -278,19 +278,19 @@ $$
 No proper subset of $B^{*}$ is sufficient.  
 Every primitive in $B^{*}$ is necessary for completeness.
 
-
 ### **(3) Non‑Redundancy (Invariant‑Restricted)**
 
 $$
-\forall B'' \supsetneq B^{*},\quad
-B'' \subseteq U_{\mathcal I}
-\Rightarrow
-G(B'') = G(B^{*}).
+\forall B'' \in U_{\mathcal I},\; B'' \supsetneq B^{*}
 $$
+
+$$
+\text{implies } G(B'') = G(B^{*})
+$$
+
 
 Adding any admissible primitive does **not** expand generative power.  
 Every admissible primitive outside $B^{*}$ is redundant.
-
 
 ### **(4) Kolmogorov‑Optimality**
 
