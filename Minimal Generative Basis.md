@@ -1862,3 +1862,216 @@ Thus:
 - expressive universe = **reachable morphisms**.
 
 This is exactly the free‑category generative structure.
+
+## **Appendix: Robustness, Sensitivity, and Approximate Closure**  
+
+The minimal generative basis framework is robust under small perturbations of invariants, operations, and closure.  
+Exact systems (RDG, MFE) maintain stable mode counts, while empirical systems may require approximate closure and sensitivity analysis*
+
+### **Motivation**
+
+Approximate invariants : closure sensitivity
+
+The minimal generative basis framework assumes:
+
+- a fixed invariant set $\mathcal I$,  
+- a fixed admissible primitive universe $U_{\mathcal I}$,  
+- a fixed operation algebra $\mathcal O$,  
+- and an exact closure operator $G_{\mathcal O}$.
+
+In practice, especially in empirical or dynamical systems, invariants may be:
+
+- noisy,  
+- approximate,  
+- estimated from data,  
+- or subject to perturbation.
+
+This appendix formalizes how the mode count $k^{\*}$ behaves under such perturbations.
+
+### **Perturbations of Invariants**
+
+Let the invariant set be perturbed:
+
+$$
+\mathcal I \longrightarrow \mathcal I_{\varepsilon}
+$$
+
+where $\varepsilon$ measures deviation from the ideal invariants.
+
+Examples:
+
+- small changes in curvature constraints,  
+- slight modifications of stability conditions,  
+- noise in empirical relational measurements.
+
+The admissible primitive universe becomes:
+
+$$
+U_{\mathcal I_{\varepsilon}}
+=
+\{ p \mid p \text{ satisfies invariants } \mathcal I_{\varepsilon} \}.
+$$
+
+Thus perturbations propagate forward:
+
+$$
+\mathcal I_{\varepsilon}
+\;\longrightarrow\;
+U_{\mathcal I_{\varepsilon}}
+\;\longrightarrow\;
+\mathcal O_{\varepsilon}
+\;\longrightarrow\;
+G_{\mathcal O_{\varepsilon}}
+\;\longrightarrow\;
+k^{\*}_{\varepsilon}.
+$$
+
+### **Stability of Mode Count Under Small Perturbations**
+
+### **Definition (Mode‑Count Stability).** 
+RDG stability : MFE stability
+ 
+The mode count is **stable** under perturbations if:
+
+$$
+k^{\*}_{\varepsilon} = k^{\*}
+\quad\text{for all sufficiently small }\varepsilon.
+$$
+
+This requires:
+
+1. **Invariant stability:**  
+   $\mathcal I_{\varepsilon}$ does not change the number of independent invariant constraints.
+
+2. **Primitive stability:**  
+   $U_{\mathcal I_{\varepsilon}}$ does not gain or lose primitives essential for completeness.
+
+3. **Closure stability:**  
+   $G_{\mathcal O_{\varepsilon}}(B)$ remains topologically or algebraically equivalent to $G_{\mathcal O}(B)$.
+
+In RDG and MFE, these conditions hold because:
+
+- invariants are structural, not empirical,  
+- primitive universes are small and discrete,  
+- closure operators are algebraically rigid.
+
+Thus:
+
+$$
+k^{\*}_{\mathrm{RDG},\varepsilon} = 3,
+\qquad
+k^{\*}_{\mathrm{MFE},\varepsilon} = 4
+$$
+
+for all sufficiently small perturbations.
+
+## **K.4 Approximate Closure**
+This defines an **$\varepsilon$-closure**.
+
+In empirical or numerical systems, exact closure may be replaced by **approximate closure**:
+
+$$
+G_{\mathcal O}^{\varepsilon}(B)
+=
+\{ x \in X_{\text{target}} \mid \mathrm{dist}(x, G_{\mathcal O}(B)) \le \varepsilon \}.
+$$
+
+
+### **Definition (Approximate Completeness).**  
+A basis $B$ is $\varepsilon$-complete if:
+
+$$
+G_{\mathcal O}^{\varepsilon}(B) \supseteq X_{\text{target}}.
+$$
+
+### **Definition (Approximate Minimality).** 
+Epsilon closure
+ 
+A basis $B$ is $\varepsilon$-minimal if:
+
+$$
+\forall B' \subsetneq B,\quad
+G_{\mathcal O}^{\varepsilon}(B') \not\supseteq X_{\text{target}}.
+$$
+
+Approximate closure is relevant when:
+
+- invariants are estimated from data,  
+- closure is computed numerically,  
+- dynamical systems exhibit small stochastic fluctuations.
+
+# **Sensitivity to Changes**
+
+Sensitivity of $k^{\*}$ to Invariant Changes
+
+Small changes in $\mathcal I$ may:
+
+- leave $k^{\*}$ unchanged,  
+- increase $k^{\*}$,  
+- or decrease $k^{\*}$.
+
+### **Conditions for Stability**
+
+$k^{\*}$ is stable if:
+
+- the number of independent invariants does not change,  
+- the admissible primitive universe does not change cardinality,  
+- closure structure remains algebraically equivalent.
+
+### **K.5.2 Conditions for Instability**
+Invariant sensitivity
+
+$k^{\*}$ may change if:
+
+- new invariants introduce new required primitives,  
+- invariants collapse (e.g., curvature constraint removed),  
+- closure operator changes rank or dimension.
+
+Example:
+
+- Removing curvature invariants collapses RDG from 3 modes to 2.  
+- Removing autonomous stabilization collapses MFE from 4 modes to 3.
+
+# **Approximate Bases**
+
+An **approximate minimal basis** is:
+
+$$
+B^{\*}_{\varepsilon}
+=
+\arg\min_{B}
+\{ |B| \mid G_{\mathcal O}^{\varepsilon}(B) \supseteq X_{\text{target}} \}.
+$$
+
+Properties:
+
+- $B^{\*}_{\varepsilon}$ may differ from $B^{\*}$.  
+- As $\varepsilon \to 0$, $B^{\*}_{\varepsilon} \to B^{\*}$.  
+- Approximate bases are useful in noisy or empirical systems.
+
+# **Robustness Summary**
+
+### **Exact systems**
+
+- invariants are structural,  
+- primitive universes are discrete,  
+- closure operators are algebraically rigid,  
+- mode counts are stable.
+
+Thus:
+
+$$
+k^{\*}_{\mathrm{RDG}} = 3,
+\qquad
+k^{\*}_{\mathrm{MFE}} = 4
+$$
+
+are robust under perturbations.
+
+### **Empirical or noisy systems:**
+
+- use $\varepsilon$-closure,  
+- compute approximate bases,  
+- analyze sensitivity of invariants.
+
+Mode count may vary depending on perturbation magnitude.
