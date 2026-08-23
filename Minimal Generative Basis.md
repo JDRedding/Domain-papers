@@ -575,7 +575,7 @@ $$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\
 
 This represents the canonical formulation for self-contained, invariant-closed algebraic structures.
 
-## APPENDIX: Mode Count as a Derived Quantity
+## APPENDIX: RDG Mode Count as a Derived Quantity
 
 The relational dynamic geometry (RDG) mode count is uniquely fixed by:
 
