@@ -1816,7 +1816,7 @@ $$
 
 This matches the element‑wise saturation condition (Appendix D).
 
-## **Alternative Notions of Generation (for completeness)**
+### **Alternative Notions of Generation (for completeness)**
 
 Although the free‑category notion is chosen for your system, other notions exist.  
 We list them for clarity and future extension.
