@@ -575,7 +575,7 @@ Kronecker’s congruence says:
 - The only surviving isogeny relations are **Frobenius and its transpose**.
 - The modular curve collapses to **two phase‑aligned branches**.
 
-In MFE language:
+In the momentum flux engine language:
 
 - $x \mapsto x^p$ is a **phase‑raising operator**.
 - $y \mapsto y^p$ is the **dual phase operator**.
