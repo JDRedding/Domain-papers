@@ -150,6 +150,7 @@ This is one of the earliest and most elegant examples of a **reciprocity law**, 
 
 ### 📌 Kronecker’s role in algebraic number theory
 **Kronecker’s role in algebraic number theory** is best understood as a *constructive alternative* to the emerging abstract, ideal‑based approach developed by Dedekind. His work sits at the birth of modern algebraic number theory, but he insisted that everything must be grounded in **explicit integer computations**, not infinite ideal classes or abstract structures. **Kronecker tried to build algebraic number theory entirely from finite, concrete arithmetic, rejecting Dedekind’s abstract ideals and Cantor’s infinite sets.** 
+
 ---
 
 #### 🧩 What Kronecker actually contributed 
