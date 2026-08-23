@@ -1292,15 +1292,14 @@ This includes:
 
 #### **Theorem (RDG Mode Count).**  
 
-Let $(U_{\mathcal I_{\mathrm{RDG}}}, \mathcal O_{\mathrm{RDG}}, G_{\mathcal O_{\mathrm{RDG}}})$ be the RDG generative system defined above. Then:
+Let 
+
+$(U_{\mathcal I_{\mathrm{RDG}}}, \mathcal O_{\mathrm{RDG}}, G_{\mathcal O_{\mathrm{RDG}}})$ 
+
+be the RDG generative system defined above. Then:
 
 $$
-k^{\*}_{\mathrm{RDG}}
-=
-\min_{B \subseteq U_{\mathcal I_{\mathrm{RDG}}}}
-\{ |B| \mid G_{\mathcal O_{\mathrm{RDG}}}(B) \supseteq X_{\mathrm{RDG}} \}
-=
-3.
+k^{\*}_{\mathrm{RDG}}=\min_{B \subseteq U_{\mathcal I_{\mathrm{RDG}}}}\{ |B| \mid G_{\mathcal O_{\mathrm{RDG}}}(B) \supseteq X_{\mathrm{RDG}} \}=3.
 $$
 
 #### **Proof Structure**
