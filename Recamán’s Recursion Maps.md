@@ -13,7 +13,7 @@ Recursion becomes a model of reality when three conditions hold:
 
 *Recamán’s sequence satisfies all three*: It starts at 0, then repeatedly applies a rule (“subtract n if possible, otherwise add n”), producing a path whose long‑range behavior is unpredictable and still mathematically unresolved. 
 
-Let’s treat Recamán as a tiny 1D Relational Dynamic Geometry–Momentum Flux Engine–Q system:  
+Treat Recamán as a tiny 1D Relational Dynamic Geometry–Momentum Flux Engine–Q system:  
 
 - **Relational Dynamic Geometry:** the geometry of “where” the sequence lives.  
 - **Momentum Flux Engine:** the dynamical rule that moves the state.  
