@@ -1,5 +1,21 @@
-## 🎯 **Minimal Generative Basis**
-Universal Mathematical Form
+# 🎯 **Minimal Generative Basis**
+
+## 🔷 Universal Generative Basis Principle 
+
+Want a single expression that answers:
+
+- **Why this basis?**  
+- **Why not smaller?**  
+- **Why not larger?**  
+- **Why does closure force the number of modes?**
+
+The final universal form is:
+
+> **A generative system selects the smallest primitive operator set whose closure reproduces all required invariants, and for which no smaller set suffices and no larger set expands generative power.**
+
+This merges set‑theoretic minimality, logical quantification, and the complexity closure principle.
+
+## Universal Mathematical Form
 
 Let:
 
@@ -9,7 +25,13 @@ Let:
 - $G(B) = \langle B \rangle_O$ = the closure of $B$ under $O$  
 - $X_{\text{target}}$ = the target expressive universe  
 
-Then the optimal generative basis $B^\*$ satisfies **three universal constraints**:
+Then the optimal generative basis $B^\*$ satisfies **three universal constraints**.
+
+Additional factor to consider are:
+
+- $B \subseteq U$ = candidate generative basis  
+- $\mathcal{I}$ = (target) required invariant set (geometry, interaction, evaluation, dynamics, stability, etc.)  
+- $K(B)$ = Kolmogorov complexity of the basis  
 
 ---
 
@@ -21,7 +43,6 @@ G(B^\*) = X_{\text{target}}
 $$
 
 The basis must generate *everything* required.
-
 
 ---
 
@@ -36,7 +57,6 @@ No proper subset of $B^\*$ is sufficient.
 
 This encodes **minimal generative sufficiency** — the smallest set that still closes.
 
-
 ---
 
 ### **3. Non‑redundancy / Parsimony**
@@ -49,6 +69,38 @@ $$
 Adding more primitives does not expand generative power.
 
 ---
+
+# Kolmogorov‑Optimality Condition
+
+Among all bases satisfying completeness, choose the one with minimal description length:
+
+$$
+B^\* = \arg\min_{B}
+\left\{
+K(B) \;\middle|\; G(B) \supseteq \mathcal{I}
+\right\}
+$$
+
+This is the **Kolmogorov complexity** version of the principle.
+
+
+# 🔥 6. Universal Conditions
+This is the **universal skeleton**.
+
+$$
+B^\* \subseteq U
+$$
+
+$$
+\text{s.t.}\quad
+\begin{aligned}
+&\text{(Completeness)} && G(B^\*) \supseteq \mathcal{I} \\
+&\text{(Minimality)} && \forall B' \subsetneq B^\*,\; G(B') \not\supseteq \mathcal{I} \\
+&\text{(Non\text{-}redundancy)} && \forall B'' \supsetneq B^\*,\; G(B'') = G(B^\*) \\
+&\text{(Kolmogorov\text{-}optimality)} && B^\* = \arg\min_{B}\{K(B)\;|\;G(B)\supseteq\mathcal{I}\}
+\end{aligned}
+$$
+
 
 ## 🔷 **Final Universal Expression**
 This is the **canonical definition** of a minimal generative basis.
