@@ -283,12 +283,11 @@ So the CA rule is:
 - a Q‑filter that enforces “subtract if possible and new, else add”.
 
 ## Appendix: Energy and survival scores on sites
+If want, can define a specific $\Delta E_{\text{step}}(n)$ and $\Delta S_{\text{visit}}(n)$ that make the walker preferentially “settle” into low‑energy, high‑survival basins along the Recamán path.
 
 - **Energy field:** models resource cost of long jumps or revisits.  
 - **Survival score / SID:** models stability or desirability of sites (manifold‑like structure emerging from repeated visits).  
 - **RDG–MFE–Q view:** Recamán becomes a special case of a self‑avoiding, energy‑agnostic walker; turning on $E$ and $S$ lets study more realistic constrained trajectories on the same 1D lattice.
-
-If want, can define a specific $\Delta E_{\text{step}}(n)$ and $\Delta S_{\text{visit}}(n)$ that make the walker preferentially “settle” into low‑energy, high‑survival basins along the Recamán path.
 
 ---
 
