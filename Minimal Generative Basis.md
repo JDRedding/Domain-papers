@@ -214,8 +214,8 @@ This is the mathematical skeleton behind:
 - 4 Dirac matrices  
 - 3 SU(2) generators  
 - 4 spacetime coordinates  
-- 3 relational dynamic geometry modes  
-- 4 momentum flux engine modes  
+- 3 relational dynamic geometry (RDG) modes  
+- 4 momentum flux engine (MFE) modes  
 
 All of these are **minimal generative bases** under closure. This is why RDG (=3) and MFE (=4) are not arbitrary — they satisfy the universal form above.
 
@@ -519,7 +519,7 @@ This represents the canonical formulation for self-contained, invariant-closed a
 
 ## APPENDIX: Mode Count as a Derived Quantity
 
-The relational dynamic geometry mode count is uniquely fixed by:
+The relational dynamic geometry (RDG) mode count is uniquely fixed by:
 
 * Invariant requirements $\mathcal{I}$
 * Admissible primitive universe $U_{\mathcal{I}}$
