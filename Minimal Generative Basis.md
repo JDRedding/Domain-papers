@@ -1244,7 +1244,7 @@ These are the canonical RDG triad primitives.
 Any primitive outside this set either violates invariants or is redundant under closure (Appendix D).
 
 ### **Operation Algebra**
-$\mathcal O_{\mathrm{RDG}}$
+$\mathcal O_{\mathrm{RDG}}$ - RDG coupling
 
 The admissible operation algebra consists of:
 
@@ -1265,10 +1265,6 @@ These operations satisfy the closure axioms (Appendix A):
 - **Idempotent**
 
 Thus $G_{\mathcal O_{\mathrm{RDG}}}$ is a proper closure operator.
-
-Guided Links:  
-RDG coupling
-
 
 ### **The RDG Target Universe
 $X_{\mathrm{RDG}}$
@@ -1307,6 +1303,7 @@ $$
 The proof has two parts: **existence** and **minimality**.
 
 ##### **Existence of a Complete Triad**
+Triad completeness
 
 We show that a 3‑element set exists whose closure spans the entire RDG expressive universe.
 
@@ -1331,9 +1328,6 @@ $$
 
 This establishes **existence** of a complete 3‑mode basis.
 
-Guided Links:  
-triad completeness
-
 ##### **Failure of All Sub‑Triadic Sets**
 
 We show that no 1‑mode or 2‑mode set can generate the RDG universe.
@@ -1353,6 +1347,8 @@ G_{\mathcal O_{\mathrm{RDG}}}(B) \not\supseteq X_{\mathrm{RDG}}.
 $$
 
 ###### **Case 2: $|B| = 2$**  
+Dyadic failure
+
 Any dyadic system collapses to:
 
 - binary opposition,  
@@ -1373,9 +1369,6 @@ $$
 $$
 
 This establishes **minimality**.
-
-Guided Links:  
-dyadic failure
 
 #### **Non‑Redundancy and Saturation**
 
