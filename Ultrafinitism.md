@@ -1,4 +1,4 @@
-**Ultrafinitism** (also called ultraintuitionism, strict finitism, or actualism in related forms) is a radical philosophy of mathematics that rejects not only completed (actual) infinite sets but often even very large finite numbers that cannot be feasibly constructed, computed, or physically realized.
+**Ultrafinitism** (also called ultraintuitionism, strict finitism, or actualism in related forms) is a radical philosophy of mathematics that rejects not only, what infintists call, "completed" (or "actual") infinite sets but often even very large finite numbers that cannot be feasibly constructed, computed, or physically realized.
 
 It goes beyond ordinary finitism (which typically accepts potential infinity or all finite numbers while denying actual infinity) by questioning the totality of operations such as unrestricted exponentiation and the existence of numbers beyond practical or physical reach.
 
