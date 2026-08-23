@@ -1349,7 +1349,7 @@ $$
 G_{\mathcal O_{\mathrm{RDG}}}(B) \not\supseteq X_{\mathrm{RDG}}.
 $$
 
-###### **Case 2: $|B| = 2$** 
+##### **Case 2: $|B| = 2$** 
 
 Dyadic failure
 
