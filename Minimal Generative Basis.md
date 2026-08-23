@@ -97,7 +97,7 @@ $$
 \forall B'' \supsetneq B^\*,\quad G(B'') = G(B^\*)
 $$
 
-Adding more primitives does not expand generative power.
+Adding more primitives does not expand generative power. See the *Minimal Generative Bases Under Invariant‑Restricted Closure* appendix for more details.
 
 ---
 
