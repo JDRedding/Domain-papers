@@ -281,3 +281,114 @@ So the CA rule is:
 - a memory field marking visited sites  
 - a time‑dependent displacement magnitude $n$  
 - a Q‑filter that enforces “subtract if possible and new, else add”.
+
+### Appendix: Energy and survival scores on sites
+
+- **Energy field:** models resource cost of long jumps or revisits.  
+- **Survival score / SID:** models stability or desirability of sites (manifold‑like structure emerging from repeated visits).  
+- **RDG–MFE–Q view:** Recamán becomes a special case of a self‑avoiding, energy‑agnostic walker; turning on $E$ and $S$ lets study more realistic constrained trajectories on the same 1D lattice.
+
+If want, can define a specific $\Delta E_{\text{step}}(n)$ and $\Delta S_{\text{visit}}(n)$ that make the walker preferentially “settle” into low‑energy, high‑survival basins along the Recamán path.
+
+---
+
+#### 1. Add energy and survival fields
+
+Extend the per‑site fields:
+
+- **Visited:**
+  
+$$
+v_n(i) \in \{0,1\}
+$$
+
+- **Walker:**  
+
+$$
+w_n(i) \in \{0,1\}
+$$
+
+- **Energy:**  
+
+$$
+E_n(i) \in \mathbb{R}_{\ge 0}
+$$
+
+- **Survival score / SID:**  
+
+$$
+S_n(i) \in \mathbb{R}
+$$
+
+Configuration:
+
+$$
+X_n = \big(v_n(i), w_n(i), E_n(i), S_n(i)\big)_{i \in \mathbb{Z}}
+$$
+
+---
+
+#### 2. Energy and survival update rules
+
+Let the walker move from $a_{n-1}$ to $a_n$.
+
+- **Energy consumption / accumulation:**
+
+$$
+E_n(i) =
+\begin{cases}
+E_{n-1}(i) - \Delta E_{\text{step}}(n) & \text{if } i = a_n \\
+E_{n-1}(i) & \text{otherwise}
+\end{cases}
+$$
+
+- **Survival score update:**
+
+$$
+S_n(i) =
+\begin{cases}
+S_{n-1}(i) + \Delta S_{\text{visit}}(n) & \text{if } i = a_n \\
+S_{n-1}(i) & \text{otherwise}
+\end{cases}
+$$
+
+Can choose $\Delta E_{\text{step}}(n)$ and $\Delta S_{\text{visit}}(n)$ as functions of $n$, distance moved, or local neighborhood.
+
+---
+
+#### 3. Q as an energy/survival gate
+
+Now Q doesn’t just check “unvisited and nonnegative”—it can enforce energetic and SID constraints:
+
+$$
+Q^-_n = \big[
+c^-_n \ge 0
+\;\wedge\;
+v_{n-1}(c^-_n) = 0
+\;\wedge\;
+E_{n-1}(a_{n-1}) \ge E_{\min}
+\;\wedge\;
+S_{n-1}(c^-_n) \ge S_{\min}
+\big]
+$$
+
+Fallback:
+
+$$
+Q^+_n = \neg Q^-_n
+$$
+
+So the subtract branch is admissible only if:
+
+- the target site is nonnegative,  
+- unvisited,  
+- the walker has enough energy,  
+- the target site’s survival score is acceptable.
+
+Recamán as originally defined is the **degenerate case**:
+
+- $E_n(i) \equiv \text{const}$ (no energy constraint),  
+- $S_n(i) \equiv \text{const}$ (no survival constraint),  
+- Q reduces to “nonnegative and unvisited”.
+
+
