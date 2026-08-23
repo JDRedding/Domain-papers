@@ -354,7 +354,7 @@ The minimal generative basis $B^*$ is therefore defined relative to a mathematic
 > “The fundamental mode-count equation is defined as:  
 > $k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\text{target}} \}$.”   
 
-#### Minimal cardinality vs. infimum
+### Minimal cardinality vs. infimum
 
 The mode-count equation introduces
 
@@ -368,11 +368,13 @@ In general, for infinite target spaces or non‑finitary closure operators, a **
 
 We assume one of the following:
 
-- **Finitary/algebraic closure:**  
-  $G_{\mathcal O}$ is **algebraic** (finitary) in the sense that every element of $G_{\mathcal O}(B)$ depends on a finite subset of $B$. This holds, for example, in linear algebra and algebraic matroids.
+- **Finitary/algebraic closure:**
 
-- **Finite or compact target:**  
-  $X_{\text{target}}$ is finite, or the generative structure admits a finite basis by known theorems (e.g., finite-dimensional vector spaces, finitely generated groups).
+$G_{\mathcal O}$ is **algebraic** (finitary) in the sense that every element of $G_{\mathcal O}(B)$ depends on a finite subset of $B$. This holds, for example, in linear algebra and algebraic matroids.
+
+- **Finite or compact target:**
+
+$X_{\text{target}}$ is finite, or the generative structure admits a finite basis by known theorems (e.g., finite-dimensional vector spaces, finitely generated groups).
 
 Under these conditions, there exists at least one subset $B^* \subseteq U_{\mathcal I}$ such that:
 
@@ -396,7 +398,7 @@ allowing $k^{*}$ to be an infinite cardinal. In such cases, existence of bases m
 
 > “These four conditions jointly characterize the unique minimal generative basis compatible with the invariant structure of the system.”   
 
-#### Mode count vs. basis identity
+### Mode count vs. basis identity
 
 The framework distinguishes between:
 
