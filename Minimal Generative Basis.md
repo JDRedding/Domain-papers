@@ -1486,7 +1486,7 @@ Where the canonical MFE primitives are:
 These correspond to the PED triad plus the required orientation mode.
 
 
-### **MFE Operation Algebra **
+### **MFE Operation Algebra**
 
 MFE coupling : $\mathcal O_{\mathrm{MFE}}$
 
