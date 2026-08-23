@@ -234,30 +234,79 @@ This appendix formalizes the universal mathematical principle:
 
 > **A generative system selects the smallest admissible operator set whose closure reproduces all required invariants, and for which no smaller set suffices and no larger admissible set expands generative power.**
 
-### **A.1 Admissible Primitive Universe**
+Here is a clean, self‑contained **Appendix A** with only **Sections A.1 and A.2**, exactly matching your refined formalism. It is written in a polished mathematical style suitable for inclusion in your book.
 
-Let $\mathcal I$ denote the invariant requirements of a generative system (e.g., representability, interaction, evaluation, stability, or other structural constraints).  
-The admissible primitive universe is defined as:
+---
+
+# **APPENDIX A — Minimal Generative Bases Under Invariant‑Restricted Closure**
+A generative basis $B^{*}$ is the smallest admissible operator set whose closure reproduces all required invariants, and for which:
+
+- no smaller admissible set suffices, and  
+- no larger admissible set expands generative power.
+
+This appendix formalizes the universal mathematical principle governing minimal generative bases in any invariant‑restricted system.
+
+## **A.1 Admissible Primitive Universe**
+
+Let $\mathcal I$ denote the invariant requirements of a generative system. These invariants determine which primitives are *admissible* for constructing the target expressive universe. The admissible primitive universe is defined as:
 
 $$
 U_{\mathcal I} = \{\, p \mid p \text{ is admissible under } \mathcal I \,\}.
 $$
 
 Only primitives in $U_{\mathcal I}$ are eligible to participate in generative closure.  
-Primitives outside $U_{\mathcal I}$ are **extraneous extensions** of the universe and do not contribute to the generative basis for the target structure.
-
-### **A.2 Generative Closure**
+Primitives outside $U_{\mathcal I}$ are **extraneous extensions** of the universe and do not contribute to the minimal generative basis for the target structure.
 
 Let:
 
 - $B \subseteq U_{\mathcal I}$ be a candidate generative basis.
 - $O$ be the admissible operations (composition, concatenation, relational evolution, dynamical update, etc.).
+- $G(B) = \langle B \rangle_{O}$ be the closure of $B$ under $O$.
+- $X_{\text{target}}$ be the target expressive universe.
 
-The expressive closure of $B$ under $O$ is:
+## **A.2 Minimality and Non‑Redundancy Under Closure**
+
+A generative basis $B^{*}$ is optimal under invariant‑restricted closure if and only if it satisfies the following conditions:
+
+### **(1) Completeness**
 
 $$
-G(B) = \langle B \rangle_{O}.
+G(B^{*}) \supseteq X_{\text{target}}.
 $$
 
-Let $X_{\text{target}}$ denote the target expressive universe (the set of all structures the system must generate).
+The closure of $B^{*}$ must generate the entire target expressive universe.
 
+### **(2) Minimality**
+
+$$
+\forall B' \subsetneq B^{*},\quad G(B') \not\supseteq X_{\text{target}}.
+$$
+
+No proper subset of $B^{*}$ is sufficient.  
+Every primitive in $B^{*}$ is necessary for completeness.
+
+
+### **(3) Non‑Redundancy (Invariant‑Restricted)**
+
+$$
+\forall B'' \supsetneq B^{*},\quad
+B'' \subseteq U_{\mathcal I}
+\Rightarrow
+G(B'') = G(B^{*}).
+$$
+
+Adding any admissible primitive does **not** expand generative power.  
+Every admissible primitive outside $B^{*}$ is redundant.
+
+
+### **(4) Kolmogorov‑Optimality**
+
+$$
+B^{*} = 
+\arg\min_{B \subseteq U_{\mathcal I}}
+\{
+K(B) \;|\; G(B) \supseteq X_{\text{target}}
+\}.
+$$
+
+Among all complete bases, $B^{*}$ minimizes description length.
