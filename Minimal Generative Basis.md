@@ -1842,7 +1842,7 @@ A set of objects generates $C$ if every object is a colimit of diagrams built fr
 
 These notions are more abstract and not needed for RDG/MFE, but they are included for completeness.
 
-# **Free‑Category Notions**
+### **Free‑Category Notions**
 
 RDG and MFE primitives behave like:
 
