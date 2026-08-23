@@ -55,14 +55,14 @@ Additional factor to consider are:
 ## The Three Structural Pillars
 
 ```
-+-------------------------------------------------------------+
++-------------------------------------------------------------
 | 1. Completeness         G(B*) = X_target                    
 |    - Spans the invariant space completely.                  
 | 2. Minimality           ∀ B' ⊊ B*, G(B') ≠ X_target        
 |    - Linear independence / irreducible generators.          
-| 3. Saturation (Parsimony) ∀ B'' ⊋ B*, G(B'') = G(B*)        
+| 3.  Non‑Redundancy (Invariant‑Restricted) ∀ B'' ⊋ B*, G(B'') = G(B*)        
 |    - Zero redundant degrees of freedom (Rank condition).    
-+-------------------------------------------------------------+
++-------------------------------------------------------------
 
 ```
 
@@ -247,8 +247,7 @@ $$
 U_{\mathcal I} = \{\, p \mid p \text{ is admissible under } \mathcal I \,\}.
 $$
 
-Only primitives in $U_{\mathcal I}$ are eligible to participate in generative closure.  
-Primitives outside $U_{\mathcal I}$ are **extraneous extensions** of the universe and do not contribute to the minimal generative basis for the target structure.
+Only primitives in $U_{\mathcal I}$ are eligible to participate in generative closure. Only primitives admissible under the invariant requirements are considered; extraneous primitives do not participate in the generative vocabulary. Primitives outside $U_{\mathcal I}$ are **extraneous extensions** of the universe and do not contribute to the minimal generative basis for the target structure.
 
 Let:
 
