@@ -695,7 +695,7 @@ Together, these conditions yield:
 
 $$k^{*}_{\mathrm{MFE}} = 4.$$
 
-#### A.Y.2 Closure Progression and Cardinality Thresholds
+#### Closure Progression and Cardinality Thresholds
 
 $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynamic closure}} \qquad\Longrightarrow\qquad \boxed{k = 4} \qquad\Longrightarrow\qquad \text{complete autonomous closure}$$
 
@@ -707,7 +707,7 @@ $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynam
 
 For any additional admissible candidate primitive $q$ outside the optimal 4-element basis $B^*$:
 
-$$\forall\, q \in U_{\mathcal{I}_{\mathrm{MFE}}} \setminus B^{*},\qquad q \in G_{\mathcal{O}}(B^{*}).$$
+$$\forall\, q \in U_{\mathcal{I}_{\mathrm{MFE}}} \setminus B^{\*},\qquad q \in G_{\mathcal{O}}(B^{\*}).$$
 
 Consequently, adjunction yields no dimensional expansion:
 
