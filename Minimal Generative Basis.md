@@ -711,7 +711,7 @@ $$\forall\, q \in U_{\mathcal{I}_{\mathrm{MFE}}} \setminus B^{\*},\qquad q \in G
 
 Consequently, adjunction yields no dimensional expansion:
 
-$$G_{\mathcal{O}}(B^{*} \cup \{q\}) = G_{\mathcal{O}}(B^{*}).$$
+$$G_{\mathcal{O}}(B^{\*} \cup \{q\}) = G_{\mathcal{O}}(B^{\*}).$$
 
 The 4-mode basis is therefore both strictly minimal and algebraically saturated.
 
