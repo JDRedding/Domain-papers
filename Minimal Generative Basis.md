@@ -228,3 +228,36 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 4. **Coupled Systems ($k=5$ or $2 \times 3$ with interlock)** form the minimal closed manifold where a field generator (Evaluative Field) and a kinetic actor (Geometric Motion) dynamically sustain and self-correct without external forcing.
 
 Whenever $G(B') \not\supseteq \mathcal{I}$, the system fails to self-stabilize or fails to span the necessary relational state space; whenever $B'' \supsetneq B^*$, additional parameters collapse into linear or functional dependence.
+
+## **APPENDIX: Minimal Generative Bases Under Invariant‑Restricted Closure**
+This appendix formalizes the universal mathematical principle:
+
+> **A generative system selects the smallest admissible operator set whose closure reproduces all required invariants, and for which no smaller set suffices and no larger admissible set expands generative power.**
+
+### **A.1 Admissible Primitive Universe**
+
+Let $\mathcal I$ denote the invariant requirements of a generative system (e.g., representability, interaction, evaluation, stability, or other structural constraints).  
+The admissible primitive universe is defined as:
+
+$$
+U_{\mathcal I} = \{\, p \mid p \text{ is admissible under } \mathcal I \,\}.
+$$
+
+Only primitives in $U_{\mathcal I}$ are eligible to participate in generative closure.  
+Primitives outside $U_{\mathcal I}$ are **extraneous extensions** of the universe and do not contribute to the generative basis for the target structure.
+
+### **A.2 Generative Closure**
+
+Let:
+
+- $B \subseteq U_{\mathcal I}$ be a candidate generative basis.
+- $O$ be the admissible operations (composition, concatenation, relational evolution, dynamical update, etc.).
+
+The expressive closure of $B$ under $O$ is:
+
+$$
+G(B) = \langle B \rangle_{O}.
+$$
+
+Let $X_{\text{target}}$ denote the target expressive universe (the set of all structures the system must generate).
+
