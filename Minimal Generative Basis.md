@@ -319,7 +319,7 @@ $$
 - If the invariants define the expressive universe:
   
 $$
-X_{\text{target}} = \operatorname{Gen}(\mathcal I)
+X_{\text{target}} = {Gen}(\mathcal I)
 \quad\text{and}\quad
 G(B^{*}) \supseteq \mathcal I.
 $$
@@ -385,7 +385,7 @@ This is appropriate when the target universe is explicitly specified.
 If the invariants *define* the expressive universe, then:
 
 $$
-X_{\text{target}} = \operatorname{Gen}(\mathcal I),
+X_{\text{target}} = {Gen}(\mathcal I),
 $$
 
 and completeness becomes:
@@ -411,7 +411,7 @@ $$
 This occurs when:
 
 $$
-X_{\text{target}} = \operatorname{Gen}(\mathcal I),
+X_{\text{target}} = {Gen}(\mathcal I),
 $$
 
 i.e., the invariants generate the full expressive universe.
