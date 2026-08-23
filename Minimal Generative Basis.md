@@ -1,4 +1,9 @@
 # 🎯 **Minimal Generative Basis**
+This note presents a universal mathematical framework for determining the **minimal generative basis** — the smallest set of primitive elements whose combined operations can generate all required structures in a system. A minimal generative basis $B^*$ is defined by three universal constraints. The fundamental equation is:
+
+$$k^* = \min_{B \subseteq U_{\mathcal{I}}} \{ |B| \;|\; G_{\mathcal{O}}(B) \supseteq X_{\text{target}} \}$$
+
+This single formula explains why certain structures appear across disparate domains — their dimensionality is forced by invariant closure requirements, not by choice.
 
 ## 🔷 Universal Generative Basis Principle 
 
