@@ -1081,7 +1081,6 @@ $$
 
 the equation guarantees two structural properties:
 
-
 * **Completeness:**
 
 $$G_{\mathcal{O}}(B^{\*}) \supseteq X_{\text{target}}$$
@@ -1176,6 +1175,7 @@ $$G_{\mathcal{O}}(B^* \cup \{p\}) = G_{\mathcal{O}}(B^*)$$
 This formalizes that $B^*$ is both a **minimal generator** and a **saturated basis** under invariant-restricted closure.
 
 ## **Appendix: RDG Formal Theorem**
+
 : $k^{\*}_{\mathrm{RDG}} = 3$ 
 
 This appendix formalizes the statement:
@@ -1202,6 +1202,7 @@ The RDG triad $\{M, F, R\}$ is therefore:
 This establishes the RDG mode count as a **derived theorem**, not an empirical assumption.
 
 ### **RDG Invariant Set**
+
 $\mathcal I_{\mathrm{RDG}}$ : Relational curvature - memory mediation
 
 RDG is defined by a specific invariant structure capturing relational motion, curvature, and memory‑mediated attractor behavior. The invariant set is:
@@ -1223,6 +1224,7 @@ These invariants are **externally specified** (Appendix E) and do not depend on 
 
 
 ### **Admissible Primitive Universe**
+
 $U_{\mathcal I_{\mathrm{RDG}}}\ - RDG primitives
 
 From the invariants, the admissible primitive universe is:
@@ -1244,6 +1246,7 @@ These are the canonical RDG triad primitives.
 Any primitive outside this set either violates invariants or is redundant under closure (Appendix D).
 
 ### **Operation Algebra**
+
 $\mathcal O_{\mathrm{RDG}}$ - RDG coupling
 
 The admissible operation algebra consists of:
@@ -1267,6 +1270,7 @@ These operations satisfy the closure axioms (Appendix A):
 Thus $G_{\mathcal O_{\mathrm{RDG}}}$ is a proper closure operator.
 
 ### **The RDG Target Universe
+
 $X_{\mathrm{RDG}}$
 
 The expressive universe is:
@@ -1287,6 +1291,7 @@ This includes:
 ### **Theorem Statement**
 
 #### **Theorem (RDG Mode Count).**  
+
 Let $(U_{\mathcal I_{\mathrm{RDG}}}, \mathcal O_{\mathrm{RDG}}, G_{\mathcal O_{\mathrm{RDG}}})$ be the RDG generative system defined above. Then:
 
 $$
@@ -1333,6 +1338,7 @@ This establishes **existence** of a complete 3‑mode basis.
 We show that no 1‑mode or 2‑mode set can generate the RDG universe.
 
 ##### **Case 1: $|B| = 1$**  
+
 Any monadic system collapses to:
 
 - self‑identity only,  
@@ -1346,7 +1352,8 @@ $$
 G_{\mathcal O_{\mathrm{RDG}}}(B) \not\supseteq X_{\mathrm{RDG}}.
 $$
 
-###### **Case 2: $|B| = 2$**  
+###### **Case 2: $|B| = 2$** 
+
 Dyadic failure
 
 Any dyadic system collapses to:
