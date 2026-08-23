@@ -513,11 +513,15 @@ as $s\to 1$, where
 (There is also a second Kronecker limit formula involving more general Eisenstein series $E_{u,v}$.)
 
 ### 6. Kronecker’s Congruence (Modular Polynomials)
+
 For a prime $p$ and the modular polynomial $\Phi_p(x,y)$,
 
 $$
 \Phi_p(x,y) \equiv (x - y^p)(x^p - y) \pmod{p}.
 $$
+
+**Explanation:**  
+The modular polynomial $\Phi_p(x,y)$ encodes the relation between $j$-invariants $x$ and $y$ of elliptic curves that are linked by a cyclic isogeny of degree $p$. Kronecker’s congruence shows that when coefficients are reduced modulo $p$, this complicated polynomial factors into the simple product $(x - y^p)(x^p - y)$. This reflects the dominance of the Frobenius map $z \mapsto z^p$ over finite fields: modulo $p$, the only surviving isogeny relations are those coming from Frobenius and its transpose. The identity is a concrete example of Kronecker’s constructive, congruence‑based approach to arithmetic geometry, and it plays a role in understanding the reduction of modular curves and the behavior of elliptic curves over $\mathbb{F}_p$.
 
 ### Additional Notes on Kronecker’s Constructive Approach
 Kronecker’s theory of **divisors / Modulsysteme** (his alternative to Dedekind ideals) works with systems of indeterminate forms and congruence arithmetic modulo polynomial relations rather than infinite sets. A typical modern transcription involves greatest-common-divisor content of norms of linear forms:
