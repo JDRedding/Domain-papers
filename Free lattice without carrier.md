@@ -373,6 +373,8 @@ t ::= g | t₁ ∧ t₂ | t₁ ∨ t₂    (g ∈ G)
 | **Congruence** | Quotient $T(G)/{\equiv_E}$ well-defines lattice operations on equivalence classes |
 
 ## External references and further reading
+* Free Lattices, Philip M. Whitman, Annals of Mathematics, Vol. 42, No. 1 (Jan., 1941), pp. 325-330 (6 pages)
+* Free Lattices II, Philip M. Whitman, Annals of Mathematics, Vol. 43, No. 1 (Jan., 1942), pp. 104-115 (12 pages)
 * Dilworth, Lattices with Unique Complements, and foundational results on free lattices.
 * Birkhoff, Lattice Theory (Third Edition), particularly chapter on free lattices and term algebras.
 * Universal Algebra texts: explore carrier-free constructions via initial objects.
