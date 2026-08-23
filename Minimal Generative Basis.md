@@ -2031,12 +2031,7 @@ Example:
 
 An **approximate minimal basis** is:
 
-$$
-B^{\*}_{\varepsilon}
-=
-\arg\min_{B}
-\{ |B| \mid G_{\mathcal O}^{\varepsilon}(B) \supseteq X_{\text{target}} \}.
-$$
+$$B^{\*}_{\varepsilon}=\arg\min_{B}\{ |B| \mid G_{\mathcal O}^{\varepsilon}(B) \supseteq X_{\text{target}}$$
 
 Properties:
 
