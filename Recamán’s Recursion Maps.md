@@ -213,7 +213,7 @@ p_n(i) =
 \end{cases}
 $$
 
-Conceptually: MFE says “from the current walker site, propose a displacement of $-n$ first; if rejected, use $+n$.”
+Conceptually: MFE says “from the current walker site, propose a displacement of $-n$ first; if rejected, use $+n$ .”
 
 ### 3. Q: admissibility and branch selection
 
