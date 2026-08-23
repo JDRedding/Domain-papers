@@ -1377,7 +1377,7 @@ To establish that the minimal autonomous $\mathrm{MFE}$ architecture requires ex
 
 **1. Existence of a Complete 4-Mode Basis**
 
-$$\exists\, B^* \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B^*\vert{} = 4 \quad\text{s.t.}\quad G_{\mathcal{O}}(B^*) \supseteq X_{\mathrm{MFE}}.$$
+$$\exists\, B^\* \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B^*\vert{} = 4 \quad\text{s.t.}\quad G_{\mathcal{O}}(B^*) \supseteq X_{\mathrm{MFE}}.$$
 
 *There exists a 4-element basis whose closure spans all necessary dynamic degrees of freedom.*
 
