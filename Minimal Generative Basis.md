@@ -275,7 +275,8 @@ $$
 \forall B' \subsetneq B^{*},\quad G(B') \not\supseteq X_{\text{target}}.
 $$
 
-No proper subset of $B^{*}$ is sufficient.  
+No proper subset of $B^{*}$ is sufficient.
+
 Every primitive in $B^{*}$ is necessary for completeness.
 
 ### **(3) Non‑Redundancy (Invariant‑Restricted)**
