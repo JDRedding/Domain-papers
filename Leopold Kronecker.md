@@ -484,7 +484,7 @@ $$
 
 **Selected properties**  
 - $(A \otimes B)(C \otimes D) = AC \otimes BD$ (when dimensions allow).  
-- $\operatorname{tr}(A \otimes B) = \operatorname{tr}(A)\operatorname{tr}(B)$.  
+- ${tr}(A \otimes B) = {tr}(A){tr}(B)$.  
 - $\det(A \otimes B) = \det(A)^p \det(B)^m$ (for square matrices of sizes $m$ and $p$).
 
 **Notation**  
@@ -497,7 +497,7 @@ $$
 E(\tau,s) = \sum_{(m,n)\neq(0,0)} \frac{y^s}{|m\tau + n|^{2s}}
 $$
 
-($\tau = x + iy$, $y > 0$, $\operatorname{Re}(s) > 1$, continued meromorphically),
+($\tau = x + iy$, $y > 0$, ${Re}(s) > 1$, continued meromorphically),
 
 $$
 E(\tau,s) = \frac{\pi}{s-1} + 2\pi\bigl(\gamma - \log 2 - \log\bigl(\sqrt{y}\,|\eta(\tau)|^2\bigr)\bigr) + O(s-1)
@@ -520,7 +520,7 @@ $$
 Kronecker’s theory of **divisors / Modulsysteme** (his alternative to Dedekind ideals) works with systems of indeterminate forms and congruence arithmetic modulo polynomial relations rather than infinite sets. A typical modern transcription involves greatest-common-divisor content of norms of linear forms:
 
 $$
-P\cdot\operatorname{Fm}(\phi x + \phi'x'+\dots) = \operatorname{Nm}(\phi x + \phi'x'+\dots),
+P\cdot{Fm}(\phi x + \phi'x'+\dots) = {Nm}(\phi x + \phi'x'+\dots),
 $$
 
 where $P$ is the content (gcd of coefficients) of the norm. Explicit algorithmic factorization and elimination over these systems prefigure Gröbner-basis techniques, but the original statements are expressed in the language of “forms” and “equivalence of divisors” rather than a single closed equation.
