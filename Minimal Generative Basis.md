@@ -377,7 +377,7 @@ We assume one of the following:
 Under these conditions, there exists at least one subset $B^* \subseteq U_{\mathcal I}$ such that:
 
 $$
-G_{\mathcal O}(B^*) \supseteq X_{\text{target}}, \quad |B^*| = k^{*},
+G_{\mathcal O}(B^\*) \supseteq X_{\text{target}}, \quad |B^*| = k^{\*},
 $$
 
 and the minimum is attained.
