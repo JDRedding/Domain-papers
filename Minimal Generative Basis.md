@@ -1816,8 +1816,7 @@ This is exactly the free‑category generative structure.
 
 ## **Appendix: Robustness, Sensitivity, and Approximate Closure**  
 
-The minimal generative basis framework is robust under small perturbations of invariants, operations, and closure.  
-Exact systems (RDG, MFE) maintain stable mode counts, while empirical systems may require approximate closure and sensitivity analysis*
+The minimal generative basis framework is robust under small perturbations of invariants, operations, and closure. Exact systems (RDG, MFE) maintain stable mode counts, while empirical systems may require approximate closure and sensitivity analysis*
 
 ### **Robustness**
 Approximate invariants : closure sensitivity
