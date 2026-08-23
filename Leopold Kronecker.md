@@ -517,7 +517,7 @@ as $s\to 1$, where
 ### 6. Kronecker’s Congruence (Modular Polynomials)
 
 * **Syntactic Indeterminates as Carrier-Free Relations:** Kronecker’s *Modulsysteme* eliminated the need for Dedekind's completed infinite sets by using systems of forms with auxiliary indeterminates $u_1, u_2, \dots$. The polynomials serve as direct relational generators whose compatibility is governed strictly by algebraic elimination and resultant constraints.
-* **The Frobenius Operator as Discrete Phase Action:** Modulo $p$, the degree-$(p+1)$ algebraic curve $\Phi_p(x,y) = 0$ splits cleanly into two crossing geometric paths: $x \equiv y^p$ (forward action) and $y \equiv x^p$ (dual/counter action). This is the exact algebraic manifestation of a bidirectional phase-coupling engine collapsing into stable equilibrium branches.
+* **The Frobenius Operator as Discrete Phase Action:** Modulo $p$, the degree - $(p+1)$ algebraic curve $\Phi_p(x,y) = 0$ splits cleanly into two crossing geometric paths: $x \equiv y^p$ (forward action) and $y \equiv x^p$ (dual/counter action). This is the exact algebraic manifestation of a bidirectional phase-coupling engine collapsing into stable equilibrium branches.
 * **Algorithmic Divisors vs. Ideal Sets:** By replacing abstract set intersections with explicit greatest common divisor operations on polynomial contents ($P \cdot \text{Fm} = \text{Nm}$), Kronecker ensured every step retained concrete algorithmic decidability—a direct historical antecedent to exact computational closure.
 
 ```
