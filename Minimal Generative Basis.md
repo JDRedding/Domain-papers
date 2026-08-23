@@ -1961,16 +1961,12 @@ $$
 
 for all sufficiently small perturbations.
 
-## **K.4 Approximate Closure**
+## **Approximate Closure**
 This defines an **$\varepsilon$-closure**.
 
 In empirical or numerical systems, exact closure may be replaced by **approximate closure**:
 
-$$
-G_{\mathcal O}^{\varepsilon}(B)
-=
-\{ x \in X_{\text{target}} \mid \mathrm{dist}(x, G_{\mathcal O}(B)) \le \varepsilon \}.
-$$
+$$G_{\mathcal O}^{\varepsilon}(B)=\{ x \in X_{\text{target}} \mid \mathrm{dist}(x, G_{\mathcal O}(B)) \le \varepsilon\}$$
 
 ### **Definition (Approximate Completeness).**  
 A basis $B$ is $\varepsilon$-complete if:
@@ -1984,10 +1980,7 @@ Epsilon closure
  
 A basis $B$ is $\varepsilon$-minimal if:
 
-$$
-\forall B' \subsetneq B,\quad
-G_{\mathcal O}^{\varepsilon}(B') \not\supseteq X_{\text{target}}.
-$$
+$$\forall B' \subsetneq B,\quad G_{\mathcal O}^{\varepsilon}(B') \not\supseteq X_{\text{target}}$$
 
 Approximate closure is relevant when:
 
