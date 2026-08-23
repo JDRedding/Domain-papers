@@ -1988,7 +1988,7 @@ Approximate closure is relevant when:
 - closure is computed numerically,  
 - dynamical systems exhibit small stochastic fluctuations.
 
-# **Sensitivity to Changes**
+### **Sensitivity to Changes**
 
 Sensitivity of $k^{\*}$ to Invariant Changes
 
