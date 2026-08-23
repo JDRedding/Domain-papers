@@ -299,8 +299,7 @@ A generative basis $B^{*}$ is the smallest admissible operator set whose closure
 - no larger admissible set expands generative power.
 
 
-
-## **A.1 Admissible Primitive Universe**
+### **A.1 Admissible Primitive Universe**
 
 Let $\mathcal I$ denote the invariant requirements of a generative system. These invariants determine which primitives are *admissible* for constructing the target expressive universe. The admissible primitive universe is defined as:
 
@@ -317,7 +316,7 @@ Let:
 - $G(B) = \langle B \rangle_{O}$ be the closure of $B$ under $O$.
 - $X_{\text{target}}$ be the target expressive universe.
 
-## **A.2 Minimality and Non‑Redundancy Under Closure**
+### **A.2 Minimality and Non‑Redundancy Under Closure**
 
 A generative basis $B^{*}$ is optimal under invariant‑restricted closure if and only if it satisfies the following conditions:
 
@@ -339,7 +338,7 @@ No proper subset of $B^{*}$ is sufficient.
 
 Every primitive in $B^{*}$ is necessary for completeness.
 
-### **(3) Non‑Redundancy (Invariant‑Restricted)**
+#### **(3) Non‑Redundancy (Invariant‑Restricted)**
 
 $$
 \forall B'' \in U_{\mathcal I},\; B'' \supsetneq B^{*}
@@ -353,7 +352,7 @@ $$
 Adding any admissible primitive does **not** expand generative power.  
 Every admissible primitive outside $B^{*}$ is redundant.
 
-### **(4) Kolmogorov‑Optimality**
+#### **(4) Kolmogorov‑Optimality**
 
 $$
 B^{*} = 
@@ -389,7 +388,7 @@ This distinction ensures that the minimal generative basis is defined relative t
 - the **expressive requirements** of the system, and  
 - the **structural invariants** that must be preserved under closure.
 
-## **Target Universe and Invariant Structure**
+### **Target Universe and Invariant Structure**
 
 A generative system typically specifies two distinct mathematical objects:
 
@@ -414,7 +413,7 @@ Their relationship determines how completeness and minimality must be formulated
 
 ---
 
-## **1 Inclusion Relation**
+### **1 Inclusion Relation**
 
 In general, the invariant set is a **subset** of the target universe:
 
@@ -426,11 +425,11 @@ The invariants represent the **structural constraints** that must survive genera
 
 ---
 
-## **2 Two Equivalent Formulations of Completeness**
+### **2 Two Equivalent Formulations of Completeness**
 
 Depending on how the system is defined, completeness can be expressed in either of two ways.
 
-### **Formulation 1 — Target‑Driven Completeness**
+#### **Formulation 1 — Target‑Driven Completeness**
 
 The generative basis must span the entire target universe:
 
@@ -458,7 +457,7 @@ This is appropriate when the invariants are the fundamental specification and th
 
 ---
 
-## **3 When the Two Definitions Coincide**
+### **3 When the Two Definitions Coincide**
 
 If the expressive universe is *entirely determined* by the invariant structure, then:
 
@@ -480,7 +479,7 @@ i.e., the invariants generate the full expressive universe.
 
 ---
 
-## **4 When the Two Definitions Differ**
+### **4 When the Two Definitions Differ**
 
 If the target universe contains structures **beyond** the invariant set, then:
 
