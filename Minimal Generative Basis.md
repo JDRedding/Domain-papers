@@ -15,6 +15,8 @@ The final universal form is:
 
 This merges set‑theoretic minimality, logical quantification, and the complexity closure principle.
 
+## Universal Mathematical Form
+
 ```
 +------------------------------------+
 |     MINIMAL GENERATIVE BASIS       |
@@ -31,8 +33,6 @@ This merges set‑theoretic minimality, logical quantification, and the complexi
 +------------------------------------+
 
 ```
-
-## Universal Mathematical Form
 
 Let:
 
@@ -51,6 +51,20 @@ Additional factor to consider are:
 - $K(B)$ = Kolmogorov complexity of the basis  
 
 ---
+
+## The Three Structural Pillars
+
+```
++-------------------------------------------------------------+
+| 1. Completeness         G(B*) = X_target                    
+|    - Spans the invariant space completely.                  
+| 2. Minimality           ∀ B' ⊊ B*, G(B') ≠ X_target        
+|    - Linear independence / irreducible generators.          
+| 3. Saturation (Parsimony) ∀ B'' ⊋ B*, G(B'') = G(B*)        
+|    - Zero redundant degrees of freedom (Rank condition).    
++-------------------------------------------------------------+
+
+```
 
 ### **1. Completeness**
 This is the universal requirement for a **generative system**.
