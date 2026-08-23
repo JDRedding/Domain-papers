@@ -280,7 +280,7 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 
 Whenever $G(B') \not\supseteq \mathcal{I}$, the system fails to self-stabilize or fails to span the necessary relational state space; whenever $B'' \supsetneq B^*$, additional parameters collapse into linear or functional dependence.
 
-## Point‑Free Generative Bases and Free Lattice Closure**
+## Point‑Free Generative Bases and Free Lattice Closure
 
 The minimal generative basis framework does not require primitives to be elements of an underlying point‑set. Just as free lattices and frames are constructed **purely syntactically** from formal generators and equational closure, a generative system can be defined without assuming a geometric carrier.
 
