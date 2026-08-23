@@ -668,6 +668,7 @@ $$
 \text{Given } (U_{\mathcal I}, \mathcal O, G_{\mathcal O}, X_{\text{target}}),\quad
 \text{find } B^{\*} \subseteq U_{\mathcal I}
 $$
+
 such that:
 
 1. **Completeness:**  
