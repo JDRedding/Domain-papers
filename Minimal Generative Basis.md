@@ -76,9 +76,9 @@ Among all bases satisfying completeness, choose the one with minimal description
 
 $$
 B^\* = \arg\min_{B}
-\left\{
+\{
 K(B) \;\middle|\; G(B) \supseteq \mathcal{I}
-\right\}
+\}
 $$
 
 This is the **Kolmogorov complexity** version of the principle.
