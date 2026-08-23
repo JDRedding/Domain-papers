@@ -1447,7 +1447,7 @@ $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynam
 
 For any additional admissible candidate primitive $q$ outside the optimal 4-element basis $B^*$:
 
-$$\forall\, q \in U_{\mathcal{I}_{\mathrm{MFE}}} \setminus B^{\*},\qquad q \in G_{\mathcal{O}}(B^{\*}).$$
+$$\forall\, q \in U_{\mathcal{I}_{\mathrm{MFE}}} \setminus B^{\*},\qquad q \in G_{\mathcal{O}}(B^{\*})$$
 
 Consequently, adjunction yields no dimensional expansion:
 
