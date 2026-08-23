@@ -580,7 +580,8 @@ If invariants are empirically estimated (e.g., from data), the framework require
 
 This preserves the one‑way dependency even in empirical contexts.
 
-## **Appendix: Kolmogorov‑Optimality: Theoretical Role and Practical Proxies**  
+## **Appendix: Kolmogorov‑Optimality: Role and Proxies**  
+Theoretical Role and Practical Proxies
 
 ### **Theoretical formulation**
 
