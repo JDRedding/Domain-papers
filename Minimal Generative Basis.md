@@ -92,12 +92,12 @@ B^\* \subseteq U
 $$
 
 $$
-\text{s.t.}\quad
+{s.t.}\quad
 \begin{aligned}
-&\text{(Completeness)} && G(B^\*) \supseteq \mathcal{I} \\
-&\text{(Minimality)} && \forall B' \subsetneq B^\*,\; G(B') \not\supseteq \mathcal{I} \\
-&\text{(Non\text{-}redundancy)} && \forall B'' \supsetneq B^\*,\; G(B'') = G(B^\*) \\
-&\text{(Kolmogorov\text{-}optimality)} && B^\* = \arg\min_{B}\{K(B)\;|\;G(B)\supseteq\mathcal{I}\}
+&{(Completeness)} && G(B^\*) \supseteq \mathcal{I} \\
+&{(Minimality)} && \forall B' \subsetneq B^\*,\; G(B') \not\supseteq \mathcal{I} \\
+&{(Non\text{-}redundancy)} && \forall B'' \supsetneq B^\*,\; G(B'') = G(B^\*) \\
+&{(Kolmogorov\text{-}optimality)} && B^\* = \arg\min_{B}\{K(B)\;|\;G(B)\supseteq\mathcal{I}\}
 \end{aligned}
 $$
 
