@@ -813,7 +813,7 @@ Thus:
 > **RDG and MFE do not require solving the general minimal generator problem.  
 > Their mode counts follow from structural theorems, not algorithmic search.**
 
-This is why the framework is computationally feasible in your domain.
+This is why the framework is computationally feasible in domains.
 
 ---
 
