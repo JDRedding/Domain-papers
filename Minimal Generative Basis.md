@@ -553,11 +553,13 @@ This quantity is strictly forced by the closure structure.
 To establish that the RDG system requires exactly three modes, two conditions must hold:
 
 1. **Existence of a Complete Triad:**
-   $$\exists\, B^* \subseteq U_{\mathcal{I}},\quad |B^*| = 3 \quad\text{s.t.}\quad G_{\mathcal{O}}(B^*) \supseteq X_{\mathrm{RDG}}$$
+   $$\exists\, B^\* \subseteq U_{\mathcal{I}},\quad |B^\*| = 3 \quad\text{s.t.}\quad G_{\mathcal{O}}(B^\*) \supseteq X_{\mathrm{RDG}}$$
+
    A 3-element primitive set exists whose closure spans the entire RDG expressive universe.
 
-2. **Failure of Sub-Triadic Sets:**
+3. **Failure of Sub-Triadic Sets:**
    $$\forall\, B \subseteq U_{\mathcal{I}},\quad |B| < 3 \implies G_{\mathcal{O}}(B) \not\supseteq X_{\mathrm{RDG}}$$
+
    No 1-mode or 2-mode primitive set can generate the target universe under closure.
 
 Together, (1) and (2) yield:
