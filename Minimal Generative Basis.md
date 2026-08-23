@@ -490,11 +490,7 @@ is now understood as a **global saturation** statement. The framework refines th
 
 ### **External specification of invariants**
 
-The invariant set  
-$$
-\mathcal I
-$$
-is treated as an **externally specified constraint set**, determined prior to any search over primitive bases. These invariants may arise from:
+The invariant set $I$ is treated as an **externally specified constraint set**, determined prior to any search over primitive bases. These invariants may arise from:
 
 - axiomatic structural requirements,  
 - empirical observations,  
