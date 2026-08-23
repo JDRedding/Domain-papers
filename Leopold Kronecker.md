@@ -187,7 +187,7 @@ But historically, Kronecker’s insistence on constructive arithmetic anticipate
 ---
 
 #### 🔧 The Kronecker–Weber direction  
-Kronecker’s constructive vision appears again in the **Kronecker–Weber theorem**, which states that every finite abelian extension of \( \mathbb{Q} \) lies inside a cyclotomic field. This is one of the earliest classification results in algebraic number theory and a precursor to class field theory.  
+Kronecker’s constructive vision appears again in the **Kronecker–Weber theorem**, which states that every finite abelian extension of $\mathbb{Q}$ lies inside a cyclotomic field. This is one of the earliest classification results in algebraic number theory and a precursor to class field theory.  
 
 ---
 
