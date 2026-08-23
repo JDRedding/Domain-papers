@@ -1199,8 +1199,6 @@ The RDG triad $\{M, F, R\}$ is therefore:
 - **non‑redundant**,  
 - **saturated** under invariant‑restricted closure.
 
-This establishes the RDG mode count as a **derived theorem**, not an empirical assumption.
-
 ### **RDG Invariant Set**
 
 $\mathcal I_{\mathrm{RDG}}$ : Relational curvature - memory mediation
