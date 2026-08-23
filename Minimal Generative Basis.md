@@ -9,7 +9,7 @@ Want a single expression that answers:
 - **Why not larger?**  
 - **Why does closure force the number of modes?**
 
-The final universal form is:
+The universal form is:
 
 > **A generative system selects the smallest primitive operator set whose closure reproduces all required invariants, and for which no smaller set suffices and no larger set expands generative power.**
 
@@ -156,6 +156,32 @@ $$
 These four conditions jointly characterize the unique minimal generative basis compatible with the invariant structure of the system.
 
 ## 🔷 **Final Universal Expression**
+
+                    INVARIANTS
+                        │
+                        ▼
+                  U_I = admissible
+                  primitive universe
+                        │
+                        ▼
+                 admissible algebra O
+                        │
+                        ▼
+              G_O(B) = closure of B
+                        │
+                        ▼
+                 X_target / Gen(I)
+                        │
+                        ▼
+              ┌───────────────────┐
+              │  k* = min |B|     │
+              │  subject to       │
+              │  G_O(B) ⊇ X       │
+              └───────────────────┘
+                        │
+                        ▼
+               DERIVED MODE COUNT
+
 This is the **canonical definition** of a minimal generative basis.
 
 $$
