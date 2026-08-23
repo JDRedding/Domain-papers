@@ -310,6 +310,7 @@ This was not merely academic—it affected Cantor’s career and mental health.
 ---
 
 ## 🧭 Philosophical stakes  
+
 ### **Kronecker’s position**  
 - Mathematics must be grounded in arithmetic.  
 - Infinity is only potential, never actual.  
@@ -332,6 +333,8 @@ Kronecker is the ancestor of constructive mathematics.
 Cantor is the ancestor of modern set theory.
 
 ---
+
+Cantor won the institutional battle over classical foundations, while Kronecker's demand for explicit construction reappeared in several later foundational traditions.
 
 ### Cantor “won” mathematically  
 Modern mathematics embraces:
