@@ -296,7 +296,7 @@ Whenever $G(B') \not\supseteq \mathcal{I}$, the system fails to self-stabilize o
 
 > “Let $G(B) = \langle B \rangle_{O}$ be the closure of $B$ under $O$.”   
 
-#### Definition and axioms of the closure operator
+### Definition and axioms of the closure operator
 
 Let $\mathcal O$ denote the admissible operation algebra on the primitive universe $U_{\mathcal I}$. For any subset $B \subseteq U_{\mathcal I}$, the **closure operator**  
 
