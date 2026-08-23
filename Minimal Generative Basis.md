@@ -487,7 +487,6 @@ is now understood as a **global saturation** statement. The framework refines th
 ---
 
 ## **Appendix: Invariants $\mathcal I$, Admissible Universe $U_{\mathcal I}$, and Non‑Circularity**  
-*(Priority: Medium → High)*
 
 ### **External specification of invariants**
 
@@ -582,7 +581,6 @@ If invariants are empirically estimated (e.g., from data), the framework require
 This preserves the one‑way dependency even in empirical contexts.
 
 ## **Appendix: Kolmogorov‑Optimality: Theoretical Role and Practical Proxies**  
-*(Priority: Medium → High)*
 
 ### **Theoretical formulation**
 
