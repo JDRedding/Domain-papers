@@ -1,0 +1,61 @@
+# Alexander Esenin‑Volpin
+Alexander Esenin‑Volpin was a **Russian‑American mathematician, poet, and one of the earliest leaders of the Soviet human‑rights movement**, known especially for ultrafinitism and for pioneering a legalist strategy of dissent.  Esenin‑Volpin’s life and work form a rare triad: **foundational mathematics**, **legalist dissident strategy**, and **poetic expression**. 
+
+## Education and Mathematical Career
+
+- Graduated from **Moscow State University** with a **Candidate of Sciences** degree in mathematics in **1949**.
+  
+- Early work in **general topology** included results on metrizability in dyadic bicompacta (often referred to as Esenin‑Volpin’s theorem).
+
+- Later became known for **ultrafinitism**, a radical form of constructivism rejecting:
+  - actual infinite sets,
+  - extremely large integers without explicit constructive grounding,
+  - non‑constructive proofs.  
+  
+His work influenced later developments in **bounded arithmetic** and **complexity‑theoretic foundations**. 
+
+# Legacy Across the Triad  
+
+### Mathematics  
+A foundational figure in **ultrafinitism**, influencing constructive logic and computational foundations.
+
+### Ultrafinitism and the critique of infinity  
+Esenin‑Volpin’s mathematical identity is defined by **ultrafinitism**, a radical form of constructivism that challenges the legitimacy of:
+
+- **actual infinite sets**,  
+- **enormous integers** (e.g., \(10^{12}\)) unless explicitly constructible,  
+- **non‑constructive proofs**.
+
+His program aimed to examine the **consistency of ZF set theory using strictly finite methods**, pushing constructive mathematics into territory that later influenced **bounded arithmetic** and **complexity‑theoretic foundations**.  
+**Ultrafinitism**
+
+### Politics  
+A **pioneer of legalist human‑rights activism**, shaping the early Soviet dissident movement and inspiring later constitutionalist strategies.
+
+- **1949 arrest** for “anti‑Soviet poetry,” followed by psychiatric imprisonment and exile.  
+- Organizer of the **1965 Glasnost Meeting** at Pushkin Square — the first public human‑rights demonstration in Soviet history.  
+- Repeated detentions in **psikhushkas**, prompting international academic pressure.  
+- Foundational role in the **Initiative Group for the Defense of Human Rights** and the first Soviet appeal to the **UN Human Rights Committee**.
+
+### Literature  
+Logic, trauma, and coded dissent  
+
+A poet whose work blends **formal reasoning**, **existential anxiety**, and **political subtext**.
+
+Esenin‑Volpin’s poetry is not merely literary output — it is an extension of his mathematical and political worldview:
+
+- **compressed, logical structures**,  
+- **philosophical skepticism**,  
+- **veiled political critique**,  
+- **personal trauma** from repression and exile.
+
+His poems often read like fragments of formal reasoning interrupted by emotional shock — a stylistic fusion that mirrors his mathematical rigor and dissident caution.  
+
+### Archival Preservation  
+His samizdat, police files, correspondence, and manuscripts are preserved at the **Hoover Institution**.  
+
+## Legacy
+- In mathematics: a foundational figure in **ultrafinitism**, influencing constructive logic and computational foundations.  
+- In politics: a **pioneer of legalist human‑rights activism**, shaping the early Soviet dissident movement and inspiring later groups such as the **Initiative Group for the Defense of Human Rights**
+- In literature: a poet whose work blended personal trauma, philosophical skepticism, and coded political critique.  
+- His archives (memoirs, police files, samizdat, correspondence) are preserved at the **Hoover Institution**.
