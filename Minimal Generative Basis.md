@@ -1265,7 +1265,7 @@ These operations satisfy the closure axioms:
 
 Thus $G_{\mathcal O_{\mathrm{RDG}}}$ is a proper closure operator.
 
-### **The RDG Target Universe
+### **The RDG Target Universe**
 
 $X_{\mathrm{RDG}}$
 
