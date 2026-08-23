@@ -282,7 +282,7 @@ So the CA rule is:
 - a time‑dependent displacement magnitude $n$  
 - a Q‑filter that enforces “subtract if possible and new, else add”.
 
-### Appendix: Energy and survival scores on sites
+## Appendix: Energy and survival scores on sites
 
 - **Energy field:** models resource cost of long jumps or revisits.  
 - **Survival score / SID:** models stability or desirability of sites (manifold‑like structure emerging from repeated visits).  
