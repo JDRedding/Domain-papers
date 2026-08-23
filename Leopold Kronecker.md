@@ -537,13 +537,13 @@ Where:
 
 #### **Congruence as Q‑Operator**
 
-#### **1.Structure / Relations**
+#### **1. Structure / Relations**
 
 Relational dynamic geometry is the **carrier‑free relational lattice**.  
 Kronecker’s congruence is *exactly* a relational reduction:
 
 - The modular polynomial $\Phi_p(x,y)$ is a **syntactic generator** in the relational dynamic geometry lattice.
-- The relation “$\equiv \pmod{p}$” is a **structural constraint**.
+- The relation “ $\equiv \pmod{p}$ ” is a **structural constraint**.
 - The collapse
 
 $$
