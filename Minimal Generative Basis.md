@@ -1735,7 +1735,7 @@ This appendix fixes a single, precise notion of generation appropriate for gener
 ### **Chosen Notion of Generation**
 : Free Category on a Graph
 
-The generative systems in your framework (RDG, MFE, relational/dynamical operators) are most naturally modeled as:
+The generative systems in the framework (RDG, MFE, relational/dynamical operators) are most naturally modeled as:
 
 - primitives = **generating morphisms**,  
 - closure = **composition**,  
@@ -1784,7 +1784,7 @@ B^{\*} =
 \{ |B| \mid \langle B \rangle_{\circ} = C \}.
 $$
 
-This aligns perfectly with your general framework:
+This aligns perfectly with the general framework:
 
 - $U_{\mathcal I}$ = admissible morphisms,  
 - $\mathcal O$ = composition,  
@@ -1818,7 +1818,7 @@ This matches the element‑wise saturation condition (Appendix D).
 
 ### **Alternative Notions of Generation (for completeness)**
 
-Although the free‑category notion is chosen for your system, other notions exist.  
+Although the free‑category notion is chosen for the system, other notions exist.  
 We list them for clarity and future extension.
 
 ### **Generators via Representable Functors**
@@ -1972,7 +1972,6 @@ G_{\mathcal O}^{\varepsilon}(B)
 \{ x \in X_{\text{target}} \mid \mathrm{dist}(x, G_{\mathcal O}(B)) \le \varepsilon \}.
 $$
 
-
 ### **Definition (Approximate Completeness).**  
 A basis $B$ is $\varepsilon$-complete if:
 
@@ -2028,7 +2027,7 @@ Example:
 - Removing curvature invariants collapses RDG from 3 modes to 2.  
 - Removing autonomous stabilization collapses MFE from 4 modes to 3.
 
-# **Approximate Bases**
+### **Approximate Bases**
 
 An **approximate minimal basis** is:
 
@@ -2045,9 +2044,9 @@ Properties:
 - As $\varepsilon \to 0$, $B^{\*}_{\varepsilon} \to B^{\*}$.  
 - Approximate bases are useful in noisy or empirical systems.
 
-# **Robustness Summary**
+### **Robustness Summary**
 
-### **Exact systems**
+#### **Exact systems**
 
 - invariants are structural,  
 - primitive universes are discrete,  
