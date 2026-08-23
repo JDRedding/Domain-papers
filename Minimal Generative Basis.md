@@ -1241,7 +1241,7 @@ Where:
 
 These are the canonical RDG triad primitives.
 
-Any primitive outside this set either violates invariants or is redundant under closure (Appendix D).
+Any primitive outside this set either violates invariants or is redundant under closure.
 
 ### **Operation Algebra**
 
@@ -1259,7 +1259,7 @@ $$
 \}.
 $$
 
-These operations satisfy the closure axioms (Appendix A):
+These operations satisfy the closure axioms:
 
 - **Extensive**  
 - **Monotone**  
