@@ -482,7 +482,20 @@ Consequently, mode dimensionality $k^{*}$ is strictly derived rather than postul
 
 ### 2 Completeness, Minimality, and Reducibility
 
-For an optimal basis $B^{*} \subseteq U_{\mathcal{I}}$ achieving the infimum $\vert{}B^{*}\vert{} = k^{*}$, the equation guarantees two structural properties:
+For an optimal basis 
+
+$$
+B^{*} \subseteq U_{\mathcal I}
+$$
+
+achieving the infimum
+
+$$
+| B^{\*} | = k^{*}
+$$
+
+the equation guarantees two structural properties:
+
 
 * **Completeness:**
 
