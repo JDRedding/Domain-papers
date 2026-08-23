@@ -320,7 +320,7 @@ $$
 This is a **structured object** independent of any point‑set interpretation.
 
 ### **Relevance to Minimal Generative Bases**
-syntactic generators
+Syntactic generators
 
 The minimal generative basis framework uses:
 
