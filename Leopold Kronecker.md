@@ -655,4 +655,6 @@ $$
 
 where $P$ is the content (gcd of coefficients) of the norm. Explicit algorithmic factorization and elimination over these systems prefigure Gröbner-basis techniques, but the original statements are expressed in the language of “forms” and “equivalence of divisors” rather than a single closed equation.
 
-
+## Further Reading and References
+* Leopold Kronecker, Grundzüge der Arithmetik algebraischer Zahlkörper, 1870.
+* Emil Artin, Algebra, zur Geschichte der modularen Restklassensysteme.
