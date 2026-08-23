@@ -101,7 +101,7 @@ Adding more primitives does not expand generative power.
 
 ---
 
-# Kolmogorov‑Optimality Condition
+## Kolmogorov‑Optimality Condition
 
 Among all bases satisfying completeness, choose the one with minimal description length:
 
