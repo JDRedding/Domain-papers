@@ -1457,9 +1457,9 @@ The 4-mode basis is therefore both strictly minimal and algebraically saturated.
 
 ---
 
-# **Appendix: MFE Formal Theorem 
+## **Appendix: MFE Formal Theorem**
 
-Flux invariants : dynamic closure : $k^{*}_{\mathrm{MFE}} = 4$**  
+Flux invariants : dynamic closure : $k^{*}_{\mathrm{MFE}} = 4$  
 
 This establishes the MFE mode count as a **derived theorem**, not an empirical assumption. Combining existence, minimality, and non‑redundancy:
 
@@ -1488,7 +1488,7 @@ The MFE mode count is not assumed; it follows from:
 - the operation algebra $\mathcal O_{\mathrm{MFE}}$,  
 - and the closure operator $G_{\mathcal O_{\mathrm{MFE}}}$.
 
-# **MFE Invariant Set**
+### **MFE Invariant Set**
 
 Momentum–flux coupling : counter‑force stabilization : $\mathcal I_{\mathrm{MFE}}$
 
@@ -1514,7 +1514,7 @@ Each invariant requires an independent dynamical degree of freedom:
 - **Memory accumulation** → requires a slow variable integrating past flux.  
 - **Counter‑force stabilization** → requires a mode generating reciprocal correction.
 
-# **Admissible Primitive Universe**
+### **Admissible Primitive Universe**
 
 MFE primitives : $U_{\mathcal I_{\mathrm{MFE}}}$
 
@@ -1536,7 +1536,7 @@ Where the canonical MFE primitives are:
 These correspond to the PED triad plus the required orientation mode.
 
 
-# **MFE Operation Algebra **
+### **MFE Operation Algebra **
 
 MFE coupling : $\mathcal O_{\mathrm{MFE}}$
 
@@ -1561,7 +1561,7 @@ These operations satisfy the closure axioms (Appendix A):
 
 Thus $G_{\mathcal O_{\mathrm{MFE}}}$ is a proper closure operator.
 
-# **MFE Target Universe**
+### **MFE Target Universe**
 
 $X_{\mathrm{MFE}}$
 
@@ -1581,7 +1581,7 @@ This includes:
 - reciprocal counter‑force stabilization.
 
 
-# **Theorem Statement**
+### **Theorem Statement**
 
 ### **Theorem (MFE Mode Count).**  
 Let $(U_{\mathcal I_{\mathrm{MFE}}}, \mathcal O_{\mathrm{MFE}}, G_{\mathcal O_{\mathrm{MFE}}})$ be the MFE generative system defined above. Then:
@@ -1595,7 +1595,7 @@ k^{*}_{\mathrm{MFE}}
 4.
 $$
 
-# **Proof Structure**
+### **Proof Structure**
 
 The proof has two parts: **existence** and **minimality**.
 
@@ -1635,11 +1635,11 @@ This establishes **existence** of a complete 4‑mode basis.
 
 ---
 
-## **Failure of All Sub‑Quartic Sets**
+#### **Failure of All Sub‑Quartic Sets**
 
 We show that no 1‑, 2‑, or 3‑mode set can generate the MFE universe.
 
-### **Case 1: $|B| = 1$**  
+#### **Case 1: $|B| = 1$**  
 Monadic systems cannot:
 
 - sustain flux cycles,  
@@ -1653,7 +1653,7 @@ $$
 G_{\mathcal O_{\mathrm{MFE}}}(B) \not\supseteq X_{\mathrm{MFE}}.
 $$
 
-### **Case 2: $|B| = 2$**  
+#### **Case 2: $|B| = 2$**  
 Dyadic systems collapse into:
 
 - binary flux opposition,  
@@ -1667,7 +1667,7 @@ $$
 G_{\mathcal O_{\mathrm{MFE}}}(B) \not\supseteq X_{\mathrm{MFE}}.
 $$
 
-### **Case 3: $|B| = 3$**  
+#### **Case 3: $|B| = 3$**  
 Triad insufficiency
 
 Triadic systems can generate:
@@ -1697,7 +1697,7 @@ $$
 
 This establishes **minimality**.
 
-# **Non‑Redundancy and Saturation**
+### **Non‑Redundancy and Saturation**
 
 For any admissible primitive $q \in U_{\mathcal I_{\mathrm{MFE}}} \setminus B^{*}$:
 
