@@ -6,8 +6,7 @@ $$k^* = \min_{B \subseteq U_{\mathcal{I}}} \{ |B| \;|\; G_{\mathcal{O}}(B) \sups
 This single formula explains why certain structures appear across disparate domains — their dimensionality is forced by invariant closure requirements, not by choice.
 
 ## 🔷 Universal Generative Basis Principle 
-
-Want a single expression that answers:
+Simplification drives the search for a single expression that answers:
 
 - **Why this basis?**  
 - **Why not smaller?**  
