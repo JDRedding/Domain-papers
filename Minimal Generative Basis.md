@@ -392,7 +392,7 @@ $$
 
 allowing $k^{*}$ to be an infinite cardinal. In such cases, existence of bases may rely on additional set‑theoretic tools (e.g., Zorn’s lemma) and is not guaranteed without further assumptions. The present framework focuses on regimes where a finite minimal basis exists and the infimum is realized.
 
-### APPENDIX: Minimality vs. uniqueness of $B^*$ (high)
+### APPENDIX: Minimality vs. uniqueness of $B^*$ 
 
 > “These four conditions jointly characterize the unique minimal generative basis compatible with the invariant structure of the system.”   
 
