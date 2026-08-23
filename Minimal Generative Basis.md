@@ -232,6 +232,22 @@ This formalism captures the universal principle:
 
 > **A generative basis is the smallest set of primitives whose closure reproduces all required invariants, and nothing more.**
 
+```
++------------------------------------+
+|     INVARIANT CLOSURE EQUILIBRIUM  |
+|                                    |
+|   I (Invariants) -> U_I (Universe) |
+|         |                          |
+|         v                          |
+|   k* = min |B|  s.t. G_O(B) >= X   |
+|         |                          |
+|  [ k < k* ] -> Degenerate Failure  |
+|  [ k = k* ] -> Minimal Closure     |
+|  [ k > k* ] -> Redundant Collapse  |
++------------------------------------+
+
+```
+
 This is the mathematical skeleton behind:
 
 - 3 Pauli matrices  
@@ -254,6 +270,22 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 3. **A Triad ($k=3$)** is the minimal basis capable of hosting **relational opposition + memory/attractor mediation** without collapsing into a degenerate 1D/2D limit cycle.
 4. **Coupled Systems ($k=5$ or $2 \times 3$ with interlock)** form the minimal closed manifold where a field generator (Evaluative Field) and a kinetic actor (Geometric Motion) dynamically sustain and self-correct without external forcing.
 
+```
++---+-------------------+------------------------------------+
+| k | System State      | Dynamical / Geometric Realization  |
++---+-------------------+------------------------------------+
+| 1 | Monadic           | Self-identity only; 0D point / no  |
+|   | (Deficient)       | relational differential.           |
+| 2 | Dyadic            | Binary opposition; collapse into   |
+|   | (Deficient)       | 1D line or static 2D limit cycle.  |
+| 3 | Triadic           | Irreducible curvature, memory-     |
+|   | (Minimal k*=3)    | integrated attractor mediation.    |
+| 5 | Coupled Dual      | Full non-forcing self-sustenance   |
+|   | (Triad A + B)     | (Field Engine + Kinetic Engine).   |
++---+-------------------+------------------------------------+
+
+```
+
 Whenever $G(B') \not\supseteq \mathcal{I}$, the system fails to self-stabilize or fails to span the necessary relational state space; whenever $B'' \supsetneq B^*$, additional parameters collapse into linear or functional dependence.
 
 ## **APPENDIX: Minimal Generative Bases Under Invariant‑Restricted Closure**
@@ -265,6 +297,8 @@ A generative basis $B^{*}$ is the smallest admissible operator set whose closure
 
 - no smaller admissible set suffices, and  
 - no larger admissible set expands generative power.
+
+
 
 ## **A.1 Admissible Primitive Universe**
 
@@ -435,7 +469,6 @@ $$
 $$
 \text{iff } G(B^{*}) \supseteq \mathcal{I}
 $$
-
 
 This occurs when:
 
