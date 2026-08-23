@@ -439,7 +439,7 @@ $$
 
 This is appropriate when the target universe is explicitly specified.
 
-### **Formulation 2 — Invariant‑Driven Completeness**
+#### **Formulation 2 — Invariant‑Driven Completeness**
 
 If the invariants *define* the expressive universe, then:
 
