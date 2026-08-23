@@ -84,7 +84,7 @@ $$
 This is the **Kolmogorov complexity** version of the principle.
 
 
-# 🔥 6. Universal Conditions
+## 🔥 Universal Conditions
 This is the **universal skeleton**.
 
 $$
