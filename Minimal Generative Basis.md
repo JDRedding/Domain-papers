@@ -648,7 +648,7 @@ $$G_{\mathcal{O}}(B^* \cup \{p\}) = G_{\mathcal{O}}(B^*)$$
 
 This formalizes that $B^*$ is both a **minimal generator** and a **saturated basis** under invariant-restricted closure.
 
-### APPENDIX: MFE Mode Count as a Derived Quantity
+## APPENDIX: MFE Mode Count as a Derived Quantity
 
 The $\mathrm{MFE}$ mode count is fixed entirely by:
 
@@ -660,7 +660,7 @@ $$k^{*}_{\mathrm{MFE}} = 4$$
 
 This establishes that the 4-variable dynamic basis is a derived mathematical necessity rather than a structural postulate.
 
-#### Minimal Cardinality Under Closure for MFE
+### Minimal Cardinality Under Closure for MFE
 
 In the Momentum–Flux Engine ($\mathrm{MFE}$), the required mode count is strictly derived from invariant dynamic constraints, the primitive coupling universe, and the operational closure algebra.
 
@@ -675,7 +675,7 @@ The minimal operational cardinality is defined by:
 
 $$k^{*}_{\mathrm{MFE}} = \min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{MFE}} \}.$$
 
-#### Existence and Minimality Conditions
+### Existence and Minimality Conditions
 
 To establish that the minimal autonomous $\mathrm{MFE}$ architecture requires exactly four state primitives, two operational conditions must hold:
 
@@ -695,7 +695,7 @@ Together, these conditions yield:
 
 $$k^{*}_{\mathrm{MFE}} = 4.$$
 
-#### Closure Progression and Cardinality Thresholds
+### Closure Progression and Cardinality Thresholds
 
 $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynamic closure}} \qquad\Longrightarrow\qquad \boxed{k = 4} \qquad\Longrightarrow\qquad \text{complete autonomous closure}$$
 
@@ -703,7 +703,7 @@ $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynam
 * **$k = 3$:** Spans static geometric relationality ($X_{\mathrm{RDG}}$), but fails autonomous self-sustaining dynamic equilibrium without external driving.
 * **$k = 4$:** Minimal threshold where stability feedback, memory accumulation, and momentum-flux coupling achieve complete closure.
 
-#### Saturation and Non-Redundancy
+### Saturation and Non-Redundancy
 
 For any additional admissible candidate primitive $q$ outside the optimal 4-element basis $B^*$:
 
