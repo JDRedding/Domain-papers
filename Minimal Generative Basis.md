@@ -310,21 +310,21 @@ We assume $G_{\mathcal O}$ satisfies the standard closure axioms:
 
 - **Extensivity:** 
  
-  $$
-  B \subseteq G_{\mathcal O}(B)
-  $$
+$$
+B \subseteq G_{\mathcal O}(B)
+$$
 
 - **Monotonicity:**  
 
-  $$
-  B \subseteq B' \;\Rightarrow\; G_{\mathcal O}(B) \subseteq G_{\mathcal O}(B')
-  $$
+$$
+B \subseteq B' \;\Rightarrow\; G_{\mathcal O}(B) \subseteq G_{\mathcal O}(B')
+$$
 
 - **Idempotence:** 
  
-  $$
-  G_{\mathcal O}(G_{\mathcal O}(B)) = G_{\mathcal O}(B)
-  $$
+$$
+G_{\mathcal O}(G_{\mathcal O}(B)) = G_{\mathcal O}(B)
+$$
 
 These conditions ensure that $G_{\mathcal O}$ is a proper closure operator in the sense of lattice/closure theory.
 
@@ -404,9 +404,9 @@ The framework distinguishes between:
 
 - **Unique mode count:** the minimal cardinality
 
-  $$
-  k^{*} = \min_{B \subseteq U_{\mathcal I}} \{ |B| \mid G_{\mathcal O}(B) \supseteq X_{\text{target}} \}
-  $$
+$$
+k^{*} = \min_{B \subseteq U_{\mathcal I}} \{ |B| \mid G_{\mathcal O}(B) \supseteq X_{\text{target}} \}
+$$
 
   is a single number.
 
@@ -545,7 +545,6 @@ $$
 $$
 \text{implies } G(B'') = G(B^{*})
 $$
-
 
 Adding any admissible primitive does **not** expand generative power.  
 Every admissible primitive outside $B^{*}$ is redundant.
