@@ -647,3 +647,71 @@ then adjoining higher-order primitives yields zero generative gain:
 $$G_{\mathcal{O}}(B^* \cup \{p\}) = G_{\mathcal{O}}(B^*)$$
 
 This formalizes that $B^*$ is both a **minimal generator** and a **saturated basis** under invariant-restricted closure.
+
+### APPENDIX: MFE Mode Count as a Derived Quantity
+
+The $\mathrm{MFE}$ mode count is fixed entirely by:
+
+* Invariant non-equilibrium criteria $\mathcal{I}_{\mathrm{MFE}}$
+* Admissible coupling universe $U_{\mathcal{I}_{\mathrm{MFE}}}$
+* Generative closure $G_{\mathcal{O}}(\cdot)$
+
+$$k^{*}_{\mathrm{MFE}} = 4$$
+
+This establishes that the 4-variable dynamic basis is a derived mathematical necessity rather than a structural postulate.
+
+#### Minimal Cardinality Under Closure for MFE
+
+In the Momentum–Flux Engine ($\mathrm{MFE}$), the required mode count is strictly derived from invariant dynamic constraints, the primitive coupling universe, and the operational closure algebra.
+
+Let:
+
+* $U_{\mathcal{I}_{\mathrm{MFE}}}$ be the admissible primitive universe governed by the non-equilibrium coupling invariants $\mathcal{I}_{\mathrm{MFE}}$.
+* $\mathcal{O}$ be the admissible operational algebra (generating rotation, flux coupling, momentum transfer, and attractor feedback).
+* $G_{\mathcal{O}}(B)$ be the closure of a candidate primitive set $B$ under $\mathcal{O}$.
+* $X_{\mathrm{MFE}}$ be the complete dynamic state space of the self-sustaining engine.
+
+The minimal operational cardinality is defined by:
+
+$$k^{*}_{\mathrm{MFE}} = \min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\left\{ \vert{}B\vert{} \;\middle\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{MFE}} \right\}.$$
+
+#### Existence and Minimality Conditions
+
+To establish that the minimal autonomous $\mathrm{MFE}$ architecture requires exactly four state primitives, two operational conditions must hold:
+
+**1. Existence of a Complete 4-Mode Basis**
+
+$$\exists\, B^* \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B^*\vert{} = 4 \quad\text{s.t.}\quad G_{\mathcal{O}}(B^*) \supseteq X_{\mathrm{MFE}}.$$
+
+*There exists a 4-element basis whose closure spans all necessary dynamic degrees of freedom.*
+
+**2. Failure of All Sub-Quartic Bases**
+
+$$\forall\, B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B\vert{} < 4 \quad\Longrightarrow\quad G_{\mathcal{O}}(B) \not\supseteq X_{\mathrm{MFE}}.$$
+
+*No 1-, 2-, or 3-element primitive set can simultaneously sustain dynamic coupling, orientation, memory integration, and autonomous counter-force stabilization under $\mathcal{O}$.*
+
+Together, these conditions yield:
+
+$$k^{*}_{\mathrm{MFE}} = 4.$$
+
+#### A.Y.2 Closure Progression and Cardinality Thresholds
+
+$$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynamic closure}} \qquad\Longrightarrow\qquad \boxed{k = 4} \qquad\Longrightarrow\qquad \text{complete autonomous closure}$$
+
+* **$k = 1, 2$:** Fail to construct non-degenerate phase curvature or reciprocal flux.
+* **$k = 3$:** Spans static geometric relationality ($X_{\mathrm{RDG}}$), but fails autonomous self-sustaining dynamic equilibrium without external driving.
+* **$k = 4$:** Minimal threshold where stability feedback, memory accumulation, and momentum-flux coupling achieve complete closure.
+
+#### Saturation and Non-Redundancy
+
+For any additional admissible candidate primitive $q$ outside the optimal 4-element basis $B^*$:
+
+$$\forall\, q \in U_{\mathcal{I}_{\mathrm{MFE}}} \setminus B^{*},\qquad q \in G_{\mathcal{O}}(B^{*}).$$
+
+Consequently, adjunction yields no dimensional expansion:
+
+$$G_{\mathcal{O}}(B^{*} \cup \{q\}) = G_{\mathcal{O}}(B^{*}).$$
+
+The 4-mode basis is therefore both strictly minimal and algebraically saturated.
+
