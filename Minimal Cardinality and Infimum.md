@@ -127,7 +127,7 @@ This mirrors the classical example $\inf\{1/n\}=0$ but stays finite.
 ### **Important Relational Dynamic Geometry Distinction**  
 
 - Minimal cardinality counts **equivalence classes** under SID/PED.  
-- Infimum identifies **order‑theoretic bounds** under $\le_{Relational Dynamic Geometry}$.  
+- Infimum identifies **order‑theoretic bounds** under $\le_{Relational}$.  
 - Both are finite because Relational Dynamic Geometry forbids infinite sets and infinite cardinals.
 
 ### **Classical vs Relational Dynamic Geometry**  
