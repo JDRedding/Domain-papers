@@ -77,7 +77,7 @@ Among all bases satisfying completeness, choose the one with minimal description
 $$
 B^\* = \arg\min_{B}
 \{
-K(B) \;\middle|\; G(B) \supseteq \mathcal{I}
+K(B) \;|\; G(B) \supseteq \mathcal{I}
 \}
 $$
 
