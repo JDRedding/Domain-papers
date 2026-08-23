@@ -1,0 +1,115 @@
+THE MODERN AI ECOSYSTEM - TOOLS
+
+┌─────────────────────────────────────────────────────────────┐
+│ Top-level LLMs / Model Providers                            │
+│  • OpenAI GPT                                               │
+│  • Anthropic Claude                                         │
+│  • Google Gemini                                            │
+│  • Meta Llama                                               │
+│  • Mistral AI                                               │
+│  • Cohere                                                   │
+│  • Hugging Face                                             │
+│  • Ollama                                                   │
+│  • vLLM                                                     │
+└─────────────────────────────────────────────────────────────┘
+
+LLM
+└── Agentic AI
+    • LangGraph
+    • CrewAI
+    • Microsoft AutoGen
+    • Microsoft Agent Framework
+    • LlamaIndex Workflows
+    • AWS Strands Agents
+    • CAMEL
+    • Agno
+
+RAG
+    • LangChain
+    • LlamaIndex
+    • Haystack
+    • DSPy
+    • RAGFlow
+    • GraphRAG
+    • Unstructured
+    • EmbedChain
+
+Embedding
+    • OpenAI Embeddings
+    • Cohere Embed
+    • Voyage AI
+    • Sentence Transformers
+    • BGE
+    • Google Vertex AI Embeddings
+    • Azure OpenAI Embeddings
+
+MCP
+    • MCP SDK
+    • FastMCP
+    • MCP Registry
+    • GitHub MCP Server
+    • Slack MCP Server
+    • PostgreSQL MCP Server
+    • Google Drive MCP Server
+    • Filesystem MCP Server
+
+AI Security
+    • NVIDIA NeMo Guardrails
+    • Guardrails AI
+    • Microsoft Presidio
+    • Lakera Guard
+    • Prompt Security
+    • Protect AI
+    • Azure AI Content Safety
+    • AWS Bedrock Guardrails
+
+Observability
+    • LangSmith
+    • Langfuse
+    • Arize Phoenix
+    • Weights & Biases Weave
+    • TruLens
+    • Ragas
+    • Promptfoo
+    • Helicone
+
+Memory
+    • Mem0
+    • Zep
+    • Letta
+    • LangGraph Memory
+    • Redis
+    • PostgreSQL
+    • Neo4j
+    • Chroma
+
+AI Agent
+    • OpenAI Agents SDK
+    • LangChain Agents
+    • PydanticAI
+    • Semantic Kernel
+    • Google ADK
+    • AWS Bedrock Agents
+    • Azure AI Foundry Agent Service
+
+Automation
+    • n8n
+    • Zapier
+    • Make
+    • Microsoft Power Automate
+    • Temporal
+    • Apache Airflow
+    • Prefect
+    • Kestra
+    • Pipedream
+
+Vector Database
+    • Pinecone
+    • Weaviate
+    • Qdrant
+    • Milvus
+    • Chroma
+    • pgvector
+    • Elasticsearch
+    • Redis
+    • MongoDB Atlas Vector Search
