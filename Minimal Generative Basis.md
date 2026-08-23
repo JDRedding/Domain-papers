@@ -1792,9 +1792,8 @@ This aligns perfectly with your general framework:
 - $X_{\text{target}} = C$.
 
 Thus the categorical case is a **specialization** of the general generative‑basis formalism.
----
 
-### **J.5 Minimality and Non‑Redundancy in Categories**
+### **Minimality and Non‑Redundancy in Categories**
 
 The three universal constraints become:
 
