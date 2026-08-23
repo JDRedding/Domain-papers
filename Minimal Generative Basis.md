@@ -234,17 +234,10 @@ This appendix formalizes the universal mathematical principle:
 
 > **A generative system selects the smallest admissible operator set whose closure reproduces all required invariants, and for which no smaller set suffices and no larger admissible set expands generative power.**
 
-Here is a clean, self‑contained **Appendix A** with only **Sections A.1 and A.2**, exactly matching your refined formalism. It is written in a polished mathematical style suitable for inclusion in your book.
-
----
-
-# **APPENDIX A — Minimal Generative Bases Under Invariant‑Restricted Closure**
 A generative basis $B^{*}$ is the smallest admissible operator set whose closure reproduces all required invariants, and for which:
 
 - no smaller admissible set suffices, and  
 - no larger admissible set expands generative power.
-
-This appendix formalizes the universal mathematical principle governing minimal generative bases in any invariant‑restricted system.
 
 ## **A.1 Admissible Primitive Universe**
 
