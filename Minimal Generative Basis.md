@@ -516,3 +516,74 @@ When the target space is itself fully specified by the realization of the invari
 $$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq {Gen}(\mathcal{I}) \}$$
 
 This represents the canonical formulation for self-contained, invariant-closed algebraic structures.
+
+# APPENDIX: Mode Count as a Derived Quantity
+
+The relational dynamic geometry mode count is uniquely fixed by:
+
+* Invariant requirements $\mathcal{I}$
+* Admissible primitive universe $U_{\mathcal{I}}$
+* Algebraic closure operator $G_{\mathcal{O}}(\cdot)$
+* Cardinality infimum achieving target inclusion $X_{\mathrm{RDG}}$
+
+$$k^{*}_{\mathrm{RDG}} = 3$$
+
+is an algebraically derived theorem, not an empirical assumption.
+
+## Minimal Cardinality Under Closure
+
+In a generative system, the number of required modes is not chosen arbitrarily; it is derived from the invariant structure, the admissible primitive universe, and the closure operator.
+
+Let:
+* $U_{\mathcal{I}}$ be the admissible primitive universe determined by invariant requirements $\mathcal{I}$.
+* $\mathcal{O}$ be the admissible operation algebra.
+* $G_{\mathcal{O}}(B)$ be the closure of a primitive set $B \subseteq U_{\mathcal{I}}$ under $\mathcal{O}$.
+* $X_{\mathrm{RDG}}$ be the target expressive universe for the RDG system.
+
+The minimal mode count is defined by:
+
+$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \left\{ |B| \;\middle|\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{RDG}} \right\}$$
+
+This quantity is strictly forced by the closure structure.
+
+---
+
+## Existence and Minimality Conditions
+
+To establish that the RDG system requires exactly three modes, two conditions must hold:
+
+1. **Existence of a Complete Triad:**
+   $$\exists\, B^* \subseteq U_{\mathcal{I}},\quad |B^*| = 3 \quad\text{s.t.}\quad G_{\mathcal{O}}(B^*) \supseteq X_{\mathrm{RDG}}$$
+   A 3-element primitive set exists whose closure spans the entire RDG expressive universe.
+
+2. **Failure of Sub-Triadic Sets:**
+   $$\forall\, B \subseteq U_{\mathcal{I}},\quad |B| < 3 \implies G_{\mathcal{O}}(B) \not\supseteq X_{\mathrm{RDG}}$$
+   No 1-mode or 2-mode primitive set can generate the target universe under closure.
+
+Together, (1) and (2) yield:
+
+$$k^{*}_{\mathrm{RDG}} = 3$$
+
+---
+
+## Closure Failure and Closure Success
+
+The structural bifurcation across cardinalities is:
+
+$$\boxed{\begin{array}{c} k = 1 \\ k = 2 \end{array} \;\Longrightarrow\; \text{Closure Failure}} \qquad\Longrightarrow\qquad \boxed{k = 3 \;\Longrightarrow\; \text{Complete Closure}}$$
+
+Modes 1 and 2 are structurally deficient; mode 3 is the infimum cardinality at which generative closure succeeds.
+
+---
+
+## Non-Redundancy and Saturation
+
+If every admissible primitive outside the minimal triad $B^*$ is already spanned by the closure:
+
+$$\forall\, p \in U_{\mathcal{I}} \setminus B^{*}, \qquad p \in G_{\mathcal{O}}(B^*)$$
+
+then adjoining higher-order primitives yields zero generative gain:
+
+$$G_{\mathcal{O}}(B^* \cup \{p\}) = G_{\mathcal{O}}(B^*)$$
+
+This formalizes that $B^*$ is both a **minimal generator** and a **saturated basis** under invariant-restricted closure.
