@@ -125,3 +125,158 @@ x_n = U(x_{n-1}) =
 (c^+_n,\; V_{n-1} \cup \{c^+_n\}) & \text{if } Q = \text{false}
 \end{cases}
 $$
+
+## RDG–MFE–Q cellular automaton on a 1D lattice.
+
+- **RDG:**
+  
+  1D lattice $\mathbb{Z}$ with fields $(v_n(i), w_n(i))$.
+
+- **MFE:**
+
+  Time‑indexed displacement proposal from the unique walker site:
+
+$$
+F_n: a_{n-1} \mapsto (c^-_n, c^+_n) = (a_{n-1}-n,\; a_{n-1}+n)
+$$
+
+- **Q:**  
+  Global admissibility:
+
+$$
+Q^-_n = [c^-_n \ge 0 \wedge v_{n-1}(c^-_n) = 0]
+$$
+
+- **CA update:**  
+  Apply $F_n$, filter with $Q$, move walker, mark visited.
+
+### 1. RDG: 1D lattice and configuration
+
+**Geometry $\Gamma$:**
+
+- **Sites:**  
+
+$$
+i \in \mathbb{Z} \quad \text{(1D infinite lattice)}
+$$
+
+- **Time:**  
+
+$$
+n \in \mathbb{N}
+$$
+
+**Fields at each site $i$:**
+
+- **Visited flag:**  
+
+$$
+v_n(i) \in \{0,1\} \quad (\text{0 = unvisited, 1 = visited})
+$$
+
+- **Walker presence:**  
+
+$$
+w_n(i) \in \{0,1\} \quad (\text{1 if walker is at } i \text{ at time } n)
+$$
+
+Global configuration at time $n$:
+
+$$
+X_n = \big( v_n(i),\; w_n(i) \big)_{i \in \mathbb{Z}}
+$$
+
+The Recamán value $a_n$ is the unique site with $w_n(a_n) = 1$.
+
+### 2. MFE: proposed motion field
+
+We encode the “subtract $n$ / add $n$” rule as a **proposed displacement field**.
+
+Let the walker be at site $a_{n-1}$ at time $n-1$:
+
+- **Candidate positions:**
+
+$$
+c^-_n = a_{n-1} - n,\quad c^+_n = a_{n-1} + n
+$$
+
+Define a **proposal field** $p_n(i)$:
+
+- **Proposal:**
+
+$$
+p_n(i) =
+\begin{cases}
+-n & \text{if } i = a_{n-1} \text{ (subtract branch)} \\
++n & \text{if } i = a_{n-1} \text{ (add branch, used if subtract rejected)} \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+Conceptually: MFE says “from the current walker site, propose a displacement of $-n$ first; if rejected, use $+n$.”
+
+### 3. Q: admissibility and branch selection
+
+Now we encode Recamán’s constraint as a **Q‑predicate over the lattice fields**.
+
+At time $n$, define:
+
+- **Subtract admissibility:**
+
+$$
+Q^-_n = \big[ c^-_n \ge 0 \;\wedge\; v_{n-1}(c^-_n) = 0 \big]
+$$
+
+  (nonnegative and unvisited)
+
+- **Add branch is the fallback:**
+
+$$
+Q^+_n = \neg Q^-_n
+$$
+
+So Q is a global predicate that inspects:
+
+- current walker position $a_{n-1}$  
+- visited field $v_{n-1}(\cdot)$  
+- step index $n$
+
+and decides which displacement is admissible.
+
+### 4. Update operator on the CA fields
+
+The RDG–MFE–Q CA update from $X_{n-1}$ to $X_n$ is:
+
+1. **Walker move:**
+
+$$
+a_n =
+\begin{cases}
+c^-_n & \text{if } Q^-_n = \text{true} \\
+c^+_n & \text{if } Q^+_n = \text{true}
+\end{cases}
+$$
+
+$$
+w_n(i) =
+\begin{cases}
+1 & \text{if } i = a_n \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+2. **Visited field update:**
+$$
+v_n(i) =
+\begin{cases}
+1 & \text{if } i = a_n \\
+v_{n-1}(i) & \text{otherwise}
+\end{cases}
+$$
+
+So the CA rule is:
+
+- one active walker site  
+- a memory field marking visited sites  
+- a time‑dependent displacement magnitude $n$  
+- a Q‑filter that enforces “subtract if possible and new, else add”.
