@@ -1906,11 +1906,7 @@ Examples:
 
 The admissible primitive universe becomes:
 
-$$
-U_{\mathcal I_{\varepsilon}}
-=
-\{ p \mid p \text{ satisfies invariants } \mathcal I_{\varepsilon} \}.
-$$
+$$U_{\mathcal I_{\varepsilon}}=\{ p \mid p \text{ satisfies invariants } \mathcal I_{\varepsilon} \}.$$
 
 Thus perturbations propagate forward:
 
