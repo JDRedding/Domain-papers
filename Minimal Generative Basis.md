@@ -54,8 +54,6 @@ Additional factor to consider are:
 - $\mathcal{I}$ = (target) required invariant set (geometry, interaction, evaluation, dynamics, stability, etc.)  
 - $K(B)$ = Kolmogorov complexity of the basis  
 
----
-
 ## The Three Structural Pillars
 
 ```
@@ -79,8 +77,6 @@ $$
 
 The basis must generate *everything* required.
 
----
-
 ### **2. Minimality**
 This is the core of **operator minimality**.
 
@@ -92,8 +88,6 @@ No proper subset of $B^\*$ is sufficient.
 
 This encodes **minimal generative sufficiency** — the smallest set that still closes.
 
----
-
 ### **3. Non‑redundancy / Parsimony**
 This is the universal form of **parsimony**.
 
@@ -102,8 +96,6 @@ $$
 $$
 
 Adding more primitives does not expand generative power. See the *Minimal Generative Bases Under Invariant‑Restricted Closure* appendix for more details.
-
----
 
 ## Kolmogorov‑Optimality Condition
 
@@ -210,8 +202,6 @@ It is the same definition used in:
 - minimal relational modes (RDG)  
 - minimal dynamical modes (MFE)
 
----
-
 ## 🧠 **Category‑Theoretic Universal Form**
 This is the category‑theoretic definition of a **generating set**.
 
@@ -228,8 +218,6 @@ $$
 $$
 \forall B'' \supsetneq B^\*,\; \langle B'' \rangle = \langle B^\* \rangle
 $$
-
----
 
 ## 🔥 **Deep Structure**
 This formalism captures the universal principle:
@@ -484,8 +472,6 @@ is now understood as a **global saturation** statement. The framework refines th
 - Using element-wise saturation as the default non‑redundancy criterion.
 - Reserving the global condition for systems where $B^{\*}$ is intended to generate the entire admissible universe, not just the target $X_{\text{target}}$.
 
----
-
 ## **Appendix: Invariants $\mathcal I$, Admissible Universe $U_{\mathcal I}$, and Non‑Circularity**  
 
 ### **External specification of invariants**
@@ -602,8 +588,6 @@ Kolmogorov complexity is invariant only up to an additive constant depending on 
 
 The framework assumes a fixed representation for primitives and operations, making $K(B)$ well‑defined up to a constant.
 
----
-
 ### **Uncomputability**
 
 Kolmogorov complexity is uncomputable. Therefore:
@@ -648,8 +632,6 @@ Kolmogorov‑optimality is used to:
 - justify parsimony beyond mere cardinality minimization.
 
 It is **not** used to determine $k^{\*}$; it is used **after** completeness and minimality are satisfied.
-
----
 
 # **Appendix: Tractability and Complexity**  
 **Algorithmic Tractability and Complexity of Computing $B^{\*}$** 
@@ -815,8 +797,6 @@ Thus:
 
 This is why the framework is computationally feasible in domains.
 
----
-
 ## **APPENDIX: Minimal Generative Bases Under Invariant‑Restricted Closure**
 This appendix formalizes the universal mathematical principle:
 
@@ -891,8 +871,6 @@ $$
 
 Among all complete bases, $B^{\*}$ minimizes description length.
 
----
-
 ## **APPENDIX: Target Universe vs. Invariant Requirements**
 The relationship between the target universe and the invariant set determines the correct completeness condition:
 
@@ -938,8 +916,6 @@ $$
 These two sets are related but not identical.  
 Their relationship determines how completeness and minimality must be formulated.
 
----
-
 ### **1 Inclusion Relation**
 
 In general, the invariant set is a **subset** of the target universe:
@@ -949,8 +925,6 @@ $$
 $$
 
 The invariants represent the **structural constraints** that must survive generative evolution, while the target universe represents the **full expressive capacity** of the system.
-
----
 
 ### **2 Two Equivalent Formulations of Completeness**
 
@@ -982,8 +956,6 @@ $$
 
 This is appropriate when the invariants are the fundamental specification and the target universe is the closure of those invariants.
 
----
-
 ### **3 When the Two Definitions Coincide**
 
 If the expressive universe is *entirely determined* by the invariant structure, then:
@@ -1003,8 +975,6 @@ X_{\text{target}} = {Gen}(\mathcal I),
 $$
 
 i.e., the invariants generate the full expressive universe.
-
----
 
 ### **4 When the Two Definitions Differ**
 
@@ -1026,8 +996,6 @@ The formalization correctly elevates the mode-count equation to the fundamental 
 
 Here is the structured, publication-ready revision of the appendix section, cleaned of conversational artifacts and ready for direct insertion:
 
----
-
 ## APPENDIX: The Fundamental Mode‑Count Equation
 
 ### Minimal Cardinality Under Invariant‑Restricted Closure
@@ -1048,8 +1016,6 @@ $$k^{\*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{
 
 This defines the minimal cardinality of any generative basis compatible with the invariant structure $\mathcal{I}$.
 
----
-
 ### 1 Formal Dependency Hierarchy
 
 The mode-count equation induces a strict, four-stage unidirectional dependency chain:
@@ -1062,8 +1028,6 @@ $$\mathcal{I} \;\longrightarrow\; U_{\mathcal{I}} \;\longrightarrow\; G_{\mathca
 * **Minimal Cardinality ($k^{\*}$):** The global infimum over all valid generator cardinalities whose closure covers $X_{\text{target}}$.
 
 Consequently, mode dimensionality $k^{\*}$ is strictly derived rather than postulated.
-
----
 
 ### 2 Completeness, Minimality, and Reducibility
 
@@ -1090,8 +1054,6 @@ $$G_{\mathcal{O}}(B^{\*}) \supseteq X_{\text{target}}$$
 $$\forall B' \subset B^{\*}, \quad G_{\mathcal{O}}(B') \not\supseteq X_{\text{target}}$$
 
 No proper subset of $B^{\*}$ can span $X_{\text{target}}$ under $\mathcal{O}$.
-
----
 
 ### 3 Invariant-Sourced Expressive Targets
 
@@ -1130,8 +1092,6 @@ $$k^{\*} = \min_{B \subseteq U_{\mathcal{I}}} \{ |B| \;|\; G_{\mathcal{O}}(B) \s
 
 This quantity is strictly forced by the closure structure.
 
----
-
 ### Existence and Minimality Conditions
 
 To establish that the RDG system requires exactly three modes, two conditions must hold:
@@ -1150,8 +1110,6 @@ Together, (1) and (2) yield:
 
 $$k^{\*}_{\mathrm{RDG}} = 3$$
 
----
-
 ### Closure Failure and Closure Success
 
 The structural bifurcation across cardinalities is:
@@ -1159,8 +1117,6 @@ The structural bifurcation across cardinalities is:
 $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \end{array} \;\Longrightarrow\; \text{Closure Failure}} \qquad\Longrightarrow\qquad \boxed{k = 3 \;\Longrightarrow\; \text{Complete Closure}}$$
 
 Modes 1 and 2 are structurally deficient; mode 3 is the infimum cardinality at which generative closure succeeds.
-
----
 
 ### Non-Redundancy and Saturation
 
@@ -1455,8 +1411,6 @@ $$G_{\mathcal{O}}(B^{\*} \cup \{q\}) = G_{\mathcal{O}}(B^{\*}).$$
 
 The 4-mode basis is therefore both strictly minimal and algebraically saturated.
 
----
-
 ## **Appendix: MFE Formal Theorem**
 
 Flux invariants : dynamic closure : $k^{\*}_{\mathrm{MFE}} = 4$  
@@ -1576,7 +1530,6 @@ This includes:
 - memory‑integrated attractor behavior,  
 - reciprocal counter‑force stabilization.
 
-
 ### **Theorem Statement**
 
 ### **Theorem (MFE Mode Count)**  
@@ -1622,8 +1575,6 @@ G_{\mathcal O_{\mathrm{MFE}}}(B^{\*}) \supseteq X_{\mathrm{MFE}}.
 $$
 
 This establishes **existence** of a complete 4‑mode basis.
-
----
 
 #### **Failure of All Sub‑Quartic Sets**
 
@@ -2006,7 +1957,7 @@ $k^{\*}$ is stable if:
 - the admissible primitive universe does not change cardinality,  
 - closure structure remains algebraically equivalent.
 
-### **K.5.2 Conditions for Instability**
+### **Conditions for Instability**
 Invariant sensitivity
 
 $k^{\*}$ may change if:
