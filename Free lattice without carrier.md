@@ -303,10 +303,8 @@ So, the terms are:
 
 Thus the lattice is not a set of elements but an **internal object of $\mathbf{C}$** whose “elements” are generalized morphisms $1 \to F([1])$. The entire construction is point‑free, relational, and triadic: the lattice emerges from the interaction of SID‑structure, PED‑semantics, and RDG‑mapping, not from any underlying set of points.
 
-## APPENDIX: Mathematical Definitions & Concepts
-This document presents lattices as **purely syntactic and relational objects**, without reference to point-sets or underlying "carriers"—the algebraic structure emerges entirely from formal rules and quotients.
 
-### **APPENDIX: Tschantz Intervals**
+## **APPENDIX: Tschantz Intervals**
 **Free‑Countable Substructure, and Closure‑Fixed Domains**
 
 #### **1. Interval Structure in Free Lattices (SID Layer)**
@@ -448,6 +446,9 @@ This is a **closure‑stable version** of Tschantz’s Theorem.
 - **RDG:** All statements hold internally in any semantic category $\mathbf{C}$ interpreting $\mathbb{T}_{\mathrm{Lat}}$.
 
 Thus the emergent domain $\mathrm{Fix}(G)$ inherits the same “no tame infinity” property as the free lattice itself: infinite intervals cannot be simple.
+
+## APPENDIX: Mathematical Definitions & Concepts
+This document presents lattices as **purely syntactic and relational objects**, without reference to point-sets or underlying "carriers"—the algebraic structure emerges entirely from formal rules and quotients.
 
 ### Core Structures
 
