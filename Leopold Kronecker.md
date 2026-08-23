@@ -100,6 +100,54 @@ His ideas live on in modern computational and constructive approaches.
 ---
 
 ### 📌 Kronecker–Weber theorem  
+
+**The Kronecker–Weber theorem** is one of the foundational results of algebraic number theory. The essential statement is:
+
+> **Every finite abelian extension of the rational numbers $\mathbb{Q}$ is contained in a cyclotomic field $\mathbb{Q}(\zeta_m)$.** 
+
+This means that if you take any number field whose Galois group over $\mathbb{Q}$ is abelian, you can always obtain it by adjoining **roots of unity**—no more exotic ingredients are needed.
+
+---
+
+#### 🧩 Core  
+A **cyclotomic field** $\mathbb{Q}(\zeta_m)$ is created by adjoining a primitive \(m\)-th root of unity to $\mathbb{Q}$. These fields have abelian Galois groups, and the theorem says:
+
+- Cyclotomic fields are not just examples of abelian extensions—they **generate all of them**.  
+- Any abelian extension \(K/\mathbb{Q}\) sits inside some $\mathbb{Q}(\zeta_m)$.
+- 
+This gives a complete classification of abelian extensions of $\mathbb{Q}$.
+
+---
+
+#### 🔧 Conductor  
+For each abelian extension \(K/\mathbb{Q}\), there is a **minimal** integer \(m\) such that:
+
+$$
+K \subseteq \mathbb{Q}(\zeta_m).
+$$
+
+This integer is called the **conductor** of the extension. It encodes how primes split and ramify in \(K\).   
+
+---
+
+#### 🧱 Historical development  
+- **Kronecker (1853)**: stated the theorem and proved it for extensions of odd degree.  
+- **Weber (1886)**: attempted a full proof, but gaps remained.  
+- **Hilbert (1896)**: provided the first complete proof.  
+
+This result later became a cornerstone of **class field theory**, which generalizes the classification of abelian extensions to arbitrary number fields. 
+
+---
+
+#### 📌 Why it matters  
+The theorem shows that:
+
+- Abelian extensions of $\mathbb{Q}$ are completely understood via roots of unity.  
+- The maximal abelian extension of $\mathbb{Q}$ is the union of all cyclotomic fields.  
+- Prime splitting in abelian extensions reduces to congruences modulo the conductor.  
+
+This is one of the earliest and most elegant examples of a **reciprocity law**, a theme central to modern number theory.
+
 ### 📌 Kronecker’s role in algebraic number theory
 
 ---
