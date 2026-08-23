@@ -86,6 +86,7 @@ a_n =
 c^-_n & \text{if } Q_n(c^-_n, V_{n-1}) = \text{true} \\
 c^+_n & \text{otherwise}
 \end{cases}
+$$
 
 $$
 V_n = V_{n-1} \cup \{a_n\}
