@@ -1961,7 +1961,7 @@ $$
 
 for all sufficiently small perturbations.
 
-## **Approximate Closure**
+### **Approximate Closure**
 This defines an **$\varepsilon$-closure**.
 
 In empirical or numerical systems, exact closure may be replaced by **approximate closure**:
