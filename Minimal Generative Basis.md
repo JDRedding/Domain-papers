@@ -1224,15 +1224,14 @@ These invariants are **externally specified** (Appendix E) and do not depend on 
 
 
 ### **Admissible Primitive Universe**
+RDG primitives
 
-$U_{\mathcal I_{\mathrm{RDG}}}$ - RDG primitives
+$U_{\mathcal I_{\mathrm{RDG}}}$ 
 
 From the invariants, the admissible primitive universe is:
 
 $$
-U_{\mathcal I_{\mathrm{RDG}}}
-=
-\{ M,\; F,\; R,\; \text{all invariant‑compatible relational primitives} \}.
+U_{\mathcal I_{\mathrm{RDG}}}=\{ M,\; F,\; R,\; \text{all invariant‑compatible relational primitives}\}.
 $$
 
 Where:
