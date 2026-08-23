@@ -292,7 +292,7 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 
 Whenever $G(B') \not\supseteq \mathcal{I}$, the system fails to self-stabilize or fails to span the necessary relational state space; whenever $B'' \supsetneq B^*$, additional parameters collapse into linear or functional dependence.
 
-### APPENDIX: Closure operator $G_{\mathcal O}$
+## APPENDIX: Closure operator $G_{\mathcal O}$
 
 > “Let $G(B) = \langle B \rangle_{O}$ be the closure of $B$ under $O$.”   
 
@@ -328,7 +328,7 @@ We assume $G_{\mathcal O}$ satisfies the standard closure axioms:
 
 These conditions ensure that $G_{\mathcal O}$ is a proper closure operator in the sense of lattice/closure theory.
 
-#### Types of closure in concrete systems
+### Types of closure in concrete systems
 
 In specific domains, $G_{\mathcal O}$ takes familiar forms:
 
@@ -339,7 +339,7 @@ In specific domains, $G_{\mathcal O}$ takes familiar forms:
 
 In all such cases, the closure axioms above hold, and standard basis/generator theorems apply.
 
-#### Basis existence and structural theorems
+### Basis existence and structural theorems
 
 Under these axioms, and when $(U_{\mathcal I}, G_{\mathcal O})$ arises from a well‑behaved algebraic structure (vector space, matroid, group, etc.), one can invoke known results:
 
@@ -349,7 +349,7 @@ Under these axioms, and when $(U_{\mathcal I}, G_{\mathcal O})$ arises from a we
 
 The minimal generative basis $B^*$ is therefore defined relative to a mathematically well‑posed closure operator, rather than an informal “span”.
 
-### APPENDIX: Existence of $k^*$
+## APPENDIX: Existence of $k^*$
 
 > “The fundamental mode-count equation is defined as:  
 > $k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ \vert{}B\vert{} \;\vert{}\; G_{\mathcal{O}}(B) \supseteq X_{\text{target}} \}$.”   
@@ -364,7 +364,7 @@ $$
 
 In general, for infinite target spaces or non‑finitary closure operators, a **minimum** need not exist; only an **infimum** of achievable cardinalities may be defined. To ensure that $k^{*}$ is a genuine minimum, we impose mild existence conditions.
 
-#### Existence assumptions
+### Existence assumptions
 
 We assume one of the following:
 
@@ -382,7 +382,7 @@ $$
 
 and the minimum is attained.
 
-#### Infinite and pathological cases
+### Infinite and pathological cases
 
 In more general settings, we may instead define:
 
@@ -392,7 +392,7 @@ $$
 
 allowing $k^{*}$ to be an infinite cardinal. In such cases, existence of bases may rely on additional set‑theoretic tools (e.g., Zorn’s lemma) and is not guaranteed without further assumptions. The present framework focuses on regimes where a finite minimal basis exists and the infimum is realized.
 
-### APPENDIX: Minimality vs. uniqueness of $B^*$ 
+## APPENDIX: Minimality vs. uniqueness of $B^*$ 
 
 > “These four conditions jointly characterize the unique minimal generative basis compatible with the invariant structure of the system.”   
 
@@ -429,12 +429,12 @@ In many algebraic contexts, automorphisms of the underlying structure act on $\m
 
 The framework therefore treats $k^{*}$ as the invariant **mode count**, and $\mathcal B^{*}$ as the (possibly large) class of admissible minimal generative bases realizing that count.
 
-### APPENDIX: Non‑redundancy and saturation 
+## APPENDIX: Non‑redundancy and saturation 
 
 > “Adding more primitives does not expand generative power.  
 > Every admissible primitive outside $B^{*}$ is redundant.”   
 
-#### Element-wise non‑redundancy
+### Element-wise non‑redundancy
 
 Non‑redundancy is formulated at the level of individual primitives. A basis $B^{*} \subseteq U_{\mathcal I}$ is **non‑redundant** if:
 
@@ -469,7 +469,7 @@ $$
 
 This stronger property is not assumed universally; it is invoked only when the generative system is intended to be fully saturated relative to $U_{\mathcal I}$.
 
-#### Relation to the original non‑redundancy condition
+### Relation to the original non‑redundancy condition
 
 The original condition
 
