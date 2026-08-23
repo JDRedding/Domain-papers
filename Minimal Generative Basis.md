@@ -542,7 +542,7 @@ Let:
 
 The minimal mode count is defined by:
 
-$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \left\{ |B| \;\middle|\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{RDG}} \right\}$$
+$$k^{*} = \min_{B \subseteq U_{\mathcal{I}}} \{ |B| \;|\; G_{\mathcal{O}}(B) \supseteq X_{\mathrm{RDG}} \}$$
 
 This quantity is strictly forced by the closure structure.
 
@@ -580,7 +580,7 @@ Modes 1 and 2 are structurally deficient; mode 3 is the infimum cardinality at w
 
 If every admissible primitive outside the minimal triad $B^*$ is already spanned by the closure:
 
-$$\forall\, p \in U_{\mathcal{I}} \setminus B^{*}, \qquad p \in G_{\mathcal{O}}(B^*)$$
+$$\forall\, p \in U_{\mathcal{I}} \setminus B^{\*}, \qquad p \in G_{\mathcal{O}}(B^*)$$
 
 then adjoining higher-order primitives yields zero generative gain:
 
