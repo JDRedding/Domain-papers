@@ -1,6 +1,8 @@
 # Leopold Kronecker
 Leopold Kronecker stands out as one of the 19th century’s most influential arithmeticians, and your summary captures the essentials well. Kronecker was a **German mathematician** born in 1823 in Liegnitz, Prussia, and died in 1891 in Berlin. The most important takeaway is that **Kronecker shaped algebraic number theory and foundational debates in mathematics**, especially through his finitist philosophy and his opposition to Cantor’s transfinite set theory. 
 
+Kronecker’s critique of non-constructive methods—once branded reactionary by contemporaries like Hilbert ("*No one shall expel us from the paradise that Cantor has created*") — proved remarkably prophetic with the advent of digital computation, algorithmic complexity, and mechanized formal proof assistants.
+
 ## 🧱 Legacy  
 Kronecker’s technical work remains central in:
 
