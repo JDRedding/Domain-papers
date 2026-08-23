@@ -55,14 +55,14 @@ This is the **canonical definition** of a minimal generative basis.
 
 $$
 B^\* = 
-\left\{
-B \subseteq U \;\middle|\;
+\{
+B \subseteq U \;|\;
 \begin{aligned}
 &G(B) = X_{\text{target}} \\
 &\land\; \forall B' \subsetneq B,\; G(B') \neq X_{\text{target}} \\
 &\land\; \forall B'' \supsetneq B,\; G(B'') = G(B)
 \end{aligned}
-\right\}
+\}
 $$
 
 It is the same definition used in:
