@@ -417,7 +417,7 @@ Thus, the **mode count** $k^{*}$ is unique, but the **minimal generative basis**
 Let
 
 $$
-\mathcal B^{*} = \{ B \subseteq U_{\mathcal I} \mid |B| = k^{*},\; G_{\mathcal O}(B) \supseteq X_{\text{target}} \}
+\mathcal B^{\*} = \{ B \subseteq U_{\mathcal I} \mid |B| = k^{\*},\; G_{\mathcal O}(B) \supseteq X_{\text{target}} \}
 $$
 
 denote the family of all minimal bases.
