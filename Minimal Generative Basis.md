@@ -114,8 +114,29 @@ $$
 
 This is the **Kolmogorov complexity** version of the principle.
 
-
 ## 🔥 Universal Conditions
+Concrete Realizations Across Domains
+
+The power of this formulation is that it maps identically across diverse formal systems:
+
+```
++---------------------+-------------------+-------------------+-------------------+
+| System              | Primitives (B*)   | Operations (O)    | Invariant Target  |
++---------------------+-------------------+-------------------+-------------------+
+| Linear Algebra      | Linearly indep.   | Linear            | Vector Space V    |
+|                     | vectors           | combinations      |                   |
+| Lie Algebra su(2)   | 3 Pauli / Spin    | Lie Bracket       | Rotational        |
+|                     | matrices          | [A, B] = AB - BA  | Symmetry SO(3)    |
+| Spacetime           | (t, x, y, z)      | Lorentz metric    | Causal Structure  |
+|                     | 4 coordinates     | η_μν              | & Invariance      |
+| Triad B (Evaluator) | {p, P, A}         | Memory decay,     | Stability Field   |
+| (Field Engine)      | 3 state variables | attractor map     | & Curvature       |
+| Triad A (Geometric) | {M, F, R}         | Coupling, counter-| Relational Motion |
+| (Kinetic Engine)    | 3 state variables | force, rotation   | & Trajectory      |
++---------------------+-------------------+-------------------+-------------------+
+
+```
+
 This is the **universal skeleton**.
 
 $$
