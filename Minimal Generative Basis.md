@@ -125,8 +125,6 @@ The power of this formulation is that it maps identically across diverse formal 
 |                     | matrices          | [A, B] = AB - BA  | Symmetry SO(3)    |
 | Spacetime           | (t, x, y, z)      | Lorentz metric    | Causal Structure  |
 |                     | 4 coordinates     | η_μν              | & Invariance      |
-| Triad B (Evaluator) | {p, P, A}         | Memory decay,     | Stability Field   |
-| (Field Engine)      | 3 state variables | attractor map     | & Curvature       |
 | Triad A (Geometric) | {M, F, R}         | Coupling, counter-| Relational Motion |
 | (Kinetic Engine)    | 3 state variables | force, rotation   | & Trajectory      |
 +---------------------+-------------------+-------------------+-------------------+
@@ -260,7 +258,7 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 1. **A Monad ($k=1$)** has only self-identity; it cannot produce differential dynamics or relational tension.
 2. **A Dyad ($k=2$)** produces oscillation, opposition, or collapse, but lacks an internal frame of reference or independent curvature.
 3. **A Triad ($k=3$)** is the minimal basis capable of hosting **relational opposition + memory/attractor mediation** without collapsing into a degenerate 1D/2D limit cycle.
-4. **Coupled Systems ($k=5$ or $2 \times 3$ with interlock)** form the minimal closed manifold where a field generator (Evaluative Field) and a kinetic actor (Geometric Motion) dynamically sustain and self-correct without external forcing.
+4. **Coupled Systems ($k=5$ or $2 \times 3$ with interlock)** form the minimal closed manifold where a kinetic generator  actor (Geometric Motion) dynamically sustain and self-correct without external forcing.
 
 ```
 +---+-------------------+------------------------------------+
