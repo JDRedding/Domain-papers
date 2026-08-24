@@ -15,7 +15,7 @@ Simplification drives the search for a single expression that answers:
 
 The universal form is:
 
-> **A generative system selects the smallest primitive operator set whose closure reproduces all required invariants, and for which no smaller set suffices and no larger set expands generative power.**
+> **A generative system selects the smallest primitive operator set whose closure reproduces required invariants, and for which no smaller set suffices and no larger set expands generative power.**
 
 This merges set‑theoretic minimality, logical quantification, and the complexity closure principle.
 
