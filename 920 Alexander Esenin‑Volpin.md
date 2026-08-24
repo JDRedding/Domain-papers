@@ -1,4 +1,6 @@
 # Alexander Esenin‑Volpin
+- 920 Biography
+  
 Alexander Esenin‑Volpin was a **Russian‑American mathematician, poet, and one of the earliest leaders of the Soviet human‑rights movement**, known especially for ultrafinitism and for pioneering a legalist strategy of dissent.  Esenin‑Volpin’s life and work form a rare triad: **foundational mathematics**, **legalist dissident strategy**, and **poetic expression**. 
 
 ## Education and Mathematical Career
