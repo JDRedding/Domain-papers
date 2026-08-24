@@ -125,7 +125,7 @@ The power of this formulation is that it maps identically across diverse formal 
 |                     | matrices          | [A, B] = AB - BA  | Symmetry SO(3)    |
 | Spacetime           | (t, x, y, z)      | Lorentz metric    | Causal Structure  |
 |                     | 4 coordinates     | η_μν              | & Invariance      |
-| Triad A (Geometric) | {M, F, R}         | Coupling, counter-| Relational Motion |
+| Triad (Geometric)   | {M, F, C}         | Coupling, counter-| Relational Motion |
 | (Kinetic Engine)    | 3 state variables | force, rotation   | & Trajectory      |
 +---------------------+-------------------+-------------------+-------------------+
 
