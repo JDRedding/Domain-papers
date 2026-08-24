@@ -1608,14 +1608,13 @@ Under $\mathcal O_{\mathrm{MFE}}$:
 
 - $M, F$ generates instantaneous flux.  
 - $C$ generates autonomous counter‑force stabilization.  
-- $Q$ maintains orientation/phase curvature.
 
 Together, these generate:
 
 - non‑equilibrium flux cycles,  
 - stable orientation,  
-- integrated attractor behavior,  
-- autonomous correction dynamics.
+- integrated behavior,  
+- autonomous dynamics.
 
 Thus:
 
