@@ -305,7 +305,7 @@ $$
 
 So Relational/Dynamic becomes:
 
-- **Relational:** how relations are structured and transfoMasterd under **Structural constraints**.
+- **Relational:** how relations are structured and transformed under **Structural constraints**.
 - **Dynamic:** how those relations evolve and survive under **Power constraints**.
 
 ### Survival / feasibility operator
