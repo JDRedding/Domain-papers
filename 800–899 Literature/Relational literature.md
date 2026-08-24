@@ -90,7 +90,7 @@ Interaction = the **I‑frame**: the relational forces, tensions, and exchanges 
 
 **Operator form:**  
 
-$$I_{\text{lit}} = \text{Relational\_Forces}( \text{care}, \text{power}, \text{exchange})$$
+$$I_{\text{lit}} = \text{Interaction}_{Forces}^{Relational} ( \text{care}, \text{power}, \text{exchange})$$
 
 **Questions this mode answers:**  
 - How do relationships *behave*?  
