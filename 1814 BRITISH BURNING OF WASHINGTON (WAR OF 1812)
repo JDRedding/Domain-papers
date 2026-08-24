@@ -1,0 +1,99 @@
+1814 BRITISH BURNING OF WASHINGTON (WAR OF 1812)
+RDG–MFE–Q MODEL
+
+ 1. RDG: RELATIONAL GRAPH
+========================
+
+  NODES:
+    [BRIT_CMD]   British command (Ross, Cockburn)
+    [BRIT_FORCE] British expeditionary troops
+    [US_CMD]     Madison, Monroe, Winder, Armstrong
+    [US_FORCE]   Militia + regulars
+    [CAPITAL]    Washington institutional nodes
+    [BLADEN]     Bladensburg defensive line
+    [CIVPOP]     Civilians + info channels
+    [GEO]        Potomac + approach routes
+    [WEATHER]    Storm system
+
+  EDGES (DYNAMIC):
+    BRIT_FORCE -> BLADEN        (attack adjacency)
+    US_FORCE   -> BLADEN        (defense adjacency)
+    BLADEN     -> CAPITAL       (defense corridor)
+    BRIT_FORCE -> CAPITAL       (opens after BLADEN collapse)
+    US_CMD     -> CAPITAL       (authority locus)
+    US_CMD     -> COVERT_MOVE   (flight to Brookeville)
+    WEATHER    -> CAPITAL       (environmental constraint)
+
+  GEOMETRY EVENTS:
+    - BLADEN collapse = edge deletion of US defense
+    - CAPITAL undefended = new high-weight BRIT_FORCE -> CAPITAL edge
+    - EXECUTIVE displacement = US_CMD node translation
+    - SYMBOLIC TARGETING = weight increase on CAPITOL, WHITE_HOUSE nodes
+
+ 2. MFE: MOMENTUM-FLUX ENGINE
+========================
+
+  FLUX FIELDS:
+    F_brit_pos   = +momentum (cohesive expeditionary force)
+    F_us_neg     = -coherence (militia disorganization)
+    F_fire       = destructive flux on structural nodes
+    F_info       = degraded communication flux
+
+  LOCAL UPDATE RULES:
+    Γ_accumulation:
+      - Victory at BLADEN increases F_brit_pos
+      - Collapse of US defense amplifies F_fire admissibility
+      - Symbolic nodes accumulate destructive flux faster
+
+  PROPAGATION:
+    BRIT_FORCE moves → flux propagates along GEO edges
+    FIRE spreads → flux propagates across CAPITAL structure nodes
+    PANIC spreads → negative flux propagates through CIVPOP + US_CMD
+
+ 3. Q: QUOTIENT / ADMISSIBILITY
+========================
+
+  BOUNDS:
+    Q_logistics: British cannot occupy long-term (supply constraint)
+    Q_doctrine: punitive raid allowed; annexation not admissible
+    Q_weather: storm imposes forced projection
+    Q_symbolic: burning federal buildings admissible as retaliation
+
+  TEST:
+    If Γ(X_t) violates any Q-bound:
+        apply σ_projection
+
+  σ-PROJECTION EVENTS:
+    - Selective burning (not total destruction)
+    - Rapid withdrawal (~26 hours)
+    - Storm extinguishes fires → environmental σ-projection
+    - US government reconstitutes → return to stable simplex
+
+ 4. δ: INSTABILITY GRADIENTS
+========================
+
+  δ-peaks:
+    δ_bladensburg = catastrophic mismatch (expected defense vs collapse)
+    δ_capital     = undefended national capital
+    δ_symbolic    = burning of Capitol + White House
+    δ_exec_move   = Madison’s flight (authority displacement)
+
+ 5. DISCRETE PIPELINE (Γ → Q → σ/δ)
+========================
+
+  t0: US militia-heavy defense; British expedition prepares
+  t1: Γ-update → BLADEN collapse → geometry deformation
+  t2: Q-test → punitive burn admissible; occupation not
+  t3: σ-projection → storm + withdrawal
+  t4: δ-extraction → identify instability peaks
+
+ 6. EMERGENT INTERPRETATION
+========================
+
+  The burning is a flux-closure event:
+    - Defensive geometry collapses
+    - British momentum field surges
+    - Symbolic nodes absorb destructive flux
+    - Q-bounds enforce short duration
+    - σ-projection restores system stability
+
