@@ -257,7 +257,7 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 
 1. **A Monad ($k=1$)** has only self-identity; it cannot produce differential dynamics or relational tension.
 2. **A Dyad ($k=2$)** produces oscillation, opposition, or collapse, but lacks an internal frame of reference or independent curvature.
-3. **A Triad ($k=3$)** is the minimal basis capable of hosting **relational opposition + memory/attractor mediation** without collapsing into a degenerate 1D/2D limit cycle.
+3. **A Triad ($k=3$)** is the minimal basis capable of hosting **relational opposition + attractor mediation** without collapsing into a degenerate 1D/2D limit cycle.
 4. **Coupled Systems ($k=5$ or $2 \times 3$ with interlock)** form the minimal closed manifold where a kinetic generator  actor (Geometric Motion) dynamically sustain and self-correct without external forcing.
 
 ```
@@ -268,7 +268,7 @@ In bounded, self-correcting systems (such as slow–fast relational architecture
 |   | (Deficient)       | relational differential.           |
 | 2 | Dyadic            | Binary opposition; collapse into   |
 |   | (Deficient)       | 1D line or static 2D limit cycle.  |
-| 3 | Triadic           | Irreducible curvature, memory-     |
+| 3 | Triadic           | Irreducible curvature              |
 |   | (Minimal k*=3)    | integrated attractor mediation.    |
 | 5 | Coupled Dual      | Full non-forcing self-sustenance   |
 |   | (Triad A + B)     | (Field Engine + Kinetic Engine).   |
@@ -1216,16 +1216,16 @@ The RDG triad $\{M, F, R\}$ is therefore:
 
 ### **RDG Invariant Set**
 
-$\mathcal I_{\mathrm{RDG}}$ : Relational curvature - memory mediation
+$\mathcal I_{\mathrm{RDG}}$ : Relational curvature - mediation
 
-RDG is defined by a specific invariant structure capturing relational motion, curvature, and memory‑mediated attractor behavior. The invariant set is:
+RDG is defined by a specific invariant structure capturing relational motion, curvature, and mediated attractor behavior. The invariant set is:
 
 $$
 \mathcal I_{\mathrm{RDG}} = 
 \{
 \text{(i) relational curvature},\;
 \text{(ii) bidirectional interaction},\;
-\text{(iii) memory/attractor mediation}
+\text{(iii) attractor mediation}
 \}.
 $$
 
@@ -1233,7 +1233,7 @@ These invariants are **externally specified** and do not depend on any candidate
 
 - **Relational curvature** requires a non‑degenerate triadic relational frame.  
 - **Bidirectional interaction** requires at least two independent relational axes.  
-- **Memory/attractor mediation** requires a third independent mode to prevent collapse into a dyadic limit cycle.
+- **Attractor mediation** requires a third independent mode to prevent collapse into a dyadic limit cycle.
 
 ### **Admissible Primitive Universe**
 RDG primitives
@@ -1268,7 +1268,7 @@ $$
 \text{relational coupling},\;
 \text{counter‑force interaction},\;
 \text{curvature update},\;
-\text{memory‑mediated attractor evolution}
+\text{mediated attractor evolution}
 \}.
 $$
 
@@ -1296,7 +1296,7 @@ This includes:
 
 - non‑degenerate relational curvature,  
 - stable relational trajectories,  
-- memory‑mediated attractor behavior,  
+- mediated attractor behavior,  
 - bidirectional counter‑force dynamics.
 
 ### **Theorem Statement**
@@ -1333,7 +1333,7 @@ Under $\mathcal O_{\mathrm{RDG}}$:
 - $M$ generates relational motion.  
 - $F$ generates counter‑force and bidirectional interaction.  
 - $R$ generates curvature and rotational mediation.  
-- The combination generates memory‑mediated attractor behavior.
+- The combination generates mediated attractor behavior.
 
 Thus:
 
@@ -1354,7 +1354,7 @@ Any monadic system collapses to:
 - self‑identity only,  
 - no relational curvature,  
 - no bidirectional interaction,  
-- no memory‑mediated attractor behavior.
+- no mediated attractor behavior.
 
 Thus:
 
@@ -1444,7 +1444,7 @@ $$\exists\, B^\* \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B^*\vert{
 
 $$\forall\, B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B\vert{} < 4 \quad\Longrightarrow\quad G_{\mathcal{O}}(B) \not\supseteq X_{\mathrm{MFE}}.$$
 
-*No 1-, 2-, or 3-element primitive set can simultaneously sustain dynamic coupling, orientation, memory integration, and autonomous counter-force stabilization under $\mathcal{O}$.*
+*No 1-, 2-, or 3-element primitive set can simultaneously sustain dynamic coupling, orientation, integration, and autonomous counter-force stabilization under $\mathcal{O}$.*
 
 Together, these conditions yield:
 
@@ -1456,7 +1456,7 @@ $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynam
 
 * **$k = 1, 2$:** Fail to construct non-degenerate phase curvature or reciprocal flux.
 * **$k = 3$:** Spans static geometric relationality ($X_{\mathrm{RDG}}$), but fails autonomous self-sustaining dynamic equilibrium without external driving.
-* **$k = 4$:** Minimal threshold where stability feedback, memory accumulation, and momentum-flux coupling achieve complete closure.
+* **$k = 4$:** Minimal threshold where stability feedback, accumulation, and momentum-flux coupling achieve complete closure.
 
 ### Saturation and Non-Redundancy
 
@@ -1577,7 +1577,7 @@ This includes:
 
 - stable flux cycles,  
 - orientation‑preserving curvature,  
-- memory‑integrated attractor behavior,  
+- integrated attractor behavior,  
 - reciprocal counter‑force stabilization.
 
 ### **Theorem Statement**
@@ -1614,7 +1614,7 @@ Together, these generate:
 
 - non‑equilibrium flux cycles,  
 - stable orientation,  
-- memory‑integrated attractor behavior,  
+- integrated attractor behavior,  
 - autonomous correction dynamics.
 
 Thus:
@@ -1634,7 +1634,6 @@ Monadic systems cannot:
 
 - sustain flux cycles,  
 - maintain orientation,  
-- accumulate memory,  
 - generate counter‑force stabilization.
 
 Thus:
@@ -1648,7 +1647,6 @@ Dyadic systems collapse into:
 
 - binary flux opposition,  
 - no independent orientation mode,  
-- no memory integration,  
 - no autonomous stabilization.
 
 Thus:
@@ -1664,8 +1662,7 @@ Triadic systems can generate:
 
 - relational geometry (RDG),  
 - curvature,  
-- bidirectional interaction,  
-- memory‑mediated attractors.
+- bidirectional interaction
 
 But they **cannot** generate:
 
