@@ -1,6 +1,12 @@
 # 💫 **Universal bound vs Cosmological bound**  
 Difference between a **universal bound** and a **cosmological bound**, the distinction matters for cosmology work.
 
+This note distinguishes between two types of physical bounds in cosmology:
+
+**Universal Bounds** are environment-independent constraints that apply to any physical system regardless of context. They don't depend on the cosmological constant (Λ), horizon size, or expansion history. Examples include the Bekenstein entropy bound and bounded trajectories in dynamical systems. These represent local physics limits.
+
+**Cosmological Bounds** are constraints that depend on the global structure of spacetime, particularly the cosmological constant or horizon geometry. They change when the universe's large-scale properties change. The Buchdahl compactness bound is a key example—the classical limit (GM/Rc² ≤ 4/9) gets modified when Λ ≠ 0.
+
 The moment Λ enters the equations, the bound is no longer “universal.”  
 It becomes **contingent on the universe’s actual large‑scale configuration**.
 
