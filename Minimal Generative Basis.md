@@ -1850,7 +1850,7 @@ RDG and MFE primitives behave like:
 Their expressive universes are:
 
 - all relational geometries reachable by composing $M, F, R$,  
-- all flux dynamics reachable by composing $p, P, A, Q$.
+- all flux dynamics reachable by composing $M, F, C_m, C_f$.
 
 Thus:
 
