@@ -351,7 +351,7 @@ Thus the classical objection:
 
 > “Where is the cutoff?”
 
-is formally ill‑posed. It assumes a global domain \( \mathbb{N} \) whose boundary must be specified.  
+is formally ill‑posed. It assumes a global domain $\mathbb{N}$ whose boundary must be specified.  
 But in bounded or feasible arithmetic, domains are **parameterized**:
 
 $$
@@ -405,7 +405,7 @@ $$
 \forall n < f(R), \quad P(n)
 $$
 
-where \( f(R) \) is a resource‑indexed bound.
+where $f(R)$ is a resource‑indexed bound.
 
 Thus the classical objection:
 
