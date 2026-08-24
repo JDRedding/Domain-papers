@@ -1444,7 +1444,7 @@ $$\exists\, B^\* \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B^*\vert{
 
 $$\forall\, B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}},\quad \vert{}B\vert{} < 4 \quad\Longrightarrow\quad G_{\mathcal{O}}(B) \not\supseteq X_{\mathrm{MFE}}.$$
 
-*No 1-, 2-, or 3-element primitive set can simultaneously sustain dynamic coupling, orientation, integration, and autonomous counter-force stabilization under $\mathcal{O}$.*
+*No 1-, 2-, or 3-element primitive set can simultaneously sustain dynamic coupling, orientation, integration, and autonomous counter-force stabilization under $O$ .
 
 Together, these conditions yield:
 
@@ -1456,7 +1456,7 @@ $$\boxed{\begin{array}{c} k = 1 \\ k = 2 \\ k = 3 \end{array} \;\text{fail dynam
 
 * **$k = 1, 2$:** Fail to construct non-degenerate phase curvature or reciprocal flux.
 * **$k = 3$:** Spans static geometric relationality ($X_{\mathrm{RDG}}$), but fails autonomous self-sustaining dynamic equilibrium without external driving.
-* **$k = 4$:** Minimal threshold where stability feedback, accumulation, and momentum-flux coupling achieve complete closure.
+* **$k = 4$:** Minimal threshold where stability feedback and momentum-flux coupling achieve complete closure.
 
 ### Saturation and Non-Redundancy
 
