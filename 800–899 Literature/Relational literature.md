@@ -119,7 +119,7 @@ $$D_{\text{lit}} = \partial_t ( S_{\text{lit}}, I_{\text{lit}})$$
 - What temporal processes reshape meaning?  
 - How does the text’s relational system transform across narrative time?
 
-# 🧩 Full Tri‑Mode Matrix (ASCII‑stable)
+## 🧩 Full Tri‑Mode Matrix (ASCII‑stable)
 
 ```
 +------------------+------------------------------+----------------------------------+
