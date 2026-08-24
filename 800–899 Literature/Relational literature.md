@@ -68,9 +68,7 @@ Structure = the **S‑frame**: the stable relational geometry that constrains po
 
 **Operator form:**  
 
-$$
-S_{\text{lit}} = \text{Relational\_Topology}( \text{characters}, \text{texts}, \text{contexts} )
-$$
+$$S_{\text{lit}} = \text{Structure}_{Topology}^{Relational}( \text{characters}, \text{texts}, \text{contexts})$$
 
 **Questions this mode answers:**  
 - What is the relational map of the text?  
@@ -92,9 +90,7 @@ Interaction = the **I‑frame**: the relational forces, tensions, and exchanges 
 
 **Operator form:**  
 
-$$
-I_{\text{lit}} = \text{Relational\_Forces}( \text{care}, \text{power}, \text{exchange} )
-$$
+$$I_{\text{lit}} = \text{Relational\_Forces}( \text{care}, \text{power}, \text{exchange})$$
 
 **Questions this mode answers:**  
 - How do relationships *behave*?  
@@ -116,9 +112,7 @@ Dynamics = the **D‑frame**: the time‑dependent evolution of relational state
 
 **Operator form:**
 
-$$
-D_{\text{lit}} = \partial_t ( S_{\text{lit}}, I_{\text{lit}} )
-$$
+$$D_{\text{lit}} = \partial_t ( S_{\text{lit}}, I_{\text{lit}})$$
 
 **Questions this mode answers:**  
 - How do relationships evolve?  
