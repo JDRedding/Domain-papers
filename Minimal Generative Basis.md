@@ -1480,7 +1480,7 @@ $$
 k^{\*}_{\mathrm{MFE}} = 4.
 $$
 
-The MFE basis $\{p, P, A, Q\}$ is therefore:
+The MFE basis $\{M, F, C_m, C_m\}$ is therefore:
 
 - **complete**,  
 - **minimal**,  
@@ -1512,7 +1512,6 @@ $$
 \{
 \text{(i) momentum–flux coupling},\;
 \text{(ii) orientation/phase curvature},\;
-\text{(iii) memory accumulation},\;
 \text{(iv) autonomous counter‑force stabilization}
 \}.
 $$
@@ -1524,7 +1523,6 @@ Each invariant requires an independent dynamical degree of freedom:
 
 - **Flux coupling** → requires a mode that carries momentum exchange.  
 - **Orientation/phase curvature** → requires a mode that maintains rotational/phase structure.  
-- **Memory accumulation** → requires a slow variable integrating past flux.  
 - **Counter‑force stabilization** → requires a mode generating reciprocal correction.
 
 ### **Admissible Primitive Universe**
@@ -1533,17 +1531,12 @@ MFE primitives : $U_{\mathcal I_{\mathrm{MFE}}}$
 
 From the invariants, the admissible primitive universe is:
 
-$$U_{\mathcal I_{\mathrm{MFE}}}=\{ p,\; P,\; A,\; Q,\; \text{all invariant‑compatible flux primitives} \}.$$
+$$U_{\mathcal I_{\mathrm{MFE}}}=\{ M,\; F,\; C_m,\; C_m,\; \text{all invariant‑compatible flux primitives} \}.$$
 
 Where the canonical MFE primitives are:
 
-- $p$ — **instantaneous momentum input**  
-- $P$ — **persistent momentum memory / accumulator**  
-- $A$ — **autonomous counter‑force / attractor mode**  
-- $Q$ — **orientation/phase curvature mode**
-
-These correspond to the PED triad plus the required orientation mode.
-
+- $M, F$ — **instantaneous momentum input**  
+- $C$ — **autonomous counter‑force / attractor mode**  
 
 ### **MFE Operation Algebra**
 
@@ -1556,8 +1549,6 @@ $$
 \{
 \text{flux coupling},\;
 \text{momentum transfer},\;
-\text{orientation update},\;
-\text{memory integration},\;
 \text{autonomous counter‑force evolution}
 \}.
 $$
@@ -1601,7 +1592,7 @@ $$k^{\*}_{\mathrm{MFE}}=\min_{B \subseteq U_{\mathcal{I}_{\mathrm{MFE}}}}\{ |B| 
 
 The proof has two parts: **existence** and **minimality**.
 
-## **I.7.1 Existence of a Complete 4‑Mode Basis**
+## **Existence of a Complete 4‑Mode Basis**
 
 4‑mode completeness
 
@@ -1610,14 +1601,13 @@ We show that a 4‑element set exists whose closure spans the entire MFE express
 Let:
 
 $$
-B^{\*} = \{ p,\; P,\; A,\; Q \}.
+B^{\*} = \{ M,\; F,\; C_m,\; C_f \}.
 $$
 
 Under $\mathcal O_{\mathrm{MFE}}$:
 
-- $p$ generates instantaneous flux.  
-- $P$ accumulates momentum memory.  
-- $A$ generates autonomous counter‑force stabilization.  
+- $M, F$ generates instantaneous flux.  
+- $C$ generates autonomous counter‑force stabilization.  
 - $Q$ maintains orientation/phase curvature.
 
 Together, these generate:
