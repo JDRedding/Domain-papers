@@ -325,6 +325,10 @@ $$
 
 That’s relational‑style “long‑term viability” test.
 
+## Future work
+- Formalize the Λ‑dependent Power‑operator 
+- Derive the bound directly from the Λ‑TOV equation
+
 ## 🧩 Further reading
 - [Comptes Rendus](https://comptes-rendus.academie-sciences.fr/mathematique/item/10.5802/crmath.796.pdf). The universal bound property. Volume 363(2025), p.1499-1506
 - Optimizing entropy bounds for macroscopic systems [arXiv.org](https://arxiv.org/pdf/1404.1802)  
