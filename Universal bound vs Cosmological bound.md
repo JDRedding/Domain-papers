@@ -326,5 +326,5 @@ $$
 That’s relational‑style “long‑term viability” test.
 
 ## 🧩 Further reading
-- [Comptes Rendus](https://comptes-rendus.academie-sciences.fr/mathematique/item/10.5802/crmath.796.pdf)
+- [Comptes Rendus](https://comptes-rendus.academie-sciences.fr/mathematique/item/10.5802/crmath.796.pdf). The universal bound property. Volume 363(2025), p.1499-1506
 - Optimizing entropy bounds for macroscopic systems [arXiv.org](https://arxiv.org/pdf/1404.1802)  
