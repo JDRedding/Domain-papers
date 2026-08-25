@@ -114,6 +114,7 @@ This is the **finite algebraic universe**.
 ---
 
 : **Algebraic closure does not exist**
+
 It is a **finite algebraic structure**.
 
 Classically:
