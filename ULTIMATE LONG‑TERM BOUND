@@ -321,3 +321,11 @@ III.  FORMAL FINITE–PRECISION REAL SYSTEM SUPPORTING ANALYSIS
       • Eliminates all infinities
       • Makes π, e, φ, etc. finite representational objects
 
+  Technical notes
+  - Rounded arithmetic is not itself a field; the interval system 
+    is the rigorous carrier of the analysis.
+  - The bound is an order-of-magnitude physical upper limit, not a 
+    sharp mathematical constant.
+  - Definitional complexity of remains finite; only expansion/
+    approximation depth is being capped.
+
