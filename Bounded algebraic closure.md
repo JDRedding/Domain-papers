@@ -1,4 +1,5 @@
 # Bounded algebraic closure
+Part of the ULTIMATE LONG‑TERM BOUND series
 - Capped by: Bekenstein, cosmological info, Lloyd
 - Not capped by: Planck time directly
 
