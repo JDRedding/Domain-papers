@@ -42,7 +42,7 @@ Ultra‑finitism rejects all of these.
 ---
 
 ## **Bounded real precision**
-: the ultrafinitist replacement  
+: The ultrafinitist replacement  
 This interval **replaces** the infinite decimal expansion. It is the **physically realizable real number**.
 
 Under physical ceilings, a real number is represented only up to a **finite maximum precision** $N_{max}$ :
@@ -86,7 +86,7 @@ No matter how large $N_{\max}$ is, it is **finite**.
 ---
 
 ## **Consequence**
-: the real line is not a continuum  
+: The real line is not a continuum  
 The classical real line $\mathbb{R}$ is replaced by a **finite grid**:
 
 $$
