@@ -1,4 +1,7 @@
 ULTIMATE LONG‑TERM BOUND 
+--------------------------------
+PHYSICAL INFORMATION & COMPUTATION BOUNDS
+(Maximum Representational Depth Ceilings)
 
     Every mathematical object x has a finite maximum representational
     depth D_max(x), determined by:
@@ -11,48 +14,116 @@ ULTIMATE LONG‑TERM BOUND
     → No unbounded potential infinities.
     → All structures are finite, bounded, and physically constrained.
 
-  I. PHYSICAL INFORMATION CEILINGS
-  --------------------------------
-    • Bekenstein Bound
+UNIFIED STATEMENT (representational depth)
+   For any mathematical object M:
+
+   depth(M) ≤ f( I_max , Ops_max , ℓ_P , t_P , … )
+
+   where I_max and Ops_max are fixed by the bounds above.
+   All classical infinities are replaced by these finite ceilings.
+
+I. PHYSICAL INFORMATION CEILINGS
+--------------------------------
+• Bekenstein Bound
         S ≤ (2π k R E) / (ħ c)
         → Max information in finite region.
 
-    • Holographic Principle
+   Notation:
+   S   = entropy / information content (nats or bits)
+   k_B = Boltzmann constant
+   R   = radius of the region
+   E   = total energy contained in the region
+   ħ   = reduced Planck constant
+   c   = speed of light
+
+• Holographic Principle
         I_max ∝ A / (4 L_P^2)
         → Bits scale with AREA, not volume.
 
-    • Cosmological Information Limit
+ HOLOGRAPHIC PRINCIPLE (Bekenstein-Hawking / covariant form)
+   S ≤ A / (4 ℓ_P²)
+
+   Notation:
+   S    = maximum entropy
+   A    = surface area of the boundary
+   ℓ_P  = Planck length = √(ħ G / c³)
+   G    = gravitational constant
+
+• Cosmological Information Limit (observable universe)
         I_total ≈ 10^122 bits
         → Finite information in observable universe.
 
-  II. PHYSICAL COMPUTATION CEILINGS
-  ---------------------------------
-    • Seth Lloyd Bound
+ INFORMATION LIMIT 
+   I_univ ≲ 10¹²² bits
+   (order-of-magnitude from horizon area / 4 ℓ_P²)
+
+II. PHYSICAL COMPUTATION CEILINGS
+---------------------------------
+
+• Seth Lloyd Bound
         Ops_total ≤ 10^120
         → Max operations universe can perform.
 
-    • Bremermann Limit
+ LLOYD BOUND (total operations the universe can perform)
+   #ops ≤ (2 E t) / (π ħ)
+
+   For the observable universe (order of magnitude):
+   #ops ≲ 10¹²⁰
+
+   Notation:
+   E = total energy available
+   t = age of the universe (or available time)
+
+• Bremermann Limit
         Rate ≤ 10^50 bits/s/kg
         → Max computation rate per mass.
 
-    • Margolus–Levitin Bound
+   Rate ≤ c² / h  ≈ 1.356 × 10⁵⁰ bits s⁻¹ kg⁻¹
+
+   Notation:
+   c = speed of light
+   h = Planck constant
+
+• Margolus–Levitin Bound
         τ_perp ≥ πħ / (2E)
         → Quantum speed limit for state transitions.
 
-    • Entropy / Landauer Bound
+   MARGOLUS–LEVITIN BOUND (quantum speed limit)
+   τ_⊥ ≥ (π ħ) / (2 E)
+
+   Equivalent rate:
+   ops/sec ≤ (2 E) / (π ħ)
+
+   Notation:
+   τ_⊥ = minimum time to reach an orthogonal state
+   E   = average energy above ground state
+
+• Entropy / Landauer Bound
         E_min = kT ln 2 per irreversible bit
         → Minimum energy cost of erasure.
 
-    • Heat‑Death Limit
+ LANDAUER’S PRINCIPLE (entropy bound on irreversible computation)
+   E_erase ≥ k_B T ln 2   per bit
+
+   Notation:
+   T = temperature of the heat bath
+
+• Heat‑Death Limit
         → Computation halts as universe approaches thermal equilibrium.
 
-  III. PLANCK‑SCALE CUTOFFS
-  -------------------------
+III. PLANCK‑SCALE CUTOFFS
+-------------------------
     • Minimum length:  L_P
     • Minimum time:    t_P
     • Minimum energy:  E_P
     • Minimum action:  ħ
         → Hard limit on resolution, precision, divisibility.
+
+  PLANCK-CUTOFFS (resolution floors)
+   ℓ_P = √(ħ G / c³)          ≈ 1.616 × 10⁻³⁵ m
+   t_P = √(ħ G / c⁵)          ≈ 5.391 × 10⁻⁴⁴ s
+   E_P = √(ħ c⁵ / G)          ≈ 1.956 × 10⁹ J
+   S_P = ħ                    (Planck action)
 
   IV. BOUNDED MATHEMATICAL STRUCTURES
   -----------------------------------
@@ -84,4 +155,6 @@ ULTIMATE LONG‑TERM BOUND
 
     • Long‑term (macro)
         → Absolute physical ceilings from Sections I–III.
+
+===============================================================================
 
