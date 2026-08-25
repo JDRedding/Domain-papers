@@ -1,5 +1,5 @@
 # **Bounded p‑adic depth** 
-A p‑adic valuation and expansion of a number **not allowed to extend arbitrarily far**.  
+A p‑adic valuation and expansion of a number is **not allowed to extend arbitrarily far**.  
 Instead, they terminate at a **finite, physically‑determined maximum depth**.
 
 **Bounded p‑adic depth** means:
