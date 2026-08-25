@@ -1,4 +1,4 @@
-**Bounded p‑adic depth** 
+# **Bounded p‑adic depth** 
 A p‑adic valuation and expansion of a number **not allowed to extend arbitrarily far**.  
 Instead, they terminate at a **finite, physically‑determined maximum depth**.
 
