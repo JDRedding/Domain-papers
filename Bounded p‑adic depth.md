@@ -129,6 +129,5 @@ $$
 
 ## Future work
 
-- bounded p‑adic valuation operator  
-- finite p‑adic algebra  
-- bounded p‑adic metric
+- bounded p‑adic valuation operator and bounded p‑adic metrics
+- finite p‑adic algebra 
