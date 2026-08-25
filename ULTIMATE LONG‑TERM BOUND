@@ -205,7 +205,7 @@ Mathematical consequences asserted
 Translate the physical ceilings into restrictions on mathematical practice:
 
 - only finite real precision (no infinite decimal expansions),
-- finite \(p\)-adic depth,
+- finite p-adic depth,
 - finite algebraic extension towers,
 - finite iteration depth for algorithms,
 - discretized topology (no infinite refinement of neighborhoods).
