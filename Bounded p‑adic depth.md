@@ -22,7 +22,7 @@ with:
 - finite valuation depth  
 - finite diagnostic algebra
 
-## **1. Classical p‑adic depth (unbounded)** 
+## **Classical p‑adic depth (unbounded)** 
 This requires **unbounded potential infinity**.
 
 Classically, the p‑adic valuation $v_p(x)$ can be arbitrarily large:
@@ -38,7 +38,7 @@ $$
 v_p(x) = 0,1,2,3,\ldots,\infty
 $$
 
-## **2. Bounded p‑adic depth**
+## **Bounded p‑adic depth**
 : the ultrafinitist replacement
 
 This finite vector **replaces** the infinite p‑adic expansion.
@@ -61,7 +61,7 @@ $$
 D_p(x) = (x \bmod p^1,\; x \bmod p^2,\; \ldots,\; x \bmod p^{N_{\max}})
 $$
 
-## **3. Why the depth is bounded**  
+## **Why the depth is bounded**  
 Because deeper valuations require:
 
 - more bits  
@@ -87,7 +87,7 @@ No matter how large $N_{\max}$ is, it is **finite**.
 
 ---
 
-## **4. Consequence**
+## **Consequence**
 : p‑adics do not exist as fields
 
 This is a **bounded diagnostic system**, not a field.
@@ -108,7 +108,7 @@ $$
 
 ---
 
-## **5. What replaces the p‑adic metric** 
+## **What replaces the p‑adic metric** 
 This metric:
 
 - is finite  
