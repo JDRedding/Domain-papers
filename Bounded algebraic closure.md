@@ -1,3 +1,7 @@
+# Bounded algebraic closure
+- Capped by: Bekenstein, cosmological info, Lloyd
+- Not capped by: Planck time directly
+
 **Bounded algebraic closure** is the ultrafinitist statement that *no algebraic structure can support an infinite tower of field extensions*, because every extension requires representational depth, information, and computation — all of which are physically finite.
 
 **Bounded algebraic closure** means:
