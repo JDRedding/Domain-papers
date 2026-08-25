@@ -336,3 +336,13 @@ III.  FORMAL FINITE–PRECISION REAL SYSTEM SUPPORTING ANALYSIS
     sharp mathematical constant.
   - Definitional complexity of pi remains finite; only expansion/
     approximation depth is being capped.
+
+Further reading
+---------------
+- Ultimate physical limits to computation, Seth Lloyd (MIT) 
+  https://arxiv.org/abs/quant-ph/9908043 
+- To the finite information content of the physically existing 
+  reality, Wolfgang Orthuber https://arxiv.org/abs/quant-ph/0108121
+- Physics without Determinism: Alternative Interpretations of 
+  Classical Physics, Flavio Del Santo, Nicolas Gisin
+  https://arxiv.org/abs/1909.03697
