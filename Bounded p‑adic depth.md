@@ -1,6 +1,6 @@
 # **Bounded p‑adic depth** 
-Capped by: Bekenstein, holography, cosmological info, Planck length
-Not capped by: Margolus–Levitin directly
+- Capped by: Bekenstein, holography, cosmological info, Planck length
+- Not capped by: Margolus–Levitin directly
 
 A p‑adic valuation and expansion of a number is **not allowed to extend arbitrarily far**.  
 Instead, they terminate at a **finite, physically‑determined maximum depth**.
