@@ -189,6 +189,5 @@ RDG becomes a **finite relational geometry**, not an infinite one.
 
 ## Future work
 
-- **finite SID/PED depth law**  
+- **finite SID/PED depth laws**  
 - **finite relational closure operator**  
-- **finite RDG geometry**  
