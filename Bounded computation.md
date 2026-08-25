@@ -1,4 +1,5 @@
 # Bounded computation
+Part of the ULTIMATE LONG‑TERM BOUND series
 - Capped by: Lloyd, Bremermann, Margolus–Levitin, Landauer
 - Not capped by: holography directly
 
