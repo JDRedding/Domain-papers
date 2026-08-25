@@ -1,3 +1,7 @@
+# Bounded real precision
+- Capped by: Bekenstein, cosmological info, Planck length
+- Not capped by: Bremermann directly
+
 **Bounded real precision** means the real numbers do **not** form an infinite continuum and do **not** support infinite decimal expansions. Instead, every real number has a **finite maximum precision**, determined by the physical information and computation limits of the universe.
 
 **Bounded real precision** means:
