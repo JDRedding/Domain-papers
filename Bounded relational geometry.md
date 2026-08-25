@@ -1,3 +1,6 @@
+# Bounded relational geometry
+Part of the ULTIMATE LONG‑TERM BOUND series
+
 **Bounded relational geometry** is the ultrafinitist version of the RDG/SID/PED framework once the *physical ceilings* are imposed.  It is the statement that **relations, modes, interactions, and geometric closures cannot refine indefinitely**. This is the deepest of the bounded‑structure consequences, because RDG is *already* a geometry of relations rather than points. Every relational structure has a **finite maximum representational depth**, fixed by the universe’s information and computation limits. 
 
 Bounded relational geometry tells how far those relations can go.
