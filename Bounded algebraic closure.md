@@ -25,7 +25,7 @@ This is the ultrafinitist algebraic universe.
 
 ---
 
-## **Classical algebraic closure assumpyions** 
+## **Classical algebraic closure assumptions** 
 : **infinite extension towers**
 
 In classical mathematics, you can build an infinite chain:
