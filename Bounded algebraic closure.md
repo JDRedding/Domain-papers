@@ -85,7 +85,7 @@ Therefore:
 
 Call this depth $N_{\max}$.
 
-## **Acyual bounded algebraic closure**
+## **Actual bounded algebraic closure**
 
 Instead of:
 
