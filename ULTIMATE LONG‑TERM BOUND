@@ -350,6 +350,15 @@ III.  FORMAL FINITE–PRECISION REAL SYSTEM SUPPORTING ANALYSIS
   - Definitional complexity of pi remains finite; only expansion/
     approximation depth is being capped.
 
+Relateed
+--------
+- Bounded algebraic closure
+- Bounded computation
+- Bounded p‑adic depth
+- Bounded real precisiom
+- Bounded relational geometry
+- Bounded topology
+
 Further reading
 ---------------
 - Ultimate physical limits to computation, Seth Lloyd (MIT) 
