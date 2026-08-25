@@ -138,6 +138,7 @@ This is not a field.
 ---
 
 : **Polynomial factorization is finite**
+
 Classically, every polynomial can be factored in $\overline{K}$.
 
 Bounded closure says:
@@ -149,6 +150,7 @@ Bounded closure says:
 ---
 
 **Galois theory becomes finite**
+
 The entire Galois lattice becomes **finite**.
 
 Classical Galois theory assumes:
@@ -167,6 +169,7 @@ Bounded closure replaces this with:
 ---
 
 **Algebraic numbers become finite‑precision intervals**
+
 No algebraic number has infinite precision.
 
 Every algebraic number $\alpha$ is represented as:
