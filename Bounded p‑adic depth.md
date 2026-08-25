@@ -35,7 +35,9 @@ $$
 v_p(x) = 0,1,2,3,\ldots,\infty
 $$
 
-## **2. Bounded p‑adic depth: the ultrafinitist replacement**  
+## **2. Bounded p‑adic depth**
+: the ultrafinitist replacement
+
 This finite vector **replaces** the infinite p‑adic expansion.
 
 Under physical ceilings, the valuation cannot exceed a maximum depth $N_{\max}$:
@@ -82,7 +84,9 @@ No matter how large $N_{\max}$ is, it is **finite**.
 
 ---
 
-## **4. Consequence: p‑adics do not exist as fields**  
+## **4. Consequence**
+: p‑adics do not exist as fields
+
 This is a **bounded diagnostic system**, not a field.
 
 Because:
