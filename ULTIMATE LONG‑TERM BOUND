@@ -221,3 +221,103 @@ In practice the ceilings are so enormous 10^120 – 10^12 that they have small
 effect on any calculation humans or foreseeable machines will ever perform. 
 They become relevant only when one asks whether an ideal infinite object can 
 exist as an actual structure inside the universe.
+
+Worked Example 
+--------------
+ULTIMATE FINITE–PRECISION PI FRAMEWORK                               
+  (Explicit Digit Ceiling • Closure Operator • Finite Real System)    
+
+  MAX DIGITS OF π:
+      N_pi_max ≲ 10^120 – 10^121
+
+  CLOSURE OPERATOR:
+      π_repr = Cl_N(π) = finite interval with last term
+
+  FINITE REAL SYSTEM:
+      ℝ_N + 𝕀_N = complete finite-precision analytic universe
+
+I.  EXPLICIT NUMERICAL BOUND ON DIGITS OF π
+
+  Physical information ceiling (cosmological horizon):
+      I_univ  ≲ 10^122 bits
+
+  Convert bits → decimal digits:
+      digits_max  ≈  I_univ / log2(10)
+                   ≈  10^122 / 3.321928
+                   ≈  3 × 10^121  decimal digits
+
+  Operational ceiling (Lloyd bound):
+      ops_univ ≲ 10^120  operations
+      ⇒ cannot compute more than ~10^120 digits
+
+  FINAL HARD CEILING:
+      N_pi_max  ≲ 10^120  – 10^121  digits
+
+  Meaning:
+      π_realizable = π truncated to at most N_pi_max digits.
+      No physical process can exceed this representational depth.
+
+II.  CLOSURE OPERATOR THAT TURNS INFINITE π INTO A FINITE OBJECT
+
+  Classical π:
+      π = lim_{n→∞} S_n
+      (S_n any convergent series or geometric definition)
+
+  Define representational-depth closure operator Cl_N:
+
+      Cl_N(π)  :=  [ q_N^- , q_N^+ ]
+
+  where:
+      q_N^- , q_N^+  ∈  ℚ_N   (finite-precision rationals)
+      | q_N^+ - q_N^- |  ≤  10^{-N}
+
+  Equivalent series truncation:
+      Cl_N( Σ_{k=0}^∞ a_k )  :=  Σ_{k=0}^N a_k  +  E_N
+
+  with:
+      |E_N| ≤ 10^{-N}
+
+  Properties:
+      • Finite object
+      • Last term exists
+      • Error interval bounded
+      • No infinite series
+      • No infinite decimal expansion
+
+  This is the mathematical “end of π”:
+      π_repr = Cl_N(π)
+      with N ≤ N_pi_max.
+
+III.  FORMAL FINITE–PRECISION REAL SYSTEM SUPPORTING ANALYSIS
+
+  Define finite real grid:
+      ℝ_N := { m·10^{-N}  |  m ∈ ℤ , |m| ≤ 10^N }
+
+  Interval reals:
+      𝕀_N := { [a,b] | a,b ∈ ℝ_N , b-a ≤ 10^{-N} }
+
+  Arithmetic:
+      [a,b] + [c,d] = [a+c , b+d]
+      [a,b] × [c,d] = interval hull of all products
+      (rounded back into 𝕀_N)
+
+  Derivative (finite difference):
+      f'(x) ≈ ( f(x+10^{-N}) - f(x) ) / 10^{-N}
+
+  Integral (finite Riemann sum):
+      ∫_a^b f(x) dx  ≈  Σ f(x_k) Δx
+      Δx = 10^{-N}
+
+  Analytic theorems:
+      • Continuity → grid-stability
+      • Differentiability → finite-difference stability
+      • Integration → finite Riemann sums
+      • Limits → interval convergence
+      • Completeness → every Cauchy grid-sequence converges in 𝕀_N
+
+  This system:
+      • Replaces ℝ with ℝ_N and 𝕀_N
+      • Preserves analysis up to physical cutoff
+      • Eliminates all infinities
+      • Makes π, e, φ, etc. finite representational objects
+
