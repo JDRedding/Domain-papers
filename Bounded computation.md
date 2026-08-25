@@ -1,3 +1,7 @@
+# Bounded computation
+- Capped by: Lloyd, Bremermann, Margolus–Levitin, Landauer
+- Not capped by: holography directly
+
 **Bounded computation** means *no algorithm, no machine, no mathematical process can run with unbounded iteration, unbounded time, unbounded memory, or unbounded precision*. Every computation has a **finite maximum depth**, fixed by the physical ceilings of the universe. This is the ultrafinitist computational universe.
 
 **Bounded computation** means:
