@@ -328,6 +328,5 @@ III.  FORMAL FINITE–PRECISION REAL SYSTEM SUPPORTING ANALYSIS
     is the rigorous carrier of the analysis.
   - The bound is an order-of-magnitude physical upper limit, not a 
     sharp mathematical constant.
-  - Definitional complexity of remains finite; only expansion/
+  - Definitional complexity of pi remains finite; only expansion/
     approximation depth is being capped.
-
