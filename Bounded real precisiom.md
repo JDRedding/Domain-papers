@@ -111,9 +111,7 @@ It supports:
 
 All up to the physical cutoff $N_{\max}$.
 
----
-
-## **5. What replaces infinite decimals**  
+## **Infinite decimals replacements**  
 This is the ultrafinitist real number.
 
 Instead of:
