@@ -1,3 +1,7 @@
+# Bounded topology
+- Capped by: holography, Planck length
+- Not capped by: Lloyd directly
+
 **Bounded topology** means the classical notion of a topology — an infinite hierarchy of neighborhoods, refinements, and open‑set chains — collapses into a **finite, physically realizable structure** once you impose the universe’s information and computation ceilings.
 
 **Bounded topology** means:
