@@ -1,4 +1,5 @@
 # Bounded topology
+Part of the ULTIMATE LONG‑TERM BOUND series
 - Capped by: holography, Planck length
 - Not capped by: Lloyd directly
 
