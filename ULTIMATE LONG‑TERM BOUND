@@ -2,7 +2,11 @@ ULTIMATE LONG‑TERM BOUND
 --------------------------------
 This note presents a coherent physicalist/ultrafinitist view that every 
 mathematical object has a finite maximum representational depth imposed by 
-the information and computation capacity of the physical universe. 
+the information and computation capacity of the physical universe. The 
+proposal presents a rigorous physicalist and ultrafinitist framework. By 
+anchoring mathematical existence to representational and computational 
+capacity, it bridges physical limits (quantum mechanics, general 
+relativity, and thermodynamics) with formal mathematical foundations.
 
 There exists a general physical maximum representational depth 𝑁_max, and 
 this depth is the admission boundary for mathematical structures across 
@@ -23,6 +27,29 @@ Bounded math say:
   Specification ⇒ Representation  
   Representation ⇒ Must satisfy physical ceilings  
   Only then ⇒ Object
+
++--------------------------------------------------+
+|               PHYSICAL CEILINGS                  |
+|  [Bekenstein/Holo: S <= 10^122 bits]             |
+|  [Lloyd Bound:     Ops <= 10^120 operations]     |
+|  [Planck Floor:    L_P, t_P Cutoffs]             |
++------------------------+-------------------------+
+                         |
+                         v
++--------------------------------------------------+
+|           REPRESENTATIONAL CLOSURE               |
+|            Cl_N(M) with N <= N_max               |
++------------------------+-------------------------+
+                         |
+           +-------------+-------------+
+           |                           |
+           v                           v
++--------------------+   +-------------------------+
+| NUMERICAL DOMAIN   |   | STRUCTURAL DOMAINS      |
+| Real Grid: R_N     |   | Discretized Topology    |
+| Interval Space: I_N|   | Bounded p-adic depth    |
+| Ex: Cl_N(pi)       |   | Algebraic towers capped |
++--------------------+   +-------------------------+
 
 Core claim
 ----------
