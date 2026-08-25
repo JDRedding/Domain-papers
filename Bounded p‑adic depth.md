@@ -1,4 +1,5 @@
 # **Bounded p‑adic depth** 
+Part of the ULTIMATE LONG‑TERM BOUND series
 - Capped by: Bekenstein, holography, cosmological info, Planck length
 - Not capped by: Margolus–Levitin directly
 
