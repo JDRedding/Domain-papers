@@ -9,11 +9,14 @@ derived from quantum gravity, thermodynamics, and cosmology.
 
 Core claim
 ----------
+All mathematical objects have a maximum representational depth determined 
+by physical information and computation limits.
+
 For any mathematical object M,
 
         M_Depth < f(I_max, Ops_max, L_P, t_P, ...)
 
-where the arguments are fixed by the listed physical bounds.There are 
+where the arguments are fixed by the listed physical bounds. There are 
 therefore no actual infinities and no unbounded potential infinities in 
 any structure that can be represented or computed.
 
