@@ -1,4 +1,5 @@
 # Bounded real precision
+Part of the ULTIMATE LONG‑TERM BOUND series
 - Capped by: Bekenstein, cosmological info, Planck length
 - Not capped by: Bremermann directly
 
