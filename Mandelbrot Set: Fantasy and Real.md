@@ -203,7 +203,7 @@ This converts the Mandelbrot set from an **infinite, irrational, unbounded escap
 
 ---
 
-# **Mandelbrot Convergentals**
+# **Mandelbrot Reformed**
 
 > “a geometry-aware recursive object whose structural state (S) and geometric identity (G) are unified… begins fractal at the meso scale… and converges at a macro radius into a stable solved form.”  
 
@@ -217,7 +217,13 @@ The classical Mandelbrot set is:
 
 So the Convergentals operator Φ **fixes every pathology** of the classical Mandelbrot set.
 
----
+**What the regularization achieves**
+
+With the indicator function, the flow corrections, the taper, and the logistic brake  obtain:
+finite effective boundary length at the macro scale,
+bounded representational depth,
+suppression of the irrational spirals,
+a solved form.
 
 # **Mapping Mandelbrot G–S–I–D**
 
