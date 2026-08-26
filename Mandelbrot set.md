@@ -3,6 +3,7 @@
 : *A fantasy universe in a complex plane.*
 
 - **The iteration formula**
+  
 All of these labels together illustrate how a single simple quadratic iteration produces an infinitely complex, self-similar structure in the complex plane.
 
 Core Iteration
@@ -27,6 +28,7 @@ $$
 $$
 
 Boundedness Criterion (Escape Radius)
+
 A practical computational test uses the escape radius $2$:
 
 If there exists some $N$ such that $\lvert z_N \rvert > 2$ , then the orbit escapes to infinity and $c \notin \mathcal{M}$.
