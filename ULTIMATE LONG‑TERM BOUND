@@ -270,6 +270,19 @@ effect on any calculation humans or foreseeable machines will ever perform.
 They become relevant only when one asks whether an ideal infinite object can 
 exist as an actual structure inside the universe.
 
+Key Theoretical Context
+-----------------------
+Del Santo & Gisin Connection: 
+Fits directly alongside work on finite-precision classical mechanics. Gisin 
+showed that classical determinism relies on the non-physical assumption that 
+initial conditions store infinite bits of information. Capping real numbers 
+via interval cutoffs restores operational indeterminism to classical physics.
+
+Informational Completeness: 
+In I_N, Cauchy sequences do not converge to an abstract limit point; they 
+terminate once the interval width hits $10^{-N}$. Completeness becomes a 
+property of finite structural closure rather than infinite accumulation.
+
 Worked Example 
 --------------
 ULTIMATE FINITE–PRECISION PI FRAMEWORK                               
