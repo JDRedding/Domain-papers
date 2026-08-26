@@ -38,7 +38,7 @@ A practical computational test uses the escape radius $2$:
 If there exists some $N$ such that $\lvert z_N \rvert > 2$ , then the orbit escapes to infinity and $c \notin \mathcal{M}$.
 If $\lvert z_n \rvert \le 2$ for all $n$, then $c \in \mathcal{M}$ .
 
-Key Geometric Property
+#### Key Geometric Property
 The boundary of the Mandelbrot set, denoted $\partial\mathcal{M}$ , satisfies:
 
 $$
