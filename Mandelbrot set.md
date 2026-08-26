@@ -43,7 +43,7 @@ $$
 
 and $\partial\mathcal{M}$ contains no isolated points.
 
- Notation 
+#### Notation 
 | Symbol              | Meaning                                      |
 |---------------------|----------------------------------------------|
 |$c$            | Complex parameter (point being tested)       |
