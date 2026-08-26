@@ -284,7 +284,7 @@ with Φ defined exactly as:
 - **F_top** preserves basin topology  
 - **I_f** tapers fractal injection near the boundary  
 
-# ** Fixing Classical Pathology**
+## **Fixing Classical Pathology**
 
 ### **Classical Mandelbrot**
 - Infinite boundary length  
@@ -302,7 +302,7 @@ with Φ defined exactly as:
 - Logistic dynamics brake  
 - Convergent final form  
 
-# **The Set’s Regions**
+## **The Set’s Regions**
 
 ### **Main Cardioid → Macro  Basin**
 The cardioid is where **F_flow dominates** and the orbit converges.
