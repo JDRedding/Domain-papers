@@ -299,7 +299,7 @@ $$
 D_t = \frac{1}{1 + \exp(5(r_t/R_{\max} - 0.9))}
 $$
 
-# **3. The Mandelbrot Object**
+# **The Mandelbrot Object**
 
 Classical iteration:
 
