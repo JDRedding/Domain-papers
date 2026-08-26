@@ -144,7 +144,7 @@ and $\partial\mathcal{M}$ contains no isolated points.
 
 ```
 
-## **The Mandelbrot as a real Object**
+## **The Mandelbrot as a Real Object**
 
 $$
 \mathcal{M}_{\text{Conv}} = 
