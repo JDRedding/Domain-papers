@@ -1,4 +1,4 @@
-# The Mandelbrot set
+# The Mandelbrot Set: Fantasy and Real
 - **The Mandelbrot Set**  
 : *A fantasy universe in a complex plane.*
 
