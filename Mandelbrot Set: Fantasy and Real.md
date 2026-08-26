@@ -194,9 +194,9 @@ $$
 Where:
 
 - **Φ** is the dual‑engine operator from your document  
-- **$R_max$ = 2**  
-- **$F_frac(z)$ = $z^2$**  
-- **$F_flow$** enforces geometric invariants  
+- **$R_{max}$ = 2**  
+- **$F_{frac(z)}$ = $z^2$**  
+- **$F_{flow}$** enforces geometric invariants  
 - **$D_t$** regulates iteration depth  
 
 This is the **bounded‑reality, geometry‑aware Mandelbrot set**.
