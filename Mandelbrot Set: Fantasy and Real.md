@@ -109,8 +109,6 @@ and $\partial\mathcal{M}$ contains no isolated points.
   Tiny scattered points near the bottom-left.  
   *Chaotic points form a dust-like fractal set.*
 
-
-
 ```
                                                                                 
                                                ....                             
@@ -196,10 +194,10 @@ $$
 Where:
 
 - **Φ** is the dual‑engine operator from your document  
-- **R_max = 2**  
-- **F_frac(z) = z^2**  
-- **F_flow** enforces geometric invariants  
-- **D_t** regulates iteration depth  
+- **$R_max$ = 2**  
+- **$F_frac(z)$ = $z^2$**  
+- **$F_flow$** enforces geometric invariants  
+- **$D_t$** regulates iteration depth  
 
 This is the **bounded‑reality, geometry‑aware Mandelbrot set**.
 
