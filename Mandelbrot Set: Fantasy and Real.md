@@ -182,6 +182,11 @@ Boundary Dynamics
 - Smooth, finite-radius physical convergence at macro scale
 
 ## **The Mandelbrot as a Real Object**
+- Physical boundaries exist:
+  Everything hits a cutoff—whether it's the atomic lattice of a real-world fractal antenna, thermal noise, quantum Planck limits, or computational memory/precision caps.
+
+- Energy dissipates: 
+  Real systems have friction, curvature, and feedback saturation. A real process doesn't just iterate $z^2 + c$ blindly into infinity without something like $F_{\text{flow}}$ or a dynamic brake ($D_t$) taking hold to absorb or balance the motion.
 
 $$
 \mathcal{M}_{\text{Conv}} = 
