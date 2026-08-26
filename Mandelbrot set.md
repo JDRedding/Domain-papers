@@ -6,7 +6,7 @@ The distinction between the classical fantasy Mandelbrot set and its real object
 
 In the classical fantasy, the simple quadratic mapping $z_{n+1} = z_n^2 + c$ generates infinite structural complexity at all scales, producing infinite boundary length $\text{length}(\partial\mathcal{M}) = \infty$ and pathological fractal divergence. Under the real framework, the operator $\Phi$ enforces geometric constraints, dynamic braking, and flow corrections that stabilize the fractal into a closed, solved physical entity.
 
-- **The iteration formula**
+- **The fantasy iteration formula**
   
 All of these labels together illustrate how a single simple quadratic iteration produces an infinitely complex, self-similar structure in the complex plane.
 
