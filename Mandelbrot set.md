@@ -6,7 +6,7 @@
   
 All of these labels together illustrate how a single simple quadratic iteration produces an infinitely complex, self-similar structure in the complex plane.
 
-Core Iteration
+#### Core Iteration
 
 $$
 z_{n+1} = z_n^2 + c, \qquad z_0 = 0
@@ -27,7 +27,7 @@ $$
 \mathcal{M} = \{ c \in \mathbb{C} : \lvert z_n \rvert \not\to \infty \text{ as } n\to\infty \}
 $$
 
-Boundedness Criterion (Escape Radius)
+#### Boundedness Criterion (Escape Radius)
 
 A practical computational test uses the escape radius $2$:
 
