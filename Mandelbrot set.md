@@ -2,6 +2,10 @@
 - **The Mandelbrot Set**  
 : *A fantasy universe in a complex plane.*
 
+The distinction between the classical fantasy Mandelbrot set and its real object formulation lies in moving from an unbounded, unregularized escape-time iteration to a geometry-aware, state-regulated dynamical object.
+
+In the classical fantasy, the simple quadratic mapping $z_{n+1} = z_n^2 + c$ generates infinite structural complexity at all scales, producing infinite boundary length $\text{length}(\partial\mathcal{M}) = \infty$ and pathological fractal divergence. Under the real framework, the operator $\Phi$ enforces geometric constraints, dynamic braking, and flow corrections that stabilize the fractal into a closed, solved physical entity.
+
 - **The iteration formula**
   
 All of these labels together illustrate how a single simple quadratic iteration produces an infinitely complex, self-similar structure in the complex plane.
@@ -145,6 +149,25 @@ and $\partial\mathcal{M}$ contains no isolated points.
                                                ....                             
 
 ```
+
+### Architectural Dimensions
+Classical Mandelbrot (M) vs Real Mandelbrot (MConv​)
+
+Geometry (G) Integration,
+- Unaware; space acts only as coordinate background,
+- Explicit global boundary limit, topology, and curvature
+
+Fractal Injection (I),
+- Continuous, scale-invariant quadratic term z_2,
+- If​ tapers​ near boundary; balanced​
+
+Dynamics Regulation (D),
+- Unregulated; iterates indefinitely or diverges,
+- State-aware logistic brake 
+
+Boundary Dynamics,
+- Infinite perimeter length
+- Smooth, finite-radius physical convergence at macro scale
 
 ## **The Mandelbrot as a Real Object**
 
