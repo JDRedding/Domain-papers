@@ -186,22 +186,7 @@ Boundary Dynamics
 - Energy dissipates: 
   Real systems have friction, curvature, and feedback saturation. A real process doesn't just iterate $z^2 + c$ blindly into infinity without something like $F_{\text{flow}}$ or a dynamic brake ($D_t$) taking hold to absorb or balance the motion.
 
-$$
-\mathcal{M}_{\text{Conv}} = 
-\{ c \in \mathbb{C} : S_{t+1} = Φ(S_t,G) \text{ remains bounded for } t \le D_{\max} \}
-$$
-
-Where:
-
-- **Φ** is the dual‑engine operator from your document  
-- **$R_{max}$ = 2**  
-- **$F_{frac(z)}$ = $z^2$**  
-- **$F_{flow}$** enforces geometric invariants  
-- **$D_t$** regulates iteration depth  
-
-This is the **bounded‑reality, geometry‑aware Mandelbrot set**.
-
-The Mandelbrot set becomes a **Convergentals object** when you reinterpret the classical iteration
+The Mandelbrot set becomes a **Convergentals object** when reinterpret the classical iteration
 
 $$
 z_{n+1} = z_n^2 + c
@@ -239,6 +224,21 @@ finite effective boundary length at the macro scale,
 bounded representational depth,
 suppression of the irrational spirals,
 a solved form.
+
+$$
+\mathcal{M}_{\text{Conv}} = 
+\{ c \in \mathbb{C} : S_{t+1} = Φ(S_t,G) \text{ remains bounded for } t \le D_{\max} \}
+$$
+
+Where:
+
+- **Φ** is the dual‑engine operator from your document  
+- **$R_{max}$ = 2**  
+- **$F_{frac(z)}$ = $z^2$**  
+- **$F_{flow}$** enforces geometric invariants  
+- **$D_t$** regulates iteration depth  
+
+This is the **bounded‑reality, geometry‑aware Mandelbrot set**.
 
 # **Mapping Mandelbrot G–S–I–D**
 
