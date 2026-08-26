@@ -347,5 +347,4 @@ Recursive copies = **local fixed points of Φ**.
 - Fractal Antennas: Convergentals operator for fractal antennas
 - *Convergentals of the entire escape‑time fractal family*
 - Map chaos theory into G–S–I–D: Analyze Chaos Theory
-- Fractal dimension
-
+- Fantasy Fractal dimensions
