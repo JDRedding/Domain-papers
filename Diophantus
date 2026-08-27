@@ -13,8 +13,98 @@ solutions, laying early groundwork for number theory.
 
 Symbolic Notation: While his notation was not as modern as 
 today’s algebra symbols, he used symbols and abbreviations 
-to simplify complex calculations.
+to simplify complex calculations. This early system, sometimes 
+called syncopated algebra, predates modern algebraic symbols 
+and provides a structured way to represent unknowns, powers, 
+and operations. It focused on rational rather than integer 
+solutions, although it inspired the broader development of 
+Diophantine equations studied today.
+
+Core Features of Diophantine Symbolic Notation
+
+Unknowns:
+Represented by Greek letters, often contractions of the word 
+arithmos ("number"). For example, the unknown symbol is ς (ς).
+
+Powers of the Unknown:
+Second power (square): ΔΥ, from Greek dunamis (strength/power)
+Cube: KΥ, from Greek kubos (cube)
+
+Higher powers used similar conventions, e.g. ΔΥΔ (square-
+square), ΔKΥ (square-cube), KΥK (cube-cube)
+
+Coefficients:
+Coefficients are written after the variable (opposite of
+modern notation). For constants, symbol M^∘ (M) was used (Greek
+monades, units)
+
+Operations:
+
+Addition: Denoted by juxtaposition; terms written consecutively 
+are added. Example: αβ represents α+β
+
+Subtraction: Represented by a specialized symbol, an inverted 
+capital lambda with a superimposed iota (ΛI), derived from 
+Greek leipis ("lacking"). 
+
+Multiplication & Division: Explicit multiplication symbols 
+were omitted; division handled by fractions with notation 
+like ’νμρ’ιω indicating "divided by"
+
+Equation Structure:
+
+Diophantus did not use an equals sign in our modern sense; 
+he wrote equations in rhetorical form with the symbol ἴσ 
+(short for ἴσος, meaning "equals"). Coefficients and powers 
+are placed in strict procedural sequence: power first, then 
+coefficient.
+
+Examples of Symbolic Representation
+Modern Polynomial         Diophantine Notation
+------------------------- --------------------
+x 3 +13x 2 +5x            KΥαΔΥιγςε
+x^3 −5x 2 +8x−1           KΥασηΔΥε M^∘ α
+Reciprocal (250/(x^2)     ΔΥσν (notation for reciprocal)
+
+Here, variables and coefficients correspond to Greek 
+letters using an alphabetic cipher, and operations follow 
+the above rules.
+
+Diophantus introduced abbreviated symbolic notation to 
+simplify repetitive arithmetic manipulations. Multiplication 
+and addition were implicitly handled, using term positioning 
+and juxtaposition, rather than dedicated symbols.
+
+Negative numbers were conceptually acknowledged, referred to 
+as "lacking" quantities.
+
+Diophantine symbolic notation influenced later Arabic algebra 
+and was a precursor to modern algebraic methods. Most notably, 
+it facilitated the study of Diophantine equations: polynomials 
+with integer or rational solutions, a cornerstone of number 
+theory and algebraic geometry.
+
+Diophantus’ symbolic notation, while primitive from a modern 
+perspective, represents a crucial historical stage ("syncopated 
+algebra") between rhetorical arithmetic and fully symbolic 
+algebra. It encodes unknowns, coefficients, powers, and 
+operations in a structured, abbreviated form that enabled 
+systematic solution of algebraic and indeterminate equations—
+laying the conceptual groundwork for modern algebra and number 
+theory.
 
 His work influenced later mathematicians, including Pierre de 
 Fermat, who derived his famous "Last Theorem" from notes made 
 on Diophantus’ Arithmetica.
+
+Fermat wrote that he had discovered a "truly marvelous proof" 
+for the statement:
+
+   There are no three positive integers x,y,z that satisfy 
+    x_n +y_n =z_n  for any integer n>2.
+
+He noted that the margin was too small to contain the proof, 
+leaving future mathematicians to puzzle over it.
+
+Fermat’s marginal note transformed a small observation in 
+Diophantus’ Arithmetica into a mathematical legend.
