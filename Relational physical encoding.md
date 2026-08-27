@@ -1,6 +1,12 @@
-#  Relational encoding
-- Punch‑card codes, paper‑tape codes, finite‑difference decks, and ticker‑tape streams 
+#  Relational physical encoding
+- Punch‑card codes, paper‑tape codes, finite‑difference decks, and ticker‑tape streams
+  
 Symbolic structures become physical encodings, and encodings constrain or shape the mathematics done with them.
+
+> **A relational encoding is a tri‑modal algebraic element  
+> $(s,i,d)\in\mathfrak{A}$  
+> whose composition law depends on its representational mode (column, row, or stream).  
+> Punch cards, difference decks, and tapes are projections of this algebra.**
 
 ## 🔸 A relational algebra of encodings  
 
@@ -145,3 +151,145 @@ $$
 $$
 
 This is a **stateful stream algebra**: the meaning of a bit pattern depends on the current shift mode.
+
+## ⚙️ The unified relational encoding  
+
+### **Relational encoding space**  
+**Punch cards, difference decks, and tapes are not separate algebras — they are projections of one relational encoding space.**
+
+Let  
+
+$$
+\mathcal{E} = \mathcal{S} \times \mathcal{I} \times \mathcal{D}
+$$  
+
+where each component is a relational mode:
+
+- $\mathcal{S}$: structural primitives  
+- $\mathcal{I}$: interpretation maps  
+- $\mathcal{D}$: dynamical operators  
+
+Each medium $M$ (card, deck, tape) is a **projection**:
+
+$$
+M = \pi_M(\mathcal{E})
+$$
+
+## 🧩 Structural algebra (S‑mode)
+**The structural primitives are orthogonal, so the algebra must be a disjoint union, not a product.**
+
+Three disjoint structural primitives:
+
+- **Column structure**  
+  Unary row‑combination:  
+
+$$
+S_C = \{(z,d)\mid z\in Z, d\in D\}
+$$
+
+- **Row structure**  
+  Vertical operator stacks:  
+
+$$
+S_R = \{X^{(k)}\mid k\in\mathbb{N}\}
+$$
+
+- **Stream structure**  
+  Sequential bit‑patterns:  
+
+$$
+S_T = \{b_1 b_2 \dots b_n\}
+$$
+
+The unified structural algebra is the **disjoint union**:
+
+$$
+\mathcal{S} = S_C \sqcup S_R \sqcup S_T
+$$
+
+## 🔧 Interaction algebra (I‑mode)
+**Interaction is not a single decoding function — it is a coproduct of three incompatible decoding regimes.**
+
+Each structural primitive has its own interpretation map:
+
+- Column → symbol  
+
+$$
+I_C : S_C \to \Sigma
+$$
+
+- Row → operator  
+
+$$
+I_R : S_R \to \mathcal{O}
+$$
+
+- Stream → decoded symbol (stateful)  
+
+$$
+I_T : S_T \times \text{ShiftState} \to \Sigma
+$$
+
+The unified interaction algebra is the **coproduct**:
+
+$$
+\mathcal{I} = I_C \oplus I_R \oplus I_T
+$$
+
+## 🔄 Dynamics algebra (D‑mode)
+**Dynamics is a union of operators acting on disjoint structural primitives — not a shared operator algebra.**
+
+Each medium has its own dynamical operators:
+
+- Deck manipulation
+  
+$$
+D_C = \{\text{sort},\text{merge},\text{align}\}
+$$
+
+- Difference propagation
+  
+$$
+D_R = \{\Delta, \Delta^2, \Delta^3, \dots\}
+$$
+
+- Stream shifting / convolution
+  
+$$
+D_T = \{\text{shift},\text{reverse},\text{convolve}\}
+$$
+
+Unified dynamics:
+
+$$
+\mathcal{D} = D_C \cup D_R \cup D_T
+$$
+
+
+---
+
+## 🧮 The algebra  
+**The algebra is tri‑modal: composition depends on which structural primitive the element belongs to.**
+
+There is no single multiplication.  
+There is **conditional composition** based on representational mode.
+
+Define the **relational encoding algebra**:
+
+$$
+\mathfrak{A} = (\mathcal{S},\mathcal{I},\mathcal{D},\circ)
+$$
+
+where the composition law is:
+
+$$
+(s_1,i_1,d_1)\circ(s_2,i_2,d_2)
+= (s_1\star s_2,\; i_1\diamond i_2,\; d_1\bullet d_2)
+$$
+
+with:
+
+- $\star$: structural concatenation (columnwise, rowwise, or streamwise depending on domain)  
+- $\diamond$: interpretation composition (symbol → operator → decoded symbol)  
+- $\bullet$: dynamical composition (deck ops, difference ops, stream ops)
+
