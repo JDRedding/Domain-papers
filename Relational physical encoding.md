@@ -1,7 +1,9 @@
 #  Relational physical encoding
 - Punch‑card codes, paper‑tape codes, finite‑difference decks, and ticker‑tape streams
 
-Representation is not mathematically neutral when the physical representation determines which operations are cheap, natural, or even directly executable. Symbolic structures become physical encodings, and encodings constrain or shape the mathematics done with them. The medium provides a physical substrate for the alignment semantics of convolution; additional mechanical or electromechanical apparatus realizes the weighting and accumulation.
+This note defines a relational physical encoding — a tri‑modal algebraic model (S,I,D) that maps physical media (punch cards, difference decks, ticker/baudot tape) to typed relational algebras. Each medium is a projection of a single encoding space, but with its own structural primitives, interpretation maps, and dynamical operators; composition is mode‑dependent.
+
+Representation is not mathematically neutral when the physical representation determines which operations are cheap, natural, or even directly executable. Symbolic structures become physical encodings, and encodings constrain or shape the mathematics done with them. The medium provides a physical substrate for the alignment semantics of convolution; additional mechanical or electromechanical apparatus realizes the weighting and accumulation. Punch cards, difference decks, and tapes are not just historical media but distinct algebraic projections of a unified relational encoding; their representational choices determine which operations are natural or cheap, so encoding is not mathematically neutral.
 
 > **A relational encoding is a tri‑modal algebraic element  
 > $(s,i,d)\in\mathfrak{A}$  
