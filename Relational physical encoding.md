@@ -8,6 +8,27 @@ Representation is not mathematically neutral when the physical representation de
 > whose composition law depends on its representational mode (column, row, or stream).  
 > Punch cards, difference decks, and tapes are projections of this algebra.**
 
+                  PHYSICAL MEDIUM
+                         │
+                         ▼
+                RELATIONAL SIGNATURE
+                 Encoding = (S,I,D)
+                         │
+          ┌──────────────┼──────────────┐
+          ▼              ▼              ▼
+       COLUMN           ROW           STREAM
+          │              │              │
+       Hollerith      Differences      Baudot
+          │              │              │
+          ▼              ▼              ▼
+       S_C,I_C,D_C    S_R,I_R,D_R    S_T,I_T,D_T
+          └──────────────┼──────────────┘
+                         ▼
+             TYPED RELATIONAL ALGEBRA
+                         │
+                         ▼
+                    COMPOSITION
+
 ## 🔸 A relational algebra of encodings  
 
 | Mode       | Primitive relation        | Natural operation       |
