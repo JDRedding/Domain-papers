@@ -1,7 +1,7 @@
 #  Relational physical encoding
 - Punch‑card codes, paper‑tape codes, finite‑difference decks, and ticker‑tape streams
-  
-Symbolic structures become physical encodings, and encodings constrain or shape the mathematics done with them.
+
+Representation is not mathematically neutral when the physical representation determines which operations are cheap, natural, or even directly executable. Symbolic structures become physical encodings, and encodings constrain or shape the mathematics done with them. The medium provides a physical substrate for the alignment semantics of convolution; additional mechanical or electromechanical apparatus realizes the weighting and accumulation.
 
 > **A relational encoding is a tri‑modal algebraic element  
 > $(s,i,d)\in\mathfrak{A}$  
@@ -9,6 +9,12 @@ Symbolic structures become physical encodings, and encodings constrain or shape 
 > Punch cards, difference decks, and tapes are projections of this algebra.**
 
 ## 🔸 A relational algebra of encodings  
+
+| Mode       | Primitive relation        | Natural operation       |
+| ---------- | ------------------------- | ----------------------- |
+| **Column** | position ↔ symbol         | classification / lookup |
+| **Row**    | level ↔ transformed value | iteration / difference  |
+| **Stream** | position ↔ temporal state | shift / sequence        |
 
 ### **Structure (S‑mode)**  
 - Column‑mode: unary row‑combination structure  
