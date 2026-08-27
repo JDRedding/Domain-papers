@@ -271,6 +271,35 @@ $$
 ## 🧮 The algebra  
 **The algebra is tri‑modal: composition depends on which structural primitive the element belongs to.**
 
+### Physical-to-Mathematical Operator Isomorphism
+
+The stream-alignment view of continuous convolution:
+
+$$y[n] = \sum_k x[k]\,h[n-k]$$
+
+is perhaps the most compelling physical-to-algebraic link here. Physical mechanical processing—flipping a paper tape end-to-end (reversal), advancing it one sprocket hole at a time (shifting), and reading through two stacked aligned holes to drive a mechanical counter (multiply-accumulate)—is not an *analogy* for convolution. It is the literal physical execution of the operator $D_T$.
+
+```
+                  ┌────────────────────────┐
+                  │   Relational Space E   │
+                  │     (S x I x D)        │
+                  └───────────┬────────────┘
+                              │
+         ┌────────────────────┼────────────────────┐
+         ▼                    ▼                    ▼
+   Column (S_C)          Row (S_R)            Stream (S_T)
+┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐
+│  Independent     │ │  Stacked         │ │  Stateful        │
+│  Unary Atoms     │ │  Operator Tower  │ │  Temporal Shift  │
+│  (Hollerith)     │ │  (Diff Decks)    │ │  (Baudot/Ticker) │
+└──────────────────┘ └──────────────────┘ └──────────────────┘
+
+```
+
+### The Tri-Modal Coproduct of Encodings
+
+By framing interpretation $\mathcal{I}$ as a coproduct of incompatible decoding maps ($I_C \oplus I_R \oplus I_T$), the system allows disparate physical representations—static unary grids, dynamic difference tables, and stateful sequential streams—to live within a single unified algebraic architecture without forcing an unnatural shared product state space.
+
 There is no single multiplication.  
 There is **conditional composition** based on representational mode.
 
