@@ -55,13 +55,53 @@ Solving Strategy:
   3. Use modular arithmetic, factorization, or continued
      fractions for higher-degree equations.
 
-Symbolic Notation: While his notation was not as modern as 
-today’s algebra symbols, he used symbols and abbreviations 
-to simplify complex calculations. This early system, sometimes 
-called syncopated algebra, predates modern algebraic symbols 
-and provides a structured way to represent unknowns, powers, 
-and operations. It focused on rational rather than integer 
-solutions, although it inspired the broader development of 
+Linear Diophantine
+A two-variable linear Diophantine equation has integer solutions 
+if and only if the greatest common divisor of a and b divides c.
+When a solution exists, applying the Extended Euclidean Algorithm 
+yields a base solution (x_0, y_0), generating the full parametric 
+family.
+
+
+Symbolic Notation:
+
++--------------------------------------+
+|          DIOPHANTINE ENGINE          |
+|      Syncopated Algebra Notation     |
++--------------------------------------+
+|  System:   Triadic Power Encoding    |
+|  Unknown:  ς  (arithmos)             |
+|  Equals:   ἴσ (isos)                 |
+|  Lacking:  ΛI (leipis / subtract)    |
+|  Unit:     M° (monades / constant)   |
++--------------------------------------+
+|  POWER   | SYMBOL | GREEK ORIGIN     |
++----------+--------+------------------+
+|  x^1     | ς      | arithmos         |
+|  x^2     | ΔΥ     | dunamis (power)  |
+|  x^3     | KΥ     | kubos (cube)     |
+|  x^4     | ΔΥΔ    | dunamo-dunamis   |
+|  x^5     | ΔKΥ    | dunamo-kubos     |
+|  x^6     | KΥK    | kubo-kubos       |
++--------------------------------------+
+|  EXAMPLE SYNTAX                      |
+|  Modern:   x^3 + 13x^2 + 5x          |
+|  Dioph:    KΥα ΔΥιγ ςε               |
+|                                      |
+|  Modern:   x^3 - 5x^2 + 8x - 1       |
+|  Dioph:    KΥα ςη ΛI ΔΥε M°α         |
++--------------------------------------+
+|  SOLVABILITY ENGINE (Linear Form)    |
+|  Eq:  ax + by = c                    |
+|  Rule: gcd(a, b) | c  <=>  Solvable  |
++--------------------------------------+
+
+While his notation was not as modern as today’s algebra symbols, he 
+used symbols and abbreviations to simplify complex calculations. 
+This early system, sometimes called syncopated algebra, predates 
+modern algebraic symbols and provides a structured way to represent 
+unknowns, powers, and operations. It focused on rational rather than 
+integer solutions, although it inspired the broader development of
 Diophantine equations studied today.
 
 Core Features of Diophantine Symbolic Notation
@@ -106,7 +146,6 @@ Coefficients:
 Coefficients are written after the variable (opposite of
 modern notation). For constants, symbol M^∘ (M) was used (Greek
 monades, units)
-
 
   Coefficients follow the variable (reverse of modern notation).
 
@@ -184,6 +223,13 @@ and juxtaposition, rather than dedicated symbols.
 Negative numbers were conceptually acknowledged, referred to 
 as "lacking" quantities.
 
+Diophantus of Alexandria operated at the pivotal midpoint of 
+algebraic evolution. Prior to his Arithmetica, mathematics 
+was rhetorical—written out entirely in spoken prose. Diophantus 
+invented syncopated algebra, introducing standardized 
+abbreviations for powers, operations, and unknowns while 
+retaining rhetorical phrasing for proofs.
+
 Diophantine symbolic notation influenced later Arabic algebra 
 and was a precursor to modern algebraic methods. Most notably, 
 it facilitated the study of Diophantine equations: polynomials 
@@ -195,6 +241,31 @@ theory and algebraic geometry.
          Rhetorical arithmetic 
       →  Syncopated algebra  
       →  Symbolic algebra
+
+  RHETORICAL           SYNCOPATED       SYMBOLIC
+  ------------------- ----------------- ---------
+ (Babylonian/Greek)   (Diophantus)      (Modern Viète/Descartes)
+ Fully Spoken Prose   Abbreviations     Pure Abstract Operators
+ "Cube plus 3 units"  KΥα M°γ           x³ + 3
+
+ ------------------------------------------------------------
+  DIOPHANTUS OF ALEXANDRIA (c. 200–284 AD)
+  Author of 'Arithmetica' — Foundations of Syncopated Algebra
+                       │
+                       ▼
+  ISLAMIC GOLDEN AGE (8th–12th Century)
+  Al-Khwarizmi translates & expands structural algebra
+                       │
+                       ▼
+  PIERRE DE FERMAT (1637)
+  Reads Bachet's translation of 'Arithmetica'
+  Pen-notes in the margin of Book II, Problem 8:
+  "x^n + y^n = z^n has no non-zero integer solutions for n > 2"
+                       │
+                       ▼
+  ANDREW WILES (1995)
+  Proves Fermat's Last Theorem via modularity of elliptic curves
+  ------------------------------------------------------------
 
 Diophantus’ symbolic notation, while primitive from a modern 
 perspective, represents a crucial historical stage ("syncopated 
