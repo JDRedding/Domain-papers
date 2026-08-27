@@ -305,3 +305,17 @@ leaving future mathematicians to puzzle over it.
 
 Fermat’s marginal note transformed a small observation in 
 Diophantus’ Arithmetica into a mathematical legend.
+
+Andrew Wiles’s proof of Fermat’s Last Theorem hinges not on
+elementary number theory but on the modularity of elliptic
+curves and the interplay between elliptic curves, Galois
+representations, and modular forms. The essential chain of
+logic is:
+
+   Assume FLT fails ⟹ Frey curve exists ⟹ Frey curve 
+   non-modular ⟹Contradiction since semistable elliptic 
+   curves are modular⟹FLT holds.
+
+This work unified areas of algebraic geometry, number 
+theory, and modular forms, exemplifying the power of 
+modern mathematics.
