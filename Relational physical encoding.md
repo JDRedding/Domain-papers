@@ -419,3 +419,6 @@ with:
 - $\diamond$: interpretation composition (symbol → operator → decoded symbol)  
 - $\bullet$: dynamical composition (deck ops, difference ops, stream ops)
 
+producing, 
+
+$$\boxed{\mathfrak{A}=(\mathcal{S}_C\sqcup\mathcal{S}_R\sqcup\mathcal{S}_T,\; I_C\oplus I_R\oplus I_T,\; D_C\cup D_R\cup D_T,\; \circ_{\text{typed}})}$$
