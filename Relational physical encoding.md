@@ -184,6 +184,36 @@ This is a **stateful stream algebra**: the meaning of a bit pattern depends on t
 ### **Relational encoding space**  
 **Punch cards, difference decks, and tapes are not separate algebras — they are projections of one relational encoding space.**
 
+$$
+{Real}(M)=\mathfrak A_m
+$$
+
+or conceptually:
+
+$$
+\text{physical medium}
+\rightsquigarrow
+\text{relational algebra}.
+$$
+
+Then:
+
+$$
+\text{Hollerith}
+\rightsquigarrow\mathfrak A_C
+$$
+
+$$
+\text{difference workflow}
+\rightsquigarrow\mathfrak A_R
+$$
+
+$$
+\text{Baudot/ticker}
+\rightsquigarrow\mathfrak A_T.
+$$
+
+
 Let  
 
 $$
@@ -302,9 +332,31 @@ $$
 
 The stream-alignment view of continuous convolution:
 
+$$
+\boxed{
+\circ:\mathfrak A\times\mathfrak A
+\rightharpoonup\mathfrak A
+}
+$$
+
+with
+
+$$
+a\circ b=
+\begin{cases}
+a\circ_Cb,&a,b\in\mathfrak A_C,\\
+a\circ_Rb,&a,b\in\mathfrak A_R,\\
+a\circ_Tb,&a,b\in\mathfrak A_T,\\
+\text{undefined},&\text{otherwise}.
+\end{cases}
+$$
+
+Or, 
+
 $$y[n] = \sum_k x[k]\,h[n-k]$$
 
 is perhaps the most compelling physical-to-algebraic link here. Physical mechanical processing—flipping a paper tape end-to-end (reversal), advancing it one sprocket hole at a time (shifting), and reading through two stacked aligned holes to drive a mechanical counter (multiply-accumulate)—is not an *analogy* for convolution. It is the literal physical execution of the operator $D_T$.
+
 
 ```
                   ┌────────────────────────┐
@@ -329,6 +381,24 @@ By framing interpretation $\mathcal{I}$ as a coproduct of incompatible decoding 
 
 There is no single multiplication.  
 There is **conditional composition** based on representational mode.
+
+```
+REPRESENTATION
+     │
+     ▼
+ALIGNMENT
+     │
+     ▼
+WEIGHTING
+     │
+     ▼
+ACCUMULATION
+     │
+     ▼
+CONVOLUTION
+```
+
+The physical representation supplies the first relational layer, while the machine supplies the remaining operators.
 
 Define the **relational encoding algebra**:
 
