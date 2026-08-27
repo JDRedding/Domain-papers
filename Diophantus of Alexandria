@@ -11,6 +11,51 @@ remains influential, particularly in number theory and algebra.
 Diophantine Equations: He focused on equations with integer 
 solutions, laying early groundwork for number theory.
 
+Definition:
+  A Diophantine equation is an algebraic equation where all
+  coefficients AND all required solutions are integers.
+
+General Linear Form:
+  a1*x1 + a2*x2 + ... + an*xn = b
+
+Condition for Solutions:
+  ax + by = c has integer solutions  ⇔  gcd(a, b) divides c
+
+Example:
+  6x + 9y = 30
+    gcd(6,9) = 3
+    3 | 30  → solutions exist
+
+  Divide by 3:
+    2x + 3y = 10
+
+  Solve:
+    x = (10 - 3y)/2
+
+  Integer solutions come from making (10 - 3y) even.
+
+Sample Solutions:
+    y = 0 → x = 5
+    y = 2 → x = 2
+    y = 4 → x = -1
+    ...
+
+General Parametric Solution:
+    x = 5 - 3n
+    y = 2n
+    n ∈ Z
+
+Types of Diophantine Equations:
+  - Linear: ax + by = c
+  - Quadratic: x^2 - D*y^2 = 1  (Pell-type)
+  - Higher-degree: complex, few integer solutions
+
+Solving Strategy:
+  1. Check gcd divisibility.
+  2. Reduce and parameterize.
+  3. Use modular arithmetic, factorization, or continued
+     fractions for higher-degree equations.
+
 Symbolic Notation: While his notation was not as modern as 
 today’s algebra symbols, he used symbols and abbreviations 
 to simplify complex calculations. This early system, sometimes 
@@ -21,6 +66,31 @@ solutions, although it inspired the broader development of
 Diophantine equations studied today.
 
 Core Features of Diophantine Symbolic Notation
+  • Abbreviated symbolic system (not fully symbolic algebra).
+  • Unknowns, powers, and coefficients encoded via Greek ciphers.
+  • Addition and multiplication handled implicitly by placement.
+  • Negative numbers treated as “lacking” quantities.
+  • Influenced Arabic algebra and later European symbolic notation.
+  • Provided structural groundwork for modern algebra and the
+    study of Diophantine equations.
+
+  Pattern:
+      POWER SYMBOL  +  UNKNOWN SYMBOL
+
+  Unknown:
+      Represented by Greek letters derived from “arithmos.”
+      Common unknown symbol:  ς
+
+  Square (x^2):
+      ΔΥ   (from *dunamis*, “power/strength”)
+
+  Cube (x^3):
+      KΥ   (from *kubos*, “cube”)
+
+  Higher powers:
+      ΔΥΔ   (square-square)
+      ΔKΥ   (square-cube)
+      KΥK   (cube-cube)
 
 Unknowns:
 Represented by Greek letters, often contractions of the word 
@@ -38,6 +108,12 @@ Coefficients are written after the variable (opposite of
 modern notation). For constants, symbol M^∘ (M) was used (Greek
 monades, units)
 
+
+  Coefficients follow the variable (reverse of modern notation).
+
+  Constant term:
+      M°   (from *monades*, “units”)
+
 Operations:
 
 Addition: Denoted by juxtaposition; terms written consecutively 
@@ -49,9 +125,40 @@ Greek leipis ("lacking").
 
 Multiplication & Division: Explicit multiplication symbols 
 were omitted; division handled by fractions with notation 
-like ’νμρ’ιω indicating "divided by"
+like ’νμρ’ιω indicating "divided by".
+
+  Addition:
+      Juxtaposition. Writing terms consecutively means “add.”
+      Example:  αβ  means  α + β
+
+  Subtraction:
+      ΛI   (inverted lambda with iota)
+      Derived from *leipis* (“lacking”).
+
+  Multiplication:
+      No explicit symbol; implied by adjacency.
+
+  Division:
+      Expressed using fractional-style notation such as:
+      ’νμρ’ιω   (“divided by” construction)
 
 Equation Structure:
+
+  No modern equals sign.
+  Equality indicated by:
+      ἴσ   (abbrev. of *isos*, “equals”)
+
+  Ordering rule:
+      POWER → COEFFICIENT → UNKNOWN
+
+  Modern:      x^3 + 13x^2 + 5x
+  Diophantus:  KΥα ΔΥιγ ςε
+
+  Modern:      x^3 − 5x^2 + 8x − 1
+  Diophantus:  KΥα ση ΔΥε  M°α
+
+  Reciprocal example:
+      250 / (x^2)  →  ΔΥσν
 
 Diophantus did not use an equals sign in our modern sense; 
 he wrote equations in rhetorical form with the symbol ἴσ 
@@ -83,6 +190,12 @@ and was a precursor to modern algebraic methods. Most notably,
 it facilitated the study of Diophantine equations: polynomials 
 with integer or rational solutions, a cornerstone of number 
 theory and algebraic geometry.
+
+  Diophantus’ syncopated algebra sits between:
+
+         Rhetorical arithmetic 
+      →  Syncopated algebra  
+      →  Symbolic algebra
 
 Diophantus’ symbolic notation, while primitive from a modern 
 perspective, represents a crucial historical stage ("syncopated 
