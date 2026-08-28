@@ -23,7 +23,7 @@ Special Honest-Verifier Zero-Knowledge (HVZK): There exists an efficient simulat
 ## 3. Knowledge Soundness
 : Given two accepting transcripts with the same commitment but different challenges (t,c,z) and (t,c′,z′) ((c,e,c')), one can efficiently compute the witness w. This property guarantees the proof is actually a proof of knowledge, not just of possibility.
 
-## 4. Examples of Σ-Protocols
+### Examples of Σ-Protocols
    
 **Schnorr Identification Protocol**
 
