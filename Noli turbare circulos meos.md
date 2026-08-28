@@ -2,6 +2,7 @@
 
 Archimedes almost certainly **did not** say *“Noli turbare circulos meos!”* — but he **did** say something like *“Do not disturb that diagram,”* according to Valerius Maximus. The specific “circles” wording is a *later medieval embellishment*, not an ancient quote. A recurring pattern in intellectual history: the process by which a grounded historical interaction is gradually polished into a cinematic, high-symbolism motto.
 
+## **What the record actually says**
 The evolution of Archimedes' final plea demonstrates how public memory prioritizes thematic clarity over textual fidelity:
 
 ```
@@ -36,7 +37,6 @@ ANCIENT HISTORICAL TRADITION
 
 ```
 
-## **What the record actually says**
 ### Key Dynamics in the Shift
 
 * **Directness vs. Symbolism:** Valerius Maximus’s version captures an immediate, visceral human reaction to someone stepping on physical work (*"istum"*—that specific thing right here). The addition of *"circulos"* shifts the focus from an active workspace to the sacred realm of pure geometry.
