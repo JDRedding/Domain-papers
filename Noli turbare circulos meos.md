@@ -135,3 +135,8 @@ Based strictly on ancient evidence:
 
 Only the **first** is ancient.  
 The others are **later literary upgrades**.
+
+## Future Work 
+- transmission chain from Valerius → Plutarch → Tzetzes → Renaissance
+- comparison of all three quote variants
+- “circles” as preferred symbolic form
