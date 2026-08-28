@@ -63,7 +63,7 @@ Threshold and Multi-Signatures: Σ-protocols are building blocks in cryptosystem
 
 **Linear Protocols over Groups and Rings**: Generalized Σ-protocols allow proving knowledge of vectors satisfying linear relations under group homomorphisms or lattice-based commitments.
 
-## 6. Implementation Notes
+## 6. ✍️ Implementation Notes
    
 High-quality randomness is crucial for security; leakage can compromise the witness.
 Challenge space size C should be sufficiently large to reduce soundness error (1/∣C∣).
@@ -71,7 +71,7 @@ Challenge space size C should be sufficiently large to reduce soundness error (1
 Secure deserialization must be enforced for all transmitted group and field elements.
 The linearity of many Σ-protocols allows batched verification using multi-scalar multiplication optimizations.
 
-## 7. Applications
+## 7.📱 Applications
     
 - Digital identification and authentication
 - Confidential payments and e-cash
