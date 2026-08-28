@@ -5,19 +5,34 @@ Archimedes almost certainly **did not** say *“Noli turbare circulos meos!”* 
 The evolution of Archimedes' final plea demonstrates how public memory prioritizes thematic clarity over textual fidelity:
 
 ```
-  Valerius Maximus (c. 30 AD)
-  "Noli obsecro istum disturbare."
-  (Grounded, direct plea for a diagram)
-                │
-                ▼
-  John Tzetzes (12th Century)
-  "Μὴ μου τοὺς κύκλους τάραττε."
-  (Introduction of geometric framing)
-                │
-                ▼
-  Renaissance Humanism (15th Century)
-  "Noli turbare circulos meos!"
-  (Canonical Latin cultural emblem)
+ANCIENT HISTORICAL TRADITION
+        │
+        ├── Livy
+        │     └── Archimedes absorbed in his diagram
+        │
+        ├── Plutarch
+        │     └── several accounts of his death
+        │          └── no famous quotation
+        │
+        └── Valerius Maximus
+              └── "noli, obsecro, istum disturbare"
+                   │
+                   │  roughly:
+                   │  "Do not, I beg you, disturb this."
+                   │
+                   ▼
+             MEDIEVAL TRADITION
+                   │
+                   └── diagram → circles
+                          │
+                          ▼
+             RENAISSANCE HUMANISM
+                          │
+                          └── Latin maxim
+                              "Noli turbare circulos meos"
+                                      │
+                                      ▼
+                           MODERN ARCHIMEDES MYTH
 
 ```
 
@@ -65,6 +80,23 @@ The phrase survives because it perfectly symbolizes:
 - the romantic image of the scholar who dies protecting a diagram
 
 > “a cultural emblem of focused scholarship and resistance to interruption.” 
+
+```
+  Valerius Maximus (c. 30 AD)
+  "Noli obsecro istum disturbare."
+  (Grounded, direct plea for a diagram)
+                │
+                ▼
+  John Tzetzes (12th Century)
+  "Μὴ μου τοὺς κύκλους τάραττε."
+  (Introduction of geometric framing)
+                │
+                ▼
+  Renaissance Humanism (15th Century)
+  "Noli turbare circulos meos!"
+  (Canonical Latin cultural emblem)
+
+```
 
 ## **Archimedes’ real last words**
 Based strictly on ancient evidence:
