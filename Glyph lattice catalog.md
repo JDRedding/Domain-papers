@@ -139,7 +139,7 @@ $$
 T_1=\{\mathbf{v}_k(3,R,\alpha)\},\quad T_2=\{\mathbf{v}_k(3,R,\alpha+\pi/3)\}.
 $$
 
-## **Universal generator***  
+## **Universal generator**
 Everything reduces to:
 
 - **Outer polygon**: $[n,m]$ with edges from $E_{\mathrm{cyc}}(n)$ and/or $E_{\mathrm{star}}(n,m)$  
