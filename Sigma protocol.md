@@ -16,7 +16,7 @@ These protocols are typically public-coin: the verifier’s challenge is randoml
    
 Completeness: If the prover and verifier follow the protocol honestly, the verifier always accepts:
 
-∀(x,w)∈R,Pr[V accepts P(x,w)]=1
+    ∀(x,w)∈R,Pr[V accepts P(x,w)]=1
 
 Special Honest-Verifier Zero-Knowledge (HVZK): There exists an efficient simulator that, given x and a challenge c, can produce a transcript (t,c,z) indistinguishable from a real interaction. Essentially, the protocol leaks nothing about w beyond the fact that a valid witness exists.
 
@@ -50,7 +50,7 @@ These examples generalize to proving linear relations on group elements and can 
 
 Σ-protocols are interactive, which can be a limitation in practice. The Fiat-Shamir heuristic converts a Σ-protocol into a non-interactive zero-knowledge proof (NIZK) by generating the challenge deterministically as a cryptographic hash of the commitment:
 
-c=H(commitment,context)
+    c=H(commitment,context)
 
 This allows public verification without interaction while maintaining zero-knowledge and soundness under random oracle assumptions.
 
