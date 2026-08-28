@@ -58,6 +58,23 @@ Livy and Plutarch both describe Archimedes dying while absorbed in a diagram, bu
 
 ### **2. Where “circles” actually comes from**
 
+```
+  Valerius Maximus (c. 30 AD)
+  "Noli obsecro istum disturbare."
+  (Grounded, direct plea for a diagram)
+                │
+                ▼
+  John Tzetzes (12th Century)
+  "Μὴ μου τοὺς κύκλους τάραττε."
+  (Introduction of geometric framing)
+                │
+                ▼
+  Renaissance Humanism (15th Century)
+  "Noli turbare circulos meos!"
+  (Canonical Latin cultural emblem)
+
+```
+
 > “the specific reference to ‘circles’ likely originated as a later embellishment… earliest recorded version appearing in later traditions.” 
 
 The first known appearance of the “circles” wording is in **John Tzetzes**, 12th century, who writes in Greek:
@@ -82,19 +99,23 @@ The phrase survives because it perfectly symbolizes:
 > “a cultural emblem of focused scholarship and resistance to interruption.” 
 
 ```
-  Valerius Maximus (c. 30 AD)
-  "Noli obsecro istum disturbare."
-  (Grounded, direct plea for a diagram)
-                │
-                ▼
-  John Tzetzes (12th Century)
-  "Μὴ μου τοὺς κύκλους τάραττε."
-  (Introduction of geometric framing)
-                │
-                ▼
-  Renaissance Humanism (15th Century)
-  "Noli turbare circulos meos!"
-  (Canonical Latin cultural emblem)
+ISTUM
+  │
+  │ "this [thing]"
+  ▼
+DIAGRAM
+  │
+  │ visual mathematical object
+  ▼
+CIRCLES
+  │
+  │ concrete geometric symbol
+  ▼
+CIRCULOS MEOS
+  │
+  │ possession + mathematical identity
+  ▼
+ARCHIMEDES AS CULTURAL SYMBOL
 
 ```
 
