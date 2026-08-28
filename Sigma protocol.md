@@ -1,5 +1,5 @@
 # Sigma protocol
-Σ-protocols are interactive proofs of knowledge with well-defined zero-knowledge and soundness guarantees, forming the foundation for modern cryptographic primitives and efficient non-interactive proof systems. A Σ‑protocol is just a conversation where the prover sends a random number, gets a question number, and replies with an answer number that proves they know the secret number without revealing it, unless they answer two different questions for the same random number.
+Σ-protocols are interactive proofs of knowledge with well-defined zero-knowledge and soundness guarantees, forming the foundation for modern cryptographic primitives and efficient non-interactive proof systems. A Σ‑protocol is just a conversation where the prover sends a random number, gets a question number, and replies with an answer number that proves they know the secret number without revealing it, unless they answer two different questions for the same random number. A Σ‑protocol proves knowledge of a secret witness without revealing it, relying entirely on the correctness of the formal relation it is built on.
 
 ## 1. Definition and Structure
    
