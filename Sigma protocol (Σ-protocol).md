@@ -5,9 +5,10 @@
    
 A Σ-protocol (Sigma protocol) is a three-move interactive zero-knowledge proof system designed to allow a prover P to convince a verifier V that they know a secret witness w corresponding to a public statement x within a binary relation R⊆X×Y, without revealing the witness. Formally, if (x,w)∈R, P can prove knowledge of w linked to x. The protocol consists of the following steps:
 
-Commitment t: The prover sends a commitment to the verifier.
-Challenge c: The verifier sends a random challenge from a finite challenge space C.
-Response z: The prover computes a response based on t, c, and their secret w.
+- Commitment t: The prover sends a commitment to the verifier.
+- Challenge c: The verifier sends a random challenge from a finite challenge space C.
+- Response z: The prover computes a response based on t, c, and their secret w.
+- 
 The verifier then checks whether (t,c,z) satisfies the verification equation corresponding to the relation R.
 
 These protocols are typically public-coin: the verifier’s challenge is randomly chosen and independently communicated to the prover.
@@ -80,7 +81,7 @@ The linearity of many Σ-protocols allows batched verification using multi-scala
 - Anonymous credentials and password-authenticated key exchange
 
 ## 8 ⭐ The Reality of the Witness
-Interpretation and Formalization
+Interpretation and Multi-party Computations Formalization
 
 A Σ‑protocol does not prove the secret itself; it proves knowledge of a witness that satisfies a formal relation R. The verifier never learns the witness w, never reconstructs it, and never checks its semantic correctness. Instead, the verifier checks that the prover behaves in a way that is algebraically impossible unless they know some w such that (x,w) in R.
 
