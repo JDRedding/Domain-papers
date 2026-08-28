@@ -34,7 +34,7 @@ Steps:
 1. : P chooses random r∈Z_q , computes commitment t=g^r
 2. : V sends a challenge c∈Z_q
 3. : P responds with z=r+cx mod q
-4. : V verifies: gz=?t⋅ucg z =? t⋅u c.
+4. : V verifies: g^z =^? t⋅u^c
 
 **Okamoto Protocol**
 
