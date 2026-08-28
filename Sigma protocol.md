@@ -76,15 +76,11 @@ The linearity of many Σ-protocols allows batched verification using multi-scala
 
 ## 7. Applications
     
-Digital identification and authentication
-
-Confidential payments and e-cash
-
-Zero-knowledge proofs in cryptocurrencies and confidential blockchain transactions
-
-Threshold cryptography and multi-party computations
-
-Anonymous credentials and password-authenticated key exchange
+- Digital identification and authentication
+- Confidential payments and e-cash
+- Zero-knowledge proofs in cryptocurrencies and confidential blockchain transactions
+- Threshold cryptography and multi-party computations
+- Anonymous credentials and password-authenticated key exchange
 
 ## 8 ⭐ The Reality of the Witness
 Interpretation and Formalization
