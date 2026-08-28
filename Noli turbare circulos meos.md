@@ -2,7 +2,7 @@
 
 Archimedes almost certainly **did not** say *“Noli turbare circulos meos!”* — but he **did** say something like *“Do not disturb that diagram,”* according to Valerius Maximus. The specific “circles” wording is a *later medieval embellishment*, not an ancient quote.
 
-## **What the document actually says (with citations)**
+## **What the record actually says**
 
 ### **1. The ancient core of the story**
 Earliest surviving account is from **Valerius Maximus** (early 1st century AD), who records Archimedes pleading:
