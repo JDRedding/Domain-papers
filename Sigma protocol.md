@@ -94,7 +94,9 @@ A Σ‑protocol does not prove the secret itself; it proves knowledge of a witne
 This means the proof is only as “real” as the **formalization of the relation**. If the relation R does not correctly encode the intended statement, then the Σ‑protocol proves knowledge of the wrong witness. The protocol remains sound and zero‑knowledge, but the *meaning* of the proof is incorrect. This mirrors the behavior of formal proof systems, such: the kernel verifies the logic of the formalization, not the intended semantics. A proof is correct only relative to the definitions provided; if the definitions misrepresent the intended concept, the proof is correct but meaningless.
 
 Thus, Σ‑protocols inherit the same foundational limitation as formal logic:  
-**the proof is only as meaningful as the correctness of the relation it is built on.** 
+
+> The proof is only as meaningful as the correctness of the relation it is built on.
+
 The protocol guarantees knowledge of a witness, but only the *designer* of the relation can guarantee that the witness corresponds to the intended real‑world secret.
 
 ## References
