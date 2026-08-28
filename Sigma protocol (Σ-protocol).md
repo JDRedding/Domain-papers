@@ -74,11 +74,12 @@ The linearity of many Σ-protocols allows batched verification using multi-scala
 
 ## 7.📱 Applications
     
-- Digital identification and authentication
-- Confidential payments and e-cash
-- Zero-knowledge proofs in cryptocurrencies and confidential blockchain transactions
-- Threshold cryptography and multi-party computations
-- Anonymous credentials and password-authenticated key exchange
+- Digital identification and authentication: A Σ‑protocol lets a user prove “I know the secret key” without revealing it. That’s exactly what identification requires: proving identity without exposing credentials.
+- Confidential payments and e-cash: E‑cash systems need users to prove they own a coin or balance without revealing the coin. Σ‑protocols gives: proof of possession without disclosure.
+- Zero-knowledge proofs in cryptocurrencies and confidential blockchain transactions: Blockchains need public verifiability but private data. Σ‑protocols provide the building block for zk‑SNARK‑style systems:
+prove a transaction is valid without revealing amounts or addresses.
+- Threshold cryptography and multi-party computations: Multi‑party protocols require parties to prove they contributed valid shares without leaking their shares. Σ‑protocols give exactly that: knowledge proofs over secret‑shared witnesses.
+- Anonymous credentials and password-authenticated key exchange: Anonymous credentials require proving “I have a valid credential” without revealing which one. Password‑authenticated key exchange requires proving “I know the password” without sending it. Both are direct uses of Σ‑protocol knowledge proofs.
 
 ## 8 ⭐ The Reality of the Witness
 Interpretation and Multi-party Computations Formalization
