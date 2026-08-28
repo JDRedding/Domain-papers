@@ -1,7 +1,7 @@
 # Sigma protocol
 Σ-protocols are interactive proofs of knowledge with well-defined zero-knowledge and soundness guarantees, forming the foundation for modern cryptographic primitives and efficient non-interactive proof systems. A Σ‑protocol is just a conversation where the prover sends a random number, gets a question number, and replies with an answer number that proves they know the secret number without revealing it, unless they answer two different questions for the same random number. A Σ‑protocol proves knowledge of a secret witness without revealing it, relying entirely on the correctness of the formal relation it is built on.
 
-## 1. Definition and Structure
+## 1. 📚 Definition and Structure
    
 A Σ-protocol (Sigma protocol) is a three-move interactive zero-knowledge proof system designed to allow a prover P to convince a verifier V that they know a secret witness w corresponding to a public statement x within a binary relation R⊆X×Y, without revealing the witness. Formally, if (x,w)∈R, P can prove knowledge of w linked to x. The protocol consists of the following steps:
 
@@ -12,7 +12,7 @@ The verifier then checks whether (t,c,z) satisfies the verification equation cor
 
 These protocols are typically public-coin: the verifier’s challenge is randomly chosen and independently communicated to the prover.
 
-## 2. Security Properties
+## 2. 🔐 Security Properties
    
 Completeness: If the prover and verifier follow the protocol honestly, the verifier always accepts:
 
@@ -54,14 +54,14 @@ These examples generalize to proving linear relations on group elements and can 
 
 This allows public verification without interaction while maintaining zero-knowledge and soundness under random oracle assumptions.
 
-## 5. Advanced Extensions
+## 5. 🏹 Advanced Extensions
    
-OR-Composition: Allows proving knowledge of one out of multiple witnesses.
+**OR-Composition**: Allows proving knowledge of one out of multiple witnesses.
 Threshold and Multi-Signatures: Σ-protocols are building blocks in cryptosystems supporting these operations.
 
-Compressed Σ-Protocols: Used in constructions like Bulletproofs to achieve logarithmic communication while preserving zero-knowledge proofs of linear or quadratic relations.
+**Compressed Σ-Protocols**: Used in constructions like Bulletproofs to achieve logarithmic communication while preserving zero-knowledge proofs of linear or quadratic relations.
 
-Linear Protocols over Groups and Rings: Generalized Σ-protocols allow proving knowledge of vectors satisfying linear relations under group homomorphisms or lattice-based commitments.
+**Linear Protocols over Groups and Rings**: Generalized Σ-protocols allow proving knowledge of vectors satisfying linear relations under group homomorphisms or lattice-based commitments.
 
 ## 6. Implementation Notes
    
