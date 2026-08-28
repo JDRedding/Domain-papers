@@ -31,13 +31,10 @@ Proves knowledge of discrete logarithm x such that u=g^x in a cyclic group G of 
 
 Steps:
 
-: P chooses random r∈Z_q , computes commitment t=g^r
-
-: V sends a challenge c∈Z_q
-
-: P responds with z=r+cx mod q
-
-: V verifies: gz=?t⋅ucg z =? t⋅u c.
+1. : P chooses random r∈Z_q , computes commitment t=g^r
+2. : V sends a challenge c∈Z_q
+3. : P responds with z=r+cx mod q
+4. : V verifies: gz=?t⋅ucg z =? t⋅u c.
 
 **Okamoto Protocol**
 
