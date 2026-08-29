@@ -126,11 +126,11 @@ Messages are delivered **one or more times**. No messages are lost, but duplicat
 
 ## **Message Delivery Semantics Comparison**
 
-| Guarantee               | Processing rule                                                                       | Loss permitted?                         | Duplicate effects permitted?                        | Typical latency | Typical complexity |
-| ----------------------- | ------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------- | --------------- | ------------------ |
-| At-most-once            | Advance durable progress before effect completion, or do not retry uncertain delivery | Yes                                     | No, assuming no retries                             | Low             | Low                |
-| At-least-once           | Retry uncertain delivery; advance progress only after effect completion               | No, under stated durability assumptions | Yes                                                 | Medium          | Medium             |
-| Exactly-once processing | Atomically commit the output effects and input progress, or make effects idempotent   | No                                      | No, within the declared transaction/effect boundary | Higher          | High               |
+| **Guarantee** | **[Processing Rule](ca://s?q=Explain_processing_rule_semantics)** | **[Loss Permitted?](ca://s?q=Explain_message_loss_semantics)** | **[Duplicate Effects Permitted?](ca://s?q=Explain_duplicate_effects_semantics)** | **Typical Latency** | **Typical Complexity** |
+| --- | --- | --- | --- | --- | --- |
+| **At‑Most‑Once** | Advance durable progress *before* effect completion, or do not retry uncertain delivery | Yes | No (assuming no retries) | Low | Low |
+| **At‑Least‑Once** | Retry uncertain delivery; advance progress only *after* effect completion | No (under durability assumptions) | Yes | Medium | Medium |
+| **Exactly‑Once** | Atomically commit output effects and input progress, or make effects idempotent | No | No (within transaction boundary) | Higher | High |
 
 At-most-once does not universally mean no duplicates. It means the system deliberately avoids retrying ambiguous delivery or processing attempts. Duplicates can still arise elsewhere if the implementation has multiple producers, replay paths, or non-idempotent external effects.
 
