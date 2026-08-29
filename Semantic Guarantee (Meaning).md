@@ -1,6 +1,6 @@
 ## Semantic Meaning Guarantee 
 
-A **semantic guarantee** is a formal assurance that an AI system’s outputs preserve *intended meaning*, *contextual correctness*, and *truth‑aligned relationships* across transformations. This is distinct from syntactic guarantees, which only ensure structural correctness. Semantic guarantees require explicit mechanisms for meaning preservation, contextual logic, and invariance under transformation.
+A **semantic guarantee** is a formal assurance that an systems' outputs preserve *intended meaning*, *contextual correctness*, and *truth‑aligned relationships* across transformations. This is distinct from syntactic guarantees, which only ensure structural correctness. Semantic guarantees require explicit mechanisms for meaning preservation, contextual logic, and invariance under transformation.
 
 This note distinguishes *semantic guarantees* from *syntactic guarantees*. The distinction: 
 
