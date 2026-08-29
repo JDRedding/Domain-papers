@@ -1,39 +1,43 @@
 # Formal Semantic Substrate Theory (FSST) 
 Semantic Meaning Guarantee 
 
-This note distinguishes *semantic guarantees* from *syntactic guarantees*. A **semantic guarantee** is a formal assurance that a systems' outputs preserve *intended meaning*, *contextual correctness*, and *truth‑aligned relationships* across transformations. This is distinct from syntactic guarantees, which only ensure structural correctness. Semantic guarantees require explicit mechanisms for meaning preservation, contextual logic, and invariance under transformation.
+Formal Semantic Substrate Theory (FSST) describes meaning as a **time‑evolving geometric and operator‑theoretic substrate**. It provides a mathematical structure for analyzing how semantic relationships change over time, without asserting truth or correctness by itself.
 
-Formal Semantic Substrate Theory (FSST) models meaning as a **time‑evolving operator‑theoretic substrate**, unifying formal semantics, geometric dynamical systems, and Koopman‑style linearization. A semantic state is represented as 
+A semantic state is represented as:
 
-$$
+\[
 S_t = (X, d_t, P_t)
-$$  
+\]
 
-where **X** is the set of semantic entities, **dₜ** is a time‑indexed semantic distance, and **Pₜ** is a diffusion operator describing how meaning propagates through neighborhoods. Semantic evolution is governed by an operator **K** acting on observables:  
+where:
 
-$$
-g_{t+1} = K g_t, \qquad K g(x) = g(f(x)),
-$$  
+- **X** is the set of semantic entities  
+- **d_t** is a time‑indexed semantic distance  
+- **P_t** is a diffusion operator describing how meaning propagates locally  
 
-or in continuous form  
+Semantic evolution is modeled through an operator \(K\) acting on observables:
 
-$$
-\frac{dg}{dt} = K g,
-$$  
+\[
+g_{t+1} = K g_t, \qquad K g(x) = g(f(x))
+\]
 
-allowing nonlinear semantic drift to be analyzed through linear, infinite‑dimensional Koopman methods.
+or in continuous form:
 
-FSST provides quantitative stability metrics—**neighborhood drift**, **coarse Ricci curvature**, **recursive drift**, and **bridge mass**—to detect semantic contraction, instability, or rewiring. Koopman eigenfunctions decompose semantic evolution into stable and unstable modes, enabling prediction, control‑theoretic analysis, and long‑horizon semantic forecasting.
+\[
+\frac{dg}{dt} = K g
+\]
 
-FSST extends classical formal semantics by embedding truth‑conditional structures inside a geometric, temporally evolving substrate. It unifies embeddings, neighbor relations, and distributional shifts under a single operator‑theoretic model, enabling spectral stability analysis, empirical falsification, and structured prediction of semantic change.
+This operator‑theoretic formulation allows nonlinear semantic drift to be studied using linear, infinite‑dimensional Koopman methods. Koopman eigenfunctions decompose semantic evolution into stable and unstable modes, enabling long‑horizon analysis of semantic change.
 
-Formally, FSST is summarized as:  
+FSST provides quantitative drift metrics — **neighborhood drift**, **coarse Ricci curvature**, **recursive drift**, and **bridge mass** — that measure contraction, expansion, or rewiring in semantic neighborhoods. These metrics do not certify meaning or truth; they supply **observable geometry** that can be used in downstream verification systems.
 
-$$
-S_t = (X, d_t, P_t), \qquad K : H \to H, \qquad g_{t+1} = K g_t,
-$$  
+Formally:
 
-with **$H$** the Hilbert space of observables over semantic nodes. This yields a mathematically rigorous, dynamically analyzable model of semantics that bridges formal semantic theory with modern geometric and operator‑driven approaches, enabling predictive, stable, and interpretable semantic reasoning in high‑dimensional conceptual spaces.
+\[
+S_t = (X, d_t, P_t), \qquad K : H \to H, \qquad g_{t+1} = K g_t
+\]
+
+with **H** the Hilbert space of observables over semantic nodes. FSST therefore offers a mathematically rigorous substrate for analyzing semantic dynamics, providing drift observables and operator‑level structure that can be attached to external checkers and falsifiable tests.
 
 ## Syntactic vs. Semantic Guarantees
 
