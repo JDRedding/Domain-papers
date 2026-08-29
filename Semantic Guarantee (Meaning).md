@@ -84,6 +84,39 @@ SIL’s guarantees follow its technical charter and 14 foundational constraints:
 - Preservation of measurable relationships and predicted outcomes across empirical evaluations.
 - Explicitly testable criteria for alignment with semantic axioms.
 
+Formal Semantic Substrate Theory (FSST) is an operator‑theoretic and geometric framework that models meaning as a time‑evolving substrate. Semantic entities form a dynamic space  
+
+$$
+S_t = (X, d_t, P_t)
+$$ 
+
+where **X** is the set of semantic nodes (words, concepts), **dₜ** is a time‑indexed semantic distance, and **Pₜ** is a local diffusion operator describing how meaning propagates through neighborhoods. FSST treats semantic evolution as an operator‑driven dynamical system: a semantic operator **K** advances observables  
+
+$$
+g_{t+1} = K g_t,
+\quad K g(x) = g(f(x)),
+$$ 
+
+or in continuous time 
+
+$$
+\frac{dg}{dt} = K g,
+$$ 
+
+allowing nonlinear semantic drift to be analyzed through linear, infinite‑dimensional Koopman methods.
+
+FSST provides quantitative drift metrics—neighborhood drift, coarse Ricci curvature, recursive drift stability, and bridge mass—to detect semantic contraction, instability, or rewiring. Koopman eigenfunctions linearize semantic trajectories, enabling prediction, control‑theoretic analysis, and decomposition of meaning into stable and unstable modes.
+
+FSST extends classical formal semantics by embedding truth‑conditional structures inside a geometric, temporally evolving substrate. It unifies embeddings, neighbor relations, and distributional shifts under a single operator‑theoretic model, enabling prediction of semantic change, spectral stability analysis, and empirical falsification through drift and curvature measurements.
+
+Formally, FSST is summarized as:  
+
+$$
+S_t = (X, d_t, P_t), \quad K : H \to H, \quad g_{t+1} = K g_t,
+$$ 
+
+where **H** is the Hilbert space of observables over semantic nodes. This yields a mathematically rigorous, dynamically analyzable model of semantics that bridges formal semantic theory with modern geometric and operator‑driven approaches, enabling structured, predictive, and stable semantic reasoning in high‑dimensional conceptual spaces.
+
 ---
 
 ## Mechanisms list
