@@ -22,12 +22,14 @@ Each represents a different balance of throughput, reliability, and complexity.
 |  DELIVERY SEMANTICS QUICK MATRIX   |
 +-----------------+------+-----+-----+
 | Guarantee       | Loss | Dup | Lat |
+| Guarantee       | Loss* | Dup* | Lat |
 +-----------------+------+-----+-----+
 | At-Most-Once    | Yes  | No  | Low |
 | At-Least-Once   | No   | Yes | Med |
 | Exactly-Once    | No   | No  | High|
 +-----------------+------+-----+-----+
-
+* Within the guarantee's defined processing
+  /transaction boundary.
 ```
 
 ---
@@ -94,6 +96,8 @@ Messages are delivered **one or more times**. No messages are lost, but duplicat
 ### **Definition**  
 Messages are delivered and processed **exactly once** — no loss, no duplicates — even with retries, broker failures, or consumer crashes.
 
+Exactly-once processing semantics (EOS) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
+
 ### **Mechanisms in Kafka**
 - **Idempotent Producers**  
   - Producer ID (PID) + sequence numbers  
@@ -114,7 +118,7 @@ Messages are delivered and processed **exactly once** — no loss, no duplicates
 - Stream processing pipelines requiring precision
 
 ### **Trade‑offs**
-- Higher latency (typically 2–5 ms per transaction)  
+- Higher latency 
 - Slightly reduced throughput  
 - Increased operational complexity  
 - Strong correctness guarantees
@@ -153,7 +157,7 @@ Frameworks like Kafka Streams and Apache Flink build EOS stream processors on to
 
 * **At-Most-Once:** The consumer commits its offset *before* executing business logic. If the consumer crashes during processing, the broker assumes it finished, causing message loss upon recovery.
 * **At-Least-Once:** The consumer commits its offset *after* business logic succeeds. If the process crashes mid-execution, the replacement consumer re-reads from the last committed offset, leading to duplicate processing.
-* **Exactly-Once (EOS):** Relies on two-phase commit protocol mechanics under the hood (Transaction Coordinator, Transaction Log, and Control Markers in Kafka topic partitions).
+* **Exactly-Once (EOS):** Uses producer idempotence and Kafka transactions to atomically coordinate produced records and consumed offsets. The transaction coordinator tracks transaction state, while commit/abort control markers allow `read_committed` consumers to distinguish committed transactional data from aborted transactions
 
 ### Kafka EOS Mechanism Breakdown
 
@@ -164,6 +168,22 @@ Frameworks like Kafka Streams and Apache Flink build EOS stream processors on to
 ### The "End-to-End" Reality Check
 
 Kafka's EOS only applies **within the Kafka ecosystem** (Kafka → Kafka Streams → Kafka).
+
+```text
+Kafka transaction
+       │
+       ▼
+    Processor
+       │
+       ▼
+   PostgreSQL
+       │
+       ├── transactional integration
+       │       → atomic boundary can extend
+       │
+       └── idempotent operation
+               → effect can converge safely
+```
 
 When writing to external sinks (like PostgreSQL, Elasticsearch, or S3):
 
