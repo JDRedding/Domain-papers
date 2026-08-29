@@ -2,6 +2,25 @@
 
 This note distinguishes *semantic guarantees* from *syntactic guarantees*. A **semantic guarantee** is a formal assurance that a systems' outputs preserve *intended meaning*, *contextual correctness*, and *truth‑aligned relationships* across transformations. This is distinct from syntactic guarantees, which only ensure structural correctness. Semantic guarantees require explicit mechanisms for meaning preservation, contextual logic, and invariance under transformation.
 
+## Syntactic vs. Semantic Guarantees
+
+A **syntactic guarantee** ensures that an output adheres strictly to formal rules, grammar, schema, or structural constraints (e.g., valid JSON parsing, type safety, or grammatical compliance). However, syntactic validity does not imply truth or meaningfulness.
+
+A **semantic guarantee** provides a formal, inspectable assurance that a system's transformations and outputs preserve **intended meaning**, **contextual correctness**, and **truth-aligned relationships**.
+
+```
+                                  SYSTEM TRANSFORMATION
+                                   ┌─────────────────┐
+  Input Intent (Meaning M) ───────►│  Transform φ    │────────► Output (Meaning M')
+                                   └─────────────────┘
+                                            │
+                      ┌─────────────────────┴─────────────────────┐
+                      ▼                                           ▼
+            Syntactic Guarantee                         Semantic Guarantee
+         [Structure Correct: M' ∈ Grammatical]     [Meaning Preserved: M' ≡ M]
+
+```
+
 A semantic guarantee is a formal assurance that reasoning, computation, or communication preserves intended meaning, truthfulness, or alignment. In semantic substrate frameworks, these guarantees are achieved via anchor-based alignment, phi-geometric optimization, truth-validation modules, and operator-theoretic methods, across multiple interconnected domains (ethical, spiritual, consciousness, quantum, physical, and computational). The practical impact is trustworthy, interpretable, and semantically coherent AI behavior regardless of complexity or cross-domain integration.
 
 A TruthSense module is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
