@@ -17,7 +17,7 @@ A TruthSense module is a semantic‑integrity layer designed to enforce truth al
          ┌─────────────────────────────────┼─────────────────────────────────┐
          ▼                                 ▼                                 ▼
 ┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
-│     BruinGrowly SSF     │   │     Infrastructure      │   │   Operator-Theoretic    │
+│  Substrate Frame [SSF]  │   │     Infrastructure      │   │   Operator-Theoretic    │
 │  (Multi-Domain Align)   │   │       Lab (SIL)         │   │   Substrate (Formal)    │
 ├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
 │ • ICE Framework         │   │ • Persistent Memory     │   │ • Spectral Stability    │
