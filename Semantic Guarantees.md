@@ -10,6 +10,27 @@ Semantic guarantees define how reliably a messaging or streaming system delivers
 - Idempotence and transactions are the core tools for achieving EOS.  
 - Kafka provides strong EOS guarantees, but external systems must also support idempotency or transactions to maintain end‑to‑end correctness.
 
+## Notation
+
+Below is a compact mathematical account of the three delivery/processing semantics in the notes, together with the Kafka-specific machinery (idempotent producers, sequence numbers, transactions). The notation is chosen so each guarantee is a statement about counts of deliveries and of *observable effects*, not just network packets.
+
+| Symbol | Meaning |
+|---|---|
+| $M$ | set of logical messages (application records) |
+| $m \in M$ | a single logical message |
+| $D(m)$ | number of times $m$ is *delivered* to a consumer |
+| $E(m)$ | number of times the *effect* of $m$ is committed in the processing boundary |
+| $o(m)$ | last durable consumer offset associated with $m$ |
+| $\mathrm{proc}(m)$ | business-logic / side-effect function applied to $m$ |
+| $\mathrm{commit}(o)$ | durable write of offset $o$ |
+| $\mathrm{PID}$ | producer identifier |
+| $s_{\mathrm{PID},p}$ | producer sequence number for partition $p$ |
+| $L_{\mathrm{PID},p}$ | last accepted sequence number stored by the broker for $(\mathrm{PID},p)$ |
+| $T$ | a Kafka transaction |
+| $\mathrm{vis}(r)$ | whether record $r$ is visible to a `read_committed` consumer |
+
+Effects live inside a *processing / transaction boundary* $B$. All “no loss / no duplicate” claims below are relative to $B$, exactly as in the notes.
+
 ## **📘 Overview**
 There are three standard delivery semantics:
 
@@ -48,30 +69,9 @@ Each guarantee as a logical predicate over message‑effect counts:
 
 This way to expresses semantics: everything reduces to **counts of observable effects**, not packet‑level retries.
 
-## Notation
-
-Below is a compact mathematical account of the three delivery/processing semantics in the notes, together with the Kafka-specific machinery (idempotent producers, sequence numbers, transactions). The notation is chosen so each guarantee is a statement about counts of deliveries and of *observable effects*, not just network packets.
-
-| Symbol | Meaning |
-|---|---|
-| $M$ | set of logical messages (application records) |
-| $m \in M$ | a single logical message |
-| $D(m)$ | number of times $m$ is *delivered* to a consumer |
-| $E(m)$ | number of times the *effect* of $m$ is committed in the processing boundary |
-| $o(m)$ | last durable consumer offset associated with $m$ |
-| $\mathrm{proc}(m)$ | business-logic / side-effect function applied to $m$ |
-| $\mathrm{commit}(o)$ | durable write of offset $o$ |
-| $\mathrm{PID}$ | producer identifier |
-| $s_{\mathrm{PID},p}$ | producer sequence number for partition $p$ |
-| $L_{\mathrm{PID},p}$ | last accepted sequence number stored by the broker for $(\mathrm{PID},p)$ |
-| $T$ | a Kafka transaction |
-| $\mathrm{vis}(r)$ | whether record $r$ is visible to a `read_committed` consumer |
-
-Effects live inside a *processing / transaction boundary* $B$. All “no loss / no duplicate” claims below are relative to $B$, exactly as in the notes.
-
 ---
 
-### **At‑Most‑Once Delivery**
+## **At‑Most‑Once Delivery**
 
 ### **Definition**  
 Messages are delivered **at most once**. No duplicates occur, but messages may be lost if failures happen before processing completes.
@@ -130,7 +130,7 @@ $$
 
 ---
 
-###  **At‑Least‑Once Delivery**
+##  **At‑Least‑Once Delivery**
 
 ### **Definition**  
 Messages are delivered **one or more times**. No messages are lost, but duplicates may occur.
@@ -198,7 +198,7 @@ so multiple executions collapse to one *observable* state even though $E(m)>1$.
 
 ---
 
-### **Exactly‑Once Delivery (EOS)**
+## **Exactly‑Once Delivery (EOS)**
 
 ### **Definition**  
 **Exactly-once processing semantics** (**EOS**) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
