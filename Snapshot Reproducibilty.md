@@ -8,15 +8,6 @@ If two parties hold faithful mirrors of the same pinned snapshot 𝑆, and they 
 
  Amplification of representation ≠ amplification of entropy.
 
-### **Axioms of Semantic Precedence**
-
-1. **Semantics must be declared before snapshots are pinned.**  
-2. **Snapshots must be validated against declared semantics.**  
-3. **Reproducibility is only meaningful after semantic validation.**  
-4. **Digest verification cannot substitute for semantic verification.**  
-5. **Closed semantics cannot be generalized without loss.**  
-6. **Meaning cannot be reconstructed from a digest.**
-
 ## 🧩 **Substrate & Snapshot (Mechanical Layer)**
 
 - **Pinned Snapshot** — A frozen, versioned corpus mirrored identically across parties.  
@@ -83,6 +74,15 @@ $$
 - **Semantic Trust** — Trust in the correctness of the meaning, not the mechanics.  
 - **Semantic Opacity** — The condition where meaning is hidden or undeclared.  
 - **Semantic Irrecoverability** — The fact that meaning cannot be reconstructed from a digest.
+
+### **Axioms of Semantic Precedence**
+
+1. **Semantics must be declared before snapshots are pinned.**  
+2. **Snapshots must be validated against declared semantics.**  
+3. **Reproducibility is only meaningful after semantic validation.**  
+4. **Digest verification cannot substitute for semantic verification.**  
+5. **Closed semantics cannot be generalized without loss.**  
+6. **Meaning cannot be reconstructed from a digest.**
 
 ---
 
