@@ -615,7 +615,7 @@ $$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\p
 | $m_x^{(t)}$ | local neighborhood measure at $x$ |
 | $P_t$ | one-step Markov kernel, $P_t(x,\cdot)=m_x^{(t)}$ |
 | $\mathsf{W}_1$ | 1-Wasserstein distance |
-| $\operatorname{JS}$ | Jensen–Shannon divergence |
+| ${JS}$ | Jensen–Shannon divergence |
 | $H(\cdot)$ | Shannon entropy |
 | $\kappa_{\mathrm{OR}}^{(t)}(x,y)$ | Ollivier–Ricci curvature of edge $(x,y)$ |
 | $B_t(x)$ | bridge mass at node $x$ |
@@ -662,7 +662,7 @@ $$
 **Rewiring (neighborhood) drift**
 
 $$
-D_{\mathrm{rw}}(x;t_0,t_1)=\operatorname{JS}\!\bigl(m_x^{(t_0)}\,\big\|\,m_x^{(t_1)}\bigr)
+D_{\mathrm{rw}}(x;t_0,t_1)={JS}\!\bigl(m_x^{(t_0)}\,\big\|\,m_x^{(t_1)}\bigr)
 $$
 
 **Companion neighborhood observables**
@@ -816,7 +816,7 @@ $$
 Characteristic predicate on automorphisms:
 
 $$
-\chi:\operatorname{Aut}(\mathcal{C}_N)\to\{0,1\}
+\chi:{Aut}(\mathcal{C}_N)\to\{0,1\}
 $$
 
 SCP as written:
