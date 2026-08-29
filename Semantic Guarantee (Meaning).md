@@ -370,9 +370,33 @@ Koopman operators extract:
 - drift trajectories  
 - global temporal invariants  
 
+### Continuous-State Latent Embedding Dynamics
+
+For continuous representation models (such as hidden states $h_t$), state transitions approximate linear operator steps over small bounds:
+
+$$h_{t+1} \approx \hat{K}_\phi h_t$$
+
+Stability over long horizons requires the spectral radius to satisfy $\rho(\hat{K}_\phi) \le 1$.
+
+```
+                 UNSTABLE DYNAMICS (ρ > 1)           STABLE SPECTRUM (ρ ≤ 1)
+                     Semantic Drift                       Bounded Invariance
+                 ┌─────────────────────┐               ┌─────────────────────┐
+                 │  h₃                 │               │     v₁ (Eigenmode)  │
+                 │   \                 │               │    ┌───────┐        │
+                 │    h₂               │               │    │  h₁   │        │
+                 │     \               │               │    │  h₂   │        │
+                 │      h₁             │               │    │  h₃   │        │
+                 │       \             │               │    └───────┘        │
+                 │        h₀           │               │   Preserved Domain  │
+                 └─────────────────────┘               └─────────────────────┘
+
+```
+
 ---
 
 ## **Verification and Proof Methodology**
+
 The **TruthSense module** is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that AI outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
 
 1. **Operator Construction**  
