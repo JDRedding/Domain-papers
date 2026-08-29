@@ -640,22 +640,13 @@ $$
 S_t=(X,d_t,P_t)
 $$
 
-
-
-
-
-
-The missing `\end{cases}` is easy to fix — but the deeper issue is that your line breaks (`\\[4pt]`) were placed *inside* the case rows, which breaks the environment. Here is the **clean, RDG‑compatible, ASCII‑stable** version of your local neighborhood diffusion kernel:
-
----
-
-### **Corrected diffusion‑kernel definition**
+**Local neighborhood measure / diffusion kernel**
 
 $$
 m_x^{(t)}(z)=
 \begin{cases}
 \alpha, & z = x, \\[6pt]
-(1-\alpha)\,\dfrac{w_{xz}}{\displaystyle\sum_{u\in N_t(x)} w_{xu}}, & z\in N_t(x), \\[10pt]
+(1-\alpha)\,\dfrac{w_{xz}}{\displaystyle\sum_{u\in N_t(x)} w_{xu}}, & z\in N_t(x), 
 0, & \text{otherwise}
 \end{cases}
 $$
