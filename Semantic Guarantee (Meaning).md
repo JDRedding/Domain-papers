@@ -517,7 +517,7 @@ This supports:
 
 These predictions are **inputs** to verification, not guarantees.  
 
-The original SCP attempted to define semantic invariance under composition. To align with the guarantee architecture, SCP must be rewritten as a **commitment‑invariance predicate**, not a metaphysical identity rule:
+To align with the guarantee architecture, SCP must be rewritten as a **commitment‑invariance predicate**, not a metaphysical identity rule:
 
 $$
 \chi(\phi)=1
