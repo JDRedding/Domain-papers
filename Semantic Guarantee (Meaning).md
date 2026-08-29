@@ -50,7 +50,6 @@ Semantic guarantees consist of three checkable domains:
 - **Geometric stability** — semantic drift must remain within pre‑registered thresholds  
 
 These checks do not assert that the output’s meaning is preserved. They assert that the output satisfies **verifiable constraints**.  
-See: **semantic constraints**
 
 ```
                                   SYSTEM TRANSFORMATION
@@ -80,7 +79,6 @@ Semantic guarantees do **not** come from:
 
 These belong to **policy frameworks**, not guarantee mechanisms.  
 See: **semantic policy frameworks**
-
 
 A syntactic guarantee ensures **form**.  
 A semantic guarantee ensures **verifiable constraints**:
