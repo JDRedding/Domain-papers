@@ -1,4 +1,4 @@
-# **Semantic Guarantees**
+# **Mechanical Semantic Guarantees**
 
 This document formalizes **At‑Most‑Once**, **At‑Least‑Once**, and **Exactly‑Once** semantics as **constraints on delivery counts** $D(m)$ and **committed effects** $E(m)$, then shows how Kafka enforces EOS inside a transactional boundary $B$ using **idempotent producers**, **transactional commits**, and **consumer isolation**. End‑to‑end EOS only holds if *every* stage is either transactional or idempotent.
 
