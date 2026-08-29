@@ -41,26 +41,56 @@ with **H** the Hilbert space of observables over semantic nodes. FSST therefore 
 
 ## Syntactic vs. Semantic Guarantees
 
-A **syntactic guarantee** ensures that an output adheres strictly to formal rules, grammar, schema, or structural constraints (e.g., valid JSON parsing, type safety, or grammatical compliance). However, syntactic validity does not imply truth or meaningfulness.
+A semantic guarantee applies only where the system can perform **external, falsifiable checks** on the content of an output. It does not preserve “meaning” in the philosophical sense; it preserves **verified relationships** that can be audited.
 
-A **semantic guarantee** provides a formal, inspectable assurance that a system's transformations and outputs preserve **intended meaning**, **contextual correctness**, and **truth-aligned relationships**.
+Semantic guarantees consist of three checkable domains:
+
+- **Referential grounding** — factual claims must be supported by retrieval and citation  
+- **Dialogical consistency** — outputs must not contradict the system’s commitment set  
+- **Geometric stability** — semantic drift must remain within pre‑registered thresholds  
+
+These checks do not assert that the output’s meaning is preserved. They assert that the output satisfies **verifiable constraints**.  
+See: **semantic constraints**
 
 ```
                                   SYSTEM TRANSFORMATION
                                    ┌─────────────────┐
-  Input Intent (Meaning M) ───────►│  Transform φ    │────────► Output (Meaning M')
+  Input Intent (Meaning M) ───────►│  Transform φ    │────────► Output (M')
                                    └─────────────────┘
                                             │
                       ┌─────────────────────┴─────────────────────┐
                       ▼                                           ▼
             Syntactic Guarantee                         Semantic Guarantee
-         [Structure Correct: M' ∈ Grammatical]     [Meaning Preserved: M' ≡ M]
-
+         [Structure Valid]                         [Externally Verified Constraints]
 ```
 
-A semantic guarantee is a formal assurance that reasoning, computation, or communication preserves intended meaning, truthfulness, or alignment. In semantic substrate frameworks, these guarantees are achieved via anchor-based alignment, phi-geometric optimization, truth-validation modules, and operator-theoretic methods, across multiple interconnected domains (ethical, spiritual, consciousness, quantum, physical, and computational). The practical impact is trustworthy, interpretable, and semantically coherent behavior regardless of complexity or cross-domain integration.
+The left branch checks **form**.  
+The right branch checks **claims, consistency, and drift**.
 
-A TruthSense module is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
+Neither branch guarantees that **M' ≡ M**.  
+Meaning preservation is not a checkable property.
+
+Semantic guarantees do **not** come from:
+
+- anchor \(A(1,1,1,1)\)  
+- phi‑geometry  
+- spiritual, consciousness, quantum, or ethical domains  
+- operator‑theoretic invariants  
+- TruthSense “preventing hallucinations”  
+
+These belong to **policy frameworks**, not guarantee mechanisms.  
+See: **semantic policy frameworks**
+
+
+A syntactic guarantee ensures **form**.  
+A semantic guarantee ensures **verifiable constraints**:
+
+- factual grounding  
+- non‑contradiction  
+- drift stability  
+
+Meaning preservation is not guaranteed.  
+Only **checkable relationships** are.
 
 ## Architectural Frameworks
 
