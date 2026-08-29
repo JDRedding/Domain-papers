@@ -4,7 +4,7 @@ A **semantic guarantee** is a formal assurance that an systems' outputs preserve
 
 This note distinguishes *semantic guarantees* from *syntactic guarantees*. The distinction: 
 
-- Semantic validation/verification focuses on **meaning**, contextual correctness
+- Semantic validation/verification focuses on **meaning** (contextual correctness)
 - **Logical relationships**, not just format or structure 
 
 A semantic guarantee is a **formal, inspectable, operator‑constrained assurance** that outputs preserve intended meaning, contextual logic, and truth alignment. In the expanded semantic substrate frameworks, these guarantees are implemented through:
