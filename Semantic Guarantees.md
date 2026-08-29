@@ -21,7 +21,6 @@ Each represents a different balance of throughput, reliability, and complexity.
 +------------------------------------+
 |  DELIVERY SEMANTICS QUICK MATRIX   |
 +-----------------+------+-----+-----+
-| Guarantee       | Loss | Dup | Lat |
 | Guarantee       | Loss* | Dup* | Lat |
 +-----------------+------+-----+-----+
 | At-Most-Once    | Yes  | No  | Low |
