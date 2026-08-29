@@ -29,7 +29,7 @@ A TruthSense module is a semantic‑integrity layer designed to enforce truth al
 
 ```
                        ┌────────────────────────────────────────┐
-                       │        ANCHOR POINT A(1,1,1,1)          │
+                       │        ANCHOR POINT A(1,1,1,1)         │
                        │     (Ground-Truth Reference State)     │
                        └───────────────────┬────────────────────┘
                                            │
