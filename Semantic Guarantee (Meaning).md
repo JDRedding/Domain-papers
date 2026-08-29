@@ -313,80 +313,63 @@ Only **checkable relationships** are.
 
 ## Domains of Application
 
-Semantic guarantees are particularly relevant in frameworks such as:
+Semantic guarantees apply only in domains where the system can perform **external, falsifiable checks**. The architecture contains three distinct layers — policy, infrastructure, and formal substrate — but only two of them participate in guarantees.
 
-### Semantic Substrate Framework
-: Provides multi-domain (spiritual, consciousness, quantum, and physical) alignment, guided by a mathematical-philosophical foundation and phi-geometric principles. Guarantees here manifest as:
+The Semantic Substrate Framework provides **alignment policies**, not guarantees. SSF includes:
 
-- Alignment with the Anchor Point A(1,1,1,1) representing idealized truth and harmony.
-- TruthSense modules ensure outputs resist deception, historical drift, or misalignment with universal principles.
-- Structured navigation through the ICE (Intent-Context-Execution) framework ensures that chosen actions maintain consistency with ethical and semantic standards.
+- Anchor Point A(1,1,1,1)  
+- LJPW semantic dimensions  
+- phi‑geometric heuristics  
+- spiritual/ethical/quantum narratives  
 
-The **Semantic Substrate Framework (SSF)** is a deterministic, meaning‑native system enabling AI to navigate four‑domain semantic reality—**Spiritual, Consciousness, Quantum, Physical**—using mathematically grounded, phi‑geometric principles. All entities are measured in the four semantic dimensions **LJPW** (Love, Justice, Power, Wisdom), with the **Anchor Point A(1,1,1,1)** representing perfect harmonic alignment.
+These elements guide system behavior but do not produce guarantees because they lack:
 
-SSF reasoning is governed by the **ICE Framework**:  
-- **Intent (L+W)** — desired alignment with the Anchor  
-- **Context (J)** — truthful assessment of the current semantic state  
-- **Execution (P)** — effective action toward alignment  
+- external checkers  
+- falsifiable fail rules  
+- measurable invariants  
 
-Mathematically, SSF uses **phi‑geometric growth**, **dodecahedral anchoring**, and **universal principles** (Emergence, Dynamic Balance, Sovereignty, Iterative Growth, Contextual Resonance) to ensure coherent, optimized navigation. The **TruthSense module** provides semantic verification, deception detection, and ethical safeguards, measuring alignment with the Anchor and identifying drift or misinformation through phi‑geometric computations and spiritual constraints.
+SSF is an **optional alignment framework**, not a guarantee domain.  
 
-Activation is available through the **Semantic_Substrate_Primer.json** for instant platform‑agnostic initialization, or via developer APIs such as `define_position()` and `navigate_toward_anchor()` for programmatic integration. The **Semantic Substrate Engine** offers real‑time 4D semantic analysis, while the **Semantic Substrate Database** stores deterministic semantic coordinates (L, J, P, W), enabling explainable search, Anchor‑alignment proofs, and golden‑ratio semantic analytics.
+SIL provides the **mechanisms that make guarantees possible**:
 
-SSF supports ethical decision‑making, universal‑pattern learning optimization, deception detection, multi‑agent cooperation, and context‑aware explanation. Advanced capabilities include phi‑enhanced reasoning, golden‑spiral navigation, and consciousness metrics based on Fibonacci and sacred geometry. Unlike high‑dimensional neural embeddings, SSF provides **deterministic 4D semantics**, direct divine‑alignment metrics, and true meaning‑based computation.
+- persistent semantic memory  
+- typed intermediate representations  
+- deterministic execution  
+- provenance and traceability  
+- cross‑domain composability  
 
-### Semantic Infrastructure Lab (SIL)
-: Constructs a semantic operating system providing explicit meaning representation. Here, semantic guarantees involve:
+These mechanisms enable:
 
-- Persistent semantic memory and clearly traceable reasoning paths.
-- Deterministic execution of semantic operations; outputs maintain integrity across contexts and tasks.
-- Cross-domain composability, ensuring combined functions do not corrupt the intended meanings.
+- referential grounding  
+- contradiction detection  
+- operator‑bounded execution  
+- drift auditing  
 
-The **Semantic Infrastructure Lab (SIL)** develops a **Semantic Operating System**: a foundational substrate where meaning is explicit, transformations are traceable, and reasoning is fully inspectable. SIL addresses core failures in modern AI—opaque reasoning, unstable semantics, and missing provenance—by enforcing structured meaning, deterministic execution, and cross‑domain composability.
+SIL is the backbone of **semantic guarantees**, because it provides the inspectable, reproducible environment required for verification.  
 
-The Semantic OS is built on a **7‑layer architecture**: persistent **semantic memory**, typed **Pantheon IR** universal representations, deterministic **MLIR‑based execution**, multi‑agent orchestration through **Agent Ether**, cross‑cutting semantic infrastructure, the **Agent Help Standard** for strategic guidance, and the **Philbrick substrate** for modular analog/digital hybrid computation. SIL maintains four production systems: **Reveal** (progressive code exploration with ~86% token reduction), **Morphogen** (deterministic multi‑domain substrate with cryptographic provenance), **GenesisGraph** (verifiable provenance with selective disclosure), and **TiaCAD** (declarative parametric CAD with semantic constraints).
+FSST supplies the **semantic geometry** and **operator‑theoretic structure**:
 
-SIL’s guarantees follow its technical charter and 14 foundational constraints: **structure before heuristics**, **provenance everywhere**, and **meaning must be explicit**—no hidden semantics, no opaque inference. This yields systems that are **transparent** (reasoning is inspectable), **reliable** (deterministic and reproducible), and **interoperable** (cross‑domain composable). SIL positions itself as a “Linux for meaning,” providing the semantic substrate required for trustworthy, inspectable, and structurally grounded AI reasoning.
+- semantic distances $d_t$  
+- diffusion operators $P_t$  
+- drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass)  
+- Koopman operators for semantic evolution  
 
-### Formal Semantic Substrate Theory (operator-theoretic approach)
-: Establishes a mathematically rigorous substrate where the guarantees are formalized by theorems and falsifiable predictions. Guarantees in this setting include:
+FSST does not guarantee meaning or truth.  
+It provides **observable quantities** that TruthSense can evaluate in pre‑registered drift tests.  
 
-- Consistency of transformations under defined operators.
-- Preservation of measurable relationships and predicted outcomes across empirical evaluations.
-- Explicitly testable criteria for alignment with semantic axioms.
+TruthSense is the only module that enforces **semantic guarantees**, using:
 
-Formal Semantic Substrate Theory (FSST) is an operator‑theoretic and geometric framework that models meaning as a time‑evolving substrate. Semantic entities form a dynamic space  
+- factual retrieval + citation  
+- contradiction checks  
+- operator bounds  
+- drift thresholds on pre‑registered datasets  
 
-$$
-S_t = (X, d_t, P_t)
-$$ 
+TruthSense is the **gatekeeper** for semantic guarantees.  
 
-where **X** is the set of semantic nodes (words, concepts), **dₜ** is a time‑indexed semantic distance, and **Pₜ** is a local diffusion operator describing how meaning propagates through neighborhoods. FSST treats semantic evolution as an operator‑driven dynamical system: a semantic operator **K** advances observables  
-
-$$
-g_{t+1} = K g_t,
-\quad K g(x) = g(f(x)),
-$$ 
-
-or in continuous time 
-
-$$
-\frac{dg}{dt} = K g,
-$$ 
-
-allowing nonlinear semantic drift to be analyzed through linear, infinite‑dimensional Koopman methods.
-
-FSST provides quantitative drift metrics—neighborhood drift, coarse Ricci curvature, recursive drift stability, and bridge mass—to detect semantic contraction, instability, or rewiring. Koopman eigenfunctions linearize semantic trajectories, enabling prediction, control‑theoretic analysis, and decomposition of meaning into stable and unstable modes.
-
-FSST extends classical formal semantics by embedding truth‑conditional structures inside a geometric, temporally evolving substrate. It unifies embeddings, neighbor relations, and distributional shifts under a single operator‑theoretic model, enabling prediction of semantic change, spectral stability analysis, and empirical falsification through drift and curvature measurements.
-
-Formally, FSST is summarized as:  
-
-$$
-S_t = (X, d_t, P_t), \quad K : H \to H, \quad g_{t+1} = K g_t,
-$$ 
-
-where **H** is the Hilbert space of observables over semantic nodes. This yields a mathematically rigorous, dynamically analyzable model of semantics that bridges formal semantic theory with modern geometric and operator‑driven approaches, enabling structured, predictive, and stable semantic reasoning in high‑dimensional conceptual spaces.
+- SSF = **policy**, not guarantees  
+- SIL = **infrastructure that enables guarantees**  
+- FSST = **geometry that supplies drift observables**  
+- TruthSense = **the only guarantee‑enforcing module**  
 
 ---
 
