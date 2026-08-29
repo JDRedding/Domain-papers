@@ -126,11 +126,16 @@ Messages are delivered **one or more times**. No messages are lost, but duplicat
 
 ## **Message Delivery Semantics Comparison**
 
-| **Guarantee** | **Semantic Guarantee** | **Message Loss** | **Message Duplication** | **Latency** | **Complexity** | **Typical Use** |
-| --- | --- | --- | --- | --- | --- | --- |
-| **At‑Most‑Once** | Possible | Possible | None | Low | Low | Telemetry, metrics |
-| **At‑Least‑Once** | None | None (with retries) | Possible | Medium | Medium | Data pipelines, event sourcing |
-| **Exactly‑Once** | None | None | None | Higher | High | Financial transactions, billing, stream processing |
+| Guarantee               | Processing rule                                                                       | Loss permitted?                         | Duplicate effects permitted?                        | Typical latency | Typical complexity |
+| ----------------------- | ------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------- | --------------- | ------------------ |
+| At-most-once            | Advance durable progress before effect completion, or do not retry uncertain delivery | Yes                                     | No, assuming no retries                             | Low             | Low                |
+| At-least-once           | Retry uncertain delivery; advance progress only after effect completion               | No, under stated durability assumptions | Yes                                                 | Medium          | Medium             |
+| Exactly-once processing | Atomically commit the output effects and input progress, or make effects idempotent   | No                                      | No, within the declared transaction/effect boundary | Higher          | High               |
+
+At-most-once does not universally mean no duplicates. It means the system deliberately avoids retrying ambiguous delivery or processing attempts. Duplicates can still arise elsewhere if the implementation has multiple producers, replay paths, or non-idempotent external effects.
+
+At-least-once means “no silent loss caused by the delivery protocol,” assuming retained data, functioning replication, correct configuration, and eventual recovery. No real distributed system can guarantee delivery through permanent destruction of all replicas, invalid retention policies, or an unavailable consumer forever.
+
 
 ### **End‑to‑End Guarantee**
 True EOS requires **every stage** — source, processor, sink — to use idempotent or transactional operations. A single non‑transactional component breaks the chain.
