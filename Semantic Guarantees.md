@@ -93,9 +93,7 @@ Messages are delivered **one or more times**. No messages are lost, but duplicat
 ## **3. Exactly‑Once Delivery (EOS)**
 
 ### **Definition**  
-Messages are delivered and processed **exactly once** — no loss, no duplicates — even with retries, broker failures, or consumer crashes.
-
-Exactly-once processing semantics (EOS) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
+**Exactly-once processing semantics** (**EOS**) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
 
 ### **Mechanisms in Kafka**
 - **Idempotent Producers**  
