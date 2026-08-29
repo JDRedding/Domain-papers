@@ -18,3 +18,8 @@ But the canonical derivation is defined so that:
 
 The protocol remains sound and zero‑knowledge,
 but the meaning of the substrate remains unverified.
+
+- Reproducibility guarantees mechanical correctness.
+- Zero‑knowledge guarantees privacy correctness.
+- Soundness guarantees protocol correctness.
+- None of these guarantee semantic correctness.
