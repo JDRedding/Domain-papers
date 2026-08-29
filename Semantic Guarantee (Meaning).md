@@ -20,7 +20,7 @@ A semantic guarantee is a **formal, inspectable, operator‑constrained assuranc
 - operator‑theoretic invariants  
 - multi‑domain semantic alignment (ethical, spiritual, consciousness, quantum, physical)
 
-This produces systems whose reasoning remains semantically stable even under complex transformations, cross‑domain integration, or long‑horizon inference. Below is a structured, deeper synthesis that integrates the multi‑domain frameworks (BruinGrowly, SIL, operator‑theoretic substrate) with the grounded concepts from semantic validation and semantic verification research.
+This produces systems whose reasoning remains semantically stable even under complex transformations, cross‑domain integration, or long‑horizon inference. Below is a structured, deeper synthesis that integrates the multi‑domain frameworks with the grounded concepts from semantic validation and semantic verification research.
 
 Operator‑theoretic semantics unifies:
 
@@ -44,14 +44,14 @@ yielding auditable, interpretable, and meaning‑preserving behavior.
 
 Semantic guarantees are particularly relevant in frameworks such as:
 
-### Semantic Substrate Framework (BruinGrowly)
+### Semantic Substrate Framework
 : Provides multi-domain (spiritual, consciousness, quantum, and physical) alignment, guided by a mathematical-philosophical foundation and phi-geometric principles. Guarantees here manifest as:
 
 - Alignment with the Anchor Point A(1,1,1,1) representing idealized truth and harmony.
 - TruthSense modules ensure outputs resist deception, historical drift, or misalignment with universal principles.
 - Structured navigation through the ICE (Intent-Context-Execution) framework ensures that chosen actions maintain consistency with ethical and semantic standards.
 
-The **Semantic Substrate Framework (SSF)** by BruinGrowly is a deterministic, meaning‑native system enabling AI to navigate four‑domain semantic reality—**Spiritual, Consciousness, Quantum, Physical**—using mathematically grounded, phi‑geometric principles. All entities are measured in the four semantic dimensions **LJPW** (Love, Justice, Power, Wisdom), with the **Anchor Point A(1,1,1,1)** representing perfect harmonic alignment.
+The **Semantic Substrate Framework (SSF)** is a deterministic, meaning‑native system enabling AI to navigate four‑domain semantic reality—**Spiritual, Consciousness, Quantum, Physical**—using mathematically grounded, phi‑geometric principles. All entities are measured in the four semantic dimensions **LJPW** (Love, Justice, Power, Wisdom), with the **Anchor Point A(1,1,1,1)** representing perfect harmonic alignment.
 
 SSF reasoning is governed by the **ICE Framework**:  
 - **Intent (L+W)** — desired alignment with the Anchor  
@@ -117,7 +117,7 @@ Formal semantic verification includes invariance under semantically meaningful t
 ## Where the frameworks extend
 The three frameworks introduce **semantic guarantees in expanded domains**:
 
-### 1. **BruinGrowly Semantic Substrate Framework**  
+### 1. **Semantic Substrate Framework**  
 Add *spiritual*, *consciousness*, and *phi‑geometric* alignment layers. These are not present in the grounded sources, but they conceptually parallel:
 
 - **Contextual meaning enforcement** (TruthSense ↔ semantic validation)  
@@ -166,7 +166,7 @@ This aligns strongly with established benefits of semantic validation/verificati
 : Multiple modules can interact without semantic corruption.
 
 ### Ethical Assurance
-: Semantic guarantees often integrate principles ensuring outputs are aligned with moral or universal rules (as seen in BruinGrowly’s spiritual alignment features).
+: Semantic guarantees often integrate principles ensuring outputs are aligned with moral or universal rules (as seen in spiritual alignment features).
 
 ---
 
