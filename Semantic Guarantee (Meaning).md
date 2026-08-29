@@ -47,6 +47,29 @@ Semantic guarantees are particularly relevant in frameworks such as:
 
 ---
 
+## Mechanisms list, mapped concepts  
+
+Achieving Semantic Guarantees:
+
+- **Anchor-Based Alignment**: A reference point (like A(1,1,1,1)) defining ideal semantic state. Systems measure deviation and adjust operations within permissible bounds.
+- **Phi-Geometric Optimization**: Use of golden-ratio-based mathematical constructs ensures growth and transformations remain internally coherent.
+- **TruthSense / Verification Modules**: Detect inconsistencies, deception, or semantic drift, effectively providing runtime semantic validation.
+- **Operator-Theoretic Constraints**: In theoretical frameworks, operators define allowed transitions, creating formally provable semantic invariants.
+
+### **Anchor‑Based Alignment**  
+The anchor A(1,1,1,1) functions like a **semantic ground‑truth reference**, similar to concept‑feature matrices or rule‑based semantic constraints.
+
+### **Phi‑Geometric Optimization**  
+This is the novel extension. In grounded literature, the closest analogue is **semantic robustness verification**, which ensures invariance under meaningful transformations.  
+
+### **TruthSense / Verification Modules**  
+Matches **semantic validation**: detecting inconsistencies, drift, or logically invalid states. )
+
+### **Operator‑Theoretic Constraints**  
+Matches **formal semantic verification**: operators define permissible semantic transitions.   
+
+---
+
 ## How the definition aligns
 ### ✔ Meaning over syntax  
 Semantic validation ensures data or outputs are **meaningful and logically consistent**, not merely well‑formed. This matches the emphasis on “preserving intended meaning and truthfulness.” 
@@ -82,29 +105,6 @@ This is closest to the formal methods literature:
 - Operators define allowed transitions ↔ attribute‑based semantic verification  
 - Provable invariants ↔ semantic robustness constraints  
 - Falsifiable predictions ↔ empirical semantic evaluation
-
----
-
-## Mechanisms list, mapped concepts  
-
-Achieving Semantic Guarantees:
-
-- **Anchor-Based Alignment**: A reference point (like A(1,1,1,1)) defining ideal semantic state. Systems measure deviation and adjust operations within permissible bounds.
-- **Phi-Geometric Optimization**: Use of golden-ratio-based mathematical constructs ensures growth and transformations remain internally coherent.
-- **TruthSense / Verification Modules**: Detect inconsistencies, deception, or semantic drift, effectively providing runtime semantic validation.
-- **Operator-Theoretic Constraints**: In theoretical frameworks, operators define allowed transitions, creating formally provable semantic invariants.
-
-### **Anchor‑Based Alignment**  
-The anchor A(1,1,1,1) functions like a **semantic ground‑truth reference**, similar to concept‑feature matrices or rule‑based semantic constraints.
-
-### **Phi‑Geometric Optimization**  
-This is the novel extension. In grounded literature, the closest analogue is **semantic robustness verification**, which ensures invariance under meaningful transformations.  
-
-### **TruthSense / Verification Modules**  
-Matches **semantic validation**: detecting inconsistencies, drift, or logically invalid states. )
-
-### **Operator‑Theoretic Constraints**  
-Matches **formal semantic verification**: operators define permissible semantic transitions.   
 
 ---
 
