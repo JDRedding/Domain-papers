@@ -163,71 +163,98 @@ TruthSense is the only module that enforces **semantic guarantees**, using:
 TruthSense is the **gatekeeper** for semantic guarantees.
 
 ## Outline
-In semantic computation contexts, a semantic guarantee refers to a formal assurance that a system will preserve the intended meaning, truthfulness, or alignment of its outputs according to predefined semantic constraints, even under complex transformations or reasoning processes. Unlike syntactic guarantees—which only constrain the form or grammar of outputs—semantic guarantees ensure that the content and logical relationships remain valid.
+In semantic‑computation contexts, a **semantic guarantee** is a formal assurance that an output satisfies **externally verifiable constraints**. It does **not** preserve “intended meaning,” “truth,” or “alignment” in the philosophical sense. Guarantees apply only where the system can perform **falsifiable checks** on specific objects.
 
-- Semantic validation/verification focuses on **meaning** (contextual correctness)
-- **Logical relationships**, not just format or structure 
+Semantic guarantees therefore focus on:
 
-A semantic guarantee is a **formal, inspectable, operator‑constrained assurance** that outputs preserve intended meaning, contextual logic, and truth alignment. In the expanded semantic substrate frameworks, these guarantees are implemented through:
+- **referential grounding** — factual claims must be supported by retrieval  
+- **dialogical consistency** — outputs must not contradict the commitment set  
+- **geometric stability** — semantic drift must remain within pre‑registered thresholds  
 
-- anchor‑based semantic reference points  
-- phi‑geometric coherence constraints  
-- truth‑validation modules  
-- operator‑theoretic invariants  
-- multi‑domain semantic alignment (ethical, spiritual, consciousness, quantum, physical)
+These constraints are **auditable**, **inspectable**, and **falsifiable**. They do not assert that meaning is preserved; they assert that **verifiable relationships** remain within acceptable bounds.
 
-This produces systems whose reasoning remains semantically stable even under complex transformations, cross‑domain integration, or long‑horizon inference. Below is a structured, deeper synthesis that integrates the multi‑domain frameworks with the grounded concepts from semantic validation and semantic verification research.
+---
 
+## **Semantic Guarantee Pipeline**
+
+A semantic guarantee is produced by a verification pipeline consisting of:
+
+1. **Preprocessing**  
+   Extract claims, normalize structure, and prepare the semantic state for inspection.
+
+2. **Inference**  
+   Compute candidate transformations and latent evolution \(h_{t+1}\).
+
+3. **Verification (TruthSense)**  
+   Apply checkers:  
+   - factual retrieval + citation  
+   - contradiction detection  
+   - operator‑bounded drift auditing  
+   - geometric threshold tests on pre‑registered datasets  
+
+4. **Decision**  
+   If any hard constraint fails → reject, revise, or route.  
+   If all constraints pass → proceed.
+
+5. **Post‑processing**  
+   Emit output with a quantitative semantic‑verification score.
 
 ```
        INPUT
          │
          ▼
  ┌───────────────┐
- │ Preprocessing │ ──► Validate initial intent coherence
+ │ Preprocessing │
  └───────┬───────┘
-         │
          ▼
  ┌───────────────┐
- │   Inference   │ ──► Compute candidate transformation & latent evolution hₜ₊₁
+ │   Inference   │
  └───────┬───────┘
-         │
          ▼
- ┌───────────────┐     ┌──────────────────────────────────────────────────┐
- │  Verification │ ◄───┤ • Fact Verification (Knowledge Graphs)           │
- │               │     │ • Internal Consistency (Contradiction Checks)    │
- │               │     │ • Operator Bounds (Spectral Stability Auditing)  │
- └───────┬───────┘     └──────────────────────────────────────────────────┘
+ ┌───────────────┐     ┌──────────────────────────────────────────────┐
+ │  Verification │ ◄───┤ • Referential Checks                         │
+ │               │     │ • Dialogical Consistency                     │
+ │               │     │ • Operator Bounds & Drift Auditing           │
+ └───────┬───────┘     └──────────────────────────────────────────────┘
          │
-         ├─── Score < Threshold ──► [ Reject / Revise / Route ]
-         │
-         ▼ Score ≥ Threshold
+         ├── Score < Threshold → Reject / Revise
+         ▼
  ┌───────────────┐
- │ Post-Process  │ ──► Emit output with quantitative semantic guarantee score
+ │ Post‑Process  │
  └───────┬───────┘
-         │
          ▼
       OUTPUT
-
 ```
 
-Operator‑theoretic semantics unifies:
+---
 
-- formal logic  
-- dynamical systems  
-- statistical inference  
-- machine learning  
+## **What This Pipeline *Does Not* Guarantee**
 
-into a single framework for semantic guarantees.
+Semantic guarantees do **not** come from:
 
-It provides:
+- anchor \(A(1,1,1,1)\)  
+- phi‑geometry  
+- spiritual / consciousness / quantum alignment  
+- operator invariants  
+- “meaning preservation”  
+- “truth alignment”  
+- “semantic coherence” in the philosophical sense  
 
-- semantic invariance  
-- recursive coherence  
-- spectral stability  
-- empirical robustness  
+These belong to **policy frameworks**, not guarantee mechanisms.
 
-yielding auditable, interpretable, and meaning‑preserving behavior.
+---
+
+## **Correct Interpretation**
+
+Semantic guarantees enforce **verifiable constraints**, not meaning:
+
+- **syntactic correctness**  
+- **factual grounding**  
+- **non‑contradiction**  
+- **drift stability**  
+
+Meaning preservation is not guaranteed.  
+Only **checkable relationships** are.
 
 ## **Semantic Guarantees**
 
