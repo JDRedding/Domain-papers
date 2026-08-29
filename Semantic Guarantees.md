@@ -55,7 +55,31 @@ Effects live inside a *processing / transaction boundary* $B$. All “no loss / 
 
 ---
 
-### 1. At-most-once
+### At‑Most‑Once Delivery**
+
+### **Definition**  
+Messages are delivered **at most once**. No duplicates occur, but messages may be lost if failures happen before processing completes.
+
+### **Producer Behavior**  
+- Asynchronous “fire‑and‑forget” sends  
+- No acknowledgment required
+
+### **Consumer Behavior**  
+- Offsets may be committed **before** processing  
+- Crashes can cause messages to be skipped
+
+### **Use Cases**  
+- Telemetry  
+- Metrics  
+- High‑frequency monitoring where occasional loss is acceptable
+
+### **Trade‑offs**
+- High throughput  
+- Low latency  
+- Low complexity  
+- Risk of message loss
+
+---
 
 **Processing rule.** Advance durable progress *before* the effect, or never retry an ambiguous send:
 
@@ -90,7 +114,36 @@ $$
 
 ---
 
-### 2. At-least-once
+###  At‑Least‑Once Delivery**
+
+### **Definition**  
+Messages are delivered **one or more times**. No messages are lost, but duplicates may occur.
+
+### **Producer Behavior**
+- Retries on missing acknowledgments  
+- Possible duplicate sends
+
+### **Consumer Behavior**
+- Offsets committed **after** processing  
+- Failures may cause reprocessing
+
+### **Conflict Resolution**
+- Idempotent operations  
+- Deduplication strategies
+
+### **Use Cases**
+- Data pipelines  
+- Order processing  
+- Event sourcing  
+- Financial logs where loss is unacceptable
+
+### **Trade‑offs**
+- Ensures durability  
+- Moderate latency  
+- Moderate complexity  
+- Potential duplicates
+
+---
 
 **Processing rule.** Retry uncertain delivery; advance progress only *after* the effect:
 
@@ -129,7 +182,37 @@ so multiple executions collapse to one *observable* state even though $E(m)>1$.
 
 ---
 
-### 3. Exactly-once processing (EOS)
+### Exactly‑Once Delivery (EOS)**
+
+### **Definition**  
+**Exactly-once processing semantics** (**EOS**) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
+
+### **Mechanisms in Kafka**
+- **Idempotent Producers**  
+  - Producer ID (PID) + sequence numbers  
+  - Deduplicates retries
+
+- **Transactional Producers**  
+  - Atomic writes across partitions/topics  
+  - Coordinated by the Transaction Coordinator
+
+- **Transactional Processing / Consumer Isolation**
+  - Read only committed messages (`isolation.level=read_committed`)
+  - Processing offsets can be committed as part of a transaction
+
+### **Use Cases**
+- Financial transactions  
+- Billing  
+- Inventory management  
+- Stream processing pipelines requiring precision
+
+### **Trade‑offs**
+- Higher latency 
+- Slightly reduced throughput  
+- Increased operational complexity  
+- Strong correctness guarantees
+
+---
 
 **Definition (inside boundary $B$).** A successfully processed record’s effect and its input progress are committed atomically; downstream transactional readers do not observe a duplicate:
 
@@ -319,95 +402,6 @@ $$
 $$
 
 $\mathrm{EOS}_B$ is strictly stronger than $\mathrm{ALO}$ only *inside* $B$. Outside $B$, the notes’ “end-to-end reality check” applies: you must add sink idempotence or an encompassing transaction.
-
----
-
-## **1. At‑Most‑Once Delivery**
-
-### **Definition**  
-Messages are delivered **at most once**. No duplicates occur, but messages may be lost if failures happen before processing completes.
-
-### **Producer Behavior**  
-- Asynchronous “fire‑and‑forget” sends  
-- No acknowledgment required
-
-### **Consumer Behavior**  
-- Offsets may be committed **before** processing  
-- Crashes can cause messages to be skipped
-
-### **Use Cases**  
-- Telemetry  
-- Metrics  
-- High‑frequency monitoring where occasional loss is acceptable
-
-### **Trade‑offs**
-- High throughput  
-- Low latency  
-- Low complexity  
-- Risk of message loss
-
----
-
-## **2. At‑Least‑Once Delivery**
-
-### **Definition**  
-Messages are delivered **one or more times**. No messages are lost, but duplicates may occur.
-
-### **Producer Behavior**
-- Retries on missing acknowledgments  
-- Possible duplicate sends
-
-### **Consumer Behavior**
-- Offsets committed **after** processing  
-- Failures may cause reprocessing
-
-### **Conflict Resolution**
-- Idempotent operations  
-- Deduplication strategies
-
-### **Use Cases**
-- Data pipelines  
-- Order processing  
-- Event sourcing  
-- Financial logs where loss is unacceptable
-
-### **Trade‑offs**
-- Ensures durability  
-- Moderate latency  
-- Moderate complexity  
-- Potential duplicates
-
----
-
-## **3. Exactly‑Once Delivery (EOS)**
-
-### **Definition**  
-**Exactly-once processing semantics** (**EOS**) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
-
-### **Mechanisms in Kafka**
-- **Idempotent Producers**  
-  - Producer ID (PID) + sequence numbers  
-  - Deduplicates retries
-
-- **Transactional Producers**  
-  - Atomic writes across partitions/topics  
-  - Coordinated by the Transaction Coordinator
-
-- **Transactional Processing / Consumer Isolation**
-  - Read only committed messages (`isolation.level=read_committed`)
-  - Processing offsets can be committed as part of a transaction
-
-### **Use Cases**
-- Financial transactions  
-- Billing  
-- Inventory management  
-- Stream processing pipelines requiring precision
-
-### **Trade‑offs**
-- Higher latency 
-- Slightly reduced throughput  
-- Increased operational complexity  
-- Strong correctness guarantees
 
 ---
 
