@@ -102,7 +102,8 @@ Compute baseline drift/curvature for each dataset.
 
 **⛔ Refutation rule**  
 
-- If drift exceeds threshold \(T\) on dataset \(D\) under confound‑controlled conditions → **model refuted**.
+- If drift exceeds threshold $T$ on dataset $D$ under confound‑controlled conditions → **model refuted**.
+
 
 ## Outline
 In semantic computation contexts, a semantic guarantee refers to a formal assurance that a system will preserve the intended meaning, truthfulness, or alignment of its outputs according to predefined semantic constraints, even under complex transformations or reasoning processes. Unlike syntactic guarantees—which only constrain the form or grammar of outputs—semantic guarantees ensure that the content and logical relationships remain valid.
@@ -170,6 +171,46 @@ It provides:
 - empirical robustness  
 
 yielding auditable, interpretable, and meaning‑preserving behavior.
+
+## **Semantic Guarantees**
+
+Semantic guarantees apply **only** in the parts of the system where meaning can be *checked*, *audited*, and *falsified*. They are not properties of the substrate theories (FSST), the infrastructure (SIL), or the optional value frameworks (LJPW/ICE). Guarantees exist only where the system has an objective way to verify that it is doing what it claims.
+
+Restrict guarantees to four domains:
+
+**1. Syntactic guarantees**  
+
+These ensure the output is structurally correct—valid grammar, valid schema, valid types. As the FSST text puts it, syntactic guarantees cover *“formal rules, grammar, schema, or structural constraints.”*  
+They say nothing about meaning; they only ensure the form is sound.
+
+**2. Referential guarantees**  
+
+These ensure factual grounding. Every factual claim must come from a retrieval, every retrieval must be cited, and citations must satisfy SIC (Source‑Identity‑Consistency).  
+FSST’s verification layer—*“Fact Verification (Knowledge Graphs)”* and *“Operator Bounds (Spectral Stability Auditing)”*—provides the mechanisms.
+
+**3. Dialogical guarantees**  
+
+These ensure conversational coherence. Contradictions are detected, stored, and surfaced.  
+Your FSST document calls this *“Internal Consistency (Contradiction Checks).”*  
+If the system contradicts itself, the contradiction becomes part of the guarantee boundary.
+
+**4. Geometric guarantees**  
+
+These ensure the system’s meaning doesn’t drift beyond acceptable bounds.  
+FSST provides the measurable quantities—*“neighborhood drift, coarse Ricci curvature, recursive drift, and bridge mass”*—and the operator‑theoretic evolution that makes drift observable.
+
+Geometric guarantees only activate when these metrics are tied to **pre‑registered tests**.
+
+**Pre‑Registered Drift Tests**
+
+To make geometric guarantees falsifiable, we adopt Russell’s drift‑testing pattern:
+
+- **Named drift datasets** define the semantic regions the model must stay within.  
+- **Baseline drift profiles** are computed using FSST metrics $d_t$ and $P_t$.  
+- **Confound controls** use FSST’s verification tools—*“Fact Verification… Internal Consistency… Spectral Stability Auditing.”*  
+- **Refutation rule:** the model is considered refuted if drift exceeds threshold $T$ on dataset $D$ under confound‑controlled conditions.
+
+This is the line between **semantic substrate theory** (FSST’s geometry) and **semantic guarantee** (a measurable, enforceable constraint).
 
 ## Domains of Application
 
