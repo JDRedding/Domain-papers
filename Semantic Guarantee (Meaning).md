@@ -47,7 +47,7 @@ Semantic guarantees are particularly relevant in frameworks such as:
 
 ---
 
-## How the definition aligns with established concepts  
+## How the definition aligns
 ### ✔ Meaning over syntax  
 Semantic validation ensures data or outputs are **meaningful and logically consistent**, not merely well‑formed. This matches the emphasis on “preserving intended meaning and truthfulness.” 
 
@@ -59,7 +59,7 @@ Formal semantic verification includes invariance under semantically meaningful t
 
 ---
 
-## Where the frameworks extend beyond the literature  
+## Where the frameworks extend
 The three frameworks introduce **semantic guarantees in expanded domains** not covered by the sources:
 
 ### 1. **BruinGrowly Semantic Substrate Framework**  
