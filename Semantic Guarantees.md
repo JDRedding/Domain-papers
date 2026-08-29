@@ -104,9 +104,9 @@ Messages are delivered **one or more times**. No messages are lost, but duplicat
   - Atomic writes across partitions/topics  
   - Coordinated by the Transaction Coordinator
 
-- **Transactional Consumers**  
-  - Read only committed messages (`isolation.level=read_committed`)  
-  - Processing offsets included in transactions
+- **Transactional Processing / Consumer Isolation**
+  - Read only committed messages (`isolation.level=read_committed`)
+  - Processing offsets can be committed as part of a transaction
 
 ### **Use Cases**
 - Financial transactions  
