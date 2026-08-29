@@ -657,8 +657,8 @@ $$
 
 This operator is exactly the **local relational diffusion kernel**:
 
-- **self‑mass** term: weight \(\alpha\) retained at the origin closure \(x\).  
-- **neighborhood spread\)**: remaining mass \((1-\alpha)\) distributed across the emergent neighborhood \(N_t(x)\) according to relational weights \(w_{xz}\).  
+- **self‑mass** term: weight $\alpha$ retained at the origin closure $x$.  
+- **neighborhood spread$**: remaining mass $(1-\alpha)$ distributed across the emergent neighborhood $N_t(x)$ according to relational weights $w_{xz}$.  
 - **projection‑normalized transport**: denominator ensures the diffusion respects the emergent adjacency geometry.  
 - **null‑origin boundary**: zero outside the neighborhood.
 
