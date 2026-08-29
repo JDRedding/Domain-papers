@@ -591,6 +591,8 @@ $$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\p
 
 ## APPENDIX: Notation
 
+General formulas
+
 | Formula | Constrains |
 |---|---|
 | $D_{\mathrm{tr}},D_{\mathrm{rw}},\Delta H,\Delta W$ | change of embedding / neighbors |
@@ -600,6 +602,7 @@ $$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\p
 | SIC / fact-alignment terms in $S_{\mathrm{sem}}$ | checks against an external spec or KB |
 | $A=(1,1,1,1)$ | chosen moral/semantic coordinates |
 
+Glyph notation
 
 | Symbol | Meaning |
 |---|---|
