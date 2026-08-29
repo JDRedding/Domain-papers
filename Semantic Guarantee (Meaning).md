@@ -632,7 +632,7 @@ $$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\p
 ---
 
 ## APPENDIX: Russell substrate
-arXiv:2602.18699
+: arXiv:2602.18699
 
 **Substrate**
 
@@ -640,18 +640,38 @@ $$
 S_t=(X,d_t,P_t)
 $$
 
-**Local neighborhood measure / diffusion kernel**
+
+
+
+
+
+The missing `\end{cases}` is easy to fix — but the deeper issue is that your line breaks (`\\[4pt]`) were placed *inside* the case rows, which breaks the environment. Here is the **clean, RDG‑compatible, ASCII‑stable** version of your local neighborhood diffusion kernel:
+
+---
+
+### **Corrected diffusion‑kernel definition**
 
 $$
 m_x^{(t)}(z)=
 \begin{cases}
-\alpha, & z=x,\$$4pt]
-(1-\alpha)\,\dfrac{w_{xz}}{\sum_{u\in N_t(x)}w_{xu}}, & z\in N_t(x),\$$10pt]
+\alpha, & z = x, \\[6pt]
+(1-\alpha)\,\dfrac{w_{xz}}{\displaystyle\sum_{u\in N_t(x)} w_{xu}}, & z\in N_t(x), \\[10pt]
 0, & \text{otherwise}
 \end{cases}
-\qquad
+$$
+
+$$
 P_t(x,\cdot)=m_x^{(t)}(\cdot)
 $$
+
+This operator is exactly the **local relational diffusion kernel**:
+
+- **self‑mass** term: weight \(\alpha\) retained at the origin closure \(x\).  
+- **neighborhood spread\)**: remaining mass \((1-\alpha)\) distributed across the emergent neighborhood \(N_t(x)\) according to relational weights \(w_{xz}\).  
+- **projection‑normalized transport**: denominator ensures the diffusion respects the emergent adjacency geometry.  
+- **null‑origin boundary**: zero outside the neighborhood.
+
+This is the canonical “local tension propagation operator.”
 
 **Translational drift**
 
