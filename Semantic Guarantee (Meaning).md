@@ -227,7 +227,7 @@ $$
 - high‑magnitude modes dominate meaning  
 - perturbations orthogonal to dominant modes cause minimal drift  
 
-### **Continuous‑State Models for LLMs**
+### **Continuous‑State Models**
 
 Latent embeddings evolve via:
 
