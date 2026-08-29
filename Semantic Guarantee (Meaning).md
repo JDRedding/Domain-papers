@@ -78,7 +78,6 @@ Semantic guarantees do **not** come from:
 - TruthSense “preventing hallucinations”  
 
 These belong to **policy frameworks**, not guarantee mechanisms.  
-See: **semantic policy frameworks**
 
 A syntactic guarantee ensures **form**.  
 A semantic guarantee ensures **verifiable constraints**:
