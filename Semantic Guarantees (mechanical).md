@@ -492,7 +492,7 @@ commit transaction
 Three pillars:
 
 - **Idempotent producer** — PID + sequence numbers ensure  
-  $\#\{(\mathrm{PID},p,s)\}\le 1$
+  ${No.}\{(\mathrm{PID},p,s)\}\le 1$
 
 - **Transactional producer** — atomic visibility across partitions.
 
