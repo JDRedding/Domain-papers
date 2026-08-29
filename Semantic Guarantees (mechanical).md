@@ -1,6 +1,6 @@
 # **Mechanical Semantic Guarantees**
 
-This document formalizes **At‑Most‑Once**, **At‑Least‑Once**, and **Exactly‑Once** semantics as **constraints on delivery counts** $D(m)$ and **committed effects** $E(m)$, then shows how Kafka enforces EOS inside a transactional boundary $B$ using **idempotent producers**, **transactional commits**, and **consumer isolation**. End‑to‑end EOS only holds if *every* stage is either transactional or idempotent.
+This document formalizes **At‑Most‑Once**, **At‑Least‑Once**, and **Exactly‑Once** semantics as **constraints on delivery counts** $D(m)$ and **committed effects** $E(m)$, then shows how Kafka enforces exactly-once semantics inside a transactional boundary $B$ using **idempotent producers**, **transactional commits**, and **consumer isolation**. End‑to‑end exactly-once semantics only holds if *every* stage is either transactional or idempotent.
 
 These are mechanical guarantees, not semantic guarantees. Kafka calls them “*semantic guarantees*,” but they are not semantics in the meaning‑grounding sense. They are protocol semantics, not substrate semantics. Kafka's semantic guarantees describe consistency and delivery behavior of messages, focusing on reliability and correctness at the system level. They are operational semantics, not symbolic or meaning-based semantics.
 
