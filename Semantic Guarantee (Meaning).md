@@ -126,8 +126,6 @@ The Semantic Substrate Framework (SSF) provides **alignment policies** such as:
 
 These are **not guarantees** because they lack falsifiable checkers. SSF can guide system behavior, but it cannot certify correctness.
 
-See: **semantic policy frameworks**
-
 The Semantic Infrastructure Lab (SIL) provides the **mechanisms that make guarantees possible**:
 
 - persistent semantic memory  
