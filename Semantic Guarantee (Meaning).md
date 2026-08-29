@@ -90,51 +90,79 @@ Meaning preservation is not guaranteed.
 Only **checkable relationships** are.
 
 ## Architectural Frameworks
+The system architecture consists of three layers that play distinct roles: a **policy layer**, an **infrastructure layer**, and a **formal substrate layer**. Only the infrastructure and substrate layers participate in semantic guarantees, because only they provide **inspectable, falsifiable mechanisms**.
 
 ```
                        ┌────────────────────────────────────────┐
-                       │        ANCHOR POINT A(1,1,1,1)         │
-                       │     (Ground-Truth Reference State)     │
+                       │        POLICY LAYER (SSF)              │
+                       │   Optional Alignment Frameworks        │
                        └───────────────────┬────────────────────┘
                                            │
          ┌─────────────────────────────────┼─────────────────────────────────┐
          ▼                                 ▼                                 ▼
 ┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
-│  Substrate Frame [SSF]  │   │     Infrastructure      │   │   Operator-Theoretic    │
-│  (Multi-Domain Align)   │   │       Lab (SIL)         │   │   Substrate (Formal)    │
+│  SSF (Alignment Policy) │   │   SIL (Infrastructure)   │   │   FSST (Formal Substrate)│
+│  Non‑falsifiable values │   │  Inspectable semantics   │   │  Drift geometry & ops    │
 ├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
-│ • ICE Framework         │   │ • Persistent Memory     │   │ • Spectral Stability    │
-│ • Universal Constraints │   │ • Cross-Domain Ops      │   │ • Koopman Operators     │
-│ • Phi-Geometric Opt     │   │ • Traceable Execution   │   │ • Invariant Subspaces   │
+│ • Anchor A(1,1,1,1)     │   │ • Persistent Memory     │   │ • Drift Metrics          │
+│ • LJPW Dimensions       │   │ • Typed IR (Pantheon)   │   │ • Koopman Operators      │
+│ • Phi‑Geometry          │   │ • Deterministic Exec    │   │ • Invariant Subspaces    │
 └────────┬────────────────┘   └────────────┬────────────┘   └────────────┬────────────┘
          │                                 │                             │
          └─────────────────────────────────┼─────────────────────────────┘
                                            ▼
                        ┌────────────────────────────────────────┐
                        │           TRUTHSENSE MODULE            │
-                       │ (Runtime Verification & Drift Audit)   │
+                       │   (Verification & Drift Auditing)      │
                        └────────────────────────────────────────┘
-
 ```
 
-**Pre‑registered tests**
+The Semantic Substrate Framework (SSF) provides **alignment policies** such as:
 
-**📁 Named datasets**  
-Each semantic domain gets a canonical dataset.  
+- Anchor Point A(1,1,1,1)  
+- LJPW semantic dimensions  
+- phi‑geometric heuristics  
+- spiritual/ethical/quantum alignment narratives  
 
-> empirical falsification through drift and curvature measurements.
+These are **not guarantees** because they lack falsifiable checkers. SSF can guide system behavior, but it cannot certify correctness.
 
-**📉 Baselines**  
-Compute baseline drift/curvature for each dataset.
+See: **semantic policy frameworks**
 
-**🧪 Confound controls** 
+The Semantic Infrastructure Lab (SIL) provides the **mechanisms that make guarantees possible**:
 
-> “Fact Verification, Internal Consistency, Spectral Stability Auditing.”
+- persistent semantic memory  
+- typed intermediate representations  
+- deterministic execution  
+- provenance and traceability  
+- cross‑domain composability  
 
-**⛔ Refutation rule**  
+These mechanisms allow the system to perform:
 
-- If drift exceeds threshold $T$ on dataset $D$ under confound‑controlled conditions → **model refuted**.
+- referential grounding  
+- contradiction detection  
+- operator‑bounded execution  
+- drift auditing  
 
+SIL is the backbone of **semantic guarantees**.
+
+FSST supplies the **semantic geometry** and **operator‑theoretic structure**:
+
+- semantic distances \(d_t\)  
+- diffusion operators \(P_t\)  
+- drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass)  
+- Koopman operators for semantic evolution  
+
+FSST does not guarantee meaning or truth.  
+It provides **observable quantities** that TruthSense can evaluate.
+
+TruthSense is the only module that enforces **semantic guarantees**, using:
+
+- factual retrieval + citation  
+- contradiction checks  
+- operator bounds  
+- drift thresholds on pre‑registered datasets  
+
+TruthSense is the **gatekeeper** for semantic guarantees.
 
 ## Outline
 In semantic computation contexts, a semantic guarantee refers to a formal assurance that a system will preserve the intended meaning, truthfulness, or alignment of its outputs according to predefined semantic constraints, even under complex transformations or reasoning processes. Unlike syntactic guarantees—which only constrain the form or grammar of outputs—semantic guarantees ensure that the content and logical relationships remain valid.
