@@ -558,21 +558,83 @@ TruthSense provides the **guarantees**.
 
 ## **Applications in Systems**
 
-Operator-Theoretic Semantics
+Operator‑theoretic semantics provide the **formal substrate** for analyzing semantic evolution in systems. They do not produce semantic guarantees by themselves. Guarantees arise only when operator‑level observables are evaluated by the verification layer.
 
-Let a semantic domain be represented by a space $\mathcal{C}$. A system evolution or reasoning step is modeled as a transformation:
+Let a semantic domain be represented by a space \(\mathcal{C}\). A system evolution or reasoning step is modeled as a transformation:
 
-$$\phi : \mathcal{C} \to \mathcal{C}$$
+$$
+\phi : \mathcal{C} \to \mathcal{C}
+$$
 
-***Core Operational Mechanisms***
+FSST lifts this transformation into operator‑theoretic form, enabling analysis of drift, stability, and long‑horizon behavior. TruthSense then evaluates these observables against **falsifiable criteria**.
 
-| Mechanism | Standard Analogue | Functional Description | Semantic Assurance |
-| --- | --- | --- | --- |
-| **Anchor-Based Alignment** | Ground-truth matrix / Ontological root | Bounds system divergence by referencing $A(1,1,1,1)$. | Limits absolute drift from primary truth. |
-| **Phi-Geometric Optimization** | Robustness verification | Constrains scaling and transformation ratios dynamically. | Maintains internal structural balance. |
-| **TruthSense Module** | Semantic validation / Assertion engine | Evaluates output streams in real time against factual baselines. | Mitigates hallucination and drift. |
-| **Operator-Theoretic Bounds** | Formal verification / Proof theory | Enforces transformation invariants via bounded operators. | Provable stability under execution. |
+**Core Operational Mechanisms**
 
+| **Mechanism** | **Standard Analogue** | **Functional Description** | **Guarantee Status** |
+|---------------|------------------------|-----------------------------|-----------------------|
+| **TruthSense Module** | Semantic validation / assertion engine | Evaluates factual claims, checks contradictions, audits drift | **Yes — checkable** |
+| **Operator‑Theoretic Bounds** | Formal verification / proof theory | Enforces drift thresholds and operator bounds | **Yes — falsifiable** |
+| **Anchor‑Based Alignment** | Ontological root / alignment heuristic | Provides conceptual alignment reference | **No — non‑falsifiable** |
+| **Phi‑Geometric Optimization** | Robustness heuristic | Provides structural/narrative coherence | **No — non‑falsifiable** |
+
+Only the first two mechanisms participate in semantic guarantees.
+
+FSST provides drift metrics:
+
+- neighborhood drift  
+- coarse Ricci curvature  
+- bridge mass  
+- recursive drift  
+
+TruthSense evaluates these metrics against **pre‑registered thresholds**.
+
+Koopman operators allow:
+
+- spectral decomposition  
+- identification of stable/unstable modes  
+- long‑horizon semantic prediction  
+
+TruthSense checks whether operator‑bounded evolution remains within acceptable limits.
+
+Dialogical guarantees ensure:
+
+- no contradictions relative to the commitment set \(\Gamma_t\)  
+- no violation of previously accepted constraints  
+
+Operator‑theoretic evolution is monitored for consistency, not meaning preservation.
+
+TruthSense extracts factual claims and verifies them through:
+
+- retrieval  
+- citation  
+- SIC (Semantic Integrity Constraints)
+
+Operator‑theoretic tools do not verify truth; they only provide structure.
+
+Operator‑theoretic semantics:
+
+- **analyze** semantic evolution  
+- **decompose** semantic dynamics  
+- **predict** long‑horizon drift  
+- **support** verification  
+
+TruthSense:
+
+- **enforces** semantic guarantees  
+- **checks** factual grounding  
+- **detects** contradictions  
+- **audits** drift thresholds  
+
+SSF constructs (anchor, phi‑geometry, LJPW) are **policy heuristics**, not guarantees.
+
+- Operator‑theoretic semantics supply **geometry**, not guarantees.  
+- TruthSense supplies **verification**, not geometry.  
+- Anchor alignment and phi‑geometry are **policy**, not guarantees.  
+- Guarantees arise only from **checkable, falsifiable mechanisms**.  
+- FSST + SIL + TruthSense = guarantee pipeline.  
+- SSF = optional alignment layer.
+
+---
 
 ### **Weakly Supervised Vision**
 
@@ -663,7 +725,6 @@ TruthSense performs **semantic verification**, ensuring that generated outputs p
 
 - It evaluates whether an output aligns with **verified factual knowledge**, **contextual requirements**, and **semantic invariants**.
 - It prevents hallucinations by rejecting outputs that violate known truths or semantic rules.
-
 
 ### **Consistency Enforcement**
 
