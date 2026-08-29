@@ -86,6 +86,24 @@ A TruthSense module is a semantic‑integrity layer designed to enforce truth al
 
 ```
 
+**Pre‑registered tests**
+
+**📁 Named datasets**  
+Each semantic domain gets a canonical dataset.  
+
+> empirical falsification through drift and curvature measurements.
+
+**📉 Baselines**  
+Compute baseline drift/curvature for each dataset.
+
+**🧪 Confound controls** 
+
+> “Fact Verification, Internal Consistency, Spectral Stability Auditing.”
+
+**⛔ Refutation rule**  
+
+- If drift exceeds threshold \(T\) on dataset \(D\) under confound‑controlled conditions → **model refuted**.
+
 ## Outline
 In semantic computation contexts, a semantic guarantee refers to a formal assurance that a system will preserve the intended meaning, truthfulness, or alignment of its outputs according to predefined semantic constraints, even under complex transformations or reasoning processes. Unlike syntactic guarantees—which only constrain the form or grammar of outputs—semantic guarantees ensure that the content and logical relationships remain valid.
 
