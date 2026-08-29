@@ -45,16 +45,6 @@ Semantic guarantees are particularly relevant in frameworks such as:
 
 ---
 
-## Key Mechanisms 
-Achieving Semantic Guarantees:
-
-- **Anchor-Based Alignment**: A reference point (like A(1,1,1,1)) defining ideal semantic state. Systems measure deviation and adjust operations within permissible bounds.
-- **Phi-Geometric Optimization**: Use of golden-ratio-based mathematical constructs ensures growth and transformations remain internally coherent.
-- **TruthSense / Verification Modules**: Detect inconsistencies, deception, or semantic drift, effectively providing runtime semantic validation.
-- **Operator-Theoretic Constraints**: In theoretical frameworks, operators define allowed transitions, creating formally provable semantic invariants.
-
----
-
 ## How the definition aligns
 ### ✔ Meaning over syntax  
 Semantic validation ensures data or outputs are **meaningful and logically consistent**, not merely well‑formed. This matches the emphasis on “preserving intended meaning and truthfulness.” 
@@ -93,7 +83,15 @@ This is closest to the formal methods literature:
 
 ---
 
-## Mechanisms list, mapped to grounded concepts  
+## Mechanisms list, mapped concepts  
+
+Achieving Semantic Guarantees:
+
+- **Anchor-Based Alignment**: A reference point (like A(1,1,1,1)) defining ideal semantic state. Systems measure deviation and adjust operations within permissible bounds.
+- **Phi-Geometric Optimization**: Use of golden-ratio-based mathematical constructs ensures growth and transformations remain internally coherent.
+- **TruthSense / Verification Modules**: Detect inconsistencies, deception, or semantic drift, effectively providing runtime semantic validation.
+- **Operator-Theoretic Constraints**: In theoretical frameworks, operators define allowed transitions, creating formally provable semantic invariants.
+
 ### **Anchor‑Based Alignment**  
 The anchor A(1,1,1,1) functions like a **semantic ground‑truth reference**, similar to concept‑feature matrices or rule‑based semantic constraints.
 
