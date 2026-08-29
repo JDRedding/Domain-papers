@@ -361,3 +361,10 @@ TruthSense reduces hallucinations by enforcing **logical, physical, and factual 
 
 - It blocks outputs that violate known scientific, mathematical, or factual principles.
 - It prevents fabrication of nonexistent entities, events, or relationships.
+
+## References and further reading
+
+- O’Connor, R. et al. "Semantic Substrate Theory: An Operator-Theoretic Framework for Geometric Semantic Drift." arXiv:2602.18699 (PDF).
+- Brunton, S. L., & Kutz, J. N. Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control.
+- Partee, B., ter Meulen, A., & Wall, R. Mathematical Methods in Linguistics.
+- Montague, R. (1970). Universal Grammar.
