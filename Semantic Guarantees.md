@@ -162,6 +162,10 @@ Frameworks like Kafka Streams and Apache Flink build EOS stream processors on to
 
 ### Kafka EOS Mechanism Breakdown
 
+1. **Producer Idempotence (`enable.idempotence=true`):** Prevents network-retry duplicates using a monotonically increasing Sequence ID combined with a unique Producer ID (PID).
+2. **Transactional Writes (`transactional.id`):** Allows multi-partition writes and consumer offset commits to be wrapped into a single atomic transaction.
+3. **Consumer Isolation (`isolation.level=read_committed`):** Forces downstream readers to filter out uncommitted messages or aborted transactions using control markers.
+
 | Kafka primitive          | What it protects against                                                         | What it does not solve alone                                                           |
 | ------------------------ | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Idempotent producer      | Duplicate records caused by producer retry after ambiguous acknowledgments       | Duplicate processing by consumers; atomic offset/output commits; external side effects |
@@ -169,10 +173,6 @@ Frameworks like Kafka Streams and Apache Flink build EOS stream processors on to
 | sendOffsetsToTransaction | Atomic coupling of consumed offsets with produced Kafka records                  | Effects performed outside Kafka                                                        |
 | read_committed           | Exposure of uncommitted or aborted transactional records to downstream consumers | Duplicate effects at non-transactional sinks                                           |
 | Stable transactional.id  | Fencing of zombie producer instances after failover/restart                      | Application-level idempotency and invalid business logic                               |
-
-1. **Producer Idempotence (`enable.idempotence=true`):** Prevents network-retry duplicates using a monotonically increasing Sequence ID combined with a unique Producer ID (PID).
-2. **Transactional Writes (`transactional.id`):** Allows multi-partition writes and consumer offset commits to be wrapped into a single atomic transaction.
-3. **Consumer Isolation (`isolation.level=read_committed`):** Forces downstream readers to filter out uncommitted messages or aborted transactions using control markers.
 
 ### The "End-to-End" Reality Check
 
