@@ -395,6 +395,14 @@ TruthSense reduces hallucinations by enforcing **logical, physical, and factual 
 - It blocks outputs that violate known scientific, mathematical, or factual principles.
 - It prevents fabrication of nonexistent entities, events, or relationships.
 
+## Functions
+
+1. **Hallucination Suppression:** Rejects generated states that fall outside the invariant subspaces of verified reference sets.
+2. **Multi-Turn Consistency Monitoring:** Enforces state continuity by validating that new assertions do not violate prior history predicates.
+3. **Quantitative Reliability Scoring:** Computes a scalar metric $S_{sem} \in [0, 1]$ representing alignment confidence:
+
+$$S_{sem} = \alpha \cdot \text{Fact Alignment} + \beta \cdot \text{Spectral Stability} + \gamma \cdot \text{Contextual Coherence}$$
+
 ## References and further reading
 
 - O’Connor, R. et al. "Semantic Substrate Theory: An Operator-Theoretic Framework for Geometric Semantic Drift." arXiv:2602.18699 (PDF).
