@@ -34,6 +34,7 @@ Each represents a different balance of throughput, reliability, and complexity.
 ```
 
 **Delivery semantics as predicates**
+
 Each guarantee as a logical predicate over message‑effect counts:
 
 - **At‑Most‑Once**  
