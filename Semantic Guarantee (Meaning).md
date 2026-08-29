@@ -222,7 +222,7 @@ Operator‑theoretic inversion provides:
 
 ---
 
-## **Applications in AI Systems**
+## **Applications in Systems**
 
 ### **Weakly Supervised Vision**
 
@@ -232,7 +232,7 @@ $$
 L = \sum \|K_\phi(f_i) - f_j\|^2
 $$
 
-### **LLM Identity Persistence**
+### **Identity Persistence**
 
 Lyapunov‑stable operators ensure:
 
@@ -278,4 +278,4 @@ It provides:
 - spectral stability  
 - empirical robustness  
 
-yielding auditable, interpretable, and meaning‑preserving AI behavior.
+yielding auditable, interpretable, and meaning‑preserving behavior.
