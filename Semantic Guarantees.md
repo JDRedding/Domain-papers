@@ -176,6 +176,20 @@ Frameworks like Kafka Streams and Apache Flink build EOS stream processors on to
 
 ### The "End-to-End" Reality Check
 
+```text
+poll input records
+     │
+     ▼
+begin Kafka transaction
+     │
+     ├── transform records
+     ├── produce output records
+     └── add consumed offsets to transaction
+     │
+     ▼
+commit transaction
+```
+
 Kafka's transactional EOS guarantees apply to operations participating in Kafka's transaction model. When processing crosses into an external system, that system's transaction or idempotency semantics must be considered separately.
 
 ```text
