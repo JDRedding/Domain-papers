@@ -28,9 +28,11 @@ FSST provides quantitative stability metrics—**neighborhood drift**, **coarse 
 FSST extends classical formal semantics by embedding truth‑conditional structures inside a geometric, temporally evolving substrate. It unifies embeddings, neighbor relations, and distributional shifts under a single operator‑theoretic model, enabling spectral stability analysis, empirical falsification, and structured prediction of semantic change.
 
 Formally, FSST is summarized as:  
+
 $$
 S_t = (X, d_t, P_t), \qquad K : H \to H, \qquad g_{t+1} = K g_t,
 $$  
+
 with **H** the Hilbert space of observables over semantic nodes. This yields a mathematically rigorous, dynamically analyzable model of semantics that bridges formal semantic theory with modern geometric and operator‑driven approaches, enabling predictive, stable, and interpretable semantic reasoning in high‑dimensional conceptual spaces.
 
 ## Syntactic vs. Semantic Guarantees
