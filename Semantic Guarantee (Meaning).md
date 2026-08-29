@@ -205,6 +205,15 @@ Operator‑theoretic semantics parallels proof‑theoretic semantics:
 ---
 
 ## **Mechanisms for Operator‑Level Semantic Guarantees**
+TruthSense is a semantic‑integrity safeguard that:
+
+- preserves factual correctness  
+- enforces semantic consistency  
+- aligns outputs with verified knowledge  
+- mitigates hallucinations  
+- provides quantitative reliability guarantees  
+
+It is critical in high‑stakes domains such as healthcare, finance, legal reasoning, and scientific applications where truthfulness and semantic coherence are mandatory.
 
 ### **Spectral Decomposition**
 
@@ -279,6 +288,7 @@ Koopman operators extract:
 ---
 
 ## **Verification and Proof Methodology**
+The **TruthSense module** is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that AI outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
 
 1. **Operator Construction**  
 2. **Spectral Audit**  
@@ -286,4 +296,49 @@ Koopman operators extract:
 4. **Recursive Composition Checks (SCP)**  
 5. **Empirical Alignment**  
 
+TruthSense can be embedded at multiple stages:
 
+### **Input Preprocessing**  
+Validates inputs for semantic coherence and logical correctness.
+
+### **Model Inference**  
+Evaluates outputs in real time against semantic rules and truth constraints.
+
+### **Post‑Processing**  
+Scores, filters, revises, or rejects outputs to ensure truth alignment.
+
+### **Semantic Verification**
+
+TruthSense performs **semantic verification**, ensuring that generated outputs preserve intended meaning rather than merely satisfying syntactic or grammatical constraints.
+
+- It evaluates whether an output aligns with **verified factual knowledge**, **contextual requirements**, and **semantic invariants**.
+- It prevents hallucinations by rejecting outputs that violate known truths or semantic rules.
+
+
+### **Consistency Enforcement**
+
+TruthSense maintains **internal semantic consistency** across multi‑turn interactions, long‑horizon reasoning, or sequential outputs.
+
+- It detects contradictions between new outputs and previously established facts.
+- It monitors semantic drift and enforces coherence across the system’s evolving state.
+
+### **Truth Alignment**
+
+TruthSense aligns outputs with **verified datasets**, **knowledge graphs**, **ontologies**, and **structured semantic rules**.
+
+- It cross‑checks generated content against authoritative sources.
+- It enforces domain‑specific truth constraints (medical, legal, scientific, financial).
+
+### **Confidence Scoring and Semantic Reliability**
+
+TruthSense provides **quantitative semantic guarantees** through confidence scoring.
+
+- Each output receives a semantic reliability score based on alignment with truth sources.
+- Low‑confidence outputs can be flagged, revised, or routed for human review.
+  
+## **Hallucination Mitigation**
+
+TruthSense reduces hallucinations by enforcing **logical, physical, and factual constraints**.
+
+- It blocks outputs that violate known scientific, mathematical, or factual principles.
+- It prevents fabrication of nonexistent entities, events, or relationships.
