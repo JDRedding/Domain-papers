@@ -31,6 +31,299 @@ Each represents a different balance of throughput, reliability, and complexity.
   /transaction boundary.
 ```
 
+
+Below is a compact mathematical account of the three delivery/processing semantics in the notes, together with the Kafka-specific machinery (idempotent producers, sequence numbers, transactions). The notation is chosen so each guarantee is a statement about counts of deliveries and of *observable effects*, not just network packets.
+
+## Notation
+
+| Symbol | Meaning |
+|---|---|
+| $M$ | set of logical messages (application records) |
+| $m \in M$ | a single logical message |
+| $D(m)$ | number of times $m$ is *delivered* to a consumer |
+| $E(m)$ | number of times the *effect* of $m$ is committed in the processing boundary |
+| $o(m)$ | last durable consumer offset associated with $m$ |
+| $\mathrm{proc}(m)$ | business-logic / side-effect function applied to $m$ |
+| $\mathrm{commit}(o)$ | durable write of offset $o$ |
+| $\mathrm{PID}$ | producer identifier |
+| $s_{\mathrm{PID},p}$ | producer sequence number for partition $p$ |
+| $L_{\mathrm{PID},p}$ | last accepted sequence number stored by the broker for $(\mathrm{PID},p)$ |
+| $T$ | a Kafka transaction |
+| $\mathrm{vis}(r)$ | whether record $r$ is visible to a `read_committed` consumer |
+
+Effects live inside a *processing / transaction boundary* $B$. All “no loss / no duplicate” claims below are relative to $B$, exactly as in the notes.
+
+---
+
+## 1. At-most-once
+
+**Processing rule.** Advance durable progress *before* the effect, or never retry an ambiguous send:
+
+$$
+\mathrm{commit}\bigl(o(m)\bigr) \;\prec\; \mathrm{proc}(m)
+\quad\text{or}\quad
+\text{no retry on uncertain delivery.}
+$$
+
+**Count constraints.**
+
+$$
+\forall m \in M:\qquad
+0 \le D(m) \le 1,
+\qquad
+0 \le E(m) \le 1.
+$$
+
+Loss is allowed:
+
+$$
+\exists m:\quad D(m)=0 \;\lor\; E(m)=0.
+$$
+
+Duplicates from *this protocol* are forbidden (retries of ambiguous attempts are suppressed). Other sources of duplicates (multiple producers, replay) are outside the guarantee.
+
+**Consumer crash model.** If the process dies after $\mathrm{commit}(o(m))$ but before $\mathrm{proc}(m)$ finishes,
+
+$$
+E(m)=0 \qquad\text{(silent skip / loss).}
+$$
+
+---
+
+## 2. At-least-once
+
+**Processing rule.** Retry uncertain delivery; advance progress only *after* the effect:
+
+$$
+\mathrm{proc}(m) \;\prec\; \mathrm{commit}\bigl(o(m)\bigr),\quad\text{retries until ack.}
+$$
+
+**Count constraints.**
+
+$$
+\forall m \in M:\qquad
+D(m) \ge 1,
+\qquad
+E(m) \ge 1
+$$
+
+under the usual durability assumptions (retained replicas, correct config, eventual consumer recovery). Duplicates are allowed:
+
+$$
+\exists m:\quad D(m)>1 \;\lor\; E(m)>1.
+$$
+
+**Consumer crash model.** If the process dies after $\mathrm{proc}(m)$ but before $\mathrm{commit}(o(m))$,
+
+$$
+E(m) \ge 2 \qquad\text{on recovery (reprocessing).}
+$$
+
+**Idempotent resolution.** If $\mathrm{proc}$ is idempotent,
+
+$$
+\mathrm{proc}^{(k)}(m) \;=\; \mathrm{proc}(m) \quad\text{for all }k\ge 1,
+$$
+
+so multiple executions collapse to one *observable* state even though $E(m)>1$.
+
+---
+
+## 3. Exactly-once processing (EOS)
+
+**Definition (inside boundary $B$).** A successfully processed record’s effect and its input progress are committed atomically; downstream transactional readers do not observe a duplicate:
+
+$$
+\forall m \in M:\qquad E_B(m) \in \{0,1\} \quad \text{and, if processing succeeds,}\quad E_B(m)=1,
+$$
+
+
+
+
+
+
+The error comes from the underscore in `\texttt{read_committed}`: `_` is special outside math mode. Escape it, or keep the whole token in math.
+
+$$
+D_{\mathrm{vis}}(m) = E_B(m) \quad \forall\ \text{consumers with isolation level }\mathtt{read\_committed}
+$$
+
+$$
+D_{\mathrm{vis}}(m) = E_B(m) \quad\text{for every }\mathrm{read\text{-}committed}\text{ consumer}
+$$
+
+Equivalently: either both output effects and consumed offsets commit, or neither does.
+
+**Atomic commit of a processing step.**
+
+$$
+T(m) \;=\;
+\{\,\mathrm{produce}(\mathrm{out}(m)),\;
+\mathrm{sendOffsetsToTransaction}(o(m))\,\}
+$$
+
+$$
+\mathrm{commit}(T(m))
+\;\iff\;
+\mathrm{out}(m)\text{ visible}
+\;\land\;
+o(m)\text{ advanced.}
+$$
+
+$$
+\mathrm{abort}(T(m))
+\;\implies\;
+\mathrm{vis}(\mathrm{out}(m))=0
+\;\land\;
+o(m)\text{ unchanged.}
+$$
+
+The pipeline in the notes is exactly:
+
+$$
+\mathrm{poll} \;\to\;
+\begin{array}{c}
+\mathrm{begin}(T)\\
+\mathrm{transform}\\
+\mathrm{produce}\\
+\mathrm{sendOffsetsToTransaction}
+\end{array}
+\;\to\;
+\mathrm{commit}(T).
+$$
+
+---
+
+## Kafka idempotent producer
+
+Each record carries $(\mathrm{PID},\,p,\,s)$. Broker acceptance:
+
+$$
+\mathrm{accept}(\mathrm{PID},p,s)
+\;\iff\;
+s = L_{\mathrm{PID},p}+1.
+$$
+
+On accept:
+
+$$
+L_{\mathrm{PID},p} \leftarrow s.
+$$
+
+On retry of an already-accepted sequence:
+
+$$
+s \le L_{\mathrm{PID},p}
+\;\implies\;
+\text{ack, do not append}.
+$$
+
+Out-of-order (gap):
+
+$$
+s > L_{\mathrm{PID},p}+1
+\;\implies\;
+\texttt{OutOfOrderSequenceException}.
+$$
+
+This yields *exactly-once append per $(\mathrm{PID},p)$ session*:
+
+$$
+{No.}\{\text{log entries with }(\mathrm{PID},p,s)\} \le 1.
+$$
+
+It does **not** by itself give atomic offset/output commit or protect external sinks. A new producer instance gets a new $\mathrm{PID}$; fencing across restarts needs a stable $\texttt{transactional.id}$ and producer epoch.
+
+---
+
+## Consumer isolation
+
+For a transactional record $r$ belonging to transaction $T$:
+
+$$
+\mathrm{vis}(r)
+\;=\;
+\begin{cases}
+1 & \text{if }T\text{ committed}\\
+0 & \text{if }T\text{ aborted or still open}.
+\end{cases}
+$$
+
+`isolation.level=read_committed` implements $\mathrm{vis}$ via commit/abort control markers. Uncommitted or aborted data is filtered, so
+
+$$
+D_{\mathrm{vis}}(m) = E_B(m)
+$$
+
+inside Kafka’s transactional boundary.
+
+---
+
+## End-to-end composition
+
+Write the pipeline as stages $S_0 \to S_1 \to \cdots \to S_n$. Kafka EOS on a subset of stages does not imply global EOS:
+
+$$
+\mathrm{EOS}(S_0,\ldots,S_n)
+\;\iff\;
+\forall i,\;
+S_i\text{ is transactional w.r.t. the same boundary}
+\;\text{or}\;
+\mathrm{proc}_{S_i}\text{ is idempotent}.
+$$
+
+For an external sink (e.g. PostgreSQL):
+
+- **Idempotent sink:** deterministic key $k(m)$ and
+
+$$
+\mathrm{UPSERT}_{k(m)}(\mathrm{state},\,\mathrm{effect}(m))
+$$
+
+so repeated application converges:
+
+$$
+f(f(\sigma)) = f(\sigma).
+$$
+
+- **2PC / XA sink:** extend the atomic set
+
+$$
+T_{\mathrm{ext}}(m) = T_{\mathrm{Kafka}}(m) \cup T_{\mathrm{DB}}(m),
+$$
+
+with the usual extra latency and coordinator-failure cost.
+
+A single non-idempotent, non-transactional stage breaks the chain:
+
+$$
+\exists\, i:\ S_i\text{ neither transactional nor idempotent}
+\;\implies\;
+\neg\,\mathrm{EOS}_{\mathrm{e2e}}.
+$$
+
+---
+
+## Summary of the three guarantees as predicates
+
+$$
+\begin{aligned}
+\mathrm{AMO} &\equiv
+\forall m\bigl(D(m)\le 1 \land E(m)\le 1\bigr)
+&&\text{(loss allowed)}
+\mathrm{ALO} &\equiv
+\forall m\bigl(D(m)\ge 1 \land E(m)\ge 1\bigr)
+&&\text{(duplicates allowed)}
+\mathrm{EOS}_B &\equiv
+\forall m\bigl(E_B(m)\in\{0,1\}\bigr)
+\;\land\;
+\text{atomic }(\mathrm{effect},o)
+&&\text{(no loss, no duplicate effect in }B\text{)}
+\end{aligned}
+$$
+
+$\mathrm{EOS}_B$ is strictly stronger than $\mathrm{ALO}$ only *inside* $B$. Outside $B$, the notes’ “end-to-end reality check” applies: you must add sink idempotence or an encompassing transaction.
+
 ---
 
 ## **1. At‑Most‑Once Delivery**
