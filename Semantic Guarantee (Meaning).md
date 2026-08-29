@@ -394,7 +394,7 @@ TruthSense is the **primary enforcement layer** for semantic guarantees.
 FSST provides:
 
 - drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass)  
-- diffusion operators \(P_t\)  
+- diffusion operators $P_t$  
 - Koopman operators for semantic evolution  
 
 These supply **observable quantities** that TruthSense can evaluate.  
@@ -471,17 +471,17 @@ This aligns strongly with established benefits of semantic validation/verificati
 
 The operator‑theoretic framework provides the **formal substrate** used to analyze semantic evolution. It does not produce semantic guarantees by itself. Instead, it supplies **observable quantities** that the verification layer can evaluate.
 
-A semantic domain \(\mathcal{C}\) evolves under a transformation:
+A semantic domain $\mathcal{C}$ evolves under a transformation:
 
-\[
+$$
 \phi : \mathcal{C} \to \mathcal{C}
-\]
+$$
 
 The Koopman operator lifts this nonlinear transformation into a linear operator on observables:
 
-\[
+$$
 K_\phi(f) = f \circ \phi
-\]
+$$
 
 This enables:
 
@@ -491,11 +491,11 @@ This enables:
 
 These analyses do not guarantee meaning or truth; they provide **structure** that can be monitored.  
 
-Eigenfunctions of \(K_\phi\) encode persistent modes of semantic evolution:
+Eigenfunctions of $K_\phi$ encode persistent modes of semantic evolution:
 
-\[
+$$
 K_\phi v = \lambda v
-\]
+$$
 
 - eigenvalues indicate stability or instability  
 - dominant modes describe long‑term semantic tendencies  
@@ -505,9 +505,9 @@ These properties are **analytic**, not guarantees.
 
 Latent embeddings can be approximated by:
 
-\[
+$$
 h_{t+1} \approx \hat{K}_\phi h_t
-\]
+$$
 
 This supports:
 
@@ -519,13 +519,13 @@ These predictions are **inputs** to verification, not guarantees.
 
 The original SCP attempted to define semantic invariance under composition. To align with the guarantee architecture, SCP must be rewritten as a **commitment‑invariance predicate**, not a metaphysical identity rule:
 
-\[
+$$
 \chi(\phi)=1
 \iff
 \Gamma(\phi(h))\supseteq\Gamma(h)
 \;\wedge\;
 \Gamma(\phi(h))\not\models\bot.
-\]
+$$
 
 This expresses **dialogical coherence**, not meaning preservation.  
 
