@@ -55,7 +55,7 @@ Effects live inside a *processing / transaction boundary* $B$. All “no loss / 
 
 ---
 
-### At‑Most‑Once Delivery**
+### **At‑Most‑Once Delivery**
 
 ### **Definition**  
 Messages are delivered **at most once**. No duplicates occur, but messages may be lost if failures happen before processing completes.
