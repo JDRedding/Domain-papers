@@ -645,7 +645,7 @@ $$
 $$
 m_x^{(t)}(z)=
 \begin{cases}
-\alpha, & z = x, \\[6pt]
+\alpha, & z = x,
 (1-\alpha)\,\dfrac{w_{xz}}{\displaystyle\sum_{u\in N_t(x)} w_{xu}}, & z\in N_t(x), 
 0, & \text{otherwise}
 \end{cases}
