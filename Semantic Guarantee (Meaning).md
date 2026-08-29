@@ -242,10 +242,6 @@ Semantic guarantees do **not** come from:
 
 These belong to **policy frameworks**, not guarantee mechanisms.
 
----
-
-## **Correct Interpretation**
-
 Semantic guarantees enforce **verifiable constraints**, not meaning:
 
 - **syntactic correctness**  
