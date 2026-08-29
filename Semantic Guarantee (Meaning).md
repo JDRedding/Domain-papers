@@ -469,42 +469,65 @@ This aligns strongly with established benefits of semantic validation/verificati
 
 ## **Operator‑Theoretic Framework**
 
-Operator‑theoretic approaches formalize meaning, inference, and semantic guarantees by representing transformations over conceptual or latent spaces as linear or nonlinear operators.
+The operator‑theoretic framework provides the **formal substrate** used to analyze semantic evolution. It does not produce semantic guarantees by itself. Instead, it supplies **observable quantities** that the verification layer can evaluate.
 
-### **Semantic Spaces and Operators**
+A semantic domain \(\mathcal{C}\) evolves under a transformation:
 
-A semantic domain **C** is transformed by:
+\[
+\phi : \mathcal{C} \to \mathcal{C}
+\]
 
-$$
-\phi : C \to C
-$$
+The Koopman operator lifts this nonlinear transformation into a linear operator on observables:
 
-The Koopman operator lifts nonlinear dynamics into a linear operator:
-
-$$
+\[
 K_\phi(f) = f \circ \phi
-$$
+\]
 
 This enables:
 
 - spectral analysis  
-- invariant‑subspace identification  
-- global reasoning about semantic dynamics  
+- identification of invariant subspaces  
+- decomposition of semantic evolution into stable and unstable modes  
 
-### **Semantic Continuity Principle (SCP)**
+These analyses do not guarantee meaning or truth; they provide **structure** that can be monitored.  
 
-A recursive coherence predicate ensuring semantic invariants persist under composition:
+Eigenfunctions of \(K_\phi\) encode persistent modes of semantic evolution:
 
-$$
-I_N : \prod C_i^{N-1} \hookrightarrow C_N
-$$
-$$
-x : Aut(C_N) \to \{0,1\}
-$$
+\[
+K_\phi v = \lambda v
+\]
 
-SCP ensures composite transformations remain semantically auditable.
+- eigenvalues indicate stability or instability  
+- dominant modes describe long‑term semantic tendencies  
+- perturbations orthogonal to dominant modes produce minimal drift  
 
-### **Proof‑Theoretic Analogy**
+These properties are **analytic**, not guarantees.  
+
+Latent embeddings can be approximated by:
+
+\[
+h_{t+1} \approx \hat{K}_\phi h_t
+\]
+
+This supports:
+
+- long‑horizon semantic prediction  
+- drift auditing  
+- operator‑bounded evolution  
+
+These predictions are **inputs** to verification, not guarantees.  
+
+The original SCP attempted to define semantic invariance under composition. To align with the guarantee architecture, SCP must be rewritten as a **commitment‑invariance predicate**, not a metaphysical identity rule:
+
+\[
+\chi(\phi)=1
+\iff
+\Gamma(\phi(h))\supseteq\Gamma(h)
+\;\wedge\;
+\Gamma(\phi(h))\not\models\bot.
+\]
+
+This expresses **dialogical coherence**, not meaning preservation.  
 
 Operator‑theoretic semantics parallels proof‑theoretic semantics:
 
@@ -512,60 +535,24 @@ Operator‑theoretic semantics parallels proof‑theoretic semantics:
 - coherence predicates ↔ semantic validity  
 - recursive embeddings ↔ derivations  
 
----
+This analogy is interpretive, not a guarantee mechanism.  
 
-## **Mechanisms for Operator‑Level Semantic Guarantees**
-TruthSense is a semantic‑integrity safeguard that:
+Operator‑theoretic tools support guarantees only when paired with **TruthSense**, which evaluates:
 
-- preserves factual correctness  
-- enforces semantic consistency  
-- aligns outputs with verified knowledge  
-- mitigates hallucinations  
-- provides quantitative reliability guarantees  
+- drift thresholds  
+- operator bounds  
+- spectral stability  
+- contradiction checks  
+- factual grounding  
 
-It is critical in high‑stakes domains such as healthcare, finance, legal reasoning, and scientific applications where truthfulness and semantic coherence are mandatory.
+FSST provides the **geometry**.  
+TruthSense provides the **guarantees**.
 
-### **Spectral Decomposition**
-
-Eigenvectors of $K_\phi$ encode persistent semantic features:
-
-$$
-K_\phi v = \lambda v
-$$
-
-- eigenvalues measure semantic stability  
-- high‑magnitude modes dominate meaning  
-- perturbations orthogonal to dominant modes cause minimal drift  
-
-### **Continuous‑State Models**
-
-Latent embeddings evolve via:
-
-$$
-h_{t+1} \approx \hat{K}_\phi h_t
-$$
-
-This enables:
-
-- long‑horizon semantic prediction  
-- stability audits  
-- identity‑persistence guarantees  
-
-### **Statistical Guarantees via Inverse Problems**
-
-Observed outputs:
-
-$$
-Z = h_U(Y)
-$$
-
-relate to intended posterior $\pi^*(Y)$ via measurement operator $G$.
-
-Operator‑theoretic inversion provides:
-
-- robustness to calibration error  
-- bounded semantic distortion  
-- compatible posterior sets  
+- Operators analyze semantic evolution; they do not guarantee meaning.  
+- Spectral modes describe stability; they do not certify truth.  
+- SCP must be rewritten as commitment invariance.  
+- Guarantees arise only when operator‑level observables are checked by TruthSense.  
+- FSST = substrate; TruthSense = verification.
 
 ---
 
