@@ -131,6 +131,7 @@ True EOS requires **every stage** — source, processor, sink — to use idempot
 Kafka achieves EOS via:
 - Idempotent production  
 - Transactional writes  
-- Consumer isolation  
+- Consumer isolation
+  
 Frameworks like Kafka Streams and Apache Flink build EOS stream processors on top of these primitives.
 
