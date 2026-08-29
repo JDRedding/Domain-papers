@@ -346,6 +346,22 @@ Operator‑theoretic inversion provides:
 
 ## **Applications in Systems**
 
+Operator-Theoretic Semantics
+
+Let a semantic domain be represented by a space $\mathcal{C}$. A system evolution or reasoning step is modeled as a transformation:
+
+$$\phi : \mathcal{C} \to \mathcal{C}$$
+
+***Core Operational Mechanisms***
+
+| Mechanism | Standard Analogue | Functional Description | Semantic Assurance |
+| --- | --- | --- | --- |
+| **Anchor-Based Alignment** | Ground-truth matrix / Ontological root | Bounds system divergence by referencing $A(1,1,1,1)$. | Limits absolute drift from primary truth. |
+| **Phi-Geometric Optimization** | Robustness verification | Constrains scaling and transformation ratios dynamically. | Maintains internal structural balance. |
+| **TruthSense Module** | Semantic validation / Assertion engine | Evaluates output streams in real time against factual baselines. | Mitigates hallucination and drift. |
+| **Operator-Theoretic Bounds** | Formal verification / Proof theory | Enforces transformation invariants via bounded operators. | Provable stability under execution. |
+
+
 ### **Weakly Supervised Vision**
 
 Contrastive losses enforce semantic invariance:
@@ -368,7 +384,20 @@ Koopman operators extract:
 
 - semantic eigenvectors  
 - drift trajectories  
-- global temporal invariants  
+- global temporal invariants
+
+Koopman Operator Lifting
+
+To analyze non-linear semantic dynamics linearly, we lift the system using the Koopman Operator $K_\phi$, acting on observable functions $f \in \mathcal{F}$:
+
+$$K_\phi (f) = f \circ \phi$$
+
+By evaluating the spectral decomposition of $K_\phi$:
+
+$$K_\phi v_i = \lambda_i v_i$$
+
+* **Eigenvalues ($\lambda_i$):** Measure the temporal stability of a semantic feature. $\vert{}\lambda_i\vert{} = 1$ indicates pure invariance, while $\vert{}\lambda_i\vert{} < 1$ indicates decay/drift.
+* **Eigenvectors ($v_i$):** Represent the fundamental semantic modes or core concepts of the system state.
 
 ### Continuous-State Latent Embedding Dynamics
 
