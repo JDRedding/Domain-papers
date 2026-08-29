@@ -554,3 +554,4 @@ $$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\p
 - Montague, R. (1970). Universal Grammar.
 - The Geometry of Truth: Layer-wise Semantic Dynamics for Hallucination Detection in Large Language Models, Amir Hameed Mir. https://arxiv.org/abs/2510.04933v1
 - Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems. Alexander W. Lee, et. al. https://arxiv.org/abs/2503.00600v3
+- sijan324 / state-integrity-protocol https://github.com/sijan324/state-integrity-protocol
