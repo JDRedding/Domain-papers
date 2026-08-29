@@ -374,58 +374,62 @@ TruthSense is the **gatekeeper** for semantic guarantees.
 ---
 
 ## Mechanisms list
-Mapped concepts achieving Semantic Guarantees:
 
-- **Anchor-Based Alignment**: A reference point (like A(1,1,1,1)) defining ideal semantic state. Systems measure deviation and adjust operations within permissible bounds.
-- **Phi-Geometric Optimization**: Use of golden-ratio-based mathematical constructs ensures growth and transformations remain internally coherent.
-- **TruthSense / Verification Modules**: Detect inconsistencies, deception, or semantic drift, effectively providing runtime semantic validation.
-- **Operator-Theoretic Constraints**: In theoretical frameworks, operators define allowed transitions, creating formally provable semantic invariants.
+### **Guarantee Mechanisms**
 
-### **Anchor‑Based Alignment**  
-The anchor A(1,1,1,1) functions like a **semantic ground‑truth reference**, similar to concept‑feature matrices or rule‑based semantic constraints.
+These mechanisms directly support the four semantic guarantees.
 
-### **Phi‑Geometric Optimization**  
-This is the novel extension. In grounded literature, the closest analogue is **semantic robustness verification**, which ensures invariance under meaningful transformations.  
+**TruthSense / Verification Modules**  
 
-### **TruthSense / Verification Modules**  
-Matches **semantic validation**: detecting inconsistencies, drift, or logically invalid states. )
+TruthSense performs:
 
-### **Operator‑Theoretic Constraints**  
-Matches **formal semantic verification**: operators define permissible semantic transitions.   
+- factual retrieval + citation  
+- contradiction detection  
+- operator‑bounded execution  
+- drift auditing on pre‑registered datasets  
 
----
+TruthSense is the **primary enforcement layer** for semantic guarantees.  
 
-## How the definition aligns
-### ✔ Meaning over syntax  
-Semantic validation ensures data or outputs are **meaningful and logically consistent**, not merely well‑formed. This matches the emphasis on “preserving intended meaning and truthfulness.” 
+**Operator‑Theoretic Constraints (FSST)**  
+FSST provides:
 
-### ✔ Contextual and relational correctness  
-Semantic verification evaluates whether an output fulfills its **intended semantic relationships**, often using formal models or learned representations. This aligns with the “logical relationships remain valid.” 
+- drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass)  
+- diffusion operators \(P_t\)  
+- Koopman operators for semantic evolution  
 
-### ✔ Operator‑level invariants  
-Formal semantic verification includes invariance under semantically meaningful transformations—exactly the operator‑theoretic constraints describe. 
+These supply **observable quantities** that TruthSense can evaluate.  
+They do not guarantee meaning or truth by themselves.  
 
----
+**Policy Mechanisms (Non‑Guarantee)**
 
-## Where the frameworks extend
-The three frameworks introduce **semantic guarantees in expanded domains**:
+These mechanisms guide system behavior but do not participate in guarantees because they lack falsifiable checkers.
 
-### 1. **Semantic Substrate Framework**  
-Add *spiritual*, *consciousness*, and *phi‑geometric* alignment layers. These are not present in the grounded sources, but they conceptually parallel:
+**Anchor‑Based Alignment (SSF)**  
 
-- **Contextual meaning enforcement** (TruthSense ↔ semantic validation)  
-- **Semantic invariance under transformation** (phi‑geometry ↔ semantic robustness verification)  
-- **Anchor‑based semantic reference** (A(1,1,1,1) ↔ ground‑truth semantic model)
+Anchor A(1,1,1,1) is an **alignment heuristic**, not a guarantee.  
+It provides a conceptual reference point but no measurable invariant.  
 
-### 2. **Semantic Infrastructure Lab (SIL)**  
-the SIL model resembles enterprise semantic validation systems:
+**Phi‑Geometric Optimization (SSF)**  
+Phi‑geometry provides **narrative coherence heuristics**, not guarantees.  
+It cannot be externally audited or falsified.  
 
-- Persistent semantic memory ↔ semantic validation’s business‑logic consistency  
-- Traceable reasoning paths ↔ formal semantic verification pipelines  
-- Cross‑domain composability ↔ multi‑modal semantic verification
+**Mechanism Table**
 
-### 3. **Operator‑Theoretic Semantic Substrate Theory**  
-This is closest to the formal methods literature:
+| **Mechanism** | **Category** | **Functional Role** | **Guarantee Status** |
+|---------------|--------------|----------------------|-----------------------|
+| **TruthSense** | Guarantee | Factual checks, contradiction detection, drift auditing | **Yes** — checkable |
+| **Operator‑Theoretic Constraints** | Guarantee | Drift metrics, operator bounds, spectral analysis | **Yes** — falsifiable |
+| **Anchor‑Based Alignment** | Policy | Conceptual alignment heuristic | **No** — non‑falsifiable |
+| **Phi‑Geometric Optimization** | Policy | Structural/narrative coherence heuristic | **No** — non‑falsifiable |
+
+- Only **TruthSense** and **FSST operator constraints** are real guarantee mechanisms.  
+- Anchor alignment and phi‑geometry are **policy heuristics**, not guarantees.  
+- Guarantees require **external checkers**, **datasets**, and **fail rules**.  
+- Meaning preservation is not guaranteed — only **verifiable constraints** are.
+
+**Operator‑Theoretic Semantic Substrate Theory**  
+
+This is closest to the formal methods:
 
 - Operators define allowed transitions ↔ attribute‑based semantic verification  
 - Provable invariants ↔ semantic robustness constraints  
