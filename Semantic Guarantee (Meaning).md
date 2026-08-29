@@ -128,6 +128,14 @@ This is closest to the formal methods literature:
 ---
 
 ## Implications and benefits  
+Semantic Verification
+
+TruthSense performs semantic verification, ensuring that generated outputs preserve intended meaning rather than merely satisfying syntactic or grammatical constraints.
+
+It evaluates whether an output aligns with verified factual knowledge, contextual requirements, and semantic invariants.
+
+It prevents hallucinations by rejecting outputs that violate known truths or semantic rules.
+
 This aligns strongly with established benefits of semantic validation/verification:
 
 - **Reliability** — systems avoid nonsensical or harmful outputs.  
