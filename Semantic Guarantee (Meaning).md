@@ -173,8 +173,6 @@ Semantic guarantees therefore focus on:
 
 These constraints are **auditable**, **inspectable**, and **falsifiable**. They do not assert that meaning is preserved; they assert that **verifiable relationships** remain within acceptable bounds.
 
-## **Semantic Guarantee Pipeline**
-
 A semantic guarantee is produced by a verification pipeline consisting of:
 
 1. **Preprocessing**  
