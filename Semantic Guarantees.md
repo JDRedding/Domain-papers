@@ -114,7 +114,7 @@ $$
 
 ---
 
-###  At‑Least‑Once Delivery**
+###  **At‑Least‑Once Delivery**
 
 ### **Definition**  
 Messages are delivered **one or more times**. No messages are lost, but duplicates may occur.
@@ -182,7 +182,7 @@ so multiple executions collapse to one *observable* state even though $E(m)>1$.
 
 ---
 
-### Exactly‑Once Delivery (EOS)**
+### **Exactly‑Once Delivery (EOS)**
 
 ### **Definition**  
 **Exactly-once processing semantics** (**EOS**) ensure that, within a defined transactional boundary, a successfully processed record's effect is committed atomically and is not observed as a duplicate by downstream transactional consumers, despite retries and certain failures.
