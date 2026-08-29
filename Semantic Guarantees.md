@@ -114,10 +114,10 @@ Messages are delivered and processed **exactly once** — no loss, no duplicates
 ## **Message Delivery Semantics Comparison**
 
 | **Guarantee** | **Semantic Guarantee** | **Message Loss** | **Message Duplication** | **Latency** | **Complexity** | **Typical Use** |
-|---------------|------------------------|------------------|--------------------------|-------------|----------------|------------------|
-| **At‑Most‑Once** | Possible | Never | Low | Low | Telemetry, metrics |
-| **At‑Least‑Once** | None | Possible | Medium | Medium | Data pipelines, event sourcing |
-| **Exactly‑Once** | None | None | Higher | High | Financial transactions, billing, stream processing |
+| --- | --- | --- | --- | --- | --- | --- |
+| **At‑Most‑Once** | Possible | Possible | None | Low | Low | Telemetry, metrics |
+| **At‑Least‑Once** | None | None (with retries) | Possible | Medium | Medium | Data pipelines, event sourcing |
+| **Exactly‑Once** | None | None | None | Higher | High | Financial transactions, billing, stream processing |
 
 ### **End‑to‑End Guarantee**
 True EOS requires **every stage** — source, processor, sink — to use idempotent or transactional operations. A single non‑transactional component breaks the chain.
