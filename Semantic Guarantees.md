@@ -136,7 +136,6 @@ At-most-once does not universally mean no duplicates. It means the system delibe
 
 At-least-once means “no silent loss caused by the delivery protocol,” assuming retained data, functioning replication, correct configuration, and eventual recovery. No real distributed system can guarantee delivery through permanent destruction of all replicas, invalid retention policies, or an unavailable consumer forever.
 
-
 ### **End‑to‑End Guarantee**
 True EOS requires **every stage** — source, processor, sink — to use idempotent or transactional operations. A single non‑transactional component breaks the chain.
 
@@ -191,4 +190,12 @@ When writing to external sinks (like PostgreSQL, Elasticsearch, or S3):
 
 * **Idempotent Sinks:** Require deterministic unique keys (e.g., `UPSERT` operations via primary key constraints).
 * **Two-Phase Commit (2PC) Sinks:** Require the sink system to support external transaction control (XA / 2PC integration), which introduces higher latency and risk of dangling locks on coordinator failures.
+
+| Kafka primitive          | What it protects against                                                         | What it does not solve alone                                                           |
+| ------------------------ | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Idempotent producer      | Duplicate records caused by producer retry after ambiguous acknowledgments       | Duplicate processing by consumers; atomic offset/output commits; external side effects |
+| Transactional producer   | Atomic visibility of writes across Kafka partitions and topics                   | Atomicity with arbitrary non-Kafka databases or services                               |
+| sendOffsetsToTransaction | Atomic coupling of consumed offsets with produced Kafka records                  | Effects performed outside Kafka                                                        |
+| read_committed           | Exposure of uncommitted or aborted transactional records to downstream consumers | Duplicate effects at non-transactional sinks                                           |
+| Stable transactional.id  | Fencing of zombie producer instances after failover/restart                      | Application-level idempotency and invalid business logic                               |
 
