@@ -588,3 +588,304 @@ $$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\p
 - The Geometry of Truth: Layer-wise Semantic Dynamics for Hallucination Detection in Large Language Models, Amir Hameed Mir. https://arxiv.org/abs/2510.04933v1
 - Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems. Alexander W. Lee, et. al. https://arxiv.org/abs/2503.00600v3
 - sijan324 / state-integrity-protocol https://github.com/sijan324/state-integrity-protocol
+
+## APPENDIX: Notation
+
+| Formula | Constrains |
+|---|---|
+| $D_{\mathrm{tr}},D_{\mathrm{rw}},\Delta H,\Delta W$ | change of embedding / neighbors |
+| $\kappa_{\mathrm{OR}},B_t$, contractivity of $P_t$ | local diffusion geometry |
+| $x_{k+1}=F(x_k)$, $\Delta_{\mathrm{comm}}$ | iterated maps and order effects |
+| $K_\phi f=f\circ\phi$, $\rho(\hat K)\le 1$ | linearized dynamics of observables |
+| SIC / fact-alignment terms in $S_{\mathrm{sem}}$ | checks against an external spec or KB |
+| $A=(1,1,1,1)$ | chosen moral/semantic coordinates |
+
+
+| Symbol | Meaning |
+|---|---|
+| $X$ or $\mathcal{X}$ | set of semantic objects (words, concepts, nodes) |
+| $t$ | analysis window / time index |
+| $S_t=(X,d_t,P_t)$ | semantic substrate at time $t$ |
+| $d_t$ | embedding-induced metric on $X$ |
+| $f_t:X\to\mathbb{R}^d$ | embedding map |
+| $G_t=(V,E_t)$ | neighborhood graph, $V=X$ |
+| $N_t(x)$ | neighbors of $x$ in $G_t$ |
+| $w_{xz}$ | edge weight |
+| $\alpha\in[0,1]$ | idleness (self-mass) of the diffusion kernel |
+| $m_x^{(t)}$ | local neighborhood measure at $x$ |
+| $P_t$ | one-step Markov kernel, $P_t(x,\cdot)=m_x^{(t)}$ |
+| $\mathsf{W}_1$ | 1-Wasserstein distance |
+| $\operatorname{JS}$ | Jensen–Shannon divergence |
+| $H(\cdot)$ | Shannon entropy |
+| $\kappa_{\mathrm{OR}}^{(t)}(x,y)$ | Ollivier–Ricci curvature of edge $(x,y)$ |
+| $B_t(x)$ | bridge mass at node $x$ |
+| $F,F_t$ | semantic evolution / rewrite map |
+| $G_t$ | intervention map (filter, safety, retrieval, …) |
+| $H_t=G_t\circ F_t$ | composed process operator |
+| $K,K_\phi$ | Koopman operator (used in the note; not the core of Russell 2026) |
+| $\mathcal{C}$ | semantic domain / state space in the note |
+| $\phi:\mathcal{C}\to\mathcal{C}$ | one reasoning / system step |
+| $h_t$ | latent embedding / hidden state |
+| $A=(1,1,1,1)$ | LJPW anchor (separate framework) |
+| $S_{\mathrm{sem}}$ | composite reliability score from the note |
+
+---
+
+## APPENDIX: Russell substrate
+arXiv:2602.18699
+
+**Substrate**
+
+$$
+S_t=(X,d_t,P_t)
+$$
+
+**Local neighborhood measure / diffusion kernel**
+
+$$
+m_x^{(t)}(z)=
+\begin{cases}
+\alpha, & z=x,\$$4pt]
+(1-\alpha)\,\dfrac{w_{xz}}{\sum_{u\in N_t(x)}w_{xu}}, & z\in N_t(x),\$$10pt]
+0, & \text{otherwise}
+\end{cases}
+\qquad
+P_t(x,\cdot)=m_x^{(t)}(\cdot)
+$$
+
+**Translational drift**
+
+$$
+D_{\mathrm{tr}}(x;t_0,t_1)=\lVert f_{t_1}(x)-f_{t_0}(x)\rVert
+$$
+
+**Rewiring (neighborhood) drift**
+
+$$
+D_{\mathrm{rw}}(x;t_0,t_1)=\operatorname{JS}\!\bigl(m_x^{(t_0)}\,\big\|\,m_x^{(t_1)}\bigr)
+$$
+
+**Companion neighborhood observables**
+
+$$
+\Delta H(x)=\bigl\lvert H(m_x^{(t_1)})-H(m_x^{(t_0)})\bigr\rvert,
+\qquad
+\Delta W(x)=\mathsf{W}_1\!\bigl(m_x^{(t_0)},m_x^{(t_1)}\bigr)
+$$
+
+**Recursive / dynamical drift**
+
+$$
+x_{k+1}=F(x_k)
+$$
+
+**Process composition and non-commutativity**
+
+$$
+H_t=G_t\circ F_t,
+\qquad
+G_t\circ F_t\neq F_t\circ G_t
+$$
+
+$$
+\Delta_{\mathrm{comm}}(x,t)=d\bigl((G_t\circ F_t)(x),\,(F_t\circ G_t)(x)\bigr)
+$$
+
+**Ollivier–Ricci curvature**
+
+$$
+\kappa_{\mathrm{OR}}^{(t)}(x,y)=1-\frac{\mathsf{W}_1\!\bigl(m_x^{(t)},m_y^{(t)}\bigr)}{d_t(x,y)},
+\qquad x\neq y,\; d_t(x,y)>0
+$$
+
+- $\kappa>0$: locally contractive diffusion (basin)
+- $\kappa<0$: locally expansive / bridge-like
+
+**Contractivity (imported)**
+
+$$
+\kappa_0=\inf_{x\neq y}\kappa_{\mathrm{OR}}^{(t)}(x,y)
+$$
+
+If $\kappa_0>0$, then for probability measures $\mu,\nu$ on $X$:
+
+$$
+\mathsf{W}_1(\mu P_t,\nu P_t)\le(1-\kappa_0)\,\mathsf{W}_1(\mu,\nu)
+$$
+
+$$
+\mathsf{W}_1(\mu P_t^k,\nu P_t^k)\le(1-\kappa_0)^k\,\mathsf{W}_1(\mu,\nu)
+$$
+
+**Bridge mass**
+
+$$
+B_t(x)=\sum_{y\in N_t(x)}\pi_t(x,y)\,\bigl(-\kappa_{\mathrm{OR}}^{(t)}(x,y)\bigr)_+
+$$
+
+with $(u)_+=\max(u,0)$, $\pi_t(x,y)\ge 0$, $\sum_y\pi_t(x,y)=1$.
+
+**Leading-indicator claim (prediction, not a theorem)**
+
+$$
+B_t(x)\;\longrightarrow\; D_{\mathrm{rw}}(x;t,t+\Delta)
+$$
+
+after frequency / sampling controls.
+
+---
+
+## APPENDIX: Operator / Koopman layer
+
+**State map**
+
+$$
+\phi:\mathcal{C}\to\mathcal{C}
+$$
+
+**Koopman operator on observables $g$ (or $f$)**
+
+$$
+Kg=g\circ f,
+\qquad
+K_\phi f=f\circ\phi
+$$
+
+Discrete evolution of an observable:
+
+$$
+g_{t+1}=Kg_t,
+\qquad
+Kg(x)=g(f(x))
+$$
+
+Continuous form:
+
+$$
+\frac{dg}{dt}=Kg
+$$
+
+**Eigenproblem**
+
+$$
+K_\phi v=\lambda v
+\qquad\text{or}\qquad
+K_\phi v_i=\lambda_i v_i
+$$
+
+- $|\lambda_i|=1$: invariant mode
+- $|\lambda_i|<1$: decaying / drifting mode
+- $|\lambda_i|>1$: unstable growth
+
+**Latent linearization**
+
+$$
+h_{t+1}\approx\hat K_\phi h_t
+$$
+
+Long-horizon boundedness condition used in the note:
+
+$$
+\rho(\hat K_\phi)\le 1
+$$
+
+**Contrastive / invariance loss (note)**
+
+$$
+L=\sum_i\lVert K_\phi(f_i)-f_j\rVert^2
+$$
+
+**Inverse-problem sketch (note)**
+
+$$
+Z=h_U(Y)
+$$
+
+relates observed outputs to an intended posterior $\pi^*(Y)$ through a measurement operator $G$.
+
+---
+
+## APPENDIX: Semantic Continuity Principle
+
+Embedding of an $N$-stage composite into the last space:
+
+$$
+\mathcal{I}_N:\prod_{i=1}^{N-1}\mathcal{C}_i\hookrightarrow\mathcal{C}_N
+$$
+
+Characteristic predicate on automorphisms:
+
+$$
+\chi:\operatorname{Aut}(\mathcal{C}_N)\to\{0,1\}
+$$
+
+SCP as written:
+
+$$
+\chi(\phi)=1
+\iff
+\forall h\in\mathcal{C}_1,\quad
+\bigl\lVert\mathcal{I}_N(\phi^N(h))-h\bigr\rVert\le\varepsilon
+$$
+
+That is invariance of the state under $N$-fold composition, not preservation of asserted content.
+
+---
+
+## APPENDIX: TruthSense score
+
+$$
+S_{\mathrm{sem}}=\alpha\cdot\text{Fact Alignment}
++\beta\cdot\text{Spectral Stability}
++\gamma\cdot\text{Contextual Coherence},
+\qquad
+S_{\mathrm{sem}}\in[0,1]
+$$
+
+A cleaner split of the same idea:
+
+$$
+S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}
+$$
+
+Accept / revise / reject:
+
+$$
+\begin{cases}
+\text{emit} & S_{\mathrm{sem}}\ge\tau\\
+\text{reject / revise / route} & S_{\mathrm{sem}}<\tau
+\end{cases}
+$$
+
+---
+
+## APPENDIX: LJPW / ICE (separate value geometry)
+
+**Coordinates**
+
+$$
+\mathbf{v}=(L,J,P,W)
+$$
+
+Love, Justice, Power, Wisdom.
+
+**Anchor**
+
+$$
+A=(1,1,1,1)
+$$
+
+**ICE as a 2:1:1 projection of LJPW** (as stated in that framework)
+
+$$
+I=I(L,W),\qquad C=C(J),\qquad E=E(P)
+$$
+
+with ideal point $(I,C,E)=(1,1,1)$.
+
+One published harmony-style score is distance-to-anchor; a typical form is
+
+$$
+H(\mathbf{v},A)=1-\frac{\lVert\mathbf{v}-A\rVert}{\lVert A\rVert}
+\quad\text{or a weighted / harmonic variant.}
+$$
