@@ -55,7 +55,7 @@ Effects live inside a *processing / transaction boundary* $B$. All “no loss / 
 
 ---
 
-## 1. At-most-once
+### 1. At-most-once
 
 **Processing rule.** Advance durable progress *before* the effect, or never retry an ambiguous send:
 
@@ -90,7 +90,7 @@ $$
 
 ---
 
-## 2. At-least-once
+### 2. At-least-once
 
 **Processing rule.** Retry uncertain delivery; advance progress only *after* the effect:
 
@@ -129,17 +129,13 @@ so multiple executions collapse to one *observable* state even though $E(m)>1$.
 
 ---
 
-## 3. Exactly-once processing (EOS)
+### 3. Exactly-once processing (EOS)
 
 **Definition (inside boundary $B$).** A successfully processed record’s effect and its input progress are committed atomically; downstream transactional readers do not observe a duplicate:
 
 $$
 \forall m \in M:\qquad E_B(m) \in \{0,1\} \quad \text{and, if processing succeeds,}\quad E_B(m)=1,
 $$
-
-
-
-
 
 
 The error comes from the underscore in `\texttt{read_committed}`: `_` is special outside math mode. Escape it, or keep the whole token in math.
