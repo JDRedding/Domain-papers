@@ -7,7 +7,6 @@ Semantic guarantees define how reliably a messaging or streaming system delivers
 - Idempotence and transactions are the core tools for achieving EOS.  
 - Kafka provides strong EOS guarantees, but external systems must also support idempotency or transactions to maintain end‑to‑end correctness.
 
-
 ## **📘 Overview**
 There are three standard delivery semantics:
 
@@ -219,9 +218,6 @@ so multiple executions collapse to one *observable* state even though $E(m)>1$.
 $$
 \forall m \in M:\qquad E_B(m) \in \{0,1\} \quad \text{and, if processing succeeds,}\quad E_B(m)=1,
 $$
-
-
-The error comes from the underscore in `\texttt{read_committed}`: `_` is special outside math mode. Escape it, or keep the whole token in math.
 
 $$
 D_{\mathrm{vis}}(m) = E_B(m) \quad \forall\ \text{consumers with isolation level }\mathtt{read\_committed}
