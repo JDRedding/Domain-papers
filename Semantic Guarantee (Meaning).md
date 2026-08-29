@@ -71,6 +71,12 @@ SSF supports ethical decision‑making, universal‑pattern learning optimizatio
 - Deterministic execution of semantic operations; outputs maintain integrity across contexts and tasks.
 - Cross-domain composability, ensuring combined functions do not corrupt the intended meanings.
 
+The **Semantic Infrastructure Lab (SIL)** develops a **Semantic Operating System**: a foundational substrate where meaning is explicit, transformations are traceable, and reasoning is fully inspectable. SIL addresses core failures in modern AI—opaque reasoning, unstable semantics, and missing provenance—by enforcing structured meaning, deterministic execution, and cross‑domain composability.
+
+The Semantic OS is built on a **7‑layer architecture**: persistent **semantic memory**, typed **Pantheon IR** universal representations, deterministic **MLIR‑based execution**, multi‑agent orchestration through **Agent Ether**, cross‑cutting semantic infrastructure, the **Agent Help Standard** for strategic guidance, and the **Philbrick substrate** for modular analog/digital hybrid computation. SIL maintains four production systems: **Reveal** (progressive code exploration with ~86% token reduction), **Morphogen** (deterministic multi‑domain substrate with cryptographic provenance), **GenesisGraph** (verifiable provenance with selective disclosure), and **TiaCAD** (declarative parametric CAD with semantic constraints).
+
+SIL’s guarantees follow its technical charter and 14 foundational constraints: **structure before heuristics**, **provenance everywhere**, and **meaning must be explicit**—no hidden semantics, no opaque inference. This yields systems that are **transparent** (reasoning is inspectable), **reliable** (deterministic and reproducible), and **interoperable** (cross‑domain composable). SIL positions itself as a “Linux for meaning,” providing the semantic substrate required for trustworthy, inspectable, and structurally grounded AI reasoning.
+
 ### Formal Semantic Substrate Theory (operator-theoretic approach)
 : Establishes a mathematically rigorous substrate where the guarantees are formalized by theorems and falsifiable predictions. Guarantees in this setting include:
 
