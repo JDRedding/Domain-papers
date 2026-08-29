@@ -58,7 +58,7 @@ Formal semantic verification includes invariance under semantically meaningful t
 ---
 
 ## Where the frameworks extend
-The three frameworks introduce **semantic guarantees in expanded domains** not covered by the sources:
+The three frameworks introduce **semantic guarantees in expanded domains**:
 
 ### 1. **BruinGrowly Semantic Substrate Framework**  
 Add *spiritual*, *consciousness*, and *phi‑geometric* alignment layers. These are not present in the grounded sources, but they conceptually parallel:
