@@ -33,10 +33,23 @@ Each represents a different balance of throughput, reliability, and complexity.
   /transaction boundary.
 ```
 
+Delivery semantics as predicates**
+Each guarantee as a logical predicate over message‑effect counts:
 
-Below is a compact mathematical account of the three delivery/processing semantics in the notes, together with the Kafka-specific machinery (idempotent producers, sequence numbers, transactions). The notation is chosen so each guarantee is a statement about counts of deliveries and of *observable effects*, not just network packets.
+- **At‑Most‑Once**  
+  $D(m)\le 1,\;E(m)\le 1$ — loss allowed, duplicates forbidden *within the protocol*.
+
+- **At‑Least‑Once**  
+  $D(m)\ge 1,\;E(m)\ge 1$ — no loss, duplicates allowed.
+
+- **Exactly‑Once**  
+  $E_B(m)\in\{0,1\}$ with atomic coupling of effect + offset inside boundary $B$.
+
+This way to expresses semantics: everything reduces to **counts of observable effects**, not packet‑level retries.
 
 ## Notation
+
+Below is a compact mathematical account of the three delivery/processing semantics in the notes, together with the Kafka-specific machinery (idempotent producers, sequence numbers, transactions). The notation is chosen so each guarantee is a statement about counts of deliveries and of *observable effects*, not just network packets.
 
 | Symbol | Meaning |
 |---|---|
@@ -471,6 +484,19 @@ begin Kafka transaction
      ▼
 commit transaction
 ```
+
+### **Kafka’s mechanical enforcement**
+Three pillars:
+
+- **Idempotent producer** — PID + sequence numbers ensure  
+  $\#\{(\mathrm{PID},p,s)\}\le 1$
+
+- **Transactional producer** — atomic visibility across partitions.
+
+- **Consumer isolation** — `read_committed` implements  
+  $D_{\mathrm{vis}}(m)=E_B(m)$
+
+This is the minimal set of primitives needed for EOS *inside Kafka*.
 
 Kafka's transactional EOS guarantees apply to operations participating in Kafka's transaction model. When processing crosses into an external system, that system's transaction or idempotency semantics must be considered separately.
 
