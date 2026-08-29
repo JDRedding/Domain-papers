@@ -436,6 +436,16 @@ TruthSense reduces hallucinations by enforcing **logical, physical, and factual 
 
 $$S_{sem} = \alpha \cdot \text{Fact Alignment} + \beta \cdot \text{Spectral Stability} + \gamma \cdot \text{Contextual Coherence}$$
 
+### Semantic Continuity Principle (SCP)
+
+To ensure recursive composition does not decay semantic content across $N$ stages, we define the composition predicate:
+
+$$\mathcal{I}_N : \prod_{i=1}^{N-1} \mathcal{C}_i \hookrightarrow \mathcal{C}_N$$
+
+A transform $\phi$ obeys SCP if there exists a characteristic predicate $\chi : \text{Aut}(\mathcal{C}_N) \to \{0,1\}$ such that:
+
+$$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\phi^N(h)) - h\Vert{} \le \epsilon$$
+
 ## References and further reading
 
 - O’Connor, R. et al. "Semantic Substrate Theory: An Operator-Theoretic Framework for Geometric Semantic Drift." arXiv:2602.18699 (PDF).
