@@ -33,7 +33,7 @@ $$
 S_t = (X, d_t, P_t), \qquad K : H \to H, \qquad g_{t+1} = K g_t,
 $$  
 
-with **H** the Hilbert space of observables over semantic nodes. This yields a mathematically rigorous, dynamically analyzable model of semantics that bridges formal semantic theory with modern geometric and operator‑driven approaches, enabling predictive, stable, and interpretable semantic reasoning in high‑dimensional conceptual spaces.
+with **$H$** the Hilbert space of observables over semantic nodes. This yields a mathematically rigorous, dynamically analyzable model of semantics that bridges formal semantic theory with modern geometric and operator‑driven approaches, enabling predictive, stable, and interpretable semantic reasoning in high‑dimensional conceptual spaces.
 
 ## Syntactic vs. Semantic Guarantees
 
