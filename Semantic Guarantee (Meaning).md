@@ -21,7 +21,7 @@ A **semantic guarantee** provides a formal, inspectable assurance that a system'
 
 ```
 
-A semantic guarantee is a formal assurance that reasoning, computation, or communication preserves intended meaning, truthfulness, or alignment. In semantic substrate frameworks, these guarantees are achieved via anchor-based alignment, phi-geometric optimization, truth-validation modules, and operator-theoretic methods, across multiple interconnected domains (ethical, spiritual, consciousness, quantum, physical, and computational). The practical impact is trustworthy, interpretable, and semantically coherent AI behavior regardless of complexity or cross-domain integration.
+A semantic guarantee is a formal assurance that reasoning, computation, or communication preserves intended meaning, truthfulness, or alignment. In semantic substrate frameworks, these guarantees are achieved via anchor-based alignment, phi-geometric optimization, truth-validation modules, and operator-theoretic methods, across multiple interconnected domains (ethical, spiritual, consciousness, quantum, physical, and computational). The practical impact is trustworthy, interpretable, and semantically coherent behavior regardless of complexity or cross-domain integration.
 
 A TruthSense module is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
 
