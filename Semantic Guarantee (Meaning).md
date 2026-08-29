@@ -6,6 +6,34 @@ A semantic guarantee is a formal assurance that reasoning, computation, or commu
 
 A TruthSense module is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
 
+## Architectural Frameworks
+
+```
+                       ┌────────────────────────────────────────┐
+                       │        ANCHOR POINT A(1,1,1,1)          │
+                       │     (Ground-Truth Reference State)     │
+                       └───────────────────┬────────────────────┘
+                                           │
+         ┌─────────────────────────────────┼─────────────────────────────────┐
+         ▼                                 ▼                                 ▼
+┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
+│     BruinGrowly SSF     │   │     Infrastructure      │   │   Operator-Theoretic    │
+│  (Multi-Domain Align)   │   │       Lab (SIL)         │   │   Substrate (Formal)    │
+├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
+│ • ICE Framework         │   │ • Persistent Memory     │   │ • Spectral Stability    │
+│ • Universal Constraints │   │ • Cross-Domain Ops      │   │ • Koopman Operators     │
+│ • Phi-Geometric Opt     │   │ • Traceable Execution   │   │ • Invariant Subspaces   │
+└────────┬────────────────┘   └────────────┬────────────┘   └────────────┬────────────┘
+         │                                 │                             │
+         └─────────────────────────────────┼─────────────────────────────┘
+                                           ▼
+                       ┌────────────────────────────────────────┐
+                       │           TRUTHSENSE MODULE            │
+                       │ (Runtime Verification & Drift Audit)   │
+                       └────────────────────────────────────────┘
+
+```
+
 ## Outline
 In semantic computation contexts, a semantic guarantee refers to a formal assurance that a system will preserve the intended meaning, truthfulness, or alignment of its outputs according to predefined semantic constraints, even under complex transformations or reasoning processes. Unlike syntactic guarantees—which only constrain the form or grammar of outputs—semantic guarantees ensure that the content and logical relationships remain valid.
 
