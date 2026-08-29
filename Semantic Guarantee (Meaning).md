@@ -368,3 +368,5 @@ TruthSense reduces hallucinations by enforcing **logical, physical, and factual 
 - Brunton, S. L., & Kutz, J. N. Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control.
 - Partee, B., ter Meulen, A., & Wall, R. Mathematical Methods in Linguistics.
 - Montague, R. (1970). Universal Grammar.
+- The Geometry of Truth: Layer-wise Semantic Dynamics for Hallucination Detection in Large Language Models, Amir Hameed Mir. https://arxiv.org/abs/2510.04933v1
+- Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems. Alexander W. Lee, et. al. https://arxiv.org/abs/2503.00600v3
