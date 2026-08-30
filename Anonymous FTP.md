@@ -182,3 +182,188 @@ An FTP session can place noticeable strain on a site and its network connection.
 
 Also keep time zones in mind. If it’s after dinner in Maine, it may still be mid‑afternoon in California. Base your timing on the local time of the site you’re connecting to, not your own.
 
+---
+
+## 3.2 Basic Commands
+
+FTP clients vary widely, but there is a core set of commands that every implementation supports. This section covers only the essential operations needed to run a basic FTP session. For details specific to your client, consult its manual.
+
+---
+
+## 3.2.1 Creating the Connection
+
+The command to start an FTP session depends on the operating system, but we’ll use the generic `ftp` form here.
+
+You can connect to a remote system using either its hostname or its numeric Internet address. Hostnames are preferred, though some sites may not resolve them correctly. Assuming hostname resolution works, the basic form is:
+
+```
+ftp hostname.domain
+```
+
+For example:
+
+```
+ftp ftp.uu.net
+```
+
+After a brief pause, you should see something like:
+
+```
+Connected to ftp.uu.net.
+220 uunet FTP server ready.
+Name (ftp.uu.net:localuser):
+```
+
+For anonymous access, enter:
+
+```
+anonymous
+```
+
+The server will then request a password. Provide your email address:
+
+```
+Password: user@example.com
+230 Guest login ok, access restrictions apply.
+ftp>
+```
+
+Passwords do not echo for security reasons. Once you reach the `ftp>` prompt, you’re logged in and ready to issue commands.
+
+---
+
+## 3.2.2 dir
+
+At the `ftp>` prompt, `dir` lists the contents of the current remote directory:
+
+```
+ftp> dir
+200 PORT command successful.
+150 Opening ASCII mode data connection for /bin/ls.
+total 3116
+drwxr-xr-x  ...
+-rw-rw-r--  ...
+226 Transfer complete.
+```
+
+Directory formats vary by operating system (Unix, VMS, TOPS, etc.). With experience, you’ll learn to interpret file sizes and permissions across systems.
+
+Many FTP clients allow saving directory listings directly to a local file:
+
+```
+ftp> dir n* outfilename
+```
+
+This writes the names of all remote files beginning with `n` into the local file `outfilename`.
+
+---
+
+## 3.2.3 cd
+
+When you first log in, you start in the site’s top‑level directory. Most downloadable content lives in subdirectories such as `/pub`.
+
+To change directories:
+
+```
+ftp> cd pub
+250 CWD command successful.
+```
+
+To move “up” one level, the command depends on the remote OS:
+
+- Unix: `cd ..`
+- VMS: `cd [-]`
+
+---
+
+## 3.2.4 get and put
+
+These commands transfer files between the remote system and your local machine.
+
+### Getting a file
+
+```
+ftp> get filename
+```
+
+Example:
+
+```
+ftp> get newthisweek.Z
+150 Opening ASCII mode data connection...
+226 Transfer complete.
+```
+
+You can also rename the file locally:
+
+```
+ftp> get newthisweek.Z uunet-new
+```
+
+### Putting a file
+
+If the remote directory allows uploads:
+
+```
+ftp> put filename
+```
+
+You may also specify a different remote filename:
+
+```
+ftp> put localname remotename
+```
+
+---
+
+## 3.2.4.1 ASCII vs Binary
+
+FTP supports two transfer modes:
+
+- **ASCII** — translates end‑of‑line and certain characters; safe for text only.
+- **Binary** — transfers raw bytes; required for compressed files, executables, archives, images, etc.
+
+Binary mode prevents corruption. To switch modes:
+
+```
+ftp> ascii
+200 Type set to A.
+
+ftp> binary
+200 Type set to I.
+```
+
+Once set, the mode applies to all transfers until changed.
+
+Example of a correct binary transfer:
+
+```
+ftp> binary
+ftp> get newthisweek.Z
+150 Opening BINARY mode data connection...
+226 Transfer complete.
+```
+
+The file size should match the size listed on the remote server.
+
+---
+
+## 3.2.4.2 mget and mput
+
+These commands allow wildcard transfers:
+
+```
+ftp> mget f*
+ftp> mput *.c
+```
+
+By default, FTP prompts before each file. To disable prompting:
+
+```
+ftp> prompt
+Interactive mode off.
+```
+
+Repeat `prompt` to turn it back on.
+
+---
