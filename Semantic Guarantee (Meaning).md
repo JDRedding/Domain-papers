@@ -777,7 +777,7 @@ If a contradiction occurs:
 - the contradiction is logged  
 - the system must revise or quarantine the output  
 
-** Operator‑Bounded Drift Verification**
+**Operator‑Bounded Drift Verification**
 
 FSST provides drift observables:
 
