@@ -12,6 +12,37 @@ One of the earliest and most influential remote‑access protocols in networking
 
 Modern Internet systems no longer rely on Telnet-based access. While early network services—library catalogs, scientific databases, community Freenets, an directory systems—were built around plaintext terminal interfaces, contemporary systems use secure, encrypted protocols such as SSH for remote access and HTTPS for information retrieval. The functionality once provided by CARL, PENpages, OCEANIC, NED, STIS, and similar Telnet-accessible databases has migrated to web portals, REST APIs, federated search systems, and global open-data repositories. Directory services have evolved from Knowbot and X.500 pilots into LDAP, Active Directory, WHOIS/RDAP, and modern identity frameworks. Although the technology has changed, the underlying goal remains the same: broad, public access to information and communication across the network.
 
+# Overview
+
+This is a comprehensive technical document tracing the evolution from **Telnet** to **SSH** as remote-access protocols. Here's the structure:
+
+**Telnet (Legacy Foundation)**
+- Historical remote-access protocol from ARPANET (1969)
+- Transmits everything in plaintext (passwords, commands, data)
+- Simple but fundamentally insecure
+- Replaced by SSH due to widespread packet-sniffing attacks
+
+**SSH (Modern Standard)**
+- Created in 1995 by Tatu Ylönen in response to password-sniffing crisis
+- Provides encryption, key-based authentication, and integrity protection
+- Universal default for secure remote access across all platforms
+- Far more than just a terminal: supports tunneling, file transfer, automation
+
+## Major Sections
+
+1. **Historical Context** — Why Telnet mattered and why it declined
+2. **Legacy Systems** — Public library catalogs, Freenets, directories, and databases that used Telnet
+3. **SSH Architecture** — Encryption, authentication, multiplexing, secure channels
+4. **SSH Features** — Port forwarding, SFTP, tunneling, certificates, hardening
+5. **SSH in Modern Infrastructure** — Cloud platforms, DevOps, CI/CD, Kubernetes
+6. **Security Best Practices** — Hardening, key management, common pitfalls
+7. **SSH Ecosystem** — OpenSSH, PuTTY, libraries, implementations
+8. **Troubleshooting & Configuration** — Real-world examples and debugging
+
+SSH is the foundation of modern secure remote access and automation. It replaced Telnet because the Internet shifted from a trusted academic network to a hostile global system requiring encryption, strong authentication, and cryptographic integrity.
+
+The document is educational, historically grounded, and deeply technical—suitable for understanding both why Telnet existed and why SSH is essential today.
+
 ## 0 **What Legacy Systems Teach Us**
 
 Across all the examples — Telnet catalogs, agricultural databases, weather systems, oceanographic data, astronomy databases — the pattern is clear:
