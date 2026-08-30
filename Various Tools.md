@@ -452,7 +452,7 @@ The old “whois-servers.list” files are obsolete.
 
 ---
 
-## **Traceroute**
+## **5 Traceroute**
 
 Traceroute is one of the foundational Internet diagnostic tools. While `ping` tells you *whether* a host is reachable, **traceroute** tells you *how* your packets get there — hop by hop — across routers and networks.
 
@@ -462,7 +462,7 @@ It works by sending packets with gradually increasing **TTL (Time To Live)** val
 
 ---
 
-### **Basic Usage**
+### **5.1 Basic Usage**
 
 On Unix-like systems:
 
@@ -493,7 +493,7 @@ Each line represents:
 
 ---
 
-### **What Traceroute Tells You**
+### **5.2 What Traceroute Tells You**
 
 Traceroute is useful for diagnosing:
 
@@ -507,7 +507,7 @@ It’s one of the few tools that gives visibility into the *structure* of the In
 
 ---
 
-### **Modern Behavior**
+### **5.3 Modern Behavior**
 
 Several changes have occurred since the early Internet:
 
@@ -521,7 +521,7 @@ Despite this, traceroute remains one of the most important diagnostic tools avai
 
 ---
 
-### **Variants**
+### **5.4 Variants**
 
 - **mtr** — combines ping + traceroute in real time.  
 - **tracepath** — simpler Linux alternative.  
