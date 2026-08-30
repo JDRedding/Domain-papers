@@ -1584,3 +1584,142 @@ MUDs still exist today:
 They remain a living part of Internet history.
 
 ---
+
+Here is **Section 14**, the final historically significant classic‑era Internet tool that completes the full set of 80s/90s utilities. This one is short, focused, and rounds out the “network diagnostics” category with a tool that was absolutely ubiquitous in early Unix environments.
+
+---
+
+## **14. Netstat (Modernized Section)**
+
+Before graphical network monitors, before modern tools like `ss`, Wireshark, or iproute2, one of the most essential ways to understand what a Unix system was doing on the network was the **netstat** command. It provided visibility into open connections, listening ports, routing tables, and interface statistics — all from a simple text interface.
+
+Netstat was the primary network inspection tool on early Unix systems, providing information about connections, listening ports, routing tables, and interface statistics. While largely replaced by modern tools like ss and iproute2, netstat remains available for compatibility and stands as a key part of classic Internet administration.
+
+Netstat was a core part of every administrator’s toolkit throughout the 1980s and 1990s, and it remains available today for compatibility.
+
+---
+
+### **14.1 What netstat Did**
+
+Netstat displayed information about:
+
+- **Active TCP/UDP connections**  
+- **Listening sockets**  
+- **Routing tables**  
+- **Network interface statistics**  
+- **Protocol usage**  
+
+It was the primary way to see *what your machine was doing on the network*.
+
+---
+
+### **14.2 Basic Usage**
+
+To view active connections:
+
+```
+netstat
+```
+
+To show listening ports:
+
+```
+netstat -l
+```
+
+To show routing information:
+
+```
+netstat -r
+```
+
+To show interface statistics:
+
+```
+netstat -i
+```
+
+To show protocol usage:
+
+```
+netstat -s
+```
+
+These commands were indispensable for diagnosing connectivity issues, checking whether daemons were running, and understanding how traffic flowed through a system.
+
+---
+
+### **14.3 Typical Output**
+
+A classic netstat output might look like:
+
+```
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 example.edu:ssh         203.0.113.42:51234      ESTABLISHED
+tcp        0      0 example.edu:http        198.51.100.14:443       TIME_WAIT
+udp        0      0 example.edu:domain      0.0.0.0:*               
+```
+
+This told administrators:
+
+- Which services were running  
+- Which remote hosts were connected  
+- Whether sockets were stuck in unusual states  
+- Whether the system was overloaded  
+
+---
+
+### **14.4 Why netstat Was Important**
+
+Netstat was essential because early Unix systems lacked:
+
+- Graphical dashboards  
+- Real‑time monitoring tools  
+- High‑level abstractions  
+- Modern logging systems  
+
+Netstat provided a simple, reliable way to inspect the network stack directly.
+
+It was especially important for:
+
+- Debugging daemons (SMTP, NNTP, HTTP, FTP)  
+- Diagnosing routing issues  
+- Checking for stuck or hung connections  
+- Verifying firewall behavior  
+- Monitoring server load  
+
+---
+
+### **14.5 Decline of netstat**
+
+Starting in the late 2000s, netstat began to be replaced by:
+
+- **ss** — part of the iproute2 suite, faster and more detailed  
+- **ip** — modern interface and routing management  
+- **lsof -i** — process‑to‑socket mapping  
+- **systemd‑based tools** — journal and service introspection  
+
+Netstat is still present on many systems, but it is no longer the primary diagnostic tool.
+
+---
+
+### **14.6 netstat Legacy**
+
+Netstat remains available for:
+
+- Backwards compatibility  
+- Legacy scripts  
+- Retrocomputing environments  
+- Administrators who prefer its familiar output  
+
+However, modern systems encourage the use of:
+
+- `ss` for socket inspection  
+- `ip route` and `ip addr` for routing and interfaces  
+- `ip -s link` for statistics  
+
+Even so, netstat remains historically important and still useful for quick, human‑readable summaries.
+
+---
+
+
