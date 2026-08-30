@@ -954,7 +954,7 @@ It is the backbone of modern system administration, cloud computing, DevOps pipe
 
 ---
 
-### **6.5 — Secure File Transfer with SCP and SFTP**
+### **6.5 Secure File Transfer with SCP and SFTP**
 
 SSH doesn’t just replace Telnet — it also replaces FTP. Modern systems use SSH‑based file transfer tools that provide encryption, integrity protection, and authentication. The two primary methods are **SCP** and **SFTP**, both built on top of SSH’s secure transport layer.
 
