@@ -1,5 +1,9 @@
 # Electronic Mail
 
+> "I made this letter longer than usual because
+>  I lack the time to make it shorter."
+>  Pascal, Provincial Letters XVI
+
 ### 🧩 The Essence of Networking: Communication First  
 The **desire to communicate** is the root of every networking technology. Long before computers, people built systems to shrink the distance between minds:
 
