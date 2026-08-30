@@ -255,6 +255,16 @@ So organizations formed not around a single product, but around **ideas**, **phi
 
 ---
 
+### 🌐 Cultural Organizations  
+Some groups existed to promote shared culture rather than standards:
+
+- **Chaos Computer Club** — German hacker collective; ethics, activism, security research.  
+- **The WELL** — One of the earliest online communities; proto‑social‑media culture.  
+- **Usenet hierarchies** — Not an organization per se, but a structured cultural ecosystem.
+
+These groups shaped how people thought about identity, community, and communication online.
+
+---
 ### 🏛️ Major Idea‑Driven Computing Organizations  
 Here are the kinds of groups that sat “above” user groups — each one representing a conceptual or ideological center of gravity.
 
@@ -268,17 +278,6 @@ Here are the kinds of groups that sat “above” user groups — each one repre
 
 These groups weren’t about “how do I use my computer?”  
 They were about **what the computing world should become**.
-
----
-
-### 🌐 Cultural Organizations  
-Some groups existed to promote shared culture rather than standards:
-
-- **Chaos Computer Club** — German hacker collective; ethics, activism, security research.  
-- **The WELL** — One of the earliest online communities; proto‑social‑media culture.  
-- **Usenet hierarchies** — Not an organization per se, but a structured cultural ecosystem.
-
-These groups shaped how people thought about identity, community, and communication online.
 
 ---
 
