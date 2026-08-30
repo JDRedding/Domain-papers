@@ -31,7 +31,7 @@ Below is a structured breakdown of what those topics typically include, some old
 > February, 1755
 
 - **Internet vs. Web** — People often use these interchangeably, but the *Internet* is the global network of cables, routers, and servers, while the *Web* is just one service running on top of it. While people often use “Internet” and “Web” interchangeably, they are distinct: the Internet is the network itself, whereas the Web is a service that enables users to view and interact with digital content over that network. Thinking of the Internet as the road system and the Web as the cars and buses traveling on those roads can help clarify the distinction.
-- **IP Addresses** — Every device online has a numerical address so data knows where to go.  
+- **IP Addresses** — Every device online has a numerical address so data knows where to go. IP addresses are fundamental to network communication, uniquely identifying devices and enabling proper routing of data. Their structure and management, through IPv4, IPv6, and private/public distinctions, ensure the smooth operation of both local and global networks. Understanding IP addresses is key to networking, cybersecurity, and managing connected devices.
 - **Data Packets** — All online information is chopped into tiny packets that travel independently and reassemble at the destination.  
 - **Protocols** — Rules that govern communication: TCP, IP, HTTP/HTTPS, SMTP, etc.  
 - **Routers and Modems** — The basic hardware that connects your home to the wider network.  
