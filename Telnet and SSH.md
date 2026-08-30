@@ -804,7 +804,7 @@ Keypairs solve the fundamental security problems that made Telnet unsafe:
 SSH keypairs are the backbone of secure remote access in cloud computing, DevOps pipelines, and modern infrastructure.
 
 
-### **6.4 — Using SSH for Remote Access and Command Execution**
+### **6.4 Using SSH for Remote Access and Command Execution**
 
 SSH’s primary purpose is to provide secure, encrypted remote access to another machine. Whether you’re administering a server, managing cloud infrastructure, or simply logging into a remote workstation, SSH offers a flexible and secure way to interact with remote systems. This section covers the core workflows: logging in, running commands, and managing sessions.
 
