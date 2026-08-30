@@ -569,7 +569,7 @@ LPF’s original contact address and MIT email are now archival:
 1 Kendall Square #143  
 P.O. Box 9171  
 Cambridge, MA 02139  
-league@prep.ai.mit.edu  
+league @prep.ai.mit.edu  
 
 The organization is no longer active, but its documents and historical materials are preserved in free‑software archives and digital‑rights libraries.
 
@@ -680,7 +680,7 @@ The original NREN vision — a high‑speed national research backbone — has e
 #### 📬 Historical Resources  
 The original NREN bill, early NSFNET documents, and Vint Cerf’s **RFC 1167: *Thoughts on the National Research and Education Network*** are preserved in digital archives and remain valuable historical references.
 
-The old mailing lists such as *nren-discuss@uu.psi.com* are no longer active; modern discussion happens through:
+The old mailing lists such as *nren-discuss @uu.psi.com* are no longer active; modern discussion happens through:
 
 - Internet2 working groups  
 - ESnet forums  
