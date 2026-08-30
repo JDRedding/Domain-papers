@@ -1713,7 +1713,7 @@ This timeline shows the **progressive layering** of commercial services:
 - **Security & Access Control**  
   stabilizes the ecosystem and enables commercial trust.
 
-### — Commercial Service Relationships 
+### Commercial Service Relationships 
  
 ```
                            +-----------------------------+
