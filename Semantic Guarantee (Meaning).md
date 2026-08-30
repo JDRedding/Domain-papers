@@ -187,7 +187,6 @@ FSST supplies the **semantic geometry** and **operator‑theoretic structure**:
 - drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass)  
 - Koopman operators for semantic evolution  
 
-FSST does not guarantee meaning or truth.  
 It provides **observable quantities** that TruthSense can evaluate.
 
 TruthSense is the only module that enforces **semantic guarantees**, using:
@@ -408,7 +407,6 @@ FSST supplies the **semantic geometry** and **operator‑theoretic structure**:
 - drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass)  
 - Koopman operators for semantic evolution  
 
-FSST does not guarantee meaning or truth.  
 It provides **observable quantities** that TruthSense can evaluate in pre‑registered drift tests.  
 
 TruthSense is the only module that enforces **semantic guarantees**, using:
