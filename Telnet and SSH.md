@@ -2894,3 +2894,286 @@ Troubleshooting SSH is essential because:
 Telnet troubleshooting was simple because Telnet was simple. SSH troubleshooting is richer because SSH is a full security and transport platform.
 
 ---
+
+Here’s **Section 15** of the SSH chapter — the *Security Pitfalls and Common Mistakes* section. This is the “don’t shoot yourself in the foot” part of SSH: the subtle misconfigurations, bad habits, and overlooked risks that can undermine an otherwise secure deployment. It’s practical, direct, and fits perfectly after the troubleshooting section.
+
+Once you review this, I’ll move on to **Section 16 — SSH Future Directions and Modern Trends**, unless you want adjustments.
+
+---
+
+## **12. SSH Security Pitfalls and Common Mistakes**
+
+SSH is secure by design, but real-world deployments often introduce vulnerabilities through misconfiguration, convenience shortcuts, or outdated practices. This section highlights the most common mistakes administrators and users make — and explains how to avoid them. These pitfalls are responsible for the majority of SSH-related breaches, even though SSH itself remains cryptographically strong.
+
+---
+
+### **12.1 Using Password Authentication**
+
+### **The mistake**
+Allowing password logins, especially on public-facing servers.
+
+#### **Why it’s dangerous**
+- Passwords can be brute-forced  
+- Users reuse passwords across systems  
+- Botnets constantly attack port 22  
+- Passwords can be phished  
+
+#### **Fix**
+Disable password authentication:
+
+```
+PasswordAuthentication no
+```
+
+Key-based authentication is the modern standard.
+
+---
+
+### **12.2 Weak or Outdated Key Algorithms**
+
+#### **The mistake**
+Using old key types like RSA-1024 or DSA.
+
+#### **Why it’s dangerous**
+- DSA is deprecated  
+- RSA-1024 is breakable  
+- Older keys violate compliance standards  
+
+#### **Fix**
+Use modern keys:
+
+```
+ssh-keygen -t ed25519
+```
+
+Ed25519 is fast, secure, and widely supported.
+
+---
+
+### **12.3 Incorrect Permissions on `.ssh` Directory**
+
+#### **The mistake**
+Permissions too open on:
+
+- `~/.ssh/`  
+- `authorized_keys`  
+- Private key files  
+
+#### **Why it’s dangerous**
+SSH refuses to use insecure keys, causing login failures — or worse, attackers may read private keys.
+
+#### **Fix**
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+```
+
+SSH is strict for a reason.
+
+---
+
+### **12.4 Leaving Root Login Enabled**
+
+#### **The mistake**
+Allowing direct root login:
+
+```
+PermitRootLogin yes
+```
+
+#### **Why it’s dangerous**
+- Root is the most powerful account  
+- Attackers target it first  
+- No audit trail of who did what  
+
+#### **Fix**
+Disable root login:
+
+```
+PermitRootLogin no
+```
+
+Use `sudo` instead.
+
+---
+
+### **12.5 Exposing SSH to the Entire Internet Without Controls**
+
+#### **The mistake**
+Leaving SSH open to the world with no restrictions.
+
+#### **Why it’s dangerous**
+- Constant brute-force attempts  
+- Credential stuffing  
+- Automated scanning  
+- Increased attack surface  
+
+#### **Fixes**
+- Restrict IP ranges with a firewall  
+- Use port knocking (optional)  
+- Use fail2ban  
+- Use a jump host  
+
+SSH is secure, but the Internet is hostile.
+
+---
+
+## **12.6 Blindly Accepting Host Keys**
+
+#### **The mistake**
+Typing “yes” without verifying the host key fingerprint.
+
+#### **Why it’s dangerous**
+- MITM attacks become possible  
+- Attackers can impersonate servers  
+- Users lose trust in host key validation  
+
+#### **Fix**
+Verify fingerprints during first connection.
+
+---
+
+### **12.7 Overusing Agent Forwarding**
+
+#### **The mistake**
+Leaving agent forwarding enabled everywhere.
+
+#### **Why it’s dangerous**
+If the remote host is compromised, attackers can use your forwarded agent to authenticate elsewhere.
+
+#### **Fix**
+Use agent forwarding only on trusted hosts:
+
+```
+ForwardAgent no
+```
+
+Enable selectively in `~/.ssh/config`.
+
+---
+
+### **12.8 Misconfigured Tunnels and Port Forwarding**
+
+#### **The mistake**
+Accidentally exposing local services to remote networks.
+
+#### **Why it’s dangerous**
+- Internal databases exposed  
+- Debug servers exposed  
+- Development tools exposed  
+- Attackers pivot through tunnels  
+
+#### **Fix**
+Bind tunnels to localhost:
+
+```
+ssh -L 8080:localhost:80 user@host
+```
+
+Avoid `0.0.0.0` unless absolutely necessary.
+
+---
+
+### **12.9 Using SSH Keys Without Passphrases**
+
+#### **The mistake**
+Creating private keys with no passphrase.
+
+#### **Why it’s dangerous**
+If the private key file is stolen, attackers gain instant access.
+
+#### **Fix**
+Use passphrases for sensitive environments.
+
+---
+
+### **12.10 Storing Private Keys in Insecure Locations**
+
+#### **The mistake**
+Putting private keys in:
+
+- Shared directories  
+- Cloud storage  
+- Git repositories  
+- Backups without encryption  
+
+#### **Why it’s dangerous**
+Private keys must remain private.
+
+#### **Fix**
+Store keys only in:
+
+- `~/.ssh/`  
+- Hardware tokens  
+- Encrypted vaults  
+
+---
+
+### **12.11 Not Rotating Keys**
+
+#### **The mistake**
+Using the same SSH key for years.
+
+#### **Why it’s dangerous**
+- Keys leak over time  
+- Old keys may use outdated algorithms  
+- Compliance requires rotation  
+
+#### **Fix**
+Rotate keys periodically and remove old ones from `authorized_keys`.
+
+---
+
+### **12.12 Ignoring Logs and Alerts**
+
+#### **The mistake**
+Not monitoring SSH logs.
+
+#### **Why it’s dangerous**
+- Missed brute-force attempts  
+- Missed unauthorized access  
+- Missed key misuse  
+- Missed tunnel abuse  
+
+#### **Fix**
+Monitor:
+
+- `/var/log/auth.log`  
+- `/var/log/secure`  
+- SIEM alerts  
+- Cloud audit logs  
+
+SSH logs are your early warning system.
+
+---
+
+### **12.13 Relying on SSH Alone for Security**
+
+#### **The mistake**
+Assuming SSH is enough by itself.
+
+#### **Why it’s dangerous**
+SSH is secure, but:
+
+- Firewalls matter  
+- Network segmentation matters  
+- Identity management matters  
+- Monitoring matters  
+
+#### **Fix**
+Use SSH as part of a broader security strategy.
+
+---
+
+### **12.14 Why These Pitfalls Matter**
+
+SSH itself is secure — but human mistakes can undermine that security. Avoiding these pitfalls ensures:
+
+- Strong authentication  
+- Strong cryptography  
+- Controlled access  
+- Reduced attack surface  
+- Reliable automation  
+- Compliance with modern standards  
+
+Telnet had no security model at all; SSH has a strong one, but it must be used correctly.
