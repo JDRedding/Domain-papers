@@ -372,17 +372,23 @@ Repeat `prompt` to turn it back on.
 
 ## 3.3 The archie Server
 
-The archie system, developed at McGill University in Canada, was created to provide a fast, automated way to search the contents of anonymous FTP sites around the world. Over time, it expanded to include additional indexing and lookup services, becoming one of the earliest Internet‑wide search tools. It provided a fast, automated way to index and search anonymous FTP archives across the globe. Over time, archie expanded to include additional lookup services and became a foundational part of early Internet resource discovery.
+The archie system, developed at McGill University in Canada, was one of the earliest Internet‑wide search tools. It indexed anonymous FTP archives and provided a fast way to locate files across hundreds of servers. For much of the early 1990s, archie was a foundational part of Internet resource discovery.
 
-Although archie was accessible through telnet, email queries, and dedicated command‑line and X‑window clients, **none of the original archie servers remain online today**. The system survives only as historical software and archived documentation.
+All original production archie servers went offline in the 2000s. However, in 2024 a community effort recovered the **Archie 3.5 beta** source and binaries from Warsaw backups. The Serial Port project published the recovered materials and deployed a reconstructed public instance — complete with a web frontend and classic protocols—running on an emulated SPARCstation at:
+
+```
+archie.serialport.org
+```
+
+This reconstruction is historically accurate but **not** one of the original McGill‑era servers. As of mid‑to‑late August 2026, the public instance is marked offline because its VM is down, though the software and documentation remain available.
 
 ---
 
-## 3.3.1 Using archie
+## 3.3.1 Using archie (Historical Operation)
 
-During its peak in the early 1990s, archie indexed more than 800 anonymous FTP sites, tracking over a million files—more than 50 gigabytes of material at the time. Each site’s listings were refreshed monthly to balance accuracy with network load.
+At its peak, archie indexed more than 800 anonymous FTP sites and tracked over a million files—roughly 50 gigabytes of material at early‑1990s scale. Listings were refreshed monthly to balance accuracy with network load.
 
-Historically, users accessed archie by telnetting to one of several public servers, including:
+Historically, users accessed archie via telnet to servers such as:
 
 - archie.ans.net (New York, USA)  
 - archie.rutgers.edu (New Jersey, USA)  
@@ -393,7 +399,7 @@ Historically, users accessed archie by telnetting to one of several public serve
 - archie.au (Australia)  
 - archie.doc.ic.ac.uk (Great Britain)
 
-None of these hostnames resolve today; they exist only in archived lists and documentation.
+None of these hostnames resolve today; they survive only in documentation.
 
 Once connected, users logged in with:
 
@@ -401,21 +407,19 @@ Once connected, users logged in with:
 archie
 ```
 
-This produced an `archie>` prompt where commands such as:
+and received an `archie>` prompt supporting commands such as:
 
 - `prog` — search for filenames  
 - `set` — adjust query parameters  
 - `quit` — exit  
 
-were available.
-
-A typical query looked like:
+Example historical query:
 
 ```
 prog vine.tar.Z
 ```
 
-and returned a list of FTP sites hosting that file.
+which returned FTP sites hosting that file.
 
 ---
 
@@ -426,7 +430,7 @@ Two primary clients existed:
 - **archie** — command‑line interface  
 - **xarchie** — X‑Windows graphical interface  
 
-These tools queried archie servers directly without requiring a telnet session. For example:
+These queried archie servers directly without requiring telnet. For example:
 
 ```
 % archie vine.tar.Z
@@ -435,7 +439,7 @@ Location: /local/X11/more_contrib
 FILE -rw-r--r-- 18854 Nov 15 1990 vine.tar.Z
 ```
 
-Today, these clients are purely historical artifacts. Their source code still exists in software archives, but they cannot function without a live archie server.
+Today, these clients are purely historical artifacts. They can be compiled from the recovered Archie 3.5 beta sources, but they require a running archie server—such as the Serial Port reconstruction—to function.
 
 ---
 
@@ -449,13 +453,13 @@ archie@archie.mcgill.ca
 
 returned automated responses describing how to perform searches and how to use FTP‑by‑mail services.
 
-This address is no longer active, and the mail‑based interface is preserved only in documentation.
+This interface is no longer active. It is preserved only in historical documentation and in the recovered Archie 3.5 beta materials.
 
 ---
 
 ## 3.3.4 The whatis Database
 
-In addition to FTP listings, archie provided access to the *whatis* database—a catalog of more than 3,500 public‑domain software packages, datasets, and informational documents.
+archie also provided access to the *whatis* database—a catalog of more than 3,500 public‑domain software packages, datasets, and informational documents.
 
 Planned expansions included:
 
@@ -464,12 +468,14 @@ Planned expansions included:
 - collections of Frequently Asked Questions (FAQ) documents  
 - archive locations for major Usenet newsgroups  
 
-These plans were overtaken by the rise of modern web search engines, and archie development ceased.
-
-Suggestions were once sent to:
+Development ended as web search engines replaced archie’s role. The original mailing list:
 
 ```
 archie-l@cs.mcgill.ca
 ```
 
-but this mailing list is no longer active.
+is no longer active.
+
+The recovered Archie 3.5 beta includes documentation for the whatis subsystem, and the Serial Port reconstruction preserves its behavior when the VM is online.
+
+---
