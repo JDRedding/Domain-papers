@@ -86,11 +86,11 @@ Below is a structured breakdown of what those topics typically include, some old
 
 ### 📡 Infrastructure
 
-- **Servers** — Computers that store websites, apps, and services.  
+- **Servers** — Computers that store websites, apps, and services. Servers are specialized computers designed to store, process, and deliver websites, applications, and digital services to other computers or devices over a network. A server is a powerful computer or system that provides resources, data, or functionality to other computers, known as clients, over a network. Servers manage requests and ensure that websites, applications, and services are reliably available to users. Unlike regular personal computers, servers are optimized for uptime, speed, storage capacity, and handling multiple simultaneous requests. In summary, servers are the backbone of the internet and enterprise computing, enabling storage, delivery, and smooth operation of websites, apps, and digital services for users globally. They can be specialized hardware or virtualized environments optimized for performance, scalability, and reliability.
 
-- **Fiber Optics** — Light-speed data transmission.  
+- **Fiber Optics** — Light-speed data transmission. Fiber optic technology enables the rapid transmission of data using light pulses through thin glass or plastic fibers, achieving high-speed and high-bandwidth communication over long distances. Fiber optics revolutionizes data transmission by harnessing light for ultra-fast, high-capacity, and reliable communication. 
 
-- **Wireless Towers** — How phones access the network.  
+- **Wireless Towers** — How phones access the network. Mobile phones connect to cellular networks by communicating wirelessly with nearby towers, which act as intermediaries between your device and the core network, enabling voice, text, and data transmission. Wireless towers, also known as cell towers or base stations, are tall structures equipped with antennas and radio transmitters. Each tower covers a specific geographic area called a cell. As you move, your phone may switch from one tower’s signal to another without dropping the call or data session. This seamless transition is called handoff or handover, and it relies on towers constantly monitoring signal strength and coordinating with the network to ensure connectivity. In essence, cell towers are the critical link between mobile phones and the broader network, enabling communication over radio waves that are then routed through the cellular infrastructure to carry voice, text, and data. The combination of tower coverage, network management, and device coordination allows seamless mobile communication as users move across different cells. This system underpins everything from making calls to accessing mobile internet.
 
 - **ISPs** — Companies that provide your internet connection.  
 
