@@ -383,3 +383,42 @@ Each hierarchy carries a reputation:
 Understanding these reputations helps you predict where your posts will propagate and how they’ll be received.
 
 ---
+
+# **9 Moderated vs Unmoderated**
+
+A number of newsgroups require discussions to stay focused, civil, or on‑topic. To meet that need, **moderated groups** were created.
+
+In a moderated group:
+
+- Every submitted article is **emailed to the group’s moderator**.  
+- The moderator reviews incoming posts and decides what gets published.  
+- Approved posts are then injected into Usenet — either individually or as part of a periodic digest.  
+- Many mailing‑list gateways work exactly this way; for example, the long‑running **Risks Digest**.
+
+Moderation is not censorship; it is **curation**. The goal is to maintain signal quality, prevent spam, and keep discussions aligned with the group’s purpose.
+
+By contrast, **unmoderated groups** accept posts directly from users. Articles propagate immediately, without review. This is the default mode for most of Usenet and is the reason unmoderated groups vary widely in tone, quality, and noise level.
+
+Moderation is a tool — not a hierarchy. Any group, in any branch of the namespace, may be moderated if its charter calls for it.
+
+---
+
+## **10 news.groups & news.announce.newgroups**
+
+Being a responsible participant in Usenet means understanding how the network evolves. Two groups form the core of that process:
+
+### **news.groups**  
+This is where discussion happens. Proposals for new groups, arguments for or against them, questions about charters, and debates about reorganizing hierarchies all occur here. It is the workshop where newsgroups are shaped before they exist.
+
+### **news.announce.newgroups**  
+This is the official record. Announcements of new group proposals, calls for discussion, calls for votes, and final results are posted here. It is moderated to ensure clarity, accuracy, and consistency.
+
+Every Usenet user is **allowed and encouraged** to participate in group creation:
+
+- You may join discussions in **news.groups**.  
+- You may vote on new group proposals announced in **news.announce.newgroups**.  
+- You may help shape the future of the namespace simply by being involved.
+
+Participation is voluntary, but historically, it has been one of the defining acts of **good net.citizenship**.
+
+---
