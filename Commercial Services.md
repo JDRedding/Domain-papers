@@ -1965,7 +1965,7 @@ These companies collectively transformed the Internet from a research network in
 
 ---
 
-## 📡 Appendix IV — Map of Internet Protocol Dependencies  
+## 📡 Appendix V — Map of Internet Protocol Dependencies  
 
 - **PPP/SLIP over the link layer** enabled **consumer ISPs** and full TCP/IP dial‑up.
 - **IP + TCP/UDP** formed the substrate for all commercial services.
