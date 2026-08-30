@@ -691,7 +691,7 @@ Despite these changes, `dig` remains the primary tool for understanding how DNS 
 
 ---
 
-## **7. UUCP (Modernized Section)**
+## **7. UUCP**
 
 Before the Internet became widely accessible, long before always‑on TCP/IP connections were common, a huge amount of early digital communication ran on a system called **UUCP** — *Unix‑to‑Unix Copy Program*. It was the backbone of store‑and‑forward networking in the 1980s and early 1990s, carrying **email**, **Usenet news**, and **files** over dial‑up telephone lines.
 
