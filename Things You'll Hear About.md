@@ -689,3 +689,61 @@ The old mailing lists such as *nren-discuss @uu.psi.com* are no longer active; m
 
 ---
 
+### Internet Resource Guide
+
+In the early days of the Internet, the **Internet Resource Guide (IRG)**—compiled by the NSF Network Service Center (NNSC)—served as a centralized directory of online resources. Its purpose was simple but essential: help users discover what existed on the network and how to reach it. At a time when the Internet was small, fragmented, and largely academic, the IRG was one of the few comprehensive maps of available services.
+
+Today, the Internet is vastly larger and more complex, and the original IRG no longer exists. But the *idea* behind it—helping people find and understand online resources—has evolved into modern documentation portals, search engines, registries, and research catalogs.
+
+#### 🎯 Purpose and Legacy  
+The original IRG aimed to:
+
+- **Increase visibility of Internet resources**  
+- **Help researchers and students discover tools, archives, and services**  
+- **Document how to access networks, databases, and computational facilities**  
+- **Provide contact information and usage policies**  
+
+It grouped resources into categories such as:
+
+- online library catalogs  
+- scientific data archives  
+- white‑pages directory services  
+- network information centers  
+- supercomputing resources  
+
+Each entry described what the resource was, who could use it, how to access it, and whom to contact.
+
+This structure became the template for modern digital‑resource documentation.
+
+#### 🌐 Modern Equivalents (2026)  
+While the IRG itself is gone, its role has been replaced by a wide ecosystem of modern tools and directories:
+
+- **Internet2 and ESnet resource catalogs**  
+- **IETF Datatracker** for protocols and standards  
+- **Research Data Repositories** such as Zenodo, Dryad, and Figshare  
+- **Library discovery systems** like WorldCat and institutional catalogs  
+- **Cloud provider documentation** (AWS, Azure, GCP)  
+- **Open data portals** from governments and scientific institutions  
+- **GitHub** for open‑source tools and datasets  
+
+These platforms collectively serve the same purpose the IRG once did—helping users find the resources they need to do their work.
+
+#### 📬 Historical Access  
+The original IRG was distributed electronically via email and anonymous FTP from **nnsc.nsf.net**. Mailing lists such as *resource-guide-request@nnsc.nsf.net* notified users of updates.
+
+These systems are now historical artifacts, preserved in Internet history archives and NSF documentation collections.
+
+#### 🧭 How Users “Find Out More” Today  
+Instead of a single guide, modern users rely on:
+
+- search engines  
+- academic indexing services  
+- cloud documentation  
+- open‑data catalogs  
+- research‑network portals  
+- collaborative platforms like GitHub  
+- operator communities such as NANOG and RIPE  
+
+The spirit of the IRG lives on, but the scale and diversity of today’s Internet require distributed, dynamic, and searchable documentation rather than a single curated guide.
+
+---
