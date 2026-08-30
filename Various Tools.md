@@ -1063,8 +1063,8 @@ Its reliability and long history make it attractive for organizations that need 
 ---
 
 
-## **10. Veronica & Jughead **
-*Gopher Search Tools)*
+## **10. Veronica & Jughead**
+*Gopher Search Tools*
 
 Before the Web became dominant, **Gopher** was one of the primary ways people browsed information online. Its menu‑driven structure was simple and fast — but it had one major limitation: **no built‑in search engine**. Users could navigate menus, but finding specific information across thousands of Gopher servers was difficult.
 
@@ -1151,7 +1151,7 @@ Jughead is mostly historical today, though:
 
 ---
 
-## **10.3 Why These Tools Mattered**
+### **10.3 Why These Tools Mattered**
 
 Veronica and Jughead solved the biggest usability problem in Gopher: **discoverability**.
 
