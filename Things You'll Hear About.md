@@ -51,7 +51,7 @@ Below is a structured breakdown of what those topics typically include, some old
 
 ### 🔐 Safety Topics 
 
-- **Online Safety** — Avoiding scams, malware, and unsafe downloads.  
+- **Online Safety** — Avoiding scams, malware, and unsafe downloads. Staying safe online involves using secure devices and connections, recognizing suspicious activity, maintaining strong passwords, enabling multi-factor authentication, and carefully managing downloads and personal information. By combining strategies — secure devices, strong passwords, cautious browsing, verified downloads, and privacy awareness — you can substantially reduce risks from online scams, malware, and unsafe downloads while maintaining safer internet experiences
 - **Passwords** — Why strong, unique passwords matter.  
 - **Privacy** — Understanding what data websites collect and how to protect yourself.  
 - **Phishing** — Fake emails or sites trying to steal information.  
