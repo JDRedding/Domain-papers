@@ -1458,3 +1458,129 @@ Modern IRC clients support:
 IRC is no longer mainstream, but it remains a living part of Internet history.
 
 ---
+
+
+## **13. MUDs (Multi‑User Dungeons)**  
+*(The last major interactive tool of the pre‑Web era)*
+
+Before MMORPGs, before graphical virtual worlds, and even before most real‑time chat systems, the early Internet had **MUDs** — text‑based multi‑user virtual environments. They were part game, part social space, part programming platform, and part cultural phenomenon.
+
+MUDs were text-based multi-user virtual worlds accessed via Telnet. They combined chat, exploration, programming, and role-playing, forming some of the earliest persistent online communities. While largely replaced by graphical games and modern chat platforms, MUDs remain historically significant and still operate today.
+
+MUDs were not “tools” in the administrative sense, but they were absolutely part of the lived experience of the 80s/90s Internet and deserve a place alongside IRC, Talk, and Usenet.
+
+---
+
+### **13.1 What MUDs Were**
+
+A **MUD (Multi‑User Dungeon)** was a persistent, text‑based virtual world where multiple users could:
+
+- Explore rooms and environments  
+- Chat with other players  
+- Solve puzzles  
+- Fight monsters (in some variants)  
+- Build new areas  
+- Write scripts to extend the world  
+
+They were accessed via **Telnet**, making them one of the earliest interactive Internet applications.
+
+---
+
+### **13.2 Types of MUDs**
+
+Several major families of MUDs emerged:
+
+- **MUD1** — the original, created in 1978  
+- **TinyMUD** — focused on social interaction  
+- **MOO** (Object‑Oriented MUD) — programmable worlds  
+- **DikuMUD** — combat‑oriented, RPG‑style  
+- **LP MUD** — highly programmable, influenced later game engines  
+
+Each variant had its own culture and technical philosophy.
+
+---
+
+### **13.3 How Users Connected**
+
+Users typically connected via:
+
+```
+telnet mud.example.edu 4000
+```
+
+Once connected, they interacted entirely through text:
+
+```
+look
+You are standing in a forest clearing. Paths lead north and east.
+
+say Hello everyone
+You say, "Hello everyone."
+
+north
+You walk north into a dense forest.
+```
+
+Commands were simple verbs, and the world responded with descriptive text.
+
+---
+
+### **13.4 Social and Cultural Importance**
+
+MUDs were:
+
+- Early **virtual communities**  
+- Early **collaborative programming environments**  
+- Early **persistent online worlds**  
+- Early **role‑playing spaces**  
+- Early **social networks** (long before the term existed)
+
+Many modern concepts — guilds, moderators, persistent avatars, chat channels, emotes — originated in MUDs.
+
+---
+
+### **13.5 MUD Programming**
+
+Some MUDs allowed users to create new rooms, objects, and behaviors using built‑in languages:
+
+- **MOOcode**  
+- **LPC**  
+- **Diku scripting**  
+
+This made MUDs early examples of:
+
+- User‑generated content  
+- Sandbox programming  
+- Collaborative world‑building  
+
+They were precursors to modern platforms like Roblox, Minecraft servers, and modding communities.
+
+---
+
+### **13.6 Decline of MUDs**
+
+MUDs declined as:
+
+- Graphical MMORPGs emerged (Ultima Online, EverQuest, WoW)  
+- Web‑based chat systems replaced Telnet  
+- IRC and later IM platforms became dominant  
+- University shell accounts disappeared  
+- The culture shifted toward graphical interfaces  
+
+However, MUDs never fully died.
+
+---
+
+### **13.7 MUDs Legacy**
+
+MUDs still exist today:
+
+- Active communities run classic MUDs  
+- Programmers maintain MOO and LP MUD servers  
+- Retrocomputing groups preserve historical worlds  
+- Some modern games borrow MUD mechanics  
+- Telnet access is often replaced by web‑based clients  
+
+They remain a living part of Internet history.
+
+---
