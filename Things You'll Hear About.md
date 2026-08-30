@@ -22,7 +22,7 @@ Below is a structured breakdown of what those topics typically include, some old
 
 ---
 
-### 🌐 Core Concepts
+## 🌐 0. Core Concepts
 
 > "Knowledge is of two kinds. We know a subject ourselves, or we
 > know where we can find information upon it."
