@@ -592,7 +592,7 @@ Today, SSH is built into nearly every Unix‑like operating system, widely used 
 
 ---
 
-### **6.2 — SSH Architecture and Core Components**
+### **6.2 SSH Architecture and Core Components**
 
 SSH is built around a modular, layered architecture designed to provide secure, authenticated, and encrypted communication over an untrusted network. Understanding these components clarifies how SSH achieves confidentiality, integrity, and reliability — and why it replaced Telnet as the standard remote‑access protocol.
 
