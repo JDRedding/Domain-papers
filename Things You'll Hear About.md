@@ -395,3 +395,50 @@ cpsr@csli.stanford.edu
 Today, CPSR’s archives and publications are preserved by Stanford University and various digital‑rights libraries.
 
 ---
+
+### 3.3 The Electronic Frontier Foundation
+
+The **Electronic Frontier Foundation** (EFF) remains one of the most influential organizations dedicated to defending civil liberties in the digital world. Founded in **1990**, the EFF emerged during a period when computer networks were rapidly expanding and society was struggling to understand the implications of digital communication, encryption, and online expression.
+
+EFF’s mission has always been to ensure that the “electronic frontier” — the growing digital landscape — is open, free, and accessible to everyone, not just technical experts or large institutions. Their work continues to shape policy, law, and public understanding of digital rights.
+
+#### 🎯 Mission and Focus Areas  
+EFF’s modern mission reflects the challenges of today’s interconnected world:
+
+- **Education and Public Understanding**  
+  EFF produces guides, explainers, and public campaigns to help people understand issues like encryption, surveillance, AI governance, and online speech.
+
+- **Policy and Advocacy**  
+  EFF works with lawmakers, regulators, and international bodies to promote open telecommunications, protect encryption, and ensure that emerging technologies respect civil liberties.
+
+- **Civil Liberties and Litigation**  
+  EFF engages in strategic litigation to defend First Amendment rights, privacy, and due process in digital contexts. Their cases often set national precedents in areas like government surveillance, online anonymity, and platform liability.
+
+- **Access and Empowerment**  
+  EFF supports the development of tools that help everyday users protect their privacy and security — such as HTTPS Everywhere (now integrated into browsers), Privacy Badger, and educational resources on secure communication.
+
+#### 💬 Online Presence 
+The Usenet groups *comp.org.eff.talk* and *comp.org.eff.news* are now historical artifacts. Today, EFF communicates through:
+
+- **eff.org** — official website and resource hub  
+- **EFFector** — the modern email newsletter  
+- **social media channels**  
+- **GitHub repositories** for privacy tools  
+- **public reports and whitepapers**  
+- **virtual events, livestreams, and webinars**
+
+EFF’s archives, campaigns, and legal documents are all accessible online.
+
+#### 🏢 Contact Information 
+EFF is no longer based in Cambridge, MA. Its long‑standing headquarters is in San Francisco:
+
+**Electronic Frontier Foundation**  
+815 Eddy Street  
+San Francisco, CA 94109  
+Email: **info@eff.org**  
+Website: **eff.org**  
+Phone: **(415) 436‑9333**
+
+Membership, donations, volunteer opportunities, and digital‑rights resources are all available through the EFF website.
+
+---
