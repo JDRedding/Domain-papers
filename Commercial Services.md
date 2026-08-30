@@ -1610,7 +1610,7 @@ This timeline shows the **progressive layering** of commercial services:
 
 ---
 
-## Timeline  
+### Timeline  
 ```
 1978–1983  | Early commercial email systems emerge
            | MCI Mail, SprintMail, and corporate X.400 services
