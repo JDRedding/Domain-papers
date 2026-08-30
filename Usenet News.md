@@ -2,7 +2,7 @@
 
 The first thing to understand about Usenet is that it is widely misunderstood. No essay on the nature of Usenet can ignore the erroneous impressions held by many Usenet users. Therefore, this note will treat falsehoods. Keep reading for truth. (Beauty, alas, is not relevant to Usenet.)
 
-Every day on Usenet, loike on social media, the "blind men and the elephant" phenomenon appears, in spades. More flame wars (rabid arguments) arise because of a lack of understanding of the nature of Usenet than from any other source. And consider that such flame wars arise, of necessity, among people who are on Usenet. Imagine, then, how poorly understood Usenet must be by those outside!
+Every day on Usenet, like on social media, the *"**blind men and the elephant**"* phenomenon appears, in spades. More flame wars (rabid arguments) arise because of a lack of understanding of the nature of Usenet than from any other source. And consider that such flame wars arise, of necessity, among people who are on Usenet. Imagine, then, how poorly understood Usenet must be by those outside!
 
 ## **1 Usenet as a network**
 At its core, Usenet is a **distributed flood‑fill network** of servers exchanging *articles* (posts) that are each labeled with one or more **newsgroups**. No central authority, no single owner, no master database — just NNTP servers passing articles around according to shared conventions.
