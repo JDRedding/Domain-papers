@@ -530,3 +530,164 @@ Despite this, traceroute remains one of the most important diagnostic tools avai
 These tools extend traceroute’s capabilities in modern networks.
 
 ---
+
+## **6. DNS Query Tools**
+*nslookup & dig*
+
+DNS is the system that translates human‑readable names (like `example.edu`) into IP addresses. While most users never interact with DNS directly, administrators and power users rely on DNS query tools to diagnose problems, verify records, and understand how names resolve across the Internet.
+
+Two tools dominate this space:
+
+- **nslookup** — the classic, older DNS query tool  
+- **dig** — the modern, flexible, and preferred tool  
+
+nslookup is the classic DNS query tool, still available but largely superseded by dig. dig provides detailed, reliable, and modern DNS diagnostics, supporting all record types, DNSSEC, and advanced query options. Together, they remain essential tools for verifying name resolution and diagnosing DNS issues.
+
+Both remain widely available on Unix-like systems, though `dig` is now the standard for serious DNS work.
+
+---
+
+### **6.1 nslookup (Legacy Tool)**
+
+`nslookup` dates back to the early days of DNS. It provides a simple interface for querying DNS servers.
+
+Basic usage:
+
+```
+nslookup example.edu
+```
+
+Typical output includes:
+
+- IP address  
+- authoritative server  
+- response status  
+
+Example:
+
+```
+Server:  dns.example.net
+Address: 192.0.2.53
+
+Name:    example.edu
+Address: 203.0.113.42
+```
+
+#### **Interactive Mode**
+
+`nslookup` can run interactively:
+
+```
+nslookup
+> server 8.8.8.8
+> set type=MX
+> example.edu
+```
+
+This mode was heavily used in the 80s/90s but is less common today.
+
+#### **Modern Status**
+
+`nslookup` is still present but considered **deprecated** for advanced diagnostics:
+
+- It does not show full packet details.  
+- It hides some DNS flags.  
+- It behaves inconsistently across platforms.
+
+Most administrators now use `dig` instead.
+
+---
+
+### **6.2 dig (Modern Standard)**
+
+`dig` (Domain Information Groper) is the modern DNS query tool. It provides detailed, structured output and supports every DNS record type.
+
+Basic usage:
+
+```
+dig example.edu
+```
+
+Output includes:
+
+- Query flags  
+- Response codes  
+- Authority section  
+- Additional section  
+- Round‑trip time  
+- Server used  
+
+Example (simplified):
+
+```
+;; ANSWER SECTION:
+example.edu.    3600 IN A 203.0.113.42
+
+;; AUTHORITY SECTION:
+example.edu.    3600 IN NS ns1.example.edu.
+example.edu.    3600 IN NS ns2.example.edu.
+
+;; Query time: 42 msec
+;; SERVER: 192.0.2.53#53(192.0.2.53)
+```
+
+#### **Querying Specific Record Types**
+
+```
+dig example.edu MX
+dig example.edu TXT
+dig example.edu AAAA
+dig example.edu NS
+```
+
+#### **Reverse DNS Lookup**
+
+```
+dig -x 203.0.113.42
+```
+
+#### **Querying a Specific DNS Server**
+
+```
+dig @8.8.8.8 example.edu
+```
+
+#### **Short Answers**
+
+```
+dig +short example.edu
+```
+
+Useful for scripts and quick checks.
+
+---
+
+### **6.3 Why dig Replaced nslookup**
+
+`dig` became dominant because it:
+
+- Shows full DNS packet details  
+- Handles modern DNS features (DNSSEC, EDNS, IPv6)  
+- Works consistently across platforms  
+- Supports batch queries  
+- Provides machine‑readable output modes  
+
+For any serious DNS debugging, `dig` is the correct tool.
+
+---
+
+### **6.4 Modern DNS Realities (2026)**
+
+DNS behavior has changed significantly since the 1990s:
+
+- Many domains use **CDNs**, so answers vary by region.  
+- **DNSSEC** is widely deployed, adding cryptographic signatures.  
+- **Anycast DNS** means the “same” server may be physically distant.  
+- **Split-horizon DNS** returns different answers depending on network location.  
+- **Encrypted DNS** (DoH/DoT) is common, though `dig` still queries traditional port 53.
+
+Despite these changes, `dig` remains the primary tool for understanding how DNS behaves.
+
+---
+
+
