@@ -179,7 +179,7 @@ A semantic guarantee is produced by a verification pipeline consisting of:
    Extract claims, normalize structure, and prepare the semantic state for inspection.
 
 2. **Inference**  
-   Compute candidate transformations and latent evolution \(h_{t+1}\).
+   Compute candidate transformations and latent evolution $h_{t+1}$.
 
 3. **Verification (TruthSense)**  
    Apply checkers:  
@@ -226,7 +226,7 @@ A semantic guarantee is produced by a verification pipeline consisting of:
 
 Semantic guarantees do **not** come from:
 
-- anchor \(A(1,1,1,1)\)  
+- anchor $A(1,1,1,1)$  
 - phi‑geometry  
 - spiritual / consciousness / quantum alignment  
 - operator invariants  
@@ -632,7 +632,7 @@ TruthSense checks whether operator‑bounded evolution remains within acceptable
 
 Dialogical guarantees ensure:
 
-- no contradictions relative to the commitment set \(\Gamma_t\)  
+- no contradictions relative to the commitment set $\Gamma_t$  
 - no violation of previously accepted constraints  
 
 Operator‑theoretic evolution is monitored for consistency, not meaning preservation.
@@ -734,52 +734,128 @@ Stability over long horizons requires the spectral radius to satisfy $\rho(\hat{
 
 ## **Verification and Proof Methodology**
 
-The **TruthSense module** is a semantic‑integrity layer designed to enforce truth alignment, prevent semantic drift, and provide runtime guarantees that AI outputs remain consistent with verified knowledge and contextual meaning. It functions as a hybrid of semantic verification, consistency checking, knowledge‑base alignment, and confidence scoring. TruthSense is essential in domains where factual accuracy and semantic coherence are mandatory.
+The **TruthSense module** is the verification layer responsible for enforcing **semantic guarantees**. It does not preserve meaning or truth in the philosophical sense. Instead, it evaluates **externally checkable objects** using **falsifiable rules**. TruthSense integrates four verification channels:
 
-1. **Operator Construction**  
-2. **Spectral Audit**  
-3. **Inverse Problem Testing**  
-4. **Recursive Composition Checks (SCP)**  
-5. **Empirical Alignment**  
+- **referential grounding**  
+- **dialogical consistency**  
+- **operator‑bounded drift auditing**  
+- **syntactic validation**
 
-TruthSense can be embedded at multiple stages:
+These channels form the basis of the system’s proof methodology.
 
-### **Input Preprocessing**  
-Validates inputs for semantic coherence and logical correctness.
+TruthSense extracts atomic factual claims from the output and verifies each claim through:
 
-### **Model Inference**  
-Evaluates outputs in real time against semantic rules and truth constraints.
+- retrieval  
+- citation  
+- SIC (Semantic Integrity Constraints)
 
-### **Post‑Processing**  
-Scores, filters, revises, or rejects outputs to ensure truth alignment.
+A claim passes referential verification only if:
 
-### **Semantic Verification**
+$$
+\text{claim} \;\in\; \text{retrieved\_span} \quad\text{or}\quad \text{KB\_assertion}
+$$
 
-TruthSense performs **semantic verification**, ensuring that generated outputs preserve intended meaning rather than merely satisfying syntactic or grammatical constraints.
+If any claim lacks support, referential verification fails for that claim.  
 
-- It evaluates whether an output aligns with **verified factual knowledge**, **contextual requirements**, and **semantic invariants**.
-- It prevents hallucinations by rejecting outputs that violate known truths or semantic rules.
+TruthSense maintains a commitment set $\Gamma_t$. An output must not contradict this set.
 
-### **Consistency Enforcement**
+Dialogical verification checks:
 
-TruthSense maintains **internal semantic consistency** across multi‑turn interactions, long‑horizon reasoning, or sequential outputs.
+$$
+\Gamma_t \cup \{\text{output}\} \not\models \bot
+$$
 
-- It detects contradictions between new outputs and previously established facts.
-- It monitors semantic drift and enforces coherence across the system’s evolving state.
+If a contradiction occurs:
 
-### **Truth Alignment**
+- the guarantee is withdrawn  
+- the contradiction is logged  
+- the system must revise or quarantine the output  
 
-TruthSense aligns outputs with **verified datasets**, **knowledge graphs**, **ontologies**, and **structured semantic rules**.
+** Operator‑Bounded Drift Verification**
 
-- It cross‑checks generated content against authoritative sources.
-- It enforces domain‑specific truth constraints (medical, legal, scientific, financial).
+FSST provides drift observables:
 
-### **Confidence Scoring and Semantic Reliability**
+- neighborhood drift  
+- coarse Ricci curvature  
+- recursive drift  
+- bridge mass  
 
-TruthSense provides **quantitative semantic guarantees** through confidence scoring.
+TruthSense evaluates these metrics against **pre‑registered thresholds**:
 
-- Each output receives a semantic reliability score based on alignment with truth sources.
-- Low‑confidence outputs can be flagged, revised, or routed for human review.
+$$
+D_{\mathrm{rw}}(x;t,t+\Delta) \le T_D
+$$
+
+If drift exceeds $T_D$, geometric verification fails for that region.  
+
+**Syntactic Verification**
+
+TruthSense applies structural validators:
+
+- grammar  
+- schema  
+- type constraints  
+
+Syntactic verification ensures **form**, not meaning.
+
+**Verification Decision Rule**
+
+TruthSense aggregates verification results using a hard‑gate rule:
+
+$$
+S_{\mathrm{ground}} \ge \tau_g
+\quad\wedge\quad
+S_{\mathrm{consist}} \ge \tau_c
+\quad\wedge\quad
+S_{\mathrm{geom}} \ge \tau_d
+$$
+
+If any gate fails → reject, revise, or quarantine.  
+If all gates pass → emit output.
+
+**Proof Methodology**
+
+TruthSense uses a **proof‑by‑verification** model:
+
+**Step 1 — Extract**
+Identify claims, commitments, and semantic regions.
+
+**Step 2 — Evaluate**
+Apply checkers:
+
+- referential  
+- dialogical  
+- geometric  
+- syntactic  
+
+**Step 3 — Compare**
+Evaluate observables against:
+
+- retrieved spans  
+- commitment set  
+- drift baselines  
+- operator bounds  
+
+**Step 4 — Decide**
+Apply the hard‑gate rule.
+
+**Step 5 — Record**
+Log contradictions, citations, drift measurements, and operator bounds.
+
+This produces a **verifiable audit trail**.
+
+TruthSense enforces semantic guarantees by applying **falsifiable checks**:
+
+- referential grounding  
+- dialogical consistency  
+- drift stability  
+- syntactic validity  
+
+FSST provides the **geometry**.  
+SIL provides the **infrastructure**.  
+TruthSense provides the **verification**.
+
+This completes the guarantee pipeline.
   
 ## **Hallucination Mitigation**
 
