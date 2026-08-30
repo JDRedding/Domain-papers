@@ -442,3 +442,72 @@ Phone: **(415) 436‑9333**
 Membership, donations, volunteer opportunities, and digital‑rights resources are all available through the EFF website.
 
 ---
+
+### 3.4 The Free Software Foundation 
+
+The **Free Software Foundation** (FSF), founded in **1985** by Richard Stallman, remains one of the most influential organizations in the history of computing. Its mission is to defend and promote **software freedom** — the idea that users should have control over the software they run, and that software should respect their rights to study, modify, share, and improve it.
+
+The “free” in *Free Software* refers not to price, but to **freedom**:
+
+- the freedom to run a program for any purpose  
+- the freedom to study how it works (requiring access to source code)  
+- the freedom to modify it  
+- the freedom to redistribute copies, modified or unmodified  
+
+These principles form the foundation of the **GNU Project**, the FSF’s long‑running effort to create a complete free operating system.
+
+#### 🎯 Mission and Focus Areas  
+FSF’s modern work centers on several key areas:
+
+- **Maintaining the GNU Project**  
+  The GNU system — including tools like GCC, Bash, glibc, and Emacs — remains central to modern computing. GNU components are used in nearly every Linux distribution.
+
+- **Defending Copyleft Licensing**  
+  FSF maintains and promotes the GNU General Public License (GPL), one of the most widely used free software licenses. Copyleft ensures that derivative works remain free.
+
+- **Advocacy and Public Education**  
+  FSF campaigns for user rights in areas such as device ownership, DRM opposition, secure boot freedom, and ethical software development.
+
+- **Legal and Policy Work**  
+  FSF provides guidance on licensing, compliance, and the legal foundations of free software.
+
+#### 🧩 The GNU System   
+The GNU Project’s original goal was to build a complete free operating system compatible with Unix. Today:
+
+- GNU provides the **userland**, toolchain, libraries, and utilities  
+- The Linux kernel provides the **kernel**  
+- Together, they form **GNU/Linux**, used in servers, desktops, embedded systems, and cloud infrastructure worldwide  
+
+The recursive acronym **GNU = “GNU’s Not Unix”** remains one of the most iconic jokes in computing culture.
+
+#### 🧠 Influence on Modern Computing  
+FSF’s work laid the foundation for:
+
+- the open‑source movement  
+- modern collaborative development  
+- Linux distributions  
+- free compilers, shells, and core utilities  
+- ethical software licensing  
+- debates about user autonomy and device control  
+
+Even organizations that do not share FSF’s strict philosophical stance — such as the Open Source Initiative (OSI) — owe much of their structure to FSF’s early work.
+
+#### 📬 Contact and Information 
+The old MIT address and prep.ai.mit.edu email are historical. Today, FSF operates from Boston:
+
+**Free Software Foundation**  
+51 Franklin Street, Fifth Floor  
+Boston, MA 02110‑1335  
+Website: **fsf.org**  
+Email: **info@fsf.org**  
+Phone: **(617) 542‑5942**
+
+Information about the GNU Project, current tasks, and ways to contribute can be found at:
+
+- **gnu.org** — GNU Project homepage  
+- **fsf.org/campaigns** — advocacy and policy work  
+- **fsf.org/join** — membership and support  
+
+---
+
+
