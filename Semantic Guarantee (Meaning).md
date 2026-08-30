@@ -138,12 +138,12 @@ The system architecture consists of three layers that play distinct roles: a **p
          ┌─────────────────────────────────┼─────────────────────────────────┐
          ▼                                 ▼                                 ▼
 ┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
-│  SSF (Alignment Policy) │   │   SIL (Infrastructure)   │   │   FSST (Formal Substrate)│
-│  Non‑falsifiable values │   │  Inspectable semantics   │   │  Drift geometry & ops    │
+│  SSF (Alignment Policy) │   │   SIL (Infrastructure)  │   │  FSST (Formal Substrate)│
+│  Non‑falsifiable values │   │  Inspectable semantics  │   │  Drift geometry & ops   │
 ├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
-│ • Anchor A(1,1,1,1)     │   │ • Persistent Memory     │   │ • Drift Metrics          │
-│ • LJPW Dimensions       │   │ • Typed IR (Pantheon)   │   │ • Koopman Operators      │
-│ • Phi‑Geometry          │   │ • Deterministic Exec    │   │ • Invariant Subspaces    │
+│ • Anchor A(1,1,1,1)     │   │ • Persistent Memory     │   │ • Drift Metrics         │
+│ • LJPW Dimensions       │   │ • Typed IR (Pantheon)   │   │ • Koopman Operators     │
+│ • Phi‑Geometry          │   │ • Deterministic Exec    │   │ • Invariant Subspaces   │
 └────────┬────────────────┘   └────────────┬────────────┘   └────────────┬────────────┘
          │                                 │                             │
          └─────────────────────────────────┼─────────────────────────────┘
