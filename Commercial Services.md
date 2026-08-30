@@ -842,7 +842,138 @@ Still, commercial BBSes were foundational: they proved that people would pay for
 
 ---
 
+## 🏢 Early Commercial Web Hosting  
 
+Commercial web hosting emerged the moment the web stopped being a research experiment and started becoming a public publishing platform. As soon as Mosaic (1993) and Netscape (1994) made the web accessible to ordinary users, businesses needed a place to put their websites — and early ISPs rushed in to sell hosting, domains, and server space. This was one of the most important commercial services of the early Internet era because it transformed the web from a collection of academic pages into a global commercial medium.
+
+---
+
+### 🌐 Modern Context  
+Today, web hosting is a massive industry:
+
+- Cloud platforms (AWS, Azure, Google Cloud)  
+- Managed hosting providers  
+- Shared hosting companies  
+- Domain registrars  
+- CDN networks  
+- Website builders (Squarespace, Wix)  
+
+But in the early 1990s, none of this existed. Hosting was primitive, expensive, and often hand‑configured by system administrators.
+
+---
+
+### 🕰️ Historical Backbone (Preserved and Modernized)
+
+Early commercial web hosting typically included:
+
+### **1. Basic HTTP Hosting on ISP Servers**  
+ISPs like:
+
+- **Netcom**  
+- **PSI**  
+- **UUNET**  
+- **Pipeline**  
+- **Demon Internet** (UK)  
+- **MindSpring**  
+
+offered small amounts of server space for HTML files. Users uploaded pages via FTP, and the ISP served them from a shared UNIX machine.
+
+These early hosting packages often included:
+
+- A few megabytes of storage  
+- A personal homepage URL (e.g., `http://www.netcom.com/~username`)  
+- Basic CGI support  
+- Email accounts  
+- Access to server logs (sometimes)  
+
+This was the birth of personal homepages and early business websites.
+
+---
+
+### **2. Early Domain Registration Services**  
+Before 1995, domain registration was handled by **InterNIC**, funded by the NSF. But once commercial activity was allowed:
+
+- **Network Solutions** began selling domain registrations  
+- ISPs offered domain hosting as an add‑on  
+- Businesses started registering `.com` names at scale  
+
+This was the beginning of the commercial domain industry.
+
+---
+
+### **3. CGI‑Based Dynamic Content**  
+Before PHP, Python, or JavaScript frameworks, dynamic websites were built using **CGI scripts**, often written in:
+
+- Perl  
+- C  
+- Shell scripts  
+
+Commercial hosting providers charged extra for CGI access because it required more server resources and security oversight.
+
+CGI enabled:
+
+- Guestbooks  
+- Early shopping carts  
+- Form processing  
+- Hit counters  
+- Simple databases (flat‑file or early DBM formats)
+
+This was the first generation of “interactive” websites.
+
+---
+
+### **4. Early E‑Commerce Hosting**  
+As soon as SSL appeared (1994–1995), hosting providers began offering:
+
+- Secure server space  
+- Merchant accounts  
+- Early shopping cart systems  
+- Payment gateways (primitive, often phone‑verified)  
+
+Companies like **Verio**, **Best Internet**, and **VServers** specialized in hosting commercial storefronts.
+
+---
+
+### **5. Dedicated Servers and Co‑Location**  
+By the mid‑1990s, businesses needed more power than shared hosting could provide. Early hosting companies offered:
+
+- Dedicated UNIX servers  
+- Co‑location space in data centers  
+- Leased T1 lines  
+- Managed server administration  
+
+This was the precursor to modern cloud hosting.
+
+---
+
+### 💼 Why It Was Commercial  
+Early web hosting was a paid service because:
+
+- Running servers required expensive hardware  
+- Bandwidth was costly  
+- Domain registration had fees  
+- SSL certificates were expensive  
+- Businesses needed uptime guarantees  
+- ISPs needed revenue beyond dial‑up subscriptions  
+
+Hosting quickly became one of the first large‑scale commercial Internet industries.
+
+---
+
+### 🔗 Transition to the Modern Era  
+By the late 1990s:
+
+- Shared hosting became cheap and widespread  
+- PHP and MySQL replaced CGI scripts  
+- Control panels (cPanel, Plesk) simplified administration  
+- CDNs emerged  
+- Cloud hosting replaced physical servers  
+- Domain registrars multiplied  
+- E‑commerce platforms industrialized (Amazon, Yahoo Stores, later Shopify)
+
+Today, commercial hosting is a global, multi‑billion‑dollar industry — but its roots lie in those early ISP‑run UNIX servers serving hand‑written HTML pages.
+
+---
 
 
 ---
