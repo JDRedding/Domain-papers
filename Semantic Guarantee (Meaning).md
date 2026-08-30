@@ -224,8 +224,6 @@ A semantic guarantee is produced by a verification pipeline consisting of:
 
 ---
 
-## **What This Pipeline *Does Not* Guarantee**
-
 Semantic guarantees do **not** come from:
 
 - anchor \(A(1,1,1,1)\)  
