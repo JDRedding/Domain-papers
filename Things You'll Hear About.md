@@ -221,9 +221,7 @@ Stoll’s story is famous not just for the chase, but for the **bureaucratic fri
 - U.S. agencies didn’t communicate well  
 - Universities had no coordinated security response  
 
-This is the part that mirrors your note:
-
-> “The only way everyone can peacefully co‑exist in Cyberspace is by ensuring rapid recognition of any existing problems.”
+> The only way everyone can peacefully co‑exist in Cyberspace is by ensuring rapid recognition of any existing problems.
 
 The Morris Worm showed the same thing: **lack of communication amplifies damage**.
 
