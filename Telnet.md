@@ -130,10 +130,6 @@ For announcements of newly accessible library systems and discussion of related 
 
 ---
 
-Here’s a **modernized, historically accurate rewrite** of your sections on the Cleveland Freenet, Knowbot, and the PSI White Pages. I’ve kept the original structure and intent, but updated the language, clarified the historical context, and made it readable for a contemporary audience. Guided Links are included where natural.
-
----
-
 ## 3 The Cleveland Freenet
 
 Freenets were early community‑driven, open‑access computing systems designed to give the public free electronic communication, information services, and a sense of digital “citizenship.” One of the most influential examples was the **Cleveland Freenet**, operated by Case Western Reserve University (CWRU). It became a model for what advocates hoped would grow into a nationwide public telecomputing network.
@@ -351,16 +347,16 @@ Typing `help` displayed field explanations and usage instructions.
 
 ---
 
-## 5.7 FEDIX — Minority Scholarship Information
+### 5.7 FEDIX — Minority Scholarship Information
 
-**FEDIX** was an online information service connecting higher‑education institutions with U.S. federal agencies. It provided free access to:
+**FEDIX** was an online information service designed to connect the higher‑education community with U.S. federal agencies. Its mission was to provide timely, authoritative information on federal research programs, educational initiatives, and funding opportunities. Access was completely free—no registration fees, no usage charges.
 
-- Federal research and education program updates  
-- Scholarship, fellowship, and grant information  
+A major component of FEDIX was **MOLIS** (Minority On‑Line Information Service), a database focused on Black and Hispanic colleges and universities. MOLIS provided daily updates on:
+
+- Federal education and research programs  
+- Scholarships, fellowships, and grants  
 - Available surplus research equipment  
-- General agency announcements  
-
-A major component was **MOLIS** (Minority On‑Line Information Service), which offered current information about Black and Hispanic colleges and universities.
+- Institutional profiles and agency announcements  
 
 Access was via Telnet:
 
@@ -369,5 +365,116 @@ telnet fedix.fie.com
 login: fedix
 ```
 
+FEDIX later evolved into web‑based federal information portals, but historically it played a key role in democratizing access to federal research opportunities.
+
 ---
 
+### 5.8 Science & Technology Information System (STIS)
+
+The **Science & Technology Information System (STIS)**, operated by the National Science Foundation (NSF), provided online access to a wide range of NSF publications. Users could:
+
+- Search full‑text documents  
+- Copy publications directly from the system  
+- Browse announcements, reports, and program information  
+
+STIS supported up to ten simultaneous users and mirrored all content via anonymous FTP.
+
+Access was via Telnet:
+
+```
+telnet stis.nsf.gov
+login: public
+```
+
+For additional information, NSF provided both email and postal contacts:
+
+```
+STIS, Office of Information Systems, Room 401
+National Science Foundation
+1800 G Street, N.W.
+Washington, D.C. 20550
+
+Email: stis-request@nsf.gov
+Phone: (202) 357-7492
+Fax:   (202) 357-7663
+```
+
+STIS was an early example of federal agencies distributing publications electronically, long before modern web portals.
+
+---
+
+### 5.9 Ocean Network Information Center (OCEANIC)
+
+The University of Delaware’s College of Marine Studies operated **OCEANIC**, an interactive database covering marine science research. OCEANIC included:
+
+- World Ocean Circulation Experiment (WOCE) data  
+- Research program information  
+- Research vessel schedules  
+- Directories of researchers and email contacts  
+- Data contributed by multiple academic institutions  
+
+Access was via Telnet:
+
+```
+telnet delocn.udel.edu
+login: INFO
+```
+
+OCEANIC served as a central hub for oceanographic research information during the early Internet era.
+
+---
+
+### 5.10 NASA/IPAC Extragalactic Database (NED)
+
+The **NASA/IPAC Extragalactic Database (NED)** is a long‑running NASA‑funded project providing comprehensive data on extragalactic objects. NED aggregates information from major catalogs of:
+
+- Galaxies  
+- Quasars  
+- Infrared sources  
+- Radio sources  
+
+At the time of this description, NED contained data for roughly 132,000 objects, including:
+
+- Positions and names  
+- Magnitudes and size classifications  
+- Redshifts  
+- Bibliographic references and abstracts  
+
+Users could search:
+
+- By object name  
+- Around a known object  
+- By astronomical coordinates  
+
+A built‑in tutorial guided new users through the interface.
+
+Access was via Telnet:
+
+```
+telnet ipac.caltech.edu
+login: ned
+```
+
+NED continues today as a major astronomical resource, now accessible through modern web interfaces and APIs.
+
+---
+
+### 5.11 U.S. Naval Observatory Automated Data Service
+
+The **U.S. Naval Observatory (USNO)** operated an automated data service providing access to:
+
+- Navigational satellite positioning data  
+- Astronomical datasets  
+- Software utilities  
+- Various scientific databases  
+
+Users could search multiple datasets and obtain instructions for file transfers.
+
+Access was via Telnet:
+
+```
+telnet tycho.usno.navy.mil
+login: ads
+```
+
+USNO’s data services were foundational for navigation, astronomy, and geodesy, and many of their modern successors remain critical infrastructure today.
