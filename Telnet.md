@@ -120,7 +120,7 @@ Many legacy systems, library catalogs, and diagnostic services historically used
 
 ---
 
-## **Modern Remote Access: SSH Replaces Telnet**
+###  **4.3 Modern Remote Access: SSH Replaces Telnet**
 
 The most important shift in modern network practice is the replacement of **Telnet** with **SSH**.
 
