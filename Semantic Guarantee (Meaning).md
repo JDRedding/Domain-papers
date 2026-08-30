@@ -884,7 +884,13 @@ $$\{I}_N : \prod_{i=1}^{N-1} \{C}_i \hookrightarrow \{C}_N$$
 
 A transform $\phi$ obeys SCP if there exists a characteristic predicate $\chi : \text{Aut}(\mathcal{C}_N) \to \{0,1\}$ such that:
 
-$$\chi(\phi) = 1 \iff \forall h \in \mathcal{C}_1, \quad \Vert{}\mathcal{I}_N(\phi^N(h)) - h\Vert{} \le \epsilon$$
+$$
+\chi(\phi)=1
+\iff
+\Gamma(\phi(h))\supseteq\Gamma(h)
+\;\wedge\;
+\Gamma(\phi(h))\not\models\bot
+$$
 
 ## References and further reading
 
