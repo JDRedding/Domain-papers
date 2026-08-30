@@ -3,14 +3,18 @@
 This glossary is only a tiny subset of all of the various terms and other things that people regularly use on The Net. For a more complete (and very entertaining) reference, it's suggested you get a copy of The New Hacker's Dictionary, which is based on a VERY large text file called the Jargon File. Edited by Eric Raymond (eric@snark.thyrsus.com), it is available from the MIT Press, Cambridge, Massachusetts, 02142; its ISBN number is 0- 262-68069-6. Also see RFC-1208, A Glossary of Networking Terms.
 
 ## **Navigation**
-A · B · C · D · E · F · G · H · I · J · K · L · M · N · O · P · Q · R · S · T · U · V · W · X · Y · Z
+: · A · B · C · D · E · F · G · H · I · J · K · L · M · N · O · P · Q · R · S · T · U · V · W · X · Y · Z
+
+---
+
+## **:**
+
+### **:-)**  
+A “smiley” used to portray mood in text. Tilt your head left 90° to see the face. Indicates happiness or sarcasm.
 
 ---
 
 ## **A**
-
-### **:-)**  
-A “smiley” used to portray mood in text. Tilt your head left 90° to see the face. Indicates happiness or sarcasm.
 
 ### **address resolution**  
 Conversion of an Internet address to its physical address. On Ethernet, this requires broadcasting on the LAN.
