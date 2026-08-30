@@ -55,9 +55,9 @@ Below is a structured breakdown of what those topics typically include, some old
 ### 🧩 Cultural & Historical Things 
 
 - **Usenet** — One of the earliest discussion systems; still exists today.  
-- **Early Web Browsers** — Mosaic, Netscape, and the rise of the graphical web.  
+- **Early Web Browsers** — Mosaic, Netscape, and the graphical web.  
 - **Netiquette** — Early norms for polite online communication.  
-- **The Digital Revolution** — How the web exploded in the 1990s.   
+- **The Digital Revolution** — The web exploded in the 1990s.   
 
 ---
 
