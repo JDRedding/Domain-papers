@@ -1595,3 +1595,97 @@ This captures that transformation: the moment the Internet became not just a net
 
 ## References and further reading
 -  [ftp.sunet.se policies-procedures/nsf.net/nsf.policy](https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/doc/Internet-documents/policies-procedures/nsf.net/nsf.policy)
+
+
+## 📜 Appendix I — Timeline of Early Commercial Internet Services  
+
+This timeline shows the **progressive layering** of commercial services:
+
+1. **Communication** (email, BBS, Usenet)  
+2. **Information** (FTP archives, WAIS, Gopher, ClariNet, data feeds)  
+3. **Access** (ISPs, SLIP/PPP, backbone providers)  
+4. **Hosting** (early web hosting, domains, CGI)  
+5. **Security** (encryption, firewalls, access control)  
+6. **Commerce** (pre‑web transactions → web‑native e‑commerce)
+
+---
+
+## Timeline  
+```
+1978–1983  | Early commercial email systems emerge
+           | MCI Mail, SprintMail, and corporate X.400 services
+           | begin offering paid electronic messaging.
+           | --> Commercial Email
+
+1984–1987  | Commercial BBS networks expand
+           | PCBoard, RBBS, WWIV, and FidoNet create paid
+           | online communities with messaging, files, and games.
+           | --> Commercial BBSes
+
+1987–1989  | Commercial Usenet feeds appear
+           | UUNET and PSI sell UUCP/NNTP feeds with guaranteed
+           | retention and reliable delivery.
+           | --> Usenet Feeds
+
+1989       | MCI Mail becomes first commercial service connected
+           | directly to the Internet via SMTP.
+           | --> Commercial Email
+
+1990       | WAIS and Archie introduce commercial search/indexing
+           | for distributed databases and FTP archives.
+           | --> Search Services
+
+1990–1991  | Online service providers (AOL, CompuServe, Prodigy,
+           | GEnie) become major commercial ecosystems.
+           | --> Online Service Providers
+
+1991       | Gopher spreads rapidly; commercial Gopher indexes
+           | and curated hierarchies appear.
+           | --> Search Services
+
+1991–1992  | Commercial FTP archives grow
+           | Walnut Creek, Simtel, and vendor FTP sites distribute
+           | software, drivers, patches, and documentation.
+           | --> FTP Archives
+
+1992       | Early e‑commerce experiments begin
+           | Email‑based ordering, telnet storefronts, and paid
+           | digital distribution appear.
+           | --> Early E‑Commerce
+
+1992–1993  | Commercial data feeds expand
+           | Reuters, Telerate, NOAA/NASA, and GIS vendors deliver
+           | paid real‑time data via UUCP, leased lines, and early TCP/IP.
+           | --> Data Feeds
+
+1993       | Mosaic browser released
+           | ISPs begin selling SLIP/PPP access for full TCP/IP.
+           | --> Early ISPs
+
+1993–1994  | Early commercial web hosting appears
+           | Netcom, PSI, Demon Internet, and MindSpring offer
+           | personal pages, CGI, and domain hosting.
+           | --> Web Hosting
+
+1994       | SSL introduced
+           | Commercial security vendors begin selling secure
+           | web servers, encryption modules, and early VPN precursors.
+           | --> Encryption Services
+
+1994–1995  | Commercial firewalls and access‑control systems emerge
+           | Check Point FireWall‑1, TIS FWTK, Raptor Systems.
+           | --> Access Control
+
+1995       | NSFNET shuts down
+           | Internet becomes fully commercial; backbone traffic
+           | handled entirely by private carriers (UUNET, PSI, Sprintlink).
+           | --> Early ISPs
+
+1995       | Web‑native e‑commerce begins
+           | Amazon and eBay launch; commercial hosting and
+           | payment systems accelerate.
+           | --> Early E‑Commerce
+```
+
+---
+
