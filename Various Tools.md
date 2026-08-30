@@ -1166,7 +1166,7 @@ They were the conceptual predecessors of Web search engines.
 
 ---
 
-## **11. Netfind (Modernized Section)**
+## **11. Netfind**
 
 Before search engines, before social networks, and before widespread institutional directories, one of the earliest tools for locating people on the Internet was **Netfind**. Developed in the early 1990s, Netfind attempted to answer a simple but surprisingly difficult question:
 
