@@ -1589,7 +1589,7 @@ Here is **Section 14**, the final historically significant classic‑era Interne
 
 ---
 
-## **14. Netstat (Modernized Section)**
+## **14. Netstat**
 
 Before graphical network monitors, before modern tools like `ss`, Wireshark, or iproute2, one of the most essential ways to understand what a Unix system was doing on the network was the **netstat** command. It provided visibility into open connections, listening ports, routing tables, and interface statistics — all from a simple text interface.
 
