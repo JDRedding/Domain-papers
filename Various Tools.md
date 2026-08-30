@@ -339,7 +339,7 @@ Today, WHOIS still exists, but most registries have migrated to **RDAP (Registra
 
 ---
 
-### **Basic WHOIS Usage (Still Supported)**
+### **4.1 Basic WHOIS Usage (Still Supported)**
 
 On most Unix-like systems, you can query a domain:
 
@@ -373,7 +373,7 @@ Due to privacy regulations (GDPR, ICANN policy changes), most personal contact i
 
 ---
 
-### **RDAP: The Modern Replacement**
+### **4.2 RDAP: The Modern Replacement**
 
 RDAP is now the standard protocol for domain registration data. It provides:
 
@@ -399,7 +399,7 @@ RDAP responses include the same core information as WHOIS but in a machine-reada
 
 ---
 
-### **Why WHOIS Changed**
+#### **Why WHOIS Changed**
 
 Several factors drove the shift:
 
@@ -412,7 +412,7 @@ RDAP solves these issues while preserving the ability to contact domain operator
 
 ---
 
-### **WHOIS for People**
+#### **WHOIS for People**
 *Historical Only*
 
 In the early Internet, WHOIS also stored **individual user records**—including names, phone numbers, and postal addresses. This practice is long gone. Modern WHOIS/RDAP **does not** store personal user entries except for domain contacts, and those are usually hidden behind privacy services.
@@ -421,7 +421,7 @@ The old NIC templates, FTP servers, and user registration forms no longer exist.
 
 ---
 
-### **4.1 Other Uses of WHOIS**
+### **4.3 Other Uses of WHOIS**
 
 Some organizations still run **local WHOIS servers** to provide directory information about staff, students, or internal systems. These are typically:
 
