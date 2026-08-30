@@ -1,5 +1,9 @@
 # Commercial Services
 
+> "Needless to say, Aristotle did not envisage modern finance."
+> Frederick Copleston, S.J.
+> A History of Philosophy, v.1
+
 Many services can be accessed through the Internet. As time progresses and more outlets for commercial activity appear, once-restricted traffic may now flow freely. Commercial traffic can now flow freely because the **NSFNET Acceptable Use Policy (AUP)** — which once *prohibited* for‑profit activity on the U.S. Internet backbone — lost its force once alternative commercial networks emerged and the NSFNET backbone was retired in 1995. The key shift is that the Internet no longer depended on a single federally subsidized backbone with strict usage rules; instead, multiple private backbones and network access points took over, allowing unrestricted commercial activity.
 
 ---
