@@ -422,3 +422,63 @@ Every Usenet user is **allowed and encouraged** to participate in group creation
 Participation is voluntary, but historically, it has been one of the defining acts of **good net.citizenship**.
 
 ---
+
+## **11 How Usenet Works (Updated)**
+
+Usenet operates through **voluntary cooperation**. Servers exchange articles because administrators choose to share them, not because any central authority requires it. Most feeds are provided out of goodwill and mutual benefit. Some organizations historically charged for feeds (UUNET being the classic example), but money has never been the backbone of Usenet distribution.
+
+Two major transport mechanisms define how articles move:
+
+- **UUCP** — the older, modem‑based, store‑and‑forward system  
+- **NNTP** — the Internet‑based protocol that now carries the vast majority of Usenet traffic
+
+---
+
+### **11.1 UUCP: Store‑and‑Forward Over Modems**
+UUCP was the original transport for Usenet. It worked like this:
+
+- Articles were collected into **batches** on a server.  
+- When a neighbor dialed in — or when the feed site dialed out — those batches were transferred.  
+- Each feed site maintained a list of newsgroups its neighbor wanted.  
+- **C News** introduced batch compression, dramatically reducing transmission time for heavy feeds.
+
+UUCP’s strength was resilience: it worked over unreliable phone lines, across long distances, and between machines with wildly different capabilities. Its weakness was latency — articles could take hours or days to propagate.
+
+---
+
+### **11.2 NNTP: Real‑Time News Over the Internet**
+NNTP changed everything. Designed for TCP/IP networks, NNTP supports multiple modes of operation:
+
+- **Traditional store‑and‑forward** — still available and still used in some environments  
+- **Real‑time streaming** — servers maintain persistent connections and push articles immediately  
+- **High‑volume multiplexing** — dozens of simultaneous incoming and outgoing feeds
+
+Because NNTP runs over the Internet, propagation is typically near‑instantaneous. Modern servers can handle enormous article volumes with minimal delay.
+
+---
+
+### **11.3 Message‑ID: The Heart of Propagation**
+Every Usenet article contains a unique **Message‑ID** header. This identifier is the key to preventing duplication.
+
+When one NNTP server offers an article to another, it says:
+
+> “I have article `<message-id>`.”
+
+The receiving server checks whether it already has that Message‑ID:
+
+- If **not**, it requests the article.  
+- If **yes**, it declines.  
+
+This handshake repeats for every pending article. The result is efficient propagation without flooding the network with duplicates — essential when a site has multiple neighbors.
+
+---
+
+### **11.4 Further Reading**
+For those who want the formal specifications, the foundational documents are:
+
+- **RFC 1036** — *Standard for Interchange of USENET Messages*  
+- **RFC 977** — *Network News Transfer Protocol: A Proposed Standard for the Stream-Based Transmission of News*
+
+These RFCs are authoritative but dry, especially for newcomers. See **RFC retrieval** for information on obtaining them.
+
+Documentation for **C News**, **INN**, and other NNTP implementations provides additional detail on how modern servers handle batching, streaming, expiration, and reliability.
