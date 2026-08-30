@@ -700,7 +700,7 @@ SSH preserves the *function* of Telnet (remote terminal access) but replaces the
 
 ---
 
-### **6.3 — SSH Keypairs and Authentication Methods**
+### **6.3 SSH Keypairs and Authentication Methods**
 
 SSH’s security model is built around strong authentication. While SSH supports several methods, **public‑key authentication** is the modern standard because it eliminates plaintext passwords and provides cryptographic proof of identity. Understanding SSH keypairs is essential for secure remote access, automation, and system administration.
 
