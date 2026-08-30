@@ -155,6 +155,72 @@ AIP’s modern platforms continue the mission of PINET, now offering:
 
 The shift from telnet terminals to web‑based systems reflects the broader evolution of scientific communication—from command‑line access to globally indexed, fully digital research ecosystems.
 
+
+## **Electronic newspapers**  
+Before the web became the dominant medium for digital news, one of the earliest commercial “electronic newspaper” services was **ClariNet Communications**, which delivered professional news feeds directly into Usenet newsgroups. It was a bridge between traditional wire‑service journalism and the emerging Internet culture, using the same message formats and distribution protocols that powered global discussion forums.
+
+---
+
+### 📰 Modern Context  
+Today, real‑time news distribution happens through:
+
+- Web‑native news sites  
+- RSS feeds and push notifications  
+- APIs from major news organizations  
+- Social media streams  
+- Subscription‑based digital publications  
+
+But ClariNet was an early commercial attempt to deliver curated, professional journalism through the infrastructure of the early Internet—long before browsers, mobile apps, or modern syndication tools existed.
+
+---
+
+### 🕰️ Historical Backbone  
+ClariNet operated as an electronic publishing network that delivered **live United Press International (UPI)** wire‑service stories in a format compatible with **Usenet**, the distributed discussion system that dominated early online communities. Users could read a continuously updated “electronic newspaper” directly on their local system, receiving:
+
+- Industry and technology news  
+- Financial updates and stock quotes  
+- Syndicated columns  
+- Sports scores and schedules  
+- General news and feature stories  
+
+ClariNet used the Usenet message interchange format and supported multiple delivery protocols, including **UUCP** and **NNTP**, making it accessible to universities, companies, and early Internet service providers.
+
+The flagship product, **ClariNews**, organized articles into roughly 100 subject‑based newsgroups. Stories were also tagged with keywords and geographic metadata, enabling early forms of topic‑based filtering.
+
+Major ClariNet offerings included:
+
+- **ClariNews General** — a broad news “paper” with daily coverage of news, sports, and features (about 400 stories per day).  
+- **TechWire** — science, technology, and industry‑focused reporting.  
+- **ClariNews‑Biz** — business and financial news.  
+- **Newsbytes** — a daily computer‑industry newsmagazine.  
+- **Syndicated Columns** — including humor from Dave Barry and opinion pieces from Mike Royko.
+
+These services represented one of the first commercial news products delivered over the Internet, blending traditional journalism with early digital distribution.
+
+---
+
+### 🔗 Continuity Into the Present  
+ClariNet’s model foreshadowed many modern digital news practices:
+
+- Topic‑specific feeds  
+- Real‑time wire‑service updates  
+- Syndicated content delivered electronically  
+- Subscription‑based access to curated news streams  
+
+Although ClariNet itself no longer operates in its original form, its approach helped shape the evolution of online news distribution and the integration of professional journalism into Internet infrastructure.
+
+---
+
+### 📬 Historical Contact Information  
+For reference, ClariNet once provided subscription and service information through:
+
+**ClariNet Communications Corp.**  
+124 King St. North  
+Waterloo, Ontario N2J 2X8  
+Email: info@clarinet.com  
+Phone: (800) USE‑NETS  
+Anonymous FTP: `/Clarinet` on `ftp.uu.net`
+
 ---
 
 ## References and further reading
