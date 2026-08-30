@@ -3,7 +3,7 @@
 
 Because the game uses tables and discrete modifiers rather than a single continuous equation, the most precise “formulas” remain those printed on the physical components. The structure is the mathematical skeleton that those tables implement.
 
-## Action-track (轮次轨道) economy.  
+## Action-track (轮次轨道) economy
 Players share a linear track. The first player spends resource/command points $R$ to select an increment $n$ (number of “rounds” advanced that impulse). Task-force movement distance on the Mediterranean hex map is proportional to $n$. The second player may match the same $n$ at zero extra cost or spend additional points to choose $n'>n$ and overtake. Later in a turn the cost of unlocking extra increments rises, so the effective price of one more action declines in cost-effectiveness. Ships still at sea when the track ends the turn are treated as overloaded:
 
 $$
@@ -31,3 +31,30 @@ Two independent supply levels are tracked: British Malta stocks and Italian Nort
 
 ## Command-point (指挥点) allocation 
 Command points are the common currency for (a) advancing the action track, (b) paying “fuel wages” that allow Italian battleships and heavy cruisers to sortie repeatedly, (c) bringing new Royal Navy units from home waters, and (d) adding or removing aircraft from the air pool. The exact point costs and the diminishing-return schedule for extra track increments are printed on the player-aid cards rather than given as a single algebraic formula.
+
+##  Combat Results Table (CRT)
+A Combat Results Table (CRT) is the classic wargame device that turns a comparison of forces plus a die roll into a concrete outcome (sunk, damaged, retreat, no effect, etc.).
+
+In most hex-and-counter games the procedure is:
+
+1. Add attacking and defending combat factors.  
+2. Form an odds ratio (2:1, 3:1 …) or a difference and apply column shifts for weather, air support, surprise, etc.  
+3. Roll one or more dice.  
+4. Cross-index the roll with the odds column to read a result such as DE (defender eliminated), EX (exchange), AR (attacker retreats), or a numbered step-loss.
+
+*A Stick in Throat* does not publish a public CRT of that classic grid form. Instead the designer notes and the published play-through describe two related resolution layers.
+
+### **Surface-action initiative table (主动值)**  
+The game first compares an initiative value assembled from four discrete factors:
+
+- Exposure state (spotted vs. concealed)  
+- Relative combat speed  
+- Weather quality  
+- Presence of air support  
+
+The side with the higher value fires first and at higher intensity. Even an indecisive result still forces both task forces to steam for the nearest friendly port; that movement itself is treated as a combat outcome because it consumes port capacity and readiness.
+
+## **Critical-roll / intensity layer**  
+U-boat and air attacks, and the subsequent gunnery exchange, use “critical rolls.” In the recorded session a German U-boat obtained a critical that disabled a British battleship; later surface fire produced damage but no sinkings. The exact dice columns and modifier lists live on the player-aid cards that ship with the game rather than in any freely posted table.
+
+Because the published material never prints the numbered CRT itself, the only equations that can be stated with certainty are the qualitative ones already given in the designer notes: initiative comparison decides firing order and intensity, and any surface contact—successful or not—triggers a mandatory port-bound retreat that then interacts with the supply and readiness tracks. The precise lookup table that converts those factors into step-losses remains inside the box.
