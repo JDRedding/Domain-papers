@@ -395,7 +395,7 @@ The original CPSR mailing address and contact lines are now archival:
 **Computer Professionals for Social Responsibility**  
 P.O. Box 717  
 Palo Alto, CA 94302  
-cpsr@csli.stanford.edu  
+cpsr @csli.stanford.edu  
 
 Today, CPSR’s archives and publications are preserved by Stanford University and various digital‑rights libraries.
 
