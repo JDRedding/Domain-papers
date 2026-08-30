@@ -752,7 +752,13 @@ TruthSense extracts atomic factual claims from the output and verifies each clai
 A claim passes referential verification only if:
 
 $$
-\text{claim} \;\in\; \text{retrieved\_span} \quad\text{or}\quad \text{KB\_assertion}
+{Grounded}(c)
+\;\iff\;
+\exists\,s\in R(y)\cup K
+\;\text{such that}\;
+s\models c
+\;\text{and}\;
+s\text{ is cited}
 $$
 
 If any claim lacks support, referential verification fails for that claim.  
