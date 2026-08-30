@@ -51,7 +51,7 @@ with **H** the Hilbert space of observables over semantic nodes. FSST therefore 
 | $K_\phi v_i=\lambda_i v_i$ | **Spectral Modes:** Eigenvectors $v_i$ represent persistent semantic modes or conceptual axes; eigenvalues $\lambda_i$ quantify their stability, decay, or amplification over time. High‑magnitude modes dominate semantic evolution and are critical for drift auditing. |
 | $h_{t+1}\approx\hat K_\phi h_t$ | **Latent Dynamics:** Approximates continuous latent‑state transitions using a linearized Koopman operator $\hat K_\phi$. This provides a tractable way to analyze hidden‑state evolution in neural systems and to detect instability or divergence. |
 | $\rho(\hat K_\phi)\le 1$ | **Identity Persistence:** Requires the spectral radius of the lifted operator to remain ≤ 1, ensuring bounded semantic evolution. Violations indicate unstable drift, loss of semantic coherence, or runaway amplification of latent modes. |
-| $\chi(\phi)=1 \iff \mathrm{SCP}(\phi,h)$ [See note] | **Commitment Invariance:** Ensures that a transformation $\phi$ preserves dialogical commitments. The updated state must retain all prior commitments and introduce no contradictions. This is the formal backbone of dialogical guarantees. |
+| $\chi(\phi)=1 \iff \mathrm{SCP}(\phi,h)$ | **Commitment Invariance:** Ensures that a transformation $\phi$ preserves dialogical commitments. The updated state must retain all prior commitments and introduce no contradictions. This is the formal backbone of dialogical guarantees. ***[See note]*** |
 | $L=\sum\|K_\phi(f_i)-f_j\|^2$ | **Semantic Invariance (Vision):** A contrastive loss enforcing that semantically related visual features remain close under operator‑induced transformations. Used in weakly supervised vision to maintain geometric coherence across frames or augmentations. |
 | $\mathrm{Grounded}(c)\iff\exists s\in R(y)\cup K\text{ such that }s\models c\text{ and }s\text{ is cited}$ | **Referential Grounding:** A factual claim $c$ is grounded only if supported by a retrieved span or knowledge‑base assertion $s$, and the system explicitly cites that support. This is the core of referential guarantees. |
 | $\Gamma_t\cup\{\text{output}\}\not\models\bot$ | **Dialogical Verification:** Ensures the generated output does not contradict the current commitment set $\Gamma_t$. Any contradiction triggers guarantee withdrawal and requires revision or quarantine. |
@@ -59,7 +59,8 @@ with **H** the Hilbert space of observables over semantic nodes. FSST therefore 
 | $S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}$ | **Aggregate Verification Score:** Computes a weighted semantic‑verification score combining referential grounding, dialogical consistency, spectral stability, and geometric drift. The weights $\alpha,\beta,\gamma,\delta$ determine the relative influence of each channel. |
 | $\text{emit}\iff S_{\mathrm{ground}}\ge\tau_g\wedge S_{\mathrm{consist}}\ge\tau_c\wedge S_{\mathrm{sem}}\ge\tau$ | **Decision Rule:** Hard‑gate emission logic. An output is emitted only if grounding, consistency, and aggregate semantic score all exceed their respective thresholds. Failure in any channel results in rejection, revision, or quarantine. |
 
-* Note: $\chi(\phi)=1$ iff<br>$\Gamma(\phi(h))\supseteq\Gamma(h)$ and<br>$\Gamma(\phi(h)\not\models\bot$
+Note: A step ϕ\phi\phi passes SCP when it keeps every prior commitment and the updated commitment set stays consistent.
+$\chi(\phi)=1$ iff<br>$\Gamma(\phi(h))\supseteq\Gamma(h)$ and<br>$\Gamma(\phi(h)\not\models\bot$
 
 ---
 
