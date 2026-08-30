@@ -866,9 +866,9 @@ TruthSense *reduces* unsupported and contradictory outputs by failing $\{Grounde
 ## Functions
 
 
-1. **Unsupported-claim filter.** Fail any extracted claim \(c\) with \(\operatorname{Grounded}(c)=\bot\).
-2. **Commitment monitor.** Fail if \(\Gamma_t\cup C(y)\models\bot\); log and quarantine.
-3. **Drift audit.** Compare \(D_{\mathrm{rw}}\), \(\kappa_{\mathrm{OR}}\), \(B_t\) to pre-registered \(T_D\).
+1. **Unsupported-claim filter.** Fail any extracted claim $c$ with $\operatorname{Grounded}(c)=\bot$.
+2. **Commitment monitor.** Fail if $\Gamma_t\cup C(y)\models\bot$; log and quarantine.
+3. **Drift audit.** Compare $D_{\mathrm{rw}}$, $\kappa_{\mathrm{OR}}$, $B_t$ to pre-registered $T_D$.
 4. **Score.**
 
 $$
