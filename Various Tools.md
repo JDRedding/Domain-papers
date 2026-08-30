@@ -1461,7 +1461,7 @@ IRC is no longer mainstream, but it remains a living part of Internet history.
 
 
 ## **13. MUDs (Multi‑User Dungeons)**  
-*(The last major interactive tool of the pre‑Web era)*
+*The last major interactive tool of the pre‑Web era*
 
 Before MMORPGs, before graphical virtual worlds, and even before most real‑time chat systems, the early Internet had **MUDs** — text‑based multi‑user virtual environments. They were part game, part social space, part programming platform, and part cultural phenomenon.
 
