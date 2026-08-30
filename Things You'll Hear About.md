@@ -41,7 +41,7 @@ Below is a structured breakdown of what those topics typically include, some old
 
 ### 🧭 Everyday Tools 
 
-- **Web Browsers** — Web browsers serve as gateways to websites, each with unique features in performance, security, and user experience. Each browser serves the fundamental role of connecting users to websites while differentiating itself through performance, privacy, extensions, and ecosystem integration. Users often choose based on device, usage needs, and preferences for speed versus privacy. Chrome, Firefox, Safari, Edge; your gateway to websites. Chrome, Firefox, Safari, and Edge are leading web browser (~2026).
+- **Web Browsers** — Web browsers serve as gateways to websites, each with unique features in performance, security, and user experience. Each browser serves the fundamental role of connecting users to websites while differentiating itself through performance, privacy, extensions, and ecosystem integration. Users often choose based on device, usage needs, and preferences for speed versus privacy. Chrome, Firefox, Safari, and Edge are leading web browser (~2026).
 - **Email** — One of the first apps most people learn; uses SMTP and IMAP/POP.  
 - **Search Engines** — Google, DuckDuckGo, Bing; how you find information.  
 - **Social Media** — Platforms for communication and sharing.  
