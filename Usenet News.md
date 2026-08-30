@@ -532,3 +532,102 @@ This dramatically reduces administrative overhead.
 
 #### **Unified discussion spaces**  
 Gateways allow mailing list participants and Usenet users to share a single conversation, even though they use different tools. It’s a bridge between two cultures — email‑centric and Usenet‑centric — without forcing either to change.
+
+---
+
+## **13 Usenet Netiquette**  
+Usenet has accumulated a long tradition of norms collectively known as **netiquette** — the informal rules of polite, considerate participation. Following these guidelines won’t just make you a better net citizen; it will make your posts easier to read and your presence more welcome.
+
+---
+
+### **13.1 Signatures**
+
+A **signature** (often `.signature` on Unix systems) is a small block of text appended to the end of your posts. Traditionally, it contains:
+
+- your name  
+- your email address  
+- optional contact information  
+
+Over time, signatures became a form of digital graffiti: song lyrics, ASCII art, philosophical quotes, jokes, and occasionally advertisements. The last of these is a bad idea — advertising in your signature is almost guaranteed to get you flamed until you remove it.
+
+**The rule:**  
+**Keep signatures short — four lines maximum.**
+
+Long signatures waste bandwidth, clutter discussions, and irritate readers. Elaborate ASCII drawings, multi‑line slogans, and giant “artistic” sigs are not charming; they’re noise.
+
+If you forget to include your signature, don’t repost your article just to add it. The content matters; the sig doesn’t.
+
+---
+
+### **13.2 Posting Personal Messages**
+
+If email to someone bounces, **do not** post your personal message to a newsgroup. Even if the person reads that group, everyone else does not care about your private note to Jim Morrison.
+
+Instead:
+
+- wait until the person posts again and verify their address  
+- check with your local administrator about mail delivery issues  
+- consider that their site may simply be down  
+
+Posting personal mail publicly is inconsiderate and unnecessary.
+
+---
+
+### **13.3 Posting Mail**
+
+Email is private.  
+Posting someone else’s email to Usenet without explicit permission is considered extremely bad taste.
+
+Legal debates aside, the cultural rule is simple:
+
+> Treat email like physical mail — private unless the sender says otherwise.
+
+If someone gives permission to quote their mail, you may do so. Otherwise, don’t.
+
+---
+
+### **13.4 Test Messages**
+
+New users often want to test their posting setup before joining discussions. Unfortunately, many test their systems by posting to normal groups like `news.admin` or `comp.mail.misc`. This is a major netiquette violation.
+
+Usenet has dedicated **test groups** for this purpose:
+
+- **alt.test**  
+- **gnu.gnusenet.test**  
+- **misc.test**  
+
+Many of these groups generate automatic replies so you can confirm your post propagated correctly. Some experienced users also monitor test groups and respond manually to help newcomers.
+
+Regional hierarchies often have local test groups as well (e.g., `phl.test` in Philadelphia).
+
+**Test freely — but test in the right place.**
+
+---
+
+### **13.5 Famous People Appearing**
+
+Occasionally someone claims a celebrity is posting on Usenet, or a forged article appears purporting to be from a famous person. These hoaxes are common. One well‑known example involved forged posts from Steven Spielberg that caused chaos in `rec.arts.movies`.
+
+While a few notable people do use Usenet, the overwhelming majority of posters are ordinary users. Treat any supposed celebrity appearance with skepticism.
+
+If it looks too good to be true, it probably is.
+
+---
+
+### **13.6 Summaries**
+
+Sometimes an author asks readers to **reply by email** and promises to post a **summary** later. If someone requests mail replies:
+
+- **send mail**, not followups  
+- don’t clutter the group with responses meant only for the author  
+
+When creating a summary:
+
+- edit responses into a coherent, readable digest  
+- avoid dumping raw, unedited messages  
+- include only essential information  
+- respect anonymity requests (e.g., “Address withheld by request”)  
+
+A good summary is a service to the entire group. A bad one is just another pile of noise.
+
+---
