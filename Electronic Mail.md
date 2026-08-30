@@ -304,6 +304,132 @@ Listserv‑style systems are now common on Unix/Linux servers and cloud platform
 
 ---
 
+# **📐 2.3 The Cognitive Layer (Attention, Priority, and User Intent)**
+
+Modern email systems don’t just deliver messages — they **interpret** them.
+
+This layer is responsible for managing the user’s cognitive load:
+
+- **Priority inference**  
+  Systems like Gmail’s *Priority Inbox* and Outlook’s *Focused Inbox* classify messages based on sender reputation, user behavior, and content signals.
+
+- **Threading and conversation grouping**  
+  Email is no longer a flat list; it’s a structured conversation graph.
+
+- **Automated triage**  
+  Systems detect invoices, travel itineraries, receipts, promotions, social updates, and security alerts.
+
+- **Intent detection**  
+  Clients warn you if you mention an attachment but forget to include one.
+
+- **Nudges and reminders**  
+  “You haven’t replied to this message.”  
+  “You might want to follow up.”
+
+This layer transforms email from a raw transport mechanism into a **cognitive assistant**.
+
+---
+
+# **🔐 2.4 The Trust & Identity Layer (SPF, DKIM, DMARC, ARC, BIMI)**
+
+1990s email assumed every sender was legitimate.  
+2020s email assumes **nothing**.
+
+This layer verifies identity and enforces trust:
+
+- **SPF** — proves the sending IP is authorized  
+- **DKIM** — cryptographically signs messages  
+- **DMARC** — defines policy for failures  
+- **ARC** — preserves authentication results across forwarding  
+- **BIMI** — displays verified brand logos for authenticated senders
+
+Together, these systems determine:
+
+- whether a message is delivered  
+- whether it goes to spam  
+- whether it is rejected  
+- whether it is flagged as suspicious  
+- whether the sender’s domain gains or loses reputation
+
+This layer is the backbone of modern deliverability.
+
+---
+
+# **🛡️ 2.5 The Anti‑Abuse Layer (Phishing, Malware, Reputation, Sandboxing)**
+
+Email is the #1 attack vector on the Internet.  
+Modern systems deploy a multi‑stage defense pipeline:
+
+- **Phishing heuristics**  
+  Detect suspicious language, impersonation attempts, and deceptive URLs.
+
+- **Malware scanning**  
+  Every attachment is scanned; many are sandboxed.
+
+- **URL reputation systems**  
+  Links are checked against global threat databases.
+
+- **Sender reputation scoring**  
+  Domains and IPs accumulate trust or distrust based on behavior.
+
+- **Outbound spam detection**  
+  Prevents compromised accounts from harming domain reputation.
+
+- **Behavioral anomaly detection**  
+  Flags unusual sending patterns, login locations, or message volumes.
+
+This layer is why modern email is usable at all — without it, inboxes would drown in malicious traffic.
+
+---
+
+# **☁️ 2.6 The Cloud Storage & Synchronization Layer (IMAP IDLE, ActiveSync, Indexing)**
+
+Email used to live in a single file on a single machine.  
+Now it lives in **globally replicated cloud storage**.
+
+Key components:
+
+- **Distributed object storage**  
+  Messages are stored redundantly across datacenters.
+
+- **Real‑time synchronization**  
+  IMAP IDLE, ActiveSync, and proprietary push systems keep devices in sync.
+
+- **Full‑text indexing**  
+  Search is instant, even across millions of messages.
+
+- **Attachment deduplication**  
+  Large attachments are stored once and referenced many times.
+
+- **Cross‑device state**  
+  Read/unread, flags, folders, and labels sync instantly.
+
+This layer makes email feel seamless across phones, laptops, tablets, and browsers.
+
+---
+
+# **📱 2.7 The Multi‑Device UX Layer (Notifications, Integration, Identity)**
+
+Email is now part of a broader ecosystem:
+
+- **Mobile‑first clients**  
+  Notifications, swipe actions, quick replies.
+
+- **Calendar integration**  
+  Automatic event extraction and scheduling.
+
+- **Contact integration**  
+  Unified identity across devices.
+
+- **Cloud attachment integration**  
+  OneDrive, Google Drive, iCloud — attachments are often links, not files.
+
+- **OAuth and SSO authentication**  
+  Passwords are no longer the primary login method.
+
+This layer defines how users *experience* email, not just how it is delivered.
+
+
 # **📡 1990s Email vs 2020s Email — Side‑by‑Side**
 
 ## **High‑Level Summary**
@@ -434,5 +560,3 @@ Email went from “trust everything” to “trust nothing.”
 - Huge storage
 - Instant search
 - Cloud attachments
-
-
