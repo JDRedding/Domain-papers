@@ -514,7 +514,7 @@ Information about the GNU Project, current tasks, and ways to contribute can be 
 
 The **League for Programming Freedom** (LPF) was a grassroots organization founded in **1989** by programmers, academics, and software users concerned about the growing use of software patents and interface copyrights. LPF argued that these legal trends threatened the freedom to write software, stifled innovation, and undermined the collaborative nature of computing.
 
-Although LPF is no longer active, its work helped shape modern debates about software patents, interoperability, and user rights — issues that remain central in 2026.
+Although LPF is no longer active, its work helped shape modern debates about software patents, interoperability, and user rights — issues that remain central.
 
 #### 🎯 Mission and Focus Areas  
 LPF’s mission centered on protecting the ability of programmers to create new software without fear of litigation. Their core concerns included:
