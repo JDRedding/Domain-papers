@@ -1,5 +1,9 @@
 # Telnet and SSH 
 
+> "My consciousness suddenly switched locations, for the first time in my life,
+> from the vicinity of my head and body to a point about twenty feet away from where I normally see the world."
+> Howard Rheingold, Virtual Reality
+
 One of the earliest and most influential remote‑access protocols in networking. This description captures its original appeal: it let someone sitting at one machine *become* a terminal on another machine, across the street or across the country. The deeper picture is even more interesting — and it explains both Telnet’s historical importance and why it’s mostly obsolete today. Telnet is historically important, but SSH is the modern backbone of secure remote access. 
 
     Telnet = historical foundation
