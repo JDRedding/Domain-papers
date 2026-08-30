@@ -1,0 +1,34 @@
+# A Stick in Throat (如鲠在喉)
+
+Several interlocking operational systems, but no release the full Combat Results Tables, exact modifier tables, or closed-form equations from the rulebook. The mathematics that is public is therefore the structure of those systems rather than every coefficient.
+
+Because the game uses tables and discrete modifiers rather than a single continuous equation, the most precise “formulas” remain those printed on the physical components. The structure is the mathematical skeleton that those tables implement.
+
+## Action-track (轮次轨道) economy.  
+Players share a linear track. The first player spends resource/command points $R$ to select an increment $n$ (number of “rounds” advanced that impulse). Task-force movement distance on the Mediterranean hex map is proportional to $n$. The second player may match the same $n$ at zero extra cost or spend additional points to choose $n'>n$ and overtake. Later in a turn the cost of unlocking extra increments rises, so the effective price of one more action declines in cost-effectiveness. Ships still at sea when the track ends the turn are treated as overloaded:
+
+$$
+\text{Readiness}{t+1} = \text{Readiness}_t - P{\text{overload}}
+$$
+
+where $P_{\text{overload}}$ is a readiness penalty applied until the force returns to port.
+
+## Surface-battle initiative (主动值).  
+The designer explicitly compares an initiative value assembled from four factors:
+
+$$
+I = f(E,\, V_{\text{combat}},\, W,\, A)
+$$
+
+$E$: exposure state (concealed vs. spotted)  
+$V_{\text{combat}}$: relative combat speed  
+$W$: weather quality  
+$A$: air-support availability (“Rulai”)
+
+The side with the higher $I$ fires first and at higher intensity. Even an indecisive result forces both task forces to the nearest friendly port, which immediately reduces that port’s remaining logistical capacity and can strain the Malta or North-Africa supply track.
+
+## Supply accounting
+Two independent supply levels are tracked: British Malta stocks and Italian North-Africa stocks. Convoy success, air attack, and the arrival of damaged ships all increment or decrement those tracks. Port capacity itself is a scarce resource; a force that is forced into a port already near its limit further reduces the number of ships that can sortie next turn.
+
+## Command-point (指挥点) allocation 
+Command points are the common currency for (a) advancing the action track, (b) paying “fuel wages” that allow Italian battleships and heavy cruisers to sortie repeatedly, (c) bringing new Royal Navy units from home waters, and (d) adding or removing aircraft from the air pool. The exact point costs and the diminishing-return schedule for extra track increments are printed on the player-aid cards rather than given as a single algebraic formula.
