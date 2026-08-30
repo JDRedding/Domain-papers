@@ -729,7 +729,7 @@ While the IRG itself is gone, its role has been replaced by a wide ecosystem of 
 These platforms collectively serve the same purpose the IRG once did—helping users find the resources they need to do their work.
 
 #### 📬 Historical Access  
-The original IRG was distributed electronically via email and anonymous FTP from **nnsc.nsf.net**. Mailing lists such as *resource-guide-request@nnsc.nsf.net* notified users of updates.
+The original IRG was distributed electronically via email and anonymous FTP from **nnsc.nsf.net**. Mailing lists such as *resource-guide-request @nnsc.nsf.net* notified users of updates.
 
 These systems are now historical artifacts, preserved in Internet history archives and NSF documentation collections.
 
