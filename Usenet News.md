@@ -482,3 +482,53 @@ For those who want the formal specifications, the foundational documents are:
 These RFCs are authoritative but dry, especially for newcomers. See **RFC retrieval** for information on obtaining them.
 
 Documentation for **C News**, **INN**, and other NNTP implementations provides additional detail on how modern servers handle batching, streaming, expiration, and reliability.
+
+---
+
+## **4.12 Mail Gateways**
+
+A natural evolution of online communication was the merging of **Usenet newsgroups** and **electronic mailing lists**. This integration produced what are known as **mail gateways** — systems that allow mailing list traffic and newsgroup traffic to flow between each other.
+
+Mail gateways work in two primary directions:
+
+#### **Mailing list → Newsgroup**  
+Many mailing lists “reflect” their messages into a corresponding newsgroup.  
+When someone sends a message to the mailing list:
+
+- the list distributes it to its subscribers  
+- **and** the gateway posts the same message into the associated newsgroup
+
+This allows anyone with access to the newsgroup to read the list’s content without subscribing to the mailing list directly.
+
+#### **Newsgroup → Mailing list**  
+Gateways can also send newsgroup posts back into a mailing list:
+
+- either to the list’s moderator  
+- or to the entire mailing list readership
+
+This keeps both communities synchronized, even if they use different communication tools.
+
+Classic examples include:
+
+- **comp.risks** — gateway for the *Risks Digest*  
+- **comp.dcom.telecom** — gateway for the *Telecom Digest*
+
+---
+
+### **Why Gateways Existed**
+Mail gateways solve several practical problems:
+
+#### **Reduced duplication**  
+Instead of delivering the same message individually to dozens or hundreds of users at a single site, the gateway posts it once to a newsgroup. Anyone at that site can read it without generating extra mail traffic.
+
+#### **Lower maintenance**  
+Mailing list moderators no longer need to constantly add or remove subscribers.  
+Users simply:
+
+- read the newsgroup if they want the content  
+- ignore it if they don’t
+
+This dramatically reduces administrative overhead.
+
+#### **Unified discussion spaces**  
+Gateways allow mailing list participants and Usenet users to share a single conversation, even though they use different tools. It’s a bridge between two cultures — email‑centric and Usenet‑centric — without forcing either to change.
