@@ -170,4 +170,15 @@ Anonymous FTP **is not obsolete** — it’s simply specialized. Modern anonymou
 | Compliance | Not for regulated data | Meets standards |
 | Ease of use | Simple, scriptable | Feature‑rich |
 
+Here’s a tighter, clearer rewrite that keeps the intent but reads cleaner and more modern:
+
+---
+
+### 3.1 FTP Etiquette
+
+The Internet exists so people can get real work done. Every system and network link is supporting someone’s research, development, or operational tasks. Heavy activity consumes shared resources, and that load reduces overall performance for everyone.
+
+An FTP session can place noticeable strain on a site and its network connection. The basic rule: any additional traffic you generate reduces that site’s capacity to serve its own users. To minimize disruption, schedule large FTP transfers outside the site’s normal business hours—ideally late at night. A multi‑megabyte download at 2 a.m. is far less intrusive than the same transfer at 2 p.m.
+
+Also keep time zones in mind. If it’s after dinner in Maine, it may still be mid‑afternoon in California. Base your timing on the local time of the site you’re connecting to, not your own.
 
