@@ -695,3 +695,110 @@ Telnet’s architecture was simple:
 SSH preserves the *function* of Telnet (remote terminal access) but replaces the *mechanics* with a secure, extensible, cryptographically protected system.
 
 ---
+
+### **6.3 — SSH Keypairs and Authentication Methods**
+
+SSH’s security model is built around strong authentication. While SSH supports several methods, **public‑key authentication** is the modern standard because it eliminates plaintext passwords and provides cryptographic proof of identity. Understanding SSH keypairs is essential for secure remote access, automation, and system administration.
+
+---
+
+#### **6.3.1 Public‑Key Authentication Overview**
+
+Public‑key authentication uses a **keypair**:
+
+- A **private key** — kept securely on the client  
+- A **public key** — stored on the server in `~/.ssh/authorized_keys`  
+
+The private key never leaves the client machine. During authentication, the server challenges the client, and only the private key can produce the correct cryptographic response. This proves identity without transmitting any secret over the network.
+
+This method is far more secure than passwords and is the foundation of modern SSH usage.
+
+---
+
+#### **6.3.2 SSH Keypair Types**
+
+SSH supports several key algorithms, each with different strengths:
+
+- **RSA** — widely supported, long‑standing default  
+- **ECDSA** — efficient elliptic‑curve algorithm  
+- **Ed25519** — modern, fast, secure, and recommended  
+- **DSA** — deprecated and no longer recommended  
+
+Most modern systems default to **Ed25519** because it provides strong security with small key sizes and fast operations.
+
+---
+
+#### **6.3.3 Generating SSH Keys**
+
+Keypairs are typically generated using:
+
+```
+ssh-keygen -t ed25519
+```
+
+This creates:
+
+- A private key (e.g., `id_ed25519`)  
+- A public key (e.g., `id_ed25519.pub`)  
+
+The public key is copied to the server using:
+
+```
+ssh-copy-id user@host
+```
+
+or manually appended to:
+
+```
+~/.ssh/authorized_keys
+```
+
+Once installed, the user can log in without a password.
+
+---
+
+#### **6.3.4 Passphrases and Key Security**
+
+SSH private keys can be protected with a **passphrase**, adding a second layer of security. Even if the private key file is stolen, the attacker cannot use it without the passphrase.
+
+Key security best practices include:
+
+- Using passphrases for sensitive environments  
+- Storing keys with correct permissions (`chmod 600`)  
+- Using hardware tokens or smartcards for high‑security deployments  
+- Avoiding shared private keys across multiple machines  
+
+---
+
+#### **6.3.5 Agent Forwarding**
+
+SSH agents store decrypted private keys in memory so users don’t need to re‑enter passphrases repeatedly. Agent forwarding allows a remote machine to use the local agent for authentication without copying private keys to the remote system.
+
+This is powerful but must be used carefully — forwarding should only be enabled on trusted hosts.
+
+---
+
+#### **6.3.6 Other Authentication Methods**
+
+Although public‑key authentication is dominant, SSH supports additional methods:
+
+- **Password authentication** — simple but vulnerable  
+- **Keyboard‑interactive** — used for multi‑factor systems  
+- **Host‑based authentication** — used in controlled clusters  
+- **Certificate‑based authentication** — used in enterprise environments  
+
+These methods exist for compatibility, but public‑key authentication remains the recommended default.
+
+---
+
+#### **6.3.7 Why Keypairs Matter**
+
+Keypairs solve the fundamental security problems that made Telnet unsafe:
+
+- No plaintext passwords  
+- No reusable secrets sent over the network  
+- Strong cryptographic identity  
+- Support for automation without exposing credentials  
+- Compatibility with modern security policies and compliance standards  
+
+SSH keypairs are the backbone of secure remote access in cloud computing, DevOps pipelines, and modern infrastructure.
