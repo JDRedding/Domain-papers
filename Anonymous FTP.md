@@ -89,7 +89,8 @@ Modern file sharing systems provide encrypted, identity‑aware, feature‑rich 
 
 # **Anonymous FTP vs modern file sharing**  
 **Modern anonymous FTP still exists**: current FTP daemons (vsftpd, Pure‑FTPd, ProFTPD) still support anonymous login, but it is now *restricted, chrooted, rate‑limited, and often paired with TLS (FTPS)*. It remains a simple way to publish world‑readable files without accounts.  
-Modern file sharing systems (HTTPS, SFTP, cloud storage) provide encrypted, browser‑native, identity‑integrated access with far more features and reliability.
+
+Modern file sharing systems (HTTPS, SFTP, cloud storage) provide encrypted, browser‑native, identity‑integrated access with differnet features and reliability.
 
 ---
 
