@@ -3679,3 +3679,253 @@ command from the client’s perspective.
 
 ---
 
+Here is **Appendix B — SSH Command Reference**, written in clean, structured ASCII‑friendly format and aligned with your analytical style. Guided Links are embedded naturally so you can jump deeper into any topic.
+
+---
+
+## **Appendix B — SSH Command Reference**
+
+This reference is designed as a fast, high‑signal lookup table for real-world SSH usage. Commands are grouped by workflow: connection, authentication, tunneling, file transfer, configuration, debugging, and key management.
+
+---
+
+### **B.1 Basic SSH Connections**
+
+```
+ssh user@host
+ssh -p 2222 user@host
+ssh host            # Uses default username
+```
+
+- Standard login  
+- Non-default port  
+- Username inferred from local user  
+
+---
+
+### **B.2 Running Remote Commands**
+
+```
+ssh user@host "uptime"
+ssh user@host "df -h"
+ssh user@host "systemctl status nginx"
+```
+
+Non-interactive execution is essential for automation.
+
+---
+
+### **B.3 SSH Key Management**
+
+#### Generate keys
+```
+ssh-keygen -t ed25519
+ssh-keygen -t rsa -b 4096
+```
+
+#### Install public key on server
+```
+ssh-copy-id user@host
+```
+
+#### Add key to agent
+```
+ssh-add ~/.ssh/id_ed25519
+```
+
+#### List keys in agent
+```
+ssh-add -l
+```
+
+---
+
+### **B.4 SSH Agent Forwarding**
+
+```
+ssh -A user@host
+```
+
+Use sparingly; only on trusted hosts.
+
+---
+
+### **B.5 Port Forwarding & Tunneling**
+
+#### Local port forwarding (remote → local)
+```
+ssh -L 8080:localhost:80 user@host
+```
+
+#### Remote port forwarding (local → remote)
+```
+ssh -R 9000:localhost:3000 user@host
+```
+
+#### Dynamic forwarding (SOCKS proxy)
+```
+ssh -D 1080 user@host
+```
+
+---
+
+### **B.6 SSH Multiplexing (ControlMaster)**
+
+Start multiplexed connection:
+```
+ssh -o ControlMaster=auto \
+    -o ControlPath=~/.ssh/cm-%r@%h:%p \
+    -o ControlPersist=10m user@host
+```
+
+Subsequent connections reuse the same TCP session.
+
+---
+
+### **B.7 Jump Hosts (ProxyJump)**
+
+```
+ssh -J bastion.example.com user@internal.example.com
+```
+
+Or via config:
+```
+Host internal
+    ProxyJump bastion.example.com
+```
+
+---
+
+### **B.8 SFTP (Secure File Transfer)**
+
+Start SFTP session:
+```
+sftp user@host
+```
+
+Common commands:
+```
+put file.txt
+get file.txt
+ls
+cd
+mkdir
+rm
+```
+
+---
+
+### **B.9 SCP (Secure Copy)**
+
+Upload:
+```
+scp file.txt user@host:/path/
+```
+
+Download:
+```
+scp user@host:/path/file.txt .
+```
+
+Recursive:
+```
+scp -r project/ user@host:/srv/
+```
+
+---
+
+### **B.10 SSHFS (Mount Remote Filesystem)**
+
+```
+sshfs user@host:/srv/data /mnt/data
+```
+
+---
+
+### **B.11 Server Management Commands**
+
+Restart SSH server:
+```
+sudo systemctl restart sshd
+```
+
+Check status:
+```
+sudo systemctl status sshd
+```
+
+Reload config:
+```
+sudo systemctl reload sshd
+```
+
+---
+
+### **B.12 Debugging & Verbose Mode**
+
+```
+ssh -v user@host
+ssh -vv user@host
+ssh -vvv user@host
+```
+
+Verbose output reveals:
+
+- Key selection  
+- Authentication failures  
+- Algorithm negotiation  
+- Tunnel setup  
+
+---
+
+### **B.13 Managing Known Hosts**
+
+Remove outdated host key:
+```
+ssh-keygen -R host.example.com
+```
+
+Manually add host key:
+```
+ssh-keyscan host.example.com >> ~/.ssh/known_hosts
+```
+
+---
+
+### **B.14 Forced Commands (authorized_keys)**
+
+Restrict a key to a single command:
+```
+command="/usr/local/bin/backup.sh" ssh-ed25519 AAAA...
+```
+
+---
+
+### **B.15 Useful SSH Options**
+
+```
+-o IdentitiesOnly=yes
+-o ServerAliveInterval=30
+-o ServerAliveCountMax=3
+-o StrictHostKeyChecking=yes
+-o UserKnownHostsFile=/dev/null
+```
+
+---
+
+### **B.16 Quick Reference Table**
+
+| Workflow | Command |
+|---------|---------|
+| Login | `ssh user@host` |
+| Remote command | `ssh user@host "cmd"` |
+| Copy file | `scp file user@host:/path` |
+| SFTP | `sftp user@host` |
+| Local forward | `ssh -L L:R:H user@host` |
+| Remote forward | `ssh -R R:L:H user@host` |
+| SOCKS proxy | `ssh -D 1080 user@host` |
+| Jump host | `ssh -J bastion host` |
+| Debug | `ssh -vvv user@host` |
+
+---
+
