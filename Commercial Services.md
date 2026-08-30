@@ -862,7 +862,7 @@ But in the early 1990s, none of this existed. Hosting was primitive, expensive, 
 
 ---
 
-### 🕰️ Historical Backbone (Preserved and Modernized)
+### 🕰️ Historical Backbone
 
 Early commercial web hosting typically included:
 
