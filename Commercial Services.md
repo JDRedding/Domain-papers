@@ -1256,6 +1256,165 @@ Today, commercial security is a massive industry — but its roots lie in these 
 
 ---
 
+## 🛡️ Early Commercial Network Security & Access Control Services  
+
+Companies sold **network access control, monitoring, and protection** as soon as businesses started connecting private systems to the Internet. This is distinct from encryption — this section covers the commercial services that controlled *who* could access a network, *how* they authenticated, and *how* traffic was monitored or filtered. This was the beginning of what we now call **network security**, **identity management**, and **access control**.
+
+---
+
+### 🌐 Modern Context  
+Today, network access control is handled through:
+
+- Zero‑trust identity systems  
+- Cloud IAM platforms  
+- Enterprise firewalls  
+- SSO and MFA systems  
+- VPNs and secure gateways  
+- Endpoint management tools  
+- Intrusion detection and prevention systems  
+
+But in the late 1980s and early 1990s, none of this existed. Businesses were just beginning to connect internal networks to the Internet, and they needed commercial tools to manage access, authenticate users, and protect systems from unauthorized connections.
+
+---
+
+### 🕰️ Historical Backbone 
+
+Early commercial network security and access control services included several major categories:
+
+---
+
+### **1. Commercial Authentication Systems**  
+Before modern identity platforms, companies sold authentication tools that controlled access to corporate networks:
+
+- **RSA SecurID** — One of the earliest two‑factor authentication systems, using time‑based tokens.  
+- **Smart card authentication systems** — Used by banks, government agencies, and large enterprises.  
+- **Kerberos commercial implementations** — Sold by vendors who packaged MIT’s Kerberos with enterprise support.  
+- **Proprietary login gateways** — Used by companies to secure dial‑up access and early TCP/IP connections.
+
+These systems provided:
+
+- Centralized identity management  
+- Access control lists  
+- Audit logs  
+- Multi‑factor authentication (primitive but effective)  
+
+They were essential for companies that needed secure remote access long before VPNs existed.
+
+---
+
+### **2. Early Network Gateways & Access Control Appliances**  
+Before firewalls became mainstream, companies sold hardware and software gateways that controlled:
+
+- Who could dial into a network  
+- Which hosts could connect via TCP/IP  
+- Which services were exposed externally  
+- How traffic was filtered  
+
+Examples included:
+
+- **TIS FWTK (Firewall Toolkit)** — A commercial‑supported toolkit for building secure gateways.  
+- **Raptor Systems gateways** — Early proxy‑based access control systems.  
+- **Cisco’s early access control lists (ACLs)** — Sold as part of commercial router packages.  
+- **X.25 PAD gateways** — Used to control access to corporate networks via packet‑switched services.
+
+These systems were the ancestors of modern firewalls and secure edge devices.
+
+---
+
+### **3. Commercial Intrusion Detection (Early Generation)**  
+Before IDS/IPS systems existed, companies sold:
+
+- Network monitoring tools  
+- Log‑analysis systems  
+- Early anomaly‑detection software  
+- Host‑based security monitors  
+
+Vendors included:
+
+- **ISS (Internet Security Systems)** — One of the first companies to commercialize intrusion detection.  
+- **Axent Technologies** — Sold early host‑based monitoring tools.  
+- **TIS** — Provided early network monitoring solutions.
+
+These tools were primitive by modern standards but represented the first commercial attempts to detect unauthorized access.
+
+---
+
+### **4. Secure Remote Access Services (Pre‑VPN)**  
+Before VPNs, companies used:
+
+- Encrypted dial‑up gateways  
+- Secure terminal servers  
+- Proprietary remote‑access systems  
+- Leased lines with encryption modules  
+
+Commercial vendors sold:
+
+- Hardware encryption boxes  
+- Secure modems  
+- Authentication servers  
+- Access‑control routers  
+
+These systems were used by:
+
+- Banks  
+- Government contractors  
+- Multinational corporations  
+- Universities with sensitive research networks
+
+They were the direct ancestors of modern VPNs and remote‑access platforms.
+
+---
+
+### **5. Commercial Network Policy & Compliance Tools**  
+Even in the early 1990s, companies needed tools to enforce:
+
+- Password policies  
+- Access restrictions  
+- Logging requirements  
+- Account management  
+- Compliance with internal security rules  
+
+Vendors sold:
+
+- Policy‑enforcement toolkits  
+- Centralized password systems  
+- Account‑management servers  
+- Audit‑logging systems  
+
+These were early forms of what we now call **IAM** and **policy orchestration**.
+
+---
+
+### 💼 Why These Services Were Commercial  
+Network access control was a paid service because:
+
+- Businesses needed secure remote access  
+- Internal networks were becoming Internet‑connected  
+- Authentication required specialized hardware  
+- Monitoring required dedicated software  
+- Compliance required commercial support  
+- Security expertise was rare and expensive  
+
+These services were among the first commercial cybersecurity offerings.
+
+---
+
+### 🔗 Transition to the Modern Era  
+By the mid‑1990s:
+
+- Firewalls became standard  
+- VPNs replaced secure dial‑up  
+- Directory services (LDAP, Active Directory) centralized identity  
+- IDS/IPS systems matured  
+- SSL/TLS secured web traffic  
+- Enterprise security became a dedicated industry  
+
+Today, network access control is a massive commercial sector — but its roots lie in these early tools that protected corporate networks before the web was secure.
+
+---
+
+
+
 ---
 
 ## References and further reading
