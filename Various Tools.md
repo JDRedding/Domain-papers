@@ -155,3 +155,92 @@ Today, Finger survives mostly as a historical curiosity or a local convenience t
 
 ---
 
+## **2. Ping**
+
+The **ping** command is a basic network diagnostic tool used to check whether a remote host is reachable and to measure round‑trip latency. It works by sending **ICMP Echo Request** packets and waiting for **ICMP Echo Reply** packets.
+
+Ping sends ICMP Echo Requests to test reachability and measure latency. It remains one of the simplest and most reliable network diagnostics, though many hosts now rate-limit or block ICMP for security reasons. Use a small number of packets to check basic connectivity and round-trip performance.
+
+On most systems, the general form is:
+
+```
+ping hostname
+```
+
+This tells you whether the remote system is reachable and provides timing information for each response.
+
+---
+
+### **Basic Reachability Test**
+
+Example:
+
+```
+ping cs.example.edu
+```
+
+If the host responds, you’ll see a stream of replies showing:
+
+- packet size  
+- sequence number  
+- TTL (time‑to‑live)  
+- round‑trip time  
+
+---
+
+### **Timing and Statistics**
+
+Most implementations send packets continuously until interrupted with `Ctrl‑C`. A typical output looks like:
+
+```
+PING cs.example.edu (203.0.113.42): 56 data bytes
+64 bytes from 203.0.113.42: icmp_seq=0 ttl=251 time=46.2 ms
+64 bytes from 203.0.113.42: icmp_seq=1 ttl=251 time=45.7 ms
+64 bytes from 203.0.113.42: icmp_seq=2 ttl=251 time=52.1 ms
+^C
+--- cs.example.edu ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 45.7/48.0/52.1 ms
+```
+
+This tells you:
+
+- **Latency** (min/avg/max round‑trip time)  
+- **Packet loss** (useful for diagnosing congestion or routing issues)  
+- **TTL** (indicates how many hops remain before expiration)  
+
+---
+
+### **Modern Usage Notes**
+
+- **Ping does not measure bandwidth.** It only measures latency and packet loss.  
+- **High latency** may indicate congestion, long geographic distance, or rate‑limiting.  
+- **Packet loss** often points to network issues, overloaded routers, or wireless interference.  
+- **TTL values** can hint at routing changes or unusual paths.
+
+---
+
+### **Security and Rate‑Limiting in 2026**
+
+Many servers now **rate‑limit** or **block ICMP Echo Requests** to reduce load or prevent abuse. As a result:
+
+- Some hosts respond intermittently.  
+- Some respond only to the first few packets.  
+- Some return “Destination Unreachable” or simply drop ICMP entirely.
+
+This is normal behavior on cloud platforms, CDNs, and security‑hardened systems.
+
+---
+
+### **How Often Should You Use Ping?**
+
+Ping is lightweight, but modern networks often treat excessive ICMP traffic as noise. A few packets are usually enough:
+
+```
+ping -c 3 hostname
+```
+
+This sends exactly three probes and prints a summary.
+
+---
+
