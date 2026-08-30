@@ -579,4 +579,119 @@ Where early Internet services relied on Telnet menus, modern systems use HTTPS p
 
 ---
 
+### **6.1 Intro to SSH (Secure Shell)**  
+SSH (Secure Shell) is the modern, encrypted replacement for Telnet and other early remote‑access protocols. Where Telnet transmitted all data in plaintext, SSH protects every part of the session — authentication, commands, output, and file transfers — using strong cryptography. SSH is now the standard method for secure remote login, remote command execution, and administrative access across the Internet.
 
+SSH was introduced in 1995 by Tatu Ylönen in response to widespread password‑sniffing attacks on university networks. Its design focused on three goals:
+
+- **Confidentiality** — prevent eavesdropping  
+- **Integrity** — prevent tampering  
+- **Authentication** — verify identity securely  
+
+Today, SSH is built into nearly every Unix‑like operating system, widely used in cloud infrastructure, DevOps workflows, embedded systems, and secure automation. Telnet remains historically important, but SSH is the protocol that defines modern remote connectivity.
+
+---
+
+## **6.2 — SSH Architecture and Core Components**
+
+SSH is built around a modular, layered architecture designed to provide secure, authenticated, and encrypted communication over an untrusted network. Understanding these components clarifies how SSH achieves confidentiality, integrity, and reliability — and why it replaced Telnet as the standard remote‑access protocol.
+
+---
+
+### **6.2.1 SSH Client and Server Model**
+
+SSH uses a simple client–server model:
+
+- The **SSH server** (`sshd`) runs on the remote machine you want to access.  
+- The **SSH client** (`ssh`) runs on your local machine and initiates the connection.
+
+The server listens on TCP port **22** by default. When a client connects, both sides negotiate encryption, authenticate identities, and establish a secure channel.
+
+This model mirrors Telnet’s structure, but with modern cryptographic protection layered on top.
+
+---
+
+### **6.2.2 Encryption Layer**
+
+The first step in an SSH connection is establishing a secure, encrypted tunnel. SSH uses a combination of:
+
+- **Public‑key cryptography** (for initial key exchange)  
+- **Symmetric encryption** (for the actual session)  
+- **Message authentication codes (MACs)** (to prevent tampering)
+
+Common algorithms include:
+
+- **Key exchange:** Diffie–Hellman, ECDH  
+- **Symmetric ciphers:** AES, ChaCha20  
+- **MACs:** HMAC‑SHA2 families  
+
+This layered approach ensures that even if someone intercepts the traffic, they cannot read or modify it.
+
+---
+
+### **6.2.3 Authentication Layer**
+
+After encryption is established, SSH authenticates the user. SSH supports multiple authentication methods:
+
+- **Password authentication** — simple but less secure  
+- **Public‑key authentication** — the modern standard  
+- **Host‑based authentication** — used in controlled environments  
+- **Keyboard‑interactive** — for multi‑factor systems  
+
+Public‑key authentication is the most important. It uses:
+
+- A **private key** stored securely on the client  
+- A **public key** stored in `~/.ssh/authorized_keys` on the server  
+
+Only the private key can prove identity, and it never leaves the client machine.
+
+---
+
+### **6.2.4 Secure Channels and Multiplexing**
+
+Once authenticated, SSH creates one or more **secure channels** inside the encrypted tunnel. Each channel can carry a different type of data:
+
+- Interactive shell sessions  
+- Remote command execution  
+- File transfers (SCP, SFTP)  
+- Port forwarding  
+- Tunnels for other protocols  
+
+This multiplexing is one of SSH’s most powerful features — multiple logical streams inside one encrypted connection.
+
+---
+
+### **6.2.5 SSH Configuration Files**
+
+SSH uses configuration files to control behavior:
+
+- **Client config:** `~/.ssh/config`  
+- **Server config:** `/etc/ssh/sshd_config`  
+
+These files define:
+
+- Preferred encryption algorithms  
+- Authentication methods  
+- Login restrictions  
+- Port numbers  
+- Key locations  
+- Timeouts and connection limits  
+
+This makes SSH highly customizable and suitable for everything from personal use to enterprise‑scale infrastructure.
+
+---
+
+### **6.2.6 Comparison to Telnet’s Architecture**
+
+Telnet’s architecture was simple:
+
+- No encryption  
+- No authentication beyond plaintext passwords  
+- No integrity protection  
+- No multiplexing  
+- No secure file transfer  
+- No tunneling  
+
+SSH preserves the *function* of Telnet (remote terminal access) but replaces the *mechanics* with a secure, extensible, cryptographically protected system.
+
+---
