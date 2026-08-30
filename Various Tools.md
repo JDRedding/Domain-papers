@@ -64,9 +64,7 @@ This is the same dynamic that took us from Archie → WebCrawler → Google, or 
 
 The **Finger** protocol was an early Internet directory service used to check who was logged into a system and to retrieve basic profile information about users. It predates the Web and was common on UNIX hosts throughout the 1980s and early 1990s.
 
-The Finger protocol provided user presence and profile information on local and remote UNIX systems. While the command still exists on some machines, the network service is almost universally disabled due to privacy and security concerns. Modern directory systems such as LDAP, Active Directory, and RDAP have replaced Finger’s role.
-
-On modern systems, the `finger` command may still exist, but most sites disable the network service entirely for privacy and security reasons.
+On modern systems, the `finger` command may still exist. The Finger protocol provided user presence and profile information on local and remote UNIX systems. While the command still exists on some machines, the network service is almost universally disabled due to privacy and security concerns. Modern directory systems such as LDAP, Active Directory, and RDAP have replaced Finger’s role.
 
 ---
 
