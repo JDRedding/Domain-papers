@@ -452,3 +452,81 @@ The old “whois-servers.list” files are obsolete.
 
 ---
 
+## **Traceroute**
+
+Traceroute is one of the foundational Internet diagnostic tools. While `ping` tells you *whether* a host is reachable, **traceroute** tells you *how* your packets get there — hop by hop — across routers and networks.
+
+Traceroute maps the path packets take across the Internet by sending probes with increasing TTL values. While many routers now rate-limit or hide responses, traceroute remains essential for diagnosing routing issues, latency spikes, and network congestion.
+
+It works by sending packets with gradually increasing **TTL (Time To Live)** values. Each router along the path decrements the TTL; when it hits zero, the router returns an ICMP “Time Exceeded” message. By collecting these responses, traceroute maps the route your traffic takes.
+
+---
+
+### **Basic Usage**
+
+On Unix-like systems:
+
+```
+traceroute example.edu
+```
+
+On Windows:
+
+```
+tracert example.edu
+```
+
+A typical output shows each hop along the path:
+
+```
+ 1  gateway.local (192.168.1.1)  1.2 ms  1.1 ms  1.0 ms
+ 2  isp-router.example.net (203.0.113.1)  12.5 ms  13.0 ms  12.8 ms
+ 3  core1.example.net (198.51.100.14)  25.4 ms  26.1 ms  25.9 ms
+ 4  example.edu (203.0.113.42)  48.2 ms  47.9 ms  48.1 ms
+```
+
+Each line represents:
+
+- **Hop number**  
+- **Router hostname/IP**  
+- **Round‑trip times** for three probes  
+
+---
+
+### **What Traceroute Tells You**
+
+Traceroute is useful for diagnosing:
+
+- **Routing problems**  
+- **Network congestion**  
+- **Unexpected detours** (e.g., traffic going through another country)  
+- **Firewall blocks**  
+- **Peering issues between ISPs**
+
+It’s one of the few tools that gives visibility into the *structure* of the Internet.
+
+---
+
+### **Modern Behavior**
+
+Several changes have occurred since the early Internet:
+
+- Many routers **rate‑limit** or **drop** traceroute probes.  
+- Some routers respond with `* * *` (no reply).  
+- Cloud providers often hide internal hops.  
+- IPv6 traceroute uses **ICMPv6** or **UDP** depending on implementation.  
+- Some networks return misleading hostnames due to privacy or load balancing.
+
+Despite this, traceroute remains one of the most important diagnostic tools available.
+
+---
+
+### **Variants**
+
+- **mtr** — combines ping + traceroute in real time.  
+- **tracepath** — simpler Linux alternative.  
+- **tcptraceroute** — uses TCP SYN packets to bypass ICMP blocks.
+
+These tools extend traceroute’s capabilities in modern networks.
+
+---
