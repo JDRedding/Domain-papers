@@ -1813,3 +1813,193 @@ SSH persists because it provides:
 Even as cloud platforms evolve, SSH remains the backbone of secure remote administration and automation.
 
 Telnet never scaled to this level — SSH became the foundation of modern infrastructure.
+
+---
+
+## **7. SSH vs. Telnet: A Complete Comparison**
+
+SSH and Telnet both provide remote terminal access, but they come from entirely different eras of networking. Telnet was designed for a trusted academic network; SSH was designed for a hostile global Internet. This section provides a clear, structured comparison that highlights why SSH became the universal standard and why Telnet is now used only for legacy systems and historical reference.
+
+---
+
+### **7.1 Purpose and Design Philosophy**
+
+#### **Telnet**
+- Created in 1969 as part of ARPANET  
+- Designed for open, trusted networks  
+- Prioritized simplicity and interoperability  
+- No security model — plaintext by design  
+
+#### **SSH**
+- Created in 1995 in response to password‑sniffing attacks  
+- Designed for untrusted, global networks  
+- Prioritized encryption, authentication, and integrity  
+- Built as a secure replacement for Telnet and FTP  
+
+SSH’s design philosophy is fundamentally modern; Telnet’s is fundamentally historical.
+
+---
+
+### **7.2 Security Model**
+
+#### **Telnet**
+- No encryption  
+- No integrity protection  
+- Passwords sent in plaintext  
+- Vulnerable to:
+  - Packet sniffing  
+  - Man‑in‑the‑middle attacks  
+  - Session hijacking  
+  - Credential theft  
+
+#### **SSH**
+- Fully encrypted sessions  
+- Strong integrity protection  
+- Key‑based authentication  
+- Resistant to:
+  - Sniffing  
+  - MITM attacks  
+  - Replay attacks  
+  - Credential theft  
+
+SSH’s security model is the single biggest reason it replaced Telnet.
+
+---
+
+### **7.3 Authentication Methods**
+
+#### **Telnet**
+- Username + password only  
+- Always plaintext  
+- No keypairs  
+- No certificates  
+- No MFA  
+
+#### **SSH**
+- Password authentication (optional)  
+- Public‑key authentication (standard)  
+- Certificate-based authentication (enterprise)  
+- Hardware-backed keys (FIDO2, smartcards)  
+- MFA integration  
+
+SSH supports modern identity systems; Telnet does not.
+
+---
+
+### **7.4 Encryption and Cryptography**
+
+#### **Telnet**
+- No encryption  
+- No cryptographic negotiation  
+- No protection against eavesdropping  
+
+#### **SSH**
+- Strong symmetric encryption (AES, ChaCha20)  
+- Strong key exchange (ECDH, curve25519)  
+- Strong MAC algorithms (HMAC-SHA2)  
+- Negotiated algorithms per session  
+
+SSH provides modern cryptography; Telnet provides none.
+
+---
+
+### **7.5 Features and Capabilities**
+
+#### **Telnet**
+- Remote terminal access  
+- Basic command execution  
+- Nothing else  
+
+#### **SSH**
+- Remote terminal access  
+- Remote command execution  
+- Secure file transfer (SCP, SFTP)  
+- Remote filesystem mounting (SSHFS)  
+- Port forwarding  
+- Tunneling  
+- SOCKS proxy  
+- Multiplexing  
+- X11 forwarding  
+- Forced commands  
+- Certificates  
+- Jump hosts  
+- Automation support  
+
+SSH is a full secure transport platform; Telnet is a simple terminal protocol.
+
+---
+
+### **7.6 Network Behavior**
+
+#### **Telnet**
+- Multiple ports used historically  
+- Difficult to secure  
+- Easily blocked by firewalls  
+- No compression  
+- No keepalive mechanisms  
+
+#### **SSH**
+- Single port (22)  
+- Easy to firewall  
+- Compression available  
+- Keepalive packets  
+- Stable over unreliable networks  
+
+SSH is robust; Telnet is fragile.
+
+---
+
+### **7.7 Use Cases Today**
+
+#### **Telnet (Legacy Only)**
+- Historical systems  
+- Old routers and switches  
+- Embedded devices  
+- Debugging raw TCP services  
+- Educational demonstrations  
+
+#### **SSH (Modern Standard)**
+- Cloud servers  
+- DevOps workflows  
+- CI/CD pipelines  
+- Secure automation  
+- Remote administration  
+- Distributed systems  
+- Enterprise identity systems  
+- Secure file transfer  
+- Tunneling and port forwarding  
+
+SSH is everywhere; Telnet is almost nowhere.
+
+---
+
+### **7.8 Summary Table**
+
+| Feature | Telnet | SSH |
+|--------|--------|-----|
+| Encryption | ❌ None | ✔ Full session encryption |
+| Authentication | ❌ Plaintext passwords | ✔ Keys, certs, MFA |
+| Integrity Protection | ❌ None | ✔ Strong MACs |
+| File Transfer | ❌ None | ✔ SCP, SFTP, SSHFS |
+| Tunneling | ❌ None | ✔ Local, remote, dynamic |
+| Port Forwarding | ❌ None | ✔ Full support |
+| Automation | ❌ Unsafe | ✔ Secure, key-based |
+| Cloud Integration | ❌ No | ✔ Universal |
+| Security | ❌ Weak | ✔ Strong |
+| Modern Use | ❌ Legacy only | ✔ Universal standard |
+
+---
+
+### **7.9 Why SSH Replaced Telnet Completely**
+
+SSH replaced Telnet because:
+
+- The Internet became hostile, not trusted  
+- Encryption became mandatory  
+- Password sniffing became widespread  
+- Cloud computing required secure automation  
+- Enterprises needed strong identity systems  
+- Modern workflows required tunneling and file transfer  
+- Compliance standards outlawed plaintext protocols  
+
+Telnet is historically important, but SSH is the protocol that defines modern remote access.
