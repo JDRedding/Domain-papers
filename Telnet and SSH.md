@@ -1425,3 +1425,218 @@ These advanced capabilities transform SSH from a simple remote terminal into a f
 - Reliable long-running sessions  
 
 Telnet never had anything close to this — SSH’s advanced features are a major reason it became the universal standard for secure remote access.
+
+### **6.8 SSH Security Hardening and Server Configuration**
+
+SSH is secure by design, but a default installation is not automatically hardened for real-world threats. Public-facing SSH servers are constant targets for brute-force attacks, credential stuffing, port scans, and automated exploitation attempts. This section covers the essential hardening steps that transform SSH from a secure protocol into a secure deployment.
+
+---
+
+#### **6.8.1 The SSH Server Configuration File (`sshd_config`)**
+
+The SSH server is controlled by `/etc/ssh/sshd_config`. This file defines:
+
+- Allowed authentication methods  
+- Allowed users  
+- Port number  
+- Logging behavior  
+- Key algorithms  
+- Forwarding permissions  
+- Session limits  
+
+Changes require restarting the SSH daemon:
+
+```
+sudo systemctl restart sshd
+```
+
+Hardening begins with careful configuration of this file.
+
+---
+
+#### **6.8.2 Disable Password Authentication**
+
+The single most important hardening step is disabling password logins:
+
+```
+PasswordAuthentication no
+```
+
+This forces all users to authenticate with SSH keys, eliminating:
+
+- Brute-force password attacks  
+- Credential reuse attacks  
+- Stolen password attacks  
+- Botnet login attempts  
+
+SSH keys are cryptographically strong and cannot be guessed.
+
+---
+
+#### **6.8.3 Disable Root Login**
+
+Root login should almost always be disabled:
+
+```
+PermitRootLogin no
+```
+
+Instead, administrators log in as normal users and escalate privileges with `sudo`. This prevents attackers from directly targeting the most powerful account.
+
+---
+
+#### **6.8.4 Restrict Allowed Users and Groups**
+
+Limit SSH access to specific users or groups:
+
+```
+AllowUsers jd adminuser
+AllowGroups sshusers
+```
+
+This prevents unauthorized accounts from even attempting to authenticate.
+
+---
+
+#### **6.8.5 Change the Default Port (Optional)**
+
+Changing the default port (22) does not improve security by itself, but it reduces noise from automated scanners:
+
+```
+Port 2222
+```
+
+This is not a replacement for real hardening, but it can reduce log clutter.
+
+---
+
+#### **8.6 Limit Authentication Attempts**
+
+Reduce the number of failed login attempts allowed:
+
+```
+MaxAuthTries 3
+```
+
+This slows brute-force attacks and reduces server load.
+
+---
+
+#### **6.8.7 Disable Unused Features**
+
+Disable features you don’t need:
+
+```
+X11Forwarding no
+AllowTcpForwarding no
+PermitTunnel no
+```
+
+Every disabled feature reduces the attack surface.
+
+---
+
+#### **6.8.8 Enforce Modern Cryptography**
+
+Ensure only strong algorithms are used:
+
+```
+KexAlgorithms curve25519-sha256
+Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com
+MACs hmac-sha2-512,hmac-sha2-256
+```
+
+This removes outdated algorithms like:
+
+- DSA  
+- RC4  
+- MD5-based MACs  
+- Weak Diffie–Hellman groups  
+
+Modern cryptography is essential for long-term security.
+
+---
+
+#### **6.8.9 Use Fail2ban or Equivalent Tools**
+
+Fail2ban monitors logs and blocks IPs that show malicious behavior:
+
+- Repeated failed logins  
+- Suspicious patterns  
+- Rapid connection attempts  
+
+This dramatically reduces brute-force noise.
+
+---
+
+#### **6.8.10 Use Firewalls to Restrict Access**
+
+Firewalls can restrict SSH access to known IP ranges:
+
+```
+sudo ufw allow from 203.0.113.0/24 to any port 22
+```
+
+This is one of the strongest hardening steps available.
+
+---
+
+#### **6.8.11 Enable Logging and Auditing**
+
+SSH logs authentication attempts, key usage, and session activity. Ensure logging is enabled:
+
+```
+LogLevel VERBOSE
+```
+
+Forward logs to:
+
+- Central log servers  
+- SIEM platforms  
+- Cloud monitoring tools  
+
+Audit trails are essential for detecting intrusion attempts.
+
+---
+
+#### **6.8.12 Use Two-Factor Authentication (Optional)**
+
+SSH can integrate with:
+
+- PAM modules  
+- Hardware tokens  
+- TOTP apps  
+- Smartcards  
+- FIDO2 keys  
+
+This adds a second layer of protection beyond SSH keys.
+
+---
+
+#### **6.8.13 Regular Key Rotation**
+
+Keys should be rotated periodically, especially in:
+
+- Enterprise environments  
+- Cloud deployments  
+- Multi-user systems  
+- High-security contexts  
+
+Key rotation reduces the risk of long-term compromise.
+
+---
+
+#### **6.8.14 Why Hardening Matters**
+
+Even though SSH is secure by design, real-world threats require real-world defenses. Hardening ensures:
+
+- Attackers cannot brute-force access  
+- Only authorized users can connect  
+- Only strong cryptography is used  
+- Logs provide visibility into suspicious activity  
+- The server remains stable under attack  
+- Sensitive systems stay protected  
+
+Telnet had *none* of these protections. SSH’s hardening capabilities are a major reason it became the universal standard for secure remote access.
+
+---
