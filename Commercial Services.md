@@ -50,7 +50,7 @@ In short: **once alternative networks existed, the policy barrier fell, and comm
 
 ---
 
-## 🌐 Early Commercial Internet Connectivity Providers 
+## 🌐 Commercial Internet Connectivity Providers 
 ISPs & Backbone Services
 
 This is a **core pillar** of the commercial Internet. This service makes everything else — email, Usenet, FTP archives, WAIS, ClariNet, commercial databases — marketable goods for the private. They all depended on one thing: **commercial Internet connectivity**. As soon as NSFNET relaxed its Acceptable Use Policy and allowed non‑research traffic, a wave of private companies stepped in to sell dial‑up access, leased lines, backbone connectivity, and routing services. This is wher the Internet shifted from a research network to a commercial utility.
@@ -164,7 +164,7 @@ These systems connected corporate LANs to the Internet for the first time.
 
 ---
 
-### **5. Early Peering & Interconnect Services**  
+### **5. Peering & Interconnect Services**  
 As commercial traffic grew, companies needed:
 
 - Peering agreements  
@@ -205,7 +205,7 @@ Today, commercial Internet connectivity is universal — but its roots lie in th
 
 ---
 
-## 🛒 Early E‑Commerce Experiments
+## 🛒 E‑Commerce Experiments
 
 Before the web browser existed, before SSL, before shopping carts, and long before Amazon, there were already **commercial transactions happening over the Internet**—just in forms that look alien today. These early e‑commerce experiments were small, fragmented, and often awkward, but they proved that the Internet could support real commercial activity. They are the missing link between the research‑network era and the modern online economy.
 
@@ -301,7 +301,7 @@ These systems were commercial, graphical, and often charged per‑transaction fe
 
 ---
 
-### **5. Early Financial Data Services**  
+### **5. Financial Data Services**  
 Before the web, financial institutions delivered:
 
 - Stock quotes  
@@ -521,7 +521,7 @@ Anonymous FTP: `/Clarinet` on `ftp.uu.net`
 
 ---
 
-## 🌐 Early Commercial Data Feeds & Information Services   
+## 🌐 Commercial Data Feeds & Information Services   
 
 Commercial data feeds were one of the earliest forms of **paid, real‑time information delivery** on the Internet and its predecessor networks. Long before APIs, dashboards, or cloud analytics, businesses subscribed to specialized data streams that delivered financial quotes, weather updates, satellite imagery, agricultural pricing, scientific datasets, and industry‑specific reports. These services were the backbone of early commercial information exchange.
 
@@ -650,7 +650,7 @@ Today, commercial data feeds are everywhere — but their origins lie in these e
 
 ---
 
-## 📧 Early Commercial Email Services 
+## 📧 Commercial Email Services 
 
 Commercial email was one of the very first paid Internet services, predating the web, graphical browsers, and even widespread TCP/IP adoption. These services helped businesses transition from proprietary networks and fax‑based communication into digital messaging long before “free email” existed.
 
@@ -703,7 +703,7 @@ The commercial email era laid the groundwork for modern digital communication, p
 
 ---
 
-## 🏷️ Early Online Service Providers 
+## 🏷️ Online Service Providers 
 
 If commercial email was the first paid Internet‑adjacent service, **online service providers** were the first full‑scale commercial *ecosystems*—complete, walled‑garden online worlds that predated the open Internet and helped millions of people take their first steps online. These systems blended communication, news, entertainment, commerce, and community long before the web unified everything under HTTP.
 
@@ -999,7 +999,7 @@ Still, commercial BBSes were foundational: they proved that people would pay for
 
 ---
 
-## 🏢 Early Commercial Web Hosting  
+## 🏢 Commercial Web Hosting  
 
 Commercial web hosting emerged the moment the web stopped being a research experiment and started becoming a public publishing platform. As soon as Mosaic (1993) and Netscape (1994) made the web accessible to ordinary users, businesses needed a place to put their websites — and early ISPs rushed in to sell hosting, domains, and server space. This was one of the most important commercial services of the early Internet era because it transformed the web from a collection of academic pages into a global commercial medium.
 
@@ -1047,7 +1047,7 @@ This was the birth of personal homepages and early business websites.
 
 ---
 
-### **2. Early Domain Registration Services**  
+### **2. Domain Registration Services**  
 Before 1995, domain registration was handled by **InterNIC**, funded by the NSF. But once commercial activity was allowed:
 
 - **Network Solutions** began selling domain registrations  
@@ -1079,7 +1079,7 @@ This was the first generation of “interactive” websites.
 
 ---
 
-### **4. Early E‑Commerce Hosting**  
+### **4. E‑Commerce Hosting**  
 As soon as SSL appeared (1994–1995), hosting providers began offering:
 
 - Secure server space  
@@ -1132,7 +1132,7 @@ Today, commercial hosting is a global, multi‑billion‑dollar industry — but
 
 ---
 
-## 🔍 Early Commercial Search & Indexing Services  
+## 🔍 Commercial Search & Indexing Services  
 
 Before Google, before AltaVista, before Yahoo’s directory, and even before the web itself, there were already **commercial search and indexing services** operating on the Internet and its predecessor networks. These systems helped businesses, researchers, and institutions locate documents, databases, and information across distributed servers long before web crawlers existed. They were the first attempts to solve the “findability” problem in a growing digital world.
 
@@ -1268,7 +1268,7 @@ Today, search is ubiquitous and free — but its commercial roots lie in these e
 
 ---
 
-## 🔐 Early Commercial Security & Encryption Services   
+## 🔐 Commercial Security & Encryption Services   
 
 Security and encryption became commercial Internet services **before the web**, before HTTPS, and before modern cybersecurity companies existed. As soon as businesses began using the Internet for communication, file transfer, and data exchange, they needed ways to protect that information. Early commercial security services filled this gap with encryption tools, secure gateways, and authentication systems that laid the groundwork for modern cybersecurity.
 
@@ -1333,7 +1333,7 @@ They were used by banks, government contractors, and multinational corporations.
 
 ---
 
-### **3. Early VPN Precursors**  
+### **3. VPN Precursors**  
 Before VPNs existed, companies used:
 
 - Encrypted dial‑up gateways  
@@ -1365,7 +1365,7 @@ They were used heavily in finance, defense, and enterprise IT.
 
 ---
 
-### **5. Commercial Firewalls (Early Generation)**  
+### **5. Commercial Firewalls**  
 Before modern firewalls existed, companies sold:
 
 - Packet‑filtering gateways  
@@ -1411,7 +1411,7 @@ Today, commercial security is a massive industry — but its roots lie in these 
 
 ---
 
-## 🛡️ Early Commercial Network Security & Access Control Services  
+## 🛡️ Commercial Network Security & Access Control Services  
 
 Companies sold **network access control, monitoring, and protection** as soon as businesses started connecting private systems to the Internet. This is distinct from encryption — this section covers the commercial services that controlled *who* could access a network, *how* they authenticated, and *how* traffic was monitored or filtered. This was the beginning of what we now call **network security**, **identity management**, and **access control**.
 
@@ -1457,7 +1457,7 @@ They were essential for companies that needed secure remote access long before V
 
 ---
 
-### **2. Early Network Gateways & Access Control Appliances**  
+### **2. Network Gateways & Access Control Appliances**  
 Before firewalls became mainstream, companies sold hardware and software gateways that controlled:
 
 - Who could dial into a network  
@@ -1476,7 +1476,7 @@ These systems were the ancestors of modern firewalls and secure edge devices.
 
 ---
 
-### **3. Commercial Intrusion Detection (Early Generation)**  
+### **3. Commercial Intrusion Detection**  
 Before IDS/IPS systems existed, companies sold:
 
 - Network monitoring tools  
