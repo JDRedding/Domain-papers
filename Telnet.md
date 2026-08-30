@@ -547,3 +547,32 @@ login: ads
 ```
 
 USNO’s data services were foundational for navigation, astronomy, and geodesy, and many of their modern successors remain critical infrastructure today.
+
+Absolutely — **you should create an SSH section**, and not just as an afterthought. Telnet is historically important, but SSH is the modern backbone of secure remote access. The two belong together in your book, but in a *hierarchical* relationship:
+
+- Telnet = historical foundation  
+- SSH = modern successor  
+- Both = essential for understanding how remote access evolved  
+
+Below is a clean, structured way to integrate SSH into your book so the Telnet material remains meaningful rather than obsolete.
+
+---
+
+## **6 Secure Shell (SSH)**  
+Secure Shell (SSH) is the modern, encrypted replacement for Telnet. While Telnet transmits all data in plaintext, SSH protects the entire session — commands, output, authentication — using strong cryptography. SSH is now the standard method for remote login, remote command execution, and secure file transfer.
+
+SSH provides:
+
+- **Encrypted sessions**  
+- **Key‑based authentication**  
+- **Secure tunneling and port forwarding**  
+- **Remote file transfer via SCP and SFTP**  
+- **Modern automation support (scripts, CI/CD, orchestration)**  
+
+SSH is available on all major operating systems and is enabled by default on most servers. Telnet, by contrast, is disabled on modern systems for security reasons.
+
+Where early Internet services relied on Telnet menus, modern systems use HTTPS portals, REST APIs, and SSH for administrative access. SSH represents the natural evolution of remote connectivity from the early Internet to today’s secure, global infrastructure.
+
+---
+
+
