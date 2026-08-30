@@ -1568,7 +1568,7 @@ Today, network access control is a massive commercial sector — but its roots l
 
 ## 📘 Conclusion: The Rise of Commercial Internet Services  
 
-The emergence of commercial Internet services marks the moment the network stopped being a research experiment and became an economic platform. What began as a collection of academic protocols and volunteer‑run systems rapidly transformed into a marketplace of paid connectivity, curated information, secure communication, and early digital commerce. Each service you’ve documented — from **commercial email** to **online service providers**, **Usenet feeds**, **FTP archives**, **BBS networks**, **data feeds**, **web hosting**, **search services**, and **security systems** — represents a different facet of that transition.
+The emergence of commercial Internet services marks the moment the network stopped being a research experiment and became an economic platform. What began as a collection of academic protocols and volunteer‑run systems rapidly transformed into a marketplace of paid connectivity, curated information, secure communication, and early digital commerce. Each service documented — from **commercial email** to **online service providers**, **Usenet feeds**, **FTP archives**, **BBS networks**, **data feeds**, **web hosting**, **search services**, and **security systems** — represents a different facet of that transition.
 
 Commercialization didn’t arrive all at once. It emerged in layers:
 
@@ -1587,7 +1587,7 @@ By the mid‑1990s, the foundation was complete:
 - Users could search, communicate, and transact online.  
 - Security vendors protected data and identity.  
 
-When the web arrived, it didn’t create commercialization — it accelerated a process already underway. The services you’ve documented are the scaffolding that made the web possible. They are the bridge between the research‑era Internet and the global digital economy that followed.
+When the web arrived, it didn’t create commercialization — it accelerated a process already underway. The services documented are the scaffolding that made the web possible. They are the bridge between the research‑era Internet and the global digital economy that followed.
 
 This captures that transformation: the moment the Internet became not just a network, but a marketplace, a medium, and eventually the backbone of modern life.
 
