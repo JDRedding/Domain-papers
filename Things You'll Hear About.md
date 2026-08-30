@@ -817,7 +817,7 @@ Understanding modern Internet behavior often requires reading both the current R
 The old FTP servers (nic.ddn.mil, uu.net) and email‑based retrieval systems are long gone. Modern access is centralized and easy:
 
 - **RFC Editor website** — [https://www.rfc-editor.org](https://www.rfc-editor.org)  
-- **IETF Datatracker** — `https://datatracker.ietf.org` [(datatracker.ietf.org in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fdatatracker.ietf.org%2F")  
+- **IETF Datatracker** — `https://datatracker.ietf.org` [(datatracker.ietf.org (Bing))](https://www.bing.com/search?q="https%3A%2F%2Fdatatracker.ietf.org%2F")  
 - **IETF Tools** — [https://tools.ietf.org](https://tools.ietf.org)  
 - **GitHub mirrors** of RFCs and drafts  
 - **Search engines** (RFC numbers are globally indexed)
