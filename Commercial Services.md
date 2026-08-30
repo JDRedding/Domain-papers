@@ -1690,7 +1690,7 @@ This timeline shows the **progressive layering** of commercial services:
 ---
 
 
-📜 Appendix II — **Commercial Connectivity**  
+## 📜 Appendix II — **Commercial Connectivity**  
 
 - **Email** and **Usenet**  
   form the earliest communication layer.
