@@ -154,9 +154,9 @@ The result is a gradual shift toward a more decentralized, more diverse, and les
 
 ---
 
-# **5 Group Creation**
+## **5 Group Creation**
 
-## **5.1 The Illusion of Democracy**
+### **5.1 The Illusion of Democracy**
 As noted earlier, **Usenet is not a democracy**.  
 Despite that, the most widely accepted method for creating a new newsgroup still involves a **“vote”** — a public process intended to measure support and opposition for a proposed group. The mechanics of this process are documented in **newsgroup creation guidelines**.
 
@@ -166,7 +166,7 @@ Because of this, success requires more than procedural correctness. You must fol
 
 ---
 
-## **5.2 Why New Users Should Not Run Votes**
+### **5.2 Why New Users Should Not Run Votes**
 A reasonable question follows: *How is a new user supposed to understand the “spirit” of the guidelines?*  
 The honest answer: **they can’t.**
 
@@ -184,7 +184,7 @@ This advice may seem strict. It is not. It is pragmatic.
 
 ---
 
-## **5.3 The Cultural Reality**
+### **5.3 The Cultural Reality**
 Usenet is a society with its own expectations:
 
 - Speaking before learning is embarrassing.  
@@ -197,9 +197,9 @@ Group creation works best when approached with patience, humility, and respect f
 
 ---
 
-# **6 If You’re Unhappy…**
+## **6 If You’re Unhappy…**
 
-## **6.1 The Limits of Authority**
+### **6.1 The Limits of Authority**
 On Usenet, **property rights define authority**. The highest power on any site is the person who owns the machine carrying the traffic. If the owner of the system you use decides:
 
 > “We will not carry `alt.sex` on this server.”
@@ -210,7 +210,7 @@ This is not a bug. It is the architecture.
 
 ---
 
-## **6.2 What You *Can* Do**
+### **6.2 What You *Can* Do**
 Being powerless on Usenet does not mean being without options. Depending on your situation, you may have several avenues:
 
 - **Internal recourse** — If your site is part of a company, school, or institution, you may be able to lobby internally. Policies can change if the right people are persuaded.
@@ -224,7 +224,7 @@ What will not help is appealing to **“Usenet”** as an abstract entity. Even 
 
 ---
 
-## **6.3 When You’re Unhappy With Another Site**
+### **6.3 When You’re Unhappy With Another Site**
 The same principle applies when the problem is a user at another site. Only the **administrator or owner** of *that* machine has the authority to act. If you can persuade them that the user is causing trouble *for them*, they might intervene — if they feel like it.
 
 If the problematic user **is** the administrator or owner of the site they post from, you have no chance of changing their behavior. In that case:
@@ -237,7 +237,7 @@ Usenet’s strength — decentralization — is also the reason you cannot force
 
 ---
 
-## **6.4 The Cultural Reality**
+### **6.4 The Cultural Reality**
 Usenet’s architecture guarantees:
 
 - no central authority  
