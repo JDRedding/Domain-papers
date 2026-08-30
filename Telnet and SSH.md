@@ -592,13 +592,13 @@ Today, SSH is built into nearly every Unix‑like operating system, widely used 
 
 ---
 
-## **6.2 — SSH Architecture and Core Components**
+### **6.2 — SSH Architecture and Core Components**
 
 SSH is built around a modular, layered architecture designed to provide secure, authenticated, and encrypted communication over an untrusted network. Understanding these components clarifies how SSH achieves confidentiality, integrity, and reliability — and why it replaced Telnet as the standard remote‑access protocol.
 
 ---
 
-### **6.2.1 SSH Client and Server Model**
+#### **6.2.1 SSH Client and Server Model**
 
 SSH uses a simple client–server model:
 
@@ -611,7 +611,7 @@ This model mirrors Telnet’s structure, but with modern cryptographic protectio
 
 ---
 
-### **6.2.2 Encryption Layer**
+#### **6.2.2 Encryption Layer**
 
 The first step in an SSH connection is establishing a secure, encrypted tunnel. SSH uses a combination of:
 
@@ -629,7 +629,7 @@ This layered approach ensures that even if someone intercepts the traffic, they 
 
 ---
 
-### **6.2.3 Authentication Layer**
+#### **6.2.3 Authentication Layer**
 
 After encryption is established, SSH authenticates the user. SSH supports multiple authentication methods:
 
@@ -647,7 +647,7 @@ Only the private key can prove identity, and it never leaves the client machine.
 
 ---
 
-### **6.2.4 Secure Channels and Multiplexing**
+#### **6.2.4 Secure Channels and Multiplexing**
 
 Once authenticated, SSH creates one or more **secure channels** inside the encrypted tunnel. Each channel can carry a different type of data:
 
@@ -661,7 +661,7 @@ This multiplexing is one of SSH’s most powerful features — multiple logical 
 
 ---
 
-### **6.2.5 SSH Configuration Files**
+#### **6.2.5 SSH Configuration Files**
 
 SSH uses configuration files to control behavior:
 
@@ -681,7 +681,7 @@ This makes SSH highly customizable and suitable for everything from personal use
 
 ---
 
-### **6.2.6 Comparison to Telnet’s Architecture**
+#### **6.2.6 Comparison to Telnet’s Architecture**
 
 Telnet’s architecture was simple:
 
