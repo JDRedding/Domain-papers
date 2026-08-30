@@ -680,11 +680,6 @@ $$
 
 ### **Identity Persistence**
 
-Lyapunov‑stable operators ensure:
-
-- stance consistency  
-- memory coherence
-
 Lyapunov / spectral radius conditions bound trajectories of $h_t$. They do not certify stance, memory contents, or factuality. Treat $\rho(\hat K_\phi)\le 1$ as a geometric alarm, evaluated only on a named dataset.
 
 ### **Sequence Neural Networks**
@@ -870,26 +865,18 @@ TruthSense *reduces* unsupported and contradictory outputs by failing $\{Grounde
 
 ## Functions
 
-1. **Hallucination Suppression:** Rejects generated states that fall outside the invariant subspaces of verified reference sets.
-2. **Multi-Turn Consistency Monitoring:** Enforces state continuity by validating that new assertions do not violate prior history predicates.
-3. **Quantitative Reliability Scoring:** Computes a scalar metric $S_{sem} \in [0, 1]$ representing alignment confidence:
 
-$$S_{sem} = \alpha \cdot \text{Fact Alignment} + \beta \cdot \text{Spectral Stability} + \gamma \cdot \text{Contextual Coherence}$$
-
-### Semantic Continuity Principle (SCP)
-
-To ensure recursive composition does not decay semantic content across $N$ stages, we define the composition predicate:
-
-$$\{I}_N : \prod_{i=1}^{N-1} \{C}_i \hookrightarrow \{C}_N$$
-
-A transform $\phi$ obeys SCP if there exists a characteristic predicate $\chi : \text{Aut}(\mathcal{C}_N) \to \{0,1\}$ such that:
+1. **Unsupported-claim filter.** Fail any extracted claim \(c\) with \(\operatorname{Grounded}(c)=\bot\).
+2. **Commitment monitor.** Fail if \(\Gamma_t\cup C(y)\models\bot\); log and quarantine.
+3. **Drift audit.** Compare \(D_{\mathrm{rw}}\), \(\kappa_{\mathrm{OR}}\), \(B_t\) to pre-registered \(T_D\).
+4. **Score.**
 
 $$
-\chi(\phi)=1
-\iff
-\Gamma(\phi(h))\supseteq\Gamma(h)
-\;\wedge\;
-\Gamma(\phi(h))\not\models\bot
+S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}
+$$
+
+$$
+\text{emit} \iff S_{\mathrm{ground}}\ge\tau_g \;\wedge\; S_{\mathrm{consist}}\ge\tau_c \;\wedge\; S_{\mathrm{sem}}\ge\tau
 $$
 
 ## References and further reading
