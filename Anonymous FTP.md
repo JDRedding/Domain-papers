@@ -367,3 +367,125 @@ Interactive mode off.
 Repeat `prompt` to turn it back on.
 
 ---
+
+## 3.3 The archie Server
+
+The archie system, developed at McGill University in Canada, was created to provide a fast, automated way to search the contents of anonymous FTP sites around the world. Over time, it expanded to include additional indexing and lookup services, becoming one of the earliest Internet‑wide search tools.
+
+Users can access archie through interactive telnet sessions, email queries, or dedicated command‑line and X‑window clients. Email responses can be paired with FTP‑by‑mail services for users who lack direct Internet access.
+
+---
+
+## 3.3.1 Using archie Today
+
+archie currently indexes more than 800 anonymous FTP archive sites, tracking over a million files—more than 50 gigabytes of material—with new entries added daily. Each site’s listing is refreshed roughly once a month, balancing accuracy with the need to avoid excessive network load.
+
+To use archie interactively, connect via telnet to one of the public servers:
+
+- archie.ans.net (New York, USA)  
+- archie.rutgers.edu (New Jersey, USA)  
+- archie.sura.net (Maryland, USA)  
+- archie.unl.edu (Nebraska, USA)  
+- archie.mcgill.ca (Canada; original server)  
+- archie.funet.fi (Finland)  
+- archie.au (Australia)  
+- archie.doc.ic.ac.uk (Great Britain)
+
+At the `login:` prompt, enter:
+
+```
+archie
+```
+
+You’ll receive a greeting and then an `archie>` prompt. The `help` command explains available operations, including:
+
+- `prog` — search for files  
+- `set` — adjust server options  
+- `quit` — exit the session  
+
+For example, searching for the X‑Windows program *vine*:
+
+```
+prog vine.tar.Z
+```
+
+A typical result:
+
+```
+Host ftp.uu.net (137.39.1.9)
+Last updated 10:30 7 Jan 1992
+Location: /packages/X/contrib
+FILE rw-r--r-- 15548 Oct 8 20:29 vine.tar.Z
+
+Host nic.funet.fi (128.214.6.100)
+Last updated 05:07 4 Jan 1992
+Location: /pub/X11/contrib
+FILE rw-rw-r-- 15548 Nov 8 03:25 vine.tar.Z
+```
+
+---
+
+## 3.3.2 archie Clients
+
+Two mainstream clients exist:
+
+- **archie** — command‑line interface  
+- **xarchie** — X‑Windows graphical interface  
+
+These tools query the archie databases directly, without requiring a telnet session. For example:
+
+```
+% archie vine.tar.Z
+Host athene.uni-paderborn.de
+Location: /local/X11/more_contrib
+FILE -rw-r--r-- 18854 Nov 15 1990 vine.tar.Z
+
+Host emx.utexas.edu
+Location: /pub/mnt/source/games
+FILE -rw-r--r-- 12019 May 7 1988 vine.tar.Z
+
+Host export.lcs.mit.edu
+Location: /contrib
+FILE -rw-r--r-- 15548 Oct 9 00:29 vine.tar.Z
+```
+
+If your system administrator hasn’t installed these clients, their source code is available on all archie servers under `archie/clients`. The X‑Windows client is more intuitive—consult its manual page if available.
+
+---
+
+## 3.3.3 Mailing archie
+
+Users with email‑only Internet access can query archie by sending a message to:
+
+```
+archie@archie.mcgill.ca
+```
+
+Include the single word:
+
+```
+help
+```
+
+The server will reply with instructions for email‑based queries and details on using FTP‑by‑mail services. Most commands available in the telnet interface also work through email.
+
+---
+
+## 3.3.4 The whatis Database
+
+Beyond FTP listings, archie provides access to the *whatis* database—a catalog of more than 3,500 public‑domain software packages, datasets, and informational documents, each with a brief description.
+
+Future expansions are planned, including:
+
+- online library catalog program listings  
+- directories of public mailing lists  
+- collections of Frequently Asked Questions (FAQ) documents  
+- archive locations for major Usenet newsgroups  
+
+Suggestions for new entries or additional databases can be emailed to:
+
+```
+archie-l@cs.mcgill.ca
+```
+
+---
