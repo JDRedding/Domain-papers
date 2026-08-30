@@ -227,5 +227,119 @@ Anonymous FTP: `/Clarinet` on `ftp.uu.net`
 
 ---
 
+## 📧 Early Commercial Email Services 
+
+Commercial email was one of the very first paid Internet services, predating the web, graphical browsers, and even widespread TCP/IP adoption. These services helped businesses transition from proprietary networks and fax‑based communication into digital messaging long before “free email” existed.
+
+---
+
+### 🌐 Modern Context  
+Today, email is universally available through webmail platforms, mobile apps, and enterprise cloud systems. But in the late 1980s and early 1990s, email was a **commercial product**, often sold as part of a subscription package. Businesses paid for:
+
+- A mailbox on a commercial host  
+- Connectivity to multiple networks  
+- Gateways between incompatible systems  
+- Guaranteed delivery and uptime  
+
+These services were essential because the Internet was still fragmented: BITNET, UUCP, X.400, proprietary corporate networks, and early TCP/IP systems all needed translation layers.
+
+---
+
+### 🕰️ Historical Backbone (Preserved and Modernized)
+
+Several companies pioneered commercial email long before the web era:
+
+- **MCI Mail** — One of the first commercial email providers to connect directly to the Internet. In 1989, MCI Mail became the first commercial service allowed to send email to the Internet via SMTP.  
+- **CompuServe Mail** — Offered email, forums, and file libraries; widely used by businesses and hobbyists.  
+- **SprintMail** — A corporate‑focused email system that provided gateways to multiple networks.  
+- **AT&T Mail** — An X.400‑based commercial messaging service used by enterprises.  
+- **AppleLink / GEIS** — Proprietary email systems for corporate and institutional customers.
+
+These systems often required dial‑up access, proprietary client software, or command‑line interfaces. They provided features that seem basic today but were revolutionary at the time:
+
+- Store‑and‑forward messaging  
+- Delivery receipts  
+- Gateways between incompatible networks  
+- Directory services  
+- Billing based on message volume or connection time  
+
+Commercial email was one of the first signs that the Internet was becoming economically viable. It allowed businesses to communicate electronically without relying on government‑funded research networks.
+
+---
+
+### 🔗 Transition to the Modern Era  
+By the mid‑1990s:
+
+- SMTP became the universal standard  
+- ISPs began offering email as part of basic Internet service  
+- Webmail emerged (Hotmail launched in 1996)  
+- Corporate email moved to TCP/IP and IMAP/POP systems  
+- Commercial email providers either shut down or evolved into enterprise messaging platforms
+
+The commercial email era laid the groundwork for modern digital communication, proving that businesses were willing to pay for reliable electronic messaging long before the Internet became mainstream.
+
+---
+
+## 🏷️ Early Online Service Providers 
+
+If commercial email was the first paid Internet‑adjacent service, **online service providers** were the first full‑scale commercial *ecosystems*—complete, walled‑garden online worlds that predated the open Internet and helped millions of people take their first steps online. These systems blended communication, news, entertainment, commerce, and community long before the web unified everything under HTTP.
+
+---
+
+### 🌐 Modern Context  
+Today, online services are accessed through:
+
+- Web browsers  
+- Mobile apps  
+- Cloud platforms  
+- Social networks  
+- Streaming services  
+
+But in the late 1980s and early 1990s, “going online” meant dialing into a proprietary service with a modem and using its custom interface. These services were commercial, subscription‑based, and often the only way ordinary people experienced digital communication before the Internet became widely available.
+
+---
+
+### 🕰️ Historical Backbone (Preserved and Modernized)
+
+The major commercial online service providers included:
+
+- **AOL (America Online)** — The most iconic of the early services. AOL offered email, chat rooms, forums, downloadable software, news, weather, stock quotes, and later full Internet access. Its “You’ve got mail” greeting became a cultural landmark.  
+- **CompuServe** — The oldest and most technically sophisticated service. It provided forums (the famous CompuServe Forums), email, file libraries, online shopping experiments, and early access to Usenet.  
+- **Prodigy** — A joint venture between IBM and Sears, known for its graphical interface and early attempts at online advertising and e‑commerce.  
+- **GEnie (General Electric Network for Information Exchange)** — A popular service for hobbyists, gamers, and early online communities, including the legendary RoundTables discussion groups.  
+- **Delphi** — One of the first services to offer full Internet access, including Usenet and email, to its subscribers.
+
+These services provided features that feel familiar today but were groundbreaking at the time:
+
+- Email and private messaging  
+- Forums and discussion boards  
+- Real‑time chat rooms  
+- News feeds and weather updates  
+- Online shopping experiments  
+- Downloadable software libraries  
+- Games and multiplayer experiences  
+- Early personal homepages (AOL Hometown, Prodigy Pages)
+
+They were commercial, subscription‑based, and often charged by the hour—reflecting the cost of maintaining dial‑up infrastructure and proprietary content networks.
+
+---
+
+### 🔗 Transition to the Modern Era  
+By the mid‑1990s, the open Internet began to eclipse proprietary online services:
+
+- Web browsers (Mosaic, Netscape) made the Internet accessible to everyone  
+- ISPs offered cheaper, unrestricted access  
+- Email moved to open standards (SMTP, POP, IMAP)  
+- Web forums replaced proprietary discussion boards  
+- Free webmail replaced paid mailboxes  
+- Search engines replaced curated content menus  
+
+AOL, CompuServe, and Prodigy eventually pivoted into Internet service providers, offering dial‑up access to the open web. Some services merged, others shut down, and the walled‑garden model faded as the web became the dominant platform.
+
+Still, these early commercial services shaped the culture of online communication—introducing millions of people to digital communities, online identity, and the idea of paying for online access.
+
+---
+
+
 ## References and further reading
 -  [ftp.sunet.se policies-procedures/nsf.net/nsf.policy](https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/doc/Internet-documents/policies-procedures/nsf.net/nsf.policy)
