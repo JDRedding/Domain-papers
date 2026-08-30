@@ -421,7 +421,7 @@ The old NIC templates, FTP servers, and user registration forms no longer exist.
 
 ---
 
-## **4.1 Other Uses of WHOIS**
+### **4.1 Other Uses of WHOIS**
 
 Some organizations still run **local WHOIS servers** to provide directory information about staff, students, or internal systems. These are typically:
 
