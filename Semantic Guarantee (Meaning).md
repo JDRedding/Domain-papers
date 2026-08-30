@@ -683,8 +683,9 @@ $$
 Lyapunov‑stable operators ensure:
 
 - stance consistency  
-- memory coherence  
-- hallucination resistance  
+- memory coherence
+
+Lyapunov / spectral radius conditions bound trajectories of $h_t$. They do not certify stance, memory contents, or factuality. Treat $\rho(\hat K_\phi)\le 1$ as a geometric alarm, evaluated only on a named dataset.
 
 ### **Sequence Neural Networks**
 
@@ -865,10 +866,7 @@ This completes the guarantee pipeline.
   
 ## **Hallucination Mitigation**
 
-TruthSense reduces hallucinations by enforcing **logical, physical, and factual constraints**.
-
-- It blocks outputs that violate known scientific, mathematical, or factual principles.
-- It prevents fabrication of nonexistent entities, events, or relationships.
+TruthSense *reduces* unsupported and contradictory outputs by failing $\{Grounded}(c)$ or $\Gamma_t\cup C(y)\models\bot$. It does not prevent hallucination. Claims with no extractable atomic form, or whose support is itself false, can still pass.
 
 ## Functions
 
