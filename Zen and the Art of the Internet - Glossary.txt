@@ -1,0 +1,188 @@
+Zen and the Art of the Internet - Glossary
+This glossary is only a tiny subset of all of the various terms and other things that people regularly use on The Net. For a more complete (and very entertaining) reference, it's suggested you get a copy of The New Hacker's Dictionary, which is based on a VERY large text file called the Jargon File. Edited by Eric Raymond (eric@snark.thyrsus.com), it is available from the MIT Press, Cambridge, Massachusetts, 02142; its ISBN number is 0- 262-68069-6. Also see RFC-1208, A Glossary of Networking Terms.
+
+: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+:-)
+This odd symbol is one of the ways a person can portray "mood" in the very flat medium of computers--by using "smilies." This is 'metacommunication', and there are literally hundreds of them, from the obvious to the obscure. This particular example expresses "happiness." Don't see it? Tilt your head to the left 90 degrees. Smilies are also used to denote sarcasm.
+
+address resolution:
+Conversion of an Internet address to the corresponding physical address. On an ethernet, resolution requires broadcasting on the local area network.
+administrivia:
+Administrative tasks, most often related to the maintenance of mailing lists, digests, news gateways, etc.
+anonymous FTP:
+Also known as "anon FTP"; a service provided to make files available to the general Internet community--see Section 3.2.2 [Anonymous FTP].
+ANSI:
+The American National Standards Institute disseminates basic standards like ASCII, and acts as the United States' delegate to the ISO. Standards can be ordered from ANSI by writing to the ANSI Sales Department, 1430 Broadway, New York, NY 10018, or by telephoning (212) 354-3300.
+archie:
+A service which provides lookups for packages in a database of the offerings of countless of anonymous FTP sites. See Section 3.3.1 [archie], page 25 for a full description.
+archive server:
+An email-based file transfer facility offered by some systems.
+ARPA (Advanced Research Projects Agency):
+Former name of DARPA, the government agency that funded ARPAnet and later the DARPA Internet.
+ARPAnet:
+A pioneering long haul network funded by ARPA. It served as the basis for early networking research as well as a central backbone during the development of the Internet. The ARPAnet consisted of individual packet switching computers interconnected by leased lines. The ARPAnet no longer exists as a singular entity.
+asynchronous:
+Transmission by individual bytes, not related to specific timing on the transmitting end.
+auto-magic:
+Something which happens pseudo-automatically, and is usually too complex to go into any further than to say it happens "automagically."
+
+backbone:
+A high-speed connection within a network that connects shorter, usually slower circuits. Also used in reference to a system that acts as a "hub" for activity (although those are becoming much less prevalent now than they were ten years ago).
+bandwidth:
+The capacity of a medium to transmit a signal. More informally, the mythical "size" of The Net, and its ability to carry the files and messages of those that use it. Some view certain kinds of traffic (FTPing hundreds of graphics images, for example) as a "waste of bandwidth" and look down upon them.
+BITNET (Because It's Time Network):
+An NJE-based international educational network.
+bounce:
+The return of a piece of mail because of an error in its delivery.
+btw:
+An abbreviation for "by the way."
+
+CFV (Call For Votes):
+Initiates the voting period for a Usenet newsgroup. At least one (occasionally two or more) email address is customarily included as a repository for the votes. See See Appendix C [Newsgroup Creation], page 79 for a full description of the Usenet voting process.
+ClariNews:
+The fee-based Usenet newsfeed available from ClariNet Communications.
+client:
+The user of a network service; also used to describe a computer that relies upon another for some or all of its resources.
+Cyberspace:
+A term coined by William Gibson in his fantasy novel Neu- romancer to describe the "world" of computers, and the society that gathers around them.
+
+datagram:
+The basic unit of information passed across the Internet. It contains a source and destination address along with data. Large messages are broken down into a sequence of IP datagrams.
+disassembling:
+Converting a binary program into human-readable machine language code.
+DNS (Domain Name System):
+The method used to convert Internet names to their corresponding Internet numbers.
+domain:
+A part of the naming hierarchy. Syntactically, a domain name consists of a sequence of names or other words separated by dots.
+dotted quad:
+A set of four numbers connected with periods that make up an Internet address; for example, 147.31.254.130.
+
+email:
+The vernacular abbreviation for electronic mail.
+email address:
+The UUCP or domain-based address that a user is referred to with. For example, the author's address is brendan@cs.widener.edu.
+ethernet:
+A 10-million bit per second networking scheme originally developed by Xerox Corporation. Ethernet is widely used for LANs because it can network a wide variety of computers, it is not proprietary, and components are widely available from many commercial sources.
+
+FDDI (Fiber Distributed Data Interface):
+An emerging standard for network technology based on fiber optics that has been established by ANSI.
+FDDI
+specifies a 100-million bit per second data rate. The access control mechanism uses token ring technology.
+flame:
+A piece of mail or a Usenet posting which is violently argumentative.
+FQDN (Fully Qualified Domain Name):
+The FQDN is the full site name of a system, rather than just its hostname. For example, the system lisa at Widener University has a FQDN of lisa.cs.widener.edu.
+FTP (File Transfer Protocol):
+The Internet standard high-level protocol for transferring files from one computer to another.
+FYI:
+an abbreviation for the phrase "for your information." There is also a series of RFCs put out by the Network Information Center called FYIs; they address common questions of new users and many other useful things. See "RFCs", page 73 for instructions on retrieving FYIs.
+
+gateway:
+A special-purpose dedicated computer that attaches to two or more networks and routes packets from one network to the other. In particular, an Internet gateway routes IP datagrams among the networks it connects. Gateways route packets to other gateways until they can be delivered to the final destination directly across one physical network.
+
+header:
+The portion of a packet, preceding the actual data, containing source and destination addresses and error-checking fields. Also part of a message or news article.
+hostname:
+The name given to a machine. (See also FQDN.)
+IMHO (In My Humble Opinion):
+This usually accompanies a statement that may bring about personal offence or strong disagreement.
+
+Internet:
+A concatenation of many individual TCP/IP campus, state, regional, and national networks (such as NSFnet, ARPAnet, and Milnet) into one single logical network all sharing a common addressing scheme.
+Internet number:
+The dotted-quad address used to specify a certain system. The Internet number for the site cs.widener.edu is 147.31.254.130. A resolver is used to translate between hostnames and Internet addresses.
+interoperate:
+The ability of multi-vendor computers to work together using a common set of protocols. With interoperability, PCs, Macs, Suns, Dec VAXen, CDC Cybers, etc, all work together allowing one host computer to communicate with and take advantage of the resources of another.
+ISO (International Organization for Standardization):
+Coordinator of the main networking standards that are put into use today.
+
+kernel:
+The level of an operating system or networking system that contains the system-level commands or all of the functions hidden from the user. In a Unix system, the kernel is a program that contains the device drivers, the memory management routines, the scheduler, and system calls. This program is always running while the system is operating.
+
+LAN (Local Area Network):
+Any physical network technology that operates at high speed over short distances (up to a few thousand meters).
+
+mail gateway:
+A machine that connects to two or more electronic mail systems (especially dissimilar mail systems on two different networks) and transfers mail messages among them.
+mailing list:
+A possibly moderated discussion group, distributed via email from a central computer maintaining the list of people involved in the discussion.
+mail path:
+A series of machine names used to direct electronic mail from one user to another.
+medium:
+The material used to support the transmission of data. This can be copper wire, coaxial cable, optical fiber, or electromagnetic wave (as in microwave).
+multiplex:
+The division of a single transmission medium into multiple logical channels supporting many simultaneous sessions. For example, one network may have simultaneous FTP, telnet, rlogin, and SMTP connections, all going at the same time.
+
+net.citizen:
+An inhabitant of Cyberspace. One usually tries to be a good net.citizen, lest one be flamed.
+"netiquette"
+A pun on "etiquette"; proper behavior on The Net. See Section 4.13 "Usenet Netiquette", page 37.
+network:
+A group of machines connected together so they can transmit information to one another. There are two kinds of networks: local networks and remote networks.
+NFS (Network File System):
+A method developed by Sun Microsystems to allow computers to share files across a network in a way that makes them appear as if they're "local" to the system.
+NIC:
+The Network Information Center.
+node:
+A computer that is attached to a network; also called a host.
+NSFnet:
+The national backbone network, funded by the National Science Foundation and operated by the Merit Corporation, used to interconnect regional (mid-level) networks such as WestNet to one another.
+
+packet:
+The unit of data sent across a packet switching network. The term is used loosely. While some Internet literature uses it to refer specifically to data sent across a physical network, other literature views the Internet as a packet switching network and describes IP datagrams as packets.
+polling:
+Connecting to another system to check for things like mail or news.
+postmaster:
+The person responsible for taking care of mail problems, answering queries about users, and other related work at a site.
+protocols:
+A formal description of message formats and the rules two computers must follow to exchange those messages. Protocols can describe low-level details of machine-to-machine interfaces (e.g., the order in which bits and bytes are sent across a wire) or high-level exchanges between allocation programs (e.g., the way in which two programs transfer a file across the Internet).
+
+recursion:
+The facility of a programming language to be able to call functions from within themselves.
+resolve:
+Translate an Internet name into its equivalent IP address or other DNS information.
+RFD (Request For Discussion):
+Usually a two- to three-week period in which the particulars of newsgroup creation are battled out.
+route:
+The path that network traffic takes from its source to its destination.
+router:
+A dedicated computer (or other device) that sends packets from one place to another, paying attention to the current state of the network.
+RTFM (Read The Fantastic Manual):
+This anacronym is often used when someone asks a simple or common question. The word 'Fantastic' is usually replaced with one much more vulgar.
+
+SMTP (Simple Mail Transfer Protocol):
+The Internet standard protocol for transferring electronic mail messages from one computer to another. SMTP specifies how two mail systems interact and the format of control messages they exchange to transfer mail.
+server:
+A computer that shares its resources, such as printers and files, with other computers on the network. An example of this is a Network File System (NFS) server which shares its disk space with other computers.
+signal-to-noise ratio:
+When used in reference to Usenet activity, 'signal- to-noise ratio' describes the relation between amount of actual information in a discussion, compared to their quantity. More often than not, there's substantial activity in a newsgroup, but a very small number of those articles actually contain anything useful.
+signature:
+The small, usually four-line message at the bottom of a piece of email or a Usenet article. In Unix, it's added by creating a file '.signature' in the user's home directory. Large signatures are a no-no.
+summarize:
+To encapsulate a number of responses into one coherent, usable message. Often done on controlled mailing lists or active newsgroups, to help reduce bandwidth.
+synchronous:
+Data communications in which transmissions are sent at a fixed rate, with the sending and receiving devices synchronized.
+
+TCP/IP (Transmission Control Protocol/Internet Protocol):
+A set of protocols, resulting from ARPA efforts, used by the Internet to support services such as remote login (telnet), file transfer (FTP) and mail (SMTP).
+telnet:
+The Internet standard protocol for remote terminal connection service. Telnet allows a user at one site to interact with a remote timesharing system at another site as if the user's terminal were connected directly to the remote computer.
+terminal server:
+A small, specialized, networked computer that connects many terminals to a LAN through one network connection. Any user on the network can then connect to various network hosts.
+TEX:
+A free typesetting system by Donald Knuth.
+twisted pair:
+Cable made up of a pair of insulated copper wires wrapped around each other to cancel the effects of electrical noise.
+
+UUCP (Unix to Unix Copy Program):
+A store-and-forward system, primarily for Unix systems but currently supported on other platforms (e.g. VMS and personal computers).
+
+WAN (Wide-Area Network):
+A network spanning hundreds or thousands of miles.
+workstation:
+A networked personal computing device with more power than a standard IBM PC or Macintosh. Typically, a workstation has an operating system such as unix that is capable of running several tasks at the same time. It has several megabytes of memory and a large, high-resolution display. Examples are Sun workstations and Digital DECstations.
+worm:
+A computer program which replicates itself. The Internet worm (see Section 8.1 [The Internet Worm] was perhaps the most famous; it successfully (and accidentally) duplicated itself on systems across the Internet.
+wrt:
+With respect to.
