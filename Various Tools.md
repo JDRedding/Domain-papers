@@ -35,7 +35,7 @@ All of these lived **outside** the early Web. They were Internet services, not W
 ### 🧨 Why they disappeared  
 The Web didn’t kill them immediately — but once HTTP + HTML + full‑text crawlers arrived, the older ecosystem became obsolete.
 
-#### Replacement patterns  
+#### 🔄 Replacement patterns  
 - **Archie → Web crawlers**  
   Archie indexed filenames; WebCrawler (1994) indexed *full text*, which was a qualitative leap.  
 - **Gopher → HTTP**  
@@ -47,8 +47,8 @@ The Web didn’t kill them immediately — but once HTTP + HTML + full‑text cr
 - **Usenet → GitHub, mailing lists, Discord, X**  
   Usenet’s role as the “announcement channel” is now filled by modern developer‑centric platforms.
 
-### 🔄 The underlying pattern hasn’t changed  
-Your observation is dead‑on: the social‑technical cycle is identical today.
+### The underlying pattern 
+The social‑technical cycle is identical today.
 
 1. **Someone builds a useful service.**  
 2. **Early adopters spread the word through existing discussion forums.**  
