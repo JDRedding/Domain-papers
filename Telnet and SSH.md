@@ -3526,3 +3526,156 @@ SSH’s evolution can be summarized in four phases:
 SSH’s importance grows as infrastructure becomes more distributed and identity becomes more central.
 
 ---
+
+## Appendix A — ASCII SSH diagrams
+
+---
+
+### A.1 Basic SSH remote login
+
+```text
++-----------+        Encrypted SSH session        +-----------+
+|  Client   | ===================================>|  Server   |
+|  (user)   |                                      | (remote) |
++-----------+                                      +-----------+
+      |                                                  |
+      |  ssh user@server.example.com                     |
+      +------------------------------------------------->|
+      |<---------------- Encrypted terminal -------------+
+```
+
+---
+
+### A.2 SSH key-based authentication
+
+```text
++-----------+                                   +-----------+
+|  Client   |                                   |  Server   |
+|           |                                   |           |
+|  Private  |                                   |  Public   |
+|   Key     |                                   |   Key     |
++-----------+                                   +-----------+
+
+1) Client starts SSH connection:
+   ssh user@server
+
+2) Server sends challenge:
+   "Prove you own the matching private key."
+
+3) Client signs challenge with private key.
+
+4) Server verifies signature using public key in:
+   ~/.ssh/authorized_keys
+
+If valid:
+   -> Login granted (no password sent).
+```
+
+---
+
+### A.3 Local port forwarding (bring remote port local)
+
+```text
+ssh -L 8080:localhost:80 user@remote
+
++-----------+          SSH tunnel          +-----------+      +-----------+
+|  Client   |=============================>|  Remote   |----->| Service   |
+|           |                              |   Host    |      | :80       |
+| localhost |                              |           |      +-----------+
+| :8080     |                              | localhost |
++-----------+                              |  :80      |
+                                           +-----------+
+
+Client connects to:
+   http://localhost:8080
+Traffic is forwarded (encrypted) to:
+   remote:80
+```
+
+---
+
+### A.4 Remote port forwarding (publish local port remotely)
+
+```text
+ssh -R 9000:localhost:3000 user@remote
+
++-----------+      SSH tunnel      +-----------+      +-----------+
+|  Client   |=====================>|  Remote   |----->| Client    |
+|           |                      |   Host    |      | localhost |
+| localhost |                      |           |      | :3000     |
+| :3000     |                      | :9000     |      +-----------+
++-----------+                      +-----------+
+
+Remote host connects to:
+   localhost:9000  (on remote)
+Traffic is forwarded (encrypted) to:
+   client:3000
+```
+
+---
+
+### A.5 Dynamic port forwarding (SOCKS proxy)
+
+```text
+ssh -D 1080 user@remote
+
++-----------+        SSH tunnel        +-----------+      +-----------+
+|  Client   |=========================>|  Remote   |----->| Internet  |
+|           |                          |   Host    |      | services  |
+| SOCKS     |                          |           |      +-----------+
+| proxy     |
+| :1080     |
++-----------+
+
+Apps configured to use SOCKS proxy:
+   Host: localhost
+   Port: 1080
+
+All TCP traffic from those apps flows through
+the encrypted SSH tunnel to the remote host.
+```
+
+---
+
+### A.6 SFTP file transfer over SSH
+
+```text
+sftp user@server
+
++-----------+        Encrypted SSH session        +-----------+
+|  Client   |====================================>|  Server   |
+|           |<------ SFTP subsystem ------------->|           |
++-----------+                                      +-----------+
+
+SFTP commands:
+   put file.txt   -> upload
+   get file.txt   -> download
+   ls, cd, mkdir  -> remote filesystem operations
+
+All file operations occur inside the SSH tunnel.
+```
+
+---
+
+### A.7 SSH jump host (ProxyJump)
+
+```text
+ssh -J bastion.example.com user@internal.example.com
+
++-----------+        SSH #1        +-----------+        SSH #2        +-----------+
+|  Client   |=====================>|  Bastion  |=====================>| Internal  |
+|           |                      |  Host     |                      |  Host     |
++-----------+                      +-----------+                      +-----------+
+
+Client -> Bastion:
+   First encrypted SSH connection.
+
+Bastion -> Internal:
+   Second encrypted SSH connection.
+
+ProxyJump chains them into a single logical
+command from the client’s perspective.
+```
+
+---
+
