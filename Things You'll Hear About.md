@@ -282,3 +282,73 @@ These groups shaped how people thought about identity, community, and communicat
 
 ---
 
+## 3.1 The Association for Computing Machinery
+
+The **Association for Computing Machinery** (ACM) is one of the world’s largest and most influential professional organizations in computing. Founded in **1947**, just after the unveiling of ENIAC, ACM has evolved from a small group of early computer pioneers into a global network shaping research, education, and professional practice across every domain of computing.
+
+### 🎯 Mission and Purpose  
+ACM’s modern mission reflects both its historical roots and the realities of contemporary computing:
+
+- **Advance computing as a science and a profession**  
+- **Support open, global exchange of knowledge** across research, industry, and education  
+- **Uphold professional ethics, competence, and integrity** in all areas of computing  
+- **Promote computing’s role in solving societal challenges**, from cybersecurity to AI governance  
+
+These goals now extend into areas that didn’t exist in 1947 — machine learning, human‑computer interaction, quantum computing, cybersecurity, and large‑scale distributed systems.
+
+### 🌍 Membership and Community  
+ACM has grown from its original 78 members to **well over 100,000 worldwide**. Its community includes:
+
+- researchers  
+- engineers  
+- educators  
+- students  
+- industry professionals  
+
+Local chapters exist across the globe, and **ACM Student Chapters** are embedded in hundreds of universities. These chapters host talks, workshops, hackathons, and research seminars that sit “above” traditional user‑group culture — focusing on ideas, innovation, and professional development rather than specific products.
+
+### 📚 Publications and Digital Library  
+One of ACM’s most significant contributions is the **ACM Digital Library**, a massive online repository containing:
+
+- journals  
+- conference proceedings  
+- technical magazines  
+- newsletters  
+- multimedia content  
+
+It is one of the primary archives of modern computer science research. Members receive discounted access and subscriptions to publications such as *Communications of the ACM* and *XRDS*.
+
+### 🎓 Special Interest Groups (SIGs)  
+ACM’s **SIGs** (Special Interest Groups) remain central to its structure. Each SIG focuses on a specific domain, such as:
+
+- SIGGRAPH — computer graphics and interactive techniques  
+- SIGCHI — human‑computer interaction  
+- SIGCOMM — networking and communication systems  
+- SIGOPS — operating systems  
+- SIGPLAN — programming languages  
+- SIGCAS — computers and society  
+- SIGSAC — security, audit, and control  
+
+Each SIG runs conferences, publishes proceedings, and maintains active research communities. Many ACM conferences — like SIGGRAPH, CHI, and STOC — are among the most prestigious in the world.
+
+### 💬 Online Presence  
+While Usenet groups like *comp.org.acm* are now historical artifacts, ACM maintains modern communication channels:
+
+- official website: **acm.org**  
+- ACM Digital Library  
+- social media and professional networks  
+- virtual conferences and webinars  
+- global mailing lists and community forums  
+
+### 🏢 Contact and Membership 
+ACM no longer uses BITNET addresses or the 1515 Broadway office. Today, membership and contact information are centralized online:
+
+**Association for Computing Machinery**  
+Website: **acm.org**  
+Email: **acmhelp@acm.org**  
+Phone: **(212) 626‑0500**  
+Headquarters: 1601 Broadway, 10th Floor, New York, NY 10019
+
+Membership applications, SIG enrollment, and digital library access are all handled through the ACM website.
+
+---
