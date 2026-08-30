@@ -577,7 +577,7 @@ TruthSense provides the **guarantees**.
 
 Operator‑theoretic semantics provide the **formal substrate** for analyzing semantic evolution in systems. They do not produce semantic guarantees by themselves. Guarantees arise only when operator‑level observables are evaluated by the verification layer.
 
-Let a semantic domain be represented by a space \(\mathcal{C}\). A system evolution or reasoning step is modeled as a transformation:
+Let a semantic domain be represented by a space $\mathcal{C}$. A system evolution or reasoning step is modeled as a transformation:
 
 $$
 \phi : \mathcal{C} \to \mathcal{C}
@@ -783,7 +783,7 @@ $$S_{sem} = \alpha \cdot \text{Fact Alignment} + \beta \cdot \text{Spectral Stab
 
 To ensure recursive composition does not decay semantic content across $N$ stages, we define the composition predicate:
 
-$$\mathcal{I}_N : \prod_{i=1}^{N-1} \mathcal{C}_i \hookrightarrow \mathcal{C}_N$$
+$$\{I}_N : \prod_{i=1}^{N-1} \{C}_i \hookrightarrow \{C}_N$$
 
 A transform $\phi$ obeys SCP if there exists a characteristic predicate $\chi : \text{Aut}(\mathcal{C}_N) \to \{0,1\}$ such that:
 
