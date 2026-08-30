@@ -485,7 +485,7 @@ Documentation for **C News**, **INN**, and other NNTP implementations provides a
 
 ---
 
-## **4.12 Mail Gateways**
+## **12 Mail Gateways**
 
 A natural evolution of online communication was the merging of **Usenet newsgroups** and **electronic mailing lists**. This integration produced what are known as **mail gateways** — systems that allow mailing list traffic and newsgroup traffic to flow between each other.
 
