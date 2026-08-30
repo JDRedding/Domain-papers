@@ -4,7 +4,7 @@ One of the earliest and most influential remote‑access protocols in networking
 
 Modern Internet systems no longer rely on Telnet-based access. While early network services—library catalogs, scientific databases, community Freenets, an directory systems—were built around plaintext terminal interfaces, contemporary systems use secure, encrypted protocols such as SSH for remote access and HTTPS for information retrieval. The functionality once provided by CARL, PENpages, OCEANIC, NED, STIS, and similar Telnet-accessible databases has migrated to web portals, REST APIs, federated search systems, and global open-data repositories. Directory services have evolved from Knowbot and X.500 pilots into LDAP, Active Directory, WHOIS/RDAP, and modern identity frameworks. Although the technology has changed, the underlying goal remains the same: broad, public access to information and communication across the network.
 
-## **What All These Legacy Systems Teach Us**
+## **What Legacy Systems Teach Us**
 
 Across all the examples — Telnet catalogs, agricultural databases, weather systems, oceanographic data, astronomy databases — the pattern is clear:
 
