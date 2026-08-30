@@ -4,7 +4,7 @@ One of the earliest and most influential remote‑access protocols in networking
 
 Modern Internet systems no longer rely on Telnet-based access. While early network services—library catalogs, scientific databases, community Freenets, an directory systems—were built around plaintext terminal interfaces, contemporary systems use secure, encrypted protocols such as SSH for remote access and HTTPS for information retrieval. The functionality once provided by CARL, PENpages, OCEANIC, NED, STIS, and similar Telnet-accessible databases has migrated to web portals, REST APIs, federated search systems, and global open-data repositories. Directory services have evolved from Knowbot and X.500 pilots into LDAP, Active Directory, WHOIS/RDAP, and modern identity frameworks. Although the technology has changed, the underlying goal remains the same: broad, public access to information and communication across the network.
 
-## **What Legacy Systems Teach Us**
+## 0 **What Legacy Systems Teach Us**
 
 Across all the examples — Telnet catalogs, agricultural databases, weather systems, oceanographic data, astronomy databases — the pattern is clear:
 
@@ -16,12 +16,12 @@ Across all the examples — Telnet catalogs, agricultural databases, weather sys
 
 ---
 
-## What Telnet actually is  
+### 0.1 What Telnet actually is  
 Telnet is a **client–server protocol** that provides **bidirectional, interactive text communication** over TCP, typically on port 23. When you connect, your keyboard becomes the keyboard of the remote machine, and every character you type is sent across the network. The key abstraction is the **Network Virtual Terminal (NVT)** — a standardized fictional terminal that both sides pretend to use. This solved the early ARPANET problem where every manufacturer had incompatible terminal codes.
 
 ---
 
-## Why Telnet mattered  
+### 0.2 Why Telnet mattered  
 - **First remote-access protocol on ARPANET (1969)** — the first “login” across a network happened via early Telnet.   
 - **Interoperability breakthrough** — it let DEC, IBM, and other machines talk without custom hardware.  
 - **Foundation for later protocols** — many BBSes, library systems, and text-based games used Telnet. 
@@ -30,14 +30,14 @@ Compared to dial-up modems, Telnet was dramatically faster and not limited by an
 
 ---
 
-## Why Telnet declined  
+### 0.3 Why Telnet declined  
 Telnet sends **everything in plaintext** — usernames, passwords, commands, output. Anyone who can see the traffic can read it. 
 
 Because of this, most systems disabled Telnet and replaced it with **SSH**, which encrypts all traffic.   
 
 ---
 
-## Telnet vs. modems
+### 0.4 Telnet vs. modems
 
 - Modems were limited by analog line noise  
 - Long-distance calls were expensive  
