@@ -1,16 +1,17 @@
 # 🧩 Before the Web: The Tools That Built the Early Internet
-*Various Tools of the Early Internet*
-
-New and interesting ways to use the Internet are being dreamed up every day. 
+*Protocols and Services of the Pre‑Web Era*
 
 > "Fingers were made before forks."
 > Jonathan Swift, Polite Conversation
+
+New and interesting ways to use the Internet are being dreamed up every day. 
 
 As they gain wide-spread use, some methods become near-standard (or actual written standard) tools for Internet users to take advantage of. A few are detailed here; there are undoubtedly others, and new ideas spring up all the time. An active user of the Internet will discover most of the more common ones in time. Usually, these services are free.
 
 The early Internet was built from small, specialized tools announced on Usenet and adopted by communities across universities and research networks. These tools solved problems created by a world without hyperlinks, without full-text search, and without a unified document graph. When the Web arrived, it replaced them—not because they were primitive, but because the topology of the Internet changed. Their ideas survive today in modern search engines, chat platforms, and communication systems, even though the original protocols have faded away.
 
 ## 🧭 Introduction 
+*Various Tools of the Early Internet*
 
 Usenet was often used to announce a new service or capability on the Internet, which has largely been replaced by social media. In particular, the groups comp.archives and comp.protocols.tcp-ip were good places to look. Information will drift into other areas as word spreads. See the "Usenet News" for some information on reading news.
 
