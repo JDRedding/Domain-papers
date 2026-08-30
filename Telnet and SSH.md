@@ -2372,3 +2372,248 @@ SSH’s ecosystem is what makes it universal:
 - Multiple integration points  
 
 Telnet never developed anything close to this ecosystem. SSH’s flexibility and extensibility are major reasons it became the foundation of modern secure remote access.
+
+---
+
+## **10. SSH Configuration Examples**
+
+This section provides practical, real-world SSH configuration examples for both clients and servers. These examples illustrate how to customize SSH behavior, improve security, simplify workflows, and manage complex environments. They are designed to be directly usable in modern systems.
+
+---
+
+### **10.1 Client Configuration (`~/.ssh/config`)**
+
+The SSH client configuration file allows users to define shortcuts, preferred algorithms, identity files, and connection behaviors. This makes SSH more convenient and reduces repetitive command-line options.
+
+#### **Basic Host Entry**
+
+```
+Host myserver
+    HostName server.example.com
+    User jd
+    Port 2222
+    IdentityFile ~/.ssh/id_ed25519
+```
+
+Now you can connect with:
+
+```
+ssh myserver
+```
+
+#### **Multiple Hosts with Shared Settings**
+
+```
+Host *.example.com
+    User deploy
+    IdentityFile ~/.ssh/deploy_key
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+```
+
+This applies to all hosts ending in `.example.com`.
+
+#### **Jump Host (ProxyJump)**
+
+```
+Host internal
+    HostName internal.example.com
+    ProxyJump bastion.example.com
+```
+
+This routes the connection through a secure bastion host.
+
+#### **Multiplexing for Faster Connections**
+
+```
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/cm-%r@%h:%p
+    ControlPersist 10m
+```
+
+This speeds up repeated SSH commands and file transfers.
+
+---
+
+### **10.2 Server Configuration (`/etc/ssh/sshd_config`)**
+
+The SSH server configuration file controls authentication, security, forwarding, logging, and session behavior. These examples reflect modern best practices.
+
+#### **Disable Password Authentication**
+
+```
+PasswordAuthentication no
+```
+
+This forces key-based authentication.
+
+#### **Disable Root Login**
+
+```
+PermitRootLogin no
+```
+
+Prevents direct root access.
+
+#### **Restrict Users**
+
+```
+AllowUsers jd adminuser
+```
+
+Only these users may log in.
+
+#### **Strong Cryptography Only**
+
+```
+KexAlgorithms curve25519-sha256
+Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com
+MACs hmac-sha2-512,hmac-sha2-256
+```
+
+Removes outdated algorithms.
+
+#### **Disable Unneeded Features**
+
+```
+X11Forwarding no
+AllowTcpForwarding no
+PermitTunnel no
+```
+
+Reduces attack surface.
+
+#### **Logging and Auditing**
+
+```
+LogLevel VERBOSE
+```
+
+Provides detailed logs for monitoring and security analysis.
+
+---
+
+### **10.3 Forced Commands in `authorized_keys`**
+
+SSH keys can be restricted to a single command, improving security for automation.
+
+#### **Example: Backup Key**
+
+```
+command="/usr/local/bin/backup.sh" ssh-ed25519 AAAA...
+```
+
+This key can only run the backup script.
+
+#### **Example: Git Server Key**
+
+```
+command="git-shell -c \"$SSH_ORIGINAL_COMMAND\"" ssh-ed25519 AAAA...
+```
+
+Used by Git servers to restrict SSH keys to Git operations.
+
+---
+
+### **10.4 SSH Tunneling Examples**
+
+#### **Local Port Forwarding**
+
+Expose a remote service locally:
+
+```
+ssh -L 8080:localhost:80 user@remote
+```
+
+#### **Remote Port Forwarding**
+
+Expose a local service on the remote machine:
+
+```
+ssh -R 9000:localhost:3000 user@remote
+```
+
+#### **Dynamic Port Forwarding (SOCKS Proxy)**
+
+```
+ssh -D 1080 user@remote
+```
+
+Creates a secure proxy for arbitrary TCP traffic.
+
+---
+
+### **10.5 SFTP Subsystem Configuration**
+
+To restrict users to SFTP-only access:
+
+```
+Match User sftpuser
+    ForceCommand internal-sftp
+    ChrootDirectory /srv/sftp
+    AllowTcpForwarding no
+    X11Forwarding no
+```
+
+This is ideal for shared hosting or secure file-drop environments.
+
+---
+
+### **10.6 SSHFS Mount Example**
+
+Mount a remote directory locally:
+
+```
+sshfs user@remote:/srv/data /mnt/data
+```
+
+Useful for development and remote editing.
+
+---
+
+### **10.7 Example: Hardened SSH Server Configuration**
+
+A complete, modern, hardened `sshd_config` example:
+
+```
+Port 22
+Protocol 2
+
+PermitRootLogin no
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+
+AllowUsers jd adminuser
+
+X11Forwarding no
+AllowTcpForwarding no
+PermitTunnel no
+
+ClientAliveInterval 30
+ClientAliveCountMax 3
+
+LogLevel VERBOSE
+
+KexAlgorithms curve25519-sha256
+Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com
+MACs hmac-sha2-512,hmac-sha2-256
+```
+
+This configuration reflects modern best practices for secure deployments.
+
+---
+
+## **10.8 Why Configuration Examples Matter**
+
+These examples show how SSH can be:
+
+- Customized for convenience  
+- Hardened for security  
+- Extended for automation  
+- Restricted for controlled environments  
+- Integrated into modern workflows  
+
+Telnet offered almost no configuration options; SSH provides a rich, flexible system that adapts to nearly any environment.
+
