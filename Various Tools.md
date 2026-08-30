@@ -901,7 +901,7 @@ By the mid‑2000s, Majordomo was largely obsolete, though some legacy systems c
 
 ---
 
-### **8.6 Majordomo**
+### **8.6 Majordomo Legacy**
 
 Majordomo still exists in source archives and retrocomputing circles, but it is no longer used in mainstream environments. Modern mailing list management relies on:
 
