@@ -1,5 +1,7 @@
 # **Anonymous FTP**
 
+> "Was für plundern!" ("What a place to plunder!") Gebhard Leberecht Blucher
+
 FTP (File Transfer Protocol) was one of the earliest and most common methods for transferring files across the Internet. On many systems, “FTP” referred both to the protocol itself and to the client program used to interact with it. With the proper credentials, a user could move files between distant machines—such as from South Africa to Los Angeles—at speeds around 510 KB/s, assuming the systems were configured to allow remote access.
 
 Anonymous FTP let anyone download publicly shared files from a remote computer without needing an account. You logged in using the username **anonymous** and typically supplied your email address as the “password.” Transfer speed depended entirely on the network link and how many people were using it at the same time.
@@ -370,17 +372,17 @@ Repeat `prompt` to turn it back on.
 
 ## 3.3 The archie Server
 
-The archie system, developed at McGill University in Canada, was created to provide a fast, automated way to search the contents of anonymous FTP sites around the world. Over time, it expanded to include additional indexing and lookup services, becoming one of the earliest Internet‑wide search tools.
+The archie system, developed at McGill University in Canada, was created to provide a fast, automated way to search the contents of anonymous FTP sites around the world. Over time, it expanded to include additional indexing and lookup services, becoming one of the earliest Internet‑wide search tools. It provided a fast, automated way to index and search anonymous FTP archives across the globe. Over time, archie expanded to include additional lookup services and became a foundational part of early Internet resource discovery.
 
-Users can access archie through interactive telnet sessions, email queries, or dedicated command‑line and X‑window clients. Email responses can be paired with FTP‑by‑mail services for users who lack direct Internet access.
+Although archie was accessible through telnet, email queries, and dedicated command‑line and X‑window clients, **none of the original archie servers remain online today**. The system survives only as historical software and archived documentation.
 
 ---
 
-## 3.3.1 Using archie Today
+## 3.3.1 Using archie
 
-archie currently indexes more than 800 anonymous FTP archive sites, tracking over a million files—more than 50 gigabytes of material—with new entries added daily. Each site’s listing is refreshed roughly once a month, balancing accuracy with the need to avoid excessive network load.
+During its peak in the early 1990s, archie indexed more than 800 anonymous FTP sites, tracking over a million files—more than 50 gigabytes of material at the time. Each site’s listings were refreshed monthly to balance accuracy with network load.
 
-To use archie interactively, connect via telnet to one of the public servers:
+Historically, users accessed archie by telnetting to one of several public servers, including:
 
 - archie.ans.net (New York, USA)  
 - archie.rutgers.edu (New Jersey, USA)  
@@ -391,101 +393,83 @@ To use archie interactively, connect via telnet to one of the public servers:
 - archie.au (Australia)  
 - archie.doc.ic.ac.uk (Great Britain)
 
-At the `login:` prompt, enter:
+None of these hostnames resolve today; they exist only in archived lists and documentation.
+
+Once connected, users logged in with:
 
 ```
 archie
 ```
 
-You’ll receive a greeting and then an `archie>` prompt. The `help` command explains available operations, including:
+This produced an `archie>` prompt where commands such as:
 
-- `prog` — search for files  
-- `set` — adjust server options  
-- `quit` — exit the session  
+- `prog` — search for filenames  
+- `set` — adjust query parameters  
+- `quit` — exit  
 
-For example, searching for the X‑Windows program *vine*:
+were available.
+
+A typical query looked like:
 
 ```
 prog vine.tar.Z
 ```
 
-A typical result:
-
-```
-Host ftp.uu.net (137.39.1.9)
-Last updated 10:30 7 Jan 1992
-Location: /packages/X/contrib
-FILE rw-r--r-- 15548 Oct 8 20:29 vine.tar.Z
-
-Host nic.funet.fi (128.214.6.100)
-Last updated 05:07 4 Jan 1992
-Location: /pub/X11/contrib
-FILE rw-rw-r-- 15548 Nov 8 03:25 vine.tar.Z
-```
+and returned a list of FTP sites hosting that file.
 
 ---
 
 ## 3.3.2 archie Clients
 
-Two mainstream clients exist:
+Two primary clients existed:
 
 - **archie** — command‑line interface  
 - **xarchie** — X‑Windows graphical interface  
 
-These tools query the archie databases directly, without requiring a telnet session. For example:
+These tools queried archie servers directly without requiring a telnet session. For example:
 
 ```
 % archie vine.tar.Z
 Host athene.uni-paderborn.de
 Location: /local/X11/more_contrib
 FILE -rw-r--r-- 18854 Nov 15 1990 vine.tar.Z
-
-Host emx.utexas.edu
-Location: /pub/mnt/source/games
-FILE -rw-r--r-- 12019 May 7 1988 vine.tar.Z
-
-Host export.lcs.mit.edu
-Location: /contrib
-FILE -rw-r--r-- 15548 Oct 9 00:29 vine.tar.Z
 ```
 
-If your system administrator hasn’t installed these clients, their source code is available on all archie servers under `archie/clients`. The X‑Windows client is more intuitive—consult its manual page if available.
+Today, these clients are purely historical artifacts. Their source code still exists in software archives, but they cannot function without a live archie server.
 
 ---
 
 ## 3.3.3 Mailing archie
 
-Users with email‑only Internet access can query archie by sending a message to:
+archie once supported email‑based queries for users without direct Internet access. Messages sent to:
 
 ```
 archie@archie.mcgill.ca
 ```
 
-Include the single word:
+returned automated responses describing how to perform searches and how to use FTP‑by‑mail services.
 
-```
-help
-```
-
-The server will reply with instructions for email‑based queries and details on using FTP‑by‑mail services. Most commands available in the telnet interface also work through email.
+This address is no longer active, and the mail‑based interface is preserved only in documentation.
 
 ---
 
 ## 3.3.4 The whatis Database
 
-Beyond FTP listings, archie provides access to the *whatis* database—a catalog of more than 3,500 public‑domain software packages, datasets, and informational documents, each with a brief description.
+In addition to FTP listings, archie provided access to the *whatis* database—a catalog of more than 3,500 public‑domain software packages, datasets, and informational documents.
 
-Future expansions are planned, including:
+Planned expansions included:
 
 - online library catalog program listings  
 - directories of public mailing lists  
 - collections of Frequently Asked Questions (FAQ) documents  
 - archive locations for major Usenet newsgroups  
 
-Suggestions for new entries or additional databases can be emailed to:
+These plans were overtaken by the rise of modern web search engines, and archie development ceased.
+
+Suggestions were once sent to:
 
 ```
 archie-l@cs.mcgill.ca
 ```
 
----
+but this mailing list is no longer active.
