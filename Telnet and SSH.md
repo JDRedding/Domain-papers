@@ -953,3 +953,136 @@ SSH dominates modern remote access because it provides:
 It is the backbone of modern system administration, cloud computing, DevOps pipelines, and secure remote work.
 
 ---
+
+### **6.5 — Secure File Transfer with SCP and SFTP**
+
+SSH doesn’t just replace Telnet — it also replaces FTP. Modern systems use SSH‑based file transfer tools that provide encryption, integrity protection, and authentication. The two primary methods are **SCP** and **SFTP**, both built on top of SSH’s secure transport layer.
+
+---
+
+#### **6.5.1 SCP: Secure Copy Protocol**
+
+SCP is the simplest SSH‑based file transfer tool. It behaves like the classic Unix `cp` command, but copies files between machines over an encrypted SSH connection.
+
+##### **Basic usage**
+
+Copy a file from local → remote:
+
+```
+scp file.txt user@host:/path/
+```
+
+Copy from remote → local:
+
+```
+scp user@host:/path/file.txt .
+```
+
+Copy directories recursively:
+
+```
+scp -r project/ user@host:/srv/
+```
+
+##### **Why SCP matters**
+
+- Encrypted file transfer  
+- Simple syntax  
+- Works anywhere SSH works  
+- Ideal for quick, one‑off transfers  
+
+SCP is conceptually similar to FTP’s “put” and “get,” but with modern security.
+
+---
+
+#### **6.5.2 SFTP: SSH File Transfer Protocol**
+
+SFTP is a more advanced, interactive file transfer subsystem that runs entirely inside an SSH session. It provides a structured, FTP‑like environment but with encryption and modern reliability.
+
+##### **Starting an SFTP session**
+
+```
+sftp user@host
+```
+
+Once connected, you get an interactive prompt:
+
+```
+sftp>
+```
+
+##### **Common commands**
+
+- `ls` — list remote files  
+- `cd` — change remote directory  
+- `get file` — download  
+- `put file` — upload  
+- `mkdir dir` — create remote directory  
+- `rm file` — delete remote file  
+
+##### **Why SFTP matters**
+
+- Fully encrypted  
+- Supports resume, metadata, permissions  
+- Works through firewalls more reliably than FTP  
+- No separate control/data channels  
+- No plaintext credentials  
+
+SFTP is the modern, secure replacement for FTP in nearly all environments.
+
+---
+
+#### **6.5.3 SSHFS: Mounting Remote Filesystems**
+
+SSHFS (SSH Filesystem) allows you to mount a remote directory as if it were part of your local filesystem:
+
+```
+sshfs user@host:/remote/path /local/mountpoint
+```
+
+This is extremely useful for:
+
+- Development  
+- Remote editing  
+- Cloud server administration  
+- Lightweight distributed workflows  
+
+SSHFS uses SFTP under the hood, giving you a secure, encrypted remote filesystem.
+
+---
+
+#### **6.5.4 Why SSH File Transfer Replaced FTP**
+
+FTP’s problems are the same as Telnet’s:
+
+- Plaintext passwords  
+- Plaintext data  
+- No integrity protection  
+- Complicated firewall behavior  
+- Separate control/data channels  
+- No modern authentication methods  
+
+SSH‑based file transfer solves all of these:
+
+- Encrypted transport  
+- Key‑based authentication  
+- Simple firewall behavior (single port)  
+- Strong integrity checks  
+- Modern cryptography  
+- Works anywhere SSH works  
+
+This is why SCP, SFTP, and SSHFS dominate modern file transfer workflows.
+
+---
+
+#### **6.5.5 Integration with Automation and DevOps**
+
+SSH‑based file transfer is widely used in:
+
+- Deployment pipelines  
+- Configuration management  
+- Backup systems  
+- Cloud provisioning  
+- CI/CD workflows  
+
+Key‑based authentication allows secure automation without storing plaintext passwords, making SSH essential for modern infrastructure.
