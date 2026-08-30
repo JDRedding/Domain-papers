@@ -1,6 +1,5 @@
 # A Stick in Throat (如鲠在喉)
-
-Several interlocking operational systems, but no release the full Combat Results Tables, exact modifier tables, or closed-form equations from the rulebook. The mathematics that is public is therefore the structure of those systems rather than every coefficient.
+"A Stick in Throat" (如鲠在喉) os a Chinese WWII Mediterranean naval wargame by KiloVolt Design covering 1940-1942 operations. Several interlocking operational systems, but no release the full Combat Results Tables, exact modifier tables, or closed-form equations from the rulebook. The mathematics that is public is therefore the structure of those systems rather than every coefficient.
 
 Because the game uses tables and discrete modifiers rather than a single continuous equation, the most precise “formulas” remain those printed on the physical components. The structure is the mathematical skeleton that those tables implement.
 
