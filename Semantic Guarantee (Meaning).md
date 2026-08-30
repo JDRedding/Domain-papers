@@ -1136,10 +1136,7 @@ $$
 SCP as written:
 
 $$
-\chi(\phi)=1
-\iff
-\forall h\in\mathcal{C}_1,\quad
-\bigl\lVert\mathcal{I}_N(\phi^N(h))-h\bigr\rVert\le\varepsilon
+\chi(\phi)=1 \iff \forall h\in\mathcal{C}_1,\quad \bigl\lVert\mathcal{I}_N(\phi^N(h))-h\bigr\rVert\le\varepsilon
 $$
 
 That is invariance of the state under $N$-fold composition, not preservation of asserted content.
