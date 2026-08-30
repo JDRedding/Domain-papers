@@ -631,3 +631,93 @@ When creating a summary:
 A good summary is a service to the entire group. A bad one is just another pile of noise.
 
 ---
+
+Here’s a rewritten, modernized version of **4.13.7 through 4.13.10** — still blunt, still culturally accurate, still unmistakably Usenet‑native — but clearer, tighter, and updated for 2026. I’ve preserved the spirit: quote responsibly, crosspost sparingly, avoid stale “news,” and write like someone who respects the reader’s time.
+
+---
+
+### **13.7 Quoting**
+
+When you reply to an article, most newsreaders automatically quote the original text with a `> ` prefix:
+
+```
+In article <1232@foo.bar.com>, sharon@foo.bar.com wrote:
+> I agree, I think basketweaving's really catching on,
+> particularly in Pennsylvania. Here’s a list of every person
+> in PA that currently engages in it publicly:
+...
+```
+
+This example is intentionally awful — quoting an entire article, especially a long one, is inconsiderate.
+
+**The rule:**  
+Quote **only** what is directly relevant to your reply.  
+Never alter someone’s words, but trim everything that doesn’t matter.
+
+Readers should immediately understand what point you’re addressing. Quoting the entire article forces them to scroll past redundant text and wastes bandwidth. Signatures from the original post should always be removed; everyone already knows who wrote it.
+
+Avoid tedious, line‑by‑line rebuttals. Respond to the argument as a whole or to a few key points. Picking apart every sentence only demonstrates that you have too much free time.
+
+If a flame war begins — insults, personal attacks, escalating hostility — **take it to email**. No one wants to watch two people bicker in public.
+
+---
+
+### **13.8 Crossposting**
+
+The `Newsgroups:` header can list multiple groups:
+
+```
+Newsgroups: sci.space, comp.simulation
+```
+
+This posts the article to both groups. Crossposting is acceptable **in moderation** — usually up to three or four groups. More than that is considered excessive noise.
+
+If you crosspost, include a **Followup-To:** header to direct the discussion to a single group:
+
+```
+Followup-To: sci.space
+```
+
+This keeps the conversation coherent instead of scattering replies across multiple groups.
+
+If you want all replies to go **only to you**, not to any group, set:
+
+```
+Followup-To: poster
+```
+
+Many newsreaders interpret this as “send replies by email.” This is commonly used for:
+
+- questions that will later be summarized  
+- votes  
+- announcements  
+- anything where group-wide followups would be clutter
+
+---
+
+### **13.9 Recent News**
+
+Avoid posting breaking news — sports scores, accidents, political events, anything people will see on TV or in the morning paper.
+
+By the time your article propagates across Usenet, the information will be stale. This is one reason “Usenet news” is a misnomer; Usenet is a discussion medium, not a real-time newswire.
+
+(Commercial services like **Clarinet** historically provided actual news in Usenet format, but that was a separate, paid offering.)
+
+---
+
+### **13.10 Quality of Postings**
+
+How you write determines how people perceive you on Usenet. You are your words.
+
+If your spelling is weak, keep a dictionary nearby. If grammar or punctuation is a challenge, invest in a basic writing guide. Clear writing earns respect; sloppy writing signals that you don’t care.
+
+When asking questions, be specific. Vague or ambiguous posts often receive no replies. Provide the essential details people need to help you — but don’t drown them in irrelevant information.
+
+For example:
+
+- If your question depends on your operating system, include it.  
+- If your question does **not** depend on your printer, scanner, webcam, and six USB gadgets, don’t list them.
+
+Clarity, brevity, and relevance are the hallmarks of good Usenet posts.
+
+---
