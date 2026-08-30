@@ -1845,4 +1845,123 @@ This timeline shows the **progressive layering** of commercial services:
 
 ---
 
+## 📘 Appendix IV — Key Companies and Their Early Internet Contributions  
+
+These companies collectively transformed the Internet from a research network into a commercial ecosystem. Their contributions span connectivity, communication, distribution, security, hosting, and commerce — the full stack of early Internet commercialization.
+
+---
+
+### Backbone & Connectivity Providers
+
+- **UUNET** — One of the first commercial Internet backbone providers; sold UUCP links, NNTP feeds, leased lines, and full TCP/IP connectivity. Critical in transitioning the Internet from research‑only to commercial use.
+
+- **PSI (Performance Systems International)** — Early nationwide ISP offering SLIP/PPP access, Usenet feeds, and commercial backbone services.
+
+- **ANS** — Operated the ANS CO+RE backbone, enabling commercial traffic to coexist with NSFNET research traffic.
+
+- **Sprintlink** — One of the first telecom carriers to offer commercial Internet backbone connectivity.
+
+- **MCI** — Provided early commercial Internet access and later became a major backbone operator.
+
+---
+
+### Online Service Providers (Pre‑Web Ecosystems)
+
+- **AOL** — Provided email, chat rooms, forums, news, and later full Internet access; introduced millions to online communication.
+
+- **CompuServe** — Offered forums, email, news, technical support, and early online shopping; a major commercial online ecosystem.
+
+- **Prodigy** — Early graphical online service with news, shopping, and email; pioneering consumer‑friendly interfaces.
+
+- **GEnie** — GE’s online service offering forums, multiplayer games, and early digital communities.
+
+- **Delphi** — One of the first online services to offer full Internet access to consumers.
+
+---
+
+### Email & Messaging Providers
+
+- **MCI Mail** — One of the first commercial email systems; first commercial service connected to the Internet via SMTP.
+
+- **SprintMail** — Corporate email service offering X.400 and SMTP gateways.
+
+- **AT&T Mail** — Provided commercial email and messaging services for enterprises.
+
+- **AppleLink/GEIS** — Apple’s commercial messaging and support network, later migrated to GE’s Information Services.
+
+---
+
+### Usenet & News Distribution
+
+- **UUNET** — Sold full‑feed Usenet distribution with guaranteed retention.
+
+- **PSI** — Provided commercial NNTP feeds and Usenet access.
+
+- **ClariNet** — First commercial online news service distributed via Usenet; sold AP‑like news feeds.
+
+---
+
+### FTP Archives & Software Distribution
+
+- **Walnut Creek CDROM** — Distributed massive software collections via FTP and CD‑ROM; hosted early Linux and BSD archives.
+
+- **Simtel** — One of the largest shareware archives; widely mirrored via FTP.
+
+- **Sun Microsystems** — Hosted vendor FTP sites distributing patches, drivers, and documentation.
+
+- **DEC** — Provided Ultrix‑based FTP archives for software and documentation.
+
+---
+
+### Search & Indexing
+
+- **Thinking Machines Corporation** — Developed WAIS, one of the first distributed full‑text search systems.
+
+- **Archie Group (McGill University)** — Created Archie, the first Internet search engine; commercial variants offered enhanced indexing.
+
+- **Gopher Index Services** — Provided commercial Gopher indexing and curated hierarchies.
+
+---
+
+### Security, Encryption & Access Control
+
+- **RSA Data Security** — Sold licensed implementations of RSA, DES, and other cryptographic algorithms.
+
+- **ViaCrypt** — Sold the commercial version of PGP before open distribution was widespread.
+
+- **Check Point** — Released FireWall‑1 (1994), one of the first commercial firewalls.
+
+- **Trusted Information Systems (TIS)** — Created the Firewall Toolkit (FWTK), a foundational proxy‑based security system.
+
+- **Raptor Systems** — Early commercial firewall vendor specializing in proxy‑based gateways.
+
+- **RSA SecurID** — Introduced time‑based two‑factor authentication tokens.
+
+---
+
+### E‑Commerce & Digital Transactions
+
+- **AOL Marketplace** — Early graphical shopping environment.
+
+- **CompuServe Mall** — One of the first online shopping systems.
+
+- **Prodigy Shopping** — Early consumer‑oriented online retail experiments.
+
+- **Amazon** — Launched 1995; first major web‑native e‑commerce company.
+
+- **eBay** — Launched 1995; pioneered online auctions and peer‑to‑peer commerce.
+
+---
+
+### Web Hosting & Domain Services
+
+- **Netcom** — Offered early personal web pages, CGI support, and domain hosting.
+
+- **MindSpring** — Provided early web hosting and strong customer support.
+
+- **Demon Internet** — UK ISP offering full TCP/IP hosting and early domain services.
+
+- **Network Solutions** — Managed domain registration under InterNIC; became the first commercial domain registrar.
+
+---
 
