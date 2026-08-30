@@ -44,6 +44,65 @@ This is why many historians mark **1995** as the year Internet commerce became v
 
 In short: **once alternative networks existed, the policy barrier fell, and commercial activity surged.**
 
+## **Electronic Journals**  
+Electronic scholarly publishing today is built on web‑native platforms, open‑access repositories, and globally indexed databases—but its roots trace back to a much earlier era when academic communication depended on LISTSERV mailing lists, BITNET servers, and printed directories. The Association of Research Libraries (**ARL**) played a central role in that transition, evolving from a curator of early electronic lists to a steward of modern digital scholarship infrastructure.
+
+---
+
+### 🌐 Modern Landscape  
+Researchers now access electronic journals through:
+
+- University library portals  
+- Open‑access platforms like **arXiv** and **PubMed_Central**  
+- Publisher websites and digital repositories  
+- Aggregated indexes such as **DOAJ** and **Crossref**  
+
+Subscription management, discovery tools, and metadata standards have replaced the command‑driven systems of the early Internet. Instead of sending retrieval commands to a BITNET address, researchers browse searchable catalogs, receive automated alerts, and participate in web‑based scholarly communities.
+
+---
+
+### 🕰️ Historical Backbone   
+Before the web matured, ARL published a hard‑copy directory of electronic journals, newsletters, and scholarly discussion lists. This directory consolidated:
+
+- Hundreds of academic LISTSERV lists  
+- Dozens of early electronic journals  
+- Newsletter digests and other digital publications  
+
+Each entry included instructions for accessing the publication—often through LISTSERV commands sent to servers such as *LISTSERV@OTTAWA.BITNET*. Users retrieved electronic copies of the directory by issuing commands like:
+
+```
+get ejournl1 directry
+get ejournl2 directry
+```
+
+These systems were foundational for early digital scholarship, providing structure and discoverability at a time when the Internet lacked unified search tools.
+
+ARL also distributed the directory in print and on diskette formats (DOS WordPerfect and MacWord), alongside Diane Kovacs’s *Directories of Academic E‑Mail Conferences*, which cataloged academic discussion groups across BITNET and early Internet networks.
+
+The distribution office was:
+
+**Office of Scientific & Academic Publishing**  
+Association of Research Libraries  
+1527 New Hampshire Avenue, NW  
+Washington, DC 20036  
+Email: ARLHQ@UMDC.BITNET  
+Phone: (202) 232‑2466  
+Fax: (202) 462‑7849
+
+ARL, representing more than one hundred research libraries in the U.S. and Canada, offered these publications at modest cost, with discounts for bulk orders.
+
+---
+
+### 🔗 Continuity Into the Present  
+While the technologies have changed, ARL’s mission remains consistent: supporting access to scholarly communication. Today, ARL focuses on:
+
+- Digital preservation  
+- Open scholarship initiatives  
+- Metadata standards  
+- Research library advocacy  
+- Infrastructure for electronic publishing  
+
+The early directories served as precursors to modern discovery systems, marking the transition from command‑line academic networks to the fully web‑integrated scholarly ecosystem researchers use today.
 
 ## References and further reading
 -  [ftp.sunet.se policies-procedures/nsf.net/nsf.policy](https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/doc/Internet-documents/policies-procedures/nsf.net/nsf.policy)
