@@ -76,7 +76,7 @@ Below is a structured breakdown of what those topics typically include, some old
 
 - **Usenet** — One of the earliest discussion systems; still exists today. Usenet is a pioneering global discussion system that originated in 1980 and continues to exist today, primarily through specialized servers and internet providers.
 
-- **Early Web Browsers** — Mosaic, Netscape, and the graphical web.  
+- **Early Web Browsers** — Mosaic, Netscape, and the graphical web. Mosaic and Netscape played crucial roles in transforming the World Wide Web into a graphical, user-friendly medium, paving the way for widespread internet adoption. Both Mosaic and Netscape are remembered for pioneering innovation: Mosaic for introducing inline images and easy navigation, Netscape for widespread adoption, scripting, and influence on web standards. Netscape's architecture and development philosophies influenced later browsers like Mozilla and eventually Firefox, while the graphical approach established by these early browsers remains a foundational principle of web design today. In summary, Mosaic and Netscape transformed the web from a niche, text-based network into a visually engaging and user-friendly environment, laying critical groundwork for the internet we use today.
 
 - **Netiquette** — Early norms for polite online communication.  
 
