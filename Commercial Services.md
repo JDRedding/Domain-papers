@@ -1776,4 +1776,73 @@ This timeline shows the **progressive layering** of commercial services:
 
 ---
 
+## 📚 Appendix III — Glossary of Early Commercial Internet Terms  
+---
+
+### Glossary (A–Z)
+
+- **AOL** — America Online; one of the largest proprietary online services offering email, chat rooms, forums, news, and later full Internet access.
+
+- **ANS CO+RE** — Advanced Network & Services’ commercial backbone that bridged NSFNET research traffic with paid commercial Internet traffic.
+
+- **Archie** — The first Internet search engine; indexed filenames on FTP servers.
+
+- **BBS (Bulletin Board System)** — Dial‑up systems offering messaging, file libraries, games, and paid subscriptions; predecessors to modern forums.
+
+- **CGI** — Common Gateway Interface; early method for creating dynamic web content using scripts (Perl, C, shell).
+
+- **ClariNet** — The first commercial online news service distributed via Usenet; sold subscriptions to AP‑like news feeds.
+
+- **CompuServe** — Major proprietary online service offering forums, email, news, and early e‑commerce.
+
+- **Demon Internet** — UK ISP offering full TCP/IP access to individuals and businesses.
+
+- **Dial‑up Access** — Connecting to online services or ISPs using a modem over telephone lines.
+
+- **FidoNet** — Global network linking BBSes using store‑and‑forward messaging; enabled worldwide communication before the Internet was widely available.
+
+- **FTP Archives** — Vendor or commercial repositories distributing software, drivers, patches, and documentation via FTP.
+
+- **GEnie** — General Electric’s online service offering forums, games, and early online communities.
+
+- **Gopher** — Menu‑driven information system predating the web; used by commercial indexers and curated content providers.
+
+- **ISP (Internet Service Provider)** — Companies selling Internet access, hosting, email, Usenet, and domain services.
+
+- **MCI Mail** — One of the first commercial email services; first commercial system connected to the Internet via SMTP.
+
+- **NNTP** — Network News Transfer Protocol; used for distributing Usenet articles.
+
+- **NSFNET** — U.S. research backbone that prohibited commercial traffic until the early 1990s; shut down in 1995.
+
+- **Online Service Provider** — Proprietary online ecosystems (AOL, CompuServe, Prodigy) offering curated content and paid access.
+
+- **PPP** — Point‑to‑Point Protocol; enabled full TCP/IP connectivity over dial‑up, allowing graphical web browsing.
+
+- **Prodigy** — IBM/Sears online service known for its graphical interface and early online shopping experiments.
+
+- **RSA Data Security** — Company selling licensed implementations of RSA, DES, and other cryptographic algorithms.
+
+- **SecurID** — Early two‑factor authentication system using time‑based tokens.
+
+- **SLIP** — Serial Line Internet Protocol; predecessor to PPP; provided early TCP/IP over dial‑up.
+
+- **SMTP** — Simple Mail Transfer Protocol; standardized email delivery; enabled commercial email systems to interoperate.
+
+- **T1 Line** — High‑speed leased line used by early ISPs and businesses for Internet connectivity.
+
+- **Telnet Storefront** — Text‑based commercial shopping systems accessible via telnet before web browsers existed.
+
+- **UUNET** — One of the first commercial Internet backbone providers; sold Usenet feeds, UUCP links, and full TCP/IP access.
+
+- **Usenet** — Distributed discussion system used for global messaging; commercial providers sold full‑feed access.
+
+- **ViaCrypt PGP** — Commercial version of Pretty Good Privacy sold before PGP became widely available.
+
+- **WAIS** — Wide Area Information Server; early distributed full‑text search system used commercially for indexing documents.
+
+- **Web Hosting** — Early commercial service offering HTML storage, CGI, domain hosting, and later SSL.
+
+---
+
 
