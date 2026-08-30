@@ -756,6 +756,12 @@ The spirit of the IRG lives on, but the scale and diversity of today’s Interne
 
 ## 5 Requests for Comments (RFCs) 
 
+> "I've seed de first an de last......I seed de beginnin,
+> en now I sees de endin."
+> William Faulkner,
+> The Sound & The Fury,
+> April 8,1928
+
 **Requests for Comments** (RFCs) are the official documents that define the architecture, protocols, standards, and best practices of the Internet. They remain one of the most important bodies of technical literature in computing. While the spirit of the RFC process is unchanged since the early ARPANET era, the workflow, governance, and distribution mechanisms have evolved significantly.
 
 ### 🎯 What RFCs Are  
