@@ -53,7 +53,7 @@ In short: **once alternative networks existed, the policy barrier fell, and comm
 ## 🌐 Commercial Internet Connectivity Providers 
 **ISPs & Backbone Services**
 
-This is a **core pillar** of the commercial Internet. This service makes everything else — email, Usenet, FTP archives, WAIS, ClariNet, commercial databases — marketable goods for the private. They all depended on one thing: **commercial Internet connectivity**. As soon as NSFNET relaxed its Acceptable Use Policy and allowed non‑research traffic, a wave of private companies stepped in to sell dial‑up access, leased lines, backbone connectivity, and routing services. This is wher the Internet shifted from a research network to a commercial utility.
+This is a **core pillar** of the commercial Internet. This service makes everything else — email, Usenet, FTP archives, WAIS, ClariNet, commercial databases — marketable goods for the private sector. They all depended on one thing: **commercial Internet connectivity**. As soon as NSFNET relaxed its Acceptable Use Policy and allowed non‑research traffic, a wave of private companies stepped in to sell dial‑up access, leased lines, backbone connectivity, and routing services. This is wher the Internet shifted from a research network to a commercial utility.
 
 ---
 
