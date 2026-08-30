@@ -1675,7 +1675,7 @@ This makes SSH the primary entry point for cloud server administration.
 
 SSH is central to DevOps workflows because it enables secure, scriptable remote execution.
 
-### **Common DevOps uses**
+##### **Common DevOps uses**
 
 - Running remote commands during deployments  
 - Restarting services across clusters  
