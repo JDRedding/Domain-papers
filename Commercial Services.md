@@ -104,5 +104,58 @@ While the technologies have changed, ARL’s mission remains consistent: support
 
 The early directories served as precursors to modern discovery systems, marking the transition from command‑line academic networks to the fully web‑integrated scholarly ecosystem researchers use today.
 
+---
+
+## **Commercial Databases**  
+
+Modern scientific research relies on web‑based discovery platforms, integrated search tools, and publisher‑maintained databases—but many of these systems trace their lineage back to early, terminal‑driven services operated by professional societies. One of the most influential examples was the American Institute of Physics (**AIP**) and its early online resource, the *Physics Information Network*.
+
+---
+
+### ⚛️ Modern Context  
+Today, physicists access bibliographic databases and abstracts through:
+
+- **Web‑based indexing services** like Scopus, Web of Science, and INSPIRE‑HEP  
+- **Publisher platforms** such as AIP Publishing, APS journals, and IOPscience  
+- **Open repositories** including **arXiv**  
+- **Searchable job boards** and announcement hubs integrated directly into society websites  
+
+These systems provide full‑text access, citation tools, alerts, and APIs—far beyond the capabilities of early telnet‑based services.
+
+---
+
+### 🕰️ Historical Backbone 
+Before the web era, the American Institute of Physics operated the **Physics Information Network (PINET)**, an early online gateway for physics literature and community resources. PINET provided access to:
+
+- The **SPIN** bibliographic database  
+- **General Physics Advanced Abstracts**  
+- Bulletin boards  
+- Searchable lists of job postings, announcements, and other community information  
+
+Researchers connected by telnet to:
+
+```
+pinet.aip.org
+```
+
+New users logged in as `NEW` and completed a registration process—an early precursor to modern account creation on scientific portals.
+
+PINET was one of the first discipline‑specific online databases, offering structured access to physics abstracts long before web browsers existed. It helped establish the model for centralized scholarly information services that later migrated to graphical interfaces and web‑native platforms.
+
+---
+
+### 🔗 Continuity Into the Present  
+AIP’s modern platforms continue the mission of PINET, now offering:
+
+- Searchable journal archives  
+- Citation tools and metadata services  
+- Integrated physics job boards  
+- Digital conference proceedings  
+- APIs for bibliographic retrieval  
+
+The shift from telnet terminals to web‑based systems reflects the broader evolution of scientific communication—from command‑line access to globally indexed, fully digital research ecosystems.
+
+---
+
 ## References and further reading
 -  [ftp.sunet.se policies-procedures/nsf.net/nsf.policy](https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/doc/Internet-documents/policies-procedures/nsf.net/nsf.policy)
