@@ -384,7 +384,7 @@ Understanding these reputations helps you predict where your posts will propagat
 
 ---
 
-# **9 Moderated vs Unmoderated**
+## **9 Moderated vs Unmoderated**
 
 A number of newsgroups require discussions to stay focused, civil, or on‑topic. To meet that need, **moderated groups** were created.
 
