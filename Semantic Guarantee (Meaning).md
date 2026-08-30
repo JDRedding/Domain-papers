@@ -41,6 +41,40 @@ $$
 
 with **H** the Hilbert space of observables over semantic nodes. FSST therefore offers a mathematically rigorous substrate for analyzing semantic dynamics, providing drift observables and operator‑level structure that can be attached to external checkers and falsifiable tests.
 
+---
+
+| **Formula** | **Constraint** |
+| --- | --- |
+| $S_t=(X,d_t,P_t)$ | **Semantic State:** Defines the full geometric substrate at time $t$, consisting of semantic entities $X$, a time‑varying distance metric $d_t$ capturing neighborhood structure, and a diffusion operator $P_t$ describing how meaning propagates locally. This triad is the foundational object FSST uses to measure drift, curvature, and rewiring. |
+| $g_{t+1}=K g_t$; $\dfrac{dg}{dt}=K g$ | **Semantic Evolution:** Models semantic change as the evolution of observables under the Koopman operator $K$. The discrete form captures stepwise drift, while the continuous form expresses infinitesimal semantic flow. Both allow nonlinear semantic dynamics to be analyzed through linear operator theory. |
+| $K_\phi(f)=f\circ\phi$ | **Operator Lifting:** Converts a nonlinear transformation $\phi$ of semantic space into a linear operator acting on observables. This lifting is what enables spectral analysis, invariant‑subspace identification, and long‑horizon prediction of semantic trajectories. |
+| $K_\phi v_i=\lambda_i v_i$ | **Spectral Modes:** Eigenvectors $v_i$ represent persistent semantic modes or conceptual axes; eigenvalues $\lambda_i$ quantify their stability, decay, or amplification over time. High‑magnitude modes dominate semantic evolution and are critical for drift auditing. |
+| $h_{t+1}\approx\hat K_\phi h_t$ | **Latent Dynamics:** Approximates continuous latent‑state transitions using a linearized Koopman operator $\hat K_\phi$. This provides a tractable way to analyze hidden‑state evolution in neural systems and to detect instability or divergence. |
+| $\rho(\hat K_\phi)\le 1$ | **Identity Persistence:** Requires the spectral radius of the lifted operator to remain ≤ 1, ensuring bounded semantic evolution. Violations indicate unstable drift, loss of semantic coherence, or runaway amplification of latent modes. |
+| $\chi(\phi)=1 \iff \mathrm{SCP}(\phi,h)$ [See note] | **Commitment Invariance:** Ensures that a transformation $\phi$ preserves dialogical commitments. The updated state must retain all prior commitments and introduce no contradictions. This is the formal backbone of dialogical guarantees. |
+| $L=\sum\|K_\phi(f_i)-f_j\|^2$ | **Semantic Invariance (Vision):** A contrastive loss enforcing that semantically related visual features remain close under operator‑induced transformations. Used in weakly supervised vision to maintain geometric coherence across frames or augmentations. |
+| $\mathrm{Grounded}(c)\iff\exists s\in R(y)\cup K\text{ such that }s\models c\text{ and }s\text{ is cited}$ | **Referential Grounding:** A factual claim $c$ is grounded only if supported by a retrieved span or knowledge‑base assertion $s$, and the system explicitly cites that support. This is the core of referential guarantees. |
+| $\Gamma_t\cup\{\text{output}\}\not\models\bot$ | **Dialogical Verification:** Ensures the generated output does not contradict the current commitment set $\Gamma_t$. Any contradiction triggers guarantee withdrawal and requires revision or quarantine. |
+| $D_{\mathrm{rw}}(x;t,t+\Delta)\le T_D$ | **Drift Auditing:** Enforces geometric stability by requiring drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass) to remain below a pre‑registered threshold $T_D$. Violations indicate semantic instability. |
+| $S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}$ | **Aggregate Verification Score:** Computes a weighted semantic‑verification score combining referential grounding, dialogical consistency, spectral stability, and geometric drift. The weights $\alpha,\beta,\gamma,\delta$ determine the relative influence of each channel. |
+| $\text{emit}\iff S_{\mathrm{ground}}\ge\tau_g\wedge S_{\mathrm{consist}}\ge\tau_c\wedge S_{\mathrm{sem}}\ge\tau$ | **Decision Rule:** Hard‑gate emission logic. An output is emitted only if grounding, consistency, and aggregate semantic score all exceed their respective thresholds. Failure in any channel results in rejection, revision, or quarantine. |
+
+* Note: $\chi(\phi)=1$ iff<br>$\Gamma(\phi(h))\supseteq\Gamma(h)$ and<br>$\Gamma(\phi(h)\not\models\bot$
+
+---
+
+**1. FSST formulas define the substrate, not the guarantees.**  
+The first six formulas describe the geometry and operator‑theoretic machinery that TruthSense *audits*. They are not themselves guarantee mechanisms; they are measurable quantities that can be falsified.
+
+**2. TruthSense formulas define the verification layer.**  
+The grounding, dialogical, drift, and scoring formulas are the actual guarantee mechanisms. They define what is checked, how it is checked, and when a guarantee is withdrawn.
+
+**3. The aggregate score formula is the bridge between geometry and verification.**  
+It allows geometric drift, spectral stability, and factual grounding to be combined into a single quantitative signal.
+
+**4. The decision rule is the only place where guarantees become operational.**  
+Everything above it is measurement; the decision rule is enforcement.
+
 ## Syntactic vs. Semantic Guarantees
 
 A semantic guarantee applies only where the system can perform **external, falsifiable checks** on the content of an output. It does not preserve “meaning” in the philosophical sense; it preserves **verified relationships** that can be audited.
@@ -90,40 +124,6 @@ A semantic guarantee ensures **verifiable constraints**:
 
 Meaning preservation is not guaranteed.  
 Only **checkable relationships** are.
-
----
-
-| **Formula** | **Constraint** |
-| --- | --- |
-| $S_t=(X,d_t,P_t)$ | **Semantic State:** Defines the full geometric substrate at time $t$, consisting of semantic entities $X$, a time‑varying distance metric $d_t$ capturing neighborhood structure, and a diffusion operator $P_t$ describing how meaning propagates locally. This triad is the foundational object FSST uses to measure drift, curvature, and rewiring. |
-| $g_{t+1}=K g_t$; $\dfrac{dg}{dt}=K g$ | **Semantic Evolution:** Models semantic change as the evolution of observables under the Koopman operator $K$. The discrete form captures stepwise drift, while the continuous form expresses infinitesimal semantic flow. Both allow nonlinear semantic dynamics to be analyzed through linear operator theory. |
-| $K_\phi(f)=f\circ\phi$ | **Operator Lifting:** Converts a nonlinear transformation $\phi$ of semantic space into a linear operator acting on observables. This lifting is what enables spectral analysis, invariant‑subspace identification, and long‑horizon prediction of semantic trajectories. |
-| $K_\phi v_i=\lambda_i v_i$ | **Spectral Modes:** Eigenvectors $v_i$ represent persistent semantic modes or conceptual axes; eigenvalues $\lambda_i$ quantify their stability, decay, or amplification over time. High‑magnitude modes dominate semantic evolution and are critical for drift auditing. |
-| $h_{t+1}\approx\hat K_\phi h_t$ | **Latent Dynamics:** Approximates continuous latent‑state transitions using a linearized Koopman operator $\hat K_\phi$. This provides a tractable way to analyze hidden‑state evolution in neural systems and to detect instability or divergence. |
-| $\rho(\hat K_\phi)\le 1$ | **Identity Persistence:** Requires the spectral radius of the lifted operator to remain ≤ 1, ensuring bounded semantic evolution. Violations indicate unstable drift, loss of semantic coherence, or runaway amplification of latent modes. |
-| $\chi(\phi)=1 \iff \mathrm{SCP}(\phi,h)$ [See note] | **Commitment Invariance:** Ensures that a transformation $\phi$ preserves dialogical commitments. The updated state must retain all prior commitments and introduce no contradictions. This is the formal backbone of dialogical guarantees. |
-| $L=\sum\|K_\phi(f_i)-f_j\|^2$ | **Semantic Invariance (Vision):** A contrastive loss enforcing that semantically related visual features remain close under operator‑induced transformations. Used in weakly supervised vision to maintain geometric coherence across frames or augmentations. |
-| $\mathrm{Grounded}(c)\iff\exists s\in R(y)\cup K\text{ such that }s\models c\text{ and }s\text{ is cited}$ | **Referential Grounding:** A factual claim $c$ is grounded only if supported by a retrieved span or knowledge‑base assertion $s$, and the system explicitly cites that support. This is the core of referential guarantees. |
-| $\Gamma_t\cup\{\text{output}\}\not\models\bot$ | **Dialogical Verification:** Ensures the generated output does not contradict the current commitment set $\Gamma_t$. Any contradiction triggers guarantee withdrawal and requires revision or quarantine. |
-| $D_{\mathrm{rw}}(x;t,t+\Delta)\le T_D$ | **Drift Auditing:** Enforces geometric stability by requiring drift metrics (neighborhood drift, coarse Ricci curvature, bridge mass) to remain below a pre‑registered threshold $T_D$. Violations indicate semantic instability. |
-| $S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}$ | **Aggregate Verification Score:** Computes a weighted semantic‑verification score combining referential grounding, dialogical consistency, spectral stability, and geometric drift. The weights $\alpha,\beta,\gamma,\delta$ determine the relative influence of each channel. |
-| $\text{emit}\iff S_{\mathrm{ground}}\ge\tau_g\wedge S_{\mathrm{consist}}\ge\tau_c\wedge S_{\mathrm{sem}}\ge\tau$ | **Decision Rule:** Hard‑gate emission logic. An output is emitted only if grounding, consistency, and aggregate semantic score all exceed their respective thresholds. Failure in any channel results in rejection, revision, or quarantine. |
-
-* Note: $\chi(\phi)=1$ iff<br>$\Gamma(\phi(h))\supseteq\Gamma(h)$ and<br>$\Gamma(\phi(h)\not\models\bot$
-
----
-
-**1. FSST formulas define the substrate, not the guarantees.**  
-The first six formulas describe the geometry and operator‑theoretic machinery that TruthSense *audits*. They are not themselves guarantee mechanisms; they are measurable quantities that can be falsified.
-
-**2. TruthSense formulas define the verification layer.**  
-The grounding, dialogical, drift, and scoring formulas are the actual guarantee mechanisms. They define what is checked, how it is checked, and when a guarantee is withdrawn.
-
-**3. The aggregate score formula is the bridge between geometry and verification.**  
-It allows geometric drift, spectral stability, and factual grounding to be combined into a single quantitative signal.
-
-**4. The decision rule is the only place where guarantees become operational.**  
-Everything above it is measurement; the decision rule is enforcement.
 
 ## Architectural Frameworks
 The system architecture consists of three layers that play distinct roles: a **policy layer**, an **infrastructure layer**, and a **formal substrate layer**. Only the infrastructure and substrate layers participate in semantic guarantees, because only they provide **inspectable, falsifiable mechanisms**.
