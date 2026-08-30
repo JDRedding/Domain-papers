@@ -1,6 +1,6 @@
 # Zen and the Art of the Internet - Glossary
 
-This glossary is only a tiny subset of all of the various terms and other things that people regularly use on The Net. For a more complete (and very entertaining) reference, it's suggested you get a copy of The New Hacker's Dictionary, which is based on a VERY large text file called the Jargon File. Edited by Eric Raymond (eric@snark.thyrsus.com), it is available from the MIT Press, Cambridge, Massachusetts, 02142; its ISBN number is 0- 262-68069-6. Also see RFC-1208, A Glossary of Networking Terms.
+This glossary is only a tiny subset of all of the various terms and other things that people regularly use on The Net. For a more complete (and very entertaining) reference, it's suggested you get a copy of [The New Hacker's Dictionary version 4.2.2](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm#Top), which is based on a VERY large text file called the [Jargon File](https://jargon-file.org/). Edited by Eric Raymond (eric@snark.thyrsus.com), it is available from the MIT Press, Cambridge, Massachusetts, 02142; its ISBN number is 0- 262-68069-6. Also see [RFC-1208, A Glossary of Networking Terms](https://www.rfc-editor.org/info/rfc1208/).
 
 ## **Navigation**
 : · A · B · C · D · E · F · G · H · I · J · K · L · M · N · O · P · Q · R · S · T · U · V · W · X · Y · Z
