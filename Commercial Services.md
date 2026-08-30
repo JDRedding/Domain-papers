@@ -2005,13 +2005,13 @@ These companies collectively transformed the Internet from a research network in
                                 |             |
                                 v             v
         +-----------------------+-------------+------------------------+
-        |                                                         |
-        v                                                         v
+        |                                                              |
+        v                                                              v
 +-------------------------+                           +-------------------------+
 |  TCP‑Based Protocols    |                           |  UDP‑Based Protocols    |
 +-----------+-------------+                           +-----------+-------------+
-            |                                                         |
-            v                                                         v
+            |                                                          |
+            v                                                          v
 +-------------------------+                           +-------------------------+
 |  HTTP / HTTPS           |                           |  DNS                    |
 |  (Web, E‑commerce,      |                           |  (Name resolution)      |
