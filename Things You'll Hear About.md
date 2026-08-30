@@ -715,7 +715,7 @@ Each entry described what the resource was, who could use it, how to access it, 
 
 This structure became the template for modern digital‑resource documentation.
 
-#### 🌐 Modern Equivalents (2026)  
+#### 🌐 Modern Equivalents  
 While the IRG itself is gone, its role has been replaced by a wide ecosystem of modern tools and directories:
 
 - **Internet2 and ESnet resource catalogs**  
