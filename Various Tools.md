@@ -547,7 +547,8 @@ Both remain widely available on Unix-like systems, though `dig` is now the stand
 
 ---
 
-### **6.1 nslookup (Legacy Tool)**
+### **6.1 nslookup**
+*Legacy Tool*
 
 `nslookup` dates back to the early days of DNS. It provides a simple interface for querying DNS servers.
 
@@ -676,7 +677,7 @@ For any serious DNS debugging, `dig` is the correct tool.
 
 ---
 
-### **6.4 Modern DNS Realities (2026)**
+### **6.4 Modern DNS Realities**
 
 DNS behavior has changed significantly since the 1990s:
 
