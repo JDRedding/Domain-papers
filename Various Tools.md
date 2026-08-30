@@ -792,3 +792,126 @@ But for mainstream networking, UUCP is now a historical artifact — important f
 
 ---
 
+Here is **Section 8**, fully modernized and rewritten in the same style as your previous updates:
+
+---
+
+## **8. Majordomo**
+
+Before modern mailing list platforms like Mailman, Google Groups, or hosted list services, one of the most widely used tools for managing email discussion lists in the early and mid‑1990s was **Majordomo**. It was the open‑source alternative to Listserv, designed to be lightweight, flexible, and easy for Unix administrators to run on their own systems.
+
+Majordomo was a popular open-source mailing list manager in the 1990s, providing subscription control and message distribution entirely through email commands. It offered a lightweight alternative to Listserv and was widely used in academic and early Internet communities. Although now obsolete, Majordomo played a key role in the evolution of online group communication.
+
+Majordomo automated subscription management, message distribution, and list configuration — all through simple email commands.
+
+---
+
+### **8.1 What Majordomo Did**
+
+Majordomo handled the core tasks of running an email discussion list:
+
+- Managing subscriptions and unsubscriptions  
+- Distributing messages to all list members  
+- Handling digests (batched daily/weekly messages)  
+- Providing help and information about lists  
+- Allowing list owners to configure list behavior  
+
+It operated entirely through email, making it accessible even to users without interactive shell accounts.
+
+---
+
+### **8.2 How Majordomo Worked**
+
+Users interacted with Majordomo by sending commands to a special address, typically:
+
+```
+majordomo@example.edu
+```
+
+Commands were placed in the body of the email, not the subject line.
+
+Common commands included:
+
+```
+subscribe listname
+unsubscribe listname
+info listname
+lists
+help
+```
+
+For example, to subscribe to a list called `cs-news`:
+
+```
+To: majordomo@example.edu
+
+subscribe cs-news
+```
+
+Majordomo would reply with a confirmation message and instructions.
+
+---
+
+### **8.3 List Owners and Configuration**
+
+List owners could manage their lists using additional commands:
+
+```
+approve <password> subscribe listname user@example.com
+approve <password> unsubscribe listname user@example.com
+newinfo listname
+config listname
+```
+
+Configuration files controlled:
+
+- Who could post  
+- Whether the list was moderated  
+- Digest settings  
+- Reply‑to behavior  
+- Archiving options  
+
+Majordomo’s design emphasized simplicity: lists were configured using plain text files, and administrators could manage everything via email or shell access.
+
+---
+
+### **8.4 Majordomo vs. Listserv**
+
+Majordomo differed from Listserv in several ways:
+
+- **Open source** — free to install and modify  
+- **Unix‑centric** — designed for shell environments  
+- **Email‑only interface** — no proprietary command syntax  
+- **Lightweight** — easy to run on small servers  
+
+Listserv was more feature‑rich and enterprise‑oriented, but Majordomo became extremely popular in universities, research groups, and early Internet communities because it was free and easy to deploy.
+
+---
+
+### **8.5 Decline of Majordomo**
+
+Majordomo began to fade in the late 1990s and early 2000s as:
+
+- Web‑based list managers became standard  
+- Mailman emerged as a more modern open‑source alternative  
+- Spam filtering and authentication requirements increased  
+- Hosting providers began offering integrated list services  
+
+By the mid‑2000s, Majordomo was largely obsolete, though some legacy systems continued to run it for years.
+
+---
+
+### **8.6 Majordomo**
+
+Majordomo still exists in source archives and retrocomputing circles, but it is no longer used in mainstream environments. Modern mailing list management relies on:
+
+- Mailman 3  
+- Google Groups  
+- Groups.io  
+- Cloud‑hosted collaboration platforms  
+
+Majordomo remains historically important as one of the earliest widely adopted open‑source tools for managing Internet communities.
+
+---
+
+
