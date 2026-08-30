@@ -6,6 +6,25 @@
 
 Many services can be accessed through the Internet. As time progresses and more outlets for commercial activity appear, once-restricted traffic may now flow freely. Commercial traffic can now flow freely because the **NSFNET Acceptable Use Policy (AUP)** — which once *prohibited* for‑profit activity on the U.S. Internet backbone — lost its force once alternative commercial networks emerged and the NSFNET backbone was retired in 1995. The key shift is that the Internet no longer depended on a single federally subsidized backbone with strict usage rules; instead, multiple private backbones and network access points took over, allowing unrestricted commercial activity.
 
+### Infrastructure Milestones
+
+```
+Year | Milestone                  | Description
+-----+----------------------------+-----------------------------------------------
+1978 | Commercial Email Begins    | MCI Mail and SprintMail launch paid messaging.
+1984 | BBS Commercialization      | PCBoard, RBBS, WWIV enable paid online access.
+1989 | MCI Mail → Internet        | First commercial SMTP connection to the Internet.
+1990 | Archie & WAIS              | First commercial search/indexing systems.
+1991 | Gopher Commercial Use      | Curated hierarchies and paid indexing appear.
+1992 | FTP Archives Expand        | Walnut Creek, Simtel become major distributors.
+1992 | Early E‑Commerce           | Email orders, telnet storefronts emerge.
+1993 | Mosaic + SLIP/PPP          | ISPs begin selling full TCP/IP dial‑up access.
+1994 | SSL Introduced             | Secure web transactions become possible.
+1994 | First Commercial Firewalls | Check Point, TIS, Raptor launch products.
+1995 | NSFNET Shutdown            | Internet becomes fully commercial.
+1995 | Web‑Native Commerce        | Amazon and eBay launch.
+```
+
 ---
 
 ### 🧭 What changed
