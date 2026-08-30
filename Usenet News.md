@@ -721,3 +721,66 @@ For example:
 Clarity, brevity, and relevance are the hallmarks of good Usenet posts.
 
 ---
+
+### **13.11 Useful Subjects**
+
+The **Subject:** line is the first thing readers see. If it’s vague, misleading, or overly dramatic, people will skip your post. If it’s too long, they’ll be annoyed. A good subject is concise, descriptive, and honest.
+
+Examples:
+
+```
+Good Subject: Building Emacs on a Sun SPARC under 4.1
+Good Subject: Trying to find Waldo in NJ
+Bad  Subject: I can't get emacs to work !!!
+Bad  Subject: I'm desperately in search of the honorable Mr. Waldo in
+```
+
+The rule is simple:  
+**Choose a subject line that helps readers understand what your article contains.**
+
+A clear subject respects the reader’s time and increases the chance you’ll get useful replies.
+
+---
+
+### **13.12 Tone of Voice**
+
+Computers don’t convey vocal tone, so the way you phrase your article directly affects how people interpret it. Hostile wording produces hostile responses.
+
+For example:
+
+```
+Anybody using a Vic-20 should go buy themselves a life.
+```
+
+This will earn you a pile of angry replies. A more constructive phrasing:
+
+```
+What are the practical uses of a Vic-20 these days?
+```
+
+Same topic, radically different tone.
+
+Netiquette also discourages **ALL CAPS**, which readers interpret as shouting. Write as you would in a normal letter to a friend: clear, calm, and in standard case.
+
+Your tone shapes your reputation on Usenet. Choose it wisely.
+
+---
+
+### **13.13 Computer Religion**
+
+Every computer user believes their machine is the best. Asking Usenet questions like:
+
+> “Which should I buy — an Atari ST or an Amiga?”
+
+will not produce objective advice. It will produce a religious war.
+
+Brand‑loyalty flamefests are legendary on Usenet and almost never helpful. If you want real guidance:
+
+- visit a local user group  
+- read magazine reviews  
+- research online  
+- try the systems yourself  
+
+Usenet is excellent for technical questions, but terrible for “which brand is better?” debates. Those threads generate heat, not light.
+
+---
