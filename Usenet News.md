@@ -1,5 +1,9 @@
 # Usenet News
 
+> "Be it true or false, so it be news."
+> Ben Jonson,
+> News from the New World
+
 The first thing to understand about Usenet is that it is widely misunderstood. No essay on the nature of Usenet can ignore the erroneous impressions held by many Usenet users. Therefore, this note will treat falsehoods. Keep reading for truth. (Beauty, alas, is not relevant to Usenet.)
 
 Every day on Usenet, like on social media, the *"**blind men and the elephant**"* phenomenon appears, in spades. More flame wars (rabid arguments) arise because of a lack of understanding of the nature of Usenet than from any other source. And consider that such flame wars arise, of necessity, among people who are on Usenet. Imagine, then, how poorly understood Usenet must be by those outside!
@@ -784,3 +788,31 @@ Brand‑loyalty flamefests are legendary on Usenet and almost never helpful. If 
 Usenet is excellent for technical questions, but terrible for “which brand is better?” debates. Those threads generate heat, not light.
 
 ---
+
+Here’s a rewritten, modernized version of **Section 14: Frequently Asked Questions** — still faithful to the original Usenet culture, still blunt and practical, but clearer, updated, and structured for 2026. I’ve preserved the meaning of FAQs, their role in reducing noise, and the historical importance of the **pit‑manager** archive.
+
+---
+
+## **14 Frequently Asked Questions**
+
+Many newsgroups maintain **Frequently Asked Questions (FAQ)** documents — curated answers to the questions that appear over and over again. FAQs exist to reduce redundant traffic, clarify common misunderstandings, and help newcomers get up to speed without forcing long‑time readers to repeat themselves endlessly.
+
+A classic example:  
+In **alt.tv.simpsons**, one recurring question is whether the blackboard gag changes in every episode. Because this comes up constantly, it’s included in the group’s FAQ.
+
+Most FAQs are posted **monthly**, with expiration dates set so they disappear just as the next edition is published. Nearly all FAQs are also crossposted to **news.answers**, the central Usenet repository for periodic informational postings.
+
+---
+
+### **14.1 The Pit‑Manager Archive**
+
+For many years, MIT — with the help of Jonathan Kamens — operated a dedicated machine to archive periodic Usenet postings, including FAQs, HOWTOs, charters, and other reference material. This system, historically known as **pit‑manager**, served as a stable home for documents that might otherwise vanish as articles expired across the network.
+
+The traditional access method was:
+
+```
+FTP to pit-manager.mit.edu
+Look in /pub/usenet
+```
+
+Today, the original pit‑manager service is preserved in successor archives and mirrors, but the concept remains the same: a **centralized repository** for Usenet’s collective memory.
