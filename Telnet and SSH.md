@@ -3929,3 +3929,191 @@ command="/usr/local/bin/backup.sh" ssh-ed25519 AAAA...
 
 ---
 
+### Appendix C — Hardened SSH config snippets
+
+Here are drop‑in, production‑grade SSH configs, kept tight and modern. They’re written to be directly usable and easy to reason about.
+
+---
+
+### C.1 Hardened `sshd_config` (general server)
+
+```text
+# Protocol
+Protocol 2
+Port 22
+
+# Authentication
+PermitRootLogin no
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+
+# Users
+AllowUsers jd adminuser
+# Or:
+# AllowGroups sshusers
+
+# Host keys (modern)
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+
+# Cryptography
+KexAlgorithms curve25519-sha256
+Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com
+MACs hmac-sha2-512,hmac-sha2-256
+
+# Forwarding & extras
+X11Forwarding no
+AllowTcpForwarding no
+PermitTunnel no
+GatewayPorts no
+
+# Login limits
+MaxAuthTries 3
+LoginGraceTime 30
+
+# Keepalive
+ClientAliveInterval 30
+ClientAliveCountMax 3
+
+# Logging
+LogLevel VERBOSE
+
+# SFTP subsystem
+Subsystem sftp internal-sftp
+```
+
+---
+
+### C.2 SFTP‑only, chrooted user
+
+```text
+# Global SFTP subsystem
+Subsystem sftp internal-sftp
+
+# Match block for SFTP‑only users
+Match User sftpuser
+    ChrootDirectory /srv/sftp
+    ForceCommand internal-sftp
+    AllowTcpForwarding no
+    X11Forwarding no
+    PasswordAuthentication no
+```
+
+Requirements:
+
+- `/srv/sftp` owned by root  
+- Subdirectories inside chroot owned by `sftpuser`
+
+---
+
+### C.3 Bastion / jump host `sshd_config`
+
+```text
+Protocol 2
+Port 22
+
+PermitRootLogin no
+PasswordAuthentication no
+UsePAM yes
+
+# Only allow SSH users
+AllowGroups sshbastion
+
+# Cryptography
+KexAlgorithms curve25519-sha256
+Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com
+MACs hmac-sha2-512,hmac-sha2-256
+
+# Bastion behavior
+X11Forwarding no
+AllowTcpForwarding yes
+PermitTunnel no
+GatewayPorts no
+
+# Logging & audit
+LogLevel VERBOSE
+
+# Optional: restrict port forwarding further
+# Match User someuser
+#     AllowTcpForwarding no
+```
+
+---
+
+### C.4 Hardened client `~/.ssh/config`
+
+```text
+Host *
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+    ForwardAgent no
+    StrictHostKeyChecking yes
+    UserKnownHostsFile ~/.ssh/known_hosts
+
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_ed25519
+
+    Compression yes
+
+Host bastion
+    HostName bastion.example.com
+    User jd
+
+Host internal
+    HostName internal.example.com
+    User jd
+    ProxyJump bastion
+```
+
+---
+
+### C.5 Forced‑command key for automation (backup)
+
+In `~/.ssh/authorized_keys` on the server:
+
+```text
+command="/usr/local/bin/backup.sh",\
+no-port-forwarding,no-X11-forwarding,\
+no-agent-forwarding,no-pty \
+ssh-ed25519 AAAA... backup-key
+```
+
+This key:
+
+- Can only run `backup.sh`  
+- Cannot open shells  
+- Cannot forward ports  
+- Cannot use agent forwarding  
+
+---
+
+### C.6 Minimal hardened config for small VPS
+
+```text
+Protocol 2
+Port 22
+
+PermitRootLogin no
+PasswordAuthentication no
+UsePAM yes
+
+AllowUsers jd
+
+HostKey /etc/ssh/ssh_host_ed25519_key
+
+KexAlgorithms curve25519-sha256
+Ciphers chacha20-poly1305@openssh.com
+MACs hmac-sha2-256
+
+X11Forwarding no
+AllowTcpForwarding no
+PermitTunnel no
+
+MaxAuthTries 3
+ClientAliveInterval 30
+ClientAliveCountMax 3
+
+LogLevel VERBOSE
+```
