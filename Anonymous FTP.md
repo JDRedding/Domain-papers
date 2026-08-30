@@ -384,7 +384,8 @@ This reconstruction is historically accurate but **not** one of the original McG
 
 ---
 
-## 3.3.1 Using archie (Historical Operation)
+## 3.3.1 Using archie
+Historical Operation
 
 At its peak, archie indexed more than 800 anonymous FTP sites and tracked over a million files—roughly 50 gigabytes of material at early‑1990s scale. Listings were refreshed monthly to balance accuracy with network load.
 
