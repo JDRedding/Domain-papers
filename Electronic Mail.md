@@ -304,7 +304,8 @@ Listserv‑style systems are now common on Unix/Linux servers and cloud platform
 
 ---
 
-# **📐 2.3 The Cognitive Layer (Attention, Priority, and User Intent)**
+# **📐 2.3 The Cognitive Layer**
+Attention, Priority, and User Intent
 
 Modern email systems don’t just deliver messages — they **interpret** them.
 
@@ -330,7 +331,8 @@ This layer transforms email from a raw transport mechanism into a **cognitive as
 
 ---
 
-# **🔐 2.4 The Trust & Identity Layer (SPF, DKIM, DMARC, ARC, BIMI)**
+# **🔐 2.4 The Trust & Identity Layer**
+SPF, DKIM, DMARC, ARC, BIMI
 
 1990s email assumed every sender was legitimate.  
 2020s email assumes **nothing**.
@@ -355,7 +357,8 @@ This layer is the backbone of modern deliverability.
 
 ---
 
-# **🛡️ 2.5 The Anti‑Abuse Layer (Phishing, Malware, Reputation, Sandboxing)**
+# **🛡️ 2.5 The Anti‑Abuse Layer**
+Phishing, Malware, Reputation, Sandboxing
 
 Email is the #1 attack vector on the Internet.  
 Modern systems deploy a multi‑stage defense pipeline:
@@ -382,7 +385,8 @@ This layer is why modern email is usable at all — without it, inboxes would dr
 
 ---
 
-# **☁️ 2.6 The Cloud Storage & Synchronization Layer (IMAP IDLE, ActiveSync, Indexing)**
+# **☁️ 2.6 The Cloud Storage & Synchronization Layer**
+IMAP IDLE, ActiveSync, Indexing
 
 Email used to live in a single file on a single machine.  
 Now it lives in **globally replicated cloud storage**.
@@ -408,7 +412,8 @@ This layer makes email feel seamless across phones, laptops, tablets, and browse
 
 ---
 
-# **📱 2.7 The Multi‑Device UX Layer (Notifications, Integration, Identity)**
+# **📱 2.7 The Multi‑Device UX Layer**
+Notifications, Integration, Identity
 
 Email is now part of a broader ecosystem:
 
