@@ -329,3 +329,125 @@ Several factors contributed to its decline:
 
 ---
 
+## **4. WHOIS and RDAP (Modern Overview)**
+
+The **WHOIS** service is one of the oldest Internet directory protocols. Historically, it was operated by the Network Information Center (NIC) and provided registration details for domains, networks, and individual contacts. System administrators used WHOIS to find the **Points of Contact (POCs)** for a domain—typically to report technical issues, abuse, or security problems.
+
+WHOIS was the original protocol for looking up domain and contact information. Most registries now use RDAP, which provides structured, privacy-aware data. Personal records once stored in WHOIS no longer exist, and most contact information is redacted. WHOIS survives for legacy compatibility, while RDAP is the modern standard for domain registration data.
+
+Today, WHOIS still exists, but most registries have migrated to **RDAP (Registration Data Access Protocol)**, a modern, structured, privacy‑aware replacement.
+
+---
+
+### **Basic WHOIS Usage (Still Supported)**
+
+On most Unix-like systems, you can query a domain:
+
+```
+whois example.edu
+```
+
+A modern WHOIS record typically includes:
+
+- Domain name  
+- Registrar  
+- Registrant organization (often redacted)  
+- Administrative and technical contacts (often replaced with privacy proxies)  
+- Name servers  
+- Creation and expiration dates  
+
+Example (modernized):
+
+```
+Domain Name: EXAMPLE.EDU
+Registrar: XYZ Registrar
+Name Server: NS1.EXAMPLE.EDU
+Name Server: NS2.EXAMPLE.EDU
+Administrative Contact: REDACTED FOR PRIVACY
+Technical Contact: REDACTED FOR PRIVACY
+Updated Date: 2026-03-12
+Creation Date: 1985-04-23
+```
+
+Due to privacy regulations (GDPR, ICANN policy changes), most personal contact information is no longer publicly visible.
+
+---
+
+### **RDAP: The Modern Replacement**
+
+RDAP is now the standard protocol for domain registration data. It provides:
+
+- Structured JSON output  
+- Authentication options  
+- Access control  
+- Better internationalization  
+- More consistent error handling  
+
+You can query RDAP directly:
+
+```
+curl https://rdap.org/domain/example.edu
+```
+
+Or use:
+
+```
+whois -h rdap.org example.edu
+```
+
+RDAP responses include the same core information as WHOIS but in a machine-readable format.
+
+---
+
+### **Why WHOIS Changed**
+
+Several factors drove the shift:
+
+- **Privacy laws**: WHOIS exposed personal data globally.  
+- **Spam and abuse**: Attackers harvested email addresses from WHOIS.  
+- **Inconsistent formats**: WHOIS output varied wildly between registrars.  
+- **Need for structured data**: Security teams and automation required predictable formats.
+
+RDAP solves these issues while preserving the ability to contact domain operators when necessary.
+
+---
+
+### **WHOIS for People (Historical Only)**
+
+In the early Internet, WHOIS also stored **individual user records**—including names, phone numbers, and postal addresses. This practice is long gone. Modern WHOIS/RDAP **does not** store personal user entries except for domain contacts, and those are usually hidden behind privacy services.
+
+The old NIC templates, FTP servers, and user registration forms no longer exist.
+
+---
+
+## **4.1 Other Uses of WHOIS (Modernized)**
+
+Some organizations still run **local WHOIS servers** to provide directory information about staff, students, or internal systems. These are typically:
+
+- LDAP-backed  
+- Restricted to campus networks  
+- Protected behind authentication  
+
+To query a specific WHOIS server:
+
+```
+whois -h stanford.edu help
+```
+
+This usage is now rare; most institutions have moved to web-based directories or SSO-backed identity systems.
+
+---
+
+### **Finding WHOIS Servers Today**
+
+Instead of FTP lists or manually maintained files, modern WHOIS/RDAP servers are cataloged automatically by:
+
+- IANA RDAP bootstrap registries  
+- ICANN  
+- Domain registrars  
+- Public RDAP aggregators (e.g., rdap.org)
+
+The old “whois-servers.list” files are obsolete.
+
+---
+
