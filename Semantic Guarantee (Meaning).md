@@ -1187,22 +1187,11 @@ $$
 Can drop the single-threshold rule.
 
 $$
-S_{\mathrm{sem}}
-=
-\alpha S_{\mathrm{ground}}
-+\beta S_{\mathrm{consist}}
-+\gamma S_{\mathrm{spec}}
-+\delta S_{\mathrm{geom}}
+S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}
 $$
 
 $$
-\text{emit}
-\iff
-S_{\mathrm{ground}}\ge\tau_g
-\;\wedge\;
-S_{\mathrm{consist}}\ge\tau_c
-\;\wedge\;
-S_{\mathrm{sem}}\ge\tau
+\text{emit} \iff S_{\mathrm{ground}}\ge\tau_g \;\wedge\; S_{\mathrm{consist}}\ge\tau_c \wedge\; S_{\mathrm{sem}}\ge\tau
 $$
 
 Optional: $S_{\mathrm{geom}}\ge\tau_d$ as a third gate if want geometry to block emission, not only to withdraw a stability claim.
