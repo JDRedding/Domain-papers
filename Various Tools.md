@@ -8,7 +8,7 @@ As they gain wide-spread use, some methods become near-standard (or actual writt
 
 ## 🧭 Introduction 
 
-Usenet was often used to announce a new service or capability on the Internet, which has largely been replaced by social medoa. In particular, the groups comp.archives and comp.protocols.tcp-ip were good places to look. Information will drift into other areas as word spreads. See the "Usenet News" for some information on reading news.
+Usenet was often used to announce a new service or capability on the Internet, which has largely been replaced by social media. In particular, the groups comp.archives and comp.protocols.tcp-ip were good places to look. Information will drift into other areas as word spreads. See the "Usenet News" for some information on reading news.
 
 The early Internet ran on a handful of lightweight, non‑HTTP tools — **Archie**, **Gopher**, **WAIS**, **Finger**, **Talk**, **IRC**, anonymous FTP — and announcements happened on **Usenet**. These tools largely **disappeared** once the Web and full‑text crawlers became universal, though their *ideas* live on in modern search engines and communication platforms.  The early Internet tools weren’t “primitive versions” of modern ones — they were **solutions to a different topology**:
 
