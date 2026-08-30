@@ -3,7 +3,7 @@
 > "To talk in publick, to think in solitute
 > to read and to hear, to inquire,
 > and to answer inquiries, is the business of a scholar."
-> Samuel Johnson The History of Rasselas, Prince of Abissinia
+> Samuel Johnson, The History of Rasselas, Prince of Abissinia
 
 There are certain things that people heard about shortly after they startrd actively using the Internet at the dawn of the web. Most people assume that everyone's familiar with them, and they require no additional explanation. If only that were true!
 
