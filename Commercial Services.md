@@ -2058,3 +2058,70 @@ These companies collectively transformed the Internet from a research network in
 
 ---
 
+## 📈 Appendix VI — Commercial Milestones After 1995  
+*(1996–2005: The consolidation and industrialization era)*
+
+After 1995, commercialization accelerates dramatically:
+
+- Search becomes an advertising engine  
+- Payments become secure and mainstream  
+- SaaS emerges  
+- CDNs industrialize content delivery  
+- Social networks redefine identity and commerce  
+- Video becomes economically viable  
+
+This era transforms the Internet from a commercial platform into a global economic substrate.
+
+### **1996 — Browser Wars Begin**  
+Netscape and Internet Explorer compete for dominance, accelerating commercial web development.  
+**Browser competition**
+
+### **1996 — Search Engines Become Commercial Platforms**  
+AltaVista, Lycos, Excite, and Yahoo shift from academic indexing to ad‑supported commercial search.  
+**Early search engines**
+
+### **1997 — SSL v3 and Early Payment Gateways Mature**  
+Secure online transactions stabilize; CyberCash and early merchant gateways expand.  
+**Early payment systems**
+
+### **1998 — Google Launches**  
+Commercial search enters its relevance‑ranking era; advertising becomes algorithmic.  
+**Google’s early impact**
+
+### **1998 — ICANN Formed**  
+Domain registration and DNS governance shift from government/contractor control to a commercial multi‑stakeholder model.  
+**ICANN**
+
+### **1999 — Napster & Peer‑to‑Peer Commerce Models**  
+Digital distribution becomes decentralized; commercial content industries react.  
+**P2P impact**
+
+### **1999 — Salesforce Launches SaaS**  
+Software‑as‑a‑Service becomes a commercial Internet model.  
+**SaaS origins**
+
+### **2000 — Dot‑Com Bubble Peaks and Bursts**  
+Massive commercial expansion followed by collapse; surviving companies define the next era.  
+**Dot‑com bubble**
+
+### **2001 — Akamai & CDNs Industrialize Web Delivery**  
+Content Delivery Networks become essential for commercial scalability.  
+**CDNs**
+
+### **2001 — PayPal Goes Public**  
+Online payments become mainstream and consumer‑friendly.  
+**PayPal history**
+
+### **2003 — WordPress Launches**  
+Commercial web publishing becomes democratized; hosting providers expand massively.  
+**WordPress**
+
+### **2004 — Facebook Launches**  
+Social networks become commercial platforms; advertising and identity shift online.  
+**Early social networks**
+
+### **2005 — YouTube Launches**  
+Commercial video hosting becomes viable; bandwidth economics shift.  
+**YouTube**
+
+---
