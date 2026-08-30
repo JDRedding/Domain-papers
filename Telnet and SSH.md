@@ -4117,3 +4117,87 @@ ClientAliveCountMax 3
 
 LogLevel VERBOSE
 ```
+
+---
+
+
+## **Appendix D — SSH Troubleshooting Quick Table**
+
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| Issue                         | Symptoms                                  | Fixes                                     |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Connection refused]          | ssh: connect to host ... refused          | - Start sshd                              |
+| (Fix_SSH_connection_refused) |                                       | - Check firewall                          |
+|                               |                                           | - Verify port                             |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Connection timed out]        | SSH hangs then times out                  | - Check network reachability              |
+| (Fix_SSH_timeout)    |                                           | - Check NAT / port forwarding             |
+|                               |                                           | - Try alternate port (443)                |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Permission denied (publickey)] | Permission denied (publickey)            | - Install key via ssh-copy-id             |
+| (Fix_permission_denied_publickey) |                               | - Fix ~/.ssh permissions                  |
+|                               |                                           | - Specify key with -i                     |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Host key verification failed] | WARNING: HOST IDENTIFICATION CHANGED      | - Verify server identity                  |
+| (Fix_host_key_verification_failed) |                               | - Remove old key: ssh-keygen -R host      |
+|                               |                                           | - Reconnect                               |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Too many authentication failures] | Too many authentication failures       | - Use IdentitiesOnly=yes                  |
+| (Fix_too_many_auth_failures) |                                    | - Clear agent: ssh-add -D                 |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [No matching host key type]   | no matching host key type found           | - Update server keys (Ed25519)            |
+| (Fix_no_matching_host_key_type) |                                 | - Avoid legacy algorithms                 |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Bad permissions]             | Bad owner or permissions errors           | - chmod 700 ~/.ssh                        |
+| (Fix_SSH_bad_permissions) |                                       | - chmod 600 ~/.ssh/*                      |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Tunnel not working]          | Port forward connects but no traffic      | - Check remote service                    |
+| (Fix_SSH_tunnel_issues) |                                         | - Bind to localhost                       |
+|                               |                                           | - Use ssh -vvv for debug                  |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [SFTP/SCP failures]           | SFTP errors, SCP failing                  | - Verify internal-sftp subsystem          |
+| (Fix_SFTP_SCP_errors) |                                          | - Fix chroot permissions                  |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Firewall blocking SSH]       | Cannot reach port 22                      | - ufw allow 22                            |
+| (Fix_firewall_blocking_SSH) |                                     | - firewall-cmd add-service=ssh            |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [SELinux blocking SSH]        | Connection fails silently                 | - getenforce                              |
+| (Fix_SELinux_SSH_issues) |                                       | - Check audit logs                        |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [NAT / port forwarding issues] | External SSH unreachable                  | - Forward TCP 22 correctly                |
+| (Fix_SSH_NAT_forwarding) |                                       | - Ensure server firewall allows SSH       |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+| [Verbose debugging]           | Need detailed output                      | - ssh -vvv user@host                      |
+| (SSH_verbose_debugging) |                                     | - Inspect key negotiation                 |
++-------------------------------+-------------------------------------------+-------------------------------------------+
+
+---
+
+### **Compact Troubleshooting Flow (ASCII)**
+
+```
+1. Can you reach the host?
+   - ping host
+   - traceroute host
+
+2. Is SSH listening?
+   - sudo systemctl status sshd
+   - ss -tln | grep 22
+
+3. Is the firewall blocking?
+   - ufw status
+   - firewall-cmd --list-all
+
+4. Are permissions correct?
+   - chmod 700 ~/.ssh
+   - chmod 600 ~/.ssh/*
+
+5. Are keys correct?
+   - ssh -i ~/.ssh/id_ed25519 user@host
+   - ssh-add -l
+
+6. Use verbose mode:
+   - ssh -vvv user@host
+```
+
+---
