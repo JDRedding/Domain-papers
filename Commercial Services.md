@@ -295,6 +295,7 @@ AIP’s modern platforms continue the mission of PINET, now offering:
 
 The shift from telnet terminals to web‑based systems reflects the broader evolution of scientific communication—from command‑line access to globally indexed, fully digital research ecosystems.
 
+---
 
 ## **Electronic newspapers**  
 Before the web became the dominant medium for digital news, one of the earliest commercial “electronic newspaper” services was **ClariNet Communications**, which delivered professional news feeds directly into Usenet newsgroups. It was a bridge between traditional wire‑service journalism and the emerging Internet culture, using the same message formats and distribution protocols that powered global discussion forums.
