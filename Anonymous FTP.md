@@ -90,7 +90,9 @@ Modern file sharing systems provide encrypted, identity‑aware, feature‑rich 
 # **Anonymous FTP vs modern file sharing**  
 **Modern anonymous FTP still exists**: current FTP daemons (vsftpd, Pure‑FTPd, ProFTPD) still support anonymous login, but it is now *restricted, chrooted, rate‑limited, and often paired with TLS (FTPS)*. It remains a simple way to publish world‑readable files without accounts.  
 
-Modern file sharing systems (HTTPS, SFTP, cloud storage) provide encrypted, browser‑native, identity‑integrated access with differnet features and reliability.
+Modern file sharing systems (HTTPS, SFTP, cloud storage) provide encrypted, browser‑native, identity‑integrated access with differnet features and reliability. Anonymous FTP **still exists today** and remains a simple, account‑free way to publish world‑readable files. Modern FTP servers (vsftpd, Pure‑FTPd, ProFTPD) support anonymous login with hardened, read‑only, chrooted environments — and many deployments now offer **anonymous FTPS**, adding TLS encryption while keeping access anonymous.  Modern file sharing systems (HTTPS, SFTP, cloud platforms) provide richer features, identity integration, and browser‑native interfaces, but they serve a different purpose.
+
+Anonymous FTP **is not obsolete** — it’s simply specialized. Modern anonymous FTP is hardened, often encrypted, and still used for public mirrors, firmware distribution, and legacy workflows where simplicity and scriptability matter.   Modern file sharing systems offer richer features, but they serve different needs.
 
 ---
 
@@ -98,58 +100,56 @@ Modern file sharing systems (HTTPS, SFTP, cloud storage) provide encrypted, brow
 
 ### **🔓 Access model**
 - **Modern Anonymous FTP:**  
-  Anyone may log in using the username **anonymous** and access a controlled, read‑only directory. Servers enforce chroot jails, upload bans, connection limits, and logging. Some deployments use **anonymous FTPS**, providing encryption while keeping the login anonymous.  
-- **Modern file sharing:**  
-  Access is authenticated and permission‑based, typically using OAuth, SSO, SSH keys, API tokens, or cloud identity systems.
+  Anyone may log in as **anonymous** and retrieve files from a controlled public directory. Servers enforce chroot jails, rate limits, logging, and read‑only access. Some sites use **anonymous FTPS**, providing encryption without requiring accounts.  
+- **Modern systems:**  
+  Access is authenticated and permission‑based, typically using OAuth, SSO, SSH keys, or API tokens.
 
 ---
 
 ### **🔐 Security**
 - **Modern Anonymous FTP:**  
-  - Plain FTP remains unencrypted, but many servers now offer **anonymous FTPS** (TLS‑secured).  
-  - Anonymous users are sandboxed, read‑only, and heavily restricted.  
-  - Integrity and encryption depend on whether FTPS is enabled.  
-  - Still simple, but no longer the wide‑open plaintext service of the 1990s.  
+  - Plain FTP is still available for simple public mirrors.  
+  - Many deployments now offer **FTPS**, giving anonymous users encrypted control and data channels.  
+  - Anonymous access is sandboxed and restricted, not the wide‑open 1990s model.  
 
 - **Modern file sharing:**  
   - HTTPS/TLS 1.3 for browser‑based transfers  
-  - SFTP over SSH with AES/ChaCha20  
+  - SFTP over SSH with strong encryption  
   - Built‑in integrity checks, versioning, and compliance features  
-  - Meets modern security standards (PCI DSS, HIPAA, SOC2)
 
 ---
 
 ### **⚙️ Protocol architecture**
 - **Modern Anonymous FTP:**  
-  - Still uses the classic dual‑channel FTP design (control on port 21, data on passive ports).  
-  - Passive mode is now the default to avoid firewall/NAT issues.  
-  - FTPS adds TLS but keeps the same architecture.  
+  - Still uses the classic FTP dual‑channel design.  
+  - Passive mode is the modern default for NAT/firewall compatibility.  
+  - FTPS adds TLS while keeping the FTP architecture intact.  
 
 - **Modern systems:**  
   - HTTPS: single encrypted TCP connection  
-  - SFTP: single SSH channel on port 22  
-  - Much simpler firewall behavior and NAT traversal
+  - SFTP: single SSH channel  
+  - Minimal firewall complexity
 
 ---
 
 ### **📦 User experience**
 - **Modern Anonymous FTP:**  
-  - Requires an FTP/FTPS client (browsers removed FTP support).  
-  - Directory listings are plain text; no previews or metadata.  
-  - Ideal for simple, scriptable, public downloads.  
+  - Requires an FTP/FTPS client since browsers removed FTP support.  
+  - Simple directory listings, ideal for scripting, automation, and mirroring.  
+  - Lightweight and predictable — no web UI overhead.  
 
 - **Modern systems:**  
   - Browser‑native interfaces  
-  - Drag‑and‑drop uploads, previews, versioning, sharing links  
-  - Cloud‑native reliability, resumable transfers, mobile support
+  - Drag‑and‑drop uploads, previews, versioning  
+  - Cloud‑native reliability and resumable transfers
 
 ---
 
 ### **📡 Performance & reliability**
 - **Modern Anonymous FTP:**  
-  - Performance depends on server bandwidth and passive port configuration.  
-  - No built‑in integrity verification unless FTPS is used.  
-  - Still efficient for bulk downloads and mirroring.  
+  - Efficient for bulk downloads and automated mirroring.  
+  - Reliability depends on server bandwidth and passive port configuration.  
+  - FTPS adds integrity and encryption when needed.  
 
 - **Modern systems:**  
   - CDN acceleration, parallel chunking, resumable uploads  
@@ -162,13 +162,12 @@ Modern file sharing systems (HTTPS, SFTP, cloud storage) provide encrypted, brow
 
 | **Feature** | **Modern Anonymous FTP** | **Modern File Sharing** |
 |-------------|---------------------------|--------------------------|
-| Security | Optional TLS (FTPS); plaintext if unencrypted | Full TLS/SFTP encryption |
+| Security | Optional TLS (FTPS) | Full TLS/SFTP encryption |
 | Authentication | Anonymous login | OAuth, SSO, SSH keys |
-| Firewall behavior | Dual channels; passive mode required | Single channel; firewall‑friendly |
-| Client requirement | FTP/FTPS client | Browser or OS‑native tools |
-| Integrity checks | None unless FTPS | Cryptographic verification |
-| Compliance | Not suitable for regulated data | Meets modern standards |
-| Ease of use | Simple but minimal | Very high |
+| Firewall behavior | Dual channels; passive mode | Single channel |
+| Client requirement | FTP/FTPS client | Browser or OS tools |
+| Integrity checks | None unless FTPS | Cryptographic |
+| Compliance | Not for regulated data | Meets standards |
+| Ease of use | Simple, scriptable | Feature‑rich |
 
----
 
