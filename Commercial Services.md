@@ -9,7 +9,7 @@ Many services can be accessed through the Internet. As time progresses and more 
 ---
 
 ### 🧭 What changed
-: from restricted backbone → open commercial Internet
+: From **restricted backbone → open commercial** Internet
 
 The original NSFNET AUP explicitly barred **for‑profit activity** and **private business** on the backbone. This meant that even though commercial services *technically* could send packets, they were not allowed to use the subsidized national backbone unless the traffic directly supported research or education.  
 
@@ -1962,6 +1962,80 @@ These companies collectively transformed the Internet from a research network in
 - **Demon Internet** — UK ISP offering full TCP/IP hosting and early domain services.
 
 - **Network Solutions** — Managed domain registration under InterNIC; became the first commercial domain registrar.
+
+---
+
+## 📡 Appendix IV — Map of Internet Protocol Dependencies  
+
+- **PPP/SLIP over the link layer** enabled **consumer ISPs** and full TCP/IP dial‑up.
+- **IP + TCP/UDP** formed the substrate for all commercial services.
+- **SMTP, NNTP, FTP, WAIS, Gopher, HTTP** directly map to:
+  - Commercial email  
+  - Commercial Usenet feeds  
+  - FTP archives  
+  - Search/indexing services  
+  - Early web hosting and e‑commerce  
+- **DNS** underpins commercial domains and hosting.
+
+
+```
+                         +---------------------------+
+                         |     Physical Layer        |
+                         |  (Copper, Fiber, Radio)   |
+                         +-------------+-------------+
+                                       |
+                                       v
+                         +---------------------------+
+                         |   Link Layer Protocols    |
+                         |  Ethernet, PPP, SLIP,     |
+                         |  X.25, Frame Relay        |
+                         +-------------+-------------+
+                                       |
+                                       v
+                         +---------------------------+
+                         |    Network Layer          |
+                         |        IP                 |
+                         +-------------+-------------+
+                                       |
+                                       v
+                         +---------------------------+
+                         |   Transport Layer         |
+                         |   TCP        |    UDP     |
+                         +------+------+-------------+
+                                |             |
+                                v             v
+        +-----------------------+-------------+------------------------+
+        |                                                         |
+        v                                                         v
++-------------------------+                           +-------------------------+
+|  TCP‑Based Protocols    |                           |  UDP‑Based Protocols    |
++-----------+-------------+                           +-----------+-------------+
+            |                                                         |
+            v                                                         v
++-------------------------+                           +-------------------------+
+|  HTTP / HTTPS           |                           |  DNS                    |
+|  (Web, E‑commerce,      |                           |  (Name resolution)      |
+|   hosting)              |                           +-------------------------+
++-------------------------+
+|  SMTP / POP / IMAP      |
+|  (Email services)       |
++-------------------------+
+|  NNTP                   |
+|  (Usenet feeds)         |
++-------------------------+
+|  FTP                    |
+|  (Archives, software)   |
++-------------------------+
+|  Telnet / SSH           |
+|  (Remote access)        |
++-------------------------+
+|  WAIS / Gopher          |
+|  (Search, menus)        |
++-------------------------+
+|  Proprietary Services   |
+|  (AOL, CompuServe, etc.)|
++-------------------------+
+```
 
 ---
 
