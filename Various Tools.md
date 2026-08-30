@@ -122,7 +122,7 @@ If the remote system supports Finger, you’ll receive the same type of profile 
 
 ---
 
-### **Security Reality in 2026**
+### **Security Reality**
 
 Most modern systems **block Finger entirely**. The protocol exposes:
 
