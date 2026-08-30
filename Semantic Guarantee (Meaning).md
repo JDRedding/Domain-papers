@@ -1121,25 +1121,26 @@ relates observed outputs to an intended posterior $\pi^*(Y)$ through a measureme
 
 ## APPENDIX: Semantic Continuity Principle
 
-Embedding of an $N$-stage composite into the last space:
+SCP is a **dialogical** check on commitments, not a requirement that the latent state $h$ stay fixed.
+
+Let $\Gamma(h)$ be the commitment set attached to state $h$: the facts and constraints already accepted. Let $\phi$ be one transformation (inference step, rewrite, or tool call).
 
 $$
-\mathcal{I}_N:\prod_{i=1}^{N-1}\mathcal{C}_i\hookrightarrow\mathcal{C}_N
+\chi(\phi)=1
+\iff
+\Gamma(\phi(h))\supseteq\Gamma(h)
+\;\wedge\;
+\Gamma(\phi(h))\not\models\bot
 $$
 
-Characteristic predicate on automorphisms:
+- $\Gamma(\phi(h))\supseteq\Gamma(h)$: no silent retraction of prior commitments  
+- $\Gamma(\phi(h))\not\models\bot$: the updated set is consistent  
 
-$$
-\chi:{Aut}(\mathcal{C}_N)\to\{0,1\}
-$$
+$\chi(\phi)=0$ withdraws the dialogical guarantee: log the contradiction or dropped commitment, then revise or quarantine.
 
-SCP as written:
+If retraction is allowed, replace $\supseteq$ with a versioned update: a commitment may be removed only when the audit log records the retraction and the resulting $\Gamma'$ still satisfies $\Gamma'\not\models\bot$.
 
-$$
-\chi(\phi)=1 \iff \forall h\in\mathcal{C}_1,\quad \bigl\lVert\mathcal{I}_N(\phi^N(h))-h\bigr\rVert\le\varepsilon
-$$
-
-That is invariance of the state under $N$-fold composition, not preservation of asserted content.
+SCP does **not** require $\phi^N(h)\approx h$. Movement of embeddings is expected. What must not break is the commitment set.
 
 ---
 
