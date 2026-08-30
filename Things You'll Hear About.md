@@ -747,3 +747,99 @@ Instead of a single guide, modern users rely on:
 The spirit of the IRG lives on, but the scale and diversity of today’s Internet require distributed, dynamic, and searchable documentation rather than a single curated guide.
 
 ---
+
+## 5 Requests for Comments (RFCs) 
+
+**Requests for Comments** (RFCs) are the official documents that define the architecture, protocols, standards, and best practices of the Internet. They remain one of the most important bodies of technical literature in computing. While the spirit of the RFC process is unchanged since the early ARPANET era, the workflow, governance, and distribution mechanisms have evolved significantly.
+
+### 🎯 What RFCs Are  
+RFCs describe:
+
+- Internet protocols (TCP, IP, HTTP, DNS, TLS)  
+- best practices for operations and security  
+- informational notes and historical context  
+- experimental proposals  
+- Internet governance and architectural principles  
+
+Some RFCs define mandatory standards; others are informational or experimental. Collectively, they form the backbone of Internet engineering.
+
+### 🧭 How RFCs Are Created Today  
+The original process — emailing a draft to Jon Postel — is long gone. Today, RFCs are produced through the **IETF** (Internet Engineering Task Force) and published by the **RFC Editor** under the **RFC Series Working Group (RSWG)**.
+
+The modern workflow:
+
+1. A contributor writes an **Internet‑Draft**.  
+2. The draft is discussed in an IETF working group.  
+3. After consensus, it moves through review and approval.  
+4. The RFC Editor assigns an RFC number and publishes it.  
+
+This process is open, collaborative, and global — anyone can participate.
+
+### 📚 Modern RFC Categories  
+The old categories (required, suggested, directional, informational, obsolete) have been replaced by clearer **status labels**:
+
+- **Standards Track**  
+  - *Proposed Standard*  
+  - *Internet Standard*  
+- **Best Current Practice (BCP)**  
+- **Informational**  
+- **Experimental**  
+- **Historic** (replaces “obsolete”)  
+
+Examples:
+
+- **RFC 791** — Internet Protocol (Historic but foundational)  
+- **RFC 793** — Transmission Control Protocol (Historic but foundational)  
+- **RFC 8446** — TLS 1.3 (Standards Track)  
+- **RFC 9110** — HTTP Semantics (Standards Track)  
+
+### 🧩 FYIs (For Your Information)  
+FYIs still exist as part of the RFC Series, but they are less common today. They provide:
+
+- beginner‑friendly explanations  
+- answers to common questions  
+- historical notes  
+- bibliographies and guides  
+
+They remain useful for newcomers and educators.
+
+### 🧠 Why RFCs Matter  
+Even when an RFC becomes Historic, it often contains:
+
+- original design rationale  
+- architectural assumptions  
+- protocol motivations  
+- early implementation notes  
+
+Understanding modern Internet behavior often requires reading both the current RFC and the historical ones it replaced.
+
+### 🌐 How to Access RFCs Today  
+The old FTP servers (nic.ddn.mil, uu.net) and email‑based retrieval systems are long gone. Modern access is centralized and easy:
+
+- **RFC Editor website** — [https://www.rfc-editor.org](https://www.rfc-editor.org)  
+- **IETF Datatracker** — `https://datatracker.ietf.org` [(datatracker.ietf.org in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fdatatracker.ietf.org%2F")  
+- **IETF Tools** — [https://tools.ietf.org](https://tools.ietf.org)  
+- **GitHub mirrors** of RFCs and drafts  
+- **Search engines** (RFC numbers are globally indexed)
+
+RFCs are available in:
+
+- HTML  
+- PDF  
+- plain text  
+- XML (canonical format)  
+
+All are free and publicly accessible.
+
+### 💬 Modern Discussion Channels  
+Instead of Usenet or email servers, RFC and protocol discussions now happen through:
+
+- **IETF mailing lists**  
+- **IETF working group meetings**  
+- **IETF Slack/Matrix communities**  
+- **GitHub issue trackers for drafts**  
+- **NANOG and RIPE operator forums**  
+
+These channels provide real‑time collaboration across the global Internet engineering community.
+
+---
