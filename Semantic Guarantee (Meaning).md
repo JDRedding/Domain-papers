@@ -2,6 +2,8 @@
 Semantic Meaning Guarantee 
 - Version 2.0
 
+This document describes Formal Semantic Substrate Theory (FSST) and a verification module called TruthSense: FSST supplies measurable geometric and operator-theoretic observables of semantic state and drift, while TruthSense is the enforcement layer that turns those observables into falsifiable “semantic guarantees” (grounding, non‑contradiction, drift stability). Meaning preservation is not guaranteed — only externally checkable constraints are.
+
 ---
 
 Formal Semantic Substrate Theory (FSST) describes meaning as a **time‑evolving geometric and operator‑theoretic substrate**. It provides a mathematical structure for analyzing how semantic relationships change over time, without asserting truth or correctness by itself.
