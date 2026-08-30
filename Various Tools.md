@@ -244,3 +244,88 @@ This sends exactly three probes and prints a summary.
 
 ---
 
+## **3. Talk**
+
+Before instant messaging, Slack, or Discord, UNIX systems provided real‑time interactive chat through the **talk** command. It allowed two users to type directly to each other’s terminals, character‑by‑character, even across the Internet.
+
+Talk was an early real-time chat system for UNIX hosts, allowing users to type directly to each other’s terminals. While the command still exists on some systems, the network service is almost universally disabled due to security, firewalling, and the availability of modern messaging platforms.
+
+On systems where Talk is still installed, the basic usage is:
+
+```
+talk user@hostname
+```
+
+If the remote host supports Talk, the user receives a notification and can accept the session.
+
+---
+
+### **How a Talk Session Worked**
+
+If you attempted to talk with a remote user:
+
+```
+talk bart@example.edu
+```
+
+Bart’s terminal would display a message similar to:
+
+```
+Message from talkd@example.edu ...
+talk: connection requested by joe@remote.edu
+talk: respond with:  talk joe@remote.edu
+```
+
+Once Bart responded, both users would see a split‑screen interface and could type back and forth in real time. Every keystroke appeared immediately on both ends.
+
+To exit Talk, users typically pressed `Ctrl‑C`, though implementations varied.
+
+---
+
+### **Old Talk vs. New Talk (ntalk)**
+
+Historically, two incompatible versions existed:
+
+- **old talk** — used on older UNIX variants  
+- **ntalk** — the newer, more standardized protocol  
+
+If you attempted to contact a host running the other version, you might see errors such as:
+
+```
+Protocol mismatch
+```
+
+or
+
+```
+Connection refused
+```
+
+Administrators had to install the correct daemon (`talkd` or `ntalkd`) to support both.
+
+---
+
+### **Status**
+
+Talk is now **almost entirely obsolete**:
+
+- Most modern systems disable the Talk daemon for security reasons.  
+- Firewalls commonly block the required ports (517/518).  
+- Terminal‑to‑terminal chat is no longer part of normal workflow.  
+- Modern replacements include SSH‑based messaging, IRC, Matrix, Slack, and Discord.
+
+Talk survives mainly on hobbyist UNIX systems, retro computing environments, and a few academic networks.
+
+---
+
+### **Why Talk Disappeared**
+
+Several factors contributed to its decline:
+
+- **Security**: Talk exposed user presence and relied on unauthenticated UDP traffic.  
+- **Reliability**: NAT, firewalls, and modern routing break Talk’s assumptions.  
+- **Better alternatives**: Instant messaging, IRC, and later Slack/Discord replaced its role.  
+- **User experience**: Split‑screen terminal chat became unnecessary once graphical interfaces and persistent chat rooms emerged.
+
+---
+
