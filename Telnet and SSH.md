@@ -1086,3 +1086,149 @@ SSH‑based file transfer is widely used in:
 - CI/CD workflows  
 
 Key‑based authentication allows secure automation without storing plaintext passwords, making SSH essential for modern infrastructure.
+
+### **6.6 SSH Tunneling and Port Forwarding**
+
+SSH is not only a secure remote terminal protocol — it is also a powerful tool for securely transporting other network traffic. SSH tunneling and port forwarding allow users to wrap arbitrary TCP connections inside an encrypted SSH session. This capability makes SSH a flexible alternative to VPNs, a secure debugging tool, and a foundation for many modern workflows.
+
+SSH supports three major types of port forwarding:
+
+- **Local port forwarding**  
+- **Remote port forwarding**  
+- **Dynamic port forwarding (SOCKS proxy)**  
+
+Each type serves a different purpose, but all rely on SSH’s encrypted tunnel.
+
+---
+
+#### **6.6.1 Local Port Forwarding (Client → Server)**
+
+Local port forwarding allows you to expose a remote service on your local machine. This is the most common type of SSH tunnel.
+
+##### **Example**
+
+```
+ssh -L 8080:localhost:80 user@remote
+```
+
+This means:
+
+- Your local port **8080**  
+- Connects securely through SSH  
+- To the remote machine’s port **80**
+
+Now you can open:
+
+```
+http://localhost:8080
+```
+
+And you’re actually viewing the remote server’s web service — securely, even if the remote network is untrusted.
+
+##### **Use cases**
+
+- Accessing internal web dashboards  
+- Securely using remote databases  
+- Encrypting traffic for legacy services  
+- Bypassing firewalls that block direct access  
+
+Local forwarding is the SSH equivalent of “bring that remote port here.”
+
+---
+
+#### **6.6.2 Remote Port Forwarding (Server → Client)**
+
+Remote port forwarding exposes a local service on the remote machine. This is the inverse of local forwarding.
+
+##### **Example**
+
+```
+ssh -R 9000:localhost:3000 user@remote
+```
+
+This means:
+
+- The remote machine’s port **9000**  
+- Connects securely through SSH  
+- To your local machine’s port **3000**
+
+Now anyone on the remote machine can access your local service.
+
+##### **Use cases**
+
+- Sharing a development server with teammates  
+- Exposing a local API to a remote host  
+- Allowing remote debugging of local applications  
+- Temporary access to local tools without deployment  
+
+Remote forwarding is “publish my local port on the remote machine.”
+
+---
+
+#### **6.6.3 Dynamic Port Forwarding (SOCKS Proxy)**
+
+Dynamic forwarding turns SSH into a full SOCKS proxy, allowing you to route arbitrary TCP traffic through the SSH connection.
+
+##### **Example**
+
+```
+ssh -D 1080 user@remote
+```
+
+This creates a SOCKS proxy on local port **1080**. Applications configured to use this proxy will send all traffic through the SSH tunnel.
+
+##### **Use cases**
+
+- Secure browsing on untrusted networks  
+- Testing network routes  
+- Debugging connectivity issues  
+- Lightweight VPN functionality  
+
+Dynamic forwarding is “route any connection through SSH.”
+
+---
+
+#### **6.6.4 SSH as a Lightweight VPN**
+
+Because SSH can forward arbitrary ports, it can act as a simple VPN substitute:
+
+- Encrypted  
+- Authenticated  
+- Works over a single TCP port  
+- No special client software needed  
+- No complex routing tables  
+
+While full VPNs offer more features, SSH tunneling is often simpler and sufficient for:
+
+- Developers  
+- Administrators  
+- Remote workers  
+- Cloud access  
+- Secure temporary connections  
+
+---
+
+#### **6.6.5 Security Considerations**
+
+SSH tunneling is powerful, but must be used responsibly:
+
+- Restrict forwarding in `sshd_config` if needed  
+- Avoid exposing sensitive local services via remote forwarding  
+- Use firewall rules to limit forwarded port access  
+- Monitor for unauthorized tunnels in enterprise environments  
+
+SSH tunnels can bypass firewalls — which is useful, but also something administrators must manage carefully.
+
+---
+
+#### **6.6.6 Why Tunneling Matters**
+
+SSH tunneling is one of the protocol’s most transformative features. It enables:
+
+- Secure access to internal systems  
+- Encrypted transport for legacy protocols  
+- Remote debugging and development  
+- Secure browsing  
+- Temporary secure networking without full VPN setup  
+
+Telnet had *none* of these capabilities. SSH’s tunneling features are a major reason it became the universal remote‑access tool for modern computing.
