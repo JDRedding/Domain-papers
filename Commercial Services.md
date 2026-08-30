@@ -187,7 +187,7 @@ Internet access became a paid service because:
 - ISPs needed revenue to expand infrastructure  
 - NSFNET was shutting down, forcing commercial alternatives  
 
-Connectivity was the **first large‑scale commercial Internet industry**, and it enabled every other service you’ve documented.
+Connectivity was the **first large‑scale commercial Internet industry**, and it enabled every other service.
 
 ---
 
@@ -726,7 +726,7 @@ But in the late 1980s and early 1990s, “going online” meant dialing into a p
 
 The major commercial online service providers included:
 
-- **AOL (America Online)** — The most iconic of the early services. AOL offered email, chat rooms, forums, downloadable software, news, weather, stock quotes, and later full Internet access. Its “You’ve got mail” greeting became a cultural landmark.  
+- **AOL (America Online)** — The most iconic of the early services. AOL offered email, chat rooms, forums, downloadable software, news, weather, stock quotes, and later full Internet access. Its “*You’ve got mail*” greeting became a cultural landmark.  
 - **CompuServe** — The oldest and most technically sophisticated service. It provided forums (the famous CompuServe Forums), email, file libraries, online shopping experiments, and early access to Usenet.  
 - **Prodigy** — A joint venture between IBM and Sears, known for its graphical interface and early attempts at online advertising and e‑commerce.  
 - **GEnie (General Electric Network for Information Exchange)** — A popular service for hobbyists, gamers, and early online communities, including the legendary RoundTables discussion groups.  
@@ -766,8 +766,6 @@ Still, these early commercial services shaped the culture of online communicatio
 ## 📡 Commercial Usenet Feeds
 
 Commercial Usenet feeds were one of the earliest paid “infrastructure” services on the Internet. Before the web, before broadband, and before modern content‑delivery networks, Usenet was the backbone of global discussion — and commercial providers made sure businesses could receive it reliably, quickly, and with full retention.
-
-This section gives you a modern rewrite while preserving the historical reality of how commercial Usenet distribution worked.
 
 ---
 
@@ -854,7 +852,7 @@ Today, software distribution happens through:
 - App stores  
 - Vendor portals  
 
-But in the late 1980s and early 1990s, **FTP was the backbone** of commercial file distribution. If you needed drivers, patches, documentation, or licensed software, you often retrieved it from a vendor‑maintained FTP archive.
+But in the late 1980s and early 1990s, **FTP was the backbone** of commercial file distribution. If needed drivers, patches, documentation, or licensed software,  often retrieved it from a vendor‑maintained FTP archive.
 
 ---
 
