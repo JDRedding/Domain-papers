@@ -802,3 +802,150 @@ Keypairs solve the fundamental security problems that made Telnet unsafe:
 - Compatibility with modern security policies and compliance standards  
 
 SSH keypairs are the backbone of secure remote access in cloud computing, DevOps pipelines, and modern infrastructure.
+
+
+### **6.4 — Using SSH for Remote Access and Command Execution**
+
+SSH’s primary purpose is to provide secure, encrypted remote access to another machine. Whether you’re administering a server, managing cloud infrastructure, or simply logging into a remote workstation, SSH offers a flexible and secure way to interact with remote systems. This section covers the core workflows: logging in, running commands, and managing sessions.
+
+---
+
+#### **6.4.1 Basic SSH Login**
+
+The simplest SSH command connects your local machine to a remote host:
+
+```
+ssh username@hostname
+```
+
+If the server uses the default port (22) and your public key is installed, SSH opens an encrypted terminal session. This replaces the classic Telnet workflow but adds modern security and reliability.
+
+Example:
+
+```
+ssh jd@server.example.com
+```
+
+Once connected, your terminal behaves as if you were physically sitting at the remote machine.
+
+---
+
+#### **6.4.2 Using Non‑Default Ports**
+
+Administrators often run SSH on alternate ports for organizational or security reasons. You can specify a port with `-p`:
+
+```
+ssh -p 2222 username@hostname
+```
+
+This is conceptually similar to Telnet’s ability to connect to arbitrary ports, but with encryption and authentication.
+
+---
+
+#### **6.4.3 Running Single Commands Remotely**
+
+SSH can execute a single command on a remote machine without opening an interactive shell:
+
+```
+ssh user@host "command"
+```
+
+Examples:
+
+```
+ssh jd@server "uptime"
+ssh jd@server "df -h"
+ssh jd@server "systemctl status nginx"
+```
+
+This is essential for automation, scripting, and remote administration.
+
+---
+
+#### **6.4.4 Persistent Sessions and Terminal Multiplexers**
+
+SSH sessions can be combined with terminal multiplexers like:
+
+- **tmux**  
+- **screen**  
+
+These tools allow:
+
+- Persistent sessions that survive disconnects  
+- Multiple windows inside one SSH connection  
+- Shared sessions for collaborative debugging  
+
+This is a major improvement over Telnet-era workflows, where disconnects often meant lost work.
+
+---
+
+#### **6.4.5 SSH Configuration for Convenience**
+
+Users can simplify SSH usage by creating entries in `~/.ssh/config`:
+
+```
+Host myserver
+    HostName server.example.com
+    User jd
+    Port 2222
+    IdentityFile ~/.ssh/id_ed25519
+```
+
+Then connect with:
+
+```
+ssh myserver
+```
+
+This makes SSH more convenient than Telnet ever was, while retaining full security.
+
+---
+
+#### **6.4.6 Remote Environment Control**
+
+SSH supports environment customization:
+
+- Setting environment variables  
+- Forwarding locale settings  
+- Controlling pseudo‑terminal allocation  
+- Restricting or enabling X11 forwarding  
+
+Example:
+
+```
+ssh -t user@host "sudo systemctl restart apache2"
+```
+
+The `-t` flag forces a pseudo‑terminal, allowing interactive commands like `sudo`.
+
+---
+
+#### **6.4.7 Connection Stability and Resilience**
+
+SSH includes built‑in mechanisms to handle unstable networks:
+
+- Keepalive packets  
+- Reconnect options  
+- Compression for slow links  
+- ControlMaster multiplexing for shared connections  
+
+These features make SSH far more robust than Telnet, which had no protection against dropped connections.
+
+---
+
+#### **6.4.8 Why SSH Is the Standard for Remote Access**
+
+SSH dominates modern remote access because it provides:
+
+- Strong encryption  
+- Strong authentication  
+- Secure command execution  
+- Secure file transfer  
+- Port forwarding and tunneling  
+- Automation support  
+- Cross‑platform compatibility  
+- Reliability on unstable networks  
+
+It is the backbone of modern system administration, cloud computing, DevOps pipelines, and secure remote work.
+
+---
