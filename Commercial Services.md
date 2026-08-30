@@ -7,13 +7,13 @@ Many services can be accessed through the Internet. As time progresses and more 
 ### 🧭 What changed
 : from restricted backbone → open commercial Internet
 
-The original NSFNET AUP explicitly barred **for‑profit activity** and **private business** on the backbone. This meant that even though commercial services *technically* could send packets, they were not allowed to use the subsidized national backbone unless the traffic directly supported research or education.   [ftp.sunet.se](https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/doc/Internet-documents/policies-procedures/nsf.net/nsf.policy)
+The original NSFNET AUP explicitly barred **for‑profit activity** and **private business** on the backbone. This meant that even though commercial services *technically* could send packets, they were not allowed to use the subsidized national backbone unless the traffic directly supported research or education.  
 
 But by the early 1990s:
 
 - Commercial providers like **UUNET**, **PSI**, **Sprint**, and **MCI Mail** were already offering TCP/IP services.  
 - Regional networks began interconnecting with private carriers.  
-- Commercial Internet exchanges (CIX, later NAPs) appeared as alternative paths.   [btw.media](https://btw.media/en/the-acceptable-use-policy-as-an-invisible-allocation-rule)
+- Commercial Internet exchanges (CIX, later NAPs) appeared as alternative paths.   
 
 This meant businesses could route around the NSFNET restrictions. As these alternatives grew credible, the AUP’s practical power diminished.
 
@@ -22,7 +22,7 @@ This meant businesses could route around the NSFNET restrictions. As these alter
 ### 🔄 The turning point
 : NSFNET decommissioned (April 30, 1995)
 
-NSF shut down the NSFNET backbone in 1995, deliberately transitioning the Internet’s core infrastructure to **commercial network access points and private backbones**. Once the federally funded backbone disappeared, so did the AUP restrictions.   [centerconsulting.com](https://www.centerconsulting.com/code-library/milestones/nsfnet)
+NSF shut down the NSFNET backbone in 1995, deliberately transitioning the Internet’s core infrastructure to **commercial network access points and private backbones**. Once the federally funded backbone disappeared, so did the AUP restrictions.   
 
 From that moment forward:
 
@@ -30,7 +30,7 @@ From that moment forward:
 - Commercial traffic could flow across private networks without restriction.  
 - The modern commercial Internet—ISPs, hosting providers, e‑commerce—became possible.
 
-This is why many historians mark **1995** as the year Internet commerce became viable at national scale.   [marknichols.com](https://marknichols.com/nsfnet-acceptable-use-policy/)
+This is why many historians mark **1995** as the year Internet commerce became viable at national scale.
 
 ---
 
@@ -45,3 +45,5 @@ This is why many historians mark **1995** as the year Internet commerce became v
 In short: **once alternative networks existed, the policy barrier fell, and commercial activity surged.**
 
 
+## References and further reading
+-  [ftp.sunet.se policies-procedures/nsf.net/nsf.policy](https://ftp.sunet.se/mirror/archive/ftp.sunet.se/pub/doc/Internet-documents/policies-procedures/nsf.net/nsf.policy)
