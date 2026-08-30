@@ -329,7 +329,7 @@ Several factors contributed to its decline:
 
 ---
 
-## **4. WHOIS and RDAP (Modern Overview)**
+## **4. WHOIS and RDAP**
 
 The **WHOIS** service is one of the oldest Internet directory protocols. Historically, it was operated by the Network Information Center (NIC) and provided registration details for domains, networks, and individual contacts. System administrators used WHOIS to find the **Points of Contact (POCs)** for a domain—typically to report technical issues, abuse, or security problems.
 
@@ -412,7 +412,8 @@ RDAP solves these issues while preserving the ability to contact domain operator
 
 ---
 
-### **WHOIS for People (Historical Only)**
+### **WHOIS for People**
+*Historical Only*
 
 In the early Internet, WHOIS also stored **individual user records**—including names, phone numbers, and postal addresses. This practice is long gone. Modern WHOIS/RDAP **does not** store personal user entries except for domain contacts, and those are usually hidden behind privacy services.
 
@@ -420,7 +421,7 @@ The old NIC templates, FTP servers, and user registration forms no longer exist.
 
 ---
 
-## **4.1 Other Uses of WHOIS (Modernized)**
+## **4.1 Other Uses of WHOIS**
 
 Some organizations still run **local WHOIS servers** to provide directory information about staff, students, or internal systems. These are typically:
 
