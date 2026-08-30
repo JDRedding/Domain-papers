@@ -198,7 +198,7 @@ That tiny anomaly turned out to be evidence of:
 - data exfiltration  
 - international espionage  
 
-It’s one of the best examples of how **small signals in a system can reveal massive underlying structure**, something you’ve talked about in your RDG/MFE work: tiny flux → large causal geometry.
+It’s one of the best examples of how **small signals in a system can reveal massive underlying structure**, something talked about in the relational dynamic geometry work: tiny flux → large causal geometry.
 
 ---
 
