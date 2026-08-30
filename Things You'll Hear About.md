@@ -351,3 +351,47 @@ Headquarters: 1601 Broadway, 10th Floor, New York, NY 10019
 Membership applications, SIG enrollment, and digital library access are all handled through the ACM website.
 
 ---
+
+### 3.2 Computer Professionals for Social Responsibility 
+
+**Computer Professionals for Social Responsibility (CPSR)** was one of the earliest and most influential organizations dedicated to examining the social, ethical, and political implications of computing. Founded in **1981** in Palo Alto, CPSR emerged from a group of researchers concerned about the intersection of computer technology and nuclear weapons systems. Their core belief was that technologists had a responsibility not only to build systems, but to understand and mitigate their impact on society.
+
+Although CPSR formally dissolved in **2013**, its ideas, publications, and project areas continue to influence modern digital‑rights organizations, academic research, and public policy.
+
+#### 🎯 Mission and Focus Areas  
+CPSR’s work centered on four major themes — all of which remain relevant today:
+
+- **Reliability and Risk**  
+  CPSR warned that overreliance on automated systems — especially in military contexts — could create catastrophic risks. Their critiques of missile‑defense automation and command‑and‑control systems anticipated today’s debates about autonomous weapons and AI safety.
+
+- **Civil Liberties and Privacy**  
+  CPSR was an early voice in discussions about government databases, surveillance, encryption policy, and digital free speech. Many of their concerns foreshadowed modern issues such as mass data collection, predictive policing, and biometric tracking.
+
+- **Computers in the Workplace**  
+  CPSR promoted *participatory design*, arguing that workers should help shape the systems they rely on. This philosophy influenced modern UX research, human‑centered design, and collaborative software development practices.
+
+- **The 21st Century Project**  
+  CPSR advocated for shifting national research priorities away from military applications and toward long‑term societal challenges — a theme echoed today in discussions about climate technology, AI governance, and digital equity.
+
+#### 🧭 Legacy and Modern Successors  
+Although CPSR no longer operates, its influence lives on through organizations that inherited its mission:
+
+- **Electronic Frontier Foundation (EFF)**  
+- **ACLU’s digital rights initiatives**  
+- **Open Rights Group**  
+- **Center for Democracy & Technology**  
+- **AI Now Institute**  
+
+These groups continue CPSR’s work on privacy, civil liberties, algorithmic accountability, and the societal impact of computing.
+
+#### 🏛️ Historical Information (No Longer Active)  
+The original CPSR mailing address and contact lines are now archival:
+
+**Computer Professionals for Social Responsibility**  
+P.O. Box 717  
+Palo Alto, CA 94302  
+cpsr@csli.stanford.edu  
+
+Today, CPSR’s archives and publications are preserved by Stanford University and various digital‑rights libraries.
+
+---
