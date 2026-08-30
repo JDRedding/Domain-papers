@@ -74,8 +74,11 @@ Below is a structured breakdown of what those topics typically include, some old
 ### 🧩 Cultural & Historical Things 
 
 - **Usenet** — One of the earliest discussion systems; still exists today.  
+
 - **Early Web Browsers** — Mosaic, Netscape, and the graphical web.  
+
 - **Netiquette** — Early norms for polite online communication.  
+
 - **The Digital Revolution** — The web exploded in the 1990s.   
 
 ---
@@ -83,8 +86,11 @@ Below is a structured breakdown of what those topics typically include, some old
 ### 📡 Infrastructure
 
 - **Servers** — Computers that store websites, apps, and services.  
+
 - **Fiber Optics** — Light-speed data transmission.  
+
 - **Wireless Towers** — How phones access the network.  
+
 - **ISPs** — Companies that provide your internet connection.  
 
 ---
