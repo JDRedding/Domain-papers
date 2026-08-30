@@ -689,9 +689,9 @@ The old mailing lists such as *nren-discuss @uu.psi.com* are no longer active; m
 
 ---
 
-### Internet Resource Guide
+### 4.2 Internet Resource Guides
 
-In the early days of the Internet, the **Internet Resource Guide (IRG)**—compiled by the NSF Network Service Center (NNSC)—served as a centralized directory of online resources. Its purpose was simple but essential: help users discover what existed on the network and how to reach it. At a time when the Internet was small, fragmented, and largely academic, the IRG was one of the few comprehensive maps of available services.
+In the early days of the Internet, the **Internet Resource Guide (IRG)** — compiled by the NSF Network Service Center (NNSC) —served as a centralized directory of online resources. Its purpose was simple but essential: help users discover what existed on the network and how to reach it. At a time when the Internet was small, fragmented, and largely academic, the IRG was one of the few comprehensive maps of available services.
 
 Today, the Internet is vastly larger and more complex, and the original IRG no longer exists. But the *idea* behind it—helping people find and understand online resources—has evolved into modern documentation portals, search engines, registries, and research catalogs.
 
