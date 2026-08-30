@@ -74,7 +74,7 @@ Below is a structured breakdown of what those topics typically include, some old
 
 ### 🧩 Cultural & Historical Things 
 
-- **Usenet** — One of the earliest discussion systems; still exists today.  
+- **Usenet** — One of the earliest discussion systems; still exists today. Usenet is a pioneering global discussion system that originated in 1980 and continues to exist today, primarily through specialized servers and internet providers.
 
 - **Early Web Browsers** — Mosaic, Netscape, and the graphical web.  
 
