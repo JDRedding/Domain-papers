@@ -145,7 +145,7 @@ Telnet survives mainly for:
 
 ---
 
-### 2 Publicly Accessible Libraries
+## 2 Publicly Accessible Libraries
 
 University and research libraries were among the first institutions to move from paper card catalogs to computerized catalog systems. These systems made it possible for students and researchers to quickly search holdings, check availability, and access up‑to‑date bibliographic information. As networking evolved—from campus LANs to dial‑up access, and eventually to the global Internet—library catalogs became accessible far beyond the physical campus.
 
