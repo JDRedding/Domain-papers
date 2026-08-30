@@ -1289,3 +1289,172 @@ Retrocomputing communities occasionally run Netfind for demonstration purposes, 
 
 ---
 
+# **12. IRC (Internet Relay Chat)**
+
+Before Slack, Discord, Matrix, or any modern chat platform, real‑time group communication on the Internet was dominated by **IRC — Internet Relay Chat**. Created in 1988, IRC became the backbone of online communities throughout the 1990s and early 2000s. It provided multi‑user chat rooms, private messaging, and server‑to‑server networks long before the Web had anything comparable.
+
+IRC was the dominant real-time chat system of the early Internet, providing multi-user channels, private messaging, and decentralized networks long before modern chat platforms existed. While largely replaced by Slack, Discord, and Matrix, IRC remains active in technical and open-source communities and stands as one of the most influential communication tools in Internet history.
+
+IRC wasn’t just a protocol — it was a culture, a social space, and one of the earliest examples of large‑scale, real‑time online interaction.
+
+---
+
+## **12.1 What IRC Did**
+
+IRC provided:
+
+- **Real‑time group chat** in channels (e.g., `#linux`, `#help`, `#chat`)  
+- **Private one‑to‑one messaging**  
+- **Multi‑server networks** that linked channels across the world  
+- **Nicknames** and identity management  
+- **Moderation tools** (ops, bans, invite‑only channels)  
+- **Bots** for automation, logging, and games  
+
+It was the first widely adopted platform where thousands of people could talk simultaneously in structured, persistent chat rooms.
+
+---
+
+## **12.2 How IRC Worked**
+
+To join IRC, users connected to an IRC server using a client such as:
+
+- ircII  
+- mIRC  
+- BitchX  
+- XChat  
+- irssi  
+
+Once connected, they could join channels:
+
+```
+/join #example
+```
+
+Send messages:
+
+```
+Hello everyone
+```
+
+Send private messages:
+
+```
+/msg alice Hi there
+```
+
+Change nicknames:
+
+```
+/nick newname
+```
+
+And leave channels:
+
+```
+/part #example
+```
+
+IRC commands were simple, text‑based, and standardized across servers.
+
+---
+
+## **12.3 IRC Networks**
+
+IRC was not a single service — it was a **federation** of networks. Popular networks included:
+
+- EFnet  
+- Undernet  
+- DALnet  
+- IRCnet  
+- Freenode (later Libera Chat)  
+
+Each network consisted of many servers linked together. Channels existed across the entire network, allowing global communities to form.
+
+---
+
+## **12.4 Moderation and Channel Control**
+
+IRC channels were controlled by “ops” — users with operator privileges. Ops could:
+
+- Kick users  
+- Ban users  
+- Set channel modes  
+- Make channels private or invite‑only  
+- Assign or revoke operator status  
+
+Channel modes controlled behavior:
+
+```
+/mode #example +i     (invite-only)
+ /mode #example +m     (moderated)
+ /mode #example +t     (topic locked)
+```
+
+This system allowed communities to self‑govern long before modern platforms formalized moderation tools.
+
+---
+
+## **12.5 IRC Bots**
+
+Bots became a major part of IRC culture. The most famous was **Eggdrop** (1993), which provided:
+
+- Channel moderation  
+- Logging  
+- Auto‑rejoin protection  
+- Trivia games  
+- Custom scripting  
+
+Bots were often the backbone of large channels, providing stability and automation.
+
+---
+
+## **12.6 Why IRC Was Important**
+
+IRC was the first platform to demonstrate:
+
+- Large‑scale real‑time chat  
+- Persistent online communities  
+- Open, decentralized communication  
+- User‑controlled moderation  
+- Extensible automation via bots  
+
+It shaped early Internet culture and influenced nearly every chat system that followed.
+
+---
+
+## **12.7 Decline of IRC**
+
+IRC began to decline in the 2000s due to:
+
+- Rise of web‑based chat platforms  
+- Lack of built‑in media support  
+- No message history unless logged manually  
+- Fragmentation across networks  
+- Increasing spam and bot abuse  
+- More user‑friendly alternatives (Slack, Discord, Matrix)
+
+Despite this, IRC never fully disappeared.
+
+---
+
+## **12.8 IRC Legacy**
+
+IRC still exists and remains active in:
+
+- Open‑source development communities  
+- Retrocomputing circles  
+- Privacy‑focused groups  
+- Technical support channels  
+- Niche hobbyist networks  
+
+Modern IRC clients support:
+
+- TLS encryption  
+- SASL authentication  
+- Bouncer services (ZNC) for persistent connections  
+- Integration with Matrix bridges  
+- Logging and replay features  
+
+IRC is no longer mainstream, but it remains a living part of Internet history.
+
+---
