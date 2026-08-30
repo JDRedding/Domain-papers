@@ -1289,7 +1289,7 @@ Retrocomputing communities occasionally run Netfind for demonstration purposes, 
 
 ---
 
-# **12. IRC (Internet Relay Chat)**
+## **12. IRC (Internet Relay Chat)**
 
 Before Slack, Discord, Matrix, or any modern chat platform, real‑time group communication on the Internet was dominated by **IRC — Internet Relay Chat**. Created in 1988, IRC became the backbone of online communities throughout the 1990s and early 2000s. It provided multi‑user chat rooms, private messaging, and server‑to‑server networks long before the Web had anything comparable.
 
@@ -1299,7 +1299,7 @@ IRC wasn’t just a protocol — it was a culture, a social space, and one of th
 
 ---
 
-## **12.1 What IRC Did**
+### **12.1 What IRC Did**
 
 IRC provided:
 
@@ -1314,7 +1314,7 @@ It was the first widely adopted platform where thousands of people could talk si
 
 ---
 
-## **12.2 How IRC Worked**
+### **12.2 How IRC Worked**
 
 To join IRC, users connected to an IRC server using a client such as:
 
@@ -1358,7 +1358,7 @@ IRC commands were simple, text‑based, and standardized across servers.
 
 ---
 
-## **12.3 IRC Networks**
+### **12.3 IRC Networks**
 
 IRC was not a single service — it was a **federation** of networks. Popular networks included:
 
@@ -1372,7 +1372,7 @@ Each network consisted of many servers linked together. Channels existed across 
 
 ---
 
-## **12.4 Moderation and Channel Control**
+### **12.4 Moderation and Channel Control**
 
 IRC channels were controlled by “ops” — users with operator privileges. Ops could:
 
@@ -1394,7 +1394,7 @@ This system allowed communities to self‑govern long before modern platforms fo
 
 ---
 
-## **12.5 IRC Bots**
+### **12.5 IRC Bots**
 
 Bots became a major part of IRC culture. The most famous was **Eggdrop** (1993), which provided:
 
@@ -1408,7 +1408,7 @@ Bots were often the backbone of large channels, providing stability and automati
 
 ---
 
-## **12.6 Why IRC Was Important**
+### **12.6 Why IRC Was Important**
 
 IRC was the first platform to demonstrate:
 
@@ -1422,7 +1422,7 @@ It shaped early Internet culture and influenced nearly every chat system that fo
 
 ---
 
-## **12.7 Decline of IRC**
+### **12.7 Decline of IRC**
 
 IRC began to decline in the 2000s due to:
 
@@ -1437,7 +1437,7 @@ Despite this, IRC never fully disappeared.
 
 ---
 
-## **12.8 IRC Legacy**
+### **12.8 IRC Legacy**
 
 IRC still exists and remains active in:
 
