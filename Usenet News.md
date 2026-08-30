@@ -423,7 +423,7 @@ Participation is voluntary, but historically, it has been one of the defining ac
 
 ---
 
-## **11 How Usenet Works (Updated)**
+## **11 How Usenet Works**
 
 Usenet operates through **voluntary cooperation**. Servers exchange articles because administrators choose to share them, not because any central authority requires it. Most feeds are provided out of goodwill and mutual benefit. Some organizations historically charged for feeds (UUNET being the classic example), but money has never been the backbone of Usenet distribution.
 
