@@ -510,4 +510,64 @@ Information about the GNU Project, current tasks, and ways to contribute can be 
 
 ---
 
+### 3.5 The League for Programming Freedom
+
+The **League for Programming Freedom** (LPF) was a grassroots organization founded in **1989** by programmers, academics, and software users concerned about the growing use of software patents and interface copyrights. LPF argued that these legal trends threatened the freedom to write software, stifled innovation, and undermined the collaborative nature of computing.
+
+Although LPF is no longer active, its work helped shape modern debates about software patents, interoperability, and user rights — issues that remain central in 2026.
+
+#### 🎯 Mission and Focus Areas  
+LPF’s mission centered on protecting the ability of programmers to create new software without fear of litigation. Their core concerns included:
+
+- **Opposition to Software Patents**  
+  LPF argued that software patents created monopolies over ideas and algorithms, restricting innovation and harming small developers.
+
+- **Opposition to Interface Copyrights**  
+  LPF protested lawsuits such as Lotus v. Borland, which attempted to copyright menu structures and user interfaces. LPF maintained that such restrictions would make interoperable software impossible.
+
+- **Defense of Programmer Freedom**  
+  LPF advocated for a legal environment where programmers could write compatible, competing, or improved software without fear of being sued for re‑implementing functional interfaces.
+
+#### 🧭 Activities and Impact  
+LPF’s activism included:
+
+- publishing articles and position papers  
+- educating lawmakers and the public  
+- organizing protests and pickets  
+- coordinating boycotts of companies pursuing restrictive legal strategies  
+
+Their most famous actions were the **1989 and 1990 protests at Lotus headquarters**, which drew national media attention to the dangers of interface copyright.
+
+LPF’s work influenced later movements, including:
+
+- the Free Software Foundation’s anti‑software‑patent campaigns  
+- the Open Source Initiative’s advocacy for interoperability  
+- modern legal battles over APIs (such as Google v. Oracle)  
+- ongoing debates about algorithmic patentability  
+
+#### 🧩 Legacy
+LPF dissolved in the mid‑1990s, but its core message — that software freedom requires the ability to write compatible and interoperable programs — remains highly relevant.
+
+Today, its mission is carried forward by organizations such as:
+
+- **Free Software Foundation**  
+- **Electronic Frontier Foundation**  
+- **Software Freedom Conservancy**  
+- **Open Source Initiative**  
+
+These groups continue to fight software patents, defend interoperability, and protect the rights of developers.
+
+#### 🏢 Historical Information  
+LPF’s original contact address and MIT email are now archival:
+
+**League for Programming Freedom**  
+1 Kendall Square #143  
+P.O. Box 9171  
+Cambridge, MA 02139  
+league@prep.ai.mit.edu  
+
+The organization is no longer active, but its documents and historical materials are preserved in free‑software archives and digital‑rights libraries.
+
+---
+
 
