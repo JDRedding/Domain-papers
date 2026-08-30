@@ -59,7 +59,7 @@ with **H** the Hilbert space of observables over semantic nodes. FSST therefore 
 | $S_{\mathrm{sem}}=\alpha S_{\mathrm{ground}}+\beta S_{\mathrm{consist}}+\gamma S_{\mathrm{spec}}+\delta S_{\mathrm{geom}}$ | **Aggregate Verification Score:** Computes a weighted semantic‑verification score combining referential grounding, dialogical consistency, spectral stability, and geometric drift. The weights $\alpha,\beta,\gamma,\delta$ determine the relative influence of each channel. |
 | $\text{emit}\iff S_{\mathrm{ground}}\ge\tau_g\wedge S_{\mathrm{consist}}\ge\tau_c\wedge S_{\mathrm{sem}}\ge\tau$ | **Decision Rule:** Hard‑gate emission logic. An output is emitted only if grounding, consistency, and aggregate semantic score all exceed their respective thresholds. Failure in any channel results in rejection, revision, or quarantine. |
 
-Note: A step ϕ\phi\phi passes SCP when it keeps every prior commitment and the updated commitment set stays consistent.
+Note: A step ϕ passes SCP when it keeps every prior commitment and the updated commitment set stays consistent.
 $\chi(\phi)=1$ iff $\Gamma(\phi(h))\supseteq\Gamma(h)$ and $\Gamma(\phi(h)\not\models\bot$
 
 ---
