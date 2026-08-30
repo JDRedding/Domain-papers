@@ -1,5 +1,6 @@
 # Formal Semantic Substrate Theory (FSST) 
 Semantic Meaning Guarantee 
+- Version 2.0
 
 ---
 
