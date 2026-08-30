@@ -60,7 +60,7 @@ with **H** the Hilbert space of observables over semantic nodes. FSST therefore 
 | $\text{emit}\iff S_{\mathrm{ground}}\ge\tau_g\wedge S_{\mathrm{consist}}\ge\tau_c\wedge S_{\mathrm{sem}}\ge\tau$ | **Decision Rule:** Hard‑gate emission logic. An output is emitted only if grounding, consistency, and aggregate semantic score all exceed their respective thresholds. Failure in any channel results in rejection, revision, or quarantine. |
 
 Note: A step ϕ\phi\phi passes SCP when it keeps every prior commitment and the updated commitment set stays consistent.
-$\chi(\phi)=1$ iff<br>$\Gamma(\phi(h))\supseteq\Gamma(h)$ and<br>$\Gamma(\phi(h)\not\models\bot$
+$\chi(\phi)=1$ iff $\Gamma(\phi(h))\supseteq\Gamma(h)$ and $\Gamma(\phi(h)\not\models\bot$
 
 ---
 
