@@ -1689,3 +1689,91 @@ This timeline shows the **progressive layering** of commercial services:
 
 ---
 
+
+📜 Appendix II — **Commercial Connectivity**  
+
+- **Email** and **Usenet**  
+  form the earliest communication layer.
+
+- **Online Service Providers** and **Commercial BBSes**  
+  sit on top of email/Usenet, providing curated consumer access.
+
+- **FTP Archives** and **Search Services**  
+  provide distribution and discoverability.
+
+- **Commercial Data Feeds**  
+  introduce real‑time information markets.
+
+- **Early E‑Commerce**  
+  emerges once distribution + communication + indexing exist.
+
+- **Web Hosting**  
+  becomes the platform that unifies all previous services.
+
+- **Security & Access Control**  
+  stabilizes the ecosystem and enables commercial trust.
+
+### — Commercial Service Relationships 
+ 
+```
+                           +-----------------------------+
+                           |  [Commercial Connectivity]  |
+                           |  (ISPs, Backbones, SLIP/PPP)|
+                           +-------------+---------------+
+                                         |
+                                         v
+                    +-------------------------------------------+
+                    |      Core Transport & Access Layer         |
+                    |  (TCP/IP, UUCP, NNTP, FTP, Telnet)         |
+                    +------------------+--------------------------+
+                                       |
+        +------------------------------+------------------------------+
+        |                                                             |
+        v                                                             v
++-------------------------+                           +-------------------------+
+| [Comm. Email Services] |                           | [Comm. Usenet Feeds]    |
+| SMTP/X.400 gateways    |                           | NNTP/UUCP distribution  |
++-----------+-------------+                           +-----------+-------------+
+            |                                                         |
+            v                                                         v
++-------------------------+                           +-------------------------+
+| [Online Service Providers]                          | [FTP Archives &         |
+| AOL, CompuServe, Prodigy |                          |  Software Libraries]    |
++-----------+-------------+                           +-----------+-------------+
+            |                                                         |
+            v                                                         v
++-------------------------+                           +-------------------------+
+| [Commercial BBSes]      |                           | [Search & Indexing]     |
+| FidoNet, door games     |                           | WAIS, Archie, Gopher    |
++-----------+-------------+                           +-----------+-------------+
+            |                                                         |
+            +---------------------------+-----------------------------+
+                                        |
+                                        v
+                          +-------------------------------+
+                          | [Commercial Data Feeds]       |
+                          | Reuters, NOAA, GIS, finance   |
+                          +---------------+---------------+
+                                          |
+                                          v
+                          +-------------------------------+
+                          | [Early E-Commerce]            |
+                          | Email orders, telnet stores   |
+                          +---------------+---------------+
+                                          |
+                                          v
+                          +-------------------------------+
+                          | [Web Hosting Services]        |
+                          | Domains, CGI, early SSL       |
+                          +---------------+---------------+
+                                          |
+                                          v
+                          +-------------------------------+
+                          | [Security & Access Control]   |
+                          | RSA, SecurID, firewalls       |
+                          +-------------------------------+
+```
+
+---
+
+
