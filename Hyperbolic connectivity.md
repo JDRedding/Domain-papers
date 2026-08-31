@@ -100,7 +100,7 @@ The graph-theoretic analogy is useful here: Friedman’s original argument also 
 A compact hyperbolic surface $X$ of genus $g\ge 2$ has curvature $-1$. Gauss–Bonnet gives
 
 $$
-\operatorname{Area}(X)=4\pi(g-1).
+{Area}(X)=4\pi(g-1).
 $$
 
 The moduli space is
