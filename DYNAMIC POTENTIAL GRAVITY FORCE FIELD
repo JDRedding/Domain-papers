@@ -1,0 +1,117 @@
+DYNAMIC POTENTIAL GRAVITY FORCE FIELD — RDG BLOCK
+============================================================
+
+[TYPE DEFINITIONS]
+
+  Beta            : Scalar potential field (SID-Structure)
+  Beta^i          : Lifted vector form of Beta
+  Gamma^{jk}      : Antisymmetric 2-form / connection field (PED-Dynamics)
+  epsilon_{ijk}   : Levi-Civita antisymmetric symbol
+  S^i             : GEMiton (bound Beta/Gamma composite)
+  grad(Beta)      : Spatial gradient of the scalar potential Beta
+
+------------------------------------------------------------
+ FUNDAMENTAL RELATIONAL OBJECTS
+------------------------------------------------------------
+
+  (1) Scalar Potential:
+      Beta(x,t) ∈ ℝ
+
+  (2) Connection / Force Field:
+      Gamma^{jk}(x,t) = -Gamma^{kj}(x,t)
+
+  (3) Antisymmetric Selector:
+      epsilon_{ijk} ∈ { -1, 0, +1 }
+
+------------------------------------------------------------
+ CARTESIAN GEM-LIKE FIELD EQUATION
+------------------------------------------------------------
+
+  The gradient of the dynamic potential Beta is sourced
+  entirely by the antisymmetric torsion/curl sector of Gamma:
+
+      (grad Beta)_i  =  -1/4 * epsilon_{ijk} * Gamma^{jk}
+
+  Expanded:
+
+      ∂_i Beta       =  -1/4 * epsilon_{ijk} * Gamma^{jk}
+
+  This is the core "Dynamic Potential Gravity Force Field"
+  equation in RDG form.
+
+------------------------------------------------------------
+ FORCE FIELD INTERPRETATION
+------------------------------------------------------------
+
+  - Beta acts as a dynamic gravitational potential.
+  - Gamma^{jk} acts as the gravity-force / GEM-like field.
+  - epsilon_{ijk} * Gamma^{jk} extracts the torsion/curl sector.
+  - The equation ties potential variation directly to force geometry.
+
+------------------------------------------------------------
+ GEMITON — GRAVITO-ELECTROMAGNETIC SOLITON OBJECT
+------------------------------------------------------------
+
+  Define the composite field:
+
+      S^i  =  4 * Beta^i  +  epsilon^{i}{}_{jk} * Gamma^{jk}
+
+  Where:
+
+      4 * Beta^i               → "electric-like" GEM sector
+      epsilon^{i}{}_{jk}Gamma^{jk} → "magnetic-like" GEM sector
+
+  S^i is the GEMiton: a localized, self-supported packet
+  formed from the dynamic potential and the force field.
+
+------------------------------------------------------------
+ POSSIBLE SOLITON CONDITIONS
+------------------------------------------------------------
+
+  (A) Divergence-free:
+      ∇_i S^i = 0
+
+  (B) Norm-invariant:
+      S_i S^i = constant
+
+  (C) Bounded-ontology constraint:
+      |S^i| ≤ finite representational depth
+
+------------------------------------------------------------
+ RELATIONAL TRIAD MAPPING (SID/PED)
+------------------------------------------------------------
+
+  SID-Structure:
+      Beta, grad(Beta)
+
+  PED-Dynamics:
+      Gamma^{jk}, epsilon_{ijk}Gamma^{jk}
+
+  Cross-triad coupling:
+      grad(Beta) ↔ antisymmetric(Gamma)
+
+------------------------------------------------------------
+ MINIMAL EXAMPLE (GENERIC)
+------------------------------------------------------------
+
+  Choose Beta(r,t) with inverse-square behavior:
+
+      Beta(r,t) = k / sigma^2
+
+  Then Gamma^{jk} is determined by:
+
+      Gamma^{jk} = -4 * epsilon^{ijk} * ∂_i Beta
+
+  This satisfies the Cartesian GEM equation automatically.
+
+------------------------------------------------------------
+ SUMMARY
+------------------------------------------------------------
+
+  • Beta = dynamic potential
+  • Gamma = gravity-force field
+  • grad(Beta) = -(1/4) epsilon Gamma  → GEM-like field equation
+  • S^i = 4 Beta^i + epsilon Gamma     → GEMiton soliton
+  • All objects expressed in RDG-clean ASCII form
+
+============================================================
