@@ -112,6 +112,5 @@ DYNAMIC POTENTIAL GRAVITY FORCE FIELD — RDG BLOCK
   • Gamma = gravity-force field
   • grad(Beta) = -(1/4) epsilon Gamma  → GEM-like field equation
   • S^i = 4 Beta^i + epsilon Gamma     → GEMiton soliton
-  • All objects expressed in RDG-clean ASCII form
 
 ============================================================
