@@ -87,6 +87,66 @@ A realistic near-term agenda is therefore:
 
 The graph-theoretic analogy is useful here: Friedman’s original argument also had three layers (trace formula, Ramanujan functions, tangle removal). The part that generalized most cleanly was the algebraic cancellation, not the combinatorial model of the graph. The same pattern is visible for surfaces.
 
+---
+
+### AM Program Architecture
+
+```
+  Teichmüller Integration (Mirzakhani / AM Coordinates)
+                        │
+                        ▼  Yields 1/g expansions
+      Local Volume Density V_g^T(ℓ) ~ ∑ g^-k f_k^T(ℓ)
+                        │
+                        ▼  FR cancellation algebra
+         Pseudo-Convolution (f *~ g) ∈ F
+                        │
+                        ▼  Suppresses tail below e^(ℓ/2)
+          Selberg Trace Method (L ~ A log g)
+                        │
+                        ▼
+      Optimal Spectral Gap:  P_g^WP( λ_1 ≥ 1/4 - ε ) ──► 1
+
+```
+
+1. **Spectral Analogy to Ramanujan Graphs:**
+The spectral threshold $1/4$ is the continuous analogue of $2\sqrt{d-1}$ in $d$-regular graphs. In graph theory, non-backtracking walk counts decay as $(d-1)^{k/2}$; on hyperbolic surfaces, the volume growth of $\mathbb{H}^2$ is $e^\ell$, making the critical boundary $e^{\ell/2}$. Functions in the FR class $\mathcal{F}$ decompose into a principal growth term $p(\ell)e^\ell$ (the trivial spectrum / volume growth) and an uncancelable remainder bounded by $(\ell+1)^{N-1} e^{\ell/2}$ (the $\lambda_1 = 1/4$ continuous spectrum floor).
+
+2. **Why Pseudo-Convolution is the Engine:**
+When summing over all local topological types $\mathbf{T}$, standard convolutions fail because geodesic segments join across cut surfaces with complex topological overlaps. The **pseudo-convolution** operation $\ast_\sim$ handles the structural gluing of local filling surfaces while preserving the growth bound $e^{\ell/2}$. Proving closure under $\ast_\sim$ across all orders $k$ ensures that higher-order $1/g^k$ corrections never leak spectral weight into the region $\lambda_1 < 1/4$.
+
+3. **The Role of Tangle Removal:**
+The condition $X \in \mathrm{TF}_g^{\kappa, R}$ eliminates low-genus embedded subsurfaces (pants, once-holed tori with short boundaries) that cause exponential proliferation of local types. Once restricted to the tangle-free set, the number of active local types grows only poly-logarithmically ($\sim (\log g)^C$), making the FR error bounds tight enough to survive the summation over $\mathbf{T}$.
+
+---
+
+### Executing the Near-Term Agenda
+
+#### 1. Axiomatizing the FR Pseudo-Convolution Algebra & Explicit Polynomial Rates
+
+To convert the current asymptotic result $\lim_{g\to\infty} \mathbb{P}_g^{\mathrm{WP}}(\lambda_1 \ge 1/4 - \varepsilon) = 1$ into a quantitative rate $\lambda_1 \ge 1/4 - O(g^{-c})$ purely through the AM series:
+
+* **Closure Axioms:** Define $\mathcal{F}$ strictly as a module over the ring of polynomial-weighted differential operators with respect to $\ast_\sim$. Establish exact decay rates for the remainder terms $r_k(\ell) \le C_k \ell^N e^{\ell/2}$ under iteration of $\ast_\sim$.
+* **Truncation Scale:** Choose the test function support scale $L = A \log g$. Balancing the volume function remainder $O(g^{-N} e^{L})$ against the tangle-free exception probability $\mathcal{O}(g^{\frac{3}{2}\kappa - 1})$ yields optimal scaling constants $A$ and $\kappa$, directly producing an explicit power-law exponent $c(A, \kappa)$.
+
+#### 2. Quantitative Mixing Times & Cheeger Constants
+
+From $\lambda_1(X) \ge 1/4 - O(g^{-c})$, standard spectral estimates on hyperbolic surfaces directly yield:
+
+* **Heat Kernel / Mixing Rate:** For $f \in L^2(X)$ with $\int_X f = 0$, the $L^2$-decay of the geodesic flow and heat diffusion satisfies:
+
+$$\Vert{} e^{t\Delta} f \Vert{}_2 \le e^{-(1/4 - O(g^{-c}))t} \Vert{}f\Vert{}_2$$
+
+* **Cheeger Isoperimetric Constant $h(X)$:** By Cheeger’s inequality combined with Buser’s inequality for hyperbolic surfaces ($\frac{1}{2}\lambda_1 \le h(X) \le \sqrt{\lambda_1}$):
+
+$$h(X) \ge \frac{1}{2} - O(g^{-c})$$
+
+This establishes that typical large-genus surfaces are maximal expanders: any smooth cut dividing $X$ into two components of equal area requires a boundary length of at least $\left(\frac{1}{2} - \epsilon\right) \mathrm{Area}(X)$.
+
+#### 3. Generalizations to Other Operators and Moduli
+
+* **Surfaces with Cusps ($n$ punctures):** By modifying the Weil–Petersson volume polynomials using Mirzakhani's boundary-length parameters $L = (b_1, \dots, b_n) \to 0$, the $1/g$ expansion generalizes to $1/(g + n/2)$ scaling, provided the number of cusps grows slow enough relative to genus ($n = o(\sqrt{g})$).
+* **Dirac Operator $\mathcal{D}$:** Since $\mathcal{D}^2 = \nabla^*\nabla + \frac{1}{4} K = \Delta + \frac{1}{4} R$, the spectral gap of the Dirac operator on a spin hyperbolic surface is tied directly to the positive scalar curvature shift combined with the Laplacian gap, opening a path to showing that spin spectrum gaps also saturate their optimal topological bounds.
+
 ## References and further reading
 - Typical hyperbolic surfaces have a spectral gap greater than 2/9−ε. Nalini Anantharaman, Laura Monk. https://arxiv.org/abs/2604.09792
 - Friedman-Ramanujan functions in random hyperbolic geometry and application to spectral gaps I. Nalini Anantharaman, Laura Monk. https://arxiv.org/abs/2304.02678
