@@ -84,8 +84,7 @@ So speeds varied wildly depending on the era’s infrastructure.
 
 ---
 
-Anonymous FTP **still exists today**, but in a modern, hardened form: read‑only, chrooted, rate‑limited, sometimes encrypted (FTPS), and used mainly for public mirrors, firmware distribution, and legacy workflows.  
-Modern file sharing systems provide encrypted, identity‑aware, feature‑rich alternatives that have replaced anonymous FTP for most public distribution.
+Anonymous FTP **still exists today**, but in a modern, hardened form: read‑only, chrooted, rate‑limited, sometimes encrypted (FTPS), and used mainly for public mirrors, firmware distribution, and legacy workflows. Modern file sharing systems provide encrypted, identity‑aware, feature‑rich alternatives that have replaced anonymous FTP for most public distribution.
 
 ---
 
