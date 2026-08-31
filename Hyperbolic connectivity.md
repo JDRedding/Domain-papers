@@ -66,9 +66,9 @@ The progression across papers:
 
 ## Future work 
 
-- the trace method,
-- the new Teichmüller coordinates,
-- or the pseudo‑convolution argument?
+- the trace method
+- the new Teichmüller coordinates
+- the pseudo‑convolution argument
 
 ## References and further reading
 - https://arxiv.org/pdf/2604.09792
