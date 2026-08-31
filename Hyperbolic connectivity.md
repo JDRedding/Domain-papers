@@ -265,7 +265,7 @@ $$
 On $\mathrm{TF}_g^{\kappa,R}$, geodesics of length $\le A\log g$ that fill a pair of pants or once-holed torus fall into only
 
 $$
-\#\mathrm{Loc}_g^{\kappa,A}=\mathcal{O}_{\kappa,A}\bigl((\log g)^{c_{\kappa,A}}\bigr)
+{No.}\mathrm{Loc}_g^{\kappa,A}=\mathcal{O}_{\kappa,A}\bigl((\log g)^{c_{\kappa,A}}\bigr)
 $$
 
 local types, so the exponential tangle contribution is removed before the FR cancellation is applied.
