@@ -92,3 +92,191 @@ The graph-theoretic analogy is useful here: Friedman’s original argument also 
 - https://arxiv.org/abs/2502.12268v2
 - https://arxiv.org/pdf/2304.02678
 - https://arxiv.org/html/2601.15157v1
+
+## Appendix - Notations
+
+### Geometry and probability
+
+A compact hyperbolic surface $X$ of genus $g\ge 2$ has curvature $-1$. Gauss–Bonnet gives
+
+$$
+\operatorname{Area}(X)=4\pi(g-1).
+$$
+
+The moduli space is
+
+$$
+\mathcal{M}_g=\{\text{compact hyperbolic surfaces of genus }g\}/\text{isometry},
+$$
+
+equipped with the Weil–Petersson probability $\mathbb{P}_g^{\mathrm{WP}}$ and expectation $\mathbb{E}_g^{\mathrm{WP}}$.
+
+Write $\mathcal{G}(X)$ for the set of primitive oriented closed geodesics on $X$, and $\ell_X(\gamma)$ for the length of $\gamma\in\mathcal{G}(X)$. The first nonzero Laplace eigenvalue is $\lambda_1(X)$. Huber’s bound is
+
+$$
+\limsup_{g\to\infty}\sup_{X\in\mathcal{M}_g}\lambda_1(X)\le\frac14,
+$$
+
+so $\frac14$ is the optimal large-genus target.
+
+### Spectral-gap theorems
+
+Anantharaman–Monk:
+
+$$
+\forall\,\varepsilon>0,\qquad
+\lim_{g\to\infty}\mathbb{P}_g^{\mathrm{WP}}\Bigl(\lambda_1\ge\frac14-\varepsilon\Bigr)=1.
+$$
+
+Intermediate and earlier thresholds:
+
+$$
+\lim_{g\to\infty}\mathbb{P}_g^{\mathrm{WP}}\Bigl(\lambda_1\ge\frac29-\varepsilon\Bigr)=1,
+\qquad
+\lim_{g\to\infty}\mathbb{P}_g^{\mathrm{WP}}\Bigl(\lambda_1\ge\frac{3}{16}-\varepsilon\Bigr)=1.
+$$
+
+The orders of the $1/g$ expansion match these numbers: leading order $\mapsto 3/16$, second order $\mapsto 2/9$, arbitrary order $\mapsto 1/4$.
+
+Hide–Macera–Thomas strengthen the error:
+
+$$
+\lambda_1(X)\ge\frac14-O(g^{-c})
+\quad\text{with }\mathbb{P}_g^{\mathrm{WP}}\text{-probability}\to 1
+$$
+
+for some $c>0$.
+
+A convenient equivalent form used in the roadmap paper is
+
+$$
+\mathbb{P}_g^{\mathrm{WP}}\Bigl(\lambda_1\le\frac14-\alpha^2\Bigr)\xrightarrow{g\to\infty}0
+\quad\text{for every }\alpha>0.
+$$
+
+### Geodesic averages
+
+For a compactly supported test function $F:\mathbb{R}_{\ge 0}\to\mathbb{R}$,
+
+$$
+\langle F\rangle_g^{\mathrm{all}}
+:=\mathbb{E}_g^{\mathrm{WP}}\Biggl[\sum_{\gamma\in\mathcal{G}(X)}F(\ell_X(\gamma))\Biggr],
+\qquad
+\langle F\rangle_g^{\mathbf{s}}
+:=\mathbb{E}_g^{\mathrm{WP}}\Biggl[\sum_{\gamma\text{ simple}}F(\ell_X(\gamma))\Biggr].
+$$
+
+Wu–Xue’s first-order comparison is
+
+$$
+\langle F\rangle_g^{\mathrm{all}}
+=\langle F\rangle_g^{\mathbf{s}}
++\mathcal{O}_\eta\Bigl(\frac1g\,\|F(\ell)\,e^{(1+\eta)\ell}\|_\infty\Bigr).
+$$
+
+That is not enough for the optimal gap: one needs errors $O(g^{-N})$ for arbitrarily large $N$.
+
+### Volume functions and the $1/g$ expansion
+
+For a local topological type $\mathbf{T}$,
+
+$$
+V_g^{\mathbf{T}}(\ell)
+$$
+
+is the expected density of primitive closed geodesics of type $\mathbf{T}$ and length $\ell$. It admits
+
+$$
+V_g^{\mathbf{T}}(\ell)
+\sim\sum_{k\ge\chi(\mathbf{T})}g^{-k}\,f_k^{\mathbf{T}}(\ell),
+$$
+
+where $\chi(\mathbf{T})$ is the absolute Euler characteristic of the surface filled by $\mathbf{T}$. For simple geodesics this reduces to Mirzakhani’s Weil–Petersson volume polynomials.
+
+### Friedman–Ramanujan functions
+
+A locally integrable $f:\mathbb{R}_{\ge 0}\to\mathbb{C}$ is a Friedman–Ramanujan function if there exist a polynomial $p$ and constants $c>0$, $N\ge 1$ with
+
+$$
+\bigl|f(\ell)-p(\ell)\,e^{\ell}\bigr|
+\le c\,(\ell+1)^{N-1}\,e^{\ell/2}
+\qquad(\ell\ge 0).
+$$
+
+The weak version replaces the pointwise bound by an integral:
+
+$$
+\int_0^\ell\bigl|f(s)-p(s)\,e^{s}\bigr|\,ds
+\le c\,(\ell+1)^{N-1}\,e^{\ell/2}.
+$$
+
+The class of such functions is written $\mathcal{F}$; the subclass with $p=0$ is $\mathcal{R}$.
+
+The exponents are spectral: $e^{\ell}$ is the volume growth of $\mathbb{H}^2$, while $e^{\ell/2}$ is the growth associated with the bottom of the continuous spectrum $\lambda=1/4$. If the coefficients $f_k^{\mathbf{T}}$ lie in $\mathcal{F}$, the non-principal terms cannot produce eigenvalues below $1/4-\varepsilon$.
+
+A typical statement from Part I:
+
+$$
+\ell\mapsto \ell\,f_k^{\mathbf{T}}(\ell)
+\quad\text{is weakly FR for }\chi(\mathbf{T})\le 1\text{ and }k=\chi(\mathbf{T}),\,\chi(\mathbf{T})+1.
+$$
+
+Part II upgrades this to every type $\mathbf{T}$ and every order $k$, using pseudo-convolutions.
+
+## Trace-method implication
+
+Let $h_L$ be a test function at scale $L=A\log g$, with Fourier transform $\widehat{h}_L$. If $\lambda_1(X)\le\frac14-\alpha^2-\varepsilon$ and $\alpha\in(0,1/2)$, then
+
+$$
+\widehat{h}_L\bigl(r_1(X)\bigr)
+\ge C_{\alpha,\varepsilon}\,e^{(\alpha+\varepsilon)L},
+$$
+
+where $\lambda_1=\frac14+r_1^2$ in the usual parametrization (so a gap below $1/4$ means imaginary $r_1$). Taking WP expectation and feeding in the FR expansion of all $V_g^{\mathbf{T}}$ kills this exponential, hence such small eigenvalues have vanishing probability.
+
+### Tangle-free set
+
+Short loops and tangles:
+
+$$
+N_\kappa^{\mathrm{inj}}(X)
+=\#\{\beta\in\mathcal{G}(X):\ell_X(\beta)\le\kappa\},
+$$
+
+$$
+N_R^{\mathrm{tang}}(X)
+=\#\{Y\subset X\text{ embedded}:\chi(Y)=1,\;\ell_X^{\max}(\partial Y)\le R\}.
+$$
+
+The tangle-free set is
+
+$$
+\mathrm{TF}_g^{\kappa,R}
+=\{X\in\mathcal{M}_g:N_\kappa^{\mathrm{inj}}(X)=N_R^{\mathrm{tang}}(X)=0\}.
+$$
+
+With $R=\kappa\log g$,
+
+$$
+1-\mathbb{P}_g^{\mathrm{WP}}(\mathrm{TF}_g^{\kappa,R})
+=\mathcal{O}\bigl(\kappa^2+g^{\frac32\kappa-1}\bigr).
+$$
+
+On $\mathrm{TF}_g^{\kappa,R}$, geodesics of length $\le A\log g$ that fill a pair of pants or once-holed torus fall into only
+
+$$
+\#\mathrm{Loc}_g^{\kappa,A}=\mathcal{O}_{\kappa,A}\bigl((\log g)^{c_{\kappa,A}}\bigr)
+$$
+
+local types, so the exponential tangle contribution is removed before the FR cancellation is applied.
+
+### Dictionary with Ramanujan graphs
+
+For a $d$-regular graph the Alon–Boppana / Ramanujan bound is $2\sqrt{d-1}$. For hyperbolic surfaces the analogous pair is
+
+$$
+\text{volume growth }e^{\ell}
+\quad\text{versus remainder }e^{\ell/2},
+$$
+
+which is exactly the FR definition and exactly Huber’s $\lambda_1\le 1/4$. That is the precise sense in which typical high-genus hyperbolic surfaces are continuous Ramanujan graphs.
