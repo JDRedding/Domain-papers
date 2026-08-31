@@ -1,5 +1,19 @@
 # Dynamic Potential Gravity Force Field (Consolidated)
 
+```
++----------------------------------------------------------------------+
+|             DYNAMIC POTENTIAL GRAVITY FORCE FIELD                    |
++----------------------------------------------------------------------+
+| Field Definitions : Beta (SID Potential), A^i (Lift), Gamma^{jk}     |
+| Inverse Rel.      : Gamma^{jk} = -2 epsilon^{ijk} d_i Beta           |
+| Static Slice      : E_i = -d_i Beta,  G_i = 4 E_i  (|G| = 4 |E|)     |
+| GEMiton Vector    : S^i = 4 A^i + G^i  (Requires A^i != d^i Beta)    |
+| Force Law         : F_i = m (E_i + epsilon_{ijk} v^j G_k)            |
+| Static Energy     : u = (17/2) |grad Beta|^2                         |
++----------------------------------------------------------------------+
+
+```
+
 ## Types & Fundamentals
 
 | Symbol | Meaning |
@@ -17,6 +31,29 @@ If $A^i = \partial^i \beta$, then $S^i = 0$ identically.
 Therefore $A^i$ **must** be independent for a nontrivial GEMiton.
 
 ---
+
+### Core Mathematical Breakdown & Assessment
+
+The consolidated framework sets up a crisp, clear field-theoretic structure linking the **Scalar Independent (SID)** potential $\beta(x,t)$ to the dualized **Proportional Vector/Tensor (PED)** field $G_i$.
+
+Here is a formal summary and structural review of the key properties, identities, and constraints established in the formulation:
+
+---
+
+### Kinematic Coupling & Inversion Verification
+
+The fundamental cross-coupling condition between the spatial gradient $d_i \beta$ and the dualized field $G_i$ is enforced by:
+
+$$d_i \beta = -\frac{1}{4} G_i \quad \text{where} \quad G_i = \epsilon_{ijk} \Gamma^{jk}$$
+
+The derivation of the exact tensor inversion is fully verified. Contracting with the 3D Levi-Civita symbol $\epsilon^{ijk}$:
+
+$$\Gamma^{jk} = -2 \epsilon^{ijk} d_i \beta$$
+
+$$\epsilon_{mjk} \Gamma^{jk} = -2 \epsilon_{mjk} \epsilon^{ijk} d_i \beta = -2 \left(2 \delta_m^i\right) d_i \beta = -4 d_m \beta \implies -\frac{1}{4} G_m = d_m \beta$$
+
+* **Structural Implication:** In the static, unextended model, $\Gamma^{jk}$ possesses no independent gauge freedoms or dynamic degrees of freedom. It acts entirely as the star-inverse Hodge dual of the spatial potential gradient $\nabla \beta$.
+
 
 ## Core Constraint
 
@@ -84,6 +121,22 @@ $$
 
 Use the static slice unless dynamics are explicitly added.
 
+### Field Strengths & Static Energy Density
+
+On a static slice ($\partial_t A_i = 0$):
+
+$$E_i = -d_i \beta, \quad G_i = -4 d_i \beta = 4 E_i$$
+
+The static field energy density $u$ yields an amplified factor due to the $G$-field contribution:
+
+$$u = \frac{1}{2}\left(E_i E^i + G_i G^i\right) = \frac{1}{2}\left(1 + 16\right) \vert{}\nabla \beta\vert{}^2 = \frac{17}{2} \vert{}\nabla \beta\vert{}^2$$
+
+For a standard point source potential $\beta = \frac{k}{r}$:
+
+$$u(r) = \frac{17 k^2}{2 r^4}$$
+
+* **Divergence:** As noted, $\int u \, dV \to \infty$ at both $r \to 0$ (ultraviolet divergence) and $r \to \infty$ (infrared divergence).
+
 ---
 
 ## Test-Mass Force (GEM-like)
@@ -109,6 +162,19 @@ $$
 **Note:**  
 The $4 m\, v \times E$ term is a slice artifact from slaving $G$ to $E$.  
 It is **not** linearized GR gravitomagnetism.
+
+### Test-Mass Force & Slice Artifacts
+
+The GEM-like force law acting on a point mass $m$ with velocity $v^j$:
+
+$$F_i = m \left( E_i + \epsilon_{ijk} v^j G_k \right)$$
+
+Substituting the static slice relations ($E_i = -d_i \beta$, $G_k = -4 d_k \beta$):
+
+$$F_i = -m \, d_i \beta + 4m \, \epsilon_{ijk} v^j (d_k \beta)$$
+
+* **Rest Frame ($v = 0$):** $F_i = -m \, d_i \beta$ cleanly reproduces standard Newtonian attraction.
+* **Velocity Dependence ($v \neq 0$):** The factor of $4$ in the velocity coupling ($4m (\mathbf{v} \times \nabla \beta)$) is a direct consequence of slaving $G_i$ to $E_i$. Standard linearized General Relativity (GEM) yields a factor of $4$ on the vector potential $A_i$, but here it manifests as a velocity-dependent Lorentz-type force coupled directly to the electrostatic-like gradient.
 
 ---
 
@@ -191,7 +257,34 @@ Impossible for a localized packet unless $S = 0$.
 - **(B2)** Core-flat: $S_i S^i = \mu^2$ for $r < s$
 - **(B3)** Beltrami: $\nabla \times S = \lambda S$ (Hopf-like structure)
 
----
+### GEMiton Composite $S^i$ & Soliton Constraints
+
+The GEMiton composite vector field is defined as:
+
+$$S^i = 4 A^i + G^i$$
+
+If $A^i = d^i \beta$, then $S^i = 4 d^i \beta - 4 d^i \beta \equiv 0$. Thus, **an independent lift field $A^i$ is strictly required** for non-trivial states ($S^i \neq 0$).
+
+#### Soliton Feasibility Analysis:
+
+```
++---------------------------------------------------------------------+
+|                  SOLITON CONSTRAINT EVALUATION                      |
++---------------------------------------------------------------------+
+| (A) Divergence-Free Constraint: d_i S^i = 0                         |
+|     • Unregularized (k/r): S^i has delta source 16*pi*k*delta^3(x). |
+|     • Regularized (k/sqrt(r^2+s^2)): d_i G^i = 12 k s^2/(r^2+s^2)^2.5 |
+|       Requires 4 d_i A^i = -d_i G^i to maintain zero divergence.    |
+|                                                                     |
+| (B) Constant-Norm Constraint: S_i S^i = const                       |
+|     • Globally IMPOSSIBLE for localized field packets vanishing at  |
+|       infinity.                                                     |
+|     • Viable alternatives: Beltrami field condition (curl S = lambda|
+|       S), core-flat norm inside core radius s, or finite integral   |
+|       charge int (S_i S^i) dV = mu^2.                               |
++---------------------------------------------------------------------+
+
+```
 
 ## Regularized Potential Option
 
@@ -240,6 +333,24 @@ To obtain true GEM-like dynamics, add:
 - $\partial_t A$
 - $\nabla \times A$
 - continuity / source terms
+
+---
+
+### Regularized Potential Framework
+
+Replacing the singular potential with the soft-core regularized form:
+
+$$\beta(r) = \frac{k}{\sqrt{r^2 + s^2}}$$
+
+Yields smooth scalar field derivatives and divergence profiles:
+
+$$d_i \beta = -\frac{k x_i}{(r^2 + s^2)^{3/2}}$$
+
+$$G_i = \frac{4 k x_i}{(r^2 + s^2)^{3/2}}$$
+
+$$\nabla \cdot \mathbf{G} = d_i G^i = \frac{12 k s^2}{(r^2 + s^2)^{5/2}}$$
+
+This eliminates the zero-point delta singularity at $r = 0$, making localized soliton solutions mathematically well-behaved when paired with a matching divergence-canceling lift $A^i$.
 
 ---
 
