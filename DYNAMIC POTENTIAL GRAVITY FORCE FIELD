@@ -1,116 +1,89 @@
-DYNAMIC POTENTIAL GRAVITY FORCE FIELD — RDG BLOCK
+DYNAMIC POTENTIAL GRAVITY FORCE FIELD
 ============================================================
+RDG CARTESIAN GEM-LIKE SYSTEM
 
-[TYPE DEFINITIONS]
-
-  Beta            : Scalar potential field (SID-Structure)
-  Beta^i          : Lifted vector form of Beta
-  Gamma^{jk}      : Antisymmetric 2-form / connection field (PED-Dynamics)
-  epsilon_{ijk}   : Levi-Civita antisymmetric symbol
-  S^i             : GEMiton (bound Beta/Gamma composite)
-  grad(Beta)      : Spatial gradient of the scalar potential Beta
+FIELDS:
+  Beta(x,t)              scalar SID potential
+  A^i(x,t)               lift of Beta (independent; not ∂^i Beta)
+  Gamma^{jk}(x,t)        antisymmetric PED 2-form
+  epsilon_{ijk}          Levi-Civita symbol
 
 ------------------------------------------------------------
- FUNDAMENTAL RELATIONAL OBJECTS
+ CORE CONSTRAINT (CONSISTENT INVERSION)
 ------------------------------------------------------------
 
-  (1) Scalar Potential:
-      Beta(x,t) ∈ ℝ
+  d_i Beta = -(1/4) * epsilon_{ijk} * Gamma^{jk}
 
-  (2) Connection / Force Field:
-      Gamma^{jk}(x,t) = -Gamma^{kj}(x,t)
+Inversion:
+  Gamma^{jk} = -2 * epsilon^{ijk} * d_i Beta
 
-  (3) Antisymmetric Selector:
-      epsilon_{ijk} ∈ { -1, 0, +1 }
+Check:
+  epsilon_{mjk} Gamma^{jk}
+    = -2 epsilon_{mjk} epsilon^{ijk} d_i Beta
+    = -4 d_m Beta
 
-------------------------------------------------------------
- CARTESIAN GEM-LIKE FIELD EQUATION
-------------------------------------------------------------
-
-  The gradient of the dynamic potential Beta is sourced
-  entirely by the antisymmetric torsion/curl sector of Gamma:
-
-      (grad Beta)_i  =  -1/4 * epsilon_{ijk} * Gamma^{jk}
-
-  Expanded:
-
-      ∂_i Beta       =  -1/4 * epsilon_{ijk} * Gamma^{jk}
-
-  This is the core "Dynamic Potential Gravity Force Field"
-  equation in RDG form.
+So:
+  -(1/4) epsilon_{mjk} Gamma^{jk} = d_m Beta
 
 ------------------------------------------------------------
- FORCE FIELD INTERPRETATION
+ CONSEQUENCE:
 ------------------------------------------------------------
 
-  - Beta acts as a dynamic gravitational potential.
-  - Gamma^{jk} acts as the gravity-force / GEM-like field.
-  - epsilon_{ijk} * Gamma^{jk} extracts the torsion/curl sector.
-  - The equation ties potential variation directly to force geometry.
+Gamma is NOT independent.
+Gamma = star^{-1}(grad Beta)
+
+PED has no free degrees of freedom unless you add:
+  - a closed 2-form component, or
+  - time dynamics, or
+  - a vector potential A^i
 
 ------------------------------------------------------------
- GEMITON — GRAVITO-ELECTROMAGNETIC SOLITON OBJECT
+ GEMITON (REQUIRES INDEPENDENT LIFT)
 ------------------------------------------------------------
 
-  Define the composite field:
+  S^i = 4 A^i + epsilon^i{}_{jk} Gamma^{jk}
 
-      S^i  =  4 * Beta^i  +  epsilon^{i}{}_{jk} * Gamma^{jk}
+If A^i = d^i Beta, then S^i = 0 identically.
 
-  Where:
-
-      4 * Beta^i               → "electric-like" GEM sector
-      epsilon^{i}{}_{jk}Gamma^{jk} → "magnetic-like" GEM sector
-
-  S^i is the GEMiton: a localized, self-supported packet
-  formed from the dynamic potential and the force field.
+Therefore:
+  A^i MUST be independent of d^i Beta.
 
 ------------------------------------------------------------
- POSSIBLE SOLITON CONDITIONS
+ MINIMAL CONSISTENT EXAMPLE
 ------------------------------------------------------------
 
-  (A) Divergence-free:
-      ∇_i S^i = 0
+Take:
+  Beta = k / r
+  r = |x|
 
-  (B) Norm-invariant:
-      S_i S^i = constant
+Then:
+  d_i Beta = -k x_i / r^3
 
-  (C) Bounded-ontology constraint:
-      |S^i| ≤ finite representational depth
+Gamma^{jk} = -2 epsilon^{ijk} d_i Beta
+           = 2k epsilon^{ijk} x_i / r^3
 
-------------------------------------------------------------
- RELATIONAL TRIAD MAPPING (SID/PED)
-------------------------------------------------------------
-
-  SID-Structure:
-      Beta, grad(Beta)
-
-  PED-Dynamics:
-      Gamma^{jk}, epsilon_{ijk}Gamma^{jk}
-
-  Cross-triad coupling:
-      grad(Beta) ↔ antisymmetric(Gamma)
+This Gamma is the dual of grad(Beta).
+It is NOT a new source; it is a rewrite.
 
 ------------------------------------------------------------
- MINIMAL EXAMPLE (GENERIC)
+ SOLITON CONDITIONS (IF A^i IS INDEPENDENT)
 ------------------------------------------------------------
 
-  Choose Beta(r,t) with inverse-square behavior:
+S^i = 4 A^i + star(Gamma)^i
 
-      Beta(r,t) = k / sigma^2
+(A) Divergence-free:
+    d_i S^i = 0
 
-  Then Gamma^{jk} is determined by:
+(B) Constant norm:
+    S_i S^i = const
 
-      Gamma^{jk} = -4 * epsilon^{ijk} * ∂_i Beta
+(C) Bounded ontology:
+    |S| ≤ D_rep
 
-  This satisfies the Cartesian GEM equation automatically.
+Non-trivial S requires:
+  - independent A^i, or
+  - dynamic Gamma, or
+  - added source terms.
 
-------------------------------------------------------------
- SUMMARY
-------------------------------------------------------------
-
-  • Beta = dynamic potential
-  • Gamma = gravity-force field
-  • grad(Beta) = -(1/4) epsilon Gamma  → GEM-like field equation
-  • S^i = 4 Beta^i + epsilon Gamma     → GEMiton soliton
 
 ============================================================
