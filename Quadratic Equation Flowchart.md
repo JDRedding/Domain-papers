@@ -1,0 +1,68 @@
+# Quadratic Equation Flowchart
+A Complete Guide to the Solution Set" for the inequality ax² + bx + c > 0
+
+It outlines decision paths based on whether a=0, the discriminant D=b²-4ac, coefficient signs, and conditions for two real roots, single root, or no real roots, mapping to solution intervals like (-∞, ∞), unions of intervals, or empty set.
+
+**Fundamentals**  
+This is a flowchart for the quadratic *inequality* $ax^{2} + bx + c > 0$ (not the equation $= 0$).  
+The graph of $y = ax^{2} + bx + c$ is a parabola. The sign of $a$ decides whether it opens upward ($a > 0$) or downward ($a < 0$). The discriminant $D = b^{2} - 4ac$ tells how many times the parabola crosses the x-axis (two, one, or zero real roots). The inequality asks where the parabola lies *above* the x-axis.
+
+**Variables & types**  
+- $a, b, c \in \mathbb{R}$ — coefficients ( $a$ is the leading/quadratic coefficient; if $a = 0$ the expression becomes linear or constant).  
+- $D = b^{2} - 4ac$ — discriminant (real number).  
+- Roots (when they exist): $\dfrac{-b \pm \sqrt{D}}{2a}$.  
+- Solution set — an interval, union of intervals, all reals, or the empty set $\emptyset$.
+
+```
+                    +-------------------------------+
+                    |   ax² + bx + c  >  0          |
+                    +-------------------------------+
+                                    |
+                                    v
+                           +----------------+
+                           |    a = 0 ?     |
+                           +----------------+
+                          /                  \
+                        Yes                   No
+                         |                     |
+                         v                     v
+              +--------------------+    +------------------+
+              |    bx + c  >  0    |    | D = b² - 4ac     |
+              +--------------------+    +------------------+
+                         |                     |
+                         v                     v
+                  +-------------+         +-------------+
+                  |   b = 0 ?   |         |   D > 0 ?   |
+                  +-------------+         +-------------+
+                 /             \         /             \
+               Yes              No     Yes              No
+                |                |      |                |
+                v                v      v                v
+         +------------+   x > -c/b     two real      +------------+
+         |  c > 0 ?   |   (if b > 0)    roots         |  D = 0 ?   |
+         +------------+   x < -c/b                    +------------+
+        /            \    (if b < 0)                 /            \
+      Yes             No                            Yes             No
+       |               |                             |               |
+       v               v                             v               v
+  (-\infty, \infty)    ∅                      +-----------+    +-----------+
+                                               |  a > 0 ? |    |  a > 0 ? |
+                                               +-----------+    +-----------+
+                                              /           \    /           \
+                                            Yes            No Yes            No
+                                             |              |  |              |
+                                             v              v  v              v
+                    (-\infty, r-) U (r+, \infty)     (r-, r+)  x \neq v       ∅
+                                                                        (all except vertex)
+                                                                        all reals     ∅
+                                                                        (-\infty,\infty)
+
+Possible solution sets collected at the bottom:
+(-\infty, \infty)
+(-\infty, (-b-\sqrt D)/2a) \cup ((-b+\sqrt D)/2a, \infty)
+((-b-\sqrt D)/2a, (-b+\sqrt D)/2a)
+(-\infty, -b/2a) \cup (-b/2a, \infty)
+∅
+```
+
+(r- and r+ stand for the two roots when they exist; v is the vertex $-b/2a$.)
