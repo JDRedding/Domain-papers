@@ -1,88 +1,169 @@
-DYNAMIC POTENTIAL GRAVITY FORCE FIELD
-============================================================
-RDG CARTESIAN GEM-LIKE SYSTEM
+DYNAMIC POTENTIAL GRAVITY FORCE FIELD (CONSOLIDATED)
+=====================================================================
 
-FIELDS:
-  Beta(x,t)              scalar SID potential
-  A^i(x,t)               lift of Beta (independent; not ∂^i Beta)
-  Gamma^{jk}(x,t)        antisymmetric PED 2-form
-  epsilon_{ijk}          Levi-Civita symbol
+TYPES & FUNDAMENTALS
+===========================
+  Beta(x,t)              : scalar SID potential
+  d_i Beta               : spatial gradient of Beta
+  A^i(x,t)               : independent lift (PED-adjacent); NOT d^i Beta
+  Gamma^{jk}(x,t)        : antisymmetric PED 2-form (Gamma^{jk} = -Gamma^{kj})
+  epsilon_{ijk}          : Levi-Civita antisymmetric symbol
+  G_i                    : dualized PED field, G_i = epsilon_ijk Gamma^{jk}
+  S^i                    : GEMiton composite, S^i = 4 A^i + G^i
 
-------------------------------------------------------------
- CORE CONSTRAINT (CONSISTENT INVERSION)
-------------------------------------------------------------
+  NOTE:
+    If A^i = d^i Beta, then S^i = 0 identically.
+    Therefore A^i MUST be independent for a nontrivial GEMiton.
 
-  d_i Beta = -(1/4) * epsilon_{ijk} * Gamma^{jk}
+CORE CONSTRAINT 
+===========================
+  d_i Beta = -(1/4) G_i
+  G_i      = epsilon_ijk Gamma^{jk}
 
-Inversion:
-  Gamma^{jk} = -2 * epsilon^{ijk} * d_i Beta
+  Correct inversion (GROK correction):
+      Gamma^{jk} = -2 epsilon^{ijk} d_i Beta
 
-Check:
-  epsilon_{mjk} Gamma^{jk}
-    = -2 epsilon_{mjk} epsilon^{ijk} d_i Beta
-    = -4 d_m Beta
+  Check:
+      epsilon_{mjk} Gamma^{jk}
+        = -2 epsilon_{mjk} epsilon^{ijk} d_i Beta
+        = -4 d_m Beta
+      => -(1/4) epsilon_{mjk} Gamma^{jk} = d_m Beta
 
-So:
-  -(1/4) epsilon_{mjk} Gamma^{jk} = d_m Beta
+  CONSEQUENCE:
+    Gamma is NOT independent.
+    Gamma = star^{-1}(grad Beta)
+    PED has no free degrees of freedom unless extended.
 
-------------------------------------------------------------
- CONSEQUENCE:
-------------------------------------------------------------
+STATIC SLICE FIELD STRENGTHS
+===========================
+  E_i = - d_i Beta
+  G_i = -4 d_i Beta = 4 E_i
 
-Gamma is NOT independent.
-Gamma = star^{-1}(grad Beta)
+  Therefore:
+      G = 4 E
+      |G| = 4 |E|
 
-PED has no free degrees of freedom unless you add:
-  - a closed 2-form component, or
-  - time dynamics, or
-  - a vector potential A^i
+OPTIONAL DYNAMIC COMPLETION
+===========================
+  (c = 1 units)
 
-------------------------------------------------------------
- GEMITON (REQUIRES INDEPENDENT LIFT)
-------------------------------------------------------------
+  E_i = - d_i Beta - d_t A_i
+  G_i = epsilon_ijk d_j A_k     (Gamma no longer slaved)
 
-  S^i = 4 A^i + epsilon^i{}_{jk} Gamma^{jk}
+  Use static slice unless dynamics are explicitly added.
 
-If A^i = d^i Beta, then S^i = 0 identically.
+TEST-MASS FORCE (GEM-LIKE)
+===========================
+  For point mass m, velocity v^i:
 
-Therefore:
-  A^i MUST be independent of d^i Beta.
+      F_i = m ( E_i + epsilon_ijk v^j G_k )
 
-------------------------------------------------------------
- MINIMAL CONSISTENT EXAMPLE
-------------------------------------------------------------
+  Static slice (G = 4E):
+      F_i = - m d_i Beta + 4 m epsilon_ijk v^j d_k Beta
 
-Take:
-  Beta = k / r
-  r = |x|
+  Rest frame (v = 0):
+      F_i = - m d_i Beta
 
-Then:
-  d_i Beta = -k x_i / r^3
+  NOTE:
+    The 4 m v × E term is a slice artifact from slaving G to E.
+    It is NOT linearized GR gravitomagnetism.
 
-Gamma^{jk} = -2 epsilon^{ijk} d_i Beta
-           = 2k epsilon^{ijk} x_i / r^3
+ENERGY DENSITY (STATIC)
+===========================
+  u = (1/2)(E_i E^i + G_i G^i)
+    = (1/2)(1 + 16)|E|^2
+    = (17/2)|grad Beta|^2
 
-This Gamma is the dual of grad(Beta).
-It is NOT a new source; it is a rewrite.
+  Example: Beta = k/r
+      |grad Beta|^2 = k^2 / r^4
+      u = (17/2) k^2 / r^4
 
-------------------------------------------------------------
- SOLITON CONDITIONS (IF A^i IS INDEPENDENT)
-------------------------------------------------------------
+  Integral diverges at r = 0 and infinity.
+  Not a soliton energy.
 
-S^i = 4 A^i + star(Gamma)^i
+NONTRIVIAL LIFT (S ≠ 0)
+===========================
+  Keep Beta = k/r
+  Gamma slaved from Beta
+
+  Choose divergence-free lift (Coulomb gauge):
+      A^i = (B0/2) (n × x)^i exp(-r^2/s^2)
+
+  Then:
+      G_i = -4 d_i Beta = 4k x_i / r^3
+      S^i = 4 A^i + G^i
+          = 2 B0 (n × x)^i exp(-r^2/s^2) + 4k x^i / r^3
+
+SOLITON CONDITIONS
+===========================
 
 (A) Divergence-free:
-    d_i S^i = 0
+      d_i S^i = 0
 
-(B) Constant norm:
-    S_i S^i = const
+    For Beta = k/r:
+      d_i G^i = 16 π k δ^3(x)
+      => S has a point source at r = 0
+      => Not divergence-free unless A cancels source.
 
-(C) Bounded ontology:
-    |S| ≤ D_rep
+(B) Constant-norm:
+      S_i S^i = const
 
-Non-trivial S requires:
-  - independent A^i, or
-  - dynamic Gamma, or
-  - added source terms.
+    Impossible for localized packet unless S = 0.
+    (Continuous function with |S|→0 at infinity cannot have |S|=const.)
 
-============================================================
+Viable replacements:
+  (B1) Integral charge:   ∫ S_i S^i dV = μ^2
+  (B2) Core-flat:         S_i S^i = μ^2 for r < s
+  (B3) Beltrami:          curl S = λ S   (Hopf-like structure)
+
+REGULARIZED POTENTIAL OPTION
+===========================
+  Beta = k / sqrt(r^2 + s^2)
+
+  Then:
+      d_i Beta = -k x_i / (r^2 + s^2)^{3/2}
+      G_i      = 4k x_i / (r^2 + s^2)^{3/2}
+      d_i G^i  = 12 k s^2 / (r^2 + s^2)^{5/2}
+
+  => No delta singularity
+  => A must satisfy 4 d_i A^i = - d_i G^i to enforce (A)
+
+SID / PED STRUCTURE
+===========================
+  SID:
+      Beta
+      grad Beta
+
+  PED:
+      Gamma^{jk} (but slaved unless extended)
+      G_i = epsilon_ijk Gamma^{jk}
+
+  Cross-coupling:
+      grad Beta ↔ star(Gamma)
+      Factor: -1/4 forward, -2 inverse
+
+  NOTE:
+    This coupling is kinematic, not dynamical.
+    To obtain true GEM-like dynamics, add:
+      - ∂_t Beta
+      - ∂_t A
+      - curl A
+      - continuity/source terms
+
+SUMMARY
+===========================
+  • Correct inversion: Gamma = -2 ε d Beta
+  • Static slice: G = 4 E
+  • Newtonian force recovered
+  • Motion force has slice artifact
+  • Energy diverges for 1/r potential
+  • S sourced at origin unless Beta regularized
+  • Global constant-norm soliton impossible
+  • Nontrivial GEMiton requires:
+        1. regular Beta or free Gamma,
+        2. weakened soliton condition,
+        3. A chosen to cancel divergence if needed.
+
+=====================================================================
+END  — DYNAMIC POTENTIAL GRAVITY FORCE FIELD (FULL)
+
