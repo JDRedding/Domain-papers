@@ -240,12 +240,12 @@ Short loops and tangles:
 
 $$
 N_\kappa^{\mathrm{inj}}(X)
-=\#\{\beta\in\mathcal{G}(X):\ell_X(\beta)\le\kappa\},
+={No.}\{\beta\in\mathcal{G}(X):\ell_X(\beta)\le\kappa\},
 $$
 
 $$
 N_R^{\mathrm{tang}}(X)
-=\#\{Y\subset X\text{ embedded}:\chi(Y)=1,\;\ell_X^{\max}(\partial Y)\le R\}.
+={No.}\{Y\subset X\text{ embedded}:\chi(Y)=1,\;\ell_X^{\max}(\partial Y)\le R\}.
 $$
 
 The tangle-free set is
