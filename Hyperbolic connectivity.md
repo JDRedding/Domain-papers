@@ -62,13 +62,30 @@ The progression across papers:
 | Intermediate (2026) | $\lambda_1 \ge 2/9 - \varepsilon$ with full proof | Second‑order expansion; inclusion–exclusion to remove tangles. |
 | Final (2025–2026) | $\lambda_1 \ge 1/4 - \varepsilon$ for *typical* surfaces | Arbitrary‑order $1/g^N$ expansion; full FR pseudo‑convolution machinery. |
 
----
+The Anantharaman–Monk program is already past the “existence of a typical expander” stage. Typical Weil–Petersson surfaces of large genus satisfy $\lambda_1\ge\frac14-\varepsilon$ with probability $\to 1$, so they are continuous analogues of Ramanujan graphs. The remaining questions are quantitative rates, finer spectral statistics, and whether the new geometric machinery can travel to other models and operators.
 
-## Future work 
+Of the tools, **pseudo-convolution of Friedman–Ramanujan functions** is the one that still has the most unused leverage.
 
-- the trace method
-- the new Teichmüller coordinates
-- the pseudo‑convolution argument
+## **Why pseudo-convolution first**  
+The Selberg trace formula converts the spectral gap into control of the length spectrum. The volume functions $V_g^{\mathbf{T}}(\ell)$ already have a full $1/g$ expansion whose coefficients are FR functions. Pseudo-convolution is what lets you sum over *all* local types $\mathbf{T}$ while keeping the principal term $p(\ell)e^\ell$ and the error $e^{\ell/2}$. That cancellation is exactly the gap between the trivial eigenvalue $0$ and Huber’s bound $\frac14$. Once the algebra of FR functions under pseudo-convolution is fully axiomatized, the same bookkeeping should give:
+
+- polynomial-error versions of $\lambda_1\ge\frac14-O(g^{-c})$ inside the original AM method (Hide–Macera–Thomas already obtained a polynomial rate by a different, matrix-theoretic route);  
+- control of the *second* eigenvalue and of the spectral density near $\frac14$;  
+- analogous statements for surfaces with a slowly growing number of cusps, and possibly for the Dirac operator.
+
+## **Trace method**  
+This is already the backbone (Selberg + test functions supported on $[0,A\log g]$). Incremental improvements here are mostly analytic: better test functions, sharper tangle-exclusion via inclusion-exclusion, and quantitative Benjamini–Schramm estimates. They improve constants and error terms but do not open new theorems by themselves. The geometric input still has to come from the volume functions.
+
+## **New Teichmüller coordinates**  
+These are the most “Mirzakhani-like” piece: they turn the integral expressions for $V_g^{\mathbf{T}}(\ell)$ into something that can actually be expanded. They are essential infrastructure, but once the expansion exists they become a black box. Extending them to bordered surfaces, to higher Teichmüller spaces, or to the mapping class group action would be valuable, yet that is a longer-term geometric project rather than the shortest path to the next spectral-gap theorem.
+
+A realistic near-term agenda is therefore:
+
+1. Close the FR class under pseudo-convolution at every order and extract an explicit polynomial rate from the AM series.  
+2. Feed that rate into mixing-time and Cheeger-constant estimates (the “hyperbolic expander” dictionary).  
+3. Only then recycle the coordinates to treat other moduli problems (punctured surfaces, covers, or the Weil–Petersson geodesic flow).
+
+The graph-theoretic analogy is useful here: Friedman’s original argument also had three layers (trace formula, Ramanujan functions, tangle removal). The part that generalized most cleanly was the algebraic cancellation, not the combinatorial model of the graph. The same pattern is visible for surfaces.
 
 ## References and further reading
 - https://arxiv.org/pdf/2604.09792
