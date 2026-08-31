@@ -88,10 +88,10 @@ A realistic near-term agenda is therefore:
 The graph-theoretic analogy is useful here: Friedman’s original argument also had three layers (trace formula, Ramanujan functions, tangle removal). The part that generalized most cleanly was the algebraic cancellation, not the combinatorial model of the graph. The same pattern is visible for surfaces.
 
 ## References and further reading
-- https://arxiv.org/pdf/2604.09792
+- https://arxiv.org/abs/2604.09792
 - https://arxiv.org/abs/2502.12268v2
-- https://arxiv.org/pdf/2304.02678
-- https://arxiv.org/html/2601.15157v1
+- https://arxiv.org/abs/2304.02678
+- https://arxiv.org/abs/2601.15157v1
 
 ## Appendix - Notations
 
