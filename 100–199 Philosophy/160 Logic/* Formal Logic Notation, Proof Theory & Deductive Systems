@@ -1,0 +1,140 @@
+=== Formal Logic, Proof Theory & Deductive Systems ===
+
+Symbol                  Meaning
+------                  -------
+p, q, r                 Propositional variables
+⊤                      Truth
+⊥                      Falsehood
+¬p                     Negation
+p ∧ q                   Conjunction
+p ∨ q                   Disjunction
+p → q                   Implication
+p ↔ q                   Biconditional
+
+⊢                      Provability
+⊨                      Semantic entailment
+Γ ⊢ φ                  φ derivable from Γ
+Γ ⊨ φ                  φ true in all models of Γ
+
+∀x φ                   Universal quantifier
+∃x φ                   Existential quantifier
+φ(x)                   Predicate applied to x
+R(x,y)                 Binary relation
+
+term                   Element of domain
+formula                Logical expression
+free variable          Variable not bound by quantifier
+bound variable         Variable bound by quantifier
+
+=                      Equality predicate
+≠                      Inequality
+
+⊢ φ                    φ is a theorem
+⊢ ¬φ                   φ is refutable
+
+modus ponens           Inference rule
+p, p→q ⊢ q             MP rule
+
+modus tollens          Inference rule
+¬q, p→q ⊢ ¬p           MT rule
+
+intro/elimination      Introduction/elimination rules
+∧-intro                Conjunction introduction
+∧-elim                 Conjunction elimination
+∨-intro                Disjunction introduction
+→-intro                Implication introduction
+→-elim                 Implication elimination
+
+⊢ φ→ψ                  Deduction theorem
+Γ, φ ⊢ ψ  ⇔  Γ ⊢ φ→ψ   Deduction equivalence
+
+sequent calculus        Gentzen-style proof system
+Γ ⊢ Δ                  Sequent
+cut rule               Cut inference
+cut elimination         Cut-elimination theorem
+
+LK                     Classical sequent calculus
+LJ                     Intuitionistic sequent calculus
+
+natural deduction       Proof system with intro/elim rules
+proof tree              Tree of inference steps
+
+normal form             Normal proof form
+β-reduction             Reduction of proof terms
+η-expansion             Expansion of proof terms
+
+λ-calculus              Formal system of functions
+λx. t                  Lambda abstraction
+t u                    Application
+α, β, η                Lambda conversion rules
+
+Curry–Howard           Correspondence between proofs and programs
+type                   Proposition-as-type
+term                   Proof-as-program
+
+⊢ t : A                Term t has type A
+A → B                  Function type
+A × B                  Product type
+A + B                  Sum type
+
+induction              Proof by induction
+structural induction    Induction on syntax
+recursion              Recursive definition
+
+fixed point            Fixed-point operator
+μX. φ(X)               Least fixed point
+νX. φ(X)               Greatest fixed point
+
+modal logic            Logic with modalities
+□φ                     Necessity
+◇φ                     Possibility
+Kripke frame           Structure for modal semantics
+R                      Accessibility relation
+
+temporal logic         Time-indexed logic
+X φ                    Next operator
+F φ                    Eventually
+G φ                    Globally
+U                      Until operator
+
+μ-calculus             Modal fixed-point logic
+μX. φ(X)               Least fixed point
+νX. φ(X)               Greatest fixed point
+
+soundness              All provable statements are valid
+completeness           All valid statements are provable
+compactness            Finite satisfiability implies satisfiability
+
+consistency            No contradictions derivable
+inconsistency          Contradiction derivable
+⊢ ⊥                   Inconsistent theory
+
+model                  Structure interpreting formulas
+valuation              Assignment of truth values
+satisfiable            Has a model
+valid                  True in all models
+
+Herbrand               Herbrand universe
+Skolem                 Skolemization
+prenex form            Quantifiers moved to front
+CNF                    Conjunctive normal form
+DNF                    Disjunctive normal form
+
+resolution             Automated inference rule
+p∨A, ¬p∨B ⊢ A∨B        Resolution step
+
+proof complexity        Complexity of proofs
+proof length            Number of inference steps
+cut rank               Rank of cut formula
+
+inference system        Set of rules
+axiom                  Base rule
+rule schema            Template for rules
+
+provability logic       Logic of formal provability
+□φ                     “φ is provable”
+Löb                   Löb’s theorem
+
+arithmetization         Encoding syntax into arithmetic
+Gödel numbering         Numbering of formulas
+incompleteness          Gödel incompleteness theorem
