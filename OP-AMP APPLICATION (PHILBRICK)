@@ -33,8 +33,8 @@
 |  |OPA|                 |              +-+-+     |                 +-+-+  | [R]   OPA              |    +--+--+             |
 |  +-+-+                 |                |       |                   |    |  |     |               |       |                |
 |    |                   |                e       |                   e    |  +--+--+               |       e                |
-|    e                   | e = ei^2               | e = Rf/R *(e1+e2      |    |                    | Z_in = -R              |
-| e = -Q/C               |                        |        -e3-e4)         |    e                   | (S.C. STABLE)          |
+|    e                   | e = ei^2               | e = Rf/R *(e1+e2       |     |                  | Z_in = -R              |
+| e = -Q/C               |                        |        -e3-e4)         |     e                  | (S.C. STABLE)          |
 |                        |                        |                        |                        |                        |
 +------------------------+------------------------+------------------------+------------------------+------------------------+
 | CURRENT-TO-VOLTAGE     | PRECISION AC-DC        | PRECISION FULL-WAVE    | STABLE INTEGRATOR      | FOLLOWER               |
