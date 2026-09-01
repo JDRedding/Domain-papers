@@ -82,9 +82,9 @@
 |          [R]           |         DIODE          |    +-+-+               |          [C] [R]       |    +-+-+               |
 |           |            |           |            |      |                 |           |            |      |                 |
 |           i            |           e            |      e                 |           e            |      e                 |
-| i = (ei - e0)/R        | e ~ log(ei)            | graded null curve      | e = -1/alpha *          | e = (1+R) ei          |
+| i = (ei - e0)/R        | e ~ log(ei)            | graded null curve      | e = -1/alpha *         | e = (1+R) ei           |
 |                        | n decades              |                        |   (R1/R + 1/(sCp) +    | ib < 10^-11 A          |
-|                        |                        |                        |    s R2 C) ei           | inoise < 10^-13 A     |
+|                        |                        |                        |    s R2 C) ei          | inoise < 10^-13 A      |
 
 +======================================================================================+
 | For information on any of the circuits shown here consult PHILBRICK                  |
