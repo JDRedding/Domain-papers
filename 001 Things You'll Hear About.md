@@ -1,4 +1,5 @@
 # Things You'll Hear About
+001 / 003 General knowledge; systems theory
 
 > "To talk in publick, to think in solitute
 > to read and to hear, to inquire,
