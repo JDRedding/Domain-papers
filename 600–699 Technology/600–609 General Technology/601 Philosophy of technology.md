@@ -1,5 +1,7 @@
 # **Philosophy of technology**
-(and related theoretical foundations) 
+(and related theoretical foundations)
+
+- 600–609 General Technology
 
 Examines the nature of technology, its ethical dimensions, and its reciprocal relationship with society.** This includes questions about what technology essentially is, whether and how it shapes (or is shaped by) social structures, values, and human experience, and frameworks such as technological determinism.
 
