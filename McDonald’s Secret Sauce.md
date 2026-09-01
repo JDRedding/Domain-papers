@@ -1,0 +1,21 @@
+# McDonald’s Secret Sauce
+
+**Makes:** about 3/4 cup
+
+## Ingredients
+
+- 1/2 cup mayonnaise  
+- 2 tablespoons French dressing  
+- 4 teaspoons sweet pickle relish  
+- 1 tablespoon finely minced white onion  
+- 1 teaspoon white vinegar  
+- 1 teaspoon sugar  
+- 1/8 teaspoon salt  
+
+## Instructions
+
+1. Combine all of the ingredients in a small bowl.  
+2. Stir well.  
+3. Place the sauce in a covered container.  
+4. Refrigerate for several hours, or overnight, so that the flavors blend.  
+5. Stir the sauce a couple of times as it chills.
