@@ -17,10 +17,19 @@
 
 *Note: 2 eggs is the usual amount for a 2-serving method.*
 
-CHEESE SCRAMBLED EGGS
+---
 
-Use recipe for scrambled eggs. When eggs begin to get firm, sprinkle 1/3 cup cut-up process cheese over top. Cook until eggs are firm and cheese is melted.
+# Cheese Scrambled Eggs
 
-SCRAMBLED EGGS WITH MEAT
+Use the recipe for scrambled eggs.
 
-Use the recipe for scrambled eggs. Add 1/3 cup cut-up canned luncheon meat before cooking eggs.
+1. When the eggs begin to get firm, sprinkle 1/3 cup cut-up process cheese over the top.  
+2. Cook until the eggs are firm and the cheese is melted.
+
+---
+
+# Scrambled Eggs with Meat
+
+Use the recipe for scrambled eggs.
+
+Add 1/3 cup cut-up canned luncheon meat before cooking the eggs.
