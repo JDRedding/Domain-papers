@@ -1,6 +1,10 @@
 # Cloaca Maxima
 ***Rome’s ancient mega‑drain***
 
+The note is a technical, architecture‑level overview of Rome’s Cloaca Maxima: its history, construction, hydraulic and structural design, maintenance, function, cultural significance, modern legacy, and a detailed engineering appendix with equations and a Relational Dynamic Geometry (RDG) framing.
+
+---
+
 The Cloaca Maxima, built in ancient Rome around the 6th century BCE, is one of the oldest and most remarkable sewage systems in the world, serving as a testament to Roman engineering, urban planning, and cultural significance. The Cloaca Maxima was one of the oldest and most impressive engineering works in ancient Rome. Built around 600 BCE, originally under the Etruscan kings, it served as a massive drainage and sewage system that transformed swampy land into the usable space that became the Roman Forum.
 
 The Cloaca Maxima stands as both an engineering triumph and a symbol of Roman civilization, combining practicality, urban ingenuity, and religious reverence, and remaining one of the oldest operating sewer systems in the world.
