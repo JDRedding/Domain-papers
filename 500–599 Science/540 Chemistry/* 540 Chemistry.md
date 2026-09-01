@@ -30,9 +30,9 @@ $$
 
 - $n$: amount of substance (mol)  
 - $m$: mass (g or kg)  
-- $M$: molar mass (g mol$^{-1}$)  
+- $M$: molar mass (g mol $^{-1}$)  
 - $N$: number of entities  
-- $N_A$: Avogadro constant $\approx 6.022 \times 10^{23}$ mol$^{-1}$
+- $N_A$: Avogadro constant $\approx 6.022 \times 10^{23}$ mol $^{-1}$
 
 Molarity (amount concentration):
 
@@ -61,7 +61,7 @@ $$
 
 - $P$: pressure  
 - $V$: volume  
-- $R$: gas constant ($8.314$ J mol$^{-1}$ K$^{-1}$ or $0.08206$ L atm mol$^{-1}$ K$^{-1}$)  
+- $R$: gas constant ($8.314$ J mol $^{-1}$ K$^{-1}$ or $0.08206$ L atm mol $^{-1}$ K$^{-1}$)  
 - $T$: absolute temperature (K)
 
 Combined / general gas law (constant $n$):
