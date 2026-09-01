@@ -234,6 +234,7 @@ H_n=-\sum_{w\in\Sigma^n}P(w)\log_2 P(w),\qquad
 h=\l
 im_{n\to\infty}\frac{H_n}{n}
 $$
+
 is the entropy rate. For printed English, estimates of $h$ lie roughly in $0.6$–$1.3$ bits per character once long-range context is taken into account.
 
 An $n$-gram language model is the chain-rule factorization
