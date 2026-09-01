@@ -1,0 +1,100 @@
+=== Formal Logic, Proof Systems & Type Theory ===
+
+Symbol                  Meaning
+------                  -------
+⊤                       True
+⊥                       False
+¬P                      Negation
+P ∧ Q                   Conjunction
+P ∨ Q                   Disjunction
+P → Q                   Implication
+P ↔ Q                   Biconditional
+
+∀x P(x)                 Universal quantifier
+∃x P(x)                 Existential quantifier
+∃!x P(x)                Unique existence
+
+⊢ P                     P is provable
+Γ ⊢ P                   P is provable from assumptions Γ
+⊨ P                     P is logically valid
+Γ ⊨ P                   P is semantically entailed by Γ
+
+MP                      Modus ponens
+MT                      Modus tollens
+P ⊢ P ∨ Q               Introduction rule
+P ∧ Q ⊢ P               Elimination rule
+
+⟨proof⟩                Proof object (generic)
+derivation              Sequence of inference steps
+
+SK                     Hilbert-style axiom system S–K
+NK                     Natural deduction system
+
+λx. t                   Lambda abstraction
+t u                     Function application
+(λx. t) u               Beta reduction
+t →β t'                 Beta reduction step
+η-reduction             Eta reduction
+
+FV(t)                   Free variables of term t
+BV(t)                   Bound variables of term t
+α-equivalence           Renaming of bound variables
+
+Type                    Generic type
+A : Type                A is a type
+t : A                   Term t has type A
+Γ ⊢ t : A               Typing judgment
+
+A → B                   Function type
+A × B                   Product type
+A + B                   Sum type
+Unit                    Unit type
+Void                    Empty type
+
+Πx:A. B(x)              Dependent function type (Pi type)
+Σx:A. B(x)              Dependent pair type (Sigma type)
+
+Id_A(x,y)               Identity type
+refl_x                  Reflexivity constructor
+
+Curry–Howard            Proposition-as-type correspondence
+P ↔ A                   Logical proposition P corresponds to type A
+proof ↔ term            Proof corresponds to term inhabiting type
+
+induction              Induction principle
+recursion              Recursion principle
+
+≡                       Definitional equality
+=                       Propositional equality
+≃                       Equivalence of types
+≈                       Logical equivalence
+
+⊢ P :: proof            P has a proof object
+⊢ t : A                 t inhabits type A
+
+□                       End of proof
+qed                     End of proof (alternate)
+
+model                   Structure interpreting logic
+M ⊨ P                   Model M satisfies P
+
+Kripke frame            Frame for modal logic
+◇P                      Possibility
+□P                      Necessity
+
+μX. F(X)                Least fixed point
+νX. F(X)                Greatest fixed point
+
+normal form             Fully reduced term
+canonical form          Canonical representative of type
+
+context Γ               Typing or proof context
+weakening               Add unused assumption
+contraction             Merge duplicate assumptions
+exchange                Reorder assumptions
+
+cut rule                Sequent calculus cut rule
+cut elimination         Cut-elimination theorem
+
+⊢ Γ ⇒ Δ                 Sequent
+⇒                       Sequent arrow
