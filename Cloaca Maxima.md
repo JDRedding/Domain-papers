@@ -485,3 +485,135 @@ plus the head lost to friction $S_f L$.
 | $w$ | distributed load (self-weight + overburden) | $\mathrm{N}/\mathrm{m}$ |
 
 For the Cloaca, order-of-magnitude values from the archaeology: $b \approx 2.8\text{–}3.3\,\mathrm{m}$, $h \approx 2.7\text{–}4.5\,\mathrm{m}$, $L \approx 1600\,\mathrm{m}$, $S_0 \sim 0.005\text{–}0.01$.
+
+You picked a good test case for RDG—this thing is basically a living diagram.
+
+---
+
+## 6. Relational Dynamic Geometry (RDG) terms
+
+- **Geometry:** vault + slope + section.  
+- **Fields:** flow, load, sediment.  
+- **Relations:** continuity, Manning/Saint‑Venant, Shields, compression.  
+- **Constraint:** all relations must hold simultaneously for the system to remain draining, self‑cleaning, and structurally compressive‑only.
+
+### 1. Objects and relations (RDG primitives)
+
+**Structural manifold:**  
+- **Object:** $M_s$ = stone vault + soil cover + invert.  
+- **Geometry:** horseshoe/elliptical section, width $b \approx 3\,\mathrm{m}$, rise $h \approx 4\,\mathrm{m}$, length $L \approx 1600\,\mathrm{m}$.  
+
+**Hydraulic field:**  
+- **Object:** $F_h(x,t)$ = water + wastewater flow along the conduit.  
+- **State variables:** $Q(x,t),\,A(x,t),\,V(x,t),\,y(x,t)$.  
+
+**Tributary set:**  
+- **Objects:** $\{T_k\}$ = street drains, baths, fountains, latrines, aqueduct bleed‑off.  
+- **Relation:** each $T_k \to M_s$ at some $x_k$, contributing $Q_k(t)$.  
+
+**Boundary objects:**  
+- **Upstream:** Forum catchment $C_{\text{Forum}}$.  
+- **Downstream:** Tiber stage $H_r(t)$ at outlet.  
+
+---
+
+### 2. Geometric operators
+
+**Longitudinal gradient (bed slope):**  
+This is the **driving geometric relation** between Forum elevation and Tiber elevation.
+
+- RDG operator $\nabla_z$ along $x$:  
+
+$$
+S_0 = \frac{\Delta z}{L}
+$$
+
+**Cross‑section geometry operator:** 
+This is the **local geometric state** that the hydraulic field lives in.
+
+- For each station $x$, RDG uses a section map $\Gamma(x)$ giving $A(x,y), P(x,y)$.  
+- Example horseshoe section:
+
+$$
+A = b h_w + \frac{\pi b^2}{8}, \quad
+P = 2h_w + \frac{\pi b}{2}
+$$
+
+---
+
+### 3. Dynamic relations (flow over geometry)
+This is the **relational glue** between tributaries and main conduit.
+
+**Continuity relation (RDG flow conservation):**
+
+$$
+Q_{\text{main}}(x,t) = \sum_k Q_k(t) + Q_{\text{base}}(x,t)
+$$
+
+and locally
+
+$$
+Q = A\,V
+$$
+
+**Uniform‑flow relation (Manning operator):**
+In RDG terms: a **mapping from geometry + roughness + slope → discharge**.
+
+$$
+Q = \frac{1}{n} A R_h^{2/3} S_0^{1/2}
+$$
+
+with
+
+$$
+R_h = \frac{A}{P}
+$$
+
+**Gradually varied flow (Forum→Tiber backwater):**
+This is the **dynamic relation** between river stage and internal depth profile.
+
+$$
+\frac{\mathrm{d}y}{\mathrm{d}x} = \frac{S_0 - S_f}{1 - \mathrm{Fr}^2}
+$$
+
+---
+
+## 4. Self‑cleaning and stability as relational conditions
+RDG view: **flow field must satisfy a threshold relation** so that the geometry stays clear.
+
+**Self‑cleaning condition (sediment):**
+
+$$
+\tau_0 = \rho g R_h S_f,\quad
+\tau_* = \frac{\tau_0}{(\rho_s-\rho) g d} \gtrsim \tau_{*c}
+$$
+
+**Vault compression relation (structural stability):**
+RDG view: the **load field** (earth + water) must keep the thrust line inside the vault’s “safe region”.
+
+$$
+N \approx w r,\quad
+\sigma_c = \frac{N}{t}
+$$
+
+with eccentricity constraint
+
+$$
+e \le \frac{t}{6}
+$$
+
+---
+
+## 5. Time and travel
+RDG view: a **temporal mapping** from hydraulic state to transit time across the manifold.
+
+**Travel‑time relation:**
+
+$$
+T \approx \frac{L}{V}
+$$
+
+---
+
+
+
