@@ -158,13 +158,48 @@ These relations, together with tabulated roughness, $K$-factors, and code tables
 
 ## Components of a Plumbing System
 
-A typical plumbing system includes:
+A plumbing system is composed of interconnected components that deliver clean water, remove wastewater, and provide fixtures and fittings for daily use.
 
-- **Pipes and Tubing:** Channels water to fixtures and drains wastewater; commonly made from copper, PVC, or PEX materials.  
-- **Fixtures:** Devices like sinks, toilets, bathtubs, showers, faucets, and water heaters that use or deliver water.  
-- **Valves:** Control water flow and pressure throughout the system, including shut-off valves for repairs.  
-- **Drainage and Sewage Systems:** Carry wastewater away from the building to municipal sewer lines or septic systems.  
-- **Vents:** Allow gases and sewer odors to escape and maintain proper air pressure in drainpipes.  
+### 1. Water Supply System
+
+The water supply system brings clean water into a building. Key components include:
+
+- **Pipes and tubing:** Typically made of copper, PEX, PVC, or CPVC, these transport potable water throughout the building.  
+- **Fittings:** Elbows, tees, couplings, and reducers change direction, connect pipes, or adjust pipe sizes.  
+- **Valves:** Control water flow and pressure. Common types include shut-off valves, pressure-reducing valves, and check valves.  
+- **Water meter:** Measures water usage for billing purposes.  
+- **Pressure regulator:** Ensures consistent water pressure to prevent pipe damage.  
+
+### 2. Drainage, Waste, and Vent System (DWV)
+
+This system removes wastewater and prevents the buildup of harmful gases:
+
+- **Drain pipes:** Carry wastewater from fixtures to the sewer or septic system; materials include PVC, ABS, or cast iron.  
+- **Waste pipes:** Specifically transport liquid waste from sinks, showers, and toilets.  
+- **Vents:** Allow sewer gases to escape and maintain proper pressure in the system to aid drainage.  
+- **Traps:** U-shaped sections under sinks or tubs that prevent sewer gases from entering the living space by holding water as a barrier.  
+- **Cleanouts:** Accessible points to remove blockages in the drainage system.  
+
+### 3. Fixtures and Appliances
+
+These are the end-use points for water or wastewater:
+
+- **Sinks, toilets, showers, bathtubs** — supply water and remove wastewater.  
+- **Water heaters** — provide hot water for domestic use or appliances.  
+- **Dishwashers, washing machines** — connected to both water supply and drainage.  
+
+### 4. Pumps and Water Treatment Components
+
+- **Pump systems:** Boost water pressure in large buildings or areas with low supply pressure.  
+- **Water softeners and filters:** Condition water to remove minerals, chemicals, or impurities.  
+
+### 5. Support Components
+
+- **Pipe hangers and supports:** Secure pipes and prevent sagging or movement.  
+- **Insulation:** Protects pipes from freezing temperatures and minimizes heat loss in hot water lines.  
+- **Backflow prevention devices:** Prevent contaminated water from flowing back into the potable supply.  
+
+Understanding these components is essential for the maintenance, repair, or improvement of both residential and commercial plumbing systems, ensuring safe water delivery and effective wastewater management.
 
 ## Types of Plumbing Systems
 
