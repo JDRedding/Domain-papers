@@ -1,4 +1,5 @@
 # Noli turbare circulos meos
+ 184 / 190 Ancient philosophy; classical aphorisms
 
 Archimedes almost certainly **did not** say *“Noli turbare circulos meos!”* — but he **did** say something like *“Do not disturb that diagram,”* according to Valerius Maximus. The specific “circles” wording is a *later medieval embellishment*, not an ancient quote. A recurring pattern in intellectual history: the process by which a grounded historical interaction is gradually polished into a cinematic, high-symbolism motto.
 
