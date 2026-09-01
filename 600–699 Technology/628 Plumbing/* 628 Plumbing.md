@@ -203,9 +203,44 @@ Understanding these components is essential for the maintenance, repair, or impr
 
 ## Types of Plumbing Systems
 
-Plumbing can be categorized into:
+Plumbing systems are broadly divided into water supply and drainage systems, with specialized subcategories based on their function and design.
 
-- **Water Supply Plumbing:** Brings clean water into the building.  
-- **Drain-Waste-Vent (DWV) Plumbing:** Removes wastewater and sewage, venting sewer gases safely.  
-- **Gas Plumbing:** Some systems also include piping for natural gas or propane.  
+### 1. Water Supply Systems
 
+Water supply systems are designed to deliver clean water to buildings for various uses such as drinking, cooking, cleaning, and irrigation.
+
+Categories include:
+
+- **Direct Pump Systems:** Water is pumped directly into the building from a well or municipal supply. Pressure is maintained by pumps and is suitable for high-rise buildings.  
+- **Gravity Systems:** Rely on elevated storage tanks to provide water pressure via gravity. Common in older buildings and small communities.  
+- **Combined Systems:** Utilize both pumping and gravity storage to ensure consistent water pressure and supply.  
+- **Cold and Hot Water Systems:** Often combined in modern plumbing, with hot water supplied by a boiler, heater, or solar water heater while cold water comes directly from the main supply.  
+
+### 2. Drainage and Wastewater Systems
+
+Drainage systems remove waste and used water in a safe and hygienic manner.
+
+Categories include:
+
+- **Sanitary Drainage Systems:** Carry liquid and soluble solid waste to a treatment facility or septic tank. May employ single-stack, two-pipe, or one-pipe configurations depending on the building design.  
+- **Stormwater Drainage Systems:** Drain rainwater from roofs, driveways, and paved areas to prevent flooding. These may include gutter systems, downspouts, and underground pipes.  
+- **Ventilation Systems:** Integral to drainage, vent pipes maintain pressure balance and prevent sewer gases from entering the building.  
+
+### 3. Specialized Plumbing Systems
+
+In addition to basic water supply and drainage, certain buildings require specialized systems:
+
+- **Fire Protection Systems:** Comprise sprinklers, fire hoses, and standpipes, designed to deliver water quickly to suppress fires.  
+- **Irrigation Systems:** Supply water to gardens, lawns, or agricultural applications; can be automated or manual.  
+- **Gas Piping Systems:** Deliver natural gas or propane for heating, cooking, or industrial uses; often integrated alongside plumbing codes.  
+- **Greywater and Reclaimed Water Systems:** Reuse water from sinks, showers, or laundry for non-potable purposes like irrigation or toilet flushing.  
+
+### 4. Pipe Materials and Design Considerations
+
+Plumbing systems can also be categorized by the materials used, which affects durability, cost, and maintenance:
+
+- **Metal Pipes:** Copper, galvanized steel, and cast iron (durable, corrosion-resistant).  
+- **Plastic Pipes:** PVC, CPVC, PEX, and ABS (lightweight, cost-effective, and resistant to scaling).  
+- **Composite Pipes:** Combination materials to optimize flexibility and performance.  
+
+Understanding these types and categories allows for proper design, installation, and maintenance of plumbing systems to ensure safety, efficiency, and longevity. Proper categorization also helps in compliance with local building codes and environmental considerations.
