@@ -8,6 +8,8 @@ Ontology is the branch of metaphysics concerned with the study of being, existen
 
 In classical metaphysical frameworks, ontology is often distinguished by ontological categories such as substance, property, relation, event, and process.
 
+Ontology in metaphysics addresses the nature, categories, and relations of existence. It spans questions from abstract universals to concrete entities and employs both philosophical reasoning and formal methods. Its study is foundational to understanding both conceptual frameworks and scientific models of reality, bridging classical metaphysical inquiry with modern logical and computational approaches.
+
 ## 2. Core Ontological Questions
 
 Ontology investigates both general and specific types of being, often including:
@@ -53,7 +55,3 @@ Ontology is not solely conceptual; modern approaches often involve formal, logic
 - **In philosophy:** Clarifies conceptual assumptions in epistemology, ethics, and philosophy of mind.
 - **In science:** Provides rigorous frameworks for modeling entities in physics, biology, and computer science.
 - **In AI and information science:** Ontologies underpin semantic knowledge representation, enabling precise categorization, inferencing, and interoperability in systems like the Semantic Web.
-
-## Summary
-
-Ontology in metaphysics addresses the nature, categories, and relations of existence. It spans questions from abstract universals to concrete entities and employs both philosophical reasoning and formal methods. Its study is foundational to understanding both conceptual frameworks and scientific models of reality, bridging classical metaphysical inquiry with modern logical and computational approaches.
