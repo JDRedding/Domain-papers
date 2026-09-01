@@ -1,4 +1,6 @@
 # Formal Semantic Substrate Theory (FSST) 
+121 / 160 (Philosophy of meaning; logic)
+
 Semantic Meaning Guarantee 
 - Version 2.0
 
