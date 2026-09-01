@@ -309,7 +309,8 @@ In uniform flow $S_f = S_0$.
 
 ---
 
-### 5. Gradually varied flow (Forum $\to$ Tiber, backwater from the river)
+### 5. Gradually varied flow 
+Forum $\to$ Tiber, backwater from the river
 
 Saint-Venant steady form:
 
