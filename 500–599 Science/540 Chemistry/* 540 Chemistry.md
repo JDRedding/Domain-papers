@@ -39,6 +39,7 @@ Molarity (amount concentration):
 $$
 c = \frac{n}{V} \quad \text{(often written } [A]\text{)}
 $$
+
 Molality:
 
 $$
