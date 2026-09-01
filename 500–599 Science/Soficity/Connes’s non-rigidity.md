@@ -1,3 +1,6 @@
+# Connes
+512.55	Operator algebras / Connes
+
 🔍 The **core idea** of Connes’s rigidity conjecture is that certain highly rigid groups should 
 produce **distinct** von Neumann algebras — meaning the algebra should “remember” the group. The 
 recent breakthrough shows this is **false**.
