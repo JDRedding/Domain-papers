@@ -168,7 +168,7 @@ Parts of the Cloaca Maxima still carry water, more than 2,600 years after it was
 
 Visitors can observe remnants near the Ponte Rotto and Ponte Palatino and access certain parts of the system near the Forum of Nerva and Basilica Julia. Its enduring functionality and integration with the aqueduct network exemplify the Romans’ sophisticated approach to urban infrastructure and public health. It is not “*unchanged since 600 BCE*.” It **is** a palimpsest of Etruscan-period alignment, Republican stonework, Imperial concrete, Renaissance and nineteenth-century repairs—and it still works. That combination, not a single date, is why it remains one of the oldest operating urban drains in the world.
 
-## Appendix: Notation
+## Appendix: Equations
 
 These are the equations that actually describe a gravity drain like the Cloaca Maxima: geometry, slope, discharge, self-cleaning, and the stone vault as a compression structure. Notation is defined first, then the formulas. These five are enough to talk about grade, capacity, self-cleaning, and why a tufa vault that carries only compression can last 2,600 years.
 
@@ -184,36 +184,9 @@ Q &= \frac{1}{n} A R_h^{2/3} S_0^{1/2} \\
 \end{aligned}
 $$
 
-| Symbol | Meaning | Typical unit |
-|---|---|---|
-| $Q$ | discharge (volume flow rate) | $\mathrm{m}^3/\mathrm{s}$ |
-| $A$ | flow area (wetted cross-section) | $\mathrm{m}^2$ |
-| $V$ | mean velocity | $\mathrm{m}/\mathrm{s}$ |
-| $P$ | wetted perimeter | $\mathrm{m}$ |
-| $R_h$ | hydraulic radius $A/P$ | $\mathrm{m}$ |
-| $S_0$ | bed slope (rise/run) | dimensionless |
-| $S_f$ | friction slope | dimensionless |
-| $n$ | Manning roughness | $\mathrm{s}/\mathrm{m}^{1/3}$ |
-| $C$ | Chézy coefficient | $\mathrm{m}^{1/2}/\mathrm{s}$ |
-| $f$ | Darcy–Weisbach friction factor | dimensionless |
-| $D_h$ | hydraulic diameter $4R_h$ | $\mathrm{m}$ |
-| $g$ | gravity $9.81$ | $\mathrm{m}/\mathrm{s}^2$ |
-| $y$ | flow depth | $\mathrm{m}$ |
-| $B$ | free-surface width | $\mathrm{m}$ |
-| $b,\,h$ | conduit width and rise | $\mathrm{m}$ |
-| $i$ | invert slope $\approx S_0$ | dimensionless |
-| $\Delta z,\,L$ | elevation drop, length | $\mathrm{m}$ |
-| $\sigma_c$ | compressive stress in masonry | $\mathrm{Pa}$ |
-| $N$ | axial (thrust) force in the arch | $\mathrm{N}$ |
-| $t$ | vault thickness | $\mathrm{m}$ |
-| $r$ | mean vault radius | $\mathrm{m}$ |
-| $w$ | distributed load (self-weight + overburden) | $\mathrm{N}/\mathrm{m}$ |
-
-For the Cloaca, order-of-magnitude values from the archaeology: $b \approx 2.8\text{–}3.3\,\mathrm{m}$, $h \approx 2.7\text{–}4.5\,\mathrm{m}$, $L \approx 1600\,\mathrm{m}$, $S_0 \sim 0.005\text{–}0.01$.
-
 ---
 
-## 1. Continuity
+### 1. Continuity
 
 $$
 Q = A\,V
@@ -227,7 +200,7 @@ $$
 
 ---
 
-## 2. Bed slope
+### 2. Bed slope
 
 $$
 S_0 = \frac{\Delta z}{L} = \sin\theta \approx \tan\theta
@@ -241,7 +214,7 @@ $$
 
 ---
 
-## 3. Cross-section geometry
+### 3. Cross-section geometry
 
 Treat a full stone vault as a rectangle plus a circular (or elliptical) cap.
 
@@ -288,7 +261,7 @@ $$
 
 ---
 
-## 4. Uniform-flow resistance
+### 4. Uniform-flow resistance
 
 ### Manning (the workhorse for masonry channels)
 
@@ -336,7 +309,7 @@ In uniform flow $S_f = S_0$.
 
 ---
 
-## 5. Gradually varied flow (Forum $\to$ Tiber, backwater from the river)
+### 5. Gradually varied flow (Forum $\to$ Tiber, backwater from the river)
 
 Saint-Venant steady form:
 
@@ -355,7 +328,7 @@ Tiber rise that drowns the outlet is a downstream boundary condition $y(L) = y_{
 
 ---
 
-## 6. Capacity estimate (order of magnitude)
+### 6. Capacity estimate (order of magnitude)
 
 Full or nearly full horseshoe with $b=3.2\,\mathrm{m}$, $h\approx 4.0\,\mathrm{m}$, $n=0.020$, $S_0=0.007$:
 
@@ -375,7 +348,7 @@ where $C_r$ is a runoff coefficient and $i_{\text{rain}}$ rainfall intensity.
 
 ---
 
-## 7. Self-cleaning / sediment
+### 7. Self-cleaning / sediment
 
 Shields criterion for incipient motion of grain diameter $d$:
 
@@ -407,7 +380,7 @@ Deposition is limited if $V \gg w_s$ and the invert is smooth.
 
 ---
 
-## 8. Travel time
+### 8. Travel time
 
 $$
 T = \int_0^L \frac{\mathrm{d}x}{V(x)} \approx \frac{L}{V}
@@ -417,7 +390,7 @@ for nearly uniform flow. With $L=1600\,\mathrm{m}$ and $V\sim 1\,\mathrm{m}/\mat
 
 ---
 
-## 9. Vault as a compression machine
+### 9. Vault as a compression machine
 
 A circular arch of mean radius $r$, subtended angle $2\beta$, under uniform radial load $w$ (weight + earth + water pressure treated as equivalent load) has thrust
 
@@ -465,7 +438,7 @@ plus overburden $\gamma_{\text{soil}} H_{\text{cover}} b_{\text{equiv}}$.
 
 ---
 
-## 10. Outlet / river interface
+### 10. Outlet / river interface
 
 Discharge over a drowned invert into a receiving stage $H_r$:
 
@@ -483,4 +456,31 @@ $$
 
 plus the head lost to friction $S_f L$.
 
+## Appendix: Notation
 
+| Symbol | Meaning | Typical unit |
+|---|---|---|
+| $Q$ | discharge (volume flow rate) | $\mathrm{m}^3/\mathrm{s}$ |
+| $A$ | flow area (wetted cross-section) | $\mathrm{m}^2$ |
+| $V$ | mean velocity | $\mathrm{m}/\mathrm{s}$ |
+| $P$ | wetted perimeter | $\mathrm{m}$ |
+| $R_h$ | hydraulic radius $A/P$ | $\mathrm{m}$ |
+| $S_0$ | bed slope (rise/run) | dimensionless |
+| $S_f$ | friction slope | dimensionless |
+| $n$ | Manning roughness | $\mathrm{s}/\mathrm{m}^{1/3}$ |
+| $C$ | Chézy coefficient | $\mathrm{m}^{1/2}/\mathrm{s}$ |
+| $f$ | Darcy–Weisbach friction factor | dimensionless |
+| $D_h$ | hydraulic diameter $4R_h$ | $\mathrm{m}$ |
+| $g$ | gravity $9.81$ | $\mathrm{m}/\mathrm{s}^2$ |
+| $y$ | flow depth | $\mathrm{m}$ |
+| $B$ | free-surface width | $\mathrm{m}$ |
+| $b,\,h$ | conduit width and rise | $\mathrm{m}$ |
+| $i$ | invert slope $\approx S_0$ | dimensionless |
+| $\Delta z,\,L$ | elevation drop, length | $\mathrm{m}$ |
+| $\sigma_c$ | compressive stress in masonry | $\mathrm{Pa}$ |
+| $N$ | axial (thrust) force in the arch | $\mathrm{N}$ |
+| $t$ | vault thickness | $\mathrm{m}$ |
+| $r$ | mean vault radius | $\mathrm{m}$ |
+| $w$ | distributed load (self-weight + overburden) | $\mathrm{N}/\mathrm{m}$ |
+
+For the Cloaca, order-of-magnitude values from the archaeology: $b \approx 2.8\text{–}3.3\,\mathrm{m}$, $h \approx 2.7\text{–}4.5\,\mathrm{m}$, $L \approx 1600\,\mathrm{m}$, $S_0 \sim 0.005\text{–}0.01$.
