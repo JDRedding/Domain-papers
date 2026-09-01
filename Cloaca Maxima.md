@@ -26,11 +26,7 @@ It connected smaller drains from streets, baths, fountains, and houses, channeli
 
 The Cloaca Maxima was constructed using a combination of local stone blocks, tufa, lava, and Roman concrete (*opus caementicium*). Its vaulted ceilings reflected mastery of the arch and ensured structural stability.
 
-Dimensions varied, with height ranging from 2.7 to 4.5 meters and width up to 4.5 meters, sometimes large enough for wagons loaded with hay to pass. Continuous maintenance and integration with Roman aqueducts allowed wastewater and stormwater to flow efficiently, minimizing obstruction and health hazards.
-
-Below is a **technical, architecture‑level breakdown** of the Cloaca Maxima — not the tourist version, but the engineering anatomy of the system as it actually functioned.  
-This is tuned for your operator‑level preferences, J.
-
+Below is a **technical, architecture‑level breakdown** of the Cloaca Maxima — not the tourist version, but the engineering anatomy of the system as it actually functioned. Dimensions varied, with height ranging from 2.7 to 4.5 meters and width up to 4.5 meters, sometimes large enough for wagons loaded with hay to pass. Continuous maintenance and integration with Roman aqueducts allowed wastewater and stormwater to flow efficiently, minimizing obstruction and health hazards. 
 
 ## **Technical Architecture Breakdown**
 ## **1. Structural Architecture (Macro‑Level)**
