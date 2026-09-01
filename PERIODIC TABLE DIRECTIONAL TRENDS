@@ -46,3 +46,68 @@ Variables:    Z (atomic number), r (atomic radius),
 Core reason behind the arrows:
 Across a period  → nucleus gains protons (Z ↑) while n stays same → Z_eff ↑ → electrons held tighter
 Down a group     → new electron shell added (n ↑) → size ↑, outer e⁻ farther from nucleus
+
+PERIODIC TABLE DIRECTIONAL TRENDS — EQUATIONS & NOTATION
+Fundamentals : Z_eff drives almost every arrow
+               Across period : Z rises, n fixed  → Z_eff ↑
+               Down group    : new shell added   → n ↑
+
+Variables
+  Z      atomic number (protons)
+  n      principal quantum number (shell)
+  σ or S shielding / screening constant
+  Z_eff  effective nuclear charge
+  r      atomic / orbital radius
+  a0     Bohr radius = 0.529 Å
+  IE     first ionisation energy
+  EA     electron affinity
+  χ      electronegativity
+  Ed     bond dissociation energy
+
+────────────────────────────────────────────────────────────
+EFFECTIVE NUCLEAR CHARGE
+  Z_eff  =  Z  −  σ
+
+  Slater shielding (σ):
+    same group (ns/np)     : 0.35 each  (0.30 for 1s)
+    n−1 shell              : 0.85 each
+    n−2 and inner          : 1.00 each
+    nd/nf same group       : 0.35 ; all left of them = 1.00
+
+────────────────────────────────────────────────────────────
+ATOMIC RADIUS  (hydrogen-like / Bohr approximation)
+  r_n  ≈  n² a0 / Z_eff
+
+  full Bohr form:
+  r_n  =  n² ħ² / (Z_eff k_e e² m_e)
+
+  → r decreases L→R (Z_eff ↑, n constant)
+  → r increases down group (n ↑)
+
+────────────────────────────────────────────────────────────
+IONISATION ENERGY  (hydrogen-like scaling)
+  IE  ≈  13.6  Z_eff² / n²     eV
+
+  orbital energy:
+  E_n  =  −13.6  Z_eff² / n²   eV
+
+  → IE generally rises L→R and up a group
+
+────────────────────────────────────────────────────────────
+ELECTRONEGATIVITY
+
+  Mulliken (absolute):
+    χ_M  =  (IE + EA) / 2
+
+  Pauling (thermochemical difference):
+    |χ_A − χ_B|  =  √[ Ed(AB) − (Ed(AA)+Ed(BB))/2 ]
+
+  Allred–Rochow (uses Z_eff directly):
+    χ_AR  =  0.359 Z_eff / r²  +  0.744
+
+────────────────────────────────────────────────────────────
+COULOMB FORCE ON VALENCE ELECTRON
+  F_eff  =  k  (Z_eff e²) / r²
+
+  larger F_eff  →  smaller r, higher IE, higher χ
+────────────────────────────────────────────────────────────
