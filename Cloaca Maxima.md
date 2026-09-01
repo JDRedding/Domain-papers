@@ -486,10 +486,6 @@ plus the head lost to friction $S_f L$.
 
 For the Cloaca, order-of-magnitude values from the archaeology: $b \approx 2.8\text{–}3.3\,\mathrm{m}$, $h \approx 2.7\text{–}4.5\,\mathrm{m}$, $L \approx 1600\,\mathrm{m}$, $S_0 \sim 0.005\text{–}0.01$.
 
-You picked a good test case for RDG—this thing is basically a living diagram.
-
----
-
 ## 6. Relational Dynamic Geometry (RDG) terms
 
 - **Geometry:** vault + slope + section.  
@@ -515,8 +511,6 @@ You picked a good test case for RDG—this thing is basically a living diagram.
 - **Upstream:** Forum catchment $C_{\text{Forum}}$.  
 - **Downstream:** Tiber stage $H_r(t)$ at outlet.  
 
----
-
 ### 2. Geometric operators
 
 **Longitudinal gradient (bed slope):**  
@@ -538,8 +532,6 @@ $$
 A = b h_w + \frac{\pi b^2}{8}, \quad
 P = 2h_w + \frac{\pi b}{2}
 $$
-
----
 
 ### 3. Dynamic relations (flow over geometry)
 This is the **relational glue** between tributaries and main conduit.
@@ -576,8 +568,6 @@ $$
 \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{S_0 - S_f}{1 - \mathrm{Fr}^2}
 $$
 
----
-
 ## 4. Self‑cleaning and stability as relational conditions
 RDG view: **flow field must satisfy a threshold relation** so that the geometry stays clear.
 
@@ -601,8 +591,6 @@ with eccentricity constraint
 $$
 e \le \frac{t}{6}
 $$
-
----
 
 ## 5. Time and travel
 RDG view: a **temporal mapping** from hydraulic state to transit time across the manifold.
