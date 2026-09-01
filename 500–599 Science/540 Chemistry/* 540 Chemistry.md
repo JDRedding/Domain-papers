@@ -21,6 +21,8 @@ Chemistry is a dynamic and practical science that affects nearly every aspect of
 
 Chemistry relies on a large set of mathematical relations that connect measurable quantities (mass, volume, pressure, temperature, concentration, energy, potential, etc.) to one another. Below is a structured catalogue of the most widely used equations, written in standard IUPAC-style notation together with the meaning of every symbol.
 
+These relations, together with the associated standard symbols, constitute the core mathematical language of chemistry. Specialized sub-disciplines (statistical mechanics, computational chemistry, spectroscopy of polyatomic molecules, etc.) introduce additional operators and partition functions, but they rest on the equations listed above.
+
 ### 1. Amount of substance and stoichiometry
 Number of moles:
 
@@ -292,4 +294,3 @@ $$
 P_{\text{solution}} = x_{\text{solvent}}P^\circ_{\text{solvent}}
 $$
 
-These relations, together with the associated standard symbols, constitute the core mathematical language of chemistry. Specialized sub-disciplines (statistical mechanics, computational chemistry, spectroscopy of polyatomic molecules, etc.) introduce additional operators and partition functions, but they rest on the equations listed above.
