@@ -1,4 +1,6 @@
 # 111 Relational Emergence 
+111 Ontology Metaphysics
+
 Cross-Disciplinary Ontology of Organization with Ontological/Epistemic Distinction Reproducible Classification Criteria 
 
 **Author:** JD Redding  
