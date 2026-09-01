@@ -1,0 +1,153 @@
++======================================================================================+
+| GEORGE A. PHILBRICK RESEARCHES, INC., BOSTON, MASSACHUSETTS, U.S.A.                  |
+| SUBJECT: TYPICAL OPERATIONAL AMPLIFIER APPLICATIONS                  BY: GAP/R       |
+| FOR MODELLING, MEASURING, MANIPULATING & MUCH ELSE           DATE: AUGUST 1964       |
++======================================================================================+
+
+| PRECISION VARIABLE     | BRIDGE AMPLIFIER       | BRIDGE AMPLIFIER       | BRIDGE AMPLIFIER       | BRIDGE AMPLIFIER       |
+| VOLTAGE SOURCE         | (ACTIVE BRIDGE)        | (FLOATING SUPPLY)      | (ONE END GROUNDED)     | (MID-POINT GROUNDED)   |
+|                        |                        |                        |                        |                        |
+|    +---+               |    R                   |   R     R              |      R     R           |      R     R           |
+| Vin|   |               |   / \                  |  / \   / \             |     / \   / \          |     / \   / \          |
+|    |   +--[R1]--+      |  |   |                 | |   | |   |            |    |   | |   |         |    |   | |   |         |
+|    |   |        |      |  +---+                 | +---+ +---+            |    +---+ +---+         |    +---+ +---+         |
+|    +---+      [R2]     |    |                   |   |     |              |      |     |           |      |     |           |
+|      |         |       |   [R]                  |  [R]   [R]             |     [R]   [R]          |     [R]   [R]          |
+|     GND      +-+-+     |    |                   |   |     |              |      |     |           |      |     |           |
+|              |   |     |  +-+-+                 | +-+-+ +-+-+            |    +-+-+ +-+-+         |    +-+-+ +-+-+         |
+|              |OPA|     |  |   |                 | |OPA| |OPA|            |    |   | |OPA|         |    |OPA| |   |         |
+|              +-+-+     |  +---+                 | +---+ +---+            |    +---+ +---+         |    +---+ +---+         |
+|                |       |    |                   |   |     |              |      |     |           |      |     |           |
+|                e       |    e                   |   e     e              |      e     e           |      e     e           |
+| e = -Vin*(R2/R1)       | e = -1/2 * alpha * E0  | e=(1+n)alpha E /2      | e = n/2 * 1/(1+n) *    | e = n alpha /4 * E     |
+|                        |                        |                        |     (1-alpha) E        |                        |
++------------------------+------------------------+------------------------+------------------------+------------------------+
+| CHARGE AMPLIFIER       | PRECISE WIDE BAND      | ADDING SUBTRACTOR      | LOW-COST LOW-NOISE     | NEGATIVE IMPEDANCES    |
+|                        | SQUARER                |                        | HI-Z DIFF-TO-SE AMP    |                        |
+|    Q                   |                        | e1--[R]--+             | e1--+                  |      [R]               |
+|    |                   |   +ei --[PSQ]--+       |          |             |     |                  |       |                |
+|   [C]                  |   -ei --[P45]  |       | e2--[R]--+--[Rf]--+    |    [R]                 |    +--+--+             |
+|    |                   |                |       | e3--[R]--+        |    |     |                  |    |     |             |
+|  +-+-+                 |              +-+-+     | e4--[R]--+      +-+-+  |  +--+--+               |   [R]  OPA             |
+|  |   |                 |              |OPA|     |                 |OPA|  |  |     |               |    |     |             |
+|  |OPA|                 |              +-+-+     |                 +-+-+  | [R]   OPA              |    +--+--+             |
+|  +-+-+                 |                |       |                   |    |  |     |               |       |                |
+|    |                   |                e       |                   e    |  +--+--+               |       e                |
+|    e                   | e = ei^2               | e = Rf/R *(e1+e2      |    |                    | Z_in = -R              |
+| e = -Q/C               |                        |        -e3-e4)         |    e                   | (S.C. STABLE)          |
+|                        |                        |                        |                        |                        |
++------------------------+------------------------+------------------------+------------------------+------------------------+
+| CURRENT-TO-VOLTAGE     | PRECISION AC-DC        | PRECISION FULL-WAVE    | STABLE INTEGRATOR      | FOLLOWER               |
+| TRANSRESISTOR          | CONVERTER (METER OUT)  | RECTIFIER-FILTER       |                        | (ELECTROMETER)         |
+|                        |                        | AC-DC CONVERTER        |                        |                        |
+| i --+                  |      +----+            |      +----+            | ei--+                  | ei--+                  |
+|     |                  |     /      \           |     /      \           |     |                  |     |                  |
+|   [R]                  |    |  DIODE |          |    |  DIODE |          |    [R]                 |     |                  |
+|     |                  |     \      /           |     \      /           |     |                  |   +-+-+                |
+|   +-+-+                |      +----+            |      +----+            |   +-+-+                |   |   |                |
+|   |OPA|                |        |               |        |               |   |OPA|                |   |OPA|                |
+|   +-+-+                |      +-+-+             |      +-+-+             |   +-+-+                |   +-+-+                |
+|     |                  |      |OPA|             |      |OPA|             |     |                  |     |                  |
+|     e                  |      +-+-+             |      +-+-+             |    [C]                 |     e                  |
+| e = i * R              |        |               |        |               |     |                  | e = ei                 |
+| ib < 10^-11 A          |        e               |        e               |     e                  | ib < 10^-12 A          |
+|                        | e ~ |ei|               | e = n |ei| / (1+RCp)   | e = -1/RC * int ei dt  | inoise < 10^-13 A      |
++------------------------+------------------------+------------------------+------------------------+------------------------+
+| PRECISE V OR I         | FLOATING SOURCE        | PRECISION OSCILLATOR   | STABLE LOW-NOISE       | IMPEDANCE SCALER       |
+| COMPARATOR W/ HYST.    | PREAMPLIFIER           |                        | DIFFERENTIATOR         |                        |
+|                        |                        |     [R] [C]            |                        |      [R] [kR]          |
+| ei --+    +-- e        |     [R]                |      |   |             | ei--+                  |       |   |            |
+|      |    |            |      |                 |    +-+-+ |             |     |                  |     +-+-+ |            |
+|     [R]  [R]           |    +-+-+               |    |OPA|-+             |    [C]                 |     |OPA|-+            |
+|      |    |            |    |OPA|               |    +-+-+               |     |                  |     +-+-+              |
+|    +-+-+ +-+-+         |    +-+-+               |      |                 |   +-+-+                |       |                |
+|    |OPA| |OPA|         |      |                 |     [R]                |   |OPA|                |       e                |
+|    +-+-+ +-+-+         |      e                 |      |                 |   +-+-+                | Zout = (1+k)Zin / k    |
+|      |    |            | e = (1+n) ein          |    +-+-+               |     |                  |                        |
+|     GND  GND           |                        |    |OPA|               |    [R]                 |                        |
+| hysteresis loop        |                        |    +-+-+               |     |                  |                        |
+|                        |                        |      |                 |     e                  |                        |
+|                        |                        |      e                 | e = -RC p * ei         |                        |
+|                        |                        | omega = 1/RC           |                        |                        |
++------------------------+------------------------+------------------------+------------------------+------------------------+
+| VARIABLE CONTROLLED    | PRECISE WIDE-RANGE     | GRADED NULL            | CONTROLLER (3-TERM)    | FOLLOWER WITH GAIN     |
+| CURRENT SOURCE         | LOGARITHM (N-DECADES)  | MEASUREMENT            | PID                    | (ELECTROMETER AMP)     |
+|                        |                        |                        |                        |                        |
+| ei --[R]--+            | ei --[R]--+            | ei --+                 | ei --[R]--+            | ei --+                 |
+|           |            |           |            |      |                 |           |            |      |                 |
+|         +-+-+          |         +-+-+          |    [R]                 |         +-+-+          |    [R]                 |
+|         |OPA|          |         |OPA|          |      |                 |         |OPA|          |      |                 |
+|         +-+-+          |         +-+-+          |    +-+-+               |         +-+-+          |    +-+-+               |
+|           |            |           |            |    |OPA|               |           |            |    |OPA|               |
+|          [R]           |         DIODE          |    +-+-+               |          [C] [R]       |    +-+-+               |
+|           |            |           |            |      |                 |           |            |      |                 |
+|           i            |           e            |      e                 |           e            |      e                 |
+| i = (ei - e0)/R        | e ~ log(ei)            | graded null curve      | e = -1/alpha *          | e = (1+R) ei          |
+|                        | n decades              |                        |   (R1/R + 1/(sCp) +    | ib < 10^-11 A          |
+|                        |                        |                        |    s R2 C) ei           | inoise < 10^-13 A     |
+
++======================================================================================+
+| For information on any of the circuits shown here consult PHILBRICK                  |
+| or their representative nearest to you.                          864B10 Printed USA  |
++======================================================================================+
+
+FUNDAMENTALS (1964 analog-computing language)
+  Ideal op-amp:  Av -> infinity,  Zin -> infinity,  Zout -> 0,  virtual ground at (-) input
+  Closed-loop behavior set by feedback network, not the amplifier itself
+  e  = output voltage          ei, e1..e4 = input voltages
+  i  = current                 Q  = charge
+  R, Rf, C = passive elements  p  = Laplace operator (s)
+  alpha, n, k = scale / ratio factors
+  Typical models referenced: P2A, SP2A, P45, P55A (solid-state modular op-amps)
+
++====================================================================================+
+| PHILBRICK 1964  --  OP-AMP APPLICATION EQUATIONS                                   |
+| Typical Operational Amplifier Applications                                         |
+| for Modelling, Measuring, Manipulating & Much Else          August 1964            |
++====================================================================================+
+| NOTATION / VARIABLES                                                               |
+|   e          output voltage                                                        |
+|   ei, e1..e4 input voltages                                                        |
+|   i          current           Q, dQ   charge                                      |
+|   R, Rf, C   resistance, feedback R, capacitance                                   |
+|   Z          impedance         p       Laplace operator (= s)                      |
+|   alpha, n, k dimensionless ratios / scale factors                                 |
+|   E, E0, VR  reference / excitation voltages                                       |
+|   ib         input bias current                                                    |
++------------------------------------------------------------------------------------+
+| FUNDAMENTALS (ideal op-amp, 1964 analog-computing language)                        |
+|   Av -> infinity     Zin -> infinity     Zout -> 0                                 |
+|   Virtual ground at inverting input                                                |
+|   Closed-loop transfer function set by the feedback network, not the amp itself    |
+|   p = d/dt  (Laplace)                                                              |
++====================================================================================+
+| CIRCUIT TYPE                         TRANSFER EQUATION                             |
++--------------------------------------+---------------------------------------------+
+| Precision variable voltage source    | e = -VR * (R2 / R1)                         |
+| Bridge amp (active / ultralinear)    | e = - (1/2) * alpha * E0                    |
+| Bridge amp (floating supply)         | e = (1+n) * alpha * E / 2                   |
+| Bridge amp (one end grounded)        | e = (n/2)*(1/(1+n))*(1-alpha)*E             |
+| Bridge amp (mid-point grounded)      | e = (n * alpha / 4) * E                     |
+| Charge amplifier                     | e = - dQ / C                                |
+| Precise wide-band squarer            | e = ei^2                                    |
+| Adding / subtractor                  | e = (Rf/R) * (e1 + e2 - e3 - e4)            |
+| Current-to-voltage transresistor     | e = i * R           (ib < 1e-11 A)          |
+| Precision AC-DC converter            | e ~ |ei|                                    |
+| Precision FW rectifier-filter        | e = n * |ei| / (1 + R C p)                  |
+| Stable integrator                    | e = - (1/RC) * INT ei dt                    |
+|                                      |   = - ei / (R C p)                          |
+| Follower (electrometer)              | e = ei              (ib < 1e-12 A)          |
+| Precision oscillator                 | omega = 1/RC                                |
+|                                      | e = E0 * sin(omega t)                       |
+| Stable low-noise differentiator      | e = - R C p * ei                            |
+| Impedance scaler                     | Zout = ((1+k)/k) * Zin                      |
+| Variable controlled current source   | i = (ei - e0) / R                           |
+| Precise wide-range logarithm         | e  proportional to  log(ei)   (n decades)   |
+| 3-term PID controller                | e = -(1/alpha)*[R1/R + 1/(sCp) + s R2 C]*ei |
+| Follower with gain (electrometer)    | e = (1+R) * ei      (ib < 1e-11 A)          |
+| Negative impedance                   | Zin = -R            (S.C. stable)           |
++====================================================================================+
+| Models referenced on original sheet: P2A, SP2A, P45, P55A                          |
+| For circuit details consult Philbrick or nearest representative.                   |
+| 864B10  Printed in U.S.A.                                                          |
++====================================================================================+
