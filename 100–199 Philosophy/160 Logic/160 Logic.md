@@ -1,4 +1,5 @@
 # Logic
+160 Logic
 
 Logic is the systematic study of principles of valid reasoning and argumentation, forming the foundation for critical thinking, mathematics, and computer science.
 
