@@ -1,0 +1,48 @@
+PERIODIC TABLE DIRECTIONAL TRENDS
+Fundamentals: Z_eff (effective nuclear charge) ↑ left→right
+              n (principal shell) ↑ down a group
+Variables:    Z (atomic number), r (atomic radius),
+              χ (electronegativity), IE (ionisation energy),
+              OS (oxidation state)
+
+┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
+│ ELECTRONEGATIVITY (χ)       │ MASS & Z                    │ ELECTROPOSITIVITY           │
+│                             │                             │                             │
+│  F strongest                │  Z and mass generally       │  Cs/Fr lose e⁻ easiest      │
+│  ↑                          │  ↑                          │  ↓                          │
+│  ←─────────────→            │  ←─────────────→            │  ←─────────────→            │
+│  increases L→R              │  increases L→R              │  decreases L→R              │
+│  decreases down group       │  increases down group       │  increases down group       │
+└─────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
+
+┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
+│ OXIDATION STATES (OS)       │ ATOMIC RADIUS (r)           │ ELEMENTAL HYDRIDES          │
+│                             │                             │                             │
+│  valence e⁻ config          │  ••••                       │  Ionic   Metallic  Covalent │
+│  common OS shown            │  •••••                      │  (left)  (middle)  (right)  │
+│  e.g. C: +4,+2,-4           │  ••••••                     │                             │
+│  transition metals          │  •••••••                    │         Hydride Gap         │
+│  variable OS                │  ↓ r ↑ down group           │                             │
+│                             │  r ↓ L→R (Z_eff ↑)          │                             │
+└─────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
+
+┌─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
+│ METALLIC PROPERTIES         │ ORGANIC CHEMISTRY           │ 1st IONISATION ENERGY (IE)  │
+│                             │                             │                             │
+│  metals (left/bottom)       │  C H O N  (most common)     │  He/F highest               │
+│  nonmetals (right/top)      │  less common: S,P,halogens  │  ↑                          │
+│  metalloids (diagonal)      │                             │  ←─────────────→            │
+│  metallic character         │                             │  increases L→R              │
+│  ↑ down group, ↓ L→R        │                             │  increases up a group       │
+└─────────────────────────────┴─────────────────────────────┴─────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ INORGANIC CHEMISTRY                                                                     │
+│ Every element is special. Covers all elements + compounds outside C-H-O-N framework.    │
+│ Types: metals, nonmetals, metalloids, ionic/covalent/metallic compounds, hydrides,      │
+│        oxides, coordination complexes, etc.                                             │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+Core reason behind the arrows:
+Across a period  → nucleus gains protons (Z ↑) while n stays same → Z_eff ↑ → electrons held tighter
+Down a group     → new electron shell added (n ↑) → size ↑, outer e⁻ farther from nucleus
