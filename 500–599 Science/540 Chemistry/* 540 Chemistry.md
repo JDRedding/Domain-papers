@@ -61,7 +61,7 @@ $$
 
 - $P$: pressure  
 - $V$: volume  
-- $R$: gas constant ($8.314$ J mol $^{-1}$ K$^{-1}$ or $0.08206$ L atm mol $^{-1}$ K$^{-1}$)  
+- $R$: gas constant ($8.314$ J mol $^{-1}$ K $^{-1}$ or $0.08206$ L atm mol $^{-1}$ K $^{-1}$)  
 - $T$: absolute temperature (K)
 
 Combined / general gas law (constant $n$):
