@@ -1,0 +1,22 @@
+# Pan-Fried Fish
+
+**Makes:** 2 servings
+
+## Ingredients
+
+- 3/4 pound small dressed fish, fresh or frozen  
+- 1/4 cup flour or cornmeal  
+- 1/2 teaspoon salt  
+- 1 tablespoon fat or oil  
+
+## Directions
+
+1. Thaw frozen fish.  
+2. Clean, wash, and drain fish. Set aside.  
+3. Mix flour or cornmeal and salt.  
+4. Dip fish in the flour or cornmeal mixture.  
+5. Heat fat or oil in a fry pan.  
+6. Fry fish over medium heat about 5 minutes until browned on one side.  
+7. Turn gently and add a little more fat or oil if needed.  
+8. Fry about 5 minutes longer until browned on the other side and the fish flakes easily when tested with a fork.  
+9. Drain well.
