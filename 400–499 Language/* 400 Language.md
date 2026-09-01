@@ -1,7 +1,7 @@
 # Language
 - 400 Language
 
-Language is a structured system of communication used by humans to convey ideas, emotions, and information, encompassing spoken, written, and signed forms.
+Language is a structured system of communication used by humans to convey ideas, emotions, and information, encompassing spoken, written, and signed forms. Language is a dynamic and multifaceted system that not only allows humans to communicate but also shapes thought, culture, and society, making it one of the most important tools in human life.
 
 ## Definition and Function
 
@@ -36,7 +36,3 @@ Language is central to culture and identity, reflecting traditions, history, and
 ## Language Evolution
 
 Languages evolve over time due to migration, cultural exchange, technological change, and other social factors. Dialects, slang, and new words continuously emerge, demonstrating the adaptability and expansiveness of human communication.
-
-## Summary
-
-Language is a dynamic and multifaceted system that not only allows humans to communicate but also shapes thought, culture, and society, making it one of the most important tools in human life.
