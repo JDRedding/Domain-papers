@@ -228,7 +228,7 @@ E = E^\circ - \frac{0.0591}{n}\log_{10} Q
 $$
 
 - $n$: number of electrons transferred  
-- $F$: Faraday constant $\approx 96485$ C mol$^{-1}$
+- $F$: Faraday constant $\approx 96485$ C mol $^{-1}$
 
 ### 8. Atomic structure and quantum chemistry
 Photon energy:
