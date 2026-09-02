@@ -288,6 +288,27 @@ $$
 
 captures the phenomenon: as capability grows, human-explainability collapses.
 
+### Normalization
+A dimensionless explanatory capacity:
+
+$$
+\boxed{
+\ell(t)=\frac{L_{\rm human}(t)}{L_{\rm req}(t)}
+}
+$$
+
+or, define \(L\) directly as **iteration-equivalent explanatory bandwidth**.
+
+Then:
+
+$$
+\boxed{
+\mathcal S(t)=\frac{v(t)}{L(t)}
+}
+$$
+
+is dimensionless.
+
 ## Iteration Transition Law
 
 This makes the system piecewise-smooth but globally continuous. Transitions between iterations can be defined as threshold crossings:
