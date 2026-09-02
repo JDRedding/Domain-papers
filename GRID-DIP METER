@@ -1,0 +1,56 @@
+GRID-DIP METER WITH 6E5 "PEEPHOLE" (MAGIC-EYE) INDICATOR
+Source: Radio-Electronics, March 1960 (classic ham-radio GDO)
+
+TUBE TYPES
+  V1  6C4     miniature RF triode (oscillator)
+  V2  6E5     electron-ray / magic-eye tube (visual indicator)
+
+POWER
+  T   117 V AC  →  125 V @ 15 mA  +  6.3 V @ 600 mA heaters
+  RECT  selenium 130 V / 20 mA
+  C3   16 µF + 16 µF  150 V electrolytic
+  R3   47 Ω
+  R4   2.2 kΩ / 1 W
+
+OSCILLATOR (tickler / Hartley-style plug-in coils)
+                  L1-a (plate winding)
+  +130 V ──┬── L1-a ── plate (pin 5) of 6C4
+           │
+           └── C1 (variable, matches coil set)
+                  │
+                  └── L1-b (grid / tickler winding)
+                           │
+                           C2 500 pF
+                           │
+                      grid (pin 6) of 6C4
+                           │
+                      R1 22 kΩ
+                           │
+                          GND
+  cathode (pin 7) of 6C4 ── GND
+
+INDICATOR
+  6C4 grid ── R2 100 kΩ ── grid (pin 3) of 6E5
+  6E5 target / plate (pin 4) ── +130 V via R5 1 MΩ
+  6E5 cathode (pin 5) ── GND
+  6E5 heater (pins 2+7) ── 6.3 V
+
+FUNDAMENTALS
+  • 6C4 runs as class-C RF oscillator. Grid leak produces negative DC bias
+    proportional to oscillation amplitude.
+  • When an external resonant circuit is loosely coupled to L1, it absorbs
+    energy at resonance → oscillation amplitude drops → grid voltage of 6C4
+    becomes less negative.
+  • That change is applied to the 6E5 control grid, shrinking the dark
+    “shadow angle” of the glowing green eye (the “peephole”).
+  • Loose coupling is essential; too-tight coupling broadens the dip and
+    ruins accuracy.
+  • Plug-in coils set the frequency range; C1 is the main tuning control.
+
+TRANSISTOR VARIANT (also shown in the original post)
+  Colpitts / Hartley with BF495
+  Lx + variable C form the tank
+  1N34 germanium diode + 0-50 µA meter detect RF amplitude
+  9 V battery, 47 kΩ pot for sensitivity
+  Same principle: resonance of external circuit loads the oscillator
+  and the meter reading dips.
