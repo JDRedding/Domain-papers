@@ -63,7 +63,7 @@ $$
 C_I \;=\; C_0 \cdot \Phi(I)
 $$
 
-where $\Phi is strictly increasing and convex for $I \ge 5.0$.
+where $\Phi$ is strictly increasing and convex for $I \ge 5.0$.
 
 **Stage-wise relations**
 
@@ -79,7 +79,7 @@ $$
 \frac{dC}{dt} \;=\; \lambda_{\text{gen}} \, C \sum_{d} T_{d}
 $$
 
-where $T_d is transfer efficiency into domain $d$.
+where $T_d$ is transfer efficiency into domain $d$.
 
 3.0 Embedded — infrastructure feedback
 
@@ -95,7 +95,7 @@ $$
 \frac{dC}{dt} \;=\; \lambda_{\text{coop}} \, C \cdot A(t) \cdot H(t)
 $$
 
-where $H(t) is human contribution and $A(t) \in [0,1]$ is alignment.
+where $H(t)$ is human contribution and $A(t) \in [0,1]$ is alignment.
 
 5.0 Exponential — recursive self-improvement
 
