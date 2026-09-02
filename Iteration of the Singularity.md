@@ -114,13 +114,13 @@ where $\Phi$ is strictly increasing and convex for $I \ge 5.0$.
 
 **Stage-wise relations**
 
-1.0 Narrow — isolated compounding
+### 1.0 Narrow — isolated compounding
 
 $$
 \frac{dC}{dt} \;=\; \lambda_{\text{narrow}} \, C \cdot \mathbf{1}_{\text{domain}}
 $$
 
-2.0 General — transfer across domains
+### 2.0 General — transfer across domains
 
 $$
 \frac{dC}{dt} \;=\; \lambda_{\text{gen}} \, C \sum_{d} T_{d}
@@ -128,7 +128,7 @@ $$
 
 where $T_d$ is transfer efficiency into domain $d$.
 
-3.0 Embedded — infrastructure feedback
+### 3.0 Embedded — infrastructure feedback
 
 $$
 \frac{dC}{dt} \;=\; \lambda_{\text{emb}} \, C \cdot F(t),
@@ -136,7 +136,7 @@ $$
 F(t) \;=\; 1 + \kappa \int_{0}^{t} C(s)\, ds
 $$
 
-4.0 Cooperative — human–AI synergy
+### 4.0 Cooperative — human–AI synergy
 
 $$
 \frac{dC}{dt} \;=\; \lambda_{\text{coop}} \, C \cdot A(t) \cdot H(t)
@@ -144,7 +144,7 @@ $$
 
 where $H(t)$ is human contribution and $A(t) \in [0,1]$ is alignment.
 
-5.0 Exponential — recursive self-improvement
+### 5.0 Exponential — recursive self-improvement
 
 $$
 C(t+\Delta t) \;=\; f\bigl(C(t)\bigr),
@@ -159,7 +159,7 @@ $$
 \qquad \alpha > 0
 $$
 
-6.0 Superintelligence — beyond human comprehension
+### 6.0 Superintelligence — beyond human comprehension
 
 $$
 C(t) \;\gg\; C_{\text{human}},
@@ -174,7 +174,7 @@ $$
 \qquad \sum_i w_i = 1
 $$
 
-7.0 Singularity (unnamed)
+### 7.0 Singularity (unnamed)
 
 $$
 I \to \star,
