@@ -47,10 +47,12 @@ FUNDAMENTALS
     ruins accuracy.
   • Plug-in coils set the frequency range; C1 is the main tuning control.
 
-TRANSISTOR VARIANT (also shown in the original post)
+TRANSISTOR VARIANT 
   Colpitts / Hartley with BF495
   Lx + variable C form the tank
   1N34 germanium diode + 0-50 µA meter detect RF amplitude
   9 V battery, 47 kΩ pot for sensitivity
   Same principle: resonance of external circuit loads the oscillator
   and the meter reading dips.
+
+https://x.com/py6cj/status/2094886811856154729
