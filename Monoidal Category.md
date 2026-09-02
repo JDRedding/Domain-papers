@@ -88,3 +88,102 @@ A **strict monoidal category** is the special case where $\alpha$, $\lambda$, an
 - **Computer science:** Type systems, process calculi, compositional models.
 - **Homotopy theory:** Monoidal model categories structure homotopical objects compatibly with tensor operations.
 
+###  Cobordism Categories
+Objects, Morphisms, and Composition
+
+In the context of monoidal categories and cobordism categories, the terminology “objects are boundary states, morphisms are cobordisms, and composition is sequential execution” can be unpacked using principles from category theory and topology. This framework is foundational in Topological Quantum Field Theory (TQFT) and higher category theory. This categorical-linguistic viewpoint makes cobordisms a precise mathematical proxy for processes and their composition, bridging topology, algebra, and physics.
+
+- Objects are “snapshots” of space or states.
+- Morphisms are “spacetime histories” connecting snapshots.
+- Composition is “doing one history after another.”
+- Monoidal structure encodes simultaneous systems/processes.
+
+#### 1. Objects as Boundary States
+
+Objects in a category abstractly represent entities that can have transformations applied to them.
+
+In the cobordism category $\mathbf{Cob}_{n}$ (for $n$-dimensional manifolds):
+
+- An object is a closed $n$-dimensional manifold $M$, often interpreted as a “boundary state” in physics.
+- Intuition from TQFT: the object corresponds to the state space of a quantum system at a particular “time” (or along a hypersurface). For example, a circle $S^{1}$ can represent a loop of quantum information or a spatial boundary.
+
+Formally:
+
+$$
+\mathrm{Ob}(\mathbf{Cob}_{n}) = \{\text{closed oriented } n\text{-manifolds}\}.
+$$
+
+#### 2. Morphisms as Cobordisms
+
+Morphisms in a category are structure-preserving maps between objects.
+
+In the cobordism category, a morphism between two closed $n$-manifolds $M_{0}$ and $M_{1}$ is an $(n+1)$-dimensional cobordism $W$:
+
+$$
+W : M_{0} \longrightarrow M_{1},
+\qquad
+\partial W = M_{0} \sqcup M_{1}.
+$$
+
+- **Geometrically:** $W$ “interpolates” between its boundary manifolds, like a 2D surface connecting two circles or a 3D manifold connecting two 2D surfaces.
+- **Physically / TQFT-wise:** the cobordism represents evolution or a process that takes the system from the boundary state $M_{0}$ to $M_{1}$.
+
+Diagrammatically:
+
+$$
+M_{0} \xrightarrow{W} M_{1}.
+$$
+
+#### 3. Composition as Sequential Execution
+
+Composition of morphisms in a category is associative and obeys an identity law.
+
+In cobordism categories: if $W_{1} : M_{0} \to M_{1}$ and $W_{2} : M_{1} \to M_{2}$ are cobordisms, then their composition is defined by gluing them along the matching boundary $M_{1}$:
+
+$$
+W_{2} \circ W_{1} := W_{1} \cup_{M_{1}} W_{2} : M_{0} \to M_{2}.
+$$
+
+Conceptual interpretation: this is sequential execution of processes, where one process ($W_{1}$) occurs first, followed by the next ($W_{2}$).
+
+**Properties:**
+
+- **Associativity:** $(W_{3} \circ W_{2}) \circ W_{1} = W_{3} \circ (W_{2} \circ W_{1})$.
+- **Identity morphism:** the cylinder $M \times [0,1]$ acts as the identity morphism on $M$, representing no evolution.
+
+#### 4. Monoidal Structure
+
+Many cobordism categories admit a monoidal structure via disjoint union:
+
+$$
+M \otimes N := M \sqcup N,
+\qquad
+W_{1} \otimes W_{2} := W_{1} \sqcup W_{2}.
+$$
+
+- **Physically:** this describes parallel composition of independent processes or systems.
+- Symmetric monoidal categories allow for exchange of objects: $M \otimes N \cong N \otimes M$.
+
+#### 5.  Summary
+
+| Category theory | Cobordism category | Physical / TQFT interpretation |
+|-----------------|--------------------|--------------------------------|
+| Object | Closed $n$-manifold $M$ | Boundary state / instant of configuration |
+| Morphism | Cobordism $W : M_{0} \to M_{1}$ | Evolution / process taking $M_{0}$ to $M_{1}$ |
+| Composition | Gluing cobordisms along a shared boundary | Sequential execution of processes |
+| Monoidal product | Disjoint union $M_{0} \sqcup M_{1}$ | Parallel independent processes |
+
+
+This abstraction underlies functorial TQFTs, where a symmetric monoidal functor $Z : \mathbf{Cob}_{n} \to \mathbf{Vect}$ assigns:
+
+- objects $M \mapsto$ vector spaces $Z(M)$,
+- morphisms $W \mapsto$ linear maps $Z(W)$,
+
+preserving composition and monoidal structure.
+
+## References
+
+- Galatius, Madsen, Tillmann, Weiss, *The homotopy type of the cobordism category* (2009)
+- Baez and Dolan, *Higher-Dimensional Algebra and TQFT*
+- Romö, *Towards Algebraic $n$-Categories of Manifolds and Cobordisms* (2024)
+- nLab: Cobordism Category
