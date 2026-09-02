@@ -88,7 +88,7 @@ in **Cooperative AI**, but already looping into **5.0 Exponential AI**.
 | $\gamma$ | Timeline-compression exponent |
 | $\star$ | Unnamed terminal state (iteration 7.0 / singularity) |
 
-**Core definitions**
+## **Core definitions**
 
 Iteration speed:
 
