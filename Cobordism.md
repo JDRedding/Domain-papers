@@ -1,0 +1,71 @@
+# Cobordism
+
+Cobordism generalizes the concept of manifold boundaries to classify manifolds via equivalence under higher-dimensional “thickening.” Its algebraic structure, deep connections to stable homotopy theory, and applications in modern mathematical physics make it one of the central notions in geometric topology. Current work includes cobordism classes of manifolds with higher structures (string, fivebrane) and connections to quantum field theories and stable homotopy theory.
+
+## 1. Definition and Conceptual Framework
+
+In topology, cobordism is a fundamental concept in differential and algebraic topology that formalizes the idea of two manifolds being “boundaries” of a higher-dimensional manifold. Formally:
+
+Let $M$ and $N$ be $n$-dimensional smooth, closed manifolds (compact without boundary). We say that $M$ and $N$ are **cobordant** if there exists a compact $(n+1)$-dimensional manifold $W$ such that
+
+$$
+\partial W = M \sqcup N
+$$
+
+where $\partial W$ denotes the boundary of $W$ and $\sqcup$ denotes the disjoint union. In this setting, $W$ is called a **cobordism** between $M$ and $N$.
+
+Intuitively, $M$ can be continuously transformed into $N$ through a “thickening” by one dimension, forming the boundary of a higher-dimensional manifold.
+
+## 2. Types of Cobordism
+
+Cobordism can be refined based on additional structure:
+
+- **Oriented cobordism:** If $M$, $N$, and $W$ are oriented manifolds and the orientations match appropriately on the boundary, we obtain oriented cobordism classes.
+- **Stably framed cobordism:** Manifolds have trivializable stable tangent bundles, relating cobordism to stable homotopy theory.
+- **Complex cobordism:** For manifolds with a complex structure on their tangent bundles. Fundamental in homotopy theory and complex-oriented cohomology theories.
+- **Spin, string, and other structured cobordism:** Cobordism with further topological structures compatible with additional geometric data (such as a spin structure).
+
+## 3. Cobordism Groups
+
+Cobordism classes form abelian groups under disjoint union:
+
+$$
+[M] + [N] := [M \sqcup N].
+$$
+
+The zero element is given by the class of boundaries of some $(n+1)$-dimensional manifold. These groups are denoted
+
+$$
+\Omega_{n},\qquad
+\Omega_{n}^{\mathrm{oriented}},\qquad
+\Omega_{n}^{\mathrm{complex}},\qquad \ldots
+$$
+
+Important results include:
+
+- René Thom’s work (1954) providing a classification of cobordism groups using Thom spaces and algebraic topology.
+- The Thom spectrum formalism, connecting cobordism to generalized homology theories:
+
+$$
+MU_{\ast}\quad\text{(complex cobordism)},
+\qquad
+MSO_{\ast}\quad\text{(oriented cobordism)}.
+$$
+
+## 4. Examples
+
+- **Zero cobordism:** If $M = \partial W$ for some manifold $W$, then $M$ is cobordant to the empty set.
+- **Spheres:** Any odd-dimensional sphere bounds an even-dimensional ball, making certain spheres null-cobordant in oriented cobordism.
+- **Intersection with homotopy theory:** Cobordism classes relate closely to stable homotopy groups of spheres via the Pontryagin–Thom construction.
+
+## 5. Applications
+
+- **Algebraic topology:** Cobordism provides a classification of manifolds up to boundary transformations. Thom’s theorem allows computation of cobordism rings algebraically.
+- **Physics:** In topological quantum field theory (TQFT), cobordism formalizes the idea of transitions between spatial geometries across time.
+- **Differential geometry:** Cobordism constrains possible differentiable structures on manifolds and links to index theorems, e.g., the Atiyah–Singer index theorem.
+
+## 6. Key References and Current Research
+
+- Thom, *Some properties of manifolds*, *Annals of Mathematics*, 1954.
+- Milnor, *Topology from the Differentiable Viewpoint*, 1965.
+- Ando, Hopkins, Strickland, *Elliptic spectra, the Witten genus, and the theorem of the cube*, *Inventiones Mathematicae*.
