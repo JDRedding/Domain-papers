@@ -20,7 +20,7 @@ $$
 | $\mathbf{k}$ | wave vector | rad/m |
 | $\omega$ | angular frequency | rad/s |
 | $\hat{\mathbf{k}}$ | unit vector in direction of travel | — |
-| Eᵢ, Bᵢ | amplitude vectors | V/m, T |
+| E₀, B₀ | amplitude vectors | V/m, T |
 | $\phi$ | phase constant | rad |
 | $\varepsilon_{0}$ | vacuum permittivity | $8.854 \times 10^{-12}\,\mathrm{F/m}$ |
 | $\mu_{0}$ | vacuum permeability | $4\pi \times 10^{-7}\,\mathrm{H/m}$ |
