@@ -421,7 +421,7 @@ $$
 \tau_I \propto I^{-\gamma}
 $$
 
-## Singularity as a Phase Transition
+## Appendix: Singularity as a Phase Transition
 
 This is a **finite-time singularity** in the dynamical-systems sense. It is not a calendar event. It is a **loss of human-explainability**. The definition:
 
