@@ -1,0 +1,46 @@
+# 1985 XTree
+
+- **Path** — current working directory string (`\`). Root of the logged drive.
+- **Directory tree** — hierarchical listing of folders (`SITES` → `XTREE`). Visual parent/child structure, not a flat `DIR`.
+- **File list** — 8.3 names (`DEALINS.COM`, `XTREE.EXE`). Name + extension stored separately in the FAT directory entry.
+- **FILE: *.*** — filespec / wildcard filter. `*` matches any name or extension.
+- **DISK** — logged volume (`C:`). Drive letter + volume label.
+- **Available Bytes** — free space on the current drive (shown as `#` placeholders in the original screenshot).
+- **DISK Statistics**
+  - Total Files / Bytes — every file on the logged disk.
+  - Matching Files / Bytes — files that match the current filespec.
+  - Tagged Files / Bytes — files the user has marked with `T` for batch operations.
+  - Current Directory Bytes — size of files in the highlighted folder only.
+- **Command line** — single-letter / function-key verbs (`D`elete, `F`ilespec, `L`og disk, `M`akedir, `P`rint, `R`ename, `X`ecute, `^T`ag, `^U`ntag).
+- **Navigation** — arrow keys move the highlight; `RETURN` opens the file-command menu; `ALT` opens the pull-down; `F1`/`F2` are help/quit.
+
+This is the classic character-mode tree + dual-pane stats layout that XTree pioneered before Windows Explorer existed.
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║ Path: \                                                              ║
+╠═══════════════════════════════════════════════╦══════════════════════╣
+║                                               ║ FILE: *.*            ║
+║  \SITES                                       ║ DISK: C: C DRIVE     ║
+║     XTREE                                     ║ Available            ║
+║                                               ║ Bytes: ##########    ║
+║ DEALINS .COM                                  ╠══════════════════════╣
+║ INSTALL .TXT                                  ║ DISK Statistics      ║
+║ READ    .ME                                   ║ Total                ║
+║ XTREE   .EXE                                  ║   Files:         11  ║
+║ XTREEINS.DAT                                  ║   Bytes:    139,275  ║
+║ XTREEINS.EXE                                  ║ Matching             ║
+║                                               ║   Files:         11  ║
+║                                               ║   Bytes:    139,275  ║
+║                                               ║ Tagged               ║
+║                                               ║   Files:          0  ║
+║                                               ║   Bytes:          0  ║
+║                                               ║ Current Directory    ║
+║                                               ║   \                  ║
+║                                               ║   Bytes:    120,587  ║
+╠═══════════════════════════════════════════════╩══════════════════════╣
+║ DIR Available Delete Filespec Log disk Makedir Print Rename          ║
+║ COMMANDS ^Showall ^Tag ^Untag Volume eXecute                         ║
+║ ↑↓ scroll  RETURN file commands  ALT menu  F1 quit  F2 help          ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
