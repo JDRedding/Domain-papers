@@ -56,6 +56,22 @@ This is the mathematically minimal form of the model.
 
 ## Where is Now
 
+```text
+CAPABILITY / ITERATION SPACE
+
+1.0        2.0        3.0        4.0        5.0        6.0       7.0
+ |----------|----------|----------|----------|----------|----------|
+        thresholds C_k
+                                      ^
+                                      |
+                                 current state?
+                                      ~
+                                   4.0 -> ?
+                                      |
+                                 LOOP / overlap
+```
+
+
 Given the definitions:
 
 - $C(t)$ is clearly $> C_{3.0}$
@@ -500,4 +516,36 @@ Or, nonconvergent:
 
 $$
 \Psi^n(x_0)
+$$
+
+
+## **Singularity Ratio**
+**Iteration–Bandwidth Ratio**
+
+$$
+\boxed{\mathcal S(t) = \frac{\beta C(t)F(t)A(t)} {L(t)}
+}
+$$
+
+```text
+S < 1       human explanatory regime
+S = 1       critical surface
+S > 1       post-bandwidth regime
+S >> 1      runaway / decoupling regime
+```
+
+$$
+\boxed{\mathcal S(t)=\frac{\beta C(t)F(t)A(t)}{L_0(1+C(t)/C_h)^{-\delta}}}
+$$
+
+with,
+
+$$
+\boxed{\dot C=\lambda_I C^{1+\alpha_I}}
+$$
+
+and,
+
+$$
+\boxed{\dot I=\beta CFA}
 $$
