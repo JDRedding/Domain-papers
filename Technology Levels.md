@@ -22,7 +22,8 @@ Understanding technology levels is useful for:
 
 Technology levels categorize the advancement of societies or systems based on their scientific knowledge, energy use, and capability to manipulate their environment.
 
-### Historical and Anthropological Technology Levels
+### Historical Levels 
+***Anthropological Technology Levels***
 
 Historically, human technologies are often categorized into eras that reflect dominant tools and energy sources:
 
@@ -32,7 +33,7 @@ Historically, human technologies are often categorized into eras that reflect do
 
 These levels give a framework to understand human social and technological development from early societies through the pre-industrial era.
 
-### Industrial and Modern Technology Levels
+#### Industrial and Modern Technology Levels
 
 Modern frameworks categorize technology based on energy use, industrialization, and scientific capacity:
 
@@ -40,7 +41,7 @@ Modern frameworks categorize technology based on energy use, industrialization, 
 - **Industrial Level:** Steam engine, mechanized production, widespread use of coal and later electricity, urbanization, and mass manufacturing.  
 - **Post-Industrial Level:** Digital technology, advanced electronics, computing, telecommunications, and service-oriented economies.  
 
-### Energy-Based Technology Levels — The Kardashev Scale
+#### Energy-Based Technology Levels — The Kardashev Scale
 
 One of the more comprehensive methods to classify technology is the Kardashev Scale, which assesses civilizations by energy-harnessing capacity:
 
