@@ -18,7 +18,7 @@ $$
 ## The Full Evolution Law 
 ***Relational-Compatible***
 
-The single-equation version of the framework:
+The **minimal coupled system** version of the framework:
 
 $$
 \frac{dI}{dt} = \beta\,C(t)\,F(t)\,A(t)
@@ -71,6 +71,37 @@ $$
 $$
 
 in **Cooperative AI**, but already looping into **5.0 Exponential AI**.
+
+## Future iterations
+
+$$
+\boxed{\text{idealized runaway regime}}
+$$
+
+For
+
+$$
+\dot C=\lambda C^{1+\alpha},
+\qquad \alpha>0,
+$$
+
+Obtain,
+
+$$
+C(t)= \left[ C_0^{-\alpha}-\alpha\lambda t \right]^{-1/\alpha}
+$$
+
+with
+
+$$
+t_{\rm crit} = \frac{C_0^{-\alpha}} {\alpha\lambda}.
+$$
+
+So:
+
+$$
+t\to t_{\rm crit}^{-} \quad\Rightarrow\quad C\to\infty.
+$$
 
 ## **Notation**
 
@@ -297,7 +328,7 @@ $$
 }
 $$
 
-or, define \(L\) directly as **iteration-equivalent explanatory bandwidth**.
+or, define $L$ directly as **iteration-equivalent explanatory bandwidth**.
 
 Then:
 
@@ -394,4 +425,79 @@ Thus
 
 $$
 \frac{dI}{dt} \to \infty
+$$
+
+## Different regimes
+### Threshold Singularity
+
+$$
+\boxed{
+\exists t_\star:
+\mathcal S(t_\star)>1
+}
+$$
+
+### Persistent Singularity
+
+$$
+\boxed{
+\exists t_\star:
+\mathcal S(t)>1
+\quad\forall t>t_\star
+}
+$$
+
+### Dynamical Blow-Up
+
+$$
+\boxed{
+\lim_{t\to t_\star}C(t)=\infty
+}
+$$
+
+## Loop attractors
+
+$$
+\Psi^n(\text{state})\to\star
+$$
+
+as a more general dynamical statement.
+
+Define:
+
+$$
+x(t)=
+(I,C,F,A,L,\ldots)
+$$
+
+and
+
+$$
+x_{t+1}=\Psi(x_t).
+$$
+
+Then asymptotic behaviors include:
+
+Fixed point: 
+
+$$
+\Psi^n(x_0)\to x^\*
+$$
+
+Or, attractor: 
+
+$$
+\Psi^n(x_0)\to\mathcal A
+$$
+
+Or, absorbing/terminal state:
+
+$$
+\Psi^n(x_0)\to\star
+$$
+
+Or, nonconvergent:
+
+$$
+\Psi^n(x_0)
 $$
