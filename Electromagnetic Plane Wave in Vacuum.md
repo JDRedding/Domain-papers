@@ -1,20 +1,39 @@
 # Electromagnetic Plane Wave in Vacuum
-**(SI units, source-free)**
+**🧩 (SI units, source-free)**
 
-Structure:
-    div(E) = 0
-    div(B) = 0
-    E ⟂ k
-    B ⟂ k
-    E ⟂ B
+## 📐 Geometry
 
-Interaction:
-    curl(E) = -∂t B
-    curl(B) = μ0 ε0 ∂t E
+```
+Propagation →  k̂
 
-Dynamics:
-    ∂tt E = c^2 ∇^2 E
-    ∂tt B = c^2 ∇^2 B
+E-field:      ↑
+              │
+              │   oscillates in a plane ⟂ k̂
+              ↓
+
+B-field:      ←→  oscillates in a plane ⟂ both k̂ and E
+
+Right-handed triad:
+    k̂ × Ê = B̂
+```
+
+Canonical transverse plane‑wave solution in vacuum. The relation  
+
+$$
+\mathbf{B}_0 = \frac{1}{c}\hat{\mathbf{k}}\times\mathbf{E}_0
+$$  
+
+is not just a Maxwell artifact—it is the **unique** way to satisfy:
+
+- divergence‑free fields  
+- curl‑coupling  
+- Lorentz invariance  
+- gauge constraints  
+- energy‑momentum conservation  
+
+All at once.
+
+If try to perturb this relation (e.g., add a longitudinal component), the system immediately violates one of the constraints unless matter is present. That’s why vacuum EM waves are *forced* to be transverse.
 
 ## Fundamentals
 
@@ -95,3 +114,98 @@ $$
 $$
 \omega = c\,|\mathbf{k}|
 $$
+
+---
+
+## **Takeaway**
+
+A vacuum plane wave is a **transverse, divergence‑free, two‑field oscillator** whose geometry is fully fixed by the triad  
+
+$$
+(\mathbf{E}_0,\mathbf{B}_0,\hat{\mathbf{k}})
+$$
+
+and whose dynamics are fixed by  
+
+$$
+\omega = c|\mathbf{k}|,\qquad \mathbf{B}_0=\frac{1}{c}\hat{\mathbf{k}}\times\mathbf{E}_0.
+$$
+
+---
+
+## 🧭 **Compatible Structural Map**
+This is the “pure transverse” sector: no longitudinal degrees of freedom survive because ρ = 0 and J = 0 eliminate the constraint channel.
+
+### **SID Layer (Structure–Interaction–Dynamics)**
+```
+Structure:
+    div(E) = 0
+    div(B) = 0
+    E ⟂ k
+    B ⟂ k
+    E ⟂ B
+
+Interaction:
+    curl(E) = -∂t B
+    curl(B) = μ0 ε0 ∂t E
+
+Dynamics:
+    ∂tt E = c^2 ∇^2 E
+    ∂tt B = c^2 ∇^2 B
+```
+
+## ⚙️ **PED Layer (Power–Evaluation–Dynamics)**
+
+### **Power**
+
+Energy density:
+
+$$
+u = \frac{1}{2}\left(\varepsilon_0 |\mathbf{E}|^2 + \frac{1}{\mu_0}|\mathbf{B}|^2\right)
+$$
+
+Poynting flux:
+
+$$
+\mathbf{S} = \frac{1}{\mu_0}\mathbf{E}\times\mathbf{B}
+$$
+
+For a plane wave:
+
+$$
+|\mathbf{B}| = \frac{|\mathbf{E}|}{c},\qquad \mathbf{S} = \frac{|\mathbf{E}|^2}{\mu_0 c}\hat{\mathbf{k}}.
+$$
+
+### **Evaluation**
+
+The wave is fully determined by:
+- **orientation triad** $(\mathbf{E}_0,\mathbf{B}_0,\hat{\mathbf{k}})$
+- **frequency–wavenumber pair** $(\omega,|\mathbf{k}|)$
+- **phase** $\phi$
+
+### **Dynamics**
+The fields evolve as:
+
+$$
+\mathbf{E} = \mathbf{E}_0\cos(\mathbf{k}\cdot\mathbf{r}-\omega t+\phi)
+$$
+
+$$
+\mathbf{B} = \frac{1}{c}\hat{\mathbf{k}}\times\mathbf{E}_0\cos(\mathbf{k}\cdot\mathbf{r}-\omega t+\phi)
+$$
+
+This is a **two‑component oscillator** with a fixed geometric relation.
+
+---
+
+## 🔗 **Q‑Slice (Mode Geometry)**
+
+The photon mode is transverse because the longitudinal component is not dynamical:
+
+```
+Q-mode:
+    Longitudinal: nondynamical (constraint)
+    Transverse:   radiative (2 polarizations)
+```
+
+Gauge freedom removes the scalar/longitudinal channel, leaving only the transverse oscillators.
