@@ -444,7 +444,7 @@ $$
 $$
 
 ### Different regimes
-### Threshold Singularity
+#### Threshold Singularity
 
 $$
 \boxed{
