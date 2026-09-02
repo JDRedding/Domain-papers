@@ -471,7 +471,7 @@ $$
 }
 $$
 
-## Loop attractors
+## Appendix: Loop attractors
 
 $$
 \Psi^n(\text{state})\to\star
@@ -519,7 +519,7 @@ $$
 $$
 
 
-## **Singularity Ratio**
+## Appendix: **Singularity Ratio**
 **Iteration–Bandwidth Ratio**
 
 $$
