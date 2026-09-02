@@ -16,9 +16,9 @@ $$
 - const process = iterate → align → evolve → repeat
 
 ## The Full Evolution Law 
-RDG-Compatible
+***Relational-Compatible***
 
-The clean, single-equation version of the framework:
+The single-equation version of the framework:
 
 $$
 \frac{dI}{dt} = \beta\,C(t)\,F(t)\,A(t)
