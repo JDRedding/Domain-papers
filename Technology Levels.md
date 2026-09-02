@@ -192,6 +192,6 @@ Tech level determines travel speed, map size, communication range, and survival 
 - TL4–6 → **Civilization triads**  
 - TL7–8 → **Information triads**  
 - TL9–10 → **Singularity triads**
-- Map TLs into TRUE roles  
+- Map TLs into roles  
 - Map TLs into geometry modes  
-- Map TLs into MFE flux engines
+- Map TLs into flux engines
