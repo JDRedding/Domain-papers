@@ -35,7 +35,7 @@ These data satisfy two coherence conditions.
 
 ### Pentagon Axiom (Associativity Coherence)
 
-For all \(A,B,C,D\in\mathcal{C}\), the following diagram commutes:
+For all $A,B,C,D\in\mathcal{C}$, the following diagram commutes:
 
 $$
 \begin{array}{ccc}
