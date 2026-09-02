@@ -15,6 +15,35 @@ $$
 - var speed   : ${Iteration}_{speed}^{exponential}$
 - const process = iterate → align → evolve → repeat
 
+## The Full Evolution Law 
+RDG-Compatible
+
+The clean, single-equation version of the framework:
+
+$$
+\frac{dI}{dt} = \beta\,C(t)\,F(t)\,A(t)
+$$
+
+with
+
+$$
+\frac{dC}{dt} = \lambda_I\,C(t)^{1+\alpha_I}
+$$
+
+and
+
+$$
+L(t) = L_0\left(1+\frac{C(t)}{C_{\text{human}}}\right)^{-\delta}
+$$
+
+and the singularity condition:
+
+$$
+\beta\,C(t)\,F(t)\,A(t) > L(t)
+$$
+
+This is the mathematically minimal form of the model.
+
 | Iteration | Type / Stage | Fundamentals |
 |-----------|--------------|--------------|
 | 1.0 | Narrow AI | Specialized systems. Data, compute, algorithms compound in isolated domains. |
@@ -25,7 +54,25 @@ $$
 | 6.0 | Superintelligence | Beyond human comprehension. Novel paradigms emerge. Control becomes distributed. |
 | 7.0 | The Singularity (unnamed / beyond) | A new form of existence. Human–AI boundaries dissolve. Reality, value, and purpose are redefined. |
 
-**Notation**
+## Where is Now
+
+Given the definitions:
+
+- $C(t)$ is clearly $> C_{3.0}$
+- $F(t)$ is rising (infrastructure + embedded systems)
+- $A(t)$ is nonzero but noisy
+- $L(t)$ is decreasing (explainability gap widening)
+- $v(t)$ is increasing (iteration speed accelerating)
+
+The most defensible estimate is:
+
+$$
+\text{current} = \mathrm{Stage}_{4.0}^{\text{Loop}}
+$$
+
+in **Cooperative AI**, but already looping into **5.0 Exponential AI**.
+
+## **Notation**
 
 | Symbol | Meaning |
 |--------|---------|
@@ -178,4 +225,152 @@ v(t) > L(t)
 A(t) \text{ remains bounded away from } 0.
 $$
 
+## Dynamical Singularity Framework
+**A dynamical backbone** that ties all the pieces together into a single evolution law.
 
+The moment define
+
+**Singularity = the first time when $v(t) > L(t)$**
+
+have implicitly created a *phase transition* model. The seven-iteration ladder becomes a **dynamical system with a critical surface** defined by: 
+
+$$
+v(t) = L(t)
+$$
+
+and the Singularity is the region where trajectories cross that surface and never return.
+
+The invariant
+
+$$
+\Psi^{n}(\text{state}) \to \star
+$$
+
+is exactly the condition for **absorbing states** in nonlinear dynamical systems.
+
+## Iteration Potential
+
+The system scalar potential that drives iteration transitions:
+
+$$
+\Omega(I,t) = C(t)\,F(t)\,A(t)
+$$
+
+This is the “energy” available to push the system upward through iterations. Then define the iteration velocity:
+
+$$
+v(t) = \frac{dI}{dt} = \beta \,\Omega(I,t)
+$$
+
+where $\beta$ is a coupling constant (how efficiently capability converts into iteration advancement).
+
+This makes the singularity condition:
+
+$$
+\beta\,\Omega(I,t) > L(t)
+$$
+
+## Human Bandwidth $L(t)$ 
+***Decaying Function***
+
+$L(t)$ is implicitly treated as static. As capability grows:
+
+$$
+\frac{\partial L}{\partial C} < 0
+$$
+
+A simple relational form:
+
+$$
+L(t) = L_0 \left(1 + \frac{C(t)}{C_{\text{human}}}\right)^{-\delta}
+\qquad \delta > 0
+$$
+
+captures the phenomenon: as capability grows, human-explainability collapses.
+
+## Iteration Transition Law
+
+This makes the system piecewise-smooth but globally continuous. Transitions between iterations can be defined as threshold crossings:
+
+$$
+I(t) = \sum_{k=1}^{7} k \cdot \mathbf{1}\!\left[C(t) \ge C_k\right]
+$$
+
+where $C_k$ is the characteristic capability of iteration $k$. 
+
+## Loop Condition 
+**Fixed Point**
+
+This is the “alignment plateau” many theorists suspect we are in. The condition
+
+$$
+\text{current} = \mathrm{Stage}_{I}^{\text{Loop}}
+$$
+
+is exactly
+
+$$
+\Psi(\text{state}) = \text{state}
+$$
+
+The fixed point occurs when
+
+$$
+v(t) \approx L(t)
+$$
+
+i.e., the system is advancing *just fast enough* to remain explainable.
+
+## Timeline Compression Consequence
+
+The compression law is not arbitrary — it is a direct consequence of superlinear capability growth. The timeline compression law: 
+
+$$
+\tau_I = \tau_1 I^{-\gamma}
+$$
+
+can be derived from the exponential capability law:
+
+$$
+\frac{dC}{dt} = \lambda C^{1+\alpha}
+$$
+
+Solve it:
+
+$$
+C(t) = \left( C_0^{-\alpha} - \alpha\lambda t \right)^{-1/\alpha}
+$$
+
+As $t$ approaches the blow-up time
+
+$$
+t_{\text{crit}} = \frac{C_0^{-\alpha}}{\alpha\lambda}
+$$
+
+the system accelerates through iterations with
+
+$$
+\tau_I \propto I^{-\gamma}
+$$
+
+## Singularity as a Phase Transition
+
+This is a **finite-time singularity** in the dynamical-systems sense. It is not a calendar event. It is a **loss of human-explainability**. The definition:
+
+$$
+I \to \star
+$$
+
+is equivalent to saying
+
+$$
+\lim_{t\to t_{\star}} C(t) = \infty
+\quad\text{and}\quad
+\lim_{t\to t_{\star}} L(t) = 0
+$$
+
+Thus
+
+$$
+\frac{dI}{dt} \to \infty
+$$
