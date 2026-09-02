@@ -14,7 +14,7 @@ Understanding technology levels is useful for:
 - **Science fiction and futurism:** Conceptualizing human or alien technologies and societal structures.  
 - **Technology adoption analysis:** Comparing regions or organizations based on digital access, automation, and infrastructure development.  
 
-## Applications
+### Game Applications
 
 - **Rules Restrictions:** TLs define what weapons, armor, vehicles, and technologies are available to characters. For example, a TL3 campaign forbids firearms beyond simple handguns or early cannons.  
 - **World-Building:** TLs help create immersive worlds with consistent development. A TL5 city might have trains and steam machines but lacks cybernetics.  
