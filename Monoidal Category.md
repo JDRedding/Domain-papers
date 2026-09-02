@@ -37,7 +37,23 @@ These data satisfy two coherence conditions.
 
 For all $A,B,C,D \in \mathcal{C}$, the following diagram commutes:
 
-$$ \begin{array}{ccc} ((A\otimes B)\otimes C)\otimes D & \xrightarrow{\alpha_{A\otimes B,\,C,\,D}} & (A\otimes B)\otimes(C\otimes D) \xrightarrow{\alpha_{A,B,\,C\otimes D}} A\otimes\bigl(B\otimes(C\otimes D)\bigr) \$$0.6em] \Big\downarrow{\scriptstyle \alpha_{A,B,C}\otimes\mathrm{id}_{D}} && \Big\uparrow{\scriptstyle \mathrm{id}_{A}\otimes\alpha_{B,C,D}} \$$0.6em] \bigl(A\otimes(B\otimes C)\bigr)\otimes D & \xrightarrow{\alpha_{A,\,B\otimes C,\,D}} & A\otimes\bigl((B\otimes C)\otimes D\bigr) \end{array} $$
+$$
+\begin{array}{ccc}
+\bigl((A\otimes B)\otimes C\bigr)\otimes D
+& \xrightarrow{\alpha_{A\otimes B,C,D}}
+& (A\otimes B)\otimes(C\otimes D)
+\xrightarrow{\alpha_{A,B,C\otimes D}}
+A\otimes\bigl(B\otimes(C\otimes D)\bigr)
+\\[0.8em]
+\Big\downarrow{\scriptstyle\alpha_{A,B,C}\otimes\mathrm{id}_D}
+&&
+\Big\uparrow{\scriptstyle\mathrm{id}_A\otimes\alpha_{B,C,D}}
+\\[0.8em]
+\bigl(A\otimes(B\otimes C)\bigr)\otimes D
+& \xrightarrow{\alpha_{A,B\otimes C,D}}
+& A\otimes\bigl((B\otimes C)\otimes D\bigr)
+\end{array}
+$$
 
 ### Triangle Axiom (Unit Coherence)
 
