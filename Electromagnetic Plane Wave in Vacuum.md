@@ -1,6 +1,21 @@
 # Electromagnetic Plane Wave in Vacuum
 **(SI units, source-free)**
 
+Structure:
+    div(E) = 0
+    div(B) = 0
+    E ⟂ k
+    B ⟂ k
+    E ⟂ B
+
+Interaction:
+    curl(E) = -∂t B
+    curl(B) = μ0 ε0 ∂t E
+
+Dynamics:
+    ∂tt E = c^2 ∇^2 E
+    ∂tt B = c^2 ∇^2 B
+
 ## Fundamentals
 
 - Vacuum: $\rho = 0$, $\mathbf{J} = 0$
