@@ -443,7 +443,7 @@ $$
 \frac{dI}{dt} \to \infty
 $$
 
-## Different regimes
+### Different regimes
 ### Threshold Singularity
 
 $$
@@ -453,7 +453,7 @@ $$
 }
 $$
 
-### Persistent Singularity
+#### Persistent Singularity
 
 $$
 \boxed{
@@ -463,7 +463,7 @@ $$
 }
 $$
 
-### Dynamical Blow-Up
+#### Dynamical Blow-Up
 
 $$
 \boxed{
