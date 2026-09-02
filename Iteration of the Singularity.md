@@ -1,4 +1,6 @@
 # Iteration of the Singularity
+128 Speculative futurism, philosophical treatment of human destiny, consciousness, and technological transcendence
+- 🧠 Philosophy / Speculative Thought — 128 Humankind / The Self
 
 This note presents a compact dynamical-systems model of technological iterations toward a Singularity, framing the Singularity as a phase transition that occurs when iteration speed (v(t)) outpaces human explanatory bandwidth (L(t)). It gives a seven-stage ladder (1.0…7.0), a minimal coupled-equation backbone, timeline-compression consequences of superlinear growth, and diagnostic scalars (notably the Singularity Ratio S) to characterize regimes (human-explainable → runaway).
 
