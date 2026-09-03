@@ -95,7 +95,7 @@ REGIONS ALONG Δ
 
 ---
 
-## RDG-Compatible Structural Interpretation
+## Structural Interpretation
 
 ### 1. The Gradient $G_M$ as a Directional Operator
 
