@@ -82,7 +82,7 @@ Thick paper or cardboard strips sit under leaves 18 so the thinner name stack st
 
 ### Recapitulation / statement leaves
 
-On backing-sheet **13**, leaves **20** are hinged along their **upper edges**. Horizontal rulings register with the balance sheets. They gather many account balances under a few headings, for example:
+On backing-sheet, leaves are hinged along their **upper edges**. Horizontal rulings register with the balance sheets. They gather many account balances under a few headings, for example:
 
 - inventory  
 - loss and gain  
