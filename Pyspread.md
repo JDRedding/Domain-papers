@@ -34,3 +34,133 @@ It may not be ideal for users unfamiliar with programming, such as those seeking
 - **Installation:** Recommended via OS packages, pip, or using a Python virtual environment; QtSvg extension for PyQt is required
 
 
+I'll look up Pyspread's official docs and examples for how macros work.# Pyspread Macro Scripting
+
+Pyspread macros are ordinary Python executed in a **global namespace** that every cell can see. They are not a second formula language. Use them for imports, helper functions, stateful setup, and anything too large or ordered for a single cell.
+
+## How Macros Work
+
+Open the macro editor with **F4**. Type Python, press **Apply**. Output and exceptions appear in the pane below the editor. Macro text is saved in the `[macros]` section of the `.pysu` file and is executed when the spreadsheet is opened or when you apply changes.
+
+Scope is **global**. After Apply, functions and names defined in the editor are callable from any cell. Cell evaluation order is **not guaranteed**, so macros are the right place for ordered, stateful work (for example `rpy2` imports). Applying macros also clears the result cache, so cells re-evaluate.
+
+`File → Clear globals` wipes user globals (including macro names). You must Apply macros again after that.
+
+## Minimal First Macro
+
+In the macro editor:
+
+```python
+def hello():
+    return "Hello, pyspread!"
+```
+
+Apply, then in a cell:
+
+```python
+hello()
+```
+
+The cell shows `Hello, pyspread!`.
+
+## Imports Belong in Macros
+
+Prefer the editor over cells for `import`. Cells expect an **expression** on the last line; `import` is a statement.
+
+```python
+from fractions import Fraction
+import numpy as np
+```
+
+Then in cells:
+
+```python
+p = Fraction("1/37")
+```
+
+```python
+p ** 2
+```
+
+That yields `1/1369`. You *can* do `math = __import__("math")` in a cell, but macros are cleaner and required for some stateful libraries.
+
+## Talking to the Grid
+
+The grid object is globally named **`S`**. Indexing is `(row, column, table)`, zero-based.
+
+```python
+S[0, 0, 0]          # one cell result
+S[:2, :2, 1]        # slice of results
+numpy.sum(S[:2, :2, 1])
+```
+
+Inside the macro editor, `X`, `Y`, `Z` (and `R`, `C`, `T`) are **None**. If a helper needs the calling cell’s coordinates, pass them in from the cell.
+
+## Conditional Formatting from a Macro
+
+Macro editor:
+
+```python
+def color(value, condition_func, X, Y, Z):
+    if condition_func(value):
+        color = 255, 0, 0
+    else:
+        color = None
+    S.cell_attributes[X, Y, Z]["bgcolor"] = color
+    return value
+```
+
+Cell:
+
+```python
+color(5, lambda x: x > 4, X, Y, Z)
+```
+
+Change `5` to `1` and the background returns to default.
+
+## Display Formatting
+
+From v2.3, set type formatters in the macro editor:
+
+```python
+class_format_functions[float] = lambda x: f"{x:.4f}"
+```
+
+For money-safe arithmetic, import `Money` from `pymoneyed` in macros rather than relying on floats.
+
+## Button Cells as Macro Triggers
+
+**Format → Button cell** turns a cell into a labeled button. The cell’s code runs on click (even if the cell is locked). Typical pattern: put a one-liner in the button cell that calls a macro function.
+
+```python
+# cell code
+run_report()
+```
+
+## Charts via the Macro Menu
+
+**Macros → Insert chart…** writes `charts.ChartFigure(...)` into the current cell. Any cell that returns a matplotlib `Figure` is rendered as a chart; merge cells to enlarge it. You can use `S` inside the chart dialog. The dialog is a helper; raw matplotlib figures work too.
+
+## Security
+
+Cells and macros are full Python with OS-level power. Unsigned or untrusted `.pysu` files should be treated as executable code. Pyspread uses blake2b signatures and an approve-file workflow so foreign macros do not run blindly. Do not Apply macros from a file you do not trust.
+
+## Practical Pattern
+
+Keep cells as thin expressions. Keep macros as the library:
+
+```python
+# macros
+import numpy as np
+
+def rolling_mean(col, window=3, table=0):
+    data = [S[r, col, table] for r in range(window)]
+    return float(np.mean(data))
+```
+
+```python
+# cell
+rolling_mean(1, 5, Z)
+```
+
+That is the whole idea: macros define the engine; cells call it. Official walkthroughs live in the [workspace](https://pyspread.gitlab.io/manual/workspace.html), [tutorial](https://pyspread.gitlab.io/tutorial.html), and [advanced topics](https://pyspread.gitlab.io/manual/advanced_topics.html) manuals.
