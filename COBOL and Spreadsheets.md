@@ -12,67 +12,6 @@ COBOL is primarily a business-oriented programming language designed for process
 
 Recommendation: For most scenarios, combine COBOL's strong business logic with CSV exports and Excel automation for a practical and maintainable solution.
 
-# Spreadsheet Functionality Integration
-
-1. CSV/Text File Integration
-
-COBOL can read and write plain text files or comma-separated values (CSV) files, which are the de facto standard for spreadsheet exchange.
-Example use: Importing data from Excel as CSV, processing it in COBOL, and then exporting results back to CSV.
-
-       IDENTIFICATION DIVISION.
-       PROGRAM-ID. CsvExample.
-       DATA DIVISION.
-       FILE SECTION.
-       FD CsvFile
-           LABEL RECORDS ARE STANDARD
-           VALUE OF FILE-ID IS 'DATA.CSV'.
-       01 CsvRecord PIC X(100).
-       WORKING-STORAGE SECTION.
-       PROCEDURE DIVISION.
-           OPEN INPUT CsvFile
-           PERFORM UNTIL EOF
-               READ CsvFile
-                   AT END MOVE 'Y' TO EOF-FLAG
-                   NOT AT END DISPLAY "Processing: " CsvRecord
-               END-READ
-           END-PERFORM
-           CLOSE CsvFile
-           STOP RUN.
-           
-Pros: Easy to implement, widely supported.
-Cons: Limited interactivity; changes require re-exporting files.
-
-3. Backend Calculation with Spreadsheet Exports
-
-COBOL can perform the complex data processing and calculations while leaving formatting, charting, and visualization to Excel or another spreadsheet program.
-
-Workflow: COBOL → CSV/Text → Excel → Macro Formatting/Charts.
-
-Tools: OLE automation in Windows can automate Excel, even from COBOL programs that run in environments supporting COM calls.
-
-4. Database and GUI Integration
-
-Many COBOL systems use relational databases (DB2, Oracle, SQL Server) to store data, and GUI dashboards or Excel front-ends for spreadsheet-like interaction.
-
-COBOL performs calculation logic, while modern tools like Python, Excel, or web dashboards allow real-time spreadsheet functionality.
-
-5. Third-Party Libraries and COBOL Extensions
-
-Certain COBOL compilers support interoperability with modern GUI libraries or .NET API, allowing direct writing to Excel or using spreadsheet components.
-
-Examples: Micro Focus COBOL supports .NET integrations that allow manipulation of Excel files programmatically.
-
-6. Minimal Spreadsheet Functional Emulation
-   
-Arrays (tables) in COBOL can emulate spreadsheet rows and columns for internal calculation, though without GUI features:
-
-       01 Employees.
-           05 Employee-Record OCCURS 100 TIMES.
-               10 Emp-ID      PIC 9(5).
-               10 Emp-Salary  PIC 9(7)V99.
-
-Calculations like SUM, AVERAGE, or other aggregations can be implemented using loops and COBOL arithmetic.
-
 # Using Spreadsheets in COBOL
 
 1. Using CSV Files
@@ -145,3 +84,63 @@ LINE SEQUENTIAL ensures that each write creates a new line in the file. After ru
 
 UNSTRING ... DELIMITED BY "," splits a CSV line into variables.
 
+# Spreadsheet Functionality Integration
+
+1. CSV/Text File Integration
+
+COBOL can read and write plain text files or comma-separated values (CSV) files, which are the de facto standard for spreadsheet exchange.
+Example use: Importing data from Excel as CSV, processing it in COBOL, and then exporting results back to CSV.
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CsvExample.
+       DATA DIVISION.
+       FILE SECTION.
+       FD CsvFile
+           LABEL RECORDS ARE STANDARD
+           VALUE OF FILE-ID IS 'DATA.CSV'.
+       01 CsvRecord PIC X(100).
+       WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           OPEN INPUT CsvFile
+           PERFORM UNTIL EOF
+               READ CsvFile
+                   AT END MOVE 'Y' TO EOF-FLAG
+                   NOT AT END DISPLAY "Processing: " CsvRecord
+               END-READ
+           END-PERFORM
+           CLOSE CsvFile
+           STOP RUN.
+           
+Pros: Easy to implement, widely supported.
+Cons: Limited interactivity; changes require re-exporting files.
+
+3. Backend Calculation with Spreadsheet Exports
+
+COBOL can perform the complex data processing and calculations while leaving formatting, charting, and visualization to Excel or another spreadsheet program.
+
+Workflow: COBOL → CSV/Text → Excel → Macro Formatting/Charts.
+
+Tools: OLE automation in Windows can automate Excel, even from COBOL programs that run in environments supporting COM calls.
+
+4. Database and GUI Integration
+
+Many COBOL systems use relational databases (DB2, Oracle, SQL Server) to store data, and GUI dashboards or Excel front-ends for spreadsheet-like interaction.
+
+COBOL performs calculation logic, while modern tools like Python, Excel, or web dashboards allow real-time spreadsheet functionality.
+
+5. Third-Party Libraries and COBOL Extensions
+
+Certain COBOL compilers support interoperability with modern GUI libraries or .NET API, allowing direct writing to Excel or using spreadsheet components.
+
+Examples: Micro Focus COBOL supports .NET integrations that allow manipulation of Excel files programmatically.
+
+6. Minimal Spreadsheet Functional Emulation
+   
+Arrays (tables) in COBOL can emulate spreadsheet rows and columns for internal calculation, though without GUI features:
+
+       01 Employees.
+           05 Employee-Record OCCURS 100 TIMES.
+               10 Emp-ID      PIC 9(5).
+               10 Emp-Salary  PIC 9(7)V99.
+
+Calculations like SUM, AVERAGE, or other aggregations can be implemented using loops and COBOL arithmetic.
