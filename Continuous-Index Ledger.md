@@ -93,7 +93,7 @@ Each leaf has an account-number column. When one month needs more than one balan
 
 ### Alphabetical index
 
-On backing-sheet, leaves are hinged at the upper part and ruled as an alphabetical index of ledger names, with columns for ledger folio and account number. Tabs preferably project along the lower margin. A rigid cover **22** is hinged with these leaves to protect them and hold them in place when the backing-sheets are folded.
+On backing-sheet, leaves are hinged at the upper part and ruled as an alphabetical index of ledger names, with columns for ledger folio and account number. Tabs preferably project along the lower margin. A rigid cover is hinged with these leaves to protect them and hold them in place when the backing-sheets are folded.
 
 ### Alternate fold as ledger index only
 
