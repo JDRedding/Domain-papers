@@ -1,4 +1,4 @@
-# OFFSET “Convergence Theory”
+# OFFSET Convergence Theory
 
 OFFSET “convergence theory,” as theronin42 presents it, is the claim that a declared discrete manifold can make multi-scale physics meet without the usual continuum blow-ups. The idea is not that coupling constants are tuned until they cross on a graph. It is that micro, meso, and macro behavior are forced onto one closed algebraic staircase, so the same engine can compute across scales without renormalizing the objects that define the staircase.
 
