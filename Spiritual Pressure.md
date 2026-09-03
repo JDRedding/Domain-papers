@@ -174,7 +174,8 @@ This mirrors the **MFE saturation-reset curve** almost exactly.
 
 ---
 
-## Qualitative Modifiers as Domain Conditions
+## Domain Conditions
+Qualitative Modifiers 
 
 The modifiers — salience, coupling strength, container strength, meaning clarity, community support, ritual/practice — all behave like **domain conditions**.
 
