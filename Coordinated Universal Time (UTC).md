@@ -1,0 +1,32 @@
+# Coordinated Universal Time (UTC)
+
+Coordinated Universal Time (UTC) is the primary international time standard used worldwide to regulate clocks and define time zones, forming the basis for civil time across the globe. UTC is the foundational global time reference, enabling synchronization across nations, technology, and scientific applications, while local times remain aligned to it through defined offsets.
+
+- Consistent 24-hour time scale with 60 minutes per hour and 60 seconds per minute, occasionally adjusted for leap seconds.
+- Abbreviated as UTC, a compromise between English and French naming conventions (Coordinated Universal Time / Temps Universel Coordonné).
+- Offsets from UTC range from UTC−12 to UTC+14, covering all global time zones.
+
+## Definition and Purpose
+
+UTC provides a uniform reference for the current time, serving as the standard from which all local time zones are defined. Each time zone worldwide is expressed as an offset from UTC, such as UTC+1 or UTC−5. This standard is crucial for international communication, navigation, scientific research, aviation, and global commerce. Unlike many local time systems, UTC does not observe daylight saving time; local changes are reflected in the offset from UTC.
+
+## History
+
+UTC was officially adopted in 1963 and became the standard abbreviation in 1967. It was developed as a successor to Greenwich Mean Time (GMT), which was based on the mean solar time at the Prime Meridian in Greenwich, London. Today, GMT is largely considered a time zone rather than a time standard, while UTC serves as the precise global reference.
+
+## How UTC Is Measured
+
+UTC combines two main components to maintain highly accurate time:
+
+- **International Atomic Time (TAI):** A scale derived from a weighted average of hundreds of highly precise atomic clocks worldwide.
+- **Universal Time (UT1):** Based on Earth’s rotation and astronomical observations, ensuring UTC remains synchronized with the planet’s day-night cycle.
+
+To reconcile the gradual differences between atomic time and Earth rotation, leap seconds are occasionally added to UTC, typically at the end of June or December, keeping it within about one second of UT1.
+
+## Global Applications
+
+- **Time zones:** Civil times are expressed relative to UTC (e.g., Eastern Standard Time in the U.S. is UTC−5, Eastern Daylight Time is UTC−4).
+- **Aviation and maritime navigation:** UTC is referred to as Zulu time, ensuring all pilots and operators use the same time reference to avoid confusion.
+- **Technology and communications:** Internet protocols (e.g., Network Time Protocol) and satellite systems sync clocks based on UTC.
+- **Scientific research:** Laboratory measurements, space missions, and astronomy use UTC for precise timestamps.
+
