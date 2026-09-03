@@ -1,0 +1,88 @@
+# Wireframe Games and the DOS Aesthetic
+
+So everything — games *and* applications — shared the same constraints:
+
+- black background  
+- neon CGA colors  
+- ASCII boxes  
+- vector lines  
+- geometric shapes  
+- minimalism forced by hardware  
+
+The resemblance comes from **shared rendering constraints**, not just nostalgia.
+Because early PCs had **no GPU**, no filled polygons, and barely any RAM.
+
+## Wireframe Games (the Pure Vector-Line Era)
+
+These are the games that defined the look — neon lines on black, geometric ships, starfields, and that “engineering tool as a game”.
+
+### Elite (1984)
+
+The ur-ancestor. Entire universe rendered in wireframe. Rotating ships, stations, starfields.
+
+### Battlezone (1980)
+
+Military vector graphics. Green lines on black. The “tank HUD” aesthetic that influenced DOS developers.
+
+### Star Wars Arcade (1983)
+
+Trench run in pure vector lines. One of the most iconic wireframe games ever made.
+
+### Starglider (1986)
+
+Wireframe flight combat with early shading experiments.
+
+### Mercenary (1985)
+
+Open-world exploration in vector graphics — extremely ahead of its time.
+
+### Solaris / Star Raiders lineage
+
+Not pure wireframe, but the UI and targeting reticles are vector-inspired.
+
+---
+
+## DOS Applications with That Same Aesthetic
+
+These weren’t games — but everything was ASCII, CGA neon, or wireframe drafting.
+
+### Lotus 1-2-3
+
+Black background, cyan/magenta text, box-drawing UI.  
+The “business software that looks like a space sim” vibe.
+
+### QBasic / GW-BASIC
+
+Where every kid wrote:
+
+```basic
+10 CLS
+20 PSET (RND*320, RND*200)
+30 GOTO 20
+```
+
+Starfield demos, wireframe cubes, ASCII art.
+
+### AutoCAD 1.x
+
+Pure wireframe drafting.  
+Looks *exactly* like Elite’s ship models.
+
+### Norton Commander
+
+Blue panels, ASCII boxes, minimal graphics — the “DOS cockpit.”
+
+### PC-Outline, WordPerfect 4.x
+
+Text-mode interfaces that feel like mission control screens.
+
+### Borland Turbo Pascal / Turbo C
+
+Blue background, yellow text, ASCII windows — programmer cockpit aesthetic.
+
+## Future work
+
+- wireframe space games  
+- DOS applications aesthetic  
+- modern wireframe looks  
+- how wireframe evolved 
