@@ -1,0 +1,291 @@
+TEXT‑TO‑CAD : COMPLETE TECHNICAL REVIEW 
+=====================================================================
+https://github.com/earthtojake/text-to-cad
+
+---------------------------------------------------------------------
+I. SYSTEM OVERVIEW
+---------------------------------------------------------------------
+text‑to‑cad is a modular, skill‑based CAD/robotics/fabrication engine
+that converts NATURAL LANGUAGE or IMAGES into:
+
+  • CAD solids (STEP, STL, 3MF, GLB)
+  • DXF 2D profiles
+  • URDF robot models
+  • SRDF planning configs
+  • SDF simulation worlds
+  • G‑code for FDM printers
+  • DfAM printability analysis
+  • Off‑the‑shelf STEP part retrieval
+  • Implicit CAD (SDF‑based geometry)
+
+It acts as a **finite geometric transpiler**:
+      TEXT → GEOMETRY → FABRICATION
+
+This aligns directly with RDG finite‑structure modeling:
+      SID.Structure → SID.Interaction → SID.Dynamics
+      PED.Power → PED.Evaluation → PED.Dynamics
+
+---------------------------------------------------------------------
+II. CORE SKILL TYPES
+---------------------------------------------------------------------
+Each skill is a callable module with its own input/output schema.
+
+1. TYPE: CAD_GENERATION
+   INPUT:
+     - description: str (plain language)
+     - image: bytes (optional)
+     - constraints: {dim: float, tol: float, features: [...]}
+   OUTPUT:
+     - step_model: STEP
+     - mesh: STL/3MF/GLB
+   FUNDAMENTAL OPS:
+     - feature_extraction()
+     - parametric_solve()
+     - solid_model()
+   VARIABLES:
+     dim[], tol, feature[], material_tag
+
+2. TYPE: DXF_GENERATION
+   INPUT:
+     - geometry: polyline[], arc[], spline[]
+     - thickness: float
+   OUTPUT:
+     - dxf_file
+   FUNDAMENTALS:
+     - 2D projection
+     - profile extraction
+     - layer tagging
+   VARIABLES:
+     poly[], arc[], layer_id
+
+3. TYPE: URDF_GENERATION
+   INPUT:
+     - links: {name, mass, inertia, mesh}
+     - joints: {type, parent, child, axis, limits}
+   OUTPUT:
+     - urdf.xml
+   FUNDAMENTALS:
+     - kinematic chain assembly
+     - inertial tensor mapping
+   VARIABLES:
+     link[], joint[], inertia[3x3], axis[3]
+
+4. TYPE: SRDF_GENERATION
+   INPUT:
+     - planning_groups
+     - end_effectors
+     - collision_rules
+   OUTPUT:
+     - srdf.xml
+   FUNDAMENTALS:
+     - group clustering
+     - kinematic reachability
+   VARIABLES:
+     group[], ee[], collision[]
+
+5. TYPE: SDF_GENERATION
+   INPUT:
+     - world: {frames, lights, sensors, physics}
+   OUTPUT:
+     - sdf.xml
+   FUNDAMENTALS:
+     - spatial frame graph
+     - rigid body placement
+   VARIABLES:
+     frame[], sensor[], light[], physics_tag
+
+6. TYPE: STEP_PART_SEARCH
+   INPUT:
+     - part_name
+     - spec: {thread, bearing_size, motor_kv}
+   OUTPUT:
+     - step_file
+   FUNDAMENTALS:
+     - catalog lookup
+     - parametric filtering
+   VARIABLES:
+     part_id, spec[]
+
+7. TYPE: DFAM_CHECK
+   INPUT:
+     - mesh: STL
+     - printer_profile
+   OUTPUT:
+     - report: {overhangs, wall_thickness, supports, orientation}
+   FUNDAMENTALS:
+     - voxelization
+     - local curvature analysis
+   VARIABLES:
+     voxel[], curvature[], support_vol
+
+8. TYPE: GCODE_SLICE
+   INPUT:
+     - mesh: STL
+     - printer_profile
+   OUTPUT:
+     - gcode
+   FUNDAMENTALS:
+     - slicing
+     - infill generation
+     - extrusion path planning
+   VARIABLES:
+     layer[], speed, temp, infill_pattern
+
+9. TYPE: BAMBU_LABS_INTEGRATION
+   INPUT:
+     - gcode
+   OUTPUT:
+     - job_status
+   FUNDAMENTALS:
+     - dry_run()
+     - upload()
+   VARIABLES:
+     job_id, printer_state
+
+10. TYPE: IMPLICIT_CAD
+    INPUT:
+      - sdf_expression: GLSL
+    OUTPUT:
+      - rendered mesh
+    FUNDAMENTALS:
+      - signed distance fields
+      - raymarch rendering
+    VARIABLES:
+      sdf(x,y,z), grad[], iso_level
+
+---------------------------------------------------------------------
+III. PIPELINE ARCHITECTURE
+---------------------------------------------------------------------
+text‑to‑cad is structured as a multi‑stage finite pipeline:
+
+  STAGE 1: NATURAL LANGUAGE PARSING
+    → extract geometric primitives
+    → identify constraints
+    → build parametric intent graph
+
+  STAGE 2: GEOMETRIC SYNTHESIS
+    → parametric solver
+    → feature tree construction
+    → solid modeling
+
+  STAGE 3: REPRESENTATION EXPORT
+    → STEP (B‑rep)
+    → STL/3MF (mesh)
+    → DXF (2D)
+    → URDF/SRDF/SDF (robotics/simulation)
+
+  STAGE 4: FABRICATION
+    → DfAM analysis
+    → slicing
+    → G‑code generation
+    → optional printer upload
+
+This is a **finite relational pipeline**:
+      Intent → Structure → Representation → Fabrication
+
+---------------------------------------------------------------------
+IV. RDG‑COMPATIBLE MAPPING
+---------------------------------------------------------------------
+SID (Structure / Interaction / Dynamics)
+maps cleanly onto text‑to‑cad:
+
+  SID.Structure:
+    - CAD solids
+    - DXF profiles
+    - URDF link frames
+    - SDF world frames
+
+  SID.Interaction:
+    - joints
+    - constraints
+    - collision rules
+    - fabrication limits
+
+  SID.Dynamics:
+    - robot kinematics
+    - simulation physics
+    - print path dynamics
+
+PED (Power / Evaluation / Dynamics):
+
+  PED.Power:
+    - geometric operators
+    - slicing engines
+    - SDF solvers
+
+  PED.Evaluation:
+    - DfAM checks
+    - tolerance validation
+    - kinematic reachability
+
+  PED.Dynamics:
+    - extrusion path planning
+    - robot motion planning
+    - simulation time‑stepping
+
+---------------------------------------------------------------------
+V. FUNDAMENTAL VARIABLES & OPERATORS
+---------------------------------------------------------------------
+GEOMETRIC VARIABLES:
+  x,y,z           → spatial coordinates
+  dim[i]          → dimensions
+  tol             → tolerances
+  feature[k]      → holes, fillets, chamfers
+  mesh[v]         → vertices
+  face[f]         → faces
+  sdf(x,y,z)      → signed distance field
+
+ROBOTICS VARIABLES:
+  link[i]
+  joint[j]
+  inertia[i][3x3]
+  axis[j][3]
+  limit[j]
+
+FABRICATION VARIABLES:
+  layer[n]
+  speed[n]
+  temp[n]
+  infill[n]
+  support_vol
+
+OPERATORS:
+  extrude(profile, h)
+  revolve(profile, θ)
+  fillet(edge, r)
+  chamfer(edge, d)
+  boolean_union(A,B)
+  boolean_subtract(A,B)
+  slice(mesh, profile)
+  sdf_union(A,B)
+  sdf_smooth(A,B,k)
+
+---------------------------------------------------------------------
+VI. FINITE‑INFINITE TRANSPILATION (Ξ‑COMPATIBLE)
+---------------------------------------------------------------------
+text‑to‑cad implicitly performs:
+
+  TEXT (infinite semantic space)
+      ↓ Ξ
+  FINITE GEOMETRY (STEP, STL)
+      ↓ Γ
+  FABRICATION (G‑code, URDF, SDF)
+
+Where:
+  Ξ = semantic → finite geometry operator
+  Γ = finite geometry → physical realization operator
+
+This is directly aligned with your RDG/MFE/Q triad work.
+
+---------------------------------------------------------------------
+VII. COMPLETE SUMMARY
+---------------------------------------------------------------------
+text‑to‑cad is a **full finite‑geometry engine** capable of producing
+CAD, DXF, URDF, SRDF, SDF, G‑code, and printability analysis from
+plain language or images. It is modular, relational, and compatible
+with RDG finite‑structure modeling.
+
+It is effectively a **geometry compiler**:
+      Natural Language → Parametric Geometry → Fabrication
+
+=====================================================================
