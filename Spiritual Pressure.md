@@ -66,8 +66,10 @@ RITUAL / PRACTICE
 -                      (no channel)       (structured release)
 
  
-# SCHEMATIC PRESSURE CURVE
-Perceived Pressure vs Meaning Gradient (Δ)
+# PRESSURE CURVE
+- Perceived Pressure vs Meaning Gradient (Δ)
+
+SCHEMATIC
 
 ```
 PERCEIVED
