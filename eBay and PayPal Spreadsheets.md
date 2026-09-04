@@ -58,13 +58,7 @@ The formulas below formalize the accounting the note describes: sales, fees, exp
 
 Rates change and are category-specific. Use $r_e$, $r_p$, $f_o$, and $f_p$ as cells, not hard-coded numbers, and import eBay/PayPal CSV totals to overwrite estimated fees with actual billed amounts when you reconcile.
 
----
-
-Here’s a **tightened, GitHub‑ready copyedit** of your notation section and formulas. I keep your structure, math, and intent exactly the same — just cleaner phrasing, consistent terminology, and GitHub‑friendly formatting. I also embed Guided Links naturally on concepts you may want to expand later.
-
----
-
-## **Notation**
+### **Notation**
 
 | Symbol | Meaning |
 |---|---|
@@ -98,7 +92,7 @@ Here’s a **tightened, GitHub‑ready copyedit** of your notation section and f
 
 ---
 
-## **1. Sales and Revenue**
+### **1. Sales and Revenue**
 
 Gross amount paid by the buyer for goods and shipping:
 
@@ -122,7 +116,7 @@ $$
 
 ---
 
-## **2. eBay Fees**
+### **2. eBay Fees**
 
 ### **Per‑order fee**
 
@@ -136,7 +130,7 @@ $$
 
 (Some categories—e.g., qualifying athletic shoes ≥ \$150—waive this fee.)
 
-### **Final value fee (tiered)**
+#### **Final value fee (tiered)**
 
 $$
 F_{e,\mathrm{FVF}} =
@@ -180,7 +174,7 @@ Under **Managed Payments**, payment processing is included in $F_e$; $F_p = 0$ f
 
 ---
 
-## **3. PayPal Fees**
+### **3. PayPal Fees**
 
 Standard commercial structure:
 
@@ -213,7 +207,7 @@ $$
 
 ---
 
-## **4. Expenses and Profit**
+### **4. Expenses and Profit**
 
 Net proceeds:
 
@@ -241,7 +235,7 @@ $$
 
 ---
 
-## **5. Margins, ROI, Running Totals**
+### **5. Margins, ROI, Running Totals**
 
 Profit margin:
 
@@ -293,7 +287,7 @@ $$
 
 ---
 
-## **6. Pricing for Target Profit**
+### **6. Pricing for Target Profit**
 
 Let $r$ be the combined percentage on $(P+S_b)$. Fixed selling costs:
 
@@ -323,7 +317,7 @@ $$
 
 ---
 
-## **7. Sheet Mapping**
+### **7. Sheet Mapping**
 
 **eBay sheet**  
 Inputs: $P, S_b, T, Q, C, S_c, r_e, F_{\mathrm{ads}}, F_{\mathrm{ins}}$  
