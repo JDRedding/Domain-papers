@@ -52,7 +52,7 @@ A PayPal spreadsheet is designed to complement an eBay spreadsheet, focusing on 
 - **Simplified Reconciliation:** Helps reconcile PayPal transactions with bank statements for accurate bookkeeping.
 - **Google Sheets / Excel Templates:** Many templates, like the eBay–PayPal calculator, are available in Excel or Google Sheets, enabling automated calculations or easy manual entries.
 
-## eBay and PayPal below
+## eBay and PayPal formulas
 
 The formulas below formalize the accounting the note describes: sales, fees, expenses, net proceeds, and profit. Rates are the common **US 2026** defaults for illustration; they vary by category, store plan, country, and seller performance, so treat the symbols as parameters you plug into a spreadsheet.
 
