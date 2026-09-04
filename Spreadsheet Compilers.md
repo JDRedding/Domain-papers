@@ -89,17 +89,7 @@ Most open‑source “spreadsheet compilers” are actually **three separate com
 Only a few projects combine all three (Pycel, xlcalculator, Koala).  
 Most commercial compilers combine all three *plus* licensing, obfuscation, and EXE packaging.
 
-### Spreadsheet Formula Compiler 
-(GitHub: [only-komal](https://github.com/only-komal/spreadsheet-formula-compiler))
-
-This tool parses, analyzes, and compiles spreadsheet formulas into executable code in multiple programming languages including Python, JavaScript, Java, and C#. It provides a visual web interface for formula tokenization, AST generation, execution, and debugging. Intended also as a learning tool, it demonstrates compiler design concepts like lexical analysis, parsing, AST construction, and multi-language code generation.
-
-### Spreadsheet Compiler Front-End 
-(GitHub: [AKAnole](https://github.com/AKAnole/SpreadsheetCompiler))
-
-A Java-based front-end project for spreadsheet formula languages. It performs lexical analysis, parsing, and AST construction for formulas but does not execute calculations. This is suitable for educational or research purposes to understand compiler architecture and formula analysis.
-
-## 🧩 Additional Compilers & Formula Engines
+## 🧩 Compilers & Formula Engines
 
 🧱 Comparison Table
 
@@ -113,6 +103,16 @@ A Java-based front-end project for spreadsheet formula languages. It performs le
 | **xlformula** | Rust | ✔ | ✔ | Partial | ✖ | High‑performance |
 | **SheetJS Engine** | JS | ✔ | ✔ | ✔ | ✖ | Browser + Node |
 | **LibreOffice Calc** | C++ | ✔ | ✔ | ✔ | ✖ | Full engine |
+
+### Spreadsheet Formula Compiler 
+(GitHub: [only-komal](https://github.com/only-komal/spreadsheet-formula-compiler))
+
+This tool parses, analyzes, and compiles spreadsheet formulas into executable code in multiple programming languages including Python, JavaScript, Java, and C#. It provides a visual web interface for formula tokenization, AST generation, execution, and debugging. Intended also as a learning tool, it demonstrates compiler design concepts like lexical analysis, parsing, AST construction, and multi-language code generation.
+
+### Spreadsheet Compiler Front-End 
+(GitHub: [AKAnole](https://github.com/AKAnole/SpreadsheetCompiler))
+
+A Java-based front-end project for spreadsheet formula languages. It performs lexical analysis, parsing, and AST construction for formulas but does not execute calculations. This is suitable for educational or research purposes to understand compiler architecture and formula analysis.
 
 ### **xlcalculator** (Python)
 A Python engine that parses Excel formulas, builds ASTs, and executes them without Excel.
