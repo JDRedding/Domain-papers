@@ -58,7 +58,7 @@ The formulas below formalize the accounting the note describes: sales, fees, exp
 
 Rates change and are category-specific. Use $r_e$, $r_p$, $f_o$, and $f_p$ as cells, not hard-coded numbers, and import eBay/PayPal CSV totals to overwrite estimated fees with actual billed amounts when you reconcile.
 
-### **Sheet Mapping**
+### **Combined Mapping**
 
 **eBay sheet inputs:** price, shipping charged, tax, quantity, COGS, shipping cost, eBay fee rate, ad fees, insertion fees  
 **Outputs:** fee base, FVF, total eBay fees, net proceeds, profit  
