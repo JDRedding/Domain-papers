@@ -1,5 +1,6 @@
 # RPG Technology Levels
 ***Tech Levels***
+- 600 General technology
 
 RPG technology levels categorize societies and characters by their technological advancement, ranging from primitive societies to futuristic civilizations, and are key for world-building and rules consistency. RPG *technology levels* are structured tiers that define what tools, weapons, infrastructure, and scientific understanding exist in a game world. They’re a world-building backbone: each level determines what players can plausibly build, discover, or interact with.
 
