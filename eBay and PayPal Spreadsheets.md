@@ -1,5 +1,7 @@
 # eBay and PayPal Spreadsheets
 
+This note explains what eBay and PayPal spreadsheets are, why sellers use them, and how to optimize them. It describes the spreadsheets’ purpose (consolidating sales, fees, expenses, and profit calculations), lists benefits for sellers, gives practical optimization tips (CSV import, formulas, categorization, backups), and then details typical features of an eBay spreadsheet and a complementary PayPal spreadsheet.
+
 eBay and PayPal spreadsheets are specialized tools that help sellers track sales, fees, expenses, and profits in one organized system, providing a clear overview of business performance and simplifying bookkeeping. Both eBay spreadsheets and PayPal spreadsheets serve as essential tools for e-commerce sellers. While the eBay spreadsheet emphasizes inventory management, sales tracking, and fee analysis, the PayPal spreadsheet focuses on financial reconciliation and profit calculations. Together, they help sellers save time, improve accuracy, and make better business decisions by centralizing and automating crucial accounting tasks. 
 
 eBay and PayPal spreadsheets are effective tools for sellers to consolidate sales data, fees, expenses, and profits, offering a clear view of business performance and simplifying bookkeeping.
