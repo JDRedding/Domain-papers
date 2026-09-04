@@ -3,6 +3,8 @@
 
 This invention relates to systems that implement methods of transformation of collections of interdependent information. Usually such information is inputted and stored as fragments within systems such as electronic spreadsheets. The need to transform that interdependent information arises when high-speed, frequently repetitive calculating operations must be performed in short time intervals.
 
+The Optimizer is a pre‑processor that reads a spreadsheet’s interdependent formulas once, orders them into dependency chains, and translates those chains into a machine‑ready instruction sequence so a dynamic system can perform high‑speed repeated calculations without re‑traversing the dependency graph.
+
 The main disadvantages of known input-and-storage systems arise because their functional structure assumes, at every step of repetitive calculation, a full process of identifying dependencies and preparing and using the entire interdependent collection.
 
 The objective of this invention is an **Optimizer of Interdependent Information** whose construction realizes new methods of ordered reading and transformation of fragments of interdependent information. The Optimizer prepares that information into a type and form convenient for subsequent high-speed repetitive calculation.
