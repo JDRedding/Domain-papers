@@ -13,6 +13,55 @@ The IOS, the Information Zones Assignment Unit, and the links to spreadsheet-typ
 
 The Optimizer is intended for systems that must perform high-speed calculations many times over large collections of interdependent information.
 
+## 🧩 Core application domains  
+
+- **High‑speed financial models** — Monte‑Carlo risk engines, portfolio recalculations, option pricing, where spreadsheets choke on repeated recalculation.
+- **Real‑time engineering simulations** — load propagation, fluid networks, electrical grids, where dependencies form long chains.
+- **Industrial control systems** — PLC‑adjacent logic that must recompute state rapidly from changing sensor inputs.
+- **Scientific computation kernels** — iterative solvers that normally require graph traversal each step.
+- **Game/simulation engines** — especially your TRUE/MFE/RDG stack: dependency‑heavy world state that must update quickly.
+- **Large spreadsheet acceleration** — any enterprise sheet with thousands of formulas and volatile inputs.
+
+### **Normal systems**
+1. Inputs change  
+2. Re-identify dependency graph  
+3. Re-evaluate formulas  
+4. Repeat
+
+### **Optimizer-enabled systems**
+1. Identify dependency graph **once**  
+2. Translate to instruction sequence  
+3. Inputs change  
+4. **Run compiled kernel** (no graph traversal)
+
+This is exactly what modern compilers do for SSA graphs, but applied to spreadsheets or any interdependent information structure.
+
+#### **Cosmology & physics modeling**
+GR/QFT/cosmology synthesis often involves:
+
+- constraint networks  
+- coupled differential systems  
+- iterative updates
+
+The Optimizer’s architecture is a **graph‑to‑kernel translator**, which is exactly what numerical solvers need for repeated timesteps.
+
+#### **Monte‑Carlo engines**
+Thousands of repeated runs with slightly different Pi values.  
+The Optimizer eliminates the overhead of dependency resolution.
+
+#### **Forecasting systems**
+Weather, logistics, supply chain, epidemiology — all rely on interdependent variables.
+
+#### **Digital twins**
+Factories, buildings, cities — all require fast repeated recalculation of state.
+
+Most simulation engines already use dependency graphs internally.  
+But designers often prototype logic in spreadsheets.
+
+- design simulation logic in a spreadsheet  
+- compile it into a fast runtime kernel  
+- run it inside game engine
+
 ## Background
 
 Known systems of input and storage of interdependent information, such as electronic-spreadsheet systems, do not allow high speed when calculating operations are repeated many times in a short interval. Using those systems in direct interaction with external systems of dynamic processing of interdependent information therefore limits the efficiency of the latter.
