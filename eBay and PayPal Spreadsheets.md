@@ -62,33 +62,33 @@ Rates change and are category-specific. Use $r_e$, $r_p$, $f_o$, and $f_p$ as ce
 
 | Symbol | Meaning |
 |---|---|
-| **P** | Item price paid by the buyer (per unit) |
-| **S_b** | Shipping charged to the buyer |
-| **H** | Handling fee (if charged separately) |
-| **T** | Sales tax collected on the order (included in eBay’s fee base; usually remitted) |
-| **Q** | Quantity sold |
-| **A** | Total amount of the sale (eBay fee base) |
-| **R_g** | Gross revenue recognized as sales |
-| **r_e** | eBay final‑value‑fee rate (e.g., 0.136 for most categories, no store) |
-| **r_e^+** | Reduced rate above the high‑value breakpoint |
-| **A_*** | Breakpoint for reduced rate (commonly \$7,500 per item) |
-| **f_o** | eBay per‑order fee |
-| **F_{e,\mathrm{FVF}}** | eBay final value fee |
-| **F_{\mathrm{ins}}** | Insertion / listing fees |
-| **F_{\mathrm{ads}}** | Promoted‑listing / ad fees |
-| **F_{\mathrm{int}}** | International fee (if any) |
-| **F_e** | Total eBay fees |
-| **G** | Payment amount processed by PayPal |
-| **r_p** | PayPal percentage rate |
-| **f_p** | PayPal fixed fee |
-| **F_p** | PayPal transaction fee |
-| **C** | Cost of goods sold (per unit or per lot) |
-| **S_c** | Actual outbound shipping cost paid by the seller |
-| **E** | Other expenses (packaging, supplies, software, etc.) |
-| **R_n** | Net proceeds after platform/payment fees |
-| **\Pi** | Net profit |
-| **m** | Profit margin |
-| **ROI** | Return on investment |
+| $P$ | Item price paid by the buyer (per unit) |
+| $S_b$ | Shipping charged to the buyer |
+| $H$ | Handling (if charged separately) |
+| $T$ | Sales tax collected on the order (often in eBay’s fee base; usually remitted, not kept) |
+| $Q$ | Quantity sold |
+| $A$ | Total amount of the sale (eBay fee base) |
+| $R_g$ | Gross revenue the seller treats as sales |
+| $r_e$ | eBay final-value-fee rate (e.g. $0.136$ for most categories, no store) |
+| $r_e^+$ | Reduced rate above the high-value breakpoint (commonly $0.0235$ above $\$7{,}500$) |
+| $A_*$ | Breakpoint for the reduced rate (commonly $\$7{,}500$ per item) |
+| $f_o$ | eBay per-order fee |
+| $F_{e,\mathrm{FVF}}$ | eBay final value fee |
+| $F_{\mathrm{ins}}$ | Insertion / listing fees |
+| $F_{\mathrm{ads}}$ | Promoted-listing / ad fees |
+| $F_{\mathrm{int}}$ | International fee (if any) |
+| $F_e$ | Total eBay fees on the sale |
+| $G$ | Payment amount processed by PayPal |
+| $r_p$ | PayPal percentage rate |
+| $f_p$ | PayPal fixed fee |
+| $F_p$ | PayPal transaction fee |
+| $C$ | Cost of goods sold (COGS), allocated per unit or per lot |
+| $S_c$ | Actual outbound shipping cost paid by the seller |
+| $E$ | Other expenses (packaging, supplies, marketing, software, etc.) |
+| $R_n$ | Net proceeds after platform/payment fees |
+| $\Pi$ | Net profit |
+| $m$ | Profit margin |
+| $\mathrm{ROI}$ | Return on investment |
 
 ---
 
@@ -333,5 +333,15 @@ $$
 $$
 
 ---
+
+
+
+
+
+
+
+
+
+
 
 
