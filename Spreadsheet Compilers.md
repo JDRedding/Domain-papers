@@ -108,16 +108,18 @@ Most commercial compilers combine all three *plus* licensing, obfuscation, and E
 
 
 ### Spreadsheet Formula Compiler 
-(GitHub: [only-komal](https://github.com/only-komal/spreadsheet-formula-compiler))
+https://github.com/only-komal/spreadsheet-formula-compiler
 
 This tool parses, analyzes, and compiles spreadsheet formulas into executable code in multiple programming languages including Python, JavaScript, Java, and C#. It provides a visual web interface for formula tokenization, AST generation, execution, and debugging. Intended also as a learning tool, it demonstrates compiler design concepts like lexical analysis, parsing, AST construction, and multi-language code generation.
 
 ### Spreadsheet Compiler Front-End 
-(GitHub: [AKAnole](https://github.com/AKAnole/SpreadsheetCompiler))
+https://github.com/AKAnole/SpreadsheetCompiler
 
 A Java-based front-end project for spreadsheet formula languages. It performs lexical analysis, parsing, and AST construction for formulas but does not execute calculations. This is suitable for educational or research purposes to understand compiler architecture and formula analysis.
 
 ### **xlcalculator** (Python)
+https://github.com/bradbase/xlcalculator
+
 A Python engine that parses Excel formulas, builds ASTs, and executes them without Excel.
 
 - Supports Excel formula grammar  
@@ -132,6 +134,8 @@ It’s one of the closest open‑source tools to a *runtime compiler* for Excel 
 ---
 
 ### **Koala Spreadsheet Engine** (Java)
+https://github.com/vallettea/koala
+
 A full spreadsheet calculation engine written in Java.
 
 - Parses formulas  
@@ -146,6 +150,8 @@ It’s a full execution engine — not just a parser — making it suitable for 
 ---
 
 ### **Formulajs** (JavaScript)
+https://github.com/formulajs/formulajs
+
 A JS library implementing Excel‑compatible functions.
 
 - Implements 400+ Excel functions  
@@ -158,6 +164,8 @@ It’s not a compiler by itself, but it provides the *runtime* needed for JS cod
 ---
 
 ### **ExcelFormulaParser** (C#)
+https://github.com/spreadsheetlab/XLParser
+
 A C# parser for Excel formulas.
 
 - Tokenizer + parser  
@@ -171,6 +179,8 @@ It’s similar to AKAnole’s Java front‑end but in C#.
 ---
 
 ### **Pycel** (Python)
+https://github.com/dgorissen/pycel
+
 A Python library that converts Excel spreadsheets into Python functions.
 
 - Reads XLSX  
@@ -184,6 +194,8 @@ This is *very close* to a true compiler — it generates executable Python code 
 ---
 
 ### **xlformula** (Rust)
+https://github.com/jiradaherbst/xlformula-engine
+
 A Rust-based Excel formula parser.
 
 - Tokenizer  
@@ -197,6 +209,8 @@ Rust projects are rare in this domain; this one is promising for high‑performa
 ---
 
 ### **ExcelJS Formula Parser** (JavaScript)
+https://github.com/exceljs/exceljs
+
 Part of the ExcelJS ecosystem.
 
 - Parses formulas  
@@ -209,6 +223,8 @@ Useful for browser‑based or Node‑based compiler pipelines.
 ---
 
 ### **SheetJS Formula Engine** (JavaScript)
+https://git.sheetjs.com/
+
 SheetJS (xlsx) includes a formula evaluation subsystem.
 
 - Parses formulas  
