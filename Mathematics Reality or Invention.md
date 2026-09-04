@@ -44,7 +44,7 @@ In RDG terms:
 
 > **Mathematics is a dual‑mode geometry engine whose SID‑structure feels discovered and whose PED‑operators are invented.**
 
-This is why your earlier tweet — “math is invented like writing but discovered like structure” — is exactly RDG‑correct.
+This is why “*math is invented like writing but discovered like structure*” is exactly RDG‑correct.
 
 Mathematics behaves like **discovery** when:
 
