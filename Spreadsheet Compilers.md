@@ -22,7 +22,7 @@ Choosing the right spreadsheet compiler depends on whether the goal is commercia
 This tool parses, analyzes, and compiles spreadsheet formulas into executable code in multiple programming languages including Python, JavaScript, Java, and C#. It provides a visual web interface for formula tokenization, AST generation, execution, and debugging. Intended also as a learning tool, it demonstrates compiler design concepts like lexical analysis, parsing, AST construction, and multi-language code generation.
 
 ### Spreadsheet Compiler Front-End 
-(GitHub: AKAnole)
+(GitHub: [AKAnole](https://github.com/AKAnole/SpreadsheetCompiler))
 
 A Java-based front-end project for spreadsheet formula languages. It performs lexical analysis, parsing, and AST construction for formulas but does not execute calculations. This is suitable for educational or research purposes to understand compiler architecture and formula analysis.
 
