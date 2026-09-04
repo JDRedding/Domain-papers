@@ -195,9 +195,7 @@ Height budget: $\Delta h=\Delta z_{\mathrm{Kick}}+\Delta z_{\mathrm{Grav}}$. Low
 
 Optimal ensemble separation:
 
-$$
-L(Q,n,\omega) = B-\frac{g Q^{2}\pi^{2}}{2\omega^{2}} -\frac{n Q v_{\mathrm{rec}}}{2} \left(\frac{\pi}{\omega} +T_{\min}\left(n^{2}-\frac{7n}{2}+\frac{3}{2}\right) \right)
-$$
+$$L(Q,n,\omega) = B-\frac{g Q^{2}\pi^{2}}{2\omega^{2}} -\frac{n Q v_{\mathrm{rec}}}{2} \left(\frac{\pi}{\omega} +T_{\min}\left(n^{2}-\frac{7n}{2}+\frac{3}{2}\right) \right)$$
 
 At high frequency, $L/B\to 2/3$.
 
@@ -211,6 +209,176 @@ B\cong
 1000\,\mathrm{m} & \text{AION-km, ZAIGA}
 \end{cases}
 $$
+
+---
+
+### GW phase response as a structured object
+
+The core is:
+
+$$
+\Delta\Phi=\Delta\phi(\omega,h)\cos\!\left(\omega t_{0}+\phi_{0}+Q\omega T+\frac{\omega L}{2c}\right)+\Delta\phi_{\mathrm{FSL}}
+$$
+
+Think of it as:
+
+```text
+ΔΦ(ω,h) = [oscillatory GW signal] + [constant ground-specific offset]
+
+oscillatory part:
+    amplitude  = Δφ(ω,h)
+    carrier    = cos( GW phase at detector + geometry phase )
+
+constant part:
+    Δφ_FSL     = finite-speed-of-light offset (only terrestrial)
+```
+
+The *new* physics vs earlier literature is essentially:
+
+- **Extra geometric phase:** $+\omega L/(2c)$ inside the cosine  
+- **Extra amplitude structure:** $\mathrm{sinc}(\omega n L/2c)$ and the shifted sine $\sin(\omega T/2-\omega(n-1)L/2c)$  
+- **Constant offset:** $\Delta\phi_{\mathrm{FSL}}$ from atomic motion vs light propagation on the ground
+
+---
+
+### Dissecting the amplitude $\Delta\phi(\omega,h)$
+
+$$\Delta\phi(\omega,h) = n\,k_{\mathrm{eff}}\,h\,L\, \frac{\sin(\omega Q T)}{\cos(\omega T/2)}\, \mathrm{sinc}\!\left(\frac{\omega n L}{2c}\right) \sin\!\left(\frac{\omega T}{2}-\frac{\omega(n-1)L}{2c}\right)$$
+
+You can read this as a product of “design knobs”:
+
+```text
+Δφ(ω,h) =
+    [basic GW lever arm]
+  × [resonant build-up in time]
+  × [finite-speed-of-light baseline filter]
+  × [LMT–baseline timing interference]
+```
+
+More explicitly:
+
+- **Basic GW lever arm:**  
+  $$
+  n\,k_{\mathrm{eff}}\,h\,L
+  $$
+  
+  **Interpretation:** strain $h$ times physical separation $L$, boosted by LMT order $n$ and atomic k-vector. This is the “obvious” scaling.
+
+- **Resonant build-up (Q diamonds):**  
+  $$
+  \frac{\sin(\omega Q T)}{\cos(\omega T/2)}
+  $$
+  
+  **Interpretation:** a kind of *finite-length resonant filter*—you get enhancement when $\omega Q T$ hits near odd multiples of $\pi/2$, but the denominator $\cos(\omega T/2)$ encodes the internal timing constraint of the Mach–Zehnder structure.
+
+- **Finite-speed-of-light baseline filter:**  
+  $$
+  \mathrm{sinc}\!\left(\frac{\omega n L}{2c}\right)
+  $$
+  
+  **Interpretation:** this is the “extra term” that really belongs to terrestrial detectors: if the GW oscillates significantly over the light-travel time across the *effective* baseline $nL$, the response is suppressed. In the space-based limit $L\to\infty$ with different geometry, this factor is treated differently or effectively absent in earlier simplified formulas.
+
+- **LMT–baseline timing interference:**  
+  $$
+  \sin\!\left(\frac{\omega T}{2}-\frac{\omega(n-1)L}{2c}\right)
+  $$
+  
+  **Interpretation:** the GW phase sampled by the atoms is shifted by the fact that higher LMT order means more kicks spread over a finite light-travel time. This is where “ground + LMT + finite $c$” all collide.
+
+---
+
+### The extra cosine phase $\omega L/(2c)$
+
+Inside the carrier:
+
+$$
+\cos\!\left(\omega t_{0}+\phi_{0}+Q\omega T+\frac{\omega L}{2c}\right)
+$$
+
+Earlier treatments would typically stop at something like:
+
+$$
+\cos(\omega t_{0}+\phi_{0}+Q\omega T)
+$$
+
+The added $\omega L/(2c)$:
+
+- **Does not change the envelope** $\Delta\phi(\omega,h)$  
+- **Does change which initial GW phase $\phi_{0}$** gives maximal response for a given geometry  
+- In practice: it shifts the “sweet spot” of the detector in phase space, which matters if you’re doing matched filtering or phase-locked schemes.
+
+---
+
+### The ground-only offset $\Delta\phi_{\mathrm{FSL}}$
+
+Physically:
+
+- It’s a **DC phase bias** from the mismatch between atomic trajectories and light propagation in a curved spacetime with a GW perturbation.
+- It doesn’t help you detect GWs directly (no oscillation), but it **must be modeled** to avoid misinterpreting calibration or background signals.
+
+For world-building or design thinking, you can treat it as:
+
+```text
+Δφ_FSL ≈ “static geometric misalignment term”
+    – must be subtracted / calibrated
+    – encodes that the detector lives on a planet, not in free fall
+```
+
+---
+
+### Geometry and resonance
+: how the formulas talk to each other
+
+$$
+T_{\max}\cong\sqrt{\frac{2B}{g}},\quad
+T_{\mathrm{res}}=\pi/\omega,\quad
+T_{\mathrm{full}}=2Q T_{\mathrm{res}},\quad
+v_{0}=g Q T_{\mathrm{res}}
+$$
+
+and the optimized ensemble separation:
+
+$$L(Q,n,\omega)=B-\frac{g Q^{2}\pi^{2}}{2\omega^{2}}-\frac{n Q v_{\mathrm{rec}}}{2}\left(\frac{\pi}{\omega}+T_{\min}\left(n^{2}-\frac{7n}{2}+\frac{3}{2}\right)\right)$$
+
+This is basically the **constraint solver** that feeds back into $\Delta\phi(\omega,h)$:
+
+- **Gravity constraint:** atoms can’t float forever; $T_{\max}$ and $T_{\mathrm{res}}$ cap how long you can coherently interrogate.
+- **Baseline constraint:** $B$ is fixed by the lab; $L$ must live inside it while respecting height budget $\Delta h$.
+- **LMT constraint:** higher $n$ gives more sensitivity but eats into the geometry via recoil and timing, which then feeds into the $\mathrm{sinc}$ and shifted sine in (4).
+
+So the game is:
+
+```text
+Choose (B, Q, n, ω)
+→ geometry fixes L, T_res, T_full, v0
+→ those feed into Δφ(ω,h)
+→ which sets h_min(ω), h_c(ω)
+```
+
+---
+
+### Strain sensitivity as a direct readout of Δφ
+
+$$
+h_{\min}(\omega): \Delta\phi(\omega,h)\ge\Delta\phi_{\min},
+\quad
+h_{c}(\omega)=h_{\min}(\omega)\,\frac{\sqrt{\omega}}{\sqrt{\mathrm{Hz}}}
+$$
+
+So once you trust (4), the whole sensitivity story is literally:
+
+```text
+Given:
+    Δφ_min (e.g. 1 μrad)
+    geometry (B, L, Q, n, T_res)
+Compute:
+    Δφ(ω,h)
+Invert:
+    h_min(ω) = Δφ_min / [Δφ(ω,h)/h]
+    h_c(ω)   = h_min(ω) * √ω
+```
+
+The “extra term” they found is exactly what changes the denominator in that inversion for terrestrial setups.
 
 ---
 
