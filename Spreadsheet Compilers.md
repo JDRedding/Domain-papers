@@ -1,5 +1,7 @@
 # Spreadsheet Compilers
 
+This note explains what spreadsheet compilers are, why they exist, when to pick commercial vs open‑source solutions, the typical compiler architecture, and lists notable open‑source and commercial projects with short notes and a comparison table. It recommends commercial compilers for shipping/protection and open‑source for research or custom development.
+
 A spreadsheet compiler is a tool that converts Excel spreadsheets into standalone applications or executable code, often adding formula protection, VBA security, and execution without requiring Excel. Spreadsheet compilers sit in a distinct niche separate from normal spreadsheet software — they *transform* Excel workbooks into protected, standalone applications or into executable code. None of the sources above directly cover spreadsheet compilers, but they help contextualize why compilers exist: spreadsheets are powerful, widely used, and increasingly integrated with AI and workflow tools, yet they still expose formulas, VBA, and IP unless compiled.
 
 ## Key Use Cases and Benefits
