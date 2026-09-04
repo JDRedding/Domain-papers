@@ -258,30 +258,34 @@ You can read this as a product of “design knobs”:
 More explicitly:
 
 - **Basic GW lever arm:**  
-  $$
-  n\,k_{\mathrm{eff}}\,h\,L
-  $$
+
+$$
+n\,k_{\mathrm{eff}}\,h\,L
+$$
   
   **Interpretation:** strain $h$ times physical separation $L$, boosted by LMT order $n$ and atomic k-vector. This is the “obvious” scaling.
 
 - **Resonant build-up (Q diamonds):**  
-  $$
-  \frac{\sin(\omega Q T)}{\cos(\omega T/2)}
-  $$
+
+$$
+\frac{\sin(\omega Q T)}{\cos(\omega T/2)}
+$$
   
   **Interpretation:** a kind of *finite-length resonant filter*—you get enhancement when $\omega Q T$ hits near odd multiples of $\pi/2$, but the denominator $\cos(\omega T/2)$ encodes the internal timing constraint of the Mach–Zehnder structure.
 
-- **Finite-speed-of-light baseline filter:**  
-  $$
-  \mathrm{sinc}\!\left(\frac{\omega n L}{2c}\right)
-  $$
+- **Finite-speed-of-light baseline filter:**
+  
+$$
+\mathrm{sinc}\!\left(\frac{\omega n L}{2c}\right)
+$$
   
   **Interpretation:** this is the “extra term” that really belongs to terrestrial detectors: if the GW oscillates significantly over the light-travel time across the *effective* baseline $nL$, the response is suppressed. In the space-based limit $L\to\infty$ with different geometry, this factor is treated differently or effectively absent in earlier simplified formulas.
 
-- **LMT–baseline timing interference:**  
-  $$
-  \sin\!\left(\frac{\omega T}{2}-\frac{\omega(n-1)L}{2c}\right)
-  $$
+- **LMT–baseline timing interference:**
+  
+$$
+\sin\!\left(\frac{\omega T}{2}-\frac{\omega(n-1)L}{2c}\right)
+$$
   
   **Interpretation:** the GW phase sampled by the atoms is shifted by the fact that higher LMT order means more kicks spread over a finite light-travel time. This is where “ground + LMT + finite $c$” all collide.
 
