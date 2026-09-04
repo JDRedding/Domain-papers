@@ -14,13 +14,15 @@ A spreadsheet compiler is a tool that converts Excel spreadsheets into standalon
 
 Choosing the right spreadsheet compiler depends on whether the goal is commercial deployment with robust protection (e.g., xlCompiler, XLS Padlock, XCell Compiler) or educational/research purposes with multi-language compilation (open-source solutions). Commercial solutions often include GUI tools, copy protection, and customer licensing features, while open-source projects provide hands-on access to compiler internals and code generation.
 
-## Open-Source and Educational Spreadsheet Compilers
+## Open-Source Compilers
 
-### Spreadsheet Formula Compiler (GitHub: only-komal)
+### Spreadsheet Formula Compiler 
+(GitHub: only-komal)
 
 This tool parses, analyzes, and compiles spreadsheet formulas into executable code in multiple programming languages including Python, JavaScript, Java, and C#. It provides a visual web interface for formula tokenization, AST generation, execution, and debugging. Intended also as a learning tool, it demonstrates compiler design concepts like lexical analysis, parsing, AST construction, and multi-language code generation.
 
-### Spreadsheet Compiler Front-End (GitHub: AKAnole)
+### Spreadsheet Compiler Front-End 
+(GitHub: AKAnole)
 
 A Java-based front-end project for spreadsheet formula languages. It performs lexical analysis, parsing, and AST construction for formulas but does not execute calculations. This is suitable for educational or research purposes to understand compiler architecture and formula analysis.
 
