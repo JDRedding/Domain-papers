@@ -11,8 +11,6 @@ The IOS, the Information Zones Assignment Unit, and the links to spreadsheet-typ
 
 The Optimizer is intended for systems that must perform high-speed calculations many times over large collections of interdependent information.
 
-The embodiments above are illustrative. Variations devised by those skilled in the art are intended to fall within the scope of the claims and their equivalents.
-
 ## Background
 
 Known systems of input and storage of interdependent information, such as electronic-spreadsheet systems, do not allow high speed when calculating operations are repeated many times in a short interval. Using those systems in direct interaction with external systems of dynamic processing of interdependent information therefore limits the efficiency of the latter.
