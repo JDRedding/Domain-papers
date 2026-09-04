@@ -93,16 +93,19 @@ Most commercial compilers combine all three *plus* licensing, obfuscation, and E
 
 🧱 Comparison Table
 
-| Project | Language | Parser | AST | Execution | Codegen | Notes |
-|--------|----------|--------|-----|-----------|---------|-------|
-| **xlcalculator** | Python | ✔ | ✔ | ✔ | ✖ | Full runtime |
-| **Koala** | Java | ✔ | ✔ | ✔ | ✖ | JVM engine |
-| **Pycel** | Python | ✔ | ✔ | ✔ | ✔ | Python codegen |
-| **Formulajs** | JS | ✖ | ✖ | ✔ | ✖ | Runtime only |
-| **ExcelFormulaParser** | C# | ✔ | ✔ | ✖ | ✖ | Parser only |
-| **xlformula** | Rust | ✔ | ✔ | Partial | ✖ | High‑performance |
-| **SheetJS Engine** | JS | ✔ | ✔ | ✔ | ✖ | Browser + Node |
-| **LibreOffice Calc** | C++ | ✔ | ✔ | ✔ | ✖ | Full engine |
+| **Tool** | **Language** | **Parser** | **AST** | **Execution** | **Codegen** | **Notes** |
+|---------|--------------|------------|---------|---------------|-------------|-----------|
+| **Spreadsheet Formula Compiler** | JS/TS | ✔ | ✔ | ✔ | ✔ (Python/JS/Java/C#) | Multi‑language compiler + visual debugger |
+| **Spreadsheet Compiler Front‑End** | Java | ✔ | ✔ | ✖ | ✖ | Clean front‑end for formula parsing; no runtime |
+| **xlcalculator** | Python | ✔ | ✔ | ✔ | ✖ | Full Excel‑style runtime engine |
+| **Koala Spreadsheet Engine** | Java | ✔ | ✔ | ✔ | ✖ | JVM spreadsheet engine with dependency graph |
+| **Pycel** | Python | ✔ | ✔ | ✔ | ✔ (Python) | Converts Excel formulas into Python functions |
+| **Formulajs** | JavaScript | ✖ | ✖ | ✔ | ✖ | JS implementation of Excel functions (runtime only) |
+| **ExcelFormulaParser** | C# | ✔ | ✔ | ✖ | ✖ | Parser + AST; no execution |
+| **xlformula** | Rust | ✔ | ✔ | Partial | ✖ | High‑performance Rust formula parser |
+| **SheetJS Formula Engine** | JavaScript | ✔ | ✔ | ✔ | ✖ | Browser/Node formula engine |
+| **LibreOffice Calc Engine** | C++/UNO | ✔ | ✔ | ✔ | ✖ | Most complete open‑source spreadsheet engine |
+
 
 ### Spreadsheet Formula Compiler 
 (GitHub: [only-komal](https://github.com/only-komal/spreadsheet-formula-compiler))
