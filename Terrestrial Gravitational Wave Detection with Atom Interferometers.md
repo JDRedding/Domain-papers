@@ -157,14 +157,12 @@ $$
 
 Resonance time:
 
-$$
-T_{\mathrm{res}}
-=
+$$T_{\mathrm{res}} =
 \begin{cases}
-\dfrac{\pi}{\omega}=\dfrac{1}{2f},
-& f_{\min}<f<f_{\max}\\
-0,
-& \text{else}
+\dfrac{\pi}{\omega}=\dfrac{1}{2f}, & f_{\min}<f<f_{\max} \
+
+\[0.6em]
+0, & \text{else}
 \end{cases}
 $$
 
