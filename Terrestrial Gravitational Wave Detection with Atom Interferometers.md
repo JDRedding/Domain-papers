@@ -149,14 +149,9 @@ $$
 
 Resonance time:
 
-$$T_{\mathrm{res}} =
-\begin{cases}
-\dfrac{\pi}{\omega}=\dfrac{1}{2f}, & f_{\min}<f<f_{\max} \
-
-\[0.6em]
-0, & \text{else}
-\end{cases}
-$$
+    T_res =
+            π/ω = 1/(2f)    if f_min < f < f_max
+            0               otherwise
 
 ## Why $\pi/\omega = 1/(2f)$
 
