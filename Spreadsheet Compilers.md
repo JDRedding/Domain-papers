@@ -80,6 +80,15 @@ This means spreadsheet compilers remain a specialized category untouched by AI�
 - Perfect for academic or experimental compiler work  
 - No licensing or distribution restrictions
 
+Most open‑source “spreadsheet compilers” are actually **three separate components**:
+
+1. **Formula parser** → tokenization + AST  
+2. **Dependency graph builder** → cell references + recalculation order  
+3. **Execution engine or code generator** → Python/JS/Java/C#/Rust  
+
+Only a few projects combine all three (Pycel, xlcalculator, Koala).  
+Most commercial compilers combine all three *plus* licensing, obfuscation, and EXE packaging.
+
 ### Spreadsheet Formula Compiler 
 (GitHub: [only-komal](https://github.com/only-komal/spreadsheet-formula-compiler))
 
@@ -89,6 +98,136 @@ This tool parses, analyzes, and compiles spreadsheet formulas into executable co
 (GitHub: [AKAnole](https://github.com/AKAnole/SpreadsheetCompiler))
 
 A Java-based front-end project for spreadsheet formula languages. It performs lexical analysis, parsing, and AST construction for formulas but does not execute calculations. This is suitable for educational or research purposes to understand compiler architecture and formula analysis.
+
+## 🧩 Additional Compilers & Formula Engines
+
+🧱 Comparison Table
+
+| Project | Language | Parser | AST | Execution | Codegen | Notes |
+|--------|----------|--------|-----|-----------|---------|-------|
+| **xlcalculator** | Python | ✔ | ✔ | ✔ | ✖ | Full runtime |
+| **Koala** | Java | ✔ | ✔ | ✔ | ✖ | JVM engine |
+| **Pycel** | Python | ✔ | ✔ | ✔ | ✔ | Python codegen |
+| **Formulajs** | JS | ✖ | ✖ | ✔ | ✖ | Runtime only |
+| **ExcelFormulaParser** | C# | ✔ | ✔ | ✖ | ✖ | Parser only |
+| **xlformula** | Rust | ✔ | ✔ | Partial | ✖ | High‑performance |
+| **SheetJS Engine** | JS | ✔ | ✔ | ✔ | ✖ | Browser + Node |
+| **LibreOffice Calc** | C++ | ✔ | ✔ | ✔ | ✖ | Full engine |
+
+### **xlcalculator** (Python)
+A Python engine that parses Excel formulas, builds ASTs, and executes them without Excel.
+
+- Supports Excel formula grammar  
+- Builds dependency graphs  
+- Executes formulas programmatically  
+- Can be embedded into larger applications  
+- Often used as a backend for custom spreadsheet runtimes  
+
+**Why it matters:**  
+It’s one of the closest open‑source tools to a *runtime compiler* for Excel logic.
+
+---
+
+### **Koala Spreadsheet Engine** (Java)
+A full spreadsheet calculation engine written in Java.
+
+- Parses formulas  
+- Builds dependency graphs  
+- Executes calculations  
+- Supports many Excel functions  
+- Can be embedded into JVM applications  
+
+**Why it matters:**  
+It’s a full execution engine — not just a parser — making it suitable for custom compiler backends.
+
+---
+
+### **Formulajs** (JavaScript)
+A JS library implementing Excel‑compatible functions.
+
+- Implements 400+ Excel functions  
+- Used in web spreadsheet apps  
+- Can serve as a codegen target for JS‑based compilers  
+
+**Why it matters:**  
+It’s not a compiler by itself, but it provides the *runtime* needed for JS code generation.
+
+---
+
+### **ExcelFormulaParser** (C#)
+A C# parser for Excel formulas.
+
+- Tokenizer + parser  
+- AST generation  
+- No execution engine  
+- Useful for building your own compiler  
+
+**Why it matters:**  
+It’s similar to AKAnole’s Java front‑end but in C#.
+
+---
+
+### **Pycel** (Python)
+A Python library that converts Excel spreadsheets into Python functions.
+
+- Reads XLSX  
+- Converts formulas into Python code  
+- Builds dependency graphs  
+- Executes calculations  
+
+**Why it matters:**  
+This is *very close* to a true compiler — it generates executable Python code from spreadsheets.
+
+---
+
+### **xlformula** (Rust)
+A Rust-based Excel formula parser.
+
+- Tokenizer  
+- Parser  
+- AST  
+- Early-stage execution support  
+
+**Why it matters:**  
+Rust projects are rare in this domain; this one is promising for high‑performance compilers.
+
+---
+
+### **ExcelJS Formula Parser** (JavaScript)
+Part of the ExcelJS ecosystem.
+
+- Parses formulas  
+- AST generation  
+- Integrates with JS spreadsheet runtimes  
+
+**Why it matters:**  
+Useful for browser‑based or Node‑based compiler pipelines.
+
+---
+
+### **SheetJS Formula Engine** (JavaScript)
+SheetJS (xlsx) includes a formula evaluation subsystem.
+
+- Parses formulas  
+- Executes many Excel functions  
+- Works in browser and Node  
+- Can be used as a backend for JS codegen  
+
+**Why it matters:**  
+SheetJS is widely used and stable — ideal for production-grade compiler backends.
+
+---
+
+### **LibreOffice Calc Engine** (C++/UNO)
+Not a standalone compiler, but:
+
+- Fully open-source  
+- Full formula engine  
+- Full calculation graph  
+- Can be embedded via UNO API  
+
+**Why it matters:**  
+It’s the most complete open-source spreadsheet engine in existence.
 
 ## Commercial Spreadsheet Compilers
 
