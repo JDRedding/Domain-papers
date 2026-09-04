@@ -21,7 +21,7 @@ Eight Reasons Researchers Question Whether Mathematics Is Fundamental Reality or
 **Reality‑math = SID‑dominant geometry**  
 **Invention‑math = PED‑dominant operator‑choice**
 
-The eight reasons you listed are exactly the *boundary‑stressors* where SID‑structure and PED‑choice collide. In RDG terms:
+The eight reasons listed are exactly the *boundary‑stressors* where SID‑structure and PED‑choice collide. In RDG terms:
 
 > **Math-as-reality = Structure/Interaction/Dynamics (SID) pulling the system toward invariant geometry.**  
 > **Math-as-invention = Power/Evaluation/Dynamics (PED) pulling the system toward human‑chosen operators and admissibility rules.**
@@ -62,6 +62,11 @@ Mathematics behaves like **invention** when:
 
 This is why many modern philosophers adopt a **dualistic view**:  
 Math is invented as a *language*, but discovered as a *structure*.   
+
+In other words:
+
+- When mathematics stays **bounded** (finite representational depth, finite precision, finite iteration, finite structure), it aligns with **SID**, which is the *reality‑tracking geometry engine* ontology.
+- When mathematics becomes **unbounded** (actual infinities, infinite sets, infinite towers, infinite decimals, infinite closures), it shifts into **PED**, which is the *human‑chosen operator system* — invention.
 
 ---
 
@@ -139,7 +144,7 @@ Infinity is where **SID geometry** and **PED axiom‑choice** diverge most sharp
 ---
 
 ## **5. Arbitrary Foundations and Axiom Choice**
-ZFC set theory is the default foundation of modern mathematics, but it is only one possible choice. Change the axioms and you get different, equally valid mathematical worlds.  
+ZFC set theory is the default foundation of modern mathematics, but it is only one possible choice. Change the axioms and get different, equally valid mathematical worlds.  
 Examples:
 
 - Euclidean vs. hyperbolic vs. elliptic geometry  
@@ -223,6 +228,89 @@ SID.Structure:   underlying geometry may be consistent even if PED is not
 This is a **PED‑weakness**: invention cannot secure itself.
 
 ---
+
+## Reality vs Invention: Relations
+
+```
+        REALITY (SID)                INVENTION (PED)
+   +--------------------+       +------------------------+
+   |  bounded math      |       |  unbounded math        |
+   |  finite depth      |       |  infinite constructs   |
+   |  physical ceilings |       |  axiom choice          |
+   |  geometry-driven   |       |  operator-driven       |
+   +--------------------+       +------------------------+
+                 ^                 ^
+                 |                 |
+                 +------ Q-mode ---+
+```
+
+---
+
+### **SID → bounded mathematics**
+SID is **Structure / Interaction / Dynamics** triad.  
+It represents:
+
+- physically admissible geometry  
+- relational invariants  
+- finite representational depth  
+- finite computational capacity  
+- the N_max ceiling  
+
+So any mathematics that respects:
+
+- finite precision  
+- finite iteration  
+- finite sets  
+- finite constructions  
+- finite geometry  
+
+is **SID‑real**.
+
+This is why:
+
+- finite reals  
+- finite p‑adic depth  
+- finite algebraic towers  
+- discretized topology  
+- bounded relational geometry  
+
+are *real* ontology.
+
+---
+
+### **PED → unbounded mathematics**
+PED is **Power / Evaluation / Dynamics** triad.  
+It represents:
+
+- human‑chosen axioms  
+- symbolic rules  
+- operator systems  
+- admissibility filters  
+- arbitrary foundations  
+
+So anything involving:
+
+- actual infinity  
+- unbounded sets  
+- infinite decimals  
+- infinite closures  
+- infinite-dimensional spaces  
+- axiom‑dependent universes  
+
+is **PED‑invented**.
+
+This is why:
+
+- classical ℝ  
+- classical ℂ  
+- Hilbert spaces  
+- infinite groups  
+- infinite sets  
+- continuum hypothesis  
+- Banach–Tarski  
+- ZFC independence results  
+
+are *invented* ontology.
 
 ## Future Work
 
