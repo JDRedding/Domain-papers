@@ -37,8 +37,7 @@ The illustrative embodiment is a method of optimizing a spreadsheet characterize
 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════╗
-║     OPTIMIZER OF INTERDEPENDENT INFORMATION  —  FIG. 1                   ║
-║     US 7,530,013  (2009-05-05)                                           ║
+║     OPTIMIZER OF INTERDEPENDENT INFORMATION                              ║
 ║     Types · Variables · Fundamentals                                     ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 
