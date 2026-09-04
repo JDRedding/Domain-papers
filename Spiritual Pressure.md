@@ -196,3 +196,40 @@ These are all **pressure modifiers** that shape the curve without altering the c
 ## Future Work
 
 - Show how SP behaves under **domain coupling** (multiple agents)
+
+---
+
+## 🧠 APENDIX: **Interpersonal spectrum**
+
+| **Interpersonal Axis** | **Role** | **SP Component** | **Interpretive Function** |
+|-------------------------|--------------|------------------|---------------------------|
+| **Overgiving** | PED.Dynamics | \(C\) Coupling | Excessive identity‑binding; Δ enters self too strongly |
+| **People‑Pleasing** | SID.Interaction | \(S\) Salience | Over‑weighted relevance; trivial Δ treated as existential |
+| **Passive** | SID.Structure | \(G_M\) Gradient | Δ suppressed; Ideal‑Actual mismatch unexpressed |
+| **Intrusive** | PED.Interaction | \(C\) Coupling overflow | Gradient leaks outward; boundary collapse |
+| **Bossy** | PED.Structure | \(G_M\) inversion | Externalizes Ideal; forces Δ correction on others |
+| **Spiteful** | SID.Dynamics | \(C\) negative coupling | Reverses flow; pressure discharged destructively |
+| **Distant** | SID.Structure | \(G_M\) null | Ideal‑Actual gap ignored; emotional vacuum |
+| **Inhibited** | SID.Interaction | \(S\) damped | Low salience; Δ sensed but muted by fear of exposure |
+
+---
+
+### ⚙️ Pressure Curve Integration
+Each interpersonal trait can be seen as a **local deformation** of the SP transfer function:
+
+- **Overgiving / People‑Pleasing:** operate near the *Crisis* region — high \(S\) and \(C\) with moderate \(Δ\); container strain.  
+- **Passive / Inhibited:** remain in *Notice–Discomfort* — low \(S\), low \(C\); pressure dissipates before transformation.  
+- **Bossy / Spiteful:** oscillate between *Breakthrough* and *Breakdown* — high \(Δ\), unstable coupling sign.  
+- **Distant:** flatline at *Low Pressure* — \(Δ\) unregistered.  
+- **Intrusive:** overshoots *Breakthrough* — coupling overflow into external systems.
+
+---
+
+### 🔄 Structural Summary
+
+```
+SP(θ) = Δ(θ) × S(θ) × C(θ)
+```
+
+where each angular domain θ corresponds to a social mode.  
+The chart’s lobes visualize **pressure anisotropy** — uneven distribution of felt meaning gradients across relational directions.
