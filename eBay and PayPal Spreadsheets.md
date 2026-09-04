@@ -135,21 +135,20 @@ $$
 $$
 F_{e,\mathrm{FVF}} =
 \begin{cases}
-r_e A & A \le A_* \$$4pt]
-r_e A_* + r_e^+(A - A_*) & A > A_*
+r_e A & A \le A_\* r_e A_\* + r_e^+(A - A_\*) & A > A_\*
 \end{cases}
 $$
 
 Typical US (no‑store):
 
 $$
-r_e = 0.136,\quad r_e^+ = 0.0235,\quad A_* = 7500
+r_e = 0.136,\quad r_e^+ = 0.0235,\quad A_\* = 7500
 $$
 
 Compact form:
 
 $$
-F_{e,\mathrm{FVF}} = r_e \min(A,A_*) + r_e^+ \max(A-A_*,0)
+F_{e,\mathrm{FVF}} = r_e \min(A,A_\*) + r_e^+ \max(A-A_\*,0)
 $$
 
 ### **Total eBay fees**
