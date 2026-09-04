@@ -215,4 +215,165 @@ Step-by-step identification and ordering may proceed:
 
 Depending on the spreadsheet’s interdependencies, Unit 3 may form one or several chains. Unit 6 stores all such chains so Unit 7 can preserve that structure in the translated form.
 
+## Equations and Notation 
 
+| Symbol | Meaning |
+|--------|---------|
+| $9$ | spreadsheet-type store |
+| $9.1,9.2,9.3$ | input zone, output zone, main zone |
+| $Z_i,Z_o$ | assigned locations of input / output zones |
+| $I$ | main interdependent collection (zone 9.3) |
+| $I_o$ | interdependent output information (zone 9.2) |
+| $C=\{c_k\}$ | cells / fragments |
+| $F=\{f_k\}$ | cell formulas |
+| $E\subseteq C\times C$ | dependence edges: $c_j\to c_k$ iff $f_k$ uses $c_j$ |
+| $G=(C,E)$ | dependence graph |
+| $P_i\subseteq C$ | fragments that hold input parameters |
+| $P_o\subseteq C$ | fragments that hold output parameters |
+| $I_{\mathrm{or}}$ | ordered collection of fragments |
+| $\Gamma=\{ \gamma_\ell \}$ | dependence chains stored in unit 6 |
+| $\tau$ | translation map (unit 7) |
+| $I_{\mathrm{ort}},P_{it},P_{ot}$ | translated ordered collection / inputs / outputs |
+| $\sigma$ | instruction sequence for system 10 |
+| $x^{(t)}$ | input-parameter values at repetition $t$ |
+| $y^{(t)}$ | computed outputs at repetition $t$ |
+
+---
+
+## Zone assignment
+
+$$
+Z_i=\mathrm{loc}(9.1),\qquad Z_o=\mathrm{loc}(9.2)
+$$
+
+$$
+I_o = I\big|_{Z_o},\qquad I = I\big|_{9.3}
+$$
+
+Read set presented to unit 3:
+
+$$
+R = I_o \cup I
+$$
+
+---
+
+## Dependence graph
+
+Each fragment is a pair $(c_k,f_k)$. Dependences:
+
+$$
+(c_j,c_k)\in E
+\quad\Longleftrightarrow\quad
+c_j\text{ occurs in }f_k
+$$
+
+$$
+G=(C,E)
+$$
+
+Input / output identification (units 4 and 5):
+
+$$
+P_i = \{\,c\in C : \mathrm{addr}(c)\in Z_i\,\}
+$$
+
+$$
+P_o = \{\,c\in C : \mathrm{addr}(c)\in Z_o\,\}
+$$
+
+---
+
+## Ordering reading (unit 3)
+
+An order $\prec$ on $C$ is a topological linearization of $G$ (or of each connected chain).
+
+**Output-first** (walk toward inputs):
+
+$$I_{\mathrm{or}}^{\downarrow} = \mathrm{TopoSort} (G;\ \text{start}=P_o,\ \text{dir}=\text{toward }P_i)$$
+
+**Input-first** (walk toward outputs):
+
+$$I_{\mathrm{or}}^{\uparrow} = \mathrm{TopoSort}(G;\ \text{start}=P_i,\ \text{dir}=\text{toward }P_o)$$
+
+**Bidirectional** from a seed $c_\ast$:
+
+$$I_{\mathrm{or}}^{\leftrightarrow}(c_\ast) = \mathrm{TopoSort} (G;\ \text{start}=c_\ast,\ \text{dir}=\text{both})$$
+
+**Combined:** union of several such walks. Unit 6 stores every produced chain:
+
+$$\Gamma=\{\gamma_\ell\},\qquad \gamma_\ell=(c_{\ell,1}\to c_{\ell,2}\to\cdots\to c_{\ell,m_\ell})$$
+
+$$I_{\mathrm{or}}=\bigcup_\ell \gamma_\ell \quad\text{with order compatible with every }\gamma_\ell$$
+
+Memory 6 after one pass:
+
+$$
+M_6=\bigl(I_{\mathrm{or}},\,P_i,\,P_o,\,\Gamma\bigr)
+$$
+
+---
+
+## Translation (unit 7)
+
+$$
+\tau:\ (I_{\mathrm{or}},P_i,P_o,\Gamma)\ \longmapsto\ (I_{\mathrm{ort}},P_{it},P_{ot},\sigma)
+$$
+
+Claimed special case — formulas → instruction sequence:
+
+$$
+\sigma=\tau(F,E)
+$$
+
+so that evaluation is a straight-line program over the ordered cells:
+
+$$
+\sigma=(u_1,u_2,\ldots,u_N),\qquad u_k:\ \text{evaluate }f_{\pi(k)}\text{ after predecessors}
+$$
+
+where $\pi$ is the permutation realizing $I_{\mathrm{or}}$.
+
+Memory 8:
+
+$$
+M_8=\bigl(I_{\mathrm{ort}},\,P_{it},\,P_{ot},\,\sigma\bigr)
+$$
+
+---
+
+## Dynamic processing (system 10)
+
+Compile **once**:
+
+$$
+(I,I_o,Z_i,Z_o)\ \xrightarrow{\ \mathrm{IOS}\circ\tau\ }\ \sigma
+$$
+
+Repeat **many times** with new inputs, without rebuilding $G$:
+
+$$
+y^{(t)}=\sigma\bigl(x^{(t)}\bigr),\qquad t=1,2,\ldots
+$$
+
+$$
+x^{(t)}\in\mathrm{Val}(P_{it}),\qquad y^{(t)}\in\mathrm{Val}(P_{ot})
+$$
+
+That is the efficiency claim: identification and ordering are **not** inside the inner loop.
+
+---
+
+## End-to-end map
+
+$$\mathrm{Opt}:(9,\,Z_i,\,Z_o)\ \longrightarrow\\bigl(\sigma,\,P_{it},\,P_{ot}\bigr)$$
+
+$$\mathrm{Opt}=\tau\circ\mathrm{Mem}_6\circ(\mathrm{Order}_3\times\mathrm{Id}_4\times\mathrm{Id}_5)\circ\mathrm{Read}_3$$
+
+with zone assignment from unit 2:
+
+$$
+\mathrm{Id}_4=\mathrm{Id}_4(Z_i),\qquad \mathrm{Id}_5=\mathrm{Id}_5(Z_o)
+$$
+
+---
