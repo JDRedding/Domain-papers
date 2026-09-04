@@ -1,6 +1,8 @@
 # Mathematics Reality or Invention
 Eight Reasons Researchers Question Whether Mathematics Is Fundamental Reality or a Human Invention
 
+The document lays out that mathematics is best seen as a dual‑mode system (RDG): a SID (Structure / Interaction / Dynamics) mode that makes math feel discovered (geometry-like, reality-tracking) and a PED (Power / Evaluation / Dynamics) mode that makes math feel invented (axioms, operators, notation). A Q‑mode moderates, patches, and blends the two. The eight canonical philosophical and mathematical puzzles (Wigner’s effectiveness, Gödel, foundations, infinity, renormalization, Tegmark, etc.) are read as stress‑tests that reveal which mode dominates in different context
+
 **Mathematics sits in a strange place: it behaves like the operating system of the universe, yet it also behaves like a human‑written programming language full of arbitrary design choices.**  Mathematics contains **universal structures** that appear to be discovered (symmetry, continuity, number, geometry), but it is built on **human‑chosen axioms, notations, and abstractions** that make it look invented. The eight reasons listed are exactly the fault lines where these two aspects collide.
 
 ## **Full Synthesis**
