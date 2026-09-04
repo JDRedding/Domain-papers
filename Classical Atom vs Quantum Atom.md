@@ -1,0 +1,41 @@
+# Classical Atom vs Quantum Atom
+
+**Heisenberg Uncertainty — Types, Variables, Fundamentals**
+
+## Classical Problem
+
+An orbiting electron must radiate continuously and spiral into the nucleus in about $10^{-11}\,\mathrm{s}$. Atoms do not vanish.
+
+## Historical Fixes
+
+- Bohr froze discrete orbits.
+- Quantum mechanics replaced orbits with probability clouds.
+
+## Core Relation (Heisenberg Uncertainty Principle)
+
+$$
+\Delta x \cdot \Delta p \ge \frac{\hbar}{2}
+$$
+
+## Types / Variables
+
+| Symbol | Meaning | Units / notes |
+|--------|---------|----------------|
+| $\Delta x$ | uncertainty in position | length |
+| $\Delta p$ | uncertainty in momentum | mass × velocity |
+| $\hbar$ | reduced Planck constant | $\hbar = h / 2\pi$ |
+| $h$ | Planck constant | — |
+
+## Fundamental Meaning
+
+No electron can possess a sharp location and a sharp momentum at the same time. The product of the two uncertainties has a hard lower bound set by $\hbar/2$.
+
+## Consequences of the “Blur”
+
+- Prevents electrons from collapsing into the nucleus
+- Enables transistors to switch (quantum effects in semiconductors)
+- Supplies the superposition states quantum computers exploit
+
+## Thought Experiment
+
+If $\Delta x\,\Delta p$ could be driven all the way to zero, which working device would fail first?
