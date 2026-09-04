@@ -232,4 +232,4 @@ SP(θ) = Δ(θ) × S(θ) × C(θ)
 ```
 
 where each angular domain θ corresponds to a social mode.  
-The chart’s lobes visualize **pressure anisotropy** — uneven distribution of felt meaning gradients across relational directions.
+Lobes visualize **pressure anisotropy** — uneven distribution of felt meaning gradients across relational directions.
