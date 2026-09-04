@@ -1,5 +1,7 @@
 # Spiritual Pressure
-- RDG-Compatible Operator: 
+129 Consciousness / metaphysical forces
+
+- RDG-Compatible Operator:
 *Tri-factor relational operator* 
 
 **Spiritual Pressure is a triadic relational force:**
