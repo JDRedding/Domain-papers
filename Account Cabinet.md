@@ -16,7 +16,9 @@
 
 3. Box, removable flexible hangers, and trays hung by flexible supports.
 
-4–5. Inclined-back box, removable flexible hangers, trays attached to the hangers (with or without separate flexible supports), each tray advanced relative to the one above, rear ends on the inclined back.
+4. Inclined-back box, removable flexible hangers, trays attached to the hangers (with or without separate flexible supports), each tray advanced relative to the one above, rear ends on the inclined back.
+
+5. Inclined-back box, removable flexible hangers, trays attached to the hangers (with or without separate flexible supports), each tray advanced relative to the one above, rear ends on the inclined back.
 
 6. Casing, superposed trays, each with individual collapsible supports, and means in the casing to which those supports attach.
 
