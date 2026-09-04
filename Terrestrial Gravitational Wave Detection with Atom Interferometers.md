@@ -153,7 +153,7 @@ Resonance time:
             π/ω = 1/(2f)    if f_min < f < f_max
             0               otherwise
 
-## Why $\pi/\omega = 1/(2f)$
+Why $\pi/\omega = 1/(2f)$?
 
 A monochromatic GW is
 
