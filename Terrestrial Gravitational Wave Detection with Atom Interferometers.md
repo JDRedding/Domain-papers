@@ -94,15 +94,7 @@ Source: *Terrestrial Gravitational Wave Detection with Atom Interferometers*.
 
 Linearized metric: 
 
-$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ 
-
-with
-
-$\lvert h_{\mu\nu}\rvert\ll 1$
-
-and 
-
-$\eta_{\mu\nu}=\mathrm{diag}(-1,1,1,1)$.
+$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ with $\lvert h_{\mu\nu}\rvert\ll 1$ and $\eta_{\mu\nu}=\mathrm{diag}(-1,1,1,1)$.
 
 TT-gauge line element for a wave along $x$:
 
@@ -188,7 +180,7 @@ $$
 
 On resonance the factors $\sin(\omega Q T)/\cos(\omega T/2)$ and $\sin(\omega T/2-\cdots)$ in $\Delta\phi(\omega,h)$ add coherently instead of cancelling.
 
-## Why the “else $0$” branch
+Why the “else $0$” branch?
 
 They refuse a resonant segment that does not fit the apparatus:
 
