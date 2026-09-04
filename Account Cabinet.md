@@ -18,17 +18,15 @@
 
 4. Inclined-back box, removable flexible hangers, trays attached to the hangers (with or without separate flexible supports), each tray advanced relative to the one above, rear ends on the inclined back.
 
-5. Inclined-back box, removable flexible hangers, trays attached to the hangers (with or without separate flexible supports), each tray advanced relative to the one above, rear ends on the inclined back.
+5. Casing, superposed trays, each with individual collapsible supports, and means in the casing to which those supports attach.
 
-6. Casing, superposed trays, each with individual collapsible supports, and means in the casing to which those supports attach.
+6. Trays on flexible hangers/supports with inverted-V forward extensions, apex of one in the opening of the extension above.
 
-7. Trays on flexible hangers/supports with inverted-V forward extensions, apex of one in the opening of the extension above.
+7. Same, with forward and rear extensions inclined so as to overlap the tray above.
 
-8. Same, with forward and rear extensions inclined so as to overlap the tray above.
+8. Sides and ends of each tray inclined outward so as to overlap the tray above.
 
-9. Sides and ends of each tray inclined outward so as to overlap the tray above.
-
-10–11. Upward-outward / inverted-V forward extensions as above.
+9. Upward-outward / inverted-V forward extensions as above.
 
 ---
 
