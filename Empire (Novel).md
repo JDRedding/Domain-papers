@@ -1063,7 +1063,12 @@ We can treat this as a **lattice‑embedded field** plus a **surface barrier fie
 
 ### 1. Lattice‑embedded field: strengthening the beryl‑steel
 
-Let the hull material be a lattice with atoms at positions $\mathbf{r}_i$.  
+Let the hull material be a lattice with atoms at positions:
+
+$$
+\mathbf{r}_i
+$$
+
 Define an **impregnation field** $\Phi_{\text{imp}}(\mathbf{r})$ that is anchored to the lattice.
 
 Each atom carries a local trapping potential:
