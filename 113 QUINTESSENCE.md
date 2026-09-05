@@ -2,7 +2,7 @@
 - Relational Rendering and Interpretation
 - 113 — Cosmology (metaphysical)
   
-Quintessence as metaphysical element or cosmological field.
+Quintessence as metaphysics or cosmology.
 
 ---
 
