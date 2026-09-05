@@ -83,7 +83,7 @@ giants (jötnar) & monstrous children of loki
 ---
 
 # ⭐ dwarves & elves
-(not gods but important)
+not gods but important
 
 - **Dwarves** — master smiths; creators of Mjölnir, Gungnir, Draupnir  
 - **Álfar** — elves; associated with Freyr and fertility  
