@@ -22,7 +22,7 @@ Aristotle’s aether is the **fifth relational mode** — the invariant that:
 
 In Relational terms:
 
-> **Aether = the SID‑invariant that keeps the celestial geometry stable under transformation.**
+> **Aether = the invariant that keeps the celestial geometry stable under transformation.**
 
 Medieval alchemists attempted to *extract* quintessence, but in Relational this becomes:
 
@@ -98,8 +98,8 @@ Quintessence = difference(set of parts, system)
 
 This is the distinction:
 
-- **SID**: structural relation  
-- **PED**: dynamic potential  
+- **SID**: structural relation (Structure, interaction, dynamics) 
+- **PED**: dynamic potential (Power, Evaluation, Dynamic-slic)
 
 Quintessence is the **bridge**.
 
