@@ -12,6 +12,8 @@
 
 He’s writing a **paranoid epistemological loop**.
 
+Memory manipulation raises questions about identity by blurring the lines between real and false memories, leading the protagonist, Douglas Quail, to struggle with his sense of self. As he uncovers repressed memories, it becomes clear that his true identity is intertwined with both his actual experiences and the fabricated ones he sought to escape his mundane life.
+
 The story is about:
 - the instability of identity  
 - the unreliability of memory  
