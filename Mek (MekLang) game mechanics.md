@@ -266,7 +266,7 @@ Each turn:
 3. Apply its *do* clause.
 4. End turn.
 
-### 6.2 Priority declaration
+#### 6.2 Priority declaration
 
 ```
 priority <integer>
@@ -331,7 +331,7 @@ Color        = Identifier ;
 
 ---
 
-### Future work 
+## Future work 
 
 - MekLang syntax  
 - Mechanics vs games distinction  
