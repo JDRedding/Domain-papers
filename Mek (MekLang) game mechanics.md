@@ -333,7 +333,6 @@ Color        = Identifier ;
 
 ## Future work 
 
-- MekLang syntax  
 - Mechanics vs games distinction  
 - Comparison with GVGAI  
 - Examples of mechanics implemented in Mek
