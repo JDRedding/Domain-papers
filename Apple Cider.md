@@ -1,6 +1,6 @@
 # Apple Cider Recipes
 
-Apple cider can be used in a wide range of recipes, from cozy hot drinks to baked treats and savory meals, offering sweet, tangy, and spiced flavors perfect for any season. Apple cider is one of those ingredients that quietly does *everything*—sweet, savory, boozy, cozy, bright. You already laid out a strong foundation, so I’ll deepen it, organize it for practical use, and add a few advanced techniques that make cider-based cooking really shine. With apple cider as a base, you can experiment with both classic autumn flavors and modern twists to create comforting drinks, indulgent desserts, and hearty main courses.
+Apple cider can be used in a wide range of recipes, from cozy hot drinks to baked treats and savory meals, offering sweet, tangy, and spiced flavors perfect for any season. Apple cider is one of those ingredients that quietly does *everything*—sweet, savory, boozy, cozy, bright.  With apple cider as a base, can experiment with both classic autumn flavors and modern twists to create comforting drinks, indulgent desserts, and hearty main courses.
 
 ## 🍎 Core  
 Apple cider is a **high‑aroma, high‑acidity sweetener** that works as a base, braising liquid, reduction syrup, cocktail mixer, and baking enhancer. Its power comes from **evaporation** (concentrating flavor) and **spice absorption** (carrying aromatics better than water).
