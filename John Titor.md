@@ -16,7 +16,7 @@ By January 2001 he was using the name John Titor and also posting on Art Bell’
 
 ## Claims and Time Machine
 
-Titor described a “stationary mass, temporal displacement unit” powered by dual top-spin singularities—essentially miniature black holes—capable of bending spacetime.
+Titor described a “*stationary mass, temporal displacement unit*” powered by dual top-spin singularities—essentially miniature black holes—capable of bending spacetime.
 
 He said he installed the device in a 1967 Chevrolet Corvette for travel to 1975, then later transferred it to a 1987 four-wheel-drive vehicle during his stopover in 2000. His posts included technical diagrams, operational details, and photographs, which added to the story’s apparent realism.
 
