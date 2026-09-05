@@ -1472,3 +1472,243 @@ Accumulator stacks in *Empire* are:
 - Fed by Craven’s collector field, which turns ambient and hostile radiation into input power.  
 - Discharging into drives, beams, and screens with high efficiency but finite $P_{\text{max,out}}$.  
 - Strategically powerful, but ultimately limited compared to Page’s material‑energy engines.
+
+## APPENDIX: *Invincible*’s drive
+
+### ⭐ Unified Reconstruction  
+The *Invincible*’s drive is a **four‑component system**:
+
+1. **Material‑Energy Engines**  
+   - Provide tens of billions of horsepower  
+   - Convert matter to arbitrary radiation or electrical output  
+
+2. **Gravity‑Concentration Lens**  
+   - Gathers ambient gravitational flux  
+   - Forms a forward gravity well  
+   - Ship accelerates by falling into it  
+
+3. **Anti‑Entropy Mirrors**  
+   - Collimate the gravity well  
+   - Provide steering  
+   - Maintain field geometry  
+
+4. **4‑D Translation Geometry**  
+   - Allows superluminal motion  
+   - Allows towing another ship at FTL  
+   - Maintains causality in 4‑space
+ 
+---
+
+#### 🚀 1. Material‑Energy Engines 
+— The Power Core  
+
+These engines supply the unimaginable wattage needed to shape space itself.
+
+> “Two banks of five massive material-energy engines… each capable of more than five billion horsepower.”
+
+Let the ten main engines produce:
+
+$$
+P_{\text{ME}} = \sum_{i=1}^{10} P_i
+\quad\text{with}\quad
+P_i > 5\times10^9\ \text{hp}
+$$
+
+Convert to SI:
+
+$$
+P_{\text{ME}} \sim 4\times10^{13}\ \text{W}
+$$
+
+This power is used not for thrust but for **field maintenance**:
+
+- Holding the gravity well tight  
+- Collimating the well with anti‑entropy mirrors  
+- Running tractor fields  
+- Running screens  
+- Running the televisor and teletransport  
+
+The engines convert matter to energy:
+
+$$
+E_m = m c^2
+$$
+
+with arbitrary frequency/wavelength output:
+
+$$
+P_{\text{elec}}(f),\quad P_{\text{rad}}(\lambda)
+$$
+
+This is the **raw fuel** for the drive.
+
+---
+
+#### 🌌 2. Gravity‑Concentration Lens 
+— The Actual Drive  
+
+This is the heart of the ship.
+
+> “A gravity-concentration field is formed ahead of the bow—a ‘fourth-dimensional lens’ that gathers existing gravitational lines from space and from distant masses. The ship *falls* into that well; the well is moved forward as fast as the engines can hold it tight.”
+
+Let the ambient gravitational field be:
+
+$$
+\mathbf{g}(\mathbf{r})
+$$
+
+The lens operator $\mathcal{L}_4$ reshapes this into a concentrated 4‑D bundle:
+
+$$
+\mathbf{g}_4 = \mathcal{L}_4[\mathbf{g}]
+$$
+
+This bundle is then **collimated** into a single forward axis by anti‑entropy mirrors:
+
+$$
+\mathbf{g}_c = \mathbf{M}_{\mathrm{AE}}\,\mathbf{g}_4
+$$
+
+The ship accelerates by **falling** into this artificial well:
+
+$$
+\mathbf{a}_{\text{ship}} \approx \mathbf{g}_c
+$$
+
+The well is moved forward by the engines:
+
+$$
+\frac{d}{dt}\mathbf{r}_{\text{well}}
+= \mathbf{v}_{\text{ship}} + \boldsymbol{\ell}(\text{control})
+$$
+
+This is not thrust.  
+It is **controlled free‑fall into a movable gravity well**.
+
+---
+
+#### 🔭 3. Anti‑Entropy Mirrors
+— Steering and Collimation  
+
+> “Anti-entropy mirrors collimate the force so the fall is only forward. Throw a lever and the ship sheers off by changing mirror angle, not by firing a thruster.”
+
+Anti‑entropy freezes energy states:
+
+$$
+\frac{\partial u}{\partial t} = 0
+$$
+
+and perfectly reflects radiation:
+
+$$
+R_{\mathrm{AE}} = 1,\quad A_{\mathrm{AE}} = 0
+$$
+
+The mirrors act as **gravity reflectors**, shaping the concentrated field:
+
+$$
+\mathbf{g}_c = g_c\,\hat{\mathbf{n}}_{\text{bow}}
+$$
+
+Changing mirror angles changes $\hat{\mathbf{n}}_{\text{bow}}$:
+
+$$
+\hat{\mathbf{n}}_{\text{bow}} = \hat{\mathbf{n}}_{\text{bow}}(\theta,\phi)
+$$
+
+Thus:
+
+- **Steering** is done by mirror angle  
+- **Acceleration** is done by gravity well depth  
+- **Speed** is done by how fast the well is marched forward  
+
+This is why the *Invincible* has no rockets.
+
+---
+
+#### ⚡ 4. Superluminal Translation 
+— The FTL Mechanism  
+
+The book never says “warp drive,” but the behavior is clear:
+
+- The ship outruns light.  
+- It drags Craven’s ship with it.  
+- It leaves the Solar System rapidly.  
+
+This is a natural consequence of the **4‑D gravity lens**:
+
+The lens operator $\mathcal{L}_4$ reshapes gravitational flux in a higher‑dimensional space.  
+The ship’s motion is governed by:
+
+$$
+\mathbf{a}_{\text{ship}} = \mathbf{g}_c^{(4\text{D})}
+$$
+
+The **path** of the ship is not a geodesic in ordinary 3‑space but in a modified 4‑space:
+
+$$
+\gamma(\tau):\ \mathbf{R}^{(4)}(\tau)
+$$
+
+The 3‑D projection of this path can exceed $c$ without violating local causality in the 4‑D geometry.
+
+Thus the drive is:
+
+- A **4‑D gravity lens**  
+- Collimated by **anti‑entropy mirrors**  
+- Powered by **material‑energy engines**  
+- Producing **superluminal translation**  
+
+This is exactly the behavior described in the novel.
+
+---
+
+### 🧩 5. Drive Stability and Power Requirements  
+
+> “A heavy ship at high acceleration would tend to enlarge it, open it up, and the field could be kept tight by supplying energy.”
+
+So the well width $w$ obeys:
+
+$$
+\frac{dw}{dt}
+\propto
+\frac{M_{\text{ship}}\,|\mathbf{a}|}{P_{\text{hold}}}
+$$
+
+If $P_{\text{hold}}$ is too low:
+
+- The well spreads  
+- Acceleration drops  
+- Steering becomes sloppy  
+- The ship risks losing control  
+
+This is why the *Invincible* needs **ten** material‑energy engines.
+
+---
+
+### 🧲 6. Interaction with Tractor Fields  
+When towing Craven’s ship:
+
+$$
+M_{\text{eff}} = M_I + M_C
+$$
+
+Thus:
+
+$$
+P_{\text{drive,eff}} \propto M_{\text{eff}}\,|\mathbf{a}|
+$$
+
+The tractor field enforces:
+
+$$
+\mathbf{R}_C^{(4)} - \mathbf{R}_I^{(4)} = \mathbf{D}_0
+$$
+
+so both ships share the same 4‑D trajectory.
+
+This is why the *Invincible* can tow Craven’s ship **faster than light**.
+
+---
+
+
