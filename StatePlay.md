@@ -1,0 +1,125 @@
+# StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation
+**StatePlay’s core contribution is simple but important:** it proves that *game world models must predict internal game state* (HP, meters, timers) **alongside** pixels if they want to generate rollouts that obey real game mechanics.  
+
+> StatePlay is a state-aware, mechanics-consistent generative framework that fundamentally improves the utility and playability of procedurally generated game content. By integrating mechanics constraints into the generative model, it ensures that AI-generated game worlds are both creative and functionally coherent, representing a step forward in intelligent game content generation.
+
+The paper introduces **StatePlay**, a computational framework for game world modeling that emphasizes both state awareness and mechanics consistency. Unlike conventional procedural content generation (PCG) methods that primarily focus on generating visually plausible or statistically coherent environments, StatePlay integrates an explicit model of game mechanics into the generation process. This ensures that generated game worlds are not only visually and structurally coherent but also playable under defined game rules.
+
+## 🧩 What StatePlay Actually Does 
+StatePlay is a **mixture‑of‑transformers world model** that predicts:
+
+- **Visual frames**
+- **Internal game states** (HP, skill meters, timers)
+- **Cross‑modal interactions** so state guides frame generation
+
+This reduces mechanics violations by **18.6%** and predicts states with **<0.06 normalized L1 error**
+
+## ⚙️ Architecture Breakdown
+### 1. **Mixture‑of‑Transformers (MoT)**
+Two branches:
+
+- **Visual Transformer** — specialized for frame generation  
+- **State Transformer** — specialized for symbolic state evolution
+
+Each branch has its own objective, but they exchange information.
+
+### 2. **Cross‑Modal Interaction**
+Predicted states guide frame generation, ensuring:
+
+- HP bars match actual HP  
+- Skill meters fill/empty correctly  
+- Timers advance consistently  
+- Visual events obey mechanics
+
+### 3. **Action‑Conditioned Rollouts**
+StatePlay is a *world model*, not a video generator:
+
+- Input: past frames + past states + player actions  
+- Output: next frame + next state
+
+This is a discrete-time dynamical system, not a diffusion model.
+
+### State-Aware World Representation
+
+- Game worlds are represented as **state graphs**, where nodes correspond to game entities or environment states, and edges represent valid transitions according to the game's mechanics.
+- Each state includes dynamic information such as player position, resource count, and object states, enabling prediction of mechanically valid interactions.
+
+### Mechanics-Consistent Generation
+
+StatePlay leverages **forward-simulation** and **constraint propagation** to ensure any generated content respects game rules:
+
+- Obeys player movement constraints
+- Maintains solvable level objectives
+- Preserves interaction invariants
+
+The model prevents generation of unreachable or paradoxical scenarios (e.g., locked doors without keys, resources inaccessible to the player).
+
+### Learning Framework
+
+- Combines **graph neural networks (GNNs)** with probabilistic modeling to predict valid state transitions and evaluate action feasibility.
+- The architecture can synthesize new game areas by sampling state sequences that satisfy both mechanical constraints and stylistic diversity constraints learned from existing game datasets.
+
+## Evaluation and Results
+
+Experimental validation shows:
+
+- Higher mechanical validity rates compared to baseline PCG models
+- Stronger alignment with human-level playability norms
+- Ability to generalize across genres, including platformers, puzzles, and adventure games
+
+## 🎮 Mechanics Fidelity Improvements
+StatePlay improves mechanics consistency by **18.6%** over pixel‑only models.  
+Examples of fixed inconsistencies:
+
+- No attacks at zero HP  
+- No super moves without full meter  
+- No mismatched timers  
+  [arXiv.org](https://arxiv.org/html/2607.26754v1)
+
+StatePlay addresses a fundamental gap in PCG research: ensuring that generated game worlds are not only varied but also playable, which is critical for automated content generation that can be directly used in game design.
+
+The approach bridges AI-driven creativity with formal game mechanics modeling, providing a blueprint for future research in mechanics-aware generative algorithms.
+
+## 🧠 Why This Matters for Game AI
+Most world models generate pixels conditioned on actions.  
+But games are **state machines**, not videos.
+
+StatePlay’s authors argue:
+
+> Pixel‑only models produce visually plausible but mechanically impossible rollouts.  
+> (e.g., attacking at 0 HP, activating skills without meter).   [arXiv.org](https://arxiv.org/html/2607.26754v1)
+
+Their fix is to **explicitly model the hidden state machine**.
+
+This is extremely close to TRUE/MFE philosophy:  
+**visual stream ≠ game reality; the state machine is the real substrate.**
+
+### Potential Applications
+
+- Procedural level design for video games with guaranteed playability
+- Dynamic world generation in open-world or sandbox games
+- AI-assisted testing by generating mechanically valid edge-case worlds
+- Educational game content that adapts to player state while ensuring solvable mechanics
+
+---
+
+## 📊 Comparison Table (StatePlay vs. Pixel‑Only Models)
+
+| **Model Type** | **Internal State?** | **Mechanics Fidelity** | **Common Failures** |
+|----------------|---------------------|-------------------------|----------------------|
+| **Pixel‑only world models** | No | Low | Attacks at 0 HP, illegal skill activations |
+| **StatePlay (MoT)** | Yes | **+18.6% improvement** | Far fewer rule violations |
+| **TRUE/MFE (system)** | Yes (explicit triadic state machine) | Deterministic mechanics | No violations by design |
+
+---
+
+## 🧭 Future Work 
+
+- **mechanics‑aware generative models**  
+- **MoT architectures**  
+- **state‑conditioned video generation**  
+- **TRUE StatePlay MFE**  
+
+
+## **Citation:** 
+- Zijun Lin, Zeqing Wang, Cheston Tan, Bihan Wen, Yeying Jin, *StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation*, 2026.
