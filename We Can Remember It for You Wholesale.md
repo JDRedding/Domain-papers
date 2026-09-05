@@ -2,6 +2,11 @@
 
 **“*We Can Remember It for You Wholesale*”** (1966) is Philip K. Dick’s short story about a clerk named Douglas Quail who cannot afford a real trip to Mars, so he buys an implanted memory of one — only to discover layers of real, suppressed identity underneath the fantasy.
 
+## Themes
+- Memory vs. Reality: The story challenges the distinction between real and implanted memories.
+- Identity: It raises questions about how memories shape our understanding of who we are.
+- Fantasy vs. Reality: The allure of living out fantasies through artificial memories is a central theme.
+
 ## **What Dick is actually doing**
 > Dick is not writing an action thriller.
 
