@@ -25,17 +25,38 @@ The novel follows the political and scientific struggle over control of the Sola
 ### **Scientific breakthroughs** 
 Russ and Manning discover how to harness material energy and develop advanced technologies, including a space drive and highly sophisticated three-dimensional television/spying devices.
 
+Russell Page, financed and partnered with Gregory Manning, works out a way to tap **material energy**: energy drawn from matter itself by treating space as four-dimensional and using what the story calls an anti-entropy / collector-field approach. That power source is the core breakthrough. It makes Interplanetary Power’s accumulator monopoly obsolete.
+
+From that they build:
+
+- A **drive** based on concentrating gravitational lines (a curvature / gravity-concentration field) rather than conventional rockets or Chambers’s accumulators. That is what later powers the *Invincible*.
+- A **three-dimensional televisor** that is not ordinary TV. They can send a viewing field through steel and stone, park it inside Chambers’s office, and watch and listen in real time. It is used as both a scientific instrument and a spy device.
+
 ### **Political and economic intrigue**
 The protagonists use the new technology to expose Chambers and fight his influence in the markets, leading to high-stakes power plays.
+
+Manning and Page use the three-dimensional televisor to watch Chambers’s inner circle (including the moment they see Harry Wilson—who has sold them out—in Chambers’s office with Craven). That intelligence tells them when and how Interplanetary is moving.
+
+They then take the fight to the markets. On what the text flags as 6 November 2153, Manning and his ally Ben Wrail hit the Ranthoor exchange. Stocks Chambers depends on are driven down; Chambers loses billions on paper; Wrail and Manning come out far richer. Manning’s line is explicit: they are out to bust Interplanetary Power, not merely nibble at it.
 
 ### **Escalation to conflict** 
 As Chambers sees his empire threatened, he turns to increasingly ruthless tactics, including hiring the dangerous Stutsman and using his own scientist, Craven, against Manning and Page.
 
+Stutsman is already Chambers’s man at the opening — the “iron heel” on Callisto, sending spacegrams about John Moore Mallory and the restless Jovian worlds. As Manning and Page start to bite, Chambers leans on him harder: more coercion, prison ships, and open force when markets and politics are no longer enough.
+
+Craven is Interplanetary’s house scientist. After Harry Wilson defects with partial knowledge of Page’s apparatus, Craven builds a copy and spends the rest of the story trying to match or blank the new televisors, collector fields, and gravity drives. He is the technical counterweight to Page; Stutsman is the political and physical one.
+
 ### **Space battle**  
 The story culminates in a confrontation between the protagonists’ ship, the *Invincible*, and Craven’s ship, built around force-field manipulation and technological warfare.
 
+The *Invincible* is Manning and Page’s purpose-built ship: a huge hull fitted with banks of material-energy plants and a gravity-concentration drive. Craven’s ship is the matching Interplanetary vessel, carrying Chambers and Stutsman as well. The fight is not gunnery in the usual sense. Both sides throw collector fields, tractor fields, gravity screens, and enormous energy bolts; engines are run up to billions of horsepower to punch or hold the other ship. At one point they lock together and the *Invincible* tows Craven’s ship out of the Solar System. It reads as a duel of force fields and power plants more than a conventional space battle.
+
 ### **Close**
-The recording ends with a vision of a liberated future as the space lanes are cleared.
+The story ends with a vision of a liberated future as the space lanes are cleared. Mostly — the ending is liberation, not a long utopian speech.
+
+Interplanetary Power is finished. Material-energy engines are running on every world, including Earth; the old accumulator monopoly is dead. Chambers, Craven, and Stutsman are last seen locked to the *Invincible*’s tractor field and then lost, heading for the wrong star. Manning and Page treat the fight as over.
+
+The book does not linger on a detailed future program. The last image is brief and outward-looking: a light winking into space from Earth’s night side—the space lanes open again. 
 
 ## 📚 Critical views  
 
