@@ -98,8 +98,6 @@ Key features:
 
 This is why African greys stand out: they don’t just mimic; they **assign meaning**.
 
-You can dive deeper via **vocal learning**.
-
 ---
 
 ### 🧩 **3. Social Complexity**  
