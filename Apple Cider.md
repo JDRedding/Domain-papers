@@ -7,9 +7,9 @@ Apple cider is a **high‑aroma, high‑acidity sweetener** that works as a base
 
 ### Core Apple Cider Ingredients  
 - **Apple cider**  
-- **Whole spices****:** cinnamon sticks, cloves, allspice, star anise  
-- **Ground spices****:** cinnamon, nutmeg, ginger  
-- **Citrus****:** oranges, lemons  
+- **Whole spices:** cinnamon sticks, cloves, allspice, star anise  
+- **Ground spices:** cinnamon, nutmeg, ginger  
+- **Citrus:** oranges, lemons  
 
 ### 🍏 Advanced Tips for Homemade Cider
 
