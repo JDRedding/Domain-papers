@@ -1197,4 +1197,278 @@ The hull impregnation field in *Empire* can be reconstructed as:
 - A **localized cousin** of anti‑entropy, sharing its trapping and non‑absorptive characteristics but bound to the hull.  
 - A system with **finite field strength**, able to defeat ordinary kinetic threats but vulnerable to extreme, saturated space fields like Craven’s.
 
+## APPENDIX: Space‑Field Tractor Beam
+It’s less a “beam that pulls” and more a **field‑rigid link** that turns two ships into one dynamically bound object.
 
+### 1. What the tractor field does in the story
+
+> “At one point they lock together and the *Invincible* tows Craven’s ship out of the Solar System. It reads as a duel of force fields and power plants more than a conventional space battle.”  
+
+So operationally, the tractor field:
+
+- **Locks** Craven’s ship to the *Invincible* at some separation.  
+- Maintains that lock while the *Invincible* runs its gravity‑concentration drive.  
+- **Drags** Craven’s ship along—eventually out of the Solar System, even faster than light.  
+- Transfers momentum and acceleration through a **field link**, not a physical tow cable.
+
+We can treat it as a **binding field** that enforces a relative position constraint and carries the stress between the two masses.
+
+---
+
+### 2. Binding operator: locking two ships together
+
+Let the *Invincible* have mass $M_I$, position $\mathbf{R}_I(t)$;  
+Craven’s ship: mass $M_C$, position $\mathbf{R}_C(t)$.
+
+Define a **tractor field** $\Phi_{\text{T}}(\mathbf{r},t)$ that imposes:
+
+$$
+\mathbf{R}_C(t) - \mathbf{R}_I(t) = \mathbf{d}_0
+$$
+
+for some fixed separation vector $\mathbf{d}_0$.
+
+This is the **lock**: the field enforces a constraint on relative position.
+
+We can model the binding as a stiff “spring” in field form:
+
+$$
+\mathbf{F}_{\text{T}} = -k_{\text{T}}\left[(\mathbf{R}_C - \mathbf{R}_I) - \mathbf{d}_0\right]
+$$
+
+with $k_{\text{T}}$ very large, so deviations from $\mathbf{d}_0$ are tiny.
+
+---
+
+### 3. Momentum and acceleration transfer
+
+When the *Invincible* accelerates with its gravity‑concentration drive, the tractor field must:
+
+- Apply a **forward force** on Craven’s ship.  
+- Apply an equal and opposite **reaction force** on the *Invincible*.  
+
+Equations of motion:
+
+$$
+M_I \mathbf{a}_I = \mathbf{F}_{\text{drive}} - \mathbf{F}_{\text{T}}
+$$
+
+$$
+M_C \mathbf{a}_C = \mathbf{F}_{\text{T}}
+$$
+
+With the lock constraint $\mathbf{a}_C \approx \mathbf{a}_I$, the tractor field carries the stress needed to make both ships share the same acceleration.
+
+The field itself handles the momentum bookkeeping—consistent with the book’s general habit of shunting momentum into higher‑dimensional structures.
+
+---
+
+### 4. Coupling to the gravity‑concentration drive
+
+The *Invincible*’s drive creates a concentrated gravity well ahead of the bow:
+
+$$
+\mathbf{g}_c = \mathbf{M}_{\mathrm{AE}}\,\mathcal{L}_4[\mathbf{g}]
+$$
+
+The tractor field must:
+
+- Extend the **effective well** to include Craven’s ship.  
+- Ensure that both ships “fall” into the same moving gravity concentration.
+
+We can express this as an **effective mass**:
+
+$$
+M_{\text{eff}} = M_I + M_C
+$$
+
+and a modified drive power requirement:
+
+$$
+P_{\text{drive,eff}} \propto M_{\text{eff}}\,|\mathbf{a}|
+$$
+
+The tractor field is the mechanism that makes Craven’s ship behave as part of the *Invincible*’s mass distribution for drive purposes.
+
+---
+
+### 5. FTL towing and higher‑dimensional geometry
+
+In the climax, the locked pair go **faster than light** and out of the Solar System. That implies:
+
+- The gravity lens and anti‑entropy mirrors are already using a **higher‑dimensional geometry** to bypass ordinary relativistic limits.  
+- The tractor field must be compatible with that geometry, maintaining the lock in 4‑space as well as 3‑space.
+
+So the constraint really lives in 4‑space:
+
+$$
+\mathbf{R}_C^{(4)}(t) - \mathbf{R}_I^{(4)}(t) = \mathbf{D}_0
+$$
+
+with the 3‑D projection giving the observed separation.
+
+The tractor field is thus a **4‑D binding field** that rides on top of the same space‑warping machinery as the drive.
+
+---
+
+### 6. Power and stress limits
+
+The tractor field has a finite stiffness $k_{\text{T}}$ and a finite field strength. Under extreme acceleration:
+
+- The stress in the field grows:
+
+$$
+\sigma_{\text{T}} \propto k_{\text{T}}\,|\mathbf{a}|
+$$
+
+- If $\sigma_{\text{T}}$ exceeds a maximum $\sigma_{\text{T,max}}$, the lock would fail.
+
+In the story, the *Invincible* has enough power and field strength to:
+
+- Maintain the lock.  
+- Tow Craven’s ship out of the system.  
+
+But this is clearly near the edge of what the fields can do—part of why the duel ends with **escape and exile**, not continued close‑range fighting.
+
+---
+
+### 7. Compact summary
+
+The tractor field in *Empire* is best reconstructed as:
+
+- A **binding field** $\Phi_{\text{T}}$ that enforces a fixed relative position between two ships.  
+- A **momentum‑transfer mechanism** that carries the stress of shared acceleration.  
+- A **drive‑coupled extension** of the gravity lens, effectively adding the towed ship’s mass to the drive’s load.  
+- A **higher‑dimensional lock** compatible with FTL motion.  
+- A system with finite stiffness and strength, powerful enough to tow Craven’s ship out of the Solar System but not invulnerable.
+
+
+## APPENDIX: Accumulator stacks 
+
+### 1. What the accumulators do in the story
+
+Interplanetary Power’s whole business is built on **accumulator stacks**:
+
+- They **store radiant energy** (from conventional sources, and later from Craven’s collector field).  
+- They **release it as power** for drives, beams, and industrial use.  
+- In the duel, Craven’s collector field **feeds** these stacks with Greg’s own beams, turning attack into fuel.  
+
+They’re not material‑energy plants; they’re **high‑capacity energy storage**.
+
+---
+
+### 2. Basic storage law
+
+Let $E_{\text{acc}}(t)$ be the total energy stored in the accumulator stacks.
+
+The fundamental law is:
+
+$$
+\frac{dE_{\text{acc}}}{dt} = P_{\text{in}}(t) - P_{\text{out}}(t)
+$$
+
+- **$P_{\text{in}}$:** power flowing into the stacks (from collectors, conventional sources).  
+- **$P_{\text{out}}$:** power drawn for drives, beams, screens, etc.
+
+There is a **maximum capacity** $E_{\text{max}}$:
+
+$$
+E_{\text{acc}}(t) \le E_{\text{max}}
+$$
+
+Beyond that, additional input either spills or destabilizes the system.
+
+---
+
+### 3. Coupling to Craven’s collector field
+
+> “Craven’s later **collector field** is a rival idea: a space field that drinks free radiant energy from the Sun and from space at large, then re-emits it as a weapon or a screen. That is how he matches them for a while without a true material-energy plant.”  
+
+So:
+
+$$
+P_{\text{in}}(t) = P_{\text{ambient}}(t) + P_{\text{beam}}(t)
+$$
+
+- **$P_{\text{ambient}}$:** sunlight and general space radiation.  
+- **$P_{\text{beam}}$:** Greg’s attack beams, which the collector absorbs and dumps into the stacks.
+
+This is why Greg’s first billion‑horsepower barrages **help** Craven: they increase $P_{\text{in}}$ instead of causing damage.
+
+---
+
+### 4. Discharge and output
+
+When Craven uses the stored energy:
+
+$$
+P_{\text{out}}(t) = P_{\text{drive}}(t) + P_{\text{weapons}}(t) + P_{\text{screens}}(t) + P_{\text{ship}}(t)
+$$
+
+Each term is a draw on $E_{\text{acc}}$:
+
+- **Drive:** conventional or field‑based propulsion.  
+- **Weapons:** beams, saturated space fields.  
+- **Screens:** defensive fields.  
+- **Ship:** life support, systems.
+
+Discharge efficiency $\eta_{\text{out}}$ (implicitly high):
+
+$$
+P_{\text{usable}}(t) = \eta_{\text{out}}\,P_{\text{out}}(t)
+$$
+
+---
+
+### 5. Saturation and overload
+
+When Craven saturates space with his fields, he’s effectively running the stacks near their limits:
+
+- If $E_{\text{acc}} \to E_{\text{max}}$, any extra $P_{\text{in}}$ must be dumped quickly as **hostile fields** (weapons/screens) or lost.  
+- If $P_{\text{out}}$ exceeds what the stacks can safely deliver, internal stress rises—risking failure or runaway discharge.
+
+We can express a safe operating condition:
+
+$$
+P_{\text{out}}(t) \le P_{\text{max,out}}
+$$
+
+and a saturation condition:
+
+$$
+E_{\text{acc}}(t) \approx E_{\text{max}}
+$$
+
+In the duel, Craven rides close to these limits to match the *Invincible*’s material‑energy engines.
+
+---
+
+### 6. Strategic contrast with material‑energy
+
+Page’s material‑energy engines obey:
+
+$$
+E_m = m c^2
+$$
+
+and can, in principle, produce **arbitrary power** from onboard mass.
+
+Craven’s accumulators are bounded by:
+
+- **Input flux** (what the collector can harvest).  
+- **Capacity** $E_{\text{max}}$.  
+- **Safe output** $P_{\text{max,out}}$.
+
+So accumulators + collector can **match** Page for a while, but they’re fundamentally **storage‑limited**, not creation‑limited.
+
+---
+
+### 7. Compact summary
+
+Accumulator stacks in *Empire* are:
+
+- High‑capacity **radiant energy storage** systems.  
+- Governed by $\frac{dE_{\text{acc}}}{dt} = P_{\text{in}} - P_{\text{out}}$ with finite $E_{\text{max}}$.  
+- Fed by Craven’s collector field, which turns ambient and hostile radiation into input power.  
+- Discharging into drives, beams, and screens with high efficiency but finite $P_{\text{max,out}}$.  
+- Strategically powerful, but ultimately limited compared to Page’s material‑energy engines.
