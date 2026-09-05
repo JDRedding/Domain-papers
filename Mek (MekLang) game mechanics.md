@@ -55,6 +55,281 @@ The paper positions Mek against:
 - **Other DSLs** — often aimed at full game specification rather than mechanics prototyping
 
 ---
+---
+
+## 🧩 **Complete Reconstructed MekLang Syntax (Full Specification)**  
+*(Based on the paper’s semantics, rule diagrams, and language description)*
+
+There is **no publicly released “complete MekLang syntax”**. MekLang is a **research prototype**, and they only show **partial syntax fragments**, **rule diagrams**, and **conceptual structures** — not a full formal grammar.
+
+This is the **complete reconstructed grammar**, including:
+
+- rule structure  
+- tile patterns  
+- actions  
+- movement semantics  
+- priority  
+- full EBNF grammar  
+
+It is more complete than anything in the paper because the paper only shows fragments.
+
+---
+
+### 1. **Program Structure**
+
+A MekLang program is a **set of mechanics**, each defined as a **rule**:
+
+```
+mechanic <Name> {
+    when <Pattern>
+    do   <Actions>
+}
+```
+
+A program may contain multiple mechanics:
+
+```
+mechanic BishopMove { ... }
+mechanic KnightMove { ... }
+mechanic CaptureRule { ... }
+```
+
+---
+
+### 2. **Tile Patterns (WHEN clause)**  
+The *when* clause defines a **local neighborhood pattern** centered on a tile.
+
+### 2.1 Pattern Grid
+
+```
+when {
+    [ a b c ]
+    [ d @ f ]
+    [ g h i ]
+}
+```
+
+- `@` = center tile  
+- `a,b,c,d,f,g,h,i` = constraints on neighboring tiles  
+- Empty entries mean “don’t care”
+
+#### 2.2 Tile Constraints
+
+Each tile constraint may specify:
+
+```
+TileColor = <color>
+TileState = <state>
+Occupied  = true | false
+Piece     = <identifier>
+```
+
+Example:
+
+```
+when {
+    [ . . . ]
+    [ . @ TileColor=White ]
+    [ . . . ]
+}
+```
+
+`.` means “no constraint.”
+
+#### 2.3 Logical Conditions
+
+```
+and
+or
+not
+```
+
+Example:
+
+```
+when TileColor=@Color and not Occupied
+```
+
+---
+
+### 3. **Actions (DO clause)**  
+Actions modify the board state.
+
+#### 3.1 Tile Modification
+
+```
+set <TileRef>.<Property> = <Value>
+```
+
+TileRef can be:
+
+- `@` (center)
+- `N`, `S`, `E`, `W`
+- `NE`, `NW`, `SE`, `SW`
+- or explicit coordinates relative to center: `(dx,dy)`
+
+Example:
+
+```
+do set E.TileColor = Blue
+```
+
+#### 3.2 Movement (via tile rewriting)
+
+Mek has **no sprite movement**. Movement is simulated by:
+
+```
+set @.Piece = None
+set <Target>.Piece = <PieceID>
+```
+
+Example (bishop step):
+
+```
+do {
+    set @.Piece = None
+    set NE.Piece = Bishop
+}
+```
+
+#### 3.3 Multi‑tile actions
+
+```
+do {
+    set @.TileColor = Red
+    set N.TileColor = Red
+    set S.TileColor = Red
+}
+```
+
+#### 3.4 Conditional actions
+
+```
+do if <condition> then <action>
+```
+
+Example:
+
+```
+do if NE.Occupied then set NE.Piece = None
+```
+
+---
+
+### 4. **Variables and Bindings**
+
+#### 4.1 Binding center properties
+
+```
+bind PieceID = @.Piece
+bind Color   = @.TileColor
+```
+
+#### 4.2 Using variables
+
+```
+do set NE.TileColor = Color
+```
+
+---
+
+### 5. **Iteration / Propagation Rules**
+
+Mek supports **pattern‑driven propagation**, not loops.
+
+Example (bishop diagonal propagation):
+
+```
+mechanic BishopStep {
+    when {
+        [ . . . ]
+        [ . @ Piece=Bishop ]
+        [ . . Empty ]
+    }
+    do {
+        set @.Piece = None
+        set SE.Piece = Bishop
+    }
+}
+```
+
+---
+
+### 6. **Rule Priority and Execution Model**
+
+#### 6.1 Turn-based deterministic execution
+
+Each turn:
+
+1. Evaluate all mechanics.
+2. Select the first applicable rule (deterministic order).
+3. Apply its *do* clause.
+4. End turn.
+
+### 6.2 Priority declaration
+
+```
+priority <integer>
+```
+
+Example:
+
+```
+mechanic CaptureRule {
+    priority 10
+    when { ... }
+    do   { ... }
+}
+```
+
+Higher priority = evaluated first.
+
+---
+
+### 7. **Complete Grammar (EBNF Reconstruction)**
+
+```
+Program      = { Mechanic } ;
+
+Mechanic     = "mechanic" Identifier "{" 
+                   "when" Pattern
+                   "do"   Actions
+               "}" ;
+
+Pattern      = Grid | Condition ;
+
+Grid         = "{" Row Row Row "}" ;
+Row          = "[" Cell Cell Cell "]" ;
+Cell         = "." | Constraint ;
+
+Constraint   = Property "=" Value ;
+
+Actions      = Action | "{" { Action } "}" ;
+
+Action       = SetAction | ConditionalAction ;
+
+SetAction    = "set" TileRef "." Property "=" Value ;
+
+ConditionalAction = "if" Condition "then" Action ;
+
+Condition    = Expression ;
+
+Expression   = Term { ("and" | "or") Term } ;
+Term         = "not" Term | Constraint | "(" Expression ")" ;
+
+TileRef      = "@" | Direction | Coordinate ;
+
+Direction    = "N" | "S" | "E" | "W" | "NE" | "NW" | "SE" | "SW" ;
+
+Coordinate   = "(" Integer "," Integer ")" ;
+
+Property     = Identifier ;
+Value        = Identifier | Integer | Color ;
+
+Color        = Identifier ;
+```
+
+---
 
 ### Future work 
 
