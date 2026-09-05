@@ -1,3 +1,5 @@
+# Psittaciformes
+
 **Parrots** belong to the order *Psittaciformes*, a group of ~400 species of intelligent, brightly colored birds distributed mainly across tropical and subtropical regions. They are defined by **strong curved beaks**, **zygodactyl feet**, and **complex social behavior**, with many species facing conservation threats due to habitat loss and wildlife trade.  Psittaciformes are a diverse, intelligent, and charismatic group of birds with ~400 species worldwide. Their unique anatomy, vocal abilities, and social complexity make them both fascinating and challenging companions. Despite their popularity, many species face severe conservation threats, making habitat protection and responsible pet ownership essential.
 
 ---
