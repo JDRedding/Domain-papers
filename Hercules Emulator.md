@@ -34,11 +34,6 @@ There are two lineages people mix up:
 
 License remains the **Q Public License (QPL)**, not GPL.
 
-Sites to use:
-
-- https://sdl-hercules-390.github.io/html/
-- https://github.com/SDL-Hercules-390/hyperion
-
 ## TurboHercules and other “alternatives”
 
 **TurboHercules** was Roger Bowler’s 2009 commercial spin-off. It tried to sell supported Hercules plus IBM OS licenses, ran into IBM licensing, filed (then dropped) an EU complaint, and is not a living product today. Treat it as history, not a current alternative.
@@ -112,4 +107,6 @@ Hercules is still the right tool for preservation, learning JCL/TSO/MVS internal
 - Educational purposes in universities or training programs.
 
 ## Resources:
-- Hercules [ Repository] (http://www.hercules-390.org/)
+- Hercules [Repository] (http://www.hercules-390.org/)
+- https://sdl-hercules-390.github.io/html/
+- https://github.com/SDL-Hercules-390/hyperion
