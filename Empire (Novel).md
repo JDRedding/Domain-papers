@@ -1044,7 +1044,7 @@ the triple screen fails.
 
 ---
 
-## APPENDIX: ### 1. What the hull impregnation actually does in the story
+## APPENDIX: Beryl-steel hull
 
 It’s essentially a field‑reinforced metamaterial: the hull is not just beryl‑steel, but beryl‑steel plus a permanently embedded trapping field that turns the skin into both armor and active barrier.
 
