@@ -1,5 +1,10 @@
 # **QUINTESSENCE**
-Relational Rendering and Interpretation
+- Relational Rendering and Interpretation
+- 113 — Cosmology (metaphysical)
+  
+Quintessence as metaphysical element or cosmological field.
+
+---
 
 ### **The Fifth Essence**
 Quintessence, historically framed as the “ultimate purity,” becomes in relationalism not a substance but a **relational invariant** — the minimal structural operator that closes an otherwise open fourfold and enables maximal admissible dynamics.
