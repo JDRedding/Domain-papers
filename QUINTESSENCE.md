@@ -378,7 +378,8 @@ It is the **geometry that persists**.
 
 ---
 
-### ** Q (Relational quotient) — the operator inside RelationalMFEQ**
+### **Q (Relational quotient)** 
+— the operator
 
 This **Q** is the **quotient operator** used inside the RelationalMFEQ:
 
