@@ -158,4 +158,4 @@ This is automatic game design in the strong sense: evolving **rules**, not just 
 ---
 
 ## **Further Reading**
-- arXiv:2601.00105v1 [(arxiv.org in Bing)](https://www.bing.com/search?q="https%3A%2F%2Farxiv.org%2Fabs%2F2601.00105v1")
+- [arXiv:2601.00105v1](https://arxiv.org/html/2601.00105v1) [(arxiv.org in Bing)](https://www.bing.com/search?q="https%3A%2F%2Farxiv.org%2Fabs%2F2601.00105v1")
