@@ -1,5 +1,6 @@
 # **Empire**  
-Clifford D. Simak (1951)
+- Clifford D. Simak (1951)
+- 813 — American fiction
 
 **Empire** is exactly the kind of early‑period Simak that shows what happens when Campbellian engineering‑focused space opera gets filtered through Simak’s steadier, humane instincts. The book began as an unpublished manuscript John W. Campbell wrote as a teenager. After serializing Simak’s *Cosmic Engineers*, Campbell handed Simak the draft to rewrite. Campbell later declined credit and payment when Horace Gold published the finished version as Galaxy Novel #7. This is early, more space-operatic Simak — big machines, economic warfare, and a climactic ship-to-ship energy battle — rather than the quieter, pastoral style of *City* or *Way Station*. Reviewers often treat it as a solid but secondary work.
 
