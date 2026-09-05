@@ -7,6 +7,14 @@
 - Identity: It raises questions about how memories shape our understanding of who we are.
 - Fantasy vs. Reality: The allure of living out fantasies through artificial memories is a central theme.
 
+## Story 
+- Quail’s mundane life and obsession with Mars. He is a low-level clerk with a critical wife. He daydreams constantly of the Martian valleys and decides to buy a two-week “memory package” of having gone there as an Interplan secret agent, complete with souvenirs so the illusion will hold.
+- The procedure fails because the memories are already real. Under sedation the technicians find existing, government-erased memories of Quail actually having been an assassin on Mars. Rekal panics, aborts the implant, refunds part of the fee, and sends him home. He later finds genuine Martian artifacts (postcards, dried plants, etc.) in his apartment.
+- Interplan closes in. Agents appear because Quail still has a telepathic transmitter in his head; they can hear his thoughts. His cover is blown. After a confrontation he bargains for a new, deeper cover: Rekal will implant his “absolute ultimate fantasy” so he will no longer want the dangerous Mars memories.
+- The childhood-savior fantasy. Psychiatric profiling reveals Quail’s deepest wish is that, as a boy, he met aliens, showed them mercy instead of hostility, and they promised never to invade Earth as long as he lived. Rekal prepares to overwrite everything with this grandiose story—and then discovers *that* memory is also genuine. The story ends on that revelation.
+
+Dick is not writing an action thriller. He is stacking false memories on top of real ones until the reader (and Quail) cannot tell which layer is “true.” Each new “fantasy” turns out to have been fact. The commercial memory industry, government mind-wiping, and Quail’s own narcissistic wish to be secretly important all collapse into one another. The final joke is that even the most childish, messianic daydream was history.
+
 ## **What Dick is actually doing**
 > Dick is not writing an action thriller.
 
@@ -25,15 +33,6 @@ Dick’s joke is that Quail’s mind is not a place where fantasies hide reality
 The final beat is not a twist; it’s a **recursive lock**.  
 There is no stable layer underneath.  
 Every “truth” is another fantasy that turns out to be true.
-
-## Story 
-- Quail’s mundane life and obsession with Mars. He is a low-level clerk with a critical wife. He daydreams constantly of the Martian valleys and decides to buy a two-week “memory package” of having gone there as an Interplan secret agent, complete with souvenirs so the illusion will hold.
-- The procedure fails because the memories are already real. Under sedation the technicians find existing, government-erased memories of Quail actually having been an assassin on Mars. Rekal panics, aborts the implant, refunds part of the fee, and sends him home. He later finds genuine Martian artifacts (postcards, dried plants, etc.) in his apartment.
-- Interplan closes in. Agents appear because Quail still has a telepathic transmitter in his head; they can hear his thoughts. His cover is blown. After a confrontation he bargains for a new, deeper cover: Rekal will implant his “absolute ultimate fantasy” so he will no longer want the dangerous Mars memories.
-- The childhood-savior fantasy. Psychiatric profiling reveals Quail’s deepest wish is that, as a boy, he met aliens, showed them mercy instead of hostility, and they promised never to invade Earth as long as he lived. Rekal prepares to overwrite everything with this grandiose story—and then discovers *that* memory is also genuine. The story ends on that revelation.
-
-### What the story is actually doing
-Dick is not writing an action thriller. He is stacking false memories on top of real ones until the reader (and Quail) cannot tell which layer is “true.” Each new “fantasy” turns out to have been fact. The commercial memory industry, government mind-wiping, and Quail’s own narcissistic wish to be secretly important all collapse into one another. The final joke is that even the most childish, messianic daydream was history.
 
 ## **The engine of the story**
 The short story runs on a single structural trick:
