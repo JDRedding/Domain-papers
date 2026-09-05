@@ -10,7 +10,7 @@ Class 700: The arts (fine & decorative arts) / Arts & recreation
 ├── 780–789 Music/
 ├── 790–792 Performance arts/
 ├── 793–795 Games/
-├── 794–799 Game design/
+├── 796–799 Game design/
 └── 796–799 Outdoors/
 ```
 
