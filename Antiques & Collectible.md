@@ -97,7 +97,7 @@ Collectors, dealers, and appraisers don’t just look at “old stuff.” They e
 These four factors apply across both antiques and collectibles, but the weighting differs.
 
 - Rarity and Demand
-- : Scarcer items with high desirability tend to be more valuable.
+  : Scarcer items with high desirability tend to be more valuable.
   
 - Condition and Authenticity
   : Well-preserved items with verified origins increase appeal and worth.
