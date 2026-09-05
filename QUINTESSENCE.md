@@ -345,8 +345,8 @@ V(φ) = V₀ e^(−λφ/Mpl)
 
 ## APPENDIX: Q (Quintessence)
 
-- **Q (Quintessence)** — the relational invariant you’re describing in the document  
-- **Q (the quotient)** — the Relational quotient operator inside the RelationalMFEQ machinery  
+- **Q (Quintessence)** — the relational invariant describing in this document  
+- **Q (the quotient)** — the relational quotient operator inside the Relational dynamic geometry (MFE, Q) machinery  
 
 > **Q₍essence₎ is not the RDGMFEQ quotient.  
 > Q₍essence₎ is the invariant geometry;  
@@ -381,7 +381,7 @@ It is the **geometry that persists**.
 ### **Q (Relational quotient)** 
 — the operator
 
-This **Q** is the **quotient operator** used inside the RelationalMFEQ:
+This **Q** is the **quotient operator** used inside the Relational dynamic geometry (MFE, Q):
 
 - It is part of the **Momentum Flux Engine (MFE)**.  
 - It is a **dynamic operator**, not an invariant.  
@@ -390,7 +390,7 @@ This **Q** is the **quotient operator** used inside the RelationalMFEQ:
 
 In notation:
 
-> **Q₍quotient₎ = the Relational quotient operator used in the evolution law.**
+> **Q₍quotient₎ = the relational quotient operator used in the evolution law.**
 
 It is **computational**, **dynamic**, and **temporal**.
 
@@ -438,19 +438,19 @@ Q₍quotient₎ = becoming
 The Relationals uses **Q₍quotient₎** to evolve the system:
 
 ```
-RelationalMFEQ : (SID, PED) → (SID', PED')
+Relational dynamic geometry (MFE, Q) : (SID, PED) → (SID', PED')
 ```
 
 But **Q₍essence₎** is the part of SID that remains invariant under that evolution:
 
 ```
-Q₍essence₎ is preserved under RelationalMFEQ
+Q₍essence₎ is preserved under Relational dynamic geometry (MFE, Q)
 ```
 
 So:
 
-- **Q₍quotient₎** is *inside* the RelationalMFEQ.  
-- **Q₍essence₎** is *outside* the RelationalMFEQ, as the invariant it respects.
+- **Q₍quotient₎** is *inside*.  
+- **Q₍essence₎** is *outside*, as the invariant it respects.
 
 They are **categorically different**.
 
