@@ -45,3 +45,11 @@ These are **far above** Cthulhu in power — they are the true cosmic entities.
 - **Randolph Carter** — recurring Lovecraft protagonist  
 
 ---
+
+## ⭐ The King in Yellow 
+— a mysterious, possibly divine or eldritch figure associated with madness, despair, and forbidden knowledge
+
+- **Hastur** — sometimes the King himself, sometimes his master, sometimes his rival.  
+- **The Pallid Mask** — an avatar or aspect of the King.  
+- **The Byakhee** — winged servants who carry the King’s followers.  
+- **Hali’s Daughters** — lesser entities tied to the lake.  
