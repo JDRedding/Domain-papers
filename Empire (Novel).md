@@ -105,7 +105,7 @@ The two inventions lock together. Material-energy engines supply the enormous wa
 
 ---
 
-**The *Invincible***
+## **The *Invincible***
 
 The ship is built in secret as an empty hull, towed by the yacht *Comet* to a point 500,000 miles beyond the Moon so Chambers cannot watch. Manning’s old crew installs the plant, then uses the new fields as construction tools.
 
