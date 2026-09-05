@@ -633,5 +633,169 @@ The 3‑D televisor in *Empire* can be reconstructed as:
 - A **localized, selective sensor** that can be “parked” in specific rooms.  
 - A **field‑geometry cousin** of anti‑entropy and the gravity lens, coupling weakly to matter and strongly to fields.
 
+## APPENDIX: Teletransport field physics
+
+### 1. What the teletransport actually does in the story
+
+> “A tele-transport that can snatch men through a million miles and through the ship’s own walls.”  
+
+Operationally, it:
+
+- Selects a specific person (or small group) at a remote location.  
+- Moves them **instantaneously or near‑instantaneously** across up to millions of miles.  
+- Brings them **through solid walls and hulls** without damaging either.  
+- Leaves surrounding matter (air, furniture, bulkheads) essentially undisturbed.  
+
+So it’s a **selective, field‑based displacement of matter**, not a general tractor beam or bulk transport.
+
+---
+
+### 2. Teletransport as a selective matter operator
+
+Let \(\rho(\mathbf{r},t)\) be the mass density field, and let the target person occupy a region \(V_{\text{src}}\) with density \(\rho_{\text{person}}(\mathbf{r},t)\).
+
+Define a **selection operator** \(\mathcal{S}_{\text{TT}}\):
+
+$$
+\mathcal{S}_{\text{TT}}: \rho(\mathbf{r},t) \to \rho_{\text{person}}(\mathbf{r},t) \quad\text{for }\mathbf{r}\in V_{\text{src}}
+$$
+
+This operator:
+
+- Identifies the target’s mass distribution.  
+- Excludes surrounding matter (air, walls, other people).  
+
+Narratively, this is implied by the fact that only the chosen person appears aboard; the room they were in is not torn apart.
+
+---
+
+### 3. Displacement operator: moving the person
+
+Let \(V_{\text{dest}}\) be the destination region aboard the *Invincible*, with coordinates \(\mathbf{r}'\).
+
+Define a **displacement operator** \(\mathcal{D}_{\text{TT}}\):
+
+$$
+\mathcal{D}_{\text{TT}}: \rho_{\text{person}}(\mathbf{r},t) \to \rho_{\text{person}}(\mathbf{r}',t+\Delta t)
+$$
+
+with a mapping:
+
+$$
+\mathbf{r}' = \mathbf{r} + \mathbf{L}
+$$
+
+where \(\mathbf{L}\) is the displacement vector (on the order of \(10^6\) miles).
+
+Key constraints implied by the story:
+
+- **Internal state preservation:** the person arrives alive, coherent, and oriented; no scrambling of internal energy states.  
+- **No damage to walls:** the path does not mechanically punch through intervening matter.
+
+We can express internal state preservation as:
+
+$$
+u_{\text{int}}^{\text{before}} = u_{\text{int}}^{\text{after}}
+$$
+
+for the person’s internal energy density \(u_{\text{int}}\).
+
+---
+
+### 4. Higher‑dimensional path: bypassing walls
+
+Like anti‑entropy and the gravity lens, teletransport implicitly uses a **higher‑dimensional geometry** to avoid direct mechanical interaction with walls and hulls.
+
+Model this as a path in 4‑space:
+
+$$
+\gamma(\tau): \mathbf{R}(\tau) \in \mathbb{R}^4
+$$
+
+such that:
+
+- The projection into ordinary 3‑space passes through obstacles, but  
+- The actual displacement in 4‑space does not require tearing or compressing intervening matter.
+
+In effect, the person’s mass distribution is lifted into a higher‑dimensional configuration, translated, and then dropped back into 3‑space at the destination.
+
+---
+
+### 5. Conservation and momentum
+
+For the person:
+
+- **Mass conservation:**
+
+$$
+\int_{V_{\text{src}}}\rho_{\text{person}}\,d^3\mathbf{r} = \int_{V_{\text{dest}}}\rho_{\text{person}}\,d^3\mathbf{r}'
+$$
+
+- **Internal energy conservation:** as above.  
+
+Momentum is trickier. The story does not dwell on recoil or ship motion when teletransport is used, implying that:
+
+- Either the field handles momentum bookkeeping in 4‑space, or  
+- The displacement is effectively “instantaneous” with negligible macroscopic impulse.
+
+We can model this as:
+
+$$
+\Delta \mathbf{p}_{\text{ship}} \approx 0
+$$
+
+with the teletransport field carrying any necessary compensating momentum in its higher‑dimensional structure.
+
+---
+
+### 6. Coupling to the ship’s fields
+
+The teletransport system is part of the *Invincible’s* general field suite:
+
+- It likely uses **material‑energy power** for the enormous field strengths needed.  
+- It shares geometric machinery with the gravity lens and anti‑entropy mirrors.  
+
+Let \(\Phi_{\text{TT}}\) be the teletransport field. Its coupling:
+
+$$
+\mathcal{C}_{\text{TT}}^{\text{matter}} \sim 1 \quad\text{for the selected person,}
+$$
+
+$$
+\mathcal{C}_{\text{TT}}^{\text{matter}} \ll 1 \quad\text{for surrounding matter.}
+$$
+
+So it strongly couples to the target, weakly to everything else.
+
+---
+
+### 7. Limits and failure modes
+
+Implied limits:
+
+- **Range:** up to millions of miles, but still finite; field strength and control must scale with \(|\mathbf{L}|\).  
+- **Mass:** practical for single humans or small groups; large masses would require enormous power and might stress hulls or fields.  
+- **Targeting:** mis‑selection could grab the wrong person or partial mass distribution—catastrophic, but the story assumes perfect control.
+
+We can express a power requirement:
+
+$$
+P_{\text{TT}} \propto M_{\text{person}}\, \frac{|\mathbf{L}|}{\tau_{\text{TT}}}
+$$
+
+where \(\tau_{\text{TT}}\) is the effective transport time (very small).
+
+---
+
+### 8. Summary reconstruction
+
+It’s essentially a tightly focused, field‑based matter relocation system built on the same geometric and energetic foundations as the *Invincible’s* other super‑science. The teletransport field in *Empire* can be reconstructed as:
+
+- A **selection operator** that isolates a target mass distribution from its surroundings.  
+- A **displacement operator** that moves that distribution across vast distances into the ship.  
+- A **higher‑dimensional path** that bypasses walls and hulls without mechanical damage.  
+- A **state‑preserving transformation** that conserves mass and internal energy.  
+- A **field‑coupling scheme** that strongly affects the target, weakly affects everything else.
+
 
 
