@@ -17,7 +17,7 @@ MONIAC is a rare example of **engineering meeting economics** in a way that is b
 ## ⚙️ Core   
 MONIAC was a **2‑meter‑tall hydraulic analog computer** built in 1949 by Bill Phillips to simulate the UK national economy using **fluidic logic**, transparent tanks, pumps, and valves. It was both a **teaching tool** and a surprisingly **accurate economic model**, achieving about **2% calibration accuracy**.   
 
-##Overview and Purpose
+## Overview and Purpose
 MONIAC was invented in 1949 by economist Bill Phillips at the London School of Economics. Its primary purpose was to demonstrate and simulate the dynamics of a national economy, including consumption, investment, taxation, and government spending. By using water as a physical analogue for money, it visually and quantitatively illustrated economic concepts such as the circular flow of income, monetary supply, and fiscal policy effects.
 
 ### ⚙️ How MONIAC Worked  
