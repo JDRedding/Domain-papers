@@ -147,6 +147,8 @@ $$
 V = f(\text{rarity},\,\text{condition},\,\text{provenance},\,\text{demand})+\varepsilon
 $$
 
+with $f$ estimated from sold comps or a hedonic regression, and $\varepsilon$ often large.
+
 ---
 
 ### 1. Auction transaction identities
@@ -403,4 +405,3 @@ $$
 
 ---
 
-with $f$ estimated from sold comps or a hedonic regression, and $\varepsilon$ often large.
