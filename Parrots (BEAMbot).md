@@ -1,6 +1,16 @@
 # Psittaciformes
 
-**Parrots** belong to the order *Psittaciformes*, a group of ~400 species of intelligent, brightly colored birds distributed mainly across tropical and subtropical regions. They are defined by **strong curved beaks**, **zygodactyl feet**, and **complex social behavior**, with many species facing conservation threats due to habitat loss and wildlife trade.  Psittaciformes are a diverse, intelligent, and charismatic group of birds with ~400 species worldwide. Their unique anatomy, vocal abilities, and social complexity make them both fascinating and challenging companions. Despite their popularity, many species face severe conservation threats, making habitat protection and responsible pet ownership essential.
+This document explores parrots as a biological model for building advanced autonomous robots, framing their cognitive architecture as a template for AI and robotics design. **Parrots** belong to the order *Psittaciformes*, a group of ~400 species of intelligent, brightly colored birds distributed mainly across tropical and subtropical regions. They are defined by **strong curved beaks**, **zygodactyl feet**, and **complex social behavior**, with many species facing conservation threats due to habitat loss and wildlife trade.  Psittaciformes are a diverse, intelligent, and charismatic group of birds with ~400 species worldwide. Their unique anatomy, vocal abilities, and social complexity make them both fascinating and challenging companions. Despite their popularity, many species face severe conservation threats, making habitat protection and responsible pet ownership essential.
+
+The Template Parrots embody a minimal architecture for general intelligence: high capability with low computational overhead, dense parallel processing, modular learning loops, and tight sensorimotor integration. The author argues this is the closest natural analogue to a practical robot brain and outlines how to implement it using RDG (a robotics architecture framework) and algorithms like hierarchical reinforcement learning and actor-critic methods.
+
+## Key Points
+Parrot Cognition: The Triad Parrots excel in three interdependent domains:
+
+- Advanced problem-solving — reasoning, causal inference, multi-step planning
+- Vocal learning — true sound acquisition mapped to meaning (not just mimicry)
+- Social complexity — pair bonding, cooperation, emotional inference
+- Brain Architecture: Dense & Parallel
 
 ---
 
@@ -375,6 +385,11 @@ This is exactly the architecture parrots evolved — a **tri‑mode intelligence
 ---
 
 ## 🔧 Parrots Robotic Template 
+
+Parrots have small brains but extremely high neuron density, rivaling primates.
+Unlike mammals' layered cortex, their pallium uses a clustered, nuclear architecture — a massively parallel mesh ideal for real-time switching and low-latency decision-making.
+Five core structures: Pallium (executive), Song System (vocal learning), Basal Ganglia (action selection), Cerebellum (prediction/error correction), Optic Tectum (spatial reasoning).
+
 It’s the closest natural analogue to a **BEAM‑body + microcontroller‑mind hybrid**, but with a far more sophisticated executive layer. Parrots demonstrate:
 
 - **high intelligence with low compute**  
