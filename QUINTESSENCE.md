@@ -8,7 +8,7 @@ The Medieval Latin *quinta essentia* (“fifth essence”), from Greek *pemptē 
 
 > **The fifth relational degree that stabilizes a four‑mode geometry into a coherent system.**
 
-This is the **Q‑operator**, the smallest invariant that still preserves the largest possibility space.
+This is the **Q₍essence₎‑operator**, the smallest invariant that still preserves the largest possibility space.
 
 ---
 
