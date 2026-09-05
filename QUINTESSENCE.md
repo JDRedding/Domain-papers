@@ -1,5 +1,6 @@
 # **QUINTESSENCE**  
-### **The Fifth Essence (Relational Rendering)**
+### **The Fifth Essence**
+(Relational Rendering)
 
 Quintessence, historically framed as the “ultimate purity,” becomes in relationalism not a substance but a **relational invariant** — the minimal structural operator that closes an otherwise open fourfold and enables maximal admissible dynamics.
 
