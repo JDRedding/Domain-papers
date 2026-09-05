@@ -8,7 +8,6 @@ This is **not** every single figure (there are hundreds), but it is the **comple
 # Greek pantheon (complete structure)
 
 ## ⭐ **Major Olympian Gods**  
-(Zeus, Hera, Poseidon, Demeter, Athena, Apollo, Artemis, Ares, Aphrodite, Hephaestus, Hermes, Dionysus, Hestia)  
 
 - **Zeus** — king of the gods; sky, thunder  
 - **Hera** — marriage, queenship  
@@ -27,7 +26,6 @@ This is **not** every single figure (there are hundreds), but it is the **comple
 ---
 
 ## ⭐ **Minor Olympian / Court Gods**  
-(From Theoi’s “minor Olympians”) 
 
 - **Hebe** — youth  
 - **Eileithyia** — childbirth  
@@ -41,7 +39,6 @@ This is **not** every single figure (there are hundreds), but it is the **comple
 ---
 
 ## ⭐ **Primordial Gods**  
-(Chaos, Gaia, Tartarus, Nyx, Erebus, etc.)  
 
 - **Chaos** — the void  
 - **Gaia** — earth  
@@ -148,7 +145,7 @@ This is **not** every single figure (there are hundreds), but it is the **comple
 
 ---
 
-# demigods & heroes  
+# Demigods & heroes  
 
 ## ⭐ **Major Demigods**
 - **Heracles** — son of Zeus  
