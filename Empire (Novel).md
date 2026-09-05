@@ -815,7 +815,8 @@ Each layer has its own operator, boundary conditions, and failure modes.
 
 ---
 
-### 1. **Material Screen** — Kinetic Barrier  
+### 1. **Material Screen**
+— Kinetic Barrier  
 #### Purpose  
 Stops physical objects: meteors, debris, projectiles, ship fragments.
 
@@ -865,7 +866,8 @@ the material screen buckles, passing the threat to the next layer.
 
 ---
 
-### 2. **Fourth‑Dimensional Refractor** — Radiation Redirector  
+### 2. **Fourth‑Dimensional Refractor** 
+— Radiation Redirector  
 #### Purpose  
 Handles **radiation**: lasers, energy bolts, cosmic rays, Craven’s beams.
 
@@ -931,7 +933,8 @@ the refractor saturates, passing excess energy to the third layer.
 
 ---
 
-### 3. **Anti‑Entropy Layer** — Stasis / Energy‑Freeze  
+### 3. **Anti‑Entropy Layer** 
+— Stasis / Energy‑Freeze  
 #### Purpose  
 Final, deepest layer.  
 Freezes energy states, stops matter, stops radiation, prevents internal heating.
@@ -996,7 +999,8 @@ When perforated:
 
 ---
 
-### 🧩 Combined Behavior — The Triple Screen as a Stack
+### 🧩 Combined Behavior 
+— The Triple Screen as a Stack
 
 Incoming threat → processed in this order:
 
