@@ -1714,4 +1714,272 @@ This is why the *Invincible* can tow Craven’s ship **faster than light**.
 
 ---
 
+## APPENDIX: ⭐ Weapons
 
+The novel has **no guns, missiles, or conventional armament**.  
+Every weapon is a **field phenomenon** produced by:
+
+- **Material‑energy engines** (Page & Manning)  
+- **Collector‑fed accumulators** (Craven & Chambers)  
+- **Gravity‑concentration lens**  
+- **Anti‑entropy mirrors**  
+- **Space‑field saturation**  
+
+Weapons fall into four categories:
+
+1. **Directed energy bolts**  
+2. **Cosmic‑frequency beams**  
+3. **Gravity‑shear / gravity‑stress attacks**  
+4. **Saturated space fields** (Craven’s most dangerous weapon)
+
+All weapons in *Empire* are field‑based:
+
+| Weapon | Source | Operator | Effect |
+|-------|--------|----------|--------|
+| **Energy bolts** | Material‑energy engines | $\mathbf{E}_{\text{bolt}}$ | High‑power radiation pulse |
+| **Cosmic beam** | Single engine | $\mathbf{E}_{\text{cosmic}}$ | Penetrating radiation |
+| **Gravity shear** | Gravity lens | $\Delta \mathbf{g}$ | Tidal stress |
+| **Gravity punch** | Gravity lens | $\mathbf{g}_{\text{pulse}}$ | Sudden shove |
+| **Saturated space field** | Craven’s accumulators | $\Phi_{\text{sat}}$ | Breaks anti‑entropy |
+| **Magnetic crush field** | Craven’s accumulators | $\mathbf{B}_{\text{crush}}$ | Hull‑crushing stress |
+| **Collector re‑emission** | Collector + accumulators | $\mathcal{B}_{\text{emit}}$ | Beams, pulses, saturation |
+
+Craven’s **saturated space field** is the only weapon that can defeat Page’s defenses.
+
+---
+
+### 1. **Directed Energy Bolts**  
+These are the *Invincible’s* primary offensive output.
+
+> “All ten together throw a fifty-billion-horsepower energy bolt.”
+
+Let the ten engines produce:
+
+$$
+P_{\text{bolt}} = \sum_{i=1}^{10} P_i \approx 50\times10^9\ \text{hp}
+$$
+
+Convert:
+
+$$
+P_{\text{bolt}} \sim 4\times10^{13}\ \text{W}
+$$
+
+This is a **collimated radiation pulse** shaped by anti‑entropy mirrors.
+
+#### Field operator
+
+Let the bolt be:
+
+$$
+\mathbf{E}_{\text{bolt}}(\mathbf{r},t)
+$$
+
+with intensity:
+
+$$
+I_{\text{bolt}} = \frac{P_{\text{bolt}}}{\Omega_{\text{beam}} R^2}
+$$
+
+where:
+
+- $\Omega_{\text{beam}}$ = solid angle  
+- $R$ = distance to target  
+
+#### Behavior
+
+- Travels as a coherent, high‑power radiation pulse.  
+- Anti‑entropy mirrors ensure **zero divergence** except what the operator chooses.  
+- Craven’s collector field can **absorb** these bolts and convert them to stored energy.
+
+This is why Greg’s first attack *feeds* Craven.
+
+---
+
+### 2. **Cosmic‑Frequency Beam**  
+
+> “Greg also fires a ‘pure cosmic’ beam at $5\times10^9\ \text{hp}$ from one engine.”
+
+This is a **single‑engine beam** at extremely high frequency (cosmic rays).
+
+Let:
+
+$$
+P_{\text{cosmic}} \approx 5\times10^9\ \text{hp}
+$$
+
+The beam is:
+
+$$
+\mathbf{E}_{\text{cosmic}}(\mathbf{r},t,\lambda_{\text{cosmic}})
+$$
+
+with wavelength:
+
+$$
+\lambda_{\text{cosmic}} \ll 10^{-12}\ \text{m}
+$$
+
+#### Behavior
+
+- Penetrates ordinary matter easily.  
+- Is refracted by Craven’s 4‑D refractor.  
+- Is **absorbed** by Craven’s collector field and stored.
+
+This beam is more dangerous to Craven’s ship than the broad energy bolts, but still not enough to break his saturated fields.
+
+---
+
+### 3. **Gravity‑Shear / Gravity‑Stress Attacks**  
+These are the most exotic weapons Manning and Page can produce.
+
+They use the gravity‑concentration lens:
+
+$$
+\mathbf{g}_c = \mathbf{M}_{\mathrm{AE}}\,\mathcal{L}_4[\mathbf{g}]
+$$
+
+By altering mirror angles and lens geometry, they can produce:
+
+#### (a) **Gravity shears**
+
+A differential gravitational field across the target:
+
+$$
+\Delta \mathbf{g} = \mathbf{g}_c(\mathbf{r}_1) - \mathbf{g}_c(\mathbf{r}_2)
+$$
+
+This produces **tidal stress**:
+
+$$
+\sigma_{\text{tidal}} \propto M_{\text{target}}\,\Delta \mathbf{g}
+$$
+
+#### (b) **Gravity punches**
+
+A sudden, localized increase in gravity:
+
+$$
+\mathbf{g}_{\text{pulse}} = \alpha\,\mathbf{g}_c
+$$
+
+with $\alpha \gg 1$.
+
+#### Behavior
+
+- Can distort Craven’s screens.  
+- Can shove his ship off course.  
+- Cannot break his collector‑fed saturated fields.
+
+Gravity weapons are powerful but not decisive.
+
+---
+
+### 4. **Saturated Space Fields (Craven’s Weapon)**  
+This is the **most dangerous weapon** in the novel.
+
+> “Craven’s saturated space fields later punch holes in anti-entropy screens.”
+
+This is a **space‑filling field** $\Phi_{\text{sat}}$ created by dumping stored accumulator energy into local space.
+
+#### Field operator
+
+Let:
+
+$$
+\Phi_{\text{sat}}(\mathbf{r},t)
+$$
+
+modify the local radiation field:
+
+$$
+u_{\text{rad}}^{\text{eff}} = u_{\text{rad}} + u_{\text{dump}}
+$$
+
+and the local vacuum structure:
+
+$$
+\epsilon_0^{\text{eff}} = \epsilon_0 + \Delta\epsilon(\Phi_{\text{sat}})
+$$
+
+#### Effects
+
+- Overloads anti‑entropy screens.  
+- Punches holes in the triple screen.  
+- Distorts gravity‑concentration lens geometry.  
+- Forces the *Invincible* to retreat or tow Craven’s ship away.
+
+#### Failure condition for anti‑entropy
+
+$$
+u_{\text{dump}} > u_{\mathrm{AE,max}}
+\quad\Rightarrow\quad
+\text{screen perforation}
+$$
+
+This is the only weapon in the book that can **break** Page’s defenses.
+
+---
+
+### 5. **Magnetic Crush Field (Craven’s Secondary Weapon)**  
+
+> “A later magnetic-field formula is mentioned… intense enough that it would crush beryl-steel within a mile, and it makes the *Invincible* lurch at a hundred miles.”
+
+This is a **non‑Maxwellian magnetic field** with enormous gradients.
+
+Let:
+
+$$
+\mathbf{B}_{\text{crush}}(\mathbf{r})
+$$
+
+with gradient:
+
+$$
+\nabla \mathbf{B}_{\text{crush}} \gg 10^6\ \text{T/m}
+$$
+
+#### Stress tensor
+
+$$
+\sigma_{\text{mag}} \propto \frac{1}{\mu_0}
+\left(
+\mathbf{B}\mathbf{B} - \frac{1}{2}B^2\mathbf{I}
+\right)
+$$
+
+At close range:
+
+- $\sigma_{\text{mag}}$ exceeds the impregnated hull’s yield stress.  
+- At long range (100 miles), it produces a violent lurch.
+
+This is a **field‑pressure weapon**, not a beam.
+
+---
+
+### 6. **Collector‑Field Re‑Emission Weapons**  
+Craven can re‑emit stored energy as:
+
+- **Directed beams**  
+- **Wide‑angle pulses**  
+- **Space‑filling saturation fields**
+
+Let stored energy be $E_{\text{acc}}$.
+
+Re‑emission power:
+
+$$
+P_{\text{emit}} = \eta_{\text{emit}}\,P_{\text{out}}
+$$
+
+with $\eta_{\text{emit}} \approx 1$.
+
+These weapons are powered by:
+
+$$
+P_{\text{in}} = P_{\text{ambient}} + P_{\text{beam}}
+$$
+
+meaning Greg’s attacks **increase** Craven’s firepower.
+
+---
