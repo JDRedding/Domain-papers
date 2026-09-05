@@ -74,7 +74,6 @@ Examples of fixed inconsistencies:
 - No attacks at zero HP  
 - No super moves without full meter  
 - No mismatched timers  
-  [arXiv.org](https://arxiv.org/html/2607.26754v1)
 
 StatePlay addresses a fundamental gap in PCG research: ensuring that generated game worlds are not only varied but also playable, which is critical for automated content generation that can be directly used in game design.
 
@@ -87,7 +86,7 @@ But games are **state machines**, not videos.
 StatePlay’s authors argue:
 
 > Pixel‑only models produce visually plausible but mechanically impossible rollouts.  
-> (e.g., attacking at 0 HP, activating skills without meter).   [arXiv.org](https://arxiv.org/html/2607.26754v1)
+> (e.g., attacking at 0 HP, activating skills without meter).
 
 Their fix is to **explicitly model the hidden state machine**.
 
@@ -119,7 +118,6 @@ This is extremely close to TRUE/MFE philosophy:
 - **MoT architectures**  
 - **state‑conditioned video generation**  
 - **TRUE StatePlay MFE**  
-
 
 ## **Citation:** 
 - Zijun Lin, Zeqing Wang, Cheston Tan, Bihan Wen, Yeying Jin, *StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation*, 2026.
