@@ -5,6 +5,26 @@ Apple cider can be used in a wide range of recipes, from cozy hot drinks to bake
 ## 🍎 Core  
 Apple cider is a **high‑aroma, high‑acidity sweetener** that works as a base, braising liquid, reduction syrup, cocktail mixer, and baking enhancer. Its power comes from **evaporation** (concentrating flavor) and **spice absorption** (carrying aromatics better than water).
 
+### 🍏 Advanced Tips for Homemade Cider
+
+- Use a mix of sweet and tart apples for balance (e.g., Honeycrisp, Fuji, Granny Smith, Gala).
+- Use a **50/50 blend** of sweet apples (Fuji, Gala) and tart apples (Granny Smith).
+
+- Add **whole spices** early; add **ground spices** late.
+- Reduce cider until syrupy for:
+  - glazes  
+  - cocktail bases  
+  - dessert drizzles  
+- Freeze cider in ice cube trays for:
+  - quick sauces  
+  - cold cocktails  
+  - smoothie boosters  
+
+- Simmer cider with citrus slices and whole spices to enhance aroma and flavor.
+- Strain the cider after simmering to remove solids for a clear beverage, or leave some pulp for a robust flavor.
+- Store extra cider in the refrigerator for up to one to two weeks or freeze for later use.
+
+
 ## 🍹 Drinks & Cocktails
 
 Apple cider is a beautiful base for warm, spiced drinks or festive cocktails. Popular options include:
@@ -40,22 +60,3 @@ Apple cider can also be used in dressings, glazes, and even ice cream toppings. 
 - **Cider-Glazed Vegetables** — Works especially well with squash, carrots, and Brussels sprouts.
 - **Cider Syrup for Desserts** — Drizzle over bread pudding, waffles, or roasted fruit.
 
-## 🔪 Tips for Homemade Apple Cider
-
-- Use a mix of sweet and tart apples for balance (e.g., Honeycrisp, Fuji, Granny Smith, Gala).
-- Simmer cider with citrus slices and whole spices to enhance aroma and flavor.
-- Strain the cider after simmering to remove solids for a clear beverage, or leave some pulp for a robust flavor.
-- Store extra cider in the refrigerator for up to one to two weeks or freeze for later use.
-
-## 🍏 Advanced Tips for Homemade Cider
-
-- Use a **50/50 blend** of sweet apples (Fuji, Gala) and tart apples (Granny Smith).
-- Add **whole spices** early; add **ground spices** late.
-- Reduce cider until syrupy for:
-  - glazes  
-  - cocktail bases  
-  - dessert drizzles  
-- Freeze cider in ice cube trays for:
-  - quick sauces  
-  - cold cocktails  
-  - smoothie boosters  
