@@ -52,7 +52,7 @@ The relation that makes things a whole.**
 > When you remove everything non‑essential, what remains is not a substance but a **relation**:  
 > **the capacity to be otherwise than nothing.**
 
-This is the Relational definition of a **minimal invariant**.
+This is the relational definition of a **minimal invariant**.
 
 ---
 
@@ -257,7 +257,7 @@ Geometric form:
 
 ---
 
-# **5. Possibility (Relational)**
+# **5. Possibility**
 
 Minimal invariant, maximal possibility:
 
