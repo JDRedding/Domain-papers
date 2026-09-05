@@ -1,5 +1,7 @@
 # Carcosa cosmological hierarchy 
 
+In the context of Carcosa cosmology outside of Cthulhu Mythos, the pantheon refers to the collection of deities and divine figures associated with the city of Carcosa and its mystical orbiting elements, largely derived from Robert W. Chambers and subsequent noe-Lovecraftian interpretations such as modern role-playing games and derivative literature.
+
 ---
 
 ## The King in Yellow and his aspects
