@@ -159,7 +159,3 @@ This is automatic game design in the strong sense: evolving **rules**, not just 
 
 ## **Further Reading**
 - arXiv:2601.00105v1 [(arxiv.org in Bing)](https://www.bing.com/search?q="https%3A%2F%2Farxiv.org%2Fabs%2F2601.00105v1")
-
----
-
-If you want, I can also produce a **more formal academic rewrite**, a **condensed executive summary**, or a **version aligned with your RDG tri‑mode operator notation**.
