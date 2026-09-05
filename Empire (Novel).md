@@ -797,5 +797,250 @@ It’s essentially a tightly focused, field‑based matter relocation system bui
 - A **state‑preserving transformation** that conserves mass and internal energy.  
 - A **field‑coupling scheme** that strongly affects the target, weakly affects everything else.
 
+## APPENDIX: 🛡️ Triple Defensive Screen 
+— Physics Reconstruction
 
+> “Triple screen, in the order the text gives:  
+> 1. stops material objects  
+> 2. refracts radiation into the fourth dimension  
+> 3. anti-entropy-like: stops matter (and is strained by Craven’s dumped charge)”  
+
+This is a **stacked, multi‑layer field system**, each layer handling a different class of threat:
+
+1. **Material Screen** — kinetic barrier  
+2. **Fourth‑Dimensional Refractor** — radiation redirector  
+3. **Anti‑Entropy Layer** — stasis / energy‑freeze layer  
+
+Each layer has its own operator, boundary conditions, and failure modes.
+
+---
+
+### 1. **Material Screen** — Kinetic Barrier  
+#### Purpose  
+Stops physical objects: meteors, debris, projectiles, ship fragments.
+
+#### Field Operator  
+Let $\Phi_{\text{mat}}(\mathbf{r},t)$ be the material screen field.
+
+It imposes a **potential barrier** $U_{\text{mat}}$ on incoming matter:
+
+$$
+U_{\text{mat}}(\mathbf{r}) = U_0\,f(\mathbf{r})
+$$
+
+with $U_0$ large enough that:
+
+$$
+\frac{1}{2} m v^2 < U_0
+$$
+
+for any incoming object.
+
+### Interaction Law  
+Incoming matter experiences a repulsive force:
+
+$$
+\mathbf{F}_{\text{mat}} = -\nabla U_{\text{mat}}
+$$
+
+This force acts **before** the object reaches the hull, producing the “meteor powders against the haze” effect described in your document.
+
+#### Conservation  
+The field absorbs **momentum**, not mass:
+
+$$
+\Delta p_{\text{ship}} \approx 0
+$$
+
+Momentum is shunted into the field’s higher‑dimensional geometry (same trick used by teletransport and anti‑entropy).
+
+#### Failure Mode  
+If incoming kinetic energy exceeds the field’s holding power:
+
+$$
+\frac{1}{2} m v^2 > U_0
+$$
+
+the material screen buckles, passing the threat to the next layer.
+
+---
+
+### 2. **Fourth‑Dimensional Refractor** — Radiation Redirector  
+#### Purpose  
+Handles **radiation**: lasers, energy bolts, cosmic rays, Craven’s beams.
+
+> “refracts radiation into the fourth dimension”
+
+#### Field Operator  
+Let $\Phi_{4D}$ be the refractor field.
+
+It defines a mapping:
+
+$$
+\mathcal{R}_{4D}:\ \mathbf{k} \mapsto \mathbf{K}
+$$
+
+where:
+
+- $\mathbf{k}$ is the 3‑D wavevector of incoming radiation  
+- $\mathbf{K}$ is the 4‑D redirected wavevector  
+
+#### Radiation Law  
+Incoming radiation energy density $u_{\text{rad}}$ is transformed:
+
+$$
+u_{\text{rad}}^{\text{out}} = (1-\eta_{4D})\,u_{\text{rad}}
+$$
+
+with $\eta_{4D} \approx 1$ for most wavelengths.
+
+Thus:
+
+- Radiation is **not absorbed**  
+- It is **redirected** into 4‑space  
+- It does **not heat** the hull  
+- It does **not reflect** back into local space  
+
+#### Boundary Conditions  
+The refractor must preserve causality:
+
+$$
+\omega_{\text{in}} = \omega_{\text{out}}
+$$
+
+but changes direction:
+
+$$
+\mathbf{k}_{\text{out}} \neq \mathbf{k}_{\text{in}}
+$$
+
+#### Failure Mode  
+Craven’s saturated space fields increase local radiation density:
+
+$$
+u_{\text{rad}} \to u_{\text{rad}} + u_{\text{col}}
+$$
+
+When:
+
+$$
+u_{\text{rad}} > u_{\text{max,4D}}
+$$
+
+the refractor saturates, passing excess energy to the third layer.
+
+---
+
+### 3. **Anti‑Entropy Layer** — Stasis / Energy‑Freeze  
+### Purpose  
+Final, deepest layer.  
+Freezes energy states, stops matter, stops radiation, prevents internal heating.
+
+> “anti-entropy-like: stops matter (and is strained by Craven’s dumped charge)”  
+
+#### Field Operator  
+Let $\Phi_{\mathrm{AE}}$ be the anti‑entropy field.
+
+Its defining rule:
+
+$$
+\frac{\partial u}{\partial t} = 0
+$$
+
+for **all** forms of energy inside the field:
+
+$$
+\frac{\partial u_{\text{thermal}}}{\partial t} = \frac{\partial u_{\text{rad}}}{\partial t} = \frac{\partial u_{\text{mech}}}{\partial t} = 0
+$$
+
+#### Radiation Behavior  
+Perfect reflection:
+
+$$
+R_{\mathrm{AE}} = 1,\quad A_{\mathrm{AE}} = 0
+$$
+
+### Matter Behavior  
+Matter cannot change internal energy:
+
+$$
+\delta W = 0
+$$
+
+#### Interaction with Craven  
+Craven’s collector field dumps enormous radiant energy into local space.  
+This stresses anti‑entropy:
+
+$$
+u_{\text{rad}}^{\text{local}} \to u_{\text{rad}}^{\text{local}} + u_{\text{dump}}
+$$
+
+Anti‑entropy has a **finite field strength**:
+
+$$
+u_{\text{dump}} > u_{\mathrm{AE,max}}
+\quad\Rightarrow\quad
+\text{screen perforation}
+$$
+
+> “Craven’s saturated space fields later punch holes in anti-entropy screens.”
+
+#### Failure Mode  
+When perforated:
+
+- Radiation leaks through  
+- Matter can penetrate  
+- The hull is exposed  
+- The gravity lens must compensate  
+- The ship risks catastrophic overload  
+
+---
+
+### 🧩 Combined Behavior — The Triple Screen as a Stack
+
+Incoming threat → processed in this order:
+
+1. **Material Screen**  
+   - Stops matter  
+   - Passes radiation  
+
+2. **4‑D Refractor**  
+   - Redirects radiation  
+   - Passes extreme radiation or field stress  
+
+3. **Anti‑Entropy Layer**  
+   - Freezes energy  
+   - Reflects radiation  
+   - Final barrier  
+
+The stack acts like a **multi‑band, multi‑physics firewall**.
+
+---
+
+### 🧨 Interaction with Craven’s Collector Field
+
+Craven’s collector field is designed to **break** this stack:
+
+- It **absorbs** Greg’s beams  
+- It **re‑emits** them as saturated space fields  
+- It **overloads** the refractor  
+- It **punches** anti‑entropy  
+- It **stresses** the gravity lens  
+- It **threatens** the hull
+
+Mathematically:
+
+$$
+u_{\text{rad}}^{\text{local}} = u_{\text{ambient}} + u_{\text{beam}} + u_{\text{collected}}
+$$
+
+When:
+
+$$
+u_{\text{rad}}^{\text{local}} > u_{\mathrm{AE,max}}
+$$
+
+the triple screen fails.
+
+---
 
