@@ -35,7 +35,7 @@ They were not distilling a substance — they were chasing the **relational cohe
 ## **Everyday Language (Relational Interpretation)**
 
 By the 16th century, “quintessence” meant the **purest form** or **core essence**.  
-In Relational:
+In Relation:
 
 > **The quintessence of X = the invariant relational pattern that makes X what it is.**
 
@@ -58,7 +58,7 @@ This is the Relational definition of a **minimal invariant**.
 ## **Quintessence in Physics (Relational Interpretation)**
 
 Modern cosmological quintessence is a **dynamic scalar field** whose energy density evolves.  
-In Relational:
+In Relation:
 
 - The scalar field **φ(t)** is a **PED‑dynamic mode**.  
 - The potential **V(φ)** is the **evaluation landscape**.  
