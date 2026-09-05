@@ -345,8 +345,8 @@ V(φ) = V₀ e^(−λφ/Mpl)
 
 ## APPENDIX: Q (Quintessence)
 
-- **Q (Quintessence)** — the relational invariant describing in this document  
-- **Q (the quotient)** — the relational quotient operator inside the Relational dynamic geometry (MFE, Q) machinery  
+- **Q (Quintessence)** — the relational invariant described in this document  
+- **Q (the quotient)** — the relational quotient operator inside the relational dynamic geometry (MFE, Q) machinery  
 
 > **Q₍essence₎ is not the RDGMFEQ quotient.  
 > Q₍essence₎ is the invariant geometry;  
