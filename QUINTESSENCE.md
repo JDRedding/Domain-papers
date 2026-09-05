@@ -94,7 +94,7 @@ In Relations:
 
 ```
 Quintessence ≠ substance
-Quintessence = difference(set of parts, system)
+Quintessence = difference (set of parts, system)
 ```
 
 This is the distinction:
