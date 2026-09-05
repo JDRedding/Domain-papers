@@ -1,0 +1,47 @@
+# **Cthulhu Mythos pantheon**
+
+---
+
+## ⭐ the great old ones 
+
+- **Cthulhu** — high priest of the Great Old Ones; sleeps in R’lyeh  
+- **Dagon** — oceanic deity worshipped by the Deep Ones  
+- **Mother Hydra** — companion to Dagon  
+- **Ghatanothoa** — petrifies all who see him  
+- **Yig** — father of serpents  
+- **Tsathoggua** — slothful bat‑toad god  
+- **Shub-Niggurath** — “Black Goat of the Woods with a Thousand Young”  
+
+---
+
+## ⭐ the outer gods (cosmic-level beings)
+
+These are **far above** Cthulhu in power — they are the true cosmic entities.
+
+- **Azathoth** — the “Blind Idiot God”; center of the universe  
+- **Yog-Sothoth** — all-time/all-space; gate and key  
+- **Nyarlathotep** — the Crawling Chaos; messenger of the Outer Gods  
+- **Shub-Niggurath** — appears in both tiers  
+- **Tulzscha** — green flame deity  
+- **Ubbo-Sathla** — primordial source of life  
+
+---
+
+## ⭐ lesser mythos beings & races
+
+- **Deep Ones** — amphibious humanoids serving Dagon & Hydra  
+- **Shoggoths** — shape-shifting protoplasmic horrors  
+- **Mi-Go** — alien scientists from Yuggoth  
+- **Nightgaunts** — faceless flying creatures  
+- **Elder Things** — creators of the Shoggoths  
+- **Great Race of Yith** — time‑traveling minds  
+
+---
+
+## ⭐ human cults & notable figures
+- **The Esoteric Order of Dagon** — worship Cthulhu, Dagon, Hydra  
+- **The Cthulhu Cult** — global, fragmented worshippers  
+- **Wilbur Whateley** — hybrid son of Yog‑Sothoth  
+- **Randolph Carter** — recurring Lovecraft protagonist  
+
+---
