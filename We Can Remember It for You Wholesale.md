@@ -1,4 +1,7 @@
 # We Can Remember It for You Wholesale
+- 813.54 — American science fiction
+- Short story → modern American SF
+
 
 ```
 +==============================================================================+
