@@ -568,13 +568,11 @@ To behave as described, the televisor field must satisfy:
   Data at time $t$ on the ship comes from fields at time $t - \Delta t$ in $V_{\text{target}}$, where $\Delta t$ is the propagation delay. For near‑instantaneous viewing, $\Delta t$ is small, implying super‑luminal or higher‑dimensional propagation consistent with the book’s other field tricks.
 
 - **Geometric fidelity:**  
-  The mapping $\mathcal{M}$ preserves relative positions and orientations:
+  The mapping $\mathcal{M}$ preserves relative positions and orientations (up to a scale factor, so the displayed scene is geometrically faithful):
 
-  $$
-  |\mathbf{r}_i - \mathbf{r}_j|  =  |\mathbf{r}'_i - \mathbf{r}'_j|
-  $$
-
-  up to a scale factor, so the displayed scene is geometrically faithful.
+$$
+|\mathbf{r}_i - \mathbf{r}_j|  =  |\mathbf{r}'_i - \mathbf{r}'_j|
+$$
 
 - **Selective targeting:**
 
