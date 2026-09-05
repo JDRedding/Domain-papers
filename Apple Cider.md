@@ -5,6 +5,12 @@ Apple cider can be used in a wide range of recipes, from cozy hot drinks to bake
 ## 🍎 Core  
 Apple cider is a **high‑aroma, high‑acidity sweetener** that works as a base, braising liquid, reduction syrup, cocktail mixer, and baking enhancer. Its power comes from **evaporation** (concentrating flavor) and **spice absorption** (carrying aromatics better than water).
 
+### Core Apple Cider Ingredients  
+- **Apple cider**  
+- **Whole spices****:** cinnamon sticks, cloves, allspice, star anise  
+- **Ground spices****:** cinnamon, nutmeg, ginger  
+- **Citrus****:** oranges, lemons  
+
 ### 🍏 Advanced Tips for Homemade Cider
 
 - Use a mix of sweet and tart apples for balance (e.g., Honeycrisp, Fuji, Granny Smith, Gala).
@@ -59,4 +65,3 @@ Apple cider can also be used in dressings, glazes, and even ice cream toppings. 
 - **Cider Vinaigrette** — Mix cider, olive oil, Dijon, honey, and shallots.
 - **Cider-Glazed Vegetables** — Works especially well with squash, carrots, and Brussels sprouts.
 - **Cider Syrup for Desserts** — Drizzle over bread pudding, waffles, or roasted fruit.
-
