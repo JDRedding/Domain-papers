@@ -1,6 +1,42 @@
 # Carcosa cosmological hierarchy 
 
-In the context of Carcosa cosmology outside of Cthulhu Mythos, the pantheon refers to the collection of deities and divine figures associated with the city of Carcosa and its mystical orbiting elements, largely derived from Robert W. Chambers and subsequent noe-Lovecraftian interpretations such as modern role-playing games and derivative literature.
+In the context of Carcosa cosmology outside of Cthulhu Mythos, the pantheon refers to the collection of deities and divine figures associated with the city of Carcosa and its mystical orbiting elements, largely derived from Robert W. Chambers and subsequent neo-Lovecraftian interpretations such as modern role-playing games and derivative literature.
+
+### ⭐ **Carcosa Cosmology Map**
+
+### **Cosmic Axis**
+- **Hastur** — the god  
+- **The King in Yellow** — avatar  
+- **The Yellow Sign** — sigil  
+- **The Pallid Mask** — threshold  
+- **Carcosa / Lake Hali** — domain
+
+### **Ecstatic / Rustic Layer**
+- **Pan‑like madness gods**  
+- **Satyr‑like revelers**  
+- **Tattered Bacchants**
+
+### **Natural Layer**
+- **Green Man analogues**  
+- **Decay‑rebirth spirits**  
+- **Forest and root deities**
+
+### **Cultural Layer**
+- **Archivists**  
+- **Mask‑Menders**  
+- **Drowned Choir**  
+- **Lantern‑Bearers**  
+- **Scribes**
+
+---
+
+In neo-Lovecraftian Carcosa cosmology, the pantheon consists primarily of:
+- Hastur/King in Yellow – central god-figure
+- Pan/Satyr-like entities – god of madness/revelry
+- The Green Man and localized deities – death, resurrection, natural cycles
+- Ancillary spirits or minor gods – associated with Carcosa’s lost human societies and mystical locales
+
+This pantheon frames Carcosa not just as a city, but as a spiritual ecosystem, with divine, semi-divine, and mythic entities influencing its inhabitants and the surrounding cosmos.
 
 ---
 
@@ -18,7 +54,9 @@ Carcosa’s cosmology is inseparable from **The King in Yellow**—entity, play,
 
 ## Carcosa-centric pantheon
 
-Here’s the “pantheon” in Carcosa terms, not Lovecraft’s:
+The Carcosan pantheon is highly syncretic. Its hierarchy combines astral deities, personifications of abstract forces (madness, inevitability), and anthropomorphized figures from pastoral or occult traditions. Unlike other mythos, the focus is mythopoetic rather than cosmic horror oriented. Deities are often worshiped, referenced, and interact in quasi-anthropocentric ways. The pantheon is fragmentary and deliberately vague, leaving space for reinterpretation in modern role-playing settings like Pathfinder, Lamentations of the Flame Princess, and speculative fiction derived from Chambers.
+
+Here’s the “pantheon” in Carcosa terms:
 
 - **Top layer: Phenomenon**
   - **The King in Yellow** — not just a being, but a **phenomenon**: play + colour + city + mask.   
@@ -83,3 +121,75 @@ Carcosa doesn’t spread by armies—it spreads by **art**.
   Carcosa behaves like a **predatory meme**—a conceptual parasite that overwrites the host’s world with its own architecture, sky, and hierarchy.  
 
 ---
+
+## **Carcosa cosmology**
+
+---
+
+### ⭐ 1. **Hastur / The King in Yellow** — *Central God‑Figure of Carcosa*
+The core of the cosmology is a **dual or fractured deity**:
+
+- **Hastur the Unspeakable** — a remote, cosmic god associated with decay, entropy, and the collapse of meaning.  
+- **The King in Yellow** — his **avatar**, **mask**, or **emanation**, manifesting in tattered robes and the Pallid Mask.  
+- **The Pallid Mask** — the boundary between human identity and Carcosa’s reality.  
+- **The Yellow Sign** — the sigil marking those claimed by Hastur’s influence.  
+- **Carcosa** — the metaphysical city where Hastur’s reality is fully dominant.  
+- **Lake Hali** — the liminal threshold between human perception and Carcosan truth.
+
+**Function in the cosmology:**  
+Hastur is the **axis mundi** — the god whose presence defines the physics, metaphysics, and psychology of Carcosa.  
+The King in Yellow is the **interface** through which mortals encounter him.
+
+---
+
+### ⭐ 2. **Pan / Satyr‑like Madness & Revelry Entities**  
+Carcosa’s cosmology includes **rustic, ecstatic spirits** that resemble Pan, satyrs, or Dionysian daemons — but corrupted by the Yellow King’s influence. These entities represent the **chaotic, ecstatic side** of Carcosa — the “celebration of collapse.”
+
+These beings embody:
+
+- **Madness through revelry**  
+- **Ecstatic dissolution of identity**  
+- **Wild, chaotic rites near Lake Hali**  
+- **Music that erodes sanity**  
+- **Dance that blurs the boundary between self and mask**
+
+Examples (Carcosa‑aligned variants):
+
+- **The Hali Satyrs** — horned, masked revelers who lure wanderers into madness.  
+- **The Yellow Pan** — a rustic god of frenzy whose pipes echo the King’s madness.  
+- **The Tattered Bacchants** — masked dancers who appear during eclipses or twin‑sun alignments.
+
+---
+
+### ⭐ 3. **The Green Man & Localized Nature Deities**  
+Carcosa is a dying world, but it still has **nature gods** — twisted reflections of Earth’s agrarian archetypes. These gods represent **Carcosa’s ecology**, which is not dead — but **sick**, **warped**, and **cyclically reborn** under Hastur’s cosmology.
+
+These beings embody:
+
+- **Death and resurrection cycles**  
+- **Rot, decay, and rebirth**  
+- **Seasonal madness**  
+- **The slow corruption of natural order**
+
+Examples:
+
+- **The Verdant King** — a Green Man analogue whose face is made of rotting leaves; presides over cycles of decay.  
+- **The Root‑Father** — a god of underground growth and burial rites.  
+- **The Hali Dryads** — tree‑spirits whose bark forms Yellow Sign patterns.  
+- **The Moss‑Mask** — a nature spirit whose face resembles the Pallid Mask, suggesting Hastur’s influence permeates even the forests.
+
+---
+
+### ⭐ 4. **Ancillary Spirits & Minor Gods of Lost Carcosan Cultures**  
+Carcosa is not just a city — it is the **ruin of a civilization**. Its minor gods reflect the remnants of that lost humanity. These beings are **localized**, **cultural**, and **ritualistic** — the “small gods” of Carcosa’s forgotten people.
+
+These include:
+
+- **The Archivists of Yhtill** — spirits who preserve fragments of Carcosa’s history.  
+- **The Mask‑Menders** — minor gods who craft ceremonial masks for the King’s rites.  
+- **The Drowned Choir of Hali** — spirits of those who drowned in the lake; their voices echo in the mist.  
+- **The Lantern‑Bearers** — psychopomp spirits guiding the masked dead.  
+- **The Scribes of the Second Act** — entities who rewrite reality through the cursed play.
+
+---
+
