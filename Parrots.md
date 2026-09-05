@@ -142,12 +142,12 @@ It handles:
 The pallium is *not* a layered cortex like mammals. Instead, it’s a **clustered, nuclear architecture** — more like a massively parallel mesh.
 
 **Robotic parallel:**  
-This is your **executive layer**, equivalent to:
+This is a **executive layer**, equivalent to:
 
 - high‑level planners  
 - symbolic reasoning modules  
 - task‑sequencing logic  
-- Q‑moderation in your RDG triad  
+- Q‑moderation (RDG triad)  
 
 ---
 
@@ -166,7 +166,7 @@ This loop allows:
 - mapping sounds to meaning  
 
 **Robotic parallel:**  
-This is your **sensorimotor learning loop**:
+This is a **sensorimotor learning loop**:
 
 - adaptive motor control  
 - reinforcement learning modules  
@@ -185,7 +185,7 @@ It handles:
 - **motor sequence chunking**  
 
 **Robotic parallel:**  
-This is your **policy selector**:
+This is a **policy selector**:
 
 - behavior arbitration  
 - reward‑based decision systems  
@@ -205,7 +205,7 @@ It handles:
 - **timing**  
 
 **Robotic parallel:**  
-This is your **predictive control system**:
+This is a **predictive control system**:
 
 - PID loops  
 - forward models  
@@ -224,7 +224,7 @@ The tectum handles:
 - environmental modeling  
 
 **Robotic parallel:**  
-This is your **vision stack**:
+This is a **vision stack**:
 
 - SLAM  
 - object detection  
