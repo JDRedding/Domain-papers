@@ -112,5 +112,4 @@ Hercules is still the right tool for preservation, learning JCL/TSO/MVS internal
 - Educational purposes in universities or training programs.
 
 Resources:
-- Hercules GitHub Repository
-- Hercules Documentation and Wiki
+- Hercules [ Repository] (http://www.hercules-390.org/)
