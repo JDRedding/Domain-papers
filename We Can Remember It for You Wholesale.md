@@ -3,7 +3,8 @@
 **“*We Can Remember It for You Wholesale*”** (1966) is Philip K. Dick’s short story about a clerk named Douglas Quail who cannot afford a real trip to Mars, so he buys an implanted memory of one — only to discover layers of real, suppressed identity underneath the fantasy.
 
 ## **What Dick is actually doing**
-> Dick is not writing an action thriller.  
+> Dick is not writing an action thriller.
+
 He’s writing a **paranoid epistemological loop**.
 
 The story is about:
