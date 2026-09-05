@@ -392,7 +392,7 @@ When Craven “saturates space,” $\eta_{\text{col}}$ is high and $u_{\text{ree
 
 ### 4. Interaction with anti‑entropy and Page’s fields
 
-Anti‑entropy $\Phi_{\mathrm{AE}}$ is supposed to **freeze energy states and perfectly reflect radiation**. Your document gives:
+Anti‑entropy $\Phi_{\mathrm{AE}}$ is supposed to **freeze energy states and perfectly reflect radiation**. 
 
 > “Perfect reflection of radiation: $R_{\mathrm{AE}}=1,\;A_{\mathrm{AE}}=0$.”   
 
