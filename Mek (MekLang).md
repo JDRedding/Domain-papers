@@ -14,12 +14,6 @@ Mek addresses the lack of dedicated tools for game mechanics prototyping, separa
 
 In essence, Mek acts as a mechanics laboratory, providing a minimalist, visually structured environment to formalize, analyze, and iterate on game mechanics for 2D deterministic scenarios without the overhead of full game development. This makes it particularly valuable for researchers, game design students, and prototypers exploring complex interactions in turn-based tile games.
 
-The paper positions Mek against:
-
-- **GVGAI** — flexible for describing whole games but too rigid for inventing new interactions  
-- **General programming languages** — flexible but slow and require expertise  
-- **Other DSLs** — often aimed at full game specification rather than mechanics prototyping
-
 Mek’s niche is **mechanics‑first prototyping**, not full game authoring.  Mek consists of two parts:
 
 - **MekLang** — a domain‑specific language that describes *mechanics*, not whole games. A mechanic is defined as a **state transition rule**: how the game state changes when a move is taken.  
@@ -53,6 +47,12 @@ The paper argues that existing tools (e.g., GVGAI) focus on *game generation* or
 
 ### Comparison with Other Tools
 Mek is conceptually similar to Joris Dormans’ Machinations in emphasizing mechanic development, though Machinations focuses on high-level resource flows, often abstracting the board or level entirely. In contrast, Mek explicitly integrates tile-based spatial patterns, offering more precise control of interactions and testing in the 2D game space. Unlike automated systems such as Ludi or fully procedural platforms like ANGELINA, Mek is oriented toward manual design and experimentation of mechanics, not full game creation or evaluation by AI.
+
+The paper positions Mek against:
+
+- **GVGAI** — flexible for describing whole games but too rigid for inventing new interactions  
+- **General programming languages** — flexible but slow and require expertise  
+- **Other DSLs** — often aimed at full game specification rather than mechanics prototyping
 
 ---
 
