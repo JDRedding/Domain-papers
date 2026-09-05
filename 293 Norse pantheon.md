@@ -1,4 +1,7 @@
 # **Norse pantheon**
+- 293 — Norse mythology
+  
+Aesir, Vanir, cosmology.
 
 ---
 
