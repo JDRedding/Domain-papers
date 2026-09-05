@@ -1,6 +1,6 @@
 # We Can Remember It for You Wholesale
 
-**“*We Can Remember It for You Wholesale*”** (1966) is Philip K. Dick’s short story about a clerk named Douglas Quail who cannot afford a real trip to Mars, so he buys an implanted memory of one—only to discover layers of real, suppressed identity underneath the fantasy.
+**“*We Can Remember It for You Wholesale*”** (1966) is Philip K. Dick’s short story about a clerk named Douglas Quail who cannot afford a real trip to Mars, so he buys an implanted memory of one — only to discover layers of real, suppressed identity underneath the fantasy.
 
 ### Story 
 - Quail’s mundane life and obsession with Mars. He is a low-level clerk with a critical wife. He daydreams constantly of the Martian valleys and decides to buy a two-week “memory package” of having gone there as an Interplan secret agent, complete with souvenirs so the illusion will hold.
