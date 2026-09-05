@@ -11,7 +11,8 @@ This is the **Q‑operator**, the smallest invariant that still preserves the la
 
 ---
 
-## **Philosophical and Alchemical Origins (Relational Interpretation)**
+## **Philosophical and Alchemical Origins**
+(Relational Interpretation)
 
 The classical four elements (earth, air, fire, water) form a **4‑mode substrate**.  
 Aristotle’s aether is the **fifth relational mode** — the invariant that:
@@ -32,7 +33,8 @@ They were not distilling a substance — they were chasing the **relational cohe
 
 ---
 
-## **Everyday Language (Relational Interpretation)**
+## **Everyday Language**
+(Relational Interpretation)
 
 By the 16th century, “quintessence” meant the **purest form** or **core essence**.  
 In Relation:
@@ -55,7 +57,8 @@ This is the Relational definition of a **minimal invariant**.
 
 ---
 
-## **Quintessence in Physics (Relational Interpretation)**
+## **Quintessence in Physics**
+(Relational Interpretation)
 
 Modern cosmological quintessence is a **dynamic scalar field** whose energy density evolves.  
 In Relation:
