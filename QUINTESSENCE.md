@@ -4,7 +4,7 @@ Relational Rendering and Interpretation
 ### **The Fifth Essence**
 Quintessence, historically framed as the “ultimate purity,” becomes in relationalism not a substance but a **relational invariant** — the minimal structural operator that closes an otherwise open fourfold and enables maximal admissible dynamics.
 
-The Medieval Latin *quinta essentia* (“fifth essence”), from Greek *pemptē ousia*, maps directly into Relational as:
+The Medieval Latin *quinta essentia* (“fifth essence”), from Greek *pemptē ousia*, maps directly into relationals as:
 
 > **The fifth relational degree that stabilizes a four‑mode geometry into a coherent system.**
 
