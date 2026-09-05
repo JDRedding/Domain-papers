@@ -1061,7 +1061,7 @@ We can treat this as a **lattice‑embedded field** plus a **surface barrier fie
 
 ---
 
-### 2. Lattice‑embedded field: strengthening the beryl‑steel
+### 1. Lattice‑embedded field: strengthening the beryl‑steel
 
 Let the hull material be a lattice with atoms at positions $\mathbf{r}_i$.  
 Define an **impregnation field** $\Phi_{\text{imp}}(\mathbf{r})$ that is anchored to the lattice.
@@ -1090,7 +1090,7 @@ The “heat‑treated with fields” step is the process of embedding $\Phi_{\te
 
 ---
 
-### 3. Surface barrier: the “haze” that powders meteors
+### 2. Surface barrier: the “haze” that powders meteors
 
 Around the hull, the impregnated atoms collectively generate a **surface field** $\Phi_{\text{surf}}(\mathbf{r})$.
 
@@ -1119,7 +1119,7 @@ This is the **material screen** behavior, but now tied directly to the hull’s 
 
 ---
 
-### 4. Coupling to anti‑entropy and other fields
+### 3. Coupling to anti‑entropy and other fields
 
 The hull atoms carry “the same trapping force that once seized a gangster ship.” That trapping force is closely related to anti‑entropy’s ability to **lock matter and energy states**.
 
@@ -1141,7 +1141,7 @@ This explains why:
 
 ---
 
-### 5. Stress and failure under extreme fields
+### 4. Stress and failure under extreme fields
 
 Craven’s magnetic crush field and saturated space fields are described as strong enough to:
 
@@ -1179,7 +1179,7 @@ $$
 
 ---
 
-### 6. Summary reconstruction
+### 5. Summary reconstruction
 
 The hull impregnation field in *Empire* can be reconstructed as:
 
