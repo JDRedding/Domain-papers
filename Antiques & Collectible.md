@@ -126,6 +126,14 @@ These four factors apply across both antiques and collectibles, but the weightin
 
 ## APENDIX: Formulas of antiques, art, and collectibles markets 
 
+The mathematically honest statement is:
+
+$$
+V = f(\text{rarity},\,\text{condition},\,\text{provenance},\,\text{demand})+\varepsilon
+$$
+
+with $f$ estimated from sold comps or a hedonic regression, and $\varepsilon$ often large.
+
 | Symbol | Meaning |
 |---|---|
 | $V$ | Appraised or estimated value |
@@ -141,13 +149,7 @@ These four factors apply across both antiques and collectibles, but the weightin
 | $t$ | Time in years |
 | $\varepsilon$ | Random error |
 
-These do not replace connoisseurship. Provenance, fakes, restoration, and fashion can dominate every coefficient. The mathematically honest statement is:
-
-$$
-V = f(\text{rarity},\,\text{condition},\,\text{provenance},\,\text{demand})+\varepsilon
-$$
-
-with $f$ estimated from sold comps or a hedonic regression, and $\varepsilon$ often large.
+These do not replace connoisseurship. Provenance, fakes, restoration, and fashion can dominate every coefficient.
 
 ---
 
