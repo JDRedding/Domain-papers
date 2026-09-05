@@ -5,6 +5,9 @@ Clifford D. Simak (1951)
 
 *Empire* is an anomaly because it is **Simak rewriting Campbell**, not Simak writing Simak. It lacks the rural humanism, the gentle robots, the evolutionary speculation, and the melancholy cosmic perspective that define *City* and later works. Instead, it resembles the industrial‑frontier fiction Campbell championed — the same worldview that shaped early Heinlein and van Vogt. There is no Lagrangian, no metric, no written component of $\mathcal{L_4}$ , no constitutive law for $\Phi_{\mathrm{AE}}$ beyond the conservation statements, and no derivation of Equation 578. “Equation 578” and “Field 349” are labels on a control board.
 
+This note reconstructs in physics-like notation the novel's: anti‑entropy field properties, material‑energy power, gravity lens math, collector operator, accumulator energy balance, televisor sampling/reconstruction operators, teletransport selection/displacement operators, triple‑screen layering (material screen → 4‑D refractor → anti‑entropy), beryl‑steel hull impregnation, tractor field mechanics, limits/failure modes, and power/engineering estimates.
+Numerical claims are extracted from the text (e.g., ten main engines, bolt powers), preserved and used to illustrate power budgets and failure conditions.
+
 ## 🧭 How *Empire* fits into Simak’s career  
 Simak’s bibliography shows a clear pivot:  
 - **Before 1950:** Mostly short fiction, often pulp‑adjacent, serialized in *Astounding*.  
