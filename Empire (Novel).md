@@ -652,9 +652,9 @@ So it’s a **selective, field‑based displacement of matter**, not a general t
 
 ### 2. Teletransport as a selective matter operator
 
-Let \(\rho(\mathbf{r},t)\) be the mass density field, and let the target person occupy a region \(V_{\text{src}}\) with density \(\rho_{\text{person}}(\mathbf{r},t)\).
+Let $\rho(\mathbf{r},t)$ be the mass density field, and let the target person occupy a region $V_{\text{src}}$ with density $\rho_{\text{person}}(\mathbf{r},t)$.
 
-Define a **selection operator** \(\mathcal{S}_{\text{TT}}\):
+Define a **selection operator** $\mathcal{S}_{\text{TT}}$:
 
 $$
 \mathcal{S}_{\text{TT}}: \rho(\mathbf{r},t) \to \rho_{\text{person}}(\mathbf{r},t) \quad\text{for }\mathbf{r}\in V_{\text{src}}
@@ -671,9 +671,9 @@ Narratively, this is implied by the fact that only the chosen person appears abo
 
 ### 3. Displacement operator: moving the person
 
-Let \(V_{\text{dest}}\) be the destination region aboard the *Invincible*, with coordinates \(\mathbf{r}'\).
+Let $V_{\text{dest}}$ be the destination region aboard the *Invincible*, with coordinates $\mathbf{r}'$.
 
-Define a **displacement operator** \(\mathcal{D}_{\text{TT}}\):
+Define a **displacement operator** $\mathcal{D}_{\text{TT}}$:
 
 $$
 \mathcal{D}_{\text{TT}}: \rho_{\text{person}}(\mathbf{r},t) \to \rho_{\text{person}}(\mathbf{r}',t+\Delta t)
@@ -685,7 +685,7 @@ $$
 \mathbf{r}' = \mathbf{r} + \mathbf{L}
 $$
 
-where \(\mathbf{L}\) is the displacement vector (on the order of \(10^6\) miles).
+where $\mathbf{L}$ is the displacement vector (on the order of $10^6$ miles).
 
 Key constraints implied by the story:
 
@@ -698,7 +698,7 @@ $$
 u_{\text{int}}^{\text{before}} = u_{\text{int}}^{\text{after}}
 $$
 
-for the person’s internal energy density \(u_{\text{int}}\).
+for the person’s internal energy density $u_{\text{int}}$.
 
 ---
 
@@ -755,7 +755,7 @@ The teletransport system is part of the *Invincible’s* general field suite:
 - It likely uses **material‑energy power** for the enormous field strengths needed.  
 - It shares geometric machinery with the gravity lens and anti‑entropy mirrors.  
 
-Let \(\Phi_{\text{TT}}\) be the teletransport field. Its coupling:
+Let $\Phi_{\text{TT}}$ be the teletransport field. Its coupling:
 
 $$
 \mathcal{C}_{\text{TT}}^{\text{matter}} \sim 1 \quad\text{for the selected person,}
@@ -773,7 +773,7 @@ So it strongly couples to the target, weakly to everything else.
 
 Implied limits:
 
-- **Range:** up to millions of miles, but still finite; field strength and control must scale with \(|\mathbf{L}|\).  
+- **Range:** up to millions of miles, but still finite; field strength and control must scale with $|\mathbf{L}|$.  
 - **Mass:** practical for single humans or small groups; large masses would require enormous power and might stress hulls or fields.  
 - **Targeting:** mis‑selection could grab the wrong person or partial mass distribution—catastrophic, but the story assumes perfect control.
 
@@ -783,7 +783,7 @@ $$
 P_{\text{TT}} \propto M_{\text{person}}\, \frac{|\mathbf{L}|}{\tau_{\text{TT}}}
 $$
 
-where \(\tau_{\text{TT}}\) is the effective transport time (very small).
+where $\tau_{\text{TT}}$ is the effective transport time (very small).
 
 ---
 
