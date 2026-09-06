@@ -759,7 +759,6 @@ $$
 
 - Hedges, J., Shprits, E., Winschel, V., & Zahn, P. (2016). *Compositionality and String Diagrams for Game Theory*. arXiv:1604.06061 [cs.GT]. [https://doi.org/10.48550/arXiv.1604.06061](https://doi.org/10.48550/arXiv.1604.06061)
 
-
 ## **Appendix A — Q‑slice (Quotient‑slice) Definition**
 
 ### **A.1 Motivation**
@@ -787,7 +786,7 @@ Typical choices include:
 - **same play:** $\sigma\sim\sigma'$ if $\mathbf{P}(\sigma,x)=\mathbf{P}(\sigma',x)$,  
 - **same equilibrium behaviour:** $\sigma\sim\sigma'$ if both satisfy the same best‑response conditions.
 
-##### **Definition (Q‑slice).**  
+##### **Definition (Q‑slice)**  
 The **Q‑slice** of $\mathcal{G}$ in context $(x,k)$ is the quotient:
 
 $$
@@ -831,7 +830,6 @@ This makes Q‑slice the natural object for:
 - **relational string diagrams**,  
 - **equilibrium compression**,  
 - **strategy‑behaviour equivalence**.
-
 
 ---
 
