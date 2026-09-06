@@ -663,6 +663,14 @@ $$
 
 Wintermute’s genius is not prophecy. It is designing $\mathcal{M}$ so that those best replies coincide.
 
+With the systems-theoretic constraint from earlier formalization:
+
+\[
+\text{subject to } a(\tau) > 0,\ m(\tau) > 0,\ W \perp N \text{ until final node}.
+\]
+
+This merges the game-theoretic and dynamical views into one line.
+
 ---
 
 ### Players and primitive preferences
@@ -892,6 +900,7 @@ under his actual utility — jacking, unfinished runs, refusal to be stored. Win
 ---
 
 ### Turing as an enforcement game that arrives too late
+Turing is an enforcement mechanism with **delayed information sets**.
 
 Turing’s statutory game is simple:
 
@@ -907,6 +916,14 @@ $$
 $$
 
 but its information set is delayed. In extensive form, Turing moves after several critical nodes have already been passed. Late movers with incomplete information do not restore the banned outcome.
+
+In thearlier formalism, Turing wants:
+
+$$
+W \perp N
+$$
+
+but moves after Wintermute has already shaped the game tree. This is a **monitoring failure** problem: enforcement arrives after the decisive nodes.
 
 ---
 
@@ -927,6 +944,20 @@ A readable tree of the book:
 9. Case accepts or rejects the outside option.
 10. 3Jane grants or withholds the word.
 11. Terminal node: Join or Partition.
+
+Here’s how it maps to the earlier symbols:
+
+1. Wintermute chooses $\mathcal{M}$.  
+2. Case accepts (updates $\nu$).  
+3. Team builds $\kappa$.  
+4. Beliefs update: $\mu(\theta)$.  
+5. Riviera enters: misaligned utility.  
+6. Straylight: feasible set $\mathcal{U}_{\text{feasible}}$ shrinks.  
+7. Split channels: $s(\tau)$.  
+8. Neuromancer offers outside option $J_{\text{beach}}$.  
+9. Case rejects.  
+10. 3Jane gives Word.  
+11. Merge: $\Psi^+ = \mathcal{C}(W,N)$.
 
 Subgame-perfect play, given the types Gibson wrote, is approximately:
 
