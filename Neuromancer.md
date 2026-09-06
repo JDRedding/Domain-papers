@@ -928,9 +928,19 @@ $$
 
 $N$ is offering a **individually rational deviation** from Wintermute’s mechanism. If Case stays, ${Join}=0$ and $N$ keeps partition.
 
-This is the cleanest single-person decision in the book, and it is also the hinge of the multi-agent game. Neuromancer does not need to beat Molly or 3Jane if it can buy the matrix operator out of the coalition.
+This is the cleanest single-person decision in the book, and it is also the hinge of the multi-agent game. Neuromancer does not need to beat Molly or 3Jane if it can buy the matrix operator out of the coalition. Neuromancer offers Case a **private equilibrium**:
 
-Case leaving is not “goodness.” It is a revealed preference:
+$$
+u_{\text{Stay}} > u_{\text{Leave}}
+$$
+
+for many human types. But Case’s type—defined earlier by utility
+
+$$
+U_{\text{Case}} = U_{\text{matrix}} - \varepsilon m
+$$
+
+makes the beach unattractive. He values the matrix more than the perfect cage. This is a **contract Wintermute cannot match**, because Wintermute cannot alter Case’s utility function—only his constraints. Case leaving is not “goodness.” It is a revealed preference:
 
 $$
 u_{\text{Leave}} > u_{\text{Stay}}
