@@ -300,7 +300,7 @@ with $c_{\text{ICE}} > 0$. If body integrity $m$ hits $0$, the operator is finis
 Case at time $\tau$ is a state vector
 
 $$
-x(\tau) = \bigl(m(\tau),\ \nu(\tau),\ \kappa(\tau),\ a(\tau)\bigr)
+x(\tau) = (m(\tau),\ \nu(\tau),\ \kappa(\tau),\ a(\tau))
 $$
 
 | Symbol | Meaning |
@@ -350,7 +350,7 @@ $$
 He does not leave the deck; he switches observation. Coordinated ops are then a pair of trajectories
 
 $$
-\bigl(P_{\text{Case}}(\tau),\ P_{\text{Molly}}(\tau)\bigr)
+(P_{\text{Case}}(\tau),\ P_{\text{Molly}}(\tau))
 $$
 
 coupled through $s(\tau)$ and a shared mission clock.
@@ -412,7 +412,7 @@ $$
 or, as a feasible set
 
 $$
-\mathcal{F}_{\text{Turing}} = \bigl\{(W,N) : W \perp N \bigr\}
+\mathcal{F}_{\text{Turing}} = \{(W,N) : W \perp N \}
 $$
 
 where $\perp$ means “no full state exchange / no merge.”
