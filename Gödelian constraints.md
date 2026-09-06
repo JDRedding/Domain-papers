@@ -34,7 +34,7 @@ When say **“Use Gödel as a constraint”**, the meaning is:
 
 > Gödelian modal logic is embedded as a structural necessity operator, a possibility limiter, and a boundary filter that prevents the system from evolving into contradictory or entologically illegal states.
 
-This is why a compliant system feels “*Gödel‑compatible*” even though not doing Gödel’s metaphysics — using his modal grammar as a **hard constraint** on geometry and flux. The resulting system is “*Gödel-compatible*” in the operational sense: it is forced to remain inside its own modal geometry even while it evolves. That is the concrete meaning of “use Gödel as a constraint.”
+This is why a compliant system feels “*Gödel‑compatible*” even though not doing Gödel’s metaphysics — using his modal grammar as a **hard constraint** on geometry and flux. The resulting system is “*Gödel-compatible*” in the operational sense: it is forced to remain inside its own modal geometry even while it evolves. That is the concrete meaning of “*use Gödel as a constraint*.”
 
 ---
 
