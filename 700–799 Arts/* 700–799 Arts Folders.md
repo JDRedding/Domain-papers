@@ -1,11 +1,12 @@
  
 Class 700: The arts (fine & decorative arts) / Arts & recreation
 
-**6 folders total**
+**folders**
 ```
 700–799 Arts/
 │
 ├── 700–709 General arts/
+├── 710–729 Architecture/
 ├── 740–749 Decorative arts/
 ├── 780–789 Music/
 ├── 790–792 Performance arts/
