@@ -401,8 +401,11 @@ F=P\circ N\circ(M\otimes\mathrm{id}_C) &\qquad\text{(classical tensor-calculus e
 $$
 
 ## 📌 Future Work
-- Open games vs pregames  
+- Open games vs pregames
 - Nash equilibrium in string-diagram form  
 - Category-theoretic semantics of games  
 - Connections to quantum circuits  
 - Building  diagrammatic game
+- Build **Relational string diagrams** for any of the games  
+- Show how **Momentum bipolar flux** corresponds to **play/coplay**  
+- Rewrite **Nash equilibrium** as a **Qiotient‑slice fixed point**
