@@ -394,9 +394,7 @@ s(\tau) \in \{0,1\}
 $$
 
 $$
-u_{\text{obs}}(\tau) =
-(1-s(\tau))\, u_{\text{matrix}}(\tau)
-+ s(\tau)\, u_{\text{stim}}(\tau)
+u_{\text{obs}}(\tau) = (1-s(\tau))\, u_{\text{matrix}}(\tau) + s(\tau)\, u_{\text{stim}}(\tau)
 $$
 
 He does not leave the deck; he switches observation. Coordinated ops are then a pair of trajectories
