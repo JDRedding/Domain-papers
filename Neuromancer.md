@@ -2,6 +2,8 @@
 
 **“Neuromancer”** is a seminal science‑fiction novel by William Gibson, widely credited with establishing the cyberpunk genre and introducing **cyberspace** as a virtual‑reality realm. *Neuromancer* is a foundational cyberpunk novel, celebrated for its visionary portrayal of virtual reality, its exploration of human‑technology relationships, and its lasting cultural influence. It remains essential reading for anyone interested in the origins and evolution of cyberpunk and digital culture. *Neuromancer* locked cyberpunk into a recognizable shape: street-level operators, corporate sovereignty, neural interfaces, and a virtual layer called **cyberspace**. The plot is a heist. The texture is systems. That is why engineers keep rereading it. The notes here are a map. Gibson wrote a crime novel that happens to be built like a systems diagram. That is the whole trick, and it is why the book still works on people who care more about architectures than about neon.
 
+This note is an engineering- and systems-focused guide to William Gibson’s Neuromancer — framing the novel as systems engineering, giving a layer-by-layer technical breakdown of its technology and characters, mapping literary elements to mathematical/CS concepts, and with a game-theoretic appendix and a subject index.
+
 ---
 
 ## **Overview**
