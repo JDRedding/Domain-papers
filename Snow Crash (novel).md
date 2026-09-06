@@ -115,7 +115,7 @@ Stephenson collapses three channels into one object:
 
 Rife’s project is rollback: collect artifacts, re-expose brains to the old firmware, then issue new *me* he controls. Hiro’s raid on the Raft is not just an action climax. It is a deploy: recover the nam-shub, have it spoken, collapse Rife’s mutual intelligibility with his flock.
 
-### **Mathematical Notation**
+## **Mathematical Notation**
 
 What follows are the **real formulas and notation** that map most closely onto the book’s ideas: language as firmware, Snow Crash as a dual digital/biological virus, Babel / the nam-shub as a counter-program, and the Metaverse as a coded world.
 
