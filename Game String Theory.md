@@ -441,6 +441,27 @@ $$
 }
 $$
 
+The three rules:
+
+1. **Sequential $\cap$** always means the expanded clause  
+   $\sigma_1\in\mathcal{Q}_G(x,k')$ and $\sigma_2\in\mathcal{Q}_H(\mathbf{P}_G(\sigma_1',x),k)$ **for all** $\sigma_1'$, with  
+   $k'(y)=\Phi^-_H(\sigma_2,y,k(\Phi^+_H(\sigma_2,y)))$.  
+   Do not use $\cap$ without that sentence nearby.
+
+2. **Parallel $\times$** always carries  
+   $k_1'=k(\,\cdot\,,\Phi^+_H(\sigma_2))$ and $k_2'=k(\Phi^+_G(\sigma_1),\,\cdot\,)$.  
+   Those conditionings are part of the notation.
+
+3. **Cournot / ultimatum Q-slices** are examples of closed-game $\mathcal{Q}(\bullet,k_\bullet)$, not general laws.
+
+With that, the RDG core holds:
+
+$$
+\mathcal{G}=(\Sigma,\Phi^+,\Phi^-,\mathcal{Q}), \quad \Phi^+=\mathbf{P},\; \Phi^-=\mathbf{C},\; \mathcal{Q}=\mathbf{E}. 
+$$
+
+They do not change types, composition, or equilibria.
+
 ---
 
 ### 🔷 **General Relational Open‑Game**  
