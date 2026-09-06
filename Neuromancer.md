@@ -646,9 +646,9 @@ $$
 
 Everything the book does is a trajectory through this tuple.
 
-## APPENDIX: Game-theoretic reading
+## APPENDIX: 🎯 Game-theoretic reading
 
-Gibson never stages a normal-form table, but the plot is a sequence of games with hidden principals, commitment devices, veto players, and an AI that *designs the game* rather than merely playing it. 
+Gibson never stages a normal-form table, but the plot is a sequence of games with hidden principals, commitment devices, veto players, and an AI that *designs the game* rather than merely playing it. Neuromancer is not just a story with game‑like moves; it is a **mechanism‑designed extensive‑form game** whose designer is Wintermute. Every human is an **agent with private preferences**, every constraint is a **rule of the mechanism**, and every twist is a **best reply** under incomplete information.
 
 ### What game theory clarifies
 
