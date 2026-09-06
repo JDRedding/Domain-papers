@@ -4,7 +4,7 @@
 
 They function as three layered guards:
 
-- On the structural layer they act as necessity: the geometry of structure, interaction and dynamics is required to stay inside a legal manifold. In operator form this is $\square(\text{state} \in \text{RDG-legal})$. Contradictory geometries or interactions are simply not instantiable.
+- On the structural layer they act as necessity: the geometry of structure, interaction and dynamics is required to stay inside a legal manifold. In operator form this is $\square(\text{state} \in \text{Relational-legal})$. Contradictory geometries or interactions are simply not instantiable.
 - On the power/evaluation layer they act as possibility limiters: $\diamond(\text{flux} \in \text{admissible})$. Not every force-pair or score the engine could generate is allowed; only those that preserve modal closure survive.
 - On the global equation layer they act as a reset/boundary filter: the next state is produced only after the current state plus flux has been passed through $\text{Filter}_{\text{Gödel}}$. Illegal Q-slice jumps, inconsistent memory integration or survival trajectories that would break entological coherence are discarded.
 
