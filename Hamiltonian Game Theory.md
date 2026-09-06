@@ -36,7 +36,7 @@ Thus **non‑cooperative**, **correlated**, and **coalitional** games all become
 ### ⚙️ Payoff 
 - Hermitian operator 
 
-Each player i has a payoff operator \( H_i \).  
+Each player i has a payoff operator $H_i$.  
 The expected payoff is:
 
 $$
