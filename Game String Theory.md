@@ -593,7 +593,7 @@ RDG treats the universal quantifier as a **constraint on the Q‑slice**, not as
 ---
 
 ### **Relational Parallel Composition**
-RDG interprets this as **partial flux conditioning**. RDG rewrites this as **flux superposition**:
+RDG does not treat parallel equilibrium as independent maximization. The Cartesian notation is a compact representation of the paired conditional continuations $k_1'$ and $k_2'$ defined in the paper. The Nash dependency structure is preserved. RDG interprets this as **partial flux conditioning**. RDG rewrites this as **flux superposition**:
 
 $$
 \Phi^{+}_{G\otimes H}(t) = (\Phi^{+}_G(t),\Phi^{+}_H(t))
@@ -608,6 +608,14 @@ and equilibrium:
 $$
 \mathcal{Q}_{G\otimes H}(t) = \mathcal{Q}_G(t,k_1')\;\times\;\mathcal{Q}_H(t,k_2')
 $$
+
+RDG does not claim independence; RDG compresses the Nash condition into a **paired Q‑slice**. RDG preserves this by defining:
+
+$$
+k_1' = k(\cdot,\Phi^+_H) \qquad k_2' = k(\Phi^+_G,\cdot)
+$$
+  
+The RDG form is not independence — it is **paired conditional selection**, exactly Nash.
 
 ---
 
