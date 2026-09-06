@@ -137,7 +137,7 @@ $$
 
 If several wires enter or leave in the same direction they are bundled by Cartesian product. Missing wires are filled with $I$.
 
-## Semantics of an open game
+### Semantics of an open game
 
 An open game $\mathcal{G}:X\otimes S^\*\to Y\otimes R^\*$ is a 4-tuple
 
@@ -167,7 +167,7 @@ $$
 
 is simply the set of equilibria.
 
-## Atomic open games
+### Atomic open games
 
 Except for players, the atoms below are *strategically trivial*: $\Sigma=I$ and $\mathbf{E}$ always returns the unique dummy strategy.
 
@@ -250,7 +250,7 @@ $$
 \mathcal{G}=\tau_{\mathbb{R}}\circ(\mathcal{U}\otimes\mathbb{R}^\*)\circ\mathcal{P}:X\to I.
 $$
 
-## Sequential composition
+### Sequential composition
 
 If
 
@@ -285,7 +285,7 @@ $$
 
 (If ports do not line up, insert a braiding $\sigma$ first.)
 
-## Parallel (tensor) composition
+### Parallel (tensor) composition
 
 If
 
@@ -324,7 +324,7 @@ obtained by holding the other player’s play fixed.
 
 These two operators make (isomorphism classes of) open games into a **symmetric monoidal category**. String diagrams are the graphical language of that category: juxtaposing boxes is $\otimes$, stacking them end-to-end is $\circ$, and topological deformations do not change the denoted game (coherence).
 
-## Example formulas from the paper
+### Example formulas from the paper
 
 **Utility- vs. preference-based decisions** (same closed game, two presentations)
 
@@ -400,12 +400,240 @@ F=P\circ N\circ(M\otimes\mathrm{id}_C) &\qquad\text{(classical tensor-calculus e
 \end{aligned}
 $$
 
+
+## Relational dynamic geometry (RDG) conversion
+**RDGMFEQ Form**
+
+This is the **relational dynamic geometry** version of the entire open‑game calculus. Every open game becomes:
+
+$$
+\boxed{ \text{RDGMFEQ}[\mathcal{G}] = \begin{cases} \text{SID}(t+1)=\Phi^{-}(t) \text{PED}(t+1)=\Phi^{+}(t) Q(t)=\mathcal{Q}(t) \end{cases}
+}
+$$
+
+---
+
+### 🔷 **Relational Open‑Game**  
+*(Relational Dynamic Geometry + Momentum Flux Engine)*
+
+RDG interprets this as a **dynamic geometric morphism** between **SID‑structured state manifolds** and **PED‑structured flux manifolds**.
+
+---
+
+### **RDG Ports**
+RDG simply treats these as **forward and backward geometric fluxes**. Open‑game typing:
+
+$$
+\mathcal{G}:X\otimes S^\*\longrightarrow Y\otimes R^\*
+$$
+
+becomes an RDG morphism:
+
+$$
+\boxed{\mathcal{G}}:\; 
+\underbrace{(X,S^\*)}_{\text{SID input}}
+\;\longrightarrow\;
+\underbrace{(Y,R^\*)}_{\text{PED output}}
+$$
+
+#### SID side (Structure–Interaction–Dynamics)
+- **Structure:** $X$ = observation manifold  
+- **Interaction:** wiring rules (copy, delete, braid)  
+- **Dynamics:** $S^\*$ = backward‑flowing coutility (dual geometry)
+
+#### PED side (Power–Evaluation–Dynamics)
+- **Power:** $Y$ = action manifold  
+- **Evaluation:** $R^\*$ = backward utility flux  
+- **Dynamics:** continuation $k:Y\to R$
+
+---
+
+### **Relational Embedding**
+The open‑game semantics become a **flux‑propagation system** inside RDGMFEQ,
+
+$$
+\text{RDGMFEQ} = \mathcal{M}[\text{SID}(t),\text{PED}(t),Q(t)]
+$$
+
+which absorbs an open game by treating its 4‑tuple as **operators on the triads**.
+
+#### **Play → Forward Flux**
+
+$$
+\mathbf{P}_{\mathcal{G}}:\Sigma\times X\to Y
+\quad\Rightarrow\quad
+\text{PED.Power}(t+1)=\mathbf{P}(\sigma,X(t))
+$$
+
+#### **Coplay → Backward Flux**
+
+$$
+\mathbf{C}_{\mathcal{G}}:\Sigma\times X\times R\to S
+\quad\Rightarrow\quad
+\text{SID.Dynamics}(t)=\mathbf{C}(\sigma,X(t),R(t+1))
+$$
+
+#### **Equilibrium → Q‑slice moderation**
+
+$$
+\mathbf{E}_{\mathcal{G}}(x,k)\subseteq\Sigma
+\quad\Rightarrow\quad
+Q(t)=\text{Moderator}\bigl[\mathbf{E}(X(t),k)\bigr]
+$$
+
+---
+
+### **RDG Open‑Game 4‑Tuple**
+This is the RDG‑native form.
+RDG rewrites this as:
+
+$$ 
+\boxed{ \mathcal{G} = ( \Sigma,\; \Phi^{+},\; \Phi^{-},\; \mathcal{Q} ) } 
+$$
+
+where:
+
+- $\Phi^{+}$ = forward flux operator (play)  
+- $\Phi^{-}$ = backward flux operator (coplay)  
+- $\mathcal{Q}$ = Q‑slice equilibrium selector  
+- $\Sigma$ = strategy manifold
+
+Explicitly:
+
+$$
+\Phi^{+}(t)=\mathbf{P}(\sigma,X(t))
+$$
+
+$$
+\Phi^{-}(t)=\mathbf{C}(\sigma,X(t),R(t+1))
+$$
+
+$$
+\mathcal{Q}(t)=\mathbf{E}(X(t),k)
+$$
+
+---
+
+### **Relational Sequential Composition**
+RDG rewrites this as **flux chaining**:
+
+$$
+\Phi^{+}_{H\circ G}(t) = \Phi^{+}_H\bigl(\Phi^{+}_G(t)\bigr)
+$$
+
+$$
+\Phi^{-}_{H\circ G}(t) = \Phi^{-}_G(\Phi^{-}_H(t+1))
+$$
+
+and the equilibrium condition becomes:
+
+$$
+\mathcal{Q}_{H\circ G}(t) = \mathcal{Q}_G\bigl(t,k'\bigr) \;\cap\; \mathcal{Q}_H\bigl(t+1,k\bigr)
+$$
+
+with the induced continuation.  
+
+$$
+k' = \Phi^{-}_H \circ k \circ \Phi^{+}_H
+$$
+
+which is exactly the **MFE feedback loop**.
+
+---
+
+### **Relational Parallel Composition**
+RDG interprets this as **partial flux conditioning**. RDG rewrites this as **flux superposition**:
+
+$$
+\Phi^{+}_{G\otimes H}(t) = (\Phi^{+}_G(t),\Phi^{+}_H(t))
+$$
+
+$$
+\Phi^{-}_{G\otimes H}(t) = (\Phi^{-}_G(t),\Phi^{-}_H(t))
+$$
+
+and equilibrium:
+
+$$
+\mathcal{Q}_{G\otimes H}(t) = \mathcal{Q}_G(t,k_1')\;\times\;\mathcal{Q}_H(t,k_2')
+$$
+
+---
+
+### **Relational Atomic Open Games**
+
+#### Player  
+
+$$
+\Phi^{+}(t)=\sigma(X(t))
+$$
+
+$$
+\mathcal{Q}(t)=\{\sigma\mid \sigma(X(t))\in\varepsilon(k)\}
+$$
+
+#### Covariant computation  
+
+$$
+\Phi^{+}(t)=f(X(t))
+$$
+
+#### Contravariant computation  
+
+$$
+\Phi^{-}(t)=f(X(t))
+$$
+
+#### Copy, delete, braid  
+These become **geometric rewrites** in RDG.
+
+- Copy = SID structural duplication  
+- Delete = SID structural erasure  
+- Braid = SID interaction symmetry  
+
+---
+
+### **RDG Example Games**
+
+#### Ultimatum Game  
+
+$$
+\Sigma = \text{SID.Structure}(Y_1)\;\times\;\text{PED.Power}(Y_2)^{Y_1}
+$$
+
+Equilibrium conditions:
+
+$$
+\mathcal{Q}(t)=
+\{
+(\sigma_1,\sigma_2)\mid
+\Phi^{+}_1(t)\in\arg\max\mathcal{U}_1,\;
+\Phi^{+}_2(t)\in\arg\max\mathcal{U}_2
+\}
+$$
+
+#### Cournot Duopoly  
+
+$$
+\Phi^{+}(t)=(q_1,q_2)
+$$
+
+$$
+\Phi^{-}(t)=\bigl(\pi_1,\pi_2\bigr)
+$$
+
+$$
+\mathcal{Q}(t)=\{q_i^\*=(a-c)/(3b)\}
+$$
+
+---
+
 ## 📌 Future Work
 - Open games vs pregames
 - Nash equilibrium in string-diagram form  
 - Category-theoretic semantics of games  
 - Connections to quantum circuits  
-- Building  diagrammatic game
-- Build **Relational string diagrams** for any of the games  
+- Building diagrammatic game
+- Build **Relational string diagrams** for any game 
 - Show how **Momentum bipolar flux** corresponds to **play/coplay**  
 - Rewrite **Nash equilibrium** as a **Qiotient‑slice fixed point**
