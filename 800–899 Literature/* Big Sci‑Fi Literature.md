@@ -15,6 +15,8 @@
 10. **Atwood** — Handmaid’s Tale  
 
 ## 🧩 “Regional Coverage” (Canon)
+
+
 ### 🇺🇸 **American (813.5 / 813.6)**
 
 - **Isaac Asimov** — *Foundation*, *I, Robot*  
@@ -57,3 +59,7 @@
 - **Strugatsky Brothers** — *Roadside Picnic*, *Hard to Be a God*  
 
 ---
+
+### 🇵🇱 **Polish (891.82354)**
+
+- **Stanisław Lem** — *Solaris* ✓, *The Cyberiad*, *Fiasco*  
