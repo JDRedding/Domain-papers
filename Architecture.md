@@ -9,10 +9,10 @@ Architecture is both a practical and creative discipline. It involves the design
 -	Area planning & landscape architecture
 -	Area planning
 -	Landscape architecture
-- -	Landscape architecture of trafficways
-- -	Water features
-- -	Woody plants
-- -	Herbaceous plants
+ -	Landscape architecture of trafficways
+ -	Water features
+ -	Woody plants
+ -	Herbaceous plants
 -	Structures in landscape architecture
 -	Landscape design of cemeteries
 -	Natural landscapes
