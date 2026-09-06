@@ -833,3 +833,232 @@ This makes Q‑slice the natural object for:
 
 ---
 
+## **Appendix B — Relational String Diagram Rules**
+
+This appendix defines the **relational string diagram calculus** used to express open games in the relational 4‑tuple form  
+
+$$
+(\Sigma,\Phi^+,\Phi^-,\mathcal{Q})
+$$
+
+and to provide a diagrammatic representation of forward flux, backward flux, and Q‑slice selection.  
+The calculus is a **drawing convention** for the existing symmetric monoidal category of open games; it does not introduce new axioms.
+
+Relational string diagrams:
+
+- use the same atoms as open games,  
+- obey the same monoidal laws,  
+- add drawing conventions for flux and Q‑slice,  
+- provide a readable relational semantics without changing the underlying category.
+
+They are a **faithful diagrammatic presentation** of the relational 4‑tuple  
+
+$$
+(\Sigma,\Phi^+,\Phi^-,\mathcal{Q}).
+$$
+
+---
+
+### **B.1 Objects and Ports**
+
+Every open game  
+
+$$
+\mathcal{G}:X\otimes S^\*\longrightarrow Y\otimes R^\*
+$$
+
+is drawn as a box with four ports:
+
+- **Forward input:** $X$  
+- **Forward output:** $Y$  
+- **Backward input:** $R^\*$  
+- **Backward output:** $S^\*$
+
+Forward ports carry **forward flux** $\Phi^+$.  
+Backward ports carry **backward flux** $\Phi^-$.
+
+Backward ports are dual wires and may only bend via the counit $\tau$, never via a cup.
+
+---
+
+### **B.2 Wire Types**
+
+#### **Forward wires (covariant)**  
+Represent observations, actions, and forward‑flowing information.
+
+#### **Backward wires (contravariant)**  
+Represent utilities, coutilities, and continuation‑dependent feedback.
+
+#### **Typing rule**  
+A wire is well‑typed if its source and target objects match the type signature of the open game.
+
+---
+
+### **B.3 Atomic Diagrammatic Components**
+
+The following atoms correspond directly to the paper’s primitives:
+
+- **Player**  
+
+$$
+\mathcal{P}:X\to Y\otimes R^\*
+$$
+  
+  Forward output is $\Phi^+(\sigma,x)$; backward output is trivial.
+
+- **Covariant computation**  
+
+$$
+f:X\to Y
+$$
+
+- **Contravariant computation**  
+
+$$
+f^\*:Y^\*\to X^\*
+$$
+
+- **Copy**  
+
+$$
+\Delta_X:X\to X\otimes X
+$$
+
+- **Delete**  
+$$
+!_X:X\to I
+$$
+
+- **Braiding**  
+
+$$
+\sigma_{X,Y}:X\otimes Y\to Y\otimes X
+$$
+
+- **Counit**
+  
+$$
+\tau_X:X\otimes X^\*\to I
+$$
+
+---
+
+### **B.4 Composition Rules**
+
+#### **Sequential composition**  
+
+Stacking boxes vertically corresponds to  
+
+$$
+\mathcal{H}\circ\mathcal{G}.
+$$
+
+Forward flux chains:
+
+$$
+\Phi^+_{H\circ G}=\Phi^+_H\circ\Phi^+_G.
+$$
+
+Backward flux chains:
+
+$$
+\Phi^-_{H\circ G}=\Phi^-_G\circ\Phi^-_H.
+$$
+
+Q‑slice selection uses the induced continuation $k'$ exactly as defined in the paper.
+
+### **Parallel composition**  
+
+Placing boxes side‑by‑side corresponds to  
+
+$$
+\mathcal{G}\otimes\mathcal{H}.
+$$
+
+Forward flux pairs:
+
+$$
+\Phi^+_{G\otimes H}=(\Phi^+_G,\Phi^+_H).
+$$
+
+Backward flux pairs:
+
+$$
+\Phi^-_{G\otimes H}=(\Phi^-_G,\Phi^-_H).
+$$
+
+Q‑slice selection uses conditional continuations $k_1',k_2'$ (Nash).
+
+---
+
+### **B.5 Legal Diagrammatic Rewrites**
+
+Relational string diagrams obey the same coherence rules as ordinary string diagrams:
+
+- **Associativity** of sequential composition  
+- **Associativity** of parallel composition  
+- **Symmetry** via braiding  
+- **Naturality** of copy/delete  
+- **Topological invariance** (diagrams may be stretched or bent without changing meaning)
+
+#### **Additional relational conventions**
+These conventions make relational diagrams readable without altering the underlying category. These conventions do not change the mathematics; they standardize the drawing:
+
+1. **Time flows downward.**  
+2. **Backward wires flow upward.**  
+3. **Backward wires may bend only via $\tau$.**  
+4. **Q‑slice annotations** may be placed next to boxes to indicate equilibrium selection.  
+5. **Flux labels** ($\Phi^+,\Phi^-$) may be drawn on wires for clarity.
+
+---
+
+### **B.6 Q‑slice Annotations**
+
+This is purely notational; the equilibrium operator remains $\mathbf{E}_{\mathcal{G}}(x,k)$. Given context $(x,k)$, the Q‑slice is 
+ 
+$$
+Q(x,k)=\mathcal{Q}(x,k)/{\sim}.
+$$
+
+In diagrams, Q‑slice annotations appear as:
+
+- a label on the box,  
+- or a side‑annotation indicating the selected strategies.
+
+---
+
+### **B.7 Example: Relational Diagram for a Player**
+
+A player  
+
+$$
+\mathcal{P}:X\to Y\otimes R^\*
+$$
+
+is drawn as:
+
+```
+   X ───► [ 𝒫 ] ───► Y
+             ▲
+             │ R*
+```
+
+Forward wire: $X\to Y$.  
+Backward wire: $R^\*\to S^\*$ (trivial).  
+Q‑slice: $\mathcal{Q}(x,k)=\{\sigma\mid \sigma(x)\in\varepsilon(k)\}$.
+
+---
+
+### **B.8 Example: Relational Diagram for a Bimatrix Game**
+
+Two players in parallel:
+
+```
+   X1 ─► [ P1 ] ─► Y1 ─► [ U ] ─► R1*
+   X2 ─► [ P2 ] ─► Y2 ─┘
+```
+
+Backward utilities flow upward through $\tau$.  
+Q‑slice is the Nash set under conditional continuations.
+
+---
