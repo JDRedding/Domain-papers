@@ -7,9 +7,8 @@ Architecture is the art and science of designing, planning, and constructing bui
 Architecture is both a practical and creative discipline. It involves the design of spaces that meet human needs while reflecting aesthetic values, cultural identity, and technological advancement. Buildings are more than shelters—they communicate identity, history, and social values through form, materials, and spatial organization.
 
 -	Area planning & landscape architecture
-- -	Area planning
+-	-	Landscape architecture of trafficways
 -	Landscape architecture
-- -	Landscape architecture of trafficways
 - -	Water features
 - -	Woody plants
 - -	Herbaceous plants
