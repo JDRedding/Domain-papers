@@ -19,7 +19,17 @@ Published in 1992, *Snow Crash* sits at the turn from noir cyberpunk (*Neuromanc
 - **Metaverse as Social Physics**  
   The Metaverse is not just VR — it’s a **class system**, a marketplace, and a cognitive battleground. Avatar resolution, address space, and access rights form a digital caste structure.   
 
-Snow Crash satirizes privatization by making it look exciting. Cool cars and the Metaverse are the bait; the target is a country where brands replaced the state.
+Snow Crash satirizes privatization by making it look exciting. Cool cars and the Metaverse are the bait; the target is a country where brands replaced the state. Two stacked circuits, same book:
+
+**1. Diegetic**  
+*Snow Crash* → **circuit** → **virus** → **infrastructure of contagion**  
+Bitmap, blood, speech, church, Raft. The plot is a distribution network: Rife owns the pipes; the payload is firmware.
+
+**2. Formal**  
+*Snow Crash* → **satirical overload** → **courier / content vector** → **overproduction**  
+Hiro/Y.T. (and the prose itself) move too much stuff too fast: pizzas, intel, logos, lectures, swords. The style *is* the contagion — brands and bits replicating until the public sphere is just loglo.
+
+Same topology: a channel, a payload, a surplus that won’t stop copying. In-world the surplus is infection; on the page it is franchise, gag, and exposition arriving at courier speed.
 
 ### What it mocks
 - America reduced to four exports: music, movies, software, pizza.
