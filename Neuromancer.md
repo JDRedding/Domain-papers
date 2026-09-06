@@ -751,7 +751,20 @@ $$
 U_R = U(\text{audience},\ \text{cruelty},\ \text{3Jane})
 $$
 
-with no dependence on $\mathcal{C}(W,N)$. This makes him a **strategic hole** in the mechanism: no contract binds him, no leash restrains him, and his dominant strategy is Defect. Molly’s poison is a **private enforcement strategy** — a subgame-perfect response to a player who cannot be made incentive-compatible.
+with no dependence on $\mathcal{C}(W,N)$. This makes him a **strategic hole** in the mechanism: no contract binds him, no leash restrains him, and his dominant strategy is Defect. 
+
+#### Incentive compatibility and the toxin leash  
+Molly’s poison is a **private enforcement strategy** — a subgame-perfect response to a player who cannot be made incentive-compatible. The toxin sacs are a **commitment device** that modifies Case’s continuation utility:
+
+$$
+U_{\text{Case}}(\text{quit}) \ll U_{\text{Case}}(\text{finish})
+$$
+
+This is exactly your earlier variable $a(\tau)$. In game‑theoretic terms, Wintermute uses $a(\tau)$ to enforce **incentive compatibility** after granting the up‑front reward (restored $\nu$).
+
+This is a classic **hostage contract**:  
+- Wintermute cannot monitor Case’s effort inside the matrix.  
+- So it creates a state variable whose decay makes quitting strictly dominated.
 
 ---
 
