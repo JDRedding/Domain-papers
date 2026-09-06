@@ -1,6 +1,6 @@
 # **Gödelian constraints**  
 
-The note lays out how treating Gödel-style modal operators (□, ◇) as concrete, runtime constraints (hard filters) embedded into a relational/engine model so the system never evolves into regions where incompleteness or contradiction can occur. In short: instead of discussing Gödelian limits philosophically, make them operational boundary‑conditions that keep the system inside a provable/legal fragment.
+This note lays out how treating Gödel-style modal operators (□, ◇) as concrete, runtime constraints (hard filters) embedded into a relational/engine model so the system never evolves into regions where incompleteness or contradiction can occur. In short: instead of discussing Gödelian limits philosophically, make them operational boundary‑conditions that keep the system inside a provable/legal fragment.
 
 ---
 
