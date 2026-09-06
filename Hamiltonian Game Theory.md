@@ -137,15 +137,6 @@ The formalism therefore supplies a single operator language in which classical m
 
 ---
 
-## 🧭 Relational systems
-
-- Density matrix = global relational state  
-- Payoff operators = Power‑side evaluators  
-- Evolution toward equilibrium = Quotient‑layer admissible dynamics  
-- Entangled strategy states = Structural‑level relational coupling between players
-
----
-
 ## Strategy entanglement versus object entanglement
 
 - **Object entanglement** (the ingredient used by Eisert–Wilkens–Lewenstein and most of TQG) lives in the Hilbert space of the *physical systems* that the players act upon—two qubits prepared in $J|00\rangle$, an entangled pair of pennies, etc. It changes the numerical entries of the payoff operators $H_i$ but does not change the *strategy* description itself.
@@ -172,7 +163,14 @@ When all payoff operators commute they share a common eigenbasis. If that basis 
 
 ---
 
-## Relational vocabulary mapping 
+## 🧭 Relational systems
+
+- Density matrix = global relational state  
+- Payoff operators = Power‑side evaluators  
+- Evolution toward equilibrium = Quotient‑layer admissible dynamics  
+- Entangled strategy states = Structural‑level relational coupling between players
+
+### Relational vocabulary mapping 
 
 - Density matrix $\rho_S$ $\leftrightarrow$ global relational state (the complete web of probabilistic and coherent relations among all players’ actions).
 
