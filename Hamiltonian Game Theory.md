@@ -93,7 +93,9 @@ Wu proposes a **thermodynamic‑style evolution** of the strategy density matrix
 This is not the usual best‑response or replicator dynamics.  
 It is a **pseudo‑dynamical process** that mimics how statistical mechanics finds equilibrium distributions.  
 
-## 🔮 Relation to “Traditional Quantum Game Theory” (TQG)  
+## 🔮 Relation to TQG
+: Traditional Quantum Game Theory
+
 Wu argues that TQG (Eisert–Wilkens–Lewenstein, etc.) mixes two concepts:
 
 - entanglement of **game objects** (e.g., entangled qubits)  
