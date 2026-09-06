@@ -149,7 +149,7 @@ The formalism therefore supplies a single operator language in which classical m
 ## Strategy entanglement versus object entanglement
 
 - **Object entanglement** (the ingredient used by Eisert–Wilkens–Lewenstein and most of TQG) lives in the Hilbert space of the *physical systems* that the players act upon—two qubits prepared in $J|00\rangle$, an entangled pair of pennies, etc. It changes the numerical entries of the payoff operators $H_i$ but does not change the *strategy* description itself.
-- 
+ 
 - **Strategy entanglement** lives in the Hilbert space whose basis vectors are the players’ *actions* (or elementary operators $I,X,Y,Z,\dots$). A joint density matrix $\rho_S\neq\bigotimes_i\rho_i$ means the players have chosen a correlated or quantum-entangled *plan*. Wu treats this as a primitive that unifies non-cooperative, correlated-equilibrium and coalitional games inside one operator language. An earlier companion paper constructs an artificial two-player game whose only equilibrium is an entangled strategy state; destroying the off-diagonal blocks strictly lowers both payoffs, so the entanglement functions as a binding agreement.
 
 The two notions commute: one can have classical (diagonal) strategies acting on an entangled object, or entangled strategies acting on a classical object, or both at once.
