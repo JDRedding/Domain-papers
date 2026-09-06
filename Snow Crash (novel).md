@@ -190,7 +190,7 @@ Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to 
    (Shared Execution Layer Broken)
 
 ```
-*Enki's nam-shub ($T$) splitting the unified decoder ($D^*$), driving mutual information $I(X_i; X_j) \to 0$ to create consciousness.*
+* Enki's nam-shub ($T$) splitting the unified decoder ($D^\*$), driving mutual information $I(X_i; X_j) \to 0$ to create consciousness.*
 
 - **The Raft Confrontation**  
   The climax merges physical infiltration, memetic warfare, and Metaverse combat — demonstrating that virtual and physical domains are now co‑dependent.
