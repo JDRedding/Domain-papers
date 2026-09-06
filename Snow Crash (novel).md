@@ -22,6 +22,17 @@ The novel also introduces the **Metaverse**, an immersive virtual-reality landsc
 
 Other notable characters include **Da5id**, whose exposure to the digital virus leaves him brain-damaged, and **The Librarian**, an AI assistant who organizes and explains complex research.
 
+### **Character Dynamic**
+**System Components** : 
+Each major character embodies a subsystem of the world.
+
+- **Hiro Protagonist** — interface between code, sword, and street; a hacker‑samurai archetype used to explore information warfare.  
+- **Y.T.** — mobility, youth culture, and gig‑economy autonomy.  
+- **Juanita Marquez** — the novel’s intellectual core; her research ties Sumerian myth to neurolinguistic programming.  
+- **L. Bob Rife** — corporate sovereignty incarnate; controls both physical logistics and memetic distribution.  
+- **Raven** — violence as ideology; a walking dead‑man switch.  
+- **Da5id** — demonstrates the digital Snow Crash vector’s neurological impact.
+
 ## Plot Overview
 
 The novel intertwines near-future technology and ancient myth. Hiro and Y.T. uncover a dangerous virus, **Snow Crash**, which exists in both digital and physical forms: a digital bitmap that crashes hackers and a blood-borne version spread via cults and narcotics. The virus exploits neurological structures linked to the ancient Sumerian language, enabling Rife to control minds and essentially “reprogram humanity.”
