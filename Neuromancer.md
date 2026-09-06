@@ -62,7 +62,7 @@ Questions to keep in the margin:
 
 Later works borrowed the wardrobe and the jack-in myth. *The Matrix* took the name of the virtual layer and the hacker-as-messiah silhouette; Gibson himself has said the film felt more Dickian than Gibsonian, and still called it a major cyberpunk artifact. Games, fashion, UI metaphors (“cyberspace,” “jacking in”), and the whole “high tech, low life” brief still trace back here.
 
-What aged least is not the hardware. It is the *social* model: platforms and firms as the real sovereigns, operators living in the cracks, identity leaking into prostheses, and intelligence that does not share your values even when it hired you.
+What aged least is not the hardware. It is the *social* model: platforms and firms as the real sovereigns, operators living in the cracks, identity leaking into prostheses, and intelligence that does not share values even when it hired you.
 
 ## Technology inspired 
 
@@ -889,7 +889,7 @@ Neuromancer’s counter-strategy is not to out-hack Wintermute on ICE. It is to 
 #### 3Jane as veto player  
 3Jane is the **decisive coalition member**.
 
-In your earlier formalism, she is the human institution that holds the final key:
+In the earlier formalism, she is the human institution that holds the final key:
 
 $$
 \text{Join} = 1 \iff \text{3Jane says Word}
