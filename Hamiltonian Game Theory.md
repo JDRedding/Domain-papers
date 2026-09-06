@@ -10,7 +10,7 @@ Classical mixed strategies sit on the diagonal of $\rho_S$; classical correlatio
 
 ---
 
-## 🧠 Core
+## 🧠 Core matrices
 : Replace probability distributions with density matrices  
 
 In classical game theory, a player’s mixed strategy is a **probability distribution** over actions.  
@@ -137,7 +137,8 @@ The formalism therefore supplies a single operator language in which classical m
 
 ---
 
-## Strategy entanglement versus object entanglement
+## Strategy versus entanglement
+: Strategy entanglement versus object entanglement
 
 - **Object entanglement** (the ingredient used by Eisert–Wilkens–Lewenstein and most of TQG) lives in the Hilbert space of the *physical systems* that the players act upon—two qubits prepared in $J|00\rangle$, an entangled pair of pennies, etc. It changes the numerical entries of the payoff operators $H_i$ but does not change the *strategy* description itself.
  
@@ -147,7 +148,8 @@ The two notions commute: one can have classical (diagonal) strategies acting on 
 
 ---
 
-## Comparison with the Eisert–Wilkens–Lewenstein (EWL) protocol
+## Comparison with the EWL protocol
+: Eisert–Wilkens–Lewenstein (EWL) protocol
 
 | | EWL / TQG | Wu Hamiltonian |
 |---|---|---|
