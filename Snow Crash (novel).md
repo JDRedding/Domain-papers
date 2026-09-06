@@ -103,9 +103,22 @@ Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to 
 - **Mythology and Memetic Control**  
   Sumerian myth is treated as archived code in humanity’s operating system.   
 
-## Notation 
+### **Mathematical Notation**
 
 What follows are the **real formulas and notation** that map most closely onto the book’s ideas: language as firmware, Snow Crash as a dual digital/biological virus, Babel / the nam-shub as a counter-program, and the Metaverse as a coded world.
+
+### **Formal Notation**
+
+Novel’s metaphors onto real information theory:
+
+- **Entropy:** $H(X)$  
+- **Self‑information:** $I(x) = -\log_2 p(x)$  
+- **Channel capacity:** $C = B\log_2(1 + S/N)$  
+- **Mutual information:** $I(X;Y)$  
+- **Formal languages:** $L \subseteq \Sigma^*$  
+- **Self‑replicating programs:** fixed‑point / Quine forms  
+- **Bitmap corruption:** $I'(i,j) = I(i,j) \oplus N(i,j)$  
+- **Babel transform:** $I(X_i; X_j) \to 0$  
 
 | Symbol | Role in this mapping |
 |---|---|
