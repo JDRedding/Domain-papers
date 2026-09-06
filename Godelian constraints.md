@@ -1,5 +1,9 @@
 # **Gödelian constraints**  
 
+The note lays out how treating Gödel-style modal operators (□, ◇) as concrete, runtime constraints (hard filters) embedded into a relational/engine model so the system never evolves into regions where incompleteness or contradiction can occur. In short: instead of discussing Gödelian limits philosophically, make them operational boundary‑conditions that keep the system inside a provable/legal fragment.
+
+---
+
 **Gödelian constraints** treat incompleteness-style limits and modal operators as *hard filters* on an evolving relational system rather than as comments on truth or metaphysics.
 
 **Gödelian constraints make relationals *complete inside its own modal geometry*** because they *pre‑filter* every candidate state, flux, and update so that the system never enters a region where incompleteness would apply. Don’t “*escape Gödel*”; only can **engineer around Gödel** by restricting the universe of admissible states to the fragment where consistency is guaranteed. They function as three layered guards:
