@@ -2,6 +2,8 @@
 
 Neal Stephenson’s *Snow Crash* is a pioneering 1992 cyberpunk/post-cyberpunk novel that fuses high-speed action, ancient Sumerian mythology, and virtual reality in a satirical, hyper-commercialized future America. *Snow Crash* is a complex, vividly imagined novel that combines action, mythology, linguistics, and social critique, creating a compelling vision of a near-future America shaped by technology, corporate power, and the enduring influence of language.
 
+*Snow Crash* is best understood as a **systems novel**: a satire, a cyberpunk thriller, and a memetic‑linguistic thought experiment fused into one engine. Its lasting significance comes from how it treats **information as a biological, computational, and mythological substrate**, and how it imagines virtual reality not as escapism but as a second jurisdiction of power.
+
 ## Literary Significance
 
 *Snow Crash* is widely regarded as a breakthrough in cyberpunk literature, blending satire, high-octane narrative, and intellectual exploration. It coined the term **Metaverse** and presaged modern virtual worlds, cryptographic currencies, and post-digital societal structures. Its impact resonates in both literary and technological communities and remains relevant for discussions of cyber-societal futures. There is no official “Snow Crash equation” in the novel. The closest rigorous notation is **Shannon information theory** plus **formal language theory** plus a **self-replicating program**. Those are the formulas the book is gesturing at when it says language can be firmware and a story can be a virus.
@@ -275,3 +277,8 @@ $$
 even though each still has internal language structure $H(X_i) > 0$.
 
 ---
+
+## Future work
+- **Compare Snow Crash to Neuromancer** — how each defines reality's relations
+- **Analyze the Metaverse’s influence** — from avatars to virtual real estate.  
+- **Examine Snow Crash as memetic theory** — the novel as a precursor to modern information‑warfare models.
