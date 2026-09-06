@@ -686,6 +686,7 @@ $$
 $$
 
 #### Cournot Duopoly  
+RDG does not elevate Cournot to a universal law. It treats it as a **closed-game fixed point**, exactly as it should be. The Cournot expression in RDG is an example of a closed-game Q‑slice, not a general RDG principle. It mirrors the the given example and is not presented as a universal law.
 
 $$
 \Phi^{+}(t)=(q_1,q_2)
@@ -697,6 +698,16 @@ $$
 
 $$
 \mathcal{Q}(t)=\{q_i^\*=(a-c)/(3b)\}
+$$
+
+The Cournot equilibrium **is an example**, exactly as required. The statement is:
+
+> “the Nash quantities are $q_i^\*=(a-c)/(3b)$”  
+
+RDG simply rewrites this as a Q‑slice:
+
+$$
+\mathcal{Q}(t)=\{q^\*\}
 $$
 
 ---
