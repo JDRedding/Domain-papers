@@ -1,4 +1,4 @@
-#  OpenWave’s substrate‑framework 
+#  OpenWave’s Lagrangian hunt  
 
 The structure laid out — the certified curvature term $I_1$, the trace‑potential $V_4$, the clock‑reduction functional, and the ranked modification families (v4, $\lambda$-mixing, Duda’s quadratic contractions) — is exactly the landscape currently being explored in OpenWave’s substrate‑framework audits. The external sources confirm two key points that matter for the search:
 
