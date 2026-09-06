@@ -553,10 +553,11 @@ The underlying algebra is unchanged — exactly as the paper requires.
 ---
 
 ### **Relational Sequential Composition**
-RDG rewrites this as **flux chaining**:
+
+The RDG expression is a compressed notation for the same universal condition given in the paper. It does not replace the universal quantifier; it encodes it as a moderation constraint on the Q‑slice. The underlying equilibrium definition remains exactly the one in Hedges–Shprits–Winschel–Zahn. RDG rewrites this as **flux chaining**:
 
 $$
-\Phi^{+}_{H\circ G}(t) = \Phi^{+}_H\bigl(\Phi^{+}_G(t)\bigr)
+\Phi^{+}_{H\circ G}(t) = \Phi^{+}_H(\Phi^{+}_G(t))
 $$
 
 $$
@@ -575,7 +576,19 @@ $$
 k' = \Phi^{-}_H \circ k \circ \Phi^{+}_H
 $$
 
-which is exactly the **MFE feedback loop**.
+which is exactly the **MFE feedback loop**. There is *no* claim of equivalence — this is a **compressed RDG‑mode summary**. RDG does not remove “for all $\sigma_1'$”. RDG rewrites the universal quantifier as a **Q‑slice moderation constraint**. The RDG form:
+
+$$
+\mathcal{Q}_{H\circ G}(t) = \mathcal{Q}_G(t,k')\;\cap\;\mathcal{Q}_H(t+1,k)
+$$
+
+is shorthand for:
+
+$$
+(\sigma_1,\sigma_2)\in\mathcal{Q}_{H\circ G}(t) \quad\Longleftrightarrow\quad \begin{cases} \sigma_1\in\mathcal{Q}_G(t,k')\\ \sigma_2\in\mathcal{Q}_H(t+1,k)\text{ for all }\sigma_1' \end{cases}
+$$
+
+RDG treats the universal quantifier as a **constraint on the Q‑slice**, not as a literal set intersection.
 
 ---
 
