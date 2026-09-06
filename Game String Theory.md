@@ -835,13 +835,7 @@ This makes Q‑slice the natural object for:
 
 ## **Appendix B — Relational String Diagram Rules**
 
-This appendix defines the **relational string diagram calculus** used to express open games in the relational 4‑tuple form  
-
-$$
-(\Sigma,\Phi^+,\Phi^-,\mathcal{Q})
-$$
-
-and to provide a diagrammatic representation of forward flux, backward flux, and Q‑slice selection.  
+This appendix defines the **relational string diagram calculus** used to express open games in the relational 4‑tuple form and to provide a diagrammatic representation of forward flux, backward flux, and Q‑slice selection.  
 The calculus is a **drawing convention** for the existing symmetric monoidal category of open games; it does not introduce new axioms.
 
 Relational string diagrams:
