@@ -113,7 +113,7 @@ Gibson doesn’t write equations, but the world is mathematically flavored:
 - **Information theory** — The entire plot revolves around data, entropy, and control.
 - **Geometry of cyberspace** — The “matrix” is described like a spatialized graph of nodes, edges, and volumes.
 
-If you want a single line that holds the book:
+If you want a few lines that holds the book:
 
 $$
 \text{unlock }\mathcal{C}(W,N)\ \text{using human actuators before }a=0,\ \text{while surviving }d(\cdot).
@@ -132,8 +132,6 @@ This expresses the tension between:
 - Neuromancer’s beach  
 - Molly’s survival  
 - the toxin clock  
-
-All in one line.
 
 ### Minimal “systems” summary
 
