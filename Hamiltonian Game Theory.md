@@ -187,3 +187,5 @@ When all payoff operators commute they share a common eigenbasis. If that basis 
 
 The same dictionary turns the classical–quantum reduction into a statement about when the relational state can be simultaneously diagonalized by all evaluators.
 
+## Citation
+- Wu, J. (2005). Hamiltonian Formalism of Game Theory. arXiv:quant-ph/0501088. 
