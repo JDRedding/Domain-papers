@@ -2,6 +2,14 @@
 
 **Gödelian constraints** treat incompleteness-style limits and modal operators as *hard filters* on an evolving relational system rather than as comments on truth or metaphysics.
 
+**Gödelian constraints make relationals *complete inside its own modal geometry*** because they *pre‑filter* every candidate state, flux, and update so that the system never enters a region where incompleteness would apply. Don’t “escape Gödel”; only **engineer around Gödel** by restricting the universe of admissible states to the fragment where consistency is guaranteed. They function as three layered guards:
+
+- On the structural layer they act as necessity: the geometry of structure, interaction and dynamics is required to stay inside a legal manifold. In operator form this is $\square(\text{state} \in \text{Relational-legal})$. Contradictory geometries or interactions are simply not instantiable.
+- On the power/evaluation layer they act as possibility limiters: $\diamond(\text{flux} \in \text{admissible})$. Not every force-pair or score the engine could generate is allowed; only those that preserve modal closure survive.
+- On the global equation layer they act as a reset/boundary filter: the next state is produced only after the current state plus flux has been passed through $\text{Filter}_{\text{Gödel}}$. Illegal Q-slice jumps, inconsistent memory integration or survival trajectories that would break entological coherence are discarded.
+
+In relational terms, *“Gödelian constraints”* are not philosophical decorations — they are **modal boundary‑conditions** baked directly into the equations and embedded engine. They act as *necessity operators* inside structure and *possibility‑flux limiters* inside the powers, ensuring that the system never evolves into states that violate relational‑logic, entological coherence, or Quotient‑slice admissibility.
+
 | Gödel Operator |  Interpretation |
 |----------------|------------------------|
 | **□φ** | Structural‑necessity operator (structural manifold membership) |
@@ -10,13 +18,15 @@
 | **modal closure** | Equation boundary filter |
 | **consistency requirement** | Momentum flux‑coherence constraint |
 
-They function as three layered guards:
+Together these enforce:
 
-- On the structural layer they act as necessity: the geometry of structure, interaction and dynamics is required to stay inside a legal manifold. In operator form this is $\square(\text{state} \in \text{Relational-legal})$. Contradictory geometries or interactions are simply not instantiable.
-- On the power/evaluation layer they act as possibility limiters: $\diamond(\text{flux} \in \text{admissible})$. Not every force-pair or score the engine could generate is allowed; only those that preserve modal closure survive.
-- On the global equation layer they act as a reset/boundary filter: the next state is produced only after the current state plus flux has been passed through $\text{Filter}_{\text{Gödel}}$. Illegal Q-slice jumps, inconsistent memory integration or survival trajectories that would break entological coherence are discarded.
+- **no contradictory states**  
+- **no inconsistent flux**  
+- **no illegal transitions**  
+- **no undecidable memory updates**  
+- **no evolution outside the provable fragment**
 
-In relational terms, *“Gödelian constraints”* are not philosophical decorations — they are **modal boundary‑conditions** baked directly into the equations and embedded engine. They act as *necessity operators* inside structure and *possibility‑flux limiters* inside the powers, ensuring that the system never evolves into states that violate relational‑logic, entological coherence, or Quotient‑slice admissibility.
+Therefore: **Realationals are complete because Gödelian constraints remove the parts of the universe where incompleteness would apply.**
 
 The notation $\square\phi$ / $\diamond\phi$ is taken from standard modal logic (necessity / possibility). Gödel himself used a similar modal vocabulary in the ontological proof, but the incompleteness theorems supply the deeper rationale: a sufficiently expressive consistent system cannot prove every truth that holds in its models and cannot prove its own consistency. The framework therefore embeds that limitation as an *engineering* constraint so the relational engine never steps into a state whose description would be formally inconsistent with its own axioms.
 
