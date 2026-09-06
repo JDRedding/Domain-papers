@@ -394,3 +394,192 @@ BCR = \frac{\text{building footprint}}{\text{site area}}
 $$
 
 These two numbers, together with height limits, largely determine the massing of the cities discussed earlier (Manhattan grid, Chicago School towers, Tokyo micro-lots, Dubai megaplots).
+
+## APPENDIX: **Architecture Diagrams**
+
+---
+
+### 🏛️ **1. Spatial Hierarchy (Plan Logic)**
+
+```
++-----------------------------+
+|           PUBLIC            |
+|   +---------------------+   |
+|   |      SEMI-PUBLIC    |   |
+|   |  +---------------+  |   |
+|   |  |   PRIVATE     |  |   |
+|   |  +---------------+  |   |
+|   +---------------------+   |
++-----------------------------+
+```
+
+Shows how circulation and privacy nest inside each other — a core architectural pattern.
+
+---
+
+### 📐 **2. Classical Proportion (Façade Grid)**
+
+```
++-------------------------------+
+|   |-----|-----|-----|-----|   |
+|   |     |     |     |     |   |
+|---+-----+-----+-----+-----+---|
+|   |     |     |     |     |   |
+|   |-----|-----|-----|-----|   |
+|---+-----+-----+-----+-----+---|
+|   |     |     |     |     |   |
++-------------------------------+
+      1 : φ : 1
+```
+
+A simplified proportional façade using golden‑ratio spacing.
+
+---
+
+### 🏗️ **3. Structural Frame (Post + Beam)**
+
+```
+   LOAD ↓
+   +-----------+
+   |           |
+---+-----------+---
+   |           |
+   |           |
+---+-----------+---
+   |           |
+   |           |
+---+-----------+---
+```
+
+Verticals = columns  
+Horizontals = beams  
+Arrows = load path
+
+---
+
+### ⚙️ **4. Load Path Diagram (Gravity + Lateral)**
+
+```
+      WIND → → →
+   +----------------+
+   |                |
+   |     ROOF       |
+   +----------------+
+        ↓     ↓
+   +----------------+
+   |                |
+   |   FLOOR        |
+   +----------------+
+        ↓     ↓
+   +----------------+
+   |                |
+   |  FOUNDATION    |
+   +----------------+
+```
+
+Shows vertical gravity loads and lateral wind loads.
+
+---
+
+### 🪟 **5. Façade Composition (Three-Part Vertical Order)**
+
+```
++---------------------------+
+|           CORNICE         |
++---------------------------+
+|           SHAFT           |
+|   |  |  |  |  |  |  |     |
+|   |  |  |  |  |  |  |     |
++---------------------------+
+|           BASE            |
++---------------------------+
+```
+
+Classical tripartite façade logic.
+
+---
+
+### 🏙️ **6. Urban Grid (NYC vs. Organic)**
+
+#### Rectilinear Grid (NYC)
+```
++---+---+---+---+---+
+|   |   |   |   |   |
++---+---+---+---+---+
+|   |   |   |   |   |
++---+---+---+---+---+
+|   |   |   |   |   |
++---+---+---+---+---+
+```
+
+#### Organic Medieval Pattern (London/Rome)
+```
+ \   /---\     /---\
+  \ /     \   /     \
+   X       X X       X
+  / \     /   \     /
+ /   \---/     \---/
+```
+
+---
+
+### 🌿 **7. Landscape Architecture (Your Taxonomy Visualized)**
+
+```
++--------------------------------------------------+
+| AREA PLANNING                                    |
+|  +------------------+--------------------------+  |
+|  | TRAFFICWAYS      | NATURAL LANDSCAPES       |  |
+|  |  +-----------+   |   +-------------------+  |  |
+|  |  | WATER     |   |   | WOODY PLANTS      |  |  |
+|  |  | FEATURES  |   |   +-------------------+  |  |
+|  |  +-----------+   |   +-------------------+  |  |
+|  |  | HERBACEOUS|   |   | STRUCTURES        |  |  |
+|  |  | PLANTS    |   |   +-------------------+  |  |
+|  +------------------+--------------------------+  |
+|                  CEMETERY DESIGN                 |
++--------------------------------------------------+
+```
+
+This mirrors your landscape architecture section exactly.
+
+---
+
+### 🏙️ **8. City Typology Diagrams (Your Case-Study Logic)**
+
+#### Chicago (Industrial + Grid + Towers)
+```
++----+----+----+----+
+|    |    |    |    |
+| T  | T  | T  | T  |
++----+----+----+----+
+|====RAIL====|====RAIL====|
++-------------------------+
+```
+
+#### Los Angeles (Auto + Sprawl)
+```
+     FWY====FWY====FWY
+   /      \       \
+ [NODE]  [NODE]   [NODE]
+   \        \        \
+    ---HOUSING SPREAD---
+```
+
+#### Tokyo (Density + Seismic)
+```
++--+ +--+ +--+ +--+
+|##| |##| |##| |##|  ← micro-lots
++--+ +--+ +--+ +--+
+   ||||||||||||||     ← transit spine
+```
+
+#### Dubai (Megaprojects)
+```
+   +-------------------+
+   |   MEGATOWER       |
+   +-------------------+
+~~~~~ ARTIFICIAL ISLAND ~~~~~
+```
+
+---
