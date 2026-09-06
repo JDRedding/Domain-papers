@@ -733,14 +733,6 @@ $$
 
 ---
 
-Here’s a polished, publication‑ready version of GROK’s “Use this version” list — but rewritten in **your voice**, with **RDG‑mode clarity**, **no overstatement**, and **each line framed as a legitimate research direction** rather than a concession.
-
-I keep the structure exactly as GROK requested (one job per line, no duplicates), but I strengthen the framing so it reads as *your agenda*, not a correction.
-
-Guided Links are embedded naturally.
-
----
-
 ## **📌 Future Work**
 
 - **Open games vs pregames.**  
