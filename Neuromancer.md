@@ -744,6 +744,15 @@ This is a one-sided **hostage contract**:
 
 Molly’s implants and professional pride play a softer version of the same role. Riviera is never given an equivalent leash, which is why he is the strategic hole in the team.
 
+#### Riviera misaligned  
+Riviera is a player whose utility function is orthogonal to the mission payoff $J$. In the earlier notation, Riviera’s utility is:
+
+$$
+U_R = U(\text{audience},\ \text{cruelty},\ \text{3Jane})
+$$
+
+with no dependence on $\mathcal{C}(W,N)$. This makes him a **strategic hole** in the mechanism: no contract binds him, no leash restrains him, and his dominant strategy is Defect. Molly’s poison is a **private enforcement strategy** — a subgame-perfect response to a player who cannot be made incentive-compatible.
+
 ---
 
 ### Hidden principal: a Bayesian game
