@@ -213,3 +213,184 @@ São Paulo’s architectural identity emerges from:
 - **Hybrid Urbanism** — formal and informal architectures coexisting  
 
 São Paulo reveals how **modernism, migration, and megacity growth** produce complex urban form.
+
+## APPENDIX: Architectural mathematics
+
+Architecture uses mathematics at two levels at once: the geometry that organizes form and proportion, and the physics that keeps buildings standing, comfortable, and habitable. Below are the core equations and the notation that usually accompanies them.
+
+The same physical quantities appear across every city and period: force equilibrium keeps the Empire State Building and the Burj Khalifa standing; Sabine’s formula shapes concert halls from Carnegie Hall to the Philharmonie de Paris; $\phi$ and modular grids still appear in both historic Parisian façades and contemporary parametric work. The equations themselves are culturally neutral; the values plugged into them (wind speed, seismic coefficient, desired reverberation, permitted FAR) are what give each place its distinct built character.
+
+### Proportion and geometry
+
+Golden ratio (used from classical temples through Le Corbusier’s Modulor):
+
+$$
+\phi = \frac{1 + \sqrt{5}}{2} \approx 1.618
+$$
+
+It satisfies
+
+$$
+\phi^2 = \phi + 1 \quad \text{or} \quad \frac{\phi + 1}{\phi} = \phi
+$$
+
+Palladio’s preferred room ratios (length : width) include $1:1$, $1:\sqrt{2}$, $1:1.5$, $1:\phi$.
+
+Fractal scaling sometimes used in contemporary form-finding:
+
+$$
+p_i = \frac{C}{x_i^m}
+$$
+
+where $p_i$ is the number of elements of size $x_i$, $C$ is set by the largest element, and $m$ is the fractal dimension.
+
+### Statics and structure
+
+Equilibrium (every stable building obeys these):
+
+$$
+\sum F_x = 0, \quad \sum F_y = 0, \quad \sum F_z = 0
+$$
+
+$$
+\sum M_x = 0, \quad \sum M_y = 0, \quad \sum M_z = 0
+$$
+
+Axial stress and strain:
+
+$$
+\sigma = \frac{P}{A}, \qquad \varepsilon = \frac{\delta}{L}, \qquad \sigma = E\varepsilon
+$$
+
+- $\sigma$ stress  
+- $P$ axial force  
+- $A$ cross-sectional area  
+- $\varepsilon$ strain  
+- $\delta$ elongation  
+- $L$ original length  
+- $E$ modulus of elasticity  
+
+Flexure formula (bending of beams):
+
+$$
+\sigma = \frac{My}{I}
+$$
+
+Section modulus:
+
+$$
+S = \frac{I}{c} \quad \Rightarrow \quad \sigma = \frac{M}{S}
+$$
+
+- $M$ bending moment  
+- $y$ or $c$ distance from neutral axis  
+- $I$ moment of inertia  
+
+Euler buckling load (slender columns):
+
+$$
+P_{cr} = \frac{\pi^2 EI}{(KL)^2}
+$$
+
+- $K$ effective-length factor (depends on end conditions)  
+- $L$ unbraced length  
+
+Common simply-supported beam under uniform load $w$:
+
+$$
+M_{\max} = \frac{wL^2}{8}, \qquad \delta_{\max} = \frac{5wL^4}{384EI}
+$$
+
+### Thermal performance
+
+Heat flow through an assembly:
+
+$$
+Q = UA\Delta T
+$$
+
+or, with thermal resistance,
+
+$$
+Q = \frac{A\Delta T}{R_{\text{total}}}, \qquad R = \frac{1}{U}
+$$
+
+- $Q$ heat transfer rate  
+- $U$ overall heat-transfer coefficient  
+- $A$ surface area  
+- $\Delta T$ temperature difference  
+- $R$ thermal resistance  
+
+For multilayer walls the resistances add in series:
+
+$$
+R_{\text{total}} = R_1 + R_2 + \cdots + R_n
+$$
+
+### Daylighting (simplified)
+
+Daylight factor (average):
+
+$$
+DF = \frac{E_{\text{int}}}{E_{\text{ext}}} \times 100\%
+$$
+
+A common rule-of-thumb estimate for sidelighting is
+
+$$
+DF_{\text{avg}} \approx \frac{A_{\text{glazing}} \cdot \tau \cdot \theta}{A_{\text{floor}} \cdot (1-\rho^2)}
+$$
+
+where $\tau$ is transmittance, $\theta$ is the visible sky angle, and $\rho$ is average room reflectance.
+
+### Architectural acoustics
+
+Sabine’s reverberation-time formula (still the starting point for most rooms):
+
+$$
+T_{60} = 0.161 \frac{V}{A}
+$$
+
+(metric units: $T_{60}$ in seconds, $V$ in m³, $A$ in m² sabins).
+
+More generally, including air absorption:
+
+$$
+T_{60} = 0.161 \frac{V}{A + 4mV}
+$$
+
+Eyring’s refinement (better when absorption is high):
+
+$$
+T_{60} = 0.161 \frac{V}{-S \ln(1 - \bar{\alpha})}
+$$
+
+- $V$ room volume  
+- $S$ total surface area  
+- $A = S\bar{\alpha}$ total absorption  
+- $\bar{\alpha}$ average absorption coefficient  
+- $m$ air-attenuation coefficient  
+
+Sound-pressure level:
+
+$$
+L_p = 20\log_{10}\left(\frac{p}{p_0}\right)
+$$
+
+with reference pressure $p_0 = 20\,\mu\text{Pa}$.
+
+### Urban and planning metrics
+
+Floor-area ratio:
+
+$$
+FAR = \frac{\text{total floor area}}{\text{site area}}
+$$
+
+Building coverage:
+
+$$
+BCR = \frac{\text{building footprint}}{\text{site area}}
+$$
+
+These two numbers, together with height limits, largely determine the massing of the cities discussed earlier (Manhattan grid, Chicago School towers, Tokyo micro-lots, Dubai megaplots).
