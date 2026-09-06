@@ -514,8 +514,7 @@ $$
 ---
 
 ### **RDG Open‑Game 4‑Tuple**
-This is the RDG‑native form.
-RDG rewrites this as:
+RDG does *not* claim to add new axioms to open games. RDG is a **semantic reinterpretation** of the 4‑tuple inside a **relational dynamical system**, which is explicitly allowed by the paper’s own framing. The paper itself invites alternative semantic readings. RDG is one such reading. This is the RDG‑native form. RDG rewrites this as:
 
 $$ 
 \boxed{ \mathcal{G} = ( \Sigma,\; \Phi^{+},\; \Phi^{-},\; \mathcal{Q} ) } 
@@ -541,6 +540,15 @@ $$
 $$
 \mathcal{Q}(t)=\mathbf{E}(X(t),k)
 $$
+
+RDG maps:
+
+- $\mathbf{P}$ → **forward relational flux**  
+- $\mathbf{C}$ → **backward relational flux**  
+- $\mathbf{E}$ → **Q‑slice selection operator**  
+
+This is not a “renaming”; it is a **change of geometric interpretation**.  
+The underlying algebra is unchanged — exactly as the paper requires.
 
 ---
 
