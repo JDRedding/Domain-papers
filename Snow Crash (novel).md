@@ -450,7 +450,7 @@ $$
 
 Rife’s problem is not invention. It is rate: keep $S/N$ high across blood, pulpit, and Street.
 
-## Babel as decoder fork
+### Babel as decoder fork
 
 Enki writes a counter-string $T$ (nam-shub) that does not add noise to $X$. It splits the interpreter:
 
