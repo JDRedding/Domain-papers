@@ -135,7 +135,7 @@ The resulting system is therefore “Gödel-compatible” in the operational sen
 
 ## APPENDIX: LEAN minimal constructive skeleton
 
-Implements the five moves listed. It is small enough to type-check immediately and can be grown into the full relational engine.
+Implements the five moves listed for a small relational universe where Gödelian constraints are a computable projection onto a complete fragment. It is small enough to type-check immediately and can be grown into the full relational engine.
 
 ```lean
 universe u
