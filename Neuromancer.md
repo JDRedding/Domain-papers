@@ -137,6 +137,8 @@ $$
 | Merge | $\Psi^+=\mathcal{C}(W,N)$ | plot product |
 | Heist | $\max J(u)$ s.t. $u\in\mathcal{U}$ | constrained control |
 
+These are **formalizations imposed on Gibson’s world**, not equations from the novel. Notation is chosen so each symbol maps to a concrete story object.
+
 ---
 
 ### Technical breakdown of Neuromancer’s systems
@@ -212,10 +214,6 @@ Wintermute cannot explain *why* it must merge. The drive is in the design. That 
 Every job is resource-bounded: time, trust, toxin countdown, Molly’s injuries, Armitage’s impending collapse, Zion’s ship, 3Jane’s consent. Cyberpunk heists are constrained optimization with violence as a solver.
 
 None of this requires claiming Gibson was doing control theory. It only requires noticing that the book *feels* technical because its plot is made of interfaces, locks, partitions, and emergent behavior.
-
----
-
-These are **formalizations imposed on Gibson’s world**, not equations from the novel. Notation is chosen so each symbol maps to a concrete story object.
 
 ---
 
