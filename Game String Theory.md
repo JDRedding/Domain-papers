@@ -400,8 +400,38 @@ F=P\circ N\circ(M\otimes\mathrm{id}_C) &\qquad\text{(classical tensor-calculus e
 \end{aligned}
 $$
 
+---
 
-## Relational dynamic geometry (RDG) conversion
+## Special Relational 4-tuple
+
+A special relational-style 4-tuple is:
+
+$$
+\mathcal{G}=(\Sigma,\Phi^+,\Phi^-,\mathcal{Q})
+$$
+
+$$
+\begin{aligned} \Phi^+(\sigma,x)&=\mathbf{P}_{\mathcal{G}}(\sigma,x)\in Y,\\ \Phi^-(\sigma,x,r)&=\mathbf{C}_{\mathcal{G}}(\sigma,x,r)\in S,\\ \mathcal{Q}(x,k)&=\mathbf{E}_{\mathcal{G}}(x,k)\subseteq\Sigma. \end{aligned}
+$$
+
+Sequential chaining:
+
+$$
+\begin{aligned} \Phi^+_{\mathcal{H}\circ\mathcal{G}}((\sigma_1,\sigma_2),x) &=\Phi^+_{\mathcal{H}}(\sigma_2,\Phi^+_{\mathcal{G}}(\sigma_1,x)),\\ \Phi^-_{\mathcal{H}\circ\mathcal{G}}((\sigma_1,\sigma_2),x,r) &=\Phi^-_{\mathcal{G}}(\sigma_1,x,\Phi^-_{\mathcal{H}}(\sigma_2,\Phi^+_{\mathcal{G}}(\sigma_1,x),r)). \end{aligned}
+$$
+
+Parallel superposition:
+
+$$
+\begin{aligned}
+\Phi^+_{\mathcal{G}\otimes\mathcal{H}}((\sigma_1,\sigma_2),(x_1,x_2)) &=(\Phi^+_{\mathcal{G}}(\sigma_1,x_1),\Phi^+_{\mathcal{H}}(\sigma_2,x_2)),\\ \Phi^-_{\mathcal{G}\otimes\mathcal{H}}((\sigma_1,\sigma_2),(x_1,x_2),(r_1,r_2)) &=(\Phi^-_{\mathcal{G}}(\sigma_1,x_1,r_1),\Phi^-_{\mathcal{H}}(\sigma_2,x_2,r_2)). \end{aligned}
+$$
+
+A closed game is still $I\to I$; “equilibrium” is just $\sigma\in\mathcal{Q}(\bullet,k_\bullet)$.
+
+---
+
+## Generalized relational conversion
 **RDGMFEQ Form**
 
 This is the **relational dynamic geometry** version of the entire open‑game calculus. Every open game becomes:
@@ -413,8 +443,8 @@ $$
 
 ---
 
-### 🔷 **Relational Open‑Game**  
-*(Relational Dynamic Geometry + Momentum Flux Engine)*
+### 🔷 **General Relational Open‑Game**  
+*Relational Dynamic Geometry + Momentum Flux Engine*
 
 RDG interprets this as a **dynamic geometric morphism** between **SID‑structured state manifolds** and **PED‑structured flux manifolds**.
 
