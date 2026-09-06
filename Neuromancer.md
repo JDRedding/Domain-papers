@@ -121,9 +121,9 @@ $$
 
 Case’s personal arc:
 
-##
+$$
 \text{maximize }U_{\text{Case}}(\chi,\nu,\kappa)\ \text{subject to mission constraints.}
-##
+$$
 
 This expresses the tension between:
 
@@ -498,6 +498,7 @@ A two-module cartoon:
 $$
 W : \text{world state} \mapsto \text{plan / manipulation}
 $$
+
 $$
 N : \text{world state} \mapsto \text{identity / inner world}
 $$
