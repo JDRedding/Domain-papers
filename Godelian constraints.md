@@ -132,3 +132,76 @@ Gödel’s 1930 completeness theorem says first-order logic is complete: every s
 The modal vocabulary ($\square$, $\diamond$) is taken from the same family of operators Gödel employed in the ontological argument, but here they function strictly as admissibility predicates, not as claims about necessary existence.
 
 The resulting system is therefore “Gödel-compatible” in the operational sense: it is forced to stay inside its own consistent fragment even while it evolves.
+
+## APPENDIX: LEAN minimal constructive skeleton
+
+Implements the five moves listed. It is small enough to type-check immediately and can be grown into the full relational engine.
+
+```lean
+universe u
+
+/-- Concrete state and flux (replace with your real inductive types). -/
+inductive State : Type u
+  | legal   : Nat → State
+  | illegal : Nat → State
+
+inductive Flux : Type u
+  | ok   : Nat → Flux
+  | bad  : Nat → Flux
+
+/-- Recursively defined invariants. -/
+def RelationalLegal : State → Prop
+  | State.legal _   => True
+  | State.illegal _ => False
+
+def FluxAdmissible : Flux → Prop
+  | Flux.ok _  => True
+  | Flux.bad _ => False
+
+/-- Trivial but computable evolution. -/
+def step : State → Flux → State
+  | State.legal n, Flux.ok m   => State.legal (n + m)
+  | _,             _           => State.illegal 0
+
+/-- Projection onto the legal fragment (idempotent by construction). -/
+def GodelFilter : State → State
+  | State.legal n   => State.legal n
+  | State.illegal _ => State.legal 0   -- reset to a canonical legal state
+
+lemma godelfilter_idem (s : State) :
+    GodelFilter (GodelFilter s) = GodelFilter s := by
+  cases s <;> rfl
+
+lemma godelfilter_legal (s : State) :
+    RelationalLegal (GodelFilter s) := by
+  cases s <;> simp [GodelFilter, RelationalLegal]
+
+lemma step_preserves_legality
+    (s : State) (f : Flux)
+    (hs : RelationalLegal s) (hf : FluxAdmissible f) :
+    RelationalLegal (step s f) := by
+  cases s <;> cases f <;> simp [step, RelationalLegal, FluxAdmissible] at *
+
+/-- Modal operators as identity (K/T/4 hold trivially). 
+    Swap for a Kripke frame when you need genuine necessity. -/
+def Box (P : Prop) : Prop := P
+def Diamond (P : Prop) : Prop := P
+
+/-- Completeness relative to the legal fragment 
+    (here “derivable” is just “legal”, the weakest useful reading). -/
+def Derivable (s : State) : Prop := RelationalLegal s
+
+theorem derivable_after_godel_filter
+    (s : State) (f : Flux)
+    (hs : RelationalLegal s) (hf : FluxAdmissible f) :
+    Derivable (GodelFilter (step s f)) := by
+  have hstep : RelationalLegal (step s f) := step_preserves_legality s f hs hf
+  exact godelfilter_legal (step s f)
+```
+
+- `State`, `Flux`, `step` and `GodelFilter` are inductive / recursive, so they compute.
+- Legality is a real predicate; the two preservation lemmas are proved, not postulated.
+- `GodelFilter` is an explicit idempotent projection onto `RelationalLegal`.
+- `Box`/`Diamond` are currently the identity (so the modal axioms hold for free). Replace them with a Kripke frame when want genuine accessibility.
+
+Completeness is no longer a global axiom; it is the statement that every state that survives the filter is legal, which is now a theorem.
