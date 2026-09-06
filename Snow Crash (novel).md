@@ -35,12 +35,9 @@ Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to 
 - **Corporate Sovereignty and Anarcho-Capitalism**: Federal collapse and corporate dominance underscore social satire on privatization and commodification.
 - **Myth and History as Mechanisms of Control**: Sumerian culture, the Tower of Babel, and ancient linguistics intersect with futuristic technologies to underscore the influence of information on power.
 
-
-
 ## Notation 
 
 What follows are the **real formulas and notation** that map most closely onto the book’s ideas: language as firmware, Snow Crash as a dual digital/biological virus, Babel / the nam-shub as a counter-program, and the Metaverse as a coded world.
-
 
 | Symbol | Role in this mapping |
 |---|---|
@@ -56,8 +53,7 @@ What follows are the **real formulas and notation** that map most closely onto t
 ---
 
 ### Information content of a symbol (language as code)
-
-If a sign or syllable $x$ occurs with probability $p(x)$, its **self-information** (surprisal) is
+The cleanest math analog of the novel’s claim that a language can carry executable structure, not just meaning. If a sign or syllable $x$ occurs with probability $p(x)$, its **self-information** (surprisal) is
 
 $$
 I(x) = -\log_2 p(x) \quad \text{(bits)}
@@ -78,13 +74,10 @@ $$
 | $H(X)$ | entropy in bits per symbol |
 | $\log_2$ | information measured in bits |
 
-This is the cleanest math analog of the novel’s claim that a language can carry executable structure, not just meaning.
-
 ---
 
 ### Channel capacity (virus as a signal)
-
-Snow Crash travels two channels: a **bitmap** (digital) and **blood / speech** (biological). Shannon’s capacity for a noisy channel with bandwidth $B$, signal power $S$, and noise power $N$ is
+In the book’s terms: if the “payload” is a nam-shub and the channel is a human brainstem or a Metaverse client, $C$ is how much of that payload can land intact. Snow Crash travels two channels: a **bitmap** (digital) and **blood / speech** (biological). Shannon’s capacity for a noisy channel with bandwidth $B$, signal power $S$, and noise power $N$ is
 
 $$
 C = B\log_2\left(1+\frac{S}{N}\right)
@@ -100,13 +93,10 @@ $$
 | $N$ | noise power |
 | $S/N$ | signal-to-noise ratio |
 
-In the book’s terms: if the “payload” is a nam-shub and the channel is a human brainstem or a Metaverse client, $C$ is how much of that payload can land intact.
-
 ---
 
 ### Mutual information (does the hearer “execute” the utterance?)
-
-How much of the sender’s message $X$ is recovered by the receiver $Y$:
+A successful nam-shub is a case where $I(X;Y)$ is large **and** $Y$ is not interpreted as ordinary speech but as an instruction. How much of the sender’s message $X$ is recovered by the receiver $Y$:
 
 $$
 I(X;Y) = H(X) - H(X\mid Y) = \sum_{x,y} p(x,y)\log_2\frac{p(x,y)}{p(x)p(y)}
@@ -120,13 +110,10 @@ $$
 | $H(X\mid Y)$ | remaining uncertainty after hearing $Y$ |
 | $p(x,y)$ | joint distribution |
 
-A successful nam-shub is a case where $I(X;Y)$ is large **and** $Y$ is not interpreted as ordinary speech but as an instruction.
-
 ---
 
 ### Formal languages (Sumerian as deep structure / firmware)
-
-A formal language $L$ over alphabet $\Sigma$ is a set of strings:
+Stephenson’s Sumerian “me” are closer to **low-level procedures** than to ordinary natural-language sentences: more like Type-0 / machine code than Type-2 syntax. A formal language $L$ over alphabet $\Sigma$ is a set of strings:
 
 $$
 L \subseteq \Sigma^*
@@ -150,13 +137,10 @@ Chomsky hierarchy (the book’s “universal grammar / PROM” idea sits here):
 | 2 | context-free | $A \to \alpha$ |
 | 3 | regular | $A \to aB$ or $A \to a$ |
 
-Stephenson’s Sumerian “me” are closer to **low-level procedures** than to ordinary natural-language sentences: more like Type-0 / machine code than Type-2 syntax.
-
 ---
 
 ### Self-replicating program (virus)
-
-A compact abstract form of a self-copying payload:
+Snow Crash is this idea split across two substrates: a **bitmap** that crashes a hacker’s visual cortex / GPU path, and a **biological** copy that rides speech and blood. A compact abstract form of a self-copying payload:
 
 $$
 V(x) = x \,\|\, \operatorname{copy}(x)
@@ -179,13 +163,10 @@ where $\varphi_e$ is a universal interpreter (brainstem / CPU).
 | $\varphi_e$ | universal machine / interpreter |
 | $p$ | program that prints or installs itself |
 
-Snow Crash is this idea split across two substrates: a **bitmap** that crashes a hacker’s visual cortex / GPU path, and a **biological** copy that rides speech and blood.
-
 ---
 
 #### Bitmap “snow crash” (corrupted raster)
-
-A digital image is a map from pixel coordinates to color:
+Visual static is the origin of the title: a crash so low-level that the framebuffer becomes snow. A digital image is a map from pixel coordinates to color:
 
 $$
 I: \{0,\dots,W-1\}\times\{0,\dots,H-1\} \to \{0,\dots,2^{d}-1\}^c
@@ -209,13 +190,11 @@ or simply $I'(i,j) \sim \text{Unif}$ over the color space.
 | $\oplus$ | bitwise XOR (typical corruption model) |
 | $N$ | noise field |
 
-That visual static is the origin of the title: a crash so low-level that the framebuffer becomes snow.
-
 ---
 
 ### Babel as a map that destroys mutual intelligibility
 
-Think of a population of speakers as processes sharing a decoder $D$. Enki’s nam-shub is a transform $T$ such that afterward
+This the information-theoretic reading of “*he changed the speech in their mouths*.” Think of a population of speakers as processes sharing a decoder $D$. Enki’s nam-shub is a transform $T$ such that afterward
 
 $$
 D_i \circ T \neq D_j \circ T \qquad (i \neq j)
@@ -228,7 +207,5 @@ I(X_i;X_j) \to 0
 $$
 
 even though each still has internal language structure $H(X_i) > 0$.
-
-That is the information-theoretic reading of “he changed the speech in their mouths.”
 
 ---
