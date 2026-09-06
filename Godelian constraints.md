@@ -157,9 +157,9 @@ Equation := Structure ⊗ Power ⊗ Momentum  |  Gödel_boundary
 The Gödel boundary enforces:
 
 - **no contradictory survival trajectories**  
-- **no illegal Q‑slice transitions**  
+- **no illegal Quotient‑slice transitions**  
 - **no modal‑incoherent memory integration**  
-- **no flux‑paths that violate RDG entology**  
+- **no flux‑paths that violate realtional entology**  
 
 In operator form:
 
