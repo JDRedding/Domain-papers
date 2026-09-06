@@ -264,7 +264,7 @@ $$
 \theta : V \to \{\text{data vault},\ \text{AI core},\ \text{corporate ICE},\ \text{public grid},\ \text{simstim relay}\}
 $$
 
-This lets you express constraints like:
+This allows the expression of the constraints like:
 
 $$
 \theta(v) = \text{AI core} \implies d(v) \text{ is maximal}
