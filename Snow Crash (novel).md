@@ -143,7 +143,7 @@ Chomsky hierarchy (the book’s “universal grammar / PROM” idea sits here):
 Snow Crash is this idea split across two substrates: a **bitmap** that crashes a hacker’s visual cortex / GPU path, and a **biological** copy that rides speech and blood. A compact abstract form of a self-copying payload:
 
 $$
-V(x) = x \,\|\, \operatorname{copy}(x)
+V(x) = x \,\|\, {copy}(x)
 $$
 
 or, as a fixed-point idea (Quine / Kleene recursion):
@@ -159,7 +159,7 @@ where $\varphi_e$ is a universal interpreter (brainstem / CPU).
 | Symbol | Meaning |
 |---|---|
 | $\|$ | concatenation |
-| $\operatorname{copy}(x)$ | replica of the payload |
+| ${copy}(x)$ | replica of the payload |
 | $\varphi_e$ | universal machine / interpreter |
 | $p$ | program that prints or installs itself |
 
