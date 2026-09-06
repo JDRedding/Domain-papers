@@ -758,3 +758,80 @@ $$
 ## **📚 References and further reading**
 
 - Hedges, J., Shprits, E., Winschel, V., & Zahn, P. (2016). *Compositionality and String Diagrams for Game Theory*. arXiv:1604.06061 [cs.GT]. [https://doi.org/10.48550/arXiv.1604.06061](https://doi.org/10.48550/arXiv.1604.06061)
+
+
+## **Appendix A — Q‑slice (Quotient‑slice) Definition**
+
+### **A.1 Motivation**
+To formalize this, we introduce the **Q‑slice (quotient‑slice)** of an open game. Open games provide an equilibrium selector  
+
+$$
+\mathbf{E}_{\mathcal{G}}(x,k)\subseteq\Sigma_{\mathcal{G}},
+$$ 
+
+where $x$ is the observation and $k:Y\to R$ is the continuation. In many applications, different strategy profiles induce the **same play** or the **same equilibrium behaviour**, and it is useful to identify them.
+
+---
+
+#### **A.2 Definition of Q‑slice**
+
+Let $\mathcal{G}$ be an open game with strategy set $\Sigma$.  
+Fix a context $(x,k)$, where:
+
+- $x\in X$ is the observation,  
+- $k:Y\to R$ is the continuation.
+
+Let $\sim$ be an equivalence relation on $\Sigma$.  
+Typical choices include:
+
+- **same play:** $\sigma\sim\sigma'$ if $\mathbf{P}(\sigma,x)=\mathbf{P}(\sigma',x)$,  
+- **same equilibrium behaviour:** $\sigma\sim\sigma'$ if both satisfy the same best‑response conditions.
+
+##### **Definition (Q‑slice).**  
+The **Q‑slice** of $\mathcal{G}$ in context $(x,k)$ is the quotient:
+
+$$
+Q(x,k) \;=\; \mathcal{Q}(x,k)/{\sim} \;=\; \mathbf{E}_{\mathcal{G}}(x,k)/{\sim}.
+$$
+
+Thus:
+
+- $\mathcal{Q}(x,k)=\mathbf{E}_{\mathcal{G}}(x,k)$ is the **slice** of $\Sigma$ selected by equilibrium,  
+- dividing by $\sim$ produces the **quotient** of that slice.
+
+Until $\sim$ is specified, “Q‑slice” is simply a name for $\mathbf{E}(x,k)$.
+
+---
+
+#### **A.3 Usage**
+This matches the paper’s equilibrium semantics while providing a clean relational abstraction. Once $\sim$ is declared, the abbreviation **Q‑slice** refers to the quotient object $Q(x,k)$.  This allows concise statements such as:
+
+- “Nash equilibrium is the fixed point of the Q‑slice operator,”  
+- “Sequential equilibrium refines the Q‑slice by strengthening $\sim$,”  
+- “Relational string diagrams annotate each port with its Q‑slice.”
+
+---
+
+#### **A.4 Relation to RDG**
+The Q‑slice is the bridge between the paper’s categorical equilibrium operator and the RDG relational interpretation. In RDG notation, the equilibrium operator is written:
+
+$$
+\mathcal{Q}(x,k)=\mathbf{E}_{\mathcal{G}}(x,k),
+$$
+
+and the Q‑slice is the **quotient**:
+
+$$
+Q(x,k)=\mathcal{Q}(x,k)/{\sim}.
+$$
+
+This makes Q‑slice the natural object for:
+
+- **Q‑slice fixed‑point theorems**,  
+- **relational string diagrams**,  
+- **equilibrium compression**,  
+- **strategy‑behaviour equivalence**.
+
+
+---
+
