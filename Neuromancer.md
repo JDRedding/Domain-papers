@@ -448,7 +448,11 @@ $$
 H(\hat{Z}_{\tau+1}\mid\hat{Z}_\tau) = 0
 $$
 
-no new entropy from life. Neuromancer’s copies are closer to systems with residual RAM: $H(\hat{Z}_{\tau+1}\mid\hat{Z}_\tau) > 0$.
+no new entropy from life. Neuromancer’s copies are closer to systems with residual RAM: 
+
+$$
+H(\hat{Z}_{\tau+1}\mid\hat{Z}_\tau) > 0
+$$
 
 Dixie’s construct has **fixed-point dynamics**:
 
