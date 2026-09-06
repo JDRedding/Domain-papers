@@ -38,8 +38,6 @@ This is why a compliant system feels “*Gödel‑compatible*” even though not
 
 ---
 
-## 🧩 “Gödelian constraints”
-
 ## 🧠 A dictionary for Gödelian constraints
 
 - **□φ** → Structural‑necessity operator  
