@@ -61,6 +61,7 @@ $$
 $$
 
    (Some earlier notes of Wu insert an extra multiplicative factor of the old $\rho_i$; the later Hamiltonian paper uses the pure Boltzmann replacement above.)
+   
 3. Reassemble the joint state $\rho_S=\bigotimes_i\rho_i$ (or keep a correlated/entangled joint state if one is working in the coalitional setting).
 
 **Termination.** Iterate until the map reaches a fixed point (or a cycle whose time-average is recorded). As $\beta\to\infty$ the thermal state concentrates on the maximizers of $H_i^R$, so a fixed point of the infinite-$\beta$ map is a Nash equilibrium of the original game. Finite $\beta$ yields a smoothed, bounded-rationality equilibrium. The Prisoner's-Dilemma example in the paper converges to the unique classical NE $(D,D)$ for large $\beta$; a figure traces the cooperation probability versus iteration number for several values of $\beta$.
