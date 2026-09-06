@@ -7,7 +7,7 @@
 | **□φ** | Structural‑necessity operator (structural manifold membership) |
 | **◇φ** | Power‑possibility operator (flux admissibility) |
 | **φ(x)** | Quotient‑slice state descriptor |
-| **modal closure** | AEquation boundary filter |
+| **modal closure** | Equation boundary filter |
 | **consistency requirement** | Momentum flux‑coherence constraint |
 
 They function as three layered guards:
