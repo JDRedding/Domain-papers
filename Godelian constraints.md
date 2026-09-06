@@ -6,7 +6,7 @@ The note lays out how treating Gödel-style modal operators (□, ◇) as concre
 
 **Gödelian constraints** treat incompleteness-style limits and modal operators as *hard filters* on an evolving relational system rather than as comments on truth or metaphysics.
 
-## GÖDELIAN CONSTRAINT ARCHITECTURE
+## ARCHITECTURE
 
 ```text
 ============================================================
