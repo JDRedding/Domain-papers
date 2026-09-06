@@ -634,3 +634,12 @@ $$
 until $\nu = 0$, when the second term becomes the whole prison.
 
 ---
+
+#### 🧩 Neuromancer dynamical system  
+Collapsed into one overarching structure:
+
+$$
+\text{Mission} =(G,\ d,\ x(\tau),\ s(\tau),\ \hat{F},\ (W,N),\ \mathcal{U}_{\text{feasible}})
+$$
+
+Everything the book does is a trajectory through this tuple.
