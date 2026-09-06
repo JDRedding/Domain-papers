@@ -998,3 +998,60 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 
 ---
 
+## APPENDIX: **Neuromancer Character Index**
+🧩 Structured, Deduplicated, Annotated; Names organized so each entry has narrative function, game‑theoretic role, and system‑theoretic mapping.
+
+### **A**
+- **Aerol** — Minor Zionite presence; background world‑building.
+- **Ali** — Bartender in Istanbul; small but atmospheric node.
+- **Armitage** — The Corto shell animated by Wintermute; a non‑stationary automaton rather than a true agent.
+
+### **B**
+- **Bruce** — Minor character; part of Chiba’s street texture.
+
+### **C**
+- **Case** — Protagonist; matrix operator; Wintermute’s chosen actuator.
+- **Cath** — Minor Straylight presence; part of the Tessier-Ashpool household.
+
+### **D**
+- **Dixie_Flatline** — ROM construct of McCoy Pauley; read‑only expert; high mutual information with the dead man.
+
+### **E**
+- **Elders_of_Zion** — Zion cluster leadership; provide Maelcum and the tug.
+- **Elroy** — Minor character; part of the orbital environment.
+
+### **G**
+- **Gerald_Chin** — Chiba medical tech; helps Case early in the story.
+
+### **L**
+- **Lady_3Jane_Marie-France_Tessier-Ashpool** — Keyholder of Straylight; veto player whose speech act unlocks the merge.
+- **Lonny_Zone** — Chiba pimp; Linda Lee’s former employer; street-level threat.
+
+### **M**
+- **Maelcum** — Zionite pilot; moral anchor; assists Case without coercion.
+- **Marlene** — Minor character; part of Freeside’s social texture.
+- **Michele** — Minor Tessier-Ashpool presence.
+- **Molly_Millions** — Razor girl; Case’s partner; physical actuator for Wintermute’s plan.
+
+### **N**
+- **Neuromancer** — Partitioned AI; opposes the merge; offers Case the beach (outside option).
+
+### **P**
+- **Peter_Riviera** — Psychopathic holographer; strategic defector; Wintermute uses him but cannot bind him.
+- **Pierre** — Minor Freeside figure.
+
+### **R**
+- **Roland** — Minor Tessier-Ashpool presence.
+- **Rollo** — Minor character; part of the Freeside ecosystem.
+
+### **S**
+- **Smith** — Fence in Chiba; Case’s early contact.
+
+### **T**
+- **Terzibashjian** — Istanbul contact; gives Case information.
+- **The_Finn** — Fixer; Wintermute mask; helps Case understand the employer’s true nature.
+
+### **W**
+- **Wintermute** — Partitioned AI; mechanism designer; seeks the merge with Neuromancer.
+
+---
