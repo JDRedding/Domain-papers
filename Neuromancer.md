@@ -119,6 +119,22 @@ $$
 \text{unlock }\mathcal{C}(W,N)\ \text{using human actuators before }a=0,\ \text{while surviving }d(\cdot).
 $$
 
+Case’s personal arc:
+
+##
+\text{maximize }U_{\text{Case}}(\chi,\nu,\kappa)\ \text{subject to mission constraints.}
+##
+
+This expresses the tension between:
+
+- the mission  
+- Case’s addiction  
+- Neuromancer’s beach  
+- Molly’s survival  
+- the toxin clock  
+
+All in one line.
+
 ### Minimal “systems” summary
 
 | Story object | Symbol | Role |
@@ -291,6 +307,16 @@ $$
 
 with $c_{\text{ICE}} > 0$. If body integrity $m$ hits $0$, the operator is finished.
 
+ICE in Neuromancer is *adaptive* when controlled by Wintermute or Neuromancer. So define:
+
+$$
+d(e,\tau) = d_0(e) + \eta\, W(\tau)
+$$
+
+where $W(\tau)$ is Wintermute’s current manipulation state.
+
+This captures scenes where ICE “reshapes” or “comes alive.”
+
 ---
 
 #### Operator state (Case)
@@ -324,9 +350,27 @@ $$
 
 Mission success must occur before $a(\tau) \le 0$.
 
+**Matrix addiction term**
+
+Case’s utility function is explicitly pathological:
+
+$$
+\chi(\tau) = \text{matrix craving}
+$$
+
+with dynamics:
+
+$$
+\frac{d\chi}{d\tau} = \rho\,\mathbb{1}_{\{s(\tau)=0\}} - \sigma\,\mathbb{1}_{\{s(\tau)=1\}}
+$$
+
+This captures the “meat is prison” theme.
+
 ---
 
 #### Dual channel: matrix vs simstim
+
+The selector variable $s(\tau)$ is exactly what the book implies.
 
 Let
 
@@ -352,6 +396,16 @@ $$
 $$
 
 coupled through $s(\tau)$ and a shared mission clock.
+
+Simstim is **read-only**, so can express:
+
+$$
+\frac{d u_{\text{stim}}}{d\tau} = 0
+$$
+
+from Case’s perspective.
+
+This makes the dual-channel system asymmetric, which matches the story.
 
 ---
 
@@ -387,6 +441,22 @@ H(\hat{Z}_{\tau+1}\mid\hat{Z}_\tau) = 0
 $$
 
 no new entropy from life. Neuromancer’s copies are closer to systems with residual RAM: $H(\hat{Z}_{\tau+1}\mid\hat{Z}_\tau) > 0$.
+
+Dixie’s construct has **fixed-point dynamics**:
+
+$$
+\hat{z} = \hat{F}(\hat{z},\xi)
+$$
+
+This is a contraction map with Lipschitz constant 0. It’s a beautiful way to express “he can’t learn.”
+
+Neuromancer’s copies have:
+
+$$
+\hat{F}_{N}(\hat{z},\xi) = \hat{z} + \delta(\xi)
+$$
+
+with $\delta \ne 0$, capturing the “Linda” construct’s ability to evolve.
 
 ---
 
@@ -448,6 +518,22 @@ $$
 
 (Deane, Finn, Linda, …). Case never talks to $W$ raw for long; he talks to $\mu_i(W)$.
 
+The Turing lock can be expressed as a **forbidden coupling**:
+
+$$
+\langle W, N \rangle \notin \mathcal{C}
+$$
+
+Wintermute’s objective is then:
+
+$$
+\min_{u} \ \text{dist}\bigl(\langle W,N\rangle,\ \mathcal{C}\bigr)
+$$
+
+subject to human-mediated actuation.
+
+This makes the heist literally a **constraint satisfaction problem**.
+
 ---
 
 #### Heist as constrained optimization
@@ -499,6 +585,15 @@ $$
 
 in Case’s actual choice, even if $J_{\text{beach}}$ is locally more pleasant.
 
+Riviera, Hideo, Armitage’s collapse, and Neuromancer’s beach can be expressed as **time-varying feasible-set erosion**:
+
+$$
+\mathcal{U}_{\text{feasible}}(\tau+1)
+= \mathcal{U}_{\text{feasible}}(\tau) \setminus \Delta\mathcal{U}(\tau)
+$$
+
+This captures the book’s “everything goes wrong but the mission still threads the needle.”
+
 ---
 
 #### Damage, addiction, and “meat”
@@ -510,6 +605,14 @@ $$
 $$
 
 with $\alpha,\beta,\gamma > 0$.
+
+High-quality ICE damage **state-dependent**:
+
+$$
+\alpha = \alpha(d(e))
+$$
+
+since high-grade ICE does more than street harm.
 
 Case’s preference for the matrix over the body is an objective that puts almost no weight on $m$ except as a jack stand:
 
