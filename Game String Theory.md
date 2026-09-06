@@ -1059,3 +1059,229 @@ Backward utilities flow upward through $\tau$.
 Q‑slice is the Nash set under conditional continuations.
 
 ---
+
+## **Appendix C — Game String Theory diagram spec**
+
+---
+
+### C.1. Core objects and wiring
+
+- **Colors:**  
+  - Orange = forward flux (Power).  
+  - Blue = backward flux (Evaluation).  
+  - Red = Q‑slice moderation.
+
+- **Icons:**  
+  - SID triangle for box semantics.  
+  - PED triangle for port semantics.  
+  - Q glyph for quantifier compression.
+
+- **Rule:**  
+  *“Topology of wires = algebra of composition. Overlay is semantic only; no axiom changes.”*
+
+#### C.1.1 Open game box
+
+- **Label:**  
+  **Name:** `G` (or `G_i`), top center.  
+  **Type:** `X ⟶ Y` (forward) and `Y* ⟶ X*` (backward), bottom center.
+
+- **Shape:**  
+  **Box:** Rounded rectangle.  
+  **Layers:** Internally divided into three horizontal bands:
+  - **Structure (S)** — top band.
+  - **Interaction (I)** — middle band.
+  - **Dynamics (D)** — bottom band.
+
+- **Internal labels (optional):**  
+  - **S‑band:** “state, rules, topology”.  
+  - **I‑band:** “strategic coupling, information flow”.  
+  - **D‑band:** “update, evolution, learning”.
+
+#### C.1.2 Ports
+
+- **Forward input port (left):**  
+  **Label:** `X` (domain).  
+  **Triad tag:** PED triangle with **Power** corner highlighted.
+
+- **Forward output port (right):**  
+  **Label:** `Y` (codomain).  
+  **Triad tag:** PED triangle with **Power/Dynamics** corners highlighted.
+
+- **Backward input port (right, lower):**  
+  **Label:** `Y*` (continuation).  
+  **Triad tag:** PED triangle with **Evaluation** corner highlighted.
+
+- **Backward output port (left, lower):**  
+  **Label:** `X*` (induced continuation).  
+  **Triad tag:** PED triangle with **Evaluation/Dynamics** corners highlighted.
+
+---
+
+### C.2. Flux channels and color scheme
+
+#### C.2.1 Forward flux (Φ⁺)
+
+- **Meaning:** Power / influence / play direction.
+- **Style:**  
+  - **Line:** Thick, solid.  
+  - **Color:** Neon orange.  
+  - **Arrow:** Pointing from left to right.
+
+#### C.2.2 Backward flux (Φ⁻)
+
+- **Meaning:** Evaluation / continuation / utility feedback.
+- **Style:**  
+  - **Line:** Thick, solid.  
+  - **Color:** Neon blue.  
+  - **Arrow:** Pointing from right to left.
+
+#### C.2.3 Moderation slice (Q)
+
+- **Meaning:** Quotient‑slice moderation of universal quantifiers.
+- **Style:**  
+  - **Overlay:** Thin red band crossing the backward wire.  
+  - **Glyph:** Small red triangle or bar labeled `Q`.  
+  - **Placement:** On the backward wire segment closest to the game box.
+
+#### C.2.4 Background fields (optional)
+
+- **Forward field:** Soft orange gradient behind forward wires.  
+- **Backward field:** Soft blue gradient behind backward wires.  
+- **Q‑field:** Light red grid or hatch near moderation glyphs.
+
+---
+
+### C.3. Triads: SID and PED
+
+#### C.3.1 SID (Structure–Interaction–Dynamics)
+
+Used to annotate **boxes** and **subsystems**.
+
+- **Icon:** Small triangle with corners labeled `S`, `I`, `D`.
+- **Usage:**  
+  - On the box border, indicating which aspect is dominant.  
+  - On grouped subgames, showing their role in the overall architecture.
+
+#### C.3.2 PED (Power–Evaluation–Dynamics)
+
+Used to annotate **ports** and **wires**.
+
+- **Icon:** Small triangle with corners labeled `P`, `E`, `D`.
+- **Usage:**  
+  - Next to each port, with one or two corners highlighted.  
+  - Along wires, to show how flux is interpreted (e.g., `P` on forward, `E` on backward).
+
+---
+
+### C.4. Composition patterns
+
+#### C.4.1 Sequential composition
+
+Diagram: `G ; H`
+
+- **Visual:**  
+  - Place `G` on the left, `H` on the right.  
+  - Connect `G`’s forward output `Y` to `H`’s forward input.  
+  - Connect `H`’s backward output to `G`’s backward input.
+
+- **Flux:**  
+  - Orange forward wire passes through both boxes.  
+  - Blue backward wire passes in the opposite direction.  
+  - Each box may have its own `Q` glyph; you can also show a **composed Q** as a merged glyph between them.
+
+#### C.4.2 Parallel (tensor) composition
+
+Diagram: `G ⊗ H`
+
+- **Visual:**  
+  - Place `G` and `H` side‑by‑side vertically.  
+  - Forward inputs stacked on the left, outputs stacked on the right.  
+  - Backward wires similarly stacked.
+
+- **Flux:**  
+  - Two parallel orange channels (for each component).  
+  - Two parallel blue channels.  
+  - Optional **braiding** if there is interaction between components.
+
+#### C.4.3 Higher‑order games
+
+Games that take games as inputs.
+
+- **Visual:**  
+  - Outer box `F` with inner “slots” for subgames.  
+  - Slots drawn as dashed boxes with ports exposed.  
+  - Wires from `F` connect to the slots’ ports.
+
+- **Flux:**  
+  - Forward flux enters `F`, then branches into subgame slots.  
+  - Backward flux aggregates from slots back into `F`.  
+  - `Q` glyphs can appear at each slot and at the aggregate point.
+
+---
+
+### C.5. Q‑slice and quantifier compression
+
+#### C.5.1 Glyph semantics
+
+- **Single Q glyph on a backward wire:**  
+  Indicates that the continuation has been **moderated** — universal quantification over future states is compressed into a quotient slice.
+
+- **Multiple Q glyphs:**  
+  - Per‑box Q: local moderation.  
+  - Global Q: a larger glyph at the boundary of a composite diagram, indicating system‑level moderation.
+
+#### C.5.2 Notation alignment
+
+Annotate the diagram with:
+
+\[
+(\Phi^+, \Phi^-, Q) = (P, C, E)
+\]
+
+- **Φ⁺:** Forward flux → Power.  
+- **Φ⁻:** Backward flux → Continuation/Evaluation.  
+- **Q:** Moderation slice → Evaluation/Dynamics.
+
+---
+
+### C.6. ASCII‑clean variants
+
+#### 6.1 Single open game
+
+```text
+   X          Y
+   | Φ+ --->  |
+  [   G   ]
+   | <--- Φ- |
+   X*        Y*
+
+   Ports:
+     Φ+ : P (Power)
+     Φ- : E (Evaluation)
+     Q  : moderation on Φ-
+```
+
+#### C.6.2 Sequential composition
+
+```text
+X      Y      Z
+| Φ+ ->| Φ+ ->|
+[  G  ];[  H  ]
+|<-- Φ- |<-- Φ-
+X*     Y*     Z*
+
+Q_G on Φ- near G
+Q_H on Φ- near H
+```
+
+#### C.6.3 Tensor composition
+
+```text
+(X1, X2)        (Y1, Y2)
+ | Φ+1   Φ+2 --->
+[  G  ] ⊗ [  H  ]
+ |<-- Φ-1  Φ-2
+(X1*, X2*)      (Y1*, Y2*)
+```
+
+---
