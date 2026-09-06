@@ -6,6 +6,17 @@ Neal Stephenson’s *Snow Crash* is a pioneering 1992 cyberpunk/post-cyberpunk n
 
 *Snow Crash* is widely regarded as a breakthrough in cyberpunk literature, blending satire, high-octane narrative, and intellectual exploration. It coined the term **Metaverse** and presaged modern virtual worlds, cryptographic currencies, and post-digital societal structures. Its impact resonates in both literary and technological communities and remains relevant for discussions of cyber-societal futures. There is no official “Snow Crash equation” in the novel. The closest rigorous notation is **Shannon information theory** plus **formal language theory** plus a **self-replicating program**. Those are the formulas the book is gesturing at when it says language can be firmware and a story can be a virus.
 
+- **Cyberpunk → Post‑Cyberpunk Shift**  
+  Gibson’s *Neuromancer* is noir‑compressed; Stephenson is maximalist, comedic, and infrastructural. *Snow Crash* pushes cyberpunk toward **satire, memetics, and socio‑technical worldbuilding**, influencing later works like *The Diamond Age* and real‑world VR discourse.  
+
+- **Information as Virus**  
+  Stephenson treats information as a **self‑replicating evolutionary force**, drawing on religious codification, linguistic theory, and memetic contagion. This is the novel’s closest analogue to a “Snow Crash equation”:  
+  **Shannon information theory + formal language theory + self‑replicating code**.  
+  The metavirus concept is explicitly framed as an ancient informational pathogen.  
+
+- **Metaverse as Social Physics**  
+  The Metaverse is not just VR — it’s a **class system**, a marketplace, and a cognitive battleground. Avatar resolution, address space, and access rights form a digital caste structure.   
+
 ## Setting and Background
 
 *Snow Crash* is set in a near-future United States following economic collapse, where federal authority has largely disintegrated and corporations, mafia-run franchises, and religious organizations wield power instead. Los Angeles is fragmented into walled corporate enclaves and franchised quasi-nations, while streets, highways, and delivery services are privatized, reflecting a mix of anarcho-capitalism and corporate feudalism.
