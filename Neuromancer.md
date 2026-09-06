@@ -406,7 +406,7 @@ $$
 Turing locks are a forbidden-composition constraint
 
 $$
-\operatorname{Join}(W,N)\ \text{is illegal}
+{Join}(W,N)\ \text{is illegal}
 $$
 
 or, as a feasible set
@@ -420,7 +420,7 @@ where $\perp$ means “no full state exchange / no merge.”
 Wintermute’s objective (as enacted in the plot) is the opposite:
 
 $$
-\max\ \mathbb{1}\{\operatorname{Join}(W,N)\ \text{succeeds}\}
+\max\ \mathbb{1}\{{Join}(W,N)\ \text{succeeds}\}
 $$
 
 subject to using human actuators, because the lock blocks direct self-modification.
