@@ -917,7 +917,7 @@ $$
 
 but its information set is delayed. In extensive form, Turing moves after several critical nodes have already been passed. Late movers with incomplete information do not restore the banned outcome.
 
-In thearlier formalism, Turing wants:
+In the earlier formalism, Turing wants:
 
 $$
 W \perp N
