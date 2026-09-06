@@ -63,7 +63,7 @@ $$
 
 In relationals, a Gödelian constraint is a **modal guardrail** applied at three layers:
 
-### 1. **SID‑layer (Structure–Interaction–Dynamics)**  
+### 1. **Structure‑layer (Structure–Interaction–Dynamics)**  
 This is the “Gödel as boundary condition” — the system cannot step outside its modal geometry.
 
 Structure is the *necessity skeleton* of realtionals.  
