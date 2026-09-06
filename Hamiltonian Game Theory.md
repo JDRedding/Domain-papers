@@ -51,13 +51,13 @@ The procedure is a discrete, finite-temperature analogue of best-response dynami
 1. For each player $i$ compute the *reduced payoff operator* by partial trace over everyone else:
 
 $$
-H_i^R=\operatorname{Tr}_{-i}\Bigl(\Bigl(\bigotimes_{j\neq i}\rho_j\Bigr)H_i\Bigr).
+H_i^R={Tr}_{-i}\Bigl(\Bigl(\bigotimes_{j\neq i}\rho_j\Bigr)H_i\Bigr).
 $$
 
 2. Replace that player’s strategy by the thermal state of the reduced operator:
 
 $$
-\rho_i\leftarrow\frac{e^{\beta H_i^R}}{\operatorname{Tr}(e^{\beta H_i^R})}.
+\rho_i\leftarrow\frac{e^{\beta H_i^R}}{{Tr}(e^{\beta H_i^R})}.
 $$
 
    (Some earlier notes of Wu insert an extra multiplicative factor of the old $\rho_i$; the later Hamiltonian paper uses the pure Boltzmann replacement above.)
@@ -154,11 +154,11 @@ The two notions commute: one can have classical (diagonal) strategies acting on 
 |---|---|---|
 | Strategy object | Unitary $U\in\mathrm{SU}(2)$ (or a probability measure on unitaries) applied to a player’s qubit | Density matrix on a finite operator basis $\{I,X,Y,Z\}$ (or a larger basis) |
 | Entanglement | Injected by a referee gate $J$ acting on the *object* qubits | Can appear either in the object (via the map that builds $H_i$) *or* in the joint strategy density matrix |
-| Payoff evaluation | Measure the final object state in the computational basis, look up a classical bimatrix | Direct trace $\operatorname{Tr}(\rho_S H_i)$ |
+| Payoff evaluation | Measure the final object state in the computational basis, look up a classical bimatrix | Direct trace ${Tr}(\rho_S H_i)$ |
 | Equilibrium concept | Nash in the space of unitaries / mixed unitaries | Fixed point of the thermodynamic map (recovers Nash as $\beta\to\infty$) |
 | Classical limit | Restrict unitaries to a one-parameter subgroup that reproduces the classical mixed-strategy simplex | Restrict $\rho_S$ and all $H_i$ to be simultaneously diagonalizable (i.e., $[H_i,H_j]=0$ and product eigenbasis) |
 
-Wu’s criticism is that TQG conflates the two entanglement sites and that a probability distribution over an infinite set of unitaries does not respect the operator algebra (inner product $\langle A|B\rangle=\operatorname{Tr}(A^\dagger B)$). The density-matrix formulation automatically encodes those algebraic relations and makes the classical theory a literal special case rather than an external limit.
+Wu’s criticism is that TQG conflates the two entanglement sites and that a probability distribution over an infinite set of unitaries does not respect the operator algebra (inner product $\langle A|B\rangle={Tr}(A^\dagger B)$). The density-matrix formulation automatically encodes those algebraic relations and makes the classical theory a literal special case rather than an external limit.
 
 When all payoff operators commute they share a common eigenbasis. If that basis is a product basis, every off-diagonal element of $\rho_S$ can be set to zero without changing payoffs, and the game collapses to an ordinary classical bimatrix (or multimetric) game. The Penny-Flipping game is exactly the commutative sub-game of the Spin-Rotating game obtained by discarding the $Y$ and $Z$ directions.
 
