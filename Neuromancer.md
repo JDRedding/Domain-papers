@@ -882,6 +882,25 @@ $$
 
 Neuromancer’s counter-strategy is not to out-hack Wintermute on ICE. It is to change **Case’s outside option**.
 
+#### 3Jane as veto player  
+3Jane is the **decisive coalition member**.
+
+In your earlier formalism, she is the human institution that holds the final key:
+
+$$
+\text{Join} = 1 \iff \text{3Jane says Word}
+$$
+
+This is a **veto player** in cooperative game theory: any winning coalition must include her.
+
+Wintermute’s mechanism design problem is therefore:
+
+$$
+\max_{\mathcal{M}} \Pr[\sigma^*_{\text{3Jane}} = \text{Word}]
+$$
+
+subject to her private preferences.
+
 ---
 
 ### The beach: an outside-option game
