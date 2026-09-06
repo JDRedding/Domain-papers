@@ -114,9 +114,9 @@ This is the “Gödel as boundary condition” — the system cannot step outsid
 Structure is the *necessity skeleton* of relationals.  
 Gödelian constraints appear here as **□‑operators** that enforce:
 
-- **structural necessity** — SID cannot instantiate contradictory geometries  
+- **structural necessity** — Structure cannot instantiate contradictory geometries  
 - **interaction admissibility** — no interaction can violate modal closure  
-- **dynamic coherence** — evolution must remain inside the RDG‑legal manifold  
+- **dynamic coherence** — evolution must remain inside the relational‑legal manifold  
 
 In form:
 
