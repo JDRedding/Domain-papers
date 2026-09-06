@@ -40,7 +40,7 @@ Same topology: a channel, a payload, a surplus that won’t stop copying. In-wor
 - Rife: cable + church + shipping + a refugee fleet as one product — programmable labor.
 
 ### What isn’t only a joke
-Competence still matters (Enzo, Ng, Hiro’s actual skill). The language-as-virus idea is played straighter than the pizza-mafia world. The politics are cartoon; the information thesis is the engine.
+Competence still matters (Enzo, Ng, Hiro’s actual skill). The language-as-virus idea is played straighter than the pizza-mafia world. The politics are cartoon; the information thesis is the engine. The world is a cartoon, but the virus is not. Stephenson jokes about politics, but he’s dead serious about information.
 
 ### The usual misread
 Take the Street, leave the storage unit. The book’s joke is that the gadgets feel like freedom inside a franchised wreck. Hiro is a hero and disposable logistics. Y.T. is autonomous and a kid working traffic. Stephenson’s satire is that the cool stuff is happening inside a world that is fundamentally a franchised wreck. The gadgets feel like freedom, but they’re just coping mechanisms inside a privatized dystopia.
