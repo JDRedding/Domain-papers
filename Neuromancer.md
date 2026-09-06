@@ -1115,7 +1115,7 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 - **Elroy** — Minor character; part of the orbital environment.
 - **Expert_Systems** — Non-sentient matrix utilities; ICE-breakers, intrusion tools, and data-scrapers.
 
-## **F**
+### **F**
 - **Flatline_ROM** — The Dixie construct; high-fidelity personality encoding with no write capability.
 - **Freeside_Infrastructure** — Orbital habitat tech; spin gravity, docking systems, and Straylight’s sealed architecture.
 
@@ -1124,17 +1124,17 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 - **Gibsonian_ICE** — Intrusion Countermeasure Electronics; lethal defensive software capable of frying neural tissue.
 - **Ghosts_in_the_Matrix** — Residual processes, AI masks, and hallucination overlays.
 
-## **H**
+### **H**
 - **Holography** — Riviera’s implant-driven hologram projector; sensory manipulation and psychological warfare.
 
-## **I**
+### **I**
 - **ICE** — Defensive software; black ICE, white ICE, adaptive ICE.
 - **Implants** — Molly’s optical mirrors, reflex boosters, dermal armor, and pain-editing systems.
 
-## **J**
+### **J**
 - **Jacking_Interface** — Neural socket enabling direct matrix access; Case’s burned interface is restored by biosurgery.
 
-## **K**
+### **K**
 - **Key_Speech_Protocol** — The human speech-act lock required to merge Wintermute and Neuromancer.
 
 ### **L**
@@ -1155,7 +1155,7 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 - **Neuromancer_AI** — Personality module; constructs worlds, offers Case the beach.
 - **Neural_Patches** — Biosoft used to repair Case’s burned nerves.
 
-## **O**
+### **O**
 - **Ono_Sendai_Cyberdeck** — Case’s deck; high-end matrix interface hardware.
 
 ### **P**
@@ -1181,10 +1181,10 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 - **Toxin_Leash** — The biochemical countdown forcing Case to finish the job.
 - **Turing_Locks** — Legal and technical constraints preventing AI self-modification or merging.
 
-## **U**
+### **U**
 - **Upgrades** — Black-market enhancements, biosoft patches, neural mods.
 
-## **V**
+### **V**
 - **Voodoo_ICE** — Exotic ICE forms with unpredictable behavior; referenced in matrix folklore.
 
 ### **W**
