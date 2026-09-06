@@ -260,6 +260,7 @@ the optional $-\nu\rho^4+\kappa\rho^6$ terms are consistent with OpenWave’s us
 - Sciety https://sciety.org/articles/activity/10.20944/preprints202606.0041.v1
 - neusym.ai https://neusym.ai/papers/relativity.pdf
 - Github https://github.com/mjmikulski/the-final-lagrangian-of-physics/blob/main/reports/001-quadratic-contractions/README.md
+- Coordinated Lagrangian hunt: OpenWave M5.32 state after 12 audited rungs, next rung R13, help wanted #186 https://github.com/vantasnerdan/substrate-framework/discussions/186
 
 
 
