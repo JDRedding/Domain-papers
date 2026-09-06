@@ -258,7 +258,19 @@ $$
 \phi : V \to \mathbb{R}^3
 $$
 
-so each node has a visible position in the consensual hallucination. Routing still happens on $G$; $\phi$ is only the rendering map.
+so each node has a visible position in the consensual hallucination. Routing still happens on $G$; $\phi$ is only the rendering map. Gibson’s “buildings of light” behave like **typed nodes**, so define a node type map:
+
+$$
+\theta : V \to \{\text{data vault},\ \text{AI core},\ \text{corporate ICE},\ \text{public grid},\ \text{simstim relay}\}
+$$
+
+This lets you express constraints like:
+
+$$
+\theta(v) = \text{AI core} \implies d(v) \text{ is maximal}
+$$
+
+which matches the book’s “ICE so hot it’ll fry your brain.”
 
 ---
 
