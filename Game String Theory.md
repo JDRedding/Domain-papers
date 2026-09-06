@@ -1,8 +1,8 @@
 # 🧠 Game String Theory
 - **Compositionality and String Diagrams for Game Theory**
-- Host: *Host: arXiv:1604.06061.
+- Host: *arXiv:1604.06061*.
 - Overlay: $(\Phi^+,\Phi^-,\mathcal{Q})=(\mathbf{P},\mathbf{C},\mathbf{E})$.
-- Status: incubation. Not an RDG axiom change.*
+- Status: incubation. *Not an RDG axiom change.*
 
 This note explains "*Game String Theory*", using open games and string diagrams (a categorical/graphical language) to make game theory fully compositional, modular, and diagrammatically reasoned. This note bring in representing games as string diagrams (with forward/backward wires, composition and tensor) turns building and reasoning about complex games into algebraic/topological operations rather than ad-hoc reconstructions. Additionally, a semantic reinterpretation maps open-game components to flux-style operators. Structure, Interaction, Dynamics, along with Power, Evaluation, Dynamics, are providied as semantic triads for input/output ports; compressing the universal quantifiers into Quotient‑slice moderation language while preserving algebra and composition. RDG is a semantic lens, not a change to the underlying algebra or composition rules.
 
