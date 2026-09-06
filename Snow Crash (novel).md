@@ -19,6 +19,22 @@ Published in 1992, *Snow Crash* sits at the turn from noir cyberpunk (*Neuromanc
 - **Metaverse as Social Physics**  
   The Metaverse is not just VR — it’s a **class system**, a marketplace, and a cognitive battleground. Avatar resolution, address space, and access rights form a digital caste structure.   
 
+Snow Crash satirizes privatization by making it look exciting. Cool cars and the Metaverse are the bait; the target is a country where brands replaced the state.
+
+### What it mocks
+- America reduced to four exports: music, movies, software, pizza.
+- Hiro the “samurai” whose honor hangs on a 30-minute pie. The Deliverator is the console cowboy as gig worker.
+- Citizenship as a scan-in: burbclaves and franchulates (HOAs and logos with constitutions).
+- The Metaverse as class: cheap avatars vs. high-res ones; VR as the nicer room than a U-Stor-It. Stephenson later called resolution-snobbery better as satire than as prediction.
+- Hacker self-mythology and the one-big-theory lecture (Sumer as firmware) sitting next to sword fights.
+- Rife: cable + church + shipping + a refugee fleet as one product — programmable labor.
+
+### What isn’t only a joke
+Competence still matters (Enzo, Ng, Hiro’s actual skill). The language-as-virus idea is played straighter than the pizza-mafia world. The politics are cartoon; the information thesis is the engine.
+
+### The usual misread
+Take the Street, leave the storage unit. The book’s joke is that the gadgets feel like freedom inside a franchised wreck. Hiro is a hero and disposable logistics. Y.T. is autonomous and a kid working traffic.
+
 ## Setting and Background
 
 *Snow Crash* is set in a near-future United States following economic collapse, where federal authority has largely disintegrated and corporations, mafia-run franchises, and religious organizations wield power instead. Los Angeles is fragmented into walled corporate enclaves and franchised quasi-nations, while streets, highways, and delivery services are privatized, reflecting a mix of anarcho-capitalism and corporate feudalism.
