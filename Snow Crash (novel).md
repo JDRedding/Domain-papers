@@ -16,10 +16,32 @@ Published in 1992, *Snow Crash* sits at the turn from noir cyberpunk (*Neuromanc
   **Shannon information theory + formal language theory + self‑replicating code**.  
   The metavirus concept is explicitly framed as an ancient informational pathogen.  
 
+### Metaverse Class Architecture
 - **Metaverse as Social Physics**  
-  The Metaverse is not just VR — it’s a **class system**, a marketplace, and a cognitive battleground. Avatar resolution, address space, and access rights form a digital caste structure.   
 
-Snow Crash satirizes privatization by making it look exciting. Cool cars and the Metaverse are the bait; the target is a country where brands replaced the state. Two stacked circuits, same book:
+The Metaverse is not just VR — it’s a **class system**, a marketplace, and a cognitive battleground. Avatar resolution, address space, and access rights form a digital caste structure.
+
+*Resolution as a jurisdiction of wealth, class, and property.*
+
+```
+    +---------------------------+
+    |   THE STREET (Protocol)   |
+    +---------------------------+
+                  |
+     +------------+------------+
+     |                         |
+     v                         v
+ [CUSTOM AVATAR]          [PUBLIC PORT]
+ - High Pixel Res         - 2D / Low Res
+ - Exclusive Access       - Black & White
+ - Custom Shaders         - "Clacker" Code
+   (Wealth / Power)         (Gig Worker / Poor)
+```
+
+Snow Crash satirizes privatization by making it look exciting. Cool cars and the Metaverse are the bait; the target is a country where brands replaced the state. 
+
+### Stacked circuits
+Two stacked circuits, same book:
 
 **1. Diegetic**  
 *Snow Crash* → **circuit** → **virus** → **infrastructure of contagion**  
@@ -122,11 +144,53 @@ Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to 
   - **Digital vector:** bitmap that crashes the hacker’s neurolinguistic interface.  
   - **Biological vector:** narcotic‑like substance spread through cult networks.  
   - **Linguistic vector:** Sumerian proto‑language as firmware for the human brain.  
-  Stephenson collapses distinctions between **data, belief, and biology**.  
+  Stephenson collapses distinctions between **data, belief, and biology**.
+
+```
+  [ SNOW CRASH METAVIRUS ]
+             |
+     +-------+-------+
+     |               |
+     v               v
+ [DIGITAL]      [BIOLOGICAL]
+ (Bitmap)       (Blood/Drug)
+     |               |
+     v               v
+ [Visual]       [Brainstem]
+ (Cortex)        (Limbic)
+     |               |
+     +-------+-------+
+             |
+             v
+    [ SHARED DECODER ]
+    ( S-PROM Firmware )
+             |
+             v
+    [ CRASH / EXECUTE ]
+
+```
 
 - **The Nam‑Shub of Enki**  
   A mythic counter‑virus that fragmented human linguistic unity (Babel).  
   In the novel, it becomes the key to resisting Rife’s attempt to reimpose linguistic control.
+
+```
+ PRE-BABEL (Rife Goal):
+ [Source X] ---> [Decoder D*] ---> [RUN]
+ 
+ ------------------------------------
+ 
+ POST-BABEL (Enki Patch):
+                 +---> [Dec D1] -> [Text]
+                 |
+ [Source X] +--[T]---> [Dec D2] -> [Text]
+                 |
+                 +---> [Dec D3] -> [Text]
+ 
+   (Shared Execution Layer Broken)
+
+```
+*Enki's nam-shub ($T$) splitting the unified decoder ($D^*$), driving mutual information $I(X_i; X_j) \to 0$ to create consciousness.*
 
 - **The Raft Confrontation**  
   The climax merges physical infiltration, memetic warfare, and Metaverse combat — demonstrating that virtual and physical domains are now co‑dependent.
