@@ -1101,7 +1101,7 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 - **Biosoft** — Black-market wetware; neural patches, toxin sacs, and interface mods.
 
 ### **C**
-- **Case** — Protagonist; matrix operator; Wintermute’s chosen actuator.
+- **Case** — Henry Dorsett Case, console cowboy; protagonist; matrix operator; Wintermute’s chosen actuator.
 - **Cath** — Minor Straylight presence; part of the Tessier-Ashpool household.
 - **Cyberdecks** — Case’s Ono-Sendai deck; the primary interface for matrix runs.
 - **Constructs** — Read-only personalities encoded from terminal brain states (e.g., Dixie Flatline).
