@@ -999,7 +999,7 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 ---
 
 ## APPENDIX: **Neuromancer Character Index**
-🧩 Structured, Deduplicated, Annotated; Names organized so each entry has narrative function, game‑theoretic role, and system‑theoretic mapping.
+🧩 Structured, Annotated; Names organized so each entry has narrative function, game‑theoretic role, and system‑theoretic mapping.
 
 ### **A**
 - **Aerol** — Minor Zionite presence; background world‑building.
