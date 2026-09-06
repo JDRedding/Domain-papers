@@ -125,7 +125,15 @@ Wu provides:
 - **Penny Flipping Game** → classical example  
 - **Spin Rotating Game** → quantum example  
 - **Nash equilibrium computation** via thermodynamic evolution  
-- **Reduction of commutative quantum games** to classical games 
+- **Reduction of commutative quantum games** to classical games
+
+**Penny Flipping (classical).** Object starts in $|+\rangle$. Strategies $\{I,X\}$. The two payoff operators are diagonal in the product basis $\{II,IX,XI,XX\}$ and recover the usual matching-pennies bimatrix.
+
+**Spin Rotating (quantum).** Same object, now a spin-½; strategy basis $\{I,X,Y,Z\}$ (or the Hermitian basis $\{I,iX,iY,iZ\}$ to keep coefficients real). The resulting $H_1,H_2$ are $16\times16$ matrices containing both diagonal classical payoffs and off-diagonal interference terms. Parameterizing a general product density matrix and setting derivatives of $u_1$ and $u_2$ to zero produces a family of Nash states whose diagonal blocks already illustrate the extra freedom that coherence supplies.
+
+Both examples can be fed directly into the thermodynamic iteration; the paper records the Prisoner's-Dilemma trajectory explicitly.
+
+The formalism therefore supplies a single operator language in which classical mixed strategies, correlated equilibria, coalitional arrangements, object-entangled quantum games and strategy-entangled quantum games are simply different choices of the pair $(\rho_S,\{H_i\})$.
 
 ---
 
