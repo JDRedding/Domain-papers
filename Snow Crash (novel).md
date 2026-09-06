@@ -101,7 +101,19 @@ Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to 
   Privatized law replaces civic identity; franchulates compete like brands.
   
 - **Mythology and Memetic Control**  
-  Sumerian myth is treated as archived code in humanity’s operating system.   
+  Sumerian myth is treated as archived code in humanity’s operating system.
+
+## How Snow Crash works in the book
+
+Stephenson collapses three channels into one object:
+
+1. **Digital.** A bitmap shown to a hacker who can read binary at a glance. It hits the visual/neurolinguistic interface and crashes the person, not just the client. Da5id is the demonstration.
+2. **Biological / cultic.** A drug and infected blood, moved through Reverend Wayne’s Pearly Gates and the Raft.
+3. **Linguistic.** Sumerian as deep structure: not ordinary speech but firmware. The Sumerian **me** are executable social procedures (bake bread, keep temple, obey). Priests administer them. Civilization begins as a successful infection. 
+
+**Asherah** is the persistent linguistic virus; **Enki** is the hacker who can write new *me*. His **nam-shub** is the counter-program: it rewrites deep structure so Sumerian (and any other “PROM language”) no longer executes. Languages diverge. That event is Babel. Consciousness, in the novel’s myth, is the patch, not the original state. 
+
+Rife’s project is rollback: collect artifacts, re-expose brains to the old firmware, then issue new *me* he controls. Hiro’s raid on the Raft is not just an action climax. It is a deploy: recover the nam-shub, have it spoken, collapse Rife’s mutual intelligibility with his flock.
 
 ### **Mathematical Notation**
 
