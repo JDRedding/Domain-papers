@@ -1246,7 +1246,7 @@ Annotate the diagram with:
 
 ### C.6. ASCII‑clean variants
 
-#### 6.1 Single open game
+#### C.6.1 Single open game
 
 ```text
    X          Y
