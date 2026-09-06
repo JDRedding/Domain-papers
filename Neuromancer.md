@@ -1082,60 +1082,112 @@ Wintermute solves this. Neuromancer tries to break IR at the last minute by impr
 
 ---
 
-## APPENDIX: **Neuromancer Character Index**
-🧩 Structured, Annotated; Names organized so each entry has narrative function, game‑theoretic role, and system‑theoretic mapping.
+## APPENDIX: **Neuromancer Subject Index**
+
+🧩 Structured, Annotated; Organized so entry have narrative function, game‑theoretic role, and system‑theoretic mapping; Along with the technology, coverung devices, software, implants, matrix infrastructure, ICE types, AIs, constructs, vehicles, and cybernetic systems.
 
 ### **A**
 - **Aerol** — Minor Zionite presence; background world‑building.
 - **Ali** — Bartender in Istanbul; small but atmospheric node.
 - **Armitage** — The Corto shell animated by Wintermute; a non‑stationary automaton rather than a true agent.
+- **AIs** — Wintermute and Neuromancer; partitioned superintelligence modules constrained by Turing locks.
+- **Ashpool_Cryogenic_Systems** — The Tessier-Ashpool family’s cryo-storage tech; long-term suspended animation.
 
 ### **B**
 - **Bruce** — Minor character; part of Chiba’s street texture.
+- **Biochips** — Organic-silicon hybrid memory substrates used in ROM constructs and AI nodes.
+- **Biosoft** — Black-market wetware; neural patches, toxin sacs, and interface mods.
 
 ### **C**
 - **Case** — Protagonist; matrix operator; Wintermute’s chosen actuator.
 - **Cath** — Minor Straylight presence; part of the Tessier-Ashpool household.
+- **Cyberdecks** — Case’s Ono-Sendai deck; the primary interface for matrix runs.
+- **Constructs** — Read-only personalities encoded from terminal brain states (e.g., Dixie Flatline).
+- **Cryo_Vaults** — Straylight’s deep-freeze chambers for family members.
 
 ### **D**
 - **Dixie_Flatline** — ROM construct of McCoy Pauley; read‑only expert; high mutual information with the dead man.
+- **Dermal_Armor** — Molly’s subdermal plating; shock-resistant and bullet-dampening.
+- **Drug_Technology** — Beta blockers, stimulants, and designer neurotoxins used for jacking, combat, and coercion
 
 ### **E**
 - **Elders_of_Zion** — Zion cluster leadership; provide Maelcum and the tug.
 - **Elroy** — Minor character; part of the orbital environment.
+- **Expert_Systems** — Non-sentient matrix utilities; ICE-breakers, intrusion tools, and data-scrapers.
+
+## **F**
+- **Flatline_ROM** — The Dixie construct; high-fidelity personality encoding with no write capability.
+- **Freeside_Infrastructure** — Orbital habitat tech; spin gravity, docking systems, and Straylight’s sealed architecture.
 
 ### **G**
 - **Gerald_Chin** — Chiba medical tech; helps Case early in the story.
+- **Gibsonian_ICE** — Intrusion Countermeasure Electronics; lethal defensive software capable of frying neural tissue.
+- **Ghosts_in_the_Matrix** — Residual processes, AI masks, and hallucination overlays.
+
+## **H**
+- **Holography** — Riviera’s implant-driven hologram projector; sensory manipulation and psychological warfare.
+
+## **I**
+- **ICE** — Defensive software; black ICE, white ICE, adaptive ICE.
+- **Implants** — Molly’s optical mirrors, reflex boosters, dermal armor, and pain-editing systems.
+
+## **J**
+- **Jacking_Interface** — Neural socket enabling direct matrix access; Case’s burned interface is restored by biosurgery.
+
+## **K**
+- **Key_Speech_Protocol** — The human speech-act lock required to merge Wintermute and Neuromancer.
 
 ### **L**
 - **Lady_3Jane_Marie-France_Tessier-Ashpool** — Keyholder of Straylight; veto player whose speech act unlocks the merge.
 - **Lonny_Zone** — Chiba pimp; Linda Lee’s former employer; street-level threat.
+- **Lash_Toxin_Sacs** — Armitage’s coercive implants; a commitment device ensuring Case completes the mission.
 
 ### **M**
 - **Maelcum** — Zionite pilot; moral anchor; assists Case without coercion.
 - **Marlene** — Minor character; part of Freeside’s social texture.
 - **Michele** — Minor Tessier-Ashpool presence.
 - **Molly_Millions** — Razor girl; Case’s partner; physical actuator for Wintermute’s plan.
+- **Matrix** — Global consensual hallucination; a graph of nodes, ICE, and corporate systems.
+- **Molly_Implants** — Mirrorshades, muscle boosters, dermal armor, pain-editing, and reflex augmentation.
 
 ### **N**
 - **Neuromancer** — Partitioned AI; opposes the merge; offers Case the beach (outside option).
+- **Neuromancer_AI** — Personality module; constructs worlds, offers Case the beach.
+- **Neural_Patches** — Biosoft used to repair Case’s burned nerves.
+
+## **O**
+- **Ono_Sendai_Cyberdeck** — Case’s deck; high-end matrix interface hardware.
 
 ### **P**
 - **Peter_Riviera** — Psychopathic holographer; strategic defector; Wintermute uses him but cannot bind him.
 - **Pierre** — Minor Freeside figure.
+- **Puppet_Masks** — Wintermute’s human-facing personas: Finn, Deane, Linda, etc.
+- **Psychotronic_Holography** — Riviera’s sensory assault technology.
 
 ### **R**
 - **Roland** — Minor Tessier-Ashpool presence.
 - **Rollo** — Minor character; part of the Freeside ecosystem.
+- **ROM_Constructs** — Encoded personalities with no learning capability.
+- **Razor_Nails** — Molly’s retractable monomolecular blades.
 
 ### **S**
 - **Smith** — Fence in Chiba; Case’s early contact.
+- **Simstim** — Sensory telepresence feed; Case experiences Molly’s body in real time.
+- **Straylight_Security** — Physical and digital defenses; Hideo, ICE, sealed architecture.
 
 ### **T**
 - **Terzibashjian** — Istanbul contact; gives Case information.
 - **The_Finn** — Fixer; Wintermute mask; helps Case understand the employer’s true nature.
+- **Toxin_Leash** — The biochemical countdown forcing Case to finish the job.
+- **Turing_Locks** — Legal and technical constraints preventing AI self-modification or merging.
+
+## **U**
+- **Upgrades** — Black-market enhancements, biosoft patches, neural mods.
+
+## **V**
+- **Voodoo_ICE** — Exotic ICE forms with unpredictable behavior; referenced in matrix folklore.
 
 ### **W**
 - **Wintermute** — Partitioned AI; mechanism designer; seeks the merge with Neuromancer.
-
----
+- **Wintermute_AI** — Planning module; mechanism designer orchestrating the entire heist.
+- **Wasp_Drones** — Surveillance microdrones used in Straylight.
