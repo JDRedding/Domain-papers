@@ -27,7 +27,7 @@ Bitmap, blood, speech, church, Raft. The plot is a distribution network: Rife ow
 
 **2. Formal**  
 *Snow Crash* → **satirical overload** → **courier / content vector** → **overproduction**  
-Hiro/Y.T. (and the prose itself) move too much stuff too fast: pizzas, intel, logos, lectures, swords. The style *is* the contagion — brands and bits replicating until the public sphere is just loglo.
+Hiro/Y.T. (and the prose itself) move too much stuff too fast: pizzas, intel, logos, lectures, swords. The style *is* the contagion — brands and bits replicating until the public sphere is just loglo (logo + glow).
 
 Same topology: a channel, a payload, a surplus that won’t stop copying. In-world the surplus is infection; on the page it is franchise, gag, and exposition arriving at courier speed.
 
