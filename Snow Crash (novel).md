@@ -28,6 +28,24 @@ The novel intertwines near-future technology and ancient myth. Hiro and Y.T. unc
 
 Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to Sumerian myths, including the *nam-shub* of Enki, an ancient counter-virus that fragmented language after Babel. Meanwhile, the **Raft**, a massive flotilla of Eurasian refugees controlled by Rife, becomes the central site for his viral scheme. Hiro and Y.T., with mafia and corporate allies, infiltrate the Raft, deploy the countervirus, and foil Rife’s plan to dominate both reality and the Metaverse. The story climaxes with confrontations in both physical and virtual realms, blending cyber-thriller action with intellectual and linguistic challenges.
 
+### **Plot Mechanics**
+: How the Virus Works
+
+- **Snow Crash = Multi‑modal Metavirus**  
+  - **Digital vector:** bitmap that crashes the hacker’s neurolinguistic interface.  
+  - **Biological vector:** narcotic‑like substance spread through cult networks.  
+  - **Linguistic vector:** Sumerian proto‑language as firmware for the human brain.  
+  Stephenson collapses distinctions between **data, belief, and biology**.  
+
+- **The Nam‑Shub of Enki**  
+  A mythic counter‑virus that fragmented human linguistic unity (Babel).  
+  In the novel, it becomes the key to resisting Rife’s attempt to reimpose linguistic control.
+
+- **The Raft Confrontation**  
+  The climax merges physical infiltration, memetic warfare, and Metaverse combat — demonstrating that virtual and physical domains are now co‑dependent.
+
+---
+
 ## Themes and Concepts
 
 - **Language as Code and Neurolinguistics**: *Snow Crash* explores the idea that language can function as software for the human brain, potentially controlling behavior.
