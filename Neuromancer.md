@@ -277,7 +277,7 @@ $$
 A smoother version (useful if you want “almost dead” instead of binary):
 
 $$
-p_{\text{survive}}(e) = \sigma\!\bigl(\kappa - d(e)\bigr), \qquad
+p_{\text{survive}}(e) = \sigma\!(\kappa - d(e)), \qquad
 \sigma(x) = \frac{1}{1+e^{-x}}
 $$
 
