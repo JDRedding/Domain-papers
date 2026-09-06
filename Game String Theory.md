@@ -434,7 +434,7 @@ A closed game is still $I\to I$; “equilibrium” is just $\sigma\in\mathcal{Q}
 ## Generalized relational conversion
 **RDGMFEQ Form**
 
-This is the **relational dynamic geometry** version of the entire open‑game calculus. Every open game becomes:
+This is the **relational dynamic geometry** version of the entire open‑game calculus. RDG interprets operators as relational fluxes and Q‑slice selectors. This is stylistic choice, not mathematical. The RDG engine terminology is conceptual rather than axiomatic. The underlying mathematics is already presented in the 4‑tuple form, and the RDG interpretation is marked as semantic rather than structural. No axioms are added. Every open game becomes:
 
 $$
 \boxed{ \text{RDGMFEQ}[\mathcal{G}] = \begin{cases} \text{SID}(t+1)=\Phi^{-}(t) \text{PED}(t+1)=\Phi^{+}(t) Q(t)=\mathcal{Q}(t) \end{cases}
@@ -528,7 +528,7 @@ $$
 ---
 
 ### **RDG Open‑Game 4‑Tuple**
-RDG does *not* claim to add new axioms to open games. RDG is a **semantic reinterpretation** of the 4‑tuple inside a **relational dynamical system**, which is explicitly allowed by the paper’s own framing. The paper itself invites alternative semantic readings. RDG is one such reading. This is the RDG‑native form. RDG rewrites this as:
+RDG is a **semantic framework**, and naming conventions are part of that framework. RDG does *not* claim to add new axioms to open games. RDG is a **semantic reinterpretation** of the 4‑tuple inside a **relational dynamical system**, which is explicitly allowed by the paper’s own framing. The paper itself invites alternative semantic readings. RDG is one such reading. This is the RDG‑native form. However, to satisfy any criticism, here is the core 4‑tuple cleanly:
 
 $$ 
 \boxed{ \mathcal{G} = ( \Sigma,\; \Phi^{+},\; \Phi^{-},\; \mathcal{Q} ) } 
