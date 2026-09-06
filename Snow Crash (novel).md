@@ -35,7 +35,7 @@ Corporate feudalism with a few additional structural details, deepen the picture
   A corporatized Mafia with contractual violence and guaranteed delivery — satire sharpened into political commentary.   
 
 - **The Raft**  
-  A floating refugee megastructure functioning as both a human supply chain and a memetic petri dish. It embodies the human cost of sovereignty‑by‑subscription. 
+  A floating refugee megastructure functioning as both a human supply chain and a memetic petri dish. It embodies the human cost of sovereignty‑by‑subscription. The Metaverse scenes can distract from the actual thesis: whoever owns the lowest-level language owns the workers. The Raft is that thesis made geographical.
 
 ## Main Characters
 
@@ -155,9 +155,13 @@ $$
 | $H(X)$ | entropy in bits per symbol |
 | $\log_2$ | information measured in bits |
 
+In the novel’s terms: a *me* is valuable because it is not chatter. It is a low-entropy instruction that the brainstem will run.
+
 ---
 
-### Channel capacity (virus as a signal)
+### Channel capacity 
+Virus as a signal
+
 In the book’s terms: if the “payload” is a nam-shub and the channel is a human brainstem or a Metaverse client, $C$ is how much of that payload can land intact. Snow Crash travels two channels: a **bitmap** (digital) and **blood / speech** (biological). Shannon’s capacity for a noisy channel with bandwidth $B$, signal power $S$, and noise power $N$ is
 
 $$
@@ -174,9 +178,13 @@ $$
 | $N$ | noise power |
 | $S/N$ | signal-to-noise ratio |
 
+Two channels, one payload: framebuffer (digital Snow Crash) and blood/speech (biological). $C$ is how much of the nam-shub, or of Rife’s *me*, arrives intact.
+
 ---
 
-### Mutual information (does the hearer “execute” the utterance?)
+### Mutual information 
+Does the hearer “execute” the utterance?
+
 A successful nam-shub is a case where $I(X;Y)$ is large **and** $Y$ is not interpreted as ordinary speech but as an instruction. How much of the sender’s message $X$ is recovered by the receiver $Y$:
 
 $$
@@ -191,9 +199,13 @@ $$
 | $H(X\mid Y)$ | remaining uncertainty after hearing $Y$ |
 | $p(x,y)$ | joint distribution |
 
+Ordinary conversation can have high $I(X;Y)$ and still be mere meaning. A nam-shub is the case where $Y$ is treated as an instruction. The book’s horror is successful execution, not misunderstanding.
+
 ---
 
-### Formal languages (Sumerian as deep structure / firmware)
+### Formal languages
+Sumerian as deep structure / firmware
+
 Stephenson’s Sumerian “me” are closer to **low-level procedures** than to ordinary natural-language sentences: more like Type-0 / machine code than Type-2 syntax. A formal language $L$ over alphabet $\Sigma$ is a set of strings:
 
 $$
@@ -217,6 +229,8 @@ Chomsky hierarchy (the book’s “universal grammar / PROM” idea sits here):
 | 1 | context-sensitive | $\alpha A\beta \to \alpha\gamma\beta$ |
 | 2 | context-free | $A \to \alpha$ |
 | 3 | regular | $A \to aB$ or $A \to a$ |
+
+Grammar $G = (N,\Sigma,P,S)$. The *me* sit nearer **Type-0** (unrestricted / machine-like) than Type-2 natural-language syntax. That is why Stephenson can call Enki a hacker: he writes procedures against a universal interpreter (the deep structure / “PROM”).
 
 ---
 
@@ -243,6 +257,24 @@ where $\varphi_e$ is a universal interpreter (brainstem / CPU).
 | ${copy}(x)$ | replica of the payload |
 | $\varphi_e$ | universal machine / interpreter |
 | $p$ | program that prints or installs itself |
+
+The book treats stories, liturgies, and bitmaps as replicators. It treats a population as a set of interpreters sharing (then losing) a decoder. Mutual information going to zero is a good formalization of Babel-as-patch. Stephenson’s sources are closer to popular linguistics, Sumerian myth as he found it, Pentecostal glossolalia, Julian Jaynes–adjacent “deep structure,” and 1990s hacker folklore. The $C = B\log_2(1+S/N)$ equation is idealizeation of the virus’s precision.
+
+#### Virus as fixed point
+
+A cartoon self-copier:
+
+$$
+V(x) = x \,\|\, \mathrm{copy}(x)
+$$
+
+Or a Kleene-style fixed point: there exists a program $p$ such that
+
+$$
+\varphi_p(y) = \varphi_e(p,y)
+$$
+
+with $\varphi_e$ the universal interpreter (CPU or brainstem). Snow Crash is that idea split across bitmap and tissue.
 
 ---
 
@@ -288,6 +320,8 @@ I(X_i;X_j) \to 0
 $$
 
 even though each still has internal language structure $H(X_i) > 0$.
+
+After Enki’s transform $T$ and between speakers even though each still has internal structure $H(X_i) > 0$. That is the cleanest information-theoretic reading of “he changed the speech in their mouths.” Babel is not noise added to a channel. It is a **decoder fork**.
 
 ---
 
