@@ -31,9 +31,23 @@ Hiro’s investigation, supported by Juanita’s research, traces Snow Crash to 
 ## Themes and Concepts
 
 - **Language as Code and Neurolinguistics**: *Snow Crash* explores the idea that language can function as software for the human brain, potentially controlling behavior.
-- **Virtual Reality and the Metaverse**: The novel anticipates MMO-style VR environments, persistent virtual economies, and avatar-based identity.
-- **Corporate Sovereignty and Anarcho-Capitalism**: Federal collapse and corporate dominance underscore social satire on privatization and commodification.
+- **The Metaverse**: The novel anticipates MMO-style VR environments, persistent virtual economies, and avatar-based identity.
+- **Anarcho-Capitalism**: Federal collapse and corporate dominance underscore social satire on privatization and commodification.
 - **Myth and History as Mechanisms of Control**: Sumerian culture, the Tower of Babel, and ancient linguistics intersect with futuristic technologies to underscore the influence of information on power.
+
+### **Intellectual Engine**
+
+- **Information, Language, and Viruses**  
+  Information behaves like a pathogen; whoever controls linguistic code controls cognition.  
+
+- **Virtual Reality**  
+  VR is a jurisdiction of power, not escapism. Social class becomes pixel‑resolution.  
+
+- **Corporate Sovereignty**  
+  Privatized law replaces civic identity; franchulates compete like brands.
+  
+- **Mythology and Memetic Control**  
+  Sumerian myth is treated as archived code in humanity’s operating system.   
 
 ## Notation 
 
