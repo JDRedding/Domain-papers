@@ -35,7 +35,7 @@ Gödelian constraints appear here as **□‑operators** that enforce:
 In form:
 
 ```
-SID_constraint := □( state ∈ RDG_legal )
+Structure_constraint := □( state ∈ RDG_legal )
 ```
 
 ---
@@ -53,7 +53,7 @@ Gödelian constraints appear here as **◇‑limiters** that regulate the bipola
 Form:
 
 ```
-PED_constraint := ◇( flux ∈ admissible_possibility )
+Power_constraint := ◇( flux ∈ admissible_possibility )
 ```
 
 ---
@@ -65,7 +65,7 @@ The Equation is a global evolution law.
 Gödelian constraints appear here as **reset‑conditions** and **nonlinear boundary filters**:
 
 ```
-RME := SID ⊗ PED ⊗ MFE  |  Gödel_boundary
+Equation := SID ⊗ PED ⊗ MFE  |  Gödel_boundary
 ```
 
 The Gödel boundary enforces:
@@ -78,7 +78,7 @@ The Gödel boundary enforces:
 In operator form:
 
 ```
-RME_next := Filter_Godel( RME_current + MFE_flux )
+Equation_next := Filter_Godel( RME_current + MFE_flux )
 ```
 ---
 
