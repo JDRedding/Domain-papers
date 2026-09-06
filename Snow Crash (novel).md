@@ -4,8 +4,7 @@ Neal Stephenson’s *Snow Crash* is a pioneering 1992 cyberpunk/post-cyberpunk n
 
 ## Literary Significance
 
-*Snow Crash* is widely regarded as a breakthrough in cyberpunk literature, blending satire, high-octane narrative, and intellectual exploration. It coined the term **Metaverse** and presaged modern virtual worlds, cryptographic currencies, and post-digital societal structures. Its impact resonates in both literary and technological communities and remains relevant for discussions of cyber-societal futures.
-
+*Snow Crash* is widely regarded as a breakthrough in cyberpunk literature, blending satire, high-octane narrative, and intellectual exploration. It coined the term **Metaverse** and presaged modern virtual worlds, cryptographic currencies, and post-digital societal structures. Its impact resonates in both literary and technological communities and remains relevant for discussions of cyber-societal futures. There is no official “Snow Crash equation” in the novel. The closest rigorous notation is **Shannon information theory** plus **formal language theory** plus a **self-replicating program**. Those are the formulas the book is gesturing at when it says language can be firmware and a story can be a virus.
 
 ## Setting and Background
 
