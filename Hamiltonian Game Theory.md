@@ -39,35 +39,6 @@ Thus **non‑cooperative**, **correlated**, and **coalitional** games all become
 
 ---
 
-## Equilibrium-finding algorithm 
-Thermodynamic / pseudo-dynamical process
-
-The procedure is a discrete, finite-temperature analogue of best-response dynamics that copies the Boltzmann construction of statistical mechanics.
-
-**Inputs.** Payoff operators $\{H_i\}$, inverse-temperature (rationality) parameter $\beta\ge 0$, initial product state $\rho_S(0)=\bigotimes_i\rho_i(0)$.
-
-**Iteration (one full sweep).**
-
-1. For each player $i$ compute the *reduced payoff operator* by partial trace over everyone else:
-
-$$
-H_i^R={Tr}_{-i}\Bigl(\Bigl(\bigotimes_{j\neq i}\rho_j\Bigr)H_i\Bigr).
-$$
-
-2. Replace that player’s strategy by the thermal state of the reduced operator:
-
-$$
-\rho_i\leftarrow\frac{e^{\beta H_i^R}}{{Tr}(e^{\beta H_i^R})}.
-$$
-
-   (Some earlier notes of Wu insert an extra multiplicative factor of the old $\rho_i$; the later Hamiltonian paper uses the pure Boltzmann replacement above.)
-   
-3. Reassemble the joint state $\rho_S=\bigotimes_i\rho_i$ (or keep a correlated/entangled joint state if one is working in the coalitional setting).
-
-**Termination.** Iterate until the map reaches a fixed point (or a cycle whose time-average is recorded). As $\beta\to\infty$ the thermal state concentrates on the maximizers of $H_i^R$, so a fixed point of the infinite-$\beta$ map is a Nash equilibrium of the original game. Finite $\beta$ yields a smoothed, bounded-rationality equilibrium. The Prisoner's-Dilemma example in the paper converges to the unique classical NE $(D,D)$ for large $\beta$; a figure traces the cooperation probability versus iteration number for several values of $\beta$.
-
----
-
 ### ⚙️ Payoff 
 - Hermitian operator 
 
@@ -109,6 +80,35 @@ Wu provides:
 Both examples can be fed directly into the thermodynamic iteration; the paper records the Prisoner's-Dilemma trajectory explicitly.
 
 The formalism therefore supplies a single operator language in which classical mixed strategies, correlated equilibria, coalitional arrangements, object-entangled quantum games and strategy-entangled quantum games are simply different choices of the pair $(\rho_S,\{H_i\})$.
+
+---
+
+## Equilibrium-finding algorithm 
+Thermodynamic / pseudo-dynamical process
+
+The procedure is a discrete, finite-temperature analogue of best-response dynamics that copies the Boltzmann construction of statistical mechanics.
+
+**Inputs.** Payoff operators $\{H_i\}$, inverse-temperature (rationality) parameter $\beta\ge 0$, initial product state $\rho_S(0)=\bigotimes_i\rho_i(0)$.
+
+**Iteration (one full sweep).**
+
+1. For each player $i$ compute the *reduced payoff operator* by partial trace over everyone else:
+
+$$
+H_i^R={Tr}_{-i}\Bigl(\Bigl(\bigotimes_{j\neq i}\rho_j\Bigr)H_i\Bigr).
+$$
+
+2. Replace that player’s strategy by the thermal state of the reduced operator:
+
+$$
+\rho_i\leftarrow\frac{e^{\beta H_i^R}}{{Tr}(e^{\beta H_i^R})}.
+$$
+
+   (Some earlier notes of Wu insert an extra multiplicative factor of the old $\rho_i$; the later Hamiltonian paper uses the pure Boltzmann replacement above.)
+   
+3. Reassemble the joint state $\rho_S=\bigotimes_i\rho_i$ (or keep a correlated/entangled joint state if one is working in the coalitional setting).
+
+**Termination.** Iterate until the map reaches a fixed point (or a cycle whose time-average is recorded). As $\beta\to\infty$ the thermal state concentrates on the maximizers of $H_i^R$, so a fixed point of the infinite-$\beta$ map is a Nash equilibrium of the original game. Finite $\beta$ yields a smoothed, bounded-rationality equilibrium. The Prisoner's-Dilemma example in the paper converges to the unique classical NE $(D,D)$ for large $\beta$; a figure traces the cooperation probability versus iteration number for several values of $\beta$.
 
 ---
 
