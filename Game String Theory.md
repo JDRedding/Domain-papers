@@ -757,5 +757,4 @@ $$
 
 ## **📚 References and further reading**
 
-### **ArXiv / DOI Format (matches the paper’s own metadata)**  
-Hedges, J., Shprits, E., Winschel, V., & Zahn, P. (2016). *Compositionality and String Diagrams for Game Theory*. arXiv:1604.06061 [cs.GT]. [https://doi.org/10.48550/arXiv.1604.06061](https://doi.org/10.48550/arXiv.1604.06061)
+- Hedges, J., Shprits, E., Winschel, V., & Zahn, P. (2016). *Compositionality and String Diagrams for Game Theory*. arXiv:1604.06061 [cs.GT]. [https://doi.org/10.48550/arXiv.1604.06061](https://doi.org/10.48550/arXiv.1604.06061)
