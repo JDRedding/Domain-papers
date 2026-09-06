@@ -119,7 +119,7 @@ $$
 \text{unlock }\mathcal{C}(W,N)\ \text{using human actuators before }a=0,\ \text{while surviving }d(\cdot).
 $$
 
-### 9. Minimal “systems” summary
+### Minimal “systems” summary
 
 | Story object | Symbol | Role |
 |---|---|---|
@@ -219,7 +219,7 @@ These are **formalizations imposed on Gibson’s world**, not equations from the
 
 ---
 
-#### 1. Cyberspace as a graph
+#### Cyberspace as a graph
 
 Let the matrix be a directed graph
 
@@ -250,7 +250,7 @@ so each node has a visible position in the consensual hallucination. Routing sti
 
 ---
 
-#### 2. ICE as a defense field
+#### ICE as a defense field
 
 Assign each edge (or node) a defense
 
@@ -295,7 +295,7 @@ with $c_{\text{ICE}} > 0$. If body integrity $m$ hits $0$, the operator is finis
 
 ---
 
-#### 3. Operator state (Case)
+#### Operator state (Case)
 
 Case at time $\tau$ is a state vector
 
@@ -328,7 +328,7 @@ Mission success must occur before $a(\tau) \le 0$.
 
 ---
 
-#### 4. Dual channel: matrix vs simstim
+#### Dual channel: matrix vs simstim
 
 Let
 
@@ -357,7 +357,7 @@ coupled through $s(\tau)$ and a shared mission clock.
 
 ---
 
-#### 5. ROM construct (Dixie Flatline)
+#### ROM construct (Dixie Flatline)
 
 A living person is a dynamical system
 
@@ -392,7 +392,7 @@ no new entropy from life. Neuromancer’s copies are closer to systems with resi
 
 ---
 
-#### 6. Wintermute and Neuromancer as partitioned operators
+#### Wintermute and Neuromancer as partitioned operators
 
 Let the intended Tessier-Ashpool superintelligence be a joint state
 
@@ -452,7 +452,7 @@ $$
 
 ---
 
-#### 7. Heist as constrained optimization
+#### Heist as constrained optimization
 
 Let decision variable $u$ collect team actions (routes, bribes, who enters Straylight, when Case jacks, whether to trust Riviera, …).
 
@@ -503,7 +503,7 @@ in Case’s actual choice, even if $J_{\text{beach}}$ is locally more pleasant.
 
 ---
 
-#### 8. Damage, addiction, and “meat”
+#### Damage, addiction, and “meat”
 
 A simple integrity ODE (continuous cartoon of what the book treats discretely):
 
