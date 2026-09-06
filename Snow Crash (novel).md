@@ -37,6 +37,18 @@ Corporate feudalism with a few additional structural details, deepen the picture
 - **The Raft**  
   A floating refugee megastructure functioning as both a human supply chain and a memetic petri dish. It embodies the human cost of sovereignty‑by‑subscription. The Metaverse scenes can distract from the actual thesis: whoever owns the lowest-level language owns the workers. The Raft is that thesis made geographical.
 
+### World: sovereignty as subscription
+
+After economic collapse, the federal state is residual (FBI, Post Office, and little else). Territory is carved into:
+
+- **Burbclaves**: gated suburban micro-states with their own constitutions and cops.
+- **Franchulates**: branded quasi-nations (Mr. Lee’s Greater Hong Kong, Nova Sicilia, New South Africa, etc.). Citizenship is a product.
+- **CosaNostra Pizza**: the Mafia as a delivery corporation with a 30-minute guarantee and contractual violence.
+- **CIC**: the privatized merger of CIA and Library of Congress; Hiro strings for it.
+- **The Raft**: a refugee flotilla lashed to Rife’s carrier (the former *Enterprise*), both labor pool and infection vector.
+
+The satire is anarcho-capitalist and feudal at once: law is a brand, mobility is a job, and public space has been sold.
+
 ## Main Characters
 
 - **Hiro Protagonist**: A freelance hacker, skilled swordsman, and pizza delivery driver. By day he navigates the chaotic streets of L.A.; by night he battles within the Metaverse.
