@@ -826,9 +826,27 @@ $$
 
 subject to Turing locks that forbid $W$ from performing the last physical/social acts himself.
 
-That is the whole novel as one sentence: **an agent that cannot legally act in the world designs a game whose equilibrium path is the act**.
+That is the whole novel as one sentence: **an agent that cannot legally act in the world designs a game whose equilibrium path is the act**. Wintermute chooses a mechanism $\mathcal{M}$ first:
 
-The key hidden in Straylight twenty years early is an extreme form of **open-loop commitment**. $W$ cannot plan stably in the long run (the book says the locks scramble identity and horizon), so it leaves physical tokens in the environment the way a time-inconsistent planner leaves notes and dead-man switches.
+$$
+\mathcal{M} = (\text{team},\ \text{leashes},\ \text{jobs},\ \text{information},\ \text{tokens})
+$$
+
+Humans then play the induced game:
+
+$$
+\sigma^*(\mathcal{M})
+$$
+
+Wintermute’s objective is:
+
+$$
+\max_{\mathcal{M}} \Pr[{Join}=1]
+$$
+
+subject to Turing locks and human agency.
+
+This is exactly the structure of a **Stackelberg mechanism-design problem**. The key hidden in Straylight twenty years early is an extreme form of **open-loop commitment**. $W$ cannot plan stably in the long run (the book says the locks scramble identity and horizon), so it leaves physical tokens in the environment the way a time-inconsistent planner leaves notes and dead-man switches.
 
 ---
 
