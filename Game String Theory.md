@@ -920,7 +920,8 @@ $$
 \Delta_X:X\to X\otimes X
 $$
 
-- **Delete**  
+- **Delete**
+
 $$
 !_X:X\to I
 $$
