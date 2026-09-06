@@ -48,7 +48,7 @@ This is why a compliant system feels “*Gödel‑compatible*” even though not
 
 **What the operators actually do**
 
-$\square\phi$ is a hard membership test: a candidate SID state is accepted only if it already lies inside the declared legal manifold. Contradictory geometries are rejected before they are instantiated.
+$\square\phi$ is a hard membership test: a candidate structure state is accepted only if it already lies inside the declared legal manifold. Contradictory geometries are rejected before they are instantiated.
 
 $\diamond\phi$ is a generation filter on the power layer: the engine may propose flux, but only trajectories that preserve modal closure are retained. Inconsistent force-pairs or score assignments are discarded.
 
