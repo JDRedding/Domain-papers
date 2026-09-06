@@ -43,7 +43,7 @@ Same topology: a channel, a payload, a surplus that won’t stop copying. In-wor
 Competence still matters (Enzo, Ng, Hiro’s actual skill). The language-as-virus idea is played straighter than the pizza-mafia world. The politics are cartoon; the information thesis is the engine.
 
 ### The usual misread
-Take the Street, leave the storage unit. The book’s joke is that the gadgets feel like freedom inside a franchised wreck. Hiro is a hero and disposable logistics. Y.T. is autonomous and a kid working traffic.
+Take the Street, leave the storage unit. The book’s joke is that the gadgets feel like freedom inside a franchised wreck. Hiro is a hero and disposable logistics. Y.T. is autonomous and a kid working traffic. Stephenson’s satire is that the cool stuff is happening inside a world that is fundamentally a franchised wreck. The gadgets feel like freedom, but they’re just coping mechanisms inside a privatized dystopia.
 
 ## Setting and Background
 
