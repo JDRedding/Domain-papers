@@ -476,6 +476,20 @@ $$
 - **Evaluation:** $R^\*$ = backward utility flux  
 - **Dynamics:** continuation $k:Y\to R$
 
+SID/PED/Q-slice terminology does not modify the monoidal axioms of open games. It is a semantic decomposition of the same morphisms, analogous to how physicists describe the same tensor as “state,” “observable,” or “process” depending on context. RDG vocabulary is **semantic**, not axiomatic.
+
+Open games explicitly treats copy/delete/braid as:
+
+> “cocommutative comonoid… commutative monoid… symmetry.”  
+
+RDG does not alter these; it interprets them as **geometric rewrites**. SID/PED/Q-slice is a **triadic decomposition** of the same morphism:
+
+- SID = structural + interaction + dynamic ports  
+- PED = power + evaluation + dynamic ports  
+- Q = equilibrium selector  
+
+This is a **lens** on the same category, not a new category.
+
 ---
 
 ### **Relational Embedding**
