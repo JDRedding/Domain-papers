@@ -804,6 +804,17 @@ That is sequential rationality, not morality:
 
 Armitage is not a player for long. He is a **non-stationary automaton**. When $W$ no longer needs the Corto wrapper, the persona is discarded. In game terms his discount factor collapses to zero on a schedule $W$ already knows.
 
+#### Armitage automaton  
+Armitage is not a principal but a **policy** Wintermute runs. His collapse is simply the point where Wintermute stops maintaining the automaton. In game terms, his discount factor drops to zero.
+
+In the earlier formalism, Armitage is not an agent with a utility function; he is:
+
+$$
+\sigma_{\text{Corto}} = \mu_i(W)
+$$
+
+a mask, not a player.
+
 ---
 
 ### Stackelberg game: Wintermute as designer
