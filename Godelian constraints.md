@@ -132,9 +132,9 @@ This is where Gödel acts as a *possibility filter* — not everything the MFE *
 Power is the *possibility engine* of relationals.  
 Gödelian constraints appear here as **◇‑limiters** that regulate the bipolar flux.
 
-- **Power(M,F)** cannot generate contradictory force‑pairs  
-- **Evaluation(p,P)** cannot assign inconsistent scores  
-- **Dynamics(Q_slice)** cannot evolve into states that break modal closure  
+- **Power(Momentum, Flux)** cannot generate contradictory force‑pairs  
+- **Evaluation(point, Point)** cannot assign inconsistent scores  
+- **Dynamics(Quotient_slice)** cannot evolve into states that break modal closure  
 
 Form:
 
