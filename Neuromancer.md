@@ -665,9 +665,9 @@ Wintermute’s genius is not prophecy. It is designing $\mathcal{M}$ so that tho
 
 With the systems-theoretic constraint from earlier formalization:
 
-\[
+$$
 \text{subject to } a(\tau) > 0,\ m(\tau) > 0,\ W \perp N \text{ until final node}.
-\]
+$$
 
 This merges the game-theoretic and dynamical views into one line.
 
