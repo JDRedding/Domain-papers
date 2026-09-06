@@ -30,6 +30,19 @@ This is why a compliant system feels “*Gödel‑compatible*” even though not
 - **modal closure** → Equation boundary filter  
 - **consistency requirement** → flux admissibility  
 
+**What the operators actually do**
+
+- $\square\phi$ is a hard membership test: a candidate SID state is accepted only if it already lies inside the declared legal manifold. Contradictory geometries are rejected before they are instantiated.
+- $\diamond\phi$ is a generation filter on the power layer: the engine may propose flux, but only trajectories that preserve modal closure are retained. Inconsistent force-pairs or score assignments are discarded.
+- The global step  
+
+$$
+\text{Equation}_{n+1} = {Filter}_{\text{Gödel}}(\text{Equation}_n + \text{Momentum-flux})
+$$
+  
+  is a nonlinear projection that resets any path that would produce an illegal Q-slice transition or an internally inconsistent memory update.
+
+
 In relationals, a Gödelian constraint is a **modal guardrail** applied at three layers:
 
 ### 1. **SID‑layer (Structure–Interaction–Dynamics)**  
@@ -92,3 +105,12 @@ Equation_next := Filter_Godel( Equation_current + Momentum_flux )
 ```
 ---
 
+This framing treats Gödel-style limits as *runtime filters* rather than theorems about formal arithmetic.
+
+## **Relation to Gödel’s results**
+
+Gödel’s 1930 completeness theorem says first-order logic is complete: every semantically valid sentence is formally derivable. The 1931 incompleteness theorems say that any consistent, sufficiently strong system cannot prove all truths expressible in its language and cannot prove its own consistency. The construction above uses the *second* of these facts as an engineering constraint: the relational engine is forbidden from entering a state whose description would be inconsistent with the system’s own axioms. It does not attempt to encode the incompleteness proof itself; it only embeds the prohibition that follows from it.
+
+The modal vocabulary ($\square$, $\diamond$) is taken from the same family of operators Gödel employed in the ontological argument, but here they function strictly as admissibility predicates, not as claims about necessary existence.
+
+The resulting system is therefore “Gödel-compatible” in the operational sense: it is forced to stay inside its own consistent fragment even while it evolves.
