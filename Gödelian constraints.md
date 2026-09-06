@@ -2,6 +2,14 @@
 
 **Gödelian constraints** treat incompleteness-style limits and modal operators as *hard filters* on an evolving relational system rather than as comments on truth or metaphysics.
 
+| Gödel Operator |  Interpretation |
+|----------------|------------------------|
+| **□φ** | Structural‑necessity operator (structural manifold membership) |
+| **◇φ** | Power‑possibility operator (flux admissibility) |
+| **φ(x)** | Quotient‑slice state descriptor |
+| **modal closure** | AEquation boundary filter |
+| **consistency requirement** | Momentum flux‑coherence constraint |
+
 They function as three layered guards:
 
 - On the structural layer they act as necessity: the geometry of structure, interaction and dynamics is required to stay inside a legal manifold. In operator form this is $\square(\text{state} \in \text{Relational-legal})$. Contradictory geometries or interactions are simply not instantiable.
