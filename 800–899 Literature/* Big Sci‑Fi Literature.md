@@ -6,7 +6,7 @@
 1. **Asimov** — Foundation + Robots  
 2. **Herbert** — Dune  
 3. **Le Guin** — Hainish Cycle  
-4. ✓ **Gibson** — Neuromancer  
+4. **Gibson** — Neuromancer ✓  
 5. **Butler** — Parable / Patternist  
 6. **Clarke** — Rama / Childhood’s End  
 7. **Wells** — Time Machine / War of the Worlds  
@@ -24,8 +24,8 @@
 - **Octavia Butler** — *Parable*, *Patternist*  
 - **Frank Herbert** — *Dune*  
 - **Orson Scott Card** — *Ender’s Game*  
-- ✓ **William Gibson** — *Neuromancer*  
-- **Neal Stephenson** — *Snow Crash*, *Anathem*  
+- **William Gibson** — *Neuromancer* ✓  
+- **Neal Stephenson** — *Snow Crash* ✓, *Anathem*  
 - **Kim Stanley Robinson** — *Mars Trilogy*  
 
 ---
