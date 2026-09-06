@@ -12,6 +12,18 @@ Neal Stephenson’s *Snow Crash* is a pioneering 1992 cyberpunk/post-cyberpunk n
 
 The novel also introduces the **Metaverse**, an immersive virtual-reality landscape accessible via VR goggles, where users interact through avatars. Social status in the Metaverse is defined by avatar quality and access to exclusive locations, prefiguring modern virtual worlds.
 
+### **World Architecture: A Fractured America**
+Corporate feudalism with a few additional structural details, deepen the picture:
+
+- **Franchulates & Burbclaves**  
+  These privatized micro‑states enforce their own constitutions, laws, and security forces. Citizenship becomes subscription.  
+
+- **CosaNostra Pizza, Inc.**  
+  A corporatized Mafia with contractual violence and guaranteed delivery — satire sharpened into political commentary.   
+
+- **The Raft**  
+  A floating refugee megastructure functioning as both a human supply chain and a memetic petri dish. It embodies the human cost of sovereignty‑by‑subscription. 
+
 ## Main Characters
 
 - **Hiro Protagonist**: A freelance hacker, skilled swordsman, and pizza delivery driver. By day he navigates the chaotic streets of L.A.; by night he battles within the Metaverse.
