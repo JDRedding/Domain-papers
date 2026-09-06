@@ -523,7 +523,7 @@ Classical tripartite façade logic.
 
 ---
 
-### 🌿 **7. Landscape Architecture (Your Taxonomy Visualized)**
+### 🌿 **7. Landscape Architecture (Taxonomy)**
 
 ```
 +--------------------------------------------------+
