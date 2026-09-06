@@ -2,7 +2,7 @@
 
 **Gödelian constraints** treat incompleteness-style limits and modal operators as *hard filters* on an evolving relational system rather than as comments on truth or metaphysics.
 
-**Gödelian constraints make relationals *complete inside its own modal geometry*** because they *pre‑filter* every candidate state, flux, and update so that the system never enters a region where incompleteness would apply. Don’t “escape Gödel”; only **engineer around Gödel** by restricting the universe of admissible states to the fragment where consistency is guaranteed. They function as three layered guards:
+**Gödelian constraints make relationals *complete inside its own modal geometry*** because they *pre‑filter* every candidate state, flux, and update so that the system never enters a region where incompleteness would apply. Don’t “*escape Gödel*”; only can **engineer around Gödel** by restricting the universe of admissible states to the fragment where consistency is guaranteed. They function as three layered guards:
 
 - On the structural layer they act as necessity: the geometry of structure, interaction and dynamics is required to stay inside a legal manifold. In operator form this is $\square(\text{state} \in \text{Relational-legal})$. Contradictory geometries or interactions are simply not instantiable.
 - On the power/evaluation layer they act as possibility limiters: $\diamond(\text{flux} \in \text{admissible})$. Not every force-pair or score the engine could generate is allowed; only those that preserve modal closure survive.
