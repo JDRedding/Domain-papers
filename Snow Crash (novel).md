@@ -58,6 +58,19 @@ Each major character embodies a subsystem of the world.
 - **Raven** — violence as ideology; a walking dead‑man switch.  
 - **Da5id** — demonstrates the digital Snow Crash vector’s neurological impact.
 
+| Figure | Function in the system |
+|---|---|
+| **Hiro Protagonist** | Interface layer: hacker, swordsman, failed Deliverator, CIC stringer. Lives in a U-Stor-It. Last of the freelance hackers. |
+| **Y.T.** | Mobility layer: 15-year-old Kourier on Smartwheels; gig-economy autonomy and street intelligence. |
+| **Juanita Marquez** | Research / face-code layer: helped build Metaverse faces; traces Snow Crash to Sumer and Babel. |
+| **L. Bob Rife** | Control plane: fiber, media, archaeology, church, shipping. Wants to reinstall a master language. |
+| **Raven** | Kinetic payload: Aleut mercenary with a nuclear dead-man switch. |
+| **Da5id** | Proof of the digital vector: the bitmap bricks him in the Metaverse and damages him in meatspace. |
+| **The Librarian** | Query engine: Lagos’s non-sentient library agent; exposition as database walk. |
+| **Uncle Enzo / Mr. Lee / Ng** | Competing sovereigns who temporarily ally against Rife. |
+
+Hiro and Y.T. are not “heroes vs. the system.” They are operators who can move between street, franchise, and protocol.
+
 ## Plot Overview
 
 The novel intertwines near-future technology and ancient myth. Hiro and Y.T. uncover a dangerous virus, **Snow Crash**, which exists in both digital and physical forms: a digital bitmap that crashes hackers and a blood-borne version spread via cults and narcotics. The virus exploits neurological structures linked to the ancient Sumerian language, enabling Rife to control minds and essentially “reprogram humanity.”
