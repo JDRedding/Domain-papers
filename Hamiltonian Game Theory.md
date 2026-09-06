@@ -93,34 +93,6 @@ Wu proposes a **thermodynamic‑style evolution** of the strategy density matrix
 This is not the usual best‑response or replicator dynamics.  
 It is a **pseudo‑dynamical process** that mimics how statistical mechanics finds equilibrium distributions.  
 
-## 🔮 Relation to TQG
-: Traditional Quantum Game Theory
-
-Wu argues that TQG (Eisert–Wilkens–Lewenstein, etc.) mixes two concepts:
-
-- entanglement of **game objects** (e.g., entangled qubits)  
-- entanglement of **player strategies**
-
-His formalism distinguishes them cleanly:
-
-- Strategy entanglement = entanglement in the density matrix describing players  
-- Object entanglement = entanglement in the physical system being manipulated
-
-This yields a more general quantum game theory.  
-
-### 🔧 When quantum games reduce to classical games  
-If all payoff operators commute:
-
-$$
-[H_i, H_j] = 0
-$$
-
-then they share a common eigenbasis, and the density matrix can be diagonalized in that basis.  
-The game becomes equivalent to a classical game with a standard payoff matrix.  
-Thus classical game theory is a **special case** of the Hamiltonian formalism.  
-
----
-
 ## 📌 Example games in the paper  
 Wu provides:
 
@@ -150,7 +122,35 @@ The two notions commute: one can have classical (diagonal) strategies acting on 
 
 ---
 
-## Comparison with the EWL protocol
+## 🔮 Relation to TQG
+: Traditional Quantum Game Theory
+
+Wu argues that TQG (Eisert–Wilkens–Lewenstein, etc.) mixes two concepts:
+
+- entanglement of **game objects** (e.g., entangled qubits)  
+- entanglement of **player strategies**
+
+His formalism distinguishes them cleanly:
+
+- Strategy entanglement = entanglement in the density matrix describing players  
+- Object entanglement = entanglement in the physical system being manipulated
+
+This yields a more general quantum game theory.  
+
+### 🔧 When quantum games reduce to classical games  
+If all payoff operators commute:
+
+$$
+[H_i, H_j] = 0
+$$
+
+then they share a common eigenbasis, and the density matrix can be diagonalized in that basis.  
+The game becomes equivalent to a classical game with a standard payoff matrix.  
+Thus classical game theory is a **special case** of the Hamiltonian formalism.  
+
+---
+
+### Comparison with the EWL protocol
 : Eisert–Wilkens–Lewenstein (EWL) protocol
 
 | | EWL / TQG | Wu Hamiltonian |
