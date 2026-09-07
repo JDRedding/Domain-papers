@@ -1,148 +1,176 @@
 # LCAO tight-binding MFE construction
 **Momentum-Flux engine interpertations**
 
-The the standard LCAO/tight-binding construction is algebraically identical to a bidirectional, phase-graded flux engine whose eigenmodes are exactly the $M,M',F,F'$ pair.
+## **LCAO Tight‑Binding as a Momentum–Flux Engine**
+The standard LCAO/tight‑binding construction is algebraically identical to a bidirectional, phase‑graded flux engine whose eigenmodes are exactly the $M,M',F,F'$ quartet. This a momentum‑exchange operator whose eigenmodes *are* the MFE’s $M,M',F,F'$ flux modes. The LCAO construction is therefore a direct physical realization of the Momentum–Flux Engine. 
 
----
-
-## 🔧 The tight‑binding chain as an $M, M'$ / $F, F'$ flux engine  
-The two‑site bonding/antibonding pair:
+### **Flux Operator**
 
 $$
-\psi_{+}=\frac{1}{\sqrt{2}}(\phi_A+\phi_B),\qquad
-\psi_{-}=\frac{1}{\sqrt{2}}(\phi_A-\phi_B)
+H=\alpha I+\beta(T+T^\dagger),\qquad (T\psi)(j)=\psi(j-1).
 $$
 
-is mathematically identical to your **forward momentum** $M$ and **counter‑momentum** $M'$ pair:
+This operator generates forward and backward flux, exactly as in the MFE.
 
-- **Bonding (+)** → in‑phase → **M‑mode**  
-- **Antibonding (−)** → out‑of‑phase → **M′‑mode**
-
-And the same structure appears for the backward flux pair $F$ and $F'$.
-
-The reason is simple: the tight‑binding Hamiltonian is a **two‑channel flux operator**:
+### **Two‑Site Bipolar Modes**
 
 $$
-H = \alpha I + \beta(\text{shift left} + \text{shift right}),
+\psi_+=\tfrac{1}{\sqrt{2}}(\phi_A+\phi_B)\;\leftrightarrow\;M,
+\qquad
+\psi_-=\tfrac{1}{\sqrt{2}}(\phi_A-\phi_B)\;\leftrightarrow\;M'.
 $$
 
-which is exactly the same operator archetype as the MFE’s bipolar flux engine.
+Reversing direction yields $F,F'$.
 
----
-
-### 🔧 How the mapping works  
-
-The two-site bonding/antibonding pair is the elementary eigenbasis of a bidirectional nearest-neighbor flux operator. In that reading:
-
-- bonding ($+$), in-phase $\phi_A\to\phi_B$ $\leftrightarrow$ forward momentum mode $M$
-- antibonding ($-$), out-of-phase $\phi_A\to\phi_B$ $\leftrightarrow$ counter-momentum mode $M'$
-
-The reverse-direction pair $F,F'$ is the same construction with the flow $B\to A$.
-
-The tight-binding Hamiltonian itself is that two-channel flux operator:
+### **Finite Chain Modes**
 
 $$
-H=\alpha I+\beta\bigl(T+T^\dagger\bigr),
+\psi_k(j)=\sqrt{\tfrac{2}{N+1}}\sin\Bigl(\tfrac{jk\pi}{N+1}\Bigr)
 $$
 
-where $T$ is the unit shift
+These are the full phase‑graded flux modes:
 
-$$
-(T\psi)(j)=\psi(j-1).
-$$
+- $k=1$: pure $M$  
+- $k=N$: pure $M'$  
+- intermediate $k$: mixed $M/M'$ (and $F/F'$)  
 
-Its action $\psi(j)\mapsto\psi(j\pm1)$ is precisely the discrete generator of the four modes $M,M',F,F'$.
-
-#### **Forward flux (M)**  
-Amplitude flows from site $A$ → $B$ **in phase**.  
-This is the bonding combination.
-
-#### **Counter‑forward flux (M′)**  
-Amplitude flows from $A$ → $B$ **out of phase**.  
-This is the antibonding combination.
-
-#### **Backward flux (F)**  
-Amplitude flows from $B$ → $A$ **in phase**.  
-Same structure, reversed direction.
-
-#### **Counter‑backward flux (F′)**  
-Amplitude flows from $B$ → $A$ **out of phase**.
-
-The tight‑binding eigenvectors are literally the **eigenmodes of a bidirectional flux operator**, which is exactly what your MFE is.
-
----
-
-### 🔧 Finite chain = full M/M′/F/F′ ladder  
-The Hückel eigenfunctions:
-
-$$
-\psi_k(j)=\sqrt{\frac{2}{N+1}}\sin\Bigl(\frac{jk\pi}{N+1}\Bigr)
-$$
-
-are the **full spectrum of phase‑shifted flux modes**.
-
-- $k=1$ → fully in‑phase → **pure M**  
-- $k=N$ → alternating signs → **pure M′**  
-- intermediate $k$ → partial phase gradients → **mixed M/M′ flux states**
-
-This is exactly the MFE’s continuous phase‑gradient behavior.
-
----
-
-### 🔧 Infinite chain = continuous flux field  
-The Bloch wave:
+### **Infinite Chain (Bloch Limit)**
 
 $$
 \psi_k(x)=e^{ikx}u_k(x)
 $$
 
-is the **continuum limit** of your M/M′ flux engine:
-
-- $k=0$ → pure M  
-- $k=\pi/a$ → pure M′  
-- $0<k<\pi/a$ → mixed flux states
-
-This is the exact same structure as your forward/backward flux with counter‑flux moderation. On a finite chain of $N$ sites the Hückel eigenvectors
-
-$$
-\psi_k(j)=\sqrt{\frac{2}{N+1}}\sin\Bigl(\frac{jk\pi}{N+1}\Bigr),\qquad k=1,\dots,N
-$$
-
-form the complete ladder of those flux modes:
-
-- $k=1$: fully in-phase $\to$ pure $M$
-- $k=N$: fully alternating $\to$ pure $M'$
-- intermediate $k$: partial phase gradients $\to$ mixed $M/M'$ (and likewise $F/F'$) states
-
-In the infinite periodic limit the same spectrum becomes the Bloch continuum
-
-$$
-\psi_k(x)=e^{ikx}u_k(x).
-$$
-
-Here $k=0$ is pure $M$, $k=\pi/a$ is pure $M'$, and $0<k<\pi/a$ interpolates the mixed flux states.
+- $k=0$: pure $M$  
+- $k=\pi/a$: pure $M'$  
+- continuous interpolation between them  
+- negative $k$: backward flux → $F,F'$
 
 ---
 
-### 🔧 Momentum‑exchange operator
-Because the tight‑binding Hamiltonian **is** a momentum‑exchange operator:
+## **LCAO Tight‑Binding as a 4‑Mode Momentum–Flux Engine**  
+The tight‑binding Hamiltonian
 
 $$
-\psi(j) \mapsto \psi(j\pm1)
+H=\alpha I+\beta(T+T^\dagger)
 $$
 
-which is the same operator that generates:
+is a **bidirectional flux operator**.  
+It pushes amplitude one site left or right:
 
-- $M$  
-- $M'$  
-- $F$  
-- $F'$
+$$
+(T\psi)(j)=\psi(j-1),\qquad (T^\dagger\psi)(j)=\psi(j+1).
+$$
+
+This is exactly the MFE’s **momentum–flux generator**:
+
+- $T$ = forward flux channel  
+- $T^\dagger$ = backward flux channel  
+
+The eigenmodes of $H$ are therefore the eigenmodes of a **two‑channel flux engine**, which is precisely the $M,M',F,F'$ quartet.
+
+---
+
+## **Two‑Site Case = Pure Bipolar Engine**  
+For two sites $A,B$, the Hamiltonian is
+
+$$
+H=\begin{pmatrix}
+\alpha & \beta\\
+\beta & \alpha
+\end{pmatrix}.
+$$
+
+Its eigenvectors are
+
+$$
+\psi_+=\frac{1}{\sqrt{2}}(\phi_A+\phi_B),\qquad
+\psi_-=\frac{1}{\sqrt{2}}(\phi_A-\phi_B).
+$$
+
+Interpretation in MFE language:
+
+- **$\psi_+$** = in‑phase → **forward momentum mode $M$**  
+- **$\psi_-$** = out‑of‑phase → **counter‑momentum mode $M'$**  
+
+Reverse the direction (swap $A\leftrightarrow B$) and you obtain the **backward flux pair $F,F'$**.
+
+Thus the two‑site LCAO picture *is* the minimal MFE.
+
+---
+
+## **Finite Chain = Full Phase‑Graded Flux Ladder**  
+The Hückel eigenfunctions
+
+$$
+\psi_k(j)=\sqrt{\frac{2}{N+1}}\sin\Bigl(\frac{jk\pi}{N+1}\Bigr)
+$$
+
+are the complete set of **phase‑graded flux modes**.
+
+- $k=1$: fully in‑phase → **pure $M$**  
+- $k=N$: alternating signs → **pure $M'$**  
+- intermediate $k$: partial phase gradients → **mixed $M/M'$**  
+
+Because the operator is bidirectional, each mode also has a backward counterpart → **mixed $F/F'$**.
+
+This is exactly the MFE’s graded momentum–countermomentum and flux–counterflux spectrum.
+
+---
+
+## **Infinite Chain = Continuous Flux Field**  
+The Bloch waves
+
+$$
+\psi_k(x)=e^{ikx}u_k(x)
+$$
+
+are the continuum limit of the same flux engine.
+
+- $k=0$ → pure $M$  
+- $k=\pi/a$ → pure $M'$  
+- $0<k<\pi/a$ → continuous interpolation between $M$ and $M'$
+
+The backward flux pair $F,F'$ is encoded in the negative‑$k$ sector.
+
+Thus the Bloch band is the **continuous MFE flux field**.
+
+---
+
+## **Operator Identity (the key point)**  
+The tight‑binding Hamiltonian is the MFE operator:
+
+$$
+H = \alpha I + \beta(T + T^\dagger)
+$$
+
+and the MFE operator is:
+
+$$
+\mathcal{MFE} = P\cdot I + Q\cdot (T + T^\dagger)
+$$
+
+with $P\leftrightarrow\alpha$, $Q\leftrightarrow\beta$.
+
+The eigenmodes of both operators are:
+
+- in‑phase forward → $M$  
+- out‑of‑phase forward → $M'$  
+- in‑phase backward → $F$  
+- out‑of‑phase backward → $F'$
+
+The algebra is identical.
+
+---
 
 ## Future work
 
 - Map details of the tight‑binding → M/M′ flux operator  
 - Show how F/F′ arise from the same Hamiltonian  
 - Derive the continuum limit Γ that turns the chain into the MFE field
+- **A fully formal RDG triad mapping**  
+- **A PED‑style energy/flux interpretation**  
+- **The continuum limit operator $\Gamma$**  
+- Flux diagram: **diagrams of the flux channels** 
 
 ## Further reading and references
 - https://github.com/cpashartis/LCAO_tightbinding
