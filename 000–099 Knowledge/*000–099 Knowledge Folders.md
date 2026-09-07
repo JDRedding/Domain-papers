@@ -5,7 +5,7 @@ Classification (DDC) breakdown for 000–099
 |--------|---------|
 | 000 | Computer science, information & general works |
 | 001 | Knowledge |
-| 002 | The book |
+| 002 | The book (meta‑writings about books) |
 | 003 | Systems |
 | 004 | Data processing & computer science |
 | 005 | Computer programming, programs & data |
