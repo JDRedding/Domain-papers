@@ -218,7 +218,7 @@ $$
 
 Black uses the swapped pairs $(b,w)$.
 
-## Simulate p2life patterns
+## Simulated p2life patterns
 
 Implemented p2life run pattern simulations: monochrome Life objects (to confirm the reduction) and mixed-color interactions.p2life was run as a 3-state torus CA (`empty / white / black`) with the Levene–Roussos birth and signed-difference survival rules. Monochrome patterns reduce to B3/S23; mixed patterns do not.
 
