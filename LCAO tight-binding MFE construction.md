@@ -1,6 +1,30 @@
 # LCAO tight-binding MFE construction
 **Momentum-Flux engine interpertations**
 
+## **Operator Identity *  
+The tight‑binding Hamiltonian is the MFE operator:
+
+$$
+H = \alpha I + \beta(T + T^\dagger)
+$$
+
+and the MFE operator is:
+
+$$
+\mathcal{MFE} = P\cdot I + Q\cdot (T + T^\dagger)
+$$
+
+with $P\leftrightarrow\alpha$, $Q\leftrightarrow\beta$.
+
+The eigenmodes of both operators are:
+
+- in‑phase forward → $M$  
+- out‑of‑phase forward → $M'$  
+- in‑phase backward → $F$  
+- out‑of‑phase backward → $F'$
+
+The algebra is identical.
+
 ## **LCAO Tight‑Binding as a Momentum–Flux Engine**
 The standard LCAO/tight‑binding construction is algebraically identical to a bidirectional, phase‑graded flux engine whose eigenmodes are exactly the $M,M',F,F'$ quartet. This a momentum‑exchange operator whose eigenmodes *are* the MFE’s $M,M',F,F'$ flux modes. The LCAO construction is therefore a direct physical realization of the Momentum–Flux Engine. 
 
@@ -133,32 +157,6 @@ are the continuum limit of the same flux engine.
 The backward flux pair $F,F'$ is encoded in the negative‑$k$ sector.
 
 Thus the Bloch band is the **continuous MFE flux field**.
-
----
-
-## **Operator Identity (the key point)**  
-The tight‑binding Hamiltonian is the MFE operator:
-
-$$
-H = \alpha I + \beta(T + T^\dagger)
-$$
-
-and the MFE operator is:
-
-$$
-\mathcal{MFE} = P\cdot I + Q\cdot (T + T^\dagger)
-$$
-
-with $P\leftrightarrow\alpha$, $Q\leftrightarrow\beta$.
-
-The eigenmodes of both operators are:
-
-- in‑phase forward → $M$  
-- out‑of‑phase forward → $M'$  
-- in‑phase backward → $F$  
-- out‑of‑phase backward → $F'$
-
-The algebra is identical.
 
 ---
 
