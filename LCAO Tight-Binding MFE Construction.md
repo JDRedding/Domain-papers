@@ -75,8 +75,6 @@ Controls local potential baseline.
 
 # 3. Operator Correspondence (Exact and Non-Ambiguous)
 
-Rename the identity operator to **Id**.
-
 The tight-binding Hamiltonian is
 
 $$
