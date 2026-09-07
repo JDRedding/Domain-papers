@@ -265,6 +265,37 @@ What follows are the real formulas and notation that map most closely onto the i
 
 None of these equations *define* religion. They describe how counted affiliations, contacts, births, and choices change over time under explicit assumptions. Different traditions and different research questions use different compartments and different rate structures.
 
+Relational sheet
+
+| Symbol | Meaning |
+|---|---|
+| $U, V$ | utility / social value |
+| $\alpha, w, \theta$ | weights / bargaining power |
+| $\Delta$ | identity gap |
+| $S, A$ | solidarity, accommodation |
+| $x_i, r$ | belief/practice position or child-rearing policy |
+| $\epsilon, \delta$ | openness bound; in-group bonus |
+| $p, P_r$ | share or size of a religious type |
+| $f_T, f_I$ | payoff of tradition vs. innovation |
+| $\beta_{jr}$ | conversion rate from $j$ to $r$ |
+| $\lambda, c$ | sanction / cost of deviance |
+
+These formulas do not measure holiness. They measure **how people trade off belonging, conscience, kin, and outsiders** when religion is one of the things that defines the relationship.
+
+Relational micro-tensions become macro conversion rates. In a two-group model:
+
+$$
+\dot P_r = (b_r - d_r)P_r + \sum_j \beta_{jr}(S)\, P_j P_r - \sum_j \beta_{rj}(S)\, P_r P_j
+$$
+
+The conversion kernel $\beta_{jr}$ depends on solidarity and identity gap:
+
+$$
+\beta_{jr}(S,\Delta) = \beta_0\, e^{\eta S - \xi \Delta}
+$$
+
+High family solidarity and low identity gap raise switching or dual belonging; high $\Delta$ and high $\delta$ (in-group bias) freeze the boundary.
+
 ### 1. Basic demographic accounting identity
 Change in the size of a religious group is births minus deaths, plus net conversion, plus net migration:
 
