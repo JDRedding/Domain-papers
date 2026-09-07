@@ -518,16 +518,7 @@ The next layers are the natural extensions:
 A single energy whose minimizer recovers the four modes by parameter regime:
 
 $$
-\mathcal{E}[h,g,w,u]
-=
-\int_\Omega
-\Big(
-\tfrac{k_h}{2}|\nabla h|^2
-+\tfrac{k_g}{2}|\nabla g|^2
-+\tfrac{k_w}{2}|\nabla w|^2
-+c\,gw
-+\tfrac{k_u}{2}|u-\chi\Psi|^2
-\Big)\,dx\,dy
+\mathcal{E}[h,g,w,u] = \int_\Omega \Big( \tfrac{k_h}{2}|\nabla h|^2 +\tfrac{k_g}{2}|\nabla g|^2 +\tfrac{k_w}{2}|\nabla w|^2 +c\,gw +\tfrac{k_u}{2}|u-\chi\Psi|^2 \Big)\,dx\,dy
 $$
 
 Regimes:
