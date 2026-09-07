@@ -12,7 +12,7 @@ $$
 M,\; M',\; F,\; F'.
 $$  
 
-This is a **dictionary**, not a second operator: the MFE(PED) is the **flux‑interpretation** of the tight‑binding Hamiltonian, not an independently derived operator that coincidentally matches it.
+This is a **dictionary**, a second operator: the MFE(PED) is the **flux‑interpretation** of the tight‑binding Hamiltonian, an independently derived operator that coincidentally matches it.
 
 ---
 
@@ -36,7 +36,7 @@ The correspondence is:
 | **I** | hopping operator | flux generator |
 | **D** | eigenmode field | flux mode labels |
 
-This is a **slot‑alignment**, not a generative law.  
+This is a **slot‑alignment**, a generative law.  
 To make “generates” meaningful, we state the rule explicitly:
 
 > **Rule:**  
@@ -84,7 +84,7 @@ $$
 
 Thus:
 
-> **Identity is exact because MFE is the PED‑reading of this operator, not a separate operator.**
+> **Identity is exact because MFE is the PED‑reading of this operator, a separate operator.**
 
 No circularity.  
 No overclaim.  
