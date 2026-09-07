@@ -432,6 +432,9 @@ Now can say, quantitatively, that:
 
 ## APPENDIX: Relational mythology framework
 
+These constructions make the same tensions that appear in Zeus–Hera, Seth–Osiris, Indra–Vritra, Odin–giants, and Cain–Abel comparable as graphs, games, flows, and typed relations. They do not decide which reading of a myth is “true”; they only make the pattern of alliance, usurpation, and oscillation countable across traditions.
+
+
 ### Base Relational primitives
 
 Let’s treat the mythology framework as a relational geometry over a typed graph. The layers (kin, worship, conflict, prophecy) become **fibers** over the node sort:
