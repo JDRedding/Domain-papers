@@ -489,7 +489,7 @@ $$
 
 **Pantheon object**
 
-- Original: $G=(V,E) with $E=E_{\text{kin}}\cup E_{\text{ally}}\cup E_{\text{conflict}}.
+- Original: $G=(V,E)$ with $E=E_{\text{kin}}\cup E_{\text{ally}}\cup E_{\text{conflict}}$.
 - Relational form:
 
 $$
@@ -505,7 +505,7 @@ $$
 ---
 
 ### 2. Relational tension as Relational operator
-This is the $k_i specialized to conflict, but now as a **scalar field** over the Relational node sort.
+This is the $k_i$ specialized to conflict, but now as a **scalar field** over the Relational node sort.
 
 Define a **tension operator** on the pantheon:
 
@@ -515,7 +515,7 @@ $$
 \mathsf{Tension} : \mathcal{P} \to \mathcal{P}_{\mathbf{Conflict}}
 $$
 
-  where $\mathcal{P}_{\mathbf{Conflict}} is the sub‑geometry with only $\mathbf{Conflict} edges.
+  where $\mathcal{P}_{\mathbf{Conflict}}$ is the sub‑geometry with only $\mathbf{Conflict}$ edges.
 
 - **Local tension at node $v:**
 $$
@@ -552,7 +552,7 @@ $$
 (i,j,s_i,s_j,\pi_i,\pi_j)\in \mathbf{Payoff}
 $$
 
-  iff the matrix $\Pi assigns those payoffs.
+  iff the matrix $\Pi$ assigns those payoffs.
 
 A **contest morphism** is then:
 
@@ -560,9 +560,9 @@ $$
 \mathsf{Game} : \mathcal{P} \to \mathcal{G}
 $$
 
-where $\mathcal{G} is the Relational object whose sorts are $\mathbf{N},\mathbf{S},\mathbf{Payoff} and whose relations encode the game structure.
+where $\mathcal{G}$ is the Relational object whose sorts are $\mathbf{N},\mathbf{S},\mathbf{Payoff}$ and whose relations encode the game structure.
 
-Nash profiles $s^\* become **fixed points** of a best‑response relation:
+Nash profiles $s^\*$ become **fixed points** of a best‑response relation:
 
 $$
 \mathbf{BR} \subseteq \mathbf{S}\times \mathbf{S}
@@ -574,14 +574,14 @@ $$
 (s_i^\*,s_j^\*)\in \mathbf{BR}
 $$
 
-iff no unilateral deviation improves payoff. In Relational terms: $\mathbf{BR} is a **stability relation** on the strategy sort.
+iff no unilateral deviation improves payoff. In Relational terms: $\mathbf{BR}$ is a **stability relation** on the strategy sort.
 
 ---
 
 ### 4. Order–chaos dynamics as Relational fields
 The mythic world is a **relational geometry with attached dynamical fields**, and the order–chaos cycle is a specific endomorphism on those fields.
 
-Treat $O,C as scalar fields attached to the pantheon object:
+Treat $O,C$ as scalar fields attached to the pantheon object:
 
 - **Field sorts:**
 
@@ -595,7 +595,7 @@ $$
 \phi_O : \mathcal{P} \to \mathbf{F}_O,\qquad \phi_C : \mathcal{P} \to \mathbf{F}_C
 $$
 
-  with values $O(t),C(t) at time $t.
+  with values $O(t),C(t)$ at time $t$.
 
 The dynamical law
 
@@ -619,7 +619,7 @@ $$
 
 ### 5. Dualism as Relational partition / polarity
 
-The partition $V=V_+\cup V_- becomes a **polarity structure**:
+The partition $V=V_+\cup V_-$ becomes a **polarity structure**:
 
 - **Polarity sort:**
 
@@ -633,9 +633,9 @@ $$
 \sigma : \mathbf{N} \to \mathbf{Pol}
 $$
 
-  with $\sigma(v)=+ for Olympians/Devas/Aesir, $- for Titans/Asuras/Giants.
+  with $\sigma(v)=+$ for Olympians/Devas/Aesir, $-$ for Titans/Asuras/Giants.
 
-The signed Laplacian $L is then a **metric operator** on the conflict layer:
+The signed Laplacian $L$ is then a **metric operator** on the conflict layer:
 
 - Define a tension metric
 
