@@ -48,11 +48,11 @@ Classic travel accounts—Marco Polo, Ibn Battuta, Pigafetta’s narrative of Ma
 
 National and imperial gazetteers (for example the *Imperial Gazetteer of India*) organized place-names, administrative units, and statistics on a systematic scale.
 
-## **Geographic/cartographic relational tensions**
+## 🌐 **Geographic/cartographic relational tensions**
 
 A **relational tension** is the *stress, mismatch, or distortion* that appears when two or more relational structures try to coexist — whether in maps, regions, travel systems, or Relational operators. It’s the “pressure zone” where representations, scales, or interactions don’t align cleanly.
 
-### 🌐 **Tensions in Geography**
+### **Geographic Tensions**
 
 #### **Scale Tension**  
 Different scales encode different truths.  
