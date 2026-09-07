@@ -12,7 +12,15 @@ The core of **p2life** is that it takes Conway’s **single‑species** automato
 
 The result is still a deterministic cellular automaton, but one whose long‑term behavior reflects **competitive population dynamics** rather than neutral growth. The paper by Levene & Roussos formalizes this with a **mean‑field equation** and shows via simulation that the system stabilizes at an asymptotic density of **0.0362**, slightly higher than Conway’s ~0.0287.   
 
----
+## Design intent
+**Immigration Life** (also called Black & White) and **p2life** are both two-color Moore-neighborhood automata built on Conway Life, but they put competition in different places.
+
+Immigration answers: “Who owns this Life pattern?”  
+p2life answers: “Can two Life-like populations share a lattice when each treats the other as crowding?”
+
+Levene & Roussos explicitly flag this: 
+
+> Immigration keeps survival non-competitive; p2life makes both birth *and* survival competitive. That is why Immigration is used as a two-player *scoring* layer on top of Life (seed fights, immigration games), while p2life is a different CA whose long-run density and pattern zoo are not those of Life.
 
 ### What p2life *is* (conceptually)
 Standard Life uses a single type of cell on a square lattice with the usual B3/S23 rules (birth with exactly 3 neighbors, survival with 2 or 3). P2life lets each occupied cell be either black or white. The two colors compete for space in both birth and survival, while the single-color case reduces exactly to ordinary Life. A two‑player extension of Life where each cell may contain either a **black token** or a **white token**. The rules are modified so that:
@@ -36,7 +44,57 @@ For occupied cells:
 
 These rules create **territorial dynamics**, local dominance, and competitive boundary zones.
 
-### 📈 Mean‑field analysis
+### Shared scaffolding
+
+Both use states $\{\emptyset, W, B\}$, the 8-cell Moore neighborhood, and simultaneous update. A monochrome board of either color is ordinary Life (B3/S23). Live cells never change color while they remain alive; color is assigned only at birth.
+
+### The core difference
+
+Immigration is **Life plus a birth-coloring rule**.  
+p2life is **a different occupancy rule** in which the two colors are hostile to each other.
+
+| Feature | Immigration Life | p2life |
+|---|---|---|
+| Does a live cell care about *which* colors its neighbors have? | No | Yes |
+| Survival | Same as Life: 2 or 3 live neighbors of *any* color | Signed surplus of *same* color: $w-b\in\{2,3\}$, or $w-b=1$ and $w\ge 2$ (and the swap for Black) |
+| Birth occupancy | Exactly 3 live neighbors of *any* color | Exactly 3 of one color, and not exactly 3 of the other (except the $3+3$ lottery) |
+| Birth color | Majority of those 3 live neighbors (always $3{-}0$ or $2{-}1$) | Deterministic “three of mine, not three of yours,” or a fair coin if $3W+3B$ |
+| Opposite-color neighbors | Count as ordinary Life neighbors (they help you survive and can midwife a birth of *your* color via majority) | Count against you for survival and block/steal births |
+| Dynamics if colors are ignored | Identical to Life | *Not* Life: mixed neighborhoods change both birth and death |
+
+So Immigration is a *coloring* of Life. p2life is a *competitive rewrite* of Life’s B/S conditions.
+
+### Formal contrast
+
+Let $n=w+b$ be the total live-neighbor count.
+
+**Immigration**
+- Empty $\to$ live iff $n=3$. Color $=$ majority among the three live neighbors.
+- Live $\to$ live iff $n\in\{2,3\}$. Color unchanged.
+
+**p2life**
+- Empty $\to W$ if $w=3,\,b\neq 3$; $\to B$ if $b=3,\,w\neq 3$; coin-flip if $w=b=3$; else empty.
+- $W$ survives iff $w-b\in\{2,3\}$ or $(w-b=1 \land w\ge 2)$. Symmetric for $B$.
+
+A White cell with neighbors $(w,b)=(1,2)$ has $n=3$, so it **survives in Immigration** and **dies in p2life**. An empty cell with $(2,1)$ is born (majority White) in Immigration and stays empty in p2life.
+
+### Behavioral consequences
+
+**Immigration**
+
+- Pattern geometry and ash are those of Life. Colors are a passive dye except at birth.
+- Mixed objects can be symbiotic: a glider can carry both colors; two differently colored Herschels in a loop can raise oscillator period.
+- A dense mixed soup still dies back like Life. High initial density $\to$ vacuum.
+- “Winning” is mostly about who paints more of the same Life objects, not about rewriting which objects exist.
+
+**p2life**
+
+- Geometry itself is contested. Opposite-color neighbors are a resource drain, so interfaces are lethal or lottery-like rather than merely tinted.
+- Mixed dense regions do *not* empty the way Life does; the mean-field map gives $p'=0.2188$ at $p=1$, and simulations settle near density $0.0362$ even from high $p$.
+- Single-color Life patterns still work in isolation, but many Life collisions change outcome once both colors are present (the paper’s examples: a Life-annihilating seed becoming a Black block + two White gliders; a Life “six blinkers” seed becoming two Black blocks).
+- The $3+3$ coin flip is a genuine stochastic birth that Immigration never has (Immigration births always have an odd live count of 3).
+
+## 📈 Mean‑field analysis
 
 ### Analysis
 They derive a mean-field map for the density $p$ after one step:
@@ -161,7 +219,6 @@ $$
 Black uses the swapped pairs $(b,w)$.
 
 ### 🧩 Future work
-- compare p2life to Immigration Life
 - simulate p2life patterns
 - derive the mean‑field equation step‑by‑step
 - explore competitive boundary dynamics
