@@ -85,25 +85,25 @@ F &= \int_0^{t_f} (\sigma B + \tau \mathbf{S}\cdot\mathbf{w})\, dt
 $$
 
 ### Seasoning Composition Model  
-Let the seasoning blend be a vector in an \(n\)-dimensional spice‑space.
+Let the seasoning blend be a vector in an $n$-dimensional spice‑space.
 
 $$
 \mathbf{S} = (s_1, s_2, \ldots, s_n)
 $$
 
-Where each component \(s_i\) is the mass fraction of ingredient \(i\).
+Where each component $s_i$ is the mass fraction of ingredient $i$.
 
 Typical partition:
 
-- \(s_{\text{wp}}\): **white pepper**  
-- \(s_{\text{bp}}\): **black pepper**  
-- \(s_{\text{pap}}\): **paprika**  
-- \(s_{\text{gs}}\): **garlic salt**  
-- \(s_{\text{gin}}\): **ginger**  
-- \(s_{\text{thy}}\): **thyme**  
-- \(s_{\text{bas}}\): **basil**  
-- \(s_{\text{ore}}\): **oregano**  
-- \(s_{\text{sag}}\): **sage**
+- $s_{\text{wp}}$: **white pepper**  
+- $s_{\text{bp}}$: **black pepper**  
+- $s_{\text{pap}}$: **paprika**  
+- $s_{\text{gs}}$: **garlic salt**  
+- $s_{\text{gin}}$: **ginger**  
+- $s_{\text{thy}}$: **thyme**  
+- $s_{\text{bas}}$: **basil**  
+- $s_{\text{ore}}$: **oregano**  
+- $s_{\text{sag}}$: **sage**
 
 Normalization constraint:
 
@@ -117,10 +117,10 @@ $$
 L = \alpha\, s_{\text{wp}} + \beta\, s_{\text{gs}} + \gamma\, s_{\text{pap}} + \delta\, s_{\text{gin}}
 $$
 
-Where \(\alpha,\beta,\gamma,\delta\) are empirically tuned weights.
+Where $\alpha,\beta,\gamma,\delta$ are empirically tuned weights.
 
 ### Breading Adhesion Model  
-Let \(B\) be the breading mass adhered to the chicken surface.
+Let $B$ be the breading mass adhered to the chicken surface.
 
 $$
 B = k \, A \, \rho_f \, \Phi
@@ -128,10 +128,10 @@ $$
 
 Where:
 
-- \(A\): surface area of chicken  
-- \(\rho_f\): flour density  
-- \(\Phi\): adhesion coefficient  
-- \(k\): dredge‑process constant (depends on wet/dry cycles)
+- $A$: surface area of chicken  
+- $\rho_f$: flour density  
+- $\Phi$: adhesion coefficient  
+- $k$: dredge‑process constant (depends on wet/dry cycles)
 
 If using a **double dredge**:
 
@@ -139,12 +139,12 @@ $$
 \Phi = \Phi_0 (1 + \lambda)
 $$
 
-Where \(\lambda\) is the amplification factor from the second wet/dry cycle.
+Where $\lambda$ is the amplification factor from the second wet/dry cycle.
 
 ### Fry Dynamics (Pressure vs. Open Fry)
 
 #### Heat Transfer  
-Let \(T(t)\) be internal chicken temperature.
+Let $T(t)$ be internal chicken temperature.
 
 $$
 \frac{dT}{dt} = \frac{h A}{C_m} (T_o - T)
@@ -152,21 +152,21 @@ $$
 
 Where:
 
-- \(h\): heat transfer coefficient  
-- \(A\): surface area  
-- \(C_m\): heat capacity of meat  
-- \(T_o\): oil temperature  
+- $h$: heat transfer coefficient  
+- $A$: surface area  
+- $C_m$: heat capacity of meat  
+- $T_o$: oil temperature  
 
-Under pressure frying, \(h\) increases:
+Under pressure frying, $h$ increases:
 
 $$
 h_{\text{pf}} = h_0 (1 + \eta)
 $$
 
-with \(\eta > 0\) representing steam‑driven enhancement.
+with $\eta > 0$ representing steam‑driven enhancement.
 
 #### Moisture Retention  
-Let \(M(t)\) be moisture content.
+Let $M(t)$ be moisture content.
 
 $$
 \frac{dM}{dt} = -\kappa (1 - P)
@@ -174,8 +174,8 @@ $$
 
 Where:
 
-- \(\kappa\): evaporation constant  
-- \(P\): pressure factor (0 for open fry, \(>0\) for pressure fry)
+- $\kappa$: evaporation constant  
+- $P$: pressure factor (0 for open fry, $>0$ for pressure fry)
 
 Thus:
 
@@ -183,10 +183,10 @@ $$
 M_{\text{pf}}(t) > M_{\text{open}}(t)
 $$
 
-for all \(t\) in the fry interval.
+for all $t$ in the fry interval.
 
 #### Crust Formation  
-Let \(C(t)\) be crust crispness.
+Let $C(t)$ be crust crispness.
 
 $$
 \frac{dC}{dt} = \mu (T_o - T_c) - \nu M
@@ -194,9 +194,9 @@ $$
 
 Where:
 
-- \(\mu\): crispness formation coefficient  
-- \(T_c\): crust temperature  
-- \(\nu\): moisture inhibition coefficient  
+- $\mu$: crispness formation coefficient  
+- $T_c$: crust temperature  
+- $\nu$: moisture inhibition coefficient  
 
 Pressure frying modifies the moisture term:
 
@@ -211,7 +211,7 @@ $$
 $$
 
 ### Flavor Transfer Model  
-Let \(F\) be perceived flavor intensity.
+Let $F$ be perceived flavor intensity.
 
 $$
 F = \int_0^{t_f} \left( \sigma B + \tau \mathbf{S}\cdot\mathbf{w} \right) dt
@@ -219,12 +219,12 @@ $$
 
 Where:
 
-- \(\sigma\): breading‑to‑flavor coefficient  
-- \(\tau\): seasoning‑to‑flavor coefficient  
-- \(\mathbf{w}\): perceptual weighting vector  
-- \(t_f\): total fry time  
+- $\sigma$: breading‑to‑flavor coefficient  
+- $\tau$: seasoning‑to‑flavor coefficient  
+- $\mathbf{w}$: perceptual weighting vector  
+- $t_f$: total fry time  
 
-Pressure frying modifies \(t_f\) and \(\sigma\):
+Pressure frying modifies $t_f$ and $\sigma$:
 
 $$
 t_{f,\text{pf}} < t_{f,\text{open}}
@@ -234,7 +234,7 @@ $$
 \sigma_{\text{pf}} = \sigma_0 (1 + \chi)
 $$
 
-with \(\chi\) representing enhanced adhesion and flavor lock‑in.
+with $\chi$ representing enhanced adhesion and flavor lock‑in.
 
 ## Future Work
 - a **precise KFC‑style seasoning ratio**  
