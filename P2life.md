@@ -229,3 +229,117 @@ Black uses the swapped pairs $(b,w)$.
 - titan.dcs.bbk.ac.uk https://titan.dcs.bbk.ac.uk/~gr/pdf/p2life.pdf
 - IDEAS/RePEc https://ideas.repec.org/a/wsi/ijmpcx/v14y2003i02ns0129183103004346.html
 
+
+## APPENDIX: Code
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
+import matplotlib
+matplotlib.use('Agg')
+
+# reuse functions from previous state
+cmap = ListedColormap(['#111111', '#f2f2f2', '#3b82f6'])
+
+def plot_single_row(grids, titles, path, cell=0.4):
+    n = len(grids)
+    h,w = grids[0].shape
+    fig, axes = plt.subplots(1, n, figsize=(n*w*cell+0.5, h*cell+0.9))
+    if n==1:
+        axes=[axes]
+    for ax,g,t in zip(axes, grids, titles):
+        ax.imshow(g, cmap=cmap, vmin=0, vmax=2, interpolation='nearest')
+        ax.set_title(t, fontsize=9, color='white')
+        ax.set_xticks([]); ax.set_yticks([])
+        ax.set_aspect('equal')
+    fig.patch.set_facecolor('#1b1b1b')
+    plt.tight_layout()
+    fig.savefig(path, dpi=150, facecolor=fig.get_facecolor())
+    plt.close()
+
+# 1) Hostile neighborhood demo: isolated white with 1W+2B neighbors dies
+# Construct a small still-ish setup
+# Center white, neighbors: one white and two black
+demo = np.zeros((7,7), dtype=np.int8)
+demo[3,3] = WHITE
+demo[3,2] = WHITE  # one white neighbor
+demo[2,3] = BLACK
+demo[3,4] = BLACK  # two black neighbors
+# those extra cells also need context; just show one step of the center conceptually
+hdemo = run(demo, 3, seed=0)
+plot_hist(hdemo, 'Mixed neighborhood: White with (w,b)=(1,2) dies (Life/Immigration would keep n=3)', '/tmp/p2life/hostile.png', cols=4)
+
+# 2) Adjacent white block vs black block
+wb = np.zeros((12,12), dtype=np.int8)
+wb[4:6,3:5] = WHITE
+wb[4:6,6:8] = BLACK  # two blocks separated by one empty column
+hist_wb = run(wb, 8)
+plot_hist(hist_wb, 'White block vs black block (1-cell gap)', '/tmp/p2life/blocks.png', cols=9)
+
+# touching blocks
+wb2 = np.zeros((12,12), dtype=np.int8)
+wb2[4:6,4:6] = WHITE
+wb2[4:6,6:8] = BLACK
+hist_wb2 = run(wb2, 6)
+plot_hist(hist_wb2, 'White block touching black block', '/tmp/p2life/blocks_touch.png', cols=7)
+
+# 3) two gliders head-on different colors
+gg = np.zeros((18,18), dtype=np.int8)
+# white glider SE
+gg[2:5,2:5] = np.array(GLIDER)
+# black glider NW-ish: Life glider going NW is rot180 of SE glider
+g_nw = np.array(GLIDER)[::-1, ::-1]
+g_nw[g_nw==1] = BLACK
+gg[12:15,12:15] = g_nw
+hist_gg = run(gg, 24, seed=2)
+plot_hist(hist_gg[::3], 'Opposite-color gliders on collision course (every 3 gens)', '/tmp/p2life/gliders.png', cols=9)
+
+# 4) density curve for a few initial p
+def soup_density_run(p, size=60, steps=120, seed=0):
+    rng = np.random.default_rng(seed)
+    g = np.zeros((size,size), dtype=np.int8)
+    mask = rng.random((size,size)) < p
+    cols = rng.integers(1,3,size=(size,size))
+    g[mask] = cols[mask]
+    hist = run(g, steps, seed=seed+99)
+    dens = [np.mean(h!=0) for h in hist]
+    wd = [(h==1).mean() for h in hist]
+    bd = [(h==2).mean() for h in hist]
+    return dens, wd, bd, hist[-1]
+
+fig, ax = plt.subplots(figsize=(8,4.2))
+for i,p in enumerate([0.15,0.30,0.50,0.80]):
+    dens, wd, bd, final = soup_density_run(p, size=50, steps=100, seed=10+i)
+    ax.plot(dens, label=f'p0={p:.2f} → {dens[-1]:.3f}')
+ax.axhline(0.0362, color='#888', ls='--', lw=1, label='paper p∞≈0.0362 (large lattice)')
+ax.set_xlabel('generation')
+ax.set_ylabel('occupied density')
+ax.set_title('p2life density from random mixed soups (50×50 torus)')
+ax.legend(fontsize=8)
+ax.set_facecolor('#222')
+fig.patch.set_facecolor('#1b1b1b')
+ax.tick_params(colors='white')
+ax.xaxis.label.set_color('white')
+ax.yaxis.label.set_color('white')
+ax.title.set_color('white')
+for s in ax.spines.values():
+    s.set_color('#666')
+fig.savefig('/tmp/p2life/density.png', dpi=140, facecolor=fig.get_facecolor())
+plt.close()
+
+# 5) white r-pentomino vs black r-pentomino nearby
+rp = np.zeros((30,30), dtype=np.int8)
+rp[8:11,8:11] = np.array(RPENT)
+rbp = np.array(RPENT)
+rbp[rbp==1]=BLACK
+rp[14:17,16:19] = rbp
+hist_rp = run(rp, 60, seed=3)
+frames = [hist_rp[i] for i in [0,5,10,20,40,60]]
+plot_hist(frames, 'White R-pentomino vs nearby black R-pentomino', '/tmp/p2life/rpent.png', cols=6, cell=0.22)
+
+print('glider collision last live', np.count_nonzero(hist_gg[-1]))
+print('touching blocks last\n', hist_wb2[-1][3:9,3:10])
+print('gap blocks last\n', hist_wb[-1][3:9,2:10])
+print('files ok')
+```
