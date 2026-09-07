@@ -235,14 +235,7 @@ $$
 Classifier from observables:
 
 $$
-\hat f
-=
-\arg\max_f
-\ \Big\langle
-\underbrace{\pi}_{\text{plate mark}},\
-\underbrace{\operatorname{supp}(u)}_{\text{ink locus}},\
-\underbrace{\|\nabla u\|}_{\text{edge vs wash}}
-\Big\rangle
+\hat f = \arg\max_f \ \Big\langle \underbrace{\pi}_{\text{plate mark}},\ \underbrace{{supp}(u)}_{\text{ink locus}},\ \underbrace{\|\nabla u\|}_{\text{edge vs wash}} \Big\rangle
 $$
 
 Heuristic rules:
@@ -250,7 +243,7 @@ Heuristic rules:
 $$
 \begin{aligned}
 \pi=1 &\Rightarrow f=I\\
-\pi=0,\ \operatorname{supp}(u)\approx\{h\ge h_*\} &\Rightarrow f=R\\
+\pi=0,\ {supp}(u)\approx\{h\ge h_*\} &\Rightarrow f=R\\
 \pi=0,\ \text{drawn/grease look} &\Rightarrow f=L\\
 \pi=0,\ \text{flat layered fields} &\Rightarrow f=S
 \end{aligned}
@@ -401,7 +394,7 @@ where $\mathcal{W}$ is the wipe operator (surface ink removed, recesses retained
 Compression analogy:
 
 $$
-\tau_I \propto -P_I\cdot \operatorname{div}\phi
+\tau_I \propto -P_I\cdot {div}\phi
 $$
 
 Depth signature / plate mark:
@@ -488,7 +481,7 @@ $$
 Transferred ink (laminar-flow / gating):
 
 $$
-u_S=\sigma\!\left(\int_0^{t_*}\operatorname{div}\mathbf{q}\,dt\right)
+u_S=\sigma\!\left(\int_0^{t_\*}{div}\mathbf{q}\,dt\right)
 =\sigma\!\left(\chi_S\cdot \zeta_S P_S I_0\right)
 $$
 
