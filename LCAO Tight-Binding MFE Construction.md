@@ -298,6 +298,13 @@ is exact **because both operators are written on the same structural template** 
 
 - cpashartis, [LCAO_tightbinding](https://github.com/cpashartis/LCAO_tightbinding)
 - [Linear Combination of Atomic Orbitals (LCAO) tight-binding model](https://www.bing.com/copilotsearch?q=LCAO%2Ftight-binding%20construction&pq=&FORM=)
+- Ashcroft & Mermin, *Solid State Physics*, Chs. 8 and 10.
+- Harrison, *Electronic Structure and the Properties of Solids*.
+- Hückel method: linear-chain and two-site formulas (standard quantum-chemistry treatments; see also the *J. Math. Phys.* Green’s-function paper for the explicit sine eigenmodes).
+- Bloch’s theorem: any condensed-matter introduction.
+- Chemistry LibreTexts, “Hückel MO Model of Conjugation.” 
+- A. N. et al., “The Green’s function for the Hückel (tight binding) model,” *J. Math. Phys.* **58**, 033505 (2017). States the finite-chain eigenvalues and sine eigenvectors explicitly.
+- C. J. Lambert, *Quantum Transport in Nanostructures and Molecules*, Ch. 4.
 
 ## APPENDIX: **Tight‑Binding Corresponds**
 
