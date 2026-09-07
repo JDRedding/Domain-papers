@@ -190,8 +190,362 @@ The tension is **distributed**, like torsion or laminar flow in mechanics.
 **Why it matters:**  
 Screenprints feel *engineered* — color is layered through controlled channels.
 
-## Future Work 
+## Operator-mode model
 
-- Map printmaking tensions into **SID/PED triads** → SID/PED mapping  
-- Build a **relational‑tension diagram** → tension_diagram  
-- Derive a **continuum model** of ink–matrix interaction → continuum_model
+Matrix $M$, ink $I$, paper $P$, and four tension families as distinct interaction laws. This is a modeling language for the framework, not process-control equations.
+
+### Notation sheet
+
+| Symbol | Meaning |
+|---|---|
+| $h$ | matrix height |
+| $\chi$ | printable mask |
+| $u$ | printed ink field |
+| $I_0$ | ink supply |
+| $\mathbf{F},P$ | applied force / pressure |
+| $\eta$ | paper compliance / dampness |
+| $\mathcal{W}$ | wipe operator (intaglio) |
+| $g,w$ | grease / water potentials |
+| $T,s$ | mesh transmittance / stencil gate |
+| $\mathbf{q}$ | ink flux through screen |
+| $\pi$ | plate-mark indicator |
+| $n$ | impression count |
+| $\delta,\lambda$ | wear rate / burr decay |
+| $\sigma$ | ink saturation map |
+| $\Psi_f$ | family interaction kernel |
+| $\tau_f$ | analogical tension |
+
+### Quadrature: one object, four kernels
+
+Write a single interaction law with a family index $f\in\{R,I,L,S\}$:
+
+$$
+u_f=\sigma\!\bigl(\chi_f\cdot \Psi_f(h,g,w,T,s,\mathbf{F},I_0,\eta)\bigr)
+$$
+
+$$
+\begin{aligned}
+\Psi_R &= \alpha_R P_R && \text{axial / surface-positive}\\
+\Psi_I &= \beta_I\,\eta_{\text{damp}} P_I\cdot\mathcal{W} && \text{compressive / surface-negative}\\
+\Psi_L &= \gamma_L\,\mathbf{1}\{g>g_*\} && \text{chemical polarity / shear}\\
+\Psi_S &= \zeta_S P_S\,T s && \text{flow-channel / gating}
+\end{aligned}
+$$
+
+Classifier from observables:
+
+$$
+\hat f
+=
+\arg\max_f
+\ \Big\langle
+\underbrace{\pi}_{\text{plate mark}},\
+\underbrace{\operatorname{supp}(u)}_{\text{ink locus}},\
+\underbrace{\|\nabla u\|}_{\text{edge vs wash}}
+\Big\rangle
+$$
+
+Heuristic rules:
+
+$$
+\begin{aligned}
+\pi=1 &\Rightarrow f=I\\
+\pi=0,\ \operatorname{supp}(u)\approx\{h\ge h_*\} &\Rightarrow f=R\\
+\pi=0,\ \text{drawn/grease look} &\Rightarrow f=L\\
+\pi=0,\ \text{flat layered fields} &\Rightarrow f=S
+\end{aligned}
+$$
+
+---
+
+### Core spaces and fields
+
+Let the print plane be $\Omega\subset\mathbb{R}^2$.
+
+$$
+\begin{aligned}
+h(x,y) &\quad\text{matrix height field}\\
+\kappa(x,y) &\quad\text{matrix curvature / micro-geometry}\\
+u(x,y) &\quad\text{ink occupancy after transfer}\\
+\phi(x,y) &\quad\text{paper displacement / absorption}\\
+\mathbf{F} &\quad\text{applied force}\\
+n &\quad\text{impression index in an edition}
+\end{aligned}
+$$
+
+A print is a transfer map
+
+$$
+\mathcal{T}:\ (h,\ I_{\text{on matrix}},\ \mathbf{F},\ \text{paper state})\ \mapsto\ u
+$$
+
+Original vs reproduction is outside the PDE: an original means $h$ was authored on the matrix, not copied from an existing image field.
+
+## Shared primitives
+
+Ink location operator (where ink is allowed to live on the matrix):
+
+$$
+\chi(x,y)=
+\begin{cases}
+1 & \text{printable locus}\\
+0 & \text{non-printable locus}
+\end{cases}
+$$
+
+Contact / transfer intensity:
+
+$$
+u = \sigma\!\left(\chi\cdot \Psi(h,\mathbf{F},I_0)\right)
+$$
+
+where $\Psi$ is the family-specific interaction kernel and $\sigma$ is a saturation map (ink cannot exceed local capacity).
+
+Edition wear:
+
+$$
+h_{n+1}=h_n-\delta(h_n,\mathbf{F},I_0),\qquad
+u_n=\mathcal{T}(h_n)
+$$
+
+Drypoint burr wear is large $\delta$; wood/lino $\delta$ is small.
+
+Registration of $K$ color layers:
+
+$$
+u_{\text{final}}=\sum_{k=1}^{K} u_k(x-\Delta x_k,\ y-\Delta y_k)
+$$
+
+Plate-mark indicator (intaglio only, typically):
+
+$$
+\pi=
+\mathbf{1}\{\partial\Omega_{\text{plate}}\ \text{embosses paper}\}
+$$
+
+Paper state:
+
+$$
+\begin{aligned}
+\text{dry: }& \ \eta\approx\eta_{\text{dry}}\\
+\text{damp: }& \ \eta\approx\eta_{\text{damp}}>\eta_{\text{dry}}
+\end{aligned}
+$$
+
+with $\eta$ = compliance / capillary uptake.
+
+---
+
+### Family 1 — Relief (surface-positive / axial tension)
+
+Geometry: printable set is the raised set
+
+$$
+\chi_R(x,y)=\mathbf{1}\{h(x,y)\ge h_*\}
+$$
+
+Force is moderate downward pressure $P_R$.
+
+Transfer (ink sits ON the surface):
+
+$$
+u_R = \sigma\!\left(\chi_R\cdot \alpha_R P_R I_0\right)
+$$
+
+Axial-tension analogy:
+
+$$
+\tau_R \propto P_R\cdot \nabla h\cdot\mathbf{n}
+$$
+
+Binary polarity of cut vs uncut:
+
+$$
+\text{Relief polarity}=\chi_R-\bigl(1-\chi_R\bigr)=2\chi_R-1
+$$
+
+Visual signature: high-contrast, edge-dominant because $\nabla\chi_R$ is sharp.
+
+---
+
+### Family 2 — Intaglio (surface-negative / compression)
+
+Geometry: printable set is the recessed set
+
+$$
+\chi_I(x,y)=\mathbf{1}\{h(x,y)\le -h_*\}
+$$
+
+or, for line work, a groove measure supported on incised curves.
+
+High pressure $P_I\gg P_R$ on damp paper:
+
+$$
+\phi = \eta_{\text{damp}}\,P_I
+$$
+
+Transfer (ink embedded IN paper):
+
+$$
+u_I=\sigma\!\left(\chi_I\cdot \beta_I\,\phi\cdot I_{\text{trapped}}\right)
+$$
+
+with trapped ink after wipe
+
+$$
+I_{\text{trapped}}=\mathcal{W}(I_{\text{flood}},h)
+$$
+
+where $\mathcal{W}$ is the wipe operator (surface ink removed, recesses retained).
+
+Compression analogy:
+
+$$
+\tau_I \propto -P_I\cdot \operatorname{div}\phi
+$$
+
+Depth signature / plate mark:
+
+$$
+\pi_I=1,\qquad
+\text{blackness}\propto\text{groove volume}\times P_I
+$$
+
+Drypoint burr model:
+
+$$
+h_{\text{burr}}(n)=h_{\text{burr}}(0)\,e^{-\lambda n}
+$$
+
+so edition size is small when $\lambda$ is large.
+
+---
+
+### Family 3 — Planographic / lithography (chemical polarity / shear)
+
+Geometry is flat:
+
+$$
+h(x,y)\equiv\text{const},\qquad \chi_L\text{ is chemical, not topographic}
+$$
+
+Let $g$ = grease potential, $w$ = water potential.
+
+Antipathy constraint:
+
+$$
+g\cdot w \approx 0
+$$
+
+Printable set:
+
+$$
+\chi_L=\mathbf{1}\{g>g_*\}
+$$
+
+Transfer:
+
+$$
+u_L=\sigma\!\left(\chi_L\cdot \gamma_L I_0\right)
+$$
+
+Shear / affinity analogy (image “slides” by chemical affinity, not height):
+
+$$
+\tau_L \propto \nabla g\times\nabla w
+$$
+
+or a phase-separation energy
+
+$$
+E_L=\int_\Omega \bigl(ag^2+bw^2+c\,gw\bigr)\,dx\,dy,\quad c>0
+$$
+
+minimized when grease and water occupy complementary regions.
+
+No plate mark:
+
+$$
+\pi_L=0
+$$
+
+---
+
+### Family 4 — Stencil / screenprint (flow-channel / gating)
+
+Mesh transmittance $T(x,y)\in[0,1]$ times stencil gate $s(x,y)\in\{0,1\}$:
+
+$$
+\chi_S(x,y)=T(x,y)\,s(x,y)
+$$
+
+Squeegee as lateral driving pressure $P_S$:
+
+$$
+\mathbf{q}=-\mu^{-1}\chi_S\nabla p
+$$
+
+Transferred ink (laminar-flow / gating):
+
+$$
+u_S=\sigma\!\left(\int_0^{t_*}\operatorname{div}\mathbf{q}\,dt\right)
+=\sigma\!\left(\chi_S\cdot \zeta_S P_S I_0\right)
+$$
+
+Binary gates:
+
+$$
+s=\mathbf{1}_{\text{open}}
+$$
+
+Layered color:
+
+$$
+u_{\text{final}}=\sum_{k=1}^{K} u_S^{(k)}
+$$
+
+No plate mark:
+
+$$
+\pi_S=0
+$$
+
+---
+
+## Future Work
+The next layers are the natural extensions: 
+
+(1) a discrete SID/PED triad map from $\{\chi,\Psi,\eta\}$,  
+(2) a 1-D toy PDE on a cross-section of each family so the four tensions can be plotted as actual profiles.
+
+---
+
+## APPPENDIX: Continuum sketch 
+
+A single energy whose minimizer recovers the four modes by parameter regime:
+
+$$
+\mathcal{E}[h,g,w,u]
+=
+\int_\Omega
+\Big(
+\tfrac{k_h}{2}|\nabla h|^2
++\tfrac{k_g}{2}|\nabla g|^2
++\tfrac{k_w}{2}|\nabla w|^2
++c\,gw
++\tfrac{k_u}{2}|u-\chi\Psi|^2
+\Big)\,dx\,dy
+$$
+
+Regimes:
+
+- large $|\nabla h|$, $\chi=\mathbf{1}\{h\ge h_*\}$ $\rightarrow$ relief  
+- large recessed volume, high $P$, wipe $\mathcal{W}$ $\rightarrow$ intaglio  
+- $h$ flat, $c>0$ grease–water penalty $\rightarrow$ lithography  
+- $\chi=Ts$, flux $\mathbf{q}$ $\rightarrow$ screen  
+
+Wear as gradient descent on the matrix:
+
+$$
+\partial_n h = -\frac{\delta\mathcal{E}}{\delta h}
+$$
