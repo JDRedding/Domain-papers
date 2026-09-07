@@ -95,8 +95,8 @@ $$
 
 Thus:
 
-- \(T$ = forward flux channel → \(M, M'$  
-- \(T^\dagger$ = backward flux channel → \(F, F'$
+- $T$ = forward flux channel → $M, M'$  
+- $T^\dagger$ = backward flux channel → $F, F'$
 
 The eigenmodes of both operators are:
 
@@ -113,7 +113,7 @@ The algebra is identical.
 
 ## **Two‑Site Bipolar Modes**
 
-For two sites \(A,B$:
+For two sites $A,B$:
 
 $$
 H=\begin{pmatrix}
@@ -145,10 +145,10 @@ $$
 \psi_k(j)=\sqrt{\tfrac{2}{N+1}}\sin$tfrac{jk\pi}{N+1}).
 $$
 
-- \(k=1$: pure \(M$  
-- \(k=N$: pure \(M'$  
-- intermediate \(k$: mixed \(M/M'$  
-- backward counterparts: mixed \(F/F'$
+- $k=1$: pure $M$  
+- $k=N$: pure $M'$  
+- intermediate $k$: mixed $M/M'$  
+- backward counterparts: mixed $F/F'$
 
 This is the full graded momentum–countermomentum spectrum.
 
@@ -162,10 +162,10 @@ $$
 \psi_k(x)=e^{ikx}u_k(x).
 $$
 
-- \(k=0$: pure \(M$  
-- \(k=\pi/a$: pure \(M'$  
-- \(0<k<\pi/a$: continuous interpolation  
-- negative \(k$: backward flux → \(F, F'$
+- $k=0$: pure $M$  
+- $k=\pi/a$: pure $M'$  
+- $0<k<\pi/a$: continuous interpolation  
+- negative $k$: backward flux → $F, F'$
 
 The Bloch band is the continuous MFE flux field.
 
