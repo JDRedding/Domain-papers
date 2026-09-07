@@ -497,3 +497,44 @@ Representation is never neutral.
 $$
 Power(Representation) \rightarrow Bias(Structure)
 $$
+
+## **Future-work**
+
+1. Encode each tension as a typed operator with explicit inputs (scale pair, projection pair, naming authority pair, timestamp pair).
+2. Specialize the operators by region class (coastal vs. inland, high-latitude vs. equatorial, densely administered vs. sparsely administered). The same projection that is acceptable for mid-latitude navigation becomes unusable at 80° N.
+3. Treat a unified model as a commuting diagram: physical Earth $\to$ measured ellipsoid $\to$ projected plane $\to$ labeled gazetteer $\to$ navigable graph. Non-commuting squares are exactly the tensions.
+
+The landmark sequence (Ptolemy $\to$ Ortelius/Mercator $\to$ imperial gazetteers $\to$ GIS + GPS) is the historical record of people trying to make those squares commute and discovering they never fully do.
+
+## APPENDIX: **Core compression problem.** 
+Earth is continuous and changing. Atlases, gazetteers, GIS layers, and guidebooks are discrete, dated, and purpose-built. Every tension in the matrix is a symptom of that mismatch.
+
+**The five strongest operators**
+
+- Scale: ${Describe}(\text{Earth}, s_1) \neq {Describe}(\text{Earth}, s_2)$
+- Projection: ${Transform}(\text{Globe}\to\text{Plane})\to{Loss}(\text{shape},\text{area},\text{distance})$
+- Boundary: ${Partition}(\text{Earth})\to{Mismatch}(\text{physical},\text{cultural},\text{political})$
+- Identity: ${Index}(\text{Place})\to{Conflict}(\text{label},\text{identity})$
+- Navigation: ${Represent}(\text{Earth})\neq{Navigate}(\text{Earth})$
+
+The rest (temporal lag, data vs. evaluation, power bias) are special cases of the same five.
+
+**Formulas that sit under the operators**
+
+Spherical distance (haversine) remains the workhorse for travel systems:
+
+$$
+\begin{aligned}
+a &= \sin^2(\Delta\varphi/2)+\cos\varphi_1\cos\varphi_2\sin^2(\Delta\lambda/2)\\
+c &= 2{atan2}(\sqrt{a},\sqrt{1-a})\\
+d &= Rc
+\end{aligned}
+$$
+
+Mercator makes the projection tension explicit: conformal, so bearings are true, but local scale $k=\sec\varphi$ and area scale $k^2$ explode toward the poles. Equirectangular and WGS84 ellipsoidal formulas simply move the same tension onto different reference surfaces.
+
+**Matrix**
+
+- Cartography column: projection and scale tensions are geometric and therefore computable.
+- Place-indexing column: identity and power tensions are political and therefore not computable from coordinates alone.
+- Travel-systems column: navigation tension is the only one that must be resolved in real time (routing engines, visa regimes, climate events).
