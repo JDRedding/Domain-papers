@@ -296,7 +296,7 @@ is exact **because both operators are written on the same structural template** 
 
 ## Further Reading and References
 
-- https://github.com/cpashartis/LCAO_tightbinding
+- cpashartis, [LCAO_tightbinding](https://github.com/cpashartis/LCAO_tightbinding)
 - [Linear Combination of Atomic Orbitals (LCAO) tight-binding model](https://www.bing.com/copilotsearch?q=LCAO%2Ftight-binding%20construction&pq=&FORM=)
 
 ## APPENDIX **Tight‑Binding Corresponds**
