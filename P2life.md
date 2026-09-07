@@ -218,8 +218,40 @@ $$
 
 Black uses the swapped pairs $(b,w)$.
 
+## Simulate p2life patterns
+
+Implemented p2life run pattern simulations: monochrome Life objects (to confirm the reduction) and mixed-color interactions.p2life was run as a 3-state torus CA (`empty / white / black`) with the Levene–Roussos birth and signed-difference survival rules. Monochrome patterns reduce to B3/S23; mixed patterns do not.
+
+- Isolated Life objects of one color behave exactly as in Conway Life.
+- Opposite color is hostile: it subtracts from survival surplus and blocks same-color birth unless the $3+3$ coin-flip case occurs.
+- That hostility creates still lifes Life does not have (touching dual-color blocks) and destroys some that Life would treat as ordinary $n=2$ or $n=3$ neighborhoods.
+- Asymptotic mixed soups thin out but do not vacuum as aggressively as high-density Life; residual density is higher on small grids than the paper’s $0.0362$.
+
+### Monochrome check (must be ordinary Life)
+
+A white glider advances by $(1,1)$ every 4 generations. A white blinker period-2 oscillates. Both match Conway Life, so the single-color reduction is correct.
+
+### Where p2life leaves Life / Immigration
+
+**White cell with $(w,b)=(1,2)$.** Total live neighbors $n=3$, so Life and Immigration would keep it alive. In p2life the signed surplus is $w-b=-1$, so it dies.
+
+**Opposite-color blocks.** A 2×2 white block and a 2×2 black block with a one-cell gap are inert (each block is an ordinary Life still life). When they *touch*, they also freeze. Interface whites see $(w,b)=(3,2)$: difference $1$ and $w\ge 2$, which is exactly p2life’s extra survival clause. In ordinary Life the same geometry is a $2\times 4$ rectangle and collapses.
+
+### Collisions
+
+White glider into a black block (even generations). The glider does not “paint” the block the way Immigration would; the block’s opposite-color neighborhood can kill or deflect the incoming ship instead of acting as three generic live neighbors.
+
+Head-on opposite-color gliders (every third generation). After the interaction the lattice is not the usual Life collision ash: leftover live cells are color-segregated and fewer.
+
+Nearby white and black R-pentominoes. Each methuselah starts as in Life, then the two debris fields grind against each other at the color interface rather than merging into one Life soup.
+
+### Random mixed soup
+
+Initial density $p=0.30$, colors assigned 50/50, $40\times 40$ torus. Occupied density drops quickly, then lingers in the $0.11$–$0.14$ range on this small board (one color also took over most of the remainder). On the paper’s larger lattices the reported attractor is $p_\infty\approx 0.0362$.
+
+Density vs generation on $50\times 50$ soups for several $p_0$. Small toruses stay above the infinite-lattice estimate because leftover oscillators and still lifes occupy a larger fraction of the grid.
+
 ### 🧩 Future work
-- simulate p2life patterns
 - derive the mean‑field equation step‑by‑step
 - explore competitive boundary dynamics
 
@@ -230,9 +262,9 @@ Black uses the swapped pairs $(b,w)$.
 - IDEAS/RePEc https://ideas.repec.org/a/wsi/ijmpcx/v14y2003i02ns0129183103004346.html
 
 
-## APPENDIX: Code
+## APPENDIX: interactions.p2life Code
 
-```
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
