@@ -521,6 +521,7 @@ $$
   where $\mathcal{P}_{\mathbf{Conflict}}$ is the sub‑geometry with only $\mathbf{Conflict}$ edges.
 
 - **Local tension at node $v:**
+
 $$
 \tau(v) = \deg_{\mathbf{Conflict}}(v)
 $$
