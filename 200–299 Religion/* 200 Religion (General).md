@@ -221,6 +221,22 @@ Many traditions teach both human dignity and differentiated roles (gender, clerg
 - sexuality and marriage
 - who may lead, teach, or marry whom
 
+Let role assignment $a$ give status $s(a)$ and a fairness penalty for unequal access:
+
+$$
+U_{\text{inst}}(a) = \sum_i u_i\bigl(s_i(a)\bigr) - \kappa\, D(a)
+$$
+
+$$
+D(a) = \sum_{g} \bigl|\bar{s}_g(a) - \bar{s}(a)\bigr|
+$$
+
+- $g$: gender, clergy/laity, insider/outsider
+- $D(a)$: disparity across groups
+- $\kappa$: how strongly equality is demanded (legal, congregational, or generational)
+
+Tension is high when tradition wants $D$ large (differentiated roles) and the surrounding moral/legal order wants $\kappa$ large (equal access). Inside one congregation this is the same fight as tradition vs. change, with $D$ as the contested state variable.
+
 ### 7. Meaning vs. harm
 Religion can console, organize charity, and give people a shared language for grief. It can also justify control, shame, or exclusion. The relational tension is whether a practice that feels sacred to one person is experienced as injury by another—especially a spouse, child, or minority member of the same household or society.
 
