@@ -161,7 +161,6 @@ $$
 Black uses the swapped pairs $(b,w)$.
 
 ### 🧩 Future work
-- full rule formalization
 - compare p2life to Immigration Life
 - simulate p2life patterns
 - derive the mean‑field equation step‑by‑step
