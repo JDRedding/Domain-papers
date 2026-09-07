@@ -78,7 +78,7 @@ $$
 \Delta\varphi &= \varphi_2 - \varphi_1 \\
 \Delta\lambda &= \lambda_2 - \lambda_1 \\
 a &= \sin^2\!\left(\frac{\Delta\varphi}{2}\right) + \cos\varphi_1\cos\varphi_2\sin^2\!\left(\frac{\Delta\lambda}{2}\right) \\
-c &= 2\,\operatorname{atan2}\bigl(\sqrt{a},\,\sqrt{1-a}\bigr) \\
+c &= 2\,{atan2}\bigl(\sqrt{a},\,\sqrt{1-a}\bigr) \\
 d &= R\,c
 \end{aligned}
 $$
@@ -92,7 +92,7 @@ $$
 Initial bearing (forward azimuth):
 
 $$
-\theta = \operatorname{atan2}\bigl(
+\theta = {atan2}\bigl(
 \sin\Delta\lambda\cos\varphi_2,\;
 \cos\varphi_1\sin\varphi_2 - \sin\varphi_1\cos\varphi_2\cos\Delta\lambda
 \bigr)
@@ -116,7 +116,7 @@ $$
 \begin{aligned}
 x &= R(\lambda - \lambda_0) \\
 y &= R\ln\left[\tan\left(\frac{\pi}{4} + \frac{\varphi}{2}\right)\right]
-     = R\,\operatorname{arctanh}(\sin\varphi)
+     = R\,{arctanh}(\sin\varphi)
 \end{aligned}
 $$
 
