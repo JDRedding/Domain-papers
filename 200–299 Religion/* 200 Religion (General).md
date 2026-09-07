@@ -1,7 +1,9 @@
 # Religion
 - 200 Religion
 
-Religion is a structured system of beliefs, practices, and values that connects individuals to the sacred, the divine, or ultimate truths, and often shapes moral behavior and cultural identity. Religion is a complex phenomenon at the intersection of belief, culture, ethics, and social life, providing both personal meaning and collective cultural frameworks. Today, religion continues to interact with modernity, science, and global interconnectedness. While some individuals identify as non-religious or secular, religion remains central to billions of people worldwide, adapting to social change while maintaining traditional beliefs and practices. Religion is not a physical theory and has no unique, agreed set of governing equations. What exists are **models** that treat affiliation, conversion, fertility, and belief as measurable processes.
+Religion is a structured system of beliefs, practices, and values that connects individuals to the sacred, the divine, or ultimate truths, and often shapes moral behavior and cultural identity. Religion is a complex phenomenon at the intersection of belief, culture, ethics, and social life, providing both personal meaning and collective cultural frameworks. 
+
+Today, religion continues to interact with modernity, science, and global interconnectedness. While some individuals identify as non-religious or secular, religion remains central to billions of people worldwide, adapting to social change while maintaining traditional beliefs and practices. Religion is not a physical theory and has no unique, agreed set of governing equations. What exists are **models** that treat affiliation, conversion, fertility, and belief as measurable processes.
 
 ## Definition and Purpose
 
@@ -427,7 +429,7 @@ $$
 - High accommodation + low identity gap → more **dual belonging** than hard conversion.  
 - Low accommodation + high gap → mostly hard exits or no movement.
 
-You can then split the macro equation:
+Can then split the macro equation:
 
 $$
 \dot P_q = \text{births/deaths} + \sum_j ( \beta_{jq}^{\text{hard}}P_jP_q + \beta_{jq}^{\text{dual}}P_jY_q - \beta_{qj}^{\text{hard}}P_qP_j )
