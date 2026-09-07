@@ -68,7 +68,7 @@ This is why the families feel so different: each one is a **distinct relational 
 
 The four main families are relief, intaglio, planographic (lithography), and stencil (screenprinting/serigraphy). Many hybrid and experimental methods sit inside these groups. Look for plate marks (intaglio), ink quality, registration, and whether the artist worked the matrix. Editions are numbered; artist’s proofs (AP) and trial proofs (TP) are extra impressions outside the numbered run. Distinguishing original prints from later photomechanical reproductions depends on knowing these processes.
 
-### Relief Processes
+### 🟥 Relief Processes
 Ink sits on the raised surface after non-image areas are cut away. Woodcut is the oldest form (East Asia from the 8th–9th century; Europe in the 15th). Color work uses separate blocks and precise registration. Linocut, popularized in the 20th century, carves more easily and produces bold graphic shapes; Picasso used it extensively. Wood engraving works the end-grain for finer line.
 
 RELIEF (R1)  
@@ -85,7 +85,7 @@ Types:
 - **Metalcut**  
 - **Cardboard_relief**
 
-🟥 **Relief tension** — *Raised‑surface polarity*  
+**Relief tension** — *Raised‑surface polarity*  
 **Geometry:** raised vs cut‑away  
 **Force:** downward pressure, moderate  
 **Ink relation:** ink sits *on* the surface  
@@ -99,7 +99,7 @@ The tension is **surface‑dominant**, like axial tension in mechanics.
 **Why it matters:**  
 Relief prints feel *declared* — the matrix pushes its geometry forward.
 
-### Intaglio Processes
+### 🟦 Intaglio Processes
 Ink is forced into recessed lines or tones on a metal plate, the surface is wiped clean, and damp paper is pressed under high pressure so it picks up the ink. Techniques include engraving (burin), etching (acid through a ground), drypoint (direct scratch that leaves a velvety burr), mezzotint (rocked plate then burnished for tone), and aquatint (rosin for wash-like areas). Editions from drypoint stay small because the burr wears quickly.
 
 INTAGLIO (R2)  
@@ -118,7 +118,7 @@ Types:
 - **Spitbite**  
 - **Photogravure**  
 
-🟦 **Intaglio tension** — *Subsurface compression*  
+**Intaglio tension** — *Subsurface compression*  
 **Geometry:** incised lines, bitten recesses  
 **Force:** high pressure, damp paper forced into grooves  
 **Ink relation:** ink embedded *in* the paper  
@@ -132,7 +132,7 @@ This is the inverse of relief: instead of ink asserting outward, the paper is dr
 **Why it matters:**  
 Intaglio prints feel *engraved into the sheet* — the tension is depth‑driven.
 
-### Planographic Processes (Lithography)
+### 🟨 Planographic Processes (Lithography)
 The surface stays flat. Grease-based drawing materials attract ink; water-dampened areas repel it. Traditional limestone or prepared metal plates allow drawing-like marks. Color lithographs use multiple plates and registration. Picasso, Chagall, and Hockney all worked extensively in the medium.
 
 PLANOGRAPHIC (R3) — LITHOGRAPHY  
@@ -147,7 +147,7 @@ Types:
 - **Plate_lithography**  
 - **Chromolithography**  
 
-🟨 **Planographic tension** — *Grease–water polarity*  
+**Planographic tension** — *Grease–water polarity*  
 **Geometry:** flat plane  
 **Force:** chemical separation, minimal pressure  
 **Ink relation:** grease attracts ink; water repels  
@@ -161,7 +161,7 @@ It resembles **shear tension** in mechanics: the image slides across the surface
 **Why it matters:**  
 Litho prints feel *drawn* rather than carved or pressed — the tension is conceptual.
 
-### Stencil Processes (Screenprinting / Serigraphy)
+### 🟩 Stencil Processes (Screenprinting / Serigraphy)
 Ink is pushed through open areas of a mesh stencil with a squeegee. Each color usually needs its own screen. The method supports both graphic flatness and photographic imagery and became central to Pop Art through Warhol and Haring.
 
 STENCIL (R4) — SCREENPRINT / SERIGRAPH  
@@ -176,7 +176,7 @@ Types:
 - **Screenprint**  
 - **Serigraph**
 
-🟩 **Stencil tension** — *Open‑mesh flow*  
+**Stencil tension** — *Open‑mesh flow*  
 **Geometry:** mesh + blocked areas  
 **Force:** squeegee pressure, lateral  
 **Ink relation:** ink passes through openings only  
