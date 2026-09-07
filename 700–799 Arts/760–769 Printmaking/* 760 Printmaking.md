@@ -1,5 +1,6 @@
 # Printmaking
-
+- 760 Printmaking
+  
 Printmaking is the art of producing multiple original impressions from a single matrix (woodblock, metal plate, stone, or screen). Each impression counts as an original when the artist conceived the image directly on that matrix rather than having it photographically reproduced. Printmaking’s strength is that one matrix can yield many originals while still allowing variation in inking, paper, and color. The four families give very different visual languages—bold contrast in relief, incised line and tone in intaglio, drawn fluidity in lithography, and layered graphic color in screenprint.
 
 The four main families are relief, intaglio, planographic (lithography), and stencil (screenprinting/serigraphy). Many hybrid and experimental methods sit inside these groups. Look for plate marks (intaglio), ink quality, registration, and whether the artist worked the matrix. Editions are numbered; artist’s proofs (AP) and trial proofs (TP) are extra impressions outside the numbered run. Distinguishing original prints from later photomechanical reproductions depends on knowing these processes.
