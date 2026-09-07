@@ -438,25 +438,25 @@ Let’s treat the mythology framework as a relational geometry over a typed grap
 
 - **Fibered relation:**
 
-\[
+$$
 \mathbf{R}_\ell,\quad \ell\in\{\text{Kin},\text{Worship},\text{Conflict},\text{Prophecy}\}
 $$
 
 - **Projection:**
 
-\[
+$$
 \pi : \bigsqcup_\ell \mathbf{R}_\ell \to \mathbf{N}\times \mathbf{N}
 $$
 
 Relational object:
 
-\[
+$$
 \mathcal{M} = \bigl(\mathbf{N},\{\mathbf{R}_\ell\}_\ell\bigr)
 $$
 
 with cross‑layer coupling relations
 
-\[
+$$
 \mathbf{Couple}_{\ell m} \subseteq \mathbf{R}_\ell \times \mathbf{R}_m
 $$
 
@@ -471,19 +471,19 @@ Each mythic relation is a **relational edge type**; the pantheon is the Relation
 
 - **Universe:**  
 
-\[
+$$
 \mathcal{U} = \{\text{deity},\ \text{hero},\ \text{monster},\ \text{mortal}\}
 $$
 
 - **Relational node sort:**  
 
-\[
+$$
 \mathbf{N} : \text{MythicEntity}
 $$
 
 - **Relational edge sort (typed relation):**  
 
-\[
+$$
 \mathbf{R} \in \{\mathbf{Kin},\mathbf{Ally},\mathbf{Conflict},\mathbf{Worship},\mathbf{Prophecy}\}
 $$
 
@@ -492,13 +492,13 @@ $$
 - Original: $G=(V,E) with $E=E_{\text{kin}}\cup E_{\text{ally}}\cup E_{\text{conflict}}.
 - Relational form:
 
-\[
+$$
 \mathcal{P} = \bigl(\mathbf{N},\{\mathbf{Kin},\mathbf{Ally},\mathbf{Conflict}\}\bigr)
 $$
 
   with incidence maps
 
-\[
+$$
 \partial_{\mathbf{R}} : \mathbf{R} \to \mathbf{N}\times \mathbf{N}.
 $$
 
@@ -511,20 +511,20 @@ Define a **tension operator** on the pantheon:
 
 - **Conflict projection:**
 
-\[
+$$
 \mathsf{Tension} : \mathcal{P} \to \mathcal{P}_{\mathbf{Conflict}}
 $$
 
   where $\mathcal{P}_{\mathbf{Conflict}} is the sub‑geometry with only $\mathbf{Conflict} edges.
 
 - **Local tension at node $v:**
-\[
+$$
 \tau(v) = \deg_{\mathbf{Conflict}}(v)
 $$
 
   in Relational terms:
 
-\[
+$$
 \tau : \mathbf{N} \to \mathbb{R},\quad \tau(v) = |\{e\in \mathbf{Conflict} : v\in \partial_{\mathbf{Conflict}}(e)\}|.
 $$
 
@@ -536,19 +536,19 @@ Each divine contest (Zeus vs. Hera, Marduk vs. Tiamat) becomes a **binary game r
 
 - **Strategy sort:**
 
-\[
+$$
 \mathbf{S} = \{\text{Cooperate},\text{Conflict},\text{Submit}\}
 $$
 
 - **Payoff relation:**
 
-\[
+$$
 \mathbf{Payoff} \subseteq \mathbf{N}\times \mathbf{N}\times \mathbf{S}\times \mathbf{S}\times \mathbb{R}^2
 $$
 
   with
 
-\[
+$$
 (i,j,s_i,s_j,\pi_i,\pi_j)\in \mathbf{Payoff}
 $$
 
@@ -556,7 +556,7 @@ $$
 
 A **contest morphism** is then:
 
-\[
+$$
 \mathsf{Game} : \mathcal{P} \to \mathcal{G}
 $$
 
@@ -564,13 +564,13 @@ where $\mathcal{G} is the Relational object whose sorts are $\mathbf{N},\mathbf{
 
 Nash profiles $s^\* become **fixed points** of a best‑response relation:
 
-\[
+$$
 \mathbf{BR} \subseteq \mathbf{S}\times \mathbf{S}
 $$
 
 with
 
-\[
+$$
 (s_i^\*,s_j^\*)\in \mathbf{BR}
 $$
 
@@ -585,13 +585,13 @@ Treat $O,C as scalar fields attached to the pantheon object:
 
 - **Field sorts:**
 
-\[
+$$
 \mathbf{F}_O,\mathbf{F}_C : \text{GlobalField}
 $$
 
 - **Attachment:**
 
-\[
+$$
 \phi_O : \mathcal{P} \to \mathbf{F}_O,\qquad \phi_C : \mathcal{P} \to \mathbf{F}_C
 $$
 
@@ -599,19 +599,19 @@ $$
 
 The dynamical law
 
-\[
+$$
 \dot O = \alpha O - \beta OC,\quad \dot C = \gamma OC - \delta C
 $$
 
 becomes an Relational **evolution operator**:
 
-\[
+$$
 \mathsf{Evol}_{OC} : (\mathbf{F}_O,\mathbf{F}_C) \to (\mathbf{F}_O,\mathbf{F}_C)
 $$
 
 such that
 
-\[
+$$
 \mathsf{Evol}_{OC}(O,C) = \bigl(\alpha O - \beta OC,\ \gamma OC - \delta C\bigr).
 $$
 
@@ -629,7 +629,7 @@ $$
 
 - **Assignment:**
 
-\[
+$$
 \sigma : \mathbf{N} \to \mathbf{Pol}
 $$
 
@@ -639,13 +639,13 @@ The signed Laplacian $L is then a **metric operator** on the conflict layer:
 
 - Define a tension metric
 
-\[
+$$
 \mathsf{L} : \mathbf{N}\times \mathbf{N} \to \mathbb{R}
 $$
 
   with
 
-\[
+$$
 \mathsf{L}(i,j) = L_{ij}.
 $$
 
