@@ -317,7 +317,7 @@ $$
 - Extend tensions into regional subclasses
 - Construct a unified relational model of geography
 
-## APPENDIX: 
+## APPENDIX: Geographic/cartographic relations
 
 Geography is the “Earth‑interface” class, and its relational tensions arise whenever **description**, **measurement**, **representation**, and **navigation** collide. The matrix below shows how each subsystem generates characteristic tensions. All tensions reduce to a single meta‑tension:
 
