@@ -142,7 +142,7 @@ This is the minimal MFE.
 ## **Finite Chain: Phase‑Graded Flux Ladder**
 
 $$
-\psi_k(j)=\sqrt{\tfrac{2}{N+1}}\sin\Bigl$tfrac{jk\pi}{N+1}\Bigr).
+\psi_k(j)=\sqrt{\tfrac{2}{N+1}}\sin$tfrac{jk\pi}{N+1}).
 $$
 
 - \(k=1$: pure \(M$  
@@ -184,7 +184,7 @@ $$
 ### **E — Evaluation**  
 
 $$
-E_k = \alpha + 2\beta\cos\Bigl$frac{k\pi}{N+1}\Bigr).
+E_k = \alpha + 2\beta\cos$frac{k\pi}{N+1}).
 $$
 
 ### **D — Dynamics**  
