@@ -1,0 +1,72 @@
+Power generation plants
+
+12 distinct models including thermal (coal), nuclear, hydroelectric, natural gas, 
+diesel, solar, wind, biomass, geothermal, tidal, wave, and waste-to-energy facilities.
+
+
+1. THERMAL (COAL)
+   Conversion: chemical energy in coal -> heat -> steam -> turbine -> generator
+   Cycle: Rankine
+   Key vars: calorific value (kJ/kg), steam P/T, boiler efficiency, heat rate (kJ/kWh)
+   Fundamentals: combustion, heat transfer, superheated steam, condenser vacuum
+
+2. NUCLEAR
+   Conversion: fission heat -> steam -> turbine -> generator
+   Cycle: Rankine (PWR/BWR) or Brayton (some advanced)
+   Key vars: enrichment, burnup (GWd/t), thermal power, capacity factor
+   Fundamentals: neutron chain reaction, moderator, control rods, decay heat
+
+3. HYDROELECTRIC
+   Conversion: gravitational PE of water -> kinetic -> turbine -> generator
+   Key vars: head H (m), flow Q (m3/s), density, turbine efficiency
+   Power: P = ρ g Q H η
+   Fundamentals: Bernoulli, impulse vs reaction turbines (Pelton/Francis/Kaplan)
+
+4. NATURAL GAS
+   Conversion: chemical energy -> combustion -> gas turbine (+ steam bottoming)
+   Cycle: Brayton + Rankine (combined cycle)
+   Key vars: LHV, pressure ratio, TIT, heat rate, CCGT efficiency (~55-64%)
+   Fundamentals: compressor work, expansion work, HRSG
+
+5. DIESEL
+   Conversion: chemical energy -> ICE combustion -> crankshaft -> generator
+   Cycle: Diesel (compression ignition)
+   Key vars: compression ratio, specific fuel consumption (g/kWh), load factor
+   Fundamentals: four-stroke, air-fuel ratio, governor speed control
+
+6. SOLAR PV
+   Conversion: photons -> electron-hole pairs -> DC current -> inverter -> AC
+   Key vars: irradiance (W/m2), cell efficiency, fill factor, temperature coeff
+   Fundamentals: photovoltaic effect, I-V curve, MPPT, inverter clipping
+
+7. WIND
+   Conversion: kinetic energy of air -> rotor torque -> generator
+   Power: P = ½ ρ A v³ Cp  (Betz limit Cp ≤ 16/27)
+   Key vars: wind speed v, rotor area A, tip-speed ratio, capacity factor
+   Fundamentals: lift/drag on blades, cut-in / rated / cut-out speeds
+
+8. BIOMASS
+   Conversion: chemical energy in organic matter -> heat/steam or gasification
+   Key vars: moisture content, calorific value, combustion temp, ash content
+   Fundamentals: similar to coal Rankine or syngas + engine/turbine
+
+9. GEOTHERMAL
+   Conversion: Earth's internal heat -> steam or binary fluid -> turbine
+   Types: dry steam, flash, binary (ORC)
+   Key vars: reservoir temp, enthalpy, well flow, brine chemistry
+   Fundamentals: hydrothermal systems, Organic Rankine Cycle for low-T
+
+10. TIDAL
+    Conversion: potential/kinetic energy of tides -> turbine
+    Key vars: tidal range, basin area, flow velocity, cycle period (~12.4 h)
+    Fundamentals: gravitational pull of Moon/Sun, barrage vs stream turbines
+
+11. WAVE
+    Conversion: wave orbital motion / heave / surge -> hydraulic or linear gen
+    Key vars: wave height Hs, period T, power flux (~kW/m of crest)
+    Fundamentals: Airy/Stokes waves, oscillating water column, point absorbers
+
+12. WASTE-TO-ENERGY
+    Conversion: municipal solid waste combustion -> heat -> steam -> turbine
+    Key vars: calorific value of waste, moisture, throughput (t/day)
+    Fundamentals: mass-burn or RDF, flue-gas cleanup, Rankine cycle
