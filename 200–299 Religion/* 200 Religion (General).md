@@ -75,11 +75,7 @@ This is the identity used in global religion projections. Children are usually a
 Populations are projected by age $a$, sex $s$, and religious state $r$. In discrete time (often 5-year steps):
 
 $$
-P_{a+n,s,r}(t+n)
-= P_{a,s,r}(t)\, S_{a,s}(t)\;
-+ \text{migration}_{a,s,r}
-+ \text{switching into } r
-- \text{switching out of } r
+P_{a+n,s,r}(t+n) = P_{a,s,r}(t)\, S_{a,s}(t)\; + \text{migration}_{a,s,r} + \text{switching into } r - \text{switching out of } r
 $$
 
 Fertility of group $r$:
