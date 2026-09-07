@@ -73,7 +73,7 @@ Controls local potential baseline.
 
 ---
 
-# 3. Operator Correspondence (Exact and Non-Ambiguous)
+# 3. Operator Correspondence 
 
 The tight-binding Hamiltonian is
 
