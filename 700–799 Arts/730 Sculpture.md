@@ -1,4 +1,5 @@
 # Sculpture
+- 730 — Sculpture (General Works)
 
 Sculpture is a three‑dimensional art form involving the shaping, forming, or assembling of materials into expressive objects with aesthetic, cultural, or symbolic significance. Unlike two‑dimensional media, sculpture occupies physical space, interacts with light, and invites viewers to move around it, making it an inherently spatial and embodied art.
 
