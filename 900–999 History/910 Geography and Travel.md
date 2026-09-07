@@ -359,10 +359,11 @@ Different scales encode different truths.
 | **Regional Geography** | Regions defined differently at different scales. |
 | **Travel Systems** | Macro itineraries vs. micro logistics. |
 
-**Operator:**  
-\[
+**Operator:** 
+
+$$
 Describe(Earth, s_1) \neq Describe(Earth, s_2)
-\]
+$$
 
 ---
 
@@ -378,9 +379,10 @@ Flattening a sphere introduces distortion.
 | **Travel Systems** | Perceived vs. actual travel distance. |
 
 **Operator:**  
-\[
+
+$$
 Transform(Globe \rightarrow Plane) \rightarrow Loss(shape, area, distance)
-\]
+$$
 
 ---
 
@@ -396,9 +398,10 @@ Human boundaries rarely match physical or cultural ones.
 | **Travel Systems** | Travel routes cross boundaries that maps oversimplify. |
 
 **Operator:**  
-\[
+
+$$
 Partition(Earth) \rightarrow Mismatch(physical, cultural, political)
-\]
+$$
 
 ---
 
@@ -414,9 +417,10 @@ Places have multiple identities.
 | **Travel Systems** | Tourist identity vs. lived identity. |
 
 **Operator:**  
-\[
+
+$$
 Index(Place) \rightarrow Conflict(label, identity)
-\]
+$$
 
 ---
 
@@ -432,9 +436,10 @@ Geography changes; representations lag.
 | **Travel Systems** | Guides become outdated quickly. |
 
 **Operator:**  
-\[
+
+$$
 Dynamics(Earth) \rightarrow Lag(Representation)
-\]
+$$
 
 ---
 
@@ -450,9 +455,10 @@ Measurement vs. evaluation.
 | **Travel Systems** | Ratings vs. personal experience. |
 
 **Operator:**  
-\[
+
+$$
 Measure(Earth) \neq Evaluate(Earth)
-\]
+$$
 
 ---
 
@@ -467,10 +473,11 @@ Knowing vs. moving.
 | **Regional Geography** | Regional knowledge vs. route planning. |
 | **Travel Systems** | Ideal itinerary vs. real constraints. |
 
-**Operator:**  
-\[
+**Operator:** 
+
+$$
 Represent(Earth) \neq Navigate(Earth)
-\]
+$$
 
 ---
 
@@ -486,6 +493,7 @@ Representation is never neutral.
 | **Travel Systems** | Travel narratives shaPower by global power structures. |
 
 **Operator:**  
-\[
+
+$$
 Power(Representation) \rightarrow Bias(Structure)
-\]
+$$
