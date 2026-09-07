@@ -1,0 +1,85 @@
+MULTIMETER USE
+
+1  AC VOLTAGE TEST
+   Test for AC Voltage
+   - Set Dial to V~ (ACV)
+   - Example: 230V AC
+   Probes in wall outlet live/neutral
+
+2  DC VOLTAGE TEST
+   Test for DC Voltage
+   - Set Dial to V= (DCV)
+   - Example: 12.6V DC
+   Probes on battery + and -
+
+3  CONTINUITY TEST
+   Check for Continuity
+   A sound (BEEP) means a completed circuit
+   - Set Dial to the Sound Icon
+   Probes across a resistor or wire
+
+4  PHASE & NEUTRAL IDENTIFY
+   Identify Phase and Neutral Lines
+   - Probe to check Phase (Live) wire
+   - Caution: High Voltage
+   Outlet: L (Phase)  N (Neutral)
+
+5  RESISTANCE TEST
+   Measure Resistance (ohm)
+   - Set Dial to appropriate ohm range
+   - Example: 1000 ohm
+   Probes across resistor (power OFF)
+
+6  DIODE TEST
+   Test Diode Health
+   - Check for Forward Voltage (0.5V - 0.8V)
+   - Reverse probe for check
+   Forward: 0.5V-0.8V   Reverse: OL / open
+
+7  CAPACITOR TEST
+   Test Capacitor Function
+   - Set Dial to F (Capacitance)
+   - Charge / Discharge check
+   Example cap: 47uF 25V
+
+8  FUSE TEST
+   Check Fuse Condition
+   Beep = OK
+   No Beep = Blown
+   Use Continuity Mode
+   Probes on both ends of fuse
+
+9  DC CURRENT TEST
+   Measure DC Current (A)
+   - Set Dial to mA / A (DCA)
+   - Insert Meter in Series
+   - Example: 0.85A
+   Circuit: battery -> meter -> load
+
+IMPORTANT TIPS
+1. Select the Correct Range before probing
+2. Ensure Probe Leads are in the correct sockets (COM, V/ohm/mA, 10A)
+3. Disconnect power for Resistance / Continuity tests
+4. Use Extra Caution with High Voltage (AC)
+5. Turn Off the Meter after use to save battery
+
+SYMBOLS GUIDE
+V~     AC Voltage
+V=     DC Voltage
+A=     DC Current
+ohm    Resistance
+speaker Continuity
+diode  Diode
+||-    Capacitor
+
+FUNDAMENTALS
+- Voltage (V): potential difference. AC alternates, DC is constant polarity
+- Current (A): flow of charge. Always measure in SERIES. Never put current mode across a voltage source
+- Resistance (ohm): opposition to current. Power must be OFF. R = V / I
+- Continuity: very low resistance path. Beep if closed circuit
+- Diode: conducts one way. Forward drop typically 0.5-0.8V for silicon
+- Capacitor: stores charge. Measure capacitance (F, uF, nF) after discharge
+- Fuse: sacrificial low-resistance link. Continuity = good
+- Probe sockets: black always COM. Red in V/ohm/mA for most tests, 10A jack only for high current
+- Range: start high if unsure, then drop range for better resolution
+- Safety: CAT rating on meter, never exceed voltage/current limits, one hand rule on live AC when possible
