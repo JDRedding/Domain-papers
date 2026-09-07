@@ -375,3 +375,85 @@ $$
 These last two formulas model a person’s wager or update. They do not measure how many people belong to a group.
 
 ---
+
+## APPENDIX: Conversion kernel
+: from micro tensions to macro flows
+
+Bridge form:
+
+> “Bridge from household tension to population change:  
+> $\beta_{jq}(\mathrm{Sol},\Delta,\delta)=\beta_0\exp(\eta\,\mathrm{Sol}-\xi\Delta-\zeta\delta)$”  
+
+---
+
+### Baseline: bounded, sigmoidal kernel
+
+Instead of pure exponential, use a **logistic cap** so conversion intensity stays in a realistic range:
+
+$$
+\beta_{jq} = \beta_{\max} \cdot \frac{ \exp( \eta_{\mathrm{Sol}}\mathrm{Sol} -\xi_{\Delta}\Delta -\zeta_{\delta}\delta +\chi_{\mathrm{Acc}}\mathrm{Acc} -\nu_{H}H ) }{ 1+ \exp( \eta_{\mathrm{Sol}}\mathrm{Sol} -\xi_{\Delta}\Delta -\zeta_{\delta}\delta +\chi_{\mathrm{Acc}}\mathrm{Acc} -\nu_{H}H ) }
+$$
+
+- **$\mathrm{Sol}$**: solidarity (family / kin cohesion)  
+- **$\Delta$**: identity gap  
+- **$\delta$**: in‑group favoritism  
+- **$\mathrm{Acc}$**: accommodative communication  
+- **$H$**: in‑group harm from the practice mix  
+
+Interpretation:  
+- High $\mathrm{Sol}$ and $\mathrm{Acc}$ → smoother switching or dual belonging.  
+- High $\Delta,\delta,H$ → frozen boundaries or hostile exits.  
+
+This directly uses your variables from the relational sections (“identity gap”, “accommodative communication”, “meaning vs. harm”).  
+
+> “High solidarity and a small identity gap raise movement or dual belonging. A large gap and strong in-group bias freeze the boundary.”
+
+---
+
+### Dual-belonging vs. hard switching
+
+Let $q$ be the target group, $j$ the origin, and add a **dual-belonging channel**:
+
+$$
+\beta_{jq}^{\text{hard}}= \beta_{jq}\cdot (1-\pi_{\text{dual}}), \qquad \beta_{jq}^{\text{dual}}= \beta_{jq}\cdot \pi_{\text{dual}}
+$$
+
+with
+
+$$
+\pi_{\text{dual}} = \frac{ \exp( \chi_{\mathrm{Acc}}\mathrm{Acc} -\xi_{\Delta}\Delta ) }{ 1+ \exp( \chi_{\mathrm{Acc}}\mathrm{Acc} -\xi_{\Delta}\Delta ) }
+$$
+
+- High accommodation + low identity gap → more **dual belonging** than hard conversion.  
+- Low accommodation + high gap → mostly hard exits or no movement.
+
+You can then split your macro equation:
+
+$$
+\dot P_q = \text{births/deaths} + \sum_j ( \beta_{jq}^{\text{hard}}P_jP_q + \beta_{jq}^{\text{dual}}P_jY_q - \beta_{qj}^{\text{hard}}P_qP_j )
+$$
+
+where $Y_q$ is a dual‑belonging compartment.
+
+---
+
+### Conflict‑weighted kernel
+
+To encode **repair vs. rupture**, define a conflict index:
+
+$$
+\mathrm{Conf}_{jq} = \alpha_{\Delta}\Delta + \alpha_{\delta}\delta + \alpha_{H}H - \alpha_{\mathrm{Acc}}\mathrm{Acc} - \alpha_{\mathrm{Sol}}\mathrm{Sol}
+$$
+
+Then:
+
+$$
+\beta_{jq} = \beta_0 \exp\bigl(-\rho_{\mathrm{Conf}}\mathrm{Conf}_{jq}\bigr)
+$$
+
+- If repair structures (solidarity, accommodation) dominate, $\mathrm{Conf}_{jq}<0$ and $\beta_{jq}$ rises.  
+- If harm, favoritism, and identity gaps dominate, $\mathrm{Conf}_{jq}>0$ and $\beta_{jq}$ falls.
+
+This keeps the **relational story**: religion “concentrates what people owe each other,” and the kernel is literally a function of how well those obligations are negotiated.
+
+---
