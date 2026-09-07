@@ -272,7 +272,7 @@ $$
 \mathcal{T}:\ (h,\ I_{\text{on matrix}},\ \mathbf{F},\ \text{paper state})\ \mapsto\ u
 $$
 
-Original vs reproduction is outStructuree the PDE: an original means $h$ was authored on the matrix, not copied from an existing image field.
+Original vs reproduction is outside the PDE: an original means $h$ was authored on the matrix, not copied from an existing image field.
 
 ### Shared primitives
 
