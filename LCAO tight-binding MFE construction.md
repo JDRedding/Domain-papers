@@ -1,435 +1,249 @@
 # LCAO Tight-Binding MFE Construction
-
 **Momentum–Flux Engine interpertations** 
 
-The standard LCAO / tight-binding construction is algebraically identical to a bidirectional, phase-graded flux engine whose eigenmodes are exactly the $M, M', F, F'$ quartet. This is a momentum-exchange operator whose eigenmodes *are* the MFE’s $M, M', F, F'$ flux modes. The LCAO construction is therefore a direct physical realization of the Momentum–Flux Engine.
+---
 
-**RDG(SID) = (lattice geometry $S$, hopping operator $I$, eigenmode field $D$)**  
-**PED(MFE) = (coupling power $P$, band energy $E$, flux mode $D$)**
+## **A unified RDG(SID) → PED(MFE) operator construction**
 
-PED side:
+The standard LCAO / tight‑binding model is algebraically identical to a **bidirectional, phase‑graded flux engine** whose eigenmodes form the four canonical momentum–flux modes  
+\[
+M,\; M',\; F,\; F'.
+\]  
+This is not merely an analogy: the tight‑binding Hamiltonian is the **same operator archetype** as the Momentum–Flux Engine (MFE). The LCAO construction is therefore a **direct physical realization** of the MFE.
 
-- **P** = coupling strength ($\beta$)
-- **E** = band energy ($E_k$)
-- **D** = flux-mode ($\psi_k$)
+---
 
-The tight-binding Hamiltonian is the **I** operator.  
-Its eigenmodes are the **D** field.  
-Its geometry is the **S** manifold.
+# **1. RDG(SID) → PED(MFE) Mapping**
 
-Thus the LCAO / tight-binding chain is a **canonical RDG → PED mapping**. The mapping is:
+### **RDG(SID)**  
+- **S — Structure:** the lattice geometry  
+- **I — Interaction:** the hopping operator  
+- **D — Dynamics:** the eigenmode field  
+
+### **PED(MFE)**  
+- **P — Power:** coupling strengths  
+- **E — Evaluation:** mode energies  
+- **D — Dynamics:** flux modes  
+
+The mapping is:
 
 | RDG(SID) | Meaning | PED(MFE) |
 |---------|---------|-----------|
 | **S** | lattice geometry | domain of flux |
-| **I** | hopping operator | momentum–flux engine |
-| **D** | eigenmode field | flux mode ($M, M', F, F'$) |
+| **I** | hopping operator | flux generator |
+| **D** | eigenmode field | flux mode (\(M,M',F,F'\)) |
 
 Thus:
 
-$$
-\text{RDG(SID)} \xrightarrow{\text{operator}} \text{MFE(PED)}
-$$
+\[
+\text{RDG(SID)} \xrightarrow{\text{operator}} \text{MFE(PED)}.
+\]
 
-The **SID triad generates the PED triad**:
+The SID triad **generates** the PED triad:
 
-- **Structure ($S$)** determines the allowed flux pathways.
-- **Interaction ($I$)** determines the flux coupling strength and phase relations.
-- **Dynamics ($D$)** determines the actual flux mode ($M, M', F, F'$).
+- **Structure** determines allowed flux pathways.  
+- **Interaction** determines coupling strength and phase relations.  
+- **Dynamics** determines the actual flux mode.
 
-This is why the tight-binding chain *is* the MFE:  
-the operator archetype is identical.
+---
 
-## Operator Identity
+# **2. Two‑Power PED Convention**
 
-The tight-binding Hamiltonian is the MFE operator:
+To avoid ambiguity, we distinguish two forms of PED Power:
 
-$$
-H = \alpha I + \beta(T + T^\dagger)
-$$
+### **Flux Power (hopping strength)**  
+\[
+P_{\text{hopping}} \equiv \beta.
+\]  
+Controls flux strength, band width, and propagation speed.
 
-and the MFE operator is:
+### **Local Power (on‑site term)**  
+\[
+P_{\text{on-site}} \equiv \alpha.
+\]  
+Controls local potential energy and baseline evaluation.
 
-$$
-\mathcal{MFE} = P\cdot I + Q\cdot (T + T^\dagger)
-$$
+This resolves the α↔β conflict and makes the operator identity exact.
 
-with $P \leftrightarrow \alpha$, $Q \leftrightarrow \beta$.
+---
+
+# **3. Operator Identity (Revised and Exact)**
+
+The tight‑binding Hamiltonian is:
+
+\[
+H = P_{\text{on-site}}\, I + P_{\text{hopping}}\, (T + T^\dagger),
+\]
+
+where  
+\[
+(T\psi)(j)=\psi(j-1),\qquad (T^\dagger\psi)(j)=\psi(j+1).
+\]
+
+The MFE operator is:
+
+\[
+\mathcal{MFE} = P_{\text{on-site}}\, I + P_{\text{hopping}}\, (T + T^\dagger).
+\]
+
+Thus:
+
+- \(T\) = forward flux channel → \(M, M'\)  
+- \(T^\dagger\) = backward flux channel → \(F, F'\)
 
 The eigenmodes of both operators are:
 
-- in-phase forward → $M$
-- out-of-phase forward → $M'$
-- in-phase backward → $F$
-- out-of-phase backward → $F'$
+- in‑phase forward → **M**  
+- out‑of‑phase forward → **M′**  
+- in‑phase backward → **F**  
+- out‑of‑phase backward → **F′**
 
 The algebra is identical.
 
-## LCAO Tight-Binding as a Momentum–Flux Engine
-
-### Flux Operator
-
-$$
-H=\alpha I+\beta(T+T^\dagger),\qquad (T\psi)(j)=\psi(j-1).
-$$
-
-This operator generates forward and backward flux, exactly as in the MFE.
-
-### Two-Site Bipolar Modes
-
-$$
-\psi_+=\tfrac{1}{\sqrt{2}}(\phi_A+\phi_B)\;\leftrightarrow\;M,
-\qquad
-\psi_-=\tfrac{1}{\sqrt{2}}(\phi_A-\phi_B)\;\leftrightarrow\;M'.
-$$
-
-Reversing direction yields $F, F'$.
-
-### Finite Chain Modes
-
-$$
-\psi_k(j)=\sqrt{\tfrac{2}{N+1}}\sin\Bigl(\tfrac{jk\pi}{N+1}\Bigr)
-$$
-
-These are the full phase-graded flux modes:
-
-- $k=1$: pure $M$
-- $k=N$: pure $M'$
-- intermediate $k$: mixed $M/M'$ (and $F/F'$)
-
-### Infinite Chain (Bloch Limit)
-
-$$
-\psi_k(x)=e^{ikx}u_k(x)
-$$
-
-- $k=0$: pure $M$
-- $k=\pi/a$: pure $M'$
-- continuous interpolation between them
-- negative $k$: backward flux → $F, F'$
-
 ---
 
-## LCAO Tight-Binding as a 4-Mode Momentum–Flux Engine
+# **4. LCAO Tight‑Binding as a Flux Engine**
 
-The tight-binding Hamiltonian
+## **Two‑Site Bipolar Modes**
 
-$$
-H=\alpha I+\beta(T+T^\dagger)
-$$
+For two sites \(A,B\):
 
-is a **bidirectional flux operator**.  
-It pushes amplitude one site left or right:
-
-$$
-(T\psi)(j)=\psi(j-1),\qquad (T^\dagger\psi)(j)=\psi(j+1).
-$$
-
-This is exactly the MFE’s **momentum–flux generator**:
-
-- $T$ = forward flux channel
-- $T^\dagger$ = backward flux channel
-
-The eigenmodes of $H$ are therefore the eigenmodes of a **two-channel flux engine**, which is precisely the $M, M', F, F'$ quartet.
-
----
-
-## Two-Site Case = Pure Bipolar Engine
-
-For two sites $A, B$, the Hamiltonian is
-
-$$
+\[
 H=\begin{pmatrix}
 \alpha & \beta\\
 \beta & \alpha
 \end{pmatrix}.
-$$
+\]
 
-Its eigenvectors are
+Eigenvectors:
 
-$$
-\psi_+=\frac{1}{\sqrt{2}}(\phi_A+\phi_B),\qquad
-\psi_-=\frac{1}{\sqrt{2}}(\phi_A-\phi_B).
-$$
+\[
+\psi_+ = \tfrac{1}{\sqrt{2}}(\phi_A+\phi_B),\qquad
+\psi_- = \tfrac{1}{\sqrt{2}}(\phi_A-\phi_B).
+\]
 
-Interpretation in MFE language:
+Interpretation:
 
-- **$\psi_+$** = in-phase → **forward momentum mode $M$**
-- **$\psi_-$** = out-of-phase → **counter-momentum mode $M'$**
+- \(\psi_+\): in‑phase → **M**  
+- \(\psi_-\): out‑of‑phase → **M′**  
+- reversing direction → **F, F′**
 
-Reverse the direction (swap $A \leftrightarrow B$) and you obtain the **backward flux pair $F, F'$**.
-
-Thus the two-site LCAO picture *is* the minimal MFE.
-
----
-
-## Finite Chain = Full Phase-Graded Flux Ladder
-
-The Hückel eigenfunctions
-
-$$
-\psi_k(j)=\sqrt{\frac{2}{N+1}}\sin\Bigl(\frac{jk\pi}{N+1}\Bigr)
-$$
-
-are the complete set of **phase-graded flux modes**.
-
-- $k=1$: fully in-phase → **pure $M$**
-- $k=N$: alternating signs → **pure $M'$**
-- intermediate $k$: partial phase gradients → **mixed $M/M'$**
-
-Because the operator is bidirectional, each mode also has a backward counterpart → **mixed $F/F'$**.
-
-This is exactly the MFE’s graded momentum–countermomentum and flux–counterflux spectrum.
+This is the minimal MFE.
 
 ---
 
-## Infinite Chain = Continuous Flux Field
+## **Finite Chain: Phase‑Graded Flux Ladder**
 
-The Bloch waves
+\[
+\psi_k(j)=\sqrt{\tfrac{2}{N+1}}\sin\Bigl(\tfrac{jk\pi}{N+1}\Bigr).
+\]
 
-$$
-\psi_k(x)=e^{ikx}u_k(x)
-$$
+- \(k=1\): pure \(M\)  
+- \(k=N\): pure \(M'\)  
+- intermediate \(k\): mixed \(M/M'\)  
+- backward counterparts: mixed \(F/F'\)
 
-are the continuum limit of the same flux engine.
-
-- $k=0$ → pure $M$
-- $k=\pi/a$ → pure $M'$
-- $0<k<\pi/a$ → continuous interpolation between $M$ and $M'$
-
-The backward flux pair $F, F'$ is encoded in the negative-$k$ sector.
-
-Thus the Bloch band is the **continuous MFE flux field**.
+This is the full graded momentum–countermomentum spectrum.
 
 ---
 
-## Momentum–Flux Engine (PED)
+## **Infinite Chain: Continuous Flux Field**
 
-The **Momentum–Flux Engine (MFE)** is the **PED-side field triad** that expresses how a structural system (RDG/SID) produces *momentum-like persistence*, *flux-like transfer*, and *phase-graded propagation* across its carrier. It is the **effects-language** that emerges *after* a relational substrate exists.
+Bloch waves:
 
-In PED terms:
+\[
+\psi_k(x)=e^{ikx}u_k(x).
+\]
 
-- **P — Power**  
-  The coupling strength that drives flux between adjacent sites.  
-  In tight-binding this is the hopping integral **$\beta$**.  
-  In MFE this is the **momentum-exchange power** that determines how strongly one compartment pushes into the next.
+- \(k=0\): pure \(M\)  
+- \(k=\pi/a\): pure \(M'\)  
+- \(0<k<\pi/a\): continuous interpolation  
+- negative \(k\): backward flux → \(F, F'\)
 
-- **E — Evaluation**  
-  The energy or cost associated with a given flux mode.  
-  In tight-binding this is the band energy  
-  $$
-  E_k = \alpha + 2\beta\cos\Bigl(\frac{k\pi}{N+1}\Bigr).
-  $$  
-  In MFE this is the **evaluation functional** that scores how stable, stiff, or latent a flux pattern is.
-
-- **D — Dynamics**  
-  The actual flux mode — the phase-graded field that propagates across the structure.  
-  In tight-binding this is the eigenvector  
-  $$
-  \psi_k(j).
-  $$  
-  In MFE this is the **momentum–flux field**, decomposed into the four canonical modes:
-  - **M** — forward, in-phase
-  - **M′** — forward, out-of-phase
-  - **F** — backward, in-phase
-  - **F′** — backward, out-of-phase
-
-These four modes are the **PED-side decomposition** of the flux operator.
+The Bloch band is the continuous MFE flux field.
 
 ---
 
-### 1. PED Power ($P$)
+# **5. Momentum–Flux Engine (PED)**
 
-Power is the **strength of coupling** between adjacent sites or compartments.
+The MFE is the PED‑side triad describing flux behavior:
 
-In tight-binding:
+### **P — Power**  
+\[
+P_{\text{hopping}}=\beta,\qquad P_{\text{on-site}}=\alpha.
+\]
 
-$$
-P \equiv \beta.
-$$
+### **E — Evaluation**  
+\[
+E_k = \alpha + 2\beta\cos\Bigl(\frac{k\pi}{N+1}\Bigr).
+\]
 
-In MFE:
+### **D — Dynamics**  
+\[
+D = \{M, M', F, F'\}.
+\]
 
-- $P$ determines how strongly momentum is transferred.
-- Larger $P$ → stronger flux, larger band width, faster propagation.
-- Smaller $P$ → weaker flux, narrower band, slower propagation.
+Modes:
 
-This is the **engine’s throttle**.
+- **M** — forward, in‑phase  
+- **M′** — forward, out‑of‑phase  
+- **F** — backward, in‑phase  
+- **F′** — backward, out‑of‑phase  
 
----
-
-### 2. PED Evaluation ($E$)
-
-Evaluation is the **scalar measure** of how costly or stable a flux mode is.
-
-In tight-binding:
-
-$$
-E_k = \alpha + 2\beta\cos(\theta_k)
-$$
-
-with $\theta_k = k\pi/(N+1)$.
-
-In MFE:
-
-- $E$ measures **stiffness**, **latency**, **resonance**, or **momentum retention**.
-- In-phase modes ($M, F$) have lower evaluation.
-- Out-of-phase modes ($M', F'$) have higher evaluation.
-
-This is the **engine’s scoring function**.
+These form the complete PED flux basis.
 
 ---
 
-### 3. PED Dynamics ($D$)
+# **6. RDG(SID) LCAO Construction**
 
-Dynamics is the **actual flux field** that propagates across the structure.
+### **S — Structure**  
+Discrete lattice:
 
-In tight-binding:
+\[
+S = \{1,\dots,N\},\qquad \phi_j(\mathbf r).
+\]
 
-$$
-D \equiv \psi_k(j).
-$$
+Infinite limit:
 
-In MFE:
+\[
+S\to\mathbb{Z},\quad S\to\mathbb{R}/a\mathbb{Z}.
+\]
 
-$$
-D = \{M, M', F, F'\}
-$$
+### **I — Interaction**  
+Nearest‑neighbor hopping:
 
-These are the **canonical flux modes**:
+\[
+I = P_{\text{hopping}}(T+T^\dagger).
+\]
 
-#### M — forward, in-phase
+### **D — Dynamics**  
+Eigenmode field:
 
-Constructive flux.  
-Bonding-like.  
-Lowest evaluation.
+\[
+D = \psi_k(j).
+\]
 
-#### M′ — forward, out-of-phase
-
-Destructive flux.  
-Antibonding-like.  
-Highest evaluation.
-
-#### F — backward, in-phase
-
-Reverse constructive flux.
-
-#### F′ — backward, out-of-phase
-
-Reverse destructive flux.
-
-Together they form the **complete PED flux basis**.
+Finite chain → sine modes.  
+Infinite chain → Bloch waves.
 
 ---
 
-## Why the Tight-Binding Chain *Is* the MFE(PED)
+# **7. Why Tight‑Binding *Is* the MFE**
 
-Because the tight-binding Hamiltonian
+Because the operator identity is exact:
 
-$$
-H = \alpha I + \beta(T + T^\dagger)
-$$
-
-is exactly the **PED flux operator**:
-
-- $T$ = forward flux channel → $M, M'$
-- $T^\dagger$ = backward flux channel → $F, F'$
-
-Its eigenmodes are the **PED flux modes**.  
-Its eigenvalues are the **PED evaluations**.  
-Its coupling $\beta$ is the **PED power**.
+\[
+H = \mathcal{MFE}.
+\]
 
 Thus:
 
-$$
-\text{Tight-binding LCAO} \equiv \text{MFE(PED)}.
-$$
+- same flux channels  
+- same power parameters  
+- same evaluation spectrum  
+- same dynamic modes  
 
----
-
-# RDG(SID) LCAO Tight-Binding Construction
-
-## S — Structure
-
-**$S$ = the discrete 1-D lattice of sites**
-
-$$
-S = \{ j \in \mathbb{Z} \mid 1 \le j \le N \}
-$$
-
-Each site carries a localized orbital:
-
-$$
-\phi_j(\mathbf r)
-$$
-
-This is the **RDG structural manifold**: a chain, ring, or periodic lattice.
-
-In the infinite limit:
-
-$$
-S \to \mathbb{Z} \quad\text{or}\quad S \to \mathbb{R}/a\mathbb{Z}
-$$
-
-This is the **geometry** that the MFE acts on.
-
----
-
-## I — Interaction
-
-**$I$ = nearest-neighbor hopping operator**
-
-$$
-I = \beta(T + T^\dagger)
-$$
-
-where
-
-$$
-(T\psi)(j)=\psi(j-1),\qquad (T^\dagger\psi)(j)=\psi(j+1)
-$$
-
-This is the **RDG interaction hinge**:
-
-- It defines **how** sites exchange amplitude.
-- It is the **flux generator**.
-- It is the exact operator that produces the MFE’s $M, M', F, F'$ modes.
-
-In RDG terms:
-
-$$
-I : S \to S \quad\text{with phase-graded coupling}
-$$
-
-This is the **engine** that creates the PED flux modes.
-
----
-
-## D — Dynamics
-
-**$D$ = the eigenmode field over the structure**
-
-$$
-D = \psi_k(j)
-$$
-
-For finite chains:
-
-$$
-\psi_k(j)=\sqrt{\frac{2}{N+1}}\sin\Bigl(\frac{jk\pi}{N+1}\Bigr)
-$$
-
-For infinite periodic chains:
-
-$$
-\psi_k(x)=e^{ikx}u_k(x)
-$$
-
-This is the **RDG dynamic field**:
-
-- It is the evolving amplitude distribution over the structure.
-- It is the discrete or continuous flux wave.
-- It is the exact same object that becomes the PED-side flux mode.
+The LCAO tight‑binding chain is a **canonical RDG→PED realization** of the Momentum–Flux Engine.
 
 ---
 
@@ -437,6 +251,7 @@ This is the **RDG dynamic field**:
 
 - **The continuum limit operator $\Gamma$**
 - Flux diagram: **diagrams of the flux channels**
+- RDG↔PED operator flowchart  
 
 ## Further Reading and References
 
