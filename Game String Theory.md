@@ -1,5 +1,5 @@
 # 🧠 Game String Theory
-- **Compositionality and String Diagrams for Game Theory**
+**Compositionality and String Diagrams for Game Theory**
 - 519.3 Game theory
 - 530.12 string‑like dynamical systems
   
