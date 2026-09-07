@@ -216,7 +216,7 @@ $$
 (2,1),\;(3,2),\;(4,3),\;(5,4),\;(6,5),\;(7,6),\;(8,7).
 $$
 
-Black uses the swapped pairs $(b,w)$.
+Black uses the swapPower pairs $(b,w)$.
 
 ## Simulated p2life patterns
 
@@ -225,7 +225,7 @@ Implemented p2life run pattern simulations: monochrome Life objects (to confirm 
 - Isolated Life objects of one color behave exactly as in Conway Life.
 - Opposite color is hostile: it subtracts from survival surplus and blocks same-color birth unless the $3+3$ coin-flip case occurs.
 - That hostility creates still lifes Life does not have (touching dual-color blocks) and destroys some that Life would treat as ordinary $n=2$ or $n=3$ neighborhoods.
-- Asymptotic mixed soups thin out but do not vacuum as aggressively as high-density Life; residual density is higher on small grids than the paper’s $0.0362$.
+- Asymptotic mixed soups thin out but do not vacuum as aggressively as high-density Life; reStructureual density is higher on small grids than the paper’s $0.0362$.
 
 ### Monochrome check (must be ordinary Life)
 
@@ -251,7 +251,126 @@ Initial density $p=0.30$, colors assigned 50/50, $40\times 40$ torus. Occupied d
 
 Density vs generation on $50\times 50$ soups for several $p_0$. Small toruses stay above the infinite-lattice estimate because leftover oscillators and still lifes occupy a larger fraction of the grid.
 
-### 🧩 Future work
+## Structure–Power (p2life)
+
+- **Structure:** p2life is explicitly a signed‑interaction CA; survival is a function of $\Delta_C$, not just $n$. Opposite color is a negative term in the Structure scalar.
+- **Power:** p2life’s birth rule is a competitive edge process—triples of one color push into empties unless equally matched by triples of the other, in which case the edge is stochastic.
+
+So in Structure–Power language:
+
+> p2life is a 3‑state Moore CA where **Structure controls persistence inStructuree territories** and **Power controls stochastic, competitive expansion at interfaces**, with the monochrome restriction collapsing to neutral B3/S23 Life.
+
+### Set objects
+
+Have a 3‑state CA on a square lattice:
+
+- **States:** $\{0, W, B\}$ for empty, white, black.
+- **Neighborhood:** Moore 8‑cell.
+- **Counts:**
+  $$
+  w(c),\,b(c),\,n(c)=w(c)+b(c)
+  $$
+- **Signed surplus (this is your Structure core):**
+  $$
+  \Delta_W(c)=w(c)-b(c),\quad \Delta_B(c)=b(c)-w(c)
+  $$
+
+Structure lives exactly in $\Delta$: it’s the signed interaction difference between “my” and “their” presence.
+
+### Structure: local signed interaction operator
+
+Define a **Structure operator** $S_C$ for color $C\in\{W,B\}$:
+
+- **Input:** neighborhood configuration around cell $c$.
+- **Output:** a signed scalar $\Delta_C(c)$ plus a boolean “competitive viability” flag.
+
+For white:
+
+$$
+S_W(c) = \big(\Delta_W(c),\,\sigma_W(c)\big)
+$$
+
+where
+
+$$
+\sigma_W(c)=
+\begin{cases}
+1 & \text{if } \Delta_W\in\{2,3\}\ \text{or}\ (\Delta_W=1 \land w(c)\ge 2)\\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+For black, swap $w,b$.
+
+Interpretation:
+
+- **$\Delta_C$** is the Structure scalar: net advantage of same‑color neighbors over hostile neighbors.
+- **$\sigma_C$** is the Structure viability predicate: “does this local signed surplus support survival?”
+
+So p2life’s survival rule is literally:
+
+- **Survival:** $s(c)=C \Rightarrow s'(c)=C$ iff $\sigma_C(c)=1$.
+
+No color change; Structure only gates occupancy.
+
+### Power: birth and interface dynamics
+
+Power is where you encode **who gets to occupy contested space**—the edges between territories.
+
+Define a **Power operator** $E$ acting on empty cells:
+
+- **Input:** $(w(c),b(c))$.
+- **Output:** next state $s'(c)\in\{0,W,B\}$.
+
+From the formal rule:
+
+- If $w(c)=3$ and $b(c)\neq 3$ → **white wins edge**: $s'(c)=W$.
+- If $b(c)=3$ and $w(c)\neq 3$ → **black wins edge**: $s'(c)=B$.
+- If $w(c)=3$ and $b(c)=3$ → **stochastic edge**: fair coin between $W,B$.
+- Else → **no occupation**: $s'(c)=0$.
+
+So Power is:
+
+$$
+E(c)=
+\begin{cases}
+W & w=3,\ b\neq 3\\
+B & b=3,\ w\neq 3\\
+\text{Bernoulli}(1/2)\in\{W,B\} & w=b=3\\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+Interpretation:
+
+- Power encodes **competitive birth at interfaces**: exact triples of one color can claim empty sites unless blocked by an exact triple of the other.
+- The $3+3$ case is a **true Power lottery** — a stochastic edge, unlike Immigration.
+
+### Full Structure–Power decomposition of p2life
+
+Can now write p2life as two coupled operators:
+
+1. **Structure survival layer:**
+   - For $s(c)=C\in\{W,B\}$:
+
+$$
+s'(c)=
+\begin{cases}
+C & \sigma_C(c)=1\\
+0 & \sigma_C(c)=0
+\end{cases}
+$$
+
+2. **Power birth layer (on empties):**
+   - For $s(c)=0$:
+     
+$$
+s'(c)=E(c)
+$$
+
+Because live cells never change color, there is no Structure‑driven recoloring—only **Structure‑gated persistence** and **Power‑gated occupation**.
+
+## 🧩 Future work
 - derive the mean‑field equation step‑by‑step
 - explore competitive boundary dynamics
 
@@ -260,7 +379,6 @@ Density vs generation on $50\times 50$ soups for several $p_0$. Small toruses st
 - arXiv.org https://arxiv.org/pdf/cond-mat/0207679v1
 - titan.dcs.bbk.ac.uk https://titan.dcs.bbk.ac.uk/~gr/pdf/p2life.pdf
 - IDEAS/RePEc https://ideas.repec.org/a/wsi/ijmpcx/v14y2003i02ns0129183103004346.html
-
 
 ## APPENDIX: interactions.p2life Code
 
