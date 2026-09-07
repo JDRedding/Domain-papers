@@ -8,6 +8,8 @@ Relational tensions within religious mythology refer to the patterns of conflict
 
 Religious mythology refers to the collection of myths—stories that often intertwine gods, supernatural beings, and humans—that serve to explain the creation of the universe, the nature of life and death, and the moral order of society. These myths provide meaning, reinforce cultural norms, and offer guidance on spiritual and ethical living.
 
+Studying religious mythology comparatively reveals similarities between traditions, showing common human concerns despite cultural differences. For instance, flood myths are widespread, and many creation myths depict a primordial chaos or cosmic egg, highlighting the universal quest to explain existence.
+
 ## Major Types and Themes
 
 While variations exist across cultures and religious traditions, certain core themes recur:
@@ -21,10 +23,6 @@ While variations exist across cultures and religious traditions, certain core th
 ## Cultural and Psychological Significance
 
 Religious myths go beyond simple storytelling; they shape rituals, art, and literature and embody cultural values. From a psychological perspective, Carl Jung suggested that myths express universal archetypes, reflecting shared human experiences and unconscious desires. Indigenous and folk religions around the world also use mythic narratives to explain natural phenomena, social structures, and spiritual relationships with the environment.
-
-## Comparative Perspective
-
-Studying religious mythology comparatively reveals similarities between traditions, showing common human concerns despite cultural differences. For instance, flood myths are widespread, and many creation myths depict a primordial chaos or cosmic egg, highlighting the universal quest to explain existence.
 
 ## Relational Tensions
 
