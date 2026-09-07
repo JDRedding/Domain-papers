@@ -1,6 +1,8 @@
 # LCAO tight-binding MFE construction
 **Momentum-Flux engine interpertations**
 
+The standard LCAO/tight‑binding construction is algebraically identical to a bidirectional, phase‑graded flux engine whose eigenmodes are exactly the $M,M',F,F'$ quartet. This a momentum‑exchange operator whose eigenmodes *are* the MFE’s $M,M',F,F'$ flux modes. The LCAO construction is therefore a direct physical realization of the Momentum–Flux Engine. 
+
 ## **Operator Identity**  
 The tight‑binding Hamiltonian is the MFE operator:
 
@@ -26,7 +28,6 @@ The eigenmodes of both operators are:
 The algebra is identical.
 
 ## **LCAO Tight‑Binding as a Momentum–Flux Engine**
-The standard LCAO/tight‑binding construction is algebraically identical to a bidirectional, phase‑graded flux engine whose eigenmodes are exactly the $M,M',F,F'$ quartet. This a momentum‑exchange operator whose eigenmodes *are* the MFE’s $M,M',F,F'$ flux modes. The LCAO construction is therefore a direct physical realization of the Momentum–Flux Engine. 
 
 ### **Flux Operator**
 
