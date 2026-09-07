@@ -43,7 +43,7 @@ The four main families are relief, intaglio, planographic (lithography), and ste
 ### Relief Processes
 Ink sits on the raised surface after non-image areas are cut away. Woodcut is the oldest form (East Asia from the 8th–9th century; Europe in the 15th). Color work uses separate blocks and precise registration. Linocut, popularized in the 20th century, carves more easily and produces bold graphic shapes; Picasso used it extensively. Wood engraving works the end-grain for finer line.
 
-RELIEF (R1)
+RELIEF (R1)  
 Matrix: plank wood, end‑grain wood, linoleum, soft metal, cardboard  
 Ink location: raised areas only  
 Look: bold contrast, wood‑grain possible  
@@ -60,7 +60,7 @@ Types:
 ### Intaglio Processes
 Ink is forced into recessed lines or tones on a metal plate, the surface is wiped clean, and damp paper is pressed under high pressure so it picks up the ink. Techniques include engraving (burin), etching (acid through a ground), drypoint (direct scratch that leaves a velvety burr), mezzotint (rocked plate then burnished for tone), and aquatint (rosin for wash-like areas). Editions from drypoint stay small because the burr wears quickly.
 
-INTAGLIO (R2)
+INTAGLIO (R2)  
 Matrix: copper, zinc, brass  
 Ink location: below surface; plate wiped  
 Press: high pressure; damp paper  
@@ -79,7 +79,7 @@ Types:
 ### Planographic Processes (Lithography)
 The surface stays flat. Grease-based drawing materials attract ink; water-dampened areas repel it. Traditional limestone or prepared metal plates allow drawing-like marks. Color lithographs use multiple plates and registration. Picasso, Chagall, and Hockney all worked extensively in the medium.
 
-PLANOGRAPHIC (R3) — LITHOGRAPHY
+PLANOGRAPHIC (R3) — LITHOGRAPHY  
 Matrix: limestone or treated metal plate  
 Principle: grease attracts ink; water repels  
 Ink location: greasy drawn areas  
