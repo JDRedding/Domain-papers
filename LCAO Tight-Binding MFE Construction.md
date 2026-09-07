@@ -298,9 +298,9 @@ is exact **because both operators are written on the same structural template** 
 - [Linear Combination of Atomic Orbitals (LCAO) tight-binding model](https://www.bing.com/copilotsearch?q=LCAO%2Ftight-binding%20construction&pq=&FORM=)
 - Ashcroft & Mermin, *Solid State Physics*, Chs. 8 and 10.
 - Harrison, *Electronic Structure and the Properties of Solids*.
-- Hückel method: linear-chain and two-site formulas
-- Bloch’s theorem: any condensed-matter introduction.
-- Chemistry LibreTexts, “Hückel MO Model of Conjugation.” 
+- [Hückel method: linear-chain and two-site formulas](https://www.chemeurope.com/en/encyclopedia/H%C3%BCckel+method.html)
+- [Bloch’s theorem: condensed-matter](https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Chemical_Group_Theory_(Miller)/05%3A_Blochs_Theorem/5.01%3A_Introduction_to_Blochs_Theorem)
+- Chemistry LibreTexts, “[Hückel MO Model of Conjugation](https://chem.libretexts.org/Courses/University_of_Wisconsin_Oshkosh/Chem_370%3A_Physical_Chemistry_1_-_Thermodynamics_(Gutow)/09%3A_Molecular_Quantum_Mechanics/9.06%3A_Huckel_MO_Model_of_Conjugation).” 
 - A. N. et al., “The Green’s function for the Hückel (tight binding) model,” *J. Math. Phys.* **58**, 033505 (2017).
 - C. J. Lambert, *Quantum Transport in Nanostructures and Molecules*, Ch. 4.
 
