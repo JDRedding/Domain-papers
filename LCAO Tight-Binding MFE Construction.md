@@ -290,6 +290,9 @@ is exact **because both operators are written on the same structural template** 
 - **The continuum limit operator $\Gamma$**
 - Flux diagram: **diagrams of the flux channels**
 - RDG ↔ PED operator flowchart
+- MFE tight-binding molecular dynamics
+- MFE ab initio parameter extraction
+- MFE topological band calculations
 
 ## Further Reading and References
 
