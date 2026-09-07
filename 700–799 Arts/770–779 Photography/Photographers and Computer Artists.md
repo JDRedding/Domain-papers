@@ -7,7 +7,7 @@ Photography has produced some of the most influential artists in history, while 
 - **Cindy Sherman** — American conceptual artist and photographer, known for her self-portraits exploring identity, representation, and media imagery. Her work is iconic in contemporary art and has appeared on lists of the most expensive photographs ever sold. http://cindysherman.com/
 - **Ansel Adams** — Legendary American landscape photographer, famous for his black-and-white images of the American West, especially Yosemite. He co-founded Group f/64 and developed the “zone system” for photographic exposure. https://www.anseladams.com/
 - **Dorothea Lange** — Renowned for her powerful documentary photography, especially during the Great Depression, capturing the human condition with empathy and clarity. https://www.dorothea-lange.com/
-- **Henri Cartier-Bresson** — French photographer celebrated for his “decisive moment” philosophy, influencing generations of photojournalists.
+- **Henri Cartier-Bresson** — French photographer celebrated for his “decisive moment” philosophy, influencing generations of photojournalists. https://www.henricartierbresson.org/en/
 - **Steve McCurry** — Known for his striking portrait of “Afghan Girl,” which became a global symbol of humanitarian awareness.
 
 ## Computer Art Artists
