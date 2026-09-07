@@ -274,7 +274,7 @@ $$
 
 Original vs reproduction is outStructuree the PDE: an original means $h$ was authored on the matrix, not copied from an existing image field.
 
-## Shared primitives
+### Shared primitives
 
 Ink location operator (where ink is allowed to live on the matrix):
 
