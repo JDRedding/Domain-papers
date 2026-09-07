@@ -119,6 +119,64 @@ $$
 
 Where $\alpha,\beta,\gamma,\delta$ are empirically tuned weights.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The vector model is a clean way to treat a dry blend as a point on the simplex. The leaked 2016 “11 spices + 2 cups flour” list (Joe Ledington / Chicago Tribune scrapbook) is the most widely tested candidate for the original KFC coating spices. KFC itself denies it is exact; testers have repeatedly said it comes close once a little MSG is added. If want a higher-dimensional $\mathbf{S}$ you can simply append the missing coordinates (mustard, celery salt, plain salt) and keep the same inner-product form for $L$, or replace the linear score with a cosine similarity against the reference vector above.
+
+#### Instantiating $\mathbf{S}$ from that list
+The handwritten amounts use the ambiguous abbreviation “Ts.” Volume-to-mass conversion (typical bulk densities) yields the same mass fractions whether you treat “Ts” as teaspoons or tablespoons, because every component scales equally:
+
+| Component | Approx. mass fraction $s_i$ |
+|---|---|
+| garlic salt $s_{\text{gs}}$ | 0.235 |
+| paprika $s_{\text{pap}}$ | 0.217 |
+| white pepper $s_{\text{wp}}$ | 0.169 |
+| celery salt | 0.118 |
+| table salt | 0.089 |
+| black pepper $s_{\text{bp}}$ | 0.054 |
+| mustard powder | 0.047 |
+| ginger $s_{\text{gin}}$ | 0.042 |
+| thyme $s_{\text{thy}}$ | 0.012 |
+| basil $s_{\text{bas}}$ | 0.008 |
+| oregano $s_{\text{ore}}$ | 0.008 |
+
+Sage does not appear in this particular list (it does appear in some other copycat and commercial “99-X”/Marion-Kay style blends). Mustard powder and celery salt do appear and are missing from the partition you wrote.
+
+Normalization $\sum s_i = 1$ is already satisfied for the spice portion alone (flour is the carrier, not part of $\mathbf{S}$).
+
+#### KFC-likeness scalar
+Linear form
+
+$$
+L = \alpha\, s_{\text{wp}} + \beta\, s_{\text{gs}} + \gamma\, s_{\text{pap}} + \delta\, s_{\text{gin}}
+$$
+
+picks exactly the four components that dominate both mass and the flavor notes people associate with the original recipe (white-pepper “secret,” garlic-salt savoriness, paprika color/sweetness, ginger warmth). Plugging in the fractions above:
+
+$$
+L \approx 0.169\alpha + 0.235\beta + 0.217\gamma + 0.042\delta
+$$
+
+Empirically useful starting weights (you can retune by tasting):
+
+- $\alpha \approx 2.5$–3 (white pepper is repeatedly called the distinctive ingredient),
+- $\beta \approx 1.5$,
+- $\gamma \approx 1.2$,
+- $\delta \approx 1.0$.
+
+That produces $L \approx 1.15$–1.3 on this particular blend. Adding a small MSG term (or treating MSG as an extra coordinate) usually raises perceived “KFC-ness” more than any further change to the four coefficients.
+
 ### Breading Adhesion Model  
 Let $B$ be the breading mass adhered to the chicken surface.
 
@@ -237,7 +295,6 @@ $$
 with $\chi$ representing enhanced adhesion and flavor lock‑in.
 
 ## Future Work
-- a **precise KFC‑style seasoning ratio**  
 - a **full workflow** that mimics pressure frying without special equipment  
 - a **scientific breakdown** of white pepper dominates flavor
 - a **full dynamical system** with coupled ODEs  
