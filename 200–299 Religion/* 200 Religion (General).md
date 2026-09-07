@@ -404,7 +404,7 @@ Interpretation:
 - High $\mathrm{Sol}$ and $\mathrm{Acc}$ → smoother switching or dual belonging.  
 - High $\Delta,\delta,H$ → frozen boundaries or hostile exits.  
 
-This directly uses your variables from the relational sections (“identity gap”, “accommodative communication”, “meaning vs. harm”).  
+This directly uses the variables from the relational sections (“identity gap”, “accommodative communication”, “meaning vs. harm”).  
 
 > “High solidarity and a small identity gap raise movement or dual belonging. A large gap and strong in-group bias freeze the boundary.”
 
@@ -427,7 +427,7 @@ $$
 - High accommodation + low identity gap → more **dual belonging** than hard conversion.  
 - Low accommodation + high gap → mostly hard exits or no movement.
 
-You can then split your macro equation:
+You can then split the macro equation:
 
 $$
 \dot P_q = \text{births/deaths} + \sum_j ( \beta_{jq}^{\text{hard}}P_jP_q + \beta_{jq}^{\text{dual}}P_jY_q - \beta_{qj}^{\text{hard}}P_qP_j )
