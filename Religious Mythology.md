@@ -96,3 +96,140 @@ Modern interpretive frameworks, influenced by Jungian and psychoanalytic theory,
 
 - Deity conflicts symbolize internal struggles such as fear vs. desire, order vs. chaos, or ego vs. superego.
 - Myths allow societies to externalize and negotiate relational stress, rendering abstract anxieties narratively comprehensible.
+
+## Unified notation
+
+These symbols are fixed for the rest of the article. Religious mythology itself contains no native equations. The formulas below are the standard mathematical languages that researchers actually apply when they treat pantheons as formal objects: graphs of characters, games among deities, and simple dynamical balances between order and chaos.
+
+### Notation 
+
+| Symbol | Meaning |
+|--------|---------|
+| $G=(V,E)$ | mythic social / conflict network |
+| $A$ | adjacency matrix |
+| $k_i$ | degree (number of relations) |
+| $P(k)$ | degree distribution |
+| $C$ | clustering coefficient |
+| $\Pi$ | payoff matrix |
+| $s^\*$ | Nash strategy profile |
+| $x(t)$ | strategy frequency vector |
+| $O,C$ | order and chaos state variables |
+| $\alpha,\beta,\gamma,\delta$ | growth / interaction rates |
+| $L$ | signed Laplacian |
+
+These are the equations that appear when the relational tensions of the myths are turned into objects that can be counted, solved, or simulated. They do not replace the stories; they only make the pattern of alliances, usurpations, and oscillations numerically comparable across traditions.
+
+### 1. Network / graph model of a pantheon
+
+Let the cast of a myth be a directed or undirected graph $G=(V,E)$.
+
+- $V=\{v_1,\dots,v_n\}$ — deities, heroes, monsters, mortals  
+- $E\subseteq V\times V$ — interactions (kinship, alliance, conflict, worship)
+
+An edge can be typed. A common partition is
+
+$$
+E=E_{\text{kin}}\cup E_{\text{ally}}\cup E_{\text{conflict}}.
+$$
+
+The adjacency matrix $A$ has
+
+$$
+A_{ij}=
+\begin{cases}
+1 & \text{if }(v_i,v_j)\in E,\\
+0 & \text{otherwise}.
+\end{cases}
+$$
+
+Degree of a node (how many tensions or alliances it participates in):
+
+$$
+k_i=\sum_j A_{ij}.
+$$
+
+Empirical myth networks (Iliad, Beowulf, Táin, Greek dictionary graphs) typically show a heavy-tailed degree distribution
+
+$$
+P(k)\sim k^{-\gamma},\qquad 2\lesssim\gamma\lesssim 3
+$$
+
+together with high clustering
+
+$$
+C=\frac{1}{n}\sum_i\frac{2e_i}{k_i(k_i-1)}
+$$
+
+and short average path length (small-world property). Conflict edges often raise betweenness centrality of the “challenger” nodes (Seth, Loki, Titans).
+
+### 2. Game-theoretic model of a divine contest
+
+Two players $i,j$ (e.g., Zeus vs. Hera, Marduk vs. Tiamat, Indra vs. Vritra) choose strategies from a set $S=\{\text{Cooperate},\text{Conflict},\text{Submit}\}$.
+
+Payoff matrix $\Pi=(\pi_{ab})$ where rows are player $i$’s actions and columns player $j$’s:
+
+$$
+\Pi=
+\begin{pmatrix}
+(R,R) & (S,T) & (P,P)\\
+(T,S) & (U,U) & (W,L)\\
+(P,P) & (L,W) & (Q,Q)
+\end{pmatrix}.
+$$
+
+Typical ordering used in myth analyses:
+
+$$
+T>R>U>P>S,\qquad W>Q>L
+$$
+
+($T$ = temptation to usurp, $R$ = mutual recognition of hierarchy, $U$ = costly stalemate).
+
+A strategy profile $s^\*=(s_i^\*,s_j^\*)$ is a Nash equilibrium when
+
+$$
+\pi_i(s_i^\*,s_j^\*)\ge\pi_i(s_i,s_j^\*)\qquad\forall s_i\in S
+$$
+
+(and symmetrically for $j$). In the Enuma Elish reading, Marduk’s offer “I fight Tiamat if I receive kingship” is treated as the saddle / Nash point.
+
+Repeated or evolutionary versions replace the one-shot matrix by a replicator equation on strategy frequencies $x=(x_C,x_F,x_S)$:
+
+$$
+\dot x_a=x_a\bigl((\Pi x)_a-x^\top\Pi x\bigr).
+$$
+
+### 3. Order-versus-chaos oscillator (minimal dynamical analog)
+
+Let $O(t)$ be a scalar “order / legitimacy” variable and $C(t)$ a “chaos / challenger” variable. A Lotka–Volterra-style pair that produces the cyclic pattern seen in flood myths, Titanomachy, or Ragnarök-type forecasts is
+
+$$
+\begin{aligned}
+\dot O &= \alpha O-\beta OC,\\
+\dot C &= \gamma OC-\delta C.
+\end{aligned}
+$$
+
+Equilibria:
+
+$$
+(O^\*,C^\*)=(0,0)\qquad\text{or}\qquad\Bigl(\frac{\delta}{\gamma},\frac{\alpha}{\beta}\Bigr).
+$$
+
+The second point is a center (neutral oscillations) when the linearization has purely imaginary eigenvalues; adding a small damping term $\varepsilon O$ or a carrying-capacity term turns it into a weakly attracting cycle—the “eternal return” of the conflict.
+
+### 4. Dualism as a signed or two-community graph
+
+Partition $V=V_+\cup V_-$ (Olympians / Titans, Devas / Asuras, Aesir / Giants). The signed Laplacian
+
+$$
+L_{ij}=
+\begin{cases}
+\sum_k|A_{ik}| & i=j,\\
+-A_{ij} & i\neq j
+\end{cases}
+$$
+
+has a positive-semidefinite spectrum whose algebraic connectivity $\lambda_2$ measures how tightly the two camps are internally bound versus how strongly they oppose each other.
+
+
