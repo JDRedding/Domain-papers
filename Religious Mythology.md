@@ -232,7 +232,7 @@ $$
 
 has a positive-semidefinite spectrum whose algebraic connectivity $\lambda_2$ measures how tightly the two camps are internally bound versus how strongly they oppose each other.
 
-## 5. Markov chains for mythic state transitions
+### 5. Markov chains for mythic state transitions
 
 **Idea:** Treat the mythic world as a finite set of macro‑states (e.g., *Golden Age*, *Usurpation*, *Flood*, *Restoration*, *Exile*), and model how narratives move between them.
 
@@ -265,7 +265,7 @@ $$
 
 ---
 
-## 6. Agent‑based models of pantheon interaction
+### 6. Agent‑based models of pantheon interaction
 
 **Idea:** Each deity, hero, or faction is an agent with rules; myths emerge as trajectories of the simulation.
 
@@ -300,7 +300,7 @@ This turns relational tension into a **computational experiment**: tweak aggress
 
 ---
 
-## 7. Spectral analysis of myth networks
+### 7. Spectral analysis of myth networks
 
 Already defined $G=(V,E)$ and $L$. Now use eigenvalues/eigenvectors to quantify tension structure.
 
@@ -320,7 +320,7 @@ Formally, partition $V$ by the sign of the entries of the Fiedler vector (eigenv
 
 ---
 
-## 8. Multilayer / multiplex myth networks
+### 8. Multilayer / multiplex myth networks
 
 Relational tensions are typed (kinship, worship, conflict, prophecy). Represent them as layers.
 
@@ -352,7 +352,7 @@ where $C_{ab}$ encodes cross‑layer coupling. Spectral properties of $\mathcal{
 
 ---
 
-## 9. Stochastic order–chaos dynamics
+### 9. Stochastic order–chaos dynamics
 
 Deterministic Lotka–Volterra system can be made stochastic to reflect unpredictable mythic events (miracles, betrayals, divine whims).
 
@@ -377,7 +377,7 @@ Can study:
 
 ---
 
-## 10. Narrative logic as constraint satisfaction / SAT
+### 10. Narrative logic as constraint satisfaction / SAT
 
 Relational tensions often obey strict narrative rules (e.g., “no god may kill Zeus directly”, “prophecy must be fulfilled”). Can encode these as logical constraints.
 
@@ -402,7 +402,7 @@ This turns “what stories are allowed in this cosmology?” into a formal searc
 
 ---
 
-## 11. Cross‑tradition embedding and distance
+### 11. Cross‑tradition embedding and distance
 
 To compare whole mythologies, embed them into a feature space and define distances.
 
