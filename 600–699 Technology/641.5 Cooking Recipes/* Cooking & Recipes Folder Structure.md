@@ -1,6 +1,4 @@
 ## 📁 Cooking & Recipes Folder Structure  
-*(Every node begins with a Guided Link so you can jump directly into expanding or modifying that section.)*
-
 ### **Top‑Level**
 - **600–699 Technology**  
   - **641 Food_and_Drink**  
