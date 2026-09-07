@@ -331,7 +331,7 @@ The tension matrix shows where the compression fails.
 
 ### **Matrix Overview**
 Each row is a *tension type*.  
-Each column is a *910 subsystem*.  
+Each column is a *subsystem*.  
 Cells describe the specific tension that emerges at that intersection.
 
 ---
