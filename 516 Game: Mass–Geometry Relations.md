@@ -1,4 +1,6 @@
 # **Game: Mass–Geometry Relations**  
+- 516 Geometry
+- 531 Classical mechanics
 
 Milad Ghadimi’s *A Timeless Game: A Game-Theoretic Model of Mass–Geometry Relations* proposes a static, game‑theoretic formalism where **mass** and **geometry** behave as players in a normal‑form game. The Nash equilibria of this “Curvature Clash” game reproduce intuitive GR‑like pairings (“light → flat”, “heavy → curved”), and the philosophical thrust is that **time need not appear in the global description**—temporal flow emerges only for embedded observers through coarse‑graining and informational asymmetry.   
 
