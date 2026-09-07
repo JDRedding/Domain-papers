@@ -1,4 +1,5 @@
-# Painting & paintings
+# Painting (General)
+- 750 Painting & paintings
 
 Painting is one of the most durable ways people have given form to seeing, believing, and remembering. It is never only a surface of color. It is a meeting of method and meaning: the physical facts of pigment and support, the grammar of hue and light, and the stories a culture tells about the sacred, the ordinary, and the self. Across periods and places, those elements change in emphasis, but they remain bound together.
 
