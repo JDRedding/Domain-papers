@@ -429,3 +429,226 @@ $$
 Now can say, quantitatively, that:
 - Norse is “closer” to certain apocalyptic dualisms than to cyclic Hindu cosmology.
 - A given modern fantasy pantheon is statistically similar to, say, Greek or Mesopotamian patterns.
+
+## APPENDIX: Relational mythology framework
+
+### Base Relational primitives
+
+Let’s treat the mythology framework as a relational geometry over a typed graph. The layers (kin, worship, conflict, prophecy) become **fibers** over the node sort:
+
+- **Fibered relation:**
+
+\[
+\mathbf{R}_\ell,\quad \ell\in\{\text{Kin},\text{Worship},\text{Conflict},\text{Prophecy}\}
+$$
+
+- **Projection:**
+
+\[
+\pi : \bigsqcup_\ell \mathbf{R}_\ell \to \mathbf{N}\times \mathbf{N}
+$$
+
+Relational object:
+
+\[
+\mathcal{M} = \bigl(\mathbf{N},\{\mathbf{R}_\ell\}_\ell\bigr)
+$$
+
+with cross‑layer coupling relations
+
+\[
+\mathbf{Couple}_{\ell m} \subseteq \mathbf{R}_\ell \times \mathbf{R}_m
+$$
+
+encoding, e.g., “kinship edge tends to co‑occur with alliance edge”.
+
+---
+
+### 1. Pantheon as Relational object
+Each mythic relation is a **relational edge type**; the pantheon is the Relational object carrying those typed relations.
+
+**Universe and sorts**
+
+- **Universe:**  
+
+\[
+\mathcal{U} = \{\text{deity},\ \text{hero},\ \text{monster},\ \text{mortal}\}
+$$
+
+- **Relational node sort:**  
+
+\[
+\mathbf{N} : \text{MythicEntity}
+$$
+
+- **Relational edge sort (typed relation):**  
+
+\[
+\mathbf{R} \in \{\mathbf{Kin},\mathbf{Ally},\mathbf{Conflict},\mathbf{Worship},\mathbf{Prophecy}\}
+$$
+
+**Pantheon object**
+
+- Original: $G=(V,E) with $E=E_{\text{kin}}\cup E_{\text{ally}}\cup E_{\text{conflict}}.
+- Relational form:
+
+\[
+\mathcal{P} = \bigl(\mathbf{N},\{\mathbf{Kin},\mathbf{Ally},\mathbf{Conflict}\}\bigr)
+$$
+
+  with incidence maps
+
+\[
+\partial_{\mathbf{R}} : \mathbf{R} \to \mathbf{N}\times \mathbf{N}.
+$$
+
+---
+
+### 2. Relational tension as Relational operator
+This is the $k_i specialized to conflict, but now as a **scalar field** over the Relational node sort.
+
+Define a **tension operator** on the pantheon:
+
+- **Conflict projection:**
+
+\[
+\mathsf{Tension} : \mathcal{P} \to \mathcal{P}_{\mathbf{Conflict}}
+$$
+
+  where $\mathcal{P}_{\mathbf{Conflict}} is the sub‑geometry with only $\mathbf{Conflict} edges.
+
+- **Local tension at node $v:**
+\[
+\tau(v) = \deg_{\mathbf{Conflict}}(v)
+$$
+
+  in Relational terms:
+
+\[
+\tau : \mathbf{N} \to \mathbb{R},\quad \tau(v) = |\{e\in \mathbf{Conflict} : v\in \partial_{\mathbf{Conflict}}(e)\}|.
+$$
+
+---
+
+### 3. Game‑theoretic contests as Relational morphisms
+
+Each divine contest (Zeus vs. Hera, Marduk vs. Tiamat) becomes a **binary game relation**:
+
+- **Strategy sort:**
+
+\[
+\mathbf{S} = \{\text{Cooperate},\text{Conflict},\text{Submit}\}
+$$
+
+- **Payoff relation:**
+
+\[
+\mathbf{Payoff} \subseteq \mathbf{N}\times \mathbf{N}\times \mathbf{S}\times \mathbf{S}\times \mathbb{R}^2
+$$
+
+  with
+
+\[
+(i,j,s_i,s_j,\pi_i,\pi_j)\in \mathbf{Payoff}
+$$
+
+  iff the matrix $\Pi assigns those payoffs.
+
+A **contest morphism** is then:
+
+\[
+\mathsf{Game} : \mathcal{P} \to \mathcal{G}
+$$
+
+where $\mathcal{G} is the Relational object whose sorts are $\mathbf{N},\mathbf{S},\mathbf{Payoff} and whose relations encode the game structure.
+
+Nash profiles $s^\* become **fixed points** of a best‑response relation:
+
+\[
+\mathbf{BR} \subseteq \mathbf{S}\times \mathbf{S}
+$$
+
+with
+
+\[
+(s_i^\*,s_j^\*)\in \mathbf{BR}
+$$
+
+iff no unilateral deviation improves payoff. In Relational terms: $\mathbf{BR} is a **stability relation** on the strategy sort.
+
+---
+
+### 4. Order–chaos dynamics as Relational fields
+The mythic world is a **relational geometry with attached dynamical fields**, and the order–chaos cycle is a specific endomorphism on those fields.
+
+Treat $O,C as scalar fields attached to the pantheon object:
+
+- **Field sorts:**
+
+\[
+\mathbf{F}_O,\mathbf{F}_C : \text{GlobalField}
+$$
+
+- **Attachment:**
+
+\[
+\phi_O : \mathcal{P} \to \mathbf{F}_O,\qquad \phi_C : \mathcal{P} \to \mathbf{F}_C
+$$
+
+  with values $O(t),C(t) at time $t.
+
+The dynamical law
+
+\[
+\dot O = \alpha O - \beta OC,\quad \dot C = \gamma OC - \delta C
+$$
+
+becomes an Relational **evolution operator**:
+
+\[
+\mathsf{Evol}_{OC} : (\mathbf{F}_O,\mathbf{F}_C) \to (\mathbf{F}_O,\mathbf{F}_C)
+$$
+
+such that
+
+\[
+\mathsf{Evol}_{OC}(O,C) = \bigl(\alpha O - \beta OC,\ \gamma OC - \delta C\bigr).
+$$
+
+---
+
+### 5. Dualism as Relational partition / polarity
+
+The partition $V=V_+\cup V_- becomes a **polarity structure**:
+
+- **Polarity sort:**
+
+$$
+\mathbf{Pol} = \{+,-\}
+$$
+
+- **Assignment:**
+
+\[
+\sigma : \mathbf{N} \to \mathbf{Pol}
+$$
+
+  with $\sigma(v)=+ for Olympians/Devas/Aesir, $- for Titans/Asuras/Giants.
+
+The signed Laplacian $L is then a **metric operator** on the conflict layer:
+
+- Define a tension metric
+
+\[
+\mathsf{L} : \mathbf{N}\times \mathbf{N} \to \mathbb{R}
+$$
+
+  with
+
+\[
+\mathsf{L}(i,j) = L_{ij}.
+$$
+
+In Relational language: dualism is a **two‑coloring of the node sort plus a signed metric on relations**, and $\lambda_2 measures how strongly the polarity is structurally enforced.
+
+---
