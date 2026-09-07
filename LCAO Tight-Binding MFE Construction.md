@@ -363,3 +363,22 @@ $$
 $$
 H = P_{\text{on-site}}\;\mathrm{Id} + I.
 $$ 
+
+## APPENDIX: **Identity Operator (Id)**
+
+**Id** is the **identity operator** on the lattice state space.  
+It satisfies:
+
+$$
+\mathrm{Id}\,\psi(j) = \psi(j)
+$$
+
+for every site \(j\) and every state \(\psi\).
+
+It contributes the **on‑site term** in the Hamiltonian:
+
+$$
+P_{\text{on-site}}\;\mathrm{Id}
+$$
+
+and represents the **local baseline energy** at each site.
