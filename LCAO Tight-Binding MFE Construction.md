@@ -2,6 +2,8 @@
 
 **Momentum–Flux Engine interpretations**
 
+The MFE is an independently conceived flux engine. When both operators are written in the same structural template, the tight‑binding Hamiltonian and the MFE operator coincide in form. Tight‑binding is therefore the PED‑interpretation of that independently derived engine, not its source. The flux labels $M/M′$ encode phase; the labels $F/F′$ encode orientation.
+
 ---
 
 ## LCAO Tight-Binding as a Momentum–Flux Engine (MFE)
@@ -292,3 +294,63 @@ is exact **because both operators are written on the same structural template** 
 ## Further Reading and References
 
 - https://github.com/cpashartis/LCAO_tightbinding
+
+## APPENDIX **Tight‑Binding Corresponds**
+
+1. **Origin**  
+   The **MFE** is a second, independently conceived operator.  
+   It comes from motor–generator symmetry, bidirectional flux routing, and game‑mechanic energy systems — not from tight‑binding physics.
+
+2. **Form**  
+   Once both operators are written in the shared template 
+ 
+$$
+P_{\text{on-site}}\;\mathrm{Id} + P_{\text{hopping}}\,(T+T^\dagger),
+$$  
+
+   their **forms coincide**.  
+   This is a structural alignment, not a derivation.
+
+3. **Reading**  
+   Tight‑binding becomes the **PED‑reading** of the independently conceived MFE operator.  
+   The MFE is not extracted from tight‑binding; tight‑binding is simply one physical system that fits the same operator archetype.
+
+4. **Modes**  
+   The flux labels
+   
+$$
+M,\;M',\;F,\;F'
+$$  
+
+   are **interpretive labels**, not four independent eigenmodes of the Hermitian operator $T+T^\dagger$.
+
+   - **M/M′** = *phase* (in‑phase / out‑of‑phase)  
+   - **F/F′** = *orientation* (forward / backward)
+
+   Orientation comes from conventions such as swapping endpoints or taking negative $k$, not from additional eigenvectors.
+
+6. **Evaluation**  
+   For the open finite chain, the evaluation spectrum is  
+
+$$
+E_k = \alpha + 2\beta\cos(\frac{k\pi}{N+1}).
+$$  
+
+   For the Bloch limit, the corresponding line is
+   
+$$
+E(k) = \alpha + 2\beta\cos(ka).
+$$
+
+7. **Interaction**  
+   The interaction operator **I** is strictly the hopping piece 
+ 
+$$
+I = P_{\text{hopping}}(T+T^\dagger),
+$$  
+
+   and the full Hamiltonian is  
+
+$$
+H = P_{\text{on-site}}\;\mathrm{Id} + I.
+$$ 
