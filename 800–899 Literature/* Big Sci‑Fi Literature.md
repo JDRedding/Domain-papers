@@ -62,4 +62,4 @@
 
 ### 🇵🇱 **Polish (891.82354)**
 
-- **Stanisław Lem** — *Solaris* ✓, *The Cyberiad*, *Fiasco*  
+- **Stanisław Lem** — *Solaris*, *The Cyberiad*, *Fiasco*  
