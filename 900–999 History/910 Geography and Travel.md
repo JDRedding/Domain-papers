@@ -312,10 +312,16 @@ $$
 (the second is a simple slope magnitude from partial derivatives of a DEM).
 
 ## 🧩 Future Work
+The landmark sequence (Ptolemy $\to$ Ortelius/Mercator $\to$ imperial gazetteers $\to$ GIS + GPS) is the historical record of people trying to make those squares commute and discovering they never fully do.
 
 - Map relational tensions into relational operators
 - Extend tensions into regional subclasses
 - Construct a unified relational model of geography
+
+
+1. Encode each tension as a typed operator with explicit inputs (scale pair, projection pair, naming authority pair, timestamp pair).
+2. Specialize the operators by region class (coastal vs. inland, high-latitude vs. equatorial, densely administered vs. sparsely administered). The same projection that is acceptable for mid-latitude navigation becomes unusable at 80° N.
+3. Treat a unified model as a commuting diagram: physical Earth $\to$ measured ellipsoid $\to$ projected plane $\to$ labeled gazetteer $\to$ navigable graph. Non-commuting squares are exactly the tensions.
 
 ## APPENDIX: Geographic/cartographic relations
 
@@ -498,13 +504,6 @@ $$
 Power(Representation) \rightarrow Bias(Structure)
 $$
 
-## **Future-work**
-
-1. Encode each tension as a typed operator with explicit inputs (scale pair, projection pair, naming authority pair, timestamp pair).
-2. Specialize the operators by region class (coastal vs. inland, high-latitude vs. equatorial, densely administered vs. sparsely administered). The same projection that is acceptable for mid-latitude navigation becomes unusable at 80° N.
-3. Treat a unified model as a commuting diagram: physical Earth $\to$ measured ellipsoid $\to$ projected plane $\to$ labeled gazetteer $\to$ navigable graph. Non-commuting squares are exactly the tensions.
-
-The landmark sequence (Ptolemy $\to$ Ortelius/Mercator $\to$ imperial gazetteers $\to$ GIS + GPS) is the historical record of people trying to make those squares commute and discovering they never fully do.
 
 ## APPENDIX: **Core compression problem.** 
 Earth is continuous and changing. Atlases, gazetteers, GIS layers, and guidebooks are discrete, dated, and purpose-built. Every tension in the matrix is a symptom of that mismatch.
