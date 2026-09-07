@@ -132,10 +132,10 @@ Where $\alpha,\beta,\gamma,\delta$ are empirically tuned weights.
 
 
 
-The vector model is a clean way to treat a dry blend as a point on the simplex. The leaked 2016 “11 spices + 2 cups flour” list (Joe Ledington / Chicago Tribune scrapbook) is the most widely tested candidate for the original KFC coating spices. KFC itself denies it is exact; testers have repeatedly said it comes close once a little MSG is added. If want a higher-dimensional $\mathbf{S}$ you can simply append the missing coordinates (mustard, celery salt, plain salt) and keep the same inner-product form for $L$, or replace the linear score with a cosine similarity against the reference vector above.
+The vector model is a clean way to treat a dry blend as a point on the simplex. The leaked 2016 “11 spices + 2 cups flour” list (Joe Ledington / Chicago Tribune scrapbook) is the most widely tested candidate for the original KFC coating spices. KFC itself denies it is exact; testers have repeatedly said it comes close once a little MSG is added. If want a higher-dimensional $\mathbf{S}$ can simply append the missing coordinates (mustard, celery salt, plain salt) and keep the same inner-product form for $L$, or replace the linear score with a cosine similarity against the reference vector above.
 
 #### Instantiating $\mathbf{S}$ from that list
-The handwritten amounts use the ambiguous abbreviation “Ts.” Volume-to-mass conversion (typical bulk densities) yields the same mass fractions whether you treat “Ts” as teaspoons or tablespoons, because every component scales equally:
+The handwritten amounts use the ambiguous abbreviation “Ts.” Volume-to-mass conversion (typical bulk densities) yields the same mass fractions whether treat “Ts” as teaspoons or tablespoons, because every component scales equally:
 
 | Component | Approx. mass fraction $s_i$ |
 |---|---|
@@ -151,7 +151,7 @@ The handwritten amounts use the ambiguous abbreviation “Ts.” Volume-to-mass 
 | basil $s_{\text{bas}}$ | 0.008 |
 | oregano $s_{\text{ore}}$ | 0.008 |
 
-Sage does not appear in this particular list (it does appear in some other copycat and commercial “99-X”/Marion-Kay style blends). Mustard powder and celery salt do appear and are missing from the partition you wrote.
+Sage does not appear in this particular list (it does appear in some other copycat and commercial “99-X”/Marion-Kay style blends). Mustard powder and celery salt do appear and are missing from the partitions.
 
 Normalization $\sum s_i = 1$ is already satisfied for the spice portion alone (flour is the carrier, not part of $\mathbf{S}$).
 
@@ -168,7 +168,7 @@ $$
 L \approx 0.169\alpha + 0.235\beta + 0.217\gamma + 0.042\delta
 $$
 
-Empirically useful starting weights (you can retune by tasting):
+Empirically useful starting weights (can retune by tasting):
 
 - $\alpha \approx 2.5$–3 (white pepper is repeatedly called the distinctive ingredient),
 - $\beta \approx 1.5$,
