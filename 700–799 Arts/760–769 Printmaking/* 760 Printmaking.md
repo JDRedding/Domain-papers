@@ -85,7 +85,7 @@ Types:
 - **Metalcut**  
 - **Cardboard_relief**
 
-🟥 1. **Relief tension** — *Raised‑surface polarity*  
+🟥 **Relief tension** — *Raised‑surface polarity*  
 **Geometry:** raised vs cut‑away  
 **Force:** downward pressure, moderate  
 **Ink relation:** ink sits *on* the surface  
@@ -118,7 +118,7 @@ Types:
 - **Spitbite**  
 - **Photogravure**  
 
-🟦 2. **Intaglio tension** — *Subsurface compression*  
+🟦 **Intaglio tension** — *Subsurface compression*  
 **Geometry:** incised lines, bitten recesses  
 **Force:** high pressure, damp paper forced into grooves  
 **Ink relation:** ink embedded *in* the paper  
@@ -147,7 +147,7 @@ Types:
 - **Plate_lithography**  
 - **Chromolithography**  
 
-🟨 3. **Planographic tension** — *Grease–water polarity*  
+🟨 **Planographic tension** — *Grease–water polarity*  
 **Geometry:** flat plane  
 **Force:** chemical separation, minimal pressure  
 **Ink relation:** grease attracts ink; water repels  
@@ -176,7 +176,7 @@ Types:
 - **Screenprint**  
 - **Serigraph**
 
-🟩 4**Stencil tension** — *Open‑mesh flow*  
+🟩 **Stencil tension** — *Open‑mesh flow*  
 **Geometry:** mesh + blocked areas  
 **Force:** squeegee pressure, lateral  
 **Ink relation:** ink passes through openings only  
