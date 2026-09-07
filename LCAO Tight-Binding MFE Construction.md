@@ -373,7 +373,7 @@ $$
 \mathrm{Id}\,\psi(j) = \psi(j)
 $$
 
-for every site \(j\) and every state \(\psi\).
+for every site $j$ and every state $\psi$.
 
 It contributes the **on‑site term** in the Hamiltonian:
 
