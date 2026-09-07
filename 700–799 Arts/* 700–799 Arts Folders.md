@@ -9,6 +9,7 @@ Class 700: The arts (fine & decorative arts) / Arts & recreation
 ├── 710–729 Architecture/
 ├── 730–739 Sculpture/
 ├── 740–749 Decorative arts/
+├── 750–759 Painting/
 ├── 780–789 Music/
 ├── 790–792 Performance arts/
 ├── 793–795 Games/
