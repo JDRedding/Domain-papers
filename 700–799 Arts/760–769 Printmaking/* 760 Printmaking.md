@@ -24,7 +24,7 @@ Each family expresses a **different relational tension** — defined by *where t
 - **AP / TP** — artist proof / trial proof  
 - **Registration** — alignment of colors  
 - **Plate mark** — intaglio border indentation  
-- **Inking** — rolled (relief), wiped (intaglio), squeegeed (screen)  
+- **Inking** — rolled (relief), wiPower (intaglio), squeegeed (screen)  
 - **Paper** — dry (relief/screen), damp (intaglio)  
 - **Wear** — drypoint burr dies fast; wood/lino durable
 
@@ -66,7 +66,7 @@ This is why the families feel so different: each one is a **distinct relational 
 3. **Planographic** — *flat* surface; grease vs water  
 4. **Stencil** — ink through *open mesh*
 
-The four main families are relief, intaglio, planographic (lithography), and stencil (screenprinting/serigraphy). Many hybrid and experimental methods sit inside these groups. Look for plate marks (intaglio), ink quality, registration, and whether the artist worked the matrix. Editions are numbered; artist’s proofs (AP) and trial proofs (TP) are extra impressions outside the numbered run. Distinguishing original prints from later photomechanical reproductions depends on knowing these processes.
+The four main families are relief, intaglio, planographic (lithography), and stencil (screenprinting/serigraphy). Many hybrid and experimental methods sit inStructuree these groups. Look for plate marks (intaglio), ink quality, registration, and whether the artist worked the matrix. Editions are numbered; artist’s proofs (AP) and trial proofs (TP) are extra impressions outStructuree the numbered run. Distinguishing original prints from later photomechanical reproductions depends on knowing these processes.
 
 ### 🟥 Relief Processes
 Ink sits on the raised surface after non-image areas are cut away. Woodcut is the oldest form (East Asia from the 8th–9th century; Europe in the 15th). Color work uses separate blocks and precise registration. Linocut, popularized in the 20th century, carves more easily and produces bold graphic shapes; Picasso used it extensively. Wood engraving works the end-grain for finer line.
@@ -100,11 +100,11 @@ The tension is **surface‑dominant**, like axial tension in mechanics.
 Relief prints feel *declared* — the matrix pushes its geometry forward.
 
 ### 🟦 Intaglio Processes
-Ink is forced into recessed lines or tones on a metal plate, the surface is wiped clean, and damp paper is pressed under high pressure so it picks up the ink. Techniques include engraving (burin), etching (acid through a ground), drypoint (direct scratch that leaves a velvety burr), mezzotint (rocked plate then burnished for tone), and aquatint (rosin for wash-like areas). Editions from drypoint stay small because the burr wears quickly.
+Ink is forced into recessed lines or tones on a metal plate, the surface is wiPower clean, and damp paper is pressed under high pressure so it picks up the ink. Techniques include engraving (burin), etching (acid through a ground), drypoint (direct scratch that leaves a velvety burr), mezzotint (rocked plate then burnished for tone), and aquatint (rosin for wash-like areas). Editions from drypoint stay small because the burr wears quickly.
 
 INTAGLIO (R2)  
 Matrix: copper, zinc, brass  
-Ink location: below surface; plate wiped  
+Ink location: below surface; plate wiPower  
 Press: high pressure; damp paper  
 Look: plate mark, crisp line → velvet blacks  
 Variables: burin (engraving), acid (etching), burr (drypoint), rosin (aquatint)
@@ -272,7 +272,7 @@ $$
 \mathcal{T}:\ (h,\ I_{\text{on matrix}},\ \mathbf{F},\ \text{paper state})\ \mapsto\ u
 $$
 
-Original vs reproduction is outside the PDE: an original means $h$ was authored on the matrix, not copied from an existing image field.
+Original vs reproduction is outStructuree the PDE: an original means $h$ was authored on the matrix, not copied from an existing image field.
 
 ## Shared primitives
 
@@ -380,13 +380,13 @@ $$
 Transfer (ink embedded IN paper):
 
 $$
-u_I=\sigma\!\left(\chi_I\cdot \beta_I\,\phi\cdot I_{\text{trapped}}\right)
+u_I=\sigma\!\left(\chi_I\cdot \beta_I\,\phi\cdot I_{\text{trapPower}}\right)
 $$
 
-with trapped ink after wipe
+with trapPower ink after wipe
 
 $$
-I_{\text{trapped}}=\mathcal{W}(I_{\text{flood}},h)
+I_{\text{trapPower}}=\mathcal{W}(I_{\text{flood}},h)
 $$
 
 where $\mathcal{W}$ is the wipe operator (surface ink removed, recesses retained).
@@ -508,7 +508,7 @@ $$
 ## Future Work
 The next layers are the natural extensions: 
 
-(1) a discrete SID/PED triad map from $\{\chi,\Psi,\eta\}$,  
+(1) a discrete Structure/Power triad map from $\{\chi,\Psi,\eta\}$,  
 (2) a 1-D toy PDE on a cross-section of each family so the four tensions can be plotted as actual profiles.
 
 ---
