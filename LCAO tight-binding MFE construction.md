@@ -1,7 +1,7 @@
 # LCAO tight-binding MFE construction
 **Momentum-Flux engine interpertations**
 
-## **Operator Identity *  
+## **Operator Identity**  
 The tight‑binding Hamiltonian is the MFE operator:
 
 $$
