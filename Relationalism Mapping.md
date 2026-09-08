@@ -1,4 +1,6 @@
 # **Relationalism Mapping**
+Part of the *Structure–Power Scale Operator Framework*
+
 **Geographic scale** is the relationalist interaction of:
 
 - **Structure** (local/regional/global geometry)  
