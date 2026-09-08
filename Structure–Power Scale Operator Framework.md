@@ -493,11 +493,11 @@ $$
 Power_s : \mathcal{S} \rightarrow \mathcal{S}
 $$  
 
-indexed by scale parameter \(s\in\Sigma\).  
+indexed by scale parameter $s\in\Sigma$.  
 
 ### **Axiom B3 — Description Operator**  
 
-Geographic description at scale \(s\) is defined by  
+Geographic description at scale $s$ is defined by  
 
 $$
 Describe(Earth,s)=Power_s(Structure).
@@ -526,19 +526,49 @@ $$
 
 ## **B.3 Non‑Commutativity**
 
-### **Axiom B6 — Non‑Commutativity of Power Fields**  
-For all \(s_1,s_2\in\Sigma\):
+### **Axiom B6 — — Operator Compatibility**
+
+For any two Power fields $Power_{s_1},Power_{s_2}\in\mathcal P$, their interaction is characterized by their composition relation:
 
 $$
-Power_{s_2}\circ Power_{s_1}\neq Power_{s_1}\circ Power_{s_2}.
-$$  
+Power_{s_2}\circ Power_{s_1} \quad\text{and}\quad Power_{s_1}\circ Power_{s_2}.
+$$
 
-### **Axiom B7 — Commutator Definition**  
-The commutator of two scale operators is  
+The operators are **compatible** when
+
+$$
+Power_{s_2}\circ Power_{s_1} = Power_{s_1}\circ Power_{s_2},
+$$
+
+and exhibit **scale tension** when
+
+$$ 
+Power_{s_2}\circ Power_{s_1} \neq Power_{s_1}\circ Power_{s_2}.
+$$
+
+---
+
+## **Axiom B7 — Commutator Definition**
+
+The interaction between two scale operators is measured by
 
 $$
 [Power_{s_2},Power_{s_1}] = Power_{s_2}\circ Power_{s_1} - Power_{s_1}\circ Power_{s_2}.
 $$
+
+Thus:
+
+$$
+[Power_{s_2},Power_{s_1}]=0
+$$
+
+indicates **operator compatibility**, while
+
+$$
+[Power_{s_2},Power_{s_1}]\neq0
+$$
+
+indicates **scale tension**.
 
 ---
 
@@ -580,7 +610,7 @@ only when its aggregation and filtering effects are reversible.
 ## **B.5 Coupling Law**
 
 ### **Axiom B11 — Admissible Power Fields**  
-Each Structure regime \(S\in\mathcal{S}\) defines a set of admissible Power fields 
+Each Structure regime $S\in\mathcal{S}$ defines a set of admissible Power fields 
 
 $$
 \mathcal{C}(S) = \{P\mid P\text{ preserves the admissibility constraints of }S\}.
