@@ -34,6 +34,11 @@ Programs and data have a dynamic relationship: programs define how data is inter
 - A web application displays user information retrieved from a database.
 - A video editor manipulates multimedia files to produce visual content.
 
+## Links
+
+Comp Programming Basics https://www.symbaloo.com/shared/AAAAAYCqrvYAA41-4LbN3A== (https://www.symbaloo.com/home/mix/13eOcK70c0)
+Programming ] https://www.symbaloo.com/shared/AAAAAYC1rMEAA41-4IzwLQ== 
+
 ## Further work 
 
 - **Algorithms:** Step-by-step instructions for solving problems.
