@@ -524,9 +524,9 @@ $$
 
 ---
 
-## **B.3 Non‑Commutativity**
+## **B.3 Compatibility**
 
-### **Axiom B6 — — Operator Compatibility**
+### **Axiom B6 — Operator Compatibility**
 
 For any two Power fields $Power_{s_1},Power_{s_2}\in\mathcal P$, their interaction is characterized by their composition relation:
 
