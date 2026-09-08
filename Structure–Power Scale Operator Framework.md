@@ -1,5 +1,15 @@
 ## Structure–Power Scale Operator Framework
 
+**Abstract**
+
+The **Structure–Power Scale Operator Framework** formalizes geographic scale as an operator system in which **Structure** (the geometric manifold of observation) is transformed by **Power** (a dynamic scaling field). The framework’s central claim—grounded directly in the document—is that *“Scale is not geometry. Scale is the field that acts on geometry.”*  This reframing dissolves traditional ambiguities around zoom level, resolution, and data quality by treating scale effects as consequences of **non‑commutative operators** rather than cartographic artifacts.
+
+The core identity and the scale inequality establish that different scales produce fundamentally different descriptions.  The deeper non‑commutativity relation explains MAUP, projection distortion, phenomenon‑scale mismatch, and the irreversibility of zooming as structural operator effects rather than statistical anomalies. 
+
+A **Structure→Power coupling law** constrains which scaling fields are admissible for each geometric regime, capturing known limits of map projections and natural process scales. The framework aligns cleanly with relationalism by mapping Structure to geometric manifold, Power to evaluative/dynamic field, and scale tension to non‑commutativity of field action.  The result is a compact, checkable operator calculus for multi‑scale geographic reasoning—neither a model nor a perspective, but a **structural operator framework** that unifies scale tension, MAUP, and projection effects under a single algebraic identity.
+
+---
+
 Geographic levels are Structure (geometry); the scaling factor is Power (a dynamic field). Scale tension arises because Power transforms Structure in non-commuting ways.
 
 The **Structure–Power Scale Operator Framework** treats geographic scale tension as a non-commutative operator system rather than a cartographic artifact. It separates **Structure** (the geometric regime of observation) from **Power** (the scaling field that acts on that geometry). Scale effects arise from the interaction of these operators, not from zooming, resolution, or data quality.
