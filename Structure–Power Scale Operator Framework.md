@@ -370,7 +370,7 @@ Scale‑dependent description is therefore the result of operator action on stru
 
 ---
 
-## **A.2 Non‑Commutativity as Fundamental Law**
+## **A.2 Non‑Commutativity as Fundamental**
 
 The operator family $\{Power_s\}$ satisfies the non‑commutativity relation:
 
