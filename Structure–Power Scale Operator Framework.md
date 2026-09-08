@@ -1,4 +1,4 @@
-## **Structure–Power Scale Operator Framework (Review)**  
+## **Structure–Power Scale Operator Framework**  
 **Geographic levels are Structure (geometry), and the scaling factor is Power (dynamic field); scale tension arises because Power transforms Structure in non‑commuting ways.**
 
 The **Structure–Power Scale Operator Framework** reframes geographic scale tension as a **non‑commutative operator system**, not a cartographic artifact. It cleanly separates **Structure** (the geometric regime of observation) from **Power** (the scaling field that acts on that geometry). Scale effects emerge from the interaction of these two operators—not from zooming, resolution, or data quality. This makes the framework a structurally faithful, relationalist‑aligned solution to multi‑scale geographic reasoning.
