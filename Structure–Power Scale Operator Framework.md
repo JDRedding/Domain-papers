@@ -1,184 +1,330 @@
-## **Structure–Power Scale Operator Framework**  
-**Geographic levels are Structure (geometry), and the scaling factor is Power (dynamic field); scale tension arises because Power transforms Structure in non‑commuting ways.**
+## Structure–Power Scale Operator Framework
 
-The **Structure–Power Scale Operator Framework** reframes geographic scale tension as a **non‑commutative operator system**, not a cartographic artifact. It cleanly separates **Structure** (the geometric regime of observation) from **Power** (the scaling field that acts on that geometry). Scale effects emerge from the interaction of these two operators—not from zooming, resolution, or data quality. This makes the framework a structurally faithful, relationalist‑aligned solution to multi‑scale geographic reasoning.
+Geographic levels are Structure (geometry); the scaling factor is Power (a dynamic field). Scale tension arises because Power transforms Structure in non-commuting ways.
 
-It is not a model, not a perspective, not a method.  
-It is a **structural operator framework**.
+The **Structure–Power Scale Operator Framework** treats geographic scale tension as a non-commutative operator system rather than a cartographic artifact. It separates **Structure** (the geometric regime of observation) from **Power** (the scaling field that acts on that geometry). Scale effects arise from the interaction of these operators, not from zooming, resolution, or data quality.
 
----
-
-## **1. Concepts**
-
-### **Structure vs Power in Geography**
-| **Structure** | **Relationalism Role** | **Geography Role** | **Effect** |
-|------------------------------|------------------------|--------------------------|---------------------|
-| **Structure_local** | Structure | city blocks | fine detail |
-| **Structure_regional** | Structure | states, basins | connectivity |
-| **Structure_global** | Structure | continents | macro‑patterns |
-| **Power_scale** | Field | scaling factor | distortion, aggregation |
-
-### **Core identity**
-**Scale is not geometry. Scale is the field that acts on geometry.**
-
-Thus:
-
-- **Structure = geographic level** (local, regional, global)  
-- **Power = scaling operator** that transforms what Structure reveals  
-
-This makes geographic scale tension identical to relationalism’s **Structure↔Power** interplay.
+It is not a model, a perspective, or a method. It is a structural operator framework.
 
 ---
 
-## **Structure = Geographic Levels (Geometry of Observation)**  
-Structure is the **structural manifold** on which phenomena appear:
+## 1. Concepts
 
-- **Structure_local** → parcels, streets, blocks  
-- **Structure_regional** → cities, rivers, trade corridors  
-- **Structure_global** → continents, climate belts, tectonics  
+### Structure versus Power
 
-Each Structure defines:
+| Operator | Relationalism role | Geography role | Effect |
+|---|---|---|---|
+| Structure_local | Structure | city blocks | fine detail |
+| Structure_regional | Structure | states, basins | connectivity |
+| Structure_global | Structure | continents | macro-patterns |
+| Power_scale | Field | scaling factor | distortion, aggregation |
 
-- what counts as a unit  
-- what counts as adjacency  
-- what counts as structure  
+**Core claim.** Scale is not geometry. Scale is the field that acts on geometry.
 
-This is the same role Structure plays in relationalism: the geometry that constrains visibility.
+- **Structure** = geographic level (local, regional, global)
+- **Power** = scaling operator that transforms what Structure reveals
 
-The operator should be able to explore each level:  
-- local geometry  
-- regional geometry  
-- global geometry
+Geographic scale tension is then the same as a Structure–Power interplay.
 
----
+### Structure = geographic levels (geometry of observation)
 
-## **Power = Scaling Factor (Dynamic Field Acting on Structure)**  
-Power is the **dynamic field** that transforms the geometry.
+Structure is the structural manifold on which phenomena appear:
 
-In geography, Power:
+- **Structure_local** → parcels, streets, blocks
+- **Structure_regional** → cities, rivers, trade corridors
+- **Structure_global** → continents, climate belts, tectonics
 
-- suppresses fine detail  
-- amplifies coarse structure  
-- distorts metrics (area, shape, distance)  
-- aggregates units (MAUP)  
-- changes what counts as a phenomenon  
+Each Structure defines units, adjacency, and what counts as structure. Structure is the geometry that constrains visibility.
 
-Let:
+### Power = scaling factor (dynamic field acting on Structure)
 
-$$
-Power_s := \text{ScaleTransform}(s)
-$$
+Power transforms the geometry. In geography it:
 
-Then:
+- suppresses fine detail
+- amplifies coarse structure
+- distorts metrics (area, shape, distance)
+- aggregates units (MAUP)
+- changes what counts as a phenomenon
 
-$$
-Describe(Earth, s) = Power_s(Structure)
-$$
-
-Explore Power behavior:  
-- scaling operators  
-- MAUP dynamics
-
----
-
-## **2. Mathematical correctness**
-
-### **Structure is static geometry**  
-Structure does not change with scale.  
-Earth’s geometry is invariant across levels.
-
-### **Power is the dynamic field that changes what Structure reveals**  
-Power determines:
-
-- aggregation  
-- filtering  
-- distortion  
-- visibility  
-
-This matches relationalism’s triad:
-
-- **Structure = Structure**  
-- **Power = Evaluation + Dynamics**
-
-### **Core identity**
-$$
-Power_{s_1}(Structure) \neq Power_{s_2}(Structure)
-$$
-
-This captures:
-
-- MAUP  
-- projection distortion  
-- aggregation bias  
-- phenomenon‑scale mismatch  
-- resolution‑dependent visibility  
-
-### **Deeper identity**
-$$
-Power_{s_2}(Power_{s_1}(Structure)) \neq Power_{s_1}(Power_{s_2}(Structure))
-$$
-
-This is the geography analogue of:
-
-- renormalization flow  
-- coarse‑grain/refine asymmetry  
-- relationalist micro/meso/macro non‑commutativity  
-
-Thus the tension:
+Define
 
 $$
-Describe(Earth, s_1) \; e \; Describe(Earth, s_2)
+Power_s := \operatorname{ScaleTransform}(s)
 $$
 
-is simply:
+Then
 
 $$
-Power_{s_1}(Structure) \; e \; Power_{s_2}(Structure)
+\operatorname{Describe}(\text{Earth}, s) = Power_s(\text{Structure}).
 $$
 
 ---
 
-## **3. Relationalism compatibility**
-The framework aligns perfectly with relationalism’s triadic architecture:
+## 2. Mathematical correctness
 
-- **Structure = geometric manifold**  
-- **Power = dynamic field acting on it**  
+**Structure is static geometry.** Earth’s geometry does not change with scale.
 
-Geographic scale becomes a **Structure↔Power coupling problem**, not a descriptive mismatch.
+**Power is the dynamic field** that changes what Structure reveals: aggregation, filtering, distortion, and visibility.
 
-Explore the coupling:  
-- Structure–Power coupling
+This matches a Structure / Power triad:
 
----
+- Structure = geometric manifold
+- Power = evaluation + dynamics
 
-## **4. Explanatory power**
-The framework explains phenomena traditionally treated as unrelated:
-
-- disappearance of local patterns at regional scales  
-- global projection distortions  
-- zoning‑dependent statistical shifts  
-- natural scales of processes  
-- irreversibility of zooming  
-
-All follow from:
+**Core identity**
 
 $$
-Power_s : Structure \rightarrow \text{description}
+Power_{s_1}(\text{Structure}) \neq Power_{s_2}(\text{Structure})
 $$
 
-Scale is not a property of data.  
-Scale is a **field acting on geometry**.
+This covers MAUP, projection distortion, aggregation bias, phenomenon-scale mismatch, and resolution-dependent visibility.
+
+**Deeper identity**
+
+$$
+Power_{s_2}\circ Power_{s_1}(\text{Structure}) \neq Power_{s_1}\circ Power_{s_2}(\text{Structure})
+$$
+
+This is the geographic analogue of renormalization-flow asymmetry and micro / meso / macro non-commutativity. The original tension
+
+$$
+\operatorname{Describe}(\text{Earth}, s_1) \neq \operatorname{Describe}(\text{Earth}, s_2)
+$$
+
+is therefore
+
+$$
+Power_{s_1}(\text{Structure}) \neq Power_{s_2}(\text{Structure}).
+$$
 
 ---
 
-## **5. Future work**
-Natural extensions include:
+## 3. Relationalism compatibility
 
-- relationalism mapping  
-- non‑commutative scale operators  
-- algebra of Power fields  
-- Structure→Power coupling law  
-- continuum limit (coarse‑grain/refine operator Γ)  
-- formal definition and identity sheet  
+The mapping is:
+
+- Structure ↦ geometric manifold
+- Power ↦ evaluative / dynamic field
+- scale tension ↦ non-commutativity of field action on the manifold
+
+Geographic scale is then a Structure–Power coupling problem, not a mere descriptive mismatch.
+
+### Correspondence table
+
+| Geography term | Relationalism term | Operator role |
+|---|---|---|
+| Structure_local | Structure_micro | fine-detail geometry |
+| Structure_regional | Structure_meso | connectivity geometry |
+| Structure_global | Structure_macro | manifold-scale geometry |
+| Power_s | Power_s | transforms Structure |
+| Describe(Earth, s) | Power_s(Structure) | field acting on geometry |
+| scale tension | non-commutativity | $Power_{s_1} \neq Power_{s_2}$ |
+| MAUP | Structure–Power mismatch | $Power_s(\text{Structure}_A) \neq Power_s(\text{Structure}_B)$ |
+| projection distortion | metric-field incompatibility | field breaks some metric of Structure |
+
+### Operator dictionary
+
+$$
+\operatorname{Describe}(\text{Earth}, s) \;\mapsto\; Power_s(\text{Structure})
+$$
+
+This preserves operator form, domain, codomain, and non-commutativity.
+
+### Axioms that survive
+
+1. Geometry is primary: Structure is fixed before any field acts.  
+2. Fields transform geometry: $Power_s : \text{Structure} \rightarrow \text{description}$.  
+3. Non-commutativity: $Power_{s_2}\circ Power_{s_1} \neq Power_{s_1}\circ Power_{s_2}$.  
+4. Phenomena have natural scales (coherence radii / characteristic spatial scales).  
+5. Structure constrains admissible fields.
+
+### Axioms that must be weakened
+
+1. **Locality.** Relationalism assumes local coherence; geography often uses arbitrary zonation.  
+2. **Smoothness.** Relationalist fields are typically smooth; geographic scaling fields may be discontinuous at district boundaries.  
+3. **Metric preservation.** Geography cannot preserve area, shape, and distance simultaneously.
+
+These weakenings restrict the class of admissible Power fields; they do not break the mapping.
+
+### Identities preserved
+
+$$
+\begin{align*}
+\operatorname{Describe}(\text{Earth}, s) &= Power_s(\text{Structure}) \\
+Power_{s_1}(\text{Structure}) &\neq Power_{s_2}(\text{Structure}) \\
+Power_{s_2}\circ Power_{s_1} &\neq Power_{s_1}\circ Power_{s_2} \\
+Power_s(\text{Structure}_A) &\neq Power_s(\text{Structure}_B) \\
+Power_s &\text{ breaks some metric of Structure}
+\end{align*}
+$$
 
 ---
+
+## 4. Non-commutative scale operators
+
+A scale operator is a Power field on a Structure manifold:
+
+$$
+Power_s : \text{Structure} \rightarrow \text{description}.
+$$
+
+The family $\{Power_s\}$ is a one-parameter family of operators on a fixed Structure space. The operators do not commute:
+
+$$
+Power_{s_2}\circ Power_{s_1} \neq Power_{s_1}\circ Power_{s_2}.
+$$
+
+Reasons:
+
+- Aggregation destroys information that later operators cannot recover.  
+- Projection distorts metrics differently depending on order.  
+- Zonation changes the geometry on which Power acts.  
+- Phenomena have natural scales and respond differently to order.
+
+**Commutator**
+
+$$
+[Power_{s_2}, Power_{s_1}] = Power_{s_2}\circ Power_{s_1} - Power_{s_1}\circ Power_{s_2}.
+$$
+
+A large commutator corresponds to severe MAUP, projection-class change, or phenomenon-scale mismatch. A small commutator corresponds to nested partitions, compatible projections, and scale-aligned processes.
+
+Special cases of the same identity:
+
+- MAUP: $Power_s(\text{Structure}_A) \neq Power_s(\text{Structure}_B)$
+- projection distortion: $Power_s$ breaks some metric of Structure
+- scale tension: $\operatorname{Describe}(\text{Earth}, s_1) \neq \operatorname{Describe}(\text{Earth}, s_2)$
+- irreversibility of zooming: $Power_{\text{fine}}^{-1}$ generally does not exist
+- phenomenon-scale mismatch: $Power_s$ applied to the wrong Structure hides the phenomenon
+
+---
+
+## 5. Structure–Power operator algebra
+
+Let $\mathcal{S}$ be the Structure space and
+
+$$
+\mathcal{P} = \{Power_s : s \in \Sigma\}
+$$
+
+the family of Power fields. Under composition, $\mathcal{P}$ is a non-commutative monoid (a groupoid when partial inverses exist):
+
+- identity: $Power_{s_0} = \mathrm{Id}$ (“no scaling”)
+- closure: $Power_{s_2}\circ Power_{s_1} \in \mathcal{P}$
+- associativity inherited from function composition
+- defining relation: $Power_{s_2}\circ Power_{s_1} \neq Power_{s_1}\circ Power_{s_2}$
+
+Presentation (informal):
+
+$$
+\mathcal{P} = \langle Power_s \mid Power_{s_0}=\mathrm{Id},\;
+\text{non-commutativity},\;
+\text{MAUP relations},\;
+\text{projection relations} \rangle.
+$$
+
+Partial inverses exist only when aggregation is reversible; global operators rarely invert, so the structure is typically a groupoid rather than a group.
+
+A metric or topology on the scale parameter $s$ would allow continuity, infinitesimal scale change, and a continuum-limit operator (future work).
+
+---
+
+## 6. Structure–Power coupling
+
+Coupling is the constitutive rule that decides which Power fields may act on which Structure regimes. Define
+
+$$
+\mathcal{C} : \text{Structure} \rightarrow \{\text{admissible Power fields}\}.
+$$
+
+Then $Power_s$ is admissible only if
+
+$$
+Power_s \in \mathcal{C}(\text{Structure}).
+$$
+
+**Local Structure** admits high-resolution aggregation and minimal distortion; global projections and coarse regional aggregation are generally inadmissible.  
+**Regional Structure** admits meso-scale aggregation and compatible projections.  
+**Global Structure** admits global projections and coarse smoothing; local zonation and micro-scale metrics are generally inadmissible.
+
+Gauss’s Theorema Egregium implies a strict inclusion of admissible fields:
+
+$$
+\mathcal{C}(\text{Structure}_{\text{global}}) \subsetneq \mathcal{C}(\text{Structure}_{\text{local}}).
+$$
+
+MAUP can be read as a coupling violation: $Power_s \notin \mathcal{C}(\text{Structure})$. Phenomenon-scale mismatch is the same violation applied to the Structure natural to a process.
+
+Full coupling identity:
+
+$$
+\operatorname{Describe}(\text{Earth}, s) = Power_s(\text{Structure})
+\quad\text{subject to}\quad
+Power_s \in \mathcal{C}(\text{Structure})
+$$
+
+together with non-commutativity of the Power family.
+
+---
+
+## 7. Explanatory power
+
+The same operator identities account for:
+
+- disappearance of local patterns at regional scales
+- global projection distortions
+- zoning-dependent statistical shifts
+- natural scales of processes
+- irreversibility of zooming
+
+Scale is not a property of the data. Scale is a field acting on geometry.
+
+---
+
+## Structure–Power Operator Identity Sheet
+
+**Primitives.** Structure is the static geometric manifold (local / regional / global). Power is the dynamic one-parameter family $Power_s : \text{Structure} \rightarrow \text{description}$. The scale parameter is $s \in \Sigma$.
+
+**Description identity**
+
+$$
+\operatorname{Describe}(\text{Earth}, s) = Power_s(\text{Structure})
+$$
+
+**Scale inequality**
+
+$$
+Power_{s_1}(\text{Structure}) \neq Power_{s_2}(\text{Structure})
+$$
+
+**MAUP identity**
+
+$$
+Power_s(\text{Structure}_A) \neq Power_s(\text{Structure}_B)
+$$
+
+**Non-commutativity**
+
+$$
+Power_{s_2}\circ Power_{s_1} \neq Power_{s_1}\circ Power_{s_2}
+$$
+
+**Commutator**
+
+$$
+[Power_{s_2}, Power_{s_1}] = Power_{s_2}\circ Power_{s_1} - Power_{s_1}\circ Power_{s_2}
+$$
+
+**Coupling law**
+
+$$
+Power_s \in \mathcal{C}(\text{Structure})
+$$
+
+**Continuum limit (future work)**
+
+$$
+\Gamma = \lim_{\Delta s \to 0} Power_{s+\Delta s}\circ Power_s^{-1}
+$$
+
+**One-sentence summary.** Geographic description is Power acting on Structure; scale tension and MAUP are the non-commutativity of those operators.
