@@ -49,13 +49,13 @@ Power transforms the geometry. In geography it:
 Define
 
 $$
-Power_s := \operatorname{ScaleTransform}(s)
+Power_s := {ScaleTransform}(s)
 $$
 
 Then
 
 $$
-\operatorname{Describe}(\text{Earth}, s) = Power_s(\text{Structure}).
+{Describe}(\text{Earth}, s) = Power_s(\text{Structure}).
 $$
 
 ---
@@ -88,7 +88,7 @@ $$
 This is the geographic analogue of renormalization-flow asymmetry and micro / meso / macro non-commutativity. The original tension
 
 $$
-\operatorname{Describe}(\text{Earth}, s_1) \neq \operatorname{Describe}(\text{Earth}, s_2)
+{Describe}(\text{Earth}, s_1) \neq {Describe}(\text{Earth}, s_2)
 $$
 
 is therefore
@@ -125,7 +125,7 @@ Geographic scale is then a Structure–Power coupling problem, not a mere descri
 ### Operator dictionary
 
 $$
-\operatorname{Describe}(\text{Earth}, s) \;\mapsto\; Power_s(\text{Structure})
+{Describe}(\text{Earth}, s) \;\mapsto\; Power_s(\text{Structure})
 $$
 
 This preserves operator form, domain, codomain, and non-commutativity.
@@ -150,7 +150,7 @@ These weakenings restrict the class of admissible Power fields; they do not brea
 
 $$
 \begin{align*}
-\operatorname{Describe}(\text{Earth}, s) &= Power_s(\text{Structure}) \\
+{Describe}(\text{Earth}, s) &= Power_s(\text{Structure}) \\
 Power_{s_1}(\text{Structure}) &\neq Power_{s_2}(\text{Structure}) \\
 Power_{s_2}\circ Power_{s_1} &\neq Power_{s_1}\circ Power_{s_2} \\
 Power_s(\text{Structure}_A) &\neq Power_s(\text{Structure}_B) \\
@@ -193,7 +193,7 @@ Special cases of the same identity:
 
 - MAUP: $Power_s(\text{Structure}_A) \neq Power_s(\text{Structure}_B)$
 - projection distortion: $Power_s$ breaks some metric of Structure
-- scale tension: $\operatorname{Describe}(\text{Earth}, s_1) \neq \operatorname{Describe}(\text{Earth}, s_2)$
+- scale tension: ${Describe}(\text{Earth}, s_1) \neq {Describe}(\text{Earth}, s_2)$
 - irreversibility of zooming: $Power_{\text{fine}}^{-1}$ generally does not exist
 - phenomenon-scale mismatch: $Power_s$ applied to the wrong Structure hides the phenomenon
 
@@ -258,7 +258,7 @@ MAUP can be read as a coupling violation: $Power_s \notin \mathcal{C}(\text{Stru
 Full coupling identity:
 
 $$
-\operatorname{Describe}(\text{Earth}, s) = Power_s(\text{Structure})
+{Describe}(\text{Earth}, s) = Power_s(\text{Structure})
 \quad\text{subject to}\quad
 Power_s \in \mathcal{C}(\text{Structure})
 $$
@@ -288,7 +288,7 @@ Scale is not a property of the data. Scale is a field acting on geometry.
 **Description identity**
 
 $$
-\operatorname{Describe}(\text{Earth}, s) = Power_s(\text{Structure})
+{Describe}(\text{Earth}, s) = Power_s(\text{Structure})
 $$
 
 **Scale inequality**
