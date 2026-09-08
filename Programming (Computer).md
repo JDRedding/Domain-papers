@@ -1,10 +1,6 @@
 # Computer Programming
 
-Computer programming is the process of creating instructions (programs) that manipulate and manage data to perform specific tasks or solve problems efficiently. Computer programming is the creation of instructions that control computer behavior. Programs are the vehicles for executing those instructions, and data is what programs act upon to achieve desired outcomes. Understanding how these components interact is foundational to software development and computer science.
-
-## What Is Programming?
-
-Programming involves writing code in languages such as Python, Java, C++, or JavaScript. These languages let programmers express logical instructions that a computer can execute. Programming is used to create software applications, system software, and scripts that automate tasks or process information.
+Computer programming is the process of creating instructions (programs) that manipulate and manage data to perform specific tasks or solve problems efficiently. Computer programming is the creation of instructions that control computer behavior. Programs are the vehicles for executing those instructions, and data is what programs act upon to achieve desired outcomes. Understanding how these components interact is foundational to software development and computer science. Programming involves writing code in languages such as Python, Java, C++, or JavaScript. These languages let programmers express logical instructions that a computer can execute. Programming is used to create software applications, system software, and scripts that automate tasks or process information.
 
 ## Programs and Software
 
@@ -36,8 +32,19 @@ Programs and data have a dynamic relationship: programs define how data is inter
 
 ## Links
 
-- Comp Programming Basics https://www.symbaloo.com/shared/AAAAAYCqrvYAA41-4LbN3A== (https://www.symbaloo.com/home/mix/13eOcK70c0)
-- Programming ] https://www.symbaloo.com/shared/AAAAAYC1rMEAA41-4IzwLQ== 
+- Comp Programming Basics
+- https://www.symbaloo.com/shared/AAAAAYCqrvYAA41-4LbN3A==
+- https://www.symbaloo.com/home/mix/13eOcK70c0
+  
+- Programming ]
+- https://www.symbaloo.com/shared/AAAAAYC1rMEAA41-4IzwLQ==
+-
+
+- Programming ][
+- 
+
+
+
 
 ## Further work 
 
