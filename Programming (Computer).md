@@ -36,8 +36,8 @@ Programs and data have a dynamic relationship: programs define how data is inter
 
 ## Links
 
-Comp Programming Basics https://www.symbaloo.com/shared/AAAAAYCqrvYAA41-4LbN3A== (https://www.symbaloo.com/home/mix/13eOcK70c0)
-Programming ] https://www.symbaloo.com/shared/AAAAAYC1rMEAA41-4IzwLQ== 
+- Comp Programming Basics https://www.symbaloo.com/shared/AAAAAYCqrvYAA41-4LbN3A== (https://www.symbaloo.com/home/mix/13eOcK70c0)
+- Programming ] https://www.symbaloo.com/shared/AAAAAYC1rMEAA41-4IzwLQ== 
 
 ## Further work 
 
