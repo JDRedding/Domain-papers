@@ -54,6 +54,8 @@ The technology that combines computer software and hardware to overlay computer-
 
 ## Applications
 
+Special computer methods for AR and VR integrate computer graphics, computer vision, sensor fusion, and AI to create immersive, interactive experiences. They enable occlusion-aware rendering, real-time object manipulation, gesture recognition, and dynamic user interfaces, all of which are critical for realistic and intuitive interaction across diverse applications. Emerging trends focus on combining hybrid sensor inputs, lightweight deep learning models, and edge computing to optimize performance and expand accessibility.
+
 | Domain | Examples |
 | --- | --- |
 | Gaming | Games such as *Pokémon Go* overlay digital characters on real locations |
