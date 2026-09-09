@@ -1,4 +1,5 @@
 # Augmented Reality and Virtual Reality
+- Special computer methods
 
 Augmented reality (AR) overlays digital information onto the real world. Virtual reality (VR) immerses users in a completely digital environment. Together they offer complementary paths to interactive and immersive experiences. AR enriches reality with interactive digital layers. VR immerses users in entirely virtual worlds. Both support new ways to work, learn, and play. Understanding their differences helps individuals and organizations apply them effectively in entertainment, productivity, and training. AR is the combination of computer hardware and software that enhances reality by presenting digital data alongside the physical world. The result is interactive, informative experiences that keep the user grounded in real surroundings.
 
