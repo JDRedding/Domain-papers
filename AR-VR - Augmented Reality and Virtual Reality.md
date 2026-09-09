@@ -140,4 +140,8 @@ Special computer methods for AR and VR integrate computer graphics, computer vis
 
 - Real-time interaction with the physical environment  
 - Seamless integration of digital content with the real world  
-- Availability on a range of AR-enabled devices  
+- Availability on a range of AR-enabled devices
+
+## External links
+- [Bodyware wearables](https://www.symbaloo.com/shared/AAAAAYSt6vsAA41-4K6M4w==)
+  - https://www.symbaloo.com/home/mix/13eOcK1L8d
