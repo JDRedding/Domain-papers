@@ -141,25 +141,24 @@ Courses and learning resources (such as Harvard) emphasize:
 
 Finding reliable and comprehensive references is essential for understanding programming concepts, improving coding skills, and staying current with modern practices. Below is a curated set of textbooks, official documentation, online platforms, and academic sources. Combine books for theory, official documentation for day-to-day coding, and online platforms for practice.  Keep a personal coding journal with links, examples, and solutions for quick lookup. Study open-source projects on GitHub to see real-world structure and conventions. These sources together support beginners, intermediate learners, and advanced programmers. They also align with Dewey Decimal class 005—programming, programs, data handling, and software quality—by covering both foundational concepts and practical engineering practice.
 
+### 1. Books (Foundational and Advanced)
 
-1. Books (Foundational and Advanced)
-
-The C Programming Language** — Brian W. Kernighan and Dennis M. Ritchie  
+**The C Programming Language** — Brian W. Kernighan and Dennis M. Ritchie  
   Classic reference for C and foundational programming concepts.
 
-Structure and Interpretation of Computer Programs** — Harold Abelson and Gerald Jay Sussman  
+**Structure and Interpretation of Computer Programs** — Harold Abelson and Gerald Jay Sussman  
   Covers programming paradigms, abstraction, and software design; widely used in academic courses.
 
-Introduction to Algorithms** — Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein  
+**Introduction to Algorithms** — Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein  
   Comprehensive treatment of data structures and algorithms.
 
-Clean Code: A Handbook of Agile Software Craftsmanship** — Robert C. Martin  
+**Clean Code: A Handbook of Agile Software Craftsmanship** — Robert C. Martin  
   Focuses on best practices, readability, and maintainable code.
 
-Design Patterns: Elements of Reusable Object-Oriented Software** — Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides  
+**Design Patterns: Elements of Reusable Object-Oriented Software** — Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides  
   Standard reference for object-oriented design patterns.
 
-2. Official Documentation and Language References
+### 2. Official Documentation and Language References
 
 | Language | Resource |
 | --- | --- |
@@ -169,14 +168,14 @@ Design Patterns: Elements of Reusable Object-Oriented Software** — Erich Gamma
 | C / C++ | cppreference.com — language features and standard libraries |
 | Rust | The Rust Programming Language — official book and reference |
 
-3. Online Learning Platforms and Practical References
+### 3. Online Learning Platforms and Practical References
 
 GeeksforGeeks — tutorials, problem-solving, and algorithm explanations  
 Stack Overflow — community Q&A for troubleshooting  
 freeCodeCamp — free interactive tutorials on web technologies and general programming  
 LeetCode — coding problems, especially useful for interview practice  
 
-4. Academic References and Research
+### 4. Academic References and Research
 
 ACM Digital Library — peer-reviewed computer science papers  
 IEEE Xplore — articles on algorithms, programming languages, and software engineering  
