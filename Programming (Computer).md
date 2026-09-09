@@ -162,11 +162,11 @@ Finding reliable and comprehensive references is essential for understanding pro
 
 | Language | Resource |
 | --- | --- |
-| Python | docs.python.org/3 — tutorials and standard library reference |
-| Java | docs.oracle.com/en/java — Java SE documentation |
-| JavaScript | MDN Web Docs — primary reference for browser JavaScript |
-| C / C++ | cppreference.com — language features and standard libraries |
-| Rust | The Rust Programming Language — official book and reference |
+| Python | [docs.python.org/3](https://docs.python.org/3/) — tutorials and standard library reference |
+| Java | [docs.oracle.com/en/java](https://docs.oracle.com/en/java/) — Java SE documentation |
+| JavaScript | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) — primary reference for browser JavaScript |
+| C / C++ | [cppreference.com](https://en.cppreference.com/w/) — language features and standard libraries |
+| Rust | [The Rust Programming Language](https://doc.rust-lang.org/book/) — official book and reference |
 
 ### 3. Online Learning Platforms and Practical References
 
@@ -188,7 +188,7 @@ Coursera / edX — university courses (MIT, Stanford, Harvard, and others) with 
 - **Debugging:** Finding and fixing errors in programs.
 - **Input/output (I/O):** Mechanisms by which a program communicates with users or external data sources.
 
-## Reference and further reading
+## References and further reading
 - Rebus Press. *Programming Fundamentals: Program Quality*  
 - LibreTexts. *Program Quality: Programming and Computation Fundamentals*  
 - GeeksforGeeks. *Software Quality in Software Engineering*
@@ -198,16 +198,3 @@ Coursera / edX — university courses (MIT, Stanford, Harvard, and others) with 
 - Comp Programming Basics
   - https://www.symbaloo.com/shared/AAAAAYCqrvYAA41-4LbN3A==
   - https://www.symbaloo.com/home/mix/13eOcK70c0
-
-
-
-
-
-
-
-
-
-
-
-
-
