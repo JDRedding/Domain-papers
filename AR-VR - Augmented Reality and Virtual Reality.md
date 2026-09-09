@@ -52,6 +52,64 @@ The technology that combines computer software and hardware to overlay computer-
 
 **Mixed Reality (MR)** combines AR and VR so users can interact with digital objects in a real physical context. Spatial computing and gesture tracking make interaction with virtual objects more natural. Enterprise use is growing in automotive, manufacturing, and remote collaboration. AI-generated 3D assets are expanding immersive content and storytelling.
 
+## Techniques in AR/VR
+
+### Visual Display Techniques
+
+**Stereoscopy and depth perception**  
+Stereograms, binocular disparity, and multi-view projections simulate depth for immersive perception.
+
+**Shutter and polarization systems**  
+Active liquid-crystal shutter glasses or passive polarizing filters deliver a separate image to each eye to produce 3D perception.
+
+**Volumetric displays and light-field rendering**  
+Voxels or micro-lens arrays project 3D images into space and support multiple viewpoints at once.
+
+**Foveated rendering**  
+Resolution is increased at the user’s gaze center and reduced in the periphery, improving performance without a large drop in perceived quality.
+
+### Computer Vision Techniques
+
+**Simultaneous Localization and Mapping (SLAM)**  
+Essential for AR. Visual SLAM, LiDAR SLAM, and fusion-based SLAM track device position and map the environment in real time.
+
+**Object recognition and tracking**  
+Detect and follow real-world objects so virtual elements can be placed, moved, and occluded accurately.
+
+**Occlusion handling**  
+Depth maps from RGB-D cameras or LiDAR, often combined with machine learning, hide or reveal virtual objects relative to real obstacles.
+
+**Surface detection and scene understanding**  
+Identify planar surfaces, edges, and 3D geometry so virtual objects can be anchored in the scene.
+
+### Sensor Fusion and Multimodal Interaction
+
+- Cameras, LiDAR, IMUs, and tactile sensors are combined for a richer model of the environment.  
+- Hand gestures, eye tracking, and body motion support natural control of digital objects.  
+- Real-time pose estimation and gesture classification allow interaction without physical controllers.
+
+### Machine Learning and AI Approaches
+
+**Semantic segmentation and instance detection**  
+Architectures such as GCNet (segmentation) and Detectron2 / Mask R-CNN (detection) improve how virtual content aligns with the real scene.
+
+**Depth estimation from monocular or stereo images**  
+CNNs predict depth when specialized sensors are unavailable, which improves occlusion realism.
+
+**Real-time gesture recognition**  
+Hybrid marker-based and markerless methods support accurate hand-pose estimation and interactive control.
+
+### Interaction and User Interface Methods
+
+**Dynamic UI overlays**  
+Computer vision adapts AR interface elements so they stay visible, relevant, and free of occlusion conflicts.
+
+**Gaze and eye-tracking interfaces**  
+Compute more detail where the user is looking and enable gaze-based selection.
+
+**Haptic feedback and physics simulation**  
+Tactile cues and physical behavior make object interaction more realistic in both AR and VR.
+
 ## Applications
 
 Special computer methods for AR and VR integrate computer graphics, computer vision, sensor fusion, and AI to create immersive, interactive experiences. They enable occlusion-aware rendering, real-time object manipulation, gesture recognition, and dynamic user interfaces, all of which are critical for realistic and intuitive interaction across diverse applications. Emerging trends focus on combining hybrid sensor inputs, lightweight deep learning models, and edge computing to optimize performance and expand accessibility.
@@ -61,7 +119,20 @@ Special computer methods for AR and VR integrate computer graphics, computer vis
 | Gaming | Games such as *Pokémon Go* overlay digital characters on real locations |
 | Education and training | Medical students visualize anatomy on real bodies or simulators |
 | Retail and e-commerce | Try-on apps show furniture, clothing, or accessories in the user’s space |
-| Industry | Technicians receive projected assembly, maintenance, or repair instructions on equipment |
+
+### Specialized Applications
+
+| Domain | Uses |
+| --- | --- |
+| Healthcare | Surgical simulation, rehabilitation, anatomy visualization |
+| Industry and manufacturing | Maintenance, assembly, and real-time AR instructions |
+
+## Limitations and Challenges
+
+- **Computation** — Real-time rendering and AI need substantial processing power.  
+- **Hardware** — Accurate depth sensing, high-refresh-rate displays, and wearable weight/battery limits remain constraints.  
+- **Environment** — Variable lighting, occlusions, and texture-poor surfaces reduce tracking accuracy.  
+- **Users** — VR motion sickness and AR ergonomic strain limit long sessions.
 
 ---
 
@@ -70,5 +141,3 @@ Special computer methods for AR and VR integrate computer graphics, computer vis
 - Real-time interaction with the physical environment  
 - Seamless integration of digital content with the real world  
 - Availability on a range of AR-enabled devices  
-
-
