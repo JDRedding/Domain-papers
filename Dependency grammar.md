@@ -97,7 +97,7 @@ so an arc is written $i \xrightarrow{r} j $.
 
 ### Projectivity
 
-Let $[i,j]$ denote the closed interval of positions between $i $ and $j$ (inclusive). Write $i \to^* j$ for the reflexive-transitive closure of $\to $(“$ j$ is a descendant of $ i $”).
+Let $[i,j]$ denote the closed interval of positions between $i$ and $j$ (inclusive). Write $i \to^* j$ for the reflexive-transitive closure of $\to $(“$ j$ is a descendant of $i$”).
 
 A tree is **projective** if and only if the yield (projection) of every node is a contiguous interval. Equivalently (Marcus 1965 / Hays–Gaifman):
 
@@ -105,7 +105,7 @@ $$
 \forall a,b,x \in V:\quad (a \to b \;\land\; x \text{ lies strictly between } a \text{ and } b) \;\implies\; a \to^* x.
 $$
 
-In other words, if there is an arc from $i $ to $j $, every word lying linearly between them must be a descendant of $i$. Non-projective trees allow crossing arcs.
+In other words, if there is an arc from $i$ to $j$, every word lying linearly between them must be a descendant of $i$. Non-projective trees allow crossing arcs.
 
 ### Hays–Gaifman generative formulation
 
@@ -124,7 +124,7 @@ $$
 X \to Y_1 \dots Y_k \; X \; Z_1 \dots Z_m
 $$
 
-  meaning “a word of category $X$ may take left dependents of categories $ Y_i$ and right dependents of categories $Z_j$”.
+  meaning “a word of category $X$ may take left dependents of categories $Y_i$ and right dependents of categories $Z_j$”.
 
 The generated structures are exactly the projective dependency trees.
 
