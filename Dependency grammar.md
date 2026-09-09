@@ -77,7 +77,7 @@ where
 - $V = \{1, 2, \dots, n\}$ (nodes correspond one-to-one with word tokens),
 - $A \subseteq V \times V$ is the set of directed arcs.
 
-An arc $(i,j) \in A$ (written $i \to j$) means “$w_i$ is the **head** of $w_j$” (or “$w_j$ **depends on** $w_i $”).
+An arc $(i,j) \in A$ (written $i \to j$) means " $w_i$ is the **head** of $w_j$ ” (or “$w_j$ **depends on** $w_i $”).
 
 A **dependency tree** is a dependency graph that satisfies three axioms:
 
