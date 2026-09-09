@@ -97,7 +97,7 @@ Data is the information that programs process. It can take many forms:
 - Stacks and queues manage data in specific access orders.
 - Hash tables provide fast lookups by keys.
 - Trees and graphs handle hierarchical and relational data.
-- 
+  
 Understanding their strengths and weaknesses allows you to build efficient algorithms and applications.
 Data structures are a foundational concept in computer science and are crucial for solving problems efficiently. Start by mastering arrays, lists, and dictionaries, then move on to advanced structures like trees and graphs.
 
