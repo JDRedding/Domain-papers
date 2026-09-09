@@ -67,37 +67,37 @@ Despite differences, they share core commitments:
 
 ### Graph-theoretic definition
 
-A **dependency graph** for a sentence $ S = w_1 w_2 \dots w_n $ is a directed graph
+A **dependency graph** for a sentence $S = w_1 w_2 \dots w_n$ is a directed graph
 
 $$
 G = (V, A)
 $$
 
 where
-- $ V = \{1, 2, \dots, n\} $ (nodes correspond one-to-one with word tokens),
-- $ A \subseteq V \times V $ is the set of directed arcs.
+- $V = \{1, 2, \dots, n\}$ (nodes correspond one-to-one with word tokens),
+- $A \subseteq V \times V$ is the set of directed arcs.
 
-An arc $ (i,j) \in A $ (written $ i \to j $) means “$ w_i $ is the **head** of $ w_j $” (or “$ w_j $ **depends on** $ w_i $”).
+An arc $(i,j) \in A$ (written $i \to j$) means “$w_i$ is the **head** of $w_j$” (or “$w_j$ **depends on** $w_i $”).
 
 A **dependency tree** is a dependency graph that satisfies three axioms:
 
-1. **Single root**: there exists a unique root $ r \in V $ with in-degree 0.
+1. **Single root**: there exists a unique root $r \in V  with in-degree 0.
 2. **Single head** (uniqueness): every node except the root has in-degree exactly 1.
-3. **Acyclicity and connectedness**: $ G $ is a tree (equivalently, there is a unique directed path from the root to every node).
+3. **Acyclicity and connectedness**:  $G$ is a tree (equivalently, there is a unique directed path from the root to every node).
 
 These are Robinson’s classic axioms (1970).
 
-Labeled versions add a finite set of relation labels $ R $:
+Labeled versions add a finite set of relation labels $R$:
 
 $$
 A \subseteq V \times R \times V,
 $$
 
-so an arc is written $ i \xrightarrow{r} j $.
+so an arc is written $i \xrightarrow{r} j $.
 
 ### Projectivity
 
-Let $ [i,j] $ denote the closed interval of positions between $ i $ and $ j $ (inclusive). Write $ i \to^* j $ for the reflexive-transitive closure of $ \to $ (“$ j $ is a descendant of $ i $”).
+Let $[i,j]$ denote the closed interval of positions between $i $ and $j$ (inclusive). Write $i \to^* j$ for the reflexive-transitive closure of $\to $(“$ j$ is a descendant of $ i $”).
 
 A tree is **projective** if and only if the yield (projection) of every node is a contiguous interval. Equivalently (Marcus 1965 / Hays–Gaifman):
 
@@ -105,7 +105,7 @@ $$
 \forall a,b,x \in V:\quad (a \to b \;\land\; x \text{ lies strictly between } a \text{ and } b) \;\implies\; a \to^* x.
 $$
 
-In other words, if there is an arc from $ i $ to $ j $, every word lying linearly between them must be a descendant of $ i $. Non-projective trees allow crossing arcs.
+In other words, if there is an arc from $i $ to $j $, every word lying linearly between them must be a descendant of $i$. Non-projective trees allow crossing arcs.
 
 ### Hays–Gaifman generative formulation
 
@@ -115,28 +115,28 @@ $$
 G = \langle R, L, C, F \rangle
 $$
 
-- $ L $ = terminal lexicon,
-- $ C $ = set of categories (non-terminals),
-- $ F : L \to C $ assignment of categories,
-- $ R $ = finite set of rules of the form
+- $L$ = terminal lexicon,
+- $C$ = set of categories (non-terminals),
+- $F : L \to C$ assignment of categories,
+- $R$ = finite set of rules of the form
 
 $$
 X \to Y_1 \dots Y_k \; X \; Z_1 \dots Z_m
 $$
 
-  meaning “a word of category $ X $ may take left dependents of categories $ Y_i $ and right dependents of categories $ Z_j $”.
+  meaning “a word of category $X$ may take left dependents of categories $ Y_i$ and right dependents of categories $Z_j$”.
 
 The generated structures are exactly the projective dependency trees.
 
 ### Mel’čuk / Meaning–Text notation
 
-Syntactic dependency of type $ r $ is written
+Syntactic dependency of type $r$ is written
 
 $$
 w_1 \xrightarrow{r} w_2
 $$
 
-($ w_1 $ governs $ w_2 $). The relation is required to be
+($w_1$ governs $w_2 $). The relation is required to be
 - anti-symmetric,
 - anti-reflexive,
 - anti-transitive (no “shortcut” arcs),
