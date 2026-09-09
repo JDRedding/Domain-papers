@@ -87,7 +87,7 @@ Original Crystadyne schematics printed before 1938:
 
 ## Historical note
 
-Later research identifies the main practical worker as **Oleg Losev** (Nizhny Novgorod Radio Laboratory, from 1922). Hugo Gernsback popularized the name **Crystodyne** in the West. Losev used biased zincite–steel or zincite–carbon contacts as oscillators, amplifiers, and regenerative receivers—solid-state circuits about twenty-five years before the transistor. 
+Later research identifies the main practical worker as **Oleg Losev** (Nizhny Novgorod Radio Laboratory, from 1922). Hugo Gernsback popularized the name **Crystodyne** in the West. Losev used biased zincite–steel or zincite – carbon contacts as oscillators, amplifiers, and regenerative receivers — solid-state circuits about twenty-five years before the transistor. 
 
 ---
 
