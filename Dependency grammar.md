@@ -62,8 +62,7 @@ Despite differences, they share core commitments:
 - **DG scales cross-linguistically** (UD project).  
 
 
-##  modern notation
-
+##  Modern notation
 **Dependency grammar** is formalized as a directed graph (almost always a tree) over the words of a sentence. The standard modern notation and constraints are as follows. These are the core equations and constraints used across Tesnière-style stemmas, Word Grammar networks, Meaning–Text Theory, Universal Dependencies, and modern dependency parsers.
 
 ### Graph-theoretic definition
