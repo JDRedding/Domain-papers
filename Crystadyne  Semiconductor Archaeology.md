@@ -98,7 +98,7 @@ Adapted from *Semiconductor Archaeology, or Tribute to Unknown Precursors*
 
 ## APPENDIX: Notation
 
-Notation is chosen so the same symbols work from a 1920s zincite contact through a modern NDR-oscillator model. Losev did not publish a closed semiconductor band theory; he measured I–V curves and stated that oscillation occurs only on the **falling** part of the characteristic. The formulas are the ones that make that statement quantitative.  Early “theory” was a microscopic voltaic-arc / negative temperature-coefficient story; by the later 1920s he favored electronic processes in the contact. The circuit mathematics above is the part that is independent of that microscopic guess and is the same mathematics later used for tunnel, Gunn, and IMPATT oscillators.
+Notation is chosen so the same symbols work from a 1920s zincite contact through a modern NDR-oscillator model. Losev did not publish a closed semiconductor band theory; he measured I–V curves and stated that oscillation occurs only on the **falling** part of the characteristic. The formulas are the ones that make that statement quantitative.  Early “theory” was a microscopic voltaic-arc / negative temperature-coefficient story; by the later 1920s he favored electronic processes in the contact. The circuit mathematics is the part that is independent of that microscopic guess and is the same mathematics later used for tunnel, Gunn, and IMPATT oscillators.
 
 ---
 
