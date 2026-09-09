@@ -32,11 +32,13 @@ Insights from sources indicate the following rules and focus areas.
 
 ## Programs and Software
 
-A program is a set of instructions a computer follows to perform a task. Programs can be classified into several types:
+Programs are executed by the CPU, which interprets their instructions. A program is a set of instructions a computer follows to perform a task. Programs can be classified into several types:
 
 - **System software:** Operating systems such as Windows, macOS, or Linux that manage computer hardware and provide services to other software.
 - **Application software:** Programs designed for specific user tasks, such as word processors, web browsers, or video editors.
 - **Utility programs:** Tools that help maintain or optimize a computer, such as antivirus software or disk cleanup utilities.
+
+Programming often involves manipulating data through input, computation, storage, retrieval, and output. Efficient handling of data is central to functional, high-performance software. A **program** is a set of instructions written in a programming language that a computer executes to perform specific tasks. It is the logic or algorithm that drives the computer’s operations. Programs enable computers to process data and produce meaningful outputs. Examples include word processors, games, and database systems. Programs are typically more complex and harder to understand than data, which is often straightforward. Programs are written in languages such as Python, Java, or C++; data exists as text files, images, audio clips, and similar forms.
 
 Programs interact with data, perform computations, and produce outputs based on user or system inputs.
 
@@ -80,7 +82,8 @@ Data is the information that programs process. It can take many forms:
 - **Structured data:** Arrays, lists, dictionaries, and other collections with defined formats.
 - **Files and databases:** Persistent storage from which programs store or retrieve information.
 
-Programming often involves manipulating data through input, computation, storage, retrieval, and output. Efficient handling of data is central to functional, high-performance software.
+
+**Data** is the information that is processed or stored by a computer. It can take many forms—text, images, audio, or video—and serves as input or output for programs. Data provides the content or context that programs operate on. Data is not executed; programs use it to produce results. For example, a spreadsheet program processes numerical data to generate charts or perform calculations.
 
 ## The Programs and Data Relationship
 
@@ -89,6 +92,24 @@ Programs and data have a dynamic relationship: programs define how data is inter
 - A program calculates statistics from a dataset.
 - A web application displays user information retrieved from a database.
 - A video editor manipulates multimedia files to produce visual content.
+
+| Program | Data |
+| --- | --- |
+| Collection of software instructions understandable by the CPU | Information stored on computer storage (e.g., hard disk) |
+| Goes to the CPU; the CPU uses the instructions to decide which operations to perform | Does not go into the CPU as instructions; used by programs to execute processes |
+| Used to produce expected output when executed | Used to help determine causes of problems and support analysis |
+| Helps with decision-making | Does not itself make decisions |
+| Examples: word processors, games, graphic programs, database systems | Examples: personal data, transactional data, web data, sensor data |
+| Makes the computer active; a computer without programs is inert | Affects *how* the computer performs, because processing depends on the type of data |
+| Not simple; often hard to understand | Simple and relatively easy to understand |
+| Speeds up input and output processes | Helps establish baselines and visualize relationships across locations, departments, and systems |
+| Languages: C, C++, Java, Pascal, Python, etc. | Forms: images, text documents, audio clips, Boolean data, etc. |
+
+### Key Distinctions
+- **Execution:** Programs run; data is operated on.  
+- **Role:** Programs provide logic and control; data provides content.  
+- **Complexity:** Programs encode algorithms and control flow; data is typically structured information.  
+- **Relationship:** Programs without data have nothing to process; data without programs cannot be transformed into useful results.
 
 ## Educational and Practical Context
 
