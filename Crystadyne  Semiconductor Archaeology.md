@@ -186,7 +186,7 @@ which is negative for $|V|<\sqrt{-a/3b}$.
 
 ## 4. Series-tank Crystadyne oscillator
 
-The Gernsback / Losev RF layout is a **series** $L$–$C$ circuit in series with the contact and a positive resistance $R$ (coil loss, phones, ballast). Bias is applied through a potentiometer so the AC loop sees $-r$.
+The Gernsback / Losev RF layout is a **series** $L$ – $C$ circuit in series with the contact and a positive resistance $R$ (coil loss, phones, ballast). Bias is applied through a potentiometer so the AC loop sees $-r$.
 
 Kirchhoff’s voltage law for the AC current $i(t)$:
 
