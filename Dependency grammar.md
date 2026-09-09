@@ -97,7 +97,7 @@ so an arc is written $i \xrightarrow{r} j $.
 
 ### Projectivity
 
-Let $[i,j]$ denote the closed interval of positions between $i$ and $j$ (inclusive). Write $i \to^* j$ for the reflexive-transitive closure of $\to $(“$ j$ is a descendant of $i$”).
+Let $[i,j]$ denote the closed interval of positions between $i$ and $j$ (inclusive). Write $i \to^* j$ for the reflexive-transitive closure of $\to$ (“ $j$ is a descendant of $i$ ”).
 
 A tree is **projective** if and only if the yield (projection) of every node is a contiguous interval. Equivalently (Marcus 1965 / Hays–Gaifman):
 
