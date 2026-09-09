@@ -324,7 +324,7 @@ $$
 
 ---
 
-## 8. What Losev actually measured
+## 8. What Losev measured
 
 He did **not** write $I=I_s(e^{qV/kT}-1)$. He recorded static characteristics $I=I(V)$ of zincite–steel and zincite–carbon, noted a region with
 
