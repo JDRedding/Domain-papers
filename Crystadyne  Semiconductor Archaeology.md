@@ -333,3 +333,39 @@ $$
 $$
 
 and showed that a series (or switchable audio/RF) tank connected there produces undamped oscillation at a frequency equal to, or slightly below, the tank’s own frequency, depending on the chosen point on the curve.
+
+## APPENDIX: Negative temperature coefficient (NTC)
+
+A negative temperature coefficient (NTC) means electrical resistance falls as temperature rises. That is the opposite of ordinary metals, which have a positive temperature coefficient (PTC) because lattice vibrations scatter electrons more strongly as they heat up.
+
+In a microscopic voltaic arc the distinction matters. Two conductors sit a few micrometers apart; a modest voltage produces a localized discharge. Current density is high, Joule heating is intense, and the temperature of the tiny contact zone can jump on a millisecond time scale. If that zone contains an oxide film, ceramic grain or doped semiconductor, the material is usually NTC.
+
+### Resistance–temperature relation
+
+The simplest useful model is the $\beta$-equation
+
+$$
+R(T)=R_\infty\exp\left(\frac{B}{T}\right)
+$$
+
+or, equivalently,
+
+$$
+R(T)=R_0\exp\left[B\left(\frac{1}{T}-\frac{1}{T_0}\right)\right].
+$$
+
+$B$ is an activation-energy constant (typically 2000–5000 K). As soon as the arc heats the junction, the exponential drop in resistance lets more current flow, which produces still more heat. The feedback is self-reinforcing and can drive micro-melting, surface migration or a sudden transition into a denser plasma.
+
+A more accurate three-parameter fit is the Steinhart–Hart equation
+
+$$
+\frac{1}{T}=A+B\ln R+C(\ln R)^3,
+$$
+
+but the two-parameter $\beta$-model is usually sufficient for first-order arc simulations.
+
+### Contrast with metals
+
+In a metallic micro-contact the same heating raises resistance, which tends to limit current. In an NTC interface the opposite occurs: current is amplified. That is why oxide-covered or semiconductor contacts often show abrupt “snap-on” behavior and why they are studied in vacuum microelectronics, MEMS switches and spark-erosion research.
+
+The net result is that the microscopic arc’s voltage–current characteristic, its stability and the rate of electrode erosion are all governed by the local NTC response rather than by the bulk metallic properties of the electrodes.
