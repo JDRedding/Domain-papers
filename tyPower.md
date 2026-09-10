@@ -188,7 +188,7 @@ These show how tyPower becomes a backbone for real systems. These diagrams empha
 These diagrams emphasize **theoretical clarity**. These show tyPower as a conceptual framework.
 
 - **tyPower architecture diagram** — sorts, combinators, symmetry, interaction rules.  
-- **tyPower ecosystem diagram** — how tyPower integrates with RDG, operator algebras, ML, physics.  
+- **tyPower ecosystem diagram** — how tyPower integrates with relationals, operator algebras, ML, physics.  
 - **tyPower hierarchy diagram** — multi‑level structure: sorts → combinators → equivariance → applications.  
 - **tyPower meta‑operator diagram** — combinators acting on combinators.
 
