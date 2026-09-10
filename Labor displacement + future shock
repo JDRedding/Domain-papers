@@ -1,0 +1,72 @@
+Labor displacement + future shock
+MODEL  2026-09-10
+
+TYPES
+  Sector          : trucking | clerical | code | claims | care | trades
+  Mile            : loaded long-haul interstate ton-mile
+  Task            : atomic unit of work (drive, file, draft, exception)
+  Job             : bundle of tasks + identity + wage
+  ODD             : operational design domain (weather, map, road class)
+  Tail            : work outside ODD (ice, yard, crash, customer site)
+  OpsCenter       : remote-assist / AI corp dispatch (1:few -> 1:many)
+  Shock           : social lag after economic share has already moved
+
+VARIABLES
+  A = share of MILES automated          // corridor story
+  J = share of JOBS deleted             // not equal to A
+  T = share of TASKS automated          // closest to "60%"
+  W = weather/ODD coverage
+  U = truck utilization hours/day       // human ~11; AV target ~20+
+  R = remote-assist ratio               // humans per N trucks
+  L = labor share of operating cost     // long-haul often 0.35-0.45
+  D = demand for remaining human work
+  S = public awareness                  // low until after pricing moves
+
+FUNDAMENTALS
+  1. "all" is rhetoric. remainder always exists.
+  2. 85-15  = highway linehaul in reasonable weather
+              85% miles AV, 15% tails human
+  3. 60-40  = aggregate labor hit across sectors
+              60% of routine TASKS, not 60% of every JOB
+  4. tasks != jobs != miles
+     A can be high while J stays moderate
+  5. one sector is a story
+     same pattern in parallel is a regime
+  6. creep then recognition
+     markets price A before institutions price J
+  7. plateau claim ("search and replace")
+     judges the present demo
+  8. curve claim ("future shock")
+     judges lag between working corridor and public map
+
+CLAIMS IN THREAD
+  JD: UBI inevitable as labor-share patch
+      OTR easiest to imagine; bots later for fine control
+      not all; 85-15 or 60-40; rough times
+      shock arrives before you clock it
+      most people not looking
+
+  MD: pre-IPO labs unsustainable / political speech
+      remain skeptical
+      current stack = better search and replace
+
+RESOLUTION FRAME
+  both can be true at once:
+    demo looks incremental
+    commercial middle already compounding
+      (mapped interstate + back office + first-pass cognition)
+
+SHOCK FUNCTION
+  shock ~= dA/dt  -  dS/dt
+  high when miles/tasks move faster than awareness
+
+  rough times if
+    T_mid rises across many sectors in same window
+    D does not rebuild at same wage/place
+    L falls faster than prices recycle into demand
+
+NOT REQUIRED FOR SHOCK
+  100% job wipe
+  humanoid general robots
+  nationwide winter ODD
+  every last-mile stop unmanned
