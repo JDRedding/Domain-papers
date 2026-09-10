@@ -1,0 +1,78 @@
+CONVENTIONAL VACUUM vs ZPF-AS-MEDIUM
+====================================
+
+TYPES
+-----
+dimensional constants : hbar, c, e, epsilon_0
+dimensionless constant : alpha
+local observables     : atomic spectra, clocks, light travel
+frameworks            : QFT + GR   vs   SED / Setterfield-style ZPF
+
+VARIABLES / SYMBOLS
+-------------------
+hbar      reduced Planck constant          [J s]
+c         speed of light in vacuum         [m s^-1]
+e         elementary charge                [C]
+epsilon_0 vacuum permittivity              [F m^-1]
+alpha     fine-structure constant          [dimensionless]
+
+alpha = e^2 / (4 pi epsilon_0 hbar c)
+
+ZPE / ZPF   zero-point energy / zero-point field
+SED         stochastic electrodynamics
+EEP / LPI   Einstein equivalence principle / local position invariance
+
+
+FUNDAMENTALS
+------------
+1. Only dimensionless combinations are unambiguously observable.
+   Coordinated changes in hbar and c that keep alpha fixed
+   can often be absorbed into units.
+
+2. Local position invariance:
+   a local inertial observer measures the same local physics
+   (same hbar, same c) everywhere, after ordinary GR redshift
+   and time dilation are removed.
+
+3. QFT vacuum effects (Casimir, Lamb shift, vacuum polarization)
+   are calculated ON TOP OF fixed constants.
+   They do not redefine hbar or c from place to place.
+
+4. Existing GC bound (S-star spectroscopy near Sgr A*):
+   Delta alpha / alpha  <~  10^-5 to 10^-6
+   This constrains the combination that appears in atomic lines,
+   not hbar and c separately.
+
+
+TWO PICTURES
+------------
+
+A. CONVENTIONAL  (QFT + GR)
+   Vacuum is not empty, but it is operationally transparent.
+   Local laws do not depend on location.
+   Gravity bends paths and shifts frequencies.
+   Gravity does not thicken the vacuum and thereby
+   raise hbar and lower c.
+   Prediction: locally measured hbar and c at the
+   galactic center equal the terrestrial values.
+
+B. ZPF-AS-MEDIUM  (SED / post claim)
+   Vacuum is a real stochastic EM background.
+   Local ZPE density ("thickness") SETS the constants.
+   Higher density  =>  hbar increases, c decreases,
+   alpha held fixed by compensating changes in
+   hbar, c, and epsilon_0.
+   Prediction: measure hbar at Milky Way center;
+   it is higher than in the local neighborhood.
+
+
+WHY THEY DIVERGE
+----------------
+Shared slogan : "the vacuum is not empty"
+Split         : does local vacuum density DEFINE hbar and c?
+
+Conventional  : no  — constants are inputs; vacuum effects sit on them
+ZPF-medium    : yes — constants are emergent from local ZPE density
+
+The galactic-center claim is a prediction of picture B.
+Picture A does not generate that spatial rescaling.
