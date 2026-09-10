@@ -150,13 +150,11 @@ Across the reported trials, participants could not distinguish LabCoatz’s Lab 
 
 ## Final notes
 
-- 85% phosphoric acid is corrosive. Glass only.
+- 85% phosphoric acid is corrosive. Glass only, gloves, eye protection. Never dump concentrate into a small water volume carelessly; add acid to water.
 - Essential oils are concentrated irritants until diluted.
-- Caffeine at 9.65 g/L in concentrate B is a real dose in the stock solution; weigh it, do not approximate. Do not scoop.
+- Weigh caffeine. Caffeine at 9.65 g/L in concentrate B is a real dose in the stock solution; weigh it, do not approximate. Do not scoop.
 - Caramel color strength varies by brand, which is why 320 mL Shank’s became 185 mL Durkee.
 - Heating drives useful chemistry and also drives off top notes if the vessel is open.
-- 85% phosphoric acid is corrosive. Glass only, gloves, eye protection. Never dump concentrate into a small water volume carelessly; add acid to water.
-- Weigh caffeine in B (9.65 g/L stock). 
 
 ## Future work
 
