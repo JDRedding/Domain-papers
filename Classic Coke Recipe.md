@@ -79,7 +79,7 @@ The blend is dominated by **limonene**, **α-terpineol**, **fenchol**, **cinnama
 **Note:** Tea tree oil is **not FDA-approved for food use**.
 - Tea tree oil, used for 4-terpineol “coca-like” freshness
 
-### Mixture B — Water-Phase Matrix
+## Mixture B — Water-Phase Matrix
 This phase supplies **acidity**, **dryness**, **color**, **body**, and the characteristic cola “bite.”
 
 - Glycerin
@@ -87,6 +87,14 @@ This phase supplies **acidity**, **dryness**, **color**, **body**, and the chara
 - Caffeine
 - Sugar, heated to induce partial inversion
 - Wine tannins
+
+## Final Assembly
+Ratio for **1 L of finished cola**:
+
+- 104 g sugar, dissolved in minimal water
+- 1 mL Mixture A
+- 10 mL Mixture B
+- Cold carbonated water to volume
 
 Combine with syrup, dilute with carbonated water, adjust sweetness/acidity, and chill. Diluted with water to a total volume of **1 L**.
 
@@ -99,14 +107,6 @@ Combine with syrup, dilute with carbonated water, adjust sweetness/acidity, and 
 | Caffeine | 9.65 g |
 | 5% vinegar | 10 mL |
 | Vanilla extract | 10 mL |
-
-## Final Assembly
-Ratio for **1 L of finished cola**:
-
-- 104 g sugar, dissolved in minimal water
-- 1 mL Mixture A
-- 10 mL Mixture B
-- Cold carbonated water to volume
 
 ## Blind taste-test claim
 The ratio reported as indistinguishable from commercial Coca-Cola in blind tasting.
