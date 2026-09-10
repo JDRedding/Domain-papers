@@ -180,3 +180,58 @@ x^2 = ay,\quad y^2 = bx,\quad xy = ab,
 $$
 
 which he solves by intersecting a parabola and a circle (or hyperbola).
+
+## Structured summary
+
+### **Analytic geometry** as algebraic encoding of loci  
+The document emphasizes that Descartes’ decisive move is the **systematic translation of geometric problems into algebraic equations**. Curves become solution sets of polynomial relations in two variable lengths.  
+- In the Pappus locus, distances become linear forms:  
+  **$x_1 = a x + b y + c$**, etc.  
+- The locus condition becomes a polynomial constraint:  
+  **$x^2 P_0(y) + x P_1(y) + P_2(y) = 0$**.   
+This is the operator skeleton of modern coordinate geometry.
+
+### **Cartesian variables** without Cartesian axes  
+The document is explicit: Descartes never draws perpendicular axes.  
+He introduces **$x$ and $y$** only as *lengths measured from a reference line*.  
+The rectangular coordinate plane is a **later van Schooten / Hudde / Newton refinement**.
+
+### **Classification of curves** by algebraic degree  
+Book II distinguishes:  
+- *Geometric curves*: algebraic, constructible by ruler and compass.  
+- *Mechanical curves*: transcendental (spiral, cycloid).  
+This anticipates the algebraic/transcendental divide.
+
+### **Tangents via double-root condition**  
+The normal at $P$ is found by intersecting the curve with a circle centered at $Q$.  
+Eliminate one variable → impose double root → solve for $v$.  
+This is a precursor to implicit differentiation:  
+**“The resulting equation… must have a *double root* at the point of contact.”** 
+
+### **Theory of equations** (Book III)  
+The document covers:  
+- Factorization viewpoint: $(z-a)(z-b)\cdots(z-s)=0$.  
+- **Descartes’ rule of signs**.  
+- Quartic depression and factorization into two quadratics.  
+- Construction of two mean proportionals via intersection of conics.
+
+---
+
+## Operator-level matters  
+Descartes effectively introduces a **bidirectional operator**:
+
+$$
+\mathcal{A} : \text{Geometric configuration} \;\longleftrightarrow\; \text{Algebraic equation}
+$$
+
+This operator is **invertible** for algebraic curves:  
+- Forward: encode geometry → polynomial constraint.  
+- Reverse: decode polynomial → geometric locus.
+
+This is the conceptual ancestor of modern RDG-style mappings between structural and dynamical modes.
+
+---
+
+## Future work
+- map *La Géométrie* directly into relational triads — e.g., treating Descartes’ “assume the construction finished → name segments → write relations” as a **Structure → Interaction → Dynamics** pipeline.
+
