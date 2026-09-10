@@ -22,7 +22,7 @@ The *Ars* rests on a set of basic principles, or attributes of God and creation.
 
 Llull’s **combinatorial disks** are the graphic engines of the *Ars Magna*: circles, triangles, and actual rotating parchment wheels (*volvelles*) that generate pairings and triples of concepts. They are not a calculator in the modern sense. They are a method for exhaustively lining up first principles so that a trained user can turn those alignments into questions and arguments.
 
-The system changed over Llull’s life. The earlier **quaternary** Art used more figures and sixteen dignities. The mature **ternary** Art—especially the *Ars brevis* and *Ars generalis ultima* (c. 1305–1308)—is the version usually meant by “the disks.” It works with nine letters, **B–K** (no J), each of which can stand for a different concept depending on which figure or column of the Alphabet it is read from.
+The system changed over Llull’s life. The earlier **quaternary** Art used more figures and sixteen dignities. The mature **ternary** Art — especially the *Ars brevis* and *Ars generalis ultima* (c. 1305–1308) — is the version usually meant by “the disks.” It works with nine letters, **B–K** (no J), each of which can stand for a different concept depending on which figure or column of the Alphabet it is read from.
 
 ### First
 
