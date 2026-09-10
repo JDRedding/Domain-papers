@@ -1,0 +1,321 @@
+HISTORY OF MATHEMATICAL NOTATION
+REFERENCE  |  types, variables, fundamentals
+copy / share as plain text
+
+THREE STAGES (Cajori / standard historiography)
+
+RHETORICAL     everything in words
+SYNCOPATED     abbreviations for unknown, power, minus
+SYMBOLIC       letters + operators you manipulate as objects
+
+
+NUMERALS  (place-value character)
+
+
+TYPE           positional base-10  +  zero as a mark
+
+FUNDAMENTALS   digit value = face * place
+               place = power of base
+               0 fills an empty place
+
+PRIMARY TEXTS  Brahmagupta  Brahmasphutasiddhanta  (628)
+               al-Khwarizmi  On Hindu Reckoning
+               Fibonacci     Liber abbaci  (1202/1228)
+
+MARKS          1 2 3 4 5 6 7 8 9  0  (zephir / sifr)
+               older: Babylonian sexagesimal, Egyptian sign-value
+
+
+PRE-SYMBOLIC ALGEBRA
+
+
+TYPE           rhetorical algebra  /  syncopated algebra
+
+FUNDAMENTALS   unknown determined by relation to knowns
+               restoration + balancing  (al-jabr, al-muqabala)
+
+PRIMARY TEXTS  Diophantus   Arithmetica     syncopated marks
+               al-Khwarizmi Kitab al-jabr   almost no symbols
+               al-Qalasadi                  Maghreb op-signs
+
+VARIABLES      Diophantus: special glyph for unknown, sq, cube
+               still not a general letter-script
+
+
+LITERAL SYMBOLISM  (the modern algebraic page)
+
+
+TYPE           species / literal algebra
+
+FUNDAMENTALS   letter stands for a quantity
+               known vs unknown distinguished by alphabet zone
+               formula is an object you transform
+
+VIETE 1591     In artem analyticem isagoge
+  unknowns     vowels     A E I O U Y
+  givens       consonants B G D ...
+  constraint   homogeneity of dimension
+               length*length written as area, not as number
+
+HARRIOT 1631   Artis analyticae praxis
+  marks        
+
+DESCARTES 1637 La Geometrie
+  unknowns     x y z     (end of alphabet)
+  givens       a b c     (start of alphabet)
+  powers       superscripts   x^2  x^3
+  geometry     reduced to algebraic equations
+
+STIFEL 1544    juxtaposition = multiply; word "exponent"
+
+
+CALCULUS SCRIPTS  (competing characteristics)
+
+
+TYPE           infinitesimal / fluxion / differential notation
+
+LEIBNIZ        d x    d y / d x    integral sign
+               design rule: the mark should suggest the act
+               papers 1684, 1686  Acta Eruditorum
+
+NEWTON         fluxions   x-dot    fluents
+               Principia / De analysi
+               historically huge, notationally the long-run loser
+
+LATER RIVALS   Lagrange   f'(x)  f''(x)
+               Euler      Delta for finite difference
+               Condorcet  partial  d  (rounded) ~1770
+               Cauchy     lim as an operator; eps-delta grammar
+
+FUNDAMENTALS   increment of independent vs dependent
+               differential as operator or as tiny quantity
+               integral as inverse / as sum of products
+
+
+EULER STANDARD  (18th c. page lock-in)
+
+
+TYPE           analysis notation as common language
+
+TEXTS          Mechanica 1736
+               Introductio in analysin infinitorum 1748
+               Institutiones calculi differentialis 1755
+
+MARKS / VARS
+  f(x)         function of an argument
+  e            base of natural log
+  pi           circle constant  (Jones 1706; Euler spreads it)
+  i            sqrt(-1)         late Euler
+  Sigma        summation
+  sin cos tan  abbreviated trig
+  log          logarithm
+  A            finite difference  (with Bernoulli)
+
+FUNDAMENTAL    a formula is a typed sentence in a shared alphabet
+
+
+19th c. ANALYSIS GRAMMAR
+
+
+TYPE           limit language  +  congruence  +  special functions
+
+CAUCHY 1821    Cours d'analyse
+  marks        lim   eps   delta
+  idea         control the increment, do not trust the picture
+
+GAUSS 1801     Disquisitiones arithmeticae
+  mark         ===  congruence
+
+WEIERSTRASS    classroom real-analysis script
+ABEL / JACOBI  alphabets for elliptic / special functions
+
+
+ARRAYS, MATRICES, DETERMINANTS
+
+
+TYPE           tabular character for linear maps
+
+MARKS          ( )  [ ]  | |  arrays
+               det  as a single composed sign
+
+TEXTS          Sylvester  1850  word "matrix"
+               Cayley     1858  Memoir on the Theory of Matrices
+
+VARIABLES      A B M     matrices
+               a_ij      entry row i column j
+               I         identity
+               det A  |A|
+
+FUNDAMENTAL    a rectangle of numbers is one object
+
+
+VECTORS AND PRODUCTS  (notation war)
+
+
+TYPE           directed quantity + two multiplications
+
+HAMILTON       quaternions; one product; S and V parts
+GRASSMANN      Ausdehnungslehre 1844/1862; outer product
+GIBBS          Elements of Vector Analysis 1881-84
+WILSON         Vector Analysis 1901  (Gibbs lectures)
+HEAVISIDE      parallel vector calculus, other glyphs
+
+GIBBS MARKS    bold a
+               a . b     dot / scalar product
+               a x b     cross / vector product
+               nabla     gradient / del
+
+INDEX / TENSOR
+  Ricci-Levi-Civita   absolute differential calculus ~1900
+  Einstein 1916       summation convention
+                      repeated index = sum; Sigma dropped
+
+VARIABLES      a_i      component
+               g_ij     metric
+               T^i_j    mixed tensor
+               eps_ijk  Levi-Civita
+
+
+SETS AND INFINITY
+
+
+TYPE           collection as a primitive object
+
+CANTOR         braces  { }     aleph  for cardinals
+PEANO          in-symbol   union  intersection
+               blackboard-bold drafts for N Q later standardized
+
+MARKS          x in A
+               A u B     A n B
+               A subset B
+               empty set
+               |A| or card
+               aleph_0
+
+FUNDAMENTAL    membership is the basic verb
+
+
+LOGIC AS A CHARACTER  (Leibniz program resumed)
+
+
+TYPE           calculus of reasoning / ideography
+
+BOOLE 1854     Laws of Thought     class algebra, still verbal
+FREGE 1879     Begriffsschrift     2-D proof script; did not spread
+PEANO          Formulario          linear marks that DID spread
+RUSSELL        Principia 1910-13   Peano glyphs at book scale
+HILBERT        Grundzuege 1928     cleaned first-order look
+GODEL 1931     numbers that encode formulas
+               notation about notation
+
+COMMON MARKS
+  ~  or  not
+  /\   \/     and or
+  ->       imply iff
+  A x         for all
+  E x         exists
+  |-          proves
+  |=          entails
+
+VARIABLES      P Q R     propositions / predicates
+               x y z     individuals
+               F G       predicates
+               Gamma     assumption set
+
+FUNDAMENTAL    inference is a legal move on marks
+
+
+20th c. HOUSE STYLES
+
+
+BOURBAKI       Elements de mathematique  from 1939
+  maps         f : A -> B
+  structure    definition / proposition / proof block
+  style        not new glyphs so much as a written constitution
+
+CATEGORY THEORY
+  Eilenberg-Mac Lane 1945
+  Mac Lane 1971  Categories for the Working Mathematician
+  marks        objects, arrows, diagrams
+               F : C -> D
+               composition  g o f
+               identity arrow
+
+LAMBDA / COMPUTATION
+  Church 1930s    lambda x . M
+  Turing 1936     machine tables as effective procedure
+  BNF / Algol     grammar as notation
+  later           programs as executable characteristics
+
+TYPESETTING
+  Knuth TeX 1980s
+  the visual standard of printed math
+  most "modern notation" is a TeX dialect
+
+PROOF ASSISTANTS
+  Coq  Isabelle  Lean
+  kernel checks the marks
+  Leibniz "let us calculate" with a checker
+
+
+DEFAULT MODERN VARIABLE ZONES
+
+
+SCALARS        a b c     given
+               x y z     unknown / coordinate
+               n m k     integers
+               i j       indices  (also i = sqrt(-1) in analysis)
+               t         time
+               e pi i    reserved constants
+               eps delta small positives
+
+FUNCTIONS      f g h     F G    special / generating
+               phi psi   fields / maps
+
+SETS           A B X Y
+               N Z Q R C   number systems
+
+ALGEBRA        G H        groups
+               R k        rings / fields
+               V W        vector spaces
+               T           linear maps / tensors
+
+LOGIC          P Q         formulas
+               Gamma       contexts
+
+PHYSICS OVERLAP
+               c  hbar  k_B  G     reserved
+               vectors often bold or arrowed
+
+
+READING SPINE
+
+
+Diophantus          Arithmetica                 syncopation
+al-Khwarizmi        al-jabr                     rhetoric
+Fibonacci           Liber abbaci                place-value
+Viete               Isagoge                     letters as species
+Descartes           La Geometrie I              x y z  + exponents
+Leibniz             1684 differential paper     d and integral
+Euler               Introductio 1748            the common page
+Cauchy              Cours d'analyse             limit grammar
+Cayley              1858 matrix memoir          arrays as objects
+Gibbs/Wilson        Vector Analysis             dot and cross
+Frege               Begriffsschrift             full characteristic
+Peano               Formulario excerpt          surviving logic marks
+Principia           sample pages                scale
+Bourbaki            set theory / algebra openers  house style
+optional end        a Lean or TeX source file   executable / drawable
+
+GUIDEBOOKS
+Cajori   A History of Mathematical Notations
+table    mathematical symbols by introduction date
+Wolfram  Mathematical Notation: Past and Future
+
+
+ONE-LINE MORAL
+
+
+A notation works when the mark can be pushed
+and the push is the reasoning.
+That is the surviving core of the characteristica.
