@@ -60,10 +60,7 @@ A chemically grounded flavor architecture, not a manufacturing SOP. Coca-Cola’
 Those two systems are then dosed in very small amounts into a sugar solution and carbonated water.
 
 ## Mixture A — Flavor Concentrate
-
-Alcohol-based aromatic core.
-
-The described preparation diluted **20 mL of the oil blend** into **1 L of 95% ethanol**.
+The described preparation diluted **20 mL of the oil blend** into **1 L of 95% ethanol**. Alcohol-based aromatic core.
 
 ### Oil blend composition
 The blend is dominated by **limonene**, **α-terpineol**, **fenchol**, **cinnamaldehyde**, and **sabinene**. Those volatiles were described as the GC-MS backbone of the Coca-Cola aroma profile.
@@ -82,9 +79,9 @@ The blend is dominated by **limonene**, **α-terpineol**, **fenchol**, **cinnama
 **Note:** Tea tree oil is **not FDA-approved for food use**.
 - Tea tree oil, used for 4-terpineol “coca-like” freshness
 
-**Note:** Tea tree oil is not an FDA-approved food ingredient.
-
 ### Mixture B — Water-Phase Matrix
+This phase supplies **acidity**, **dryness**, **color**, **body**, and the characteristic cola “bite.”
+
 - Glycerin
 - Phosphoric acid
 - Caffeine
@@ -102,8 +99,6 @@ Combine with syrup, dilute with carbonated water, adjust sweetness/acidity, and 
 | Caffeine | 9.65 g |
 | 5% vinegar | 10 mL |
 | Vanilla extract | 10 mL |
-
-This phase supplies **acidity**, **dryness**, **color**, **body**, and the characteristic cola “bite.”
 
 ## Final Assembly
 Ratio for **1 L of finished cola**:
@@ -127,5 +122,5 @@ Across the reported trials, participants could not distinguish LabCoatz’s Lab 
 ## References and further reading
 - LabCoatz, [Perfectly Replicating Coca Cola](https://www.youtube.com/watch?v=TDkH3EbWTYc)
 - [OpenCoke-Scientific](https://github.com/ShortTimeNoSee/OpenCoke-Scientific)
-- [badhalu.com](https://badhalu.com/education-science/what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained)
-- [Hypebeast](https://hypebeast.com/2026/1/youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe).
+- badhalu.com, [what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained](https://badhalu.com/education-science/what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained)
+- Hypebeast, [youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe](https://hypebeast.com/2026/1/youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe).
