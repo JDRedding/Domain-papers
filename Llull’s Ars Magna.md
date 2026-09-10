@@ -44,11 +44,7 @@ A triangular table of binary “compartments”—all unordered pairs of the nin
 
 ### The Fourth 
 
-The true disk is the **Fourth**: three concentric rings, each marked B–K. The outer ring is fixed on the page; the two inner rings are cut from parchment and pinned so they can turn. Aligning the rings produces three-letter strings. Those strings are interpreted by assigning each letter to a column of the Alphabet (dignities, relatives, questions/rules, subjects, virtues, vices). A combination such as **BBB** can be unpacked as something like “whether goodness contains difference.”
-
-The *Tabula generalis* listed the ternary combinations without repetition on a large scale (classically given as 1,680); the Fourth Figure compresses that table into a handheld generator.
-
-Printed and manuscript copies often show the cut-out rings and the facing tables of letter-triples.
+The true disk is the **Fourth**: three concentric rings, each marked B–K. The outer ring is fixed on the page; the two inner rings are cut from parchment and pinned so they can turn. Aligning the rings produces three-letter strings. Those strings are interpreted by assigning each letter to a column of the Alphabet (dignities, relatives, questions/rules, subjects, virtues, vices). A combination such as **BBB** can be unpacked as something like “whether goodness contains difference.” The *Tabula generalis* listed the ternary combinations without repetition on a large scale (classically given as 1,680); the Fourth Figure compresses that table into a handheld generator. Printed and manuscript copies often show the cut-out rings and the facing tables of letter-triples.
 
 ### Earlier Versions
 
