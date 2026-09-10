@@ -91,6 +91,97 @@ Today’s AI systems, especially LLMs, operate on the same principle: **high-vol
 
 Modern researchers explicitly revisit Llull’s method as a model for structured ideation pipelines: combining themes, domains, and methods to generate research ideas. This is essentially Llull’s rotating disks updated for machine learning. Llull’s machine computed *relations among concepts*, not *facts about the world*. LLMs compute *relations among tokens*, not *truth conditions*.
 
+## Future Work
+Diagrammic families from Llull’s *Ars Magna*
+
+### ⭐ **I. Core Combinatorial Diagrams (Llull → Modern Formalism)**
+
+- **Binary‑Chamber Graph** — nodes = letters, edges = all unordered pairs (36 for n=9).  
+- **Ternary‑Chamber Hypergraph** — 3‑uniform hyperedges for all 84 triples.  
+- **Volvelle Rotation Diagram** — cyclic group $C_9$ acting on 3 rings.  
+- **Sort‑Column Lattice** — 6‑sorted interpretation lattice (Dignity, Relative, Question, etc.).  
+- **Correlative Triad Diagram** — agent/patient/act triads for each dignity.
+
+These are the “mathematically faithful” diagrams.
+
+---
+
+### ⭐ **II. Operator‑Mode Diagrams (Relationalism‑Compatible)**
+These are relational operator‑modes.
+
+- **Structure–Power Mapping Graph** — each Llull letter mapped to Structure–Interaction–Dynamics and Power–Evaluation–Dynamics.  
+- **Non‑commutative Operator Table** — visualize $\lambda\circ\mu\neq\mu\circ\lambda$.  
+- **Operator Flow Diagram** — arrows showing subject→predicate polarity.  
+- **Rotational Equivariance Diagram** — $\rho(\lambda\circ\mu)=\rho\lambda\circ\rho\mu$.  
+- **Typed‑Operator Magma Diagram** — full algebra $\mathcal{L}$ as a magma with sorts.
+
+---
+
+### ⭐ **III. Geometric / Spatial Diagrams**
+These emphasize symmetry and geometry.
+
+- **Circular Attribute Map** — Llull’s Figure A in modern radial layout.  
+- **Triangular Relative‑Principle Diagram** — difference/concordance/contrariety triangles.  
+- **Hexa‑Sort Star Diagram** — 6 sorts arranged as a star around each letter.  
+- **Hyperbolic Tree of Dignities** — each dignity expanded into correlatives.  
+- **3‑Ring Alignment Diagram** — modern visualization of the Fourth Figure.
+
+---
+
+### ⭐ **IV. Graph‑Theoretic Diagrams**
+These show Llull’s system as a graph algebra.
+
+- **Complete Graph K9** — Llull’s dignities as a complete graph.  
+- **Edge‑Colored Relation Graph** — color edges by sort (Dig→Rel, Rel→Virt, etc.).  
+- **Directed Predicate Graph** — subject→predicate arrows for all 72 directed pairs.  
+- **Hyperedge Incidence Diagram** — ternary chambers as hyperedges.  
+- **Group‑Action Cayley Diagram** — cyclic group $C_9$ acting on letters.
+
+---
+
+### ⭐ **V. Combinatorial Enumeration Diagrams**
+These visualize the combinatorial explosion.
+
+- **Permutation Tree** — all $P(9,3)=504$ ordered triples.  
+- **Combination Lattice** — $\binom{9}{r}$ for $r=1\ldots9$.  
+- **Sort‑Mixing Grid** — how each triple expands into 20 typed readings.  
+- **1680‑Compartment Table** — the full Tabula Generalis structure.  
+- **Volvelle State‑Space Diagram** — configuration space $(C_9^3)/C_9$.
+
+---
+
+### ⭐ **VI. Modern Computational Diagrams**
+These connect Llull directly to modern AI.
+
+- **Token‑Space Analogy Diagram** — Llull letters ↔ LLM tokens.  
+- **Prompt‑Type Mapping** — Llull’s question‑types ↔ modern prompt categories.  
+- **Reasoning Pipeline Diagram** — Llull’s “artist” ↔ human‑in‑the‑loop evaluator.  
+- **Truth‑Validation Gap Diagram** — generator vs evaluator asymmetry.  
+- **Symbolic–Neural Hybrid Diagram** — Llull’s combinatorics + modern AI.
+
+---
+
+### ⭐ **VII. Exotic / Creative Diagram Families**
+These match interest in constellation/old‑map styles.
+
+- **Constellation‑Style Dignity Map** — Llull’s dignities as star‑map nodes.  
+- **Old‑Map Compass Rose** — Llull’s nine dignities arranged as a medieval compass.  
+- **Mythic‑Triad Diagram** — correlatives as mythic agents/patients/acts.  
+- **Rune‑Compass Llull Diagram** — medieval aesthetic with operator meaning.  
+- **Celestial Navigation Grid** — Llull’s rotations as star‑navigation arcs.
+
+---
+
+### ⭐ **VIII. Ultra‑Formal Operator Diagrams**
+These are the highest‑level mathematical diagrams.
+
+- **Many‑Sorted Algebra Diagram** — full $\mathcal{L}$ signature.  
+- **Operator‑Magma Diagram** — closure under $\circ$.  
+- **Equivariance‑Law Diagram** — $\Phi(\rho\lambda,\rho\mu)=\rho_*\Phi(\lambda,\mu)$.  
+- **Correlative‑Expansion Diagram** — $\alpha,\pi,\varepsilon$ expansions.  
+- **RDG‑Homomorphism Diagram** — mapping $h:\mathcal{L}\to\text{Relational}$.
+
+
 ## Mathematical notation
 
 Ramon Llull’s Art is not a free algebra of arbitrary symbols. It is a **tyPower, multi-sorted, rotationally equivariant combinatory system** whose generators are a finite alphabet of *polymorphic labels*, each of which simultaneously names an absolute principle, a relative principle, a question-rule, a subject on the ladder of being, a virtue, and a vice. The wheels implement a cyclic group action that systematically enumerates the compositions. The structure below formalizes that system, corrects the historical cardinality (standard ternary Art uses nine letters $B$–$K$), and then embeds it into an operator algebra compatible with an Structure–Power reading.
