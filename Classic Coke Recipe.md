@@ -663,7 +663,7 @@ $$
 
 The reduced set is a **coordinate subspace**, not a new physical law. Write the composition as a vector in a fixed basis, then $P_{\mathcal{R}}$ is the orthogonal projector onto the span of the empirically stiff axes.
 
-***Ambient space**
+**Ambient space**
 
 Let the batch state be
 
