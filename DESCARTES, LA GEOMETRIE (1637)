@@ -1,0 +1,138 @@
+DESCARTES, LA GEOMETRIE (1637)
+Equations, notation, and fundamentals
+=====================================
+
+FUNDAMENTALS
+------------
+Letters denote LENGTHS of line segments (positive quantities).
+Known lengths:     a, b, c, d, ...
+Unknown lengths:   x, y, z, ...
+Powers:            aa or a^2  (square)
+                   a^3, a^4, ...
+Equality originally written with a special mark; now "=".
+Dimensional break with the Greeks: a^2 and a^3 are treated as lengths,
+not as areas or volumes.
+A unit segment may be chosen so that products and quotients remain lengths.
+Preferred form of an equation: all terms on one side, equal to 0.
+
+ARITHMETIC AS GEOMETRY (Book I)
+-------------------------------
+Multiplication, division, and square root are constructed with similar
+triangles (Thales) once a unit length is fixed.
+
+CANONICAL QUADRATIC ("PLANE") EQUATIONS AND SOLUTIONS
+-----------------------------------------------------
+Type 1
+  z^2 = a z + b^2
+  z   = (1/2)a + sqrt( (1/4)aa + bb )
+
+Type 2
+  y^2 = -a y + b^2
+  y   = -(1/2)a + sqrt( (1/4)aa + bb )
+
+Type 3
+  z^2 = a z - b^2
+  z   = (1/2)a + sqrt( (1/4)aa - bb )
+  z   = (1/2)a - sqrt( (1/4)aa - bb )
+
+(Two positive roots when the discriminant is positive.)
+Each solution is also given by a ruler-and-compass construction.
+
+REDUCED FORMS HE LISTS FOR A SINGLE UNKNOWN
+-------------------------------------------
+z    = b
+z^2  = -a z + b^2
+z^3  = a z^2 + b^2 z - c^3
+z^4  = a z^3 - c^3 z + d^4
+...
+
+GENERAL METHOD FOR A GEOMETRIC PROBLEM
+--------------------------------------
+1. Assume the construction already finished.
+2. Name every needed segment (known and unknown).
+3. Write relations until one unknown remains, equal to a known
+   expression or to a power of that unknown.
+Need as many independent equations as unknowns; otherwise the
+problem is under-determined and free lengths may be chosen.
+
+PAPPUS LOCUS  (origin of the pair x, y)
+---------------------------------------
+Given lines in the plane.
+From a moving point C draw segments to those lines at prescribed angles.
+Call two principal segments:
+  AB = x     (along a chosen reference line)
+  BC = y
+Every other "distance" becomes a linear form
+  a_i x + b_i y + c_i
+
+Four-line condition (product of two distances proportional to product
+of the other two):
+  y (a1 x + b1 y + c1)
+    = k (a2 x + b2 y + c2)(a3 x + b3 y + c3)
+
+Expanded (quadratic in x):
+  x^2 P0(y) + x P1(y) + P2(y) = 0
+
+Concrete four-line example he obtains (hyperbola):
+  y y = c y - (c/b) x y + a y - a c
+
+Five or more lines raise the degree; the locus remains "geometric"
+provided the equation is algebraic.
+
+TANGENTS AND NORMALS  (circle method, Book II)
+----------------------------------------------
+Curve:     f(x, y) = 0
+Point:     P = (x0, y0)
+Normal meets the axis at Q = (v, 0)
+
+Circle centred at Q through P:
+  (x - v)^2 + y^2 = (x0 - v)^2 + y0^2
+
+Eliminate one variable between the circle and the curve.
+The resulting polynomial in the remaining variable must have a
+DOUBLE ROOT at the point of contact (discriminant zero, or shared
+root with the derivative). That condition determines v.
+The tangent is the line through P perpendicular to PQ.
+
+This is the first general algebraic method for tangents to
+algebraic curves.
+
+THEORY OF EQUATIONS  (Book III)
+-------------------------------
+Write every polynomial equation as
+  P(z) = 0
+
+NUMBER OF ROOTS
+  An equation of degree n has n roots
+  (real positive, real negative, and imaginary counted).
+  Factorisation:
+    (z - a)(z - b)...(z - s) = 0
+
+DESCARTES' RULE OF SIGNS
+  Number of positive real roots  <=  number of sign changes
+      in the coefficient sequence of P(z)
+      (difference is a non-negative even integer).
+  Number of negative real roots  <=  number of sign changes
+      in P(-z).
+
+DEPRESSION OF A QUARTIC
+  After removing the cubic term:
+    z^4 + p z^2 + q z + r = 0
+  Assumed factorisation:
+    (z^2 + a z + b)(z^2 - a z + c) = 0
+  Leads to a cubic resolvent in the unknown a^2.
+
+TWO MEAN PROPORTIONALS between a and b
+  a/x = x/y = y/b
+  hence
+    x^2 = a y
+    y^2 = b x
+    x y = a b
+  Solved by intersecting a parabola with a circle (or hyperbola).
+
+CLASSIFICATION OF CURVES (Book II)
+----------------------------------
+Geometric curves : those given by an algebraic equation in two
+                   variables (constructible from lower-order curves).
+Mechanical curves: transcendental (spiral, cycloid, ...).
+Geometric curves are classified by the degree of their equation.
