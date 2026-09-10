@@ -96,14 +96,13 @@ Modern researchers explicitly revisit Llull’s method as a model for structured
 Diagrammic families from Llull’s *Ars Magna*
 
 ### ⭐ **I. Core Combinatorial Diagrams (Llull → Modern Formalism)**
+These are “mathematically faithful” diagrams.
 
 - **Binary‑Chamber Graph** — nodes = letters, edges = all unordered pairs (36 for n=9).  
 - **Ternary‑Chamber Hypergraph** — 3‑uniform hyperedges for all 84 triples.  
 - **Volvelle Rotation Diagram** — cyclic group $C_9$ acting on 3 rings.  
 - **Sort‑Column Lattice** — 6‑sorted interpretation lattice (Dignity, Relative, Question, etc.).  
 - **Correlative Triad Diagram** — agent/patient/act triads for each dignity.
-
-These are the “mathematically faithful” diagrams.
 
 ---
 
