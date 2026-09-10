@@ -1,0 +1,76 @@
+# Gödel–Einstein closed timelike curves analysis
+
+## VARIABLES  
+- topology_map: circular ↔ square space  
+- encoding: prime numbers + negative space + knot weave  
+- substrate: 8×8 grid + copper cymatic plate  
+- mappings: writing | phonetics | color | music | reality primitives  
+
+## FUNDAMENTALS  
+Ancient woven structures encode “as above so below” topology.  
+Primitives (long, round, brown, circular, square) became ideographs then linear strings.  
+Same lattice later appears as circle-of-fifths / harmonic / color / waveform overlay.
+
+POINT 1 : Treats closed-timelike-curve branching as already described by prehistoric knot patterns that use primes and voids to render circular-to-square topology.
+
+POINT 2 : Those patterns are claimed as the original language engine and as a polymorphic 8×8 template that unifies writing, sound, color, and physical concepts onto a metal plate.
+
+POINT 3 : Same circle-square lattice realized as color wheels, just-intonation ratios, cymatic nodes, waveforms, and 3×3 sonority cells.
+
+## NOTATION  
+- t, r, φ     spacetime coordinates (Gödel)  
+- ω           rotation parameter  
+- r_c         critical CTC radius  
+- f           frequency  
+- n           scale degree / mode index  
+- ψ(x,y,t)    plate displacement  
+- ∇², ∇⁴      Laplacian, biharmonic  
+- K(k)        complete elliptic integral  
+
+### CTC / GÖDEL  
+Critical radius where φ-circles become timelike:
+
+$$ r_c = \ln(1+\sqrt{2}) $$ 
+
+### Approximate line element (homogeneous rotating dust):  
+$$ ds^2 = -dt^2 + dr^2 + \sinh^2 r\,(1-\sinh^2 r)\,d\phi^2 + 2\sqrt{2}\sinh^2 r\,dt\,d\phi $$ 
+
+### CIRCLE–SQUARE MAP (conformal, Schwarz–Christoffel type)  
+Disk → square (up to rotation/scale):  
+
+$$ z = \int_0^w \frac{d\zeta}{\sqrt{1+\zeta^4}} $$ 
+
+Inverse uses Jacobi elliptic cn.  
+
+### HARMONICS / CIRCLE OF FIFTHS  
+Just fifth:  
+
+$$ \frac{f_{n+1}}{f_n} = \frac{3}{2} $$ 
+
+### Twelve fifths vs seven octaves (Pythagorean comma):  
+$$ \left(\frac{3}{2}\right)^{12} / 2^7 \approx 1.013643 $$ 
+
+### 12-TET fifth:  
+$$ 2^{7/12} $$ 
+
+### Pitch class after k fifths (mod 12):  
+$$ p_k = (7k) \bmod 12 $$ 
+
+### CYMATIC / VIBRATING PLATE  
+Membrane approximation:  
+
+$$ \frac{\partial^2\psi}{\partial t^2} = c^2\nabla^2\psi $$ 
+
+### Thin-plate (biharmonic):  
+$$ D\nabla^4 w + \rho h\frac{\partial^2 w}{\partial t^2}=0 $$ 
+
+### Square-plate modes (free edges, center drive selects even combinations):  
+$$ \psi_{n_x n_y} \propto \cos\Bigl(\frac{n_x\pi x}{L}\Bigr)\cos\Bigl(\frac{n_y\pi y}{L}\Bigr) $$ 
+$$ \omega^2 \propto n_x^2 + n_y^2 $$ 
+
+### 8×8 LATTICE  
+Discrete analog: points (i,j) ∈ {0…7}² with nearest-neighbor topology or chessboard coloring 
+
+$$ (-1)^{i+j} $$ 
+
+used as polymorphic index for color / pitch / glyph assignment.
