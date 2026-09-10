@@ -1,0 +1,164 @@
+EULER COMPRESSION
+habitual compression, not wild invention
+
+TEST
+not:  can a contemporary recover the pattern?
+yes:  can a stranger recover it after the formula is
+      CUT from the sentence
+      NESTED in another formula
+      REUSED in another paper
+
+FOUR OPERATIONS A FORMULA MUST SURVIVE
+  extract     formula leaves the Latin period
+  compose     marks nest: f(g(x)), ddy, series of series
+  translate   prose changes language, then thins
+  reuse       reader is not Euler's correspondent
+
+------------------------------------------------
+THREE GRADES
+
+G1  LOCAL PATTERN COMPRESSION
+    rule lives in the glyphs
+    no Latin required, no global letter-table required
+
+    examples
+      xx              = x*x
+      1.2.3           = 1*2*3
+      a + bx + cxx + etc.
+
+    parse
+      xx is an atom. later reader can recover it
+      from the page alone.
+
+    fate
+      survived a long time (still in Riemann)
+      died from SCALE not from ambiguity
+      x^10, (x+y)^2 want one device
+      x^n replaced xx because it stays local AND composable
+
+G2  SENTENCE-BOUND COMPRESSION
+    glyphs are incomplete
+    Latin supplies scope, force, type
+
+    examples
+      =               identity / generated-by / reduction / "finite expression of this series"
+      f x, f:x, f.y   application by juxtaposition
+      sit / erit / unde / sive / etc.
+
+    parse
+      works while you are inside the sentence
+      fails when the formula is displayed alone
+
+    fate
+      = split into  =  ~  approx  equiv  :=
+      f x gained mandatory parentheses once arguments composed
+      f(g(x+h)) cannot trust juxtaposition
+      juxtaposition also means multiplication
+
+G3  BINDING COMPRESSION
+    a letter is a temporary name
+    meaning assigned off-stage
+
+    examples
+      i   = infinite integer     (usual Euler)
+      i   = sqrt(-1)             (late Euler, 1777/1794)
+      A   = vertex of triangle AND area of triangle
+      y   = function, ordinate, general term
+      omega = increment, then infinitely small, then dx
+
+    parse
+      nothing in the shape of the letter tells the binding
+      you need decade, treatise, sometimes the paragraph
+
+    fate
+      does not export
+      reserved letters won: e, pi, Sigma
+      reserved letter = compression that bought namespace stability
+
+------------------------------------------------
+VARIABLES / LETTERS ON EULER'S PAGE
+
+  xx, yy, aa, bb     square by stutter
+  x^3, xxx           cube, mixed house style
+  f, phi, M          character of a function, not the map
+  f x, f:x, f.y      application
+  f(x/a + c)         parentheses only to stop misparse
+  y, u, V            the function IS the quantity
+  y = M(x,t)         late two-variable label
+  l y, l x, l sin.   logarithm glued to quantity
+  sin.z  cos.z       abbreviated Latin
+  A.sin z            arc whose sine is z
+  sin.A z            sine of arc A
+  i                  infinite number (default)
+  omega              increment / infinitely small
+  dx, ddy, dddy      d is a SIGN like l or sqrt, not a quantity
+  Delta y, Sy        finite difference, summatory term
+  Sigma              sum, analog of Delta
+  sqrt(-1)           imaginary unit for most of his life
+  e                  base chosen "for brevity"
+  pi, earlier p      circle constant
+  A,B,C Fraktur      Bernoulli numbers (absolute values)
+
+------------------------------------------------
+FUNDAMENTALS
+
+  function
+    f is the CHARACTER
+    f x is the function OF x
+    not a map f : X -> Y
+
+  differential
+    start with finite increment omega
+    set omega infinitely small
+    rename omega := dx
+    second order is stacked: ddy
+    ratios of vanishing increments, not standalone nonzero atoms
+
+  series
+    written as breath: a + bx + cxx + etc.
+    "sum" often = the closed expression that generates the row
+    divergence can still receive a finite name
+
+  equality
+    a sentence verb
+    in Algebra, = can be delayed for chapters
+    then introduced as "is as much as"
+
+  infinity
+    i = infinite integer
+    omega = vanishing increment
+    typical move:  x = omega * i
+                   a^x = (1 + k x / i)^i
+
+  complex
+    living form:  cos.z + sqrt(-1) sin.z
+    not the later boxed  e^{i pi} + 1 = 0
+
+------------------------------------------------
+WHAT CARRIES OVER
+
+  carries   meaning recoverable from
+            formula + a small public grammar
+
+  fails     meaning stored OUTSIDE the formula
+            in the Latin connective
+            in the current binding of a letter
+            in permission to treat =, f, divergence by ear
+
+  later math did not uncompress
+  it moved the missing information back into the glyphs
+    scope marks        ( )
+    relation marks     ~  approx  equiv  :=
+    dedicated constants e  pi  i=sqrt(-1)
+    typed application   f(x)
+
+------------------------------------------------
+QUICK MAP
+
+  xx, 1.2.3              G1 local      stayed, then scaled away
+  sin.z, ly              G1-G2        stem stayed, glue thinned
+  f x / parentheses      G2 sentence  parentheses became mandatory
+  soft =                 G2 sentence  split into relation family
+  i as infinity AND i    G3 binding   namespace collision
+  A as point AND area    G3 binding   page-scale collision
+  sum = generating expr  G2 + theory  survived only as named methods
