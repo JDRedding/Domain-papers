@@ -1,0 +1,193 @@
+LLULLIAN COMBINATORY OPERATOR SYSTEM
+====================================
+Formal structure of the Art (ternary phase), with types, variables,
+counting, group action, composition, correlatives, and SID-PED map.
+
+0. FUNDAMENTALS
+---------------
+The Art is a typed, multi-sorted, rotationally equivariant combinatory
+system. Generators are a finite alphabet of polymorphic labels. Each
+label simultaneously names an absolute principle, a relative principle,
+a question-rule, a subject on the ladder of being, a virtue, and a vice.
+Wheels implement a cyclic group action that enumerates compositions.
+
+Historical cardinality:
+  Standard ternary Art uses n = 9 letters:
+    Lambda = { B, C, D, E, F, G, H, I, K }
+  Letter A is reserved for the centre of Figure A (God / coincidence
+  of all dignities). A is not rotated on the volvelles.
+  Earlier quaternary versions used 16 dignities.
+  If a 10-letter set A = { A, B, ..., K } is used, treat A as a fixed
+  point and restrict the cyclic action to the remaining 9 letters.
+
+Six parallel sorts (columns) for every letter:
+
+  Letter | Dignity (Fig.A)      | Relative (Fig.T)   | Question/Rule
+  -------|----------------------|--------------------|----------------------
+  B      | Bonitas              | Differentia        | Utrum?
+  C      | Magnitudo            | Concordantia       | Quid?
+  D      | Aeternitas / Duratio | Contrarietas       | De quo?
+  E      | Potestas             | Principium         | Quare?
+  F      | Sapientia            | Medium             | Quantum?
+  G      | Voluntas             | Finis              | Quale?
+  H      | Virtus               | Maioritas          | Quando?
+  I      | Veritas              | Aequalitas         | Ubi?
+  K      | Gloria               | Minoritas          | Quomodo / cum quo?
+
+  Letter | Subject          | Virtue       | Vice
+  -------|------------------|--------------|----------------
+  B      | Deus             | Iustitia     | Avaritia
+  C      | Angelus          | Prudentia    | Gula
+  D      | Caelum           | Fortitudo    | Luxuria
+  E      | Homo             | Temperantia  | Superbia
+  F      | Imaginativa      | Fides        | Acedia
+  G      | Sensitiva        | Spes         | Invidia
+  H      | Vegetativa       | Caritas      | Ira
+  I      | Elementativa     | Patientia    | Mendacium
+  K      | Instrumentativa  | Pietas       | Inconstantia
+
+Correlatives (internal triad of each dignity):
+  For Bonitas:  agent = bonificativum
+                patient = bonificabile
+                act = bonificare
+  Same pattern for every other dignity. These supply dynamics that
+  a static pairing of letters would otherwise lack.
+
+Letters are labelled constants, not free variables. Their "variability"
+is only which sort (column) is active in a given reading.
+
+1. TYPES AND INTERPRETATIONS
+----------------------------
+Sort set:
+  S = { Dig, Rel, Q, Subj, Virt, Vic }
+
+Each letter lambda in Lambda is a polymorphic constant:
+  [[lambda]] : S -> Terms
+
+Examples:
+  [[B]](Dig)  = Bonitas
+  [[B]](Rel)  = Differentia
+  [[B]](Q)    = Utrum?
+  [[B]](Subj) = Deus
+  ...
+
+Typed atom: pair (lambda, s) with lambda in Lambda, s in S.
+
+Well-formed propositions typically take first atom as subject
+(Dignity or Subject) and second as predicate (Dignity, Relative,
+Virtue, ...).
+
+2. COMBINATORIAL SPACES AND COUNTING
+------------------------------------
+Variables:
+  n = |Lambda|          (historically 9; source note used 10)
+  r = arity of a chamber
+  C_r^ord   = ordered r-tuples without repetition
+  C_r^unord = unordered r-subsets
+
+Binary chambers (Third Figure):
+  |C_2^unord| = C(n,2) = n(n-1)/2
+      n=9  -> 36 chambers
+      n=10 -> 45 chambers
+  Each chamber may be read in two directions (subject-predicate swap)
+      -> 72 directed propositions for n=9
+  |C_2^ord| = P(n,2) = n(n-1)
+      n=9  -> 72
+      n=10 -> 90
+
+Ternary chambers (Fourth Figure / Table):
+  |C_3^ord| = P(n,3) = n(n-1)(n-2)
+      n=9  -> 504
+  Quotient by cyclic permutation of the three letters:
+      |C_3^unord| = C(n,3)
+      n=9  -> 84 distinct unordered triples
+  Great Table inserts marker T in every slot and mixes Fig.A columns
+  with Fig.T columns: 20 typed readings of each of 84 triples
+      -> 1680 compartments (many semantically redundant)
+
+General r-ary:
+  |C_r^ord|   = P(n,r) = n! / (n-r)!
+  |C_r^unord| = C(n,r) = n! / (r! (n-r)!)
+
+Leibniz remark: Llull stopped at r=2,3 while the full non-empty
+power set of a 9-letter column has 2^9 - 1 = 511 combinations.
+
+3. COMPOSITION OPERATOR AND SEMANTIC MAP
+----------------------------------------
+Binary composition:
+  circ : Lambda x Lambda -> Prop
+
+Realised by sort-sensitive interpretation Phi:
+  Phi( (lambda,s), (mu,t) )
+    = proposition reading lambda under sort s as subject
+      and mu under sort t as predicate
+
+Canonical examples:
+  both Dignity:     B circ C  =  "Bonitas est magna"
+                                 "Goodness is great"
+  Dignity + Rel:    B circ C  =  "Bonitas est differens"
+                                 or "Goodness contains difference"
+  Q + Dig + Rel:    typed triple BCTB
+                    = "Utrum Bonitas sit Differentia?"
+
+circ is neither associative nor commutative in general.
+Subject-predicate polarity and chosen sorts matter.
+
+Convertibility inside God (A-centre):
+  every dignity may be predicated of every other dignity
+  salva veritate.
+
+4. ROTATIONAL GROUP AND EQUIVARIANCE
+------------------------------------
+Wheels realise cyclic group:
+  C_n = < rho | rho^n = 1 >
+
+Action on letters:
+  rho(lambda_i) = lambda_{i+1 mod n}
+
+Componentwise on tuples:
+  rho . (lambda_i1, ..., lambda_ir)
+    = (rho(lambda_i1), ..., rho(lambda_ir))
+
+Semantic equivariance (same-column readings):
+  Phi(rho lambda, rho mu) = rho_* Phi(lambda, mu)
+  where rho_* permutes the generated propositions.
+
+Different-column readings: rotation still generates new questions,
+but content is a new typed combination, not a mere relabeling.
+
+Three-wheel volvelle configuration space:
+  (C_n x C_n x C_n) / C_n
+  (simultaneous rotation of all three rings is a global symmetry
+   that does not change relative alignment)
+
+5. OPERATOR ALGEBRA
+-------------------
+Heterogeneous algebra:
+  L = < Lambda,  { circ_{s,t} }_{s,t in S},  rho,  Phi >
+
+Each circ_{s,t} is sort-restricted composition.
+Closed under rotation in the equivariant sense above.
+
+Correlative operators (internal dynamics of a dignity):
+  alpha(Dignity) = agent
+  pi(Dignity)    = patient
+  epsilon(Dignity) = act
+
+Every dignity expands to the triad { alpha, pi, epsilon }.
+
+6. RDG-COMPATIBLE MAPPING (SID-PED)
+-----------------------------------
+SID triad: Structure-Interaction-Dynamics
+PED triad: Power-Evaluation-Dynamics
+
+Treat each typed atom as an RDG object and each composition as an edge.
+
+Homomorphism of operator systems:
+  h : L -> RDG
+sends each letter to an SID-PED triad and each circ to the
+corresponding interaction or evaluation edge.
+Rotation rho becomes an RDG automorphism preserving structural
+skeleton and dynamical flow.
+Correlatives alpha, pi, epsilon map onto the three components of
+SID(G) =
