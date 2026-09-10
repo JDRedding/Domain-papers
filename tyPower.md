@@ -148,9 +148,7 @@ These diagrams emphasize **theoretical clarity**. These show tyPower as a concep
 - **tyPower hierarchy diagram** — multi‑level structure: sorts → combinators → equivariance → applications.  
 - **tyPower meta‑operator diagram** — combinators acting on combinators.
 
----
-
-## **ASCII‑Friendly Diagrams**
+### **ASCII‑Friendly Diagrams**
 
 These are ideal for embedding into relational operator notebooks.
 
