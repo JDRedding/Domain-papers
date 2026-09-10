@@ -43,7 +43,7 @@ Book III is largely algebraic: it discusses the number of roots of an equation, 
 ## Msathematical Notation
 Descartes’ notation is already close to modern algebraic notation, with a few characteristic habits.
 
-## Notation Descartes actually used
+### Notation Descartes used
 
 - Known lengths: $a, b, c, \ldots$
 - Unknown lengths: $x, y, z, \ldots$
@@ -57,7 +57,7 @@ He treats $a^2$ and $a^3$ as lengths, not as areas or volumes. That is one of th
 These are the formulas and the notation that actually appear in *La Géométrie*. Later commentators (van Schooten, Hudde, Newton) rewrote them with two perpendicular axes, negative coordinates, and the now-familiar symbols, but the algebraic skeleton is already Descartes’.
 ---
 
-## Book I — Arithmetic operations as geometry, and quadratic equations
+### Book I — Arithmetic operations as geometry, and quadratic equations
 
 Multiplication, division and square roots are constructed with similar triangles (Thales). If a unit segment is chosen, products and quotients remain lengths.
 
@@ -97,7 +97,7 @@ $$
 
 ---
 
-## Book I–II — Pappus locus (origin of $x$ and $y$)
+### Book I–II — Pappus locus (origin of $x$ and $y$)
 
 Given lines in the plane, distances from a moving point $C$ to those lines (measured along prescribed directions) are denoted $x_1,x_2,\ldots$. The classical four-line problem asks that the product of two distances be proportional to the product of the other two.
 
@@ -127,7 +127,7 @@ For five or more lines the degree rises; the curve is still “geometric” prov
 
 ---
 
-## Book II — Tangents and normals (circle method)
+### Book II — Tangents and normals (circle method)
 
 To find the normal at a point $P=(x_0,y_0)$ on a curve $f(x,y)=0$:
 
@@ -143,7 +143,7 @@ This is the first general algebraic method for tangents to algebraic curves.
 
 ---
 
-## Book III — Theory of equations
+### Book III — Theory of equations
 
 Every equation is written
 
