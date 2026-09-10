@@ -1,6 +1,11 @@
 # Coca-Cola Flavor Architecture 
 Classic Reconstruction
 
+LabCoatz (Zach Armstrong) spent about a year matching commercial Coke with GC-MS help from other chemistry channels, published literature, and iterative tasting. The result is a two-phase home formula: an ethanol “7X-like” oil concentrate and a water-phase acid/color/tannin matrix. He later updated the batch from the original video amounts to 10 g tannin, 150 g glycerin, 43 mL of 85% phosphoric acid, and 185 mL Durkee caramel in the 1 L water phase. Your writeup follows that later cut.
+
+- **Functional analog.** The major known Coca-Cola levers are present: sucrose or invert sugar, phosphoric acid, caffeine near 96 mg/L, caramel color, citrus-spice oils, vanilla, a little acetic acid, and an astringent dry-down.
+- **Not vault formula.** Coca-Cola treats Merchandise 7X and the remaining “natural flavors” as a trade secret. A close mass spectrum of *volatiles* plus informal blind tasting does largely prove identity of nonvolatiles, enantiomer ratios, emulsion system, aging protocol, or the actual botanical sources.
+
 The core is that Coca-Cola’s “secret flavor” is not one exotic ingredient. It is a **precise geometric blend of citrus terpenes, spice volatiles, caramelization products, acids, and tannins**, tuned through **acid-catalyzed hydrolysis**. Modern GC-MS work is used to support that structure. Coca-Cola’s taste can be described as a **citrus–spice terpene lattice** — mainly limonene, α-terpineol, fenchol, cinnamaldehyde, and sabinene — supported by:
 
 - phosphoric acid
@@ -11,6 +16,7 @@ The core is that Coca-Cola’s “secret flavor” is not one exotic ingredient.
 The tannins are used to recreate the dryness once associated with coca-leaf extract. In the reported blind tests, a reconstructed 7X concentrate plus syrup was described as **indistinguishable** from commercial Coke.
 
 ## Reconstructed formula 
+The interesting move in the reconstruction is not a hidden exotic molecule. It is that **GC-MS cannot see the mouthfeel problem**. Tannins do not vaporize in a standard gas-phase run, so a replica can look “almost identical” on a chromatogram and still drink like a thin, too-sweet cola until an astringent fraction is added. That is a real analytical limitation, not marketing.
 
 ### Scientific reconstruction
 
@@ -78,6 +84,7 @@ The blend is dominated by **limonene**, **α-terpineol**, **fenchol**, **cinnama
 
 **Note:** Tea tree oil is **not FDA-approved for food use**.
 - Tea tree oil, used for 4-terpineol “coca-like” freshness
+- not approved for food use and leaving it out is the safe option
 
 ## Mixture B — Water-Phase Matrix
 This phase supplies **acidity**, **dryness**, **color**, **body**, and the characteristic cola “bite.”
@@ -89,6 +96,13 @@ This phase supplies **acidity**, **dryness**, **color**, **body**, and the chara
 - Wine tannins
 
 ## Final Assembly
+The two-system model is the correct way to think about cola:
+
+- **Mixture A** is the odor vector: terpenes and phenylpropanoids dissolved in ethanol so they disperse at parts-per-million in the finished drink.
+- **Mixture B** is the somatosensory matrix: sourness, bitterness, color, viscosity, and dryness.
+
+That split matches how flavor houses actually work. Oils live in alcohol or an emulsion. Acids, caffeine, color, and polyphenols live in water.
+
 Ratio for **1 L of finished cola**:
 
 - 104 g sugar, dissolved in minimal water
@@ -108,10 +122,39 @@ Combine with syrup, dilute with carbonated water, adjust sweetness/acidity, and 
 | 5% vinegar | 10 mL |
 | Vanilla extract | 10 mL |
 
+The oil blend totals exactly 100.0 mL. Diluting 20 mL of that blend to 1 L ethanol, then dosing 1 mL into 1 L soda, puts **20 µL of total essential oil per liter** in the glass. That is a normal beverage flavoring load, not a perfume dose.
+
+Finished cola as:
+
+$$
+\text{Coke analog} = \text{sugar water} + \text{CO}_2 + \varepsilon_A(\text{oils}) + \varepsilon_B(\text{acid + tannin + color + caffeine})
+\]
+
+with $\varepsilon_A \approx 0.1\%$ of concentrate A and $\varepsilon_B = 1\%$ of concentrate B.
+
+| Finished drink | This reconstruction | Commercial Coke ballpark |
+|---|---|---|
+| Sugar | 104 g/L | about 106–110 g/L depending on market |
+| Caffeine | 96.5 mg/L | about 96–97 mg/L |
+| Phosphoric acid | roughly 0.62 g/L as H₃PO₄ | about 0.54 g/L in one Coca-Cola Enterprises spec |
+| Acetic acid from 5% vinegar | about 5 mg/L | 3.4 mg/L in the 2014 Coca-Cola quantitation |
+| Wine tannin | 100 mg/L | not a labeled Coke ingredient; used here as a coca-leaf/tea dryness proxy |
+
+Caffeine is the cleanest hit. Sugar is a little low for U.S. Coke and close for some international sucrose versions. Phosphoric acid is a bit high, which would sharpen bite and can read as “more Coke than Pepsi” if everything else is balanced.
+
 ## Blind taste-test claim
+
 The ratio reported as indistinguishable from commercial Coca-Cola in blind tasting.
 
 Across the reported trials, participants could not distinguish LabCoatz’s Lab Cola from commercial Coca-Cola; some preferred the replica.
+
+## Finial notes
+
+- 85% phosphoric acid is corrosive. Glass only.
+- Essential oils are concentrated irritants until diluted.
+- Caffeine at 9.65 g/L in concentrate B is a real dose in the stock solution; weigh it, do not approximate.
+- Caramel color strength varies by brand, which is why 320 mL Shank’s became 185 mL Durkee.
+- Heating drives useful chemistry and also drives off top notes if the vessel is open.
 
 ## Future work
 
