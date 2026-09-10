@@ -70,3 +70,202 @@ The project influenced:
 - Louis Couturat, *La Logique de Leibniz* (1901)
 - Wolfgang Lenzen (1990)
 - Bruno Woltzenlogel Paleo (2014)
+
+## APPENDIX: Calculemus notation
+
+The higher layers of the *characteristica universalis* is the part Leibniz treated as calculable: combinatorial generation of concepts, characteristic numbers, the 1679 pair-model of syllogistic, and the later algebra of concepts. The notation below follows Leibniz’s own papers (especially 1666 and April 1679) and the standard reconstruction of his algebra of concepts.
+
+## 1. Combinatorial generation of concepts
+
+In the *Dissertatio de Arte Combinatoria* (1666), primitive concepts form a finite alphabet. Compound concepts are *complexiones* (combinations without regard to order).
+
+If there are $n$ primitive concepts, the number of combinations of size $k$ is the binomial coefficient
+
+$$
+\binom{n}{k}=\frac{n!}{k!(n-k)!}=\binom{n-1}{k}+\binom{n-1}{k-1}.
+$$
+
+The number of all nonempty combinations (Leibniz’s *complexiones simpliciter*) is
+
+$$
+\sum_{k=1}^{n}\binom{n}{k}=2^{n}-1.
+$$
+
+Leibniz’s class notation: class I = primitives; class II = pairs; class III = triples; and so on. A later class can be written by a fractional index, e.g. $1/3$ = first term of class III.
+
+Given a term built from $k$ primitives, the number of its possible predicates (its divisors in the later arithmetic model) is
+
+$$
+2^{k}-1.
+$$
+
+Given $n$ primitives total and a term of complexity $k$, the number of possible subjects that contain it is
+
+$$
+2^{n-k}-1
+$$
+
+(plus the identity case in which the term is predicated of itself).
+
+## 2. Characteristic numbers (intensional arithmetic)
+
+Assign to each primitive concept a prime (or, more loosely, an integer). Composition is multiplication.
+
+**Running example.**  
+Let
+
+$$
+\operatorname{char}(\text{animal})=a=2,\qquad
+\operatorname{char}(\text{rational})=r=3.
+$$
+
+Then
+
+$$
+\operatorname{char}(\text{man})=ar=2\cdot 3=6.
+$$
+
+Likewise, if metal $=m=7$ and heaviest $=p=5$, then gold $=mp=35$.
+
+**Containment / universal affirmative.**  
+“Every $S$ is $P$” (the concept $S$ contains the concept $P$) holds iff the characteristic number of $P$ divides that of $S$:
+
+$$
+S\in P \quad\Longleftrightarrow\quad p\mid s,
+$$
+
+i.e.
+
+$$
+s\equiv 0\pmod{p}.
+$$
+
+So “every man is an animal” because $2\mid 6$.
+
+This is Leibniz’s *inesse* (predicate-in-subject) principle in arithmetic form: the number of the subject is a multiple of the number of the predicate.
+
+## 3. Characteristic number *pairs* (1679 syllogistic model)
+
+The single-number model cannot handle negation and particular propositions cleanly. Leibniz therefore assigned to each term $T$ a pair of coprime positive integers
+
+$$
+T=\langle +t_1,\;-t_2\rangle
+\quad\text{with}\quad
+\gcd(t_1,t_2)=1.
+$$
+
+$t_1$ encodes the positive constituents; $t_2$ encodes the privative / negative constituents.
+
+Let $S=\langle s,\sigma\rangle$ and $P=\langle p,\pi\rangle$. The four categorical forms become:
+
+| Form | Traditional name | Arithmetic condition |
+|---|---|---|
+| All $S$ are $P$ | **A** | $p\mid s$ and $\pi\mid\sigma$ |
+| No $S$ is $P$ | **E** | $\gcd(s,\pi)>1$ or $\gcd(p,\sigma)>1$ |
+| Some $S$ is $P$ | **I** | $\gcd(s,\pi)=\gcd(p,\sigma)=1$ |
+| Some $S$ is not $P$ | **O** | $p\nmid s$ or $\pi\nmid\sigma$ |
+
+An inference $P_1,P_2\vdash C$ is valid iff every assignment of coprime pairs that makes both premises true also makes the conclusion true.
+
+(Some later commentators read the pair $\langle t_1,t_2\rangle$ as the rational $t_1/t_2$; the divisibility rules then become rules about fractions.)
+
+## 4. Algebra of concepts $L_1$
+
+From the late 1670s through the *Generales Inquisitiones* (1686), Leibniz treated concepts as an algebraic structure. The modern reconstruction (Lenzen) uses:
+
+- juxtaposition $AB$ = conceptual conjunction (intensional product)
+- $\sim A$ = conceptual negation
+- $A\in B$ = “$A$ contains $B$” (intensional inclusion)
+- $A=B$ = coincidence of concepts
+- $\mathrm{P}(A)$ = “$A$ is possible” (does not contain a contradiction)
+
+**Identity.**
+
+$$
+A=B \;\overset{\mathrm{df}}{\Longleftrightarrow}\; A\in B \;\wedge\; B\in A
+$$
+
+or, conversely,
+
+$$
+A\in B \;\Longleftrightarrow\; A=AB.
+$$
+
+**Containment.**
+
+$$
+A\in A
+\qquad
+(A\in B \;\wedge\; B\in C)\to A\in C.
+$$
+
+**Conjunction.**
+
+$$
+A\in BC \;\Longleftrightarrow\; A\in B \;\wedge\; A\in C.
+$$
+
+**Possibility / consistency.**
+
+$$
+\mathrm{P}(A)\;\to\; A\notin\sim A
+$$
+
+$$
+A\in B \;\Longleftrightarrow\; \neg\mathrm{P}(A\sim B)
+$$
+
+$$
+(A\in B \;\wedge\; \mathrm{P}(A))\to\mathrm{P}(B).
+$$
+
+**Ex contradictorio** (needed for full Boolean strength):
+
+$$
+(A\sim A)\in B.
+$$
+
+With that last axiom, the intensional algebra is isomorphic to a Boolean algebra of sets (extensions). Disjunction is then definable by De Morgan:
+
+$$
+A\lor B \;=\; \sim(\sim A\;\sim B).
+$$
+
+**Indefinite concepts as quantifiers.**  
+“Some $A$ is $B$” can be written with an indefinite letter $Y$:
+
+$$
+YA\in B
+\qquad\text{or}\qquad
+\exists Y\,(A=YB).
+$$
+
+An *individual concept* is a maximally consistent concept:
+
+$$
+\operatorname{Ind}(A)\;\overset{\mathrm{df}}{\Longleftrightarrow}\;
+\mathrm{P}(A)\;\wedge\;
+\forall Y\bigl(\mathrm{P}(AY)\to A\in Y\bigr).
+$$
+
+That is the formal link from the algebra of concepts to monadology: an individual is a complete, consistent concept.
+
+## 5. Binary (dyadic) arithmetic
+
+Leibniz’s base-2 notation was both a computational device and a metaphysical emblem: $1$ for being / God, $0$ for nothing. Any natural number has a unique expansion
+
+$$
+n=\sum_{k=0}^{m} b_k\,2^{k},\qquad b_k\in\{0,1\}.
+$$
+
+He treated this as a combinatorial code for “which primitive realities are present.” It is the same idea as the characteristic-number program, restricted to the two-element alphabet $\{0,1\}$, and is why later writers see the *characteristica* as an ancestor of digital representation.
+
+## 6. Scope and the first-order limit
+
+The arithmetic and algebraic systems above are essentially first-order term calculi: they combine concepts and test containment, consistency, and syllogistic consequence. They do not by themselves quantify over properties of properties, or encode full higher-order mathematics. That is the expressiveness constraint already noted in the earlier overview: the *calculus ratiocinator* as Leibniz left it is an algebra of concepts, not a modern type theory.
+
+The operational slogan remains the one Leibniz attached to the whole project: once the characters are fixed,
+
+$$
+\text{calculemus}.
+$$
