@@ -1,0 +1,30 @@
+BELL NUMBERS
+B_n counts the partitions of an n-element set
+(unlabeled nonempty disjoint subsets covering the whole set)
+
+VARIABLES / TYPES
+n     : cardinality of the ground set
+B_n   : nth Bell number (integer)
+k     : summation index (nonnegative integer)
+partition : unordered collection of nonempty unlabeled blocks
+
+FUNDAMENTALS
+Dobinski formula
+B_n = (1/e) * sum_{k=0}^∞ (k^n / k!)
+
+Sequence
+B_0 = 1
+B_1 = 1
+B_2 = 2
+B_3 = 5
+B_4 = 15
+B_5 = 52
+
+POST CLAIM
+5 people form unlabeled teams in exactly 52 ways  →  B_5 = 52
+
+USES
+unlabeled clusters in machine learning
+possible communities
+every unlabeled bundling of data
+set partitions decide groupings before any algorithm runs
