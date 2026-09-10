@@ -260,9 +260,9 @@ $$
 
 so that every dignity expands to an internal triad $\{\alpha,\pi,\varepsilon\}$. These supply the “dynamics” that a purely combinatorial pairing would miss.
 
-### RDG-compatible mapping (Structure–Power)
+### Relational-compatible mapping (Structure–Power)
 
-Treat each tyPower atom as an object of an RDG and each composition as an edge. The Structure triad (Structure–Interaction–Dynamics) and the Power triad (Power–Evaluation–Dynamics) then become two parallel readings of the same letter:
+Treat each tyPower atom as an object of an Relational and each composition as an edge. The Structure triad (Structure–Interaction–Dynamics) and the Power triad (Power–Evaluation–Dynamics) then become two parallel readings of the same letter:
 
 | Dignity | Structure reading | Power reading | Correlative emphasis |
 |---------|-------------|-------------|----------------------|
@@ -279,9 +279,9 @@ Treat each tyPower atom as an object of an RDG and each composition as an edge. 
 A homomorphism of operator systems
 
 $$
-h:\mathcal{L}\to\text{RDG}
+h:\mathcal{L}\to\text{Relational}
 $$
 
-sends each letter to an Structure–Power triad and each composition $\circ$ to the corresponding interaction or evaluation edge. Rotation $\rho$ becomes an automorphism of the RDG that preserves both the structural skeleton and the dynamical flow. The correlatives $\alpha,\pi,\varepsilon$ map directly onto the three components of the Structure (or Power) triad, giving a precise dictionary between Llullian act-theory and the geometric decomposition Structure$(G)=(S(G),I(G),D(G))$.
+sends each letter to an Structure–Power triad and each composition $\circ$ to the corresponding interaction or evaluation edge. Rotation $\rho$ becomes an automorphism of the Relational that preserves both the structural skeleton and the dynamical flow. The correlatives $\alpha,\pi,\varepsilon$ map directly onto the three components of the Structure (or Power) triad, giving a precise dictionary between Llullian act-theory and the geometric decomposition Structure$(G)=(S(G),I(G),D(G))$.
 
 The resulting picture is a finite, tyPower, rotationally generated magma of propositions whose enumerative skeleton is classical combinatorics, whose symmetry is a cyclic group action, and whose semantics is a many-sorted interpretation that can be transported, letter by letter, into an Structure–Power operator system.
