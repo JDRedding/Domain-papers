@@ -1,8 +1,50 @@
 # tyPower
 
-**tyPower** is a theoretical framework for hierarchical combinatory systems in which elements of computation or structure are multi-sorted, and all operations respect rotational equivariance. This design enables the representation of symmetries and typed interactions in a formally rigorous yet composable manner.
+**tyPower** is a theoretical framework for hierarchical combinatory systems in which elements of computation or structure are multi-sorted, and all operations respect rotational equivariance. This design enables the representation of symmetries and typed interactions in a formally rigorous yet composable manner. Think of tyPower as:
 
+**“typed combinatory logic whose types are geometric irreps and whose combinators are required to be $SO(2)$/$SO(3)$-equivariant.”**
+
+In applied terms, it is closest to the *algebra of layers* in geometric/equivariant ML. In pure terms, it is closest to a multi-sorted combinatory algebra internal to the category of representations of a rotation group.
+
+## Overview
 tyPower is a typed, multi-sorted combinatory framework that rigorously enforces rotational equivariance across all operations and compositions. It generalizes classical combinatory logic to systems where sorts are heterogeneous, operations are constrained by types, and symmetry is explicit, providing a mathematically principled basis for symmetry-aware combinatorial computation. This abstract framework can form the backbone for symbolic, numeric, or hybrid computational systems that require compositional symmetry preservation and multi-type interactions.
+
+It is most like **rotation-equivariant typed composition of heterogeneous tensors** — the same pattern used in:
+
+- Tensor Field Networks
+- Clebsch–Gordan networks
+- e3nn / SE(3)-equivariant models
+- steerable CNNs
+
+Those systems also have:
+
+- multiple types (scalars, vectors, higher-order tensors / irreps)
+- typed product rules (only certain type pairs combine to a valid output type)
+- a tensor-like fusion operation
+- composition of maps
+- the exact equivariance law  
+  $\Phi(Rx_1,\dots,Rx_n)=R\Phi(x_1,\dots,x_n)$
+
+tyPower is that idea rewritten in combinatory-logic language instead of neural-network or representation-theory language.
+
+### Formal ancestors
+
+1. **Typed / multi-sorted combinatory logic**  
+   Combinators as the primitive operators, sorts as types, composition as the main glue. The “Power” combinator is just iterated application. This is the syntactic skeleton.
+
+2. **Symmetric monoidal categories with a group action**  
+   Sorts = objects, combinators = morphisms, $\otimes$ = monoidal product, nested combinators = higher morphisms, $SO(2)$/$SO(3)$ acting so that morphisms are equivariant. That is the cleanest categorical reading.
+
+3. **Multi-sorted algebras / typed term algebras with symmetry**  
+   Interaction rules $\mu_{i,j}:S_i\times S_j\to S_k$ are just typed operations; rotational equivariance is a group action that all operations must intertwine.
+
+### What it is *not* especially like
+
+- Ordinary untyped SK combinatory logic (no sorts, no geometry)
+- Plain group theory / character tables
+- Knuth-style power towers (the “Pow” name is coincidental)
+- Generic category theory without types *and* rotation
+- Ordinary CNNs (those are translation-equivariant, not rotationally typed)
 
 ## Multi-Sorted Foundation
 
