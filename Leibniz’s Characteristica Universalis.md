@@ -224,7 +224,7 @@ If no such finite product exists, the term is still composite in secret.
 **Checking arguments.**  
 Two people may use the same words and different atoms. Asking “which primitives are in play, and which combinations are being asserted?” often dissolves a verbal dispute without settling the deeper one. That is as close as the method comes to Leibniz’s hope that controversy might be reduced to calculation.
 
-An assertion “$S$ is $Q$” is arithmetically checkable once numbers are assigned:
+An assertion “ $S$ is $Q$ ” is arithmetically checkable once numbers are assigned:
 
 $$
 S\in Q \iff {char}(Q)\mid{char}(S).
@@ -359,9 +359,9 @@ From the late 1670s through the *Generales Inquisitiones* (1686), Leibniz treate
 
 - juxtaposition $AB$ = conceptual conjunction (intensional product)
 - $\sim A$ = conceptual negation
-- $A\in B$ = “$A$ contains $B$” (intensional inclusion)
+- $A\in B$ = “ $A$ contains $B$ ” (intensional inclusion)
 - $A=B$ = coincidence of concepts
-- $\mathrm{P}(A)$ = “$A$ is possible” (does not contain a contradiction)
+- $\mathrm{P}(A)$ = “ $A$ is possible ” (does not contain a contradiction)
 
 **Identity.**
 
