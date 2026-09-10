@@ -62,6 +62,53 @@ The project influenced:
 - Computer science and automated reasoning (proof assistants such as Coq and Isabelle).
 - Later attempts at universal languages and precise knowledge representation.
 
+## Applications
+
+Leibniz did not write the *Dissertatio de Arte Combinatoria* as a closed piece of mathematics. He treated combinatorics as a general method: list the simplest pieces of a subject, combine them systematically, and use the resulting inventory to invent, classify, and test ideas. In the 1666 book itself he already tried the method on law, music, logic, geometry, natural philosophy, and everyday puzzles. The same habit is still usable today, even though his dreamed-of universal language was never finished.
+
+### What Leibniz applied it to
+
+**Logic and invention.**  
+The central logical use was: given a subject, find all possible predicates; given a predicate, find all possible subjects. Compound ideas were treated as combinations of primitives. Syllogisms could then be surveyed by counting and sorting combinations rather than by memory of the traditional moods. This is the seed of his later claim that reasoning should become a kind of calculation.
+
+**Geometry and definition.**  
+He built geometric ideas from a short list of primitives—point, space, included, part, whole, number, and so on—then defined richer terms as combinations. “Quantity,” for example, appears as the number of the parts. The point was not to replace Euclid, but to show that even spatial ideas can be assembled from an alphabet.
+
+**Law and cases.**  
+Legal distinctions and fact-patterns were treated as combinations of a few relevant marks: persons, acts, conditions, circumstances. The method promised a more complete map of cases than ordinary listing, and a way to notice missing distinctions.
+
+**Music.**  
+He applied the same counting to organ registrations and to the possible arrangements of tones. A limited set of stops or notes yields a large, but finite, field of combinations. That is why later readers see an anticipation of combinatorial composition.
+
+**Natural philosophy.**  
+The four Aristotelian primary qualities and the generation of the elements gave him a compact example: a few qualities, combined, produce the traditional elements. The science is dated; the pattern is not. A small table of primitives is made to generate a larger table of kinds.
+
+**Language, writing, and puzzles.**  
+He sketched a universal script, criticized Ramon Llull for combining too narrowly, and played the method on letters, seating orders, melodies, and lock combinations. These “recreational” cases mattered to him because they showed that the same art covers serious invention and ordinary arrangement.
+
+### What the method is still good for
+
+**Making a field legible.**  
+Choose a domain you actually work in—features of a product, clauses of a contract, motifs in a piece of music, symptoms in a diagnosis, virtues in an argument—and force a short list of primitives. Then generate the combinations instead of relying on slogans. Gaps and illegal pairings become visible.
+
+**Inventing on purpose.**  
+Brainstorming often repeats nearby ideas. Combinatorial invention asks a colder question: which pairings have not been tried? That is useful in design, taxonomy, curriculum-building, and any task where the parts are few and the compounds are many.
+
+**Testing definitions.**  
+If a concept cannot be written as a combination of agreed atoms, it is probably still a bundle of hidden ideas. The book’s discipline is to keep decomposing until the remainder is dull. Dull primitives are a feature.
+
+**Checking arguments.**  
+Two people may use the same words and different atoms. Asking “which primitives are in play, and which combinations are being asserted?” often dissolves a verbal dispute without settling the deeper one. That is as close as the method comes to Leibniz’s hope that controversy might be reduced to calculation.
+
+**Building small tools.**  
+The counting side is ordinary combinatorics. A short program can take a list of primitives and emit all nonempty combinations, then answer “what can be said of this compound?” That is the *ars inveniendi* of the book in modern form. It will not encode the universe. It will inventory a local language.
+
+### What it will not do
+
+It will not, by itself, assign the “true” characteristic numbers of real things. That was Leibniz’s unsolved encyclopedia problem. It also will not replace experiment, higher mathematics, or moral judgment. Used honestly, the art of combinations is a way to exhaust a small alphabet—not a machine for producing the world from symbols.
+
+The practical rule left by the book is therefore modest: when a subject is confused, look for missing primitives; when a subject is sterile, look for unused combinations.
+
 ## References and further reading
 
 - Leibniz, *Dissertatio de Arte Combinatoria* (1666)
