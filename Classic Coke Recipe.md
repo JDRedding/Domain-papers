@@ -115,12 +115,12 @@ Across the reported trials, participants could not distinguish LabCoatz’s Lab 
 
 ## Future work
 
-- Build an **RDG operator for cola flavor geometry**
-- Analyze **terpene interactions under phosphoric-acid hydrolysis**
-- Derive a **scale-tension model for top-note vs base-note balance**
+- an **RDG operator for cola flavor geometry**
+- **terpene interactions under phosphoric-acid hydrolysis**
+- a **scale-tension model for top-note vs base-note balance**
 
 ## References and further reading
-- LabCoatz, [Perfectly Replicating Coca Cola](https://www.youtube.com/watch?v=TDkH3EbWTYc)
 - [OpenCoke-Scientific](https://github.com/ShortTimeNoSee/OpenCoke-Scientific)
-- badhalu.com, [what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained](https://badhalu.com/education-science/what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained)
-- Hypebeast, [youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe](https://hypebeast.com/2026/1/youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe).
+- LabCoatz, [Perfectly Replicating Coca Cola](https://www.youtube.com/watch?v=TDkH3EbWTYc)
+- badhalu.com, [A youtuber's year long lab experiment and clone recipe explained](https://badhalu.com/education-science/what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained)
+- Hypebeast, [youtuber labcoatz reverse engineer discover coca cola recipe](https://hypebeast.com/2026/1/youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe).
