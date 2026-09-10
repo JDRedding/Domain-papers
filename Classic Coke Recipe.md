@@ -661,30 +661,124 @@ $$
 \mathcal{R} = \{\text{citrus terpenes},\ \text{spice phenylpropanoids},\ \text{acid},\ \text{tannin},\ \text{sugar},\ \text{carbonation}\}.
 $$
 
-Define the projection $P_{\mathcal{R}}$ onto those coordinates and
+The reduced set is a **coordinate subspace**, not a new physical law. Write the composition as a vector in a fixed basis, then $P_{\mathcal{R}}$ is the orthogonal projector onto the span of the empirically stiff axes.
+
+***Ambient space**
+
+Let the batch state be
 
 $$
-\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})}
-       {\left\|P_{\mathcal{R}}\nabla S(\mathbf{x})\right\|_2 + \epsilon}.
+\mathbf{x}\in\mathbb{R}^{d},\qquad
+\mathbf{x}=(x_k)_{k\in\mathcal{I}},
 $$
 
-A line-search update for a new batch is
+where $\mathcal{I}$ indexes every tracked coordinate (limonene, $\alpha$-terpineol, cinnamaldehyde, $\mathrm{H_3PO_4}$, tannin, sucrose, $\mathrm{CO_2}$, glycerin, …). Let
 
 $$
-\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} + \eta_n\,\mathrm{RDG}[S](\mathbf{x}^{(n)}).
+S:\mathbb{R}^{d}\to\mathbb{R}
 $$
 
-If one wants an explicit geometric product rather than a gradient name, the citrus–spice lattice can be written as a rank‑1 coupling
+be a scalar sensory score against commercial Coke (difference from a reference, or a triangle-test loss). The full gradient $\nabla S(\mathbf{x})\in\mathbb{R}^{d}$ is noisy because many coordinates co-vary.
+
+The reduced index set is the six stiff groups
 
 $$
-\Lambda(\mathbf{x}) = \langle \mathbf{u}, \mathbf{x}_{\mathrm{citrus}}\rangle \, \langle \mathbf{v}, \mathbf{x}_{\mathrm{spice}}\rangle,
+\mathcal{R} =\{\text{citrus},\ \text{spice},\ \text{acid},\ \text{tannin},\ \text{sugar},\ \text{carbonation}\}.
 $$
 
-with unit vectors $\mathbf{u},\mathbf{v}$ encoding the intended lemon–lime versus cassia–nutmeg ratio. The reconstruction’s “precise geometric blend” is then the constraint
+Each group $r\in\mathcal{R}$ owns a block of fine indices $\mathcal{I}_r\subset\mathcal{I}$, pairwise disjoint for the projector below (put leftover coordinates such as glycerin or ethanol in the discarded complement $\mathcal{I}\setminus\bigcup_r\mathcal{I}_r$).
+
+**Coordinate projector**
+
+Let $e_k$ be the standard basis of $\mathbb{R}^{d}$. The orthogonal projector onto the coordinate subspace
 
 $$
-\Lambda(\mathbf{x}) = \Lambda^\star, \qquad \Psi(\mathbf{x})=0.
+E_{\mathcal{R}} :=\mathrm{span}\{e_k:k\in\textstyle\bigcup_{r\in\mathcal{R}}\mathcal{I}_r\}
 $$
+
+is the diagonal $0$-$1$ matrix
+
+$$
+P_{\mathcal{R}} =\sum_{k\in\bigcup_{r}\mathcal{I}_r} e_k e_k^{\mathsf T} =\mathrm{diag}(1_{\mathcal{R}}(k))_{k\in\mathcal{I}}.
+$$
+
+Explicitly, $(P_{\mathcal{R}}\mathbf{v})_k=v_k$ if $k$ belongs to a stiff group and $0$ otherwise. This is self-adjoint and idempotent:
+
+$$
+P_{\mathcal{R}}^{\mathsf T}=P_{\mathcal{R}}, \qquad P_{\mathcal{R}}^{2}=P_{\mathcal{R}}.
+$$
+
+That is the object in the RDG formula.
+
+**Grouped (coarse) projector**
+
+If the stiff “directions” are **groups**, not single molecules, insert an aggregation map $A\in\mathbb{R}^{d\times 6}$ whose columns are unit vectors supported on each block:
+
+$$
+A=\bigl[\mathbf{a}_{\mathrm{citrus}}\ \mathbf{a}_{\mathrm{spice}}\ \mathbf{a}_{\mathrm{acid}}\ \mathbf{a}_{\mathrm{tannin}}\ \mathbf{a}_{\mathrm{sugar}}\ \mathbf{a}_{\mathrm{CO_2}}\bigr],
+$$
+
+$$
+(\mathbf{a}_r)_k = \begin{cases} w_{r,k}/\|w_r\|_2 & k\in\mathcal{I}_r,\\ 0 & \text{otherwise}. \end{cases}
+$$
+
+The weights $w_{r,k}$ can be uniform, mass fractions, or OAV weights. Then the orthogonal projector onto $\mathrm{range}(A)$ is
+
+$$
+P_{\mathcal{R}} =A(A^{\mathsf T}A)^{-1}A^{\mathsf T}.
+$$
+
+If the six group vectors are orthonormal, this collapses to $P_{\mathcal{R}}=AA^{\mathsf T}$. Use this form when you want “move citrus as a block” rather than “move limonene independently of $\alpha$-terpineol.”
+
+**Reduced directional gradient**
+
+With either definition of $P_{\mathcal{R}}$,
+
+$$
+\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})} {\bigl\|P_{\mathcal{R}}\nabla S(\mathbf{x})\bigr\|_{2}+\epsilon}.
+$$
+
+The numerator kills updates on floppy coordinates. The denominator makes the step a **direction**, not a magnitude; $\epsilon>0$ is only a safeguard when the projected gradient vanishes.
+
+A line-search (or fixed-step) batch update is
+
+$$
+\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} +\eta_n\,\mathrm{RDG}[S]\!\bigl(\mathbf{x}^{(n)}\bigr),
+$$
+
+with $\eta_n>0$ chosen so that every coordinate stays inside its feasible interval (non-negative concentrations, phosphoric acid below a handling cap, oil load near $20\,\mu\mathrm{L\,L}^{-1}$).
+
+In practice $S$ is not differentiable. Replace $\nabla S$ by a finite-difference or one-factor-at-a-time estimate on the six group scores,
+
+$$
+\bigl(\widehat{\nabla S}\bigr)_{r} \approx \frac{S(\mathbf{x}+\delta\mathbf{a}_r)-S(\mathbf{x}-\delta\mathbf{a}_r)}{2\delta},
+$$
+
+then apply $P_{\mathcal{R}}$ in the coarse basis. That is the operator you can actually run on successive cola batches.
+
+**Rank-1 citrus–spice product**
+
+The projector above is a **filter on the gradient**. If you want an explicit geometric scalar on the flavor state instead, split
+
+$$
+\mathbf{x}_{\mathrm{citrus}} =P_{\mathrm{citrus}}\mathbf{x}, \qquad \mathbf{x}_{\mathrm{spice}} =P_{\mathrm{spice}}\mathbf{x},
+$$
+
+and fix unit templates $\mathbf{u},\mathbf{v}$ for the intended lemon–lime shape and the intended cassia–nutmeg–eugenol shape. The coupling
+
+$$
+\Lambda(\mathbf{x}) = \langle\mathbf{u},\mathbf{x}_{\mathrm{citrus}}\rangle \,\langle\mathbf{v},\mathbf{x}_{\mathrm{spice}}\rangle
+$$
+
+is rank-1 in those two blocks: it depends on the product of two linear forms, not on a full citrus–spice Gram matrix. A reconstruction constraint is then
+
+$$
+\Lambda(\mathbf{x})=\Lambda^{\star},
+\qquad
+\Psi(\mathbf{x})=0,
+$$
+
+i.e. keep the citrus–spice product on the Coke ratio while the top/base energies stay balanced. That constraint lives on $\mathbf{x}$. The RDG lives on $\nabla S$. They are not the same object: $\Lambda$ is a state feature; $\mathrm{RDG}[S]$ is an update direction after projecting away everything that is not in $\mathcal{R}$.
 
 ---
 
