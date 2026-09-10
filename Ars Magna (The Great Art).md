@@ -1,1 +1,7 @@
-Ars Magna (The Great Art)
+**Ars Magna**, translated as *The Great Art*, is a seminal algebraic treatise by the Italian mathematician Gerolamo Cardano, first published in 1545. It is one of the first comprehensive treatments of algebra in the Renaissance and the first published account of methods for solving cubic and quartic equations. *Ars Magna* (*The Great Art*) is a landmark text that advanced algebraic theory and the solution of higher-degree polynomial equations. Its methods influenced later algebraists and remain important in the history of mathematics. *Ars Magna* is a major milestone in the development of modern mathematics. Its publication spread algebraic knowledge across Europe and stimulated further work on equations during the Renaissance. It established Cardano as one of the leading mathematicians of his time.
+
+The book presents algebraic solutions to cubic (third-degree) and quartic (fourth-degree) equations. Cardano published methods originating with Scipione del Ferro and Niccolò Tartaglia for cubics, and with his pupil Lodovico Ferrari for quartics, while supplying demonstrations of his own. It systematically advances algebraic technique and contains an early printed appearance of what are now called complex numbers—square roots of negative quantities—which Cardano treated formally but regarded as “sophistic” and of little use. The work mixes geometric and algebraic reasoning and marks a shift from classical methods toward modern algebra.
+
+**References and further reaeding**  
+- Gerolamo Cardano, *Artis Magnae, sive de Regulis Algebraicis* (*The Great Art, or The Rules of Algebra*), 1545
+- Katz, V. J. (2009). *A History of Mathematics: An Introduction*.
