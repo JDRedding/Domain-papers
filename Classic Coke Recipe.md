@@ -148,7 +148,7 @@ The ratio reported as indistinguishable from commercial Coca-Cola in blind tasti
 
 Across the reported trials, participants could not distinguish LabCoatz’s Lab Cola from commercial Coca-Cola; some preferred the replica.
 
-## Finial notes
+## Final notes
 
 - 85% phosphoric acid is corrosive. Glass only.
 - Essential oils are concentrated irritants until diluted.
