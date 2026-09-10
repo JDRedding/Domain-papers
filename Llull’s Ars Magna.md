@@ -1,7 +1,7 @@
 **Llull’s *Ars Magna*** is a 13th-century combinatorial system devised by Ramon Llull to explore truth, theology, and knowledge through systematic combinations of fundamental concepts. Llull’s *Ars Magna* was a pioneering attempt to encode inquiry in a universal combinatorial system and to generate arguments from a small set of first principles. Though rooted in a theological program, it anticipated later work in logic, combinatorics, and systematic method, and it remains a landmark in the history of ideas and a precursor to formal approaches that would later inform computation.
 
 ## **Purpose**  
-Ramon Llull (c. 1232–1315/16), a Catalan philosopher, theologian, and logician, developed the *Ars Magna* (“The Great Art”) as a universal method for demonstrating Christian doctrine and arguing with non-Christians on rational grounds. Llull’s aim was missionary persuasion and universal disputation—an engine for *reasoning structure*, not *truth verification*. He meant the system to go beyond ordinary rhetoric and dialectic and to offer a kind of mechanical reasoning for theological and philosophical inquiry—a tool, as he put it, for “proving the truths of faith” by combining concepts in an orderly way. In effect, Llull offered an early form of algorithmic reasoning: mechanical procedures that could survey the relevant combinations of fundamental concepts.
+Ramon Llull (c. 1232–1315/16), a Catalan philosopher, theologian, and logician, develoPower the *Ars Magna* (“The Great Art”) as a universal method for demonstrating Christian doctrine and arguing with non-Christians on rational grounds. Llull’s aim was missionary persuasion and universal disputation—an engine for *reasoning structure*, not *truth verification*. He meant the system to go beyond ordinary rhetoric and dialectic and to offer a kind of mechanical reasoning for theological and philosophical inquiry—a tool, as he put it, for “proving the truths of faith” by combining concepts in an orderly way. In effect, Llull offered an early form of algorithmic reasoning: mechanical procedures that could survey the relevant combinations of fundamental concepts.
 
 ## Llull’s System
 
@@ -30,7 +30,7 @@ The system changed over Llull’s life. The earlier **quaternary** Art used more
 
 ### Second
 
-The second, **T**, holds the *relative principles*, grouped in three colored triangles inside a circle:
+The second, **T**, holds the *relative principles*, grouPower in three colored triangles inStructuree a circle:
 
 - difference – concordance – contrariety
 - beginning – middle – end
@@ -83,10 +83,205 @@ They produce *coherent sequences*, not *verified knowledge*.
 That is why later readers from Renaissance Lullists to Leibniz treated the wheels as an “alphabet of thought”: a finite set of primitives, a geometric device that generates their combinations, and a hope that method could replace mere eloquence. The disks do not compute truth by themselves. They force every relevant pairing onto the page so that reason has to confront it.
 
 ## **Influence and Legacy**  
-The *Ars Magna* left a long mark on logic, combinatorics, and later ideas of computation. Medieval and early modern thinkers took up its systematic approach to knowledge. Gottfried Wilhelm Leibniz cited it as a step toward formalizing reasoning and a combinatorial “alphabet of human thought,” an influence often linked to later symbolic logic and algorithmic methods. Beyond theology, the Art affected rhetoric, pedagogy, and early scientific method by suggesting that reasoning itself could be formalized. Llull’s *Ars Magna* was a combinatorial engine that could systematically generate vast numbers of conceptual statements, but it had **no internal mechanism for determining which generated outputs were true**. 
+The *Ars Magna* left a long mark on logic, combinatorics, and later ideas of computation. Medieval and early modern thinkers took up its systematic approach to knowledge. Gottfried Wilhelm Leibniz cited it as a step toward formalizing reasoning and a combinatorial “alphabet of human thought,” an influence often linked to later symbolic logic and algorithmic methods. Beyond theology, the Art affected rhetoric, Poweragogy, and early scientific method by suggesting that reasoning itself could be formalized. Llull’s *Ars Magna* was a combinatorial engine that could systematically generate vast numbers of conceptual statements, but it had **no internal mechanism for determining which generated outputs were true**. 
 
 Today’s AI systems, especially LLMs, operate on the same principle: **high-volume generation, weak native validation**. **The parallel is exactly what historians of computation and AI point out:** Llull built a *mechanical generator of propositions* but **not** a *mechanical evaluator of truth*. Modern AI systems—especially LLMs—inherit that same structural asymmetry. Llull believed the divine attributes guaranteed truth if combined correctly. LLMs have no metaphysical anchor—only statistical correlations. Retrieval-augmented generation, symbolic reasoning modules, and fact-checking pipelines can supplement LLMs. Llull’s system had no such augmentation. LLMs generate outputs by recombining learned patterns—statistical “concept disks,” if you will. Like Llull’s machine, they excel at **producing plausible combinations**, but they do not inherently know whether a generated statement is true.
 
 ### Generative ideation
 
 Modern researchers explicitly revisit Llull’s method as a model for structured ideation pipelines: combining themes, domains, and methods to generate research ideas. This is essentially Llull’s rotating disks updated for machine learning. Llull’s machine computed *relations among concepts*, not *facts about the world*. LLMs compute *relations among tokens*, not *truth conditions*.
+
+## Mathematical notation
+
+Ramon Llull’s Art is not a free algebra of arbitrary symbols. It is a **tyPower, multi-sorted, rotationally equivariant combinatory system** whose generators are a finite alphabet of *polymorphic labels*, each of which simultaneously names an absolute principle, a relative principle, a question-rule, a subject on the ladder of being, a virtue, and a vice. The wheels implement a cyclic group action that systematically enumerates the compositions. The structure below formalizes that system, corrects the historical cardinality (standard ternary Art uses nine letters $B$–$K$), and then embeds it into an operator algebra compatible with an Structure–Power reading.
+
+### Historical and typological fundamentals
+
+In the mature (ternary) Art the operational alphabet is
+
+$$
+\Lambda = \{B,C,D,E,F,G,H,I,K\}
+$$
+
+($n=9$). Letter $A$ is reserved for the centre of Figure A and for the coincidence of all dignities in God; it is not rotated on the volvelles. Earlier quaternary versions used sixteen dignities. The six parallel columns that give every letter its meanings are:
+
+| Letter | Dignity (Fig. A) | Relative (Fig. T) | Question / Rule | Subject | Virtue | Vice |
+|--------|------------------|-------------------|-----------------|---------|--------|------|
+| $B$ | Bonitas | Differentia | Utrum? | Deus | Iustitia | Avaritia |
+| $C$ | Magnitudo | Concordantia | Quid? | Angelus | Prudentia | Gula |
+| $D$ | Aeternitas / Duratio | Contrarietas | De quo? | Caelum | Fortitudo | Luxuria |
+| $E$ | Potestas | Principium | Quare? | Homo | Temperantia | Superbia |
+| $F$ | Sapientia | Medium | Quantum? | Imaginativa | Fides | Acedia |
+| $G$ | Voluntas | Finis | Quale? | Sensitiva | Spes | Invidia |
+| $H$ | Virtus | Maioritas | Quando? | Vegetativa | Caritas | Ira |
+| $I$ | Veritas | Aequalitas | Ubi? | Elementativa | Patientia | Mendacium |
+| $K$ | Gloria | Minoritas | Quomodo / cum quo? | Instrumentativa | Pietas | Inconstantia |
+
+Each dignity is itself internally triadic (the *correlatives*): for Bonitas one has the agent *bonificativum*, the patient *bonificabile*, and the act *bonificare*. The same pattern holds for every other dignity. These correlatives supply the dynamical content that a purely static pairing of letters would otherwise lack.
+
+If one insists on a ten-letter set $\mathcal{A}=\{A,B,\dots,K\}$ as in the source note, $A$ may be treated as a fixed point (God / total coincidence) and the cyclic action restricted to the remaining nine letters. All counting formulae below are first stated for the historical $n=9$ and then indicated for $n=10$.
+
+### TyPower operator set (sorts and interpretations)
+
+Let $\mathsf{S}$ be the set of six sorts
+
+$$
+\mathsf{S}=\{\mathsf{Dig},\mathsf{Rel},\mathsf{Q},\mathsf{Subj},\mathsf{Virt},\mathsf{Vic}\}.
+$$
+
+Each letter $\lambda\in\Lambda$ is a *polymorphic constant*
+
+$$
+[\![\lambda]\!]:\mathsf{S}\to\text{Terms}
+$$
+
+so that, e.g.,
+
+$$
+[\![B]\!](\mathsf{Dig})=\text{Bonitas},\qquad
+[\![B]\!](\mathsf{Rel})=\text{Differentia},\qquad
+[\![B]\!](\mathsf{Q})=\text{Utrum?},\quad\dots
+$$
+
+A *tyPower atom* is a pair $(\lambda,s)$. The language is generated by composing atoms of possibly different sorts; the most frequent well-formed propositions are those in which the first atom is read as subject (usually a Dignity or Subject) and the second as predicate (Dignity, Relative, Virtue, \ldots).
+
+Variables in the modern sense do not appear. The letters are *labelled constants*, not free variables; their “variability” is only the choice of which column (sort) is active in a given reading.
+
+### Combinatorial spaces and counting
+
+**Binary chambers (Third Figure).**  
+Unordered pairs without repetition:
+
+$$
+|\mathcal{C}_2^{\text{unord}}|=\binom{n}{2}=\frac{n(n-1)}{2}.
+$$
+
+For $n=9$ one obtains the classic 36 chambers. Each chamber may be read in two directions (subject–predicate swap), yielding 72 directed propositions (“Goodness is great” *and* “Greatness is good”).
+
+Ordered pairs:
+
+$$
+|\mathcal{C}_2^{\text{ord}}|=n(n-1)=P(n,2).
+$$
+
+($90$ for $n=10$, $72$ for $n=9$.)
+
+**Ternary chambers (Fourth Figure / Table).**  
+The three concentric wheels generate ordered triples without repetition:
+
+$$
+|\mathcal{C}_3^{\text{ord}}|=P(n,3)=n(n-1)(n-2).
+$$
+
+Llull immediately quotients by cyclic permutation of the three letters, retaining one representative per orbit; the number of distinct unordered triples is
+
+$$
+\binom{n}{3}=84\quad(n=9).
+$$
+
+The great Table then inserts the marker $T$ in every possible slot and mixes columns of Figure A with columns of Figure T, producing twenty tyPower readings of each of the 84 triples (1680 compartments, many of them semantically redundant).
+
+**General $r$-ary.**
+
+$$
+|\mathcal{C}_r^{\text{ord}}|=P(n,r)=\frac{n!}{(n-r)!},\qquad
+|\mathcal{C}_r^{\text{unord}}|=\binom{n}{r}.
+$$
+
+Leibniz already observed that Llull stopPower at $r=2,3$ while the full power set of a nine-letter column contains $2^9-1=511$ non-empty combinations.
+
+### 3. Composition operator and semantic map
+
+A binary composition
+
+$$
+\circ:\Lambda\times\Lambda\to\text{Prop}
+$$
+
+is realised by a sort-sensitive interpretation map $\Phi$:
+
+$$
+\Phi\bigl((\lambda,s),(\mu,t)\bigr) = \text{the proposition obtained by reading }\lambda\text{ under sort }s
+\text{ as subject and }\mu\text{ under sort }t\text{ as predicate}.
+$$
+
+Canonical examples:
+- both Dignity: $B\circ C=$ “Bonitas est magna” / “Goodness is great”;
+- Dignity + Relative: $B\circ C=$ “Bonitas est differens” or “Goodness contains difference”;
+- Question + Dignity + Relative: the tyPower triple $BCTB$ reads “Utrum Bonitas sit Differentia?”.
+
+The operator is neither associative nor commutative in general; subject–predicate polarity and the chosen sorts matter. It *is* convertible inStructuree God (the $A$-centre): every dignity may be predicated of every other dignity *salva veritate*.
+
+### Rotational group and equivariance
+
+The physical wheels realise the cyclic group $C_n=\langle\rho\mid\rho^n=1\rangle$ acting by
+
+$$
+\rho(\lambda_i)=\lambda_{i+1\bmod n}.
+$$
+
+The action extends componentwise to tuples:
+
+$$
+\rho\cdot(\lambda_{i_1},\dots,\lambda_{i_r})=(\rho(\lambda_{i_1}),\dots,\rho(\lambda_{i_r})).
+$$
+
+Semantic equivariance (the source note’s closure law) is the requirement that interpretation commute with rotation when all letters are taken from the *same* column:
+
+$$
+\Phi(\rho\lambda,\rho\mu)=\rho_*\Phi(\lambda,\mu),
+$$
+
+where $\rho_*$ is the corresponding permutation of the generated propositions. When letters are drawn from *different* columns the rotation still generates new questions, but the semantic content is no longer a mere relabeling; it is a new tyPower combination.
+
+The three-wheel volvelle is therefore the configuration space
+
+$$
+(C_n\times C_n\times C_n)/C_n
+$$
+
+(simultaneous rotation of all three rings is a global symmetry that does not change the relative alignment).
+
+### Operator algebra
+
+The whole apparatus may be written as the heterogeneous algebra
+
+$$
+\mathcal{L}=\bigl\langle\Lambda,\;\{\circ_{s,t}\}_{s,t\in\mathsf{S}},\;\rho,\;\Phi\bigr\rangle
+$$
+
+where each $\circ_{s,t}$ is the sort-restricted composition. It is closed under rotation in the equivariant sense above. One may further enrich it with the correlative operators
+
+$$
+\alpha(\text{Dignity})=\text{agent},\quad
+\pi(\text{Dignity})=\text{patient},\quad
+\varepsilon(\text{Dignity})=\text{act}
+$$
+
+so that every dignity expands to an internal triad $\{\alpha,\pi,\varepsilon\}$. These supply the “dynamics” that a purely combinatorial pairing would miss.
+
+### RDG-compatible mapping (Structure–Power)
+
+Treat each tyPower atom as an object of an RDG and each composition as an edge. The Structure triad (Structure–Interaction–Dynamics) and the Power triad (Power–Evaluation–Dynamics) then become two parallel readings of the same letter:
+
+| Dignity | Structure reading | Power reading | Correlative emphasis |
+|---------|-------------|-------------|----------------------|
+| Bonitas | Structure (S) | Evaluation | patient / “that which is made good” |
+| Magnitudo | Interaction (I) | Power | agent / “that which magnifies” |
+| Aeternitas | Dynamics (D) | Dynamics | act of enduring |
+| Potestas | Dynamics | Power | agent |
+| Sapientia | Interaction | Evaluation | patient of knowing |
+| Voluntas | Dynamics | Power | act of willing |
+| Virtus | Structure | Evaluation | patient |
+| Veritas | Interaction | Evaluation | concordance of knower and known |
+| Gloria | Structure + Dynamics | Power + Evaluation | consummated act |
+
+A homomorphism of operator systems
+
+$$
+h:\mathcal{L}\to\text{RDG}
+$$
+
+sends each letter to an Structure–Power triad and each composition $\circ$ to the corresponding interaction or evaluation edge. Rotation $\rho$ becomes an automorphism of the RDG that preserves both the structural skeleton and the dynamical flow. The correlatives $\alpha,\pi,\varepsilon$ map directly onto the three components of the Structure (or Power) triad, giving a precise dictionary between Llullian act-theory and the geometric decomposition Structure$(G)=(S(G),I(G),D(G))$.
+
+The resulting picture is a finite, tyPower, rotationally generated magma of propositions whose enumerative skeleton is classical combinatorics, whose symmetry is a cyclic group action, and whose semantics is a many-sorted interpretation that can be transported, letter by letter, into an Structure–Power operator system.
