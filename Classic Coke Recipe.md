@@ -664,14 +664,14 @@ $$
 Define the projection $P_{\mathcal{R}}$ onto those coordinates and
 
 $$
-\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})}{\left\|P_{\mathcal{R}}\nabla S(\mathbf{x})\right\|_2 + \epsilon}.
+\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})}
+       {\left\|P_{\mathcal{R}}\nabla S(\mathbf{x})\right\|_2 + \epsilon}.
 $$
 
 A line-search update for a new batch is
 
 $$
-\mathbf{x}^{(n+1)}
-= \mathbf{x}^{(n)} + \eta_n\,\mathrm{RDG}[S](\mathbf{x}^{(n)}).
+\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} + \eta_n\,\mathrm{RDG}[S](\mathbf{x}^{(n)}).
 $$
 
 If one wants an explicit geometric product rather than a gradient name, the citrus–spice lattice can be written as a rank‑1 coupling
