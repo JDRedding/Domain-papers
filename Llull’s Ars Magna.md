@@ -179,7 +179,7 @@ These are the highest‑level mathematical diagrams.
 - **Operator‑Magma Diagram** — closure under $\circ$.  
 - **Equivariance‑Law Diagram** — $\Phi(\rho\lambda,\rho\mu)=\rho_*\Phi(\lambda,\mu)$.  
 - **Correlative‑Expansion Diagram** — $\alpha,\pi,\varepsilon$ expansions.  
-- **RDG‑Homomorphism Diagram** — mapping $h:\mathcal{L}\to\text{}$.
+- **Relational‑Homomorphism Diagram** — mapping $h:\mathcal{L}\to\text{}$.
 
 
 ## Mathematical notation
