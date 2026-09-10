@@ -31,10 +31,11 @@ The modern rectangular coordinate system, the systematic use of negative coordin
 ## What Descartes actually did
 
 - **Unification of algebra and geometry**. He treated line segments as quantities that can be added, multiplied, and divided, and he used letters systematically: known lengths as $a, b, c,\ldots$ and unknown lengths as $x, y,\ldots$. This is the origin of the now-standard convention of using late-alphabet letters for unknowns.
+
 - **Germ of a coordinate system**. In solving Pappus’s locus problem he chose one given line as a reference (an “axis”) and measured a second length from a point on that line, calling the two lengths $x$ and $y$. The axes were often oblique, only the first quadrant was used, and he never drew a pair of perpendicular axes with an origin in the modern style. The rectangular Cartesian plane was a later clarification.
-- 
+  
 - **Classification of curves**. Book II distinguishes “geometric” curves (those constructible by a finite sequence of ruler-and-compass operations or, equivalently, those given by an algebraic equation) from “mechanical” curves (transcendental curves such as the spiral or cycloid). He classified geometric curves by the degree of their equations.
-- 
+
 - **Algebraic treatment of loci and tangents**. He translated geometric conditions into polynomial equations and gave a method (the “method of undetermined coefficients” and a precursor of implicit differentiation) for finding tangents and normals.
 
 Book III is largely algebraic: it discusses the number of roots of an equation, the rule of signs (Descartes’ rule), and the construction of roots of equations of degree up to 6.
