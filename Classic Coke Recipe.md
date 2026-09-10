@@ -166,7 +166,8 @@ Across the reported trials, participants could not distinguish LabCoatz’s Lab 
 - [OpenCoke-Scientific](https://github.com/ShortTimeNoSee/OpenCoke-Scientific)
 - LabCoatz, [Perfectly Replicating Coca Cola](https://www.youtube.com/watch?v=TDkH3EbWTYc)
 - badhalu.com, [A youtuber's year long lab experiment and clone recipe explained](https://badhalu.com/education-science/what-s-really-in-coca-cola-inside-a-youtuber-s-year-long-lab-experiment-and-clone-recipe-explained)
-- Hypebeast, [youtuber labcoatz reverse engineer discover coca cola recipe](https://hypebeast.com/2026/1/youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe).
+- Hypebeast, [youtuber labcoatz reverse engineer discover coca cola recipe](https://hypebeast.com/2026/1/youtuber-labcoatz-reverse-engineer-discover-coca-cola-recipe)
+- Lorjaroenphon & Cadwallader, Identification of character-impact odorants in a cola-flavored carbonated beverage by quantitative analysis and omission studies of aroma reconstitution models., J. Agric. Food Chem. 2015
 
 # Appendix: Mathematical formulation
 
