@@ -115,14 +115,14 @@ Assign to each primitive concept a prime (or, more loosely, an integer). Composi
 Let
 
 $$
-\operatorname{char}(\text{animal})=a=2,\qquad
-\operatorname{char}(\text{rational})=r=3.
+{char}(\text{animal})=a=2,\qquad
+{char}(\text{rational})=r=3.
 $$
 
 Then
 
 $$
-\operatorname{char}(\text{man})=ar=2\cdot 3=6.
+{char}(\text{man})=ar=2\cdot 3=6.
 $$
 
 Likewise, if metal $=m=7$ and heaviest $=p=5$, then gold $=mp=35$.
@@ -243,7 +243,7 @@ $$
 An *individual concept* is a maximally consistent concept:
 
 $$
-\operatorname{Ind}(A)\;\overset{\mathrm{df}}{\Longleftrightarrow}\;
+{Ind}(A)\;\overset{\mathrm{df}}{\Longleftrightarrow}\;
 \mathrm{P}(A)\;\wedge\;
 \forall Y\bigl(\mathrm{P}(AY)\to A\in Y\bigr).
 $$
