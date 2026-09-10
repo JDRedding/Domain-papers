@@ -259,7 +259,7 @@ The practical rule left by the book is therefore modest: when a subject is confu
 
 The higher layers of the *characteristica universalis* is the part Leibniz treated as calculable: combinatorial generation of concepts, characteristic numbers, the 1679 pair-model of syllogistic, and the later algebra of concepts. The notation below follows Leibniz’s own papers (especially 1666 and April 1679) and the standard reconstruction of his algebra of concepts.
 
-## 1. Combinatorial generation of concepts
+### Combinatorial generation of concepts
 
 In the *Dissertatio de Arte Combinatoria* (1666), primitive concepts form a finite alphabet. Compound concepts are *complexiones* (combinations without regard to order).
 
@@ -291,7 +291,7 @@ $$
 
 (plus the identity case in which the term is predicated of itself).
 
-## 2. Characteristic numbers (intensional arithmetic)
+### Characteristic numbers (intensional arithmetic)
 
 Assign to each primitive concept a prime (or, more loosely, an integer). Composition is multiplication.
 
@@ -328,7 +328,7 @@ So “every man is an animal” because $2\mid 6$.
 
 This is Leibniz’s *inesse* (predicate-in-subject) principle in arithmetic form: the number of the subject is a multiple of the number of the predicate.
 
-## 3. Characteristic number *pairs* (1679 syllogistic model)
+### Characteristic number *pairs* (1679 syllogistic model)
 
 The single-number model cannot handle negation and particular propositions cleanly. Leibniz therefore assigned to each term $T$ a pair of coprime positive integers
 
@@ -353,7 +353,7 @@ An inference $P_1,P_2\vdash C$ is valid iff every assignment of coprime pairs th
 
 (Some later commentators read the pair $\langle t_1,t_2\rangle$ as the rational $t_1/t_2$; the divisibility rules then become rules about fractions.)
 
-## 4. Algebra of concepts $L_1$
+### Algebra of concepts $L_1$
 
 From the late 1670s through the *Generales Inquisitiones* (1686), Leibniz treated concepts as an algebraic structure. The modern reconstruction (Lenzen) uses:
 
@@ -434,7 +434,7 @@ $$
 
 That is the formal link from the algebra of concepts to monadology: an individual is a complete, consistent concept.
 
-## 5. Binary (dyadic) arithmetic
+### Binary (dyadic) arithmetic
 
 Leibniz’s base-2 notation was both a computational device and a metaphysical emblem: $1$ for being / God, $0$ for nothing. Any natural number has a unique expansion
 
@@ -444,7 +444,7 @@ $$
 
 He treated this as a combinatorial code for “which primitive realities are present.” It is the same idea as the characteristic-number program, restricted to the two-element alphabet $\{0,1\}$, and is why later writers see the *characteristica* as an ancestor of digital representation.
 
-## 6. Scope and the first-order limit
+### Scope and the first-order limit
 
 The arithmetic and algebraic systems above are essentially first-order term calculi: they combine concepts and test containment, consistency, and syllogistic consequence. They do not by themselves quantify over properties of properties, or encode full higher-order mathematics. That is the expressiveness constraint already noted in the earlier overview: the *calculus ratiocinator* as Leibniz left it is an algebra of concepts, not a modern type theory.
 
