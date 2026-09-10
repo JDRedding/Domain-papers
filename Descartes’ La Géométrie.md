@@ -39,7 +39,6 @@ The modern rectangular coordinate system, the systematic use of negative coordin
 
 Book III is largely algebraic: it discusses the number of roots of an equation, the rule of signs (Descartes’ rule), and the construction of roots of equations of degree up to 6.
 
-
 ## Msathematical Notation
 Descartes’ notation is already close to modern algebraic notation, with a few characteristic habits.
 
@@ -55,7 +54,6 @@ Descartes’ notation is already close to modern algebraic notation, with a few 
 He treats $a^2$ and $a^3$ as lengths, not as areas or volumes. That is one of the decisive breaks with Greek dimensional homogeneity.
 
 These are the formulas and the notation that actually appear in *La Géométrie*. Later commentators (van Schooten, Hudde, Newton) rewrote them with two perpendicular axes, negative coordinates, and the now-familiar symbols, but the algebraic skeleton is already Descartes’.
----
 
 ### Book I — Arithmetic operations as geometry, and quadratic equations
 
@@ -94,8 +92,6 @@ z^2 = -az + b^2,\qquad
 z^3 = az^2 + b^2 z - c^3,\qquad
 z^4 = az^3 - c^3 z + d^4,\ \ldots
 $$
-
----
 
 ### Book I–II — Pappus locus (origin of $x$ and $y$)
 
@@ -141,8 +137,6 @@ Eliminate one variable between this circle and the curve. The resulting equation
 
 This is the first general algebraic method for tangents to algebraic curves.
 
----
-
 ### Book III — Theory of equations
 
 Every equation is written
@@ -185,5 +179,3 @@ x^2 = ay,\quad y^2 = bx,\quad xy = ab,
 $$
 
 which he solves by intersecting a parabola and a circle (or hyperbola).
-
----
