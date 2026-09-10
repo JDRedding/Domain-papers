@@ -686,7 +686,7 @@ $$
 \mathcal{R} =\{\text{citrus},\ \text{spice},\ \text{acid},\ \text{tannin},\ \text{sugar},\ \text{carbonation}\}.
 $$
 
-Each group $r\in\mathcal{R}$ owns a block of fine indices $\mathcal{I}_r\subset\mathcal{I}$, pairwise disjoint for the projector below (put leftover coordinates such as glycerin or ethanol in the discarded complement $\mathcal{I}\setminus\bigcup_r\mathcal{I}_r$).
+Each group $r\in\mathcal{R}$ owns a block of fine indices $\mathcal{I}_r\subset\mathcal{I}$, pairwise disjoint for the projector below (put leftover coordinates such as glycerin or ethanol in the discarded complement $\mathcal{I}\setminus\bigcup_r\mathcal{I}_r$.
 
 **Coordinate projector**
 
