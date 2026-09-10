@@ -664,10 +664,10 @@ $$
 Define the projection $P_{\mathcal{R}}$ onto those coordinates and
 
 $$
-\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})}{\|P_{\mathcal{R}}\nabla S{\mathbf{x}}\|_2+\epsilon}.
+\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})}{\left\|P_{\mathcal{R}}\nabla S(\mathbf{x})\right\|_2 + \epsilon}.
 $$
 
-A line‑search update for a new batch is
+A line-search update for a new batch is
 
 $$
 \mathbf{x}^{(n+1)}
