@@ -1,0 +1,220 @@
+LINUX CHEATSHEET
+Quick reference: commands, types, variables & fundamentals
+Share / copy freely
+
+=== FUNDAMENTALS ===
+Everything is a file (regular, dir, symlink, device, pipe, socket)
+Paths:  /absolute   ./relative   ../parent   ~/home
+Variables:
+  NAME=value          # set
+  echo $NAME          # expand
+  export PATH=$PATH:/opt/bin
+Special vars:
+  $0 script name   $1 $2 args   $# arg count
+  $? last exit code (0=ok)   $$ current PID   $USER $HOME $PATH $PWD
+Permissions (rwx rwx rwx = owner group others):
+  r=4  w=2  x=1     755 = rwxr-xr-x    644 = rw-r--r--
+  chmod 755 file    chmod +x script    chown user:group file
+Redirection & pipes:
+  cmd > file        overwrite
+  cmd >> file       append
+  cmd 2> err.log    stderr
+  cmd 2>&1          both to stdout
+  cmd | other       pipe
+Wildcards: * any string   ? one char   [abc] set   {a,b} brace
+Quoting: 'literal'   "expand $vars"   $(cmd) or `cmd`
+File types (file command / ls -l first char):
+  - regular   d directory   l symlink   b block   c char   p pipe   s socket
+
+=== 1. SYSTEM INFORMATION ===
+uname -a                 # kernel + system
+cat /etc/os-release      # distro
+hostname                 # hostname
+hostname -I              # IP addresses
+whoami                   # current user
+id                       # uid/gid
+uptime                   # uptime + load
+date                     # date/time
+timedatectl              # timezone
+free -h                  # RAM
+df -h                    # disk space
+du -sh <dir>             # dir size
+lscpu                    # CPU
+lsblk                    # block devices
+ip a                     # interfaces
+uname -r                 # kernel version
+
+=== 2. FILE AND DIRECTORY OPERATIONS ===
+ls                       # list
+ls -l                    # long
+ls -la                   # hidden too
+cd <dir>                 # change dir
+pwd                      # current path
+mkdir <dir>              # create dir
+mkdir -p a/b/c           # nested
+rmdir <dir>              # empty dir only
+rm <file>                # delete file
+rm -r <dir>              # recursive
+rm -rf <dir>             # force (careful)
+cp <src> <dst>           # copy
+cp -r <src> <dst>        # copy dir
+mv <src> <dst>           # move / rename
+touch <file>             # empty file / update time
+file <file>              # type
+stat <file>              # metadata
+ln -s <src> <link>       # symlink
+find <dir> -name "*.txt" # search by name
+locate <file>            # fast (updatedb)
+which <cmd>              # binary path
+whereis <cmd>            # bin + man + source
+
+=== 3. FILE CONTENT OPERATIONS ===
+cat <file>               # print all
+less <file>              # page (q to quit)
+head -n 20 <file>        # first lines
+tail -n 20 <file>        # last lines
+tail -f <file>           # follow (logs)
+wc -l <file>             # line/word/byte count
+grep "text" <file>       # search
+grep -r "text" <dir>     # recursive
+sed 's/old/new/g' file   # replace
+awk '{print $1}' file    # first column
+sort file                # sort
+uniq file                # unique lines
+diff file1 file2         # differences
+cut -d',' -f1 file       # extract field
+tr 'a-z' 'A-Z' < file    # translate
+tee file                 # print + write
+echo "hi" > file         # overwrite
+echo "hi" >> file        # append
+
+=== 4. USER AND PERMISSIONS ===
+who                      # logged in
+w                        # who + what
+adduser <user>           # new user
+passwd <user>            # password
+usermod -aG <grp> <user> # add to group
+deluser <user>           # delete user
+groups <user>            # groups
+chmod 755 <file>
+chmod +x <file>
+chown user:group <file>
+chgrp group <file>
+umask                    # default perms
+sudo <cmd>               # as root
+su -                     # switch to root
+
+=== 5. PROCESS MANAGEMENT ===
+ps aux                   # all processes
+ps -ef | grep name       # find
+top                      # live monitor
+htop                     # nicer monitor
+kill <PID>               # terminate
+kill -9 <PID>            # force
+pkill name               # by name
+pgrep name               # get PIDs
+nice -n 10 cmd           # lower priority
+renice -n 5 -p <PID>     # change priority
+jobs                     # background jobs
+fg / bg                  # foreground / background
+
+=== 6. PACKAGE MANAGEMENT ===
+# Debian / Ubuntu
+sudo apt update
+sudo apt upgrade
+sudo apt install <pkg>
+sudo apt remove <pkg>
+sudo apt search <pkg>
+sudo apt autoremove
+
+# Fedora / RHEL / CentOS
+sudo dnf install <pkg>
+sudo dnf remove <pkg>
+sudo dnf search <pkg>
+sudo dnf upgrade
+
+=== 7. NETWORKING ===
+ip a                     # addresses
+ip route                 # routes
+ping <host>
+traceroute <host>
+curl <url>
+wget <url>
+ssh user@host
+scp file user@host:/path
+rsync -av src/ dst/
+ss -tulnp                # listening ports
+dig domain               # DNS
+hostname -I              # local IPs
+systemctl status NetworkManager
+
+=== 8. SYSTEMD AND SERVICES ===
+systemctl status <svc>
+systemctl start <svc>
+systemctl stop <svc>
+systemctl restart <svc>
+systemctl enable <svc>   # start on boot
+systemctl disable <svc>
+systemctl list-units --type=service
+journalctl -u <svc>
+journalctl -f            # follow logs
+journalctl -xe           # recent errors
+
+=== 9. DISK AND STORAGE ===
+df -h
+du -sh <dir>
+lsblk
+fdisk -l
+mount /dev/sdX /mnt
+umount /mnt
+blkid                    # UUIDs
+mkfs.ext4 /dev/sdX       # format (destructive)
+fsck /dev/sdX            # check fs
+dd if=src of=dst bs=4M status=progress
+
+=== 10. ARCHIVING AND COMPRESSION ===
+tar -czvf out.tar.gz dir     # create gzip
+tar -xzvf out.tar.gz         # extract gzip
+tar -cjvf out.tar.bz2 dir    # bzip2
+zip -r out.zip dir
+unzip out.zip
+gzip file                    # -> file.gz
+gunzip file.gz
+xz file
+unxz file.xz
+
+=== 11. LOGS AND MONITORING ===
+tail -f /var/log/syslog
+journalctl -xe
+dmesg | tail
+watch -n 1 <cmd>         # repeat every 1s
+
+=== 12. SHORTCUTS AND MISC ===
+history
+!!                       # last command
+!<n>                     # nth history
+Ctrl+C                   # kill
+Ctrl+Z                   # suspend
+Ctrl+L                   # clear
+clear
+exit
+man <cmd>
+<cmd> --help
+whatis <cmd>
+alias ll='ls -la'
+unalias ll
+env                      # all variables
+printenv PATH
+cal
+bc                       # calculator
+
+=== 13. USEFUL TIPS ===
+Tab completion saves time
+man cmd  or  cmd --help  before guessing
+Never rm -rf /  or unquoted wildcards as root
+history | grep something
+cmd && next     # run next only if ok
+cmd || fallback
+> overwrite    >> append    | pipe
+screen or tmux for long sessions
+Keep system updated: apt update && apt upgrade
