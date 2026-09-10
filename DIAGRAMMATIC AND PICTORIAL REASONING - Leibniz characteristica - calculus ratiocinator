@@ -1,0 +1,139 @@
+DIAGRAMMATIC AND PICTORIAL REASONING 
+Leibniz characteristica - calculus ratiocinator
+
+AIM
+Characters that can be seen as well as calculated.
+A diagram shows a logical relation so an operation can be done by eye,
+without first turning it into speech.
+
+THREE FACES OF ONE RELATION
+  verbal     Every man is an animal
+  numeric    2 | 6
+  pictorial  the smaller mark sits inside the larger one
+If the picture is faithful, moving the marks is already reasoning.
+
+FUNDAMENTALS
+  P = {p1, p2, ..., pn}     alphabet of primitive concepts
+  A subseteq P, A nonempty  compound term / complexion
+  char(T)                   characteristic number of term T
+  S in Q                    S contains Q   (inesse)
+  AB                        conceptual conjunction (product)
+  ~A                        conceptual negation
+  gcd(a,b)=1                coprime pair in the 1679 model
+
+TYPES
+  Primitive     undecomposed mark          p, animal=2, rational=3
+  Compound      product / subset           man = animal * rational = 6
+  Subject S     term under test
+  Predicate Q   term claimed of S
+  Pair term     <+ t1 | - t2 >             positives / privatives
+  Diagram       visible relation among marks
+  Operation     containment, product, overlap, exclusion
+
+VARIABLES
+  n             number of primitives
+  k             size of a combination
+  S, Q, T       terms
+  s = char(S)   number of the subject
+  q = char(Q)   number of the predicate
+  <s, sigma>    pair for S
+  <p, pi>       pair for Q
+  A, B          subsets of P
+
+CORE EQUATIONS
+  Pred(S)  = { A subseteq S : A nonempty }          |Pred(S)|  = 2^|S| - 1
+  Subj(Q)  = { B subseteq P : Q subseteq B }        |Subj(Q)|  = 2^{n-|Q|}
+  S in Q   <=>  Q subseteq S  <=>  q | s
+  char(AB) = char(A) * char(B)
+  All S are Q                 p|s  and  pi|sigma
+  No S is Q                   gcd(s,pi)>1  or  gcd(p,sigma)>1
+  Some S is Q                 gcd(s,pi)=gcd(p,sigma)=1
+  Some S is not Q             p does not divide s  or  pi does not divide sigma
+
+CONTAINMENT PICTURE
+  Universal affirmative: Q is in S
+
+          ======= S =======
+             === Q ===
+
+  Test:  Q inside S  <=>  Q subseteq S  <=>  char(Q)|char(S)
+
+COMBINATION PICTURE
+  primitives on a line
+
+          p1   p2   p3   p4   p5
+          *    *    *    *    *
+
+  product
+
+          [animal] * [rational]  -->  [man]
+              2    *     3       -->    6
+
+  tree
+
+                    man
+                   /   \
+              animal   rational
+                 |         |
+                 2         3
+
+FOUR CATEGORICAL PICTURES
+  A  All S are P         P inside S
+        ==== S ====
+          == P ==
+
+  E  No S is P           disjoint
+        [ S ]     [ P ]
+
+  I  Some S is P         overlap
+        S [##] P
+            shared marks
+
+  O  Some S is not P     S not swallowed by P
+        [ S ] --x-- [ P ]
+
+GEOMETRIC ALPHABET  (1666 class I)
+  Point           .
+  Space           field of points
+  Included        a point held inside a region
+  Part / whole    whole
+                 /    \
+               part   part
+  Interval        2 . 3 . 10
+                  space * included * whole
+
+                  [ ........ ]
+                    included
+                       ^
+                     space
+                    in a whole
+
+  Quantity(X) = |Parts(X)|
+
+1679 PAIR PICTURE
+  T = <+ t1 | - t2 >     gcd(t1,t2)=1
+
+       t1 yes          t2 not
+         \               /
+          coprime pair
+
+  All S are P is two nestings at once:
+       s contains p     and     sigma contains pi
+
+ONE VISUAL STEP
+  Claim:  man contains animal
+  Picture:   man [ animal ]
+  Numbers:   6 = 2*3 ,  2|6
+  Geometry:  animal-mark is a proper part of man-mark
+  The three inscriptions stand or fall together.
+  That is a characteristic: the diagram is already the argument.
+
+WHAT THE PICTURES HANDLE
+  combination, containment, overlap, exclusion
+
+WHAT THEY DO NOT HANDLE BY THEMSELVES
+  higher-order properties, continuity,
+  the true primitives of nature
+
+RULE
+  A diagram here is a readable combination, not a map of the world.
