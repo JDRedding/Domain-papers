@@ -708,7 +708,7 @@ $$
 P_{\mathcal{R}}^{\mathsf T}=P_{\mathcal{R}}, \qquad P_{\mathcal{R}}^{2}=P_{\mathcal{R}}.
 $$
 
-That is the object in the RDG formula.
+That is the object in the Relational formula.
 
 **Grouped (coarse) projector**
 
@@ -737,7 +737,7 @@ With either definition of $P_{\mathcal{R}}$, the numerator kills updates on flop
 A line-search (or fixed-step) batch update is
 
 $$
-\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} +\eta_n\,\mathrm{RDG}[S]\!\bigl(\mathbf{x}^{(n)}\bigr),
+\mathbf{x}^{(n+1)} = \mathbf{x}^{(n)} +\eta_n\,\mathrm{Relational}[S]\!\bigl(\mathbf{x}^{(n)}\bigr),
 $$
 
 with $\eta_n>0$ chosen so that every coordinate stays inside its feasible interval (non-negative concentrations, phosphoric acid below a handling cap, oil load near $20\,\mu\mathrm{L\,L}^{-1}$).
@@ -772,7 +772,7 @@ $$
 \Psi(\mathbf{x})=0,
 $$
 
-i.e. keep the citrus–spice product on the Coke ratio while the top/base energies stay balanced. That constraint lives on $\mathbf{x}$. The RDG lives on $\nabla S$. They are not the same object: $\Lambda$ is a state feature; $\mathrm{RDG}[S]$ is an update direction after projecting away everything that is not in $\mathcal{R}$.
+i.e. keep the citrus–spice product on the Coke ratio while the top/base energies stay balanced. That constraint lives on $\mathbf{x}$. The Relational lives on $\nabla S$. They are not the same object: $\Lambda$ is a state feature; $\mathrm{Relational}[S]$ is an update direction after projecting away everything that is not in $\mathcal{R}$.
 
 ---
 
