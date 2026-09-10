@@ -184,7 +184,7 @@ which he solves by intersecting a parabola and a circle (or hyperbola).
 ## Structured summary
 
 ### **Analytic geometry** as algebraic encoding of loci  
-The document emphasizes that Descartes’ decisive move is the **systematic translation of geometric problems into algebraic equations**. Curves become solution sets of polynomial relations in two variable lengths.  
+Descartes’ decisive move is the **systematic translation of geometric problems into algebraic equations**. Curves become solution sets of polynomial relations in two variable lengths.  
 - In the Pappus locus, distances become linear forms:  
   **$x_1 = a x + b y + c$**, etc.  
 - The locus condition becomes a polynomial constraint:  
@@ -192,7 +192,7 @@ The document emphasizes that Descartes’ decisive move is the **systematic tran
 This is the operator skeleton of modern coordinate geometry.
 
 ### **Cartesian variables** without Cartesian axes  
-The document is explicit: Descartes never draws perpendicular axes.  
+This is explicit: Descartes never draws perpendicular axes.  
 He introduces **$x$ and $y$** only as *lengths measured from a reference line*.  
 The rectangular coordinate plane is a **later van Schooten / Hudde / Newton refinement**.
 
@@ -209,7 +209,7 @@ This is a precursor to implicit differentiation:
 **“The resulting equation… must have a *double root* at the point of contact.”** 
 
 ### **Theory of equations** (Book III)  
-The document covers:  
+This covers:  
 - Factorization viewpoint: $(z-a)(z-b)\cdots(z-s)=0$.  
 - **Descartes’ rule of signs**.  
 - Quartic depression and factorization into two quadratics.  
