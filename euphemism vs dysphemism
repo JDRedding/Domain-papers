@@ -1,0 +1,19 @@
+euphemism vs dysphemism
+
+TYPE      euphemism
+VALUE     polite_term(impolite_thing)
+EXAMPLE   "let go"          → fired
+          "love handles"    → waist fat
+          "powder room"     → toilet
+
+TYPE      dysphemism
+VALUE     impolite_term(polite_thing)
+EXAMPLE   "rawdogging"      → winging it
+          "rug rat"         → child
+          "beak"            → nose
+
+FUNDAMENTALS
+  both replace a direct word
+  euphemism softens
+  dysphemism sharpens
+  same referent, opposite tone
