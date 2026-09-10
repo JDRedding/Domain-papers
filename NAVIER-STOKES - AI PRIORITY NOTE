@@ -1,0 +1,55 @@
+NAVIER-STOKES - AI PRIORITY NOTE
+
+CONTEXT
+Two near-simultaneous 2026 claims of finite-time singularity
+in forced 3D incompressible fluid equations.
+
+Group A  Buckmaster (NYU) + Alpöge (Anthropic)
+         posted first on model equations
+         (porous medium, 2D Boussinesq, 3D Euler)
+Group B  OpenAI multi-agent system
+         announced full forced Navier-Stokes blowup shortly after
+
+Dispute is priority + credit, not just "did AI invent the idea."
+Both lines use the Córdoba–Martínez-Zoroa forcing / vorticity-cascade strategy.
+
+FUNDAMENTALS
+Incompressible Navier-Stokes (forced):
+
+  ∂u/∂t + (u · ∇)u  =  −∇p + ν Δu + f
+  ∇ · u             =  0
+
+Types / fields
+  u = u(x,t)     velocity        R^3 → R^3
+  p = p(x,t)     pressure        R^3 → R
+  f = f(x,t)     external force  R^3 → R^3
+  ν ≥ 0          kinematic viscosity
+  x ∈ Ω ⊂ R^3    space
+  t ≥ 0          time
+
+Special cases
+  ν = 0          incompressible Euler
+  f = 0          unforced (classic Clay setting most people imagine)
+  f smooth       forced setting used in the 2026 announcements
+
+Millennium question (Clay)
+  Do smooth finite-energy initial data stay smooth for all time,
+  or can |u| blow up in finite time T* < ∞ ?
+
+Announced results target statement C/D style:
+  there exist smooth f and smooth initial data such that
+  a singularity forms in finite time while energy stays finite.
+
+WHY THE REPLY MATTERS
+"Still didn't publish it first" points at chronology:
+human+AI papers on nearby equations appeared before
+the large-agent NS announcement.
+It treats AI as accelerator of an existing mathematical program,
+not as first publisher or sole author of the idea.
+
+VARIABLES THAT DECIDE THE FIGHT
+  T*          putative blowup time
+  ||∇u||_∞    typical blowup diagnostic
+  smoothness of f     forced vs unforced
+  Lean formalization  machine-checked proof vs prose writeup
+  arXiv / site timestamp   who posted which equation first
