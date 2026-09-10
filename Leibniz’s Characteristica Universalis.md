@@ -71,34 +71,172 @@ Leibniz did not write the *Dissertatio de Arte Combinatoria* as a closed piece o
 **Logic and invention.**  
 The central logical use was: given a subject, find all possible predicates; given a predicate, find all possible subjects. Compound ideas were treated as combinations of primitives. Syllogisms could then be surveyed by counting and sorting combinations rather than by memory of the traditional moods. This is the seed of his later claim that reasoning should become a kind of calculation.
 
+Given subject $S\subseteq P$, the possible predicates are its nonempty parts:
+
+$$
+{Pred}(S)=\{A\subseteq S:A\neq\varnothing\}
+\qquad
+|{Pred}(S)\bigr|=2^{|S|}-1.
+$$
+
+Given predicate $Q\subseteq P$, the possible subjects are the supersets of $Q$:
+
+$$
+{Subj}(Q)=\{B\subseteq P:Q\subseteq B\}
+\qquad
+|{Subj}(Q)\bigr|=2^{n-|Q|}.
+$$
+
+“Every $S$ is $Q$” is just containment:
+
+$$
+S\in Q \iff Q\subseteq S.
+$$
+
 **Geometry and definition.**  
 He built geometric ideas from a short list of primitives—point, space, included, part, whole, number, and so on—then defined richer terms as combinations. “Quantity,” for example, appears as the number of the parts. The point was not to replace Euclid, but to show that even spatial ideas can be assembled from an alphabet.
+
+A defined term is a combination of primitives. If class-I marks are numbered $1,2,\dots$, a compound is a product (or a tuple) of those marks:
+
+$$
+{Interval}=\{2,3,10\}
+\qquad\text{i.e.}\qquad
+\text{space}\cdot\text{included}\cdot\text{whole}.
+$$
+
+Quantity as “number of the parts”:
+
+$$
+{Quantity}(X)=\lvert{Parts}(X)\rvert.
+$$
 
 **Law and cases.**  
 Legal distinctions and fact-patterns were treated as combinations of a few relevant marks: persons, acts, conditions, circumstances. The method promised a more complete map of cases than ordinary listing, and a way to notice missing distinctions.
 
+A case is a tuple of legal atoms (person, act, circumstance, …). The docket generated from $k$ relevant factors with sizes $n_1,\dots,n_k$ is
+
+$$
+\lvert\mathcal{C}\rvert=\prod_{i=1}^{k}n_i.
+$$
+
+Two cases are the same legal kind when they have the same support:
+
+$$
+C\sim C' \iff {supp}(C)={supp}(C').
+$$
+
 **Music.**  
 He applied the same counting to organ registrations and to the possible arrangements of tones. A limited set of stops or notes yields a large, but finite, field of combinations. That is why later readers see an anticipation of combinatorial composition.
+
+From $n$ notes or stops, the number of unordered combinations of size $k$ (a chord, a registration) is
+
+$$
+\binom{n}{k}=\frac{n!}{k!(n-k)!}.
+$$
+
+Ordered sequences of length $\ell$ (a motif, a melody fragment) are
+
+$$
+n^{\ell}
+\qquad\text{or, without repetition,}\qquad
+P(n,\ell)=\frac{n!}{(n-\ell)!}.
+$$
 
 **Natural philosophy.**  
 The four Aristotelian primary qualities and the generation of the elements gave him a compact example: a few qualities, combined, produce the traditional elements. The science is dated; the pattern is not. A small table of primitives is made to generate a larger table of kinds.
 
+Kinds are combinations of a few qualities. If $Q$ is the set of primitive qualities,
+
+$$
+{Kind}(A)=\prod_{q\in A}q,
+\qquad A\subseteq Q.
+$$
+
+The inventory of kinds is again $2^{|Q|}-1$.
+
 **Language, writing, and puzzles.**  
 He sketched a universal script, criticized Ramon Llull for combining too narrowly, and played the method on letters, seating orders, melodies, and lock combinations. These “recreational” cases mattered to him because they showed that the same art covers serious invention and ordinary arrangement.
+
+Words from an alphabet $\Sigma$ of length $m$, strings of length $\ell$:
+
+$$
+\lvert\Sigma^\ell\rvert=m^\ell.
+$$
+
+Seating $n$ distinct people around a table (rotations identified):
+
+$$
+(n-1)!.
+$$
 
 ### What the method is still good for
 
 **Making a field legible.**  
 Choose a domain you actually work in—features of a product, clauses of a contract, motifs in a piece of music, symptoms in a diagnosis, virtues in an argument—and force a short list of primitives. Then generate the combinations instead of relying on slogans. Gaps and illegal pairings become visible.
 
+A field is “legible” when every used term is a subset of a declared alphabet:
+
+$$
+{Vocab}\subseteq 2^{P}\setminus\{\varnothing\}.
+$$
+
+The missing ideas are the unused combinations:
+
+$$
+{Gaps}(P)=2^{P}\setminus\bigl(\{\varnothing\}\cup{Vocab}\bigr).
+$$
+
 **Inventing on purpose.**  
 Brainstorming often repeats nearby ideas. Combinatorial invention asks a colder question: which pairings have not been tried? That is useful in design, taxonomy, curriculum-building, and any task where the parts are few and the compounds are many.
+
+New candidates are combinations not yet named:
+
+$$
+{New}(P)={Gaps}(P).
+$$
+
+Rank a candidate by how many primitives it spends:
+
+$$
+{rank}(A)=\lvert A\rvert.
+$$
 
 **Testing definitions.**  
 If a concept cannot be written as a combination of agreed atoms, it is probably still a bundle of hidden ideas. The book’s discipline is to keep decomposing until the remainder is dull. Dull primitives are a feature.
 
+A definition is exact when the term is identical with the product of its claimed parts:
+
+$$
+T=p_{i_1}p_{i_2}\cdots p_{i_k}
+\iff
+T=\bigcap\{p_{i_1},\dots,p_{i_k}\}
+\quad\text{(as sets)}
+$$
+
+or, in characteristic numbers,
+
+$$
+{char}(T)=\prod_{j=1}^{k}{char}(p_{i_j}).
+$$
+
+If no such finite product exists, the term is still composite in secret.
+
 **Checking arguments.**  
 Two people may use the same words and different atoms. Asking “which primitives are in play, and which combinations are being asserted?” often dissolves a verbal dispute without settling the deeper one. That is as close as the method comes to Leibniz’s hope that controversy might be reduced to calculation.
+
+An assertion “$S$ is $Q$” is arithmetically checkable once numbers are assigned:
+
+$$
+S\in Q \iff {char}(Q)\mid{char}(S).
+$$
+
+Two speakers agree on a sentence only if they use the same support:
+
+$$
+{supp}_1(S)={supp}_2(S)
+\quad\text{and}\quad
+{supp}_1(Q)={supp}_2(Q).
+$$
 
 **Building small tools.**  
 The counting side is ordinary combinatorics. A short program can take a list of primitives and emit all nonempty combinations, then answer “what can be said of this compound?” That is the *ars inveniendi* of the book in modern form. It will not encode the universe. It will inventory a local language.
