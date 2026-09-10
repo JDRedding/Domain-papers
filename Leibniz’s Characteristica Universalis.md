@@ -448,8 +448,148 @@ He treated this as a combinatorial code for “which primitive realities are pre
 
 The arithmetic and algebraic systems above are essentially first-order term calculi: they combine concepts and test containment, consistency, and syllogistic consequence. They do not by themselves quantify over properties of properties, or encode full higher-order mathematics. That is the expressiveness constraint already noted in the earlier overview: the *calculus ratiocinator* as Leibniz left it is an algebra of concepts, not a modern type theory.
 
+
+
 The operational slogan remains the one Leibniz attached to the whole project: once the characters are fixed,
 
 $$
 \text{calculemus}.
 $$
+
+## APPENDIX: Diagrammatic and pictorial reasoning
+
+Leibniz wanted characters that could be seen as well as calculated. Diagrams and geometric forms were meant to show logical relations directly, so that an operation could be performed by the eye without first translating it into speech.  A diagram here is a readable combination, not a map of the world. These figures handle
+    
+- combination,
+- containment,
+- overlap,
+- exclusion.
+
+They do not, by themselves, draw
+
+- higher-order properties,
+- continuity,
+- or the "true" primitives of nature.
+
+The same relation has three faces:
+
+    words          "Every man is an animal"
+    numbers        2 | 6
+    picture        the smaller mark sits inside the larger one
+
+If the picture is faithful, moving the marks is already reasoning.
+
+### Containment  (inesse / "S contains Q")
+
+    Universal affirmative:  Q is in S
+
+            +----------------------+
+            | S                    |
+            |                      |
+            |      +--------+      |
+            |      |   Q    |      |
+            |      +--------+      |
+            |                      |
+            +----------------------+
+
+    ASCII reduction:
+
+            [======= S =======]
+                 [== Q ==]
+
+    Test:  Q sits inside S  <=>  Qsubseteq S  <=>  char(Q) | char(S)
+
+### Combination  (complexion / product of primitives)
+
+    Primitives as letters on a line:
+
+            p1   p2   p3   p4   p5
+            *    *    *    *    *
+
+    A compound is a selection:
+
+            man  =  animal  x  rational
+
+            [ animal ] * [ rational ]  ----->  [ man ]
+                 2     x      3        ----->     6
+
+    Tree form:
+
+                    man
+                   /   \
+              animal   rational
+                 |         |
+                 2         3
+
+### The four categorical pictures
+
+    A   All S are P           P inside S
+            [==== S ====]
+               [ P ]
+
+    E   No S is P             S and P disjoint
+            [ S ]     [ P ]
+
+    I   Some S is P           overlap
+            [ S [##] P ]
+                   ^^ shared marks
+
+    O   Some S is not P       S not swallowed by P
+            [ S ]----x----[ P ]
+
+### Geometric alphabet  (from the 1666 class-I list)
+
+    Point           .
+
+    Space           . . . . .
+                    .       .
+                    . . . . .
+
+    Included        [  .  ]
+
+    Part / whole
+
+            whole
+           /     \
+         part    part
+          .       .
+
+    Interval as combination  2 . 3 . 10
+    (space * included * whole):
+
+            [ ........ ]
+              included
+                 ^
+               space
+              in a whole
+
+### Characteristic-number pair  (1679)
+
+    Each term is two coprime heaps:  positives  and  privatives
+
+            T  =  <+ t1  |  - t2 >
+
+            +-------+     +-------+
+            |  t1   |     |  t2   |
+            |  yes  |     |  not  |
+            +-------+     +-------+
+                 \           /
+                  gcd = 1
+
+    "All S are P" becomes two nestings at once:
+
+            [ s contains p ]   and   [ sigma contains pi ]
+
+### A visual calculus step
+
+    Claim:  man contains animal
+
+    Picture:     [ man [ animal ] ]
+    Numbers:     6 = 2 * 3 ,   2 | 6
+    Geometry:    the animal-mark is a proper part of the man-mark
+
+    The three inscriptions stand or fall together.
+    That is the point of a characteristic: the diagram is already
+    the argument.
+
+
