@@ -19,3 +19,36 @@ TYPES OF MOBILE INTERNET NETWORKS
 5G  Fifth Generation
     Speed: 1-10 Gbps
     Ultra-fast + very low latency (mmWave + sub-6)
+
+TYPES OF MOBILE INTERNET NETWORKS
+
+2G  SECOND GENERATION
+Speed: 100-300 kbps
+Role: first mobile data
+Tech: GSM / GPRS / EDGE
+Use: SMS, basic web, low-res media
+
+3G  THIRD GENERATION
+Speed: 1-3 Mbps
+Role: first mobile broadband
+Tech: UMTS / HSPA
+Use: video calls, mobile browsing, apps
+
+4G  FOURTH GENERATION
+Speed: 5-100 Mbps
+Role: faster, more reliable packet data
+Tech: LTE / WiMAX-class IP networks
+Use: HD streaming, maps, always-on apps
+
+4G LTE  ENHANCED 4G
+Speed: 10-150 Mbps
+Role: higher-efficiency 4G
+Tech: LTE / LTE-Advanced
+Use: smoother video, lower delay than early 4G
+
+5G  FIFTH GENERATION
+Speed: 1-10 Gbps peak
+Role: ultra-fast, low-latency connectivity
+Tech: NR (New Radio), massive MIMO
+Use: 4K/8K video, cloud gaming, IoT, AR/VR
+Latency: often ~1-10 ms in good conditions
