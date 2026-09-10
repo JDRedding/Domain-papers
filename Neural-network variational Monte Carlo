@@ -1,0 +1,49 @@
+NN-VMC FQHE @ ν = 1/3  |  torus geometry  |  PRX Intelligence
+
+WHAT
+Neural-network variational Monte Carlo finds the Laughlin-type
+fractional quantum Hall ground manifold and extracts anyon data
+without a hand-built basis.
+
+SYSTEM
+filling          ν = 1/3
+geometry         torus (quasiperiodic BCs)
+interaction      Coulomb + 2D Ewald
+LL mixing        included (ab initio continuum)
+sizes            N = 4, 5, 6, 8 electrons
+
+WAVE FUNCTION
+ψ = det[ φ_i(r_j) ] × J(r)
+φ   : Psiformer orbitals  (self-attention + MLP + quasiperiodic envelope)
+J   : complex MLP Jastrow on two-electron features
+opt : KFAC + orthogonality penalties on the degenerate subspace
+
+GROUND MANIFOLD
+threefold degeneracy  ↔  anyon types
+  1     vacuum / identity
+  2     quasihole     (q = +e/3)
+  2̄    quasielectron (q = −e/3)
+
+TOPOLOGICAL INVARIANTS  (from modular S via entanglement interferometry)
+quantum dimensions
+  d_1 = 1
+  d_2 = d_2̄ = √2
+  total D = √7
+
+fusion (Verlinde)
+  1 × 2  = 2
+  2 × 2  = 1 ⊕ 2̄
+  2 × 2̄ = 1
+
+braid / exchange
+  c_2 = c_2̄ = 0
+  c_{2,2̄} = π     (semionic mutual statistics)
+
+S-matrix encodes dimensions, fusion, and statistics;
+matches Abelian Chern–Simons / Laughlin ν=1/3 theory
+even at N=4.
+
+TAKEAWAY
+NN wave functions can diagnose topological order and anyon
+content in continuum FQHE states that were previously hard
+to access without a tailored basis.
