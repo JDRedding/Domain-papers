@@ -1,0 +1,300 @@
+NOTATION ATLAS
+by thinker  |  types, variables, fundamentals
+copyable plain text
+
+
+ERA I  RELATIVITY WORKSHOP  c.1912-1955
+================================================================
+
+EINSTEIN
+
+TYPE
+  handwritten research notebooks (used both ends)
+  loose working sheets
+  letters as proto-papers
+  blackboard
+  later: scratch sheets for unified field attempts
+
+CORE OBJECTS / VARIABLES
+  x^mu              coordinates  mu = 0,1,2,3
+  dx^mu             coordinate differentials
+  ds^2              line element
+  g_mu nu           metric  (early pages: G_mu nu, then g)
+  g^mu nu           inverse metric
+  g                 det(g_mu nu), often as sqrt(-g)
+  T_mu nu           stress-energy
+  Gamma^lambda_mu nu   Christoffel symbols
+  R^rho_sigma mu nu    Riemann  (early: four-index symbol (i kappa, lm))
+  R_mu nu           Ricci
+  R                 Ricci scalar
+  G_mu nu           Einstein tensor (later standard)
+  T_il              notebook stand-in for Ricci-like candidates
+
+FUNDAMENTALS
+  tensor = array of components labeled by indices
+  repeated index => sum          (Einstein summation, 1916)
+  raise / lower with g_mu nu or g^mu nu
+  contraction = set two indices equal and sum
+  covariance tested by transformation law, not by a picture
+  derivative path:  partial_mu  then  nabla_mu
+
+HOW OPERATIONS LOOK ON THE PAGE
+  power / root     superscripts,  sqrt(-g)
+  derivative       d/dx^mu  written out; later nabla
+  product          juxtaposition of tensors
+  equality         next line rewritten
+  failed ansatz    left on the page, not erased
+
+QUIRKS
+  notation drift inside a few pages (G -> g)
+  margin tags: Grossmann tensor fourth rank / Stimmt
+  neat two-page fair copy only after the result is believed
+  double strategy visible: covariant candidate, Newtonian test, discard
+
+
+ERA II  DIAGRAMMATIC QFT  c.1940s-1960s
+================================================================
+
+FEYNMAN
+
+TYPE
+  student notebooks with ToC and copied figures
+  lecture boards
+  paper margins
+  published papers where the graph IS the term
+
+CORE OBJECTS / VARIABLES
+  line              propagator
+  vertex            interaction
+  loop              integral over internal momentum
+  p, k, q           four-momenta
+  m                 mass in denominator p^2 - m^2
+  e, g, lambda      couplings  (power = vertex count)
+  gamma^mu          Dirac matrices
+  A-slash           A/ = gamma^mu A_mu
+  S[x]              action
+  Dx                path-integral measure
+  G(x2,t2; x1,t1)   Green function / fermion line
+
+LINE TYPES (community later standardized)
+  solid             fermion
+  wavy              vector boson / photon
+  dashed            scalar
+  arrow             charge / fermion flow
+
+FUNDAMENTALS
+  a diagram is a well-formed expression, not an illustration
+  join lines        multiply amplitudes
+  close a loop      integrate d^4k / (2pi)^4
+  reverse an arrow  conjugate / antiparticle
+  count vertices    order in perturbation theory
+  early reading     spacetime worldlines
+  later reading     momentum-space graphs
+
+HOW OPERATIONS LOOK ON THE PAGE
+  product           vertex
+  contraction       index routed along a line, or closed loop
+  derivative        extra insertion / extra line
+  integral          loop, or product of ordinary integrals -> path integral
+  equality          two graphs with the same external legs
+
+QUIRKS
+  doodles next to operator chains
+  informal shorthand for repeated integrals
+  slash notation as compressed Dirac algebra
+  visual left-to-right "do this then that"
+
+
+ERA III  VISUAL TENSOR LOGIC  c.1960s-1980s
+================================================================
+
+PENROSE
+
+TYPE  (three separate picture systems)
+  1 graphical tensor notation / tensor diagrams   1971
+  2 twistor diagrams
+  3 Penrose-Carter conformal spacetime diagrams
+  plus: abstract index notation as the symbolic twin
+  plus: spin networks
+
+CORE OBJECTS / VARIABLES
+  blob + wires      tensor
+  open wire         free index
+  joined wires      contracted indices
+  loop              trace
+  T_a b^c           abstract indices  (basis-free)
+  A, A'             unprimed / primed spinor indices
+  Z^alpha           twistor        (black vertex)
+  W_alpha           dual twistor   (white vertex)
+  W.Z               incidence / propagator power
+  homogeneity n     twistor function weight
+
+SPACETIME-DIAGRAM VARIABLES (system 3, different job)
+  i^0               spatial infinity
+  i+, i-            future / past timelike infinity
+  I+, I-            future / past null infinity
+  45-degree rays    null geodesics
+
+FUNDAMENTALS
+  index routing should be visible at a glance
+  contraction is plumbing, not dummy-index bookkeeping
+  planar isotopy of wires = same expression
+  dualize by redirecting or recoloring
+  twistor edge ~ (W_alpha Z^alpha)^n encodes a contour integral
+  conformal diagram compactifies infinity; it is causal geometry,
+  not tensor algebra
+
+HOW OPERATIONS LOOK ON THE PAGE
+  product / compose     stack or plumb diagrams
+  contract / trace      connect two wires / close a loop
+  sym / antisym         bars or hooks on a wire bundle
+  covariant derivative  mark on a line
+  dualize               black <-> white, or raise/lower wire
+  equality              rewrite rule or diagram deformation
+
+QUIRKS
+  drawn for private calculation; hard to typeset
+  revolt against multi-index soup
+  same visual habit feeds tilings, impossible figures, spin nets
+
+
+ERA IV  HYBRID PRESENT  c.1990s-now
+================================================================
+
+CONTEMPORARY THEORISTS
+
+TYPE
+  paper or tablet first contact
+  CAS notebooks     Mathematica Sage Maple Cadabra xAct
+  LaTeX + TikZ / tikzit / feynmp / JaxoDraw
+  Jupyter / plain git-tracked files
+  public artifact still looks like a 1970s paper with better figures
+
+CORE OBJECTS / VARIABLES  (several dialects at once)
+  g_mu nu, R_mu nu, T_mu nu     Einstein indices still default in GR/QFT
+  T_ab^c                        abstract indices when basis-free
+  |psi>, <phi|, O               Dirac on Hilbert space
+  Feynman lines + p,k,m         perturbative QFT
+  wires / cups / caps           string diagrams, ZX, birdtracks
+  objects, morphisms, 2-cells   category / TQFT
+  I_family, symbol letters      modern Feynman-integral technology
+
+TOOL VARIABLES
+  nabla, partial, delta/delta phi
+  Contract, Simplify, Collect   CAS verbs
+  commit / diff                 version of a derivation
+
+FUNDAMENTALS
+  no single winner
+  think in pictures or indices
+  verify in computer algebra
+  publish in Einstein-dialect LaTeX
+  diagrams from code, not only from the hand
+  category diagrams treat composition as the primitive
+
+HOW OPERATIONS LOOK ON THE PAGE / SCREEN
+  power / root / deriv     LaTeX macros or CAS operators
+  product                  juxtaposition, vertex, or string compose
+  contract                 dummy index or wire or Contract[]
+  integral                 loop + master-integral / symbol alphabet
+  equality                 lemma environment + git history
+
+QUIRKS
+  private handwriting still Einstein + Feynman
+  two cultures: index-heavy GR/QFT vs diagram-heavy categorical work
+  iterative rewriting hidden inside the CAS until export
+
+
+SAME OPERATIONS, FOUR HANDS
+================================================================
+
+MULTIPLY / COMPOSE
+  Einstein        juxtapose tensors, sum repeated indices
+  Feynman         join lines at a vertex
+  Penrose         stack or plumb diagrams
+  now             CAS product, or string-diagram compose
+
+CONTRACT / TRACE
+  Einstein        repeat an index
+  Feynman         close a loop
+  Penrose         connect two wires
+  now             dummy index  or  wire  or  Contract command
+
+DIFFERENTIATE
+  Einstein        partial_mu then nabla_mu
+  Feynman         vertex insertion / extra line
+  Penrose         mark on a wire
+  now             nabla, functional delta/delta phi
+
+INTEGRATE
+  Einstein        int d^4x sqrt(-g)
+  Feynman         loop  int d^4k/(2pi)^4  or  path integral Dx
+  Penrose         contour in twistor space
+  now             Feynman integral families + symbols
+
+DUALIZE / RAISE-LOWER
+  Einstein        explicit g_mu nu
+  Feynman         slash, charge conjugate, reverse arrow
+  Penrose         black <-> white, redirect wire
+  now             metric macros, dagger
+
+EQUALITY
+  Einstein        rewrite the next line
+  Feynman         two graphs, same external legs
+  Penrose         planar isotopy / rewrite rule
+  now             lemma + commit
+
+
+INHERITANCE
+================================================================
+
+Ricci-Levi-Civita index calculus
+  -> Einstein page language
+  -> still the default journal dialect
+
+Feynman graphs-as-terms
+  -> perturbative QFT
+  -> permission for a drawing to BE the calculation
+
+Penrose wires-as-indices
+  -> tensor networks, string diagrams, ZX, birdtracks
+
+present toolchain
+  hosts all three
+  adds CAS + version control
+  does not replace them
+
+
+MINIMAL SYMBOL CHEAT SHEET
+================================================================
+
+INDICES
+  mu nu rho sigma     spacetime
+  i j k               spatial or dummy
+  a b c               abstract
+  A A'                spinor
+  alpha               twistor
+
+TENSORS
+  scalar              rank 0
+  vector              rank 1   v^mu  or  one wire
+  metric              rank 2   g_mu nu
+  Riemann             rank 4
+
+CALCULUS
+  partial             coordinate derivative
+  nabla               covariant derivative
+  int                 integral
+  sum                 explicit sum, pre-1916 Einstein
+
+QFT
+  line                propagator
+  vertex              coupling
+  loop                momentum integral
+  slash               Dirac contraction with gamma
+
+DIAGRAM MOVES
+  join                contract or multiply
+  stack               compose
+  isotope             same term
+  recolor             dualize
