@@ -1,0 +1,25 @@
+AI_LEARNING_REPOS = [
+    {"rank": 1, "repo": "jackfrued/Python-100-Days", "focus": "Python fundamentals, data analysis, web dev"},
+    {"rank": 2, "repo": "microsoft/generative-ai-for-beginners", "focus": "LLM basics, prompt engineering, RAG, agents, fine-tuning"},
+    {"rank": 3, "repo": "rasbt/LLMs-from-scratch", "focus": "tokenization, embeddings, attention, transformers, training"},
+    {"rank": 4, "repo": "microsoft/ML-For-Beginners", "focus": "classical machine learning curriculum"},
+    {"rank": 5, "repo": "openai/openai-cookbook", "focus": "practical OpenAI application examples"},
+    {"rank": 6, "repo": "CompVis/stable-diffusion", "focus": "generative image models"},
+    {"rank": 7, "repo": "microsoft/ai-agents-for-beginners", "focus": "agentic AI, tool use, multi-agent systems"},
+    {"rank": 8, "repo": "microsoft/AI-For-Beginners", "focus": "neural nets, CV, NLP, deep learning"},
+    {"rank": 9, "repo": "pathwaycom/llm-app", "focus": "RAG pipelines, vector search, real-time LLM apps"},
+    {"rank": 10, "repo": "facebookresearch/segment-anything", "focus": "promptable image segmentation, multimodal CV"}
+]
+
+LEARNING_PATH = {
+    "start_python": "Python-100-Days",
+    "start_ml": "ML-For-Beginners",
+    "start_ai": "AI-For-Beginners",
+    "start_llms": "LLMs-from-scratch",
+    "start_genai": "generative-ai-for-beginners",
+    "start_agents": "ai-agents-for-beginners",
+    "start_building": "openai-cookbook or llm-app",
+    "start_cv": "segment-anything"
+}
+
+ADVICE = "Pick one repo matching current level. Clone it. Build something. Then move to the next."
