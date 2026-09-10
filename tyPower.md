@@ -2,7 +2,7 @@
 
 **tyPower** is a theoretical framework for hierarchical combinatory systems in which elements of computation or structure are multi-sorted, and all operations respect rotational equivariance. This design enables the representation of symmetries and typed interactions in a formally rigorous yet composable manner. Think of tyPower as:
 
-**“typed combinatory logic whose types are geometric irreps and whose combinators are required to be $SO(2)$/$SO(3)$-equivariant.”**
+- **“typed combinatory logic whose types are geometric irreps and whose combinators are required to be $SO(2)$ / $SO(3)$-equivariant.”**
 
 In applied terms, it is closest to the *algebra of layers* in geometric/equivariant ML. In pure terms, it is closest to a multi-sorted combinatory algebra internal to the category of representations of a rotation group.
 
