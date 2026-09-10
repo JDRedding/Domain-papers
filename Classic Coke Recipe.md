@@ -158,7 +158,7 @@ Across the reported trials, participants could not distinguish LabCoatz’s Lab 
 
 ## Future work
 
-- an **RDG operator for cola flavor geometry**
+- an **Relational operator for cola flavor geometry**
 - **terpene interactions under phosphoric-acid hydrolysis**
 - a **scale-tension model for top-note vs base-note balance**
 
@@ -646,7 +646,7 @@ where $\mathbf{o}^\star, \Psi^\star, B^\star, \Sigma^\star$ are Coca‑Cola refe
 
 ## 10. A relational‑style operator on the flavor manifold
 
-The writeup’s “RDG operator” is not a standard beverage‑science object. The usable analogue is a reduced directional gradient on the composition manifold.
+The realtional operator is not a standard beverage‑science object. The usable analogue is a reduced directional gradient on the composition manifold.
 
 Let $S(\mathbf{x})$ be a scalar sensory score against commercial Coke. The ordinary gradient
 
