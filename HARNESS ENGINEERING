@@ -1,0 +1,106 @@
+HARNESS ENGINEERING
+The control system around an AI agent
+CONTEXT • TOOLS • STATE • MEMORY • CONSTRAINTS • OBSERVABILITY • VERIFICATION • EVALS
+
+Harness engineering is the end-to-end design of the environment around an LLM agent: the context it sees, the tools it can use, the constraints that bound it, the state it preserves, and the feedback signals that verify and improve its work.
+
+1. DEFINITION AND SCOPE
+Harness engineering is the engineering discipline of shaping the environment, interfaces, constraints, tools, state, and feedback loops around an LLM so it can do useful work, detect mistakes, and improve through correction.
+
+It goes beyond prompt engineering. Prompt engineering focuses on how to ask. Harness engineering also shapes what the model can see, what it can do, how its actions are checked, and how failures are turned into better future behavior.
+
+IN SCOPE
+context construction • tool use • execution environment • state and memory • guardrails and approvals • observability • evaluation
+
+OUT OF SCOPE
+model training and architecture internals, except where they affect use
+
+2. CLOSED-LOOP CONTROL VIEW
+Intent / spec → Guide the agent → Agent acts in environment → Evidence returns → Verify / review / approve → Update state / memory → Act again or stop
+
+Closed-loop execution and correction
+
+FEEDFORWARD (BEFORE ACTION)
+• clear task specification and success criteria
+• relevant context, examples, and constraints
+• well-defined tools, schemas, and permissions
+• policy boundaries and stop conditions
+
+FEEDBACK (AFTER ACTION)
+• verify outputs with tests, checks, or review
+• inspect traces, tool calls, logs, and artifacts
+• measure quality, safety, latency, and cost
+• update state, memory, and future guidance
+
+Feedforward controls reduce the probability of failure. Feedback controls detect outcomes and enable correction.
+
+3. GUIDES AND SENSORS
+                    Computational                          Inferential
+Before action       init scripts, codemods,                AGENTS.md,
+(guides)            retrieval pipelines,                   instructions, examples,
+                    schema transforms,                     architecture notes,
+                    permission gates                       task plans
+
+After action        tests, linters, type                   review agents, LLM
+(sensors)           checks, schema                         judges, semantic
+                    validation, structural                 evaluators, human
+                    checks                                 review
+
+Good harnesses mix guides and sensors, and use both computational and inferential controls.
+
+4. HARNESS SURFACES
+Surface                 Purpose / examples
+Context engineering     retrieve, filter, rank, trim, and assemble relevant information
+Tool layer              expose safe, well-defined tools and APIs with clear schemas and usage contracts
+Execution environment   run actions in isolated, reproducible, and permission-bounded environments
+Working state           track current plan, open tasks, intermediate results, and in-flight artifacts
+Durable memory          persist summaries, checkpoints, decisions, and long-term facts outside the prompt
+Guardrails / permissions enforce policy, least privilege, approval gates, and action boundaries
+Observability           log traces, tool calls, costs, errors, screenshots, and runtime metadata
+Evals                   automated checks for correctness, safety, quality, and task-specific success
+Outputs                 deliver structured artifacts such as answers, code changes, reports, or handoffs
+
+5. OPERATOR PLAYBOOK: SYMPTOM → CAUSE → HARNESS LEVER
+Symptom                  Likely cause                        Harness lever                      Example fix
+Forgets key context      useful state lives only in the      structured context +               write phase summaries and persist
+                         transcript                          durable artifacts                  key facts to files or memory
+Architectural drift      prose guidance is too weak          executable constraint              add a structural test, contract check, or linter
+Wrong tool or            tool contract is ambiguous          tool schema + validation           tighten tool descriptions, examples,
+wrong arguments                                                                                 and input checks
+Unsafe or out-of-policy  authority is too broad              scoped permissions +               use least privilege, sandboxing, and
+action                                                       approval                           human approval for risky actions
+Endless looping          weak progress signals               bounded loop                       set max steps, progress checks, budget
+                         or stop logic                       or stop logic                      limits, and stop conditions
+Hidden system state      environment is not agent-legible    surface state                      expose logs, files, browser state, and
+                                                                                                runtime metadata
+Incomplete output        success criteria are unclear        deterministic verification         define acceptance tests or explicit
+                                                                                                completion checks
+High latency or cost     repeated work or bloated context    reuse and compaction               prune context, reuse artifacts, and avoid
+                                                                                                unnecessary agent decomposition
+
+6. CROSS-CONTEXT CONTINUITY
+Phase summaries          File artifacts               Checkpoints / commits         Resumable sessions
+condense progress,       persist important            save recoverable state        allow pause and resume
+decisions, and next      outputs, plans, and          and create auditable          without losing critical
+steps at natural         evidence in structured       milestones                    state
+boundaries               files
+
+Init / setup scripts     Bounded loops                Escalation for risky actions
+make environments        prevent runaway              route high-impact or
+reproducible across      behavior with explicit       uncertain actions to
+runs and handoffs        iteration, time, or          a human
+                         cost limits
+
+Long-running agents need durable state because the context window is not durable memory.
+
+7. ENGINEERING THE HARNESS
+Recurring failure → Encode the fix in the harness → Evaluate on real tasks → Keep it if outcomes improve
+
+Encode the fix can mean:
+• add or revise AGENTS.md guidance
+• add a test, linter, or schema check
+• improve tool definition or permissions
+• expose missing state or richer observability
+• add checkpoints, summaries, or reusable artifacts
+
+A well-engineered harness turns raw model capability into reliable, inspectable, and repeatable behavior.
