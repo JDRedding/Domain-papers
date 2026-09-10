@@ -228,7 +228,7 @@ This operator is **invertible** for algebraic curves:
 - Forward: encode geometry → polynomial constraint.  
 - Reverse: decode polynomial → geometric locus.
 
-This is the conceptual ancestor of modern RDG-style mappings between structural and dynamical modes.
+This is the conceptual ancestor of modern Relational-style mappings between structural and dynamical modes.
 
 ---
 
