@@ -9,8 +9,7 @@ The *characteristica universalis* was Leibniz’s dream of a universal, precise,
 - A system in which symbols could be combined logically to represent composite ideas.
 - A framework for mechanical reasoning, via his complementary *calculus ratiocinator*, so that deductions and intellectual disputes could be resolved algorithmically, in the manner of arithmetic or algebra.
 
-The underlying goal was to eliminate the ambiguities of natural language and thereby increase precision, enable universal communication, and support systematic discovery across disciplines.
-
+The underlying goal was to eliminate the ambiguities of natural language and thereby increase precision, enable universal communication, and support systematic discovery across disciplines. He also used the book as a career instrument: it was the expanded version of his dissertation, it made his name among scholars, and he kept returning to it. The same combinatorial habit later became characteristic numbers, the algebra of concepts, binary arithmetic, work on determinants and partitions, and the slogan calculemus. In that sense the 1666 book is less a finished system than the first public statement of a method he spent the rest of his life trying to make universal.
 
 - **1666**: Leibniz’s *Dissertatio de Arte Combinatoria* introduced combinatorial methods for generating all possible combinations of concepts, laying the conceptual groundwork for the *characteristica universalis*.
 - **Influences**: European encounters with Chinese characters and Egyptian hieroglyphs inspired Leibniz’s idea of ideographic representation—symbols that stand for ideas directly rather than for words or sounds.
