@@ -1,0 +1,91 @@
+ROMAN_MATHEMATICIANS
+====================
+
+TYPE
+  Historical period: Roman Republic + Roman Empire
+  Dominant style: applied / practical mathematics
+  Contrast type: Greek theoretical mathematics (proof-first)
+
+FUNDAMENTALS
+  Core value: utility over speculation
+  Cicero note: Romans restricted math to measuring and reckoning
+  Main uses: land survey, architecture, engineering, tax, administration
+  Tools: Roman numerals, abacus, finger counting
+  Teaching style: worked examples and procedures, not axiomatic proofs
+  Geometry role: rules of thumb for areas, plots, buildings
+  Transmission role: later Latin adapters passed Greek math to the Middle Ages
+
+VARIABLES
+  Language_of_major_theory: Greek (esp. Alexandria)
+  Native_Latin_original_theory: scarce
+  Strongest_Roman_output: surveying manuals and applied geometry
+  Signature_corpus: Corpus_Agrimensorum_Romanorum
+  Everyday_notation: I V X L C D M
+  Everyday_calc: abacus + digital finger notation
+
+TYPES_OF_FIGURES
+  1. Greek_speaking_scholars_under_Roman_rule
+  2. Latin_speaking_practitioners_and_transmitters
+  3. Agrimensores / gromatici (professional surveyors)
+
+GREEK_SPEAKING
+  Hero_of_Alexandria
+    date: 1st_c_AD
+    type: applied geometer / inventor
+    vars: Herons_formula, triangle_area_from_3_sides, mechanics, surveying
+
+  Menelaus_of_Alexandria
+    date: c_70_to_130_AD
+    type: spherical geometer
+    vars: Menelaus_theorem, spherical_trigonometry
+
+  Nicomachus_of_Gerasa
+    date: c_60_to_120_AD
+    type: number theorist
+    vars: Introduction_to_Arithmetic, later source for Boethius
+
+  Claudius_Ptolemy
+    date: c_100_to_170_AD
+    type: astronomer-mathematician
+    vars: Almagest, trig_tables, Ptolemys_theorem
+
+  Diophantus_of_Alexandria
+    date: 3rd_c_AD
+    type: algebraist
+    vars: Arithmetica, indeterminate_equations
+
+  Pappus_of_Alexandria
+    date: c_290_to_350_AD
+    type: compiler / geometer
+    vars: Collection, commentary_on_Greek_geometry
+
+  Hypatia_of_Alexandria
+    date: c_350_to_415_AD
+    type: commentator / last major ancient mathematician
+    vars: Ptolemy_commentary, Euclid_commentary
+
+LATIN_SPEAKING
+  Vitruvius
+    date: 1st_c_BC
+    type: architect / applied mathematician
+    vars: De_Architectura, proportion, optics, measurement, cost_estimation
+
+  Agrimensores
+    examples: Frontinus, Hyginus, Balbus, later compilers
+    type: land surveyors
+    vars: area_procedures, triangles, rectangles, irregular_plots, colonial_grids
+
+  Boethius
+    date: c_480_to_524_AD
+    type: transmitter / textbook writer
+    vars: Latin_adaptation_of_Nicomachus, arithmetic, music, coined_quadrivium
+
+  Varro
+    date: 116_to_27_BC
+    type: encyclopedist
+    vars: lost_works_on_mathematics_among_other_sciences
+
+OUTPUT_SUMMARY
+  Romans: strong applied math, weak original theory
+  Greeks_in_Roman_world: carried theoretical tradition
+  Lasting_Roman_marks: numerals, surveying practice, Latin textbooks
