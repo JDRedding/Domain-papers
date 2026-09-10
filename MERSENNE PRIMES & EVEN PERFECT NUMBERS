@@ -1,0 +1,26 @@
+MERSENNE PRIMES & EVEN PERFECT NUMBERS
+
+DEFINITIONS
+  Mersenne number:     M_p = 2^p - 1     (p prime)
+  Mersenne prime:      M_p itself prime
+  Even perfect number: N = 2^{p-1} * (2^p - 1)
+                       when M_p is prime
+
+FUNDAMENTAL PROPERTY
+  N equals the sum of its proper divisors.
+  (A number is perfect if σ(N) - N = N, i.e. σ(N) = 2N)
+
+EUCLID–EULER THEOREM
+  Every even perfect number is of the form above.
+  Euclid constructed them; Euler proved they exhaust all even cases.
+  No odd perfect number is known.
+
+EXAMPLES
+  p=2:  2^1 * 3     = 6
+  p=3:  2^2 * 7     = 28
+  p=5:  2^4 * 31    = 496
+  p=7:  2^6 * 127   = 8128
+
+HISTORY
+  Named after Marin Mersenne (1588–1644),
+  who in 1644 listed candidate exponents p.
