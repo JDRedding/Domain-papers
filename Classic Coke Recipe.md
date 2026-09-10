@@ -267,7 +267,7 @@ m_{\mathrm{glyc}}^{B} = 150\,\mathrm{g}
 $$
 
 $$
-V_{85\%}^{B} = 43\,\mathrm{mL}
+V_{85}^{B} = 43\,\mathrm{mL}
 $$
 
 $$
@@ -279,7 +279,7 @@ m_{\mathrm{caf}}^{B} = 9.65\,\mathrm{g}
 $$
 
 $$
-V_{\mathrm{vin}}^{B} = 10\,\mathrm{mL}\quad (5\%\ \mathrm{w/v})
+V_{\mathrm{vin}}^{B} = 10\,\mathrm{mL}\quad (5\ \mathrm{w/v})
 $$
 
 $$
@@ -388,7 +388,7 @@ $$
 **Phosphoric acid** from $85\%$ stock of density $\rho_{85}\approx 1.69\,\mathrm{g\,mL}^{-1}$ and mass fraction $w=0.85$:
 
 $$
-V_{85}^{\mathrm{fin}} = \varepsilon_B V_{85\%}^{B} = 0.43\,\mathrm{mL\,L}^{-1},
+V_{85}^{\mathrm{fin}} = \varepsilon_B\, V_{85}^{B} = 0.43\,\mathrm{mL\,L}^{-1}.
 $$
 
 $$
