@@ -50,9 +50,9 @@ Descartes’ notation is already close to modern algebraic notation, with a few 
 - Powers: $aa$ or $a^2$ for squares (he often still wrote $aa$); $a^3$, $a^4$, $\ldots$ for higher powers
 - Equality: he used a special symbol $\propto$ in the original, now written $=$
 - All letters stand for *lengths* (positive segments). Negative and imaginary roots are discussed later, mainly in Book III.
-- He writes every equation so that one side is zero whenever convenient: “it is often best to consider them all together as equal to nothing.”
+- He writes every equation so that one side is zero whenever convenient: “*it is often best to consider them all together as equal to nothing*.”
 
-He treats $a^2$ and $a^3$ as lengths, not as areas or volumes. That is one of the decisive breaks with Greek dimensional homogeneity.
+He treats $a^2$ and $a^3$ as lengths, not as areas or volumes. That is one of the decisive breaks with Greek dimensional homogeneity. (*ed*. Today, one would write $a_{length}^2$ and $a_{length}^3$ as length, emphasizing this characteristic)
 
 These are the formulas and the notation that actually appear in *La Géométrie*. Later commentators (van Schooten, Hudde, Newton) rewrote them with two perpendicular axes, negative coordinates, and the now-familiar symbols, but the algebraic skeleton is already Descartes’.
 
