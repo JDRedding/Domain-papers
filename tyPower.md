@@ -1,6 +1,8 @@
 # tyPower
 
-**tyPower** is a theoretical framework for hierarchical combinatory systems in which elements of computation or structure are multi-sorted, and all operations respect rotational equivariance. This design enables the representation of symmetries and typed interactions in a formally rigorous yet composable manner. tyPower is a typed, multi-sorted combinatory framework that rigorously enforces rotational equivariance across all operations and compositions. It generalizes classical combinatory logic to systems where sorts are heterogeneous, operations are constrained by types, and symmetry is explicit, providing a mathematically principled basis for symmetry-aware combinatorial computation. This abstract framework can form the backbone for symbolic, numeric, or hybrid computational systems that require compositional symmetry preservation and multi-type interactions.
+**tyPower** is a theoretical framework for hierarchical combinatory systems in which elements of computation or structure are multi-sorted, and all operations respect rotational equivariance. This design enables the representation of symmetries and typed interactions in a formally rigorous yet composable manner.
+
+tyPower is a typed, multi-sorted combinatory framework that rigorously enforces rotational equivariance across all operations and compositions. It generalizes classical combinatory logic to systems where sorts are heterogeneous, operations are constrained by types, and symmetry is explicit, providing a mathematically principled basis for symmetry-aware combinatorial computation. This abstract framework can form the backbone for symbolic, numeric, or hybrid computational systems that require compositional symmetry preservation and multi-type interactions.
 
 ## Multi-Sorted Foundation
 
