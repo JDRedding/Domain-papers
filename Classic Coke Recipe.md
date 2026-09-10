@@ -1,7 +1,7 @@
 # Coca-Cola Flavor Architecture 
 Classic Reconstruction
 
-LabCoatz (Zach Armstrong) spent about a year matching commercial Coke with GC-MS help from other chemistry channels, published literature, and iterative tasting. The result is a two-phase home formula: an ethanol “7X-like” oil concentrate and a water-phase acid/color/tannin matrix. He later updated the batch from the original video amounts to 10 g tannin, 150 g glycerin, 43 mL of 85% phosphoric acid, and 185 mL Durkee caramel in the 1 L water phase. Your writeup follows that later cut.
+LabCoatz (Zach Armstrong) spent about a year matching commercial Coke with GC-MS help from other chemistry channels, published literature, and iterative tasting. The result is a two-phase home formula: an ethanol “7X-like” oil concentrate and a water-phase acid/color/tannin matrix. Later updated the batch from the original video amounts to 10 g tannin, 150 g glycerin, 43 mL of 85% phosphoric acid, and 185 mL Durkee caramel in the 1 L water phase. Also of note, is that de-cocainized coca leaf extract is nearly impossible to obtain.
 
 - **Functional analog.** The major known Coca-Cola levers are present: sucrose or invert sugar, phosphoric acid, caffeine near 96 mg/L, caramel color, citrus-spice oils, vanilla, a little acetic acid, and an astringent dry-down.
 - **Not vault formula.** Coca-Cola treats Merchandise 7X and the remaining “natural flavors” as a trade secret. A close mass spectrum of *volatiles* plus informal blind tasting does largely prove identity of nonvolatiles, enantiomer ratios, emulsion system, aging protocol, or the actual botanical sources.
