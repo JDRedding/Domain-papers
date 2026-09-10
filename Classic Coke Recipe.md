@@ -732,13 +732,7 @@ If the six group vectors are orthonormal, this collapses to $P_{\mathcal{R}}=AA^
 
 **Reduced directional gradient**
 
-With either definition of $P_{\mathcal{R}}$,
-
-$$
-\mathrm{RDG}[S](\mathbf{x}) = \frac{P_{\mathcal{R}}\nabla S(\mathbf{x})} {\bigl\|P_{\mathcal{R}}\nabla S(\mathbf{x})\bigr\|_{2}+\epsilon}.
-$$
-
-The numerator kills updates on floppy coordinates. The denominator makes the step a **direction**, not a magnitude; $\epsilon>0$ is only a safeguard when the projected gradient vanishes.
+With either definition of $P_{\mathcal{R}}$, the numerator kills updates on floppy coordinates. The denominator makes the step a **direction**, not a magnitude; $\epsilon>0$ is only a safeguard when the projected gradient vanishes.
 
 A line-search (or fixed-step) batch update is
 
