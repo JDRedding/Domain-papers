@@ -1,4 +1,5 @@
 # **Phenomenological vs. Operator Geometry**
+→ 121 Epistemology
 
 | **Phenomenon** | **Relational Equivalent** | **Description** |
 |-------------|----------------------------|-----------------|
