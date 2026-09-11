@@ -1,4 +1,5 @@
 # **Leibniz’s Characteristica Universalis**
+→ 160 Logic
 
 The *characteristica universalis* (Latin for “universal characteristic”) was Gottfried Wilhelm Leibniz’s (1646–1716) visionary project for a formal symbolic language capable of expressing all human knowledge—mathematical, scientific, metaphysical, and logical. He did not treat it as a closed math paper. After a short proof of God and a set of definitions, he posed twelve problems (combinations first, then permutations) and then ran the method through as many sciences as he could reach at twenty. Inside the volume itself he applied it to legal cases and juristic distinctions, the four Aristotelian qualities and the generation of the elements, kinds of number, the stop combinations of an organ, the valid moods of the categorical syllogism, geometric primitives (point, space, part, whole, and the compound definitions built from them), the division of genera into species, a critique of Ramon Llull’s too-narrow combinatory wheels, a sketch of a universal writing, seating arrangements, letter-permutations, melodies, and even lock combinations.
 
