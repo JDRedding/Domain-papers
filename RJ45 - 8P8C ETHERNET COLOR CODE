@@ -1,0 +1,46 @@
+RJ45 - 8P8C ETHERNET COLOR CODE
+TIA/EIA-568  |  Twisted-pair LAN cable  |  8 positions, 8 contacts
+
+STANDARDS
+T568B  most common in new installs, commercial, consumer gear
+T568A  older / some government / residential specs
+Use the SAME standard on both ends = straight-through cable
+Mix A and B = crossover (rarely needed on modern auto-MDI-X ports)
+
+PIN ORDER  (front view, clip DOWN, contacts facing you, left-to-right)
+Pin  1  2  3  4  5  6  7  8
+
+T568B
+1  White/Orange     Tx+   (Pair 2)
+2  Orange           Tx-
+3  White/Green      Rx+   (Pair 3)
+4  Blue             Bi+   (Pair 1)   unused 10/100  |  used Gigabit + PoE
+5  White/Blue       Bi-
+6  Green            Rx-
+7  White/Brown      Bi+   (Pair 4)   unused 10/100  |  used Gigabit + PoE
+8  Brown            Bi-
+
+T568A  (orange and green pairs swapped)
+1  White/Green      Tx+   (Pair 3)
+2  Green            Tx-
+3  White/Orange     Rx+   (Pair 2)
+4  Blue             Bi+   (Pair 1)
+5  White/Blue       Bi-
+6  Orange           Rx-
+7  White/Brown      Bi+   (Pair 4)
+8  Brown            Bi-
+
+PAIRS (keep twists as close to the connector as possible)
+Pair 1  Blue / White-Blue
+Pair 2  Orange / White-Orange
+Pair 3  Green / White-Green
+Pair 4  Brown / White-Brown
+
+SPEED NOTES
+10/100BASE-T   uses only pins 1,2,3,6
+1000BASE-T     uses all 8 pins (all 4 pairs bidirectional)
+PoE            typically rides unused pairs or all pairs depending on mode
+
+RULE
+Match colors on both ends for a straight cable.
+Never mix A and B unless you deliberately want a crossover.
