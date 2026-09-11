@@ -1,4 +1,6 @@
 # Eight equations of physics
+530 General physics
+
 Eight equations of physics used to understand motion, matter, space and the universe.
 
 ## **Newton’s laws of motion**
