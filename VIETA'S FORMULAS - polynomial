@@ -1,0 +1,42 @@
+VIETA'S FORMULAS
+Coefficients already encode how the roots are related.
+You do not have to solve the polynomial to know those relations.
+
+FUNDAMENTALS
+A polynomial of degree n has n roots (counting multiplicity, over C).
+The coefficients are (up to sign and the leading coefficient a)
+the elementary symmetric polynomials in those roots.
+Named after François Viète (16th century).
+
+VARIABLES
+a, b, c, d, e  leading and remaining coefficients  (a ≠ 0)
+α, β, γ, δ     roots
+
+QUADRATIC
+ax² + bx + c = 0
+roots α, β
+
+α + β  =  -b/a
+αβ     =   c/a
+
+CUBIC
+ax³ + bx² + cx + d = 0
+roots α, β, γ
+
+α + β + γ           =  -b/a
+αβ + αγ + βγ        =   c/a
+αβγ                 =  -d/a
+
+QUARTIC
+ax⁴ + bx³ + cx² + dx + e = 0
+roots α, β, γ, δ
+
+α + β + γ + δ                         =  -b/a
+αβ + αγ + αδ + βγ + βδ + γδ           =   c/a
+αβγ + αβδ + αγδ + βγδ                 =  -d/a
+αβγδ                                  =   e/a
+
+PATTERN
+For P(x) = a x^n + a_{n-1} x^{n-1} + ... + a_0
+the k-th elementary symmetric sum of the roots
+equals (-1)^k * a_{n-k} / a
