@@ -1,4 +1,6 @@
 # Ars Magna
+128 / 153.6 Combinatorial logic; medieval proto‑computational thought
+
 **Llull’s *Ars Magna*** is a 13th-century combinatorial system devised by Ramon Llull to explore truth, theology, and knowledge through a systematic combination of fundamental concepts. Llull’s *Ars Magna* was a pioneering attempt to encode inquiry in a universal combinatorial system and to generate arguments from a small set of first principles. Though rooted in a theological program, it anticipated later work in logic, combinatorics, and systematic method, and it remains a landmark in the history of ideas and a precursor to formal approaches that would later inform computation.
 
 ## **Purpose**  
