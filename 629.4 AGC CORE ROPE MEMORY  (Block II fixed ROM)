@@ -1,4 +1,5 @@
 AGC CORE ROPE MEMORY  (Block II fixed ROM)
+629.4 / 629.45 Spaceflight computing hardware; Apollo Guidance Computer
 
 TYPE: transformer ROM  (not storage cores)
   Data lives in wire path, not magnetization.
