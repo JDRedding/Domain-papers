@@ -1,4 +1,5 @@
 # Bibliography
+→ 010–019 Bibliographies
 
 A bibliography is a structured list of sources used or consulted in research. It lets readers verify information and find further reading. A bibliography of an individual is a systematic list of works authored, published, or associated with that person. It documents their contributions and helps others locate those works. When authorship is unknown or concealed, bibliographies distinguish between anonymous works and works published under a pseudonym so that entries stay identifiable, organized, and citable. Bibliographies of works from specific places form another specialized type. They group works by where they were published, created, or focused. 
 
