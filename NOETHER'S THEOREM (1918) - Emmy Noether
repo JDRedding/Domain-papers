@@ -1,0 +1,35 @@
+NOETHER'S THEOREM (1918) - Emmy Noether
+
+A continuous symmetry of the action
+implies a conserved quantity.
+
+Q = Σ_α  p_α (ξ_α − q̇_α τ) + L τ + F
+
+VARIABLES
+Q     conserved charge (Noether charge)
+p_α   canonical momenta  p_α = ∂L/∂q̇_α
+q_α   generalized coordinates
+q̇_α   generalized velocities
+ξ_α   infinitesimal generators of the
+      coordinate transformation
+τ     infinitesimal generator of time shift
+L     Lagrangian
+F     possible total time-derivative term
+      (does not change the equations of motion)
+
+FUNDAMENTALS
+Time-translation invariance (τ ≠ 0, ξ = 0)
+      → energy conservation
+
+Spatial-translation invariance (ξ constant, τ = 0)
+      → linear-momentum conservation
+
+Rotational invariance
+      → angular-momentum conservation
+
+The action S = ∫ L dt is unchanged
+(up to a total derivative) under the
+infinitesimal transformation generated
+by ξ and τ. The associated Q is then
+constant along solutions of the
+Euler-Lagrange equations.
