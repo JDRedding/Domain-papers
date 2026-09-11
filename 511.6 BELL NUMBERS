@@ -1,4 +1,9 @@
 BELL NUMBERS
+511.6 — Combinatorics (set partitions, counting structures)
+512.7 — Number theory (special integer sequences)
+510.24 — Mathematical formulas / identities  
+004.33 — Algorithms (computational generation)
+
 B_n counts the partitions of an n-element set
 (unlabeled nonempty disjoint subsets covering the whole set)
 
