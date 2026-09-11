@@ -1,0 +1,53 @@
+AI ECONOMIC SCENARIOS  |  US 2030
+SOURCE: Anthropic Institute + FT interview (Jack Clark / John Burn-Murdoch)
+PURPOSE: boundary conditions, not forecasts
+
+FUNDAMENTAL
+  Economy = tasks
+  Task states: unchanged | augmented | automated | new tasks created
+  Split: knowledge workers vs other workers
+  Growth above ~5% requires entirely new industries
+  Employment effects can lag capability (not fully visible yet)
+
+SCENARIO TYPES
+  BASELINE / NO AI
+  MODEST        ~ internet-scale
+  SUBSTANTIAL   ~ half of knowledge work doable by AI
+  EXTREME       ~ most knowledge work autonomous; near-RSI diffusion
+
+KEY VARIABLES (illustrative, 2025 $)
+  GDP 2030
+    Modest      +1.6%     ~ $34.1T
+    Substantial +8.3%     ~ $36.3T
+    Extreme     +32.4%    ~ $44.4T
+                (annual growth can hit ~15%; economy doubles ~4.5 yrs)
+
+  KNOWLEDGE WORKERS
+    Modest      small / hard-to-see labor impact
+    Substantial wages roughly flat; limited job loss
+    Extreme     wages down >10%; unemployment ~18% (double-digit)
+
+  OTHER WORKERS
+    tend to gain wages / jobs as capital + output expand
+
+  UNEMPLOYMENT (extreme)
+    knowledge-worker spike beyond typical recession
+    overall unemployment can sit well above normal
+    demand question: who buys output if many are jobless?
+    answer in model: capital share rises; new industries needed
+
+WHAT THE MODEL IS / IS NOT
+  IS    parameter sweep over capability, adoption, new-task creation
+  IS    tool to compare worldviews (normal tech vs singularity-nigh)
+  IS NOT a single prediction
+  Clark personal lean (not Anthropic official): between Substantial and Extreme
+
+DISCUSSION HOOKS
+  delayed visibility of employment shift
+  headlines of 15% GDP + soaring unemployment can feed anti-AI sentiment
+  space data centers / complementary research cited in the chat
+  usefulness of many scenarios vs "we have no clue"
+
+SHARE NOTE
+  Scenarios explore extremes so institutions can plan.
+  High growth without new industries and demand is internally fragile.
