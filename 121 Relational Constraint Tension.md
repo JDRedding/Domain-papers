@@ -1,4 +1,5 @@
 # Relational Constraint Tension
+→ 121 Epistemology
 
 The term **relational constraint tension** arises commonly in areas spanning organizational psychology, systems engineering, and social network analysis, and can be unpacked using a first-principles approach. Relational constraint tension is a measure of stress or conflict resulting from limitations applied on interactions. In abstract terms:
 
