@@ -1,5 +1,6 @@
 # Computer Science, Information & General Works
 Information, Data Processing, Knowledge Systems, Core Domains, and Meta-Writing
+→ 000–006 Computer Science, Information & General Works
 
 Computer science encompasses algorithms, data structures, software development, and computational theory—the foundations of digital technology. At its center is **information**: data that has been structured or processed so that it conveys meaning. Describing information means representing, encoding, and interpreting it for computation and communication. **Data processing** is the systematic conversion of raw data into that information. **Knowledge systems** then organize and apply the result so people and machines can decide, solve problems, and learn. This document brings those ideas together with the field’s core domains and with **meta-writing**: the reflective practice of documenting and interrogating the same ideas.
 
