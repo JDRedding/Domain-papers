@@ -1,5 +1,6 @@
 # **MAUP Operator Identity Sheet**
 Part of the *Structure–Power Scale Operator Framework*
+310.32 Statistical geography; scale effects
 
 ## **Modifiable Areal Unit Problem as Structure–Power Non‑Commutativity**
 
