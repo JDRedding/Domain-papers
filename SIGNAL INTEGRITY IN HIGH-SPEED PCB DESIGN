@@ -1,0 +1,73 @@
+SIGNAL INTEGRITY IN HIGH-SPEED PCB DESIGN
+Part 1 fundamentals  |  source: layout practice notes
+
+WHY IT BREAKS AT SPEED
+At low rates, traces look like simple wires.
+As edge rates get faster, traces become transmission lines.
+The critical variable is rise/fall time (tr/tf), not just data rate.
+When electrical length approaches the edge, reflections and coupling dominate.
+
+COMMON FAILURE MODES
+  ringing              overshoot / undershoot from unterminated energy
+  reflections          impedance discontinuities (Z mismatch, vias, corners)
+  crosstalk            mutual capacitance / inductance between neighbors
+  ground bounce        return-path inductance under fast di/dt
+  impedance mismatch   Zsource != Z0 != Zload
+
+KEY VARIABLES
+  Z0     characteristic impedance of the trace
+  RT     termination resistance  (goal: RT ≈ Z0)
+  tr/tf  edge rate  (sets bandwidth and when a trace is "long")
+  l      trace length
+  Cmut   mutual capacitance
+  Lmut   mutual inductance
+  typical single-ended Z0 ≈ 50 Ω
+  typical differential Zdiff ≈ 100 Ω
+
+1. IMPEDANCE CONTROL
+Match trace Z0 and absorb leftover energy at the ends.
+
+  Parallel
+    RT = Z0 at the load
+    simple, burns DC current
+
+  Thevenin
+    R1 to VCC, R2 to GND
+    R1 || R2 = Z0
+    lower DC current than single parallel RT
+
+  Active parallel
+    RT = Z0 into a bias source VBIAS
+    driver can source/sink against a defined bias
+
+  Series-RC
+    series R + C at the load
+    blocks DC, damps high-frequency components
+
+  Series (source)
+    Rs ≈ Z0 - Zdriver at the source
+    kills secondary reflections; slower edge at far end
+
+  Differential pair
+    RT across the pair at the receiver
+    RT ≈ Zdiff ≈ 100 Ω
+    each line often ~50 Ω to ground
+
+No universal winner. Pick by power budget, topology, and timing.
+
+2. TRACE GEOMETRY AND VIAS
+90° corners and sloppy vias create Z discontinuities and extra radiation.
+Use two 45° bends or a smooth curve.
+Keep the miter / diagonal segment longer than ~3W.
+Place vias with continuous return path; avoid long stubs.
+
+3. COUPLING-AWARE ROUTING
+Signals interact. Route the pair, not just the net.
+  orthogonal routing on adjacent layers
+  keep parallel runs short  (rule of thumb: avoid long side-by-side >500 mil)
+  cut driver fan-out and extra loads
+  give every fast edge a nearby return path
+
+REMEMBER
+Data rate is a symptom. Edge rate sets the frequency content.
+Match Z0, terminate the unused energy, and keep geometry continuous.
