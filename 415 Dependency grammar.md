@@ -1,4 +1,6 @@
 # 🧠 **Dependency grammar**  
+415 Grammar
+
 Dependency grammar is a syntactic framework where **words are connected by directed head–dependent relations**, with the **verb as the structural center**. The authors — Tesnière, Hays, Mel’čuk, Hudson, Osborne, de Marneffe & Nivre, Nefdt & Baggio — represent the major historical and modern developments of this tradition. DG is now the **dominant formalism in NLP parsing**, especially through Universal Dependencies. It also underlies cognitive theories of sentence processing, such as **dependency locality** and **dependency length minimization**, which explain cross-linguistic word-order patterns.  
 
 
