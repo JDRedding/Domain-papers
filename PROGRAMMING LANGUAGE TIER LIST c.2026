@@ -1,0 +1,27 @@
+PROGRAMMING LANGUAGE TIER LIST 
+c.2026
+
+S
+Python          JavaScript      C++             TypeScript
+Java            C#              Go
+
+A
+Rust            Kotlin          Swift           PHP
+Dart            Ruby
+
+B
+SQL             R               Scala           Lua
+MATLAB
+
+C
+Haskell         Elixir          Clojure         Julia
+
+D
+COBOL           Fortran         Perl
+
+Notes
+S  widely used general-purpose languages, strong ecosystems, high demand
+A  modern systems / mobile / web languages with growing or stable adoption
+B  domain-specific or specialized (data, stats, scripting, scientific)
+C  functional / research-oriented languages with smaller mainstream use
+D  legacy languages still found in older systems and scientific codebases
