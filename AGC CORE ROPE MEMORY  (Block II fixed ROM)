@@ -1,0 +1,40 @@
+AGC CORE ROPE MEMORY  (Block II fixed ROM)
+
+TYPE: transformer ROM  (not storage cores)
+  Data lives in wire path, not magnetization.
+  Core = pulse generator + transformer.
+  Flip selected core → pulse only on wires that pass THROUGH it.
+
+WIRES (per core, Block II):
+  SET / RESET     2 lines   (common, all cores in plane)
+  INHIBIT         ~7-10 pairs  (address decode)
+  SENSE           192 lines    (data: 12 strands × 16 bits)
+
+ENCODING
+  Sense wire THROUGH core  →  1
+  Sense wire AROUND  core  →  0
+
+ORGANIZATION
+  Word          = 16 bits  (15 data + 1 parity)
+  Words / core  = 12       (192 bits)
+  Cores / module= 512
+  Words / module= 6144
+  Modules       = 6
+  Total words   = 36864    (~72 KB)
+
+ADDRESSING
+  Inhibit currents cancel SET on every core except the one whose
+  address bits match the inactive inhibit set.
+  Only that core flips.
+
+READ CYCLE
+  1. Drive SET + selected inhibits  → one core flips
+  2. Pulse appears on the 16 sense wires of the chosen strand
+     that threaded that core
+  3. Sense amps latch the word
+  4. RESET restores the core
+
+FUNDAMENTALS
+  Non-volatile, radiation-hard, unchangeable after weave.
+  Density: 192 bits/core vs 1 bit/core in erasable RAM.
+  Hand-woven (“LOL memory”).
