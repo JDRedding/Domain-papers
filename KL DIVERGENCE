@@ -1,0 +1,55 @@
+KL DIVERGENCE  (asymmetric / directed)
+
+Notation
+  P, Q          discrete probability mass functions  (∑ P = 1, ∑ Q = 1)
+  x             outcome / support point
+  ln            natural logarithm
+  D_KL(P ∥ Q)   expected extra nats when coding samples from P
+                using a code that assumes Q
+
+Definition (discrete)
+  D_KL(P ∥ Q)  =  ∑_x  P(x) · ln( P(x) / Q(x) )
+
+  (continuous analogue:  ∫ p(x) ln( p(x)/q(x) ) dx )
+
+Two orientations used as variational objectives
+
+1. Exclusive / mode-seeking
+     minimise   D_KL(Q ∥ P)  =  ∑ Q(x) ln( Q(x)/P(x) )
+     Q is forced to put mass only where P already has mass.
+     Extra mass that Q places in P’s “silent” regions is heavily
+     penalised → Q collapses onto a single peak of P
+     and ignores the remaining modes.
+
+        density
+          |     /\
+          |    /  \          Q  (tall, narrow)
+          |   /    \
+          |  /      \   /\
+          | /        \/  \     P  (two modes)
+          +----------------→  x
+
+2. Inclusive / mass-covering
+     minimise   D_KL(P ∥ Q)  =  ∑ P(x) ln( P(x)/Q(x) )
+     Every region that carries P-mass must be covered by Q,
+     otherwise the log-ratio blows up.
+     Q therefore stretches across all modes of P
+     (and the empty space between them).
+
+        density
+          |  /\          /\
+          | /  \        /  \     P
+          |/    \______/    \
+          |      ________     Q  (flat, wide)
+          +----------------→  x
+
+History
+  Kullback & Leibler introduced the directed quantity in 1951.
+  The two orientations later acquired the names
+  “exclusive approximation” and “inclusive approximation”
+  in the variational-inference literature.
+
+Properties that follow immediately
+  • D_KL(P ∥ Q) ≥ 0   with equality iff P = Q  (Gibbs inequality)
+  • not symmetric:    D_KL(P ∥ Q) ≠ D_KL(Q ∥ P) in general
+  • not a metric
