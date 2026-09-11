@@ -1,3 +1,6 @@
+AI_LEARNING_REPOS LEARNING_PATH
+→ 006.3 Artificial Intelligence
+
 AI_LEARNING_REPOS = [
     {"rank": 1, "repo": "jackfrued/Python-100-Days", "focus": "Python fundamentals, data analysis, web dev"},
     {"rank": 2, "repo": "microsoft/generative-ai-for-beginners", "focus": "LLM basics, prompt engineering, RAG, agents, fine-tuning"},
