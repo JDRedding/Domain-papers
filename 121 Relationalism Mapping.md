@@ -1,5 +1,6 @@
 # **Relationalism Mapping**
 Part of the *Structure–Power Scale Operator Framework*
+121 relational ontology
 
 **Geographic scale** is the relationalist interaction of:
 
