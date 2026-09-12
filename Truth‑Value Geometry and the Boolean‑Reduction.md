@@ -153,7 +153,7 @@ This is not reduction — it is **collapse**.
 
 Boolean logic is a **degenerate terminal regime**, not a foundational ontology.
 
-## Further work
+## Future work
 - **Relationalism truth geometry**  
 - **Gradient truth values**  
 - **Boolean as terminal regime**
