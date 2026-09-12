@@ -1,6 +1,5 @@
 ## DE MORGAN'S LAWS
-Negation does not merely deny; it interchanges the two fundamental connectives. Augustus De Morgan gave the laws their modern symbolic form in 1847.
-Earlier verbal versions were already known to medieval logicians.
+Negation does not merely deny; it interchanges the two fundamental connectives. Augustus De Morgan gave the laws their modern symbolic binary form in 1847. Earlier verbal versions were already known to medieval logicians.
 
 **Propositional logic**  
 Variables: $p, q$ (propositions)  
