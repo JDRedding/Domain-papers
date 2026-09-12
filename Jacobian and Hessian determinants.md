@@ -45,7 +45,6 @@ The **Jacobian determinant** measures **first‑order volume distortion** of a v
 |---|---|---|
 | Function type | $F:\mathbb{R}^n\to\mathbb{R}^m$ | $\phi:\mathbb{R}^n\to\mathbb{R}$ |
 | Matrix entries | $\partial f_i/\partial x_j$ | $\partial^2\phi/\partial x_i\partial x_j$ |
-| Shape | $m\times n$ | $n\times n$ |
 | Symmetry | none | symmetric (Schwarz theorem) |
 | Determinant meaning | volume scaling | curvature signature |
 | Used for | invertibility, change of variables | optimization, convexity |
