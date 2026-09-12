@@ -188,7 +188,7 @@ This is the **minimal relational form**:
 
 ---
 
-## Fitire work
+## Future work
 - a **truth‑region diagram** (ASCII, RDG‑style),  
 - a **canonical flowchart**,  
 - a **generalization to ≥, ≤, <**?
