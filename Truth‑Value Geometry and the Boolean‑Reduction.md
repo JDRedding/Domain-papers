@@ -1,5 +1,7 @@
 ## Relationalism, Truth‑Value Geometry, and the Boolean‑Reduction 
 — An Objective Concept Summary
+These systems belong to **different evaluation categories**.  
+Boolean logic can only appear after **collapsing** Relationalism’s geometry — not by deriving it.
 
 A **relational, graded, triadic truth‑value system (Relationalism/TML)** can “reduce to a boolean program.”  
 The conclusion: **it cannot**, because Relationalism’s truth space, operators, and evaluation regimes are structurally incompatible with boolean logic. The claim **“it reduces to a boolean program”** is **false** in a technical, structural, and operator‑theoretic sense.
@@ -23,12 +25,22 @@ Boolean logic is:
 - commutative  
 - flux‑free  
 
-These systems belong to **different evaluation categories**.  
-Boolean logic can only appear after **collapsing** Relationalism’s geometry — not by deriving it.
+A relational, graded, triadic system (Relationalism / TML) is sometimes said to “reduce to a Boolean program.” Structurally it does not. Its truth space, operators, and evaluation regimes sit in a different category from Boolean logic. Boolean evaluation appears only after the geometry is *collapsed*, not after it is derived.
+
+This is the same gap already present in **gradient truth values**: a continuous, context-dependent field of truth versus a static $\{0,1\}$ table.
+
+**Two evaluation categories**
+
+| Relationalism / TML | Boolean logic |
+|---|---|
+| Graded, geometric, relational, dynamic | Binary, static, non-relational |
+| Triadic, paraconsistent | Explosive (contradiction collapses the system) |
+| Non-commutative, flux-bearing | Commutative, flux-free |
 
 ---
 
-## **1. Relationalism/TML Truth Space — A Graded, Relational Continuum**
+## **1. Relationalism/TML Truth Space
+— A Graded, Relational Continuum**
 
 Relationalism (Relational Dynamic Geometry) and TML (Triadic Modal Logic) define truth not as binary but as a **continuous coupling axis** between two relational domains:
 
@@ -46,6 +58,60 @@ This axis is a **geometric manifold**, not a discrete truth table.
 
 Key concept:  
 Truth is **relational**, **graded**, and **dynamic**, not binary.
+
+---
+
+### Truth space: a graded coupling axis
+
+Truth is a continuum between two relational domains—**Structure** (structural information) and **Power** (propagation / energy)—not $\{\top,\bot\}$:
+
+- $1$ — Structure-dominant stable mode  
+- $0$ — Power-dominant null mode  
+- $U_{\mathrm{band}}=[0.1,0.9]$ — active flux / uncertainty  
+- $0.5$ — triadic equilibrium (balanced Structure/Power coupling)
+
+This axis is a geometric manifold. Truth is relational, graded, and dynamic. Gradient truth values are the local derivatives *along* that manifold: how coupling, flux, or coherence changes under an infinitesimal move in state or parameters.
+
+### Connectives as geometric operators
+
+TML connectives act on the Structure/Power axis, not on a discrete table:
+
+$$
+\neg x = 1-x,\qquad
+x\wedge y=\min(x,y),\qquad
+x\vee y=\max(x,y),\qquad
+x\to y\ \text{= directed coupling quality}.
+$$
+
+They act on a continuum, preserve flux, encode geometry, and depend on Structure/Power dominance. Boolean operators require discrete values, commutativity, and no geometry, flux, or contextual weighting.
+
+### Paraconsistency and non-explosion
+
+$$
+x\wedge\neg x\in U_{\mathrm{band}}
+$$
+
+is allowed: contradiction as tension storage, frustrated geometry, or multi-channel flux. Boolean logic requires $x\wedge\neg x=\bot$. Relational paraconsistency is incompatible with explosion.
+
+### Non-commutativity
+
+Relational / MFE operators are order-sensitive:
+
+$$
+A\otimes B\neq B\otimes A
+$$
+
+(Structure$\to$Power vs Power$\to$Structure; geometry-first vs flux-first). Boolean evaluation demands $A\wedge B=B\wedge A$ and $A\vee B=B\vee A$, so it cannot represent operator ordering.
+
+### Sequents as process chains
+
+A Relationalism sequent is a process, not a static entailment:
+
+- $\Gamma$ — initial Structure/Power configuration  
+- $\Delta$ — resulting configuration  
+- $\tau$ — coupling quality (how well $\Gamma$ produces $\Delta$)
+
+Boolean logic has no geometry, flux, coupling quality, or graded evaluation. In gradient-truth terms, $\tau$ is the quantity whose gradient can be taken; Boolean reduction would zero that gradient by deleting the space it lives in.
 
 ---
 
@@ -138,7 +204,9 @@ Boolean logic has:
 
 ## **6. Why Boolean Reduction Is Impossible**
 
-To “reduce” Relationalism/TML to boolean logic, one must **delete**:
+To force Relationalism / TML into Boolean logic one must delete $U_{\mathrm{band}}$, the interpretant layer, coupling, flux dynamics, paraconsistency, operator order, graded sequents, and relational weighting. That is collapse, not reduction.
+
+Boolean logic is a **degenerate terminal regime** of the graded geometry—the endpoints $\{0,1\}$ after flux is frozen—not its foundation. Gradient truth values live in the un-collapsed continuum; they are undefined once that continuum has been thrown away. To “reduce” Relationalism/TML to boolean logic, one must **delete**:
 
 - U_band  
 - interpretant layer  
