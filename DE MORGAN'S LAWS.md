@@ -40,28 +40,28 @@ $$
 
 ## APPENDIX: BINARY LOGIC
 
-## PROPOSITIONAL LOGIC
+### PROPOSITIONAL LOGIC
 Variables: p, q  (propositions)
 Connectives: ∧ conjunction (AND), ∨ disjunction (OR), ¬ negation (NOT)
 ```
 ¬(p ∧ q)  ⇔  ¬p ∨ ¬q     Negation of the conjunction
 ¬(p ∨ q)  ⇔  ¬p ∧ ¬q     Negation of the disjunction
 ```
-## SET THEORY
+### SET THEORY
 Variables: A, B  (sets)
 Operations: ∩ intersection, ∪ union, ′ complement (relative to universe U)
 ```
 (A ∩ B)′  =  A′ ∪ B′
 (A ∪ B)′  =  A′ ∩ B′
 ```
-## BOOLEAN ALGEBRA
+### BOOLEAN ALGEBRA
 Variables: A, B  (bits / Boolean values)
 Operations: + OR, · AND, ′ NOT
 ```
 (A + B)′  =  A′ · B′
 (A · B)′  =  A′ + B′
 ```
-## VENN 
+### VENN 
 Universe U
 ```
 First Law (union complement)
@@ -85,7 +85,7 @@ Second Law (intersection complement)
  └─────────┘
 ```
 
-GATES
+### GATES
 ```
 (A + B)′     ≡     A′ · B′
 OR then NOT        NOT A  AND  NOT B
