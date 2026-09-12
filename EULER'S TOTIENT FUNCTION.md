@@ -9,11 +9,13 @@
 φ(n) = n  Π  (1 - 1/p)     over all distinct primes p that divide n
 
 ### FUNDAMENTALS
-• If p is prime:          φ(p) = p - 1
+```
+• If p is prime: φ(p) = p - 1
 • If p^k is a prime power: φ(p^k) = p^k - p^{k-1} = p^{k-1}(p-1)
-• φ is multiplicative:    if gcd(a,b)=1 then φ(ab)=φ(a)φ(b)
+• φ is multiplicative: if gcd(a,b)=1 then φ(ab)=φ(a)φ(b)
 • Used in RSA: private exponent d satisfies  e·d ≡ 1  (mod φ(n))
   where n = p·q  (product of two large primes)
+```
 
 #### EXAMPLE  n = 12 = 2²·3
 φ(12) = 12 · (1-1/2) · (1-1/3) = 12 · 1/2 · 2/3 = 4
