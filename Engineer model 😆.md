@@ -25,4 +25,3 @@ $$
 \begin{array}{c} C\\ \downarrow\\ P\;\to\;\boxed{E}\;\to\;S\\ \to {P}\;\nearrow\\ \sigma \end{array}
 $$
 
-which is exactly the flowchart shown in the original post.
