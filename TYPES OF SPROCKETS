@@ -1,0 +1,73 @@
+TYPES OF SPROCKETS
+A sprocket is a toothed wheel that meshes with a roller chain
+to transmit rotary motion and torque. Unlike a gear, it does
+not mesh with another sprocket; it drives or is driven by chain.
+
+KEY VARIABLES / FUNDAMENTALS
+P   = chain pitch (distance between pin centers)
+N   = number of teeth
+d   = pitch diameter  ≈  P / sin(180° / N)
+D   = outside diameter
+B   = bore diameter
+W   = tooth / hub width
+C   = center distance between sprockets
+i   = speed ratio  = N_driven / N_driver
+v   = chain speed  = (P × N × rpm) / 12   (ft/min, P in inches)
+
+More teeth = smoother engagement, less wear, higher speed capability.
+Fewer teeth = more compact, more chordal action (pulsation).
+Match sprocket pitch exactly to chain pitch (ANSI / ISO / BS).
+Lubrication, alignment, and correct wrap angle matter as much as type.
+
+------------------------------------------------
+1. SINGLE STRAND
+   One row of teeth. Used with a single roller chain.
+   Simple, light, general-purpose drives.
+
+2. DUPLEX
+   Two rows of teeth. Used with double-strand chain.
+   Higher load capacity than single strand.
+
+3. TRIPLEX
+   Three rows of teeth. Used with triple-strand chain.
+   Heavy loads and high power transmission.
+
+4. MULTI-STRAND
+   Four or more rows. Extreme-duty / high-capacity drives.
+
+5. BUSH TYPE
+   Finished bore plus interchangeable bush.
+   Fits many shaft sizes. Easy install / replace.
+
+6. SPLIT SPROCKET
+   Two-piece design, bolted together.
+   Install or remove without sliding the shaft out.
+
+7. SPLINE BORE
+   Internal splines match shaft splines.
+   Precise fit, high torque, no keyway slip.
+
+8. PLATE SPROCKET
+   Flat plate, no hub (or minimal hub).
+   Light, cheap, often welded or bolted to a hub later.
+
+9. QD (QUICK DETACH)
+   Uses a QD bushing.
+   Fast mount, accurate axial position, easy change-out.
+
+10. DOUBLE SINGLE
+    Two single-strand sprockets joined on one hub.
+    Independent chain alignment on each side.
+
+11. DRIVE SPROCKET
+    Power-input sprocket (usually smaller, higher speed).
+    Transmits motor/gearbox torque into the chain.
+
+12. DRUM SPROCKET
+    Wide-face or drum-style.
+    Common on conveyors to drive belt or chain over a large wrap.
+
+13. TAPER-LOCK / TAPER BUSH
+    Tapered bush + screws lock the sprocket to the shaft.
+    Very versatile: many bores from one sprocket, strong grip,
+    easy removal. Often the shop favorite for maintenance.
