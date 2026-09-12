@@ -1,0 +1,33 @@
+THE BASEL PROBLEM
+Sum of reciprocals of squares
+
+    ∞
+    ∑  1/n²  =  π² / 6
+   n=1
+
+TYPES & VARIABLES
+  n     : positive integer          n ∈ ℕ = {1, 2, 3, …}
+  s     : complex variable          s ∈ ℂ
+  ζ(s)  : Riemann zeta function     ζ(s) = ∑ 1/n^s   (Re(s) > 1)
+  π     : circle constant           π ≈ 3.14159…
+  i     : imaginary unit            i² = −1
+  x     : real angle                x ∈ ℝ
+
+FUNDAMENTALS
+  ζ(2) = π²/6
+
+  Euler’s formula (unit circle):
+      e^{ix} = cos x + i sin x
+      |e^{ix}| = 1
+
+  Infinite product for sine:
+      sin x = x  ∏ (1 − x²/(n² π²))
+               n=1
+
+  Expanding the product and matching
+  coefficients of x³ forces the series
+  ∑ 1/n² to equal π²/6.
+
+HISTORY
+  Solved by Leonhard Euler, 1734
+  (Basel problem, posed 1644)
