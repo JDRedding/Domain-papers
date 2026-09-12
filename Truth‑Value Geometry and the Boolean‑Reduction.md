@@ -4,6 +4,14 @@
 These systems belong to **different evaluation categories**.  
 Boolean logic can only appear after **collapsing** Relationalism’s geometry — not by deriving it.
 
+**Key properties**
+
+| Property | Meaning |
+|---|---|
+| **Continuity** | Truth need not be $0/1$; it can be a real-valued alignment or belief. |
+| **Contextuality** | Values depend on the surrounding social, scientific, or semantic system. |
+| **Optimizability** | Gradients indicate how to move toward higher truth coherence. |
+
 A **relational, graded, triadic truth‑value system (Relationalism/TML)** can “reduce to a boolean program.”  
 The conclusion: **it cannot**, because Relationalism’s truth space, operators, and evaluation regimes are structurally incompatible with boolean logic. The claim **“it reduces to a boolean program”** is **false** in a technical, structural, and operator‑theoretic sense.
 
@@ -222,6 +230,14 @@ This is not reduction — it is **collapse**.
 
 Boolean logic is a **degenerate terminal regime**, not a foundational ontology.
 
+## Applications
+
+- **Differentiable logic / deep learning:** train networks against logical constraints with smooth surrogates.
+- **Fuzzy and probabilistic logic:** sensitivities of truth degrees to uncertain inputs.
+- **Privacy and federated learning:** ground-truth gradients can leak secret inputs (gradient-matching attacks).
+- **Knowledge representation:** which axioms or propositions most influence a derived truth.
+- **Broader domains:** philosophy (relativism vs. absolutism), physics (evolving scientific claims), mathematics (abstract constructs), quantum information (semantic coherence).
+
 ## Future work
 - **Relationalism truth geometry**  
 - **Boolean as terminal regime**
@@ -345,19 +361,3 @@ g_\theta=\nabla_\theta L\bigl(f_\theta(x),y\bigr),
 $$
 
 where $y$ is the ground-truth truth value (classical $0/1$, or a degree in $[0,1]$).
-
-## 5. Key properties
-
-| Property | Meaning |
-|---|---|
-| **Continuity** | Truth need not be $0/1$; it can be a real-valued alignment or belief. |
-| **Contextuality** | Values depend on the surrounding social, scientific, or semantic system. |
-| **Optimizability** | Gradients indicate how to move toward higher truth coherence. |
-
-## 6. Applications
-
-- **Differentiable logic / deep learning:** train networks against logical constraints with smooth surrogates.
-- **Fuzzy and probabilistic logic:** sensitivities of truth degrees to uncertain inputs.
-- **Privacy and federated learning:** ground-truth gradients can leak secret inputs (gradient-matching attacks).
-- **Knowledge representation:** which axioms or propositions most influence a derived truth.
-- **Broader domains:** philosophy (relativism vs. absolutism), physics (evolving scientific claims), mathematics (abstract constructs), quantum information (semantic coherence).
