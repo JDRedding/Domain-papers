@@ -1,0 +1,27 @@
+MEAN, MEDIAN, MODE
+Measures of central tendency
+
+DATA SET x
+3, 4, 6, 6, 8, 9, 10
+n = 7
+
+MEAN (average)
+Formula:  x̄ = Σx / n
+Σx = 3+4+6+6+8+9+10 = 46
+x̄ = 46 / 7 ≈ 6.57
+Uses every value. Sensitive to outliers.
+
+MEDIAN (middle value)
+Sort the data:
+3  4  6  6  8  9  10
+Odd n → middle position = (n+1)/2 = 4th value
+Median = 6
+Ignores extremes. Robust to outliers.
+
+MODE (most frequent)
+Frequency
+3:1   4:1   6:2   8:1   9:1   10:1
+Mode = 6
+Can be none, one, or several. Useful for categorical or discrete data.
+
+Same numbers. Three different summaries.
