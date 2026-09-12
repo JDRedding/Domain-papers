@@ -40,8 +40,8 @@ This is the same gap already present in **gradient truth values**: a continuous,
 
 ---
 
-## **1. Relationalism/TML Truth Space
-— A Graded, Relational Continuum**
+## **1. Relationalism/TML Truth Space**
+— A Graded, Relational Continuum
 
 Relationalism (Relational Dynamic Geometry) and TML (Triadic Modal Logic) define truth not as binary but as a **continuous coupling axis** between two relational domains:
 
