@@ -27,6 +27,7 @@ J_f(x)= | df2/dx1   df2/dx2   ...   df2/dxn |
 - det(J) is the local volume scaling factor
 - used in change-of-variables formula, implicit/inverse function theorems
 - J_f(x) itself is the linear map that best approximates f near x
+- If $\det J_F(x_0)\neq 0$, the inverse-function theorem says $F$ is locally invertible near $x_0$.
 
 ### **Notation**
 Notation: $J_f$, $Df$, or $\frac{\partial(f_1,\dots,f_n)}{\partial(x_1,\dots,x_n)}$.
