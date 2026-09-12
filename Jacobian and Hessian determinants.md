@@ -9,9 +9,8 @@
 
 # JACOBIAN DETERMINANTS
 
-* Type:     first-order partial derivative matrix (n x n)
-* Variables: f = (f1, f2, ..., fn) : real-valued C1 functions; 
-           x = (x1, x2, ..., xn)
+* Type: first-order partial derivative matrix (n x n)
+* Variables: f = (f1, f2, ..., fn) : real-valued C1 functions; x = (x1, x2, ..., xn)
 
 If f1,...,fn are differentiable w.r.t. x1,...,xn then
 the Jacobian J_f(x) is the determinant of the matrix of first partials:
@@ -48,8 +47,8 @@ The Jacobian determinant is $\det J_f(x)$.
 
 # HESSIAN DETERMINANTS
 
-* Type:     second-order partial derivative matrix (n x n)
-* Variables: phi = phi(x1,x2,...,xn)   real-valued C2 function
+* Type: second-order partial derivative matrix (n x n)
+* Variables: phi = phi(x1,x2,...,xn), real-valued C2 function
 
 The Jacobian of the gradient (dphi/dx1, ..., dphi/dxn)
 is called the Hessian H of phi:
