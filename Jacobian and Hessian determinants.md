@@ -1,3 +1,12 @@
+# Jacobian and Hessian determinant Comparison
+
+| Feature | Jacobian | Hessian |
+|---|---|---|
+| Domain of $F$ or $f$ | vector-valued $\mathbb{R}^n\to\mathbb{R}^m$ | scalar-valued $\mathbb{R}^n\to\mathbb{R}$ |
+| Entries | first partials $\partial f_i/\partial x_j$ | second partials $\partial^2 f/\partial x_i\partial x_j$ |
+| Shape | $m\times n$ | $n\times n$ (symmetric) |
+| Determinant role | local volume / invertibility | local curvature / second-derivative test |
+
 # JACOBIAN DETERMINANTS
 
 * Type:     first-order partial derivative matrix (n x n)
