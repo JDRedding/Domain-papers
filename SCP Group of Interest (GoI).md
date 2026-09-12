@@ -227,17 +227,17 @@ All confirmed via SCP GoI listings.
 
 Deeper lore on specific GoI
 
-Global Occult Coalition,  
-Chaos Insurgency,  
-Serpent’s Hand,  
-Broken God,  
-Sarkics,  
-Marshall Carter & Dark,  
-Wondertainment,  
-Anderson Robotics,  
-Scarlet King
+- Global Occult Coalition 
+- Chaos Insurgency
+- Serpent’s Hand 
+- Broken God
+- Sarkics
+- Marshall Carter & Dark
+- Wondertainment
+- Anderson Robotics 
+- Scarlet King
 
-Further reading
+## Further reading
 - [scp-archives.fandom.com](https://scp-archives.fandom.com/wiki/Groups_of_Interest)
 - [SCP Foundation](https://scp-wiki.wikidot.com/groups-of-interest)
 - [grokipedia.com](https://grokipedia.com/page/Groups_of_Interest_SCP_Foundation)
