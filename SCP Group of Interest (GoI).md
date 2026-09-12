@@ -200,7 +200,7 @@ Helps anomalies escape oppressive worlds.
 
 ---
 
-# 🧩 Minor / Esoteric Groups (Rapid-Fire)
+# 🧩 Minor / Esoteric Groups
 
 - **Arcadia** — anomalous lifestyle brand.  
 - **Black Queen** — reality-hopping rogue librarian.  
