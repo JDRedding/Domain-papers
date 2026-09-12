@@ -13,7 +13,7 @@ The SCP universe isn’t built around a single canon — GoIs shift depending on
 
 ---
 
-# 🏛️ Major Groups of Interest (Full Explanations)
+# 🏛️ Major Groups of Interest
 
 ---
 
