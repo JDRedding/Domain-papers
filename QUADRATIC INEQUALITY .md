@@ -52,8 +52,6 @@ completely classify the solution set on the real line.
 
 ## Notation
 
-**Notation**
-
 - $a,b,c\in\mathbb{R}$: coefficients of the quadratic  
 - $\Delta=b^{2}-4ac$: discriminant  
 - $r_{\pm}=\dfrac{-b\pm\sqrt{\Delta}}{2a}$: the two roots when they exist ($r_{-}<r_{+}$ when $\Delta>0$)  
