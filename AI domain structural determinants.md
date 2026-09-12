@@ -86,7 +86,7 @@ A key conceptual distinction:
 High dimensionality does **not** imply high constraint density.  
 In fact, they often move in opposite directions.
 
-### In RDG terms:
+### In Relational terms:
 - **Low‑dimensional manifolds** → highly constrained → easier for AI  
 - **High‑dimensional manifolds** → loosely constrained → harder for AI
 
