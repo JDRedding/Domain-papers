@@ -361,3 +361,6 @@ g_\theta=\nabla_\theta L\bigl(f_\theta(x),y\bigr),
 $$
 
 where $y$ is the ground-truth truth value (classical $0/1$, or a degree in $[0,1]$).
+
+## Further reading
+- [Triadic Meta‑Logic (TML)](https://github.com/JDRedding/Domain-papers/blob/main/500%E2%80%93599%20Science/510%20Mathematics/510.13%20Nonclassical%20Logic%20Systems/510.131%20Triadic%20Meta%E2%80%91Logic%20(TML).md)
