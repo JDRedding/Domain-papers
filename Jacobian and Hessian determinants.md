@@ -12,7 +12,7 @@ The **Jacobian determinant** measures **first‑order volume distortion** of a v
   - **orientation**  
   - **invertibility test** (inverse function theorem)  
 - Relational interpretation:  
-  - Lives in the **Interaction** mode of the **SID** triad  
+  - Lives in the **Interaction** mode of the **Structure** triad  
   - Encodes how the map **pushes forward** infinitesimal regions  
   - Determinant = signed measure of the linearized transformation
 
@@ -24,7 +24,7 @@ The **Jacobian determinant** measures **first‑order volume distortion** of a v
   - **classification of critical points**  
   - **convexity test**  
 - Relational interpretation:  
-  - Lives in the **Dynamics** mode of the **SID** triad  
+  - Lives in the **Dynamics** mode of the **Structure** triad  
   - Encodes how the scalar field bends around a point  
   - Determinant = product of principal curvatures (in 2D: $f_{xx}f_{yy}-f_{xy}^2$)
 
