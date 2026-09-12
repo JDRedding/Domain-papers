@@ -1,0 +1,47 @@
+DIFFERENT TYPES OF TOLERANCE USED IN MECHANICAL DRAWING
+
+Fundamentals
+Tolerance is the allowable variation from a specified dimension so parts can be manufactured, assembled, and function reliably.
+Nominal size is the target or intended dimension.
+Upper and lower limits define the acceptable range.
+Tighter tolerances increase precision and cost; looser ones improve manufacturability.
+
+1. LIMIT TOLERANCES
+Specifies the absolute maximum and minimum permissible sizes of a feature.
+No plus/minus symbol is used; both limits are written directly.
+Example:
+  19.98 mm  MIN SIZE
+  20.02 mm  MAX SIZE
+Acceptable range: 19.98 mm to 20.02 mm
+
+2. UNILATERAL TOLERANCES
+Allows variation in only one direction from the nominal size (all above or all below).
+(a) Positive unilateral
+  20.00 +0.05
+        0
+  Range: 20.00 mm to 20.05 mm
+(b) Negative unilateral
+  20.00  0
+        -0.05
+  Range: 19.95 mm to 20.00 mm
+
+3. BILATERAL TOLERANCES
+Allows variation in both the positive and negative directions from the nominal size.
+The two deviations may be equal or unequal.
+Example (equal):
+  20.00 ± 0.05 mm
+  Range: 19.95 mm to 20.05 mm
+Nominal size = 20.00 mm
+
+Quick reference
+Limit     : max size / min size written as two values
+Unilateral: deviation on one side only (+/0 or 0/-)
+Bilateral : deviation on both sides (+ and -)
+
+Tolerance builds real-world reliability.
+Measure. Specify. Manufacture with confidence.
+
+FUTURE WORK
+GD&T Geometric Dimensioning
+Fit Classes ISO 286
+
