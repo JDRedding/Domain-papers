@@ -1,4 +1,4 @@
-# Jacobian and Hessian determinant Comparison
+# Jacobian and Hessian Determinant Comparison
 
 The **Jacobian determinant** measures **first‑order volume distortion** of a vector map, while the **Hessian determinant** measures **second‑order curvature** of a scalar field. They are structurally similar (both are determinants of derivative matrices) but conceptually live in different parts of analysis and geometry.
 
