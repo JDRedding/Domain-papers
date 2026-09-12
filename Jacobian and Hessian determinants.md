@@ -83,4 +83,17 @@ $$
 
 By Schwarz’s theorem the matrix is symmetric: $\frac{\partial^2\phi}{\partial x_i\partial x_j} = \frac{\partial^2\phi}{\partial x_j\partial x_i}$.
 
+Schwarz’s theorem gives $H_f=H_f^\top$. Notations: $H_f$, $\nabla^2 f$, $D^2 f$.
 
+For $n=2$, write $D=\det H_f=f_{xx}f_{yy}-(f_{xy})^2$. At a critical point:
+- $D>0$ and $f_{xx}>0$ \(\Rightarrow\) local minimum,
+- $D>0$ and $f_{xx}<0$ \(\Rightarrow\) local maximum,
+- $D<0$ \(\Rightarrow\) saddle,
+- $D=0$ \(\Rightarrow\) test inconclusive.
+
+Example. $f(x,y)=x^3+3xy+y^3$
+
+$$
+H_f=\begin{pmatrix} 6x & 3 \\ 3 & 6y \end{pmatrix},\qquad
+\det H_f=36xy-9.
+$$
