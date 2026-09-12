@@ -1,5 +1,8 @@
 # QUADRATIC INEQUALITY  
+
+$$
 ax^2 + bx + c  >  0
+$$
 
 ## FUNDAMENTALS
 ```
