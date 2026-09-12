@@ -1,4 +1,4 @@
-# 🧠 Dee4p AI 
+# 🧠 Deep AI 
 **AI finds highly constrained, low‑dimensional domains easy, and loosely constrained, high‑dimensional domains hard — but public debates about “depth” rarely distinguish these axes.** AI difficulty is determined by the geometry of a domain’s manifold — specifically its constraint density and dimensionality — not by the vague notion of “depth” used in public debates. Booch, Lee, and Greenblatt are arguing past each other because they use “depth” to mean different things. Comment (“domain manifolds vary in dimension”) was the correct middle path because it points to the underlying structure none of them are naming.
 
 ---
