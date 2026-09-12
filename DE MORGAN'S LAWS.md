@@ -38,6 +38,8 @@ $$
 (A \cdot B)' = A' + B'
 $$
 
+## APPENDIX: BINARY LOGIC
+
 ## PROPOSITIONAL LOGIC
 Variables: p, q  (propositions)
 Connectives: ∧ conjunction (AND), ∨ disjunction (OR), ¬ negation (NOT)
