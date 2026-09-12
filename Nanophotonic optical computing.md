@@ -2,6 +2,23 @@
 
 Nanophotonics uses high bandwidth, massive parallelism and low energy to meet AI compute demand. Programmable high-density photonic platforms target large-scale models, edge inference and scientific computing. Nanotech solutions for speed, density and complexity. Commercial path already visible in Lightmatter Envise and Neurophos TULKAS.
 
+**Notation**
+
+- $n$: refractive index  
+- $T$: temperature  
+- $E$: electric field  
+- $r$: electro-optic coefficient  
+- $\lambda$: wavelength  
+- $d,h$: optical path length / metasurface height  
+- $A_0,k$: input amplitude and transmission factor  
+- $\varphi$: optical phase  
+- $\mathbf{X},\mathbf{Y}$: input / output field or intensity vectors  
+- $\mathbf{T}$: modulation / weight matrix  
+- $f,F$: local or network non-linearity  
+- $\otimes$: convolution  
+- PSF: point-spread function of the optical system  
+- $\Phi$: mixing / kernel matrix
+
 ## OPTICAL-FIELD MODULATION OPERATORS
 
 ### Phase modulation
@@ -44,3 +61,53 @@ Input vector × weight planes → lens sum → detector
 - Low-loss high-nonlinearity nanomaterials
 - Sub-nm fabrication yield
 - Interconnect and packaging at scale
+
+## Formulas and equations
+
+### **Phase and refractive-index modulation**
+
+Thermo-optic index shift  
+
+$$\Delta n=\frac{\partial n}{\partial T}\Delta T$$
+
+Electro-optic index shift  
+$$\Delta n\propto rE$$
+
+Accumulated phase  
+
+$$\varphi=\frac{2\pi}{\lambda}nd\qquad\text{or}\qquad\varphi=\frac{2\pi}{\lambda}nh$$
+
+**Amplitude / interferometric modulation**
+
+Mach–Zehnder output  
+
+$$A_{\text{out}}=kA_0\exp\bigl(i(\varphi_1+\varphi_2)/2\bigr)\cos\bigl((\varphi_1-\varphi_2)/2\bigr)$$
+
+(ideal balanced case often written simply as $kA_0$)
+
+### **Linear (isomorphic) optical mapping**
+
+Input vector $\mathbf{X}=[i_1,\dots,i_m]$ 
+
+Weight / transmission matrix $\mathbf{T}$  
+
+Output 
+
+$$\mathbf{Y}=\mathbf{X}\mathbf{T}^\top\qquad o_i=\sum_k t_{ik}\,i_k$$
+
+### **Non-linear / equivalent mapping**
+
+Element-wise or network function
+
+$$o_i=f(i_i)\qquad\mathbf{Y}=F(\mathbf{X})$$
+
+**Diffraction / Fourier optics**
+
+4-f convolution  
+
+$$I_{\text{out}}=I_{\text{in}}\otimes\text{PSF}$$
+
+Point-source mixing  
+
+$$\mathbf{Y}=\mathbf{X}\otimes\Phi$$
+
