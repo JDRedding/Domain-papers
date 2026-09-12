@@ -1,0 +1,65 @@
+TYPES OF WELDING
+
+SMAW
+Shielded Metal Arc Welding (Stick Welding)
+Heat source: electric arc
+Electrode: consumable flux-coated stick
+Shielding: flux coating + slag
+Key variables: amperage, electrode diameter, polarity, travel speed, arc length
+Fundamentals: portable, works outdoors, all-position, slag must be chipped
+
+GMAW (MIG/MAG)
+Gas Metal Arc Welding
+Heat source: electric arc
+Electrode: continuously fed solid wire
+Shielding: external gas (inert = MIG, active = MAG)
+Key variables: wire feed speed, voltage, gas type/flow, stick-out
+Fundamentals: high deposition, clean welds, less portable than stick
+
+GTAW (TIG)
+Gas Tungsten Arc Welding
+Heat source: electric arc
+Electrode: non-consumable tungsten
+Shielding: inert gas (usually argon)
+Filler: separate rod added manually
+Key variables: current (AC/DC), amperage, gas flow, tungsten type/grind
+Fundamentals: precise, high-quality, thin metals, slower process
+
+RESISTANCE SPOT WELDING
+Heat source: electrical resistance at contact point
+Electrodes: copper alloy tips that clamp sheets
+Shielding: none
+Key variables: current, weld time, electrode force, hold time
+Fundamentals: high-speed sheet joining, common in auto bodywork
+
+OXY-FUEL WELDING
+(e.g. Oxy-Acetylene)
+Heat source: combustion flame
+Electrode: none (filler rod optional)
+Shielding: flame envelope
+Key variables: oxygen-to-fuel ratio, tip size, flame type (neutral/carburizing/oxidizing)
+Fundamentals: no electricity needed, good for field repair and cutting
+
+FCAW
+Flux-Cored Arc Welding
+Heat source: electric arc
+Electrode: continuously fed tubular wire with flux core
+Shielding: flux (self-shielded) or flux + external gas
+Key variables: wire feed speed, voltage, polarity, gas (if used)
+Fundamentals: high deposition, good for thick steel and outdoor work
+
+UNDERWATER WELDING
+Usually wet SMAW or dry hyperbaric
+Heat source: electric arc
+Electrode: special waterproof consumable
+Shielding: flux + water/steam or pressurized habitat
+Key variables: current, electrode type, depth, visibility, diver safety
+Fundamentals: specialized marine/repair work, higher risk and skill required
+
+ORBITAL WELDING
+Automated circumferential welding (usually GTAW)
+Heat source: electric arc
+Electrode: non-consumable tungsten in rotating head
+Shielding: inert gas
+Key variables: rotation speed, current program, pulse settings, gas flow
+Fundamentals: consistent high-quality pipe/tube welds, used in aerospace, pharma, nuclear
