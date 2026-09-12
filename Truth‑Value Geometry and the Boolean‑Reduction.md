@@ -47,10 +47,6 @@ This axis is a **geometric manifold**, not a discrete truth table.
 Key concept:  
 Truth is **relational**, **graded**, and **dynamic**, not binary.
 
-Explore:  
-- **Relationalism truth geometry**  
-- **Gradient truth values**  
-
 ---
 
 ## **2. Connectives as Geometric Operators, Not Boolean Functions**
@@ -77,10 +73,6 @@ Boolean operators require:
 - no flux  
 - no contextual weighting
 
-Explore:  
-- **Relationalism operator roles**  
-- **Relational weighting**  
-
 ---
 
 ## **3. Paraconsistency and Non‑Explosion**
@@ -100,9 +92,6 @@ Boolean logic requires:
 > $x \land \neg x = \text{False}$
 
 Relationalism’s paraconsistency is incompatible with boolean explosion.
-
-Explore:  
-- **Paraconsistent logic**  
 
 ---
 
@@ -125,9 +114,6 @@ Boolean logic requires commutativity:
 
 Thus boolean evaluation cannot model Relationalism operator ordering.
 
-Explore:  
-- **Operator ordering**  
-
 ---
 
 ## **5. Sequents as Process Chains, Not Static Entailments**
@@ -147,8 +133,6 @@ Boolean logic has:
 - no coupling quality  
 - no graded evaluation
 
-Explore:  
-- **Relationalism process chains**  
 
 ---
 
@@ -169,5 +153,12 @@ This is not reduction — it is **collapse**.
 
 Boolean logic is a **degenerate terminal regime**, not a foundational ontology.
 
-Explore:  
-- **Boolean as terminal regime**  
+## Further work
+- **Relationalism truth geometry**  
+- **Gradient truth values**  
+- **Boolean as terminal regime**
+- **Relationalism process chains**  
+- **Operator ordering**
+- **Relationalism operator roles**  
+- **Relational weighting**  
+- **Paraconsistent logic**  
