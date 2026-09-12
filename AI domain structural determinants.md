@@ -3,7 +3,7 @@
 
 ---
 
-# 🧩 Domain Geometry, Constraint Density, and AI Difficulty  
+# 🧩 Domain Geometry and Constraint Density
 ### A conceptual summary of the underlying ideas in the Booch–Lee–Greenblatt debate
 
 ### 1. **Domain Manifolds as Geometric Spaces**  
@@ -37,7 +37,7 @@ These definitions point in different directions, which is why the debate appears
 
 ---
 
-# 🧠 The Actual Determinant of AI Difficulty  
+# 🧠 The Actual Determinant 
 Across all domains, the factor that determines how hard a domain is for AI is:
 
 > **Constraint density.**
