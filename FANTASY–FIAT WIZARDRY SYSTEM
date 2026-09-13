@@ -1,0 +1,217 @@
+FANTASY–FIAT WIZARDRY SYSTEM
+SPECIFICATION • COMPLETE • COPY‑SAFE • NO BORDERS
+
+========================================================
+1. PURPOSE
+========================================================
+A deliberately fantastical, explicitly fictional, mathematically‑inspired
+thought‑experiment sandbox.  
+Used to manipulate equations, isolate structure, explore invariants,
+and generate insight WITHOUT asserting any canonical RDG, MFE, Q, or
+physical law.
+
+Fantasy layer = exploratory.
+Technical layer = constrained.
+
+Fantasy results remain fantasy until independently justified.
+
+========================================================
+2. CORE TRIADS
+========================================================
+SID  = Structure, Interaction, Dynamics        (geometry triad)
+PED  = Power, Evaluation, Dynamics             (field triad)
+
+Each triad has 3 components.
+You may zero 1 or 2 components per triad.
+
+Number of zero‑patterns per triad:
+C(3,1) + C(3,2) = 3 + 3 = 6
+
+Total combined regimes:
+SID(6) × PED(6) = 36 regimes.
+
+========================================================
+3. SID ZERO‑PATTERNS (GEOMETRY SPELLS)
+========================================================
+Types:
+S = Structure
+I = Interaction
+D = Dynamics
+
+Zero‑patterns:
+1. Zero S
+2. Zero I
+3. Zero D
+4. Zero S,I
+5. Zero S,D
+6. Zero I,D
+
+Interpretations:
+Zero S   → structureless geometry
+Zero I   → diagonal invariant geometry
+Zero D   → frozen geometry
+Zero S,I → bare diagonal flows
+Zero S,D → pure interaction cloud
+Zero I,D → static structural manifold
+
+========================================================
+4. PED ZERO‑PATTERNS (FIELD SPELLS)
+========================================================
+Types:
+P = Power
+E = Evaluation
+D = Dynamics
+
+Zero‑patterns:
+1. Zero P
+2. Zero E
+3. Zero D
+4. Zero P,E
+5. Zero P,D
+6. Zero E,D
+
+Interpretations:
+Zero P   → powerless evaluation flow
+Zero E   → blind power dynamics
+Zero D   → frozen power‑evaluation skeleton
+Zero P,E → pure dynamics field
+Zero P,D → pure evaluation field
+Zero E,D → pure power field
+
+========================================================
+5. 36‑REGIME SPACE
+========================================================
+SID has 6 regimes.
+PED has 6 regimes.
+
+Total:
+6 × 6 = 36 combined wizard‑regimes.
+
+Finite, enumerable, nameable, classifiable.
+
+========================================================
+6. FANTASY–FIAT GENERATOR (FFF)
+========================================================
+FFF = Fantasy Fiat Function  
+A generator that performs wizardry.
+
+Capabilities:
+- diagonalization
+- basis twisting
+- invariant extraction
+- interaction killing
+- dynamics freezing
+- geometry flattening
+- field isolation
+- relational “backflips”
+
+FFF does NOT expose mechanism.
+FFF only guarantees output.
+
+Example:
+FFF_zeroI(S,I,D) → (S*, 0, D*)
+
+========================================================
+7. NOTATION SYSTEMS
+========================================================
+Three notation families:
+
+(1) Caret‑underscore notation
+    _zero^I(S,I,D)
+    _freeze^D(P,E,D)
+    _spell^magic_PE(P,E,D)
+
+(2) Wizard‑W notation
+    W_zeroI(S,I,D)
+    W_zeroP(P,E,D)
+    W_freezeD(P,E,D)
+
+(3) Triple‑F notation (FFF)
+    FFF(S,I,D)
+    FFF_zeroI(S,I,D)
+    FFF_spell(P,E,D)
+
+All three can express all 36 regimes.
+
+========================================================
+8. FANTASY BOUNDARY DECLARATION
+========================================================
+Wizardry, magic, spells, mana, and Fantasy‑Fiat operations in this
+document are explicitly fictional thought‑experiment devices.
+
+They are NOT canonical components of RDG, MFE, Q, or any associated
+foundational framework.
+
+A spell does not assert that reality permits the transformation being
+imagined.  
+A Fantasy‑Fiat operation does not silently introduce a new physical law,
+mathematical theorem, or technical operator into the core system.
+
+Purpose of fantasy layer:
+- imagine forbidden assumptions
+- simplify or suppress components
+- explore hypothetical infinities
+- test consequences in a sandbox
+- return with insight to the constrained core system
+
+Fantasy terminology is intentional.
+Wizard, spell, magic, mana = boundary markers.
+
+Technical machinery describes the constrained framework.
+Fantasy machinery explores what may be imagined outside it.
+
+A fantasy result remains fantasy until independently justified.
+
+========================================================
+9. USE IN THOUGHT EXPERIMENTS
+========================================================
+This system behaves like physics thought experiments:
+- frictionless surfaces
+- massless particles
+- infinite wells
+- rigid rods
+- zero curvature limits
+
+Fantasy SID/PED zero‑regimes are the mathematical analog.
+
+Used to:
+- isolate invariants
+- expose structure
+- simplify equations
+- test hypotheses
+- find new attack angles on real problems
+
+========================================================
+10. RPG ADDENDUM (MANA SYSTEM)
+========================================================
+SID → geometry magic
+PED → field magic
+Zero‑patterns → spell effects
+FFF → mana generator
+Wizard‑W → spellcasting operator
+
+Examples:
+Zero‑I   → Disentangle
+Zero‑D   → Freeze Time
+Zero‑P   → Nullify Force
+Zero‑E   → Blind Judgment
+Zero‑PED‑D → Stop Motion
+
+A complete magic subsystem.
+
+========================================================
+11. APPENDIX SUMMARY
+========================================================
+• Fantasy layer = exploratory sandbox  
+• 36 total regimes  
+• SID = geometry triad  
+• PED = field triad  
+• FFF = generator  
+• Wizard‑W = operator  
+• Caret‑underscore = descriptive spells  
+• Triple‑F = Fiat transformations  
+• All fantasy results remain fantasy until justified  
+• Fully copyable, ASCII‑stable, no borders
+
+========================================================
+END OF  SPECIFICATION
