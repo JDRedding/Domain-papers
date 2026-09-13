@@ -10,9 +10,9 @@ That’s the core: a finite, discrete set of values, arranged so that **global b
 
 The square gave is a genuine normal 9×9 magic square: the numbers 1 through 81 each appear once, every row, column and both main diagonals sum to 369, the grand total is 3321, and the center cell is 41.
 
-\[
+$$
 M = \frac{n(n^2+1)}{2} = \frac{9\times 82}{2} = 369
-\]
+$$
 
 It is the classic “Siamese” / de la Loubère construction that Agrippa published as the lunar kamea (order 9) in *De occulta philosophia* (1533). Later editions of Franz Brasser’s merchant arithmetic *Rekenboek* (first printed Lübeck 1552) reproduced a 9×9 square as a demonstration of computational skill; the version that circulated in the 1693/1697 Hamburg printings is the one now associated with Brasser. What began as a practical reckoning exercise thus inherited the older planetary-talisman tradition and, by the nineteenth century, entered systems such as Olney Richmond’s *Mystic Test Book* (1919), where the same array is linked to playing-card layouts, natal dates, and three-dimensional unfoldings of magic crosses and cubes.
 
@@ -27,21 +27,21 @@ A rich object—this 9×9 is a great example of “order from distinctness.”
 - **Values:** \(\{1, 2, \dots, 81\}\) (each used exactly once)
 - **Magic constant:**
 
-\[
+$$
 M = \frac{n(n^2+1)}{2} = \frac{9 \times 82}{2} = 369
-\]
+$$
 
 - **Total sum:**
 
-\[
+$$
 S = \frac{n^2(n^2+1)}{2} = \frac{81 \times 82}{2} = 3321
-\]
+$$
 
 - **Center cell:**
 
-\[
+$$
 \frac{n^2+1}{2} = 41
-\]
+$$
 
 - **Planetary kamea association:** Moon (order 9)
 
@@ -70,9 +70,9 @@ This square is not “smooth” or uniform—values jump around—but several ba
 - **Complementary pairs:** Many entries occur in pairs summing to 82 (since \(1+81=82\), \(2+80=82\), etc.). These complements are distributed so that when add across rows/columns, the deviations cancel and yield 369.
 - **Central anchoring:** The center 41 is itself the mean of \(\{1,\dots,81\}\):
 
-\[
+$$
 \frac{1+81}{2} = 41
-\]
+$$
 
 Around this center, numbers are arranged so that “high” and “low” values interlock, keeping each line balanced.
 
