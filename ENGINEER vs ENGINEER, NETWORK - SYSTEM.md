@@ -45,7 +45,7 @@ CPU, RAM, disk I/O, event logs           TCP vs UDP, ports, MTU, latency
 ```
 
 WORK TOGETHER
-Systems run the services.
-Networks deliver the access.
-One goal: reliable, secure, high-performing IT.
-Better together: stronger systems + stronger network = stronger business.
+- Systems run the services.
+- Networks deliver the access.
+- One goal: reliable, secure, high-performing IT.
+- Better together: stronger systems + stronger network = stronger business.
