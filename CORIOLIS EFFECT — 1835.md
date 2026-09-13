@@ -28,3 +28,7 @@ Fictitious acceleration in a rotating frame:
   • In an inertial frame the path is a straight line;
     Earth rotates underneath the object
 ```
+
+## Future Work
+- Coriolis in meteorology
+- Centrifugal force basics
