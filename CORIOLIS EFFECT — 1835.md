@@ -83,3 +83,4 @@ $$
 ## Future Work
 - Coriolis in meteorology
 - Centrifugal force basics
+- Euler force derivation
