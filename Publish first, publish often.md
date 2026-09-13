@@ -58,11 +58,10 @@ Publishing noise does not create provenance. A flood of half-baked posts makes p
 
 Private priority (emails, slack, lab notebooks) is almost useless in a multi-lab, multi-human race. Third parties cannot verify it. Public clocks can.
 
-
 ## Argument formalizations
 Not established theorems. They make the provenance claim checkable.
 
-## Objects and clocks
+### Objects and clocks
 
 Let agents be humans or labs $i \in I$.
 
@@ -83,7 +82,7 @@ Write $\tau(A)$ for the timestamp of $A$.
 
 Private records (email, Slack, notebook) get a private time $t^{\mathrm{priv}}$, but they are not in the public clock.
 
-## Public vs private existence
+### Public vs private existence
 
 Define the public existence time of $P$ for agent $i$:
 
@@ -109,7 +108,7 @@ $$
 \mathrm{Prov}(i,P) \;=\; t_i^{\mathrm{pub}}(P), \qquad t_i^{\mathrm{priv}}(P) \text{ is not admissible}.
 $$
 
-## First-public-timestamp rule
+### First-public-timestamp rule
 
 The public priority set is
 
@@ -125,7 +124,7 @@ $$
 
 A later polished paper $A_{\mathrm{final}}$ with $\tau(A_{\mathrm{final}}) \gg t_i^{\mathrm{pub}}(P)$ does not change $\mathrm{First}(P)$.
 
-## The compute window
+### The compute window
 
 Let
 
@@ -159,7 +158,7 @@ $$
 
 the public record starts after the run, so timing is no longer independently recoverable.
 
-## What counts as an artifact
+### What counts as an artifact
 
 Frequency is not enough. Require a predicate
 
@@ -183,7 +182,7 @@ $$
 
 Noise raises $N$ without raising $Q$, so provenance gets worse, not better.
 
-## Credit versus execution
+### Credit versus execution
 
 Let $S(A)$ be system strength (performance, scale, completeness). Labs can dominate execution:
 
@@ -199,7 +198,7 @@ $$
 
 The entitlement is citation-graph membership, not ownership of the scaled result.
 
-## Citation graph, not absorption
+### Citation graph, not absorption
 
 Let $G=(V,E)$ be the citation graph. An early valid artifact $A_i$ should satisfy
 
@@ -215,7 +214,7 @@ $$
 
 Absorption is the failure mode the public clock is meant to block.
 
-## Reconstructing “who knew what when”
+### Reconstructing “who knew what when”
 
 A third party can reconstruct public knowledge at time $t$ by
 
@@ -239,7 +238,7 @@ $$
 
 not the private filtration.
 
-## Compact form of the claim
+### Compact form of the claim
 
 $$
 \boxed{ \mathrm{Prov}(i,P)=t_i^{\mathrm{pub}}(P) \qquad t_i^{\mathrm{pub}}(P)=\inf\{\tau(A):\mathrm{Valid}(A),\mathrm{About}(A,P)\} }
@@ -250,7 +249,3 @@ and, when humans and labs work the same $P$,
 $$
 \boxed{ t_i^{\mathrm{priv}}(P) \;\text{does not survive contact with compute;} \quad \text{only } t_i^{\mathrm{pub}}(P) < t^{\mathrm{scale}}(P) \text{ does.} }
 $$
-
-
-
-
