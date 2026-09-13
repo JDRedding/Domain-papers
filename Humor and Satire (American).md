@@ -154,7 +154,7 @@ $$
 **Onion headline generator (joke model)**
 
 $$
-\text{Headline} = \operatorname{Register}_{\text{news}}(\operatorname{Content}_{\text{absurd}})
+\text{Headline} = {Register}_{\text{news}}({Content}_{\text{absurd}})
 $$
 
 Keep the *form* of serious reporting; swap the *content* for a violation that is still recognizable as American life.
