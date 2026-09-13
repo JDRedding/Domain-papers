@@ -35,7 +35,10 @@ That last point is the old Leanpub / blogger lesson applied to research: early d
 - Reducing Perfectionism: By focusing on progress rather than perfection, creators avoid analysis paralysis and develop a consistent publishing habit.
 - Portfolio Growth: Frequent publishing showcases your work and expertise, creating a substantial body of work over time.
 
-Practical Applications
+## Practical Applications
+
+Ship the smallest true object as soon as it exists. Iterate in public. Treat the first timestamp as insurance, not as the finished paper. When humans and labs share a problem space, that insurance is often the only part of the record that remains independent of compute.
+
 - Writing and Blogging: Post articles, essays, or short updates without worrying about perfection. Early drafts can evolve with reader feedback.
 - Academic Research: Submitting initial findings as conference papers or preprints, then refining them for journals, aligns with this philosophy.
 - Content Marketing: Businesses often post content frequently to engage audiences and gain insights from analytics, adjusting strategy over time.
