@@ -47,3 +47,9 @@ Practical Applications
 - Embrace feedback loops: use comments, metrics, or peer review as guidance for improvement.
 - Avoid burnout by setting achievable goals and choosing formats that allow for faster creation.
 
+### Limits 
+*The slogan not a cargo cult*
+
+Publishing noise does not create provenance. A flood of half-baked posts makes priority harder to audit. The useful unit is a dated, inspectable object: a short note with a clear claim, code that runs, or a figure that can be checked.Labs still win on execution. An early preprint does not entitle anyone to the scaled result. It does entitle them to being in the citation graph instead of disappearing into “concurrent work.”
+
+Private priority (emails, slack, lab notebooks) is almost useless in a multi-lab, multi-human race. Third parties cannot verify it. Public clocks can.
