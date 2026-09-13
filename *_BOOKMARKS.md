@@ -334,6 +334,6 @@
 
 </details>
 
-- AI Guides | https://latest.sh/guides
-- AI Browse | https://latest.sh/browse
+- dev Guides | https://latest.sh/guides
+- dev Browse | https://latest.sh/browse
 
