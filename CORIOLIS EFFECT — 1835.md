@@ -32,7 +32,7 @@ Fictitious acceleration in a rotating frame:
 Coriolis did not write the modern vector formula. In the 1835 memoir *Sur les équations du mouvement relatif des systèmes de corps* (*Journal de l’École polytechnique*, 24ᵉ cahier, Tome XV, pp. 142–154) he introduced two families of supplementary inertial forces that must be added to the real forces when the equations of motion are written in a rotating frame. He called the velocity-dependent family the **forces centrifuges composées** (compound centrifugal forces).
 
 ### Coriolis’s verbal statement 
-Introduction of the 1835 paper
+*Introduction of the 1835 paper*
 
 To obtain any equation of *relative* motion of a system of bodies (or of a machine) it is sufficient to add to the existing forces two kinds of supplementary forces:
 
