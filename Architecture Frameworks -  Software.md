@@ -1,4 +1,4 @@
-# Software Architecture Frameworks
+# Software-Level Architecture Frameworks
 
 When considering software-level architecture frameworks, the goal is to represent the structural, behavioral, and interactional aspects of a software system in a formalized, standardized manner. Software-level diagramming gives engineers, architects, and stakeholders clarity about system decomposition, module interactions, and design decisions.
 
@@ -58,6 +58,33 @@ Template for software architecture documentation. Includes:
 
 Often uses UML, SysML, or custom diagrams to communicate architecture clearly.
 
+### f. UAF (Unified Architecture Framework)
+
+UAF is a modeling framework for complex systems and software architectures. It provides standard viewpoints, a formal metamodel, and consistent information exchange across the enterprise.
+
+It builds on earlier frameworks such as DoDAF (Department of Defense Architecture Framework) and MODAF (Ministry of Defence Architecture Framework), and extends them to systems-of-systems and software-intensive systems at multiple levels. UAF supports coherent modeling of operational, systems, and programmatic aspects in a single framework, making it suitable for software architecture design, analysis, and documentation.
+
+The metamodel defines the elements, relationships, and rules for architecture models, supporting consistency, interoperability, and traceability across stakeholders and tools.
+
+**Key viewpoints for software architects:**
+
+- **Operational View (OV)** — Operational scenarios, workflows, and tasks that software systems must support; places requirements in context
+- **System View (SV)** — Software components, services, interfaces, and interactions; modular structure, data flows, and integration points, often with UML or SysML
+- **Service-Oriented View (SvcV)** — Software services, APIs, and communication patterns within and between systems; useful for microservices and service-based architectures
+- **Standards View (StdV)** — Compliance with protocols, software interfaces, and industry standards
+- **Program View (PV)** — Planning, lifecycle management, and resource allocation; traceability from conceptual requirements to code
+
+These viewpoints let architects model components, interfaces, behaviors, and dependencies while staying aligned with system objectives and operational needs.
+
+**Benefits for software architecture:**
+
+- Integration of system and software viewpoints, including software as part of a system-of-systems
+- Traceability from operational needs through systems design to implementation
+- Tool interoperability via UAF profiles in tools such as MagicDraw and Cameo Systems Modeler
+- Support for performance, security, and risk analysis at the software level
+
+**Usage:** Structured description of software-intensive systems, their components, services, and interactions, with alignment to operational requirements and programmatic constraints.
+
 ## 2. Software-Level Diagramming Techniques
 
 ### a. UML (Unified Modeling Language)
@@ -65,11 +92,11 @@ Often uses UML, SysML, or custom diagrams to communicate architecture clearly.
 - **Structure diagrams:** Class, component, package, deployment
 - **Behavior diagrams:** Activity, sequence, state machine, use case
 
-Supports rigorous engineering notation and IDE integrations.
+Supports rigorous engineering notation and IDE integrations. Also used with UAF and SysML profiles.
 
 ### b. SysML (Systems Modeling Language)
 
-Tailored for systems engineering, including modeling of software–hardware interactions. Useful for embedded systems and cyber-physical architectures.
+Tailored for systems engineering, including modeling of software–hardware interactions. Useful for embedded systems, cyber-physical architectures, and UAF-based system-of-systems models.
 
 ### c. Flow-Based Diagrams
 
@@ -80,25 +107,29 @@ Tailored for systems engineering, including modeling of software–hardware inte
 
 Used in microservices, cloud, and containerized systems. Emphasize high-level components, interactions, and deployment platforms.
 
-**Tools:** Lucidchart, draw.io, Structurizr
+**Tools:** Lucidchart, draw.io, Structurizr, MagicDraw / Cameo Systems Modeler (UAF profiles)
 
 ## 3. Best Practices in Software-Level Diagramming
 
 - **Layered abstraction:** Avoid mixing micro and macro views in a single diagram
 - **Stakeholder-oriented views:** Tailor diagrams to developers, business analysts, or operations
-- **Iterative refinement:** Start with high-level views (context, containers) before drilling down
-- **Tool support:** Use frameworks such as Structurizr (C4 model) or Archi (ArchiMate) for consistency
-- **Consistency:** Ensure diagrams align with the actual implementation and architecture decision records
+- **Iterative refinement:** Start with high-level views (context, containers, operational views) before drilling down
+- **Tool support:** Use frameworks such as Structurizr (C4), Archi (ArchiMate), or UAF-capable tools (MagicDraw, Cameo) for consistency
+- **Consistency and traceability:** Align diagrams with implementation, architecture decision records, and—where UAF or ISO 42010 is used—operational and programmatic views
 
 ## 4. Recommendation
 
-For modern software systems, start with the C4 model for clarity and multi-level abstraction. Use UML for low-level implementation diagrams. Supplement with arc42 or ISO/IEC/IEEE 42010 for documentation and compliance.
+For modern application and product software, start with the C4 model for clarity and multi-level abstraction. Use UML for low-level implementation diagrams. Supplement with arc42 or ISO/IEC/IEEE 42010 for documentation and compliance.
+
+For software-intensive systems-of-systems, defense, aerospace, or enterprise programs that need operational-to-implementation traceability, use UAF (often with SysML/UML) alongside or instead of lighter product-focused models. TOGAF remains useful when the primary concern is enterprise alignment rather than detailed software structure.
 
 This hierarchy helps software-level diagramming convey both technical rigor and stakeholder comprehension.
 
-## References and Further Study
+## References for Further Study
 
 - Kruchten, Philippe. “The 4+1 View Model of Architecture.” *IEEE Software*, 1995.
 - Simon Brown, *Software Architecture for Developers* (C4 Model).
 - ISO/IEC/IEEE 42010:2011 — Systems and Software Engineering — Architecture Description.
 - arc42 Documentation Template: [https://arc42.org](https://arc42.org)
+- Object Management Group, Unified Architecture Framework (UAF)
+- DoDAF and MODAF predecessor frameworks (historical context for UAF)
