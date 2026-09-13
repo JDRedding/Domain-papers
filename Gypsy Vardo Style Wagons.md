@@ -1,23 +1,22 @@
-# Gypsy - Vardo Style Wagons
+# Gypsy (Vardo) Style Wagons
+
+Vardo wagons, traditionally horse-drawn homes of the Romani people, are richly decorated, handcrafted rolling homes celebrated for their artistry, cultural significance, and modern adaptations for glamping and mobile living today.
+
+Vardo wagons first gained prominence in the mid-19th century among the Romanichal travelers of Britain.
+Traditionally, these four-wheeled horse-drawn wagons served as mobile homes, incorporating living spaces inside while being fully functional for travel explained. In Romani culture, the vardo was considered both a symbol of family wealth and a canvas for artistic expression, often hand-carved, brightly painted, and adorned with symbols like animals, flowers, vines, and even gold leaf. The wagons also had spiritual and social significance; families would gather inside, and items—including the wagon—were customarily burned after the owner’s death.
 
 ## Fundamentals
 
 Horse-drawn living wagons adopted by British Romani (Romanichal) around the 1850s.
-
 The name *vardo* comes from Ossetic *wærdon*, meaning “cart.”
-
 Before vardos, families used tents or slept under tilt carts.
 
 **Heyday:** late 1800s to early 1900s (“wagon time”).
 
 Usually pulled by one horse; a second “sider” horse could be added for hills or heavy loads.
-
 Large rear wheels often sit outside the body for better off-road travel.
-
 Interiors typically include a stove, a raised rear bed with storage beneath, benches, and cupboards.
-
 Decoration (carving, bright paint, gold leaf) signaled wealth and status.
-
 Few original examples remain; most today are restored or built for fairs, glamping, or display.
 
 ## Main Types
