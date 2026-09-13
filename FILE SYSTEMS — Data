@@ -1,0 +1,55 @@
+FILE SYSTEMS — Data Is Stored, Organized, and Managed
+
+CORE IDEAS
+Organize  — directory trees, metadata, allocation maps
+Store     — blocks/clusters, journaling vs copy-on-write
+Secure    — permissions, encryption, snapshots
+
+FAT32
+Used in: USB drives, SD cards
+Fundamentals: Simple allocation table, high compatibility
+Limits: Max file size 4 GB
+Best for: Small removable media across almost any OS
+
+exFAT
+Used in: Flash drives, SDXC cards
+Fundamentals: Extended FAT without the 4 GB file cap
+Strengths: Large file support, cross-platform (Windows, macOS, Linux, cameras)
+Best for: Large files on removable storage
+
+NTFS
+Used in: Windows system and data drives
+Fundamentals: Journaling, ACLs, compression, encryption (EFS)
+Strengths: Security & permissions, file encryption, large volumes
+Best for: Windows internal drives
+
+ext4
+Used in: Linux
+Fundamentals: Journaling, extents, delayed allocation
+Strengths: Stability, performance, large partitions
+Best for: Linux root and data partitions
+
+APFS
+Used in: macOS, iOS
+Fundamentals: Copy-on-write, snapshots, space sharing, encryption
+Strengths: Optimized for SSD, snapshots, encryption
+Best for: Modern Apple devices
+
+HFS+
+Used in: Older Macs
+Fundamentals: Journaled hierarchical file system
+Strengths: Reliable & fast for its era
+Note: Predecessor to APFS
+
+NFS
+Used in: Linux/Unix networks
+Fundamentals: Network File System protocol (remote mount)
+Strengths: Network file sharing, remote access
+Best for: Unix-like server-client file access
+
+SMB
+Used in: Windows file sharing (also Samba on Linux)
+Fundamentals: Server Message Block protocol
+Strengths: Easy file sharing, authentication, access control
+Best for: Cross-machine sharing on Windows networks
+
