@@ -1,4 +1,6 @@
 # 📘 **Hegelian Relationalism**  
+160 logic/method
+
 A clear conceptual relationship between **Hegelian dialectic** and **Relational Dynamic Geometry (RDG)**: dialectic is *one observable pattern* of relational motion, while RDG is a *more primitive relational geometry* from which dialectical patterns can emerge. RDG is not derived from Hegel; it is a deeper framework that can *represent* Hegelian motion among many others.
 **RDG is a foundational relational geometry.  
 Hegelian dialectic is one recognizable projection of relational motion within that geometry.**
