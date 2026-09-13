@@ -57,6 +57,29 @@ In the 20th and 21st centuries the stage and screen took over: *Dr. Strangelove*
 
 There are no standard scientific equations for American humor or satire. Those are cultural practices, not physical systems. What follows is the usual **notation people invent** when they try to write humor as a formula, plus a few satirical “American-style” equations in the spirit of tall tales and *The Onion*.
 
+## Humor and Satire Notation 
+
+| Symbol | Meaning |
+|---|---|
+| $H$ | humor intensity (subjective) |
+| $E$ | expected script / frame |
+| $U$ | unexpected script |
+| $d(E,U)$ | incongruity |
+| $R$ | resolution / reframe |
+| $V$ | violation |
+| $B$ | benign-ness / play frame |
+| $C$ | critique (satire’s extra term) |
+| $X$ | exaggeration factor (tall-tale term) |
+| $A$ | audience shared knowledge |
+
+A compact “satire = humor + aim” line:
+
+$$
+\text{Satire} \approx H(E,U,R) + C
+$$
+
+where $C$ is the social or political target. Pure entertainment comedy sets $C \approx 0$; Juvenalian satire makes $C$ large.
+
 ## Common sketches
 
 **Incongruity (the usual core idea)**  
@@ -103,29 +126,6 @@ H \propto \Delta P = P_{\text{built-up}} - P_{\text{after release}}
 $$
 
 Useful as a metaphor for taboo jokes; not a measurement.
-
-## Humor and Satire Notation 
-
-| Symbol | Meaning |
-|---|---|
-| $H$ | humor intensity (subjective) |
-| $E$ | expected script / frame |
-| $U$ | unexpected script |
-| $d(E,U)$ | incongruity |
-| $R$ | resolution / reframe |
-| $V$ | violation |
-| $B$ | benign-ness / play frame |
-| $C$ | critique (satire’s extra term) |
-| $X$ | exaggeration factor (tall-tale term) |
-| $A$ | audience shared knowledge |
-
-A compact “satire = humor + aim” line:
-
-$$
-\text{Satire} \approx H(E,U,R) + C
-$$
-
-where $C$ is the social or political target. Pure entertainment comedy sets $C \approx 0$; Juvenalian satire makes $C$ large.
 
 ## American tall-tale / satire formulas (neo-mathematical)
 
