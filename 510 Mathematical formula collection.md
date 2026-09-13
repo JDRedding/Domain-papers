@@ -1,4 +1,6 @@
 # Mathematical formula collection
+510 general mathematics
+
 This is a concise collection of commonly used mathematical formulas and their standard notation. It gathers core identities and expressions from algebra, geometry, trigonometry, calculus, probability & statistics, and exponential/logarithmic functions for easy reference. The sheet is intended as a quick lookup—not as a substitute for derivations or worked examples—and uses conventional symbols and notation; variants (e.g., population vs. sample formulas) are noted where relevant. 
 
 ## Formulas
