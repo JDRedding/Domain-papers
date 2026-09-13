@@ -153,3 +153,95 @@ Shared news knowledge $A$ has to be high; otherwise the satire does not land.
 
 - Mark Twain's satirical techniques
 - British satire traditions
+- Gender, region, and class voices still underweighted
+- Frontier tall tales and late-night political satire
+- Southern, Midwestern, working-class, and women's comic traditions 
+- "directness and exaggeration" national habits.
+- Deadpan narration, dialect as critique, the river as moral test
+- The Comic voice 
+- The Onion
+- Horatian vs Juvenalian America
+- Immigrant and minority Comic Streams 
+- Performance media as the new pamphlet
+- Formulas as testable sketches
+- When satire stops landing (Treat A as a historical variable)
+- Trickster reversal vs superiority theory
+- Paul Bunyan / advertising folklore 
+
+## APPENDIX: Humor and Satire
+
+### FUNDAMENTALS
+```
+Humor     entertain first (exaggeration, observation, slapstick)
+Satire    entertain + critique C (irony, parody, ridicule)
+Tone      American: frontal, vernacular, performative
+          British contrast: understatement, class-coded irony
+Modes     Horatian = wry, corrective
+          Juvenalian = biting, scorched-earth
+Engine    inflate the tale or the headline until scale is visible
+Media     pamphlet / almanac -> cartoon -> vaudeville / film
+          -> radio / TV / SNL / Daily Show -> Onion / digital
+```
+
+### TYPES
+```
+H   humor intensity (subjective)
+E   expected script / frame
+U   unexpected script
+d   incongruity = d(E,U)
+R   resolution / reframe
+V   violation (norm, logic, dignity, piety)
+B   benign-ness / play frame
+C   critique (satire extra term)
+X   exaggeration factor (tall-tale term)
+A   audience shared knowledge
+I   stated ideal (liberty, equality, piety, competence)
+R*  observed reality          (*not the same R as resolution)
+G   gap = I - R*
+S   status / competence in the moment
+P   pressure (relief / taboo metaphor)
+k   inflation multiplier, k > 1
+```
+
+### RELATIONS
+```
+Satire ~ H(E,U,R) + C
+         C ~ 0  => pure entertainment
+         C large => Juvenalian
+
+Incongruity
+  H  proportional to  d(E,U) * R
+  clash without R => nonsense or discomfort, not a joke
+
+Benign violation
+  H high  if  V AND B
+  H low   otherwise
+  satire raises V, keeps just enough B to hold the room
+
+Superiority
+  H  proportional to  (S_self - S_target)
+  American trickster often flips this, then reverses it
+
+Relief (metaphor only)
+  H  proportional to  P_built-up - P_after
+
+Tall-tale inflation
+  X_(n+1) = k * X_n ,  k > 1
+  geometric, not additive
+
+American satirical engine
+  G = I - R*
+  American satire  proportional to  X * G
+
+Onion headline
+  Headline = Register_news(Content_absurd)
+  keep news form; swap in a recognizable American violation
+
+Twain deadpan
+  H = (atrocity or folly) / (calmness of voice)
+
+SNL / Daily Show timing
+  H  proportional to  (recognition of the week's event)
+                      / (seconds until the twist)
+  needs high A or the satire does not land
+```
