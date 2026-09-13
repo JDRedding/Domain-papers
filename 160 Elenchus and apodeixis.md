@@ -1,4 +1,6 @@
 # Ancient methods of inquiry 🧠
+160 logic/method
+
 Elenchus and apodeixis to modern formal‑system design, focusing on one core principle: **no hidden assumptions**. A reasoning system is only honest when every premise, operator, evaluator, and failure mode is explicit, walkable, and visible. Anything else is a concealed frame pretending to be truth.
 
 ## 🧩 Core Concepts
