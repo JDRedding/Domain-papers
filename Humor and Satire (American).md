@@ -154,7 +154,7 @@ Shared news knowledge $A$ has to be high; otherwise the satire does not land.
 - Mark Twain's satirical techniques
 - Benign Violation Theory
 - Stand-up Comedy Mechanics
-- Gender, region, and class voices still underweighted
+- Gender, Region, and Class Comic Streams
 - Frontier tall tales and late-night political satire
 - Southern, Midwestern, working-class, and women's comic traditions 
 - "Directness and exaggeration" national habits.
