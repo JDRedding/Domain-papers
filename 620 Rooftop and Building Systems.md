@@ -1,6 +1,14 @@
 # Rooftop and Building-Integrated Systems 
 (Non-Photovoltaic)
 
+- 620 Civil engineering → Buildings → Roofs & roofing
+- Green roofs → 635.9 (horticulture)
+- Stormwater engineering → 628.1
+- Thermal insulation → 697.1
+- Daylighting & glazing → 729.28
+
+Building codes → 690.021
+
 While most discussion of rooftop and building-integrated systems focuses on photovoltaics, a wide range of non-photovoltaic technologies also contributes to structural integrity, energy efficiency, and sustainability. Understanding these systems is essential for architects, engineers, and developers designing modern buildings.
 
 Excluding photovoltaics, rooftop and building-integrated systems include green roofs, cool roofs, thermal insulation, daylighting, water management, fire protection, and integrated envelope components. Together, these systems improve energy efficiency, occupant comfort, and building resilience. They often serve multiple functions while reducing costs and environmental impact. Strategic selection and early-stage integration help modern buildings meet both performance requirements and sustainability goals.
