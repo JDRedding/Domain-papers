@@ -54,3 +54,101 @@ DNA Data Storage          Zettabytes per gram  (experimental)
 ```
 Bytes → KB → MB → GB → TB → PB → EB → ZB
 ```
+
+## **Notation**
+
+- $\text{B}$ = byte  
+- $\text{KiB}, \text{MiB}, \text{GiB}, \ldots$ = binary (powers of 1024)  
+- $\text{kB}, \text{MB}, \text{GB}, \ldots$ = decimal (powers of 1000)  
+- $C$ = capacity  
+- $n$ = number of prefix steps
+
+### **Storage unit relations (binary / IEC prefixes)**
+
+$$
+1\,\text{B} = 8\,\text{bits}
+$$
+
+$$
+1\,\text{KiB} = 2^{10}\,\text{B} = 1024\,\text{B}
+$$
+
+$$
+1\,\text{MiB} = 2^{20}\,\text{B} = 1\,048\,576\,\text{B}
+$$
+
+$$
+1\,\text{GiB} = 2^{30}\,\text{B} = 1\,073\,741\,824\,\text{B}
+$$
+
+$$
+1\,\text{TiB} = 2^{40}\,\text{B}
+$$
+
+$$
+1\,\text{PiB} = 2^{50}\,\text{B}
+$$
+
+$$
+1\,\text{EiB} = 2^{60}\,\text{B}
+$$
+
+$$
+1\,\text{ZiB} = 2^{70}\,\text{B}
+$$
+
+### **General conversion between prefixes**
+
+Let $n$ be the number of steps between units (each step is a factor of $2^{10}$):
+
+$$
+\text{higher unit} = \text{lower unit} \times 2^{10n}
+$$
+
+Example: bytes to tebibytes ($n=4$):
+
+$$
+1\,\text{TiB} = 2^{40}\,\text{B}
+$$
+
+### **Bits from bytes (and vice versa)**
+
+$$
+C_{\text{bits}} = C_{\text{bytes}} \times 8
+$$
+
+$$
+C_{\text{bytes}} = \frac{C_{\text{bits}}}{8}
+$$
+
+### **Decimal (SI) prefixes sometimes used by manufacturers**
+
+$$
+1\,\text{kB} = 10^{3}\,\text{B} = 1000\,\text{B}
+$$
+
+$$
+1\,\text{MB} = 10^{6}\,\text{B}
+$$
+
+$$
+1\,\text{GB} = 10^{9}\,\text{B}
+$$
+
+$$
+1\,\text{TB} = 10^{12}\,\text{B}
+$$
+
+$$
+1\,\text{PB} = 10^{15}\,\text{B}
+$$
+
+$$
+1\,\text{EB} = 10^{18}\,\text{B}
+$$
+
+$$
+1\,\text{ZB} = 10^{21}\,\text{B}
+$$
+
+
