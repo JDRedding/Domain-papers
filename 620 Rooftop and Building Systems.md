@@ -6,8 +6,7 @@
 - Stormwater engineering → 628.1
 - Thermal insulation → 697.1
 - Daylighting & glazing → 729.28
-
-Building codes → 690.021
+- Building codes → 690.021
 
 While most discussion of rooftop and building-integrated systems focuses on photovoltaics, a wide range of non-photovoltaic technologies also contributes to structural integrity, energy efficiency, and sustainability. Understanding these systems is essential for architects, engineers, and developers designing modern buildings.
 
