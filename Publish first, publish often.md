@@ -1,5 +1,6 @@
 # “Publish first, publish often”
-"Publish first, publish often" is a guiding principle that encourages creators, writers, and researchers to focus on producing work frequently, sharing it publicly, and iterating to improve over time. In essence, "publish first, publish often" fosters growth through action. The focus shifts from perfection to experience, enabling creators to become more skilled, responsive, and recognized over time.
+
+"Publish first, publish often" is a guiding principle that encourages creators, writers, and researchers to focus on producing work frequently, sharing it publicly, and iterating to improve over time. In essence, "publish first, publish often" fosters growth through action. The focus shifts from perfection to experience, enabling creators to become more skilled, responsive, and recognized over time. “Publish first, publish often” is not a productivity slogan. In a race between people and labs, it is a provenance rule.
 
 ## CLAIM
 - First public timestamp is the only reliable provenance
@@ -56,3 +57,200 @@ Ship the smallest true object as soon as it exists. Iterate in public. Treat the
 Publishing noise does not create provenance. A flood of half-baked posts makes priority harder to audit. The useful unit is a dated, inspectable object: a short note with a clear claim, code that runs, or a figure that can be checked.Labs still win on execution. An early preprint does not entitle anyone to the scaled result. It does entitle them to being in the citation graph instead of disappearing into “concurrent work.”
 
 Private priority (emails, slack, lab notebooks) is almost useless in a multi-lab, multi-human race. Third parties cannot verify it. Public clocks can.
+
+
+## Argument formalizations
+Not established theorems. They make the provenance claim checkable.
+
+## Objects and clocks
+
+Let agents be humans or labs $i \in I$.
+
+An idea or program is $P$. An artifact about $P$ is a tuple
+
+$$
+A = (c, \tau, \sigma, v)
+$$
+
+where
+
+- $c$ is the content (claim, method, code, figure)
+- $\tau \in \mathbb{R}$ is a public timestamp
+- $\sigma$ is a verification handle (stable URL, commit hash, arXiv id, signed digest)
+- $v$ is a version index
+
+Write $\tau(A)$ for the timestamp of $A$.
+
+Private records (email, Slack, notebook) get a private time $t^{\mathrm{priv}}$, but they are not in the public clock.
+
+## Public vs private existence
+
+Define the public existence time of $P$ for agent $i$:
+
+$$
+t_i^{\mathrm{pub}}(P) \;=\; \inf\bigl\{\tau(A): A \text{ is public, inspectable, and about } P \text{ from } i\bigr\}
+$$
+
+If no such artifact exists,
+
+$$
+t_i^{\mathrm{pub}}(P) = +\infty.
+$$
+
+Private priority is
+
+$$
+t_i^{\mathrm{priv}}(P) \;=\; \inf\{t: i \text{ internally recorded } P \text{ at time } t\}.
+$$
+
+The essay’s claim is that third-party provenance uses only the public clock:
+
+$$
+\mathrm{Prov}(i,P) \;=\; t_i^{\mathrm{pub}}(P), \qquad t_i^{\mathrm{priv}}(P) \text{ is not admissible}.
+$$
+
+## First-public-timestamp rule
+
+The public priority set is
+
+$$
+\mathrm{First}(P) \;=\; \arg\min_{i \in I} t_i^{\mathrm{pub}}(P).
+$$
+
+Priority is assigned by
+
+$$
+i \prec_P j \quad\Longleftrightarrow\quad t_i^{\mathrm{pub}}(P) < t_j^{\mathrm{pub}}(P).
+$$
+
+A later polished paper $A_{\mathrm{final}}$ with $\tau(A_{\mathrm{final}}) \gg t_i^{\mathrm{pub}}(P)$ does not change $\mathrm{First}(P)$.
+
+## The compute window
+
+Let
+
+$$
+t^{\mathrm{think}}(P) =\text{time } P \text{ is thinkable}, \qquad t^{\mathrm{scale}}(P) =\text{time } P \text{ is demonstrated at scale}.
+$$
+
+The compute window is
+
+$$
+\Delta(P) \;=\; t^{\mathrm{scale}}(P) - t^{\mathrm{think}}(P).
+$$
+
+The essay says $\Delta(P)$ is short and shrinking:
+
+$$
+\Delta_{t+1}(P) < \Delta_t(P).
+$$
+
+An early public artifact “closes the window” if it arrives before scale:
+
+$$
+t_i^{\mathrm{pub}}(P) < t^{\mathrm{scale}}(P).
+$$
+
+If instead
+
+$$
+t^{\mathrm{scale}}(P) < t_i^{\mathrm{pub}}(P) < +\infty,
+$$
+
+the public record starts after the run, so timing is no longer independently recoverable.
+
+## What counts as an artifact
+
+Frequency is not enough. Require a predicate
+
+$$
+\mathrm{Valid}(A) \;=\; \mathrm{Public}(A) \;\wedge\; \mathrm{Specific}(A) \;\wedge\; \mathrm{Versioned}(A) \;\wedge\; \mathrm{Cheap}(A).
+$$
+
+Only valid artifacts enter the infimum:
+
+$$
+t_i^{\mathrm{pub}}(P)
+\;=\;
+\inf\bigl\{\tau(A): \mathrm{Valid}(A),\ \mathrm{About}(A,P),\ \mathrm{Author}(A)=i\bigr\}.
+$$
+
+A flood of low-specificity posts can be modeled as increasing audit cost. If $N$ is the number of public items and $Q$ their mean specificity,
+
+$$
+\mathrm{AuditCost} \propto \frac{N}{Q}.
+$$
+
+Noise raises $N$ without raising $Q$, so provenance gets worse, not better.
+
+## Credit versus execution
+
+Let $S(A)$ be system strength (performance, scale, completeness). Labs can dominate execution:
+
+$$
+S(A_{\mathrm{lab}}) \gg S(A_{\mathrm{early}}).
+$$
+
+That does not transfer the timestamp:
+
+$$
+S(A_{\mathrm{lab}}) > S(A_i) \quad\not\Rightarrow\quad t_{\mathrm{lab}}^{\mathrm{pub}}(P) \le t_i^{\mathrm{pub}}(P).
+$$
+
+The entitlement is citation-graph membership, not ownership of the scaled result.
+
+## Citation graph, not absorption
+
+Let $G=(V,E)$ be the citation graph. An early valid artifact $A_i$ should satisfy
+
+$$
+A_{\mathrm{later}} \in V \quad\Longrightarrow\quad (A_{\mathrm{later}}, A_i) \in E
+$$
+
+or an explicit distinguish/supersede edge, rather than silent absorption
+
+$$
+A_{\mathrm{later}} \supset c(A_i) \quad\text{and}\quad (A_{\mathrm{later}}, A_i) \notin E.
+$$
+
+Absorption is the failure mode the public clock is meant to block.
+
+## Reconstructing “who knew what when”
+
+A third party can reconstruct public knowledge at time $t$ by
+
+$$
+K(t) \;=\; \bigl\{c(A): \mathrm{Valid}(A),\ \tau(A) \le t\bigr\}.
+$$
+
+They cannot reconstruct
+
+$$
+K^{\mathrm{priv}}(t) \;=\; \bigl\{\text{internal notes with } t^{\mathrm{priv}} \le t\bigr\}
+$$
+
+because those objects are not independently checkable.
+
+So the only surviving audit trail is
+
+$$
+\mathrm{Record}(P) \;=\; \bigl(K(t)\bigr)_{t \ge 0}, 
+$$
+
+not the private filtration.
+
+## Compact form of the claim
+
+$$
+\boxed{ \mathrm{Prov}(i,P)=t_i^{\mathrm{pub}}(P) \qquad t_i^{\mathrm{pub}}(P)=\inf\{\tau(A):\mathrm{Valid}(A),\mathrm{About}(A,P)\} }
+$$
+
+and, when humans and labs work the same $P$,
+
+$$
+\boxed{ t_i^{\mathrm{priv}}(P) \;\text{does not survive contact with compute;} \quad \text{only } t_i^{\mathrm{pub}}(P) < t^{\mathrm{scale}}(P) \text{ does.} }
+$$
+
+
+
+
