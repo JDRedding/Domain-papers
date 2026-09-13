@@ -114,3 +114,25 @@ Within that framework:
 - Siamese method algorithm and construction method
 - Olney Richmond's Mystic Test Book
 - Agrippa's planetary squares
+
+## APPENDIX: Formula and notation
+
+```
+n = 9
+cells = n² = 81
+values = {1, 2, ..., 81}  (each used once)
+magic constant M = n(n² + 1)/2 = 9 × 82 / 2 = 369
+total sum S = n²(n² + 1)/2 = 3321
+center cell = (n² + 1)/2 = 41
+planetary kamea association: Moon (order 9)
+
+37  78  29  70  21  62  13  54   5
+ 6  38  79  30  71  22  63  14  46
+47   7  39  80  31  72  23  55  15
+16  48   8  40  81  32  64  24  56
+57  17  49   9  41  73  33  65  25
+26  58  18  50   1  42  74  34  66
+67  27  59  10  51   2  43  75  35
+36  68  19  60  11  52   3  44  76
+77  28  69  20  61  12  53   4  45
+```
