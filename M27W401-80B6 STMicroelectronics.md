@@ -1,8 +1,9 @@
 # M27W401-80B6 STMicroelectronics
 4 Mbit Low-Voltage UV / OTP EPROM
+
 ## Original marked PDIP
 : decapped die, memory array visible as two large rectangular blocks with  a central decode / interconnect strip
--M27W401-80B6  BA88B  0242L  TAIWAN
+- M27W401-80B6  BA88B  0242L  TAIWAN
 
 ## FUNDAMENTALS
 ```
