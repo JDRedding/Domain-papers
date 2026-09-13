@@ -165,8 +165,8 @@ Reason:
 - Work per level = $\Theta(n)$
 
 Thus:
-$$
 
+$$
 T(n) = \Theta(n \log n)
 $$
 
