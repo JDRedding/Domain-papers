@@ -1,0 +1,28 @@
+UNDERGROUND CABLE ELECTRIC FIELD PHYSICS
+
+CABLE TYPES
+  PILC   Paper-insulated lead-covered   (older)
+  XLPE   Cross-linked polyethylene      (modern)
+  EPR    Ethylene propylene rubber      (modern)
+
+IDEAL COAXIAL FIELD
+  E(r) = V / [ r * ln(b / a) ]
+
+  E(r)  electric field at radius r     [V/m]
+  V     applied voltage                [V]
+  a     conductor outer radius         [m]
+  b     insulation outer radius        [m]
+  r     radial position  (a < r < b)   [m]
+
+3-CORE APPROXIMATION
+  E ≈ V / [ r * ln(D / r) ]
+
+  D     conductor center-to-center spacing
+
+FUNDAMENTALS
+  Field peaks at the conductor surface (r = a)
+  Stress falls as 1/r inside the insulation
+  Dielectric: ε = ε_r ε_0
+  XLPE typical ε_r ≈ 2.2 – 3.5
+  Design goal: shape geometry so peak stress
+               stays below insulation breakdown
