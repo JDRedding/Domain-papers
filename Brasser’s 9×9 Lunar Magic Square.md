@@ -22,9 +22,9 @@ A rich object—this 9×9 is a great example of “order from distinctness.”
 
 ## 1. Basic structure and checks
 
-- **Order:** \(n = 9\)
-- **Cell count:** \(n^2 = 81\)
-- **Values:** \(\{1, 2, \dots, 81\}\) (each used exactly once)
+- **Order:** $n = 9$
+- **Cell count:** $n^2 = 81$
+- **Values:** $\{1, 2, \dots, 81\}$ (each used exactly once)
 - **Magic constant:**
 
 $$
@@ -67,8 +67,8 @@ Order emerges here not from uniformity but from complementary pairing: each pair
 
 This square is not “smooth” or uniform—values jump around—but several balancing mechanisms are visible:
 
-- **Complementary pairs:** Many entries occur in pairs summing to 82 (since \(1+81=82\), \(2+80=82\), etc.). These complements are distributed so that when add across rows/columns, the deviations cancel and yield 369.
-- **Central anchoring:** The center 41 is itself the mean of \(\{1,\dots,81\}\):
+- **Complementary pairs:** Many entries occur in pairs summing to 82 (since $1+81=82$, $2+80=82$, etc.). These complements are distributed so that when add across rows/columns, the deviations cancel and yield 369.
+- **Central anchoring:** The center 41 is itself the mean of $\{1,\dots,81\}$:
 
 $$
 \frac{1+81}{2} = 41
