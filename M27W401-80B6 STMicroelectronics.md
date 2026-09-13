@@ -1,5 +1,8 @@
 # M27W401-80B6 STMicroelectronics
 4 Mbit Low-Voltage UV / OTP EPROM
+## Original marked PDIP
+: decapped die, memory array visible as two large rectangular blocks with  a central decode / interconnect strip
+-M27W401-80B6  BA88B  0242L  TAIWAN
 
 ## FUNDAMENTALS
 ```
@@ -56,10 +59,6 @@
   Package shown     : 32-pin PDIP  (B)
   Temp range        : -40 °C to +85 °C  (6)
 ```
-
-### Original marked PDIP
-: decapped die, memory array visible as two large rectangular blocks with  a central decode / interconnect strip
--M27W401-80B6  BA88B  0242L  TAIWAN
 
 ## EQUATIONS AND NOTATION
 
@@ -183,4 +182,5 @@ Device ID        =  41h
 ## Future work
 - Floating Gate Transistor Physics
 - Flash Memory Technology
-
+- Channel Hot Electron Injection
+- EEPROM Flash Memory
