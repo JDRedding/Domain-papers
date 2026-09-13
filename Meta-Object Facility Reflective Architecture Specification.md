@@ -1,0 +1,332 @@
+# Meta-Object Facility (MOF) Reflective Architecture Specification
+
+**Document ID:** MOF-RAS-.1  
+**Status:** Controlled interpretive specification (non-OMG)  
+**Supersedes:** MOF-RAS-.0 draft  
+**Relationship:** This document subsets and interprets OMG MOF 2.5.1 for architecture and tooling use. Where this document and OMG MOF conflict, **OMG MOF 2.5.1 governs**.
+
+**Requirement verbs:** SHALL, SHALL NOT, SHOULD, SHOULD NOT, MAY (RFC 2119).
+
+---
+
+## 1. Scope
+
+### 1.1 In scope
+This specification defines:
+- the conceptual position of MOF in the OMG model stack;
+- EMOF and CMOF as compliance levels;
+- reflection, identifiers, extents, factories, tags, and (CMOF) links;
+- interchange via XMI;
+- a bounded correspondence to CLOS MOP;
+- verification criteria for metamodels and repositories.
+
+### 1.2 Out of scope
+This specification does not define:
+- a programming-language evaluator or macro system;
+- QVT, MOFM2T, or other model-transformation calculi;
+- OCL syntax (OCL constraints published with MOF remain normative for OMG compliance);
+- SMOF multiple/dynamic classification;
+- MOF Facility, Versioning, or IDL mappings;
+- UAF/UML language semantics beyond their status as MOF-based M2 languages;
+- EMF/Ecore internals (informative only: Ecore is EMOF-aligned, not CMOF-complete).
+
+### 1.3 Purpose
+Provide a single, internally consistent requirements text that architecture, modeling, and tooling teams can implement against, without treating a Lisp analogy as a runtime contract.
+
+---
+
+## 2. Conformance
+
+### 2.1 Document roles
+| Part | Role |
+|---|---|
+| Clauses 5–9, 11 | Normative |
+| Clauses 1–4, 10, 12–13 and all notes | Informative unless a SHALL appears |
+
+### 2.2 Implementation classes
+An implementation SHALL declare exactly one class:
+- **EMOF Repository**
+- **CMOF Repository** (includes EMOF)
+- **Interchange-Only** (XMI produce/consume; no live reflection required)
+
+### 2.3 Conflict rule
+If a requirement here is silent, implementers SHALL follow OMG MOF 2.5.1 and the XMI specification cited in Clause 3.
+
+---
+
+## 3. Normative references
+
+The following documents are indispensable:
+- OMG Meta Object Facility (MOF) Core, v2.5.1  
+- OMG XML Metadata Interchange (XMI), version paired with the MOF edition in use  
+- OMG Unified Modeling Language (UML), v2.5.1 (MOF 2 reuses UML class modeling via package merge)
+
+Informative references:
+- OMG Unified Architecture Framework (UAF)  
+- OMG Object Constraint Language (OCL)  
+- *The Art of the Metaobject Protocol* (CLOS MOP)  
+- Eclipse Modeling Framework (EMF) / Ecore documentation  
+
+---
+
+## 4. Terms and definitions
+
+**Association.** CMOF first-class classifier relating properties (association ends). Not an EMOF primitive.
+
+**CMOF (Complete MOF).** MOF compliance level that includes EMOF plus first-class associations, CMOF reflection (including Link), and the full merged UML/MOF metamodeling set.
+
+**Descriptive graph.** A typed object network that records structure and does not, by itself, evaluate.
+
+**EMOF (Essential MOF).** MOF compliance level aligned with object-oriented language and XML mapping capability. Bidirectional links are represented by properties with opposites, not by Association.
+
+**Extent.** Repository space enumerating member objects. An extent is a MOF capability object; it is not required to be a model Element.
+
+**Factory.** Reflective creator of instances of types in a Package.
+
+**Homoiconicity.** Property of a language in which program text and program data share one representation and one evaluator. MOF does not have this property.
+
+**Identifier.** Stable object identity independent of mutable feature values.
+
+**Link.** CMOF reflective object representing one association instance.
+
+**M0.** Runtime or domain instances of an M1 model. Outside MOF Core.
+
+**M1.** Model; instance of an M2 metamodel.
+
+**M2.** Metamodel; instance of M3 (MOF). Examples: UML, UAF Domain Metamodel, CWM.
+
+**M3.** Meta-metamodel. In this stack: MOF.
+
+**Meta-circularity.** A language or metamodel defined using itself. MOF is meta-circular at M3. Meta-circularity does not imply evaluation.
+
+**Metamodel.** An M2 model that defines abstract syntax for M1 models.
+
+**MOF (Meta-Object Facility).** OMG meta-metamodel and model-management capabilities (Reflection, Identifiers, Extension/Tags), realized as EMOF and CMOF.
+
+**Package merge.** UML/MOF composition mechanism by which MOF 2 capabilities are combined with UML to yield EMOF and CMOF.
+
+**Reflection.** Generic operations that inspect and mutate elements without a metamodel-specific API.
+
+**Serialization.** Encoding of a model for transport or storage. XMI is serialization, not evaluation.
+
+**Tag.** Generic name/value extension on model elements (MOF Extension).
+
+**XMI (XML Metadata Interchange).** Standard XML encoding of MOF-based models, including MOF itself.
+
+---
+
+## 5. Architecture
+
+### 5.1 Layering
+The stack SHALL be interpreted as:
+
+| Layer | Name | Instance-of |
+|---|---|---|
+| M3 | MOF (EMOF or CMOF) | MOF (self) |
+| M2 | Metamodel (UML, UAF, …) | MOF |
+| M1 | Model | the governing M2 metamodel |
+| M0 | Domain/runtime objects | the governing M1 model (out of MOF Core) |
+
+Notes:
+- Layering in MOF is strict: each element corresponds to a classifier in the layer above.
+- Lisp/CLOS layering is not a conformance requirement.
+
+### 5.2 Construction of MOF 2
+MOF 2 SHALL be described as:
+1. UML class-modeling constructs, selected and constrained;
+2. merged MOF capability packages: Common, Reflection, Identifiers, Extension;
+3. EMOF as the constrained merged essential model;
+4. CMOF as EMOF plus selected UML/MOF constructs and CMOF Reflection.
+
+Implementers SHALL NOT treat MOF Class as a vocabulary unrelated to UML Class.
+
+### 5.3 What MOF is and is not
+MOF SHALL provide abstract syntax and model-management reflection for metamodels and models.
+
+MOF Core SHALL NOT be specified as:
+- a general-purpose programming language;
+- a homoiconic evaluator;
+- a replacement for CLOS MOP.
+
+MOF Core MAY include operations on reflective objects (get/set, create, extent query). Those operations are model-management operations, not an M1 evaluation calculus.
+
+---
+
+## 6. Structural requirements
+
+### 6.1 MOF (common to EMOF and CMOF)
+**MOF-S-1** MOF SHALL be expressible in MOF (meta-circular M3).  
+**MOF-S-2** MOF SHALL define or reuse classifiers sufficient to represent Class, Property, Operation, Parameter, Package, DataType, Enumeration, and Multiplicity.  
+**MOF-S-3** MOF SHALL provide Reflection (Clause 7).  
+**MOF-S-4** MOF SHALL provide Identifiers for objects whose identity must not depend on mutable feature values.  
+**MOF-S-5** MOF SHALL provide Extents as membership spaces for repository objects.  
+**MOF-S-6** MOF SHALL provide a generic Tag extension mechanism.  
+**MOF-S-7** MOF SHALL define Factory operations for creating instances of packaged types.  
+**MOF-S-8** MOF-based models SHALL be interchangeable using XMI.  
+**MOF-S-9** MOF Core SHALL NOT define an evaluator for arbitrary M1 behavior.
+
+### 6.2 EMOF
+**EMOF-1** An EMOF implementation SHALL support the EMOF merged model and EMOF constraints published with OMG MOF.  
+**EMOF-2** EMOF SHALL represent bidirectional relationships as Properties with opposites.  
+**EMOF-3** EMOF SHALL NOT require first-class Association or Link.  
+**EMOF-4** EMOF SHOULD map directly to object-oriented APIs and to XMI.
+
+### 6.3 CMOF
+**CMOF-1** A CMOF implementation SHALL implement all EMOF requirements.  
+**CMOF-2** CMOF SHALL support Association as a first-class classifier.  
+**CMOF-3** CMOF SHALL support Link as the reflective instance of an Association.  
+**CMOF-4** CMOF SHALL support the CMOF reflection and constraint set published with OMG MOF.  
+**CMOF-5** UML-scale metamodels (including UML itself) SHALL be treated as CMOF-level unless a documented EMOF subset is used.
+
+### 6.4 Adjacent M2 languages
+**M2-1** UML, UAF, SysML profiles, and similar languages SHALL be classified as M2 when defined in MOF.  
+**M2-2** DoDAF SHALL be cited only as lineage to UAF, not as a MOF compliance level.  
+**M2-3** A “generalized architecture framework” SHALL NOT be treated as an OMG MOF artifact unless separately standardized.
+
+---
+
+## 7. Reflection, identity, and repository interfaces
+
+### 7.1 Target of reflection
+Reflection SHALL apply to model structure (classifiers, features, values, links, extents).
+
+Reflection SHALL NOT be specified as a protocol for changing host-language dispatch, slot storage layout, or method combination.
+
+### 7.2 Element and Object (EMOF and CMOF)
+A repository SHALL provide the following capabilities, with names aligned to OMG MOF where implemented:
+
+| ID | Capability | Meaning |
+|---|---|---|
+| REF-1 | `getMetaClass()` | Return the Class that classifies the element |
+| REF-2 | `container()` | Return the owning element, or none |
+| REF-3 | Feature get | Read a named or meta-described property |
+| REF-4 | Feature set | Write a named or meta-described property, respecting multiplicity and uniqueness |
+| REF-5 | Object equality | Identity for Class instances; value equality for DataType instances |
+
+**REF-6** Every modeled element SHALL be an instance of its metaclass.  
+**REF-7** Cyclic containment created by reflective mutation SHALL be rejected.
+
+### 7.3 Factory
+| ID | Capability |
+|---|---|
+| FAC-1 | Create an instance of a Class in a Package |
+| FAC-2 | Create a DataType value from a string where the type permits |
+
+### 7.4 Extent and Identifiers
+| ID | Capability |
+|---|---|
+| EXT-1 | Enumerate elements of an extent |
+| EXT-2 | Optionally include contained elements when querying an extent |
+| EXT-3 | Support URI-based extents where models are location-addressable |
+| ID-1 | Assign or preserve identifiers that survive feature edits |
+| ID-2 | Preserve identifiers across XMI round-trips when the XMI production rule includes them |
+
+**EXT-4** An object MAY belong to zero or more extents.
+
+### 7.5 CMOF Link
+**LNK-1** A CMOF repository SHALL represent association instances as Links.  
+**LNK-2** Reflective navigation across an Association SHALL be consistent with Link membership and opposite ends.
+
+### 7.6 Tags
+**TAG-1** A repository SHALL allow Tags to be attached to elements without altering the metamodel.
+
+---
+
+## 8. Interchange
+
+**XMI-1** Exported models SHALL conform to the XMI specification applicable to the metamodel.  
+**XMI-2** `MOF.xmi` / `emof.xmi` / `cmof.xmi` SHALL be treated as machine-readable definitions of MOF, not as an XML Schema that validates arbitrary M2 models.  
+**XMI-3** Interchange-Only implementations SHALL round-trip identifiers and containment required by the cited XMI rules.  
+**XMI-4** Validation SHALL use: (a) XMI well-formedness, (b) metamodel constraints (including published EMOF/CMOF OCL), (c) instance-of consistency to the cited metamodel.
+
+---
+
+## 9. Non-functional requirements
+
+**NF-1 Consistency.** Every M1 element SHALL instantiate an M2 classifier; every M2 classifier SHALL instantiate an M3 (MOF) classifier.  
+**NF-2 Interoperability.** Shared models SHALL use XMI as the default interchange encoding.  
+**NF-3 Traceability.** Tools SHALL preserve or reconstruct M3→M2→M1 classification.  
+**NF-4 Stability.** Identifiers used for cross-reference SHALL be stable under non-identity-changing edits.  
+**NF-5 Explicit level.** APIs and files SHALL declare EMOF or CMOF compliance.
+
+---
+
+## 10. Correspondence to Lisp / CLOS MOP (informative)
+
+### 10.1 Allowed correspondences
+| MOF | CLOS MOP |
+|---|---|
+| Self-description of MOF in MOF | CLOS defined with CLOS |
+| Class | class metaobject |
+| Property | slot-definition |
+| Operation | generic-function plus methods |
+| Package | package |
+| Reflection get/set / factory | introspection plus `make-instance` protocol |
+| Tag | implementation-defined annotation |
+
+### 10.2 Forbidden equivalences
+The following SHALL NOT be treated as requirements or as identities:
+- MOF XMI = Lisp s-expression evaluation;
+- MOF Association = CLOS method;
+- Extent = CLOS class;
+- MOF reflection = changing generic-function dispatch or method combination;
+- Loading `MOF.xmi` into an LLM = obtaining a MOP runtime.
+
+### 10.3 Informative slogan
+MOF is a standardized, XMI-serializable metaobject protocol for models.  
+CLOS MOP is a metaobject protocol for a running language.  
+They share reification and reflection. They do not share evaluation.
+
+---
+
+## 11. Verification
+
+### 11.1 Metamodel compliance
+A metamodel is compliant when all of the following hold:
+1. It is expressed in EMOF or CMOF as declared.
+2. It satisfies the corresponding OMG EMOF or CMOF constraints.
+3. Its XMI encoding satisfies Clause 8.
+4. Every classifier is reachable from a Package and classified by MOF.
+
+### 11.2 Repository compliance
+A repository is compliant when all of the following hold:
+1. Declared class (Clause 2.2) matches implemented capabilities.
+2. Clause 7 operations behave as specified for that class.
+3. Identifiers and extents satisfy 7.4.
+4. CMOF class additionally satisfies 7.5.
+5. Reflective mutation cannot create illegal containment (REF-7).
+
+### 11.3 LLM and schema-grounding use
+**AI-1** `MOF.xmi` MAY be used as vocabulary grounding for language models.  
+**AI-2** A language model SHALL NOT be claimed to implement MOF reflection unless a repository or evaluator implements Clauses 7–8 and the model is only an interface to that repository.
+
+---
+
+## 12. Implementation notes (informative)
+
+- Bind live systems to OMG MOF 2.5.1 Clauses 9–15 and the published `EMOFConstraints.ocl` / `CMOFConstraints.ocl`.
+- EMF/Ecore is a practical EMOF-aligned stack. CMOF associations and links require additional mapping or a CMOF implementation.
+- UAF tooling consumes a MOF-based M2 (domain metamodel and/or profile). UAF does not replace MOF.
+- Adjacent executable specifications (OCL evaluation, QVT, MOFM2T) may operate *on* MOF models without becoming part of MOF Core.
+
+---
+
+## 13. Requirement index
+
+| ID | Clause | Level |
+|---|---|---|
+| MOF-S-1 … MOF-S-9 | 6.1 | EMOF and CMOF |
+| EMOF-1 … EMOF-4 | 6.2 | EMOF |
+| CMOF-1 … CMOF-5 | 6.3 | CMOF |
+| M2-1 … M2-3 | 6.4 | All |
+| REF-1 … REF-7 | 7.2 | EMOF and CMOF |
+| FAC-1 … FAC-2 | 7.3 | EMOF and CMOF |
+| EXT-1 … EXT-4, ID-1 … ID-2 | 7.4 | EMOF and CMOF |
+| LNK-1 … LNK-2 | 7.5 | CMOF |
+| TAG-1 | 7.6 | EMOF and CMOF |
+| XMI-1 … XMI-4 | 8 | All classes |
+| NF-1 … NF-5 | 9 | All classes |
+| AI-1 … AI-2 | 11.3 | Optional |
+
+---
+
