@@ -1,5 +1,9 @@
 FROM ZERO TO main()  —  BOOTLOADER FUNDAMENTALS
+
+005.3  — Software engineering (linker scripts, build pipeline)
 621.39 computer hardware
+004.22 — Firmware / low-level software
+004.25 — Operating system internals (reset vectors, startup)
 
 Cortex-M  |  flash layout from the referenced guide
 
