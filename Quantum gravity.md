@@ -196,7 +196,7 @@ $$
 
 The equation is timeless (the “problem of time”) and is ill-defined without a regularization.
 
-### 5. Leading candidate theories mentioned in the thread
+### 5. Leading candidate theories
 
 **Loop quantum gravity – discrete area spectrum**
 
