@@ -1,4 +1,11 @@
 # TYPE Earth = Living_Process
+- 508 — Natural History / Earth System Science
+- 551.6 — Climatology (energy balance, albedo, greenhouse factor)
+- 551.48 — Hydrology (water budget equations)
+- 577 — Ecology (biosphere feedback loops)
+- 574.5 — Biogeochemical cycles (C, N, P, H2O)
+- 113 — Cosmology / philosophy of nature (Earth-as-organism metaphor)
+
 
 ## RELATION
 ```
