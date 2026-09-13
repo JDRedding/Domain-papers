@@ -1,0 +1,220 @@
+# Quantum gravity
+
+Quantum gravity is not a single theory but a landscape of incompatible research programs, all trying to reconcile general relativity’s smooth spacetime with quantum mechanics’ fluctuating fields at the Planck scale ($\ell_{\mathrm{P}} \approx 1.6 \times 10^{-35}\,\mathrm{m}$). None currently has empirical confirmation.
+
+### Quantum gravity fix
+
+- **General relativity (GR)** treats gravity as curvature of a smooth manifold.
+- **Quantum mechanics / quantum field theory (QM/QFT)** treats fields as operators with fluctuations, uncertainty, and discrete excitations.
+
+At extreme regimes—black-hole interiors and early-universe densities—both frameworks must be applied at once, and the classical manifold picture breaks down. Quantum fluctuations of geometry become unavoidable.
+
+The Planck scale is the natural domain of this breakdown:
+
+$$
+\ell_{\mathrm{P}} = \sqrt{\frac{\hbar G}{c^{3}}} \approx 1.6 \times 10^{-35}\,\mathrm{m}
+$$
+
+This is roughly $10^{15}$ times beyond the LHC’s reach, making direct experiments impossible with foreseeable technology.
+
+### Why GR and QM clash
+
+- **Non-renormalizability:** Treating gravity as a spin-2 quantum field produces uncontrollable divergences at high loop order.
+- **Background dependence:** QFT assumes a fixed spacetime background; GR says spacetime itself is dynamical.
+- **Singularities:** GR predicts breakdown points (the Big Bang, black-hole centers) where curvature diverges.
+- **Problem of time:** Canonical quantization (the Wheeler–DeWitt equation) yields a “timeless” constraint inconsistent with ordinary quantum time evolution.
+
+The picture of “turbulent quantum foam” matches mainstream expectations: at $\ell_{\mathrm{P}}$, geometry is no longer smooth but fluctuates violently. This intuition is shared across many programs, though each formalizes it differently.
+
+### Major quantum-gravity programs
+
+The modern landscape is broader than the two headline approaches (string theory and loop quantum gravity). Comparative surveys list 14+ active programs that differ in their assumptions about spacetime, degrees of freedom, and unification.
+
+#### 1. String / M-theory
+Replaces point particles with one-dimensional strings; the graviton appears as a vibration mode. Naturally unifies all forces and lives in higher dimensions, using dualities and holography (AdS/CFT). No distinguishing empirical predictions yet.
+
+#### 2. Loop quantum gravity (LQG) / spin foams
+Background-independent quantization of geometry. Predicts discrete spectra for area and volume. Dynamics via the Hamiltonian constraint remain incomplete; the problem of time persists.
+
+#### 3. Asymptotic safety
+Gravity becomes well-defined at high energies via a UV fixed point. In principle predictive and testable through running couplings and cosmology.
+
+#### 4. Causal dynamical triangulations (CDT)
+Spacetime emerges from a sum over discrete causal building blocks. Exhibits dimensional reduction at small scales.
+
+#### 5. Causal set theory
+Spacetime is a discrete partially ordered set. Treats causality as fundamental.
+
+#### 6. Holographic / entanglement-based approaches
+Spacetime emerges from quantum entanglement (ER = EPR, tensor networks). Closely tied to AdS/CFT.
+
+#### 7. Twistor theory / amplituhedron
+Reformulates spacetime and scattering amplitudes in geometric terms. Highly successful for QFT calculations, with partial extensions to gravity.
+
+#### 8. Group field theory (GFT)
+A field theory on group manifolds whose Feynman diagrams generate spin-foam histories. Yields condensate cosmology models.
+
+#### 9. Noncommutative geometry (Connes)
+Spacetime coordinates become operators with a noncommuting algebra. Links to particle-physics unification.
+
+### Why experiments are so hard
+
+All programs face the same obstacle: the Planck scale is unreachable. That is why “no distinguishing empirical confirmation” is the recurring verdict across the landscape.
+
+Indirect tests that *might* be possible include:
+
+- primordial gravitational waves
+- black-hole evaporation signatures
+- running of the spectral dimension
+- modified dispersion relations
+- higher-derivative gravitational-wave modes
+
+None have yet produced decisive evidence.
+
+### The deeper structural insight
+
+A recurring meta-point in recent surveys is:
+
+> The most ambitious theories are the least testable; the most testable are the least ambitious.
+
+That tension defines the field today.
+
+## Formula and notation
+
+These are the equations that appear, or are immediately implied. None of them yet constitute a complete, experimentally confirmed theory of quantum gravity.
+
+### 1. Einstein field equations (general relativity)
+
+The form shown in the image is the vacuum-plus-matter version without an explicit cosmological constant:
+
+$$
+G_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+
+The complete textbook form is
+
+$$
+G_{\mu\nu}+\Lambda g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}
+$$
+
+or, written out in terms of curvature,
+
+$$
+R_{\mu\nu}-\frac12 R g_{\mu\nu}+\Lambda g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}.
+$$
+
+**Notation**
+- $G_{\mu\nu}$: Einstein tensor (geometry of spacetime)
+- $R_{\mu\nu}$: Ricci curvature tensor
+- $R=g^{\mu\nu}R_{\mu\nu}$: Ricci scalar
+- $g_{\mu\nu}$: metric tensor (the gravitational field itself)
+- $T_{\mu\nu}$: stress-energy tensor (matter and energy)
+- $\Lambda$: cosmological constant
+- $G$: Newton’s gravitational constant
+- $c$: speed of light
+- Greek indices $\mu,\nu=0,1,2,3$ run over spacetime coordinates
+
+The Einstein tensor is defined by
+
+$$
+G_{\mu\nu}=R_{\mu\nu}-\frac12 R g_{\mu\nu}.
+$$
+
+These ten coupled nonlinear PDEs determine how energy-momentum curves spacetime.
+
+### 2. Schrödinger equation (non-relativistic quantum mechanics)
+
+The image shows the free-particle time-dependent equation (potential $V=0$):
+
+$$
+i\hbar\frac{\partial\psi}{\partial t}=-\frac{\hbar^2}{2m}\nabla^2\psi.
+$$
+
+The general time-dependent form is
+
+$$
+i\hbar\frac{\partial\Psi(\mathbf{r},t)}{\partial t}=\hat H\Psi(\mathbf{r},t)=\left[-\frac{\hbar^2}{2m}\nabla^2+V(\mathbf{r},t)\right]\Psi(\mathbf{r},t).
+$$
+
+When the potential is time-independent one obtains the stationary (time-independent) equation
+
+$$
+\hat H\psi=E\psi\qquad\text{i.e.}\qquad\left[-\frac{\hbar^2}{2m}\nabla^2+V(\mathbf{r})\right]\psi=E\psi.
+$$
+
+**Notation**
+- $\Psi(\mathbf{r},t)$ or $\psi$: complex wave function
+- $\hbar=h/2\pi$: reduced Planck constant
+- $m$: particle mass
+- $\nabla^2$: Laplacian
+- $\hat H$: Hamiltonian operator
+- $E$: energy eigenvalue
+- $V$: potential energy
+
+$|\Psi|^2$ is the probability density.
+
+### 3. Planck length (the scale at which the two theories collide)
+
+Exactly as:
+
+$$
+\ell_P=\sqrt{\frac{\hbar G}{c^3}}\approx1.616\times10^{-35}\,\mathrm{m}.
+$$
+
+Related Planck units that appear in the same discussion:
+
+$$
+m_P=\sqrt{\frac{\hbar c}{G}},\qquad
+t_P=\sqrt{\frac{\hbar G}{c^5}},\qquad
+E_P=m_Pc^2=\sqrt{\frac{\hbar c^5}{G}}.
+$$
+
+At distances $\sim\ell_P$ the metric fluctuations become comparable to the metric itself (“quantum foam”).
+
+### 4. Equations that express the incompatibility
+
+**Heisenberg uncertainty principle** (the source of the fluctuations that GR cannot accommodate):
+
+$$
+\Delta x\,\Delta p\ge\frac{\hbar}{2},\qquad
+\Delta E\,\Delta t\ge\frac{\hbar}{2}.
+$$
+
+If the stress-energy tensor $T_{\mu\nu}$ fluctuates, the Einstein tensor $G_{\mu\nu}$ must fluctuate, yet GR assumes a smooth classical manifold.
+
+**Wheeler–DeWitt equation** (the most direct attempt to write a “Schrödinger equation for the universe”):
+
+$$
+\hat{\mathcal H}\Psi[g_{ij}]=0,
+$$
+
+where $\hat{\mathcal H}$ is the quantized Hamiltonian constraint of general relativity and $\Psi[g_{ij}]$ is a wave functional on the space of 3-metrics. Explicitly (in the ADM formalism, schematic form)
+
+$$
+\left(-16\pi G\hbar^2 G_{ijkl}\frac{\delta^2}{\delta g_{ij}\delta g_{kl}}-\frac{\sqrt{g}}{16\pi G}{}^{(3)}R\right)\Psi[g]=0.
+$$
+
+The equation is timeless (the “problem of time”) and is ill-defined without a regularization.
+
+### 5. Leading candidate theories mentioned in the thread
+
+**Loop quantum gravity – discrete area spectrum**
+
+A surface punctured by spin-network edges with spins $j_i$ has area eigenvalues
+
+$$
+A=8\pi\gamma\ell_P^2\sum_i\sqrt{j_i(j_i+1)},
+$$
+
+where $\gamma$ is the Barbero–Immirzi parameter (a dimensionless constant of order 1). Space itself is therefore quantized in Planck-scale units.
+
+**String theory – graviton as a string vibration**
+
+The closed-string mass-shell condition (bosonic string, schematic) reads
+
+$$
+M^2=\frac{4}{\alpha'}(N+\tilde N-2),
+$$
+
+where $N,\tilde N$ are number operators for left- and right-moving oscillators and $\alpha'$ is the Regge slope ($\ell_s^2=\alpha'$). The massless level $N=\tilde N=1$ contains a symmetric traceless tensor that is identified with the graviton.
+
