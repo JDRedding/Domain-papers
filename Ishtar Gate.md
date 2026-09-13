@@ -38,7 +38,7 @@ Beyond its functional role as a city gate, the Ishtar Gate symbolized Babylon’
 German archaeologist Robert Koldewey excavated the gate in the early 20th century. Portions of the Ishtar Gate and the Processional Way were transported to Berlin, where a reconstructed version is now prominently displayed at the Pergamon Museum. Additional fragments remain in Iraq, reflecting both the gate’s historical significance and the challenges of preserving ancient heritage.
 
 ## Quantitative facts
-The Ishtar Gate is historical and architectural with the following quantitative facts and associated notation that do appear are:
+The Ishtar Gate is historical and architectural with the following quantitative facts and associated notation that appear:
 
 ### **Date**
 
