@@ -241,6 +241,25 @@ It is the number of times you can cut n in half before the pieces have size 1.
 
 Same pattern appears in heaps, FFT, and many recurrence trees.
 
+Merge sort recurrence:
+
+$$
+T(n) = \Theta(n \log n)
+$$
+
+Reason:
+
+- Recursion depth = $\log_2 n$  
+- Work per level = $\Theta(n)$
+
+Thus:
+
+$$
+T(n) = \Theta(n \log n)
+$$
+
+Same pattern appears in heaps, FFT, and recurrence trees.
+
 ## BITS AND INFORMATION
 Binary strings of length $w$:
 
