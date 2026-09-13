@@ -1,5 +1,5 @@
-# CORIOLIS EFFECT — 1835
-Gaspard-Gustave de Coriolis
+# CORIOLIS EFFECT 
+Gaspard-Gustave de Coriolis — 1835
 
 Fictitious acceleration in a rotating frame:
 ```
