@@ -464,7 +464,7 @@ O9 Emergence      -> Infinity (shared)
 ```
 
 Active Sequences in the 36-card projection: Algebra, Geometry, Analysis, Logic.  
-Deferred Sequences (v1.0, not in this deck): Topology, Computation, Probability, Category, Systems.
+Deferred Sequences (v0.0, not in this deck): Topology, Computation, Probability, Category, Systems.
 
 ---
 
