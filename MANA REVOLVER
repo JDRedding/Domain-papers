@@ -1,0 +1,92 @@
+MANA REVOLVER
+TYPE Hybrid firearm + melee
+Revolver frame with detachable ethereal crystal
+
+VARIABLES 
+Frame: Wood grip, steel receiver 
+Barrel: Short, open-top, no conventional cylinder visible
+Crystal: Long mana energy source, pointed tip
+Mount: Sliding rail / fork under barrel for attachment
+State: Assembled (blade locked) or separated (gun + loose blade)
+
+FUNDAMENTALS
+Revolver mechanics remain functional
+Crystal acts as magical standalone weapon
+Energy crystal appears solid and glowing, not a projectile
+Design treats magic like discovered material (mana)
+Intended for fantasy / tabletop / concept art use
+
+Multiple orthographic views shown: assembled, blade only, gun only
+
+GENERIC RPG / BOARDGAME COMBAT MATH
+HYBRID WEAPON EXAMPLE (revolver )
+Ranged mode uses firearm to-hit + formula.  
+Melee mode uses blade to-hit + formula.  
+Switching modes is usually a free or swift action (no extra roll).
+
+NOTATION
+dS     = single die with S faces (d20, d6, d100)
+NdS    = N dice of S faces
+TN     = target number
+mod    = sum of all bonuses/penalties
+P(x)   = probability of event x
+E[X]   = expected value of X
+AC     = armor class / defense value
+HP     = hit points
+res    = resource (ammo, mana, charges)
+
+DICE AVERAGES
+Single die:  
+\[ E[dS] = \frac{S+1}{2} \]
+
+Multiple dice:  
+\[ E[NdS] = N \times \frac{S+1}{2} \]
+
+D20 TO-HIT (most common RPG)
+Attack succeeds if  
+\[ d20 + mod \ge AC \]
+
+Natural 1 always miss, natural 20 always hit (common house rule).
+
+Hit probability (ignoring auto-fail/success):  
+\[ P_{hit} = \frac{21 - (AC - mod)}{20} \]  
+Clamp to \[ 0.05 \le P_{hit} \le 0.95 \]
+
+EXPECTED DAMAGE
+\[ E[D] = P_{hit} \times (E[weapon\ dice] + dmg\ mod) \]
+
+With criticals (confirm on 20, extra dice or multiplier):  
+\[ E[D] = P_{hit} \times base + P_{crit} \times extra \]
+
+PERCENTILE / d100 SYSTEM
+Success if  
+\[ d100 \le skill \]
+
+\[ P_{success} = \frac{skill}{100} \]
+
+DICE POOL (boardgame / narrative systems)
+Each die succeeds on result \(\ge T\).
+
+Success chance per die:  
+\[ p = \frac{S - T + 1}{S} \]
+
+Expected successes:  
+\[ E[successes] = N \times p \]
+
+At least one success:  
+\[ P(\ge 1) = 1 - (1-p)^N \]
+
+OPPOSED ROLLS
+A beats B if  
+\[ roll_A + mod_A > roll_B + mod_B \]
+
+RESOURCE CHECK (ammo / mana / charges)
+Action legal only if  
+\[ res_{current} - cost \ge 0 \]
+
+After use:  
+\[ res_{new} = res_{current} - cost \]
+
+Future work
+- Mana Crystal Mechanics
+- Steampunk Aesthetics
