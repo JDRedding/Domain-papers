@@ -31,7 +31,7 @@ Characteristics:
 
 ## Humor and Satire Notation
 
-There are no standard scientific equations for American humor or satire. Those are cultural practices, not physical systems. What follows is the usual notation people invent when they try to write humor as a formula, plus a few satirical “American-style” equations in the spirit of tall tales and *The Onion*.
+Here are some suggested standard relational equations for American humor or satire. These are cultural practices and systems. What follows is the usual notation for humor as a formula, plus a few satirical “American-style” equations in the spirit of tall tales and *The Onion*.
 
 | Symbol | Meaning |
 |---|---|
