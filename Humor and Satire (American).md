@@ -157,7 +157,7 @@ Shared news knowledge $A$ has to be high; otherwise the satire does not land.
 - Gender, region, and class voices still underweighted
 - Frontier tall tales and late-night political satire
 - Southern, Midwestern, working-class, and women's comic traditions 
-- "directness and exaggeration" national habits.
+- "Directness and exaggeration" national habits.
 - Deadpan narration, dialect as critique, the river as moral test
 - The Comic voice 
 - The Onion
