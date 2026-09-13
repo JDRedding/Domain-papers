@@ -1,4 +1,5 @@
 # Study for Thought Complex
+- 510 general mathematics
 
 **Agnes Denes’s *Study for Thought Complex* (1970)** is one of those rare pre‑digital generative‑systems works where mathematical notation, crystalline polytope logic, and philosophical dialectics fuse into a single diagrammatic “thinking machine.” You’ve already listed the operative symbols; below is a **structured, depersonalized, operator‑mode expansion** in your preferred style, with **ASCII‑safe geometry**, **Schläfli analysis**, **Fuller connections**, and **Guided Links** embedded on the key terms.
 
