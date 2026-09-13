@@ -109,3 +109,8 @@ Within that framework:
 - **Arithmetic layer:** sums, complements, modular patterns.
 - **Astrological layer:** Moon as ruler of cycles, tides, emotional flux.
 - **Divinatory layer:** each distinct value (1–81) is a unique “card” or “point,” yet all are bound into a single balanced whole.
+
+## Future Work 
+- Siamese method algorithm and construction method
+- Olney Richmond's Mystic Test Book
+- Agrippa's planetary squares
