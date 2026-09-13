@@ -88,7 +88,7 @@ Private records (email, Slack, notebook) get a private time $t^{\mathrm{priv}}$,
 Define the public existence time of $P$ for agent $i$:
 
 $$
-t_i^{\mathrm{pub}}(P) \;=\; \inf\bigl\{\tau(A): A \text{ is public, inspectable, and about } P \text{ from } i\bigr\}
+t_i^{\mathrm{pub}}(P) \;=\; \inf\{\tau(A): A \text{ is public, inspectable, and about } P \text{ from } i\}
 $$
 
 If no such artifact exists,
@@ -172,7 +172,7 @@ Only valid artifacts enter the infimum:
 $$
 t_i^{\mathrm{pub}}(P)
 \;=\;
-\inf\bigl\{\tau(A): \mathrm{Valid}(A),\ \mathrm{About}(A,P),\ \mathrm{Author}(A)=i\bigr\}.
+\inf\{\tau(A): \mathrm{Valid}(A),\ \mathrm{About}(A,P),\ \mathrm{Author}(A)=i\}.
 $$
 
 A flood of low-specificity posts can be modeled as increasing audit cost. If $N$ is the number of public items and $Q$ their mean specificity,
@@ -220,13 +220,13 @@ Absorption is the failure mode the public clock is meant to block.
 A third party can reconstruct public knowledge at time $t$ by
 
 $$
-K(t) \;=\; \bigl\{c(A): \mathrm{Valid}(A),\ \tau(A) \le t\bigr\}.
+K(t) \;=\; \{c(A): \mathrm{Valid}(A),\ \tau(A) \le t\}.
 $$
 
 They cannot reconstruct
 
 $$
-K^{\mathrm{priv}}(t) \;=\; \bigl\{\text{internal notes with } t^{\mathrm{priv}} \le t\bigr\}
+K^{\mathrm{priv}}(t) \;=\; \{\text{internal notes with } t^{\mathrm{priv}} \le t\}
 $$
 
 because those objects are not independently checkable.
@@ -234,7 +234,7 @@ because those objects are not independently checkable.
 So the only surviving audit trail is
 
 $$
-\mathrm{Record}(P) \;=\; \bigl(K(t)\bigr)_{t \ge 0}, 
+\mathrm{Record}(P) \;=\; (K(t))_{t \ge 0}, 
 $$
 
 not the private filtration.
