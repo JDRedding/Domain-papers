@@ -1,4 +1,5 @@
 # SCP Group of Interest (GoI)
+- 823 fiction analysis
 - 306.4 subcultures
 - 398.2 myth/folklore
 
