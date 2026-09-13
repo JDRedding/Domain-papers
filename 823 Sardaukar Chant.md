@@ -1,4 +1,5 @@
 # The Sardaukar Chant
+- 823 fiction analysis
 
 The core track is the Sardaukar war-ritual throat-chant from the Salusa Secundus scene in *Dune* (2021). Extended versions circulate widely as 1-hour loops and fan cuts drawn from Hans Zimmer’s official score. They expand or repeat the original material; they do not add new canonical content. The chant does not convey information. It erases individuality, fuses the cohort, binds them through shared pain, readies them for killing, invokes Imperial authority, and frightens anyone who hears it. The grammar is ritual machinery.
 
