@@ -1,5 +1,6 @@
 # CIRCUIT TRANSIENTS  
-- |  current i(t) after switch closes (DC source)
+|  current i(t) after switch closes (DC source)
+  
 The lumped analyusis of **current** $i(t)$ after a DC source is switched in at $t=0$.
 
 ## RULE OF THUMB
