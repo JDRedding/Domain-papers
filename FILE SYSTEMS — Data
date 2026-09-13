@@ -1,4 +1,9 @@
 FILE SYSTEMS — Data Is Stored, Organized, and Managed
+005.43 — File Systems / Data Storage Structures
+004.16 — Operating systems (Windows, Linux, macOS)
+621.39 — Computer hardware (storage devices, SSD/HDD behavior)
+005.4 — Data structures (allocation tables, extents)
+005.7 — Data security (permissions, encryption)
 
 CORE IDEAS
 Organize  — directory trees, metadata, allocation maps
