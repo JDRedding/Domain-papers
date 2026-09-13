@@ -1,0 +1,31 @@
+EULER IDENTITY (COMPOUNDING LIMIT)
+
+e^{i\pi} = -1
+
+Special case of
+e^{i\theta} = cos\theta + i sin\theta
+at \theta = \pi
+
+Limit that produces it
+lim (n\to\infty) (1 + i\pi/n)^n = e^{i\pi}
+
+TYPES AND VARIABLES
+n     positive integer (steps \to \infty)
+\theta real angle in radians (\theta=\pi)
+i     imaginary unit, i^{2} = -1
+z     complex number a + bi
+1 + i\pi/n   one infinitesimal rotation factor
+
+GEOMETRIC MECHANISM
+Start at 1 + 0i
+Each multiply by (1 + i\pi/n) rotates by \approx \pi/n
+n steps accumulate exactly \pi radians (half-turn)
+Polygonal chain \to unit semicircle from +1 to -1
+
+FINITE-n SNAPSHOTS
+n=2    overshoots, ~3.18 short of -1
+n=3    still coarse, ~2.37 short
+n=20   close, 0.28 short
+n=60   0.086 short and tightening
+
+In the limit the discrete path becomes the smooth arc and the identity appears.
