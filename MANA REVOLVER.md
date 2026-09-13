@@ -9,7 +9,7 @@ Revolver frame with detachable ethereal crystal.
 - **Barrel:** Short, open-top, no conventional cylinder visible  
 - **Crystal:** Long mana energy source, pointed tip  
 - **Mount:** Sliding rail / fork under barrel for attachment  
-- **State:** Assembled (blade locked) or separated (gun + loose blade)
+- **State:** Assembled (locked) or separated (gun + loose)
 
 ## Fundamentals
 
