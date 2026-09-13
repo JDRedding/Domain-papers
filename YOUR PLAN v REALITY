@@ -1,0 +1,46 @@
+"YOUR PLAN" v. "REALITY" 
+
+FUNDAMENTALS
+Simple straight-line "YOUR PLAN" bike ride to a finish flag with
+the complex, obstacle-filled "REALITY" of hills, water, ladders,
+and detours.
+
+A straight-line plan has vanishing geodesic curvature:
+kappa_g = 0
+
+A general plane curve r(s) has geodesic curvature
+kappa_g(s) = | r'(s) x r''(s) | / | r'(s) |^3
+
+The extra "effort" of reality is the integral of |kappa_g(s)| ds
+along the actual path.
+
+EQUATIONS
+
+YOUR PLAN (idealized)
+
+y_plan(x) = 0
+
+or parametrically
+
+r_plan(t) = ( t , 0 )          t in [0, L]
+
+REALITY (simple analytic model)
+
+y_real(x) = A * sin(k1 * x)
+          B * sin(k2 * x)
+          C * exp( -(x - x0)^2 / sigma^2 )
+
+(plus optional piecewise jumps for cliffs, water, tunnels)
+
+NOTATION AND TYPES
+
+x          : horizontal coordinate          (real scalar)
+t          : path parameter                 (real scalar)
+L          : total planned length           (positive real)
+y(x)       : height function                (real-valued function of x)
+r(t)       : position vector                (R^2-valued function of t)
+A, B, C    : amplitude coefficients         (real scalars)
+k1, k2     : spatial frequencies            (real scalars)
+x0         : obstacle center                (real scalar)
+sigma      : obstacle width                 (positive real)
+kappa_g    : geodesic curvature             (real-valued function of arc-length s)
