@@ -1,4 +1,7 @@
 # The engineer model 😆
+- 818 — American Humor & Satire
+- 510 — General Mathematics
+
 An engineer as a black-box mapping from two non-negative inputs to a pair of outputs:
 
 $$
