@@ -127,7 +127,7 @@ $$
 
 where $C$ is the social or political target. Pure entertainment comedy sets $C \approx 0$; Juvenalian satire makes $C$ large.
 
-## American tall-tale / satire formulas (playful, not real math)
+## American tall-tale / satire formulas (neo-mathematical)
 
 **Tall tale inflation**
 
