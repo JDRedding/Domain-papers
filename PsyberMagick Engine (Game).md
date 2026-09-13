@@ -1,0 +1,296 @@
+# PsyberMagick Engine  
+*A compact Chaos Magick system*
+
+Nothing is true. Everything is permitted.  
+You have a pool of **Gnosis Charge** (GC). You spend it to enchant. When it is empty, the psychic censor is back on duty until you recover.
+
+That is the whole engine.
+
+---
+
+## Core Loop
+
+You are not a fixed self with a fixed spell list.  
+You are a **multimind**: a temporary cluster of processes that can adopt a paradigm, fire an intent, and drop the mask.
+
+1. Encode an intent (sigil, word, gesture, servitor-call).  
+2. Enter **gnosis** long enough to spend GC.  
+3. Release. Forget. Record the result later.
+
+When GC hits zero, you cannot enchant until you recover some.
+
+---
+
+## Gnosis Charge (the pool)
+
+- **Starting GC:** 8 + Will / Magic stat (or 10 if you use no stats)  
+- **Growth:** +2 GC per rank / level  
+
+**Optional flavors**
+
+- **Sorcerer / scholar of Chaos:** +2 starting GC ( Liber MMM discipline already paid)  
+- **Warrior-dabbler:** half pool (belief is a tool, not a vocation)  
+- **Paradigm specialist:** +1 GC while you are wearing one worldview; −1 while you switch mid-scene  
+
+Track one number. Do not track “prepared vs known” unless the table wants that theater.
+
+---
+
+## Casting = Enchantment
+
+Pay the listed cost. The effect happens. No slots required unless you use the optional Slot Overlay later.
+
+| Band        | Cost     | Typical effect                                      | Carroll feel                          |
+|-------------|----------|-----------------------------------------------------|---------------------------------------|
+| Cantrip     | 0 GC     | Tiny utility or 1d4                                 | Habit-sigil, indifferent vacuity      |
+| Lesser      | 1–2 GC   | 1d6–1d8, small buff, simple utility                 | Single-shot sigil                     |
+| Standard    | 3–4 GC   | 2d6–2d8, real control or heal                       | Charged glyph / short invocation      |
+| Greater     | 6–8 GC   | Area, strong control, fight-changer                 | Servitor burst / sideways time shove  |
+| High        | 10+ GC   | Scene-defining or desperate                         | Retroactive enchantment, Hyperwarp    |
+
+You cannot spend more GC than you have unless you **Overdraw** (below).
+
+**Optional roll:** Will + relevant skill vs a target number. Failure still spends the charge — the censor blinked, the coincidence did not.
+
+**Gnosis method (color, not extra math):**  
+Inhibitory (stillness, breath, death posture) or excitatory (dance, climax, laughter, shock). One-pointedness, then release. Method does not change the cost.
+
+---
+
+## Recovery
+
+- **Short rest** (10–30 min, no fighting): recover 1d4 + Will modifier GC (min 1). Banishing laugh or a page in the magical diary counts.  
+- **Long rest:** restore all GC. Sleep is a cheap death posture.  
+- **In combat (optional):** spend your action to empty the monologue and recover 1 GC.
+
+**Enchant long, divine short.** Do not refill by “predicting harder.”
+
+---
+
+## Overdraw (optional spice)
+
+Spend GC you do not have.
+
+- Each extra point: 1 fatigue **or** 1d4 damage (your flavor).  
+- After the fight: exhausted until a long rest.  
+- Fiction: you reached **sideways into imaginary time** and the multimind tore.
+
+Desperate nova is allowed. The fallacy of being collects the bill.
+
+---
+
+## Tiny Starter Enchantments
+
+Use as-is or as sigil templates. Names are masks; swap pantheon at will.
+
+- **Spark (1)** — 1d6 fire, short range. Letter-sigil burned at peak gnosis.  
+- **Mend (2)** — Heal 1d8. Spare-style flesh glyph.  
+- **Gust (2)** — Prone or push 10 ft. Chaosphere shove.  
+- **Ward (3)** — +2 AC or a save until your next turn. Banishing pentagram held one round.  
+- **Bolt (4)** — 2d8, or 1d8 to two targets.  
+- **Veil (3)** — Invisible until you attack or enchant again.  
+- **Burst (6)** — 2d6 to everyone in a small area.
+
+Invent on the fly with the cost table. Paradigm shift the dressing: Thelemic, pop-cult, spin-warp physics, made-up cult — wear it for the working, drop it after.
+
+---
+
+## Design Notes
+
+- One resource.  
+- Belief is a tool, not a creed.  
+- Recovery is predictable so players can plan the coincidence.  
+- Overdraw is drama without a second subsystem.  
+
+A whole campaign can run on pool + five bands + a handful of effects. Add servitors and imaginary time only when the table asks.
+
+---
+
+# Five Tiers of Enchantment
+
+Do not skip bands. A 7 GC working should feel clearly stronger than a 4 GC working.
+
+| Tier     | Cost    | Role             | Feel                                      |
+|----------|---------|------------------|-------------------------------------------|
+| Cantrip  | 0 GC    | Always-on tools  | Weak, reliable, never fight-winning       |
+| Lesser   | 1–2 GC  | Bread-and-butter | Frequent combat / utility sigils          |
+| Standard | 3–4 GC  | Real power       | Noticeable swing                          |
+| Greater  | 6–8 GC  | Set-piece        | Changes the encounter                     |
+| High     | 10+ GC  | Rare, costly     | Scene-defining, often retroactive         |
+
+### What each tier can do
+
+**Cantrip (0)**  
+Damage 1d4, one target, short range. Heal 1 HP or stabilize. Snuff a candle, spark a torch, tiny shove. Instant or 1 round. No area. Limit 1 per turn (indifferent vacuity still counts as a turn).
+
+**Lesser (1–2)**  
+1d6–1d8 damage or heal. Prone, brief disadvantage, lock/unlock, short message, small light. 1 minute or 1–2 rounds. Short–medium range. No area, or 5-ft splash.
+
+**Standard (3–4)**  
+2d6–2d8, or 1d8 to two targets. Heal 2d6–2d8 or strip one minor condition. Restrain, silence one target, wall a doorway. Invisibility until you strike, speak with animals, detect the improbable clearly. 1 minute or concentration. ~10-ft burst.
+
+**Greater (6–8)**  
+3d6–4d8 or solid area damage. 3d8 heal or strip a serious condition. Hold several foes, lasting barrier, brief dominate of a weak mind. Short flight, short teleport, restore a broken object. Minutes or the whole fight. Medium burst or a short wall/line.  
+*Fiction:* a named **servitor** spending itself, or a sideways tug on imaginary time.
+
+**High (10+)**  
+Fight-ending or multi-target devastation. Bring someone back from the brink; light mass heal. Collapse a roof, freeze a river, banish one foe. Long teleport, scry a known place, rewrite a short scene. Scene-long or until dawn.  
+Usually wants a short ritual, rare component, Overdraw, or **retroactive enchantment** (“it was already true in another slice of the Hyperwarp”).
+
+### Example workings by tier
+
+**Cantrips**  
+Spark — 1d4 fire, 30 ft  
+Glow — lantern-light 10 minutes  
+Nudge — push a small unattended object 5 ft  
+
+**Lesser**  
+Bolt (1) — 1d6 force  
+Mend Flesh (2) — heal 1d8  
+Trip Hex (2) — save or prone  
+Whisper (1) — one sentence to someone you can see  
+
+**Standard**  
+Fire Lance (4) — 2d8 fire, 60 ft  
+Restore (4) — heal 2d8 and end poison or fear  
+Bind (3) — restrain until they break free  
+Veil (3) — invisible until you attack or enchant again  
+
+**Greater**  
+Storm Burst (7) — 3d6 lightning, 15-ft area  
+Iron Ward (6) — +3 defense to one ally for the fight  
+Chain (8) — restrain two targets  
+Stride (6) — teleport 30 ft, including thin walls  
+
+**High**  
+Sunder (12) — wreck a portcullis, drop a balcony, or 6d8 to one huge target  
+Dawn Hands (10) — 4d8 to three allies  
+Exile (12) — banish one creature 1 minute on a hard save  
+Gate Step (15) — party-teleport across the dungeon (once per day, GM call) — a Hyperwarp stitch  
+
+### Quick design recipe
+
+Ask:
+
+1. How big? One target / small area / whole fight  
+2. How long? Instant → 1 minute → whole scene  
+3. How hard to undo? Easy save / hard save / no save  
+4. Help or end the problem? Help = lower tier. End it = higher.
+
+Then drop into the nearest band.
+
+**Cheap upgrades**  
++1 GC: extra target or +1d6  
++2 GC: double duration or small area  
++3 GC: ignore cover, or affect a stronger creature type  
+
+### Play advice
+
+Most fights: Lesser and Standard.  
+Greater: “I am spending the reserves.”  
+High: rare enough the table remembers the coincidence.
+
+---
+
+# Optional Slot Overlay  
+*(use instead of point-spend, not stacked on top unless you like double bookkeeping)*
+
+You do not spend GC one point at a time. You have a few **chaosphere rays** (slots) per band. Casting spends one ray of that band or a higher one.
+
+| Ray      | Casts                 | Rough power |
+|----------|-----------------------|-------------|
+| Cantrip  | Unlimited / 0-cost    | Tiny        |
+| Lesser   | 1–2 GC equivalent     | Common      |
+| Standard | 3–4 GC equivalent     | Strong      |
+| Greater  | 6–8 GC equivalent     | Big         |
+| High     | 10+ GC equivalent     | Rare        |
+
+Lower working in a higher ray: allowed.  
+Higher working in a lower ray: not allowed (unless Overcast).
+
+### Starting rays — full caster
+
+| Level | Lesser | Standard | Greater | High |
+|-------|--------|----------|---------|------|
+| 1     | 3      | —        | —       | —    |
+| 2     | 4      | —        | —       | —    |
+| 3     | 4      | 2        | —       | —    |
+| 4     | 4      | 3        | —       | —    |
+| 5     | 4      | 3        | 1       | —    |
+| 6     | 4      | 3        | 2       | —    |
+| 7     | 4      | 3        | 2       | 1    |
+| 8+    | 4      | 4        | 2       | 1    |
+
+**Half caster:** half slots, rounded down. No High until late.  
+**Cantrips:** always on; 1 per turn.
+
+### How it works
+
+Pick a known working → spend a matching (or higher) ray → effect happens.
+
+**Optional prep:** at dawn, mark which known workings are “ready.” Only ready ones fire, but a higher ray can still cast a ready lower working. (Paradigm locked for the day.)
+
+### Recovery
+
+- Short rest: recover 1 Lesser ray, **or** crack one unused higher ray into two lower.  
+- Long rest: all rays return.
+
+### Overcast
+
+No ray of the right band left:
+
+- Use a higher ray for a lower working (already allowed), or  
+- Cast anyway: 1 fatigue / 1d6 per missing band.
+
+Example: Standard with no Standard or Greater left → 1 fatigue.
+
+### Known workings
+
+Keep the list tiny.
+
+- Rank 1: 4 Lesser + 2 cantrips  
+- Each new rank: +1 working of a band you can cast  
+- Teacher, grimoire, spirit, or stolen egregore: +1 extra  
+
+8–12 workings already feel like a multimind with options.
+
+### Example day, rank 3
+
+Rays: 4 Lesser, 2 Standard  
+
+Bolt, Mend Flesh, Trip Hex, Whisper, Fire Lance, Bind  
+— six real casts plus cantrips. A crawl, not a solved dungeon.
+
+### Mana + slots?
+
+Pick one job for the resource.
+
+- **Slots as daily limit;** GC only for cantrips, rituals, Overcast.  
+- **Or** GC is the real pool; slots are shorthand (Lesser = 2, Standard = 4, Greater = 7, High = 12).
+
+Do not run full GC **and** full slots. Two meters for one coincidence.
+
+---
+
+# Chaos overlays (optional, zero extra columns)
+
+**Sigil:** the spell *is* the glyph. Creating it in play is free; firing it costs the band.
+
+**Servitor:** a Greater or High working that persists as a named construct. Give it a job, a feed (attention, emotion, 1 GC per scene), and a kill-switch. If it has no kill-switch, the GM owns the leftover.
+
+**Egregore:** same idea, party-fed. One shared construct, one shared bill.
+
+**Paradigm shift:** change the dressing of a known working for free. Changing the *mechanics* mid-scene costs +1 GC (or a fatigue).
+
+**Banishing:** laughter or a stripped Gnostic Pentagram as the short-rest / “clear the space” fiction. No extra rules.
+
+**Retroactive enchantment (High only):** the result is framed as already having been true in imaginary time. Same cost; the GM is allowed to rewrite a small past detail that was not on camera.
+
+**Fallacy of being:** if you treat the PC as a single immortal soul for a working, the GM may impose disadvantage or +1 cost. Multimind is cheaper.
+
+**Chaosphere:** optional focus item. While displayed, cantrips may use indifferent vacuity (no action to “draw,” still 1 per turn).
+
+---
+
+Keep the diary. Fire the glyph. Forget the wording.  
+Results first. Cosmology second.
