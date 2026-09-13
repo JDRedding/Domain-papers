@@ -1,0 +1,40 @@
+# COMMON PAINKILLERS 
+Use as directed. Do not exceed recommended dose.
+
+```
+TYPE          NAME / VARIABLE          PRIMARY USES                  CLASS NOTES
+```
+---
+```
+Analgesic     Paracetamol              Fever, mild pain              Not anti-inflammatory.
+              (Acetaminophen)                                        Liver risk if overdosed.
+
+NSAID         Ibuprofen                Muscle pain                   COX inhibitor.
+                                                                     Short-acting, OTC common.
+
+NSAID         Diclofenac               Joint pain                    Strong anti-inflammatory.
+                                                                     Often topical + oral.
+
+NSAID         Aspirin                  Headache, fever               Also antiplatelet.
+              (Acetylsalicylic acid)                                 Not for kids (Reye risk).
+
+NSAID         Mefenamic acid           Period pain                   Fenamate class.
+                                                                     Good for menstrual cramps.
+
+NSAID         Naproxen                 Back pain                     Longer-acting NSAID.
+                                                                     8-12 hour duration.
+
+NSAID         Ketoprofen               Sprains                       Stronger NSAID.
+                                                                     Good for acute inflammation.
+
+NSAID         Piroxicam                Arthritis pain                Long-acting oxicam.
+                                                                     Once-daily dosing common.
+```
+
+## FUNDAMENTALS
+- NSAIDs reduce pain + inflammation by blocking COX-1/COX-2 enzymes.
+- Paracetamol mainly works in the brain (pain + fever), little anti-inflammatory effect.
+- All carry risks: stomach irritation, kidney strain, bleeding (NSAIDs), liver (paracetamol).
+- Use lowest effective dose for shortest time.
+- Check interactions (blood thinners, alcohol, other NSAIDs).
+- Not medical advice. Follow label or doctor/pharmacist.
