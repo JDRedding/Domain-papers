@@ -1,0 +1,52 @@
+# Asakusa Kinryuzan (Pagoda)
+
+The five-story pagoda at Sensō-ji (Asakusa Kinryūzan) is a 1973 reconstruction that copies traditional Japanese pagoda form while using a modern steel-and-reinforced-concrete frame. Its published dimensions and the conventional proportional rules of Japanese timber pagoda design can be written as follows.
+
+**Overall dimensions**
+
+$$
+H = 53.32\,\mathrm{m}
+$$
+
+(the figure most consistently cited for the complete structure including the sōrin finial). The main body is given in some sources as $48.32\,\mathrm{m}$. The pagoda is conventionally described as having five stories ($n=5$).
+
+**Symbolic storey assignment (Five Great Elements)**  
+Each storey corresponds to one of the five Buddhist elements, conventionally ordered from the ground upward:
+
+$$
+\begin{align*}
+\text{1st storey} &\quad \chi && \text{(earth)}\\
+\text{2nd storey} &\quad \text{sui} && \text{(water)}\\
+\text{3rd storey} &\quad \text{ka} && \text{(fire)}\\
+\text{4th storey} &\quad \text{fū} && \text{(wind)}\\
+\text{5th storey} &\quad \text{kū} && \text{(void/sky)}
+\end{align*}
+$$
+
+**Traditional modular notation (kiwari / ken system)**  
+Japanese pagoda plans are measured in *ken* (the bay between two columns). A typical five-storey pagoda plan is expressed as a square of $k$ ken on the ground floor, with successive upper storeys reduced by a diminution ratio called *teigen*. In schematic form:
+
+$$
+W_{i+1} = W_i \cdot (1-\tau),\qquad i=1,\dots,4
+$$
+
+where $W_i$ is the plan width of storey $i$ and $\tau$ is the teigen factor (historically larger in earlier pagodas, producing a more “solid” silhouette). Exact *ken* counts and $\tau$ values for the 1973 Sensō-ji pagoda are not published in the sources examined; the reconstruction follows the visual silhouette of the 1648 wooden predecessor rather than a newly calculated kiwari table.
+
+**Seismic characteristic (shinbashira principle)**  
+Traditional wooden pagodas isolate the central pillar (*shinbashira*) so that it does not rest on the foundation:
+
+$$
+\text{shinbashira length} < H_{\text{structure}}
+$$
+
+(the pillar is suspended). The 1973 concrete structure retains the *idea* of a central stiffening element but realises it with a modern RC/steel core rather than a free-standing timber shaft.
+
+**Related gate dimensions (for context)**  
+Kaminarimon (Thunder Gate): height $11.7 \,\mathrm{m}$, width $11.4 \, \mathrm{m}$, plan area $69.3\ , \mathrm{m}^2$.
+
+The present pagoda therefore combines a fixed metric height $H=53.32\,\mathrm{m}$, a five-storey symbolic programme, and an approximation of historic kiwari diminution, executed in contemporary structural materials rather than the original timber framing.
+
+# Future work
+- Japanese timber joinery techniques
+- Horyu-ji temple architecture
+
