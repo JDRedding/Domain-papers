@@ -19,6 +19,87 @@ O(f(n))    : asymptotic upper bound  (grows no faster than c · f(n))
 ⌊x⌋        : floor function (greatest integer ≤ x)
 ```
 
+## **Core Equation**
+
+$$
+2^k = n \quad \implies \quad k = \log_2 n
+$$
+
+#### **Notation**  
+- $n$: input size (number of items, nodes, or possibilities)  
+- $k$: number of steps / height / bits  
+- $\log_2 n$: binary logarithm (exponent to which 2 must be raised to obtain $n$)
+
+### **Explicit values**
+
+$$
+\log_2 2 = 1, \qquad \log_2 8 = 3, \qquad \log_2 1024 = 10, \qquad \log_2 1\,048\,576 = 20
+$$
+
+### **Binary search recurrence**
+
+After $k$ comparisons the remaining window is
+
+$$
+\frac{n}{2^k}
+$$
+
+Termination condition:
+
+$$
+\frac{n}{2^k} = 1 \quad \implies \quad 2^k = n \quad \implies \quad k = \log_2 n
+$$
+
+Worst-case probes:
+
+$$
+\lfloor \log_2 n \rfloor + 1
+$$
+
+### **Perfect binary tree**
+
+Nodes at level $h$:
+
+$$
+2^h
+$$
+
+Total nodes:
+
+$$
+n = 2^{h+1} - 1
+$$
+
+Height:
+
+$$
+h = \log_2(n+1) - 1 = \Theta(\log n)
+$$
+
+### **Merge-sort recurrence**
+
+$$
+T(n) = \Theta(n \log n)
+$$
+
+(depth of recursion tree $\log_2 n$ times linear work $\Theta(n)$ at each level)
+
+### **Information-theoretic lower bound**
+
+Number of distinct binary strings of length $w$:
+
+$$
+2^w \ge n \quad \implies \quad w \ge \log_2 n
+$$
+
+### **Change of base**
+
+$$
+\log_b n = \frac{\log_2 n}{\log_2 b}
+$$
+
+(constant factor only; asymptotic notation therefore writes $O(\log n)$
+
 ### Change-of-base identity:
 log_b n = log₂ n / log₂ b     (only a constant factor; Big-O drops the base)
 
@@ -107,4 +188,18 @@ Each yes/no test (midpoint comparison, left/right child) yields at most 1 bit.
 Isolating one of n possibilities therefore requires at least log₂ n tests.
 
 Binary search and balanced trees nearly meet this information-theoretic lower bound.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
