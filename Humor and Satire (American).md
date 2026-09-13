@@ -152,13 +152,13 @@ Shared news knowledge $A$ has to be high; otherwise the satire does not land.
 ## Future Work
 
 - Mark Twain's satirical techniques
+  - Deadpan narration, dialect as critique, the river as moral test
 - Benign Violation Theory
 - Stand-up Comedy Mechanics
 - Gender, Region, and Class Comic Streams
 - Frontier tall tales and late-night political satire
 - Southern, Midwestern, working-class, and women's comic traditions 
 - "Directness and exaggeration" national habits.
-- Deadpan narration, dialect as critique, the river as moral test
 - The Comic voice 
 - The Onion
 - Horatian vs Juvenalian America
