@@ -301,10 +301,14 @@ Binary search and balanced trees nearly meet this information-theoretic lower bo
 ---
 
 ## Future work
-
+- binary search  
+- information bound
+- balanced trees  
+- tree height
+- merge sort  
+- recursion trees
+- entropy  
+- decision trees
 - logarithmic recurrences  
 - why divide‑and‑conquer always produces logs  
 - logarithms inside complexity classes
-
-
-
