@@ -152,7 +152,8 @@ Shared news knowledge $A$ has to be high; otherwise the satire does not land.
 ## Future Work
 
 - Mark Twain's satirical techniques
-- British satire traditions
+- Benign Violation Theory
+- Stand-up Comedy Mechanics
 - Gender, region, and class voices still underweighted
 - Frontier tall tales and late-night political satire
 - Southern, Midwestern, working-class, and women's comic traditions 
@@ -166,7 +167,7 @@ Shared news knowledge $A$ has to be high; otherwise the satire does not land.
 - Formulas as testable sketches
 - When satire stops landing (Treat A as a historical variable)
 - Trickster reversal vs superiority theory
-- Paul Bunyan / advertising folklore 
+- Paul Bunyan / advertising folklore
 
 ## APPENDIX: Humor and Satire
 
