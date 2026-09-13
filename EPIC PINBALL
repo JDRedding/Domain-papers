@@ -1,0 +1,20 @@
+EPIC PINBALL
+
+year          = 1993
+type          = pinball simulation
+platform      = MS-DOS
+view          = 2D top-down scroll
+language      = x86 assembly
+developer     = Digital Extremes (James Schmalz)
+publisher     = Epic MegaGames
+distribution  = shareware floppy packs
+first table   = Android
+mode          = 1 player / hotseat
+graphics      = VGA 320x240 raster
+audio         = Sound Blaster compatible
+menu items    = BEGIN | 1 PLAYER | READ THIS! | CREDITS | OPTIONS | DEMO | EXIT
+
+CONTEXT
+- Screen of the 1993 main menu from a classic DOS pinball game.
+- Started as shareware with one table, later expanded across themed packs.
+- Early Epic MegaGames title that helped establish the company before it became Epic Games.
