@@ -3,6 +3,8 @@
 
 While most discussion of rooftop and building-integrated systems focuses on photovoltaics, a wide range of non-photovoltaic technologies also contributes to structural integrity, energy efficiency, and sustainability. Understanding these systems is essential for architects, engineers, and developers designing modern buildings.
 
+Excluding photovoltaics, rooftop and building-integrated systems include green roofs, cool roofs, thermal insulation, daylighting, water management, fire protection, and integrated envelope components. Together, these systems improve energy efficiency, occupant comfort, and building resilience. They often serve multiple functions while reducing costs and environmental impact. Strategic selection and early-stage integration help modern buildings meet both performance requirements and sustainability goals.
+
 ## 1. Rooftop Systems (Non-PV)
 
 ### 1.1 Green Roofs
@@ -118,9 +120,9 @@ While most discussion of rooftop and building-integrated systems focuses on phot
 - **Code compliance:** Follow IBC 2024 Sections 1501–1511 for rooftop construction, flashings, parapets, and wind- and impact-resistant materials.
 - **Synergy with renewable systems (optional):** Design for future solar or HVAC integration without compromising structural integrity.
 
-## 5. Conclusion
-
-Excluding photovoltaics, rooftop and building-integrated systems include green roofs, cool roofs, thermal insulation, daylighting, water management, fire protection, and integrated envelope components. Together, these systems improve energy efficiency, occupant comfort, and building resilience. They often serve multiple functions while reducing costs and environmental impact. Strategic selection and early-stage integration help modern buildings meet both performance requirements and sustainability goals.
+# Future work
+- green roof structural loads
+- building envelope thermal bridging
 
 ## References
 
