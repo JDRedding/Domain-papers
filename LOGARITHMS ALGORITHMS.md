@@ -188,8 +188,8 @@ $$
 $$
 
 To encode $n$ distinct items:
-$$
 
+$$
 2^w \ge n \quad \implies \quad w \ge \log_2 n
 $$
 
