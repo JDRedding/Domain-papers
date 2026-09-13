@@ -5,7 +5,9 @@
 - First public timestamp is the only reliable provenance
 - when humans and AI labs work the same program.
 
-The idea behind “publish first, publish often” is that frequent output leads to faster learning, audience growth, and skill development. Instead of waiting for perfection, individuals share their work early, accept feedback, and improve with each publication. This strategy is common in blogging, academic research, software development, and content marketing.
+The idea behind “publish first, publish often” is that frequent output leads to faster learning, audience growth, and skill development. Instead of waiting for perfection, individuals share their work early, accept feedback, and improve with each publication. This strategy is common in blogging, academic research, software development, and content marketing. When humans and labs are working the same program, the first public, checkable timestamp is usually the only provenance that survives contact with compute.Copying a sentence is easy to argue about and often irrelevant. What actually gets contested is priority, credit, and whether anyone can reconstruct who knew what when. A polished paper six months later does not settle that. An early public artifact—preprint, repo, gist, signed commit, hashed note—does. 
+
+Copying a sentence is easy to argue about and often irrelevant. What actually gets contested is priority, credit, and whether anyone can reconstruct who knew what when. A polished paper six months later does not settle that. An early public artifact—preprint, repo, gist, signed commit, hashed note—does.
 
 ## WHY IT MATTERS HERE
 - Dispute is not "did copy a line"
