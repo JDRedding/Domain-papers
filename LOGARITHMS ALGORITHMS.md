@@ -18,6 +18,23 @@ O(f(n))    : asymptotic upper bound  (grows no faster than c · f(n))
 Θ(f(n))    : tight bound
 ⌊x⌋        : floor function (greatest integer ≤ x)
 ```
+## UNIFYING VIEW  
+All four faces are the same operator:
+
+```
+HALVE(n) = n / 2
+```
+
+The logarithm is the *inverse* of repeated halving:
+
+```
+log₂ n = number of halvings needed to reduce n to 1
+```
+
+Whenever an algorithm’s state space shrinks by a constant factor per step, the step count is the exponent that rebuilds the original space.
+
+Double n → step count increases by only 1.  
+That is why logarithmic curves hug the floor of complexity charts.
 
 ## **Core Equation**
 
@@ -123,6 +140,36 @@ That is why log n stays near the floor of a complexity chart while linear and ex
 ## BINARY SEARCH
 Starts with a sorted array of n keys.
 
+Binary search is the canonical halving operator.
+
+Window after $k$ comparisons:
+
+$$
+\frac{n}{2^k}
+$$
+
+Termination:
+
+$$
+\frac{n}{2^k} = 1
+\quad\Longrightarrow\quad
+k = \log_2 n
+$$
+
+Worst‑case probes:
+
+$$
+\lfloor \log_2 n \rfloor + 1
+$$
+
+Examples:
+
+- $n = 10^6$ → ~20 probes  
+- $n = 10^9$ → ~30 probes  
+
+Each comparison yields at most **1 bit** of information.  
+Isolating one of $n$ possibilities requires $\log_2 n$ bits → $\log_2 n$ comparisons.
+
 Compare the middle key.
 Keep the left half or the right half.
 Discard the rest.
@@ -159,6 +206,28 @@ Height is therefore Θ(log n).
 A search / insert / delete that walks from root to leaf costs O(log n) on a balanced tree.
 A skewed tree loses that bound and falls back to O(n).
 
+### PERFECT BINARY TREES  
+Nodes at level $h$:
+
+$$
+2^h
+$$
+
+Total nodes:
+
+$$
+n = 2^{h+1} - 1
+$$
+
+Height:
+
+$$
+h = \log_2(n+1) - 1 = \Theta(\log n)
+$$
+
+Balanced trees → $O(\log n)$ search/insert/delete.  
+Skewed trees → $O(n)$.
+
 ## DIVIDE AND CONQUER
 Merge sort splits the array in two, sorts each half, then merges.
 The recursion tree has depth log₂ n because each split halves the size.
@@ -173,6 +242,27 @@ It is the number of times you can cut n in half before the pieces have size 1.
 Same pattern appears in heaps, FFT, and many recurrence trees.
 
 ## BITS AND INFORMATION
+Binary strings of length $w$:
+
+$$
+2^w
+$$
+
+To encode $n$ distinct items:
+
+$$
+2^w \ge n
+\quad\Longrightarrow\quad
+w \ge \log_2 n
+$$
+
+Thus:
+
+- Minimum bits needed = $\log_2 n$  
+- Minimum yes/no tests = $\log_2 n$
+
+Binary search and balanced trees nearly saturate this lower bound.
+
 How many bits does it take to name one item among n equally likely items?
 
 There are 2ʷ distinct binary strings of length w.
@@ -189,17 +279,13 @@ Isolating one of n possibilities therefore requires at least log₂ n tests.
 
 Binary search and balanced trees nearly meet this information-theoretic lower bound.
 
+---
 
+## Future work
 
-
-
-
-
-
-
-
-
-
+- logarithmic recurrences  
+- why divide‑and‑conquer always produces logs  
+- logarithms inside complexity classes
 
 
 
