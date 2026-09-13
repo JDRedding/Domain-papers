@@ -1,5 +1,6 @@
 ## Relationalism, Truth‑Value Geometry, and the Boolean‑Reduction 
 — An Objective Concept Summary
+- 160 logic
 
 These systems belong to **different evaluation categories**.  
 Boolean logic can only appear after **collapsing** Relationalism’s geometry — not by deriving it.
