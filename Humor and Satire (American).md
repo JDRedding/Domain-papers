@@ -104,7 +104,7 @@ $$
 
 Useful as a metaphor for taboo jokes; not a measurement.
 
-## Notation you can reuse
+## Humor and Satire Notation 
 
 | Symbol | Meaning |
 |---|---|
