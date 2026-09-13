@@ -1,4 +1,5 @@
 # Technical Cognitive Mode Shift 
+153 cognition
 
 The central conceptual insight is:
 
