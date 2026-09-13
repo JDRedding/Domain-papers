@@ -14,6 +14,11 @@ Copying a sentence is easy to argue about and often irrelevant. What actually ge
 - Dispute is timing, credit, and auditability
 - Early preprints close the compute-window
 
+Why the compute window mattersA lab can take an idea that is already in the air, throw a large training run at it, and ship a stronger system. The window between “idea is thinkable” and “idea is demonstrated at scale” is short and shrinking. Early public release does two things at once:It creates an independent clock that does not live inside any company’s internal docs.
+It forces later work to cite, distinguish, or explicitly supersede rather than quietly absorb.
+
+That is the auditability point in your note. Disputes that look like “who copied whom” are often really “who can prove existence before the run finished.” Preprints, versioned repos, and cryptographic timestamps close that window better than private notebooks
+
 ### Benefits
 - Iteration and Improvement: Publishing often allows creators to see how their audience reacts, identifying areas for improvement and refining their style or approach.
 - Building Momentum: Regular output keeps you visible and relevant, especially on blogs, social media, or professional networks.
