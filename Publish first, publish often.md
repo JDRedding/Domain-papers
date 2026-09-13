@@ -19,6 +19,16 @@ It forces later work to cite, distinguish, or explicitly supersede rather than q
 
 That is the auditability point in your note. Disputes that look like “who copied whom” are often really “who can prove existence before the run finished.” Preprints, versioned repos, and cryptographic timestamps close that window better than private notebooks
 
+### What “publish first” actually means
+
+Frequency alone is not enough. The artifact has to be:
+- Public (arXiv, GitHub, a dated blog with a stable URL)
+- Specific (method, claim, ablations, or even a failed attempt—not just a vibe)
+- Versioned (git history, tagged release, or at least a hash)
+- Cheap to produce so you can do it often without waiting for perfection
+
+That last point is the old Leanpub / blogger lesson applied to research: early drafts are experiments, not monuments. Feedback and later versions are the point. Perfectionism just donates the timestamp to whoever has more GPUs. 
+
 ### Benefits
 - Iteration and Improvement: Publishing often allows creators to see how their audience reacts, identifying areas for improvement and refining their style or approach.
 - Building Momentum: Regular output keeps you visible and relevant, especially on blogs, social media, or professional networks.
