@@ -1,0 +1,30 @@
+DOOM CE 4.0.0
+TYPE        community enhancement mod
+BASE        PlayStation DOOM + DOOM 64 total conversions
+ENGINE      UZDoom 5.0.0+  (build noted: 5.0.1)
+PLATFORM    source-port mod for classic Doom family
+GOAL        original-game feel + optional modern extras
+
+CORE CHANGE
+  player physics overhaul (default ON, menu-toggleable)
+  rewritten from reverse-engineered original sources
+  covers: movement, friction, gravity, view-bob, knockback
+
+KEY VARIABLES / CVARS
+  r_visibility     player light radius now scales with this
+  r_dynlights      replaces old gl_lights
+  con_stackident   feature presets disable this; menu shortcut added
+  secret-found notify cvars  fixed
+  prediction checks          added to reduce MP desync
+
+FUNDAMENTALS
+  UZDoom = source port with controller support, haptics, packet-server MP
+  mod stays modular: upscaled textures, PBR, particles remain optional
+  PSX sprite stretch locked at 0.8 regardless of aspect setting
+  map-pack addons must be redownloaded; D64 lost-levels PK3 regenerated
+  MP stability is preliminary; desync reports requested
+
+WHY IT MATTERS
+  engine move + physics rewrite is the real 4.0.0 event
+  authenticity first, extras second
+  changelog lives on ModDB: /mods/doom-ce/news/doom-ce-400-released
