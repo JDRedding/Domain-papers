@@ -1,0 +1,44 @@
+Compilers: Principles, Techniques, and Tools
+by Alfred V. Aho, Ravi Sethi, and Jeffrey D. Ullman, 
+known as the Dragon Book due to its dragon illustration.
+
+---
+
+COMPILERS
+Principles, Techniques,
+     and Tools
+
+     /\     ____
+    /  \   /    \
+   /    \ |  ()  |     DATA FLOW
+  /  /\  \|      |     ANALYSIS
+ /  /  \  \      /     
+|  |    |  |    |      SYNTAX
+ \  \  /  /      \     DIRECTED
+  \  \/  /        \    TRANSLATION
+   \    /   ____   \
+    \  /   /    \   \
+     \/   |      |   \
+          |  /\  |    
+          | /  \ |    
+          |/    \|    
+
+Alfred V. Aho
+Ravi Sethi
+Jeffrey D. Ullman
+
+FUNDAMENTALS
+Lexical analysis   tokens  scanner
+Syntax analysis    parse tree  CFG
+Semantic analysis  type checking
+IR generation      3-address code
+Optimization       data-flow
+Code generation    registers  liveness
+
+TYPES
+token  lexeme  nonterminal  production
+AST  DAG  basic block  SSA
+
+VARIABLES
+symbol table  activation record
+live ranges  reaching defs
