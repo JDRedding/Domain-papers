@@ -1,0 +1,82 @@
+tiny386 - frank-386
+C99 i386 PC emulator  |  core ~6K LOC  |  BSD-3-Clause
+orig: He Chunhui (hchunhui/tiny386)
+RP2350 port: FRANK-386 (rh1tech) + Waveshare Pi Zero fork
+
+HOST
+  chip     RP2350  (Pico 2 / FRANK / Waveshare RP2350-PiZero)
+  cores    dual Cortex-M33  or  Hazard3 RISC-V
+  clocks   cpu_freq = 378 | 504 MHz
+           psram_freq = 133 | 166 MHz
+  extra    8MB PSRAM required for extended RAM
+           PIO used for HDMI / PS/2 / gamepad
+  boards   FRANK  M1  M2  Olimex PICO-PC  Waveshare Z2
+
+GUEST CPU
+  type     i386 interpreter  (+ partial i486 / i586)
+  opt      x87 FPU, i686, MMX, SSE..SSSE3, amd64 long mode
+  gen      3=386  4=486  5=586  6=686
+  fpu      0 | 1
+  missing  debug, hardware tasking, some privilege checks
+  files    i386.c / i386.h / i386ins.def
+           fpu.c / fpu.h
+           amd64.c / amd64.h   (optional)
+
+GUEST REGS  (fundamentals)
+  GPR32    EAX ECX EDX EBX  ESP EBP ESI EDI
+  GPR16    AX  CX  DX  BX   SP  BP  SI  DI
+  GPR8     AL AH CL CH DL DH BL BH
+  IP       EIP / IP
+  FLAGS    CF PF AF ZF SF TF IF DF OF
+           IOPL NT RF VM AC VIF VIP ID
+  segs     CS DS SS ES FS GS
+           selector + base + limit + attrib
+  ctrl     CR0 CR2 CR3 CR4
+           PE MP EM TS ET NE WP AM NW CD NW PG
+  sys      GDTR IDTR LDTR TR
+  x87      ST(0)..ST(7)  CWD SW TW  IP/DP/OP
+
+MEMORY
+  guest    mem = 1M..8M   typical mem=8M
+  holes    BIOS + VGA windows
+  vga      ISA VGA + Bochs VBE   up to 640x480
+           vga_mem_size configurable
+  fw       bios.bin + vgabios.bin   (SeaBIOS)
+  alt      linuxstart stub -> vmlinux  (no BIOS)
+
+CHIPSET / IO
+  i8259    PIC   IRQ 0..15
+  i8254    PIT   IRQ0 timer / speaker
+  i8042    kbd + mouse controller
+  CMOS     RTC
+  i8257    ISA DMA
+  IDE      hda hdb hdc hdd / ATAPI CD
+  floppy   fda fdb
+  NE2000   ISA NIC
+  sound    PC speaker  AdLib OPL2  SB16
+           FRANK extras: Tandy  Covox  DSS  MPU-401
+
+CONFIG VARS  (config.ini / tiny386.ini)
+  mem=8M
+  bios=bios.bin
+  vga_bios=vgabios.bin
+  gen=3|4|5|6
+  fpu=0|1
+  fill_cmos=1     MS-DOS/Win9x   (0 for NT)
+  cpu_freq=504
+  psram_freq=166
+  redirector=1    mapdrive H:
+  disks in /386/  .img floppy/hdd   .iso CD
+
+I/O ON RP2350
+  video    VGA or HDMI/DVI
+  input    PS/2 kbd/mouse  |  USB HID host
+           NES/SNES pad (mouse-emulation mode)
+  store    SD SPI   FAT32   /386/
+  hotkeys  Win+F11 settings   Win+F12 disk swap
+
+BOOT TARGETS
+  DOS   Win 3.1   Win 95   lean Linux
+  not a modern full-fat distro
+  ESP32 was usable/slow; RP2350 is the faster port
+```
