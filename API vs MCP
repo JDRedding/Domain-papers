@@ -1,0 +1,51 @@
+API vs MCP
+===========
+
+An API gives you access to a service.
+MCP gives an LLM a standardized way to find and use many services.
+
+---
+
+API
+Direct, predefined access to a specific service.
+
+Flow:
+  Client (App / Script / LLM)
+    -- HTTP request (defined endpoint) -->
+  API (e.g. Weather API)
+    --> Service (Weather Data)
+    <-- structured response
+
+Purpose     Access a specific service or functionality
+Interface   Fixed endpoints (REST, GraphQL, etc.)
+Scope       One API per service
+Discovery   Client must already know what to call and how
+Context     Stateless request-response
+Example     GET /weather?city=Kolkata  -> weather data
+
+---
+
+MCP
+A standard for LLMs to discover and use tools and resources from external systems.
+
+Flow:
+  LLM (e.g. ChatGPT)
+    -- discover tools & request action -->
+  MCP Server
+    --> Files (Google Drive)
+    --> Code (GitHub)
+    --> Databases (PostgreSQL)
+    <-- result (natural language or structured data)
+
+Purpose     Let LLMs discover and use tools/resources
+Interface   Standardized protocol (MCP)
+Scope       Many tools and resources via one server
+Discovery   LLM can list available tools and invoke them
+Context     Stateful, tool-aware, richer context (files, code, DB)
+Example     "List my recent files" -> MCP calls file tool -> result to LLM
+
+---
+
+# Fututre work
+- MCP transport layers
+- OpenAI Function Calling
