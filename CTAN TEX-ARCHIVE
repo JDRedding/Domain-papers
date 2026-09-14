@@ -1,0 +1,42 @@
+CTAN TEX-ARCHIVE
+https://ctan.org/tex-archive/
+
+FUNDAMENTALS
+  Name     : Comprehensive TeX Archive Network
+  Role     : Authoritative public tree for TeX / LaTeX material
+  Root     : /tex-archive/
+  Use      : Source for TeX Live, MiKTeX, and worldwide mirrors
+  Nature   : Directory tree + catalogue, not a single installer
+
+TYPES (top-level categories)
+  macros      TeX / LaTeX formats and packages
+              (latex, plain, context, xetex, luatex, generic)
+  fonts       METAFONT fonts and external font support
+  graphics    Drawing and graphics systems
+  systems     Engines and distributions by platform
+  language    Hyphenation and language support
+  info        Manuals, FAQs, documentation
+  support     Editors, tools, utilities
+  biblio      Bibliography systems
+  indexing    Index generation
+  dviware     DVI drivers and previewers
+  install     Ready-to-install TDS zip packages
+  obsolete    Retired / historical material
+  usergrps    TeX user group information
+  web         Literate-programming tools
+  help        Catalogue and direct assistance
+
+VARIABLES / KEY FILES AT ROOT
+  CTAN.sites         list of main nodes and active mirrors
+  FILES.byname       full file index (large)
+  FILES.byname.gz    compressed full index
+  FILES.last07days   files changed in last 7 days
+  README.mirrors     mirror notes
+  README.structure   tree structure notes
+  README.uploads     upload guidance
+
+OPERATING NOTES
+  Browse   : directory listing on the web interface
+  Search   : package catalogue at ctan.org
+  Install  : usually via TeX Live / MiKTeX, not raw tree
+  Contribute : package uploads accepted at core CTAN nodes
