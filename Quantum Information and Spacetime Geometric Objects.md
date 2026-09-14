@@ -1,4 +1,4 @@
-**Quantum Information and Spacetime Geometric objects**
+**Quantum Information and Spacetime Geometric Objects**
 
 Information provides coordinates, stability defines the manifold, and entanglement builds distance. Spacetime is the user interface to a deeper layer of information processing. We perceive geometry; the universe computes stability. Geometry is the stable shape of information. The universe is made of information, and it is solving for shape.
 
