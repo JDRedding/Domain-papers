@@ -3,6 +3,8 @@
 ##  COMPARE
 ```
 Style      Transport     Style of call     Real-time     Contract
+```
+```
 REST       HTTP          Resource verbs    Polling       Informal / OpenAPI
 GraphQL    HTTP          Query/mutation    Optional      Schema
 SOAP       HTTP/SMTP     Operation         Limited       WSDL
