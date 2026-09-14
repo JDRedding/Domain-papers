@@ -1,0 +1,49 @@
+EMPIRE 64
+Type:     Commodore 64 trading / strategy simulation
+Origin:   Type-in program, Ahoy magazine, October 1987 (originally C128)
+Author:   Cleveland M. Blakemore
+Port:     Richard J. Derocher / Binary Legends (C64, 2026)
+Share:    https://rickyderocher.itch.io/empire-64
+
+GOAL
+Acquire 100% of Empire land shares within one in-game year
+(four seasons: spring, summer, fall, winter).
+
+CORE VARIABLES
+starting_cash     $500 to $10,000 (player choice)
+guild_credit      $5000 (debt notes; cannot buy land with them)
+land_shares       deeds measured in furlongs; win at 100%
+inventory         goods + cash
+season            changes map border color and prices
+  spring          green
+  summer          yellow
+  fall            brown
+  winter          white
+
+COMMODITIES (9)
+Artifacts
+Weapons           swords, spears
+Armor
+Rare Metals       gold, silver
+Horses
+Tools
+Food Products     grain, rice, etc.
+Fabrics           clothing, drapes
+Land Shares
+
+FUNDAMENTALS
+- Player is a traveling merchant on a joystick-controlled world map (Port 2).
+- Terrain changes sprite (horse on land, canoe on water).
+- Enter a kingdom through a doorway; clock pauses inside.
+- Menu: Buy, Sell, Seasonal Changes, Inquire, Inventory, Bid Farewell.
+- Each kingdom produces one unique good; Inquire shows demand and base price.
+- Bargain with joystick: up/down = tens, left/right = ones, fire = confirm.
+- Buy low, sell high; winter raises food and fabric demand.
+- Must visit another kingdom before re-entering the same one.
+- Game ends after winter; report shows cash, inventory, and Empire %.
+- Typical session: 20–30 minutes real time.
+
+POST CONTEXT
+@Commodore_lives shared title screen + map screenshot
+with tags #64 #retrogaming. Account focuses on Commodore
+hardware, software, and beginner-to-advanced tutorials.
