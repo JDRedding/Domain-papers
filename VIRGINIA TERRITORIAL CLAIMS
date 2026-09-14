@@ -1,0 +1,31 @@
+VIRGINIA TERRITORIAL CLAIMS
+1609 to 1863
+
+type Period = {
+  year: int
+  claim: string
+  event: string
+}
+
+periods = [
+  { year: 1609, claim: "sea-to-sea charter", event: "Second Virginia Charter; theoretically Atlantic to Pacific, covering much of later United States" },
+  { year: 1784, claim: "reduced western lands", event: "Virginia Cession of the Northwest Territory to the federal government" },
+  { year: 1792, claim: "lost Kentucky", event: "Kentucky admitted as a separate state, June 1" },
+  { year: 1863, claim: "modern Virginia shape", event: "West Virginia admitted as a state, June 20, during the Civil War" }
+]
+
+fundamentals
+- Original 1609 grant ran 200 miles north and south of Point Comfort, then west "from sea to sea"
+- Western claims were paper titles overlapping other colonies and later federal land policy
+- Shrinkage came from cessions to Congress, new-state formation, and wartime secession of western counties
+- Final 1863 outline is the Virginia that remains today
+
+sequence
+1609  vast sea-to-sea claim
+1784  Midwest ceded
+1792  Kentucky gone
+1863  West Virginia split off
+
+future work
+- Virginia's 1609 Charter details
+- Compare other colonial sea-to-sea claims
