@@ -1,0 +1,57 @@
+O   E M P I R E !
+W A R D   O F F   T H Y   R O T
+----------------->>>
+LINKS
+  steam   store.steampowered.com/app/4331110
+  site    o-empire-o-rot.com
+  itch    awkwardsilencegames.itch.io/o-empire
+
+TYPE
+  Genre        : journey survival / adventure / indie
+  Perspective  : top-down dithered miniature world
+  Player       : lone traveller
+  Core loop    : walk, scavenge, rest, decide
+  Combat       : not the focus
+  Narrative    : environmental, rare encounters, little dialogue
+  Tone         : bleak, slow cinema, low fantasy, mythic allegory
+  Status       : coming soon  |  Steam app 4331110
+  Dev / Pub    : Dean Moynihan  (AwkwardSilenceGames)
+
+VARIABLES
+  distance       : how far you have walked  (progress)
+  stamina        : spend to push on, recover by rest
+  supplies       : food, water, salvage from wreckage
+  burden         : cursed artifact weight  (grows over time)
+  rot            : sickness in the land and in the remaining
+  shelter        : temporary safety in ruins
+  resolve        : whether you keep going or turn back
+  artifact_state : carried / hidden / abandoned / used
+  rings          : equippable items shown in trailer UI
+
+FUNDAMENTALS
+  Premise
+    The rapture came and went.
+    Those who remained grow sick.
+    They scavenge the wreckage seeking shelter.
+    You carry an ancient cursed object across a desolate medieval continent.
+
+  Objective
+    Survive the journey.
+    Travel as far as possible.
+    Decide what to do with the burden.
+
+  Systems
+    Stamina + supplies gate long walks on foot.
+    Knowing when to advance or retreat is the real skill.
+    The artifact warps movement and choices as it gets heavier.
+    Persistence is the only score that matters.
+
+  World
+    Abandoned settlements, roads, ruins, landmarks.
+    Interconnected bleak terrain.
+    Dithered, tilt-shift look like filmed miniature sets.
+
+  Content note
+    Mature themes: fantasy violence, suicide depictions,
+    criminal acts, profanity, alcohol and fantasy drugs.
+
