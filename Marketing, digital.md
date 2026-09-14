@@ -16,10 +16,10 @@ SEO, social media, email marketing, performance marketing, TikTok, and influence
 ```
   services[] = [
     SEO,
-    social_media,
+    _media,
     email,
     performance_marketing,
-    TikTok,
+    social,
     influencer,
     CRO
   ]
