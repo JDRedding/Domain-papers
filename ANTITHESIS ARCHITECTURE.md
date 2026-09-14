@@ -131,40 +131,40 @@ The entire architecture in one symbol.
 
 ## EVOLUTION AS ANTITHESIS
 
-    Variation + selection + interaction = adaptation and evolution.
+Variation + selection + interaction = adaptation and evolution.
 
     Variation creates difference.  
     Selection introduces constraint.  
     Interaction introduces opposition.  
     Adaptation reorganizes the relationship.
 
-    Evolution is not one side winning, but a history of interacting constraints.
+Evolution is not one side winning, but a history of interacting constraints.
 
 ---
 
 ## LEARNING AS ANTITHESIS
 
-    Difference drives intelligence.
+Difference drives intelligence.
 
     Prediction creates an expectation.  
     Reality produces a signal.  
     The difference becomes error.  
     Error updates the model.
 
-    Error is not failure. It is information.
+Error is not failure. It is information.
 
 ---
 
 ### COMMUNICATION AS DIFFERENCE
 
-    Meaning emerges in the gap.
+Meaning emerges in the gap.
 
     Sender <-> receiver  
     Message <-> noise  
     Intention <-> interpretation  
     Known <-> unknown  
 
-    Information requires distinguishability and relation.
+Information requires distinguishability and relation.
 
 ---
 
@@ -176,7 +176,7 @@ The entire architecture in one symbol.
     The self requires otherness.  
     Integration holds opposing parts.  
 
-    Creativity, identity, and meaning all live in the space between.
+Creativity, identity, and meaning all live in the space between.
 
 ---
 
