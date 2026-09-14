@@ -1,0 +1,32 @@
+# Interactive graphics workstation
+- 1960s IBM 
+
+This is the root of CAD, CGI, and "*point at the machine and change the world*" 
+
+Same loop as modern GPU pipelines: geometry -> transform -> project -> draw 
+
+SCENE
+```
+Engineer at CRT monitor (IBM-class display)
+Stylus / light pen on screen
+3D wireframe model (vector graphic)
+Keypad / function box at left
+CRT + analog control panel in background
+```
+FUNDAMENTALS
+```
+Type: interactive vector graphics / early CAD
+Display: CRT (cathode-ray tube), refresh or storage
+Input: light pen / stylus  (pick + draw on phosphor)
+Model: wireframe  (vertices + edges, no fill)
+Space: 3D cartesian  x,y,z  + projection to 2D screen
+Primitive: line / polyline  (not raster pixels first)
+```
+VARIABLES (conceptual)
+```
+P = {x, y, z}          vertex
+E = (P_i, P_j)         edge
+M = list of E          mesh / model
+T = transform matrix   rotate / scale / translate
+S = project(T * P)     screen coordinates
+pick = light_pen hit test on S
