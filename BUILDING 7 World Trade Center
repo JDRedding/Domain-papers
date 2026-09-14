@@ -1,0 +1,33 @@
+BUILDING
+  official_name     : 7 World Trade Center
+  short_name        : WTC 7
+  also_known_as     : Salomon Brothers Building
+
+TYPE / CLASS
+  category          : high-rise office tower
+  stories           : 47
+  completed         : 1987
+  demolished        : 11 Sep 2001 (collapse)
+  location          : immediately north of WTC plaza, Lower Manhattan
+
+KEY VARIABLES (11 Sep 2001)
+  aircraft_impact   : none
+  debris_source     : collapse of WTC 1 (North Tower)
+  fire_duration     : ~7 hours (uncontrolled)
+  water_to_sprinklers : unavailable on lower floors
+  collapse_time     : 17:20:52 EDT
+  collapse_mode     : fire-induced progressive collapse
+  initiating_column : Column 79 (east side)
+  mechanism         : thermal expansion of steel floor beams/girders
+                      → girder walk-off → floor failures
+                      → column buckling → global collapse
+  fatalities_in_collapse : 0
+                      (building already evacuated)
+
+FUNDAMENTALS (NIST NCSTAR 1A)
+  primary_cause     : ordinary office fires, not explosives
+  unique_factor     : first known collapse of a building >15 stories
+                      driven primarily by fire
+  contributing      : long-span floor system + lost sprinkler supply
+  official_finding  : fires similar to those in other tall buildings,
+                      burning beyond control because of no water
