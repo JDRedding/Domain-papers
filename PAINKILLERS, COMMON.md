@@ -1,4 +1,5 @@
 # COMMON PAINKILLERS 
+- Not medical advice. Follow label or doctor/pharmacist.
 Use as directed. Do not exceed recommended dose.
 
 ```
