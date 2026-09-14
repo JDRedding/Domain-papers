@@ -1,0 +1,17 @@
+TYPE: LOTR_US_GEO_OVERLAY_MEME
+
+VARIABLES:
+  account          = @LOTR_Daily_
+  media            = Middle-earth parchment map
+  overlay_method   = geographic scale comparison
+  mordor_region    = Florida peninsula
+  mount_doom_approx= Jacksonville area
+  frodo_sam_path   = red line (Midwest -> South)
+  bilbo_path       = blue line (northern states)
+  purpose          = visualize Shire-to-Mordor distance
+
+FUNDAMENTALS:
+  canonical_distance ≈ 1350 miles (Bag End to Mount Doom)
+  map_function       = place familiar US landmarks under Tolkien geography
+  engagement_hook    = "Florida as Mordor" + path colors make the quest feel walkable
+  typical_reaction   = jokes about Jacksonville = Mount Doom, Youngstown references
