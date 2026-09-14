@@ -1,89 +1,93 @@
-SALES vs MARKETING
+# SALES vs MARKETING
 ```
 Fundamentals: 4Ps + audience + time + brand + strategy
 Orientation:   Sales = push / short-cycle / one-to-one
                Marketing = pull / long-cycle / one-to-many
 ```
-----
+---
 
-PRODUCT
+## PRODUCT
 ```
 SALES      I have a product I need to move. Aim is to persuade someone to buy it.
 MARKETING  I have a range of products. Aim is to ensure they meet customer needs.
 ```
-PRICE
+## PRICE
 ```
 SALES      Price is often the biggest stumbling block. Buyers say we are higher
            than competitors.
 MARKETING  Aim is to capture value: what people want and what they will pay.
            Do not leave money on the table.
 ```
-PROMOTION
+## PROMOTION
 ```
 SALES      Product-focused promotions that promise a discount work best.
 MARKETING  Promotions should resonate with anyone who influences the buying decision.
 ```
-AUDIENCE
+## AUDIENCE
 ```
 SALES      Speak to the buyer who places the order. Mostly one-to-one.
 MARKETING  Audience is broad: specifiers, buyers, influencers, shop-floor users to C-suite.
 ```
-TIME HORIZON
+## TIME HORIZON
 ```
 SALES      Judged on weekly and monthly numbers. Get product out the door now.
 MARKETING  Long-term view. Where will the business be in a year or two.
 ```
-BRAND REPUTATION
+## BRAND REPUTATION
 ```
 SALES      I am the face of the company. When people think of the company they think of me.
 MARKETING  Brand is a unique position. Build it so competitors cannot take it away.
 ```
-STRATEGY
+## STRATEGY
 ```
 SALES      Push product out the door. That is the job.
 MARKETING  Pull customers toward the company so they want us and what we sell.
 ```
-SALES vs MARKETING
+## SALES vs MARKETING
 ```
 Fundamentals: 4Ps + audience + time + brand + strategy
 Orientation:   Sales = push / short-cycle / one-to-one
                Marketing = pull / long-cycle / one-to-many
 ```
-PRODUCT
+## PRODUCT
 ```
 SALES      I have a product I need to move. Aim is to persuade someone to buy it.
 MARKETING  I have a range of products. Aim is to ensure they meet customer needs.
 ```
-PRICE
+## PRICE
 ```
 SALES      Price is often the biggest stumbling block. Buyers say we are higher
            than competitors.
 MARKETING  Aim is to capture value: what people want and what they will pay. Do not
            leave money on the table.
 ```
-
-PROMOTION
+## PROMOTION
 ```
 SALES      Product-focused promotions that promise a discount work best.
 MARKETING  Promotions should resonate with anyone who influences the buying decision.
 ```
-AUDIENCE
+## AUDIENCE
 ```
 SALES      Speak to the buyer who places the order. Mostly one-to-one.
 MARKETING  Audience is broad: specifiers, buyers, influencers, shop-floor users to C-suite.
 ```
-TIME HORIZON
+## TIME HORIZON
 ```
 SALES      Judged on weekly and monthly numbers. Get product out the door now.
 MARKETING  Long-term view. Where will the business be in a year or two.
 ```
-BRAND REPUTATION
+## BRAND REPUTATION
 ```
 SALES      I am the face of the company. When people think of the company they think of me.
 MARKETING  Brand is a unique position. Build it so competitors cannot take it away.
 ```
-STRATEGY
+## STRATEGY
 ```
 SALES      Push product out the door. That is the job.
 MARKETING  Pull customers toward the company so they want us and what we sell.
 ```
+---
+
+## Future Work
+- STP Model
+- AIDA Funnel
