@@ -1,0 +1,78 @@
+GALLUP DAILY EMOTIONS INDEX (circa 2009-2011)
+Metric: average % of adults who said YES to 10 items about yesterday
+Positive items: well-rested, treated with respect, enjoyment, smile/laugh a lot, learned or did something interesting
+Negative items: anger, stress, physical pain, worry, sadness
+Score = mean of those 10 yes-rates. Higher = more emotional (pos + neg mixed)
+
+SCALE (map legend)
+36-38   least emotional
+39-41
+42-44
+45-47
+48-50
+51-53
+54+     most emotional
+
+KNOWN ANCHORS
+Least:  Singapore 36   Georgia 37   Lithuania 37
+        Russia / Ukraine / Belarus / Kazakhstan / Nepal / Madagascar / Kyrgyzstan ~38
+Most:   Philippines 60   El Salvador 57   Bahrain 56
+        Oman / Colombia 55
+        Chile / Costa Rica / Canada / Guatemala / Bolivia / Ecuador / US ~54
+
+GALLUP DAILY EMOTIONS INDEX
+Source: 2009-2011 World Poll (published Nov 2012)
+Score = average % saying YES to 10 items about YESTERDAY
+  + well-rested  + treated with respect  + enjoyment
+  + smile/laugh a lot  + learned/did something interesting
+  - anger  - stress  - physical pain  - worry  - sadness
+Higher = more reported emotion (positive and negative mixed)
+Full 150-country table was never released publicly. Gallup only published
+the extremes. Everything else is inferred from those numbers + the map bands.
+
+PUBLISHED SCORES
+60  Philippines
+57  El Salvador
+56  Bahrain
+55  Oman
+55  Colombia
+54  Chile
+54  Costa Rica
+54  Canada
+54  Guatemala
+54  Bolivia
+54  Ecuador
+54  Dominican Republic
+54  Peru
+54  Nicaragua
+54  United States
+38  Russia
+38  Madagascar
+38  Ukraine
+38  Belarus
+38  Kazakhstan
+38  Nepal
+38  Kyrgyzstan
+37  Georgia
+37  Lithuania
+36  Singapore
+
+MAP BANDS (what the TerribleMaps graphic used)
+54+     most emotional     dark
+51-53                      purple
+48-50                      light purple
+45-47                      blue
+42-44                      green
+39-41                      light green
+36-38   least emotional    yellow
+
+PATTERN FROM THE MAP + CONTEMPORARY WRITEUPS
+Americas            mostly 51-54+
+Philippines         60
+Bahrain / Oman      55-56
+much of W. Europe   mid 40s-low 50s
+much of Africa      mid 40s with outliers
+China / India       mid-high 40s
+post-Soviet belt    37-38
+Singapore           36
+grey on the map     no data
