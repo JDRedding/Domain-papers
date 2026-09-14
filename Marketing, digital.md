@@ -6,11 +6,11 @@ SEO, social media, email marketing, performance marketing, TikTok, and influence
 
 ## FUNDAMENTALS
 ```
-  intent     : sell digital marketing services
-  audience   : builders / startups already being asked to drop links
-  hook       : grow the business you just promoted
-  visual     : split purple-black mouse diagram
-  tagline    : Your Competitor Is Only One Click Away
+  intent     : digital marketing services
+  audience   : builders / startups 
+  hook       : grow the business  
+  visual     : split diagram
+  tagline    : One Click Away
 ```
 ## VARIABLES
 ```
