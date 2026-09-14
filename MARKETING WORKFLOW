@@ -1,0 +1,63 @@
+MARKETING WORKFLOW
+organize files → connect references → give agents what they need
+
+WORKFLOW
+  task (e.g. launch page + social posts)
+    → agent reads brief + customer + offer + voice + proof + performance
+    → agent reads brand book + visual refs
+    → create + self-check
+    → you review claims / offer / voice / design / links
+    → revise from feedback
+    → after sign-off: publish → collect results
+    → save back: edits to voice.md / examples / warehouse / moodboard
+
+RULES
+  markdown in GitHub (reviewable, traceable)
+  large creative files linked from shared storage
+  start with one function and one task you already do
+  update sources from real work: corrections, new objections, offer changes
+
+SHARED CORE  (.md)
+  company.md       what the business does and who it serves
+  customer.md      problems, buying triggers, objections, customer language
+  offer.md         what you sell, pricing, deliverables, supportable promises
+  positioning.md   why choose you over alternatives
+  voice.md         how you write + examples + phrases to avoid + your edits
+  proof.md         case studies, approved claims, evidence links
+  AGENTS.md        where to read / save / flag conflicts / ask for sign-off
+
+FUNCTION FOLDERS
+  content/   seo/   paid/   creator/   email/
+    playbook.md    how the work gets done
+    examples/      approved work + rejected versions + your feedback
+    tools.md       tools and accounts agents can use
+    checks.md      what to verify before returning work
+    calendar.md    planned / in progress / ready for review
+
+PLATFORM FOLDERS  (inside content/)
+  x/   linkedin/   newsletter/   visual/
+    formats you use
+    approved examples
+    rejected drafts + why
+
+VISUAL REFERENCES
+  moodboard        look references + notes on what you like
+  brand book       colors, fonts, logos, layouts, usage rules
+  approved assets  previous ads, landing pages, campaign visuals
+  (Figma or Paper — link from visual/)
+
+CAMPAIGN FOLDER
+  campaigns/product-launch/
+    brief.md       goal, audience, offer, constraints
+    research/
+    decisions.md   what was agreed and why (rejected angles, offer changes)
+    production/
+    results.md     performance + interpretation
+
+DATA WAREHOUSE
+  connect ads, analytics, sales, content accounts
+  store spend, clicks, leads, conversions, campaign results
+  agents query previous performance by campaign / asset / date
+  include reporting period + metric definitions
+
+
