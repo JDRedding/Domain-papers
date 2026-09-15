@@ -4,7 +4,10 @@
 : skinnable Win32 MP3 player. 
 
 Classic slogan: 
-> "it really whips the llama's ass." Modules = player + 10-band EQ + playlist. Llama track = official intro sample.
+> "it really whips the llama's ass."
+
+Modules = player + 10-band EQ + playlist. 
+Llama track = official intro sample.
 
 ```
         WINAMP PLAYER
