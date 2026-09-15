@@ -1,0 +1,28 @@
+CHESS FUNDAMENTALS
+Piece types:
+  K / k  = King
+  Q / q  = Queen
+  R / r  = Rook
+  B / b  = Bishop
+  N / n  = Knight
+  P / p  = Pawn
+
+Convention:
+  UPPERCASE = light / wood side
+  lowercase = black side
+
+Variables (starting position):
+  black_back  = ["r","n","b","q","k","b","n","r"]
+  black_pawns = ["p","p","p","p","p","p","p","p"]
+  white_pawns = ["P","P","P","P","P","P","P","P"]
+  white_back  = ["R","N","B","Q","K","B","N","R"]
+
+board_color = "solid red"   # no checkered squares
+
+SETUP (plain red surface, pieces only)
+
+r n b q k b n r
+p p p p p p p p
+
+P P P P P P P P
+R N B Q K B N R
