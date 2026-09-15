@@ -1,0 +1,41 @@
+FUNDAMENTALS
+    unfinished etymologies
+    cryptophasia waiting
+    grammatical mutations
+
+PROPOSITION
+   build: △ LIMINAL_INCUBATORS △
+
+      ^                 ^
+     / \               / \
+    /   \             /   \
+   /  ◇◇ \           /  ◇◇ \
+  /_______\         /_______\
+     |||               |||
+  CHAMBER_A         CHAMBER_B
+
+<concept enters A>  ==>  [shimmer]  ==>  <emerges from B>
+                              |
+                         [CHANGED]
+
+TYPES
+    Concept     : raw input token / idea / lemma
+    Chamber     : liminal transformer (A ingest, B emit)
+    Shimmer     : intermediate mutation state
+    Changed     : output after grammatical / ontological rewrite
+
+VARIABLES
+    etymologies[]     unfinished, carried in folds
+    cryptophasia      latent private language waiting to surface
+    mutations[]       grammatical rewrite rules
+    chamber_a         entry / ingestion site
+    chamber_b         emergence / emission site
+    shimmer_state     transient rewrite buffer
+
+FUNDAMENTALS
+    concept_in  → chamber_a
+    chamber_a   → shimmer
+    shimmer     → chamber_b
+    chamber_b   → concept_out[CHANGED]
+    folds hold unfinished etymologies + waiting cryptophasia
+    incubators apply grammatical mutations across the liminal gap
