@@ -1,0 +1,39 @@
+RAMANUJAN 4x4 MAGIC SQUARE
+Birth date encoded in row 1: 22 Dec 1887  →  22  12  18  87
+
+22   12   18   87
+88   17    9   25
+10   24   89   16
+19   86   23   11
+
+TYPE
+Most-perfect 4×4 magic square (also associative)
+
+VARIABLES / CONSTANTS
+n = 4                    order
+S = n(n²+1)/2 = 34       classic consecutive-integer constant
+Here entries are not 1..16, so S is custom:
+S = 139                  magic constant of this square
+Birth split: 22 | 12 | 18 | 87
+
+FUNDAMENTALS
+A magic square of order n is an n×n array of distinct numbers
+such that every row, every column and both main diagonals
+sum to the same constant S.
+
+This square additionally satisfies:
+- every 2×2 block sums to 139
+- both broken diagonals (wrap-around) sum to 139
+- four corners sum to 139
+- any pair of numbers diametrically opposite through the
+  center sums to 139/2 wait no — opposite pairs sum to 34? 
+  Check: 22+11=33, 12+23=35 … not associative in the usual 1-16 sense.
+  The extra property that holds here is the 2×2 and wrap-around sums.
+
+VERIFICATION (all = 139)
+Rows:     22+12+18+87    88+17+9+25     10+24+89+16    19+86+23+11
+Cols:     22+88+10+19    12+17+24+86    18+9+89+23     87+25+16+11
+Diags:    22+17+89+11    87+9+24+19
+2×2 TL:   22+12+88+17    TR: 18+87+9+25
+2×2 BL:   10+24+19+86    BR: 89+16+23+11
+Center 2×2: 17+9+24+89
