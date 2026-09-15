@@ -1,0 +1,24 @@
+FUNCTIONS
+From inputs to outputs
+
+X                               Y
+x1  • ───────────────────────▶  y1
+x2  • ───────────────────────▶  y2
+x3  • ───────────────────────▶  y3
+ ⋮              f                ⋮
+xn  • ───────────────────────▶  ym
+
+FUNDAMENTALS
+Sets:     X  (domain / inputs)
+          Y  (codomain / outputs)
+Map:      f : X → Y
+Pairs:    {(x, y) ∈ X × Y | y = f(x)}
+Rule:     each x ∈ X has exactly one y ∈ Y
+
+DEFINITION
+A function f from X to Y is the set of ordered pairs
+{(x, y) ∈ X × Y | y = f(x)}
+such that every x has precisely one image y.
+
+NOTATION
+f : X → Y
