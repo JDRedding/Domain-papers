@@ -1,0 +1,35 @@
+AI PRODUCT LOOP  
+—  FUNDAMENTALS
+
+cost_of_building          = COLLAPSED     // AI made prototypes cheap
+cost_of_knowing_what      = UNCHANGED     // still requires humans
+pm_artifact               = taste + judgment + real user need
+
+old_loop : list[str] = ["spec", "scope", "build"]
+new_loop : list[str] = ["build", "play", "design", "ship"]
+
+
+THE OLD LOOP
+have an idea
+    → write the spec
+        → design it
+            → build it
+                → ship
+                    → learn
+                        ↺
+
+
+THE LOOP INVERTS
+have an idea
+    → build it
+        → play with it
+            → design it
+                → ship
+                    → learn
+                        ↺
+
+
+INSIGHT
+Prototypes are now cheap.
+Great products still require taste, judgment,
+and a clear understanding of what users actually need.
