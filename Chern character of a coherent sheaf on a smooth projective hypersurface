@@ -1,0 +1,46 @@
+The Chern character of a coherent sheaf on a smooth projective hypersurface
+Authors   David Favero, Tyler L. Kelly
+Link      arxiv.org/abs/2609.12759
+
+SETUP
+X = Z(Q) subset P^{2k+1}     smooth projective hypersurface, dim n = 2k
+G                            coherent sheaf on X
+Jac(Q)                       Jacobian ring of Q
+H_prim^{k,k}(X)              primitive cohomology
+Griffiths residue            identifies H_prim^{k,k}(X) with a graded piece of Jac(Q)
+
+MAIN FORMULA  (primitive Chern character)
+ch_k^prim(G)
+  =  ((-1)^k c_k / m)  *  tr(
+         d0 A d1 B ... d_{2k} A d_{2k+1} B
+       - d0 B d1 A ... d_{2k} B d_{2k+1} A
+     )
+where
+  A, B          matrices from a resolution / matrix factorization of G
+  di A, di B    entrywise partial derivatives wrt coordinate x_i
+  c_k           = (-1)^{k(k+1)/2} / k
+  m             normalizing constant from the resolution
+
+IF the resolution of G is by line bundles O_X(d) and is bounded,
+then E_0 and E_1 are the trivial sheaf and ch_k^prim(G) = 0.
+
+REFORMULATION OF HODGE
+f in Jac(Q) represents a Hodge class in H_prim^{k,k}(X)
+IFF there exist square matrices A_i, B_i and rationals c_i such that
+  A_i B_i = B_i A_i = Q * Id
+and
+  f = sum_i  c_i * tr( that same alternating product of A,B and partials )
+
+COROLLARY
+Hodge conjecture holds for X  IFF  the matrix-trace statement above holds.
+
+SPECIAL RESULT
+Hodge conjecture is proved for the degree-33 Fermat fourfold.
+
+TECHNIQUE
+Cech cocycle for ch(G) from the free resolution of the module of G
++ Carlson-Griffiths explicit Cech representatives
++ connecting maps  H^ell(X, Omega^{n-ell}) -> H^{ell-1}(X, Omega^{n-ell-1}(-deg Q))
+Geometric analogue of the Kapustin-Li formula, proved by Hodge theory
+rather than LG models. Gives an effective commutative-algebra method
+for the primitive part of ch(G).
