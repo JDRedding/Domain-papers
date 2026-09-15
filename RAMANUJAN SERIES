@@ -1,0 +1,35 @@
+```
+RAMANUJAN  1 + 2 + 3 + 4 + ...  =  -1/12
+
+SERIES
+  s  =  sum_{n=1 to inf} n
+  Type: divergent (harmonic-like, linear growth)
+  Partial sums:
+    s_N = N(N+1)/2   -->  +infinity   as N --> inf
+  Ordinary sum does not exist.
+
+REGULARIZED VALUE
+  Ramanujan summation assigns   s  =  -1/12
+  Riemann zeta analytic continuation:
+    zeta(s) = sum n^{-s}     (Re s > 1)
+    zeta(-1) = -1/12
+  Type: regularization (not Cauchy / ordinary summation)
+  The number is real; the method extracts a finite part
+  from an otherwise infinite expression.
+
+KEY DISTINCTION
+  Ordinary addition   : partial sums grow without bound
+  Regularization      : assigns a consistent finite value
+                        used in analysis and physics
+                        (Casimir effect, bosonic strings)
+
+RAMANUJAN
+  Srinivasa Ramanujan
+  Born 22 Dec 1887  –  Died 26 Apr 1920
+  Largely self-taught Indian mathematician
+  Other results still studied:
+    integer partitions
+    mock theta functions
+    highly composite numbers
+    continued fractions
+```
