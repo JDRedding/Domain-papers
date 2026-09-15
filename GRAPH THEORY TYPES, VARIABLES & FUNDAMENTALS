@@ -1,0 +1,62 @@
+GRAPH THEORY  •  TYPES, VARIABLES & FUNDAMENTALS
+
+CORE OBJECT
+  G = (V, E)
+  V  vertices / nodes
+  E  edges / links
+  n = |V|   order
+  m = |E|   size
+  deg(v)    degree of vertex v
+  N(v)      neighborhood of v
+
+GRAPH TYPES
+  Simple          no loops, no multiple edges
+  Multigraph      multiple edges allowed
+  Directed        edges have orientation (arcs)
+  Weighted        edges carry costs / capacities
+  Tree            connected, acyclic
+  Forest          disjoint union of trees
+  Network         directed + capacities (flows)
+  Tournament      oriented complete graph
+  Bipartite       V = A ∪ B, edges only between A and B
+  Arborescence    directed tree rooted outward / inward
+
+SEARCH
+  BFS   visit nearest neighbors first     (layers / distance)
+  DFS   walk down each branch first       (backtracking)
+
+PATHFINDING
+  Shortest Path            min-weight route between two nodes
+  Single-Source SP         from one root to all others
+  All-Pairs SP             every node to every other node
+  Minimum Spanning Tree    cheapest tree connecting all nodes
+  Random Walk              follow any edge at random
+                           ("drunkard's walk")
+
+CLASSIC RESULTS
+  Eulerian circuit     exists ⇔ all degrees even (connected)
+  Hamiltonian cycle    visits every vertex exactly once
+  Hall's Marriage Thm  bipartite matching condition
+  Menger's Theorem     min cut = max number of disjoint paths
+  Matrix-Tree Theorem  number of spanning trees via Laplacian
+  Turán's Theorem      extremal edges without K_r
+  BEST Theorem         number of Eulerian circuits in digraphs
+  Gallai–Milgram       path cover vs. independence number
+
+NETWORK FLOWS
+  capacity c(e), flow f(e) ≤ c(e)
+  conservation at intermediate vertices
+  max-flow min-cut
+
+COLORING
+  χ(G)  chromatic number
+  proper coloring: adjacent vertices different colors
+
+COMMON NOTATION
+  G[S]     induced subgraph on S ⊆ V
+  G - v    delete vertex
+  G - e    delete edge
+  κ(G)     connectivity
+  λ(G)     edge-connectivity
+  α(G)     independence number
+  ω(G)     clique number
