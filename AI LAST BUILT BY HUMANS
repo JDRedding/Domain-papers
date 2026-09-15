@@ -1,0 +1,81 @@
+AI LAST BUILT BY HUMANS
+Toward Genuine Recursive Self-Improvement
+Shanghai Jiao Tong / Tsinghua / ByteDance / Shanghai AI Lab  (2026)
+
+NOT A HOW-TO
+This is a research taxonomy + industry map, not a working L5 recipe.
+Challenges named in the paper: unreliable feedback, update failure,
+evaluator exploitation, and who still owns safety after autonomy rises.
+
+CORE CLAIM
+Current LLMs stall under scale. More tokens != unbounded intelligence.
+The last human-built system is a seed. After that, the improver improves itself.
+
+METRIC
+HCI  Headroom-Closed Index
+     0   = frontier of the entry year
+     100 = saturated / perfect score
+Shows remaining headroom is uneven:
+     science high, software/tools/agents still open
+
+TYPES / OBJECTS
+Model            weights, architecture, training recipe
+Improver         procedure that changes the model or harness
+Evaluator        scorer / verifier of candidate updates
+Experience       tasks, traces, deployment outcomes
+Harness          tools, memory, prompts, workflow
+Mechanism        the process that produces future improvements
+
+VARIABLES (informal)
+A_t              system state at step t
+I_t              improver at step t
+E_t              evaluator at step t
+X_t              experience acquired at t
+Delta            accepted persistent update
+HCI(d)           remaining headroom in domain d
+
+LOOP
+observe limitation -> propose update -> verify -> persist -> reuse
+If I_{t+1} = I_t(A_t, X_t) and I can rewrite I itself, that is L5.
+
+AUTONOMY LADDER
+B0   In-task only
+     refine this answer, no persistent state
+     Self-Refine style generate-feedback-refine
+
+L1   Improvement-execution autonomy
+     AI runs a human-designed improvement procedure
+     fine-tune, filter data, apply labeled edits
+     humans still define WHAT and HOW
+
+L2   Improvement-strategy autonomy
+     AI diagnoses weakness and chooses the intervention
+     prompt search, agent/workflow search, training-code search
+     humans still own the objective and search space
+
+L3   Experience-acquisition autonomy
+     AI decides what to practice next
+     self-play, curricula, environment interaction
+     learner state conditions future data
+
+L4   Environment-adaptation autonomy
+     deployment outcomes rewrite rules, tools, memory
+     co-evolving evaluators, selective retention
+     live world becomes part of the training loop
+
+L5   Recursive meta-improvement
+     AI redesigns the improver / evaluator / search itself
+     methods humans may not have specified
+     humans remain on mission, safety, acceptance only
+
+FUNDAMENTALS
+Persistent update     change must survive the episode
+Closed loop           capability gain must feed the next gain
+Attribution           did the system improve, or just search harder?
+Verification          evaluator gaming is the failure mode
+Safe inheritance      a bad update must not lock in
+
+TRAJECTORY
+human engineers  ->  seed system  ->  self-growing improver
+linear gap       ->  vertical gap once L5 holds
+
