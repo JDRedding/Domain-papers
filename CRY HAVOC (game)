@@ -1,0 +1,48 @@
+CRY HAVOC
+Medieval man-to-man hex skirmish
+Original 1981 (Standard Games) · 2026 remaster (Footsore / Gary Chalk)
+
+TYPE
+Tactical wargame. One counter = one named person or animal.
+Scale: 1 hex ≈ 2 m. 1 turn ≈ 5–15 seconds.
+Players: 2+. Play time: 1–3 hours. Complexity: low–medium.
+
+MAPS
+Hex grid, large hexes (≈2.5 cm).
+Original pair: The Village, The Crossroads (A2 / 40×60 cm).
+Later / remaster extras: The Forest, The Pasture, The Wooded Vale.
+Terrain types: open, slope, scrub, trees, buildings, river, wall, road.
+Terrain cost: 1 MP open; 2 MP slope/scrub/trees (often impassable to horse); higher for windows/doors.
+
+UNITS / TYPES
+Peasants, yeomen, billmen, sergeants, men-at-arms, squires, knights (foot + mounted), archers, crossbowmen, pack animals.
+Each character unique (name, costume, values). Color-coded sides.
+
+COUNTER STATES (variables)
+Healthy / Stunned / Wounded / Dead
+Mounted characters use extra counters (rider + horse / riderless / dead horse).
+Printed values on counter:
+  Attack (melee / weapon)
+  Defence (armour)
+  Movement Points (MP) — blue number
+Typical MP (healthy): unarmoured foot 8 · armoured infantry 6 · dismounted knight 4 · unarmoured horse 15 · armoured horse 12
+Wound ≈ halves values. Stun = minimal defence, inactive one turn.
+
+SEQUENCE (fundamentals)
+Phased turn (original):
+  1. Shortbow fire
+  2. Crossbow fire (except those already in melee)
+  3. Movement (crossbows that fired cannot move)
+  4. Second shortbow fire
+  5. Melee
+  6. Recover stunned
+Missile range bands + CRT. Melee: attack vs defence ratio → d10 / CRT.
+Results: retreat, stun, wound, kill. Terrain / facing / flank modifiers apply.
+Stacking: normally 1 living character per hex. Dead bodies remain and impede.
+
+VICTORY
+Scenario-driven: kill / capture opponents, control location, or ransom.
+Dead counters stay on map.
+
+COMPATIBILITY
+2026 remaster uses original rules + new Chalk art. Maps and counters compatible with 1981 edition.
