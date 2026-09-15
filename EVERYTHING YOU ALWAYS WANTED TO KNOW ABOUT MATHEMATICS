@@ -1,0 +1,65 @@
+EVERYTHING YOU ALWAYS WANTED TO KNOW ABOUT MATHEMATICS
+(*But didn’t even know to ask)
+A Guided Journey Into Abstract Mathematics and the Writing of Proofs
+Brendan W. Sullivan  |  CMU  |  698 pages  |  Free PDF
+
+WHAT MATHEMATICS ACTUALLY IS
+Mathematics is not just calculation.
+It is inventing precise statements, deciding whether they are true,
+and writing arguments that force other people (or aliens) to agree.
+A statement is true only if it can be shown to hold always.
+
+The whole book trains you to move from “it looks true”
+to “here is a written argument that it must be true.”
+
+NUMBER TYPES (SETS OF NUMBERS)
+N   naturals     {0, 1, 2, 3, ...}          counting / induction
+Z   integers     {..., -2, -1, 0, 1, 2, ...}
+Q   rationals    { p/q | p,q in Z, q != 0 }
+R   reals        all limits of rationals    (includes sqrt(2), pi, e)
+C   complex      a + bi                     a,b in R
+
+COMMON VARIABLES
+n, m, k, i, j     usually elements of N or Z
+x, y, z           usually elements of R
+p, q              primes or rationals
+f, g, h           functions
+A, B, S, T        sets
+P(n)              a statement that depends on n
+epsilon, delta    small positive reals (analysis later)
+
+SET FUNDAMENTALS
+x ∈ A             x is an element of A
+A ⊆ B             A is a subset of B
+A = B             same elements
+∅                 empty set
+A ∪ B             union        (or)
+A ∩ C             intersection (and)
+A \ B             difference
+P(A)              power set    (all subsets of A)
+|A|               cardinality  (size)
+
+BASIC LOGICAL CONNECTIVES
+P ∧ Q             and
+P ∨ Q             or
+¬P                not
+P → Q             if P then Q   (implies)
+P ↔ Q             if and only if
+∀x                for all x
+∃x                there exists x
+
+CORE PROOF TECHNIQUES
+Direct            assume P, derive Q
+Contradiction     assume P and ¬Q, reach absurdity
+Contrapositive    prove ¬Q → ¬P instead of P → Q
+Induction         prove P(0) or P(1), then P(k) → P(k+1)
+Cases             split into exhaustive situations
+Construction      exhibit the object that must exist
+
+QUICK CLASSIC FACTS THE BOOK WALKS THROUGH
+Angles in a triangle sum to 180° (needs a proof, not a picture)
+There are infinitely many primes (Euclid)
+sqrt(2) is irrational
+Sum of first n positives = n(n+1)/2   (Gauss)
+Monty Hall: switching wins with probability 2/3
+Polynomials, binomial coefficients, pigeonhole, bijections
