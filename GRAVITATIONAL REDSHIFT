@@ -1,0 +1,32 @@
+GRAVITATIONAL REDSHIFT
+
+A photon climbing out of a gravitational well arrives with less energy than it started with.
+
+Spacetime curvature that slows proper time near a mass also stretches every electromagnetic wave that escapes.
+
+Crests emitted a proper interval apart are received far away after a longer coordinate time, so frequency falls and wavelength grows.
+
+FREQUENCY RATIO (Schwarzschild)
+
+    ν_∞ / ν  =  √(1 − 2GM / r c²)
+
+WEAK-FIELD LIMIT
+
+    Δν / ν  =  ΔΦ / c²
+
+VARIABLES
+  ν      frequency at emission (proper time)
+  ν_∞    frequency measured at infinity
+  G      Newton's gravitational constant
+  M      mass of the source
+  r      radial coordinate of emission
+  c      speed of light
+  Φ      Newtonian gravitational potential
+  Δν     observed frequency shift
+  ΔΦ     difference in gravitational potential
+
+FUNDAMENTALS
+  • Gravitational time dilation: clocks run slower deeper in a potential well.
+  • Photons lose energy (redshift) climbing out; they gain energy (blueshift) falling in.
+  • Einstein derived the effect from the equivalence principle in 1907.
+  • Pound–Rebka confirmed it with gamma rays in 1959.
