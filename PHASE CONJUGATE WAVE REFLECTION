@@ -1,0 +1,53 @@
+PHASE CONJUGATE WAVE REFLECTION
+Time-reversed wave propagation
+
+MAP
+  ψ  ↦  ψ*
+  Complex conjugation of monochromatic amplitude
+  ≡ time reversal  t  →  -t
+
+FIELD
+  Re[ ψ(r) exp(-i ω t) ]
+  After conjugation of complex amplitude
+  becomes the field that would exist if t itself
+  had been sent to -t.
+
+CONSEQUENCE
+  Distortion collected on the outward path
+  is cancelled on the return.
+  The wave retraces its own history.
+
+HISTORY
+  Zel’dovich (1972)
+  Stimulated Brillouin scattering
+  returned an aberrated laser beam
+  as its own undistorted predecessor.
+
+MIRROR TYPES
+  Ordinary mirror     : reflects
+  Phase-conjugate     : restores
+
+VARIABLES
+  ψ          complex wave amplitude
+  ψ*         complex conjugate
+  r          position
+  t          time
+  ω          angular frequency
+  k          wave number
+  λ          wavelength
+  n          refractive index
+  d1, d2     distances to field point
+  M1, M2     interacting masses
+  ε0         permittivity of free space
+  Dx, Dy, Dz electric flux density components
+  nx, ny, nz refractive-index components
+
+FUNDAMENTALS
+  Fresnel zone
+    R_Fv = √[ n λ (d1 + d2) ]
+
+  Field equation
+    F_n = -k² T_μν
+
+  Energy density
+    u = ½ ( Dx²/(ε0 nx²) + Dy²/(ε0 ny²) + Dz²/(ε0 nz²) )
