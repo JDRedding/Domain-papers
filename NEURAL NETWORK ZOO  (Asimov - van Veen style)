@@ -1,0 +1,131 @@
+NEURAL NETWORK ZOO  (Asimov / van Veen 2016 style)
+Legend of cell types
+  I  Input          nI Noisy input       bI Backfed input
+  H  Hidden         pH Probabilistic H   sH Spiking H
+  O  Output         mO Match I/O
+  R  Recurrent      M  Memory            dM Diff memory
+  K  Kernel         C  Conv / pool
+
+FUNDAMENTALS
+  Activation a = f(Wx + b)     Loss L = measure(y, yhat)
+  Backprop   dW = dL/dW        SGD/Adam update W := W - lr * dW
+  Recurrence h_t = f(h_{t-1}, x_t)
+  Conv       y = K * x         Residual y = F(x) + x
+  Latent     z ~ q(z|x)        Adversarial min_G max_D V(D,G)
+
+PERCEPTRON (P)
+  I -- O
+  y = step(w·x + b)
+
+FEED FORWARD (FF)
+  I -- H -- O
+  y = f2(W2 f1(W1 x + b1) + b2)
+
+RADIAL BASIS (RBF)
+  I -- H(phi) -- O
+  phi_i = exp(-||x-c_i||^2 / 2s^2)
+
+DEEP FEED FORWARD (DFF)
+  I -- H -- H -- H -- O
+  stacked FF, more capacity, vanishing-grad risk
+
+RNN
+  I -- R -- O
+       ^
+       |
+  h_t = tanh(W_h h_{t-1} + W_x x_t)
+
+LSTM
+  I -- M -- O     gates: i f o
+  c_t = f*c_{t-1} + i*tanh(...)
+  h_t = o * tanh(c_t)
+
+GRU
+  I -- dM -- O    gates: z r
+  h_t = (1-z)*h_{t-1} + z*h_tilde
+
+AUTOENCODER (AE)
+  I -- H -- O(=I)
+  reconstruct x from bottleneck z
+
+VAE
+  I -- pH -- O     z ~ N(mu, sigma)
+  L = recon + KL(q(z|x) || p(z))
+
+DENOISING AE (DAE)
+  nI -- H -- O
+  train on corrupted x, recover clean x
+
+SPARSE AE (SAE)
+  I -- H -- O
+  + sparsity penalty on hidden activations
+
+MARKOV CHAIN (MC)
+  pH -- pH -- pH   P(s_{t+1}|s_t)
+
+HOPFIELD (HN)
+  fully connected attractor net
+  energy E = -1/2 s^T W s    recall by energy descent
+
+BOLTZMANN (BM)
+  pH fully connected, stochastic
+  P ~ exp(-E/T)
+
+RESTRICTED BM (RBM)
+  I -- pH     bipartite, no intra-layer edges
+  contrastive divergence training
+
+DEEP BELIEF NET (DBN)
+  stacked RBMs then fine-tune
+  I -- pH -- pH -- O
+
+DEEP CONV NET (DCN / CNN)
+  I -- C -- C -- H -- O
+  conv + pool + fully connected
+  y = f(K * x + b)
+
+DECONV NET (DN)
+  I -- C^T -- C^T -- O
+  upsample / transposed conv
+
+DCIGN
+  encoder CNN -> latent graphics vars -> decoder
+  inverse graphics flavor of AE
+
+GAN
+  G: z -- H -- fake
+  D: real/fake -- H -- O
+  min_G max_D  E[log D(x)] + E[log(1-D(G(z)))]
+
+LIQUID STATE MACHINE (LSM)
+  sH reservoir, readout trained only
+  liquid dynamics, sparse random recurrency
+
+EXTREME LEARNING MACHINE (ELM)
+  I -- H(fixed rand) -- O
+  only output weights solved (least squares)
+
+ECHO STATE NET (ESN)
+  I -- R(fixed reservoir) -- O
+  only readout trained, echo-state property
+
+DEEP RESIDUAL (DRN / ResNet)
+  I -- H --+-- H --+-- O
+           |       |
+           +-------+
+  y = F(x) + x     eases deep training
+
+KOHONEN / SOM (KN)
+  I -- H(grid)
+  winner-take-all + neighborhood update
+  topographic map of input manifold
+
+SVM (not strictly NN, often in zoo)
+  I -- K -- O
+  max-margin  y = sign(sum a_i y_i K(x,x_i) + b)
+
+NEURAL TURING MACHINE (NTM)
+  I -- H -- O
+         |
+        M controller + external memory
+  read/write heads, addressing
