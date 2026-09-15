@@ -1,0 +1,25 @@
+HATFIELD APPLE-1   (working 1976 unit)
+
+type Apple1 {
+  nickname        : string   = "Hatfield"
+  registry_id     : int      = 48
+  year            : int      = 1976
+  cpu             : chip     = MOS 6502
+  ram             : bytes    = 8 KB
+  condition       : bool     = true          // operational
+  estimate_usd    : range    = 500000..800000
+  auction         : house    = Bonhams
+  sale_window     : date     = 2026-10-04 to 2026-10-14
+  signed_by       : names    = Wozniak (board) + Jobs (1978 letter)
+}
+
+FUNDAMENTALS
+  first commercial Apple computer
+  designed and hand-built by Steve Wozniak
+  ~200 boards produced, ~50 assembled for Byte Shop
+  original retail price $666.66
+  fewer than 75 verified survivors
+  even fewer still working
+  original owner Fred Hatfield declined Jobs trade-in for Apple II
+  last auctioned 2013 for ~$671,400
+  lot includes board, cassette interface, keyboard, monitor, manuals
