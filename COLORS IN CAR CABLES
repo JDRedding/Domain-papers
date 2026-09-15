@@ -1,0 +1,22 @@
+COLORS IN CAR CABLES
+
+          [ CAR ]
+
+     |        |        |        |        |        |
+    RED     BLACK    YELLOW    BLUE    GREEN    WHITE
+     |        |        |        |        |        |
+    +12V     GND      ACC      REM      SIG      LGT
+
+Red     = Battery positive  (type: power)
+Black   = Chassis ground    (type: return / negative)
+Yellow  = Accessories + ignition  (type: switched power)
+Blue    = Remote accessories      (type: switched / signal)
+Green   = Sensors + control       (type: signal / low-current)
+White   = Lighting circuits       (type: load / illumination)
+
+Fundamentals
+- Typical system: 12 V DC
+- Red = positive feed from battery
+- Black = ground / negative return
+- Colors are a common convention, not a universal standard
+- Always confirm with the vehicle-specific wiring diagram
