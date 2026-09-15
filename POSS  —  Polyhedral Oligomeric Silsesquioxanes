@@ -1,0 +1,40 @@
+POSS  —  Polyhedral Oligomeric Silsesquioxanes
+
+TYPE
+  Hybrid organic–inorganic nanostructure
+  Cage: rigid inorganic Si–O core
+  Shell: tailorable organic functional groups (R)
+
+GENERAL FORMULA
+  (RSiO1.5)n     n = 8 (most common cube)
+  Size ≈ 1–3 nm
+  Geometry: 8 corners, 12 edges, 6 faces
+
+KEY VARIABLES
+  R          = organic substituent (amine, epoxy, vinyl, alkyl…)
+  Loading    = typically 1–10 wt% in polymer matrix
+  Dose       = ionizing radiation up to ~10 MGy
+  Matrix     = epoxy, cyanate ester, polyimide, polyurethane, PP
+
+FUNDAMENTALS
+  High-energy radiation (e-beam, γ, cosmic rays) scissions polymer chains
+  → generates free radicals → chain-reaction degradation / mass loss / micro-cracking
+
+  POSS cage acts as:
+    • mechanical trap
+    • chemical radical scavenger
+    • energy dissipator
+  Result: halted chain scission, preserved flexural strength, reduced outgassing
+
+OBSERVED PERFORMANCE
+  Mass-loss reduction     up to 33.4 % (epoxy blends)
+  Mechanical retention    strength & flexural properties held at 10 MGy
+  UV / AO resistance      surface ablation and micro-cracking suppressed
+  Does NOT attenuate high-energy γ-rays like lead
+  Functions as nano-stabilizer, not bulk shield
+
+APPLICATION DOMAINS
+  Aerospace structures & thermal-protection systems
+  Nuclear / radiation facilities
+  High-performance composites & coatings
+  Electronics / optics requiring UV + radiation durability
