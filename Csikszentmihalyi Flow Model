@@ -1,0 +1,54 @@
+CHALLENGE
+    ^
+    |
+    |          FEAR OF FAILURE
+    |     ANXIETY
+    |                    /------------------------\
+    |                   /                          \
+    |                  /         FLOW STATE         \
+    |                 /                              \
+    |                /                                \
+    |     DOUBT     /                                  \
+    |              /                                    \
+    |             /                                      \
+    |            /                                        \
+    |           /                                          \
+    |          /                                            \
+    |         /                                              \
+    |        /                                                \
+    | APATHY/                                                  \ LOSS OF INTEREST
+    |      /                                                    \
+    |     /                                                      \
+    |    /                                                        \
+    |   /                                                          \
+    |  /                                                            \
+    | /                      NOSTALGIA                               \
+    |/                                                                \
+    +------------------------------------------------------------------> SKILLS
+
+
+FUNDAMENTALS (Csikszentmihalyi Flow Model)
+
+Variables:
+  C  = perceived challenge of the task
+  S  = perceived skill / competence
+  Δ  = C − S   (mismatch)
+
+Core rule:
+  Flow occurs when C ≈ S and both are high.
+
+State map (by Δ and magnitude):
+
+  High C, Low  S  →  ANXIETY   (fear of failure, overwhelm)
+  High C, Mid  S  →  AROUSAL / WORRY
+  High C, High S  →  FLOW      (absorption, time distortion)
+  Mid  C, High S  →  CONTROL
+  Low  C, High S  →  BOREDOM   (loss of interest)
+  Low  C, Mid  S  →  RELAXATION
+  Low  C, Low  S  →  APATHY
+  Mid  C, Low  S  →  WORRY / DOUBT
+
+Practical levers:
+  Raise C when bored  → add difficulty, constraints, stakes
+  Raise S when anxious → practice, decompose, get feedback
+  Keep both rising together to stay inside the flow channel
