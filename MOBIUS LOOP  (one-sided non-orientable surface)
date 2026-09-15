@@ -1,0 +1,29 @@
+MOBIUS LOOP  (one-sided non-orientable surface)
+
+PARAMETRIC TYPE
+  Regular surface immersion  R^2 -> R^3
+  Parameters:  u  (angular / twist),  v  (width)
+
+EQUATIONS
+  x(u,v) = ( 1 + (v/2) cos(u/2) ) cos u
+  y(u,v) = ( 1 + (v/2) cos(u/2) ) sin u
+  z(u,v) = (v/2) sin(u/2)
+
+VARIABLES
+  u  :  [0, 2pi]     once around the loop, half-twist in argument u/2
+  v  :  [-1, 1]      across the strip  (width scale set by the factor 1/2)
+  R  =  1            centerline radius (the leading "1")
+
+FUNDAMENTALS
+  Topology     :  non-orientable, one boundary component
+  Identification :  (u,v) ~ (u+2pi, -v)   half-twist glue
+  Euler char.  :  chi = 0
+  Boundary     :  one closed curve (not two, unlike a cylinder)
+  Local type   :  ruled surface; centerline is a circle of radius 1
+  Twist        :  180 deg per full circuit in u
+
+NOTES
+  At v = 0 the map traces the unit circle in the xy-plane.
+  The cos(u/2), sin(u/2) terms implement the half-twist.
+  Traversing u from 0 to 4pi returns to the same point with the
+  same normal (two full trips restore orientation).
