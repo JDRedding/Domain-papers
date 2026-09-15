@@ -1,0 +1,53 @@
+TRIUMPH & TRAGEDY  (トラトラ)
+GMT Games, 2015  |  Design: Craig Besinque
+Type: 3-player (also 2-player) geopolitical grand strategy
+Period: 1936-1945 Europe  |  Play time: 4-6 hours
+Map: area-movement Eurasia (Americas / Empire abstract)
+
+FACTIONS (RIVALS)
+AXIS     Fascist   Germany + Italy     starts armed, industry-strong
+WEST     Capitalist Britain + France   (+USA later)  economy-strong, initially disarmed
+USSR     Communist Soviet Union        population/resource deep, industry-limited
+
+CORE VARIABLES
+POP  Population  (cities / controlled minors)
+RES  Resources   (oil, minerals, etc.)
+IND  Industry    (factories; raised only by Investment cards)
+PROD Production  = least of POP, RES, IND
+     At Peace: ignore RES
+     At War:   RES counts; can be Blockaded
+
+Spend 1 PROD each on:
+- unit steps / new cadres
+- Action cards   (Diplomacy + Command)
+- Investment cards (Tech + Factories)
+
+DIPLOMACY ON MINORS
+Influence markers:
+1  Associate
+2  Protectorate   (defensive pact)
+3  Satellite      (full military ally; you use its POP/RES)
+
+Attacking a Satellite = Declaration of War on its patron.
+Peace Dividend chit each year you stay at Peace (secret 0-2).
+
+YEAR STRUCTURE
+New Year
+  Victory check
+  Production (build units / buy cards)
+  Government (card play + diplomacy resolve)
+Then 4 Seasons of movement / combat
+
+VICTORY (any one)
+Economic   25 VP at New Year check
+           VP = current PROD + Peace Dividends + A-bomb levels
+               +2 per enemy capital controlled  -1 per DoW issued
+Military   Control two rival Main/Sub-Capitals at once
+Atomic     Complete 4-stage A-bomb AND deliver it (air in range)
+1945 end   Highest VP if nobody else has already won
+
+SHORT / 1939 SCENARIO
+Starts mid-setup after a special diplomacy placement round.
+Used for faster teaching / lecture play.
+Alliances, DoW timing, and whether the West opens a second
+front become the decisive variables.
