@@ -1,0 +1,62 @@
+# Winamp (1997)
+WINAMP_HARDWARE v1.0   // conceptual rack stack of classic Winamp UI
+
+: skinnable Win32 MP3 player. 
+
+Modules = player + 10-band EQ + playlist. 
+Llama track = official intro sample.
+
+```
+        WINAMP PLAYER
+   [==== SPECTRUM ====]  kbps  kHz
+   1. DJ MIKE LLAMA - LLAMA
+   <<  |>  >>   [=======]  SHUFFLE  EQ  PL
+        MONO  STEREO
+
+        WINAMP EQUALIZER
+   PREAMP  +12dB
+   | | | | | | | | | | | |
+   60 170 310 600 1K 3K 6K 12K 14K 16K
+   PRESETS
+
+        WINAMP PLAYLIST
+   1. DJ Mike  - Llama Whippin' Intro
+   [ADD] [REM] [SEL] [MISC]     LIST OPTS
+```
+
+UNIT_TYPE: Player
+```
+  display     : "1. DJ MIKE LLAMA - LLAMA"
+  bitrate     : kbps
+  samplerate  : kHz
+  viz         : spectrum analyzer
+  transport   : <<  |>  >>
+  flags       : SHUFFLE  EQ  PL  MONO/STEREO
+  slogan_ref  : llama whip
+```
+
+UNIT_TYPE: Equalizer
+```
+  bands       : 10
+  freqs_Hz    : 60 170 310 600 1k 3k 6k 12k 14k 16k
+  range_dB    : -12 .. +12
+  preamp      : +/- 12 dB
+  mode        : ON / AUTO
+  presets     : graphic EQ memory
+```
+
+UNIT_TYPE: Playlist
+```
+  track_01    : "DJ Mike Llama - Llama Whippin' Intro"
+  controls    : ADD REM SEL MISC
+  opts        : LIST OPTS
+```
+
+FUNDAMENTALS
+```
+  origin      : Nullsoft Winamp (1997)
+  core        : skinnable Win32 MP3 player
+  modules     : player + 10-band EQ + playlist
+  sample      : official llama intro sting
+```
+
