@@ -1,0 +1,100 @@
+UNTOLD DESTINY : BASIC EDITION
+
+Character Name: _    Player Name: _
+Class & Level:  _    Race & Sex:  _
+
+Vision: _    Movement: _    Experience: __
+Next Level: _    Destiny Points Current: _
+
+
+STRENGTH      Value _   Modifier _   D20s __
+DEXTERITY     Value _   Modifier _   D20s __
+CONSTITUTION  Value _   Modifier _   D20s __
+INTELLIGENCE  Value _   Modifier _   D20s __
+WISDOM        Value _   Modifier _   D20s __
+CHARISMA      Value _   Modifier _   D20s __
+
+
+HIT POINTS     Maximum _   Current _
+STAMINA        Maximum _   Current _
+SPELL POINTS   Maximum _   Current _
+
+
+WOUNDS
+[ ] No penalty yet
+[ ] -10 feet movement
+[ ] Bane on Tests
+[ ] When you spend stamina, spend 2 instead of 1
+[ ] Death
+
+RECOVERY
+Recovery Test: Recover Hit Points equal to result, recover 2 Stamina.
+
+WOUND THRESHOLDS
+1/4 HP   Constitution Test or 1 Wound
+1/2 HP   Constitution (Bane) Test or 2 Wounds
+3/4 HP   Constitution (2 Banes) Test or 3 Wounds
+Max HP   Constitution (3 Banes) Test or 4 Wounds
+Overflow beyond Max HP: you die. Nothing can prevent this.
+
+
+DEFENCES
+Parry (STR) __
+Dodge (DEX) __
+Armour Rating __
+Resistances __
+
+INITIATIVE (INT) __
+
+
+SPELLS
+Spellcasting Attribute __
+Maximum Focus Spells __
+Spells Known __
+
+RACE / CLASS FEATURES
+WEAPONS
+Weapon              Damage    Bonus    Keywords              Enc
+_    _____    ___________      __
+______    _    ____________      __
+______    _    ____________      __
+______    _    ____________      __
+______    _    ____________      __
+
+
+EQUIPMENT
+Head (helm, headbands)          Enc __
+Neck (amulet, necklace)         Enc __
+Back (cloak, cape)              Enc __
+Body (armour, robes, shirt)     Enc __
+Arms (armbands, gloves)         Enc __
+Finger (ring)                   Enc __
+Finger (ring)                   Enc __
+Waist (belt, girdle)            Enc __
+Feet (boots)                    Enc __
+
+Other
+Enc __
+Enc __
+Enc __
+Enc __
+
+Encumbrance cannot exceed your maximum encumbrance.
+If it does you cannot move and if forced to do so you must drop any items carried and your backpack.
+Maximum Encumbrance = Strength Modifier x 3
+50 coins/jewellery = 1 encumbrance
+Total Encumbrance _    Max Encumbrance _
+
+
+CURRENCY
+Stars     2,000 pn    __
+Florins     100 pn    __
+Moons        20 pn    __
+Pennies       1 pn    __
+
+---
+
+Untold Destiny Basic Edition, making it wider but shorter to fit standard US paper while preserving core layout elements.
+
+The sheet includes dedicated sections for attributes with value/modifier/D20 fields, hit points, stamina, spell points, wounds with thresholds, defenses, race/class features, spells, weapons, and equipment tracking.
+
