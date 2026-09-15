@@ -1,0 +1,71 @@
+SUN - SPARC - UNIX  
+—  OBJECTIVE BRIEF
+(era of the vintage OpenWindows + Netscape Communicator 4.75 screenshot)
+
+COMPANY
+  Sun Microsystems, Inc.   founded 1982
+  Name from Stanford University Network
+  Founders: Andy Bechtolsheim, Vinod Khosla, Scott McNealy, Bill Joy
+  Acquired by Oracle 2010
+  Slogan: "The network is the computer"
+
+UNIX LINEAGE
+  Type: multiuser, multitasking, networked OS
+  Path: BSD Unix  ->  SunOS (BSD-based)  ->  Solaris (SVR4 base + Sun engineering)
+  Solaris: enterprise Unix, NFS, later ZFS / DTrace / zones
+  File sharing standard: NFS (1984)
+
+SPARC  (Scalable Processor ARChitecture)
+  Type: RISC ISA  (Reduced Instruction Set Computer)
+  Introduced: 1987   first systems: Sun-4 / SPARCstation line 1987-1989
+  Style: load-store (register-register)
+  All arithmetic/logic on registers; memory only via load/store
+  Word: 32-bit (V7/V8) then 64-bit (V9 / UltraSPARC)
+  Integer unit (IU) + optional FPU
+  Register windows (Berkeley RISC heritage):
+    visible set: 32 integer registers
+      %g0..%g7   globals     (%g0 hardwired 0)
+      %o0..%o7   outs
+      %l0..%l7   locals
+      %i0..%i7   ins
+    window slide on call/return reduces memory traffic
+  Open ISA; licensed implementations (Fujitsu, Cypress, TI, later Oracle)
+
+DESKTOP IN THE SCREENSHOT
+  Environment: OpenWindows
+    X11 server (Xsun) + OPEN LOOK GUI
+    Window manager: olwm
+    Toolkits: XView, OLIT
+    DeskSet tools
+    Last major: OpenWindows 3.6.2 (2000)
+    Later replaced by CDE then GNOME; dropped from Solaris 9+
+  Visible apps:
+    Remote Program Launcher
+    Xsol (solitaire)
+    Icon Editor v3.6.2
+    Calculator
+    Netscape Communicator 4.75
+
+NETSCAPE COMMUNICATOR 4.75
+  Released: 2000-09-17
+  Suite: Navigator + Messenger + Composer + extras
+  Unix/Solaris port common on SPARC workstations
+  Screenshot about: page shows
+    Netscape Communications copyright 1994-2000
+    JavaScript invented/implemented by Netscape
+    Netscape name trademark of Sun Microsystems
+    (Sun and Netscape were close in the Java / early-web era)
+
+FUNDAMENTALS TIED TO THE IMAGE
+  Display: X Window System over Unix
+  Host example in launcher: 1.1.1.7 / nathan
+  Typical stack of that era:
+    SPARC CPU
+    Solaris kernel
+    X11 + OpenWindows
+    Motif/OPEN LOOK widgets
+    Netscape 4.x as the web client
+  Why it mattered:
+    dedicated Unix workstation instead of timeshared mini/mainframe
+    open systems vs proprietary
+    RISC + Unix + TCP/IP + NFS as the 80s-90s engineering standard
