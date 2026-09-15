@@ -1,0 +1,35 @@
+SEEbeck EFFECT
+A temperature difference becomes electricity.
+
+DISCOVERED
+1821  Thomas Johann Seebeck (1770–1831)
+
+PRINCIPLE
+Heating one junction of two dissimilar conductors
+while keeping the other cooler produces a voltage.
+No battery required. The temperature gradient itself
+drives charge separation.
+
+FUNDAMENTALS
+Conductors: copper and iron (or other dissimilar pair)
+Hot junction temperature: T_hot
+Cold junction temperature: T_cold
+Seebeck coefficient: α  (material-dependent, roughly constant)
+Thermoelectric voltage (EMF): V
+
+RELATION
+V ≈ α (T_hot − T_cold)
+
+SETUP
+Copper wire ── hot liquid (T_hot)
+Iron wire   ── ice water (T_cold)
+Junctions connected; voltmeter measures generated V
+
+APPLICATIONS
+Thermocouples (temperature measurement)
+Thermoelectric generators (waste-heat to electricity)
+
+FURTHER WORK
+Peltier cooling effects
+thermocouple calibration
+
