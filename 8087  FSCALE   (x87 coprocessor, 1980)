@@ -1,0 +1,67 @@
+8087  FSCALE   (x87 coprocessor, 1980)
+ST(0)  :=  ST(0)  *  2 ^ trunc(ST(1))
+fast scale by power of two  =  add integer N to exponent
+
+TYPES  (internal temporary real, 80 bits)
+  bit 79      S     sign
+  bits 78-64  E     15-bit exponent, bias 16383
+  bits 63-0   F     64-bit significand, explicit integer bit
+                    form  1.bbbb...   *  2^(E-16383)
+  true exp range    -16382 .. +16383
+  extra datapath    G R S  (guard, round, sticky) for rounding
+
+TAGS  (2 bits per stack slot)
+  00  valid
+  01  zero
+  10  special   (NaN / Inf / denorm / unsupported)
+  11  empty
+
+STACK / VARIABLES
+  ST(0)  value to scale          -> tmpA
+  ST(1)  scale factor N          -> tmpB
+  tmpA, tmpB     80-bit temps + tag
+  tmpC           64-bit frac temp / constant hold
+  Breg / sumreg  adder operands
+  expConv        exponent converter  (specials, ovf, unf)
+  stackPtr       TOS pointer, 8-deep stack
+  shifter        64-bit left/right barrel
+  adder          ~69-bit, cin=1 used for subtract
+
+CORE MATH
+  value  =  S * F * 2^(E - 16383)
+  FSCALE adds integer N to E, leaves F and S alone
+  N comes from ST(1) by converting its significand to int:
+      shift_count  =  0x403E - ST(1).exp
+      0x403E       =  63 + 16383   =  16446
+      shift right F by (63 - true_exp) bits
+  if ST(1) negative:  E := E - N   (adder cin=1)
+  else:               E := E + N
+
+MICROCODE SKETCH  (entry #0748)
+  ST(0) -> tmpA
+  if tmpA tag ZERO     bail
+  ST(1) -> tmpB
+  if tmpB tag ZERO     bail
+  if empty/special     call SPECIAL_TMPS
+  load const 0x403E
+  convert tmpB frac -> integer N via shifter
+  add/sub N to tmpA.exp
+  expConv checks overflow / underflow
+  if abnormal          call NONNORMAL_RESULT / CREATE_DENORM
+  tmpA -> ST(0)
+  RNI
+
+SPECIAL CASES
+  zero * anything     -> 0
+  empty register      -> invalid exception
+  NaN / Inf / denorm  -> SPECIAL_TMPS
+  overflow            -> Inf or max (mask dependent)
+  underflow           -> denorm or 0
+  negative N          -> subtract from exponent
+
+COMPLEXITY
+  140+ micro-instructions
+  3 subroutine levels
+  1648 total uops in 8087 microcode ROM
+  looks like "add to exponent" — is not
+```
