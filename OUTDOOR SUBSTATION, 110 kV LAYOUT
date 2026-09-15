@@ -1,0 +1,72 @@
+OUTDOOR SUBSTATION  —  110 kV LAYOUT
+
+                         BUS PIPES (rigid tubular bus)
+            ===============================================
+                  |           |           |           |
+               INS          INS         INS         INS
+                  |           |           |           |
+                  +-----------+-----------+-----------+
+                              |   CABLES
+                              |
+                         BUSHINGS
+                              |
+                    +---------+---------+
+                    |  OIL CIRCUIT      |
+                    |  BREAKER  110 kV  |
+                    +-------------------+
+                              |
+                    REGULAR / TANK CB
+                              |
+                 ============== FENCE ==============
+                 GRAVEL YARD / EARTH MAT / GROUNDING
+
+
+COMPONENTS, TYPES & FUNDAMENTALS
+--------------------------------
+Voltage class     : 110 kV  (line-to-line, 3-phase AC)
+Typical frequency : 50 / 60 Hz
+Typical current   : hundreds of A to a few kA
+BIL (impulse)     : ~550 kV
+Clearance (phase) : ~1.1–1.5 m air, more with pollution
+
+Bus pipes
+  Type        : rigid aluminium or copper tubular bus
+  Role        : low-impedance interconnection of bays
+  Variable    : I²R heating, skin effect, short-circuit force
+
+Insulators
+  Types       : porcelain or polymer (composite) post / string
+  Role        : support live parts, isolate from earth
+  Variable    : creepage distance, pollution class, CIGRE flashover
+
+Cables
+  Types       : XLPE or oil-filled HV cable
+  Role        : connection from overhead bus to apparatus
+  Variable    : capacitance, charging current, sheath voltage
+
+Bushings
+  Types       : condenser / RIP / OIP
+  Role        : insulated penetration into breaker tank
+  Variable    : tan δ, partial discharge, oil level (if OIP)
+
+Oil circuit breaker (shown)
+  Type        : bulk-oil or minimum-oil tank CB
+  Role        : interrupt load and fault current
+  Variables   : breaking current (kA), arcing time, oil dielectric
+  Note        : older technology; many 110 kV yards now use SF6 or vacuum
+
+Regular circuit breaker
+  Type        : often SF6 live-tank or dead-tank at 110 kV today
+  Role        : same as above — isolate and quench arc
+  Variables   : rated short-circuit current, TRV, operating time
+
+Fence / yard
+  Role        : personnel safety, animal barrier
+  Fundamentals: step & touch voltage, earth-grid design, gravel resistivity
+
+MISSING IN PHOTO (typical 110 kV yard)
+  Power transformers (110/33 kV or 110/11 kV) — the actual “transformation”
+  Current & voltage transformers (CTs / VTs)
+  Surge arresters
+  Isolators / disconnectors
+  Earthing switches
