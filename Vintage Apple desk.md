@@ -1,0 +1,34 @@
+# Vintage Apple desk
+
+## SCENE
+```
+  computer    : beige Apple Macintosh (late-80s / early-90s platinum)
+  display     : built-in CRT, System 6/7 GUI
+  apps shown  : Control Panel, calculator, Key Caps-style window
+  input       : ADB keyboard + one-button mouse
+  printer     : Apple ImageWriter / ImageWriter II (dot-matrix)
+  phone       : separate analog landline handset + keypad
+  prop        : glass vase with pink flowers
+```
+## HARDWARE FUNDAMENTALS
+```
+  form        : all-in-one or compact desktop (CPU + CRT together)
+  bus         : ADB (Apple Desktop Bus) for keyboard/mouse
+  storage     : 3.5" floppy (visible slot)
+  print       : serial ImageWriter, WYSIWYG from screen
+  comms       : no built-in phone — separate analog line
+  color       : platinum beige (standard Apple case color of era)
+```
+## SOFTWARE / ERA
+```
+  OS          : Macintosh System 6 or System 7
+  UI          : black-and-white or early color GUI, menu bar, windows
+  paradigm    : mouse + pull-down menus ("point and click")
+  print model : what you see is what you get (via ImageWriter)
+  comms model : computer and telephone are two distinct devices
+```
+## MATTERS
+```
+  snapshot of pre-smartphone computing:
+  computation, printing, and voice each lived in their own box.
+```
