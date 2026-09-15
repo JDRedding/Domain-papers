@@ -1,0 +1,98 @@
+COMMON NETWORKING ABBREVIATIONS
+
+BASIC NETWORKING TERMS
+
+ADDRESSING
+IP    Internet Protocol
+      Unique address assigned to devices on a network
+      Types: IPv4 (32-bit), IPv6 (128-bit)
+      Example: 192.168.1.1 / 2001:db8::1
+
+DNS   Domain Name System
+      Translates human-readable domain names into IP addresses
+      Variables: A, AAAA, CNAME, MX records
+
+DHCP  Dynamic Host Configuration Protocol
+      Automatically assigns IP addresses, subnet mask, gateway, and DNS
+      Variables: lease time, scope, reservation
+
+MAC   Media Access Control
+      Unique hardware address burned into a network interface
+      Format: 00:1A:2B:3C:4D:5E (48-bit)
+
+ARP   Address Resolution Protocol
+      Maps IP addresses to MAC addresses on a local network
+
+NAT   Network Address Translation
+      Allows multiple private devices to share one public IP
+
+NETWORK TYPES
+LAN   Local Area Network
+      Network confined to a small area (home, office)
+
+WAN   Wide Area Network
+      Network spanning large geographic areas (internet)
+
+VLAN  Virtual Local Area Network
+      Logically segments a physical network into multiple broadcast domains
+
+SSID  Service Set Identifier
+      Name broadcast by a Wi-Fi access point
+
+TRANSPORT LAYER
+TCP   Transmission Control Protocol
+      Connection-oriented, reliable, ordered delivery
+      Fundamentals: handshake, acknowledgments, retransmission
+
+UDP   User Datagram Protocol
+      Connectionless, faster, no delivery guarantee
+      Used for: DNS, streaming, VoIP
+
+APPLICATION LAYER
+HTTP  HyperText Transfer Protocol
+      Protocol for web page requests and responses
+      Default port: 80
+
+HTTPS HyperText Transfer Protocol Secure
+      Encrypted version of HTTP using TLS
+      Default port: 443
+
+FTP   File Transfer Protocol
+      Transfers files between client and server
+      Ports: 20 (data), 21 (control)
+
+SMTP  Simple Mail Transfer Protocol
+      Sends email from client to mail server
+      Default port: 25 / 587
+
+POP3  Post Office Protocol 3
+      Downloads email from server to client
+      Default port: 110
+
+IMAP  Internet Message Access Protocol
+      Accesses and manages email stored on the server
+      Default port: 143 / 993
+
+SECURITY & MANAGEMENT
+VPN   Virtual Private Network
+      Encrypted tunnel over a public network
+      Types: site-to-site, remote-access
+
+QoS   Quality of Service
+      Prioritizes certain traffic (voice, video) over others
+
+ICMP  Internet Control Message Protocol
+      Used for diagnostics (ping, traceroute)
+      Types: Echo Request / Reply
+
+TTL   Time To Live
+      Hop limit that prevents packets from circulating forever
+      Decremented by 1 at each router
+
+MTU   Maximum Transmission Unit
+      Largest packet size a network interface can transmit
+      Common value: 1500 bytes (Ethernet)
+
+PoE   Power over Ethernet
+      Delivers both data and electrical power over a single Ethernet cable
+      Standards: 802.3af / 802.3at / 802.3bt
