@@ -1,0 +1,53 @@
+MARKETING, types, files, folders, agent rules
+
+TYPE        FILE              PURPOSE
+core        company.md        business, what you do, who you serve
+core        customer.md       problems, buying triggers, objections, VOC quotes
+core        offer.md          product, pricing, deliverables, supportable promises
+core        positioning.md    why you vs alternatives
+core        voice.md          style, examples, phrases to avoid, edit reasons
+core        proof.md          case studies, approved claims, evidence links
+meta        AGENTS.md         where to read, save, flag conflicts, request sign-off
+
+FOLDER      CONTENTS
+content/    playbook.md  examples/  tools.md  checks.md  calendar.md
+seo/        playbook.md  examples/  tools.md  checks.md  calendar.md
+paid/       playbook.md  examples/  tools.md  checks.md  calendar.md
+creator/    playbook.md  examples/  tools.md  checks.md  calendar.md
+email/      playbook.md  examples/  tools.md  checks.md  calendar.md
+
+PLATFORM    (under content/)
+x/          formats, approved posts, rejected drafts + why
+linkedin/   formats, approved posts, rejected drafts + why
+newsletter/ formats, approved issues, rejected drafts + why
+visual/     moodboard link, brand book link, approved assets
+
+CAMPAIGN    campaigns/<name>/
+brief.md    goal, audience, offer, constraints
+research/   source notes
+decisions.md agreed direction + rejected angles + why
+production/ working files
+results.md  metrics + interpretation
+
+VARS / SOURCES
+moodboard     Figma or Paper — look refs + notes on what you like
+brand_book    colors, fonts, logos, layouts, usage rules
+warehouse     ads + analytics + sales + content accounts
+              spend, clicks, leads, conversions, results
+              query by campaign / asset / date
+              include period + metric definitions
+
+AGENT LOOP
+1 read    brief + customer + offer + voice + proof + prior results
+2 read    brand book + visual refs
+3 create  draft + self-check against checks.md
+4 review  you: claims, offer, voice, design, links
+5 revise  from feedback
+6 ship    publish → collect results
+7 write   edits back to voice.md / examples / warehouse / moodboard
+
+RULES
+store markdown in GitHub
+link large creatives from shared storage
+start with one function + one live task
+update files from real work (corrections, new objections, offer changes)
