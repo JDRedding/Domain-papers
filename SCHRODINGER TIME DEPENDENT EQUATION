@@ -1,0 +1,26 @@
+TIME DEPENDENT SCHRÖDINGER EQUATION
+
+$i\hbar \dfrac{\partial\psi}{\partial t} = \hat{H}\psi$
+
+This is the equation that made quantum mechanics dynamic (Erwin Schrödinger, 1926). It tells how a quantum state evolves in time, not just what states are allowed.
+
+VARIABLES AND SYMBOLS
+$\psi$  wavefunction (the quantum state)
+$t$    time
+$\hbar$  reduced Planck constant $\approx 1.055 \times 10^{-34}$ J s
+$\hat{H}$  Hamiltonian operator (total energy of the system)
+
+WHAT IT MEANS
+The wavefunction at a later time is determined by $\hat{H}$.  
+$\hat{H}$ contains kinetic energy plus potential energy, so the physics of the system is built directly into how $\psi$ changes.
+
+FREE-PARTICLE CASE (potential = 0)
+$i\hbar \dfrac{\partial\psi}{\partial t} = -\dfrac{\hbar^{2}}{2m}\nabla^{2}\psi$
+
+where $m$ is the particle mass.
+
+RELEVANT FUNDAMENTALS
+- $|\psi|^{2}$ is the probability density of finding the particle.
+- The equation is first-order in time and linear, so superposition is preserved.
+- It is non-relativistic; the Dirac or Klein-Gordon equations are used when speeds approach $c$.
+- Time-independent form $\hat{H}\psi = E\psi$ appears when $\hat{H}$ does not depend on $t$ (stationary states).
