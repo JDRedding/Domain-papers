@@ -18,7 +18,7 @@ $$
 A class $\alpha\in H^{2p}(X,\mathbb{Q})$ is called a **Hodge class** if its image in complex cohomology lies in the $(p,p)$ summand:
 
 $$
-\operatorname{Hdg}^p(X)=H^{2p}(X,\mathbb{Q})\cap H^{p,p}(X).
+{Hdg}^p(X)=H^{2p}(X,\mathbb{Q})\cap H^{p,p}(X).
 $$
 
 Every algebraic cycle of codimension $p$ produces a Hodge class via the cycle class map. The Hodge conjecture asserts that the converse holds:
@@ -28,7 +28,7 @@ Every algebraic cycle of codimension $p$ produces a Hodge class via the cycle cl
 Equivalently, the cycle class map
 
 $$
-\operatorname{CH}^p(X)_{\mathbb{Q}}\to\operatorname{Hdg}^p(X)
+{CH}^p(X)_{\mathbb{Q}}\to{Hdg}^p(X)
 $$
 
 is surjective.
