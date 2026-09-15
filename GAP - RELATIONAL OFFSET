@@ -1,0 +1,47 @@
+GAP - RELATIONAL OFFSET
+  type: distinction operator
+  vars: A, B, δ
+  fund: A | δ | B
+        distinguishability ≠ separation
+        offset prevents collapse into identity
+        no spatial location, only relation
+
+PHASE COUPLING
+  type: dynamical coordination
+  vars: φ_i, ω_i, Γ(Δφ), Δφ
+  fund: φ̇_i = ω_i + Σ Γ_ij(φ_i − φ_j)
+        stable nonzero phase difference
+        in-phase / anti-phase / offset lock
+        PAC: slow phase modulates fast amplitude
+
+SPECIOUS PRESENT
+  type: experienced now
+  vars: retention, primal impression, protention
+  fund: now is thick, not a knife-edge
+        short duration treated as present
+        offset between state and reflection
+        enables perception of change / succession
+
+MAP / TERRITORY
+  type: representation relation
+  vars: map, territory, structure-match
+  fund: map ≠ territory
+        map ≠ all of territory
+        maps are self-reflexive
+        want the thinnest useful map
+
+GENERAL SEMANTICS  (Korzybski)
+  type: evaluation / time-binding system
+  vars: abstraction orders, event-level, verbal-level
+  fund: humans = time-binders
+        non-identity, non-allness, self-reflexiveness
+        consciousness of abstracting
+        word ≠ thing
+
+MODEL-THEORETIC SEMANTICS
+  type: formal interpretation
+  vars: M = ⟨D, I⟩, Γ ⊨ φ
+  fund: model = domain + interpretation
+        truth in a model
+        consequence = truth-preservation across models
+        structure shared, identity denied
