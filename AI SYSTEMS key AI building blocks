@@ -1,0 +1,46 @@
+AI SYSTEMS  — key AI building blocks 
+LLM as the brain for reasoning and text generation, 
+
+RAG as added knowledge from documents and databases
+AI agents as hands for taking actions with tools and memory.
+
+MCP refers to the Model Context Protocol
+an open standard launched by Anthropic in 2024 that acts as the "nervous system" 
+standardized connections between AI models, external data sources, and tools for seamless integration
+
+FUNDAMENTALS
+
+LLM
+  type        LargeLanguageModel
+  role        Brain
+  does        text generation by reasoning
+  is          core intelligence
+  input       prompt
+  output      tokens / thought
+
+RAG
+  type        RetrievalAugmentedGeneration
+  role        Brain + Books
+  does        LLM + external knowledge
+  uses        docs, databases, embeddings
+  input       query + retrieved context
+  output      grounded answer
+
+AGENT
+  type        AIAgent
+  role        Brain + Hands
+  does        takes actions
+  uses        memory, tools, planning loop
+  input       goal
+  output      side effects / completed task
+
+MCP
+  type        ModelContextProtocol
+  role        Nervous System
+  does        connects everything
+  is          standardized connection layer
+  input       tools / resources / prompts
+  output      shared context for models & agents
+
+Understand these 4 → AI systems make a lot more sense.
+
