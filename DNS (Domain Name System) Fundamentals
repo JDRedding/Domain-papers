@@ -1,0 +1,24 @@
+DNS (Domain Name System)
+
+  User
+    |
+    v
+  Browser  ----------------->  "google.com"   (type: domain name / hostname)
+    |                                |
+    |                                v
+    |                         DNS Server
+    |                                |
+    |                                v
+    +-------- IP Address <-----------+
+                 |
+                 v
+          142.250.183.14     (type: IPv4 address)
+                 |
+                 v
+          Website Server
+
+Fundamentals
+- Domain name  : human-readable label (variable example: google.com)
+- IP address   : numeric locator computers use (IPv4: 32-bit, IPv6: 128-bit)
+- DNS role     : resolves name → address so the browser can open a TCP/IP connection
+- Flow         : User types name → Browser queries DNS → DNS returns IP → Browser connects to that IP
