@@ -1,0 +1,125 @@
+ECG MADE EASY — RRPWQST
+Learn · Practice · Improve
+
+Not medical advice. Practice on real ECGs.
+
+NORMAL ECG WAVEFORM (fundamentals)
+           R
+          / \
+     P   /   \     T     U
+    / \ /     \   / \   /
+   /   Q       \ /   \ /
+  /             S     \
+------------------------------------------------
+   PR     QRS     ST     QT
+ interval interval segment interval
+
+P   = atrial depolarization (contraction)
+PR  = AV conduction time (atria → ventricles)
+QRS = ventricular depolarization (contraction)
+ST  = early ventricular repolarization
+T   = ventricular repolarization (relaxation)
+U   = sometimes present (Purkinje / afterpotentials)
+
+Paper speed 25 mm/s:
+1 small square = 0.04 s
+1 large square = 0.20 s
+Heart rate (regular) ≈ 300 ÷ large squares between QRS
+
+------------------------------------------------
+MNEMONIC: R R P W Q S T
+
+R  RATE
+   How fast is the heart beating?
+   Count large squares between QRS complexes.
+   < 3 large squares  →  >100 bpm  = tachycardia
+   > 6 large squares  →  < 50 bpm  = bradycardia
+   Normal adult: 60–100 bpm
+
+R  RHYTHM
+   Regular  = equal R-R intervals (same # of small squares)
+   Irregular = variable R-R intervals
+   Sinus arrhythmia is common (often respiratory)
+
+P  P WAVE
+   Is there 1 P wave before every QRS?
+   Yes (1:1)     → sinus rhythm (starts at SA node)
+   No P wave     → AF or other atrial activation
+   >1 P per QRS  → AV block / conduction delay
+   P wave = atrial depolarization
+
+W  WIDTH of QRS
+   Is QRS wider than 3 small squares (>0.12 s)?
+   Yes → slow / abnormal ventricular conduction
+   Consider bundle branch block or ventricular rhythm
+   Normal QRS < 0.12 s (narrow)
+
+Q  Q WAVE
+   Are there deep / pathologic Q waves?
+   Deep Q (>0.04 s and/or >25% of R wave)
+   Usually old (chronic) myocardial infarction (scar)
+   Q = first negative deflection of QRS
+   Helps identify prior MI, not acute ischemia
+
+S  ST SEGMENT
+   Depression or elevation?
+   Elevation in ≥2 contiguous leads → consider STEMI
+   Depression / T inversion → consider NSTEMI / ischemia
+   New LBBB can also indicate STEMI equivalent
+
+T  T WAVE
+   Abnormal inverted (upside-down) T waves?
+   Inverted T can indicate ischemia or strain
+   T = ventricular repolarization
+
+------------------------------------------------
+KEY INTERVALS (typical values)
+
+P wave     ≤ 0.12 s   (≤3 small squares)
+PR interval 0.12–0.20 s (3–5 small squares)
+QRS        < 0.12 s   (<3 small squares)
+QT         ~0.36–0.44 s (rate-dependent; ~9–11 small squares)
+
+------------------------------------------------
+STEMI vs NSTEMI (quick contrast)
+
+STEMI
+  ST elevation:
+    limb leads ≥1 mm in ≥2 contiguous leads
+    precordial ≥2 mm in ≥2 contiguous leads
+  Pathophys: complete coronary occlusion
+  Damage: transmural (full thickness)
+  Troponin: elevated
+
+NSTEMI
+  ST depression (≥0.5 mm limb / ≥1 mm precordial)
+  and/or T-wave inversion
+  Pathophys: partial / transient occlusion
+  Damage: subendocardial (partial thickness)
+  Troponin: elevated
+
+------------------------------------------------
+LEADS & TERRITORIES (variables to localize)
+
+LATERAL   I, aVL, V5, V6     → LCx (or diagonal)
+INFERIOR  II, III, aVF       → RCA (or LCx)
+ANTERIOR  V3, V4             → LAD
+SEPTAL    V1, V2             → LAD (septal perforators)
+
+LAD → septal (V1–V2) + anterior (V3–V4)
+LCx → lateral (I, aVL, V5, V6)
+RCA → inferior (II, III, aVF)
+
+------------------------------------------------
+WORKFLOW (use in order)
+1. Rate
+2. Rhythm
+3. P waves present + 1:1 with QRS?
+4. QRS width
+5. Pathologic Q waves?
+6. ST segment (elev / dep)
+7. T waves (inversion?)
+Then localize by leads if ischemic changes exist.
+
+Not medical advice. Practice on real ECGs.
+Better knowledge → better care
