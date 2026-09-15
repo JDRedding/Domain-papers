@@ -1,0 +1,31 @@
+MOSELEY'S LAW
+X-ray frequency reveals the atomic number
+
+Henry Moseley (1887–1915)
+
+√f = a (Z − b)
+
+  f  : X-ray frequency          (Hz)
+  a  : proportionality constant
+  Z  : atomic number            (proton count)
+  b  : screening constant
+
+High-speed electrons  →  [ metal target ]  →  characteristic X-rays
+                                              ~~~~~~~~~~~~~~~~~~~~
+
+Intensity
+  |     /\
+  |    /  \          /\
+  |   /    \        /  \         /\
+  |  /      \      /    \       /  \
+  | /        \    /      \     /    \
+  +------------------------------------ Frequency (ν)
+       Kα            Kα            Kα
+      Z=20          Z=29          Z=47
+
+√frequency vs Z forms a straight line.
+Nature counts protons, not mass.
+Inversions vanished; missing elements appeared as gaps.
+
+The same lines now fingerprint pigments, chips, and Mars rocks.
+One plot reordered the elements.
