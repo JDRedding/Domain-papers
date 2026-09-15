@@ -1,0 +1,31 @@
+IRIDESCENT SPHERE GRID
+Form: 9 identical spheres in 3x3 matrix
+Ground: solid black
+Light: internal refraction + rim highlights + thin-film interference
+
+Row 1
+L: cyan-yellow-red band + green base
+C: blue-violet-pink band + yellow base
+R: magenta-orange-cyan fade
+
+Row 2
+L: yellow-blue-red band + orange base
+C: pale lavender-white + dark violet base
+R: green-magenta-cyan band
+
+Row 3
+L: lime-yellow-magenta band + cyan base
+C: mint-teal fade + grey-green base
+R: orange-blue-gold band
+
+Variables
+- Hue rotation per cell
+- Highlight height (upper third)
+- Saturation peak at equator
+- Edge chromatic fringe
+
+Fundamentals
+- High value contrast against black
+- Complementary color pairing
+- Radial symmetry inside each sphere
+- Grid alignment for repetition + variation
