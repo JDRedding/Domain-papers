@@ -1,0 +1,167 @@
+FAILURES OF HIERARCHICAL MODELS
+Hierarchy is good for dependency.
+It breaks down with recurrence, overlap, feedback, process, or self-reference.
+
+WHAT HIERARCHIES DO WELL
+- Clarify dependency
+- Separate meanings
+- Support local reasoning
+“A hierarchy organizes what depends on what.”
+
+Layer 1 -> Layer 2 -> Layer 3 -> Layer 4
+(The Stack / Hierarchical Model)
+
+A. CYCLE / RECURRENCE
+A stack assumes linear order.
+Many systems loop back on themselves.
+Example: Five Phases
+  A --> B --> C --> A
+
+B. FEEDBACK / CIRCULAR CAUSATION
+Effects become causes.
+Behavior changes the conditions that produced it.
+Example: Cybernetics
+  Output --> Interpretation --> Action --> Output
+
+C. OVERLAP / MULTIPLE BELONGING
+Real systems often belong to several wholes at once.
+Example: A City Is Not a Tree
+  A ∩ B ∩ C  (overlapping sets)
+
+D. MUTUAL CONSTITUTION
+Parts and wholes help define each other.
+Identity is relational.
+Example: Indra's Net
+  Fully connected graph of nodes
+
+E. PROCESS / BECOMING
+Stable things may be patterns of events,
+not fundamental substances.
+Example: Whitehead
+  t0 --> t1 --> t2 --> t3 --> ...
+
+F. SELF-REFERENCE / STRANGE LOOPS
+A system can model itself,
+and that model can change the system.
+Example: Hofstadter
+  Model of Self  <-->  System
+
+WHAT THE STACK CAN’T SAY
+cycle | feedback | overlap | co-constitution | becoming | self-reference
+
+BETTER ALTERNATIVE: MULTIPLE GEOMETRIES
+Use different structures for different aspects of reality.
+
+Layers          : dependency
+Graphs          : relation
+Events          : history
+Loops           : regulation
+Semi-lattices   : participation
+Views           : cross-cutting concerns
+
+“Different geometries for different aspects of reality.”
+
+```
+STACK / LAYERED HIERARCHY
+Type: Ordered linear containment
+Variables: layer[n], depends_on(layer[n+1])
+Fundamentals: strict top-down dependency, no cycles, local reasoning
+
+Layer 4
+  ↑
+Layer 3
+  ↑
+Layer 2
+  ↑
+Layer 1
+```
+
+```
+TREE / ORG CHART HIERARCHY
+Type: Rooted acyclic directed tree
+Variables: node, parent, children[], depth
+Fundamentals: single parent, unique path to root, cascade of authority
+
+                CEO
+               /   \
+            VP-A    VP-B
+           /  \       \
+        Dir1  Dir2    Dir3
+       /  \
+     Emp1 Emp2
+```
+
+```
+TAXONOMY / CLASSIFICATION HIERARCHY
+Type: Nested categorical partition
+Variables: taxon, rank, parent_taxon, members[]
+Fundamentals: mutually exclusive at each level, inheritance of properties
+
+Kingdom
+ └── Phylum
+      └── Class
+           └── Order
+                └── Family
+                     └── Genus
+                          └── Species
+```
+
+```
+INHERITANCE / CLASS HIERARCHY (OOP)
+Type: Is-a directed acyclic graph (usually tree)
+Variables: class, superclass, subclasses[], inherited_methods
+Fundamentals: specialization downward, polymorphism, single or multiple inheritance
+
+        Animal
+       /      \
+   Mammal    Bird
+    /  \       \
+ Dog   Cat    Eagle
+```
+
+```
+FILESYSTEM / CONTAINMENT HIERARCHY
+Type: Nested directory tree
+Variables: path, parent_dir, children[], inode
+Fundamentals: unique absolute path, containment, no cycles
+
+/
+├── home
+│   └── user
+│       ├── docs
+│       └── src
+└── etc
+    └── config
+```
+
+```
+CHAIN OF COMMAND / LINEAR AUTHORITY
+Type: Totally ordered list with ranks
+Variables: rank, superior, subordinates[], command_flow
+Fundamentals: transitive authority, no lateral equality at same level
+
+General
+  ↓
+Colonel
+  ↓
+Major
+  ↓
+Captain
+  ↓
+Lieutenant
+```
+
+```
+NESTED SETS / CONTAINMENT HIERARCHY
+Type: Interval or nested interval encoding
+Variables: node, left, right, parent
+Fundamentals: descendant ranges lie inside ancestor range
+
+[Root 1-20]
+  [A 2-9]
+    [A1 3-4]
+    [A2 5-8]
+  [B 10-19]
+    [B1 11-14]
+    [B2 15-18]
+```
