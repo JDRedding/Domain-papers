@@ -21,13 +21,7 @@
   pricing      : per claim / filing / review / closed month
   knowledge    : lives in the harness, not the model
 ```
-## fundamentals
-```
-  1. loop     — model does not stop after one reply
-  2. hands    — read, write, call tools, run code
-  3. memory   — persist state across a long job
-  4. rules    — permissions + human handoff
-```
+
 - wrappers sold tools
 - harnesses sell work
 
@@ -37,8 +31,14 @@ agent = model + harness
 harness = loop + tools + memory + guardrails
 ```
 ### FUNDAMENTALS
+
 ```
-  loop        keep calling the model until the job is done
+  1. loop     — model does not stop after one reply
+  2. hands    — read, write, call tools, run code
+  3. memory   — persist state across a long job
+  4. rules    — permissions + human handoff
+```
+```
   tools       files, shell, APIs, browser, MCP
   memory      persist state across hours / sessions
   guardrails  permissions, sandbox, human handoff
