@@ -15,7 +15,6 @@ Map:      f : X → Y
 Pairs:    {(x, y) ∈ X × Y | y = f(x)}
 Rule:     each x ∈ X has exactly one y ∈ Y
 
-DEFINITION
 A function f from X to Y is the set of ordered pairs
 {(x, y) ∈ X × Y | y = f(x)}
 such that every x has precisely one image y.
