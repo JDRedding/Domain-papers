@@ -1,0 +1,47 @@
+FULL ADDER
+Source: @Afghan_Engineer
+short animated explainer
+
+Adds three 1-bit inputs: A + B + Cin
+
+VARIABLES (all type: bit / boolean 0|1)
+  A     : addend bit
+  B     : addend bit
+  Cin   : carry-in from previous stage
+  Sum   : result bit (LSB of the 2-bit total)
+  Cout  : carry-out to next stage
+
+FUNDAMENTALS
+  Sum  = A XOR B XOR Cin
+  Cout = (A AND B) OR (Cin AND (A XOR B))
+       = majority(A, B, Cin)
+
+  One full adder produces a 2-bit result:
+    total = 2*Cout + Sum
+  Cascade N full adders for an N-bit adder
+  (ripple-carry or faster variants)
+
+TRUTH TABLE
+ A  B  Cin | Sum  Cout | decimal
+ 0  0   0  |  0    0   |  0
+ 0  0   1  |  1    0   |  1
+ 0  1   0  |  1    0   |  1
+ 0  1   1  |  0    1   |  2
+ 1  0   0  |  1    0   |  1
+ 1  0   1  |  0    1   |  2
+ 1  1   0  |  0    1   |  2
+ 1  1   1  |  1    1   |  3
+
+GATE-LEVEL FLOW
+  A ----+----------- XOR ----+---- XOR ---- Sum
+        |             ^      |      ^
+  B ----+-----------+ |      |      |
+        |           | |      |      |
+        |           AND -----+      |
+        |            |              |
+  Cin --+-----------+--------+-----+
+                     |       |
+                     AND ----+
+                              |
+                              OR ----- Cout
+
