@@ -1,0 +1,25 @@
+DOOM_ANTHOLOGY
+var word          = DOOM
+var style         = block_ascii
+var glow          = red
+var seal          = occult pentacle / runes
+era               = 1993 -> Revelations
+bundle_contents   = [
+    DOOM + DOOM II      (1993),
+    DOOM 64,
+    DOOM 3,
+    DOOM (2016),
+    DOOM Eternal Deluxe,
+    DOOM The Dark Ages Premium
+        + Revelations DLC
+        + artbook / soundtrack
+        + Divinity skin pack
+]
+icons            = Slayer (6 Slayer visors, red glow, occult seal)
+
+██████╗  ██████╗  ██████╗ ███╗   ███╗
+██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║
+██║  ██║██║   ██║██║   ██║██╔████╔██║
+██║  ██║██║   ██║██║   ██║██║╚██╔╝██║
+██████╔╝╚██████╔╝╚██████╔╝██║ ╚═╝ ██║
+╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚═╝
