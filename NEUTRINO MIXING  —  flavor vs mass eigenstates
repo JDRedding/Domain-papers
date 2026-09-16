@@ -1,0 +1,33 @@
+NEUTRINO MIXING  —  flavor vs mass eigenstates
+
+FLAVOR STATES                         MASS STATES
+(weak interaction basis)              (propagation basis)
+detected in charged-current           travel as definite-mass
+weak processes                        wave packets
+
+  νe  (electron neutrino)  ──┐
+                             │     ┌──  ν1   (mass eigenstate 1)
+  νμ  (muon neutrino)      ──┼─────┤
+                             │     ├──  ν2   (mass eigenstate 2)
+  ντ  (tau neutrino)       ──┘     └──  ν3   (mass eigenstate 3)
+
+Fundamentals
+  • Flavor states |να⟩  (α = e, μ, τ)  are what W± produce and detect
+  • Mass states   |νi⟩  (i = 1, 2, 3)  are the Hamiltonian eigenstates that propagate
+  • They are related by the PMNS mixing matrix U:
+
+        |να⟩  =  Σi  Uαi  |νi⟩
+
+        |νi⟩  =  Σα  U*αi |να⟩
+
+  • Because the |νi⟩ have different masses, they pick up different phases
+    e^{-i E_i t} as they travel. Superposition therefore changes with L/E
+    → neutrino oscillation (flavor conversion).
+
+  • |Uαi|^{2} = probability that a flavor-α neutrino is found in mass state i
+    (and vice versa). Mixing angles θ12, θ23, θ13 plus CP phase δ_CP
+    parametrize U.
+
+Key point: a neutrino is created as one flavor, but immediately becomes
+a coherent mixture of three masses. After distance L it is a different
+mixture of flavors.
