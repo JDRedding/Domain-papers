@@ -1,0 +1,61 @@
+RELATIONAL DECLARATION SPEC
+reconstruction rule
+
+AXIOM
+  If undeclared, it does not exist.
+  Implicit background is not a resource.
+  Flux fills only what declarations already license.
+
+TYPES
+  Rel     declared relation
+  Mode    S | I | D | Q
+  Dyad    2-body relation          (2 -> 4 path = MFE)
+  Triad   closed 3-mode structure  (2 -> 3 path = RDG)
+  Flux    MFE generator            (waves, propagation, remainder)
+  Q       admissibility / quotient / repair projector
+  DeltaR  declared mismatch channel
+  Sigma   projection back onto admissible structure
+
+VARIABLES
+  P0          locationless point
+  R           declared relation
+  S(G)        structure / skeleton / anchor
+  I(G)        interaction / integration
+  D(G)        dynamics / propagation
+  G           RDG object
+  Gamma_t     evolving relational geometry
+  d_s         screening / finite-range influence
+  D(P,Q)^2    emergent distance = (sum_i DeltaR_i)^2
+  X_t         state at t
+  X_{t+1}     repaired / updated state
+
+FUNDAMENTALS
+  1. Relations first. Objects, fields, geometry, time are derived.
+  2. Nothing implicit. Hidden universe, identity, metric, negation,
+     excluded middle, or default coordinates are not present.
+  3. Two lifts
+       2 -> 3  RDG   point -> counterpoint -> couple -> triad
+                     modes S / I / D
+       2 -> 4  MFE   couple -> mirror-couple -> 4-pole flux engine
+  4. SID nesting
+       S(G) subset I(G) subset D(G) subset G
+       S constrains I; I constrains D
+  5. Repair rule
+       Repair works upward IFF structure S is preserved.
+       Dyadic erasure != triadic re-lifting.
+  6. Reconstruction
+       Requires explicit initial conditions and assumptions.
+       If Q admits Gamma(X_t): X_{t+1} = Gamma(X_t)
+       Else:                  X_{t+1} = Sigma(Gamma(X_t))
+  7. Flux generates the rest
+       Flux is not a source of new primitives.
+       It only generates what declared Rel / Mode already authorize.
+  8. Truth tables
+       Post-hoc freeze of a surviving dyadic fragment.
+       Cannot invent missing generators, closures, or triad.
+       Tabulate != declare.
+
+TEST
+  Write every assumption as Rel or Mode.
+  If you cannot write it, it is not in the system.
+  No later table puts it back.
