@@ -1,0 +1,83 @@
+PAIS FIELD DRIVE vs MHD
+TABLETOP PAIS-EFFECT TEST
+Source: @BlokeMan00
+
+This is a low-energy measurement model, not a recreation of
+the patent’s extreme fields. It only asks whether any
+repeatable anomaly exists at laboratory scale.
+Independent vacuum replication would be required before
+any claim of new physics.
+
+CONCEPT
+Pais-style field drive claims to change a vehicle’s effective inertia
+with intense, high-frequency electromagnetic fields.
+No plasma exhaust. No onboard propellant. Effectively unlimited Isp.
+
+MHD propulsion ionizes a conductive fluid and accelerates it with
+B and E fields. Requires tanks, high power, electrode wear, heat
+management. Thrust is limited by mass flow.
+
+CLAIMED ADVANTAGE
+Alter inertial mass instead of throwing reaction mass.
+Potential for high acceleration without a plume.
+
+APPARATUS (TABLETOP MODEL)
+Type: torsion / flexure force sensor
+Test body: lightweight nonmagnetic disk or rotor
+Suspension: torsion fiber or flexure mount
+Sensing: laser + optical lever / position sensor
+Fields: opposing EM coils (time-varying B)
+        capacitor plates or resonant electrodes (time-varying E)
+Drive: function generator + amplifier
+Isolation: Faraday cage, vacuum preferred, nonmagnetic frame
+Monitors: temperature, power, polarity, phase
+
+CORE QUESTION
+Does a rapidly changing EM field produce anomalous force
+or a change in inertia that standard EM cannot explain?
+
+KEY VARIABLES
+F_app     measured force or torque on the disk
+P_elec    applied electrical power
+B(t)      alternating magnetic field
+E(t)      alternating electric field
+phi       relative phase between E and B
+f         frequency (kHz–MHz range in lab model)
+m_eff     claimed effective inertial mass
+Isp       specific impulse (claimed unlimited for field drive)
+
+FIGURE OF MERIT
+F_app / P_elec   (N/W)
+
+If this ratio stays after all artifact controls and does not
+scale like ordinary magnetic, electrostatic, thermal, or
+radiation-pressure forces, the result is anomalous.
+
+STAGED PROTOCOL
+Baseline          power off, record drift and noise
+Magnetic-only     coils on, electrodes off
+Electric-only     electrodes on, coils off
+Combined-field    E + B with adjustable phase
+Reversal          flip coil polarity and electrode orientation
+Dummy-load        electronics on, field elements disconnected
+Blind             randomized on/off by a second operator
+
+A real effect should reverse or change predictably with
+geometry and phase, survive vacuum, and survive dummy-load.
+
+FALSE-SIGNAL SOURCES
+air currents, fan vibration, transformer hum,
+wire reaction forces, magnetic attraction to hardware,
+electrostatic pull, heating / expansion, corona,
+Earth’s magnetic field, acoustic pressure
+
+FUNDAMENTALS
+Inertia          resistance to acceleration (m in F = ma)
+MHD              magnetohydrodynamics — force on current in B field
+Pais Effect      patented claim that high-frequency EM fields
+                 interact with vacuum fluctuations to reduce
+                 inertial mass (Navy patents ~2016–2019;
+                 no public confirmation at spacecraft scale)
+Torsion sensor   converts tiny torque into measurable angle
+Optical lever    amplifies microscopic displacement
+
