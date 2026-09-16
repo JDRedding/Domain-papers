@@ -1,0 +1,30 @@
+RICCI FLOW 
+
+CONTEXT
+  fundamental geometry; Ricci flow is a prime example.
+
+CORE EQUATION
+  ∂g / ∂t  =  -2 Ric(g)
+
+  g     Riemannian metric tensor on manifold M
+  Ric   Ricci curvature tensor of g
+  t     flow parameter (time)
+  M     smooth n-manifold
+
+FUNDAMENTALS
+  Type          Riemannian metric flow (nonlinear parabolic PDE)
+  Analogy       heat equation on the metric
+  Short-time    existence + uniqueness (Hamilton 1982)
+  Behavior      smooths irregular curvature toward
+                constant-curvature or model geometries
+  Singularities finite-time pinch-offs; blow-ups are
+                Ricci solitons or shrinking spheres / cigars
+  Normalization volume-preserving variant adds scalar
+                curvature term so average volume stays 1
+
+HISTORICAL ROLE
+  Hamilton      introduced the flow to attack curvature
+  Perelman      2002–03 entropy + reduced-length tools
+                proved Poincaré conjecture and
+                Thurston geometrization conjecture
+  8 geometries  S³, E³, H³, S²×R, H²×R, SL̃(2,R), Nil, Sol
