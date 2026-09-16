@@ -1,0 +1,21 @@
+RICCI FLOW
+----------
+type : geometric PDE on Riemannian metrics
+var  : g(t)   Riemannian metric tensor
+       Ric(g) Ricci curvature tensor
+eq   : dg/dt = -2 Ric(g)
+
+deforms the metric in the direction of minus Ricci curvature
+used by Perelman to prove geometrization and Poincare
+
+
+THURSTON 8 GEOMETRIES  (3-manifolds)
+------------------------------------
+E3     Euclidean          flat
+S3     spherical          constant + curvature
+H3     hyperbolic         constant - curvature
+S2xR   product sphere     mixed
+H2xR   product hyperbolic mixed
+SL2R   universal cover of SL(2,R)
+Nil    Heisenberg nilmanifold
+Sol    solvmanifold
