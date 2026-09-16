@@ -1,0 +1,25 @@
+RIEMANN HYPOTHESIS 
+— CORE STATEMENT + FUNDAMENTALS
+
+Zeta function (Euler product)
+  ζ(s) = Σ_{n=1}^∞ n^{-s}  =  Π_p (1 − p^{-s})^{-1}
+  s ∈ ℂ,   s = σ + it
+  domain of absolute convergence: Re(s) > 1
+  meromorphic continuation to all ℂ (simple pole at s=1)
+
+Two classes of zeros
+  Trivial zeros
+    s = −2, −4, −6, …          (negative even integers)
+    forced by the functional equation
+    Γ(s/2) π^{-s/2} ζ(s) = Γ((1-s)/2) π^{-(1-s)/2} ζ(1-s)
+
+  Non-trivial zeros
+    lie in the critical strip  0 < Re(s) < 1
+    Riemann Hypothesis (1859):  all of them satisfy  Re(s) = 1/2
+    (the critical line)
+
+Consequence for primes
+  If RH holds, the prime-counting function satisfies
+    π(x) = li(x) + O(√x log x)
+  i.e. primes cannot deviate from their expected density
+  by more than the theoretically smallest possible amount.
