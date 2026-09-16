@@ -1,0 +1,52 @@
+GUTH FREE LUNCH  <->  PROJECTION ACCOUNTING
+==================================================
+Slice pays S_discard; Vac holds Ker(P); whole system can still net to zero.
+
+THREAD SETTING
+  Objects     : independent TOEs / theory-classes / manifolds
+  Maps        : projection operators  P : High -> Slice
+  Claim       : common formalizable core is the set of P, not a merged axiom set
+  Direction   : usually downward only  (High -> Slice invertible?  NO)
+
+TYPES
+  High        : richer geometry / fuller theory / unused potential
+  Slice       : theory-class, lower-dimensional manifold, local Jacobian
+  P           : projection  High -> Slice
+  Ker(P)      : discarded content  (geometric kernel of one-way descent)
+  S_discard   : entropy / information cost of P
+  Vac         : unused potential  (thread analogue of false vacuum)
+  Emergent    : system in which discarded degrees of freedom are not annihilated
+
+THREAD LEDGER
+  every P has a discard cost          S_discard  =  content(Ker(P))
+  closed invertible formal object     net cost charged to global entropy
+  emergent system                     S_discard returns to Vac / potential
+                                      net ledger of the whole can balance
+
+GUTH SIDE  (inflation)
+  rho_f       : false-vacuum energy density   (approx constant)
+  a(t)        : scale factor
+  E_matter    : positive energy   ~  a^3 * rho_f     (grows with volume)
+  E_grav      : gravitational potential energy   (negative)
+                Newtonian sketch:  - (3/5) G M^2 / R
+  net         : E_matter + E_grav  ~  0   in a flat universe
+  H           : Hubble during inflation   H = sqrt(8 pi G rho_f / 3)
+  a(t)        ~  exp(H t)
+  reheating   : inflaton rolls down, Vac energy converts to particles
+  slogan      : universe is the free lunch because the vacuum absorbs the discard
+
+MAPPING
+  projection P              <->   emergence of hot cosmos from a tiny patch
+  discard / Ker(P)          <->   apparent creation of huge E_matter + entropy
+  Vac / unused potential    <->   false vacuum + negative E_grav
+  "cost returns to potential" <->  vacuum absorbs the discard
+  no-free-lunch objection   <->   local thermodynamic leak on the Slice
+  emergent reply            <->   leak is booked against Vac, not a closed budget
+
+FUNDAMENTALS
+  1. Projections are typically non-invertible.
+  2. Non-invertibility produces a residual (Ker) and an entropy barrier.
+  3. In a closed, dyadic, collapse-only system that residual is lost.
+  4. In an emergent system the residual is held by Vac.
+  5. Gravity / unused geometry supplies the negative term that balances the books.
+  6. Flat / whole-manifold accounting is the geometry in which net energy ~ 0.
