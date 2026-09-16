@@ -1,0 +1,25 @@
+COINCIDENCE OR NOT???
+
+FUNDAMENTALS
+Type: letter-position mapping
+Variable: pos(L) where A=1, B=2, ..., Z=26
+Operation: sum of pos() values for each letter in the word
+Result shown as percent of 100
+
+ALPHABET
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+
+KNOWLEDGE
+K=11  N=14  O=15  W=23  L=12  E=5  D=4  G=7  E=5
+11 + 14 + 15 + 23 + 12 + 5 + 4 + 7 + 5 = 96%
+
+HARD WORK
+H=8  A=1  R=18  D=4  W=23  O=15  R=18  K=11
+8 + 1 + 18 + 4 + 23 + 15 + 18 + 11 = 98%
+
+Both are important, but fall just short of 100%.
+
+ATTITUDE
+A=1  T=20  T=20  I=9  T=20  U=21  D=4  E=5
+1 + 20 + 20 + 9 + 20 + 21 + 4 + 5 = 100%
