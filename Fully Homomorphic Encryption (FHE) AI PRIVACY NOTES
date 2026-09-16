@@ -1,0 +1,77 @@
+FHE AI PRIVACY NOTES
+Source: James Lockwood (@QBlazedog61029J)
+
+CLAIM
+  Barrier to enterprise AI = data privacy.
+  Legal constraint: cannot send unencrypted customer data
+  to third-party cloud ML models.
+  Proposed fix: homomorphic evaluation so the model
+  never sees plaintext.
+
+CORE PROPERTY
+  Enc(x)  +  Enc(y)  ->  Enc(x + y)
+  Enc(x)  *  Enc(y)  ->  Enc(x * y)
+  Decrypt(Eval(f, Enc(x))) = f(x)
+  Server never holds sk.
+
+SCHEME TYPES (OpenFHE)
+  BFV   : exact integer arithmetic      (mod t)
+  BGV   : exact integer arithmetic      (mod t, leveled)
+  CKKS  : approximate real / complex    (SIMD slots)
+  FHEW / TFHE / CGGI / DM / LMKCDEY
+        : Boolean + LUT / functional bootstrap
+
+TYPICAL OBJECTS / TYPES
+  CryptoContext<DCRTPoly>   cc
+  KeyPair                   kp = { pk, sk }
+  PublicKey                 pk
+  PrivateKey                sk
+  Plaintext                 pt
+  Ciphertext<DCRTPoly>      ct
+  EvalKey                   relinKey, rotationKey, bootstrapKey
+
+COMMON PARAMETERS / VARIABLES
+  n, ringDim        ring dimension (power of 2)
+  q, Q              ciphertext modulus (often CRT / DCRT)
+  t, ptxtMod        plaintext modulus (BFV/BGV)
+  scale, Delta      CKKS scaling factor
+  L, multiplicativeDepth
+  sigma             error / Gaussian noise stddev
+  slots             packed SIMD lanes (CKKS / BFV)
+  securityLevel     e.g. HEStd_128_classic
+  batchSize         number of packed values
+  firstModSize
+  scalingModSize
+  numLargeDigits    hybrid key-switch
+  bootstrappingDepth / l_refresh
+
+PIPELINE
+  1. GenCryptoContext(params)
+  2. KeyGen -> pk, sk
+  3. EvalMultKeyGen / EvalRotateKeyGen / EvalBootstrapKeyGen
+  4. Encode(x) -> pt
+  5. Encrypt(pk, pt) -> ct
+  6. EvalAdd / EvalSub / EvalMult / EvalRotate / EvalBootstrap
+  7. Decrypt(sk, ct) -> pt' -> Decode
+
+NOISE
+  Every Mult (and some Add) grows noise.
+  When noise approaches q/t (or scale budget in CKKS),
+  bootstrap to refresh ciphertext.
+
+RELATED FROM REPLIES
+  Shamir Secret Sharing (threshold reconstruction):
+    secret s split into shares s_i
+    any t shares reconstruct s
+    < t shares reveal nothing
+  Complementary to FHE: split custody vs compute-on-ciphertext.
+
+WHY IT MATTERS FOR HEALTHCARE / FINANCE
+  PHI / PCI / PII stay encrypted in transit,
+  at rest, AND during inference.
+  Cloud sees only ct, never x.
+
+LOCAL STACK MENTIONED IN THREAD CONTEXT
+  OpenFHE (C++), often wrapped (Julia OpenFHE.jl, HEIR, etc.)
+  High-spec laptop sufficient for prototype FHE, not yet
+  for large production models without packing + hardware.
