@@ -1,0 +1,36 @@
+Rayleigh scattering: SKY COLOR
+
+FUNDAMENTAL
+Rayleigh scattering: air molecules (mainly N2 and O2) scatter sunlight.
+Shorter wavelengths scatter far more strongly than longer ones.
+
+KEY RELATION
+Scattering intensity I  ∝  1 / λ⁴
+
+VARIABLES
+λ   wavelength of light
+I   scattered intensity
+L   path length through atmosphere
+
+TYPES OF LIGHT
+Sunlight = mix of wavelengths (appears white)
+Violet / Blue   short λ   high scatter
+Green
+Yellow
+Orange / Red    long λ    low scatter
+
+WHY THE SKY IS BLUE
+Air molecules scatter blue and violet much more than red.
+Scattered short-λ light reaches our eyes from all directions.
+Sky therefore looks blue.
+
+WHY SUNSETS ARE RED
+When the Sun is low, light travels a much longer path (large L).
+Most blue and violet is scattered away before it reaches you.
+Remaining light is dominated by red and orange.
+
+OTHER FACTORS
+Ozone absorption (stronger at large angles)
+Dust, haze, and pollution (Mie scattering)
+Cleaner air → bluer skies, more vivid sunsets
+More particles → redder, less clear colors
