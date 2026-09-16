@@ -1,0 +1,42 @@
+RECOVERABLE SLICE  —  TRIPLE FORM
+
+TYPES
+  Slice         constrained view / mock form / grounded invariant surface
+                lower-dimensional projection of a larger geometry
+  Declaration   explicit operators that generate the slice
+                (no hidden assumptions; start from zero)
+  History       recorded path from ambient geometry to the slice
+                (how the constraints were applied)
+  Triple        (Slice, Declaration, History)
+  Tuple         Slice alone
+  Ambient       full relational operator geometry
+                (Niemeier-like lattice / unreduced flux system)
+  Lift          inverse reconstruction
+                (triadic re-lifting / Maass-style completion)
+
+FUNDAMENTALS
+  A slice is generated, not primitive.
+  You declare the operators that produce the slice you need.
+  Reconstructability requires all three components together.
+  Declaration + History supply the missing coordinates of the Triple.
+  The Triple is a lossless embedding:
+    the Slice stays usable in its own theory-class
+    the other two components guarantee an inverse lift.
+
+LOSS CONDITION
+  Store only the Tuple  →  pre-image is under-determined
+  Reconstruction map becomes many-to-one
+  Original structure cannot be recovered
+  Information is irreversibly lost
+
+PRESERVATION RULE
+  Keep data as declared Triple.
+  Slice remains a valid local view.
+  Lift can restore full geometry when required.
+
+ANALOGY
+  Mock form          = Slice
+  Niemeier lattice   = Ambient geometry
+  Maass completion   = upward repair / Lift
+  McKay-Thompson T_g = Slice detached from VOA + Monster action
+                       (function alone does not recover the module)
