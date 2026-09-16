@@ -1,0 +1,21 @@
+RECONSTRUCTION - TYPE-ERASURE MODEL
+
+TYPE
+  Dyadic erasure     : binary relation loss
+  Triadic re-lifting : ternary reconstruction
+
+VARIABLES
+  structure          : must remain preserved
+  initial_conditions : must be explicitly declared
+  assumptions        : must be explicitly declared
+  implicit           : does not exist
+  flux               : generates all remaining elements
+
+FUNDAMENTALS
+  Repair works upward only if structure is preserved.
+  Dyadic erasure is not equivalent to triadic re-lifting.
+  Reconstruction succeeds only when initial conditions
+  and assumptions are declared.
+  In this system nothing is implicit:
+  if it is not declared, it does not exist.
+  Flux generates the rest.
