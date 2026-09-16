@@ -1,0 +1,68 @@
+MARKOV CHAIN
+
+A discrete-time stochastic process {X_t} on a finite state space S = {S1, S2, S3}
+satisfying the Markov property:
+
+  P(X_{t+1} = j | X_t = i, X_{t-1}, ..., X_0) = P(X_{t+1} = j | X_t = i) = p_ij
+
+The future depends only on the present state, not on the path that led there.
+
+
+STATES AND TRANSITIONS (example from diagram)
+---------------------------------------------
+
+                    p11
+                     ↺
+                   ( S1 )
+                  /     \
+             p12 /       \ p13
+                /         \
+         p22 ↺ ( S2 ) ←→ ( S3 ) ↺ p33
+                    p23   p32
+
+  S1 : start / transient-looking state (no incoming arrows from S2 or S3 in this graph)
+  S2 : green state
+  S3 : red state
+
+  p_ij = P(go to Sj | currently in Si)
+
+  In this particular graph:
+    p21 = 0
+    p31 = 0
+  (once you leave S1 you cannot return)
+
+
+TRANSITION MATRIX P  (row-stochastic)
+-------------------------------------
+
+        to S1    to S2    to S3
+from S1 [ p11     p12      p13  ]
+from S2 [  0      p22      p23  ]
+from S3 [  0      p32      p33  ]
+
+Every row sums to 1:
+
+  p11 + p12 + p13 = 1
+  p22 + p23       = 1
+  p32 + p33       = 1
+
+
+KEY TYPES / OBJECTS
+-------------------
+  State space          S = {1,2,3}  (or {S1,S2,S3})
+  Transition matrix    P ∈ ℝ^{3×3}   row-stochastic
+  n-step matrix        P^n
+  Distribution         π_t  (row vector of probabilities at time t)
+  Evolution            π_{t+1} = π_t P
+  Stationary dist.     π = π P     (if the chain is irreducible + aperiodic)
+
+
+FUNDAMENTALS
+------------
+  • Memoryless (Markov property)
+  • P is a stochastic matrix
+  • Multi-step probabilities live in matrix powers: (P^n)_{ij}
+  • Under irreducibility + aperiodicity, P^n → matrix whose every row is the
+    unique stationary distribution π
+  • PageRank, simple language models, weather models, and many MCMC methods
+    are all instances of this structure
