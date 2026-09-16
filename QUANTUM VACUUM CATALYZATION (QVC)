@@ -1,0 +1,43 @@
+QUANTUM VACUUM CATALYZATION (QVC)
+Topological Excitonic Vacuum Crystals (TEVC)
+Author: Mineral Hoiland (Independent Researcher)
+Preprint: Zenodo 22702456 / GitHub mineralhoiland/QVC (Sep 2026)
+Vacuum fluctuations act as catalyst only. No net energy source.
+
+GEOMETRY
+Fat-torus (r, R) = (8, 50) nm
+ħ c_s = 0.07 meV · μm
+
+LOCKED OPTION A* PARAMETERS
+E_vac          = 0.1287 meV     (toroidal Casimir energy)
+F              = 0.58068
+ℓ              = -2.7958
+α_c = δ_c      = 0.1818
+λ_fold         = 0.8475
+λ*             = 0.7628
+Δ*             = 0.2324 meV     (static gap; 61.3 % reduction from Δ_ex = 0.600 meV)
+λ_min          = -g_0           (multiplicity N-1)
+Q_H            = 1/N
+T*             = 118.7 mK       (Schwinger crossover)
+Live gap (1 ps GPE) = 0.6305 meV
+
+SID FRAMEWORK
+Structure     : excitonic lattice + vacuum geometry (fat torus + hopfion / MATBG θ=1.1°)
+Interaction   : vacuum–exciton coupling (five-mode democratic; λ_min = -g_0)
+Dynamics      : basin-boundary deformation + saddle-node fold bifurcation
+
+PED FRAMEWORK
+Power         : no net energy input (vacuum as catalyst)
+Evaluation    : stability criteria shift (self-consistent gap equation)
+Dynamics      : altered bifurcation map
+
+FUNDAMENTALS
+- Quantum vacuum = fluctuating EM field (zero-point energy ħω/2 per mode)
+- Exciton = bound electron-hole pair; condensation possible in topological materials
+- Casimir energy on compact geometry supplies the catalytic shift
+- Self-consistent gap Δ* solved with fold at λ_fold
+- Phononic resonance on MATBG: q* = 0.0336 nm⁻¹ , ν_0 = 0.112 THz
+- Five Goldstone modes from Im3m × U(1) symmetry breaking (related hopfion work)
+
+Reproduce: locks/optionA_star.json + compute/qvc + scripts/run_verification.py
+Licenses: MIT (code) / CC BY 4.0 (text & figures)
