@@ -1,0 +1,71 @@
+QVC excitonic hopfion-Casimir system - RDG MAPPING  
+
+FUNDAMENTALS
+  RDG     Relational Dynamic Geometry
+          geometry generated from relations, not a fixed background
+  SID     Structure / Interaction / Dynamics     (geometry-side triad)
+  PED     Power / Evaluation / Dynamics          (engine-side triad)
+  Q-layer admissibility / stability constraint
+  Operators are structural, not content-dependent labels.
+  Adding vacuum-cavity, catalyzon, fractional Hopf, Schwinger
+  populates the slots; the triads do not break.
+
+SID
+  Structure
+    excitonic lattice + hopfion-toroidal Casimir cavity
+    (r, R) = (8, 50) nm
+    vacuum spectral operator   Evac = 0.1287 meV
+    lens-space L(N,1)
+    fractional Hopf charge     Q_H = 1/N
+    Hall staircase             δσ_xy = e² / (2 N h)
+  Interaction
+    vacuum–exciton coupling reshapes barriers with no net energy
+    saddle-node fold           Δ_c  = 0.109 meV
+    physical branch            Δ_*  = 0.2324 meV
+    catalyzon hybridization    Δ_cat = 0.502 meV
+    Mexican-hat barrier cut    30 %
+  Dynamics
+    GP evolution (1 ps)        Δ_live = 0.6305 meV
+    fold-slaved Casimir sat.   A*/A_c^fold = 0.9117
+    many-body Schwinger rate   T* = 118.7 mK
+    static fold ≠ GP sector ≠ tunneling sector
+
+PED
+  Power
+    zero-point vacuum supplies no net energy
+    Casimir cavity = geometric catalyst only
+  Evaluation
+    stability shift via saddle-node
+    barrier reduction from catalyzon sector
+    topological readout via Hall staircase
+  Dynamics
+    altered bifurcation map:
+      static fold
+      catalyzon deformation
+      GP overshoot
+      Schwinger tunneling
+    distinct sectors coexist on one RDG manifold
+
+QVC → RDG  (slot population)
+  GEOMETRY     Evac, hopfion torus, L(N,1)
+               → manifold curvature + fractional topology
+  RELATIONS    vacuum reshapes barriers without energy
+               → geometric operator on basin boundaries
+  BASIN MAP    saddle-node at Δ_c, branch Δ_*
+               → RDG bifurcation geometry
+  MODES        catalyzon gap, dark eigenvalue, 30 % flatten
+               → mode-mixing + local basin flattening
+  FLOW         GP overshoot, Casimir saturation
+               → flow on curved manifold
+  RATE         Schwinger Γ, crossover T*
+               → RDG-MFE-Q style tunneling operator
+  TOPOLOGY     Q_H = 1/N, Hall step δσ_xy
+               → fractional linking → transport quantization
+
+DIODE EFFECT  (RDG reading)
+  Apparent one-way flow is not a horizon.
+  Manifold has no true null surface.
+  Azimuthal superflow → ergosurface only
+  No radial transonic inflow → no one-way acoustic barrier
+  T_H = T* is a scale, not a horizon condition
+  Geometry supports bidirectional relational flow.
