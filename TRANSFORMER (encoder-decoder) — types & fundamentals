@@ -1,0 +1,64 @@
+TRANSFORMER (encoder-decoder) — types & fundamentals
+====================================================
+Token ids: int64
+Embeddings: float32 [seq_len, d_model]   d_model=512 typical
+Positional encoding: float32, added (not concatenated)
+Attention scores: float32 [heads, seq, seq]  softmax over last dim
+FFN hidden: float32 [seq, d_ff]            d_ff=2048 typical
+LayerNorm: float32, residual Add & Norm
+N = 6 stacked layers (paper default)
+
+Inputs
+  |
+  v
+Input Embedding  +  Positional Encoding
+  |
+  +-------------------------------+
+  |  Multi-Head Attention         |
+  |  Add & Norm                   |  Nx
+  |  Feed Forward                 |
+  |  Add & Norm                   |
+  +-------------------------------+
+  |                               |
+  |                               v
+  |                    Masked Multi-Head Attention
+  |                    Add & Norm
+  |                    Multi-Head Attention (encoder K,V)
+  |                    Add & Norm
+  |                    Feed Forward
+  |                    Add & Norm          Nx
+  |                               |
+Outputs (shifted right)           |
+  |                               |
+  v                               v
+Output Embedding + Positional Encoding
+  |
+  v
+Linear  ->  Softmax  ->  Output Probabilities
+
+
+RANKING SERVICE + CASSANDRA — types & fundamentals
+==================================================
+user_id:            string / uuid
+ranking_query:      structured request (features + context)
+ranked_results:     list[(item_id, score)]  score=float32
+query_latency_sla:  < 20 ms average
+consistency:        99.999%  (Cassandra QUORUM / LOCAL_QUORUM typical)
+throughput:         billions of queries
+storage:            Cassandra wide-column, partitioned by user or item
+
+User
+  |
+  |  send personalized ranking query
+  v
+Ranking Service ---------------------> Cassandra Clusters
+  |                                      |
+  |  query data                          | return data
+  |                                      |
+  |  executes billions of queries        |
+  |  maintain < 20 ms avg latency        | ensure 99.999% consistency
+  |                                      |
+  |  interaction for critical            |
+  |  user data processing                |
+  v                                      v
+User  <---- return ranked results ---- Ranking Service
