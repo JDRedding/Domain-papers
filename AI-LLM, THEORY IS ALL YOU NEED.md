@@ -12,10 +12,6 @@ Human      : theory-based reasoner (forward-looking, causal)
 
 LLMs optimize likelihood over past tokens; humans generate *explanatory models* that can contradict past data.
 
-Guided links for deeper dives:  
-- **LLM prediction**  
-- **Human theory formation**  
-
 ---
 
 ## 📏 VARIABLES — scale asymmetries
@@ -27,10 +23,6 @@ child_output      : language far beyond heard data
 ```
 
 Children generate grammar and concepts **not present** in their input. LLMs cannot exceed their training distribution except by interpolation.
-
-Explore:  
-- **Child language acquisition**  
-- **Training data limits**  
 
 ---
 
@@ -47,10 +39,6 @@ This is the core asymmetry:
 LLMs optimize *fit*; humans optimize *explanation*.  
 LLMs reduce uncertainty; humans *create* new uncertainty by proposing theories that contradict the data.
 
-Dive deeper:  
-- **Belief vs prediction**  
-- **Causal reasoning**  
-
 ---
 
 ## 🧪 THOUGHT EXPERIMENTS — where theory beats data
@@ -63,9 +51,6 @@ output       = heliocentrism is wrong
 ```
 A pure predictor reproduces the dominant view.  
 A theorist generates a *new model* that contradicts the corpus.
-
-Explore:  
-- **Galileo’s heliocentrism**  
 
 ---
 
@@ -83,9 +68,6 @@ result       = first powered flight nine weeks later
 
 The Wrights didn’t wait for data; they *created* the data their theory required.
 
-Explore:  
-- **Wright brothers engineering**  
-
 ---
 
 ## 🎯 SCOPE — where each engine wins
@@ -96,10 +78,6 @@ Human needed : novelty, theory construction, data generation
 
 LLMs excel at **compression of what already exists**.  
 Humans excel at **construction of what does not yet exist**.
-
-Explore:  
-- **Novelty generation**  
-- **Limits of extrapolation**  
 
 ---
 
@@ -113,3 +91,16 @@ LLMs operate on *symbolic shadows of the past*.
 Humans operate on *generative models of the future*.
 
 ---
+
+## Future Work
+ 
+- **Belief vs prediction**  
+- **Causal reasoning**  
+- **LLM prediction**  
+- **Human theory formation**
+- **Wright brothers engineering** 
+- **Galileo’s heliocentrism**  
+- **Novelty generation**  
+- **Limits of extrapolation**
+- **Child language acquisition**  
+- **Training data limits** 
