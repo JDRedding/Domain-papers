@@ -1,0 +1,99 @@
+# **System Design Concepts**  
+
+---
+
+## ➕ **Common**
+
+- **Idempotency** — safe retries  
+- **Rate Limiting** — protect from overload/abuse  
+- **Circuit Breaker** — stop calling failing dependency  
+- **Backpressure** — slow producers when consumers lag  
+- **Outbox Pattern** — reliably publish events after DB writes  
+
+---
+
+## 🗄️ **DATA & STORAGE**
+
+- **Database** — persistent structured or unstructured storage  
+- **SQL vs NoSQL** — relational ACID + schema vs flexible scale + variety  
+- **Sharding** — horizontal partitioning across nodes  
+- **Indexing** — B‑tree, hash, inverted indexes for fast reads  
+- **Denormalization** — duplicate data to reduce joins/latency  
+- **ACID** — atomicity, consistency, isolation, durability  
+- **Query Optimization** — execution plans, indexes, avoid N+1 / full scans  
+- **LSM Trees** — write‑optimized log‑structured merge trees  
+
+---
+
+## 🔁 **RELIABILITY & AVAILABILITY**
+
+- **Availability** — uptime percentage  
+- **Reliability** — correctness over time  
+- **Latency** — request → response time  
+- **Fault Tolerance** — operate despite failures  
+- **High Availability** — redundancy + failover  
+- **CAP Theorem** — consistency vs availability under partitions  
+- **Consistency Models** — strong, eventual, causal, RYW, etc.  
+- **Bulkhead** — isolate failures  
+- **Retry Logic** — safe retries + backoff  
+- **Timeout** — bound waiting time  
+- **Erasure Coding** — durable redundancy cheaper than replicas  
+
+---
+
+## ⚡ **SCALING & PERFORMANCE**
+
+- **Scalability** — handle more load by adding resources  
+- **Load Balancing** — distribute traffic  
+- **Caching** — store hot data closer (memory, CDN, local)  
+- **Connection Pooling** — reuse expensive connections  
+- **Cache Stampede** — thundering herd → locks/jitter  
+
+---
+
+## 🔌 **APIs & COMMUNICATION**
+
+- **API Design** — contracts, versioning, errors, pagination  
+- **REST** — resource‑oriented HTTP APIs  
+- **GraphQL** — client‑specified queries over typed schema  
+- **gRPC** — high‑performance RPC (protobuf + HTTP/2)  
+- **Sync vs Async** — blocking vs non‑blocking  
+- **WebSockets** — full‑duplex persistent connections  
+- **WebRTC** — peer‑to‑peer real‑time media/data  
+- **Deserialization** — safely convert bytes/JSON/protobuf to objects  
+
+---
+
+## 🧭 **DISTRIBUTED COORDINATION**
+
+- **Leader Election** — choose a coordinator  
+- **Consensus** — agree on a value (Raft, Paxos, Zab)  
+- **Service Discovery** — find healthy service instances  
+- **Correlation ID** — trace a request across services  
+
+---
+
+## 📨 **MESSAGING & EVENTS**
+
+- **Event‑Driven** — react to facts instead of polling  
+- **Message Queue** — durable buffer between producers/consumers  
+- **Pub/Sub** — decoupled fan‑out  
+- **Batch Processing** — scheduled large‑volume compute  
+- **MapReduce** — distributed map → reduce  
+- **Stream Processing** — continuous unbounded data  
+
+---
+
+## 🚀 **DEPLOYMENT & OPERATIONS**
+
+- **Secrets Management** — store/rotate keys, tokens, credentials  
+- **Feature Flags** — toggle behavior without redeploy  
+- **Blue‑Green Deployment** — swap traffic between two environments  
+- **Canary Release** — gradual rollout  
+- **BFF** — tailored backend per client  
+- **Monitoring** — metrics, traces, logs  
+- **Alerting** — notify when SLOs/thresholds breach  
+- **Strangler Pattern** — incrementally replace legacy systems  
+
+---
+
