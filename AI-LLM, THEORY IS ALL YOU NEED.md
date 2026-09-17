@@ -1,0 +1,115 @@
+# THEORY IS ALL YOU NEED  
+Felin & Holweg · Strategy Science (2024)
+- <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4737265>
+  
+---
+
+## 🧭 TYPES — two fundamentally different engines
+```
+LLM        : statistical predictor (backward-looking, imitative)
+Human      : theory-based reasoner (forward-looking, causal)
+```
+
+LLMs optimize likelihood over past tokens; humans generate *explanatory models* that can contradict past data.
+
+Guided links for deeper dives:  
+- **LLM prediction**  
+- **Human theory formation**  
+
+---
+
+## 📏 VARIABLES — scale asymmetries
+```
+tokens_LLM        ≈ 13 trillion
+human_read_time   ≈ 164,000 years (150 wpm)
+child_input_5yr   ≈ 36.5 million words
+child_output      : language far beyond heard data
+```
+
+Children generate grammar and concepts **not present** in their input. LLMs cannot exceed their training distribution except by interpolation.
+
+Explore:  
+- **Child language acquisition**  
+- **Training data limits**  
+
+---
+
+## 🔑 FUNDAMENTAL — *data‑belief asymmetry*
+```
+Real breakthroughs begin when someone believes
+the existing data is wrong.
+
+Prediction machines minimize surprise.
+They cannot generate that belief by design.
+```
+
+This is the core asymmetry:  
+LLMs optimize *fit*; humans optimize *explanation*.  
+LLMs reduce uncertainty; humans *create* new uncertainty by proposing theories that contradict the data.
+
+Dive deeper:  
+- **Belief vs prediction**  
+- **Causal reasoning**  
+
+---
+
+## 🧪 THOUGHT EXPERIMENTS — where theory beats data
+
+### **Galileo (1633)**
+```
+training_set = all texts up to 1633
+output       = heliocentrism is wrong
+               (geocentric corpus overwhelms Galileo)
+```
+A pure predictor reproduces the dominant view.  
+A theorist generates a *new model* that contradicts the corpus.
+
+Explore:  
+- **Galileo’s heliocentrism**  
+
+---
+
+### **Flight (1903)**
+```
+expert_data  = no bird >50 lb flies
+               Kelvin: no faith in aerial navigation
+               NYT: flight 1–10 million years away
+
+Wrights      = theory (lift + propulsion + steering)
+               generate missing data in wind tunnel
+
+result       = first powered flight nine weeks later
+```
+
+The Wrights didn’t wait for data; they *created* the data their theory required.
+
+Explore:  
+- **Wright brothers engineering**  
+
+---
+
+## 🎯 SCOPE — where each engine wins
+```
+AI wins      : routine, repetitive, past-extrapolation tasks
+Human needed : novelty, theory construction, data generation
+```
+
+LLMs excel at **compression of what already exists**.  
+Humans excel at **construction of what does not yet exist**.
+
+Explore:  
+- **Novelty generation**  
+- **Limits of extrapolation**  
+
+---
+
+## 🔚 CLOSING
+```
+LLMs don't think, you do
+```
+
+This is not a dismissal; it’s a category boundary.  
+LLMs operate on *symbolic shadows of the past*.  
+Humans operate on *generative models of the future*.
+
+---
