@@ -1,5 +1,5 @@
 # **Causality Fundamentals**  
-Source: **@KirkDBorne (2026‑09‑16)**m Judea Pearl’s causal‑inference canon
+Source: @KirkDBorne (2026‑09‑16) Judea Pearl’s causal‑inference canon
 
 ---
 
