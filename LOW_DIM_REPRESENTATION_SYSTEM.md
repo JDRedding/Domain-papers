@@ -1,0 +1,179 @@
+# TYPE: LOW_DIM_REPRESENTATION_SYSTEM
+```
+------------------------------------------------------------
+Fundamental Goal:
+    Transform nonlinear, high-dimensional data → linear, compact, structured
+    via depth-driven progressive compression → expression.
+
+------------------------------------------------------------
+SECTION: CLASSIFICATION MODELS (NEURAL COLLAPSE)
+------------------------------------------------------------
+Variables:
+    K        : number of classes
+    d        : feature dimension (often d ≥ K-1)
+    H_i      : feature vectors for class i
+    μ_i      : class-mean feature for class i
+    W_i      : classifier weight for class i
+
+Core Phenomena (NC1–NC3):
+    NC1: Within-class collapse
+        H_i → μ_i
+        Var(H_i) → 0
+
+    NC2: Simplex ETF structure
+        {μ_i} form equiangular tight frame
+        ||μ_i|| = constant
+        μ_i · μ_j = -1/(K-1) for i ≠ j
+
+    NC3: Self-duality
+        W_i ∥ μ_i
+
+Landscape Fundamentals:
+    - Overparameterization → unconstrained feature model
+    - Global minima always satisfy NC
+    - No spurious local minima
+    - Strict saddle structure
+
+Model Design Implications:
+    - Fix classifier as Simplex ETF
+    - Reduce feature dimension to d = K
+    - Use class-mean features (CMF) for transfer learning stability
+
+------------------------------------------------------------
+SECTION: DEPTH EFFECTS
+------------------------------------------------------------
+Variables:
+    l        : layer index
+    H_l(x)   : hidden representation at layer l
+
+Principles:
+    - Depth progressively linearizes nonlinear data
+    - Shallow layers: high variance, low separation
+    - Deep layers: compressed, discriminative, NC-like geometry
+    - Middle layers often redundant in large models
+
+Transfer Learning:
+    - Progressive separation transfers across tasks
+    - Fine-tune only key intermediate layer for efficiency
+
+------------------------------------------------------------
+SECTION: GENERATIVE MODELS (LLMs)
+------------------------------------------------------------
+Variables:
+    t        : task index
+    h_l      : hidden state of last token at layer l
+    v_t      : task vector (mean hidden representation for task t)
+    TDNV     : Task-Distance Normalized Variance
+
+Compression → Expression Dynamics:
+    Compression Phase:
+        - Within-task variance ↓
+        - Between-task distance ↑
+        - Task vector emerges
+
+    Expression Phase:
+        - Model applies compressed rule to query token
+
+Universality:
+    - Transformers, SSMs
+    - Algorithmic, symbolic, multimodal tasks
+    - Larger models → stronger compression
+    - More demonstrations → stronger compression
+
+------------------------------------------------------------
+SECTION: CONCEPT DISCOVERY (SUPERVISED)
+------------------------------------------------------------
+Difference-in-Means (DiM):
+    Positive set: D+
+    Negative set: D−
+    μ+ = mean(h ∈ D+)
+    μ− = mean(h ∈ D−)
+    u_DiM = (μ+ − μ−) / ||μ+ − μ−||
+
+Robust DiM:
+    s(h) = (||h−μ−||² − ||h−μ+||²) / (||h−μ−||² + ||h−μ+||²)
+    Select top-K informative tokens
+    Recompute DiM on filtered sets
+
+------------------------------------------------------------
+SECTION: CONCEPT DISCOVERY (UNSUPERVISED)
+------------------------------------------------------------
+Sparse Coding Model:
+    h ∈ R^d ≈ U z
+    U ∈ R^(d×m) : dictionary of concept directions
+    z ∈ R^m    : sparse coefficients
+
+Sparse Autoencoders (SAEs):
+    Encoder:  z = prox_{λR}(Wᵀ h + b_e)
+    Decoder:  ĥ = U z + b
+
+Variants:
+    ReLU SAE       : nonnegative ℓ1
+    JumpReLU SAE   : ℓ0-like
+    TopK SAE       : cardinality constraint
+    AbsTopK SAE    : top-k by |activation| (bidirectional features)
+
+AbsTopK Fundamentals:
+    - Captures both sides of semantic contrast
+    - Better reconstruction fidelity
+    - Better steering performance
+
+------------------------------------------------------------
+SECTION: STEERING (BEHAVIORAL CONTROL)
+------------------------------------------------------------
+Variables:
+    u        : concept direction
+    α        : steering strength
+    h_t      : hidden state at token t
+    Lprefix  : number of prefix tokens to steer
+
+Steering Rule:
+    h_t ← h_t + α u
+
+Behavioral Effects:
+    α > 0 → amplify concept
+    α < 0 → suppress concept
+    |α| ↑ → stronger but riskier distribution shift
+
+Prefix Steering:
+    - Only steer first Lprefix tokens
+    - Early alignment propagates through self-attention
+    - Best tradeoff: strong α, minimal prefix length
+
+Latent Generation Hypothesis:
+    - Early hidden states determine trajectory
+    - Later tokens autoregressively inherit prefix alignment
+
+------------------------------------------------------------
+SECTION: METRICS
+------------------------------------------------------------
+CDNV (classification):
+    Measures within-class collapse and between-class separation
+
+TDNV (ICL tasks):
+    Measures within-task compression and between-task discrimination
+
+Task Vector Accuracy:
+    Measures how well h_l encodes the task rule
+
+Early Exit Accuracy:
+    Measures how well intermediate layers encode query information
+
+------------------------------------------------------------
+SECTION: GLOBAL FUNDAMENTALS
+------------------------------------------------------------
+Deep models universally produce:
+    - Linear directions encoding concepts
+    - Compact low-dimensional manifolds
+    - Structured geometry (ETF, collapse)
+    - Compression → expression dynamics
+    - Steerable behaviors via linear interventions
+
+------------------------------------------------------------
+```
+
+# Future work
+- **An RDG triadic operator mapping** (SID/PED alignment)
+- **A TRUE‑v12 compatible generative operator schema**
+- **A compressed “master equation” mapping between NC ↔ MFE**
+- **A minimal ASCII diagram of compression→expression curves**
