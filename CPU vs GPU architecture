@@ -1,0 +1,46 @@
+CPU vs GPU architecture
+
+CPU Architecture                      GPU Architecture
+
+CONTROL CONTROL     ALU ALU ALU       CTRL CACHE  ALU ALU ALU ALU
+CONTROL CONTROL     ALU ALU ALU       CTRL CACHE  ALU ALU ALU ALU
+CACHE   CACHE       ALU ALU ALU       CTRL CACHE  ALU ALU ALU ALU
+                                      CTRL CACHE  ALU ALU ALU ALU
+CACHE CACHE CACHE CACHE CACHE CACHE   CTRL CACHE  ALU ALU ALU ALU
+CACHE CACHE CACHE CACHE CACHE CACHE
+CACHE CACHE CACHE CACHE CACHE CACHE   CACHE CACHE CACHE CACHE CACHE CACHE CACHE CACHE CACHE
+
+DRAM                                  DRAM
+
+From the drawing
+CPU  1 fat control   1 mid cache   1 huge lower cache   9 ALUs
+GPU  5 thin control+cache stacks   1 shared lower cache   20 ALUs
+
+Types
+CONTROL   instruction decode, schedule, branch, exception
+ALU       integer / FP arithmetic and logic
+CACHE     on-die SRAM near compute  L1 L2 L3 / shared
+DRAM      off-die main memory  DDR or HBM / GDDR
+
+Variables that differ
+cores          few fat cores                 many thin cores
+control area   large                         small and replicated
+ALU count      low                           high
+cache / core   large private + big shared    small local + shared
+memory links   fewer                         more
+goal           low latency                   high throughput
+thread model   1 to tens of threads          thousands of threads
+execution      MIMD, out of order            SIMT / SIMD lockstep
+occupancy      keep one thread fast          hide latency with many threads
+
+Fundamentals
+CPU spends die area on control and cache so one thread finishes sooner
+GPU spends die area on ALUs and bandwidth so many threads finish together
+same DRAM at the bottom, different pressure on it
+CPU wants lower latency
+GPU wants higher bandwidth
+
+Typical mapping
+CPU   OS, compilers, JIT, gameplay logic, OLTP, branchy serial work
+GPU   shaders, ML kernels, data-parallel physics, image filters, GEMM
+mixed video engines, NPUs, and iGPUs sit beside both
