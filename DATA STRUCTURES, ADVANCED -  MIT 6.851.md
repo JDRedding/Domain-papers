@@ -1,0 +1,86 @@
+# MIT 6.851  ADVANCED DATA STRUCTURES
+Videos + notes + psets + GitHub
+- <https://courses.csail.mit.edu/6.851/spring21/>
+- GH: <https://github.com/6851-2021>
+
+**Concise:** MIT 6.851 is the *apex predator* of data‑structure theory: everything is dynamic, adversarial, multi‑level, and asymptotically sharp.
+
+## 🧭 TOPIC MAP — the eight “frontiers”
+```
+TIME TRAVEL          persistence / retroactivity
+DYNAMIC GRAPHS       connectivity under edge updates
+SUCCINCT             space close to information-theoretic min
+DYNAMIC OPTIMALITY   one BST as good as any other online
+GEOMETRY             multi-dimensional range / nearest
+INTEGERS             sub-log / constant time ops + lower bounds
+MEMORY HIERARCHY     cache-oblivious / multi-level misses
+HASHING              dynamic perfect / cuckoo / linear probing
+STRINGS              pattern matching / suffix structures
+```
+
+- **Time travel** — persistence, partial/fully retroactive operations, version DAGs  
+- **Dynamic graphs** — connectivity under edge insert/delete, decremental/incremental, sparsification  
+- **Succinct structures** — near‑information‑theoretic space, rank/select, wavelet trees  
+- **Dynamic optimality** — splay trees, working set, unified bounds, online BST lower bounds  
+- **Geometry** — kd‑trees, range trees, fractional cascading, nearest‑neighbor  
+- **Integer structures** — van Emde Boas, y‑fast/fusion trees, sublogarithmic ops  
+- **Memory hierarchy** — tall‑cache assumptions, I/O complexity, multi‑level locality  
+- **Hashing** — universality, independence, cuckoo hashing, dynamic perfect hashing  
+- **Strings** — pattern matching, suffix structures, LCP, compressed indexes
+
+
+## ⚙️ FUNDAMENTAL OBJECTS & VARIABLES
+- **Types:** Key, Value, Node, Pointer, Version  
+- **Variables:**  
+  - \(n\): number of elements  
+  - \(u\): universe size  
+  - \(w\): word size  
+  - \(S\): space  
+  - \(T\): time (worst‑case / amortized / expected)
+
+```
+type   Key, Value, Node, Pointer, Version
+var    n = #elements, u = universe size, w = word size
+       space S, time T (worst / amortized / expected)
+core   persistence, dynamization, fractional cascading
+       van Emde Boas, fusion trees, splay trees
+       cache-oblivious model, I/O complexity
+       succinct rank/select, wavelet trees
+       dynamic trees (link-cut, Euler tour)
+       hashing: universality, independence, load
+```
+
+## 🔩 CORE TECHNIQUES — the “toolbox”
+Each technique is a Guided Link for deeper exploration.
+
+- **Persistence** — partial, full, confluent  
+- **Dynamization** — turning static DS into dynamic ones  
+- **Fractional cascading** — speeding up repeated searches across linked structures  
+- **van Emde Boas** — \(O(\log w)\) predecessor  
+- **Fusion trees** — word‑parallel bit tricks for \(O(\log n / \log w)\)  
+- **Splay trees** — self‑adjusting BSTs, amortized bounds  
+- **Cache‑oblivious model** — algorithms independent of block size \(B\)  
+- **I/O complexity** — minimizing transfers between memory levels  
+- **Succinct rank/select** — constant‑time queries in compressed bitvectors  
+- **Wavelet trees** — hierarchical decomposition for sequences  
+- **Dynamic trees** — link‑cut, Euler tour trees  
+- **Hashing** — universality, independence, load control
+
+---
+
+## 🎯 The generative principle
+```
+structures that stay fast when the data itself
+keeps changing, shrinking, or growing.
+```
+**Data structures that remain fast even when the data itself is changing, shrinking, growing, branching, or time‑traveling.**
+
+This is the substrate‑level view:  
+local rules + constraints → persistent performance under adversarial updates.
+
+## FUTURE WROK 
+
+- **Dynamic graphs deep dive**  
+- **Succinct structures with rank/select operators**  
+- **Integer structures: vEB → fusion tree → modern lower bounds**  
+- **Cache‑oblivious geometry** 
