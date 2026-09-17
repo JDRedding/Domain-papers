@@ -35,12 +35,12 @@ The ladder moves from **observation → manipulation → imagination**.
 ---
 
 ## 🧩 **Graphical Fundamentals**
-- **DAG****:** Directed Acyclic Graph encoding causal assumptions  
-- **Paths**:** chains, forks, colliders  
-- **d‑separation**:** graphical conditional‑independence test  
-- **Back‑door criterion**:** block all back‑door paths from X → Y  
-- **Front‑door criterion**:** identify causal effect via mediator  
-- **do‑operator**:** severs incoming arrows into X (simulated intervention)  
+- **DAG**: Directed Acyclic Graph encoding causal assumptions  
+- **Paths**: chains, forks, colliders  
+- **d‑separation**: graphical conditional‑independence test  
+- **Back‑door criterion**: block all back‑door paths from X → Y  
+- **Front‑door criterion**: identify causal effect via mediator  
+- **do‑operator**: severs incoming arrows into X (simulated intervention)  
 
 These tools let you compute causal effects from observational data when experiments are impossible.
 
