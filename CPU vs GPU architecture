@@ -12,7 +12,7 @@ CACHE CACHE CACHE CACHE CACHE CACHE   CACHE CACHE CACHE CACHE CACHE CACHE CACHE 
 
 DRAM                                  DRAM
 
-From the drawing
+From the diagram
 CPU  1 fat control   1 mid cache   1 huge lower cache   9 ALUs
 GPU  5 thin control+cache stacks   1 shared lower cache   20 ALUs
 
