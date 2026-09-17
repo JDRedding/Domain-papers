@@ -1,0 +1,88 @@
+# **CPU vs GPU vs TPU — Compute Architecture Fundamentals**
+
+---
+
+## 🔢 **FUNDAMENTALS**
+
+### **CPU**
+- Data types: FP64, FP32, INT64  
+- Programming: C/C++, Python + SIMD  
+- Strength: **flexibility + single‑thread performance**
+
+### **GPU**
+- Data types: FP32, FP16, INT8, Tensor Cores  
+- Programming: CUDA, OpenCL  
+- Strength: **embarrassingly parallel compute**
+
+### **TPU**
+- Data types: bfloat16, INT8, sparse tensors  
+- Programming: TensorFlow / JAX + XLA  
+- Strength: **dense matrix multiply at scale**
+
+
+## 🧮 **COMPUTE MODEL**
+
+### **CPU — Scalar + SIMD (latency‑optimized)**
+- Sequential execution with optional vector instructions (AVX/SSE)  
+- Few powerful cores  
+- Heavy branch prediction + speculative execution  
+- Ideal for **general-purpose compute** and irregular control flow
+
+### **GPU — SIMT Parallel Processing**
+- Thousands of lightweight cores grouped into warps  
+- Massive thread‑level parallelism  
+- Throughput‑oriented execution  
+- Ideal for **parallel workloads** like training, graphics, scientific compute
+
+### **TPU — Tensor / Matrix Processing**
+- Systolic array: grid of multiply‑accumulate units  
+- Matrix‑first design with explicit dataflow  
+- Ideal for **tensor operations** and large‑scale ML inference/training
+
+---
+
+## 🧠 **MEMORY ARCHITECTURE**
+
+### **CPU**
+- Hardware‑managed L1/L2/L3 caches  
+- Off‑chip DRAM  
+- Optimized for **low‑latency random access**
+
+### **GPU**
+- Hardware L1/L2 + software‑managed shared memory  
+- HBM/GDDR high‑bandwidth memory  
+- Optimized for **coalesced, throughput‑heavy access**
+
+### **TPU**
+- Compiler‑managed on‑chip SRAM (weights + activations)  
+- Off‑chip HBM  
+- XLA‑managed local memory for **predictable tensor dataflow**
+
+Explore:  
+- **Cache hierarchy**  
+- **HBM**  
+- **Systolic arrays**  
+
+---
+
+## ⚙️ **IDEAL WORKLOADS**
+
+### **CPU**
+- Operating systems  
+- Control logic  
+- Latency‑sensitive tasks  
+- Irregular branching
+
+### **GPU**
+- Massive parallel compute  
+- AI model training  
+- Graphics pipelines  
+- Scientific simulations
+
+### **TPU**
+- Neural network training & inference  
+- Dense matrix/tensor workloads  
+- Efficiency‑optimized ML pipelines
+
+---
+
