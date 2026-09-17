@@ -1,0 +1,57 @@
+# GEMATRIA FUNDAMENTALS  
+Hebrew letters carry fixed integer values.
+
+- **Yud** (י) = 10  
+- **Vav** (ו) = 6  
+- **He** (ה) = 5  
+
+---
+
+## 🧩 ALEPH STRUCTURE — composite letter analysis  
+Aleph (א) is traditionally interpreted as **two Yuds joined by one Vav**.
+
+```
+yud_upper : int = 10   # י
+vav       : int =  6   # ו
+yud_lower : int = 10   # י
+
+aleph_sum = yud_upper + vav + yud_lower
+          = 10 + 6 + 10
+          = 26
+```
+---
+
+## 🔠 TETRAGRAMMATON — YHWH (יהוה)
+```
+yod : int = 10   # י
+he1 : int =  5   # ה
+vav : int =  6   # ו
+he2 : int =  5   # ה
+
+yhwh_sum = yod + he1 + vav + he2
+         = 10 + 5 + 6 + 5
+         = 26
+```
+
+## 🎯 RESULT — the numerical identity
+```
+aleph_sum == yhwh_sum == 26
+```
+
+**Interpretation:**  
+The silent letter **Aleph** contains the same numerical structure as **YHWH**.  
+In gematria, this is taken to mean:
+
+- Aleph encodes unity, oneness, or foundational presence.  
+- Its internal structure mirrors the numerical signature of the Divine Name.  
+
+This is a **numerical correspondence**, not a theological claim — a structural identity inside the gematria system.
+
+## FUTURE WORK
+
+- **Aleph symbolism**  
+- **Gematria basics**  
+- **Gematria as a formal system**  
+- **Letter decomposition rules**  
+- **Comparing Aleph with other composite letters**  
+- **Tetragrammaton gematria**  
