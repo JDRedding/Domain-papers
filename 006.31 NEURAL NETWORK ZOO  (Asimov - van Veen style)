@@ -1,4 +1,6 @@
 NEURAL NETWORK ZOO  (Asimov / van Veen 2016 style)
+→ 006.31 → Machine Learning
+
 Legend of cell types
   I  Input          nI Noisy input       bI Backfed input
   H  Hidden         pH Probabilistic H   sH Spiking H
