@@ -1,0 +1,57 @@
+EVOLUTION OF THE INTERNET
+
+What it is
+The Internet started as a military research network (ARPANET)
+and became a global packet-switched communication system
+that now connects billions of devices.
+
+Core idea
+Store-and-forward packet switching + layered protocols.
+Data is split into packets, routed independently, then reassembled.
+
+Timeline / generations
+1960s  ARPANET          packet switching, IMPs, first host-to-host
+1980s  TCP/IP           internetworking standard (Jan 1, 1983 flag day)
+1990s  WWW              HTTP + HTML + URLs + browsers
+2000s  Broadband        always-on last-mile (DSL, cable, fiber)
+2010s  Mobile Internet  3G/4G, smartphones, apps
+2020s  Cloud & IoT      hyperscale compute, 5G, billions of endpoints
+
+Key building blocks
+Packet        unit of data with header (src, dst, proto, seq)
+IP address    network-layer locator (IPv4 / IPv6)
+TCP           reliable, ordered, congestion-controlled byte stream
+UDP           unreliable datagrams (DNS, video, games)
+HTTP/HTTPS    application protocol for the Web
+DNS           name -> address resolution
+Routing       BGP between ASes, OSPF/IS-IS inside networks
+Wi-Fi / 4G / 5G   wireless access layers under IP
+
+Major changes
+- Connectivity: few research hosts -> planetary mesh
+- Speed: bits/s on copper -> Gbps+ fiber and 5G
+- Medium: wired only -> wireless last hop + mobile
+- Access: institutions -> anyone with a phone
+- Compute: local machines -> cloud + edge + IoT devices
+
+Bandwidth over time (sketch)
+speed
+  ^
+  |                         /
+  |                      /
+  |                   /
+  |                /
+  |             /
+  |          /
+  |       /
+  |    /
+  |  /
+  +------------------------> time
+    ARPANET   WWW   BB   4G/5G  Cloud/IoT
+
+Mental model
+Application  (HTTP, DNS, SMTP, ...)
+Transport    (TCP, UDP)
+Internet     (IP, ICMP, routing)
+Link         (Ethernet, Wi-Fi, 5G)
+Physical     (fiber, radio, copper)
