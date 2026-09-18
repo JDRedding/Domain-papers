@@ -1,5 +1,6 @@
 # COMPUTER ACRONYMS + FUNDAMENTALS
-
+ → 004 → Computer Science
+ 
 ## HARDWARE / PROCESSING
 ```
 CPU   Central Processing Unit          Executes instructions; the computer's brain
