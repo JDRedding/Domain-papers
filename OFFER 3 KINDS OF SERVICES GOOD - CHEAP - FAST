@@ -1,0 +1,25 @@
+OFFER 3 KINDS OF SERVICES 
+GOOD - CHEAP - FAST
+BUT YOU CAN PICK ONLY TWO
+
+GOOD & CHEAP     WON'T BE FAST
+FAST & GOOD      WON'T BE CHEAP
+CHEAP & FAST     WON'T BE GOOD
+
+# Fundamentals (project / systems trade-off)
+# You cannot maximize all three at once.
+
+quality:   bool   # "good"
+cost:      bool   # "cheap"  (low cost)
+speed:     bool   # "fast"
+
+# Valid combinations (pick exactly two True)
+# quality + cost   => speed is False
+# speed + quality  => cost is False
+# cost + speed     => quality is False
+
+# CAP theorem analogy (distributed systems)
+# C = Consistency
+# A = Availability
+# P = Partition tolerance
+# Same rule: pick any two.
