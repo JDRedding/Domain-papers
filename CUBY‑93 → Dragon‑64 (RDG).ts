@@ -41,3 +41,28 @@ function evalLaneAt(
         twist: omegaPow(s8 * t8)
     }
 }
+
+// Discrete level: Dragon-64
+type DiscreteRDG = {
+    lattice: AnyonPoint[]      // (Z8 × Z8)
+    S: Complex[][]             // modular S
+    T: Complex[][]             // modular T
+}
+
+// Smooth evaluator: CUBY-93
+type SplineEvaluator = {
+    lanes: CubyLane[]
+    eval(u: number): AnyonPoint[]
+}
+
+// Continuum limit: spacetime render
+type ContinuumRDG = {
+    relations: QuantumGraph    // qubits + entanglement
+    invariants: SymmetryData
+    attractors: PhaseStructure
+    manifold: {
+        M: Manifold
+        g: Metric
+    }
+}
+
