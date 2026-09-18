@@ -1,0 +1,25 @@
+OVERHEAD CRANE HOIST & BRAKE SYSTEM
+CAUSES OF FAILURE & PREVENTION
+
+Main assembly:
+  [Brake Assembly] -- electromagnetic DC/AC brake
+  [Wire Rope Drum] -- wraps steel wire rope
+  [Gearbox] -- reduces motor speed, increases torque
+  [Motor] -- provides power to hoist
+
+Load path:
+  Drum --> Wire Rope --> Pulley Block --> Hook (safety latch)
+
+FAILURE MODES
+  worn_brake_lining     : lining wear reduces braking effectiveness
+  hydraulic_failure     : leaks / pressure loss cut brake force and holding ability
+  oil_contamination     : oil/grease on liner or drum drops friction
+  overheating           : heat shortens insulation life, can fail brake or motor
+  improper_adjustment   : wrong air gap or setting causes slip or drag
+
+PREVENTIVE MEASURES
+  INSPECT  : check lining, drum, rope; look for wear, damage, leaks, contamination
+  TEST     : verify holding ability, release, emergency stop, load-holding
+  MAINTAIN : keep clean and lubricated; set brake per manufacturer; replace worn parts promptly
+
+Regular inspection + test + maintain = safer operation, longer life, less downtime.
