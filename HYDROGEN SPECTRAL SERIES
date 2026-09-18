@@ -1,0 +1,28 @@
+HYDROGEN SPECTRAL SERIES
+
+FUNDAMENTALS
+  Discrete energy levels of H atom:
+    En = -13.6 / n²   eV     (n = 1, 2, 3, …)
+    E1 = -13.6 eV            (ground state)
+    E∞ =  0 eV               (ionization limit)
+
+  Photon emitted when electron drops n2 → n1 (n2 > n1):
+    ΔE = E_n2 - E_n1 = hc / λ
+    1/λ = ν̃ = RH (1/n1² - 1/n2²)
+
+VARIABLES
+  n1, n2   : principal quantum numbers (integers)
+  RH       : Rydberg constant ≈ 1.097376 × 10⁷ m⁻¹
+  λ        : wavelength
+  ν̃        : wavenumber (1/λ)
+  En       : energy of level n
+
+SERIES (grouped by landing level n1)
+  Lyman     n1 = 1   ultraviolet     λ ≈ 10–121 nm
+  Balmer    n1 = 2   visible         λ ≈ 364–656 nm
+  Paschen   n1 = 3   infrared        λ ≈ 820 nm–1.88 µm
+  Brackett  n1 = 4   infrared        λ ≈ 1.46–4.05 µm
+  Pfund     n1 = 5   infrared        λ ≈ 2.28–7.46 µm
+
+  As n2 → ∞ the lines of each series converge
+  to the series limit (ionization from that n1).
