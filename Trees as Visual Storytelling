@@ -1,0 +1,27 @@
+// Trees as Visual Storytelling
+// type: educational_map_tutorial
+// variables: climate_indicators, tree_species, moisture_preference, temperature_gradient
+
+const Storytelling = {
+  purpose: "show mapmakers how tree choice communicates climate without labels",
+  corePrinciple: "trees encode environment",
+  
+  keyExample: {
+    species: "willow",
+    indicator: "nearby water",
+    reason: "prefers wet feet / riparian soil"
+  },
+  
+  climateAxes: {
+    temperature: ["cold", "temperate", "hot"],
+    moisture: ["dry", "moderate", "wet"]
+  },
+  
+  forestTypes: [
+    { name: "subalpine", trees: "conifers", conditions: "cold + dry" },
+    { name: "cool rainforest", trees: "dense conifers", conditions: "cold + wet" },
+    { name: "temperate", trees: "oak maple beech", conditions: "moderate rain + temp" },
+    { name: "savanna", trees: "drought-tolerant", conditions: "hot + seasonal rain" },
+    { name: "rainforest", trees: "evergreen + palms", conditions: "hot + year-round wet" }
+  ]
+};
