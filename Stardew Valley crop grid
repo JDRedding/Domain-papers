@@ -1,0 +1,12 @@
+# Stardew Valley crop grid 
+# types: Vegetable | Fruit | Flower | Forage
+# seasons: Spring / Summer / Fall / Special
+# fundamentals: plant in season, water daily, harvest when ripe
+
+amaranth     cactus      cabbage      beet         blue jazz    blueberries
+cauliflower  hotpepper   cauliflower  coffee       corn         tomatoes
+eggplant     fairyrose   garlic       grapes       greenbean    kale
+hotpepper    spinach     melon        parsnip      pineapple    poppy
+potato       pumpkin     blueberries  radish       redcabbage   rhubarb
+squash       strawberry  summerflower sunflower    carrot       yam
+leaves       tomato      redpepper    hops         wheat        sweetpotato
