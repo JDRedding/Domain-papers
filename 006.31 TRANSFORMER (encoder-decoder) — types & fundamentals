@@ -1,5 +1,7 @@
 TRANSFORMER (encoder-decoder) — types & fundamentals
+→ 006.31 → Machine Learning
 ====================================================
+
 Token ids: int64
 Embeddings: float32 [seq_len, d_model]   d_model=512 typical
 Positional encoding: float32, added (not concatenated)
