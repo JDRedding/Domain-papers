@@ -1,0 +1,51 @@
+DRAGONFIRE {
+  type: ActionGame
+  year: 1982
+  platform: Intellivision
+  publisher: Imagic
+  developer: Imagic
+  programmer: Alan Smith
+  sound: Dave Durran
+  original_design: Bob Smith (Atari 2600)
+  genre: Action / Twitch
+  players: 1-2
+  lives: 7
+  cartridge: IMAGIC #700010
+
+  PLAYER {
+    name: Prince
+    goal: Recover stolen royal treasures from dragon-occupied castles
+  }
+
+  LEVEL_STRUCTURE {
+    type: Two-phase loop
+    phases_per_level: 2
+    difficulty: Increases each castle (faster fire, smarter dragons)
+  }
+
+  PHASE_1_BRIDGE {
+    view: Side-view
+    objective: Cross drawbridge into castle
+    hazards: High and low fireballs from dragon hatchlings
+    later_hazards: Archer arrows from tower
+    actions: Run, jump, duck
+    fail: Hit = lose 1 life
+  }
+
+  PHASE_2_TREASURE_ROOM {
+    view: Top-down
+    objective: Collect every treasure then exit
+    enemy: Dragon patrolling bottom of screen
+    hazards: Fire breath / fireballs
+    treasures: Jugs, lamps, goblets, chests, crowns, etc.
+    fail: Hit = lose 1 life
+    success: Door opens after all items collected
+  }
+
+  FUNDAMENTALS {
+    core_mechanic: Precise timing and positioning
+    innovation: Alternating two-screen stages
+    style: Early home-console twitch action
+    progression: Repeat raid on next harder castle
+  }
+}
