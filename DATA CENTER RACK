@@ -1,0 +1,51 @@
+DATA CENTER RACK
+Organized. Connected. Protected.
+
+[42] PATCH PANEL
+     type: network cabling hub
+     role: organizes and manages incoming/outgoing network cables
+
+[36] SWITCH
+     type: Layer 2/3 LAN switch
+     role: connects devices within the local network (LAN)
+
+[33] FIREWALL
+     type: network security appliance
+     role: monitors and filters traffic; protects the rack from unauthorized access
+
+[29] SERVER 1
+[27] SERVER 2
+[25] SERVER 3
+[23] SERVER 4
+[21] SERVER 5
+     type: compute nodes (1U/2U rack servers)
+     role: host applications and process data
+
+[19] NAS
+     type: Network Attached Storage
+     role: centralized file and data storage over the network
+
+[16] STORAGE
+     type: high-capacity disk array / SAN-style storage
+     role: stores large data volumes for the servers
+
+[09] LOAD BALANCER
+     type: traffic distribution appliance
+     role: spreads incoming requests across multiple servers
+
+[06] UPS
+     type: Uninterruptible Power Supply
+     role: provides backup power during outages
+
+[01] PDU
+     type: Power Distribution Unit
+     role: distributes conditioned power to every device in the rack
+
+FUNDAMENTALS
+- Rack units (U): height is measured in 1.75-inch increments (1U, 2U, etc.)
+- Front-to-back airflow: cool intake at front, hot exhaust at rear
+- Cable management: patch panel + structured cabling keeps the rack serviceable
+- Power path: PDU feeds devices; UPS sits upstream for failover
+- Security path: firewall sits between switch/WAN and the servers
+- Compute vs storage: servers process; NAS/storage persist data
+- High availability: load balancer + multiple identical servers reduce single points of failure
