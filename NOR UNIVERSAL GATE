@@ -1,0 +1,90 @@
+NOR UNIVERSAL GATE
+Fundamentals
+  NOR(A,B) = ~(A OR B) = ~A AND ~B
+  Output is 1 only when both inputs are 0
+  Any Boolean function can be built from NOR alone
+  (De Morgan + inversion staging)
+
+Variables
+  A, B : inputs
+  Q    : output
+  ~    : NOT / inversion
+
+------------------------------------------------
+NOT  (inverter)
+  Tie both NOR inputs together
+
+  A ----+---- NOR ---- Q = ~A
+        |
+        +----
+
+  Q = NOR(A,A) = ~(A+A) = ~A
+
+------------------------------------------------
+BUFFER
+  Two NOTs in series (double inversion)
+
+  A ---- NOR ---- NOR ---- Q = A
+         (tied)   (tied)
+
+  Q = ~~A = A
+
+------------------------------------------------
+OR
+  NOR followed by a NOT (cancel the outer inversion)
+
+  A ----+
+        +---- NOR ---- NOR ---- Q = A+B
+  B ----+         (tied)
+
+  First  NOR gives ~(A+B)
+  Second NOR (tied) inverts it back to A+B
+
+------------------------------------------------
+AND
+  Invert both inputs, then NOR them
+  (De Morgan: A AND B = ~(~A OR ~B))
+
+  A ---- NOR ----+
+         (tied)  +---- NOR ---- Q = A·B
+  B ---- NOR ----+
+         (tied)
+
+  Q = NOR(~A, ~B) = ~(~A + ~B) = A·B
+
+------------------------------------------------
+NAND
+  AND followed by a NOT
+  (or invert the AND output)
+
+  A ---- NOR ----+
+         (tied)  +---- NOR ---- NOR ---- Q = ~(A·B)
+  B ---- NOR ----+         (tied)
+         (tied)
+
+  Q = ~(A·B)
+
+------------------------------------------------
+XOR  (A XOR B = A~B + ~A B)
+  Build the two AND terms, then OR them
+
+  A ----------------+---- NOR ----+
+                    |             |
+  B ---- NOR -------+             +---- NOR ---- Q
+         (tied)     |             |
+  A ---- NOR -------+---- NOR ----+
+         (tied)     |
+  B ----------------+
+
+  Intermediate:
+    ~A, ~B from tied NORs
+    A~B and ~AB from the middle NORs
+    Final NOR pair ORs those terms
+
+------------------------------------------------
+XNOR  (equivalence: ~(A XOR B))
+  Same as XOR with one extra inversion on the output
+  (or use A B + ~A ~B)
+
+  Take XOR circuit above, add one more tied NOR on Q
+  Q_xnor = ~Q_xor
