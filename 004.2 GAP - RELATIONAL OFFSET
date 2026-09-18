@@ -1,4 +1,6 @@
 GAP - RELATIONAL OFFSET
+→ 004.2 → Programming Languages / Algebra Systems
+
   type: distinction operator
   vars: A, B, δ
   fund: A | δ | B
