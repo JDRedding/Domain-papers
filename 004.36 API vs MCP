@@ -1,5 +1,5 @@
 API vs MCP
-===========
+004.36 → Software Architecture
 
 An API gives you access to a service.
 MCP gives an LLM a standardized way to find and use many services.
