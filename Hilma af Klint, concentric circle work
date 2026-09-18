@@ -1,0 +1,37 @@
+// Hilma af Klint — concentric circle work (quoted as Swan series, 1913–1916)
+// @MeditateColor color extraction
+// Fundamentals: concentric rings, warm center (red/yellow) expanding to cool outer rings (blue/purple/grey)
+
+type ColorSwatch = {
+  hex: string;
+  name: string;
+  hvc?: string;   // approximate hue / value / chroma notes from the extraction
+};
+
+const palette: ColorSwatch[] = [
+  { hex: "#F06030", name: "Light Cadmium Red" },
+  { hex: "#E4C054", name: "Light Yellow Ochre" },
+  { hex: "#306080", name: "Muted Azure" },
+  { hex: "#70B090", name: "Cold Grey III" },
+  { hex: "#D89078", name: "Muted Red" },
+  { hex: "#E0D0B0", name: "Warm Grey I" },
+  { hex: "#A88454", name: "Muted Amber" },
+  { hex: "#7090C0", name: "Cold Grey IV" },
+  { hex: "#A080A0", name: "Greyish Purple" },
+  { hex: "#489048", name: "May Green" },
+  { hex: "#303020", name: "Bistre" },
+  { hex: "#606060", name: "Cold Grey VI" }
+];
+
+// Complementary pairings shown in the post (hue opposites):
+// #306080 <-> #E09040
+// #E0D0B0 <-> #7090C0
+// #70B090 <-> #A87884
+// #E4C054 <-> #489048
+// #F06030 <-> #D89078
+// #70B090 <-> #A88454
+
+// Layout intent:
+// Center: warm red/orange/yellow
+// Mid rings: green / blue / purple
+// Outer rings: layered greys + black
