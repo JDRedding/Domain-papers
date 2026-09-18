@@ -1,0 +1,27 @@
+```
+Program Manager
+
+File   Options   Window   Help
+
+Accessories                          Games
+Write          Paintbrush            Solitaire      Minesweeper
+Terminal       Notepad               Hearts         Reversi
+Recorder       Cardfile
+Calculator     Clock
+
+Main                                 Applications
+File Manager   Control Panel         QBASIC         SmartMon
+Print Manager  ClipBook Viewer       MWAV           MWAVTSR
+MS-DOS Prompt  Windows Setup         MWBACKUP       MWUNDEL
+PIF Editor     Read Me               MS-DOS Editor
+
+Audio Software   Microsoft Internet Tools   StartUp   Adobe Acrobat 2.0   Network
+```
+
+Windows 3.1 Program Manager is a 16-bit Win16 shell. 
+Groups are PROGMAN.INI sections; icons are .ICO resources or
+extracted from .EXE/.DLL via ExtractIcon. Window class is 
+"Progman"; items are launched with WinExec or ShellExecute. 
+Desktop is not Explorer; File Manager (WINFILE.EXE) is separate. 
+Games (Solitaire, Minesweeper, Hearts, Reversi) ship as 
+WINMINE.EXE, SOL.EXE, HEARTS.EXE, REVERSI.EXE.
