@@ -1,4 +1,6 @@
 8087  FSCALE   (x87 coprocessor, 1980)
+→ 621.381 → Microprocessors
+
 ST(0)  :=  ST(0)  *  2 ^ trunc(ST(1))
 fast scale by power of two  =  add integer N to exponent
 
