@@ -1,0 +1,33 @@
+ERA: WWII (TO&E 10-147, 26 May 1943)
+THEATER: PTO (US equipment)  -- ETO used British mobile bakery sets
+
+FUNDAMENTALS
+  breadShare          : ~10% of total food consumed
+  servingsPerDay      : 3
+  moraleWeight        : highest single ration item
+  dailyIssueTarget    : 8 oz per man
+  companyCapacity     : 40,000 men  (4 platoons)
+  companyOutput       : ~32,000 lb bread / day (US type)
+
+VARIABLES / ORGANIZATION (one platoon)
+  platoonCommander    : 2LT / 1LT     weapon = M1 Carbine
+  platoonSergeant     : SSgt          weapon = M1 Carbine
+
+  sections            : 4
+  perSection:
+    sectionLeader     : Sgt           weapon = M1 Carbine or M1903A3/A1 + M1 GL
+    baker             : T4            same
+    baker             : T5            same
+    baker             : Pfc/Pvt       same
+    bakerHelper       : Pfc/Pvt x2    same
+    generalMechanic   : T5            same
+    basic             : Pvt           same
+
+EQUIPMENT (per section)
+  ovens               : 2 x M1942 Army Field Bake Oven
+  mixer               : 1 x gasoline-engine dough mixer
+
+NOTES
+  - Bakers were armed; grenade launchers issued 1 per 4 EM below SSgt/T3
+  - PTO units frequently ran 24-hour shifts due to humidity, water, and double load
+  - ETO companies were smaller, more mobile, and higher-output with British gear
