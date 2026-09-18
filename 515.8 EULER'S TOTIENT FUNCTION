@@ -1,4 +1,6 @@
 EULER'S TOTIENT FUNCTION
+→ 515.8 → Number Theory
+
 φ(n)  —  number of integers k with 1 ≤ k ≤ n and gcd(k, n) = 1
 
 Type:    arithmetic function  n ↦ φ(n)  (n ∈ ℕ)
