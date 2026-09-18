@@ -1,0 +1,11 @@
+# 3 times 3 identity matrix
+
+```
+I_3 =  1  0  0
+       0  1  0
+       0  0  1
+```
+
+$I_3$ (or $I$) is the $3\times 3$ identity matrix over $\mathbb{R}$ (or $\mathbb{C}$). It is the multiplicative identity of the matrix algebra $M_3$: $A I_3 = I_3 A = A$ for any compatible $A$, and $I_3 v = v$ for any $v\in\mathbb{R}^3$. Its columns are the standard basis $e_1,e_2,e_3$; $\det(I_3)=1$ and $I_3^{-1}=I_3$.
+
+Rectangular arrays of numbers already solved simultaneous linear equations by column operations in China’s *Nine Chapters* (c. 200 BCE). Seki Takakazu (1683) and Leibniz (1693) independently extracted the determinant from the square case to decide uniqueness of solutions. Sylvester coined the name “matrix” in 1850; Cayley (1858) supplied the addition and multiplication that turned the array into an algebra whose unit is precisely this identity. The same objects now encode rotations, quantum evolution, and neural-network weights.
