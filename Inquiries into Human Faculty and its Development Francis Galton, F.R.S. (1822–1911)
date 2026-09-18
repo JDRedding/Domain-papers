@@ -1,0 +1,96 @@
+// BOOK : Inquiries into Human Faculty and its Development Francis Galton, F.R.S. (1822–1911)
+// <https://publicdomainreview.org/collection/synaesthesia-diagrams-1883>
+// Inquiries into Human Faculty and its Development
+// Francis Galton, F.R.S. (1822–1911)
+// First ed.: Macmillan, London, 1883
+// 2nd ed.: J. M. Dent / Everyman, 1907 (some chapters cut)
+// Public domain. Full text: galton.org | archive.org | gutenberg.org/ebooks/11562
+
+type Edition   = { year: number; publisher: string; notes?: string };
+type Chapter   = string;
+type Method    = "questionnaire" | "anthropometry" | "composite photography" | "twin comparison" | "psychometrics" | "statistics";
+
+const editions: Edition[] = [
+  { year: 1883, publisher: "Macmillan", notes: "first appearance of the word eugenic" },
+  { year: 1907, publisher: "Dent / Dutton (Everyman)", notes: "abridged; restored sections exist online" }
+];
+
+const OBJECT = [
+  "collect hereditary and individual differences in human faculties",
+  "measure mental and bodily variation with instruments and surveys",
+  "ask whether better hereditary strains can replace worse ones"
+];
+
+const CORE_CHAPTERS: Chapter[] = [
+  "Variety of Human Nature",
+  "Features",
+  "Composite Portraiture",
+  "Bodily Qualities",
+  "Energy",
+  "Sensitivity",
+  "Anthropometric Registers",
+  "Statistical Methods",
+  "Character",
+  "Criminals and the Insane",
+  "Intellectual Differences",
+  "Mental Imagery",
+  "Number-Forms",
+  "Colour Associations",          // Plate IV lives here
+  "Visionaries",
+  "Nurture and Nature",
+  "History of Twins",
+  "Selection and Race",
+  "Population",
+  "Conclusion"
+];
+
+const METHODS: Method[] = [
+  "questionnaire",                // mental imagery / number-forms / colour associations
+  "composite photography",        // averaged faces (criminals, families, consumptives)
+  "anthropometry",                // stature, grip, pitch limits, weight discrimination
+  "twin comparison",              // nature vs nurture
+  "psychometrics",                // word-association reaction times
+  "statistics"                    // correlation, averages, distributions
+];
+
+// KEY TERMS COINED OR STABILIZED HERE
+const TERMS = {
+  eugenic: "science of improving stock (first used in this book, 1883)",
+  number_form: "automatic spatial layout of numerals in the mind's eye",
+  colour_association: "consistent hue bound to letters, digits, or words",
+  composite_portrait: "multiple photographs superimposed to a type-face"
+};
+
+// PLATE IV (the post that started this thread)
+const PLATE_IV = {
+  title: "Colour Associations and Mental Imagery",
+  process: "13 lithographic stones",
+  reporters: ["Rose Kingsley", "George Henslow", "Dr. James Key (Cape Colony)"],
+  contents: [
+    "colored number-forms",
+    "letter/digit colour grids",
+    "words as colour bars: FRANCIS GALTON, LONDON, VISUALIZATION",
+    "wallpaper-pattern translations (AGUE, GRIND, SWEET, ...)",
+    "Henslow mental-imagery transformations"
+  ]
+};
+
+const NUMBER_FORM_RATE = {
+  adult_males:   "about 1 in 30",
+  adult_females: "about 1 in 15"
+};
+
+const COLOUR_ASSOC_RULES = [
+  "vowel sounds more often coloured than consonants",
+  "no two seers share the same map",
+  "terminology is precise",
+  "forms often hereditary and fixed from childhood"
+];
+
+// FUNDAMENTALS
+// 1. Faculty = measurable trait, bodily or mental.
+// 2. Variation is large, partly hereditary, partly useful.
+// 3. Number-forms and colour associations are automatic, idiosyncratic percepts
+//    later classed as synesthesia; Galton never used that word (common after 1893).
+// 4. The book is a bound set of essays, not a single argument.
+// 5. Later chapters move from measurement to selection / eugenics.
