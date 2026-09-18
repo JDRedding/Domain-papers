@@ -1,0 +1,37 @@
+MINKOWSKI DISTANCE
+d(x, y) = ( Σ |x_i − y_i|^p )^{1/p}
+
+VARIABLES
+x, y     vectors in R^n
+p        real scalar, p ≥ 1
+n        dimensionality
+i        feature index, i = 1 … n
+x_i, y_i real-valued coordinates
+
+SPECIAL CASES
+p = 1    Manhattan / L1
+         d = Σ |x_i − y_i|
+
+p = 2    Euclidean / L2
+         d = ( Σ (x_i − y_i)^2 )^{1/2}
+
+p → ∞    Chebyshev / L∞
+         d = max_i |x_i − y_i|
+
+FUNDAMENTALS
+Same points + different p → different geometry.
+Unit balls change from diamond (p=1) to circle (p=2) to square (p=∞).
+Nearest-neighbor relations, margins, and class boundaries all shift.
+
+AFFECTED MODELS
+K-Nearest Neighbors
+Support Vector Machines
+Logistic Regression
+Gaussian / Naive Bayes classifiers
+
+CONSEQUENCE
+The metric you choose redraws the decision surface.
+Shortest path under one p is rarely shortest under another.
+
+USE CASES
+spam filters, tumor detection, robot path planning
