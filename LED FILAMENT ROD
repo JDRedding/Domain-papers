@@ -1,0 +1,64 @@
+LED FILAMENT ROD  --  old-tech mapping + electrical fundamentals
+
+TYPE
+  Modern name : LED filament (chip-on-glass / chip-on-sapphire)
+  Old analog  : selenium rectifier STACK  (many junctions in series)
+  Not         : cat whisker, 1N34 single diode, tungsten filament, resistor
+
+PHYSICAL
+  core        : thin glass/sapphire strip ("white strip")
+  devices     : ~24-31 blue InGaN LED dies in SERIES
+  coating     : YAG:Ce (and sometimes red) phosphor in silicone  (the yellow)
+  look off    : yellow rod, pale strip inside
+  look on     : warm-white glowing bar (~2700 K typical)
+
+ELECTRICAL TYPE
+  device class      : semiconductor PN junctions, series string
+  conduction        : one-way (diode), strongly non-ohmic
+  unbiased LCR      : high R, small C (tens-hundreds pF), tiny L (~10-50 nH)
+  forward operating : Vf_string ~ 70-85 V DC @ I_f ~ 10-12 mA
+  power             : P ~= Vf * If  ~ 0.8-1.2 W per rod
+  polarity          : marked by construction; reverse = dark + stress
+
+VARIABLES (one rod, typical decorative bulb)
+  N          number of dies in series          ~ 25 to 30
+  Vf_chip    forward voltage per blue die      ~ 2.8 to 3.2 V
+  Vf         string forward voltage            Vf ~= N * Vf_chip  ~ 80 V
+  If         recommended forward current       ~ 10 to 12 mA
+  P          operating power                   P = Vf * If
+  rd         dynamic resistance dV/dI on       ~ a few hundred ohms near 10 mA
+  Rs         metal-trace series resistance     a few ohms
+  C_dark     unbiased string capacitance       C_die / N
+  L          geometric series inductance       tens of nH
+  Rth        thermal resistance (in bulb)      ~ 60 C/W class (helium-cooled)
+
+FUNDAMENTALS
+  Ohm's law does NOT hold as a constant R.
+  Below Vf the string is nearly open.
+  Above Vf current rises steeply; MUST current-limit.
+  Equivalent at one operating point only:
+      R_eq = Vf / If    (example: 80 V / 0.010 A = 8 kOhm)   <-- not a real resistor
+  Small-signal (ON):
+      Z(w) ~= Rs + rd / (1 + j*w*rd*C) + j*w*L
+  Phosphor is electrically insulating; current is only in the dies + traces.
+  AC raw across the string = half-wave conduction + reverse stress + flicker.
+  Drive with DC (or pulsed DC), correct polarity, limited current.
+
+FOUR RODS FROM ONE BULB
+  parallel     : ~80 V,  40-50 mA total
+  two pairs    : ~160 V, 20-25 mA total
+  all series   : ~320 V, 10-12 mA total
+
+OLD-TECH CHEAT SHEET
+  cat whisker          point-contact detector      NO
+  1N34 / crystal diode single low-Vf junction      only 1/Nth of this
+  selenium rectifier   series junction STACK       YES, closest
+  neon lamp            high strike voltage glow    similar voltage-feel only
+  Edison tungsten      hot ohmic wire              appearance only
+
+WILL NOT LIGHT FROM
+  crystal radio / antenna  (uW to mW, << 1 W and << 80 V)
+
+CAN LIGHT FROM
+  solar + battery/storage + boost + current limit
+  target: ~80 V DC @ ~10 mA per rod
