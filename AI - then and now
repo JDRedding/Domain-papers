@@ -1,0 +1,52 @@
+2022                                              2026
+
+     o                                               o
+    /|\                                             /|\
+    / \                                             / \
+   [   ]                                           [   ]
+    | |                                             | |
+ ChatGPT                                          HARNESS
+ Claude                                           CONTEXT ENGINEERING
+ Prompts                                          LOOP ENGINEERING
+                                                  GRAPH ENGINEERING
+                                                  MCP
+                                                  STATELESS MCP
+                                                  AGENTIC AI
+                                                  MULTI-AGENT SYSTEMS
+                                                  RAG 2.0
+                                                  MEMORY LAYERS
+                                                  TOOL USE
+                                                  FUNCTION CALLING
+                                                  VECTOR DBs
+                                                  FINE-TUNING
+                                                  EVALUATION FRAMEWORKS
+                                                  GUARDRAILS
+                                                  OBSERVABILITY
+                                                  PROMPT OPTIMIZATION
+                                                  SYNTHETIC DATA
+                                                  DISTILLATION
+                                                  AI GATEWAYS
+                                                  COST OPTIMIZATION
+                                                  AND MORE...
+
+Fundamentals
+  LLM          : large language model (next-token predictor)
+  Prompt       : input text that steers generation
+  Context      : tokens the model can attend to in one pass
+  Token        : discrete text unit the model actually sees
+
+Core types / variables you keep running into
+  model        : the weights + architecture
+  context_window : max tokens in one request
+  temperature  : randomness of sampling
+  system_prompt : persistent instructions
+  tools        : functions the model is allowed to call
+  tool_schema  : JSON / typed description of those functions
+  messages     : conversation history (role + content)
+  embedding    : dense vector of a chunk of text
+  vector_db    : store + search those embeddings
+  rag          : retrieve relevant chunks, then generate
+  agent        : loop of think → act (tool) → observe
+  memory       : short-term (context) + long-term (store)
+  guardrail    : filter / policy that constrains output
+  eval         : tests that measure quality / safety / cost
