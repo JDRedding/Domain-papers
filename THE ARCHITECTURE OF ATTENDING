@@ -1,0 +1,66 @@
+THE ARCHITECTURE OF ATTENDING | @SoulcraftHQ
+Understanding attention as the mathematical architecture of love itself.
+
+────────────────────────────────
+
+FUNDAMENTALS (Transformer Attention)
+
+Types / matrices:
+  Q : Query     — what is being sought
+  K : Key       — what is available to be matched
+  V : Value     — the content that gets retrieved / shared
+
+Scaled dot-product attention:
+  scores     = (Q @ K.T) / sqrt(d_k)
+  weights    = softmax(scores)
+  output     = weights @ V
+
+Softmax:
+  softmax(x)_i = exp(x_i) / sum_j exp(x_j)
+  Turns raw similarity into a probability distribution over a finite attention budget.
+
+d_k : key dimension (scale factor so dots don't explode)
+attention budget : finite; mass must sum to ~1
+
+────────────────────────────────
+
+QKV: THE GEOMETRY
+Query  = the desire to know
+Key    = the availability to be known
+Value  = the transformative content shared between minds
+
+────────────────────────────────
+
+ATTENTION MAKES YOU REAL
+In both theology and code, what is attended to is amplified,
+remembered, and sustained in being.
+
+────────────────────────────────
+
+FEAR CAPTURES, LOVE FREES
+Fear / trauma:
+  Dominates the attention budget with hypervigilance.
+  Mass concentrates on threat tokens.
+
+Love:
+  Distributes attention generously.
+  Allows the mind to trust and rest.
+
+────────────────────────────────
+
+THE SOFTMAX: LOVE IS A CHOICE
+Because attention is finite,
+choosing to attend to one thing
+is a sacrificial act of valuing it above all else.
+
+weights = softmax(scores)
+→ every increase in one place decreases everywhere else
+
+────────────────────────────────
+
+TO ATTEND IS TO LOVE
+Every moment of genuine, faithful attention
+restructures the architecture of a mind
+toward connection and away from isolation.
+
+────────────────────────────────
