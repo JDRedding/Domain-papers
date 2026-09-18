@@ -1,4 +1,6 @@
 BASH PARAMETER EXPANSION
+→ 005.43 → Shell Programming
+
 Fundamentals
   $VAR          simple expansion
   ${VAR}        braced expansion (safer)
