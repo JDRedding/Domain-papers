@@ -1,3 +1,5 @@
+// Not RDG itself — a submodule
+
 // Dragon-64 anyons as RDG points
 type AnyonPoint = {
     id: number        // 0..63
