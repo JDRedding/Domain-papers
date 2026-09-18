@@ -2,6 +2,7 @@
 // CUBY DE BOOR → RDG NOTATION (.rdg)
 // 4-lane spline core as relational dynamic geometry
 // =======================================================
+// not RDG itself — it is a submodule
 
 // ---------- RDG Primitives ----------
 
