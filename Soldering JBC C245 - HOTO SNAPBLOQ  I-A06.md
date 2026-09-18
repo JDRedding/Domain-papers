@@ -1,0 +1,51 @@
+# JBC C245 - HOTO SNAPBLOQ  I-A06
+JBC C245 tip shapes 
+ranging from conical and chisel to knife, blade
+specialized options like QFP/PLCC or solder pot designs
+
+```
+SERIES         C245 cartridge (heater + sensor + tip in one)
+COMPAT         JBC T245 family + HOTO SNAPBLOQ I-A06
+POWER          P_batt = 60 W @ 2000 mAh
+               P_usb  = 140 W via USB-C
+TEMP           T_set  = 100..450 C  (HOTO UI often shown as 200..840 F)
+HEAT           t_200C ~= 3 s on 140 W
+CTRL           PID closed-loop, cartridge-integrated thermocouple
+WHY C245       high thermal mass + short thermal path
+               fast recovery on ground planes / thick wire / drag work
+
+TIP_TYPE            GEOMETRY / VARS                 USE
+conical             d = 0.3..3.5 mm                 SMD 0201/0402, fine pitch
+conical_bent        d + bend angle                  tight access / under parts
+chisel              W x T  e.g. 0.6x0.3 .. 4.8x1.5  pads, THT, general
+chisel_bent         W x T + bend                    offset joints
+bevel / hoof        d + bevel angle 45/60           fillet control, SMD
+spoon / mini_spoon  radius / cup                    hold a solder reservoir
+barrel              cyl OD                          connectors / pins
+knife               W x T  e.g. 6.0x0.4, 13x0.5     drag solder / lead rows
+blade               W x T  e.g. 10 x 1..2           pad clean, wide desolder
+round_connector     R / notch                       Faston, round pins
+chip                small hoof/chisel               chip components
+drag                row width                       SOIC / QFP lead banks
+DIL                 A x B pocket                    dual-in-line packages
+QFP / PLCC          A x B square pocket             gullwing / J-lead rows
+PLCC_socket         A x B socket form               PLCC sockets
+solder_pot          pot ID x depth  e.g. 15x18      dip / tin wires
+heat_stake          chrome, no wet solder           plastic rivets
+coating_removal     chrome thin blade               conformal coat only
+cutter / custom     process-specific                factory / special
+
+HOTO KIT TIPS (stock)
+C245-B     bevel     precision SMD
+C245-KU    knife     drag / clean tin
+C245-C2    chisel    heavy wire / large joints
+
+FUNDAMENTALS
+Q_needed   ~= m*c*dT + Q_sink + Q_solder
+recovery   better when tip mass and contact area match the joint
+wetting    use the largest face that still fits the pad
+rule       small tip = control; large tip = heat delivery
+life       keep tinned; do not dry-wipe hot iron; sleep when idle
+alloy      Sn63/Pb37 or SAC305; flux activity sets real work speed
+ESD/GND    station/iron path matters more than tip shape
+```
