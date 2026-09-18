@@ -1,0 +1,49 @@
+YAGI-UDA ANTENNA — 100 YEAR ANALYSIS
+====================================
+
+: 100 years ago, in 1926, the Yagi-Uda beam antenna
+was invented. A century later it remains a
+cornerstone of directional RF.
+: Hidetsugu Yagi (1886-1976) with early prototype 
+and Shintaro Uda (1896-1976)
+
+HISTORY
+  Inventors  : Shintaro Uda (primary experimenter)
+               Hidetsugu Yagi (professor / co-author)
+  Institution: Tohoku Imperial University, Sendai, Japan
+  First paper: Yagi & Uda, "Projector of the Sharpest Beam of
+               Electric Waves", Proc. Imp. Acad. Japan, 1926
+  Patent     : Filed by Yagi 1925-12, granted 1926-08
+
+ANTENNA TYPES / ELEMENTS
+  Driven     : Active dipole or folded dipole, fed by transmission line
+  Reflector  : One (rarely more) parasitic element, slightly longer
+               than driven element, placed behind it
+  Directors  : One or more parasitic elements, slightly shorter
+               than driven element, placed in front
+
+KEY VARIABLES (typical VHF/UHF values)
+  Wavelength     : λ = c / f
+  Driven length  : ~0.47 λ to 0.50 λ
+  Reflector      : ~0.50 λ to 0.55 λ
+  Director       : ~0.40 λ to 0.45 λ (progressive shortening)
+  Spacing        : 0.15 λ to 0.25 λ between elements
+  Boom length    : increases with number of directors
+  Typical gain   : 7–9 dBi (3-el)  →  12–15 dBi (7–10 el)
+  Front-to-back  : 15–25 dB
+  Impedance      : ~20–30 Ω (simple dipole) or ~200–300 Ω (folded)
+
+FUNDAMENTALS
+  Operation      : Parasitic elements re-radiate with phase
+                   shift set by length and spacing so fields
+                   add in the forward direction and cancel
+                   toward the rear.
+  Polarization   : Linear (horizontal or vertical)
+  Bandwidth      : Narrow to moderate; more directors =
+                   higher gain but narrower bandwidth
+  Construction   : Simple metal rods on a boom; no need for
+                   a complex feed network
+
+MODERN USE
+  Amateur radio, TV receive antennas, radar, satellite
+  communications, point-to-point links.
