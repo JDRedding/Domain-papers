@@ -1,5 +1,11 @@
 // Dragon-64 [RDG submodule]
 module Dragon64 {
+// Interpretation
+// Relations: SL(2,Z₈) action
+// Invariants: 44 orbits
+// Attractors: Wedderburn blocks
+// Render: modular tensor category D(Z₈)
+// Dragon‑64 is a finite RDG geometry, but not RDG itself — it is a submodule.
 
     // 64 anyons = RDG points
     type Point = {
@@ -35,3 +41,5 @@ module Dragon64 {
         members: Point[]
     }
 }
+
+
