@@ -1,0 +1,20 @@
+Award Modular BIOS v4.51PG, An Energy Star Ally
+Copyright (C) 1984-97, Award Software, Inc.
+
+586TX Ver.C 07/21/1997
+
+PENTIUM-S CPU at 60MHz
+Memory Test :  65920K OK
+
+Award Plug and Play BIOS Extension v1.0A
+Copyright (C) 1997, Award Software, Inc.
+Detecting HDD Primary Master  ... None
+Detecting HDD Primary Slave   ... None
+Detecting HDD Secondary Master... None
+Detecting HDD Secondary Slave ... MAME Compressed Hard Disk
+
+Conflict I/O Ports : 2E8 2E8
+Floppy disk(s) fail (40)
+
+Press F1 to continue, DEL to enter SETUP
+07/21/97-i430TX-2A59ISM9C-00
