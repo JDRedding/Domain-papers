@@ -1,4 +1,5 @@
 HATFIELD APPLE-1   (working 1976 unit)
+ → 004.16 → Computer History
 
 type Apple1 {
   nickname        : string   = "Hatfield"
