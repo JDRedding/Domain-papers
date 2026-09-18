@@ -1,0 +1,25 @@
+WIRE STRIPPER COMPARISON
+
+TYPE A: MANUAL
+variables:
+  design        = simple
+  cost          = budget-friendly
+  weight        = lightweight
+  power         = none required
+  best_for      = home use, light work, small wiring projects
+fundamentals:
+  easy to carry
+  always ready
+  low complexity
+
+TYPE B: AUTOMATIC
+variables:
+  speed         = fast & accurate
+  adjustability = yes (multiple wire sizes)
+  effort        = reduced (less hand fatigue)
+  extra         = built-in cutter
+  best_for      = professional work, frequent use, various sizes
+fundamentals:
+  strips in seconds
+  consistent results
+  higher throughput
