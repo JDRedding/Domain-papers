@@ -1,4 +1,6 @@
 MINKOWSKI DISTANCE
+→ 510.72 → Metric Spaces
+
 d(x, y) = ( Σ |x_i − y_i|^p )^{1/p}
 
 VARIABLES
