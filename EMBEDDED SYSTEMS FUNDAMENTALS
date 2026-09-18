@@ -1,0 +1,57 @@
+EMBEDDED SYSTEMS FUNDAMENTALS
+Microcontroller (MCU) vs Microprocessor (MPU)
+
+CORE IDEA
+MCU  = complete computer on one chip (SoC)
+MPU  = CPU core that needs external chips to become a computer
+
+ARCHITECTURE BASICS
+MCU typically uses Harvard architecture
+  separate buses for instructions and data
+  on-chip Flash/ROM + SRAM
+MPU typically uses von Neumann or modified Harvard
+  shared or cached memory space
+  external DRAM + storage
+
+WHAT SITS ON THE SILICON
+MCU chip contains:
+  CPU core
+  RAM (usually SRAM, small)
+  non-volatile memory (Flash / EEPROM / ROM)
+  timers, ADC, DAC, UART, SPI, I2C, PWM, GPIO
+  sometimes USB, CAN, Ethernet, wireless
+MPU chip contains:
+  CPU core(s) + cache
+  memory controller
+  sometimes GPU / NPU
+  needs external RAM, Flash/SSD, PMIC, peripherals
+
+KEY VARIABLES
+                  MCU                          MPU
+Integration       high (SoC)                   low (needs board of parts)
+Power             low (uA–mA, sleep modes)     higher (W-class often)
+Clock             typically MHz                typically GHz
+Cost              low per chip                 higher system BOM
+OS                bare-metal / RTOS            Linux, Android, Windows
+Determinism       high (real-time friendly)    lower without RT patches
+I/O               many on-chip peripherals     mostly via external chips
+Memory            kB–few MB on-chip            GB external DRAM
+Best for          dedicated control loops      general-purpose computing
+
+EXAMPLES
+MCU:  ATmega328 (Arduino Uno), MSP430, STM32, ESP32, PIC, nRF52
+MPU:  Intel Core / Xeon, AMD Ryzen, ARM Cortex-A (Raspberry Pi SoC CPU, phones)
+
+TYPICAL APPLICATIONS
+MCU:  washing machine motor + sensors, thermostat, car ECU, IoT node, medical pump
+MPU:  laptop, phone application processor, server, set-top box, industrial HMI
+
+SELECTION RULE
+Need tight timing, low power, low cost, one job for years  -> MCU
+Need rich OS, lots of RAM, multimedia, apps, networking stack -> MPU
+
+NOTE
+Modern chips blur the line:
+  MCU-class parts now run Linux (some STM32MP, i.MX RT)
+  MPU-class SoCs integrate more peripherals
+  still use the same core tradeoff: integration + power vs performance + flexibility
