@@ -1,5 +1,5 @@
 # Lean 4 
-RDG form
+- ***RDG form***
 
 Lean 4 is expressed as a **generative geometry** over *terms*, *types*, and *kernel‑flux moderation*. Everything is an operator; nothing is fiat. The system is defined by its flows and boundaries, not by external declarations.
 
