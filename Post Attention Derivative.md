@@ -1,0 +1,127 @@
+# Posts Are Attention Derivatives
+
+**Types:** string | float | list | map  
+**Fundamentals:** attention economy, derivative instruments, social media as market
+
+### ⚙️ Core Takeaway
+
+A **post** is a **derived instrument** whose **payoff** is a function of *attention-flow volatility*, *engagement liquidity*, and *topic-underlying price movement*.
+
+The text is not the asset — **the attention stream is the asset**.
+
+```text
+definition = "A post is a contract whose value is derived from the attention it captures, not from the text itself."
+
+variables = {
+  A     : attention_flow,           // raw scarce resource (time + focus)
+  T     : post,                    // the written instrument
+  E     : engagement,               // likes, replies, views, quotes
+  V_t   : value_of_post,           // payoff
+  sigma : volatility_of_attention
+}
+
+relation = "V_t = f(A, E, sigma)"
+payoff   = "more attention -> higher derived value"
+risk     = "attention decays; virality is the implied volatility"
+
+analogy = {
+  stock      : topic / person / idea
+  option     : the post
+  premium    : time spent writing + posting
+  expiration : attention half-life of the post
+}
+```
+
+---
+
+## 🧩 Formal Definition
+
+A **post** is a **synthetic micro-contract** written on the underlying variable **A(t)** (attention-flow).  
+Its value **Vₜ** is not intrinsic; it is **extracted** from the *market response* to the instrument.
+
+> **Definition:**  
+> A post is a derivative contract whose payoff is the realized attention captured over its attention half-life.
+
+This makes posts structurally similar to **options**, **futures**, or **volatility swaps** in the attention economy.
+
+---
+
+## 📐 Variables (RDG-clean)
+
+- **A(t)** — instantaneous attention flux  
+- **T** — the instrument (post)  
+- **E** — engagement liquidity (likes, replies, quotes, views)  
+- **Vₜ** — derived value  
+- **σₐ** — implied attention volatility  
+- **τₕ** — attention half-life (expiration)
+
+---
+
+## 📈 Structural Relation
+
+$$
+V_t = f(A(t), E(t), \sigma_a, \tau_h)
+$$
+
+Interpretation:
+
+- **A(t)** = underlying price  
+- **E(t)** = realized liquidity  
+- **σₐ** = implied virality  
+- **τₕ** = time-decay parameter (theta)
+
+This is the micro-Black–Scholes of attention markets.
+
+---
+
+## 🔥 Payoff Structure
+
+**More attention → higher payoff.**  
+But the payoff is nonlinear because:
+
+- **Virality = implied volatility**  
+- **Decay = theta**  
+- **Engagement = delta** (sensitivity to underlying attention)
+
+Thus a post is a **volatility-sensitive derivative** on a **scarce resource** (human attention).
+
+---
+
+## 🏛️ Market Analogy
+
+| Finance Concept | Attention Market Equivalent |
+|-----------------|-----------------------------|
+| **Stock** | Topic / person / idea |
+| **Option** | The post |
+| **Premium** | Time + cognitive effort spent writing |
+| **Expiration** | Attention half-life |
+| **Volatility** | Virality potential |
+| **Liquidity** | Engagement metrics |
+
+This is not metaphorical — it is structurally isomorphic.
+
+---
+
+## 🧠 Non-Obvious Insight
+
+Posts behave more like **variance swaps** than options:
+
+- don’t just bet on the *level* of attention  
+- bet on the *movement* of attention  
+- The payoff is proportional to **realized volatility** (virality)
+
+This explains why:
+
+- Low-effort posts can explode  
+- High-effort posts can flop  
+- Timing dominates content  
+- Network topology dominates semantics
+
+---
+
+## 🧭 Follow-up
+
+- Extend into a **full pricing model**  
+- Map into **RDG operator notation**  
+- Build a **taxonomy of attention instruments**  
+- Derive a **virality volatility index**
