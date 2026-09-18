@@ -1,0 +1,76 @@
+EXCEL CTRL SHORTCUTS  (Windows)
+Fundamentals: Most shortcuts work on a selected cell or range.
+Ctrl = control key. Combine with letters, numbers, or Shift.
+
+FILE / WORKBOOK
+Ctrl + N          New workbook
+Ctrl + O          Open workbook
+Ctrl + S          Save
+Ctrl + P          Print
+Ctrl + W          Close workbook
+Ctrl + F4         Close workbook (alternate)
+
+EDIT / CLIPBOARD
+Ctrl + C          Copy
+Ctrl + X          Cut
+Ctrl + V          Paste
+Ctrl + Z          Undo
+Ctrl + Y          Redo / Repeat
+Ctrl + F          Find
+Ctrl + H          Find & Replace
+Ctrl + G          Go To
+Ctrl + K          Insert hyperlink
+
+FORMATTING
+Ctrl + B          Bold
+Ctrl + I          Italic
+Ctrl + U          Underline
+Ctrl + 5          Strikethrough
+Ctrl + 1          Format Cells dialog
+Ctrl + 2          Bold (same as Ctrl+B)
+Ctrl + 3          Italic (same as Ctrl+I)
+Ctrl + 4          Underline (same as Ctrl+U)
+
+NUMBER FORMATS
+Ctrl + Shift + $  Currency
+Ctrl + Shift + %  Percentage
+Ctrl + Shift + ^  Scientific
+Ctrl + Shift + #  Date
+Ctrl + Shift + @  Time
+Ctrl + Shift + !  Number (comma + 2 decimals)
+Ctrl + Shift + ~  General
+
+DATA / FILL
+Ctrl + D          Fill Down
+Ctrl + R          Fill Right
+Ctrl + E          Flash Fill
+Ctrl + T          Create Table
+Ctrl + L          Create Table (alternate)
+Ctrl + Q          Quick Analysis
+Ctrl + ;          Insert current date
+Ctrl + Shift + :  Insert current time
+Ctrl + '          Copy formula from cell above
+Ctrl + Enter      Fill selection with same value
+
+NAVIGATION / SELECTION
+Ctrl + A          Select All / current region
+Ctrl + Home       Go to A1
+Ctrl + End        Go to last used cell
+Ctrl + Arrow      Jump to edge of data
+Ctrl + Space      Select entire column
+Shift + Space     Select entire row
+Ctrl + Page Down  Next worksheet
+Ctrl + Page Up    Previous worksheet
+
+HIDE / STRUCTURE
+Ctrl + 9          Hide selected rows
+Ctrl + 0          Hide selected columns
+Ctrl + Shift + 9  Unhide rows
+Ctrl + Shift + 0  Unhide columns
+Ctrl + -          Delete cells / rows / columns
+Ctrl + Shift + +  Insert cells / rows / columns
+
+Notes
+- Line break inside a cell is Alt + Enter (not Ctrl + J)
+- New worksheet is Shift + F11 (not Ctrl + M)
+- Works in most modern Excel versions on Windows
