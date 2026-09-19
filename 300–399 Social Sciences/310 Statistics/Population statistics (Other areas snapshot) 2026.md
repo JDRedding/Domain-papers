@@ -76,6 +76,58 @@ Longer term, Eastern, Middle, and Western Africa are projected to grow more than
 - **Population:** ~**46 million**
 - **Largest:** Australia (~30 million), Papua New Guinea (~11 million), New Zealand (~5 million)
 
+As of September 2026, Oceania has about **47.12 million** people, or **0.57%** of the world total. Most live in **Australia and New Zealand**.
+
+Oceania is the least populous inhabited continent and is growing slowly. More than **two-thirds** of residents live in Australia and New Zealand; about **two-thirds** live in cities. Growth is easing, but the total is still headed toward nearly **58 million by 2050**. The region mixes sparse mainland settlement with small, dense island states.
+
+#### Current Population (2026)
+
+| Indicator | Figure |
+| --- | ---: |
+| Total population | **47,118,993** |
+| Share of world population | **0.57%** |
+| Density | **6 people/km²** (14 per mi²) |
+| Urban population | **66.3%** (31,250,784) |
+| Median age | **33.6 years** |
+| Total fertility rate | **2.12** children per woman |
+
+#### Population by Subregion
+
+| Region | Population | Share of Oceania |
+| --- | ---: | ---: |
+| Australia and New Zealand | 32,225,925 | ≈69% |
+| Melanesia | 13,165,119 | ≈28% |
+| Polynesia | 689,919 | ≈1.5% |
+| Micronesia | 528,681 | ≈1% |
+
+Australia and New Zealand are the main population block, then Melanesia. Polynesia and Micronesia add little to the total. Average density is low, but some small states are crowded—**Nauru** reaches about **576 people/km²**. Tuvalu and Niue are also small and relatively dense ([World Population Review](https://worldpopulationreview.com/continents)).
+
+#### Historical Growth
+
+Oceania grew from **12.58 million in 1950** to more than **47 million in 2026** ([Worldometer](https://www.worldometers.info/world-population/oceania-population/)).
+
+| Period | Growth |
+| --- | --- |
+| Peak yearly rate | **2.78%** (1971) |
+| 2026 yearly rate | **1.09%** |
+| 2026 net increase | **+509,349** |
+
+#### Trends and Projections
+
+- **Urbanization:** 66% in 2023 → **66.3%** in 2026.
+- **Median age:** 32.6 in 2022 → **33.6** in 2026 (gradual ageing).
+- **Projections:** **49.07 million by 2030**; **57.68 million by 2050**.
+
+#### Largest Countries (2026)
+
+| Country | Population | Density (/km²) |
+| --- | ---: | ---: |
+| Australia | 27,227,096 | 3.5 |
+| Papua New Guinea | 10,947,848 | 24 |
+| New Zealand | 5,287,479 | 20 |
+| Fiji | 937,282 | 51 |
+| Solomon Islands | 858,288 | 30 |
+
 ### 3. Antarctica
 - **Permanent population:** **0**
 - **Seasonal researchers and staff:** about **4,000–5,000** (not counted in the total)
