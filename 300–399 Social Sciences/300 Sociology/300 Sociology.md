@@ -1,4 +1,5 @@
 # Sociology
+- 300 Sociology
 
 **Sociology** is the systematic study of human society, social relationships, and institutions. It explores how people interact, how social structures take shape, and how societies change over time.
 
