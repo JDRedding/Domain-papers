@@ -446,49 +446,47 @@ distribution-free / nonparametric statistic
 
 ## 8. HISTORY COMPRESSED
 
-
 Ancient / medieval precursors
-  Counting bricks to estimate wall height (anecdotal early inference).
-  Al-Kindi: frequency analysis for ciphers.
+-  Counting bricks to estimate wall height (anecdotal early inference).
+-  Al-Kindi: frequency analysis for ciphers.
 
 17th century
-  John Graunt: Bills of Mortality; estimates of London's population.
-  Political arithmetic.
-  Jacob Bernoulli: law of large numbers (published 1713).
+-  John Graunt: Bills of Mortality; estimates of London's population.
+-  Political arithmetic.
+-  Jacob Bernoulli: law of large numbers (published 1713).
 
 18th century
-  De Moivre: normal approximation.
-  Bayes: inverse probability.
-  German Statistik as systematic description of the state.
-  Word enters English as state-facts science.
+-  De Moivre: normal approximation.
+-  Bayes: inverse probability.
+-  German Statistik as systematic description of the state.
+-  Word enters English as state-facts science.
 
 19th century
-  Laplace: central limit theorem; synthesis with least squares.
-  Gauss: least squares / error theory.
-  Quetelet: social measurement, "average man."
-  Galton, Pearson, Edgeworth, Yule: correlation, regression,
+-  Laplace: central limit theorem; synthesis with least squares.
+-  Gauss: least squares / error theory.
+-  Quetelet: social measurement, "average man."
+-  Galton, Pearson, Edgeworth, Yule: correlation, regression,
     biometrics, heredity data.
-  Kiær (1895): representative method vs complete census dogma.
-  Bowley: mathematical treatment of random sampling.
+-  Kiær (1895): representative method vs complete census dogma.
+- Bowley: mathematical treatment of random sampling.
 
 20th century
-  Fisher, Neyman, E. Pearson: modern frequentist inference,
+-  Fisher, Neyman, E. Pearson: modern frequentist inference,
     likelihood, experimental design, tests.
-  Jeffreys, de Finetti, Lindley, others: Bayesian revival.
-  MCMC (1980s onward): Bayesian computation becomes practical.
-  Quality control, public health, surveys, official statistics,
+-  Jeffreys, de Finetti, Lindley, others: Bayesian revival.
+-  MCMC (1980s onward): Bayesian computation becomes practical.
+-  Quality control, public health, surveys, official statistics,
     then data science and machine learning applications.
 
 Note
-  Probability became the official language of inference in
+-  Probability became the official language of inference in
   English-language mathematical statistics in the 20th century.
-  Undergraduate teaching is still often frequentist-first.
+-  Undergraduate teaching is still often frequentist-first.
   Bayesian methods are widely used in research and ML.
 
 
 ## 9. USAGE NOTES THAT KEEP COMING UP
-
-
+```
 Do not write "statistic techniques."
 Write "statistical techniques."
 
@@ -503,11 +501,11 @@ Official statistics = published government/agency compilations.
 Vital statistics = births, deaths, marriages, etc.
   As a library subject they may leave 310 and sit with demography
   or public health, depending on emphasis.
+```
 
+## 10. WHERE THE MATH LIVES IF ARE SHELVING IDEAS, NOT YEARBOOKS
 
-## 10. WHERE THE MATH LIVES IF YOU ARE SHELVING IDEAS, NOT YEARBOOKS
-
-
+```
 Theory of probability and mathematical statistics     519 / 519.5
 Sampling theory                                       under mathematical
                                                       statistics / survey
@@ -517,10 +515,10 @@ Official yearbook of a country                        31X + Table 2
 Book teaching "what is a mean" to social scientists   depends on emphasis;
                                                       often 519.5 or 300.72
                                                       or a disciplinary number
-
+```
 
 ## 11. MINI GLOSSARY OF PAIRS
-
+```
 population     vs   sample
 parameter      vs   statistic
 descriptive    vs   inferential
@@ -531,4 +529,4 @@ estimate       vs   estimator
 data           vs   information
 census         vs   sample survey
 310 yearbooks  vs   519.5 theory
-
+```
