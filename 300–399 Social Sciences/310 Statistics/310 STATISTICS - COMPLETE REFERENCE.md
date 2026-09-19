@@ -39,18 +39,18 @@ Current DDC (modern schedules)
 +--------------------------------------------------+
 |                   310 STATISTICS                 |
 +--------------------------------------------------+
-| 310  Statistics                                   |
-| 311  [Unassigned]                                 |
+| 310  Statistics                                  |
+| 311  [Unassigned]                                |
 |                                                  |
-| 312  Population statistics                        |
-| 313  Population statistics                        |
-| 314  Population statistics                        |
+| 312  Population statistics                       |
+| 313  Population statistics                       |
+| 314  Population statistics                       |
 |                                                  |
-| 315  Population statistics (Asia)                 |
-| 316  Population statistics (Europe)               |
-| 317  Population statistics (North America)        |
-| 318  Population statistics (South America)        |
-| 319  Population statistics (Other areas)          |
+| 315  Population statistics (Asia)                |
+| 316  Population statistics (Europe)              |
+| 317  Population statistics (North America)       |
+| 318  Population statistics (South America)       |
+| 319  Population statistics (Other areas)         |
 +--------------------------------------------------+
 ```
 Geographic order in current DDC 314-319
