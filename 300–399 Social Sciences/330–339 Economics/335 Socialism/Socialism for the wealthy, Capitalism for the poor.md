@@ -79,8 +79,7 @@ The coexistence of these tiers produces a **hybrid mode of production**:
 
 This dualism is not incidental — it is **constitutional**. It is the fiscal architecture through which the U.S. allocates risk, survival, and failure.
 
-### **Why This Matters for Your Thesis**  
-This Soviet/watchman framing clarifies the core claim of your paper:
+### **Why This Matters**  
 
 > The U.S. does not have one mode of production but two: a socialist command system for capital and a laissez‑faire test for labor. The slogan “socialism for the wealthy, capitalism for the poor” is not metaphor but description.
 
@@ -90,7 +89,7 @@ This Soviet/watchman framing clarifies the core claim of your paper:
 The Soviet tier is **state‑insured accumulation**.  
 The night‑watchman tier is **market‑disciplined reproduction**.
 
-Together they form the **asymmetric‑insurance mode of production** at the heart of your paper.
+Together they form the **asymmetric‑insurance mode of production**.
 
 ## **Modes of Production**
 
