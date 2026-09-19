@@ -1,13 +1,13 @@
 # Society’s identity
 Customs, etiquette, and folklore
 - 390	Customs, etiquette & folklore
-- 391	Costumes & personal appearance
-- 392	Customs of life cycle & domestic life
-- 393	Death customs & practices
+- 391	Society’s Costumes & personal appearance
+- 392	Society’s Customs of life cycle & domestic life
+- 393	Society’s Death customs & practices
 - 394	General social customs
-- 395	Etiquette & manners
-- 397	Folklore & tales
-- 398	Folklore & legends
+- 395	Society’s Etiquette & manners
+- 397	Society’s Folklore & tales
+- 398	Society’s Folklore & legends
 - 399	Customs of other social groups
 
 **Customs, etiquette, and folklore** help define a society’s identity. They shape how people greet one another, mark important occasions, and pass on what a community believes is worth remembering. Customs, etiquette, and folklore are related parts of culture. They reveal values, social rules, and inherited stories. Studying them supports empathy, more careful interaction, and a fuller view of communities around the world.
