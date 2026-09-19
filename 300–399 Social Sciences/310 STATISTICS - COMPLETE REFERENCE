@@ -1,6 +1,85 @@
 STATISTICS - COMPLETE REFERENCE
 Plain-text pack: definitions, types, variables, fundamentals, history, usage, library class 310s
-Copy and share freely.
+
+==============================================================================
+CLASSIFICATION BLOCK
+==============================================================================
+
+This is Dewey Decimal Classification, class 300 Social sciences.
+310 is NOT the home of mathematical statistics.
+
+Current DDC (modern schedules)
+
+  310  Collections of general statistics
+       World or multi-country statistical yearbooks and abstracts.
+
+  311  Unused
+       Formerly: theory and methods.
+
+  312  Unused
+       Formerly: population statistics.
+
+  313  Unused
+       Formerly: special topics.
+
+  314  General statistics of Europe
+
+  315  General statistics of Asia
+
+  316  General statistics of Africa
+
+  317  General statistics of North America
+
+  318  General statistics of South America
+
+  319  General statistics of other areas
+       Australasia, Pacific islands, Atlantic islands,
+       Arctic islands, Antarctica.
+
+Geographic order in current DDC 314-319
+  Europe, Asia, Africa, North America, South America, rest of world.
+
+Place is refined with Table 2 (geographic areas), e.g.
+  314.2   general statistics of England and Wales
+  315.2   general statistics of China
+  317.3   general statistics of the United States
+
+What 310-319 is for
+  Compilations of official or general statistics by place:
+  yearbooks, census abstracts, general statistical handbooks.
+
+What 310-319 is NOT for
+  Mathematical statistics, probability, inference, sampling theory
+      -> mainly 519.5 (and nearby 519)
+  Demography as social science
+      -> 304.6
+  Economic statistics as economics
+      -> 330s
+  Vital statistics as public health / medicine
+      -> 614.1
+
+Why 311-313 are empty
+  Older DDC put method in 311 and population in 312.
+  Those subjects moved. 310 stayed a compact "general statistics
+  by area" class. Printed schedules from different editions disagree.
+
+Older-edition flavor (seen in some historical DDC texts)
+  310  Statistical method and statistics
+  311  Statistical method
+  312  Statistics of populations
+  314  General statistics of Europe
+  315  Asia
+  316  Africa
+  317  North America
+  318  South America
+  319  Rest of the world
+
+Other schemes (contrast only)
+  Nippon Decimal Classification: statistics around 350,
+    then Japan / Asia / Europe / Africa / N. America / S. America / Oceania.
+  Chinese Library Classification family: statistics around 510,
+    with topical splits (theory, processing, agencies, national
+    statistics, population, vital statistics, applied statistics).
 
 ==============================================================================
 0. TWO MEANINGS OF THE WORD
@@ -374,87 +453,7 @@ Vital statistics = births, deaths, marriages, etc.
   or public health, depending on emphasis.
 
 ==============================================================================
-10. LIBRARY CLASSIFICATION — DDC 310 BLOCK
-==============================================================================
-
-This is Dewey Decimal Classification, class 300 Social sciences.
-310 is NOT the home of mathematical statistics.
-
-Current DDC (modern schedules)
-
-  310  Collections of general statistics
-       World or multi-country statistical yearbooks and abstracts.
-
-  311  Unused
-       Formerly: theory and methods.
-
-  312  Unused
-       Formerly: population statistics.
-
-  313  Unused
-       Formerly: special topics.
-
-  314  General statistics of Europe
-
-  315  General statistics of Asia
-
-  316  General statistics of Africa
-
-  317  General statistics of North America
-
-  318  General statistics of South America
-
-  319  General statistics of other areas
-       Australasia, Pacific islands, Atlantic islands,
-       Arctic islands, Antarctica.
-
-Geographic order in current DDC 314-319
-  Europe, Asia, Africa, North America, South America, rest of world.
-
-Place is refined with Table 2 (geographic areas), e.g.
-  314.2   general statistics of England and Wales
-  315.2   general statistics of China
-  317.3   general statistics of the United States
-
-What 310-319 is for
-  Compilations of official or general statistics by place:
-  yearbooks, census abstracts, general statistical handbooks.
-
-What 310-319 is NOT for
-  Mathematical statistics, probability, inference, sampling theory
-      -> mainly 519.5 (and nearby 519)
-  Demography as social science
-      -> 304.6
-  Economic statistics as economics
-      -> 330s
-  Vital statistics as public health / medicine
-      -> 614.1
-
-Why 311-313 are empty
-  Older DDC put method in 311 and population in 312.
-  Those subjects moved. 310 stayed a compact "general statistics
-  by area" class. Printed schedules from different editions disagree.
-
-Older-edition flavor (seen in some historical DDC texts)
-  310  Statistical method and statistics
-  311  Statistical method
-  312  Statistics of populations
-  314  General statistics of Europe
-  315  Asia
-  316  Africa
-  317  North America
-  318  South America
-  319  Rest of the world
-
-Other schemes (contrast only)
-  Nippon Decimal Classification: statistics around 350,
-    then Japan / Asia / Europe / Africa / N. America / S. America / Oceania.
-  Chinese Library Classification family: statistics around 510,
-    with topical splits (theory, processing, agencies, national
-    statistics, population, vital statistics, applied statistics).
-
-==============================================================================
-11. WHERE THE MATH LIVES IF YOU ARE SHELVING IDEAS, NOT YEARBOOKS
+10. WHERE THE MATH LIVES IF YOU ARE SHELVING IDEAS, NOT YEARBOOKS
 ==============================================================================
 
 Theory of probability and mathematical statistics     519 / 519.5
@@ -468,7 +467,7 @@ Book teaching "what is a mean" to social scientists   depends on emphasis;
                                                       or a disciplinary number
 
 ==============================================================================
-12. MINI GLOSSARY OF PAIRS
+11. MINI GLOSSARY OF PAIRS
 ==============================================================================
 
 population     vs   sample
@@ -483,7 +482,7 @@ census         vs   sample survey
 310 yearbooks  vs   519.5 theory
 
 ==============================================================================
-13. ONE-PAGE MENTAL MODEL
+12. ONE-PAGE MENTAL MODEL
 ==============================================================================
 
 State needed facts about itself
