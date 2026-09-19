@@ -14,7 +14,7 @@ Democratic Implications: Political systems can operate as de facto plutocracies,
 ## Core 
 The phrase “socialism for the rich and capitalism for the poor” is a political-economic critique describing systemic inequalities in advanced capitalist societies. It highlights that the wealthy benefit disproportionately from state intervention: Through bailouts, subsidies, tax breaks, and privileged access to finance. The poor are exposed to the full rigor of capitalism with minimal government protection; Experience austerity, restricted social services, higher relative taxes, and economic insecurity.
 
-The slogan is useful as a critique of the **American form of Socialism** and **cronyism and asymmetric insurance**, as ultimately a description of the U.S. fiscal state. The U.S. runs social-insurance programs (Social Security, Medicare, Medicaid, EITC) but is favored to the upper brackets. The question is not if government ever socializes risk, but **whose risk, on what terms, and with what repayment or conditions**. Bailouts overwhelmingly target large institutions whose failure could destabilize the broader economy, not individuals. This asymmetry is what the critique: risk is socialized at the top, privatized at the bottom.
+The slogan is useful as a critique of contemporary **American form of Socialism** and **cronyism and asymmetric insurance**, as ultimately a description of the U.S. fiscal state. The U.S. runs social-insurance programs (Social Security, Medicare, Medicaid, EITC) but is favored to the upper brackets. The question is not if government ever socializes risk, but **whose risk, on what terms, and with what repayment or conditions**. Bailouts overwhelmingly target large institutions whose failure could destabilize the broader economy, not individuals. This asymmetry is what the critique: risk is socialized at the top, privatized at the bottom.
 
 ## **Historical bailouts**
 
@@ -89,3 +89,5 @@ This framework explains why recurring bailouts, subsidies, preferential legislat
   Define a state‑insurance functional \( S \) mapping agents \( i \) to rescue probability, speed, and conditionality; then show empirically how \( S \) scales with systemic legibility, not need.
 - ** “Affluent socialism” vs “precarious capitalism”:**  
   Treat tax expenditures, guarantees, and bailouts as one block; means‑tested transfers and UBI‑like proposals as another, and analyze incidence by income decile.
+- Tax expenditure incidence
+- Sovereign wealth funds
