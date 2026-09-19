@@ -30,7 +30,13 @@ From this different mode from market-disciplined labor, a second-order rule of t
 #### **Asymmetric‑Insurance Mode of Production**
 > **The U.S. mode of production is organized around asymmetric insurance: capital enjoys automatic, low‑friction state protection, while labor faces fragmented, high‑conditionality survival mechanisms.**
 
-In this configuration, the state functions as a **centralized risk‑absorber for capital**—providing liquidity, guarantees, tax expenditures, and crisis bailouts—while simultaneously enforcing a **high‑friction, conditional, and punitive welfare structure** for households. The result is a production regime where **downside risk is socialized for firms but individualized for workers**, embedding “socialism for the wealthy, capitalism for the poor” directly into the material organization of the economy.
+In this configuration, the state functions as a **centralized risk‑absorber for capital**—providing liquidity, guarantees, tax expenditures, and crisis bailouts—while simultaneously enforcing a **high‑friction, conditional, and punitive welfare structure** for households. The result is a production regime where **downside risk is socialized for firms but individualized for workers**, embedding “socialism for the wealthy, capitalism for the poor” directly into the material organization of the economy. This is the exact problem as the taxonomy. The contemporary U.S. has two modes of production. It is an economy whose constitution allocates failure unequally. Capital accumulates under a routine of public support plus near unconditional welfare. Labor is reproduced under market exposure plus conditional welfare. The net is a put for capital and a test for households.
+
+State-insured accumulation: Liquidity facilities, guarantees, tax expenditures, and crisis recapitalization are exceptions quickly bolted onto a "private" market. 
+
+Market-disciplined reproduction: Households face income, rent, and job loss with slow, means-tested, stigmatized claims. When household collapse is recoded as a macro event, the state can move slowly. 
+
+The slogan names that allocation of downside: socialized for firms distress, individualized for workers. That is a regime of asymmetric insurance inside capitalism, a socialist mode stacked on a capitalist one. The politics diversion is treating them as incidental. The analytic true form is treating the two tiers as two modes.
 
 ## **Historical bailouts**
 
