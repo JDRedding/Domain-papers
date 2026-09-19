@@ -510,7 +510,7 @@ Vital statistics = births, deaths, marriages, etc.
   or public health, depending on emphasis.
 ```
 
-## 10. WHERE THE MATH LIVES IF ARE SHELVING IDEAS, NOT YEARBOOKS
+## 10. WHERE THE MATH LIVES IN SHELVING IDEAS, NOT YEARBOOKS
 
 ```
 Theory of probability and mathematical statistics     519 / 519.5
