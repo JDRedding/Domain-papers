@@ -333,7 +333,8 @@ The *mechanisms* used to govern capital resemble the core operational machinery 
 
 The U.S. capital tier exhibits all three. This is why “socialist in mechanism” is analytically sharper than “state capitalism,” “corporatism,” “mixed economy,” or “financial stabilization.”
 
-### Soft Budget Constraints (the classic socialist mechanism)
+### Soft Budget Constraints 
+The classic socialist mechanism
 
 In socialist planning systems (e.g., the Soviet Gosplan structure), enterprises did not face hard bankruptcy constraints. The state absorbed losses to maintain production continuity.
 
@@ -347,7 +348,7 @@ This is **the** defining mechanism of socialist enterprise governance.
 
 State capitalism and corporatism do not require soft budget constraints; they often preserve hard failure rules. Financial stabilization is episodic, not structural.
 
-### Guaranteed Survival (another socialist mechanism)**
+### Guaranteed Survival 
 
 In socialist economies, enterprise survival was a political decision, not a market outcome.
 
