@@ -22,19 +22,9 @@ In the United States, common expectations include personal space, punctuality, p
 
 Etiquette changes from place to place. In Japan, slurping noodles can signal enjoyment. In many Middle Eastern and African settings, the left hand is reserved for personal hygiene and is not used to offer objects to others. Knowing such differences reduces misunderstanding and makes cross-cultural contact more respectful.
 
-## Folklore and Cultural Narratives
-
-**Folklore** includes traditional stories, myths, legends, and customary practices passed from one generation to the next. These forms carry beliefs, values, and social rules. They range from European fairy tales and legendary beings to Native American stories and Asian folk traditions.
-
-Folk narratives often explain the natural world, teach a moral, describe a social practice, or simply entertain. They also help a group recognize itself.
-
-Folklore includes rituals and festivals. Thanksgiving in the United States is associated with gratitude and harvest. Diwali in India marks the triumph of light over darkness through lamps, fireworks, and family gatherings. Such events combine symbol, food, music, and dance and can strengthen communal ties. Distinct practices—Madagascar’s Famadihana reburial ceremonies, or Spain’s El Colacho baby-jumping festival—show how widely societies differ in honoring life, death, and belief.
-
 ## How Traditions Work and Change
 
-Customs and folklore support identity, cohesion, and moral teaching. They preserve a sense of the past while handing on knowledge and manners.
-
-They also change. Globalization, migration, and new media produce mixed forms: online festival gatherings, multicultural weddings, and other blends of older ritual with present-day life. That flexibility can keep a tradition usable without erasing its history.
+Customs and folklore support identity, cohesion, and moral teaching. They preserve a sense of the past while handing on knowledge and manners. They also change. Globalization, migration, and new media produce mixed forms: online festival gatherings, multicultural weddings, and other blends of older ritual with present-day life. That flexibility can keep a tradition usable without erasing its history.
 
 ## Studying and Respecting Traditions
 
@@ -44,4 +34,12 @@ Useful approaches include:
 - Listening to elders and other keepers of oral tradition
 - Reading literature, reference works, and folklore collections
 - Avoiding assumptions and treating unfamiliar practices with restraint
+
+## Folklore and Cultural Narratives
+
+**Folklore** includes traditional stories, myths, legends, and customary practices passed from one generation to the next. These forms carry beliefs, values, and social rules. They range from European fairy tales and legendary beings to Native American stories and Asian folk traditions.
+
+Folk narratives often explain the natural world, teach a moral, describe a social practice, or simply entertain. They also help a group recognize itself.
+
+Folklore includes rituals and festivals. Thanksgiving in the United States is associated with gratitude and harvest. Diwali in India marks the triumph of light over darkness through lamps, fireworks, and family gatherings. Such events combine symbol, food, music, and dance and can strengthen communal ties. Distinct practices—Madagascar’s Famadihana reburial ceremonies, or Spain’s El Colacho baby-jumping festival—show how widely societies differ in honoring life, death, and belief.
 
