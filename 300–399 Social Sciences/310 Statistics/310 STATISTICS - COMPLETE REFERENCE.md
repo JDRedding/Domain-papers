@@ -382,67 +382,74 @@ Other named objects
 ## 6. CORE INFERENTIAL FUNDAMENTALS
 
 SAMPLING
+```
   Selecting a suitable sample for study.
   Design and bias usually matter more than raw n alone.
-
+```
 LAW OF LARGE NUMBERS  (Bernoulli)
+```
   A large number of random items from a population will,
   on average, have the population statistics.
-
+```
 CENTRAL LIMIT THEOREM  (Laplace and later development)
+```
   Sums/means of many independent errors/observations tend
   toward a normal distribution under broad conditions.
   Linked historically to least squares.
-
+```
 BAYES THEOREM
+```
   How to update the probability of causes given an observed event,
   using prior probabilities of causes and the likelihood of the data
   under each cause.
-
+```
 BAYES POSTULATE  (equal priors when unknowns)
+```
   When cause probabilities are unknown, sometimes treat them
   as equal ("equidistribution of ignorance").
   This is a modeling choice, not a fact.
-
+```
 HYPOTHESIS TESTING
+```
   Use sample data to assess a claim about a parameter or distribution.
   Helps ask whether a result is plausibly chance variation.
-
+```
 CONFIDENCE INTERVAL
+```
   A range constructed so that, in repeated sampling, a stated
   fraction of such intervals would cover the parameter
   (frequentist reading).
-
+```
 LEAST SQUARES
+```
   Fit a curve/line by minimizing the sum of squared distances
   from the points to the curve.
-
+```
 REGRESSION
+```
   Model a dependent variable as a function of predictors.
   Historically later than least squares as used in astronomy.
-
+```
 STATISTIC vs PARAMETER  (repeat because it is the key pair)
+```
   statistic  = computed from the sample
   parameter  = property of the population
-
-
+```
 ## 7. NAMED METHODS AND TOPIC LABELS FROM THE DICTIONARY/THESAURUS LAYER
 
-
 statistical method / statistical procedure
-  A method of analyzing or representing statistical data;
+-  A method of analyzing or representing statistical data;
   a procedure for calculating a statistic.
 
 multivariate analysis
-  Generic term for techniques that analyze more than one variable.
+-  Generic term for techniques that analyze more than one variable.
 
 parametric statistic
-  Any statistic computed under a named distributional assumption.
+-  Any statistic computed under a named distributional assumption.
 
 distribution-free / nonparametric statistic
-  Computed without needing the form or parameters of the parent
+-  Computed without needing the form or parameters of the parent
   distribution.
-
 
 ## 8. HISTORY COMPRESSED
 
