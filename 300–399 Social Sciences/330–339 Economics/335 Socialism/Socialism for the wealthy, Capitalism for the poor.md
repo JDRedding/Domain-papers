@@ -18,14 +18,14 @@ The phrase “socialism for the rich and capitalism for the poor” is a politic
 
 The slogan is useful as a critique of contemporary **American form of Socialism** and **cronyism and asymmetric insurance**, as ultimately a description of the U.S. fiscal state. The U.S. runs social-insurance programs (Social Security, Medicare, Medicaid, EITC) but is favored to the upper brackets. The question is not if government ever socializes risk, but **whose risk, on what terms, and with what repayment or conditions**. Bailouts overwhelmingly target large institutions whose failure could destabilize the broader economy, not individuals. This asymmetry is what the critique: risk is socialized at the top, privatized at the bottom.
 
-## **Mode‑of‑Production Claim**
+### **Modes‑of‑Production**
 
 **The contemporary U.S. mode of production is best understood as a dual‑tier system in which capital operates under a regime of *state‑insured accumulation*, while labor is relegated to *market‑disciplined reproduction*.**
 
-### **Fiscal‑State Mode of Production**
+#### **Fiscal‑State Mode of Production**
 > **The U.S. mode of production is a fiscal‑state regime where capital accumulation depends on public balance‑sheet support, while labor reproduction is disciplined through market exposure and conditional welfare.**
 
-### **Asymmetric‑Insurance Mode of Production**
+#### **Asymmetric‑Insurance Mode of Production**
 > **The U.S. mode of production is organized around asymmetric insurance: capital enjoys automatic, low‑friction state protection, while labor faces fragmented, high‑conditionality survival mechanisms.**
 
 In this configuration, the state functions as a **centralized risk‑absorber for capital**—providing liquidity, guarantees, tax expenditures, and crisis bailouts—while simultaneously enforcing a **high‑friction, conditional, and punitive welfare structure** for households. The result is a production regime where **downside risk is socialized for firms but individualized for workers**, embedding “socialism for the wealthy, capitalism for the poor” directly into the material organization of the economy.
