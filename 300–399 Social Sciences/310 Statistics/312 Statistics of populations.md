@@ -211,3 +211,194 @@ Associated statistics:
 - **in‑migration and out‑migration**  
 
 Migration is the least precisely measured because it lacks universal registration.
+
+## 📘 **APPENDIX: Relational Dynamic Geometry of Population Systems**
+
+This appendix rewrites the demographic evolution system into **RDG tri‑mode operators**:
+
+- **SID** — structural identity registers  
+- **PED** — process / edge dynamics  
+- **M** — measurement operators  
+- **E** — entropy / dispersion operators  
+- **Q** — quality / welfare operators  
+
+The demographic system is a **closed operator chain**:
+
+$$
+P_{t+1} = P_t + F(P_t) - M(P_t) + G(P_t)
+$$
+
+Every statistic is a **projection**, **normalization**, or **integral** of this chain.
+
+### 🧩 **RDG Structural Layer (SID)**  
+The population state vector is a **structured geometric register**:
+
+$$
+P_t = \{ N_{a,s,r,\ldots} \}
+$$
+
+This is the SID layer: a multi‑index relational geometry.
+
+### SID descriptors (pure stock projections)
+- **median age** — quantile functional on SID  
+- **sex ratio** — ratio functional  
+- **dependency ratios** — partition functional  
+- **population density** — spatial normalization  
+- **urban share** — categorical partition  
+
+These are **static geometric descriptors**: they describe the shape of the state, not its motion.
+
+---
+
+### 🔄 **RDG Transition Layer (PED)**  
+The three demographic operators are **edge‑dynamics** acting on SID.
+
+#### **Fertility operator $F\)**  
+$$
+B = \sum_a ASFR(a)\cdot N_{a,f}
+$$
+
+PED interpretation:
+- ASFR(a) = edge‑weight from female age‑register → birth register  
+- Births = PED flow injected into SID at age 0  
+
+Associated statistics:
+- **crude birth rate**  
+- **age‑specific fertility rates**  
+- **TFR** — integral of PED over reproductive span  
+- **sex ratio at birth**  
+
+#### **Mortality operator $M\)**  
+$$
+D = \sum_a m(a)\cdot N_a
+$$
+
+PED interpretation:
+- m(a) = edge‑weight from age‑register → absorbing death register  
+- Survival curve = cumulative PED attenuation  
+
+Associated statistics:
+- **crude death rate**  
+- **infant mortality rate**  
+- **age‑specific death rates**  
+- **life expectancy** — integral of survival operator  
+
+#### ** Migration operator $G\)**  
+
+$$
+\Delta_{\text{mig}} = I - E
+$$
+
+PED interpretation:
+- I = inbound edge‑flow  
+- E = outbound edge‑flow  
+- Net migration = directional PED imbalance  
+
+Associated statistics:
+- **net migration rate**  
+- **in‑migration**  
+- **out‑migration**  
+
+Migration is the **noisiest PED channel** due to weak measurement.
+
+---
+
+### 📏 **RDG Measurement Layer (M)**  
+All demographic statistics are **measurement operators** applied to SID or PED.
+
+Examples:
+- **growth rate** — M‑operator on $F - M + G$ 
+- **age‑standardized rates** — M‑operator with structural weighting  
+- **natural increase** — M‑operator on $B - D$ 
+
+These are **flow descriptors**: they measure change, not composition.
+
+---
+
+### 📉 **RDG Entropy Layer (E)**  
+E‑operators measure dispersion, inequality, or structural imbalance inside SID.
+
+Examples:
+- **age‑structure entropy**  
+- **sex‑ratio imbalance metrics**  
+- **migration volatility**  
+
+These quantify **shape irregularities** in the population geometry.
+
+---
+
+### 🎯 **RDG Quality Layer (Q)**  
+Q‑operators evaluate the **functional consequences** of the demographic system.
+
+Examples:
+- **dependency burden**  
+- **labor‑force sustainability**  
+- **aging pressure**  
+- **replacement adequacy**  
+
+These are **interpretive functionals**: they map SID+PED+M+E into social meaning.
+
+---
+
+### 🔗 **Full RDG Operator Chain**
+
+$$
+\boxed{ P_{t+1} = \underbrace{SID_t}_{\text{state}} + \underbrace{PED_F(P_t)}_{\text{fertility}} - \underbrace{PED_M(P_t)}_{\text{mortality}} + \underbrace{PED_G(P_t)}_{\text{migration}} }
+$$
+
+Measurements:
+
+$$
+\text{Statistics} = M(SID, PED)
+$$
+
+Structure irregularities:
+
+$$
+\text{Entropy} = E(SID)
+$$
+
+Interpretive outputs:
+
+$$
+\text{Quality} = Q(SID, PED, M, E)
+$$
+
+Everything in demography is a **projection** of this chain.
+
+---
+
+### 🧱 **RDG Mapping of Standard Statistics**
+
+### Stock (SID)
+- **median age**  
+- **sex ratio**  
+- **dependency ratios**  
+
+### Flow (PED → M)
+- **crude birth rate**  
+- **crude death rate**  
+- **net migration rate**  
+
+### Derived (M → E → Q)
+- **TFR**  
+- **life expectancy**  
+- **age‑standardized rates**  
+
+---
+
+### 📊 **RDG Interpretation of the Age‑Sex Pyramid**
+
+The pyramid is the **SID projection** onto $(a,s)\).
+
+It encodes:
+- past fertility (PED‑F)  
+- past mortality (PED‑M)  
+- past migration (PED‑G)  
+- future dependency (Q)  
+- future labor supply (Q)  
+- future aging trajectory (E + Q)  
+
+It is the **single densest static visualization** of the operator chain.
+
+---
