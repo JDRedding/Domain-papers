@@ -296,3 +296,27 @@ Thus:
 
 > For upper deciles, $A \gg B$ and $S(i)$ is high, automatic, and low‑friction.  
 > For lower deciles, $B$ exists but is conditional, fragmented, and politically fragile, and $S(i)$ is low and crisis‑dependent.
+
+# APPENDIX: State Intervention and Socialism
+
+State intervention is a defining feature of many forms of socialism. It typically involves government ownership or control of key resources, regulation of economic activity, and policies aimed at social welfare.
+
+Socialism is an economic and political system that emphasizes social ownership of the means of production — whether public, cooperative, or state-based — with the goals of reducing inequality and prioritizing collective welfare over private profit. In many socialist frameworks the state occupies a central role: managing or directing large parts of the economy, redistributing wealth, and providing essential services such as healthcare, education, and infrastructure.
+
+### State socialism and other variants
+
+State socialism involves government control of major industries together with planning. It has been treated both as a transitional stage from capitalism and as a durable model intended to guide development while pursuing social equity. 
+
+Not all socialist thought or practice requires comprehensive state control. Social democracy combines market mechanisms with substantial state intervention in the form of welfare provision, regulation, and progressive taxation. Nordic countries are frequently cited as examples of this mixed approach. The degree of intervention varies widely — from market regulation and redistribution to selective public ownership—yet the common emphasis remains collective welfare rather than unfettered profit.
+
+### Recurring features
+
+Redistribution and welfare: progressive taxation, social programs, and regulation intended to moderate inequality and deliver universal services.
+
+Economic planning: coordination of production and investment according to stated social or national goals.
+
+Public ownership or regulation: state control or oversight of essential industries in the name of the public interest.
+
+Institutional variation: systems range from highly centralized command economies to mixed-market arrangements with targeted intervention.
+
+State intervention is therefore a core instrument in many socialist traditions, but its extent and methods differ across historical and contemporary contexts. The shared aims are typically equity, economic stability, and public welfare rather than a single uniform model of economic control.
