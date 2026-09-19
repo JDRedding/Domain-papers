@@ -1,4 +1,6 @@
 # American Humor and Satire
+→ 818  
+→ American Essays / Humor
 
 American humor and satire grew from the same restless, talkative culture: a country that stretches a story until it snaps, then uses the snap to point at something real. Humor usually wants the laugh first. Satire wants the laugh *and* the sting. They have never been cleanly separate in the United States.
 
