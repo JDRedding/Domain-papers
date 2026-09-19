@@ -1,6 +1,6 @@
 # Society’s identity
 Customs, etiquette, and folklore
-- 390	Customs, etiquette & folklore
+- 390	General Customs, etiquette & folklore
 - 391	Society’s Costumes & personal appearance
 - 392	Society’s Customs of life cycle & domestic life
 - 393	Society’s Death customs & practices
