@@ -1,4 +1,6 @@
 tiny386 - frank-386
+→ 004.16 → Computer Architecture
+
 C99 i386 PC emulator  |  core ~6K LOC  |  BSD-3-Clause
 orig: He Chunhui (hchunhui/tiny386)
 RP2350 port: FRANK-386 (rh1tech) + Waveshare Pi Zero fork
