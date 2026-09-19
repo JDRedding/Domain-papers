@@ -87,9 +87,10 @@ What 310-319 is NOT for
       -> 614.1
 
 Why 311-313 are empty
-- Older DDC put method in 311 and population in 312.
-- Those subjects moved. 310 stayed a compact "general statistics
-- by area" class. Printed schedules from different editions disagree.
+
+ Older DDC put method in 311 and population in 312.
+ Those subjects moved. 310 stayed a compact "general statistics
+ by area" class. Printed schedules from different editions disagree.
 
 Older-edition flavor (seen in some historical DDC texts)
 ```
