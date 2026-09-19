@@ -155,8 +155,13 @@ The same architecture that produces the headline numbers also produces every oth
 ## Future work
 
 - **Build a full operator chain for demographic forecasting**  
-- **Construct an ASCII population pyramid**  
-- **Map every standard statistic to its operator origin**  
+- Leslie (or Leslie + origin–destination migration) matrix
+- Show that CBR, CDR, and growth rate are Rayleigh-type quotients
+- Kernels (ASFR, $m(a)$, migration rates) from action
+- Define E as a real functiona on the age distribution
+- Q as objects with denominators (potential support ratio)
+- ASCII population pyramid from a real $N_{a,s}$ vector (WPP single-year or 5-year file)
+- Map headline statistic to: operator, kernel, action, normalization, period vs cohort, and data source
 
 ## APPENDIX: 🧱 Population state vector  
 
