@@ -320,3 +320,104 @@ Public ownership or regulation: state control or oversight of essential industri
 Institutional variation: systems range from highly centralized command economies to mixed-market arrangements with targeted intervention.
 
 State intervention is therefore a core instrument in many socialist traditions, but its extent and methods differ across historical and contemporary contexts. The shared aims are typically equity, economic stability, and public welfare rather than a single uniform model of economic control.
+
+## APPENDIX: Capital Tier as “Socialist in Mechanism”
+
+**Selective state intervention in the capital tier is “socialist in mechanism” because it replicates the core operational features of socialist planning systems — soft budget constraints, guaranteed survival, and centralized allocation of liquidity — whereas labels like state capitalism, corporatism, mixed economy, or financial stabilization fail to capture this structural, standing, and non‑market mode of enterprise governance.**
+
+The *mechanisms* used to govern capital resemble the core operational machinery of historical socialist planning systems. That machinery has three defining features:
+
+1. **Soft budget constraints**  
+2. **Guaranteed survival for systemically coded entities**  
+3. **Centralized allocation of credit, liquidity, and rescue**
+
+The U.S. capital tier exhibits all three. This is why “socialist in mechanism” is analytically sharper than “state capitalism,” “corporatism,” “mixed economy,” or “financial stabilization.”
+
+### Soft Budget Constraints (the classic socialist mechanism)
+
+In socialist planning systems (e.g., the Soviet Gosplan structure), enterprises did not face hard bankruptcy constraints. The state absorbed losses to maintain production continuity.
+
+The U.S. capital tier mirrors this:
+
+- Systemic firms are not allowed to fail.  
+- Losses are absorbed through liquidity facilities, guarantees, and recapitalization.  
+- Bailouts are *anticipated* — the put option exists before the crisis.
+
+This is **the** defining mechanism of socialist enterprise governance.
+
+State capitalism and corporatism do not require soft budget constraints; they often preserve hard failure rules. Financial stabilization is episodic, not structural.
+
+### Guaranteed Survival (another socialist mechanism)**
+
+In socialist economies, enterprise survival was a political decision, not a market outcome.
+
+The U.S. capital tier replicates this logic:
+
+- “Too big to fail” is a political classification.  
+- Systemic firms receive rapid, unconditional rescue.  
+- Failure is administratively prohibited because it threatens the plan (in the U.S. case: the financial system).
+
+This is not simply “state capitalism,” which allows firm failure when politically convenient.  
+It is not “mixed economy,” which blends markets and welfare but does not guarantee enterprise survival.  
+It is not “financial stabilization,” which is temporary and crisis‑specific.
+
+The capital tier has **standing survival guarantees** — a socialist mechanism.
+
+### Centralized Allocation of Liquidity and Credit
+
+Gosplan allocated inputs, credit, and investment from the center.
+
+The U.S. capital tier does the same in crisis moments:
+
+- The Federal Reserve becomes a central allocator of credit.  
+- Treasury becomes a central allocator of capital.  
+- Entire sectors (autos, airlines, GSEs, banks) receive directed support.
+
+This is not corporatism (which is about interest‑group bargaining).  
+It is not state capitalism (which is about state ownership or profit‑seeking).  
+It is not a mixed economy (which lacks centralized allocation).  
+It is not mere stabilization (which is temporary and reactive).
+
+This is **central planning of survival**, not market allocation.
+
+### The Mechanism, Not the Ideology
+
+Calling the capital tier “socialist in mechanism” does *not* claim:
+
+- egalitarian distribution  
+- worker control  
+- public ownership  
+- socialist ideology
+
+It claims that the **operational logic** — the machinery of survival, credit, and rescue — is structurally identical to the logic used in socialist command systems.
+
+The U.S. capital tier is:
+
+- **planned**  
+- **insured**  
+- **rescued**  
+- **protected**  
+- **centralized**  
+- **non‑bankruptable**
+
+These are socialist mechanisms.
+
+### Why the Alternatives Are Too Weak**
+
+### **State capitalism**  
+Implies state ownership or profit‑seeking.  
+The U.S. capital tier is not owned by the state; it is *insured* by it.
+
+### **Corporatism**  
+Implies interest‑group bargaining.  
+The capital tier is not negotiated — it is guaranteed.
+
+### **Mixed economy**  
+Implies coexistence of markets and welfare.  
+It does not imply **centralized rescue and soft budgets**.
+
+### **Financial stabilization**  
+Implies temporary crisis response.  
+The capital tier has **standing**, **predictable**, **structural** rescue pathways.
+
+None of these capture the **put‑option architecture** or the **soft‑budget constraint** that define your dual‑tier mode of production.
