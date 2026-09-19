@@ -435,7 +435,7 @@ STATISTIC vs PARAMETER  (repeat because it is the key pair)
   statistic  = computed from the sample
   parameter  = property of the population
 ```
-## 7. NAMED METHODS AND TOPIC LABELS FROM THE DICTIONARY/THESAURUS LAYER
+## 7. NAMED METHODS AND TOPIC LABELS
 
 statistical method / statistical procedure
 -  A method of analyzing or representing statistical data;
