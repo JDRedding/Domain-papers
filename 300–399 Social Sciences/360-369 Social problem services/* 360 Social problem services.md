@@ -164,8 +164,8 @@ Federal infrastructure, nonprofit expertise, and local navigators together widen
 For practical help in the United States, people can call **211**, use federal agency websites, or contact United Way and local community centers to find programs and apply for services.
 
 ## Future work
-- Policy interventions
-- Global social issues
+- Policy interventions (housing first, Medicaid waivers, reentry, child welfare, prevention vs. crisis response)
+- Global social issues (poverty, forced displacement, aging, informal labor, climate-linked housing/health)
 
 ## References
 
