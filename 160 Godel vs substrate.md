@@ -1,4 +1,4 @@
-## SYMBOLIC / EPISTEMIC LEVEL**
+## SYMBOLIC / EPISTEMIC LEVEL
 — Gödel applies here
 → 160 → Logic / Foundations of Mathematics
 
