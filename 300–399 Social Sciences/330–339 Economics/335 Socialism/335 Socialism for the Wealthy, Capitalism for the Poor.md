@@ -1,6 +1,6 @@
 # **Socialism for the Wealthy, Capitalism for the Poor**
 
-In many advanced capitalist systems, public resources are routinely mobilized to protect elites while the poor are exposed to unmediated market forces. The state becomes a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes.
+In many advanced capitalist systems, public resources are routinely mobilized to protect elites while the poor are exposed to unmediated market forces. The state becomes a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes. The same economy can apply substantially different institutional rules to different classes of economic actors.
 
 “Socialism for the wealthy, capitalism for the poor” is fundamentally:
 
