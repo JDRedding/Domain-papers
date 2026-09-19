@@ -83,6 +83,14 @@ This dualism is not incidental — it is **constitutional**. It is the fiscal ar
 
 > The U.S. does not have one mode of production but two: a socialist command system for capital and a laissez‑faire test for labor. The slogan “socialism for the wealthy, capitalism for the poor” is not metaphor but description.
 
+**State‑Insurance Operator $S$**
+
+Let:
+
+- **Agents:** $i \in \mathcal{A}$ (households, firms, sectors).  
+- **Shock:** $\omega \in \Omega$ (crisis, recession, firm failure, household income loss).  
+- **State Response:** $R(i,\omega)$ = interventions (cash, guarantees, regulatory forbearance, tax relief)
+
 - Capital sits in the **high‑S(i)** region: high rescue probability, fast intervention, deep coverage, low conditionality.  
 - Labor sits in the **low‑S(i)** region: low rescue probability, slow intervention, shallow coverage, high conditionality.
 
