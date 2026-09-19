@@ -31,7 +31,7 @@ Evidence from pilots:
 
 Polarization shapes how Americans interpret bailouts, welfare, and UBI. Research shows polarization is less ideological and more emotional/identity‑based.  
 
-**Affective polarization** — dislike of the other party more than disagreement over a specific tax rate—has risen since the 1990s. Corporate rescues in a crisis can still pass because they are sold as preventing a depression that would hit everyone. Direct, unconditional cash to people triggers arguments about deservingness, work, and moral hazard. That is why TARP and CARES could move in weeks, while UBI remains a pilot-and-debate topic.
+> **Affective polarization** — dislike of the other party more than disagreement over a specific tax rate—has risen since the 1990s. Corporate rescues in a crisis can still pass because they are sold as preventing a depression that would hit everyone. Direct, unconditional cash to people triggers arguments about deservingness, work, and moral hazard. That is why TARP and CARES could move in weeks, while UBI remains a pilot-and-debate topic.
 
 Public opinion is less polarized than elites, but voters’ misperceptions of the other party amplify hostility.
 
