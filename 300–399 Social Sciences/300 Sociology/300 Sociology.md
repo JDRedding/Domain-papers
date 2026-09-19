@@ -30,4 +30,6 @@ Sociological thought is grounded in several major frameworks:
 - **Symbolic interactionism** examines everyday interactions and the meanings people attach to social symbols and experiences.
 - **Feminist theory** analyzes gender inequalities and challenges traditional patriarchal structures.
 
-
+## Future work
+- Durkheim's suicide theory
+- Social stratification
