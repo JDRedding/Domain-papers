@@ -65,7 +65,7 @@ Affective polarization then does two things:
 
 Result: the insurance ladder stays inverted—robust at the top, fragmented and moralized at the bottom.
 
-## Synthesis:
+## Synthesis
 
 - Bank-capital are largely repaid; auto and housing pieces were not. “Privatize gains, socialize losses” fits some programs better than others.
 - The state **does** socialize losses at the top when failure threatens the financial system or a strategic industry.
