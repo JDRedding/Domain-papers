@@ -85,7 +85,7 @@ This framework explains why recurring bailouts, subsidies, preferential legislat
 
 ## Future work
 
-- **Insurance operator:**  
+- **Insurance operator**  
   Define a state‑insurance functional $S$ mapping agents $i$ to rescue probability, speed, and conditionality; then show empirically how $S$ scales with systemic legibility, not need.
 - **Affluent socialism vs precarious capitalism**  
   Treat tax expenditures, guarantees, and bailouts as one block; means‑tested transfers and UBI‑like proposals as another, and analyze incidence by income decile.
