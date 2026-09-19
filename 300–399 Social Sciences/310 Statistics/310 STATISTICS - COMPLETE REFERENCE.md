@@ -4,8 +4,7 @@ Plain-text pack: definitions, types, variables, fundamentals, history, usage, li
 ## CLASSIFICATION BLOCK
 
 This is Dewey Decimal Classification, class 300 Social sciences.
-310 is NOT the home of [mathematical statistics](https://github.com/JDRedding/Domain-papers/tree/main/500%E2%80%93599%20Science/510%20Mathematics/519%20Probability%20Logic%20Stochastic%20Systems)
-.
+310 is NOT the home of [mathematical statistics](https://github.com/JDRedding/Domain-papers/tree/main/500%E2%80%93599%20Science/510%20Mathematics/519%20Probability%20Logic%20Stochastic%20Systems).
 
 Current DDC (modern schedules)
 ```
