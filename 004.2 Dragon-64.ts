@@ -1,4 +1,7 @@
 // Dragon-64 [RDG submodule]
+// → 004.2  
+// → Programming Languages / Quantum Lattice Simulation
+
 module Dragon64 {
 // Interpretation
 // Relations: SL(2,Z₈) action
