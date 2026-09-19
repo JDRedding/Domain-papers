@@ -83,7 +83,7 @@ The U.S. has repeatedly used fast, large-scale state intervention to boost syste
 Comparative international examples: Pakistan, developing countries with elite rentier economic structures.
 This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity measures are often seen not as anomalies but as systemic features of modern economic governance.
 
-### Future work
+## Future work
 
 - **Insurance operator:**  
   Define a state‑insurance functional \( S \) mapping agents \( i \) to rescue probability, speed, and conditionality; then show empirically how \( S \) scales with systemic legibility, not need.
