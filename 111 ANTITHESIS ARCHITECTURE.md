@@ -1,5 +1,6 @@
 # THE ARCHITECTURE OF ANTITHESIS  
 From Difference to Complementarity, Coherence, and Non-Fused Wholeness
+→ 111 → Metaphysics / Ontology
 
 ## THE CORE
 The whole is not what remains when difference disappears.  
