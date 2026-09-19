@@ -141,7 +141,7 @@ This accounting does not erase the political reality: large institutions receive
 
 ### **COVID‑Era Spending**
 
-USAspending tallies show roughly $4.6–$4.7 trillion in outlays; broader counts reach about $5.2 trillion. This was not solely a corporate bailout. Stimulus checks, expanded unemployment insurance, child‑tax‑credit expansion, PPP loans, state and local aid, and health spending absorbed large shares.
+USA spending tallies show roughly $4.6–$4.7 trillion in outlays; broader counts reach about $5.2 trillion. This was not solely a corporate bailout. Stimulus checks, expanded unemployment insurance, child‑tax‑credit expansion, PPP loans, state and local aid, and health spending absorbed large shares.
 
 The structural point remains: when systemic risk is framed as imminent collapse, Congress acts rapidly and at scale. When the proposal is a permanent cash floor for individuals, the process becomes slower and moralized.
 
