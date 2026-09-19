@@ -38,6 +38,8 @@ Evidence from pilots:
 ## **Polarization**
 - why the two policies feel different
 
+Wealth and political access can tilt policy toward bailouts, implicit guarantees, subsidies, and tax preferences that concentrate at the top. When a large bank or automaker fails, the case is framed as systemic. When the proposal is a standing cash floor for individuals, the debate turns to work, desert, and moral hazard.
+
 Polarization shapes how Americans interpret bailouts, welfare, and UBI. Research shows polarization is less ideological and more emotional/identity‑based.  
 
 > **Affective polarization** — dislike of the other party more than disagreement over a specific tax rate—has risen since the 1990s. Corporate rescues in a crisis can still pass because they are sold as preventing a depression that would hit everyone. Direct, unconditional cash to people triggers arguments about deservingness, work, and moral hazard. That is why TARP and CARES could move in weeks, while UBI remains a pilot-and-debate topic.
