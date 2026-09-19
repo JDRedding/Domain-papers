@@ -34,6 +34,7 @@ Current DDC (modern schedules)
        Australasia, Pacific islands, Atlantic islands,
        Arctic islands, Antarctica.
 ```
+
 ```
 +--------------------------------------------------+
 |                   310 STATISTICS                 |
@@ -57,13 +58,16 @@ Geographic order in current DDC 314-319
   Europe, Asia, Africa, North America, South America, rest of world.
 ```
 Place is refined with Table 2 (geographic areas), e.g.
+```
   314.2   general statistics of England and Wales
   315.2   general statistics of China
   317.3   general statistics of the United States
-
+```
 What 310-319 is for
+```
   Compilations of official or general statistics by place:
   yearbooks, census abstracts, general statistical handbooks.
+```
 
 What 310-319 is NOT for
 - [Mathematical statistics, probability, inference, sampling theory](https://github.com/JDRedding/Domain-papers/tree/main/500%E2%80%93599%20Science/510%20Mathematics/519%20Probability%20Logic%20Stochastic%20Systems)
@@ -106,38 +110,34 @@ Other schemes (contrast only)
     with topical splits (theory, processing, agencies, national
     statistics, population, vital statistics, applied statistics).
 
+## 0. TWO MEANINGS OF THE WORD
 
-0. TWO MEANINGS OF THE WORD
-
-
-A. THE FIELD  (usually singular verb)
+### A. THE FIELD  (usually singular verb)
    The mathematics/science of collecting, organizing, analyzing,
    interpreting, and presenting numerical data, especially by
    inference from samples, using probability.
 
-B. THE DATA   (usually plural verb)
+### B. THE DATA   (usually plural verb)
    The numerical facts themselves: counts, rates, tables,
    census figures, earnings by age, injury totals, survey results.
 
-Grammar
+### Grammar
   "Statistics is a branch of mathematics."     -> field (singular)
   "The statistics are worse this year."        -> data (plural)
   "She is a professor of statistics."          -> field (uncountable)
   One computed value from a sample = a statistic (singular noun)
 
-Adjective
+### Adjective
   Correct: statistical  (statistical model, statistical analysis)
   Wrong:   statistic used as an adjective
 
-Quotations often attached to the word
+### Quotations often attached to the word
   "There are three kinds of lies: lies, damned lies, and statistics."
   "He uses statistics like a drunken man uses lamp-posts —
    for support rather than illumination."
 
-
-1. ETYMOLOGY
-
-
+## 1. ETYMOLOGY
+```
 Latin        status          position; form of government; the state
 Old Italian  stato           state
 Italian      statista        person skilled in statecraft
@@ -147,15 +147,14 @@ English      statistics      from late 18th century
                              originally "science dealing with facts of a state"
 First sense: government counts (people, resources, trade).
 Later sense: mathematical analysis + probability + inference.
-
+```
 Related historical names
-  Political arithmetic   (England: Graunt, Petty)
-  Staatswissenschaft     (German study of the state)
-  Statistik              popularized mid-1700s (Achenwall, 1749 often cited)
+-  Political arithmetic :  (England: Graunt, Petty)
+-  Staatswissenschaft   :  (German study of the state)
+-  Statistik            :  popularized mid-1700s (Achenwall, 1749 often cited)
 
 
-2. WHAT THE FIELD IS
-
+## 2. WHAT THE FIELD IS
 
 Statistics is a branch of applied mathematics grounded in
 probability theory (also using calculus and linear algebra).
@@ -179,10 +178,10 @@ Data types (basic split)
   Qualitative   labels / names / categories
 
 
-3. TYPES (THE MAIN PARTITIONS)
+## 3. TYPES (THE MAIN PARTITIONS)
 
 
-3.1 By job
+### 3.1 By job
 
   DESCRIPTIVE STATISTICS
     Summarize what is already in the data.
@@ -203,7 +202,7 @@ Data types (basic split)
     Use historical data, models, and often machine learning
     to estimate likelihood of future outcomes.
 
-3.2 By assumption about the distribution
+### 3.2 By assumption about the distribution
 
   PARAMETRIC
     Procedures that assume a named family of distributions
@@ -212,13 +211,13 @@ Data types (basic split)
   NONPARAMETRIC / DISTRIBUTION-FREE
     Procedures that do not require a specific distributional form.
 
-3.3 By number of variables analyzed
+### 3.3 By number of variables analyzed
 
   UNIVARIATE      one variable
   BIVARIATE       two variables
   MULTIVARIATE    more than two variables
 
-3.4 By probability interpretation (inference schools)
+### 3.4 By probability interpretation (inference schools)
 
   FREQUENTIST
     Probability = long-run relative frequency.
@@ -234,7 +233,7 @@ Data types (basic split)
     Computation historically hard; MCMC made routine use practical.
 
 
-4. VARIABLES AND FUNDAMENTAL OBJECTS
+## 4. VARIABLES AND FUNDAMENTAL OBJECTS
 
 
 POPULATION
@@ -297,7 +296,7 @@ GRAB SAMPLE
   A single sample taken at a specific time or over a short period.
 
 
-5. CORE DESCRIPTIVE MEASURES
+## 5. CORE DESCRIPTIVE MEASURES
 
 
 Center
@@ -351,7 +350,7 @@ Other named objects
     (age, sex, income, etc.).
 
 
-6. CORE INFERENTIAL FUNDAMENTALS
+## 6. CORE INFERENTIAL FUNDAMENTALS
 
 
 SAMPLING
@@ -399,7 +398,7 @@ STATISTIC vs PARAMETER  (repeat because it is the key pair)
   parameter  = property of the population
 
 
-7. NAMED METHODS AND TOPIC LABELS FROM THE DICTIONARY/THESAURUS LAYER
+## 7. NAMED METHODS AND TOPIC LABELS FROM THE DICTIONARY/THESAURUS LAYER
 
 
 statistical method / statistical procedure
@@ -417,7 +416,7 @@ distribution-free / nonparametric statistic
   distribution.
 
 
-8. HISTORY COMPRESSED
+## 8. HISTORY COMPRESSED
 
 
 Ancient / medieval precursors
@@ -459,7 +458,7 @@ Note
   Bayesian methods are widely used in research and ML.
 
 
-9. USAGE NOTES THAT KEEP COMING UP
+## 9. USAGE NOTES THAT KEEP COMING UP
 
 
 Do not write "statistic techniques."
@@ -478,7 +477,7 @@ Vital statistics = births, deaths, marriages, etc.
   or public health, depending on emphasis.
 
 
-10. WHERE THE MATH LIVES IF YOU ARE SHELVING IDEAS, NOT YEARBOOKS
+## 10. WHERE THE MATH LIVES IF YOU ARE SHELVING IDEAS, NOT YEARBOOKS
 
 
 Theory of probability and mathematical statistics     519 / 519.5
@@ -492,7 +491,7 @@ Book teaching "what is a mean" to social scientists   depends on emphasis;
                                                       or a disciplinary number
 
 
-11. MINI GLOSSARY OF PAIRS
+## 11. MINI GLOSSARY OF PAIRS
 
 
 population     vs   sample
@@ -507,7 +506,7 @@ census         vs   sample survey
 310 yearbooks  vs   519.5 theory
 
 
-12. ONE-PAGE MENTAL MODEL
+## 12. ONE-PAGE MENTAL MODEL
 
 
 State needed facts about itself
