@@ -63,7 +63,7 @@ The U.S. has repeatedly deployed large‑scale state intervention to stabilize m
 
 > The phrase “socialism for the rich and capitalism for the poor” describes a fiscal regime in which **capital enjoys systematic, state‑backed downside protection**, while **precarious households face largely unbuffered market risk**, mediated only by conditional and stigmatized programs.
 
-Intervention is not new. In 1792, Alexander Hamilton authorized federal purchases to halt a securities‑market collapse—the first major federal rescue. Subsequent episodes include Depression‑era mortgage refinancing and public works, the 1980s savings‑and‑loan cleanup, $1.5 billion in Chrysler loan guarantees (1980), post‑9/11 airline aid, and TARP after 2008.
+Intervention is not new. In 1792, Alexander Hamilton authorized federal purchases to halt a securities‑market collapse—the first major federal rescue. Subsequent episodes include Depression‑era mortgage refinancing and public works, the 1980s savings‑and‑loan cleanup, $1.5 billion in Chrysler loan guarantees (1980), post‑9/11 airline aid, and TARP after 2008. Crisis puts for systemically coded balance sheets are fast and constant. Household aid is only when recoded as collapse, then it evaporates and turns back into a test.
 
 ### **TARP**
 
