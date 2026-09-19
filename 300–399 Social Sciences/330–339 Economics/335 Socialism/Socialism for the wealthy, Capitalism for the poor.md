@@ -52,6 +52,16 @@ Moderates with low political engagement are paradoxically more willing to endors
 
 Structural incentives (primaries, media ecosystems) encourage politicians to maintain polarization.
 
+Affective polarization then does two things:
+
+- Hardens deservingness stories:  
+  - Each side overestimates how much the other wants “handouts” or “corporate welfare,” making compromise on symmetric insurance harder.
+
+- Protects existing top‑tier insurance:  
+  - Because systemic rescues are coded as “saving everyone,” they escape the moralized scrutiny applied to direct cash for individuals.
+
+Result: the insurance ladder stays inverted—robust at the top, fragmented and moralized at the bottom.
+
 ## Synthesis:
 
 - Bank-capital are largely repaid; auto and housing pieces were not. “Privatize gains, socialize losses” fits some programs better than others.
