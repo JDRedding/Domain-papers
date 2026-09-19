@@ -1,4 +1,6 @@
 // CUBY-93 (RDG submodule)
+// → 004.2  
+// → Programming Languages
 // CUBY‑93 is a 4‑lane De Boor spline evaluator.
 // It is a smooth field engine that runs over a discrete control lattice.
 // It is not RDG, but it is a smooth evaluator that fits into RDG’s relational geometry.
