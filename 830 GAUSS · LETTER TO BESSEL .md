@@ -1,4 +1,7 @@
 # GAUSS · LETTER TO BESSEL (1830)  
+→ 830  
+→ German Literature / Letters
+
 **“We must admit with humility that, while number is purely a product of our minds, space has a reality outside our minds, so that we cannot completely prescribe its properties a priori.”**
 
 ---
