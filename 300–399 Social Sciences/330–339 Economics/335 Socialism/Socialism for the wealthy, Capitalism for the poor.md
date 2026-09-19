@@ -6,7 +6,7 @@ In many advanced capitalist systems, public resources are routinely mobilized to
 
 > **State‑backed put options for capital; hard‑mode exposure for precarious labor.**
 
-This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity are systemic features of modern economic governance. The poor are in a near pure market. Elites are in Gosplan-like monopolies and national trusts (in all but name). The poor are in a night-watchman market. Elites are in a near Soviet plan. The state is a socialist mechanism for the rich and largely absent for the poor. It writes easy puts for systemic capital and hard tests for precarious labor.
+This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity are systemic features of modern economic governance. The poor are in a near pure market. Elites are in Gosplan-like monopolies and national trusts (in all but name); a near Soviet plan. The poor are in a night-watchman market. The state is a socialist mechanism for the rich and largely absent for the poor. It writes easy puts for systemic capital and hard tests for precarious labor.
 
 ---
 
