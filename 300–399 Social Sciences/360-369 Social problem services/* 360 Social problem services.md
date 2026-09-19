@@ -184,7 +184,7 @@ For practical help in the United States, people can call **211**, use federal ag
 - **Capacity:** stock-flow and queues for shelters, prisons, clinics.  
 - **Finance:** APV, replacement rates, PAYG identity, NPV for insurance and transfers.
 
-## Shared notation
+### Shared notation
 
 | Symbol | Meaning |
 |---|---|
@@ -200,7 +200,7 @@ For practical help in the United States, people can call **211**, use federal ag
 
 ---
 
-## 361 General social welfare
+### 361 General social welfare
 
 **Bergson–Samuelson social welfare function**
 
@@ -244,7 +244,7 @@ with $I$ an inequality index (Gini or Atkinson).
 
 ---
 
-## 362 Welfare problems: poverty and inequality
+### 362 Welfare problems: poverty and inequality
 
 **Poverty gap of person $i$**
 
@@ -312,7 +312,7 @@ $$
 
 ---
 
-## 363 Other social problems: health, housing, environment
+### 363 Other social problems: health, housing, environment
 
 **Basic reproduction / contagion form** (used for epidemics and some behavioral “contagion” models)
 
@@ -375,7 +375,7 @@ incremental cost per extra unit of effect (life-year, QALY, housed night).
 
 ---
 
-## 364 Criminology
+### 364 Criminology
 
 **Becker expected-utility crime model**
 
@@ -421,7 +421,7 @@ $$
 
 ---
 
-## 365 Penal institutions
+### 365 Penal institutions
 
 **Stock-flow of incarceration**
 
@@ -447,7 +447,7 @@ $$
 
 ---
 
-## 368 Social insurance
+### 368 Social insurance
 
 **Replacement rate**
 
