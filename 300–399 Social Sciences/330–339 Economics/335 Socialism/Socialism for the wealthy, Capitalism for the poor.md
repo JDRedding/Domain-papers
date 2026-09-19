@@ -22,8 +22,6 @@ This concept integrates economics, political science, and social‑justice analy
 
 Two modes of production and two historical systems stacked in one country. Politics treats these tiers as incidental; analysis reveals them as structural.
 
----
-
 ## **Core Argument**
 
 The phrase “socialism for the rich and capitalism for the poor” describes a political‑economic regime in which the wealthy benefit disproportionately from state intervention—bailouts, subsidies, tax breaks, and privileged access to finance—while the poor face the full rigor of market discipline with minimal protection. They experience austerity, restricted social services, higher relative taxes, and chronic economic insecurity.
@@ -32,7 +30,67 @@ This slogan critiques the contemporary **American form of socialism**, character
 
 From this divergence between capital and labor, a second‑order rule of the fiscal state emerges: **who is allowed to fail.**
 
----
+## **Soviet / Night‑Watchman Dualism**
+
+A useful way to conceptualize the U.S. dual‑tier system is through a **Soviet–night‑watchman** contrast: two historically distinct state forms operating simultaneously inside one political economy.
+
+### **The Soviet Tier (for Capital)**  
+This tier resembles a **Gosplan‑like command structure** for systemic firms and financial institutions. It is not socialist in egalitarian intent, but socialist in **mechanism**:
+
+- Centralized balance‑sheet support  
+- Guaranteed liquidity and credit windows  
+- Crisis recapitalization  
+- Sectoral backstops (GSEs, defense, autos, airlines)  
+- Tax‑expenditure planning that functions like long‑horizon industrial policy  
+
+This tier operates as a **neo‑Soviet planning apparatus for capital**, providing:
+
+- **Assured survival** for systemically legible firms  
+- **Soft budget constraints**  
+- **Routine state intervention** in moments of distress  
+- **Implicit guarantees** that shape behavior long before crises occur  
+
+Capital, in effect, lives inside a **state‑managed safety net**—a command economy for elites, with predictable rescue pathways and institutionalized downside protection.
+
+### **The Night‑Watchman Tier (for Labor)**  
+By contrast, precarious households inhabit a **night‑watchman state**: a minimal, punitive, and highly conditional welfare regime.
+
+- Means‑tested programs with high administrative friction  
+- Slow, stigmatized, and temporary relief  
+- Market exposure as the default condition  
+- Welfare structured as surveillance and compliance  
+- Collapse treated as an individual failure rather than a systemic event  
+
+Labor is governed by **market discipline**, not state insurance. The welfare state is present only as a **test**, not a guarantee. Households face:
+
+- Income shocks  
+- Rent spikes  
+- Job loss  
+- Medical debt  
+- Eviction risk  
+
+with **no automatic stabilizers** comparable to those enjoyed by capital.
+
+### **The Dual System as a Mode of Production**  
+The coexistence of these tiers produces a **hybrid mode of production**:
+
+- A **Soviet mode** for capital: soft budgets, guaranteed liquidity, state‑absorbed risk.  
+- A **night‑watchman mode** for labor: hard budgets, market exposure, individualized failure.
+
+This dualism is not incidental — it is **constitutional**. It is the fiscal architecture through which the U.S. allocates risk, survival, and failure.
+
+### **Why This Matters for Your Thesis**  
+This Soviet/watchman framing clarifies the core claim of your paper:
+
+> The U.S. does not have one mode of production but two: a socialist command system for capital and a laissez‑faire test for labor. The slogan “socialism for the wealthy, capitalism for the poor” is not metaphor but description.
+
+- Capital sits in the **high‑S(i)** region: high rescue probability, fast intervention, deep coverage, low conditionality.  
+- Labor sits in the **low‑S(i)** region: low rescue probability, slow intervention, shallow coverage, high conditionality.
+
+The Soviet tier is **state‑insured accumulation**.  
+The night‑watchman tier is **market‑disciplined reproduction**.
+
+Together they form the **asymmetric‑insurance mode of production** at the heart of your paper.
 
 ## **Modes of Production**
 
