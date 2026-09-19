@@ -2,6 +2,9 @@
 
 In many advanced capitalist systems, the structural framework channels public resources to protect elites while exposing the poor to unmediated market forces—effectively making the state a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes.
 
+“Socialism for the wealthy, capitalism for the poor” is really:  
+> **State-backed put options for capital; hard‑mode exposure for precarious labor.**
+
 ## Analytical Perspective
 This concept brings together economics, political science, and social justice analysis:
 Economic Inequality: Concentration of wealth amplifies power, perpetuating policies that favor the rich.
@@ -79,3 +82,10 @@ The U.S. has repeatedly used fast, large-scale state intervention to boost syste
 
 Comparative international examples: Pakistan, developing countries with elite rentier economic structures.
 This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity measures are often seen not as anomalies but as systemic features of modern economic governance.
+
+### Future work
+
+- **Insurance operator:**  
+  Define a state‑insurance functional \( S \) mapping agents \( i \) to rescue probability, speed, and conditionality; then show empirically how \( S \) scales with systemic legibility, not need.
+- ** “Affluent socialism” vs “precarious capitalism”:**  
+  Treat tax expenditures, guarantees, and bailouts as one block; means‑tested transfers and UBI‑like proposals as another, and analyze incidence by income decile.
