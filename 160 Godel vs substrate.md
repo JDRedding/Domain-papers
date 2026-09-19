@@ -1,4 +1,8 @@
-## SYMBOLIC / EPISTEMIC LEVEL — **Gödel applies here**
+## SYMBOLIC / EPISTEMIC LEVEL**
+— **Gödel applies here
+→ 160  
+→ Logic / Foundations of Mathematics
+
 ```
 Type: formal system (axioms + inference rules)
 Variable: completeness / consistency
