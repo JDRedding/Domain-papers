@@ -1,4 +1,5 @@
 # Esoterica of the number 9
+→ 512 → Number Theory
 
 **Nine** is the last single-digit number, the square of three $3 \times 3$, and the point where a cycle of 1–9 closes before returning toward 10 (unity plus a new beginning). Esoteric traditions treat it as completion that is never static: an ending that already contains the seed of renewal, a container that has absorbed every preceding number, and a self-reproducing pattern that always returns to itself.
 
