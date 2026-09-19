@@ -34,6 +34,28 @@ Current DDC (modern schedules)
        Australasia, Pacific islands, Atlantic islands,
        Arctic islands, Antarctica.
 ```
+## ONE-PAGE MENTAL MODEL
+```
+State needed facts about itself
+        ->
+counts, tables, Statistik
+        ->
+probability attached to those counts
+        ->
+sample can stand for population if selection is designed
+        ->
+descriptive summaries of what you saw
+        +
+inferential statements about what you did not see,
+  with an explicit account of uncertainty
+        ->
+two big dialects of that uncertainty:
+  long-run frequency  (frequentist)
+  updated belief      (Bayesian)
+
+Library 310s keep the old "facts of the state by place" sense.
+Mathematics 519.5 keeps the inferential engine.
+```
 
 ```
 +--------------------------------------------------+
@@ -500,7 +522,6 @@ Book teaching "what is a mean" to social scientists   depends on emphasis;
 
 ## 11. MINI GLOSSARY OF PAIRS
 
-
 population     vs   sample
 parameter      vs   statistic
 descriptive    vs   inferential
@@ -512,26 +533,3 @@ data           vs   information
 census         vs   sample survey
 310 yearbooks  vs   519.5 theory
 
-
-## 12. ONE-PAGE MENTAL MODEL
-
-
-State needed facts about itself
-        ->
-counts, tables, Statistik
-        ->
-probability attached to those counts
-        ->
-sample can stand for population if selection is designed
-        ->
-descriptive summaries of what you saw
-        +
-inferential statements about what you did not see,
-  with an explicit account of uncertainty
-        ->
-two big dialects of that uncertainty:
-  long-run frequency  (frequentist)
-  updated belief      (Bayesian)
-
-Library 310s keep the old "facts of the state by place" sense.
-Mathematics 519.5 keeps the inferential engine.
