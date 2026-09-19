@@ -1,5 +1,7 @@
 # **Everything You Always Wanted to Know About Mathematics**  
 (*But Didn’t Even Know to Ask*)  
+- → 510 → Mathematics
+
 A Guided Journey Into Abstract Mathematics and the Writing of Proofs  
 Brendan W. Sullivan · CMU · 698 pages   
 <https://archive.org/details/everything-you-always-wanted-to-know-about-mathematics>
