@@ -132,6 +132,63 @@ Oceania grew from **12.58 million in 1950** to more than **47 million in 2026** 
 - **Permanent population:** **0**
 - **Seasonal researchers and staff:** about **4,000–5,000** (not counted in the total)
 
+Antarctica is a scientific workplace, not a residential society. Headcount follows the research calendar and Treaty cooperation.
+
+- The population is **seasonal, temporary, and research-driven**.
+- There is **no indigenous population**.
+- Winter ~**1,000–1,100**; summer ~**4,400**, plus ship crews.
+- Density is extremely low; activity is spread across dozens of stations (the draft cites **37**).
+
+Antarctica has **no indigenous population**. Almost everyone on the continent is a scientist or support worker. Numbers swing with the season: about **1,000–1,100 in winter** and about **4,400 in summer**.
+
+#### Seasonal Variation
+
+Ice and extreme cold keep the population small and temporary.
+
+| Period | Approximate personnel |
+| --- | ---: |
+| Winter | **~1,100** on land |
+| Summer (October–February) | **~4,400** on land |
+| Summer, research vessels | **~1,000** more in nearby waters |
+
+Counts include year-round stations and short-term field camps ([World Population Review](https://worldpopulationreview.com/continents/antarctica)).
+
+#### Residency and Demographics
+
+There are **no permanent indigenous inhabitants**. Stays are for science and logistics under the **Antarctic Treaty**, so the workforce is international.
+
+- **McMurdo Station (United States):** about **250** in winter and up to **1,000** in summer—the largest station.
+- Smaller bases can be tiny; **Troll (Norway)** may hold as few as **six** people.
+
+#### Country Presence (peak summer)
+
+Nations with at least **100** people on the ice in summer (source draft):
+
+| Country | Summer personnel |
+| --- | ---: |
+| United States | 1,293 |
+| Argentina | 667 |
+| Russia | 429 |
+| Chile | 359 |
+| United Kingdom | 217 |
+| Australia | 200 |
+| France | 125 |
+| Japan | 125 |
+| Italy | 102 |
+
+Others add smaller teams. Combined summer total in that compilation: about **4,490**.
+
+#### Area and Density
+
+- **Area:** about **14.2 million km²** (5th-largest continent).
+- **Density:** roughly **0.00007–0.0035 people/km²**.
+- Most of the land sits under ice more than **1 mile** thick, which limits where people can live.
+
+#### Births and Civilian Settlements
+
+- First person born on the Antarctic mainland: **Emilio Marcos Palma** (Argentina), **1978**, at **Base Esperanza**.
+- Small civilian communities tied to research include **Villa Las Estrellas** (Chile) and **Fortín Sargento Cabral** (Argentina).
+
 ## Total
 
 $$
