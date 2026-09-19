@@ -127,8 +127,8 @@
 | 388 | Transportation & ground transport |
 | 389 | Metrology & standardization |
 
-### **Society’s identity**
-**390 Customs, Etiquette & Folklore**
+### **390 Society’s identity**
+**Customs, Etiquette & Folklore**
 | Number | Heading |
 |--------|---------|
 | 390 | Customs, etiquette & folklore |
