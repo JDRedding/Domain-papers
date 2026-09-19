@@ -1,15 +1,15 @@
 STATISTICS - COMPLETE REFERENCE
 Plain-text pack: definitions, types, variables, fundamentals, history, usage, library class 310s
 
-==============================================================================
+
 CLASSIFICATION BLOCK
-==============================================================================
+
 
 This is Dewey Decimal Classification, class 300 Social sciences.
 310 is NOT the home of mathematical statistics.
 
 Current DDC (modern schedules)
-
+```
   310  Collections of general statistics
        World or multi-country statistical yearbooks and abstracts.
 
@@ -35,10 +35,29 @@ Current DDC (modern schedules)
   319  General statistics of other areas
        Australasia, Pacific islands, Atlantic islands,
        Arctic islands, Antarctica.
-
+```
+```
++--------------------------------------------------+
+|                   310 STATISTICS                 |
++--------------------------------------------------+
+| 310  Statistics                                   |
+| 311  [Unassigned]                                 |
+|                                                  |
+| 312  Population statistics                        |
+| 313  Population statistics                        |
+| 314  Population statistics                        |
+|                                                  |
+| 315  Population statistics (Asia)                 |
+| 316  Population statistics (Europe)               |
+| 317  Population statistics (North America)        |
+| 318  Population statistics (South America)        |
+| 319  Population statistics (Other areas)          |
++--------------------------------------------------+
+```
 Geographic order in current DDC 314-319
+```
   Europe, Asia, Africa, North America, South America, rest of world.
-
+```
 Place is refined with Table 2 (geographic areas), e.g.
   314.2   general statistics of England and Wales
   315.2   general statistics of China
@@ -49,13 +68,20 @@ What 310-319 is for
   yearbooks, census abstracts, general statistical handbooks.
 
 What 310-319 is NOT for
-  Mathematical statistics, probability, inference, sampling theory
+- [Mathematical statistics, probability, inference, sampling theory](https://github.com/JDRedding/Domain-papers/tree/main/500%E2%80%93599%20Science/510%20Mathematics/519%20Probability%20Logic%20Stochastic%20Systems)
+
       -> mainly 519.5 (and nearby 519)
-  Demography as social science
+
+- Demography as social science
+
       -> 304.6
-  Economic statistics as economics
+
+-  Economic statistics as economics
+
       -> 330s
-  Vital statistics as public health / medicine
+
+- Vital statistics as public health / medicine
+
       -> 614.1
 
 Why 311-313 are empty
@@ -81,9 +107,9 @@ Other schemes (contrast only)
     with topical splits (theory, processing, agencies, national
     statistics, population, vital statistics, applied statistics).
 
-==============================================================================
+
 0. TWO MEANINGS OF THE WORD
-==============================================================================
+
 
 A. THE FIELD  (usually singular verb)
    The mathematics/science of collecting, organizing, analyzing,
@@ -109,9 +135,9 @@ Quotations often attached to the word
   "He uses statistics like a drunken man uses lamp-posts —
    for support rather than illumination."
 
-==============================================================================
+
 1. ETYMOLOGY
-==============================================================================
+
 
 Latin        status          position; form of government; the state
 Old Italian  stato           state
@@ -128,9 +154,9 @@ Related historical names
   Staatswissenschaft     (German study of the state)
   Statistik              popularized mid-1700s (Achenwall, 1749 often cited)
 
-==============================================================================
+
 2. WHAT THE FIELD IS
-==============================================================================
+
 
 Statistics is a branch of applied mathematics grounded in
 probability theory (also using calculus and linear algebra).
@@ -153,9 +179,9 @@ Data types (basic split)
   Quantitative  how much / how many
   Qualitative   labels / names / categories
 
-==============================================================================
+
 3. TYPES (THE MAIN PARTITIONS)
-==============================================================================
+
 
 3.1 By job
 
@@ -208,9 +234,9 @@ Data types (basic split)
     Typical products: posterior distributions, credible intervals.
     Computation historically hard; MCMC made routine use practical.
 
-==============================================================================
+
 4. VARIABLES AND FUNDAMENTAL OBJECTS
-==============================================================================
+
 
 POPULATION
   The full set of units you want to know about.
@@ -271,9 +297,9 @@ CROSS SECTION
 GRAB SAMPLE
   A single sample taken at a specific time or over a short period.
 
-==============================================================================
+
 5. CORE DESCRIPTIVE MEASURES
-==============================================================================
+
 
 Center
   MEAN / ARITHMETIC MEAN / EXPECTED VALUE / FIRST MOMENT
@@ -325,9 +351,9 @@ Other named objects
     A statistic characterizing human populations or segments
     (age, sex, income, etc.).
 
-==============================================================================
+
 6. CORE INFERENTIAL FUNDAMENTALS
-==============================================================================
+
 
 SAMPLING
   Selecting a suitable sample for study.
@@ -373,9 +399,9 @@ STATISTIC vs PARAMETER  (repeat because it is the key pair)
   statistic  = computed from the sample
   parameter  = property of the population
 
-==============================================================================
+
 7. NAMED METHODS AND TOPIC LABELS FROM THE DICTIONARY/THESAURUS LAYER
-==============================================================================
+
 
 statistical method / statistical procedure
   A method of analyzing or representing statistical data;
@@ -391,9 +417,9 @@ distribution-free / nonparametric statistic
   Computed without needing the form or parameters of the parent
   distribution.
 
-==============================================================================
+
 8. HISTORY COMPRESSED
-==============================================================================
+
 
 Ancient / medieval precursors
   Counting bricks to estimate wall height (anecdotal early inference).
@@ -433,9 +459,9 @@ Note
   Undergraduate teaching is still often frequentist-first.
   Bayesian methods are widely used in research and ML.
 
-==============================================================================
+
 9. USAGE NOTES THAT KEEP COMING UP
-==============================================================================
+
 
 Do not write "statistic techniques."
 Write "statistical techniques."
@@ -452,9 +478,9 @@ Vital statistics = births, deaths, marriages, etc.
   As a library subject they may leave 310 and sit with demography
   or public health, depending on emphasis.
 
-==============================================================================
+
 10. WHERE THE MATH LIVES IF YOU ARE SHELVING IDEAS, NOT YEARBOOKS
-==============================================================================
+
 
 Theory of probability and mathematical statistics     519 / 519.5
 Sampling theory                                       under mathematical
@@ -466,9 +492,9 @@ Book teaching "what is a mean" to social scientists   depends on emphasis;
                                                       often 519.5 or 300.72
                                                       or a disciplinary number
 
-==============================================================================
+
 11. MINI GLOSSARY OF PAIRS
-==============================================================================
+
 
 population     vs   sample
 parameter      vs   statistic
@@ -481,9 +507,9 @@ data           vs   information
 census         vs   sample survey
 310 yearbooks  vs   519.5 theory
 
-==============================================================================
+
 12. ONE-PAGE MENTAL MODEL
-==============================================================================
+
 
 State needed facts about itself
         ->
@@ -504,7 +530,3 @@ two big dialects of that uncertainty:
 
 Library 310s keep the old "facts of the state by place" sense.
 Mathematics 519.5 keeps the inferential engine.
-
-==============================================================================
-END OF PACK
-==============================================================================
