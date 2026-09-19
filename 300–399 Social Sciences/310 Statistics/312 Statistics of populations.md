@@ -1,6 +1,8 @@
 # Statistics of populations
 
-**Population demographic statistics** are not a loose collection of indicators. They are the observable outputs of a closed dynamical system in which three operators—fertility, mortality, and migration—act on a structured population state vector over time.
+**Population demographic statistics** are not a loose collection of indicators. Population statistics are the **observables** of a closed evolution operator acting on a structured population state. Every statistic — from crude birth rate to life expectancy — is a projection, normalization, or integral of the three transition operators $F, M, G$ acting on $P_t$.
+
+They are the observable outputs of a closed dynamical system in which three operators—fertility, mortality, and migration—act on a structured population state vector over time.
 
 Every common statistic is one of three things:
 - a **state descriptor** (stock: what the population is at a moment),
@@ -15,7 +17,7 @@ $$
 
 This is the evolution operator. All other measures are projections, normalizations, or integrals of it.
 
-### 1. The population state vector
+### 🧩 Structural map of the demographic system
 At time $t$ the population is a structured vector
 
 $$
@@ -33,7 +35,7 @@ State descriptors derived from it include:
 
 These describe composition, not change.
 
-### 2. The three transition operators
+### The three transition operators
 
 **Fertility operator $F$**  
 Maps women of reproductive age to births:
@@ -62,40 +64,125 @@ $$
 
 Associated statistics: net migration rate, in- and out-migration. This operator is usually the least precisely measured.
 
-### 3. Derived dynamics
-From the operators come flow descriptors:
-- natural increase ($B - D$)
-- population growth rate
-- age-standardized rates
+## 📈 Derived dynamics
 
-These describe change rather than composition.
+These are functionals of the operators:
 
-### 4. Why crude rates mislead
+- **natural increase** = $B - D$  
+- **population growth rate**  
+- **age‑standardized rates**  
+
+These describe **change**, not composition.
+
+## 🎯 Why crude rates mislead
+
 Crude birth and death rates project the operators onto the unweighted total population and are therefore distorted by age structure. A young population produces a high crude birth rate even at moderate fertility; an old population produces a high crude death rate even with long life expectancy.
+
+Crude rates are projections of $F$ and $M$ onto the **unweighted total population**, so they inherit distortions from age structure.
+
+A young population → inflated CBR.  
+An old population → inflated CDR.
+
+Thus demographers prefer:
+- TFR (structure‑free fertility)  
+- Life expectancy (structure‑free mortality)  
+- Age‑standardized rates (structure‑controlled comparisons)
 
 Demographers therefore prefer structure-free or structure-controlled measures: TFR, life expectancy, and age-standardized rates.
 
-### 5. Current global picture (mid-2026)
+## 🌍 Current global picture (mid‑2026)
 Consistent with UN World Population Prospects 2024 (medium variant) and national statistical offices:
 
-- World population: ~8.30 billion
-- Annual growth rate: ~0.83–0.84%
-- Median age: ~32 years
-- Total fertility rate: ~2.23
-- United States: ~349 million, median age ~39, TFR ~1.6
-- High old-age dependency: Japan, Italy
-- High young-age dependency: Niger, Uganda
+- World population: **~8.30B**  
+- Growth rate: **~0.83–0.84%**  
+- Median age: **~32**  
+- TFR: **~2.23**  
+- U.S.: **~349M**, median age **~39**, TFR **~1.6**  
+- High old‑age dependency: Japan, Italy  
+- High young‑age dependency: Niger, Uganda  
 
-These figures are the current state and flow outputs of the operators above.
+These are the **current outputs** of the operator system.
 
-### 6. Measurement pipeline
-- Censuses supply stock counts.
-- Vital registration supplies births and deaths.
-- Surveys supply fertility histories and migration data.
-- Population registers supply continuous updates where they exist.
-- UN WPP and national projections simulate the operator system forward.
+## 🗂 Measurement pipeline
 
-### 7. Why the age-sex pyramid is so informative
+- Censuses → stock counts  
+- Vital registration → births & deaths  
+- Surveys → fertility histories & migration  
+- Population registers → continuous updates  
+- UN WPP & national projections → forward simulation of $F, M, G$
+
+### Why the age-sex pyramid is so informative
 The pyramid is the state vector projected onto age and sex. Its shape encodes past fertility, mortality, and migration, and therefore future dependency, labor supply, and aging.
 
+It is the projection of the state vector onto age and sex.  
+Its shape encodes:
+- past fertility  
+- past mortality  
+- past migration  
+- future dependency  
+- future labor supply  
+- future aging trajectory  
+
+It is the single most information‑dense static visualization in demography.
+
 The same architecture that produces the headline numbers also produces every other standard demographic statistic.
+
+## Future work
+
+- **Build a full operator chain for demographic forecasting**  
+- **Construct an ASCII population pyramid**  
+- **Map every standard statistic to its operator origin**  
+
+## APPENDIX: 🧱 Population state vector  
+
+$$
+P_t = \{N_{a,s,r,\ldots}\}
+$$
+
+This is the **state space**. All stock statistics are projections of this vector:
+
+- **median age** — quantile functional of $P_t$  
+- **sex ratio** — ratio functional  
+- **dependency ratios** — partition functional  
+- **population density** — spatial normalization  
+- **urban share** — categorical partition  
+
+These are **state descriptors**: they describe composition, not change.
+
+## APPENDIX: Transition operators
+
+### **Fertility operator $F$**  
+
+$$
+B = \sum_a ASFR(a)\cdot N_{a,f}
+$$
+
+Associated statistics:
+- **crude birth rate**  
+- **age‑specific fertility rates**  
+- **total fertility rate** — integral of $F$  
+- **sex ratio at birth**  
+
+### **Mortality operator $M$** 
+
+$$
+D = \sum_a m(a)\cdot N_a
+$$
+
+Associated statistics:
+- **crude death rate**  
+- **infant mortality rate**  
+- **age‑specific death rates**  
+- **life expectancy** — integral of survival function from $M$
+
+### **Migration operator $G$**  
+
+$$
+\Delta_{\text{mig}} = I - E
+$$
+
+Associated statistics:
+- **net migration rate**  
+- **in‑migration and out‑migration**  
+
+Migration is the least precisely measured because it lacks universal registration.
