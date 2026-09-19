@@ -1,4 +1,5 @@
 # Franz Brasser’s 9×9 Lunar Magic Square
+→ 512 → Algebra / Recreational Math
 
 Brasser’s 1552 9×9 magic square uses the numbers 1–81. Every row, column, and diagonal sums to 369. It shows how mathematical order arises from balanced relationships among distinct values rather than from uniformity.
 
