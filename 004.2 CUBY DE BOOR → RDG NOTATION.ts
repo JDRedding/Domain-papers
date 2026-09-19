@@ -1,6 +1,8 @@
 // =======================================================
 // CUBY DE BOOR → RDG NOTATION (.rdg)
 // 4-lane spline core as relational dynamic geometry
+// → 004.2  
+// → Programming Languages / Computational Geometry
 // =======================================================
 // Not RDG itself — it is a submodule
 
