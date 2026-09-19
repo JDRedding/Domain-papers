@@ -1,4 +1,7 @@
 // Not RDG itself — a submodule
+// → 004.2  
+// → Programming Languages / Quantum Simulation Code
+
 
 // Dragon-64 anyons as RDG points
 type AnyonPoint = {
