@@ -163,146 +163,148 @@ Statistics is a branch of applied mathematics grounded in
 probability theory (also using calculus and linear algebra).
 
 Purpose
-  Turn raw observations into usable information.
-  Describe a dataset.
-  Infer from a sample to a population.
-  Quantify uncertainty.
-  Test claims.
-  Support decisions in science, industry, government, medicine,
-  business, law, and social policy.
+-  Turn raw observations into usable information.
+-  Describe a dataset.
+-  Infer from a sample to a population.
+-  Quantify uncertainty.
+-  Test claims.
+-  Support decisions in science, industry, government, medicine,
+-  business, law, and social policy.
 
-Britannica-style core
-  The science of collecting, analyzing, presenting, and interpreting data.
-  Early push: census and economic facts for the state.
-  Modern push: large applied datasets that must become information.
+Core
+-  The science of collecting, analyzing, presenting, and interpreting data.
+-  Early push: census and economic facts for the state.
+-  Modern push: large applied datasets that must become information.
 
 Data types (basic split)
-  Quantitative  how much / how many
-  Qualitative   labels / names / categories
+-  Quantitative  how much / how many
+-  Qualitative   labels / names / categories
 
 
 ## 3. TYPES (THE MAIN PARTITIONS)
 
-
 ### 3.1 By job
 
   DESCRIPTIVE STATISTICS
+  ```
     Summarize what is already in the data.
     Tools: tables, graphs, mean, median, mode, range,
            variance, standard deviation, percentiles,
            frequency counts, distribution shape.
     Output: exact summaries of the observed set.
     Does not generalize beyond the data in hand.
-
+```
   INFERENTIAL STATISTICS
+```
     Use a sample to say something about a population.
     Tools: probability models, sampling distributions,
            confidence intervals, hypothesis tests, regression.
     Output: estimates + uncertainty, not a claim of certainty.
     Question: what can this sample tell us beyond itself?
-
+```
   PREDICTIVE STATISTICS  (applied extension)
+```
     Use historical data, models, and often machine learning
     to estimate likelihood of future outcomes.
-
+```
 ### 3.2 By assumption about the distribution
 
   PARAMETRIC
-    Procedures that assume a named family of distributions
+  -  Procedures that assume a named family of distributions
     (e.g. normal) and estimate its parameters.
 
   NONPARAMETRIC / DISTRIBUTION-FREE
-    Procedures that do not require a specific distributional form.
+  -  Procedures that do not require a specific distributional form.
 
 ### 3.3 By number of variables analyzed
 
-  UNIVARIATE      one variable
-  BIVARIATE       two variables
-  MULTIVARIATE    more than two variables
+-  UNIVARIATE      one variable
+-  BIVARIATE       two variables
+-  MULTIVARIATE    more than two variables
 
 ### 3.4 By probability interpretation (inference schools)
 
   FREQUENTIST
+  ```
     Probability = long-run relative frequency.
     Parameters treated as fixed unknowns.
     Sample-to-sample variation is the source of uncertainty.
     Typical products: p-values, confidence intervals, Neyman-Pearson tests.
-
+```
   BAYESIAN
+  ```
     Probability = degree of belief, updated with data.
     Parameters treated as random given a prior.
     Bayes theorem updates prior to posterior.
     Typical products: posterior distributions, credible intervals.
     Computation historically hard; MCMC made routine use practical.
-
+```
 
 ## 4. VARIABLES AND FUNDAMENTAL OBJECTS
 
-
 POPULATION
-  The full set of units you want to know about.
+-  The full set of units you want to know about.
 
 SAMPLE
-  A subset actually observed.
-  Random sample: selection mechanism gives known probabilities.
-  Representative / designed sample can describe a population.
-  Large but biased data can still mislead.
+-  A subset actually observed.
+-  Random sample: selection mechanism gives known probabilities.
+-  Representative / designed sample can describe a population.
+-  Large but biased data can still mislead.
 
 PARAMETER
-  A number that describes a population.
-  Usually unknown.
-  Examples: population mean mu, population variance sigma^2,
+-  A number that describes a population.
+-  Usually unknown.
+-  Examples: population mean mu, population variance sigma^2,
             population proportion p.
 
 STATISTIC
-  A number computed from sample data.
-  Used to estimate a parameter or to test a claim.
-  Examples: sample mean x-bar, sample variance s^2,
+-  A number computed from sample data.
+-  Used to estimate a parameter or to test a claim.
+-  Examples: sample mean x-bar, sample variance s^2,
             sample proportion p-hat.
 
 ESTIMATOR
-  The rule/formula that produces a statistic intended as
-  an estimate of a parameter.
+-  The rule/formula that produces a statistic intended as
+-  an estimate of a parameter.
 
 ESTIMATE
-  The numerical value the estimator takes on this sample.
+-  The numerical value the estimator takes on this sample.
 
 INDEPENDENT VARIABLE / EXPERIMENTAL VARIABLE
-  Predictor; values not determined by the other modeled variables.
+-  Predictor; values not determined by the other modeled variables.
 
 DEPENDENT VARIABLE
-  Response; value depends on the independent variable(s).
+-  Response; value depends on the independent variable(s).
   If y = f(x), y is dependent.
 
 PREDICTOR VARIABLE
-  A variable used to predict another (as in regression).
+-  A variable used to predict another (as in regression).
 
 RANDOM VARIABLE
-  A numerical summary of an outcome of a random process.
+-  A numerical summary of an outcome of a random process.
 
 OBSERVATION / DATUM
-  One recorded value.
-  Data = the collection.
+-  One recorded value.
+-  Data = the collection.
 
 OUTLIER
-  An extreme deviation from the bulk of the data / from the mean.
+-  An extreme deviation from the bulk of the data / from the mean.
 
 DEGREE OF FREEDOM
-  Count of unrestricted pieces of information in a statistic
+-  Count of unrestricted pieces of information in a statistic
   or in a fitted model.
 
 CROSS SECTION
-  A sample meant to represent a whole population at a time
+-  A sample meant to represent a whole population at a time
   (also used for data on many units at one time).
 
 GRAB SAMPLE
-  A single sample taken at a specific time or over a short period.
-
+-  A single sample taken at a specific time or over a short period.
 
 ## 5. CORE DESCRIPTIVE MEASURES
 
-
 Center
+```
   MEAN / ARITHMETIC MEAN / EXPECTED VALUE / FIRST MOMENT
     Sum of values divided by n.
   MEDIAN
@@ -313,8 +315,9 @@ Center
     n-th root of the product of n numbers.
   HARMONIC MEAN
     Reciprocal of the arithmetic mean of the reciprocals.
-
+```
 Spread
+```
   DEVIATION
     Observed value minus a reference (often the mean).
   MEAN DEVIATION
@@ -328,22 +331,25 @@ Spread
   COVARIANCE
     Mean of the product of deviations of two variables
     from their own means.
-
+```
 Position in an ordered list
+```
   PERCENTILE / CENTILE
     99 points that split ordered scores into 100 equal-count parts.
   DECILE
     9 points that split into 10 equal-count parts.
   QUARTILE
     3 points that split into 4 equal-count parts.
-
+```
 Moments
+```
   The n-th moment is the expected value of the n-th power
   of deviations from a fixed point.
   Second moment about the origin = expected square of the variable.
   Variance = second moment about the mean.
-
+```
 Other named objects
+```
   DISTRIBUTION / STATISTICAL DISTRIBUTION
     Arrangement of values showing observed or theoretical frequencies.
   AVERAGE / NORM
@@ -351,10 +357,8 @@ Other named objects
   DEMOGRAPHIC
     A statistic characterizing human populations or segments
     (age, sex, income, etc.).
-
-
+```
 ## 6. CORE INFERENTIAL FUNDAMENTALS
-
 
 SAMPLING
   Selecting a suitable sample for study.
