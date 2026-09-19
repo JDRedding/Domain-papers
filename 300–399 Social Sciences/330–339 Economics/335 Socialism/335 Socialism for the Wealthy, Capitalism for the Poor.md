@@ -91,8 +91,9 @@ Let:
 - **Shock:** $\omega \in \Omega$ (crisis, recession, firm failure, household income loss).  
 - **State Response:** $R(i,\omega)$ = interventions (cash, guarantees, regulatory forbearance, tax relief)
 
-- Capital sits in the **high‑S(i)** region: high rescue probability, fast intervention, deep coverage, low conditionality.  
-- Labor sits in the **low‑S(i)** region: low rescue probability, slow intervention, shallow coverage, high conditionality.
+Capital sits in the **high‑S(i)** region: high rescue probability, fast intervention, deep coverage, low conditionality.  
+
+Labor sits in the **low‑S(i)** region: low rescue probability, slow intervention, shallow coverage, high conditionality.
 
 The Soviet tier is **state‑insured accumulation**.  
 The night‑watchman tier is **market‑disciplined reproduction**.
