@@ -176,9 +176,7 @@ Affective polarization:
 
 The result is an inverted insurance ladder—robust at the top, fragmented and moralized at the bottom.
 
----
-
-## **Synthesis**
+### **Synthesis**
 
 > The key issue is not net budgetary loss, but **option value and access**: who can credibly expect rapid, large‑scale intervention when their balance sheet implodes.
 
