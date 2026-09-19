@@ -1,9 +1,7 @@
-STATISTICS - COMPLETE REFERENCE
+# STATISTICS - COMPLETE REFERENCE
 Plain-text pack: definitions, types, variables, fundamentals, history, usage, library class 310s
 
-
-CLASSIFICATION BLOCK
-
+## CLASSIFICATION BLOCK
 
 This is Dewey Decimal Classification, class 300 Social sciences.
 310 is NOT the home of mathematical statistics.
@@ -78,18 +76,19 @@ What 310-319 is NOT for
 
 -  Economic statistics as economics
 
-      -> 330s
+       -> 330s
 
 - Vital statistics as public health / medicine
 
       -> 614.1
 
 Why 311-313 are empty
-  Older DDC put method in 311 and population in 312.
-  Those subjects moved. 310 stayed a compact "general statistics
-  by area" class. Printed schedules from different editions disagree.
+- Older DDC put method in 311 and population in 312.
+- Those subjects moved. 310 stayed a compact "general statistics
+- by area" class. Printed schedules from different editions disagree.
 
 Older-edition flavor (seen in some historical DDC texts)
+```
   310  Statistical method and statistics
   311  Statistical method
   312  Statistics of populations
@@ -99,11 +98,11 @@ Older-edition flavor (seen in some historical DDC texts)
   317  North America
   318  South America
   319  Rest of the world
-
+```
 Other schemes (contrast only)
-  Nippon Decimal Classification: statistics around 350,
+- Nippon Decimal Classification: statistics around 350,
     then Japan / Asia / Europe / Africa / N. America / S. America / Oceania.
-  Chinese Library Classification family: statistics around 510,
+- Chinese Library Classification family: statistics around 510,
     with topical splits (theory, processing, agencies, national
     statistics, population, vital statistics, applied statistics).
 
