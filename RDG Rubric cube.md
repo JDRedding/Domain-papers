@@ -31,23 +31,14 @@ $$
 Flattening bijection and inverse:
 
 $$
-\begin{align*}
-{id}&:F\times L\to V,\\
-{id}(f,r,c)&=fn^{2}+rn+c,\\
-{id}^{-1}(i)
-&=\Bigl(
-\bigl\lfloor i/n^{2}\bigr\rfloor,\;
-\bigl\lfloor(i\bmod n^{2})/n\bigr\rfloor,\;
-i\bmod n
-\Bigr).
+\begin{align*} {id}&:F\times L\to V,\\ {id}(f,r,c)&=fn^{2}+rn+c,\\ {id}^{-1}(i) &=( \bigl\lfloor i/n^{2}\bigr\rfloor,\; \bigl\lfloor(i\bmod n^{2})/n\bigr\rfloor,\; i\bmod n ).
 \end{align*}
 $$
 
 A **ring index** on a face is the Chebyshev distance from the face centre:
 
 $$
-k(r,c)=\max\bigl(|r-c_\star|,\,|c-c_\star|\bigr),\qquad
-K=\max_{r,c}k(r,c).
+k(r,c)=\max\bigl(|r-c_\star|,\,|c-c_\star|\bigr),\qquad K=\max_{r,c}k(r,c).
 $$
 
 For odd $n$, $K=(n-1)/2$ and there is a unique cell with $k=0$. For even $n$, $K=n/2$ (or $(n-1)/2$ before integer rounding) and the innermost cells form a $2\times 2$.
