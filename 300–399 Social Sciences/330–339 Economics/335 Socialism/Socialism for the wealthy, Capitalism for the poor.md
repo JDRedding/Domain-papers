@@ -1,216 +1,232 @@
-# Socialism for the wealthy, Capitalism for the poor
+# **Socialism for the Wealthy, Capitalism for the Poor**
 
-In many advanced capitalist systems, the structural framework channels public resources to protect elites while exposing the poor to unmediated market forces — effectively making the state a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes.
+In many advanced capitalist systems, public resources are routinely mobilized to protect elites while the poor are exposed to unmediated market forces. The state becomes a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes.
 
-“Socialism for the wealthy, capitalism for the poor” is really:  
-> **State-backed put options for capital; hard‑mode exposure for precarious labor.**
+“Socialism for the wealthy, capitalism for the poor” is fundamentally:
 
-## Analytical Perspective
-This concept brings together economics, political science, and social justice analysis:
-Economic Inequality: Concentration of wealth amplifies power, perpetuating policies that favor the rich.
-Political Economy: Policies intended for general welfare are disproportionately captured by elites.
-Democratic Implications: Political systems can operate as de facto plutocracies, limiting meaningful participation by the majority.
+> **State‑backed put options for capital; hard‑mode exposure for precarious labor.**
 
-> Economic inequality, elite policy capture, and constrained democracy are all downstream of an asymmetric state‑insurance structure — where capital is insured ex ante and labor is exposed ex post.
+---
 
-## Core 
-The phrase “socialism for the rich and capitalism for the poor” is a political-economic critique describing systemic inequalities in advanced capitalist societies. It highlights that the wealthy benefit disproportionately from state intervention: Through bailouts, subsidies, tax breaks, and privileged access to finance. The poor are exposed to the full rigor of capitalism with minimal government protection; Experience austerity, restricted social services, higher relative taxes, and economic insecurity.
+## **Analytical Perspective**
 
-The slogan is useful as a critique of contemporary **American form of Socialism** and **cronyism and asymmetric insurance**, as ultimately a description of the U.S. fiscal state. The U.S. runs social-insurance programs (Social Security, Medicare, Medicaid, EITC) but is favored to the upper brackets. The question is not if government ever socializes risk, but **whose risk, on what terms, and with what repayment or conditions**. Bailouts overwhelmingly target large institutions whose failure could destabilize the broader economy, not individuals. This asymmetry is what the critique: risk is socialized at the top, privatized at the bottom. 
+This concept integrates economics, political science, and social‑justice analysis:
 
-From this different mode from market-disciplined labor, a second-order rule of the fiscal state develops: who is allowed to fail.
+- **Economic Inequality:** Concentrated wealth amplifies political and institutional power, perpetuating policies that favor the rich.  
+- **Political Economy:** Programs intended for broad welfare are disproportionately captured by elites.  
+- **Democratic Implications:** Political systems can function as de facto plutocracies, limiting meaningful participation by the majority.
 
-### **Modes‑of‑Production**
+> Economic inequality, elite policy capture, and constrained democracy are all downstream of an asymmetric state‑insurance structure—where capital is insured ex ante and labor is exposed ex post.
+
+---
+
+## **Core Argument**
+
+The phrase “socialism for the rich and capitalism for the poor” describes a political‑economic regime in which the wealthy benefit disproportionately from state intervention—bailouts, subsidies, tax breaks, and privileged access to finance—while the poor face the full rigor of market discipline with minimal protection. They experience austerity, restricted social services, higher relative taxes, and chronic economic insecurity.
+
+This slogan critiques the contemporary **American form of socialism**, characterized by cronyism and asymmetric insurance. The U.S. fiscal state operates extensive social‑insurance programs (Social Security, Medicare, Medicaid, EITC), yet their structure and incidence favor upper brackets. The central question is not whether government socializes risk, but **whose risk, under what terms, and with what conditions or repayment**. Bailouts overwhelmingly target large institutions whose failure threatens systemic stability, not individuals. Risk is socialized at the top and privatized at the bottom.
+
+From this divergence between capital and labor, a second‑order rule of the fiscal state emerges: **who is allowed to fail.**
+
+---
+
+## **Modes of Production**
+
+### **Dual‑Tier Mode of Production**
 
 **The contemporary U.S. mode of production is best understood as a dual‑tier system in which capital operates under a regime of *state‑insured accumulation*, while labor is relegated to *market‑disciplined reproduction*.**
 
-#### **Fiscal‑State Mode of Production**
+### **Fiscal‑State Mode of Production**
+
 > **The U.S. mode of production is a fiscal‑state regime where capital accumulation depends on public balance‑sheet support, while labor reproduction is disciplined through market exposure and conditional welfare.**
 
-#### **Asymmetric‑Insurance Mode of Production**
+### **Asymmetric‑Insurance Mode of Production**
+
 > **The U.S. mode of production is organized around asymmetric insurance: capital enjoys automatic, low‑friction state protection, while labor faces fragmented, high‑conditionality survival mechanisms.**
 
-In this configuration, the state functions as a **centralized risk‑absorber for capital**—providing liquidity, guarantees, tax expenditures, and crisis bailouts—while simultaneously enforcing a **high‑friction, conditional, and punitive welfare structure** for households. The result is a production regime where **downside risk is socialized for firms but individualized for workers**, embedding “socialism for the wealthy, capitalism for the poor” directly into the material organization of the economy. This is the exact problem as the taxonomy. The contemporary U.S. has two modes of production. It is an economy whose constitution allocates failure unequally. Capital accumulates under a routine of public support plus near unconditional welfare. Labor is reproduced under market exposure plus conditional welfare. The net is a put for capital and a test for households.
+In this configuration, the state functions as a **centralized risk absorber for capital**—providing liquidity, guarantees, tax expenditures, and crisis bailouts—while enforcing a **high‑friction, conditional, and punitive welfare structure** for households. Downside risk is socialized for firms but individualized for workers, embedding “socialism for the wealthy, capitalism for the poor” directly into the material organization of the economy.
 
-State-insured accumulation: Liquidity facilities, guarantees, tax expenditures, and crisis recapitalization are exceptions quickly bolted onto a "private" market. 
+The contemporary U.S. thus contains **two modes of production**: a socialist mode stacked atop a capitalist one. Its constitutional structure allocates failure unequally. Capital accumulates under public support and near‑unconditional welfare; labor is reproduced under market exposure and conditional welfare. The net result is a **put for capital and a test for households**.
 
-Market-disciplined reproduction: Households face income, rent, and job loss with slow, means-tested, stigmatized claims. When household collapse is recoded as a macro event, the state can move slowly. 
+- **State‑insured accumulation:** Liquidity facilities, guarantees, tax expenditures, and crisis recapitalization are exceptions rapidly bolted onto a nominally private market.  
+- **Market‑disciplined reproduction:** Households face income, rent, and job loss with slow, means‑tested, stigmatized claims. Household collapse becomes a macro event only belatedly, and the state moves slowly.
 
-The slogan names that allocation of downside: socialized for firms distress, individualized for workers. That is a regime of asymmetric insurance inside capitalism, a socialist mode stacked on a capitalist one. The politics diversion is treating them as incidental. The analytic true form is treating the two tiers as two modes.
+The slogan names this allocation of downside: socialized distress for firms, individualized distress for workers. Politics treats these tiers as incidental; analysis reveals them as structural.
 
-## **Historical bailouts**
+---
 
-Historical pattern: the U.S. has deployed massive state intervention to stabilize large firms and financial institutions, while debates over direct support for individuals—such as universal basic income—remain politically polarized. Below is a structured, evidence‑based analysis of the three areas you asked about.
+## **Historical Bailouts**
 
-> The phrase “socialism for the rich and capitalism for the poor” describes a fiscal regime in which **capital enjoys systematic, state‑backed downside protection** (bailouts, subsidies, tax preferences, guarantees), while **precarious households face largely unbuffered market risk**, mediated only by conditional and stigmatized programs.
+The U.S. has repeatedly deployed large‑scale state intervention to stabilize major firms and financial institutions, while direct support for individuals—such as universal basic income—remains politically contested.
 
-Intervention is not new. In 1792 Alexander Hamilton authorized federal purchases to halt a securities-market collapse—the first major federal market rescue. Later episodes include Depression-era mortgage refinancing and public works, the 1980s savings-and-loan cleanup, $1.5 billion in 1980 Chrysler loan guarantees, post-9/11 airline aid, and TARP after 2008.
+> The phrase “socialism for the rich and capitalism for the poor” describes a fiscal regime in which **capital enjoys systematic, state‑backed downside protection**, while **precarious households face largely unbuffered market risk**, mediated only by conditional and stigmatized programs.
 
-### TARP 
-Most often cited as “socialism for banks.” Congress authorized up to $700 billion. About $443.5 billion was actually disbursed. After repayments, dividends, interest, and asset sales, GAO and CBO put the lifetime net cost at about $31 billion. Bank capital programs as a group produced a net gain; the losses were concentrated in housing-grant programs and the auto rescue (about $12 billion net on GM/Chrysler). That accounting does not erase the political fact that large institutions received emergency capital and implicit guarantees unavailable to ordinary households facing foreclosure. It does mean the cartoon of a trillion-dollar gift that never came back is inaccurate.
+Intervention is not new. In 1792, Alexander Hamilton authorized federal purchases to halt a securities‑market collapse—the first major federal rescue. Subsequent episodes include Depression‑era mortgage refinancing and public works, the 1980s savings‑and‑loan cleanup, $1.5 billion in Chrysler loan guarantees (1980), post‑9/11 airline aid, and TARP after 2008.
 
-### COVID-era spending
-Official USAspending tallies show roughly $4.6–$4.7 trillion in outlays; broader counts that include more programs reach about $5.2 trillion. This was not only a corporate bailout. Stimulus checks, extra unemployment insurance, child-tax-credit expansion, PPP (mostly small firms), state and local aid, and health spending all absorbed large shares. The structural point remains: when systemic risk is framed as imminent collapse, Congress moves fast and at scale. When the question is a permanent cash floor for individuals, the process is slower and more moralized.
+### **TARP**
 
-## **UBI and guaranteed-income evidence**
+Often cited as “socialism for banks.” Congress authorized up to $700 billion; about $443.5 billion was disbursed. After repayments, dividends, interest, and asset sales, GAO and CBO estimate a lifetime net cost of about $31 billion. Bank capital programs produced a net gain; losses were concentrated in housing‑grant programs and the auto rescue (about $12 billion net for GM/Chrysler).
 
-The idea is old in American thought—Paine and Spence in the 1790s, Friedman’s negative income tax, King’s interest in a guaranteed income, Nixon’s failed Family Assistance Plan, and Alaska’s Permanent Fund Dividend since 1982. Pilots generally do **not** show a collapse into idleness. They also do not prove that a nationwide, permanent UBI would be fiscally or politically straightforward. Scale, funding source, interaction with existing welfare rules, and inflation/labor-supply effects remain open.
+This accounting does not erase the political reality: large institutions received emergency capital and implicit guarantees unavailable to households facing foreclosure. It does correct the cartoon of a trillion‑dollar gift that never returned.
 
-Evidence from pilots:
+### **COVID‑Era Spending**
 
-- **Alaska PFD**: long-running, universal, oil-funded. Best studies find no large drop in overall employment, a modest rise in part-time work, and measurable poverty reduction.
-- **Finland (2017–18)**: €560/month to 2,000 unemployed people. Wellbeing and trust improved; employment effects were small.
-- **Stockton SEED ($500/month, 2019–21)**: lower income volatility and better mental health. Early communications highlighted a jump in full-time work from 28% to 40%; the later peer-reviewed analysis is more cautious—employment trended up but was not a robust statistically significant result across the full pandemic period.
+USAspending tallies show roughly $4.6–$4.7 trillion in outlays; broader counts reach about $5.2 trillion. This was not solely a corporate bailout. Stimulus checks, expanded unemployment insurance, child‑tax‑credit expansion, PPP loans, state and local aid, and health spending absorbed large shares.
 
-## **Polarization**
-- why the two policies feel different
+The structural point remains: when systemic risk is framed as imminent collapse, Congress acts rapidly and at scale. When the proposal is a permanent cash floor for individuals, the process becomes slower and moralized.
 
-Wealth and political access can tilt policy toward bailouts, implicit guarantees, subsidies, and tax preferences that concentrate at the top. When a large bank or automaker fails, the case is framed as systemic. When the proposal is a standing cash floor for individuals, the debate turns to work, desert, and moral hazard.
+---
 
-Polarization shapes how Americans interpret bailouts, welfare, and UBI. Research shows polarization is less ideological and more emotional/identity‑based.  
+## **UBI and Guaranteed‑Income Evidence**
 
-> **Affective polarization** — dislike of the other party more than disagreement over a specific tax rate—has risen since the 1990s. Corporate rescues in a crisis can still pass because they are sold as preventing a depression that would hit everyone. Direct, unconditional cash to people triggers arguments about deservingness, work, and moral hazard. That is why TARP and CARES could move in weeks, while UBI remains a pilot-and-debate topic.
+The idea has deep roots in American thought—Paine and Spence (1790s), Friedman’s negative income tax, King’s advocacy for guaranteed income, Nixon’s Family Assistance Plan, and Alaska’s Permanent Fund Dividend (since 1982). Pilots generally show **no collapse into idleness**, though they do not resolve the fiscal or political challenges of nationwide implementation.
 
-Public opinion is less polarized than elites, but voters’ misperceptions of the other party amplify hostility.
+### Evidence
 
-Polarization does not reliably predict support for antidemocratic behavior, but political leaders can weaponize emotional polarization to mobilize aggressive individuals.
+- **Alaska PFD:** Universal, oil‑funded. Studies show no large drop in employment, a modest rise in part‑time work, and measurable poverty reduction.  
+- **Finland (2017–18):** €560/month to 2,000 unemployed people. Wellbeing and trust improved; employment effects were small.  
+- **Stockton SEED (2019–21):** $500/month. Lower income volatility and improved mental health. Early communications highlighted a jump in full‑time work (28% → 40%); peer‑reviewed analysis is more cautious—employment trended upward but was not robustly significant across the pandemic period.
 
-Moderates with low political engagement are paradoxically more willing to endorse political violence than highly polarized partisans.
+---
 
-Structural incentives (primaries, media ecosystems) encourage politicians to maintain polarization.
+## **Polarization: Why Bailouts Pass and UBI Stalls**
 
-Affective polarization then does two things:
+Wealth and political access tilt policy toward bailouts, implicit guarantees, subsidies, and tax preferences concentrated at the top. When a bank or automaker fails, the case is framed as systemic. When the proposal is a standing cash floor for individuals, the debate shifts to work, desert, and moral hazard.
 
-- Hardens deservingness stories:  
-  - Each side overestimates how much the other wants “handouts” or “corporate welfare,” making compromise on symmetric insurance harder.
+Polarization shapes these interpretations. Research shows polarization is less ideological and more emotional/identity‑based.
 
-- Protects existing top‑tier insurance:  
-  - Because systemic rescues are coded as “saving everyone,” they escape the moralized scrutiny applied to direct cash for individuals.
+> **Affective polarization**—dislike of the opposing party more than disagreement over policy—has risen since the 1990s. Corporate rescues pass because they are framed as preventing a depression. Direct cash to individuals triggers moralized debates about deservingness.
 
-Result: the insurance ladder stays inverted—robust at the top, fragmented and moralized at the bottom.
+Public opinion is less polarized than elites, but misperceptions amplify hostility. Polarization does not reliably predict antidemocratic behavior, but leaders can weaponize emotional polarization to mobilize aggressive individuals. Moderates with low political engagement are paradoxically more willing to endorse political violence than highly polarized partisans. Structural incentives (primaries, media ecosystems) encourage politicians to maintain polarization.
 
-## Synthesis
+Affective polarization:
 
-> The key issue is not net budgetary loss, but **option value and access**: who can credibly expect rapid, large‑scale intervention when their balance sheet implodes
+- **Hardens deservingness narratives:** Each side overestimates how much the other wants “handouts” or “corporate welfare,” making symmetric insurance difficult.  
+- **Protects top‑tier insurance:** Systemic rescues are coded as “saving everyone,” escaping scrutiny applied to direct cash for individuals.
 
-- Bank-capital are largely repaid; auto and housing pieces were not. “Privatize gains, socialize losses” fits some programs better than others.
-- The state **does** socialize losses at the top when failure threatens the financial system or a strategic industry.
-- Households **do** receive transfers in some crises (2020 checks and UI), but those are usually temporary and framed as emergency relief, not as a standing claim.
-- UBI evidence so far supports stability and wellbeing gains more than a simple employment disaster.
+The result is an inverted insurance ladder—robust at the top, fragmented and moralized at the bottom.
 
-## Sources
-The U.S. has repeatedly used fast, large-scale state intervention to boost systemic firms and markets, while standing cash support for households is slower, conditional, and politically contested. The phrase itself is older than the 2008 crisis. Henry George in 1891 attacked “*socialism and communism in the interest of the rich*”; Charles Abrams in 1948 wrote “*socialism for the rich and private enterprise for the poor*”; Michael Harrington popularized that wording in *The Other America* (1962); Andrew Young and Martin Luther King Jr. used close variants in 1967–68. 
+---
 
-- Harrington, Michael. The Other America, 1962.
-- Chomsky, Noam. Requiem for The American Dream, Truthout interviews 2012, 2016.
-- Varoufakis, Yanis. Analysis of government responses to financial crises, 2022.
-- City Observatory. Dr. King’s analysis of social spending inequities (1968–2023 examples).
+## **Synthesis**
 
-Comparative international examples: Pakistan, developing countries with elite rentier economic structures.
-This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity measures are often seen not as anomalies but as systemic features of modern economic governance.
+> The key issue is not net budgetary loss, but **option value and access**: who can credibly expect rapid, large‑scale intervention when their balance sheet implodes.
 
-## Future work
+- Bank capital was largely repaid; auto and housing programs were not. “Privatize gains, socialize losses” fits some programs better than others.  
+- The state **does** socialize losses at the top when failure threatens the financial system or strategic industries.  
+- Households **do** receive transfers in crises, but these are temporary and framed as emergency relief, not standing claims.  
+- UBI evidence supports stability and wellbeing gains more than fears of employment collapse.
 
-- **Insurance operator**  
-  Define a state‑insurance functional $S$ mapping agents $i$ to rescue probability, speed, and conditionality; then show empirically how $S$ scales with systemic legibility, not need.
-- **Affluent socialism vs precarious capitalism**  
-  Treat tax expenditures, guarantees, and bailouts as one block; means‑tested transfers and UBI‑like proposals as another, and analyze incidence by income decile.
-- **Empirical sketch:**  
-  - Use existing tax‑expenditure incidence tables + transfer incidence to approximate $A$ and $B$ by decile.  
-  - Overlay major bailout episodes as discrete shocks and show who sits inside the high‑$S(i)$ region.
-- **Normative punchline:**  
-  - Argue that a symmetric insurance regime would either:  
-    - Reduce top‑tier put options, or  
-    - Extend bottom‑tier floors (UBI/guaranteed income), or both.
-- Tax expenditure incidence
-- Sovereign wealth funds
+---
 
-## APPENDIX: Formulas and notation
+## **Sources**
 
-### The state‑insurance operator $S$
+- Henry George (1891): “socialism and communism in the interest of the rich.”  
+- Charles Abrams (1948): “socialism for the rich and private enterprise for the poor.”  
+- Michael Harrington, *The Other America* (1962).  
+- Andrew Young and Martin Luther King Jr. (1967–68).  
+- Chomsky, *Requiem for the American Dream* (2012, 2016).  
+- Varoufakis (2022).  
+- City Observatory (1968–2023).
 
-#### Definition
+Comparative examples include Pakistan and other rentier‑elite economies.
+
+This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity are systemic features of modern economic governance.
+
+---
+
+## **Future Work**
+
+- **Insurance Operator:**  
+  Define a state‑insurance functional $S$ mapping agents $i$ to rescue probability, speed, depth, and conditionality; show empirically how $S$ scales with systemic legibility rather than need.
+
+- **Affluent Socialism vs Precarious Capitalism:**  
+  Treat tax expenditures, guarantees, and bailouts as one block; means‑tested transfers and UBI‑like proposals as another. Analyze incidence by income decile.
+
+- **Empirical Sketch:**  
+  Use tax‑expenditure incidence tables and transfer incidence to approximate $A$ and $B$ by decile. Overlay bailout episodes as shocks to identify high‑$S(i)$ regions.
+
+- **Normative Punchline:**  
+  Argue that a symmetric insurance regime would either reduce top‑tier put options or extend bottom‑tier floors (UBI/guaranteed income), or both.
+
+- Additional topics: tax‑expenditure incidence, sovereign wealth funds.
+
+---
+
+## **Appendix: Formulas and Notation**
+
+### **State‑Insurance Operator $S$**
 
 Let:
 
-- **Agents:**  
-  $i \in \mathcal{A}$ (households, firms, sectors).
-- **Shock:**  
-  $\omega \in \Omega$ (states of the world: crisis, recession, firm failure, household income loss).
-- **State response:**  
-  $R(i, \omega)$ = vector of interventions (cash, guarantees, regulatory forbearance, tax relief).
+- **Agents:** $i \in \mathcal{A}$ (households, firms, sectors).  
+- **Shock:** $\omega \in \Omega$ (crisis, recession, firm failure, household income loss).  
+- **State Response:** $R(i,\omega)$ = interventions (cash, guarantees, regulatory forbearance, tax relief).
 
-Define a **state‑insurance functional**:
+Define:
 
 $$
-S(i) = \mathbb{E}_{\omega}\big[\, I(R(i,\omega)) \,\big]
+S(i) = \mathbb{E}_{\omega}\big[I(R(i,\omega))\big]
 $$
 
-where $I(\cdot)$ maps the response into:
+where $I(\cdot)$ maps responses into:
 
-- **Probability of rescue:** $p_i$
-- **Speed of rescue:** $\tau_i$
-- **Depth of rescue:** $d_i$ (share of loss absorbed)
-- **Conditionality:** $c_i$ (behavioral/admin constraints)
+- Probability of rescue: $p_i$  
+- Speed of rescue: $\tau_i$  
+- Depth of rescue: $d_i$  
+- Conditionality: $c_i$
 
 $$
 S(i) = (p_i, \tau_i, d_i, c_i)
 $$
 
-Empirically, the claim is:
+Empirical claims:
 
-- **Systemic legibility:**  
-  $S(i)$ is increasing in how **legible** the agent is as systemic—size, network centrality, sector narrative (banks, autos, airlines).
-- **Need:**  
-  $S(i)$ is only weakly increasing in **material need** (poverty, precarity).
+- **Systemic Legibility:** $S(i)$ increases with size, network centrality, and sector narrative.  
+- **Need:** $S(i)$ increases only weakly with poverty or precarity.
 
-That’s the formal version of: “the state insures capital more than it insures precarious labor.”
+Examples:
 
-- **Place TARP, CARES, and UBI pilots in this space:**  
-  - TARP: high $p,$ low $\tau,$ high $d,$ low $c$ for banks.  
-  - COVID checks/UI: moderate $p,$ moderate $\tau,$ moderate $d,$ higher $c$ for households.  
-  - UBI (hypothetical): high $p,$ high $\tau$ (automatic), stable $d,$ low $c$.
+- **TARP:** high $p$, low $\tau$, high $d$, low $c$.  
+- **COVID checks/UI:** moderate $p$, moderate $\tau$, moderate $d$, higher $c$.  
+- **UBI (hypothetical):** high $p$, high $\tau$, stable $d$, low $c$.
 
 ---
 
-### Affluent socialism vs precarious capitalism (incidence block)
+### **Affluent Socialism vs Precarious Capitalism**
 
-#### Block A: Affluent socialism
+#### **Block A: Affluent Socialism**
 
-**Components:**
+Components:
 
-- Tax expenditures: mortgage interest deduction, employer health exclusion, retirement account preferences, preferential capital gains/dividends.
-- Explicit guarantees: deposit insurance, too‑big‑to‑fail expectations, sectoral backstops (GSEs, defense contractors).
+- Tax expenditures: mortgage interest deduction, employer health exclusion, retirement preferences, preferential capital gains/dividends.  
+- Explicit guarantees: deposit insurance, too‑big‑to‑fail expectations, GSEs, defense backstops.  
 - Crisis bailouts: TARP, auto rescue, airline support, facility backstops.
-
-Define:
 
 $$
 A = \text{Incidence of Block A by income/wealth decile}
 $$
 
-Expect $A$ to be **strongly increasing** with income and asset ownership.
+Expect $A$ to rise sharply with income and asset ownership.
 
-#### Block B: Precarious capitalism
+#### **Block B: Precarious Capitalism**
 
-**Components:**
+Components:
 
-- Means‑tested transfers: SNAP, TANF, housing vouchers, Medicaid.
-- Work‑linked credits: EITC, CTC (when refundable).
-- Emergency relief: one‑off stimulus checks, temporary UI expansions.
-
-Define:
+- Means‑tested transfers: SNAP, TANF, housing vouchers, Medicaid.  
+- Work‑linked credits: EITC, refundable CTC.  
+- Emergency relief: stimulus checks, temporary UI expansions.
 
 $$
 B = \text{Incidence of Block B by income/wealth decile}
 $$
 
-Expect $B$ to be **concentrated in lower deciles**, but with:
+Expect $B$ to concentrate in lower deciles, with:
 
-- Higher **administrative friction** (take‑up gaps, stigma).
-- Higher **conditionality** (work tests, asset tests, sanctions).
+- High administrative friction (take‑up gaps, stigma).  
+- High conditionality (work tests, asset tests, sanctions).
 
-The slogan then becomes an empirical statement:
+Thus:
 
 > For upper deciles, $A \gg B$ and $S(i)$ is high, automatic, and low‑friction.  
-> For lower deciles, $B$ exists but is **conditional, fragmented, and politically fragile**, and $S(i)$ is low and crisis‑dependent.
+> For lower deciles, $B$ exists but is conditional, fragmented, and politically fragile, and $S(i)$ is low and crisis‑dependent.
