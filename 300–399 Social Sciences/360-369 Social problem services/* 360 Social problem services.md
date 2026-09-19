@@ -163,6 +163,10 @@ Federal infrastructure, nonprofit expertise, and local navigators together widen
 
 For practical help in the United States, people can call **211**, use federal agency websites, or contact United Way and local community centers to find programs and apply for services.
 
+## Future work
+- Policy interventions
+- Global social issues
+
 ## References
 
 - HHS social services programs
@@ -171,3 +175,4 @@ For practical help in the United States, people can call **211**, use federal ag
 - Healthy People 2030: Economic Stability
 - 211 National Helpline
 - First Step Alliance
+
