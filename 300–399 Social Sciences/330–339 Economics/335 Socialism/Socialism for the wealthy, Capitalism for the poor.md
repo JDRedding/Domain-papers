@@ -1,6 +1,6 @@
 # Socialism for the wealthy, Capitalism for the poor
 
-In many advanced capitalist systems, the structural framework channels public resources to protect elites while exposing the poor to unmediated market forces—effectively making the state a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes.
+In many advanced capitalist systems, the structural framework channels public resources to protect elites while exposing the poor to unmediated market forces — effectively making the state a mechanism of privileged socialism for capital and unforgiving capitalism for the lower classes.
 
 “Socialism for the wealthy, capitalism for the poor” is really:  
 > **State-backed put options for capital; hard‑mode exposure for precarious labor.**
