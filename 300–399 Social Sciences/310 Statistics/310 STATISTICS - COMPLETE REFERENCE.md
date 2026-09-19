@@ -34,7 +34,7 @@ Current DDC (modern schedules)
        Australasia, Pacific islands, Atlantic islands,
        Arctic islands, Antarctica.
 ```
-## ONE-PAGE MENTAL MODEL
+## MENTAL MODEL
 ```
 State needed facts about itself
         ->
@@ -52,10 +52,9 @@ inferential statements about what you did not see,
 two big dialects of that uncertainty:
   long-run frequency  (frequentist)
   updated belief      (Bayesian)
-
+```
 Library 310s keep the old "facts of the state by place" sense.
 Mathematics 519.5 keeps the inferential engine.
-```
 
 ```
 +--------------------------------------------------+
