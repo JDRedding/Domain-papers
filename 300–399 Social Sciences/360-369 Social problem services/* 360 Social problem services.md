@@ -176,3 +176,323 @@ For practical help in the United States, people can call **211**, use federal ag
 - 211 National Helpline
 - First Step Alliance
 
+## APPENDIX: Formulas and notation
+
+- **Need and targeting:** FGT / Watts measure who is harmed and how deeply.  
+- **Distributional judgment:** Gini, Theil, Atkinson, $W=\bar y(1-I)$.  
+- **Behavior:** Becker $EU$ for crime; hazards for recidivism and program exit.  
+- **Capacity:** stock-flow and queues for shelters, prisons, clinics.  
+- **Finance:** APV, replacement rates, PAYG identity, NPV for insurance and transfers.
+
+## Shared notation
+
+| Symbol | Meaning |
+|---|---|
+| $n$ | population size |
+| $y_i$ | income (or consumption) of person $i$ |
+| $\bar y$ | mean income |
+| $z$ | poverty line |
+| $q$ | number of people with $y_i < z$ |
+| $F$ | cumulative distribution function of income |
+| $L(p)$ | Lorenz curve (share of income held by the poorest fraction $p$) |
+| $W$ | social welfare |
+| $u(\cdot)$ | von Neumann–Morgenstern utility |
+
+---
+
+## 361 General social welfare
+
+**Bergson–Samuelson social welfare function**
+
+$$
+W = W\bigl(u_1(y_1),\dots,u_n(y_n)\bigr)
+$$
+
+**Utilitarian**
+
+$$
+W = \sum_{i=1}^{n} u(y_i)
+$$
+
+**Rawlsian (maximin)**
+
+$$
+W = \min_i u(y_i)
+$$
+
+**Atkinson equally distributed equivalent income**
+
+$$
+y_{\text{ede}} = \begin{cases} \displaystyle\left(\frac{1}{n}\sum_{i=1}^{n} y_i^{1-\varepsilon}\right)^{1/(1-\varepsilon)} & \varepsilon \neq 1 \displaystyle\exp\Bigl(\frac{1}{n}\sum_{i=1}^{n}\ln y_i\Bigr) & \varepsilon= 1 \end{cases}
+$$
+
+where $\varepsilon \ge 0$ is inequality aversion.
+
+**Atkinson inequality index**
+
+$$
+A_{\varepsilon} = 1 - \frac{y_{\text{ede}}}{\bar y}
+$$
+
+**Abbreviated welfare**
+
+$$
+W = \bar y\,(1-I)
+$$
+
+with $I$ an inequality index (Gini or Atkinson).
+
+---
+
+## 362 Welfare problems: poverty and inequality
+
+**Poverty gap of person $i$**
+
+$$
+g_i = \max\{z-y_i,0\}
+$$
+
+**Foster–Greer–Thorbecke (FGT) class**
+
+$$
+P_{\alpha} = \frac{1}{n}\sum_{i=1}^{n}\left(\frac{g_i}{z}\right)^{\alpha},\qquad \alpha\ge 0
+$$
+
+| $\alpha$ | Name | Interpretation |
+|---|---|---|
+| $0$ | Headcount $P_0=H=q/n$ | incidence |
+| $1$ | Poverty gap $P_1$ | depth |
+| $2$ | Squared gap $P_2$ | severity |
+
+**Sen poverty index**
+
+$$
+P_S = P_0\left(1-\frac{\mu_P}{z}(1-G_P)\right)
+$$
+where $\mu_P$ is mean income of the poor and $G_P$ is the Gini among the poor.
+
+**Gini coefficient**
+
+$$
+G = \frac{2}{n^2\bar y}\sum_{i=1}^{n} i\,y_{(i)} - \frac{n+1}{n}
+= 1-2\int_0^1 L(p)\,dp
+$$
+
+with $y_{(1)}\le\cdots\le y_{(n)}$ ordered incomes.
+
+**Theil index (GE(1))**
+$$
+T = \frac{1}{n}\sum_{i=1}^{n}\frac{y_i}{\bar y}\ln\frac{y_i}{\bar y}
+$$
+
+**Generalized entropy**
+
+$$
+GE(\theta) =
+\begin{cases}
+\dfrac{1}{\theta(\theta-1)}\dfrac{1}{n}\sum_i\left[\left(\dfrac{y_i}{\bar y}\right)^{\theta}-1\right] & \theta\neq 0,1 
+T & \theta=1 
+-\dfrac{1}{n}\sum_i\ln\dfrac{y_i}{\bar y} & \theta=0
+\end{cases}
+$$
+
+**Watts poverty index**
+
+Set form
+
+$$
+W_{\mathrm{Watts}}=\frac{1}{n}\sum_{i=1}^{n}\mathbf{1}(y_i\lt z)\,\ln\frac{z}{y_i}
+$$
+
+Written out
+
+$$
+W_{\mathrm{Watts}}=\frac{1}{n}\sum_{\substack{i=1\\ y_i\lt z}}^{n}\ln\frac{z}{y_i}
+$$
+
+---
+
+## 363 Other social problems: health, housing, environment
+
+**Basic reproduction / contagion form** (used for epidemics and some behavioral “contagion” models)
+
+$$
+R_0 = \beta\cdot\frac{S}{N}\cdot D
+$$
+
+$\beta$ contact-transmission rate, $S/N$ susceptible share, $D$ duration of infectiousness.
+
+**SIR stock-flow**
+
+$$
+\frac{dS}{dt}=-\beta SI,\qquad
+\frac{dI}{dt}=\beta SI-\gamma I,\qquad
+\frac{dR}{dt}=\gamma I
+$$
+
+**Homelessness / housing stock-flow** (continuous-time accounting)
+
+$$
+\frac{dU}{dt}=\lambda - \mu_s S_{\text{sh}} - \mu_h H
+$$
+
+- $U$: unsheltered stock  
+- $\lambda$: inflow (eviction, release, family breakdown)  
+- $S_{\text{sh}},H$: shelter and housing capacity  
+- $\mu_s,\mu_h$: exit rates from those slots  
+
+**Queueing stability** (shelter/housing as servers)
+
+$$
+\rho = \frac{\lambda}{c\mu}<1
+$$
+
+for a stable queue; if $\rho>1$ the unsheltered queue grows.
+
+**Little’s law**
+
+$$
+L=\lambda W
+$$
+
+average number in system = arrival rate × average time in system.
+
+**Vacancy-chain mean length** (housing mobility)
+
+$$
+\mathbf{m}=(\mathbf{I}-\mathbf{T})^{-1}\mathbf{1}
+$$
+
+$\mathbf{T}$ is the matrix of vacancy-transfer probabilities among housing types.
+
+**Cost-effectiveness / QALY**
+
+$$
+\text{ICER}=\frac{C_1-C_0}{E_1-E_0}
+$$
+
+incremental cost per extra unit of effect (life-year, QALY, housed night).
+
+---
+
+## 364 Criminology
+
+**Becker expected-utility crime model**
+
+$$
+EU = p\,U(W-f)+(1-p)\,U(W+g)
+$$
+
+Offense if $EU>U(W)$.
+
+| Symbol | Meaning |
+|---|---|
+| $p$ | probability of conviction |
+| $f$ | monetary equivalent of punishment |
+| $g$ | gain from crime |
+| $W$ | legitimate wealth / income |
+
+**Supply of offenses**
+
+$$
+O = O(p,f,u)
+$$
+
+with $\partial O/\partial p<0$, $\partial O/\partial f<0$.
+
+**Risk-neutral special case** (commit if expected payoff positive)
+
+$$
+(1-p)g - p f > 0 \quad\Leftrightarrow\quad g > \frac{p}{1-p}f
+$$
+
+**Simple recidivism / survival**
+
+$$
+S(t)=\Pr(T>t)=e^{-\int_0^t h(s)\,ds}
+$$
+$h(t)$ hazard of reoffending.
+
+**Crime rate identity**
+
+$$
+\text{rate}=\frac{\text{offenses}}{\text{population}\times\text{time}}
+$$
+
+---
+
+## 365 Penal institutions
+
+**Stock-flow of incarceration**
+
+$$
+\frac{dP}{dt}=a - \delta P
+$$
+
+steady state $P^*=a/\delta$, with $a$ admissions and $\delta$ release rate.
+
+**Mean time served**
+
+$$
+\mathbb{E}[T]=\frac{1}{\delta}
+$$
+
+(constant hazard).
+
+**Recidivism rate after release cohort $C$**
+
+$$
+r(t)=\frac{\{No.}\{\text{returns by }t\}}{|C|}
+$$
+
+---
+
+## 368 Social insurance
+
+**Replacement rate**
+
+$$
+RR=\frac{\text{benefit}}{\text{reference earnings}}
+$$
+
+e.g. Social Security PIA / AIME, or pension / final salary.
+
+**Actuarial present value of a life annuity** (continuous)
+
+$$
+\bar a_x=\int_0^{\infty} e^{-\delta t}\,{}_tp_x\,dt
+$$
+
+${}_tp_x$: probability a life aged $x$ survives $t$ years; $\delta$: force of interest.
+
+**Defined-contribution accumulation to retirement age $r$**
+
+$$
+TS_x(r)=PS_x(1+i)^{r-x}+FS_x
+$$
+
+then benefit $B=TS_x(r)/(\ddot a_r)$.
+
+**Pay-as-you-go balance (stylized)**
+
+$$
+\tau\cdot w\cdot L = b\cdot R
+\quad\Rightarrow\quad
+\tau = \frac{b}{w}\cdot\frac{R}{L}
+$$
+
+$\tau$ contribution rate, $w$ wage, $L$ contributors, $b$ benefit, $R$ retirees.
+
+**Net present value of a policy**
+
+$$
+NPV=\sum_{t=0}^{T}\frac{B_t-C_t}{(1+r)^t}
+$$
+
+**Expected-utility insurance demand** (Mossin)
+
+$$
+\max_{\alpha}\; p\,U\bigl(W-L-(1-\alpha)\pi+\alpha I\bigr)+(1-p)\,U(W-\alpha\pi)
+$$
+
+often specialized to coinsurance $\alpha\in[0,1]$.
