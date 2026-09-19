@@ -78,11 +78,14 @@ $$
 |V|=6n^{2},\qquad |E|=12n^{2}.
 $$
 
-On one face, ring sizes (exact Chebyshev, odd $n$):
+On one face, ring sizes (Unified integer form), in a preferred an integer layer index $\ell=\bigl\lfloor k+\tfrac12\bigr\rfloor$ or, equivalently,
 
 $$
-\bigl|\{(r,c):k(r,c)=k\}\bigr| = \begin{cases} 1 & k=0,\\ 8k & 0<k<K,\\ 4(n-1) & k=K. \end{cases}
+\ell(r,c)=\max(\lfloor |r-c_\star|+\tfrac12\rfloor,\,
+\lfloor |c-c_\star|+\tfrac12\rfloor),
 $$
+
+then $\ell\in\{0,\dots,\lceil n/2\rceil-1\}$ for every $n$, the innermost layer has size $1$ (odd $n$) or $4$ (even $n$), and the outermost layer always has size $4(n-1)$.
 
 **Cubie-type partition** (secondary, not required for $G$):
 
@@ -111,25 +114,25 @@ SID.Interaction
 Compressed edge set:
 
 $$
-E=\bigl\{\{i,j\}:{id}^{-1}(i)\sim{id}^{-1}(j)\bigr\},
+E=\{\{i,j\}:{id}^{-1}(i)\sim{id}^{-1}(j)\},
 $$
 
 where $\sim$ is the symmetric closure of grid steps union the twelve belt pairings. One consistent family of belts (outside view) is
 
 $$
 \begin{align*}
-e_{UF}(i)&=\bigl({id}(0,n-1,i),\,{id}(2,0,i)\bigr),\\
-e_{UR}(i)&=\bigl({id}(0,i,n-1),\,{id}(1,0,n-1-i)\bigr),\\
-e_{UB}(i)&=\bigl({id}(0,0,i),\,{id}(5,0,n-1-i)\bigr),\\
-e_{UL}(i)&=\bigl({id}(0,i,0),\,{id}(4,0,i)\bigr),\\
-e_{DF}(i)&=\bigl({id}(3,0,i),\,{id}(2,n-1,i)\bigr),\\
-e_{DR}(i)&=\bigl({id}(3,i,n-1),\,{id}(1,n-1,i)\bigr),\\
-e_{DB}(i)&=\bigl({id}(3,n-1,i),\,{id}(5,n-1,n-1-i)\bigr),\\
-e_{DL}(i)&=\bigl({id}(3,i,0),\,{id}(4,n-1,n-1-i)\bigr),\\
-e_{FR}(i)&=\bigl({id}(2,i,n-1),\,{id}(1,i,0)\bigr),\\
-e_{FL}(i)&=\bigl({id}(2,i,0),\,{id}(4,i,n-1)\bigr),\\
-e_{BR}(i)&=\bigl({id}(5,i,0),\,{id}(1,i,n-1)\bigr),\\
-e_{BL}(i)&=\bigl({id}(5,i,n-1),\,{id}(4,i,0)\bigr).
+e_{UF}(i)&=({id}(0,n-1,i),\,{id}(2,0,i)),\\
+e_{UR}(i)&=({id}(0,i,n-1),\,{id}(1,0,n-1-i)),\\
+e_{UB}(i)&=({id}(0,0,i),\,{id}(5,0,n-1-i)),\\
+e_{UL}(i)&=({id}(0,i,0),\,{id}(4,0,i)),\\
+e_{DF}(i)&=({id}(3,0,i),\,{id}(2,n-1,i)),\\
+e_{DR}(i)&=({id}(3,i,n-1),\,{id}(1,n-1,i)),\\
+e_{DB}(i)&=({id}(3,n-1,i),\,{id}(5,n-1,n-1-i)),\\
+e_{DL}(i)&=({id}(3,i,0),\,{id}(4,n-1,n-1-i)),\\
+e_{FR}(i)&=({id}(2,i,n-1),\,{id}(1,i,0)),\\
+e_{FL}(i)&=({id}(2,i,0),\,{id}(4,i,n-1)),\\
+e_{BR}(i)&=({id}(5,i,0),\,{id}(1,i,n-1)),\\
+e_{BL}(i)&=({id}(5,i,n-1),\,{id}(4,i,0)).
 \end{align*}
 $$
 
@@ -144,7 +147,7 @@ A **move** is a permutation of $V$. Write $S_V$ for the symmetric group on $V$.
 Clockwise $90^\circ$ turn of face $f$:
 
 $$
-R_f\bigl({id}(f,r,c)\bigr)={id}(f,\,c,\,n-1-r),
+R_f({id}(f,r,c))={id}(f,\,c,\,n-1-r),
 $$
 
 and $R_f$ fixes all ids with a different face index. Cycle type of $R_f$:
@@ -181,7 +184,7 @@ Normalised face coordinates:
 
 $$
 u=\frac{c-c_\star}{\max(n-1,1)},\qquad
-v=\frac{r-c_\star}{\max(n-1,1)}\in\bigl[-\tfrac12,\tfrac12\bigr].
+v=\frac{r-c_\star}{\max(n-1,1)}\in[-\tfrac12,\tfrac12].
 $$
 
 Sector angle and radius:
@@ -195,9 +198,8 @@ $$
 If $K=0$ ($n=2$ after collapsing), use a single radius. Embedding:
 
 $$
-\Phi\bigl({id}(f,r,c)\bigr)
-=
-\rho\bigl(k(r,c)\bigr)
+\Phi({id}(f,r,c)) =
+\rho(k(r,c))
 \begin{pmatrix}
 \cos(\theta_f+\alpha u+\beta v)\\
 \sin(\theta_f+\alpha u+\beta v)
