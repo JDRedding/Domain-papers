@@ -25,7 +25,7 @@ The slogan is useful as a critique of contemporary **American form of Socialism*
 ### **Fiscal‑State Mode of Production**
 > **The U.S. mode of production is a fiscal‑state regime where capital accumulation depends on public balance‑sheet support, while labor reproduction is disciplined through market exposure and conditional welfare.**
 
-### ** Asymmetric‑Insurance Mode of Production**
+### **Asymmetric‑Insurance Mode of Production**
 > **The U.S. mode of production is organized around asymmetric insurance: capital enjoys automatic, low‑friction state protection, while labor faces fragmented, high‑conditionality survival mechanisms.**
 
 In this configuration, the state functions as a **centralized risk‑absorber for capital**—providing liquidity, guarantees, tax expenditures, and crisis bailouts—while simultaneously enforcing a **high‑friction, conditional, and punitive welfare structure** for households. The result is a production regime where **downside risk is socialized for firms but individualized for workers**, embedding “socialism for the wealthy, capitalism for the poor” directly into the material organization of the economy.
