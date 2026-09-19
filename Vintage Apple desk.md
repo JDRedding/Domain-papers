@@ -1,6 +1,4 @@
 # Vintage Apple desk
-→ 749  
-→ Furniture Design
 
 ## SCENE
 ```
