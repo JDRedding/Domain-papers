@@ -1,3 +1,5 @@
+# Statistics of populations
+
 **Population demographic statistics** are not a loose collection of indicators. They are the observable outputs of a closed dynamical system in which three operators—fertility, mortality, and migration—act on a structured population state vector over time.
 
 Every common statistic is one of three things:
