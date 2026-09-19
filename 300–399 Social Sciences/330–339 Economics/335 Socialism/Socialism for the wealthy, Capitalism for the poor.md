@@ -6,6 +6,8 @@ In many advanced capitalist systems, public resources are routinely mobilized to
 
 > **State‑backed put options for capital; hard‑mode exposure for precarious labor.**
 
+This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity are systemic features of modern economic governance.
+
 ---
 
 ## **Analytical Perspective**
@@ -130,8 +132,6 @@ The result is an inverted insurance ladder—robust at the top, fragmented and m
 - City Observatory (1968–2023).
 
 Comparative examples include Pakistan and other rentier‑elite economies.
-
-This framework explains why recurring bailouts, subsidies, preferential legislation, and selective austerity are systemic features of modern economic governance.
 
 ---
 
