@@ -10,9 +10,11 @@
 - 378	Higher education
 - 379	Public policy issues in education
 
-**Education** is both what is taught and what is learned: a process, a result, a program, a profession, and sometimes a life experience that changes what a person knows or can do. Around the world it takes many institutional forms, from state classrooms and private academies to home instruction, trade training, and universities.*
+**Education** is both what is taught and what is learned. Around the world it takes many institutional forms, from state classrooms and private academies to home instruction, trade training, and universities.
 
-The act or process of teaching and learning; the knowledge, skill, or judgment gained through that process; a course or level of instruction; the field that studies teaching and learning; or, more loosely, any experience that instructs or enlightens. People speak of *getting an education*, *working in education*, *investing in education*, or *paying for someone’s education*. The word can mean the process (“education begins at home”), the content (“a broad education”), the institution or profession (“she works in education”), or a subject of study (“a course in education”).
+> The act or process of teaching and learning; the knowledge, skill, or judgment gained through that process; a course or level of instruction; the field that studies teaching and learning; or, more loosely, any experience that instructs or enlightens.
+
+People speak of *getting an education*, *working in education*, *investing in education*, or *paying for someone’s education*. The word can mean the process (“education begins at home”), the content (“a broad education”), the institution or profession (“she works in education”), or a subject of study (“a course in education”).
 
 ## Forms of Learning
 
