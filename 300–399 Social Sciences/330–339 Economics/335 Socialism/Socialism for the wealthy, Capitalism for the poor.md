@@ -20,6 +20,8 @@ This concept integrates economics, political science, and social‑justice analy
 
 > Economic inequality, elite policy capture, and constrained democracy are all downstream of an asymmetric state‑insurance structure—where capital is insured ex ante and labor is exposed ex post.
 
+Two modes of production and two historical systems stacked in one country.
+
 ---
 
 ## **Core Argument**
