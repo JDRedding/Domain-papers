@@ -20,7 +20,7 @@ This concept integrates economics, political science, and social‑justice analy
 
 > Economic inequality, elite policy capture, and constrained democracy are all downstream of an asymmetric state‑insurance structure—where capital is insured ex ante and labor is exposed ex post.
 
-Two modes of production and two historical systems stacked in one country.
+Two modes of production and two historical systems stacked in one country. Politics treats these tiers as incidental; analysis reveals them as structural.
 
 ---
 
@@ -55,7 +55,7 @@ The contemporary U.S. thus contains **two modes of production**: a socialist mod
 - **State‑insured accumulation:** Liquidity facilities, guarantees, tax expenditures, and crisis recapitalization are exceptions rapidly bolted onto a nominally private market.  
 - **Market‑disciplined reproduction:** Households face income, rent, and job loss with slow, means‑tested, stigmatized claims. Household collapse becomes a macro event only belatedly, and the state moves slowly.
 
-The slogan names this allocation of downside: socialized distress for firms, individualized distress for workers. Politics treats these tiers as incidental; analysis reveals them as structural.
+The slogan names this allocation of downside: socialized distress for firms, individualized distress for workers. 
 
 ---
 
