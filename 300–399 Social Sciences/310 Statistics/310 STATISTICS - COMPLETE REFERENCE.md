@@ -123,18 +123,20 @@ Other schemes (contrast only)
    census figures, earnings by age, injury totals, survey results.
 
 ### Grammar
-  "Statistics is a branch of mathematics."     -> field (singular)
-  "The statistics are worse this year."        -> data (plural)
-  "She is a professor of statistics."          -> field (uncountable)
+  "Statistics is a branch of mathematics."     -> field (singular); 
+  "The statistics are worse this year."        -> data (plural); 
+  "She is a professor of statistics."          -> field (uncountable); 
   One computed value from a sample = a statistic (singular noun)
 
 ### Adjective
-  Correct: statistical  (statistical model, statistical analysis)
+  Correct: statistical  (statistical model, statistical analysis); 
   Wrong:   statistic used as an adjective
 
 ### Quotations often attached to the word
-  "There are three kinds of lies: lies, damned lies, and statistics."
-  "He uses statistics like a drunken man uses lamp-posts —
+
+- "There are three kinds of lies: lies, damned lies, and statistics."
+  
+- "He uses statistics like a drunken man uses lamp-posts —
    for support rather than illumination."
 
 ## 1. ETYMOLOGY
