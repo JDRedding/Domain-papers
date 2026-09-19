@@ -81,13 +81,7 @@ $$
 On one face, ring sizes (exact Chebyshev, odd $n$):
 
 $$
-\bigl|\{(r,c):k(r,c)=k\}\bigr|
-=
-\begin{cases}
-1 & k=0,\\
-8k & 0<k<K,\\
-4(n-1) & k=K.
-\end{cases}
+\bigl|\{(r,c):k(r,c)=k\}\bigr| = \begin{cases} 1 & k=0,\\ 8k & 0<k<K,\\ 4(n-1) & k=K. \end{cases}
 $$
 
 **Cubie-type partition** (secondary, not required for $G$):
