@@ -1,0 +1,105 @@
+MCU LOKI MULTIVERSE  
+// ASCII map  
+
+FUNDAMENTALS
+  time          linear flow of events inside one universe
+  timeline      one complete history of a universe
+  branch        new timeline spawned by a Nexus Event
+  nexus_event   deviation from scripted path
+  prune         TVA reset: send branch + variant to the Void
+  sacred        He Who Remains approved set of timelines
+                that all produce him and no other Kang
+  loom          Temporal Loom: failsafe that weaves / deletes
+                branches so only Sacred remains
+  void          End of Time dump for pruned matter + Alioth
+  yggdrasil     post-S2 structure: infinite coexisting branches
+                held alive by Loki at the End of Time
+
+TYPES
+  Timeline
+    SacredTimeline      isolated collection, Earth-616 baseline
+    BranchedTimeline    unsanctioned fork
+    DeadTimeline        pruned / dying strand
+  Variant
+    LokiVariant         any Loki off-script
+    KangVariant         He Who Remains | Kang | others
+    TVAVariant          agents who are themselves variants
+  Entity
+    TVA                 Time Variance Authority (outside time)
+    Alioth              cloud that eats leftover timelines
+    TemporalLoom        machine / failsafe
+    Citadel             He Who Remains throne at End of Time
+
+VARIABLES  (key instances)
+  LOKI_2012          escaped with Tesseract during Endgame heist
+                     = first Nexus that TVA arrests
+  SYLVIE             female Loki variant, kills He Who Remains
+  KID_LOKI
+  CLASSIC_LOKI
+  BOASTFUL_LOKI
+  ALLIGATOR_LOKI
+  PRESIDENT_LOKI
+  HE_WHO_REMAINS     Kang who won first Multiversal War
+                     isolated Sacred Timeline, built TVA + Loom
+  MOBIUS             TVA analyst, later free to leave
+  B15                Hunter, later TVA lead
+  RENSLAYER          judge, ends in Void
+  LOOM               overloaded by infinite branches after HWR death
+  LOKI_WHO_REMAINS   S2 Loki: destroys Loom, gathers dying strands,
+                     sits the throne, becomes the tree
+
+FLOW
+
+  [Multiversal War]
+          |
+          v
+  He Who Remains wins
+  isolates Sacred Timeline
+  builds TVA + Loom
+          |
+          |  prune any Nexus before it sticks
+          v
+  =================  SACRED TIMELINE  =================
+  ... Avengers ... Loki captured ... Ragnarok ...
+  Infinity War Loki dies ... Endgame Time Heist ...
+          |
+          |  Loki takes Tesseract  <-- NEXUS
+          v
+      LOKI arrested by TVA
+          |
+          |  hunts Sylvie, meets other Loki variants
+          |  Void + Alioth + Citadel
+          v
+      Sylvie kills He Who Remains
+          |
+          v
+  Sacred Timeline shatters
+  infinite branches spawn
+  Loom overloads (failsafe: keep only Sacred)
+          |
+          |  Loki time-slips centuries of loops
+          v
+      Loki destroys Loom
+      grabs dying branches
+      walks them to the throne
+          |
+          v
+        LOKI
+          |
+     /    |    \
+    /     |     \
+branch branch branch ...   YGGDRASIL
+    \     |     /
+     \    |    /
+    timelines live
+         |
+ TVA reformed:
+    protect branches
+   hunt Kang variants
+   no more mass prune of Sacred-only
+
+NOTES
+  pruning still exists but now targets incursions
+  and Kang variants, not every fork
+  Loki sits alone at center, God of Stories
+  friends free to stay at TVA or go home
