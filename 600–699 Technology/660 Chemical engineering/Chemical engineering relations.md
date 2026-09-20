@@ -30,7 +30,7 @@ Chemical engineering core mathematical relations that sit behind the topic, with
 - Eyring equation: $k = \frac{k_BT}{h}\exp(-\Delta G^\ddagger/RT)$
 
 ## Working equations
-These are the working equations that connect the chemistry topics in the original posts (kinetics, thermodynamics, surface processes, industrial operations) to actual chemical-engineering calculations.
+These are the working equations that connect the chemistry topics in engineering (kinetics, thermodynamics, surface processes, industrial operations) to actual chemical calculations.
 
 **Material and mole balances**
 - General mass balance: $\frac{dm}{dt}=\sum\dot{m}_{\text{in}}-\sum\dot{m}_{\text{out}}+R_{\text{gen}}$
