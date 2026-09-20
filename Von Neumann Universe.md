@@ -210,7 +210,7 @@ $$
 
 with the convention $\sup\emptyset=0$. In particular ${rank}(\emptyset)=0$.
 
-### Stage definition (shall coincide with 7.1)
+### Stage definition 
 ${rank}(x)$ is the least ordinal $\alpha$ such that $x\subseteq V_\alpha$, equivalently the least ordinal $\alpha$ such that $x\in V_{\alpha+1}$.
 
 ### Well-definedness
