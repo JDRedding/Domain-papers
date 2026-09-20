@@ -1,5 +1,4 @@
 # Order–Lattice–Topology Framework (OLTF)
-Specification
 
 **Document type:** Technical specification  
 **Status:** Normative baseline for shared terminology, constructions, and scope  
