@@ -278,4 +278,4 @@ An implementation, formalization, or exposition conforms to this specification i
 4. states Foundation as the axiom that $V$ exhausts the universe of sets;
 5. preserves P1–P7.
 
-Optional but recommended: exhibit $V_0$ through $V_3$ and $V_\omega$ exactly as in §9.
+Optional but recommended: exhibit $V_0$ through $V_3$ and $V_\omega$ exactly.
