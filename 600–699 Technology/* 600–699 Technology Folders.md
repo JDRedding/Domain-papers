@@ -62,7 +62,9 @@
 | 638 | Insect culture |
 | 639 | Hunting, fishing & conservation |
 
-## 640 Home & family management
+## 640 Home economics
+- Home & family management
+
 | Number | Heading |
 |--------|---------|
 | 640 | Home & family management |
