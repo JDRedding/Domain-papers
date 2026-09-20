@@ -78,7 +78,9 @@
 | 648 | Housekeeping |
 | 649 | Child rearing & home care of persons |
 
-## 650 Management & auxiliary services
+## 650 Management services
+- Management & auxiliary services
+
 | Number | Heading |
 |--------|---------|
 | 650 | Management & auxiliary services |
