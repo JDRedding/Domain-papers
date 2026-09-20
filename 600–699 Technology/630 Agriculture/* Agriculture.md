@@ -1,5 +1,5 @@
 # Agriculture
-- 630 Agriculture/
+- 630 Agriculture
 
 **Agriculture** is the science, art, and business of cultivating soil, growing crops, and raising livestock. It produces food, fiber, fuel, and other goods that sustain human life and economies. Farming, cultivation, husbandry, tillage, agronomy are all in agriculture as both a craft and a science: the work of fields and herds, and the organized knowledge that supports it. In the United States, states such as Kansas and Missouri are major producers of corn, soybeans, and wheat, and of livestock—evidence of agriculture’s place in the regional economy. Agriculture remains both a source of nourishment and a base for economic growth, technical change, and the stewardship of land.
 
