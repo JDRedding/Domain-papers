@@ -1,7 +1,7 @@
-# Christian pastoral practices
+# Christian pastorals
 - 250 Christian orders 
 
-A **Christian pastoral practice** is a spiritual, emotional, and relational care rooted in God’s love. It aims to nurture faith, guide moral and spiritual growth, and support people and communities through the difficulties of life.
+A **Christian pastoral** is a spiritual, emotional, and relational care rooted in God’s love. It aims to nurture faith, guide moral and spiritual growth, and support people and communities through the difficulties of life.
 
 Christian pastoral practices are holistic, relational, and ethically grounded ministry. It combines spiritual care, moral guidance, emotional support, and practical help. It seeks to help both those who receive care and those who give it to attend to God’s work in human lives, fostering well-being, reconciliation, and growth. It requires discernment, compassion, theological grounding, and a careful use of modern therapeutic and coaching insight in service of individuals, families, and communities.
 
