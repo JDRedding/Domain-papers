@@ -3,6 +3,8 @@
 
 **Manufacturing** is the systematic conversion of raw materials into finished goods by labor, machines, tools, and technology. It is a foundation of industrial economies and of much technical change. Manufacturing has moved from craft to integrated, often automated industry. Cities remain an industrial center, with a mix of large employers and specialized shops, and a base for jobs, process improvement, and new technology. Figures change with the business cycle; local industry associations and labor statistics are the place to check current counts.
 
+**Metalworking and primary metals**, **iron and steel**, **nonferrous metals**, **lumber and cork**, **leather and fur**, **pulp and paper**, **textiles**, **elastomers**, and **other material-specific goods** are the classic divisions of manufacturing by substance. Each converts a raw or semi-raw stock into standard articles that other industries assemble. Together they are the material middle of the industrial economy: not mining, not final assembly, but the making of stuff that can be counted, shipped, and specified.
+
 ## What Manufacturing Is
 
 Manufacturing designs, processes, and assembles parts to make goods, usually at scale. It ranges from hand craft to highly automated industry and may use mechanical, chemical, or biological methods. Materials from the primary sector—minerals, timber, farm products—become finished articles sold to consumers or used as inputs in further production.
@@ -117,3 +119,112 @@ Membership counts and structures change; the associations themselves publish cur
 ### Finding Associations
 
 Directories such as IQS Directory and similar industrial listings catalog local, national, and specialist groups so firms can match membership to product line and place.
+
+# Manufactures of Specific Materials
+
+**Manufacturing of specific materials** is the industrial work of turning primary substances—metals, wood, hide, pulp, fiber, and rubber—into standard products. It sits between the extraction of raw goods and the making of complex machines or finished consumer articles. Each branch has its own mills, tools, defects, and trades, but they share the same logic: prepare the material, form it, finish it, and control quality at scale.
+
+The usual divisions follow the material itself: iron and steel; other metals; lumber and cork; leather and fur; pulp and paper; textiles; elastomers; and remaining specialty products.
+
+### Metalworking and Primary Metal Products
+
+**Metalworking** is the shaping of metal by casting, forging, rolling, drawing, machining, joining, and finishing. **Primary metal products** are the first useful forms after smelting: pigs, blooms, billets, slabs, plate, sheet, bar, rod, wire, pipe, and simple castings.
+
+Typical operations include:
+
+- **Casting.** Molten metal poured into molds (sand, die, investment)
+- **Hot and cold working.** Forging, rolling, extrusion, drawing
+- **Machining.** Cutting, turning, milling, grinding to size
+- **Joining.** Welding, brazing, soldering, mechanical fasteners
+- **Surface work.** Heat treatment, plating, coating, polishing
+
+Primary plants feed fabricators. Sheet and plate go to stampers and shipyards; bar and rod to machine shops; wire to fasteners and cable; pipe to construction and process industry. Tolerances, residual stress, and grain structure matter as much as chemistry.
+
+### Iron, Steel, and Other Iron Alloys
+
+**Iron** and **steel** dominate structural and mechanical manufacture. Pig iron from the blast furnace is refined into steel; scrap is remelted in electric furnaces. Alloys and heat treatment set hardness, toughness, and corrosion behavior.
+
+Main families:
+
+- **Carbon steels.** Construction, sheet, rail, simple machine parts
+- **Alloy steels.** Nickel, chromium, molybdenum, and others for strength or heat resistance
+- **Stainless steels.** Chromium (and often nickel) for corrosion resistance
+- **Cast irons.** Gray, ductile, and white irons for engine blocks, pipe, and machine bases
+- **Tool and high-speed steels.** Cutting tools and dies
+
+Products include structural shapes, reinforcing bar, plate, tin mill products, pipe and tube, rails, fasteners, and castings. Integrated mills make steel from ore; mini-mills make it from scrap. Downstream work includes rolling, drawing, galvanizing, and forming.
+
+### Nonferrous Metals
+
+**Nonferrous metals** are those not based on iron: copper, aluminum, zinc, lead, tin, nickel, titanium, precious metals, and their alloys (brass, bronze, solder, duralumin, and the rest).
+
+They are chosen for conductivity (copper, aluminum), lightness (aluminum, titanium, magnesium), corrosion resistance (zinc coatings, tinplate, nickel alloys), low melting point (lead, tin, solder), or appearance and value (gold, silver, platinum).
+
+Manufacture includes smelting and refining, then rolling, extrusion, drawing, casting, and powder methods. Aluminum sheet and extrusion serve aircraft, packaging, and building. Copper wire and tube serve electrical and plumbing work. Die-cast zinc and aluminum make housings and fittings. Recycling is large in this sector because the metals keep their value.
+
+### Lumber Processing, Wood Products, and Cork
+
+**Lumber processing** turns logs into boards, timber, veneer, and engineered stock. Sawmills debark, saw, season (air or kiln), grade, and plane. Secondary plants make plywood, oriented strand board, particleboard, fiberboard, laminated beams, flooring, millwork, crates, and furniture parts.
+
+**Wood products** include both structural goods and manufactured articles—doors, windows, cabinets, pallets, matches, pencils. Moisture content, grain, species, and glue lines govern strength and appearance. Preservation (pressure treatment) and fire retardants extend use outdoors and in code-restricted buildings.
+
+**Cork**, the bark of the cork oak, is cut, granulated, or agglomerated into stoppers, gaskets, flooring, and insulation. It is a small but distinct trade beside lumber.
+
+Residues—sawdust, chips, bark—feed pulp, panels, fuel, and landscaping, so the mill is as much a materials-balance problem as a sawing problem.
+
+### Leather and Fur Processing
+
+**Leather** is animal hide converted by curing, beamhouse work (soaking, liming, unhairing), tanning, dyeing, and finishing. Vegetable tannins, chromium salts, and other systems produce different tempers: sole leather, upholstery, garment, and glove stock.
+
+Products include footwear, belts, bags, saddlery, bookbinding, and industrial packings. By-products (gelatin, glue) and waste treatment are part of the plant, not extras: tanning liquor is a regulated effluent.
+
+**Fur processing** dresses pelts—cleaning, fleshing, tanning or tawing, dyeing—for garments and trim. The industry is smaller than leather and more seasonal and fashion-driven. Both trades now sit under tighter animal-welfare, chemical, and labeling rules than they did a century ago.
+
+### Pulp and Paper Technology
+
+**Pulp and paper** convert wood, recovered fiber, and some annual plants into pulp, then into paper, paperboard, and related goods.
+
+Pulp is made by mechanical grinding or by chemical cooking (kraft, sulfite). Bleaching, refining, and screening prepare the stock. On the paper machine, a fiber slurry is formed, pressed, and dried into a continuous web. Coatings, calendering, and converting produce printing papers, packaging board, tissue, newsprint, labels, and specialty sheets (filter, electrical, security).
+
+The mill is heavy in water, steam, and chemicals. Recovery boilers, effluent plants, and recycled-fiber lines are as central as the machine itself. Strength, brightness, porosity, and runnability are the usual quality measures.
+
+### Textiles
+
+**Textiles** begin with fiber—cotton, wool, silk, flax, or manufactured filaments such as polyester, nylon, acrylic, and rayon—and proceed through spinning, weaving or knitting, and finishing.
+
+Main stages:
+
+- **Fiber preparation.** Opening, carding, combing
+- **Yarn.** Spinning, twisting, texturing
+- **Fabric.** Weaving, knitting, nonwovens
+- **Color and finish.** Dyeing, printing, coating, mercerizing, waterproofing, flame retardance
+- **Converting.** Cut-and-sew apparel, home furnishings, industrial fabrics (belts, filters, geotextiles, composites)
+
+Mill design follows the fiber: cotton systems differ from woolen and worsted, and filament extrusion is chemical engineering as much as textile craft. Fast fashion, technical textiles, and recycled fiber have changed product mix more than they have abolished the old sequence of fiber–yarn–cloth.
+
+### Elastomers and Elastomer Products
+
+**Elastomers** are polymers that recover after large deformation: natural rubber from latex, and synthetics such as SBR, polybutadiene, butyl, nitrile, EPDM, silicone, and polyurethane elastomers.
+
+Manufacture includes polymerization or tapping, compounding (carbon black, oils, curatives), shaping (calendering, extrusion, molding), and vulcanization. Products include tires—the largest single use—hoses, belts, seals, gaskets, footwear soles, gloves, and vibration mounts.
+
+Cure state, filler dispersion, and bond to cord or metal decide whether a tire or seal lasts. Scrap rubber and end-of-life tires are a persistent recovery problem; reclaim and crumb markets exist but do not absorb the whole stream.
+
+### Other Products of Specific Materials
+
+This remainder class covers goods defined by a material not already treated at length, or by mixed and specialty stocks:
+
+- **Bone, horn, ivory substitutes, and hard organics** (now often replaced by plastics)
+- **Stone, ceramic, and glass products** when treated as manufactured wares rather than as construction or chemical process
+- **Brush-making, broom, and similar assembled fiber goods**
+- **Composites** that combine fiber and matrix (glass- or carbon-fiber plastics) when classed by material rather than by end use
+- **Cork, felt, and other minor cellular or matted goods** when not filed under wood or textiles
+- **Precious-metal wares and some powder-metallurgy specialties** outside ordinary nonferrous rolling
+
+Classification here is practical: if the plant is organized around *what the stuff is*, not around a finished machine or a chemical reaction train, it belongs with manufactures of specific materials.
+
+### How the Branches Connect
+
+Steel sheet becomes appliance wrappers and car bodies; copper wire becomes windings; lumber becomes crates for both; paper becomes labels and packing; textiles become tire cord; rubber becomes the tire. A shortage or price spike in one mill shows up in the next. Recycling loops—scrap steel, secondary aluminum, recovered paper, ground rubber—tie the branches to waste streams as well as to mines and forests.
+
+Engineering methods overlap even when the materials do not: heat and mass balances, quality statistics, and machine maintenance look familiar from paper machine to rolling mill. What changes is the physics of the stock—plastic flow of steel, hygroscopic swell of wood, orientation of fiber, scorch of a rubber compound.
