@@ -1,37 +1,59 @@
-The major **Christian sects** are Catholicism, Eastern Orthodoxy, and Protestantism. Each has distinct beliefs, traditions, and origins. Other historic and modern groups stand alongside them. Christianity today is diverse. These sects reflect both old theological divisions and later cultural spread. Catholicism and Protestantism are the largest numerically; Eastern and Oriental Orthodoxy remain influential in Europe, the Middle East, and parts of Africa.
+# Christian Sects
 
-## Sects
+A **sect**, in the classic sociological sense (Ernst Troeltsch, H. Richard Niebuhr, and later writers), is a group that has broken from a parent church in the name of purity, restoration, or intensified commitment. Sects are not the same as the major historic families of Christianity—Catholicism, Eastern Orthodoxy, and Protestantism—which are denominations or communions. A sect typically stands in tension with those larger bodies and with the surrounding culture.
 
-A **sect**, in the classic sociological sense (Ernst Troeltsch, H. Richard Niebuhr, and later writers), is a group that has broken from a parent church in the name of purity, restoration, or intensified commitment. Typical marks include:
+Christian *sects* are breakaway or restoration communities marked by stricter discipline, voluntary belonging, and a claim to recover authentic faith. They stand apart from the great denominations even when they grow from them. Some remain small and separate; others become new denominations. The word names a pattern of origin and intensity, not a single doctrine.
 
-- origin in protest or schism
+Typical marks of a sect include:
+
+- origin in protest, revival, or schism
 - stricter boundaries of belief and behavior
 - voluntary, often adult, membership
-- tension with the majority church or with the surrounding culture
+- high demand on members’ time, morals, and loyalty
 - a claim to recover the “true” or original faith
 
-Anabaptist groups in the sixteenth century, early Methodism before it became a denomination, and many Holiness or fundamentalist breakaways began as sects in this sense. Over time a sect may soften, grow institutions, and become a denomination—a common path in Christian history.
+Over time a sect may soften, build institutions, and become a denomination. Early Methodism followed that path. Other groups remain sect-like: smaller, tighter, and more set apart.
 
-## 1. Catholicism
+## How Sects Arise
 
-Catholicism is the largest Christian communion and is centered on the authority of the pope in Rome. Core features include the sacraments (among them baptism and the Eucharist), the veneration of saints, and the claim that both Scripture and church tradition guide the faith. The Church is hierarchical, with bishops and priests forming the clergy. Marian devotion is important in Catholic piety. The Catholic Church has had a large role in theology, art, and world history.
+Christian sects usually form when reformers judge the parent church to be compromised—by wealth, state power, lax discipline, or false doctrine. They gather a voluntary community around a stricter reading of Scripture, a new prophet or teacher, or a recovered practice (adult baptism, Sabbath observance, communal property, tongues, and so on). The break may be forced by expulsion or chosen as separation.
 
-## 2. Eastern Orthodoxy
+## Historic Sectarian Movements
 
-Eastern Orthodoxy developed in the Eastern Roman Empire. It is known for a rich liturgy and for adherence to the first seven ecumenical councils. It is a communion of self-governing churches—such as the Russian, Greek, and Serbian Orthodox churches—led by patriarchs or metropolitans. Orthodoxy emphasizes icons, liturgy, and *theosis* (union with God through spiritual growth). Unlike Catholicism, it does not recognize the pope as having universal jurisdiction.
+**Anabaptists.** In the sixteenth century, groups such as the Swiss Brethren, Mennonites, and Hutterites rejected infant baptism, state churches, and often military service. They practiced adult baptism, disciplined congregations, and, in some cases, communal living. The Amish later intensified that separation.
 
-## 3. Protestantism
+**Early Methodists and Holiness groups.** Methodism began as a revival network inside Anglicanism, with class meetings, strict personal piety, and itinerant preaching. After it became a denomination, Holiness and some Pentecostal bodies broke away again in search of entire sanctification or gifts of the Spirit.
 
-Protestantism arose in the sixteenth-century Reformation as a challenge to certain Catholic teachings. It typically emphasizes faith alone (*sola fide*) and Scripture alone (*sola scriptura*) as the basis of salvation and doctrine. It is highly diverse. Major branches include:
+**Adventist movements.** Nineteenth-century Adventism, including what became Seventh-day Adventism, formed around expectation of Christ’s imminent return and, in many cases, Saturday Sabbath and distinctive health and prophetic teachings.
 
-- **Lutheranism.** Founded by Martin Luther; justification by faith and the authority of Scripture
-- **Anglicanism.** Originated in England; Catholic tradition and Reformation principles held together
-- **Reformed and Presbyterian churches.** Reformed doctrine, including predestination, and government by elders
-- **Baptists and evangelical movements.** Personal faith, adult (believer’s) baptism, and evangelism
+**Restorationist sects.** Some groups claim not to reform an existing church but to restore New Testament Christianity after a supposed great apostasy. Churches of Christ in their stricter forms, Jehovah’s Witnesses, and the Church of Jesus Christ of Latter-day Saints are often placed here. Scholars debate labels: the last two are frequently classed as new religious movements rather than as ordinary Protestant sects, because they add scripture or reject core historic doctrines.
 
-Protestant churches are usually less hierarchical than Catholicism or Orthodoxy; local congregations often have substantial autonomy.
+**Fundamentalist and separatist fellowships.** In the nineteenth and twentieth centuries, many congregations left mainline Protestant churches over biblical inerrancy, evolution, ecumenism, or modern culture. They often form independent fellowships with tight doctrinal statements and limited cooperation with other Christians.
 
-## 4. Other Significant Groups
+## Common Features
 
-- **Oriental Orthodoxy.** Includes the Coptic, Armenian, and Ethiopian churches, which separated from the Chalcedonian churches after the Council of Chalcedon (451 CE) over Christology.
-- **Restorationist and non-denominational movements.** Groups such as the Church of Jesus Christ of Latter-day Saints and Jehovah’s Witnesses often claim to restore original Christianity and hold distinctive readings of Scripture; many classify them outside historic Protestantism.
+Sects tend to:
+
+- define themselves against a “fallen” or worldly church
+- police belief and conduct more closely than denominations do
+- treat conversion or a definite commitment as the door to membership
+- produce strong in-group identity and, sometimes, suspicion of outsiders
+- organize around a founder, a recovered ordinance, or a last-days timetable
+
+They differ widely in theology. Anabaptist pacifism, Adventist eschatology, Pentecostal gifts, and Watch Tower chronology are not one system. What they share is *form*: protest, intensity, and boundary.
+
+## Sect and Denomination
+
+| | Sect | Denomination |
+| --- | --- | --- |
+| Origin | Break or revival | Established tradition |
+| Boundaries | Strict | More porous |
+| Society | Higher tension | More accommodated |
+| Membership | Voluntary and demanding | Often mixed inherited and chosen |
+| Claim | Often exclusive or restorative | One church among others |
+
+A group can move from one column to the other. Pentecostalism began in sectarian revivals and now includes large denominations. Calling a body a sect describes its social type, not whether its faith is true.
+
+## Other Groups Sometimes Called Sects
+
+Popular speech uses “sect” for any small or unfamiliar Christian body. More careful writing reserves it for high-tension, protest, or restoration groups. Oriental Orthodox churches (Coptic, Armenian, Ethiopian) are ancient communions, not sects. Non-denominational megachurches may be independent without being sectarian if they live at ease with the culture and other churches.
