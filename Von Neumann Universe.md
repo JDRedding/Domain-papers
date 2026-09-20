@@ -223,9 +223,11 @@ Under Foundation, every set has a unique rank. Without Foundation, rank is defin
 **R1.** The construction of $\langle V_\alpha\rangle$ is formalizable in ZF (Power Set + Union + Replacement suffice for the recursion).
 
 **R2.** The Axiom of Foundation is equivalent to the statement
+
 $$
 \forall x\,\exists\alpha\in\mathrm{Ord}\,(x\in V_\alpha),
 $$
+
 i.e., the class of all sets equals $V$.
 
 **R3.** $V$ satisfies all ZFC axioms as a class model (with class-sized interpretations of the axioms). Individual stages generally do not:  
