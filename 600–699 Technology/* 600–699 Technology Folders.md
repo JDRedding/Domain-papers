@@ -14,7 +14,9 @@
 | 608 | Inventions & patents |
 | 609 | Historical, geographic & persons treatment |
 
-## 610 Medicine & health
+## 610 Medical
+- Medicine & health
+
 | Number | Heading |
 |--------|---------|
 | 610 | Medicine & health |
