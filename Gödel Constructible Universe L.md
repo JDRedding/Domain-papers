@@ -61,7 +61,7 @@ This document replaces informal notes with a single normative construction, alig
 - Use **constructible rank** for ${rank}_L$, not Mirimanoff / $V$ -rank.
 - Use $L[A]$ only for extra-predicate constructibility.
 - Use $L(A)$ only for the smallest inner model containing $A$ and all ordinals.
-- Write ${Def}(X)\subseteq\mathcal{P}(X)$, never “${Def}\subset\mathcal{P}$” as an operator identity.
+- Write ${Def}(X)\subseteq\mathcal{P}(X)$, never “ ${Def}\subset\mathcal{P}$ ” as an operator identity.
 
 ---
 
