@@ -1,4 +1,5 @@
 MCU LOKI MULTIVERSE  
+==================================
 // in-universe map  
 
 FUNDAMENTALS
@@ -435,3 +436,165 @@ branch branch branch ...   YGGDRASIL
    protect branches
    hunt Kang variants
    no more mass prune of Sacred-only
+
+MCU x COMICS MULTIVERSE  // how the Loki map fits  // copyable
+==================================
+FUNDAMENTALS
+=================
+  MCU_multiverse     forest of timelines
+                     Sacred was the only legal braid
+                     Yggdrasil is the living forest
+  comics_multiverse  catalog of Earths
+                     Earth-616 is the main book
+                     other Earths are legal by default
+  616_name           shared nickname for "prime continuity"
+                     MCU 616 = Sacred / main films
+                     comics 616 = main comics
+                     not proof they are the same universe
+                     handbooks also filed films as 199999
+  nexus_MCU          a choice that leaves the script
+  nexus_comics       divergences, nexus beings, incursions
+                     not the same radar-and-reset kit
+  prune              MCU cleanup into the Void
+  incursion          comics two-Earth collision
+                     one world usually dies
+  yggdrasil_MCU      Loki holding all branches
+  yggdrasil_comics   world-tree of the Nine Realms
+                     not usually one god as the loom
+
+TYPES
+=================
+  Timeline
+    SacredTimeline      MCU political braid
+    BranchedTimeline    MCU fork past a Nexus
+    ComicEarth          numbered continuity (616, 1610, 65...)
+  Variant
+    LokiVariant
+    KangVariant         same face, different mask
+    TVAVariant
+  Institution
+    TVA_MCU             Kang church then tree-watch
+    TVA_comics          time clerks, fallible, older than Kang-as-king
+    CouncilOfKangs_MCU  dynasty after the isolate dies
+    CouncilOfKangs_comics  Cross-Time Kangs who usually kill down to one
+  Entity
+    Alioth_MCU          Void storm, leftover-time dog
+    Alioth_comics       first being free of time
+                        own temporal empire
+    Loom                MCU-only failsafe ring
+    Citadel             End of Time throne
+    TimeKeepers_MCU     fake lizards
+    TimeKeepers_comics  real constructs of He Who Remains
+
+VARIABLES
+=================
+  LOKI_WHO_REMAINS     MCU God of Stories
+                       sits the Citadel
+                       is the tree
+  LOKI_COMICS          God of Mischief
+                       later God of Stories in Agent of Asgard
+                       does not replace a Kang at End of Time
+  HE_WHO_REMAINS_MCU   a Kang who won by subtraction
+  HE_WHO_REMAINS_COMICS last TVA agent of a prior cosmos
+                       not Nathaniel Richards
+                       builds Time-Keepers / Time-Twisters
+  KANG_CONQUEROR       31st-c warlord in both
+                       MCU: one branch, Quantum fall
+                       comics: time traveler who multiplies
+  VICTOR_TIMELY        MCU inventor mind
+  RAMA_TUT             Kang as god-king of a past
+  IMMORTUS             comics: future Kang
+                       often works with Time-Keepers
+                       against his younger self
+                       MCU: Council voice
+                       HWR also borrows his "steward of time" job
+  SCARLET_CENTURION    comics: Kang alias or son Marcus
+                       MCU: Council general-mask
+  ALIOTH
+  LOOM
+  CHRONO_RADAR
+  REDLINE
+
+MCU MACHINE 
+=================
+  Nexus spark
+  chrono-radar
+  orange = prune window
+  redline = branch locks
+  Reset Charge
+  Void
+  Alioth eats leftovers
+  Loom braids or cuts
+  HWR dies
+  Loom fails
+  Loki becomes the loom
+  Yggdrasil
+  TVA hunts Kangs not every fork
+  Council reads the tree as a road
+
+COMICS MACHINE  (same nouns, other offices)
+=================
+  many Earths already exist
+  no Sacred law required for publication
+  TVA files time crimes
+  does not own all reality
+  He Who Remains is not Kang
+  Time-Keepers try to shepherd
+  Immortus tries to freeze his own ending
+  Alioth is a rival empire
+  Council meets then eats itself
+  Kang Dynasty 2001 = one Conqueror + heir
+                     sword-ship over Earth
+                     not a full variant parliament
+  Secret Wars / Beyonders / Battleworld
+  = the comic-scale "tree cannot be held"
+
+COMPRESSION  MCU soldered these together
+=================
+  comics HWR + Immortus + Kang  ->  MCU He Who Remains
+  comics Alioth-empire + leftover time  ->  MCU Void dog
+  comics Council + "Kang Dynasty" title  ->  MCU returning family
+  comics TVA clerks + Time-Keepers  ->  MCU church of Sacred
+  comics Yggdrasil + Ewing's God of Stories  ->  MCU Loktree
+
+FIT
+=================
+  as MCU physics
+      the Loki map is the OS
+      What If, Madness, Quantumania, Deadpool
+      sit as branches the isolate no longer deletes
+  as comics physics
+      adaptation layer not a translation
+      comics do not need a Sacred Timeline to exist
+      they need 616 to stay the main story
+      while other Earths keep printing
+  Kang tragedy
+      comics: he cannot stop becoming Immortus
+      MCU: he cannot stand another him living
+  unanswered comic scale
+      nexus beings as universe anchors
+      incursions
+      Beyonders
+      Battleworld
+      MCU Doomsday / Secret Wars walk that scale
+      on the stage Loki already built
+
+FLOW OVERLAY
+=================
+  COMICS                    MCU
+  many legal Earths         one legal braid
+         |                         |
+         |                         v
+         |                  HWR + TVA + Loom + Alioth
+         |                         |
+         |                         v
+         |                  Sylvie kills the isolate
+         |                         |
+         v                         v
+  Secret Wars cycles        tree instead of braid
+  Battleworld / rebirth     Loki holds branches
+         |                         |
+         v                         v
+  616 continues             616 continues as a branch
+  other Earths continue     other branches continue
+  Kangs keep returning      Council still has a road
