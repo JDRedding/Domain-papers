@@ -29,7 +29,7 @@ Nutrition and cooking support family health: weekly menus, shopping lists, food 
 
 Weekly menus and shopping lists save time and reduce waste. Involving household members in cooking encourages better eating and eases the daily load. Batch cooking and freezer meals help when days are full.
 
-### 3.Fanily care
+### 3.Family care
 
 Home economics covers stages of child development, learning, and care, and also elder care—safety, well-being, and emotional support. Supporting children’s schoolwork and interests aids growth and can ease household tension. Steady routines for homework, reading, and activities teach responsibility and time use.
 
