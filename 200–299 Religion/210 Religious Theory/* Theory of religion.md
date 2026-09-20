@@ -1,7 +1,7 @@
 # Theory of religion
 - 210 Religious Theory
 
-**The theory of religion** comprises systematic studies that explain the origins, functions, structures, and effects of religious phenomena. Unlike theology, which often assumes the truth of spiritual claims, this theoretical work is analytical and comparative. It draws on sociology, anthropology, psychology, philosophy, and history.
+**The theory of religion** comprises systematic studies that explain the origins, functions, structures, and effects of religious phenomena. Unlike theology, which often assumes the truth of spiritual claims, this theoretical work is analytical and comparative. It draws on sociology, anthropology, psychology, philosophy, and history. This framework offers a postgraduate-level map of the field, linking classical accounts with contemporary, cross-disciplinary research.
 
 ## 1. Conceptual Framework
 
@@ -61,5 +61,3 @@ The theory of religion is interdisciplinary. It treats religion not only as a bo
 - Geertz, C. *The Interpretation of Cultures* (1973)
 - Boyer, P. *Religion Explained: The Evolutionary Origins of Religious Thought* (2001)
 - Eliade, M. *The Sacred and the Profane* (1957)
-
-This framework offers a postgraduate-level map of the field, linking classical accounts with contemporary, cross-disciplinary research.
