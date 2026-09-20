@@ -111,17 +111,17 @@ On $X$, $\le$ may satisfy:
 | AY | asymmetric | $\forall x,y.\; x<y \Rightarrow \neg(y<x)$ |
 | TR | trichotomous | $\forall x,y.\; x<y \lor x=y \lor y<x$ |
 
-**Lemma 2.2.1.** IR + T$_{<}$ **implies** AY.  
+**Lemma 2.2.1.** IR + $T_{<}$ **implies** AY.  
 **Lemma 2.2.2.** Under the conversion of §1.2:  
 
-R+T+AS $\iff$ IR+T$_{<}$, and TO $\iff$ TR.
+R+T+AS $\iff$ IR+$T_{<}$, and TO $\iff$ TR.
 
 ### 2.3 Partial order (poset) — normative
 A **partial order** is a relation $\le$ satisfying R, T, and AS.  
 The pair $(X,\le)$ is a **poset**.
 
 ### 2.4 Strict partial order — normative
-A **strict partial order** is a relation $<$ satisfying IR and T$_{<}$.
+A **strict partial order** is a relation $<$ satisfying IR and $T_{<}$.
 
 ### 2.5 Preorder
 A **preorder** is a relation $\le$ satisfying R and T (AS not required).  
