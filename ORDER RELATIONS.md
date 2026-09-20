@@ -1,4 +1,5 @@
-# Foundations
+# ORDER RELATIONS
+## Foundations
 
 - Binary relation $R$ on a set $X$
 - **Preorder:** reflexive + transitive
