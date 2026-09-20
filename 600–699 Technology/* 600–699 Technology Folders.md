@@ -1,6 +1,6 @@
-Class 600: Technology (Applied sciences)
+# Class 600: Technology (Applied sciences)
 
-600 Technology
+## 600 Technology
 | Number | Heading |
 |--------|---------|
 | 600 | Technology |
@@ -14,7 +14,7 @@ Class 600: Technology (Applied sciences)
 | 608 | Inventions & patents |
 | 609 | Historical, geographic & persons treatment |
 
-610 Medicine & health
+## 610 Medicine & health
 | Number | Heading |
 |--------|---------|
 | 610 | Medicine & health |
@@ -28,7 +28,7 @@ Class 600: Technology (Applied sciences)
 | 618 | Gynecology, obstetrics, pediatrics & geriatrics |
 | 619 | [Unassigned] |
 
-620 Engineering & allied operations
+## 620 Engineering & allied operations
 | Number | Heading |
 |--------|---------|
 | 620 | Engineering & allied operations |
@@ -42,7 +42,7 @@ Class 600: Technology (Applied sciences)
 | 628 | Sanitary & municipal engineering |
 | 629 | Other branches of engineering |
 
-630 Agriculture & related technologies
+## 630 Agriculture & related technologies
 | Number | Heading |
 |--------|---------|
 | 630 | Agriculture & related technologies |
@@ -56,7 +56,7 @@ Class 600: Technology (Applied sciences)
 | 638 | Insect culture |
 | 639 | Hunting, fishing & conservation |
 
-640 Home & family management
+## 640 Home & family management
 | Number | Heading |
 |--------|---------|
 | 640 | Home & family management |
@@ -70,7 +70,7 @@ Class 600: Technology (Applied sciences)
 | 648 | Housekeeping |
 | 649 | Child rearing & home care of persons |
 
-650 Management & auxiliary services
+## 650 Management & auxiliary services
 | Number | Heading |
 |--------|---------|
 | 650 | Management & auxiliary services |
@@ -84,7 +84,7 @@ Class 600: Technology (Applied sciences)
 | 658 | General management |
 | 659 | Advertising & public relations |
 
-660 Chemical engineering
+## 660 Chemical engineering
 | Number | Heading |
 |--------|---------|
 | 660 | Chemical engineering |
@@ -98,7 +98,7 @@ Class 600: Technology (Applied sciences)
 | 668 | Technology of other organic products |
 | 669 | Metallurgy |
 
-670 Manufacturing
+## 670 Manufacturing
 | Number | Heading |
 |--------|---------|
 | 670 | Manufacturing |
@@ -112,7 +112,7 @@ Class 600: Technology (Applied sciences)
 | 678 | Elastomers & elastomer products |
 | 679 | Other products of specific materials |
 
-680 Manufacture for specific uses
+## 680 Manufacture for specific uses
 | Number | Heading |
 |--------|---------|
 | 680 | Manufacture for specific uses |
@@ -126,7 +126,7 @@ Class 600: Technology (Applied sciences)
 | 688 | Other final products & packaging |
 | 689 | [Unassigned] |
 
-690 Construction of buildings
+## 690 Construction of buildings
 | Number | Heading |
 |--------|---------|
 | 690 | Construction of buildings |
@@ -140,7 +140,7 @@ Class 600: Technology (Applied sciences)
 | 698 | Detail finishing |
 | 699 | [Unassigned] |
 
-Notes  
-This class covers applied sciences and practical technologies. Pure/natural sciences remain in the 500s.  
-Medicine (610) is placed here rather than with pure biology.  
-Further decimal expansions are extensive (e.g., under 616 Diseases, 621 Applied physics/electrical engineering, 636 Animal husbandry, 658 Management).
+## Notes  
+- This class covers applied sciences and practical technologies. Pure/natural sciences remain in the 500s.  
+- Medicine (610) is placed here rather than with pure biology.  
+- Further decimal expansions are extensive (e.g., under 616 Diseases, 621 Applied physics/electrical engineering, 636 Animal husbandry, 658 Management).
