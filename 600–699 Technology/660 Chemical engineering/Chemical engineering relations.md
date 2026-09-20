@@ -345,9 +345,9 @@ D-mode : drift / measurable evolution
 
 ---
 
-# 1. Quantum & Computational Chemistry
+### 1. Quantum & Computational Chemistry
 
-### Time‑independent Schrödinger
+#### Time‑independent Schrödinger
 ```
 S-mode:
     Ĥ ψ = E ψ
@@ -357,7 +357,7 @@ D-mode:
     measurable spectrum = Γ_{S→D}(Φ_E)
 ```
 
-### Electronic Hamiltonian (Born–Oppenheimer)
+#### Electronic Hamiltonian (Born–Oppenheimer)
 ```
 S-mode:
     Φ_Hel = -Σ_i (ħ²/2me) ∇²_i
@@ -369,7 +369,7 @@ D-mode:
     measurable energies = Γ_{S→D}(Φ_Hel)
 ```
 
-### Expectation value
+#### Expectation value
 ```
 I-mode:
     ⟨Â⟩ = ∫ ψ* Â ψ dτ
@@ -378,7 +378,7 @@ D-mode:
     A_meas = Γ_{I→D}(⟨Â⟩)
 ```
 
-### Hartree–Fock energy
+#### Hartree–Fock energy
 ```
 S-mode:
     Φ_HF = Σ_i h_ii + 1/2 Σ_{ij}(2J_ij - K_ij)
@@ -387,7 +387,7 @@ D-mode:
     E_HF = Γ_{S→D}(Φ_HF)
 ```
 
-### HOMO–LUMO gap
+#### HOMO–LUMO gap
 ```
 S-mode:
     ΔΦ = Φ_LUMO - Φ_HOMO
@@ -398,9 +398,9 @@ D-mode:
 
 ---
 
-# 2. Spectroscopy
+### 2. Spectroscopy
 
-### Photon energy
+#### Photon energy
 ```
 S-mode:
     Φ_photon = hν = hc/λ
@@ -409,7 +409,7 @@ D-mode:
     E = Γ_{S→D}(Φ_photon)
 ```
 
-### Beer–Lambert
+#### Beer–Lambert
 ```
 I-mode:
     A = ε c l = -log10(I/I0)
@@ -418,7 +418,7 @@ D-mode:
     absorbance_meas = Γ_{I→D}(A)
 ```
 
-### Harmonic oscillator
+#### Harmonic oscillator
 ```
 S-mode:
     Φ_v = hν (v + 1/2)
@@ -427,7 +427,7 @@ D-mode:
     E_v = Γ_{S→D}(Φ_v)
 ```
 
-### Anharmonic spacing
+#### Anharmonic spacing
 ```
 S-mode:
     ΔΦ_v = hν0 (1 - 2χ_e (v+1))
@@ -436,7 +436,7 @@ D-mode:
     ΔE = Γ_{S→D}(ΔΦ_v)
 ```
 
-### Rigid rotor
+#### Rigid rotor
 ```
 S-mode:
     Φ_J = B J(J+1)
@@ -448,9 +448,9 @@ D-mode:
 
 ---
 
-# 3. Kinetics & Thermodynamics
+### 3. Kinetics & Thermodynamics
 
-### Empirical rate law
+#### Empirical rate law
 ```
 I-mode:
     v = k [A]^m [B]^n
@@ -459,7 +459,7 @@ D-mode:
     measurable rate = Γ_{I→D}(v)
 ```
 
-### Arrhenius
+#### Arrhenius
 ```
 S-mode:
     Φ_k = A exp(-Ea / (R T))
@@ -468,7 +468,7 @@ D-mode:
     k = Γ_{S→D}(Φ_k)
 ```
 
-### Gibbs energy
+#### Gibbs energy
 ```
 S-mode:
     ΔΦ_G = ΔΦ_H - T ΔΦ_S
@@ -477,7 +477,7 @@ D-mode:
     ΔG = Γ_{S→D}(ΔΦ_G)
 ```
 
-### Equilibrium
+#### Equilibrium
 ```
 S-mode:
     ΔΦ_G° = -R T ln K
@@ -487,7 +487,7 @@ D-mode:
     ΔG = ΔG° + R T ln Q
 ```
 
-### van ’t Hoff
+#### van ’t Hoff
 ```
 S-mode:
     ∂ ln K / ∂T = ΔΦ_H° / (R T²)
@@ -496,7 +496,7 @@ D-mode:
     measurable slope = Γ_{S→D}(∂ ln K / ∂T)
 ```
 
-### Eyring / TST
+#### Eyring / TST
 ```
 S-mode:
     Φ_k = κ (kB T / h) exp(ΔΦ_S‡/R) exp(-ΔΦ_H‡/(R T))
@@ -507,9 +507,9 @@ D-mode:
 
 ---
 
-# 4. Statistical Thermodynamics
+### 4. Statistical Thermodynamics
 
-### Canonical partition function
+#### Canonical partition function
 ```
 S-mode:
     Φ_Q = Σ_i g_i exp(-ε_i / (kB T))
@@ -518,7 +518,7 @@ D-mode:
     Q = Γ_{S→D}(Φ_Q)
 ```
 
-### Helmholtz energy
+#### Helmholtz energy
 ```
 S-mode:
     Φ_A = -kB T ln Q
@@ -527,7 +527,7 @@ D-mode:
     A = Γ_{S→D}(Φ_A)
 ```
 
-### Entropy (canonical)
+#### Entropy (canonical)
 ```
 S-mode:
     Φ_S = kB ln Q + kB T (∂ ln Q / ∂T)_V
@@ -536,7 +536,7 @@ D-mode:
     S = Γ_{S→D}(Φ_S)
 ```
 
-### Microcanonical
+#### Microcanonical
 ```
 S-mode:
     Φ_Smicro = kB ln W
@@ -547,9 +547,9 @@ D-mode:
 
 ---
 
-# 5. Surface & Colloid Chemistry
+### 5. Surface & Colloid Chemistry
 
-### Langmuir isotherm
+#### Langmuir isotherm
 ```
 I-mode:
     θ = Kp / (1 + Kp)
@@ -558,7 +558,7 @@ D-mode:
     coverage_meas = Γ_{I→D}(θ)
 ```
 
-### Gibbs adsorption
+#### Gibbs adsorption
 ```
 I-mode:
     Γ = -(1/(R T)) (∂γ / ∂ ln c)_T
@@ -569,9 +569,9 @@ D-mode:
 
 ---
 
-# 6. Symmetry / Group Theory
+### 6. Symmetry / Group Theory
 
-### Great orthogonality
+#### Great orthogonality
 ```
 S-mode:
     Φ_orth = Σ_R χΓ(R)* χΓ'(R) = h δΓΓ'
@@ -580,7 +580,7 @@ D-mode:
     orthogonality_meas = Γ_{S→D}(Φ_orth)
 ```
 
-### Reduction
+#### Reduction
 ```
 S-mode:
     Φ_nΓ = (1/h) Σ_R χ(R) χΓ(R)*
@@ -591,9 +591,9 @@ D-mode:
 
 ---
 
-# 7. Coordination / Organometallic
+### 7. Coordination / Organometallic
 
-### Crystal-field splitting
+#### Crystal-field splitting
 ```
 S-mode:
     ΔΦ_o = 10 Dq
@@ -602,7 +602,7 @@ D-mode:
     Δo = Γ_{S→D}(ΔΦ_o)
 ```
 
-### Valence electron count
+#### Valence electron count
 ```
 S-mode:
     Φ_VEC = n_metal + n_ligand + n_charge
@@ -611,7 +611,7 @@ D-mode:
     VEC = Γ_{S→D}(Φ_VEC)
 ```
 
-### QSAR (Hansch)
+#### QSAR (Hansch)
 ```
 I-mode:
     log(1/C) = a π + b σ + ... + k
@@ -622,9 +622,9 @@ D-mode:
 
 ---
 
-# 8. Chemical Engineering Process Equations
+### 8. Chemical Engineering Process Equations
 
-### Mass balance
+#### Mass balance
 ```
 D-mode evolution:
     d m / dt = Σ ṁ_in - Σ ṁ_out + R_gen
@@ -640,7 +640,7 @@ D-mode:
     d m/dt = Γ_{I→D}(Φ_flux + Φ_gen)
 ```
 
-### Component mole balance
+#### Component mole balance
 ```
 I-mode:
     Φ_A = F_A,in - F_A,out + ∫ r_A dV
@@ -649,7 +649,7 @@ D-mode:
     dN_A/dt = Γ_{I→D}(Φ_A)
 ```
 
-### PFR
+#### PFR
 ```
 D-mode:
     dF_A/dV = r_A
@@ -664,7 +664,7 @@ D-mode:
     dF_A/dV = Γ_{I→D}(Φ_rA)
 ```
 
-### CSTR
+#### CSTR
 ```
 D-mode:
     V = F_A0 X / (-r_A)
@@ -679,7 +679,7 @@ D-mode:
     V = Γ_{I→D}(Φ_design)
 ```
 
-### Conversion–rate
+#### Conversion–rate
 ```
 I-mode:
     Φ_rate = C_A0 dX/dτ
@@ -690,9 +690,9 @@ D-mode:
 
 ---
 
-# 9. Energy Balances
+### 9. Energy Balances
 
-### Open system
+#### Open system
 ```
 I-mode:
     Φ_E = Q̇ - Ẇ + Σ ṁ_in Ĥ_in - Σ ṁ_out Ĥ_out
@@ -701,7 +701,7 @@ D-mode:
     dE/dt = Γ_{I→D}(Φ_E)
 ```
 
-### Steady-state enthalpy
+#### Steady-state enthalpy
 ```
 I-mode:
     Φ_Q = Σ ṅ_out H_out - Σ ṅ_in H_in
@@ -710,7 +710,7 @@ D-mode:
     Q̇ = Γ_{I→D}(Φ_Q)
 ```
 
-### Overall heat-transfer coefficient
+#### Overall heat-transfer coefficient
 ```
 S-mode:
     Φ_U = 1/h_i + Δx/k + 1/h_o
@@ -721,9 +721,9 @@ D-mode:
 
 ---
 
-# 10. Fluid Flow & Momentum
+### 10. Fluid Flow & Momentum
 
-### Bernoulli
+#### Bernoulli
 ```
 S-mode invariant:
     Φ_B = P/ρ + v²/2 + g z
@@ -732,7 +732,7 @@ D-mode:
     measurable head = Γ_{S→D}(Φ_B)
 ```
 
-### Reynolds number
+#### Reynolds number
 ```
 S-mode:
     Φ_Re = ρ v D / μ
@@ -741,7 +741,7 @@ D-mode:
     Re = Γ_{S→D}(Φ_Re)
 ```
 
-### Ergun
+#### Ergun
 ```
 I-mode:
     Φ_Ergun = 150 ((1-ε)²/ε³)(μ u/d_p²)
@@ -753,9 +753,9 @@ D-mode:
 
 ---
 
-# 11. Heat & Mass Transfer
+### 11. Heat & Mass Transfer
 
-### Fourier
+#### Fourier
 ```
 I-mode:
     Φ_q = -k ∇T
@@ -764,7 +764,7 @@ D-mode:
     q = Γ_{I→D}(Φ_q)
 ```
 
-### Newton cooling
+#### Newton cooling
 ```
 I-mode:
     Φ_h = h (Ts - T∞)
@@ -773,7 +773,7 @@ D-mode:
     q = Γ_{I→D}(Φ_h)
 ```
 
-### Fick
+#### Fick
 ```
 I-mode:
     Φ_JA = -D_AB ∇ c_A
@@ -782,7 +782,7 @@ D-mode:
     J_A = Γ_{I→D}(Φ_JA)
 ```
 
-### Film theory
+#### Film theory
 ```
 I-mode:
     Φ_NA = k_c (c_A,i - c_A,b)
