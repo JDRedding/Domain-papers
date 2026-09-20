@@ -187,7 +187,7 @@ Well-order **does not** require GUS. Finite well-orders violate GUS. $\mathbb{N}
 ## 3. Classification of strict orders (Profile P-SO)
 
 ### 3.1 Inheritance (normative tree)
-The following is the corrected hierarchy. Each child **adds** axioms; children of the same parent are **independent** unless noted.
+The following is the hierarchy. Each child **adds** axioms; children of the same parent are **independent** unless noted.
 
 ```
 Strict partial order          IR + T_<
@@ -333,7 +333,7 @@ Write $\sigma(P)$ for this topology.
 
 **Theorem 5.5.1.** For a dcpo $P$, $\le_{\sigma(P)}\;=\;\le_P$.
 
-Scott topology is the correct default for domain theory. It **shall not** be defined on an arbitrary poset unless directed suprema used in clause (2) are specified.
+Scott topology is the default for domain theory. It **shall not** be defined on an arbitrary poset unless directed suprema used in clause (2) are specified.
 
 ### 5.6 Order topology (Profile P-ORD)
 Let $(X,<)$ be a **total** strict order. The **order topology** $\tau(<)$ has subbasis
