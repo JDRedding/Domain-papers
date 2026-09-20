@@ -1,7 +1,7 @@
 # Christian denomination
 - 280 Christian Branches
 
-A **Christian denomination** is a distinct body within Christianity, marked by particular beliefs, practices, and structures. The major families are Catholicism, Protestantism, and Eastern Orthodoxy. In the United States, Protestant denominations — especially Baptists and Methodists—are widespread in the South and Midwest. Catholicism is strong in many urban centers and among certain immigrant communities. Eastern Orthodoxy is smaller but present in metropolitan areas and among descendants of Eastern European and Middle Eastern immigrants. Knowing the denominations clarifies the diversity of Christianity: its history, theology, and cultural effect where several traditions live side by side.
+A **Christian denomination** is a body within Christianity, marked by particular beliefs, practices, and structures. The major denomination are Catholicism, Protestantism, and Eastern Orthodoxy. In the United States, Protestant denominations — especially Baptists and Methodists—are widespread in the South and Midwest. Catholicism is strong in many urban centers and among certain immigrant communities. Eastern Orthodoxy is smaller but present in metropolitan areas and among descendants of Eastern European and Middle Eastern immigrants. Knowing the denominations clarifies the diversity of Christianity: its history, theology, and cultural effect where several traditions live side by side.
 
 ## Major Branches of Christianity
 
