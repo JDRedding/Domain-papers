@@ -30,7 +30,9 @@
 | 618 | Gynecology, obstetrics, pediatrics & geriatrics |
 | 619 | [Unassigned] |
 
-## 620 Engineering & allied operations
+## 620 Engineering 
+- Engineering & allied operations
+
 | Number | Heading |
 |--------|---------|
 | 620 | Engineering & allied operations |
@@ -44,7 +46,9 @@
 | 628 | Sanitary & municipal engineering |
 | 629 | Other branches of engineering |
 
-## 630 Agriculture & related technologies
+## 630 Agriculture
+- Agriculture & related technologies
+
 | Number | Heading |
 |--------|---------|
 | 630 | Agriculture & related technologies |
