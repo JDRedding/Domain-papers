@@ -1,5 +1,5 @@
 # Management and Auxiliary Services
-- 650 Management services/
+- 650 Management services
 
 **Management services** is the field concerned with planning, organizing, leading, and controlling work, together with the office, communication, accounting, and promotional services that make organized activity possible. It covers both **general management**—the direction of people and resources toward goals—and the **supporting crafts** of the office: records, correspondence, shorthand, bookkeeping, and public communication. **Management services** are the organized effort to direct work and to support that direction with offices, writing, records of speech, accounts, and public communication. General management sets and pursues goals. Office services, written communication, and shorthand carry and store the work. Accounting measures it. Advertising and public relations explain it to markets and publics. Together they are the infrastructure of coordinated human activity.
 
