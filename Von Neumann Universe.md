@@ -112,7 +112,7 @@ A set whose transitive closure is finite. These are exactly the elements of $V_\
 | ${rank}(x)$ | rank of $x$ |
 | $\subseteq$, $\in$ | subset, membership |
 
-The empty union is $\emptyset$. Thus the clause for $\alpha=0$ is a special case of the limit clause.
+The empty union is $\emptyset$. Thus for $\alpha=0$ is a special case of the limit.
 
 ---
 
@@ -140,8 +140,8 @@ $$
 V_\lambda=\bigcup_{\beta<\lambda}V_\beta.
 $$
 
-### Equivalent unified clause (normative alternative)
-The three clauses of 5.1–5.3 shall be treated as equivalent to the single equation
+### Equivalent unified (normative alternative)
+The three shall be treated as equivalent to the single equation
 
 $$
 V_\alpha=\bigcup_{\beta<\alpha}\mathcal{P}(V_\beta)
@@ -238,7 +238,7 @@ i.e., the class of all sets equals $V$.
 
 ---
 
-## Initial stages (informative, required to match the recursive clauses)
+## Initial stages (informative, required to match the recursive)
 
 $$
 \begin{align*}
@@ -272,7 +272,7 @@ Thus $|V_4|=16$, $|V_5|=2^{16}=65536$, $|V_6|=2^{65536}$.
 ## Conformance
 
 An implementation, formalization, or exposition conforms to this specification if and only if it:
-1. uses the clauses (or the unified clause 5.4) as the definition of $V_\alpha$;
+1. uses the definition of $V_\alpha$;
 2. uses the rank conventions so that ${rank}(\emptyset)=0$ and $V_\alpha=\{x\mid{rank}(x)<\alpha\}$;
 3. treats $V$ as a proper class;
 4. states Foundation as the axiom that $V$ exhausts the universe of sets;
