@@ -3,7 +3,19 @@
 
 A **Christian denomination** is a body within Christianity, marked by particular beliefs, practices, and structures. The major denomination are Catholicism, Protestantism, and Eastern Orthodoxy. In the United States, Protestant denominations — especially Baptists and Methodists—are widespread in the South and Midwest. Catholicism is strong in many urban centers and among certain immigrant communities. Eastern Orthodoxy is smaller but present in metropolitan areas and among descendants of Eastern European and Middle Eastern immigrants. Knowing the denominations clarifies the diversity of Christianity: its history, theology, and cultural effect where several traditions live side by side.
 
-## Major Branches of Christianity
+## Denomination
+
+A **denomination** is a relatively stable, organized body within a larger religious tradition. Typical marks include:
+
+- recognized standing among other churches
+- a defined creed, liturgy, or confession, with room for internal variety
+- formal structures (synods, bishops, conventions, congregations)
+- an accepted place in public life—schools, charities, chaplaincies, civic partnership
+- membership that is often inherited as well as chosen
+
+Catholicism, Eastern Orthodoxy, Lutheranism, Anglicanism, Methodism, and the major Baptist conventions are usually described as denominations (or families of denominations). A denomination claims to represent the Christian faith but does not, in modern usage, deny that other churches may also be Christian.
+
+## Major Denominations of Christianity
 
 ### 1. Roman Catholicism
 
