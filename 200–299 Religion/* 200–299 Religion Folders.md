@@ -1,4 +1,4 @@
-Class 200: Religion
+# Class 200: Religion
 
 This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries). Headings use the conventional summary forms.
 
