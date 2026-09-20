@@ -1,5 +1,17 @@
 The major **Christian sects** are Catholicism, Eastern Orthodoxy, and Protestantism. Each has distinct beliefs, traditions, and origins. Other historic and modern groups stand alongside them. Christianity today is diverse. These sects reflect both old theological divisions and later cultural spread. Catholicism and Protestantism are the largest numerically; Eastern and Oriental Orthodoxy remain influential in Europe, the Middle East, and parts of Africa.
 
+## Sects
+
+A **sect**, in the classic sociological sense (Ernst Troeltsch, H. Richard Niebuhr, and later writers), is a group that has broken from a parent church in the name of purity, restoration, or intensified commitment. Typical marks include:
+
+- origin in protest or schism
+- stricter boundaries of belief and behavior
+- voluntary, often adult, membership
+- tension with the majority church or with the surrounding culture
+- a claim to recover the “true” or original faith
+
+Anabaptist groups in the sixteenth century, early Methodism before it became a denomination, and many Holiness or fundamentalist breakaways began as sects in this sense. Over time a sect may soften, grow institutions, and become a denomination—a common path in Christian history.
+
 ## 1. Catholicism
 
 Catholicism is the largest Christian communion and is centered on the authority of the pope in Rome. Core features include the sacraments (among them baptism and the Eucharist), the veneration of saints, and the claim that both Scripture and church tradition guide the faith. The Church is hierarchical, with bishops and priests forming the clergy. Marian devotion is important in Catholic piety. The Catholic Church has had a large role in theology, art, and world history.
