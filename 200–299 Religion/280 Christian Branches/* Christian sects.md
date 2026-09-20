@@ -1,4 +1,5 @@
 # Christian Sects
+- 280 Christian Branches
 
 A **sect**, in the classic sociological sense (Ernst Troeltsch, H. Richard Niebuhr, and later writers), is a group that has broken from a parent church in the name of purity, restoration, or intensified commitment. Sects are not the same as the major historic families of Christianity—Catholicism, Eastern Orthodoxy, and Protestantism—which are denominations or communions. A sect typically stands in tension with those larger bodies and with the surrounding culture.
 
