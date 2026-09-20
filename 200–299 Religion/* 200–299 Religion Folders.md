@@ -2,7 +2,7 @@ Class 200: Religion
 
 This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries). Headings use the conventional summary forms.
 
-200 Religion
+## 200 Religion
 | Number | Heading |
 |--------|---------|
 | 200 | Religion |
@@ -16,7 +16,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 208 | Sources |
 | 209 | Sects & reform movements |
 
-210 Philosophy & theory of religion
+## 210 Philosophy & theory of religion
 | Number | Heading |
 |--------|---------|
 | 210 | Philosophy & theory of religion |
@@ -30,7 +30,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 218 | Humankind |
 | 219 | [Unassigned] |
 
-220 The Bible
+## 220 The Bible
 | Number | Heading |
 |--------|---------|
 | 220 | Bible |
@@ -44,9 +44,9 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 228 | Revelation (Apocalypse) |
 | 229 | Apocrypha & pseudepigrapha |
 
-230 Christendom
-- Christianity & Christian theology
-- 
+## 230 Christendom
+Christianity & Christian theology
+ 
 | Number | Heading |
 |--------|---------|
 | 230 | Christianity & Christian theology |
@@ -60,7 +60,9 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 238 | Creeds & catechisms |
 | 239 | Apologetics & polemics |
 
-240 Christian practice & observance (Christian moral & devotional theology)
+## 240 Christian practice & observance
+Christian moral & devotional theology
+
 | Number | Heading |
 |--------|---------|
 | 240 | Christian moral & devotional theology |
@@ -74,7 +76,8 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 248 | Christian experience, practice, life |
 | 249 | Christian observances in family life |
 
-250 Christian pastoral practice & religious orders
+## 250 Christian pastoral practice & religious orders
+
 | Number | Heading |
 |--------|---------|
 | 250 | Christian pastoral practice & religious orders |
@@ -88,7 +91,8 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 258 | [Unassigned] |
 | 259 | Pastoral care of families & persons |
 
-260 Christian organization, social work & worship
+## 260 Christian organization, social work & worship
+
 | Number | Heading |
 |--------|---------|
 | 260 | Christian organization, social work & worship |
@@ -102,7 +106,8 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 268 | Religious education |
 | 269 | Spiritual renewal |
 
-270 History of Christianity
+## 270 History of Christianity
+
 | Number | Heading |
 |--------|---------|
 | 270 | History of Christianity |
@@ -116,7 +121,8 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 278 | History of Christianity in South America |
 | 279 | History of Christianity in other areas |
 
-280 Christian denominations & sects
+## 280 Christian denominations & sects
+
 | Number | Heading |
 |--------|---------|
 | 280 | Christian denominations & sects |
@@ -130,7 +136,8 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 288 | [Unassigned] |
 | 289 | Other denominations & sects |
 
-290 Other religions
+## 290 Other religions
+
 | Number | Heading |
 |--------|---------|
 | 290 | Other religions |
@@ -144,7 +151,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 298 | (Optional number) |
 | 299 | Religions not provided for elsewhere |
 
-Notes  
-The schedule has a well-known strong emphasis on Christianity (especially 220–280). Most non-Christian religions are concentrated in the 290s.  
-An optional chronological/regional arrangement for 220–290 exists in the full schedules/Manual to reduce Christian bias for libraries that prefer it.  
-Further decimal expansions exist in the complete schedules (e.g., detailed subdivisions under 294 for Buddhism/Hinduism, 297 for Islam, specific Christian denominations under 280–289, etc.).
+## Notes  
+- The schedule has a well-known strong emphasis on Christianity (especially 220–280). Most non-Christian religions are concentrated in the 290s.  
+- An optional chronological/regional arrangement for 220–290 exists in the full schedules/Manual to reduce Christian bias for libraries that prefer it.  
+- Further decimal expansions exist in the complete schedules (e.g., detailed subdivisions under 294 for Buddhism/Hinduism, 297 for Islam, specific Christian denominations under 280–289, etc.).
