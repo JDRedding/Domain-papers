@@ -46,6 +46,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 
 230 Christendom
 - Christianity & Christian theology
+- 
 | Number | Heading |
 |--------|---------|
 | 230 | Christianity & Christian theology |
