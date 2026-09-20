@@ -1,0 +1,637 @@
+PREHISTORIC_COMPLEXITY_CATALOG
+SPECIFICATION VERSION: 1.0
+STATUS: ready for implementation
+ENCODING: US-ASCII plus documented Unicode names only in notes
+LINE RULES: wrap at 78 characters; indent 2 spaces; one field per line
+COMMENT PREFIX: #
+
+###############################################################################
+# 0. DOCUMENT CONTROL
+###############################################################################
+
+DOC_ID          = PREHISTORIC_COMPLEXITY_CATALOG
+TITLE           = Catalog of prehistoric cases that challenge a surplus-
+                  first civilization model
+AUDIENCE        = research, teaching, product, and data teams
+IMPLEMENTATION  = treat this file as the source of truth for field names,
+                  allowed values, and record structure
+
+CHANGELOG_FROM_SOURCE_DRAFT:
+  1. Split compound record yonaguni_dwarka into two records.
+  2. Added record_type so non-sites (oral traditions) are valid.
+  3. Standardized chronology to cal BCE primary, with cal BP optional.
+  4. Replaced free-text "ya" / mixed eras except inside notes.
+  5. Added required schema, controlled vocabularies, and validation rules.
+  6. Added evidence_grade and claim_status to separate fact from challenge.
+  7. Tightened "earliest" language to scoped claims only.
+  8. Recorded competing chronologies instead of picking one silently.
+  9. Added related records that close "earliest monument" gaps
+     (watson_brake, tell_qaramel).
+  10. Normalized names to ASCII slugs; display_name holds conventional
+      spelling.
+
+###############################################################################
+# 1. PURPOSE AND SCOPE
+###############################################################################
+
+1.1 PURPOSE
+  Define a maintainable catalog of well-documented prehistoric cases that
+  complicate this traditional sequence:
+
+    agriculture -> surplus -> hierarchy -> cities / monuments / specialized
+    knowledge / "civilization" crystallizing around 3500 BCE in
+    Mesopotamia and Egypt.
+
+  In-scope challenges include:
+    - monumental construction by hunter-gatherers
+    - dense settlement without palaces or visible ruling class
+    - specialized technical skill earlier than expected
+    - long-duration oral geographic memory
+    - graphic systems before Sumerian proto-writing
+    - complex society with little reported warfare evidence
+    - claimed Ice Age coastal cities (included only as contested claims)
+
+1.2 OUT OF SCOPE
+  This catalog does not assert a replacement global chronology.
+  It does not treat mythic, literary, or fringe claims as demonstrated
+  archaeology unless evidence_grade says otherwise.
+  It does not encode excavation methods, lab protocols, or legal status.
+
+1.3 NORMATIVE LANGUAGE
+  MUST / MUST NOT / SHOULD / MAY are requirements on catalog records
+  and implementations, not on ancient people.
+
+###############################################################################
+# 2. CONVENTIONS
+###############################################################################
+
+2.1 TIME
+  Primary date fields MUST use calibrated calendar years BCE or CE.
+  Optional date_cal_bp MAY be added as integer years before 1950 CE.
+  Approximate ranges MUST use "~" only when the source range is itself
+  approximate.
+  Competing chronologies MUST be listed in chronology_notes, not hidden.
+  Do not mix "years ago", "BP", and "BCE" in the same primary field.
+
+  Conversion aid:
+    cal BP approximately equals 1950 + BCE year
+    example: 8000 BCE ~ 9950 cal BP
+
+2.2 NAMES
+  record_id MUST be lowercase ASCII snake_case.
+  display_name SHOULD use the most common scholarly English form.
+  local_or_alt_names MAY list other spellings.
+
+2.3 GEOGRAPHY
+  region MUST be a modern geographic descriptor, not a culture name.
+  polity_today SHOULD name the present-day country or equivalent.
+
+2.4 CLAIMS
+  Each record MUST separate:
+    established_facts   = widely accepted observations
+    challenge_claim     = how the case pressures the traditional model
+    caveats             = limits, debates, and non-equivalence warnings
+
+  Absence of weapons, palaces, writing, or farming MUST NOT be written
+  as proof of peace, equality, illiteracy, or pre-agricultural life
+  unless independently supported.
+
+###############################################################################
+# 3. CONTROLLED VOCABULARIES
+###############################################################################
+
+3.1 record_type
+  archaeological_site
+  site_complex
+  oral_tradition_corpus
+  graphic_system
+  contested_feature
+
+3.2 subsistence
+  hunter_gatherer
+  hunter_fisher_gatherer
+  herder
+  early_farmer
+  mixed
+  unknown
+  not_applicable
+
+3.3 complexity_class
+  monument
+  dense_settlement
+  earthwork
+  technical_specialization
+  graphic_notation
+  long_memory
+  contested_lost_city
+
+3.4 evidence_grade
+  A  excavated, published, broadly accepted core facts
+  B  excavated or well documented, interpretation debated
+  C  mixed, partial, or chronology revised
+  D  contested attribution or natural-feature dispute
+  E  claim only; not demonstrated
+
+3.5 claim_status
+  demonstrated
+  interpretive
+  revised_chronology
+  not_demonstrated
+  natural_origin_preferred
+
+3.6 traditional_model_target
+  surplus_before_monuments
+  farming_before_large_labor
+  hierarchy_before_dense_settlement
+  old_world_priority
+  writing_begins_in_sumer
+  warfare_as_organizer
+  short_oral_memory
+  ice_age_no_cities
+
+###############################################################################
+# 4. RECORD SCHEMA
+###############################################################################
+
+A record MUST contain the fields below, in this order.
+Unknown values MUST be "unknown" or "not_applicable", never blank.
+
+REQUIRED FIELDS
+  record_id
+  record_type
+  display_name
+  region
+  polity_today
+  date_range_cal_bce
+  subsistence
+  complexity_class
+  builders
+  key_feature
+  established_facts
+  challenge_claim
+  traditional_model_target
+  evidence_grade
+  claim_status
+  caveats
+
+OPTIONAL FIELDS
+  local_or_alt_names
+  date_cal_bp
+  related_record_ids
+  chronology_notes
+  implementation_notes
+
+###############################################################################
+# 5. VALIDATION RULES
+###############################################################################
+
+V1  record_id MUST be unique.
+V2  compound places MUST be separate records.
+V3  oral traditions MUST use record_type = oral_tradition_corpus
+    and subsistence = not_applicable.
+V4  challenge_claim MUST not exceed what established_facts plus caveats
+    can support.
+V5  "earliest known X" MUST be scoped (region, class, or publication
+    status) or moved to caveats.
+V6  If a popular date and a revised date both exist, both MUST appear.
+V7  Contested artificiality MUST set evidence_grade to D or E and
+    claim_status to not_demonstrated or natural_origin_preferred.
+V8  Implementations MUST treat this schema as additive: new fields MAY
+    be appended; required fields MUST NOT be renamed.
+
+###############################################################################
+# 6. CATALOG RECORDS
+###############################################################################
+
+RECORD gobekli_tepe
+  record_type                  = archaeological_site
+  display_name                 = Gobekli Tepe
+  local_or_alt_names           = Goebekli Tepe; Potbelly Hill
+  region                       = Sanliurfa region, southeastern Turkey
+  polity_today                 = Turkey
+  date_range_cal_bce           = ~9500 to 8000
+  date_cal_bp                  = ~11450 to 9950
+  subsistence                  = hunter_gatherer
+  complexity_class             = monument
+  builders                     = Pre-Pottery Neolithic groups;
+                                 early layers lack domesticated animals
+                                 and fully established farming
+  key_feature                  = T-shaped limestone pillars in circular
+                                 and later rectangular enclosures
+  established_facts            = Monumental special buildings date to
+                                 late PPNA and PPNB. Site used until
+                                 about 8000 BCE. Later work documents
+                                 cereal processing and increasing
+                                 sedentism around the monuments.
+  challenge_claim              = Large coordinated stone architecture
+                                 appears before a farming-surplus state.
+  traditional_model_target     = surplus_before_monuments;
+                                 farming_before_large_labor
+  evidence_grade               = A
+  claim_status                 = demonstrated
+  caveats                      = Not a city. Function is debated
+                                 (ritual gathering, cult buildings).
+                                 Builders were not isolated from the
+                                 wider Neolithic transition.
+  related_record_ids           = karahan_tepe_not_in_v1
+  chronology_notes             = Earliest exposed monumental buildings
+                                 commonly placed ~9500-9000 BCE.
+
+RECORD yonaguni_monument
+  record_type                  = contested_feature
+  display_name                 = Yonaguni Monument
+  region                       = Yonaguni Island, Ryukyu chain
+  polity_today                 = Japan
+  date_range_cal_bce           = not_applicable as architecture;
+                                 terrace now underwater after
+                                 postglacial sea-level rise
+  subsistence                  = unknown
+  complexity_class             = contested_lost_city
+  builders                     = not demonstrated
+  key_feature                  = Submerged stepped sandstone mass
+  established_facts            = A regular, jointed sandstone formation
+                                 exists offshore. Similar stepped
+                                 weathering occurs onshore.
+  challenge_claim              = Sometimes presented as an Ice Age
+                                 coastal city or monument.
+  traditional_model_target     = ice_age_no_cities
+  evidence_grade               = D
+  claim_status                 = natural_origin_preferred
+  caveats                      = Majority geological assessments treat
+                                 the feature as natural bedding, joints,
+                                 and erosion. No demonstrated masonry
+                                 blocks in published mainstream work.
+  implementation_notes         = Do not pair with Dwarka.
+
+RECORD dwarka_submerged
+  record_type                  = archaeological_site
+  display_name                 = Dwarka and Bet Dwarka submerged remains
+  region                       = Gulf of Kachchh / Okhamandal, Gujarat
+  polity_today                 = India
+  date_range_cal_bce           = demonstrated remains mainly
+                                 Late Harappan to historic;
+                                 commonly ~1800 to 1300 for
+                                 protohistoric port evidence,
+                                 plus later temples and anchors
+  subsistence                  = mixed
+  complexity_class             = contested_lost_city
+  builders                     = later port and coastal communities;
+                                 not a demonstrated 10th-millennium
+                                 urban society
+  key_feature                  = Submerged walls, anchors, and port
+                                 debris off Dwarka and Bet Dwarka
+  established_facts            = Underwater and intertidal survey has
+                                 recovered stone anchors and structural
+                                 remains associated with Late Harappan
+                                 and later occupations. Some remains
+                                 are not in original position.
+  challenge_claim              = Popular accounts equate the finds with
+                                 a lost Ice Age or Mahabharata-era city
+                                 at ~5500 BCE or earlier.
+  traditional_model_target     = ice_age_no_cities
+  evidence_grade               = C
+  claim_status                 = not_demonstrated
+  caveats                      = Multi-period site. Literary Dwarka is
+                                 not the same as a 10 kya urban city.
+                                 Do not use Gulf of Khambhat objects as
+                                 automatic proof for Dwarka.
+  implementation_notes         = Do not pair with Yonaguni.
+
+RECORD mehrgarh_dentistry
+  record_type                  = archaeological_site
+  display_name                 = Mehrgarh dental drilling
+  region                       = Kachi Plain, Balochistan
+  polity_today                 = Pakistan
+  date_range_cal_bce           = dentistry paper used ~7000 to 5500;
+                                 2025 enamel dates place Period I
+                                 cemetery ~5223-4679
+  subsistence                  = early_farmer
+  complexity_class             = technical_specialization
+  builders                     = early Neolithic farming community
+  key_feature                  = In-life flint drilling of molar enamel;
+                                 11 crowns from 9 adults
+  established_facts            = Coppa et al. 2006 documented drilled
+                                 molar crowns interpreted as
+                                 proto-dentistry. Later enamel
+                                 radiocarbon work substantially
+                                 youngs Period I.
+  challenge_claim              = Specialized technical/medical skill
+                                 appears in an early farming village,
+                                 earlier than many textbook histories
+                                 of dentistry.
+  traditional_model_target     = surplus_before_monuments
+  evidence_grade               = C
+  claim_status                 = revised_chronology
+  caveats                      = Proto-dentistry, not modern dentistry.
+                                 Implementations MUST show both the
+                                 2006 age used in popular citations
+                                 and the 2025 Period I revision.
+  chronology_notes             = Mutin et al. 2025: Period I start
+                                 5223-4914 cal BCE, end 4769-4679.
+
+RECORD nabta_playa
+  record_type                  = archaeological_site
+  display_name                 = Nabta Playa
+  region                       = Nubian Desert, southern Egypt
+  polity_today                 = Egypt
+  date_range_cal_bce           = occupation from early Holocene;
+                                 calendar circle often ~5500 to 4800
+  subsistence                  = herder
+  complexity_class             = monument
+  builders                     = cattle-herding groups of the
+                                 African Humid Period
+  key_feature                  = Small stone circle with proposed
+                                 solstice and stellar alignments;
+                                 cattle deposits
+  established_facts            = Megalithic and cattle-related features
+                                 exist in a former seasonal lake basin.
+                                 A solstice sightline is the strongest
+                                 astronomical claim.
+  challenge_claim              = Organized ritual/astronomical landscape
+                                 before Egyptian state pyramids and
+                                 before Stonehenge.
+  traditional_model_target     = surplus_before_monuments
+  evidence_grade               = B
+  claim_status                 = interpretive
+  caveats                      = Not a state observatory. Stellar
+                                 identifications are debated.
+                                 "World's first observatory" is a
+                                 media phrase, not a required claim.
+
+RECORD aboriginal_sea_memory
+  record_type                  = oral_tradition_corpus
+  display_name                 = Australian Aboriginal coastal inundation
+                                 traditions
+  region                       = multiple Australian coasts
+  polity_today                 = Australia
+  date_range_cal_bce           = inferred event window ~11120 to 5300
+                                 from sea-level reconstructions
+  subsistence                  = not_applicable
+  complexity_class             = long_memory
+  builders                     = not_applicable
+  key_feature                  = Place-specific stories of land now
+                                 under the sea
+  established_facts            = Nunn and Reid 2016 compared 21 coastal
+                                 story groups with postglacial shoreline
+                                 change and argued many require a sea
+                                 level last seen more than 7000 years
+                                 ago.
+  challenge_claim              = Accurate geographic memory can persist
+                                 across thousands of years without
+                                 writing.
+  traditional_model_target     = short_oral_memory
+  evidence_grade               = B
+  claim_status                 = interpretive
+  caveats                      = Stories are not dated artifacts.
+                                 Ages are inferred from bathymetry and
+                                 sea-level curves. Narrative form is
+                                 often mythologized. This is not a
+                                 single site.
+
+RECORD watson_brake
+  record_type                  = archaeological_site
+  display_name                 = Watson Brake
+  region                       = Ouachita Parish, Louisiana
+  polity_today                 = United States
+  date_range_cal_bce           = occupation from ~4000;
+                                 mounds ~3500 to 2800
+  subsistence                  = hunter_fisher_gatherer
+  complexity_class             = earthwork
+  builders                     = Middle Archaic hunter-fisher-gatherers
+  key_feature                  = Eleven mounds linked by ridges in an
+                                 oval enclosure
+  established_facts            = Dated mound complex older than Poverty
+                                 Point and built without agriculture.
+  challenge_claim              = Coordinated earthworks do not require
+                                 farming or a later Mississippian state.
+  traditional_model_target     = farming_before_large_labor
+  evidence_grade               = A
+  claim_status                 = demonstrated
+  caveats                      = Seasonal or intermittent use is likely.
+                                 Added in v1 to close the "Poverty Point
+                                 is the first American mound complex"
+                                 gap.
+  related_record_ids           = poverty_point
+
+RECORD poverty_point
+  record_type                  = archaeological_site
+  display_name                 = Poverty Point
+  region                       = Lower Mississippi Valley, Louisiana
+  polity_today                 = United States
+  date_range_cal_bce           = commonly ~1700 to 1100;
+                                 some models concentrate major
+                                 construction near ~1350 to 1250
+  subsistence                  = hunter_fisher_gatherer
+  complexity_class             = earthwork
+  builders                     = Late Archaic hunter-fisher-gatherers
+  key_feature                  = Concentric earthen ridges, plaza,
+                                 and massive Mound A
+  established_facts            = Very large earthworks and long-distance
+                                 stone exchange without agriculture.
+  challenge_claim              = Massive coordinated construction without
+                                 farming or the wheel.
+  traditional_model_target     = farming_before_large_labor
+  evidence_grade               = A
+  claim_status                 = demonstrated
+  caveats                      = Not Ice Age. Not the earliest mound
+                                 complex in the region. Site chronology
+                                 has been revised toward shorter, later
+                                 pulses in some studies.
+  related_record_ids           = watson_brake
+  chronology_notes             = Popular span 1700-1100 BCE remains in
+                                 wide use; Bayesian work argues rapid
+                                 construction around 3300-3200 cal BP.
+
+RECORD catalhoyuk
+  record_type                  = archaeological_site
+  display_name                 = Catalhoyuk
+  local_or_alt_names           = Catal Huyuk; Catalhoyuk East
+  region                       = Konya Plain, central Anatolia
+  polity_today                 = Turkey
+  date_range_cal_bce           = East Mound ~7100 to 5950
+  subsistence                  = early_farmer
+  complexity_class             = dense_settlement
+  builders                     = Neolithic farmers
+  key_feature                  = Tightly packed houses entered from
+                                 roofs; no identified palaces or
+                                 temples
+  established_facts            = Long-lived nucleated settlement with
+                                 domestic architecture dominant.
+                                 Older population estimates of many
+                                 thousands are now contested;
+                                 2024 work argues ~600-800 residents
+                                 in the middle phase.
+  challenge_claim              = Large, dense community without a
+                                 visible palace-centered ruling class.
+  traditional_model_target     = hierarchy_before_dense_settlement
+  evidence_grade               = A
+  claim_status                 = demonstrated
+  caveats                      = Not a later-style city. Social control
+                                 and household inequality can exist
+                                 without palaces. Do not treat revised
+                                 population figures as settled.
+  chronology_notes             = Prefer 7100-5950 cal BCE for the
+                                 Neolithic East Mound over the older
+                                 7500-6000 shorthand.
+
+RECORD caral_supe
+  record_type                  = site_complex
+  display_name                 = Caral-Supe / Norte Chico
+  region                       = Supe, Pativilca, and Fortaleza valleys
+  polity_today                 = Peru
+  date_range_cal_bce           = regional complex ~3000 to 1800;
+                                 Caral itself often ~2600 to 2000
+  subsistence                  = mixed
+  complexity_class             = monument
+  builders                     = Late Archaic / Cotton Preceramic
+                                 Andean societies
+  key_feature                  = Platform mounds, pyramids, and plazas;
+                                 reported scarcity of weapons and
+                                 fortifications
+  established_facts            = Monumental architecture and urban-scale
+                                 planning in the Americas by the third
+                                 millennium BCE, independent of the
+                                 Old World.
+  challenge_claim              = Complex society contemporary with early
+                                 Old World civilization, possibly not
+                                 organized primarily by warfare.
+  traditional_model_target     = old_world_priority;
+                                 warfare_as_organizer
+  evidence_grade               = A
+  claim_status                 = demonstrated
+  caveats                      = Absence of weapons is not proof of
+                                 perpetual peace. Caral is one site in
+                                 a multi-valley complex.
+
+RECORD vinca_symbols
+  record_type                  = graphic_system
+  display_name                 = Vinca symbols
+  local_or_alt_names           = Danube script; Old European signs
+  region                       = central and southeast Europe
+  polity_today                 = multiple Balkan states
+  date_range_cal_bce           = main corpus ~5500 to 4000;
+                                 Tartaria association claims ~5300
+                                 remain contested
+  subsistence                  = early_farmer
+  complexity_class             = graphic_notation
+  builders                     = Vinca and related Neolithic cultures
+  key_feature                  = Incised signs on pottery, figurines,
+                                 and a few tablets
+  established_facts            = A repeated sign set exists across many
+                                 sites before Sumerian proto-writing.
+  challenge_claim              = Complex graphic communication appears
+                                 in Europe before Uruk-period writing.
+  traditional_model_target     = writing_begins_in_sumer
+  evidence_grade               = B
+  claim_status                 = interpretive
+  caveats                      = Majority view: proto-writing or
+                                 symbolic notation, not a demonstrated
+                                 full script encoding language.
+                                 Tartaria dates MUST be marked contested.
+
+RECORD tell_qaramel
+  record_type                  = archaeological_site
+  display_name                 = Tell Qaramel
+  region                       = Queiq River basin north of Aleppo
+  polity_today                 = Syria
+  date_range_cal_bce           = circular stone towers
+                                 ~10650 to 9650
+  subsistence                  = hunter_gatherer
+  complexity_class             = monument
+  builders                     = Early Aceramic Neolithic community
+  key_feature                  = Successive circular stone towers
+  established_facts            = Published tower sequence older than
+                                 the Jericho tower.
+  challenge_claim              = Communal stone tower architecture
+                                 predates the famous Jericho example.
+  traditional_model_target     = surplus_before_monuments
+  evidence_grade               = B
+  claim_status                 = demonstrated
+  caveats                      = Added in v1 so Jericho is not labeled
+                                 the oldest tower without qualifier.
+                                 Research access has been constrained
+                                 by later conflict.
+  related_record_ids           = jericho_ppna
+
+RECORD jericho_ppna
+  record_type                  = archaeological_site
+  display_name                 = Jericho PPNA wall and tower
+  local_or_alt_names           = Tell es-Sultan
+  region                       = Jordan Valley
+  polity_today                 = West Bank / State of Palestine
+  date_range_cal_bce           = wall and tower ~8300 to 8000;
+                                 use into ~7800
+  subsistence                  = early_farmer
+  complexity_class             = monument
+  builders                     = PPNA settled community using
+                                 cultivated cereals
+  key_feature                  = Stone wall and 8.5 m tower with
+                                 internal stair
+  established_facts            = Major public stone architecture in
+                                 an early settled community.
+  challenge_claim              = Monumental communal building appears
+                                 at the start of village life, not after
+                                 Bronze Age states.
+  traditional_model_target     = surplus_before_monuments
+  evidence_grade               = A
+  claim_status                 = demonstrated
+  caveats                      = Purpose of the tower remains debated
+                                 (defense, ritual, flood, social
+                                 cohesion, other). Not the oldest known
+                                 stone tower if Tell Qaramel dates hold.
+  related_record_ids           = tell_qaramel
+
+###############################################################################
+# 7. IMPLEMENTATION PROFILE
+###############################################################################
+
+7.1 STORAGE
+  Implementations SHOULD store one record as one object or table row
+  using the field names above.
+
+7.2 DISPLAY
+  UI labels SHOULD use display_name.
+  Challenge text SHOULD always be shown with caveats.
+  Evidence_grade SHOULD be visible wherever challenge_claim is shown.
+
+7.3 SORTING
+  Default sort SHOULD be date_range_cal_bce start, oldest first.
+  Contested_feature records SHOULD sort with a flag, not as proven sites.
+
+7.4 EXTENSION
+  New records MUST follow the schema.
+  Suggested later additions, not in v1:
+    karahan_tepe
+    boncuklu
+    asikli_hoyuk
+    monte_sano_mounds
+    jiahu_symbols
+    wrangell_oral_sea_memory
+
+###############################################################################
+# 8. CLOSED INCONSISTENCIES
+###############################################################################
+
+I1  Yonaguni and Dwarka were one record covering two unrelated places.
+    Closed by split.
+I2  "ya", BCE, and BP were mixed in peer fields.
+    Closed by cal BCE primary.
+I3  Aboriginal traditions were typed as a site.
+    Closed by record_type = oral_tradition_corpus.
+I4  Jericho was implied to be the earliest tower.
+    Closed by tell_qaramel plus scoped wording.
+I5  Poverty Point was implied to be the first American mound complex.
+    Closed by watson_brake.
+I6  Mehrgarh dentistry used a now-revised site start date as if current.
+    Closed by dual chronology.
+I7  Catalhoyuk used a rounded 7500-6000 span and an unstated "city"
+    implication.
+    Closed by 7100-5950 East Mound dates and dense_settlement class.
+I8  Caral dates mixed site and culture.
+    Closed by regional vs site split in date_range.
+I9  "No warfare" at Caral was written too strongly.
+    Closed by caveat language.
+I10 Vinca "before writing" was written as proven script.
+    Closed by proto-writing / interpretive status.
+
+END_SPECIFICATION
