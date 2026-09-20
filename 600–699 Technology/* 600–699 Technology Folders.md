@@ -122,7 +122,9 @@
 | 678 | Elastomers & elastomer products |
 | 679 | Other products of specific materials |
 
-## 680 Manufacture for specific uses
+## 680 Specialty Manufacturing
+- Manufacture for specific uses
+
 | Number | Heading |
 |--------|---------|
 | 680 | Manufacture for specific uses |
