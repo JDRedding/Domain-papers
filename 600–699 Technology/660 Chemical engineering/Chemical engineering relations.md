@@ -1,189 +1,331 @@
 # Chemical engineering relations
-Chemical engineering core mathematical relations that sit behind the topic, with standard notation.
+Chemical engineering core mathematical relations that sit behind the topic, with standard notation. These are the working equations that connect the chemistry topics in engineering (kinetics, thermodynamics, surface processes, industrial operations) to actual chemical calculations.
 
-**Quantum chemistry & computational chemistry**
-- Time-independent Schrödinger equation: $\hat{H}\psi = E\psi$
-- Hamiltonian operator (electronic): $\hat{H} = -\sum_i\frac{\hbar^2}{2m_e}\nabla_i^2 - \sum_{i,A}\frac{Z_A e^2}{4\pi\epsilon_0 r_{iA}} + \sum_{i<j}\frac{e^2}{4\pi\epsilon_0 r_{ij}}$
-- Expectation value: $\langle\hat{A}\rangle = \int\psi^*\hat{A}\psi\,d\tau$
+---
 
-**Chemical kinetics & thermodynamics**
-- Rate law: $v = k[\mathrm{A}]^m[\mathrm{B}]^n$
-- Arrhenius equation: $k = A\exp(-E_a/RT)$
-- Gibbs free energy: $\Delta G = \Delta H - T\Delta S = -RT\ln K$
-- van ’t Hoff: $\frac{d\ln K}{dT} = \frac{\Delta H^\circ}{RT^2}$
+## Quantum and computational chemistry
 
-**Statistical thermodynamics**
-- Canonical partition function: $Q = \sum_i g_i\exp(-\varepsilon_i/k_BT)$
-- Helmholtz energy: $A = -k_BT\ln Q$
-- Entropy: $S = k_B\ln W + k_BT(\partial\ln Q/\partial T)_V$
-
-**Molecular / applied spectroscopy**
-- Photon energy: $E = h\nu = hc/\lambda$
-- Beer–Lambert law: $A = \varepsilon cl = -\log_{10}(I/I_0)$
-- Selection-rule energy difference (rigid rotor / harmonic oscillator): $\Delta E = h\nu_0(1-2\chi_e(v+1))$ or $E_J = BJ(J+1)$
-
-**Surface & colloid chemistry**
-- Langmuir isotherm: $\theta = \frac{Kp}{1+Kp}$
-- Gibbs adsorption isotherm: $\Gamma = -\frac{1}{RT}\left(\frac{\partial\gamma}{\partial\ln c}\right)_T$
-
-**Organic reaction mechanisms (transition-state theory)**
-- Eyring equation: $k = \frac{k_BT}{h}\exp(-\Delta G^\ddagger/RT)$
-
-## Working equations
-These are the working equations that connect the chemistry topics in engineering (kinetics, thermodynamics, surface processes, industrial operations) to actual chemical calculations.
-
-**Material and mole balances**
-- General mass balance:
+**Time-independent Schrödinger equation**
 
 $$
-\frac{dm}{dt}=\sum\dot{m}_{\text{in}}-\sum\dot{m}_{\text{out}}+R_{\text{gen}}
+\hat{H}\psi = E\psi
 $$
 
-- Component mole balance: $\frac{dN_A}{dt}=F_{A,\text{in}}-F_{A,\text{out}}+\int r_A\,dV$
-- PFR design equation: $\frac{dF_A}{dV}=r_A$
-- CSTR design equation: $V=\frac{F_{A0}X}{-r_A}$
-
-**Energy balances**
-- Open-system energy balance:
+**Electronic Hamiltonian (SI, Born–Oppenheimer; nuclei fixed)**
 
 $$
-\frac{dE}{dt}=\dot{Q}-\dot{W}+\sum\dot{m}_{\text{in}}\hat{H}_{\text{in}}-\sum\dot{m}_{\text{out}}\hat{H}_{\text{out}}
+\hat{H}_{\mathrm{el}} = -\sum_i\frac{\hbar^2}{2m_e}\nabla_i^2 -\sum_{i,A}\frac{Z_A e^2}{4\pi\varepsilon_0 r_{iA}} +\sum_{i<j}\frac{e^2}{4\pi\varepsilon_0 r_{ij}} +E_{\mathrm{NN}}
 $$
 
-- Steady-state enthalpy balance (no shaft work):
+$E_{\mathrm{NN}}$ is the nuclear–nuclear repulsion (a constant at fixed geometry).
+
+**Expectation value**
 
 $$
-\dot{Q}=\sum\dot{n}_{\text{out}}H_{\text{out}}-\sum\dot{n}_{\text{in}}H_{\text{in}}
+\langle\hat{A}\rangle=\int\psi^*\hat{A}\psi\,d\tau
 $$
 
-**Fluid flow and momentum**
-- Bernoulli equation: $\frac{P}{\rho}+\frac{v^2}{2}+gz=\text{const}$
-- Reynolds number: ${Re}=\frac{\rho vD}{\mu}$
-- Ergun equation (packed bed):
+**Closed-shell Hartree–Fock energy (spin-orbital form)**
 
 $$
-\frac{\Delta P}{L}=150\frac{(1-\varepsilon)^2}{\varepsilon^3}\frac{\mu u}{d_p^2}+1.75\frac{1-\varepsilon}{\varepsilon^3}\frac{\rho u^2}{d_p}
+E_{\mathrm{HF}}=\sum_i h_{ii}+\frac12\sum_{ij}(2J_{ij}-K_{ij})
 $$
 
-**Heat and mass transfer**
-- Fourier’s law: $\mathbf{q}=-k\nabla T$
-- Newton’s law of cooling: $q=h(T_s-T_\infty)$
-- Fick’s first law: $\mathbf{J}_A=-D_{AB}\nabla c_A$
-- Film theory flux: $N_A=k_c(c_{A,i}-c_{A,b})$
-
-**Reactor and process relations**
-- Arrhenius rate constant: $k=A\exp(-E_a/RT)$
-- Conversion–rate relationship (constant density): $-r_A=C_{A0}\frac{dX}{d\tau}$
-- Overall heat-transfer coefficient: $\frac{1}{U}=\frac{1}{h_i}+\frac{\Delta x}{k}+\frac{1}{h_o}$
-
-## Natural-product chemistry 
-Mostly structural and biosynthetic rather than equation-heavy
-
-**Quantum chemistry / computational chemistry**
-
-Hartree–Fock energy (closed-shell):
+If the sum is over *spatial* occupied orbitals of a closed-shell molecule, the equivalent form is
 
 $$
-E_{\text{HF}} = \sum_i h_{ii} + \frac12\sum_{ij}(2J_{ij}-K_{ij})
+E_{\mathrm{HF}}=2\sum_i h_{ii}+\sum_{ij}(2J_{ij}-K_{ij}).
 $$
 
-$h_{ii}$ = one-electron integrals, $J$ = Coulomb, $K$ = exchange.
-
-**Statistical thermodynamics**
-Canonical partition function:
+**HOMO–LUMO / colour (order-of-magnitude)**
 
 $$
-Z = \sum_i g_i\,e^{-\beta E_i},\qquad\beta=1/kT
+\Delta E=E_{\mathrm{LUMO}}-E_{\mathrm{HOMO}}\approx\frac{hc}{\lambda_{\max}}
 $$
 
-Helmholtz free energy and entropy:
+---
+
+## Spectroscopy
+
+**Photon energy**
 
 $$
-A=-kT\ln Z,\qquad S=k\ln Z+kT\left(\frac{\partial\ln Z}{\partial T}\right)_V
+E=h\nu=\frac{hc}{\lambda}
 $$
 
-**Chemical kinetics & thermodynamics**
-Arrhenius equation:
+**Beer–Lambert law**
 
 $$
-k=A e^{-E_a/RT}
+A=\varepsilon cl=-\log_{10}\frac{I}{I_0}
 $$
 
-Gibbs free energy and equilibrium:
+**Harmonic oscillator**
 
 $$
-\Delta G^\circ=-RT\ln K,\qquad\Delta G=\Delta H-T\Delta S
+E_v=h\nu\left(v+\tfrac12\right),\qquad v=0,1,2,\ldots
 $$
 
-Eyring transition-state theory:
+**Anharmonic vibrational spacing (common spectroscopic form)**
 
 $$
-k=\frac{k_BT}{h}e^{\Delta S^\ddagger/R}e^{-\Delta H^\ddagger/RT}
+\Delta E_{v\to v+1}=h\nu_0\bigl(1-2\chi_e(v+1)\bigr)
 $$
 
-**Molecular spectroscopy**
-Harmonic-oscillator vibrational energy:
+**Rigid rotor (linear molecule)**
 
 $$
-E_v=h\nu\left(v+\frac12\right),\qquad v=0,1,2,\dots
+E_J=BJ(J+1),\qquad B=\frac{h}{8\pi^2 I}
 $$
 
-Rigid-rotor rotational energy (linear molecule):
+---
+
+## Chemical kinetics and thermodynamics
+
+**Empirical rate law**
 
 $$
-E_J=BJ(J+1),\qquad B=\frac{h}{8\pi^2I}
+v=k[\mathrm{A}]^m[\mathrm{B}]^n
 $$
 
-Beer–Lambert law:
+**Arrhenius**
 
 $$
-A=\varepsilon cl=-\log_{10}(I/I_0)
+k=A\exp(-E_a/RT)
 $$
 
-**Symmetry & group theory**
-Great orthogonality theorem (characters):
+**Gibbs energy and equilibrium (standard-state form)**
+
+$$
+\Delta G=\Delta H-T\Delta S
+$$
+
+$$
+\Delta G^\circ=-RT\ln K,\qquad
+\Delta G=\Delta G^\circ+RT\ln Q
+$$
+
+The equality $\Delta G=-RT\ln K$ is only true at equilibrium if one writes $\Delta G=0$, or if $\Delta G$ is being used loosely for $\Delta G^\circ$.
+
+**van ’t Hoff**
+
+$$
+\frac{d\ln K}{dT}=\frac{\Delta H^\circ}{RT^2}
+$$
+
+**Eyring / transition-state theory**
+
+$$
+k=\kappa\frac{k_B T}{h}\,e^{-\Delta G^\ddagger/RT}
+=\kappa\frac{k_B T}{h}\,e^{\Delta S^\ddagger/R}\,e^{-\Delta H^\ddagger/RT}
+$$
+
+$\kappa$ is the transmission coefficient (often taken as 1). For bimolecular reactions in solution an extra standard-state concentration factor appears.
+
+---
+
+## Statistical thermodynamics
+
+Use $Q$ for the *canonical* (system) partition function and $q$ for the *molecular* partition function. Your notes mix $Q$ and $Z$; they are the same object.
+
+**Canonical partition function**
+
+$$
+Q=\sum_i g_i\,e^{-\varepsilon_i/k_BT},\qquad \beta=1/k_BT
+$$
+
+For $N$ indistinguishable non-interacting molecules,
+
+$$
+Q=\frac{q^N}{N!}.
+$$
+
+**Helmholtz energy**
+
+$$
+A=-k_BT\ln Q
+$$
+
+**Entropy (canonical)**
+
+$$
+S=k_B\ln Q+k_BT\left(\frac{\partial\ln Q}{\partial T}\right)_V
+$$
+
+Microcanonical:
+
+$$
+S=k_B\ln W
+$$
+
+Do not add those two expressions together; they belong to different ensembles.
+
+---
+
+## Surface and colloid chemistry
+
+**Langmuir isotherm**
+
+$$
+\theta=\frac{Kp}{1+Kp}
+$$
+
+**Gibbs adsorption isotherm (ideal dilute solute)**
+
+$$
+\Gamma=-\frac{1}{RT}\left(\frac{\partial\gamma}{\partial\ln c}\right)_T
+$$
+
+---
+
+## Symmetry / group theory
+
+**Great orthogonality theorem for characters**
 
 $$
 \sum_R\chi^{(\Gamma)}(R)^*\chi^{(\Gamma')}(R)=h\,\delta_{\Gamma\Gamma'}
 $$
 
-$h$ = order of the group, $\chi$ = character of irreducible representation $\Gamma$.
-
-Reduction of a representation:
+**Reduction of a representation**
 
 $$
-n_\Gamma=\frac1h\sum_R\chi(R)\chi^{(\Gamma)}(R)^*
+n_\Gamma=\frac1h\sum_R\chi(R)\,\chi^{(\Gamma)}(R)^*
 $$
 
-**Coordination / organometallic chemistry**
-Crystal-field splitting energy (octahedral):
+---
+
+## Coordination / organometallic chemistry
+
+**Octahedral crystal-field splitting**
 
 $$
 \Delta_o=10\,Dq
 $$
 
-CFSE for $d^n$ configurations is counted in units of $\Delta_o$ (or $\Delta_t$).
+CFSE is counted in units of $\Delta_o$ (or $\Delta_t$ for tetrahedral).
 
-18-electron rule (electron count):
-
-$$
-\text{VEC}=n_{\text{metal}}+n_{\text{ligand}}+n_{\text{charge}}
-$$
-
-(typically 18 for stable organometallics).
-
-**Colour / medicinal chemistry (selected relations)**
-HOMO–LUMO gap that sets the colour of conjugated dyes:
+**Valence electron count (18-electron rule)**
 
 $$
-\Delta E=E_{\text{LUMO}}-E_{\text{HOMO}}\approx\frac{hc}{\lambda_{\max}}
+\mathrm{VEC}=n_{\mathrm{metal}}+n_{\mathrm{ligand}}+n_{\mathrm{charge}}
 $$
 
-Hansch QSAR (approximate):
+Stable organometallics often have $\mathrm{VEC}=18$; this is a counting heuristic, not a conservation law.
+
+**Hansch-type QSAR (empirical)**
 
 $$
-\log(1/C)=a\pi+b\sigma+\dots+k
+\log(1/C)=a\pi+b\sigma+\cdots+k
 $$
 
-$\pi$ = hydrophobic parameter, $\sigma$ = Hammett constant.
+---
 
+## Working process equations (chemical engineering)
+
+### Material and mole balances
+
+**General mass balance**
+
+$$
+\frac{dm}{dt}=\sum\dot m_{\mathrm{in}}-\sum\dot m_{\mathrm{out}}+R_{\mathrm{gen}}
+$$
+
+**Component mole balance**
+
+$$
+\frac{dN_A}{dt}=F_{A,\mathrm{in}}-F_{A,\mathrm{out}}+\int_V r_A\,dV
+$$
+
+**PFR design equation**
+
+$$
+\frac{dF_A}{dV}=r_A
+$$
+
+**CSTR design equation (single reaction)**
+
+$$
+V=\frac{F_{A0}X}{-r_A}
+$$
+
+**Conversion–rate (constant density / constant volume batch or constant-density flow)**
+
+$$
+-r_A=C_{A0}\frac{dX}{d\tau}
+$$
+
+### Energy balances
+
+**Open-system energy balance**
+
+$$
+\frac{dE}{dt}=\dot Q-\dot W+\sum\dot m_{\mathrm{in}}\hat H_{\mathrm{in}}-\sum\dot m_{\mathrm{out}}\hat H_{\mathrm{out}}
+$$
+
+**Steady-state enthalpy balance (no shaft work, KE/PE neglected)**
+
+$$
+\dot Q=\sum\dot n_{\mathrm{out}}H_{\mathrm{out}}-\sum\dot n_{\mathrm{in}}H_{\mathrm{in}}
+$$
+
+**Overall heat-transfer coefficient (plane wall, three resistances)**
+
+$$
+\frac1U=\frac1{h_i}+\frac{\Delta x}{k}+\frac1{h_o}
+$$
+
+### Fluid flow and momentum
+
+**Bernoulli (inviscid, steady, incompressible, streamline)**
+
+$$
+\frac{P}{\rho}+\frac{v^2}{2}+gz=\mathrm{const}
+$$
+
+Engineering form adds a friction / head-loss term.
+
+**Reynolds number**
+
+$$
+\mathrm{Re}=\frac{\rho v D}{\mu}
+$$
+
+**Ergun equation (packed bed)**
+
+$$
+\frac{\Delta P}{L} =150\frac{(1-\varepsilon)^2}{\varepsilon^3}\frac{\mu u}{d_p^2} +1.75\frac{1-\varepsilon}{\varepsilon^3}\frac{\rho u^2}{d_p}
+$$
+
+### Heat and mass transfer
+
+**Fourier**
+
+$$
+\mathbf{q}=-k\nabla T
+$$
+
+**Newton cooling**
+
+$$
+q=h(T_s-T_\infty)
+$$
+
+**Fick’s first law**
+
+$$
+\mathbf{J}_A=-D_{AB}\nabla c_A
+$$
+
+**Film theory**
+
+$$
+N_A=k_c(c_{A,i}-c_{A,b})
+$$
+
+---
+
+Natural-product chemistry is mostly structure and biosynthesis; the equations that actually get used there are the spectroscopic, thermochemical, and QSAR relations above, not a separate equation set.
+
+## Future work
+- (1) reactor mole balances for variable-density gas-phase flow,
+- (2) non-isothermal PFR/CSTR energy balances coupled to $k(T)$,
+- (3) a one-page “which partition function / which free energy” map
