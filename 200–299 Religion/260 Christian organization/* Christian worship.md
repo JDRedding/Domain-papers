@@ -3,7 +3,7 @@
 
 **Christian worship** is the expression of devotion, reverence, and adoration toward God. It includes prayer, music, sacraments, and communal gathering, and it aims both to honor God and to draw believers into communion with the divine. Christian worship is a many-sided practice that honors God, nourishes personal and communal faith, and takes form in prayer, music, sacraments, and teaching. It is both a spiritual discipline and a public proclamation of faith.
 
-Worship is not limited to church services (which is covered in otehr domain beyond Christian organization). It also includes personal devotion, prayer, meditation, and acts of service, so that faith is lived day by day. It fosters spiritual growth, communal bonds, and moral guidance, and so undergirds Christian life.
+Worship is not limited to church services (which is covered in other domains beyond Christian organization). It also includes personal devotion, prayer, meditation, and acts of service, so that faith is lived day by day. It fosters spiritual growth, communal bonds, and moral guidance, and so undergirds Christian life.
 
 ## Meaning and Purpose
 
