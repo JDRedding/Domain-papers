@@ -32,8 +32,10 @@ In the sixteenth century the Protestant Reformation began, led by figures such a
 
 From the sixteenth century onward, European colonization and missionary work carried Christianity to the Americas, Africa, and Asia. The faith diversified into many denominations within Catholicism, Orthodoxy, and Protestantism, each with its own theology and practice.
 
+In the twentieth century Christianity declined in much of the Western world but grew in the Global South, especially in Southeast Asia and sub-Saharan Africa. 
+
 ## Christianity Today
 
-In the twentieth century Christianity declined in much of the Western world but grew in the Global South, especially in Southeast Asia and sub-Saharan Africa. In the twenty-first century it is the largest and among the most diverse of the world’s religions, embracing worship and Scripture in more than three thousand languages.
+In the twenty-first century it is the largest and among the most diverse of the world’s religions, embracing worship and Scripture in more than three thousand languages.
 
 Christianity is now one of the world’s largest religions, with billions of adherents. It continues to influence culture, ethics, politics, and education in many countries, while adapting to social change, interfaith encounter, and contemporary theological debate. 
