@@ -343,18 +343,18 @@ These identities SHALL be used as test vectors for any implementation of finite 
 
 ## Equivalent presentations (non-normative, interoperability)
 
-The following constructions SHALL be treated as interchangeable with §§3–4 only after a proof of level-by-level or eventual agreement, which must be recorded.
+The following constructions SHALL be treated as interchangeable only after a proof of level-by-level or eventual agreement, which must be recorded.
 
 1. **Gödel operations.** Close under a finite list of rudimentary/Gödel functions and intersect with $\mathcal{P}(L_\alpha)$. Levels need not coincide with ${Def}$-levels, but the unions at limits of cofinality $>\omega$ can be aligned.
 2. **$J$-hierarchy.** Jensen levels $J_\alpha$ satisfy $L=\bigcup_\alpha J_\alpha$ and $J_{\alpha+\omega}=L_{\omega\alpha}$ under the usual indexing. Fine structure is not required to define $L$.
 
-The normative object of this specification is the ${Def}$-hierarchy of §4.
+The normative object of this specification is the ${Def}$-hierarchy.
 
 ## Implementation and conformance
 
 ### .1 What “implementation” may mean
 An implementation conforming to this specification is one of:
-1. a formalization in a proof assistant of DEF/INV/THM clauses through §8;
+1. a formalization in a proof assistant of DEF/INV/THM clauses;
 2. a computer program that computes $L_n$ exactly for all $n\le N<\omega$;
 3. a bounded-complexity approximation of ${Def}(\mathrm{HF})$, i.e. a fragment of $L_{\omega+1}$.
 
@@ -370,7 +370,7 @@ A finite-stage implementation SHALL satisfy:
 
 A proof-assistant formalization SHALL provide:
 - coded satisfaction
-- the recursion of §4
+- the recursion
 - proofs of 5.1, 5.2, 5.5, 5.6, 5.7
 - a construction of $<_L$
 - statements of condensation and GCH, with proofs if the development claims completeness
