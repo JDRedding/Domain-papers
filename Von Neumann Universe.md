@@ -82,7 +82,7 @@ A nonzero ordinal that is not a successor. Equivalently: $\lambda\neq 0$ and $\b
 $\omega$ is the least limit ordinal; its elements are the finite ordinals $0,1,2,\ldots$.
 
 **.14 Stage (rank-initial segment).**  
-For each $\alpha\in\mathrm{Ord}$, the set $V_\alpha$ defined in §5.
+For each $\alpha\in\mathrm{Ord}$, the set $V_\alpha$ defined.
 
 **.15 Von Neumann universe.**  
 The class
@@ -92,7 +92,7 @@ V=\bigcup_{\alpha\in\mathrm{Ord}}V_\alpha.
 $$
 
 **.16 Rank.**  
-See §7. Not to be confused with the stage index $\alpha$ itself.
+Not to be confused with the stage index $\alpha$ itself.
 
 **.17 Hereditarily finite set.**  
 A set whose transitive closure is finite. These are exactly the elements of $V_\omega$.
@@ -165,7 +165,7 @@ $V$ shall not be a set. If $V$ were a set, then $\mathcal{P}(V)$ would be a set 
 
 ## Mandatory properties
 
-The following shall hold for the hierarchy defined in §5.
+The following shall hold for the hierarchy defined.
 
 **P1. Cumulativity.**  
 If $\alpha\le\beta$, then $V_\alpha\subseteq V_\beta$.
@@ -272,8 +272,8 @@ Thus $|V_4|=16$, $|V_5|=2^{16}=65536$, $|V_6|=2^{65536}$.
 ## Conformance
 
 An implementation, formalization, or exposition conforms to this specification if and only if it:
-1. uses the clauses of §5 (or the unified clause 5.4) as the definition of $V_\alpha$;
-2. uses the rank conventions of §7 so that ${rank}(\emptyset)=0$ and $V_\alpha=\{x\mid{rank}(x)<\alpha\}$;
+1. uses the clauses (or the unified clause 5.4) as the definition of $V_\alpha$;
+2. uses the rank conventions so that ${rank}(\emptyset)=0$ and $V_\alpha=\{x\mid{rank}(x)<\alpha\}$;
 3. treats $V$ as a proper class;
 4. states Foundation as the axiom that $V$ exhausts the universe of sets;
 5. preserves P1–P7.
