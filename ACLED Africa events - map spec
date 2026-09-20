@@ -1,0 +1,125 @@
+# ACLED Africa events - map spec
+# data: ACLED | basemap: Mapbox
+# period: 2004-01-01 to 2024-12-13
+# region: Africa
+
+dataset      = "ACLED Africa events"
+name         = "ACLED"
+full_name    = "Armed Conflict Location & Event Data Project"
+type         = "event-based dataset"
+unit         = "one reported event per day + location + actors"
+period       = "2004-01-01 to 2024-12-13"
+period_mapped = "01 Jan 2004 - 13 Dec 2024"
+region       = "Africa"
+visual       = "J. Luengo-Cabrera"
+
+# What ACLED records
+scope    = "political violence + demonstrations + select strategic developments"
+coverage = "global (all countries/territories), real-time weekly updates"
+sources  = "local/national/international media, NGO reports, partner data (75+ languages)"
+
+# Definitions
+# Political violence = use of force by a group with political purpose or effects
+# Demonstration      = public gathering of 3+ people for a shared cause
+# Fatalities         = conservative reported estimate, not a complete death toll
+# Event              = one incident at a date and place (not a war or campaign)
+
+# Core event types (6)
+event_types = [
+  "Battles",
+  "Explosions/Remote violence",
+  "Violence against civilians",
+  "Protests",
+  "Riots",
+  "Strategic developments"
+]
+
+# Disorder types (3)
+disorder_types = [
+  "Political violence",
+  "Demonstrations",
+  "Strategic developments"
+]
+
+# Groups used on this map
+event_group_social_unrest   = ["protests", "riots"]
+event_group_armed_violence  = ["battles", "violence_against_civilians", "explosions_remote_violence"]
+
+social_unrest  = "Protests + Riots"
+armed_violence = "Battles + Violence against civilians + Explosions/Remote violence"
+
+# Strategic developments are EXCLUDED from this map
+# (recruitment, base-building, arrests, troop moves, deals)
+
+# Key fields per event
+fields = [
+  "event_date", "year", "time_precision",
+  "event_type", "sub_event_type", "disorder_type",
+  "actor1", "actor2", "interaction",
+  "country", "admin1", "admin2", "admin3", "location",
+  "latitude", "longitude", "geo_precision",
+  "fatalities",
+  "notes", "source", "tags"
+]
+
+# Precision codes
+time_precision = "1=exact day, 2=week, 3=month"
+geo_precision  = "1=exact location, 2=nearby, 3=admin unit only"
+
+# Map encoding
+color_blue   = "social_unrest (protests + riots)"
+color_red    = "armed_violence (battles + civilian violence + explosions)"
+circle_size  = "incident_frequency_at_location"
+overlap      = "blue + red -> purple at mixed locations"
+bar_chart    = "annual_total_incidents (stacked blue + red), rising over 20 years"
+circle_legend = [500, 1500, 3654]
+max_location_events ≈ 3654
+
+# How to aggregate
+# bubbles: group by location + lat/lon, count events
+# bars:    group by year, stack social_unrest under armed_violence
+# do NOT size circles by fatalities (that changes "how often" into "how deadly")
+
+# Typical hotspots
+hotspots = [
+  "Sahel (Mali, Burkina Faso, Niger, Nigeria)",
+  "Horn of Africa (Somalia, Ethiopia, Sudan)",
+  "eastern DRC / Great Lakes",
+  "parts of North Africa and coastal West Africa"
+]
+
+# Social unrest (blue) — mostly urban / coastal
+blue_nodes = [
+  "Rabat", "Tunis", "Cairo", "Khartoum",
+  "Conakry", "Abidjan",
+  "Cape Town", "Durban", "Harare",
+  "Addis Ababa",
+  "parts of Kenya and Uganda"
+]
+
+# Armed violence (red) — belts and corridors
+red_nodes = [
+  "Gao", "Dori", "Sahel belt (Mali-Burkina Faso-Niger)",
+  "Bama / Lake Chad / northeast Nigeria",
+  "Mogadishu / southern Somalia",
+  "El Fasher / Darfur",
+  "Goma / eastern DRC",
+  "Tripoli", "Benghazi",
+  "Mocimboa da Praia / Cabo Delgado"
+]
+
+# Relatively quiet on this map
+quiet = ["Botswana", "much of Namibia", "large interior Sahara stretches"]
+
+# Time-series pattern (annual reported incidents)
+# mid-2000s:  a few thousand
+# 2011-13:    step up (Arab Spring / North African protest wave) — blue rises
+# 2019-24:    another jump toward ~40,000 — red share grows
+# drivers after 2019: Sahel insurgency, Sudan, eastern DRC, Somalia, N. Mozambique
+# plus a higher demonstration baseline in large cities
+
+# Reading caveats
+# event != intensity: a peaceful protest and a deadly battle both count as 1
+# reporting improves over time: part of the post-2018 rise is better capture
+# rural Sahel and eastern DRC points are often geo_precision 2 or 3
+# empty space != proof of zero activity; it is a reporting-and-activity pattern
