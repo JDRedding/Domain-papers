@@ -406,22 +406,9 @@ The sentence
 
 ---
 
-## 7. Closed inconsistencies and remaining obligations
+## 7. Remaining obligations
 
-| ID | Prior draft issue | Resolution in this spec |
-|---|---|---|
-| I-1 | “Partial order” written with IR + transitivity | Renamed **strict partial order** (§1.4, §2.4) |
-| I-2 | Well-order drawn under unique successors | Split: well-order = total + WF; GUS optional and independent (§2.6–2.9, §3) |
-| I-3 | GUS formula forces no maxima | Documented; finite well-orders excluded from GUS |
-| I-4 | Dense and GUS drawn as sibling refinements without incompatibility | Incompatibility stated (§2.6, §3.2) |
-| I-5 | Order topology claimed to regenerate $<$ by specialization | Denied for P-ORD (§5.6, §6.3) |
-| I-6 | One cycle claimed for all constructions | Split into profiles (§0.4, §6) |
-| I-7 | WF via “no infinite chains” vs “minimal elements” | DC/choice note (§2.8) |
-| I-8 | Scott topology used on raw posets | Restricted to dcpos (§4.5, §5.5) |
-| I-9 | Frames identified with spaces | Spatiality required (§6.2) |
-| I-10 | Strict tree mixed with non-strict lattice axioms | Conversion rules mandatory (§1.2) |
-
-### 7.1 Known gaps left open (not silently filled)
+### Known gaps left open (not silently filled)
 1. Lawson topology and the patch topology on domains — optional extension, not required for conformance.
 2. Choice-free constructive reformulation of well-foundedness beyond the inductive clause in §2.8.
 3. Algorithmic representation of infinite complete lattices.
