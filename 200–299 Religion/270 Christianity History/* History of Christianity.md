@@ -10,8 +10,6 @@ After the fall of Rome in 476, the West was fragmented. Monks preserved culture 
 
 In the fourteenth century the Western Schism and other late-medieval crises prepared the way for the sixteenth-century Reformation, in which Protestantism took shape. Protestants often advocated religious tolerance and the separation of church and state, and they influenced economic life. Rival royal houses took sides in the European wars of religion. Christianity spread with European colonization of the Americas, Australia, and New Zealand. Different strands of the faith shaped the Enlightenment, the American and French Revolutions, and the Industrial Revolution. Christians took part both in the Atlantic slave trade and in its abolition. Some Protestants developed biblical criticism; others answered rationalism with Pietism and revivals that generated new denominations. Nineteenth-century missionaries laid linguistic and cultural foundations in many societies.
 
-In the twentieth century Christianity declined in much of the Western world but grew in the Global South, especially in Southeast Asia and sub-Saharan Africa. In the twenty-first century it is the largest and among the most diverse of the world’s religions, embracing worship and Scripture in more than three thousand languages.
-
 ## Origins and Early Development
 
 Christianity began in Roman Judea in the first century CE. It is rooted in the teaching of Jesus of Nazareth, whom Christians confess as the Christ (Messiah) and the Son of God. Jesus preached love, forgiveness, and the kingdom of God. After his crucifixion under the Roman governor Pontius Pilate, his followers proclaimed his resurrection and spread his teaching through the region.
@@ -36,4 +34,6 @@ From the sixteenth century onward, European colonization and missionary work car
 
 ## Christianity Today
 
-Christianity is now one of the world’s largest religions, with billions of adherents. It continues to influence culture, ethics, politics, and education in many countries, while adapting to social change, interfaith encounter, and contemporary theological debate.
+In the twentieth century Christianity declined in much of the Western world but grew in the Global South, especially in Southeast Asia and sub-Saharan Africa. In the twenty-first century it is the largest and among the most diverse of the world’s religions, embracing worship and Scripture in more than three thousand languages.
+
+Christianity is now one of the world’s largest religions, with billions of adherents. It continues to influence culture, ethics, politics, and education in many countries, while adapting to social change, interfaith encounter, and contemporary theological debate. 
