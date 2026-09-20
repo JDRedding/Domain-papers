@@ -16,7 +16,7 @@ Define a single, implementable vocabulary for:
 1. binary relations and their order-theoretic refinements;
 2. lattice structure derived from posets;
 3. topologies induced by orders, and orders induced by topologies;
-4. the exact conditions under which an order–topology–order loop recovers the original relation.
+4. the exact conditions under which an order–topology–order loop recovers the relation.
 
 ### 0.2 Scope
 **In scope**
@@ -47,7 +47,7 @@ Define a single, implementable vocabulary for:
 ### 0.4 Conformance profiles
 An implementation or text **conforms** only if it names the profile it uses:
 
-| ID | Profile | Reconstructs original order via specialization? |
+| ID | Profile | Reconstructs order via specialization? |
 |---|---|---|
 | P-SO | Strict-order classification | N/A (no topology) |
 | P-LAT | Lattice algebra | N/A (no topology) |
@@ -85,7 +85,7 @@ The **dual** of $\le$ is $\ge$, defined by $x \ge y \iff y \le x$. Every definit
 ### 1.4 Forbidden conflation
 The label **partial order** **shall** mean the non-strict package in §2.3.  
 The label **strict partial order** **shall** mean the strict package in §2.4.  
-The original diagram’s use of “Partial Order” for irreflexive + transitive **shall** be read as **strict partial order**.
+The use of “Partial Order” for irreflexive + transitive **shall** be read as **strict partial order**.
 
 ---
 
@@ -136,7 +136,7 @@ $$
 
 **Immediate-successor property (local):** $y$ is *an* immediate successor of $x$ iff $x \prec y$.
 
-**Global unique-successor axiom (GUS)** — the formula from the original diagram:
+**Global unique-successor axiom (GUS)** — the formula:
 
 $$
 \forall x\;\exists y.\; \bigl( x < y \;\land\; \forall z.\; (x < z \Rightarrow (z=y \lor y < z)) \bigr).
@@ -351,7 +351,7 @@ Facts that **shall** be stated when this profile is used:
 
 **Normative ban.** Profile P-ORD **shall not** be listed as an instance of an idempotent specialization cycle.
 
-The original order is still encoded in $\tau(<)$ by cuts and by the total order of the connected components of complements of points; that encoding is **not** specialization.
+The order is encoded in $\tau(<)$ by cuts and by the total order of the connected components of complements of points; that encoding is **not** specialization.
 
 ---
 
