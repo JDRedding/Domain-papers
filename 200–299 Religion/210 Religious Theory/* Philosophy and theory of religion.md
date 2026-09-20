@@ -1,4 +1,5 @@
 # Philosophy and Theory of Religion
+- 210 Religious Theory
 
 **The philosophy of religion** and **the theory of religion** overlap but remain distinct. Both examine the nature, role, and interpretation of religious phenomena; they differ in method and in the questions they ask.
 
