@@ -17,7 +17,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 209 | Sects & reform movements |
 
 ## 210 Religious Theory
-- Religious Philosophical theory 
+- Religious philosophical theory 
 - Philosophy & theory of religion
 
 | Number | Heading |
