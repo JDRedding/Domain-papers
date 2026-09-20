@@ -1,7 +1,7 @@
 # Philosophy of religion
 - 210 Religious Theory
 
-**The philosophy of religion** is the branch of philosophy that examines religious beliefs, practices, and experiences by reason and critical analysis rather than by faith alone.
+**The philosophy of religion** is the branch of philosophy that examines religious beliefs, practices, and experiences by reason and critical analysis rather than by faith alone. The philosophy of religion applies rigorous reasoning to fundamental religious questions, holding faith and critical inquiry together in order to understand central aspects of human existence.
 
 ## Overview
 
@@ -32,4 +32,3 @@ The philosophy of religion overlaps with theology, ethics, metaphysics, and the 
 
 Work in this field sharpens critical thinking about belief, morality, and existence. It encourages reflection on one’s own religious views or on secular alternatives, and it is central to academic programs in philosophy, religious studies, and theology.
 
-In essence, the philosophy of religion applies rigorous reasoning to fundamental religious questions, holding faith and critical inquiry together in order to understand central aspects of human existence.
