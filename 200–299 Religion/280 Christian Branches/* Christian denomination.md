@@ -19,6 +19,13 @@ A **denomination** is a relatively stable, organized body within a larger religi
 
 Catholicism, Eastern Orthodoxy, Lutheranism, Anglicanism, Methodism, and the major Baptist conventions are usually described as denominations (or families of denominations). A denomination claims to represent the Christian faith but does not, in modern usage, deny that other churches may also be Christian.
 
+### Key Differences
+
+- **Authority.** Scripture alone (typical Protestant view) versus Scripture and tradition (Catholic and Orthodox)
+- **Sacraments.** Number and meaning vary. Catholicism recognizes seven; most Protestant churches recognize two (baptism and communion)
+- **Worship.** Liturgical and formal (Orthodox, Catholic) versus more contemporary and informal styles (Pentecostal, many Baptist churches)
+- **Governance.** Hierarchical (Catholic, Orthodox) versus congregational or presbyterian systems (much of Protestantism)
+
 ## Major Denominations of Christianity
 
 ### 1. Roman Catholicism
@@ -67,9 +74,3 @@ Protestant churches are usually less hierarchical than Catholicism or Orthodoxy;
 - **Anglicanism / Episcopalianism:** Catholic tradition and Protestant theology held together; prominent in the United Kingdom and former colonies
 - **Non-denominational churches:** independent congregations, often with contemporary worship and Bible study
 
-## Key Differences
-
-- **Authority.** Scripture alone (typical Protestant view) versus Scripture and tradition (Catholic and Orthodox)
-- **Sacraments.** Number and meaning vary. Catholicism recognizes seven; most Protestant churches recognize two (baptism and communion)
-- **Worship.** Liturgical and formal (Orthodox, Catholic) versus more contemporary and informal styles (Pentecostal, many Baptist churches)
-- **Governance.** Hierarchical (Catholic, Orthodox) versus congregational or presbyterian systems (much of Protestantism)
