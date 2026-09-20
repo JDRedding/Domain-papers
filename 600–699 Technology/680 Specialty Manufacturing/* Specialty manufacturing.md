@@ -1,9 +1,9 @@
 # Specialty Manufacturing
 - 680 Specialty Manufacturing
 
-**Specialty manufacturing** is production aimed at custom, high-value, or complex goods that need particular processes, machines, and skill—not a standard mass line. **Manufacturing for specific uses** means shaping product, material, and process to a defined function, industry, or rule set—not to a generic catalog item. Specialty manufacturing serves industries that need a fitted part, not a commodity. It trades volume for precision, quality, and performance—especially in high-tech, medical, aerospace, and industrial work. F
+**Specialty manufacturing** is production aimed at custom, high-value, or complex goods that need particular processes, machines, and skill—not a standard mass line. **Manufacturing for specific uses** means shaping product, material, and process to a defined function, industry, or rule set—not to a generic catalog item. Specialty manufacturing serves industries that need a fitted part, not a commodity. It trades volume for precision, quality, and performance—especially in high-tech, medical, aerospace, and industrial work.
 
-irms in the field live with the tension among customization, cost, and how fast a lot can be made. **Precision instruments**, **blacksmithing**, **hardware and appliances**, **furnishings**, **leather and fur goods**, **printing**, **clothing**, and **packaging and other finals** complete the path from material to thing-in-hand. They are specific-use manufactures: organized around the function of the piece, judged by whether it measures, fastens, seats, wears, reads, or protects as promised.
+Firms in the field live with the tension among customization, cost, and how fast a lot can be made. **Precision instruments**, **blacksmithing**, **hardware and appliances**, **furnishings**, **leather and fur goods**, **printing**, **clothing**, and **packaging and other finals** complete the path from material to thing-in-hand. They are specific-use manufactures: organized around the function of the piece, judged by whether it measures, fastens, seats, wears, reads, or protects as promised.
 
 ## Definition and Characteristics
 
