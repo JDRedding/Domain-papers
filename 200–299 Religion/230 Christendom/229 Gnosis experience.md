@@ -1,3 +1,6 @@
+# Gnosis experience
+- 229 Gnosis experience
+  
 Sudden **gnosis experiences** are spontaneous, profound episodes of direct insight into reality, consciousness, or selfhood. They matter as transformative events that join subjective awareness, cognitive revelation, and often spiritual understanding. They are commonly described as moments in which knowledge is *experienced* rather than reasoned.
 
 Such experiences can be read as instances of direct knowledge that go beyond ordinary intellectual understanding. They sit at the intersection of subjective psychology, neurobiology, and spiritual phenomenology. Whether interpreted mystically, psychologically, or neuroscientifically, they often reconfigure perception, catalyze meaning-making, and produce lasting personal change.
