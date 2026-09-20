@@ -92,6 +92,7 @@ The original diagram’s use of “Partial Order” for irreflexive + transitive
 ## 2. Relations and orders
 
 ### 2.1 Primitive properties (non-strict $\le$)
+
 On $X$, $\le$ may satisfy:
 
 | Code | Name | Formula |
@@ -102,6 +103,7 @@ On $X$, $\le$ may satisfy:
 | TO | total (linear) | $\forall x,y.\; x\le y \lor y\le x$ |
 
 ### 2.2 Primitive properties (strict $<$)
+
 | Code | Name | Formula |
 |---|---|---|
 | IR | irreflexive | $\forall x.\; \neg(x < x)$ |
@@ -111,6 +113,7 @@ On $X$, $\le$ may satisfy:
 
 **Lemma 2.2.1.** IR + T$_{<}$ **implies** AY.  
 **Lemma 2.2.2.** Under the conversion of §1.2:  
+
 R+T+AS $\iff$ IR+T$_{<}$, and TO $\iff$ TR.
 
 ### 2.3 Partial order (poset) — normative
@@ -128,8 +131,7 @@ The associated quotient poset is $X{/}{\sim}$ where $x\sim y \iff x\le y \land y
 Define the **cover** (immediate successor) relation $\prec$ by:
 
 $$
-x \prec y \;\stackrel{\mathrm{def}}{\iff}\;
-x < y \;\land\; \neg\exists z.\; (x < z \land z < y).
+x \prec y \;\stackrel{\mathrm{def}}{\iff}\; x < y \;\land\; \neg\exists z.\; (x < z \land z < y).
 $$
 
 **Immediate-successor property (local):** $y$ is *an* immediate successor of $x$ iff $x \prec y$.
