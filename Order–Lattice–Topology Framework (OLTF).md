@@ -107,7 +107,7 @@ On $X$, $\le$ may satisfy:
 | Code | Name | Formula |
 |---|---|---|
 | IR | irreflexive | $\forall x.\; \neg(x < x)$ |
-| T$_{<}$ | transitive | $\forall x,y,z.\; (x<y \land y<z) \Rightarrow x<z$ |
+| $T_{<}$ | transitive | $\forall x,y,z.\; (x<y \land y<z) \Rightarrow x<z$ |
 | AY | asymmetric | $\forall x,y.\; x<y \Rightarrow \neg(y<x)$ |
 | TR | trichotomous | $\forall x,y.\; x<y \lor x=y \lor y<x$ |
 
