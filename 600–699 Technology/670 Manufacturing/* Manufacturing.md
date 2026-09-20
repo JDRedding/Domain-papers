@@ -120,7 +120,7 @@ Membership counts and structures change; the associations themselves publish cur
 
 Directories such as IQS Directory and similar industrial listings catalog local, national, and specialist groups so firms can match membership to product line and place.
 
-# Manufactures of Specific Materials
+## Manufactures of Specific Materials
 
 **Manufacturing of specific materials** is the industrial work of turning primary substances—metals, wood, hide, pulp, fiber, and rubber—into standard products. It sits between the extraction of raw goods and the making of complex machines or finished consumer articles. Each branch has its own mills, tools, defects, and trades, but they share the same logic: prepare the material, form it, finish it, and control quality at scale.
 
