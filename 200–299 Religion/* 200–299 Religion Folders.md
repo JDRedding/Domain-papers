@@ -124,7 +124,8 @@ Christian moral & devotional theology
 | 278 | History of Christianity in South America |
 | 279 | History of Christianity in other areas |
 
-## 280 Christian denominations & sects
+## 280 Christian Branches
+- Christian denominations & sects
 
 | Number | Heading |
 |--------|---------|
