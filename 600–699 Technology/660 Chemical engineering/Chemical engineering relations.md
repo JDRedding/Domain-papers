@@ -33,7 +33,12 @@ Chemical engineering core mathematical relations that sit behind the topic, with
 These are the working equations that connect the chemistry topics in engineering (kinetics, thermodynamics, surface processes, industrial operations) to actual chemical calculations.
 
 **Material and mole balances**
-- General mass balance: $\frac{dm}{dt}=\sum\dot{m}_{\text{in}}-\sum\dot{m}_{\text{out}}+R_{\text{gen}}$
+- General mass balance:
+
+$$
+\frac{dm}{dt}=\sum\dot{m}_{\text{in}}-\sum\dot{m}_{\text{out}}+R_{\text{gen}}
+$$
+
 - Component mole balance: $\frac{dN_A}{dt}=F_{A,\text{in}}-F_{A,\text{out}}+\int r_A\,dV$
 - PFR design equation: $\frac{dF_A}{dV}=r_A$
 - CSTR design equation: $V=\frac{F_{A0}X}{-r_A}$
