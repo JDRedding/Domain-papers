@@ -32,7 +32,7 @@ Define a single, implementable vocabulary for:
 - metrics, uniformities, and bornologies;
 - homotopy, homology, and sheaf cohomology;
 - measure and integration;
-- general $T_3$–$T_6$ separation theory except as needed for specialization;
+- general $T_3$ – $T_6$ separation theory except as needed for specialization;
 - computational complexity of order algorithms.
 
 ### 0.3 Normative language
