@@ -595,29 +595,4 @@ RECORD jericho_ppna
     wrangell_oral_sea_memory
 
 ###############################################################################
-# 8. CLOSED INCONSISTENCIES
-###############################################################################
-
-I1  Yonaguni and Dwarka were one record covering two unrelated places.
-    Closed by split.
-I2  "ya", BCE, and BP were mixed in peer fields.
-    Closed by cal BCE primary.
-I3  Aboriginal traditions were typed as a site.
-    Closed by record_type = oral_tradition_corpus.
-I4  Jericho was implied to be the earliest tower.
-    Closed by tell_qaramel plus scoped wording.
-I5  Poverty Point was implied to be the first American mound complex.
-    Closed by watson_brake.
-I6  Mehrgarh dentistry used a now-revised site start date as if current.
-    Closed by dual chronology.
-I7  Catalhoyuk used a rounded 7500-6000 span and an unstated "city"
-    implication.
-    Closed by 7100-5950 East Mound dates and dense_settlement class.
-I8  Caral dates mixed site and culture.
-    Closed by regional vs site split in date_range.
-I9  "No warfare" at Caral was written too strongly.
-    Closed by caveat language.
-I10 Vinca "before writing" was written as proven script.
-    Closed by proto-writing / interpretive status.
-
 END_SPECIFICATION
