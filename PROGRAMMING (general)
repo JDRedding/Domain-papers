@@ -1,0 +1,44 @@
+PROGRAMMING 
+
+DATA TYPES
+  Integer     whole numbers          int / integer     42
+  Float       decimals               float / double    3.14
+  Boolean     true or false          bool              true / false
+  Character   single symbol          char              'A'
+  String      text                   str / string      "hello"
+  Array/List  ordered collection     [] / list         [1, 2, 3]
+  Object/Map  key-value pairs        dict / object     {"a": 1}
+
+VARIABLES
+  Declare     type name;
+  Assign      name = value;
+  Init        type name = value;
+  Naming      letters, digits, _     start with letter or _
+  Scope       local (inside block)   global (outside)
+  Constants   cannot be changed      const / final / ALL_CAPS
+
+OPERATORS
+  Arithmetic  +  -  *  /  %  **
+  Comparison  ==  !=  <  >  <=  >=
+  Logical     &&  ||  !     and or not
+  Assignment  =  +=  -=  *=  /=
+
+CONTROL FLOW
+  if / else if / else
+  for         counted loop
+  while       condition loop
+  switch      multi-way branch
+  break       exit loop / switch
+  continue    skip to next iteration
+
+FUNCTIONS
+  Define      returnType name(params) { body }
+  Call        name(arguments)
+  Return      send value back
+  Parameters  inputs to the function
+
+I/O & BASICS
+  Output      print / cout / console.log
+  Input       read / cin / input()
+  Comments    // line     /* block */
+  Errors      syntax, runtime, logic
