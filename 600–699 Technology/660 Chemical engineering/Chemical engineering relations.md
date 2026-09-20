@@ -29,7 +29,7 @@ Chemical engineering core mathematical relations that sit behind the topic, with
 **Organic reaction mechanisms (transition-state theory)**
 - Eyring equation: $k = \frac{k_BT}{h}\exp(-\Delta G^\ddagger/RT)$
 
-## W@orking equations
+## Working equations
 These are the working equations that connect the chemistry topics in the original posts (kinetics, thermodynamics, surface processes, industrial operations) to actual chemical-engineering calculations.
 
 **Material and mole balances**
