@@ -16,20 +16,6 @@ AUDIENCE        = research, teaching, product, and data teams
 IMPLEMENTATION  = treat this file as the source of truth for field names,
                   allowed values, and record structure
 
-CHANGELOG_FROM_SOURCE_DRAFT:
-  1. Split compound record yonaguni_dwarka into two records.
-  2. Added record_type so non-sites (oral traditions) are valid.
-  3. Standardized chronology to cal BCE primary, with cal BP optional.
-  4. Replaced free-text "ya" / mixed eras except inside notes.
-  5. Added required schema, controlled vocabularies, and validation rules.
-  6. Added evidence_grade and claim_status to separate fact from challenge.
-  7. Tightened "earliest" language to scoped claims only.
-  8. Recorded competing chronologies instead of picking one silently.
-  9. Added related records that close "earliest monument" gaps
-     (watson_brake, tell_qaramel).
-  10. Normalized names to ASCII slugs; display_name holds conventional
-      spelling.
-
 ###############################################################################
 # 1. PURPOSE AND SCOPE
 ###############################################################################
