@@ -1,5 +1,5 @@
 # News Media
-- Journalism, and Publishing
+- Journalism and Publishing
 - 070 News Media
 
 News media, journalism, and publishing form the backbone of information dissemination. Together they shape public discourse by producing and distributing news, analysis, and literature. News media, journalism, and publishing form a single, changing ecosystem:
