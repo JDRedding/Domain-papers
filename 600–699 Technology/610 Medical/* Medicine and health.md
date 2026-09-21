@@ -84,7 +84,38 @@ $$
 \mathrm{CO} = \frac{\mathrm{VO}_{2}}{C_{\mathrm{aO}_{2}}-C_{\mathrm{vO}_{2}}}
 $$  
 
-(Fick principle); $\mathrm{VO}_{2}$ = oxygen consumption, $C_{\mathrm{aO}_{2}},C_{\mathrm{vO}_{2}}$ = arterial and mixed-venous O₂ content.
+(Fick principle); 
+
+$\mathrm{VO}_{2}$ = oxygen consumption
+
+Standard notation for the two oxygen contents in the Fick equation is
+
+- $C_{\mathrm{aO}_2}$ — arterial oxygen content  
+- $C_{\bar{\mathrm{v}}\mathrm{O}_2}$ — mixed-venous oxygen content (bar over $\mathrm{v}$ marks mixed venous blood)
+
+The Fick relation is then
+
+$$
+\mathrm{CO}=\frac{\dot{V}_{\mathrm{O}_2}}{C_{\mathrm{aO}_2}-C_{\bar{\mathrm{v}}\mathrm{O}_2}}
+$$
+
+Each content itself is
+
+$$
+C_{\mathrm{O}_2}=1.34\,\mathrm{Hb}\,S_{\mathrm{O}_2}+0.0031\,P_{\mathrm{O}_2}
+$$
+
+so
+
+$$
+C_{\mathrm{aO}_2}=1.34\,\mathrm{Hb}\,S_{\mathrm{aO}_2}+0.0031\,P_{\mathrm{aO}_2}
+$$
+
+$$
+C_{\bar{\mathrm{v}}\mathrm{O}_2}=1.34\,\mathrm{Hb}\,S_{\bar{\mathrm{v}}\mathrm{O}_2}+0.0031\,P_{\bar{\mathrm{v}}\mathrm{O}_2}
+$$
+
+Units in the usual clinical form: $\mathrm{Hb}$ in g/dL, saturations as fractions (or percent/100), partial pressures in mmHg, contents in mL O₂/dL blood. The constant $1.34$ (sometimes $1.36$ or $1.39$) is Hüfner’s number; $0.0031$ is the solubility coefficient of O₂ in plasma.
 
 Mean arterial pressure  
 
