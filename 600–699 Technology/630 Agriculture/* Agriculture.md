@@ -164,10 +164,10 @@ ET_o = \frac{0.408\Delta(R_n-G)+\gamma\frac{900}{T+273}u_2(e_s-e_a)}{\Delta+\gam
 $$
 
 where
-- $R_n$ is net radiation (MJ m$^{-2}$ d$^{-1}$)
+- $R_n$ is net radiation (MJ $m^{-2}$ $d^{-1}$ )
 - $G$ is soil heat flux
 - $T$ is mean air temperature (°C)
-- $u_2$ is wind speed at 2 m (m s$^{-1}$)
+- $u_2$ is wind speed at 2 m (m $s^{-1}$)
 - $e_s-e_a$ is vapor-pressure deficit (kPa)
 - $\Delta$ is the slope of the saturation vapor-pressure curve
 - $\gamma$ is the psychrometric constant
@@ -310,3 +310,5 @@ Y_{BE} = \frac{FC+VC}{P}
 $$
 
 where $P$ is price, $Y$ yield, $VC$ variable cost, $FC$ fixed cost.
+
+---
