@@ -68,10 +68,10 @@ Classification (DDC) breakdown for 000–099
 | 038 | Encyclopedias in Scandinavian languages |
 | 039 | Encyclopedias in other languages |
 
-040 [Unassigned]
+040 Math Creatures (Normally, [Unassigned])
 | Number | Heading |
 |--------|---------|
-| 040–049 | [Unassigned] |
+| 040–049 | Creatures |
 
 050 Magazines, journals & serials (General serial publications)
 | Number | Heading |
