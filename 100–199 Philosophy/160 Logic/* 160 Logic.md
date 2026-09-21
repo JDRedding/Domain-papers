@@ -4,7 +4,8 @@
 Logic is the systematic study of principles of valid reasoning and argumentation, forming the foundation for critical thinking, mathematics, and computer science.
 
 ***See also***
-- 519 [Mathematical Logic](https://github.com/JDRedding/Domain-papers/tree/main/500%E2%80%93599%20Science/510%20Mathematics/519%20Logic)
+- Mathematics: Logical proofs underpin theorem establishment.
+  - 519 [Mathematical Logic](https://github.com/JDRedding/Domain-papers/tree/main/500%E2%80%93599%20Science/510%20Mathematics/519%20Logic)
   
 ## Definition of Logic
 
