@@ -1,0 +1,202 @@
+FULL SPACE MARINE TAXONOMY
+========================================
+
+[LINEAGE CLASS]
+├─ FIRSTBORN
+│  ├─ Tactical Marines
+│  ├─ Assault Marines
+│  ├─ Devastators
+│  ├─ Scouts
+│  ├─ Bike Squads
+│  ├─ Attack Bikes
+│  ├─ Scout Bikes
+│  ├─ Terminators
+│  ├─ Vanguard Veterans
+│  ├─ Company Veterans
+│  ├─ Centurions
+│  └─ Destroyers (Heresy)
+├─ PRIMARIS
+│  ├─ Intercessors
+│  ├─ Assault Intercessors
+│  ├─ Heavy Intercessors
+│  ├─ Infiltrators
+│  ├─ Incursors
+│  ├─ Reivers
+│  ├─ Eliminators
+│  ├─ Suppressors
+│  ├─ Hellblasters
+│  ├─ Eradicators
+│  ├─ Aggressors
+│  ├─ Bladeguard Veterans
+│  ├─ Inceptors
+│  ├─ Outriders
+│  ├─ Invader ATV
+│  ├─ Storm Speeders
+│  ├─ Invictor Warsuit
+│  ├─ Redemptor Dreadnought
+│  ├─ Brutalis Dreadnought
+│  └─ Ballistus Dreadnought
+├─ CHAOS LEGIONARIES
+│  ├─ Chaos Space Marines
+│  ├─ Khorne Berserkers
+│  ├─ Plague Marines
+│  ├─ Rubric Marines
+│  └─ Noise Marines
+└─ GREY KNIGHTS
+   ├─ Strike Squads
+   ├─ Interceptor Squads
+   ├─ Purifiers
+   └─ Paladins
+
+
+[ARMOR CLASS]
+├─ Mk I–VIII (Firstborn Power Armor)
+│  └─ Tactical / Assault / Devastator / Bike / Scout
+├─ Mk X Tacticus
+│  └─ Intercessor / Assault / Heavy* / Hellblaster
+├─ Phobos
+│  ├─ Infiltrators
+│  ├─ Incursors
+│  ├─ Reivers
+│  └─ Eliminators
+├─ Omnis
+│  ├─ Inceptors
+│  └─ Suppressors
+├─ Gravis
+│  ├─ Heavy Intercessors
+│  ├─ Aggressors
+│  └─ Eradicators
+├─ Terminator Armor
+│  ├─ Terminator Squads
+│  ├─ Cataphractii / Tartaros variants
+│  └─ Chapter elites (Deathwing, Firedrakes, etc.)
+├─ Exo-Armor
+│  └─ Centurions (Assault / Devastator)
+└─ Warsuits
+   ├─ Invictor Tactical Warsuit
+   ├─ Brutalis Dreadnought
+   └─ Ballistus Dreadnought
+
+
+[BATTLEFIELD ROLE CLASS]
+├─ BATTLELINE
+│  ├─ Tactical Marines
+│  ├─ Intercessors
+│  ├─ Assault Intercessors
+│  ├─ Heavy Intercessors
+│  ├─ Infiltrators
+│  └─ Scout Marines
+├─ CLOSE ASSAULT
+│  ├─ Assault Marines
+│  ├─ Vanguard Veterans
+│  ├─ Reivers
+│  ├─ Incursors
+│  ├─ Inceptors
+│  ├─ Wulfen
+│  └─ Death Company
+├─ FIRE SUPPORT
+│  ├─ Devastators
+│  ├─ Hellblasters
+│  ├─ Eradicators
+│  ├─ Eliminators
+│  ├─ Suppressors
+│  ├─ Rubric Marines
+│  └─ Plague Marines
+├─ ELITE
+│  ├─ Terminators
+│  ├─ Bladeguard Veterans
+│  ├─ Aggressors
+│  ├─ Company Veterans
+│  ├─ Destroyers
+│  ├─ Sanguinary Guard
+│  └─ Firedrakes
+├─ FAST ATTACK
+│  ├─ Bike Squads
+│  ├─ Attack Bikes
+│  ├─ Scout Bikes
+│  ├─ Outriders
+│  ├─ Invader ATV
+│  ├─ Land Speeders
+│  ├─ Storm Speeders
+│  └─ Suppressors (jump / bounding fire)
+├─ FLYERS
+│  ├─ Stormtalon Gunship
+│  ├─ Stormhawk Interceptor
+│  ├─ Stormraven Gunship
+│  ├─ Fire Raptor
+│  └─ Xiphon Interceptor
+├─ VEHICLES (GROUND)
+│  ├─ Rhino
+│  ├─ Razorback
+│  ├─ Predator
+│  ├─ Land Raider
+│  ├─ Vindicator
+│  ├─ Whirlwind
+│  └─ Hunter / Stalker
+├─ VEHICLES (GRAV / PRIMARIS)
+│  ├─ Repulsor
+│  ├─ Impulsor
+│  └─ Gladiator (variants)
+├─ TRANSPORTS
+│  ├─ Drop Pod
+│  ├─ Stormraven (dual role)
+│  └─ Stormwolf / Stormfang (Space Wolves)
+└─ DREADNOUGHTS
+   ├─ Standard / Venerable
+   ├─ Contemptor
+   ├─ Redemptor
+   ├─ Brutalis
+   └─ Ballistus
+
+
+[COMMAND & SPECIALIST CLASS]
+├─ Command
+│  ├─ Chapter Master
+│  ├─ Captain
+│  ├─ Lieutenant
+│  ├─ Ancient (Banner)
+│  ├─ Command Squad
+│  └─ Honor Guard
+├─ Spiritual / Psychic / Technical
+│  ├─ Chaplain
+│  ├─ Librarian
+│  ├─ Techmarine
+│  └─ Apothecary
+└─ Judiciary
+   └─ Judiciar
+
+
+[CHAPTER-SPECIFIC CLASS]
+├─ Dark Angels
+│  ├─ Deathwing (Terminator elite)
+│  └─ Ravenwing (bike / speeder elite)
+├─ Blood Angels
+│  ├─ Death Company
+│  └─ Sanguinary Guard
+├─ Space Wolves
+│  ├─ Wulfen
+│  ├─ Wolf Guard
+│  └─ Stormwolf / Stormfang
+├─ Black Templars
+│  └─ Crusader Squads
+├─ Salamanders
+│  └─ Firedrakes (Terminator elite)
+├─ Deathwatch
+│  └─ Kill Teams (mixed-chapter specialists)
+└─ Legion of the Damned
+   └─ Spectral Firstborn fire-support infantry
+
+
+[CHAOS COUNTERPART CLASS]
+├─ Chaos Marines (baseline)
+├─ Khorne Berserkers (melee)
+├─ Plague Marines (durable, disease)
+├─ Rubric Marines (sorcerous automata)
+└─ Noise Marines (sonic weapons)
+
+
+[STRUCTURAL META-LAYER]
+├─ Lineage Class: {Firstborn, Primaris, Chaos, Grey Knights}
+├─ Armor Class: {Mk I–VIII, Tacticus, Phobos, Omnis, Gravis, Terminator, Exo, Warsuit}
+├─ Role Class: {Battleline, Assault, Fire Support, Elite, Fast Attack, Vehicle, Flyer, Dreadnought}
+└─ Chapter Class: {Founding Chapter, Successor, Ordo-specialist (Deathwatch, Grey Knights), Outlier (Legion of the Damned)}
