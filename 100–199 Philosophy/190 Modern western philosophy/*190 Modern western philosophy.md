@@ -60,7 +60,7 @@ This European tradition is historical, interpretive, and often speculative. It i
 
 Pragmatism, neopragmatism, critical theory, and postcolonial philosophies also play central roles. They extend inquiry into applied ethics, social justice, bioethics, environmental ethics, and global human rights.
 
-# Contemporary Philosophy
+## Contemporary Philosophy
 
 Contemporary philosophy is a diverse and evolving field of thought from the early 20th century to the present. It includes analytic and continental traditions and engages deeply with language, experience, ethics, politics, and the human condition.
 
