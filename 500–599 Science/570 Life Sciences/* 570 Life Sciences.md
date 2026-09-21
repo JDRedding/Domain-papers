@@ -22,6 +22,18 @@ Life sciences focus on understanding the structure, function, growth, evolution,
 | 578 | Natural history of organisms |
 | 579 | Natural history of microorganisms, fungi, algae |
 
+### What 574 Mean
+
+Historically, 574 grouped works on internal processes and structural biology. It sat between physiology, anatomy, biochemistry, and other life processes that did not fit neatly into later, more specific numbers. Older catalogs and some library records still call it “physiological and structural biology,” or simply “biology.” **574, here, will serve as an open problem domain** with subdivisions such as:
+
+574.1 Open problems in Physiology  
+574.2 Open problems in Pathology  
+574.3 Open problems in Development / maturation  
+574.4 Open problems in  Morphology and descriptive anatomy  
+574.5 Open problems in Ecology  
+574.8 Open problems in Histology, cytology, and related internal structure (including Open problems in molecular biology)
+
+Some item labeled 574 are references to older or interdisciplinary *and, **here now**, cataloged for current open problem and frontier research material*. This knowledge catalog uses 574 for new works that are actively maintained instead of a retired catch-all number.
 
 ## Major Disciplines
 
