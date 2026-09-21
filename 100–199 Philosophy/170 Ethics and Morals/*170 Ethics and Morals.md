@@ -5,7 +5,9 @@ Ethics is the philosophical study of moral phenomena. Also called moral philosop
 
 Ethical reflection also promotes personal growth by encouraging people to evaluate their actions and align them with broader moral standards. Ethics guides human conduct. It provides a foundation for distinguishing right from wrong and for promoting fair and responsible behavior. Morals are internal and personal: they reflect what someone believes to be right or wrong. Ethics are external and collective: they provide formal guidelines so behavior aligns with societal or professional norms. Understanding the difference matters for personal development, social interaction, and professional integrity.
 
-Its main branches include normative ethics, applied ethics, and metaethics.
+## Overview
+
+Ethics examines the principles and values that govern human behavior. It provides frameworks for evaluating actions, intentions, and consequences, helping individuals and organizations make decisions aligned with ideas of good conduct, fairness, and justice. Ethics is concerned not only with what people do, but with what they ought to do. It emphasizes responsibility, integrity, and moral reasoning. Its main branches include normative ethics, applied ethics, and metaethics.
 
 - **Normative ethics** aims to identify general principles that govern how people should act.
 - **Applied ethics** examines concrete ethical problems in real-life situations, such as abortion, the treatment of animals, and business practices.
@@ -20,10 +22,6 @@ Influential normative theories include consequentialism, deontology, and virtue 
 - **Virtue ethics** emphasizes character traits such as courage, honesty, and compassion.
 
 Ethics also refers more broadly to any system or theory of moral values or principles. It is the discipline concerned with what is morally good and bad, and with what is morally right and wrong. As a branch of philosophy, it studies moral principles that guide individuals and societies in distinguishing right from wrong and making morally responsible choices.
-
-## Overview
-
-Ethics examines the principles and values that govern human behavior. It provides frameworks for evaluating actions, intentions, and consequences, helping individuals and organizations make decisions aligned with ideas of good conduct, fairness, and justice. Ethics is concerned not only with what people do, but with what they ought to do. It emphasizes responsibility, integrity, and moral reasoning.
 
 ## Definition and Scope
 
