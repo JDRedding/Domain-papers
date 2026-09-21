@@ -25,7 +25,7 @@ Health is a broader idea than freedom from sickness. The World Health Organizati
 
 ## APPENDIX: Health equations and quantities
 
-Health itself is a conceptual definition, not a single equation. The quantities used to *measure* aspects of health, risk, burden, and fitness are mathematical. Below are the standard formulas and their usual notation. These formulas quantify pieces of physical function, risk, and population burden. They do not encode mental or social well-being, which are measured with scales and indices rather than a single universal equation. If you want a narrower set (only fitness, only DALYs, or only outbreak math), say which domain.
+Health itself is a conceptual definition, not a single equation. The quantities used to *measure* aspects of health, risk, burden, and fitness are mathematical. Below are the standard formulas and their usual notation. These formulas quantify pieces of physical function, risk, and population burden. They do not encode mental or social well-being, which are measured with scales and indices rather than a single universal equation.
 
 ### Population health and burden (WHO / Global Burden of Disease style)
 
