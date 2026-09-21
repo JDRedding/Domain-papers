@@ -12,6 +12,20 @@ Astronomy has advanced fundamental science, enhanced navigation and technology, 
 
 Astronomy explores the formation, behavior, and physical properties of objects and phenomena in the universe. It combines observation, theory, and experimentation to understand the cosmos on scales ranging from our solar system to billions of light-years across. Unlike astrology, astronomy is a scientific discipline grounded in physics, mathematics, and chemistry.
 
+### Astronomy & allied sciences
+| Domain | Subject |
+|--------|---------|
+| 520 | Astronomy & allied sciences |
+| 521 | Celestial mechanics |
+| 522 | Techniques, equipment & materials |
+| 523 | Specific celestial bodies & phenomena |
+| 524 | [Unassigned] |
+| 525 | Earth (Astronomical geography) |
+| 526 | Mathematical geography |
+| 527 | Celestial navigation |
+| 528 | Ephemerides |
+| 529 | Chronology |
+
 ## Major Branches of Astronomy
 
 1. **Observational Astronomy**  
