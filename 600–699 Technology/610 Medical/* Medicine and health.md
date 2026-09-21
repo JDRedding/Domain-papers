@@ -3,6 +3,19 @@
 
 **Medicine** is the science and practice of diagnosing, treating, and preventing disease. **Health** is a state of complete physical, mental, and social well-being—not merely the absence of disease. Medicine supplies the knowledge and means to protect and restore health. Health is the overall well-being that medicine seeks to achieve.
 
+| Number | Heading |
+|--------|---------|
+| 610 | Medicine & health |
+| 611 | Human anatomy, cytology & histology |
+| 612 | Human physiology |
+| 613 | Personal health & safety |
+| 614 | Incidence & prevention of disease |
+| 615 | Pharmacology & therapeutics |
+| 616 | Diseases |
+| 617 | Surgery & related medical specialties |
+| 618 | Gynecology, obstetrics, pediatrics & geriatrics |
+| 619 | [Unassigned] |
+
 ## Medicine
 
 Medicine aims to maintain or restore human health through prevention, diagnosis, and treatment. It includes several related fields:
