@@ -1,5 +1,5 @@
 # Medicine and health
-- 610 Medicial/
+- 610 Medicial
 
 **Medicine** is the science and practice of diagnosing, treating, and preventing disease. **Health** is a state of complete physical, mental, and social well-being—not merely the absence of disease. Medicine supplies the knowledge and means to protect and restore health. Health is the overall well-being that medicine seeks to achieve.
 
