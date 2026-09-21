@@ -9,8 +9,6 @@ Modern Western philosophy shaped later work in politics, science, education, eth
 
 Contemporary philosophy advances theoretical understanding and also addresses practical concerns in ethics, politics, technology, and society. Philosophers contribute to bioethics, environmental policy, AI ethics, and human rights debates, showing how contemporary ideas inform real-world decision-making.
 
-## Historical Context
-
 Modern Western philosophy emerged in Europe after the Renaissance, roughly from the early 1600s to the late 1800s. It developed as a response to medieval scholasticism and religious orthodoxy, emphasizing rational inquiry, empirical observation, and human reason as paths to knowledge. Key influences include the Scientific Revolution, the Reformation, and the rise of secularism and political liberalism. This period marks a shift from a primarily theological worldview to one that privileges human experience and rationality.
 
 ## Core Ideas
