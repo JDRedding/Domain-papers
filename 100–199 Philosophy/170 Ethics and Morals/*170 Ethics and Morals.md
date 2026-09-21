@@ -86,6 +86,10 @@ Businesses often face challenges such as:
 - **Discrimination and harassment:** Violating equitable workplace standards.
 - **Environmental responsibility:** Neglecting sustainability or causing ecological harm.
 
+### Practical Applications
+
+Companies put ethics into practice through codes of conduct, compliance programs, ethics training, whistleblower protections, and corporate social responsibility (CSR) initiatives. Ethical behavior can improve employee morale, customer loyalty, and long-term profitability. Unethical practices can lead to legal penalties, reputational damage, and financial loss.
+
 ## Ethical Frameworks and Approaches
 
 Organizations often use frameworks such as:
@@ -95,6 +99,4 @@ Organizations often use frameworks such as:
 - **Justice-based approach:** Ensuring fairness in both outcomes and procedures.
 - **Virtue ethics:** Cultivating moral character traits such as honesty and compassion in decision-makers.
 
-## Practical Applications
 
-Companies put ethics into practice through codes of conduct, compliance programs, ethics training, whistleblower protections, and corporate social responsibility (CSR) initiatives. Ethical behavior can improve employee morale, customer loyalty, and long-term profitability. Unethical practices can lead to legal penalties, reputational damage, and financial loss.
