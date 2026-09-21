@@ -1,5 +1,6 @@
 # Manuscripts and rare books
 → Manuscripts & Rare Books
+- 090 Rare Manuscripts & books
 
 **Manuscripts and rare books** are among the most valuable forms of written heritage. They preserve historical, literary, artistic, and scholarly knowledge and often offer unique insights into past societies. The rise of **printed books**—from East Asian woodblock and movable type to European typography—transformed how knowledge was copied, shared, and preserved. Between the handwritten book and later, standardized printing stand two early European forms: **block books**, in which each page was carved as a single woodblock, and **incunabula**, books printed with movable type before 1501. 
 
