@@ -11,6 +11,8 @@
 | 514 | Topology |
 | 515 | Analysis |
 | 516 | Geometry |
-| 517 | [Unassigned] |
+| 517 | Unsolved Problems |
 | 518 | Numerical analysis |
 | 519 | Probabilities & applied mathematics |
+
+Note: 517 was [Unassigned] 
