@@ -1,7 +1,13 @@
 # Quotation
 - 080 Quotation
 
-A **quotation** is either the exact words taken from a speech, text, or other work, or a statement. Context decides which sense is meant. 
+A **quotation** is either the exact words taken from a speech, text, or other work, or a statement. Context decides which sense is meant. In ordinary English, a quotation is a passage or expression reproduced word for word from another source. People use quotations to:
+
+- Cite spoken or written words accurately
+- Add authority or support to a statement
+- Illustrate a point with an example
+
+Quoted words are usually placed in quotation marks to show that they are not the writer’s own.
 
 ## **Language and scholarship:** 
 An exact reproduced words, properly marked or cited.
@@ -15,16 +21,6 @@ An exact reproduced words, properly marked or cited.
 | quotation marks | noun (plural) |
 
 Etymology: from Medieval Latin *quotātiō*, from *quotāre* “to quote”; recorded in English from about 1525–1535.
-
-## General definition
-
-In ordinary English, a quotation is a passage or expression reproduced word for word from another source. People use quotations to:
-
-- Cite spoken or written words accurately
-- Add authority or support to a statement
-- Illustrate a point with an example
-
-Quoted words are usually placed in quotation marks to show that they are not the writer’s own.
 
 ## Literary and linguistic use
 
