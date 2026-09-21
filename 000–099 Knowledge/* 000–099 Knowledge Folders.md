@@ -9,7 +9,7 @@
 - 060 Associations, organizations & museums (General organizations & museology)
 - 070 News media, journalism & publishing
 - 080 Quotations (General collections)
-- 090 Manuscripts & rare books
+- 090 Rare Manuscripts (Manuscripts & rare books)
 
 
 ## 000 Computer science, information & general works
@@ -140,7 +140,8 @@ General Quotation collections
 | 088 | Collections in Scandinavian languages |
 | 089 | Collections in other languages |
 
-## 090 Manuscripts & rare books
+## 090 Rare Manuscripts 
+Manuscripts & rare books
 
 | Number | Heading |
 |--------|---------|
