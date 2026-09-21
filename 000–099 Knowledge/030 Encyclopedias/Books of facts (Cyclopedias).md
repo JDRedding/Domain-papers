@@ -1,7 +1,7 @@
 # Books of facts
 - 030 Encyclopedias
 
-Books of facts, commonly known as Cyclopedias, are comprehensive reference works that compile verified knowledge across a wide range of subjects for educational and informational use. In summary, Cyclopedias are foundational reference resources that compile and organize knowledge across many subjects. They have evolved from printed multi-volume sets to digital platforms while remaining accessible repositories of human knowledge for education, research, and general learning.
+**Books of facts**, commonly known as **Cyclopedias**, are comprehensive reference works that compile verified knowledge across a wide range of subjects for educational and informational use. In summary, Cyclopedias are foundational reference resources that compile and organize knowledge across many subjects. They have evolved from printed multi-volume sets to digital platforms while remaining accessible repositories of human knowledge for education, research, and general learning.
 
 ## Definition and Purpose
 
