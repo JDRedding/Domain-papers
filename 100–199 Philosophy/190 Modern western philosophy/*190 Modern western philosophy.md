@@ -1,7 +1,7 @@
 # Modern Western Philosophy
 - 190 Modern western philosophy
 
-Modern Western philosophy spans the 17th to the late 19th century. It emphasizes reason, scientific inquiry, individualism, and critical thinking, and it laid the foundation for many later philosophical traditions. Modern Western philosophy is a foundational period in which reason, empirical inquiry, and humanism came to dominate intellectual discourse. It produced a rich legacy of theories, debates, and conceptual frameworks that still inform philosophy today.
+Modern Western philosophy is a foundational period in which reason, empirical inquiry, and humanism came to dominate intellectual discourse. It produced a rich legacy of theories, debates, and conceptual frameworks that still inform philosophy today. Modern Western philosophy spans the 17th to the late 19th century. It emphasizes reason, scientific inquiry, individualism, and critical thinking, and it laid the foundation for many later philosophical traditions. 
 
 Modern Western philosophy shaped later work in politics, science, education, ethics, and psychology. Its emphasis on reason and critical thought continues to underpin analytic philosophy, liberal political theory, cognitive science, and debates about human rights, knowledge, and social organization. It bridges medieval scholastic thought and later inquiries into mind, language, and society.
 
