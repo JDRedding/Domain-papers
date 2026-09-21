@@ -12,7 +12,7 @@ Classification (DDC) breakdown for 000–099
 - 090 Manuscripts & rare books
 
 
-000 Computer science, information & general works
+## 000 Computer science, information & general works
 | Number | Heading |
 |--------|---------|
 | 000 | Computer science, information & general works |
@@ -26,7 +26,7 @@ Classification (DDC) breakdown for 000–099
 | 008 | [Unassigned] |
 | 009 | [Unassigned] |
 
-010 Bibliographies
+## 010 Bibliographies
 | Number | Heading |
 |--------|---------|
 | 010 | Bibliography |
@@ -40,7 +40,7 @@ Classification (DDC) breakdown for 000–099
 | 018 | Catalogs arranged by author, date, etc. |
 | 019 | Dictionary catalogs |
 
-020 Library & information sciences
+## 020 Library & information sciences
 | Number | Heading |
 |--------|---------|
 | 020 | Library & information sciences |
@@ -54,7 +54,9 @@ Classification (DDC) breakdown for 000–099
 | 028 | Reading & use of other information media |
 | 029 | [Unassigned] |
 
-030 Encyclopedias & books of facts (General encyclopedic works)
+## 030 Encyclopedias & books of facts
+General encyclopedic works
+
 | Number | Heading |
 |--------|---------|
 | 030 | General encyclopedic works |
@@ -68,12 +70,16 @@ Classification (DDC) breakdown for 000–099
 | 038 | Encyclopedias in Scandinavian languages |
 | 039 | Encyclopedias in other languages |
 
-040 Math Creatures (Normally, [Unassigned])
+## 040 Math Creatures 
+Normally, [Unassigned]
+
 | Number | Heading |
 |--------|---------|
 | 040–049 | Creatures |
 
-050 Magazines, journals & serials (General serial publications)
+## 050 Magazines, journals & serials 
+General serial publications
+
 | Number | Heading |
 |--------|---------|
 | 050 | General serial publications |
@@ -87,7 +93,9 @@ Classification (DDC) breakdown for 000–099
 | 058 | Serials in Scandinavian languages |
 | 059 | Serials in other languages |
 
-060 Associations, organizations & museums (General organizations & museology)
+## 060 Associations, organizations & museums 
+General organizations & museology
+
 | Number | Heading |
 |--------|---------|
 | 060 | General organizations & museum science |
@@ -101,7 +109,8 @@ Classification (DDC) breakdown for 000–099
 | 068 | Organizations in other geographic areas |
 | 069 | Museum science (Museology) |
 
-070 News media, journalism & publishing
+## 070 News media, journalism & publishing
+
 | Number | Heading |
 |--------|---------|
 | 070 | News media, journalism & publishing |
@@ -115,7 +124,9 @@ Classification (DDC) breakdown for 000–099
 | 078 | Newspapers in Scandinavia |
 | 079 | Newspapers in other geographic areas |
 
-080 Quotations (General collections)
+## 080 Quotations 
+General Quotation collections
+
 | Number | Heading |
 |--------|---------|
 | 080 | General collections |
@@ -129,7 +140,8 @@ Classification (DDC) breakdown for 000–099
 | 088 | Collections in Scandinavian languages |
 | 089 | Collections in other languages |
 
-090 Manuscripts & rare books
+## 090 Manuscripts & rare books
+
 | Number | Heading |
 |--------|---------|
 | 090 | Manuscripts & rare books |
@@ -143,7 +155,7 @@ Classification (DDC) breakdown for 000–099
 | 098 | Prohibited works, forgeries & hoaxes |
 | 099 | Books notable for format |
 
-Notes  
-This is the standard Third Summary level (the “thousand sections”). Further decimal subdivisions exist in the full schedules (e.g., 004.1, 006.3 for artificial intelligence, 025.4 for subject analysis/cataloging, etc.).  
-Some numbers marked “[Unassigned]” or noted as relocated in older editions remain unassigned or have limited use in current practice.  
-Headings can vary slightly in wording between summary tables and the full schedules; the versions above follow the widely published OCLC/DDC Summaries.
+## Notes  
+- This is the standard Third Summary level (the “thousand sections”). Further decimal subdivisions exist in the full schedules (e.g., 004.1, 006.3 for artificial intelligence, 025.4 for subject analysis/cataloging, etc.).  
+- Some numbers marked “[Unassigned]” or noted as relocated in older editions remain unassigned or have limited use in current practice.  
+- Headings can vary slightly in wording between summary tables and the full schedules; the versions above follow the widely published OCLC/DDC Summaries.
