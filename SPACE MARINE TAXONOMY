@@ -1,5 +1,5 @@
-FULL SPACE MARINE TAXONOMY
-========================================
+FULL SPACE MARINE TAXONOMY (FINAL, AUDITED)
+===========================================
 
 [LINEAGE CLASS]
 ├─ FIRSTBORN
@@ -10,11 +10,12 @@ FULL SPACE MARINE TAXONOMY
 │  ├─ Bike Squads
 │  ├─ Attack Bikes
 │  ├─ Scout Bikes
-│  ├─ Terminators
+│  ├─ Terminators (Indomitus / Cataphractii / Tartaros)
 │  ├─ Vanguard Veterans
 │  ├─ Company Veterans
 │  ├─ Centurions
-│  └─ Destroyers (Heresy)
+│  ├─ Destroyers (Heresy)
+│  └─ Thunderfire Cannon (Techmarine artillery)
 ├─ PRIMARIS
 │  ├─ Intercessors
 │  ├─ Assault Intercessors
@@ -53,13 +54,13 @@ FULL SPACE MARINE TAXONOMY
 ├─ Mk I–VIII (Firstborn Power Armor)
 │  └─ Tactical / Assault / Devastator / Bike / Scout
 ├─ Mk X Tacticus
-│  └─ Intercessor / Assault / Heavy* / Hellblaster
+│  └─ Intercessor / Assault / Hellblaster
 ├─ Phobos
 │  ├─ Infiltrators
 │  ├─ Incursors
 │  ├─ Reivers
 │  └─ Eliminators
-├─ Omnis
+├─ Omnis (Jump / Mobile Fire Support)
 │  ├─ Inceptors
 │  └─ Suppressors
 ├─ Gravis
@@ -67,9 +68,10 @@ FULL SPACE MARINE TAXONOMY
 │  ├─ Aggressors
 │  └─ Eradicators
 ├─ Terminator Armor
-│  ├─ Terminator Squads
-│  ├─ Cataphractii / Tartaros variants
-│  └─ Chapter elites (Deathwing, Firedrakes, etc.)
+│  ├─ Indomitus
+│  ├─ Cataphractii
+│  ├─ Tartaros
+│  └─ Chapter elites (Deathwing, Firedrakes)
 ├─ Exo-Armor
 │  └─ Centurions (Assault / Devastator)
 └─ Warsuits
@@ -90,7 +92,6 @@ FULL SPACE MARINE TAXONOMY
 │  ├─ Assault Marines
 │  ├─ Vanguard Veterans
 │  ├─ Reivers
-│  ├─ Incursors
 │  ├─ Inceptors
 │  ├─ Wulfen
 │  └─ Death Company
@@ -117,8 +118,7 @@ FULL SPACE MARINE TAXONOMY
 │  ├─ Outriders
 │  ├─ Invader ATV
 │  ├─ Land Speeders
-│  ├─ Storm Speeders
-│  └─ Suppressors (jump / bounding fire)
+│  └─ Storm Speeders
 ├─ FLYERS
 │  ├─ Stormtalon Gunship
 │  ├─ Stormhawk Interceptor
@@ -140,7 +140,7 @@ FULL SPACE MARINE TAXONOMY
 ├─ TRANSPORTS
 │  ├─ Drop Pod
 │  ├─ Stormraven (dual role)
-│  └─ Stormwolf / Stormfang (Space Wolves)
+│  └─ Stormwolf / Stormfang
 └─ DREADNOUGHTS
    ├─ Standard / Venerable
    ├─ Contemptor
@@ -162,41 +162,32 @@ FULL SPACE MARINE TAXONOMY
 │  ├─ Librarian
 │  ├─ Techmarine
 │  └─ Apothecary
-└─ Judiciary
-   └─ Judiciar
+├─ Judiciary
+│  └─ Judiciar
+└─ Support Constructs
+   └─ Servitors
 
 
 [CHAPTER-SPECIFIC CLASS]
-├─ Dark Angels
-│  ├─ Deathwing (Terminator elite)
-│  └─ Ravenwing (bike / speeder elite)
-├─ Blood Angels
-│  ├─ Death Company
-│  └─ Sanguinary Guard
-├─ Space Wolves
-│  ├─ Wulfen
-│  ├─ Wolf Guard
-│  └─ Stormwolf / Stormfang
-├─ Black Templars
-│  └─ Crusader Squads
-├─ Salamanders
-│  └─ Firedrakes (Terminator elite)
-├─ Deathwatch
-│  └─ Kill Teams (mixed-chapter specialists)
-└─ Legion of the Damned
-   └─ Spectral Firstborn fire-support infantry
+├─ Dark Angels: Deathwing / Ravenwing
+├─ Blood Angels: Death Company / Sanguinary Guard
+├─ Space Wolves: Wulfen / Wolf Guard / Stormwolf / Stormfang
+├─ Black Templars: Crusader Squads
+├─ Salamanders: Firedrakes
+├─ Deathwatch: Kill Teams
+└─ Legion of the Damned: Spectral fire-support infantry
 
 
 [CHAOS COUNTERPART CLASS]
-├─ Chaos Marines (baseline)
-├─ Khorne Berserkers (melee)
-├─ Plague Marines (durable, disease)
-├─ Rubric Marines (sorcerous automata)
-└─ Noise Marines (sonic weapons)
+├─ Chaos Marines
+├─ Khorne Berserkers
+├─ Plague Marines
+├─ Rubric Marines
+└─ Noise Marines
 
 
 [STRUCTURAL META-LAYER]
 ├─ Lineage Class: {Firstborn, Primaris, Chaos, Grey Knights}
 ├─ Armor Class: {Mk I–VIII, Tacticus, Phobos, Omnis, Gravis, Terminator, Exo, Warsuit}
 ├─ Role Class: {Battleline, Assault, Fire Support, Elite, Fast Attack, Vehicle, Flyer, Dreadnought}
-└─ Chapter Class: {Founding Chapter, Successor, Ordo-specialist (Deathwatch, Grey Knights), Outlier (Legion of the Damned)}
+└─ Chapter Class: {Founding, Successor, Ordo-specialist, Outlier}
