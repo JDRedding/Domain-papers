@@ -15,7 +15,7 @@ Life sciences focus on understanding the structure, function, growth, evolution,
 | 571 | Physiology & related subjects |
 | 572 | Biochemistry |
 | 573 | Specific physiological systems in animals |
-| 574 | [Unassigned / limited] |
+| 574 | Open problems |
 | 575 | Specific parts & physiological systems in plants |
 | 576 | Genetics & evolution |
 | 577 | Ecology |
