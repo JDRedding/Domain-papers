@@ -90,8 +90,17 @@ $\mathrm{VO}_{2}$ = oxygen consumption
 
 Standard notation for the two oxygen contents in the Fick equation is
 
-- $C_{\mathrm{aO}_2}$ — arterial oxygen content  
-- $C_{\bar{\mathrm{v}}\mathrm{O}_2}$ — mixed-venous oxygen content (bar over $\mathrm{v}$ marks mixed venous blood)
+$$
+C_{\mathrm{aO}_2}
+$$
+
+— arterial oxygen content
+
+$$
+C_{\bar{\mathrm{v}}\mathrm{O}_2}
+$$
+
+— mixed-venous oxygen content (bar over $\mathrm{v}$ marks mixed venous blood)
 
 The Fick relation is then
 
