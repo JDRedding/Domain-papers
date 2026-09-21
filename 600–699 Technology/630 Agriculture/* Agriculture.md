@@ -164,7 +164,7 @@ ET_o = \frac{0.408\Delta(R_n-G)+\gamma\frac{900}{T+273}u_2(e_s-e_a)}{\Delta+\gam
 $$
 
 where
-- $R_n$ is net radiation (MJ $m^{-2}$ $d^{-1}$ )
+- $R_n$ is net radiation (MJ ${m}^{-2}$ ${d}^{-1}$ )
 - $G$ is soil heat flux
 - $T$ is mean air temperature (°C)
 - $u_2$ is wind speed at 2 m (m $s^{-1}$)
@@ -257,7 +257,7 @@ A = R\cdot K\cdot LS\cdot C\cdot P
 $$
 
 where
-- $A$ is soil loss (t ha$^{-1}$ yr$^{-1}$ or ton acre$^{-1}$ yr$^{-1}$)
+- $A$ is soil loss (t ${ha}^{-1}$ ${yr}^{-1}$ or ton ${acre}^{-1}$ ${yr}^{-1}$)
 - $R$ is rainfall–runoff erosivity
 - $K$ is soil erodibility
 - $LS$ is the combined slope-length and slope-steepness factor
