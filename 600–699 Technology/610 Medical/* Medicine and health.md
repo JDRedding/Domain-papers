@@ -23,6 +23,184 @@ Health is a broader idea than freedom from sickness. The World Health Organizati
 - **Social health.** The capacity to form supportive relationships and take part in society
 - **Preventive health.** Habits and measures—such as diet, exercise, and regular check-ups—that lower the risk of illness
 
+## APPENDIX: Health equations and quantities
+
+Health itself is a conceptual definition, not a single equation. The quantities used to *measure* aspects of health, risk, burden, and fitness are mathematical. Below are the standard formulas and their usual notation. These formulas quantify pieces of physical function, risk, and population burden. They do not encode mental or social well-being, which are measured with scales and indices rather than a single universal equation. If you want a narrower set (only fitness, only DALYs, or only outbreak math), say which domain.
+
+### Population health and burden (WHO / Global Burden of Disease style)
+
+Disability-adjusted life years combine premature death and time lived in less-than-full health:
+
+$$
+\mathrm{DALY} = \mathrm{YLL} + \mathrm{YLD}
+$$
+
+Years of life lost (for a death at age $a$):
+
+$$
+\mathrm{YLL} = N \times L(a)
+$$
+
+where $N$ is the number of deaths and $L(a)$ is the standard remaining life expectancy at age $a$.
+
+Years lived with disability (incidence-based form):
+
+$$
+\mathrm{YLD} = I \times \mathrm{DW} \times L
+$$
+
+where $I$ is incident cases, $\mathrm{DW}$ is the disability weight ($0$ = full health, $1$ = equivalent to death), and $L$ is average duration in years.
+
+Healthy life expectancy (HALE) is life expectancy adjusted for time spent in less-than-full health; it is computed from life tables and YLD rates rather than a single closed-form expression.
+
+### Frequency and risk (epidemiology)
+
+Point prevalence:
+
+$$
+P = \frac{\text{number of existing cases at time } t}{\text{population at time } t}
+$$
+
+Incidence (cumulative / incidence proportion over interval $\Delta t$):
+
+$$
+I = \frac{\text{number of new cases in }\Delta t}{\text{population at risk at start of }\Delta t}
+$$
+
+Incidence rate (person-time):
+
+$$
+IR = \frac{\text{new cases}}{\text{person-time at risk}}
+$$
+
+Crude death rate (often per $1{,}000$ or $100{,}000$):
+
+$$
+\mathrm{CDR} = \frac{\text{deaths in period}}{\text{mid-period population}} \times k
+$$
+
+From a $2\times 2$ table with cells $a,b,c,d$ (exposed+disease, exposed+no disease, unexposed+disease, unexposed+no disease):
+
+Risk (cumulative incidence) in exposed and unexposed:
+
+$$
+R_1 = \frac{a}{a+b},\qquad R_0 = \frac{c}{c+d}
+$$
+
+Risk ratio (relative risk):
+
+$$
+\mathrm{RR} = \frac{R_1}{R_0} = \frac{a/(a+b)}{c/(c+d)}
+$$
+
+Odds ratio:
+
+$$
+\mathrm{OR} = \frac{ad}{bc}
+$$
+
+Risk difference (attributable risk):
+
+$$
+\mathrm{RD} = R_1 - R_0
+$$
+
+Number needed to treat / harm:
+
+$$
+\mathrm{NNT} = \frac{1}{|R_{\text{control}} - R_{\text{treatment}}|}
+$$
+
+Basic reproduction number (simple contact form):
+
+$$
+R_0 = \beta \times c \times D
+$$
+
+where $\beta$ is transmission probability per contact, $c$ is contact rate, and $D$ is mean infectious duration. The effective number is $R_t = R_0 S$, with $S$ the susceptible fraction.
+
+### Individual physical metrics
+
+Body mass index:
+
+$$
+\mathrm{BMI} = \frac{m}{h^2}
+$$
+
+with mass $m$ in kilograms and height $h$ in metres.
+
+Mifflin–St Jeor basal metabolic rate (kcal/day):
+
+$$
+\mathrm{BMR}_{\text{male}} = 10m + 6.25h_{\text{cm}} - 5A + 5
+$$
+
+$$
+\mathrm{BMR}_{\text{female}} = 10m + 6.25h_{\text{cm}} - 5A - 161
+$$
+
+where $A$ is age in years. Total daily energy expenditure is $\mathrm{TDEE} = \mathrm{BMR} \times \mathrm{PAL}$ (physical activity level factor).
+
+Katch–McArdle (uses lean body mass $LBM$):
+
+$$
+\mathrm{BMR} = 370 + 21.6 \times LBM
+$$
+
+Simple energy-balance identity:
+
+$$
+\Delta E = E_{\text{in}} - E_{\text{out}}
+$$
+
+Approximate max heart rate (common rule of thumb; individual variation is large):
+
+$$
+\mathrm{HR}_{\max} \approx 220 - A
+$$
+
+Karvonen target heart rate at intensity fraction $f$:
+
+$$
+\mathrm{THR} = (\mathrm{HR}_{\max} - \mathrm{HR}_{\text{rest}})f + \mathrm{HR}_{\text{rest}}
+$$
+
+A simple resting-HR estimate of $\mathrm{VO}_2\max$ (ml·kg⁻¹·min⁻¹):
+
+$$
+\mathrm{VO}_2\max \approx 15.3 \times \frac{\mathrm{HR}_{\max}}{\mathrm{HR}_{\text{rest}}}
+$$
+
+Cooper 12-minute run estimate:
+
+$$
+\mathrm{VO}_2\max \approx 35.97 \times d_{\text{miles}} - 11.29
+$$
+
+Non-exercise Jackson-type estimator (one common form):
+
+$$
+\mathrm{VO}_2\max \approx 56.363 + 1.921\,\mathrm{PAR} - 0.381A - 0.754\,\mathrm{BMI} + 10.987\,\mathrm{sex}
+$$
+
+with $\mathrm{sex}=1$ male / $0$ female and $\mathrm{PAR}$ a 0–7 activity rating.
+
+Relative fat mass (Woolcott–Bergman):
+
+$$
+\mathrm{RFM} = 64 - 20\frac{h}{w} + 12\,\mathrm{sex}
+$$
+
+with height $h$ and waist $w$ in the same units; $\mathrm{sex}=1$ female / $0$ male.
+
+Fat-free mass index:
+
+$$
+\mathrm{FFMI} = \frac{\mathrm{LBM}}{h^2}
+$$
+
+(sometimes with a height adjustment term).
+
 ## APPENDIX: Medical equations and formulas
 
 Equations and formulas most commonly used in medicine and health, grouped by domain, with notation defined next to each relation. These are the workhorse relations. More specialized models (multi-compartment PK/PD, Hodgkin–Huxley membrane currents, finite-element tissue mechanics, stochastic epidemic models) build on the same notation.
@@ -385,5 +563,3 @@ $$
 $$  
 
 $d_{i}$ = events at time $t_{i}$, $n_{i}$ = number still at risk.
-
-
