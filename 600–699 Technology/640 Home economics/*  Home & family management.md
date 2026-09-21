@@ -3,6 +3,19 @@
 
 Effective **home and family management** rests on organization, communication, and planning. The aim is a household that is balanced, workable, and reasonably harmonious. Home and family management trains people in budgeting, food, care, order, and relationships. Combined with sustainable use of resources, those skills help households live in a more healthy, orderly, and durable way.
 
+| Number | Heading |
+|--------|---------|
+| 640 | Home & family management |
+| 641 | Food & drink |
+| 642 | Meals & table service |
+| 643 | Housing & household equipment |
+| 644 | Household utilities |
+| 645 | Household furnishings |
+| 646 | Sewing, clothing & personal living |
+| 647 | Management of public households |
+| 648 | Housekeeping |
+| 649 | Child rearing & home care of persons |
+
 **Home economics** joins practical life skills to theoretical knowledge so that people can meet the work of home and family. It has long included nutrition, budgeting, child development, clothing and textiles, household management, and consumer education. Contemporary programs also treat sustainable living, health promotion, and family relationships. The aim is a household that is balanced, workable, and reasonably harmonious.
 
 ## Organization and Planning
