@@ -40,14 +40,14 @@ Modern Cyclopedias appear as multi-volume print sets or digital resources and ar
 
 - **Print Cyclopedias.** Examples include the *Encyclopædia Britannica* and *World Book Encyclopedia*. These works contain thousands of articles with bibliographies, illustrations, and cross-references.
 - **Specialized Cyclopedias.** Some compilations focus on particular fields, such as science (*McGraw-Hill Encyclopedia of Science & Technology*) or literature (*The Oxford Companion to English Literature*), combining broad factual coverage with deeper treatment of key topics.
-- **Digital Cyclopedias.** Online resources such as Wikipedia and subscription databases offer continuously updated content and multimedia features, making general reference more accessible worldwide.
+- **Digital Cyclopedias.** Online resources such as databases offer updated content and multimedia features, making reference accessible worldwide.
 
 ## Characteristics
 
 Cyclopedias typically share these traits:
 
-- **Comprehensiveness.** They cover multiple disciplines rather than a single topic.
-- **Objectivity and accuracy.** Entries are usually reviewed by experts to ensure factual reliability.
+- **Comprehensiveness.** They cover disciplines rather than a single topic.
+- **Objectivity and accuracy.** Entries are usually reviewed by experts to ensure reliability.
 - **Organization.** Information is arranged alphabetically, thematically, or by category for easy navigation.
 - **Updates.** Print editions may be revised periodically; online Cyclopedias can be updated continuously to reflect new discoveries and current events.
 
