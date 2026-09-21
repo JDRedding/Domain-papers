@@ -224,13 +224,32 @@ $$
 
 $R$ = respiratory exchange ratio (typically $\approx 0.8$).
 
-Oxygen content  
+Oxygen content of whole blood:
 
 $$
-C_{\mathrm{O}_{2}} = (1.34\,\mathrm{Hb}\,S_{\mathrm{O}_{2}}) + 0.003\,P_{\mathrm{O}_{2}}
-$$  
+C_{\mathrm{O}_{2}} = 1.34\,\mathrm{Hb}\,S_{\mathrm{O}_{2}} + 0.0031\,P_{\mathrm{O}_{2}}
+$$
 
-$\mathrm{Hb}$ in g/dL, $S_{\mathrm{O}_{2}}$ as a fraction, $P_{\mathrm{O}_{2}}$ in mmHg.
+- $\mathrm{Hb}$ — hemoglobin concentration in g/dL  
+- $S_{\mathrm{O}_{2}}$ — hemoglobin oxygen saturation as a fraction (e.g. $0.97$, not $97\%$)  
+- $P_{\mathrm{O}_{2}}$ — partial pressure of oxygen in mmHg  
+- $C_{\mathrm{O}_{2}}$ — oxygen content in mL O₂ per dL blood  
+
+$1.34$ is Hüfner’s constant (mL O₂ bound per g Hb when fully saturated; $1.36$ or $1.39$ are also used). $0.0031$ is the plasma solubility of O₂ (mL·dL⁻¹·mmHg⁻¹). Some texts write $0.003$.
+
+Arterial and mixed-venous forms:
+
+$$
+C_{\mathrm{aO}_{2}} = 1.34\,\mathrm{Hb}\,S_{\mathrm{aO}_{2}} + 0.0031\,P_{\mathrm{aO}_{2}}
+$$
+
+$$
+C_{\bar{\mathrm{v}}\mathrm{O}_{2}} = 1.34\,\mathrm{Hb}\,S_{\bar{\mathrm{v}}\mathrm{O}_{2}} + 0.0031\,P_{\bar{\mathrm{v}}\mathrm{O}_{2}}
+$$
+
+If saturation is entered as a percent, divide it by $100$, or write $1.34\,\mathrm{Hb}\,(S_{\mathrm{O}_{2}}/100)$.
+
+
 
 Nernst potential (equilibrium potential of ion $X$)  
 
