@@ -5,6 +5,12 @@ Ethics is the philosophical study of moral phenomena. Also called moral philosop
 
 Ethical reflection also promotes personal growth by encouraging people to evaluate their actions and align them with broader moral standards. Ethics guides human conduct. It provides a foundation for distinguishing right from wrong and for promoting fair and responsible behavior. Morals are internal and personal: they reflect what someone believes to be right or wrong. Ethics are external and collective: they provide formal guidelines so behavior aligns with societal or professional norms. Understanding the difference matters for personal development, social interaction, and professional integrity.
 
+## Definition and Scope
+
+**Morals** refer to an individual’s internal sense of right and wrong. They are shaped by personal beliefs, upbringing, culture, and experience, and they guide everyday behavior. For example, a person may treat honesty as morally important because of personal convictions.
+
+**Ethics**, by contrast, are externally established standards that define appropriate conduct within a group, organization, or society. Ethics provide a systematic framework for evaluating actions and promoting consistency in decision-making. Medical ethics, for instance, sets principles for healthcare professionals around patient welfare, confidentiality, and informed consent.
+
 ## Overview
 
 Ethics examines the principles and values that govern human behavior. It provides frameworks for evaluating actions, intentions, and consequences, helping individuals and organizations make decisions aligned with ideas of good conduct, fairness, and justice. Ethics is concerned not only with what people do, but with what they ought to do. It emphasizes responsibility, integrity, and moral reasoning. Its main branches include normative ethics, applied ethics, and metaethics.
@@ -22,12 +28,6 @@ Influential normative theories include consequentialism, deontology, and virtue 
 - **Virtue ethics** emphasizes character traits such as courage, honesty, and compassion.
 
 Ethics also refers more broadly to any system or theory of moral values or principles. It is the discipline concerned with what is morally good and bad, and with what is morally right and wrong. As a branch of philosophy, it studies moral principles that guide individuals and societies in distinguishing right from wrong and making morally responsible choices.
-
-## Definition and Scope
-
-**Morals** refer to an individual’s internal sense of right and wrong. They are shaped by personal beliefs, upbringing, culture, and experience, and they guide everyday behavior. For example, a person may treat honesty as morally important because of personal convictions.
-
-**Ethics**, by contrast, are externally established standards that define appropriate conduct within a group, organization, or society. Ethics provide a systematic framework for evaluating actions and promoting consistency in decision-making. Medical ethics, for instance, sets principles for healthcare professionals around patient welfare, confidentiality, and informed consent.
 
 ## Key Components
 
