@@ -7,6 +7,19 @@
 
 Agriculture includes crop production, animal husbandry, and the management of land and water. It is among the oldest human practices and remains a foundation of most societies, shaping work, trade, settlement, and culture.
 
+| Number | Heading |
+|--------|---------|
+| 630 | Agriculture & related technologies |
+| 631 | Techniques, equipment & materials |
+| 632 | Plant injuries, diseases & pests |
+| 633 | Field & plantation crops |
+| 634 | Orchards, fruits & forestry |
+| 635 | Garden crops (Horticulture) |
+| 636 | Animal husbandry |
+| 637 | Processing dairy & related products |
+| 638 | Insect culture |
+| 639 | Hunting, fishing & conservation |
+
 The English word comes from Latin *agricultura*: *ager* (field) + *cultura* (cultivation). Related terms include *farming*, *husbandry*, and *agronomy* (the science of crop and soil management). Related fields include horticulture, forestry, and soil science.
 
 ### Etymology
