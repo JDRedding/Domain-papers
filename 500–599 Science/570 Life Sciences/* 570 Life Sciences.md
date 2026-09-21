@@ -8,6 +8,21 @@ Life sciences is a diverse and rapidly evolving field that integrates multiple s
 
 Life sciences focus on understanding the structure, function, growth, evolution, distribution, and taxonomy of living organisms. It explores everything from single-celled microorganisms to complex ecosystems, and it forms the foundation for fields such as medicine, agriculture, and biotechnology. The field seeks to uncover the mechanisms behind life processes, health, disease, and the interaction between organisms and their environment.
 
+### 570 Biology (Life sciences)
+| Domain | Subjects |
+|--------|---------|
+| 570 | Biology |
+| 571 | Physiology & related subjects |
+| 572 | Biochemistry |
+| 573 | Specific physiological systems in animals |
+| 574 | [Unassigned / limited] |
+| 575 | Specific parts & physiological systems in plants |
+| 576 | Genetics & evolution |
+| 577 | Ecology |
+| 578 | Natural history of organisms |
+| 579 | Natural history of microorganisms, fungi, algae |
+
+
 ## Major Disciplines
 
 Key disciplines within life sciences include:
