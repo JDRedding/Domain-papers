@@ -19,12 +19,14 @@ Astronomy explores the formation, behavior, and physical properties of objects a
 | 521 | Celestial mechanics |
 | 522 | Techniques, equipment & materials |
 | 523 | Specific celestial bodies & phenomena |
-| 524 | [Unassigned] |
+| 524 | Open astronomical problems |
 | 525 | Earth (Astronomical geography) |
 | 526 | Mathematical geography |
 | 527 | Celestial navigation |
 | 528 | Ephemerides |
 | 529 | Chronology |
+
+*Note*: 524 was [Unassigned] 
 
 ## Major Branches of Astronomy
 
