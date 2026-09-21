@@ -1,8 +1,8 @@
-Class 100: Philosophy & psychology
+# Class 100: Philosophy & psychology
 
 This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/23 and current OCLC summaries). Headings follow the conventional summary forms.
 
-100 Philosophy & psychology
+## 100 Philosophy & psychology
 | Number | Heading |
 |--------|---------|
 | 100 | Philosophy & psychology |
@@ -16,7 +16,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 108 | Groups of people |
 | 109 | History & collected biography |
 
-110 Metaphysics
+## 110 Metaphysics
 | Number | Heading |
 |--------|---------|
 | 110 | Metaphysics |
@@ -30,7 +30,9 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 118 | Force & energy |
 | 119 | Number & quantity |
 
-120 Epistemology, causation & humankind
+## 120 Understanding 
+Epistemology, causation & humankind
+
 | Number | Heading |
 |--------|---------|
 | 120 | Epistemology, causation & humankind |
@@ -44,7 +46,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 128 | Humankind |
 | 129 | Origin & destiny of individual souls |
 
-130 Parapsychology & occultism
+## 130 Parapsychology & occultism
 | Number | Heading |
 |--------|---------|
 | 130 | Parapsychology & occultism |
@@ -58,7 +60,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 138 | Physiognomy |
 | 139 | Phrenology |
 
-140 Specific philosophical schools and viewpoints
+## 140 Specific philosophical schools and viewpoints
 | Number | Heading |
 |--------|---------|
 | 140 | Specific philosophical schools and viewpoints |
@@ -72,7 +74,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 148 | Eclecticism, liberalism & traditionalism |
 | 149 | Other philosophical systems |
 
-150 Psychology
+## 150 Psychology
 | Number | Heading |
 |--------|---------|
 | 150 | Psychology |
@@ -86,7 +88,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 158 | Applied psychology |
 | 159 | [Unassigned] |
 
-160 Philosophical logic
+## 160 Philosophical logic
 | Number | Heading |
 |--------|---------|
 | 160 | Philosophical logic |
@@ -100,7 +102,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 168 | Argument & persuasion |
 | 169 | Analogy |
 
-170 Ethics (Moral philosophy)
+## 170 Ethics (Moral philosophy)
 | Number | Heading |
 |--------|---------|
 | 170 | Ethics |
@@ -114,7 +116,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 178 | Ethics of consumption |
 | 179 | Other ethical norms |
 
-180 Ancient, medieval & eastern philosophy
+## 180 Ancient, medieval & eastern philosophy
 | Number | Heading |
 |--------|---------|
 | 180 | Ancient, medieval & eastern philosophy |
@@ -128,7 +130,7 @@ This is the standard Third Summary (Thousand Sections) from modern DDC (DDC 22/2
 | 188 | Stoic philosophy |
 | 189 | Medieval Western philosophy |
 
-190 Modern western philosophy
+## 190 Modern western philosophy
 | Number | Heading |
 |--------|---------|
 | 190 | Modern western philosophy |
