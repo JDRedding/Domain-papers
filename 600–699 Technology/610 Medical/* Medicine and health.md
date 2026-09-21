@@ -216,28 +216,40 @@ $$
 
 at body temperature. If $P_{\mathrm{CO}_{2}}$ is instead in kPa, replace $0.0301$ by $0.226$.
 
-Alveolar gas equation  
+Alveolar gas equation:
 
 $$
-P_{\mathrm{AO}_{2}} = F_{\mathrm{IO}_{2}}(P_{\mathrm{atm}}-P_{\mathrm{H}_{2}\mathrm{O}}) - \frac{P_{\mathrm{aCO}_{2}}}{R}
-$$  
+P_{\mathrm{AO}_{2}} = F_{\mathrm{IO}_{2}}\,(P_{\mathrm{atm}}-P_{\mathrm{H}_{2}\mathrm{O}}) - \frac{P_{\mathrm{aCO}_{2}}}{R}
+$$
 
-$R$ = respiratory exchange ratio (typically $\approx 0.8$).
+- $P_{\mathrm{AO}_{2}}$ — ideal alveolar partial pressure of O₂ (mmHg)  
+- $F_{\mathrm{IO}_{2}}$ — inspired O₂ fraction (room air $=0.21$)  
+- $P_{\mathrm{atm}}$ — barometric pressure (mmHg; $\approx 760$ at sea level)  
+- $P_{\mathrm{H}_{2}\mathrm{O}}$ — water-vapor pressure at body temperature (mmHg; $47$ at $37^{\circ}\mathrm{C}$)  
+- $P_{\mathrm{aCO}_{2}}$ — arterial partial pressure of CO₂ (mmHg)  
+- $R$ — respiratory exchange ratio $\dot{V}_{\mathrm{CO}_{2}}/\dot{V}_{\mathrm{O}_{2}}$ (typically $\approx 0.8$)
 
-Oxygen content of whole blood:
+A common sea-level room-air simplification is
+
+$$
+P_{\mathrm{AO}_{2}} \approx 150 - \frac{P_{\mathrm{aCO}_{2}}}{0.8}
+$$
+
+which follows from $0.21\times(760-47)\approx 149.7$.
+
+The alveolar–arterial oxygen gradient is then
+
+$$
+P_{\mathrm{(A-a)O}_{2}} = P_{\mathrm{AO}_{2}} - P_{\mathrm{aO}_{2}}
+$$
+
+Oxygen content (for comparison with those partial pressures) remains
 
 $$
 C_{\mathrm{O}_{2}} = 1.34\,\mathrm{Hb}\,S_{\mathrm{O}_{2}} + 0.0031\,P_{\mathrm{O}_{2}}
 $$
 
-- $\mathrm{Hb}$ — hemoglobin concentration in g/dL  
-- $S_{\mathrm{O}_{2}}$ — hemoglobin oxygen saturation as a fraction (e.g. $0.97$, not $97\%$)  
-- $P_{\mathrm{O}_{2}}$ — partial pressure of oxygen in mmHg  
-- $C_{\mathrm{O}_{2}}$ — oxygen content in mL O₂ per dL blood  
-
-$1.34$ is Hüfner’s constant (mL O₂ bound per g Hb when fully saturated; $1.36$ or $1.39$ are also used). $0.0031$ is the plasma solubility of O₂ (mL·dL⁻¹·mmHg⁻¹). Some texts write $0.003$.
-
-Arterial and mixed-venous forms:
+with arterial and mixed-venous specializations
 
 $$
 C_{\mathrm{aO}_{2}} = 1.34\,\mathrm{Hb}\,S_{\mathrm{aO}_{2}} + 0.0031\,P_{\mathrm{aO}_{2}}
@@ -247,9 +259,7 @@ $$
 C_{\bar{\mathrm{v}}\mathrm{O}_{2}} = 1.34\,\mathrm{Hb}\,S_{\bar{\mathrm{v}}\mathrm{O}_{2}} + 0.0031\,P_{\bar{\mathrm{v}}\mathrm{O}_{2}}
 $$
 
-If saturation is entered as a percent, divide it by $100$, or write $1.34\,\mathrm{Hb}\,(S_{\mathrm{O}_{2}}/100)$.
-
-
+Units: $\mathrm{Hb}$ in g/dL, $S_{\mathrm{O}_{2}}$ as a fraction, partial pressures in mmHg, contents in mL O₂/dL.
 
 Nernst potential (equilibrium potential of ion $X$)  
 
