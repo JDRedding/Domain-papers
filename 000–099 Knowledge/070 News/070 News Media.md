@@ -59,3 +59,6 @@ The industry is changing quickly:
 - Growth of e-books and audiobooks
 - Use of AI tools in editing, layout, and content analytics
 
+### Printing
+
+In printing, a quotation can also mean a large block of type metal, less than type-high, used to fill space on a page.
