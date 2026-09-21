@@ -3,7 +3,9 @@
 - Associations, organizations & museums 
 - General organizations & museology
 
-Museology is the academic and practical study of museums, including their history, functions, management, and role in society. Museology combines theory with practical skill so that museums can serve as centers of knowledge, culture, and public enrichment. Museology, also called museum studies, is the discipline concerned with the purpose, operations, and cultural significance of museums. It examines how museums collect, preserve, research, interpret, and display objects of historical, artistic, scientific, or cultural value. The field bridges theory and practice: it includes both academic analysis of museums and the skills required for professional museum work.
+**Museology** is the systematic study of museums, including their design, organization, management, and function. Museology is the academic and practical study of museums, including their history, functions, management, and role in society. Museology combines theory with practical skill so that museums can serve as centers of knowledge, culture, and public enrichment. Museology, also called museum studies, is the discipline concerned with the purpose, operations, and cultural significance of museums. 
+
+It examines how museums collect, preserve, research, interpret, and display objects of historical, artistic, scientific, or cultural value. The field bridges theory and practice: it includes both academic analysis of museums and the skills required for professional museum work.
 
 ## Definition and Scope
 Associations, organizations & museums (General organizations)
@@ -22,6 +24,7 @@ Associations, organizations & museums (General organizations)
 | 069 | Museum science (Museology) |
 
 ## Etymology
+From *museum* + *-ology*. First recorded in English around 1880–1885. Museology is also called museum studies. It is treated as both an academic field and a professional practice.
 
 | Form | Part of speech |
 |---|---|
@@ -30,7 +33,10 @@ Associations, organizations & museums (General organizations)
 | museologically | adverb |
 | museologist | noun |
 
-From *museum* + *-ology*. First recorded in English around 1880–1885. Museology is also called museum studies. It is treated as both an academic field and a professional practice.
+- The discipline of museum design, organization, and management.
+- The science of museum organization.
+- The systematic study of how museums are organized, managed, and used.
+- In a narrower sense, the science of collecting and arranging objects for museums.
 
 ## Key Areas
 
@@ -58,28 +64,4 @@ Current practice increasingly addresses digital transformation, inclusive repres
 
 
 
-
-
-
-
-
-
-
-
-
-# Museology
-
-**Museology** is the systematic study of museums, including their design, organization, management, and function.
-
-## Pronunciation
-
-- American: /ˌmjuziˈɑlədʒi/
-- British: /ˌmjuːzɪˈɒlədʒi/
-
-## Definitions
-
-- The discipline of museum design, organization, and management.
-- The science of museum organization.
-- The systematic study of how museums are organized, managed, and used.
-- In a narrower sense, the science of collecting and arranging objects for museums.
 
