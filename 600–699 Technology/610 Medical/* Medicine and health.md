@@ -23,7 +23,7 @@ Health is a broader idea than freedom from sickness. The World Health Organizati
 - **Social health.** The capacity to form supportive relationships and take part in society
 - **Preventive health.** Habits and measures—such as diet, exercise, and regular check-ups—that lower the risk of illness
 
-## APENDIX: Equations and formulas
+## APPENDIX: Medical equations and formulas
 
 Equations and formulas most commonly used in medicine and health, grouped by domain, with notation defined next to each relation. These are the workhorse relations. More specialized models (multi-compartment PK/PD, Hodgkin–Huxley membrane currents, finite-element tissue mechanics, stochastic epidemic models) build on the same notation.
 
