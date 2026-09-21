@@ -178,10 +178,34 @@ $\mathrm{RPF}$ = renal plasma flow.
 Henderson–Hasselbalch (bicarbonate buffer)  
 
 $$
-\mathrm{pH} = \mathrm{p}K_{\mathrm{a}} + \log_{10}\frac{[\mathrm{HCO}_{3}^{-}]}{[\mathrm{H}_{2}\mathrm{CO}_{3}]} \approx 6.1 + \log_{10}\frac{[\mathrm{HCO}_{3}^{-}]}{0.03\,P_{\mathrm{CO}_{2}}}
+\mathrm{pH} = \mathrm{p}K_{\mathrm{a}} + \log_{10}\frac{[\mathrm{HCO}_{3}^{-}]}{[\mathrm{H}_{2}\mathrm{CO}_{3}]} \approx 6.1 + \log_{10}\frac{[\mathrm{HCO}_{3}^{-}]} {0.03\,P_{\mathrm{CO}_{2}}}
 $$  
 
-$[\mathrm{HCO}_{3}^{-}]$ in mmol/L, $P_{\mathrm{CO}_{2}}$ in mmHg.
+Henderson–Hasselbalch for the bicarbonate–carbonic acid buffer:
+
+$$
+\mathrm{pH}=6.1+\log_{10}\frac{[\mathrm{HCO}{3}^{-}]}{0.0301\,P{\mathrm{CO}_{2}}}
+$$
+
+$[\mathrm{HCO}_{3}^{-}]$ — plasma bicarbonate concentration in mmol/L (numerically the same as mEq/L)
+
+$P_{\mathrm{CO}_{2}}$ — partial pressure of carbon dioxide in mmHg
+
+$0.0301$ — solubility coefficient of $\mathrm{CO}_{2}$ in plasma (mmol·L⁻¹·mmHg⁻¹) at $37^{\circ}\mathrm{C}$
+
+The same relation in fully expanded form is
+
+$$
+\mathrm{pH}=\mathrm{p}K_{\mathrm{a}}+\log_{10}\frac{[\mathrm{HCO}{3}^{-}]}{[\mathrm{H}{2}\mathrm{CO}_{3}]}
+$$
+
+with
+
+$$
+[\mathrm{H}{2}\mathrm{CO}{3}]=0.0301\,P_{\mathrm{CO}{2}},\qquad \mathrm{p}K{\mathrm{a}}\approx 6.1
+$$
+
+at body temperature. If $P_{\mathrm{CO}_{2}}$ is instead in kPa, replace $0.0301$ by $0.226$.
 
 Alveolar gas equation  
 
