@@ -1,5 +1,17 @@
 Classification (DDC) breakdown for 000–099  
 
+- 000 Computer science, information & general works
+- 010 Bibliographies
+- 020 Library & information sciences
+- 030 Encyclopedias & books of facts (General encyclopedic works)
+- 040 [Unassigned]
+- 050 Magazines, journals & serials (General serial publications)
+- 060 Associations, organizations & museums (General organizations & museology)
+- 070 News media, journalism & publishing
+- 080 Quotations (General collections)
+- 090 Manuscripts & rare books
+
+
 000 Computer science, information & general works
 | Number | Heading |
 |--------|---------|
