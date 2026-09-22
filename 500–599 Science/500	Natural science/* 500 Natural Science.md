@@ -1,6 +1,11 @@
 # Natural Science
 
-Natural science is the branch of science that studies the physical world: its matter, energy, living organisms, and the laws that govern natural phenomena. It seeks to explain how the universe works through observation, experimentation, measurement, and evidence-based reasoning. The aim is to find patterns, develop theories, and account for processes ranging from atomic interactions to planetary motion and biological evolution. Natural science underpins much of modern life:
+Natural science is the branch of science that studies the physical world: its matter, energy, living organisms, and the laws that govern natural phenomena. This domain is the general vestibule of natural sciences and mathematics. It organizes theory, reference, serials, institutions, teaching, natural history, and historical treatment of science as a whole. Official DDC leaves **504** unassigned; the working sciences themselves begin in earnest at **510**.
+
+## Overview
+The domain covers the natural sciences and mathematics: the study of the physical world, living systems, quantitative structure, and the ways that knowledge is organized, taught, and recorded. These ten are the general framework for the class as a whole. More specific sciences follow later: mathematics (510), astronomy (520), physics (530), chemistry (540), earth sciences (550), paleontology (560), biology (570), botany (580), and zoology (590).
+
+It seeks to explain how the universe works through observation, experimentation, measurement, and evidence-based reasoning. The aim is to find patterns, develop theories, and account for processes ranging from atomic interactions to planetary motion and biological evolution. Natural science underpins much of modern life:
 
 - **Technology:** electronics, materials science, and energy systems
 - **Medicine:** understanding disease and developing treatments
@@ -29,6 +34,38 @@ Natural science is usually divided into broad categories.
 | 509 | Historical, geographic & persons treatment |
 
 *Note* : 504 was [Unassigned]
+
+### What Each Domain Covers
+
+**Natural sciences and mathematics**  
+Comprehensive works on the sciences as a group: surveys of the natural world, general science, and works that treat mathematics together with the natural sciences.
+
+**Philosophy and theory**  
+Questions about what science is and how it works: scientific method, explanation, laws and theories, reduction, realism, and the nature of evidence.
+
+**Miscellany**  
+Practical and ancillary material that does not belong in a more specific science: handbooks, instruments in general, popular miscellanies, and similar supporting works.
+
+**Dictionaries and encyclopedias**  
+Reference works that define terms and summarize the natural sciences as a whole, rather than a single discipline such as chemistry or biology.
+
+**504  Open problems in Natural Science**  
+The most important open problems in natural science span cosmology, physics, biology, neuroscience, Earth science, and climate, where fundamental mechanisms remain unknown despite active research.
+
+**Serial publications**  
+Journals, annuals, and other continuing publications in the natural sciences at a general level.
+
+**Organizations and management**  
+Scientific societies, academies, research institutes, and the administration of science in general.
+
+**Education, research, and related topics**  
+Science teaching, laboratory training, science fairs, research methods at a general level, and museums or exhibits of science as a whole.
+
+**Natural history**  
+Descriptive accounts of nature: landscapes, seasons, regional surveys, and observation of organisms and environments that are not confined to one later class such as 570 or 590.
+
+**Historical, geographic, and persons treatment**  
+History of science, science in particular places, and biographies of scientists when the work is general rather than limited to one field.
 
 ### Physical sciences
 
@@ -68,5 +105,3 @@ Natural science relies on systematic methods, including:
 - **Peer review and replication:** checking reliability and accuracy
 
 These methods help scientists build explanations that are testable, falsifiable, and predictive.
-
-
