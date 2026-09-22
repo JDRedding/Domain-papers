@@ -1,6 +1,7 @@
 # **Theoretical Physics**
 
 Theoretical physics is the branch of physics that uses **mathematical models** and **abstract reasoning** to explain, predict, and unify natural phenomena—from elementary particles to the structure of the universe. The field traces back to ancient Greek natural philosophy and matured during the Scientific Revolution with Newton’s laws. Modern theoretical physics includes quantum mechanics, relativity, quantum field theory, and unified field theories. Theoretical physics provides the foundation for understanding the universe and drives scientific and technological progress by predicting phenomena later confirmed experimentally.
+
 ---
 
 ## **Overview**
