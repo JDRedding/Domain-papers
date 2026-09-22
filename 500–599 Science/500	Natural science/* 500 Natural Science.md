@@ -21,7 +21,7 @@ Natural science is usually divided into broad categories.
 | 501 | Philosophy & theory |
 | 502 | Miscellany |
 | 503 | Dictionaries & encyclopedias |
-| 504 | Open Problems in Natural Science |
+| 504 | Open problems in Natural Science |
 | 505 | Serial publications |
 | 506 | Organizations & management |
 | 507 | Education, research & related topics |
