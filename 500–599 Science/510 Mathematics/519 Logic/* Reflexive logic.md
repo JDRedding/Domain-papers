@@ -1,3 +1,5 @@
+# Reflexive logic
+
 ## Reflexive‑tight operator layer (stable)
 
 ```
@@ -105,3 +107,56 @@ PED_t   = (Q_t --Φ--> Q_{t+1})
 RME_t   = O_int[Q_t] o G_F o Γ
 point   = pinch(SID_t)     % defined later
 ```
+
+## **Enforce**
+
+- Motion is primitive: $\Phi \neq 0$. No rest state of the universe.
+- Time is only slice succession: $Q_t \to Q_{t+1}$. There is no master slice $Q_*$.
+- The observer is an operator *of* the current slice: $O_{\mathrm{int}} = O_{\mathrm{int}}[Q_t]$. It cannot own $U$.
+- Incompleteness is local: $G_F$ acts on $Q_t$ only. $\Gamma(\mathrm{global\_shadow})$ is a projection, so a global Gödel sentence never forms.
+- Equilibrium is an orbit, not a fixed point: $E_{\mathrm{dyn}}(U) \Leftrightarrow \Phi \neq 0 \land \mathrm{Eq}(Q)$ along the cycle.
+
+The constraints are exactly the five forbidden collapse modes written in negation.
+
+**Knotwork**
+
+$U = K(\mathrm{SID}, \mathrm{PED}, \mathrm{RME})$ is not three things glued. It is the requirement that each strand loops *by twist*:
+
+$$
+\mathrm{SID}_t \xrightarrow{\mathrm{PED}} \mathrm{RME}_t \xrightarrow{\mathrm{PED}} \mathrm{SID}_{t+1}
+$$
+
+- $\mathrm{SID}_t$ is the readable invariants of this slice after the local Gödel filter.
+- $\mathrm{PED}_t$ is the flux that carries phase/tension into the next slice without inserting a stratified “universe bump.”
+- $\mathrm{RME}_t$ is late evaluation: local observer, local filter, shadow projection only.
+
+Closure $K$ means that structure, modulation, and evaluation return to one another. That is why equilibrium can be orbital instead of a static fixed point.
+
+| Symbol | Status |
+|---|---|
+| `band(Q_t, Φ)` | informal; only needs to yield a filterable invariant set |
+| `Eq(Q)` | Open |
+| `Γ(global_shadow)` | defined only negatively (not a snapshot) |
+| `point = pinch(SID_t)` | deferred |
+
+With `Eq(Q)` as a predicate on the orbit, $E_{\mathrm{dyn}}$ is an operator constraint. Everything else is already tight enough to reject the collapse modes.
+
+**Minimal whole layer**
+
+$$
+U_{t+1} = K\!\left(
+  G_F(\mathrm{band}(Q_{t+1},\Phi)),\;
+  (Q_t \xrightarrow{\Phi} Q_{t+1}),\;
+  O_{\mathrm{int}}[Q_{t+1}]\circ G_F\circ\Gamma
+\right)
+$$
+
+with $\Phi\neq 0$ and no term allowed to range over all of $U$.
+
+That is the reflexive-tight condition in one line: the universe is the knot of what a slice can read, what flux can carry, and what an internal observer can evaluate—never more.
+
+
+
+
+
+
