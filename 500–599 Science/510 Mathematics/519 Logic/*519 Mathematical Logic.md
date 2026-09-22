@@ -334,3 +334,69 @@ T\vdash\varphi\leftrightarrow\psi(\ulcorner\varphi\urcorner).
 $$
 
 ---
+
+## APPENDIX: Set Theory & Logic Symbols
+
+```
+Symbol          Meaning
+------          -------
+a ∈ A           Belongs to
+A ∋ a           Contains
+a ∉ A           Does not belong to
+A ⊂ B           Proper Subset of
+A ⊆ B           Improper Subset of (subset of)
+A ⊃ B           Superset of
+ℕ               Natural Numbers
+ℤ               Integers
+ℚ               Rational Numbers
+ℝ               Real Numbers
+𝔸 / A           Algebraic Numbers
+ℂ               Complex Numbers
+n(A)            Cardinality
+ξ / 𝒰           Universal Set
+∅               Null Set (Empty Set)
+A \ B           Set Difference
+A ∪ B           Union
+A ∩ B           Intersection
+A'              Complement Set
+:               Such That
+{a, b, c}       Set
+∃               There exists
+∄               There does not exist
+∃!              Only one exists (unique existence)
+A ⇒ B           Implies
+A ⇔ B           If and only if (Mutually Implies)
+A ⇏ B           Does not imply
+¬A              Not
+a ∨ b           Or
+a ∧ b           And
+A ⊢ B           Proves
+A ⊬ B           Does not yield (does not prove)
+∴               Therefore
+∵               Because
+∀               For all
+□               End of Proof
+⊈               Not a subset
+⊉               Not a superset
+⊻               XOR
+⊼               NAND
+⊽               NOR
+↦               Maps to
+↣               Injective function
+↠               Surjective function
+↪               Embedding
+↩               Left hook (inclusion)
+⊨               Semantic entailment
+⊭               Not semantically entailed
+≺≺             Elementary substructure
+⊩              Forcing (set theory)
+λx. f(x)        Lambda abstraction
+∀x∈A            Bounded quantifier
+∃x!             Unique existence (bounded form)
+idₓ             Identity morphism
+Hom(A,B)        Hom‑set
+End(A)          Endomorphisms
+Aut(A)          Automorphisms
+⊗ᶜ             Monoidal tensor
+⇒              Natural transformation
+```
