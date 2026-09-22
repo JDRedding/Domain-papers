@@ -1,7 +1,7 @@
 # Mathematical Logic
 - 519 Mathematical Logic
 
-This document gives a complete, orthodox reference set for classical logic — syntax, semantics, Hilbert systems, Gentzen LK, modal logics, metatheorems, and standard notation. Below is a compact but reasonably complete catalogue of the core **notation**, **formation rules**, **axiom schemas**, **inference rules**, **semantic clauses**, and **metatheorems** of classical mathematical logic (propositional, first-order, and the most common modal systems). Notation is standardized to the most widely used modern conventions; equivalent older symbols are noted where they still appear. 
+This document gives a orthodox reference set for classical logic — syntax, semantics, Hilbert systems, Gentzen LK, modal logics, metatheorems, and standard notation. Below is a compact but reasonably complete catalogue of the core **notation**, **formation rules**, **axiom schemas**, **inference rules**, **semantic clauses**, and **metatheorems** of classical mathematical logic (propositional, first-order, and the most common modal systems). Notation is standardized to the most widely used modern conventions; equivalent older symbols are noted where they still appear. 
 
 This document is a formal object: a complete classical logic specification. Can present any foundational logic module, the same way prover software presents its core kernel. This list is the “working toolkit” that appears in virtually every textbook of mathematical logic. Many further systems (intuitionistic, linear, relevant, fuzzy, higher-order, infinitary, $\ldots$ reuse the same connective and quantifier notation and simply change the axioms or the structural rules of the sequent calculus.
 
