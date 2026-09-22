@@ -57,7 +57,7 @@ Animals likely evolved more than 600 million years ago in the Neoproterozoic fro
 
 ## Mathematical equation and formulas
 
-Zoology itself is not built on a small closed set of “core equations,” but quantitative work on animals routinely uses a standard toolkit from ecology, physiology, allometry, and population genetics. Below are the most commonly applied formulas, with notation defined. These are the formulas most often attached to the topics in the earlier zoology outline (diversity, ecology, physiology, evolution of body plans). If you want a narrower set—only allometry, only population models, only phylogenetic comparative methods, or notation for a specific paper or textbook—specify the subfield.
+Zoology itself is not built on a small, closed set of “core equations,” but quantitative work on animals routinely uses a standard toolkit from ecology, physiology, allometry, and population genetics. Below are the most commonly applied formulas, with notation defined. These are the formulas most often attached to the topics in the earlier zoology outline (diversity, ecology, physiology, evolution of body plans). If want a narrower set — only allometry, only population models, only phylogenetic comparative methods, or notation for a specific paper or textbook — they will be found in specific paper or domain.
 
 ### Population growth
 
