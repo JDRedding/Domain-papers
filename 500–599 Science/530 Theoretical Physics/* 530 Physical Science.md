@@ -8,8 +8,7 @@ The formulas use conventional SI notation and are the most widely taught or appl
 ## General Description
 The classification in the Dewey Decimal System covers the broad field of physics. This category includes the general principles, laws, and concepts of physical science as well as the foundational theories that explain natural phenomena. Equations and formula resources listed address the nature of matter and energy, the fundamental forces, and the mathematical descriptions of physical happenings.
 
-## Subcategories 
-Key mathematical equations and formulas for the main Physics subdivisions (with standard notation). These are foundational or representative equations commonly associated with each area; many fields have extensive further specializations. The system further breaks down physics into more specific areas to organize topics systematically:
+Key mathematical equations and formulas are included here for the main Physics subdivisions (with standard notation). These are foundational or representative equations commonly associated with each area; many fields have extensive further specializations. The system further breaks down physics into more specific areas to organize topics systematically:
 
 ---
 
