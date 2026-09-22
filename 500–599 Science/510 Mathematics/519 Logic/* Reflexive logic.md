@@ -155,8 +155,33 @@ with $\Phi\neq 0$ and no term allowed to range over all of $U$.
 
 That is the reflexive-tight condition in one line: the universe is the knot of what a slice can read, what flux can carry, and what an internal observer can evaluate—never more.
 
+## APPENDIX: Minimal closure of $E_{\mathrm{dyn}}$ :  
 
+Make `Eq(Q)` an **orbit predicate** (instead of a state predicate):
 
+  ```text
+  Eq(Q)  iff  band(Q_{t+k}, Φ) ~ band(Q_t, Φ)
+              and  Q_t != Q_{t+1}
+              and  G_F(Q_t) holds
+  ```
+  (with `k` finite, not hard‑coded 3).  
+  Then:
+  ```text
+  E_dyn(U) <=> Φ != 0  &  Eq(Q)
+  ```
+  is closed and still domain‑flexible.
 
+## APPENDIX: Rejection rules
 
+The reject rules enforceable:
 
+```text
+reject if Φ = 0
+reject if exists Q_*
+reject if O_int |- U
+reject if G_F(U)
+reject if pinch(SID_t) is treated as SID_t
+reject if Γ is treated as snapshot
+```
+
+Those last two are the Gödel‑filter: points and globals are *use‑shadows*, never universe‑ranging terms.
