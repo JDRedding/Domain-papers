@@ -35,7 +35,7 @@ Natural science is usually divided into broad categories.
 
 *Note* : 504 was [Unassigned]
 
-### What Each Domain Covers
+### What Is Covered Here
 
 **Natural sciences and mathematics**  
 Comprehensive works on the sciences as a group: surveys of the natural world, general science, and works that treat mathematics together with the natural sciences.
