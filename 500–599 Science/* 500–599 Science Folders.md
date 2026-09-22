@@ -1,18 +1,20 @@
 **Class 500: Natural sciences & mathematics**
 
 ### 500 Natural sciences & mathematics
-| Number | Heading |
+| Domain | Subject |
 |--------|---------|
 | 500 | Natural sciences & mathematics |
 | 501 | Philosophy & theory |
 | 502 | Miscellany |
 | 503 | Dictionaries & encyclopedias |
-| 504 | [Unassigned] |
+| 504 | Open problems in Natural Science |
 | 505 | Serial publications |
 | 506 | Organizations & management |
 | 507 | Education, research & related topics |
 | 508 | Natural history |
 | 509 | Historical, geographic & persons treatment |
+
+*Note* : 504 was [Unassigned]
 
 ### 510 Mathematics
 | Number | Heading |
