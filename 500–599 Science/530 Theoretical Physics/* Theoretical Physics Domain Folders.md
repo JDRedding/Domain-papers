@@ -119,7 +119,8 @@
 
 ---
 
-## **537 Electricity - Magnetism**
+## **537 Electromotive**
+Electricity - Magnetism
 
 | Decimal | Category |
 |--------|----------|
