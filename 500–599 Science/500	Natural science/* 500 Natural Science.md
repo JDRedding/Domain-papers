@@ -3,9 +3,7 @@
 Natural science is the branch of science that studies the physical world: its matter, energy, living organisms, and the laws that govern natural phenomena. This domain is the general vestibule of natural sciences and mathematics. It organizes theory, reference, serials, institutions, teaching, natural history, and historical treatment of science as a whole. Official DDC leaves **504** unassigned; the working sciences themselves begin in earnest at **510**.
 
 ## Overview
-The domain covers the natural sciences and mathematics: the study of the physical world, living systems, quantitative structure, and the ways that knowledge is organized, taught, and recorded. These ten are the general framework for the domain as a whole.
-
-It seeks to explain how the universe works through observation, experimentation, measurement, and evidence-based reasoning. The aim is to find patterns, develop theories, and account for processes ranging from atomic interactions to planetary motion and biological evolution. Natural science underpins much of modern life:
+The domain covers the natural sciences and mathematics: the study of the physical world, living systems, quantitative structure, and the ways that knowledge is organized, taught, and recorded. It seeks to explain how the universe works through observation, experimentation, measurement, and evidence-based reasoning. The aim is to find patterns, develop theories, and account for processes ranging from atomic interactions to planetary motion and biological evolution. Natural science underpins much of modern life:
 
 - **Technology:** electronics, materials science, and energy systems
 - **Medicine:** understanding disease and developing treatments
@@ -16,7 +14,7 @@ It supplies the foundational knowledge that societies use to innovate, solve pro
 
 ## Major Branches
 
-Natural science is usually divided into broad categories. More specific sciences follow later: mathematics (510), astronomy (520), physics (530), chemistry (540), earth sciences (550), paleontology (560), biology (570), botany (580), and zoology (590).
+Natural science is usually divided into broad categories. More specific sciences follow later: mathematics (510), astronomy (520), physics (530), chemistry (540), earth sciences (550), paleontology (560), biology (570), botany (580), and zoology (590). These ten are the general framework for the domain as a whole.
 
 ### Natural sciences & mathematics
 
