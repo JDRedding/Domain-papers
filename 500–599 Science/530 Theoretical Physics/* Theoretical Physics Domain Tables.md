@@ -1,4 +1,4 @@
-# Theoretical Physics Domain Table**
+# Theoretical Physics Domain Table
 
 | Decimal | Category |
 |--------|----------|
