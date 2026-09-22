@@ -55,3 +55,166 @@ Complexity ranges from diffuse nerve nets to highly centralized brains, and from
 
 Animals likely evolved more than 600 million years ago in the Neoproterozoic from a colonial protist ancestor similar to modern choanoflagellates. Early animals diversified rapidly during the Cambrian explosion (~541 million years ago), giving rise to most major animal groups and innovations such as segmentation, mineralized skeletons, and complex sensory systems.
 
+## Mathematical equation and formulas
+
+Zoology itself is not built on a small closed set of “core equations,” but quantitative work on animals routinely uses a standard toolkit from ecology, physiology, allometry, and population genetics. Below are the most commonly applied formulas, with notation defined. These are the formulas most often attached to the topics in the earlier zoology outline (diversity, ecology, physiology, evolution of body plans). If you want a narrower set—only allometry, only population models, only phylogenetic comparative methods, or notation for a specific paper or textbook—specify the subfield.
+
+### Population growth
+
+**Exponential growth**
+
+$$
+\frac{dN}{dt} = rN
+$$
+
+$$
+N(t) = N_0 e^{rt}
+$$
+
+- $N$: population size  
+- $t$: time  
+- $r$: intrinsic rate of increase  
+- $N_0$: initial population size  
+
+**Logistic growth**
+
+$$
+\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right)
+$$
+
+$$
+N(t) = \frac{K}{1 + \left(\frac{K-N_0}{N_0}\right)e^{-rt}}
+$$
+
+- $K$: carrying capacity  
+
+### Predator–prey (Lotka–Volterra)
+
+$$
+\frac{dN}{dt} = rN - aNP
+$$
+
+$$
+\frac{dP}{dt} = eaNP - mP
+$$
+
+- $N$: prey density  
+- $P$: predator density  
+- $a$: attack rate  
+- $e$: conversion efficiency  
+- $m$: predator mortality rate  
+
+### Allometric scaling
+
+A trait $Y$ scales with body mass $M$ as
+
+$$
+Y = a M^{b}
+$$
+
+or in log form
+
+$$
+\log Y = \log a + b\log M
+$$
+
+Common exponents:
+- Metabolic rate (Kleiber): $b \approx 0.75$
+- Heart rate: $b \approx -0.25$
+- Lifespan: $b \approx 0.25$
+
+**Metabolic rate**
+
+$$
+B = B_0 M^{3/4}
+$$
+
+- $B$: basal or field metabolic rate  
+- $B_0$: normalization constant  
+- $M$: body mass  
+
+### Species diversity
+
+**Shannon index**
+
+$$
+H' = -\sum_{i=1}^{S} p_i \ln p_i
+$$
+
+- $S$: number of species  
+- $p_i = n_i/N$: relative abundance of species $i$  
+- $n_i$: individuals of species $i$  
+- $N$: total individuals  
+
+**Simpson index**
+
+$$
+D = \sum_{i=1}^{S} p_i^2
+$$
+
+$$
+1-D \quad \text{(Gini–Simpson / probability of interspecific encounter)}
+$$
+
+**Species–area relationship**
+
+$$
+S = cA^{z}
+$$
+
+- $S$: number of species  
+- $A$: area  
+- $c, z$: fitted constants ($z$ often $\approx 0.25$)  
+
+### Capture–recapture (Lincoln–Petersen)
+
+$$
+\hat{N} = \frac{n_1 n_2}{m}
+$$
+
+- $n_1$: marked in first sample  
+- $n_2$: size of second sample  
+- $m$: marked individuals recaptured  
+
+### Hardy–Weinberg equilibrium (population genetics)
+
+For two alleles $A$ and $a$ with frequencies $p$ and $q$:
+
+$$
+p + q = 1
+$$
+
+$$
+p^2 + 2pq + q^2 = 1
+$$
+
+- $p^2$: frequency of $AA$  
+- $2pq$: frequency of $Aa$  
+- $q^2$: frequency of $aa$  
+
+### Body-size and geometric relationships
+
+Surface area of a roughly isometric animal:
+
+$$
+A \propto L^{2} \propto M^{2/3}
+$$
+
+Volume / mass:
+
+$$
+V \propto L^{3} \propto M
+$$
+
+where $L$ is a linear dimension.
+
+### Trophic transfer
+
+Lindeman efficiency (approximate energy transfer between trophic levels):
+
+$$
+E = \frac{P_{n+1}}{P_n} \approx 0.10
+$$
+
+- $P_n$: production at trophic level $n$
+
