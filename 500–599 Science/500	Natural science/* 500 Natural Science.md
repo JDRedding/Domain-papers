@@ -16,7 +16,7 @@ It supplies the foundational knowledge that societies use to innovate, solve pro
 
 Natural science is usually divided into broad categories. More specific sciences follow later: mathematics (510), astronomy (520), physics (530), chemistry (540), earth sciences (550), paleontology (560), biology (570), botany (580), and zoology (590). These ten are the general framework for the domain as a whole.
 
-### Natural sciences & mathematics
+### General natural science
 
 | Domain | Subject |
 |--------|---------|
