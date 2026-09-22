@@ -1,5 +1,5 @@
 # Paleontology and Paleozoology
-- 560 Paleontology/
+- 560 Paleontology
 
 Paleontology is the broader study of ancient life, including plants, animals, fungi, and microorganisms. Paleozoology is a subdiscipline that focuses specifically on the fossilized remains of animals. All paleozoologists are paleontologists, but not all paleontologists are paleozoologists. Paleontology provides the broader framework for studying ancient life; paleozoology narrows that framework to animals and their evolutionary history.
 
