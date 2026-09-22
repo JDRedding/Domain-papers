@@ -567,7 +567,7 @@ cut elimination         Cut-elimination theorem
 ⇒                       Sequent arrow
 ```
 
-## APPENDIX: Formal Logic, Proof Theory & Deductive Systems ===
+## APPENDIX: Formal Logic, Proof Theory & Deductive Systems 
 ```
 Symbol                  Meaning
 ------                  -------
