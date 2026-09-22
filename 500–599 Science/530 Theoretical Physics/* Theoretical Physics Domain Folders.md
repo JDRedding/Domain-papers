@@ -1,5 +1,6 @@
 # Theoretical Physics Domain Folders
 
+## 530 General physics
 | Decimal | Category |
 |--------|----------|
 | **530.00** | General physics topics |
@@ -21,7 +22,7 @@
 
 ---
 
-## **531 — Classical Mechanics (Detailed)**
+## **531 Classical Mechanics**
 
 | Decimal | Category |
 |--------|----------|
@@ -38,7 +39,7 @@
 
 ---
 
-## **532 — Fluid Mechanics**
+## **532 Fluid Mechanics**
 
 | Decimal | Category |
 |--------|----------|
@@ -54,7 +55,7 @@
 
 ---
 
-## **533 — Pneumatics / Gas Mechanics**
+## **533 Pneumatics (Gas Mechanics)**
 
 | Decimal | Category |
 |--------|----------|
@@ -70,7 +71,7 @@
 
 ---
 
-## **534 — Sound & Acoustics**
+## **534 Sound (Acoustics)**
 
 | Decimal | Category |
 |--------|----------|
@@ -85,7 +86,7 @@
 
 ---
 
-## **535 — Optics & Light**
+## **535 Optics (Light)**
 
 | Decimal | Category |
 |--------|----------|
@@ -102,7 +103,7 @@
 
 ---
 
-## **536 — Heat / Thermodynamics**
+## **536 Heat (Thermodynamics)**
 
 | Decimal | Category |
 |--------|----------|
@@ -118,7 +119,7 @@
 
 ---
 
-## **537 — Electricity & Magnetism**
+## **537 Electricity - Magnetism**
 
 | Decimal | Category |
 |--------|----------|
@@ -135,7 +136,7 @@
 
 ---
 
-## **538 — Nuclear & Atomic Physics**
+## **538 Nuclear Atomic Physics**
 
 | Decimal | Category |
 |--------|----------|
@@ -150,7 +151,7 @@
 
 ---
 
-## **539 — Modern Physics / Particle Physics**
+## **539 Modern Particle Physics**
 
 | Decimal | Category |
 |--------|----------|
