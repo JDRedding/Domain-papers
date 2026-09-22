@@ -56,6 +56,7 @@ $$
 $$
 
 **Rule**:
+
 $$
 \frac{\varphi\qquad\varphi\to\psi}{\psi}\qquad\text{(MP)}
 $$
