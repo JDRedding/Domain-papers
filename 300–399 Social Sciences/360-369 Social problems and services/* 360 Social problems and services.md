@@ -1,4 +1,7 @@
 # Social problems & services
+
+**Social problems** are conditions or behaviors that harm individuals or communities, disrupt social norms, and reduce overall well-being. Understanding social problems requires attention both to the structures that produce them and to the behaviors that sustain them. Lasting responses depend on cooperation among governments, organizations, communities, and individuals.
+
 - 360	Social problem services
 - 361	General social welfare
 - 362	Social welfare problems & services
@@ -9,8 +12,6 @@
 - 367	General social clubs & associations
 - 368	Social Insurance
 - 369	Miscellaneous social associations
-
-**Social problems** are conditions or behaviors that harm individuals or communities, disrupt social norms, and reduce overall well-being. Understanding social problems requires attention both to the structures that produce them and to the behaviors that sustain them. Lasting responses depend on cooperation among governments, organizations, communities, and individuals.
 
 Complex issues such as housing instability, healthcare access, mental health, economic security, and community well-being usually need coordinated action across federal, state, local, and international institutions. The overview below lists major service types and providers.
 
