@@ -153,7 +153,7 @@ $$
 
 with $\Phi\neq 0$ and no term allowed to range over all of $U$.
 
-That is the reflexive-tight condition in one line: the universe is the knot of what a slice can read, what flux can carry, and what an internal observer can evaluate—never more.
+That is the reflexive-tight condition in one line: the universe is the knot of what a slice can read, what flux can carry, and what an internal observer can evaluate—never more. $G_F$ may rewrite or refuse formulas in $\mathrm{Lang}(Q_t)$. It may not add a formula that quantifies over all later outputs of $G_F$. That would be the filter writing $G_F(U)$ by listing itself. Local incompleteness includes the filter’s own future. The transformation is of this slice’s language. The next slice gets its own run.
 
 ## APPENDIX: Minimal closure of $E_{\mathrm{dyn}}$ :  
 
