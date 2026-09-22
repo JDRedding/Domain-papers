@@ -7,18 +7,15 @@ This document is a formal object: a complete classical logic specification. Can 
 
 ---
 
-### 1. Shared syntactic building blocks
+## 1. Syntax
 
-**Propositional connectives** (in decreasing binding strength):
+Connectives, strongest to weakest binding (common convention; parentheses still win):
 
 $$
 \lnot,\quad \land,\quad \lor,\quad \to,\quad \leftrightarrow
 $$
 
-Older/alternate symbols: $\sim$ or $\neg$ for $\lnot$; $\cdot$, $K$ for $\land$; $\lor$, $+$, $A$ for $\lor$; $\supset$, $\Rightarrow$, $C$ for $\to$; $\equiv$, $\Leftrightarrow$, $E$ for $\leftrightarrow$.
-
-**Constants**: $\top$ (verum), $\bot$ (falsum).  
-Usual definitions:
+Definitions:
 
 $$
 \top \;\equiv\; p\lor\lnot p,\qquad
@@ -26,314 +23,279 @@ $$
 \varphi\leftrightarrow\psi \;\equiv\; (\varphi\to\psi)\land(\psi\to\varphi).
 $$
 
-**First-order extra symbols**: variables $x,y,z,\dots$; constant symbols $c,d,\dots$; function symbols $f,g,\dots$ of given arities; predicate (relation) symbols $P,R,\dots$; equality $=$; quantifiers $\forall,\exists$.
+Existential quantifier, if not primitive:
 
-**Terms** (inductive):
+$$
+\exists x\,\varphi \;\equiv\; \lnot\forall x\,\lnot\varphi.
+$$
 
-- every variable and constant is a term;
-- if $t_1,\dots,t_n$ are terms and $f$ is $n$-ary, then $f(t_1,\dots,t_n)$ is a term.
+**Terms.** Variables and constants are terms; if $f$ is $n$-ary and $t_1,\dots,t_n$ are terms, so is $f(t_1,\dots,t_n)$.
 
-**Formulas** (inductive):
+**Formulas.** Atoms are $t_1=t_2$ and $P(t_1,\dots,t_n)$. Closed under $\lnot$, binary connectives, and $\forall x$, $\exists x$.
 
-- $t_1=t_2$ and $P(t_1,\dots,t_n)$ are atomic formulas;
-- if $\varphi,\psi$ are formulas then so are $\lnot\varphi$, $(\varphi\land\psi)$, $(\varphi\lor\psi)$, $(\varphi\to\psi)$;
-- if $\varphi$ is a formula and $x$ a variable then $\forall x\,\varphi$ and $\exists x\,\varphi$ are formulas.
+**Substitution.** $\varphi[t/x]$ is legitimate only when $t$ is *free for* $x$ in $\varphi$ (no free variable of $t$ becomes bound).
 
-**Free/bound occurrence**, **substitutability** (“$t$ is free for $x$ in $\varphi$”), and the substitution notation $\varphi[t/x]$ or $\varphi(x\mapsto t)$ are the usual ones.
-
-**Sequent**: $\Gamma\vdash\Delta$ (or $\Gamma\Rightarrow\Delta$) means “the conjunction of the (finite) set $\Gamma$ entails the disjunction of the (finite) set $\Delta$”.
+**Sequent.** $\Gamma\vdash\Delta$ means: the conjunction of $\Gamma$ yields the disjunction of $\Delta$.
 
 ---
 
-### 2. Propositional logic — Hilbert-style systems
+## 2. Propositional Hilbert system
 
-A common minimal complete set of axiom *schemas* (Łukasiewicz / Mendelson style) plus modus ponens:
+A complete Łukasiewicz-style basis with primitive $\to,\lnot$:
 
 $$
 \begin{align*}
-\text{(A1)}\quad &\varphi\to(\psi\to\varphi)\\
-\text{(A2)}\quad &(\varphi\to(\psi\to\chi))\to((\varphi\to\psi)\to(\varphi\to\chi))\\
-\text{(A3)}\quad &(\lnot\psi\to\lnot\varphi)\to(\varphi\to\psi)
+\text{(A1)}&\quad \varphi\to(\psi\to\varphi)\\
+\text{(A2)}&\quad (\varphi\to(\psi\to\chi))\to((\varphi\to\psi)\to(\varphi\to\chi))\\
+\text{(A3)}&\quad (\lnot\psi\to\lnot\varphi)\to(\varphi\to\psi)
 \end{align*}
 $$
 
-**Rule**:
+Rule: modus ponens
 
 $$
-\frac{\varphi\qquad\varphi\to\psi}{\psi}\qquad\text{(MP)}
+\frac{\varphi\qquad\varphi\to\psi}{\psi}
 $$
 
-An equivalent three-schema system that treats $\lnot$ and $\to$ as primitive and recovers the third connective by definition is often written with the third axiom
+Mendelson’s third axiom is different but also complete with (A1)–(A2):
 
 $$
 (\lnot\varphi\to\lnot\psi)\to((\lnot\varphi\to\psi)\to\varphi).
 $$
 
-Systems that take all connectives as primitive add schemas such as
+**Deduction theorem.**
 
 $$
-\begin{align*}
-\varphi\to(\psi\to(\varphi\land\psi)),&\quad
-(\varphi\land\psi)\to\varphi,\quad
-(\varphi\land\psi)\to\psi,\\
-\varphi\to(\varphi\lor\psi),&\quad
-\psi\to(\varphi\lor\psi),\\
-(\varphi\to\chi)\to((\psi\to\chi)\to((\varphi\lor\psi)\to\chi)),\\
-(\varphi\to\psi)\to((\varphi\to\lnot\psi)\to\lnot\varphi),\\
-\lnot\lnot\varphi\to\varphi.
-\end{align*}
-$$
-
-**Deduction theorem** (syntactic):
-
-$$
-\Gamma,\varphi\vdash\psi\quad\iff\quad\Gamma\vdash\varphi\to\psi.
+\Gamma,\varphi\vdash\psi \quad\iff\quad \Gamma\vdash\varphi\to\psi.
 $$
 
 ---
 
-### 3. First-order logic — Hilbert-style extension
+## 3. First-order Hilbert extension
 
-Add the two (or three) quantifier schemas and the rule of generalization. A standard set (Enderton / Mendelson style) is:
+Quantifier axioms (Enderton/Mendelson style):
 
 $$
 \begin{align*}
-\text{(Q1)}\quad &\forall x\,\varphi\to\varphi[t/x]
-&&\text{($t$ free for $x$ in $\varphi$)}\\
-\text{(Q2)}\quad &\forall x\,(\varphi\to\psi)\to(\varphi\to\forall x\,\psi)
-&&\text{($x$ not free in $\varphi$)}
+\text{(Q1)}&\quad \forall x\,\varphi\to\varphi[t/x]
+&&\text{$t$ free for $x$ in $\varphi$}\\
+\text{(Q2)}&\quad \forall x\,(\varphi\to\psi)\to(\varphi\to\forall x\,\psi)
+&&\text{$x$ not free in $\varphi$}
 \end{align*}
 $$
 
-If $\exists$ is primitive rather than defined by $\exists x$ $\varphi$ $\equiv$ $\lnot$ $\forall x$ , $\lnot$ $\varphi$ :
+If $\exists$ is primitive:
 
 $$
 \varphi[t/x]\to\exists x\,\varphi
-\qquad\text{($t$ free for $x$)}.
+\qquad\text($t$ free for $x$).
 $$
 
-**Equality axioms** (when = is logical):
+Equality:
 
 $$
-\begin{align*}
-x&=x,\\
-x&=y\to\bigl(\varphi\to\varphi[y/x]\bigr)
-&&\text{($\varphi$ atomic, or by replacement)}.
-\end{align*}
+x=x,\qquad
+x=y\to\bigl(\varphi\to\varphi[y/x]\bigr)
+\quad\text{($\varphi$ atomic; then extend by replacement).}
 $$
 
-**Rules**:
+Rules: MP and generalization
 
 $$
-\frac{\varphi\qquad\varphi\to\psi}{\psi}\quad\text{(MP)},
-\qquad
-\frac{\varphi}{\forall x\,\varphi}\quad\text{(Gen)}.
+\frac{\varphi}{\forall x\,\varphi}
 $$
 
-(The usual side-condition on Gen: if one works with open formulas from a set $\Gamma$, $x$ must not occur free in any undischarged member of $\Gamma$.)
+Side condition if $\Gamma$ may contain open formulas: $x$ not free in any undischarged assumption from $\Gamma$.
 
 ---
 
-### 4. Semantics (Tarski)
+## 4. Tarski semantics
 
-A *structure* (model) $\mathfrak{M}$ for a first-order language $\mathcal{L}$ consists of a non-empty domain $|\mathfrak{M}|$ together with interpretations $c^\mathfrak{M}$, $f^\mathfrak{M}$, $P^\mathfrak{M}$ of the non-logical symbols.
-
-An *assignment* $s$ maps variables to $|\mathfrak{M}|$. The value of a term $t^{\mathfrak{M},s}$ is defined by recursion in the obvious way.
-
-**Satisfaction** $\mathfrak{M}\models\varphi[s]$ (or $\mathfrak{M},s\models\varphi$):
+A structure $\mathfrak{M}$ has nonempty domain $|\mathfrak{M}|$ and interpretations of the nonlogical symbols. An assignment $s$ maps variables into $|\mathfrak{M}|$.
 
 $$
 \begin{align*}
 \mathfrak{M}\models t_1=t_2[s]
 &\iff t_1^{\mathfrak{M},s}=t_2^{\mathfrak{M},s},\\
 \mathfrak{M}\models P(t_1,\dots,t_n)[s]
-&\iff (t_1^{\mathfrak{M},s},\dots,t_n^{\mathfrak{M},s})\in P^\mathfrak{M},\\
+&\iff (t_1^{\mathfrak{M},s},\dots,t_n^{\mathfrak{M},s})\in P^{\mathfrak{M}},\\
 \mathfrak{M}\models\lnot\varphi[s]
-&\iff\mathfrak{M}\not\models\varphi[s],\\
+&\iff \mathfrak{M}\not\models\varphi[s],\\
 \mathfrak{M}\models(\varphi\land\psi)[s]
-&\iff\mathfrak{M}\models\varphi[s]\text{ and }\mathfrak{M}\models\psi[s],
+&\iff \mathfrak{M}\models\varphi[s]\text{ and }\mathfrak{M}\models\psi[s],
 \end{align*}
 $$
 
-and likewise for $\lor,\to$; for quantifiers:
+and likewise for $\lor,\to$. Quantifiers:
 
 $$
 \begin{align*}
 \mathfrak{M}\models\forall x\,\varphi[s]
-&\iff\text{for every }a\in|\mathfrak{M}|,\ 
+&\iff \forall a\in|\mathfrak{M}|,\;
 \mathfrak{M}\models\varphi[s(x\mapsto a)],\\
 \mathfrak{M}\models\exists x\,\varphi[s]
-&\iff\text{there exists }a\in|\mathfrak{M}|,\ 
+&\iff \exists a\in|\mathfrak{M}|,\;
 \mathfrak{M}\models\varphi[s(x\mapsto a)].
 \end{align*}
 $$
 
-**Validity / entailment**:
-
 $$
-\begin{align*}
-\models\varphi
-&\iff\text{every structure and assignment satisfies }\varphi,\\
-\Gamma\models\varphi
-&\iff\text{every model of }\Gamma\text{ is a model of }\varphi.
-\end{align*}
+\models\varphi \iff \text{every structure and assignment satisfies $\varphi$},\qquad
+\Gamma\models\varphi \iff \text{every model of $\Gamma$ models $\varphi$}.
 $$
-
-For propositional logic the same clauses are written with truth-value assignments $v:\{p_i\}\to\{0,1\}$ and the usual truth tables.
 
 ---
 
-### 5. Sequent calculus LK (Gentzen)
+## 5. Sequent calculus LK
 
-**Axiom**:
+**Identity.**
 
 $$
 \varphi\vdash\varphi
 $$
 
-**Cut**:
+**Cut.**
 
 $$
-\frac{\Gamma\vdash\Delta,\varphi\qquad\varphi,\Sigma\vdash\Pi}{\Gamma,\Sigma\vdash\Delta,\Pi}
+\frac{\Gamma\vdash\Delta,\varphi \qquad \varphi,\Sigma\vdash\Pi}{\Gamma,\Sigma\vdash\Delta,\Pi}
 $$
 
-**Logical rules** (principal formula displayed; contexts $\Gamma,\Delta$ omitted for brevity in some presentations):
+**Logical rules.**
 
 $$
 \begin{align*}
+(\land\mathrm{L})&\quad
 \frac{\Gamma,\varphi\vdash\Delta}{\Gamma,\varphi\land\psi\vdash\Delta}
-&\quad \frac{\Gamma,\psi\vdash\Delta}{\Gamma,\varphi\land\psi\vdash\Delta}
-&&(\land\text{L})\\ \frac{\Gamma\vdash\Delta,\varphi\qquad\Gamma\vdash\Delta,\psi}{\Gamma\vdash\Delta,\varphi\land\psi} &&(\land\text{R}) \frac{\Gamma,\varphi\vdash\Delta\qquad\Gamma,\psi\vdash\Delta}{\Gamma,\varphi\lor\psi\vdash\Delta}
-&&(\lor\text{L})\\ \frac{\Gamma\vdash\Delta,\varphi}{\Gamma\vdash\Delta,\varphi\lor\psi}
-&\quad \frac{\Gamma\vdash\Delta,\psi}{\Gamma\vdash\Delta,\varphi\lor\psi} &&(\lor\text{R}) \frac{\Gamma\vdash\Delta,\varphi\qquad\Sigma,\psi\vdash\Pi}{\Gamma,\Sigma,\varphi\to\psi\vdash\Delta,\Pi}
-&&(\to\text{L})\\ \frac{\Gamma,\varphi\vdash\Delta,\psi}{\Gamma\vdash\Delta,\varphi\to\psi} &&(\to\text{R}) \frac{\Gamma\vdash\Delta,\varphi}{\Gamma,\lnot\varphi\vdash\Delta} &&(\lnot\text{L})\\ \frac{\Gamma,\varphi\vdash\Delta}{\Gamma\vdash\Delta,\lnot\varphi} &&(\lnot\text{R}) \frac{\Gamma,\varphi[t/x]\vdash\Delta}{\Gamma,\forall x\,\varphi\vdash\Delta} &&(\forall\text{L})\\ \frac{\Gamma\vdash\Delta,\varphi[y/x]}{\Gamma\vdash\Delta,\forall x\,\varphi} &&(\forall\text{R},\ y\text{ eigenvariable}) \frac{\Gamma,\varphi[y/x]\vdash\Delta}{\Gamma,\exists x\,\varphi\vdash\Delta} &&(\exists\text{L},\ y\text{ eigenvariable})\\ \frac{\Gamma\vdash\Delta,\varphi[t/x]}{\Gamma\vdash\Delta,\exists x\,\varphi} &&(\exists\text{R}) \end{align*}
+\quad
+\frac{\Gamma,\psi\vdash\Delta}{\Gamma,\varphi\land\psi\vdash\Delta}
+\\
+(\land\mathrm{R})&\quad
+\frac{\Gamma\vdash\Delta,\varphi \qquad \Gamma\vdash\Delta,\psi}{\Gamma\vdash\Delta,\varphi\land\psi}
+\\
+(\lor\mathrm{L})&\quad
+\frac{\Gamma,\varphi\vdash\Delta \qquad \Gamma,\psi\vdash\Delta}{\Gamma,\varphi\lor\psi\vdash\Delta}
+\\
+(\lor\mathrm{R})&\quad
+\frac{\Gamma\vdash\Delta,\varphi}{\Gamma\vdash\Delta,\varphi\lor\psi}
+\quad
+\frac{\Gamma\vdash\Delta,\psi}{\Gamma\vdash\Delta,\varphi\lor\psi}
+\\
+(\to\mathrm{L})&\quad
+\frac{\Gamma\vdash\Delta,\varphi \qquad \Sigma,\psi\vdash\Pi}{\Gamma,\Sigma,\varphi\to\psi\vdash\Delta,\Pi}
+\\
+(\to\mathrm{R})&\quad
+\frac{\Gamma,\varphi\vdash\Delta,\psi}{\Gamma\vdash\Delta,\varphi\to\psi}
+\\
+(\lnot\mathrm{L})&\quad
+\frac{\Gamma\vdash\Delta,\varphi}{\Gamma,\lnot\varphi\vdash\Delta}
+\\
+(\lnot\mathrm{R})&\quad
+\frac{\Gamma,\varphi\vdash\Delta}{\Gamma\vdash\Delta,\lnot\varphi}
+\\
+(\forall\mathrm{L})&\quad
+\frac{\Gamma,\varphi[t/x]\vdash\Delta}{\Gamma,\forall x\,\varphi\vdash\Delta}
+\\
+(\forall\mathrm{R})&\quad
+\frac{\Gamma\vdash\Delta,\varphi[y/x]}{\Gamma\vdash\Delta,\forall x\,\varphi}
+\quad\text{\(y\) eigenvariable: not free in the conclusion}
+\\
+(\exists\mathrm{L})&\quad
+\frac{\Gamma,\varphi[y/x]\vdash\Delta}{\Gamma,\exists x\,\varphi\vdash\Delta}
+\quad\text{\(y\) eigenvariable}
+\\
+(\exists\mathrm{R})&\quad
+\frac{\Gamma\vdash\Delta,\varphi[t/x]}{\Gamma\vdash\Delta,\exists x\,\varphi}
+\end{align*}
 $$
 
-**Structural rules**: weakening (thinning), contraction, exchange (permutation) on either side.
+**Structural rules.** Weakening, contraction, exchange on either side.
 
-Cut-elimination (Gentzen’s Hauptsatz) says every LK-derivation can be transformed into a cut-free one.
+**Hauptsatz.** Every LK-derivation converts to a cut-free one.
+
+LJ (intuitionistic) is LK with at most one formula on the right.
 
 ---
 
-### 6. Normal modal propositional logics
-
-Language: add unary operators $\Box$ (“necessarily”) and $\Diamond$ (“possibly”), with
+## 6. Normal modal logics
 
 $$
-\Diamond\varphi\;\equiv\;\lnot\Box\lnot\varphi.
+\Diamond\varphi \;\equiv\; \lnot\Box\lnot\varphi.
 $$
 
-**System K** (smallest normal modal logic):
-
-- all classical tautologies (or a Hilbert basis for them);
-- axiom **K**:
-  
-$$
-\Box(\varphi\to\psi)\to(\Box\varphi\to\Box\psi);
-$$
-  
-- rules MP and **Necessitation**:
+**K:** classical tautologies +
 
 $$
-\frac{\vdash\varphi}{\vdash\Box\varphi}.
+\Box(\varphi\to\psi)\to(\Box\varphi\to\Box\psi)
 $$
 
-Additional axiom schemas and the systems they generate:
+plus MP and necessitation $\vdash\varphi\Rightarrow\vdash\Box\varphi$.
+
+| Axiom | Schema | Frame condition |
+|---|---|---|
+| T | $\Box\varphi\to\varphi$ | reflexive |
+| D | $\Box\varphi\to\Diamond\varphi$ | serial |
+| 4 | $\Box\varphi\to\Box\Box\varphi$ | transitive |
+| B | $\varphi\to\Box\Diamond\varphi$ | symmetric |
+| 5 | $\Diamond\varphi\to\Box\Diamond\varphi$ | Euclidean |
 
 $$
-\begin{align*}
-\text{T (or M)}\quad &\Box\varphi\to\varphi
-&&\text{(reflexive frames)}\\
-\text{D}\quad &\Box\varphi\to\Diamond\varphi
-&&\text{(serial frames)}\\
-\text{4}\quad &\Box\varphi\to\Box\Box\varphi
-&&\text{(transitive frames)}\\
-\text{B}\quad &\varphi\to\Box\Diamond\varphi
-&&\text{(symmetric frames)}\\
-\text{5 (or E)}\quad &\Diamond\varphi\to\Box\Diamond\varphi
-&&\text{(Euclidean frames)}
-\end{align*}
+\text{T}=\text{K}+\text{T},\quad
+\text{S4}=\text{K}+\text{T}+4,\quad
+\text{S5}=\text{K}+\text{T}+5
+\;(\equiv\; \text{K}+\text{T}+4+\text{B}).
 $$
 
-Standard combinations:
-
-$$
-\begin{align*}
-\text{T} &= \text{K}+\text{T},\\
-\text{S4} &= \text{K}+\text{T}+4,\\
-\text{S5} &= \text{K}+\text{T}+5
-\quad\text{(equivalently K+T+4+B)}.
-\end{align*}
-$$
-
-**Kripke semantics**: a frame $(W,R)$; a model $\mathfrak{M}=(W,R,V)$.  
+Kripke:
 
 $$
 \begin{align*}
 \mathfrak{M},w\models\Box\varphi
-&\iff\forall v\,(wRv\Rightarrow\mathfrak{M},v\models\varphi),\\
+&\iff \forall v\,(wRv\Rightarrow \mathfrak{M},v\models\varphi),\\
 \mathfrak{M},w\models\Diamond\varphi
-&\iff\exists v\,(wRv\land\mathfrak{M},v\models\varphi).
+&\iff \exists v\,(wRv\land \mathfrak{M},v\models\varphi).
 \end{align*}
 $$
 
-Correspondence: T $\leftrightarrow$ reflexivity of $R$, 4 $\leftrightarrow$ transitivity, 5 $\leftrightarrow$ Euclidean, S5 $\leftrightarrow$ $R$ an equivalence relation.
+S5: $R$ is an equivalence relation.
 
 ---
 
-### 7. Principal metatheorems (classical first-order logic)
+## 7. Metatheorems (classical FOL)
 
-**Soundness**:
+**Soundness.** $\Gamma\vdash\varphi\implies\Gamma\models\varphi$.
 
-$$
-\Gamma\vdash\varphi\quad\implies\quad\Gamma\models\varphi.
-$$
+**Completeness (Gödel 1929).** $\Gamma\models\varphi\implies\Gamma\vdash\varphi$.  
+Equivalently: a set of sentences is consistent iff it has a model.
 
-**Gödel’s completeness theorem** (1929):
+**Compactness.** $\Gamma\models\varphi$ already for some finite $\Gamma_0\subseteq\Gamma$.  
+Equivalently: if every finite subset of $\Gamma$ has a model, so does $\Gamma$.
 
-$$
-\Gamma\models\varphi\quad\implies\quad\Gamma\vdash\varphi
-$$
+**Löwenheim–Skolem.**  
+Downward: a countable theory with an infinite model has a countably infinite model (countable language is the real hypothesis).  
+Upward: an infinite model yields models of every larger infinite cardinality.
 
-(equivalently: a set of sentences is consistent if and only if it has a model).
-
-**Compactness**:
-
-$$
-\Gamma\models\varphi\quad\implies\quad
-\text{some finite }\Gamma_0\subseteq\Gamma\text{ satisfies }\Gamma_0\models\varphi.
-$$
-
-Equivalently: if every finite subset of $\Gamma$ has a model, then $\Gamma$ has a model.
-
-**Löwenheim–Skolem** (downward): if a countable theory has an infinite model, it has a countably infinite model.  
-
-(Upward): if it has an infinite model, it has models of every larger infinite cardinality.
-
-**Gödel’s first incompleteness theorem** (informal statement):  
-
-If $T$ is a consistent, recursively axiomatizable extension of a sufficiently strong fragment of arithmetic (e.g. Robinson arithmetic $Q$ or Peano arithmetic), then there exists a sentence $G_T$ (the Gödel sentence) such that
+**First incompleteness.** If $T$ is consistent, recursively axiomatizable, and interprets enough arithmetic ($Q$ or PA), there is a sentence $G_T$ with
 
 $$
 T\nvdash G_T\qquad\text{and}\qquad T\nvdash\lnot G_T.
 $$
 
-($G_T$ is true in the standard model $\mathbb{N}$ if $T$ is sound.)
+If $T$ is sound, $G_T$ is true in $\mathbb{N}$.
 
-**Gödel’s second incompleteness theorem**:
+**Second incompleteness.** $T\nvdash\mathrm{Con}(T)$, where $\mathrm{Con}(T)=\lnot\mathrm{Prov}_T(\ulcorner 0=1\urcorner)$, provided $T$ is consistent and strong enough for the Hilbert–Bernays–Löb derivability conditions.
 
-$$
-T\nvdash{Con}(T),
-$$
-
-where ${Con}(T)$ is the arithmetized consistency statement $\lnot{Prov}_T(\ulcorner 0=1\urcorner)$.
-
-**Diagonal lemma** (used in the proofs):
-for any formula $\psi(x)$ there is a sentence $\varphi$ with
+**Diagonal lemma.** For any $\psi(x)$ there is $\varphi$ with
 
 $$
 T\vdash\varphi\leftrightarrow\psi(\ulcorner\varphi\urcorner).
 $$
+
+---
+
+## Future Work
+- Natural deduction (NJ/NK), prenex/Skolem/Herbrand, resolution, interpolation (Craig), definability (Beth), and the distinction between *theories of sentences* vs open-formula deduction with Gen.
+- **Downward LS** needs a countable *language*, not merely a “countable theory” in the informal sense.
+- **Second incompleteness** needs representability of the provability predicate and the derivability conditions, not only “extension of $Q$”.
 
 ---
 
