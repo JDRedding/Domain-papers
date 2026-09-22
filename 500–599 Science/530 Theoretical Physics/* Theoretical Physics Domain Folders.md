@@ -1,6 +1,6 @@
 # Theoretical Physics Domain Folders
 
-## 530 General physics
+## **530 General Theoretics**
 | Decimal | Category |
 |--------|----------|
 | **530.00** | General physics topics |
