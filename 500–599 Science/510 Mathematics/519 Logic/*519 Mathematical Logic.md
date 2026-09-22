@@ -400,3 +400,66 @@ Aut(A)          Automorphisms
 ⊗ᶜ             Monoidal tensor
 ⇒              Natural transformation
 ```
+
+## APPENDIX: Logic, Type Theory & Formal Semantics 
+
+```
+Symbol                  Meaning
+------                  -------
+⊢                       Provability / syntactic entailment
+⊬                       Not provable
+⊨                       Semantic entailment
+⊭                       Not semantically entailed
+
+λx. e                   Lambda abstraction
+λx:A. e                 Typed lambda abstraction
+e₁ e₂                   Function application
+e[x := v]               Substitution of x with v in expression e
+
+α                       Type variable
+β                       Type variable
+τ                       Type
+σ                       Type
+Γ                       Typing context
+Δ                       Constraint context
+
+Γ ⊢ e : τ               Expression e has type τ under context Γ
+Γ ⊢ τ₁ = τ₂             Type equality judgment
+Γ ⊢ τ₁ <: τ₂            Subtyping judgment
+
+∀x. P(x)                Universal quantification
+∃x. P(x)                Existential quantification
+∃!x. P(x)               Unique existence
+∀x∈A. P(x)              Bounded universal quantifier
+∃x∈A. P(x)              Bounded existential quantifier
+
+→                       Function type
+×                       Product type
++                       Sum type
+⊕                       Disjoint sum type
+⊤                       True / top type
+⊥                       False / bottom type
+¬                       Negation
+∧                       Conjunction
+∨                       Disjunction
+
+μX. F(X)                Least fixed point
+νX. F(X)                Greatest fixed point
+
+⟦e⟧                    Denotational semantics of expression e
+⟦e⟧ρ                   Semantics under environment ρ
+⟨e⟩                    Syntactic form of expression e
+
+e ↦ e'                  Evaluation step (small‑step semantics)
+e ⇓ v                   Evaluation to value v (big‑step semantics)
+e ⇑                    Divergence / non‑termination
+
+≡β                     Beta equivalence
+≡η                     Eta equivalence
+≡α                     Alpha equivalence
+
+→*                     Reflexive transitive closure of →
+↦*                     Multi‑step reduction
+
+□                      End of proof
+```
