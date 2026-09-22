@@ -1,4 +1,4 @@
-# 🌸 **Plants (Botany)**
+# **Plants (Botany)**
 - 580 Plants (Botany)
 
 Plants are defined in botany as **photosynthetic, multicellular eukaryotes** with **cellulose cell walls**, **chloroplasts**, and **life cycles featuring alternation of generations**. They include everything from mosses and ferns to towering trees and flowering crops.
@@ -16,7 +16,7 @@ Plants are defined in botany as **photosynthetic, multicellular eukaryotes** wit
 | 588 | Bryophytes |
 | 589 | [Unassigned] |
 
-# **Plants (Kingdom Plantae)**
+# 🌸 **Plants (Kingdom Plantae)**
 
 In botany, plants are **multicellular, photosynthetic, eukaryotic organisms** belonging to the kingdom **Plantae**. They are characterized by **cellulose cell walls**, **chlorophyll‑based photosynthesis**, and **life cycles featuring alternation of generations**.
 
