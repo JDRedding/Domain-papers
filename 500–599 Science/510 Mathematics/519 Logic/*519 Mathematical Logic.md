@@ -7,7 +7,27 @@ This document is a formal object: a classical logic specification. Can present a
 
 ---
 
-## 1. Syntax
+## **How to interpret this document**
+
+- **Section 1** — syntax  
+  → This is inductive datatype for formulas.
+
+- **Section 2–3** — axiom schemas and inference rules  
+  → This is kernel’s trusted base.
+
+- **Section 4** — Tarski semantics  
+  → This is model theory module.
+
+- **Section 5** — Gentzen LK  
+  → This is proof engine.
+
+- **Section 6** — modal extensions  
+  → This is optional logic extensions.
+
+- **Section 7** — metatheorems  
+  → This is correctness guarantee.
+
+### 1. Syntax
 
 Connectives, strongest to weakest binding (common convention; parentheses still win):
 
@@ -39,7 +59,7 @@ $$
 
 ---
 
-## 2. Propositional Hilbert system
+### 2. Propositional Hilbert system
 
 A complete Łukasiewicz-style basis with primitive $\to,\lnot$:
 
@@ -71,7 +91,7 @@ $$
 
 ---
 
-## 3. First-order Hilbert extension
+### 3. First-order Hilbert extension
 
 Quantifier axioms (Enderton/Mendelson style):
 
@@ -109,7 +129,7 @@ Side condition if $\Gamma$ may contain open formulas: $x$ not free in any undisc
 
 ---
 
-## 4. Tarski semantics
+### 4. Tarski semantics
 
 A structure $\mathfrak{M}$ has nonempty domain $|\mathfrak{M}|$ and interpretations of the nonlogical symbols. An assignment $s$ maps variables into $|\mathfrak{M}|$.
 
@@ -146,7 +166,7 @@ $$
 
 ---
 
-## 5. Sequent calculus LK
+### 5. Sequent calculus LK
 
 **Identity.**
 
@@ -216,7 +236,7 @@ LJ (intuitionistic) is LK with at most one formula on the right.
 
 ---
 
-## 6. Normal modal logics
+### 6. Normal modal logics
 
 $$
 \Diamond\varphi \;\equiv\; \lnot\Box\lnot\varphi.
@@ -260,7 +280,7 @@ S5: $R$ is an equivalence relation.
 
 ---
 
-## 7. Metatheorems (classical FOL)
+### 7. Metatheorems (classical FOL)
 
 **Soundness.** $\Gamma\vdash\varphi\implies\Gamma\models\varphi$.
 
