@@ -113,7 +113,7 @@ point   = pinch(SID_t)     % defined later
 - Motion is primitive: $\Phi \neq 0$. No rest state of the universe.
 - Time is only slice succession: $Q_t \to Q_{t+1}$. There is no master slice $Q_*$.
 - The observer is an operator *of* the current slice: $O_{\mathrm{int}} = O_{\mathrm{int}}[Q_t]$. It cannot own $U$.
-- Incompleteness is local: $G_F$ acts on $Q_t$ only. $\Gamma(\mathrm{global\_shadow})$ is a projection, so a global Gödel sentence never forms. $G_F^local$ is a computable, local transformation on the language of a slice that removes or refuses any formula whose quantificational reach or self‑reference would collapse the knot into a static universe.
+- Incompleteness is local: $G_F$ acts on $Q_t$ only. $\Gamma(\mathrm{global\_shadow})$ is a projection, so a global Gödel sentence never forms. $G_F^{local}$ is a computable, local transformation on the language of a slice that removes or refuses any formula whose quantificational reach or self‑reference would collapse the knot into a static universe.
 - Equilibrium is an orbit, not a fixed point: $E_{\mathrm{dyn}}(U) \Leftrightarrow \Phi \neq 0 \land \mathrm{Eq}(Q)$ along the cycle.
 
 The constraints are exactly the five forbidden collapse modes written in negation.
