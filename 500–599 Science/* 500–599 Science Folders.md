@@ -26,9 +26,11 @@
 | 514 | Topology |
 | 515 | Analysis |
 | 516 | Geometry |
-| 517 | [Unassigned] |
+| 517 | Open problems in Mathematics |
 | 518 | Numerical analysis |
 | 519 | Probabilities & applied mathematics |
+
+*Note* : 517 was [Unassigned]
 
 ### 520 Astronomy & allied sciences
 | Number | Heading |
@@ -37,12 +39,14 @@
 | 521 | Celestial mechanics |
 | 522 | Techniques, equipment & materials |
 | 523 | Specific celestial bodies & phenomena |
-| 524 | [Unassigned] |
+| 524 | Open problems in Astronomy |
 | 525 | Earth (Astronomical geography) |
 | 526 | Mathematical geography |
 | 527 | Celestial navigation |
 | 528 | Ephemerides |
 | 529 | Chronology |
+
+*Note* : 524 was [Unassigned]
 
 ### 530 Physics
 | Number | Heading |
