@@ -68,7 +68,7 @@ Plants are foundational to Earth’s ecosystems because they:
 - **Create habitats** and stabilize soils
 
 ## Mathematical equation and formulas
-These are the equations you will meet first in plant physiology, crop modelling, and forest ecology. If you need the expanded FvCB electron-transport equations, the Penman–Monteith transpiration formula, or Höfler / pressure–volume curve relations, they will be found in specific paper or domain.
+These are the equations you will meet first in plant physiology, crop modelling, and forest ecology. If need the expanded FvCB electron-transport equations, the Penman–Monteith transpiration formula, or Höfler / pressure–volume curve relations, they will be found in specific paper or domain.
 
 Botany uses a relatively small set of core equations from physiology, biophysics, and growth analysis. Below are the ones that appear most often, with standard notation.
 
