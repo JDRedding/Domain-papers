@@ -43,3 +43,72 @@ Folk narratives often explain the natural world, teach a moral, describe a socia
 
 Folklore includes rituals and festivals. Thanksgiving in the United States is associated with gratitude and harvest. Diwali in India marks the triumph of light over darkness through lamps, fireworks, and family gatherings. Such events combine symbol, food, music, and dance and can strengthen communal ties. Distinct practices—Madagascar’s Famadihana reburial ceremonies, or Spain’s El Colacho baby-jumping festival—show how widely societies differ in honoring life, death, and belief.
 
+## Equations and formulas
+
+Customs, etiquette, and folklore can be researched through closed-form theory, cultural-evolution and social-transmission models treat them as traits that spread, persist, or fade. The standard equations come from dual-inheritance theory (Cavalli-Sforza & Feldman; Boyd & Richerson) and from related population and epidemic models. These formulas do not describe any particular greeting, funeral, or fairy tale. They describe how such practices can be inherited, copied, stabilized by conformity, or washed out by competing variants. The parameters are estimated from ethnographic frequencies, surveys, or historical time series rather than derived from first principles.
+
+### Notation used throughout
+
+- $q$ or $p$: frequency (share of the population) holding a given custom, norm, or tale
+- $1-q$: frequency holding the alternative
+- $d_i$: strength of vertical (parent-to-child) transmission of trait $i$
+- $f^i$: relative cultural fitness of trait $i$
+- $\beta$: contact / imitation rate
+- $\gamma$: rate at which people stop transmitting (become “stiflers” or lose interest)
+
+### Logistic dynamics of a cultural trait
+A two-trait custom or story whose frequency is $q_i$ often obeys
+
+$$
+\dot{q}_i = q_i(1-q_i)f^i.
+$$
+
+When transmission is mainly vertical, a common specialization is
+
+$$
+\dot{q}_i = q_i(1-q_i)(d_i-d_j).
+$$
+
+The term $q_i(1-q_i)$ is the usual logistic factor: change is fastest when the two variants are both common.
+
+### Discrete-generation recursion (Boyd–Richerson style)
+Let $p$ be the frequency of variant $c$ before transmission and $p'$ the frequency after transmission. A simple linear mixing of parental and social (oblique) influence is
+
+$$
+p' = A p + (1-A)P_t,
+$$
+
+where $A$ is the weight on parents and $P_t$ is the frequency among teachers / models. Under weak selection this becomes
+
+$$
+p' = p + p(1-p)\bigl[A w + (1-A)v\bigr],
+$$
+
+with $w$ and $v$ the relative advantages of the variant under parental versus social transmission.
+
+### Frequency-dependent (conformist) bias
+If people preferentially copy the majority, the probability of acquiring trait $c$ from $n$ models is a nonlinear function of the observed frequency. A typical first-order result is that the change in frequency is amplified when $p$ is already above $1/2$ and damped when it is below, which can stabilize a local custom even when it is not individually “better.”
+
+### Epidemic / rumour model for the spread of a tale
+Treat a legend or festival practice like an infection. Let $S$, $I$, and $R$ be the fractions who have never heard it, who actively tell it, and who no longer tell it:
+
+$$
+\begin{aligned}
+\frac{dS}{dt} &= -\beta S I,\\
+\frac{dI}{dt} &= \beta S I - \gamma I,\\
+\frac{dR}{dt} &= \gamma I,
+\end{aligned}
+$$
+
+with $S+I+R=1$. The same skeleton is used for folk-song and online-festival diffusion, sometimes with extra “network-pusher” or media terms.
+
+### Bass-style adoption of a new custom
+The share of people who have taken up a new etiquette rule or festival form, $z(t)$, can be written
+
+$$
+z(t+1)=z(t)+p\bigl(1-z(t)\bigr)+q z(t)\bigl(1-z(t)\bigr),
+$$
+
+where $p$ is the “innovation” (external) rate and $q$ is the “imitation” (social) rate. In continuous time this is a logistic curve whose speed is set by how strongly people copy one another.
+
+
