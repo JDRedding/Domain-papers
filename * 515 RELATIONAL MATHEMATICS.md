@@ -15,11 +15,11 @@ These constructs form a **relational‑first ontology** and constitute a fresh t
 |---|---|---|
 | **Foundational substrate** | Algebra of heterogeneous binary relations; composition, converse, identity, residuals, domain/codomain operators. | Uses RA as the underlying structural grammar; RA operators become primitives inside a dynamical ontology. |
 | **Primitive objects** | Sets, relations, partial identities, mappings, bijections. | SID triad (Structure–Interaction–Dynamics), PED triad (Power–Evaluation–Dynamics), Q‑moderation, agency operators. |
-| **Composition** | \(R\cdot S\) defined via existential linking; left‑to‑right heterogeneous composition. | Composition interpreted as flux propagation or structural linkage inside RDG diagrams; interacts with Q‑moderation. |
-| **Domain** | \(\operatorname{dom}(R)=(R\cdot R^{\mathrm{T}})\cap I_A\). Standard partial identity. Idempotent. | Domain becomes the “activation set” for SID/PED roles; used as boundary conditions in MFE/RME evolution. |
-| **Codomain** | \(\operatorname{cod}(R)=(R^{\mathrm{T}}\cdot R)\cap I_B\). Standard partial identity. | Codomain becomes the “reception set” for flux or evaluation channels; interacts with Γ coarse‑graining. |
-| **Univalence** | \(R^{\mathrm{T}}\cdot R\subseteq I_B\). Partial function. | Univalence corresponds to deterministic SID‑interaction channels; used in RME factorization constraints. |
-| **Injectivity** | \(R\cdot R^{\mathrm{T}}\subseteq I_A\). | Injectivity corresponds to reversible flux channels; used in AUT operator constraints. |
+| **Composition** | $R\cdot S$ defined via existential linking; left‑to‑right heterogeneous composition. | Composition interpreted as flux propagation or structural linkage inside RDG diagrams; interacts with Q‑moderation. |
+| **Domain** | ${dom}(R)=(R\cdot R^{\mathrm{T}})\cap I_A$. Standard partial identity. Idempotent. | Domain becomes the “activation set” for SID/PED roles; used as boundary conditions in MFE/RME evolution. |
+| **Codomain** | ${cod}(R)=(R^{\mathrm{T}}\cdot R)\cap I_B$. Standard partial identity. | Codomain becomes the “reception set” for flux or evaluation channels; interacts with Γ coarse‑graining. |
+| **Univalence** | $R^{\mathrm{T}}\cdot R\subseteq I_B$. Partial function. | Univalence corresponds to deterministic SID‑interaction channels; used in RME factorization constraints. |
+| **Injectivity** | $R\cdot R^{\mathrm{T}}\subseteq I_A$. | Injectivity corresponds to reversible flux channels; used in AUT operator constraints. |
 | **Mappings** | Total + univalent. Classical functions. | Treated as “pure channels” in RDG diagrams; form the stable backbone of MFE state transitions. |
 | **Bijections** | Mapping whose converse is a mapping; full invertibility. | Bijections correspond to fully reversible SID/PED transformations; used in symmetry operators. |
 | **Kronecker / fork / join** | Standard structured relational operators from Schmidt/Winter. | Reinterpreted as multi‑mode structural couplings inside 7‑mode diagrams. |
