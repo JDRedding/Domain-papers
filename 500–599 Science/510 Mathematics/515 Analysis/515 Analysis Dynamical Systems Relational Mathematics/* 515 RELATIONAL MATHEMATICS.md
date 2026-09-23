@@ -6,9 +6,9 @@ A technical document on Relational Mathematics collecting algebraic results on b
 
 **Domain Construction:** Provides purely relational formulas for extracting domains and codomains without set notation:
 
-\[
-\operatorname{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
-\]
+$$
+{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
+$$
 
 — a foundational invariant
 
@@ -141,8 +141,8 @@ Domain/codomain operators are Γ-stable coarse-grained diagonals.
 ## DOMAIN CONSTRUCTION RESULTS
 
 - New purely relational formulae for:
-  - existential image: \(\operatorname{dom}(R)\cdot S\)
-  - inverse image: \(S\cdot\operatorname{dom}(R^{\mathrm{T}})\)
+  - existential image: \({dom}(R)\cdot S\)
+  - inverse image: \(S\cdot{dom}(R^{\mathrm{T}})\)
 
 - Emphasis: derive domain/codomain behavior from primitive relational operators (composition, converse, identity).
   - defining existential image purely relationally
@@ -152,9 +152,9 @@ Domain/codomain operators are Γ-stable coarse-grained diagonals.
 
 **Structural invariant:**
 
-\[
-\operatorname{dom}(R) = R \cdot R^{\mathrm{T}} \cap I
-\]
+$$
+{dom}(R) = R \cdot R^{\mathrm{T}} \cap I
+$$
 
 where \(I\) is identity on the domain.
 
@@ -170,9 +170,9 @@ Extract the set of all \(a \in A\) for which there exists \(b \in B\) such that 
 
 ### RELATIONAL FORMULA FOR THE DOMAIN
 
-\[
-\operatorname{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
-\]
+$$
+{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
+$$
 
 **Explanation:**
 
@@ -182,13 +182,13 @@ Extract the set of all \(a \in A\) for which there exists \(b \in B\) such that 
 
 ### STRUCTURAL INVARIANTS
 
-- \(\operatorname{dom}(R)\) is itself a relation: a subset of \(I_A\).
-- \(\operatorname{dom}(R)\) is idempotent: \(\operatorname{dom}(\operatorname{dom}(R)) = \operatorname{dom}(R)\).
-- \(\operatorname{dom}(R)\) respects composition:
+- \({dom}(R)\) is itself a relation: a subset of \(I_A\).
+- \({dom}(R)\) is idempotent: \({dom}({dom}(R)) = {dom}(R)\).
+- \({dom}(R)\) respects composition:
 
-\[
-\operatorname{dom}(R \cdot S) \subseteq \operatorname{dom}(R)
-\]
+$$
+{dom}(R \cdot S) \subseteq {dom}(R)
+$$
 
 ---
 
@@ -200,9 +200,9 @@ A "binary mapping" is a relation that behaves like a (partial) function.
 
 Binary mappings characterized relationally:
 
-\[
+$$
 f \text{ is a mapping } \iff f^{\mathrm{T}} \cdot f \subseteq I
-\]
+$$
 
 **Derived rules:**
 
@@ -236,35 +236,35 @@ A relation \(f\) is a (partial) mapping \(\iff f^{\mathrm{T}} \cdot f \subseteq 
 
 **Total mapping:**
 
-\[
-\operatorname{dom}(f) = I_A
-\]
+$$
+{dom}(f) = I_A
+$$
 
 **Partial mapping:**
 
-\[
-\operatorname{dom}(f) \subseteq I_A
-\]
+$$
+{dom}(f) \subseteq I_A
+$$
 
 Domain construction uses:
 
-\[
-\operatorname{dom}(f) = (f \cdot f^{\mathrm{T}}) \cap I_A
-\]
+$$
+{dom}(f) = (f \cdot f^{\mathrm{T}}) \cap I_A
+$$
 
 ### CODOMAIN & IMAGE
 
 **Image of \(X\) under \(f\):**
 
-\[
-f[X] = \operatorname{dom}(X \cdot f^{\mathrm{T}})
-\]
+$$
+f[X] = {dom}(X \cdot f^{\mathrm{T}})
+$$
 
 **Inverse image of \(Y\):**
 
-\[
-f^{-1}[Y] = \operatorname{dom}(f \cdot Y^{\mathrm{T}})
-\]
+$$
+f^{-1}[Y] = {dom}(f \cdot Y^{\mathrm{T}})
+$$
 
 These formulae are derived purely relationally (no set comprehension).
 
@@ -272,63 +272,63 @@ These formulae are derived purely relationally (no set comprehension).
 
 If \(f : A \to B\) and \(g : B \to C\) are mappings, then:
 
-\[
+$$
 g \cdot f \text{ is a mapping}
-\]
+$$
 
-\[
+$$
 (g \cdot f)^{\mathrm{T}} \cdot (g \cdot f) \subseteq I_A
-\]
+$$
 
 **Domain law:**
 
-\[
-\operatorname{dom}(g \cdot f) \subseteq \operatorname{dom}(f)
-\]
+$$
+{dom}(g \cdot f) \subseteq {dom}(f)
+$$
 
 **Codomain law:**
 
-\[
-\operatorname{cod}(g \cdot f) \subseteq \operatorname{cod}(g)
-\]
+$$
+{cod}(g \cdot f) \subseteq {cod}(g)
+$$
 
 ### RESTRICTION & CORESTRICTION
 
 **Domain restriction:**
 
-\[
+$$
 X \triangleright f = X \cdot f
-\]
+$$
 
 **Codomain restriction:**
 
-\[
+$$
 f \triangleleft Y = f \cdot Y
-\]
+$$
 
 **Mapping invariants:**
 
-\[
+$$
 (X \triangleright f)^{\mathrm{T}} \cdot (X \triangleright f) \subseteq I_X
-\]
+$$
 
-\[
+$$
 (f \triangleleft Y)^{\mathrm{T}} \cdot (f \triangleleft Y) \subseteq I_A
-\]
+$$
 
 ### FACTORIZATION IDENTITIES
 
 Every mapping \(f\) can be factored relationally:
 
-\[
-f = (\operatorname{dom}(f)) \cdot f = f \cdot (\operatorname{cod}(f))
-\]
+$$
+f = ({dom}(f)) \cdot f = f \cdot ({cod}(f))
+$$
 
 And:
 
-\[
+$$
 f = (I_A \cap f^{\mathrm{T}} \cdot f) \cdot f
-\]
+$$
 
 These identities allow decomposition into domain/codomain components.
 
@@ -336,25 +336,25 @@ These identities allow decomposition into domain/codomain components.
 
 **Single-valuedness:**
 
-\[
+$$
 f \cdot f^{\mathrm{T}} \subseteq I_B \quad \text{(for injective mappings)}
-\]
+$$
 
 **Surjectivity:**
 
-\[
-\operatorname{cod}(f) = I_B
-\]
+$$
+{cod}(f) = I_B
+$$
 
 **Bijectivity:**
 
-\[
+$$
 f^{\mathrm{T}} \text{ is also a mapping}
-\]
+$$
 
-\[
+$$
 f^{\mathrm{T}} \cdot f = I_A \quad \text{and} \quad f \cdot f^{\mathrm{T}} = I_B
-\]
+$$
 
 ---
 
@@ -403,25 +403,25 @@ Combine two relations into a "block" relation whose domain is \(A \times C\) and
 
 **Definition (conceptual):**
 
-\[
+$$
 (a, c)\ (R \otimes S)\ (b, d) \iff a\, R\, b \ \text{AND}\ c\, S\, d
-\]
+$$
 
 **Structural properties:**
 
-- Domain: \(\operatorname{dom}(R \otimes S) = \operatorname{dom}(R) \times \operatorname{dom}(S)\)
-- Codomain: \(\operatorname{cod}(R \otimes S) = \operatorname{cod}(R) \times \operatorname{cod}(S)\)
+- Domain: \({dom}(R \otimes S) = {dom}(R) \times {dom}(S)\)
+- Codomain: \({cod}(R \otimes S) = {cod}(R) \times {cod}(S)\)
 - Composition distributes:
 
-\[
+$$
 (R_1 \otimes S_1) \cdot (R_2 \otimes S_2) = (R_1 \cdot R_2) \otimes (S_1 \cdot S_2)
-\]
+$$
 
 - Converse:
 
-\[
+$$
 (R \otimes S)^{\mathrm{T}} = R^{\mathrm{T}} \otimes S^{\mathrm{T}}
-\]
+$$
 
 **Interpretation:**  
 Kronecker = parallel relational application on product spaces.
@@ -433,14 +433,14 @@ Combine two relations that share the SAME domain \(A\) but may have different co
 
 **Definition (conceptual):**
 
-\[
+$$
 a\ (R \pitchfork S)\ (b, c) \iff a\, R\, b \ \text{AND}\ a\, S\, c
-\]
+$$
 
 **Structural properties:**
 
-- Domain: \(\operatorname{dom}(R \pitchfork S) = \operatorname{dom}(R) \cap \operatorname{dom}(S)\)
-- Codomain: \(\operatorname{cod}(R \pitchfork S) = \operatorname{cod}(R) \times \operatorname{cod}(S)\)
+- Domain: \({dom}(R \pitchfork S) = {dom}(R) \cap {dom}(S)\)
+- Codomain: \({cod}(R \pitchfork S) = {cod}(R) \times {cod}(S)\)
 - Mapping behavior: If \(R\) and \(S\) are mappings, \(R \pitchfork S\) is a mapping into \(B \times C\).
 
 **Interpretation:**  
@@ -465,19 +465,19 @@ Dual of strict fork: combine relations that share the SAME codomain \(B\) but ma
 
 **Definition (conceptual):**
 
-\[
+$$
 (a, c)\ (R \curlyvee S)\ b \iff a\, R\, b \ \text{AND}\ c\, S\, b
-\]
+$$
 
 **Structural properties:**
 
-- Domain: \(\operatorname{dom}(R \curlyvee S) = \operatorname{dom}(R) \times \operatorname{dom}(S)\)
-- Codomain: \(\operatorname{cod}(R \curlyvee S) = \operatorname{cod}(R) \cap \operatorname{cod}(S)\)
+- Domain: \({dom}(R \curlyvee S) = {dom}(R) \times {dom}(S)\)
+- Codomain: \({cod}(R \curlyvee S) = {cod}(R) \cap {cod}(S)\)
 - Converse duality:
 
-\[
+$$
 (R \curlyvee S)^{\mathrm{T}} = R^{\mathrm{T}} \pitchfork S^{\mathrm{T}}
-\]
+$$
 
 **Interpretation:**  
 Strict join = synchronized input pairing that converges to a shared output.
@@ -502,13 +502,13 @@ A × C ──(R ⋎ S)──▶ B
 
 - Fork and join are dual under converse:
 
-\[
+$$
 (R \pitchfork S)^{\mathrm{T}} = R^{\mathrm{T}} \curlyvee S^{\mathrm{T}}
-\]
+$$
 
-\[
+$$
 (R \curlyvee S)^{\mathrm{T}} = R^{\mathrm{T}} \pitchfork S^{\mathrm{T}}
-\]
+$$
 
 ---
 
@@ -650,9 +650,9 @@ b1, b2
 
 Given a relation \(R \subseteq A \times B\):
 
-\[
-\operatorname{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
-\]
+$$
+{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
+$$
 
 where:
 
@@ -670,19 +670,19 @@ RDG treats every relation as a tri-mode object:
 
 For domain construction, only SID is load-bearing:
 
-\[
-\operatorname{SID}(R) : A \to B
-\]
+$$
+{SID}(R) : A \to B
+$$
 
 Identity in RDG:
 
-\[
+$$
 I_A = \text{SID-identity on } A
-\]
+$$
 
-\[
+$$
 I_A(a,a') = 1 \iff a = a'
-\]
+$$
 
 ```
 LEFT-UNIQUENESS (MAPPING)         NON-MAPPING (ONE-TO-MANY)
@@ -699,45 +699,45 @@ LEFT-UNIQUENESS (MAPPING)         NON-MAPPING (ONE-TO-MANY)
 
 **Converse:**
 
-\[
-\operatorname{SID}(R)^{\mathrm{T}} = \text{SID-converse (flip structural arrows)}
-\]
+$$
+{SID}(R)^{\mathrm{T}} = \text{SID-converse (flip structural arrows)}
+$$
 
 **Composition:**
 
-\[
-\operatorname{SID}(R) \circ \operatorname{SID}(S) = \text{structural composition}
-\]
+$$
+{SID}(R) \circ {SID}(S) = \text{structural composition}
+$$
 
 **Intersection:**
 
-\[
-\operatorname{SID}(X) \wedge \operatorname{SID}(Y) = \text{structural meet (same as } \cap\text{)}
-\]
+$$
+{SID}(X) \wedge {SID}(Y) = \text{structural meet (same as } \cap\text{)}
+$$
 
 Thus classical \(R \cdot R^{\mathrm{T}}\) becomes:
 
-\[
-\operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}}
-\]
+$$
+{SID}(R) \circ {SID}(R)^{\mathrm{T}}
+$$
 
 ### DOMAIN OPERATOR (STRUCTURAL MODE)
 
 Define the RDG-domain operator:
 
-\[
-\operatorname{Dom}_{RDG}(R) := \operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}} \wedge I_A
-\]
+$$
+{Dom}_{RDG}(R) := {SID}(R) \circ {SID}(R)^{\mathrm{T}} \wedge I_A
+$$
 
 This is a pure SID-mode object:
 
-\[
-\operatorname{Dom}_{RDG}(R) : A \to A
-\]
+$$
+{Dom}_{RDG}(R) : A \to A
+$$
 
 **Interpretation:**
 
-- \(\operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}}\) produces all structurally reachable self-pairs \((a,a')\) via some \(b\).
+- \({SID}(R) \circ {SID}(R)^{\mathrm{T}}\) produces all structurally reachable self-pairs \((a,a')\) via some \(b\).
 - Meeting with \(I_A\) collapses to diagonal \((a,a)\).
 - The diagonal entries encode the domain elements.
 
@@ -745,15 +745,15 @@ This is a pure SID-mode object:
 
 PED does not alter domain extraction but annotates it:
 
-\[
-\operatorname{PED}(\operatorname{Dom}_{RDG}(R)) = \text{Evaluation of which } a \in A \text{ have nonzero structural support.}
-\]
+$$
+{PED}({Dom}_{RDG}(R)) = \text{Evaluation of which } a \in A \text{ have nonzero structural support.}
+$$
 
 In other words:
 
-\[
-a \in \operatorname{dom}(R) \iff \operatorname{PED}(\operatorname{Dom}_{RDG}(R))(a,a) > 0
-\]
+$$
+a \in {dom}(R) \iff {PED}({Dom}_{RDG}(R))(a,a) > 0
+$$
 
 This gives a graded or moderated domain if Q-mode is active.
 
@@ -761,28 +761,28 @@ This gives a graded or moderated domain if Q-mode is active.
 
 Q-mode can refine domain by admissibility constraints:
 
-\[
-\operatorname{Dom}_{RDG}^{Q}(R) = \Gamma(\operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}}) \wedge I_A
-\]
+$$
+{Dom}_{RDG}^{Q}(R) = \Gamma({SID}(R) \circ {SID}(R)^{\mathrm{T}}) \wedge I_A
+$$
 
 where \(\Gamma\) is your moderation operator:  
 \(\Gamma\) filters structural pairs by dynamic admissibility.
 
 Thus:
 
-\[
-a \in \operatorname{dom}_Q(R) \iff a \text{ is structurally present AND } \Gamma \text{ admits the } (a,a) \text{ diagonal.}
-\]
+$$
+a \in {dom}_Q(R) \iff a \text{ is structurally present AND } \Gamma \text{ admits the } (a,a) \text{ diagonal.}
+$$
 
 ### FINAL FORM OF DOMAIN CONSTRUCTION
 
-\[
-\operatorname{Dom}_{RDG}(R) = (\operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}}) \wedge I_A
-\]
+$$
+{Dom}_{RDG}(R) = ({SID}(R) \circ {SID}(R)^{\mathrm{T}}) \wedge I_A
+$$
 
-\[
-\operatorname{Dom}_{RDG}^{Q}(R) = \Gamma(\operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}}) \wedge I_A
-\]
+$$
+{Dom}_{RDG}^{Q}(R) = \Gamma({SID}(R) \circ {SID}(R)^{\mathrm{T}}) \wedge I_A
+$$
 
 Classical domain is the SID-only version.  
 Moderated domain is the SID+Q version.  
@@ -809,8 +809,8 @@ Parallel Product           Shared Domain            Shared Codomain
 
 RDG decomposes every relation into:
 
-- \(\operatorname{SID}(R)\): structural arrow geometry
-- \(\operatorname{PED}(R)\): power/evaluation/dynamics field
+- \({SID}(R)\): structural arrow geometry
+- \({PED}(R)\): power/evaluation/dynamics field
 
 Translation requires mapping BOTH modes.
 
@@ -818,36 +818,36 @@ Translation requires mapping BOTH modes.
 
 **CLASSICAL:**
 
-\[
+$$
 (a,c)\ (R \otimes S)\ (b,d) \iff a\, R\, b \ \text{AND}\ c\, S\, d
-\]
+$$
 
 **SID-MODE TRANSLATION:**
 
-\[
-\operatorname{SID}(R \otimes S) = \operatorname{SID}(R) \times \operatorname{SID}(S)
-\]
+$$
+{SID}(R \otimes S) = {SID}(R) \times {SID}(S)
+$$
 
 Domain: \(A \times C\)  
 Codomain: \(B \times D\)
 
 Structural rule:
 
-\[
-(a,c) \to (b,d) \iff \operatorname{SID}(R)(a,b) = 1 \ \text{AND}\ \operatorname{SID}(S)(c,d) = 1
-\]
+$$
+(a,c) \to (b,d) \iff {SID}(R)(a,b) = 1 \ \text{AND}\ {SID}(S)(c,d) = 1
+$$
 
 **PED-MODE TRANSLATION:**
 
-\[
-\operatorname{PED}(R \otimes S) = \operatorname{PED}(R) \otimes \operatorname{PED}(S)
-\]
+$$
+{PED}(R \otimes S) = {PED}(R) \otimes {PED}(S)
+$$
 
 Evaluation rule:
 
-\[
-\operatorname{PED}(R \otimes S)((a,c),(b,d)) = \operatorname{PED}(R)(a,b) \cdot \operatorname{PED}(S)(c,d)
-\]
+$$
+{PED}(R \otimes S)((a,c),(b,d)) = {PED}(R)(a,b) \cdot {PED}(S)(c,d)
+$$
 
 **Interpretation:**  
 Kronecker = parallel evaluation flow on product geometry.
@@ -856,30 +856,30 @@ Kronecker = parallel evaluation flow on product geometry.
 
 **CLASSICAL:**
 
-\[
+$$
 a\ (R \pitchfork S)\ (b,c) \iff a\, R\, b \ \text{AND}\ a\, S\, c
-\]
+$$
 
 **SID-MODE TRANSLATION:**
 
-\[
-\operatorname{SID}(R \pitchfork S) = \operatorname{SID}(R) \wedge \operatorname{SID}(S) \quad \text{(synchronized domain)}
-\]
+$$
+{SID}(R \pitchfork S) = {SID}(R) \wedge {SID}(S) \quad \text{(synchronized domain)}
+$$
 
-Domain: \(\operatorname{dom}(R) \cap \operatorname{dom}(S)\)  
+Domain: \({dom}(R) \cap {dom}(S)\)  
 Codomain: \(B \times C\)
 
 Structural rule:
 
-\[
-a \to (b,c) \iff \operatorname{SID}(R)(a,b) = 1 \ \text{AND}\ \operatorname{SID}(S)(a,c) = 1
-\]
+$$
+a \to (b,c) \iff {SID}(R)(a,b) = 1 \ \text{AND}\ {SID}(S)(a,c) = 1
+$$
 
 **PED-MODE TRANSLATION:**
 
-\[
-\operatorname{PED}(R \pitchfork S)(a,(b,c)) = \operatorname{PED}(R)(a,b) \cdot \operatorname{PED}(S)(a,c)
-\]
+$$
+{PED}(R \pitchfork S)(a,(b,c)) = {PED}(R)(a,b) \cdot {PED}(S)(a,c)
+$$
 
 **Interpretation:**  
 Fork = paired outputs from a shared structural input, with PED multiplying the evaluation strengths.
@@ -888,30 +888,30 @@ Fork = paired outputs from a shared structural input, with PED multiplying the e
 
 **CLASSICAL:**
 
-\[
+$$
 (a,c)\ (R \curlyvee S)\ b \iff a\, R\, b \ \text{AND}\ c\, S\, b
-\]
+$$
 
 **SID-MODE TRANSLATION:**
 
-\[
-\operatorname{SID}(R \curlyvee S) = \operatorname{SID}(R) \times \operatorname{SID}(S) \quad \text{(synchronized codomain)}
-\]
+$$
+{SID}(R \curlyvee S) = {SID}(R) \times {SID}(S) \quad \text{(synchronized codomain)}
+$$
 
-Domain: \(\operatorname{dom}(R) \times \operatorname{dom}(S)\)  
-Codomain: \(\operatorname{cod}(R) \cap \operatorname{cod}(S)\)
+Domain: \({dom}(R) \times {dom}(S)\)  
+Codomain: \({cod}(R) \cap {cod}(S)\)
 
 Structural rule:
 
-\[
-(a,c) \to b \iff \operatorname{SID}(R)(a,b) = 1 \ \text{AND}\ \operatorname{SID}(S)(c,b) = 1
-\]
+$$
+(a,c) \to b \iff {SID}(R)(a,b) = 1 \ \text{AND}\ {SID}(S)(c,b) = 1
+$$
 
 **PED-MODE TRANSLATION:**
 
-\[
-\operatorname{PED}(R \curlyvee S)((a,c),b) = \operatorname{PED}(R)(a,b) \cdot \operatorname{PED}(S)(c,b)
-\]
+$$
+{PED}(R \curlyvee S)((a,c),b) = {PED}(R)(a,b) \cdot {PED}(S)(c,b)
+$$
 
 **Interpretation:**  
 Join = paired inputs converging to a shared structural output, with PED multiplying incoming evaluation flows.
@@ -920,33 +920,33 @@ Join = paired inputs converging to a shared structural output, with PED multiply
 
 **Converse duality:**
 
-\[
+$$
 (R \pitchfork S)^{\mathrm{T}} = R^{\mathrm{T}} \curlyvee S^{\mathrm{T}}
-\]
+$$
 
-\[
+$$
 (R \curlyvee S)^{\mathrm{T}} = R^{\mathrm{T}} \pitchfork S^{\mathrm{T}}
-\]
+$$
 
 **SID-level:**
 
-\[
-\operatorname{SID}((R \pitchfork S)^{\mathrm{T}}) = \operatorname{SID}(R^{\mathrm{T}}) \curlyvee \operatorname{SID}(S^{\mathrm{T}})
-\]
+$$
+{SID}((R \pitchfork S)^{\mathrm{T}}) = {SID}(R^{\mathrm{T}}) \curlyvee {SID}(S^{\mathrm{T}})
+$$
 
-\[
-\operatorname{SID}((R \curlyvee S)^{\mathrm{T}}) = \operatorname{SID}(R^{\mathrm{T}}) \pitchfork \operatorname{SID}(S^{\mathrm{T}})
-\]
+$$
+{SID}((R \curlyvee S)^{\mathrm{T}}) = {SID}(R^{\mathrm{T}}) \pitchfork {SID}(S^{\mathrm{T}})
+$$
 
 **PED-level:**
 
-\[
-\operatorname{PED}((R \pitchfork S)^{\mathrm{T}}) = \operatorname{PED}(R^{\mathrm{T}}) \cdot \operatorname{PED}(S^{\mathrm{T}})
-\]
+$$
+{PED}((R \pitchfork S)^{\mathrm{T}}) = {PED}(R^{\mathrm{T}}) \cdot {PED}(S^{\mathrm{T}})
+$$
 
-\[
-\operatorname{PED}((R \curlyvee S)^{\mathrm{T}}) = \operatorname{PED}(R^{\mathrm{T}}) \cdot \operatorname{PED}(S^{\mathrm{T}})
-\]
+$$
+{PED}((R \curlyvee S)^{\mathrm{T}}) = {PED}(R^{\mathrm{T}}) \cdot {PED}(S^{\mathrm{T}})
+$$
 
 ### INVARIANT SUMMARY
 
@@ -992,29 +992,29 @@ In the 7-mode substrate, these become:
 
 **Classical:**
 
-\[
-\operatorname{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
-\]
+$$
+{dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
+$$
 
 **7-mode translation:**
 
 - **SID-domain:**
 
-\[
-\operatorname{Dom}_{SID}(R) = (\operatorname{SID}(R) \circ \operatorname{SID}(R)^{\mathrm{T}}) \wedge I_A
-\]
+$$
+{Dom}_{SID}(R) = ({SID}(R) \circ {SID}(R)^{\mathrm{T}}) \wedge I_A
+$$
 
 - **PED-domain:**
 
-\[
-\operatorname{Dom}_{PED}(R)(a,a) = \operatorname{PED}(R)(a,*) \text{ aggregated}
-\]
+$$
+{Dom}_{PED}(R)(a,a) = {PED}(R)(a,*) \text{ aggregated}
+$$
 
 - **Q-domain:**
 
-\[
-\operatorname{Dom}_{Q}(R) = \Gamma(\operatorname{Dom}_{SID}(R))
-\]
+$$
+{Dom}_{Q}(R) = \Gamma({Dom}_{SID}(R))
+$$
 
 - **MFE-domain:** Local flux determines which domain nodes remain active.
 - **RME-domain:** Long-term survival score filters domain membership.
@@ -1027,14 +1027,14 @@ Domain is the diagonal SID-object, PED-weighted, Q-filtered, dynamically moderat
 
 **Classical mapping condition:**
 
-\[
+$$
 f^{\mathrm{T}} \cdot f \subseteq I_A
-\]
+$$
 
 **7-mode translation:**
 
-- **SID-mapping:** \(\operatorname{SID}(f^{\mathrm{T}}) \circ \operatorname{SID}(f) \subseteq I_A\)
-- **PED-mapping:** \(\operatorname{PED}(f)\) enforces single-valuedness via evaluation collapse.
+- **SID-mapping:** \({SID}(f^{\mathrm{T}}) \circ {SID}(f) \subseteq I_A\)
+- **PED-mapping:** \({PED}(f)\) enforces single-valuedness via evaluation collapse.
 - **Q-mapping:** \(\Gamma\) enforces admissibility of mapping constraints.
 - **MFE-mapping:** Flux polarity determines whether mapping is stable.
 - **RME-mapping:** Mapping is a fixed point of long-term evolution.
@@ -1047,14 +1047,14 @@ A mapping is a relation whose SID-geometry is left-unique, whose PED-field is si
 
 **Classical:**
 
-\[
+$$
 (a,c) \to (b,d) \iff a\, R\, b \ \text{AND}\ c\, S\, d
-\]
+$$
 
 **7-mode translation:**
 
-- **SID:** \(\operatorname{SID}(R \otimes S) = \operatorname{SID}(R) \times \operatorname{SID}(S)\)
-- **PED:** \(\operatorname{PED}(R \otimes S) = \operatorname{PED}(R) \otimes \operatorname{PED}(S)\)
+- **SID:** \({SID}(R \otimes S) = {SID}(R) \times {SID}(S)\)
+- **PED:** \({PED}(R \otimes S) = {PED}(R) \otimes {PED}(S)\)
 - **Q:** \(\Gamma(R \otimes S) = \Gamma(R) \times \Gamma(S)\)
 - **MFE:** Flux fields combine as tensor product of local dynamics.
 - **RME:** Global evolution acts componentwise on product geometry.
@@ -1067,14 +1067,14 @@ Kronecker = parallel structural/dynamic evolution on product spaces across all 7
 
 **Classical:**
 
-\[
+$$
 a \to (b,c) \iff a\, R\, b \ \text{AND}\ a\, S\, c
-\]
+$$
 
 **7-mode translation:**
 
-- **SID:** \(\operatorname{SID}(R \pitchfork S) = \operatorname{SID}(R) \wedge \operatorname{SID}(S)\) on shared domain
-- **PED:** \(\operatorname{PED}(R \pitchfork S)(a,(b,c)) = \operatorname{PED}(R)(a,b) \cdot \operatorname{PED}(S)(a,c)\)
+- **SID:** \({SID}(R \pitchfork S) = {SID}(R) \wedge {SID}(S)\) on shared domain
+- **PED:** \({PED}(R \pitchfork S)(a,(b,c)) = {PED}(R)(a,b) \cdot {PED}(S)(a,c)\)
 - **Q:** \(\Gamma\) enforces admissibility of paired outputs.
 - **MFE:** Flux splits into two outgoing channels from same node.
 - **RME:** Forked outputs contribute to long-term survival scoring.
@@ -1087,14 +1087,14 @@ Fork = synchronized multi-output relation with multiplicative PED evaluation and
 
 **Classical:**
 
-\[
+$$
 (a,c) \to b \iff a\, R\, b \ \text{AND}\ c\, S\, b
-\]
+$$
 
 **7-mode translation:**
 
-- **SID:** \(\operatorname{SID}(R \curlyvee S) = \operatorname{SID}(R) \times \operatorname{SID}(S)\) with codomain meet
-- **PED:** \(\operatorname{PED}(R \curlyvee S)((a,c),b) = \operatorname{PED}(R)(a,b) \cdot \operatorname{PED}(S)(c,b)\)
+- **SID:** \({SID}(R \curlyvee S) = {SID}(R) \times {SID}(S)\) with codomain meet
+- **PED:** \({PED}(R \curlyvee S)((a,c),b) = {PED}(R)(a,b) \cdot {PED}(S)(c,b)\)
 - **Q:** \(\Gamma\) filters admissible convergent inputs.
 - **MFE:** Flux convergence from two sources into shared output.
 - **RME:** Join contributes to global stability of shared codomain.
