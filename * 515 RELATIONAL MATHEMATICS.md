@@ -23,7 +23,7 @@ This is a pipeline, not a Boolean algebra. RA is the input grammar, not the fina
 
 ## **RA - RDG Table**
 
-| **Concept / Layer** | **Classical Relational Algebra (RA)** | **RDG / MFE / RME Overlay Framework** |
+| **Concept / Layer** | **Classical Relational Algebra (RA)** | **RDG / MFE / RME Framework** |
 |---|---|---|
 | **Foundational substrate** | Algebra of heterogeneous binary relations; composition, converse, identity, residuals, domain/codomain operators. | Uses RA as the underlying structural grammar; RA operators become primitives inside a dynamical ontology. |
 | **Primitive objects** | Sets, relations, partial identities, mappings, bijections. | SID triad (Structure–Interaction–Dynamics), PED triad (Power–Evaluation–Dynamics), Q‑moderation, agency operators. |
