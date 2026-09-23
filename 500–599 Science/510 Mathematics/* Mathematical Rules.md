@@ -80,7 +80,7 @@ $$
 n\ \frac{a}{b} = \frac{nb + a}{b}
 $$
 
-**Simplify:** divide numerator and denominator by their GCF.
+**Simplify:** divide numerator and denominator by their GCF (Greatest Common Factor).
 
 **Conversions**
 
