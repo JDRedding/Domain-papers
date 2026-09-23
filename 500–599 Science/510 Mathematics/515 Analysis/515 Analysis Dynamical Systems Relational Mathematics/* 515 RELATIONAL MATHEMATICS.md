@@ -31,16 +31,16 @@ Eliminates the need for explicit set comprehension.
 
 **Binary Mapping Calculus:** Characterizes functions as relations via left-uniqueness:
 
-A relation \(f\) is a mapping \(\iff f^{\mathrm{T}} \cdot f \subseteq I_A\)
+A relation $f$ is a mapping $\iff f^{\mathrm{T}} \cdot f \subseteq I_A$
 
 - Derives composition laws, factorization identities, and restriction operators
 - Treats functions as pure relational objects
 
 **Three Structured Operators:**
 
-- **Kronecker** \((R \otimes S)\): Parallel relational application on product spaces
-- **Strict Fork** \((R \pitchfork S)\): Synchronized multi-output from a shared domain
-- **Strict Join** \((R \curlyvee S)\): Synchronized multi-input converging to shared codomain
+- **Kronecker** $(R \otimes S)$: Parallel relational application on product spaces
+- **Strict Fork** $(R \pitchfork S)$: Synchronized multi-output from a shared domain
+- **Strict Join** $(R \curlyvee S)$: Synchronized multi-input converging to shared codomain
 
 This document presents a comprehensive technical framework extending classical relational algebra with three new structured operators and a complete calculus for binary relations.
 
@@ -62,9 +62,9 @@ Each operator (domain, mapping, fork, join, Kronecker) is translated across all 
 
 ## CORE OBJECTS
 
-- \(R\): arbitrary binary relation
-- \(A,B,C\): sets (domains/codomains)
-- \(f,g\): binary mappings (relations behaving like partial functions)
+- $R$: arbitrary binary relation
+- $A,B,C$: sets (domains/codomains)
+- $f,g$: binary mappings (relations behaving like partial functions)
 
 ```
 SID:           SID/RA/OPS
@@ -141,8 +141,8 @@ Domain/codomain operators are Γ-stable coarse-grained diagonals.
 ## DOMAIN CONSTRUCTION RESULTS
 
 - New purely relational formulae for:
-  - existential image: \({dom}(R)\cdot S\)
-  - inverse image: \(S\cdot{dom}(R^{\mathrm{T}})\)
+  - existential image: ${dom}(R)\cdot S$
+  - inverse image: $S\cdot{dom}(R^{\mathrm{T}})$
 
 - Emphasis: derive domain/codomain behavior from primitive relational operators (composition, converse, identity).
   - defining existential image purely relationally
@@ -156,17 +156,17 @@ $$
 {dom}(R) = R \cdot R^{\mathrm{T}} \cap I
 $$
 
-where \(I\) is identity on the domain.
+where $I$ is identity on the domain.
 
-Given a binary relation \(R \subseteq A \times B\):
+Given a binary relation $R \subseteq A \times B$:
 
-Extract the set of all \(a \in A\) for which there exists \(b \in B\) such that \((a, b) \in R\) — using only relational operators.
+Extract the set of all $a \in A$ for which there exists $b \in B$ such that $(a, b) \in R$ — using only relational operators.
 
 ### PRIMITIVE OPERATORS
 
-- \(R^{\mathrm{T}}\): converse (flip pairs)
-- \(R \cdot S\): relational composition
-- \(I_A\): identity relation on \(A\)
+- $R^{\mathrm{T}}$: converse (flip pairs)
+- $R \cdot S$: relational composition
+- $I_A$: identity relation on $A$
 
 ### RELATIONAL FORMULA FOR THE DOMAIN
 
@@ -176,15 +176,15 @@ $$
 
 **Explanation:**
 
-- \(R \cdot R^{\mathrm{T}}\) yields all pairs \((a, a')\) that share some \(b\) via \(R\).
-- Intersecting with \(I_A\) keeps only \((a, a)\).
-- The set of such \(a\) is the domain of \(R\).
+- $R \cdot R^{\mathrm{T}}$ yields all pairs $(a, a')$ that share some $b$ via $R$.
+- Intersecting with $I_A$ keeps only $(a, a)$.
+- The set of such $a$ is the domain of $R$.
 
 ### STRUCTURAL INVARIANTS
 
-- \({dom}(R)\) is itself a relation: a subset of \(I_A\).
-- \({dom}(R)\) is idempotent: \({dom}({dom}(R)) = {dom}(R)\).
-- \({dom}(R)\) respects composition:
+- ${dom}(R)$ is itself a relation: a subset of $I_A$.
+- ${dom}(R)$ is idempotent: ${dom}({dom}(R)) = {dom}(R)$.
+- ${dom}(R)$ respects composition:
 
 $$
 {dom}(R \cdot S) \subseteq {dom}(R)
@@ -194,7 +194,7 @@ $$
 
 ## CALCULUS FOR BINARY MAPPINGS
 
-Let \(f \subseteq A \times B\) be a binary relation.
+Let $f \subseteq A \times B$ be a binary relation.
 
 A "binary mapping" is a relation that behaves like a (partial) function.
 
@@ -220,17 +220,17 @@ mappings = relations with left-uniqueness constraint.
 
 ### CHARACTERIZATION OF MAPPINGS
 
-A relation \(f\) is a (partial) mapping \(\iff f^{\mathrm{T}} \cdot f \subseteq I_A\)
+A relation $f$ is a (partial) mapping $\iff f^{\mathrm{T}} \cdot f \subseteq I_A$
 
 **Meaning:**
 
-- \(f^{\mathrm{T}} \cdot f\) contains all pairs \((a, a')\) that map to a common \(b\).
-- Requiring \(f^{\mathrm{T}} \cdot f \subseteq I_A\) enforces left-uniqueness:  
-  if \((a, b) \in f\) and \((a', b) \in f\) then \(a = a'\).
+- $f^{\mathrm{T}} \cdot f$ contains all pairs $(a, a')$ that map to a common $b$.
+- Requiring $f^{\mathrm{T}} \cdot f \subseteq I_A$ enforces left-uniqueness:  
+  if $(a, b) \in f$ and $(a', b) \in f$ then $a = a'$.
 
 **Consequence:**
 
-- Each \(a \in A\) maps to at most one \(b \in B\).
+- Each $a \in A$ maps to at most one $b \in B$.
 
 ### TOTALITY AND PARTIALITY
 
@@ -254,13 +254,13 @@ $$
 
 ### CODOMAIN & IMAGE
 
-**Image of \(X\) under \(f\):**
+**Image of $X$ under $f$:**
 
 $$
 f[X] = {dom}(X \cdot f^{\mathrm{T}})
 $$
 
-**Inverse image of \(Y\):**
+**Inverse image of $Y$:**
 
 $$
 f^{-1}[Y] = {dom}(f \cdot Y^{\mathrm{T}})
@@ -270,7 +270,7 @@ These formulae are derived purely relationally (no set comprehension).
 
 ### COMPOSITION OF MAPPINGS
 
-If \(f : A \to B\) and \(g : B \to C\) are mappings, then:
+If $f : A \to B$ and $g : B \to C$ are mappings, then:
 
 $$
 g \cdot f \text{ is a mapping}
@@ -318,7 +318,7 @@ $$
 
 ### FACTORIZATION IDENTITIES
 
-Every mapping \(f\) can be factored relationally:
+Every mapping $f$ can be factored relationally:
 
 $$
 f = ({dom}(f)) \cdot f = f \cdot ({cod}(f))
@@ -362,19 +362,19 @@ $$
 
 Three major operators receive full algebraic treatment:
 
-**(a) Kronecker operator \((\otimes)\)**
+**(a) Kronecker operator $(\otimes)$**
 
 - Relational analogue of tensor-like product.
 - Combines two relations into a structured block relation.
 - Supports distributive and associative laws.
 
-**(b) Strict Fork operator \((\pitchfork)\)**
+**(b) Strict Fork operator $(\pitchfork)$**
 
 - Combines relations sharing a domain.
 - Produces a relation whose codomain is a product.
 - Useful for parallel composition of mappings.
 
-**(c) Strict Join operator \((\curlyvee)\)**
+**(c) Strict Join operator $(\curlyvee)$**
 
 - Dual of strict fork.
 - Combines relations sharing a codomain.
@@ -392,14 +392,14 @@ Kronecker | Strict Fork | Strict Join
 - Support diagrammatic reasoning and categorical interpretations.
 - Form the backbone of parallel and product-style relational constructions in formal methods.
 
-Let \(R \subseteq A \times B\) and \(S \subseteq C \times D\) be arbitrary relations.
+Let $R \subseteq A \times B$ and $S \subseteq C \times D$ be arbitrary relations.
 
 These operators build composite relations with synchronized domain/codomain behavior.
 
-### KRONECKER OPERATOR \((R \otimes S)\)
+### KRONECKER OPERATOR $(R \otimes S)$
 
 **Purpose:**  
-Combine two relations into a "block" relation whose domain is \(A \times C\) and codomain is \(B \times D\).
+Combine two relations into a "block" relation whose domain is $A \times C$ and codomain is $B \times D$.
 
 **Definition (conceptual):**
 
@@ -409,8 +409,8 @@ $$
 
 **Structural properties:**
 
-- Domain: \({dom}(R \otimes S) = {dom}(R) \times {dom}(S)\)
-- Codomain: \({cod}(R \otimes S) = {cod}(R) \times {cod}(S)\)
+- Domain: ${dom}(R \otimes S) = {dom}(R) \times {dom}(S)$
+- Codomain: ${cod}(R \otimes S) = {cod}(R) \times {cod}(S)$
 - Composition distributes:
 
 $$
@@ -426,10 +426,10 @@ $$
 **Interpretation:**  
 Kronecker = parallel relational application on product spaces.
 
-### STRICT FORK OPERATOR \((R \pitchfork S)\)
+### STRICT FORK OPERATOR $(R \pitchfork S)$
 
 **Purpose:**  
-Combine two relations that share the SAME domain \(A\) but may have different codomains \(B\) and \(C\).
+Combine two relations that share the SAME domain $A$ but may have different codomains $B$ and $C$.
 
 **Definition (conceptual):**
 
@@ -439,9 +439,9 @@ $$
 
 **Structural properties:**
 
-- Domain: \({dom}(R \pitchfork S) = {dom}(R) \cap {dom}(S)\)
-- Codomain: \({cod}(R \pitchfork S) = {cod}(R) \times {cod}(S)\)
-- Mapping behavior: If \(R\) and \(S\) are mappings, \(R \pitchfork S\) is a mapping into \(B \times C\).
+- Domain: ${dom}(R \pitchfork S) = {dom}(R) \cap {dom}(S)$
+- Codomain: ${cod}(R \pitchfork S) = {cod}(R) \times {cod}(S)$
+- Mapping behavior: If $R$ and $S$ are mappings, $R \pitchfork S$ is a mapping into $B \times C$.
 
 **Interpretation:**  
 Strict fork = synchronized output pairing from a shared input.
@@ -458,10 +458,10 @@ becomes
 A ──(R ⋔ S)──▶ B × C
 ```
 
-### STRICT JOIN OPERATOR \((R \curlyvee S)\)
+### STRICT JOIN OPERATOR $(R \curlyvee S)$
 
 **Purpose:**  
-Dual of strict fork: combine relations that share the SAME codomain \(B\) but may have different domains \(A\) and \(C\).
+Dual of strict fork: combine relations that share the SAME codomain $B$ but may have different domains $A$ and $C$.
 
 **Definition (conceptual):**
 
@@ -471,8 +471,8 @@ $$
 
 **Structural properties:**
 
-- Domain: \({dom}(R \curlyvee S) = {dom}(R) \times {dom}(S)\)
-- Codomain: \({cod}(R \curlyvee S) = {cod}(R) \cap {cod}(S)\)
+- Domain: ${dom}(R \curlyvee S) = {dom}(R) \times {dom}(S)$
+- Codomain: ${cod}(R \curlyvee S) = {cod}(R) \cap {cod}(S)$
 - Converse duality:
 
 $$
@@ -516,7 +516,7 @@ $$
 
 ### Relation as a directed bipartite graph
 
-A binary relation \(R \subseteq A \times B\) can be visualized as arrows from elements of \(A\) to elements of \(B\).
+A binary relation $R \subseteq A \times B$ can be visualized as arrows from elements of $A$ to elements of $B$.
 
 ```
 A-domain                 B-codomain
@@ -527,7 +527,7 @@ A-domain                 B-codomain
    a3 ---------> b3
 ```
 
-### Converse \(R^{\mathrm{T}}\)
+### Converse $R^{\mathrm{T}}$
 
 Flip all arrows.
 
@@ -538,7 +538,7 @@ a2 ---> b1           b1 ---> a2
 a3 ---> b3           b3 ---> a3
 ```
 
-### Composition \(R \cdot S\)
+### Composition $R \cdot S$
 
 Follow arrows through an intermediate set.
 
@@ -553,7 +553,7 @@ a1 ---> c3
 a2 ---> c1
 ```
 
-### Kronecker \(R \otimes S\)
+### Kronecker $R \otimes S$
 
 Parallel application on product domains.
 
@@ -573,7 +573,7 @@ B: b1,b2        D: d1,d2
 (a2,c2) ---> (b1,d2)
 ```
 
-### Strict Fork \(R \pitchfork S\)
+### Strict Fork $R \pitchfork S$
 
 Two relations share the same domain, outputs paired.
 
@@ -595,7 +595,7 @@ Then:
 a1 ---> (b2, c3)
 ```
 
-### Strict Join \(R \curlyvee S\)
+### Strict Join $R \curlyvee S$
 
 Two relations share the same codomain, inputs paired.
 
@@ -648,7 +648,7 @@ b1, b2
   - database theory
   - category-inspired relational reasoning
 
-Given a relation \(R \subseteq A \times B\):
+Given a relation $R \subseteq A \times B$:
 
 $$
 {dom}(R) = (R \cdot R^{\mathrm{T}}) \cap I_A
@@ -656,15 +656,15 @@ $$
 
 where:
 
-- \(\cdot\) = relational composition
-- \(R^{\mathrm{T}}\) = converse
-- \(I_A\) = identity on \(A\)
+- $\cdot$ = relational composition
+- $R^{\mathrm{T}}$ = converse
+- $I_A$ = identity on $A$
 
 ### PRIMITIVE STRUCTURE
 
 RDG treats every relation as a tri-mode object:
 
-- \(R\): (SID-mode) structural relation
+- $R$: (SID-mode) structural relation
 - (PED-mode) power/evaluation/dynamics slice
 - (Q-mode) moderation / admissibility
 
@@ -715,7 +715,7 @@ $$
 {SID}(X) \wedge {SID}(Y) = \text{structural meet (same as } \cap\text{)}
 $$
 
-Thus classical \(R \cdot R^{\mathrm{T}}\) becomes:
+Thus classical $R \cdot R^{\mathrm{T}}$ becomes:
 
 $$
 {SID}(R) \circ {SID}(R)^{\mathrm{T}}
@@ -737,8 +737,8 @@ $$
 
 **Interpretation:**
 
-- \({SID}(R) \circ {SID}(R)^{\mathrm{T}}\) produces all structurally reachable self-pairs \((a,a')\) via some \(b\).
-- Meeting with \(I_A\) collapses to diagonal \((a,a)\).
+- ${SID}(R) \circ {SID}(R)^{\mathrm{T}}$ produces all structurally reachable self-pairs $(a,a')$ via some $b$.
+- Meeting with $I_A$ collapses to diagonal $(a,a)$.
 - The diagonal entries encode the domain elements.
 
 ### PED-MODE CONSEQUENCE
@@ -765,8 +765,8 @@ $$
 {Dom}_{RDG}^{Q}(R) = \Gamma({SID}(R) \circ {SID}(R)^{\mathrm{T}}) \wedge I_A
 $$
 
-where \(\Gamma\) is your moderation operator:  
-\(\Gamma\) filters structural pairs by dynamic admissibility.
+where $\Gamma$ is your moderation operator:  
+$\Gamma$ filters structural pairs by dynamic admissibility.
 
 Thus:
 
@@ -792,9 +792,9 @@ PED annotates but does not change the structural domain.
 
 Classical relational algebra defines three structured operators:
 
-- Kronecker \(R \otimes S\)
-- Strict Fork \(R \pitchfork S\)
-- Strict Join \(R \curlyvee S\)
+- Kronecker $R \otimes S$
+- Strict Fork $R \pitchfork S$
+- Strict Join $R \curlyvee S$
 
 ```
 KRONECKER (⊗)            STRICT FORK (⋔)           STRICT JOIN (⋎)
@@ -809,12 +809,12 @@ Parallel Product           Shared Domain            Shared Codomain
 
 RDG decomposes every relation into:
 
-- \({SID}(R)\): structural arrow geometry
-- \({PED}(R)\): power/evaluation/dynamics field
+- ${SID}(R)$: structural arrow geometry
+- ${PED}(R)$: power/evaluation/dynamics field
 
 Translation requires mapping BOTH modes.
 
-### KRONECKER OPERATOR \((R \otimes S)\)
+### KRONECKER OPERATOR $(R \otimes S)$
 
 **CLASSICAL:**
 
@@ -828,8 +828,8 @@ $$
 {SID}(R \otimes S) = {SID}(R) \times {SID}(S)
 $$
 
-Domain: \(A \times C\)  
-Codomain: \(B \times D\)
+Domain: $A \times C$  
+Codomain: $B \times D$
 
 Structural rule:
 
@@ -852,7 +852,7 @@ $$
 **Interpretation:**  
 Kronecker = parallel evaluation flow on product geometry.
 
-### STRICT FORK OPERATOR \((R \pitchfork S)\)
+### STRICT FORK OPERATOR $(R \pitchfork S)$
 
 **CLASSICAL:**
 
@@ -866,8 +866,8 @@ $$
 {SID}(R \pitchfork S) = {SID}(R) \wedge {SID}(S) \quad \text{(synchronized domain)}
 $$
 
-Domain: \({dom}(R) \cap {dom}(S)\)  
-Codomain: \(B \times C\)
+Domain: ${dom}(R) \cap {dom}(S)$  
+Codomain: $B \times C$
 
 Structural rule:
 
@@ -884,7 +884,7 @@ $$
 **Interpretation:**  
 Fork = paired outputs from a shared structural input, with PED multiplying the evaluation strengths.
 
-### STRICT JOIN OPERATOR \((R \curlyvee S)\)
+### STRICT JOIN OPERATOR $(R \curlyvee S)$
 
 **CLASSICAL:**
 
@@ -898,8 +898,8 @@ $$
 {SID}(R \curlyvee S) = {SID}(R) \times {SID}(S) \quad \text{(synchronized codomain)}
 $$
 
-Domain: \({dom}(R) \times {dom}(S)\)  
-Codomain: \({cod}(R) \cap {cod}(S)\)
+Domain: ${dom}(R) \times {dom}(S)$  
+Codomain: ${cod}(R) \cap {cod}(S)$
 
 Structural rule:
 
@@ -1018,7 +1018,7 @@ $$
 
 - **MFE-domain:** Local flux determines which domain nodes remain active.
 - **RME-domain:** Long-term survival score filters domain membership.
-- **AUT-domain:** Domain is invariant under automorphisms preserving \(A\).
+- **AUT-domain:** Domain is invariant under automorphisms preserving $A$.
 
 **Interpretation:**  
 Domain is the diagonal SID-object, PED-weighted, Q-filtered, dynamically moderated by MFE, globally stabilized by RME.
@@ -1033,9 +1033,9 @@ $$
 
 **7-mode translation:**
 
-- **SID-mapping:** \({SID}(f^{\mathrm{T}}) \circ {SID}(f) \subseteq I_A\)
-- **PED-mapping:** \({PED}(f)\) enforces single-valuedness via evaluation collapse.
-- **Q-mapping:** \(\Gamma\) enforces admissibility of mapping constraints.
+- **SID-mapping:** ${SID}(f^{\mathrm{T}}) \circ {SID}(f) \subseteq I_A$
+- **PED-mapping:** ${PED}(f)$ enforces single-valuedness via evaluation collapse.
+- **Q-mapping:** $\Gamma$ enforces admissibility of mapping constraints.
 - **MFE-mapping:** Flux polarity determines whether mapping is stable.
 - **RME-mapping:** Mapping is a fixed point of long-term evolution.
 - **AUT-mapping:** Mapping constraints preserved under domain automorphisms.
@@ -1043,7 +1043,7 @@ $$
 **Interpretation:**  
 A mapping is a relation whose SID-geometry is left-unique, whose PED-field is single-valued, and whose Q/MFE/RME layers stabilize that uniqueness across time.
 
-### KRONECKER OPERATOR \((R \otimes S)\)
+### KRONECKER OPERATOR $(R \otimes S)$
 
 **Classical:**
 
@@ -1053,9 +1053,9 @@ $$
 
 **7-mode translation:**
 
-- **SID:** \({SID}(R \otimes S) = {SID}(R) \times {SID}(S)\)
-- **PED:** \({PED}(R \otimes S) = {PED}(R) \otimes {PED}(S)\)
-- **Q:** \(\Gamma(R \otimes S) = \Gamma(R) \times \Gamma(S)\)
+- **SID:** ${SID}(R \otimes S) = {SID}(R) \times {SID}(S)$
+- **PED:** ${PED}(R \otimes S) = {PED}(R) \otimes {PED}(S)$
+- **Q:** $\Gamma(R \otimes S) = \Gamma(R) \times \Gamma(S)$
 - **MFE:** Flux fields combine as tensor product of local dynamics.
 - **RME:** Global evolution acts componentwise on product geometry.
 - **AUT:** Automorphisms act as product automorphisms.
@@ -1063,7 +1063,7 @@ $$
 **Interpretation:**  
 Kronecker = parallel structural/dynamic evolution on product spaces across all 7 modes.
 
-### STRICT FORK OPERATOR \((R \pitchfork S)\)
+### STRICT FORK OPERATOR $(R \pitchfork S)$
 
 **Classical:**
 
@@ -1073,9 +1073,9 @@ $$
 
 **7-mode translation:**
 
-- **SID:** \({SID}(R \pitchfork S) = {SID}(R) \wedge {SID}(S)\) on shared domain
-- **PED:** \({PED}(R \pitchfork S)(a,(b,c)) = {PED}(R)(a,b) \cdot {PED}(S)(a,c)\)
-- **Q:** \(\Gamma\) enforces admissibility of paired outputs.
+- **SID:** ${SID}(R \pitchfork S) = {SID}(R) \wedge {SID}(S)$ on shared domain
+- **PED:** ${PED}(R \pitchfork S)(a,(b,c)) = {PED}(R)(a,b) \cdot {PED}(S)(a,c)$
+- **Q:** $\Gamma$ enforces admissibility of paired outputs.
 - **MFE:** Flux splits into two outgoing channels from same node.
 - **RME:** Forked outputs contribute to long-term survival scoring.
 - **AUT:** Domain automorphisms preserve fork structure.
@@ -1083,7 +1083,7 @@ $$
 **Interpretation:**  
 Fork = synchronized multi-output relation with multiplicative PED evaluation and dual-channel MFE flux.
 
-### STRICT JOIN OPERATOR \((R \curlyvee S)\)
+### STRICT JOIN OPERATOR $(R \curlyvee S)$
 
 **Classical:**
 
@@ -1093,9 +1093,9 @@ $$
 
 **7-mode translation:**
 
-- **SID:** \({SID}(R \curlyvee S) = {SID}(R) \times {SID}(S)\) with codomain meet
-- **PED:** \({PED}(R \curlyvee S)((a,c),b) = {PED}(R)(a,b) \cdot {PED}(S)(c,b)\)
-- **Q:** \(\Gamma\) filters admissible convergent inputs.
+- **SID:** ${SID}(R \curlyvee S) = {SID}(R) \times {SID}(S)$ with codomain meet
+- **PED:** ${PED}(R \curlyvee S)((a,c),b) = {PED}(R)(a,b) \cdot {PED}(S)(c,b)$
+- **Q:** $\Gamma$ filters admissible convergent inputs.
 - **MFE:** Flux convergence from two sources into shared output.
 - **RME:** Join contributes to global stability of shared codomain.
 - **AUT:** Codomain automorphisms preserve join structure.
