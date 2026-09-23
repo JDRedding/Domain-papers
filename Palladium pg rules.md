@@ -11,16 +11,16 @@ Used across most Palladium RPGs (*Rifts*, *Heroes Unlimited*, *Palladium Fantasy
 ### Attributes (8)
 Roll 3d6 for each attribute (humans). A result of 16+ lets you add another d6; a 6 on that extra die can add one more.
 
-**Attributes:** IQ, ME, MA, PS, PP, PE, PB, Spd.
-
-High scores (usually 16–17+) grant bonuses such as skill percentage, strike/parry/dodge, damage, charm/impress, or trust/intimidate. Low scores generally do not impose mechanical penalties.
-
 ## Core Dice Mechanics
 
 - **Skill checks (percentile):** Roll d100 ≤ skill% to succeed.
 - **Combat rolls (d20):** Roll d20 + bonuses ≥ target to hit.
 - **Saving throws (d20):** Roll d20 + bonuses ≥ save target (varies by effect).
 - **Damage:** Roll weapon dice (d4/d6/d8/d10) and apply to HP, SDC, or MDC.
+
+**Attributes:** IQ, ME, MA, PS, PP, PE, PB, Spd.
+
+High scores (usually 16–17+) grant bonuses such as skill percentage, strike/parry/dodge, damage, charm/impress, or trust/intimidate. Low scores generally do not impose mechanical penalties.
 
 ## Attributes (3d6 baseline for humans)
 
