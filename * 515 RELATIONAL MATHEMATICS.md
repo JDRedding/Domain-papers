@@ -1,6 +1,6 @@
 # RELATIONAL MATHEMATICS
 **/500–599 Science / 510 Mathematics / 515 Analysis / 515.3 Dynamical Systems / 515.38 Relational Mathematics/**  
-**/500–599 Science / 510 Mathematics / 515.3 Dynamical Systems / 511.37 Algebraic Logic (Relation Algebra)/**   
+- 511.37 Algebraic Logic (Relation Algebra)   
 
 A technical document collecting results on binary relations, domain constructions, mapping calculus, and structured relational operators. This is a relational‑first ontology with Boolean SID, weighted PED, moderated Q, flux‑based MFE, evolutionary RME, coarse‑grained Γ, and symmetry AUT. The classical components — domain laws, binary mappings, and Kronecker / strict fork / strict join — are standard from relational algebra, primarily following Schmidt and Winter’s *Relational Mathematics* (2011) and *Relational Mathematics Continued* (2014). In replacing the classical material, this document introduces a new conceptual layer: the *7‑mode diagrams*, *SID/PED triads*, *Q‑moderation*, *Momentum Flux Engine*, *Redding’s Master Equation*, *Γ coarse‑graining*, *AUT*, *RDG*, and *TRUE*: 
 
