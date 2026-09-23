@@ -1,7 +1,13 @@
 # RELATIONAL MATHEMATICS
-/500–599 Science/510 Mathematics/515 Analysis/515 Analysis Dynamical Systems Relational Mathematics/
+**/500–599 Science / 510 Mathematics / 515 Analysis / 515.3 Dynamical Systems / 515.38 Relational Mathematics/**
 
-A technical document on Relational Mathematics collecting algebraic results on binary relations, domain constructions, mapping calculus, and structured relational operators.  The 7‑mode diagrams, SID/PED triads, Q‑moderation, MFE, RME, Γ, AUT, RDG, TRUE, etc., are your own conceptual layer, are new parts of relational mathematics. The classical mathematical parts (domain laws, binary mappings, Kronecker/fork/join) are from standard relational algebra, and mathematical core is a restatement of Schmidt/Winter. The relational‑first ontology is not part of Schmidt/Winter, and does not claim to prove new RA identities. It’s a meta‑framework built on top of relational algebra. The overlay is fresh theoretical framework, not a new relational‑algebra result.
+A technical document collecting algebraic results on binary relations, domain constructions, mapping calculus, and structured relational operators. These classical components—domain laws, binary mappings, and Kronecker / strict fork / strict join—are standard results from relational algebra, primarily following Schmidt and Winter’s *Relational Mathematics* (2011) and *Relational Mathematics Continued* (2014).
+
+In addition to the classical material, this document introduces a new conceptual layer: the **7‑mode diagrams**, **SID/PED triads**, **Q‑moderation**, **Momentum Flux Engine**, **Redding’s Master Equation**, **Γ coarse‑graining**, **AUT**, **RDG**, and **TRUE**.  
+
+These constructs form a **relational‑first ontology** and constitute a fresh theoretical framework built on top of relational algebra. They do **not** appear in Schmidt/Winter and do **not** claim to establish new relation‑algebraic identities. Instead, they provide a meta‑framework that interprets classical relational operators within a dynamical, structural, and agency‑oriented system.
+
+---
 
 ## Core Contributions
 
