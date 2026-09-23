@@ -48,7 +48,7 @@ Multiply/divide are the same rank. Add/subtract are the same rank.
 
 ## Fraction Rules
 
-From the [Online Fractions Calculator cheat sheet](https://onlinefractionscalculator.com/fraction-rules-cheat-sheet/): add/subtract need matching denominators; multiply goes straight across; divide by inverting the second fraction.
+Add/subtract need matching denominators; multiply goes straight across; divide by inverting the second fraction.
 
 **Same denominator**
 
