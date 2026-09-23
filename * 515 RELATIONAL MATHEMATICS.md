@@ -38,7 +38,7 @@ This is a pipeline, not a Boolean algebra. RA is the input grammar, not the fina
 | **Kronecker / fork / join** | Standard structured relational operators from Schmidt/Winter. | Reinterpreted as multi‑mode structural couplings inside 7‑mode diagrams. |
 | **Semantics** | Purely algebraic; no dynamics, agency, or temporal evolution. | Dynamical, agent‑oriented, flux‑based; embeds RA inside RME (Redding’s Master Equation). |
 | **Purpose** | Formal manipulation of relations; proofs of algebraic identities. | A relational‑first ontology for modeling systems, agency, evaluation, and dynamical structure. |
-| **Status** | Fully classical literature (Schmidt 2011, Schmidt–Winter 2014). | New theoretical framework; new identities. |
+| **Status** | Fully classical literature (Schmidt 2011, Schmidt–Winter 2014). | New theoretical framework; no new RA identities. |
 
 ---
 
