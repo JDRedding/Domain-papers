@@ -1,4 +1,5 @@
 # RELATIONAL MATHEMATICS
+/500–599 Science/510 Mathematics/515 Analysis/515 Analysis Dynamical Systems Relational Mathematics/
 
 A technical document on Relational Mathematics collecting algebraic results on binary relations, domain constructions, mapping calculus, and structured relational operators.
 
