@@ -1,5 +1,5 @@
 # Palladium pg rule
-**One-page core rules summary for the Palladium Megaversal system**  
+**Page core rules summary for the Palladium Megaversal system**  
 (Used across *Rifts*, *Palladium Fantasy*, *Heroes Unlimited*, *After the Bomb*, and related lines.)
 
 This is a compact reference, not a substitute for the books. Palladium emphasizes GM rulings over exhaustive codification. The Megaversal system uses roll-under percentile skills, roll-high d20 combat and saves, and HP/SDC/MDC damage tracks. It is built around eight attributes and class-based abilities. This is a compact, table-ready summary of the system’s universal mechanics.
