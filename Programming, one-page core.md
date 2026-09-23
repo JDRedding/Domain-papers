@@ -331,7 +331,7 @@ Defect density:
 $$
 \mathrm{DD}=\frac{\{No.}\text{ defects}}{\mathrm{KLOC}}
 \quad\text{or}\quad
-\frac{\{No.}\text{ defects}}{\#\text{ modules}}
+\frac{\{No.}\text{ defects}}{\{No.}\text{ modules}}
 $$
 
 ---
