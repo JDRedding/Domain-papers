@@ -245,7 +245,7 @@ mappings = relations with left-uniqueness constraint.
 
 ### CHARACTERIZATION OF MAPPINGS
 
-A relation $f$ is a (partial) mapping $\iff f^{\mathrm{T}} \cdot f \subseteq I_A$
+A relation $f$ is a (partial) mapping $\iff f^{\mathrm{T}} \cdot f \subseteq I_B$
 
 **Meaning**
 
