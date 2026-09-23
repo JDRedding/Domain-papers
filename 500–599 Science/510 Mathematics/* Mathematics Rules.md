@@ -1,6 +1,6 @@
 # Mathematics Rules
 ## What Understanding the Rules Means
-These are tools, not magic words. The Common Core State Standards say a hallmark of mathematical understanding is being able to justify, at an age-appropriate level, why a statement is true or where a rule comes from—not only recalling a mnemonic. Procedural skill and and understanding both matter. 
+These are tools, not magic words. Standards say a hallmark of mathematical understanding is being able to justify, at an age-appropriate level, why a statement is true or where a rule comes from—not only recalling a mnemonic. Procedural skill and and understanding both matter. 
 
 ## Number Types
 - **Natural numbers:** $1, 2, 3, \ldots$ (some texts include $0$)
