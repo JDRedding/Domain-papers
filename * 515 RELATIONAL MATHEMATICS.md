@@ -83,6 +83,14 @@ The framework embeds classical relational algebra into a richer 7-layer structur
 
 Each operator (domain, mapping, fork, join, Kronecker) is translated across all seven modes, enabling rigorous treatment of formal methods, program semantics, and category-theoretic relational reasoning.
 
+| Layer | Status |
+|---|---|
+| SID | Ordinary relation labels (the graph of pairs). No new operations. |
+| PED | Treats relations as weighted and multiplies weights. That is an algebra (fuzzy / probabilistic / residuated), but not Boolean relation algebra. |
+| Q, Γ | Admissibility / coarse-graining filters |
+| MFE, RME | Dynamic flux, evolution, master equation. Not relation-algebraic operators. |
+| AUT | Domain invariant under automorphism |
+
 ---
 
 ## CORE OBJECTS
