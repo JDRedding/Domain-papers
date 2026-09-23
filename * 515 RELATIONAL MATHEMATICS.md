@@ -1,9 +1,11 @@
 # RELATIONAL MATHEMATICS
 **/500–599 Science / 510 Mathematics / 515 Analysis / 515.3 Dynamical Systems / 515.38 Relational Mathematics/**
 
-A technical document collecting algebraic results on binary relations, domain constructions, mapping calculus, and structured relational operators. These classical components—domain laws, binary mappings, and Kronecker / strict fork / strict join—are standard results from relational algebra, primarily following Schmidt and Winter’s *Relational Mathematics* (2011) and *Relational Mathematics Continued* (2014). In addition to the classical material, this document introduces a new conceptual layer: the *7‑mode diagrams*, *SID/PED triads*, *Q‑moderation*, *Momentum Flux Engine*, *Redding’s Master Equation*, *Γ coarse‑graining*, *AUT*, *RDG*, and *TRUE*.  
+A technical document collecting algebraic results on binary relations, domain constructions, mapping calculus, and structured relational operators. This is a relational‑first ontology with Boolean SID, weighted PED, moderated Q, flux‑based MFE, evolutionary RME, coarse‑grained Γ, and symmetry AUT.
 
-These constructs form a **relational‑first ontology** and constitute a fresh theoretical framework built on top of relational algebra. They do **not** appear in Schmidt/Winter and do **not** claim to establish new relation‑algebraic identities. Instead, they provide a meta‑framework that interprets classical relational operators within a dynamical, structural, and agency‑oriented system.
+These classical components—domain laws, binary mappings, and Kronecker / strict fork / strict join—are standard results from relational algebra, primarily following Schmidt and Winter’s *Relational Mathematics* (2011) and *Relational Mathematics Continued* (2014). In replaing the classical material, this document introduces a new conceptual layer: the *7‑mode diagrams*, *SID/PED triads*, *Q‑moderation*, *Momentum Flux Engine*, *Redding’s Master Equation*, *Γ coarse‑graining*, *AUT*, *RDG*, and *TRUE*.  
+
+These constructs form a **relational‑first ontology** and constitute a fresh theoretical framework built on top of relational algebra. They do **not** appear in Schmidt/Winter. Instead, they provide a meta‑framework that interprets classical relational operators within a dynamical, structural, and agency‑oriented system.
 
 ---
 
@@ -253,65 +255,17 @@ mappings = relations with left-uniqueness constraint.
 
 ### CHARACTERIZATION OF MAPPINGS
 
-A relation $f$ is a (partial) mapping $\iff f^{\mathrm{T}} \cdot f \subseteq I_B$
+A relation $f$ is a (partial) mapping $\iff f^{\mathrm{T}} \cdot f \subseteq I_A$
 
-**Meaning**
+**Meaning:**
 
-- **fᵀ · f** relates **pairs of images** $(b, b')$ that come from a common source $a$.  
-- Requiring
-   
-$$
-f^{\mathrm{T}} \cdot f \subseteq I_B
-$$
-  
-  enforces **univalence**:  
-  if $(a, b) \in f$ and $(a, b') \in f$, then $b = b'$.
+- $f^{\mathrm{T}} \cdot f$ contains all pairs $(a, a')$ that map to a common $b$.
+- Requiring $f^{\mathrm{T}} \cdot f \subseteq I_A$ enforces left-uniqueness:  
+  if $(a, b) \in f$ and $(a', b) \in f$ then $a = a'$.
 
-Let $f \subseteq A \times B$.  
-Composition is left‑to‑right:
+**Consequence:**
 
-$$
-(a,c) \in R\cdot S \iff \exists b.\,(a,b)\in R \land (b,c)\in S.
-$$
-
-**Univalence (partial function):**
-
-$$
-f^{\mathrm{T}} \cdot f \subseteq I_B.
-$$
-
-This ensures each $a \in A$ has at most one image.
-
-**Injectivity:**
-
-$$
-f \cdot f^{\mathrm{T}} \subseteq I_A.
-$$
-
-This ensures each $b \in B$ has at most one preimage.
-
-**Mapping (total function):**
-
-$$
-{dom}(f) = I_A
-\quad\text{and}\quad
-f^{\mathrm{T}} \cdot f \subseteq I_B.
-$$
-
-**Image and inverse image** (with $X \subseteq I_A$, $Y \subseteq I_B$):
-
-$$
-f[X] = {cod}(X \cdot f),
-\qquad
-f^{-1}[Y] = {dom}(f \cdot Y).
-$$
-
-These are the standard definitions in heterogeneous relation algebra.
-
-**Consequence**
-
-- Each $a \in A$ has **at most one image** in $B$;  
-  i.e., $f$ behaves like a **partial function**.
+- Each $a \in A$ maps to at most one $b \in B$.
 
 ### TOTALITY AND PARTIALITY
 
@@ -1264,3 +1218,15 @@ Unpublished notes, 2008–2013.
 T. Winter,  
 "Diagrammatic Reasoning in Relational Algebra."  
 Internal seminar notes, 2012–2014.
+
+
+
+
+
+
+
+
+
+
+
+
