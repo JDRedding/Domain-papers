@@ -1,212 +1,261 @@
-# Relational Power, Evaluation, Dynamics
-## **PED Mapping Rules — Core Summary**
+# **Power–Evaluation–Dynamic‑Slice (PED)**  
+## **One‑Page Core Summary**
 
-**PED(G) = ( P(G), E(G), D(G) )**
+PED is the **internal triad** of an MFE engine state $E$.  
+It is **not** RDG, **not** SID, and **not** part of the RDG substrate.  
+SID operates **outside** the engine; PED operates **inside** it.
 
-with nesting:
+PED decomposes an engine state into:
 
-**P(G) ⊆ E(G) ⊆ D(G) ⊆ G**
+- **Power**  
+- **Evaluation**  
+- **Dynamic‑slice**  
+
+$$
+\mathrm{PED}(E)=\bigl(P(E),\,\mathrm{Eval}(E),\,D_{\mathrm{slice}}(E)\bigr)
+$$
+
+with engine state:
+
+$$
+E=(M,F,\bar M,\bar F).
+$$
+
+PED is the **energetic triad** that shapes the MFE update.
 
 ---
 
-## **[1] Power Layer — P(G)**
+# **1. Core PED Object**
 
-**Definition:**  
-P(G) contains all *energetic, causal, or influence‑bearing* relations that define what the system *can do* before any assessment or evolution.
-
-**Include in P(G):**
-- Field strengths, intensities, amplitudes  
-- Resource levels (energy, momentum, flux)  
-- Causal capacities (what can exert influence)  
-- Primitive “push” relations (drives, sources)  
-- Any quantity representing *potential to act*
-
-**Formal rule:**  
+PED acts on the bipolar engine state:
 
 $$
-P(G)=\{\, r\in G \mid r\text{ expresses capacity, intensity, or causal potential}\,\}.
+E=(M,F,\bar M,\bar F)
+$$
+
+and produces three internal functionals:
+
+$$
+P(E),\qquad \mathrm{Eval}(E),\qquad D_{\mathrm{slice}}(E).
+$$
+
+| Symbol | Meaning |
+|---|---|
+| $P(E)$ | **Power** — radial engine strength |
+| $\mathrm{Eval}(E)$ | **Evaluation** — potential landscape |
+| $D_{\mathrm{slice}}(E)$ | **Dynamic‑slice** — admissible local flow |
+| $\lambda_P,\lambda_E$ | coupling gains into the MFE update |
+| $\theta_M,\theta_F$ | bipolar thresholds (engine‑side, not PED primitives) |
+
+PED is **internal** to the MFE and shapes its update law.
+
+---
+
+# **2. PED Purpose**
+
+PED provides:
+
+- an **intensity measure** (Power)  
+- a **potential landscape** (Evaluation)  
+- a **local admissible flow** (Dynamic‑slice)  
+- a **gradient‑based modulation** of the MFE update  
+- a **bipolar‑aware internal geometry**  
+
+PED ensures:
+
+- energetic coherence  
+- stability/instability marking  
+- admissible directional flow  
+- modulation of engine dynamics  
+
+PED is the **energetic projection** of the MFE.
+
+---
+
+# **3. PED Axioms**
+
+### **(A) Power axioms**
+
+$$
+P(E)=\tfrac12(M^{2}+F^{2})
+$$
+
+$$
+\begin{aligned}
+(\mathrm{P1})&\; P(E)\ge 0\\
+(\mathrm{P2})&\; P\text{ increases with }|M|\text{ or }|F|\\
+(\mathrm{P3})&\; P\text{ decreases when }\bar M\text{ or }\bar F\text{ activate}
+\end{aligned}
+$$
+
+### **(B) Evaluation axioms**
+
+$$
+\mathrm{Eval}(E)=V(M,F,\bar M,\bar F)
+$$
+
+Typical form:
+
+$$
+V=\alpha e^{-|M|}+\beta\cos F+\gamma\sin^{2}\bar M+\delta\bar F
+$$
+
+$$
+\begin{aligned}
+(\mathrm{E1})&\; \mathrm{Eval}\text{ bounded below}\\
+(\mathrm{E2})&\; \mathrm{Eval}\text{ marks stable/unstable regions}\\
+(\mathrm{E3})&\; \mathrm{Eval}\text{ modulates the MFE update}
+\end{aligned}
+$$
+
+### **(C) Dynamic‑slice axioms**
+
+$$
+D_{\mathrm{slice}}(E)=\Phi(E)
+$$
+
+or gradient form:
+
+$$
+D_{\mathrm{slice}}(E)=
+\begin{pmatrix}
+\partial_M P-\partial_M\mathrm{Eval}\\
+\partial_F P-\partial_F\mathrm{Eval}\\
+\partial_{\bar M} P-\partial_{\bar M}\mathrm{Eval}\\
+\partial_{\bar F} P-\partial_{\bar F}\mathrm{Eval}
+\end{pmatrix}
+$$
+
+$$
+\begin{aligned}
+(\mathrm{D1})&\; D_{\mathrm{slice}}(E)\in D_{\mathrm{MFE}}\\
+(\mathrm{D2})&\; D_{\mathrm{slice}}\text{ respects bipolar pairs}\\
+(\mathrm{D3})&\; D_{\mathrm{slice}}\text{ modulated by }P\text{ and }\mathrm{Eval}
+\end{aligned}
 $$
 
 ---
 
-## **[2] Evaluation Layer — E(G)**
+# **4. PED Mapping Algorithm**
 
-**Definition:**  
-E(G) contains all *assessment, comparison, and moderation* rules describing how power is interpreted, filtered, or judged.
+Given an engine state $E=(M,F,\bar M,\bar F)$:
 
-**Include in E(G):**
-- Stability checks (Q‑conditions, admissibility)  
-- Moderation functions (thresholds, gates, filters)  
-- Comparative relations (greater/less, balance, bias)  
-- Diagnostic rules (health, score, viability)  
-- Any mapping that *interprets* P(G)
+1. **Assign Power**  
+   - intensity  
+   - radial strength  
+   - drive magnitude  
 
-**Formal rule:**  
+2. **Assign Evaluation**  
+   - potential  
+   - wells/barriers  
+   - damping/activation  
 
-$$
-E(G)=\overline{P(G)}^{\,\mathrm{eval}}
-$$
+3. **Assign Dynamic‑slice**  
+   - gradient direction  
+   - admissible flow  
+   - bipolar‑aware update  
 
-i.e. closure of P(G) under evaluation rules.
+4. **Apply gains**  
+   $\lambda_P,\lambda_E$ modulate contributions.
 
----
-
-## **[3] Dynamics Layer — D(G)**
-
-**Definition:**  
-D(G) contains all *temporal, propagative, and outcome‑producing* relations driven by evaluated power.
-
-**Include in D(G):**
-- Update laws (state transitions, propagation)  
-- Growth/decay (amplification, damping)  
-- Outcome measures (scores, health changes, world‑state shifts)  
-- Any relation requiring *evaluated power over time*
-
-**Formal rule:**  
-$$
-D(G)=\overline{E(G)}^{\,\mathrm{dyn}}
-$$
-
-i.e. closure of E(G) under dynamic rules.
+5. **Feed into MFE update**  
+   PED shapes the next engine state.
 
 ---
 
-## **[4] PED Operator Rules**
+# **5. PED Interpretation**
 
-- **Extensive:**
-  
-$$
-P \subseteq E \subseteq D
-$$
+PED is the **internal energetic geometry** of the MFE:
 
-- **Idempotent:**
-  
-$$
-P(P(G))=P(G),\quad E(E(G))=E(G),\quad D(D(G))=D(G)
-$$
+- **P(E)** = how strong the engine is  
+- **Eval(E)** = where the engine sits in its landscape  
+- **D_slice(E)** = how the engine is allowed to move  
 
-- **Monotone:**
-  
-$$
-G\subseteq H \Rightarrow
-P(G)\subseteq P(H),\;
-E(G)\subseteq E(H),\;
-D(G)\subseteq D(H)
-$$
+PED does **not** include:
 
-- **Compatible:**
-  
-$$
-P \text{ constrains } E,\qquad
-E \text{ constrains } D
-$$
+- RDG geometry  
+- SID layers  
+- RDGA algebra  
+- substrate primitives  
+
+PED is purely **engine‑internal**.
 
 ---
 
-## **[5] Mapping Algorithm (Practical Use)**
+# **6. PED in Practice**
 
-Given any symbol $X$:
+PED is used to:
 
-1. If $X$ expresses *capacity, intensity, or causal potential* → **P**  
-2. If $X$ expresses *assessment, moderation, or comparison* → **E**  
-3. If $X$ expresses *temporal unfolding or outcome* → **D**  
-4. Enforce nesting: $P \subseteq E \subseteq D$  
-5. Enforce idempotence and monotonicity  
+- compute internal engine strength  
+- mark stable/unstable regions  
+- generate gradient‑slice updates  
+- modulate MFE transitions  
+- support RME survival‑trajectory shaping  
 
----
+PED is the **energetic backbone** of:
 
-## **[6] Purpose of PED**
-
-PED cleanly separates:
-
-- What the system *can exert* → **P**  
-- How that exertion is *interpreted or moderated* → **E**  
-- How interpreted power *drives evolution* → **D**  
-
-This ensures RDG objects remain causally coherent, evaluatively consistent, and dynamically admissible.
+- bipolar oscillators  
+- nonlinear engines  
+- survival‑score filters  
+- dynamic moderation systems  
 
 ---
 
-# **APPENDIX: Mathematical Statements**  
-PED rules notation.
+# **7. Appendix: Mathematical PED Definition**
 
-### Core object
-
-$$
-\mathrm{PED}(G)=\bigl(P(G),\,E(G),\,D(G)\bigr)
-$$
-
-with nesting
+### Engine state
 
 $$
-P(G)\subseteq E(G)\subseteq D(G)\subseteq G.
+E=(M,F,\bar M,\bar F)
 $$
 
-### Layer definitions
-
-**Power**
+### Power
 
 $$
-P(G)=\{r\in G\mid r\text{ expresses causal capacity or intensity}\}.
+P(E)=\tfrac12(M^{2}+F^{2})
 $$
 
-**Evaluation**
+### Evaluation
 
 $$
-E(G)=\overline{P(G)}^{\,\mathrm{eval}}
+\mathrm{Eval}(E)=V(M,F,\bar M,\bar F)
 $$
 
-**Dynamics**
+### Dynamic‑slice
 
 $$
-D(G)=\overline{E(G)}^{\,\mathrm{dyn}}
+D_{\mathrm{slice}}(E)=\Phi(E)
 $$
 
-### Operator axioms
-
-**Extensive**
+or:
 
 $$
-P\subseteq E\subseteq D.
+D_{\mathrm{slice}}(E)=\nabla(P-\mathrm{Eval})
 $$
 
-**Idempotent**
+### Coupling into MFE
 
 $$
-P(P(G))=P(G),\quad
-E(E(G))=E(G),\quad
-D(D(G))=D(G).
+\begin{aligned}
+M(t+1)&=M^{0}+\lambda_P\,\partial_M P-\lambda_E\,\partial_M\mathrm{Eval}\\
+F(t+1)&=F^{0}+\lambda_P\,\partial_F P-\lambda_E\,\partial_F\mathrm{Eval}\\
+\bar M(t+1)&=\bar M^{0}+\lambda_{\bar P}\,\partial_{\bar M}P-\lambda_{\bar E}\,\partial_{\bar M}\mathrm{Eval}\\
+\bar F(t+1)&=\bar F^{0}+\lambda_{\bar P}\,\partial_{\bar F}P-\lambda_{\bar E}\,\partial_{\bar F}\mathrm{Eval}
+\end{aligned}
 $$
 
-**Monotone**
+### Minimal example
 
 $$
-G\subseteq H\Rightarrow
-P(G)\subseteq P(H),\;
-E(G)\subseteq E(H),\;
-D(G)\subseteq D(H).
+P=\tfrac12(M^{2}+F^{2}),\quad
+\mathrm{Eval}=\cos F+\sin^{2}\bar M,\quad
+D_{\mathrm{slice}}=\Phi(E)
 $$
 
-**Compatible**
+### Optional energy functional
 
 $$
-P\text{ constrains }E,\qquad
-E\text{ constrains }D.
+H(E)=T(E)+\mu\,\mathrm{Eval}(E)+\nu\,P(E)
 $$
 
-### Classification rule for a symbol $X$
-
-$$
-X\mapsto
-\begin{cases}
-P & X\text{ expresses capacity or intensity}\\
-E & X\text{ expresses assessment or moderation}\\
-D & X\text{ expresses evolution or outcome}
-\end{cases}
-$$
-
-subject to
-
-$$
-P\subseteq E\subseteq D.
-$$
+PED is **three functionals of $E$**, nested inside MFE the way **S, I, D** are nested inside RDG.
