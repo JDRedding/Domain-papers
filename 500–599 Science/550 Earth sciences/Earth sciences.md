@@ -6,7 +6,7 @@ Earth sciences underpin practical decisions: forecasting hazards, managing water
 ### Core disciplines
 The branches are not isolated. Oceans influence climate; climate shapes weather; weather and ice erode rock; rocks record past climates; life alters the atmosphere and oceans. Modern Earth science therefore emphasizes coupled models, satellite observations, and sensor networks.
 
-Earth science is fundamentally a four‑sphere coupled dynamical system governed by a small set of shared operators — conservation laws, constitutive relations, and closure schemes. Your appendix already lists the primitive equations; the deeper insight is that each discipline is just a different projection of the same underlying operators onto different materials and timescales.
+Earth science is fundamentally a four‑sphere coupled dynamical system governed by a small set of shared operators — conservation laws, constitutive relations, and closure schemes. The appendix lists the primitive equations; the deeper insight is that each discipline is just a different projection of the same underlying operators onto different materials and timescales.
 
 **Geology**  
 Focuses on rocks, minerals, landforms, and Earth’s 4.5-billion-year history.  
