@@ -240,6 +240,85 @@ $$
 
 ---
 
+## **Appendix: Isolated dyad core (lean)**
+
+State, linear law, and energy:
+
+$$
+\mathbf{v}=(M,F)\in\mathbb{R}^{2},\qquad
+\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j},\qquad
+P=\tfrac12\lvert\mathbf{v}\rvert^{2}
+$$
+
+with
+
+$$
+I=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathbf{j}=\begin{pmatrix}j_M\\j_F\end{pmatrix}.
+$$
+
+Equivalently, $z=M+iF$ satisfies $\dot z=(\alpha+i\omega)z+(j_M+ij_F)$.
+
+Optional evaluation (for the gradient correction only):
+
+$$
+\mathrm{Eval}(\mathbf{v})=V(M,F)=\alpha_V e^{-|M|}+\beta\cos F.
+$$
+
+Continuous correction, if used:
+
+$$
+\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}-\lambda_E\nabla_{\mathbf{v}}V.
+$$
+
+Discrete map (separate from the ODE above):
+
+$$
+\mathbf{v}^+=\mathbf{v}+\begin{pmatrix}1\\-1\end{pmatrix}-\nabla_{\mathbf{v}}V(M,F).
+$$
+
+Standing restrictions for this appendix: $\bar M=\bar F=0$, no live geometry $\Gamma_t$, no bipolar regulators.
+
+---
+
+A Lean skeleton matching this appendix is:
+
+```lean
+def I : Matrix (Fin 2) (Fin 2) ℝ := 1
+def J : Matrix (Fin 2) (Fin 2) ℝ := !![0, -1; 1, 0]
+
+structure Params where
+  α ω λE αV β : ℝ
+  j : Fin 2 → ℝ
+
+def V (p : Params) (v : Fin 2 → ℝ) : ℝ :=
+  p.αV * Real.exp (-|v 0|) + p.β * Real.cos (v 1)
+
+def P (v : Fin 2 → ℝ) : ℝ :=
+  (1 / 2) * ∑ i, (v i) ^ 2
+
+def A (p : Params) : Matrix (Fin 2) (Fin 2) ℝ :=
+  p.α • I + p.ω • J
+
+/-- ∇V = (−αV sign(M) e^{−|M|}, −β sin F) at M ≠ 0. -/
+noncomputable def gradV (p : Params) (v : Fin 2 → ℝ) : Fin 2 → ℝ :=
+  ![ -p.αV * Real.sign (v 0) * Real.exp (-|v 0|),
+     -p.β * Real.sin (v 1) ]
+
+/-- Continuous core: v̇ = (αI + ωJ)v + j − λE ∇V. -/
+noncomputable def vdot (p : Params) (v : Fin 2 → ℝ) : Fin 2 → ℝ :=
+  (A p) *ᵥ v + p.j - p.λE • gradV p v
+
+/-- Separate discretization; not the ODE integrator. -/
+noncomputable def vstep (p : Params) (v : Fin 2 → ℝ) : Fin 2 → ℝ :=
+  v + ![1, -1] - gradV p v
+```
+
+`v 0 = M`, `v 1 = F`. Set `λE = 0` to recover the linear slice $\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}$.
+
+---
+
 ## Appendix: Weak Identification  
 This appendix splits the MFE block into the dyad $(M,F)$ and treats that pair as a 2‑component linear field. It is a vectorization gesture, not the full engine.
 
