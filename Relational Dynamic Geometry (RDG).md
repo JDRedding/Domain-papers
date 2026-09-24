@@ -1,29 +1,48 @@
 # **Relational Dynamic Geometry (RDG)**  
 ## **One‑Page Core Summary**
 
-RDG is the **tri‑mode relational engine** that organizes any system into three complementary layers:
+RDG is the **base relational geometry** underlying the system.  
+It is **not** SID, **not** PED, and **not** MFE.  
+SID and PED are **projections** of RDG;  
+MFE is an **engine attached to RDG’s solution sets**.
 
-- **Structure**  
-- **Interaction**  
-- **Dynamics**  
+RDG itself consists of:
 
-and simultaneously into the **dual triad**:
+- **Objects**  
+- **Relations**  
+- **Substrate modes**  
+- **Primitive signatures**  
+- **Operator algebra (RDGA)**  
+- **Geometric carriers**  
+- **Dynamic recomputation (Γ)**  
 
-- **Power**  
-- **Evaluation**  
-- **Dynamics**  
-
-SID and PED are **two projections** of the same RDG object.
+SID and PED are *views* of RDG;  
+MFE is *external* and acts on RDG’s carrier geometry.
 
 ---
 
 # **1. Core RDG Object**
 
-$$
-\mathrm{RDG}(G)=(S(G),I(G),D(G))\;\oplus\;(P(G),E(G),D(G))
-$$
+RDG is a directed relational geometry:
 
-RDG is a **six‑layer relational decomposition** with a shared Dynamics layer.
+\[
+G=(\mathrm{Obj},\mathrm{Rel})
+\]
+
+with:
+
+\[
+\mathrm{Rel}\subseteq\mathrm{Obj}\times\mathrm{Obj}
+\]
+
+and directed edges:
+
+\[
+a\to b \;\iff\; (a,b)\in\mathrm{Rel}.
+\]
+
+RDG is **not** a six‑layer decomposition.  
+SID and PED are **derived** from RDG but do **not** define it.
 
 ---
 
@@ -32,96 +51,81 @@ RDG is a **six‑layer relational decomposition** with a shared Dynamics layer.
 RDG provides:
 
 - A **geometry of relations**  
-- A **canonical decomposition** of any system  
-- A **closure‑preserving operator framework**  
-- A **dual view**: structural vs. energetic  
-- A **single dynamic layer** that integrates both
+- A **substrate of primitive modes**  
+- A **canonical operator algebra (RDGA)**  
+- A **carrier‑based geometric interpretation**  
+- A **dynamic recomputation law (Γ)**  
 
-RDG ensures that any system remains:
+RDG ensures:
 
-- structurally coherent  
-- interaction‑consistent  
-- dynamically admissible  
-- evaluatively stable  
-- causally interpretable  
+- relational coherence  
+- algebraic closure  
+- geometric consistency  
+- morphism‑preserving transformations  
+- compatibility with external engines (MFE)  
+
+RDG is the **foundation** on which SID, PED, and MFE operate.
 
 ---
 
 # **3. RDG Axioms**
 
-### **(A) Nesting**
+### **(A) Directedness**
 
-$$
-S\subseteq I\subseteq D,\qquad P\subseteq E\subseteq D
-$$
+\[
+(a,b)\in\mathrm{Rel} \;\Rightarrow\; a\to b
+\]
 
-### **(B) Idempotence**
+### **(B) Sub-RDG Inclusion**
 
-$$
-S(S(G))=S(G),\quad I(I(G))=I(G),\quad D(D(G))=D(G)
-$$
+\[
+G\subseteq H
+\iff
+\mathrm{Obj}(G)\subseteq\mathrm{Obj}(H)
+\;\text{and}\;
+\mathrm{Rel}(G)\subseteq\mathrm{Rel}(H)
+\]
 
-$$
-P(P(G))=P(G),\quad E(E(G))=E(G)
-$$
+### **(C) Morphisms**
 
-### **(C) Monotonicity**
+A map \(f:G\to H\) is an RDG morphism if:
 
-$$
-G\subseteq H\Rightarrow
-S(G)\subseteq S(H),\;
-I(G)\subseteq I(H),\;
-D(G)\subseteq D(H)
-$$
+\[
+\begin{aligned}
+(\mathrm{M1})&\quad a\to b\text{ in }G \Rightarrow f(a)\to f(b)\text{ in }H\\
+(\mathrm{M2})&\quad f\text{ creates no extra edges}
+\end{aligned}
+\]
 
-$$
-P(G)\subseteq P(H),\;
-E(G)\subseteq E(H)
-$$
+### **(D) Substrate Automorphisms**
 
-### **(D) Compatibility**
+\[
+\mathrm{Aut}(M,R)\cong S_3\times D_4
+\]
 
-$$
-S\text{ constrains }I,\qquad I\text{ constrains }D
-$$
+### **(E) Lawful Cardinalities**
 
-$$
-P\text{ constrains }E,\qquad E\text{ constrains }D
-$$
+\[
+K_{\mathrm{lawful}}=\{3,4\}
+\]
 
-### **(E) Dual Consistency**
-SID and PED must agree on the dynamic layer:
-
-$$
-D_{\mathrm{SID}}(G)=D_{\mathrm{PED}}(G)
-$$
+\(|K|=3\) → RDG geometry  
+\(|K|=4\) → MFE engine
 
 ---
 
 # **4. RDG Mapping Algorithm**
 
-Given any symbol $X$:
+Given any symbol \(X\):
 
-1. **Assign SID layer**  
+1. If \(X\) is a node or primitive → belongs to **Obj**  
+2. If \(X\) is a directed relation → belongs to **Rel**  
+3. If \(X\) is a higher‑arity relation → belongs to **RDGA**  
+4. If \(X\) is a carrier polynomial → belongs to **\Phi(R)**  
+5. If \(X\) is a solution set → belongs to **\mathcal{S}(R)**  
+6. If \(X\) is a recomputation → belongs to **Γ**
 
-   - If geometric/spectral/canonical → **S**  
-   - If coupling/mixing → **I**  
-   - If evolution/outcome → **D**  
-
-2. **Assign PED layer**  
-
-   - If capacity/intensity → **P**  
-   - If assessment/moderation → **E**  
-   - If evolution/outcome → **D**  
-
-3. **Enforce dual nesting**  
-
-   $$
-   S\subseteq I\subseteq D,\qquad P\subseteq E\subseteq D
-   $$
-
-4. **Check compatibility**  
-   SID‑D and PED‑D must match.
+SID and PED classification rules apply **after** RDG is defined.
 
 ---
 
@@ -129,13 +133,18 @@ Given any symbol $X$:
 
 RDG is the **meta‑geometry**:
 
-- SID describes **what the system is and how it behaves**.  
-- PED describes **what the system can exert and how it is judged**.  
-- RDG binds them through a **shared dynamic evolution**.
+- RDG describes **what exists** (Obj) and **how it relates** (Rel).  
+- RDGA describes **how relations combine**.  
+- Carriers describe **geometric meaning**.  
+- Γ describes **geometric evolution**.  
+- SID is a **projection** of RDG.  
+- PED is an **internal triad** of MFE.  
+- MFE is an **engine attached to RDG’s solution sets**.
 
-SID = structural geometry  
-PED = energetic geometry  
-RDG = relational geometry binding both
+RDG = foundational geometry  
+SID = structural slice  
+PED = energetic slice  
+MFE = dynamical engine
 
 ---
 
@@ -143,220 +152,117 @@ RDG = relational geometry binding both
 
 RDG is used to:
 
-- classify equations  
-- organize operators  
-- define admissible transformations  
-- ensure dynamic consistency  
-- unify structural and energetic views  
-- provide a stable relational backbone for systems like:
-  - Casimir effect  
-  - DCE  
+- define relational structures  
+- classify morphisms  
+- compute geometric carriers  
+- perform algebraic elimination  
+- generate solution sets  
+- support external engines (MFE)  
+- provide a stable backbone for:
+  - Casimir/DCE  
   - field theory  
-  - game engines  
   - conceptual frameworks  
+  - game engines  
   - dynamical systems  
+  - RME (via MFE attachment)
 
 ---
 
 # **7. Appendix: Mathematical RDG Definition**
 
-**RDG** (Relational Directed / Dynamic Geometry) is the base object. SID and MFE act *on* it; they are not part of the RDG definition itself.
-
 ### RDG object
-That is RDG alone: a directed relational geometry $G=(\mathrm{Obj},\mathrm{Rel})$ with morphisms, a 7-mode substrate, and an operator algebra $\Phi$ on relations. SID is the slice of $G$; MFE is the engine attached to $\mathcal{S}(R)$.
 
-$$
+\[
 G=(\mathrm{Obj},\,\mathrm{Rel})
-$$
+\]
 
-$$
+\[
 \mathrm{Rel}\subseteq\mathrm{Obj}\times\mathrm{Obj}
-$$
+\]
 
-$$
-a\to b \;\iff\; (a,b)\in\mathrm{Rel}
-$$
-
-| Symbol | Meaning |
-|---|---|
-| $G$ | an RDG |
-| $\mathrm{Obj}(G)$ | nodes |
-| $\mathrm{Rel}(G)$ | directed edges |
-| $a\to b$ | a relation |
+\[
+a\to b \iff (a,b)\in\mathrm{Rel}
+\]
 
 ### Sub-RDG
 
-$$
+\[
 G\subseteq H
-\quad\iff\quad
+\iff
 \mathrm{Obj}(G)\subseteq\mathrm{Obj}(H)
 \;\text{and}\;
 \mathrm{Rel}(G)\subseteq\mathrm{Rel}(H)
-$$
+\]
 
 ### Morphisms
 
-A map $f:G\to H$ is an RDG morphism if
-
-$$
+\[
 \begin{aligned}
-(\mathrm{M1})&\quad a\to b\text{ in }G \;\Longrightarrow\; f(a)\to f(b)\text{ in }H\\
-(\mathrm{M2})&\quad f\text{ creates no extra edges}
+(\mathrm{M1})&\; a\to b\Rightarrow f(a)\to f(b)\\
+(\mathrm{M2})&\; f\text{ creates no extra edges}
 \end{aligned}
-$$
+\]
 
-### Minimal example
+### Substrate (7 DOFs)
 
-$$
-\mathrm{Obj}=\{a,b,c\},\qquad
-\mathrm{Rel}=\{a\to b,\;b\to c,\;a\to c\}
-$$
+\[
+M=\{1,2,3,4,5,6,7\}=A\cup B
+\]
 
----
+Primitive signature:
 
-### Substrate (7 DOFs), RDG-only
+\[
+R=\{T(x),C(x),E(x,y),\mathrm{Tri}(x,y,z)\}
+\]
 
-The generating mode set is
+Automorphism group:
 
-$$
-M=\{1,2,3,4,5,6,7\}
-=A\cup B,\qquad
-A=\{1,2,3\},\; B=\{4,5,6,7\},\; A\cap B=\varnothing
-$$
+\[
+\mathrm{Aut}(M,R)\cong S_3\times D_4
+\]
 
-Primitive signature
+### RDGA (algebra)
 
-$$
-R=\{T(x),\;C(x),\;E(x,y),\;\mathrm{Tri}(x,y,z)\}
-$$
-
-| Symbol | Meaning |
-|---|---|
-| $T(x)$ | triadic primitive |
-| $C(x)$ | complement-block marker |
-| $E(x,y)$ | symmetric irreflexive adjacency |
-| $\mathrm{Tri}(x,y,z)$ | primitive triad |
-
-Automorphism group of the substrate:
-
-$$
-\mathcal{G}=\mathrm{Aut}(M,R)\cong S_3\times D_4
-$$
-
-Lawful treatment cardinalities claimed by the substrate:
-
-$$
-K_{\mathrm{lawful}}=\{3,4\}
-$$
-
-$$
-|K|=3 \;\to\; \text{RDG (geometry)},\qquad
-|K|=4 \;\to\; \text{MFE (field/engine)}
-$$
-
-Seven named degrees of freedom: Unity, Duality, Relational Extension, Dynamical Variation, Meso-Complexity, Constraint/Closure, Completeness.
-
----
-
-### RDGA (algebra of an RDG)
-
-A relation of arity $n$:
-
-$$
+\[
 R\subseteq\mathrm{Obj}^n
-$$
+\]
 
 Operators:
 
-$$
+\[
 \begin{aligned}
-R\cup S&=\{x\mid x\in R\lor x\in S\}\\
-R\cap S&=\{x\mid x\in R\land x\in S\}\\
-\neg R&=\{x\mid x\notin R\}\\
-\pi_i(R)&=\{x_i\mid (x_1,\dots,x_n)\in R\}\\
-R\circ S&=\{(x,z)\mid \exists y:\,(x,y)\in R\land(y,z)\in S\}
+R\cup S,\; R\cap S,\; \neg R,\; \pi_i(R),\; R\circ S
 \end{aligned}
-$$
+\]
 
-Algebraic carrier
+Carrier algebra:
 
-$$
-\Phi:R\mapsto I_R\subseteq\mathbb{R}[x_1,\dots,x_n]
-$$
+\[
+\Phi(R)\subseteq\mathbb{R}[x_1,\dots,x_n]
+\]
 
-$$
+Solution sets:
+
+\[
 \mathcal{S}(R)=\{x\mid f(x)=0\;\forall f\in I_R\}
-$$
+\]
 
-Operator lift:
+### RDG dynamics
 
-$$
-\begin{aligned}
-\Phi(R\cap S)&=I_R+I_S\\
-\Phi(R\cup S)&=I_R\cap I_S\\
-\Phi(R\circ S)&=\mathrm{Elim}_y(I_R+I_S)\\
-\Phi(\pi_i(R))&=\mathrm{Elim}_{\text{all but }i}(I_R)
-\end{aligned}
-$$
-
-Closure as an operator algebra:
-
-$$
-\Phi(R\,\mathrm{op}\,S)=\Phi(R)\,\widehat{\mathrm{op}}\,\Phi(S)
-$$
-
-Standard geometric carriers:
-
-$$
-\begin{aligned}
-I_{\mathrm{Inc}}&=\{(y_P-y_A)(x_B-x_A)-(y_B-y_A)(x_P-x_A)\}\\
-I_{\mathrm{Circ}}&=\{(x_P-x_O)^2+(y_P-y_O)^2-r^2\}
-\end{aligned}
-$$
-
-Dynamic update on the RDG state (still geometry, not MFE):
-
-$$
+\[
 \Gamma:\mathrm{State}_t\to\mathrm{State}_{t+1}
-$$
+\]
 
-$\Gamma$ recomputes dependent objects, then carriers $I_R$, then solution sets $\mathcal{S}(R)$.
+Γ recomputes:
 
+- dependent objects  
+- carriers  
+- solution sets  
 
-### **RDG decomposition**
+### RDG decomposition (SID/PED projections)
 
-$$
-\mathrm{RDG}(G)=\left(S(G),I(G),D(G)\right)\oplus\left(P(G),E(G),D(G)\right)
-$$
+\[
+\mathrm{RDG}(G)=\bigl(S(G),I(G),D(G)\bigr)\oplus\bigl(P(G),E(G),D(G)\bigr)
+\]
 
-### **Dual closure**
-
-$$
-I(G)=\overline{S(G)}^{\mathrm{int}},\qquad
-E(G)=\overline{P(G)}^{\mathrm{eval}}
-$$
-
-$$
-D(G)=\overline{I(G)}^{\mathrm{dyn}}
-=\overline{E(G)}^{\mathrm{dyn}}
-$$
-
-### **Classification rule**
-
-$$
-X\mapsto
-\begin{cases}
-S & X\text{ geometric/spectral/canonical}\\
-I & X\text{ coupling/mixing}\\
-D & X\text{ evolution/outcome}\\
-P & X\text{ capacity/intensity}\\
-E & X\text{ assessment/moderation}
-\end{cases}
-$$
-
-subject to:
-
-$$
-S\subseteq I\subseteq D,\qquad
-P\subseteq E\subseteq D.
-$$
+These are **projections**, not part of RDG itself.
