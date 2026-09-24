@@ -481,3 +481,268 @@ $$
 $$
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Appendix: **SID form of the isolated momentum–flux dyad**  
+(weak MFE slice only: $\bar M=\bar F=0$, no live geometry)
+
+**S** = structure (state, spectrum, invariants)  
+**I** = interaction (operators, couplings, missing regulators)  
+**D** = dynamics (update, oscillation, runaway/collapse)
+
+---
+
+**1. Dyad state (S)**
+
+$$
+\mathbf{v}(t)=(M(t),F(t))\in\mathbb{R}^{2},\qquad
+z=M+iF
+$$
+
+Polar form:
+
+$$
+\mathbf{v}=r\begin{pmatrix}\cos\varphi\\\sin\varphi\end{pmatrix},\qquad
+r=\sqrt{M^{2}+F^{2}},\quad
+\varphi=\mathrm{atan2}(F,M)
+$$
+
+Layout of the isolated pair:
+
+$$
+\begin{pmatrix}M&F\end{pmatrix}
+$$
+
+- $M$: momentum / inertia axis  
+- $F$: flux / transport axis  
+- $\mathbf{v}$: dyad state vector  
+
+Balance index (only invariant left after counters are removed):
+
+$$
+B=M-F
+$$
+
+No counter-sum $C$, no total energy $T$, no bipolar moderation.
+
+---
+
+**2. Restricted PED triad on the dyad (S + I)**
+
+$$
+\mathrm{PED}(\mathbf{v})=\bigl(P(\mathbf{v}),\,\mathrm{Eval}(\mathbf{v}),\,D_{\mathrm{slice}}(\mathbf{v})\bigr)
+$$
+
+Power:
+
+$$
+P(\mathbf{v})=\tfrac12(M^{2}+F^{2})=\tfrac12 r^{2}
+$$
+
+Evaluation (example restriction of the engine potential):
+
+$$
+\mathrm{Eval}(\mathbf{v})=V(M,F)=\alpha e^{-|M|}+\beta\cos F
+$$
+
+Gradient slice:
+
+$$
+D_{\mathrm{slice}}(\mathbf{v}) =
+\bigl(\partial_M P-\partial_M\mathrm{Eval},\;
+\partial_F P-\partial_F\mathrm{Eval}\bigr)
+$$
+
+Power-flux analogue:
+
+$$
+S\sim MF
+$$
+
+---
+
+**Interaction: what the dyad has, and what it does not (I)**
+
+Present couplings:
+
+- internal gradient of $\mathrm{Eval}$
+- linear gain / rotation operator $\alpha I+\omega J$
+- optional external SID steering
+- optional PED gain $\lambda_P\mathbf{v}-\lambda_E\nabla\mathrm{Eval}$
+
+Deleted bipolar activation (not in the dyad):
+
+$$
+\bar M^+=\max(0,M-\theta_M),\qquad
+\bar F^+=\max(0,\theta_F-F)
+$$
+
+Consequence of the missing regulators:
+
+$$
+r\to\infty\quad\text{or}\quad r\to 0
+$$
+
+unless $\mathrm{Eval}$ or $A$ is hand-tuned.
+
+External SID signals act only as frozen medium parameters:
+
+$$
+\sigma(G)=\text{structural pressure},\qquad
+\rho(G)=\text{relational tension}
+$$
+
+$$
+\alpha=\alpha^{0}+a_{\sigma}\sigma(G),\qquad
+\omega=\omega^{0}+b_{\rho}\rho(G)
+$$
+
+This is external steering, not internal stabilization.
+
+---
+
+**Dynamics (D)**
+
+Discrete dyad update:
+
+$$
+\mathbf{v}(t+1)=\Phi_{\mathrm{dyad}}(\mathbf{v}(t))
+$$
+
+Uncoupled oscillator skeleton (counters removed):
+
+$$
+\begin{aligned}
+M^+&=M+1-\partial_M\mathrm{Eval}(M,F)\\
+F^+&=F-1-\partial_F\mathrm{Eval}(M,F)
+\end{aligned}
+$$
+
+Vector form:
+
+$$
+\mathbf{v}^+=
+\mathbf{v}+\begin{pmatrix}1\\-1\end{pmatrix}-\nabla_{\mathbf{v}}\mathrm{Eval}(M,F)
+$$
+
+PED-coupled discrete update:
+
+$$
+\mathbf{v}^+=
+\mathbf{v}^{0}+\lambda_P\mathbf{v}-\lambda_E\nabla_{\mathbf{v}}\mathrm{Eval}
+$$
+
+since $\nabla_{\mathbf{v}}P=\mathbf{v}$.
+
+Continuous normal form:
+
+$$
+\dot{\mathbf{v}}=A\mathbf{v}+\mathbf{j},\qquad
+A=\alpha I+\omega J=
+\begin{pmatrix}\alpha&-\omega\\\omega&\alpha\end{pmatrix}
+$$
+
+with
+
+$$
+J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+J\begin{pmatrix}M\\F\end{pmatrix}=\begin{pmatrix}-F\\M\end{pmatrix}
+$$
+
+Complex form:
+
+$$
+\dot z=(\alpha+i\omega)z
+$$
+
+- $\alpha>0$: runaway radius  
+- $\alpha<0$: collapse  
+- $\omega$: $M$–$F$ oscillation  
+
+Optional energy shaping:
+
+$$
+H(\mathbf{v})=\mu\,\mathrm{Eval}(\mathbf{v})+\nu\,P(\mathbf{v}),\qquad
+\mathbf{v}^+=\mathbf{v}-\eta\nabla H(\mathbf{v})
+$$
+
+Optional weak spatial chain (still weaker than full RDG–MFE):
+
+$$
+\partial_t M_i=-\nabla_\Gamma F_i-\alpha_M M_i,\qquad
+\partial_t F_i=-\nabla_\Gamma M_i-\alpha_F F_i
+$$
+
+---
+
+**Weak identification (S, restricted)**
+
+Full MFE state is four-coordinate:
+
+$$
+E=(M,F,\bar M,\bar F)
+$$
+
+This slice keeps only
+
+$$
+\mathbf{v}=\begin{pmatrix}M\\F\end{pmatrix}\;\sim\;
+\begin{pmatrix}\phi_1\\\phi_2\end{pmatrix}
+$$
+
+Formal dictionary:
+
+| Dyad object | Weak image | Not present here |
+|---|---|---|
+| $M$ | $\phi_1$ | regulated momentum axis |
+| $F$ | $\phi_2$ | regulated flux axis |
+| $z=M+iF$ | complex 2-component field | full bipolar block |
+| $P=\tfrac12 r^{2}$ | scalar energy | 4-coordinate PED |
+| $B=M-F$ | imbalance $\phi_1-\phi_2$ | not a full-MFE invariant |
+| $J$ | planar rotation | full RDG operators |
+| $\alpha I+\omega J$ | gain + oscillation | 4×4 operator with regulators |
+| $\sigma(G),\rho(G)$ | frozen parameters | live RDG geometry |
+| $\bar M,\bar F$ | deleted | bipolar regulators |
+
+**Weak proposition.**  
+If $\bar M=\bar F=0$, geometry is frozen or absent, and the operator is restricted to $\alpha I+\omega J$, the isolated dyad behaves as a 2-component linear field with gain $\alpha$ and oscillation $\omega$.
+
+**Not claimed.**  
+The dyad does not reproduce full MFE, full PED, evolving RDG geometry, or any 4-component engine.
+
+---
+
+**Compact SID summary**
+
+- **S:** planar state $\mathbf{v}=(M,F)$, radius $r$, phase $\varphi$, power $P=\tfrac12 r^{2}$, imbalance $B=M-F$.  
+- **I:** Eval gradients, SID-modulated $(\alpha,\omega)$, PED gain $\lambda_P\mathbf{v}-\lambda_E\nabla\mathrm{Eval}$; regulators $\bar M,\bar F$ absent.  
+- **D:** $\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}$. Oscillation if $\omega\neq0$; runaway or collapse unless $\alpha$ and Eval are tuned by hand.
+
+**Minimal citation set**
+
+$$
+\mathbf{v}=\begin{pmatrix}M\\F\end{pmatrix},\qquad
+\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}
+$$
+
+$$
+P=\tfrac12\lvert\mathbf{v}\rvert^{2},\qquad S\sim MF
+$$
+
+$$
+\bar M=\bar F=0,\qquad \Gamma_t\ \text{not used}
+$$
