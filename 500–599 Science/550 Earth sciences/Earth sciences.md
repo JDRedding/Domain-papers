@@ -108,7 +108,7 @@ Also present:
 - **Evaluation:** climate sensitivity, residence times, stability metrics  
 - **Dynamics:** coupled PDEs and parameterizations
 
-Earth science is a natural playground for your relational geometry.
+Earth science is a natural playground for relational geometry.
 
 ---
 
