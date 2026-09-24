@@ -1,6 +1,5 @@
 ## Relational Momentum–Flux Dyad 
 Isolated MFE Slice — Summary
-
 ### 1. Dyad state
 
 $$
@@ -336,7 +335,7 @@ If want this to compile in Mathlib:
 - Import matrix + real analysis (`Mathlib.LinearAlgebra.Matrix.Notation`, `Mathlib.Data.Matrix.Basic`, `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic`, `Mathlib.Analysis.SpecialFunctions.Exp`, `Mathlib.Analysis.SpecialFunctions.Abs`).
 - `Fin 2 → ℝ` is the right type for `*ᵥ` and `![…]`.
 - `I := 1` is the identity matrix via `One`.
-- Keep `vdot` and `vstep` as separate defs; do not claim `vstep` approximates `vdot` unless you add an explicit Euler statement.
+- Keep `vdot` and `vstep` as separate defs; do not claim `vstep` approximates `vdot` unless add an explicit Euler statement.
 
 Linear slice as a lemma:
 
