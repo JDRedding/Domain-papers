@@ -274,3 +274,177 @@ SID/PED see only $\mathrm{Image}(\Phi)$.
 - not spacetime □, only **of that class**  
 
 Q is the **rational quotient** that makes RDG possible.
+
+---
+
+# **8. Appendix: Q‑Layer Q‑Factor**
+The stack **never** defines a single scalar called “the Q‑factor of Q.”  
+Instead, the Q‑layer produces **three distinct objects** that *collectively* play the role of a Q‑factor:
+
+1. **Operator factorization** — how $Q$ decomposes into a quotient and a seal  
+2. **Seal quality factor** — how tightly the irrational interior is hidden  
+3. **QTEE invariant** — the global non‑collapse condition for SID+PED
+
+Together these form the **Q‑factor of the Q‑layer**, even though no single symbol $Q_{\mathrm{factor}}$ is ever written.
+
+---
+
+### **Operator Factorization of $Q$**
+
+The glyph:
+
+$$
+Q_d^r(g)\,\square :=\square\!\bigl(Q_{\mathrm{substrate}}^{\mathrm{irrational}}\bigr)
+$$
+
+Factor meanings:
+
+| Factor | Name | Role |
+|---|---|---|
+| **Q** | quotient | collapse raw meso‑states by identical admissible behavior |
+| **d** | dynamic | equivalence depends on closure flow $\Gamma$ |
+| **r** | relational | acts only after rationality |
+| **g** | geometry | geometry induced by $\Gamma$, not background manifold |
+| **$\square$** | box | seal interior; forbid inspection |
+
+Formal factorization:
+
+$$
+Q=\square\circ q_{\sim_Q}
+$$
+
+with equivalence:
+
+$$
+X\sim_Q Y
+\iff
+\forall O\in\mathcal{O}:\;O(X)=O(Y)
+$$
+
+$\mathcal{O}$ = SID/PED‑stable, $\Gamma$-respecting observables.
+
+Thus:
+
+$$
+Q:\mathcal{S}\twoheadrightarrow\mathcal{S}/{\sim_Q}\cong\mathcal{A}
+$$
+
+This is the **operator‑theoretic Q‑factor**: quotient then seal.
+
+---
+
+### **Seal Quality Factor $Q_Q$**
+
+Classical resonator quality factor:
+
+$$
+Q_{\mathrm{res}}=\frac{\omega_0}{\Delta\omega}
+=\frac{\text{energy stored}}{\text{energy lost per cycle}}
+$$
+
+Q‑layer analogue:
+
+$$
+Q_Q =
+\frac{\text{sealed interior (irrational residue)}}
+{\text{leakage into observables}}
+$$
+
+Concrete form using the kernel of $Q$:
+
+$$
+Q_Q =
+\frac{\lvert\{i\in I:Q(i)=q_0\}\rvert}
+{\lvert\{O\in\mathcal{O}:O\text{ splits }q_0\}\rvert}
+$$
+
+Interpretation:
+
+- **Large $Q_Q$** → many meso‑states collapse to one admissible class; few observables distinguish them → **tight seal**  
+- **Small $Q_Q$** → quotient leaks; SID/PED begin to see generator degeneracy → **weak seal**
+
+Seal axioms:
+
+$$
+\begin{aligned}
+\square(\square X)&=\square X && \text{idempotent}\\
+\exists X\neq Y&:\;\square X=\square Y && \text{many-to-one}\\
+\mathrm{Obs}(\square X)&=\mathrm{Obs}(X) && \text{invariant-preserving}
+\end{aligned}
+$$
+
+TED‑form evolution:
+
+$$
+Q(\Delta\tau)\approx I+\Delta\tau\cdot\mathrm{TED}
+$$
+
+$$
+Q(\Delta\tau)=\exp(\Delta\tau\cdot\mathrm{TED})
+$$
+
+$$
+X_{k+1}=Q(\Delta\tau_Q)\,X_k
+$$
+
+Here $Q(\Delta\tau)$ is the **finite‑step Q‑factor**: how much triad evolution is applied per meta‑time tick.
+
+---
+
+### **QTEE Global Factor (Non‑Collapse Condition)**
+
+The stack writes a scalar condition:
+
+$$
+Q(\text{SID config},\text{PED config})\neq 0
+$$
+
+Meaning:
+
+- SID and PED may **not** collapse into each other  
+- Zero would mean the box opened and a dyad closed without a third term  
+- QTEE enforces **triadic non‑collapse**
+
+Projection‑only coupling:
+
+$$
+\pi:Q\to I\times D
+$$
+
+$$
+\mathrm{Dyad}(a,b)\Rightarrow
+\exists C_Q,\;T(a,i,d),\;(i,d)=\pi(C_Q)
+$$
+
+No map $S\to Q$ exists.  
+The factor is **one‑way**.
+
+---
+
+### **Compact Q‑Factor Statement**
+
+$$
+\underbrace{Q_Q}_{\text{seal quality}} =
+\frac{\lvert Q^{-1}(q_0)\rvert}
+{\text{observable splitting of }q_0}
+$$
+
+with:
+
+$$
+Q=\square\circ q_{\sim_Q}
+$$
+
+and:
+
+$$
+Q(\mathrm{SID},\mathrm{PED})\neq 0
+$$
+
+This is the **Q‑factor of the Q‑layer**:
+
+- how many generator states hide behind one admissible class  
+- how little of that hiding leaks into SID/PED  
+- and the prohibition that SID+PED never collapse to a dyad  
+
+---
