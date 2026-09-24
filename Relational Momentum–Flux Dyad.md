@@ -315,7 +315,36 @@ noncomputable def vstep (p : Params) (v : Fin 2 → ℝ) : Fin 2 → ℝ :=
   v + ![1, -1] - gradV p v
 ```
 
-`v 0 = M`, `v 1 = F`. Set `λE = 0` to recover the linear slice $\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}$.
+Set `v 0 = M`, `v 1 = F`. Set `λE = 0` to recover the linear slice $\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}$. The `v 0 = M`, `v 1 = F`, and `λE = 0` in `vdot` recovers
+
+$$
+\dot{\mathbf{v}}=(\alpha I+\omega J)\mathbf{v}+\mathbf{j}.
+$$
+
+`vstep` is independent of `λE` by construction. This matches the appendix: the discrete map is not an Euler step of the ODE.
+
+The gradient formula is the classical one for $M\neq 0$:
+
+$$
+\nabla V=\bigl(-\alpha_V\,\mathrm{sign}(M)\,e^{-|M|},\;-\beta\sin F\bigr).
+$$
+
+At $M=0$, `Real.sign 0 = 0`, so `gradV` extends by zero on that component. That is a convenient representative of the subgradient, not a classical derivative.
+
+If want this to compile in Mathlib:
+
+- Import matrix + real analysis (`Mathlib.LinearAlgebra.Matrix.Notation`, `Mathlib.Data.Matrix.Basic`, `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic`, `Mathlib.Analysis.SpecialFunctions.Exp`, `Mathlib.Analysis.SpecialFunctions.Abs`).
+- `Fin 2 → ℝ` is the right type for `*ᵥ` and `![…]`.
+- `I := 1` is the identity matrix via `One`.
+- Keep `vdot` and `vstep` as separate defs; do not claim `vstep` approximates `vdot` unless you add an explicit Euler statement.
+
+Linear slice as a lemma:
+
+```lean
+lemma vdot_linear (p : Params) (v : Fin 2 → ℝ) (h : p.λE = 0) :
+    vdot p v = (A p) *ᵥ v + p.j := by
+  simp [vdot, h]
+```
 
 ---
 
@@ -560,21 +589,6 @@ $$
 $$
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Appendix: **SID form of the isolated momentum–flux dyad**  
 (weak MFE slice only: $\bar M=\bar F=0$, no live geometry)
