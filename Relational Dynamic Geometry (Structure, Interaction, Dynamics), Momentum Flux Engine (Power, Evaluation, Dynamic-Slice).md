@@ -1,4 +1,4 @@
-# Relational Dynamic Geometry (Stricturem Interactionm, Dynamics), Momentum Flux Engine (Power, Evaluation, Dynamic-Slice)
+# Relational Dynamic Geometry (Structure, Interaction, Dynamics), Momentum Flux Engine (Power, Evaluation, Dynamic-Slice)
 **RDG → SID → MFE → PED**  
 ## **One‑Page Core Summary**
 
