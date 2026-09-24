@@ -109,7 +109,8 @@ Given a geometric relation $r\in G$:
 Given an engine state $E$:
 
 - compute **P**, **Eval**, **D_slice**  
-- compute engine signals  
+- compute engine signals
+- 
   $$
   \omega(E),\kappa(E)
   $$
