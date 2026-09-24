@@ -1,5 +1,5 @@
 ## Momentum–Flux Engine (MFE) 
-— Canonical Summary
+— Summary
 
 ### 1. Engine state
 
