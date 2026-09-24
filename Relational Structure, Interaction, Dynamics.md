@@ -1,194 +1,279 @@
-# Relational Structure, Interaction, Dynamics
-## SID Mapping Rules — Core Summary
+# **Structure–Interaction–Dynamics (SID)**  
+## **One‑Page Core Summary**
 
-**SID(G) = ( S(G), I(G), D(G) )**
+SID is the **geometry‑side triad** of an RDG $G$.  
+It is **not** the engine (MFE) and **not** the substrate (RDG primitives).  
+SID is a **three‑layer relational decomposition**:
+
+- **Structure**  
+- **Interaction**  
+- **Dynamics**
+
+Each layer is itself an RDG, and they satisfy:
+
+$$
+{SID}(G)=\bigl(S(G),\,I(G),\,D(G)\bigr)
+$$
 
 with nesting:
 
-**S(G) ⊆ I(G) ⊆ D(G) ⊆ G**
+$$
+S(G)\subseteq I(G)\subseteq D(G)\subseteq G.
+$$
+
+SID is a **closure system** on the relations of $G$.
 
 ---
 
-## [1] Structure Layer — S(G)
+# **1. Core SID Object**
 
-**Definition:**  
-S(G) contains all invariant, geometric, and kinematic relations that define what the system *is* before any coupling or evolution.
+SID decomposes an RDG $G=(\mathrm{Obj},\mathrm{Rel})$ into:
 
-**Include in S(G):**
-- Mode structure (spectra, eigenfrequencies)
-- Geometry (boundaries, topology, constraints)
-- Canonical operators (a, a†, commutators)
-- Definitional identities (zero-point energy, basis rules)
-- Relations invariant under allowed transformations
+$$
+S(G)=(\mathrm{Obj}(G),\mathrm{Rel}_S),\qquad
+I(G)=(\mathrm{Obj}(G),\mathrm{Rel}_I),\qquad
+D(G)=(\mathrm{Obj}(G),\mathrm{Rel}_D)
+$$
 
-**Formal rule:**  
-S(G) = { r ∈ G | r is invariant, definitional, or geometric }
+with:
+
+$$
+\mathrm{Rel}_S\subseteq\mathrm{Rel}_I\subseteq\mathrm{Rel}_D\subseteq\mathrm{Rel}(G).
+$$
+
+SID is a **three‑tier closure** of the ambient RDG.
 
 ---
 
-## [2] Interaction Layer — I(G)
+# **2. SID Purpose**
 
-**Definition:**  
-I(G) contains all operational, coupling, and mixing rules describing how structural elements influence each other.
+SID provides:
 
-**Include in I(G):**
-- Boundary conditions (static or time-dependent)
-- Mode mixing (Bogoliubov α, β)
-- Coupling laws (resonance, parametric drive)
-- Functional dependencies (how S-elements constrain others)
-- Operational links (STR/OP/LOOP relations)
+- A **structural skeleton** of the RDG  
+- A **functional interaction layer**  
+- A **dynamic propagation layer**  
+- A **canonical nesting** of relational complexity  
+- A **geometry‑side classification** of relations  
 
-**Formal rule:**  
-I(G) = closure of S(G) under interaction rules
+SID ensures:
 
----
+- structural coherence  
+- interaction consistency  
+- dynamic admissibility  
+- monotone refinement  
+- idempotent closure  
 
-## [3] Dynamics Layer — D(G)
-
-**Definition:**  
-D(G) contains all time-dependent, propagative, and outcome-generating relations.
-
-**Include in D(G):**
-- Evolution laws (time propagation, updates)
-- Amplification (growth, decay, parametric resonance)
-- Inferred transitions (path completion)
-- Outcome measures (photon number, expectation values)
-- Any relation requiring temporal unfolding
-
-**Formal rule:**  
-D(G) = closure of I(G) under dynamic rules
+SID is the **geometric projection** of RDG.
 
 ---
 
-## [4] SID Operator Rules
+# **3. SID Axioms**
 
-- **Extensive:** S ⊆ I ⊆ D
-- **Idempotent:** S(S(G)) = S(G), etc.
-- **Monotone:** If G ⊆ H then S(G) ⊆ S(H), etc.
-- **Compatible:** S constrains I; I constrains D
+### **(A) Nesting**
+
+$$
+S(G)\subseteq I(G)\subseteq D(G)\subseteq G
+$$
+
+### **(B) Idempotence**
+
+$$
+S(S(G))=S(G),\quad
+I(I(G))=I(G),\quad
+D(D(G))=D(G)
+$$
+
+### **(C) Monotonicity**
+
+$$
+G\subseteq H\Rightarrow
+S(G)\subseteq S(H),\;
+I(G)\subseteq I(H),\;
+D(G)\subseteq D(H)
+$$
+
+### **(D) Compatibility**
+
+$$
+S\text{ constrains }I,\qquad
+I\text{ constrains }D
+$$
+
+### **(E) Minimality**
+
+Each layer is the **minimal** RDG satisfying its closure rules.
 
 ---
 
-## [5] Mapping Algorithm (Practical Use)
+# **4. SID Mapping Algorithm**
 
-Given any symbol X:
+Given a relation $r\in\mathrm{Rel}(G)$:
 
-1. If X defines geometry, spectrum, or canonical form → **S**
-2. If X expresses coupling or mixing → **I**
-3. If X expresses evolution or generated outcomes → **D**
-4. Enforce nesting: S ⊆ I ⊆ D
-5. Enforce idempotence and monotonicity
+1. **Assign S(G)**  
+   - invariant  
+   - definitional  
+   - geometric  
+   - canonical  
+
+2. **Assign I(G)**  
+   - operational  
+   - coupling  
+   - mixing  
+   - functional dependence  
+
+3. **Assign D(G)**  
+   - inferred transitions  
+   - path completion  
+   - propagation  
+   - evolution/outcome  
+
+4. **Enforce nesting**
+
+$$
+S\subseteq I\subseteq D
+$$
+
+5. **Close under rules**
+
+$$
+I(G)=\overline{S(G)}^{\mathrm{int}},\qquad
+D(G)=\overline{I(G)}^{\mathrm{dyn}}.
+$$
 
 ---
 
-## [6] Purpose of SID
+# **5. SID Interpretation**
 
-SID cleanly separates:
+SID is the **geometry‑side decomposition** of RDG:
 
-- What the system *is* → **S**
-- How parts *affect* each other → **I**
-- How the system *evolves* → **D**
+- **S(G)** = invariant structure  
+- **I(G)** = operational interaction  
+- **D(G)** = dynamic propagation  
 
-This ensures RDG objects remain operator-clean, geometry-consistent, and dynamically admissible.
+SID does **not** include:
 
-## APPENDIX: Mathematical statements 
-SID rules notation.
+- RDG substrate  
+- RDGA algebra  
+- carriers  
+- Γ‑update  
+- MFE engine  
+- PED triad  
 
-### Core object
+SID is purely the **three‑layer closure** of RDG’s relations.
 
-$$
-\mathrm{SID}(G) = \bigl( S(G),\, I(G),\, D(G) \bigr)
-$$
+---
 
-with nesting
+# **6. SID in Practice**
 
-$$
-S(G) \subseteq I(G) \subseteq D(G) \subseteq G.
-$$
+SID is used to:
 
-### Notation
+- classify RDG relations  
+- define structural vs. operational vs. dynamic edges  
+- analyze relational complexity  
+- enforce closure rules  
+- support external modules (MFE, PED)  
+- provide geometric signals (curvature, tension, drift)  
 
-| Symbol | Meaning |
-|---|---|
-| $G$ | ambient set of relations for the system |
-| $S(G)$ | structure layer |
-| $I(G)$ | interaction layer |
-| $D(G)$ | dynamics layer |
-| $r$ | a relation in $G$ |
-| $H$ | another relation set (for monotonicity) |
+SID is the **geometric backbone** for:
 
-### Layer definitions
+- conceptual frameworks  
+- dynamical systems  
+- relational models  
+- field‑like engines (MFE)  
+- RDG‑based simulations  
 
-**Structure**
+---
 
-$$
-S(G) = \{ r \in G \mid r \text{ is invariant, definitional, or geometric} \}.
-$$
+# **7. Appendix: Mathematical SID Definition**
 
-**Interaction**
-
-$$
-I(G) = \overline{S(G)}^{\,\mathrm{int}}
-$$
-
-i.e. the closure of $S(G)$ under interaction rules.
-
-**Dynamics**
+### Layer objects
 
 $$
-D(G) = \overline{I(G)}^{\,\mathrm{dyn}}
+\begin{aligned}
+S(G)&=(\mathrm{Obj}(G),\mathrm{Rel}_S)\\
+I(G)&=(\mathrm{Obj}(G),\mathrm{Rel}_I)\\
+D(G)&=(\mathrm{Obj}(G),\mathrm{Rel}_D)
+\end{aligned}
 $$
 
-i.e. the closure of $I(G)$ under dynamic rules.
-
-### Operator axioms
-
-**Extensive**
+with:
 
 $$
-S(G) \subseteq I(G) \subseteq D(G).
+\mathrm{Rel}_S\subseteq\mathrm{Rel}_I\subseteq\mathrm{Rel}_D\subseteq\mathrm{Rel}(G).
 $$
 
-**Idempotent**
+### Closure rules
 
 $$
-S\bigl(S(G)\bigr) = S(G),\qquad
-I\bigl(I(G)\bigr) = I(G),\qquad
-D\bigl(D(G)\bigr) = D(G).
+I(G)=\overline{S(G)}^{\mathrm{int}},\qquad
+D(G)=\overline{I(G)}^{\mathrm{dyn}}.
 $$
 
-**Monotone**
+### SID‑preserving morphisms
+
+Weak:
 
 $$
-G \subseteq H
-\quad\Longrightarrow\quad
-S(G) \subseteq S(H),\quad
-I(G) \subseteq I(H),\quad
-D(G) \subseteq D(H).
+f(S(G))\subseteq S(H),\quad
+f(I(G))\subseteq I(H),\quad
+f(D(G))\subseteq D(H)
 $$
 
-**Compatible (constraint chain)**
+Strong:
 
 $$
-S \text{ constrains } I,\qquad
-I \text{ constrains } D.
+f(S(G))=S(f(G)),\quad
+f(I(G))=I(f(G)),\quad
+f(D(G))=D(f(G))
 $$
 
-### Classification rule for a symbol $X$
+### Invariants
 
 $$
-X \mapsto
+|S|\le|I|\le|D|
+$$
+
+Optional geometric scalars:
+
+$$
+\mathrm{curvature}_S(G),\quad
+\mathrm{tension}_I(G),\quad
+\mathrm{drift}_D(G)
+$$
+
+### Classification rule
+
+$$
+r\mapsto
 \begin{cases}
-S & \text{if } X \text{ is geometric, spectral, or canonical}\\
-I & \text{if } X \text{ is coupling or mixing}\\
-D & \text{if } X \text{ is evolution or an outcome}
+S & \text{invariant, geometric, canonical}\\
+I & \text{operational, coupling, mixing}\\
+D & \text{dynamic, outcome, propagation}
 \end{cases}
 $$
 
-subject to
+### Minimal examples
+
+**A.**
 
 $$
-S \subseteq I \subseteq D
+\mathrm{Obj}=\{a,b,c\},\quad
+\mathrm{Rel}=\{a\to b,\,b\to c,\,a\to c\}
 $$
 
-and the idempotence/monotonicity axioms above.
+$$
+S=\{a\to b\},\quad
+I=\{a\to b,\,b\to c\},\quad
+D=\{a\to b,\,b\to c,\,a\to c\}
+$$
+
+**B.**
+
+$$
+\mathrm{Obj}=\{x,y\},\quad
+\mathrm{Rel}=\{x\to y\}
+$$
+
+$$
+S=I=D=\{x\to y\}
+$$
