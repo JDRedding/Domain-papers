@@ -235,6 +235,12 @@ $$
 
 ### Generic twist laws
 
+```
+A  relabel winding          = K-operator
+B  character weight         = not K unless χ_k ≡ 1
+C  cycle mod n              = named non-operator (excluded)
+```
+
 **A. Relabel winding** (K-operator)
 
 $$
@@ -257,13 +263,6 @@ Law C is **not** a K-operator and is **not** used in RDG–GM. It is present onl
 
 Default RDG twists are A or B.  
 $k=0$ is the identity series; $k\ge 1$ is wound / twisted.
-
-
-```
-A  relabel winding          = K-operator
-B  character weight         = not K unless χ_k ≡ 1
-C  cycle mod n              = named non-operator (excluded)
-```
 
 ---
 
