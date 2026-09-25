@@ -69,3 +69,223 @@ where:
 
 All other structures (replication, mirror, pseudo-j, arithmetic encodings)
 are optional layers built on top of this backbone.
+
+## APPENDIX: **RDG‑GM Charts**
+
+## **1. Purpose of Charts**
+
+A **chart** is a bijection (or partial map)  
+
+$$
+\gamma:W\to Z
+$$
+
+that **re‑indexes the same winding stream**  
+
+$$
+\Phi(n,\cdot):W\to\mathbb{C}.
+$$
+
+Charts do **not** modify the generator $\Phi$.  
+Charts do **not** modify twists.  
+Charts do **not** modify the machine.
+
+They only change:
+
+- the **displayed grade** $z$,  
+- the **exponent of $q$** in the series,  
+- the **indexing** of coefficients.
+
+The native axis is always $w\in W$.  
+The grade axis $z\in Z$ is a *view* of the same data.
+
+---
+
+## **2. Standing Chart (RDG Default)**
+
+$$
+z=w-1,\qquad w=z+1.
+$$
+
+Grade coefficients:
+
+$$
+c_n^{\mathrm{grade}}(z)=\Phi(n,z+1).
+$$
+
+Series:
+
+$$
+T_n(q)=\sum_{z\ge -1}\Phi(n,z+1)\,q^z.
+$$
+
+This chart aligns:
+
+- $w=0$ ↔ $z=-1$ (pole slot)  
+- $w=1$ ↔ $z=0$ (hinge)  
+- $w\ge2$ ↔ $z\ge1$ (occupied grades)
+
+---
+
+## **3. Identity Chart**
+
+$$
+z=w,\qquad w=z.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=\Phi(n,z).
+$$
+
+$$
+T_n(q)=\sum_{z\ge0}\Phi(n,z)\,q^z.
+$$
+
+Ordinary power series.  
+No negative powers.
+
+---
+
+## **4. Opposite Offset**
+
+$$
+z=1-w,\qquad w=1-z.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=\Phi(n,1-z).
+$$
+
+$$
+T_n(q)=\sum_{z\le1}\Phi(n,1-z)\,q^z.
+$$
+
+Reverses the stream and centers the constant term at $z=1$.
+
+---
+
+## **5. Pure Negation**
+
+$$
+z=-w,\qquad w=-z.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=\Phi(n,-z).
+$$
+
+$$
+T_n(q)=\sum_{z\le0}\Phi(n,-z)\,q^z.
+$$
+
+Laurent series with non‑positive powers only.
+
+---
+
+## **6. $n$-Shifted Chart**
+
+$$
+z=w-n,\qquad w=z+n.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=\Phi(n,z+n).
+$$
+
+$$
+T_n(q)=\sum_{z\ge -n}\Phi(n,z+n)\,q^z.
+$$
+
+Each series $T_n$ begins at a different lowest grade.  
+Natural when $n$ is a weight or level.
+
+---
+
+## **7. $n$-Centered Chart**
+
+$$
+z=w-n-1,\qquad w=z+n+1.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=\Phi(n,z+n+1).
+$$
+
+$$
+T_n(q)=\sum_{z\ge -n-1}\Phi(n,z+n+1)\,q^z.
+$$
+
+Lowest term is always $q^{-n-1}$.
+
+---
+
+## **8. Scaled Chart**
+
+$$
+z=kw-m,\qquad k\in\mathbb{Z}_{\ne0},\;m\in\mathbb{Z}.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=
+\begin{cases}
+\Phi(n,(z+m)/k), & k\mid(z+m),\\
+0, & \text{otherwise}.
+\end{cases}
+$$
+
+Lacunary, even/odd, mod‑$N$, or arithmetic progression series.
+
+---
+
+## **9. Folded (Absolute) Chart**
+
+Non‑invertible.
+
+$$
+z=|w-1|.
+$$
+
+$$
+c_n^{\mathrm{grade}}(z)=
+\begin{cases}
+\Phi(n,1+z)+\Phi(n,1-z), & z>0,
+\Phi(n,1), & z=0.
+\end{cases}
+$$
+
+Two windings collapse onto one grade.  
+Produces a one‑sided generating function from a two‑sided stream.
+
+---
+
+## **10. Twist Compatibility**
+
+Twists always act on **w**, never on **n**, never on **z**.
+
+Given a chart $\gamma:W\to Z$:
+
+### **Law A (shift)**  
+$$
+(\tau_k c^{\mathrm{grade}})(z)
+= c^{\mathrm{grade}}(\gamma(w+k)).
+$$
+
+### **Law B (character)**  
+$$
+(\tau_k c^{\mathrm{grade}})(z)
+= \chi(k,w)\,c^{\mathrm{grade}}(\gamma(w)).
+$$
+
+If $\gamma$ is invertible, pull back through $\gamma^{-1}$.  
+If $\gamma$ is non‑invertible (folded chart), twists become multi‑valued or summed.
+
+---
+
+## **11. Recommended Default Pair**
+
+- **Wind chart (native):** $w$  
+- **Grade chart (display):** any of 0–5 above  
+
+This keeps the generator on $W$ while allowing flexible presentation on $Z$.
+
+---
