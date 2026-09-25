@@ -289,3 +289,247 @@ If $\gamma$ is non‑invertible (folded chart), twists become multi‑valued or 
 This keeps the generator on $W$ while allowing flexible presentation on $Z$.
 
 ---
+
+## APPENDIX: GM(K), Chart Kernel Module
+- chart kernel  
+- grade vs winding
+  
+GM(K) is the **chart kernel**: the typed operator that maps *winding coordinate* $w$ to *display coordinate* $z$. It is the layer that makes charts first‑class objects rather than ad‑hoc index rewrites. GM(K) is the formalization of “grade = view,” not “grade = generator.”
+
+---
+
+# **0. Typed signature**
+
+GM(K) is a typed morphism:
+
+$$
+K:\mathbb{W}\to\mathbb{Z}
+$$
+
+with the machine:
+
+$$
+\mathrm{GM}(K): (n,\Phi,\{\tau_k\}) \mapsto \left[z = K(w)\right]
+$$
+
+It is **not** a twist, **not** a generator, **not** a family label.  
+It is a *chart operator*.
+
+---
+
+# **1. Purpose inside the GM stack**
+- index shift  
+- pole slot  
+
+GM(K) enforces the separation:
+
+- **Φ** generates coefficients indexed by **w**  
+- **τₖ** acts on **w** (transport, winding, mode shift)  
+- **K** maps **w → z** (display coordinate)  
+- **series** are emitted in **z**
+
+This prevents the classical collapse:
+
+- “shift the index”  
+- “move the pole”  
+- “center the weight”  
+- “fold the spectrum”  
+
+All of those are **chart operations**, not generator operations.
+
+---
+
+# **2. Kernel types**
+
+GM(K) defines a **typed family** of kernels. Each kernel is a morphism $K$ with a declared type:
+
+### **2.1 Standing kernel**
+
+$$
+K_{\mathrm{std}}(w)=w-1
+$$
+
+- Single pole slot at $z=-1$  
+- Classical moonshine chart  
+- Default for GM(Φ)
+
+### **2.2 Identity kernel**
+
+$$
+K_{\mathrm{id}}(w)=w
+$$
+
+- Ordinary power series  
+- No pole slot  
+- CAS‑friendly
+
+### **2.3 Negation kernel**
+
+$$
+K_{\mathrm{neg}}(w)=-w
+$$
+
+- Non‑positive Laurent series  
+- Useful for backward spectra
+
+### **2.4 Shifted / centered kernels**
+
+$$
+K_{n}(w)=w-n
+$$
+
+- Weight/level‑dependent lowest grade  
+- Used for modular forms of weight $n$
+
+### **2.5 Scaled kernels**
+- folded kernel  
+- scaled kernel
+  
+$$
+K_{k,m}(w)=kw-m
+$$
+
+- lacunary  
+- even/odd  
+- arithmetic progression  
+- spectral thinning
+
+### **2.6 Folded kernel**
+
+$$
+K_{\mathrm{fold}}(w)=\|w-1\|
+$$
+
+- one‑sided GF from two‑sided stream  
+- used for SID/PED anomaly compression
+
+---
+
+# **3. Kernel algebra**
+- kernel inversion
+  
+GM(K) includes a small algebra of kernels:
+
+### **3.1 Composition**
+
+$$
+K_2\circ K_1:\ w\mapsto K_2(K_1(w))
+$$
+
+Example:  
+Fold then scale → lacunary one‑sided GF.
+
+### **3.2 Affine closure**
+All kernels are affine maps:
+
+$$
+K(w)=aw+b
+$$
+
+with $a,b\in\mathbb{Z}$ or $\mathbb{Q}$.
+
+This is the **chart algebra**.  
+GM forbids nonlinear kernels because they destroy the typed separation between generator and display.
+
+### **3.3 Kernel inversion**
+
+If $a\neq 0$:
+
+$$
+K^{-1}(z)=\frac{z-b}{a}
+$$
+
+Used for:
+
+- comparing two machines under different charts  
+- proving identity of coefficient streams  
+- normalizing pole slots
+
+---
+
+# **4. Kernel semantics**
+
+GM(K) defines the semantics of charts:
+
+### **4.1 Grade is a *view***  
+Grade $z$ is not a physical coordinate.  
+It is a *chart*.
+
+### **4.2 Winding is the *generator coordinate***  
+All dynamics, twists, transport, and SID/PED geometry act on **w**.
+
+### **4.3 Kernels never modify Φ**  
+Changing the chart never recomputes the generator.
+
+### **4.4 Kernels never apply twists**  
+Twists act on **w**, not on **z**.
+
+### **4.5 Kernels never touch n** 
+
+- winding coordinate  
+- display coordinate 
+
+Family label is orthogonal.
+
+---
+
+# **5. Kernel operations in software**
+- chart normalization 
+
+GM(K) defines the chart API:
+
+```
+series = machine(n, Phi, twists).emit(K, q, truncation)
+```
+
+Operations:
+
+- `apply_kernel(K)`  
+- `compose_kernel(K1, K2)`  
+- `invert_kernel(K)`  
+- `normalize_pole(K)`  
+- `export_series(K, format)`  
+
+This is the layer that lets you:
+
+- switch charts without touching Φ  
+- compare two machines under a common chart  
+- test identities by chart normalization  
+- export to CAS formats without rewriting indices
+
+---
+
+# **6. Kernel examples in the RDG corpus**
+
+- carry front  
+- digit block  
+
+
+GM(K) already applies to:
+
+- block‑defect spectra  
+- carry‑front anomalies  
+- Q‑slice discontinuities  
+- lacunary SID/PED slices  
+- digit‑block expansions of $1/(b^d-1)^2$
+
+These objects have natural **w** coordinates (geometry, combinatorics, or field structure) and arbitrary **z** coordinates (display). GM(K) prevents mixing them.
+
+---
+
+# **7. What GM(K) is *not***  
+
+GM(K) does **not**:
+typed separation
+- 
+- prove modularity  
+- enforce moonshine normalization  
+- stabilize RDG dynamics  
+- define twists  
+- define generators  
+- define families  
+
+It is purely the **chart kernel**:  
+the typed operator that keeps **grade**, **winding**, **label**, and **twist** apart.
+
+---
