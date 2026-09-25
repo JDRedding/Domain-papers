@@ -1,3 +1,4 @@
+## RDG-GM v 1
 ### 1. Free‑grade law (top panel)
 
 chose:
