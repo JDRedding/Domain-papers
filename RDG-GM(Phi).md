@@ -405,7 +405,7 @@ $$
 
 ---
 
-# **3. Kernel algebra**
+### **3. Kernel algebra**
 - kernel inversion
   
 GM(K) includes a small algebra of kernels:
