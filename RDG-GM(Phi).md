@@ -298,7 +298,7 @@ GM(K) is the **chart kernel**: the typed operator that maps *winding coordinate*
 
 ---
 
-## **0. Typed signature**
+### **0. Typed signature**
 
 GM(K) is a typed morphism:
 
@@ -317,7 +317,7 @@ It is a *chart operator*.
 
 ---
 
-## **1. Purpose inside the GM stack**
+### **1. Purpose inside the GM stack**
 - index shift  
 - pole slot  
 
@@ -339,11 +339,11 @@ All of those are **chart operations**, not generator operations.
 
 ---
 
-## **2. Kernel types**
+### **2. Kernel types**
 
 GM(K) defines a **typed family** of kernels. Each kernel is a morphism $K$ with a declared type:
 
-### **2.1 Standing kernel**
+#### **2.1 Standing kernel**
 
 $$
 K_{\mathrm{std}}(w)=w-1
@@ -353,7 +353,7 @@ $$
 - Classical moonshine chart  
 - Default for GM(Φ)
 
-### **2.2 Identity kernel**
+#### **2.2 Identity kernel**
 
 $$
 K_{\mathrm{id}}(w)=w
@@ -363,7 +363,7 @@ $$
 - No pole slot  
 - CAS‑friendly
 
-### **2.3 Negation kernel**
+#### **2.3 Negation kernel**
 
 $$
 K_{\mathrm{neg}}(w)=-w
@@ -372,7 +372,7 @@ $$
 - Non‑positive Laurent series  
 - Useful for backward spectra
 
-### **2.4 Shifted / centered kernels**
+#### **2.4 Shifted / centered kernels**
 
 $$
 K_{n}(w)=w-n
@@ -381,7 +381,7 @@ $$
 - Weight/level‑dependent lowest grade  
 - Used for modular forms of weight $n$
 
-### **2.5 Scaled kernels**
+#### **2.5 Scaled kernels**
 - folded kernel  
 - scaled kernel
   
@@ -394,7 +394,7 @@ $$
 - arithmetic progression  
 - spectral thinning
 
-### **2.6 Folded kernel**
+#### **2.6 Folded kernel**
 
 $$
 K_{\mathrm{fold}}(w)=\|w-1\|
@@ -410,7 +410,7 @@ $$
   
 GM(K) includes a small algebra of kernels:
 
-### **3.1 Composition**
+#### **3.1 Composition**
 
 $$
 K_2\circ K_1:\ w\mapsto K_2(K_1(w))
@@ -419,7 +419,7 @@ $$
 Example:  
 Fold then scale → lacunary one‑sided GF.
 
-### **3.2 Affine closure**
+#### **3.2 Affine closure**
 All kernels are affine maps:
 
 $$
@@ -431,7 +431,7 @@ with $a,b\in\mathbb{Z}$ or $\mathbb{Q}$.
 This is the **chart algebra**.  
 GM forbids nonlinear kernels because they destroy the typed separation between generator and display.
 
-### **3.3 Kernel inversion**
+#### **3.3 Kernel inversion**
 
 If $a\neq 0$:
 
@@ -447,24 +447,24 @@ Used for:
 
 ---
 
-## **4. Kernel semantics**
+### **4. Kernel semantics**
 
 GM(K) defines the semantics of charts:
 
-### **4.1 Grade is a *view***  
+#### **4.1 Grade is a *view***  
 Grade $z$ is not a physical coordinate.  
 It is a *chart*.
 
-### **4.2 Winding is the *generator coordinate***  
+#### **4.2 Winding is the *generator coordinate***  
 All dynamics, twists, transport, and SID/PED geometry act on **w**.
 
-### **4.3 Kernels never modify Φ**  
+#### **4.3 Kernels never modify Φ**  
 Changing the chart never recomputes the generator.
 
-### **4.4 Kernels never apply twists**  
+#### **4.4 Kernels never apply twists**  
 Twists act on **w**, not on **z**.
 
-### **4.5 Kernels never touch n** 
+#### **4.5 Kernels never touch n** 
 
 - winding coordinate  
 - display coordinate 
@@ -473,7 +473,7 @@ Family label is orthogonal.
 
 ---
 
-## **5. Kernel operations in software**
+### **5. Kernel operations in software**
 - chart normalization 
 
 GM(K) defines the chart API:
@@ -499,7 +499,7 @@ This is the layer that lets you:
 
 ---
 
-## **6. Kernel examples in the RDG corpus**
+### **6. Kernel examples in the RDG corpus**
 
 - carry front  
 - digit block  
@@ -517,7 +517,7 @@ These objects have natural **w** coordinates (geometry, combinatorics, or field 
 
 ---
 
-## **7. What GM(K) is *not***  
+### **7. What GM(K) is *not***  
 
 GM(K) does **not**:
 typed separation
