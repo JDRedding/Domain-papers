@@ -1,0 +1,26 @@
+RDG–GM v2 VISUAL 
+--------------------------------
+1. Free grade (shape 1)
+   c_n(z) = e^(−0.12z)cos(0.7w) + 0.12 − ½
+   → baseline backbone law; n is label only.
+   → smooth decay + oscillation = unforced grade evolution.
+
+2. Periodic‑in‑n (shape 2)
+   c_n(z + n) = c_n(z)
+   → introduces grade periodicity (usually rejected).
+   → pink waveform shows forced repetition; gold ghost shows free law.
+
+3. Replication / transport (shape 3)
+   c_n(w) = 0.85 c_n(w−1) − 0.40 c_n(w−2), w ≥ 2
+   → F‑law: later coefficients generated from early seeds.
+   → extra structure, not part of backbone.
+
+4. Twist A vs Twist C
+   Law A: c^(A)(w) = c(w + k) (K‑shift, suffix operator)
+   Law C: c^(C)(w) = c((w + k) mod n) (rejected, not K‑compatible)
+   → blue curve = accepted suffix shift;
+     red curve = excluded periodic wrap.
+
+Axes:
+   horizontal: grade axis z = w − 1
+   vertical: ℜ c (real part of coefficient)
