@@ -72,7 +72,7 @@ are optional layers built on top of this backbone.
 
 ## APPENDIX: **RDG‑GM Charts**
 
-## **1. Purpose of Charts**
+### **1. Purpose of Charts**
 
 A **chart** is a bijection (or partial map)  
 
@@ -101,7 +101,7 @@ The grade axis $z\in Z$ is a *view* of the same data.
 
 ---
 
-## **2. Standing Chart (RDG Default)**
+### **2. Standing Chart (RDG Default)**
 
 $$
 z=w-1,\qquad w=z+1.
@@ -127,7 +127,7 @@ This chart aligns:
 
 ---
 
-## **3. Identity Chart**
+### **3. Identity Chart**
 
 $$
 z=w,\qquad w=z.
@@ -146,7 +146,7 @@ No negative powers.
 
 ---
 
-## **4. Opposite Offset**
+### **4. Opposite Offset**
 
 $$
 z=1-w,\qquad w=1-z.
@@ -164,7 +164,7 @@ Reverses the stream and centers the constant term at $z=1$.
 
 ---
 
-## **5. Pure Negation**
+### **5. Pure Negation**
 
 $$
 z=-w,\qquad w=-z.
@@ -182,7 +182,7 @@ Laurent series with non‑positive powers only.
 
 ---
 
-## **6. $n$-Shifted Chart**
+### **6. $n$-Shifted Chart**
 
 $$
 z=w-n,\qquad w=z+n.
@@ -201,7 +201,7 @@ Natural when $n$ is a weight or level.
 
 ---
 
-## **7. $n$-Centered Chart**
+### **7. $n$-Centered Chart**
 
 $$
 z=w-n-1,\qquad w=z+n+1.
@@ -219,7 +219,7 @@ Lowest term is always $q^{-n-1}$.
 
 ---
 
-## **8. Scaled Chart**
+### **8. Scaled Chart**
 
 $$
 z=kw-m,\qquad k\in\mathbb{Z}_{\ne0},\;m\in\mathbb{Z}.
@@ -237,7 +237,7 @@ Lacunary, even/odd, mod‑$N$, or arithmetic progression series.
 
 ---
 
-## **9. Folded (Absolute) Chart**
+### **9. Folded (Absolute) Chart**
 
 Non‑invertible.
 
@@ -258,19 +258,19 @@ Produces a one‑sided generating function from a two‑sided stream.
 
 ---
 
-## **10. Twist Compatibility**
+### **10. Twist Compatibility**
 
 Twists always act on **w**, never on **n**, never on **z**.
 
 Given a chart $\gamma:W\to Z$:
 
-### **Law A (shift)**  
+#### **Law A (shift)**  
 $$
 (\tau_k c^{\mathrm{grade}})(z)
 = c^{\mathrm{grade}}(\gamma(w+k)).
 $$
 
-### **Law B (character)**  
+#### **Law B (character)**  
 $$
 (\tau_k c^{\mathrm{grade}})(z)
 = \chi(k,w)\,c^{\mathrm{grade}}(\gamma(w)).
@@ -281,7 +281,7 @@ If $\gamma$ is non‑invertible (folded chart), twists become multi‑valued or 
 
 ---
 
-## **11. Recommended Default Pair**
+### **11. Recommended Default Pair**
 
 - **Wind chart (native):** $w$  
 - **Grade chart (display):** any of 0–5 above  
@@ -298,7 +298,7 @@ GM(K) is the **chart kernel**: the typed operator that maps *winding coordinate*
 
 ---
 
-# **0. Typed signature**
+## **0. Typed signature**
 
 GM(K) is a typed morphism:
 
@@ -317,7 +317,7 @@ It is a *chart operator*.
 
 ---
 
-# **1. Purpose inside the GM stack**
+## **1. Purpose inside the GM stack**
 - index shift  
 - pole slot  
 
@@ -339,7 +339,7 @@ All of those are **chart operations**, not generator operations.
 
 ---
 
-# **2. Kernel types**
+## **2. Kernel types**
 
 GM(K) defines a **typed family** of kernels. Each kernel is a morphism $K$ with a declared type:
 
@@ -447,7 +447,7 @@ Used for:
 
 ---
 
-# **4. Kernel semantics**
+## **4. Kernel semantics**
 
 GM(K) defines the semantics of charts:
 
@@ -473,7 +473,7 @@ Family label is orthogonal.
 
 ---
 
-# **5. Kernel operations in software**
+## **5. Kernel operations in software**
 - chart normalization 
 
 GM(K) defines the chart API:
@@ -499,7 +499,7 @@ This is the layer that lets you:
 
 ---
 
-# **6. Kernel examples in the RDG corpus**
+## **6. Kernel examples in the RDG corpus**
 
 - carry front  
 - digit block  
@@ -517,7 +517,7 @@ These objects have natural **w** coordinates (geometry, combinatorics, or field 
 
 ---
 
-# **7. What GM(K) is *not***  
+## **7. What GM(K) is *not***  
 
 GM(K) does **not**:
 typed separation
