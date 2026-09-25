@@ -521,7 +521,7 @@ These objects have natural **w** coordinates (geometry, combinatorics, or field 
 
 GM(K) does **not**:
 typed separation
-- 
+
 - prove modularity  
 - enforce moonshine normalization  
 - stabilize RDG dynamics  
