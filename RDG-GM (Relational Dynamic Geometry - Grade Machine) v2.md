@@ -1,4 +1,5 @@
 # RDG-GM (Relational Dynamic Geometry - Grade Machine)
+v.2
 
 **Variables:** $n$, $z$, $w$
 
