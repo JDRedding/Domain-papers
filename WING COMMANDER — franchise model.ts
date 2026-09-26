@@ -1,5 +1,5 @@
 // WING COMMANDER — franchise model
-// plain ASCII, copyable
+// https://www.wcnews.com/
 
 enum Medium {
   GAME,
