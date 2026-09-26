@@ -36,3 +36,34 @@ Secret societies also played pivotal roles in political movements. The Sons of L
 In the 18th and 19th centuries, many secret societies formed for social, charitable, or educational purposes. Freemasonry, which evolved from medieval stonemason guilds, became a prominent example. It emphasized moral development, symbolic rituals, and mutual support among members.
 
 In the United States, secret societies also helped immigrants maintain cultural ties and social networks. College-based societies, such as the Cambridge Apostles or Episkopon in Canada, combined intellectual pursuits with ritualized secrecy.
+
+### Secret Societies: Core Rules
+
+Secret societies differ in purpose and era, but they usually rest on a small set of operating rules.
+
+#### The Four Core Rules
+
+1. **Membership is closed.**  
+   Entry is limited. Outsiders are not automatically welcome, and admission is granted only after some form of selection or invitation.
+
+2. **Initiation is required.**  
+   New members pass through a formal ceremony or ordeal. The rite marks the boundary between outsider and insider.
+
+3. **Knowledge is reserved.**  
+   Certain teachings, signs, histories, or methods are kept inside the group. Access is earned, not public.
+
+4. **Silence is obligatory.**  
+   Members are bound to keep internal matters confidential. Breach of secrecy is treated as a serious offense.
+
+#### How Secrecy Is Practiced
+
+- Some groups admit they exist but hide their inner workings.  
+- Others conceal their existence entirely, especially when facing persecution or legal risk.
+
+#### Recurring Tools
+
+- Symbols  
+- Passwords or recognition signs  
+- Ranked or hierarchical structure  
+
+These tools enforce the four rules: they identify members, control access to knowledge, and keep the group coherent without exposing it.
