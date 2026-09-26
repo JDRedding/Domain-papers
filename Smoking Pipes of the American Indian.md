@@ -85,6 +85,114 @@ A cautious note is needed. Nineteenth-century catalogues mixed nations, findspot
 
 **Geometric collars, trumpets, and jar-shaped bowls.** Many Iroquoian pipes have no animal at all: barrel, conical, collared, and trumpet bowls with incised lines, punctates, and cord-wrapped impressions. Those marks still sit in the same ceremonial field. They are the ordinary language of Iroquoian ceramics transferred onto an object that will hold fire.
 
+Several pipes sit in more than one group on purpose. *Bird with Human Head* is both bird and human. *Hourglass Tubular Totem Pipe* is both a shape and an animal being. That overlap is the point: Iroquoian and related pipe symbolism stacks motifs instead of keeping them separate.
+
+### Birds and pigeons
+Smoke and flight use the same path.
+
+| Pipe | Location |
+|---|---|
+| Stone Bird Pipe | Allegheny County, Pennsylvania |
+| Mound Bird Pipe | Great Plains |
+| Stone Pigeon Pipe | Monroe County, Tennessee |
+| Stone Swan Pipe | Mineral County, West Virginia |
+| Iroquoian Pottery Pigeon Pipe | Cayuga County, New York |
+| Turkey Tracks Tubular Pipe | Miller County, Georgia |
+| Bird with Human Head | Chillicothe, Ohio |
+
+### Human faces, heads, and body parts
+The smoker faces another person—or part of one.
+
+| Pipe | Location |
+|---|---|
+| Human Head Pipe | West Virginia |
+| Human Hand and Arm | Illinois |
+| Mound Indian Head Pipe | Mound City, Ohio |
+| Quartzite Figure Pipe | Sierra County, Arkansas |
+| Idol Pipe | Hollywood, California |
+| Bird with Human Head | Chillicothe, Ohio |
+
+### Animals, hybrids, and other-than-human beings
+Effigy as companion, helper, or being addressed through smoke.
+
+| Pipe | Location |
+|---|---|
+| Animal Head Pipe | Pennsylvania |
+| Man-Beast Steatite Pipe | American River, California |
+| Totemic Micmac Stone Pipe | St. John River, New Brunswick |
+| Mound Toad Pipe | Hancock County, Ohio |
+| Biconical Frog Pipe | St. Clair County, Michigan |
+| Biconical Animal Pipe | Coahoma County, Mississippi |
+| Tubular Canine Stone Pipe | Willamette Island, Oregon |
+| Mound Snake Pipe | Mound City, Ohio |
+| Hourglass Tubular Totem Pipe | Admiralty Island, Alaska |
+
+### Escutcheon, shield, and badge bowls
+Display form; the bowl itself is an emblem.
+
+| Pipe | Location |
+|---|---|
+| Iroquois Escutcheon Pottery Pipe | Massachusetts |
+
+### Vessel, vase, jar, and bowl forms
+The pipe as pot: collar, trumpet, vase, and simple bowl.
+
+| Pipe | Location |
+|---|---|
+| Vase-Shaped Pipe | Virginia |
+| Pottery Bowl Pipe | Mount Vernon Barracks, Alabama |
+| Iroquoian Pottery Pipe | Iroquois County, Ohio |
+| Iroquoian Pottery Pipe | New York |
+| Iroquoian Pottery Pipe | New York |
+| Pueblo Pottery Pipe | San Juan, New Mexico |
+| Pueblo Pottery Pipe | Zuni, New Mexico |
+| Southern Mound Clay Pipe | Georgia |
+| Pottery Tube Pipe | Iowa River, Iowa |
+
+### Tubes, hourglasses, monitors, and double bowls
+Recurring *shapes* rather than living figures.
+
+| Pipe | Location |
+|---|---|
+| Pottery Tube Pipe | Iowa River, Iowa |
+| Sandstone Tubular Pipe | Puye Reservation, California |
+| Stone Tube with Bone Mouthpiece | Santa Barbara, California |
+| Turkey Tracks Tubular Pipe | Miller County, Georgia |
+| Tubular Canine Stone Pipe | Willamette Island, Oregon |
+| Stone Hourglass Pipe | Nashville, Tennessee |
+| Hourglass Tubular Totem Pipe | Admiralty Island, Alaska |
+| Biconical Stone Pipe | Kingston, Tennessee |
+| Biconical Frog Pipe | St. Clair County, Michigan |
+| Biconical Animal Pipe | Coahoma County, Mississippi |
+| Monitor Pipe | Illinois |
+| Rectangular Stone Pipe | Indiana |
+| Double-Bowled Catlinite Pipe | Hollywood, California |
+
+### Material as motif
+The stone or clay is part of the meaning, even when the form is plain.
+
+| Pipe | Location |
+|---|---|
+| Pipe Bowl of Volcanic Tuff | Oregon |
+| Greenstone Pipe | Santa Fe, New Mexico |
+| Indian Catlinite Pipe | Minnesota |
+| Double-Bowled Catlinite Pipe | Hollywood, California |
+| Ammonite Fossil Pipe | Massachusetts |
+| Wood and Stone Pipe | California |
+| Man-Beast Steatite Pipe | American River, California |
+
+## Regional or cultural types with no named figure
+Still a repeating class in the catalogue: a people-name or site-name standing in for a style.
+
+| Pipe | Location |
+|---|---|
+| Micmac Pipe | Sissiboo, Nova Scotia |
+| Delaware Pipe | Delaware |
+| Cherokee Stone Pipe | Bradley County, Tennessee |
+| Southern Mound Pipe | Seminole County, North Carolina |
+| Southern Mound Pipe | Georgia |
+| Mound Pipe | Mound City, Ohio |
+
 ## Effigies as persons, not pictures
 
 Late Woodland and early historic Iroquoian pipes are famous for modeled faces, animals, birds, and hybrids. Archaeologists generally treat these not as decoration but as *oki* or *ondaki*: potent other-than-human persons who could be addressed through tobacco. Smoking was a bodily exchange with that being. Short stems put the face inches from the smoker’s own.
