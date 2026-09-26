@@ -1,4 +1,4 @@
-## 🔹Prime units and remainder‑chains
+# 🔹Prime units and remainder‑chains
 ## 🧮 Prime $p$, units, and remainder‑chain behavior
 
 Each fact listed corresponds to one of the three SID modes:
