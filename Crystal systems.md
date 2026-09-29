@@ -77,7 +77,7 @@ $$
 a\neq b\neq c,\qquad\alpha\neq\beta\neq\gamma\neq90^{\circ}
 $$ 
 
-(volume given by the general formula above).\
+(volume given by the general formula above).
 
 
 ## **BRAVAIS LATTICE FUNDAMENTALS**
