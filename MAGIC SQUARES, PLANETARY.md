@@ -13,7 +13,7 @@ The first Western mathematical treatise is by the Byzantine scholar Manuel Mosch
 
 In China the 3×3 square was a cosmic map (center 5, odd/even balance). In India and early Arabic medicine it was a practical charm. In medieval Islam it became both a branch of arithmetic and a planetary seal. In Renaissance Europe those seven seals were standardized and printed, which is why the same grids still circulate as “the” planetary magic squares.
 
-**Notation**
+## **Notation**
 
 - $n$: order of the square (here $n = 3,4,5,6,7,8,9$)
 - $N = n^2$: last integer used
@@ -21,7 +21,7 @@ In China the 3×3 square was a cosmic map (center 5, odd/even balance). In India
 - $M(n)$: magic constant (common line sum)
 - $S_{\text{row}}(i)$, $S_{\text{col}}(j)$, $S_{\text{diag}}$, $S_{\text{anti}}$: line sums
 
-**Magic-constant formula**
+### **Magic-constant formula**
 
 $$
 M(n) = \frac{n(n^2 + 1)}{2}
@@ -49,7 +49,7 @@ M(9) &= 369
 \end{align*}
 $$
 
-**Defining conditions of a normal magic square**
+### **Defining conditions of a normal magic square**
 
 The set of entries is exactly
 
@@ -81,13 +81,14 @@ $$
 S_{\text{anti}} = \sum_{i=1}^{n} a_{i,\, n+1-i} = M(n)
 $$
 
-**Total-sum identity (consistency check)**
+## **Total-sum identity**
+(consistency check)
 
 $$
 \sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij} = \frac{n^2(n^2 + 1)}{2} = n \cdot M(n)
 $$
 
-**Planetary assignment used in the squares**
+### **Planetary assignment used in the squares**
 
 $$
 \begin{align*}
@@ -103,7 +104,7 @@ $$
 
 The seven grids satisfy the four families of equations above with the listed $M(n)$.
 
-FUNDAMENTALS
+## FUNDAMENTALS
 
 A normal magic square of order n uses each integer 1..n^2 exactly once.
 Every row, every column, and both main diagonals sum to the same magic constant M.
