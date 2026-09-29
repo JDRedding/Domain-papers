@@ -1,13 +1,13 @@
 # Sandwich-on-a-stick
 **Sandwich-on-a-stick** is a deconstructed sandwich on a skewer: bread cubes, folded deli meat, cheese, and vegetables, with sauce on the side so nothing gets soggy. Use 4–6 inch bamboo skewers for lunches or 8–12 inch skewers for parties. Hearty bread (Italian, ciabatta, baguette, toasted white) holds up best. Fold meats accordion-style so they stay put.
 
-## Core assembly rules
+## Assembly rules
 - Cut everything into similar bite-size pieces (~¾–1 inch).
 - Start and end with bread so the stack stays together.
 - Keep wet ingredients (tomato, pickle, lettuce) away from bread until serving if packing ahead.
 - Serve condiments on the side: mayo, mustard, ranch, Italian vinaigrette, Thousand Island, or marinara.
 
-## Classic recipes
+### Classic recipes ideas
 
 **Ham & cheese (simplest lunch version)**  
 Thread: bread cube → folded ham → cheddar cube → lettuce or pickle → ham → cheese → bread.  
