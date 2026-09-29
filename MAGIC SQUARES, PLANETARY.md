@@ -81,7 +81,7 @@ $$
 S_{\text{anti}} = \sum_{i=1}^{n} a_{i,\, n+1-i} = M(n)
 $$
 
-## **Total-sum identity**
+### **Total-sum identity**
 (consistency check)
 
 $$
@@ -109,13 +109,13 @@ The seven grids satisfy the four families of equations above with the listed $M(
 A normal magic square of order n uses each integer 1..n^2 exactly once.
 Every row, every column, and both main diagonals sum to the same magic constant M.
 
-TYPE
+#### TYPE
 ```
 square[n][n] : integers
 order n      : 3..9
 magic constant M(n) = n * (n*n + 1) / 2
 ```
-VARIABLES
+#### VARIABLES
 ```
 n = order
 N = n*n                 # last number placed
@@ -124,13 +124,13 @@ M = n*(n*n + 1)//2      # shared sum
 M(3)=15   M(4)=34   M(5)=65   M(6)=111
 M(7)=175  M(8)=260  M(9)=369
 ```
-SATURN   n=3   M=15
+### SATURN   n=3   M=15
 ```
 4  9  2
 3  5  7
 8  1  6
 ```
-JUPITER  n=4   M=34
+### JUPITER  n=4   M=34
 ```
  1 14 15  4
 12  7  6  9
@@ -138,7 +138,7 @@ JUPITER  n=4   M=34
 13  2  3 16
 ```
 
-MARS     n=5   M=65
+### MARS     n=5   M=65
 ```
 17 24  1  8 15
 23  5  7 14 16
@@ -147,7 +147,7 @@ MARS     n=5   M=65
 11 18 25  2  9
 ```
 
-SUN      n=6   M=111
+### SUN      n=6   M=111
 ```
  6 32  3 34 35  1
  7 11 27 28  8 30
@@ -157,7 +157,7 @@ SUN      n=6   M=111
 36  5 33  4  2 31
 ```
 
-VENUS    n=7   M=175
+### VENUS    n=7   M=175
 ```
 22 47 16 41 10 35  4
  5 23 48 17 42 11 29
@@ -168,7 +168,7 @@ VENUS    n=7   M=175
 46 15 40  9 34  3 28
 ```
 
-MERCURY  n=8   M=260
+### MERCURY  n=8   M=260
 ```
 64  2  3 61 60  6  7 57
  9 55 54 12 13 51 50 16
@@ -180,7 +180,7 @@ MERCURY  n=8   M=260
  8 58 59  5  4 62 63  1
 ```
 
-MOON     n=9   M=369
+### MOON     n=9   M=369
 ```
 47 58 69 80  1 12 23 34 45
 57 68 79  9 11 22 33 44 46
