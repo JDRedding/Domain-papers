@@ -1,6 +1,5 @@
 
 # SEVEN PLANETARY MAGIC SQUARES
-Source tradition: Agrippa, Occult Philosophy, Book II, Ch. 22
 
 **Notation**
 
@@ -181,3 +180,5 @@ MOON     n=9   M=369
 37 48 59 70 81  2 13 24 35
 ```
 
+## Further reading
+Source tradition: Agrippa, Occult Philosophy, Book II, Ch. 22
