@@ -133,7 +133,7 @@ Common dualities: sc $\leftrightarrow$ sc, fcc $\leftrightarrow$ bcc, bcc $\left
 
 **MILLER INDICES NOTATION**
 
-Planes: $(hkl)$ — intercepts $a/h$, $b/k$, $c/l$ (negative indices written with overbar, e.g. $(\bar{1}10)$).
+Planes: $(hkl)$ — intercepts $a/h$, $b/k$, $c/l$ (negative indices written with overbar, e.g. $\bar{1}10$.
 
 Family of equivalent planes: $\{hkl\}$.
 
@@ -167,7 +167,15 @@ $$
 
 **INTERPLANAR SPACING $d_{hkl}$**
 
-General relation: $d_{hkl}=2\pi/|\mathbf{G}_{hkl}|$ (physics convention) or $d_{hkl}=1/|\mathbf{G}_{hkl}|$ (crystallographic convention without $2\pi$).
+General relation: 
+
+$d_{hkl}=2\pi/|\mathbf{G}_{hkl}|$ 
+
+(physics convention) or 
+
+$d_{hkl}=1/|\mathbf{G}_{hkl}|$ 
+
+(crystallographic convention without $2\pi$).
 
 Cubic ($a=b=c$, all angles $90^\circ$):
 
