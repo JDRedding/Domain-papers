@@ -232,3 +232,170 @@ $$
 
 (or, in reciprocal space, diffraction occurs when the scattering vector equals a reciprocal-lattice vector $\mathbf{G}_{hkl}$).
 
+## ASCII Shapes
+
+### Simple cubic (cP)
+
+```text
+      z
+      ^
+      |
+  o-------o
+ /|      /|
+o-------o |
+| |     | |
+| o-----|-o
+|/      |/
+o-------o --> x
+
+(y coming out of screen)
+```
+
+---
+
+### Body‑centered cubic (cI)
+
+```text
+Corner atoms + one in the center
+
+o-------o
+|\     /|
+| o---o |
+|/     \|
+o-------o
+```
+
+---
+
+### Face‑centered cubic (cF)
+
+```text
+Corner atoms + centers of each face
+
+o---o---o
+| \ | / |
+o---o---o
+| / | \ |
+o---o---o
+```
+
+---
+
+### Tetragonal (tP) — like stretched cubic
+
+```text
+c ≠ a = b
+
+Top face (smaller or taller in z):
+
+o-------o
+|       |
+|       |
+o-------o
+
+Bottom face:
+
+o-------o
+|       |
+|       |
+o-------o
+```
+
+---
+
+### Orthorhombic (oP) — all edges different
+
+```text
+a ≠ b ≠ c
+
+o---------o
+|\        |
+| \       |
+|  o------o
+| /       |
+|/        |
+o---------o
+```
+
+---
+
+### Hexagonal (hP) — hexagonal prism
+
+```text
+Top hexagon:
+
+   o-----o
+  /       \
+ o         o
+ |         |
+ o         o
+  \       /
+   o-----o
+
+Vertical prism (c along z):
+
+(top hexagon)
+   o-----o
+  /|    /|
+ o |   o |
+ | o---|-o
+ o/    o/
+   o-----o
+(bottom hexagon)
+```
+
+---
+
+### Rhombohedral (hR / rhombohedral axes)
+
+```text
+All edges equal, all angles equal but ≠ 90°
+
+Skewed parallelepiped:
+
+o--------o
+ \       |
+  o------o
+  |      /
+  o-----o
+```
+
+---
+
+### Monoclinic (mP, unique axis b)
+
+```text
+α = γ = 90°, β ≠ 90°
+
+Front face rectangular, back face tilted:
+
+o-------o
+|       |
+|       |
+o-------o
+ \      \
+  o------o
+  |      |
+  |      |
+  o------o
+```
+
+---
+
+### Triclinic (aP) — fully skewed
+
+```text
+No angles 90°, all edges different
+
+o--------o
+ \       \
+  o-------o
+  |\      |
+  | o-----o
+  |/      /
+  o------o
+```
+
+
+
+
