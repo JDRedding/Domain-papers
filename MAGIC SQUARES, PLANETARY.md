@@ -1,6 +1,18 @@
 
 # SEVEN PLANETARY MAGIC SQUARES
 
+Magic squares begin as a small Chinese number-diagram used for ritual and cosmology, then spread and change function: first as medical and divinatory devices in India and the Islamic world, later as objects of systematic construction, and finally as planetary talismans in Renaissance Europe. The “4,200-year-old turtle” story is legend; the documentary trail is much later and more specific.
+
+Legend ties the unique normal square of order 3 to the *Luoshu* (“Luo River writing”): a turtle emerges from the Luo River bearing a 3×3 pattern of dots that Emperor Yu uses while controlling floods. That myth is often back-dated to the third millennium BCE, but early “river map” mentions are ambiguous. The first clear numerical 3×3 appears in Chinese sources around 190 BCE–1st century CE (*Shushu jiyi*; the *Mingtang* chapter of the *Da Dai Liji*), where it is the “Nine Halls” arrangement used in rites, astrology, and spatial symbolism. Only from about the 12th century is that grid routinely identified with the *Luoshu*. Higher-order Chinese squares (Yang Hui, 13th century) come later and already look indebted to foreign methods.
+
+The earliest firmly dated square outside China is not the 3×3 but an order-4 arrangement in Varāhamihira’s *Bṛhatsaṃhitā* (c. 550 CE), used to fix quantities of perfume ingredients. He calls the figure a turtle’s carapace—an echo of the Chinese turtle motif. A 3×3 square appears in Indian medical writing by about 900 CE; later tradition also links small squares to pacifying the nine planets. Transmission from China into India between the 4th and 6th centuries is plausible given the shared turtle imagery and the timing.
+
+Arabic texts from the 9th–10th centuries already treat squares as useful objects, not just curiosities. Al-Ṭabarī’s medical encyclopedia uses the 3×3 square in childbirth practice, close in time and function to Indian medical use—strong evidence that the Islamic tradition first absorbed squares from India rather than only from China. By c. 983 the *Rasāʾil Ikhwān al-Ṣafāʾ* (Brethren of Purity) displays specimens of orders 3 through 9. Construction methods then multiply (bordered squares, letter-number *wafq* figures). Astral use follows: the *Ghāyat al-Ḥakīm* (*Picatrix*) and later Andalusian writers attach the first seven squares to the seven classical planets as talismans.
+
+The first Western mathematical treatise is by the Byzantine scholar Manuel Moschopoulos (c. 1315), who strips away much of the occult framing and gives construction rules. In 1514 Dürer embeds a 4×4 square in *Melencolia I*. Heinrich Cornelius Agrippa’s *De occulta philosophia* (published 1531/1533), Book II, chapter 22, is the source behind the seven “planetary” grids in the original post: Saturn $3\times3$, Jupiter $4\times4$, Mars $5\times5$, Sun $6\times6$, Venus $7\times7$, Mercury $8\times8$, Moon $9\times9$, each with names, intelligences, spirits, and seals drawn from the line-sum $M(n)=\frac{n(n^2+1)}{2}$. Agrippa is compiling an already Islamic–Latin talismanic package, not inventing the squares.
+
+In China the 3×3 square was a cosmic map (center 5, odd/even balance). In India and early Arabic medicine it was a practical charm. In medieval Islam it became both a branch of arithmetic and a planetary seal. In Renaissance Europe those seven seals were standardized and printed, which is why the same grids still circulate as “the” planetary magic squares.
+
 **Notation**
 
 - $n$: order of the square (here $n = 3,4,5,6,7,8,9$)
