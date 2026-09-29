@@ -189,17 +189,15 @@ Example: Rolfe, 8 June 1617, to Sandys, Ferrar-endorsed — double authorship pl
 
 ### Maidens / household
 
-$$
-{proposes} &\subseteq P\times \Pi \\
-{subscribes} &\subseteq P\times \Pi \times £ \\
-{recruits} &\subseteq C\times W \times \Pi \\
-{ships_{W}} &\subseteq V\times W \times E \\
-{lodges} &\subseteq P\times W \times I \\
-{may_{marry}} &\subseteq W\times H \times \Pi \\
-{marries} &\subseteq W\times H \times E \\
-{pays_{tobacco}} &\subseteq H \times C\times \mathbb{R_{\ge 0}} \\
-{ties \to soil} &\subseteq H \times S\times I
-$$
+- $\mathrm{proposes} \subseteq P \times \Pi$
+- $\mathrm{subscribes} \subseteq P \times \Pi \times £$
+- $\mathrm{recruits} \subseteq C \times W \times \Pi$
+- $\mathrm{shipsW} \subseteq V \times W \times E$
+- $\mathrm{lodges} \subseteq P \times W \times I$
+- $\mathrm{mayMarry} \subseteq W \times H \times \Pi$
+- $\mathrm{marries} \subseteq W \times H \times E$
+- $\mathrm{paysTobacco} \subseteq H \times C \times \mathbb{R}_{\ge 0}$
+- $\mathrm{tiesToSoil} \subseteq H \times S \times I$
 
 Encoded constraints from the minutes, not atmosphere:
 
