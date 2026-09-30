@@ -1,5 +1,5 @@
 # Oscillators
-AIM-239 (Roe). Formulas below the captions are later commentary.
+AIM-239 (Roe). Formula commentary.
 
 **I. Crystal Overtone Oscillator (Transistor)**
 
