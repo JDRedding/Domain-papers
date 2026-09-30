@@ -1,4 +1,4 @@
-# Sigma–Tau Cayley Graph (G_N)
+# Sigma–Tau Cayley Graph ($G_N$)
 ## The $\sigma$ - $\tau$ graph
 
 Let $S_N$ be the symmetric group on $\{1,2,\dots,N\}$. Write permutations in one-line notation
