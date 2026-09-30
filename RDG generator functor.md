@@ -65,7 +65,7 @@ RDG(𝓒) = SID⟨ S , I , D ⟩
 
 ---
 
-### 3. Action of the functor
+### Action of the functor
 
 Given free data $D$, the generator functor produces the following.
 
@@ -110,7 +110,7 @@ Examples:
 
 ---
 
-## 4. Full definition
+## Full definition
 
 $$
 \Gamma(D) =
