@@ -1,5 +1,5 @@
 # Block Diagram Transformations
-10 standard rules for simplifying control system diagrams.
+10 standard rules for simplifying control system diagrams. This illustrates techniques such as combining blocks in cascade or parallel, eliminating feedback loops, rearranging summing points, and moving takeoff points with corresponding equations and visual equivalents.
 
 Standard block-diagram notation: 
 - $X,Y,Z,W$ are signals, 
