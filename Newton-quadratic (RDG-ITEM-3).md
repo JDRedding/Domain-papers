@@ -63,7 +63,7 @@ Two roots are the only free data; midpoint, bisector, basins and both conjugacie
 ```
 
 ## Calculus analogue 
-RDG‑TEM‑CALC‑1 
+RDG‑ITEM‑CALC‑1 
 
 Same typed‑object, constructor, algebra, dynamics, and sphere‑model format** for a *matching diagram* that feels like a sibling to r Newton dyad. Below is the module: the calculus counterpart to r Newton‑quadratic page.
 
