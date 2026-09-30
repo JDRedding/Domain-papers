@@ -1,5 +1,12 @@
 # Newton-quadratic 
-RDG-TEM-3 
+- RDG-TEM-3
+
+## **Newton dyad** ($r_1,r_2$)
+Two roots are the only free data; midpoint, bisector, basins and both conjugacies are derived.
+
+- **Root-bisector system** — two geometric generators that actually organize the plane: the pair and its perpendicular bisector.
+- **Midpoint Newton** — the single critical point that splits the dynamics ($m\mapsto\infty$).
+- **Conjugate Newton pair** —  the whole object *is* the pair of models $z\mapsto(z+1/z)/2$ and $z\mapsto z^2$.
 
 ## OBJECTS
 ```
