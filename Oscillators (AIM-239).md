@@ -1,57 +1,33 @@
 # Oscillators
-AIM-239
+AIM-239 (Roe). Formulas below the captions are later commentary.
 
 **I. Crystal Overtone Oscillator (Transistor)**
 
-Variables:  
-$R_1$ = bias resistor, $R_2$ = emitter resistor, $C_1$ = feedback capacitor, $L_1$ = tank coil, $D_1$ = amplitude limiter.
+On the plate: BJT, crystal (diamond) in the base loop, collector tank $L_1$, 1 M / 220 k bias, 1 k emitter with 0.01 µF bypass.
 
-Fundamentals:  
-Operates on crystal overtone (3rd or 5th). Frequency $\approx$ overtone $\times$ fundamental. Stable, high-frequency reference.
-
-Crystal series resonance  
+The tank selects the 3rd/5th overtone. The diamond is the crystal, not a limiter diode.
 
 $$
-f_s=\frac{1}{2\pi\sqrt{L_m C_m}}
-$$
-
-Odd overtone ($n=3,5,\dots$)  
-
-$$
-f_n\approx n\,f_s
-$$
-
-Collector tank used to select the overtone  
-
-$$
+f_s=\frac{1}{2\pi\sqrt{L_m C_m}},\qquad
+f_n\approx n\,f_s\ (n=3,5,\dots),\qquad
 f_\text{tank}=\frac{1}{2\pi\sqrt{L_1 C}}
 $$
 
 **II. Crystal Fundamental Oscillator (Transistor, TTL Drive)**
 
-Variables:  
-$R_1$ = bias resistor, $R_2$ = emitter resistor, $C_1$ = coupling capacitor, XTAL = fundamental-mode crystal.
+On the plate: BJT, crystal, 1 M feedback, 2.7 k to +5 V, TTL buffer. Marked $X_C\sim 1\,\text{k}$ = capacitive reactance at the operating frequency.
 
-Fundamentals:  
-Pierce configuration. Drives $\ge 1$ TTL load. Frequency stability $\pm 50$ ppm typical.
-
-Load-resonant (Pierce) frequency  
+Drives ≥ 1 TTL load (original). $\pm 50$ ppm is not in HAKMEM.
 
 $$
 f_L\approx f_s\left(1+\frac{C_m}{2(C_0+C_L)}\right)
 $$
 
-where $C_L$ is the effective load capacitance seen by the crystal.
-
 **III. CMOS Crystal Oscillator (CD4001AE)**
 
-Variables:  
-$R_1,R_2$ = feedback resistors, XTAL = low-frequency crystal.
+On the plate: ¼ CD4001AE NOR, 1–10 pF trim, 1 M, 100 pF to ground, gated buffers, 1 TTL load.
 
-Fundamentals:  
-CMOS Pierce oscillator. Draws $\approx 330\,\mu\text{A}$ no-load. Frequency shift $\approx 10\,\text{Hz/V}$ supply.
-
-Same Pierce relation as above. Supply pushing is an empirical first-order term  
+Original numbers: $\approx 330\,\mu\text{A}$ unloaded at 5.4 V; $\approx 10\,\text{Hz/V}$ with a 165 kHz, 32 pF crystal.
 
 $$
 \Delta f\approx 10\,\text{Hz/V}\times\Delta V_{DD}
@@ -59,53 +35,36 @@ $$
 
 **IV. IC Crystal Oscillator (Integrated Pierce)**
 
-Variables:  
-$R_1$ = feedback resistor, XTAL = fundamental crystal.
+On the plate: two inverters + crystal; same skeleton as V.
 
-Fundamentals:  
-IC-based Pierce oscillator. Sensitive to stray/holder capacitance. May oscillate at a parasitic frequency if layout is poor.
-
-Frequency still follows the load-capacitance formula. Extra stray $C_s$ appears as  
+Roe: be careful and lucky — it may run on holder capacitance instead of the crystal.
 
 $$
-C_L'=C_L+C_s\qquad\Rightarrow\qquad f_L'=f_s\left(1+\frac{C_m}{2(C_0+C_L')}\right)
+C_L'=C_L+C_s \quad\Rightarrow\quad
+f_L'=f_s\left(1+\frac{C_m}{2(C_0+C_L')}\right)
 $$
 
-A poorly laid-out board can therefore pull the oscillator onto a spurious mode or an overtone.
+**V. Non-Crystal Oscillator (RC / 7404)**
 
-**V. Non-Crystal Oscillator (RC/CMOS)**
+On the plate: **7404** TTL hex inverter, two 560 Ω resistors, two capacitors $C$, extra inverter out. Not CMOS.
 
-Variables:  
-$R_1$ = feedback resistor, $C_1$ = timing capacitor.
+Written on the drawing:
 
-Fundamentals:  
-Free-running RC oscillator. Frequency $\approx 1/(R_1\times C_1)$.  
-$100\,\text{pF}\to\sim 10\,\text{MHz}$; $1300\,\text{pF}\to\sim 0.5\,\text{MHz}$.
-
-Post approximation  
+- $100\,\text{pF}\to\sim 10\,\text{MHz}$
+- $1300\,\text{pF}\to\sim 0.5\,\text{MHz}$
 
 $$
-f\approx\frac{1}{R_1 C_1}
+f\approx\frac{1}{RC}\quad\text{or}\quad f\approx\frac{k}{RC}\ (0.5\le k\le 1)
 $$
 
-Common two-/three-inverter refinement  
-
-$$
-f\approx\frac{1}{2.2\,R C}\quad\text{or}\quad f\approx\frac{k}{RC}\quad(0.5\le k\le 1)
-$$
+Comparison baseline for IV.
 
 **VI. Blocking Oscillator (Transformer-Coupled)**
 
-Variables:  
-$L_1$ = primary coil, $L_2$ = feedback coil, $R_1$ = base resistor, $C_1$ = timing capacitor.
+Not on the I–V plate. Separate paragraph + $V_b$ graph in AIM-239.
 
-Fundamentals:  
-Regenerative pulse oscillator. Ensure $-V_b\le BV_{EBO}$ ($\sim 5\,\text{V}$ for Si). Used in pulse generators and SMPS start-up.
-
-First-order pulse period  
+Turns ratio must keep $-V_b\le BV_{EBO}$ ($\sim 5\,\text{V}$ for Si).
 
 $$
 T\approx R_1 C_1\ln\left(1+\frac{V_{CC}}{V_{BE}}\right)
 $$
-
-(the exact width also depends on magnetizing inductance and core reset).
