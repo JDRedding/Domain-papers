@@ -1,0 +1,98 @@
+┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                           MAJORITY-CASE SCIENCE GRAMMAR DYNAMICS                                │
+│       [Scope: Finite-Dim Classical LTI | Closed Quantum | Projective Measurement | Post-Proc]   │
+└─────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+  1. CLASSICAL DYNAMICS & ELECTROMAGNETISM (LTI System Representation)                             
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+
+  [Input]         ┌─────────────────────────────────────────────────────────┐          [Output]    
+    u(t) ───────> │                   State-Space Block                     ├────────>   y(t)      
+  (Vector)        │  ẋ(t) = A x(t) + B u(t)                                 │          (Vector)    
+                  │  y(t) = C x(t) + D u(t)                                 │                      
+                  │                                                         │                      
+                  │  Transfer Function: G(s) = C(sI - A)⁻¹ B + D            │                      
+                  └─────────────────────────────────────────────────────────┘                      
+                                               ▲                                                   
+  [Maxwell Grid]                               │ Linearized & Discretized                          
+  ┌────────────────────────────────────────────┴────────────────────────────┐                      
+  │  D_div E⃗ = ρ⃗ / ε₀           D_div B⃗ = 0                                  │                      
+  │  D_curl E⃗ = -dB⃗/dt         D_curl B⃗ = μ₀ J⃗ + μ₀ ε₀ dE⃗/dt                │                      
+  └─────────────────────────────────────────────────────────────────────────┘                      
+
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+  2. SHARED STRUCTURAL ALGEBRA & FEEDBACK REDUCTION                                                
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+
+  [Series / Cascade Composition]                                                                   
+  x ───> [ G₁ ] ───> G₁x ───> [ G₂ ] ───> y = (G₂ ∘ G₁) x   (Non-commutative: G₂G₁ ≠ G₁G₂)          
+
+  [Closed-Loop Feedback Reduction]                                                                 
+                  ┌───┐            ┌───────┐                                                       
+         u ──(+)─>│ ⊗ │────> e ───>│ G(s)  ├────┬────────> y                                       
+              ▲   └───┘            └───────┘    │                                                  
+              │     │                           │                                                  
+              │    (∓)                          │                                                  
+              │     │        ┌───────┐          │                                                  
+              └─────┴────────┤ H(s)  │<─────────┘                                                  
+                             └───────┘                                                             
+  Reduction: y = (I ∓ G H)⁻¹ G u   [Commutative Scalar Special Case: y = (G / (1 ∓ G H)) u]       
+
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+  3. CLOSED QUANTUM DYNAMICS & QUANTUM INFORMATION                                                 
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+
+  [State Vector]                                                                                   
+     |ψ(0)⟩ ─────────────────> [ Unitary Evolution U(t) ] ─────────────────> |ψ(t)⟩ = U(t)|ψ(0)⟩  
+                               │ U(t) = exp(-i H t / ℏ)   │                                        
+                               │ Schrödinger: iℏ d|ψ⟩/dt = H|ψ⟩                                   
+                               └──────────────────────────┘                                        
+
+  [Density Operator]                                                                               
+      ρ(0)  ─────────────────> [ Von Neumann Dynamics ] ───────────────────> ρ(t) = U(t) ρ(0) U(t)†
+                               │ ρ̇ = -(i/ℏ)[H, ρ]         │                                        
+                               └──────────────────────────┘                                        
+
+  [Tensor Subsystems]                                                                              
+     |ψ_A⟩ ───> [ U_A ] ───┐                                                                       
+                           ├───> U_total = U_A ⊗ U_B   (Non-interacting subsystems)                
+     |ψ_B⟩ ───> [ U_B ] ───┘                                                                       
+
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+  4. HYBRID BOUNDARY: QUANTUM-TO-CLASSICAL MEASUREMENT                                             
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+
+                           QUANTUM DOMAIN ┆ CLASSICAL DOMAIN                                      
+                                          ┆                                                        
+  ┌───────────────────────┐               ┆         ┌──────────────────────────────────────────┐   
+  │ State Preparation &   │   |ψ⟩ or ρ    ┆         │ Projective Measurement Block             │   
+  │ Unitary Operations    ├───────────────┼────────>│ Π_i = |i⟩⟨i|                             │   
+  │ (H, X, Z, CU, QFT)    │               ┆         │ p_i = ⟨ψ|Π_i|ψ⟩                          │   
+  └───────────────────────┘               ┆         └────────────────────┬─────────────────────┘   
+                                          ┆                              │                         
+                                          ┆  Classical Outcome i ∈ {0,1}ⁿ│ (Hybrid Bridge)         
+                                          ┆                              ▼                         
+                                          ┆         ┌──────────────────────────────────────────┐   
+                                          ┆         │ Classical Post-Processing                │   
+                                          ┆         │  • Continued Fractions / GCD (Shor)      │   
+                                          ┆         │  • Channel Map: p_out = T p_in           │   
+                                          ┆         │  • Entropy: H(X) = -Σ p_i log₂ p_i       │   
+                                          ┆         └────────────────────┬─────────────────────┘   
+                                          ┆                              │                         
+                                          ┆                              ▼                         
+                                          ┆                 [ Classical Output / Action ]          
+
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+  5. GRAMMAR RULES & BOUNDARY CONSTRAINTS                                                          
+ ───────────────────────────────────────────────────────────────────────────────────────────────── 
+
+  ┌─────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ 1. COMPOSITION RULE    : (G₂ ∘ G₁)x = G₂(G₁x)  (Associative operator algebra)               │  
+  │ 2. FEEDBACK REDUCTION  : y = (I ∓ GH)⁻¹ G u   (Fixed-point solution)                         │  
+  │ 3. QUANTUM NO-CLONING  : Takeoff/Copy forbidden for |ψ⟩; only Classical duplicating allowed.│  
+  │ 4. HYBRID BOUNDARY     : State vectors/density matrices MUST pass through Projective        │  
+  │                          Measurement Π_i to convert into classical signals/data.             │  
+  │ 5. EXCLUSIONS SCOPE    : No continuum fields (PDEs), no Lindblad master equations,          │  
+  │                          and no infinite-dimensional Hilbert spaces.                        │  
+  └─────────────────────────────────────────────────────────────────────────────────────────────┘
