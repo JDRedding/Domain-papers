@@ -3,6 +3,9 @@
 
 *(Age of Sail; tarred hulls; canvas; no steam; each a single entry in a rutter that should not have all seven.)*
 
+* SID - *Structure*  - *Interaction* - *Dynamics* 
+* PED  - *Power* - *Evaluation* - *Dynamic-slice* 
+
 ---
 
 ## ❄️ **The Open Lead** — Arctic Ocean  
