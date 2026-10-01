@@ -1,0 +1,125 @@
+RDG_SYSTEM :: Polya–Carlson_Dichotomy (Relational)
+
+Given RDG system:
+    S = 1
+    I = (a_n) ⊂ ℤ
+    D = analytic / meromorphic continuation of f
+
+Exactly one holds:
+
+    (A) ARC-EXTENDABLE:
+        ∃ open γ ⊂ B with continuation
+            ⇒ f rational
+            ⇒ poles at roots of unity
+            ⇒ I satisfies linear recurrence.
+
+    (B) NATURAL_BOUNDARY:
+        No such γ exists
+            ⇒ B is a natural boundary.
+
+------------------------------------------------------------
+TYPES
+------------------------------------------------------------
+Type S :: STRUCTURE_RADIUS
+    -- Analytic radius / domain boundary (here: unit circle)
+
+Type I :: INTERACTION_LAW
+    -- Integer coefficient law; sequence (a_n) ⊂ ℤ
+
+Type D :: DYNAMICS_OPERATOR
+    -- Analytic continuation / meromorphic extension operator
+
+Type f :: ANALYTIC_FUNCTION
+    -- Power series with integer coefficients
+
+Type γ :: ARC
+    -- Nonempty open subarc of the unit circle B
+
+------------------------------------------------------------
+DATA
+------------------------------------------------------------
+Given:
+    f(z) = Σ_{n≥0} a_n z^n
+        with a_n ∈ ℤ
+        and radius of convergence = 1
+
+Let:
+    S := 1
+    B := { z : |z| = S }   -- unit circle
+    I := (a_n)_{n≥0}       -- integer interaction law
+    D := analytic continuation / meromorphic extension of f
+
+------------------------------------------------------------
+CORE ANALYTIC FACTS (NON-CIRCULAR)
+------------------------------------------------------------
+FACT_1 :: ARC_CONTINUATION_TRIGGER
+    If there exists a nonempty open arc γ ⊂ B
+    such that f admits analytic continuation across γ,
+    then f extends meromorphically beyond the disk
+    in a neighborhood of γ.
+
+FACT_2 :: POLYA–CARLSON (ANALYTIC + ARITHMETIC)
+    Under the integer-coefficient, radius-1 hypothesis:
+        If FACT_1 holds (some γ exists),
+            then f is rational.
+
+FACT_3 :: FATOU_ARITHMETIC_STRUCTURE
+    If f is rational and has integer coefficients,
+        then:
+            - All poles of f on B lie at roots of unity.
+            - The coefficient sequence I = (a_n) satisfies
+              a linear recurrence with constant coefficients.
+            - After clearing cyclotomic factors, the
+              characteristic polynomial has roots on B
+              only at roots of unity.
+
+FACT_4 :: NATURAL_BOUNDARY_ALTERNATIVE
+    If no such arc γ ⊂ B exists across which f continues,
+        then B is a natural boundary:
+            - Every point of B is a singularity for f.
+            - No analytic continuation of f exists across
+              any point of B.
+
+------------------------------------------------------------
+RDG DICHOTOMY (STRUCTURED)
+------------------------------------------------------------
+CASE (A) :: ARC-EXTENDABLE
+
+    Condition:
+        ∃ γ ⊂ B, γ open, such that f continues analytically
+        across γ.
+
+    Consequences:
+        - By FACT_2: f is rational.
+        - By FACT_3:
+            * Poles of f on B are at roots of unity.
+            * I satisfies a linear recurrence with
+              constant coefficients.
+            * D extends f meromorphically to ℂ minus
+              finitely many poles on B.
+
+    RDG view:
+        - S = 1 is permeable along γ.
+        - I collapses to a finite linear generator
+          (recurrence) compatible with roots-of-unity poles.
+        - D is globally coherent as a meromorphic operator.
+
+CASE (B) :: NON-ARC-EXTENDABLE
+
+    Condition:
+        No nonempty open arc γ ⊂ B exists across which
+        f continues analytically.
+
+    Consequences:
+        - By FACT_4: B is a natural boundary.
+        - Every point of B is singular; no local crossing.
+
+    RDG view:
+        - S = 1 is globally sealed.
+        - I does not admit a finite meromorphic generator
+          compatible with any arc crossing.
+        - D is blocked at every boundary point of B.
+
+------------------------------------------------------------
+END
+------------------------------------------------------------
