@@ -84,7 +84,22 @@ SID (structure, interaction, dynamics) is the full relation $R$ on $S\times S$; 
 - $\mathrm{Eval}_{\mathrm{PED}}$: PED evaluation, restricted to the shadow-coupling.
 - $\mathrm{Flux}_{\mathrm{MFE}}$: MFE flux on that coupling.
 
-This relation contains all possible ordered pairs between the set ({\ast, \square}) and itself.
+This relation contains all possible ordered pairs between the set $\*$, $\square$ and itself.
+
+```
+Primitive maps:
+    Ref, Proj, Sh, Eval, U_Q
+
+Graph-level patterns:
+    FluxEngine := edges where U_Q acts
+    EvalOperator := edges where Eval acts
+
+SID domain:
+    {q*, q□}
+
+PED domain:
+    {q*, shadow(q□)}
+```
 
 Properties of this relation:
 - Reflexive: Yes, because $\ast$, $\ast$ and $\square$, $\square$ are in $R$.
