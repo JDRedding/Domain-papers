@@ -65,8 +65,66 @@ SID and PED split what exists structurally from what can be evaluated from the o
    - Decision acts on evaluated states, never on raw $q\square$.
 
 3. **Separation rule.**
-   - $q*$ belongs to SID and is directly PED-inspectable.
+   - $q\*$ belongs to SID and is directly PED-inspectable.
    - $q\square$ belongs to SID but is PED-visible only through its reflection–projection shadow.
-   - Formally: SID domain $\{q*, q\square\}$; PED domain $\{q*, \mathrm{shadow}(q\square)\}$.
+   - Formally: SID domain $\{q\*, q\square\}$; PED domain $\{q\*, \mathrm{shadow}(q\square)\}$.
 
-SID says both poles exist and interact. PED says only $q*$ and the shadow of $q\square$ can be evaluated and decided upon.
+SID (structure, interaction, dynamics) says both poles exist and interact. PED (power, interaction, dynamic-slice) says only $q\*$ and the shadow of $q\square$ can be evaluated and decided upon.
+  
+## Notation
+SID (structure, interaction, dynamics) is the full relation $R$ on $S\times S$; dynamics are the $Q$-flows on that relation. PED (power, interaction, dynamic-slice) act only on the PED domain.
+
+- $q\*$: inspectable pole; tends to emit or push $Q$.
+- $q\square$: non-inspectable pole; tends to reflect, return, or moderate $Q$.
+- $\mathrm{shadow}(q\square)$: the visible image of $q\square$ after reflection and projection.
+- $R$: the coupling (adjacency) relation on which evaluation and flux act.
+- $Q$: the quantity that is emitted, reflected, and exchanged.
+- $S$: the carrier (structure) set.
+- $\mathrm{Eval}$: evaluation.
+- $\mathrm{Eval}_{\mathrm{PED}}$: PED evaluation, restricted to the shadow-coupling.
+- $\mathrm{Flux}_{\mathrm{MFE}}$: MFE flux on that coupling.
+
+### Shadow-coupling
+
+Structural relation:
+
+$$
+R=\{(\*,\*),(\*,\square),(\square,*),(\square,\square)\}
+$$
+
+### PED evaluation operator
+
+$$
+\mathrm{Eval}_{\mathrm{PED}} := \mathrm{Eval}\big|_{\text{shadow-coupling of }q\square}
+$$
+
+Equivalently, evaluation is defined only on the PED domain
+
+$$
+\{q\*\,\mathrm{shadow}(q\square)\}
+$$
+
+never on raw $q\square$.
+
+### Reflection chain
+
+$$
+q\square \rightarrow \mathrm{reflection}(q\square) \rightarrow \mathrm{projection} \rightarrow \mathrm{shadow}
+$$
+
+### MFE flux engine
+
+$$
+\mathrm{Flux}_{\mathrm{MFE}} := \text{$Q$-flow on } R\bigl(q\*,\,\mathrm{shadow}(q\square)\bigr)
+$$
+
+### SID / PED domains
+
+$$
+\begin{align*}
+\text{SID domain} &= \{q\*,\,q\square\},\\
+\text{PED domain} &= \{q\*,\,\mathrm{shadow}(q\square)\}.
+\end{align*}
+$$
+
+
