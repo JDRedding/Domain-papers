@@ -115,15 +115,15 @@ $$
 ### MFE flux engine
 
 $$
-\mathrm{Flux}_{\mathrm{MFE}} := \text{$Q$-flow on } R\bigl(q\*,\,\mathrm{shadow}(q\square)\bigr)
+\mathrm{Flux}_{\mathrm{MFE}} := \text{$Q$-flow on } R\bigl(q\*,\mathrm{shadow}(q\square)\bigr)
 $$
 
 ### SID / PED domains
 
 $$
 \begin{align*}
-\text{SID domain} &= \{q\*,\,q\square\},\\
-\text{PED domain} &= \{q\*,\,\mathrm{shadow}(q\square)\}.
+\text{SID domain} &= \{q\*,q\square\},\\
+\text{PED domain} &= \{q\*,\mathrm{shadow}(q\square)\}.
 \end{align*}
 $$
 
