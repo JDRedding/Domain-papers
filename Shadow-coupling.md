@@ -84,6 +84,15 @@ SID (structure, interaction, dynamics) is the full relation $R$ on $S\times S$; 
 - $\mathrm{Eval}_{\mathrm{PED}}$: PED evaluation, restricted to the shadow-coupling.
 - $\mathrm{Flux}_{\mathrm{MFE}}$: MFE flux on that coupling.
 
+This relation contains all possible ordered pairs between the set ({\ast, \square}) and itself.
+
+Properties of this relation:
+- Reflexive: Yes, because $\ast$, $\ast$ and $\square$, $\square$ are in $R$.
+- Symmetric: Yes, because if $x$, $y$ $\in$ $R$, then $y$, $x$ $\in$ $R$ as well.
+- Transitive: Yes, because it contains all possible pairs — so any $x$, $y$ and $y$, $z$ imply $x$, $z$ is in $R$.
+- Equivalence Relation: Yes — it’s reflexive, symmetric, and transitive.
+- Universal Relation: Yes — it’s the full product.
+
 ### Shadow-coupling
 
 Structural relation:
