@@ -92,7 +92,7 @@ That array is $R=S_0\times S_0$. It is one object. It does not yet say whether t
 
 Once the square is saturated, two readings exclude each other.
 
-**RDG (trifoil geometry).** Collapse the square by incidence, not by flow. The diagonal cells are fixed points of the two poles. The two off-diagonal cells are one undirected coupling, counted once. The resulting figure has three loci:
+**Relational Dynamic Geometry (RDG (trifoil geometry)).** Collapse the square by incidence, not by flow. The diagonal cells are fixed points of the two poles. The two off-diagonal cells are one undirected coupling, counted once. The resulting figure has three loci:
 
 $$
 \{\*,\ \square,\ \text{coupling}(\*,\square)\}.
@@ -100,7 +100,7 @@ $$
 
 That is the trifoil: two poles and the single geometric bond between them. Direction is forgotten; $(\*,\square)$ and $(\square,\*)$ are the same incidence. Geometry here is the quotient of $R$ by swapping order.
 
-**MFE (4-field dynamics).** Refuse that quotient. Each ordered pair is a distinct field, and $U_Q$ may act on it:
+**Momentum Flux Engine (MFE (4-field dynamics)).** Refuse that quotient. Each ordered pair is a distinct field, and $U_Q$ may act on it:
 
 $$
 \begin{align*}
