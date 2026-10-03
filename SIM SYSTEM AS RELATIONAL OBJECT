@@ -1,0 +1,145 @@
+SIM SYSTEM AS RELATIONAL OBJECT
+========================
+S_SIM := < V, E, O, G >
+
+V  = entities
+E  = relations (edges)
+O  = operators
+G  = induced geometry
+
+0. LAYERS
+---------
+SID = spacetime / structure (static)
+PED = process / evolution / dynamics (operators on edges)
+
+SID: form-factor metric, EF containment graph,
+     identifier types (ICCID, IMSI, Ki, PIN, PUK)
+
+PED: A3/A8/A5, Milenage, Attach, PIN/PUK gate,
+     buck + PI loop
+
+RDG: one relational graph, typed edges, operator-labeled
+     dynamics, geometry on both physical nodes and
+     abstract state spaces
+
+1. SID — STRUCTURAL / GEOMETRIC LAYER
+--------------------------------------
+1.1 Form-factor nodes
+  v_Full, v_Mini, v_Micro, v_Nano, v_eSIM  in  V_SIM
+
+  phi_geom : V_SIM -> R^3
+  phi_geom(v) = (w_v, h_v, t_v)
+
+  Full  : (85.6, 54.0, 0.76) mm
+  Mini  : (25.0, 15.0, 0.76) mm
+  Micro : (15.0, 12.0, 0.76) mm
+  Nano  : (12.3,  8.8, 0.67) mm
+  eSIM  : embedded (no removable metric)
+
+  Type: static metric embedding
+  Fundamentals: ISO/IEC 7810, ETSI TS 102 221
+
+1.2 File-system nodes
+  V_FS = { EF_ADN, EF_SMS, EF_LOCI, ... }
+
+  E_contain  subset  V_SIM x V_FS
+
+  Type: containment relation
+  Fundamentals: SIM is container; EFs are embedded sub-objects
+                gated by access predicates
+
+
+2. PED — DYNAMIC / OPERATOR LAYER
+---------------------------------
+2.1 GSM/UMTS authentication
+  e_auth : (Network, SIM) |-> AuthState
+
+  A3 : {0,1}^128 x {0,1}^128 -> {0,1}^32
+  A8 : {0,1}^128 x {0,1}^128 -> {0,1}^64
+
+  RAND  <-$ {0,1}^128
+  SRES  = A3(Ki, RAND)
+  Kc    = A8(Ki, RAND)
+
+  (Unauth, RAND) --A3,A8--> (Auth, Kc, SRES)
+
+  Accept <=> (SRES_SIM = SRES_network)
+
+  Type: challenge-response morphism on auth edge
+  Fundamentals: Ki never transmitted; only SRES compared
+
+2.2 EPS-AKA / Milenage
+  M : (Ki, RAND, OP_C) |-> (RES, Kc)
+
+  TEMP = E_Ki( RAND XOR OP_C )     // E = AES-128
+  RES  = out1(TEMP)
+  Kc   = out2(TEMP)
+
+  Accept(M) := [ RES = XRES ]
+
+  Type: refined auth operator (same edge, AES geometry)
+  Fundamentals: interface-compatible with A3/A8
+
+2.3 Attach / identity evolution
+  Attach : IMSI |-> TMSI  or  GUTI
+
+  Type: label-rewriting operator on network-SIM edge
+  Fundamentals: public ID replaced by temporary ID after Accept
+
+2.4 PIN/PUK local gate
+  e_local : (User, SIM) |-> AccessState
+
+  Unlock <=> (PUK = PUK*) AND (attempts <= 10)
+  PIN attempts <= 3 before lock
+
+  Type: local predicate, orthogonal to network auth
+  Fundamentals: user-SIM edge only
+
+2.5 Cipher (post-Accept)
+  z = A5(Kc, F)
+  C = P XOR z
+
+  Type: stream operator driven by session key
+  Fundamentals: frame-synchronized once Kc installed
+
+3. OBJECT
+-------------
+3.1 Nodes
+  V = { User, SIM, Network, Controller,
+        EF_ADN, EF_SMS, EF_LOCI, ... }
+
+3.2 Edges
+  e_auth    : (Network, SIM)     ops = {A3, A8, A5, M}
+  e_attach  : (Network, SIM)     ops = {Attach}
+  e_local   : (User, SIM)        ops = {PIN_Gate, PUK_Gate}
+  e_fs      : (SIM, EF_x)        ops = {ReadAllowed}
+  e_power   : (Controller, Phone)   ops = {PI_Controller}
+
+3.3 Operator bundle
+  O = { A3, A8, A5, M, Attach,
+        PIN_Gate, PUK_Gate, PI_Controller }
+
+  Each operator acts on one typed edge and one state space.
+
+4. GEOMETRIC EMBEDDINGS G
+-------------------------
+4.1 Card geometry
+  G_form : V_SIM -> R^3
+
+4.2 Auth state space
+  Sigma_auth = { Unauth, Auth, Locked }
+  transitions labeled by A3/A8/M
+
+4.3 Power-stage state space (separate sub-system)
+  X_power = { (i_L, v_o) }
+
+  L * di_L/dt = d * v_in - v_o
+  C * dv_o/dt = i_L - v_o / R
+
+  d(k) = d(k-1) + Kp*(e(k)-e(k-1)) + Ki*e(k)
+  e(k) = v_ref(k) - v_o(k)
+
+  Type: continuous state + discrete duty-cycle controller
+  Fundamentals: shares only the Controller node with the SIM graph;
+                not part of authentication geometry
+
