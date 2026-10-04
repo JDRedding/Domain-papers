@@ -612,3 +612,288 @@ No untyped BOT circ R.
 No object-level product in the base signature.
 oplus and otimes have no equation against / until a square is declared.
 ev total does not certify a term.
+
+24. APPENDIX Q
+collapse and recovery via the Q-box
+derived, not a primitive of the base signature
+version 1.1 is unchanged if this appendix is absent
+
+STATUS
+RDG does not require a bolted-on homomorphism
+    collapse : SID x PED -> R
+as a primitive of division.
+The collapse is the Q-box, the slice-moderation operator
+that unifies a structural channel and an evaluative channel
+into one evaluative slice.
+Q is not circ_{S,I}.
+Q is not ev.
+Q is not q_alpha.
+Q does not rewrite a / b.
+Q does not identify SID_RDG with PED_MFE inside the base.
+RDG is not a conservative extension of a ring.
+Removing this appendix leaves 1.1 intact.
+
+A. ROLE
+
+The Q-box:
+    1. forgets the SID/PED mode separation in its output
+    2. projects a relational configuration into one evaluative slice
+    3. recovers scalar-like behavior on the total fragment
+    4. implements the collapse of relational geometry into a
+       field-compatible domain
+
+Formal action:
+    Q tensor SID.S  --->  PED.D
+
+    SID.S    structural channel, terms X : SID
+    PED.D    dynamic evaluative slice, the output sort of Q
+    PED.D is not a second name for PED_MFE
+    PED.D is not a quotient of U
+
+ev : SID -> PED stays in PED_MFE and does not certify.
+circ_{S,I} : SID x INV -> SID + BOT stays in that coproduct.
+Those two maps are not the collapse.
+
+B. DERIVED COLLAPSE
+
+    collapse(X, E) := Q(X, E)
+    X : SID
+    E : PED
+    Q : SID x PED -> PED.D + BOT
+
+Not a primitive of the base signature.
+Derived by this appendix.
+The recovery map is this operator, not an extra generator of division.
+
+Reading of a division term, supplied after the base equation:
+    a / b = SID(a) circ_{S,I} iota(PED(b))
+    remains the base equation.
+    Q is applied to the pair (SID(a), PED(b)), not to the
+    composite as a quotient of U.
+
+C. CLAUSES
+
+Total fragment, neither factor zero:
+    Q(X, E) = s(X, E) : PED.D
+    when X is not Z_S and E is not Z_E
+    s is the slice interpretation
+
+Expansion, denominator zero:
+    Q(X, Z_E) = s_exp(X) : PED.D
+    corresponding to EXP(X) = X circ_{S,I} Z_I
+    s_exp is the scalar-limit reading of expansion
+    if s_exp is not declared, Q(X, Z_E) is undefined, not bot
+
+Collapse, numerator zero:
+    Q(Z_S, E) = s_col(E) : PED.D
+    corresponding to COL(iota(E)) = Z_S circ_{S,I} iota(E)
+    s_col is the scalar-limit reading of collapse
+    if s_col is not declared, Q(Z_S, E) is undefined, not bot
+
+Clash:
+    Q(Z_S, Z_E) = bot
+    matching 0o_S / 0o_E = bot
+    the only clause that returns bot
+
+bot has no Q image.
+    Q is not defined on BOT.
+    there is no Q(bot).
+
+D. RELATION TO ORDINARY ARITHMETIC
+
+When Q is applied:
+    the multi-sorted geometry is read as one evaluative slice
+    division on the total fragment is read as ordinary division
+        in that slice
+    EXP and COL are read as scalar limits when s_exp and s_col
+        are declared, and as undefined when they are not
+    0o_S / 0o_E is read as bot, not as a scalar
+    SID/INV relational information is lost in the output
+
+This loss is the collapse. It is not a base rewrite.
+EXP(X) != bot and COL(J) != bot remain refusals of version 1.1.
+An appendix that sets s_exp or s_col equal to bot is a different appendix.
+
+No ring homomorphism is claimed beyond the declared clauses.
+No map PED.D -> R is claimed unless a further reading of the
+slice is declared. Scalar-like means PED.D, not automatically R.
+obs : PED.D -> R, if added, is that further reading and is
+not implied by Q.
+
+E. PRESERVED AND ERASED
+
+If Q(X, E) and Q(X', E') both inhabit PED.D, then
+    X = X' and E = E' implies Q(X, E) = Q(X', E').
+Q does not have to preserve circ_S, circ_E, or circ_{S,I}.
+Any such preservation is a separate declaration.
+Q forgets the RDG/MFE presentation split in its output only.
+The certificate (U, alpha) is not implied by Q, and Q is not
+implied by the certificate.
+Q is not the gate for (a / b) / c ---> product form.
+
+Off the total fragment the 1.1 locks remain in force:
+    b / b != id_S
+    no numerator additivity
+    EXP(X) != bot
+    COL(J) != bot
+    Z_I != id_I
+    no cross-mode unit
+    ~= certified only
+
+F. DESIGN
+
+RDG's legitimacy does not depend on being arithmetic with a
+new division. It depends on:
+    internal consistency of the multi-sorted signature
+    the quotient split, two RDG classes and identity-on-spine MFE
+    typed cross-mode composition
+    explicit singularity handling, EXP, COL, bot
+    usefulness where structure and evaluation are separate channels
+
+The Q-box is the recovery mechanism when a single evaluative
+slice is required. It does not force the base into a ring signature.
+
+LOCK
+    Base division is unchanged.
+    Q is derived, optional relative to version 1.1.
+    Removing this appendix leaves 1.1 intact.
+
+25. APPENDIX: COLLAPSE AND RECOVERY VIA THE Q-BOX
+derived, not a primitive of the base signature
+already represented in the architecture
+version 1.1 is unchanged if this appendix is absent
+
+This appendix clarifies that RDG does not require an additional homomorphism
+    collapse : SID x PED -> R
+to relate the calculus to ordinary arithmetic or analysis.
+The collapse is already represented internally by the Q-box,
+the slice-moderation operator that unifies structure and evaluation
+into a single evaluative output.
+The recovery map is not missing. It is already encoded
+in the relational architecture.
+Q is not circ_{S,I}.
+Q is not ev.
+Q is not q_alpha.
+Q does not rewrite a / b.
+Q does not identify SID_RDG with PED_MFE inside the base.
+RDG is not a conservative extension of a ring.
+
+A. ROLE OF THE Q-BOX
+
+The Q-box is the operator that:
+    1. forgets the SID/PED mode separation
+    2. projects a relational configuration into a single evaluative slice
+    3. recovers the scalar-like behavior of the total fragment
+    4. implements the collapse of relational geometry into a
+       field-compatible domain
+
+Formally, the Q-box acts as:
+    Q tensor SID.S  --->  PED.D
+
+    SID.S    structural channel
+    PED.D    dynamic evaluative slice
+    the Q-box performs the collapse of relational information
+        into a single evaluative output
+
+PED.D is the collapsed slice.
+PED.D is not a second name for PED_MFE.
+PED.D is not a quotient of U.
+ev : SID -> PED stays in PED_MFE and does not certify.
+circ_{S,I} : SID x INV -> SID + BOT stays in that coproduct.
+Those two maps are not the collapse.
+
+B. COLLAPSE AS A DERIVED OPERATION
+
+Given a structural term X : SID and an evaluative term E : PED,
+    collapse(X, E) := Q(X, E)
+
+where Q is the slice-moderation operator.
+    Q : SID x PED -> PED.D + BOT
+
+This is not a primitive of the base signature.
+It is a derived map implemented by the Q-box.
+Thus the recovery map is not missing. It is already encoded
+in the relational architecture.
+
+The base equation is unchanged:
+    a / b = SID(a) circ_{S,I} iota(PED(b))
+Q is applied to the pair (SID(a), PED(b)), not to the composite
+as a quotient of U.
+
+Clauses of the same derived map:
+
+    neither factor zero:
+        Q(X, E) = s(X, E) : PED.D
+        when X is not Z_S and E is not Z_E
+        s is the slice interpretation
+
+    denominator zero, expansion:
+        Q(X, Z_E) = s_exp(X) : PED.D
+        corresponding to EXP(X) = X circ_{S,I} Z_I
+        s_exp is the scalar-limit reading
+        if s_exp is not declared, the reading is an undefined point,
+        not bot
+
+    numerator zero, collapse:
+        Q(Z_S, E) = s_col(E) : PED.D
+        corresponding to COL(iota(E)) = Z_S circ_{S,I} iota(E)
+        s_col is the scalar-limit reading
+        if s_col is not declared, the reading is an undefined point,
+        not bot
+
+    clash:
+        Q(Z_S, Z_E) = bot
+        matching 0o_S / 0o_E = bot
+        the only clause that returns bot
+
+bot has no Q image. There is no Q(bot).
+
+C. RELATION TO ORDINARY ARITHMETIC
+
+When the SID and PED channels are collapsed by Q:
+    the multi-sorted geometry reduces to a single evaluative domain
+    division reduces to ordinary division on the total fragment
+    singularities EXP, COL, and bot collapse to scalar limits
+        or undefined points
+    the relational information carried by SID and INV is
+        intentionally lost
+
+This is the correct behavior.
+RDG is not a conservative extension of a ring.
+It is a geometry for simulations that already separate
+structure and evaluation.
+
+Scalar-like means the PED.D slice.
+A further reading obs : PED.D -> R is not required for the collapse.
+No ring homomorphism is claimed beyond this recovery.
+EXP(X) != bot and COL(J) != bot remain refusals of version 1.1.
+The loss of relational information is the action of Q,
+not a rewrite of those locks.
+An appendix that sets s_exp or s_col equal to bot is a different appendix.
+
+If Q(X, E) and Q(X', E') both inhabit PED.D, then
+    X = X' and E = E' implies Q(X, E) = Q(X', E').
+Q does not have to preserve circ_S, circ_E, or circ_{S,I}.
+Q forgets the RDG/MFE presentation split in its output only.
+Q is not the gate for (a / b) / c ---> product form.
+The certificate (U, alpha) is not implied by Q.
+
+D. DESIGN IMPLICATION
+
+RDG's legitimacy does not depend on being arithmetic with a new division.
+It depends on:
+    internal consistency of the multi-sorted signature
+    correctness of the quotient architecture (RDG vs MFE)
+    typed cross-mode composition
+    explicit singularity handling (EXP, COL, bot)
+    usefulness for systems that treat structure and evaluation
+        as separate channels
+
+The Q-box provides the recovery mechanism when needed,
+without forcing RDG into a ring signature.
+
+LOCK
+    The collapse is already the Q-box.
+    It is derived, not a base primitive.
+    Base division is unchanged.
+    Removing this appendix leaves version 1.1 intact.
