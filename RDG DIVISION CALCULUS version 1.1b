@@ -1,0 +1,614 @@
+RDG DIVISION CALCULUS version 1.1b
+version 1.1
+closed typed signature over the locked 1.0-base
+
+STATUS
+RDG is not a field.
+Division is not arithmetic. It is relational inversion:
+structure composed with inverted evaluation.
+Results are geometries, not numbers.
+a/0o_E is a mode shift, not a contradiction of field axioms.
+Three levels stay distinct:
+    common pre-quotient generator U
+    RDG quotient presentation
+    MFE evaluative presentation
+T_RDG and D_MFE are presentations of one substrate, not two primitives.
+
+
+1. SUBSTRATE
+
+Primitive chain:
+    point ---> counterpoint ---> couple (bipolar coupling)
+
+Primitives of U, all four:
+    p            point
+    p*           counterpoint of p
+    C(p, p*)     forward couple
+    C(p*, p)     return couple
+
+Primitive incidences:
+    p -> p*
+    p* -> C(p, p*)
+    C(p, p*) -> C(p*, p)
+    C(p*, p) -> p
+
+U is exactly these primitives plus these incidences.
+loop(p) is not a primitive of U.
+Gen_PC is the generator of the spine.
+Im(Gen_PC) is the set of geometries with a provenance certificate.
+
+
+2. RDG QUOTIENT
+
+~_RDG partitions all of U. q_RDG is total.
+
+    C(p*, p) ~_RDG p
+    C(p, p*) ~_RDG p*
+    p not~_RDG p*
+
+Classes:
+    [p]_RDG  = { p, C(p*, p) }
+    [p*]_RDG = { p*, C(p, p*) }
+
+Forward couple descends to the counterpoint class.
+Return couple descends to the point class.
+An incidence whose endpoints are identified under ~_RDG
+is a quotient loop, not a new point.
+loop(p) denotes that quotient-incidence presentation.
+It is not an element of U and not a third class.
+
+    q_RDG : U -> U / ~_RDG
+    T_RDG = presentation of U / ~_RDG with quotient loops drawn
+
+The primitive quotient has two classes.
+The 3-count is a presentation count of classes plus induced loops,
+not the number of primitive classes.
+
+
+3. MFE QUOTIENT
+
+On the basic coupling spine U, ~_MFE is identity:
+    x ~_MFE y iff x = y
+
+q_MFE restricted to U is an isomorphism of that spine.
+D_MFE is the evaluative, mode-resolved presentation of the
+retained coupling data, not a point-collapsing quotient.
+The four-point dyad is that presentation of the four primitives.
+
+~_MFE remains available for nontrivial identifications only on
+extended configurations, derived incidences, and higher-order
+evaluative patterns. No such identification is in the base signature.
+
+    q_MFE : U -> U / ~_MFE
+    D_MFE = evaluative presentation of U / ~_MFE
+    alpha in {RDG, MFE}
+    q_alpha : U -> U / ~_alpha
+
+
+4. FIBERS
+
+    SID_RDG  structural presentation of U / ~_RDG
+    PED_MFE  evaluative presentation of U / ~_MFE
+
+SID runs along q_RDG.
+PED runs along q_MFE.
+This split is a restriction, not a naming convenience.
+They meet in U via certificates (U, alpha).
+They are not one undifferentiated presentation.
+An MFE term becomes SID-visible only as the composite
+    SID(a) circ_{S,I} iota(PED(b))
+which is not itself a quotient presentation of U.
+The sort SID contains the RDG image plus uncertified composites.
+SID_RDG names the image, not every SID term.
+
+
+5. SORTS AND MODES
+
+Sorts:
+    Obj     raw objects
+    SID     structural terms
+    PED     evaluative geometries
+    INV     inverted evaluative geometries
+    EXP     expansion sub-sort of SID
+    COL     collapse sub-sort of SID
+    BOT     clash sort, outside SID
+
+REL is not in the base signature.
+BOT is a sort. bot is the constant of that sort.
+
+    bot : BOT
+
+Sort/map split:
+    INV is the sort.
+    iota : PED -> INV is the map.
+    PED^{-1}(b) means iota(PED(b)), not a second map.
+
+Modes:
+    O object
+    S structure
+    E evaluation
+    I inverted evaluation
+
+Inclusions:
+    EXP subset SID
+    COL subset SID
+    EXP intersect COL = empty
+    EXP intersect BOT = empty
+    COL intersect BOT = empty
+    BOT not subset SID
+
+EXP(X) != bot is closed under every future extension.
+A constructor that identifies them is a different calculus.
+
+Marks:
+    cross-mode maps carry _in^out
+    in-mode maps carry a single mode index
+    mark erasure is notation only and does not change the mode
+
+
+6. OBJECTS AND ZERO GEOMETRIES
+
+    0o_S : Obj     no structural degrees of freedom
+    0o_E : Obj     empty evaluation support
+
+Bare 0 is not a term.
+Numerator zero is 0o_S.
+Denominator zero is 0o_E.
+
+    Z_S := SID(0o_S) : SID
+    Z_E := PED(0o_E) : PED
+    Z_I := iota(Z_E) : INV
+
+
+7. INV MONOID AND Z_I
+
+    circ_I : INV x INV -> INV
+    id_I : INV
+    J circ_I id_I = J = id_I circ_I J
+    circ_I is associative
+
+    Z_I != id_I
+    Z_I is a designated invertible nonidentity INV element
+    exists Z_I^{-1} : INV
+        Z_I^{-1} circ_I Z_I = id_I
+        Z_I circ_I Z_I^{-1} = id_I
+
+Factoring, retained:
+    for every J : INV there exists a unique K : INV
+        J = K circ_I Z_I
+    equivalently
+        K = J circ_I Z_I^{-1}
+    right-composition by Z_I is a bijection on INV
+
+Z_I is not a terminal object.
+Z_I is not a greatest element.
+No order <= on INV is declared.
+Z_I is not a global absorber of evaluative constraint.
+    iota(PED(b)) circ_I Z_I = Z_I is not a law.
+Z_I is not a unit for division.
+Z_I is the reversible INV phase used in cross-mode expansion.
+Z_S circ_{S,I} Z_I = bot is a cross-mode exception.
+It does not make Z_I null or identity-like inside INV.
+
+
+8. GENERATORS
+
+    SID : Obj -> SID_RDG
+        SID(a) via U -> U / ~_RDG
+        structured trace of point -> counterpoint -> couple
+
+    PED : Obj -> PED_MFE
+        PED(b) via U -> U / ~_MFE
+
+    iota : PED -> INV
+        isomorphism
+        mode inversion, not a numeric inverse, not a ring inverse
+        flips evaluation direction, not magnitude
+        not declared on SID
+        not declared on Obj
+
+    inv_2 : INV -> PED
+        total inverse of iota
+        inv_2(iota(E)) = E
+        iota(inv_2(J)) = J
+        for every E : PED and every J : INV
+
+    ev : SID -> PED
+        total on SID
+        iota(ev(X)) is the SID-to-iota bridge
+        totality of ev does not certify the result
+        quotient-sensitive reductions still require a certificate
+
+Certificate-level maps, not object generators:
+    SID_U : U -> SID
+    SID_q : U / ~_alpha -> SID
+    q_alpha^SID : SID -> SID
+    used only inside a present certificate (U, alpha)
+
+Rejected without a certificate:
+    treating SID(SID(a)) as a quotient lift
+Rejected outright:
+    iota(SID(a))
+    iota(Y · Z) without ev
+    SID(iota(E))
+
+
+9. WITNESS AND EQUIVALENCE
+
+(U, alpha) is a side certificate, not part of the syntactic term.
+A certified term is the term plus the certificate
+    "this term presents q_alpha(U)".
+Provenance-gated lifts and reductions require the certificate.
+A term with no certificate is unproven and cannot use those reductions.
+
+~= is isomorphism of quotient geometries of U under alpha.
+Not term identity. Not mere mode relabeling.
+~= applies only to terms that carry an admissible certificate.
+~= does not identify uncertified SID composites.
+
+~= may identify quotient representatives, point labels inherited
+from U, and mode labels that do not change the quotient incidence.
+~= does not identify RDG with MFE unless both arise from the same
+quotient of U under the same alpha.
+
+Coherence:
+    if (U1, alpha) and (U2, alpha) both certify the same term,
+    then q_alpha^SID(SID_U(U1)) ~= q_alpha^SID(SID_U(U2))
+
+Square, only when the certificate is present:
+
+    SID_q . q_alpha ~= q_alpha^SID . SID_U
+
+
+10. COMPOSITION
+
+Units, in-mode only:
+    id_S : SID
+    id_E : PED
+    id_I : INV
+    X circ_mu id_mu = X = id_mu circ_mu X
+    for mu in {S, E, I}
+
+In-mode, associative and unital:
+    circ_S : SID x SID -> SID
+    circ_E : PED x PED -> PED
+    circ_I : INV x INV -> INV
+    (X circ_mu Y) circ_mu Z = X circ_mu (Y circ_mu Z)
+
+Cross-mode:
+    circ_{S,I} : SID x INV -> SID + BOT
+    normal result: SID
+    designated exception:
+        Z_S circ_{S,I} Z_I = bot
+    every other (S, I) pair lands in SID
+
+    circ_{S,E} : SID x PED -> BOT
+    circ_{E,S} : PED x SID -> BOT
+    circ_{I,S} : INV x SID -> BOT
+    circ_{E,I} : PED x INV -> BOT unless a descent is declared
+    circ_{I,E} : INV x PED -> BOT unless a descent is declared
+
+Defined rather than bot iff the pair is (S,S), (E,E), (I,I),
+or (S,I) other than the designated exception.
+
+Cross-mode unit is not a law:
+    X circ_{S,I} id_I = X is not declared
+So EXP(X) = X is not forced.
+
+
+11. DIVISION
+
+    /   : Obj x Obj -> SID + BOT
+    /_g : SID x PED -> SID + BOT
+
+    a / b := SID(a) circ_{S,I} iota(PED(b))
+    X /_g E := X circ_{S,I} iota(E)
+
+Result of a successful composite: SID, mark _S^S.
+Division is one application of circ_{S,I}, not a free fraction bar.
+Numerator contributes structure.
+Denominator contributes evaluation, inverted.
+Composition yields a geometry, not a number.
+Total into SID + BOT. Partial as a map into SID.
+Only SID-failure is the zero-zero pair.
+
+    a / b = SID(a) circ_{S,I} iota(PED(b))
+    a / 0o_E = EXP(SID(a)) = SID(a) circ_{S,I} Z_I
+    0o_S / a = COL(iota(PED(a))) = Z_S circ_{S,I} iota(PED(a))
+    0o_S / 0o_E = Z_S circ_{S,I} Z_I = bot
+
+    EXP : SID -> EXP
+    EXP(X) := X circ_{S,I} Z_I
+    COL : INV -> COL
+    COL(J) := Z_S circ_{S,I} J
+
+    a / 0o_E = c / 0o_E  iff  SID(a) = SID(c)
+    0o_S / a = 0o_S / c  iff  iota(PED(a)) = iota(PED(c))
+    EXP(X) = EXP(Y) iff X = Y
+    COL(J) = COL(K) iff J = K
+    EXP(X) != bot
+    COL(J) != bot
+
+Z_I retains structural degrees of freedom of the left factor
+in the cross-mode reading.
+It does not absorb inside INV.
+
+
+12. NESTED DIVISION
+
+circ_{S,I} returns SID + BOT, so repetition is a lifted left action,
+not a second use of the unlifted operator.
+
+    /_g^L : (SID + BOT) x PED -> SID + BOT
+
+    X /_g^L E := X circ_{S,I} iota(E)    when X : SID
+    bot /_g^L E := bot                   when E : PED
+
+    (a / b) / c := (a / b) /_g^L PED(c)
+
+If a / b inhabits SID:
+    (a / b) / c
+      = (SID(a) circ_{S,I} iota(PED(b))) circ_{S,I} iota(PED(c))
+
+If a / b = bot:
+    (a / b) / c = bot
+
+Not admitted:
+    SID(a) circ_{S,I} (iota(PED(b)) circ_{S,I} iota(PED(c)))
+because circ_{S,I} expects SID on the left and INV on the right.
+
+Only the left association is legal.
+No outer SID on a geometry.
+
+
+13. INVERSE
+
+    b^{-1} := iota(PED(b))     when b : Obj
+    E^{-1} := iota(E)          when E : PED
+    inv_2(iota(E)) = E
+    iota(inv_2(J)) = J
+
+Not a ring inverse. Not multiplicative by default.
+
+b/b is permanently not a unit.
+    b / b := SID(b) circ_{S,I} iota(PED(b))
+is a cross-mode term, not id_S, and not neutral for circ_S.
+No normalization quotient identifies b/b with id_S.
+
+Optional squares, not assumed:
+    iota(E1 oplus E2) = iota(E1) oplus_I iota(E2)
+        only if oplus is parallel and channelwise
+    iota(E1 otimes E2) = iota(E2) otimes_I iota(E1)
+        only if otimes is declared and iota is converse-like
+If a square is not declared, that PED operation does not descend to INV.
+
+
+14. PED OPERATIONS
+
+    oplus  : PED x PED -> PED
+        parallel evaluation channels
+    otimes : PED x PED -> PED
+        sequential or nested evaluation
+
+oplus and otimes do not participate in the definition of division.
+They do not constrain circ_{S,I}.
+No equation relates them to / unless a commutation square is declared.
+No distributivity, compatibility, lifting, or reduction connects them to /.
+
+
+15. MULTIPLICATION
+
+    · : SID x SID -> SID
+    a · b := SID(a) circ_S SID(b)
+    X · Y := X circ_S Y
+    (X · Y) · Z = X · (Y · Z)
+    X · id_S = X = id_S · X
+
+Associative and unital inside SID mode only.
+id_S is a geometry unit, not an object unit.
+No object-level product mul_O is declared.
+a / (b · c) is not a term, because b · c : SID and / expects Obj.
+
+Geometry-level product denominator:
+    E_bc := ev(SID(b) circ_S SID(c)) : PED
+    a /_g E_bc
+      := SID(a) circ_{S,I} iota(ev(SID(b) circ_S SID(c)))
+
+Well-typed product bridge:
+    iota(ev(SID(b) circ_S SID(c)))
+Rejected:
+    iota(SID(b) circ_S SID(c))
+
+
+16. REDUCTION
+
+No general identity:
+    (a / b) / c != a /_g ev(SID(b) circ_S SID(c))
+
+Left-associated nested form, on the SID branch:
+    (SID(a) circ_{S,I} iota(PED(b))) circ_{S,I} iota(PED(c))
+
+Product form:
+    SID(a) circ_{S,I} iota(ev(SID(b) circ_S SID(c)))
+
+Rewrite
+    (a / b) / c ---> a /_g ev(SID(b) circ_S SID(c))
+only when both hold:
+    1. certificate (U, alpha) is attached, the nested composite
+       presents q_alpha(U), and
+         SID_q(q_alpha(U)) ~= q_alpha^SID(SID_U(U))
+    2. iota converse is declared on the extracted evaluation
+         iota(ev(X circ_S Y)) = iota(ev(Y)) circ_I iota(ev(X))
+
+ev being total does not supply the certificate.
+Uncertified terms cannot use the rewrite.
+If a / b = bot, the nested term is bot and the rewrite does not fire.
+Otherwise the two forms stay distinct geometries.
+Design-level equivalence, not a law.
+
+
+17. BOTTOM
+
+    bot := Z_S circ_{S,I} Z_I
+    also produced by every table row whose result is BOT
+
+Base propagation, the only bottom rule required for nesting:
+    bot /_g^L E = bot
+
+No REL carrier.
+No untyped BOT circ R.
+Absorption does not rewrite EXP(X) or COL(J) to bot
+when bot is not an argument.
+bot is not EXP. bot is not COL.
+Geometric clash constant, not a numeric bottom.
+
+
+18. CONSTRUCTORS
+
+    F_S : SID -> SID
+    F_E : PED -> PED
+    F_I : INV -> INV
+
+Gate, declared or absent:
+    F_I(iota(E)) = iota(F_E(E))    for every E : PED
+
+When the gate is declared and the composite is in SID, not bot:
+    F_S(SID(a) circ_{S,I} iota(PED(b)))
+      ---> F_S(SID(a)) circ_{S,I} iota(F_E(PED(b)))
+
+In /_g notation, same rule:
+    F_S(a / b) ---> F_S(SID(a)) /_g F_E(PED(b))
+    only on the SID branch
+
+F_S . iota is ill-typed and is not the gate.
+Absent the declaration, division stays external.
+This blocks F(a / b) => F(a) / F(b) as a default.
+
+
+19. EQUALITY
+
+Congruence:
+    X = X' and Y = Y' => X circ_mu Y = X' circ_mu Y'
+        when both composites are formed in the same sort
+    E = E' => iota(E) = iota(E')
+    J = J' => inv_2(J) = inv_2(J')
+    a = a' => SID(a) = SID(a')
+    b = b' => PED(b) = PED(b')
+
+Definitional equations are only those stated in this specification.
+(a / b) / c is not identified with the product form unless section 16 fires.
+Branch equations are conditional on the SID summand.
+
+
+20. ADDITION, RESERVED
+
+Not in the base signature.
+If + is introduced:
+    + : SID x SID -> SID
+    in-mode only
+    must not reopen / or the provenance gate
+Z_S is not required to be the unit of +.
+The unit of + must be declared explicitly.
+Numerator additivity is forbidden by default.
+    (a + c) / b
+requires a new rule connecting + with SID. No such rule exists.
+Without that declaration, + does not interact with /, circ_{S,I}, or iota.
+
+
+21. STABLE SIGNATURE
+
+    SID   : Obj -> SID_RDG
+    PED   : Obj -> PED_MFE
+    iota  : PED -> INV          isomorphism
+    inv_2 : INV -> PED          inverse of iota
+    ev    : SID -> PED          total, not a certificate
+    SID_U : U -> SID            certificate-level
+    SID_q : U / ~_alpha -> SID  certificate-level
+    circ_S     : SID x SID -> SID
+    circ_E     : PED x PED -> PED
+    circ_I     : INV x INV -> INV
+    circ_{S,I} : SID x INV -> SID + BOT
+    ·     : SID x SID -> SID
+    /     : Obj x Obj -> SID + BOT
+    /_g   : SID x PED -> SID + BOT
+    /_g^L : (SID + BOT) x PED -> SID + BOT
+    EXP   : SID -> EXP
+    COL   : INV -> COL
+    bot   : BOT
+    q_RDG : U -> U / ~_RDG
+    q_MFE : U -> U / ~_MFE
+
+Defining equations:
+    a / b   := SID(a) circ_{S,I} iota(PED(b))
+    X /_g E := X circ_{S,I} iota(E)
+    X /_g^L E := X circ_{S,I} iota(E)    if X : SID
+    bot /_g^L E := bot
+    (a / b) / c := (a / b) /_g^L PED(c)
+    a · b   := SID(a) circ_S SID(b)
+    b^{-1}  := iota(PED(b))
+    E^{-1}  := iota(E)
+    Z_S     := SID(0o_S)
+    Z_E     := PED(0o_E)
+    Z_I     := iota(Z_E)
+    Z_I != id_I
+    Z_I^{-1} circ_I Z_I = id_I = Z_I circ_I Z_I^{-1}
+    J = (J circ_I Z_I^{-1}) circ_I Z_I
+    EXP(X)  := X circ_{S,I} Z_I
+    COL(J)  := Z_S circ_{S,I} J
+    a / 0o_E   := EXP(SID(a))
+    0o_S / a   := COL(iota(PED(a)))
+    0o_S / 0o_E := bot
+    [p]_RDG  = { p, C(p*, p) }
+    [p*]_RDG = { p*, C(p, p*) }
+    x ~_MFE y iff x = y    on the basic spine U
+
+
+22. VARIABLES
+
+Objects: a, b, c, p, p*, 0o_S, 0o_E
+Couples: C(p, p*), C(p*, p)
+Classes: [p]_RDG, [p*]_RDG
+Presentation mark: loop(p), not a primitive
+Substrate: U, Gen_PC, Im(Gen_PC)
+Quotients: q_RDG, q_MFE, q_alpha, ~_RDG, ~_MFE, ~_alpha
+Traces: SID, PED, SID_U, SID_q, q_alpha^SID
+Inversion: iota, inv_2, Z_I^{-1}, b^{-1}, E^{-1}
+Bridge: ev
+Composition: circ_S, circ_E, circ_I, circ_{S,I}
+Units: id_S, id_E, id_I
+Operations: /, /_g, /_g^L, ·, oplus, otimes
+Singular: EXP, COL, BOT, bot, Z_S, Z_E, Z_I
+Constructors: F_S, F_E, F_I
+Geometries: X, Y, Z, E, J, K
+Modes: O, S, E, I
+Sorts: Obj, SID, PED, INV, EXP, COL, BOT
+Fibers: SID_RDG, PED_MFE
+Presentations: T_RDG, D_MFE
+
+
+23. LOCKED REFUSALS
+
+No field identity unless the certified rewrite fires.
+No default distributivity of iota.
+No default commutation of SID with iota.
+No SID-on-SID quotient lift without a side certificate.
+No iota on SID terms.
+No right-associated nested division.
+No b/b = id_S.
+No numerator additivity by default.
+No Z_S as an automatic unit of +.
+No EXP(X) = bot, in this signature or any extension of it.
+No single sort containing both the trifoil and the dyad as presentations.
+No Z_I = id_I.
+No reading of Z_I as terminal, lattice top, or global absorber.
+No loop(p) as a primitive or as a third RDG class.
+No partial ~_RDG: C(p*, p) is classed with p.
+No nontrivial base identifications in ~_MFE.
+No ~= on uncertified composites.
+No cross-mode unit law.
+No bare 0.
+No REL in the base signature.
+No untyped BOT circ R.
+No object-level product in the base signature.
+oplus and otimes have no equation against / until a square is declared.
+ev total does not certify a term.
