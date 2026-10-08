@@ -45,3 +45,50 @@ NOTES
   The empty set is a subset of every set: ∅ ⊆ A for any A.
   Power set of a finite set with n elements has 2^n elements.
   All operations above are defined solely in terms of membership.
+
+RELATIONAL DYNAMIC GEOMETRY OF SETS
+
+A set is a region. Membership is incidence. Operations are motions that change which points stand in relation.
+
+PRIMITIVES
+  point / element      an atomic locus
+  region / set         a collection of loci held in mutual relation
+  incidence            the basic relation: a point lies in a region
+  ambient space        the total locus field under consideration
+  configuration        the current arrangement of all incidences
+
+INCIDENCE RELATIONS
+  a ∈ A                point a is incident to region A
+  a ∉ A                point a lies outside region A
+  A ⊆ B                every point incident to A is incident to B
+                       (A is contained in B)
+  A ⊂ B or A ⊊ B       containment with at least one point of B outside A
+  A = B                identical incidence patterns
+  boundary shift       change in which points are incident after an operation
+
+DYNAMIC OPERATIONS
+  ∅                    null region (no points incident)
+  A ∩ B                overlap: points incident to both regions simultaneously
+  A ∪ B                merger: points incident to either region
+  A \ B                excision: points of A released from incidence with B
+  A △ B                exclusive zones: points incident to exactly one region
+  Aᶜ                   exterior: points of the ambient space not incident to A
+  P(A)                 configuration space of A: all possible subregions
+                       obtainable by selecting subsets of its points
+  |A|                  measure of the region (count of incident points)
+  A × B                product space: paired loci (a from A, b from B)
+
+GEOMETRIC READING
+  containment          nested regions
+  overlap              intersecting regions
+  excision             cutting one region by another
+  complement           the surrounding field relative to a region
+  power set            the lattice of all possible sub-configurations
+  equality             coincidence of boundaries and interiors
+
+DYNAMICS
+  Every operation is a map from incidence patterns to new incidence patterns.
+  The only invariant is the underlying point set; relations are rewritten.
+  Subset chains are inclusion paths through the configuration lattice.
+  The empty region is fixed under every operation that removes incidence.
+  Finite regions generate a finite lattice of 2^|A| subregions.
