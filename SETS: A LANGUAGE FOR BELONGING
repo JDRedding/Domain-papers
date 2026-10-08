@@ -1,0 +1,47 @@
+SETS: A LANGUAGE FOR BELONGING
+
+A set is a collection of distinct objects (elements).
+Membership is the only primitive: everything else is defined from it.
+
+FUNDAMENTALS
+  element / member     a thing that belongs to a set
+  set                  unordered collection of distinct elements
+  empty set            the unique set with no elements
+  universe / domain    the collection of all objects under consideration
+  cardinality          number of elements in a set
+
+BASIC RELATIONS
+  a ∈ A                a is an element of A          (membership)
+  a ∉ A                a is not an element of A      (non-membership)
+  A ⊆ B                every element of A is in B    (subset)
+  A ⊂ B or A ⊊ B       A ⊆ B and A ≠ B               (proper subset)
+  A ⊇ B                B ⊆ A                         (superset)
+  A ⊃ B or A ⊋ B       B ⊂ A                         (proper superset)
+  A = B                A ⊆ B and B ⊆ A               (equality)
+  A ≠ B                not (A = B)
+
+OPERATIONS
+  ∅                    empty set
+  A ∩ B                intersection: elements in both A and B
+  A ∪ B                union: elements in A or B or both
+  A \ B or A − B       difference / relative complement: in A but not B
+  A △ B or A ⊖ B       symmetric difference: in exactly one of A or B
+  Aᶜ or A′             complement: elements of the universe not in A
+  P(A) or 2^A          power set: set of all subsets of A
+  |A|                  cardinality of A
+  (a, b)               ordered pair
+  A × B                Cartesian product: set of all ordered pairs (a, b)
+
+COMMON NUMBER SETS
+  ℕ or N               natural numbers
+  ℤ or Z               integers
+  ℚ or Q               rational numbers
+  ℝ or R               real numbers
+  ℂ or C               complex numbers
+  𝕌 or U               universal set (context-dependent)
+
+NOTES
+  Sets contain no duplicates and order does not matter: {1, 2} = {2, 1}.
+  The empty set is a subset of every set: ∅ ⊆ A for any A.
+  Power set of a finite set with n elements has 2^n elements.
+  All operations above are defined solely in terms of membership.
