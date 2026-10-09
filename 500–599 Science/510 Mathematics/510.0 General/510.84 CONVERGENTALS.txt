@@ -239,7 +239,7 @@ Descent stopped   ρ held at ρ_★        Envelope held
   Convergentals:
       - Begin fractal
       - Express at meso scale
-      - Smooth at macro scale
+      - Hold fractal detail down to ε
       - Converge into solvable geometry
       - Are defined by the G–S–I–D loop
       - Are novel recursive geometric objects
@@ -420,6 +420,7 @@ FlowTowardG(S, G) moves S toward the invariants in G.
 function FlowTowardG(S, G):
     r = max_i ||S[i]||
     curvature_term = -k_c * (Curvature(S) - Curvature(G))
+         curvature_term[feature_length(S) <= eps] = 0
     radius_term = -k_r * (r - R_max) * u(S)
     topology_term = -k_t * TopologicalDeviation(S, G)
     return curvature_term
