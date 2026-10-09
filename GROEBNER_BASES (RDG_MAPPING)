@@ -1,0 +1,139 @@
+GROEBNER_BASES (RDG_MAPPING)
+===========================================
+Types, Variables, Fundamentals
+
+[0] Ambient Algebraic Types
+---------------------------
+Ring R        : k[x1, ..., xn]
+Ideal I       : subset of R
+MonomialOrder : total well-order on monomials (lex, grevlex, etc.)
+Monomial      : x1^a1 * ... * xn^an
+Polynomial    : finite k-linear combination of monomials
+
+LeadingTerm   : LT : Polynomial -> Monomial
+LeadingCoeff  : LC : Polynomial -> k
+LeadingMono   : LM : Polynomial -> Monomial
+
+ClosureOp     : C_LT(I) = < LT(f) : f in I >   (monomial ideal)
+
+GroebnerBasis : G = {g1, ..., gs} subset of I
+                 satisfying < LT(G) > = C_LT(I)
+
+SPolynomial   : S(g_i, g_j) = (lcm(LT(g_i), LT(g_j))/LT(g_i))*g_i
+                             - (lcm(LT(g_i), LT(g_j))/LT(g_j))*g_j
+
+Reduction     : f ->_G remainder r after multivariate division by G
+
+
+[1] RDG Tri-Mode Types
+----------------------
+SID = Structure, Interaction, Dynamics
+
+SID_Structure(S)
+----------------
+S.Objects:
+  - R, I, monomials, polynomials
+  - MonomialOrder
+  - LeadingTerm map LT
+  - Closure operator C_LT
+
+S.FundamentalRelation:
+  - Monomial divisibility
+  - Ideal inclusion
+  - Closure: C_LT(I)
+
+S.GenerativeBasis:
+  - Groebner basis G is S-minimal generative basis for C_LT(I)
+
+SID_Interaction(I)
+------------------
+I.Objects:
+  - Pairs (g_i, g_j)
+  - Overlap monomials: lcm(LT(g_i), LT(g_j))
+  - S-polynomials S(g_i, g_j)
+
+I.Relations:
+  - Reduction of S-polynomials modulo G
+  - Buchberger criterion: all S(g_i, g_j) reduce to 0
+
+I.Closure:
+  - "Interaction-closure" = no unresolved overlaps
+  - Confluence of reduction system
+
+SID_Dynamics(D)
+---------------
+D.Process:
+  - Start with generating set G0
+  - Compute S-polynomials
+  - Reduce S-polynomials
+  - Add nonzero remainders
+  - Iterate: G0 -> G1 -> ... -> G∞
+
+D.FixedPoint:
+  - G∞ = Groebner basis
+  - All interactions resolved
+  - Reduction yields canonical normal form
+
+D.NormalForm:
+  - f ↦ remainder(f, G∞)
+
+
+[2] RDG Projection / Elimination
+--------------------------------
+VariableFiltration:
+  - Lex order x1 > x2 > ... > xn induces:
+      R ⊇ k[x2,...,xn] ⊇ ... ⊇ k[xn]
+
+ProjectionFunctor:
+  - π_l : R -> k[x_{l+1},...,xn]
+  - Forget variables x1,...,xl
+
+EliminationIdeal:
+  - I_l = I ∩ k[x_{l+1},...,xn]
+
+EliminationBasis:
+  - G_l = G ∩ k[x_{l+1},...,xn]
+  - G_l is Groebner basis for I_l
+
+RDG_ProjectionLaw:
+  - Restricting an S-minimal, I-closed basis along π_l
+    preserves S-minimality and I-closure.
+
+Geometry:
+  - V(I_l) = closure of π_l(V(I))
+
+
+[3] Example System in RDG Form
+------------------------------
+System:
+  f1 = x^2 + y + z - 1
+  f2 = x + y^2 + z - 1
+  f3 = x + y + z^2 - 1
+
+Lex order: x > y > z
+
+D-Dynamics:
+  - Buchberger evolution produces G containing:
+      E(z) = z^2 (z-1)^2 (z^2 + 2z - 1)
+    plus triangular expressions:
+      y = Y(z)
+      x = X(z)
+
+S-Projection:
+  - G_2 = G ∩ k[z] = { E(z) }
+
+I-Closure:
+  - No unresolved S-polynomial interactions in k[z]
+
+Geometry:
+  - Roots of E(z) give all possible z-coordinates
+  - Each lifts to (x,y,z) via triangular relations
+
+
+[4] Summary Mapping
+-------------------
+Groebner Basis ↦ S-minimal generative basis for LT-closure
+S-Polynomials ↦ I-interaction objects
+Buchberger Algorithm ↦ D-dynamics to fixed point
+Normal Forms ↦ D-canonical states
+Elimination ↦ RDG projection morphism preserving S/I-closure
