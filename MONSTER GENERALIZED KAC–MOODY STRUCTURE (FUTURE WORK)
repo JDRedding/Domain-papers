@@ -1,0 +1,107 @@
+FUTURE WORK: ENGAGING THE MONSTER GENERALIZED KAC–MOODY STRUCTURE
+
+GOAL
+  Connect the relational cascade Γ (Witt → Golay → Leech → Twist → VOA → Griess)
+  to the Monster Lie algebra L_M and its denominator identity, without
+  confusing:
+    * finite Monster representation data (194 irreps, degrees, valuations)
+    * infinite GKM root data (imaginary roots indexed by n>0, multiplicities c(n))
+
+OBJECTS
+  V^natural        : Moonshine VOA
+  L_M              : Monster Lie algebra (Borcherds)
+  c(n)             : Fourier coefficients of j(τ)-744
+  Phi(q)           : denominator product q^{-1} Π_{n>0}(1-q^n)^{c(n)}
+  T_g(τ)           : McKay–Thompson series
+  Γ                : relational cascade producing V^natural
+  B                : Griess algebra = (V^natural)_2
+  Irr(M)           : 194 Monster irreps
+  deg(chi_i)       : chi_i(1)
+  v(chi_i)         : p-adic valuation vector of deg(chi_i)
+  U                : fusion operator on multiplicity vectors
+
+FUNDAMENTAL DISTINCTION
+  Monster representation data:
+    * finite set {deg(chi_i)}
+    * finite valuation table v(chi_i)
+    * finite multiplicity dynamics U
+
+  Monster Lie algebra data:
+    * infinite root lattice
+    * imaginary simple roots indexed by n>0
+    * multiplicities m(n)=c(n)
+    * denominator identity Phi(q)
+    * modular functions T_g(τ)
+
+  These live in different gradings and cannot be equated.
+
+DIRECTIONS
+
+1. USE Γ TO TRACK STRUCTURAL INPUTS TO L_M
+   Γ = Pi_VOA o Pi_Griess o Pi_Twist o Pi_Leech o Pi_Golay o Pi_Witt
+   Future work:
+     * identify which layers of Γ contribute to:
+         - the Cartan subalgebra (Λ_24 ⊕ H)
+         - the physical-state construction
+         - the Z_2 twist needed for V^natural
+     * clarify how Golay parity and Leech shell structure
+       feed into the VOA that ultimately produces L_M
+
+2. RELATE V^natural-GRADED TRACES TO GKM ROOT MULTIPLICITIES
+   c(n) = dim(V^natural_n)
+   Future work:
+     * analyze graded pieces V^natural_n directly
+     * compare their internal combinatorics to the relational layers
+     * study how Γ influences the growth pattern of c(n)
+
+3. STUDY MONSTER ACTION ON L_M VIA VOA AUTOMORPHISMS
+   Aut(V^natural)=M induces Aut(L_M)=M.
+   Future work:
+     * describe explicitly how Monster elements act on:
+         - real simple root (Virasoro)
+         - imaginary simple roots (indexed by n)
+     * determine fixed-point subalgebras inside L_M
+
+4. CONNECT GRIESS ALGEBRA TO THE FIRST IMAGINARY ROOT
+   c(1)=196884=1+196883
+   Future work:
+     * analyze how the Griess algebra B sits inside L_M
+     * study how B controls the first layer of imaginary roots
+     * understand how the 196883-dimensional irrep interacts with L_M
+
+5. ANALYZE DENOMINATOR IDENTITY AS A RELATIONAL OUTPUT
+   Phi(q)=q^{-1} Π_{n>0}(1-q^n)^{c(n)}
+   Future work:
+     * treat Phi(q) as the modular layer of the relational system
+     * explore whether Γ imposes constraints on the signs or structure
+       of the denominator product
+     * examine how the Z_2 twist influences the automorphic correction
+
+6. STUDY REPLICATION FORMULAE THROUGH RELATIONAL LENSES
+   T_g(τ) determined by denominator identity + twisted denominator formula.
+   Future work:
+     * analyze how relational symmetries (M24, Co0, Monster)
+       constrain T_g(τ)
+     * explore whether relational invariants from Γ correspond to
+       Atkin–Lehner symmetries or Hecke operators
+
+7. KEEP REPRESENTATION DATA SEPARATE FROM ROOT DATA
+   Future work:
+     * use valuation table only as PED evaluation of irreps
+     * avoid mapping v(chi_i) → c(n)
+     * instead, study how Monster representation theory influences:
+         - automorphisms of V^natural
+         - twisted modules
+         - McKay–Thompson series
+
+SUMMARY
+  Γ builds V^natural.
+  V^natural builds the Monster Lie algebra L_M.
+  L_M produces the denominator identity and modular functions.
+  The valuation table is a PED annotation of finite Monster irreps.
+  U is SID dynamics on multiplicity vectors.
+  c(n) is the modular/GKM layer and must be treated separately.
+
+  Future work is to articulate how Γ’s relational structure
+  influences the VOA and thereby the GKM algebra,
+  without conflating finite representation data with infinite root data.
