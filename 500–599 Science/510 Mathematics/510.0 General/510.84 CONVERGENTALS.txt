@@ -1,266 +1,218 @@
                         CONVERGENTALS                          
                  (Fractal-Origin Convergent Form)              
 +---------------------------------------------------------------+
++---------------------------------------------------------------+
 510.84 — Advanced Mathematical Structures
-
 Summary
-
-This document defines Convergentals, a novel class of geometry-
-aware recursive geometric objects that unify structure and 
-geometry through a four-channel framework (G–S–I–D).
-
+This document defines Convergentals, a recursive geometric object
+with embedding S, invariants G, operator Φ, and step scale D.
+Both infinities are cut: extent by R_max, descent by ε.
 Core Concept
-
-Convergentals begin as fractal-origin objects at the micro scale, 
-expand with recursive complexity through a fractal "meso zone," 
-and converge into a stable geometric form at a macro radius 
-boundary. They're governed by a single symbolic update operator:
-
+Convergentals begin at a micro seed, take fractal injection in a
+meso band, and stop at a finite truncation:
+	r = R_max  and  ρ = ρ_★  and  λ_min = ε
+One operator:
 	S_{t+1} = Φ(S_t, G)
-
 Key Components
-
 The Four Channels:
-- G (Geometry): Global geometric identity—topology, curvature, 
-	knot class, radius limit (R_max)
-- S (Structure): Local geometric realization that evolves and 
-	carries convergence invariants
-- I (Interaction): Geometry-aware operator that injects fractal 
-	detail at meso scale and tapers near convergence
-- D (Dynamics): State-driven recursion brake that slows 
-	evolution as the system approaches boundaries
-
+- G (Geometry): knot class, R_max, ε, ρ_★. Not the current embedding.
+- S (Structure): current embedding. Matches G only at the fixed point.
+- I (Interaction): Φ. g_f seeds the meso band. g_out holds the
+	envelope. g_in holds detail at ρ_★.
+- D (Dynamics): step scale inside Φ. Small near R_max.
 The Dual-Engine Operator Φ
-
-The update mechanism balances two opposing forces mediated by 
-radial distance (r_t = ||S_t||):
-
-1. Fractal Injection (F_frac): 
-	Active only in the meso zone (r_t < αR_max), injecting 
-	topological complexity (braids, loops, oscillations)
-2. Geometric Renormalization (F_flow): A triad of flows—curvature 
-	correction, radius correction, and topology preservation—
-	pulling the structure toward G
-
-A taper factor (I_f) ensures smooth transition from fractal 
-expansion to geometric convergence.
-
+Outbound finishes the macro infinity. Inbound finishes the micro.
+1. F_frac / F_micro: insert only at feature length ≥ ε.
+	g_in = max(0, ρ_★ - ρ) restores detail. Zero at ρ_★.
+2. F_macro: curvature above ε, radius toward R_max, topology held.
+	g_out = (r / R_max)^p
+D multiplies the step. Π_ε clips ||x|| > R_max and rejects
+insertions shorter than ε.
 Scale Behavior
-
-| Scale 		| Zone 			| Behavior 
+| Scale 		| Zone 			| Behavior
 |-------		|------			|----------
-| Micro 		| r = 0 		| Seed point initialization 
-| Meso 			| r < αR_max 	| Fractal injection & 
-									recursive patterning 
-| Macro 		| r → R_max 	| Smoothing constraints & 
-									convergence into solved form 
-
+| Micro 		| λ = ε 		| Descent stopped
+| Meso 			| ε < λ < R_max 	| Fractal held at ρ_★
+| Macro 		| r → R_max 	| Envelope held by g_out
 Distinctive Properties
-
 - Fractal-origin expansion
-- Finite radius boundary (R_max)
+- Finite radius (R_max) and finite depth (ε)
+- Detail invariant ρ_★, not smoothed to zero
 - Knot-compatible (trefoils, braids, torus knots)
-- State-aware dynamics with logistic phase regulation
-- Topology-preserving correction fields
-- Convergence into solvable geometry
-
-The document includes pseudocode implementations, detailed 
-mathematical formulations, and mappings across fractal family 
-classifications (IFS, escape-time, L-systems, space-filling 
-curves, and knot-derived forms).
-
+- Reject on crossing change and on feature length < ε
+- Fixed point: r = R_max and ρ = ρ_★
 +---------------------------------------------------------------+
 
 DEFINITION:
-  A Convergentals is a geometry-aware recursive object whose
-  structural state (S) and geometric identity (G) are unified,
-  whose interaction operator (I) responds to geometry, and whose
-  dynamics (D) regulate recursion based on state. The object
-  begins fractal at the meso scale, expands from a micro seed,
-  and converges at a macro radius into a stable solved form.
-
+  A Convergental is a geometry-aware recursive object. S is the
+  current embedding. G is the target invariants. I is the operator
+  Φ. D is the step scale inside Φ. The object begins at a micro
+  seed, takes fractal injection in the meso band, and converges
+  at R_max to a fixed point Φ(S, G) = S.   
+  Both infinities are cut: r → R_max and detail descent → ε.
+  Converged form keeps ρ_★, the fractal stopped at ε.
   single symbolic operator: S_{t+1} = Φ(S_t, G)
 
-CANONICAL CONVERGENTALS OPERATOR Φ               
-
-Let:
-
-  r_t      = ||S_t||                          ; radial state
-  I_f      = max(0, 1 - r_t / R_max)          ; taper factor
-  α        = meso threshold (0 < α < 1)
-
-Fractal Engine (micro/meso):
-  F_frac   = fractal injection field
-             (braids, loops, oscillations)
-
-Geometric Engine (macro):
-  F_flow   = F_curv + F_rad + F_top
-             curvature flow
-             radius renormalization
-             topology preservation
-
-Single symbolic operator:
-  Φ(S_t, G) =
-      S_t
-      + I_f * ( 1_{r_t < α R_max} * F_frac(S_t)
-                + F_flow(S_t, G) )
-
-Convergentals recursion:
-  S_{t+1} = Φ(S_t, G)
-
-Dynamics regulator:
-  D_t = 1 / (1 + exp(5 * (r_t / R_max - 0.9)))
++---------------------------------------------------------------+
+|                    FINITE FRACTAL BOUNDS                      |
++---------------------------------------------------------------+
+Two infinities, two cuts:
+  macro infinity : extent  → cut by R_max
+  micro infinity : descent → cut by ε
+ε is the smallest feature length stored in G.
+  0 < ε < α R_max
+Generation cap from the two cuts:
+  N_max = floor( log(R_max / ε) / log(1/s) )
+  s = contraction ratio of F_frac, 0 < s < 1
+Detail invariant, not zero:
+  ρ(S)  = feature count at scales ≥ ε
+  ρ_★   = ρ of the fractal stopped at ε
+Fixed point is both cuts:
+  r = R_max  and  ρ(S) = ρ_★  and  λ_min(S) = ε
+A smooth knot with ρ = 0 is not the converged object.
 
 +---------------------------------------------------------------+
 |                 CONVERGENTALS: SYMBOLIC OPERATOR              |
 +---------------------------------------------------------------+
 
 Let:
-
   Φ(S, G)  : Convergentals update operator
-  r        : radius = ||S||
-  I_f      : taper = max(0, 1 - r / R_max)
-  α        : meso threshold (0 < α < 1)
-
+  r        : radius = max_i ||S[i]||
+  ε        : micro cutoff in G
+  ρ        : detail at scales ≥ ε
+  ρ_★      : stopped-fractal detail in G
+  g_f      : seed gate
+             = 1_{r < α R_max} * max(0, 1 - r / (α R_max))
+  g_out    : macro gain = (r / R_max)^p
+  g_in     : micro gain = max(0, ρ_★ - ρ)
+  D        : step scale
+             = 1 / (1 + exp(5 * (r / R_max - 0.9)))
 Flows:
-  F_frac   : fractal perturbation field
-  F_curv   : curvature correction
-  F_rad    : radius correction
-  F_top    : topology correction
-
-Total geometry-aware flow:
-  F_flow = F_curv + F_rad + F_top
-
+  F_frac   : one legal insertion, feature length ≥ ε
+  F_macro  : F_curv + F_rad + F_top
+             curvature toward the solved form
+             radius toward R_max
+             topology held
+  F_micro  : restore detail when ρ < ρ_★
+             insert only at scales ≥ ε
+             zero when ρ = ρ_★
 Single symbolic operator:
   Φ(S, G) =
-      S
-      + I_f * ( 1_{r < α R_max} * F_frac(S)
-                + F_flow(S, G) )
-
+      Π_ε( S
+           + D * ( g_f * F_frac(S)
+                   + g_out * F_macro(S, G)
+                   + g_in * F_micro(S, G) ) )
+  Π_ε clips ||x|| > R_max
+  and rejects any insertion shorter than ε.
 Convergentals recursion:
   S_{t+1} = Φ(S_t, G)
 
 +---------------------------------------------------------------+
 |                 CONVERGENTALS: SINGLE UPDATE MAP              |
 +---------------------------------------------------------------+
-
 Given:
   S_t      : current structure (curve / knot embedding)
-  G        : target geometry (curvature, topology, R_max)
-  r_t      : radius = ||S_t||
-  R_max    : macro-scale radius limit
+  G        : R_max, ε, ρ_★, knot class, curvature above ε
+  r_t      : radius = max_i ||S_t[i]||
+  ρ        : detail at scales ≥ ε
   α        : meso threshold (0 < α < 1)
-  I_f(r_t) : taper factor = max(0, 1 - r_t / R_max)
-
-Define flows:
-  F_frac(S_t)   : fractal perturbation field
-  F_curv(S_t,G) : curvature correction
-  F_rad(S_t,G)  : radius correction
-  F_top(S_t,G)  : topology correction
-
-Total geometry-aware flow:
-  F_flow(S_t,G) = F_curv(S_t,G)
-                + F_rad(S_t,G)
-                + F_top(S_t,G)
-
+  p        : flow exponent (p ≥ 1)
+  g_f      : seed gate
+             = 1_{r_t < α R_max} * max(0, 1 - r_t / (α R_max))
+  g_out    : macro gain = (r_t / R_max)^p
+  g_in     : micro gain = max(0, ρ_★ - ρ)
+  D_t      : step scale
+             = 1 / (1 + exp(5 * (r_t / R_max - 0.9)))
+Flows:
+  F_frac    : one legal insertion, feature length ≥ ε
+  F_macro   : F_curv + F_rad + F_top
+  F_micro   : restore detail when ρ < ρ_★, scales ≥ ε only
 Single-step update:
   S_{t+1} =
-      S_t
-      + I_f(r_t) * (
-            1_{r_t < α R_max} * F_frac(S_t)
-            + F_flow(S_t, G)
-        )
+      Π_ε( S_t
+           + D_t * (
+                 g_f * F_frac(S_t)
+                 + g_out * F_macro(S_t, G)
+                 + g_in * F_micro(S_t, G)
+             ) )
+  Π_ε clips ||x|| > R_max
+  and rejects any insertion shorter than ε.
 
 +---------------------------------------------------------------+
-|                    DYNAMICS (OPTIONAL)                        |
+|                           DYNAMICS                            |
 +---------------------------------------------------------------+
 
-State-aware recursion taper:
+State-aware step scale, inside Φ:
   D_t = 1 / (1 + exp(5 * (r_t / R_max - 0.9)))
-
+D_t multiplies the whole step.
+It is not optional and not a side output.
 
 +---------------------------------------------------------------+
 |                           CHANNELS                            |
 +---------------------------------------------------------------+
-
   G : GEOMETRY
-      - Global geometric identity
-      - Topology, curvature, braid-cycle, knot-class
-      - Defines macro radius (R_max)
-      - G ≡ S (structure is geometry)
-
+      - Target invariants, not the current embedding
+      - Knot class, curvature above ε
+      - R_max, ε, ρ_★
+      - Match holds only at the fixed point
   S : STRUCTURE
-      - Local geometric realization of G
-      - Carries curvature, adjacency, density, roughness
-      - Evolves under I
-      - Provides invariants for convergence
-
+      - Current embedding
+      - Carries radius, detail ρ, smallest feature λ_min
+      - Evolves under Φ
   I : INTERACTION
-      - Geometry-aware operator: I = I(S)
-      - Applies recursive patterning
-      - Injects fractal detail at meso scale
-      - Tapers as S approaches G-invariants
-      - Produces next S: S_{t+1} = I(S_t)
-
+      - The operator Φ
+      - g_f seeds the meso band
+      - g_out holds the envelope at R_max
+      - g_in holds ρ at ρ_★
   D : DYNAMICS
-      - State-aware recursion horizon: D = D(S)
-      - Controls phase/time of evolution
-      - Slows near macro radius
-      - Stops at convergence threshold
-      - Provides cyclic modes for knot-forms
+      - Step scale inside Φ
+      - Slows near 0.9 R_max
+      - Small at the fixed point
 
 +---------------------------------------------------------------+
 |                     SCALE BEHAVIOR MODEL                      |
 +---------------------------------------------------------------+
-
 MICRO               MESO                  MACRO
-(Seed Point)       (Fractal Zone)       (Target Boundary)
-r = 0             r < α R_max             r → R_max
+(Cutoff ε)         (Held fractal)       (Radius bound)
+λ = ε             ε < λ < R_max          r → R_max
 o -------------> ~~~~~~%%%%% ---------> ( O )
-Initialization   Injection & Braids     Smoothing to G
-
-  MICRO SCALE (seed)
-      - S_0 is minimal: point, segment, micro-loop
-      - No fractal detail
-      - Initialization state
-
-  MESO SCALE (fractal zone)
-      - Active recursive expression
-      - I injects detail
-      - S accumulates complexity
-      - D maintains expansion
-      - Knot/loop/braid patterns emerge
-
+Descent stopped   ρ held at ρ_★        Envelope held
+  MICRO SCALE (cutoff)
+      - No insertion shorter than ε
+      - λ_min = ε at the fixed point
+      - Infinite descent is cut, not smoothed
+  MESO SCALE (held fractal)
+      - g_f seeds, then g_in maintains
+      - ρ → ρ_★
+      - F_curv does not damp features at ε
   MACRO SCALE (radius limit)
-      - Geometry constraints activate
-      - Curvature bounds enforce smoothing
-      - I tapers: I → I_convergent
-      - D slows: D → 0
-      - S stabilizes into solved geometric form
+      - g_f = 0, g_out holds the envelope
+      - Topology held, crossing change rejected
+      - Stop when r = R_max and ρ = ρ_★
 
 +---------------------------------------------------------------+
 |                     CONVERGENCE CONDITIONS                    |
 +---------------------------------------------------------------+
-
   Convergence occurs when:
-      - S matches geometric invariants of G
-      - Curvature ≤ curvature_max(G)
-      - Density → stable
-      - Braid-cycle → closed
-      - Radius → R_max
-      - I(S) → identity operator
-      - D(S) → stop condition
+      - Φ(S, G) = S
+      - g_f = 0 and g_in = 0
+      - r = R_max
+      - λ_min(S) = ε
+      - ρ(S) = ρ_★
+      - Crossing number and braid-word length match G
+      - D_t small
+
+  ρ = 0 is not convergence.
 
 +---------------------------------------------------------------+
 |                     PROCESS LOOP (G–S–I–D)                    |
 +---------------------------------------------------------------+
-
   LOOP:
-  1. S_t = G_t                 (structure is geometry)
-  2. I_t = I(S_t, G_t, D_t)    (interaction responds to geometry)
-  3. S_{t+1} = I_t(S_t)        (interaction produces next structure)
-  4. D_{t+1} = D(S_{t+1})      (dynamics respond to new state)
-  5. Repeat until convergence
+  1. I_t = Φ(S_t, G)           (interaction is the update)
+  2. S_{t+1} = I_t             (next structure)
+  3. D_{t+1} = D(S_{t+1})      (step scale from new radius)
+  4. Repeat until Φ(S, G) = S
+  Do not set S_t = G_t.
 
 +---------------------------------------------------------------+
 |                    SIGNATURE BEHAVIOR                         |
@@ -289,90 +241,41 @@ Initialization   Injection & Braids     Smoothing to G
 +---------------------------------------------------------------+
 |              CONVERGENTALS: DUAL-ENGINE Φ                     |
 +---------------------------------------------------------------+
-The Dual-Engine Mechanism
-
+Outbound finishes the macro infinity. Inbound finishes the micro.
 The update map:
-
-	S_(t+1) = 
-	(S_t + I_f(r_t)) (1_(r_t < alpha R_max) F_frac (S_t) 
-	+ F_flow (S_t, G))
-
-operates on two opposing forces mediated by radial distance 
-r_t = ||S_t||:
-
-Micro/Meso Fractal Injection (F_frac): 
-Active only when r_t < alpha R_max. It injects local topological 
-complexity (braids, loops, high-frequency oscillations).
-
-Macro Geometric Renormalization (F_flow): 
-A triad of flows (F_curv + F_rad + F_top) acting as an attractor 
-toward G.
-
-State Taper (I_f = max(0, 1 - r/(R_max))): 
-Ensures that as the boundary R_max is approached, the system 
-transitions from recursive expansion to smooth manifold 
-completion.
-
-Execution dynamics are critical:
-
-Topological Deviation Penalty (F_top}): 
-Ensures crossing numbers do not collapse or become invalid during 
-the F_frac injection phase. It acts as a knot-invariant constraint 
-field (e.g., preserving Gauss code or braid word length).
-
-Logistic Phase Regulator (D_t):
-
-	D_t = 1 / (1 + exp (5 ((r_t/R_max) - 0.9))
-
-Functions as a state-driven dynamic brake, slowing integration 
-time steps near $0.9 R_{\max}$ to prevent stiff differential jump 
-artifacts during smoothing.
+  S_{t+1} =
+      Π_ε( S_t
+           + D_t * ( g_f * F_frac(S_t)
+                     + g_out * F_macro(S_t, G)
+                     + g_in * F_micro(S_t, G) ) )
+r_t = max_i ||S_t[i]||
+Outbound (macro):
+  g_out = (r_t / R_max)^p
+  F_macro = F_curv + F_rad + F_top
+  Radius toward R_max. Topology held.
+  Curvature corrected only where feature length > ε.
+Inbound (micro):
+  g_in = max(0, ρ_★ - ρ)
+  F_micro restores detail down to ε and no further.
+  Zero when ρ = ρ_★.
+Seed:
+  g_f fires only while r_t < α R_max, insertions ≥ ε.
+Clip (Π_ε):
+  ||x|| > R_max is clipped.
+  Insertion shorter than ε is rejected.
 
 +---------------------------------------------------------------+
-
-Let:
-
-  r_t      = ||S_t||                          ; radial state
-  I_f      = max(0, 1 - r_t / R_max)          ; taper factor
-  α        = meso threshold (0 < α < 1)
-
-Fractal Engine (micro/meso):
-  F_frac   = local fractal injection field
-             (braids, loops, oscillations)
-
-Geometric Engine (macro):
-  F_flow   = F_curv + F_rad + F_top
-             curvature flow
-             radius renormalization
-             topology preservation
-
-Single symbolic operator:
-  Φ(S_t, G) =
-      S_t
-      + I_f * ( 1_{r_t < α R_max} * F_frac(S_t)
-                + F_flow(S_t, G) )
-
-Convergentals recursion:
-  S_{t+1} = Φ(S_t, G)
-
-Dynamics regulator:
-  D_t = 1 / (1 + exp(5 * (r_t / R_max - 0.9)))
-
-
-                 INTERPRETATION OF THE OPERATOR                   
+|                 INTERPRETATION OF THE OPERATOR                |
 +---------------------------------------------------------------+
-
-• F_frac  : activates only in the micro/meso zone (r_t < α R_max)
-            injects topological complexity
-
-• F_flow  : activates everywhere, but dominates near R_max
-            enforces curvature, radius, and knot invariants
-
-• I_f     : mediates the transition from fractal expansion
-            to geometric convergence
-
-• D_t     : logistic brake preventing stiff jumps near the boundary
-
+• F_frac  : seeds the meso band, feature length ≥ ε
+• g_f     : dies at the meso edge α R_max
+• F_macro : envelope, curvature above ε, knot class
+• g_out   : rises with r / R_max
+• F_micro : restores detail when ρ < ρ_★
+• g_in    : zero at ρ_★, so the micro cut is a fixed point
+• ε       : descent stop. Detail below ε is never made
+• D_t     : multiplies the step; brakes near 0.9 R_max
+• Π_ε     : clips outliers and rejects sub-ε insertions
 
 +---------------------------------------------------------------+
 |                SID MAPPING ACROSS FRACTAL FAMILIES            |
@@ -414,182 +317,110 @@ FAMILY: Knot-Derived (Braids, Torus Knots, Moon-Fractals)
   Convergence Difficulty : Hard & Novel
 
 +---------------------------------------------------------------+
-Convergentals pseudocode
+|                      CONVERGENTALS STEP                       |
 +---------------------------------------------------------------+
-three‑scale model:
-
-	micro: 	S₀ is a point
-	meso: 	fractal injection
-	macro: 	geometry‑driven smoothing
-
-And it respects the Convergentals invariants:
-
-	finite radius
-	tapering recursion
-	geometry‑aware correction
-	state‑aware dynamics
-	convergence into G
-
----
-function ConvergentalsStep(S, G, R_max):
-
-    r = ||S||			# geometric radius
-    curvature = Curvature(S)	# local geometric state
-
-    # Geometry-aware taper
-    I_factor = max(0, 1 - r / R_max)
-
-    # MESO: fractal expression zone
-    if r < 0.6 * R_max:
-        S = S + I_factor * FractalPerturb(S)
-
-    # MACRO: smoothing toward geometric invariants
-    S = S + I_factor * FlowTowardG(S, G, curvature)
-
-    # State-aware dynamics (logistic taper)
-    D = 1 / (1 + exp(5 * (r / R_max - 0.9)))
-
-    return S, D
-
-
-+---------------------------------------------------------------+
-                 CONVERGENTALS STEP                
-+---------------------------------------------------------------+
-
 Inputs:
-  S_t      : current structure (points / curve / knot embedding)
-  G        : target geometry (curvature, topology, R_max)
-  R_max    : macro radius limit
+  S_t      : current structure
+  G        : R_max, ε, ρ_★, knot class
   α        : meso threshold (0 < α < 1)
-  k_c      : curvature flow coefficient
-  k_r      : radius flow coefficient
-  k_t      : topology flow coefficient
-
+  p        : flow exponent (p ≥ 1)
+  k_c, k_r, k_t
 Derived:
-  r_t      = max_i ||S_t[i]||                     ; current radius
-  I_f      = max(0, 1 - r_t / R_max)              ; taper factor
-  D_t      = 1 / (1 + exp(5 * (r_t / R_max - 0.9))) ; dynamics taper
-
+  r_t      = max_i ||S_t[i]||
+  ρ        = detail at scales ≥ ε
+  g_f      = 1_{r_t < α R_max} * max(0, 1 - r_t / (α R_max))
+  g_out    = (r_t / R_max)^p
+  g_in     = max(0, ρ_★ - ρ)
+  D_t      = 1 / (1 + exp(5 * (r_t / R_max - 0.9)))
 Flows:
-  F_frac   = FractalPerturb(S_t)                  ; meso-scale fractal field
-  F_curv   = -k_c * (Curvature(S_t) - Curvature(G))
-  F_rad    = -k_r * (r_t - R_max) * Normalize(S_t)
-  F_top    = -k_t * TopologicalDeviation(S_t, G)
-
-  F_flow   = F_curv + F_rad + F_top               ; geometry-aware flow
-
+  F_frac   = FractalPerturb(S_t)          ; reject if length < ε
+  F_macro  = FlowTowardG(S_t, G)          ; curvature only above ε
+  F_micro  = DetailRestore(S_t, ρ_★, ε)   ; zero at ρ_★
 Update rule:
   S_{t+1} =
-      S_t
-      + I_f * ( 1_{r_t < α R_max} * F_frac + F_flow )
-
-Radius enforcement:
-  S_{t+1} = S_{t+1} * ( R_max / max_i ||S_{t+1}[i]|| )
-
+      Π_ε( S_t
+           + D_t * ( g_f * F_frac
+                     + g_out * F_macro
+                     + g_in * F_micro ) )
+Clip:
+  reject insertion if feature length < ε
+  for each point x:
+      if ||x|| > R_max: x = x * (R_max / ||x||)
 Outputs:
-  S_{t+1} : updated structure
-  D_t     : updated dynamics factor
-
+  S_{t+1}, D_t
 -----------------------------------------------------------------
-
-def ConvergentalsStep(S, G, R_max=1.0, alpha=0.6, k_c=0.05, k_r=0.1, k_t=0.02):
-    r = np.linalg.norm(S, axis=1).max() # current radius
-    I_factor = max(0.0, 1.0 - r / R_max)
-    
-    # MESO: fractal injection
-    if r < alpha * R_max:
-        S = S + I_factor * FractalPerturb(S)    
-		# e.g. noise, Weierstrass, or braid insertion
-    
-    # MACRO: geometry-driven correction
-    S = S + I_factor * FlowTowardG(S, G, k_c, k_r, k_t)
-    
-    # Optional dynamics taper
+def ConvergentalsStep(S, G, R_max=1.0, eps=0.02, rho_star=8.0,
+                      alpha=0.6, p=2.0, k_c=0.05, k_r=0.1, k_t=0.02):
+    r = np.linalg.norm(S, axis=1).max()
+    rho = Detail(S, eps)
+    g_f = max(0.0, 1.0 - r / (alpha * R_max)) if r < alpha * R_max else 0.0
+    g_out = (r / R_max) ** p
+    g_in = max(0.0, rho_star - rho)
     D = 1.0 / (1.0 + np.exp(5.0 * (r / R_max - 0.9)))
-    
-    # Enforce bounds
+    if g_f > 0.0:
+        S = S + D * g_f * FractalPerturb(S, eps)
+    S = S + D * g_out * FlowTowardG(S, G, k_c, k_r, k_t, eps)
+    if g_in > 0.0:
+        S = S + D * g_in * DetailRestore(S, rho_star, eps)
     norms = np.linalg.norm(S, axis=1)
-    S = S * (R_max / np.maximum(norms, 1e-8)[:, None])
-    
+    over = norms > R_max
+    S[over] *= (R_max / norms[over])[:, None]
     return S, D
 
 +---------------------------------------------------------------+
-FlowTowardG — concise definition
+|              FlowTowardG — concise definition                 |
 +---------------------------------------------------------------+
 
 Operator decomposition
 -
-FlowTowardG is composed of three sub‑flows:
-
-	FlowTowardG = CurvatureFlow
-            + RadiusFlow
-            + TopologyFlow
-
-Each one is geometry‑aware.
+FlowTowardG is composed of three sub-flows:
+    FlowTowardG = CurvatureFlow
+                + RadiusFlow
+                + TopologyFlow
+Each one is geometry-aware.
 
 CurvatureFlow(S, G)
 -
 Reduces curvature deviation:
+    CurvatureFlow = -k_c * (curvature(S) - curvature(G))
 
-
-	CurvatureFlow = -k_c * (curvature(S) - curvature(G))
-
-Meaning:
-
-	if S is too rough → smooth
-	if S is too flat → tighten
-	if S matches G → no change
-
-This is local smoothing.
+only where feature length > ε
+Features at ε are held by F_micro.
 
 RadiusFlow(S, G)
 -
-Enforces the macro radius limit:
-
-
-	RadiusFlow = -k_r * (||S|| - R_max) * (S / ||S||)
-
+r = max_i ||S[i]||, not a per-point radius.
+    RadiusFlow = -k_r * (r - R_max) * u(S)
+u(S) = outward unit radial field.
 Meaning:
-
-	inside radius → no effect
-	near radius → strong inward pull
-	beyond radius → forced correction
-
-This is macro convergence.
+    inside radius → outward push
+    at radius → no effect
+    beyond radius → inward pull
+The per-point clip is the backstop, not this flow.
 
 TopologyFlow(S, G)
 -
 Preserves knot invariants:
-
-	TopologyFlow = -k_t * TopologicalDeviation(S, G)
-
+    TopologyFlow = -k_t * TopologicalDeviation(S, G)
 Where TopologicalDeviation measures:
-
-	crossing number drift
-	braid word drift
-	linking number drift
-	writhe deviation
-
-This is topology‑preserving correction.
+    crossing number drift
+    braid word drift
+    linking number drift
+    writhe deviation
+Reject the step if crossing number or braid-word length changes.
 
 ---
+
 Full operator
 -
-
-FlowTowardG(S, G) is the geometry‑aware correction operator 
-that moves the current structure S toward the geometric 
-invariants encoded in G, using curvature, radius, and 
-topological deviation as its guiding fields.
-
+FlowTowardG(S, G) moves S toward the invariants in G.
 function FlowTowardG(S, G):
-
+    r = max_i ||S[i]||
     curvature_term = -k_c * (Curvature(S) - Curvature(G))
-
-    radius_term = -k_r * (||S|| - R_max) * Normalize(S)
-
+    radius_term = -k_r * (r - R_max) * u(S)
     topology_term = -k_t * TopologicalDeviation(S, G)
-
     return curvature_term
          + radius_term
          + topology_term
++---------------------------------------------------------------+
 
