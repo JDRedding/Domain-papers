@@ -414,7 +414,7 @@ FAMILY: Knot-Derived (Braids, Torus Knots, Moon-Fractals)
   Convergence Difficulty : Hard & Novel
 
 +---------------------------------------------------------------+
-Convergentals pseudocode (ASCII‑stable)
+Convergentals pseudocode
 +---------------------------------------------------------------+
 three‑scale model:
 
@@ -453,7 +453,7 @@ function ConvergentalsStep(S, G, R_max):
 
 
 +---------------------------------------------------------------+
-                 CONVERGENTALS STEP (ASCII FORM)                  
+                 CONVERGENTALS STEP                
 +---------------------------------------------------------------+
 
 Inputs:
