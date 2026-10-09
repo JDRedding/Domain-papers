@@ -2,7 +2,49 @@ RDGA SEVEN INDETERMINATE FORMS
 CARRIER / Γ VERSION
 (Clashes of carriers and recomputation, not real limits)
 
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         RDGA SEVEN INDETERMINATE FORMS -- CARRIER / Γ VERSION                                                      |
+|                                         Clashes of carriers and recomputation, not real limits.                                                    |
++------------------------------------+--------------------------------------------------------------------+------------------------------------------+
+| RDGA OBJECTS AND CUES              | MAIN CARRIER CALCULUS (FORMS 1-4)                                  | APPENDIX: DIVISION CALCULUS              |
+|                                    +------------------+------------------+------------------+-----------+ BESIDE THE CARRIER CALCULUS              |
+| Objects:                           | 1. 0/0 -> BOT    | 2. INF/INF ->    | 3. 0*INF -> MIX  | 4. INF-INF|                                          |
+|  R           relation              |                  |    Div/Div       |                  | -> Div-Div| A.1 Three alternative reductions         |
+|  Phi         carrier map R |-> I_R +------------------+------------------+------------------+-----------|     nonzero num   struct zero   both zero|
+|  I_R         carrier ideal         | collapse-collapse| unresolved fibers| mixed composition|           +      over inv zero over non-id  elements |
+|  Gamma       recomputation step    | of generators    | typed by which   |                  | generator |           |            |           |     |
+|  S(R)        real zero set         |                  | projection failed| R o S =          | cancella- |           v            v           v     |
+|  dim(I_R)    Krull dimension       | Test ideal       |                  | Elim_y(I_R + I_S)| tion under|      EXP(SID(a))   COL(iota    Z_S o Z_I |
+|  dim_exp(R)  expected dimension    | membership, then | Test whether     |                  | ideal sum |     expansion fiber (PED(a)))  = BOT     |
+|                                    | one elimination  | Elim(I_R + I_S)  | If y is removed, |           |                    collapse fiber        |
+| Cues:                              | or Jacobian step.| lowers dimension.| reduced ideal.   | If f      +------------------------------------------+
+|  -> 0        generator redundant   |                  |                  |                  | reduces to| A.2 Must not identify:                   |
+|              by ideal membership,  |   +-> Indep.     | If it lowers to  |   +-> reduced    | zero mod  |  * EXP is not Form 2                     |
+|              or side-constraint    |   |   grads:     |   dim_exp and    |   |   ideal, Q_OK| remaining |  * COL is not Q_EMPTY or Q_DEGEN         |
+|              becomes equality      |   |   0-dim &    |   S(R) non-empty,|   |              | generators|  * BOT is not a reduced ideal, a discrete|
+|  unbounded   elimination fails to  |   |   Q_OK       |   next carrier & |   |              | drop f    |    point, or either fiber.               |
+|              cut a fiber           |   |              |   Q_OK.          |   |              | and       +------------------------------------------+
+|  resolved    reduced ideal & Q_OK  |   |              |                  |   |              | reclassify| A.3 Shared BOT equals the pair           |
+|  indeterm.   next Gamma step       |   x   Dep. grads |  -+-> next       |   -+-> y         | remainder |     (Z_S o Z_I, rank-deficient sum).     |
+|              returns same ideal    |   |   not sep.   |   |   carrier,   |    |   retained, | ideal.    +------------------------------------------+
+|              & same rank           |   |   give BOT   |   |   Q_OK       |    |   MIX       |           | A.4 Decision order:                      |
+|                                    |   |              |   |              |    |   persists  |   -+->    |  Classify first as cross-mode quotient,  |
+| Q Flags:                           |   +-> BOT,       | If it does not   |    |             |    |  rem.|  or ideal sum/projection/composition,    |
+|  Q_OK        resolved              |       Q_SINGULAR | lower dim:       |    +-> MIX       |    |  ide.|  or power form, then apply only that     |
+|  Q_EMPTY     no real zero          |                  | unresolved fiber |        persists  |    |  & Q |  rule and stop.                          |
+|  Q_DEGEN     dim mismatch after    |  ===> Arrow ends |                  |                  |    |  flag|------------------------------------------+
+|              reduction             |       only at    |  ===> Arrow ends |  ===> Arrow      |    v      | A.5 Status:                              |
+|  Q_SINGULAR  Jacobian rank def.    |       BOT/Q_SING,|       at unresolv|       ends at    | ===> Arrow|  Body closed under RDGA operators;       |
+|  Q_UNCHECKED not yet evaluated     |       not fiber. |       fiber.     |       MIX only.  |      ends |  appendix closed under the three         |
+|                                    +------------------+------------------+------------------+  at rem.  |  quotient reductions; neither derives    |
+|                                    | Forms 5-7: 1^INF, INF^0, 0^0                           |  ideal &  |  the other.                              |
+|                                    | have no RDGA operator; drop them unless a carrier      |  Q flag,  |                                          |
+|                                    | polynomial already contains the defect.                |  not MIX. |                                          |
++------------------------------------+--------------------------------------------------------+-----------+------------------------------------------+
+
 ----------------------------------------------------------------
+
 RDGA OBJECTS
     R          : relation
     Φ          : carrier map, Φ : R ↦ I_R
