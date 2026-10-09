@@ -2,16 +2,19 @@
                  (Fractal-Origin Convergent Form)              
 +---------------------------------------------------------------+
 510.84 — Advanced Mathematical Structures
+
 Summary
 This document defines Convergentals, a recursive geometric object
 with embedding S, invariants G, operator Φ, and step scale D.
 Both infinities are cut: extent by R_max, descent by ε.
+
 Core Concept
 Convergentals begin at a micro seed, take fractal injection in a
 meso band, and stop at a finite truncation:
 	r = R_max  and  ρ = ρ_★  and  λ_min = ε
 One operator:
 	S_{t+1} = Φ(S_t, G)
+
 Key Components
 The Four Channels:
 - G (Geometry): knot class, R_max, ε, ρ_★. Not the current embedding.
@@ -19,6 +22,7 @@ The Four Channels:
 - I (Interaction): Φ. g_f seeds the meso band. g_out holds the
 	envelope. g_in holds detail at ρ_★.
 - D (Dynamics): step scale inside Φ. Small near R_max.
+
 The Dual-Engine Operator Φ
 Outbound finishes the macro infinity. Inbound finishes the micro.
 1. F_frac / F_micro: insert only at feature length ≥ ε.
@@ -27,12 +31,14 @@ Outbound finishes the macro infinity. Inbound finishes the micro.
 	g_out = (r / R_max)^p
 D multiplies the step. Π_ε clips ||x|| > R_max and rejects
 insertions shorter than ε.
+
 Scale Behavior
 | Scale 		| Zone 			| Behavior
 |-------		|------			|----------
 | Micro 		| λ = ε 		| Descent stopped
 | Meso 			| ε < λ < R_max 	| Fractal held at ρ_★
 | Macro 		| r → R_max 	| Envelope held by g_out
+
 Distinctive Properties
 - Fractal-origin expansion
 - Finite radius (R_max) and finite depth (ε)
@@ -40,6 +46,7 @@ Distinctive Properties
 - Knot-compatible (trefoils, braids, torus knots)
 - Reject on crossing change and on feature length < ε
 - Fixed point: r = R_max and ρ = ρ_★
+
 +---------------------------------------------------------------+
 
 DEFINITION:
@@ -220,8 +227,8 @@ Descent stopped   ρ held at ρ_★        Envelope held
   - Fractal-origin expansion
   - Geometry-regulated recursion
   - State-aware dynamics
-  - Finite radius (R_max)
-  - Renormalization at macro scale
+  - Finite radius (R_max) and finite depth (ε)
+  - Detail held at ρ_★, not smoothed off
   - Knot-compatible (trefoil, torus, braid-cycle)
   - Convergent final form
 
@@ -380,11 +387,8 @@ Each one is geometry-aware.
 
 CurvatureFlow(S, G)
 -
-Reduces curvature deviation:
-    CurvatureFlow = -k_c * (curvature(S) - curvature(G))
-
-only where feature length > ε
-Features at ε are held by F_micro.
+    curvature_term = -k_c * (Curvature(S) - Curvature(G))
+    curvature_term[feature_length(S) <= eps] = 0
 
 RadiusFlow(S, G)
 -
