@@ -1,0 +1,161 @@
+RELATIONAL MONSTER VALUATION TABLE
+basis = propagation Gamma
+output = rows of A001379, then fusion on those rows
+
+FUNDAMENTALS
+  SID                structure -> interaction -> dynamics
+  PED                power -> evaluation -> dynamics
+  Gamma              Pi_VOA o Pi_Griess o Pi_Twist
+                     o Pi_Leech o Pi_Golay o Pi_Witt
+  P                  {2,3,5,7,11,13,17,19,23,29,31,41,47,59,71}
+  |M|                2^46 * 3^20 * 5^9 * 7^6 * 11^2 * 13^3
+                     * 17 * 19 * 23 * 29 * 31 * 41 * 47 * 59 * 71
+  v_p(n)             max { k >= 0 : p^k divides n }
+  Omega(n)           sum_{p in P} v_p(n)
+  <alpha, beta>      (1/|M|) * sum_j |K_j| * alpha(g_j)
+                     * conjugate(beta(g_j))
+
+TYPES
+  LayerObject        = design | code | lattice | VOA | algebra
+  ClassFunction      = function on conjugacy classes of M
+  Character          = irreducible class function of M
+  MultiplicityVector = Z_{>=0}^194
+  ValuationProfile   = Z_{>=0}^15
+  FusionMatrix       = Z_{>=0}^{194 x 194}
+  Row                = index, ValuationProfile, Omega
+  State              = MultiplicityVector
+
+VARIABLES
+  X_pts              : 24-point set of the design
+  Blocks             : set of octads
+  c                  : codeword in F_2^24
+  x                  : lattice vector, later also a State
+  n_i                : multiplicity of chi_i
+  rho                : Character, rho = chi_G = chi_1
+  F_rho              : FusionMatrix
+  U(x)               : State
+  K_j                : conjugacy class
+  g_j                : representative of K_j
+  D                  : optional dimension cutoff
+  table              : set of Row
+
+BASIS
+  Pi_Witt(S(5,8,24)) = C_24
+    S(5,8,24) = (X_pts, Blocks)
+    |X_pts| = 24
+    |Blocks| = 759
+    every 5-subset of X_pts lies in exactly one block
+    Aut = M_24
+
+  Pi_Golay(C_24) = Lambda_24
+    C_24 = { c in F_2^24 : wt(c) in {0,8,12,16,24} }
+    dim C_24 = 12
+    min wt = 8
+    weight distribution 0^1, 8^759, 12^2576, 16^759, 24^1
+    Lambda_24 = ConstructionA(C_24)
+              = { x in R^24 : x mod 2 in C_24,
+                            sum_i x_i in 2Z } / scaling
+    Lambda_24 even, unimodular, root-free
+    Aut = Co_0
+
+  Pi_Twist(Lambda_24) = (V_Lambda^+, V_Lambda^T)
+    theta(y) = -y
+    V_Lambda^+ = fixed subspace of theta
+    V_Lambda^T = twisted module, fractional modes
+    flip set fixed by the Golay cocycle
+
+  Pi_Leech(V_Lambda^+, V_Lambda^T) = V^natural
+    V^natural = V_Lambda^+ (+) V_Lambda^T
+    ch(V^natural) = j(tau) - 744
+    Aut(V^natural) = M
+
+  Pi_Griess(V^natural) = B
+    B = (V^natural)_2
+    B = C * 1 (+) B_irr
+    dim B = 196884 = 1 + 196883
+    dim B_irr = 196883 = 47 * 59 * 71
+    B commutative, non-associative
+    Aut(B) = M
+
+  Pi_VOA(B_irr) = R^{71 x 59 x 47}
+
+  symmetries along Gamma
+    M_24 -> M_24 -> Co_0 -> M -> M -> M -> M
+
+FIXED POINT
+  M = Aut(V^natural) = Aut(B)
+  Cl(M) = {K_j}
+  |K_j| * |C_M(g_j)| = |M|
+
+EVALUATION
+  Irr(M) = { chi : ClassFunction |
+               <chi, chi> = 1,
+               chi(1) > 0,
+               chi(1) divides |M|,
+               chi(g^p) matches the power map }
+  chi_0 = trivial character
+  chi_1 = chi_G = B_irr
+  completeness
+    |Irr(M)| = 194
+    sum_{chi in Irr(M)} chi(1)^2 = |M|
+
+  deg(chi) = chi(1)
+  A001379 = { deg(chi) : chi in Irr(M) }
+  v_p(chi) = max { k >= 0 : p^k divides chi(1) }
+  v(chi) = (v_p(chi))_{p in P}
+  Omega(chi) = sum_{p in P} v_p(chi)
+  row(chi) = (index(chi), v(chi), Omega(chi))
+  table = { row(chi) : chi in Irr(M) }
+
+FORCED ROWS
+  chi_0
+    deg = 1
+    v_p = 0 for all p
+    Omega = 0
+  chi_G
+    deg = 196883 = 47 * 59 * 71
+    v_47 = v_59 = v_71 = 1
+    v_p = 0 for p not in {47,59,71}
+    Omega = 3
+
+REMAINING ROWS
+  for chi in Irr(M) \ {chi_0, chi_G}
+    same three formulas
+      deg(chi) = chi(1)
+      v_p(chi) = max { k : p^k divides chi(1) }
+      Omega(chi) = sum_p v_p(chi)
+
+OUTPUT COLUMNS
+  index
+  padic_2 padic_3 padic_5 padic_7 padic_11 padic_13
+  padic_17 padic_19 padic_23 padic_29 padic_31
+  padic_41 padic_47 padic_59 padic_71
+  row_exponent_sum
+  one row per chi in Irr(M)
+  filled by deg, v_p, Omega
+
+DYNAMICS
+  X = { x = (n_0, ..., n_193) in Z_{>=0}^194 }
+  x represents sum_i n_i * chi_i
+  v(x) = sum_i n_i * v(chi_i)
+  V_p(x) = sum_i n_i * v_p(chi_i(1))
+  (F_rho)_{j,i} = <chi_i tensor rho, chi_j>
+  U(x) = F_rho * x
+  U(x)_j = sum_i n_i * <chi_i tensor rho, chi_j>
+  filter
+    U(x)_j > 0 only if a fusion coefficient is > 0
+    U(x) in Z_{>=0}^194
+    if sum_i n_i * chi_i(1) > D then U(x) = x
+  Delta V_p = V_p(U(x)) - V_p(x)
+            = sum_j U(x)_j * v_p(chi_j(1))
+              - sum_i n_i * v_p(chi_i(1))
+  Delta V_p > 0   mass moved toward higher p-weight
+  Delta V_p < 0   mass moved toward lower p-weight
+  Delta V_p = 0   p-mass unchanged
+
+SEPARATION
+  Gamma builds M
+  evaluation writes A001379, valuations, Omega, table
+  table is static PED output
+  U is SID motion on multiplicity vectors
+  U reweights rows; U does not create rows
