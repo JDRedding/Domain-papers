@@ -1,0 +1,79 @@
+RDG area by pure ratio
+---------------------------------------------------------
+A circular sector is the region of a circle bounded by two 
+radii and the intercepted arc. Its area is proportional to 
+the ratio of the full circle represented by the central 
+angle.
+
+TYPE: Object
+    D(r)        -- disk of radius r
+    S(r,θ)      -- sector of radius r and central angle θ
+    O           -- center point of disk
+    R1, R2      -- radii (rays) from O defining the sector
+
+TYPE: Relation
+    Θ(O,R1,R2)  -- central angle relation between radii
+    Θ_full(O)   -- full rotation angle at O (constant = 2π)
+
+TYPE: Functional
+    A(X)        -- area functional on region-object X
+                  (metric, quadratic under scaling)
+
+------------------------------------------------------------
+FUNDAMENTALS
+------------------------------------------------------------
+
+(1) Full disk area:
+        A(D(r)) = π * r^2
+
+(2) Angular ratio invariant:
+        ρ_θ := Θ(O,R1,R2) / Θ_full(O)
+              = θ / (2π)
+
+    -- Pure relational invariant, dimensionless.
+    -- RDG treats this as the "fraction of circle" determined
+       solely by the angle relation.
+
+(3) Sector defined as subregion:
+        S(r,θ) := { x ∈ D(r) | x lies between R1 and R2 }
+
+(4) RDG linearity principle:
+        A(S(r,θ)) = A(D(r)) * ρ_θ
+    -- Sector area is proportional to the angular fraction.
+    -- No coordinates required; ratio geometry only.
+
+------------------------------------------------------------
+DERIVATION
+------------------------------------------------------------
+
+Start with:
+        A(S(r,θ)) = A(D(r)) * ρ_θ
+
+Substitute fundamentals:
+        A(S(r,θ)) = (π r^2) * (θ / 2π)
+
+Simplify:
+        A(S(r,θ)) = (π r^2 * θ) / (2π)
+        A(S(r,θ)) = (r^2 * θ) / 2
+
+------------------------------------------------------------
+RDG-FORM RESULT
+------------------------------------------------------------
+
+        A(S(r,θ)) = (1/2) * r^2 * θ
+
+------------------------------------------------------------
+NOTES
+------------------------------------------------------------
+
+- All dependence on geometry enters through:
+      (a) metric radius r
+      (b) relational angle Θ
+
+- RDG separation:
+      * r contributes via quadratic metric functional A(D(r))
+      * θ contributes via pure relational ratio ρ_θ
+
+- No coordinates, no integrals, no parametrization.
+  The area emerges from relational invariants and scaling laws.
+
