@@ -1,0 +1,142 @@
+RDGMFEQ NUMBER COUPLING MANIFOLD 
+Author: @JDRedding
+Framework: RDGMFEQ = Relational Dynamic Geometry + Momentum-Flux Engine + Quotient
+
+CORE MANIFOLD:
+  ℂ_RDG  : Unified relational manifold (RDGMFEQ complex field)
+           - All number regimes are coupling modes on ℂ_RDG
+           - Overlaps represent flux exchange, not strict membership
+
+LAYERS AND COUPLING MODES:
+
+  1. SID LATTICE (DISCRETE FOUNDATION)
+     Type: SID
+     Domain: {ℕ, 𝕎, ℤ}
+     Role:
+       - Discrete structural foundation for counting and integer structure
+       - Nodes are quantized positions on the manifold
+     Variables / Objects:
+       - n ∈ ℕ  : natural numbers (1, 2, 3, ...)
+       - w ∈ 𝕎  : whole numbers (0, 1, 2, 3, ...)
+       - k ∈ ℤ  : integers (..., -2, -1, 0, 1, 2, ...)
+     Fundamental Idea:
+       - SID defines the “grid” of discrete nodes
+       - All rational and flux interactions attach to these nodes
+
+  2. RATIONAL INTERACTIONS (RATIO GEOMETRY)
+     Type: ℚ
+     Domain: Rational numbers (p/q with p, q ∈ ℤ, q ≠ 0)
+     Role:
+       - Stable ratio geometry between SID nodes
+       - Represents coupling symmetry rather than membership
+     Variables:
+       - r ∈ ℚ
+       - r = p / q,  p, q ∈ ℤ, q ≠ 0
+     Fundamental Idea:
+       - Rational numbers are geometric ratios between discrete SID nodes
+       - They encode stable, repeatable coupling relations on the lattice
+
+  3. IRRATIONAL SUBSTRATE (SIDE-CHANNEL CONTINUITY FLUX)
+     Type: [ℚ□]
+     Domain: Irrational numbers (e.g., √2, π, e)
+     Role:
+       - Side-channel continuity flux that modulates rational structures
+       - Not “outside” ℚ as a container, but a flux channel interacting with ℚ
+     Variables / Examples:
+       - α = √2
+       - β = π
+       - γ = e
+     Fundamental Idea:
+       - Irrationals provide continuous modulation of rational ratios
+       - They form a substrate of non-repeating, non-rational flux
+       - [ℚ□] is a continuity layer that couples SID and ℚ to ℝ_c
+
+  4. CONTINUUM MANIFOLD (REAL-FIELD CONTEXT)
+     Type: ℝ_c
+     Domain: Real continuum (RDGMFEQ real manifold)
+     Role:
+       - Ambient real-field context
+       - Background field for both rational and irrational flux
+     Variables:
+       - x ∈ ℝ_c
+       - y ∈ ℝ_c
+     Fundamental Idea:
+       - ℝ_c is not a container but a continuous manifold
+       - Rational and irrational modes are patterns of flux on ℝ_c
+       - Supports calculus, limits, and continuous dynamics
+
+  5. IMAGINARY FLUX COMPONENTS (PED-SIDE ROTATIONAL COUPLINGS)
+     Type: PED (Momentum-Flux Engine domain)
+     Domain: Imaginary axis components (multiples of i)
+     Role:
+       - Rotational couplings in the flux manifold
+       - Encodes dynamic field rotations and symmetry operations
+     Variables:
+       - i      : fundamental imaginary unit
+       - z_i    : imaginary flux component
+       - z_i = b · i,  b ∈ ℝ_c
+     Fundamental Idea:
+       - Imaginary components represent orthogonal flux directions
+       - PED handles rotational and momentum-like aspects of the manifold
+       - Coupling with ℝ_c yields full complex flux behavior
+
+  6. RDGMFEQ COMPLEX NODE (FULL FLUX-COUPLED FORM)
+     Type: ℂ_RDG
+     Domain: RDGMFEQ complex field
+     Variable:
+       - z ∈ ℂ_RDG
+       - z = a + b · i
+         where a, b ∈ ℝ_c
+     Interpretation:
+       - z is a flux-coupled relational node
+       - a : continuity amplitude along ℝ_c (real axis)
+       - b : continuity amplitude along PED flux (imaginary axis)
+       - i : PED rotational flux unit
+     Fundamental Idea:
+       - Complex numbers are not static points but dynamic coupling states
+       - Each z encodes a relational configuration of SID, ℚ, [ℚ□], ℝ_c, and PED
+
+RELATIONAL COUPLING (NON-HIERARCHICAL VIEW):
+
+  Classical containment (for reference):
+    ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ
+
+  RDGMFEQ coupling ontology (symbolic flux chain):
+    SID  ↔  ℚ  ↔  [ℚ□]  ↔  ℝ_c  ↔  ℂ_RDG
+
+  Where:
+    - “↔” denotes bidirectional flux exchange and interaction
+    - Each regime is a mode on the same manifold, not a nested container
+    - Overlaps represent active coupling, not membership
+
+KEY FUNDAMENTALS (SUMMARY):
+
+  - SID:
+      Discrete nodes for counting and integer structure.
+      Basis for all ratio and flux interactions.
+
+  - ℚ (Rational interactions):
+      Stable ratio geometry between SID nodes.
+      Encodes symmetric, repeatable couplings.
+
+  - [ℚ□] (Irrational substrate):
+      Continuity flux channel.
+      Modulates rational structures and bridges to ℝ_c.
+
+  - ℝ_c (Continuum manifold):
+      Ambient real-field context.
+      Supports continuous dynamics and calculus.
+
+  - PED / i (Imaginary flux):
+      Rotational, orthogonal flux components.
+      Governs dynamic symmetry and momentum-like behavior.
+
+  - ℂ_RDG (RDGMFEQ complex field):
+      Unified relational manifold.
+      z = a + b · i is a flux-coupled relational node, not just a static number.
+
+This ASCII representation is designed to be:
+  - Copyable
+  - Shareable
+  - Border-free
+  - Aligned with RDGMFEQ’s coupling ontology for number systems
