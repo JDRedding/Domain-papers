@@ -397,6 +397,188 @@ This defines a closed relational geometry loop:
        G -> SID -> PED -> RDG -> G'
 
 ====================================================================
+RDGMFEQ EXECUTION SEMANTICS
+====================================================================
+1. BASE OBJECTS
+====================================================================
+
+Channel multiplicity • Lifted state transforms • Execution & coupling rules
+
+TYPE SID = {S, I, D}              // Structure, Interaction, Dynamics
+TYPE PED = {P, E, Dn}            // Power, Evaluation, Dynamics (flux)
+TYPE RDG_Op                      // primitive relational operator
+TYPE State                       // geometric / relational state
+
+We now allow MULTI-CHANNEL activation:
+
+SID_Set ⊆ {S, I, D}
+PED_Set ⊆ {P, E, Dn}
+RDG_Set ⊆ {IsoOp, PhaseOp, AlignOp, SimOp, LinMap, ConicDyn, MomentEq, ProjExtract}
+
+====================================================================
+2. CHANNEL MULTIPLICITY
+====================================================================
+
+We define channel activation maps:
+
+SID_to_PED : SID_Set -> PED_Set
+PED_to_RDG : PED_Set -> RDG_Set
+
+RULE 2.1 (SID_to_PED multiplicity):
+    If SID_Set = {S}       then PED_Set ⊇ {P}
+    If SID_Set = {I}       then PED_Set ⊇ {E}
+    If SID_Set = {D}       then PED_Set ⊇ {Dn}
+    If SID_Set = {S,I}     then PED_Set ⊇ {P,E}
+    If SID_Set = {S,D}     then PED_Set ⊇ {P,Dn}
+    If SID_Set = {I,D}     then PED_Set ⊇ {E,Dn}
+    If SID_Set = {S,I,D}   then PED_Set ⊇ {P,E,Dn}
+
+RULE 2.2 (PED_to_RDG multiplicity):
+    P   activates {IsoOp, LinMap, SimOp}
+    E   activates {PhaseOp, ProjExtract, AlignOp, SimOp, MomentEq}
+    Dn  activates {ConicDyn, MomentEq}
+
+Thus, multiple SID modes induce multiple PED channels,
+which in turn activate a SET of RDG operators.
+
+====================================================================
+3. LIFTED STATE TRANSFORMATIONS
+====================================================================
+
+We now lift RDG operators from single-state maps to
+multi-channel, multi-operator transformations.
+
+BASE (non-lifted):
+    RDG_Op : State -> State
+
+LIFTED:
+    RDG_Lift : (State, RDG_Set) -> State'
+
+Definition:
+    RDG_Lift(State, RDG_Set) =
+        fold(Compose, State, RDG_Set)
+
+where:
+    Compose(State, Op) = Op(State)
+    fold is left-associative composition over RDG_Set
+    (ordering rules defined below).
+
+SID_Lift : (State, SID_Set) -> (State', PED_Set, RDG_Set)
+
+Definition:
+    SID_Lift(State, SID_Set) =
+        let PED_Set = SID_to_PED(SID_Set)
+        let RDG_Set = PED_to_RDG(PED_Set)
+        let State'  = RDG_Lift(State, RDG_Set)
+        in (State', PED_Set, RDG_Set)
+
+Thus, SID_Set determines PED_Set and RDG_Set, and the lifted
+RDG_Lift applies all activated operators to the state.
+
+====================================================================
+4. EXECUTION RULES
+====================================================================
+
+We define an EXECUTION STEP as:
+
+ExecStep : State -> State'
+
+ExecStep(State) =
+    1. Determine active SID_Set(State)
+    2. Compute (State', PED_Set, RDG_Set) = SID_Lift(State, SID_Set)
+    3. Return State'
+
+We now specify SID_Set(State):
+
+SID_Set(State) is determined by:
+    • Structural flags (S-active)
+    • Interaction flags (I-active)
+    • Dynamical flags (D-active)
+
+For this formalization, we treat SID_Set(State) as given
+by the instrument context (e.g., “ellipsograph” implies D-active).
+
+====================================================================
+5. COUPLING RULES (MULTI-CHANNEL)
+====================================================================
+
+Coupling occurs when multiple PED channels are active simultaneously.
+
+We define a COUPLING GRAPH:
+
+Couple : PED_Set -> RDG_Set_coupled
+
+RULE 5.1 (basic coupling):
+    If PED_Set = {P,E}:
+        RDG_Set_coupled ⊆ {SimOp, AlignOp, PhaseOp, IsoOp, LinMap}
+    If PED_Set = {P,Dn}:
+        RDG_Set_coupled ⊆ {ConicDyn, MomentEq, IsoOp, LinMap}
+    If PED_Set = {E,Dn}:
+        RDG_Set_coupled ⊆ {ConicDyn, MomentEq, AlignOp, PhaseOp}
+    If PED_Set = {P,E,Dn}:
+        RDG_Set_coupled = union of all above
+
+RULE 5.2 (priority ordering):
+    For RDG_Lift, we impose an operator order:
+
+    1. IsoOp, LinMap, SimOp      (structural normalization)
+    2. AlignOp, PhaseOp, ProjExtract (evaluation / alignment)
+    3. MomentEq, ConicDyn        (equilibrium / motion)
+
+Thus:
+    RDG_Set_effective = sort(RDG_Set ∪ RDG_Set_coupled, by priority)
+
+RDG_Lift(State, RDG_Set_effective) applies operators in this order.
+
+====================================================================
+6. EXECUTION LOOP (LIFTED, COUPLED)
+====================================================================
+
+Given initial State_0:
+
+Loop:
+    State_{n+1} = ExecStep(State_n)
+
+ExecStep(State_n):
+    1. SID_Set_n = SID_Set(State_n)
+    2. PED_Set_n = SID_to_PED(SID_Set_n)
+    3. RDG_Set_n = PED_to_RDG(PED_Set_n)
+    4. RDG_Set_coupled_n = Couple(PED_Set_n)
+    5. RDG_Set_effective_n = sort(RDG_Set_n ∪ RDG_Set_coupled_n)
+    6. State_{n+1} = RDG_Lift(State_n, RDG_Set_effective_n)
+
+This defines the EXECUTION and COUPLING semantics without
+changing the interpretation of SID/PED/RDG—only lifting and
+multiplicity resolution.
+
+====================================================================
+7. INSTRUMENT-SPECIFIC LIFTED EXAMPLES (SKETCH)
+====================================================================
+
+VERNIER (Interaction-dominant):
+    SID_Set = {I}
+    PED_Set = {E}
+    RDG_Set = {AlignOp}
+    RDG_Set_effective = {AlignOp}
+    RDG_Lift = AlignOp(State)
+
+ELLIPSOGRAPH (Dynamics-dominant):
+    SID_Set = {D}
+    PED_Set = {Dn}
+    RDG_Set = {ConicDyn}
+    RDG_Set_effective = {ConicDyn}
+    RDG_Lift = ConicDyn(State)
+
+SECTOR (Structure+Interaction):
+    SID_Set = {S,I}
+    PED_Set = {P,E}
+    RDG_Set = {IsoOp, LinMap, SimOp, PhaseOp, AlignOp}
+    RDG_Set_coupled ⊆ {SimOp, AlignOp, PhaseOp}
+    RDG_Set_effective ordered:
+        [IsoOp, LinMap, SimOp, AlignOp, PhaseOp]
+    RDG_Lift applies full proportional pipeline.
+
+====================================================================
 SUMMARY
 ====================================================================
 
@@ -407,7 +589,5 @@ The links between equations are explicit morphisms:
     RDG_to_SID:   operator → mode update
     RDG_Compose:  operator chaining
     Flux_Couple:  multi‑mode coupling
-
-This is the RDGMFEQ definition of what the links *mean*.
 
 
