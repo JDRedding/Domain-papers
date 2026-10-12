@@ -1,0 +1,198 @@
+RDGMFEQ_GEOMETRIC_INSTRUMENT_OPERATORS
+Types, Variables, Fundamentals
+ASCII • No Borders • Copyable
+
+====================================================================
+TYPE DEFINITIONS
+====================================================================
+
+TYPE SID = {Structure, Interaction, Dynamics}
+TYPE PED = {Power, Evaluation, Dynamics}
+
+TYPE RDG_Operator =
+    IsoOp          // metric‑preserving map
+    PhaseOp        // angle/phase extraction
+    AlignOp        // micro‑alignment (Δ‑resolution)
+    SimOp          // similarity/proportional operator
+    LinMap         // homothety / linear scaling
+    ConicDyn       // constrained‑motion curve generator
+    MomentEq       // equilibrium solver
+    ProjExtract    // projective direction extractor
+
+TYPE Instrument =
+    VernierCaliper
+    DividerCompass
+    Protractor
+    Sector
+    ProportionalDivider
+    Ellipsograph
+    BalanceScale
+    SurveyQuadrant
+
+
+====================================================================
+VARIABLES
+====================================================================
+
+r_main        // main scale reading
+r_vernier     // vernier scale reading
+k             // coincidence index
+d(P,Q)        // metric distance between points P and Q
+θ             // angular phase variable
+a,b           // ellipse semi‑axes parameters
+x(θ), y(θ)    // parametric curve coordinates
+m1, m2        // masses on balance arms
+d1, d2        // moment arms
+dir(P)        // projective direction of point P
+λ             // linear scaling factor (homothety)
+Δ             // micro‑alignment offset
+
+
+====================================================================
+RDGMFEQ FUNDAMENTALS
+====================================================================
+
+FUNDAMENTAL_RELATIONAL_PRIMITIVES:
+    Metric(P,Q)
+    Angle(P,Q,R)
+    Direction(P)
+    Constraint(Motion)
+    Equilibrium(Interaction)
+    Similarity(Relation)
+    Scaling(Relation)
+    ConicState(Motion)
+
+FUNDAMENTAL_MFE_COMPONENTS:
+    PED.Power      // constraint or force source
+    PED.Evaluation // extracted relational state
+    PED.Dynamics   // motion or settling behavior
+
+
+====================================================================
+INSTRUMENT → RDGMFEQ OPERATOR MAPPINGS
+====================================================================
+
+--------------------------------------------------------------------
+1. Vernier Calipers → AlignOp (SID.Interaction)
+--------------------------------------------------------------------
+RDG:
+    AlignOp(r_main, r_vernier) =
+        min_k | r_main - r_vernier + k*ε |
+
+PED:
+    Power      = sliding constraint
+    Evaluation = coincidence index k
+    Dynamics   = micro‑alignment process
+
+--------------------------------------------------------------------
+2. Dividers & Compasses → IsoOp (SID.Structure)
+--------------------------------------------------------------------
+RDG:
+    IsoOp(P,Q,P',Q') : d(P,Q) = d(P',Q')
+
+PED:
+    Power      = fixed radius constraint
+    Evaluation = metric equality
+    Dynamics   = rotational sweep
+
+--------------------------------------------------------------------
+3. Protractor → PhaseOp (SID.Evaluation)
+--------------------------------------------------------------------
+RDG:
+    PhaseOp(P,Q,R) = θ = angle(P,Q,R)
+
+PED:
+    Power      = geometric projection
+    Evaluation = phase θ
+    Dynamics   = static readout
+
+--------------------------------------------------------------------
+4. Sector → SimOp (SID.Structure + Interaction)
+--------------------------------------------------------------------
+RDG:
+    SimOp(a,b,c,d) : a/b = c/d
+
+PED:
+    Power      = hinge angle defines similarity class
+    Evaluation = transversal intercept
+    Dynamics   = leg sliding
+
+--------------------------------------------------------------------
+5. Proportional Divider → LinMap (SID.Structure)
+--------------------------------------------------------------------
+RDG:
+    LinMap(x) = λ * x
+
+PED:
+    Power      = fixed mechanical ratio λ
+    Evaluation = scaled distance
+    Dynamics   = rigid linkage
+
+--------------------------------------------------------------------
+6. Ellipsograph / Trammel → ConicDyn (SID.Dynamics)
+--------------------------------------------------------------------
+RDG:
+    x(θ) = a*cos(θ)
+    y(θ) = b*sin(θ)
+
+PED:
+    Power      = orthogonal slot constraints
+    Evaluation = parametric state θ
+    Dynamics   = continuous constrained motion
+
+--------------------------------------------------------------------
+7. Balance / Scale → MomentEq (SID.Interaction)
+--------------------------------------------------------------------
+RDG:
+    MomentEq(m1,m2,d1,d2) : m1*d1 = m2*d2
+
+PED:
+    Power      = gravitational potential
+    Evaluation = equilibrium condition
+    Dynamics   = pivot settling
+
+--------------------------------------------------------------------
+8. Surveying Quadrant → ProjExtract (SID.Structure)
+--------------------------------------------------------------------
+RDG:
+    ProjExtract(P) = dir(P)
+
+PED:
+    Power      = line‑of‑sight constraint
+    Evaluation = projective angle
+    Dynamics   = static alignment
+
+
+====================================================================
+RDGMFEQ SYNTHESIS
+====================================================================
+
+SID.Structure:
+    IsoOp, LinMap, ProjExtract
+
+SID.Interaction:
+    AlignOp, SimOp, MomentEq
+
+SID.Dynamics:
+    ConicDyn
+
+PED.Power:
+    constraints, forces, radii, hinges
+
+PED.Evaluation:
+    angles, distances, ratios, equilibrium states
+
+PED.Dynamics:
+    motion‑generated curves, settling equilibria
+
+
+====================================================================
+SUMMARY
+====================================================================
+
+This ASCII block encodes the RDGMFEQ interpretation of:
+    • classical drafting instruments
+    • surveying tools
+    • curve‑generating mechanisms
+    • proportional calculators
+as relational geometric operators in the SID/PED dual‑triad framework.
