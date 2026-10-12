@@ -134,9 +134,3 @@ KEY FUNDAMENTALS (SUMMARY):
   - ℂ_RDG (RDGMFEQ complex field):
       Unified relational manifold.
       z = a + b · i is a flux-coupled relational node, not just a static number.
-
-This ASCII representation is designed to be:
-  - Copyable
-  - Shareable
-  - Border-free
-  - Aligned with RDGMFEQ’s coupling ontology for number systems
