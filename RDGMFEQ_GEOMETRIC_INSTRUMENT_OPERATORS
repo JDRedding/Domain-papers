@@ -186,12 +186,228 @@ PED.Dynamics:
 
 
 ====================================================================
+RDGMFEQ OPERATOR LINKING FRAMEWORK
+====================================================================
+
+We define three layers:
+
+    SID-layer:   structural + interaction + dynamical modes
+    PED-layer:   power + evaluation + dynamics flux
+    RDG-layer:   primitive relational operators
+
+The links between them are NOT implicit; they are explicit morphisms.
+
+====================================================================
+TYPE DEFINITIONS
+====================================================================
+
+TYPE Link =
+    SID_to_PED
+    PED_to_RDG
+    RDG_to_SID
+    RDG_Compose
+    Flux_Couple
+
+TYPE State =
+    GeometricState
+    MetricState
+    PhaseState
+    ProjectiveState
+    ConicState
+    EquilibriumState
+
+TYPE Flux =
+    PowerFlux
+    EvalFlux
+    DynFlux
+
+TYPE Morphism =
+    f : A -> B
+
+====================================================================
+CORE LINKING PRINCIPLES
+====================================================================
+
+1. SID_to_PED:
+   Structure, Interaction, Dynamics each induce a corresponding
+   Power/Evaluation/Dynamics flux channel.
+
+   Morphisms:
+       S -> PowerFlux
+       I -> EvalFlux
+       D -> DynFlux
+
+2. PED_to_RDG:
+   Flux channels activate specific RDG operators.
+
+   Morphisms:
+       PowerFlux -> {IsoOp, LinMap}
+       EvalFlux  -> {PhaseOp, ProjExtract, AlignOp}
+       DynFlux   -> {ConicDyn, MomentEq}
+
+3. RDG_to_SID:
+   The result of an RDG operator modifies the SID mode of the state.
+
+   Morphisms:
+       IsoOp       -> Structure update
+       AlignOp     -> Interaction update
+       ConicDyn    -> Dynamics update
+       MomentEq    -> Interaction update
+       PhaseOp     -> Structure update (phase embedding)
+       LinMap      -> Structure update (scale embedding)
+       ProjExtract -> Structure update (direction embedding)
+
+4. RDG_Compose:
+   RDG operators compose sequentially into relational pipelines.
+
+   Composition rule:
+       RDG_i ∘ RDG_j : State -> State
+
+5. Flux_Couple:
+   Flux channels couple when multiple SID modes are active.
+
+   Example:
+       Interaction + Dynamics ->
+           EvalFlux + DynFlux ->
+               AlignOp + ConicDyn (coupled)
+
+====================================================================
+LINK DEFINITIONS FOR EACH INSTRUMENT
+====================================================================
+
+--------------------------------------------------------------------
+VERNIER CALIPER LINKING
+--------------------------------------------------------------------
+SID: Interaction
+PED: EvalFlux
+RDG: AlignOp
+
+Links:
+    Interaction -> EvalFlux
+    EvalFlux -> AlignOp
+    AlignOp -> Interaction update
+
+--------------------------------------------------------------------
+DIVIDER / COMPASS LINKING
+--------------------------------------------------------------------
+SID: Structure
+PED: PowerFlux
+RDG: IsoOp
+
+Links:
+    Structure -> PowerFlux
+    PowerFlux -> IsoOp
+    IsoOp -> Structure update
+
+--------------------------------------------------------------------
+PROTRACTOR LINKING
+--------------------------------------------------------------------
+SID: Evaluation (angle extraction)
+PED: EvalFlux
+RDG: PhaseOp
+
+Links:
+    Structure -> EvalFlux
+    EvalFlux -> PhaseOp
+    PhaseOp -> Structure update
+
+--------------------------------------------------------------------
+SECTOR LINKING
+--------------------------------------------------------------------
+SID: Structure + Interaction
+PED: PowerFlux + EvalFlux
+RDG: SimOp
+
+Links:
+    Structure -> PowerFlux
+    Interaction -> EvalFlux
+    {PowerFlux, EvalFlux} -> SimOp
+    SimOp -> Structure update
+
+--------------------------------------------------------------------
+PROPORTIONAL DIVIDER LINKING
+--------------------------------------------------------------------
+SID: Structure
+PED: PowerFlux
+RDG: LinMap
+
+Links:
+    Structure -> PowerFlux
+    PowerFlux -> LinMap
+    LinMap -> Structure update
+
+--------------------------------------------------------------------
+ELLIPSOGRAPH LINKING
+--------------------------------------------------------------------
+SID: Dynamics
+PED: DynFlux
+RDG: ConicDyn
+
+Links:
+    Dynamics -> DynFlux
+    DynFlux -> ConicDyn
+    ConicDyn -> Dynamics update
+
+--------------------------------------------------------------------
+BALANCE / SCALE LINKING
+--------------------------------------------------------------------
+SID: Interaction
+PED: DynFlux + EvalFlux
+RDG: MomentEq
+
+Links:
+    Interaction -> EvalFlux
+    Dynamics (settling) -> DynFlux
+    {EvalFlux, DynFlux} -> MomentEq
+    MomentEq -> Interaction update
+
+--------------------------------------------------------------------
+SURVEYING QUADRANT LINKING
+--------------------------------------------------------------------
+SID: Structure
+PED: EvalFlux
+RDG: ProjExtract
+
+Links:
+    Structure -> EvalFlux
+    EvalFlux -> ProjExtract
+    ProjExtract -> Structure update
+
+====================================================================
+PIPELINE EXAMPLE (FULL CHAIN)
+====================================================================
+
+Given a geometric state G:
+
+1. SID mode selects flux:
+       SID(G) -> Flux(G)
+
+2. Flux activates RDG operator:
+       Flux(G) -> RDG_op
+
+3. RDG operator transforms state:
+       RDG_op(G) -> G'
+
+4. G' updates SID mode:
+       G' -> SID(G')
+
+5. SID(G') selects next flux, continuing pipeline.
+
+This defines a closed relational geometry loop:
+       G -> SID -> PED -> RDG -> G'
+
+====================================================================
 SUMMARY
 ====================================================================
 
-This ASCII block encodes the RDGMFEQ interpretation of:
-    • classical drafting instruments
-    • surveying tools
-    • curve‑generating mechanisms
-    • proportional calculators
-as relational geometric operators in the SID/PED dual‑triad framework.
+The links between equations are explicit morphisms:
+
+    SID_to_PED:   mode → flux
+    PED_to_RDG:   flux → operator
+    RDG_to_SID:   operator → mode update
+    RDG_Compose:  operator chaining
+    Flux_Couple:  multi‑mode coupling
+
+This is the RDGMFEQ definition of what the links *mean*.
+
+
