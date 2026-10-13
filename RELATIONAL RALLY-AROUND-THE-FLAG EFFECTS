@@ -1,0 +1,131 @@
+RELATIONAL RALLY-AROUND-THE-FLAG EFFECTS
+
+Core Domains and Types
+----------------------
+P       : set of political leaders
+T       : time domain (discrete Z or continuous R)
+Omega   : domestic states (economy, war, polarization, ...)
+M       : media states (visibility, framing)
+E       : elite-cue states (consensus, opposition)
+C       = P x T x Omega x M x E     relational configuration space
+          c = (p, t, omega, m, e) in C
+
+Approval field
+A : C -> [0, 100]
+A(p, t, omega, m, e) = approval percentage of leader p at time t
+                       in state (omega, m, e)
+
+Core Rally Equation
+-------------------
+Rally relation
+R_rel subset P x T
+(p, t) in R_rel  <=>  foreign-policy crisis involving leader p at time t
+
+Rally indicator
+R : C -> {0, 1}
+R(p, t, omega, m, e) = 1 if (p, t) in R_rel, else 0
+
+Core rally magnitude (fundamental relational difference)
+R(p, t0) = A(p, t0+, omega+, m+, e+) - A(p, t0-, omega-, m-, e-)
+
+Fundamental Dynamics
+--------------------
+Persistence, baseline, and controlled AR(1) dynamics govern approval between
+and across events. The core rally enters as an additive impulse whose size
+depends on the current relational state.
+
+Dynamic approval equation (discrete time)
+A(p, t, omega_t, m_t, e_t)
+  = alpha(p, omega_t)
+  + rho(p, omega_t) * A(p, t-1, omega_{t-1}, m_{t-1}, e_{t-1})
+  + beta_R(p, m_t, e_t) * R(p, t, omega_t, m_t, e_t)
+  + beta_E(p)^T * E(p, t, omega_t, m_t, e_t)
+  + beta_W(p) * W(p, t, omega_t, m_t, e_t)
+  + beta_X(p)^T * X(p, t, omega_t, m_t, e_t)
+  + eps(p, t)
+
+Where:
+rho     : P x Omega -> [0, 1]          persistence operator
+alpha   : P x Omega -> R               baseline term
+E       : C -> R^k                      economic field
+beta_E  : P -> R^k
+W       : C -> {0, 1}                   war indicator
+beta_W  : P -> R
+X       : C -> R^m                      other controls
+beta_X  : P -> R^m
+beta_R  : P x M x E -> R                state-dependent rally coefficient
+eps     : P x T -> R                    disturbance
+
+Impulse Response Formula
+------------------------
+Approval evolution operator
+U_p(t; omega_t, m_t, e_t) = rho(p, omega_t) * I + Delta_p(t; omega_t, m_t, e_t)
+
+Rally impulse operator
+Delta_p(t; omega_t, m_t, e_t) = beta_R(p, m_t, e_t) * R(p, t, omega_t, m_t, e_t)
+
+Impulse response of approval to a rally at (p, t0)
+IR_p(tau | t0)
+  = partial A(p, t0 + tau, omega_{t0+tau}, m_{t0+tau}, e_{t0+tau})
+    / partial Delta_p(t0; omega_{t0}, m_{t0}, e_{t0})
+  for tau >= 0
+
+Under constant coefficients the response decays as
+IR_p(tau | t0) = beta_R(p, m_{t0}, e_{t0}) * [rho(p, omega)]^tau
+
+Equations for a Specific Leader
+-------------------------------
+Fix leader p* in P. Drop p* arguments for readability.
+
+State trajectory
+omega_t, m_t, e_t  for t in T
+
+Approval path
+A_t = A(p*, t, omega_t, m_t, e_t)
+
+Core rally magnitude at crisis t0
+R(t0) = A_{t0+} - A_{t0-}
+
+Dynamic equation for p*
+A_t = alpha(omega_t)
+    + rho(omega_t) * A_{t-1}
+    + beta_R(m_t, e_t) * R_t
+    + beta_E^T * E_t
+    + beta_W * W_t
+    + beta_X^T * X_t
+    + eps_t
+
+Rally coefficient for p* (modulated)
+beta_R(m, e) = beta0 + beta_M * V(m) + beta_C * C_field(e)
+             - beta_W_R * W
+             + g(A_pre)
+
+Impulse response for p*
+IR(tau | t0) = partial A_{t0+tau} / partial Delta_{t0}
+             = beta_R(m_{t0}, e_{t0}) * rho^tau     (constant-coeff case)
+
+Pre-crisis dependence for p*
+partial beta_R / partial A_pre < 0
+or
+R(t0) = f(A_pre) with f' < 0
+
+Modulation Fields (leader-specific or general)
+----------------------------------------------
+Media visibility
+V : M -> R_{>=0}
+beta_R increases in V
+
+Elite consensus
+C_field : E -> [0, 1]
+beta_R increases in C_field
+
+War attenuation
+beta_R decreases in W (or is set near zero when W = 1)
+
+Fundamentals
+------------
+- Core rally equation is the relational difference of the approval field across the crisis.
+- Fundamental dynamics are persistent AR(1) with additive state-dependent rally impulse.
+- Impulse response isolates the dynamic effect of the rally shock and shows its decay.
+- For a specific leader the equations reduce by fixing p* and tracking the realized state path (omega_t, m_t, e_t).
+- Size of effect is larger under high media visibility, high elite consensus, low prior approval, and no ongoing war.
