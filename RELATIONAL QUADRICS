@@ -150,3 +150,144 @@ All quadrics (degenerate and non-degenerate) differ only by:
   - D-mode constant sign (1, -1, or 0) after reduction
 
 The tri-mode schema generates every quadric from one relational second-degree form.
+
+====================================================
+APPENDIX: UNIFIED QUADRICS SCHEMA 
+====================================================
+Invariant Formulation
+
+Every real affine quadric is determined, up to Euclidean congruence and scale,
+by the inertia and rank of its quadratic part, the rank of its homogeneous
+4x4 matrix, and the translated constant/linear residual.
+
+A real affine quadric is determined, up to Euclidean congruence and scale,
+by the inertia and rank of its quadratic part, the rank of its homogeneous
+4x4 matrix, and the translated constant/linear residual. These data are
+interpreted relationally as:
+
+  S-mode : quadratic inertia and rank of the symmetric matrix M
+  I-mode : principal-axis (eigenvector) coupling structure of M
+  D-mode : affine unfolding data after translation (constant or linear residual)
+
+The one-sheet and two-sheet hyperboloids share the same S-mode inertia
+(2,1,0) and differ only in the sign of the D-mode residual constant,
+which decides connectedness.
+
+------------------------------------------------------------
+TRI-MODE CORE
+------------------------------------------------------------
+Invariant
+
+S-mode:
+  Inertia type (n+, n-, n0) of the symmetric matrix
+    M = [[A, D/2, E/2],
+         [D/2, B, F/2],
+         [E/2, F/2, C]]
+  together with rank(M). This is coordinate-invariant.
+
+I-mode:
+  Eigenvector frame of M (principal axes).
+  Mixed terms xy, xz, yz are a coordinate-dependent shadow of this
+  coupling structure and can be removed by orthogonal rotation.
+
+D-mode:
+  After translation (completing the square), the residual class:
+    - nonzero constant (= ±1 after scaling)
+    - zero constant
+    - essential linear term in one variable
+  Controls connectedness, number of sheets, apex, and extrusion.
+
+Full invariant data also includes rank of the 4x4 homogeneous matrix
+    ~Q = [[A, D/2, E/2, G/2],
+          [D/2, B, F/2, H/2],
+          [E/2, F/2, C, I/2],
+          [G/2, H/2, I/2, J]]
+
+------------------------------------------------------------
+UNIFIED FORM
+------------------------------------------------------------
+Q(x) = x^T M x + b^T x + c = 0
+where b = (G, H, I)^T
+
+Classification key:
+  QuadricType = (inertia(M), rank(M), rank(~Q), translated residual class)
+
+------------------------------------------------------------
+THE FIVE NONDEGENERATE REAL QUADRICS
+------------------------------------------------------------
+
+Ellipsoid
+  Inertia: (3,0,0)    Residual: nonzero constant
+  PED: x^2/a^2 + y^2/b^2 + z^2/c^2 = 1
+  RDG: Positive-definite S-mode; closed bounded D-mode.
+
+Hyperboloid of One Sheet
+  Inertia: (2,1,0)    Residual: nonzero constant (matching sign)
+  PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = 1
+  RDG: Mixed S-mode; D-mode keeps the level set connected (one sheet).
+
+Hyperboloid of Two Sheets
+  Inertia: (2,1,0)    Residual: opposite nonzero constant
+  PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = -1
+  RDG: Same S-mode as one-sheet; opposite D-mode residual splits into two sheets.
+
+Elliptic Paraboloid
+  Inertia: (2,0,0)    Residual: essential linear term
+  PED: z = x^2/a^2 + y^2/b^2
+  RDG: Positive semi-definite S-mode; D-mode opens in one direction.
+
+Hyperbolic Paraboloid (Saddle)
+  Inertia: (1,1,0)    Residual: essential linear term
+  PED: z = x^2/a^2 - y^2/b^2
+  I-mode: Opposing eigenvalues produce negative Gaussian curvature
+          (saddle interaction between principal axes).
+  RDG: Indefinite S-mode of rank 2; open unbounded D-mode.
+
+------------------------------------------------------------
+ADDITIONAL TRUE QUADRIC SURFACES
+------------------------------------------------------------
+Often classified as degenerate in projective geometry
+
+Elliptic Cone
+  Inertia: (2,1,0)    Residual: zero constant after centering
+  PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = 0
+  RDG: Mixed S-mode; D-mode residual = 0 produces apex and two nappes.
+
+Elliptic Cylinder
+  Inertia: (2,0,0)    Residual: one zero eigen-direction
+  PED: x^2/a^2 + y^2/b^2 = 1
+  RDG: S-mode of rank 2; D-mode extrudes along the null direction.
+
+Hyperbolic Cylinder
+  Inertia: (1,1,0)    Residual: one zero eigen-direction
+  PED: x^2/a^2 - y^2/b^2 = 1
+  RDG: Indefinite S-mode of rank 2; D-mode extrudes the hyperbola.
+
+Parabolic Cylinder
+  Inertia: (1,0,0)    Residual: zero eigen-direction + linear term
+  PED: y = a*x^2
+  RDG: S-mode of rank 1; D-mode extrudes the parabola.
+
+------------------------------------------------------------
+DEGENERATE CASES (Selected)
+------------------------------------------------------------
+
+Point
+  Inertia: (3,0,0)    Residual: zero
+  PED: x^2 + y^2 + z^2 = 0
+
+Pair of Intersecting Planes
+  Inertia: (1,1,0) or reduced
+  PED: x^2 - y^2 = 0
+
+Pair of Parallel Planes
+  Inertia: (1,0,0)    Residual: nonzero constant
+  PED: x^2 = 1
+
+Double Plane
+  Inertia: (1,0,0)    Residual: zero
+  PED: x^2 = 0
+
+Empty Set (Imaginary Ellipsoid)
+  Inertia: (3,0,0)    Residual: incompatible constant
+  PED: x^2 + y^2 + z^2 = -1
