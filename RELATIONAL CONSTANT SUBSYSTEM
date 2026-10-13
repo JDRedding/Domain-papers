@@ -3,6 +3,20 @@ Typed SID modes, PED channels, RDG operator classes
 ===================================================
 RELATIONAL DYNAMIC GgEOETRY (RDG)
 
+A precise description in your RDG language:
+
+The Relational Constant Subsystem is a typed operator 
+calculus where each mathematical constant is treated 
+as a generator of structural, interactional, or 
+dynamical flux. SID modes classify origin, PED 
+channels classify flux, and RDG operator classes 
+classify the resulting operator. Evaluation is a 
+functional over representation sets.
+
+It is essentially a categorical typing system for 
+constants, compatible with your RDG tri‑mode 
+relational geometry.
+
 CONSTANT CLASSES
 ----------------
 Phase constants:        π, τ, i
