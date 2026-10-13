@@ -251,7 +251,7 @@ Representation sets (series, products, integrals, limits) all evaluate
 to the same real number under the corresponding EvalFunctional.
 
 ======================================================================
-APPENDIX: RDG OPERATOR CLASSES (OpS)
+APPENDIX: RDG OPERATOR CLASSES
 ======================================================================
 RDG = Relational Dynamics Generator
 Each RDG operator is a typed transformation that produces a mathematical constant
