@@ -1,0 +1,94 @@
+RELATIONAL TRI-MODE UNIFIED SCHEMA FOR ALL QUADRICS
+============================================
+
+A quadric surface Q is a φ-relation expressed through three inseparable modes:
+S-mode (Structure), I-mode (Interaction), D-mode (Dynamics).
+Every quadric is a specific S/I/D projection of the same underlying relational
+second-degree form.
+
+------------------------------------------------------------
+TRI-MODE CORE
+------------------------------------------------------------
+S-mode:
+  Structural invariants of the quadratic form.
+  Signature of squared terms (+, -, 0).
+  Constraint geometry and admissible partitions.
+
+I-mode:
+  Couplings and mixed terms (xy, xz, yz).
+  Valence propagation and relational curvature.
+  How axes "talk" to each other.
+
+D-mode:
+  Drift, unfolding, and directional behavior.
+  Sign of the constant term (1, -1, 0).
+  Opening, closing, connectedness, sheet count.
+
+------------------------------------------------------------
+UNIFIED FORM OF ANY QUADRIC
+------------------------------------------------------------
+Q(x,y,z) = A*x^2 + B*y^2 + C*z^2
+         + D*x*y + E*x*z + F*y*z
+         + G*x + H*y + I*z + J
+
+SID = (signs of A, B, C | sign of J)
+PED = (canonical form + geometric cue)
+
+------------------------------------------------------------
+THE NINE NON-DEGENERATE QUADRICS IN TRI-MODE
+------------------------------------------------------------
+
+Ellipsoid
+  SID: (+ + + | +)
+  PED: x^2/a^2 + y^2/b^2 + z^2/c^2 = 1
+  RDG: Pure positive S-mode; no I-mode; closed D-mode.
+
+Elliptic Cylinder
+  SID: (+ + 0 | +)
+  PED: x^2/a^2 + y^2/b^2 = 1
+  RDG: S-mode missing z; D-mode extrudes along z.
+
+Hyperboloid (One Sheet)
+  SID: (+ + - | +)
+  PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = 1
+  RDG: Mixed S-mode curvature; D-mode connected.
+
+Hyperbolic Paraboloid (Saddle)
+  SID: (+ - 0 | 0)
+  PED: z = x^2/a^2 - y^2/b^2
+  RDG: Opposite-sign S-mode; I-mode curvature inversion; D-mode open.
+
+Elliptic Paraboloid
+  SID: (+ + 0 | 0)
+  PED: z = x^2/a^2 + y^2/b^2
+  RDG: Positive S-mode; D-mode single-direction opening.
+
+Hyperboloid (Two Sheets)
+  SID: (+ + - | -)
+  PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = -1
+  RDG: Same S-mode as one-sheet; D-mode splits into two components.
+
+Elliptic Cone
+  SID: (+ + - | 0)
+  PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = 0
+  RDG: S-mode balanced; D-mode neutral; apex at origin.
+
+Hyperbolic Cylinder
+  SID: (+ - 0 | +)
+  PED: x^2/a^2 - y^2/b^2 = 1
+  RDG: S-mode hyperbolic; D-mode extrudes along z.
+
+Parabolic Cylinder
+  SID: (+ 0 0 | 0)
+  PED: y = a*x^2
+  RDG: Single-axis S-mode; D-mode extrudes along z.
+
+------------------------------------------------------------
+UNIFIED RDG 
+------------------------------------------------------------
+All quadrics differ only by:
+  - S-mode signature (signs of squared terms)
+  - I-mode couplings (mixed terms)
+  - D-mode constant sign (1, -1, 0)
+
+The tri-mode schema is the universal relational generator for every quadric.
