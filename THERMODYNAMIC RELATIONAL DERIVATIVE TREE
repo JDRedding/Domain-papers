@@ -1,0 +1,199 @@
+THERMODYNAMIC RELATIONAL DERIVATIVE TREE 
+Mapping all first-order derivatives into SID / PED / Q-mode
+
+DERIVATIVE TREE (simplified connections)
+
+                (∂P/∂V)_S
+               /         \
+              /           \
+     -(∂P/∂S)_V               (∂S/∂V)_P
+        |                         |
+    Maxwell                   cyclic
+        |                         |
+     (∂T/∂V)_S                 (∂P/∂T)_S
+     /         \               /         \
+    /           \             /           \
+-(∂T/∂S)_V   (∂S/∂V)_T   -(∂P/∂S)_T   (∂S/∂T)_P
+    |             |           |             |
+    |          Maxwell     Maxwell          |
+    |             |           |             |
+  T/C_v      (∂P/∂T)_V     (∂T/∂V)_P      C_p/T
+                |             |
+             cyclic         cyclic
+                |             |
+              -αV           1/(κV)   etc.
+
+REDUCTIONS
+T/C_v          temperature over heat capacity at constant volume
+-αV            thermal expansion coefficient times volume
+1/(κV)         isothermal compressibility (related to volume)
+-κ/α           ratio of compressibility to thermal expansion
+C_p/T          heat capacity at constant pressure over temperature
+
+============================================================
+RDG LAYERS AND TYPES
+------------------------------------------------------------
+
+SID  = State-Identity Domain
+       Abstract state variables and their relational identities.
+       Carrier: X ∈ {P, V, T, S}
+
+PED  = Partial-Edge Domain
+       Directed edges: constrained partial derivatives.
+       Objects: D[X,Y|Z] := (∂X/∂Y)_Z
+
+Q    = Quotient / Potential Domain
+       Thermodynamic potentials as quotient charts of SID.
+       Objects: U(S,V), H(S,P), F(T,V), G(T,P)
+
+DERIVATIVE TREE (connections)
+(∂P/∂V)_S
+  ├─ Maxwell → −(∂P/∂S)_V → (∂T/∂V)_S → T/C_v
+  └─ cyclic  → (∂S/∂V)_P → (∂P/∂T)_S → (∂S/∂T)_P → C_p/T
+                └─ Maxwell → (∂P/∂T)_V → α/κ
+                             └─ cyclic → (∂V/∂T)_P → α V
+                                          (∂V/∂P)_T → −κ V
+
+============================================================
+SID: STATE VARIABLES AND TYPES
+------------------------------------------------------------
+
+SID = { P, V, T, S }
+
+Type declarations:
+    P : Pressure-type
+    V : Volume-type
+    T : Temperature-type
+    S : Entropy-type
+
+Each X ∈ SID is a scalar field on the underlying state manifold M.
+
+
+============================================================
+Q-MODE: THERMODYNAMIC POTENTIALS AS QUOTIENT CHARTS
+------------------------------------------------------------
+
+Potentials:
+    U : M → R, natural chart (S,V)
+    H : M → R, natural chart (S,P)
+    F : M → R, natural chart (T,V)
+    G : M → R, natural chart (T,P)
+
+Differentials (Q-mode defining relations):
+    dU = T dS − P dV
+    dH = T dS + V dP
+    dF = −S dT − P dV
+    dG = −S dT + V dP
+
+Role:
+    Mixed second partials in these charts generate Maxwell edges in PED.
+
+
+============================================================
+PED: PARTIAL DERIVATIVE EDGES
+------------------------------------------------------------
+
+General PED object:
+    D[X,Y|Z] := (∂X/∂Y)_Z
+
+Domain:
+    X,Y,Z ∈ SID, X ≠ Y, Z ≠ X,Y
+
+Canonical first-order PED edges (16):
+    D[P,V|T], D[P,V|S], D[P,T|V], D[P,T|S]
+    D[V,P|T], D[V,P|S], D[V,T|P], D[V,T|S]
+    D[T,V|S], D[T,V|P], D[T,P|S], D[T,P|V]
+    D[S,V|T], D[S,V|P], D[S,P|T], D[S,P|V]
+
+
+============================================================
+MEASURABLE COEFFICIENTS AS TERMINAL PED MORPHISMS
+------------------------------------------------------------
+
+α   := (1/V) D[V,T|P] = (1/V) (∂V/∂T)_P
+κ   := −(1/V) D[V,P|T] = −(1/V) (∂V/∂P)_T
+C_p := T D[S,T|P] = T (∂S/∂T)_P
+C_v := T D[S,T|V] = T (∂S/∂T)_V
+
+These close derivative chains into experimentally accessible terminals.
+
+
+============================================================
+MAXWELL RELATIONS AS PED-SYMMETRY EDGES
+------------------------------------------------------------
+
+From Q-mode mixed second partials:
+
+    D[T,V|S] = −D[P,S|V]
+    D[T,P|S] =  D[V,S|P]
+    D[S,V|T] =  D[P,T|V]
+    D[S,P|T] = −D[V,T|P]
+
+RDG form:
+    Maxwell_U : D[T,V|S] + D[P,S|V] = 0
+    Maxwell_H : D[T,P|S] − D[V,S|P] = 0
+    Maxwell_F : D[S,V|T] − D[P,T|V] = 0
+    Maxwell_G : D[S,P|T] + D[V,T|P] = 0
+
+
+============================================================
+CYCLIC RELATIONS AS PED-LOOP CONSTRAINTS
+------------------------------------------------------------
+
+For any triple (X,Y,Z) ∈ SID:
+
+    D[X,Y|Z] · D[Y,Z|X] · D[Z,X|Y] = −1
+
+RDG:
+    Cyclic(X,Y,Z) : D[X,Y|Z] · D[Y,Z|X] · D[Z,X|Y] + 1 = 0
+
+Examples:
+    Cyclic(P,V,T) : D[P,V|T] · D[V,T|P] · D[T,P|V] + 1 = 0
+    Cyclic(P,V,S) : D[P,V|S] · D[V,S|P] · D[S,P|V] + 1 = 0
+    Cyclic(T,S,V) : D[T,S|V] · D[S,V|T] · D[V,T|S] + 1 = 0
+
+
+============================================================
+CANONICAL REDUCTIONS: PED → MEASURABLE TERMINALS
+------------------------------------------------------------
+
+1)  D[V,T|P] = α V
+2)  D[V,P|T] = −κ V
+3)  D[P,T|V] = α / κ
+4)  D[S,V|T] = α / κ
+5)  D[S,P|T] = −α V
+6)  D[T,V|S] = −(T/C_v)(α/κ)
+7)  D[P,V|S] = −(C_p/C_v)/(κ V)
+8)  D[P,V|T] = −1/(κ V)
+9)  D[V,T|S] = α V (C_p/C_v)
+10) D[V,P|S] = −κ V (C_p/C_v)
+11) D[P,T|S] = (α/κ)(C_p/C_v)
+12) D[T,P|S] = (T α V)/C_p
+13) D[T,V|P] = −(T α)/C_p
+14) D[S,V|P] = −C_p/(T α V)
+15) D[S,P|V] = −(α V C_v)/T
+16) D[T,P|V] = (α V T)/C_v
+
+
+============================================================
+SUMMARY
+------------------------------------------------------------
+
+SID:
+    Carrier: {P, V, T, S}
+
+PED:
+    Edges: D[X,Y|Z] with X,Y,Z ∈ SID, X ≠ Y, Z ≠ X,Y
+    Constraints:
+        Maxwell_U, Maxwell_H, Maxwell_F, Maxwell_G
+        Cyclic(X,Y,Z) for all triples
+
+Q-mode:
+    Potentials: U(S,V), H(S,P), F(T,V), G(T,P)
+    Role: Generate Maxwell symmetry edges in PED via mixed second partials
+
+Terminal morphisms:
+    α, κ, C_p, C_v, T, V
+
+All 16 first-order PED edges reduce to these terminals,
+closing the RDG triad SID / PED / Q into experimentally accessible form.
