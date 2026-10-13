@@ -235,3 +235,162 @@ Examples:
 
 Representation sets (series, products, integrals, limits) all evaluate
 to the same real number under the corresponding EvalFunctional.
+
+======================================================================
+APPENDIX: RDG OPERATOR CLASSES (OpS)
+======================================================================
+RDG = Relational Dynamics Generator
+Each RDG operator is a typed transformation that produces a mathematical constant
+from the coupling of a SID mode and a PED channel.
+
+All operators are deterministic once the input structures are fixed.
+Each operator has:
+  - Domain (what it acts on)
+  - Action (what transformation it performs)
+  - Fixed point / output (the constant it generates)
+  - Associated constants
+
+----------------------------------------------------------------------
+PhaseOp
+--------
+Domain: circular / rotational / complex structures
+Action: generates periodicity, rotation, and circulation
+Fixed points: angles and periods that close under rotation
+Constants: π, τ, i
+
+Meaning:
+  PhaseOp produces quantities that measure full or partial turns
+  in a circle or complex plane. It encodes the geometry of
+  closed loops and oscillatory systems.
+
+Examples:
+  PhaseOp(circle) → π
+  PhaseOp(full rotation) → τ
+  PhaseOp(quarter turn) → i
+
+----------------------------------------------------------------------
+LinMap
+------
+Domain: continuous growth, compounding, scaling flows
+Action: exponential mapping or its inverse
+Fixed points: bases where growth rate equals current value
+Constants: e, ln2
+
+Meaning:
+  LinMap generates the unique continuous scaling that is linear
+  under composition or differentiation. It converts additive
+  structure into multiplicative structure (and vice versa).
+
+Examples:
+  LinMap(continuous compounding) → e
+  LinMap(binary information) → ln2
+
+----------------------------------------------------------------------
+SimOp
+-----
+Domain: self-similar and metric structures
+Action: fixed-point maps under similarity transforms
+Fixed points: ratios preserved under scaling
+Constants: φ, √2
+
+Meaning:
+  SimOp finds the unique positive number that remains invariant
+  under a geometric or recursive scaling rule. It encodes
+  proportions that reproduce themselves.
+
+Examples:
+  SimOp(extreme-and-mean ratio) → φ
+  SimOp(unit square diagonal) → √2
+
+----------------------------------------------------------------------
+AsympOp
+-------
+Domain: discrete sums versus continuous limits
+Action: extracts the constant remainder after asymptotic cancellation
+Fixed points: gaps between divergent series and their continuous counterparts
+Constants: γ
+
+Meaning:
+  AsympOp isolates the finite difference that remains when a
+  discrete sum is compared to its smooth approximation. It measures
+  the irreducible discrepancy between summation and integration.
+
+Example:
+  AsympOp(harmonic series vs logarithm) → γ
+
+----------------------------------------------------------------------
+DirichletOp
+-----------
+Domain: arithmetic series, L-functions, analytic number theory
+Action: evaluates special values of Dirichlet-type series
+Fixed points: sums with number-theoretic coefficients
+Constants: ζ(3), G
+
+Meaning:
+  DirichletOp produces constants that arise from summing over
+  integers with signs or weights dictated by arithmetic functions.
+  These constants encode density and distribution properties of
+  the integers under analytic continuation.
+
+Examples:
+  DirichletOp(zeta at 3) → ζ(3)
+  DirichletOp(beta at 2) → G
+
+----------------------------------------------------------------------
+RenormOp
+--------
+Domain: iterated maps and dynamical systems near chaos
+Action: extracts universal scaling ratios under renormalization
+Fixed points: ratios invariant across different maps in the same class
+Constants: δ
+
+Meaning:
+  RenormOp finds the unique number that governs how the structure
+  of a dynamical system repeats at finer and finer scales as it
+  approaches chaos. It is independent of the specific map within
+  a universality class.
+
+Example:
+  RenormOp(period-doubling cascade) → δ
+
+----------------------------------------------------------------------
+DistribOp
+---------
+Domain: statistical or arithmetic distributions of integers
+Action: computes limiting densities or geometric means of number-theoretic objects
+Fixed points: constants that describe average behavior of almost-all integers
+Constants: K₀, K, C₂
+
+Meaning:
+  DistribOp produces constants that appear in the asymptotic
+  counting of primes, representations by squares, or continued-fraction
+  digits. These constants correct naive probabilistic models of
+  the integers.
+
+Examples:
+  DistribOp(continued fraction digits) → K₀
+  DistribOp(sum of two squares) → K
+  DistribOp(twin primes) → C₂
+
+----------------------------------------------------------------------
+SUMMARY TABLE
+-------------
+Operator     | Generates                  | Constants
+-------------|----------------------------|------------------
+PhaseOp      | rotation / periodicity     | π, τ, i
+LinMap       | exponential scaling        | e, ln2
+SimOp        | self-similar fixed points  | φ, √2
+AsympOp      | harmonic-log gaps          | γ
+DirichletOp  | analytic arithmetic sums   | ζ(3), G
+RenormOp     | universal scaling ratios   | δ
+DistribOp    | number-theoretic densities | K₀, K, C₂
+
+----------------------------------------------------------------------
+COUPLING RULE (reminder)
+------------------------
+SID mode × PED channel  →  RDG operator  →  constant
+
+The RDG operator is the functional that converts the structural
+and dynamical inputs into a unique real number. Different
+representations (series, products, integrals, limits) of the same
+constant are equivalent under the associated evaluation functional.
