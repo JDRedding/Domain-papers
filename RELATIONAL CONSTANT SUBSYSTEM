@@ -14,8 +14,8 @@ classify the resulting operator. Evaluation is a
 functional over representation sets.
 
 It is essentially a categorical typing system for 
-constants, compatible with the RDG tri‑mode 
-relational geometry.
+constants, compatible with the RDG tri‑mode relational
+geometry.
 
 CONSTANT CLASSES
 ----------------
