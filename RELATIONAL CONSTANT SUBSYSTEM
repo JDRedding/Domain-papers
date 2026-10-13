@@ -1,0 +1,385 @@
+RELATIONAL CONSTANT SUBSYSTEM
+Typed SID modes, PED channels, RDG operator classes
+===================================================
+
+CONSTANT CLASSES
+----------------
+Classify constants by the *kind of operator* that generates them:
+
+  Phase constants:        π, τ, i
+  Exponential constants:  e, ln2
+  Self-similar constants: φ, √2
+  Asymptotic constants:   γ, ζ(3), G
+  Scaling constants:      δ
+  Distribution constants: K₀, K, C₂
+
+Each class receives a SID mode, a PED channel, and an RDG operator type.
+
+SID MODE ASSIGNMENTS
+--------------------
+SID.S (Structure):
+  - φ, √2        (fixed-point, metric, similarity)
+  - e, ln2       (exponential structure)
+  - π, τ         (geometric/rotational structure)
+
+SID.I (Interaction):
+  - i            (complex rotation generator)
+  - δ            (renormalization interaction)
+  - γ            (harmonic/logarithmic correction interaction)
+
+SID.D (Dynamics):
+  - ζ(3), G      (Dirichlet/analytic dynamics)
+  - K₀, K, C₂    (number-theoretic distribution dynamics)
+
+PED CHANNEL ASSIGNMENTS
+-----------------------
+PED.Power (P-channel):
+  - e, ln2       (scaling power, compounding)
+  - φ, √2        (self-similar power)
+  - δ            (bifurcation scaling power)
+
+PED.Evaluation (E-channel):
+  - γ            (harmonic/logarithmic evaluation)
+  - ζ(3), G      (Dirichlet evaluation)
+  - K₀, K, C₂    (statistical/arithmetic evaluation)
+
+PED.Dynamics (Q-slice):
+  - π, τ, i      (phase/circulation dynamics)
+  - δ            (period-doubling dynamics)
+  - ζ(3), G      (analytic continuation dynamics)
+
+RDG OPERATOR CLASSES
+--------------------
+PhaseOp:
+  - π, τ, i
+  Generates rotation, circulation, periodicity.
+
+LinMap:
+  - e, ln2
+  Generates exponential flow, compounding, scaling.
+
+SimOp:
+  - φ, √2
+  Generates similarity transforms, fixed-point maps.
+
+AsympOp:
+  - γ
+  Generates asymptotic corrections, harmonic/log gaps.
+
+DirichletOp:
+  - ζ(3), G
+  Generates Dirichlet-type analytic flux.
+
+RenormOp:
+  - δ
+  Generates universal scaling under renormalization.
+
+DistribOp:
+  - K₀, K, C₂
+  Generates statistical/arithmetic distribution flux.
+
+COUPLING RULES
+--------------
+Given a constant c:
+
+  SID(c) × PED(c) → RDG(c) × value(c)
+
+Examples:
+
+  (SID.S, PED.Dynamics) → (PhaseOp, π)
+  (SID.S, PED.Power)    → (LinMap, e)
+  (SID.S, PED.Power)    → (SimOp, φ)
+  (SID.I, PED.Eval)     → (AsympOp, γ)
+  (SID.D, PED.Eval)     → (DirichletOp, ζ(3))
+  (SID.D, PED.Eval)     → (DistribOp, C₂)
+  (SID.I, PED.Dynamics) → (RenormOp, δ)
+
+EXECUTION SEMANTICS
+-------------------
+Each constant becomes a *typed operator*:
+
+  π: PhaseOp → rotation by π
+  τ: PhaseOp → full-cycle rotation
+  i: PhaseOp → quarter-turn rotor
+
+  e: LinMap → exponential scaling
+  ln2: LinMap → binary entropy scaling
+
+  φ: SimOp → similarity fixed point
+  √2: SimOp → metric scaling
+
+  γ: AsympOp → harmonic/log correction
+  ζ(3): DirichletOp → analytic flux
+  G: DirichletOp → alternating Dirichlet flux
+
+  δ: RenormOp → universal scaling ratio
+
+  K₀: DistribOp → CF digit distribution
+  K: DistribOp → sum-of-squares distribution
+  C₂: DistribOp → prime-gap distribution
+
+
+FULL CONSTANT SUBSYSTEM SUMMARY
+-------------------------------
+For each constant c:
+
+  c ∈ ConstantSet
+  SID_Mode_Assignment(c) ∈ {S, I, D}
+  PED_Channel_Assignment(c) ∈ {P, E, Q}
+  RDG_Operator_Assignment(c) ∈ {
+      PhaseOp, LinMap, SimOp,
+      AsympOp, DirichletOp, RenormOp, DistribOp
+  }
+
+  RepresentationSet R(c) = {series, product, integral, limit, ...}
+  EvalFunctional: R(c) → ℝ
+  Coupling: SID(c) × PED(c) → RDG(c) × EvalFunctional(R(c))
+
+
+EXAMPLE (π)
+-----------
+SID(π) = S-mode (geometric structure)
+PED(π) = Q-slice (phase dynamics)
+RDG(π) = PhaseOp
+R(π) = {Leibniz series, Wallis product, Gaussian integral, ...}
+EvalFunctional(R(π)) = 3.141592653589793...
+
+Execution:
+  (S-mode, Q-slice) → (PhaseOp, π)
+
+EXAMPLE (φ)
+-----------
+SID(φ) = S-mode (self-similar structure)
+PED(φ) = P-channel (scale flux)
+RDG(φ) = SimOp
+R(φ) = {quadratic root, continued fraction, Fibonacci limit}
+EvalFunctional(R(φ)) = 1.618033988749894...
+
+Execution:
+  (S-mode, P-channel) → (SimOp, φ)
+
+
+EXAMPLE (δ)
+-----------
+SID(δ) = I-mode (interaction/renormalization)
+PED(δ) = P-channel (scaling flux)
+RDG(δ) = RenormOp
+R(δ) = {period-doubling limit}
+EvalFunctional(R(δ)) = 4.669201609102990...
+
+Execution:
+  (I-mode, P-channel) → (RenormOp, δ)
+
+MATHEMATICAL CONSTANTS OPERATOR MAP
+==========================================================
+
+SYMBOL LEGEND
+-------------
+n, k, r, m     : positive integers (summation/product indices)
+p              : prime numbers
+x, t, z        : real or complex variables
+H_n            : nth harmonic number = 1 + 1/2 + ... + 1/n
+ln or log      : natural logarithm (base e)
+Γ(z)           : gamma function; Γ(n+1) = n! for positive integers n
+ζ(s)           : Riemann zeta function = Σ_{n=1..∞} 1/n^s
+β(s)           : Dirichlet beta function = Σ_{n=0..∞} (-1)^n / (2n+1)^s
+r_2(k)         : # of integer pairs (a,b) with a^2 + b^2 = k (ordered, signed)
+a_n            : partial quotients of a continued fraction
+lim            : limit
+Σ              : summation
+∏              : product
+∫              : integral
+
+======================================================================
+CONSTANT: π
+Type: real, transcendental
+RDG Operators:
+  - Geometric ratio: π = C / d
+  - Alternating series: π = 4 Σ_{n=0}^∞ (-1)^n / (2n+1)
+  - Zeta relation: ζ(2) = Σ_{n=1}^∞ 1/n^2 = π^2 / 6
+  - Wallis product (correct indexing):
+        π/2 = ∏_{n=1}^∞ (2n/(2n-1)) * (2n/(2n+1))
+  - Gaussian integral: ∫_{-∞}^∞ e^{-x^2} dx = √π
+  - Disk area: area of radius‑1 disk = π
+  - Euler identity: e^{iπ} + 1 = 0
+Fundamentals:
+  - Euclidean circle geometry
+  - Fourier/Gaussian invariants
+
+
+======================================================================
+CONSTANT: e
+Type: real, transcendental
+RDG Operators:
+  - Limit: e = lim_{n→∞} (1 + 1/n)^n
+  - Series: e = Σ_{n=0}^∞ 1/n!
+  - Differential eigenfunction: d/dx (e^x) = e^x
+  - Identity: ∫_1^e (1/x) dx = 1  (not a definition)
+  - Continued fraction: e = [2; 1,2,1, 1,4,1, 1,6,1, ...]
+Fundamentals:
+  - Unique fixed point of derivative operator
+  - Continuous compounding limit
+
+
+======================================================================
+CONSTANT: i
+Type: imaginary, algebraic
+RDG Operators:
+  - Algebraic root: i is a chosen square root of −1
+  - Polynomial: i^2 = −1
+  - Rotation operator: multiplication by i rotates by π/2 in ℂ
+  - Euler formula: e^{iθ} = cos θ + i sin θ
+Fundamentals:
+  - Complex rotation generator
+
+
+======================================================================
+CONSTANT: φ (golden ratio)
+Type: real, algebraic irrational
+RDG Operators:
+  - Quadratic root: φ = (1 + √5)/2
+  - Minimal polynomial: φ^2 − φ − 1 = 0
+  - Reciprocal identity: φ = 1 + 1/φ
+  - Continued fraction: φ = [1;1,1,1,...]
+  - Fibonacci limit: lim_{n→∞} F_{n+1}/F_n = φ
+Fundamentals:
+  - Self‑similarity fixed point
+  - Extreme‑and‑mean ratio
+
+
+======================================================================
+CONSTANT: γ (Euler–Mascheroni)
+Type: real, irrationality unknown
+RDG Operators:
+  - Limit: γ = lim_{n→∞} (H_n − ln n)
+  - Integral: γ = ∫_1^∞ (1/⌊x⌋ − 1/x) dx
+  - Gamma derivative: γ = −Γ'(1)
+  - Series: γ = Σ_{k=2}^∞ (−1)^k ζ(k)/k
+  - Weierstrass product:
+        1/Γ(z) = z e^{γz} ∏_{n=1}^∞ (1 + z/n) e^{−z/n}
+Fundamentals:
+  - Harmonic/logarithmic asymptotic gap
+
+
+======================================================================
+CONSTANT: √2
+Type: real, algebraic irrational
+RDG Operators:
+  - Polynomial root: x^2 − 2 = 0, x>0
+  - Continued fraction: √2 = [1;2,2,2,...]
+  - Nested radical: √2 = 1 + 1/(2 + 1/(2 + ...))
+Fundamentals:
+  - Diagonal of unit square
+  - Hypotenuse of isosceles right triangle
+
+
+======================================================================
+CONSTANT: ln 2
+Type: real, transcendental
+RDG Operators:
+  - Alternating harmonic series: ln 2 = Σ_{n=1}^∞ (−1)^{n+1}/n
+  - Integral: ln 2 = ∫_1^2 dx/x
+Fundamentals:
+  - Natural logarithm of 2
+  - Entropy of fair coin (1 bit = ln 2 nats)
+
+
+======================================================================
+CONSTANT: τ
+Type: real, transcendental
+RDG Operators:
+  - Linear multiple: τ = 2π
+Fundamentals:
+  - Full circle constant (circumference/radius)
+  - Period of e^{iθ} is τ
+
+
+======================================================================
+CONSTANT: e^π (Gelfond’s constant)
+Type: real, transcendental
+RDG Operators:
+  - Exponential: e^π = exp(π)
+  - Identity: e^π = (−1)^(−i)
+  - AGM iteration:
+        k_0 = 1/√2
+        k_{n+1} = (1 − √(1 − k_n^2)) / (1 + √(1 − k_n^2))
+        (4/k_{n+1})^(2^(−n)) → e^π
+Fundamentals:
+  - Gelfond–Schneider theorem
+  - Near‑integer curiosity: e^π − π ≈ 19.9991...
+
+
+======================================================================
+CONSTANT: δ (Feigenbaum)
+Type: real, transcendence unknown
+RDG Operators:
+  - Scaling limit:
+        δ = lim_{n→∞} (a_{n−1} − a_{n−2}) / (a_n − a_{n−1})
+Fundamentals:
+  - Universal period‑doubling scaling
+  - Companion constant α ≈ 2.5029...
+
+
+======================================================================
+CONSTANT: ζ(3) (Apéry’s constant)
+Type: real, irrational
+RDG Operators:
+  - Dirichlet series: ζ(3) = Σ_{n=1}^∞ 1/n^3
+  - Triple integral: ζ(3) = ∫_0^1 ∫_0^1 ∫_0^1 dx dy dz / (1 − xyz)
+Fundamentals:
+  - Special zeta value
+  - Appears in higher‑loop QED expansions
+
+
+======================================================================
+CONSTANT: G (Catalan’s constant)
+Type: real, irrationality unknown
+RDG Operators:
+  - Alternating series: G = Σ_{n=0}^∞ (−1)^n / (2n+1)^2
+  - Integral: G = −∫_0^1 (ln t)/(1+t^2) dt
+  - Trigamma relation: G = (1/4)[ψ_1(1/4) − ψ_1(3/4)]
+Fundamentals:
+  - β(2)
+  - Hyperbolic geometry: volume of ideal octahedron = 4G
+
+
+======================================================================
+CONSTANT: K₀ (Khinchin’s constant)
+Type: real, status unknown
+RDG Operators:
+  - Continued‑fraction geometric mean:
+        K₀ = lim_{n→∞} (a_1 a_2 ... a_n)^(1/n)
+  - Infinite product:
+        K₀ = ∏_{r=1}^∞ [1 + 1/(r(r+2))]^(log_2 r)
+Fundamentals:
+  - Khinchin’s theorem: holds for almost every real number
+  - Known exceptions: rationals, quadratic irrationals, e
+  - For constants like π, γ, ln 2, ζ(3): agreement is empirical, not proved
+
+
+======================================================================
+CONSTANT: K (Sierpiński’s constant)
+Type: real
+RDG Operators:
+  - Asymptotic limit:
+        K = lim_{n→∞} [ Σ_{k=1}^n r_2(k)/k − π ln n ]
+  - Closed forms:
+        K = π (2 ln 2 + 3 ln π + 2γ − 4 ln Γ(1/4))
+        K = π ln (4 π^3 e^{2γ} / Γ(1/4)^4)
+Fundamentals:
+  - Average order of representations as sum of two squares
+
+
+======================================================================
+CONSTANT: C₂ (Twin prime constant)
+Type: real
+RDG Operators:
+  - Prime product:
+        C₂ = ∏_{p≥3} (1 − 1/(p−1)^2)
+        = ∏_{p≥3} p(p−2)/(p−1)^2
+Fundamentals:
+  - Hardy–Littlewood twin prime conjecture:
+        π_2(x) ∼ 2 C₂ ∫_2^x dt / (ln t)^2
+  - Leading‑order simplification:
+        π_2(x) ≈ 2 C₂ x / (ln x)^2
+  - Approx value: 0.660161815846869...
