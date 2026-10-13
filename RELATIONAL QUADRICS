@@ -1,94 +1,144 @@
 RELATIONAL TRI-MODE UNIFIED SCHEMA FOR ALL QUADRICS
-============================================
+====================================================
 
-A quadric surface Q is a φ-relation expressed through three inseparable modes:
+A quadric surface Q is a relation expressed through three inseparable modes:
 S-mode (Structure), I-mode (Interaction), D-mode (Dynamics).
-Every quadric is a specific S/I/D projection of the same underlying relational
-second-degree form.
+Every quadric (non-degenerate or degenerate) is a specific S/I/D projection
+of the same underlying second-degree relational form.
 
 ------------------------------------------------------------
 TRI-MODE CORE
 ------------------------------------------------------------
 S-mode:
   Structural invariants of the quadratic form.
-  Signature of squared terms (+, -, 0).
-  Constraint geometry and admissible partitions.
+  Signature of the squared terms (+, -, 0).
+  Determines constraint geometry and admissible partitions.
 
 I-mode:
-  Couplings and mixed terms (xy, xz, yz).
-  Valence propagation and relational curvature.
-  How axes "talk" to each other.
+  Couplings via mixed terms (xy, xz, yz) or opposing curvature signs.
+  Valence propagation and relational curvature between axes.
+  In canonical forms mixed terms are usually eliminated by rotation;
+  residual I-mode appears as opposite-sign quadratic terms.
 
 D-mode:
-  Drift, unfolding, and directional behavior.
-  Sign of the constant term (1, -1, 0).
-  Opening, closing, connectedness, sheet count.
+  Drift, unfolding, and directional behavior determined by the
+  constant term after reduction to canonical form (1, -1, or 0).
+  Precisely controls:
+    - connectedness (one component vs two)
+    - presence or absence of an apex
+    - boundedness vs unbounded opening
+    - number of sheets
+    - extrusion direction when one variable is absent
 
 ------------------------------------------------------------
-UNIFIED FORM OF ANY QUADRIC
+UNIFIED FORM
 ------------------------------------------------------------
-Q(x,y,z) = A*x^2 + B*y^2 + C*z^2
-         + D*x*y + E*x*z + F*y*z
-         + G*x + H*y + I*z + J
+Q(x, y, z) = A*x^2 + B*y^2 + C*z^2
+           + D*x*y + E*x*z + F*y*z
+           + G*x + H*y + I*z + J
 
-SID = (signs of A, B, C | sign of J)
-PED = (canonical form + geometric cue)
+SID = (signs of A, B, C | sign of constant after reduction)
+PED = (canonical equation + geometric cue)
 
 ------------------------------------------------------------
-THE NINE NON-DEGENERATE QUADRICS IN TRI-MODE
+THE NINE NON-DEGENERATE QUADRICS
 ------------------------------------------------------------
 
 Ellipsoid
   SID: (+ + + | +)
   PED: x^2/a^2 + y^2/b^2 + z^2/c^2 = 1
-  RDG: Pure positive S-mode; no I-mode; closed D-mode.
+  RDG: Pure positive S-mode; closed and bounded D-mode (compact surface).
 
 Elliptic Cylinder
   SID: (+ + 0 | +)
   PED: x^2/a^2 + y^2/b^2 = 1
-  RDG: S-mode missing z; D-mode extrudes along z.
+  RDG: S-mode missing one axis; D-mode extrudes the ellipse along the free axis.
 
-Hyperboloid (One Sheet)
+Hyperboloid of One Sheet
   SID: (+ + - | +)
   PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = 1
-  RDG: Mixed S-mode curvature; D-mode connected.
+  RDG: Mixed S-mode; D-mode = +1 keeps the surface connected (one sheet).
 
 Hyperbolic Paraboloid (Saddle)
   SID: (+ - 0 | 0)
   PED: z = x^2/a^2 - y^2/b^2
-  RDG: Opposite-sign S-mode; I-mode curvature inversion; D-mode open.
+  I-mode: Opposite-sign quadratic terms produce negative Gaussian curvature
+          and saddle interaction between the two axes (curvature inversion).
+  RDG: Residual I-mode via opposing signs; D-mode = 0 yields open unbounded saddle.
 
 Elliptic Paraboloid
   SID: (+ + 0 | 0)
   PED: z = x^2/a^2 + y^2/b^2
-  RDG: Positive S-mode; D-mode single-direction opening.
+  RDG: Same-sign S-mode; D-mode = 0 opens in one direction only.
 
-Hyperboloid (Two Sheets)
+Hyperboloid of Two Sheets
   SID: (+ + - | -)
   PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = -1
-  RDG: Same S-mode as one-sheet; D-mode splits into two components.
+  RDG: Same S-mode as one-sheet; D-mode = -1 splits the surface into two disconnected sheets.
 
-Elliptic Cone
+Elliptic Cone (Double Cone)
   SID: (+ + - | 0)
   PED: x^2/a^2 + y^2/b^2 - z^2/c^2 = 0
-  RDG: S-mode balanced; D-mode neutral; apex at origin.
+  RDG: Balanced mixed S-mode; D-mode = 0 produces an apex at the origin and two nappes.
 
 Hyperbolic Cylinder
   SID: (+ - 0 | +)
   PED: x^2/a^2 - y^2/b^2 = 1
-  RDG: S-mode hyperbolic; D-mode extrudes along z.
+  RDG: Hyperbolic S-mode; D-mode extrudes the hyperbola along the free axis.
 
 Parabolic Cylinder
   SID: (+ 0 0 | 0)
   PED: y = a*x^2
-  RDG: Single-axis S-mode; D-mode extrudes along z.
+  RDG: Single-axis S-mode; D-mode extrudes the parabola along the free axis.
 
 ------------------------------------------------------------
-UNIFIED RDG 
+DEGENERATE QUADRICS
 ------------------------------------------------------------
-All quadrics differ only by:
-  - S-mode signature (signs of squared terms)
-  - I-mode couplings (mixed terms)
-  - D-mode constant sign (1, -1, 0)
+Degenerate cases arise when the quadratic form has reduced rank
+or the full 4×4 matrix drops rank, collapsing dimension or producing
+linear factors.
 
-The tri-mode schema is the universal relational generator for every quadric.
+Point
+  SID: (+ + + | 0)
+  PED: x^2/a^2 + y^2/b^2 + z^2/c^2 = 0
+  RDG: Positive S-mode collapses under D-mode = 0 to a single point (origin).
+
+Pair of Intersecting Planes
+  SID: (+ - 0 | 0) or similar reduced forms
+  PED: x^2 - y^2 = 0   (or x*y = 0 after rotation)
+  RDG: S-mode factors into linear terms; D-mode = 0 yields two planes through the origin.
+
+Pair of Parallel Planes
+  SID: (+ 0 0 | -) or (+ 0 0 | +)
+  PED: x^2 = 1   or   x^2 = -1 (empty) or x^2 = 0 (double plane)
+  RDG: Single-axis S-mode; D-mode produces two parallel planes, one double plane, or empty set.
+
+Single Plane
+  SID: (0 0 0 | linear terms only)
+  PED: ax + by + cz + d = 0
+  RDG: Pure linear (degenerate S-mode); no quadratic structure remains.
+
+Line (or Pair of Imaginary Planes intersecting in a real line)
+  SID: reduced rank with mixed signs
+  PED: x^2 + y^2 = 0
+  RDG: Positive S-mode in two variables collapses under D-mode = 0 to the z-axis.
+
+Empty Set
+  SID: (+ + + | -) or (+ 0 0 | -)
+  PED: x^2/a^2 + y^2/b^2 + z^2/c^2 = -1
+  RDG: Positive S-mode with incompatible D-mode sign yields no real points.
+
+Double Plane
+  SID: (+ 0 0 | 0)
+  PED: x^2 = 0
+  RDG: Single-axis S-mode with D-mode = 0 collapses to a plane of multiplicity two.
+
+------------------------------------------------------------
+UNIFIED RELATIONAL DYNAMIC GEOMETRY
+------------------------------------------------------------
+All quadrics (degenerate and non-degenerate) differ only by:
+  - S-mode signature (signs and rank of squared terms)
+  - I-mode couplings (mixed terms or residual opposing-sign curvature)
+  - D-mode constant sign (1, -1, or 0) after reduction
+
+The tri-mode schema generates every quadric from one relational second-degree form.
