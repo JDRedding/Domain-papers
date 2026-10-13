@@ -6,6 +6,14 @@ S-mode (Structure), I-mode (Interaction), D-mode (Dynamics).
 Every quadric (non-degenerate or degenerate) is a specific S/I/D projection
 of the same underlying second-degree relational form.
 
+UNIVERSAL QUADRIC GENERATOR (RDG)
+---------------------------------
+Q = S[Q] + I[Q] + D[Q]
+
+S[Q] = diag(A, B, C) acting on (x, y, z)
+I[Q] = D*x*y + E*x*z + F*y*z
+D[Q] = G*x + H*y + I*z + J
+
 ------------------------------------------------------------
 TRI-MODE CORE
 ------------------------------------------------------------
