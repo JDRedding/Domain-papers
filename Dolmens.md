@@ -13,12 +13,6 @@ Key structural traits:
 - Entrances ranging from simple openings to shaped portals or portholes  
 - Often originally covered by a mound (now eroded) 
 
-In the European megalithic tradition, the earliest megalithic graves were small, often closed aboveground slab chambers or simple dolmens (upright stones supporting a capstone or covered by a mound). Radiocarbon modeling places their appearance in the second half of the 5th millennium cal BCE (roughly 4800–4000 BCE), concentrated in northwest France, parts of the Atlantic Iberian coast, Catalonia, Corsica, and Sardinia.
-
-Pre-megalithic monumental earthen structures (e.g., long Passy-type graves) exist slightly earlier (~5000 BCE) but only in northwest France and lack stone chambers. Accessible (re-openable) megalithic graves appear a bit later, with one of the earliest securely dated examples at Prissé-la-Charrière in west-central France (~4370–4260 cal BCE).
-
-In regional sequences (Denmark/Scandinavia, parts of France and Iberia), simple or closed dolmens typically precede or overlap with the rise of passage graves. Passage graves proliferate later, especially in the first half of the 4th millennium BCE along the Atlantic façade. The claim that dolmens represent the earliest cyclopean stone chamber tombs from which passage graves and gallery graves later developed holds well for Europe. They are not the oldest monumental architecture overall, nor the earliest megaliths worldwide, but they are the earliest form of stone-slab chamber tombs in the European record.
-
 ---
 
 ## 🌍 **Geographic & Cultural Distribution**
@@ -27,7 +21,13 @@ Dolmens appear across many regions, with **independent local development** rathe
 
 ### Western Europe  
 - **Brittany, Iberia, Britain, Ireland**: Dense Neolithic concentrations beginning ~4500 BCE.  
-- Portal tombs and passage graves show refined entrance typologies (triangular, lintel‑portal, round porthole) used by Wartberg, Horgen, and Nordic megalithic traditions 
+- Portal tombs and passage graves show refined entrance typologies (triangular, lintel‑portal, round porthole) used by Wartberg, Horgen, and Nordic megalithic traditions
+
+In the European megalithic tradition, the earliest megalithic graves were small, often closed aboveground slab chambers or simple dolmens (upright stones supporting a capstone or covered by a mound). Radiocarbon modeling places their appearance in the second half of the 5th millennium cal BCE (roughly 4800–4000 BCE), concentrated in northwest France, parts of the Atlantic Iberian coast, Catalonia, Corsica, and Sardinia.
+
+Pre-megalithic monumental earthen structures (e.g., long Passy-type graves) exist slightly earlier (~5000 BCE) but only in northwest France and lack stone chambers. Accessible (re-openable) megalithic graves appear a bit later, with one of the earliest securely dated examples at Prissé-la-Charrière in west-central France (~4370–4260 cal BCE).
+
+In regional sequences (Denmark/Scandinavia, parts of France and Iberia), simple or closed dolmens typically precede or overlap with the rise of passage graves. Passage graves proliferate later, especially in the first half of the 4th millennium BCE along the Atlantic façade. The claim that dolmens represent the earliest cyclopean stone chamber tombs from which passage graves and gallery graves later developed holds well for Europe. They are not the oldest monumental architecture overall, nor the earliest megaliths worldwide, but they are the earliest form of stone-slab chamber tombs in the European record.
 
 ### Korea  
 - Holds **~40% of the world’s dolmens**, forming the largest global concentration (not directly in search results but widely documented archaeologically; inference based on global distribution patterns).
