@@ -45,7 +45,7 @@ $$
 $$
 
 - Evaluates how the structure behaves under dynamics:  
-  $\tau$-flow, stress, health  
+  $\tau$ -flow, stress, health  
 - Time evolution, aggregation, scaling  
 - “How the structure runs”
 
@@ -63,8 +63,8 @@ G &\xrightarrow{H_{{pred}}} \mathbb{C}^k \\
 $$
 
 - Compares extracted vs predicted coefficients  
-- Decides whether the run is certified ($Q(x)$)  
-- Decides whether the system is formalizable ($K(x)$)
+- Decides whether the run is certified ( $Q(x)$ )  
+- Decides whether the system is formalizable ( $K(x)$ )
 
 ---
 
