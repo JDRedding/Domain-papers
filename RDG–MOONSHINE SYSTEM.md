@@ -16,7 +16,22 @@
 | $V^\natural$ | Moonshine module |
 | ${Griess}$ | weight-2 subspace of $V^\natural$, $\dim 196884$ |
 | ${MT}$ | $\mathbb{C}$-span of McKay–Thompson series |
-| $\Gamma_0(N)$ | $\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in {SL}_2(\mathbb{Z}) : c \equiv 0 \pmod{N} \}$ |
+| $\Gamma_0(N)$ | $\mathbb{pmatrix}$ |
+
+Note: $\mathbb{pmatrix}$ = 
+
+$$
+\Gamma_0(N)=
+\{
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\in
+{SL}_2(\mathbb{Z}):
+c \equiv 0 \pmod{N}
+\}
+$$
 
 ## PARTICLE AND POPULATION
 
