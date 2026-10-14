@@ -132,6 +132,8 @@ There is a continuum rather than a sharp break. Some structures classified as do
 ## APPENDIX: Dolmen Notation  
 (Orthostatic Collective Chamber with Restricted Entrance)
 
+The following invariants are stipulated rather than independently tested, so different researchers could define the core properties differently and reach different conclusions about what counts as “structure-preserving”, but the general framework works sufficiently to begin structural research. Additions social, symbolic, and chronological detail in favor of abstracts away most relational geometry, can help clarify engineering commonalities but risks over-specifying cultural meaning. Construction techniques and labor estimates remain conventional archaeological inferences; the PED-Triad merely re-expresses them as force operators.
+
 Convergence is expressed as:
 
 ```
