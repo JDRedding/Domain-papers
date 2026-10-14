@@ -795,6 +795,253 @@ $$
 
 This is the complete graph-theoretic representation of the RDG–Moonshine system.
 
+## APPENDIX: Tensor-Flow Diagram
+
+### Data Tensors
+
+| Symbol | Description |
+|--------|-------------|
+| $x_t$ | state tensor in $X$ |
+| $\tau_t$ | modulus tensor in $\mathbb{H}$ |
+| $\pi_t$ | certificate slice tensor in $\Pi$ |
+| $c(x_t)$ | jet tensor in $\mathbb{C}^{K+2}$ |
+| $r(x_t)$ | residual tensor in $\mathbb{R}^m$ |
+| $F(x_t)$ | Griess tensor in $\mathbb{R}^{196884}$ |
+| $g(x_t)$ | class label in ${Conj}(M)$ |
+| $T_{g(x_t)}$ | $q$-series tensor in ${MT}$ |
+| $E_k(T_g)$ | coefficient tensor in $\mathbb{C}^k$ |
+| $h(x_t)$ | predicted tensor in $\mathbb{C}^k$ |
+| $Q(x_t)$ | boolean tensor in ${Bool}$ |
+| $B_{{inst}}$ | scalar health tensor in $\mathbb{R}_{\ge 0}$ |
+| $B_{{long}}$ | population health tensor in $\mathbb{R}_{\ge 0}$ |
+
+---
+
+### Layered Flow
+
+#### 1. Local Feature Extraction
+
+```
+x_t, Φ
+  │
+  ├─[JetExtractor]────────► c(x_t) ∈ ℂ^{K+2}
+  └─[ResidualExtractor]───► r(x_t) ∈ ℝ^m
+```
+
+#### 2. Griess Embedding Layer
+
+```
+(c(x_t), r(x_t))
+  │
+  └─[LinearMap: ι]────► F(x_t) ∈ ℝ^{196884}
+```
+
+$$
+F(x_t) = \iota\bigl(c(x_t),\ r(x_t)\bigr)
+$$
+
+#### 3. Monster Class Layer
+
+```
+F(x_t)
+  │
+  └─[Stabilizer + CanonicalChoice]──► s(F(x_t)) ∈ M
+                                         │
+                                         └─[ClassMap]──► g(x_t) ∈ Conj(M)
+```
+
+$$
+g(x_t) = \Sigma\bigl(F(x_t)\bigr)
+$$
+
+#### 4. Moonshine Series Layer
+
+```
+g(x_t), τ_t
+  │
+  └─[GradedTrace on V♮]─────► T_{g(x_t)}(τ_t) ∈ MT
+```
+
+$$
+T_{g(x_t)}(\tau_t) = {Tr}_{V^\natural}\bigl(g(x_t)\, q^{L_0-1}\bigr)
+$$
+
+#### 5. Level and Group Layer
+
+```
+g(x_t)
+  │
+  └─[LevelMap N]───────────────────► N_t ∈ ℤ_{>0}
+                                       │
+                                       └─[Γ_0 Constructor]──► Γ_0(N_t)
+```
+
+$$
+N_t = N\bigl(g(x_t)\bigr)
+$$
+
+#### 6. Modular Update Layer
+
+```
+(Γ_0(N_t), τ_t)
+  │
+  └─[GroupAction]──────────────────► τ_{t+1} = γ_t · τ_t
+```
+
+#### 7. Coefficient Extraction Layer
+
+```
+T_{g(x_t)}(τ_t)
+  │
+  └─[LinearMap: E_k]──────────────► E_k(T_{g(x_t)}) ∈ ℂ^k
+```
+
+#### 8. Prediction Layer
+
+```
+F(x_t)
+  │
+  └─[LinearMap: H_pred]───────────► h(x_t) ∈ ℂ^k
+```
+
+$$
+h(x_t) = H_{{pred}}\bigl(F(x_t)\bigr)
+$$
+
+#### 9. Certificate Layer
+
+```
+(E_k(T_{g(x_t)}), h(x_t), Φ)
+  │
+  └─[ConstraintCheck + Norm]──────► Q(x_t) ∈ Bool
+```
+
+$$
+Q(x_t) = {true}
+\iff
+C(x_t,\Phi)\ {AND}\ 
+\bigl\| E_k(T_{g(x_t)}) - h(x_t) \bigr\| \le \varepsilon
+$$
+
+#### 10. Stress Layer
+
+```
+(τ_t, Q(x_t), Φ)
+  │
+  ├─[GeomStress]────► α f_geom(τ_t)
+  ├─[QStress]───────► β f_Q(Q(x_t))
+  └─[FieldStress]───► γ f_field(Φ, x_t)
+
+  (sum)
+  │
+  └─[Adder]─────────► B_inst(p_t) ∈ ℝ_{\ge 0}
+```
+
+$$
+B_{{inst}}(p_t) =
+\alpha\, f_{{geom}}(\tau_t) +
+\beta\, f_Q\bigl(Q(x_t)\bigr) +
+\gamma\, f_{{field}}(\Phi,\ x_t)
+$$
+
+#### 11. Population Aggregation Layer
+
+```
+{ B_inst(p_{i,t}) }_{i=1}^n
+  │
+  └─[Mean / Accumulation]───────────► B_long(P_t), B_long(P_{0:T}) ∈ ℝ_{\ge 0}
+```
+
+$$
+B_{{long}}(P_t) =
+\frac{1}{n}\sum_{i=1}^n B_{{inst}}(p_{i,t})
+$$
+
+#### 12. Formalizability Layer
+
+```
+{ B_inst, B_long }
+  │
+  └─[BoundednessTest]─────────────► K(x_t) ∈ Bool
+```
+
+$$
+K(x) = {false}
+\iff
+\text{every admissible evolution is cusp-driven}
+$$
+
+---
+
+### Global Tensor-Flow Summary
+
+```
+x_t, Φ
+  → (JetExtractor, ResidualExtractor)
+  → ι
+  → F(x_t)
+  → (Stabilizer, ClassMap)
+  → g(x_t)
+  → (GradedTrace)
+  → T_{g(x_t)}(τ_t)
+  → (N, Γ_0, GroupAction)
+  → τ_{t+1}
+  → (E_k, H_pred)
+  → (E_k(T_g), h(x_t))
+  → Q(x_t)
+  → (Geom / Q / Field stress)
+  → B_inst
+  → B_long
+  → K(x_t)
+```
+
+---
+
+#### Compact Tensor Pipeline
+
+$$
+\begin{align*}
+&(x_t,\ \Phi)
+\xrightarrow{\text{extract}}
+(c,\ r)
+\xrightarrow{\iota}
+F
+\xrightarrow{\Sigma}
+g
+\xrightarrow{{Tr}}
+T_g \\
+&\xrightarrow{N,\ \Gamma_0}
+\gamma
+\xrightarrow{\cdot}
+\tau_{t+1}
+\xrightarrow{E_k,\ H_{{pred}}}
+(E_k,\ h)
+\xrightarrow{\text{cert}}
+Q \\
+&\xrightarrow{\text{stress}}
+B_{{inst}}
+\xrightarrow{{agg}}
+B_{{long}}
+\xrightarrow{\text{bound}}
+K
+\end{align*}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
