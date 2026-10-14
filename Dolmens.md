@@ -17,7 +17,7 @@ Key structural traits:
 
 ## 🌍 **Geographic & Cultural Distribution**
 
-Dolmens appear across many regions, with **independent local development** rather than a single origin.
+Dolmens appear across many regions, with **independent local development** rather than a single origin. Diffusion is accepted for short-range spreads (for example, within parts of Europe or from the Korean peninsula to parts of Japan), but long-distance Europe–Korea diffusion is not supported by current evidence.
 
 ### Western Europe  
 - **Brittany, Iberia, Britain, Ireland**: Dense Neolithic concentrations beginning ~4500 BCE.  
