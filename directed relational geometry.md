@@ -1,4 +1,4 @@
-The core mathematical structure is a directed relational geometry (RDG). SID and PED arise as the minimal projections and flux operators forced by the four constraints.
+The core mathematical structure is a directed relational geometry (RDG, relational dynamic geometry). SID and PED arise as the minimal projections and flux operators forced by the four constraints.
 
 ### Base Object
 An equation (or admissible structure) is the directed relational geometry
