@@ -1032,12 +1032,6 @@ K
 \end{align*}
 $$
 
-
-
-
-
-
-
 ## APPENDIX: Spiral Geometric Diagram
 
 ```
@@ -1270,6 +1264,166 @@ If ${Im}(\tau_t)$ stays bounded:
 - spiral remains inside a modular fundamental region
 - $B_{{inst}}$ bounded
 - $K(x)={true}$
+
+## APPENDIX: Hyperbolic Geometry Diagram 
+
+```
+          Im(τ)
+            ↑
+            |
+∞  (cusp)   |                     geodesic semicircles
+────────────*───────────────────────────────────────────────
+            |       )     )      )      )      )      )
+            |      )     )      )      )      )      )
+            |     )     )      )      )      )      )
+            |    )     )      )      )      )      )
+            |   )     )      )      )      )      )
+            |  )     )      )      )      )      )
+            | )     )      )      )      )      )
+            |)     )      )      )      )      )
+────────────┼───────────────────────────────────────────────→ Re(τ)
+            0     -1     -2     -3     -4     -5     -6
+```
+
+---
+
+### Key Structures
+
+#### 1. Upper Half-Plane $\mathbb{H}$
+
+All points $\tau = x + i y$ with $y > 0$.  
+This is the hyperbolic plane in the Poincaré upper half-plane model.
+
+#### 2. Geodesics
+
+Vertical lines and semicircles orthogonal to the real axis  
+(shown above as “)” arcs).
+
+#### 3. Fundamental Domain for $\mathrm{SL}_2(\mathbb{Z})$
+
+Approximate outline:
+
+```
+                 Im(τ)
+                   ↑
+                   |
+                   |       )
+                   |      )
+                   |     )
+                   |    )
+                   |   )
+                   |  )
+                   | )
+                   |)
+        ───────────┼──────────────→ Re(τ)
+                  -1      0       1
+```
+
+The classical domain is bounded by:
+
+- vertical lines ${Re}(\tau) = -\tfrac12$ and ${Re}(\tau) = \tfrac12$
+- the unit semicircle $\lvert\tau\rvert = 1$
+
+#### 4. Congruence Subgroup $\Gamma_0(N)$
+
+$\Gamma_0(N)$ acts by Möbius transformations:
+
+$$
+\tau \mapsto \frac{a\tau + b}{c\tau + d},
+\qquad
+c \equiv 0 \pmod{N}.
+$$
+
+This produces a **tiling** of the upper half-plane into $N$-scaled fundamental domains.
+
+```
+   ... ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ...
+        | | | | | | | | | | | | |
+        fundamental domains repeated N times
+```
+
+#### 5. Modular Update $\tau_{t+1} = \gamma_t \cdot \tau_t$
+
+Each $\gamma_t \in \Gamma_0(N_t)$ moves $\tau_t$ along a hyperbolic geodesic.
+
+```
+            *
+           * )
+          *   )
+         *     )
+        *       )
+       *         )
+      *           )
+     *             )
+    *               )
+   *                 )
+  *                   )
+ *                     )
+*  τ_t → τ_{t+1} → τ_{t+2} → ... (spiral toward cusp)
+```
+
+#### 6. Cusp Approach
+
+As ${Im}(\tau) \to \infty$, the point moves vertically upward:
+
+```
+            ↑
+            |
+            |
+            |
+            |
+            *
+            |
+            |
+            |
+            |
+            |
+────────────┼──────────────→ Re(τ)
+```
+
+This corresponds to:
+
+- $q = \exp(2\pi i \tau) \to 0$
+- $j(\tau) \sim q^{-1} \to \infty$
+- $B_{{inst}} \to \infty$
+- $K(x) = {false}$
+
+#### 7. Bounded Region (Formalizable)
+
+If $\tau$ stays inside a compact region of $\Gamma_0(N)\backslash\mathbb{H}$:
+
+```
+            )
+           ) (
+          )   (
+         )     (
+        )       (
+       )         (
+      )           (
+     )             (
+    )               (
+   )                 (
+  )                   (
+ )                     (
+( bounded hyperbolic orbit )
+```
+
+Then:
+
+- $q$ stays away from 0
+- $j(\tau)$ stays finite
+- $B_{{inst}}$ remains bounded
+- $K(x) = {true}$
+
+---
+
+### Summary
+
+- The upper half-plane is the hyperbolic geometry domain.
+- $\Gamma_0(N)$ acts by Möbius transformations generating a tiling.
+- The $\tau$-update moves the particle along hyperbolic geodesics.
+- Cusp approach = vertical escape → non-formalizable.
+- Bounded orbit = stays in a fundamental region → formalizable.
 
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
