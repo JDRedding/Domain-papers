@@ -112,7 +112,7 @@ This is the SID-Dynamics reduction of null geodesics projected onto the lens pla
 
 ## 5. Unified mathematical form
 
-All four formulations are mathematically instantiate a single variational archetype: a Fermat-type principle is a stationary-arrival condition for curves whose evolution is governed by a scalar or geometric optical potential. 
+All four formulations mathematically instantiate a single variational archetype: a Fermat-type principle is a stationary-arrival condition for curves whose evolution is governed by a scalar or geometric optical potential. 
 
 All four cases fit the general variational template
 
