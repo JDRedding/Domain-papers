@@ -673,44 +673,95 @@ $$
 ### Edges (Directed Maps)
 
 1. **State → Griess**  
-   $X \xrightarrow{F} G$
+
+$$
+X \xrightarrow{F} G
+$$
 
 2. **Griess → Monster class**  
-   $G \xrightarrow{\Sigma} {Conj}(M)$
+
+$$
+G \xrightarrow{\Sigma} \mathrm{Conj}(M)
+$$
 
 3. **Monster class → McKay–Thompson series**  
-   ${Conj}(M) \xrightarrow{T} {MT}$
+
+$$
+\mathrm{Conj}(M) \xrightarrow{T} \mathrm{MT}
+$$
 
 4. **Monster class → Moonshine level**  
-   ${Conj}(M) \xrightarrow{N} N$
+
+$$
+\mathrm{Conj}(M) \xrightarrow{N} N
+$$
 
 5. **Level → congruence subgroup**  
-   $N \xrightarrow{\Gamma_0} \Gamma_0(N)$
+
+$$
+N \xrightarrow{\Gamma_0} \Gamma_0(N)
+$$
 
 6. **Modular update**  
-   $(\Gamma_0(N),\ \mathbb{H}) \xrightarrow{{action}} \mathbb{H}$  
-   $(\gamma,\ \tau) \mapsto \gamma \cdot \tau$
+
+$$
+(\Gamma_0(N),\ \mathbb{H}) \xrightarrow{\mathrm{action}} \mathbb{H}
+$$  
+
+$$
+(\gamma,\ \tau) \mapsto \gamma \cdot \tau
+$$
 
 7. **MT → extracted coefficients**  
-   ${MT} \xrightarrow{E_k} \mathbb{C}^k$
+
+$$
+\mathrm{MT} \xrightarrow{E_k} \mathbb{C}^k
+$$
 
 8. **Griess → predicted coefficients**  
-   $G \xrightarrow{H_{{pred}}} \mathbb{C}^k$
+
+$$
+G \xrightarrow{H_{\mathrm{pred}}} \mathbb{C}^k
+$$
 
 9. **Coefficient comparison → certificate**  
-   $(\mathbb{C}^k,\ \mathbb{C}^k) \xrightarrow{{compare}} {Bool}$  
-   $\bigl(E_k(T_g),\ h(x)\bigr) \mapsto Q(x)$
+
+$$
+(\mathbb{C}^k,\ \mathbb{C}^k) \xrightarrow{\mathrm{compare}} \mathrm{Bool}
+$$  
+
+$$
+(E_k(T_g),\ h(x)) \mapsto Q(x)
+$$
 
 10. **Certificate + $\tau$ + $\Phi$ → stress**  
-    $({Bool},\ \mathbb{H},\ \Phi) \xrightarrow{{stress}} \mathbb{R}_{\ge 0}$
+
+$$
+(\mathrm{Bool},\ \mathbb{H},\ \Phi) \xrightarrow{\mathrm{stress}} \mathbb{R}_{\ge 0}
+$$
 
 11. **Stress → health**  
-    $\mathbb{R}_{\ge 0} \xrightarrow{{aggregate}} \mathbb{R}_{\ge 0}$
 
-12. **Health → formalizability**  
-    $\mathbb{R}_{\ge 0} \xrightarrow{{boundedness}} {Bool}$  
-    $B_{{inst}}$ or $B_{{long}}$ bounded? $\to K(x)$
+$$
+\mathbb{R}_{\ge 0} \xrightarrow{\mathrm{aggregate}} \mathbb{R}_{\ge 0}
+$$
 
+12. **Health → formalizability**
+    
+$$
+\mathbb{R}_{\ge 0} \xrightarrow{\mathrm{boundedness}} \mathrm{Bool}
+$$
+
+$$
+B_{\mathrm{inst}}
+$$
+
+   or
+
+$$
+B_{\mathrm{long}}\ \mathrm{bounded?}\ \to K(x)
+$$
+    
 ---
 
 ### Graph Structure (Full Pipeline)
