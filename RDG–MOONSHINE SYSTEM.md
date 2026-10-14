@@ -635,19 +635,9 @@ x &\mapsto F(x) \in {Griess} \\
 \end{align*}
 $$
 
-
-
-
-
-
-
-
-
-
-
 ## APPENDIX: Graph-Theoretic Diagram
 
-## Vertices (Nodes)
+### Vertices (Nodes)
 
 | Symbol | Description |
 |--------|-------------|
@@ -665,7 +655,7 @@ $$
 
 ---
 
-## Edges (Directed Maps)
+### Edges (Directed Maps)
 
 1. **State → Griess**  
    $X \xrightarrow{F} G$
@@ -708,7 +698,7 @@ $$
 
 ---
 
-## Graph Structure (Full Pipeline)
+### Graph Structure (Full Pipeline)
 
 ```
  X
@@ -747,7 +737,7 @@ MT
 
 ---
 
-## Multigraph View (All Edges)
+### Multigraph View (All Edges)
 
 ```
 X --F--> G --Σ--> Conj(M) --N--> N --Γ_0--> Γ_0(N)
@@ -759,20 +749,20 @@ G --H_pred--> ℂ^k
 
 ---
 
-## Paths
+### Paths
 
-### Main forward path
+#### Main forward path
 
 $$
 X \to G \to {Conj}(M) \to N \to \Gamma_0(N) \to \tau\text{-update} \to {MT} \to \mathbb{C}^k \to Q \to B_{{inst}} \to B_{{long}} \to K
 $$
 
-### Feedback path
+#### Feedback path
 $$
 G \to \mathbb{C}^k \to Q \to \text{stress} \to \text{health} \to \text{formalizability}
 $$
 
-### Certificate subgraph
+#### Certificate subgraph
 $$
 \begin{align*}
 G &\to {Conj}(M) \to {MT} \to \mathbb{C}^k \\
@@ -781,12 +771,12 @@ G &\to \mathbb{C}^k \\
 \end{align*}
 $$
 
-### Modular subgraph
+#### Modular subgraph
 $$
 {Conj}(M) \to N \to \Gamma_0(N) \to \mathbb{H} \to {MT}
 $$
 
-### Health subgraph
+#### Health subgraph
 $$
 (Q,\ \tau,\ \Phi) \to \text{stress} \to B_{{inst}} \to B_{{long}} \to K
 $$
