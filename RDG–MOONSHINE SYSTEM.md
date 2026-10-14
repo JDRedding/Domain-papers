@@ -1425,6 +1425,156 @@ Then:
 - Cusp approach = vertical escape → non-formalizable.
 - Bounded orbit = stays in a fundamental region → formalizable.
 
+## APPENDIX: Category-Theoretic Diagram
+
+### Objects (Objects of the Category)
+
+| Symbol | Description |
+|--------|-------------|
+| $X$ | computational state object |
+| $G$ | Griess algebra object |
+| ${Conj}(M)$ | Monster conjugacy-class object |
+| ${MT}$ | McKay–Thompson series object |
+| $N$ | Moonshine level object |
+| $\Gamma_0(N)$ | congruence subgroup object |
+| $\mathbb{H}$ | upper half-plane object |
+| $\mathbb{C}^k$ | coefficient-vector object |
+| ${Bool}$ | certificate truth-value object |
+| $\mathbb{R}_{\ge 0}$ | health-value object |
+
+---
+
+### Functors and Morphisms
+
+$$
+\begin{align*}
+F &\colon X \to G \\
+\Sigma &\colon G \to {Conj}(M) \\
+T &\colon {Conj}(M) \to {MT} \\
+N &\colon {Conj}(M) \to N \\
+\Gamma_0 &\colon N \to \Gamma_0(N) \\
+{Act} &\colon \Gamma_0(N) \times \mathbb{H} \to \mathbb{H} \\
+E_k &\colon {MT} \to \mathbb{C}^k \\
+H_{{pred}} &\colon G \to \mathbb{C}^k \\
+{Cert} &\colon \mathbb{C}^k \times \mathbb{C}^k \times X \to {Bool} \\
+{Stress} &\colon {Bool} \times \mathbb{H} \times X \to \mathbb{R}_{\ge 0} \\
+{Health} &\colon \mathbb{R}_{\ge 0}^n \to \mathbb{R}_{\ge 0} \\
+{Formal} &\colon \mathbb{R}_{\ge 0} \to {Bool}
+\end{align*}
+$$
+
+---
+
+### Full Commutative Diagram
+
+```
+                   F
+            X ------------→ G
+            |               |
+            |               | Σ
+            |               v
+            |           Conj(M)
+            |            /   \
+            |           /     \
+            |          /       \
+            |         /         \
+            |        /           \
+            |       /             \
+            |      /               \
+            |     /                 \
+            |    /                   \
+            |   /                     \
+            |  /                       \
+            v /                         v
+         MT  ←─────────────── T ───────── Conj(M)
+         |                                   |
+         |                                   | N
+         |                                   v
+         |                                   N
+         |                                   |
+         |                                   | Γ₀
+         |                                   v
+         |                                Γ₀(N)
+         |                                   |
+         |                                   | Act
+         |                                   v
+         |                                   ℍ
+         |                                   |
+         v                                   v
+      ℂ^k  ←────── E_k ─────── MT        Bool ←────── Cert ─────── (ℂ^k × ℂ^k × X)
+       ^                                         |
+       |                                         | Stress
+       | H_pred                                   v
+       |                                         ℝ≥0
+       |                                         |
+       |                                         | Health
+       |                                         v
+       |                                        ℝ≥0
+       |                                         |
+       |                                         | Formal
+       |                                         v
+       └──────────────────────────────────────── Bool
+```
+
+---
+
+### Commutativity Conditions
+
+1. **Monster class assignment**  
+
+$$
+\Sigma \circ F : X \to {Conj}(M)
+$$
+
+2. **Moonshine series**  
+
+$$
+T \circ \Sigma \circ F : X \to {MT}
+$$
+
+3. **Level map**  
+
+$$
+N \circ \Sigma \circ F : X \to N
+$$
+
+4. **Modular update**  
+
+$$
+{Act}\bigl(\Gamma_0 \circ N \circ \Sigma \circ F,\ \tau\bigr) = \tau'
+$$
+
+5. **Certificate consistency**  
+
+$$
+{Cert}\bigl(E_k \circ T \circ \Sigma \circ F,\ H_{{pred}} \circ F,\ x\bigr) = Q(x)
+$$
+
+6. **Health consistency**  
+
+$$
+{Formal}\bigl({Health}\bigl({Stress}(Q(x),\ \tau,\ x)\bigr)\bigr) = K(x)
+$$
+
+---
+
+### Diagram Summary
+
+Every path from $X$ to ${Bool}$ (formalizability) factors through:
+
+$$
+X
+\to G
+\to {Conj}(M)
+\to {MT}
+\to \mathbb{C}^k
+\to {Bool}
+\to \mathbb{R}_{\ge 0}
+\to {Bool}
+$$
+
+and all squares commute by construction.
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
