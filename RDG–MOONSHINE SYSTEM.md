@@ -2361,6 +2361,120 @@ $$
 - $B_{{inst}}$ = height on the landscape  
 - $K(x)$ = whether the trajectory stays in the basin or hits the cusp wall
 
+## APPENDIX: Full Pipeline DAG (RDG–Moonshine)
+DAG (Directed Acyclic Graph)
+
+### Nodes
+
+| Symbol | Description |
+|--------|-------------|
+| $X | computational state |
+| $G | Griess algebra |
+| ${Conj}(M) | Monster conjugacy classes |
+| $N | Moonshine level |
+| $\Gamma_0(N) | congruence subgroup |
+| $\mathbb{H} | upper half-plane (\(\tau\)) |
+| ${MT} | McKay–Thompson series |
+| $\mathbb{C}^k | coefficient vectors |
+| ${Bool} | certificate / formalizability |
+| $\mathbb{R}_{\ge 0} | health values |
+
+---
+
+### Edges (Maps)
+
+$$
+\begin{align*}
+F &\colon X \to G \\
+\Sigma &\colon G \to {Conj}(M) \\
+N_{{map}} &\colon {Conj}(M) \to N \\
+\Gamma_{0{map}} &\colon N \to \Gamma_0(N) \\
+{Act} &\colon \Gamma_0(N) \times \mathbb{H} \to \mathbb{H} \\
+T &\colon {Conj}(M) \to {MT} \\
+E_k &\colon {MT} \to \mathbb{C}^k \\
+H_{{pred}} &\colon G \to \mathbb{C}^k \\
+{Cert} &\colon (\mathbb{C}^k,\ \mathbb{C}^k,\ X) \to {Bool} \\
+{Stress} &\colon ({Bool},\ \mathbb{H},\ X) \to \mathbb{R}_{\ge 0} \\
+{Health} &\colon \mathbb{R}_{\ge 0}^n \to \mathbb{R}_{\ge 0} \\
+{Formal} &\colon \mathbb{R}_{\ge 0} \to {Bool}
+\end{align*}
+$$
+
+---
+
+### DAG Structure
+
+```
+          X
+          |
+          | F
+          v
+          G
+          |
+          | Σ
+          v
+       Conj(M)
+       /     \
+      /       \
+ N_map        T
+    |          \
+    v           \
+    N            \
+    |             \
+    | Γ₀_map       \
+    v               \
+  Γ₀(N)              \
+    |                 \
+    | Act              \
+    v                  v
+    ℍ               MT
+    |               |
+    |               | E_k
+    |               v
+    |           ℂ^k (extracted)
+    |               ^
+    |               |
+    |           H_pred
+    |               |
+    |               |
+    v               |
+ Bool (Q) <---------+
+    |
+    | Stress
+    v
+  ℝ≥0 (B_inst)
+    |
+    | Health (population / time)
+    v
+  ℝ≥0 (B_long)
+    |
+    | Formal
+    v
+ Bool (K)
+```
+
+---
+
+### Paths
+
+#### Main forward path
+
+$$
+\begin{align*}
+X &\to G \to {Conj}(M) \to N \to \Gamma_0(N) \to \mathbb{H}\ (\tau\text{-update}) \\
+&\to {MT} \to \mathbb{C}^k\ (E_k) + \mathbb{C}^k\ (H_{{pred}}) \\
+&\to {Bool}\ (Q) \to \mathbb{R}_{\ge 0}\ (B_{{inst}}) \to \mathbb{R}_{\ge 0}\ (B_{{long}}) \to {Bool}\ (K)
+\end{align*}
+$$
+
+---
+
+### Logic Summary
+
+- $F, $\Sigma, $N_{{map}}, $\Gamma_{0{map}}, ${Act}: algebraic–modular dynamics.
+- $T, $E_k, $H_{{pred}}: Moonshine + equivariant prediction.
+- ${Cert}, ${Stress}, ${Health}, ${Formal}: certificate → health → formalizability.
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
