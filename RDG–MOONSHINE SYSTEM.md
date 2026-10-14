@@ -1904,6 +1904,114 @@ $\implies$ formalizable.
 - Cusp approach = divergence of $B_{{inst}}$.
 - Bounded orbit = formalizable state.
 
+## APPENDIX: Certificate Flow Diagram 
+
+### Inputs
+
+```
+          x ∈ X                     τ ∈ ℍ
+          |                         |
+          |                         |
+          v                         v
+   F(x) ∈ Griess              T_{g(x)}(τ) ∈ MT
+          |                         |
+          |                         |
+          v                         v
+   h(x) ∈ ℂ^k                 E_k(T_{g(x)}(τ)) ∈ ℂ^k
+```
+
+---
+
+### Side-by-Side Coefficient Flow
+
+| Griess Side (Prediction) | Moonshine Side (Extraction) |
+|--------------------------|-----------------------------|
+| $F(x)$               | $T_{g(x)}(\tau)$        |
+| $\downarrow\, H_{{pred}}$ | $\downarrow\, E_k$ |
+| $h(x) \in \mathbb{C}^k$ | $E_k(T_{g(x)}(\tau)) \in \mathbb{C}^k$ |
+
+---
+
+### Comparison Node
+
+```
+                 h(x)  ∈ ℂ^k
+                   \ 
+                    \ 
+                     \ 
+                      *----[ norm ≤ ε ? ]----*
+                     / 
+                    / 
+                   / 
+   E_k(T_{g(x)}(τ)) ∈ ℂ^k
+```
+
+---
+
+### Certificate Decision
+
+If
+
+- $C(x,\ \Phi)$ holds, **and**
+- $\bigl\| E_k\bigl(T_{g(x)}(\tau)\bigr) - h(x) \bigr\| \le \varepsilon$,
+
+then
+
+$$
+Q(x) = {true}.
+$$
+
+Otherwise
+
+$$
+Q(x) = {false}.
+$$
+
+---
+
+### Full Pipeline View
+
+```
+          x ∈ X
+            |
+            | F
+            v
+          Griess
+            |
+            | Σ
+            v
+        Conj(M)
+            |
+            | T_g
+            v
+           MT
+            |
+            | E_k
+            v
+     E_k(T_g(τ)) ∈ ℂ^k
+            |
+            |
+            | compare with
+            |
+            v
+     h(x) = H_pred(F(x)) ∈ ℂ^k
+            |
+            | norm ≤ ε ?
+            v
+          Q(x) ∈ Bool
+```
+
+---
+
+### Certificate Logic Summary
+
+- **Prediction:** $h(x)$ comes from a Monster-equivariant linear map on Griess.
+- **Extraction:** $E_k(T_g(\tau))$ comes from Moonshine coefficients.
+- **Certificate:** $Q(x)$ checks whether the two match within tolerance.
+- **Q-mode stress:** $f_Q(Q) = 0$ if $Q(x) = {true}$, else $> 0$.
+- **Health:** $B_{{inst}}$ uses $f_Q(Q)$ as one of its components.
+- **Formalizability:** bounded $B_{{inst}}$ $\iff$ bounded $\tau$ $\iff$ bounded Q-mode behavior.
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
