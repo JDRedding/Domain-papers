@@ -1033,14 +1033,238 @@ $$
 
 
 
+## APPENDIX: Spiral Geometric Diagram
 
+```
+                 (outer cusp → ∞)
+                        *
+                       * *
+                      *   *
+                     *     *
+                    *       *
+                   *         *
+                  *           *
+                 *             *
+                *               *
+               *                 *
+              *                   *
+             *                     *
+            *                       *
+           *                         *
+          *                           *
+         *                             *
+        *                               *
+       *                                 *
+      *                                   *
+     *                                     *
+    *                                       *
+   *                                         *
+  *                                           *
+ *                                             *
+*-----------------------------------------------*
+|                                               |
+|   SPIRAL FLOW OF A SINGLE PARTICLE p_t        |
+|                                               |
+*-----------------------------------------------*
+```
 
+---
 
+### Inner Core (State Space)
 
+```
+x_t ∈ X
+   |
+   |  (local jet + residual extraction)
+   v
+c(x_t), r(x_t)
+```
 
+---
 
+### First Spiral Turn (Griess Embedding)
 
+```
+   |
+   |  (linear lift into 196884-dim space)
+   v
+F(x_t) ∈ Griess
+   |
+   |  (Monster action twists the vector)
+   v
+Orb(F(x_t)), Stab(F(x_t))
+```
 
+$$
+F(x_t) = \iota\bigl(c(x_t),\ r(x_t)\bigr)
+$$
+
+---
+
+### Second Spiral Turn (Monster Class)
+
+```
+   |
+   |  (canonical stabilizer selection)
+   v
+s(F(x_t)) ∈ M
+   |
+   |  (collapse to conjugacy class)
+   v
+g(x_t) ∈ Conj(M)
+```
+
+$$
+g(x_t) = \Sigma\bigl(F(x_t)\bigr)
+$$
+
+---
+
+### Third Spiral Turn (Moonshine Series)
+
+```
+   |
+   |  (graded trace on V♮)
+   v
+T_{g(x_t)}(τ_t) ∈ MT
+```
+
+$$
+T_{g(x_t)}(\tau_t) =
+{Tr}_{V^\natural}\bigl(g(x_t)\, q^{L_0-1}\bigr)
+$$
+
+---
+
+### Fourth Spiral Turn (Congruence Level)
+
+```
+   |
+   |  (genus-zero group selection)
+   v
+Γ_g(x_t)
+   |
+   |  (minimal congruence level)
+   v
+N_t = N(g(x_t))
+```
+
+---
+
+### Fifth Spiral Turn (Modular Flow)
+
+```
+   |
+   |  (γ_t ∈ Γ_0(N_t))
+   v
+τ_{t+1} = γ_t · τ_t
+   |
+   |  (spiral ascent toward cusp)
+   v
+Im(τ_{t+1}) increases
+```
+
+---
+
+### Sixth Spiral Turn (Coefficient Extraction)
+
+```
+   |
+   |  (linear projection)
+   v
+E_k(T_{g(x_t)})
+```
+
+---
+
+### Seventh Spiral Turn (Prediction)
+
+```
+   |
+   |  (Monster-equivariant linear map)
+   v
+h(x_t)
+```
+
+$$
+h(x_t) = H_{{pred}}\bigl(F(x_t)\bigr)
+$$
+
+---
+
+### Eighth Spiral Turn (Certificate)
+
+```
+   |
+   |  (norm comparison)
+   v
+Q(x_t) ∈ {true, false}
+```
+
+$$
+Q(x_t)={true}
+\iff
+C(x_t,\Phi)
+\;{AND}\;
+\bigl\|E_k(T_{g(x_t)})-h(x_t)\bigr\|\le\varepsilon
+$$
+
+---
+
+### Outer Spiral (Stress → Health → Formalizability)
+
+```
+   |
+   |  (geom + Q + field stress)
+   v
+B_inst(p_t)
+   |
+   |  (population aggregation)
+   v
+B_long(P_t)
+   |
+   |  (boundedness test)
+   v
+K(x_t) ∈ {formalizable, non-formalizable}
+```
+
+$$
+B_{{inst}}(p_t) =
+\alpha\,f_{{geom}}(\tau_t) +
+\beta\,f_Q\bigl(Q(x_t)\bigr) +
+\gamma\,f_{{field}}(\Phi,x_t)
+$$
+
+---
+
+### Spiral Geometry Interpretation
+
+- Each layer expands the state outward into a higher structural domain.
+- Monster action introduces rotational symmetry → spiral twist.
+- Modular update introduces hyperbolic radial motion → spiral radius growth.
+- Cusp approach corresponds to the spiral escaping to infinity.
+- Formalizability corresponds to the spiral remaining bounded.
+
+---
+
+### Outer Cusp
+
+If ${Im}(\tau_t)\to\infty$, the spiral escapes the modular domain:
+
+- $q\to 0$
+- $j(\tau)\sim q^{-1}$
+- $B_{{inst}}\to\infty$
+- $K(x)={false}$
+
+---
+
+### Bound Spiral
+
+If ${Im}(\tau_t)$ stays bounded:
+
+- spiral remains inside a modular fundamental region
+- $B_{{inst}}$ bounded
+- $K(x)={true}$
 
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
