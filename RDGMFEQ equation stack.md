@@ -209,14 +209,16 @@ Q is a family of operators acting on flux fields and domains, restricting which 
 
 ### 6. MFE: solution operator and RDGMFEQ stack
 
-Define the MFE (macro‑field equation) solution operator:
+Define the macro‑field equation solution:
 
 - **RDG‑level operator $\Gamma_{\text{RDG}}$:** takes the geometric data (SID structure, domain, symmetry group) and flux constraints (PED, Q) and produces an abstract equation object $R$ (the continuity PDE with BC/IC).
-- **MFE‑level operator $\Gamma_{\text{MFE}}$:** maps $R$ to a solution set
+- **Balance operator $\Gamma_{\text{MFE}}$:** maps $R$ to a solution set
 
 $$
 \mathcal{S}(R)=\{(\rho,J)\mid \partial_t\rho+\partial_x J=0,\ \text{BC/IC and Q satisfied}\}.
 $$
+
+The phrase *macro‑field equation* is just a descriptive label for the PDE or balance law applying the RDG/SID/PED/Q/MFE machinery to. It is not the Momentum Flux Engine (MFE) operator, itself.
 
 The full RDGMFEQ stack can be summarized as:
 
