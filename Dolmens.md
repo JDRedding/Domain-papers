@@ -88,6 +88,12 @@ Dolmens served as:
 | **India (South)** | 1200–100 BCE | Slab‑cut entrance | Iron Age | Dolmens and cists; Andhra Pradesh examples  |
 | **Northern Europe** | Neolithic | Portal, passage | Passage graves | Long passages, cairns, segmented chambers |
 
+**Notes**
+- European chronology is regionally staggered (earlier Atlantic/Iberian/French examples; later Nordic ones).
+- Korean forms are morphologically distinct in important ways (table vs. southern-style, frequent lack of elaborate passages or shaped portals) even while sharing the basic orthostat-capstone chamber.
+- “Dolmen” is an umbrella term; many structures classified as such grade into cists, gallery graves, or passage graves.
+- Claims of astronomical alignment exist for some sites but are not universal or always rigorously demonstrated.
+
 ---
 
 ## APPENDIX: Dolmen Notation  
