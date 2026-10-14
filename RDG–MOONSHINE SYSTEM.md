@@ -2187,6 +2187,180 @@ $$
 - $B_{{inst}}$ = height on the landscape  
 - $K(x)$ = whether the trajectory stays in the valley or hits the cusp wall
 
+## APPENDIX: Formalizability Phase Portrait 
+
+### Coordinates
+
+- **Vertical axis:** ${Im}(\tau)$ (hyperbolic height)  
+- **Horizontal axis:** Q-mode (certificate truth)  
+- **Depth axis:** $\Phi$-stress (field curvature)
+
+---
+
+### Phase Portrait (2D Slice)
+
+```
+                    Im(τ)
+                      ↑
+                      |
+      cusp region     |                 ████████████████████
+      (non-formal)    |                █                    █
+                      |               █                      █
+                      |              █                        █
+                      |             █                          █
+                      |            █                            █
+                      |           █                              █
+                      |          █                                █
+                      |         █                                  █
+                      |        █                                    █
+                      |       █                                      █
+                      |      █                                        █
+                      |     █                                          █
+                      |    █                                            █
+                      |   █                                              █
+                      |  █                                                █
+                      | █                                                  █
+                      |█                                                    █
+──────────────────────┼────────────────────────────────────────────────────────→ Q-mode
+                      0 (true)                               1 (false)
+```
+
+---
+
+### Regions of the Phase Portrait
+
+#### 1. Bounded Region (Formalizable)
+
+```
+           Im(τ)
+             ↑
+             |
+             |    gentle basin
+             |   /~~~~~~~~~~~~\
+             |  /              \
+             | /                \
+             |/                  \
+─────────────┼──────────────────────→ Q-mode
+```
+
+**Characteristics:**
+
+- ${Im}(\tau)$ stays bounded.
+- $Q(x) = {true}$ most of the time.
+- $\Phi$-stress small or moderate.
+- $B_{{inst}}$ bounded.
+- $K(x) = {true}$.
+
+This is the **formalizable basin**.
+
+#### 2. Transition Region (Uncertain / Mixed)
+
+```
+           Im(τ)
+             ↑
+             |
+             |    saddle region
+             |   /~~~~\    /~~~~\
+             |  /      \  /      \
+             | /        \/        \
+             |/                    \
+─────────────┼──────────────────────→ Q-mode
+```
+
+**Characteristics:**
+
+- ${Im}(\tau)$ oscillates.
+- $Q(x)$ flips between true/false.
+- $\Phi$-stress moderate.
+- $B_{{inst}}$ sometimes spikes.
+- $K_{{inst}}$ may be true, $K_{{long}}$ uncertain.
+
+This is the **transition saddle**.
+
+#### 3. Cusp Region (Non-Formalizable)
+
+```
+                     ↑
+                     |
+                     |
+                     |
+                     |
+                     █  (infinite wall)
+                     █
+                     █
+                     █
+                     █
+─────────────────────┼────────→ Q-mode
+```
+
+**Characteristics:**
+
+- ${Im}(\tau) \to \infty$.
+- $q \to 0$.
+- $j(\tau) \to \infty$.
+- $Q(x)$ often false.
+- $B_{{inst}} \to \infty$.
+- $K(x) = {false}$.
+
+This is the **cusp attractor**.
+
+---
+
+### 3D Phase Portrait (with $\Phi$-Stress)
+
+Depth axis (coming out of page):
+
+- low $\Phi$-stress → valley  
+- high $\Phi$-stress → ridge
+
+```
+         Im(τ)
+           ↑
+           |
+           |     valley (Φ small)
+           |     \____________________
+           |      \                   \
+           |       \                   \
+           |        \                   \
+           |         \                   \
+           |          \                   \
+           |           \                   \
+           |            \                   \
+           |             \                   \
+           | ridge (Φ large) \________________\____  → Q-mode
+           |
+───────────┼──────────────────────────────────────────────→
+```
+
+---
+
+### Trajectory Types
+
+1. **Bounded orbit**  
+   $\tau$ stays in a compact region → formalizable.
+
+2. **Saddle orbit**  
+   $\tau$ oscillates between moderate height and near-cusp → borderline.
+
+3. **Cusp-driven orbit**  
+   $\tau$ climbs vertically → non-formalizable.
+
+---
+
+### Full Pipeline Overlay
+
+$$
+x \to F \to \Sigma \to g \to N \to \Gamma_0(N) \to \tau\text{-update} \to T_g \to E_k \to h(x) \to Q(x) \to B_{{inst}} \to B_{{long}} \to K(x)
+$$
+
+**Phase portrait interpretation:**
+
+- $\tau$-axis = modular height  
+- Q-axis = certificate truth  
+- $\Phi$-axis = field curvature  
+- $B_{{inst}}$ = height on the landscape  
+- $K(x)$ = whether the trajectory stays in the basin or hits the cusp wall
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
