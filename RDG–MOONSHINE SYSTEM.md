@@ -2012,6 +2012,181 @@ $$
 - **Health:** $B_{{inst}}$ uses $f_Q(Q)$ as one of its components.
 - **Formalizability:** bounded $B_{{inst}}$ $\iff$ bounded $\tau$ $\iff$ bounded Q-mode behavior.
 
+## APPENDIX:  Health Landscape Diagram
+
+### Coordinate Axes
+
+- **Vertical axis:** ${Im}(\tau)$ (hyperbolic height)  
+- **Horizontal axis:** Q-mode (certificate truth)  
+- **Depth axis:** $\Phi$-stress (field curvature)
+
+---
+
+### 3D View
+
+```
+                   Im(τ)
+                     ↑
+                     |
+                     |                 (cusp wall)
+                     |                 ████████████████████
+                     |                █                    █
+                     |               █                      █
+                     |              █                        █
+                     |             █                          █
+                     |            █                            █
+                     |           █                              █
+                     |          █                                █
+                     |         █                                  █
+                     |        █                                    █
+                     |       █                                      █
+                     |      █                                        █
+                     |     █                                          █
+                     |    █                                            █
+                     |   █                                              █
+                     |  █                                                █
+                     | █                                                  █
+                     |█                                                    █
+─────────────────────┼────────────────────────────────────────────────────────→ Q-mode
+                     0 (true)                               1 (false)
+```
+
+---
+
+### Depth ( $\Phi$ - Stress) Coming Out of the Page
+
+```
+         Im(τ)
+           ↑
+           |
+           |     valley (Φ small)
+           |     \____________________
+           |      \                   \
+           |       \                   \
+           |        \                   \
+           |         \                   \
+           |          \                   \
+           |           \                   \
+           |            \                   \
+           |             \                   \
+           | ridge (Φ large) \________________\____  → Q-mode
+           |
+───────────┼──────────────────────────────────────────────→
+```
+
+- low $\Phi$-stress → smooth valley  
+- high $\Phi$-stress → rising ridge
+
+---
+
+## Health Function over the Landscape
+
+$$
+B_{{inst}}(p_t)=
+\alpha \cdot {Im}(\tau_t)+
+\beta \cdot f_Q\bigl(Q(x_t)\bigr)+
+\gamma \cdot f_{{field}}(\Phi,\ x_t)
+$$
+
+#### Contour Lines
+
+**Low health**
+```
+       ________
+      /        \
+     /          \
+    /            \
+   /              \
+  /                \
+ /                  \
+/____________________\
+```
+
+**Medium health**
+```
+       ____________
+      /            \
+     /              \
+    /                \
+   /                  \
+  /                    \
+ /                      \
+/________________________\
+```
+
+**High health (danger)**
+```
+       █████████████████
+      █                █
+     █                  █
+    █                    █
+   █                      █
+  █                        █
+ █                          █
+ ████████████████████████████
+```
+
+---
+
+### Cusp Escape Region
+
+When ${Im}(\tau) \to \infty$:
+
+- vertical ascent in the diagram  
+- $B_{{inst}} \to \infty$  
+- landscape becomes a vertical cliff
+
+```
+                     ↑
+                     |
+                     |
+                     |
+                     |
+                     █  (infinite wall)
+                     █
+                     █
+                     █
+                     █
+─────────────────────┼────────→ Q-mode
+```
+
+---
+
+### Bounded Region (Formalizable)
+
+If $\tau$ stays bounded:
+
+- health contours remain finite  
+- landscape is a valley or plateau
+
+```
+           Im(τ)
+             ↑
+             |
+             |    gentle slope
+             |   /~~~~~~~~~~~~\
+             |  /              \
+             | /                \
+             |/                  \
+─────────────┼──────────────────────→ Q-mode
+```
+
+---
+
+### Full Pipeline Overlay
+
+$$
+x \to F \to \Sigma \to g \to N \to \Gamma_0(N) \to \tau\text{-update} \to T_g \to E_k \to h(x) \to Q(x) \to B_{{inst}} \to B_{{long}} \to K(x)
+$$
+
+**Landscape interpretation:**
+
+- $\tau$-axis = modular height  
+- Q-axis = certificate truth  
+- $\Phi$-axis = field curvature  
+- $B_{{inst}}$ = height on the landscape  
+- $K(x)$ = whether the trajectory stays in the valley or hits the cusp wall
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
