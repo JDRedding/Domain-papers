@@ -407,3 +407,230 @@ $$
 &\to \text{cusp-driven formalizability criterion}.
 \end{align*}
 $$
+
+## APPPENDIX: DIAGRAMMATIC VERSION
+
+**Pipeline:**
+
+$$
+\text{State Space} \to \text{Griess} \to \text{Monster} \to \text{Modular Group} \to \tau\text{-Dynamics} \to \text{Certificate} \to \text{Health}
+$$
+
+---
+
+### 1. Computational State
+
+```
+x ∈ X
+   |
+   |  (local jet + residual extraction)
+   v
+c(x), r(x) ∈ ℂ^{K+2} ⊕ ℝ^m
+```
+
+---
+
+### 2. Embedding into Griess
+
+```
+c(x), r(x)
+   |
+   |  (linear isomorphism ι)
+   v
+F(x) ∈ Griess  (dim 196884)
+```
+
+$$
+F(x) = \iota\bigl(c(x),\ r(x)\bigr)
+$$
+
+---
+
+### 3. Monster Action & Class Assignment
+
+```
+F(x)
+   |
+   |  (Monster action on Griess)
+   v
+Orb(F(x)) = { m · F(x) : m ∈ M }
+Stab_M(F(x)) = { m ∈ M : m · F(x) = F(x) }
+
+   |
+   |  (canonical stabilizer element)
+   v
+s(F(x)) ∈ Stab_M(F(x))
+
+   |
+   |  (take conjugacy class)
+   v
+g(x) = Σ(F(x)) ∈ Conj(M)
+```
+
+---
+
+### 4. Moonshine Series
+
+```
+g(x)
+   |
+   |  (graded trace on V♮)
+   v
+T_{g(x)}(τ) = Tr_{V♮}( g(x) q^{L_0 − 1} )
+q = exp(2πi τ)
+```
+
+---
+
+### 5. Conway–Norton Level
+
+```
+g(x)
+   |
+   |  (find Γ_g, the genus-zero group of T_g)
+   v
+Γ_g ⊂ SL₂(ℝ)
+
+   |
+   |  (minimal congruence level)
+   v
+N(g(x)) = min{ N > 0 : Γ₀(N) ⊆ Γ_g }
+
+   |
+   v
+N_t = N(g(x_t))
+```
+
+---
+
+### 6. Modular Update
+
+```
+τ_t ∈ ℍ
+   |
+   |  (choose γ_t ∈ Γ₀(N_t))
+   v
+τ_{t+1} = γ_t · τ_t
+```
+
+**Invariants:**
+
+$$
+j(\tau_{t+1}) = j(\tau_t)
+$$
+
+$$
+T_{g(x_t)}(\tau_{t+1}) = T_{g(x_t)}(\tau_t)
+$$
+
+---
+
+### 7. Extraction Operator
+
+```
+T_{g(x)}(τ)
+   |
+   |  (coefficient functionals φ_n)
+   v
+E_k(T_{g(x)}(τ)) = (a_{n₁}(g(x)), …, a_{n_k}(g(x))) ∈ ℂ^k
+```
+
+---
+
+### 8. Predicted Vector
+
+```
+F(x)
+   |
+   |  (Monster-equivariant linear map H_pred)
+   v
+h(x) = H_pred(F(x)) ∈ ℂ^k
+```
+
+---
+
+### 9. Certificate
+
+```
+E_k(T_{g(x)}(τ)),  h(x)
+   |
+   |  (comparison)
+   v
+Q(x) = true  ⇔  C(x, Φ) ∧ ‖E_k(T_{g(x)}(τ)) − h(x)‖ ≤ ε
+```
+
+---
+
+### 10. Stress & Health
+
+```
+τ_t, Q(x_t), Φ
+   |
+   |  (stress functions)
+   v
+B_inst(p_t) = α f_geom(τ_t)
+            + β f_Q(Q(x_t))
+            + γ f_field(Φ, x_t)
+```
+
+**Population:**
+
+$$
+B_{\text{long}}(P_t) = \frac{1}{n} \sum_{i=1}^n B_{\text{inst}}(p_{i,t})
+$$
+
+---
+
+### 11. Formalizability
+
+```
+{ τ_t }
+   |
+   |  (cusp detection)
+   v
+Im(τ_t) → ∞  ⇒  B_inst → ∞
+
+   |
+   v
+K(x) = false  ⇔  all admissible evolutions are cusp-driven
+```
+
+---
+
+### Full Pipeline Summary
+
+```
+X
+ → F
+ → Griess
+ → Σ
+ → Conj(M)
+ → N
+ → Γ₀(N)
+ → τ-update
+ → T_g
+ → E_k
+ → h(x)
+ → Q(x)
+ → B_inst
+ → B_long
+ → K(x)
+```
+
+---
+
+### Composite Flow (Compact)
+
+$$
+\begin{align*}
+x &\mapsto F(x) \in {Griess} \\
+&\mapsto g(x) = \Sigma(F(x)) \in {Conj}(M) \\
+&\mapsto N_t = N(g(x_t)) \\
+&\mapsto \tau_{t+1} = \gamma_t \cdot \tau_t \quad (\gamma_t \in \Gamma_0(N_t)) \\
+&\mapsto E_k(T_{g(x)}) \quad\text{vs}\quad h(x) \\
+&\mapsto Q(x) \\
+&\mapsto B_{{inst}}(p_t) \\
+&\mapsto B_{{long}}(P_t) \\
+&\mapsto K(x)
+\end{align*}
+$$
