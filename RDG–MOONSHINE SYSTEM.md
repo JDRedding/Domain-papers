@@ -2362,22 +2362,22 @@ $$
 - $K(x)$ = whether the trajectory stays in the basin or hits the cusp wall
 
 ## APPENDIX: Full Pipeline DAG (RDG–Moonshine)
-DAG (Directed Acyclic Graph)
+**DAG (Directed Acyclic Graph)**
 
 ### Nodes
 
 | Symbol | Description |
 |--------|-------------|
-| $X | computational state |
-| $G | Griess algebra |
-| ${Conj}(M) | Monster conjugacy classes |
-| $N | Moonshine level |
-| $\Gamma_0(N) | congruence subgroup |
-| $\mathbb{H} | upper half-plane (\(\tau\)) |
-| ${MT} | McKay–Thompson series |
-| $\mathbb{C}^k | coefficient vectors |
-| ${Bool} | certificate / formalizability |
-| $\mathbb{R}_{\ge 0} | health values |
+| $X$ | computational state |
+| $G$ | Griess algebra |
+| ${Conj}(M)$ | Monster conjugacy classes |
+| $N$ | Moonshine level |
+| $\Gamma_0(N)$ | congruence subgroup |
+| $\mathbb{H}$ | upper half-plane (\(\tau\)) |
+| ${MT}$ | McKay–Thompson series |
+| $\mathbb{C}^k$ | coefficient vectors |
+| ${Bool}$ | certificate / formalizability |
+| $\mathbb{R}_{\ge 0}$ | health values |
 
 ---
 
@@ -2416,29 +2416,29 @@ $$
        Conj(M)
        /     \
       /       \
- N_map        T
-    |          \
-    v           \
-    N            \
-    |             \
-    | Γ₀_map       \
-    v               \
-  Γ₀(N)              \
-    |                 \
-    | Act              \
-    v                  v
-    ℍ               MT
-    |               |
-    |               | E_k
-    |               v
-    |           ℂ^k (extracted)
-    |               ^
-    |               |
-    |           H_pred
-    |               |
-    |               |
-    v               |
- Bool (Q) <---------+
+ N_map         T
+    |           \
+    v            \
+    N             \
+    |              \
+    | Γ₀_map        \
+    v                \
+  Γ₀(N)               \
+    |                  \
+    | Act               \
+    v                    v
+    ℍ                   MT
+    |                    |
+    |                    | E_k
+    |                    v
+    |                  ℂ^k (extracted)
+    |                    ^
+    |                    |
+    |                 H_pred
+    |                   |
+    |                   |
+    v                   |
+ Bool (Q) <-------------+
     |
     | Stress
     v
@@ -2471,9 +2471,9 @@ $$
 
 ### Logic Summary
 
-- $F, $\Sigma, $N_{{map}}, $\Gamma_{0{map}}, ${Act}: algebraic–modular dynamics.
-- $T, $E_k, $H_{{pred}}: Moonshine + equivariant prediction.
-- ${Cert}, ${Stress}, ${Health}, ${Formal}: certificate → health → formalizability.
+- $F$, $\Sigma$, $N_{{map}}$, $\Gamma_{0{map}}$, ${Act}$: algebraic–modular dynamics.
+- $T$, $E_k$, $H_{{pred}}$: Moonshine + equivariant prediction.
+- ${Cert}$, ${Stress}$, ${Health}$, ${Formal}$: certificate → health → formalizability.
 
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
