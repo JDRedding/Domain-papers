@@ -13,6 +13,12 @@ Key structural traits:
 - Entrances ranging from simple openings to shaped portals or portholes  
 - Often originally covered by a mound (now eroded) 
 
+In the European megalithic tradition, the earliest megalithic graves were small, often closed aboveground slab chambers or simple dolmens (upright stones supporting a capstone or covered by a mound). Radiocarbon modeling places their appearance in the second half of the 5th millennium cal BCE (roughly 4800–4000 BCE), concentrated in northwest France, parts of the Atlantic Iberian coast, Catalonia, Corsica, and Sardinia.
+
+Pre-megalithic monumental earthen structures (e.g., long Passy-type graves) exist slightly earlier (~5000 BCE) but only in northwest France and lack stone chambers. Accessible (re-openable) megalithic graves appear a bit later, with one of the earliest securely dated examples at Prissé-la-Charrière in west-central France (~4370–4260 cal BCE).
+
+In regional sequences (Denmark/Scandinavia, parts of France and Iberia), simple or closed dolmens typically precede or overlap with the rise of passage graves. Passage graves proliferate later, especially in the first half of the 4th millennium BCE along the Atlantic façade. The claim that dolmens represent the earliest cyclopean stone chamber tombs from which passage graves and gallery graves later developed holds well for Europe. They are not the oldest monumental architecture overall, nor the earliest megaliths worldwide, but they are the earliest form of stone-slab chamber tombs in the European record.
+
 ---
 
 ## 🌍 **Geographic & Cultural Distribution**
@@ -66,6 +72,19 @@ Archaeological evidence across Europe and Asia supports the following techniques
   - Round portholes in gallery graves and stone cists 
 - **Cairns, forecourts, and passages** added in many European sites to create complex ritual architecture   
 
+**Korean dolmen construction techniques**
+
+Direct evidence is limited (no contemporary texts), so reconstructions rely on site features, tool marks, experimental archaeology, and ethnographic analogy. Key steps inferred for the dominant table-type (northern-style) and southern checkerboard/go-table types include:
+
+- **Site preparation**: Leveling the chosen location (often negotiated among groups).
+- **Stone acquisition**: Selection of natural blocks or quarrying by cutting grooves along the grain and inserting wooden wedges that swell with water to split the rock. Some stones show polishing or shaping; rope-binding dents appear on certain examples.
+- **Transport**: Rollers/logs, Y-shaped wooden sledges, and ropes. Ice-sledge use in winter is postulated. Capstones can weigh 50–200+ tons (some estimates reach ~280 tons) and were moved several kilometers. Experimental data suggest roughly 16–20 people for a 1-ton stone over 1.5 km with logs and ropes; scaling to tens or hundreds of tons required large coordinated teams (hundreds to potentially over a thousand for the heaviest).
+- **Assembly**: Erect propping stones (uprights) in prepared pits. Features include slight inward lean for stability, wedge stones for leveling, and “grengi” stacking of gathered stones without heavy trimming. A temporary earth ramp or mound is built to the height of the supports; the capstone is dragged or rolled up it, then the earth is dug out so the stone settles onto the uprights.
+- **Burial chamber**: A pit or stone-lined cist receives the body (often a single elite individual) plus grave goods (burnished pottery, polished stone daggers, later bronze weapons/ornaments). The chamber is sealed with slabs. Southern types more often cover an underground cist, with the capstone resting on smaller supporting stones or a low mound.
+- **Social context**: Construction was a community event requiring organized labor, food supply, and likely associated rites (pottery scatters around many sites).
+
+These methods parallel broader megalithic engineering (rollers, ramps, levers, coordinated manpower) while adapting to local stone and landscape.
+
 ---
 
 ## 🧭 **Context**
@@ -78,7 +97,7 @@ Dolmens served as:
 
 ---
 
-## 📘 **Comparison Table (Structured)**
+## 📘 **Comparison Tables**
 
 | Region | Chronology | Entrance Type | Cultural Pattern | Construction Notes |
 |-------|------------|---------------|------------------|--------------------|
@@ -93,6 +112,20 @@ Dolmens served as:
 - Korean forms are morphologically distinct in important ways (table vs. southern-style, frequent lack of elaborate passages or shaped portals) even while sharing the basic orthostat-capstone chamber.
 - “Dolmen” is an umbrella term; many structures classified as such grade into cists, gallery graves, or passage graves.
 - Claims of astronomical alignment exist for some sites but are not universal or always rigorously demonstrated.
+
+**Comparison: Dolmens vs. passage graves**
+
+| Feature              | Dolmen                                              | Passage grave                                              |
+|----------------------|-----------------------------------------------------|------------------------------------------------------------|
+| **Core structure**   | Single (or simple) chamber of orthostats + capstone(s) | Chamber(s) accessed by a distinct long, roofed megalithic passage |
+| **Entrance/access**  | Simple gap, portal-lintel, restricted aperture, or none; often short | Narrow passage explicitly designed for repeated entry     |
+| **Scale & complexity** | Typically smaller and simpler                      | Often larger; can have multiple sub-chambers              |
+| **Covering**         | Mound or cairn (frequently eroded)                  | Substantial mound or cairn                                |
+| **Burial practice**  | Single or limited collective; many early examples closed | Strongly collective; repeated interments over generations |
+| **Typical chronology (Europe)** | Earlier in sequences (simple forms mid–late 5th mill. BCE) | Often a later phase (widespread in 4th mill. BCE)        |
+| **Examples**         | Many Breton simple dolmens, portal tombs, Korean table-types | Newgrange, Maeshowe, many Irish/Scandinavian/French examples |
+
+There is a continuum rather than a sharp break. Some structures classified as dolmens have short passages or portals; portal tombs sit in between. In many regions, simple dolmens appear first and passage graves develop as a more elaborate form optimized for ongoing collective access. Both were usually covered by mounds originally and served ancestral/funerary roles, but passage graves more clearly emphasize re-entry and long-term reuse. Terminology varies by region and can be applied loosely (the chamber of a passage grave is sometimes still called a “dolmen”).
 
 ---
 
