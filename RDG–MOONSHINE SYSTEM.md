@@ -635,6 +635,166 @@ x &\mapsto F(x) \in {Griess} \\
 \end{align*}
 $$
 
+
+
+
+
+
+
+
+
+
+
+## APPENDIX: Graph-Theoretic Diagram
+
+## Vertices (Nodes)
+
+| Symbol | Description |
+|--------|-------------|
+| $X$ | computational state space |
+| $G$ | Griess algebra ($\dim 196884$) |
+| ${Conj}(M)$ | Monster conjugacy classes |
+| ${MT}$ | McKay–Thompson series space |
+| $N$ | positive integers (Moonshine levels) |
+| $\Gamma_0(N)$ | congruence subgroups |
+| $\mathbb{H}$ | upper half-plane |
+| $\mathbb{C}^k$ | $k$-dimensional coefficient space |
+| ${Bool}$ | $\{{true}, {false}\}$ |
+| $\mathbb{R}_{\ge 0}$ | nonnegative reals (health values) |
+| $\Pi$ | certificate slice space |
+
+---
+
+## Edges (Directed Maps)
+
+1. **State → Griess**  
+   $X \xrightarrow{F} G$
+
+2. **Griess → Monster class**  
+   $G \xrightarrow{\Sigma} {Conj}(M)$
+
+3. **Monster class → McKay–Thompson series**  
+   ${Conj}(M) \xrightarrow{T} {MT}$
+
+4. **Monster class → Moonshine level**  
+   ${Conj}(M) \xrightarrow{N} N$
+
+5. **Level → congruence subgroup**  
+   $N \xrightarrow{\Gamma_0} \Gamma_0(N)$
+
+6. **Modular update**  
+   $(\Gamma_0(N),\ \mathbb{H}) \xrightarrow{{action}} \mathbb{H}$  
+   $(\gamma,\ \tau) \mapsto \gamma \cdot \tau$
+
+7. **MT → extracted coefficients**  
+   ${MT} \xrightarrow{E_k} \mathbb{C}^k$
+
+8. **Griess → predicted coefficients**  
+   $G \xrightarrow{H_{{pred}}} \mathbb{C}^k$
+
+9. **Coefficient comparison → certificate**  
+   $(\mathbb{C}^k,\ \mathbb{C}^k) \xrightarrow{{compare}} {Bool}$  
+   $\bigl(E_k(T_g),\ h(x)\bigr) \mapsto Q(x)$
+
+10. **Certificate + $\tau$ + $\Phi$ → stress**  
+    $({Bool},\ \mathbb{H},\ \Phi) \xrightarrow{{stress}} \mathbb{R}_{\ge 0}$
+
+11. **Stress → health**  
+    $\mathbb{R}_{\ge 0} \xrightarrow{{aggregate}} \mathbb{R}_{\ge 0}$
+
+12. **Health → formalizability**  
+    $\mathbb{R}_{\ge 0} \xrightarrow{{boundedness}} {Bool}$  
+    $B_{{inst}}$ or $B_{{long}}$ bounded? $\to K(x)$
+
+---
+
+## Graph Structure (Full Pipeline)
+
+```
+ X
+ ↓ F
+ G
+ ↓ Σ
+Conj(M)
+ ↓ N
+ N
+ ↓ Γ_0
+Γ_0(N)
+ ↓ action
+ℍ  (τ-dynamics)
+ ↓ T_g
+MT
+ ↓ E_k
+ℂ^k   ← H_pred ← G
+   \           /
+    \         /
+      compare
+        ↓
+      Bool (Q)
+        ↓
+   stress functions
+        ↓
+     ℝ_{\ge0} (B_inst)
+        ↓
+   population aggregate
+        ↓
+     ℝ_{\ge0} (B_long)
+        ↓
+   boundedness test
+        ↓
+     Bool (K)
+```
+
+---
+
+## Multigraph View (All Edges)
+
+```
+X --F--> G --Σ--> Conj(M) --N--> N --Γ_0--> Γ_0(N)
+Γ_0(N) × ℍ --action--> ℍ --T_g--> MT --E_k--> ℂ^k
+G --H_pred--> ℂ^k
+(ℂ^k × ℂ^k) --compare--> Bool (Q)
+(Q × τ × Φ) --stress--> ℝ_{\ge0} --aggregate--> ℝ_{\ge0} --bounded--> Bool (K)
+```
+
+---
+
+## Paths
+
+### Main forward path
+
+$$
+X \to G \to {Conj}(M) \to N \to \Gamma_0(N) \to \tau\text{-update} \to {MT} \to \mathbb{C}^k \to Q \to B_{{inst}} \to B_{{long}} \to K
+$$
+
+### Feedback path
+$$
+G \to \mathbb{C}^k \to Q \to \text{stress} \to \text{health} \to \text{formalizability}
+$$
+
+### Certificate subgraph
+$$
+\begin{align*}
+G &\to {Conj}(M) \to {MT} \to \mathbb{C}^k \\
+G &\to \mathbb{C}^k \\
+(\mathbb{C}^k \times \mathbb{C}^k) &\to {Bool}
+\end{align*}
+$$
+
+### Modular subgraph
+$$
+{Conj}(M) \to N \to \Gamma_0(N) \to \mathbb{H} \to {MT}
+$$
+
+### Health subgraph
+$$
+(Q,\ \tau,\ \Phi) \to \text{stress} \to B_{{inst}} \to B_{{long}} \to K
+$$
+
+---
+
+This is the complete graph-theoretic representation of the RDG–Moonshine system.
+
 ## APPENDIX: Continuum-Limit Derivation 
 Continuum-Limit Derivation of the Modular Update
 
