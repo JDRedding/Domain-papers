@@ -2079,7 +2079,7 @@ $$
 
 ---
 
-## Health Function over the Landscape
+### Health Function over the Landscape
 
 $$
 B_{{inst}}(p_t)=
