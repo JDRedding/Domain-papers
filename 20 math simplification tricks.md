@@ -299,7 +299,7 @@ $$
 - **SID‑Interaction:** divide both by common factor  
 - **SID‑Dynamics:** `p:q` $\leftrightarrow$ `p/HCF : q/HCF`.
 
-HCF is Highest Common Factor,
+HCF is Highest Common Factor.
 
 ---
 
