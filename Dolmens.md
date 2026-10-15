@@ -132,17 +132,15 @@ There is a continuum rather than a sharp break. Some structures classified as do
 ## APPENDIX: Dolmen Notation  
 (Orthostatic Collective Chamber with Restricted Entrance)
 
-The following invariants are stipulated rather than independently tested, so different researchers could define the core properties differently and reach different conclusions about what counts as “structure-preserving”, but the general framework works sufficiently to begin structural research. Additions social, symbolic, and chronological detail in favor of abstracts away most relational geometry, can help clarify engineering commonalities but risks over-specifying cultural meaning. Construction techniques and labor estimates remain conventional archaeological inferences; the PED-Triad merely re-expresses them as force operators.
+The invariants used here are stipulated rather than independently tested. Different researchers could therefore define the core properties differently and reach different conclusions about what counts as structure-preserving. The framework is nonetheless offered as a general tool sufficient to begin systematic structural comparison. Adding social, symbolic, and chronological detail (rather than abstracting it away in favor of relational geometry) can help clarify engineering commonalities, though it risks over-specifying cultural meaning. Construction techniques and labor estimates remain conventional archaeological inferences; the PED-Triad merely re-expresses them as force operators.
 
 Convergence is expressed as:
 
-```
-∀ regions r_i, r_j :
-  Dolmen_r_i ≅ Dolmen_r_j under invariant-preserving morphisms
-```
+$$
+\forall \text{ regions } r_i, r_j : \quad \text{Dolmen}_{r_i} \cong \text{Dolmen}_{r_j} \text{ under invariant-preserving morphisms}
+$$
 
-Meaning:  
-Different cultures independently instantiate the same relational object class.
+with the meaning that different cultures independently instantiate the same relational object class.
 
 ---
 
