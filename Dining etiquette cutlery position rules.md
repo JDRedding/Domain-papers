@@ -287,3 +287,42 @@ Intermediate states are usually unrecognized.
   - If $\Sigma = \Sigma_{\text{pause}}$: retain plate.  
   - If $\Sigma = \Sigma_{\text{fin}}$: clear plate.
 
+## APPENDIX: Non-Western dining etiquette
+
+Outside formal Western multi-course service, the emphasis is usually on hierarchy, hospitality, cleanliness of hands, communal sharing, and avoiding specific cultural taboos rather than a reliable binary utensil code for servers. Observing locals and asking politely is the safest approach.
+
+Non-Western dining etiquette generally lacks a standardized “cutlery protocol” like the Western binary Pause/Finished system. Communication with hosts or servers is often verbal, hierarchical, or based on food-related customs (how much is left, hand placement, or specific taboos) rather than precise utensil geometry. Practices vary widely by culture, region, formality, and whether the setting is home, restaurant, or formal event. Urban and tourist-oriented places frequently accommodate Western habits.
+
+### East Asia 
+**Chopstick Cultures: China, Japan, Korea**
+
+Chopsticks are central, but rules differ by country in design (Chinese longer/blunter for shared dishes; Japanese shorter/pointier for precision; Korean often metal and paired with a spoon) and exact manners.
+
+Shared principles and taboos include:
+- Never stick chopsticks upright in rice (resembles funeral incense).
+- Do not pass food directly from chopsticks to chopsticks (especially in Japan; echoes funeral rites).
+- Avoid pointing, waving, drumming, or digging through shared dishes. Use serving chopsticks or spoons when available (common in Chinese settings).
+
+Resting and “finished” signals are less formalized than Western ones. In Japan, chopsticks go on a rest (*hashioki*) when pausing; laying them across a bowl can sometimes indicate finished, but the preferred end-of-meal cues are placing them neatly (tips left) and saying “Gochisōsama” (thank you for the meal). China traditionally viewed leaving some food as polite (host provided enough), though finishing is more common today and takeaway (“dàbāo”) is normal. Korea emphasizes not lifting the rice bowl and finishing after elders. Verbal thanks, hierarchy (elders eat first), and not wasting rice often matter more than geometric signals.
+
+### South Asia 
+**India and Neighbors**
+
+Traditional meals (especially home or thali-style) use the right hand only—the left is considered unclean for hygiene reasons. Food is mixed and scooped with the fingertips or using bread (roti, naan) as a utensil; cutlery is optional or secondary in many settings. Wash hands before and after.
+
+Finishing the food on your plate is generally preferred as a sign of appreciation and to avoid waste (food is often viewed with respect). Declining more is done verbally or by covering the plate with a hand. Hierarchy (elders first), accepting offered food graciously, and not criticizing the meal are key. Modern restaurants freely provide cutlery.
+
+### Middle East, North Africa, and Ethiopia
+
+Right-hand-only eating is widespread (Islamic and regional custom; left for hygiene). Meals are often communal from shared platters. Bread (pita, injera in Ethiopia) functions as the primary utensil for scooping. Wash hands thoroughly before and after; hosts often provide water for this.
+
+In Ethiopia, eat only from the section of the shared injera platter in front of you and accept *gursha* (a host placing a bite in your mouth) as a gesture of hospitality. There is no utensil-based “finished” signal—stopping when full is fine, and the meal is social. Hospitality norms (host offers repeatedly; guest declines politely) dominate over geometric cues.
+
+### Latin America and Other Notes
+
+Formal dining often follows European (Continental) utensil habits more than American zigzag style, but signaling is looser. The parallel “finished” position is known in some places, yet servers commonly wait for verbal cues or natural pauses rather than strict geometry. Meals emphasize social lingering (*sobremesa*), later timing, and hospitality over rapid plate-clearing efficiency.
+
+In many parts of Africa and Southeast Asia outside East Asia, right-hand rules, communal eating, and hand-washing apply similarly to Middle Eastern or Indian practices. Tourist restaurants worldwide adapt heavily to Western expectations.
+
+
+
