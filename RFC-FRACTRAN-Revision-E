@@ -1,0 +1,428 @@
+RFC-FRACTRAN-Revision-E
+Document Type: Specification
+Status: Draft Revision E
+Category: Informational
+Author: JD Redding
+
+=====================================================================
+1. INTRODUCTION
+=====================================================================
+This document defines the FRACTRAN computational model, including:
+  - Mathematical semantics
+  - Fraction normalization
+  - Input validation rules
+  - Arbitrary-precision arithmetic requirements
+  - Canonical binary ABI
+  - ExecutionPolicy
+  - Error taxonomy
+  - Execution and trace semantics
+  - Conformance requirements
+  - Security considerations
+  - RDG mapping (informational)
+  - Test vectors
+
+This revision addresses all issues identified in the Revision D
+evaluation, including truncation, nontermination wording, lexical
+consistency, little-endian BigInt canonicality, and decoder
+normalization policy.
+
+=====================================================================
+2. MATHEMATICAL SEMANTICS
+=====================================================================
+
+---------------------------------------------------------------------
+2.1 Types
+---------------------------------------------------------------------
+State:
+    Arbitrary-precision positive integer n ∈ ℤ_{>0}.
+
+Fraction:
+    Positive rational p/q with p > 0, q > 0.
+    Fractions MUST be normalized before execution:
+        g = gcd(p, q)
+        p' = p / g
+        q' = q / g
+    The reduced form (p'/q') is the effective fraction.
+
+Program:
+    Ordered finite list [f1, f2, ..., fm], each fi normalized.
+
+Register:
+    v_p(n) = exponent of prime p in factorization of n.
+
+---------------------------------------------------------------------
+2.2 Applicability
+---------------------------------------------------------------------
+A fraction fi = p'/q' applies iff q' divides n.
+
+---------------------------------------------------------------------
+2.3 Update
+---------------------------------------------------------------------
+n := n * (p'/q')
+v(n') = v(n) + v(p') - v(q')
+
+---------------------------------------------------------------------
+2.4 Arithmetic
+---------------------------------------------------------------------
+All arithmetic MUST be exact and unbounded.
+Implementations MAY impose resource limits but MUST NOT silently wrap,
+truncate, or approximate integer values.
+
+---------------------------------------------------------------------
+2.5 Execution Model
+---------------------------------------------------------------------
+Restart-scan semantics:
+    After each successful application, scanning restarts at the first
+    fraction.
+
+Transition step:
+    One successful application of a fraction.
+
+Scan step:
+    One applicability test of a single fraction against the current state.
+
+Normative execution rule:
+    Repeat:
+        Let i be the least index in {1, ..., m} such that q_i' divides n.
+        If no such i exists, halt.
+        Otherwise:
+            n := n * (p_i' / q_i')
+            Increment the transition-step counter by 1.
+            Continue from the beginning of the scan.
+
+---------------------------------------------------------------------
+2.6 Edge Cases
+---------------------------------------------------------------------
+Empty program:
+    Halts immediately.
+
+State = 1:
+    Only fractions with reduced denominator 1 apply.
+
+Denominator = 1:
+    Always applicable after normalization.
+
+Always-applicable fraction:
+    A fraction with reduced denominator 1 is applicable at every
+    positive-integer state.
+
+Nontermination:
+    If some fraction is applicable at every reachable state, execution
+    does not halt. In particular, any program containing 1/1 cannot
+    halt. ExecutionPolicy limits are the only defined mechanism for
+    bounded execution of such programs.
+
+Nontermination (general):
+    FRACTRAN is Turing-complete; implementations MUST distinguish
+    halting from execution limits.
+
+=====================================================================
+3. TEXTUAL INTERCHANGE FORMAT
+=====================================================================
+
+---------------------------------------------------------------------
+3.1 Character Set
+---------------------------------------------------------------------
+ASCII only. Any non-ASCII byte MUST trigger InvalidInput.
+
+---------------------------------------------------------------------
+3.2 Lexical Tokens (ABNF)
+---------------------------------------------------------------------
+DIGIT      = "0" / "1" / "2" / "3" / "4" / "5" / "6" / "7" / "8" / "9"
+INT        = 1*DIGIT
+WS         = *( " " / "\t" / "\n" )
+SLASH      = "/"
+COMMA      = ","
+LBRACKET   = "["
+RBRACKET   = "]"
+
+FRACTION   = INT SLASH INT
+PROGRAM    = LBRACKET WS [ FRACTION *( WS COMMA WS FRACTION ) ] WS RBRACKET
+STATE      = INT
+
+INPUT      = %s"state" WS STATE WS %s"program" WS PROGRAM
+
+The literals "state" and "program" are case-sensitive.
+
+---------------------------------------------------------------------
+3.3 Validation Rules
+---------------------------------------------------------------------
+STATE MUST be > 0.
+Fraction numerator MUST be > 0.
+Fraction denominator MUST be > 0.
+Zero denominators MUST be rejected.
+Zero numerators MUST be rejected.
+Leading zeros MAY appear but MUST NOT affect numeric value.
+Empty program [] MUST be accepted.
+Internal whitespace inside FRACTION is invalid.
+
+=====================================================================
+4. CANONICAL BINARY ABI
+=====================================================================
+
+---------------------------------------------------------------------
+4.1 Fixed-width Fields
+---------------------------------------------------------------------
+UINT64:
+    8 bytes, little-endian.
+
+---------------------------------------------------------------------
+4.2 BigInt Encoding
+---------------------------------------------------------------------
+BigInt:
+    UINT64 length_in_bytes
+    BYTE[length_in_bytes] magnitude (little-endian)
+
+Rules:
+    - length_in_bytes MUST be > 0
+    - For a little-endian magnitude byte array B of length L > 0,
+      B[L - 1] MUST be nonzero
+    - magnitude MUST represent a positive integer
+    - zero-length BigInt is invalid
+    - BigInt value zero is invalid in FRACTRAN_OBJ
+    - A magnitude consisting of all zero bytes (even when
+      length_in_bytes > 0) is non-canonical and MUST be rejected
+
+Decoder MUST:
+    - reject length_in_bytes that exceeds remaining bytes
+    - reject magnitude whose most-significant byte is zero
+    - reject zero magnitude
+    - reject all-zero magnitude
+    - reject trailing bytes after full FRACTRAN_OBJ
+
+---------------------------------------------------------------------
+4.3 Fraction Encoding
+---------------------------------------------------------------------
+FRACTION_BIN = BigInt numerator
+               BigInt denominator
+
+Decoder MUST:
+    - reject zero numerator or denominator
+    - accept unreduced fractions
+    - normalize each fraction before execution
+
+Encoders MAY transmit non-normalized fractions.
+Decoders MUST normalize before execution.
+The normalized fraction is the effective fraction for applicability,
+state update, and trace reporting.
+
+A conforming decoder MAY store fractions in either reduced or
+unreduced form internally after validation, provided the normalized
+form is used for all applicability tests and updates.
+
+---------------------------------------------------------------------
+4.4 Program Encoding
+---------------------------------------------------------------------
+PROGRAM_BIN = UINT64 count
+              FRACTION_BIN[count]
+
+Deterministic count check:
+    If count > remaining_bytes / 4, using integer floor division,
+    return DecoderError.
+
+Do NOT compute count * 4 in fixed-width arithmetic.
+
+Implementations MAY impose MAX_PROGRAM_COUNT.
+
+---------------------------------------------------------------------
+4.5 State Encoding
+---------------------------------------------------------------------
+STATE_BIN = BigInt state_value
+
+---------------------------------------------------------------------
+4.6 Full ABI Object
+---------------------------------------------------------------------
+FRACTRAN_OBJ = STATE_BIN
+               PROGRAM_BIN
+
+=====================================================================
+5. EXECUTION POLICY (NORMATIVE)
+=====================================================================
+ExecutionPolicy:
+    max_transition_steps : optional UINT64
+    max_scan_steps       : optional UINT64
+    max_memory_bytes     : optional UINT64
+    max_trace_entries    : optional UINT64
+    emit_search_trace    : boolean
+    emit_state_trace     : boolean
+
+Rules:
+    - Omitted limits mean unlimited.
+    - Limit = 0 means no execution.
+    - StepLimitReached counts transition steps only.
+    - max_scan_steps counts individual applicability tests
+      (one test of one fraction against the current state).
+      A single transition may consume multiple scan steps.
+    - Trace truncation MUST be indicated.
+    - Trace emission MAY trigger ResourceLimitReached.
+    - Memory accounting includes the current state, program storage,
+      and any active trace buffer.
+
+=====================================================================
+6. ERROR MODEL (NORMATIVE)
+=====================================================================
+InvalidInput:
+    Malformed textual input.
+    Zero numerator/denominator in text.
+    Nonpositive state in text.
+
+DecoderError:
+    Truncated binary record.
+    Noncanonical BigInt.
+    Zero numerator/denominator in binary.
+    Zero state in binary.
+    Overflow in length calculation.
+    Trailing bytes after full FRACTRAN_OBJ.
+    Invalid program count.
+
+ExecutionLimitReached:
+    max_transition_steps or max_scan_steps exceeded.
+
+ResourceLimitReached:
+    max_memory_bytes or max_trace_entries exceeded.
+
+InternalArithmeticError:
+    Unexpected failure of exact-arithmetic backend.
+
+Limit exhaustion MUST NOT be reported as halting.
+
+=====================================================================
+7. EXECUTION TRACE FORMAT
+=====================================================================
+
+---------------------------------------------------------------------
+7.1 Transition Trace (Normative)
+---------------------------------------------------------------------
+TRACE_ENTRY = {
+    step: UINT64 (1-based)
+    state_before: BigInt
+    selected_fraction_index: UINT64 (1-based)
+    normalized_numerator: BigInt
+    normalized_denominator: BigInt
+    state_after: BigInt
+}
+
+---------------------------------------------------------------------
+7.2 Search Trace (Optional Diagnostic)
+---------------------------------------------------------------------
+SEARCH_EVENT = {
+    fraction_index: UINT64 (1-based)
+    applicable: boolean
+}
+
+---------------------------------------------------------------------
+7.3 Halt Event
+---------------------------------------------------------------------
+HALT_EVENT = {
+    halted: true
+    state: BigInt
+    status: HALTED | TRANSITION_LIMIT_REACHED |
+            SCAN_LIMIT_REACHED | RESOURCE_LIMIT_REACHED
+}
+
+---------------------------------------------------------------------
+7.4 Trace Sequence
+---------------------------------------------------------------------
+TRACE = {
+    entries: TRACE_ENTRY[]
+    search_events: optional SEARCH_EVENT[]
+    halt: HALT_EVENT
+}
+
+---------------------------------------------------------------------
+7.5 Interoperability
+---------------------------------------------------------------------
+Trace encoding is NOT part of the binary ABI.
+Traces are host-language values only.
+Their serialization is host-defined.
+
+=====================================================================
+8. CONFORMANCE REQUIREMENTS
+=====================================================================
+Core conformance MUST implement:
+    - core execution semantics
+    - normalization
+    - exact arithmetic
+    - restart-scan
+    - canonical ABI decoding
+
+Policy conformance SHOULD implement:
+    - ExecutionPolicy
+    - transition trace
+
+Trace conformance MAY implement:
+    - search trace
+    - RDG mapping
+
+=====================================================================
+9. SECURITY CONSIDERATIONS
+=====================================================================
+Implementations MUST guard against:
+    - excessive memory consumption
+    - excessive CPU consumption
+    - malicious ABI length fields
+    - integer overflow in allocation-size calculations
+    - excessive trace output
+
+Limit exhaustion MUST NOT be reported as halting.
+
+=====================================================================
+10. RDG MAPPING (INFORMATIONAL)
+=====================================================================
+SID.Structure:
+    Prime-exponent vector v(n), finite support.
+
+SID.Interaction / PED.Power:
+    Guard q_i' divides n.
+
+PED.Evaluation:
+    Select smallest i such that q_i' divides n.
+
+SID.Dynamics / PED.Dynamics:
+    v(n') = v(n) + v(p_i') - v(q_i').
+
+Global system:
+    Priority-ordered, guarded, piecewise affine dynamical system.
+
+=====================================================================
+11. TEST VECTORS
+=====================================================================
+
+---------------------------------------------------------------------
+11.1 Simple Halting Program
+---------------------------------------------------------------------
+state 2
+program [3/2, 1/3]
+Expected: halts at 1 after one transition (2 * 3/2 = 3, then 3 * 1/3 = 1).
+
+---------------------------------------------------------------------
+11.2 Identity Nontermination
+---------------------------------------------------------------------
+state 1
+program [1/1]
+Expected: nontermination; any finite ExecutionPolicy limit MUST
+trigger ExecutionLimitReached or ResourceLimitReached, never HALTED.
+
+---------------------------------------------------------------------
+11.3 Empty Program
+---------------------------------------------------------------------
+state 42
+program []
+Expected: immediate halt at 42.
+
+---------------------------------------------------------------------
+11.4 PRIMEGAME First Power of 2
+---------------------------------------------------------------------
+state 2
+program [17/91, 78/85, 19/51, 23/38, 29/33, 77/29, 95/23,
+         77/19, 1/17, 11/13, 13/11, 15/2, 1/7, 55/1]
+Expected first pure power of 2 after initial 2 is 4 = 2^2
+(after 19 transition steps).
+
+=====================================================================
+12. CONCLUSION
+=====================================================================
+Revision E is complete. It incorporates all corrections from the
+Revision D evaluation, restores the full normative sections, and
+provides a consistent, implementation-ready specification of the
+FRACTRAN computational model.
