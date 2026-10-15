@@ -450,7 +450,181 @@ Expected first pure power of 2 after initial 2 is 4 = 2^2
 (after 19 transition steps).
 
 =====================================================================
-12. CONCLUSION
+12. PRIMEGAME: Canonical Prime-Generation Example (Informational)
+=====================================================================
+
+---------------------------------------------------------------------
+12.1 Types and Core Variables
+---------------------------------------------------------------------
+State:
+    n ∈ ℤ_{>0}, arbitrary-precision positive integer.
+
+Fraction:
+    f_i = p_i / q_i, with p_i > 0, q_i > 0.
+    Effective fraction is normalized:
+        g_i = gcd(p_i, q_i)
+        p_i' = p_i / g_i
+        q_i' = q_i / g_i
+
+Program:
+    F = [f_1, f_2, ..., f_m], ordered finite list of fractions.
+    For PRIMEGAME:
+        F = [
+            17/91,
+            78/85,
+            19/51,
+            23/38,
+            29/33,
+            77/29,
+            95/23,
+            77/19,
+            1/17,
+            11/13,
+            13/11,
+            15/14,
+            15/2,
+            55/1
+        ]
+
+Registers (Prime-Exponent View):
+    For each prime p:
+        v_p(n) = exponent of p in the factorization of n.
+    In PRIMEGAME:
+        - v_2(n) is the "output register" (exponent of 2).
+        - Other primes (3, 5, 7, 11, ...) act as internal 
+          counters,flags, and loop variables.
+
+---------------------------------------------------------------------
+12.2 Execution Model (Restart-Scan)
+---------------------------------------------------------------------
+Normative rule (from RFC-FRACTRAN-Revision-E):
+
+    Repeat:
+        Let i be the least index in {1, ..., m} such that q_i' 
+         divides n.
+        If no such i exists, halt.
+        Otherwise:
+            n := n * (p_i' / q_i')
+            Restart scanning from i = 1.
+
+All arithmetic MUST be exact and unbounded.
+Fractions MUST be normalized before applicability and update.
+
+---------------------------------------------------------------------
+12.3 PRIMEGAME Initial Conditions
+---------------------------------------------------------------------
+Initial state:
+    n_0 = 2
+
+Program:
+    F as listed above, in the given order.
+
+---------------------------------------------------------------------
+12.4 Behavior Overview
+---------------------------------------------------------------------
+Under the restart-scan semantics:
+
+    - The state n encodes multiple logical registers via prime 
+       exponents.
+    - The denominators q_i' act as guards: a fraction applies iff
+       q_i' divides n.
+    - The numerators p_i' implement affine updates on the exponent
+       vector v(n).
+
+PRIMEGAME simulates a multi-register machine that:
+    - Iterates over successive integers (encoded in prime exponents).
+    - Performs a form of trial division / primality testing using 
+       guarded updates.
+    - When the simulated integer is prime, it enters a branch that
+       multiplies the state by a fraction whose net effect is to
+       increase v_2(n) by 1, producing a pure power of 2.
+
+---------------------------------------------------------------------
+12.5 Output Pattern
+---------------------------------------------------------------------
+Among the many intermediate states, the program produces pure powers
+of 2:
+
+    2^2, 2^3, 2^5, 2^7, 2^11, 2^13, ...
+
+These exponents:
+
+    2, 3, 5, 7, 11, 13, ...
+
+are exactly the successive prime numbers.
+
+From the RFC test vector (11.4):
+
+    state 2
+    program [17/91, 78/85, 19/51, 23/38, 29/33, 77/29, 95/23,
+             77/19, 1/17, 11/13, 13/11, 15/2, 1/7, 55/1]
+    Expected first pure power of 2 after initial 2 is 4 = 2^2
+    (after 19 transition steps).
+
+---------------------------------------------------------------------
+12.6 Mechanism in Prime-Exponent Terms
+---------------------------------------------------------------------
+Let v(n) be the vector of prime exponents:
+
+    v(n) = (v_2(n), v_3(n), v_5(n), v_7(n), v_11(n), ...)
+
+Each transition step applies:
+
+    v(n') = v(n) + v(p_i') - v(q_i')
+
+for the selected fraction f_i.
+
+In PRIMEGAME:
+    - Certain fractions increment v_2(n) when a simulated counter
+       (encoded in other primes) reaches a prime value.
+    - Other fractions implement the "looping" and "testing"
+       structure, moving exponents between primes to represent
+       control flow.
+
+Thus, the global system is:
+
+    - Priority-ordered (smallest applicable index i is chosen),
+    - Guarded (q_i' divides n is the applicability condition),
+    - Piecewise affine (each fraction induces an affine update 
+       on v(n)).
+
+This matches the RDG mapping in the RFC:
+
+    SID.Structure: prime-exponent vector v(n), finite support.
+    SID.Interaction / PED.Power: guard q_i' divides n.
+    PED.Evaluation: select smallest i such that q_i' divides n.
+    SID.Dynamics / PED.Dynamics: v(n') = v(n) + v(p_i') - v(q_i').
+
+---------------------------------------------------------------------
+12.7 Conformance and Limits
+---------------------------------------------------------------------
+- Fractions MUST be normalized before execution.
+- Arithmetic MUST be exact and unbounded.
+- Implementations MUST distinguish halting from execution limits.
+
+PRIMEGAME is nonterminating:
+    - There is always some fraction applicable at every reachable
+       state.
+    - Any finite ExecutionPolicy limit (max_transition_steps, 
+       max_scan_steps, max_memory_bytes, max_trace_entries) MUST
+       report ExecutionLimitReached or ResourceLimitReached, never
+       HALTED.
+
+---------------------------------------------------------------------
+12.8 Security Considerations
+---------------------------------------------------------------------
+Because PRIMEGAME is nonterminating and can produce very large
+integers, implementations MUST guard against:
+
+    - excessive memory consumption
+    - excessive CPU consumption
+    - malicious or extreme trace output
+
+These requirements align with the RFC’s security considerations
+section.
+
+=====================================================================
+13. CONCLUSION
 =====================================================================
 Revision E is complete. It incorporates all corrections from the
 Revision D evaluation, restores the full normative sections, and
