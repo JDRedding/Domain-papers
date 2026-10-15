@@ -258,3 +258,10 @@ Stack’s d’Alembert quotient:
 
 Same operator class:  
 **geometry‑hiding, many‑to‑one, invariant‑emitting, sealed.**
+
+# **8. Future Work**
+
+- Give an explicit rule or isomorphism defining \(\square\) on equivalence classes.
+- Prove \(Q=\square\circ q\) is well-defined and universal for the quotient.
+- Recover at least one standard object (gauge-reduced solutions or reduced phase space) via explicit isomorphism.
+- State the spaces and regularity conditions used.
