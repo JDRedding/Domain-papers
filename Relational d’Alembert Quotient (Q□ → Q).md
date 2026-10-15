@@ -264,4 +264,4 @@ Same operator class:
 - Explicit rule or isomorphism defining $\square$ on equivalence classes.
 - $Q=\square\circ q$ well-defined and universal for quotient.
 - Standard object (gauge-reduced solutions or reduced phase space) via explicit isomorphism.
-- State the spaces and regularity conditions.
+- Spaces and regularity conditions.
