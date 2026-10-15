@@ -31,10 +31,15 @@ evaluation, including truncation, nontermination wording, lexical
 consistency, little-endian BigInt canonicality, and decoder
 normalization policy.
 
+=====================================================================
+2. MATHEMATICAL SEMANTICS
+=====================================================================
 How it works (in plain language)
-You have:A single whole number that holds the entire state of the
-program (think of it as the computer’s memory). A fixed list of 
-fractions (the “program” or list of instructions).
+
+You have: 
+- A single whole number that holds the entire state of the program 
+  (think of it as the computer’s memory). 
+- A fixed list of fractions (the “program” or list of instructions).
 
 The rules are extremely simple:Start with some positive whole
 number. Look at the fractions in order from the beginning of
@@ -54,10 +59,6 @@ the subtraction would not go below zero. This gives you a way to
 do arithmetic, loops, and conditionals using nothing but 
 multiplication and checking whether the result is still a whole 
 number.
-
-=====================================================================
-2. MATHEMATICAL SEMANTICS
-=====================================================================
 
 ---------------------------------------------------------------------
 2.1 Types
