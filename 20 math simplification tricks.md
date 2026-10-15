@@ -307,10 +307,10 @@ HCF is Highest Common Factor,
 
 | # | Identity | Note |
 |---|----------|-------------------|
-| 2–4 | Power laws | If $a < 0$ and the exponent is not integer, the real-valued interpretation fails. Prefer $a > 0$ or integer exponents. |
+| 2–4 | Power laws | If $a < 0$ and the exponent is not integer, the real-valued interpretation fails. Prefer $a > 0$ or integer exponents. A power law is a relationship where one quantity changes as a constant power of another (so the relative change in one gives a proportional relative change in the other). It is scale-invariant, meaning scaling the input by a constant only scales the output by another constant factor. |
 | 15–17 | Surds | $\sqrt{\,\cdot\,}$ denotes the principal (non-negative) square root. The product/quotient rules reverse only when both sides stay non-negative. A surd is an irrational rootthat cannot be simplified to a rational number or a terminating/recurring decimal. Surds represent exact values and remain under the root sign because their decimal expansions are infinite and non‑repeating. |
-| 17 | Conjugate | Also requires $a - b \neq 0$ (already present) and that the denominator after rationalization is defined. |
-| 20 | Ratios | For algebraic terms the common factor $k$ must be nonzero *and* defined on the same domain as the original ratio. |
+| 17 | Conjugate | Also requires $a - b \neq 0$ (already present) and that the denominator after rationalization is defined. A conjugate in math means changing the sign between the two terms in a binomial. When multiply a binomial by its conjugate, the middle terms cancel. |
+| 20 | Ratios | For algebraic terms the common factor $k$ must be nonzero *and* defined on the same domain as the original ratio. A ratio shows how many times one number contains another. |
 
 ## Tiny worked example 
 ***Applying several rules***
