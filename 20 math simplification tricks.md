@@ -328,3 +328,33 @@ $$
 $$
 
 (The last step is optional; the previous form is already simplified.)
+
+## **Summary Block**
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║      RDG RELATIONAL REWRITE SYSTEM — 20 CORE IDENTITIES      	║
+╠═══════════════════════════════════════════════════════════════╣
+║ Structure: syntactic pattern                                 	║
+║ Interaction: operator geometry (merge, split, invert, align) 	║
+║ Dynamics: bidirectional equivalence morphism                 	║
+║                                                              	║
+║  a^m ⋄ a^n        ⟷RDG  a^(m+n)				║
+║  a^m ÷ a^n        ⟷RDG  a^(m−n)                             	║
+║  (a^m)^n          ⟷RDG  a^(mn)                              	║
+║  (ab)^n           ⟷RDG  a^n ⋄ b^n                           	║
+║  (a/b)^n          ⟷RDG  a^n / b^n                           	║
+║  (a±b)^2          ⟷RDG  a^2 ± 2ab + b^2                     	║
+║  a^2 − b^2        ⟷RDG  (a+b)(a−b)                          	║
+║  (a±b)^3          ⟷RDG  a^3 ± 3a^2b + 3ab^2 ± b^3           	║
+║  x/y ± m/n        ⟷RDG  (xn ± ym)/(yn)                      	║
+║  (x/y)(m/n)       ⟷RDG  (xm)/(yn)                           	║
+║  (x/y) ÷ (m/n)    ⟷RDG  (xn)/(ym)                           	║
+║  √a ⋄ √b          ⟷RDG  √(ab)                      	       	║
+║  √a / √b          ⟷RDG  √(a/b)                              	║
+║  1/(√a+√b)        ⟷RDG  (√a−√b)/(a−b)                       	║
+║  (x+a)(x+b)       ⟷RDG  x^2 + (a+b)x + ab                   	║
+║  ax+ay+az         ⟷RDG  a(x+y+z)                            	║
+║  p:q              ⟷RDG  (p/H):(q/H)                         	║
+╚═══════════════════════════════════════════════════════════════╝
+```
