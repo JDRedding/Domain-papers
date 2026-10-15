@@ -2,7 +2,7 @@
 ## **One‑Page Core Summary**
 
 The **d’Alembert quotient** is **not a PDE**.  
-It is the **operator‑class identification**:
+It is an **operator‑class identification**:
 
 - same *job* as the classical wave operator $\square$  
 - same *shape*: many‑to‑one, geometry‑hiding, invariant‑emitting  
@@ -11,13 +11,13 @@ It is the **operator‑class identification**:
 The stack defines:
 
 $$
-Q=\square\circ q_{\sim_Q}
+Q = \square_{\mathrm{class}} \circ q_{\sim_Q}
 $$
 
 where:
 
 - $q_{\sim_Q}$ collapses generator states by admissible observables  
-- $\square$ seals the class so its interior cannot be inspected  
+- $\square_{\mathrm{class}}$ assigns the sealed invariant associated to each equivalence class 
 
 This is the **pre‑geometric box** that makes RDG possible.
 
@@ -26,13 +26,13 @@ This is the **pre‑geometric box** that makes RDG possible.
 # **1. Classical d’Alembert Operator (Structural Role)**
 
 $$
-\square=\partial_t^{2}-\partial_x^{2}-\partial_y^{2}-\partial_z^{2}
+\square = \partial_t^{2}-\partial_x^{2}-\partial_y^{2}-\partial_z^{2}
 $$
 
 On a scalar field:
 
 $$
-\square\phi=0
+\square\phi = 0
 $$
 
 Structural properties:
@@ -68,8 +68,8 @@ Same shape as $\square$:
 
 $$
 Q_d^r(g)\,\square
-:=\square\!\bigl(Q_{\mathrm{substrate}}^{\mathrm{irrational}}\bigr)
-=\square\circ q_{\sim_Q}
+:= \square_{\mathrm{class}}\!\bigl(Q_{\mathrm{substrate}}^{\mathrm{irrational}}\bigr)
+= \square_{\mathrm{class}} \circ q_{\sim_Q}
 $$
 
 Equivalence relation:
@@ -91,7 +91,7 @@ $$
 Meaning:
 
 - **first** collapse generator states by admissible observables  
-- **then** seal the class so the generator interior cannot be inspected  
+- **then** apply the operator‑class seal to the quotient  
 
 This is the **d’Alembert quotient**.
 
@@ -99,125 +99,111 @@ This is the **d’Alembert quotient**.
 
 # **4. Shared Algebraic Properties (Wave □ vs. Quotient Q)**
 
-**VARS:**
-- $\phi$: classical scalar field on Minkowski space
-- $\square$: classical wave operator (hyperbolic, second-order, linear)
-- $\square^2$: biwave operator (composition $\square \circ \square$)
-- $S$: generator substrate space
-- $\sim_Q$: admissible-observable equivalence relation
-- $q_{\sim_Q}$: quotient map $S \to S/\{\sim_Q\}$
-- $A$: admissible invariant space
-- $Q$: d’Alembert quotient operator-class $Q = \square \circ q_{\sim_Q}$
+### **Variables**
+- $\phi$: classical scalar field  
+- $\square$: classical wave operator  
+- $\square^2$: biwave operator  
+- $S$: generator substrate  
+- $\sim_Q$: admissible‑observable equivalence relation  
+- $q_{\sim_Q}$: quotient map $S \to S/{\sim_Q}$  
+- $A$: admissible invariant space  
+- $Q = \square_{\mathrm{class}} \circ q_{\sim_Q}$: operator‑class quotient  
 
-**FUNDAMENTALS:**
-- Classical $\square$ is **not** idempotent.
-- Quotient map $q_{\sim_Q}$ **is** idempotent.
-- “Seal” is an **operator-class** behavior, **not** an algebraic projection.
-- $\square$ acts **only** on equivalence classes, **not** on raw generator states.
-- Domain/codomain must be explicit for $Q = \square \circ q_{\sim_Q}$ to be well-defined.
+### **Fundamentals**
+- Classical $\square$ is **not** idempotent.  
+- Quotient map $q_{\sim_Q}$ **is** idempotent.  
+- Idempotence of $q_{\sim_Q}$ **does not transfer** to $Q$.  
+- “Seal” is an **operator‑class behavior**, not an algebraic projection.  
+- $\square_{\mathrm{class}}$ acts **only** on equivalence classes.  
+- Domain/codomain must be explicit for $Q$ to be well‑defined.
+
+### **Structural Comparison**
 
 | Property | Wave $\square$ | Quotient $Q$ |
 |---|---|---|
 | many‑to‑one | many $\phi$ share on‑shell invariants | many $i\in I$ share $Q(i)$ |
-| hides geometry | metric contracted, interior unused | generator $G$ and $Q^\square$ unused |
+| hides geometry | metric contracted, interior unused | generator interior unused |
 | emits invariants | causal propagation law | admissible $q\in\mathcal{A}$ |
 | not invertible | cannot recover $\phi$ | cannot recover $i$ or $g$ |
-| idempotent seal | $\square(\square\phi)=\square\phi$ | $\square(\square X)=\square X$ |
-| observable agreement | $\mathrm{Obs}(\square\phi)$ | $\mathrm{Obs}(\square X)=\mathrm{Obs}(X)$ |
+| idempotence | **not applicable** | only $q_{\sim_Q}$ is idempotent |
+| observable agreement | $\mathrm{Obs}(\square\phi)$ | $\mathrm{Obs}(Q(X))$ |
 
-The stack also inherits modal and Bourbaki readings of $\square$:
+### **Idempotence Correction**
 
-- **modal necessity**: interior worlds inaccessible  
-- **structural seal**: interior not part of the theory  
-
-Q is the fusion of all three.
-
-**Idempotence** 
-
-| Property |  Glyphy | Note |
-|---|---|---|
-|Wave |Standard $\square$| idempotence = **not applicable** |
-|Quotient $Q$ |$Q$ $\square$| idempotence = $q_{\sim_Q}(q_{\sim_Q}(X)) = q_{\sim_Q}(X)$ |
+The classical wave operator does **not** satisfy:
 
 $$
-\square(\square \phi) = \square \phi
+\square(\square\phi)=\square\phi
 $$
 
-This is **false** on Minkowski space. The wave operator is **not** a projection.  
-Applying $\square$ twice yields the biwave operator:
+Instead:
 
 $$
-\square^2 \phi = \square(\square \phi)
+\square^2\phi = \square(\square\phi)
 $$
 
-whose kernel is strictly larger than $\ker(\square)$. Therefore:
+and:
 
-- $\square$ is **not** idempotent
-- $\square^2 \neq \square$
-- the on-shell condition $\square \phi = 0$ is **not** preserved by $\square^2$
+- $\ker(\square^2)$ is strictly larger than $\ker(\square)$  
+- $\square$ is **not** a projection  
+- the on‑shell condition $\square\phi=0$ is **not** preserved by $\square^2$
 
-**Sealing**
+### **Meaning of “Seal”**
 
-“Seal” is *not* an algebraic projection property.  
-It is an **operator-class** property:
+“Seal” is **not** algebraic idempotence.  
+It is the operator‑class behavior:
 
-- interior inaccessible
-- many-to-one collapse
-- invariant-emitting
-- geometry-hiding
-- non-invertible
+- interior inaccessible  
+- many‑to‑one collapse  
+- invariant‑emitting  
+- geometry‑hiding  
+- non‑invertible  
 
 These are **structural parallels**, not PDE identities.
 
-**Domain and Codomain**
-$Q$ Well-Defined
-
-**Explicit types:**
+### **Domain and Codomain**
 
 $$
-\begin{align*}
-q_{\sim_Q} &\colon S \to S/\{\sim_Q\} \\
-\square &\colon S/\{\sim_Q\} \to A \\
-Q &\colon S \to A
-\end{align*}
+\begin{aligned}
+q_{\sim_Q} &: S \to S/{\sim_Q} \\
+\square_{\mathrm{class}} &: S/{\sim_Q} \to A \\
+Q &: S \to A
+\end{aligned}
 $$
 
 Thus:
 
 $$
-Q = \square \circ q_{\sim_Q}
+Q = \square_{\mathrm{class}} \circ q_{\sim_Q}
 $$
 
-is a defined map with a concrete domain and codomain.
+is a well‑defined operator‑class map.
 
-**Equivalence Classes**
-Action of $\square$ on Equivalence Classes
+### **Action on Equivalence Classes**
 
-$\square$ does **not** act on raw generator states.
+$\square_{\mathrm{class}}$ does **not** act on raw generator states.
 
-**Definition:**
-
-For $[X] \in S/\{\sim_Q\}$:
+For $[X] \in S/{\sim_Q}$:
 
 $$
-\square([X]) := \text{sealed admissible invariant associated to } [X]
+\square_{\mathrm{class}}([X]) := \text{sealed admissible invariant associated to } [X]
 $$
 
-This is an **operator-class assignment**, **not** a differential operator on fields.
+This is an **operator‑class assignment**, not a differential operator.
 
-**Recognizable Limits**
+### **Recognizable Limits**
 
-In limits where:
+When:
 
-- generator $G$ is frozen to a lattice,
-- RDG is given a metric,
-- $\Gamma$ reduces to classical coarse-graining,
+- the generator is frozen to a lattice  
+- RDG is given a metric  
+- $\Gamma$ reduces to classical coarse‑graining  
 
-the construction recovers known mathematical objects:
+the construction recovers:
 
-- solution space modulo gauge,
-- reduced phase space of constrained systems,
-- quotient-by-observables familiar from symplectic reduction.
+- solution space modulo gauge  
+- reduced phase space of constrained systems  
+- quotient‑by‑observables familiar from symplectic reduction  
 
 ---
 
@@ -241,7 +227,7 @@ Roles:
 - **Q**: makes visibility *rational and sealed*  
 - **RDG**: allowed only after Q  
 
-If Q is skipped, Structure – Interaction –D ynamics / Power – Evaluation – Dynamic‑slice would be forced to act on $G$, which has:
+If Q is skipped, SID/PED would be forced to act on $G$, which has:
 
 - no partitions  
 - no adjacency  
@@ -254,11 +240,11 @@ Q is the **type‑check** that prevents that.
 # **6. What the d’Alembert Quotient Is Not**
 
 - **Not** $\square\phi=0$ on spacetime  
-- **Not** part of Momentum Flux Engine or Power – Evaluation – Dynamic‑slice  
+- **Not** part of Momentum Flux Engine or Power–Evaluation–Dynamic‑slice  
 - **Not** a division by Q  
-- **Not** a PDE unless Relational Dynamic Geometry is later frozen to a lattice and a continuum limit is taken  
+- **Not** a PDE unless RDG is frozen to a lattice and a continuum limit is taken  
 
-It is the **operator class**, not the classical PDE.
+It is an **operator class**, not the classical PDE.
 
 ---
 
@@ -272,5 +258,3 @@ Stack’s d’Alembert quotient:
 
 Same operator class:  
 **geometry‑hiding, many‑to‑one, invariant‑emitting, sealed.**
-
----
