@@ -99,6 +99,23 @@ This is the **d’Alembert quotient**.
 
 # **4. Shared Algebraic Properties (Wave □ vs. Quotient Q)**
 
+**VARS:**
+- $\phi$: classical scalar field on Minkowski space
+- $\square$: classical wave operator (hyperbolic, second-order, linear)
+- $\square^2$: biwave operator (composition $\square \circ \square$)
+- $S$: generator substrate space
+- $\sim_Q$: admissible-observable equivalence relation
+- $q_{\sim_Q}$: quotient map $S \to S/\{\sim_Q\}$
+- $A$: admissible invariant space
+- $Q$: d’Alembert quotient operator-class $Q = \square \circ q_{\sim_Q}$
+
+**FUNDAMENTALS:**
+- Classical $\square$ is **not** idempotent.
+- Quotient map $q_{\sim_Q}$ **is** idempotent.
+- “Seal” is an **operator-class** behavior, **not** an algebraic projection.
+- $\square$ acts **only** on equivalence classes, **not** on raw generator states.
+- Domain/codomain must be explicit for $Q = \square \circ q_{\sim_Q}$ to be well-defined.
+
 | Property | Wave $\square$ | Quotient $Q$ |
 |---|---|---|
 | many‑to‑one | many $\phi$ share on‑shell invariants | many $i\in I$ share $Q(i)$ |
@@ -114,6 +131,93 @@ The stack also inherits modal and Bourbaki readings of $\square$:
 - **structural seal**: interior not part of the theory  
 
 Q is the fusion of all three.
+
+**Idempotence** 
+
+| Property |  Glyphy | Note |
+|---|---|---|
+|Wave |Standard $\square$| idempotence = **not applicable** |
+|Quotient $Q$ |$Q$ $\square$| idempotence = $q_{\sim_Q}(q_{\sim_Q}(X)) = q_{\sim_Q}(X)$ |
+
+$$
+\square(\square \phi) = \square \phi
+$$
+
+This is **false** on Minkowski space. The wave operator is **not** a projection.  
+Applying $\square$ twice yields the biwave operator:
+
+$$
+\square^2 \phi = \square(\square \phi)
+$$
+
+whose kernel is strictly larger than $\ker(\square)$. Therefore:
+
+- $\square$ is **not** idempotent
+- $\square^2 \neq \square$
+- the on-shell condition $\square \phi = 0$ is **not** preserved by $\square^2$
+
+**Sealing**
+
+“Seal” is *not* an algebraic projection property.  
+It is an **operator-class** property:
+
+- interior inaccessible
+- many-to-one collapse
+- invariant-emitting
+- geometry-hiding
+- non-invertible
+
+These are **structural parallels**, not PDE identities.
+
+**Domain and Codomain**
+$Q$ Well-Defined
+
+**Explicit types:**
+
+$$
+\begin{align*}
+q_{\sim_Q} &\colon S \to S/\{\sim_Q\} \\
+\square &\colon S/\{\sim_Q\} \to A \\
+Q &\colon S \to A
+\end{align*}
+$$
+
+Thus:
+
+$$
+Q = \square \circ q_{\sim_Q}
+$$
+
+is a defined map with a concrete domain and codomain.
+
+**Equivalence Classes**
+Action of $\square$ on Equivalence Classes
+
+$\square$ does **not** act on raw generator states.
+
+**Definition:**
+
+For $[X] \in S/\{\sim_Q\}$:
+
+$$
+\square([X]) := \text{sealed admissible invariant associated to } [X]
+$$
+
+This is an **operator-class assignment**, **not** a differential operator on fields.
+
+**Recognizable Limits**
+
+In limits where:
+
+- generator $G$ is frozen to a lattice,
+- RDG is given a metric,
+- $\Gamma$ reduces to classical coarse-graining,
+
+the construction recovers known mathematical objects:
+
+- solution space modulo gauge,
+- reduced phase space of constrained systems,
+- quotient-by-observables familiar from symplectic reduction.
 
 ---
 
