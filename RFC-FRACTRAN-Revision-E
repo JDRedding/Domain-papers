@@ -7,6 +7,11 @@ Author: JD Redding
 =====================================================================
 1. INTRODUCTION
 =====================================================================
+FRACTRAN is a deliberately minimal way of doing computation invented 
+by mathematician John Conway (the same person who created the Game 
+of Life). It is Turing-complete, meaning that, in principle, it can 
+perform any calculation a normal computer can.
+
 This document defines the FRACTRAN computational model, including:
   - Mathematical semantics
   - Fraction normalization
@@ -25,6 +30,30 @@ This revision addresses all issues identified in the Revision D
 evaluation, including truncation, nontermination wording, lexical
 consistency, little-endian BigInt canonicality, and decoder
 normalization policy.
+
+How it works (in plain language)
+You have:A single whole number that holds the entire state of the
+program (think of it as the computer’s memory). A fixed list of 
+fractions (the “program” or list of instructions).
+
+The rules are extremely simple:Start with some positive whole
+number. Look at the fractions in order from the beginning of
+the list. As soon as you find a fraction that, when multiplied 
+by your current number, produces another whole number, multiply 
+and replace your number with that new whole number. Immediately 
+go back to the start of the fraction list and repeat. Stop when 
+none of the fractions produce a whole number anymore. The final 
+number is the result.
+
+The clever part is how the single number stores information. 
+Every whole number can be uniquely broken into prime factors 
+(for example, 12 = 2^2 times 3^1). The exponents of the primes 
+act like variables or counters. Multiplying by a fraction adjusts 
+those exponents (subtracting some and adding others), but only if 
+the subtraction would not go below zero. This gives you a way to 
+do arithmetic, loops, and conditionals using nothing but 
+multiplication and checking whether the result is still a whole 
+number.
 
 =====================================================================
 2. MATHEMATICAL SEMANTICS
