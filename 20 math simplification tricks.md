@@ -1,6 +1,26 @@
 # 20 math simplification tricks 
 **RDG‑compatible, with domains**
 
+Each rewrite is an equivalence-preserving identity under the stated domains (and a few natural extensions noted below). The SID framing (Structure / Interaction / Dynamics) is useful for tracking when a pattern may be applied bidirectionally.
+
+All 20 items hold as written for real numbers (or integers, as noted) inside the given domains. The main caveats are the usual ones for exponents and roots:
+- Negative bases + non-integer exponents are excluded unless the expression is first rewritten to avoid them (e.g., via absolute values or complex numbers).
+- Zero bases require separate checks when negative or zero exponents appear.
+- Surds are restricted to non-negative radicands for real-valued results, exactly as stated.
+
+No counter-examples exist inside the stated domains. Outside those domains the rewrites can fail (or leave the reals).
+
+### Suggested usage 
+Practical simplification pipeline
+
+1. Parse with precedence (#1).
+2. Clear fractions / common denominators (#12–14).
+3. Expand or factor polynomials (#7–11, #18–19).
+4. Apply exponent and surd laws (#2–6, #15–17).
+5. Reduce ratios (#20).
+
+This ordering minimises domain violations and intermediate expression swell.
+
 **Tip:** Use precedence rules to **parse** the expression; then apply **equivalence‑preserving rewrites** (distribution, exponent laws, factoring, common‑denominator formation, conjugation), always tracking domains and signs.
 
 ## Conventions
@@ -282,3 +302,29 @@ $$
 HCF is Highest Common Factor,
 
 ---
+
+## Extra notes
+
+| # | Identity | Note |
+|---|----------|-------------------|
+| 2–4 | Power laws | If $a < 0$ and the exponent is not integer, the real-valued interpretation fails. Prefer $a > 0$ or integer exponents. |
+| 15–17 | Surds | $\sqrt{\,\cdot\,}$ denotes the principal (non-negative) square root. The product/quotient rules reverse only when both sides stay non-negative. |
+| 17 | Conjugate | Also requires $a - b \neq 0$ (already present) and that the denominator after rationalization is defined. |
+| 20 | Ratios | For algebraic terms the common factor $k$ must be nonzero *and* defined on the same domain as the original ratio. |
+
+## Tiny worked example 
+***Applying several rules***
+
+Simplify $\dfrac{(x^2 - 4)}{\sqrt{x} + 2} \cdot \dfrac{\sqrt{x}}{x - 2}$ for $x > 0$, $x \neq 4$:
+
+$$
+\begin{align*}
+\dfrac{x^2 - 4}{\sqrt{x} + 2} \cdot \dfrac{\sqrt{x}}{x - 2}
+&= \dfrac{(x-2)(x+2)}{\sqrt{x} + 2} \cdot \dfrac{\sqrt{x}}{x - 2} && \text{(No. 9)} \\
+&= \dfrac{x+2}{\sqrt{x} + 2} \cdot \sqrt{x} && \text{(cancel $x-2$)} \\
+&= \dfrac{(x+2)\sqrt{x}}{\sqrt{x} + 2} && \text{(No. 13)} \\
+&= \dfrac{(\sqrt{x}-2)(x+2)\sqrt{x}}{x-4} && \text{(No. 17 conjugate, then simplify)}.
+\end{align*}
+$$
+
+(The last step is optional; the previous form is already simplified.)
