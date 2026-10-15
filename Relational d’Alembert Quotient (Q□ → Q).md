@@ -261,7 +261,7 @@ Same operator class:
 
 # **8. Future Work**
 
-- Give an explicit rule or isomorphism defining \(\square\) on equivalence classes.
-- Prove \(Q=\square\circ q\) is well-defined and universal for the quotient.
-- Recover at least one standard object (gauge-reduced solutions or reduced phase space) via explicit isomorphism.
-- State the spaces and regularity conditions used.
+- Explicit rule or isomorphism defining $\square$ on equivalence classes.
+- $Q=\square\circ q$ well-defined and universal for quotient.
+- Standard object (gauge-reduced solutions or reduced phase space) via explicit isomorphism.
+- State the spaces and regularity conditions.
