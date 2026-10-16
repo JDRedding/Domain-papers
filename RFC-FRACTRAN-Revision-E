@@ -495,6 +495,38 @@ Fraction:
 
 Program:
     F = [f_1, f_2, ..., f_m], ordered finite list of fractions.
+    For PRIMEGAME (Variant A, used in this specification):
+        F = [
+            17/91,
+            78/85,
+            19/51,
+            23/38,
+            29/33,
+            77/29,
+            95/23,
+            77/19,
+            1/17,
+            11/13,
+            13/11,
+            15/2,
+            1/7,
+            55/1
+        ]
+
+Registers (Prime-Exponent View):
+    For each prime p:
+        v_p(n) = exponent of p in the factorization of n.
+    In PRIMEGAME:
+        - v_2(n) is the "output register" (exponent of 2).
+        - Other primes (3, 5, 7, 11, ...) act as internal 
+          counters,flags, and loop variables.
+
+---------------------------------------------------------------------
+Note: An alternate historically attested variant replaces
+15/2, 1/7 with 15/14, 15/2. It also generates successive
+primes but produces a different intermediate sequence and
+is not used for the test vectors in this specification.
+
     For PRIMEGAME:
         F = [
             17/91,
@@ -508,19 +540,10 @@ Program:
             1/17,
             11/13,
             13/11,
-            15/14,
+            15/14,    ← Variant B
             15/2,
             55/1
         ]
-
-
-Registers (Prime-Exponent View):
-    For each prime p:
-        v_p(n) = exponent of p in the factorization of n.
-    In PRIMEGAME:
-        - v_2(n) is the "output register" (exponent of 2).
-        - Other primes (3, 5, 7, 11, ...) act as internal 
-          counters,flags, and loop variables.
 
 ---------------------------------------------------------------------
 12.2 Execution Model (Restart-Scan)
