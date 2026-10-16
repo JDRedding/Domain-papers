@@ -1556,6 +1556,7 @@ Recommended implementation order:
     9. Parallel execution layer.
    10. Certificate serialization and replay.
 
+
 DESIGN NOTES
 ------------
 
@@ -1583,6 +1584,7 @@ DESIGN NOTES
 
 - RDGMFEQ may supply diagnostics, cost estimates, and instability metrics, but
   it does not alter interval arithmetic or certification semantics.
+
 
 STATUS
 ------
