@@ -1,22 +1,20 @@
-WIRES - CABLE SIZE, CURRENT RATING
+WIRES / CABLE SIZE          CURRENT RATING
 
-WIRES - CABLE SIZE          CURRENT RATING
-
-0.50 mm²                    5 Amp
-0.75 mm²                    7.5 Amp
-1.00 mm²                    10 Amp
-1.5 mm²                     13.5 Amp
-2.5 mm²                     13.5 Amp
-4 mm²                       22.5 Amp
-6 mm²                       42 Amp
-10 mm²                      60 Amp
-16 mm²                      80 Amp
-25 mm²                      80 Amp
-10 mm²                      60 Amp
-16 mm²                      80 Amp
-25 mm²                      100 Amp
-35 mm²                      122.5 Amp
-50 mm²                      150 Amp
+black  0.50 mm²             5 Amp
+blue   0.75 mm²             7.5 Amp
+yellow 1.00 mm²             10 Amp
+red    1.5 mm²              13.5 Amp
+gray   2.5 mm²              13.5 Amp
+orange 4 mm²                22.5 Amp
+brown  6 mm²                42 Amp
+black  10 mm²               60 Amp
+blue   16 mm²               80 Amp
+yellow 25 mm²               80 Amp
+black  10 mm²               60 Amp
+blue   16 mm²               80 Amp
+yellow 25 mm²               100 Amp
+red    35 mm²               122.5 Amp
+gray   50 mm²               150 Amp
 
 TYPES
 - Conductor: copper (most common); aluminum possible for larger sizes
