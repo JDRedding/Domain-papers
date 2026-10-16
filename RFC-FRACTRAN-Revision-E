@@ -10,7 +10,16 @@ Author: JD Redding
 FRACTRAN is a deliberately minimal way of doing computation invented 
 by mathematician John Conway (the same person who created the Game 
 of Life). It is Turing-complete, meaning that, in principle, it can 
-perform any calculation a normal computer can.
+perform any calculation a normal computer can. Conway’s paper 
+introduces FRACTRAN and the PRIMEGAME prime-generation program. The 
+PRIMEGAME example in this RFC (fractions list and prime-exponent 
+behavior) is directly based on Conway’s original construction.
+
+This RFC formalizes FRACTRAN in a modern specification style:
+  - explicit normalization rules
+  - exact-arithmetic requirements
+  - canonical binary ABI
+  - execution policy and error taxonomy
 
 This document defines the FRACTRAN computational model, including:
   - Mathematical semantics
@@ -630,3 +639,15 @@ Revision E is complete. It incorporates all corrections from the
 Revision D evaluation, restores the full normative sections, and
 provides a consistent, implementation-ready specification of the
 FRACTRAN computational model.
+
+=====================================================================
+14. References (Informational)
+=====================================================================
+
+    [CONWAY-FRACTRAN]
+        J. H. Conway,
+        "FRACTRAN: A Simple Universal Programming Language for 
+         Arithmetic", Department of Mathematics, Princeton 
+         University, Princeton, NJ 08544.
+
+=====================================================================
