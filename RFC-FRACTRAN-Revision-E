@@ -661,4 +661,10 @@ FRACTRAN computational model.
             GitHub Repository,
             https://github.com/richardassar/FRACTRAN
 
+    [STEGOFRACTRAN]
+            meta-introspector,
+            "stego-fractran",
+            GitHub Repository,
+            https://github.com/meta-introspector/stego-fractran
+
 =====================================================================
