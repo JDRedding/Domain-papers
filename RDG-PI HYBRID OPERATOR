@@ -1,0 +1,799 @@
+RDG-PI HYBRID OPERATOR
+CERTIFIED INTERVAL SPECIFICATION, VERSION 3
+============================================
+
+PURPOSE
+-------
+This specification defines a rigorous, extensible pipeline for computing
+certified enclosures of pi.
+
+The system computes an interval B such that:
+
+    pi is an element of B
+
+with a machine-checkable error certificate. It does not treat a floating-point
+approximation alone as a certified result.
+
+The selector chooses a feasible, cost-minimizing plan under an explicit machine
+model. The consolidator combines certified stage enclosures by interval
+intersection, never by selecting a "most stable" ball.
+
+
+FUNDAMENTALS
+------------
+
+Let pi denote the mathematical constant.
+
+A certified enclosure is an interval
+
+    B = [L, U]
+
+such that
+
+    L <= pi <= U.
+
+A ball representation is permitted only as a derived view:
+
+    B = [c - r, c + r]
+
+where
+
+    c = (L + U) / 2
+    r = (U - L) / 2.
+
+All interval endpoints that affect certification must be computed using
+outward-directed rounding:
+
+    lower endpoint: rounded toward -infinity
+    upper endpoint: rounded toward +infinity.
+
+Outward rounding ensures that finite-precision interval operations contain the
+exact real-arithmetic result, rather than merely estimating it.
+
+
+CORE TYPES
+----------
+
+Type Real
+    A floating-point or arbitrary-precision real number.
+
+Type Int
+    An integer.
+
+Type Natural
+    A nonnegative integer.
+
+Type PositiveReal
+    A real number strictly greater than zero.
+
+Type Precision
+    Int
+    Working precision, measured in bits or decimal digits.
+    Precision includes all guard digits required for certification.
+
+Type ErrorBound
+    Real
+    A nonnegative certified error radius.
+
+Type Epsilon
+    PositiveReal
+    Required final absolute error:
+
+        radius(final_ball) <= epsilon.
+
+Type MethodID
+    One of:
+        POLY
+        MACHIN
+        AGM
+        CHUDNOVSKY
+    Extensible to additional certified operators.
+
+
+INTERVAL TYPE
+-------------
+
+Type Interval = struct {
+    lower : Real
+    upper : Real
+}
+
+Invariants:
+
+    1. lower <= upper.
+    2. lower and upper are machine-representable under the active precision.
+    3. lower is rounded downward.
+    4. upper is rounded upward.
+    5. If the interval represents pi, then pi is an element of
+       [lower, upper].
+
+
+BALL VIEW
+---------
+
+Type Ball = struct {
+    center : Real
+    radius : ErrorBound
+}
+
+A Ball is valid only if it can be converted to an Interval:
+
+    Interval_from_ball(b) =
+        [round_down(b.center - b.radius),
+         round_up(b.center + b.radius)]
+
+A Ball is a certified pi enclosure iff:
+
+    pi is an element of Interval_from_ball(b).
+
+
+STAGE CONFIGURATION
+-------------------
+
+Type StageConfig = struct {
+    method      : MethodID
+    work_prec   : Precision
+    work_param  : Natural
+    target_error: ErrorBound
+}
+
+Fields:
+
+    method
+        The certified pi operator to execute.
+
+    work_prec
+        Working precision, including guard digits.
+
+    work_param
+        Method-specific discretization or truncation parameter:
+            POLY       : polygon sides or refinement level
+            MACHIN     : number of arctangent series terms
+            AGM        : number of AGM iterations
+            CHUDNOVSKY : number of Chudnovsky series terms
+
+    target_error
+        The maximum permitted certified radius for this stage.
+
+
+STAGE RESULT
+------------
+
+Type StageResult = struct {
+    config          : StageConfig
+    interval        : Interval
+    truncation_error: ErrorBound
+    rounding_error  : ErrorBound
+    cost            : PositiveReal
+    certificate     : Certificate
+}
+
+Invariants:
+
+    1. interval contains pi.
+    2. radius(interval) <= config.target_error.
+    3. truncation_error >= 0.
+    4. rounding_error >= 0.
+    5. radius(interval) <= truncation_error + rounding_error.
+    6. certificate verifies invariants 1 through 5.
+
+
+CERTIFICATE
+-----------
+
+Type Certificate = struct {
+    operator_id      : MethodID
+    parameters       : StageConfig
+    rounding_mode    : RoundingMode
+    truncation_proof : ProofReference
+    rounding_proof   : ProofReference
+    validation_hash  : String
+}
+
+RoundingMode = { OUTWARD_INTERVAL, DIRECTED_ROUNDING }
+
+A Certificate is valid only if it is independently checkable from:
+
+    1. The operator implementation.
+    2. The stage parameters.
+    3. The declared precision and rounding mode.
+    4. The stated truncation-error proof.
+    5. The stated rounding-error proof.
+
+
+MACHINE MODEL
+-------------
+
+Type MachineModel = struct {
+    max_prec       : Precision
+    cost_per_mul   : PositiveReal
+    cost_per_add   : PositiveReal
+    cost_per_sqrt  : PositiveReal
+    cost_per_div   : PositiveReal
+    parallelism    : Natural
+    memory_limit   : Natural
+    rounding_mode  : RoundingMode
+}
+
+The machine model must declare every resource relevant to cost and
+certification. A plan is infeasible if it exceeds:
+
+    max_prec
+    memory_limit
+    available parallelism
+
+
+COST MODEL
+----------
+
+Type CostFunction
+    (StageConfig, MachineModel) -> PositiveReal
+
+The selector must use an explicit CostFunction. The following are default
+asymptotic signatures, not substitutes for a concrete implementation:
+
+    cost_poly(n, p)
+        approximately O(n * M(p))
+
+    cost_machin(m, p)
+        approximately O(m * M(p))
+
+    cost_agm(k, p)
+        approximately O(k * M(p) * log p)
+
+    cost_chudnovsky(N, p)
+        approximately O(M(p) * log^2 p)
+
+Here:
+
+    M(p) = cost of multiplying two p-bit numbers.
+
+For Chudnovsky, p denotes the target working precision. The number of terms N
+must be chosen so that the truncation error is below the stage target. With
+binary splitting, the asymptotic complexity is commonly expressed as
+O(M(p) log^2 p).
+
+
+ERROR MODEL
+-----------
+
+Every certified operator must return both:
+
+    1. A computed interval.
+    2. Separate certified bounds for truncation and rounding error.
+
+For stage i:
+
+    delta_trunc_i = certified truncation-error bound
+    delta_round_i = certified rounding-error bound
+    delta_i       = radius(interval_i)
+
+Requirement:
+
+    delta_i <= delta_trunc_i + delta_round_i.
+
+The final result must satisfy:
+
+    delta_final <= epsilon.
+
+
+CLASSICAL CERTIFIED OPERATORS
+-----------------------------
+
+Function Pi_poly(
+    n : Natural,
+    p : Precision
+) -> StageResult
+
+    Computes an Archimedean polygon enclosure of pi.
+
+    Requirements:
+        - Use inscribed and circumscribed polygon bounds.
+        - Return the intersection of the two bounds.
+        - Prove the truncation error as a function of n.
+        - Use outward rounding at precision p.
+
+    Typical convergence:
+        delta_poly(n) = O(1 / n^2)
+
+    The exact constant and the meaning of n must be fixed by the
+    implementation.
+
+
+Function Pi_machin(
+    m : Natural,
+    p : Precision
+) -> StageResult
+
+    Computes pi using a Machin-like arctangent identity.
+
+    Requirements:
+        - Fix the exact arctangent identity.
+        - Bound every truncated series rigorously.
+        - Use alternating-series or remainder-aware bounds.
+        - Use outward rounding at precision p.
+
+    Typical convergence:
+        delta_machin(m) = O(10^(-c*m))
+
+    The constant c depends on the chosen identity and acceleration method.
+
+
+Function Pi_agm(
+    k : Natural,
+    p : Precision
+) -> StageResult
+
+    Computes pi using an AGM-based iteration, such as Gauss-Legendre or a
+    Borwein variant.
+
+    Requirements:
+        - Fix the exact iteration.
+        - Bound propagation of interval widths through square roots,
+          divisions, and multiplications.
+        - Use outward rounding at precision p.
+        - Stop only when the certified radius meets target_error.
+
+    Typical convergence:
+        delta_agm(k) = O(2^(-2^k))
+
+    This is quadratic convergence: the number of correct digits approximately
+    doubles per iteration, subject to the working precision p.
+
+
+Function Pi_chudnovsky(
+    N : Natural,
+    p : Precision
+) -> StageResult
+
+    Computes pi using the Ramanujan-Chudnovsky hypergeometric series.
+
+    Requirements:
+        - Fix the series and summation order.
+        - Use binary splitting or another rigorously analyzed evaluation
+          strategy.
+        - Bound the omitted tail rigorously.
+        - Use outward rounding at precision p.
+
+    Typical convergence:
+        delta_chudnovsky(N) = O(10^(-14*N))
+
+    More precisely, each term contributes approximately 14.18 decimal digits;
+    the implementation must use a proven tail bound, not the heuristic digit
+    count alone.
+
+
+OPERATOR CONTRACT
+-----------------
+
+Every method registered as a MethodID must satisfy:
+
+    CertifiedPiOperator(
+        config : StageConfig,
+        model  : MachineModel
+    ) -> StageResult
+
+Contract:
+
+    1. If the operator returns successfully, its interval contains pi.
+    2. The returned radius is no larger than config.target_error.
+    3. The returned certificate is checkable.
+    4. The operator respects model.max_prec and model.rounding_mode.
+    5. The operator reports infeasibility rather than returning an uncertified
+       result.
+
+
+INTERVAL OPERATIONS
+-------------------
+
+Function width(I : Interval) -> ErrorBound
+    return I.upper - I.lower
+
+Function radius(I : Interval) -> ErrorBound
+    return width(I) / 2
+
+Function center(I : Interval) -> Real
+    return (I.lower + I.upper) / 2
+
+Function interval_from_ball(b : Ball) -> Interval
+    return [
+        round_down(b.center - b.radius),
+        round_up(b.center + b.radius)
+    ]
+
+Function ball_from_interval(I : Interval) -> Ball
+    return {
+        center: center(I),
+        radius: radius(I)
+    }
+
+
+INTERVAL RELATIONS
+------------------
+
+Function interval_contains(outer : Interval, inner : Interval) -> Bool
+    return outer.lower <= inner.lower
+       and inner.upper <= outer.upper
+
+Function intervals_overlap(a : Interval, b : Interval) -> Bool
+    return a.lower <= b.upper
+       and b.lower <= a.upper
+
+Function interval_intersection(a : Interval, b : Interval) -> Interval
+    requires intervals_overlap(a, b)
+    return [
+        max(a.lower, b.lower),
+        min(a.upper, b.upper)
+    ]
+
+Function interval_hull(a : Interval, b : Interval) -> Interval
+    return [
+        min(a.lower, b.lower),
+        max(a.upper, b.upper)
+    ]
+
+
+CONSISTENCY CHECK
+-----------------
+
+Function consistency_status(
+    stages : list of StageResult
+) -> Status
+
+    Status = { CONSISTENT, INCONSISTENT, INSUFFICIENT_DATA }
+
+    If fewer than two stages are present:
+        return INSUFFICIENT_DATA
+
+    For every pair of stage intervals I_i and I_j:
+        if not intervals_overlap(I_i, I_j):
+            return INCONSISTENT
+
+    return CONSISTENT
+
+An inconsistent result must not be silently repaired by choosing one stage.
+The system must either:
+
+    1. Recompute at higher precision.
+    2. Identify the faulty operator or certificate.
+    3. Return an explicit failure.
+
+
+DIAGNOSTICS
+-----------
+
+Q_instability is a diagnostic only. It must never determine the final
+certified enclosure.
+
+Type InstabilityMetric = {
+    RADIUS
+    RELATIVE_PROGRESS
+    CROSS_CHECK_DISAGREEMENT
+    COMBINED
+}
+
+Function Q_radius(b : Ball) -> Real
+    return b.radius
+
+Function Q_relative_progress(
+    current : Ball,
+    previous : Ball
+) -> Real
+    return abs(current.center - previous.center)
+           / (previous.radius + current.radius + tiny_positive_constant)
+
+Function Q_cross_check(
+    current : Ball,
+    reference : Ball
+) -> Real
+    return max(
+        0,
+        abs(current.center - reference.center)
+        - (current.radius + reference.radius)
+    )
+
+Function Q_instability(
+    b : Ball,
+    previous : Ball,
+    metric : InstabilityMetric
+) -> Real
+
+    if metric == RADIUS:
+        return Q_radius(b)
+
+    else if metric == RELATIVE_PROGRESS:
+        return Q_relative_progress(b, previous)
+
+    else if metric == CROSS_CHECK_DISAGREEMENT:
+        return Q_cross_check(b, previous)
+
+    else if metric == COMBINED:
+        return
+            Q_radius(b)
+            + Q_relative_progress(b, previous)
+            + Q_cross_check(b, previous)
+
+
+SELECTOR
+--------
+
+Function S_RDG(
+    epsilon : Epsilon,
+    model   : MachineModel
+) -> StagePlan
+
+    A StagePlan is a list of StageConfig.
+
+    The selector solves:
+
+        minimize
+
+            total_cost(plan, model)
+            = sum over i of cost(config_i, model)
+
+        subject to:
+
+            1. Every config_i.work_prec <= model.max_prec.
+            2. Every config_i.target_error > 0.
+            3. target_error_i is a strictly decreasing sequence.
+            4. radius(final_interval) <= epsilon.
+            5. Every operator in the plan has a valid certificate contract.
+            6. The plan respects model.memory_limit and model.parallelism.
+
+    The selector must define:
+
+        1. The admissible parameter domain for each MethodID.
+        2. The precision granularity.
+        3. The cost function.
+        4. The error-bound function.
+        5. A deterministic tie-breaking rule.
+
+    The selector may use enumeration, branch-and-bound, dynamic programming,
+    or heuristic search, but must report whether its result is proven optimal
+    or heuristic.
+
+
+DEFAULT PLAN TEMPLATE
+---------------------
+
+The following is a candidate plan template, not a mandatory execution order:
+
+    stage 0: POLY
+        purpose: inexpensive independent enclosure
+
+    stage 1: MACHIN
+        purpose: early independent cross-check
+
+    stage 2: AGM
+        purpose: rapid precision escalation
+
+    stage 3: CHUDNOVSKY
+        purpose: high-precision final enclosure and independent cross-check
+
+For large digit counts, the selector should be permitted to choose:
+
+    1. A short low-precision seed stage.
+    2. One high-precision Chudnovsky stage.
+
+It should not be forced to execute every method family.
+
+
+EXECUTION PIPELINE
+------------------
+
+Function RDG_hybrid_pi(
+    epsilon : Epsilon,
+    model   : MachineModel
+) -> RDGProfile
+
+    plan := S_RDG(epsilon, model)
+
+    results := empty list of StageResult
+
+    for config in plan:
+
+        result := execute_certified_operator(config, model)
+
+        if result is invalid:
+            return failure_profile(
+                reason = "CERTIFICATION_FAILURE",
+                failed_config = config
+            )
+
+        results.append(result)
+
+    status := consistency_status(results)
+
+    if status == INCONSISTENT:
+        return failure_profile(
+            reason = "INTERVAL_INCONSISTENCY",
+            stages = results
+        )
+
+    final_interval := results[0].interval
+
+    for result in results[1:]:
+        if not intervals_overlap(final_interval, result.interval):
+            return failure_profile(
+                reason = "INTERVAL_INCONSISTENCY",
+                stages = results
+            )
+
+        final_interval :=
+            interval_intersection(final_interval, result.interval)
+
+    if radius(final_interval) > epsilon:
+        return failure_profile(
+            reason = "TARGET_ERROR_NOT_MET",
+            stages = results,
+            final_interval = final_interval
+        )
+
+    return RDGProfile{
+        stages         = results,
+        final_interval = final_interval,
+        final_ball     = ball_from_interval(final_interval),
+        status         = CONSISTENT
+    }
+
+
+CONSOLIDATION RULE
+------------------
+
+The only sound consolidation rule is:
+
+    B_final = intersection of all mutually overlapping certified stage
+              intervals.
+
+Formally:
+
+    B_final = intersection over i of I_i
+
+provided that:
+
+    intersection over i of I_i is nonempty.
+
+If the intersection is empty:
+
+    1. Do not select any single stage as final.
+    2. Do not use Q_instability to choose a winner.
+    3. Return an inconsistency failure.
+    4. Optionally recompute suspicious stages at higher precision.
+
+Q_instability may be recorded in the profile for diagnostics, but it has no
+authority over correctness.
+
+
+OUTPUT TYPE
+-----------
+
+Type RDGProfile = struct {
+    stages         : list of StageResult
+    final_interval : Interval
+    final_ball     : Ball
+    status         : Status
+    total_cost     : PositiveReal
+    diagnostics    : list of DiagnosticRecord
+}
+
+Type DiagnosticRecord = struct {
+    stage_index       : Natural
+    instability_score : Real
+    metric            : InstabilityMetric
+    notes             : String
+}
+
+
+FAILURE MODES
+-------------
+
+Type FailureReason = {
+    CERTIFICATION_FAILURE
+    INTERVAL_INCONSISTENCY
+    TARGET_ERROR_NOT_MET
+    PRECISION_LIMIT_EXCEEDED
+    MEMORY_LIMIT_EXCEEDED
+    INVALID_COST_MODEL
+    INVALID_ERROR_MODEL
+}
+
+Type FailureProfile = struct {
+    reason         : FailureReason
+    stages         : list of StageResult
+    final_interval : Interval or null
+    message        : String
+}
+
+
+REQUIREMENTS
+------------
+
+1. Every successful StageResult.interval must contain pi.
+
+2. Every successful StageResult must include a checkable certificate.
+
+3. Every interval operation affecting a certified bound must use outward
+   rounding.
+
+4. Truncation error and rounding error must be bounded separately.
+
+5. The final interval must be the intersection of all mutually consistent
+   certified stage intervals.
+
+6. The final radius must satisfy:
+
+       radius(final_interval) <= epsilon.
+
+7. If certified stage intervals do not overlap, the system must fail loudly.
+
+8. Q_instability is diagnostic only and must not select the final result.
+
+9. The selector must explicitly state whether its plan is provably optimal or
+   heuristic.
+
+10. New MethodID values may be added only if they implement the
+    CertifiedPiOperator contract.
+
+
+MINIMAL IMPLEMENTATION CHECKLIST
+--------------------------------
+
+1. Implement an outward-rounded interval type.
+
+2. Implement interval arithmetic:
+       add
+       subtract
+       multiply
+       divide
+       square root
+       power
+       comparison
+
+3. Implement certified tail bounds for each series operator.
+
+4. Implement separate rounding-error propagation.
+
+5. Implement a certificate verifier.
+
+6. Implement S_RDG with explicit parameter domains and cost model.
+
+7. Execute all selected stages independently.
+
+8. Check pairwise interval overlap.
+
+9. Intersect all overlapping certified intervals.
+
+10. Verify:
+
+        radius(final_interval) <= epsilon.
+
+11. Return either a certified RDGProfile or an explicit failure profile.
+
+
+DESIGN NOTES
+------------
+
+- The fixed sequence
+
+      Polygon -> Machin -> AGM -> Chudnovsky
+
+  is a useful diagnostic and cross-check template, but it should not be a
+  mandatory computational dependency.
+
+- For very high precision, a short seed followed by Chudnovsky is usually the
+  practical default.
+
+- AGM methods have excellent asymptotic convergence but require careful
+  interval propagation through square roots and divisions.
+
+- Machin-type formulas are useful as independent cross-checks, but they are
+  generally not competitive with Chudnovsky for very high precision.
+
+- Polygon methods are valuable as simple, independent low-precision
+  validations.
+
+- The selector, not a hard-coded pipeline, should determine which stages are
+  worth executing.
+
+- RDGMFEQ may supply diagnostics, cost estimates, and instability metrics, but
+  it does not alter interval arithmetic or certification semantics.
