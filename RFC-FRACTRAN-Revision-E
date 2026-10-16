@@ -761,3 +761,95 @@ GitHub Reference: stego-fractran (meta-introspector)
         piecewise-affine prime-exponent dynamics as formalized.
 
 =====================================================================
+15. APPENDIX: FRACTRAN Specification Code, Variant A (Informational)
+=====================================================================
+
+from math import gcd
+from functools import reduce
+
+def normalize(frac):
+    p, q = frac
+    g = gcd(p, q)
+    return p // g, q // g
+
+def fractran_step(n, fractions):
+    for i, (p, q) in enumerate(fractions):
+        if n % q == 0:
+            return n * p // q, i
+    return None, None
+
+# Test 11.1
+fractions_simple = [(3,2), (1,3)]
+n = 2
+steps = 0
+print("Simple program:")
+while True:
+    next_n, idx = fractran_step(n, fractions_simple)
+    if next_n is None:
+        print(f"Halted at {n} after {steps} transitions")
+        break
+    print(f"Step {steps+1}: {n} * {fractions_simple[idx]} = {next_n}")
+    n = next_n
+    steps += 1
+    if steps > 10:
+        break
+
+# PRIMEGAME variant A from 11.4
+prime_fracs = [
+    (17,91), (78,85), (19,51), (23,38), (29,33), (77,29), (95,23),
+    (77,19), (1,17), (11,13), (13,11), (15,2), (1,7), (55,1)
+]
+prime_fracs = [normalize(f) for f in prime_fracs]
+
+n = 2
+steps = 0
+powers_of_2 = []
+print("\nPRIMEGAME (variant A):")
+for step in range(100):
+    if n > 1 and (n & (n-1)) == 0:  # power of 2
+        exp = n.bit_length() - 1
+        if exp > 1:
+            powers_of_2.append((steps, n, exp))
+            if len(powers_of_2) >= 2:
+                break
+    next_n, idx = fractran_step(n, prime_fracs)
+    if next_n is None:
+        print("Halted unexpectedly")
+        break
+    # print(f"{steps}: {n} -> {next_n} via {idx}")
+    n = next_n
+    steps += 1
+
+print(f"After {steps} steps, powers of 2 found: {powers_of_2}")
+print(f"Current n={n}")
+
+=====================================================================
+16. APPENDIX: FRACTRAN Specification Code, Variant B (Informational)
+=====================================================================
+
+# Variant B from section 12
+prime_fracs_b = [
+    (17,91), (78,85), (19,51), (23,38), (29,33), (77,29), (95,23),
+    (77,19), (1,17), (11,13), (13,11), (15,14), (15,2), (55,1)
+]
+prime_fracs_b = [normalize(f) for f in prime_fracs_b]
+
+n = 2
+steps = 0
+powers = []
+for step in range(100):
+    if n > 1 and (n & (n-1)) == 0:
+        exp = n.bit_length() - 1
+        if exp > 1:
+            powers.append((steps, n, exp))
+            if len(powers) >= 3:
+                break
+    next_n, idx = fractran_step(n, prime_fracs_b)
+    if next_n is None:
+        break
+    n = next_n
+    steps += 1
+
+print(f"Variant B: powers of 2: {powers}")
+
+=====================================================================
