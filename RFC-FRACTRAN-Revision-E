@@ -50,14 +50,14 @@ You have:
   (think of it as the computer’s memory). 
 - A fixed list of fractions (the “program” or list of instructions).
 
-The rules are extremely simple:Start with some positive whole
-number. Look at the fractions in order from the beginning of
-the list. As soon as you find a fraction that, when multiplied 
-by your current number, produces another whole number, multiply 
-and replace your number with that new whole number. Immediately 
-go back to the start of the fraction list and repeat. Stop when 
-none of the fractions produce a whole number anymore. The final 
-number is the result.
+The rules are extremely simple: 
+Start with some positive whole number. Look at the fractions in 
+order from the beginning of the list. As soon as you find a fraction
+that, when multiplied by your current number, produces another whole
+number, multiply and replace your number with that new whole number.
+Immediately go back to the start of the fraction list and repeat.
+Stop when none of the fractions produce a whole number anymore. The 
+final number is the result.
 
 The clever part is how the single number stores information. 
 Every whole number can be uniquely broken into prime factors 
