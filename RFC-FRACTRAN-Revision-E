@@ -432,7 +432,7 @@ Global system:
 ---------------------------------------------------------------------
 state 2
 program [3/2, 1/3]
-Expected: halts at 1 after one transition (2 * 3/2 = 3, then 3 * 1/3 = 1).
+Expected: halts at 1 after two transitions (2 * 3/2 = 3, then 3 * 1/3 = 1).
 
 ---------------------------------------------------------------------
 11.2 Identity Nontermination
