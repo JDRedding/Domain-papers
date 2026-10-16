@@ -458,9 +458,27 @@ program [17/91, 78/85, 19/51, 23/38, 29/33, 77/29, 95/23,
 Expected first pure power of 2 after initial 2 is 4 = 2^2
 (after 19 transition steps).
 
+Note: This variant is the one most commonly associated with the 
+“19 transition steps to 2^2” claim (and appears in OEIS and many
+references)
+
 =====================================================================
 12. PRIMEGAME: Canonical Prime-Generation Example (Informational)
 =====================================================================
+Two common PRIMEGAME variants exist:
+
+Variant A (used in Section 11.4):
+  ... 13/11, 15/2, 1/7, 55/1
+
+Variant B (alternate, listed below):
+  ... 13/11, 15/14, 15/2, 55/1
+
+Both generate successive primes as exponents of powers of 2 under
+restart-scan semantics. Variant A is used for the test vectors
+in this specification. 
+
+They are NOT interchangeable; they produce different intermediate
+sequences.
 
 ---------------------------------------------------------------------
 12.1 Types and Core Variables
@@ -494,6 +512,7 @@ Program:
             15/2,
             55/1
         ]
+
 
 Registers (Prime-Exponent View):
     For each prime p:
