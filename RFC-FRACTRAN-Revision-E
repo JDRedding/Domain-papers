@@ -644,27 +644,78 @@ FRACTRAN computational model.
 14. References (Informational)
 =====================================================================
 
-    [CONWAY-FRACTRAN]
-        J. H. Conway,
-        "FRACTRAN: A Simple Universal Programming Language for 
-         Arithmetic", Department of Mathematics, Princeton 
-         University, Princeton, NJ 08544.
+Usage in RFC-FRACTRAN-Revision-E
+--------------------------------
+These references collectively support:
 
-    [ROSETTACODE-FRACTRAN]
-            Rosetta Code,
-            "Fractran",
-            https://rosettacode.org/wiki/Fractran
+    - Historical grounding of FRACTRAN (Conway).
+    - Practical implementations (Assar, Rosetta Code).
+    - Advanced research and extended applications (stego-fractran).
+    - Validation of restart-scan semantics, normalization rules,
+      exact arithmetic, and PRIMEGAME behavior as specified.
 
-    [ASSAR-FRACTRAN]
-            Richard Assar,
-            "FRACTRAN",
-            GitHub Repository,
-            https://github.com/richardassar/FRACTRAN
+Primary Source: FRACTRAN Origin
+-------------------------------
+[CONWAY-FRACTRAN]
+    J. H. Conway
+    "FRACTRAN: A Simple Universal Programming Language for Arithmetic"
+    Department of Mathematics
+    Princeton University
+    Princeton, NJ 08544
 
-    [STEGOFRACTRAN]
-            meta-introspector,
-            "stego-fractran",
-            GitHub Repository,
-            https://github.com/meta-introspector/stego-fractran
+    Informational:
+        Foundational paper introducing FRACTRAN, the restart-scan
+        model, prime-exponent register interpretation, and the 
+        PRIMEGAME program.
+
+Rosetta Code Reference
+----------------------
+[ROSETTACODE-FRACTRAN]
+    Rosetta Code
+    "Fractran"
+    https://rosettacode.org/wiki/Fractran
+
+    Informational:
+        Multilingual FRACTRAN implementations demonstrating:
+            - restart-scan semantics,
+            - normalization behavior,
+            - PRIMEGAME examples,
+            - halting and non-halting programs.
+        Useful for interoperability testing and verifying 
+        conformance with the RFC’s textual interchange format
+        and exact arithmetic rules.
+
+GitHub Reference: Richard Assar FRACTRAN Interpreter
+----------------------------------------------------
+[ASSAR-FRACTRAN]
+    Richard Assar
+    "FRACTRAN"
+    GitHub Repository
+    https://github.com/richardassar/FRACTRAN
+
+    Informational:
+        Practical FRACTRAN interpreter aligned with Conway’s 
+        semantics.
+        Demonstrates:
+            - arbitrary-precision arithmetic,
+            - fraction normalization,
+            - applicability logic,
+            - PRIMEGAME execution.
+
+GitHub Reference: stego-fractran (meta-introspector)
+----------------------------------------------------
+[STEGOFRACTRAN]
+    meta-introspector
+    "stego-fractran"
+    GitHub Repository
+    https://github.com/meta-introspector/stego-fractran
+
+    Informational:
+        Experimental FRACTRAN extensions for:
+            - steganographic encoding via prime-exponent registers,
+            - meta-computational structures,
+            - advanced trace manipulation.
+        Demonstrates nontraditional applications of FRACTRAN’s
+        piecewise-affine prime-exponent dynamics as formalized.
 
 =====================================================================
