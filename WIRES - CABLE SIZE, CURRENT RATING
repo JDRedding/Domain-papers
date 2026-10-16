@@ -1,0 +1,40 @@
+WIRES - CABLE SIZE, CURRENT RATING
+
+WIRES - CABLE SIZE          CURRENT RATING
+
+0.50 mm²                    5 Amp
+0.75 mm²                    7.5 Amp
+1.00 mm²                    10 Amp
+1.5 mm²                     13.5 Amp
+2.5 mm²                     13.5 Amp
+4 mm²                       22.5 Amp
+6 mm²                       42 Amp
+10 mm²                      60 Amp
+16 mm²                      80 Amp
+25 mm²                      80 Amp
+10 mm²                      60 Amp
+16 mm²                      80 Amp
+25 mm²                      100 Amp
+35 mm²                      122.5 Amp
+50 mm²                      150 Amp
+
+TYPES
+- Conductor: copper (most common); aluminum possible for larger sizes
+- Insulation: PVC, XLPE, or thermoset (temperature rating 60°C / 75°C / 90°C)
+- Installation: free air, conduit, cable tray, buried, or bundled
+
+VARIABLES
+- A = cross-sectional area (mm²)
+- I = continuous current (A)
+- R = resistance per unit length (Ω/km)
+- ΔT = temperature rise
+- n = number of current-carrying conductors
+- Ta = ambient temperature (°C)
+
+FUNDAMENTALS
+- Ampacity limited by I²R heating; heat must dissipate without exceeding insulation rating
+- Larger A → lower R → higher allowable I (approximately I ∝ √A for same conditions)
+- Derating required for high ambient temperature, bundling, conduit fill, or altitude
+- Voltage drop (IR drop) often governs long runs more than ampacity
+- Official reference: NEC Table 310.15(B)(16) (or local equivalent / IEC 60364) for exact values under stated conditions
+- Chart above is approximate visual summary only; use code tables + derating factors for design
