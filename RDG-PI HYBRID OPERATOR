@@ -18,6 +18,17 @@ The selector chooses a feasible, cost-minimizing plan under an explicit machine
 model. The consolidator combines certified stage enclosures by interval
 intersection, never by selecting a "most stable" ball.
 
+This defines the remaining components required for an implementable, 
+certifiable system:
+
+    1. Exact selector semantics.
+    2. Error-bound algebra.
+    3. Rounding-error propagation.
+    4. Method-specific certification duties.
+    5. Parallel execution.
+    6. Validation and regression testing.
+    7. Serialization and reproducibility.
+    8. Extension protocol for new operators.
 
 FUNDAMENTALS
 ------------
@@ -770,6 +781,781 @@ MINIMAL IMPLEMENTATION CHECKLIST
 11. Return either a certified RDGProfile or an explicit failure profile.
 
 
+SELECTOR FORMALIZATION
+----------------------
+
+Type PlanID
+    String
+
+Type StagePlan = struct {
+    plan_id  : PlanID
+    configs  : list of StageConfig
+    feasible : Bool
+    optimal  : Bool
+    proof    : OptimalityProof or null
+}
+
+Type OptimalityProof = struct {
+    search_method : SearchMethod
+    lower_bound   : PositiveReal
+    selected_cost : PositiveReal
+    certificate   : ProofReference
+}
+
+Type SearchMethod = {
+    EXHAUSTIVE_ENUMERATION
+    BRANCH_AND_BOUND
+    DYNAMIC_PROGRAMMING
+    INTEGER_PROGRAMMING
+    HEURISTIC_SEARCH
+}
+
+
+SELECTOR INPUT VALIDATION
+-------------------------
+
+Function validate_selector_input(
+    epsilon : Epsilon,
+    model   : MachineModel
+) -> Status
+
+    if epsilon <= 0:
+        return INVALID
+
+    if model.max_prec <= 0:
+        return INVALID
+
+    if model.parallelism < 1:
+        return INVALID
+
+    if model.memory_limit < 1:
+        return INVALID
+
+    if model.cost_per_mul <= 0:
+        return INVALID
+
+    if model.cost_per_add <= 0:
+        return INVALID
+
+    if model.cost_per_sqrt <= 0:
+        return INVALID
+
+    if model.cost_per_div <= 0:
+        return INVALID
+
+    if model.rounding_mode not in {OUTWARD_INTERVAL, DIRECTED_ROUNDING}:
+        return INVALID
+
+    return VALID
+
+
+ADMISSIBLE PARAMETER DOMAIN
+---------------------------
+
+Type ParameterDomain = struct {
+    method       : MethodID
+    min_param    : Natural
+    max_param    : Natural
+    min_prec     : Precision
+    max_prec     : Precision
+    param_step   : Natural
+    prec_step    : Precision
+}
+
+Default domains:
+
+    POLY:
+        min_param    = 4
+        max_param    = implementation-defined
+        min_prec     = 32 bits or 10 decimal digits
+        max_prec     = model.max_prec
+        param_step   = 1
+        prec_step    = implementation-defined
+
+    MACHIN:
+        min_param    = 1
+        max_param    = implementation-defined
+        min_prec     = 32 bits or 10 decimal digits
+        max_prec     = model.max_prec
+        param_step   = 1
+        prec_step    = implementation-defined
+
+    AGM:
+        min_param    = 1
+        max_param    = implementation-defined
+        min_prec     = 64 bits or 20 decimal digits
+        max_prec     = model.max_prec
+        param_step   = 1
+        prec_step    = implementation-defined
+
+    CHUDNOVSKY:
+        min_param    = 1
+        max_param    = implementation-defined
+        min_prec     = 64 bits or 20 decimal digits
+        max_prec     = model.max_prec
+        param_step   = 1
+        prec_step    = implementation-defined
+
+The implementation must not silently expand a parameter domain beyond the
+declared validation range.
+
+
+STAGE ERROR BUDGET
+------------------
+
+For a plan with stages indexed by i = 0, ..., s-1:
+
+    epsilon_0 > epsilon_1 > ... > epsilon_{s-1} > 0
+
+The final stage must satisfy:
+
+    radius(I_{s-1}) <= epsilon.
+
+Earlier stages may have larger radii, but each must satisfy:
+
+    radius(I_i) <= epsilon_i.
+
+A valid decreasing error-budget policy is:
+
+    epsilon_i = epsilon * safety_factor_i
+
+where:
+
+    safety_factor_i >= 1.
+
+For example:
+
+    epsilon_0 = 10^3 * epsilon
+    epsilon_1 = 10^2 * epsilon
+    epsilon_2 = 10^1 * epsilon
+    epsilon_3 = epsilon
+
+The selector must record the chosen budget policy in the plan.
+
+
+REQUIRED PRECISION
+------------------
+
+Function required_precision(
+    operator       : MethodID,
+    work_param     : Natural,
+    target_error   : ErrorBound,
+    model          : MachineModel
+) -> Precision
+
+    Returns the smallest declared precision p such that:
+
+        truncation_error(operator, work_param, p)
+        + rounding_error(operator, work_param, p)
+        <= target_error.
+
+If no admissible p satisfies the inequality:
+
+    return INFEASIBLE
+
+The implementation must distinguish:
+
+    1. Truncation error too large.
+    2. Rounding error too large.
+    3. Precision beyond model.max_prec.
+    4. Missing error-bound proof.
+
+
+TRUNCATION ERROR CONTRACT
+-------------------------
+
+Every operator must implement:
+
+Function truncation_error(
+    operator   : MethodID,
+    work_param : Natural,
+    p          : Precision
+) -> ErrorBound
+
+The returned value must be a proven upper bound on the error caused by
+replacing an infinite mathematical process by a finite one.
+
+Examples:
+
+    POLY:
+        Error from replacing the limiting polygon construction by an
+        n-sided polygon approximation.
+
+    MACHIN:
+        Error from truncating each arctangent series after m terms.
+
+    AGM:
+        Error from stopping after k iterations.
+
+    CHUDNOVSKY:
+        Error from summing only the first N series terms.
+
+The implementation must provide either:
+
+    1. A closed-form bound.
+    2. A recursively computable bound.
+    3. A rigorously validated numerical bound with proof of validity.
+
+
+ROUNDING ERROR CONTRACT
+-----------------------
+
+Every operator must implement:
+
+Function rounding_error(
+    operator   : MethodID,
+    work_param : Natural,
+    p          : Precision
+) -> ErrorBound
+
+The returned value must be a proven upper bound on the error introduced by
+finite-precision arithmetic.
+
+At minimum, the implementation must account for:
+
+    1. Interval endpoint rounding.
+    2. Multiplication rounding.
+    3. Division rounding.
+    4. Square-root rounding.
+    5. Accumulated error across all operations.
+    6. Loss of significance, where applicable.
+    7. Conversion between decimal and binary precision, if applicable.
+
+The default policy is:
+
+    rounding_error_bound =
+        sum over all certified operations of outward-rounding growth.
+
+If exact operation counting is impractical, the implementation may use a
+conservative bound, but the bound must remain proven.
+
+
+COMBINED ERROR BOUND
+--------------------
+
+Function total_error_bound(
+    result : StageResult
+) -> ErrorBound
+
+    return result.truncation_error + result.rounding_error
+
+Certification requirement:
+
+    radius(result.interval) <= total_error_bound(result)
+
+and:
+
+    total_error_bound(result) <= result.config.target_error
+
+
+METHOD-SPECIFIC CERTIFICATION DUTIES
+------------------------------------
+
+POLY OPERATOR
+-------------
+
+Required proof obligations:
+
+    1. Define whether n denotes polygon sides, refinement level, or another
+       parameter.
+    2. Define the inscribed polygon lower bound.
+    3. Define the circumscribed polygon upper bound.
+    4. Prove:
+
+           lower_bound <= pi <= upper_bound.
+
+    5. Prove the convergence rate.
+
+    6. Bound all trigonometric or algebraic operations used to construct the
+       polygons.
+
+    7. Use outward rounding for every interval operation.
+
+Recommended output:
+
+    I_poly = [L_inscribed, U_circumscribed]
+
+
+MACHIN OPERATOR
+---------------
+
+Required proof obligations:
+
+    1. State the exact arctangent identity.
+
+       Example form:
+
+           pi = 16 * arctan(1/5) - 4 * arctan(1/239)
+
+       The implementation may use this identity or another proven Machin-like
+       identity, but must declare it.
+
+    2. Define the series expansion used for each arctangent.
+
+    3. Prove the remainder bound after m terms.
+
+    4. For alternating series, use a rigorous alternating-series remainder
+       bound.
+
+    5. Bound rounding error through every multiplication and division.
+
+    6. Return:
+
+           I_machin = [pi_approx - delta, pi_approx + delta]
+
+       with outward-rounded endpoints.
+
+
+AGM OPERATOR
+------------
+
+Required proof obligations:
+
+    1. State the exact recurrence.
+
+       A standard Gauss-Legendre form is:
+
+           a_0 = 1
+           b_0 = 1 / sqrt(2)
+           t_0 = 1 / 4
+           p_0 = 1
+
+           a_{k+1} = (a_k + b_k) / 2
+           b_{k+1} = sqrt(a_k * b_k)
+           t_{k+1} = t_k - p_k * (a_k - a_{k+1})^2
+           p_{k+1} = 2 * p_k
+
+           pi_approx_k = (a_k + b_k)^2 / (4 * t_k)
+
+    2. Prove that pi_approx_k converges to pi.
+
+    3. Bound the difference:
+
+           abs(pi_approx_k - pi)
+
+       after k iterations.
+
+    4. Bound interval-width growth through:
+
+           multiplication
+           addition
+           subtraction
+           division
+           square root
+
+    5. Stop only when the certified radius meets target_error.
+
+    6. Return an outward-rounded interval.
+
+
+CHUDNOVSKY OPERATOR
+-------------------
+
+Required proof obligations:
+
+    1. State the exact series.
+
+    2. State the summation order.
+
+    3. Use binary splitting or another rigorously analyzed evaluation
+       strategy.
+
+    4. Prove the tail bound after N terms.
+
+    5. Bound rounding error through all rational reconstructions, square
+       roots, and final divisions.
+
+    6. Return an outward-rounded interval.
+
+A typical Chudnovsky implementation evaluates a truncated hypergeometric
+series using binary splitting. The implementation must document:
+
+    1. The recurrence used by binary splitting.
+    2. The integer range at each recursion level.
+    3. The conversion from rational partial sums to interval enclosures.
+    4. The final square-root and reciprocal operations.
+    5. The tail-error proof.
+
+
+PARALLEL EXECUTION
+------------------
+
+Type ExecutionMode = {
+    SEQUENTIAL
+    PARALLEL_INDEPENDENT
+    PARALLEL_RECURSIVE
+}
+
+Function execute_plan(
+    plan  : StagePlan,
+    model : MachineModel
+) -> list of StageResult
+
+    If model.parallelism == 1:
+        execution_mode = SEQUENTIAL
+
+    else if all stage configurations are independent:
+        execution_mode = PARALLEL_INDEPENDENT
+
+    else:
+        execution_mode = PARALLEL_RECURSIVE
+
+    Execute stages according to execution_mode.
+
+Rules:
+
+    1. Independent stages may run concurrently.
+    2. Dependent stages must respect their data dependencies.
+    3. Every worker must use the same rounding mode.
+    4. Every worker must use the same precision policy.
+    5. Every worker must produce a certificate.
+    6. The scheduler must record worker assignment and execution time.
+    7. Nondeterministic scheduling must not affect the certified interval.
+
+
+PARALLEL CHUDNOVSKY
+-------------------
+
+Binary splitting may be parallelized by splitting the summation range:
+
+    [0, N-1] = [0, m-1] union [m, N-1]
+
+Compute:
+
+    partial_0 = binary_split(0, m-1)
+    partial_1 = binary_split(m, N-1)
+
+Then combine the partial results using the exact rational recurrence.
+
+Certification requirements:
+
+    1. The combination operation must be exact or outward-rounded.
+    2. The tail bound must cover the full original range [0, N-1].
+    3. The scheduler must ensure no term is omitted or duplicated.
+    4. The final interval must be identical, up to documented outward-rounding
+       variation, to a sequential implementation using the same precision and
+       rounding policy.
+
+
+CROSS-VALIDATION
+----------------
+
+Function cross_validate(
+    results : list of StageResult
+) -> CrossValidationReport
+
+Type CrossValidationReport = struct {
+    status              : Status
+    pairwise_overlaps   : list of PairwiseOverlap
+    intersection        : Interval or null
+    max_disagreement    : Real
+    suspicious_stages   : list of Natural
+}
+
+Type PairwiseOverlap = struct {
+    index_a : Natural
+    index_b : Natural
+    overlap : Bool
+    intersection_width : ErrorBound or null
+}
+
+Rules:
+
+    1. Compare every pair of certified stage intervals.
+    2. Record whether they overlap.
+    3. Compute their intersection when overlap holds.
+    4. Compute the global intersection when all pairs overlap.
+    5. Mark a stage suspicious if it is inconsistent with the majority of
+       other certified stages.
+    6. A suspicious stage must trigger recomputation or failure, not silent
+       removal.
+
+
+ADAPTIVE RECOVERY
+-----------------
+
+Function adaptive_recover(
+    failed_result : StageResult,
+    model         : MachineModel
+) -> StageResult or FailureProfile
+
+    Increase precision by a declared recovery increment:
+
+        p_new = min(
+            model.max_prec,
+            p_old + recovery_increment
+        )
+
+    Increase the method parameter only if truncation error is the dominant
+    failure mode:
+
+        if truncation_error > rounding_error:
+            work_param_new = work_param_old + parameter_increment
+        else:
+            work_param_new = work_param_old
+
+    Recompute the stage.
+
+    If certification still fails:
+        return FailureProfile
+
+Recovery limits:
+
+    1. Maximum recovery attempts.
+    2. Maximum precision.
+    3. Maximum memory usage.
+    4. Maximum wall-clock time.
+
+The recovery policy must be deterministic or fully recorded in the profile.
+
+
+SERIALIZATION
+-------------
+
+Type SerializedProfile = struct {
+    format_version : String
+    epsilon        : Epsilon
+    machine_model  : MachineModel
+    plan           : StagePlan
+    stages         : list of StageResult
+    final_interval : Interval
+    final_ball     : Ball
+    status         : Status
+    total_cost     : PositiveReal
+    certificates   : list of Certificate
+}
+
+Serialization requirements:
+
+    1. Preserve exact interval endpoints.
+    2. Preserve precision and rounding mode.
+    3. Preserve all method parameters.
+    4. Preserve all cost-model parameters.
+    5. Preserve certificate references.
+    6. Preserve failure reasons.
+    7. Use a deterministic canonical encoding.
+
+A serialized profile must be sufficient to reproduce the final interval,
+subject to the same machine model, operator implementations, and rounding
+policy.
+
+
+REPRODUCIBILITY REQUIREMENTS
+----------------------------
+
+A valid implementation must record:
+
+    1. Software version.
+    2. Operator implementation version.
+    3. Interval-arithmetic library version.
+    4. Machine model.
+    5. Rounding mode.
+    6. Precision policy.
+    7. Stage plan.
+    8. All stage parameters.
+    9. All certificates.
+   10. Random seed, if any heuristic search is used.
+
+If heuristic search is used, the implementation must either:
+
+    1. Use a fixed seed.
+    2. Store the complete search trace.
+    3. Provide a deterministic replay procedure.
+
+
+VALIDATION TESTS
+----------------
+
+Type TestLevel = {
+    UNIT
+    INTEGRATION
+    CERTIFICATION
+    PERFORMANCE
+    ADVERSARIAL
+}
+
+
+UNIT TESTS
+----------
+
+Required tests:
+
+    1. Interval construction.
+    2. Outward rounding direction.
+    3. Interval addition.
+    4. Interval subtraction.
+    5. Interval multiplication.
+    6. Interval division.
+    7. Interval square root.
+    8. Interval intersection.
+    9. Interval overlap.
+   10. Ball-to-interval conversion.
+   11. Interval-to-ball conversion.
+
+
+INTEGRATION TESTS
+-----------------
+
+Required tests:
+
+    1. Each operator returns an interval containing pi.
+    2. Each operator respects target_error.
+    3. Each operator produces a valid certificate.
+    4. The selector produces a feasible plan.
+    5. The pipeline produces a nonempty final interval.
+    6. The final radius is at most epsilon.
+
+
+CERTIFICATION TESTS
+-------------------
+
+For each MethodID and several precision levels:
+
+    1. Recompute the interval using an independent certified implementation.
+    2. Verify that the two intervals overlap.
+    3. Verify that their intersection contains pi.
+    4. Verify that the claimed radius is not smaller than the certified
+       intersection radius.
+    5. Verify that truncation and rounding bounds are individually sound.
+
+
+PERFORMANCE TESTS
+-----------------
+
+Measure:
+
+    1. Wall-clock time.
+    2. CPU time.
+    3. Peak memory.
+    4. Number of multiplications.
+    5. Number of square roots.
+    6. Number of divisions.
+    7. Parallel speedup.
+    8. Parallel efficiency.
+    9. Selector time.
+   10. Certificate-verification time.
+
+
+ADVERSARIAL TESTS
+-----------------
+
+Required failure tests:
+
+    1. Two operators produce non-overlapping intervals.
+    2. A stage exceeds target_error.
+    3. A stage exceeds model.max_prec.
+    4. A certificate is missing.
+    5. A certificate hash does not match.
+    6. A rounding mode is inconsistent across workers.
+    7. A selector proposes an infeasible plan.
+    8. A cost model returns a nonpositive cost.
+    9. A truncation bound is negative.
+   10. A rounding bound is negative.
+
+In every case, the system must return an explicit failure profile.
+
+
+EXTENSION PROTOCOL
+------------------
+
+To add a new MethodID, an implementation must provide:
+
+    1. A unique MethodID.
+    2. A mathematical definition of the approximation.
+    3. A proof that the approximation converges to pi.
+    4. A truncation-error bound.
+    5. A rounding-error bound.
+    6. An outward-rounded interval implementation.
+    7. A certificate generator.
+    8. A certificate verifier.
+    9. A cost model.
+   10. A parameter-domain declaration.
+   11. Unit, integration, certification, and adversarial tests.
+
+A new operator may be used by S_RDG only after all requirements are met.
+
+
+MINIMAL REFERENCE ARCHITECTURE
+------------------------------
+
+    +----------------------+
+    | Selector S_RDG       |
+    +----------------------+
+              |
+              v
+    +----------------------+
+    | StagePlan            |
+    +----------------------+
+              |
+              v
+    +----------------------+
+    | Certified Operators  |
+    | POLY / MACHIN /      |
+    | AGM / CHUDNOVSKY     |
+    +----------------------+
+              |
+              v
+    +----------------------+
+    | StageResults         |
+    | interval + proof     |
+    +----------------------+
+              |
+              v
+    +----------------------+
+    | Cross-Validation     |
+    +----------------------+
+              |
+              v
+    +----------------------+
+    | Interval Intersection|
+    +----------------------+
+              |
+              v
+    +----------------------+
+    | Final Certified Ball |
+    +----------------------+
+
+
+FINAL CORRECTNESS THEOREM
+-------------------------
+
+Assume:
+
+    1. Every operator satisfies the CertifiedPiOperator contract.
+    2. Every interval operation uses outward rounding.
+    3. Every truncation-error bound is valid.
+    4. Every rounding-error bound is valid.
+    5. All final stage intervals mutually overlap.
+    6. The final interval is their intersection.
+    7. The final radius is at most epsilon.
+
+Then:
+
+    pi is an element of final_interval
+
+and:
+
+    radius(final_interval) <= epsilon.
+
+Therefore, the returned final_ball is a certified enclosure of pi.
+
+
+IMPLEMENTATION PRIORITY
+-----------------------
+
+Recommended implementation order:
+
+    1. Outward-rounded interval arithmetic.
+    2. Ball and interval conversions.
+    3. Certified Chudnovsky operator.
+    4. Certified AGM operator.
+    5. Certified Machin operator.
+    6. Certified polygon operator.
+    7. Cross-validation and intersection consolidator.
+    8. Selector with explicit cost and error models.
+    9. Parallel execution layer.
+   10. Certificate serialization and replay.
+
 DESIGN NOTES
 ------------
 
@@ -797,3 +1583,25 @@ DESIGN NOTES
 
 - RDGMFEQ may supply diagnostics, cost estimates, and instability metrics, but
   it does not alter interval arithmetic or certification semantics.
+
+STATUS
+------
+
+This specification is implementation-ready at the interface and certification
+level.
+
+It is not complete until each operator supplies:
+
+    1. Exact formulas.
+    2. Explicit tail bounds.
+    3. Explicit rounding-error propagation.
+    4. Machine-checkable certificates.
+    5. Validation test results.
+
+The central rule is:
+
+    Compute independently.
+    Certify every stage.
+    Intersect consistent enclosures.
+    Fail loudly on inconsistency.
+    Never select a result merely because it looks more stable.
