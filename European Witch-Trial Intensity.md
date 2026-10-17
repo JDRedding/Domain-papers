@@ -167,3 +167,90 @@ $$
 \mathcal{F}(\text{Spain/Italy/Ireland-type}) &= \text{minimal/light-mode structure}
 \end{align*}
 $$
+
+## APPENDIX: Category theory applications
+
+The existing functor $\mathcal{F}: \mathcal{C}_{\text{inst}} \to \mathcal{C}_{\text{int}}$ already shows that institutional configurations determine intensity modes. Category theory supplies additional structure for composition, comparison, and stability of these systems.
+
+### 1. Natural transformations between SID and PED
+
+SID and PED are two projections of the same underlying configuration on $\Gamma$. A natural transformation $\eta: \mathrm{SID} \Rightarrow \mathrm{PED}$ encodes their compatibility.
+
+- Components $\eta_R: D(R) \to \sum w_{R,I} D_I(I)$ measure how well the region-centric cascade kernel agrees with the institution-weighted aggregation.
+- Naturality squares ensure that reforms (morphisms in $\mathcal{C}_{\text{inst}}$) act consistently on both views.
+- High naturality failure signals regions where local panic dynamics diverge from formal institutional rules (common in HRE micro-jurisdictions).
+
+### 2. Colimits for jurisdictional aggregation
+
+Treat a territory as a diagram of local courts. The colimit
+
+$$
+\mathrm{colim}_{I \sim R} I
+$$
+
+constructs the effective regional institution.
+
+- In the HRE the colimit is nearly the coproduct (disjoint union): weak gluing maps, so panics remain local and multiply.
+- In Spain/Italy the colimit is closer to a pushout or coequalizer under the Inquisition: local accusations are identified and dampened by the central object.
+- Intensity $P(R)$ can be recovered as a weighted sum over the legs of the colimit cone, recovering the earlier PED aggregation formula.
+
+### 3. Adjunctions between local and central institutions
+
+Define a free/forgetful adjunction:
+
+$$
+L \dashv R
+$$
+
+where $L$ freely generates a cascade from local accusations and $R$ restricts a regional panic to its local generators.
+
+- Unit and counit measure information loss and amplification.
+- In high - $T$, low - $E_v$ systems the counit is far from an isomorphism: local data is irreversibly inflated.
+- In Inquisition-type systems the adjunction is closer to an equivalence on the subcategory of admissible accusations, explaining near-zero executions despite investigation.
+
+### 4. Monads for cascade dynamics
+
+The cascade kernel $\Phi$ induces a monad $T$ on the category of accusation networks:
+
+- $T(A)$ is the set of accusations reachable by one round of torture-enabled confession chains.
+- Multiplication $T^2 \Rightarrow T$ encodes iterated panics.
+- Algebras for $T$ are precisely the stable Q-modes: heavy modes are fixed points of high-gain monads; minimal modes are fixed points of strongly damping monads.
+
+Kleisli composition then models sequential institutional reforms (e.g., abolition of torture as a monad morphism that collapses the cascade).
+
+### 5. Sheaves and local-to-global consistency
+
+View intensity as a sheaf $P$ on the site whose covers are jurisdictional subdivisions.
+
+- Local sections are trial intensities inside single courts.
+- The sheaf condition fails exactly when overlapping jurisdictions produce inconsistent accusation sets (classic HRE pattern).
+- Descent data correspond to successful central interventions that glue local sections into a global low-intensity section (Inquisition or royal appellate review).
+
+### 6. Limits for equilibrium under constraints
+
+The limit of the diagram of possible reforms (centralization maps, evidentiary tightenings, torture abolitions) yields the most constrained stable configuration reachable from a given starting object.
+
+- Germany-type objects have few morphisms into high-centralization objects, so their limit remains in the heavy mode.
+- Spain/Italy-type objects already sit near the limit of the damping diagram.
+
+### Compact formal summary
+
+```markdown
+// Category-theoretic extensions of the intensity model
+
+type Cat_inst = institutional configurations + reform morphisms
+type Cat_int  = (P, Q) structures + threshold-preserving maps
+
+// Core functor (already present)
+F : Cat_inst → Cat_int
+
+// Additional structure
+η : SID ⇒ PED                          // natural transformation of projections
+colim_{I ∼ R} I                        // effective regional institution
+L ⊣ R                                  // local cascade free / central restriction
+T                                      // cascade monad on accusation networks
+P                                      // sheaf of intensity on jurisdictional site
+lim (reform diagram)                   // constrained equilibrium mode
+```
+
+These constructions turn the historical contrast (HRE amplification versus Iberian/Irish damping) into a precise statement about the non-equivalence of certain objects, the failure of colimits to glue, the non-invertibility of adjunction units, and the fixed points of distinct monads. The same toolkit applies to any system in which local autonomous agents interact with central constraints under incomplete information.
