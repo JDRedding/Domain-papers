@@ -1,6 +1,6 @@
 **UNIT CIRCLE**  
 *RDG SID–PED Q Mapping*
-(angles labeled in degrees and radians; coordinates shown as $(\cos\theta,\sin\theta)$)
+(angles labeled in degrees and radians; coordinates shown as $(\cos\theta,\sin\theta)$ )
 
 ```
                                    (0°, 0)
