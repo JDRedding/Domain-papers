@@ -481,3 +481,121 @@ Can think of $x,y,z$ as indexing the **configuration**, **potential**, and **qua
 
 ---
 
+## APPENDIX ASCII diagrams
+Each of the seven quantum–classical bridges, using symbolic triples **a,b,c ; p,q,r ; x,y,z**.  
+Each diagram is structurally distinct and tuned to the analytic style — no filler, no emojis, no fluff.
+
+---
+
+# 1. Correspondence Principle  
+Classical ↔ Quantum stabilized by the correspondence map (ℏ→0)
+
+```
+ Classical (a) ---- c ----> Quantum (b)
+        ^                       |
+        |                       v
+        +--------- c -----------+
+```
+
+Interpretation:  
+`a` = classical observables  
+`b` = quantum observables  
+`c` = correspondence constraint (limit, mapping, asymptotics)
+
+---
+
+# 2. Semiclassical Methods  
+Classical action ↔ semiclassical wave ↔ ℏ‑corrections
+
+```
+      p  ---- r ----> q
+      |               |
+      +------ r ------+
+```
+
+`p` = classical trajectory/action  
+`q` = semiclassical wave (WKB, EBK)  
+`r` = ℏ‑series corrections
+
+---
+
+# 3. Phase‑Space Formalisms  
+Position ↔ momentum stabilized by phase‑space distribution
+
+```
+   x <------ z ------> p
+      \              /
+       \            /
+        +---- z ---+
+```
+
+`x` = configuration  
+`p` = momentum  
+`z` = Wigner/Liouville distribution
+
+---
+
+# 4. Decoherence  
+System ↔ environment stabilized by decoherence channel
+
+```
+   a ----  c ----> x
+    \             /
+     \           /
+      +--- c ---+
+```
+
+`a` = system  
+`x` = environment  
+`c` = decoherence channel (pointer basis selection)
+
+---
+
+# 5. Hybrid Quantum–Classical Dynamics  
+Classical momentum ↔ quantum momentum stabilized by hybrid bracket
+
+```
+   p ----  q ----> 𝑝̂
+    \             /
+     \           /
+      +--- q ---+
+```
+
+`p` = classical momentum  
+`hat{p}` = quantum momentum operator  
+`q` = hybrid coupling rule (Poisson + commutator)
+
+---
+
+# 6. Category‑Theoretic Equivalence  
+Poisson manifold ↔ C*‑algebra stabilized by functorial mapping
+
+```
+ (x,p) ---- r ----> (x̂,p̂)
+     ^               |
+     |               v
+     +------ r ------+
+```
+
+`(x,p)` = classical Poisson manifold  
+`(hat{x}, hat{p})` = quantum operator algebra  
+`r` = quantization/classical‑limit functors
+
+---
+
+# 7. Least‑Action Reformulations  
+Action ↔ wavefunction stabilized by density field
+
+```
+   S ----  R ----> ψ
+    \             /
+     \           /
+      +--- R ---+
+```
+
+`S` = classical action (Hamilton–Jacobi)  
+`ψ` = quantum wavefunction  
+`R` = density/amplitude field
+
+---
+
