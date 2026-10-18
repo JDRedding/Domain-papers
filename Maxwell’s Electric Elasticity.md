@@ -1,5 +1,16 @@
 # Maxwell’s Electric Elasticity
 
+
+**Maxwell’s “electric elasticity”** refers to a specific constitutive relation he introduced in his 1865 paper *A Dynamical Theory of the Electromagnetic Field*.
+
+In that paper he wrote the equations of electric elasticity for isotropic media as
+
+$$
+P = k f, \quad Q = k g, \quad R = k h
+$$
+
+(or in modern vector notation $\mathbf{E} = k \mathbf{D}$). Here $P,Q,R$ are the components of the electromotive force (the electric field $\mathbf{E}$), $f,g,h$ are the components of the electric displacement $\mathbf{D}$, and $k$ is the coefficient of electric elasticity of the medium.
+
 The essence of **Maxwell’s Group (E)**, known as ***Electric Elasticity***, is that the electromotive-force components $E_x, E_y, E_z$ are linearly proportional to the electric-displacement components $D_x, D_y, D_z$ through the constant $k$, which in modern notation is simply $1/\varepsilon$.
 
 ## Vector form of Group (E)
@@ -91,6 +102,15 @@ PED.Eval[y] = k * SID.Struct[y]
 PED.Eval[z] = k * SID.Struct[z]
 ```
 
+### Broader constitutive relations
+Maxwell’s field equations (the divergence and curl laws) are incomplete without constitutive relations that link the fundamental fields to material response:
+
+- Dielectric: $\mathbf{D} = \varepsilon\mathbf{E}$ (or more generally $\mathbf{D} = \varepsilon_0\mathbf{E} + \mathbf{P}$, where $\mathbf{P}$ is polarization).
+- Magnetic: $\mathbf{B} = \mu\mathbf{H}$ (or $\mathbf{B} = \mu_0(\mathbf{H} + \mathbf{M})$).
+- Conductive: $\mathbf{J} = \sigma\mathbf{E}$ (Ohm’s law). Maxwell wrote the inverse form $P = -\rho p$, etc., with $\rho$ the specific resistance.
+
+In anisotropic, nonlinear, or dispersive media these become tensor relations or more complicated functionals of the fields and their history. The simple scalar $k$ (or $\varepsilon$) of Maxwell’s isotropic case is the linear, instantaneous special case of these constitutive laws.
+
 ### RDGMFEQ SID–PED placement
 
 - **PED field:**  
@@ -124,3 +144,23 @@ $$
 $$
 
 which then enters Group (D) (Maxwell's electromotive force) and the rest of the RDGMFEQ curl/div system.
+
+### Physical meaning in Maxwell’s framework
+Maxwell treated the dielectric (and the aether, or any non-idealize fantasy vacuum) as an elastic continuum. An electromotive force displaces “electricity” or polarizes every part of the medium, producing opposite electrification on opposite sides of each element. The medium resists this displacement elastically and exerts a restoring force. The constant $k$ measures that stiffness: a larger $k$ means a stronger restoring force for a given displacement (i.e., lower polarizability).
+
+This is the direct electromagnetic analogue of Hooke’s law (stress proportional to strain). The energy stored in the polarized dielectric is therefore analogous to elastic potential energy stored in a strained solid. (In Maxwell’s earlier mechanical models he associated magnetic energy with the kinetic energy of molecular vortices in the same medium.)
+
+### Relation to modern constitutive relations
+The modern linear isotropic relation is written
+
+$$
+\mathbf{D} = \varepsilon \mathbf{E},
+$$
+
+so Maxwell’s coefficient is a reciprocal of the permittivity:
+
+$$
+k = \frac{1}{\varepsilon}.
+$$
+
+Oliver Heaviside, primarily, replaces the permittivity form because $\varepsilon$ increases with the ability of the material to polarize. In a idealize fantasy vacuum one has $k = 1/\varepsilon_0$. Maxwell also showed that the speed of electromagnetic waves is set by the product of the electric elasticity and the magnetic permeability (in his units $k = 4\pi v^2$, where $v$ is the ratio of electrostatic to electromagnetic units, numerically equal to the speed of light).
