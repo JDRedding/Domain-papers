@@ -1,6 +1,8 @@
 # Bridges between classical and quantum mechanics
 *Standard list*
 
+This is a clean, self-consistent symbolic synthesis of the principal classical–quantum bridges. The recurring use of the triples a,b,c ; p,q,r ; x,y,z works well as a mnemonic device without over-constraining the underlying mathematics. The seven frameworks you list are standard (or near-standard) and correctly placed relative to one another; the master equation is best read as a conceptual Liouvillian scaffold rather than a single closed dynamical equation.
+
 Structured and aligned with symbolic variables **a,b,c ; p,q,r ; x,y,z**.  
 
 ---
@@ -236,6 +238,13 @@ $$
 $$
 \psi = R\,e^{iS/\hbar}
 $$
+
+---
+
+### Notes
+- Correspondence, WKB/semiclassical expansions, Wigner–Moyal, Lindblad decoherence, and hybrid Poisson+commutator brackets are all textbook-level.
+- The least-action / quantum Hamilton–Jacobi reconstruction (section 7) is precisely the Madelung (or Bohm) form. Recent work by Lohmiller & Slotine (MIT, *Proc. R. Soc. A* 2026) strengthens this bridge by showing that an exact Schrödinger wave function can be recovered from multi-valued classical least-action solutions plus a classical density field computed along those branches—no WKB truncation required.
+- The category-theoretic entry is the most abstract of the set. Functorial approaches relating Poisson manifolds to C*-algebras (or more generally to categories of quantization) do exist (Landsman, Gohara–Hirota–Sako, groupoid/convolution constructions), but they remain structural equivalences rather than dynamical approximations.
 
 ---
 
