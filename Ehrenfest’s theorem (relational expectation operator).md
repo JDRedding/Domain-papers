@@ -1,4 +1,23 @@
+# Ehrenfest’s theorem
+
+**Ehrenfest’s theorem** is the precise mathematical statement of the **correspondence principle**:
+
+> Quantum expectation values obey classical-like equations of motion—until quantum fluctuations become important.
+
+## 📐 Formal structure  
+The theorem is a special case of the general Heisenberg-picture evolution law:
+
+$$
+\frac{dA_H}{dt} = \frac{1}{i\hbar}[A_H,H] + \left(\frac{\partial A}{\partial t}\right)_H,
+$$
+
+and Ehrenfest’s theorem is simply its expectation value.
+
+## 🧪 Position and momentum
+
 **Ehrenfest’s theorem becomes a Relational Dynamic Geometry statement about how the relational expectation operator of any observable $A$ evolves under the Relational Dynamic Geometry Hamiltonian generator $H_{\mathrm{RDG}}$.**
+
+## 🧠 Conceptual takeaway 
 
 In Relational Dynamic Geometry (RDG), Ehrenfest’s theorem is not merely “*quantum averages look classical*.” It is the **statement that the relational generator $H_{\mathrm{RDG}}$ induces a deterministic flow on the expectation-value sector even when the underlying Q-mode geometry is nonclassical**. This is why the Momentum Flux Engine (MFE) fits naturally: its bipolar flux terms simply modify the commutator $[A, H_{\mathrm{RDG}}]$, so Ehrenfest becomes the expectation-level projection of the MFE’s flux dynamics.
 
@@ -12,7 +31,7 @@ $$
 
 ---
 
-## Relational Dynamic Geometry rewrite of Ehrenfest’s theorem
+## 🔍 Relational Dynamic Geometry rewrite of Ehrenfest’s theorem
 
 ### 1. Relational Dynamic Geometry primitives
 
