@@ -376,3 +376,108 @@ $$
 where $Q_z[R]$ is a “quantum potential”‑type functional (e.g. involving $\nabla^2 R / R$), and $V(y)$ is a potential written with the $y$. This term encodes the **least‑action reformulation**: quantum dynamics reconstructed from modified classical action.
 
 
+## APPENDIX: Triadics
+Take those seven bridges and express them as **triads** built from **a,b,c ; p,q,r ; x,y,z**. Each approach becomes a **relational triad** — two poles plus a stabilizing/mediating element.
+
+| Triad | Roles | Framework mapped |
+|-------|-------|------------------|
+| $a \leftrightarrow b \mid c$ | **a:** classical, **b:** quantum, **c:** correspondence constraint | Standard correspondence principle |
+| $p \leftrightarrow q \mid r$ | **p:** classical trajectory, **q:** semiclassical wave/action, **r:** ℏ‑expansion / correction | Semiclassical methods |
+| $x \leftrightarrow p \mid z$ | **x:** configuration, **p:** momentum, **z:** phase‑space distribution (Wigner/Liouville) | Phase‑space formalisms |
+| $a \leftrightarrow x \mid c$ | **a:** system, **x:** environment, **c:** decoherence channel / pointer basis | Decoherence and emergence |
+| $p \leftrightarrow \hat{p} \mid q$ | **p:** classical momentum, **$\hat{p}$:** quantum momentum, **q:** hybrid coupling rule | Hybrid quantum–classical dynamics |
+| $(x,p) \leftrightarrow (\hat{x},\hat{p}) \mid r$ | **(x,p):** Poisson manifold, **($\hat{x},\hat{p}$):** C*‑algebra/Hilbert, **r:** quantization/classical‑limit functors | Category‑theoretic equivalence |
+| $S \leftrightarrow \psi \mid R$ (encoded in $x,y,z$) | **S:** action (HJ), **$\psi$:** wavefunction, **R:** density/amplitude field | Least‑action reformulations |
+
+---
+
+### 1. Correspondence principle triad: $a \leftrightarrow b \mid c$
+
+- **a:** classical observables $A_c(a)$  
+- **b:** quantum observables $\hat{A}_q(b)$  
+- **c:** correspondence map/limit (ℏ→0, large quantum numbers)
+
+Symbolically:
+
+$$
+c:\quad \hat{A}_q(b) \xrightarrow[\hbar\to 0]{} A_c(a)
+$$
+
+---
+
+### 2. Semiclassical triad: $p \leftrightarrow q \mid r$
+
+- **p:** classical trajectory/action $S_0(p)$  
+- **q:** semiclassical wave $\psi_q$ built from $S_0$  
+- **r:** ℏ‑series / correction structure
+
+$$
+\psi_q(x) \sim \exp\!\left[\frac{i}{\hbar}\big(S_0(p;x) + r\big)\right]
+$$
+
+---
+
+### 3. Phase‑space triad: $x \leftrightarrow p \mid z$
+
+- **x:** position  
+- **p:** momentum  
+- **z:** phase‑space distribution (Wigner $W$ or classical $f$)
+
+$$
+z = z(x,p) \quad\text{with}\quad
+\{x,p\}=1,\;\text{or Moyal bracket for quantum}
+$$
+
+---
+
+### 4. Decoherence triad: $a \leftrightarrow x \mid c$
+
+- **a:** system degrees of freedom  
+- **x:** environment degrees of freedom  
+- **c:** decoherence channel / pointer basis selection
+
+$$
+c:\quad \rho_a \to \rho_a^{\text{diag in }x}
+$$
+
+---
+
+### 5. Hybrid dynamics triad: $p \leftrightarrow \hat{p} \mid q$
+
+- **p:** classical momentum  
+- **$\hat{p}$:** quantum momentum operator  
+- **q:** coupling rule (hybrid bracket)
+
+$$
+q:\quad \frac{dA}{dt} = \{A,H_c\}_{p} + \frac{1}{i\hbar}[A,H_q]
+$$
+
+---
+
+### 6. Category‑theoretic triad: $(x,p) \leftrightarrow (\hat{x},\hat{p}) \mid r$
+
+- **(x,p):** classical Poisson manifold  
+- **($\hat{x},\hat{p}$):** quantum C*‑algebra/Hilbert representation  
+- **r:** functorial bridge (quantization/classical‑limit)
+
+$$
+r:\quad \mathcal{Q}(x,p) = (\hat{x},\hat{p}),\quad
+\mathcal{C}(\hat{x},\hat{p}) = (x,p)
+$$
+
+---
+
+### 7. Least‑action triad: $S \leftrightarrow \psi \mid R$ (encoded via $x,y,z$)
+
+- **S:** classical action (HJ)  
+- **$\psi$:** quantum wavefunction  
+- **R:** density/amplitude field
+
+$$
+\psi(x) = R(x)\,e^{iS(x)/\hbar}
+$$
+
+Can think of $x,y,z$ as indexing the **configuration**, **potential**, and **quantum potential** pieces inside $S$ and $R$.
+
+---
+
