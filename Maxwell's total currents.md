@@ -1,4 +1,4 @@
-Maxwell's total Currents (Group A, 3 equations) defines the *total* (or effective) current components as
+Maxwell's total currents (Group A, 3 equations) defines the *total* (or effective) current components as
 
 $$
 J'_x = J_x + \frac{dD_x}{dt},\quad
