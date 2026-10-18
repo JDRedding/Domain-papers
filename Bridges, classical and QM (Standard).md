@@ -246,6 +246,10 @@ $$
 - The least-action / quantum Hamilton–Jacobi reconstruction (section 7) is precisely the Madelung (or Bohm) form. Recent work by Lohmiller & Slotine (MIT, *Proc. R. Soc. A* 2026) strengthens this bridge by showing that an exact Schrödinger wave function can be recovered from multi-valued classical least-action solutions plus a classical density field computed along those branches—no WKB truncation required.
 - The category-theoretic entry is the most abstract of the set. Functorial approaches relating Poisson manifolds to C*-algebras (or more generally to categories of quantization) do exist (Landsman, Gohara–Hirota–Sako, groupoid/convolution constructions), but they remain structural equivalences rather than dynamical approximations.
 
+##Future Work
+
+A fully rigorous master equation of the form shown would need to guarantee complete positivity, conserve probability, and recover known limits; existing literature supplies several such constructions, but the specific operator combination in the diagram remains a visualization. Further predictive power would require concrete derivations, numerical tests, or experimental distinctions beyond those already provided by WKB, decoherence theory, and hybrid open-system methods.
+
 ---
 
 ## APPENDIX: Master bridge equation
