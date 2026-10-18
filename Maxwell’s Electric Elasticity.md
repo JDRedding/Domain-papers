@@ -1,6 +1,6 @@
 # Maxwell’s Electric Elasticity
 
-The essence of **Maxwell’s Group (E)**, knawn as ***Electric Elasticity***, is that the electromotive-force components $E_x, E_y, E_z$ are linearly proportional to the electric-displacement components $D_x, D_y, D_z$ through the constant $k$, which in modern notation is simply $1/\varepsilon$.
+The essence of **Maxwell’s Group (E)**, known as ***Electric Elasticity***, is that the electromotive-force components $E_x, E_y, E_z$ are linearly proportional to the electric-displacement components $D_x, D_y, D_z$ through the constant $k$, which in modern notation is simply $1/\varepsilon$.
 
 ## Vector form of Group (E)
 
