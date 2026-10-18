@@ -1,8 +1,8 @@
-# RDGMFEQ: SID↔PED Morphism Specification
+# **RDGMFEQ: SID↔PED Morphism Specification**  
+*(Stable GitHub Specification)*
 
 ## 1. Overview
-
-This document specifies the SID→PED morphism in the RDGMFEQ architecture and formalizes the dual placement of the electric displacement field $\mathbf{D}$ in both ${SID.Dynamics}$ and ${PED.Dynamics_{slice}}$. The morphism is a structure-preserving map between the geometry-side triad SID and the field-side triad PED. It aligns their operator slots and enables bidirectional transport of dynamical information.
+This document specifies the **SID→PED morphism** in the RDGMFEQ architecture and formalizes the dual placement of the electric displacement field **D** in both ${SID.Dynamics}$ and ${PED.Dynamics_{slice}}$. The morphism is a structure‑preserving map between the geometry‑side triad **SID** and the field‑side triad **PED**, aligning their operator slots and enabling bidirectional transport of dynamical information.
 
 ---
 
@@ -44,7 +44,7 @@ The mapping is strict: each component of SID is transported into the correspondi
 ## 4. Dynamics-Slot Identification
 
 ### 4.1 Statement
-The displacement field $\mathbf{D}$ occupies both:
+The displacement field **D** occupies both:
 - `SID.Dynamics(D)`
 - `PED.Dynamics(D)`
 
@@ -71,7 +71,7 @@ D_SID  →  D_PED
 
 ### 5.3 Operators applied on the PED side
 ```
-FluxResidual(D) = ∇·D
+FluxResidual(D)        = ∇·D
 DisplacementMomentum(D) = ∂t D
 ```
 
@@ -106,7 +106,7 @@ Dynamics_PED(∂t D) → SID source update
 ```
 
 ### 7.2 No single-side confinement
-The architecture forbids confining $\mathbf{D}$ to only SID or only PED. Dual placement is required for:
+The architecture forbids confining **D** to only SID or only PED. Dual placement is required for:
 - polarization memory,
 - field activation,
 - residual consistency,
@@ -125,7 +125,7 @@ J + dt(D)
 ```
 
 ### 8.2 Dynamic-slice alignment
-PED.Dynamics must expose the dynamic-slice representation of $\mathbf{D}$ for integration into the MFE-side dynamical engine.
+PED.Dynamics must expose the dynamic-slice representation of **D** for integration into the MFE-side dynamical engine.
 
 ### 8.3 Morphism as functor
 The SID→PED mapping is treated as a functor:
@@ -138,7 +138,6 @@ with identity on the dynamical component.
 ---
 
 ## 9. Minimal Example Block
-
 ```
 SID.Dynamics(D) → PED.Dynamics(D)
 PED.Dynamics(∂t D) → SID source update
@@ -151,5 +150,6 @@ Total momentum: J_total = J + dt(D)
 ---
 
 ## 10. Status
-
 This specification is stable and ready for inclusion in the RDGMFEQ.
+
+---
