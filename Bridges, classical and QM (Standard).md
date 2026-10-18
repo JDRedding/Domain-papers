@@ -487,7 +487,7 @@ Each diagram is structurally distinct and tuned to the analytic style — no fil
 
 ---
 
-# 1. Correspondence Principle  
+### 1. Correspondence Principle  
 Classical ↔ Quantum stabilized by the correspondence map (ℏ→0)
 
 ```
@@ -504,7 +504,7 @@ Interpretation:
 
 ---
 
-# 2. Semiclassical Methods  
+### 2. Semiclassical Methods  
 Classical action ↔ semiclassical wave ↔ ℏ‑corrections
 
 ```
@@ -519,7 +519,7 @@ Classical action ↔ semiclassical wave ↔ ℏ‑corrections
 
 ---
 
-# 3. Phase‑Space Formalisms  
+### 3. Phase‑Space Formalisms  
 Position ↔ momentum stabilized by phase‑space distribution
 
 ```
@@ -535,7 +535,7 @@ Position ↔ momentum stabilized by phase‑space distribution
 
 ---
 
-# 4. Decoherence  
+### 4. Decoherence  
 System ↔ environment stabilized by decoherence channel
 
 ```
@@ -551,7 +551,7 @@ System ↔ environment stabilized by decoherence channel
 
 ---
 
-# 5. Hybrid Quantum–Classical Dynamics  
+### 5. Hybrid Quantum–Classical Dynamics  
 Classical momentum ↔ quantum momentum stabilized by hybrid bracket
 
 ```
@@ -567,7 +567,7 @@ Classical momentum ↔ quantum momentum stabilized by hybrid bracket
 
 ---
 
-# 6. Category‑Theoretic Equivalence  
+### 6. Category‑Theoretic Equivalence  
 Poisson manifold ↔ C*‑algebra stabilized by functorial mapping
 
 ```
@@ -583,7 +583,7 @@ Poisson manifold ↔ C*‑algebra stabilized by functorial mapping
 
 ---
 
-# 7. Least‑Action Reformulations  
+### 7. Least‑Action Reformulations  
 Action ↔ wavefunction stabilized by density field
 
 ```
