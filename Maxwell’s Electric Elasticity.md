@@ -18,9 +18,7 @@ $$
 \mathbf{E} = k\,\mathbf{D}.
 $$
 
-This is a linear constitutive relation (electric “elasticity”), with $k$ playing the role of an effective stiffness; in usual EM notation $k = 1/\varepsilon$.
-
-**Group (E)** is Maxwell’s constitutive law for a linear, isotropic dielectric, expressed in his original scalar-component form.
+This is a linear constitutive relation (electric “elasticity”), with $k$ playing the role of an effective stiffness; in usual EM notation $k = 1/\varepsilon$. **Group (E)** is Maxwell’s constitutive law for a linear, isotropic dielectric, expressed in his original scalar-component form.
 
 ### Formal interpretation (RDG-compatible)
 
