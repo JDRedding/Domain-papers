@@ -1,6 +1,25 @@
 # Bridges between classical and quantum mechanics
 *Standard list*
 
+Structured and aligned with symbolic variables **a,b,c ; p,q,r ; x,y,z**.  
+
+---
+
+## **Comparison Table**
+*Conceptual Preview*
+
+| Framework | Mathematical Structure | Physical Interpretation | Symbolic Example (a,b,c ; p,q,r ; x,y,z) |
+|----------|------------------------|--------------------------|-------------------------------------------|
+| **Correspondence Principle** | Limits: ℏ→0, Poisson brackets | Quantum → classical in high‑action limit | $[\hat{x},\hat{p}] = i\hbar \to \{x,p\}=1$ |
+| **Semiclassical Methods** | WKB, action expansions, stationary phase | Classical trajectories approximate quantum evolution | $H_{\text{sc}} = p^2/(2a) + b x^2 + c$ |
+| **Phase‑Space Formalisms** | Wigner functions, Moyal brackets | Quantum and classical share phase‑space structure | $W(x,p),\; \{f,g\} = f_x g_p - f_p g_x$ |
+| **Decoherence** | Lindblad operators, reduced density matrices | Classicality emerges from environmental suppression of interference | $\rho(x,y)\to r(x)\delta(x-y)$ |
+| **Hybrid Quantum–Classical Dynamics** | Mixed Poisson + commutator brackets | Classical and quantum variables co‑evolve | $\dot{x}=\partial H_c/\partial p,\;\dot{p}=-\partial H_c/\partial x+\langle\hat{F}\rangle$ |
+| **Category‑Theoretic Equivalence** | Functors between Poisson manifolds and C*‑algebras | Structural equivalence, not approximation | $\mathcal{Q}(x,p)=(\hat{x},\hat{p}),\;\mathcal{C}\circ\mathcal{Q}\approx\mathrm{id}$ |
+| **Least‑Action Reformulations** | Modified Hamilton–Jacobi + density fields | Quantum wavefunction reconstructed from classical action | $\psi = R\,e^{iS/\hbar},\; S_t + (\nabla S)^2/(2a) + V + Q = 0$ |
+
+---
+
 # 1. **Correspondence Principle**  
 Classical behavior emerges when quantum numbers are large or ℏ→0.  
 Using the symbols:
