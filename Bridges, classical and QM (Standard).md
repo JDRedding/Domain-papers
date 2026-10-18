@@ -481,7 +481,7 @@ Can think of $x,y,z$ as indexing the **configuration**, **potential**, and **qua
 
 ---
 
-## APPENDIX ASCII diagrams
+## APPENDIX: ASCII diagrams
 Each of the seven quantum–classical bridges, using symbolic triples **a,b,c ; p,q,r ; x,y,z**.  
 Each diagram is structurally distinct and tuned to the analytic style — no filler, no emojis, no fluff.
 
