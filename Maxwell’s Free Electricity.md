@@ -33,11 +33,7 @@ $$
 or, equivalently, multiplying through by -1,
 
 $$
--\rho
-+ \frac{\partial D_x}{\partial x}
-+ \frac{\partial D_y}{\partial y}
-+ \frac{\partial D_z}{\partial z}
-= 0.
+-\rho + \frac{\partial D_x}{\partial x} + \frac{\partial D_y}{\partial y} + \frac{\partial D_z}{\partial z} = 0.
 $$
 
 All three admissible residual forms are therefore
@@ -46,8 +42,7 @@ $$
 \rho - \nabla\cdot\mathbf{D} = 0
 \iff
 \nabla\cdot\mathbf{D} = \rho
-\iff
--\rho + \nabla\cdot\mathbf{D} = 0.
+\iff -\rho + \nabla\cdot\mathbf{D} = 0.
 $$
 
 **Physical content.**
@@ -57,8 +52,7 @@ Bound charge is already absorbed into the definition of $\mathbf{D}$.
 In integral form (identical under the Treatise/modern convention)
 
 $$
-\oint_{\partial V}\mathbf{D}\cdot d\mathbf{S}
-=
+\oint_{\partial V}\mathbf{D}\cdot d\mathbf{S} =
 \int_V \rho\, dV,
 $$
 
@@ -68,19 +62,15 @@ i.e., the net flux of $\mathbf{D}$ through any closed surface equals the free ch
 The residual is realized by pairing the SID free-charge density with the PED displacement field:
 
 $$
-\rho_{\mathrm{SID}}(x,t)
--
-\nabla_{\mathrm{PED}}\cdot\mathbf{D}_{\mathrm{PED}}(x,t)
-= 0,
+\rho_{\mathrm{SID}}(x,t) -
+\nabla_{\mathrm{PED}}\cdot\mathbf{D}_{\mathrm{PED}}(x,t) = 0,
 $$
 
 or componentwise
 
 $$
-\rho_{\mathrm{SID}}(x,t)
--
-\partial_i D_i(\mathrm{PED};x,t)
-= 0,
+\rho_{\mathrm{SID}}(x,t) -
+\partial_i D_i(\mathrm{PED};x,t) = 0,
 \qquad i \in \{x,y,z\}.
 $$
 
@@ -95,6 +85,5 @@ closing the source–field balance for Group (G). The identical $\rho_{\mathrm{S
 (same algebraic sign) is carried forward into Group (H) continuity.
 
 In short, Group (G) is Gauss’s law for free electricity under the Treatise residual
-convention: the residual
-$\rho_{\mathrm{SID}} - \nabla_{\mathrm{PED}}\cdot\mathbf{D}_{\mathrm{PED}} = 0$
+convention: the residual $\rho_{\mathrm{SID}} - \nabla_{\mathrm{PED}}\cdot\mathbf{D}_{\mathrm{PED}} = 0$
 enforces that free charge is the divergence source of $\mathbf{D}$.
