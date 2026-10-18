@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This document specifies the SID→PED morphism in the RDGMFEQ architecture and formalizes the dual placement of the electric displacement field $\mathbf{D}$ in both SID.Dynamics and PED.Dynamics. The morphism is a structure-preserving map between the geometry-side triad SID and the field-side triad PED. It aligns their operator slots and enables bidirectional transport of dynamical information.
+This document specifies the SID→PED morphism in the RDGMFEQ architecture and formalizes the dual placement of the electric displacement field $\mathbf{D}$ in both ${SID.Dynamics}$ and ${PED.Dynamics_{slice}}$. The morphism is a structure-preserving map between the geometry-side triad SID and the field-side triad PED. It aligns their operator slots and enables bidirectional transport of dynamical information.
 
 ---
 
