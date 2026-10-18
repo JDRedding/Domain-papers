@@ -114,7 +114,13 @@ $$
 Conceptually, $k$ is the constitutive functor mapping the displacement configuration 
 
 $$
-\mathbf{D}_{\mathrm{PED}}$ into the electric field $\mathbf{E}_{\mathrm{PED}}
+{D}_{PED}
+$$
+
+into the electric field 
+
+$$
+{E}_{{PED}}
 $$
 
 which then enters Group (D) (Maxwell's electromotive force) and the rest of the RDGMFEQ curl/div system.
