@@ -1,5 +1,5 @@
 # Bridges between classical and quantum mechanics
-*Standard list*
+***Standard list***
 
 This is a clean, self-consistent symbolic synthesis of the principal classical–quantum bridges. The recurring use of the triples a,b,c ; p,q,r ; x,y,z works well as a mnemonic device without over-constraining the underlying mathematics. The seven frameworks listed are standard (or near-standard) and correctly placed relative to one another; the master equation is best read as a conceptual Liouvillian scaffold rather than a single closed dynamical equation.
 
