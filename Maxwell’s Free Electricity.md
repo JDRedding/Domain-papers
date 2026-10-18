@@ -5,9 +5,7 @@
 The free-electricity constraint appears in residual form as
 
 $$
-\rho - \frac{\partial D_x}{\partial x}
-      - \frac{\partial D_y}{\partial y}
-      - \frac{\partial D_z}{\partial z} = 0.
+\rho - \frac{\partial D_x}{\partial x} - \frac{\partial D_y}{\partial y} - \frac{\partial D_z}{\partial z} = 0.
 $$
 
 In compact vector notation
