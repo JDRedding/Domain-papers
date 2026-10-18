@@ -22,10 +22,7 @@ $\rho$ is the free-charge density in the modern sense ($\rho \equiv \rho_{\mathr
 **Cartesian components.** Expanding the divergence recovers
 
 $$
-\frac{\partial D_x}{\partial x}
-+ \frac{\partial D_y}{\partial y}
-+ \frac{\partial D_z}{\partial z}
-= \rho
+\frac{\partial D_x}{\partial x} + \frac{\partial D_y}{\partial y} + \frac{\partial D_z}{\partial z} = \rho
 $$
 
 or, equivalently, multiplying through by -1,
