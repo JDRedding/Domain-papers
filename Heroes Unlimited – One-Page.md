@@ -54,8 +54,47 @@ Natural or worn Armor Rating (A.R.): attacker must roll higher than the A.R. to 
 ### Power Category
 Choose or randomly determine. This controls power access, starting S.D.C., budgets, and special rules. Core categories include:  
 Alien, Bionics, Experiment, Hardware/Gadgeteer, Magic, Mutant (human or animal), Physical Training, Psionics, Robotics, Special Training, Supersoldier, and others (plus later expansions such as Empowered, Immortal, etc.).  
+  
+### Random Super Ability Number Table 
+*(Core categories from *Heroes Unlimited* 2nd Edition. Choose or roll. This controls power access, base S.D.C., budgets, and special rules. Sourcebooks add more categories such as Empowered, Immortal, Supersoldier expansions, etc.* Used by Mutant, Experiment, and some Alien/Magic options)
 
-Each has its own method of selecting major/minor powers, equipment budgets, or packages. Full tables are in the core book.
+| Roll | Powers |
+|------|--------|
+| 01–15 | 1 Major + 3 Minor |
+| 16–30 | 4 Minor (no Major) |
+| 31–45 | 1 Major + 1 Minor |
+| 46–60 | 1 Major + 2 Minor |
+| 61–75 | 5 Minor (no Major) |
+| 76–85 | 2 Major (no Minor) |
+| 86–90 | 1D4+1 minor psionics + 1 Major |
+| 91–95 | 1D4 minor psionics + 2 or 3 Minor |
+| 96–00 | 1 Super-Psionic + 1 Major or 2 Minor |
+
+---
+
+### Core Category Summary
+
+| Category | Typical Powers / Access | Base S.D.C. | Key Notes / Budgets |
+|----------|--------------------------|-------------|---------------------|
+| **Mutant** (Human or Animal) | Roll or select on Random Super Ability Table above | 30 | Classic superhero origin. May include unusual physical traits. Animal mutants have Bio-E points for further changes. |
+| **Experiment** | Roll or select on Random Super Ability Table (or Supersoldier option) | 40 | Lab accident, deliberate procedure, or radiation. Often has side effects or limitations. |
+| **Physical Training** | No classic Major/Minor super abilities. Choose Focus: Strength & Endurance **or** Agility & Speed | 30 (+ focus bonuses) | Peak human via intense training. Gets equivalent of Superhuman Strength (Str/End focus) or Extraordinary Strength (Agility focus) + big HP/SDC, skill, and combat bonuses. Select 6 Physical skills (restrictions apply). |
+| **Hardware / Gadgeteer** | Gadgets and inventions (not innate powers) | 20–30 typical | Choose subtype: Electrical, Mechanical, Weapons, or Analytical Genius. Large starting budget for custom devices, vehicles, weapons, and tools. |
+| **Bionics** | Cybernetic implants and replacements | Varies by % bionic (often 30+ base + limb S.D.C.) | Budget for implants. Partial vs full conversion rules. High S.D.C. from parts; physical skill bonuses may be limited on bionic systems. |
+| **Psionics** | Natural Psychic or Latent Psychic | Standard (usually 20) | ISP based on ME. Select healing/physical/sensitive powers + Super-Psionics (Natural gets more and better saves). Powers cost ISP to use. |
+| **Special Training** | Package-based (no random super powers) | Varies by package (often 30–50) | Examples: Ancient Master, Hunter/Vigilante, Secret Operative, Stage Magician, Super Sleuth. Heavy on skills and specialized combat. |
+| **Alien** | Highly variable (Super Abilities, Psionics, Experiment, Bionics, Hardware, Magic, or Robotics) | Often 20 + racial modifiers | Roll or choose subtype. May have physiological modifications and unique racial traits. |
+| **Robotics** | Robot body / power armor / AI | Very high S.D.C. (no Hit Points in pure robot form) | Full robot, power armor, or transferred mind. Design budget for systems, weapons, and features. |
+| **Magic** | Spells, enchanted objects/weapons, or Mystically Bestowed powers | Standard or object-based | PPE system. Can be pure spellcaster, magic item user, or receive super abilities instead of/in addition to magic. |
+| **Supersoldier** | Military enhancement package + limited super abilities | High (often 40+) | Specialized training and procedures. Options for enhanced attributes, weapons, and 1 Minor + special enhancements (or full super ability table). |
+
+---
+
+### Quick Notes
+- **Major vs Minor Super Abilities**: Majors are broader and usually stronger (multiple effects). Minors are narrower but still potent. Full lists and descriptions are in the core book + *Powers Unlimited* sourcebooks.
+- **S.D.C.** numbers above are bases only. Physical skills, powers, and category bonuses add more.
+- **Starting with simpler categories** (Physical Training, Special Training, limited Hardware) is recommended for new groups, as the one-pager suggests.
+- Many categories allow **player choice** instead of pure random rolls for powers — confirm with your GM.
 
 ### Skills & Education
 Education level (determined by category or roll) provides skill slots.  
