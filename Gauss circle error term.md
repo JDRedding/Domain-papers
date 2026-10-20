@@ -1,0 +1,29 @@
+# Gauss circle error term 
+**Hardy–Voronoi formula**
+
+$$
+P(x)=\sum_{n=1}^\infty r_2(n)\sqrt{\frac{x}{n}}\,J_1(2\pi\sqrt{nx}),
+$$
+
+where
+
+$$
+P(x)=\sum_{n\le x}'r_2(n)-\pi x
+$$
+
+(the prime indicates that the term for an integer $x$ is counted with weight $1/2$), $r_2(n)$ is the number of ways to write $n$ as a sum of two integer squares (counting signs and order), and $J_1$ is the Bessel function of the first kind of order 1.
+
+Equivalently, if $N(r)$ is the number of lattice points inside or on the circle of radius $r$, then
+
+$$
+N(r)=\pi r^2+E(r),\qquad E(r)=P(r^2).
+$$
+
+This identity (due to Hardy and Voronoi, circa 1904–1906) is the starting point for virtually all modern work on the size of the error. Elementary geometry already yields Gauss’s bound $|E(r)|\ll r$ (or $P(x)\ll x^{1/2}$). The conjectured sharp bound is
+
+$$
+P(x)=O_\varepsilon(x^{1/4+\varepsilon})\qquad\text{for every }\varepsilon>0,
+$$
+while the best unconditional results (as of 2026) give exponents slightly below $5/16$ (e.g., $209/670+\varepsilon$).
+
+The same circle problem is intimately related to the Dirichlet divisor problem via analogous Voronoi-type formulae involving the modified Bessel function $I_1$.
