@@ -3,6 +3,8 @@
 
 Heroes Unlimited builds characters from fixed archetypes (mutants, aliens, cyborgs, magic heroes, gadgeteers, etc.), each with its own advancement track and power access. This creates fast, flavorful characters but also uneven balance and a “TV dinner” feel—pre‑packaged options rather than custom‑built systems.
 
+Heroes Unlimited uses Palladium’s Megaversal rules, which are class‑based and swingy, with some hero types vastly outperforming others. HU supports high‑powered characters but often becomes unbalanced and mechanically clunky.
+
 ### Attributes
 Roll 3d6 for each: **IQ • ME • MA • PS • PP • PE • PB • Spd**.  
 16–18: add an extra 1d6 (no further exploding).  
