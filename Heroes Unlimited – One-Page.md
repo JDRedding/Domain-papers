@@ -107,6 +107,60 @@ Education level (determined by category or roll) provides skill slots.  
 - Characters with **no** Hand-to-Hand skill get only the base 2 attacks and must spend an action to parry or dodge.  
 - Physical skills (Boxing, Athletics, Body Building, Running, etc.) add attacks, attribute bonuses, and S.D.C.
 
+**Section 5: Skill Framework**  
+*(Skills are percentile: roll d100 ≤ skill percentage to succeed. IQ bonuses and experience improve them. Maximum normal skill is 98%.)*
+
+### Education & Skill Selection
+- Roll or choose an **Education Level** (High School, Trade School, College years, Military, etc.). This determines how many **Skill Programs** (scholastic packages) you get and the bonus % applied to those skills.
+- Skill Programs group related skills (e.g., Espionage, Medical, Pilot, Rogue, Science, Technical, Weapon Proficiency).
+- You also get a number of **Secondary Skills** (no education bonus — only IQ bonus).
+- **Hand-to-Hand** and most **Physical skills** cost skill slots and are often restricted from Secondary Skills.
+- Some Power Categories (Physical Training, Special Training packages, Hardware, etc.) grant fixed skills or override normal education.
+
+**Typical pattern**: Higher education = more Skill Programs + bigger % bonuses to scholastic skills. Secondary skills are always weaker.
+
+### Skill Check Basics
+- Base % comes from the skill entry (e.g., First Aid 45%+5%/level).
+- Add **IQ bonus** (from Attribute Chart) to **all** skills (scholastic and secondary).
+- Add any education / program / category bonuses.
+- Add +5% (or the listed amount) per level of experience.
+- Critical success usually on 01–05 or similar (GM call); failure on 96–00 or higher than skill %.
+
+### Key Physical Skills & Bonuses
+These are the ones that most affect combat and attributes (all stack):
+
+| Skill | Attribute / Combat Bonuses | S.D.C. | Other |
+|-------|----------------------------|--------|-------|
+| **Boxing** | +1 Attack/Melee, +2 Parry, +2 Dodge, +1 Roll with Impact, +2 PS | +3D6 | Auto-knockout on natural 20 with fists |
+| **Athletics (General)** | +1 Parry, +1 Dodge, +1 Roll with Impact, +1 PS, +1D6 Spd | +2D4 | — |
+| **Body Building & Weightlifting** | +2 PS | +10 | — |
+| **Running** | +1 PE, +4D4 Spd | +1D6 | — |
+| **Wrestling** | +1 Roll with Impact, +2 PS, +1 PE | +4D6 | Body Block/Tackle, Pin on 18+, Crush/Squeeze |
+| **Acrobatics** | +2 Roll with Impact, +1 PS, +1 PP, +1 PE | +1D6 | Auto Kick (2D4), Sense of Balance, Climb/Prowl bonuses, Back Flip |
+| **Gymnastics** | +2 Roll with Impact, +2 PS, +1 PP, +2 PE | +2D6 | Similar to Acrobatics (balance, flips, climb, prowl) |
+| **Prowl** | — | — | 25%+5%/level (stealth) |
+| **Climbing** | — | — | 40%+5%/level |
+
+**Notes**:
+- Only one Hand-to-Hand skill can be taken.
+- Boxing is extremely strong for combat characters.
+- Physical skills are the main way “normal” characters raise attributes and S.D.C. beyond the 3d6 roll.
+
+### Useful Non-Combat Skills (common picks)
+- **First Aid / Paramedic** — healing and stabilizing
+- **Streetwise / Intelligence / Interrogation** — information gathering
+- **Prowl / Concealment / Pick Locks** — stealth and infiltration
+- **Computer Operation / Hacking / Electronics** — tech support
+- **Pilot (Automobile, Motorcycle, etc.)** — mobility
+- **Surveillance / Radio / Optic Systems** — investigation
+- **Wilderness Survival / Tracking** — outdoor competence
+
+### Quick Reminders
+- IQ 16+ gives a one-time % bonus to every skill.
+- Skills improve with level (+5% or the listed amount per level).
+- Some categories (Hardware, Special Training, Physical Training) heavily restrict or replace normal skill selection.
+- Full skill list and exact education table are in the core book (pages ~49–80 in HU2).
+
 ### Combat (Melee Round ≈ 15 seconds)
 **Attacks per melee**: Base 2 + Hand-to-Hand bonuses + Boxing/certain powers.  
 
