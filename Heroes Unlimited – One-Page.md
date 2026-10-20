@@ -228,9 +228,69 @@ All bonuses are cumulative with PP, physical skills, Weapon Proficiencies, and p
 - **Body Flip/Throw**: 1D6 damage + opponent loses initiative and one attack.
 - Boxing, Wrestling, and certain powers stack on top of these bonuses.
 
-This matches the HU2 tables used in actual play.[](<https://static1.squarespace.com/static/5bd8ae0c25bf02c3a7fb8bfd/t/6403a12fcbce7f22b2cb554c/1677959471793/Hand-to-Hand+Tables+-+HU.pdf>)
+This matches the HU2 tables used in actual play.
 
-Ready for **Section 4 (Core Combat Maneuvers & Modifiers)** next, or want a condensed “level 1–5 only” version of this for the one-pager?
+**Core Combat Maneuvers & Modifiers**  
+*(Melee round ≈ 15 seconds. Base attacks = 2 + Hand-to-Hand bonuses + Boxing/powers. Highest initiative acts first; then players alternate actions.)*
+
+### Combat Sequence
+1. **Initiative** — Everyone rolls d20 + initiative bonuses. Highest goes first. Ties are re-rolled or resolved by the GM. Successful sneak attacks or long-range ambushes can seize initiative for the round.
+2. **Attack** — Attacker rolls d20 + strike bonuses.
+   - Modified result of **4 or less** = automatic miss.
+   - **5+** = potential hit.
+   - A **natural 20** is always a hit and a Critical Strike (double damage) unless the defender also rolls a natural 20.
+3. **Defense** — Defender may Parry or Dodge (d20 + bonuses).  
+   - Equal or higher than the attacker’s roll succeeds (**defender wins ties**).  
+   - **Parry** blocks the attack. Trained characters can often parry without spending an action; untrained characters must spend one.  
+   - **Dodge** moves out of the way and always costs one action.
+4. **Damage** — If the hit lands, roll damage dice + PS bonus (and any other damage bonuses). Subtract from S.D.C. first, then Hit Points.
+
+---
+
+### Key Maneuvers
+
+| Maneuver | How It Works | Action Cost | Notes |
+|----------|--------------|-------------|-------|
+| **Critical Strike** | Natural 19–20 (or better range from high Hand-to-Hand) | None | Double damage. Some high-level styles can do triple. |
+| **Roll with Impact** | d20 + bonuses; match or beat the attacker’s strike roll | 1 action | Success = half damage. Works against punches, kicks, falls, blunt weapons, explosions, etc. Does **not** work against bullets, energy blasts, or edged weapons. |
+| **Pull Punch** | Declare before striking. Roll d20 + Pull Punch bonuses; need 11+ | None (if successful) | Reduces damage to half, quarter, 1 point, or 0 (player’s choice). Failure = full damage. |
+| **Knockout / Stun** | Available at higher Hand-to-Hand levels on high natural rolls | None | Renders target unconscious or stunned for a short time. Can often be resisted or reduced by a successful Roll with Impact. |
+| **Death Blow** | Available at high Hand-to-Hand levels; must be declared | None | Instant kill or massive damage on the listed natural roll. Extremely rare and usually only available to Assassin or very high-level characters. |
+| **Body Flip / Throw** | Learned via Hand-to-Hand | 1 action | Typically 1D6 damage + opponent loses initiative and one attack. |
+| **Power Punch** | Optional heavy attack | 2 actions | Double damage dice (PS bonus still applies once). |
+
+---
+
+### Armor Rating (A.R.)
+- **Worn Armor** (vests, body armor, etc.):  
+  - Strike roll **≤ A.R.** → damage goes to the armor’s S.D.C. only.  
+  - Strike roll **> A.R.** → damage bypasses armor and hits the character’s S.D.C./HP.  
+  - When the armor’s S.D.C. reaches 0, it is destroyed and offers no further protection.
+- **Natural A.R.** (super toughness, thick hide, certain powers):  
+  - Strike roll **≤ A.R.** → no damage at all.  
+  - Strike roll **> A.R.** → full damage to the character’s S.D.C./HP.  
+  - Natural A.R. does not degrade.
+
+---
+
+### Ranged Combat Notes
+- Same d20 strike / parry / dodge system as melee.
+- Common range modifiers (varies slightly by book/weapon):  
+  - Point-blank / close (within 60 ft): normal strike (5+ hits).  
+  - Longer ranges: higher minimum to hit (often 8+ or with cumulative penalties).
+- Most energy blasts, bullets, and lasers cannot be parried with bare hands (exceptions exist for certain powers, force fields, or high-tech shields).
+- Called shots (specific body part, weapon, etc.) usually require a higher roll (often 12+).
+
+---
+
+### Quick Reminders
+- Untrained characters have no automatic parry and limited attacks.
+- Super abilities, energy blasts, and many powers each cost one or more actions.
+- All bonuses (PP, Hand-to-Hand, skills, powers) stack.
+- Damage always goes **S.D.C. first**, then **Hit Points**. At 0 HP the character is dying (coma/death save applies).
+
+This covers the maneuvers that come up in nearly every fight.
+
 
 ### Saving Throws (common bases)
 - Magic (spell): 12  
