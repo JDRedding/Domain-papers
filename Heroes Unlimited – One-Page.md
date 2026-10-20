@@ -400,3 +400,53 @@ This covers the saves that come up most often in play.
 ### Quick Reference
 - Generate attributes → choose power category → calculate HP/SDC and select powers → assign education/skills → pick alignment and background.  
 - Start with simpler categories (Physical Training, Special Training, or limited powers) for new groups.
+
+**Experience & Leveling**  
+*(Each Power Category has its own experience table. Characters start at Level 1. When you reach the XP threshold for the next level, you advance.)*
+
+### What Improves When Level Up
+| Aspect | Improvement |
+|--------|-------------|
+| **Hit Points** | +1d6 HP (added to current total) |
+| **Skills** | +5% (or the listed amount) to every skill the character has |
+| **Hand-to-Hand** | Gains the next level’s bonuses (extra attacks, strike/parry/dodge, criticals, etc.) |
+| **Super Abilities** | Many powers increase in range, duration, damage, or effects (“per level of experience”) |
+| **Magic / Psionics** | Spell strength, ISP, or number of powers may improve (varies by category) |
+| **S.D.C.** | Does **not** automatically increase (only via skills, powers, or special category bonuses) |
+
+### Typical Experience Thresholds (approximate — exact tables vary by category)
+Most superhero categories use relatively steep tables. A common pattern looks like:
+
+| Level | Approx. XP Needed | Notes |
+|-------|-------------------|-------|
+| 1 | 0 | Starting level |
+| 2 | ~2,000–2,500 | First real jump |
+| 3 | ~4,000–5,000 | — |
+| 4 | ~8,000–10,000 | — |
+| 5 | ~15,000–20,000 | Mid-tier |
+| 6+ | Continues rising | Full tables are in the core book by category |
+
+*(Physical Training, Special Training, and Hardware often use slightly different tables than pure super-powered categories.)*
+
+### Awarding Experience Points (GM Guide)
+Common awards (from the book’s Experience Point Table):
+
+| Action | XP Award |
+|--------|----------|
+| Clever or useful idea | 25–100 |
+| Good role-playing | 25–100 |
+| Defeating a minor threat | 100–300 |
+| Defeating a significant opponent | 200–500+ |
+| Completing a mission / major goal | 400–1,000+ |
+| Saving lives / heroic act | 100–300 |
+| Learning something new or solving a puzzle | 50–150 |
+
+The GM awards XP at the end of a session or adventure based on actions, creativity, and success (not just combat).
+
+### Quick Notes
+- Skills and Hand-to-Hand improve **immediately** upon leveling.
+- Many super powers scale automatically (“+1d6 damage per level,” “+10 ft range per level,” etc.).
+- Some categories (Hardware, certain Special Training packages) improve more through skills and gadgets than raw power scaling.
+- Experience is individual — not shared equally unless the GM decides otherwise.
+- High-level characters (8+) are rare and extremely capable; most campaigns stay in the 1–6 range for a long time.
+
