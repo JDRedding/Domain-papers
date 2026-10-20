@@ -127,6 +127,111 @@ Education level (determined by category or roll) provides skill slots.  
 - Super abilities, powers, and many ranged attacks each cost one or more melee actions.  
 - Ranged combat uses the same d20 strike/parry/dodge system (with range modifiers).
 
+**Hand-to-Hand Combat Progression**  
+*(From *Heroes Unlimited* 2nd Edition. Base attacks for characters with a Hand-to-Hand skill = 2 + the bonuses listed below. Boxing adds +1 attack. Characters with **no** Hand-to-Hand skill get only limited attacks and must spend an action to parry or dodge.)*
+
+### Cost & Overview
+- **Basic** — 1 skill slot  
+- **Expert** — 2 skill slots  
+- **Martial Arts** — 3 skill slots  
+- **Assassin** — 3 skill slots  
+
+All bonuses are cumulative with PP, physical skills, Weapon Proficiencies, and powers.
+
+---
+
+### Hand to Hand: Basic
+| Level | Bonuses |
+|-------|---------|
+| 1 | +2 attacks, +2 Roll with Impact, +2 Pull Punch |
+| 2 | +2 Parry, +2 Dodge |
+| 3 | Karate Kick (2D4) or Snap Kick (1D6) |
+| 4 | +1 attack |
+| 5 | +1 Strike |
+| 6 | Critical Strike (natural 19–20) |
+| 7 | +2 Damage |
+| 8 | Body Flip/Throw |
+| 9 | +1 attack |
+| 10 | +2 Pull Punch, +2 Roll with Impact |
+| 11 | +1 Parry, +1 Dodge |
+| 12 | +1 Strike |
+| 13 | Critical Strike or Knockout from behind |
+| 14 | +2 Damage |
+| 15 | +1 attack |
+
+---
+
+### Hand to Hand: Expert
+| Level | Bonuses |
+|-------|---------|
+| 1 | +2 attacks, +2 Roll with Impact, +2 Pull Punch |
+| 2 | +3 Parry, +3 Dodge |
+| 3 | +2 Strike, +2 Initiative |
+| 4 | +1 attack |
+| 5 | Kick attacks: Karate Kick (2D4) + any two of choice |
+| 6 | Critical Strike (natural 18–20) |
+| 7 | W.P. Paired Weapons |
+| 8 | Body Flip/Throw |
+| 9 | +1 attack |
+| 10 | +3 Damage |
+| 11 | +1 Disarm |
+| 12 | +2 Parry, +2 Dodge |
+| 13 | Critical Strike (triple damage) or Knockout from behind |
+| 14 | +1 attack |
+| 15 | Death Blow (natural 19–20, if desired) |
+
+---
+
+### Hand to Hand: Martial Arts
+| Level | Bonuses |
+|-------|---------|
+| 1 | +2 attacks, +3 Roll with Impact, +3 Pull Punch, +2 Initiative |
+| 2 | +3 Parry, +3 Dodge, +2 Strike, Disarm |
+| 3 | Karate Kick (2D4) + any four foot strikes (no Leap Kick) |
+| 4 | +1 attack |
+| 5 | All Jump Kicks |
+| 6 | Critical Strike (natural 18–20) |
+| 7 | W.P. Paired Weapons, +2 Disarm |
+| 8 | Leap Attack (Critical Strike) |
+| 9 | +1 attack |
+| 10 | Body Flip/Throw, +1 Initiative |
+| 11 | +4 Damage |
+| 12 | +2 Parry, +2 Dodge |
+| 13 | Knockout/Stun (natural 18–20) |
+| 14 | +1 attack |
+| 15 | Death Blow (if desired) |
+
+---
+
+### Hand to Hand: Assassin
+| Level | Bonuses |
+|-------|---------|
+| 1 | +1 attack, +1 Initiative, +2 Strike, +2 Pull Punch |
+| 2 | +2 attacks |
+| 3 | +3 Roll with Impact, +3 Pull Punch |
+| 4 | +4 Damage, +3 Disarm, +2 Initiative |
+| 5 | +1 attack |
+| 6 | +3 Parry, +3 Dodge, Body Flip/Throw |
+| 7 | Death Blow (natural 20, if desired) |
+| 8 | Leap Attack (Critical Strike), +1 attack |
+| 9 | Karate Kick (2D4) + any two foot strikes (no Leap Kick) |
+| 10 | +1 Initiative |
+| 11–15 | Continues with additional attacks, damage, and combat options (full table in book) |
+
+---
+
+### Key Combat Notes
+- **No Hand-to-Hand**: Limited attacks (typically 1 at level 1, plus a few more at higher levels). Parry and Dodge both cost an action. No automatic parry.
+- **Trained characters** (any of the four styles above) can usually parry without spending an action; Dodge always costs an action.
+- **Critical Strike**: Double damage (or triple at high Expert levels) on the listed natural rolls.
+- **Death Blow**: Instant kill or massive damage on the listed roll (must be declared; not always available).
+- **Body Flip/Throw**: 1D6 damage + opponent loses initiative and one attack.
+- Boxing, Wrestling, and certain powers stack on top of these bonuses.
+
+This matches the HU2 tables used in actual play.[](<https://static1.squarespace.com/static/5bd8ae0c25bf02c3a7fb8bfd/t/6403a12fcbce7f22b2cb554c/1677959471793/Hand-to-Hand+Tables+-+HU.pdf>)
+
+Ready for **Section 4 (Core Combat Maneuvers & Modifiers)** next, or want a condensed “level 1–5 only” version of this for the one-pager?
+
 ### Saving Throws (common bases)
 - Magic (spell): 12  
 - Psionics: 12–15 (varies by power)  
