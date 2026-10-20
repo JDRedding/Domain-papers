@@ -16,7 +16,7 @@ Roll 3d6 for each: **IQ • ME • MA • PS • PP • PE • PB • Spd**.  
 | **PB**       | Physical Beauty        | Physical attractiveness and presence (charm/impress bonuses). |
 | **Spd**      | Speed                  | Running speed and movement rate. |
 
-**Section 1: Attribute Bonus Charts**  
+**Attribute Bonus Charts**  
 *(Apply once the final attribute value is known — after power category, physical skills, and powers. Bonuses below 16 are zero unless noted.)*
 
 ### Quick Reference Table (16–30)
@@ -107,7 +107,7 @@ Education level (determined by category or roll) provides skill slots.  
 - Characters with **no** Hand-to-Hand skill get only the base 2 attacks and must spend an action to parry or dodge.  
 - Physical skills (Boxing, Athletics, Body Building, Running, etc.) add attacks, attribute bonuses, and S.D.C.
 
-**Section 5: Skill Framework**  
+**Skill Framework**  
 *(Skills are percentile: roll d100 ≤ skill percentage to succeed. IQ bonuses and experience improve them. Maximum normal skill is 98%.)*
 
 ### Education & Skill Selection
