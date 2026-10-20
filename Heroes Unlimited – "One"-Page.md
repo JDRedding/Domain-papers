@@ -1,6 +1,8 @@
 # Heroes Unlimited 
 **"One"-Page Core Rules**  
 
+Heroes Unlimited builds characters from fixed archetypes (mutants, aliens, cyborgs, magic heroes, gadgeteers, etc.), each with its own advancement track and power access. This creates fast, flavorful characters but also uneven balance and a “TV dinner” feel—pre‑packaged options rather than custom‑built systems.
+
 ### Attributes
 Roll 3d6 for each: **IQ • ME • MA • PS • PP • PE • PB • Spd**.  
 16–18: add an extra 1d6 (no further exploding).  
