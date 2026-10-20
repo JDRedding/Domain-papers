@@ -24,6 +24,7 @@ This identity (due to Hardy and Voronoi, circa 1904–1906) is the starting poin
 $$
 P(x)=O_\varepsilon(x^{1/4+\varepsilon})\qquad\text{for every }\varepsilon>0,
 $$
+
 while the best unconditional results (as of 2026) give exponents slightly below $5/16$ (e.g., $209/670+\varepsilon$).
 
 The same circle problem is intimately related to the Dirichlet divisor problem via analogous Voronoi-type formulae involving the modified Bessel function $I_1$.
