@@ -355,6 +355,48 @@ This covers the maneuvers that come up in nearly every fight.
 
 Attribute bonuses apply to many of these.
 
+**Saving Throws**  
+*(Most saves are d20. Higher is better. Attribute bonuses from ME and PE apply. Defender usually needs to meet or beat the target number.)*
+
+### Common Base Saving Throws
+
+| Save Against | Base Target | Attribute Bonus | Notes |
+|--------------|-------------|-----------------|-------|
+| **Magic (Spell)** | 12 | PE | Higher vs powerful casters (increases with caster level). Ritual magic usually 16. |
+| **Psionics** | 15 (non-psychics)<br>12 (Major/Minor psychics)<br>10 (Master/Natural psychics) | ME | Varies by the target’s psychic ability. Specific powers may list different numbers. |
+| **Horror Factor** | Equal to the HF number | — | Roll equal or higher than the HF. Failed save = lose initiative + one action, and cannot defend against the first attack from the source. Only applies on first appearance (or when the source becomes hostile). |
+| **Insanity** | 12 | ME | — |
+| **Coma / Death** | Percentage based on PE | PE | When reduced to 0 HP or below. Success means the character survives (but needs medical help). Failure means death. |
+| **Poison (Lethal)** | 14 | PE | — |
+| **Poison (Non-Lethal)** | 16 | PE | — |
+| **Harmful Drugs / Toxins** | 15 | PE | — |
+| **Disease** | 14 | PE | — |
+| **Possession** | Contested or specific | — | Often a contested roll or listed in the power/creature description. |
+| **Pain / Extreme Heat / Cold / Electrocution** | 13–16 (varies) | PE | Situational; exact number is usually given in the description. |
+
+---
+
+### Attribute Bonuses to Saves
+(From the Attribute Bonus Chart — apply once final attribute is known)
+
+- **ME 16+**: Bonuses to save vs. **Psionics** and **Insanity** (starts at +1/+1 and scales up).
+- **PE 16+**:  
+  - Percentage bonus to save vs. **Coma/Death**.  
+  - Numeric bonus to save vs. **Magic** and **Poison** (starts at +1 and scales).
+
+These are in addition to any bonuses from powers, skills, or special abilities.
+
+---
+
+### Quick Notes
+- **Natural 20** is almost always a success on a save (and natural 1 is almost always a failure), unless a specific rule says otherwise.
+- Many super abilities, magic spells, and psionic powers list their own saving throw number in the description (often 12–16).
+- Animals and non-humans sometimes have penalties (commonly –4) to certain saves.
+- Some powers or conditions grant automatic resistance or immunity instead of a save.
+- Coma/Death is unique: it is a percentage roll rather than a simple d20 target.
+
+This covers the saves that come up most often in play.
+
 ### Quick Reference
 - Generate attributes → choose power category → calculate HP/SDC and select powers → assign education/skills → pick alignment and background.  
 - Start with simpler categories (Physical Training, Special Training, or limited powers) for new groups.
