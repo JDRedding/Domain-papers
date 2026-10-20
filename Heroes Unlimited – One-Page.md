@@ -16,17 +16,32 @@ Roll 3d6 for each: **IQ • ME • MA • PS • PP • PE • PB • Spd**.  
 | **PB**       | Physical Beauty        | Physical attractiveness and presence (charm/impress bonuses). |
 | **Spd**      | Speed                  | Running speed and movement rate. |
 
-**Attribute Bonuses** (apply once final value is known; full chart in book):  
-- **IQ 16+**: +2% to all skills (scales higher).  
-- **ME 16+**: +1 to save vs. psionics/insanity (scales).  
-- **MA 16+**: +40%+ trust/intimidate.  
-- **PS 16+**: Hand-to-hand damage bonus starts at +1 and rises (e.g. higher values give +2 to +6+).  
-- **PP 16+**: +1 to parry & dodge; +1 to strike (scales).  
-- **PE 16+**: +4%+ to save vs. coma/death; +1 to save vs. magic/poison (scales). Also adds to Hit Points.  
-- **PB 16+**: Charm/impress bonuses.  
-- **Spd**: Pure movement rate (no combat bonuses by default).  
+**Section 1: Attribute Bonus Charts**  
+*(Apply once the final attribute value is known — after power category, physical skills, and powers. Bonuses below 16 are zero unless noted.)*
 
-Physical skills, power categories, and super abilities further modify attributes. Normal human practical max without powers is roughly low-to-mid 30s for most attributes (higher for PS/PP/PE/Spd with training).
+### Quick Reference Table (16–30)
+
+| Attr | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+|------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| **IQ** (skills, one-time) | +2% | +3% | +4% | +5% | +6% | +7% | +8% | +9% | +10% | +11% | +12% | +13% | +14% | +15% | +16% |
+| **ME** (vs. Psionics / vs. Insanity) | +1 / +1 | +1 / +1 | +2 / +2 | +2 / +2 | +3 / +3 | +3 / +4 | +4 / +5 | +4 / +6 | +5 / +7 | +5 / +8 | +6 / +9 | +6 / +10 | +7 / +11 | +7 / +12 | +8 / +13 |
+| **MA** (Trust/Intimidate) | 40% | 45% | 50% | 55% | 60% | 65% | 70% | 75% | 80% | 84% | 88% | 92% | 94% | 96% | 97% |
+| **PS** (H-to-H damage) | +1 | +2 | +3 | +4 | +5 | +6 | +7 | +8 | +9 | +10 | +11 | +12 | +13 | +14 | +15 |
+| **PP** (Parry & Dodge / Strike) | +1 / +1 | +1 / +1 | +2 / +2 | +2 / +2 | +3 / +3 | +3 / +3 | +4 / +4 | +4 / +4 | +5 / +5 | +5 / +5 | +6 / +6 | +6 / +6 | +7 / +7 | +7 / +7 | +8 / +8 |
+| **PE** (Coma/Death % / Magic & Poison) | +4% / +1 | +5% / +1 | +6% / +2 | +8% / +2 | +10% / +3 | +12% / +3 | +14% / +4 | +16% / +4 | +18% / +5 | +20% / +5 | +22% / +6 | +24% / +6 | +26% / +7 | +28% / +7 | +30% / +8 |
+| **PB** (Charm/Impress) | 30% | 35% | 40% | 45% | 50% | 55% | 60% | 65% | 70% | 75% | 80% | 83% | 86% | 90% | 92% |
+| **Spd** | No combat bonuses — pure movement rate only | | | | | | | | | | | | | | |
+
+### Notes & Higher Values
+- **Below 16**: No bonuses (average human range is roughly 9–12).
+- **Above 30** (common with powers or certain categories):
+  - **IQ, ME, MA, PB**: Bonuses normally stop at the 30 value.
+  - **PS**: Continues +1 damage per point (e.g., 31 = +16, 40 = +25). Extraordinary / Superhuman / Supernatural Strength use their own damage scales on top of (or instead of) the normal bonus.
+  - **PP**: Strike/parry/dodge usually stop at +8 (at 30). Some books give +1 initiative every 4 points beyond 30 (34, 38, etc.).
+  - **PE**: Coma/Death and Magic/Poison saves continue scaling in many groups (roughly +2% and +1 every 2 points), but confirm with your GM.
+- All bonuses are cumulative with Hand-to-Hand, physical skills, Weapon Proficiencies, and powers.
+- **PS** also determines carrying/lifting capacity (roughly PS × 10 lbs normal carry; higher multipliers for super strength types).
+- **Spd** movement: Spd × 20 yards/meters per melee round is a common rule of thumb (exact speed chart available in the book).
 
 ### Hit Points & S.D.C.
 - **Hit Points** = PE + 1d6 (+1d6 per level of experience).  
