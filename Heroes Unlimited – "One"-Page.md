@@ -1,5 +1,5 @@
 # Heroes Unlimited 
-**One-Page Core Rules**  
+**"One"-Page Core Rules**  
 
 ### Attributes
 Roll 3d6 for each: **IQ • ME • MA • PS • PP • PE • PB • Spd**.  
