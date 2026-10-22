@@ -1,0 +1,69 @@
+ENTANGLEMENT, CLASSICAL vs QUANTUM vs RELATIONAL
+-------------------------------------------------------------------------------
+
+TYPES
+  Classical:  sinusoidal traveling waves, continuous metric propagation
+  Quantum:    non-factorizable Hilbert-space states, Bell-violating correlations
+  RELATIONAL:        structural geometry with Q-boundary decomposition
+
+VARIABLES (CLASSICAL)
+  θ            : phase angle
+  v(θ)         : instantaneous voltage
+  V_peak       : peak amplitude
+  V_rms        : root-mean-square amplitude
+  sin(θ)       : sine function
+
+CLASSICAL FUNDAMENTALS
+  v(θ) = V_peak · sin(θ)
+  V_rms = V_peak / √2 ≈ 0.707 V_peak
+
+  Correlation mechanism:
+    f(θ) = correlation by shared past + continuous propagation
+    Waves travel WEST/EAST from a common ripple origin
+    Alice and Bob sample v(θ) at different spatial positions
+
+STANDARD QUANTUM FUNDAMENTALS
+  |ψ⟩          : joint state in tensor-product Hilbert space
+  ρ            : density operator
+  Entanglement : non-factorizability of |ψ⟩ or ρ
+  Bell violation: no local hidden-variable model reproduces correlations
+
+  Correlation mechanism:
+    Non-local correlations from structure of |ψ⟩
+    No continuous metric propagation required
+    No classical shared past required
+
+RELATIONAL FUNDAMENTALS
+  S            : full structural geometry (S-mode)
+  Q            : discontinuous boundary operator
+  A            : Q-invariant relational stratum
+  S \ A        : Q-unstable geometry
+
+  Formal identity:
+    A = S_invariant^Q
+
+  Structural decomposition:
+    S = A ⊕ (S \ A)
+
+  Correlation mechanism:
+    g(A) = correlation by shared A-stratum
+    A survives Q-boundary projection
+    A is re-instantiable without continuous propagation
+
+DISTINCTIONS
+  Classical:          f(θ) — correlation by shared past, continuous metric
+  Standard quantum:   non-factorizable |ψ⟩ — Bell-violating, no propagation
+  RELATIONAL:                g(A) — correlation by Q-invariant stratum
+
+  Classical: phase alignment (θ)
+  Quantum:  entangled-state outcome correlation
+  RELATIONAL:      A-stratum alignment
+
+SUMMARY
+  Classical diagram shows local, metric, propagation-based correlation.
+  Standard quantum entanglement shows nonlocal, Bell-violating correlation
+    from non-factorizable Hilbert-space states.
+  RELATIONAL provides a structural decomposition:
+    A = S_invariant^Q
+  identifying the Q-stable relational geometry responsible for nonlocal
+  correlations, without deriving them from Hilbert-space machinery.
