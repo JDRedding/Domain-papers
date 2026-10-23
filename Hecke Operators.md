@@ -307,7 +307,7 @@ $$
 
 Here the Power‑update is **ramified**, reflecting the classical fact that $U_p$ behaves differently and interacts with non‑squarefree level structure.
 
-### APPENDIX: Diagrammatic flowchart 
+### APPENDIX: Diagrammatic flowchart  
 Hecke action → eigenform → arithmetic
 
 ```
@@ -320,7 +320,7 @@ Hecke action → eigenform → arithmetic
                                   ▼
                     ┌─────────────────────────────┐
                     │  Hecke operator T_n         │
-                    │  (or Structural ℋ_n)        │
+                    │  (relational update 𝒯_n)    │
                     │                             │
                     │  Sum over ad = n, b mod d   │
                     │  of f((az+b)/d)             │
@@ -375,40 +375,41 @@ Hecke action → eigenform → arithmetic
          └─────────────────────────────┘
 ```
 
-Special case (prime p ∤ level):
+Special case (prime \(p \nmid\) level):
+
 ```
 T_p : a_n ↦ a_{pn} + p^{k-1} a_{n/p}
 U_p (p | level): a_n ↦ a_{pn}  (ramified Power update)
 ```
 
-### APPENDIX: Continuum-limit $\Gamma$
+### APPENDIX: Continuum-limit \(\Gamma\)
 
-In the classical theory there is no single “continuum-limit $\Gamma$” attached to the Hecke operators themselves. The continuum-limit $\Gamma$ is the additional dynamical datum that has no direct classical counterpart and would need an independent definition (for example, as a renormalization-group-style coarse-graining on the Q-slices) if the framework is to be made fully rigorous.
+In the classical theory there is no single “continuum-limit \(\Gamma\)” attached to the Hecke operators themselves. The continuum-limit \(\Gamma\) is an additional dynamical datum with no direct classical counterpart; it requires an independent definition (for example, as a renormalization-group-style coarse-graining on the Q-slices) if the framework is to be made fully rigorous.
 
 Related limiting regimes that appear in the literature include:
 
-- Weight $\to\infty$ or level $\to\infty$ equidistribution of Hecke eigenvalues (Sato–Tate, Sato–Tate for Maass forms, etc.).
-- $p$-adic families and overconvergent modular forms (where $U_p$ becomes compact and has a spectral theory).
+- Weight \(\to\infty\) or level \(\to\infty\) equidistribution of Hecke eigenvalues (Sato–Tate, Sato–Tate for Maass forms, etc.).
+- \(p\)-adic families and overconvergent modular forms (where \(U_p\) becomes compact and admits a spectral theory).
 - Adelic or geometric formulations in which the Hecke correspondences become correspondences on Shimura varieties; coarse-graining then corresponds to taking traces or integrating against measures on the correspondence.
 
-Inside the Relationalism framing of the appendix, the operator $\Gamma_n$ (or the continuum-limit $\Gamma$) is the coarse-graining / Q-moderation map that appears in the Dynamics update
+Inside the Relationalism framing, the operator \(\Gamma_n\) (or the continuum-limit \(\Gamma\)) is the coarse-graining / Q-moderation map that appears in the Dynamics update
 
 $$
 Q'_{\mathrm{slice}} = \Gamma_n(Q_{\mathrm{slice}}).
 $$
 
-A natural way to make this concrete is to let $\Gamma$ be the limit of the finite Hecke averaging as the “resolution” of the Structural geometry is refined (e.g., as more divisors or more primes are included, or as one passes to an inverse-limit description of the modular curve / Shimura variety). In the Power triad this acts as a flux-redistribution that preserves the eigenform scaling
+A natural way to make this concrete is to let \(\Gamma\) be the limit of the finite Hecke averaging as the resolution of the Structural geometry is refined (for example, as more divisors or primes are included, or as one passes to an inverse-limit description of the modular curve / Shimura variety). In the Power triad this acts as a flux-redistribution that preserves the eigenform scaling
 
 $$
-\mathcal{H}_n^{\mathrm{Power}}(A_m,Q_{\mathrm{slice}}) = (\Lambda_n A_m,\,\Gamma_{\Lambda_n}(Q_{\mathrm{slice}}))
+\mathcal{T}_n^{\mathrm{Power}}(A_m,Q_{\mathrm{slice}}) = (\Lambda_n A_m,\,\Gamma_{\Lambda_n}(Q_{\mathrm{slice}}))
 $$
 
 while enforcing the multiplicativity / flux-factorization laws already listed.
 
-The classical formula for $T_p$
+The classical formula for \(T_p\)
 
 $$
 (T_p f)(z) = \sum_n\bigl(a_{pn}+p^{k-1}a_{n/p}\bigr)q^n
 $$
 
-remains the local model for the “clean” (unramified) case; the Relational $\oplus$ and $\odot$ simply replace ordinary sum and multiplication while preserving the same arithmetic relations.
+remains the local model for the “clean” (unramified) case; the Relational \(\oplus\) and \(\odot\) simply replace ordinary sum and multiplication while preserving the same arithmetic relations.
