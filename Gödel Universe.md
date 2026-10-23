@@ -26,7 +26,7 @@ Pressureless perfect fluid (dust) whose 4-velocity is a Killing vector, plus a f
 | $\Omega$ | Proper rotation rate of the matter lattice |
 | $ds^2$ | Spacetime interval (line element) |
 
-## Metric 1 
+## Metric 1 — Basic form
 
 Cylindrical-type chart ( $z$-slice omitted):
 
@@ -40,18 +40,18 @@ $$
 r > \log\bigl(1 + \sqrt{2}\bigr)
 $$
 
-## Metric 2 — Gödel’s original chart (Wikipedia convention)
+## Metric 2 — Gödel’s original chart
 
 $$
 ds^2 = \frac{1}{2\omega^2} \Bigl[ -\bigl(dt + e^x\, dy\bigr)^2 + dx^2 + \tfrac12 e^{2x}\, dy^2 + dz^2 \Bigr]
 $$
 
-## Metric 3 — Common cylindrical form (Rindler)
+## Metric 3 — Common cylindrical form 
 
 $$
-ds^2 = a^2 \Biggl\{
-\bigl[ dt - \sqrt{2}\,(\cosh r - 1)\, d\phi \bigr]^2 - \bigl( dr^2 + \sinh^2 r\, d\phi^2 + dz^2 \bigr)
-\Biggr\}
+ds^2 = a^2 \{
+[ dt - \sqrt{2}\,(\cosh r - 1)\, d\phi ]^2 -bigl( dr^2 + \sinh^2 r\, d\phi^2 + dz^2 )
+\}
 $$
 
 ## Einstein Equation Relations ($c = G = 1$)
