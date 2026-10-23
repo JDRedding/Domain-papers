@@ -178,3 +178,16 @@ Supersingular primes occupy the same structural position on the modular axis tha
 The Monster is the global relational fixed point of the unified chain.
 
 ---
+
+## Furture work
+- Full relational diagram
+
+Two parallel axes (combinatorial/metric vs. modular) with the shared collapse/boundary logic and the Monster as global fixed point.
+
+- Dual-chain RDG operator
+
+Explicit operator that maps the $\mathbb{Z}_2$ twist (Golay sign-cohomology) to the Fricke involution $w_p$ and the supersingular locus collapse.
+
+- Monster boundary calculus
+
+Single formal calculus in which both the combinatorial invariants and the supersingular primes appear as evaluations of one boundary operator on the Monster’s conjugacy classes.
