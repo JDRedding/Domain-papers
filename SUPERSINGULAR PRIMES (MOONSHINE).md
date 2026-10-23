@@ -21,7 +21,7 @@ Just as the $\mathbb{Z}_2$ orbifold is the unique relational gate forcing Monste
 ---
 
 ## **FUNDAMENTAL OBJECTS (with relational roles)**  
-- **$j(\tau)$** — modular SID‑structure seed (Hauptmodul for $SL_2(\mathbb{Z})$)  
+- **$j(\tau)$** — modular Structure, Interacton, Dynamics (SID) structural seed (Hauptmodul for $SL_2(\mathbb{Z})$)  
 - **$\mathbb{F}_p$** — relational base field  
 - **$\mathbb{F}_{p^2}$** — minimal extension always containing the supersingular locus  
 - **$X_0(p)$** — interaction layer (modular curve for $\Gamma_0(p)$)  
@@ -124,7 +124,7 @@ For the fifteen Moonshine primes, **every root lies in $\mathbb{F}_p$**: full bo
 ---
 
 ## **COMPUTATION METHODS (relational interpretation)**  
-A. **Modular forms of weight $p-1$** (Kaneko–Zagier) — SID‑structure → PED‑evaluation.  
+A. **Modular forms of weight $p-1$** (Kaneko–Zagier) — SID‑structural → Power, Evaluation, Dynamic-slice (PED) evaluative.  
 B. **Atkin orthogonal polynomials** — interaction → dynamics.  
 C. **Explicit combinatorial formulas** (Hasse invariant / Deuring) — structural shadow of Witt/Golay parity.  
 D. **Direct enumeration** over $\mathbb{F}_{p^2}$.
