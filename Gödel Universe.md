@@ -50,8 +50,7 @@ $$
 
 $$
 ds^2 = a^2 \Biggl\{
-\bigl[ dt - \sqrt{2}\,(\cosh r - 1)\, d\phi \bigr]^2
-- \bigl( dr^2 + \sinh^2 r\, d\phi^2 + dz^2 \bigr)
+\bigl[ dt - \sqrt{2}\,(\cosh r - 1)\, d\phi \bigr]^2 - \bigl( dr^2 + \sinh^2 r\, d\phi^2 + dz^2 \bigr)
 \Biggr\}
 $$
 
