@@ -112,7 +112,7 @@ The classical arithmetic properties (multiplicativity, Euler products, eigenvalu
 
 This appendix rewrites the classical Hecke‑operator framework inStructurale the relational geometry + momentum‑flux engine formalism, **structured relational update operators** acting on the geometry  while coupling into the dynamical flux.
 
-## 1. RDG‑Structurale Interpretation (Structural)
+## 1. Relational‑Structurale Interpretation (Structural)
 
 In Relationalism, a modular form is treated as a **relational geometric signal**  
 
@@ -126,7 +126,7 @@ $$
 F = \sum_{n\ge 0} A_n\, Q^n,
 $$
 
-where $Q$ is the RDG‑neutral expansion parameter (your “non‑committal relational null‑mode carrier”).
+where $Q$ is the Relational‑neutral expansion parameter (your “non‑committal relational null‑mode carrier”).
 
 A classical Hecke operator $T_n$ becomes an **Structural‑operator** 
 
@@ -141,9 +141,9 @@ $$
 F\!\left(\frac{az+b}{d}\right),
 $$
 
-where $\oplus$ is the RDG‑averaging operator (your “structure‑preserving relational sum”).
+where $\oplus$ is the Relational‑averaging operator (your “structure‑preserving relational sum”).
 
-### Fourier‑mode action in RDG form
+### Fourier‑mode action in Relational form
 
 Classically:
 
@@ -161,7 +161,7 @@ d^{k-1}\, A_{mn/d^2}
 \right) Q^m.
 $$
 
-The only change is replacing classical summation with RDG‑$\oplus$, which enforces **structure‑interaction‑dynamics separation** and keeps the operator compatible with your relational geometry axioms.
+The only change is replacing classical summation with Relational‑$\oplus$, which enforces **structure‑interaction‑dynamics separation** and keeps the operator compatible with your relational geometry axioms.
 
 ---
 
@@ -243,7 +243,7 @@ $$
 \mathcal{H}_n^{\text{Structural}}(F) = \Lambda_n \odot F,
 $$
 
-where $\odot$ is the RDG scalar‑action operator (structure‑preserving multiplication).
+where $\odot$ is the Relational scalar‑action operator (structure‑preserving multiplication).
 
 Power‑version:
 
