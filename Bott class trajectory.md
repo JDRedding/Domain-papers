@@ -162,7 +162,7 @@ This is the geometric origin of the trajectory.
 ---
 
 ## Future work
- Continuum‑limit embedding
+- Continuum‑limit embedding
 
 ## APPENDIX: Relational triadic object
 
