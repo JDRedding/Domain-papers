@@ -30,6 +30,8 @@ $$
 
 Thus the Bott trajectory is the 2‑step periodic orbit of the K‑theory functor under the Bott operator.
 
+[ed., See also: Bott Periodicity (Cliffordian)]
+
 ---
 
 ## 1. The Bott element 
