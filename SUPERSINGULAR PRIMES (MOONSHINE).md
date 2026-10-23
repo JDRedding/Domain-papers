@@ -179,7 +179,7 @@ The Monster is the global relational fixed point of the unified chain.
 
 ---
 
-## Furture work
+## Future work
 - Full relational diagram
 
 Two parallel axes (combinatorial/metric vs. modular) with the shared collapse/boundary logic and the Monster as global fixed point.
