@@ -161,7 +161,7 @@ d^{k-1}\, A_{mn/d^2}
 \right) Q^m.
 $$
 
-The only change is replacing classical summation with Relational‑$\oplus$, which enforces **structure‑interaction‑dynamics separation** and keeps the operator compatible with the relational geometry axioms.
+The only change is replacing classical summation with Relational‑ $\oplus$, which enforces **structure‑interaction‑dynamics separation** and keeps the operator compatible with the relational geometry axioms.
 
 ---
 
