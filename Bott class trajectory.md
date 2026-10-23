@@ -166,7 +166,7 @@ This is the geometric origin of the trajectory.
 
 ## APPENDIX: Relational triadic object
 
-The **Bott trajectory** in realtional terms is the **2‑periodic orbit** of the K‑theory object under a  triadic operator $B$: a stable, invertible degree‑2 shift that is simultaneously functorial (SID), geometric (PED), and spectral (Q‑mode). Treat the Bott periodicity as a triadic object: a single operator whose “trajectory” is how it propagates across SID, PED, and Q‑mode.
+The **Bott trajectory** in relational terms is the **2‑periodic orbit** of the K‑theory object under a  triadic operator $B$: a stable, invertible degree‑2 shift that is simultaneously functorial (SID), geometric (PED), and spectral (Q‑mode). Treat the Bott periodicity as a triadic object: a single operator whose “trajectory” is how it propagates across SID, PED, and Q‑mode.
 
 Package this as a single RDG operator $B$ with three coordinated faces:
 
