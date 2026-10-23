@@ -191,6 +191,13 @@ The entire hierarchy may be rewritten in residual-discrete-geometry operator not
 
 ---
 
+## Future work
+- Full inductive derivation of the general polynomial case inside the relational notation (via Stirling numbers of the second kind or Eulerian polynomials).
+- Explicit residual-geometry diagrams or incidence tables that realise each of the four structures.
+- Extension to $q$-analogues, multivariable weights, or formal power-series weights while preserving the same relational closure identity.
+
+---
+
 ## Appendix: The Four Complete Families
 
 Every exponential sum appearing in mathematics, mathematical physics, probability, algorithmic analysis, or signal processing belongs to one of the following four families.
