@@ -108,9 +108,9 @@ Hecke operators become **relational update operators** acting simultaneously on:
 - **Structural (Structure–Interaction–Dynamics)**: geometric averaging over divisor morphisms.
 - **Power (Power–Evaluation–Dynamics)**: flux redistribution, evaluation re‑normalization, and Q‑slice moderation.
 
-The classical arithmetic properties (multiplicativity, Euler products, eigenvalues) appear as **flux‑factorization laws** and **Q‑moderation invariants** inStructurale the Relationalism Master Equation.
+The classical arithmetic properties (multiplicativity, Euler products, eigenvalues) appear as **flux‑factorization laws** and **Q‑moderation invariants** inside the Relationalism Master Equation.
 
-This appendix rewrites the classical Hecke‑operator framework inStructurale the relational geometry + momentum‑flux engine formalism, **structured relational update operators** acting on the geometry  while coupling into the dynamical flux.
+This appendix rewrites the classical Hecke‑operator framework inside the relational geometry + momentum‑flux engine formalism, **structured relational update operators** acting on the geometry  while coupling into the dynamical flux.
 
 ## 1. Relational‑Structurale Interpretation (Structural)
 
