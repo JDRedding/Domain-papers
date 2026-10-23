@@ -178,7 +178,7 @@ $$
 A_m \mapsto A'_m
 $$
 
-is not merely algebraic: it changes the **flux‑weights** that the MFE uses to compute survival‑momentum contributions inStructurale the Master Equation (RME).
+is not merely algebraic: it changes the **flux‑weights** that the MFE uses.
 
 Define the Power‑lift of a Hecke operator:
 
