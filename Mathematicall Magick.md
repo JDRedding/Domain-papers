@@ -1,7 +1,8 @@
 # Mathematicall Magick
 **Mathematicall Magick** is a 1648 two-book treatise by John Wilkins that surveys classical mechanical devices and explores speculative technologies such as flying machines, submarines, automata, and perpetual motion. Wilkins’s treatise blends classical mechanics, early engineering, and speculative technology, illustrating the 17th-century transition from Renaissance natural philosophy to systematic scientific inquiry. It also shows Wilkins’s broader goal: to popularize scientific knowledge and encourage experimentation.
 
-### Overview and Publication History
+## Overview
+### Publication History
 Wilkins’s *Mathematicall Magick. Or, The Wonders that may be Performed by Mechanicall Geometry* was first published in London in 1648. Later editions appeared in 1680, 1691, and 1707. The work was printed for Samuel Gellibrand and dedicated to Charles Louis, Elector Palatine. Surviving copies include the first edition (available on the Internet Archive) and the 1691 fourth edition (held in collections such as the Sir John Soane’s Museum).
 
 Wilkins—an English clergyman, natural philosopher, and polymath—intended the treatise to make mechanical principles accessible and to encourage scientific study.
