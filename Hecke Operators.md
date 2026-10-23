@@ -7,6 +7,8 @@ Hecke operators are central because they:
 - give rise to Euler products and functional equations of L‑functions,
 - appear in the Langlands program as part of the structure of automorphic representations.
 
+They act on the space of modular forms of fixed weight $k$ and level, preserve the space, commute, and act on Fourier coefficients by the divisor-sum formula you gave. Eigenforms have multiplicative coefficients (when indices are coprime), yield Euler products for $L(f,s)$, and (via the eigenvalues $a_p$) relate to Galois representations and the Langlands correspondence. The distinction between $T_p$ (good primes) and $U_p$ (bad primes) is likewise standard.
+
 ## What a Hecke Operator Is
 
 Hecke operators are linear operators acting on spaces of modular forms (and more generally automorphic forms) that encode deep arithmetic information. They form a commutative algebra, admit simultaneous eigenfunctions, and connect modular forms to L‑functions and Galois representations.
@@ -77,8 +79,7 @@ to factor into an Euler product.
 
 ## Furute Work
 
-- **Diagrammatic ASCII flowchart** 
-- **Continuum‑limit $\Gamma$**
+- None
 
 ---
 
@@ -110,7 +111,7 @@ Hecke operators become **relational update operators** acting simultaneously on:
 
 The classical arithmetic properties (multiplicativity, Euler products, eigenvalues) appear as **flux‑factorization laws** and **Q‑moderation invariants** inside the Relationalism Master Equation.
 
-This appendix rewrites the classical Hecke‑operator framework inside the relational geometry + momentum‑flux engine formalism, **structured relational update operators** acting on the geometry  while coupling into the dynamical flux.
+This appendix rewrites the classical Hecke‑operator framework inside the relational geometry + momentum‑flux engine formalism, **structured relational update operators** acting on the geometry  while coupling into the dynamical flux. The appendix’s rewriting of the Hecke algebra as a pair of Structural and Power update operators is consistent with the classical identities once the Relational averaging $\oplus$ and the scalar action $\odot$ are required to reproduce the usual divisor-sum and multiplicativity relations. 
 
 ## 1. Relational‑Structurale Interpretation (Structural)
 
@@ -306,8 +307,108 @@ $$
 
 Here the Power‑update is **ramified**, reflecting the classical fact that $U_p$ behaves differently and interacts with non‑squarefree level structure.
 
+### APPENDIX: Diagrammatic flowchart 
+Hecke action → eigenform → arithmetic
 
+```
+                    ┌─────────────────────────────┐
+                    │  Modular form               │
+                    │  f(z) = ∑ a_n q^n           │
+                    │  (weight k, level N)        │
+                    └─────────────┬───────────────┘
+                                  │
+                                  ▼
+                    ┌─────────────────────────────┐
+                    │  Hecke operator T_n         │
+                    │  (or Structural ℋ_n)        │
+                    │                             │
+                    │  Sum over ad = n, b mod d   │
+                    │  of f((az+b)/d)             │
+                    │  (× n^{k-1})                │
+                    └─────────────┬───────────────┘
+                                  │
+                                  ▼
+                    ┌─────────────────────────────┐
+                    │  Coefficient transform      │
+                    │  a_m ↦ ∑_{d|(m,n)}         │
+                    │         d^{k-1} a_{mn/d²}   │
+                    │  (Relational ⊕ version)     │
+                    └─────────────┬───────────────┘
+                                  │
+                    ┌─────────────┴───────────────┐
+                    │                             │
+                    ▼                             ▼
+         ┌──────────────────┐         ┌──────────────────┐
+         │ Simultaneous     │         │ General form     │
+         │ eigenform        │         │ (not eigen)      │
+         │ T_n f = λ_n f    │         │ mixed spectrum   │
+         │ (all n)          │         └──────────────────┘
+         └────────┬─────────┘
+                  │
+                  ▼
+         ┌─────────────────────────────┐
+         │ Multiplicative coeffs       │
+         │ a_{mn}=a_m a_n (coprime)    │
+         │ + prime-power recursion     │
+         │                             │
+         │ Power view: flux-factoriz.  │
+         │ P_{mn} = P_m ∘ P_n          │
+         └─────────────┬───────────────┘
+                       │
+                       ▼
+         ┌─────────────────────────────┐
+         │ L-function                  │
+         │ L(f,s) = ∑ a_n n^{-s}       │
+         │ = Euler product             │
+         │ (local factors from λ_p)    │
+         └─────────────┬───────────────┘
+                       │
+                       ▼
+         ┌─────────────────────────────┐
+         │ Arithmetic consequences     │
+         │ • Galois representations    │
+         │   (via a_p eigenvalues)     │
+         │ • Special values, ranks,    │
+         │   BSD-type data, etc.       │
+         │ • Relational: Q-slice       │
+         │   moderation invariants     │
+         └─────────────────────────────┘
+```
 
+Special case (prime p ∤ level):
+```
+T_p : a_n ↦ a_{pn} + p^{k-1} a_{n/p}
+U_p (p | level): a_n ↦ a_{pn}  (ramified Power update)
+```
 
+### APPENDIX: Continuum-limit $\Gamma$
 
+In the classical theory there is no single “continuum-limit $\Gamma$” attached to the Hecke operators themselves. The continuum-limit $\Gamma$ is the additional dynamical datum that has no direct classical counterpart and would need an independent definition (for example, as a renormalization-group-style coarse-graining on the Q-slices) if the framework is to be made fully rigorous.
 
+Related limiting regimes that appear in the literature include:
+
+- Weight $\to\infty$ or level $\to\infty$ equidistribution of Hecke eigenvalues (Sato–Tate, Sato–Tate for Maass forms, etc.).
+- $p$-adic families and overconvergent modular forms (where $U_p$ becomes compact and has a spectral theory).
+- Adelic or geometric formulations in which the Hecke correspondences become correspondences on Shimura varieties; coarse-graining then corresponds to taking traces or integrating against measures on the correspondence.
+
+Inside the Relationalism framing of the appendix, the operator $\Gamma_n$ (or the continuum-limit $\Gamma$) is the coarse-graining / Q-moderation map that appears in the Dynamics update
+
+$$
+Q'_{\mathrm{slice}} = \Gamma_n(Q_{\mathrm{slice}}).
+$$
+
+A natural way to make this concrete is to let $\Gamma$ be the limit of the finite Hecke averaging as the “resolution” of the Structural geometry is refined (e.g., as more divisors or more primes are included, or as one passes to an inverse-limit description of the modular curve / Shimura variety). In the Power triad this acts as a flux-redistribution that preserves the eigenform scaling
+
+$$
+\mathcal{H}_n^{\mathrm{Power}}(A_m,Q_{\mathrm{slice}}) = (\Lambda_n A_m,\,\Gamma_{\Lambda_n}(Q_{\mathrm{slice}}))
+$$
+
+while enforcing the multiplicativity / flux-factorization laws already listed.
+
+The classical formula for $T_p$
+
+$$
+(T_p f)(z) = \sum_n\bigl(a_{pn}+p^{k-1}a_{n/p}\bigr)q^n
+$$
+
+remains the local model for the “clean” (unramified) case; the Relational $\oplus$ and $\odot$ simply replace ordinary sum and multiplication while preserving the same arithmetic relations.
