@@ -235,3 +235,170 @@ $$
 $$
 
 This is the geometric kernel on the unit circle; it generates the Dirichlet kernels of Fourier analysis and the discrete theory of wave propagation.
+
+## Appendix: RDG‑Compatible Operators  
+**Relational Dynamic Geometry Formulation of Exponential Kernels**
+
+The four exponential‑sum families in **RDG‑clean operator notation**, using the relational triad:
+
+- **SID** = Structure, Interaction, Dynamics  
+- **PED** = Power, Evaluation, Dynamics (field‑side triad)  
+- **Q‑mode** = the exponent‑parameter generator controlling relational propagation
+
+All exponential sums satisfy the RDG closure identity:
+
+$$
+\boxed{
+\mathcal{E}(p,\alpha,D) =
+p(\mathcal{D}_\alpha)\;
+\mathsf{S}(D)\;\mathsf{I}(\alpha)\;\mathsf{D}(D)
+}
+$$
+
+where:
+
+- $\mathsf{S}(D)$ encodes the structural domain (finite, infinite, continuous),
+- $\mathsf{I}(\alpha)$ encodes the interaction/exponent (real or imaginary),
+- $\mathsf{D}(D)$ encodes the dynamic propagation over the domain,
+- $p(\mathcal{D}_\alpha)$ encodes polynomial weighting.
+
+This identity is the **RDG‑complete** statement of the Total Exponential Sum Formulas.
+
+
+---
+
+### 1. RDG Kernel Definition
+
+In RDG, exponentials are **relational propagators**:
+
+$$
+K(\alpha,x)=e^{\alpha x}.
+$$
+
+The exponent parameter $\alpha$ is interpreted as a **Q‑mode generator**:
+
+$$
+\alpha = Q\text{-mode}(x),
+$$
+
+so the exponential kernel is the relational composition:
+
+$$
+K(\alpha,x) = \mathsf{S}(x)\;\mathsf{I}(\alpha)\;\mathsf{D}(x),
+$$
+
+where:
+
+- $\mathsf{S}(x)$ encodes the **structural domain** (finite, infinite, continuous),
+- $\mathsf{I}(\alpha)$ encodes the **interaction strength** (real, imaginary),
+- $\mathsf{D}(x)$ encodes the **dynamic propagation** over the domain.
+
+This is the RDG‑clean form of the exponential kernel.
+
+If you want the full operator grammar, use  
+**RDG operator rewrite**.
+
+---
+
+### 2. Polynomial Weighting in RDG
+
+Polynomial weighting corresponds to repeated application of the **interaction‑derivative operator**:
+
+$$
+\mathcal{D}_\alpha = \mathsf{I}\!\left(\frac{d}{d\alpha}\right).
+$$
+
+Thus:
+
+#### Discrete
+$$
+\sum_{k\in D} p(k)\,e^{\alpha k} = p(\mathcal{D}_\alpha)\sum_{k\in D} e^{\alpha k}.
+$$
+
+#### Continuous
+$$
+\int_D p(x)e^{\alpha x}\,dx = p(\mathcal{D}_\alpha)\int_D e^{\alpha x}\,dx.
+$$
+
+#### Complex
+$$
+\sum_{k\in D} p(k)e^{i\theta k} = p(\mathcal{D}_\theta)\sum_{k\in D} e^{i\theta k}.
+$$
+
+This is the RDG‑compatible statement that polynomial weights do not create new families; they are simply higher‑order interaction operators.
+
+For the general derivation, see  
+**general polynomial‑weighted geometric sum**.
+
+---
+
+### 3. RDG Rewrite of the Four Families
+
+#### 3.1 Finite Discrete Domain
+
+$$
+G_n(r)=\sum_{k=0}^n r^k =\sum_{k=0}^n e^{(\ln r)k}.
+$$
+
+RDG form:
+
+$$
+G_n(r)=\mathsf{S}([0,n])\;\mathsf{I}(\ln r)\;\mathsf{D}(k).
+$$
+
+Polynomial‑weighted:
+
+$$
+\sum_{k=0}^n p(k)\,r^k = p(\mathcal{D}_{\ln r})\,G_n(r).
+$$
+
+This is the finite‑horizon SID structure with PED evaluation via $\ln r$.
+
+---
+
+#### 3.2 Infinite Discrete Domain
+
+$$
+\sum_{k=0}^\infty r^k = \mathsf{S}(\mathbb{N})\;\mathsf{I}(\ln r)\;\mathsf{D}(k),
+\qquad |r|<1.
+$$
+
+Polynomial‑weighted:
+
+$$
+\sum_{k=0}^\infty p(k)\,r^k = p(\mathcal{D}_{\ln r})\;\mathsf{S}(\mathbb{N})\;\mathsf{I}(\ln r)\;\mathsf{D}(k).
+$$
+
+This is the stationary SID structure with PED evaluation under convergence.
+
+---
+
+#### 3.3 Continuous Domain
+
+$$
+I_0(t)=\int_0^t e^{ax}\,dx =\mathsf{S}([0,t])\;\mathsf{I}(a)\;\mathsf{D}(x).
+$$
+
+Polynomial‑weighted:
+
+$$
+I_m(t)=\left(\mathcal{D}_a\right)^m I_0(t).
+$$
+
+This is the continuous SID structure with PED evaluation via the real parameter $a$.
+
+---
+
+#### 3.4 Complex Discrete Domain
+
+$$
+C_n(\theta)=\sum_{k=0}^n e^{ik\theta} =\mathsf{S}([0,n])\;\mathsf{I}(i\theta)\;\mathsf{D}(k).
+$$
+
+Polynomial‑weighted:
+
+$$
+\sum_{k=0}^n p(k)e^{ik\theta} = p(\mathcal{D}_\theta)\,C_n(\theta).
+$$
+
+This is the Fourier SID structure with PED evaluation via imaginary exponent.
