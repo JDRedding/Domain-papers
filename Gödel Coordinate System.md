@@ -75,4 +75,166 @@ This form makes the circular nature of Gödel’s CTCs more explicit.
 ---
 
 ## Future work
-- Closed timelike curves (how CTCs arise explicitly from the Gödel metric)
+- **Closed timelike curves** (how CTCs arise explicitly from the Gödel metric)
+- **String‑derivation of the Gödel metric**  
+- **Causal‑cone diagrams**  
+- **Gödel triadic roles**
+
+## APPENDIX: Relational Coordinates
+**RDG Rendering of the Gödel Coordinate System**
+
+- They provide a clean example of **non‑commuting relational modes** (t and y).  
+- They show how **global rotation** becomes a **flux operator** in PED‑P.  
+- They demonstrate how **causal structure** is encoded in the RDG D‑string.  
+- They supply a canonical case where **SID‑I twist** produces **timelike loops**.
+
+### **1. SID Layer: Structural Object**
+
+In RDG terms, Gödel spacetime is a **SID‑S object**: a stationary, homogeneous, rotating 4‑manifold with a dust flow and cosmological constant. The coordinate system \((t,x,y,z)\) is treated as a **structure‑chart**, not a physical frame.
+
+SID‑S (Structure):
+```
+S := { M4 ; coords = (t,x,y,z) ;
+       sym = {stationary, homogeneous, rotating} ;
+       matter = dust ;
+       Λ = const }
+```
+
+The structural role of each coordinate:
+
+- **t** : comoving proper‑time parameter of the dust flow.  
+- **x** : structural direction controlling exponential deformation.  
+- **y** : rotation‑coupled spatial coordinate.  
+- **z** : axis‑aligned coordinate (rotation axis).
+
+---
+
+### **2. SID‑I Layer: Interaction Object**
+
+Gödel’s rotation appears in RDG as an **I‑twist operator** mixing the time‑string and the \(y\)-string. The off‑diagonal term becomes an RDG interaction string:
+
+```
+I := - 2 e^x ( dt ⊗ dy )
+```
+
+This is the RDG representation of frame‑twist: a non‑commuting coupling between temporal and spatial relational modes.
+
+The exponential factors are structural deformation operators:
+
+```
+E1 := e^x
+E2 := e^(2x)
+```
+
+These act on the y‑string, producing anisotropic geometry along x.
+
+---
+
+### **3. SID‑D Layer: Dynamics Object**
+
+The Gödel metric becomes a **D‑string** (a relational evolution kernel), not a tensor:
+
+```
+D := a^2 [ - dt^2  + dx^2 + dz^2
+           - 2 e^x dt dy
+           + (1/2) e^(2x) dy^2 ]
+```
+
+In notation, this is a **4‑mode relational operator**:
+
+```
+Q := ( t | x | y | z )
+G(Q) := a^2 * {
+   - (t·t)
+   + (x·x)
+   + (z·z)
+   + (y·y)*(1/2 e^(2x))
+   + twist(t,y)*(-2 e^x)
+}
+```
+
+Where `twist(t,y)` is the RDG interaction primitive encoding non‑orthogonality of relational modes.
+
+---
+
+### **4. PED Layer: Power–Evaluation–Dynamics**
+
+Gödel spacetime’s rotation is a PED‑P power‑flow, the dust is PED‑E evaluation input, and the metric is PED‑D dynamical propagation.
+
+#### PED‑P (Power)
+Global rotation is represented as a **bipolar flux** between the t‑mode and y‑mode:
+
+```
+P := Flux( t ↔ y ; weight = e^x )
+```
+
+#### PED‑E (Evaluation)
+Dust density and Λ enter as evaluation constants:
+
+```
+E := { ρ_dust = const ; Λ = const }
+```
+
+#### PED‑D (Dynamics)
+The propagation operator is the Gödel D‑string above. In RDG, the evolution law is:
+
+```
+State(Q) → State(Q') via G(Q)
+```
+
+with no explicit t‑dependence (stationarity).
+
+---
+
+### **5. Interpretation of Features**
+
+#### (a) Global Rotation
+Rotation = persistent **t↔y flux** in PED‑P and non‑zero twist operator in SID‑I.
+
+#### (b) Light‑Cone Tilt
+Tilt = deformation of the causal RDG cone:
+
+```
+Cone(Q) := Null(G(Q))
+```
+
+As x increases, the twist term dominates, shifting the null‑strings.
+
+#### (c) Closed Timelike Curves
+CTCs occur when the RDG causal operator admits a timelike loop:
+
+```
+Exists γ : γ(0)=γ(1)  AND  G(γ̇,γ̇) < 0
+```
+
+In RDG language: the D‑string allows a **negative‑norm loop** in the y‑mode at sufficiently large x.
+
+---
+
+### **6. Cylindrical Form**
+
+Gödel’s cylindrical coordinates \((t,r,φ,z)\) become:
+
+```
+D_cyl := - dt^2
+         - 2 H(r) dt dφ
+         + D(r) dφ^2
+         + dr^2
+         + dz^2
+```
+
+RDG rewrite:
+
+```
+Q := ( t | r | φ | z )
+
+G_cyl(Q) := - (t·t)
+            + (r·r)
+            + (z·z)
+            + (φ·φ)*D(r)
+            + twist(t,φ)*(-2 H(r))
+```
+
+The φ‑mode loop structure makes CTCs explicit.
+
+---
