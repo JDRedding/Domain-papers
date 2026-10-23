@@ -276,6 +276,7 @@ $$
 $$
 
 - **Bott element as a spectral generator:**
+
 $$
 \beta\in \pi_2(KU)
 $$
