@@ -126,7 +126,7 @@ $$
 F = \sum_{n\ge 0} A_n\, Q^n,
 $$
 
-where $Q$ is the Relational‑neutral expansion parameter (your “non‑committal relational null‑mode carrier”).
+where $Q$ is the Relational‑neutral expansion parameter (the “non‑committal relational null‑mode carrier”).
 
 A classical Hecke operator $T_n$ becomes an **Structural‑operator** 
 
@@ -141,7 +141,7 @@ $$
 F\!\left(\frac{az+b}{d}\right),
 $$
 
-where $\oplus$ is the Relational‑averaging operator (your “structure‑preserving relational sum”).
+where $\oplus$ is the Relational‑averaging operator (the “structure‑preserving relational sum”).
 
 ### Fourier‑mode action in Relational form
 
@@ -161,7 +161,7 @@ d^{k-1}\, A_{mn/d^2}
 \right) Q^m.
 $$
 
-The only change is replacing classical summation with Relational‑$\oplus$, which enforces **structure‑interaction‑dynamics separation** and keeps the operator compatible with your relational geometry axioms.
+The only change is replacing classical summation with Relational‑$\oplus$, which enforces **structure‑interaction‑dynamics separation** and keeps the operator compatible with the relational geometry axioms.
 
 ---
 
@@ -218,7 +218,7 @@ $$
 Q'_{\text{slice}} = \Gamma_n(Q_{\text{slice}}),
 $$
 
-   where $\Gamma_n$ is the Hecke‑induced Q‑moderation map (your preferred “continuum limit later” operator).  
+   where $\Gamma_n$ is the Hecke‑induced Q‑moderation map (the preferred “continuum limit later” operator).  
    This is the place where the **coarse‑graining map $\Gamma$** will eventually be inserted once you bring in the “hardest piece.”
 
 Thus the full Relationalism Hecke operator is:
