@@ -1,4 +1,4 @@
-# RDG Version of Exponent‑Vector Geometry  
+# Exponent‑Vector Geometry (Relational Numbers)
 *(Prime‑Factor Geometry expressed as a SID/PED/Q relational manifold)*
 
 Prime‑factor geometry:
