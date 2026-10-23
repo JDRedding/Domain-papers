@@ -1,190 +1,195 @@
-# Exponent‑Vector Geometry (Relational Numbers)
-*(Prime‑Factor Geometry expressed as a SID/PED/Q relational manifold)*
+# **Exponent-Vector Geometry (Relational Numbers)**  
+*(Prime-Factor Geometry expressed as a SID/PED/Q relational manifold)*
 
-Prime‑factor geometry:
+Prime-factor geometry can be organized as follows:
 
-- **SID.Structure** = prime‑exponent lattice  
-- **SID.Interaction** = correlations between prime‑structure profiles  
+- **SID.Structure** = the prime-exponent lattice  
+- **SID.Interaction** = correlations between prime-structure profiles  
 - **PED.Power** = magnitude of composite growth  
-- **PED.Evaluation** = arithmetic functions (τ, Ω, ω)  
+- **PED.Evaluation** = arithmetic functions ($\tau$, $\Omega$, $\omega$)  
 - **PED.Dynamics** = flows induced by multiplicative translation  
-- **Q‑mode** = multiplicative choice, sieve restriction, probabilistic selection
+- **Q-mode** = multiplicative choice, sieve restriction, and probabilistic selection  
 
-Exponent‑vector geometry are an **RDG manifold** where:
+Exponent-vector geometry forms an **RDG manifold** in which:
 
-- **Points** = integers (as relational states)  
-- **Coordinates** = prime‑exponent contributions along SID‑Structure axes  
-- **Basis vectors** = primes as pure SID.Structure directions  
-- **Translations** = multiplicative flows in Q‑mode  
-- **Distances** = SID‑metric differences in structural load  
-- **Angles** = SID‑correlation between prime‑structure profiles  
-- **Subspaces** = SID‑restricted manifolds (smooth‑number slices)  
-- **Volumes** = PED‑Evaluation over SID‑Structure  
-- **Random points** = probabilistic SID‑Structure distributions
+- **Points** = integers (viewed as relational states)  
+- **Coordinates** = prime-exponent contributions along the SID-Structure axes  
+- **Basis vectors** = primes, each acting as a pure SID.Structure direction  
+- **Translations** = multiplicative flows realized in Q-mode  
+- **Distances** = SID-metric differences in structural load  
+- **Angles** = SID-correlations between prime-structure profiles  
+- **Subspaces** = SID-restricted manifolds (e.g., smooth-number slices)  
+- **Volumes** = PED-Evaluation measures over SID-Structure  
+- **Random points** = probabilistic distributions on SID-Structure  
 
-This is the **relational linearization of multiplicative number theory**.
-
----
-
-# 1. Ambient RDG Space  
-The exponent‑vector space
-
-$$
-\mathcal{E} = \mathbb{Z}_{\ge 0}^{\infty}
-$$
-
-are the **SID.Structure manifold**:
-
-$$
-\mathcal{S} = \bigoplus_{i=1}^{\infty} \mathbb{Z}_{\ge 0}\, e_i
-$$
-
-where each axis $e_i$ corresponds to the prime $p_i$.
-
-Thus:
-
-- **SID.Structure axes** = primes  
-- **SID.Structure coordinates** = prime exponents  
-- **SID.Structure point** = integer’s factorization profile
-
-The integer $m$ are the SID‑Structure vector:
-
-$$
-\mathbf{v}(m) = (v_1(m), v_2(m), v_3(m),\dots)
-$$
-
-This is the **RDG‑clean prime‑coordinate embedding**.
+This framework supplies a relational linearization of multiplicative number theory.
 
 ---
 
-# 2. Arithmetic as RDG Flows  
-Multiplication are a **Q‑mode translation** across SID.Structure:
+### 1. Ambient RDG Space
+
+The ambient exponent-vector space is the countable direct sum of non-negative integer axes
 
 $$
-\mathbf{v}(mn)=\mathbf{v}(m)+\mathbf{v}(n)
+\mathcal{E} = \mathbb{Z}_{\ge 0}^{\infty} = \bigoplus_{i=1}^{\infty} \mathbb{Z}_{\ge 0}\, e_i.
 $$
 
-Division are the reverse flow:
+Each standard basis vector $e_i$ corresponds to the $i$ -th prime $p_i$. Consequently:
+
+- the **SID.Structure axes** are the primes $p_i$,  
+- the **SID.Structure coordinates** are the exponents $v_i(m)$,  
+- an **SID.Structure point** is the complete factorization profile of an integer.
+
+To every positive integer $m$ one associates its SID-Structure vector
 
 $$
-\mathbf{v}(m/n)=\mathbf{v}(m)-\mathbf{v}(n)
+\mathbf{v}(m) = \bigl(v_1(m),\, v_2(m),\, v_3(m),\,\dots\bigr) \in \mathcal{E},
 $$
 
-Factorization are **SID decomposition**:
-
-$$
-\mathbf{v}(m)=\sum_i v_i(m)e_i
-$$
-
-Multiplicative independence are **SID linear independence**.
-
-Thus arithmetic is as **Q‑mode flows on SID.Structure**.
+where $v_i(m)$ denotes the exponent of $p_i$ in the prime factorization of $m$. This is the canonical RDG-clean prime-coordinate embedding of the positive integers.
 
 ---
 
-# 3. RDG Metric Structure  
-SID.Structure carries a natural Euclidean metric.
+### 2. Arithmetic as RDG Flows
 
-### SID‑Norm  
-
-$$
-\|\mathbf{v}(m)\|_2 = \sqrt{\sum_i v_i(m)^2}
-$$
-
-This is the **SID.Structure magnitude** of the integer.
-
-### SID‑Distance  
+Multiplication of integers corresponds to vector addition in the exponent lattice (a pure Q-mode translation):
 
 $$
-d(m,n)=\|\mathbf{v}(m)-\mathbf{v}(n)\|
+\mathbf{v}(mn) = \mathbf{v}(m) + \mathbf{v}(n).
 $$
 
-This is the **structural difference** between integers.
-
-### SID‑Angle  
+Division (when exact) is the reverse translation:
 
 $$
-\theta(m,n)=\arccos\left(\frac{\langle \mathbf{v}(m),\mathbf{v}(n)\rangle}{\|\mathbf{v}(m)\|\|\mathbf{v}(n)\|}\right)
+\mathbf{v}\Bigl(\frac{m}{n}\Bigr) = \mathbf{v}(m) - \mathbf{v}(n).
 $$
 
-This is the **structural correlation** between integers.
+Complete factorization is the SID decomposition of the vector into pure axis components:
 
-Small angle → shared prime structure  
-Large angle → prime‑orthogonal
+$$
+\mathbf{v}(m) = \sum_{i=1}^{\infty} v_i(m)\, e_i.
+$$
+
+Multiplicative independence of a set of integers is equivalent to linear independence of their SID-Structure vectors. Thus ordinary arithmetic is realized as Q-mode flows on the SID.Structure manifold.
 
 ---
 
-# 4. RDG Subspaces and Manifolds  
-Exponent‑vector geometry are a hierarchy of **SID submanifolds**.
+### 3. RDG Metric Structure
 
-### Smooth‑number SID subspace 
+The SID.Structure space carries the standard Euclidean metric induced by the $\ell^2$ inner product.
 
-$$
-\mathcal{S}_y = \text{span}\{e_1,\dots,e_{\pi(y)}\}
-$$
-
-This is a **finite‑dimensional SID.Structure slice**.
-
-### Prime‑power rays  
+**SID-Norm.**  
+The structural magnitude of an integer is
 
 $$
-\mathcal{R}_{p_i} = \{k e_i : k\ge 0\}
+\|\mathbf{v}(m)\|_2 = \sqrt{\sum_{i=1}^{\infty} v_i(m)^2}.
 $$
 
-These are **pure SID.Structure rays**.
+**SID-Distance.**  
+The structural distance between two integers is
 
-### Highly composite clusters  
-These are **dense SID regions** near the span of $e_1,e_2,e_3$.
+$$
+d(m,n) = \|\mathbf{v}(m) - \mathbf{v}(n)\|_2.
+$$
+
+**SID-Angle.**  
+The structural correlation is measured by the angle
+
+$$
+\theta(m,n) = \arccos\left(
+  \frac{\langle\mathbf{v}(m),\mathbf{v}(n)\rangle}
+       {\|\mathbf{v}(m)\|_2\,\|\mathbf{v}(n)\|_2}
+\right),
+$$
+
+where
+
+$$
+\langle\mathbf{v}(m),\mathbf{v}(n)\rangle = \sum_{i=1}^{\infty} v_i(m)\,v_i(n).
+$$
+
+A small angle indicates substantial shared prime structure; a large angle indicates near-orthogonality of the prime supports.
 
 ---
 
-# 5. Arithmetic Functions as PED‑Evaluation  
-Multiplicative functions are **PED‑Evaluation operators** acting on SID.Structure.
+### 4. RDG Subspaces and Manifolds
 
-### Divisor function  
+Exponent-vector geometry organizes into a hierarchy of SID submanifolds.
 
-$$
-\tau(m)=\prod_i (v_i(m)+1)
-$$
-
-This is a **PED.Evaluation volume** over the SID.Structure box defined by $\mathbf{v}(m)$.
-
-### Total prime count  
+**Smooth-number SID subspace.**  
+For any real $y\ge 2$ the $y$-smooth integers span the finite-dimensional coordinate subspace
 
 $$
-\Omega(m)=\sum_i v_i(m)
+\mathcal{S}_y = {span}\{e_1,\dots,e_{\pi(y)}\}.
 $$
 
-This is the **SID.Structure $L^1$ magnitude**.
-
-### Distinct prime count  
+**Prime-power rays.**  
+Each pure power of a single prime traces the ray
 
 $$
-\omega(m)=\sum_i \mathbf{1}_{v_i(m)>0}
+\mathcal{R}_{p_i} = \{k\, e_i : k\in\mathbb{Z}_{\ge 0}\}.
 $$
 
-This is the **SID.Structure support size**.
+**Highly composite clusters.**  
+Regions of high density near the span of the first few basis vectors $\{e_1,e_2,e_3,\dots\}$ correspond to integers with many small prime factors.
 
 ---
 
-# 6. Sieve Theory as SID‑Filtering  
-Sieve operations are **SID‑filters** applied through Q‑mode.
+### 5. Arithmetic Functions as PED-Evaluation
 
-- Removing multiples of primes = removing SID points with nonzero coordinates on certain axes  
-- Restricting to smooth numbers = restricting to low‑dimensional SID subspaces  
-- Weighted sieves = applying PED‑Evaluation weights to SID lattice points
+Classical multiplicative functions act as PED-Evaluation operators on SID-Structure vectors.
 
-Sieve density are **SID‑measure under PED‑Evaluation**.
+**Divisor function.**  
+
+$$
+\tau(m) = \prod_{i=1}^{\infty}\bigl(v_i(m)+1\bigr)
+$$
+
+counts the number of lattice points in the axis-aligned box determined by $\mathbf{v}(m)$; it is therefore a PED.Evaluation volume.
+
+**Total number of prime factors (with multiplicity).**
+
+$$
+\Omega(m) = \sum_{i=1}^{\infty} v_i(m)
+$$
+
+is the $\ell^1$-norm of the SID-Structure vector.
+
+**Number of distinct prime factors.**  
+
+$$
+\omega(m) = \sum_{i=1}^{\infty} \mathbf{1}_{v_i(m)>0}
+$$
+
+is the cardinality of the support of $\mathbf{v}(m)$.
 
 ---
 
-# 7. Probabilistic Number Theory as Q‑Mode Distributions  
-Random integers are **random SID.Structure vectors**.
+### 6. Sieve Theory as SID-Filtering
 
-Prime‑exponent distributions:
+Sieve operations are realized as SID-filters applied through Q-mode restrictions:
+
+- removing multiples of a set of primes corresponds to deleting all lattice points whose coordinates on the corresponding axes are positive;  
+- restricting to smooth numbers is equivalent to restricting attention to a finite-dimensional SID subspace $\mathcal{S}_y$;  
+- weighted sieves amount to assigning PED-Evaluation weights to the remaining SID lattice points.
+
+Sieve densities are therefore SID-measures evaluated under a PED-Evaluation functional.
+
+---
+
+### 7. Probabilistic Number Theory as Q-Mode Distributions
+
+A “random” integer is modeled as a random SID-St
+ructure vector. Under the usual heuristic the coordinates are independent and geometrically distributed:
+$$
+\Pr\bigl[v_i(m)=k\bigr] \approx \bigl(1-p_i^{-1}\bigr)\,p_i^{-k}
+\qquad\bigl(k=0,1,2,\dots\bigr)
+$$
+
+(or, in the continuous approximation often used in probabilistic number theory,
 
 $$
-\Pr[v_i(m)=k] \approx e^{-k\log p_i}
+\Pr\bigl[v_i(m)=k\bigr] \approx e^{-k\log p_i}).
 $$
 
-This is a **product distribution across SID axes**, giving a clean RDG probabilistic manifold.
+The resulting product measure on $\mathcal{E}$ furnishes a clean probabilistic RDG manifold on which asymptotic density statements become statements about measures of SID regions.
