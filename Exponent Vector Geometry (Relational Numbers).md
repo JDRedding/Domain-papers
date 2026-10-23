@@ -181,6 +181,7 @@ Sieve densities are therefore SID-measures evaluated under a PED-Evaluation func
 
 A “random” integer is modeled as a random SID-St
 ructure vector. Under the usual heuristic the coordinates are independent and geometrically distributed:
+
 $$
 \Pr\bigl[v_i(m)=k\bigr] \approx \bigl(1-p_i^{-1}\bigr)\,p_i^{-k}
 \qquad\bigl(k=0,1,2,\dots\bigr)
