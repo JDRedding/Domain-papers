@@ -1,0 +1,196 @@
+# Exponent Vector Geometry  
+*Prime Factor Geometry*
+
+Prime exponent vectors is the geometric theory whose points are integers and whose coordinates are prime exponents; For analyzing prime‑factor lattices, multiplicative structure, or sieve behavior.
+Not to be confused with analyzing rotations, boosts, Clifford algebra, or geometric transformations, k nown as vector exponentials.
+
+
+It is the geometric theory where:
+
+- **Points** = integers  
+- **Coordinates** = prime exponents  
+- **Basis vectors** = primes  
+- **Translations** = multiplication  
+- **Distances** = prime‑structural differences  
+- **Angles** = prime‑structural correlations  
+- **Subspaces** = smooth‑number manifolds  
+- **Volumes** = divisor counts  
+- **Random points** = probabilistic integers  
+
+It is the linearization of multiplicative number theory.
+
+## 1. The Ambient Space  
+Exponent‑vector geometry begins with the space:
+
+$$
+\mathcal{E} = \mathbb{Z}_{\ge 0}^{\infty}
+$$
+
+Each coordinate axis corresponds to a prime $p_i$.  
+Each integer $m$ corresponds to a point:
+
+$$
+\mathbf{v}(m) = (v_1(m), v_2(m), v_3(m), \dots)
+$$
+
+where $v_i(m)$ is the exponent of $p_i$ in the factorization of $m$.
+
+Thus:
+
+- **Primes** are unit basis vectors  
+
+$$
+\mathbf{v}(p_i)=e_i
+$$
+
+- **Prime powers** lie on coordinate rays  
+
+$$
+\mathbf{v}(p_i^k)=k e_i
+$$
+
+- **Composite numbers** lie in higher‑dimensional orthants  
+
+$$
+\mathbf{v}(m)=\sum_i v_i(m)e_i
+$$
+
+This is the **prime‑coordinate embedding**.
+
+---
+
+## 2. Geometry of Arithmetic  
+Exponent‑vector geometry replaces multiplicative arithmetic with linear geometry.
+
+### 2.1 Multiplication = Translation  
+
+$$
+\mathbf{v}(mn)=\mathbf{v}(m)+\mathbf{v}(n)
+$$
+
+Thus multiplication is a **vector translation** in $\mathcal{E}$.
+
+### 2.2 Division = Reverse Translation  
+
+$$
+\mathbf{v}(m/n)=\mathbf{v}(m)-\mathbf{v}(n)
+$$
+
+### 2.3 Factorization = Coordinate Decomposition  
+Prime factorization becomes decomposition into basis directions:
+
+$$
+\mathbf{v}(m)=\sum_i v_i(m)e_i
+$$
+
+### 2.4 Multiplicative independence = geometric independence  
+Integers $a,b$ are multiplicatively independent iff their exponent vectors are linearly independent.
+
+---
+
+## 3. Metric Structure  
+Exponent‑vector geometry equips $\mathcal{E}$ with norms, distances, and angles.
+
+### 3.1 Norms  
+The Euclidean norm:
+
+$$
+\|\mathbf{v}(m)\|_2 = \sqrt{\sum_i v_i(m)^2}
+$$
+
+measures the “compositeness magnitude” of $m$.
+
+### 3.2 Distance  
+
+$$
+d(m,n)=\|\mathbf{v}(m)-\mathbf{v}(n)\|
+$$
+
+Distance measures **prime‑structural difference**.
+
+### 3.3 Angle  
+$$
+\theta(m,n)=\arccos\left(\frac{\langle \mathbf{v}(m),\mathbf{v}(n)\rangle}{\|\mathbf{v}(m)\|\|\mathbf{v}(n)\|}\right)
+$$
+
+Angle measures **prime‑structural similarity**.
+
+- Small angle → integers share prime structure  
+- Large angle → integers are prime‑orthogonal
+
+---
+
+## 4. Subspaces and Manifolds  
+Exponent‑vector geometry naturally organizes integers into geometric subspaces.
+
+### 4.1 Smooth‑number subspaces  
+A $y$-smooth integer lies in the finite‑dimensional subspace:
+
+$$
+\mathcal{E}_y = \text{span}\{e_1,\dots,e_{\pi(y)}\}
+$$
+
+Thus smooth numbers form **low‑dimensional manifolds** inside $\mathcal{E}$.
+
+### 4.2 Prime‑power rays  
+Each prime defines a ray:
+
+$$
+\mathcal{R}_{p_i} = \{k e_i : k\ge 0\}
+$$
+
+### 4.3 Highly composite clusters  
+Numbers with many small prime factors cluster near the region spanned by $e_1,e_2,e_3$.
+
+---
+
+## 5. Arithmetic Functions as Geometric Functionals  
+Multiplicative functions become linear‑compatible geometric functionals.
+
+### 5.1 Divisor function  
+
+$$
+\tau(m)=\prod_i (v_i(m)+1)
+$$
+
+This is a **rectangular volume** in exponent space.
+
+### 5.2 Total prime count  
+
+$$
+\Omega(m)=\sum_i v_i(m)
+$$
+
+This is the $L^1$ norm of $\mathbf{v}(m)$.
+
+### 5.3 Distinct prime count  
+
+$$
+\omega(m)=\sum_i \mathbf{1}_{v_i(m)>0}
+$$
+
+This is the support size of $\mathbf{v}(m)$.
+
+---
+
+## 6. Sieve Theory in Exponent‑Vector Geometry  
+Sieve methods become geometric filtering operations:
+
+- Removing multiples of primes = removing points with nonzero coordinates in certain axes  
+- Restricting to smooth numbers = restricting to low‑dimensional subspaces  
+- Weighted sieves = applying geometric weights to lattice points
+
+This geometric viewpoint clarifies the structure of sieve weights and density estimates.
+
+---
+
+## 7. Probabilistic Number Theory  
+Random integers correspond to random lattice points in $\mathcal{E}$ with distribution governed by the prime number theorem.
+
+The distribution of exponent vectors becomes:
+
+$$
+\Pr[v_i(m)=k] \approx e^{-k\log p_i}
+$$
+
+This is a **product distribution** across prime axes.
