@@ -26,7 +26,7 @@ Pressureless perfect fluid (dust) whose 4-velocity is a Killing vector, plus a f
 | $\Omega$ | Proper rotation rate of the matter lattice |
 | $ds^2$ | Spacetime interval (line element) |
 
-## Metric 1 — Form used in the original post
+## Metric 1 
 
 Cylindrical-type chart ( $z$-slice omitted):
 
