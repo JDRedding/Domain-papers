@@ -1,5 +1,6 @@
 # Banana Loop 
-511 Mathematics — general principles / combinatorics
+- 511 Mathematics — general principles / combinatorics
+- 500–599 Science/510 Mathematics/511 Foundations/
 
 The banana loop is the orbit of a deterministic order-3 substring map. The notation below isolates the objects that force the cycle.
 
