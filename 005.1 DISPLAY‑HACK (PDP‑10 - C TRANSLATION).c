@@ -1,5 +1,9 @@
 /*
     DISPLAY‑HACK (PDP‑10 - C TRANSLATION)
+    005.1 - Programming
+    006.6 — Computer graphics / display generation
+    621.3815 Vintage hardware/architecture documentation
+
 
     This program reproduces the behavior of a classic PDP‑10 MACRO display hack.
     The original code used AC1 as a 36‑bit accumulator whose low 9 bits drove the
