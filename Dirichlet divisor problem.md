@@ -1,4 +1,6 @@
 # **The Dirichlet Divisor Problem**
+- 515.72 — Analytic number theory topics
+- divisor problems, prime-counting functions, and related asymptotic questions
 
 The Dirichlet divisor problem asks for the smallest exponent $\theta$ such that
 
