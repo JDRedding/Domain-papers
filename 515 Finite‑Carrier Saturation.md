@@ -1,4 +1,8 @@
 # Finite‑Carrier Saturation
+515 (or 510 / 512)
+Relational carriers, finite models, and saturation in the RDG/SID framework. 
+Aligns with relational mathematics notes under 515.
+
 Bounded‑Layer Exhaustion Principles
 - Finite‑Relational Ceiling Condition
 - Fixed‑Carrier Evolution Cutoff
