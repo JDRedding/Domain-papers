@@ -1,3 +1,6 @@
+# Maxwell's total currents
+537 Electricity and electronics / electromagnetism
+
 Maxwell's total currents (Group A, 3 equations) defines the *total* (or effective) current components as
 
 $$
