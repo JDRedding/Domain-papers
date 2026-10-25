@@ -1,4 +1,7 @@
 # Maxwell's magnetostatics
+- 537 Electricity and electronics 
+- 538 magnetism
+
 Maxwell's curl of $\mathbf{H}$ in components — that’s exactly Ampère’s law in magnetostatics (without displacement current):
 
 $$
