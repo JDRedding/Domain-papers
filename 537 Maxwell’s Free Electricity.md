@@ -1,4 +1,6 @@
 # Maxwell’s Free Electricity
+- 537 Electricity and electronics / electromagnetism
+
 **Group (G) — Free Electricity (1 equation)**
 *(Treatise 1873 residual convention)*
 
