@@ -1,6 +1,7 @@
 # Fermat-type principle
+- 515 - Analysis / variational principles.
 
-A Fermat-type principle is a variational statement that the physical path of a ray (or signal) between two points (or between a point and a curve) makes the travel time — or an appropriate generalization such as optical path length, phase, or arrival time — stationary with respect to small variations of the path.
+A Fermat-type principle is a variational statement that the physical path of a ray (or signal) between two points (or between a point and a curve) makes the travel time — or an appropriate generalization such as optical path length, phase, or arrival time — stationary with respect to small variations of the path. Classical Fermat’s principle of optics is in optics, but the relational/universal framing is mathematical.
 
 ## 1. Classical isotropic optics — variational structure
 
