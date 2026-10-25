@@ -1,4 +1,8 @@
 # Norm floor
+- 515 Analysis
+- 512 algebra
+- Norm concepts, functional analysis or ordered structures
+
 In standard mathematics, **“norm floor” is not a formal term**. When it appears, it is almost always shorthand for one of two operations:
 
 ## Formal concepts
