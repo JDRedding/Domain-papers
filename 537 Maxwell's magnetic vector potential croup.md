@@ -1,4 +1,6 @@
 # Maxwell's magnetic vector potential group
+- 537 Electricity and electronics / electromagnetism
+
 Maxwell's Group (B) is the curl of the magnetic vector potential $\mathbf{A}$ that yields the magnetic field $\mathbf{H}$ (up to the factor $\mu$). These three equations are the Cartesian components of a single vector relation:
 
 $$
