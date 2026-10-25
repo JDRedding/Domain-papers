@@ -1,4 +1,5 @@
 # Maxwell's Electromotive Force
+- 537 Electricity and electronics / electromagnetism
 
 Maxwell's Group (D) - Electromotive Force (3 equations; includes motion) is a generalized form that mixes motion and potentials.
 
