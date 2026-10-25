@@ -1,4 +1,7 @@
 # Mathematicall Magick
+- 510 Mathematics, John Wilkins’ historical treatise on mathematical devices
+- 620 Mechanics, Wilkins’ historical treatise on mechanical devices
+
 **Mathematicall Magick** is a 1648 two-book treatise by John Wilkins that surveys classical mechanical devices and explores speculative technologies such as flying machines, submarines, automata, and perpetual motion. Wilkins’s treatise blends classical mechanics, early engineering, and speculative technology, illustrating the 17th-century transition from Renaissance natural philosophy to systematic scientific inquiry. It also shows Wilkins’s broader goal: to popularize scientific knowledge and encourage experimentation.
 
 ## Overview
