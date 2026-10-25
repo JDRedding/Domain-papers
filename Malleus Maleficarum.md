@@ -1,0 +1,36 @@
+# Malleus Maleficarum
+
+The *Malleus Maleficarum* presents a demonology in which witches act through the Devil’s power with God’s permission. This forms the core framework for its arguments about sorcery, heresy, and prosecution. The *Malleus* helped codify a worldview in which demons were active agents of harm, witches were their collaborators, and courts were obligated to eradicate both. This framework contributed to the escalation of witch hunts in the sixteenth and seventeenth centuries, even though the book itself remained controversial. A central feature of the *Malleus* is its claim that women are more susceptible to demonic influence because of alleged moral and intellectual weakness. This misogynistic framing shapes the demonology: demons target women because they are supposedly easier to corrupt.
+
+Although widely printed (28 editions between 1486 and 1600), the *Malleus* was condemned by the University of Cologne’s theology faculty for theological errors and illegal procedures. The Inquisition largely rejected it. Secular courts used it more often. Its influence was regional and uneven, not universal. Modern portrayals of the book as the Church’s “official witch-hunting manual” are not supported by historical evidence.
+
+### Core demonological assumptions 
+
+The treatise repeatedly asserts that three elements are necessary for witchcraft:
+- the evil intention of the witch,
+- the Devil’s assistance, and
+- the permission of God.
+
+This triad frames all subsequent arguments. Demons are portrayed as real, active agents capable of physical and spiritual harm; as intermediaries who grant witches power through pacts; and as deceivers able to create illusions, manipulate the senses, and cause misfortune. The text insists that disbelief in this demonology is itself heretical.
+
+### Types of demons and their roles
+
+Although the *Malleus* does not provide a formal taxonomy of demons like some grimoires (for example, *Liber Juratus*), it does describe functional categories:
+- incubi and succubi, responsible for sexual relations with humans;
+- demons of illusion, who create false appearances (such as disappearing body parts);
+- demons of *maleficium*, who cause storms, disease, crop failure, and livestock harm; and
+- recruiting demons, who tempt young women or exploit misfortune to draw them into witchcraft.
+
+These categories are practical rather than metaphysical, organized around the effects attributed to demonic activity.
+
+### How demonology shapes witchcraft narratives
+
+The *Malleus* uses demonological theory to explain pacts with demons, night riding and transvection (aerial travel), metamorphosis (transforming humans or animals), infant harm and sacrifice, and *malefic* spells and their remedies. These stories blend theological claims with local folklore, creating a unified—though highly imaginative—demonological worldview.
+
+Part III applies these demonological assumptions to judicial practice. Torture is sanctioned to extract confessions. Any witness may testify, regardless of credibility. Failure to cry, silence, or endurance under torture may be interpreted as demonic aid. This legal framework presumes that demons are real and active, making nearly any behavior potential evidence of guilt.
+
+### What “demonological theory” meant in the late medieval period
+
+Demonology in the fifteenth century blended theology, folklore, and legal theory, treating demons as real beings who could influence the physical world. The *Malleus* is often described as a compendium of existing demonological literature rather than an original system. It drew heavily on earlier works such as Johannes Nider’s *Formicarius*, scholastic theology (especially Aquinas), and local Alpine folklore.
+
+
