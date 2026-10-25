@@ -1,0 +1,135 @@
+﻿import Mathlib
+
+/-!
+Signed permutations as in the JS kernel:
+entry `v i` is `sign * (dest + 1)`, so `dest = |v i| - 1`.
+-/
+
+abbrev SP (n : ℕ) := Fin n → ℤ
+
+namespace SP
+
+variable {n m : ℕ}
+
+def col (e : ℤ) : ℕ := Int.natAbs e - 1
+def sgn (e : ℤ) : ℤ := if e < 0 then -1 else 1
+
+def id (n : ℕ) : SP n := fun i => (i : ℤ) + 1
+
+def mul (a b : SP n) : SP n :=
+  fun i =>
+    let e := a i
+    sgn e * b ⟨col e, by
+      -- |e| ∈ {1,...,n} is an invariant of well-formed SPs
+      sorry⟩
+
+def neg (a : SP n) : SP n := fun i => -a i
+
+def eq (a b : SP n) : Prop := ∀ i, a i = b i
+
+def pair (a b : SP n) : ℤ :=
+  ∑ i : Fin n,
+    if a i = b i then (1 : ℤ)
+    else if a i = -b i then -1
+    else 0
+
+def isScalar (a : SP n) (s : ℤ) : Prop :=
+  ∀ i : Fin n, a i = s * ((i : ℤ) + 1)
+
+/-- JS `kron`: dest' = dest_a * m + dest_b, sign' = sign_a * sign_b. -/
+def kron (a : SP n) (b : SP m) : SP (n * m) :=
+  fun k =>
+    let i := k.val / m
+    let j := k.val % m
+    let ea := a ⟨i, sorry⟩
+    let eb := b ⟨j, sorry⟩
+    sgn ea * sgn eb * ((col ea * m + col eb : ℕ) + 1 : ℤ)
+
+end SP
+
+inductive Letter | I | X | Z | J
+  deriving DecidableEq, Repr
+
+def qperm : Letter → Fin 2 → Fin 2
+  | .I, b => b
+  | .X, b => b + 1
+  | .Z, b => b
+  | .J, b => b + 1
+
+def qsign : Letter → Fin 2 → ℤ
+  | .I, _ => 1
+  | .X, _ => 1
+  | .Z, b => if b = 0 then 1 else -1
+  | .J, b => if b = 0 then -1 else 1
+
+/-- Same walk as `spFromQubits` in the HTML. -/
+def spFromQubits (s : Fin 4 → Letter) : SP 16 :=
+  fun r =>
+    Id.run do
+      let mut c : ℕ := 0
+      let mut sign : ℤ := 1
+      for k in [0, 1, 2, 3] do
+        let bit : Fin 2 :=
+          ⟨(r.val >>> (3 - k)) &&& 1, by
+            have : (r.val >>> (3 - k)) &&& 1 ≤ 1 := Nat.and_le_right
+            exact Nat.lt_succ_of_le this⟩
+        let L := s ⟨k, by decide⟩
+        c := 2 * c + (qperm L bit).val
+        sign := sign * qsign L bit
+      return sign * (c + 1 : ℤ)
+
+def STR8 : Fin 8 → Fin 4 → Letter
+  | 0 => ![.I, .I, .I, .X]
+  | 1 => ![.I, .I, .I, .Z]
+  | 2 => ![.I, .I, .J, .J]
+  | 3 => ![.I, .J, .X, .J]
+  | 4 => ![.X, .J, .Z, .J]
+  | 5 => ![.Z, .J, .Z, .J]
+  | 6 => ![.J, .I, .Z, .J]
+  | 7 => ![.J, .X, .X, .J]
+
+def F8 (i : Fin 8) : SP 16 := spFromQubits (STR8 i)
+
+def omega : SP 16 :=
+  (List.finRange 8).foldl (fun acc i => SP.mul acc (F8 i)) (SP.id 16)
+
+theorem F8_sq_id (i : Fin 8) :
+    SP.isScalar (SP.mul (F8 i) (F8 i)) 1 := by
+  sorry
+
+theorem F8_anticomm {i j : Fin 8} (h : i ≠ j) :
+    SP.eq (SP.mul (F8 i) (F8 j)) (SP.neg (SP.mul (F8 j) (F8 i))) := by
+  sorry
+
+theorem F8_pair (i j : Fin 8) :
+    SP.pair (F8 i) (F8 j) = if i = j then 16 else 0 := by
+  sorry
+
+structure Code where
+  p : ℕ
+  q : ℕ
+  N : ℕ
+  gens : Fin (p + q) → SP N
+
+def shiftCode (c : Code) : Code where
+  p := c.p + 8
+  q := c.q
+  N := c.N * 16
+  gens := fun k =>
+    -- placeholder: old⁺ ⊗ ω, then I ⊗ F8, then old⁻ ⊗ ω
+    sorry
+
+def C0 : Code where
+  p := 1
+  q := 1
+  N := 2
+  gens := fun
+    | ⟨0, _⟩ => fun i => ((i + 1 : Fin 2) : ℕ) + 1
+    | ⟨1, _⟩ => fun i =>
+        if i = 0 then (-2 : ℤ) else 1
+
+theorem shift_C0 :
+    (shiftCode C0).p = 9 ∧
+    (shiftCode C0).q = 1 ∧
+    (shiftCode C0).N = 32 := by
+  sorry
