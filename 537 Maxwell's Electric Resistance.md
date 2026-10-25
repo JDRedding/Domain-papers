@@ -1,4 +1,5 @@
 # Maxwell's Electric Resistance
+- 537 Electricity and electronics / electromagnetism
 
 The three equations of Maxwell’s **Group (F)**: the constitutive relation between **electromotive force** and **true conduction current**, expressed through **specific resistance** $\varrho$. 
 
