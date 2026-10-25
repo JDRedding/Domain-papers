@@ -1,5 +1,5 @@
 # Maxwell’s Electric Elasticity
-
+- 537 Electricity and electronics / electromagnetism
 
 **Maxwell’s “electric elasticity”** refers to a specific constitutive relation he introduced in his 1865 paper *A Dynamical Theory of the Electromagnetic Field*.
 
