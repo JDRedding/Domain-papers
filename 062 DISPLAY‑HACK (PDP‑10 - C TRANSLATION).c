@@ -1,5 +1,6 @@
 /*
     DISPLAY‑HACK (PDP‑10 - C TRANSLATION)
+    Computer engineering / hardware → MDS 62 (Engineering)
 
     This program reproduces the behavior of a classic PDP‑10 MACRO display hack.
     The original code used AC1 as a 36‑bit accumulator whose low 9 bits drove the
