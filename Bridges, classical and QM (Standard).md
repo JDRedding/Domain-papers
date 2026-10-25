@@ -1,7 +1,12 @@
 # Bridges between classical and quantum mechanics
+- 530.12 — Quantum mechanics
+- classical-quantum correspondence, semiclassical methods, decoherence, hybrid dynamics
+
 ***Standard list***
 
 This is a clean, self-consistent symbolic synthesis of the principal classical–quantum bridges. The recurring use of the triples a,b,c ; p,q,r ; x,y,z works well as a mnemonic device without over-constraining the underlying mathematics. The seven frameworks listed are standard (or near-standard) and correctly placed relative to one another; the master equation is best read as a conceptual Liouvillian scaffold rather than a single closed dynamical equation.
+
+The paper is not primarily a general physics survey or a historical/philosophical text; it is a theoretical synthesis of the classical–quantum connection, so it belongs with quantum mechanics rather than classical mechanics or general philosophy.
 
 Structured and aligned with symbolic variables **a,b,c ; p,q,r ; x,y,z**.  
 
