@@ -1,4 +1,6 @@
 # Maxwell’s Continuity
+- 537 Electricity and electronics / electromagnetism (continuity equation)
+
 **Group (H) – Continuity (1 equation)**
 *(Treatise 1873 residual convention)*
 
