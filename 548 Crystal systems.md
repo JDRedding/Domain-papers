@@ -1,5 +1,8 @@
 # Crystal systems
-Seven crystal systems
+- 548 Crystallography: crystal structure, symmetry, systems
+- 541 Physical chemistry
+
+## Seven crystal systems
 
 The seven crystal systems are defined by constraints on the six lattice parameters of the unit-cell parallelepiped: edge lengths $a$, $b$, $c$ and interaxial angles $\alpha$ (between $\mathbf{b}$ and $\mathbf{c}$), $\beta$ (between $\mathbf{a}$ and $\mathbf{c}$), and $\gamma$ (between $\mathbf{a}$ and $\mathbf{b}$). These equalities and inequalities are the mathematical expression of the rotational symmetries that each system must possess; any deviation immediately lowers the crystal to a less-symmetric system. These constraints determine the allowed symmetries and therefore the possible atomic arrangements and macroscopic crystal shapes.
 
