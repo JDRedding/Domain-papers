@@ -117,3 +117,50 @@ A_8 ≅ PSL_4(2)
 ```
 
 Apart from these and a small number of other low-rank coincidences, the groups listed above are pairwise nonisomorphic.
+
+## External articles
+
+- ATLAS of Finite Group Representations
+   https://brauer.maths.qmul.ac.uk/Atlas/v3/
+
+   The standard working reference for finite simple groups.
+   Contains:
+   - Sporadic groups
+   - Alternating groups
+   - Groups of Lie type
+   - Character tables
+   - Matrix representations
+   - Maximal subgroups
+   - Computational data
+
+- AMS Gorenstein-Lyons-Solomon Project
+   https://www.ams.org/publications/authors/books/postpub/surv-40
+
+   The official American Mathematical Society page for the
+   second-generation revision of the CFSG proof.
+
+   Contains:
+   - Published volumes
+   - Errata
+   - Project updates
+   - Supplemental material
+
+- Ron Solomon's Survey Article
+   https://www.ams.org/journals/notices/199502/solomon.pdf
+
+   "On Finite Simple Groups and Their Classification"
+
+   One of the best readable introductions written by an
+   actual participant in the classification effort.
+
+- MathAtlas Interactive Presentation
+   https://mathatlas.app/simple-groups
+
+   Interactive exploration of:
+   - Cyclic groups
+   - Alternating groups
+   - Lie-type groups
+   - Sporadic groups
+   - Monstrous Moonshine
+
+
