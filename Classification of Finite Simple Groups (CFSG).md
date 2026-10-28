@@ -1,3 +1,4 @@
+# Classification of Finite Simple Groups (CFSG)
 **The Classification of Finite Simple Groups (CFSG)** is one of the largest and most consequential achievements in the history of mathematics. It provides a complete, explicit list of every finite simple group up to isomorphism, showing that these groups fall into a small number of infinite families together with a finite list of exceptional “sporadic” groups. In effect, it supplies a structural periodic table for the building blocks of all finite groups. The CFSG is both a classification theorem and a practical instrument that continues to shape research across mathematics. While the second-generation proof and various formalization projects are still under way, the result itself is regarded as established, and the complete list of finite simple groups is now a standard tool in the mathematician’s repertoire.
 
 ### Finite Simple Groups 
