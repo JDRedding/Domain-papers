@@ -104,5 +104,3 @@ These nine cases exhaust all possibilities for the phase portrait of a two-dimen
 ## 7. Conclusion
 
 The classification of the phase portraits of planar linear systems by the invariants $\tau$, $\Delta$, and $D$ is classical and exhaustive. It provides both a complete geometric catalogue and a practical computational criterion: once the trace and determinant of $A$ are known, the qualitative behavior of every trajectory is determined without further computation of the fundamental matrix. The same invariants govern the local phase portrait of a nonlinear planar system near a hyperbolic equilibrium via linearization.
-
-(Note: the phase portraits above were generated for representative matrices realizing each case, including the exact numerical example $\tau = -1$, $\Delta = 2.65$ for the stable spiral.)
