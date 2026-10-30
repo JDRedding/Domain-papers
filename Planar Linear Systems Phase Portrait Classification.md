@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The qualitative behavior of the flow of the linear dynamical system $\mathbf{x}' = A\mathbf{x}$ in $\mathbb{R}^2$, where $A$ is a constant real $2\times 2$ matrix, is completely determined by the eigenvalues of $A$. These eigenvalues are the roots of the characteristic equation $\lambda^2 - (\operatorname{tr} A)\lambda + \det A = 0$. Writing $\tau = \operatorname{tr} A$, $\Delta = \det A$, and $D = \tau^2 - 4\Delta$, the possible phase portraits fall into exactly nine topological types according to the signs of $\tau$, $\Delta$, and $D$. This paper presents the exhaustive classification, a canonical $3\times 3$ chart of the portraits, detailed descriptions of each case, an illustrative example of a stable spiral, and the associated trace-determinant bifurcation diagram.
+The qualitative behavior of the flow of the linear dynamical system $\mathbf{x}' = A\mathbf{x}$ in $\mathbb{R}^2$, where $A$ is a constant real $2\times 2$ matrix, is completely determined by the eigenvalues of $A$. These eigenvalues are the roots of the characteristic equation $\lambda^2 - ({tr} A)\lambda + \det A = 0$. Writing $\tau = {tr} A$, $\Delta = \det A$, and $D = \tau^2 - 4\Delta$, the possible phase portraits fall into exactly nine topological types according to the signs of $\tau$, $\Delta$, and $D$. This paper presents the exhaustive classification, a canonical $3\times 3$ chart of the portraits, detailed descriptions of each case, an illustrative example of a stable spiral, and the associated trace-determinant bifurcation diagram.
 
 ## 1. Introduction and Preliminaries
 
@@ -18,7 +18,7 @@ $$
 \lambda^2 - \tau\lambda + \Delta = 0,
 $$
 
-where $\tau = \operatorname{tr} A$ and $\Delta = \det A$. The discriminant of this quadratic is
+where $\tau = {tr} A$ and $\Delta = \det A$. The discriminant of this quadratic is
 
 $$
 D = \tau^2 - 4\Delta.
