@@ -35,8 +35,6 @@ The nine portraits may be arranged in the following canonical layout, matching v
 | Stable spiral<br>$\lambda = \alpha \pm i\beta$, $\alpha < 0$ | Unstable spiral<br>$\lambda = \alpha \pm i\beta$, $\alpha > 0$ | Center<br>$\lambda = \pm i\beta$ |
 | Star node<br>$A = \lambda I$, $\lambda < 0$ | Degenerate node<br>$\lambda_1 = \lambda_2$, $A \neq \lambda I$ | Line of fixed points<br>$\lambda_1 = 0$, $\lambda_2 < 0$ |
 
-(The same layout appears, with animated trajectories, in the video attached to the original post that motivated this compilation.)
-
 ## 3. Classification by the Signs of $\tau$, $\Delta$, and $D$
 
 - If $D > 0$ (two distinct real eigenvalues $\lambda_1, \lambda_2$):
