@@ -37,19 +37,19 @@ The nine portraits may be arranged in the following canonical layout, matching v
 
 ## 3. Classification by the Signs of $\tau$, $\Delta$, and $D$
 
-- If $D > 0$ (two distinct real eigenvalues $\lambda_1, \lambda_2$):
-  - $\Delta > 0$ and $\tau < 0$ $\implies$ stable node ($\lambda_1 < \lambda_2 < 0$);
-  - $\Delta > 0$ and $\tau > 0$ $\implies$ unstable node ($0 < \lambda_1 < \lambda_2$);
-  - $\Delta < 0$ $\implies$ saddle ($\lambda_1 < 0 < \lambda_2$).
+- If $D > 0$ (two distinct real eigenvalues $\lambda_1, \lambda_2$:
+  - $\Delta > 0$ and $\tau < 0$ $\implies$ stable node ($\lambda_1 < \lambda_2 < 0$;
+  - $\Delta > 0$ and $\tau > 0$ $\implies$ unstable node ($0 < \lambda_1 < \lambda_2$;
+  - $\Delta < 0$ $\implies$ saddle ($\lambda_1 < 0 < \lambda_2$.
 
-- If $D = 0$ (repeated real eigenvalue $\lambda = \tau/2$):
+- If $D = 0$ (repeated real eigenvalue $\lambda = \tau/2$:
   - $A = \lambda I$ $\implies$ star node;
   - $A \neq \lambda I$ $\implies$ degenerate (improper) node.
 
-- If $D < 0$ (complex conjugate eigenvalues $\lambda = \alpha \pm i\beta$):
-  - $\tau < 0$ $\implies$ stable spiral ($\alpha < 0$);
-  - $\tau > 0$ $\implies$ unstable spiral ($\alpha > 0$);
-  - $\tau = 0$ $\implies$ center ($\lambda = \pm i\beta$).
+- If $D < 0$ (complex conjugate eigenvalues $\lambda = \alpha \pm i\beta$:
+  - $\tau < 0$ $\implies$ stable spiral ($\alpha < 0$;
+  - $\tau > 0$ $\implies$ unstable spiral ($\alpha > 0$;
+  - $\tau = 0$ $\implies$ center ($\lambda = \pm i\beta$.
 
 (The remaining “line of fixed points” occurs when one eigenvalue is zero and the other is negative.)
 
@@ -76,7 +76,7 @@ so the eigenvalues are
 
 $$
 \lambda = \frac{-1 \pm \sqrt{-9.6}}{2} = -0.5 \pm 1.55\,i.
-$$)
+$$
 
 **Unstable spiral.**  
 The eigenvalues are complex conjugates with positive real part. Equivalently, $D < 0$ and $\tau > 0$. Trajectories spiral away from the origin as $t \to \infty$. The origin is unstable.
@@ -95,7 +95,7 @@ One eigenvalue is zero and the other is negative. Equivalently, $\Delta = 0$ and
 
 ## 5. The Trace-Determinant Plane
 
-All nine are completely determined by the single pair of numbers $(\tau, \Delta)$. Plotting these pairs in the trace-determinant plane yields the classic bifurcation diagram whose boundaries are the parabola $D = 0$ (i.e., $\Delta = \tau^2/4$) and the axes $\tau = 0$, $\Delta = 0$. Crossing any of those curves changes the topological type of the phase portrait. The asymptotically stable cases occupy the open region $\tau < 0$, $\Delta > 0$.
+All nine are completely determined by the single pair of numbers $(\tau, \Delta)$. Plotting these pairs in the trace-determinant plane yields the classic bifurcation diagram whose boundaries are the parabola $D = 0$ (i.e., $\Delta = \tau^2/4$ and the axes $\tau = 0$, $\Delta = 0$. Crossing any of those curves changes the topological type of the phase portrait. The asymptotically stable cases occupy the open region $\tau < 0$, $\Delta > 0$.
 
 ## 6. Exhaustiveness
 
