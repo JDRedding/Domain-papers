@@ -28,7 +28,7 @@ The roots $\lambda_1,\lambda_2$ (counted with multiplicity) determine the form o
 
 ## 2. The Canonical $3\times 3$ Classification Chart
 
-The nine portraits may be arranged in the following canonical layout, matching the visual organization of the source material:
+The nine portraits may be arranged in the following canonical layout, matching visual organization:
 
 | Stable node<br>$\lambda_1 < \lambda_2 < 0$ | Unstable node<br>$0 < \lambda_1 < \lambda_2$ | Saddle<br>$\lambda_1 < 0 < \lambda_2$ |
 |---|---|---|
