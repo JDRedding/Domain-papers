@@ -42,7 +42,7 @@ $$
 \Gamma\circ C_\phi=C_\phi\circ\Gamma
 $$
 
-(or equivalently $\Gamma(C_\phi(M))=C_\phi(\Gamma(M))$). This intertwining is the essential self-similarity property.
+(or equivalently $\Gamma(C_\phi(M))=C_\phi(\Gamma(M))$ ). This intertwining is the essential self-similarity property.
 
 ### Golden ratio as fixed-point scaling
 The substitution matrix acting on the two structural states is
