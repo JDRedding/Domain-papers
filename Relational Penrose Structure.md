@@ -48,7 +48,8 @@ $$
 The substitution matrix acting on the two structural states is
 
 $$
-S=\begin{pmatrix}2&1\\1&1\end{pmatrix}.
+S=\begin{pmatrix}2&1\\
+1&1\end{pmatrix}.
 $$
 
 It satisfies the eigenvalue equation
