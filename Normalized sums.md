@@ -356,7 +356,7 @@ This is the most compressed possible relational geometry: a binary dominance rel
 
 ---
 
-#### **4D version**
+#### **4D case.**
 
 Each channel is now a 4-vector:
 
