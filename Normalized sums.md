@@ -1,4 +1,6 @@
 # Normalized sums
+- 515 Analysis (series/sums)
+- 512.7 Number theory (exponential sums)
 
 ## Distinction matters
 
