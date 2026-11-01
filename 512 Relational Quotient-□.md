@@ -1,4 +1,6 @@
 # **Q□ → Q**  
+- 512 Quotient / admissibility operator
+
 ## **One‑Page Core Summary**
 
 **Q□ → Q** is the **pre‑geometric generator boundary** of the full stack.  
