@@ -1,4 +1,7 @@
 # PED-Q equation projections 
+- 515 - Part of the relational / field-bracket equation framework
+- PED = power/eval/dynamic-slice; Q = projection/filter)
+- Analysis
 
 ### 1. Starting point: an RDG with SID
 
