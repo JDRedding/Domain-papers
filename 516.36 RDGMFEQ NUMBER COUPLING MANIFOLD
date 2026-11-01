@@ -1,6 +1,7 @@
 RDGMFEQ NUMBER COUPLING MANIFOLD 
 Author: @JDRedding
 Framework: RDGMFEQ = Relational Dynamic Geometry + Momentum-Flux Engine + Quotient
+- 516.36 Differential Geometry / Manifolds
 
 CORE MANIFOLD:
   ℂ_RDG  : Unified relational manifold (RDGMFEQ complex field)
