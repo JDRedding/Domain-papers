@@ -1,3 +1,5 @@
+# 519.2 Code computing P(S≥t)P(S \ge t)P(S \ge t) and related counts
+
 def ways_ge(T: int) -> int:
     """Exact number of 2d6 outcomes with sum ≥ T (0–36)."""
     if T <= 2:
