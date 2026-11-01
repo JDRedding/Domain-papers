@@ -1,5 +1,6 @@
 ## Momentum–Flux Engine (MFE) 
-— Summary
+- Summary
+- 515 Dynamical / flux aspects of the RDG stack
 
 ### 1. Engine state
 
