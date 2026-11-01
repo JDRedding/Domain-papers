@@ -1,4 +1,6 @@
 # Order–Lattice–Topology Framework (OLTF)
+-  511 / 514 Order theory + lattices + induced topologies (Alexandrov, Scott, etc.)
+-  Foundations/order in 511; topology aspects in 514
 
 **Document type:** Technical specification  
 **Status:** Normative baseline for shared terminology, constructions, and scope  
