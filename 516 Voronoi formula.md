@@ -1,4 +1,6 @@
 # The Voronoï formula
+- 516 Geometry (computational / Voronoi diagrams) 
+- 518 Numerical analysis
 
 The **Voronoï summation** formula is a classical identity in analytic number theory that expresses a weighted sum involving the divisor function $d(n)$ in terms of an integral main term plus a dual sum involving Bessel functions. It is the precise analogue, for the Dirichlet series $\zeta(s)^2$, of the Poisson summation formula.
 
