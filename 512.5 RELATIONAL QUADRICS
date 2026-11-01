@@ -1,5 +1,7 @@
 RELATIONAL TRI-MODE UNIFIED SCHEMA FOR ALL QUADRICS
 ====================================================
+- 512.5 Conics (quadratic forms)
+- 516 Quadratic hypersurfaces (geometry)
 
 A quadric surface Q is a relation expressed through three inseparable modes:
 S-mode (Structure), I-mode (Interaction), D-mode (Dynamics).
