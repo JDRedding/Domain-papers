@@ -321,6 +321,17 @@ Under a relational dynamic geometry reading, the component-preserving map $\math
 
 In both dimensions the conceptual move is identical. Resultant-first keeps the net effect and discards internal geometry. Relation-first keeps the internal geometry of the triad (or multi-channel state) and treats magnitude as a secondary scale factor. That is the core of a relational reading: the primary object is the relational composition, and normalization isolates that composition on the unit manifold.
 
+In the relational reading the primary object remains the ordered triple of channels; the unit sphere of the appropriate dimension is the space of pure relational states. The dimensional pattern continues:
+
+- 1D → $\{\pm 1\}$
+- 2D → unit circle $S^{1}$
+- 3D → unit sphere $S^{2}$
+- 4D → unit 3-sphere $S^{3}$
+
+(with the relational versions living on the correspondingly higher-dimensional spheres of the uncollapsed configuration).
+
+---
+
 #### **1D case.**
 
 **1D**: The collapsed normalization reduces to the sign function. The relational state reduces to a binary opposition. Normalization yields the sign, i.e., which mode dominates:
@@ -331,10 +342,95 @@ $$
 
 This is the most compressed possible relational geometry: a binary dominance relation. Proportional information is entirely lost; only which side wins survives. Distinct configurations such as $(100, -99, 0)$ and $(2, -1, 0)$ become identical.
 
+---
+
 #### **2D case.**  
 
 **2D**: The relational configuration lives on the unit circle $S^{1}$. Direction encodes the continuous balance between the two active dimensions of each channel. When each channel carries coordinates, the relational state can be represented as a matrix (or flattened vector) whose Euclidean norm is taken across all entries. Normalization again yields a unit configuration $\hat{\mathbf{Y}}$. Geometrically the ordinary resultant lives on the circle $S^{1}$; the relational reading simply keeps the full normalized configuration rather than collapsing first. The same intensity–configuration split applies: distance from the origin is activation, location on the normalized manifold is relational balance.
 
+---
+
 #### **3D case.**  
 
 **3D**: The relational configuration lives on the unit sphere $S^{2}$. Each point on $S^{2}$ is a distinct proportional relation among the three channels.
+
+---
+
+#### **4D version**
+
+Each channel is now a 4-vector:
+
+$$
+y^{+} = \begin{bmatrix} y_x^{+} \\ y_y^{+} \\ y_z^{+} \\ y_w^{+} \end{bmatrix}, \quad
+y^{-} = \begin{bmatrix} y_x^{-} \\ y_y^{-} \\ y_z^{-} \\ y_w^{-} \end{bmatrix}, \quad
+y^{0} = \begin{bmatrix} y_x^{0} \\ y_y^{0} \\ y_z^{0} \\ y_w^{0} \end{bmatrix}.
+$$
+
+Form the resultant vector:
+
+$$
+\mathbf{v} = y^{+} + y^{-} + y^{0} = \begin{bmatrix}
+y_x^{+} + y_x^{-} + y_x^{0} \\
+y_y^{+} + y_y^{-} + y_y^{0} \\
+y_z^{+} + y_z^{-} + y_z^{0} \\
+y_w^{+} + y_w^{-} + y_w^{0}
+\end{bmatrix}.
+$$
+
+Its Euclidean norm is
+
+$$
+\|\mathbf{v}\| = \sqrt{v_x^{2} + v_y^{2} + v_z^{2} + v_w^{2}}.
+$$
+
+The normalized result is the unit vector in the same direction:
+
+$$
+S = \frac{\mathbf{v}}{\|\mathbf{v}\|} = \frac{
+\begin{bmatrix}
+v_x \\
+v_y \\
+v_z \\
+v_w
+\end{bmatrix}
+}{\sqrt{v_x^{2} + v_y^{2} + v_z^{2} + v_w^{2}}}
+\qquad (\mathbf{v} \neq \mathbf{0}).
+$$
+
+Geometrically, $S$ lies on the unit 3-sphere $S^{3}$ in $\mathbb{R}^{4}$:
+
+$$
+\|S\| = 1, \qquad S \in S^{3}.
+$$
+
+Every nonzero resultant is projected radially onto this 3-sphere. All vectors pointing in the same direction (regardless of length) map to the same point; only the directional composition of the three channels survives. The space of possible directions is now a three-dimensional manifold.
+
+**Relational (triadic) form in 4D**
+
+When the channels are 4-vectors, the ordered triple may be kept as a single relational configuration by stacking:
+
+$$
+\mathbf{Y} =
+\begin{bmatrix}
+y^{+} \\
+y^{-} \\
+y^{0}
+\end{bmatrix}
+\in \mathbb{R}^{12},
+$$
+
+or equivalently as a $3\times 4$ matrix. Normalization acts on this configuration:
+
+$$
+\hat{\mathbf{Y}} = \frac{\mathbf{Y}}{\|\mathbf{Y}\|} = \frac{\mathbf{Y}}{\sqrt{\|y^{+}\|^{2} + \|y^{-}\|^{2} + \|y^{0}\|^{2}}},
+\qquad
+\hat{\mathbf{Y}} \in S^{11}.
+$$
+
+The factorization
+
+$$
+\mathbf{Y} = A\,\hat{\mathbf{Y}}, \qquad A = \|\mathbf{Y}\|
+$$
+
+again isolates overall intensity from the pure relational geometry. The resultant-first map collapses first to a vector in $\mathbb{R}^{4}$ and then projects onto $S^{3}$; the relation-first map projects the full twelve-component (or matrix) configuration onto $S^{11}$, preserving the mutual proportions among the three modes before any aggregation.
