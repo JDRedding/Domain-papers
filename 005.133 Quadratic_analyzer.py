@@ -1,3 +1,6 @@
+# 005.133 / 510.285
+# Computer programming (Python) / Mathematical software
+
 import math
 import matplotlib.pyplot as plt
 import numpy as np
