@@ -1,5 +1,6 @@
 #========================================================
 # RDG UNIVERSAL QUADRATIC RELATION
+# 512.9 Algebraic Structures
 #========================================================
 # Curve: y^2 + p*x*y + b*x^2 + c*x + q*y + a = 0
 # RDG tri-mode operator form:
