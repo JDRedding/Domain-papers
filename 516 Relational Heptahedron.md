@@ -1,5 +1,6 @@
 # Relational Heptahedron
-Schroeppel-Szilassi-RDG-Heptahedron
+- Schroeppel-Szilassi-RDG-Heptahedron
+- 516 Polyhedral / discrete geometry
 
 RDG tri-mode operator
 
