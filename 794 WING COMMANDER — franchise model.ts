@@ -1,5 +1,7 @@
 // WING COMMANDER — franchise model
 // https://www.wcnews.com/
+// 794 Electronic games 
+// 005 Video game programming
 
 enum Medium {
   GAME,
