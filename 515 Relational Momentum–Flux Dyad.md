@@ -1,5 +1,7 @@
 ## Relational Momentum–Flux Dyad 
-Isolated MFE Slice — Summary
+- Isolated MFE Slice — Summary
+- 515 Dynamical / flux aspects of the RDG stack
+
 ### 1. Dyad state
 
 $$
