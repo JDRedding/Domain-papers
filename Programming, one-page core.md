@@ -1,5 +1,7 @@
 # Programming, core page
-Rules summary 
+005 Computer programming (005.1 principles/methods)
+
+## Rules summary 
 
 Code is clean if it can be understood easily by everyone on the team. 
 Clean code can be read and enhanced by a developer other than its original author. 
