@@ -1,5 +1,5 @@
 # Square = Circle
-Relationalism resolves the Square/Circle distinction by replacing the classical individuation rules with relational individuation rules. One can replace geometric individuation with relational individuation and obtain Square ≡ Circle under the resulting quotient structure. After the distinction eraser that classical geometry imposes to individuate shapes, then redefine the objects solely by their participation in a single relational primitive $R$, obtained by collapsing $\{OP, STR, LOOP\}$. Under that move, both shapes become manifestations of $R$, so the equality holds via the collapse.
+Relationalism resolves the Square/Circle distinction by replacing the classical individuation rules with relational individuation rules. One can replace geometric individuation with relational individuation and obtain Square ≡ Circle under the resulting quotient structure. After the distinction eraser that classical geometry imposes to individuate shapes, the redefined objects, solely by their participation in a single relational primitive $R$, are obtained by collapsing $\{OP, STR, LOOP\}$. Under that move, both shapes become manifestations of $R$, so the equality holds via the collapse.
 
 ## 0. Primitive Objects and Operators
 
