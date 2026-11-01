@@ -1,4 +1,6 @@
 # **Relational Dynamic Geometry, Momentum Flux Engine, Quotient-□ Operator Sheet**  
+- 516 Core relational geometry + dynamics
+
 ## **Unified Layer & Operator Specification (v0)**
 
 ---
