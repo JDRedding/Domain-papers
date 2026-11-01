@@ -1,4 +1,6 @@
 # pi approximations
+- 511 General principles of mathematics 
+- 510.9 History of mathematics (π approximations, with cultural aspects)
 
 Different civilizations independently arrived at approximations of $\pi$. Most early values came from measuring circles or from practical geometry (areas of fields, altars, pyramids, and the like).
 
