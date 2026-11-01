@@ -1,3 +1,6 @@
+# Directed relational geometry
+- 516 Geometry (directed / relational geometry)
+
 The core mathematical structure is a directed relational geometry (RDG, relational dynamic geometry). SID and PED arise as the minimal projections and flux operators forced by the four constraints.
 
 ### Base Object
