@@ -4,7 +4,6 @@ RELATIONAL E8 LATTICE SPECIFICATION
 - 512.5 E₈ root lattice
 - 512.7 E₈ even unimodular lattice (algebra, lattices, exceptional structures)
 
-
 TYPE: RDG-SID Object
 SID[E8] := ( S[E8], I[E8], D[E8] )
 
