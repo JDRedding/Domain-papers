@@ -1,4 +1,7 @@
 RELATIONAL MONSTER VALUATION TABLE
+- 512.2 Monster group (group theory)
+- 512.7 Monster valuation (number-theoretic aspects)
+
 basis = propagation Gamma
 output = rows of A001379, then fusion on those rows
 
