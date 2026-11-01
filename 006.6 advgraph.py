@@ -1,3 +1,6 @@
+# 006.6 Computer graphics (graphing)
+# 005 Computer programming
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sympy import symbols, lambdify, sympify
