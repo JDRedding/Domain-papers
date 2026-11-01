@@ -1,4 +1,6 @@
 # ROMAN TERRITORIAL EVOLUTION
+- 937 Roman history (Italian Peninsula and adjacent territories to 476)
+- Roman Territorial Evolution (1).png through (5).png - Roman history / territorial expansion
 
 ## MATHEMATICAL MODEL
 
