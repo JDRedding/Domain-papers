@@ -12,6 +12,7 @@ The Hessian is the local linear operator that converts a first-order tendency in
 $$
 f \xrightarrow{\nabla} \nabla f \xrightarrow{D} H_f = J_{\nabla f} = D(\nabla f).
 $$
+
 - $f$ is the scalar field (potential, energy, score, utility, \ldots).
 - $\nabla f$ is the first-order response field (force, drift, steepest-ascent direction).
 - $H_f = D(\nabla f)$ is the linearization of that response field.
@@ -50,6 +51,7 @@ Entry-wise,
 $$
 (H_f)_{ij} = \partial_i \partial_j f = \frac{\partial^2 f}{\partial x_i \partial x_j}.
 $$
+
 Under standard smoothness assumptions the mixed partials are equal, so $H_f$ is symmetric.
 
 **Special case $n=2$** ($f(x,y)$):
