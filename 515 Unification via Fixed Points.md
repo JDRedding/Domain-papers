@@ -1,4 +1,6 @@
 # Unification via Fixed Points
+- 515 Analysis (fixed-point theorems) 
+- 514 Topology
 
 A coherent relational framing of classical fixed-point and invariance notions inside the RDG substrate. This file maps classical fixed-point and invariance notions onto the core RDG object $G = (\mathrm{Obj}, \mathrm{Rel})$ and its axioms (especially sub-RDG inclusion and morphisms).
 
