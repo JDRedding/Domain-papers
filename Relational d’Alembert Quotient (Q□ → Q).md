@@ -1,4 +1,6 @@
 # **Relational d’Alembert Quotient (Q□ → Q)**  
+- 515.35 Wave / d’Alembert-type analysis
+
 ## **One‑Page Core Summary**
 
 The **d’Alembert quotient** is **not a PDE**.  
