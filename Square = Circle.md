@@ -1,4 +1,5 @@
 # Square = Circle
+One must erase the distinctions that classical geometry imposes to individuate shapes, then redefine the objects solely by their participation in a single relational primitive $R$, obtained by collapsing $\{OP, STR, LOOP\}$. Under that move, both shapes become manifestations of $R$, so the equality holds via the collapse.
 
 ## 0. Primitive Objects and Operators
 
@@ -165,3 +166,17 @@ $$
 - Irrational values stay inside the QBOX projection
 
 ---
+
+## APPENDIX: Relational framework
+
+The framework being described is the following:
+
+- There is an underlying substrate or generator (often called QBOX or a related *irrational substrate*).
+- Square and Circle are obtained from it by different projections or modes ($\alpha$ and $\beta$).
+- Collapsing the three modes $\{OP, STR, LOOP\}$ into the single relational primitive $R$ renders the two projections indistinguishable: both reduce to $R$.
+- Therefore Square and Circle stand in a relation of identity (or equivalence) relative to that collapse.
+
+This is foundational to the Relational Dynamic Geometry (RDG) framework. It does not assert that $\sqrt{\pi}$ is rational, algebraic, or constructible in the classical sense (those claims would be false), nor that a square equal in area to a given circle can be constructed with compass and straightedge, nor that $\pi$ is algebraic. The classical impossibility result is left intact.
+
+The equality is not a statement about constructible lengths in Euclidean geometry. It is a claim of ontological or relational identity under a particular equivalence relation that the framework imposes by collapsing the classical individuating distinctions. Because the claim is not advanced inside the classical system, the Lindemann–Weierstrass theorem, the transcendence of $\pi$, and the impossibility of squaring the circle by compass and straightedge do not directly refute it. Those results remain theorems of Euclidean geometry and the theory of constructible numbers; they simply do not speak to a system that has already discarded the classical individuating distinctions (object exists only insofar as it admits a relational decomposition) and the associated constructibility constraints (∃(R1​,R2​,R3​)).
+
