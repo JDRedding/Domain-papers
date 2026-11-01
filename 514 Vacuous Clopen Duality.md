@@ -1,4 +1,6 @@
 # **The Vacuous Clopen Duality**
+- 514 Topology (clopen sets, duality)
+  
 ## Empty–Whole Complementarity
 
 In any topology $(X,\tau)$, the two axioms $\emptyset,X\in\tau$ immediately force both sets to be closed as well, because each is the complement of the other. Thus $\emptyset$ (and likewise $X$) is always clopen. The pair $\{\emptyset,X\}$ is therefore the unique, topology-independent clopen pair that every space possesses; its boundary is empty, and it is the only clopen pair that survives even in the connected and indiscrete cases.
