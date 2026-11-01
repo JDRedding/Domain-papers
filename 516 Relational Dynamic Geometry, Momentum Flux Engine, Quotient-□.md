@@ -1,5 +1,7 @@
 
 # Relational Dynamic Geometry, Momentum Flux Engine, Quotient-□
+- 516 Core relational geometry + dynamics
+  
 **RDGMFEQ**  
 ## **One‑Page Core Summary**
 
