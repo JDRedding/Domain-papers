@@ -1,5 +1,7 @@
 # Shadow-coupling 
-→ PED evaluation operator
+- → PED evaluation operator
+- 515 Analysis
+- 530 Physics 
 
 PED evaluation is judgment over what can be seen. Because $q\square$ is not inspectable, evaluation can operate only on its shadow-coupling.
 
