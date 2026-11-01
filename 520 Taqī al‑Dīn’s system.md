@@ -1,4 +1,5 @@
 # Taqī al‑Dīn’s System
+- 520 Astronomy (history of Islamic/Ottoman astronomy, instruments, observatory)
 
 Taqī al‑Dīn’s Istanbul observatory work can be expressed as a coherent mathematical grammar built from sexagesimal angle‑measure, proportional reasoning, cyclic correspondences, and symmetry operations — all grounded in precise instrument readings. The observatory was not just an instrument workshop; it was a **mathematical engine** linking:
 
