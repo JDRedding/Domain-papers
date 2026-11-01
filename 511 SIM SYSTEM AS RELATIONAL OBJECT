@@ -1,4 +1,7 @@
 SIM SYSTEM AS RELATIONAL OBJECT
+- 511 Mathematics (relations)
+- 003 Systems theory
+
 ========================
 S_SIM := < V, E, O, G >
 
