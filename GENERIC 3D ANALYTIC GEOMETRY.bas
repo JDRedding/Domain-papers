@@ -1,240 +1,184 @@
 '=========================================================
 ' GENERIC 3D ANALYTIC GEOMETRY
 ' Distance & Plane Operations in R^3
+' FreeBASIC version
 '=========================================================
 
-OPTION BASE 1
+Option Base 1
 
-TYPE Vector3D
-    X AS DOUBLE
-    Y AS DOUBLE
-    Z AS DOUBLE
-END TYPE
+Type Vector3D
+    X As Double
+    Y As Double
+    Z As Double
+End Type
 
 '---------------------------------------------------------
 ' VECTOR OPERATIONS
 '---------------------------------------------------------
 
-FUNCTION DotProduct# (A AS Vector3D, B AS Vector3D)
+Function DotProduct(A As Vector3D, B As Vector3D) As Double
+    Return A.X * B.X + A.Y * B.Y + A.Z * B.Z
+End Function
 
-    DotProduct# = A.X * B.X + _
-                  A.Y * B.Y + _
-                  A.Z * B.Z
+Function Norm(A As Vector3D) As Double
+    Return Sqr(DotProduct(A, A))
+End Function
 
-END FUNCTION
-
-FUNCTION Norm# (A AS Vector3D)
-
-    Norm# = SQR(DotProduct#(A, A))
-
-END FUNCTION
-
-FUNCTION DistancePoints# (P1 AS Vector3D, P2 AS Vector3D)
-
-    DIM D AS Vector3D
-
+Function DistancePoints(P1 As Vector3D, P2 As Vector3D) As Double
+    Dim D As Vector3D
     D.X = P2.X - P1.X
     D.Y = P2.Y - P1.Y
     D.Z = P2.Z - P1.Z
+    Return Norm(D)
+End Function
 
-    DistancePoints# = Norm#(D)
+Function VectorDifference(A As Vector3D, B As Vector3D) As Vector3D
+    Dim Result As Vector3D
+    Result.X = A.X - B.X
+    Result.Y = A.Y - B.Y
+    Result.Z = A.Z - B.Z
+    Return Result
+End Function
 
-END FUNCTION
+Function ScalarMultiply(S As Double, V As Vector3D) As Vector3D
+    Dim Result As Vector3D
+    Result.X = S * V.X
+    Result.Y = S * V.Y
+    Result.Z = S * V.Z
+    Return Result
+End Function
 
-FUNCTION VectorDifference (A AS Vector3D, B AS Vector3D) AS Vector3D
+Function VectorAdd(A As Vector3D, B As Vector3D) As Vector3D
+    Dim Result As Vector3D
+    Result.X = A.X + B.X
+    Result.Y = A.Y + B.Y
+    Result.Z = A.Z + B.Z
+    Return Result
+End Function
 
-    VectorDifference.X = A.X - B.X
-    VectorDifference.Y = A.Y - B.Y
-    VectorDifference.Z = A.Z - B.Z
+Function CrossProduct(A As Vector3D, B As Vector3D) As Vector3D
+    Dim Result As Vector3D
+    Result.X = A.Y * B.Z - A.Z * B.Y
+    Result.Y = A.Z * B.X - A.X * B.Z
+    Result.Z = A.X * B.Y - A.Y * B.X
+    Return Result
+End Function
 
-END FUNCTION
+Function UnitVector(A As Vector3D) As Vector3D
+    Dim N As Double
+    Dim Result As Vector3D
+    N = Norm(A)
+    If N = 0 Then Return Result   ' returns (0,0,0)
+    Result.X = A.X / N
+    Result.Y = A.Y / N
+    Result.Z = A.Z / N
+    Return Result
+End Function
 
-FUNCTION ScalarMultiply (S AS DOUBLE, V AS Vector3D) AS Vector3D
-
-    ScalarMultiply.X = S * V.X
-    ScalarMultiply.Y = S * V.Y
-    ScalarMultiply.Z = S * V.Z
-
-END FUNCTION
-
-FUNCTION VectorAdd (A AS Vector3D, B AS Vector3D) AS Vector3D
-
-    VectorAdd.X = A.X + B.X
-    VectorAdd.Y = A.Y + B.Y
-    VectorAdd.Z = A.Z + B.Z
-
-END FUNCTION
-
-FUNCTION CrossProduct (A AS Vector3D, B AS Vector3D) AS Vector3D
-
-    CrossProduct.X = A.Y * B.Z - A.Z * B.Y
-    CrossProduct.Y = A.Z * B.X - A.X * B.Z
-    CrossProduct.Z = A.X * B.Y - A.Y * B.X
-
-END FUNCTION
-
-FUNCTION UnitVector (A AS Vector3D) AS Vector3D
-
-    DIM N AS DOUBLE
-
-    N = Norm#(A)
-
-    IF N = 0 THEN EXIT FUNCTION
-
-    UnitVector.X = A.X / N
-    UnitVector.Y = A.Y / N
-    UnitVector.Z = A.Z / N
-
-END FUNCTION
-
-FUNCTION Projection (A AS Vector3D, V AS Vector3D) AS Vector3D
-
-    DIM K AS DOUBLE
-
-    K = DotProduct#(A, V) / DotProduct#(V, V)
-
-    Projection = ScalarMultiply(K, V)
-
-END FUNCTION
+Function Projection(A As Vector3D, V As Vector3D) As Vector3D
+    Dim K As Double
+    K = DotProduct(A, V) / DotProduct(V, V)
+    Return ScalarMultiply(K, V)
+End Function
 
 '---------------------------------------------------------
 ' DISTANCES
 '---------------------------------------------------------
 
-FUNCTION PointLineDistance# (P AS Vector3D, P0 AS Vector3D, V AS Vector3D)
-
-    DIM D AS Vector3D
-    DIM C AS Vector3D
-
+Function PointLineDistance(P As Vector3D, P0 As Vector3D, V As Vector3D) As Double
+    Dim D As Vector3D
+    Dim C As Vector3D
     D = VectorDifference(P, P0)
     C = CrossProduct(D, V)
+    Return Norm(C) / Norm(V)
+End Function
 
-    PointLineDistance# = Norm#(C) / Norm#(V)
-
-END FUNCTION
-
-FUNCTION PointPlaneDistance# (P AS Vector3D, P0 AS Vector3D, N AS Vector3D)
-
-    DIM D AS Vector3D
-
+Function PointPlaneDistance(P As Vector3D, P0 As Vector3D, N As Vector3D) As Double
+    Dim D As Vector3D
     D = VectorDifference(P, P0)
+    Return Abs(DotProduct(N, D)) / Norm(N)
+End Function
 
-    PointPlaneDistance# = ABS(DotProduct#(N, D)) / Norm#(N)
+Function PointPlaneDistanceCoeff(PX As Double, PY As Double, PZ As Double, _
+                                 A As Double, B As Double, C As Double, D As Double) As Double
+    Return Abs(A * PX + B * PY + C * PZ - D) / Sqr(A * A + B * B + C * C)
+End Function
 
-END FUNCTION
-
-FUNCTION PointPlaneDistanceCoeff# (PX AS DOUBLE, PY AS DOUBLE, PZ AS DOUBLE, A AS DOUBLE, B AS DOUBLE, C AS DOUBLE, D AS DOUBLE)
-
-    PointPlaneDistanceCoeff# = _
-        ABS(A * PX + B * PY + C * PZ - D) _
-        / SQR(A * A + B * B + C * C)
-
-END FUNCTION
-
-FUNCTION LineLineDistance# (P1 AS Vector3D, V1 AS Vector3D, P2 AS Vector3D, V2 AS Vector3D)
-
-    DIM N AS Vector3D
-    DIM D AS Vector3D
-
+Function LineLineDistance(P1 As Vector3D, V1 As Vector3D, P2 As Vector3D, V2 As Vector3D) As Double
+    Dim N As Vector3D
+    Dim D As Vector3D
     D = VectorDifference(P2, P1)
     N = CrossProduct(V1, V2)
 
-    IF Norm#(N) < .0000001 THEN
-
+    If Norm(N) < 0.0000001 Then
         N = CrossProduct(D, V1)
-        LineLineDistance# = Norm#(N) / Norm#(V1)
-
-    ELSE
-
-        LineLineDistance# = ABS(DotProduct#(D, N)) / Norm#(N)
-
-    END IF
-
-END FUNCTION
+        Return Norm(N) / Norm(V1)
+    Else
+        Return Abs(DotProduct(D, N)) / Norm(N)
+    End If
+End Function
 
 '---------------------------------------------------------
 ' LINE - PLANE
 '---------------------------------------------------------
 
-SUB LinePlaneIntersection ( _
-    P0 AS Vector3D, _
-    V AS Vector3D, _
-    Q AS Vector3D, _
-    N AS Vector3D)
-
-    DIM Denom AS DOUBLE
-    DIM T AS DOUBLE
-    DIM D AS Vector3D
-    DIM P AS Vector3D
+Sub LinePlaneIntersection(P0 As Vector3D, V As Vector3D, Q As Vector3D, N As Vector3D)
+    Dim Denom As Double
+    Dim T As Double
+    Dim D As Vector3D
+    Dim P As Vector3D
 
     D = VectorDifference(P0, Q)
-    Denom = DotProduct#(N, V)
+    Denom = DotProduct(N, V)
 
-    IF ABS(Denom) < .0000001 THEN
+    If Abs(Denom) < 0.0000001 Then
+        If PointPlaneDistance(P0, Q, N) < 0.0000001 Then
+            Print "Line contained in plane"
+        Else
+            Print "Line parallel to plane"
+            Print "Distance = "; PointPlaneDistance(P0, Q, N)
+        End If
+        Exit Sub
+    End If
 
-        IF PointPlaneDistance#(P0, Q, N) < .0000001 THEN
-            PRINT "Line contained in plane"
-        ELSE
-            PRINT "Line parallel to plane"
-            PRINT "Distance = "; PointPlaneDistance#(P0, Q, N)
-        END IF
-
-        EXIT SUB
-
-    END IF
-
-    T = -DotProduct#(N, D) / Denom
-
+    T = -DotProduct(N, D) / Denom
     P = VectorAdd(P0, ScalarMultiply(T, V))
 
-    PRINT "Intersection Point:"
-    PRINT "X = "; P.X
-    PRINT "Y = "; P.Y
-    PRINT "Z = "; P.Z
-
-END SUB
+    Print "Intersection Point:"
+    Print "X = "; P.X
+    Print "Y = "; P.Y
+    Print "Z = "; P.Z
+End Sub
 
 '---------------------------------------------------------
 ' PLANE - PLANE
 '---------------------------------------------------------
 
-SUB PlanePlaneRelation ( _
-    N1 AS Vector3D, D1 AS DOUBLE, _
-    N2 AS Vector3D, D2 AS DOUBLE)
-
-    DIM C AS Vector3D
-
+Sub PlanePlaneRelation(N1 As Vector3D, D1 As Double, N2 As Vector3D, D2 As Double)
+    Dim C As Vector3D
     C = CrossProduct(N1, N2)
 
-    IF Norm#(C) < .0000001 THEN
+    If Norm(C) < 0.0000001 Then
+        Print "Planes are parallel"
+        Print "Distance = "; Abs(D1 - D2) / Norm(N1)
 
-        PRINT "Planes are parallel"
-
-        PRINT "Distance = ";
-        PRINT ABS(D1 - D2) / Norm#(N1)
-
-        IF ABS(D1 - D2) < .0000001 THEN
-            PRINT "Planes are identical"
-        END IF
-
-    ELSE
-
-        PRINT "Planes intersect"
-
-        PRINT "Line Direction Vector:"
-        PRINT C.X; C.Y; C.Z
-
-    END IF
-
-END SUB
+        If Abs(D1 - D2) < 0.0000001 Then
+            Print "Planes are identical"
+        End If
+    Else
+        Print "Planes intersect"
+        Print "Line Direction Vector:"
+        Print C.X; " "; C.Y; " "; C.Z
+    End If
+End Sub
 
 '---------------------------------------------------------
 ' DEMONSTRATION
 '---------------------------------------------------------
 
-DIM P1 AS Vector3D
-DIM P2 AS Vector3D
-DIM V1 AS Vector3D
+Dim P1 As Vector3D
+Dim P2 As Vector3D
+Dim V1 As Vector3D
 
 P1.X = 0
 P1.Y = 0
@@ -244,15 +188,15 @@ P2.X = 3
 P2.Y = 4
 P2.Z = 5
 
-PRINT "POINT TO POINT DISTANCE"
-PRINT DistancePoints#(P1, P2)
+Print "POINT TO POINT DISTANCE"
+Print DistancePoints(P1, P2)
 
 V1.X = 1
 V1.Y = 0
 V1.Z = 0
 
-PRINT
-PRINT "POINT TO LINE DISTANCE"
-PRINT PointLineDistance#(P2, P1, V1)
+Print
+Print "POINT TO LINE DISTANCE"
+Print PointLineDistance(P2, P1, V1)
 
-END
+Sleep
