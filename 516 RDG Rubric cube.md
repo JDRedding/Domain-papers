@@ -1,5 +1,6 @@
 # RDG Rubric cube
-
+- 516 Geometry
+  
 ### Preliminaries
 
 An $n\times n\times n$ coloured cube ($n\ge 2$) has six square faces. Each face is an $n\times n$ array of **facelets**. There are
