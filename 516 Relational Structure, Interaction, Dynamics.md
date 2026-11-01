@@ -1,4 +1,6 @@
 # **Structure–Interaction–Dynamics (SID)**  
+- 516 Core structural-relational layer
+
 ## **One‑Page Core Summary**
 
 SID is the **geometry‑side triad** of an RDG $G$.  
