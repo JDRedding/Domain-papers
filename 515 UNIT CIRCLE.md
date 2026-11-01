@@ -1,5 +1,7 @@
 **UNIT CIRCLE**  
 *RDG SID–PED Q Mapping*
+- 515 Trigonometry (complex analysis)
+- 516 Geometry
 
 Angles labeled in degrees and radians; coordinates shown as $(\cos\theta,\sin\theta)$ 
 
