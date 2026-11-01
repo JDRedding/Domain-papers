@@ -1,4 +1,6 @@
 # Precise anchoring
+- 153 (526) Anchoring-and-adjustment (psychology/heuristics)
+- Precise positioning/navigation
 
 **“Precise anchoring”** most often refers to either the psychological effect of numerical precision in the anchoring-and-adjustment heuristic (especially in negotiations), coming out of the idea of practical techniques for accurately positioning a boat’s anchor.
 
