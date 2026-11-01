@@ -1,5 +1,8 @@
 RDG–GM v2 VISUAL 
 --------------------------------
+- 511 Mathematical Systems
+- 511.8 Mathematical Visualization
+
 1. Free grade (shape 1)
    c_n(z) = e^(−0.12z)cos(0.7w) + 0.12 − ½
    → baseline backbone law; n is label only.
