@@ -1,4 +1,6 @@
 # 40K rules 
+- 793 Games & recreation (tabletop wargames)
+- 813 Science fiction 
 
 ## Option 1:  Warhammer 40K Core Rules
 10th Edition
