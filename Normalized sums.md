@@ -345,3 +345,129 @@ $$
 The factorization $\mathbf{Y}=A\,\hat{\mathbf{Y}}$ again isolates overall intensity.  
 
 The resultant-first map collapses $12\to 4$ before projecting onto $S^{3}$; the relation-first map projects the full twelve-component configuration onto $S^{11}$, preserving mutual proportions before any aggregation. The dimensional reduction is irreversible.
+
+
+## Appendix A. Clarification on order of operations and final aggregate direction
+
+The linearity identity
+
+$$
+R\Bigl(\frac{\mathbf{Y}}{\|\mathbf{Y}\|}\Bigr) = \frac{R(\mathbf{Y})}{\|\mathbf{Y}\|}
+$$
+
+holds for any linear aggregation operator $R$. The right-hand side does **not** in general have unit norm. Its Euclidean norm is
+
+$$
+\left\| \frac{R(\mathbf{Y})}{\|\mathbf{Y}\|} \right\| = \frac{\|R(\mathbf{Y})\|}{\|\mathbf{Y}\|},
+$$
+
+which equals 1 only in special cases.
+
+Consequently the statement “the final unit resultant is independent of order” is true only after an additional normalization. Precisely,
+
+$$
+\frac{ R\bigl(\mathbf{Y}/\|\mathbf{Y}\|\bigr) }{ \bigl\| R\bigl(\mathbf{Y}/\|\mathbf{Y}\|\bigr) \bigr\| } = \frac{R(\mathbf{Y})}{\|R(\mathbf{Y})\|}
+$$
+
+whenever $R(\mathbf{Y})\neq\mathbf{0}$. In other words the two composite maps
+
+$$
+\text{normalize}\;\to\;\text{aggregate}\;\to\;\text{normalize}
+$$
+
+and
+
+$$
+\text{aggregate}\;\to\;\text{normalize}
+$$
+
+produce identical unit vectors in the aggregate space.
+
+The geometric distinction between the pipelines is therefore not the final aggregate direction. It is the information that is retained or discarded before that final projection occurs.
+
+---
+
+## Appendix B. Information-theoretic view of the two pipelines
+
+The document describes two distinct processing pipelines on a configuration $\mathbf{Y}\in\mathbb{R}^{3d}$.
+
+**Aggregate pipeline**
+
+$$
+\mathbf{Y}\;\xrightarrow{R}\; R(\mathbf{Y})\;\xrightarrow{\text{normalize}}\;\hat{R}.
+$$
+
+Information loss occurs at the linear map
+
+$$
+R:\mathbb{R}^{3d}\to\mathbb{R}^{d}.
+$$
+
+The dimensional reduction $3d\to d$ is irreversible. Subsequent normalization yields a point of the lower-dimensional sphere $S^{d-1}$.
+
+**Relational pipeline**
+
+$$
+\mathbf{Y}\;\xrightarrow{\text{normalize}}\;\hat{\mathbf{Y}}.
+$$
+
+No aggregation is performed. Only overall scale is removed. After projection the configuration lives on the sphere $S^{3d-1}$, whose dimension is exactly one less than that of the original configuration space.
+
+The two pipelines therefore differ by the placement of the aggregation operator, not by the normalization step itself.
+
+---
+
+## Appendix C. Compact formal statement
+
+Let each of the three modes be a vector in $\mathbb{R}^{d}$, so that the triadic configuration may be written
+
+$$
+\mathbf{Y}=(y^{+},y^{-},y^{0})\in\mathbb{R}^{3d}.
+$$
+
+Define the linear aggregation
+
+$$
+R:\mathbb{R}^{3d}\to\mathbb{R}^{d},\qquad R(\mathbf{Y})=y^{+}+y^{-}+y^{0}.
+$$
+
+Then
+
+$$
+\hat{\mathbf{Y}}=\frac{\mathbf{Y}}{\|\mathbf{Y}\|}\in S^{3d-1}
+$$
+
+preserves the mutual proportions among the three modes, while
+
+$$
+\hat{R}=\frac{R(\mathbf{Y})}{\|R(\mathbf{Y})\|}\in S^{d-1}
+$$
+
+preserves only the direction of their vector sum.
+
+The fundamental distinction is the placement of the aggregation operator:
+
+$$
+\mathbf{Y}\longmapsto\hat{\mathbf{Y}}
+\qquad\text{versus}\qquad
+\mathbf{Y}\longmapsto R(\mathbf{Y})\longmapsto\hat{R}.
+$$
+
+The first map removes scale alone. The second map removes scale after first discarding the relational degrees of freedom that live in the kernel of $R$.
+
+The resulting sphere hierarchy is
+
+$$
+\begin{align*}
+d=1 &\quad\Rightarrow\quad S^{2},\\
+d=2 &\quad\Rightarrow\quad S^{5},\\
+d=3 &\quad\Rightarrow\quad S^{8},\\
+d=4 &\quad\Rightarrow\quad S^{11}.
+\end{align*}
+$$
+
+---
+
+## Appendix D. Zero-resultant caveat 
+
+When $R(\mathbf{Y})=\mathbf{0}$ the aggregate normalization is undefined (or returns the zero vector by convention). The relational normalization $\hat{\mathbf{Y}}$ remains well-defined whenever $\mathbf{Y}\neq\mathbf{0}$. This supplies an additional, concrete illustration that the two pipelines retain different information.
