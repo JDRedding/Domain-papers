@@ -1,4 +1,5 @@
 # **Relational Dynamic Geometry, Momentume Flux Engine (RDGMFE)**  
+- 516 Core relational geometry + dynamics
 ## **One‑Page Core Summary**
 
 **RDG + MFE** is the **geometry‑to‑engine pair** of the system.  
