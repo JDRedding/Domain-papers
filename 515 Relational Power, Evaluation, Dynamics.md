@@ -1,4 +1,6 @@
 # **Power–Evaluation–Dynamic‑Slice (PED)**  
+- 515 Engine-layer dynamics in the RDG architecture
+
 ## **One‑Page Core Summary**
 
 PED is the **internal triad** of an MFE engine state $E$.  
