@@ -54,7 +54,7 @@ $$
 
 Under standard smoothness assumptions the mixed partials are equal, so $H_f$ is symmetric.
 
-**Special case $n=2$** ($f(x,y)$):
+**Special case $n=2$** ( $f(x,y)$ ):
 
 $$
 H_f(x,y) = \begin{pmatrix}
