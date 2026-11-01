@@ -191,5 +191,5 @@ REM Compact educational utility for algebra or pre-calculus topics.
 REM Relies on simple arithmetic, the MOD operator for the powers-of-i
 REM cycle, the square-root function SQR, and basic conditional branching.
 REM Uses no arrays, functions, or structured control beyond GOTO and
-REM IF...THEN, typical of many early BASIC teaching programs.
+REM IF...THEN, typical of many early BASIC programs.
 REM ===================================================================
