@@ -7,8 +7,6 @@ The Hessian is the local linear operator that converts a first-order tendency in
 - Eigenvalues / quadratic form = independent directional stiffnesses or instabilities.
 - In pure gradient dynamics the same eigenvalues (up to sign) become the Lyapunov exponents of the linearized flow.
 
-The Hessian is therefore the object that turns a first-order response into the second-order architecture governing its future evolution.
-
 ## Operator chain
 
 $$
