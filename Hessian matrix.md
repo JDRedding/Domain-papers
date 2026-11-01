@@ -1,4 +1,4 @@
-**Hessian matrix**
+# **Hessian matrix**
 
 The Hessian is the local linear operator that converts a first-order tendency into the second-order architecture governing future tendencies. It simultaneously encodes the formal second-derivative structure, the geometry of curvature, and (under gradient dynamics) the stability operator of the induced flow.
 
