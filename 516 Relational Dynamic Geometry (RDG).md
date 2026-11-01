@@ -1,4 +1,6 @@
 # **Relational Dynamic Geometry (RDG)**  
+- 516 Core relational geometry + dynamics
+
 ## **One‑Page Core Summary**
 
 RDG is the **base relational geometry** underlying the system.  
