@@ -1,4 +1,6 @@
 # **Relational Penrose Structure** 
+- 514 Penrose tilings / structures (topology or geometry)
+
 ## Relational/admissibility presentation
 
 **RDG** (Relational Dynamics Geometry) is a formal framework that recasts geometric constructions such as Penrose tilings in terms of admissible relational configurations rather than concrete tiles. In this language the underlying space is a **SID** (Structural Interaction Dynamics) configuration space $M=\{\phi_i,\pi_i,r_{ij}\}$ of local structural states, interaction/decoration states and relational connectivities; an admissibility operator $\Gamma$ selects the subset $M_A$ of locally compatible configurations, so that the Penrose pattern itself appears as the composite $\mathcal{P}=O(\Gamma(M_H))$. Inflation becomes a coarse-graining operator $C_\phi$ that intertwines with admissibility, the golden ratio emerges as the square root of the dominant eigenvalue of the substitution matrix, and an optional **PED** $(P,E,D)$ layer describes dynamics supported on the resulting admissible geometry. The essential claim is that global aperiodic order can arise solely from a local compatibility constraint acting on a larger space of potential relations.
