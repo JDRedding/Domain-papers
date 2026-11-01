@@ -1,6 +1,8 @@
 ' AdvancedGraph - FreeBASIC - Draws shade lines for functions.
 ' Compile: fbc advgraph.bas
 ' Or with graphics: fbc -s gui advgraph.bas (optional)
+' 006.6 Computer graphics (graphing)
+' 005 Computer programming
 
 #Include "fbgfx.bi"
 
