@@ -1,5 +1,7 @@
 ' QUAD.BAS - Quadratic Analyzer
 ' Compatible with QBASIC / QB64 / FreeBASIC (-lang qb)
+' 005.133 - 510.285
+' Computer programming (BASIC) / Mathematical software
 
 DECLARE SUB Compute ()
 DECLARE SUB EnterABC ()
