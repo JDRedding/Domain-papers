@@ -1,4 +1,7 @@
 # Normalized sums
+## Distinction matters
+The resultant map is appropriate when the physical or semantic quantity of interest is the net effect (force, current, majority vote, etc.). The triadic map is appropriate precisely when the relational claim is that the mutual proportions among the three modes constitute the primary state, and overall intensity is a secondary, scale-dependent factor. In that framing the unit sphere $S^{2}$ (or its higher-dimensional analogues) is the space of pure relational configurations. The formulas, the zero-vector caveat, the dimensional summary, and the table contrasting the two constructions are tThe geometric operation is ordinary Euclidean normalization; the interpretive weight placed on which vector is normalized is what produces the relational versus aggregate reading.
+
 ## **Aggregate geometric meaning of resultant normalization**
 
 $$
