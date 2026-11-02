@@ -21,8 +21,8 @@
 ' Change the function: Edit the Function f(...) and add more Cases. Then recompile.
 ' Dynamic user input of formulas: FreeBASIC has no built-in expression parser. 
 '  For full runtime formula entry you would need to integrate a small parser 
-'  (several exist on the FreeBASIC forum) or use an external library. Thos version above 
-'  prioritizes simplicity and reliability.
+'  (several exist on the FreeBASIC forum) or use an external library. This version prioritizes 
+'  simplicity and reliability.
 ' Trace and Evaluate work as described. Evaluate uses a simple Input (best with a console
 '  window open).
 ' Performance is good up to detail ≈ 80–100 on modern hardware. Lower it if needed.
