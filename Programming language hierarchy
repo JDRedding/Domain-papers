@@ -1,0 +1,119 @@
+Programming language hierarchy
+
+Language Systems
+│
+├── Machine Languages
+│   ├── x86
+│   ├── ARM
+│   └── RISC-V
+│
+├── Assembly Languages
+│   ├── NASM
+│   ├── MASM
+│   └── GAS
+│
+├── Imperative Languages
+│   ├── C
+│   ├── Pascal
+│   └── Fortran
+│
+├── Object-Oriented Languages
+│   ├── Java
+│   ├── C#
+│   └── C++
+│
+├── Functional Languages
+│   ├── Haskell
+│   ├── Lisp
+│   ├── Scheme
+│   └── OCaml
+│
+├── Logic / Rule Languages
+│   ├── Prolog
+│   ├── Datalog
+│   └── Mercury
+│
+├── Scripting Languages
+│   ├── Python
+│   ├── Ruby
+│   ├── Perl
+│   └── Lua
+│
+├── Web Languages
+│   ├── JavaScript
+│   ├── TypeScript
+│   └── PHP
+│
+├── Query Languages
+│   ├── SQL
+│   ├── GraphQL
+│   └── SPARQL
+│
+├── Domain-Specific Languages (DSL)
+│   ├── Verilog
+│   ├── VHDL
+│   ├── GLSL
+│   └── G-code
+│
+└── Markup / Data Languages
+    ├── HTML
+    ├── XML
+    ├── JSON
+    └── YAML
+
+Melvil knowledge system
+-----------------------
+005.1 Programming Languages
+
+005.11 Machine-Level Languages
+005.12 Assembly Languages
+
+005.2 General-Purpose Languages
+005.21 Procedural
+005.22 Object-Oriented
+005.23 Functional
+005.24 Logic
+
+005.3 Scripting Languages
+005.31 System Scripting
+005.32 Web Scripting
+
+005.4 Web and Internet Languages
+005.41 JavaScript
+005.42 TypeScript
+005.43 PHP
+
+005.5 Data and Query Languages
+005.51 SQL
+005.52 Graph Databases
+005.53 Semantic Web Languages
+
+005.6 Domain-Specific Languages
+005.61 Hardware Description
+005.62 Graphics
+005.63 Scientific Computing
+
+005.7 Markup and Data Formats
+005.71 HTML
+005.72 XML
+005.73 JSON
+005.74 YAML
+
+RDG system
+-----------------
+Programming Languages
+│
+├── Computation Languages
+│
+├── Data Description Languages
+│
+├── Query Languages
+│
+├── Rule and Logic Languages
+│
+├── Hardware Control Languages
+│
+├── Interface Languages
+│
+└── Virtual / Game Languages
+
