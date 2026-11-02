@@ -2,6 +2,19 @@
 ' Compile: fbc Graph3D.bas
 ' Requires OpenGL support
 
+' ControlsArrow keys: Rotate view
+' Mouse drag: Rotate view
+' + / - or mouse wheel: Zoom
+' D: Increase detail (grid resolution)
+' Shift+D: Decrease detail
+' B: Change view boundaries (prompts for new xmin/xmax/ymin/ymax)
+' F: Cycle functions
+' W: Toggle wireframe / filled
+' T: Toggle Trace mode (then use arrows to move the marker)
+' E: Evaluate at a point (prompts for x, y)
+' R: Reset view
+' Esc or Q: Quit
+
 #include once "fbgfx.bi"
 #include once "GL/gl.bi"
 #include once "GL/glu.bi"
