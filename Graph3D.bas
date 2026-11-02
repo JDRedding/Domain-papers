@@ -27,7 +27,6 @@
 '  window open).
 ' Performance is good up to detail ≈ 80–100 on modern hardware. Lower it if needed.
 
-
 #include once "fbgfx.bi"
 #include once "GL/gl.bi"
 #include once "GL/glu.bi"
