@@ -2,7 +2,8 @@
 ' Compile: fbc Graph3D.bas
 ' Requires OpenGL support
 
-' ControlsArrow keys: Rotate view
+' Controls
+' Arrow keys: Rotate view
 ' Mouse drag: Rotate view
 ' + / - or mouse wheel: Zoom
 ' D: Increase detail (grid resolution)
