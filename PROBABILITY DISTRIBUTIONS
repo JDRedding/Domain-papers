@@ -1,0 +1,256 @@
+PROBABILITY DISTRIBUTIONS
+
+Types:
+  DISCRETE   = integer / count outcomes
+  CONTINUOUS = real-valued outcomes
+
+
+DISCRETE
+========
+
+  [Geometric(p)] ------------------------+
+       ^                                 |
+       | n = 1                           | ΣX
+       +--------------------+            v
+                            | [Negative Binomial(r,p)]
+                            |            |
+                            |            | λ = r(1-p)
+                            |            v
+                            |       [Poisson(λ)]
+                            |         ^       \
+                            |         |       | λ → ∞
+                            |         |       v
+                            |         |   [Normal(μ,σ²)]
+                            |         |       ^
+                            |         |       |
+                            |         |       | λ = np
+                            |         |       v
+  [Hypergeometric(N,K,n)]   |   [Binomial(n,p)] <--> [Bernoulli(p)]
+       |                    |     ^                               ^
+       | sampling fraction  |     |                               |
+       | small (n/N ≤ 0.05) |     | ΣX                            | n = 1
+       | ρ ≈ K/N            |     |                               |
+       v                    +-----+                               +--+
+  [Binomial(n,p)] <--- λ = np ---> [Poisson(λ)]
+
+
+CONTINUOUS
+==========
+
+  [Lognormal(μ,σ²)]
+        ^       |
+        | e^X   | log(X)
+        |       v
+   [Normal(μ,σ²)]
+        ^
+        | Z = (X - μ)/σ
+        | X = μ + σZ
+        v
+   [Normal(0,1)]
+      /       \
+ X1/X2         ΣZi²
+   v             v
+[Cauchy]    [Chi-Squared(ν)]
+
+
+                             α = β = 1
+  [Beta(α,β)] ----------------------------> [Uniform(0,1)]
+     |
+     | X1/(X1 + X2)
+     v
+  [Gamma(r,λ)] <--- ΣX --- [Exponential(λ)]
+     |
+     | r = 1
+     v
+  [Exponential(λ)]
+
+  [Exponential(λ)] <---------------------> [Uniform(0,1)]
+      U = e^(-λX)           X = -ln(U)/λ
+
+  [Weibull(k,λ)]   <---------------------> [Exponential(λ)]
+       k = 1                     λ = 1
+
+
+PARAMETERS
+==========
+
+p      = success probability
+n      = number of trials
+r      = number of successes (Negative Binomial)
+         or shape parameter (Gamma)
+
+λ      = rate parameter
+μ      = mean
+σ²     = variance
+σ      = standard deviation
+
+α, β   = Beta shape parameters
+k      = Weibull shape parameter
+
+N      = population size
+K      = successes in population
+ρ      = K/N
+
+ν      = degrees of freedom
+
+
+SUPPORTS
+========
+
+Bernoulli(p)            {0,1}
+Binomial(n,p)           {0,1,...,n}
+Poisson(λ)              {0,1,2,...}
+Geometric(p)            {0,1,2,...}
+Negative Binomial(r,p)  {0,1,2,...}
+
+Uniform(a,b)            a ≤ x ≤ b
+Beta(α,β)               0 ≤ x ≤ 1
+Exponential(λ)          x ≥ 0
+Gamma(r,λ)              x ≥ 0
+Weibull(k,λ)            x ≥ 0
+
+Normal(μ,σ²)            -∞ < x < ∞
+Lognormal(μ,σ²)         x > 0
+Chi-Squared(ν)          x ≥ 0
+Cauchy(0,1)             -∞ < x < ∞
+
+
+FUNDAMENTALS
+============
+
+Bernoulli(p)
+  Mean = p
+  Var  = p(1-p)
+
+Binomial(n,p)
+  Mean = np
+  Var  = np(1-p)
+
+Poisson(λ)
+  Mean = λ
+  Var  = λ
+
+Geometric(p)
+  Mean = (1-p)/p
+  Var  = (1-p)/p²
+
+Negative Binomial(r,p)
+  Mean = r(1-p)/p
+  Var  = r(1-p)/p²
+
+Uniform(a,b)
+  Mean = (a+b)/2
+  Var  = (b-a)²/12
+
+Exponential(λ)
+  Mean = 1/λ
+  Var  = 1/λ²
+
+Gamma(r,λ)
+  Mean = r/λ
+  Var  = r/λ²
+
+Normal(μ,σ²)
+  Mean = μ
+  Var  = σ²
+
+Normal(0,1)
+  Mean = 0
+  Var  = 1
+
+Beta(α,β)
+  Mean = α/(α+β)
+  Var  = αβ/[(α+β)²(α+β+1)]
+
+Chi-Squared(ν)
+  Mean = ν
+  Var  = 2ν
+
+Cauchy(0,1)
+  Mean = undefined
+  Var  = undefined
+
+Weibull(k,λ)
+  Flexible lifetime / reliability model
+
+
+KEY RELATIONSHIPS
+=================
+
+Bernoulli --ΣX--> Binomial
+
+Geometric --ΣX--> Negative Binomial
+
+Exponential --ΣX--> Gamma
+
+Gamma(r=1, λ) = Exponential(λ)
+
+Beta(1,1) = Uniform(0,1)
+
+Hypergeometric ≈ Binomial
+  when n/N ≤ 0.05
+
+Poisson ≈ Binomial
+  when λ = np
+
+Binomial → Normal
+  n → ∞, p fixed
+
+Poisson → Normal
+  λ → ∞
+
+Lognormal ⇄ Normal
+  via exp(.) and log(.)
+
+Z = (X-μ)/σ
+X = μ + σZ
+
+ΣZi² ~ Chi-Squared(ν)
+
+Z1/Z2 ~ Cauchy(0,1)
+
+U = e^(-λX)
+X = -ln(U)/λ
+
+If X1 ~ Gamma(α,λ) and X2 ~ Gamma(β,λ)
+
+    X1
+  -------  ~ Beta(α,β)
+  X1 + X2
+
+
+INTERVIEW FAVORITES
+===================
+
+Bernoulli
+Binomial
+Poisson
+Normal
+Standard Normal
+Exponential
+Gamma
+Beta
+Hypergeometric
+Weibull
+
+
+CENTRAL IDEA
+============
+
+Aggregation equalizes randomness.
+
+Many counting processes:
+  Bernoulli -> Binomial -> Normal
+  Geometric -> Negative Binomial -> Poisson -> Normal
+
+Many waiting-time processes:
+  Exponential -> Gamma
+
+Many transformations:
+  Normal <-> Lognormal
+  Normal -> Chi-Squared
+  Normal -> Cauchy
+
+Normal is the central attractor of probability theory,
+appearing through limits, sums, approximations, and
+transformations.
