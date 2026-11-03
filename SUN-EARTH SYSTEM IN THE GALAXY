@@ -140,6 +140,16 @@ Torus winding in phase space
 Symbolically:
   Ellipse subset Helix subset Quasiperiodic Tube subset T^n
 
+But the an ellipse is not a subset of a helix, and a quasiperiodic tube is not a subset 
+of a torus.
+
+Refinement chain:
+
+Ellipse
+    => Helix
+    => Quasiperiodic Tube
+    => Torus Flow
+
 Each level adds an additional degree of freedom:
   Ellipse + carrier motion     -> Helix
   Helix + Galactic curvature   -> Curved helix
@@ -149,6 +159,17 @@ Each level adds an additional degree of freedom:
 10. RDG RELATIONAL READING (inverted ontology)
 Primary state is the relational phase point:
   Theta(t) = (theta_p, theta_z, theta_g) in T^3
+
+where 
+P = planetary cycle relation
+Z = vertical cycle relation
+G = Galactic cycle relation
+
+Then
+
+ Θ ∈ T^3
+
+becomes the primary RDG state.
 
 The system is the persistent relational cycles themselves.
 Objects and trajectories are reconstructed from the phase evolution.
@@ -284,6 +305,9 @@ Planetary motion is locally well approximated by a helix,
 globally described by a quasiperiodic trajectory,
 and most naturally represented as a torus winding in phase space.
 
+Hierarchy (conventional):
+  Ellipse -> Helix -> Quasiperiodic Tube -> Torus Flow
+
 RDG compression:
 The conventional formulation treats the Sun-Earth system as objects
 tracing trajectories through space, whereas the RDG formulation treats
@@ -291,8 +315,39 @@ it as a hierarchy of persistent relational cycles whose fundamental
 state is a quasiperiodic torus flow; trajectories, helices, and orbits
 arise only as coordinate-dependent embeddings of that relational evolution.
 
-Hierarchy (conventional):
-  Ellipse -> Helix -> Quasiperiodic Tube -> Torus Flow
+RDG FINAL FORMULATION
+
+The Sun-Earth system is a hierarchy of persistent
+relational cycles characterized by planetary,
+vertical, and Galactic phases.
+
+Its natural state space is the quasiperiodic torus
+
+    Theta ∈ T^3.
+
+The evolution law acts directly on this relational
+state,
+
+    Theta(t + Δt) = Gamma(Theta(t)).
+
+Physical-space trajectories, helices, and
+corkscrew-like paths arise only after a coordinate
+embedding is chosen.
+
+Thus:
+
+Persistent Distinctions
+        ->
+Relational State
+        ->
+Torus Flow
+        ->
+Quasiperiodic Projection
+        ->
+Helical Approximation
+
+with each downward step representing a reconstruction
+rather than a new physical degree of freedom.
 
 Hierarchy (RDG):
   Persistent distinctions -> Relational state -> Torus flow
