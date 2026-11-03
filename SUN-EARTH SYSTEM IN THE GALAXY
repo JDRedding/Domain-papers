@@ -1,0 +1,171 @@
+SUN-EARTH SYSTEM IN THE GALAXY
+First-order quasiperiodic formulation
+
+TYPES AND FUNDAMENTALS
+- Positions: vectors r(t) in a Galactic inertial frame
+- Frequencies: angular frequencies (rad/time)
+- Periods: T = 2*pi / omega
+- Rationally independent frequencies => quasiperiodic motion
+  (n1*omega1 + n2*omega2 + ... + nk*omegak = 0 has only the trivial integer solution)
+- Scale separation: planetary motion is ~10^8 times faster than Galactic motion
+
+1. SUN'S GALACTIC ORBITAL MOTION (planar)
+T_gal = 2*pi * R_0 / v_odot
+
+Variables:
+  R_0     ~ 8 kpc                  (Sun's Galactocentric radius)
+  v_odot  ~ 230 km/s               (circular speed at the Sun)
+  T_gal   ~ 225-250 Myr            (galactic year; commonly ~230 Myr)
+
+Number of orbits completed by the Sun:
+  N ~ t_odot / T_gal ~ 4.6 Gyr / 230 Myr ~ 20
+
+2. VERTICAL OSCILLATION OF THE SUN
+Equation of motion (harmonic near mid-plane):
+  d^2 z / dt^2 + omega_z^2 * z = 0
+
+Solution:
+  z(t) = A * sin(omega_z * t + phi)
+
+Velocity and acceleration:
+  v_z(t) = A * omega_z * cos(omega_z * t + phi)
+  a_z(t) = - omega_z^2 * z(t)
+
+Period and plane-crossing interval:
+  T_z = 2*pi / omega_z ~ 60-70 Myr   (often ~64 Myr)
+  T_cross = T_z / 2 ~ 30-35 Myr
+
+Local density relation:
+  omega_z ~ sqrt(4*pi*G*rho)
+  T_z = sqrt(pi / (G*rho))
+
+Vertical oscillations per galactic year: ~ 3-4
+
+3. COMPOSITE SUN TRAJECTORY
+r_odot(t) = r_planar(t) + z(t) * k_hat
+
+Optional richer model with radial epicycles:
+  R(t) = R_0 + B * cos(kappa * t + phi_R)
+  r_odot(t) = R(t) * [cos(Omega_gal*t)*x_hat + sin(Omega_gal*t)*y_hat] + z(t)*z_hat
+
+  kappa = epicyclic frequency
+  (adds a fourth frequency)
+
+4. PLANETARY ORBIT ABOUT THE SUN
+In heliocentric frame: nearly Keplerian ellipse
+For Earth:
+  T_p = 1 yr
+  v_orb ~ 29.8 km/s
+
+Inclination of ecliptic to Galactic plane:
+  i ~ 60.2 deg
+
+5. LOCAL HELICAL APPROXIMATION
+(valid only when carrier motion is treated as straight and uniform)
+
+Axial advance per planetary orbit:
+  L = v_odot * T_p
+  (Earth: L ~ 48.5 AU)
+
+Pitch ratio (local scale-separation parameter):
+  P = v_odot / v_orb
+
+Geometric meaning:
+  P = L / (2*pi*a)
+  (carrier distance traveled per orbit divided by one planetary circumference)
+
+Examples:
+  Mercury:  P ~ 4.85
+  Earth:    P ~ 7.7
+  Neptune:  P ~ 42.6
+
+Helix angle:
+  tan(alpha) = P
+  (Earth: alpha ~ 82.6 deg)
+
+Interpretation of P:
+  P < 1     tight spiral
+  P = 1     45 deg helix
+  P > 1     stretched helix
+  P >> 1    long corkscrew
+
+6. FULL QUASIPERIODIC TRAJECTORY (Galactic frame)
+Cleaner relative-coordinate decomposition:
+  r_E(t) = r_odot(t) + r_E/odot(t)
+
+or expanded:
+  r_E(t) = r_G(t) + r_odot/G(t) + r_E/odot(t)
+
+with
+  r_odot(t) = r_planar(t) + A*sin(omega_z*t + phi)*z_hat
+  r_E/odot(t) = R_tilt( r_Kepler(t) )
+
+Three characteristic frequencies:
+  Omega_gal = 2*pi / T_gal   ~ 2*pi / 230 Myr
+  omega_z   = 2*pi / T_z     ~ 2*pi / 64 Myr
+  omega_p   = 2*pi / T_p     ~ 2*pi / 1 yr   (Earth)
+
+Scale separation:
+  omega_p / Omega_gal ~ 2.3e8   (Earth)
+
+The frequencies are rationally independent, so the trajectory is quasiperiodic.
+It densely winds a torus in phase space.
+Its projection into physical space appears as a non-closing tube-like path.
+
+7. PHASE-SPACE DESCRIPTION
+Motion is a linear flow on a 3-torus (or 4-torus with epicycles):
+  theta_i(t) = omega_i * t + theta_i0
+  T^3 = S^1 x S^1 x S^1
+
+8. TIME-SCALE HIERARCHY
+Planetary orbit      ~ 1 yr
+Solar cycle          ~ 11 yr
+Galactic crossing    ~ 32 Myr
+Galactic orbit       ~ 230 Myr
+Solar age            ~ 4.6 Gyr
+
+The huge spacing between these scales supports hierarchical and perturbative descriptions.
+
+9. LOCAL-TO-GLOBAL HIERARCHY
+Heliocentric ellipse
+        |
+        v
+Tilted Galactic helix
+        |
+        v
+Helix on oscillating carrier
+        |
+        v
+Quasiperiodic tube
+        |
+        v
+Torus winding in phase space
+
+Symbolically:
+  Ellipse subset Helix subset Quasiperiodic Tube subset T^n
+
+Each level adds an additional degree of freedom:
+  Ellipse + carrier motion     -> Helix
+  Helix + Galactic curvature   -> Curved helix
+  Curved helix + vertical      -> Quasiperiodic tube
+  Quasiperiodic tube + angles  -> Torus flow
+
+NOTES
+- Pure helix requires idealized straight-line carrier motion.
+- Real trajectory is a helix-on-a-curved-and-oscillating path.
+- Frame dependence: closed ellipses (heliocentric) vs open corkscrews (Galactic).
+- Neither frame is privileged; both describe the same motion.
+
+DISTINCTIONS
+Helix                      = local geometric approximation
+Quasiperiodic trajectory  = global physical trajectory
+Torus winding             = phase-space description
+Reference frame           = coordinate choice
+
+CONCEPTUAL SUMMARY
+Planetary motion is locally well approximated by a helix,
+globally described by a quasiperiodic trajectory,
+and most naturally represented as a torus winding in phase space.
+
+Hierarchy:
+  Ellipse -> Helix -> Quasiperiodic Tube -> Torus Flow
