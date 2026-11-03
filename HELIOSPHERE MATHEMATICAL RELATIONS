@@ -1,0 +1,114 @@
+HELIOSPHERE MATHEMATICAL RELATIONS
+=================================
+
+1. PARKER ISOTHERMAL SOLAR-WIND EQUATION
+   Type: Ordinary differential equation (steady, spherically symmetric, isothermal flow)
+
+   (u - c_s^2 / u) * du/dr = 2*c_s^2 / r - G*M_sun / r^2
+
+   Variables:
+     u(r)     radial flow speed
+     c_s      isothermal sound speed = sqrt(k_B * T / m)
+     r        heliocentric distance
+     G        gravitational constant
+     M_sun    solar mass
+
+   Critical (sonic) point:
+     r_c = G*M_sun / (2 * c_s^2)
+     u(r_c) = c_s
+
+   Fundamentals: Only the unique transonic solution that passes through the critical point
+   is physical (subsonic near Sun, supersonic at large r).
+
+2. MASS CONSERVATION AND DENSITY SCALING
+   Type: Integral conservation law
+
+   4*pi*r^2 * rho * u = constant = M_dot
+
+   Variables:
+     rho      mass density
+     M_dot    solar mass-loss rate
+
+   Asymptotic form (u -> u_inf):
+     rho(r) = M_dot / (4*pi*r^2*u(r))  ~  r^(-2)
+     n(r)   ~  r^(-2)
+
+   Fundamentals: Geometric dilution of a nearly constant-speed radial outflow.
+
+3. PARKER SPIRAL MAGNETIC FIELD
+   Type: Frozen-in field solution (ideal MHD limit)
+
+   B_r = B_0 * (r_0 / r)^2
+   B_phi = -B_0 * (Omega_sun * r_0 / u_sw) * (r_0 / r) * sin(theta)
+
+   Spiral angle:
+     tan(phi_B) = B_phi / B_r = - (Omega_sun * r * sin(theta)) / u_sw
+
+   Variables:
+     B_r, B_phi   radial and azimuthal field components
+     Omega_sun    solar angular velocity
+     u_sw         solar-wind speed
+     theta        co-latitude
+
+   Asymptotic behavior:
+     |B_phi| / |B_r| -> infinity as r -> infinity
+     (field becomes predominantly azimuthal)
+
+   Fundamentals: Magnetic tension of the tightly wound spiral collimates heliosheath plasma.
+
+4. PRESSURE BALANCE (OUTER BOUNDARY)
+   Type: Boundary condition / scaling relation
+
+   Zeroth-order:
+     rho_sw(r) * u_sw^2  ~  P_ext
+     =>  R_TS/HP  ~  sqrt( rho_1 * u_sw^2 / P_ext )
+
+   Fuller form:
+     P_ram + P_th + P_mag + P_PUI
+       ~  P_ISM,th + P_ISM,mag + P_CR + P_ram,ISM
+
+   Variables:
+     P_ram        ram pressure
+     P_th         thermal pressure
+     P_mag        magnetic pressure
+     P_PUI        pick-up ion pressure
+     P_CR         cosmic-ray pressure
+     P_ISM,*      interstellar medium components
+
+   Fundamentals: Sets characteristic size of termination shock (~80-95 AU) and heliopause (~120 AU).
+
+5. RANKINE HALF-BODY SHAPE MODEL
+   Type: Kinematic potential-flow idealization
+
+   u / u_0 = -grad( q/r + z )
+
+   Variables:
+     u_0      uniform interstellar flow speed
+     q        point-source strength of solar wind
+
+   Fundamentals: Produces classic comet-like contact surface under assumptions of incompressible
+   flow and no magnetic field. Superseded by full MHD.
+
+6. FULL MHD SYSTEM (with source terms)
+   Type: Coupled partial differential equations
+
+   Continuity:
+     d(rho)/dt + div(rho * u) = 0
+
+   Momentum:
+     rho * (du/dt + u·grad(u)) = -grad(P) + J x B
+
+   Induction:
+     dB/dt = curl(u x B)
+
+   Energy:
+     dE/dt + div(F) = S
+
+   Variables:
+     J            current density
+     B            magnetic field
+     E, F         energy density and flux
+     S            source terms (pick-up ion heating, charge exchange)
+
+   Fundamentals: These equations, solved numerically with multi-fluid and neutral-plasma
+  interactions, generate modern croissant and deflated-bubble heliosphere models.
