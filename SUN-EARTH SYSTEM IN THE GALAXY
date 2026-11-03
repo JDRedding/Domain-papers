@@ -325,14 +325,12 @@ Its natural state space is the quasiperiodic torus
 
     Theta ∈ T^3.
 
-The evolution law acts directly on this relational
-state,
+The evolution law acts directly on this relational state,
 
     Theta(t + Δt) = Gamma(Theta(t)).
 
-Physical-space trajectories, helices, and
-corkscrew-like paths arise only after a coordinate
-embedding is chosen.
+Physical-space trajectories, helices, and corkscrew-like paths arise only after a 
+coordinate embedding is chosen.
 
 Thus:
 
@@ -346,8 +344,8 @@ Quasiperiodic Projection
         ->
 Helical Approximation
 
-with each downward step representing a reconstruction
-rather than a new physical degree of freedom.
+with each downward step representing a reconstruction rather than a new physical
+degree of freedom.
 
 Hierarchy (RDG):
   Persistent distinctions -> Relational state -> Torus flow
