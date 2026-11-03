@@ -1,0 +1,86 @@
+TORUS KNOT T(p, q) — EQUATIONS, NOTATION, AND FUNDAMENTALS
+
+PARAMETRIC REPRESENTATION (R = 1)
+  r(t) = 1 + rho * cos(q * t)
+  x(t) = r(t) * cos(p * t)
+  y(t) = r(t) * sin(p * t)
+  z(t) = rho * sin(q * t)
+  0 <= t <= 2*pi
+
+ASSOCIATED TORUS
+  (sqrt(x^2 + y^2) - 1)^2 + z^2 = rho^2
+
+PARAMETERS
+  t   : parameter
+  p   : longitudinal windings (around the axis)
+  q   : meridional windings (through the hole)
+  rho : minor radius
+  T(p,q) : torus knot or link
+
+KNOT vs LINK
+  d = gcd(p, q)
+  d = 1 => single knot
+  d > 1 => link with d components
+
+SYMMETRY
+  T(p, q) equivalent to T(q, p)
+  T(-p, q) and T(p, -q) are mirror images
+
+TRIVIAL CASES
+  |p| = 1 or |q| = 1 => unknot
+
+CROSSING NUMBER (coprime positive p, q)
+  c = min( p*(q - 1), q*(p - 1) )
+  If p < q then c = q*(p - 1)
+  If q < p then c = p*(q - 1)
+
+GENUS = UNKNOTTING NUMBER
+  g = u = (p - 1)*(q - 1) / 2
+
+ALEXANDER POLYNOMIAL
+  Delta(t) = (t^(p*q) - 1)*(t - 1)
+             / ((t^p - 1)*(t^q - 1))
+
+THE NINE KNOTS FROM THE 3x3 GRID
+(All have gcd(p, q) = 1)
+
+1. TREFOIL          T(2, 3)
+   c = 3    g = u = 1
+
+2. CINQUEFOIL       T(2, 5)
+   c = 5    g = u = 2
+
+3. SEPTAFOIL        T(2, 7)
+   c = 7    g = u = 3
+
+4.                 T(3, 4)
+   c = 8    g = u = 3
+
+5. NONAFOIL         T(2, 9)
+   c = 9    g = u = 4
+
+6.                 T(3, 5)
+   c = 10   g = u = 4
+
+7.                 T(3, 7)
+   c = 14   g = u = 6
+
+8.                 T(4, 5)
+   c = 15   g = u = 6
+
+9.                 T(5, 6)
+   c = 24   g = u = 10
+
+SUMMARY TABLE (matching the animation)
+Knot        p  q   c    g=u
+T(2,3)      2  3   3     1
+T(2,5)      2  5   5     2
+T(2,7)      2  7   7     3
+T(3,4)      3  4   8     3
+T(2,9)      2  9   9     4
+T(3,5)      3  5  10     4
+T(3,7)      3  7  14     6
+T(4,5)      4  5  15     6
+T(5,6)      5  6  24    10
+
+When p < q the axial view shows exactly c crossings.
