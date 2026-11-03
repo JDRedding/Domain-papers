@@ -1,21 +1,23 @@
 SUN-EARTH SYSTEM IN THE GALAXY
 First-order quasiperiodic formulation
+(with RDG relational reading)
 
 TYPES AND FUNDAMENTALS
-- Positions: vectors r(t) in a Galactic inertial frame
+- Conventional primary objects: trajectories r(t) in an ambient space
+- RDG primary objects: persistent relational cycles and their phases
 - Frequencies: angular frequencies (rad/time)
 - Periods: T = 2*pi / omega
 - Rationally independent frequencies => quasiperiodic motion
-  (n1*omega1 + n2*omega2 + ... + nk*omegak = 0 has only the trivial integer solution)
+  (n1*omega1 + ... + nk*omegak = 0 has only the trivial integer solution)
 - Scale separation: planetary motion is ~10^8 times faster than Galactic motion
 
 1. SUN'S GALACTIC ORBITAL MOTION (planar)
 T_gal = 2*pi * R_0 / v_odot
 
 Variables:
-  R_0     ~ 8 kpc                  (Sun's Galactocentric radius)
-  v_odot  ~ 230 km/s               (circular speed at the Sun)
-  T_gal   ~ 225-250 Myr            (galactic year; commonly ~230 Myr)
+  R_0     ~ 8 kpc
+  v_odot  ~ 230 km/s
+  T_gal   ~ 225-250 Myr (commonly ~230 Myr)
 
 Number of orbits completed by the Sun:
   N ~ t_odot / T_gal ~ 4.6 Gyr / 230 Myr ~ 20
@@ -32,7 +34,7 @@ Velocity and acceleration:
   a_z(t) = - omega_z^2 * z(t)
 
 Period and plane-crossing interval:
-  T_z = 2*pi / omega_z ~ 60-70 Myr   (often ~64 Myr)
+  T_z = 2*pi / omega_z ~ 60-70 Myr (often ~64 Myr)
   T_cross = T_z / 2 ~ 30-35 Myr
 
 Local density relation:
@@ -41,15 +43,13 @@ Local density relation:
 
 Vertical oscillations per galactic year: ~ 3-4
 
-3. COMPOSITE SUN TRAJECTORY
+3. COMPOSITE SUN TRAJECTORY (conventional)
 r_odot(t) = r_planar(t) + z(t) * k_hat
 
 Optional richer model with radial epicycles:
   R(t) = R_0 + B * cos(kappa * t + phi_R)
   r_odot(t) = R(t) * [cos(Omega_gal*t)*x_hat + sin(Omega_gal*t)*y_hat] + z(t)*z_hat
-
-  kappa = epicyclic frequency
-  (adds a fourth frequency)
+  (kappa adds a fourth frequency)
 
 4. PLANETARY ORBIT ABOUT THE SUN
 In heliocentric frame: nearly Keplerian ellipse
@@ -68,11 +68,7 @@ Axial advance per planetary orbit:
   (Earth: L ~ 48.5 AU)
 
 Pitch ratio (local scale-separation parameter):
-  P = v_odot / v_orb
-
-Geometric meaning:
-  P = L / (2*pi*a)
-  (carrier distance traveled per orbit divided by one planetary circumference)
+  P = v_odot / v_orb = L / (2*pi*a)
 
 Examples:
   Mercury:  P ~ 4.85
@@ -90,7 +86,7 @@ Interpretation of P:
   P >> 1    long corkscrew
 
 6. FULL QUASIPERIODIC TRAJECTORY (Galactic frame)
-Cleaner relative-coordinate decomposition:
+Relative-coordinate decomposition:
   r_E(t) = r_odot(t) + r_E/odot(t)
 
 or expanded:
@@ -124,10 +120,9 @@ Galactic crossing    ~ 32 Myr
 Galactic orbit       ~ 230 Myr
 Solar age            ~ 4.6 Gyr
 
-The huge spacing between these scales supports hierarchical and perturbative 
-descriptions.
+The huge spacing between these scales supports hierarchical and perturbative descriptions.
 
-9. LOCAL-TO-GLOBAL HIERARCHY
+9. LOCAL-TO-GLOBAL HIERARCHY (conventional reconstruction order)
 Heliocentric ellipse
         |
         v
@@ -151,16 +146,47 @@ Each level adds an additional degree of freedom:
   Curved helix + vertical      -> Quasiperiodic tube
   Quasiperiodic tube + angles  -> Torus flow
 
+10. RDG RELATIONAL READING (inverted ontology)
+Primary state is the relational phase point:
+  Theta(t) = (theta_p, theta_z, theta_g) in T^3
+
+The system is the persistent relational cycles themselves.
+Objects and trajectories are reconstructed from the phase evolution.
+
+RDG hierarchy (reconstruction order inverted):
+Persistent distinctions
+        |
+        v
+Relational phase state (Theta)
+        |
+        v
+Torus flow
+        |
+        v
+Quasiperiodic projection
+        |
+        v
+Helical approximation
+        |
+        v
+Coordinate reconstruction
+
+Operator form:
+  S(t) = (P, Z, G)
+  S(t + Delta t) = Gamma( S(t) )
+  where Gamma advances the three phases.
+
 NOTES
 - Pure helix requires idealized straight-line carrier motion.
 - Real trajectory is a helix-on-a-curved-and-oscillating path.
 - Frame dependence: closed ellipses (heliocentric) vs open corkscrews (Galactic).
 - Neither frame is privileged; both describe the same motion.
+- In the RDG reading the torus flow is fundamental; the helix is a derived projection.
 
 DISTINCTIONS
-Helix                      = local geometric approximation
-Quasiperiodic trajectory  = global physical trajectory
-Torus winding             = phase-space description
+Helix                      = local geometric approximation (derived)
+Quasiperiodic trajectory  = global physical-space projection (derived)
+Torus winding             = relational phase-space description (primary under RDG)
 Reference frame           = coordinate choice
 
 CONCEPTUAL SUMMARY
@@ -168,293 +194,16 @@ Planetary motion is locally well approximated by a helix,
 globally described by a quasiperiodic trajectory,
 and most naturally represented as a torus winding in phase space.
 
-Hierarchy:
+RDG compression:
+The Sun-Earth system is a hierarchy of persistent relational cycles
+characterized by planetary, vertical, and Galactic phases.
+The quasiperiodic torus is the natural relational state space.
+Helical and tube-like trajectories are coordinate-dependent projections
+of that deeper relational evolution.
+
+Hierarchy (conventional):
   Ellipse -> Helix -> Quasiperiodic Tube -> Torus Flow
 
-APPENDIX A
-Relational Dynamic Geometry / Relational Reformulation of the Sun-Earth System
-A.1 Purpose
-
-The main text describes the Sun-Earth system using conventional celestial-
-mechanical language:
-
-Objects
-  -> positions
-     -> trajectories
-        -> relations
-
-
-The Relational Dynamic Geometry reformulation reverses this ordering:
-
-Relations
-  -> distinctions
-     -> states
-        -> trajectories
-           -> coordinates
-
-
-The mathematical content remains largely unchanged; what changes is the 
-ontological status of the entities involved.
-
-In the conventional formulation, trajectories are fundamental and relations 
-are derived.
-
-In the Relational Dynamic Geometry formulation, relations are fundamental and 
-trajectories are derived reconstructions.
-
-A.2 Relational State as Primary
-
-Instead of beginning with position vectors
-
-rE(t),r⊙(t),\mathbf r_E(t), \qquad \mathbf r_\odot(t),
-
-Relational Dynamic Geometry begins with maintained relational cycles:
-
-Planetary cycle
-Vertical cycle
-Galactic cycle
-
-represented by the phase variables
-
-Θ(t)=(θp(t),θz(t),θg(t)).\Theta(t) = ( \theta_p(t), \theta_z(t), \theta_g(t) ).
-
-where
-
-θp(t)=ωpt+θp0,\theta_p(t) = \omega_p t+\theta_{p0}, θz(t)=ωzt+θz0,\theta_z(t) 
-= \omega_z t+\theta_{z0}, θg(t)=Ωgt+θg0.\theta_g(t) = \Omega_g t+\theta_{g0}.
-
-The state of the system is identified with this relational phase point.
-
-A.3 Quasiperiodic Torus as Natural State Space
-
-The conventional quasiperiodic description already contains the Relational Dynamic
-Geometry structure.
-
-The phase coordinates define
-
-Θ(t)∈T3,\Theta(t) \in \mathbb T^3,
-
-where
-
-T3=S1×S1×S1.\mathbb T^3 = S^1 \times S^1 \times S^1.
-
-For rationally independent frequencies,
-
-npωp+nzωz+ngΩg=0n_p\omega_p + n_z\omega_z + n_g\Omega_g = 0
-
-implies
-
-np=nz=ng=0.n_p=n_z=n_g=0.
-
-The flow therefore never closes and densely winds the torus.
-
-In conventional dynamics the torus is often viewed as a representation.
-
-In Relational Dynamic Geometry the torus is interpreted as the natural relational
-state space itself.
-
-A.4 Relational Evolution Operator
-
-The conventional formulation employs trajectories
-
-r(t).\mathbf r(t).
-
-The Relational Dynamic Geometry formulation instead employs state evolution:
-
-S(t+Δt)=Γ(S(t)),\mathcal S(t+\Delta t) = \Gamma \bigl( \mathcal S(t) \bigr),
-
-where
-
-S=(θp,θz,θg).\mathcal S = ( \theta_p, \theta_z, \theta_g ).
-
-or equivalently
-
-Γ:T3→T3.\Gamma : \mathbb T^3 \rightarrow \mathbb T^3.
-
-The operator Γ\Gamma advances the relational phases.
-
-No ambient coordinate space is required for the update.
-
-A.5 Distinctions as Individuating Structure
-
-The torus coordinates themselves are generated by persistent distinctions.
-
-Define
-
-D=(Dp,Dz,Dg),D = ( D_p, D_z, D_g ),
-
-where
-
-D_p = planetary distinction
-D_z = vertical distinction
-D_g = Galactic distinction
-
-
-These distinctions individuate the relational coordinates.
-
-Symbolically,
-
-D→Θ→S.D \rightarrow \Theta \rightarrow \mathcal S.
-
-Relational Dynamic Geometry therefore places distinction structure below state 
-structure.
-
-A.6 Coordinate Reconstruction
-
-The observed trajectory is recovered through an embedding map
-
-Φ:T3→R3.\Phi : \mathbb T^3 \rightarrow \mathbb R^3.
-
-The stages are:
-
-Θ⟼Φ(Θ)=r(t).\Theta \longmapsto \Phi(\Theta) = \mathbf r(t).
-
-The embedding reconstructs
-
-planetary orbits
-
-galactic motion
-
-vertical oscillation
-
-
-as an ordinary spatial trajectory.
-
-Thus:
-
-Torus state
-    -> Projection
-        -> Physical trajectory
-
-
-rather than
-
-Physical trajectory
-    -> Abstraction
-        -> Torus state
-
-A.7 Interpretation of the Helix
-
-In the conventional picture:
-
-Helix = object moving through space
-
-In the Relational Dynamic Geometry picture:
-
-Helix = projection of relational phase evolution
-
-The helix is therefore not fundamental.
-
-It is a coordinate-dependent rendering of an underlying relational state.
-
-A.8 Multi-Level Relational Dynamic Geometry Hierarchy
-
-The conventional hierarchy was
-
-Ellipse
-    ->
-Helix
-    ->
-Quasiperiodic Tube
-    ->
-Torus Flow
-
-The corresponding Relational Dynamic Geometry hierarchy is
-
-Persistent distinctions
-        ->
-Relational coordinates
-        ->
-Relational state
-        ->
-Torus flow
-        ->
-Embedding Φ
-        ->
-Quasiperiodic tube
-        ->
-Local helix
-        ->
-Local ellipse
-
-Each lower level is reconstructed from the level above it.
-
-A.9 SID Interpretation
-
-Using the SID triad:
-
-Structure
-T3\mathbb T^3
-
-together with the distinction structure
-
-D=(Dp,Dz,Dg).D=(D_p,D_z,D_g).
-Interaction
-
-Relations among the phase variables
-
-(θp,θz,θg).(\theta_p,\theta_z,\theta_g).
-Dynamics
-
-The torus evolution
-
-θ˙p=ωp,\dot{\theta}_p=\omega_p, θ˙z=ωz,\dot{\theta}_z=\omega_z, θ˙g=Ωg.\dot{\theta}_g=\Omega_g.
-
-or, more generally,
-
-Θ˙=F(Θ).\dot{\Theta} = F(\Theta).
-
-A.10 Relational Dynamic Geometry Conceptual Summary
-
-Conventional formulation:
-
-Objects move and generate relations.
-
-
-Relational Dynamic Geometry formulation:
-
-Relations persist and generate objects.
-
-
-The Sun-Earth system is therefore interpreted as a hierarchy of persistent 
-relational cycles:
-
-Planetary cycle
-
-Vertical Galactic cycle
-
-Galactic orbital cycle
-
-
-whose joint state evolves as a quasiperiodic flow on a relational torus.
-
-Observed ellipses, helices, and tube-like trajectories arise only after a 
-coordinate reconstruction is chosen.
-
-A.11 Relational Dynamic Geometry Compression
-Persistent distinctions
-        ->
-Relational state
-        ->
-Torus flow
-        ->
-Quasiperiodic projection
-        ->
-Helical approximation
-        ->
-Elliptical local view
-
-
-or equivalently:
-
-The fundamental object is not a trajectory.
-
-The fundamental object is a persistent relational
-state generated by planetary, vertical, and Galactic
-distinctions.
-
-This state evolves as a quasiperiodic torus flow.
-
-The familiar orbits, helices, and corkscrew paths
-are coordinate-dependent embeddings of that
-relational evolution.
+Hierarchy (RDG):
+  Persistent distinctions -> Relational state -> Torus flow
+  -> Quasiperiodic projection -> Helical approximation
