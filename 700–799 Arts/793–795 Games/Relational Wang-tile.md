@@ -2,6 +2,37 @@
 **Mathematical formulation**  
 (relation-first terrain system with Wang-tile observation)
 
+$$
+\begin{aligned}
+R_0 &\leftarrow\text{initial relational field},\\
+R_{t+1} &= D(R_t)
+&&\text{(S–I–D evolution)},\\
+{Tile}_t(i,j)
+&=
+\Omega\bigl(q_{i,j}(R_t)\bigr)
+&&\text{(observation / rendering)}.
+\end{aligned}
+$$
+
+### Ontological identity
+
+$$
+\text{World state}
+\;=\;
+R_t
+\qquad
+\text{(relational field)},
+$$
+
+$$
+\text{Visible geometry}
+\;=\;
+\Omega\circ q(R_t)
+\qquad
+\text{(emergent Wang tiles)}.
+$$
+
+
 All classical complete Wang-tile mathematics of size $c^4$ is recovered exactly as the observation map $\Omega$; the only change is that the relational field $R_t$ is taken as the primitive object and is allowed to evolve under the operator $D$.
 
 ### Fundamental objects
@@ -115,36 +146,3 @@ $$
 {Tile}(i,j)=
 \Omega\bigl(q_{i,j}(R_t)\bigr).
 $$
-
-### Full discrete-time system
-
-$$
-\begin{aligned}
-R_0 &\leftarrow\text{initial relational field},\\
-R_{t+1} &= D(R_t)
-&&\text{(S–I–D evolution)},\\
-{Tile}_t(i,j)
-&=
-\Omega\bigl(q_{i,j}(R_t)\bigr)
-&&\text{(observation / rendering)}.
-\end{aligned}
-$$
-
-### Ontological identity
-
-$$
-\text{World state}
-\;=\;
-R_t
-\qquad
-\text{(relational field)},
-$$
-
-$$
-\text{Visible geometry}
-\;=\;
-\Omega\circ q(R_t)
-\qquad
-\text{(emergent Wang tiles)}.
-$$
-
