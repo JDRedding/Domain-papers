@@ -1,4 +1,4 @@
-### Reliability Framework
+### Reliability Function Framework
 *Mathematical Equations and Notation*
 
 In the realtional formulation the fundamental object is a time-dependent relational state rather than a scalar lifetime. All quantities below are defined with respect to that state.
