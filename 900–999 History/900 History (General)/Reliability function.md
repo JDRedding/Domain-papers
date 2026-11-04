@@ -144,7 +144,7 @@ $$
 \Phi_{\mathrm{sys}}=1-\prod_i(1-\Phi_i)
 $$
 
-$k$-out-of-$n$ (closure survives if at least $k$ distinction paths remain; identical subsystems):
+$k$ -out-of- $n$ (closure survives if at least $k$ distinction paths remain; identical subsystems):
 
 $$
 \Phi_{\mathrm{sys}}=\sum_{i=k}^n\binom{n}{i}\Phi^i(1-\Phi)^{n-i}
