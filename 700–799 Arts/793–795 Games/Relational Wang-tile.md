@@ -42,7 +42,7 @@ Neighborhood counts (Moore neighborhood of radius 1):
 
 $$
 n_k(i,j) =
-\#\bigl\{\,(p,q)\in N(i,j):\tau(p,q)=k\,\bigr\},
+{N_o}\{\,(p,q)\in N(i,j):\tau(p,q)=k\,\},
 \qquad k\in S,
 $$
 
