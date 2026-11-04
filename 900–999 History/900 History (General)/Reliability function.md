@@ -145,6 +145,7 @@ $$
 $$
 
 $k$-out-of-$n$ (closure survives if at least $k$ distinction paths remain; identical subsystems):
+
 $$
 \Phi_{\mathrm{sys}}=\sum_{i=k}^n\binom{n}{i}\Phi^i(1-\Phi)^{n-i}
 $$
@@ -152,6 +153,7 @@ $$
 #### Parametric models
 
 Constant relational strain (exponential analogue):
+
 $$
 \Phi(t)=e^{-\chi t}
 $$
