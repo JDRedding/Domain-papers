@@ -53,8 +53,8 @@ This is the direct counterpart of the reliability function $R(t)=P(T>t)$.
 - $\chi(t)$: relational strain rate (strain operator density)
 - $\Psi(t)$: accumulated relational strain
 - $\rho_{\mathrm{loss}}(t)$: instantaneous coherence-loss density
-- $\operatorname{Deg}(t)$: relational degradation measure
-- $\operatorname{MPH}$: mean persistence horizon
+- ${Deg}(t)$: relational degradation measure
+- ${MPH}$: mean persistence horizon
 - $\Gamma$: coarse-graining operator (optional)
 - $N_i,\delta_i$: number of surviving relational states and observed closure failures (empirical estimators)
 
@@ -78,7 +78,7 @@ $$
 Relational degradation:
 
 $$
-\operatorname{Deg}(t)=1-\Phi(Q(t))
+{Deg}(t)=1-\Phi(Q(t))
 $$
 
 Instantaneous coherence-loss density:
@@ -114,7 +114,7 @@ $$
 Mean persistence horizon:
 
 $$
-\operatorname{MPH}=\int_0^\infty\Phi(Q(t))\,dt
+{MPH}=\int_0^\infty\Phi(Q(t))\,dt
 $$
 
 #### Compact form
@@ -127,7 +127,7 @@ Q&=(S,I,D)\\
 \Psi&=\int\chi\,dt\\
 \Phi&=e^{-\Psi}\\
 \frac{d\Phi}{dt}&=-\chi\Phi\\
-\operatorname{MPH}&=\int_0^\infty\Phi\,dt
+{MPH}&=\int_0^\infty\Phi\,dt
 \end{aligned}
 $$
 
