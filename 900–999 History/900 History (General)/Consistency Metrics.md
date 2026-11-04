@@ -58,7 +58,7 @@ $$
 $$
 
 where $\Phi_i\in\mathcal{S}$ is the signature of state $i$ and $\mathcal{S}$ is a metric (or divergence) space.  
-Examples of $\Sigma$: histogram, degree distribution, spectral density, topological invariant, feature embedding, probability measure, \ldots.
+Examples of $\Sigma$: histogram, degree distribution, spectral density, topological invariant, feature embedding, probability measure, $\ldots$.
 
 #### 3. Ensemble Archetype
 
