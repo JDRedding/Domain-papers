@@ -140,6 +140,7 @@ $$
 $$
 
 Parallel (relational redundancy):
+
 $$
 \Phi_{\mathrm{sys}}=1-\prod_i(1-\Phi_i)
 $$
