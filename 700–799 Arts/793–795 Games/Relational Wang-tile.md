@@ -112,7 +112,7 @@ $$
 The visible tile is the image of this integer under the sprite atlas lookup. Thus
 
 $$
-\operatorname{Tile}(i,j)=
+{Tile}(i,j)=
 \Omega\bigl(q_{i,j}(R_t)\bigr).
 $$
 
@@ -123,7 +123,7 @@ $$
 R_0 &\leftarrow\text{initial relational field},\\
 R_{t+1} &= D(R_t)
 &&\text{(S–I–D evolution)},\\
-\operatorname{Tile}_t(i,j)
+{Tile}_t(i,j)
 &=
 \Omega\bigl(q_{i,j}(R_t)\bigr)
 &&\text{(observation / rendering)}.
