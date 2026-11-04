@@ -171,4 +171,5 @@ Kaplan–Meier analogue:
 $$
 \hat{\Phi}(t)=\prod_{t_i\le t}\left(1-\frac{\delta_i}{N_i}\right)
 $$
+
 where $N_i$ is the number of surviving relational states just prior to the $i$-th observed closure failure and $\delta_i$ is the number of observed closure failures at that point.
