@@ -1,7 +1,7 @@
 ### Consistency Metrics
 Mathematical Formulation - Relational Coherence Functional
 
-Let $\{X_i\}_{i=1}^{K}$ be a family of states (frames, snapshots, configurations, records, \ldots).  
+Let $\{X_i\}_{i=1}^{K}$ be a family of states (frames, snapshots, configurations, records, $\ldots$).  
 RDG extracts a scalar coherence measure from this family by the following operators and equations. 
 
 $$
@@ -79,7 +79,7 @@ D_i = d(\Phi_i, A)
 $$
 
 where $d$ is any metric or divergence on the signature space  
-(L¹, L², Wasserstein, graph-edit, spectral, topological, \ldots).
+(L¹, L², Wasserstein, graph-edit, spectral, topological, $\ldots$).
 
 #### 5. Mean Relational Dispersion
 
