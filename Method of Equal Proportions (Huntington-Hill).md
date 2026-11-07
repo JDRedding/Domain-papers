@@ -133,6 +133,63 @@ Constraint:
 Σ_i a_i = H
 ```
 
+## Appendix: Historical Growth Rule
+
+Unlike the power-law, ratio, or ceiling rules, the historical practice of onject expansion prior is not governed by a fixed closed-form function
+
+$$
+H = F(P,p_{\min}).
+$$
+
+Instead, body size evolved through a sequence of choice increases.
+
+Let
+
+$$
+(H_t)_{t \ge 0}
+$$
+
+denote the sequence of House sizes at successive censuses. The operative principle may be represented abstractly as
+
+$$
+H_{t+1}
+\ge
+H_t + \Delta_t,
+$$
+
+where
+
+$$
+\Delta_t \in \mathbb{Z}_{>0}
+$$
+
+was chosen according to the apportionment results obtained at step $t$.
+
+More specifically, $\Delta_t$ was selected large enough that, under the apportionment method then in use, no component lost object relative to the previous allocation. Thus the value of $\Delta_t$ was not fixed by a formula, but by the outcome of a constraint applied to the allocation.
+
+Equivalently, the rule may be viewed as
+
+$$
+H_{t+1} =
+\min
+\{
+N \in \mathbb{Z}_{>0} 
+:
+C(N) \text{ is satisfied}
+\},
+$$
+
+where $C(N)$ denotes the preservation constraint imposed on the apportionment.
+
+Because the constraint depends on both the population data and the particular apportionment method employed, no unique closed-form expression for $H_t$ exists. Consequently, extending historical growth patterns do not determine a unique modern value of $H$. Different sequences
+
+$$
+\{\Delta_t\}
+$$
+
+produce different trajectories, all consistent with the same general growth principle.
+
+
 ## Appendix: Abstract Formulations of Integer-Sizing Rules
 
 Let
