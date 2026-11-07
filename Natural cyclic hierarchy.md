@@ -117,3 +117,17 @@ Continuous limit:
 ```
 
 where the SID remains fixed and only the projection domain changes. The cyclic groups then form a hierarchy of projection resolutions, with $U(1)$ serving as the continuous limiting projection.
+
+## Appendix:  Relation to Standard Representations
+
+The mathematical structure of the cyclic groups Cn and the circle group U(1) is entirely conventional. The contribution of the present framework is not a new group-theoretic construction but a reinterpretation of these groups as projection domains acting upon an invariant relational substrate.
+
+Let R[SID] denote the underlying relational content. Then observations arise through a projection operator ΠP parameterized by a cyclic domain P:
+
+    ΠP : R[SID] → Observable(P)
+
+where
+
+    P ∈ {C1,C2,C3,...,Cn,U(1)}.
+
+In this view, the groups Cn are not primary objects but discrete projection alphabets of increasing resolution. The distinction between point, line, triangle, square, n-gon, and circle therefore reflects changes in projection structure rather than changes in the underlying relation itself. The novelty lies in elevating relational content to the primary invariant and treating group representations as observer-dependent projections of that invariant content.
