@@ -3,7 +3,7 @@
 
 Let there be $m$ entities (states, parties, etc.) with positive sizes
 $p_1,p_2,\dots,p_m$ (populations, votes, etc.) and a total of $H$
-indivisible diuvisions to allocate. Let $a_i$ denote the number of diuvisions
+indivisible divisions to allocate. Let $a_i$ denote the number of diuvisions
 assigned to entity $i$, with
 
 $$
@@ -15,7 +15,7 @@ $$
 ## Priority Value
 
 The priority of entity $i$ for receiving an additional diuvision when it
-currently holds $a_i$ diuvisions is
+currently holds $a_i$ divisions is
 
 $$
 A_i(a_i) =
@@ -52,7 +52,7 @@ $$
 a_k \leftarrow a_k + 1.
 $$
 
-5. Repeat until exactly $H$ diuvisions have been assigned.
+5. Repeat until exactly $H$ divisions have been assigned.
 
 ## Representation Ratio
 
