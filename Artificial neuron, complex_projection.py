@@ -3,49 +3,247 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class ComplexProjectionNeuron(nn.Module):
+# ============================================================
+# Activations
+# ============================================================
+
+def complex_identity(z):
+    return z
+
+
+def complex_relu(z):
+    return torch.relu(z.real) + 1j * torch.relu(z.imag)
+
+
+def mod_relu(z, bias=0.0):
+    r = torch.abs(z)
+    scale = torch.relu(r + bias) / (r + 1e-8)
+    return scale * z
+
+
+# ============================================================
+# Projection Generators
+# ============================================================
+
+class CircleProjection(nn.Module):
     """
-    Trainable complex projection neuron.
-    
-    mode='circle'  : continuous phases on U(1) via learnable angles θ
-    mode='square'  : discrete phases on C4 = {1, i, -1, -i}
-                     (Gumbel-softmax relaxation during training)
+    p_i = exp(i theta_i)
+
+    Projection domain:
+    P_circle = U(1)
     """
-    def __init__(self, in_features: int, mode: str = "circle"):
+
+    def __init__(self, n):
         super().__init__()
-        assert mode in ("circle", "square")
-        self.mode = mode
-        self.in_features = in_features
 
-        # Complex weights and bias
-        self.weight = nn.Parameter(torch.randn(in_features, dtype=torch.complex64))
-        self.bias   = nn.Parameter(torch.randn(1, dtype=torch.complex64))
+        self.theta = nn.Parameter(torch.zeros(n))
 
-        if mode == "circle":
-            self.theta_w = nn.Parameter(torch.zeros(in_features))
-            self.theta_b = nn.Parameter(torch.zeros(1))
-        else:
-            self.logits_w = nn.Parameter(torch.zeros(in_features, 4))
-            self.logits_b = nn.Parameter(torch.zeros(1, 4))
-            # Register roots once (avoids repeated allocation)
-            self.register_buffer(
-                "roots",
-                torch.tensor([1, 1j, -1, -1j], dtype=torch.complex64)
+    def forward(self):
+        return torch.exp(1j * self.theta)
+
+
+class SquareProjection(nn.Module):
+    """
+    p_i = i^k
+
+    Projection domain:
+    P_square = {1,i,-1,-i}
+    """
+
+    def __init__(self, n):
+        super().__init__()
+
+        self.logits = nn.Parameter(torch.zeros(n, 4))
+
+        self.register_buffer(
+            "roots",
+            torch.tensor(
+                [1, 1j, -1, -1j],
+                dtype=torch.complex64
             )
+        )
 
-    def _square_phases(self, logits: torch.Tensor, hard: bool = False, tau: float = 1.0):
-        soft = F.gumbel_softmax(logits, tau=tau, hard=hard, dim=-1)
+    def forward(self, tau=1.0, training=True):
+
+        soft = F.gumbel_softmax(
+            self.logits,
+            tau=tau,
+            hard=not training,
+            dim=-1
+        )
+
         return (soft * self.roots).sum(dim=-1)
 
-    def forward(self, x: torch.Tensor, tau: float = 1.0):
-        if self.mode == "circle":
-            phase_w = torch.exp(1j * self.theta_w)
-            phase_b = torch.exp(1j * self.theta_b)
-        else:
-            hard = not self.training
-            phase_w = self._square_phases(self.logits_w, hard=hard, tau=tau)
-            phase_b = self._square_phases(self.logits_b, hard=hard, tau=tau)
 
+# ============================================================
+# Neuron = (S,I,D)
+# ============================================================
+
+class ProjectionNeuron(nn.Module):
+    """
+    Formal neuron
+
+    S = (w,b)
+
+    I(x,S,p)
+      = Σ p_i w_i x_i + p_b b
+
+    D(z)
+      = activation(z)
+    """
+
+    def __init__(
+        self,
+        in_features,
+        activation=complex_identity
+    ):
+        super().__init__()
+
+        self.weight = nn.Parameter(
+            torch.randn(
+                in_features,
+                dtype=torch.complex64
+            )
+        )
+
+        self.bias = nn.Parameter(
+            torch.randn(
+                1,
+                dtype=torch.complex64
+            )
+        )
+
+        self.activation = activation
+
+    def forward(
+        self,
+        x,
+        phase_w,
+        phase_b
+    ):
         z = (phase_w * self.weight * x).sum(dim=-1)
+
         z = z + phase_b * self.bias.squeeze()
-        return z
+
+        return self.activation(z)
+
+
+# ============================================================
+# Circle Neuron Wrapper
+# ============================================================
+
+class CircleNeuron(nn.Module):
+
+    def __init__(
+        self,
+        in_features,
+        activation=complex_identity
+    ):
+        super().__init__()
+
+        self.proj_w = CircleProjection(in_features)
+        self.proj_b = CircleProjection(1)
+
+        self.neuron = ProjectionNeuron(
+            in_features,
+            activation
+        )
+
+    def forward(self, x):
+
+        phase_w = self.proj_w()
+
+        phase_b = self.proj_b()[0]
+
+        return self.neuron(
+            x,
+            phase_w,
+            phase_b
+        )
+
+
+# ============================================================
+# Square Neuron Wrapper
+# ============================================================
+
+class SquareNeuron(nn.Module):
+
+    def __init__(
+        self,
+        in_features,
+        activation=complex_identity
+    ):
+        super().__init__()
+
+        self.proj_w = SquareProjection(in_features)
+        self.proj_b = SquareProjection(1)
+
+        self.neuron = ProjectionNeuron(
+            in_features,
+            activation
+        )
+
+    def forward(
+        self,
+        x,
+        tau=1.0
+    ):
+
+        phase_w = self.proj_w(
+            tau=tau,
+            training=self.training
+        )
+
+        phase_b = self.proj_b(
+            tau=tau,
+            training=self.training
+        )[0]
+
+        return self.neuron(
+            x,
+            phase_w,
+            phase_b
+        )
+
+
+# ============================================================
+# Demo
+# ============================================================
+
+if __name__ == "__main__":
+
+    batch_size = 32
+    in_features = 16
+
+    x = torch.randn(
+        batch_size,
+        in_features
+    )
+
+    circle = CircleNeuron(
+        in_features,
+        activation=complex_relu
+    )
+
+    square = SquareNeuron(
+        in_features,
+        activation=complex_relu
+    )
+
+    y_circle = circle(x)
+
+    square.train()
+    y_square_train = square(
+        x,
+        tau=1.0
+    )
+
+    square.eval()
+    y_square_eval = square(
+        x,
+        tau=0.1
+    )
+
+    print("Circle:", y_circle.shape)
+    print("Square train:", y_square_train.shape)
+    print("Square eval:", y_square_eval.shape)
