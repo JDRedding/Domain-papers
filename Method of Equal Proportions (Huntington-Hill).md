@@ -3,7 +3,7 @@
 
 Let there be $m$ entities (states, parties, etc.) with positive sizes
 $p_1,p_2,\dots,p_m$ (populations, votes, etc.) and a total of $H$
-indivisible divisions to allocate. Let $a_i$ denote the number of diuvisions
+indivisible divisions to allocate. Let $a_i$ denote the number of divisions
 assigned to entity $i$, with
 
 $$
@@ -14,7 +14,7 @@ $$
 
 ## Priority Value
 
-The priority of entity $i$ for receiving an additional diuvision when it
+The priority of entity $i$ for receiving an additional divisions when it
 currently holds $a_i$ divisions is
 
 $$
@@ -22,8 +22,8 @@ A_i(a_i) =
 \frac{p_i}{\sqrt{a_i(a_i+1)}}.
 $$
 
-If every entity is guaranteed at least one diuvision, initialize with
-$a_i=1$ and allocate the remaining $H-m$ diuvisions. Otherwise, an
+If every entity is guaranteed at least one divisions , initialize with
+$a_i=1$ and allocate the remaining $H-m$ divisions . Otherwise, an
 alternative initial divisor or eligibility threshold must be specified.
 
 ## Sequential Allocation Procedure
@@ -38,7 +38,7 @@ $$
 
    compute all priority values $A_i(a_i)$.
 
-3. Assign the next diuvision to the entity
+3. Assign the next divisions  to the entity
 
 $$
 k   =
@@ -63,14 +63,14 @@ r_i=
 \frac{p_i}{a_i},
 $$
 
-interpreted as the population (or votes) represented per diuvision.
+interpreted as the population (or votes) represented per divisions .
 
 ## Characterizing Property
 
 The Huntington-Hill allocation seeks to equalize representation ratios
 across entities. It is characterized by the use of the geometric-mean
 divisor and is equivalent to selecting the allocation for which no
-single-diuvision transfer improves proportional representation according to
+single-divisions  transfer improves proportional representation according to
 the equal-proportions criterion.
 
 For two entities $i$ and $j$, the relative disparity in
@@ -114,7 +114,7 @@ highest-averages family.
 Population / Vote Size:
 p_i
 
-diuvision Allocation:
+divisions  Allocation:
 a_i
 
 Representation Ratio:
