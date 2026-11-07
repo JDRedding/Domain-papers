@@ -1,7 +1,7 @@
 # **Natural Cyclic Hierarchy**
-The present framework introduces an invariant relational layer R[SID] that is conceptually prior to any cyclic representation. Classical representation theory begins with a group and derives representations. The present approach begins with relational content and treats groups as projection domains through which that content becomes observable. Thus cyclic groups are reinterpreted not as primary structures but as projection alphabets of varying resolution.
+The present framework introduces an invariant relational layer R[SID] that is conceptually prior to any cyclic representation. Classical representation theory begins with a group and derives representations. The present approach begins with relational content and treats groups as projection domains through which that content becomes observable. 
 
-The same projection operator accepts any of these generators. A single `CyclicProjection(n)` module that emits the roots of unity $\zeta_n^k$ over $n$ logits covers every finite case, while the circle remains the continuous limit. This provides a uniform experimental axis ranging from the coarsest discrete projection (a point) to the continuous circle.
+The cyclic groups are reinterpreted not as primary structures but as projection alphabets of varying resolution. The same projection operator accepts any of these generators. A single `CyclicProjection(n)` module that emits the roots of unity $\zeta_n^k$ over $n$ logits covers every finite case, while the circle remains the continuous limit. This provides a uniform experimental axis ranging from the coarsest discrete projection (a point) to the continuous circle.
 
 $$
 \begin{aligned}
