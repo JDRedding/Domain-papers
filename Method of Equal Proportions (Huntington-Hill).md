@@ -133,6 +133,205 @@ Constraint:
 Σ_i a_i = H
 ```
 
+## Appendix: SID Decomposition
+
+Let
+
+$$
+p=(p_1,\ldots,p_m)
+$$
+
+denote the population vector, and let
+
+$$
+H\in\mathbb{Z}_{>0}
+$$
+
+be the prescribed total number of divisions to allocate.
+
+The Huntington-Hill method may be decomposed into a SID form consisting of Structure, Interaction, and Dynamics.
+
+### SID
+
+```text
+SID
+
+S = (p1,...,pm ; H)
+
+I = A_i(ai)
+      = pi / √(ai(ai+1))
+
+D = O_H
+      = {a(0),a(1),...,a(H)}
+
+a(t+1) = a(t) + e_argmax_i A_i(ai(t))
+
+Σ ai = H
+```
+
+### Structure
+
+The structure component is
+
+$$
+S=(p,H),
+$$
+
+where
+
+$$
+p=(p_1,\ldots,p_m)
+$$
+
+is the population vector and
+
+$$
+H
+$$
+
+is the fixed total number of divisions.
+
+The allocation vector is
+
+$$
+a=(a_1,\ldots,a_m),
+$$
+
+with
+
+$$
+a_i\in\mathbb Z_{\ge0},
+\qquad
+\sum_{i=1}^{m} a_i = H.
+$$
+
+### Interaction
+
+The interaction component is the Huntington-Hill priority function
+
+$$
+A_i(a_i) =
+\frac{p_i}
+{\sqrt{a_i(a_i+1)}}.
+$$
+
+The next division is assigned according to
+
+$$
+k =
+*{arg\,max}_{1\le i\le m}
+A_i(a_i).
+$$
+
+Equivalently,
+
+$$
+k =
+*{arg\,max}_{1\le i\le m}
+\frac{p_i}
+{\sqrt{a_i(a_i+1)}}.
+$$
+
+### Dynamics
+
+The dynamics component is the sequential allocation orbit
+
+$$
+O_H =
+\{
+a(0),
+a(1),
+\ldots,
+a(H)
+\}.
+$$
+
+At each allocation step,
+
+$$
+a(t+1) =
+a(t) +
+e_k,
+$$
+
+where
+
+$$
+k =
+*{arg\,max}_{i}
+A_i(a_i(t))
+$$
+
+and
+
+$$
+e_k =
+(0,\ldots,0,1,0,\ldots,0)
+$$
+
+is the standard basis vector corresponding to entity $k$.
+
+Thus the apportionment is generated as a discrete priority orbit through allocation space until
+
+$$
+\sum_{i=1}^{m} a_i = H.
+$$
+
+### Compact Mathematical Form
+
+```text
+S = (p,H)
+I = pi / √(ai(ai+1))
+D = O_H
+
+O_H = {a(0),a(1),...,a(H)}
+
+a(t+1) = a(t) + e_argmax_i [ pi / √(ai(ai+1)) ]
+
+Σ ai = H
+```
+
+### Position Within the Divisor-Method Family
+
+More generally, highest-averages methods may be written as
+
+$$
+A_i(a_i) =
+\frac{p_i}{d(a_i)},
+$$
+
+where $d(a)$ is a divisor function.
+
+```text
+Jefferson / D'Hondt:
+d(a) = a + 1
+
+Webster / Sainte-Laguë:
+d(a) = a + 1/2
+
+Huntington-Hill:
+d(a) = √(a(a+1))
+```
+
+Hence the generalized SID form becomes
+
+```text
+SID
+
+S = (p,H,d)
+
+I = pi / d(ai)
+
+D = O_d
+```
+
+with Huntington-Hill obtained by choosing
+
+$$
+d(a) =
+\sqrt{a(a+1)}.
+$$
+
 ## Appendix: Historical Growth Rule
 
 Unlike the power-law, ratio, or ceiling rules, the historical practice of object expansion prior is not governed by a fixed closed-form function
