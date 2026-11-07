@@ -1,3 +1,15 @@
+"""
+USAGE
+# Continuous
+net = ComplexProjectionNeuron(16, mode="circle")
+
+# Discrete (trainable via Gumbel-softmax)
+net = ComplexProjectionNeuron(16, mode="square")
+
+x = torch.randn(32, 16)
+z = net(x)          # complex-valued output
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
