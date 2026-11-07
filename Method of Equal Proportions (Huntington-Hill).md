@@ -279,7 +279,7 @@ F :
 D \rightarrow \mathbb{Z}_{>0},
 $$
 
-defined on an appropriate domain \(D\), such that
+defined on an appropriate domain $D$, such that
 
 $$
 H = F(P,p_{\min})
@@ -295,7 +295,7 @@ The specific rules above are instances of this general construction.
 
 ### Subsequent Decomposition
 
-Once \(H\) has been determined, one may seek a decomposition
+Once $H$ has been determined, one may seek a decomposition
 
 $$
 H =
@@ -308,4 +308,70 @@ $$
 a_i \in \mathbb{Z}_{\ge 0}.
 $$
 
-The determination of \(H\) and the decomposition of \(H\) are distinct problems. The definition of \(F\) concerns only the former.
+The determination of $H$ and the decomposition of $H$ are distinct problems. The definition of $F$ concerns only the former.
+
+## Appendix: On the Number of Division-Size Rules
+
+The set of possible house-size rules is not finite. Formally, any rule that maps admissible input data to a positive integer may be written as
+
+$$
+H = F(x_1,\dots,x_n),
+$$
+
+where
+
+$$
+F : D \rightarrow \mathbb{Z}_{>0}
+$$
+
+for some domain $D$ of input variables.
+
+Consequently, the collection of mathematically possible sizing rules is unbounded. Any admissible function satisfying the desired constraints may serve as a rule for determining $H$.
+
+The literature, however, does not analyze an unlimited number of such functions. Instead, discussion is concentrated on a small number of recurring families:
+
+- Power-law rules,
+- Ratio-based rules,
+- Fixed-size rules,
+- Fixed-increment rules,
+- Constraint or ceiling rules,
+- Optimization rules,
+- Piecewise rules,
+- Historical-growth rules.
+
+Many named proposals are special cases of one of these broader families. For example, different parameter choices within a power-law family
+
+$$
+H = \{round}(cP^{e})
+$$
+
+produce distinct rules while retaining the same functional form.
+
+Similarly, different choices of a target ratio produce distinct members of
+
+$$
+H = \{round}\!\left(\frac{P}{R}\right).
+$$
+
+Thus the number of *named* rules discussed in the literature is relatively small, whereas the number of mathematically admissible rules is unlimited.
+
+This distinction may be expressed schematically as
+
+```text
+Mathematically Possible Rules
+    └── Infinite Function Space F
+
+Common Rule Families
+    ├── Power Laws
+    ├── Ratios
+    ├── Fixed Constants
+    ├── Increments
+    ├── Ceilings
+    ├── Optimizations
+    └── Piecewise Maps
+
+Named Proposals
+    └── Finite Set of Particular Choices
+```
+
+Accordingly, no definitive catalog of all possible sizing rules exists. What exists instead is a small collection of commonly discussed families, each containing many possible parameterizations and special cases.
