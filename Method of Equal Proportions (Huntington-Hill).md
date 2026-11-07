@@ -693,7 +693,7 @@ Named Proposals
 
 Accordingly, no definitive catalog of all possible sizing rules exists. What exists instead is a small collection of commonly discussed families, each containing many possible parameterizations and special cases.
 
-## Appendix: Current United States System
+## Appendix: United States System
 
 The contemporary United States House of Representatives employs two distinct procedures:
 
@@ -844,4 +844,169 @@ Current System:
 ```
 
 The Huntington-Hill method addresses only the allocation problem. The determination of the House size $H$ is a separate question governed by an independent rule.
+
+### Preservation Constraints
+
+Historically, increases in House size were often justified by preservation constraints imposed on the resulting apportionment. Such constraints may be expressed mathematically.
+
+#### No State Loses a Seat
+
+Let
+
+$$
+a_i^{(t)}
+$$
+
+denote the allocation of state $i$ under the previous apportionment and let
+
+$$
+a_i^{(t+1)}
+$$
+
+denote the allocation under the proposed apportionment.
+
+The requirement that no state lose a representative is
+
+$$
+a_i^{(t+1)}
+\ge
+a_i^{(t)}
+\qquad
+\forall i.
+$$
+
+Equivalently,
+
+$$
+\min_i
+\left(
+a_i^{(t+1)} -
+a_i^{(t)}
+\right)
+\ge
+0.
+$$
+
+The corresponding House-size rule may be written as
+
+$$
+H_{t+1} =
+\min
+\{
+N \in \mathbb Z_{>0}
+:
+a_i(N)
+\ge
+a_i^{(t)}
+\;\forall i
+\},
+$$
+
+where
+
+$$
+a_i(N)
+$$
+
+denotes the apportionment obtained when the House size equals $N$.
+
+Thus $H_{t+1}$ is the smallest House size for which no state loses a representative.
+
+#### No Region Loses Influence
+
+Let
+
+$$
+R
+$$
+
+denote a region consisting of a collection of states.
+
+Define regional influence by the total number of seats:
+
+$$
+I_R =
+\sum_{i \in R}
+a_i.
+$$
+
+The requirement that no region lose influence is
+
+$$
+I_R^{(t+1)}
+\ge
+I_R^{(t)}
+\qquad
+\forall R.
+$$
+
+Equivalently,
+
+$$
+\sum_{i\in R}
+a_i^{(t+1)}
+\ge
+\sum_{i\in R}
+a_i^{(t)}
+\qquad
+\forall R.
+$$
+
+The corresponding House-size rule may be written as
+
+$$
+H_{t+1} =
+\min
+\{
+N \in \mathbb Z_{>0}
+:
+I_R(N)
+\ge
+I_R^{(t)}
+\;\forall R
+\}.
+$$
+
+Thus $H_{t+1}$ is the smallest House size for which every region maintains at least its previous level of representation.
+
+### Constraint-Based House Sizing
+
+More generally, let
+
+$$
+C(N)
+$$
+
+denote a preservation constraint applied to the apportionment produced by House size $N$.
+
+Then the historical growth principle may be expressed as
+
+$$
+H_{t+1} =
+\min
+\{
+N \in \mathbb Z_{>0}
+:
+C(N)
+\text{ is satisfied}
+\}.
+$$
+
+Examples of such constraints include:
+
+```text
+No State Loses a Seat:
+    a_i(t+1) ≥ a_i(t)
+
+No Region Loses Influence:
+    I_R(t+1) ≥ I_R(t)
+
+Minimum Representation Ratio:
+    r_i ≤ R_max
+
+Maximum District Population:
+    p_i / a_i ≤ T
+```
+
+Under this viewpoint, historical House growth is naturally interpreted as a constraint-satisfaction process rather than a closed-form sizing formula.
 
