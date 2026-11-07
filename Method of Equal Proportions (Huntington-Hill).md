@@ -23,7 +23,7 @@ A_i(a_i) =
 $$
 
 If every entity is guaranteed at least one division, initialize with
-$a_i=1$ and allocate the remaining $H-m$ divisions Otherwise, an
+$a_i=1$ and allocate the remaining $H-m$ divisions. Otherwise, an
 alternative initial divisor or eligibility threshold must be specified.
 
 ## Sequential Allocation Procedure
