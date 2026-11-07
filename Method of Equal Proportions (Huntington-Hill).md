@@ -135,7 +135,7 @@ Constraint:
 
 ## Appendix: Historical Growth Rule
 
-Unlike the power-law, ratio, or ceiling rules, the historical practice of onject expansion prior is not governed by a fixed closed-form function
+Unlike the power-law, ratio, or ceiling rules, the historical practice of object expansion prior is not governed by a fixed closed-form function
 
 $$
 H = F(P,p_{\min}).
