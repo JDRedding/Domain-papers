@@ -67,14 +67,9 @@ interpreted as the population represented per divisions.
 
 ## Characterizing Property
 
-The Huntington-Hill allocation seeks to equalize representation ratios
-across entities. It is characterized by the use of the geometric-mean
-divisor and is equivalent to selecting the allocation for which no
-single-divisions transfer improves proportional representation according to
-the equal-proportions criterion.
+The Huntington-Hill allocation seeks to equalize representation ratios across entities. It is characterized by the use of the geometric-mean divisor and is equivalent to selecting the allocation for which no single-divisions transfer improves proportional representation according to the equal-proportions criterion.
 
-For two entities $i$ and $j$, the relative disparity in
-representation may be expressed as
+For two entities $i$ and $j$, the relative disparity in representation may be expressed as
 
 $$
 \left|
@@ -132,6 +127,11 @@ a_k <- a_k + 1
 Constraint:
 Σ_i a_i = H
 ```
+
+## Minor Practical Notes
+- When $a_i=0$ is permitted, the priority is undefined; a separate initial eligibility threshold or divisor is required (as indicated).
+- Ties in priority values are rare with real population data but must be broken by a predetermined rule.
+- The method is object-monotone and item-monotone, and it is the unique method that simultaneously equalizes relative differences in both items-per-object and objects-per-item.
 
 ## Appendix: SID Decomposition
 
