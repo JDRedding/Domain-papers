@@ -22,8 +22,8 @@ A_i(a_i) =
 \frac{p_i}{\sqrt{a_i(a_i+1)}}.
 $$
 
-If every entity is guaranteed at least one divisions , initialize with
-$a_i=1$ and allocate the remaining $H-m$ divisions . Otherwise, an
+If every entity is guaranteed at least one division, initialize with
+$a_i=1$ and allocate the remaining $H-m$ divisions Otherwise, an
 alternative initial divisor or eligibility threshold must be specified.
 
 ## Sequential Allocation Procedure
