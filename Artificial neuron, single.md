@@ -8,26 +8,31 @@ $$
 ### Components
 
 **State** (learnable parameters)
+
 $$
 S = (w, b)
 $$
 
 **Integration function** (weighted sum + bias)
+
 $$
 I(x, S) = \sum_i w_i x_i + b
 $$
 
 **Decision / activation function**
+
 $$
 D(z) = \sigma(z)
 $$
 
 **Forward pass**
+
 $$
 z = I(x, S), \qquad \hat{y} = D(z) = \sigma\bigl(I(x, S)\bigr)
 $$
 
 **Training objective** (error)
+
 $$
 E(\hat{y}, y) = L
 $$
@@ -35,6 +40,7 @@ $$
 The error $E$ is used to update the state $S$ (i.e., the weights $w$ and bias $b$) so that future outputs better match the targets.
 
 ### Expanded standard form
+
 $$
 \begin{aligned}
 z &= \sum_i w_i x_i + b \\
