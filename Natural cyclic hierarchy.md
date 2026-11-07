@@ -118,7 +118,7 @@ Continuous limit:
 
 where the SID remains fixed and only the projection domain changes. The cyclic groups then form a hierarchy of projection resolutions, with $U(1)$ serving as the continuous limiting projection.
 
-## Appendix:  Relation to Standard Representations
+## Appendix: Relation to Standard Representations
 
 The mathematical structure of the cyclic groups Cn and the circle group U(1) is entirely conventional. The contribution of the present framework is not a new group-theoretic construction but a reinterpretation of these groups as projection domains acting upon an invariant relational substrate.
 
@@ -131,3 +131,10 @@ where
     P ∈ {C1,C2,C3,...,Cn,U(1)}.
 
 In this view, the groups Cn are not primary objects but discrete projection alphabets of increasing resolution. The distinction between point, line, triangle, square, n-gon, and circle therefore reflects changes in projection structure rather than changes in the underlying relation itself. The novelty lies in elevating relational content to the primary invariant and treating group representations as observer-dependent projections of that invariant content.
+
+## Appendix: Useful formal and operational consequences
+
+- **Uniform module.** A single `CyclicProjection(n)` that emits the roots $\zeta_n^k$ over $n$ logits (or complex channels) covers every finite case; the circle is recovered either by a continuous phase variable or by taking $n$ large.
+- **Lattice of refinements.** Because inclusion is governed by divisibility, one can move systematically between coarser and finer discrete projections ($C_2 \subset C_4 \subset C_8 \subset \cdots$, or $C_3 \subset C_6 \subset C_12 \subset \cdots$) without leaving the same family.
+- **Representation-theoretic reading.** Each projection $\Pi_{C_n}$ is equivalent to retaining only the characters of order dividing $n$. This is exactly the discrete Fourier basis on the circle, so the hierarchy is also a hierarchy of frequency cut-offs.
+- **Limit statements.** Any quantity that is continuous in the phase variable and continuous under weak-* convergence of measures on the circle will have its $C_n$-projections converging to the $U(1)$-projection. This gives a precise sense in which *polygon approximates circle.*
