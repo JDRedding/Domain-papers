@@ -49,7 +49,7 @@ L(w,b) &= \frac1n\sum_i \ell(\hat{y}_i, y_i)
 \end{aligned}
 $$
 
-Your notation cleanly separates the neuron into:
+The notation cleanly separates the neuron into:
 - what is stored ($S$),
 - how inputs are combined ($I$),
 - how the result is turned into an output ($D$),
