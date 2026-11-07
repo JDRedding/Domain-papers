@@ -3,14 +3,36 @@
 
 Let there be $m$ entities (states, parties, etc.) with positive sizes
 $p_1,p_2,\dots,p_m$ (populations, votes, etc.) and a total of $H$
-indivisible divisions to allocate. Let $a_i$ denote the number of divisions
-assigned to entity $i$, with
+indivisible divisions to allocate. 
+
+### Total Population
+
+$$
+P=\sum_{i=1}^{m}p_i.
+$$
+
+### Ideal Quota
+
+$$
+q_i=\frac{p_i}{P}H.
+$$
+
+### Geometric-Mean Threshold
+
+Let $a_i$ denote the number of divisions assigned to entity $i$, with
 
 $$
 \sum_{i=1}^{m} a_i = H,
 \qquad
 a_i \in \mathbb{Z}_{\ge 0}.
 $$
+
+An entity is rounded from \(a_i\) to \(a_i+1\) when
+
+$$
+q_i > \sqrt{a_i(a_i+1)}.
+$$
+
 
 ## Priority Value
 
