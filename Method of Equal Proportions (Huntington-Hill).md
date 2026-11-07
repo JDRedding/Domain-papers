@@ -149,7 +149,7 @@ $$
 (H_t)_{t \ge 0}
 $$
 
-denote the sequence of House sizes at successive censuses. The operative principle may be represented abstractly as
+denote the sequence of sizes at successive censuses. The operative principle may be represented abstractly as
 
 $$
 H_{t+1}
