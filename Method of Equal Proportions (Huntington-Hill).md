@@ -299,6 +299,136 @@ $$
 d(a) = \sqrt{a(a + 1)}.
 $$
 
+
+## Appendix: Generalized Resource-Allocation Interpretation
+
+Although developed for political apportionment, the Huntington-Hill method may be interpreted more generally as a procedure for allocating a fixed number of indivisible units among competing entities in proportion to an underlying measure of size.
+
+Let
+
+$$
+p_i > 0
+$$
+
+denote a positive measure associated with entity $i$. Depending on the application, $p_i$ may represent population, votes, membership, demand, workload, revenue, enrollment, consumption, or any other quantity used to determine proportional allocation.
+
+Let
+
+$$
+a_i \in \mathbb Z_{\ge 0}
+$$
+
+denote the number of indivisible units allocated to entity $i$, subject to
+
+$$
+\sum_{i=1}^{m} a_i = H,
+$$
+
+where
+
+$$
+H \in \mathbb Z_{>0}
+$$
+
+is the fixed total number of units available.
+
+The allocation procedure is independent of the interpretation assigned to $p_i$ and $a_i$.
+
+### Generalized Allocation Form
+
+```text
+Measure:
+p_i
+
+Allocation:
+a_i
+
+Ratio:
+r_i = p_i / a_i
+
+Priority Function:
+A_i(a_i) = p_i / √(a_i(a_i+1))
+
+Allocation Rule:
+k = argmax_i A_i(a_i)
+
+Update:
+a_k <- a_k + 1
+
+Constraint:
+Σ_i a_i = H
+```
+
+The priority assigned to entity $i$ is
+
+$$
+A_i(a_i) =
+\frac{p_i}
+{\sqrt{a_i(a_i+1)}}.
+$$
+
+At each step, the next unit is assigned to the entity
+
+$$
+k = *{arg\,max}_{1 \le i \le m}
+A_i(a_i),
+$$
+
+after which
+
+$$
+a_k
+\leftarrow
+a_k+1.
+$$
+
+The process continues until
+
+$$
+\sum_{i=1}^{m} a_i = H.
+$$
+
+### Interpretation
+
+Under this formulation, Huntington-Hill is not restricted to legislative apportionment. It may be applied whenever a finite collection of indivisible units must be distributed proportionally among entities of differing size.
+
+Examples include:
+
+| Measure $p_i$ | Allocation $a_i$ |
+|-----------------|--------------------|
+| Population | Representatives |
+| Votes | Legislative Seats |
+| Students | Scholarships |
+| Departments | Budget Positions |
+| Workload | Servers |
+| Customers | Service Agents |
+| Regions | Grant Allocations |
+| Warehouses | Distribution Vehicles |
+
+The mathematical procedure remains unchanged. Only the interpretation of the variables differs.
+
+### Abstract View
+
+In its most general form, the Huntington-Hill method defines an allocation operator
+
+$$
+\mathcal A :
+(p_1,\ldots,p_m,H)
+\longmapsto
+(a_1,\ldots,a_m),
+$$
+
+subject to
+
+$$
+\sum_{i=1}^{m} a_i = H.
+$$
+
+The quantities represented by $p_i$ and $a_i$ are application-dependent; the allocation mechanism itself is invariant.
+
+Accordingly, the method may be regarded as a general discrete proportional-allocation procedure rather than a rule inherently tied to any particular political or administrative system.
+
+
 ## Appendix: Historical Growth Rule
 
 Unlike the power-law, ratio, or ceiling rules, the historical practice of object expansion was not governed by a fixed closed-form function
