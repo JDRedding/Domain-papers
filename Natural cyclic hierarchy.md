@@ -78,7 +78,7 @@ n-gon      : P = Cn
 Circle     : P = U(1)
 ```
 
-From the Relational Dynamic Geometryperspective the relational content is primary:
+From the Relational Dynamic Geometry perspective, the relational content is primary:
 
 ```
 R[SID]
