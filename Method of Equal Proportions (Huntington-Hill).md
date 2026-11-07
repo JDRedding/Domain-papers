@@ -132,3 +132,180 @@ a_k <- a_k + 1
 Constraint:
 Σ_i a_i = H
 ```
+
+## Appendix: Abstract Formulations of Integer-Sizing Rules
+
+Let
+
+$$
+P > 0
+$$
+
+be a real number and let
+
+$$
+p_{\min} > 0
+$$
+
+satisfy
+
+$$
+p_{\min} \le P.
+$$
+
+Let
+
+$$
+H \in \mathbb{Z}_{>0}
+$$
+
+be an integer determined from these quantities.
+
+### Power-Law Rule
+
+$$
+H =
+{round}
+\left(
+P^{1/3}
+\right)
+$$
+
+or, more generally,
+
+$$
+H =
+{round}
+\left(
+cP^{e}
+\right),
+$$
+
+where
+
+$$
+c > 0,
+\qquad
+e \in (0,1).
+$$
+
+A common empirical choice is
+
+$$
+e \approx 0.45,
+\qquad
+c \approx 0.1.
+$$
+
+### Ratio Rule
+
+$$
+H =
+{round}
+\left(
+\frac{P}{p_{\min}}
+\right).
+$$
+
+### Threshold Ceiling
+
+Given a fixed constant
+
+$$
+T > 0,
+$$
+
+$$
+H
+\le
+\left\lfloor
+\frac{P}{T}
+\right\rfloor.
+$$
+
+### Incremental Sequence
+
+Let
+
+$$
+(H_t)_{t\ge 0}
+$$
+
+be a sequence defined by
+
+$$
+H_{t+1} =
+H_t+\Delta_t,
+$$
+
+where
+
+$$
+\Delta_t \in \mathbb{Z}_{>0}
+$$
+
+is determined by an external rule.
+
+Equivalently,
+
+$$
+H_t = H_0 +
+\sum_{k=0}^{t-1}\Delta_k.
+$$
+
+### Constant-Shift Rule
+
+$$
+H =
+H_0+k,
+$$
+
+where
+
+$$
+H_0 \in \mathbb{Z}_{>0},
+\qquad
+k \in \mathbb{Z}_{>0}
+$$
+
+are fixed constants.
+
+### General Form
+
+Each rule determines an integer-valued function
+
+$$
+F :
+D \rightarrow \mathbb{Z}_{>0},
+$$
+
+defined on an appropriate domain \(D\), such that
+
+$$
+H = F(P,p_{\min})
+$$
+
+or, more generally,
+
+$$
+H = F(x_1,\ldots,x_n).
+$$
+
+The specific rules above are instances of this general construction.
+
+### Subsequent Decomposition
+
+Once \(H\) has been determined, one may seek a decomposition
+
+$$
+H =
+a_1+\cdots+a_m,
+$$
+
+where
+
+$$
+a_i \in \mathbb{Z}_{\ge 0}.
+$$
+
+The determination of \(H\) and the decomposition of \(H\) are distinct problems. The definition of \(F\) concerns only the former.
