@@ -38,7 +38,7 @@ $$
 
    compute all priority values $A_i(a_i)$.
 
-3. Assign the next divisions  to the entity
+3. Assign the next divisions to the entity
 
 $$
 k   =
@@ -63,14 +63,14 @@ r_i=
 \frac{p_i}{a_i},
 $$
 
-interpreted as the population (or votes) represented per divisions .
+interpreted as the population represented per divisions.
 
 ## Characterizing Property
 
 The Huntington-Hill allocation seeks to equalize representation ratios
 across entities. It is characterized by the use of the geometric-mean
 divisor and is equivalent to selecting the allocation for which no
-single-divisions  transfer improves proportional representation according to
+single-divisions transfer improves proportional representation according to
 the equal-proportions criterion.
 
 For two entities $i$ and $j$, the relative disparity in
