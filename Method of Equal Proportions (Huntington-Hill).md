@@ -114,10 +114,10 @@ highest-averages family.
 Population Size:
 p_i
 
-divisions  Allocation:
+Divisions Allocation:
 a_i
 
-Representation Ratio:
+Object Ratio:
 r_i = p_i / a_i
 
 Priority Function:
