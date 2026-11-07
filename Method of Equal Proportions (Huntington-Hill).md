@@ -46,7 +46,7 @@ If every entity is guaranteed at least one division, initialize with $a_i = 1$ a
 2. While $\sum_{i=1}^{m} a_i < H$, compute all priority values $A_i(a_i)$.
 3. Assign the next division to the entity
    $$
-   k = \operatorname{argmax}_{1 \le i \le m} A_i(a_i).
+   k = {argmax}_{1 \le i \le m} A_i(a_i).
    $$
 4. Update $a_k \leftarrow a_k + 1$.
 5. Repeat until exactly $H$ divisions have been assigned.
@@ -203,13 +203,13 @@ $$
 The next division is assigned according to
 
 $$
-k = \operatorname{argmax}_{1 \le i \le m} A_i(a_i).
+k = {argmax}_{1 \le i \le m} A_i(a_i).
 $$
 
 Equivalently,
 
 $$
-k = \operatorname{argmax}_{1 \le i \le m} \frac{p_i}{\sqrt{a_i(a_i + 1)}}.
+k = {argmax}_{1 \le i \le m} \frac{p_i}{\sqrt{a_i(a_i + 1)}}.
 $$
 
 ### Dynamics
@@ -229,7 +229,7 @@ $$
 where
 
 $$
-k = \operatorname{argmax}_{i} A_i(a_i(t))
+k = {argmax}_{i} A_i(a_i(t))
 $$
 
 and
@@ -378,13 +378,13 @@ be an integer determined from these quantities.
 ### Power-Law Rule
 
 $$
-H = \operatorname{round}\bigl(P^{1/3}\bigr)
+H = {round}\bigl(P^{1/3}\bigr)
 $$
 
 or, more generally,
 
 $$
-H = \operatorname{round}\bigl(c P^{e}\bigr),
+H = {round}\bigl(c P^{e}\bigr),
 $$
 
 where
@@ -402,7 +402,7 @@ $$
 ### Ratio Rule
 
 $$
-H = \operatorname{round}\left( \frac{P}{p_{\min}} \right).
+H = {round}\left( \frac{P}{p_{\min}} \right).
 $$
 
 ### Threshold Ceiling
@@ -529,7 +529,7 @@ The literature, however, does not analyze an unlimited number of such functions.
 Many named proposals are special cases of one of these broader families. For example, different parameter choices within a power-law family
 
 $$
-H = \operatorname{round}(c P^{e})
+H = {round}(c P^{e})
 $$
 
 produce distinct rules while retaining the same functional form.
@@ -537,7 +537,7 @@ produce distinct rules while retaining the same functional form.
 Similarly, different choices of a target ratio produce distinct members of
 
 $$
-H = \operatorname{round}\left( \frac{P}{R} \right).
+H = {round}\left( \frac{P}{R} \right).
 $$
 
 Thus the number of *named* rules discussed in the literature is relatively small, whereas the number of mathematically admissible rules is unlimited.
