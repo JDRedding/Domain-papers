@@ -111,7 +111,7 @@ highest-averages family.
 ## Compact Form
 
 ```text
-Population / Vote Size:
+Population Size:
 p_i
 
 divisions  Allocation:
