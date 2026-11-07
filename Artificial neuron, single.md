@@ -57,7 +57,7 @@ The notation cleanly separates the neuron into:
 
 ## **Appendix A. Projection Domains**
 
-The neuron definition remains unchanged. Projection variables are introduced as external modifiers acting on the stored parameters. The SID decomposition of the neuron is unchanged. Only the admissible domain of the projection variables \(p\) is substituted. This is why the circle and square forms may be viewed as distinct projections of the same underlying relational structure.
+The neuron definition remains unchanged. Projection variables are introduced as external modifiers acting on the stored parameters. The SID decomposition of the neuron is unchanged. Only the admissible domain of the projection variables \(p\) is substituted. This is why the circle and square forms may be viewed as distinct projections of the same underlying relational structure. The separation of projection generators from the neuron itself also makes it easy to swap in other projection domains later (higher roots of unity, learned continuous phases that are quantized, etc.) without touching the core integrator.
 
 **General projection form**
 
