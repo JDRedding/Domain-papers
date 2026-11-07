@@ -692,3 +692,156 @@ Named Proposals
 ```
 
 Accordingly, no definitive catalog of all possible sizing rules exists. What exists instead is a small collection of commonly discussed families, each containing many possible parameterizations and special cases.
+
+## Appendix: Current United States System
+
+The contemporary United States House of Representatives employs two distinct procedures:
+
+1. A rule for determining the total House size $H$.
+2. An apportionment method for distributing the resulting seats among the states.
+
+These problems are mathematically distinct.
+
+#### House-Size Rule
+
+At present, the size of the House is fixed by statute at
+
+$$
+H = 435.
+$$
+
+Consequently, the modern House does not operate under a power-law rule, ratio rule, ceiling rule, or historical-growth rule. Instead, it operates under a fixed-size rule.
+
+```text
+House Size Rule:
+
+H = 435
+```
+
+The determination of $H$ is therefore independent of population growth.
+
+#### Apportionment Rule
+
+Once
+
+$$
+H = 435
+$$
+
+has been specified, the seats are distributed among the states using the Huntington-Hill Method of Equal Proportions.
+
+Let
+
+$$
+p_i
+$$
+
+denote the population of state $i$, and let
+
+$$
+a_i
+$$
+
+denote its allocated number of representatives.
+
+The priority function is
+
+$$
+A_i(a_i) =
+\frac{p_i}
+{\sqrt{a_i(a_i+1)}}.
+$$
+
+Additional seats are assigned sequentially according to
+
+$$
+k =
+*{arg\,max}_{1\le i\le m}
+A_i(a_i).
+$$
+
+The process continues until
+
+$$
+\sum_{i=1}^{m} a_i = 435.
+$$
+
+#### Structural Decomposition
+
+The current system may therefore be represented schematically as
+
+```text
+Fixed-Size Rule
+        │
+        ▼
+      H = 435
+        │
+        ▼
+Huntington-Hill
+        │
+        ▼
+(a1,...,a50)
+```
+
+or equivalently,
+
+```text
+House Sizing:
+    H = 435
+
+Apportionment:
+    Huntington-Hill
+
+Output:
+    (a1,...,a50)
+```
+
+#### Historical Contrast
+
+Historically, the size of the House was not fixed.
+
+Instead, Congress periodically increased
+
+$$
+H
+$$
+
+through legislation, producing a sequence
+
+$$
+(H_t)_{t\ge0}.
+$$
+
+This historical practice is more naturally described by a growth process
+
+$$
+H_{t+1} =
+H_t + \Delta_t,
+$$
+
+where
+
+$$
+\Delta_t > 0
+$$
+
+was determined by legislative decision.
+
+Thus the historical and contemporary systems differ primarily in the rule used to determine House size:
+
+```text
+Historical System:
+    Growth Rule
+        ↓
+        H
+        ↓
+    Apportionment Method
+
+Current System:
+    H = 435
+        ↓
+    Huntington-Hill
+```
+
+The Huntington-Hill method addresses only the allocation problem. The determination of the House size $H$ is a separate question governed by an independent rule.
+
