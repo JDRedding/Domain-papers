@@ -93,7 +93,7 @@ N -> *
 
 ### Interpretation
 
-As the number of interactions increases, th* probability of observing a substa*tial deviation from the equilibriu* relation approaches zero.
+As the number of interactions increases, the probability of observing a substa*tial deviation from the equilibriu* relation approaches zero.
 
 ---
 
