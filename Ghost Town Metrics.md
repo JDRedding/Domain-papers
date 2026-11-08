@@ -116,3 +116,77 @@ Across most definitions, three elements appear most consistently:
 - visible abandoned buildings and infrastructure ($R = 1$).
 
 A settlement satisfying all three conditions is typically regarded as a ghost town regardless of minor variation in the remaining numerical thresholds.
+
+## Appendix: Quantitative Ghost-Town Metrics
+
+The following expressions provide a compact mathematical formalization of the core quantitative metrics commonly used to identify ghost towns. They represent practical operationalizations of the concept rather than a single official or universally accepted standard. Exact numerical thresholds remain author- and context-dependent. These expressions render the qualitative criteria commonly associated with ghost towns explicit and comparable across cases. The numerical cutoffs $\theta_P$, $\theta_D$, and $\theta_V$ remain context-dependent and vary by author, region, and research objective. Consequently, no single universally accepted quantitative definition of a ghost town exists.
+
+### A.1 Notation
+
+- $P_{\text{peak}}$: peak historical population  
+- $P_{\text{current}}$: current permanent population  
+- $T$: total number of standing structures  
+- $O$: number of currently occupied structures  
+- $E_{\text{orig}}$: indicator that the original economic or institutional purpose remains active ($1$ if active, $0$ if inactive)  
+- $V$: vacancy rate  
+- $D$: fractional population decline  
+- $\theta_P, \theta_D, \theta_V$: author-defined threshold values  
+
+### A.2 Core Formulas
+
+**Fractional population remaining.**  
+
+$$
+r_P = \frac{P_{\text{current}}}{P_{\text{peak}}}
+$$ 
+
+A strict ghost-town condition is often represented by $r_P \approx 0$; a looser definition may employ $r_P \le 0.05$–$0.10$.
+
+**Fractional population decline.**  
+
+$$
+D = 1 - r_P = 1 - \frac{P_{\text{current}}}{P_{\text{peak}}}
+$$ 
+
+A common practical threshold is $D \ge 0.80$–$0.90$.
+
+**Vacancy rate.**  
+
+$$
+V = 1 - \frac{O}{T}
+$$ 
+
+A high-vacancy condition is typically defined as $V \ge 0.75$.
+
+**Loss-of-purpose indicator.**  
+
+$$
+L = 1 - E_{\text{orig}}
+$$ 
+
+In most classifications, $L = 1$ is effectively required, indicating that the settlement’s original economic or institutional purpose no longer operates.
+
+**Composite ghost-town score.**  
+As an illustrative (non-standard) classification metric, define  
+
+$$
+G = w_1 \mathbf{1}_{[D \ge \theta_D]} + w_2 \mathbf{1}_{[L = 1]} + w_3 \mathbf{1}_{[V \ge \theta_V]} + w_4 \mathbf{1}_{[r_P \le \theta_P]},
+$$ 
+
+where $\mathbf{1}_{[\cdot]}$ denotes the indicator function and $\sum_i w_i = 1$. A settlement may be classified as a ghost town when $G$ exceeds a chosen threshold, typically corresponding to the majority of criteria being satisfied.
+
+**Skeleton-population residual.**  
+For semi-ghost or partially abandoned settlements,
+
+$$
+P_{\text{skel}} = P_{\text{current}}
+$$ 
+
+subject to  
+
+$$
+0 < P_{\text{current}} \ll P_{\text{peak}}.
+$$ 
+
+This condition represents the presence of a small residual population relative to the historical maximum.
+
