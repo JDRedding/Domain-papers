@@ -248,6 +248,11 @@ R remains unchanged.
 
 The bookmarklet and userscript implementations are practical realizations of the operator:
 
-```text
 T : Shorts → Watch
+
+# Appendix C: Bookmarklet code
+
+```javascript
+javascript:(()=>{if(!location.pathname.startsWith('/shorts/')){alert('Not a YouTube Shorts page');return;}const id=location.pathname.split('/')[2];const u=new URL(location.href);u.pathname='/watch';u.searchParams.set('v',id);location.href=u.toString();})();
 ```
+
