@@ -109,6 +109,23 @@ sec θ = 1 / cos θ
 cot θ = cos θ / sin θ
 ```
 
+## Bookmarklet
+
+Create a new browser bookmark and use the bookmarklet code as the bookmark URL.
+
+```javascript
+javascript:(function(){var A=[0,30,45,60,90,120,135,150,180,210,225,240,270,300,315,330];var exact={0:"0",30:"%CF%80/6",45:"%CF%80/4",60:"%CF%80/3",90:"%CF%80/2",120:"2%CF%80/3",135:"3%CF%80/4",150:"5%CF%80/6",180:"%CF%80",210:"7%CF%80/6",225:"5%CF%80/4",240:"4%CF%80/3",270:"3%CF%80/2",300:"5%CF%80/3",315:"7%CF%80/4",330:"11%CF%80/6"};var w=window.open("","trigref","width=580,height=720,scrollbars=yes");if(!w){alert("Popup blocked %E2%80%94 try Version B");return;}w.document.write('<!DOCTYPE html><html><head><title>Trig Reference</title><style>body{font-family:system-ui;padding:20px;max-width:540px;margin:auto}h1{color:#1a73e8}.btn{margin:3px;padding:7px%2012px;font-size:14px;cursor:pointer}.box{background:#f8f9fa;padding:14px;border-radius:8px;margin-top:14px;line-height:1.5}a{color:#1a73e8;text-decoration:none;font-weight:500}%3C/style%3E%3C/head%3E%3Cbody%3E%3Ch1%3EInstant%20Trig%20Reference%3C/h1%3E%3Cdiv%20id=btns%3E%3C/div%3E%3Cdiv%20class=box%20id=out%3ESelect%20an%20angle%20above.%3C/div%3E%3C/body%3E%3C/html%3E');w.document.close();var%20d=w.document;A.forEach(function(a){%20%20var%20b=d.createElement(%22button%22);%20%20b.className=%22btn%22;%20%20b.textContent=a+%22%C2%B0%22;%20%20b.onclick=function(){%20%20%20%20var%20r=a*Math.PI/180,s=Math.sin(r),c=Math.cos(r);%20%20%20%20var%20f=function(n){return%20Math.abs(n)%3C1e-10?%220%22:n.toFixed(6);};%20%20%20%20var%20wa=%22https://www.wolframalpha.com/input?i=%22+encodeURIComponent(%22unit%20circle%20%22+a+%22%20degrees%22);%20%20%20%20var%20des=%22https://www.desmos.com/calculator%22;%20%20%20%20d.getElementById(%22out%22).innerHTML=%20%20%20%20%20%20%22%3Cb%3EAngle:%3C/b%3E%20%22+a+%22%C2%B0%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3ERadians:%3C/b%3E%20%22+exact[a]+%22%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3ECoordinates:%3C/b%3E%20(%22+f(c)+%22,%20%22+f(s)+%22)%3Chr%3E%22+%20%20%20%20%20%20%22%3Cb%3Esin%20%CE%B8%3C/b%3E%20=%20%22+f(s)+%22%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3Ecos%20%CE%B8%3C/b%3E%20=%20%22+f(c)+%22%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3Etan%20%CE%B8%3C/b%3E%20=%20%22+(Math.abs(c)%3C1e-10?%22undefined%22:f(s/c))+%22%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3Ecsc%20%CE%B8%3C/b%3E%20=%20%22+(Math.abs(s)%3C1e-10?%22undefined%22:f(1/s))+%22%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3Esec%20%CE%B8%3C/b%3E%20=%20%22+(Math.abs(c)%3C1e-10?%22undefined%22:f(1/c))+%22%3Cbr%3E%22+%20%20%20%20%20%20%22%3Cb%3Ecot%20%CE%B8%3C/b%3E%20=%20%22+(Math.abs(s)%3C1e-10?%22undefined%22:f(c/s))+%20%20%20%20%20%20%22%3Chr%3E%3Ca%20href='%22+wa+%22'%20target=_blank%3E%F0%9F%93%8A%20Graph%20on%20Wolfram|Alpha%3C/a%3E%3Cbr%3E%22+%20%20%20%20%20%20%22%3Ca%20href='%22+des+%22'%20target=_blank%3E%F0%9F%93%88%20Open%20Desmos%3C/a%3E%20%3Csmall%3E(paste:%20(%22+f(c)+%22,%22+f(s)+%22)%20)%3C/small%3E%22;%20%20};%20%20d.getElementById(%22btns%22).appendChild(b);});})();
+```
+
+## Installation
+
+1. Create a new bookmark in your browser.
+2. Name it **Unit Circle**.
+3. Paste the bookmarklet code into the bookmarks URL/location field.
+4. Save the bookmark.
+5. Click the bookmark from any webpage to launch the solver.
+
+
 ## Usage
 
 1. Click the bookmarklet.
