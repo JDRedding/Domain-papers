@@ -1,209 +1,643 @@
 # Relational Toroidal Geometry
-RDG/MFE Framework
+## An RDG/MFE Formulation of Toroidal Differential Geometry
 
-**Abstract**  
-Toroidal differential geometry is reformulated inside the Relational Dynamic Geometry (RDG) and Momentum Flux Engine (MFE) framework. The classical labels \((\eta,\theta,\phi)\) are replaced by relational quantities
-\[
-E=\frac{R}{C},\qquad
-S=\Delta\alpha,\qquad
-F=\Phi_c.
-\]
-RDG supplies the accessibility structure; MFE supplies the evolution of relational states through that structure. Geometry is generated from relational accessibility rather than from an ambient Euclidean point set.
-
-**1. RDG Foundations**  
-SID decomposition:
-\[
-S=\text{Structure},\qquad
-I=\text{Interaction},\qquad
-D=\text{Dynamics}.
-\]
-Central principle:
-\[
-I\;\longrightarrow\;S\;\longrightarrow\;D.
-\]
-
-**2. Momentum Flux Engine (MFE)**  
-The relational toroidal chart defines accessibility and differential structure but does not itself specify state evolution. State evolution is performed by the Momentum Flux Engine. Using the PED decomposition
-\[
-P=\text{Power},\qquad
-E_v=\text{Evaluation},\qquad
-D_v=\text{Dynamics},
-\]
-the MFE governs the evolution of relational states while RDG governs the geometry through which those states evolve. Symbolically,
-\[
-\text{MFE}:
-(E,S,F)
-\;\longmapsto\;
-(E',S',F'),
-\]
-while
-\[
-\text{RDG}:
-(E,S,F)
-\;\longmapsto\;
-D(E,S)
-\;\longmapsto\;
-(h,k)
-\;\longmapsto\;
-\Gamma.
-\]
-Thus RDG supplies accessibility and MFE supplies evolution.
-
-**3. Relational State Variables**  
-The state is the triple of relational facts
-\[
-(E,S,F),
-\]
-where
-\[
-E=\frac{R}{C}\in[0,1]
-\quad\text{(realized closure fraction)},
-\quad
-S=\Delta\alpha
-\quad\text{(oriented step)},
-\quad
-F=\Phi_c
-\quad\text{(threaded flux/phase)}.
-\]
-
-**4. Relational Accessibility Generator**  
-\[
-D(E,S)=\cosh E-\cos S.
-\]
-Accessibility is the difference between amplified efficiency and orientation modulation. The open relational manifold is
-\[
-\mathcal{S}=\{D>0\}.
-\]
-
-**5. Relational Structure**  
-Scale factors:
-\[
-h=\frac{a}{D},\qquad
-k=\frac{a\sinh E}{D}.
-\]
-Accessibility matrix:
-\[
-\Gamma
-=
-\operatorname{diag}
-\Biggl(
-\frac{D}{a},\;
-\frac{D}{a},\;
-\frac{D}{a\sinh E}
-\Biggr).
-\]
-
-**6. Relational Differential Operators**  
-
-Gradient
-\[
-\nabla f
-=
-\hat{\mathbf{e}}_E\frac{D}{a}\partial_E f
-+
-\hat{\mathbf{e}}_S\frac{D}{a}\partial_S f
-+
-\hat{\mathbf{e}}_F\frac{D}{a\sinh E}\partial_F f.
-\]
-
-Divergence
-\[
-\nabla\cdot\mathbf{A}
-=
-\frac{D^3}{a^3\sinh E}
-\Biggl[
-\partial_E\Biggl(\frac{a^2\sinh E}{D^2}A_E\Biggr)
-+
-\partial_S\Biggl(\frac{a^2\sinh E}{D^2}A_S\Biggr)
-+
-\partial_F\Biggl(\frac{a^2}{D^2}A_F\Biggr)
-\Biggr].
-\]
-
-Curl
-\[
-\begin{align*}
-(\nabla\times\mathbf{A})_E
-&=
-\frac{D^2}{a^2\sinh E}
-\Biggl(
-\partial_S\Biggl(\frac{a\sinh E}{D}A_F\Biggr)
--
-\partial_F\Biggl(\frac{a}{D}A_S\Biggr)
-\Biggr),\\[1em]
-(\nabla\times\mathbf{A})_S
-&=
-\frac{D^2}{a^2\sinh E}
-\Biggl(
-\partial_F\Biggl(\frac{a}{D}A_E\Biggr)
--
-\partial_E\Biggl(\frac{a\sinh E}{D}A_F\Biggr)
-\Biggr),\\[1em]
-(\nabla\times\mathbf{A})_F
-&=
-\frac{D^2}{a^2}
-\Biggl(
-\partial_E\Biggl(\frac{a}{D}A_S\Biggr)
--
-\partial_S\Biggl(\frac{a}{D}A_E\Biggr)
-\Biggr).
-\end{align*}
-\]
-
-Scalar Laplacian
-\[
-\nabla^2 f
-=
-\frac{D^3}{a^2\sinh E}
-\Biggl[
-\partial_E\Biggl(\frac{\sinh E}{D}\partial_E f\Biggr)
-+
-\partial_S\Biggl(\frac{\sinh E}{D}\partial_S f\Biggr)
-+
-\partial_F\Biggl(\frac{1}{D\sinh E}\partial_F f\Biggr)
-\Biggr].
-\]
-
-**7. RDG/MFE Hierarchy**
-\[
-(E,S,F)
-\;\xrightarrow{\text{RDG}}\;
-D(E,S)
-\;\rightarrow\;
-(h,k)
-\;\rightarrow\;
-\Gamma
-\;\rightarrow\;
-\{\nabla,\nabla\cdot,\nabla\times,\nabla^2\},
-\]
-\[
-(E,S,F)
-\;\xrightarrow{\text{MFE}}\;
-(E',S',F').
-\]
-RDG defines the relational accessibility structure. MFE generates trajectories through that structure.
+**JD Redding**
 
 ---
 
-**Appendix A — Classical Correspondence**  
-The dictionary
-\[
-E\leftrightarrow\eta,\qquad
-S\leftrightarrow\theta,\qquad
-F\leftrightarrow\phi
-\]
-recovers the standard toroidal operators upon substitution of the pure generator \(D\).
+# Abstract
 
-**Appendix B — Null-Closure Boundary**  
-The locus
-\[
-D=0\quad\Leftrightarrow\quad E=0\text{ and }S\in 2\pi\mathbb{Z}
-\]
-is the boundary of the relational manifold. It corresponds to vanishing realized closure and vanishing accessibility; geometry ceases.
+Toroidal differential geometry is reformulated within the framework of Relational Dynamic Geometry (RDG) and the Momentum Flux Engine (MFE). The traditional toroidal variables are reinterpreted as relational quantities rather than coordinates of an embedded point in Euclidean space.
 
-**Appendix C — Regularized Accessibility Variant**  
-Replace the generator by
-\[
-D_\varepsilon=\cosh E-\cos S+\varepsilon,\qquad\varepsilon>0.
-\]
-All formulas of Sections 5–6 remain valid with \(D\) replaced by \(D_\varepsilon\). The chart is then smooth on the closed state space. The constant \(\varepsilon\) is a purely geometric floor; physical readings remain optional and external to the construction.
+The classical toroidal labels
+
+$$
+(\eta,\theta,\phi)
+$$
+
+are replaced by
+
+$$
+(E,S,F),
+$$
+
+where
+
+$$
+E=\frac{R}{C},
+\qquad
+S=\Delta\alpha,
+\qquad
+F=\Phi_c.
+$$
+
+Geometry is generated through a relational accessibility function
+
+$$
+D(E,S)=\cosh E-\cos S,
+$$
+
+which produces metric structure, accessibility, and the complete differential operator algebra. The resulting formulation preserves the operator algebra of the classical toroidal chart while replacing its Euclidean interpretation with a finite relational state space.
+
+---
+
+# 1. RDG Foundations
+
+Relational Dynamic Geometry (RDG) is organized through the SID decomposition:
+
+$$
+S=\text{Structure},
+\qquad
+I=\text{Interaction},
+\qquad
+D=\text{Dynamics}.
+$$
+
+The central RDG principle is
+
+$$
+I
+\longrightarrow
+S
+\longrightarrow
+D.
+$$
+
+Interaction generates structure.
+
+Structure constrains dynamics.
+
+Geometry is therefore viewed as an emergent consequence of underlying relational interactions rather than as a pre-existing stage upon which interactions occur.
+
+---
+
+# 2. Momentum Flux Engine (MFE)
+
+The relational toroidal chart defines accessibility and differential structure but does not itself specify state evolution.
+
+State evolution is performed by the Momentum Flux Engine (MFE).
+
+Using the PED decomposition,
+
+$$
+P=\text{Power},
+\qquad
+E_v=\text{Evaluation},
+\qquad
+D_v=\text{Dynamics},
+$$
+
+the MFE governs trajectories through relational state space while RDG governs the accessibility structure associated with those states.
+
+Symbolically,
+
+$$
+\text{RDG}:
+(E,S,F)
+\longrightarrow
+D(E,S)
+\longrightarrow
+(h,k)
+\longrightarrow
+\Gamma,
+$$
+
+while
+
+$$
+\text{MFE}:
+(E,S,F)
+\longmapsto
+(E',S',F').
+$$
+
+Thus,
+
+```text
+RDG supplies geometry.
+
+MFE supplies evolution.
+```
+
+or equivalently,
+
+```text
+SID defines accessibility.
+
+PED drives trajectories through that accessibility.
+```
+
+---
+
+# 3. Relational State Variables
+
+The fundamental state is the relational triple
+
+$$
+(E,S,F).
+$$
+
+These are interpreted as relational facts rather than spatial coordinates.
+
+## 3.1 Efficiency
+
+$$
+E=\frac{R}{C},
+\qquad
+0\le E\le 1.
+$$
+
+where
+
+- $$R$$ is realized closure,
+- $$C$$ is total closure capacity.
+
+$$E$$ measures the fraction of relational capacity that successfully becomes realized structure.
+
+---
+
+## 3.2 Oriented Step
+
+$$
+S=\Delta\alpha.
+$$
+
+$$S$$ measures the elementary oriented update between successive relational states.
+
+Example:
+
+$$
+\alpha_k=kS.
+$$
+
+---
+
+## 3.3 Threaded Flux / Phase
+
+$$
+F=\Phi_c.
+$$
+
+$$F$$ represents accumulated relational influence threaded through a closed relational structure.
+
+In holonomy form,
+
+$$
+\mathrm{Hol}(C)
+=
+e^{i2\pi F}.
+$$
+
+---
+
+# 4. Relational Accessibility Generator
+
+The accessibility generator is
+
+$$
+D(E,S)
+=
+\cosh E
+-
+\cos S.
+$$
+
+This quantity is the interaction source of the geometry.
+
+Accessibility is interpreted as the difference between:
+
+- amplified efficiency,
+- orientation modulation.
+
+The admissible relational manifold is
+
+$$
+\mathcal{S}
+=
+\{
+(E,S,F)
+:
+D(E,S)>0
+\}.
+$$
+
+---
+
+# 5. Relational Structure
+
+The scale factors are
+
+$$
+h
+=
+\frac{a}{D},
+$$
+
+$$
+k
+=
+\frac{a\sinh E}{D}.
+$$
+
+These generate the complete geometric structure.
+
+The accessibility tensor is
+
+$$
+\Gamma
+=
+\operatorname{diag}
+\left(
+\frac{D}{a},
+\frac{D}{a},
+\frac{D}{a\sinh E}
+\right).
+$$
+
+Thus
+
+$$
+(E,S)
+\rightarrow
+D
+\rightarrow
+(h,k)
+\rightarrow
+\Gamma.
+$$
+
+The geometry is generated entirely from the interaction function $$D$$.
+
+---
+
+# 6. Relational Differential Operators
+
+All differential operators follow directly from the scale factors.
+
+## 6.1 Gradient
+
+$$
+\nabla f
+=
+\hat{\mathbf e}_E
+\frac{D}{a}
+\partial_E f
++
+\hat{\mathbf e}_S
+\frac{D}{a}
+\partial_S f
++
+\hat{\mathbf e}_F
+\frac{D}{a\sinh E}
+\partial_F f.
+$$
+
+---
+
+## 6.2 Divergence
+
+$$
+\nabla\cdot\mathbf A
+=
+\frac{D^3}
+     {a^3\sinh E}
+\left[
+\partial_E
+\left(
+\frac{a^2\sinh E}
+     {D^2}
+A_E
+\right)
++
+\partial_S
+\left(
+\frac{a^2\sinh E}
+     {D^2}
+A_S
+\right)
++
+\partial_F
+\left(
+\frac{a^2}
+     {D^2}
+A_F
+\right)
+\right].
+$$
+
+---
+
+## 6.3 Curl
+
+$$
+(\nabla\times\mathbf A)_E
+=
+\frac{D^2}
+     {a^2\sinh E}
+\left[
+\partial_S
+\left(
+\frac{a\sinh E}
+     {D}
+A_F
+\right)
+-
+\partial_F
+\left(
+\frac{a}
+     {D}
+A_S
+\right)
+\right],
+$$
+
+$$
+(\nabla\times\mathbf A)_S
+=
+\frac{D^2}
+     {a^2\sinh E}
+\left[
+\partial_F
+\left(
+\frac{a}
+     {D}
+A_E
+\right)
+-
+\partial_E
+\left(
+\frac{a\sinh E}
+     {D}
+A_F
+\right)
+\right],
+$$
+
+$$
+(\nabla\times\mathbf A)_F
+=
+\frac{D^2}
+     {a^2}
+\left[
+\partial_E
+\left(
+\frac{a}
+     {D}
+A_S
+\right)
+-
+\partial_S
+\left(
+\frac{a}
+     {D}
+A_E
+\right)
+\right].
+$$
+
+---
+
+## 6.4 Scalar Laplacian
+
+$$
+\nabla^2 f
+=
+\frac{D^3}
+     {a^2\sinh E}
+\left[
+\partial_E
+\left(
+\frac{\sinh E}
+     {D}
+\partial_E f
+\right)
++
+\partial_S
+\left(
+\frac{\sinh E}
+     {D}
+\partial_S f
+\right)
++
+\partial_F
+\left(
+\frac{1}
+     {D\sinh E}
+\partial_F f
+\right)
+\right].
+$$
+
+---
+
+# 7. RDG/MFE Hierarchy
+
+The relational toroidal structure is generated through the chain
+
+$$
+(E,S,F)
+\overset{\text{RDG}}{\longrightarrow}
+D(E,S)
+\longrightarrow
+(h,k)
+\longrightarrow
+\Gamma
+\longrightarrow
+\left\{
+\nabla,
+\nabla\cdot,
+\nabla\times,
+\nabla^2
+\right\}.
+$$
+
+The MFE simultaneously produces trajectories through this geometry:
+
+$$
+(E,S,F)
+\overset{\text{MFE}}{\longmapsto}
+(E',S',F').
+$$
+
+Therefore
+
+```text
+Relations
+    generate
+Accessibility
+
+Accessibility
+    generates
+Structure
+
+Structure
+    governs
+Dynamics
+
+MFE
+    evolves
+the state through that structure.
+```
+
+---
+
+# Conclusion
+
+The toroidal differential operator algebra can be reconstructed entirely from relational quantities.
+
+The state
+
+$$
+(E,S,F)
+=
+\left(
+\frac{R}{C},
+\Delta\alpha,
+\Phi_c
+\right)
+$$
+
+replaces the classical coordinate tuple
+
+$$
+(\eta,\theta,\phi).
+$$
+
+A single accessibility generator
+
+$$
+D(E,S)
+=
+\cosh E
+-
+\cos S
+$$
+
+produces metric structure, accessibility, and the complete toroidal differential calculus.
+
+The resulting system preserves the mathematical structure of classical toroidal geometry while recasting it as a finite relational manifold generated by efficiency, oriented step, and threaded flux.
+
+---
+
+# Appendix A — Classical Correspondence
+
+The relational variables correspond to the classical toroidal labels by
+
+$$
+E
+\leftrightarrow
+\eta,
+$$
+
+$$
+S
+\leftrightarrow
+\theta,
+$$
+
+$$
+F
+\leftrightarrow
+\phi.
+$$
+
+Substituting these identifications recovers the classical toroidal operator algebra.
+
+---
+
+# Appendix B — Null-Closure Boundary
+
+The accessibility generator vanishes when
+
+$$
+D(E,S)=0.
+$$
+
+Since
+
+$$
+\cosh E\ge1,
+\qquad
+\cos S\le1,
+$$
+
+this occurs only at
+
+$$
+E=0,
+\qquad
+S\in2\pi\mathbb Z.
+$$
+
+Thus
+
+$$
+\partial\mathcal S
+=
+\left\{
+E=0,
+\;
+S\in2\pi\mathbb Z
+\right\}.
+$$
+
+This boundary corresponds to
+
+```text
+No realized closure.
+No effective update.
+No accessibility.
+No geometry.
+```
+
+The singularity is retained as a meaningful relational boundary.
+
+---
+
+# Appendix C — Regularized Accessibility Variant
+
+A globally regular alternative is obtained by replacing the generator with
+
+$$
+D_\varepsilon
+=
+\cosh E
+-
+\cos S
++
+\varepsilon,
+\qquad
+\varepsilon>0.
+$$
+
+Then
+
+$$
+D_\varepsilon
+\ge
+\varepsilon,
+$$
+
+and the null-accessibility singularity is removed.
+
+All expressions in Sections 5 and 6 remain valid after replacing
+
+$$
+D
+\rightarrow
+D_\varepsilon.
+$$
+
+The resulting chart is smooth on the closed finite state space.
+
+The parameter $$\varepsilon$$ is introduced purely as a geometric accessibility floor.
+
+Possible physical interpretations include:
+
+- residual interaction,
+- noise floor,
+- chaos floor,
+- unresolved microstructure,
+- finite observational resolution.
+
+These interpretations are optional and external to the geometric construction itself.
