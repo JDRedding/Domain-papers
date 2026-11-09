@@ -86,3 +86,32 @@ Example for `√72`:
      = (2² × 3²) × 2
 √72 = 2 × 3 × √2 = 6√2
 ```
+
+## Interesting inputs
+
+### Prime factorization highlights
+| Input       | Why it’s interesting                          | Expected factorization                  |
+|-------------|-----------------------------------------------|-----------------------------------------|
+| **1729**    | Hardy–Ramanujan number (sum of two cubes in two ways) | 7 × 13 × 19                            |
+| **65537**   | Largest known Fermat prime (2¹⁶ + 1)          | 65537 (prime)                          |
+| **720720**  | Product of the first several primes (highly composite flavor) | 2⁴ × 3² × 5 × 7 × 11 × 13             |
+| **3628800** | 10!                                           | 2⁸ × 3⁴ × 5² × 7                       |
+| **1048576** | 2²⁰ (clean pure power)                        | 2²⁰                                    |
+| **1000000** | 10⁶                                           | 2⁶ × 5⁶                                |
+| **123456789** | Random-looking but factors nicely            | 3² × 3607 × 3803                       |
+
+### Radical simplification highlights
+| Input          | Simplified form | Notes                              |
+|----------------|-----------------|------------------------------------|
+| `sqrt(72)`     | 6√2             | Classic example from the repo      |
+| `sqrt(720720)` | (uses the factors above) | Big outside coefficient, small inside |
+| `sqrt(5040)`   | 12√35           | 7! related                         |
+| `sqrt(50)`     | 5√2             | Simple and clean                   |
+| `sqrt(200)`    | 10√2            | Nice round coefficient             |
+| `√48` or `sqrt(48)` | 4√3         | Already in the examples            |
+
+### Quick tips
+- Pure powers of 2 or 10 show the exponent form cleanly.
+- Factorials and products of small primes stress the “expanded vs exponent” output without being slow.
+- 65537 (or any large prime under ~10¹⁴) is a good “it correctly reports a prime” test.
+- Avoid large semiprimes with big prime factors — trial division gets slow once the smallest factor exceeds a few million.
