@@ -1,4 +1,4 @@
-# Feynman Path Integral
+# Relational Feynman Path Integral
 ## Structure/Power Generalization
 *Dynamic Discrete Relational History Formulation*
 
