@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synthetic Division Calculator</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-
+
+render.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1419;
+    --card: #1a2332;
+    --border: #2d3a4f;
+    --text: #e6edf3;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --red: #f85149;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  .container {
+    width: 100%;
+    max-width: 760px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.75rem;
+  }
+  h1 { margin: 0 0 0.5rem; font-size: 1.6rem; }
+  .subtitle { color: #8b949e; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5; }
+  label { display: block; font-size: 0.9rem; margin-bottom: 0.4rem; color: #8b949e; }
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    background: #0d1117;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  button {
+    background: var(--accent);
+    color: #0d1117;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button:hover { filter: brightness(1.1); }
+  #output { margin-top: 1.75rem; }
+  .tableau {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: #0d1117;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    line-height: 1.6;
+    white-space: pre;
+    font-size: 0.95rem;
+  }
+  .result { margin-top: 1rem; line-height: 1.6; }
+  .factor { color: var(--green); font-weight: 600; }
+  .not-factor { color: var(--red); }
+  .examples { margin-top: 0.75rem; font-size: 0.85rem; color: #8b949e; }
+  .examples button {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    padding: 0.3rem 0.65rem;
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Synthetic Division Calculator</h1>
+  <p class="subtitle">Enter a polynomial and a value of r to perform synthetic division by x−r, view 
+
+the tableau, and determine whether the divisor is a factor.</p>
+
+  <label for="coeffs">Polynomial coefficients (highest degree first, comma-separated)</label>
+  <input type="text" id="coeffs" value="1,-6,11,-6" placeholder="Example: 1, -6, 11, -6">
+
+  <label for="r">Value of r (for the divisor x−r)</label>
+  <input type="number" id="r" value="2" step="any">
+
+  <button onclick="compute()">Perform Division</button>
+
+  <div class="examples">
+    Try an example:
+    <button onclick="loadExample('1,-6,11,-6', 2)">x³ − 6x² + 11x − 6 ÷ (x−2)</button>
+    <button onclick="loadExample('2,-3,0,5', 1)">2x³ − 3x² + 5 ÷ (x−1)</button>
+    <button onclick="loadExample('1,0,-4,0,3', -1)">x⁴ − 4x² + 3 ÷ (x+1)</button>
+  </div>
+
+  <div id="output"></div>
+</div>
+
+<script>
+function loadExample(coeffs, r) {
+  document.getElementById('coeffs').value = coeffs;
+  document.getElementById('r').value = r;
+  compute();
+}
+
+function parseCoeffs(str) {
+  return str.split(',')
+    .map(s => s.trim())
+    .filter(s => s.length > 0)
+    .map(s => {
+      const n = Number(s);
+      if (isNaN(n)) throw new Error(`Invalid coefficient: "${s}". Coefficients must be numeric 
+
+values.`);
+      return n;
+    });
+}
+
+function formatPolyLatex(coeffs) {
+  if (!coeffs.length) return '0';
+  const terms = [];
+  const deg = coeffs.length - 1;
+  for (let i = 0; i < coeffs.length; i++) {
+    const c = coeffs[i];
+    if (Math.abs(c) < 1e-10) continue;
+    const power = deg - i;
+    const absC = Math.abs(c);
+    const sign = c < 0 ? '-' : (terms.length ? '+' : '');
+    let term = '';
+    if (power === 0) {
+      term = absC.toString();
+    } else if (power === 1) {
+      term = (absC === 1 ? '' : absC) + 'x';
+    } else {
+      term = (absC === 1 ? '' : absC) + 'x^{' + power + '}';
+    }
+    terms.push((sign ? sign + ' ' : '') + term);
+  }
+  return terms.join(' ').replace(/^\+ /, '') || '0';
+}
+
+function compute() {
+  const out = document.getElementById('output');
+  out.innerHTML = '';
+
+  try {
+    const coeffStr = document.getElementById('coeffs').value.trim();
+    const r = Number(document.getElementById('r').value);
+    if (isNaN(r)) throw new Error('The value of r must be a valid number.');
+
+    const coeffs = parseCoeffs(coeffStr);
+    if (coeffs.length < 1) throw new Error('Please enter at least one coefficient.');
+
+    // Execute the synthetic division algorithm
+    const n = coeffs.length;
+    const bottom = [];
+    const products = [];
+    let current = 0;
+
+    for (let i = 0; i < n; i++) {
+      current = coeffs[i] + (i === 0 ? 0 : current * r);
+      bottom.push(current);
+      if (i < n - 1) products.push(current * r);
+    }
+
+    const remainder = bottom.pop();
+    const quotient = bottom;
+    const isFactor = Math.abs(remainder) < 1e-9;
+
+    // Construct the synthetic division tableau
+    const pad = (n) => {
+      const s = Number(n).toFixed(4).replace(/\.?0+$/, '');
+      return s.padStart(9);
+    };
+
+    let tableau = `   ${pad(r)} |`;
+    coeffs.forEach(c => tableau += pad(c));
+    tableau += '\n         |';
+    tableau += '         ';
+    products.forEach(p => tableau += pad(p));
+    tableau += '\n         +' + '-'.repeat(coeffs.length * 9);
+    tableau += '\n          ';
+    quotient.forEach(q => tableau += pad(q));
+    tableau += pad(remainder);
+
+    // Prepare result values for display
+    const qLatex = formatPolyLatex(quotient);
+    const remLatex = Math.abs(remainder) < 1e-9 ? '0' : remainder.toFixed(6).replace(/\.?0+$/, '');
+    const origLatex = formatPolyLatex(coeffs);
+
+    out.innerHTML = `
+      <div class="result">
+        <div><strong>Divisor:</strong> \\( (x - ${r}) \\)</div>
+        <div style="margin-top:0.6rem"><strong>Polynomial:</strong></div>
+        <div id="orig-poly"></div>
+        <div class="tableau">${tableau}</div>
+        <div><strong>Quotient:</strong> <span id="quotient-poly"></span></div>
+        <div><strong>Remainder:</strong> \\( ${remLatex} \\)</div>
+        <div style="margin-top:0.75rem" class="${isFactor ? 'factor' : 'not-factor'}">
+          ${isFactor
+            ? `Yes. \\( (x - ${r}) \\) is a factor of the polynomial.`
+            : `No. The remainder is nonzero, so \\( (x - ${r}) \\) is not a factor.`}
+        </div>
+      </div>
+    `;
+
+    // Render polynomial and quotient with KaTeX
+    katex.render(origLatex, document.getElementById('orig-poly'), {
+      throwOnError: false,
+      displayMode: true
+    });
+
+    katex.render(qLatex, document.getElementById('quotient-poly'), {
+      throwOnError: false,
+      displayMode: false
+    });
+
+    // Render remaining math
+    renderMathInElement(out, {
+      delimiters: [
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError: false
+    });
+
+  } catch (err) {
+    out.innerHTML = `<div style="color:#f85149; margin-top:1rem">Error: ${err.message}</div>`;
+  }
+}
+
+// Initial computation
+compute();
+</script>
+</body>
+</html>
