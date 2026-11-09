@@ -103,12 +103,12 @@ Example for `√72`:
 ### Radical simplification highlights
 | Input          | Simplified form | Notes                              |
 |----------------|-----------------|------------------------------------|
-| `sqrt(72)`     | 6√2             | Classic example from the repo      |
+| `sqrt(72)`     | 6√2             | Classic example      |
 | `sqrt(720720)` | (uses the factors above) | Big outside coefficient, small inside |
 | `sqrt(5040)`   | 12√35           | 7! related                         |
 | `sqrt(50)`     | 5√2             | Simple and clean                   |
 | `sqrt(200)`    | 10√2            | Nice round coefficient             |
-| `√48` or `sqrt(48)` | 4√3         | Already in the examples            |
+| `√48` or `sqrt(48)` | 4√3         | Classic example s            |
 
 ### Quick tips
 - Pure powers of 2 or 10 show the exponent form cleanly.
