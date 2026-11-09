@@ -241,11 +241,11 @@ The accessibility tensor is
 $$
 \Gamma=
 \operatorname{diag}
-\left(
+(
 \frac{D}{a},
 \frac{D}{a},
 \frac{D}{a\sinh E}
-\right).
+).
 $$
 
 Thus
@@ -291,28 +291,28 @@ $$
 \nabla\cdot\mathbf A=
 \frac{D^3}
      {a^3\sinh E}
-\left[
+[
 \partial_E
-\left(
+(
 \frac{a^2\sinh E}
      {D^2}
 A_E
-\right)
+)
 +
 \partial_S
-\left(
+(
 \frac{a^2\sinh E}
      {D^2}
 A_S
-\right)
+)
 +
 \partial_F
-\left(
+(
 \frac{a^2}
      {D^2}
 A_F
-\right)
-\right].
+)
+].
 $$
 
 ---
@@ -323,20 +323,20 @@ $$
 (\nabla\times\mathbf A)_E=
 \frac{D^2}
      {a^2\sinh E}
-\left[
+[
 \partial_S
-\left(
+(
 \frac{a\sinh E}
      {D}
 A_F
-\right)-
+)-
 \partial_F
-\left(
+(
 \frac{a}
      {D}
 A_S
-\right)
-\right],
+)
+],
 $$
 
 $$
@@ -388,26 +388,26 @@ $$
 \nabla^2 f=
 \frac{D^3}
      {a^2\sinh E}
-\left[
+[
 \partial_E
-\left(
+(
 \frac{\sinh E}
      {D}
 \partial_E f
-\right)+
+)+
 \partial_S
-\left(
+(
 \frac{\sinh E}
      {D}
 \partial_S f
-\right)+
+)+
 \partial_F
-\left(
+(
 \frac{1}
      {D\sinh E}
 \partial_F f
-\right)
-\right].
+)
+].
 $$
 
 ---
@@ -425,12 +425,12 @@ D(E,S)
 \longrightarrow
 \Gamma
 \longrightarrow
-\left\{
+\{
 \nabla,
 \nabla\cdot,
 \nabla\times,
 \nabla^2
-\right\}.
+\}.
 $$
 
 The MFE simultaneously produces trajectories through this geometry:
@@ -471,11 +471,11 @@ The state
 
 $$
 (E,S,F)=
-\left(
+(
 \frac{R}{C},
 \Delta\alpha,
 \Phi_c
-\right)
+)
 $$
 
 replaces the classical coordinate tuple
@@ -551,13 +551,12 @@ $$
 Thus
 
 $$
-\partial\mathcal S
-=
-\left\{
+\partial\mathcal S=
+\{
 E=0,
 \;
 S\in2\pi\mathbb Z
-\right\}.
+\}.
 $$
 
 This boundary corresponds to
