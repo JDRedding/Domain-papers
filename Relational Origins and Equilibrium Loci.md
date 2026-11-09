@@ -15,8 +15,7 @@ $$
 The equilibrium state of the pair is
 
 $$
-O
-=
+O=
 \frac{(+\Delta)+(-\Delta)}{2}.
 $$
 
@@ -51,10 +50,8 @@ Relationally, one may instead consider a pair of opposite radial directions. The
 For the relational toroidal chart the accessibility generator is
 
 $$
-D(E,S)
-=
-\cosh E
--
+D(E,S)=
+\cosh E-
 \cos S.
 $$
 
