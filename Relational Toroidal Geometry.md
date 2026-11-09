@@ -239,7 +239,7 @@ The accessibility tensor is
 
 $$
 \Gamma=
-\operatorname{diag}
+{diag}
 (
 \frac{D}{a},
 \frac{D}{a},
