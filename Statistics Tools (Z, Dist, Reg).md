@@ -56,3 +56,81 @@ y = bx + a
 $$
 
 along with the correlation coefficient $r$ and coefficient of determination $r^2$.
+
+## Interesting inputs
+
+### Z-Scores & Distributions
+Try these classic cases:
+
+| Description | x | μ | σ | Why it’s interesting |
+|-------------|----|----|----|----------------------|
+| Exactly 1 SD above mean | 100 | 100 | 15 | Z = 1.0000 (IQ-style) |
+| Exactly 2 SD below mean | 70 | 100 | 15 | Z = −2.0000 |
+| Extremely high | 145 | 100 | 15 | Z ≈ 3.00 (≈ 99.87th percentile) |
+| Near zero | 0 | 0 | 1 | Standard normal |
+| Small SD | 52 | 50 | 1 | Big Z even with modest difference |
+| Negative mean | −10 | −5 | 3 | Works fine with negative values |
+
+### Regression
+Paste any of these into the Regression tab:
+
+**Perfect positive linear**
+```
+1 2
+2 4
+3 6
+4 8
+5 10
+```
+→ slope = 2, r = 1.0000
+
+**Perfect negative**
+```
+1 10
+2 8
+3 6
+4 4
+5 2
+```
+→ slope = −2, r = −1.0000
+
+**Classic textbook example**
+```
+1 2
+2 3
+3 5
+4 4
+5 6
+```
+→ mild positive relationship
+
+**No relationship (horizontal)**
+```
+1 5
+2 5
+3 5
+4 5
+5 5
+```
+→ slope ≈ 0, r = 0
+
+**All x identical (error case)**
+```
+3 1
+3 4
+3 2
+3 7
+```
+→ correctly refuses to compute
+
+**Real-ish data (hours studied vs score)**
+```
+1 55
+2 61
+3 68
+4 74
+5 81
+6 85
+7 90
+```
+→ strong positive slope
