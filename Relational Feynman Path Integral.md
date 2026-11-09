@@ -573,7 +573,7 @@ $$
 
 ---
 
-# 18. Master RDG Equation
+# 18. Final RDG Equation
 
 The entire discrete RDG formalism is summarized by
 
