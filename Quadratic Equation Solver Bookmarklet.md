@@ -55,12 +55,13 @@ javascript:(function(){var a=parseFloat(prompt("Enter a (coeff of x²):","1"));i
 
 ## Installation
 
-1. Create a new bookmark in yo*r browser.
+1. Create a new bookmark in your browser.
 2. Name it **Quadratic solver**.
 3. Paste the bookmarklet code into the bookmarks URL/location field.
 4. Save the bookmark.
 5. Click the bookmark from any webpage to launch the solver.
-*## Input Requirements
+
+## Input Requirements
 
 The bookmarklet accepts:
 
