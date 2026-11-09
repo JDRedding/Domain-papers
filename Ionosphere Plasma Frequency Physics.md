@@ -65,8 +65,8 @@ $$
 (Equivalently, the ordinary frequency $f_p = \omega_p / 2\pi \approx 9 \sqrt{N}$ Hz when $N$ is in $\mathrm{m}^{-3}$.)
 
 
+## Altitudes
 ```
-Altitude
 (km)   Ionospheric Layers (daytime, approximate)
 ────────────────────────────────────────────────
  ~400+ ┌─────────────────────────────────────┐
