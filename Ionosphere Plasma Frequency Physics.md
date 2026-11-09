@@ -64,6 +64,45 @@ $$
 
 (Equivalently, the ordinary frequency $f_p = \omega_p / 2\pi \approx 9 \sqrt{N}$ Hz when $N$ is in $\mathrm{m}^{-3}$.)
 
+
+```
+Altitude
+(km)   Ionospheric Layers (daytime, approximate)
+────────────────────────────────────────────────
+ ~400+ ┌─────────────────────────────────────┐
+       │              F2 Layer               │  ← Highest, densest
+       │         (mainly ~250–400 km)        │     primary HF reflector
+       └─────────────────────────────────────┘
+ ~250  ───────────────────────────────────────
+       ┌─────────────────────────────────────┐
+       │              F1 Layer               │  ← Daytime only
+       │         (mainly ~150–250 km)        │     often merges with F2 at night
+       └─────────────────────────────────────┘
+ ~150  ───────────────────────────────────────
+       ┌─────────────────────────────────────┐
+       │               E Layer               │
+       │         (mainly ~90–150 km)         │  ← Regular + sporadic E
+       └─────────────────────────────────────┘
+  ~90  ───────────────────────────────────────
+       ┌─────────────────────────────────────┐
+       │               D Layer               │  ← Absorbs (especially daytime)
+       │         (mainly ~60–90 km)          │     disappears at night
+       └─────────────────────────────────────┘
+  ~60  ───────────────────────────────────────
+       │                                     │
+       │          Neutral Atmosphere         │
+       │         (troposphere/stratosphere)  │
+       │                                     │
+   0   ═════════════════════════════════════   ← Earth's Surface
+       █████████████████████████████████████
+       █████████████████████████████████████   EARTH
+```
+
+**Notes**
+- Heights are approximate and vary with latitude, season, solar activity, and time of day.
+- At night the D layer vanishes and the F1 layer usually merges into a single F region.
+- The F2 layer is the main long-distance HF reflector.
+
 ### Fundamentals
 - Sunlight ionizes atmospheric gases above roughly 60 km, creating free electrons.
 - Radio waves with frequency below the local plasma frequency are reflected.
