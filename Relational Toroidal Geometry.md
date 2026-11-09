@@ -1,14 +1,14 @@
-#Relational Toroidal Geometry
-**RDG/MFE Framework**
+# Relational Toroidal Geometry
+RDG/MFE Framework
 
 **Abstract**  
-Toroidal differential geometry is reformulated inside the Relational Dynamic Geometry (RDG) framework. The classical labels \((\eta,\theta,\phi)\) are replaced by relational quantities
+Toroidal differential geometry is reformulated inside the Relational Dynamic Geometry (RDG) and Momentum Flux Engine (MFE) framework. The classical labels \((\eta,\theta,\phi)\) are replaced by relational quantities
 \[
 E=\frac{R}{C},\qquad
 S=\Delta\alpha,\qquad
 F=\Phi_c.
 \]
-Geometry is generated from relational accessibility rather than from an ambient Euclidean point set.
+RDG supplies the accessibility structure; MFE supplies the evolution of relational states through that structure. Geometry is generated from relational accessibility rather than from an ambient Euclidean point set.
 
 **1. RDG Foundations**  
 SID decomposition:
@@ -22,7 +22,34 @@ Central principle:
 I\;\longrightarrow\;S\;\longrightarrow\;D.
 \]
 
-**2. Relational State Variables**  
+**2. Momentum Flux Engine (MFE)**  
+The relational toroidal chart defines accessibility and differential structure but does not itself specify state evolution. State evolution is performed by the Momentum Flux Engine. Using the PED decomposition
+\[
+P=\text{Power},\qquad
+E_v=\text{Evaluation},\qquad
+D_v=\text{Dynamics},
+\]
+the MFE governs the evolution of relational states while RDG governs the geometry through which those states evolve. Symbolically,
+\[
+\text{MFE}:
+(E,S,F)
+\;\longmapsto\;
+(E',S',F'),
+\]
+while
+\[
+\text{RDG}:
+(E,S,F)
+\;\longmapsto\;
+D(E,S)
+\;\longmapsto\;
+(h,k)
+\;\longmapsto\;
+\Gamma.
+\]
+Thus RDG supplies accessibility and MFE supplies evolution.
+
+**3. Relational State Variables**  
 The state is the triple of relational facts
 \[
 (E,S,F),
@@ -39,7 +66,7 @@ F=\Phi_c
 \quad\text{(threaded flux/phase)}.
 \]
 
-**3. Relational Accessibility Generator**  
+**4. Relational Accessibility Generator**  
 \[
 D(E,S)=\cosh E-\cos S.
 \]
@@ -48,7 +75,7 @@ Accessibility is the difference between amplified efficiency and orientation mod
 \mathcal{S}=\{D>0\}.
 \]
 
-**4. Relational Structure**  
+**5. Relational Structure**  
 Scale factors:
 \[
 h=\frac{a}{D},\qquad
@@ -66,7 +93,7 @@ Accessibility matrix:
 \Biggr).
 \]
 
-**5. Relational Differential Operators**  
+**6. Relational Differential Operators**  
 
 Gradient
 \[
@@ -137,19 +164,24 @@ Scalar Laplacian
 \Biggr].
 \]
 
-**6. RDG Hierarchy**
+**7. RDG/MFE Hierarchy**
 \[
 (E,S,F)
-\;\longrightarrow\;
+\;\xrightarrow{\text{RDG}}\;
 D(E,S)
-\;\longrightarrow\;
+\;\rightarrow\;
 (h,k)
-\;\longrightarrow\;
+\;\rightarrow\;
 \Gamma
-\;\longrightarrow\;
-\{\nabla,\nabla\cdot,\nabla\times,\nabla^2\}.
+\;\rightarrow\;
+\{\nabla,\nabla\cdot,\nabla\times,\nabla^2\},
 \]
-Relations generate accessibility; accessibility generates structure; structure governs dynamics.
+\[
+(E,S,F)
+\;\xrightarrow{\text{MFE}}\;
+(E',S',F').
+\]
+RDG defines the relational accessibility structure. MFE generates trajectories through that structure.
 
 ---
 
@@ -169,9 +201,9 @@ D=0\quad\Leftrightarrow\quad E=0\text{ and }S\in 2\pi\mathbb{Z}
 \]
 is the boundary of the relational manifold. It corresponds to vanishing realized closure and vanishing accessibility; geometry ceases.
 
-**Appendix C — Minimum-Accessibility Variant**  
+**Appendix C — Regularized Accessibility Variant**  
 Replace the generator by
 \[
 D_\varepsilon=\cosh E-\cos S+\varepsilon,\qquad\varepsilon>0.
 \]
-All formulas of Sections 4–5 remain valid with \(D\) replaced by \(D_\varepsilon\). The chart is then smooth on the closed state space. The constant \(\varepsilon\) is a purely geometric floor; physical readings (noise, residual tension, etc.) are optional and external to the construction.
+All formulas of Sections 5–6 remain valid with \(D\) replaced by \(D_\varepsilon\). The chart is then smooth on the closed state space. The constant \(\varepsilon\) is a purely geometric floor; physical readings remain optional and external to the construction.
