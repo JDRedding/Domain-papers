@@ -195,8 +195,7 @@ The accessibility generator is
 
 $$
 D(E,S)=
-\cosh E
--
+\cosh E-
 \cos S.
 $$
 
