@@ -56,7 +56,7 @@ $$
 H_N(A\rightarrow B) =
 \{
 h=(q_0,q_1,\ldots,q_N)
-\right\}.
+\}.
 $$
 
 Each history
@@ -123,7 +123,7 @@ T_k =
 \frac{m}{2}
 (
 \frac{q_{k+1}-q_k}{\epsilon}
-\right)^2,
+)^2,
 $$
 
 and
@@ -140,7 +140,7 @@ P_k =
 \frac{m}{2}
 (
 \frac{q_{k+1}-q_k}{\epsilon}
-\right)^2 -
+)^2 -
 V(q_k).
 $$
 
@@ -190,7 +190,7 @@ A[h] =
 \frac{m}{2}
 \frac{(q_{k+1}-q_k)^2}{\epsilon} -
 \epsilon V(q_k)
-\right].
+].
 $$
 
 Equivalently,
@@ -269,7 +269,7 @@ W(x) =
 \exp
 (
 \frac{i}{\hbar}x
-\right).
+).
 $$
 
 Hence
@@ -280,7 +280,7 @@ $$
 (
 \frac{i}{\hbar}
 A[h]
-\right).
+).
 $$
 
 Since
@@ -297,7 +297,7 @@ $$
 (
 \frac{i}{\hbar}
 S[h]
-\right).
+).
 $$
 
 ---
@@ -325,7 +325,7 @@ Z_N =
 (
 \frac{m}
 {2\pi i\hbar\epsilon}
-\right)^{N/2}.
+)^{N/2}.
 $$
 
 RDG interpretation:
@@ -356,17 +356,17 @@ R_N(B,A) =
 (
 \frac{m}
 {2\pi i\hbar\epsilon}
-\right)^{N/2}
+)^{N/2}
 \int
 (
 \prod_{j=1}^{N-1}
 dq_j
-\right)
+)
 \exp
 (
 \frac{i}{\hbar}
 A[h]
-\right).
+).
 $$
 
 Substituting the accessibility functional,
@@ -376,18 +376,18 @@ R_N(B,A) =
 (
 \frac{m}
 {2\pi i\hbar\epsilon}
-\right)^{N/2}
+)^{N/2}
 \int
 (
 \prod_{j=1}^{N-1}
 dq_j
-\right)
+)
 \exp
 [
 \frac{i}{\hbar}
 \sum_{k=0}^{N-1}
 \epsilon E_k(P_k)
-\right].
+].
 $$
 
 ---
@@ -440,7 +440,7 @@ R(B,A) =
 (
 \frac{i}{\hbar}
 A[h]
-\right)
+)
 \mathcal D h.
 $$
 
@@ -457,7 +457,7 @@ R(B,A) =
 (
 \frac{i}{\hbar}
 S[h]
-\right)
+)
 \mathcal D h.
 $$
 
@@ -504,7 +504,7 @@ $$
 \frac{d}{dt}
 (
 \frac{\partial L}{\partial \dot q}
-\right) -
+) -
 \frac{\partial L}{\partial q} =
 0.
 $$
@@ -551,7 +551,7 @@ $$
 P_k = \frac{m}{2}
 (
 \frac{q_{k+1}-q_k}{\epsilon}
-\right)^2 -
+)^2 -
 V(q_k).
 $$
 
@@ -585,7 +585,7 @@ W
 (
 \sum_{k=0}^{N-1}
 \epsilon E_k(P_k)
-\right)
+)
 d\mu_N(h).
 $$
 
@@ -596,7 +596,7 @@ Z_N =
 (
 \frac{m}
 {2\pi i\hbar\epsilon}
-\right)^{N/2},
+)^{N/2},
 $$
 
 $$
@@ -610,7 +610,7 @@ P_k =
 \frac{m}{2}
 (
 \frac{q_{k+1}-q_k}{\epsilon}
-\right)^2 -
+)^2 -
 V(q_k),
 $$
 
