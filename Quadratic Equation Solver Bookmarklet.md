@@ -8,9 +8,9 @@ $$
 
 and opens a formatted results window containing a complete analysis of the quadratic.
 
-- No external libraries*are required.
+- No external libraries are required.
 - No network connection is required for calculations.
-- Wo*fram|Alpha and Desmos links are op*ional convenience features.
+- Wolfram|Alpha and Desmos links are optional convenience features.
 - Popup windows must be allowed in the browser for the results window to appear.
 
 ## Features
