@@ -183,8 +183,7 @@ $$F$$ represents accumulated relational influence threaded through a closed rela
 In holonomy form,
 
 $$
-\mathrm{Hol}(C)
-=
+\mathrm{Hol}(C)=
 e^{i2\pi F}.
 $$
 
@@ -195,8 +194,7 @@ $$
 The accessibility generator is
 
 $$
-D(E,S)
-=
+D(E,S)=
 \cosh E
 -
 \cos S.
@@ -212,8 +210,7 @@ Accessibility is interpreted as the difference between:
 The admissible relational manifold is
 
 $$
-\mathcal{S}
-=
+\mathcal{S}=
 \{
 (E,S,F)
 :
@@ -228,14 +225,12 @@ $$
 The scale factors are
 
 $$
-h
-=
+h=
 \frac{a}{D},
 $$
 
 $$
-k
-=
+k=
 \frac{a\sinh E}{D}.
 $$
 
@@ -244,8 +239,7 @@ These generate the complete geometric structure.
 The accessibility tensor is
 
 $$
-\Gamma
-=
+\Gamma=
 \operatorname{diag}
 \left(
 \frac{D}{a},
@@ -277,16 +271,13 @@ All differential operators follow directly from the scale factors.
 ## 6.1 Gradient
 
 $$
-\nabla f
-=
+\nabla f=
 \hat{\mathbf e}_E
 \frac{D}{a}
-\partial_E f
-+
+\partial_E f+
 \hat{\mathbf e}_S
 \frac{D}{a}
-\partial_S f
-+
+\partial_S f+
 \hat{\mathbf e}_F
 \frac{D}{a\sinh E}
 \partial_F f.
@@ -297,8 +288,7 @@ $$
 ## 6.2 Divergence
 
 $$
-\nabla\cdot\mathbf A
-=
+\nabla\cdot\mathbf A=
 \frac{D^3}
      {a^3\sinh E}
 \left[
@@ -330,8 +320,7 @@ $$
 ## 6.3 Curl
 
 $$
-(\nabla\times\mathbf A)_E
-=
+(\nabla\times\mathbf A)_E=
 \frac{D^2}
      {a^2\sinh E}
 \left[
@@ -340,8 +329,7 @@ $$
 \frac{a\sinh E}
      {D}
 A_F
-\right)
--
+\right)-
 \partial_F
 \left(
 \frac{a}
@@ -352,8 +340,7 @@ A_S
 $$
 
 $$
-(\nabla\times\mathbf A)_S
-=
+(\nabla\times\mathbf A)_S=
 \frac{D^2}
      {a^2\sinh E}
 \left[
@@ -362,8 +349,7 @@ $$
 \frac{a}
      {D}
 A_E
-\right)
--
+\right)-
 \partial_E
 \left(
 \frac{a\sinh E}
@@ -384,8 +370,7 @@ $$
 \frac{a}
      {D}
 A_S
-\right)
--
+\right)-
 \partial_S
 \left(
 \frac{a}
@@ -400,8 +385,7 @@ $$
 ## 6.4 Scalar Laplacian
 
 $$
-\nabla^2 f
-=
+\nabla^2 f=
 \frac{D^3}
      {a^2\sinh E}
 \left[
@@ -410,15 +394,13 @@ $$
 \frac{\sinh E}
      {D}
 \partial_E f
-\right)
-+
+\right)+
 \partial_S
 \left(
 \frac{\sinh E}
      {D}
 \partial_S f
-\right)
-+
+\right)+
 \partial_F
 \left(
 \frac{1}
@@ -488,8 +470,7 @@ The toroidal differential operator algebra can be reconstructed entirely from re
 The state
 
 $$
-(E,S,F)
-=
+(E,S,F)=
 \left(
 \frac{R}{C},
 \Delta\alpha,
@@ -506,10 +487,8 @@ $$
 A single accessibility generator
 
 $$
-D(E,S)
-=
-\cosh E
--
+D(E,S)=
+\cosh E-
 \cos S
 $$
 
@@ -599,12 +578,9 @@ The singularity is retained as a meaningful relational boundary.
 A globally regular alternative is obtained by replacing the generator with
 
 $$
-D_\varepsilon
-=
-\cosh E
--
-\cos S
-+
+D_\varepsilon=
+\cosh E-
+\cos S+
 \varepsilon,
 \qquad
 \varepsilon>0.
