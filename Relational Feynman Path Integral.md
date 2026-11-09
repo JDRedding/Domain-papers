@@ -54,7 +54,7 @@ Define the discrete relational history space
 
 $$
 H_N(A\rightarrow B) =
-\left\{
+\{
 h=(q_0,q_1,\ldots,q_N)
 \right\}.
 $$
@@ -121,7 +121,7 @@ with
 $$
 T_k =
 \frac{m}{2}
-\left(
+(
 \frac{q_{k+1}-q_k}{\epsilon}
 \right)^2,
 $$
@@ -138,7 +138,7 @@ Thus
 $$
 P_k =
 \frac{m}{2}
-\left(
+(
 \frac{q_{k+1}-q_k}{\epsilon}
 \right)^2 -
 V(q_k).
@@ -186,7 +186,7 @@ Substituting the slice form,
 $$
 A[h] =
 \sum_{k=0}^{N-1}
-\left[
+[
 \frac{m}{2}
 \frac{(q_{k+1}-q_k)^2}{\epsilon} -
 \epsilon V(q_k)
@@ -267,7 +267,7 @@ Ordinary quantum mechanics chooses
 $$
 W(x) =
 \exp
-\left(
+(
 \frac{i}{\hbar}x
 \right).
 $$
@@ -277,7 +277,7 @@ Hence
 $$
 \Phi[h] =
 \exp
-\left(
+(
 \frac{i}{\hbar}
 A[h]
 \right).
@@ -294,7 +294,7 @@ this becomes
 $$
 \Phi[h] =
 \exp
-\left(
+(
 \frac{i}{\hbar}
 S[h]
 \right).
@@ -322,7 +322,7 @@ The exact discrete normalization is
 
 $$
 Z_N =
-\left(
+(
 \frac{m}
 {2\pi i\hbar\epsilon}
 \right)^{N/2}.
@@ -353,17 +353,17 @@ Expanded,
 
 $$
 R_N(B,A) =
-\left(
+(
 \frac{m}
 {2\pi i\hbar\epsilon}
 \right)^{N/2}
 \int
-\left(
+(
 \prod_{j=1}^{N-1}
 dq_j
 \right)
 \exp
-\left(
+(
 \frac{i}{\hbar}
 A[h]
 \right).
@@ -373,17 +373,17 @@ Substituting the accessibility functional,
 
 $$
 R_N(B,A) =
-\left(
+(
 \frac{m}
 {2\pi i\hbar\epsilon}
 \right)^{N/2}
 \int
-\left(
+(
 \prod_{j=1}^{N-1}
 dq_j
 \right)
 \exp
-\left[
+[
 \frac{i}{\hbar}
 \sum_{k=0}^{N-1}
 \epsilon E_k(P_k)
@@ -437,7 +437,7 @@ $$
 R(B,A) =
 \int_H
 \exp
-\left(
+(
 \frac{i}{\hbar}
 A[h]
 \right)
@@ -454,7 +454,7 @@ $$
 R(B,A) =
 \int_H
 \exp
-\left(
+(
 \frac{i}{\hbar}
 S[h]
 \right)
@@ -502,7 +502,7 @@ which yields the Euler-Lagrange equation
 
 $$
 \frac{d}{dt}
-\left(
+(
 \frac{\partial L}{\partial \dot q}
 \right) -
 \frac{\partial L}{\partial q} =
@@ -549,10 +549,9 @@ $$
 
 $$
 P_k = \frac{m}{2}
-\left(
+(
 \frac{q_{k+1}-q_k}{\epsilon}
-\right)^2
--
+\right)^2 -
 V(q_k).
 $$
 
@@ -583,7 +582,7 @@ R_N(B,A) =
 Z_N
 \int_{H_N(A\rightarrow B)}
 W
-\left(
+(
 \sum_{k=0}^{N-1}
 \epsilon E_k(P_k)
 \right)
@@ -594,7 +593,7 @@ with
 
 $$
 Z_N =
-\left(
+(
 \frac{m}
 {2\pi i\hbar\epsilon}
 \right)^{N/2},
@@ -609,7 +608,7 @@ $$
 $$
 P_k =
 \frac{m}{2}
-\left(
+(
 \frac{q_{k+1}-q_k}{\epsilon}
 \right)^2 -
 V(q_k),
