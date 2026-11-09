@@ -359,24 +359,23 @@ A_F
 $$
 
 $$
-(\nabla\times\mathbf A)_F
-=
+(\nabla\times\mathbf A)_F=
 \frac{D^2}
      {a^2}
 \left[
 \partial_E
-\left(
+(
 \frac{a}
      {D}
 A_S
 \right)-
 \partial_S
-\left(
+(
 \frac{a}
      {D}
 A_E
-\right)
-\right].
+)
+].
 $$
 
 ---
