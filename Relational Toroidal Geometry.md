@@ -525,6 +525,8 @@ The resulting system preserves the mathematical structure of classical toroidal 
 - Null-closure boundary: D = 0 occurs at E = 0 and S in 2πZ, describing a no-accessibility boundary
 - Regularized variant: Dε = cosh E - cos S + ε removes the singularity while preserving the same formal structure
 
+*See also:* [Relational Origins and Equilibrium Loci](https://github.com/JDRedding/Domain-papers/blob/main/Relational%20Origins%20and%20Equilibrium%20Loci.md)
+
 ### Appendix A — Classical Correspondence
 
 The relational variables correspond to the classical toroidal labels by
