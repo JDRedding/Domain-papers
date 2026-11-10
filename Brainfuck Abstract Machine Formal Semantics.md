@@ -993,7 +993,7 @@ $$
 D : P(pc) \to u,
 $$
 
-where $u$ is a micro-operation. In RDG this is interpreted as
+where $u$ is a micro-operation. This is interpreted as
 
 $$
 u = \Gamma_{\mathrm{local}}\bigl(P(pc)\bigr).
