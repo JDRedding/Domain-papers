@@ -2,6 +2,50 @@
 
 A consolidated mathematical reference covering plane sailing, dead reckoning, rhumb-line navigation, great-circle navigation, celestial navigation, Mercator sailing, and magnetic navigation.
 
+## Route Geometry
+
+$$
+\text{Sphere}
+\rightarrow
+\text{Great Circles}
+\rightarrow
+\text{Rhumb Lines}
+$$
+
+## Daily Navigation
+
+$$
+Speed \times Time
+\rightarrow
+Distance
+\rightarrow
+Dead\ Reckoning
+\rightarrow
+Estimated\ Position
+$$
+
+## Position Correction
+
+$$
+Dead\ Reckoning +
+Celestial\ Observation =
+Navigational\ Fix
+$$
+
+## Historical Ocean Navigation
+
+$$
+\boxed{
+DR +
+Plane\ Sailing +
+Mid\ Latitude\ Sailing +
+Celestial\ Navigation +
+Mercator\ Sailing +
+Magnetic\ Navigation =
+Classical\ Ocean\ Navigation
+}
+$$
+
 ---
 
 # 1. Fundamental Quantities
@@ -938,50 +982,4 @@ $$
 C=T-Var-Dev
 $$
 
----
 
-# 34. Complete Classical Navigation Framework
-
-## Route Geometry
-
-$$
-\text{Sphere}
-\rightarrow
-\text{Great Circles}
-\rightarrow
-\text{Rhumb Lines}
-$$
-
-## Daily Navigation
-
-$$
-Speed \times Time
-\rightarrow
-Distance
-\rightarrow
-Dead\ Reckoning
-\rightarrow
-Estimated\ Position
-$$
-
-## Position Correction
-
-$$
-Dead\ Reckoning +
-Celestial\ Observation =
-Navigational\ Fix
-$$
-
-## Historical Ocean Navigation
-
-$$
-\boxed{
-DR +
-Plane\ Sailing +
-Mid\ Latitude\ Sailing +
-Celestial\ Navigation +
-Mercator\ Sailing +
-Magnetic\ Navigation =
-Classical\ Ocean\ Navigation
-}
-$$
