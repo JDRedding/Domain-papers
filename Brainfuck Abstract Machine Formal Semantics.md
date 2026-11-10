@@ -540,3 +540,165 @@ $$
 $$
 
 ---
+
+## Appendix: Brainfuck Machine Block Semantics
+This is essentially the hardware-block equivalent of the formal Brainfuck semantics, with explicit Instruction Memory → PC → Decoder → DP/ALU/Tape/I/O/Loop-Stack control paths.
+
+Formal Hardware Architecture
+```text
+                           Address Bus
+                                |
+                                v
+
++------------------+     +-------------+     +----------------------+
+| INSTRUCTION      |---->| PROGRAM     |---->| DECODER / CONTROL    |
+| MEMORY           |     | COUNTER     |     | MICROCODE UNIT       |
+|                  |     | (PC)        |     |                      |
+| P = {p0,p1...}   |     | pc          |     | D(P(pc))             |
++------------------+     +-------------+     +----------+-----------+
+                                                      |
+                                               Control Signals
+                                                      |
+         +--------------------------------------------+------------------+
+         |                                            |                  |
+         v                                            v                  v
+
++------------------+                    +------------------+   +------------------+
+| DATA POINTER     |<------------------>| MEMORY TAPE      |<->| I/O UNIT         |
+| REGISTER (DP)    | Address            |                  |   |                  |
+|                  |                    | T : Z -> Zm      |   | Input Stream I   |
+| dp               |                    |                  |   | Output Stream O  |
++--------+---------+                    +---------+--------+   +------------------+
+         |                                        ^
+         |                                        |
+         | Address                                | Value
+         v                                        |
++------------------+                              |
+| ADDRESS          |                              |
+| GENERATOR        |                              |
+| dp+1 , dp-1      |                              |
++--------+---------+                              |
+         |                                        |
+         +----------------+-----------------------+
+                          |
+                          v
+
+                  +------------------+
+                  |      ALU         |
+                  |                  |
+                  | x := x + 1 mod m |
+                  | x := x - 1 mod m |
+                  |                  |
+                  +--------+---------+
+                           |
+                           |
+                           v
+
+                    T(dp) Updated
+
+
++---------------------------------------------------------------+
+| LOOP CONTROL UNIT                                             |
+|                                                               |
+| match(pc)                                                     |
+|                                                               |
+|      +-----------------------------------------------+        |
+|      | LOOP STACK S                                 |        |
+|      |                                               |        |
+|      | PUSH(pc)                                      |        |
+|      | POP()                                         |        |
+|      | TOP(S)                                        |        |
+|      +----------------------+------------------------+        |
+|                             |                                 |
+|                             v                                 |
+|                    Backward / Forward                         |
+|                     PC Jump Control                           |
++-----------------------------+---------------------------------+
+                              |
+                              v
+
+                        +-----------+
+                        |    PC     |
+                        | Update    |
+                        +-----------+
+```
+
+State-flow view:
+```text
+σ = (T, dp, pc, S, I, O)
+
+          FETCH
+             |
+             v
+      P(pc) ------> Decoder
+                        |
+                        v
+             +----------+----------+
+             |                     |
+             v                     v
+
+      Data Ops              Loop Control
+   (+,-,>,<,.,,)             ([ and ])
+
+             |                     |
+             +----------+----------+
+                        |
+                        v
+
+                σ(k+1) = F(σ(k),P(pc))
+
+                        |
+                        v
+
+      (T', dp', pc', S', I', O')
+```
+
+Control-path view:
+```text
+Instruction Memory
+        |
+        v
+      [PC]
+        |
+        v
+   Instruction
+      Fetch
+        |
+        v
++----------------+
+| Decoder / CU   |
++----------------+
+   |    |    |
+   |    |    +------> Loop Stack Control
+   |    |
+   |    +-----------> DP Control
+   |
+   +---------------> ALU Control
+                          |
+                          v
+                    Memory Tape
+                          |
+                          v
+                      I/O Unit
+```
+
+Mathematically:
+```text
+Instruction Memory : P(pc)
+
+Decoder            : u = D(P(pc))
+
+State              : σ = (T,dp,pc,S,I,O)
+
+Transition         : σ(k+1) = F(σ(k),u)
+
+ALU                : ALU(x,δ)=(x+δ) mod m
+
+Memory Tape        : T : Z -> Zm
+
+Loop Control       : pc' = match(pc)
+
+Machine Evolution  : σ(k+1)=F(σ(k),P(pc))
+```
+
+
