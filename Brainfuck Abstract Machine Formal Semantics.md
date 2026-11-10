@@ -74,6 +74,13 @@ $$
 
 Program memory is fixed during execution.
 
+### Notes 
+
+- The stack is only required for the dynamic jump-back of `]`. The static `match` function is sufficient for a pure jump-table implementation (common in optimised interpreters).
+- Some formalisations treat the loop stack as optional and rely solely on the precomputed `match` table; both are equivalent.
+- The tape is formally infinite in both directions; real implementations usually use a finite array with dynamic growth or a fixed large size.
+- Input/output are treated as streams; the precise type of the streams (list of bytes, lazy stream, etc.) can be made more categorical if desired.
+
 ---
 
 # Memory Tape
@@ -701,4 +708,148 @@ Loop Control       : pc' = match(pc)
 Machine Evolution  : σ(k+1)=F(σ(k),P(pc))
 ```
 
+## Appendix: Condensed Mathematics
 
+### Machine and State Space
+
+$$
+\mathcal{M} = (T, dp, pc, S, I, O, P, m)
+$$
+
+$$
+\Sigma = \{ (T, dp, pc, S, I, O) \}
+$$
+
+- $T : \mathbb{Z} \to \mathbb{Z}/m\mathbb{Z}$ (infinite tape, cells modulo $m$, typically $m=256$)
+- $dp \in \mathbb{Z}$ (data pointer)
+- $pc \in \{0, \dots, |P|\}$ (program counter; halt when $pc \ge |P|$)
+- $S$ : stack of program counters (loop control)
+- $I, O$ : input/output streams
+- $P = (p_0, p_1, \dots, p_{n-1})$ with $p_i \in \{ \mathtt{>}, \mathtt{<}, \mathtt{+}, \mathtt{-}, \mathtt{.}, \mathtt{,}, \mathtt{[}, \mathtt{]} \}$
+
+Initial state (usual convention):
+
+$$
+T_0(x) = 0 \quad \forall x, \quad dp_0 = 0, \quad pc_0 = 0, \quad S_0 = \varepsilon, \quad I_0 = \text{input}, \quad O_0 = \varepsilon
+$$
+
+### Global Transition
+
+$$
+\sigma_{k+1} = \delta(\sigma_k) = F\bigl(\sigma_k,\, P(pc_k)\bigr)
+$$
+
+(The decoder $D$ is optional; it simply maps the opcode to the corresponding micro-operation.)
+
+### Instruction Rules
+
+**Pointer movement**
+
+$$
+\begin{align*}
+\mathtt{>} &\colon && (T, dp, pc, S, I, O) \to (T, dp+1, pc+1, S, I, O) \\
+\mathtt{<} &\colon && (T, dp, pc, S, I, O) \to (T, dp-1, pc+1, S, I, O)
+\end{align*}
+$$
+
+**Arithmetic (ALU)**
+
+$$
+\begin{align*}
+\mathtt{+} &\colon && T' = T[dp \mapsto (T(dp)+1) \bmod m],\quad pc' = pc+1 \\
+\mathtt{-} &\colon && T' = T[dp \mapsto (T(dp)-1) \bmod m],\quad pc' = pc+1
+\end{align*}
+$$
+
+Unified form:
+
+$$
+\text{ALU}(x,\delta) = (x+\delta) \bmod m, \quad \delta \in \{-1,+1\}
+$$
+
+**I/O**
+
+$$
+\begin{align*}
+\mathtt{.} &\colon && O' = O \cdot \mathrm{chr}(T(dp)),\quad pc' = pc+1 \\
+\mathtt{,} &\colon && (a,I') = \mathrm{read}(I),\quad T' = T[dp \mapsto a],\quad pc' = pc+1
+\end{align*}
+$$
+
+(EOF behaviour is implementation-defined; common choices are $a=0$, $a=-1$, or leave the cell unchanged.)
+
+### Loop Control (Matching and Stack)
+
+Define the static matching function
+
+$$
+\mathrm{match} : \{0,\dots,n-1\} \to \{0,\dots,n-1\}
+$$
+
+such that
+
+$$
+P(i)=\mathtt{[} \iff P(\mathrm{match}(i))=\mathtt{]}
+\quad\text{and}\quad
+\mathrm{match}(\mathrm{match}(i))=i.
+$$
+
+**Runtime stack operations**
+
+$$
+\begin{align*}
+\mathrm{top}(S) &= \text{most recent pushed } pc \\
+\mathrm{push}(S,x) &= S \cdot x \\
+\mathrm{pop}(S) &= S\text{ without top}
+\end{align*}
+$$
+
+**Loop rules** (Standard semantics)
+
+$$
+\begin{align\*}
+\mathtt{[} &\colon &&
+\begin{cases}
+T(dp)=0 & \Rightarrow\quad pc' = \mathrm{match}(pc)+1,\quad S'=S \\
+T(dp)\ne 0 & \Rightarrow\quad pc' = pc+1,\quad S' = \mathrm{push}(S,pc)
+\end{cases}
+\mathtt{]} &\colon &&
+\begin{cases}
+T(dp)\ne 0 & \Rightarrow\quad pc' = \mathrm{top}(S),\quad S'=S \\
+T(dp)=0 & \Rightarrow\quad pc' = pc+1,\quad S' = \mathrm{pop}(S)
+\end{cases}
+\end{align\*}
+$$
+
+This is the classic “jump back to the matching `[` and re-test” behaviour. The stack stores the address of the opening bracket so that `]` can jump exactly there when the cell is nonzero.
+
+### Execution Trace and Halting
+
+$$
+\sigma_0 \to \sigma_1 \to \sigma_2 \to \cdots \to \sigma_f
+$$
+
+where $pc_f \ge |P|$ (or an explicit halt state is reached).
+
+### Hardware Control Equation 
+This is the exact state-evolution law of the machine.
+
+$$
+\sigma_{k+1} =
+F\bigl(
+\sigma_k,\;
+D\bigl(P(pc_k)\bigr)
+\bigr)
+$$
+
+or, eliding the explicit decoder,
+
+$$
+\boxed{
+\sigma_{k+1} =
+F\bigl(
+\sigma_k,\;
+P(pc_k)
+\bigr)
+}
+$$
