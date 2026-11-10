@@ -97,7 +97,7 @@ Geometry is therefore viewed as an emergent consequence of underlying relational
 
 ## 2. Momentum Flux Engine (MFE)
 
-The relational toroidal chart defines accessibility and differential structure but does not itself specify state evolution.
+Here, the relational toroidal chart defines accessibility and differential structure but does not itself specify state evolution.
 
 State evolution is performed by the Momentum Flux Engine (MFE).
 
