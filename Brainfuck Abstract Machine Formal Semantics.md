@@ -1,5 +1,38 @@
 # Brainfuck Abstract Machine Formal Semantics
 
+## Machine Components
+
+Let
+
+$$
+\mathcal{M} =
+(T,dp,pc,S,I,O,P,m)
+$$
+
+where
+
+```text
+T   = Memory Tape
+dp  = Data Pointer register
+pc  = Program Counter register
+S   = Loop Stack
+I   = Input stream
+O   = Output stream
+P   = Instruction Memory
+m   = Cell modulus (typically 256)
+```
+
+State space:
+
+$$
+\Sigma =
+\{
+(T,dp,pc,S,I,O)
+\}
+$$
+
+Program memory is fixed during execution.
+
 ## Hardware Control Equation
 
 The architecture may be summarized as
@@ -40,39 +73,6 @@ P(pc_k)
 $$
 
 which is the formal state-evolution law corresponding to the hardware architecture.
-
-## Machine Components
-
-Let
-
-$$
-\mathcal{M} =
-(T,dp,pc,S,I,O,P,m)
-$$
-
-where
-
-```text
-T   = Memory Tape
-dp  = Data Pointer register
-pc  = Program Counter register
-S   = Loop Stack
-I   = Input stream
-O   = Output stream
-P   = Instruction Memory
-m   = Cell modulus (typically 256)
-```
-
-State space:
-
-$$
-\Sigma =
-\{
-(T,dp,pc,S,I,O)
-\}
-$$
-
-Program memory is fixed during execution.
 
 ### Notes 
 
