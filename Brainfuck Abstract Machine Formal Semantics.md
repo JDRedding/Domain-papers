@@ -603,7 +603,7 @@ Formal Hardware Architecture
 | match(pc)                                                     |
 |                                                               |
 |      +-----------------------------------------------+        |
-|      | LOOP STACK S                                 |        |
+|      | LOOP STACK S                                  |        |
 |      |                                               |        |
 |      | PUSH(pc)                                      |        |
 |      | POP()                                         |        |
