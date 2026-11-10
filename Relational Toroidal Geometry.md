@@ -77,7 +77,7 @@ I=\text{Interaction},
 D=\text{Dynamics}.
 $$
 
-The central RDG principle is
+A relative central RDG principle is
 
 $$
 I
