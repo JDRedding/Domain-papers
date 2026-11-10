@@ -387,7 +387,7 @@ Preferred computational form:
 
 $$
 C=
-\operatorname{atan2}
+{atan2}
 \left(
 \sin\Delta\lambda,
 \cos L_1\tan L_2 -
