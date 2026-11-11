@@ -1,6 +1,9 @@
 # MathJax
 **MathJax** is an open-source JavaScript library for rendering high-quality mathematical notation (LaTeX, MathML, and AsciiMath) in web browsers, with strong accessibility support (screen readers, expression explorer, speech generation).
 
+## Display engine 
+MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. It was designed with the goal of consolidating advances in web technologies into a single, definitive, math-on-the-web platform supporting the major browsers and operating systems, including those on mobile devices.
+
 ### GitHub repositories
 
 | Repository | Description | Link |
