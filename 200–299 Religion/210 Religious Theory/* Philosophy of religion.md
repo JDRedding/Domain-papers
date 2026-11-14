@@ -7,7 +7,46 @@
 
 The philosophy of religion asks fundamental questions about God, the nature of the divine, and the relation between the world and the sacred. It asks whether religious claims are coherent, justified, or compatible with human experience. The field draws on theology, metaphysics, epistemology, ethics, and logic in order to test the rationality and implications of religious belief.
 
-## Key Questions
+The philosophy of religion provides a rigorous, critical framework for examining some of humanity’s most enduring existential questions. By relying on reason, logic, and philosophical analysis rather than presupposition or dogma, it enables both believers and skeptics to evaluate the coherence, justification, and implications of religious traditions.
+
+---
+
+```
+      +-----------------------------------------+
+      |       PHILOSOPHY OF RELIGION            |
+      +-----------------------------------------+
+                           |
+      +--------------------+--------------------+
+      |                                         |
+      v                                         v
++------------------+                    +------------------+
+|    THEISM        |                    | CRITIQUE / LOGIC |
+| Rational proofs, |                    | The problem of   |
+| divine attributes|                    | evil, skepticism |
++------------------+                    +------------------+
+      |                                         |
+      +--------------------+--------------------+
+                           |
+                           v
+      +-----------------------------------------+
+      |        EXISTENTIAL & ANALYTIC           |
+      |   Subjective faith, modal logic,        |
+      |   epistemology of belief                |
+      +-----------------------------------------+
+```
+
+---
+
+## Core Themes & Concepts
+
+Philosophers typically approach this domain through the intersection of epistemology and metaphysics when evaluating religious belief:
+
+- **Epistemic Justification**: Examining whether religious beliefs require empirical or logical evidence to count as rational, or whether they can function as “properly basic” beliefs (a view famously defended by Alvin Plantinga).
+- **Modal Logic and Divine Attributes**: Analyzing what it means for a being to be *maximally great*—omnipotent, omniscient, and wholly good—across all possible worlds.
+- **Theodicy vs. Defense**: Distinguishing a *defense* (a logically possible scenario in which God and evil coexist, offered to defeat a skeptical argument) from a *theodicy* (an account of the actual moral or cosmic reasons God permits suffering).
+
+## Exploring Further 
+### Key Questions
 
 Philosophers of religion commonly address questions such as:
 
@@ -17,7 +56,7 @@ Philosophers of religion commonly address questions such as:
 - **Religious experience.** Do mystical or personal experiences reliably indicate God or the divine?
 - **Afterlife and immortality.** Death, the soul, and ideas of heaven, hell, or reincarnation are examined philosophically.
 
-## Major Approaches and Thinkers
+### Major Approaches and Thinkers
 
 - **Classical theism.** Associated with Plato, Aristotle, Augustine, and Aquinas, this approach studies the attributes of God and seeks a rational account of the divine.
 - **Existential and phenomenological approaches.** Thinkers such as Kierkegaard and Tillich emphasize the subjective, existential significance of faith and the human response to the divine.
