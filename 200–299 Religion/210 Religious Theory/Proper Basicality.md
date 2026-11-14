@@ -1,4 +1,4 @@
-# Plantinga / Proper Basicality
+# Proper Basicality
 - Epistemic Justification
 - (Alvin) Plantinga’s claim 
 
