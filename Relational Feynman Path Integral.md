@@ -4,6 +4,67 @@
 
 **RDG (Relational Dynamics Geometry)** is the overarching framework in which physical reality is described as a network of evolving relations rather than isolated objects. Within RDG, every physical process is represented by admissible relational histories connecting an initial configuration to a final configuration. **SID (Structure, Interaction, Dynamics)** is the geometric and organizational decomposition of the theory: **Structure (S)** specifies the space of admissible configurations or histories, **Interaction (I)** specifies how those histories are weighted, evaluated, or related, and **Dynamics (D)** specifies the global evolution obtained by aggregating all admissible histories. Complementing SID is **PED (Power, Evaluation, Dynamics)**, which describes the local physics associated with each elementary step of a history. **Power (P)** represents the local content being carried by a state transition, such as kinetic minus potential energy in ordinary mechanics; **Evaluation (E)** maps that power content into a quantitative contribution to the history accessibility functional; and **Dynamics (D)** represents the actual transition from one state to the next. In the discrete path-integral realization developed here, PED acts locally on each slice of a history, producing slice contributions that accumulate into a global accessibility functional $A[h]$, while SID acts globally on the space of histories itself. The standard Feynman path integral is recovered as the special case in which the SID interaction operator weights each history according to $W(x)=e^{ix/\hbar}$, making the classical action $S[h]$ equivalent to the RDG accessibility functional $A[h]$.
 
+The entire discrete RDG formalism is summarized by
+
+$$
+R_N(B,A) =
+Z_N
+\int_{H_N(A\rightarrow B)}
+W
+(
+\sum_{k=0}^{N-1}
+\epsilon E_k(P_k)
+)
+d\mu_N(h).
+$$
+
+with
+
+$$
+Z_N =
+(
+\frac{m}
+{2\pi i\hbar\epsilon}
+)^{N/2},
+$$
+
+$$
+d\mu_N(h) =
+\prod_{j=1}^{N-1}
+dq_j,
+$$
+
+$$
+P_k =
+\frac{m}{2}
+(
+\frac{q_{k+1}-q_k}{\epsilon}
+)^2 -
+V(q_k),
+$$
+
+$$
+A[h] =
+\sum_{k=0}^{N-1}
+\epsilon E_k(P_k),
+$$
+
+and quantum mechanics recovered by
+
+$$
+W(x) =
+e^{ix/\hbar}.
+$$
+
+Then
+
+$$
+P(B,A) =
+|R(B,A)|^2.
+$$
+
+---
+
 ---
 
 # 1. Endpoint Definition
@@ -575,65 +636,3 @@ $$
 
 ---
 
-# 18. Final RDG Equation
-
-The entire discrete RDG formalism is summarized by
-
-$$
-R_N(B,A) =
-Z_N
-\int_{H_N(A\rightarrow B)}
-W
-(
-\sum_{k=0}^{N-1}
-\epsilon E_k(P_k)
-)
-d\mu_N(h).
-$$
-
-with
-
-$$
-Z_N =
-(
-\frac{m}
-{2\pi i\hbar\epsilon}
-)^{N/2},
-$$
-
-$$
-d\mu_N(h) =
-\prod_{j=1}^{N-1}
-dq_j,
-$$
-
-$$
-P_k =
-\frac{m}{2}
-(
-\frac{q_{k+1}-q_k}{\epsilon}
-)^2 -
-V(q_k),
-$$
-
-$$
-A[h] =
-\sum_{k=0}^{N-1}
-\epsilon E_k(P_k),
-$$
-
-and quantum mechanics recovered by
-
-$$
-W(x) =
-e^{ix/\hbar}.
-$$
-
-Then
-
-$$
-P(B,A) =
-|R(B,A)|^2.
-$$
-
----
