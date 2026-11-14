@@ -17,7 +17,7 @@ $$
 \end{align*}
 $$
 
-(The second premise is the characteristic S5 axiom of modal collapse for necessary existence.)
+(The second premise is the characteristic axiom of modal collapse for necessary existence.)
 
 **Divine attributes** are often formalized as:
 
