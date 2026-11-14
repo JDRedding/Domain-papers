@@ -1,6 +1,6 @@
 # Plantinga / Proper Basicality
 - Epistemic Justification
-- Plantinga’s claim 
+- (Alvin) Plantinga’s claim 
 
 The formal claim is usually expressed with the notions of **warrant** and **proper function**:
 
