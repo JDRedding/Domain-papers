@@ -7,7 +7,7 @@ Standard notation uses **possible-worlds semantics** (Kripke frames).
 - $\Diamond \phi$ = “it is possible that $\phi$” (true in at least one accessible world)
 - $G$ = the property of being a maximally great being (omnipotent, omniscient, and perfectly good in every possible world)
 
-**Plantinga’s modal ontological argument** (simplified form in S5):
+Alvin Plantinga’s **modal ontological argument** (simplified form in S5):
 
 $$
 \begin{align*}
