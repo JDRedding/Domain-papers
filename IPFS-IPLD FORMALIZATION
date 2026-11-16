@@ -133,6 +133,22 @@ where
 - Interaction = discovery and exchange processes
 - Dynamics    = mutable evolution through IPNS
 
+ONTOLOGICAL CORE
+----------------
+S = (B, R)   where R subset of B x B is the Merkle-link relation
+
+Id(M) = H(E(S))
+
+Id(M) != Location(M)
+
+Id(M) = Invariant(S)
+
+Identity = H(E(S))
+
+All networking machinery (provider relation, Bitswap,
+Graphsync, IPNS) exists only to locate, transport, and
+evolve instances of an identity already fixed by the hash
+of the encoded relational structure.
 
 TYPES AND FUNDAMENTALS
 ----------------------
@@ -216,19 +232,3 @@ IPNS:             phi : PID x T -> CID
 The PeerID is constant; the pointed-to CID may change
 via a signed record.
 
-ONTOLOGICAL CORE
-----------------
-S = (B, R)   where R subset of B x B is the Merkle-link relation
-
-Id(M) = H(E(S))
-
-Id(M) != Location(M)
-
-Id(M) = Invariant(S)
-
-Identity = H(E(S))
-
-All networking machinery (provider relation, Bitswap,
-Graphsync, IPNS) exists only to locate, transport, and
-evolve instances of an identity already fixed by the hash
-of the encoded relational structure.
