@@ -1,0 +1,100 @@
+IPFS-IPLD FORMALIZATION
+
+TYPES AND FUNDAMENTALS
+----------------------
+F, M          : logical content / file / message
+b, B          : block / set of blocks
+chi           : chunking strategy (F -> {b_i})
+G = (V, E)    : Merkle DAG / IPLD graph
+N = (D, L)    : IPLD node (data segment, link list)
+E             : deterministic codec / encoder
+H             : cryptographic hash function
+iota          : identity-generating map
+CID           : Content Identifier
+v             : CID version
+codec         : multicodec identifier
+multihash     : multihash structure (hash-id, digest)
+Reach(r)      : set of nodes reachable from root r
+P             : provider relation
+N             : set of nodes / peers
+W_u           : want-list of peer u
+S_v           : have-set of peer v
+L(u,v)        : bilateral ledger
+sigma         : Graphsync selector (graph morphism)
+PID           : PeerID / IPNS name
+phi           : IPNS temporal map
+T             : time domain
+S = (B, R)    : relational structure (blocks + Merkle-link relation)
+R             : Merkle-link relation (subset of B x B)
+
+IDENTITY GENERATION VERSUS CID PACKAGING
+-----------------------------------------
+iota = H o E o G o chi
+
+iota(F) = H(E(G(chi(F))))
+
+CID = (v, codec(E), multihash(iota(F)))
+
+MERKLE DAG AND RECURSIVE AUTHENTICATION
+---------------------------------------
+Reach(r) = { v in V | r leads-to v }
+
+Verify(CID(r)) implies for all v in Reach(r): Verify(CID(v))
+(provided all referenced child blocks are present)
+
+The root CID authenticates the entire reachable subgraph
+because each parent encoding embeds the CIDs of its children.
+
+DHT PROVIDER RELATION
+---------------------
+P subset of H x N
+
+(k, N) in P means "node N advertises content k"
+
+P(k) = { N | (k, N) in P }
+
+The DHT returns providers, never content.
+
+BITSWAP AND GRAPHSYNC
+---------------------
+T(u,v) = W_u intersect S_v
+(service further modulated by ledger L(u,v) or peer score)
+
+sigma : G -> G'   with G' subset of G
+
+Graphsync(G, sigma) = sigma(G)
+
+DEDUPLICATION
+-------------
+b_i ~ b_j  iff  C(b_i) = C(b_j)
+
+Storage operates over the quotient B / ~
+
+Storage identity is the CID, not the raw hash.
+
+IMMUTABLE VERSUS MUTABLE NAMING
+-------------------------------
+Immutable IPFS:   d/dt CID = 0
+
+IPNS:             phi : PID x T -> CID
+                  d/dt phi(PID, t) != 0 in general
+
+The PeerID is constant; the pointed-to CID may change
+via a signed record.
+
+ONTOLOGICAL CORE
+----------------
+S = (B, R)   where R subset of B x B is the Merkle-link relation
+
+Id(M) = H(E(S))
+
+Id(M) != Location(M)
+
+Id(M) = Invariant(S)
+
+Identity = H(E(S))
+
+All networking machinery (provider relation, Bitswap,
+Graphsync, IPNS) exists only to locate, transport, and
+evolve instances of an identity already fixed by the hash
+of the encoded relational structure.
