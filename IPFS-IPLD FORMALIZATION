@@ -1,5 +1,141 @@
 IPFS-IPLD FORMALIZATION
 
+Ontological core
+
+    Id(M) = Invariant(S) = H(E(S))
+
+In this form IPFS is almost entirely a structure-first ontology. 
+The network does not create identity; it merely mediates access 
+to a pre-existing relational invariant.
+
+Observations
+------------
+1. The strongest equation 
+
+The deepest invariant is actually
+
+    Id(M) = H(E(S))
+
+because it strips away implementation details and exposes the
+underlying principle:
+
+    S = (B, R)
+    R ⊆ B × B
+
+Everything above that line can be swapped:
+
+- different chunkers,
+- different codecs,
+- different hash functions,
+- different transport protocols,
+
+yet the architecture remains centered on the same idea:
+
+    Identity = Invariant(S)
+
+2. The network layer 
+
+The final form implicitly induces a clean decomposition:
+
+    IPFS = (Identity Layer) ⊕ (Discovery Layer) ⊕ (Transport Layer) ⊕ (Naming Layer)
+
+with
+
+    Identity Layer  = H(E(S))
+    Discovery Layer = P
+    Transport Layer = Bitswap / Graphsync
+    Naming Layer    = φ
+
+This separation is useful because it distinguishes what defines a 
+thing from how a thing is found.
+
+3. The recursive authentication theorem
+
+Central theorem
+---------------
+Of everything in the specification, the statement
+
+    Verify(CID(r))  ⟹  ∀ v ∈ Reach(r), Verify(CID(v))
+
+is the closest thing to a canonical theorem.
+
+Everything else follows from it:
+
+- tamper evidence
+- trustless retrieval
+- partial verification
+- authenticated subgraphs
+- content addressing
+
+Without that property the rest largely collapses.
+
+4. Deduplication (quotient of identity)
+
+The formulation
+
+    B / ∼
+
+is mathematically elegant because it shows that deduplication is 
+not a storage optimization added afterward. It falls directly out 
+of the identity relation.
+
+Once
+
+    b_i ∼ b_j
+
+then
+
+    [b_i] = [b_j]
+
+Storage naturally operates on equivalence classes rather than on
+instances. Deduplication is therefore a consequence of the identity
+definition itself.
+
+5. Ontological statement
+
+Entire formalization reduced to a single line, as:
+
+    Id(M) = H(E(S)),   S = (B, R)
+    R ⊆ B × B
+
+Everything else—
+
+    P, Bitswap, Graphsync, φ
+
+—exists only to answer the question
+
+    “Where is S?”
+
+while the identity equation answers
+
+    “What is S?”
+
+That distinction is what makes IPFS fundamentally different
+from a location-addressed system.
+
+6. Relational-style interpretation
+
+Mapped into the preferred relational language:
+
+    Structure:
+        S = (B, R)
+
+    Identity:
+        I_d = H(E(S))
+
+    Interaction:
+        I = P + Bitswap + Graphsync
+
+    Dynamics:
+        D = φ(PID, t)
+
+where
+
+- Structure   = Merkle-linked content graph
+- Interaction = discovery and exchange processes
+- Dynamics    = mutable evolution through IPNS
+
+
 TYPES AND FUNDAMENTALS
 ----------------------
 F, M          : logical content / file / message
