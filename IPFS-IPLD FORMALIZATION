@@ -1,7 +1,5 @@
 IPFS-IPLD FORMALIZATION
 
-Ontological core
-
     Id(M) = Invariant(S) = H(E(S))
 
 In this form IPFS is almost entirely a structure-first ontology. 
