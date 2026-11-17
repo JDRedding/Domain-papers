@@ -33,7 +33,7 @@ $$
 
 (equivalently, the symmetric triple $(S, I, D)$ ).
 
-This formulation aligns directly with the distinction already developed in the framework:
+This formulation aligns directly with the distinction already developed in a relational framework:
 
 - **SDI** designates maintained relational organization (the ontological object);
 - **SID** designates its tupleized representation (the mathematical interface).
