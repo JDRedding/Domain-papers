@@ -43,13 +43,15 @@ The term $SII$ is often written $U$ (the self-application combinator).
 
 ## Abstraction Elimination
 (Translation from lambda calculus to SKI)
+
 $$
-\begin{align*}
+\begin{align\*}
 \lambda x.\,x &= I \\
 \lambda x.\,c &= Kc &&\text{(when $x$ is not free in $c$)} \\
 \lambda x.\,(yz) &= S\,(\lambda x.\,y)\,(\lambda x.\,z)
-\end{align*}
+\end{align\*}
 $$
+
 (The fourth rule $\lambda x.\,(c\,x) = c$ when $x$ is not free in $c$ is a special case that shortens some translations.)
 
 ## Boolean Encoding
