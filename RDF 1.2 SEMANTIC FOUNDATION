@@ -1,17 +1,16 @@
 RDF 1.2 SEMANTIC FOUNDATION
 ===========================
 
+COMPLETE CHAIN
+---------------------------------------------------------
+
+RDF 1.2 = (exists A + IEXT + IT) + D + RDF vocab + RDFS + Named graphs
+
 L0  Simple Semantics
 L1  Datatype Semantics (D-Entailment)
 L2  RDF Semantics
 L3  RDFS Semantics
 L4  Dataset Semantics
-
-
-COMPLETE CHAIN
----------------------------------------------------------
-
-RDF 1.2 = (exists A + IEXT + IT) + D + RDF vocab + RDFS + Named graphs
 
 RDFTerm
   -> Triple
