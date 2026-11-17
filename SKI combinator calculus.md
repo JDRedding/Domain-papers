@@ -1,6 +1,33 @@
 # SKI combinator calculus
 **SKI combinator calculus** is defined by a set of terms and three reduction rules. The notation below is the standard one used in the literature. These are the essential mathematical definitions and formulas of SKI combinator calculus. All other constructions (Church numerals, pairs, arithmetic, etc.) are built by composing them.
 
+## Primitive combinators
+
+**S**, **K**, and **I** are the three primitive combinators of SKI combinator calculus. Their names come from the operations they perform:
+
+- **S** = **Substitution** (or “Starling” in Smullyan’s bird-combinator naming).  
+  It substitutes its third argument into both of the first two:
+  
+  $$
+  S\,x\,y\,z \to x\,z\,(y\,z)
+  $$
+
+- **K** = **Constant** (or “Kestrel”).  
+  It discards its second argument and returns its first:
+  
+  $$
+  K\,x\,y \to x
+  $$
+
+- **I** = **Identity** (or “Idiot” / identity bird).  
+  It simply returns its argument unchanged:
+  
+  $$
+  I\,x \to x
+  $$
+
+These functional names (Substitution, Constant, Identity) are the ones used by Schönfinkel and Curry and in the standard mathematical literature. The bird names come from Raymond Smullyan’s popular book *To Mock a Mockingbird*.
+
 ## Term Formation
 The set $T$ of terms is the smallest set such that:
 
