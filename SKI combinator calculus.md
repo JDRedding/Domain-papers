@@ -8,23 +8,23 @@
 - **S** = **Substitution** (or “Starling” in Smullyan’s bird-combinator naming).  
   It substitutes its third argument into both of the first two:
   
-  $$
-  S\,x\,y\,z \to x\,z\,(y\,z)
-  $$
+$$
+S\,x\,y\,z \to x\,z\,(y\,z)
+$$
 
 - **K** = **Constant** (or “Kestrel”).  
   It discards its second argument and returns its first:
   
-  $$
-  K\,x\,y \to x
-  $$
+$$
+K\,x\,y \to x
+$$
 
 - **I** = **Identity** (or “Idiot” / identity bird).  
   It simply returns its argument unchanged:
   
-  $$
-  I\,x \to x
-  $$
+$$
+I\,x \to x
+$$
 
 These functional names (Substitution, Constant, Identity) are the ones used by Schönfinkel and Curry and in the standard mathematical literature. The bird names come from Raymond Smullyan’s popular book *To Mock a Mockingbird*.
 
