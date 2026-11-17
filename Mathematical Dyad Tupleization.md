@@ -31,7 +31,7 @@ $$
 \text{Structure} \to \text{Interaction} \to \text{Dynamics}
 $$
 
-(equivalently, the symmetric triple $(S, I, D)$).
+(equivalently, the symmetric triple $(S, I, D)$ ).
 
 This formulation aligns directly with the distinction already developed in the framework:
 
