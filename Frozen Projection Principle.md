@@ -172,7 +172,7 @@ $$
 \text{Orbit Equivalence} \not\Rightarrow \text{Generator Equivalence}.
 $$
 
-The open problem is the construction of a recovery map
+The problem is the construction of a gamma recovery map
 
 $$
 \Gamma : O \to \mathcal{P}(\mathrm{SDI})
