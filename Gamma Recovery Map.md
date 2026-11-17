@@ -11,7 +11,7 @@ This construction realises the recovery demanded while remaining strictly inside
 
 ## Domain and codomain
 
-Let $\mathcal{O}$ be the set of $G$-orbits of partitions of $M$ that survive A1–A4′ (the lawful role-symmetry classes of cardinalities 3 and 4).  
+Let $\mathcal{O}$ be the collection of $G$-orbits classes of partitions of $M$ that survive A1–A4′ (the lawful role-symmetry classes of cardinalities 3 and 4) under consideration.  When restricted to the proposed lawful treatment classes, $\mathcal{O}_{3,4}$ ⊂ O.
 These are the frozen projections.
 
 Let $\mathrm{SDI}$ be the set of *stabilized dynamic invariants* on the 7-mode substrate: pairs $( \mathcal{G}, \Phi )$ where
