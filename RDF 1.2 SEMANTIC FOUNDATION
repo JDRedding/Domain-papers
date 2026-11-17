@@ -1,0 +1,223 @@
+RDF 1.2 SEMANTIC FOUNDATION
+===========================
+
+L0  Simple Semantics
+L1  Datatype Semantics (D-Entailment)
+L2  RDF Semantics
+L3  RDFS Semantics
+L4  Dataset Semantics
+
+
+COMPLETE CHAIN
+---------------------------------------------------------
+
+RDF 1.2 = (exists A + IEXT + IT) + D + RDF vocab + RDFS + Named graphs
+
+RDFTerm
+  -> Triple
+  -> Graph
+  -> exists A
+  -> I = (IR, IP, IEXT, IS, IL, IT)
+  -> Truth via IEXT
+  -> Propositions via IT
+  -> D-constraints
+  -> RDF conditions
+  -> RDFS conditions
+  -> Dataset structure
+  -> |=
+
+---------------------------------------------------------
+TYPES AND FUNDAMENTALS
+---------------------------------------------------------
+
+IRI        Internationalized Resource Identifier
+BN         Blank Node
+Lit        Literal
+TT         Triple Term
+
+RDFTerm    = IRI U BN U Lit U TT
+
+Triple     = (s, p, o)
+             s in IRI U BN U TT
+             p in IRI
+             o in RDFTerm
+
+Graph      = Set of Triple
+
+Dataset    = (DefaultGraph, NamedGraphs)
+
+IR         resources (universe)
+IP         properties
+
+IEXT       IP -> PowerSet(IR x IR)
+IS         IRI -> IR U IP
+IL         Lit -> IR          (partial)
+IT         IR x IP x IR -> IR (injective)
+
+IPR(I)     = { IT(x, y, z) | x in IR, y in IP, z in IR }
+             set of propositions
+
+ICEXT(y)   = { x | <x, y> in IEXT(I(rdf:type)) }
+             class extension
+
+A          BN -> IR
+             blank node mapping (existential witness)
+
+---------------------------------------------------------
+L0  SIMPLE SEMANTICS
+---------------------------------------------------------
+
+Simple interpretation:
+
+    I = (IR, IP, IEXT, IS, IL, IT)
+
+Denotation (ground):
+
+    I(literal)     = IL(literal)
+    I(IRI)         = IS(IRI)
+    I((s,p,o))     = IT(I(s), I(p), I(o))     // triple term
+
+Truth of asserted triple:
+
+    I |= (s p o)
+    iff
+        I(p) in IP
+        and
+        (I(s), I(o)) in IEXT(I(p))
+
+Blank nodes:
+
+    [I+A](name)        = I(name)
+    [I+A](blank)       = A(blank)
+    [I+A]((s,p,o))     = IT([I+A](s), [I+A](p), [I+A](o))
+
+    I |= graph E
+    iff
+        exists A : BN -> IR
+        such that [I+A] makes every triple of E true
+
+Propositions:
+
+    Denotation of any triple (asserted or term) is a proposition
+    in IPR(I)
+
+Simple entailment:
+
+    G |= E
+    iff
+        for all interpretations I:
+            I |= G implies I |= E
+
+---------------------------------------------------------
+L1  DATATYPE SEMANTICS (D-ENTAILMENT)
+---------------------------------------------------------
+
+D-interpretation = simple interpretation recognizing a set D
+of datatype IRIs.
+
+For each dt in D:
+
+    L2V_dt : lexical forms -> V(dt)
+
+    IL("lex"^^dt) = L2V_dt(lex)   when well-typed
+
+Ill-typed literals have no denotation.
+Any graph containing them is false.
+
+D-entailment:
+
+    G |=_D E
+    iff every D-interpretation satisfying G satisfies E
+
+    simple  subset  D-entailment
+
+---------------------------------------------------------
+L2  RDF SEMANTICS
+---------------------------------------------------------
+
+RDF interpretation (recognizing D) = D-interpretation
+satisfying RDF axiomatic triples and:
+
+    x in IP
+    iff
+        <x, I(rdf:Property)> in IEXT(I(rdf:type))
+
+    and for every recognized datatype IRI aaa in D:
+
+        <x, I(aaa)> in IEXT(I(rdf:type))
+        iff x is in the value space of I(aaa)
+
+All RDF interpretations recognize at least:
+
+    { rdf:langString, rdf:dirLangString, xsd:string }
+
+RDF entailment:
+
+    G |=_RDF E
+
+    D-entailment  subset  RDF-entailment
+
+---------------------------------------------------------
+L3  RDFS SEMANTICS
+---------------------------------------------------------
+
+RDFS interpretation = RDF interpretation
+satisfying RDFS axiomatic triples and conditions on ICEXT.
+
+Characteristic conditions:
+
+    <c, d> in IEXT(I(rdfs:subClassOf))
+    implies ICEXT(c)subseteq ICEXT(d)
+
+    <p, q> in IEXT(I(rdfs:subPropertyOf))
+    implies IEXT(p)subseteq IEXT(q)
+
+    <p, c> in IEXT(I(rdfs:domain))
+    and <x, y> in IEXT(p)
+    implies x in ICEXT(c)
+
+    <p, c> in IEXT(I(rdfs:range))
+    and <x, y> in IEXT(p)
+    implies y in ICEXT(c)
+
+Proposition condition:
+
+    exists x, y, z such that IT(x, z, y) = r
+    implies
+        <r, I(rdfs:Proposition)> in IEXT(I(rdf:type))
+
+Also:
+
+    rdf:reifies rdfs:range rdfs:Proposition
+
+RDFS entailment:
+
+    G |=_RDFS E
+
+    RDF-entailment  subset  RDFS-entailment
+
+---------------------------------------------------------
+L4  DATASET SEMANTICS
+---------------------------------------------------------
+
+Dataset:
+
+    D = (G0, { (u_i, G_i) })
+
+    G0     default graph
+    u_i    graph name (IRI or blank node)
+    G_i    named graph
+
+Under simple / RDF / RDFS semantics:
+
+    u_i identifies G_i
+    but u_i is not required to denote G_i
+
+    Presence of a named graph does not assert
+    the triples of G_i
+    and does not entail any "contains" relation
+
+Dataset semantics is orthogonal to L0-L3.
+Each graph is interpreted under the chosen entailment regime.
+
+---------------------------------------------------------
