@@ -1,5 +1,11 @@
 # Mathematical Dyad Tupleization
 
+- $R$ is the relation schema,
+- **SDI** is the stabilized relational organization,
+- **SID** is the tupleized representation of that stabilized organization.
+
+Absent SID (Structure, Interaction, Dynamics), SDI (Stabilized Dynamic Invariants) risks remaining vague; absent SDI, SID risks remaining merely descriptive. Together they supply the bridge between the dynamic ontology under development and the conventional mathematical structures already familiar to researchers. SID may thus be viewed as the explicit triadic unpacking of the dyadic structure/dynamics pair that recurs throughout mathematics. The intermediate term $I$ is essential: it prevents the relational coupling itself from collapsing into either $S$ or $D$.
+
 ## SID as Explicit Tupleization of the Dyad
 
 Most mathematical frameworks operate with some form of dyad, such as
@@ -46,10 +52,5 @@ $$
 
 SID is the mathematically tractable object—the locus at which graph theory, topology, dynamical systems, category-theoretic constructions, symmetry groups, orbit theory, and related formalisms attach.
 
-Summarizing the relevant terms:
 
-- $R$ is the relation schema,
-- **SDI** is the stabilized relational organization,
-- **SID** is the tupleized representation of that stabilized organization.
 
-Absent SID, SDI risks remaining vague; absent SDI, SID risks remaining merely descriptive. Together they supply the bridge between the dynamic ontology under development and the conventional mathematical structures already familiar to researchers. SID may thus be viewed as the explicit triadic unpacking of the dyadic structure/dynamics pair that recurs throughout mathematics. The intermediate term $I$ is essential: it prevents the relational coupling itself from collapsing into either $S$ or $D$.
