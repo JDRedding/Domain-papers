@@ -306,3 +306,90 @@ $$
 - $355/113 \approx 3.14159292$ (error $\sim 8\times 10^{-8}$)
 - $3.1416$ or $3.14159$
 - Calculator/computer default: 15–17 digits (double precision)
+
+## Appendix: Additional formulas and methods
+
+These entries are not covered (or only briefly alluded to) in the main sections above. They are ordered roughly chronologically.
+
+### John Wallis (1655) — infinite product
+
+Wallis derived the first infinite product for π:
+
+$$
+\frac{\pi}{2} = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdots
+$$
+
+(Equivalently \(\frac{\pi}{2} = \prod_{n=1}^{\infty} \frac{4n^2}{4n^2-1}\).)  
+It converges slowly but was the first European infinite-product representation.
+
+### William Brouncker (1655) — continued fraction
+
+Brouncker converted Wallis’s product into the continued fraction
+
+$$
+\frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \frac{7^2}{2 + \cdots}}}}
+$$
+
+This is one of the earliest continued-fraction expressions for π.
+
+### Isaac Newton (c. 1665–1676) — binomial / arctangent series
+
+Newton used the binomial expansion of \(\sqrt{1-x}\) (or an arctangent integral) to obtain roughly 16 correct digits. One form he employed is related to
+
+$$
+\pi = \frac{3\sqrt{3}}{4} + 24\left(\frac{1}{12} - \frac{1}{5\cdot 2^5} - \frac{1}{28\cdot 2^7} - \frac{1}{72\cdot 2^9} - \cdots\right).
+$$
+
+He later remarked that he was “ashamed” of how far he carried the calculation by hand.
+
+### De Moivre–Stirling (1730) — asymptotic approximation
+
+Stirling’s approximation to the factorial, refined with de Moivre’s work, yields the asymptotic relation
+
+$$
+n! \sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n.
+$$
+
+While not a direct computational formula for π, the appearance of π in the leading term made it a notable entry in the visual timeline.
+
+### Georges-Louis Leclerc, Comte de Buffon (1777) — probabilistic method
+
+Buffon’s needle problem: drop a needle of length \(\ell\) onto a floor with parallel lines distance \(d\) apart (\(\ell\le d\)). The probability that the needle crosses a line is
+
+$$
+P = \frac{2\ell}{\pi d}.
+$$
+
+This gives a Monte-Carlo style estimator for π and is the first well-known geometric-probability method.
+
+### Leonhard Euler (1735) — Basel problem series
+
+Euler solved the Basel problem by showing
+
+$$
+\frac{\pi^2}{6} = \sum_{n=1}^{\infty} \frac{1}{n^2} = 1 + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} + \cdots.
+$$
+
+(The chart lists the related 1725 date for his early work on the series.) This is one of the most famous connections between π and an elementary infinite series.
+
+### Srinivasa Ramanujan (1914) — rapidly convergent series for \(1/\pi\)
+
+Ramanujan recorded several extraordinary series. The best-known is
+
+$$
+\frac{1}{\pi} = \frac{2\sqrt{2}}{9801} \sum_{k=0}^{\infty} \frac{(4k)!\,(1103 + 26390k)}{(k!)^4\,396^{4k}}.
+$$
+
+Each term adds approximately eight correct decimal digits. This family of formulas (later generalized by the Chudnovsky brothers) underpins most modern high-precision computations.
+
+### Bailey–Borwein–Plouffe (1995) — BBP formula
+
+Discovered by Simon Plouffe (published with David Bailey and Peter Borwein):
+
+$$
+\pi = \sum_{k=0}^{\infty} \frac{1}{16^k}\left(\frac{4}{8k+1} - \frac{2}{8k+4} - \frac{1}{8k+5} - \frac{1}{8k+6}\right).
+$$
+
+The formula permits the direct calculation of the \(n\)th hexadecimal (or binary) digit of π without computing any of the preceding digits—a property previously thought impossible for π.
+
+---
