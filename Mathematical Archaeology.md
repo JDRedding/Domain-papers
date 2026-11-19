@@ -279,3 +279,150 @@ Meaning may vary.
 Structure must be preserved.
 
 A successful reconstruction maps symbols to modern operators while maintaining every invariant relation present in the original artifact.
+
+## Appendix C: Invariant Hierarchy
+
+Not all invariants have the same stability.  
+Some disappear under deformation.  
+Others survive reinterpretation across cultures.  
+
+A complete analysis should classify invariants by persistence.
+
+### Invariant Hierarchy
+
+| Level | Type          | Preserved Under              |
+|-------|---------------|------------------------------|
+| I0    | Geometric     | Exact measurement            |
+| I1    | Topological   | Continuous deformation       |
+| I2    | Relational    | Relabeling                   |
+| I3    | Semiotic      | Translation of meaning       |
+| I4    | Operational   | Change of notation           |
+| I5    | Conceptual    | Cultural reinterpretation    |
+
+#### Example: Circle
+
+○
+
+**I0 Geometric**  
+- radius  
+- diameter  
+- circumference  
+
+**I1 Topological**  
+- single boundary  
+- interior  
+- exterior  
+
+**I2 Relational**  
+- containment  
+- closure  
+
+**I3 Semiotic**  
+Appears as:  
+- God  
+- Universe  
+- Cell  
+- Atom  
+- State Space  
+
+while preserving:  
+- bounded whole  
+
+**I4 Operational**  
+May function as:  
+- system boundary  
+- closure operator  
+- domain marker  
+
+**I5 Conceptual**  
+General concept:  
+- unity through enclosure  
+
+---
+
+## Appendix D: Comparative Artifact Analysis
+
+One of the strongest consequences of Mathematical Archaeology is the ability to compare artifacts that have no historical connection.
+
+### Comparison Pipeline
+
+```
+Artifact A
+    ↓
+Invariant Extraction
+    ↓
+Invariant Set I_A
+
+Artifact B
+    ↓
+Invariant Extraction
+    ↓
+Invariant Set I_B
+
+Compare:
+I_A ↔ I_B
+```
+
+### Structural Equivalence Principle
+
+Two artifacts are structurally equivalent when:
+
+$$
+I_A \cong I_B
+$$
+
+even when:
+- labels differ  
+- languages differ  
+- cultures differ  
+- interpretations differ  
+
+#### Example
+
+**Artifact A**  
+Medieval cosmological wheel  
+
+**Artifact B**  
+Modern systems architecture diagram  
+
+**Possible shared invariants:**
+- center  
+- boundary  
+- nested layers  
+- hierarchy  
+- information flow  
+
+The imagery differs.  
+The relational machinery may not.
+
+---
+
+## Appendix E: Semiotic Morphisms
+
+A particularly powerful extension is to treat translation itself as an operator.
+
+Define:
+
+$$
+\mu : \text{Sem}_1 \to \text{Sem}_2
+$$
+
+where:
+- $\text{Sem}_1$ = historical meaning space  
+- $\text{Sem}_2$ = modern meaning space  
+
+The requirement is:
+
+$$
+\mu(I) = I
+$$
+
+for all invariant structures.
+
+**Interpretation:**  
+Meaning may change provided structural invariants remain preserved.
+
+This formalizes the guiding principle already implicit in Mathematical Archaeology:
+
+> Do not preserve vocabulary.  
+> Preserve structure.
