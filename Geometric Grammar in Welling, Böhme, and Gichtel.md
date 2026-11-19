@@ -75,7 +75,7 @@ $$
 The cube therefore functions as the operator
 
 $$
-\operatorname{Cubus} : \text{Potentiality} \longrightarrow \text{Stable Form}.
+{Cubus} : \text{Potentiality} \longrightarrow \text{Stable Form}.
 $$
 
 ### III. Hexadic Creation and Sabbath Closure
