@@ -137,3 +137,145 @@ Researcher → M → (L4 → L5)
 ---
 
 *End of specification*
+
+## Appendix A: Topological Invariants
+
+Many historical artifacts preserve structure not through metric measurements but through topology. Distances, angles, proportions, and artistic style may vary while connectivity, enclosure, adjacency, hierarchy, or nesting remain unchanged.
+
+The purpose of topological analysis is to identify structural features that survive deformation.
+
+### Topological Extraction Pipeline
+
+```
+Artifact
+    ↓
+Geometric Skeleton
+    ↓
+Topological Features
+    ↓
+Invariant Set
+    ↓
+Formal Reconstruction
+```
+
+### Common Topological Invariants
+
+| Invariant              | Description                              |
+|------------------------|------------------------------------------|
+| Connectedness          | Which regions remain linked              |
+| Components             | Number of disconnected regions           |
+| Boundary Count         | Number of enclosing boundaries           |
+| Nesting Depth          | Number of containment levels             |
+| Adjacency Structure    | Which regions touch                      |
+| Branching Factor       | Number of child nodes from a node        |
+| Cycles                 | Presence of loops                        |
+| Paths                  | Reachable routes through the structure   |
+| Symmetry Class         | Preserved symmetry relations             |
+| Separation Structure   | Distinct regions induced by boundaries   |
+
+### Topological Principle
+
+If two artifacts preserve the same relational and topological invariants, they may represent the same conceptual mechanism despite differences in artistic style, scale, or symbolism.
+
+#### Example: Concentric Circle Artifact
+
+Layer L1 gives:
+- Interior
+- Boundary
+- Exterior
+
+**Topological invariants:**
+- 1 connected boundary
+- 2 regions
+- 1 containment relation
+
+**Modern reconstruction:**
+- Containment topology  
+  or  
+- Nested partially ordered system
+
+The labels attached to the circles do not alter these invariants.
+
+---
+
+## Appendix B: Mathematical Semiotics
+
+Mathematical semiotics studies symbols as carriers of formal structure. It does not ask whether a symbol is true. It asks: *What structure does the symbol encode?*
+
+### Semiotic Decomposition
+
+Every symbol contains three distinct aspects:
+
+```
+Symbol
+    ↓
+Structure
+    ↓
+Meaning
+```
+
+Formally:
+
+$$
+\text{Sign} = (\text{Form}, \text{Relation}, \text{Meaning})
+$$
+
+where:
+- **Form** = visible artifact
+- **Relation** = encoded structure
+- **Meaning** = interpretation supplied
+
+### Semiotic Analysis Pipeline
+
+```
+Artifact
+    ↓
+Sign Inventory
+    ↓
+Structural Relations
+    ↓
+Invariant Meaning Classes
+    ↓
+Formal Operators
+```
+
+### Semiotic Layers
+
+- **L0** — What is present?
+- **L1** — What relations are forced?
+- **L2** — What did the author say it means?
+- **L3** — What remains invariant under reinterpretation?
+- **L4** — How can it be translated today?
+- **L5** — What formal structure reproduces it?
+
+### Symbol Reuse Principle
+
+A symbol may carry different meanings while preserving identical structure.
+
+#### Example
+
+○
+
+May be labeled:
+- God
+- Universe
+- State Space
+- System Boundary
+- Cell
+- Atom
+
+Yet the following structural features remain:
+- closure
+- containment
+- boundary
+- inside/outside distinction
+
+The meanings change.  
+The structural grammar does not.
+
+### Semiotic Conservation Principle
+
+Meaning may vary.  
+Structure must be preserved.
+
+A successful reconstruction maps symbols to modern operators while maintaining every invariant relation present in the original artifact.
