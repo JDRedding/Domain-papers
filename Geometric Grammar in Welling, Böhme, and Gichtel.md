@@ -23,21 +23,21 @@ The sections that follow develop this reconstruction step by step, beginning wit
 
 | Symbol | Short Definition |
 |--------|------------------|
-| \(P_0\) | Primordial unity |
-| \(\Delta\) | Distinction operator |
-| \(U\) | Ungrund |
-| \(\Gamma\) | Emanation operator |
-| \(L\) | Light |
-| \(N\) | Night |
-| \(M\) | Mediator |
-| \(Sa\) | Salt |
-| \(Su\) | Sulfur |
-| \(Me\) | Mercury |
-| \(\mathcal{T}\) | Alchemical triad |
-| \(C\) | Cube |
-| \(R\) | Completion |
-| \(X\) | Manifested entity |
-| \(\mathcal{U}\) | Manifest cosmos |
+| $P_0$ | Primordial unity |
+| $\Delta$ | Distinction operator |
+| $U$ | Ungrund |
+| $\Gamma$ | Emanation operator |
+| $L$ | Light |
+| $N$ | Night |
+| $M$ | Mediator |
+| $Sa$ | Salt |
+| $Su$ | Sulfur |
+| $Me$ | Mercury |
+| $\mathcal{T}$ | Alchemical triad |
+| $C$ | Cube |
+| $R$ | Completion |
+| $X$ | Manifested entity |
+| $\mathcal{U}$ | Manifest cosmos |
 
 
 ## I. Primordial Unity and Distinction
@@ -254,43 +254,43 @@ The following serves as the symbol dictionary for the formal reconstruction. It 
 
 | Symbol | Name | Meaning | Role in the Grammar |
 |--------|------|---------|---------------------|
-| \(P_0\) | Primordial Point (Punctum) | Undifferentiated unity | Origin of all distinction |
-| \(\Delta\) | Distinction Operator | Primitive act of differentiation | Generates opposition from unity |
-| \(A\) | Positive Determination | First distinguished state | One pole of a distinction |
-| \(\neg A\) | Negative Determination | Complement of \(A\) | Opposing pole |
-| \(U\) | Ungrund | Indeterminate possibility | Source preceding determinate being |
-| \(\mathcal{U}\) | Manifest Cosmos | Completed world-order | Final stage of manifestation |
+| $P_0$ | Primordial Point (Punctum) | Undifferentiated unity | Origin of all distinction |
+| $\Delta$ | Distinction Operator | Primitive act of differentiation | Generates opposition from unity |
+| $A$ | Positive Determination | First distinguished state | One pole of a distinction |
+| $\neg A$ | Negative Determination | Complement of $A$ | Opposing pole |
+| $U$ | Ungrund | Indeterminate possibility | Source preceding determinate being |
+| $\mathcal{U}$ | Manifest Cosmos | Completed world-order | Final stage of manifestation |
 
 ### Geometric Forms
 
 | Symbol | Name | Meaning | Function |
 |--------|------|---------|----------|
-| \(P_0\) | Point | Unity without extension | Primordial source |
-| \(\circ\) | Circle | Wholeness, totality | Container of domains and emanations |
-| \(\triangle\) | Triangle | Mediation of opposites | Minimal generative structure |
-| \(\Box\) | Cube | Stability, embodiment, fixation | Completion and manifestation |
-| \(C\) | Cubus | Formal cube structure | Symbol of Salt and rest |
+| $P_0$ | Point | Unity without extension | Primordial source |
+| $\circ$ | Circle | Wholeness, totality | Container of domains and emanations |
+| $\triangle$ | Triangle | Mediation of opposites | Minimal generative structure |
+| $\Box$ | Cube | Stability, embodiment, fixation | Completion and manifestation |
+| $C$ | Cubus | Formal cube structure | Symbol of Salt and rest |
 
 ### Relational and Generative Operators
 
 | Symbol | Name | Definition | Interpretation |
 |--------|------|------------|----------------|
-| \(\rightarrow\) | Generative Transition | Transformation between stages | Becoming |
-| \(\longrightarrow\) | Directed Emergence | Ordered progression | Manifestation |
-| \(\leftrightarrow\) | Reciprocity Operator | Mutual correspondence | Polar relation |
-| \(\otimes\) | Generative Composition | Combination of principles | Productive union |
-| \(\subset\) | Nested Containment | Interior relation | Hierarchical inclusion |
-| \(\supset\) | Enclosing Containment | Exterior relation | Higher-order domain |
-| \(=\) | Identity | Equivalence | Symbolic correspondence |
-| \(\Gamma\) | Emanation Operator | Produces a new cosmological level | Expansion of being |
+| $\rightarrow$ | Generative Transition | Transformation between stages | Becoming |
+| $\longrightarrow$ | Directed Emergence | Ordered progression | Manifestation |
+| $\leftrightarrow$ | Reciprocity Operator | Mutual correspondence | Polar relation |
+| $\otimes$ | Generative Composition | Combination of principles | Productive union |
+| $\subset$ | Nested Containment | Interior relation | Hierarchical inclusion |
+| $\supset$ | Enclosing Containment | Exterior relation | Higher-order domain |
+| $=$ | Identity | Equivalence | Symbolic correspondence |
+| $\Gamma$ | Emanation Operator | Produces a new cosmological level | Expansion of being |
 
 ### Cosmological Structures
 
 | Symbol | Name | Meaning |
 |--------|------|---------|
-| \(S_0\) | Primary Sphere | Initial cosmological level |
-| \(S_n\) | Sphere \(n\) | Successive level of manifestation |
-| \(S_{n+1} = \Gamma(S_n)\) | Emanative Transition | One level generates another |
+| $S_0$ | Primary Sphere | Initial cosmological level |
+| $S_n$ | Sphere $n$ | Successive level of manifestation |
+| $S_{n+1} = \Gamma(S_n)$ | Emanative Transition | One level generates another |
 | Ungrund | Groundless Ground | Pre-cosmic source |
 | Divinity | Divine Realm | First determination |
 | Angelic | Angelic Orders | Intermediary hierarchy |
@@ -302,23 +302,23 @@ The following serves as the symbol dictionary for the formal reconstruction. It 
 
 | Symbol | Name | Meaning |
 |--------|------|---------|
-| \(L\) | Light | Positive, illuminating principle |
-| \(N\) | Night | Negative, hidden principle |
-| \((L, N)\) | Polarity Pair | Fundamental opposition |
-| \(M\) | Mediating Principle | Reconciliation of opposites |
-| \(T: (L, N) \to M\) | Mediation Transformation | Productive resolution of polarity |
+| $L$ | Light | Positive, illuminating principle |
+| $N$ | Night | Negative, hidden principle |
+| $(L, N)$ | Polarity Pair | Fundamental opposition |
+| $M$ | Mediating Principle | Reconciliation of opposites |
+| $T: (L, N) \to M$ | Mediation Transformation | Productive resolution of polarity |
 
 ### Triadic Structures
 
 | Symbol | Name | Meaning |
 |--------|------|---------|
-| \(\triangle(L, M, N)\) | Mediating Triangle | Reconciliation of polarity |
-| \(Sa\) | Salt | Body, fixation, stability |
-| \(Su\) | Sulfur | Soul, activity, will |
-| \(Me\) | Mercury | Spirit, mediation, mobility |
-| \(\mathcal{T}\) | Alchemical Trinity | Salt–Sulfur–Mercury |
-| \(Sa \otimes Su \otimes Me \to X\) | Generative Triad | Production of manifested form |
-| \(X\) | Manifest Entity | Result of triadic generation |
+| $\triangle(L, M, N)$ | Mediating Triangle | Reconciliation of polarity |
+| $Sa$ | Salt | Body, fixation, stability |
+| $Su$ | Sulfur | Soul, activity, will |
+| $Me$ | Mercury | Spirit, mediation, mobility |
+| $\mathcal{T}$ | Alchemical Trinity | Salt–Sulfur–Mercury |
+| $Sa \otimes Su \otimes Me \to X$ | Generative Triad | Production of manifested form |
+| $X$ | Manifest Entity | Result of triadic generation |
 
 ### Numerical Symbols
 
@@ -335,23 +335,23 @@ The following serves as the symbol dictionary for the formal reconstruction. It 
 
 | Symbol | Meaning |
 |--------|---------|
-| \(C = [0,1]^3\) | Unit cube |
-| \(V = 8\) | Vertices |
-| \(E = 12\) | Edges |
-| \(F = 6\) | Faces |
-| \(V - E + F = 2\) | Euler characteristic |
-| \(F = 6 \leftrightarrow\) Six Days | Creation cycle |
-| \(E = 12 \leftrightarrow\) Twelve Pillars | Structural ordering |
+| $C = [0,1]^3$ | Unit cube |
+| $V = 8$ | Vertices |
+| $E = 12$ | Edges |
+| $F = 6$ | Faces |
+| $V - E + F = 2$ | Euler characteristic |
+| $F = 6 \leftrightarrow$ Six Days | Creation cycle |
+| $E = 12 \leftrightarrow$ Twelve Pillars | Structural ordering |
 
 ### Creation Cycle Notation
 
 | Expression | Meaning |
 |------------|---------|
-| \(1 \to 2 \to 3 \to 4 \to 5 \to 6\) | Sequential creation |
-| \(7 = 6 + 1\) | Completion through rest |
-| \(T\) | Creative transformation |
-| \(R = T^6(P_0)\) | Completion after six transformations |
-| \(R\) | Realized order |
+| $1 \to 2 \to 3 \to 4 \to 5 \to 6$ | Sequential creation |
+| $7 = 6 + 1$ | Completion through rest |
+| $T$ | Creative transformation |
+| $R = T^6(P_0)$ | Completion after six transformations |
+| $R$ | Realized order |
 
 ### Universal Generative Sequence
 
@@ -361,14 +361,14 @@ $$
 
 | Symbol | Interpretation |
 |--------|----------------|
-| \(P_0\) | Unity |
-| \((A, \neg A)\) | Distinction |
-| \(\Delta\) | Differentiation |
+| $P_0$ | Unity |
+| $(A, \neg A)$ | Distinction |
+| $\Delta$ | Differentiation |
 | 3 | Mediation |
 | 6 | Creation |
 | 12 | Ordering |
-| \(\Box\) | Fixation |
-| \(\mathcal{U}\) | Manifest cosmos |
+| $\Box$ | Fixation |
+| $\mathcal{U}$ | Manifest cosmos |
 
 Vertical form:
 
