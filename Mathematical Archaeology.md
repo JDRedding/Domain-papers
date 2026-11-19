@@ -1,6 +1,8 @@
 # Mathematical Archaeology 
 *Artifact Analysis Framework*
 
+> The study of recovered conceptual machinery through the extraction of invariant relational structures from historical artifacts.
+
 Formal specification for recovering relational, geometric, and operational structure from historical artifacts.
 
 ## Description
