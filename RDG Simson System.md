@@ -87,16 +87,14 @@ $$
 where
 
 $$
-\Gamma_{t+s}
-=
+\Gamma_{t+s} =
 \Gamma_t \circ \Gamma_s
 $$
 
 and
 
 $$
-R_{\mathrm{exp}}
-=
+R_{\mathrm{exp}} =
 \kappa_Q
 \circ
 \exp(-i \Omega_I t)
@@ -107,8 +105,7 @@ $$
 The selected attractor satisfies
 
 $$
-R_{\mathrm{exp}}(e_{\mathrm{RDG}})
-=
+R_{\mathrm{exp}}(e_{\mathrm{RDG}}) =
 e_{\mathrm{RDG}}.
 $$
 
