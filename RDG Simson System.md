@@ -132,8 +132,7 @@ $$
 ### Idempotent
 
 $$
-\mathrm{Cl}_{\mathrm{read}}(\mathrm{Cl}_{\mathrm{read}}(R))
-=
+\mathrm{Cl}_{\mathrm{read}}(\mathrm{Cl}_{\mathrm{read}}(R)) =
 \mathrm{Cl}_{\mathrm{read}}(R)
 $$
 
