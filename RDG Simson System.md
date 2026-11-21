@@ -193,7 +193,7 @@ This is the RDG analogue of the classical circumcarrier.
 Structural incidence replaces classical point-line incidence.
 
 ```math
-A ~_S B
+A \sim_{S} B
 ⇔
 (A,B)
 ∈
