@@ -464,3 +464,21 @@ $$
 \iff
 \{\mathrm{closure}\}\text{-dependent projections}.
 $$
+
+## Appendix: No Absolute Location
+
+The RDG Simson system is purely relational. There are no absolute locations, coordinates, or ambient point-space.
+
+All structure is carried by the relational substrate $R = (\mathrm{Obj}, \mathrm{Rel})$ and the reading-closure operator $\mathrm{Cl}_{\mathrm{read}}$. Objects acquire identity and mutual position only through closure-stable incidence:
+
+$$
+A \sim_S B \iff (A,B) \in \mathrm{Cl}_{\mathrm{read}}(R).
+$$
+
+What classically appears as a point lying on a carrier or on a Simson line is, in RDG, only a fixed point of closure:
+
+$$
+G = \mathrm{Cl}_{\mathrm{read}}(G).
+$$
+
+No external embedding or coordinate chart is required or admitted. Any apparent “location” is an emergent consequence of the closed relational geometry and dissolves when the closure relations are removed.
