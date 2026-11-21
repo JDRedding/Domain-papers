@@ -485,10 +485,7 @@ No external embedding or coordinate chart is required or admitted. Any apparent 
 
 # Appendix: Axiomatization of $\Pi_{AB}$
 
-
 These are the equations and formulas that constitute the minimal mathematical axiomatization of $\Pi_{AB}$ and the associated Simson condition.
-
-RDG Simson Theorem
 
 $$
 P\in{Carrier}(T_3)
@@ -522,6 +519,7 @@ $$
 ## Projection Axioms
 
 **Closure stability (P1)**  
+
 $$
 \mathrm{Cl}_{\mathrm{read}}\bigl(\Pi_{AB}(P)\bigr)=\Pi_{AB}(P).
 $$
