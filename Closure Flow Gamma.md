@@ -38,3 +38,125 @@ In discrete time one simply sets $\Gamma_{n+1}(R)=\mathrm{Cl}(\Gamma_n(R))$. In 
 - **Wavicle / Q-layer**: Gamma-closure appears as the guidance rule $S_{t+1}=\Gamma(S_t,P_t;G)$ that keeps the configuration inside the admissible set $Q$.
 
 Thus the pure relational substrate $R$ (together with the consistency functional that measures how far it is from being closed) already contains the generator of $\Gamma$. The flow is simply the continuous-time (or discrete) iteration of that generator; the coherence density $C_\Gamma$ and the RDG distance $d_\Gamma$ are then read off from the trajectories of this flow exactly as stated in the Closure Stability Conjecture.
+
+# Appendix: Closure Flow and Recovery Fibres
+
+The closure flow and recovery map employ the same symbol \( \Gamma \) but act on different mathematical objects.
+
+## Closure Flow
+
+The closure flow evolves relational configurations:
+
+```math
+\Gamma_t : R \to R
+```
+
+or more generally
+
+```math
+\Gamma_t : \mathrm{State} \to \mathrm{State}.
+```
+
+Its action is forward-directed:
+
+```
+Configuration
+    ↓ Γ_t
+More Complete Configuration
+```
+
+through closure, consistency enforcement, dependency propagation, and admissibility correction.
+
+A stabilized invariant arises when the flow approaches a coherent attractor:
+
+```math
+R^* = \lim \Gamma_t(R).
+```
+
+## Projection
+
+The projection map
+
+```math
+\Pi : \mathrm{SDI} \to O
+```
+
+forgets dynamical details and records only the stabilized coherence pattern.
+
+Thus:
+
+```
+SDI
+   ↓ Π
+[π]
+```
+
+where \( [\pi] \) is the frozen orbit class.
+
+## Recovery Map
+
+The recovery map acts in the opposite direction:
+
+```math
+\Gamma_{\mathrm{recovery}} : O \to \mathcal{P}(\mathrm{SDI}).
+```
+
+Rather than evolving a configuration, it reconstructs the fibre of generators capable of producing a given orbit:
+
+```
+[π]
+   ↓ Γ_recovery
+{SDI}
+```
+
+subject to
+
+```math
+\Pi \circ \Gamma_{\mathrm{recovery}} = \mathrm{id}_O.
+```
+
+## Fibre Characterisation
+
+A stabilized dynamic invariant belongs to the recovery fibre of an orbit when its closure flow projects onto that orbit:
+
+```math
+\mathrm{SDI} \in \Gamma_{\mathrm{recovery}}([\pi])
+```
+
+if and only if
+
+```math
+\Pi(\mathrm{Attractor}(\mathrm{SDI})) = [\pi].
+```
+
+Equivalently,
+
+```math
+\Gamma_{\mathrm{recovery}}([\pi])
+=
+\{
+I \in \mathrm{SDI}
+:
+\Pi(\mathrm{Attractor}(I)) = [\pi]
+\}.
+```
+
+The recovery fibre therefore contains all discrete, continuous, or continuum-limit generators whose long-time coherent behaviour realizes the same frozen partition structure.
+
+## Relational Hinge
+
+Together the maps form the forward and inverse sides of the RDG relational hinge:
+
+```
+Configuration
+    ↓ Γ_t
+Attractor
+    ↓ Π
+Orbit Class [π]
+
+Orbit Class [π]
+    ↓ Γ_recovery
+Generator Fibre
+```
+
+The closure flow explains how coherent invariants emerge. The recovery map explains which generators are capable of realizing a given invariant once it has emerged.
