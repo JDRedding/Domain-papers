@@ -524,8 +524,9 @@ appears as
 
 ```math
 L, M, N
-are collinear.
 ```
+
+are collinear.
 
 Thus the classical Wallace-Simson theorem is the Euclidean shadow of the RDG closure invariant:
 
