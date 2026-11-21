@@ -482,7 +482,7 @@ These are closure projections onto the three sides of the triad.
 
 ## Common Incidence Dependency
 
-The three projected points are incidence-dependent iff they al{read}y form a closure-stable incidence structure:
+The three projected points are incidence-dependent iff they already form a closure-stable incidence structure:
 
 ```math
 Cl_{read}({L,M,N})
@@ -506,7 +506,7 @@ Cl_{read}({L,M,N})
 
 Verbal form:
 
-> The three closure projections onto the sides of a minimal closed relational triad become incidence-dependent if and only if the source point is al{read}y closure-complete with respect to the carrier of that triad.
+> The three closure projections onto the sides of a minimal closed relational triad become incidence-dependent if and only if the source point is already closure-complete with respect to the carrier of that triad.
 
 ---
 
