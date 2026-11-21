@@ -496,10 +496,13 @@ $$
 $$
 
 # Future Work
+*Summary and Outlook*
 
-The present work proposes a relational formulation of the Wallace–Simson equivalence, expressing source-carrier membership through the joint closure-dependence of three channel projections. Its immediate objective is translation into relational terms, rather than a complete development of the surrounding RDG geometry. The present work establishes a relational translation of the classical Wallace-Simson theorem. Future work includes formal proof development, intrinsic line theory, realization theory, computational verification, and the extension of the closure framework to additional Euclidean geometric invariants.
+The present work establishes a relational translation of the classical Wallace–Simson theorem. It expresses membership of a source state in the carrier of the triple through the joint closure-dependence of its three channel projections. The immediate objective is this translation into relational terms, rather than a complete development of the surrounding RDG geometry.
 
-Future work will formalize the underlying relational primitives and construct channel projections intrinsically, including conditions for their existence and uniqueness. A central objective is to identify sufficient relational axioms for an intrinsic proof of the stated equivalence. A complementary direction is to establish a compatible Euclidean realization in which carrier membership, channel projection, and closure-dependence recover their intended classical counterparts. Explicit models and worked examples will be developed to test these correspondences and examine degenerate configurations. Further extensions may investigate the closure object associated with the projected states as a relational Simson line and explore its connections with the broader RDG framework. These extensions are distinct from the core relational formulation.
+Future work will formalize the underlying relational primitives and construct channel projections intrinsically, including conditions for their existence and uniqueness. A central objective is to identify a sufficient set of relational axioms that support an intrinsic proof of the stated equivalence. A complementary direction is the construction of a compatible Euclidean realization in which carrier membership, channel projection, and closure-dependence recover their classical counterparts. Explicit models and worked examples will be developed to test these correspondences and to examine degenerate configurations.
+
+Further extensions may investigate the closure of the three projected states as a relational Simson line and explore its connections with the broader RDG framework. These developments remain distinct from the core relational formulation presented here.
 
 ---
 
