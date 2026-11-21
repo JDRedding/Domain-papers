@@ -276,23 +276,23 @@ PED(W)
 ### Closure Flow
 
 ```math
-Gamma_0
+\Gamma_0
 =
 id
 ```
 
 ```math
-Gamma_(t+s)
+\Gamma_(t+s)
 =
-Gamma_t o Gamma_s.
+\Gamma_t o \Gamma_s.
 ```
 
 Discrete form:
 
 ```math
-Gamma_(n+1)(R)
+\Gamma_(n+1)(R)
 =
-Cl_{read}(Gamma_n(R)).
+Cl_{read}(\Gamma_n(R)).
 ```
 
 ---
