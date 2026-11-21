@@ -374,7 +374,7 @@ Admissible:
 $$
 Q_{\rm OK}
 \iff
-\operatorname{Res}(S)=\varnothing
+{Res}(S)=\varnothing
 \quad
 \text{and}
 \quad
@@ -387,7 +387,7 @@ Non-admissible:
 $$
 Q_{\rm DEGEN}
 \iff
-\operatorname{Res}(S)\neq\varnothing
+{Res}(S)\neq\varnothing
 $$
 
 or dimensional collapse occurs.
@@ -395,7 +395,7 @@ or dimensional collapse occurs.
 The reduction operator
 
 $$
-\operatorname{Red}_Q
+{Red}_Q
 $$
 
 acts only on algebraic residuals and does not modify solved continuum carriers directly.
