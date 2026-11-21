@@ -266,13 +266,13 @@ $$
 $$
 
 $$
-{Res}(S^*)=\varnothing,
+{Res}(S^\*)=\varnothing,
 $$
 
 and
 
 $$
-D^*={Solve}(I^*).
+D^*={Solve}(I^\*).
 $$
 
 The Q-layer reports
