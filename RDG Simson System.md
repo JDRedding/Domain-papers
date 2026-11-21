@@ -78,7 +78,7 @@ is structural incidence.
 ```math
 D :=
 (
-Gamma_t,
+\Gamma_t,
 R_{exp},
 e_{RDG}
 )
