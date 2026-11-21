@@ -41,7 +41,7 @@ Thus the pure relational substrate $R$ (together with the consistency functional
 
 # Appendix: Closure Flow and Recovery Fibres
 
-The closure flow and recovery map employ the same symbol \( \Gamma \) but act on different mathematical objects.
+The closure flow and recovery map employ the same symbol $\Gamma$ but act on different mathematical objects.
 
 ## Closure Flow
 
@@ -91,7 +91,7 @@ SDI
 [π]
 ```
 
-where \( [\pi] \) is the frozen orbit class.
+where $[\pi]$ is the frozen orbit class.
 
 ## Recovery Map
 
