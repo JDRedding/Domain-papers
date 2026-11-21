@@ -401,3 +401,43 @@ $$
 acts only on algebraic residuals and does not modify solved continuum carriers directly.
 
 Therefore Q functions as a consistency layer rather than a physical force.
+
+# Appendix F. Carrier Principle
+
+The framework distinguishes between relational dynamics and carrier realizations.
+
+Primary objects:
+
+$$
+G,
+\quad
+S,
+\quad
+I,
+\quad
+D,
+\quad
+\Gamma.
+$$
+
+Derived carrier realizations:
+
+- Differential forms.
+- Maxwell fields.
+- Contorsion tensors.
+- Density operators.
+- Lindblad evolution.
+- Gross–Pitaevskii fields.
+- CAF scale fields.
+
+The carrier principle states:
+
+$$
+\text{Relational Dynamics}
+\rightarrow
+\text{Carrier Realization}
+\rightarrow
+\text{Continuum Description}.
+$$
+
+Consequently the continuum equations are interpreted as realizations of the residual algebra rather than as fundamental objects.
