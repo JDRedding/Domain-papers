@@ -201,9 +201,9 @@ $$
 (S,I,D)_t
 \mapsto
 (
-\operatorname{Cl}_{\rm read}(S+\Delta S),
-\operatorname{Red}_Q(I+\operatorname{Res}(S)),
-\operatorname{Solve}(I)
+{Cl}_{\rm read}(S+\Delta S),
+{Red}_Q(I+{Res}(S)),
+{Solve}(I)
 )_{t+1}
 $$
 
@@ -212,22 +212,22 @@ should be interpreted operationally as
 $$
 S_{t+1}
 =
-\operatorname{Cl}_{\rm read}(S_t+\Delta S_t),
+{Cl}_{\rm read}(S_t+\Delta S_t),
 $$
 
 $$
 I_{t+1}
 =
-\operatorname{Red}_Q
+{Red}_Q
 \!\left(
-I_t+\operatorname{Res}(S_t)
+I_t+{Res}(S_t)
 \right),
 $$
 
 $$
 D_{t+1}
 =
-\operatorname{Solve}(I_{t+1}).
+{Solve}(I_{t+1}).
 $$
 
 Thus the dynamics proceeds in three stages:
@@ -241,11 +241,11 @@ The operator ordering is therefore
 $$
 \Gamma_{\rm dyn}
 =
-\operatorname{Solve}
+{Solve}
 \circ
-\operatorname{Red}_Q
+{Red}_Q
 \circ
-\operatorname{Cl}_{\rm read}.
+{Cl}_{\rm read}.
 $$
 
 # Appendix B. Fixed Points
@@ -271,13 +271,13 @@ $$
 $$
 
 $$
-\operatorname{Res}(S^*)=\varnothing,
+{Res}(S^*)=\varnothing,
 $$
 
 and
 
 $$
-D^*=\operatorname{Solve}(I^*).
+D^*={Solve}(I^*).
 $$
 
 The Q-layer reports
@@ -293,7 +293,7 @@ Fixed points represent closure-complete relational geometries.
 The weak-residual limit is defined by
 
 $$
-\operatorname{Res}(S)\rightarrow 0.
+{Res}(S)\rightarrow 0.
 $$
 
 In this regime
@@ -307,7 +307,7 @@ and therefore
 $$
 \Gamma_{\rm dyn}
 \approx
-\operatorname{id}.
+{id}.
 $$
 
 Under continuum refinement
