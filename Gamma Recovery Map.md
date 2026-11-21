@@ -142,7 +142,7 @@ Then:
 \Pi \circ \Gamma_{\mathrm{recovery}} = \mathrm{id}_O
 ```
 
-on the image of \( \Pi \).
+on the image of $\Pi$.
 
 Equivalently:
 
@@ -160,7 +160,7 @@ The projection collapses dynamics into invariant structure; recovery lifts invar
 
 ## Fibre Interpretation
 
-Because \( \Pi \) forgets:
+Because $\Pi$ forgets:
 
 - trajectory history
 - transient states
