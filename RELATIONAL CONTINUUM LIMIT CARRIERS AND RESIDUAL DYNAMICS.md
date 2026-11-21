@@ -36,6 +36,11 @@ $$
 | ${\rm EG},G_{kk},{\rm MMD}$ | Ethical gate, damping indicators, manifold-deviation threshold |
 | $Q_+,Q_-$ | Oriented residual / torsion-bath charges |
 
+### Generator Principle
+
+The Γ hierarchy should not be interpreted primarily as a collection of operators acting on a previously existing continuum state space.
+
+Instead, Γ_read, Γ_proj, Γ_cg, and Γ_dyn are constructive generators of admissible relational structure. Continuum fields, carrier spaces, and differential operators arise only after the resulting solution varieties have been realized.
 
 ### Algebraic carriers and residuals
 
