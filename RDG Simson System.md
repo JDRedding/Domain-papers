@@ -291,8 +291,7 @@ Interpretation:
 # Relational Expansion Operator
 
 $$
-R_{\mathrm{exp}}
-=
+R_{\mathrm{exp}} =
 \kappa_Q
 \circ
 \exp(-i \Omega_I t)
@@ -353,8 +352,7 @@ $$
 # Closure Geodesic
 
 $$
-\gamma_{\mathrm{opt}}
-=
+\gamma_{\mathrm{opt}} =
 \arg\min
 \int C_\Gamma(x, \dot{x})\, dt.
 $$
