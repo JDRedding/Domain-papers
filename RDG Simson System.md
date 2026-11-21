@@ -430,12 +430,12 @@ over all admissible closure trajectories connecting
 ## Trajectory Distance
 
 ```math
-d_Gamma(x,y)
+d_\Gamma(x,y)
 =
 ∫_0^∞
 exp(-lambda t)
 ||
-Gamma_t(x)-Gamma_t(y)
+\Gamma_t(x)-\Gamma_t(y)
 ||
 dt.
 ```
