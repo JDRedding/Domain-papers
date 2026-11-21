@@ -491,7 +491,7 @@ These are the equations and formulas that constitute the minimal mathematical ax
 RDG Simson Theorem
 
 $$
-P\in\operatorname{Carrier}(T_3)
+P\in{Carrier}(T_3)
 \;\iff\;
 \mathrm{Cl}_{\mathrm{read}}(\{L,M,N\})=\{L,M,N\}.
 $$
@@ -499,7 +499,7 @@ $$
 ## Core Notation
 
 - $T_3$: a closure-stable triad.
-- $\operatorname{Carrier}(T_3)$: the set of admissible relational states $P$.
+- ${Carrier}(T_3)$: the set of admissible relational states $P$.
 - $\mathrm{Cl}_{\mathrm{read}}$: a closure operator.
 - $R$: a base relational structure.
 - $d_\Gamma$: a distance (or quasimetric) used to measure proximity to closed objects.
@@ -514,7 +514,7 @@ $$
 ## Projection Signature
 
 $$
-\Pi_{AB}:\operatorname{Carrier}(T_3)\longrightarrow\mathrm{Cl}_{\mathrm{read}}(\{A,B\}).
+\Pi_{AB}:{Carrier}(T_3)\longrightarrow\mathrm{Cl}_{\mathrm{read}}(\{A,B\}).
 $$
 
 (Analogous signatures hold for $\Pi_{BC}$ and $\Pi_{CA}$.)
@@ -535,7 +535,7 @@ $$
 **Nearest closed representative (P4, optional)**  
 
 $$
-\Pi_{AB}(P)=\operatorname*{argmin}_{X\in\mathrm{Cl}_{\mathrm{read}}(\{A,B\})}d_\Gamma(P,X).
+\Pi_{AB}(P)=\*{argmin}_{X\in\mathrm{Cl}_{\mathrm{read}}(\{A,B\})}d_\Gamma(P,X).
 $$
 
 ### Channel Projections of a State
