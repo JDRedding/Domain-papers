@@ -4,35 +4,35 @@
 
 ### Structure (S)
 
-```math
+$$
 S :=
-(
+\bigl(
 R,
-Cl_{read},
-T3,
-pi_{RDG}
-)
-```
+\mathrm{Cl}_{\mathrm{read}},
+T_3,
+\pi_{\mathrm{RDG}}
+\bigr)
+$$
 
 where
 
-```math
-R = (Obj, Rel)
-```
+$$
+R = (\mathrm{Obj}, \mathrm{Rel})
+$$
 
 is the pure relational substrate,
 
-```math
-T3
-```
+$$
+T_3
+$$
 
 is the minimal closed relational triad,
 
 and
 
-```math
-pi_{RDG}
-```
+$$
+\pi_{\mathrm{RDG}}
+$$
 
 is the admissible relational geometry.
 
@@ -40,34 +40,34 @@ is the admissible relational geometry.
 
 ### Interaction (I)
 
-```math
+$$
 I :=
-(
+\bigl(
 R_I,
-Pi_{closure},
-\sim_{S}
-)
-```
+\Pi_{\mathrm{closure}},
+\sim_S
+\bigr)
+$$
 
 where
 
-```math
+$$
 R_I
-```
+$$
 
 is the Interaction-mode hinge,
 
-```math
-Pi_{closure}
-```
+$$
+\Pi_{\mathrm{closure}}
+$$
 
 is closure extraction,
 
 and
 
-```math
-\sim_{S}
-```
+$$
+\sim_S
+$$
 
 is structural incidence.
 
@@ -75,83 +75,80 @@ is structural incidence.
 
 ### Dynamics (D)
 
-```math
+$$
 D :=
-(
+\bigl(
 \Gamma_t,
-R_{exp},
-e_{RDG}
-)
-```
+R_{\mathrm{exp}},
+e_{\mathrm{RDG}}
+\bigr)
+$$
 
 where
 
-```math
-\Gamma_(t+s)
+$$
+\Gamma_{t+s}
 =
-\Gamma_t o \Gamma_s
-```
+\Gamma_t \circ \Gamma_s
+$$
 
 and
 
-```math
-R_{exp} =
+$$
+R_{\mathrm{exp}}
+=
 \kappa_Q
-o 
-exp(-i Omega_I t)
-o 
+\circ
+\exp(-i \Omega_I t)
+\circ
 \mu_Q.
-```
+$$
 
 The selected attractor satisfies
 
-```math
-R_{exp}(e_{RDG})
+$$
+R_{\mathrm{exp}}(e_{\mathrm{RDG}})
 =
-e_{RDG}.
-```
+e_{\mathrm{RDG}}.
+$$
 
 ---
 
 # Relational Substrate
 
-```math
-R
-=
-(Obj, Rel).
-```
+$$
+R = (\mathrm{Obj}, \mathrm{Rel}).
+$$
 
 ---
 
-# Reading closure
+# Reading Closure
 
 The reading-closure operator satisfies:
 
 ### Extensive
 
-```math
-R
-⊆
-Cl_{read}(R)
-```
+$$
+R \subseteq \mathrm{Cl}_{\mathrm{read}}(R)
+$$
 
 ### Idempotent
 
-```math
-Cl_{read}(Cl_{read}(R))
+$$
+\mathrm{Cl}_{\mathrm{read}}(\mathrm{Cl}_{\mathrm{read}}(R))
 =
-Cl_{read}(R)
-```
+\mathrm{Cl}_{\mathrm{read}}(R)
+$$
 
 ### Monotone
 
-```math
-R1 ⊆ R2
-⇒
-Cl_{read}(R1)
-⊆
-Cl_{read}(R2)
-```
+$$
+R_1 \subseteq R_2
+\implies
+\mathrm{Cl}_{\mathrm{read}}(R_1)
+\subseteq
+\mathrm{Cl}_{\mathrm{read}}(R_2)
+$$
 
 ---
 
@@ -159,29 +156,23 @@ Cl_{read}(R2)
 
 A closure-stable geometry is a fixed point of reading closure:
 
-```math
-G_fix
-=
-Cl_{read}(G_fix).
-```
+$$
+G_{\mathrm{fix}} = \mathrm{Cl}_{\mathrm{read}}(G_{\mathrm{fix}}).
+$$
 
 ---
 
 # Minimal Closed Relational Triad
 
-```math
-T3
-=
-Cl_{read}(A,B,C)
-```
+$$
+T_3 = \mathrm{Cl}_{\mathrm{read}}(A, B, C)
+$$
 
 with
 
-```math
-Cl_{read}(T3)
-=
-T3.
-```
+$$
+\mathrm{Cl}_{\mathrm{read}}(T_3) = T_3.
+$$
 
 This is the RDG analogue of the classical circumcarrier.
 
@@ -189,15 +180,13 @@ This is the RDG analogue of the classical circumcarrier.
 
 # Structural Incidence
 
-Structural incidence replaces classical point-line incidence.
+Structural incidence replaces classical point–line incidence.
 
-```math
-A \sim_{S} B
-⇔
-(A,B)
-∈
-Cl_{read}(R).
-```
+$$
+A \sim_S B
+\iff
+(A, B) \in \mathrm{Cl}_{\mathrm{read}}(R).
+$$
 
 Interpretation:
 
@@ -211,35 +200,25 @@ Interpretation:
 
 Projection is extraction of the closure-stable component.
 
-```math
-Pi_{closure}(X)
-=
-X_closed
-```
+$$
+\Pi_{\mathrm{closure}}(X) = X_{\mathrm{closed}}
+$$
 
 such that
 
-```math
-Cl_{read}(X_closed)
-=
-X_closed.
-```
+$$
+\mathrm{Cl}_{\mathrm{read}}(X_{\mathrm{closed}}) = X_{\mathrm{closed}}.
+$$
 
 ---
 
 # Triad Projections
 
-```math
-pi_{RDG}
-```
-
-```math
-pi_MFE
-```
-
-```math
-pi_Q
-```
+$$
+\pi_{\mathrm{RDG}},\quad
+\pi_{\mathrm{MFE}},\quad
+\pi_Q
+$$
 
 extract the RDG, MFE, and Q components of a transformed relational state.
 
@@ -249,25 +228,21 @@ extract the RDG, MFE, and Q components of a transformed relational state.
 
 For a wavicle
 
-```math
-W = (S,P)
-```
+$$
+W = (S, P)
+$$
 
 SID decomposition:
 
-```math
-SID(W)
-=
-(S,I,D)
-```
+$$
+\mathrm{SID}(W) = (S, I, D)
+$$
 
 PED decomposition:
 
-```math
-PED(W)
-=
-(P,E,D)
-```
+$$
+\mathrm{PED}(W) = (P, E, D)
+$$
 
 ---
 
@@ -275,25 +250,19 @@ PED(W)
 
 ### Closure Flow
 
-```math
-\Gamma_0
-=
-id
-```
+$$
+\Gamma_0 = \mathrm{id}
+$$
 
-```math
-\Gamma_(t+s)
-=
-\Gamma_t o \Gamma_s.
-```
+$$
+\Gamma_{t+s} = \Gamma_t \circ \Gamma_s.
+$$
 
 Discrete form:
 
-```math
-\Gamma_(n+1)(R)
-=
-Cl_{read}(\Gamma_n(R)).
-```
+$$
+\Gamma_{n+1}(R) = \mathrm{Cl}_{\mathrm{read}}(\Gamma_n(R)).
+$$
 
 ---
 
@@ -301,11 +270,9 @@ Cl_{read}(\Gamma_n(R)).
 
 Closure-consistent states satisfy
 
-```math
-delta E[R]
-=
-0.
-```
+$$
+\delta E[R] = 0.
+$$
 
 ---
 
@@ -313,39 +280,35 @@ delta E[R]
 
 The central hinge identity is
 
-```math
-R_I(pi_{RDG})
-=
-e_{RDG}.
-```
+$$
+R_I(\pi_{\mathrm{RDG}}) = e_{\mathrm{RDG}}.
+$$
 
 Interpretation:
 
-- `pi_{RDG}` defines admissible geometry.
-- `R_I` selects the realized asymptotic state.
-- `e_{RDG}` is the unique attractor within the admissible geometry.
+- $\pi_{\mathrm{RDG}}$ defines the admissible geometry.
+- $R_I$ selects the realized asymptotic state.
+- $e_{\mathrm{RDG}}$ is the unique attractor within the admissible geometry.
 
 ---
 
 # Relational Expansion Operator
 
-```math
-R_{exp}
+$$
+R_{\mathrm{exp}}
 =
-kappa_Q
-o
-exp(-i Omega_I t)
-o
-mu_Q.
-```
+\kappa_Q
+\circ
+\exp(-i \Omega_I t)
+\circ
+\mu_Q.
+$$
 
 Asymptotically
 
-```math
-R_{exp}^n(x)
-→
-e_{RDG}.
-```
+$$
+R_{\mathrm{exp}}^n(x) \to e_{\mathrm{RDG}}.
+$$
 
 ---
 
@@ -353,38 +316,31 @@ e_{RDG}.
 
 Closure events:
 
-```math
-delta_i ∈ {0,1}.
-```
+$$
+\delta_i \in \{0, 1\}.
+$$
 
 Curvature is the local density of unresolved closure events.
 
 Conceptually:
 
-```math
-Curvature
-=
-{closure} Obstruction.
-```
+$$
+\mathrm{Curvature} = \{\mathrm{closure}\} \text{ obstruction}.
+$$
 
 Flatness corresponds to complete closure:
 
-```math
-Cl_{read}(G)
-=
-G.
-```
+$$
+\mathrm{Cl}_{\mathrm{read}}(G) = G.
+$$
 
 ---
 
 # Relational Gauss Law
 
-```math
-Q
-=
-Σ (SID ⊗ PED)_{closure}
-∈ Z.
-```
+$$
+Q = \sum (\mathrm{SID} \otimes \mathrm{PED})_{\mathrm{closure}} \in \mathbb{Z}.
+$$
 
 Charge is the count of closure events.
 
@@ -392,22 +348,20 @@ Charge is the count of closure events.
 
 # Closure Action
 
-```math
-Action[x]
-=
-∫ C_Gamma(x,x_dot) dt.
-```
+$$
+\mathrm{Action}[x] = \int C_\Gamma(x, \dot{x})\, dt.
+$$
 
 ---
 
 # Closure Geodesic
 
-```math
-gamma_opt
+$$
+\gamma_{\mathrm{opt}}
 =
-arg min
-∫ C_Gamma(x,x_dot) dt.
-```
+\arg\min
+\int C_\Gamma(x, \dot{x})\, dt.
+$$
 
 ---
 
@@ -415,30 +369,27 @@ arg min
 
 ## Variational Distance
 
-```math
-d_Gamma(A,B)
-=
-inf
-∫ C_Gamma(x,x_dot) dt
-```
+$$
+d_\Gamma(A, B) =
+\inf
+\int C_\Gamma(x, \dot{x})\, dt
+$$
 
-over all admissible closure trajectories connecting
-`A` and `B`.
+over all admissible closure trajectories connecting $A$ and $B$.
 
 ---
 
 ## Trajectory Distance
 
-```math
-d_\Gamma(x,y)
-=
-∫_0^∞
-exp(-lambda t)
-||
-\Gamma_t(x)-\Gamma_t(y)
-||
-dt.
-```
+$$
+d_\Gamma(x, y) =
+\int_0^\infty
+\exp(-\lambda t)
+\bigl\|
+\Gamma_t(x) - \Gamma_t(y)
+\bigr\|
+\, dt.
+$$
 
 ---
 
@@ -448,9 +399,9 @@ dt.
 
 The classical circumcircle corresponds to the closure-stable carrier of a minimal relational triad:
 
-```math
-Carrier(T3).
-```
+$$
+\mathrm{Carrier}(T_3).
+$$
 
 ---
 
@@ -458,37 +409,31 @@ Carrier(T3).
 
 For
 
-```math
-P ∈ Carrier(T3)
-```
+$$
+P \in \mathrm{Carrier}(T_3)
+$$
 
 define
 
-```math
-L = Pi_AB(P)
-```
+$$
+L = \Pi_{AB}(P),
+\quad
+M = \Pi_{BC}(P),
+\quad
+N = \Pi_{CA}(P).
+$$
 
-```math
-M = Pi_BC(P)
-```
-
-```math
-N = Pi_CA(P).
-```
-
-These are closure projections onto the three sides of the triad.
+These are the closure projections onto the three sides of the triad.
 
 ---
 
 ## Common Incidence Dependency
 
-The three projected points are incidence-dependent iff they already form a closure-stable incidence structure:
+The three projected points are incidence-dependent if and only if they already form a closure-stable incidence structure:
 
-```math
-Cl_{read}({L,M,N})
-=
-{L,M,N}.
-```
+$$
+\mathrm{Cl}_{\mathrm{read}}(\{L, M, N\}) = \{L, M, N\}.
+$$
 
 This is the RDG analogue of classical collinearity.
 
@@ -496,13 +441,11 @@ This is the RDG analogue of classical collinearity.
 
 # RDG Simson Theorem
 
-```math
-P ∈ Carrier(T3)
-⇔
-Cl_{read}({L,M,N})
-=
-{L,M,N}.
-```
+$$
+P \in \mathrm{Carrier}(T_3)
+\iff
+\mathrm{Cl}_{\mathrm{read}}(\{L, M, N\}) = \{L, M, N\}.
+$$
 
 Verbal form:
 
@@ -514,24 +457,16 @@ Verbal form:
 
 In a Euclidean realization phase,
 
-```math
-Cl_{read}({L,M,N})
-=
-{L,M,N}
-```
+$$
+\mathrm{Cl}_{\mathrm{read}}(\{L, M, N\}) = \{L, M, N\}
+$$
 
-appears as
+appears as the collinearity of $L$, $M$, and $N$.
 
-```math
-L, M, N
-```
+Thus the classical Wallace–Simson theorem is the Euclidean shadow of the RDG closure invariant:
 
-are collinear.
-
-Thus the classical Wallace-Simson theorem is the Euclidean shadow of the RDG closure invariant:
-
-```math
-{closure}-complete source
-⇔
-{closure}-dependent projections.
-```
+$$
+\{\mathrm{closure}\}\text{-complete source}
+\iff
+\{\mathrm{closure}\}\text{-dependent projections}.
+$$
