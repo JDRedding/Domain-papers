@@ -1,0 +1,36 @@
+TRIADIC CLOSURE AXIOM (Trifoil knot)
+========================================
+
+Let S, I, and D be distinct closure modes.
+
+    S ≠ I
+    I ≠ D
+    D ≠ S
+
+Define the closure object
+
+    Ω := Cl(S,I,D)
+
+Then:
+
+    Ω ≠ S
+    Ω ≠ I
+    Ω ≠ D
+
+and
+
+    Ω ≠ {S,I}
+    Ω ≠ {I,D}
+    Ω ≠ {D,S}
+
+and
+
+    Ω ≠ {S,I,D}
+
+The identity of Ω resides in the
+closure relation itself and not in
+any constituent mode nor in their
+mere aggregation.
+
+The object exists through
+irreducible relational closure.
