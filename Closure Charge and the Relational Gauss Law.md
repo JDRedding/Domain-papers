@@ -224,7 +224,7 @@ where $\mathcal{R}$ is any conserved relational content and the closure operatio
 
 The framework is purely relational: only completed structures contribute, all physical content is encoded in the mutual accounting of the densities $R_i$, and the algebraic, topological, and geometric properties of $Q$ follow directly from the restriction of the sum to closures.
 
-**Appendix: Interpretive Levels and RDG Implications**
+## **Appendix: Interpretive Levels and RDG Implications**
 
 From an RDG perspective, there are three increasingly stronger interpretations latent in the paper.
 
