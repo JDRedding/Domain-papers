@@ -520,11 +520,11 @@ with bounded residual degree and bounded reduction budget, every component of
 
 $$
 \Gamma_{\rm dyn} =
-\operatorname{Solve}
+{Solve}
 \circ
-\operatorname{Red}_Q
+{Red}_Q
 \circ
-\operatorname{Cl}_{\rm read}
+{Cl}_{\rm read}
 $$
 
 is computable.
