@@ -4,7 +4,7 @@
 Γ is both the mechanism of change (actualization of potency) and, when residual never vanishes, the engine of ongoing relational expansion. Γ is the dynamic-update operator:
 
 Two regimes:
-- Classical termination: residual generators reach $\emptyset$, $\dim(I) = \dim_{\rm exp}$, flag Q_OK. Further Γ leaves the configuration invariant (pure-act / unmoved / necessary node in the Five Ways).
+- Classical termination: residual generators reach $\emptyset$, $\dim(I) = \dim_{\rm exp}$, flag Q_OK. Further Γ leaves the configuration invariant (pure-act / unmoved / necessary node).
 - Generative / process regime: residual generators remain non-empty for all $n$ (Q_DEGEN persists). Γ continually adjoins new relational capacity. Geometry is the closure of this residual-driven process, not a prior container. 
 
 ```
