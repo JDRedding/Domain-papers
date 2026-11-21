@@ -61,7 +61,7 @@ is the Interaction-mode hinge,
 Pi_{closure}
 ```
 
-is {closure} extraction,
+is closure extraction,
 
 and
 
@@ -157,7 +157,7 @@ Cl_{read}(R2)
 
 # Closure-Stable Geometry
 
-A {closure}-stable geometry is a fixed point of {read}ing {closure}:
+A closure-stable geometry is a fixed point of reading closure:
 
 ```math
 G_fix
@@ -202,14 +202,14 @@ Cl_{read}(R).
 Interpretation:
 
 - Nodes = relational entities.
-- Edges = {closure}-stable admissible pathways.
+- Edges = closure-stable admissible pathways.
 - Incidence = closed relational adjacency.
 
 ---
 
 # Closure Projection
 
-Projection is extraction of the {closure}-stable component.
+Projection is extraction of the closure-stable component.
 
 ```math
 Pi_{closure}(X)
@@ -273,7 +273,7 @@ PED(W)
 
 # Closure Dynamics
 
-### {closure} Flow
+### Closure Flow
 
 ```math
 Gamma_0
@@ -299,7 +299,7 @@ Cl_{read}(Gamma_n(R)).
 
 # Consistency Functional
 
-{closure}-consistent states satisfy
+Closure-consistent states satisfy
 
 ```math
 delta E[R]
@@ -357,7 +357,7 @@ Closure events:
 delta_i ∈ {0,1}.
 ```
 
-Curvature is the local density of unresolved {closure} events.
+Curvature is the local density of unresolved closure events.
 
 Conceptually:
 
@@ -367,7 +367,7 @@ Curvature
 {closure} Obstruction.
 ```
 
-Flatness corresponds to complete {closure}:
+Flatness corresponds to complete closure:
 
 ```math
 Cl_{read}(G)
@@ -386,11 +386,11 @@ Q
 ∈ Z.
 ```
 
-Charge is the count of {closure} events.
+Charge is the count of closure events.
 
 ---
 
-# {closure} Action
+# Closure Action
 
 ```math
 Action[x]
@@ -422,7 +422,7 @@ inf
 ∫ C_Gamma(x,x_dot) dt
 ```
 
-over all admissible {closure} trajectories connecting
+over all admissible closure trajectories connecting
 `A` and `B`.
 
 ---
@@ -446,7 +446,7 @@ dt.
 
 ## Carrier
 
-The classical circumcircle corresponds to the {closure}-stable carrier of a minimal relational triad:
+The classical circumcircle corresponds to the closure-stable carrier of a minimal relational triad:
 
 ```math
 Carrier(T3).
@@ -476,13 +476,13 @@ M = Pi_BC(P)
 N = Pi_CA(P).
 ```
 
-These are {closure} projections onto the three sides of the triad.
+These are closure projections onto the three sides of the triad.
 
 ---
 
 ## Common Incidence Dependency
 
-The three projected points are incidence-dependent iff they al{read}y form a {closure}-stable incidence structure:
+The three projected points are incidence-dependent iff they al{read}y form a closure-stable incidence structure:
 
 ```math
 Cl_{read}({L,M,N})
@@ -506,7 +506,7 @@ Cl_{read}({L,M,N})
 
 Verbal form:
 
-> The three {closure} projections onto the sides of a minimal closed relational triad become incidence-dependent if and only if the source point is al{read}y {closure}-complete with respect to the carrier of that triad.
+> The three closure projections onto the sides of a minimal closed relational triad become incidence-dependent if and only if the source point is al{read}y closure-complete with respect to the carrier of that triad.
 
 ---
 
@@ -527,7 +527,7 @@ L, M, N
 are collinear.
 ```
 
-Thus the classical Wallace-Simson theorem is the Euclidean shadow of the RDG {closure} invariant:
+Thus the classical Wallace-Simson theorem is the Euclidean shadow of the RDG closure invariant:
 
 ```math
 {closure}-complete source
