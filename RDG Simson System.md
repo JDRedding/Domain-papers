@@ -433,6 +433,36 @@ This is the RDG analogue of classical collinearity.
 
 ---
 
+## The Relational Simson Object
+
+The relational object that plays the role of the Simson line is the closure
+
+$$
+S(P;A,B,C) := \mathrm{Cl}_{\mathrm{read}}(\{\Pi_{AB}^{\mathrm{RDG}}(P),\Pi_{BC}^{\mathrm{RDG}}(P),\Pi_{CA}^{\mathrm{RDG}}(P)\}).
+$$
+
+When the source state is closure-complete, i.e.,
+
+$$
+P\in\mathrm{Carrier}(T_3),
+$$
+
+the three projected states become mutually dependent:
+
+$$
+S(P;A,B,C)=\{\Pi_{AB}^{\mathrm{RDG}}(P),\Pi_{BC}^{\mathrm{RDG}}(P),\Pi_{CA}^{\mathrm{RDG}}(P)\}.
+$$
+
+In this case \(S(P;A,B,C)\) is a single closure-stable channel (a relational line). Its Euclidean realization is the classical Simson line:
+
+$$
+\mathcal{E}\bigl(S(P;A,B,C)\bigr)=\text{Simson line of }\mathcal{E}(P)\text{ with respect to triangle }\mathcal{E}(ABC).
+$$
+
+Thus the Simson line is not a primitive Euclidean object; it is the shadow of the closure of the three channel projections of a carrier state.
+
+---
+
 # RDG Simson Theorem
 
 $$
