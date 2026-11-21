@@ -364,3 +364,40 @@ $$
 $$
 
 The continuum theory is not fundamental; it is a carrier realization of the discrete relational dynamics.
+
+# Appendix E. Q-Admissibility
+
+The Q-layer partitions states into admissible and non-admissible classes.
+
+Admissible:
+
+$$
+Q_{\rm OK}
+\iff
+\operatorname{Res}(S)=\varnothing
+\quad
+\text{and}
+\quad
+\dim S(R)
+\text{ is preserved}.
+$$
+
+Non-admissible:
+
+$$
+Q_{\rm DEGEN}
+\iff
+\operatorname{Res}(S)\neq\varnothing
+$$
+
+or dimensional collapse occurs.
+
+The reduction operator
+
+$$
+\operatorname{Red}_Q
+$$
+
+acts only on algebraic residuals and does not modify solved continuum carriers directly.
+
+Therefore Q functions as a consistency layer rather than a physical force.
