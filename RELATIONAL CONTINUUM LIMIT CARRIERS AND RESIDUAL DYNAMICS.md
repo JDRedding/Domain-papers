@@ -90,6 +90,7 @@ $$
 \frac{d\Psi}{dt}=\Gamma[\Psi],\qquad
 \Gamma:S\to TS.
 $$
+
 Relational differential:
 
 $$
