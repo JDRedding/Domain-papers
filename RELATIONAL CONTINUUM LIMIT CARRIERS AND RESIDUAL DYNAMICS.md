@@ -324,3 +324,43 @@ Examples include:
 
 This is the sense in which ordinary continuum physics is recovered.
 
+# Appendix D. Relation Between Discrete and Continuum Operators
+
+The framework contains two distinct levels of dynamics.
+
+Discrete level:
+
+$$
+\Gamma_{\rm dyn}
+:
+(S,I,D)_t
+\rightarrow
+(S,I,D)_{t+1}.
+$$
+
+Continuum level:
+
+$$
+\frac{d\Psi}{dt} =
+\Gamma[\Psi].
+$$
+
+The continuum generator is obtained through refinement,
+
+$$
+\Gamma =
+\lim_{h\to0}
+\Gamma_h.
+$$
+
+The relationship is therefore
+
+$$
+\Gamma_{\rm dyn}
+\Longrightarrow
+\Gamma_h
+\Longrightarrow
+\Gamma.
+$$
+
+The continuum theory is not fundamental; it is a carrier realization of the discrete relational dynamics.
