@@ -13,9 +13,7 @@ The distinction is particularly important when discussing SID. Within RDGA, expr
 
     S ⊂ I ⊂ D
 
-describe algebraic organization, expressive scope, or operator structure. They should not be interpreted as statements about the ontological status of the SID modes themselves. Within RDG, Structure (S), Interaction (I), and Dynamics (D) form an irreducible triadic closure. No single mode is identified with the closure object, and no single mode completely determines it. The closure exists only through the relational coupling of all three modes.
-
-In this sense, RDGA provides a representation of SID, while the SID closure remains an ontological primitive of the broader RDG framework. In short:
+describe algebraic organization, expressive scope, or operator structure. They should not be interpreted as statements about the ontological status of the SID modes themselves. Within RDG, Structure (S), Interaction (I), and Dynamics (D) form an irreducible triadic closure. No single mode is identified with the closure object, and no single mode completely determines it. Closure is non-localized across the triad: the closure object exists only through the relational coupling of all three modes and cannot be reduced to any individual component. In this sense, RDGA provides a representation of SID, while the SID closure remains an ontological primitive of the broader RDG framework. In short:
 
     RDG is the ontology.
     RDGA is the algebra.
