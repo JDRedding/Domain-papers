@@ -1,4 +1,7 @@
 # RELATIONAL CONTINUUM LIMIT CARRIERS AND RESIDUAL DYNAMICS
+*Γ-Operators, Algebraic Carriers, and Physical Realizations in RDG*
+
+---
 
 The framework treats the discrete $\Gamma$ updates and residual algebra as primary; continuum objects (forms, Lindblad, GPE, CAF, etc.) are recovered as carrier realizations.
 
