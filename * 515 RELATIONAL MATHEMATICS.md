@@ -9,13 +9,13 @@ This document develops Relational Dynamic Geometry Algebra (RDGA), the algebraic
 
 The full RDG framework includes closure-theoretic, geometric, dynamical, evaluative, and evolutionary components that extend beyond the algebra developed here. In particular, the SID triad (Structure, Interaction, Dynamics) should not be identified with its algebraic representation. Within RDG, SID functions as a primitive closure object, whereas RDGA provides one formal language for expressing and analyzing its behavior.
 
-Consequently, algebraic relations appearing in this document, including expressions such as
+The distinction is particularly important when discussing SID. Within RDGA, expressions such as
 
     S ⊂ I ⊂ D
 
-belong to the RDGA formalism and should not automatically be interpreted as ontological containment relations between the SID modes themselves. Such expressions describe features of the algebraic representation. They do not imply that one SID mode subsumes or contains the others within the closure ontology.
+describe algebraic organization, expressive scope, or operator structure. They should not be interpreted as statements about the ontological status of the SID modes themselves. Within RDG, Structure (S), Interaction (I), and Dynamics (D) form an irreducible triadic closure. No single mode is identified with the closure object, and no single mode completely determines it. The closure exists only through the relational coupling of all three modes.
 
-In short:
+In this sense, RDGA provides a representation of SID, while the SID closure remains an ontological primitive of the broader RDG framework. In short:
 
     RDG is the ontology.
     RDGA is the algebra.
