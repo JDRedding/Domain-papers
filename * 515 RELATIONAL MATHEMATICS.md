@@ -22,6 +22,14 @@ This is a pipeline, not a Boolean algebra. RA is the input grammar, not the fina
 
 ---
 
+## Ontological Scope
+
+This paper develops Relational Dynamic Geometry Algebra (RDGA), the algebraic and operator-theoretic formalism used to represent and manipulate RDG structures. RDGA should not be identified with the entirety of Relational Dynamic Geometry (RDG). The full RDG framework contains ontological, geometric, dynamical, and closure-theoretic components that are not reducible to the algebra alone. In particular, relations such as
+
+S ⊂ I ⊂ D
+
+are statements within the RDGA formalism and should not be interpreted as ontological containment relations between the SID modes themselves. The SID triad remains an irreducible closure object within RDG, while RDGA provides one mathematical language for expressing its structure and transformations.
+
 ## **RA - RDG Table**
 
 | **Concept / Layer** | **Classical Relational Algebra (RA)** | **RDG / MFE / RME Framework** |
