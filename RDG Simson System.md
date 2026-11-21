@@ -469,13 +469,13 @@ $$
 
 The RDG Simson system is purely relational. There are no absolute locations, coordinates, or ambient point-space.
 
-All structure is carried by the relational substrate $R = (\mathrm{Obj}, \mathrm{Rel})$ and the reading-closure operator $\mathrm{Cl}_{\mathrm{read}}$. Objects acquire identity and mutual position only through closure-stable incidence:
+All structure is carried by the relational substrate $R = (\mathrm{Obj}, \mathrm{Rel})$ and the reading-closure operator $\mathrm{Cl}_{\mathrm{read}}$. Objects acquire relational identity and mutual incidence only through closure-stable structure:
 
 $$
 A \sim_S B \iff (A,B) \in \mathrm{Cl}_{\mathrm{read}}(R).
 $$
 
-What classically appears as a point lying on a carrier or on a Simson line is, in RDG, only a fixed point of closure:
+What classically appears as carrier membership or collinearity is expressed in RDG through the corresponding closure-completeness and joint incidence-stability conditions:
 
 $$
 G = \mathrm{Cl}_{\mathrm{read}}(G).
