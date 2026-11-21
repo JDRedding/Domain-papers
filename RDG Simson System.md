@@ -2,7 +2,7 @@
 
 *Abstract*
 
-This paper replaces circumcircle membership and collinearity with carrier membership and closure-dependence, yielding an relational formulation of the Wallace-Simson equivalence.
+This paper replaces circumcircle membership and collinearity with carrier membership and closure-dependence, yielding a relational formulation of the Wallace-Simson equivalence.
 
 ## SID Block
 
