@@ -210,14 +210,12 @@ $$
 should be interpreted operationally as
 
 $$
-S_{t+1}
-=
+S_{t+1} =
 {Cl}_{\rm read}(S_t+\Delta S_t),
 $$
 
 $$
-I_{t+1}
-=
+I_{t+1} =
 {Red}_Q
 \!\left(
 I_t+{Res}(S_t)
@@ -225,8 +223,7 @@ I_t+{Res}(S_t)
 $$
 
 $$
-D_{t+1}
-=
+D_{t+1} =
 {Solve}(I_{t+1}).
 $$
 
@@ -239,8 +236,7 @@ Thus the dynamics proceeds in three stages:
 The operator ordering is therefore
 
 $$
-\Gamma_{\rm dyn}
-=
+\Gamma_{\rm dyn} =
 {Solve}
 \circ
 {Red}_Q
@@ -253,15 +249,14 @@ $$
 A fixed point of the dynamics is a state
 
 $$
-(S^*,I^*,D^*)
+(S^\*,I^\*,D^\*)
 $$
 
 satisfying
 
 $$
-\Gamma_{\rm dyn}(S^*,I^*,D^*)
-=
-(S^*,I^*,D^*).
+\Gamma_{\rm dyn}(S^\*,I^\*,D^\*) =
+(S^\*,I^\*,D^\*).
 $$
 
 Equivalently,
