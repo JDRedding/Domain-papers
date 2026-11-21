@@ -2,6 +2,14 @@ Closure (Dual Languages)
 
 RDG employs two complementary notions of closure.
 
+The Closure Stability Specification is not the
+source of closure.
+
+It is the categorical translation of closure.
+
+The Closure Stability Conjecture is much closer
+to the native RDG notion of closure.
+
 (1) Dynamic / Variational Closure
     (Closure Stability Conjecture)
 
