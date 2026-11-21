@@ -453,7 +453,7 @@ $$
 S(P;A,B,C)=\{\Pi_{AB}^{\mathrm{RDG}}(P),\Pi_{BC}^{\mathrm{RDG}}(P),\Pi_{CA}^{\mathrm{RDG}}(P)\}.
 $$
 
-In this case \(S(P;A,B,C)\) is a single closure-stable channel (a relational line). Its Euclidean realization is the classical Simson line:
+In this case $S(P;A,B,C)$ is a single closure-stable channel (a relational line). Its Euclidean realization is the classical Simson line:
 
 $$
 \mathcal{E}\bigl(S(P;A,B,C)\bigr)=\text{Simson line of }\mathcal{E}(P)\text{ with respect to triangle }\mathcal{E}(ABC).
