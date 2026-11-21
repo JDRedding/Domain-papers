@@ -156,7 +156,7 @@ Cl_{read}(R2)
 
 ---
 
-# {closure}-Stable Geometry
+# Closure-Stable Geometry
 
 A {closure}-stable geometry is a fixed point of {read}ing {closure}:
 
@@ -208,7 +208,7 @@ Interpretation:
 
 ---
 
-# {closure} Projection
+# Closure Projection
 
 Projection is extraction of the {closure}-stable component.
 
@@ -272,7 +272,7 @@ PED(W)
 
 ---
 
-# {closure} Dynamics
+# Closure Dynamics
 
 ### {closure} Flow
 
@@ -350,9 +350,9 @@ e_{RDG}.
 
 ---
 
-# {closure} Curvature
+# Closure Curvature
 
-{closure} events:
+Closure events:
 
 ```math
 delta_i ∈ {0,1}.
@@ -401,7 +401,7 @@ Action[x]
 
 ---
 
-# {closure} Geodesic
+# Closure Geodesic
 
 ```math
 gamma_opt
@@ -412,7 +412,7 @@ arg min
 
 ---
 
-# {closure} Distance
+# Closure Distance
 
 ## Variational Distance
 
@@ -455,7 +455,7 @@ Carrier(T3).
 
 ---
 
-## {closure} Projections
+## Closure Projections
 
 For
 
