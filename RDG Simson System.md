@@ -123,9 +123,9 @@ R
 
 ---
 
-# {read}ing {closure}
+# Reading closure
 
-The {read}ing-{closure} operator satisfies:
+The reading-closure operator satisfies:
 
 ### Extensive
 
