@@ -553,3 +553,171 @@ $$
 $$
 \mathrm{Cl}_{\mathrm{read}}(\{L,M,N\})=\{L,M,N\}.
 $$
+
+# Appendix: Intrinsic Projection, Variational Characterization, and Euclidean Realization
+
+This appendix clarifies the logical status of the projection operators and separates the intrinsic RDG definitions from their Euclidean realizations.
+
+## Three Levels of Description
+
+The projection operator may appear in three distinct but compatible forms:
+
+| Level          | Status           | Interpretation                                              |
+|----------------|------------------|-------------------------------------------------------------|
+| Intrinsic RDG  | Definition       | Relational projection into a closure-stable channel         |
+| Variational    | Characterization | Nearest-channel-state selection with respect to $d_\Gamma$ |
+| Euclidean      | Realization      | Orthogonal foot onto a side-line                            |
+
+These descriptions are not assumed identical a priori. Their equivalence must be imposed as an axiom or established by a theorem.
+
+## Intrinsic Projection
+
+For a closure-stable channel
+
+$$
+C_{AB} = \mathrm{Cl}_{\mathrm{read}}(\{A,B\}),
+$$
+
+the intrinsic projection is
+
+$$
+\Pi_{AB}^{\mathrm{RDG}} : \mathrm{State} \longrightarrow C_{AB}.
+$$
+
+The projection is therefore defined entirely within the closure structure and requires neither coordinates nor angles.
+
+## Variational Characterization
+
+When a closure metric or cost functional $d_\Gamma$ is available, the projection may additionally satisfy
+
+$$
+\Pi_{AB}^{\mathrm{RDG}}(P) = \operatorname*{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
+$$
+
+More generally, without uniqueness,
+
+$$
+\Pi_{AB}^{\mathrm{RDG}}(P) \in \operatorname*{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
+$$
+
+Existence and uniqueness of the minimizer require additional hypotheses and are not consequences of the closure axioms alone.
+
+This variational property should therefore be regarded as an optional characterization or realization theorem rather than part of the minimal definition.
+
+## Euclidean Realization
+
+Let
+
+$$
+\mathcal{E} : \mathrm{RDG} \longrightarrow \mathrm{Euclid}
+$$
+
+be a realization map.
+
+The Euclidean shadow of the intrinsic projection is ordinary orthogonal projection:
+
+$$
+\mathcal{E} \!\left( \Pi_{AB}^{\mathrm{RDG}}(P) \right) = \operatorname{proj}^{\perp}_{AB} \!\left( \mathcal{E}(P) \right),$$
+
+where $\operatorname{proj}^{\perp}_{AB}$ denotes projection onto the Euclidean side-line corresponding to the relational channel $C_{AB}$.
+
+Thus orthogonal projection is not fundamental to RDG; it is the Euclidean realization of the underlying relational projection.
+
+# Appendix: Euclidean Shadow Principle
+
+The phrase “Euclidean shadow” refers to a compatibility relation between intrinsic RDG structures and their Euclidean realizations.
+
+## Projection Shadow
+
+Projection commutes with realization:
+
+$$
+\mathcal{E} \circ \Pi^{\mathrm{RDG}} = \Pi^{\mathrm{Euclid}} \circ \mathcal{E}.
+$$
+
+This means that intrinsic relational projection and Euclidean projection represent the same operation viewed in different realization phases.
+
+## Closure Shadow
+
+Closure-dependence appears in Euclidean geometry as collinearity:
+
+$$
+\mathrm{Cl}_{\mathrm{read}}(\{L,M,N\}) = \{L,M,N\} \iff \mathcal{E}(L), \mathcal{E}(M), \mathcal{E}(N) \text{ are collinear}.
+$$
+
+Thus collinearity is not taken as primitive. Rather, it is the Euclidean manifestation of a deeper closure invariant.
+
+## General Realization Principle
+
+More generally, the realization map is expected to preserve closure structure:
+
+$$
+\mathcal{E} \bigl( \mathrm{Cl}_{\mathrm{read}}(X) \bigr) = \mathrm{Cl}_{E} \bigl( \mathcal{E}(X) \bigr),
+$$
+
+where $\mathrm{Cl}_{E}$ denotes Euclidean incidence closure.
+
+This expresses the idea that Euclidean geometry is a realization phase of RDG rather than an independent foundation.
+
+# Appendix: Logical Status of the RDG Simson Theorem
+
+The RDG Simson statement
+
+$$
+P \in \mathrm{Carrier}(T_3) \iff \mathrm{Cl}_{\mathrm{read}}(\{L,M,N\}) = \{L,M,N\}
+$$
+
+is an intrinsic relational statement.
+
+The theorem should not be interpreted as relying upon Euclidean notions such as perpendicularity or collinearity.
+
+Instead:
+
+- $P \in \mathrm{Carrier}(T_3)$ expresses closure-completeness of the source state, while
+- $\mathrm{Cl}_{\mathrm{read}}(\{L,M,N\}) = \{L,M,N\}$ expresses closure-dependence of the projected states.
+
+The classical Wallace–Simson theorem is recovered through realization:
+
+$$
+\mathcal{E}(L), \mathcal{E}(M), \mathcal{E}(N) \text{ collinear} \iff P \text{ lies on the circumcircle}.
+$$
+
+Accordingly,
+
+$$
+\text{closure-complete source} \iff \text{closure-dependent projections}
+$$
+
+is the intrinsic RDG invariant whose Euclidean shadow is the classical Simson theorem.
+
+# Appendix: Definition, Characterization, and Realization
+
+To avoid ambiguity, RDG objects shall be distinguished according to the following hierarchy:
+
+## Definition
+
+Specifies the object within the relational substrate.
+
+Example:
+
+$$
+\Pi_{AB}^{\mathrm{RDG}} : \mathrm{State} \to C_{AB}.
+$$
+
+## Characterization
+
+A property that uniquely identifies the object when additional structure is available.
+
+Example:
+
+$$
+\Pi_{AB}^{\mathrm{RDG}}(P) = \operatorname*{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
+$$
+
+## Realization
+
+How the object appears in a particular geometry.
+
+Example:
+
+$$\mathcal{E} \!\left( \Pi_{AB}^{\mathrm{RDG}}(P) \right) = AB \cap \ell, \qquad \ell \perp AB.$$
