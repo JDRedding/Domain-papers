@@ -465,7 +465,7 @@ $$
 \{\mathrm{closure}\}\text{-dependent projections}.
 $$
 
-## Appendix: No Absolute Location
+# Appendix: No Absolute Location
 
 The RDG Simson system is purely relational. There are no absolute locations, coordinates, or ambient point-space.
 
