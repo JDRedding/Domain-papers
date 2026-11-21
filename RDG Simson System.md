@@ -95,12 +95,11 @@ where
 and
 
 ```math
-R_{exp}
-=
+R_{exp} =
 \kappa_Q
-o
+o 
 exp(-i Omega_I t)
-o
+o 
 \mu_Q.
 ```
 
