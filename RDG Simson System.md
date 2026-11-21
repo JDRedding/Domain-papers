@@ -87,9 +87,9 @@ e_{RDG}
 where
 
 ```math
-Gamma_(t+s)
+\Gamma_(t+s)
 =
-Gamma_t o Gamma_s
+\Gamma_t o \Gamma_s
 ```
 
 and
@@ -97,11 +97,11 @@ and
 ```math
 R_{exp}
 =
-kappa_Q
+\kappa_Q
 o
 exp(-i Omega_I t)
 o
-mu_Q.
+\mu_Q.
 ```
 
 The selected attractor satisfies
