@@ -502,7 +502,7 @@ $$
 # Future Work
 *Summary and Outlook*
 
-The present work establishes a relational translation of the classical Wallace–Simson theorem. It expresses membership of a source state in the carrier of the generating triad through the joint closure-dependence of its three channel projections. The immediate objective is this translation into relational terms, rather than a complete integration into the surrounding RDG geometry.
+The present work establishes a relational translation of the classical Wallace–Simson theorem. It expresses membership of a source state in the carrier of the generating triad through the joint closure-dependence of its three channel projections. The immediate objective is this translation into relational terms, rather than a complete integration into the surrounding Relational Dynamic Geometry.
 
 Future work will specialize the underlying relational primitives of RDG to the present Simson formulation and make their connections explicit. This includes developing the Simson-specific channel projections within the intrinsic RDG framework and establishing conditions for their existence and uniqueness. A central objective is to identify a sufficient set of relational axioms that support an intrinsic proof of the stated equivalence. A complementary direction is the construction of a compatible Euclidean realization in which carrier membership, channel projection, and closure-dependence recover their classical counterparts. Explicit models and worked examples will be developed to test these correspondences and examine degenerate configurations.
 
