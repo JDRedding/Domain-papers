@@ -537,3 +537,8 @@ $$
 (S,I,D)_t
 \mapsto
 (S,I,D)_{t+1}
+$$
+
+is algorithmically executable.
+
+Questions of convergence, fixed-point existence, asymptotic stability, and coarse-graining are subsequent analytical questions rather than questions of definability.
