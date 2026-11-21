@@ -1,0 +1,29 @@
+Closure (Dual Languages)
+
+RDG employs two complementary notions of closure.
+
+(1) Dynamic / Variational Closure
+    (Closure Stability Conjecture)
+
+        Γ
+        CΓ
+        S[x]
+        δS = 0
+        dΓ
+
+    Closure emerges through dynamical
+    organization and variational selection.
+
+(2) Categorical Closure
+    (Closure Stability Specification)
+
+        Cl_read
+
+    Closure is represented through
+    extensive, idempotent, monotone
+    closure operators.
+
+The second serves as a mathematical
+representation of the first. The primary
+RDG intuition remains the variational
+closure picture.
