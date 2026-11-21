@@ -94,3 +94,135 @@ $$
 whenever the continuum field’s long-time coherence pattern projects onto the orbit $[\pi]$.  
 Thus the recovery map is the selection of those continuum (or discrete) generators whose stabilised phase geometry realises a given frozen projection.
 
+# Appendix: Relation to Dynamic Γ-Propagation
+
+The recovery map is distinct from the dynamic Γ-operator used elsewhere.
+
+## Two Γ-Operators
+
+The dynamic operator acts on evolving states:
+
+```math
+\Gamma_{\mathrm{update}} : \mathrm{State}_t \to \mathrm{State}_{t+1}
+```
+
+and propagates changes through dependency graphs, ideals, and admissibility checks.
+
+The recovery map acts on frozen orbit classes:
+
+```math
+\Gamma_{\mathrm{recovery}} : O \to \mathcal{P}(\mathrm{SDI})
+```
+
+and reconstructs admissible generators compatible with a stabilized invariant.
+
+These operators have opposite orientations:
+
+```
+Γ_update:
+Generator → Dynamics → Invariant
+
+Γ_recovery:
+Invariant → Generator Fibre
+```
+
+## Projection–Recovery Hinge
+
+Let
+
+```math
+\Pi : \mathrm{SDI} \to O
+```
+
+be the partition-extraction projection that forgets dynamical details and retains only the stabilized orbit structure.
+
+Then:
+
+```math
+\Pi \circ \Gamma_{\mathrm{recovery}} = \mathrm{id}_O
+```
+
+on the image of \( \Pi \).
+
+Equivalently:
+
+```
+SDI
+  --Π-->
+Orbit
+
+Orbit
+  --Γ_recovery-->
+Fibre(SDI)
+```
+
+The projection collapses dynamics into invariant structure; recovery lifts invariant structure back to compatible dynamics.
+
+## Fibre Interpretation
+
+Because \( \Pi \) forgets:
+
+- trajectory history
+- transient states
+- bifurcations
+- convergence route
+- generator parametrization
+
+it is generally many-to-one:
+
+```
+SDI₁
+SDI₂
+SDI₃
+  ↓
+ [π]
+```
+
+Accordingly,
+
+```math
+\Gamma_{\mathrm{recovery}}([\pi])
+```
+
+returns an entire fibre of admissible SDIs rather than a unique generator.
+
+## Compatibility with Continuum Closure
+
+The continuum closure generator previously defined in RDGA is simply one member of an appropriate recovery fibre:
+
+```math
+\Gamma_{\mathrm{continuum}} \in \Gamma_{\mathrm{recovery}}([\pi])
+```
+
+whenever
+
+```math
+\Pi(\Gamma_{\mathrm{continuum}}) = [\pi].
+```
+
+Thus the recovery map does not introduce new dynamics; it selects generators—discrete or continuous—whose long-time stabilized coherence realizes the required orbit class.
+
+## Conceptual Role
+
+The dynamic Γ explains how invariants arise.
+
+The recovery Γ explains which generators can realize a given invariant.
+
+Together they form the forward and inverse sides of the RDGA relational hinge:
+
+```
+Generator
+   ↓ Π
+Invariant
+   ↑ Γ_recovery
+```
+
+and
+
+```
+State_t
+   ↓ Γ_update
+State_{t+1}
+```
+
+where projection freezes dynamics into structure and recovery reconstructs admissible dynamics from structure.
