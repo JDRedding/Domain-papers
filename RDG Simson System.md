@@ -465,6 +465,8 @@ $$
 \{\mathrm{closure}\}\text{-dependent projections}.
 $$
 
+---
+
 # Appendix: No Absolute Location
 
 The RDG Simson system is purely relational. There are no absolute locations, coordinates, or ambient point-space.
@@ -483,12 +485,14 @@ $$
 
 No external embedding or coordinate chart is required or admitted. Any apparent “location” is an emergent consequence of the closed relational geometry and dissolves when the closure relations are removed.
 
+---
+
 # Appendix: Axiomatization of $\Pi_{AB}$
 
 These are the equations and formulas that constitute the minimal mathematical axiomatization of $\Pi_{AB}$ and the associated Simson condition.
 
 $$
-P\in{Carrier}(T_3)
+P\in\mathrm{Carrier}(T_3)
 \;\iff\;
 \mathrm{Cl}_{\mathrm{read}}(\{L,M,N\})=\{L,M,N\}.
 $$
@@ -496,7 +500,7 @@ $$
 ## Core Notation
 
 - $T_3$: a closure-stable triad.
-- ${Carrier}(T_3)$: the set of admissible relational states $P$.
+- $\mathrm{Carrier}(T_3)$: the set of admissible relational states $P$.
 - $\mathrm{Cl}_{\mathrm{read}}$: a closure operator.
 - $R$: a base relational structure.
 - $d_\Gamma$: a distance (or quasimetric) used to measure proximity to closed objects.
@@ -511,29 +515,29 @@ $$
 ## Projection Signature
 
 $$
-\Pi_{AB}:{Carrier}(T_3)\longrightarrow\mathrm{Cl}_{\mathrm{read}}(\{A,B\}).
+\Pi_{AB}:\mathrm{Carrier}(T_3)\longrightarrow\mathrm{Cl}_{\mathrm{read}}(\{A,B\}).
 $$
 
 (Analogous signatures hold for $\Pi_{BC}$ and $\Pi_{CA}$.)
 
 ## Projection Axioms
 
-**Closure stability (P1)**  
+**Closure stability (P1)**
 
 $$
 \mathrm{Cl}_{\mathrm{read}}\bigl(\Pi_{AB}(P)\bigr)=\Pi_{AB}(P).
 $$
 
-**Idempotence (P3)**  
+**Idempotence (P3)**
 
 $$
 \Pi_{AB}\circ\Pi_{AB}=\Pi_{AB}.
 $$
 
-**Nearest closed representative (P4, optional)**  
+**Nearest closed representative (P4, optional)**
 
 $$
-\Pi_{AB}(P)=\*{argmin}_{X\in\mathrm{Cl}_{\mathrm{read}}(\{A,B\})}d_\Gamma(P,X).
+\Pi_{AB}(P)=\arg\min_{X\in\mathrm{Cl}_{\mathrm{read}}(\{A,B\})}d_\Gamma(P,X).
 $$
 
 ### Channel Projections of a State
