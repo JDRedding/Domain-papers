@@ -58,3 +58,143 @@ $$
 5. Eliminate only variables that are fully constrained.
 6. Leave excess dimensions as new admissible relations.
 
+# Appendix: Recovery Map and Generator Fibres
+
+The dynamic update operator and the recovery map are distinct but complementary faces of Γ-mode.
+
+## Dynamic Γ vs Recovery Γ
+
+The propagation operator acts on states:
+
+```math
+\Gamma_{\mathrm{update}} : \mathrm{State}_t \to \mathrm{State}_{t+1}
+```
+
+and governs actualization, dependency propagation, residual elimination, or residual growth.
+
+The recovery map acts on stabilized observables:
+
+```math
+\Gamma_{\mathrm{recovery}} : O \to \mathcal{P}(\mathrm{SDI})
+```
+
+where:
+
+- $O$ = orbit classes / frozen projections  
+- $\mathrm{SDI}$ = stabilized dynamic invariants  
+
+## Projection–Recovery Pair
+
+Let
+
+```math
+\Pi : \mathrm{SDI} \to O
+```
+
+be the partition-extraction projection that forgets dynamical details and retains only the stabilized relational structure.
+
+The recovery map is a right-inverse on the image:
+
+```math
+\Pi \circ \Gamma_{\mathrm{recovery}} = \mathrm{id}_O
+```
+
+Thus:
+
+```
+Generator
+    ↓ Π
+Frozen Orbit
+    ↑ Γ_recovery
+Generator Fibre
+```
+
+## Fibre Interpretation
+
+In general:
+
+```math
+\Gamma_{\mathrm{recovery}}([\pi]) =
+\{
+I \in \mathrm{SDI}
+:
+\Pi(I) = [\pi]
+\}
+```
+
+possibly restricted to generators of minimal relational complexity.
+
+Because $\Pi$ discards trajectory history, bifurcations, rates, and transient structure:
+
+```
+many generators
+      ↓
+   one orbit
+```
+
+Therefore recovery is naturally multi-valued:
+
+```math
+\Gamma_{\mathrm{recovery}}([\pi]) \subset \mathrm{SDI}
+```
+
+rather than a single generator.
+
+## Relation to Residual Dynamics
+
+For a generator $G$,
+
+```math
+\Pi(\mathrm{Attractor}(G)) = [\pi]
+```
+
+defines its stabilized projection.
+
+The recovery fibre consists of all admissible generators whose long-time coherence pattern realizes the same orbit:
+
+```math
+\Gamma_{\mathrm{recovery}}([\pi]) =
+\{
+G
+:
+\Pi(\mathrm{Attractor}(G)) = [\pi]
+\}
+```
+
+Thus Γ-propagation moves:
+
+```
+Generator
+ → Attractor
+ → Frozen Orbit
+```
+
+while Γ-recovery moves:
+
+```
+Frozen Orbit
+ → Generator Fibre
+```
+
+## Role 
+
+The two Γ-operators occupy opposite sides of the same hinge:
+
+```
+SDI
+   --Π-->
+Orbit
+
+Orbit
+   --Γ_recovery-->
+Fibre(SDI)
+
+State_t
+   --Γ_update-->
+State_(t+1)
+```
+
+- $\Gamma_{\mathrm{update}}$ generates relational structure.  
+- $\Gamma_{\mathrm{recovery}}$ reconstructs the family of admissible generators capable of producing a given stabilized relational structure.  
+
+Together they provide the forward and inverse faces of relational dynamics.
