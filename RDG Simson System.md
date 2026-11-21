@@ -2,7 +2,7 @@
 
 *Abstract*
 
-This paper replaces circumcircle membership and collinearity with carrier membership and closure-dependence, yielding a relational formulation of the Wallace-Simson equivalence. This reformulates the Wallace–Simson equivalence in relational terms, expressing circumcircle membership as carrier membership and collinearity as joint closure-dependence of three channel projections. The resulting formulation is situated within the Relational Dynamic Geometry framework; an intrinsic proof and a compatible Euclidean realization are identified as directions for future work.
+This paper replaces circumcircle membership and collinearity with carrier membership and closure-dependence, yielding a relational formulation of the Wallace-Simson equivalence. This reformulates the Wallace–Simson equivalence in relational terms, expressing circumcircle membership as carrier membership and collinearity as joint closure-dependence of three channel projections. The resulting formulation is situated within the Relational Dynamic Geometry (RDG) framework; an intrinsic proof and a compatible Euclidean realization are identified as directions for future work.
 
 ## SID Block
 
@@ -467,7 +467,7 @@ Thus the Simson line is not a primitive Euclidean object; it is the shadow of th
 
 ---
 
-# RDG Simson Theorem
+# RDG Simson Formulation
 
 $$
 P \in \mathrm{Carrier}(T_3)
