@@ -441,3 +441,99 @@ $$
 $$
 
 Consequently the continuum equations are interpreted as realizations of the residual algebra rather than as fundamental objects.
+
+# Appendix G. Ontological Ordering
+
+The framework distinguishes between relational primitives and derived continuum objects.
+
+Fundamental:
+
+$$
+G=(Obj,Rel),
+\qquad
+S,
+\qquad
+I,
+\qquad
+D,
+\qquad
+\Gamma.
+$$
+
+Derived:
+
+$$
+I_R,
+\qquad
+S(R),
+\qquad
+\Gamma_h,
+\qquad
+\Gamma,
+\qquad
+\Psi,
+\qquad
+g_{ij},
+\qquad
+\omega_{ij},
+\qquad
+\rho,
+\qquad
+\psi.
+$$
+
+The dependency chain is
+
+$$
+G
+\rightarrow
+(S,I,D)
+\rightarrow
+\Gamma_{\rm dyn}
+\rightarrow
+I_R
+\rightarrow
+S(R)
+\rightarrow
+\Gamma_h
+\rightarrow
+\Gamma
+\rightarrow
+\text{continuum carriers}.
+$$
+
+The continuum manifold is therefore not assumed as a primitive object.
+
+Instead it appears as a large-scale carrier realization of relational dynamics.
+
+# Appendix H. Computability
+
+For finite relational geometries
+
+$$
+|Obj| < \infty,
+\qquad
+|Rel| < \infty,
+$$
+
+with bounded residual degree and bounded reduction budget, every component of
+
+$$
+\Gamma_{\rm dyn} =
+\operatorname{Solve}
+\circ
+\operatorname{Red}_Q
+\circ
+\operatorname{Cl}_{\rm read}
+$$
+
+is computable.
+
+The update therefore defines a finite-state dynamical system.
+
+Consequently:
+
+$$
+(S,I,D)_t
+\mapsto
+(S,I,D)_{t+1}
