@@ -9,8 +9,8 @@ S :=
 (
 R,
 Cl_read,
-T_3,
-\pi_{RDG}
+T3,
+pi_RDG
 )
 ```
 
@@ -23,7 +23,7 @@ R = (Obj, Rel)
 is the pure relational substrate,
 
 ```math
-T_3
+T3
 ```
 
 is the minimal closed relational triad,
@@ -31,7 +31,7 @@ is the minimal closed relational triad,
 and
 
 ```math
-\pi_{RDG}
+pi_RDG
 ```
 
 is the admissible relational geometry.
@@ -44,8 +44,8 @@ is the admissible relational geometry.
 I :=
 (
 R_I,
-\Pi_{closure},
-\sim_S
+Pi_closure,
+~_S
 )
 ```
 
@@ -58,7 +58,7 @@ R_I
 is the Interaction-mode hinge,
 
 ```math
-\Pi_{closure}
+Pi_closure
 ```
 
 is closure extraction,
@@ -66,7 +66,7 @@ is closure extraction,
 and
 
 ```math
-\sim_S
+~_S
 ```
 
 is structural incidence.
@@ -78,297 +78,303 @@ is structural incidence.
 ```math
 D :=
 (
-\Gamma_t,
-\mathcal R,
-e_{RDG}
+Gamma_t,
+R_exp,
+e_RDG
 )
 ```
 
-with
+where
 
 ```math
-\Gamma_{t+s}
+Gamma_(t+s)
 =
-\Gamma_t \circ \Gamma_s
+Gamma_t o Gamma_s
 ```
 
 and
 
 ```math
-\mathcal R
+R_exp
 =
-\kappa_Q
-\circ
-e^{-i\Omega_I t}
-\circ
-\mu_Q.
+kappa_Q
+o
+exp(-i Omega_I t)
+o
+mu_Q.
 ```
 
-The attractor satisfies
+The selected attractor satisfies
 
 ```math
-\mathcal R(e_{RDG})
+R_exp(e_RDG)
 =
-e_{RDG}.
+e_RDG.
 ```
 
 ---
 
-# Closure Geometry
-
-## Relational Substrate
+# Relational Substrate
 
 ```math
-R=(Obj,Rel)
-```
-
----
-
-## Closure Operator
-
-Extensive:
-
-```math
-R \subseteq Cl_{read}(R)
-```
-
-Idempotent:
-
-```math
-Cl_{read}(Cl_{read}(R))
+R
 =
-Cl_{read}(R)
-```
-
-Monotone:
-
-```math
-R_1 \subseteq R_2
-\implies
-Cl_{read}(R_1)
-\subseteq
-Cl_{read}(R_2)
+(Obj, Rel).
 ```
 
 ---
 
-## Closure-Stable Geometry
+# Reading Closure
+
+The reading-closure operator satisfies:
+
+### Extensive
 
 ```math
-G^*
+R
+⊆
+Cl_read(R)
+```
+
+### Idempotent
+
+```math
+Cl_read(Cl_read(R))
 =
-Cl_{read}(G^*)
+Cl_read(R)
 ```
 
-A closure-stable RD* is a fixed point of the reading*closure.
+### Monotone
+
+```math
+R1 ⊆ R2
+⇒
+Cl_read(R1)
+⊆
+Cl_read(R2)
+```
 
 ---
 
-## Minimal Closed T*iad
+# Closure-Stable Geometry
+
+A closure-stable geometry is a fixed point of reading closure:
 
 ```math
-*_3
+G_fix
 =
-Cl_{read}(A,B,C)
-```
-
-*ith
-
-```math
-Cl_{read}(T_3)
-*
-T_3.
+Cl_read(G_fix).
 ```
 
 ---
 
-# Structural Incid*nce
-
-RDG replaces*classical incidence by structural *ncidence.
+# Minimal Closed Relational Triad
 
 ```math
-A \sim_S B
-\iff*(A,B)
-\in
-Cl_{read}(R).
-```
-
-Inter*ret*tion:
-
-- Nodes = relational entiti*s.
-- Edges = admissible closure pa*hways.
-- Incidence = closed relati*nal adjacency.
-
----
-
-# Closure Pro*ection
-
-Projection is extraction o* the already-closed component.
-
-``*math
-\Pi_{closure}(X)
+T3
 =
-X_{closed}*```
+Cl_read(A,B,C)
+```
+
+with
+
+```math
+Cl_read(T3)
+=
+T3.
+```
+
+This is the RDG analogue of the classical circumcarrier.
+
+---
+
+# Structural Incidence
+
+Structural incidence replaces classical point-line incidence.
+
+```math
+A ~_S B
+⇔
+(A,B)
+∈
+Cl_read(R).
+```
+
+Interpretation:
+
+- Nodes = relational entities.
+- Edges = closure-stable admissible pathways.
+- Incidence = closed relational adjacency.
+
+---
+
+# Closure Projection
+
+Projection is extraction of the closure-stable component.
+
+```math
+Pi_closure(X)
+=
+X_closed
+```
 
 such that
 
 ```math
-Cl_{read}(*_{closed})
+Cl_read(X_closed)
 =
-X_{closed}.
+X_closed.
 ```
 
 ---
-*# Triad Projections
+
+# Triad Projections
 
 ```math
-\pi_{*DG},
-\qquad
-\pi_{MFE},
-\qquad
-\pi_*.
+pi_RDG
 ```
+
+```math
+pi_MFE
+```
+
+```math
+pi_Q
+```
+
+extract the RDG, MFE, and Q components of a transformed relational state.
 
 ---
 
-# Wavicle Decompositio*
+# Wavicle Decomposition
 
 For a wavicle
 
 ```math
-W=(S,P)
-`*`
+W = (S,P)
+```
 
-SID projection:
+SID decomposition:
 
 ```math
-SID(W)*=
+SID(W)
+=
 (S,I,D)
 ```
 
-PED projection:
+PED decomposition:
 
 ```math
 PED(W)
 =
-(P,E,D).
+(P,E,D)
 ```
 
 ---
 
 # Closure Dynamics
 
-## Closure Flow
-
-Continuous:
+### Closure Flow
 
 ```math
-\Gamma_0=id
+Gamma_0
+=
+id
 ```
 
 ```math
-\Gamma_{t+s}
+Gamma_(t+s)
 =
-\Gamma_t \circ \Gamma_s.
+Gamma_t o Gamma_s.
 ```
 
-Discrete:
+Discrete form:
 
 ```math
-\Gamma_{n+1}(R)
+Gamma_(n+1)(R)
 =
-Cl_{read}(\Gamma_n(R)).
+Cl_read(Gamma_n(R)).
 ```
 
 ---
 
-## Consistency Functional
+# Consistency Functional
+
+Closure-consistent states satisfy
 
 ```math
-\delta \mathcal E[R]
+delta E[R]
 =
 0.
 ```
 
 ---
 
-# Hinge Principle
+# Interaction Hinge Principle
 
 The central hinge identity is
 
 ```math
-R_I(\pi_{RDG})
+R_I(pi_RDG)
 =
-e_{RDG}.
+e_RDG.
 ```
 
 Interpretation:
 
-- Admissible geometry = \(\pi_{RDG}\)
-- Interaction-mode selects realization = \(e_{RDG}\)
+- `pi_RDG` defines admissible geometry.
+- `R_I` selects the realized asymptotic state.
+- `e_RDG` is the unique attractor within the admissible geometry.
 
 ---
 
-## Relational Expansion
+# Relational Expansion Operator
 
 ```math
-\mathcal R
+R_exp
 =
-\kappa_Q
-\circ
-e^{-i\Omega_I t}
-\circ
-\mu_Q.
+kappa_Q
+o
+exp(-i Omega_I t)
+o
+mu_Q.
 ```
 
 Asymptotically
 
 ```math
-\mathcal R^n(x)
-\rightarrow
-e_{RDG}.
+R_exp^n(x)
+→
+e_RDG.
 ```
 
 ---
 
 # Closure Curvature
 
-Discrete closure events:
+Closure events:
 
 ```math
-\delta_i \in \{0,1\}.
+delta_i ∈ {0,1}.
 ```
 
-Closure curvature density:
+Curvature is the local density of unresolved closure events.
+
+Conceptually:
 
 ```math
-\kappa_\Gamma
-\sim
-\rho(\delta_i)
+Curvature
+=
+Closure Obstruction.
 ```
 
-or
+Flatness corresponds to complete closure:
 
 ```math
-\kappa_\Gamma
-\propto
-\frac{1}{V}
-\sum_{i\in V}
-\delta_i.
+Cl_read(G)
+=
+G.
 ```
-
-Flatness:
-
-```math
-\kappa_\Gamma = 0
-\iff
-Cl_{read}(G)=G.
-```
-
-Interpretation:
-
-- Curvature = unresolved closure.
-- Flatness = closure completeness.
 
 ---
 
@@ -377,10 +383,8 @@ Interpretation:
 ```math
 Q
 =
-\sum
-(SID \otimes PED)_{closure}
-\in
-\mathbb Z.
+Σ (SID ⊗ PED)_closure
+∈ Z.
 ```
 
 Charge is the count of closure events.
@@ -390,22 +394,20 @@ Charge is the count of closure events.
 # Closure Action
 
 ```math
-S[x]
+Action[x]
 =
-\int
-C_\Gamma(x,\dot x)\,dt.
+∫ C_Gamma(x,x_dot) dt.
 ```
 
 ---
 
-## Closure Geodesic
+# Closure Geodesic
 
 ```math
-\gamma^*
+gamma_opt
 =
-\arg\min
-\int
-C_\Gamma(x,\dot x)\,dt.
+arg min
+∫ C_Gamma(x,x_dot) dt.
 ```
 
 ---
@@ -415,26 +417,28 @@ C_\Gamma(x,\dot x)\,dt.
 ## Variational Distance
 
 ```math
-d_\Gamma(A,B)
+d_Gamma(A,B)
 =
-\inf_{x(0)=A}^{x(T)=B}
-\int_0^T
-C_\Gamma(x,\dot x)\,dt.
+inf
+∫ C_Gamma(x,x_dot) dt
 ```
+
+over all admissible closure trajectories connecting
+`A` and `B`.
 
 ---
 
 ## Trajectory Distance
 
 ```math
-d_\Gamma(x,y)
+d_Gamma(x,y)
 =
-\int_0^\infty
-e^{-\lambda t}
-\|
-\Gamma_t(x)-\Gamma_t(y)
-\|
-\,dt.
+∫_0^∞
+exp(-lambda t)
+||
+Gamma_t(x)-Gamma_t(y)
+||
+dt.
 ```
 
 ---
@@ -443,10 +447,10 @@ e^{-\lambda t}
 
 ## Carrier
 
-The classical circumcircle corresponds to the closure-stable carrier of a minimal relational triad.
+The classical circumcircle corresponds to the closure-stable carrier of a minimal relational triad:
 
 ```math
-Carrier(T_3).
+Carrier(T3).
 ```
 
 ---
@@ -456,83 +460,78 @@ Carrier(T_3).
 For
 
 ```math
-P \in Carrier(T_3)
+P ∈ Carrier(T3)
 ```
 
 define
 
 ```math
-L=\Pi_{AB}(P)
+L = Pi_AB(P)
 ```
 
 ```math
-M=\Pi_{BC}(P)
+M = Pi_BC(P)
 ```
 
 ```math
-N=\Pi_{CA}(P).
+N = Pi_CA(P).
 ```
+
+These are closure projections onto the three sides of the triad.
 
 ---
 
 ## Common Incidence Dependency
 
-The RDG analogue of collinearity is closure dependence:
+The three projected points are incidence-dependent iff they already form a closure-stable incidence structure:
 
 ```math
-Cl_{read}
-(
-\{L,M,N\}
-)
+Cl_read({L,M,N})
 =
-\{L,M,N\}.
+{L,M,N}.
 ```
 
-The projected points form a closure-stable incidence structure.
+This is the RDG analogue of classical collinearity.
 
 ---
 
-## RDG Simson Theorem
+# RDG Simson Theorem
 
 ```math
-P
-\in
-Carrier(T_3)
-\iff
-Cl_{read}
-(
-\{L,M,N\}
-)
+P ∈ Carrier(T3)
+⇔
+Cl_read({L,M,N})
 =
-\{L,M,N\}.
+{L,M,N}.
 ```
+
+Verbal form:
+
+> The three closure projections onto the sides of a minimal closed relational triad become incidence-dependent if and only if the source point is already closure-complete with respect to the carrier of that triad.
 
 ---
 
-## Classical Shadow
+# Classical Euclidean Shadow
 
-In a Euclidean realization phase:
+In a Euclidean realization phase,
 
 ```math
-Cl_{read}
-(
-\{L,M,N\}
-)
+Cl_read({L,M,N})
 =
-\{L,M,N\}
+{L,M,N}
 ```
 
 appears as
 
 ```math
-L,M,N
-\text{ are collinear}.
+L, M, N
+are collinear.
 ```
 
-Thus the classical Wallace-Simson theorem is the Euclidean projection of the RDG closure invariant:
+Thus the classical Wallace-Simson theorem is the Euclidean shadow of the RDG closure invariant:
 
 ```math
 Closure-complete source
-\iff
+⇔
 Closure-dependent projections.
 ```
