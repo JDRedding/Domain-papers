@@ -591,13 +591,13 @@ The projection is therefore defined entirely within the closure structure and re
 When a closure metric or cost functional $d_\Gamma$ is available, the projection may additionally satisfy
 
 $$
-\Pi_{AB}^{\mathrm{RDG}}(P) = \operatorname*{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
+\Pi_{AB}^{\mathrm{RDG}}(P) = *{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
 $$
 
 More generally, without uniqueness,
 
 $$
-\Pi_{AB}^{\mathrm{RDG}}(P) \in \operatorname*{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
+\Pi_{AB}^{\mathrm{RDG}}(P) \in *{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
 $$
 
 Existence and uniqueness of the minimizer require additional hypotheses and are not consequences of the closure axioms alone.
@@ -617,9 +617,9 @@ be a realization map.
 The Euclidean shadow of the intrinsic projection is ordinary orthogonal projection:
 
 $$
-\mathcal{E} \!\left( \Pi_{AB}^{\mathrm{RDG}}(P) \right) = \operatorname{proj}^{\perp}_{AB} \!\left( \mathcal{E}(P) \right),$$
+\mathcal{E} \!\left( \Pi_{AB}^{\mathrm{RDG}}(P) \right) = {proj}^{\perp}_{AB} \!\left( \mathcal{E}(P) \right),$$
 
-where $\operatorname{proj}^{\perp}_{AB}$ denotes projection onto the Euclidean side-line corresponding to the relational channel $C_{AB}$.
+where ${proj}^{\perp}_{AB}$ denotes projection onto the Euclidean side-line corresponding to the relational channel $C_{AB}$.
 
 Thus orthogonal projection is not fundamental to RDG; it is the Euclidean realization of the underlying relational projection.
 
@@ -711,7 +711,7 @@ A property that uniquely identifies the object when additional structure is avai
 Example:
 
 $$
-\Pi_{AB}^{\mathrm{RDG}}(P) = \operatorname*{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
+\Pi_{AB}^{\mathrm{RDG}}(P) = *{argmin}_{X \in C_{AB}} d_\Gamma(P,X).
 $$
 
 ## Realization
