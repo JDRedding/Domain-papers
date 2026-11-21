@@ -482,3 +482,72 @@ G = \mathrm{Cl}_{\mathrm{read}}(G).
 $$
 
 No external embedding or coordinate chart is required or admitted. Any apparent “location” is an emergent consequence of the closed relational geometry and dissolves when the closure relations are removed.
+
+# Appendix: Axiomatization of $\Pi_{AB}$
+
+
+These are the equations and formulas that constitute the minimal mathematical axiomatization of $\Pi_{AB}$ and the associated Simson condition.
+
+RDG Simson Theorem
+
+$$
+P\in\operatorname{Carrier}(T_3)
+\;\iff\;
+\mathrm{Cl}_{\mathrm{read}}(\{L,M,N\})=\{L,M,N\}.
+$$
+
+## Core Notation
+
+- $T_3$: a closure-stable triad.
+- $\operatorname{Carrier}(T_3)$: the set of admissible relational states $P$.
+- $\mathrm{Cl}_{\mathrm{read}}$: a closure operator.
+- $R$: a base relational structure.
+- $d_\Gamma$: a distance (or quasimetric) used to measure proximity to closed objects.
+- $\Pi_{AB}$, $\Pi_{BC}$, $\Pi_{CA}$: projection maps onto the respective channels.
+
+## Structural Incidence
+
+$$
+A\sim_S B\;\iff\;(A,B)\in\mathrm{Cl}_{\mathrm{read}}(R).
+$$
+
+## Projection Signature
+
+$$
+\Pi_{AB}:\operatorname{Carrier}(T_3)\longrightarrow\mathrm{Cl}_{\mathrm{read}}(\{A,B\}).
+$$
+
+(Analogous signatures hold for $\Pi_{BC}$ and $\Pi_{CA}$.)
+
+## Projection Axioms
+
+**Closure stability (P1)**  
+$$
+\mathrm{Cl}_{\mathrm{read}}\bigl(\Pi_{AB}(P)\bigr)=\Pi_{AB}(P).
+$$
+
+**Idempotence (P3)**  
+
+$$
+\Pi_{AB}\circ\Pi_{AB}=\Pi_{AB}.
+$$
+
+**Nearest closed representative (P4, optional)**  
+
+$$
+\Pi_{AB}(P)=\operatorname*{argmin}_{X\in\mathrm{Cl}_{\mathrm{read}}(\{A,B\})}d_\Gamma(P,X).
+$$
+
+### Channel Projections of a State
+
+$$
+L=\Pi_{AB}(P),\qquad
+M=\Pi_{BC}(P),\qquad
+N=\Pi_{CA}(P).
+$$
+
+### Simson Invariant
+
+$$
+\mathrm{Cl}_{\mathrm{read}}(\{L,M,N\})=\{L,M,N\}.
+$$
