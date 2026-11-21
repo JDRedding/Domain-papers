@@ -185,9 +185,9 @@ Different choices of the relational variables $R_i$ recover familiar invariants.
 $$
 \begin{align*}
 Q &= \oint E \cdot dA && \text{(Maxwell charge)}, \\
-Q &= \int \operatorname{Tr}(F \wedge F) && \text{(Chern number)}, \\
+Q &= \int {Tr}(F \wedge F) && \text{(Chern number)}, \\
 Q &= \chi(M) && \text{(Euler characteristic)}, \\
-Q &= \operatorname{Link}(K_1,K_2) && \text{(linking number)}, \\
+Q &= {Link}(K_1,K_2) && \text{(linking number)}, \\
 Q &= \int G_{\mu\nu} n^\mu \, d\Sigma^\nu && \text{(gravitational flux constructions)}.
 \end{align*}
 $$
