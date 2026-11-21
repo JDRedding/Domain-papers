@@ -192,3 +192,140 @@ $$
 
 (recovers Maxwell relations in the linear weak-torsion limit once residual generators empty).
 
+# Appendix A. Explicit Update Ordering
+
+The schematic update
+
+$$
+\Gamma_{\rm dyn} :
+(S,I,D)_t
+\mapsto
+(
+\operatorname{Cl}_{\rm read}(S+\Delta S),
+\operatorname{Red}_Q(I+\operatorname{Res}(S)),
+\operatorname{Solve}(I)
+)_{t+1}
+$$
+
+should be interpreted operationally as
+
+$$
+S_{t+1}
+=
+\operatorname{Cl}_{\rm read}(S_t+\Delta S_t),
+$$
+
+$$
+I_{t+1}
+=
+\operatorname{Red}_Q
+\!\left(
+I_t+\operatorname{Res}(S_t)
+\right),
+$$
+
+$$
+D_{t+1}
+=
+\operatorname{Solve}(I_{t+1}).
+$$
+
+Thus the dynamics proceeds in three stages:
+
+1. Structure update.
+2. Residual generation and Q-reduction.
+3. Solution extraction.
+
+The operator ordering is therefore
+
+$$
+\Gamma_{\rm dyn}
+=
+\operatorname{Solve}
+\circ
+\operatorname{Red}_Q
+\circ
+\operatorname{Cl}_{\rm read}.
+$$
+
+# Appendix B. Fixed Points
+
+A fixed point of the dynamics is a state
+
+$$
+(S^*,I^*,D^*)
+$$
+
+satisfying
+
+$$
+\Gamma_{\rm dyn}(S^*,I^*,D^*)
+=
+(S^*,I^*,D^*).
+$$
+
+Equivalently,
+
+$$
+\Delta S=0,
+$$
+
+$$
+\operatorname{Res}(S^*)=\varnothing,
+$$
+
+and
+
+$$
+D^*=\operatorname{Solve}(I^*).
+$$
+
+The Q-layer reports
+
+$$
+Q_{\rm OK}.
+$$
+
+Fixed points represent closure-complete relational geometries.
+
+# Appendix C. Weak-Residual Limit
+
+The weak-residual limit is defined by
+
+$$
+\operatorname{Res}(S)\rightarrow 0.
+$$
+
+In this regime
+
+$$
+I_{t+1}\approx I_t,
+$$
+
+and therefore
+
+$$
+\Gamma_{\rm dyn}
+\approx
+\operatorname{id}.
+$$
+
+Under continuum refinement
+
+$$
+\Gamma_h
+\rightarrow
+\Gamma,
+$$
+
+and the corresponding carrier realizations recover the standard continuum sectors.
+
+Examples include:
+
+- Maxwell carrier realizations.
+- Torsion-free geometric limits.
+- Linear wave propagation.
+- Weak-coupling DCF evolution.
+
+This is the sense in which ordinary continuum physics is recovered.
+
