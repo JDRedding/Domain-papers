@@ -14,7 +14,7 @@ $\log \zeta(s) = \sum_{k,p} p^{-ks}/k$
 
 **D**  
 $s \mapsto s + \mathrm{d}s$  
-Pole at $1$, trivial zeros at $-2k$, nontrivial zeros in $0 < \operatorname{Re}(s) < 1$, critical line at $\operatorname{Re}(s) = 1/2$
+Pole at $1$, trivial zeros at $-2k$, nontrivial zeros in $0 < {Re}(s) < 1$, critical line at ${Re}(s) = 1/2$
 
 ## Types
 
@@ -39,7 +39,7 @@ $$
 n = \prod_{p \in \mathbb{P}} p^{v_p(n)}, \qquad v_p(n) \in \mathbb{N}_0
 $$
 
-Dual presentations ($\operatorname{Re}(s) > 1$):
+Dual presentations (${Re}(s) > 1$):
 
 $$
 \zeta(s) = \sum_{n=1}^\infty n^{-s} = \prod_{p \in \mathbb{P}} (1 - p^{-s})^{-1}
@@ -50,13 +50,13 @@ $$
 Local Dirichlet term:
 
 $$
-\operatorname{term}_n(s) = n^{-s}
+{term}_n(s) = n^{-s}
 $$
 
 Local Euler factor:
 
 $$
-\operatorname{factor}_p(s) = (1 - p^{-s})^{-1}
+{factor}_p(s) = (1 - p^{-s})^{-1}
 $$
 
 Multiplicative coupling:
@@ -102,6 +102,6 @@ Singularities and zeros:
 Critical-line dynamics:
 
 $$
-\operatorname{Re}(s) = \frac{1}{2}
+{Re}(s) = \frac{1}{2}
 $$
 
