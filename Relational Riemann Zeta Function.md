@@ -4,17 +4,51 @@ Structure–Interaction–Dynamics (SID) decomposition of the Riemann zeta funct
 
 ## Compact Relational Dynamic Geometry Summary
 
-**S**  
+**Structure**  
+
 $\mathbb{N}^+$, $\mathbb{P}$, $\mathbb{C}$  
+
 $\zeta(s) = \sum n^{-s} = \prod_p (1 - p^{-s})^{-1}$
 
-**I**  
+---
+
+The triple $(N^+, P, \mathbb{C})$ with unique factorization $n = \prod_p p^{v_p(n)}$. This supplies the dual presentations
+
+$$
+\zeta(s)=\sum_{n=1}^\infty n^{-s}=\prod_p(1-p^{-s})^{-1}\qquad({Re}s>1).
+$$
+
+---
+
+**Interaction**  
+
 $n = \prod p^{v_p(n)}$  
+
 $\log \zeta(s) = \sum_{k,p} p^{-ks}/k$
 
-**D**  
+---
+
+The local Dirichlet term $n^{-s}$ and Euler factor $(1-p^{-s})^{-1}$ are coupled multiplicatively. Their global accumulation is encoded by the von Mangoldt function through the logarithmic interaction
+
+$$
+\log\zeta(s)=\sum_{n\geq2}\frac{\Lambda(n)}{n^s\log n},\qquad-\frac{\zeta'}{\zeta}(s)=\sum_{n=1}^\infty\Lambda(n)n^{-s}.
+$$
+  
+The summatory function $\psi(x)=\sum_{n\leq x}\Lambda(n)$ is the geometric measure of all prime-power contributions up to $x$.
+
+---
+
+**Dynamics**  
+
 $s \mapsto s + \mathrm{d}s$  
+
 Pole at $1$, trivial zeros at $-2k$, nontrivial zeros in $0 < {Re}(s) < 1$, critical line at ${Re}(s) = 1/2$
+
+---
+
+Analytic continuation of the parameter $s\mapsto s+ds$, the functional equation $\xi(s)=\xi(1-s)$, the simple pole at $s=1$, trivial zeros at the negative even integers, and the non-trivial zeros $\rho=\sigma_\rho+it_\rho$ inside the critical strip. The critical line ${Re}s=1/2$ is the distinguished dynamical locus.
+
+---
 
 ## Types
 
