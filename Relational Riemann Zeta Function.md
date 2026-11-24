@@ -325,16 +325,13 @@ This single equation encodes:
 ### SID Relational Chain
 
 ```
-Structure
-(Factorization Architecture)
+Structure (Factorization Architecture)
 ζ(s) = Σ n^{-s} = Π_p (1 - p^{-s})^{-1}
                 ↓
-Interaction
-(Λ-Mediated Prime Accumulation)
+Interaction (Λ-Mediated Prime Accumulation)
 ψ(x) = x - Σ_ρ x^ρ/ρ - …
                 ↓
-Dynamics
-(ξ-Symmetric Zero Dynamics)
+Dynamics (ξ-Symmetric Zero Dynamics)
 ξ(s) = ξ(1 - s)
                 ↓
 Prime Distribution Geometry
@@ -343,22 +340,11 @@ Prime Distribution Geometry
 ### Relational Interpretation
 
 ```
-S:
-    Unique factorization generates the
-    multiplicative architecture of arithmetic.
+S: Unique factorization generates the multiplicative architecture of arithmetic.
+I: Λ(n) mediates the accumulation of local prime structure into global arithmetic geometry.
+D: ξ-symmetry governs the evolution and organization of the zero spectrum.
 
-I:
-    Λ(n) mediates the accumulation of
-    local prime structure into global
-    arithmetic geometry.
-
-D:
-    ξ-symmetry governs the evolution and
-    organization of the zero spectrum.
-
-Result:
-    Prime-distribution geometry emerges
-    from the coupling of Structure,
+Result: Prime-distribution geometry emerges from the coupling of Structure,
     Interaction, and Dynamics.
 ```
 
