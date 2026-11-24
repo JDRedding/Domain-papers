@@ -68,6 +68,7 @@ Analytic continuation of the parameter $s\mapsto s+ds$, the functional equation 
 | $p$ | Element of $\mathbb{P}$ |
 
 ## Structure ($S$)
+S = Factorization architecture
 
 $$
 S = (\mathbb{N}^+, \mathbb{P}, \mathbb{C})
@@ -86,6 +87,7 @@ $$
 $$
 
 ## Interaction ($I$)
+I = Λ-mediated prime accumulation
 
 Local Dirichlet term:
 
@@ -122,6 +124,7 @@ $$
 The global field emerges from the accumulated prime contributions.
 
 ## Dynamics ($D$)
+D = Zero-spectrum evolution under analytic continuation and ξ-symmetry
 
 Parameter evolution:
 
