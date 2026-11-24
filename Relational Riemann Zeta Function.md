@@ -105,6 +105,14 @@ $$
 \log \zeta(s) = \sum_{k \ge 1} \sum_{p \in \mathbb{P}} \frac{p^{-ks}}{k} = \sum_{n \ge 2} \frac{\Lambda(n)}{n^s \log n}
 $$
 
+The von Mangoldt weights $\Lambda(n)$ are the precise relational mediators between local prime structure and global analytic dynamics. Because
+
+$$
+\psi(x)=x-\sum_\rho\frac{x^\rho}{\rho}-\log(2\pi)-\tfrac12\log(1-x^{-2})
+$$
+
+(the von Mangoldt explicit formula), every geometric feature of the prime distribution is a direct image of the zero configuration under the interaction map. The main term $x$ arises from the pole (structural singularity at $s=1$); each zero $\rho$ contributes an oscillatory wave whose amplitude is governed by $x^{{Re}\rho}$. Thus the interaction layer converts spectral data into arithmetic geometry.
+
 The global field emerges from the accumulated prime contributions.
 
 ## Dynamics ($D$)
