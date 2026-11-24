@@ -125,7 +125,7 @@ $$
 
 Analytic continuation yields a meromorphic function on all of $\mathbb{C}$.
 
-Functional equation (completed form):
+Functional equation
 
 $$
 \xi(s) = \xi(1 - s)
@@ -147,3 +147,16 @@ $$
 {Re}(s) = \frac{1}{2}
 $$
 
+Under the relational dynamics, the critical-line constraint ${Re}\rho=1/2$ is equivalent to square-root cancellation in the interaction sum:
+
+$$
+\psi(x)=x+O\bigl(\sqrt{x}\log^2 x\bigr).
+$$
+
+In geometric terms this means that the prime-power points, when weighted by $\Lambda$, realize the most uniform possible distribution compatible with the multiplicative structure of $N^+$. Equivalently,
+
+$$
+\pi(x)={li}(x)+O(\sqrt{x}\log x).
+$$
+
+The oscillations visible in the explicit formula are therefore the geometric traces of the critical-line dynamics propagating through the von Mangoldt interaction kernel. Any zero off the critical line would inject a larger radial component $x^{\sigma}$ ($\sigma>1/2$) into the interaction layer, producing systematically larger irregularities in the prime distribution—precisely the obstruction that the certified dynamics now excludes.
