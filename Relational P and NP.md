@@ -138,6 +138,105 @@ Acceptance holds precisely when $Q(\mathrm{Eval}(\pi))=\top$ for an appropriate 
 
 This is the complete parallel presentation.
 
+
+# Future Work
+
+## F.1 Topological Data Analysis of SID-D
+
+The current decomposition localizes the remaining tension to
+
+$$
+D_P = \{\pi_P\}, \qquad D_{NP} = \Pi_x = \mathrm{Cl}_{\mathrm{read}}(G_x).
+$$
+
+The unresolved object is therefore $\Pi_x$ itself, rather than the witness $y$, the verifier $V$, or the existential quantifier $\exists y$.
+
+The next natural step is to study
+
+$$
+\mathrm{Topology}(D_P) \quad\text{and}\quad \mathrm{Topology}(\Pi_x)
+$$
+
+using persistent homology and topological data analysis (TDA). Persistent homology extracts topological invariants such as connected components, loops, and higher-dimensional cavities, and tracks their persistence across scales.
+
+## F.2 Persistent Homology
+
+Define $\mathrm{PH}(\Pi_x)$ to be the persistent homology of the NP path geometry. Extract the Betti numbers:
+
+- $\beta_0$: connected components,
+- $\beta_1$: independent loops,
+- $\beta_2$: voids/cavities,
+- $\beta_n$ ($n > 2$): higher-order structure.
+
+## F.3 RDG Topological Signature
+
+Define
+
+$$
+\mathrm{TDA}_{\mathrm{RDG}}(\Pi_x) = \{\beta_0, \beta_1, \beta_2, \dots\}
+$$
+
+and compare it to $\mathrm{TDA}_{\mathrm{RDG}}(\pi_P)$.  
+
+The central question becomes: Does $\Pi_x$ possess persistent topological structure that survives closure, field projection, and admissibility filtering?
+
+## F.4 Joint Information–Topology–Field Program
+
+The next investigations are:
+
+- Information invariants: $K(\Pi_x)$,
+- Topological invariants: $\{\beta_0, \beta_1, \beta_2, \dots\}$,
+- Field invariants: $\rho_{NP}(\Pi_x)$,
+- Admissibility invariants: $Q(\rho_{NP}(\Pi_x))$.
+
+Define the combined topological-information-field signature
+
+$$
+\mathrm{SIG}_{\mathrm{RDG}}(\Pi_x) = (
+  K(\Pi_x),\;
+  \beta_0,\;
+  \beta_1,\;
+  \beta_2,\;
+  \dots,\;
+  \rho_{NP},\;
+  Q
+)
+$$
+
+of the SID-D geometry.
+
+## F.5 Research Objective
+
+Determine whether
+
+$$
+\mathrm{SIG}_{\mathrm{RDG}}(\Pi_x)
+$$
+
+collapses to the singleton-path case
+
+$$
+\mathrm{SIG}_{\mathrm{RDG}}(\pi_P)
+$$
+
+or whether a nontrivial invariant survives.
+
+In compact form:
+
+| Layer          | Invariant Type              |
+|----------------|-----------------------------|
+| SID-D          | Geometry                    |
+| Kolmogorov     | Information Invariants      |
+| TDA            | Topological Invariants      |
+| PED-D          | Field Invariants            |
+| Q              | Admissibility Invariants    |
+
+The remaining question is therefore:
+
+> Does $\Pi_x$ contain a surviving invariant that cannot collapse to $D_P = \{\pi_P\}$?
+
+That is the precise location of the unresolved tension after the current SID/PED/Q factorization.
+
 # Appendix A: Information-Theoretic Analysis via Kolmogorov Complexity
 
 ## A.1 Motivation
@@ -263,79 +362,137 @@ $$
 
 Therefore $|\Pi_x|$ is not itself an invariant. The meaningful invariant is $K(\Pi_x)$, which measures how much irreducible description remains after all compression.
 
-# Future Work
+## A.8 Collapse Hierarchy
 
-## F.1 Topological Data Analysis of SID-D
-
-The current decomposition localizes the remaining tension to
+The SID/PED/Q decomposition yields the following dependency chain:
 
 $$
-D_P = \{\pi_P\}, \qquad D_{NP} = \Pi_x.
+y \equiv \pi_y \in \mathrm{Cl}_{\mathrm{read}}(G_x).
 $$
 
-The next natural step is therefore to study
+Thus
 
 $$
-\mathrm{Topology}(D_P) \quad\text{and}\quad \mathrm{Topology}(\Pi_x)
+\text{Witness} \to \text{Path Geometry},
 $$
 
-using persistent homology and topological data analysis (TDA). Persistent homology extracts topological invariants such as connected components, loops, and higher-dimensional cavities, and tracks their persistence across scales.
-
-## F.2 Persistent Homology
-
-Define $\mathrm{PH}(\Pi_x)$ to be the persistent homology of the NP path geometry. Extract the Betti numbers:
-
-- $\beta_0$: connected components,
-- $\beta_1$: independent loops,
-- $\beta_2$: voids/cavities,
-- $\beta_n$ ($n > 2$): higher-order structure.
-
-## F.3 RDG Topological Signature
-
-Define
+and therefore
 
 $$
-\mathrm{TDA}_{\mathrm{RDG}}(\Pi_x) = \{\beta_0, \beta_1, \beta_2, \dots\}
+\text{Witness} \notin \text{Primitive Layer}.
 $$
 
-and compare it to $\mathrm{TDA}_{\mathrm{RDG}}(\pi_P)$.  
-
-The central question becomes: Does $\Pi_x$ possess persistent topological structure that survives closure, field projection, and admissibility filtering?
-
-## F.4 Joint Information–Topology Program
-
-Combine $K(\Pi_x)$ with $\mathrm{TDA}_{\mathrm{RDG}}(\Pi_x)$. Define the topological-information signature
+The verifier becomes
 
 $$
-\mathrm{SIG}_{\mathrm{RDG}}(\Pi_x) = ( K(\Pi_x),\; \beta_0,\; \beta_1,\; \beta_2,\; \dots )
+V(x,\pi) = \mathrm{Eval}(\pi),
 $$
 
-of the SID-D geometry.
-
-## F.5 Research Objective
-
-Determine whether
+so
 
 $$
-\mathrm{SIG}_{\mathrm{RDG}}(\Pi_x)
+\text{Verifier} \to \text{PED-E}.
 $$
 
-collapses to the singleton-path case
+Existential access becomes
 
 $$
-\mathrm{SIG}_{\mathrm{RDG}}(\pi_P)
+\rho_{\mathrm{access}}(\pi) \subseteq \rho_{NP}(\Pi_x),
 $$
 
-or whether a nontrivial invariant survives.
+so
 
-In compact form:
+$$
+\text{Existential Access} \to \text{PED-D}
+$$
 
-| Layer          | Invariant Type              |
-|----------------|-----------------------------|
-| SID-D          | Geometry                    |
-| Kolmogorov     | Information Invariants      |
-| TDA            | Topological Invariants      |
-| PED-D          | Field Invariants            |
-| Q              | Admissibility Invariants    |
+rather than
 
-The next phase of the program is therefore to search for invariants of $\Pi_x$, rather than revisiting witnesses, verifiers, or existential access, which have already collapsed under the current SID/PED/Q factorization.
+$$
+\text{Existential Access} \to \text{Primitive Power}.
+$$
+
+Acceptance becomes
+
+$$
+Q(\mathrm{Eval}(\pi)) = \top,
+$$
+
+so
+
+$$
+\text{Acceptance} \to Q.
+$$
+
+Collecting these results:
+
+| Original Component | Collapses to       |
+|--------------------|--------------------|
+| Witness            | Geometry           |
+| Verifier           | Evaluation         |
+| Access             | Field Distribution |
+| Acceptance         | Admissibility      |
+
+## A.9 Dependency Ladder
+
+The current decomposition can be written as
+
+```
+SID-D
+  ↓
+Path Geometry
+
+PED-D
+  ↓
+Field Distribution
+
+Q
+  ↓
+Admissibility
+```
+
+or equivalently
+
+```
+Geometry
+  ↓
+Field
+  ↓
+Admissibility
+```
+
+and in operational form:
+
+- SID creates,
+- PED characterizes,
+- Q filters.
+
+## A.10 Current RDG Conjecture
+
+The present factorization supports
+
+$$
+\text{extra variable} \neq \text{extra DOF}
+$$
+
+and, more strongly,
+
+$$
+\text{extra apparent access} \neq \text{extra DOF},
+$$
+
+because both $y$ and $\rho_{\mathrm{access}}$ appear as projection-level consequences of existing geometry.
+
+Formally,
+
+$$
+\mathrm{DOF}(P) = \mathrm{DOF}(NP)
+$$
+
+at the substrate level, while
+
+$$
+\mathrm{PED}(P) = \mathrm{PED}(NP)\big|_{\,|\Pi_x|=1}
+$$
+
+at the field level.
