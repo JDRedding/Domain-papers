@@ -1,4 +1,5 @@
 # Relational Riemann Zeta Function
+> Decomposition of ζ(s): factorization architecture → Λ-mediated interaction → ξ-symmetric zero dynamics
 
 Structure–Interaction–Dynamics (SID) decomposition of the Riemann zeta function in Relational Dynamic Geometry notation. The SID geometry identifies the critical line as the unique dynamical equilibrium that forces the interaction of primes (via $\Lambda$) to cancel at the square-root scale, yielding the most regular possible global arrangement of the primes inside the multiplicative structure of the positive integers. The formal verification of the Riemann hypothesis locks this equilibrium in place.
 
