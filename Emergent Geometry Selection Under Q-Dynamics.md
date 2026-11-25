@@ -1,8 +1,37 @@
+# Emergent Geometry Selection Under Q-Dynamics
+
 These equations define the Q-substrate dynamics underlying the “*Emergent Geometry Selection Under Q-Dynamics*” simulations (with pairwise weights such as $w_{AB}$, $w_{BC}$, $w_{CA}$ evolving under different bias conditions that modulate $k$, $M$, or $g$). 
 
 - Phase mismatch $\to$ interface clipping $\to$ transfer into $Q$
 - Constructive alignment $\to$ extraction from $Q$ $\to$ manifest realization
 - Total relational content remains conserved (nothing created or destroyed; only redistributed)
+
+**Complete form**
+
+$$
+R = R_m + R_q, \qquad \frac{dR}{dt} = 0
+$$
+
+$$
+\Delta\Phi = \Phi_A - \Phi_B
+$$
+
+$$
+C = k \cdot M \cdot |\Delta\Phi|
+$$
+
+$$
+X = g(A,B,Q)
+$$
+
+$$
+\frac{dQ}{dt} = C - X, \qquad \frac{dR_m}{dt} = X - C
+$$
+
+$$
+\frac{dR_m}{dt} + \frac{dQ}{dt} = 0
+$$
+
 
 **Notation (fundamental variables)**
 
@@ -103,29 +132,3 @@ $$
 
 - $\Delta T = 0$: perfect engagement
 - $\Delta T \neq 0$: clipping region exists
-
-**Complete RDG form**
-
-$$
-R = R_m + R_q, \qquad \frac{dR}{dt} = 0
-$$
-
-$$
-\Delta\Phi = \Phi_A - \Phi_B
-$$
-
-$$
-C = k \cdot M \cdot |\Delta\Phi|
-$$
-
-$$
-X = g(A,B,Q)
-$$
-
-$$
-\frac{dQ}{dt} = C - X, \qquad \frac{dR_m}{dt} = X - C
-$$
-
-$$
-\frac{dR_m}{dt} + \frac{dQ}{dt} = 0
-$$
