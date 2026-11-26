@@ -612,49 +612,16 @@ Suppression of SID participants -> Boundary
 Destruction of SID participation -> Boundary Crossed
 ```
 
-## Appendix B: Psychological Analogy
+## Appendix B: Psychological Foundations
 
-At the psychological level, this means tolerating difficult emotions without self-destructive responses. At the social level, this means tolerating disagreement and competition without destroying the conditions that make participation possible.
+The concept of destructive intolerance is not limited to social systems.
 
-```text
-Healthy tolerance is not the absence of discomfort.
+A related phenomenon appears in psychology through the study of distress intolerance, the inability or unwillingness to tolerate uncomfortable emotional states.
 
-Healthy tolerance is the capacity to remain functional despite discomfort.
-```
-
-### Distress Intolerance and Destructive Intolerance
-
-In psychology, "destructive intolerance" is not a formal diagnostic term. A related concept is **distress intolerance**, the perceived inability to tolerate negative emotional states. In its destructive form, distress intolerance occurs when a person experiences discomfort as unbearable and responds through avoidance, suppression, impulsivity, or other behaviors that provide short-term relief but produce long-term harm.
-
-Examples include:
+At the individual level:
 
 ```text
-Avoidance
-Substance abuse
-Compulsive behavior
-Self-destructive behavior
-Aggression
-Relationship sabotage
-```
-
-The key issue is not the emotion itself. The issue is the belief:
-
-```text
-"This must stop immediately."
-```
-
-which motivates actions that damage future well-being.
-
----
-
-### Structural Parallel
-
-The psychological pattern mirrors the social pattern described by the Paradox of Tolerance. 
-
-Psychological form:
-
-```text
-Negative emotion
+Distress
     ->
 Immediate suppression
     ->
@@ -663,41 +630,137 @@ Short-term relief
 Long-term damage
 ```
 
+Examples include:
+
+```text
+Avoidance
+Substance abuse
+Self-destructive behavior
+Aggression
+Relationship sabotage
+```
+
+The common pattern is:
+
+```text
+"I cannot tolerate this state."
+
+therefore
+
+"This state must be eliminated immediately."
+```
+
+The resulting action often damages the very system it is attempting to protect.
+
+---
+
+### Scale Invariance
+
+Individuals form groups.
+
+Groups form institutions.
+
+Institutions form societies.
+
+Consequently, dynamics that appear at the psychological level may also appear at larger scales.
+
+```text
+Person
+    ->
+Group
+    ->
+Institution
+    ->
+Society
+```
+
+The same structural pattern can emerge at each level.
+
+---
+
+### Shared Dynamic
+
+Psychological form:
+
+```text
+Uncomfortable state
+    ->
+Suppression
+    ->
+Short-term stabilization
+    ->
+Long-term degradation
+```
+
 Social form:
 
 ```text
-Discomfort with opposition
+Uncomfortable disagreement
     ->
-Suppression of participation
+Suppression
     ->
 Short-term stability
     ->
-Long-term structural damage
+Long-term structural degradation
 ```
 
-In both cases, the immediate reduction of discomfort can undermine long-term viability.
+---
+
+### Generalized Definition
+
+Destructive intolerance occurs when a system encounters an undesirable state and responds by eliminating participation rather than increasing its capacity to accommodate the state.
+
+Formally:
+
+```text
+Perceived Intolerable State
+    ->
+Immediate Elimination Strategy
+    ->
+Reduced Future Capacity
+```
 
 ---
 
 ### SID Interpretation
 
+At any scale:
+
+```text
+S = structure
+
+I = interaction
+
+D = dynamics
+```
+
+A healthy system maintains participation despite discomfort.
+
+A destructively intolerant system attempts to eliminate discomfort by reducing participation itself.
+
+---
+
+### Unified Principle
+
+```text
+Tolerance is not the absence
+of discomfort.
+
+Tolerance is the capacity to
+remain functional despite
+discomfort.
+```
+
 At the individual level:
 
 ```text
-S = personal structure
-    beliefs
-    habits
-    identity
-
-I = interaction
-    emotional regulation
-    coping behavior
-
-D = dynamics
-    thoughts
-    feelings
-    actions
+Preserve functioning despite distress.
 ```
 
-Destructive distress intolerance emerges when a person attempts to eliminate uncomfortable dynamics rather than maintaining the capacity to engage with them constructively. Similarly, destructive social intolerance emerges when a system attempts to eliminate participation rather than maintaining the capacity to accommodate competition within the system.
+At the social level:
 
+```text
+Preserve participation despite disagreement.
+```
+
+In both cases, destructive intolerance begins when the attempt to remove discomfort damages the future viability of the system itself.
