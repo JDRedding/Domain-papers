@@ -451,7 +451,7 @@ Possible Loss of Tolerance
 
 ---
 
-# Appendix: Destructive Intolerance
+# Appendix A: Destructive Intolerance
 
 A dynamic $D$ is **destructively intolerant** if and only if its objective or stable consequence is the reduction of reciprocal participation capacity below a viable threshold.
 
@@ -611,3 +611,106 @@ Competition within SID          -> Allowed
 Suppression of SID participants -> Boundary
 Destruction of SID participation -> Boundary Crossed
 ```
+
+## Appendix B: Psychological Analogy
+
+### Distress Intolerance and Destructive Intolerance
+
+In psychology, "destructive intolerance" is not a formal diagnostic term. A related concept is **distress intolerance**, the perceived inability to tolerate negative emotional states.
+
+In its destructive form, distress intolerance occurs when a person experiences discomfort as unbearable and responds through avoidance, suppression, impulsivity, or other behaviors that provide short-term relief but produce long-term harm.
+
+Examples include:
+
+```text
+Avoidance
+Substance abuse
+Compulsive behavior
+Self-destructive behavior
+Aggression
+Relationship sabotage
+```
+
+The key issue is not the emotion itself.
+
+The issue is the belief:
+
+```text
+"This must stop immediately."
+```
+
+which motivates actions that damage future well-being.
+
+---
+
+### Structural Parallel
+
+The psychological pattern mirrors the social pattern described by the Paradox of Tolerance.
+
+Psychological form:
+
+```text
+Negative emotion
+    ->
+Immediate suppression
+    ->
+Short-term relief
+    ->
+Long-term damage
+```
+
+Social form:
+
+```text
+Discomfort with opposition
+    ->
+Suppression of participation
+    ->
+Short-term stability
+    ->
+Long-term structural damage
+```
+
+In both cases, the immediate reduction of discomfort can undermine long-term viability.
+
+---
+
+### SID Interpretation
+
+At the individual level:
+
+```text
+S = personal structure
+    beliefs
+    habits
+    identity
+
+I = interaction
+    emotional regulation
+    coping behavior
+
+D = dynamics
+    thoughts
+    feelings
+    actions
+```
+
+Destructive distress intolerance emerges when a person attempts to eliminate uncomfortable dynamics rather than maintaining the capacity to engage with them constructively.
+
+Similarly, destructive social intolerance emerges when a system attempts to eliminate participation rather than maintaining the capacity to accommodate competition within the system.
+
+---
+
+### Common Principle
+
+```text
+Healthy tolerance is not the absence
+of discomfort.
+
+Healthy tolerance is the capacity to
+remain functional despite discomfort.
+```
+
+At the psychological level, this means tolerating difficult emotions without self-destructive responses.
+
+At the social level, this means tolerating disagreement and competition without destroying the conditions that make participation possible.
