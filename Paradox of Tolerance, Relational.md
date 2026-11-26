@@ -761,3 +761,176 @@ Preserve participation despite disagreement.
 ```
 
 In both cases, destructive intolerance begins when the attempt to remove discomfort damages the future viability of the system itself.
+
+## Appendix C: Self-Harm and Inter-Agent Harm
+
+This appendix extends the concept of destructive intolerance to both individual and multi-agent systems.
+
+### Core Pattern
+
+Both self-harm and inter-agent harm share the same structure:
+
+```text
+Undesirable State
+    ->
+Damage
+    ->
+Reduced Future Participation
+```
+
+The difference is the target of the damage.
+
+| Pathway | Target | Effect |
+|----------|----------|----------|
+| Self-Harm | Self | Reduces future participation of the acting agent |
+| Inter-Agent Harm | Others | Reduces future participation of other agents |
+| Dual Harm | Self and Others | Reduces participation across the system |
+
+---
+
+### Self-Harm
+
+```text
+Distress
+    ->
+Self-Damage
+    ->
+Reduced Functioning
+    ->
+Fewer Future Opportunities
+```
+
+Examples:
+
+```text
+Self-injury
+Substance abuse
+Self-sabotage
+Withdrawal
+```
+
+---
+
+### Inter-Agent Harm
+
+```text
+Disagreement
+Conflict
+Obstacle
+    ->
+Other-Damage
+    ->
+Reduced Participation
+    ->
+Fewer Future Interactions
+```
+
+Examples:
+
+```text
+Coercion
+Aggression
+Suppression
+Violence
+```
+
+---
+
+### SID Interpretation
+
+Let:
+
+```text
+SID(A) = viability of agent A
+
+SID(B) = viability of agent B
+```
+
+Then:
+
+```text
+Self-Harm
+    -> reduces SID(A)
+
+Inter-Agent Harm
+    -> reduces SID(B)
+
+Dual Harm
+    -> reduces SID(A) and SID(B)
+```
+
+---
+
+### Unified Principle
+
+```text
+Destructive intolerance occurs when an undesirable state is managed by reducing future participation capacity.
+```
+
+The target may be:
+
+```text
+Self
+Others
+Both
+```
+
+but the structure remains the same.
+
+---
+
+### Scale Invariance
+
+```text
+Person
+    ->
+Group
+    ->
+Institution
+    ->
+Society
+```
+
+The same pattern may appear at each scale:
+
+```text
+Undesirable State
+    ->
+Immediate Elimination Strategy
+    ->
+Short-Term Relief
+    ->
+Long-Term Capacity Loss
+```
+
+---
+
+### Relation to the Paradox of Tolerance
+
+At the individual level:
+
+```text
+Distress
+    ->
+Self-Damage
+    ->
+Reduced Participation
+```
+
+At the social level:
+
+```text
+Disagreement
+    ->
+Suppression
+    ->
+Reduced Participation
+```
+
+In both cases:
+
+```text
+Healthy tolerance preserves participation despite discomfort.
+
+Destructive intolerance reduces participation to remove discomfort.
+```
