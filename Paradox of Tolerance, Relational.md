@@ -1,6 +1,6 @@
 # Paradox of Tolerance
 
-A dynamic becomes destructively intolerant when it ceases competing for influence within the SID cycle and begins reducing the future capacity of agents to participate in the structural cycle at all.
+A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in the structural cycle at all.
 
 ## Fundamental Boundary Condition
 
