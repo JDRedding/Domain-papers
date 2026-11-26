@@ -1,22 +1,29 @@
-# Paradox of Tolerance
+**Paradox of Tolerance**
 
-Tolerance permits competition among dynamics. A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in the structural cycle at all. Destructive intolerance begins when a dynamic reduces the future possibility of reciprocal participation itself.
+Tolerance permits competition among dynamics. A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in the structural cycle at all.
 
 ## Fundamental Boundary Condition
-
-## Type Definitions
 
 The mathematics begins only after defining:
 
 - ontology  
 - categories  
 - state variables  
+- agents  
 - interaction rules  
 - payoff functions  
 - thresholds  
-- control mechanisms
+- control mechanisms  
 
-### Core Structual Variables
+The unresolved issue is:
+
+> What counts as destructive intolerance?
+
+Everything else follows from the answer to that boundary condition.
+
+## Type Definitions
+
+### Core SID Variables
 
 ```text
 S : Structure
@@ -260,7 +267,7 @@ Meaning: entire population is tolerant.
 
 **Interpretation:** Intolerance successfully invades a tolerant population.
 
-## Structual Interpretation
+## SID Interpretation
 
 ### Cyclic Dependence
 
@@ -282,7 +289,7 @@ I depends on SD
 D depends on SI
 ```
 
-## Structual Lesson
+## SID Lesson
 
 Tolerance cannot be defined solely at $I$.
 
@@ -307,30 +314,9 @@ No Defensive Feedback
 Possible Loss of Tolerance
 ```
 
-## Fundamental Boundary Question
-
-The mathematics begins only after defining:
-
-- state variables  
-- agents  
-- interaction rules  
-- payoff functions  
-- thresholds  
-- control mechanisms  
-
-The unresolved issue is:
-
-> What counts as destructive intolerance?
-
-Everything else follows from the answer to that boundary condition.
-
 ---
 
-# Appendix A: Destructive Intolerance
-
-> **Destructive Intolerance** = any dynamic whose objective or effect is to reduce the future possibility of reciprocal participation below a viable structual threshold.
-
-## Refined Definition
+# Appendix: Destructive Intolerance
 
 A dynamic $D$ is **destructively intolerant** if and only if its objective or stable consequence is the reduction of reciprocal participation capacity below a viable threshold.
 
@@ -347,7 +333,7 @@ where:
 
 ## Boundary Condition Matrix
 
-| Level | State       | Effect on Reciprocity ($R$) | Effect on Structure     | Action     |
+| Level | State       | Effect on Reciprocity ($R$) | Effect on SID     | Action     |
 |-------|-------------|-------------------------------|-------------------|------------|
 | 0     | Disagreement| Neutral                       | SID intact        | ALLOW      |
 | 1     | Competition | Local stress                  | SID intact        | ALLOW      |
@@ -356,7 +342,7 @@ where:
 | 4     | Capture     | Reciprocity collapse          | $S$ degraded    | DEFEND     |
 | 5     | Elimination | Participation impossible      | SID destroyed     | SUPPRESS   |
 
-## Structual Boundary Conditions
+## SID Boundary Conditions
 
 ### Safe Region
 
@@ -364,7 +350,7 @@ $$
 S > S_{\text{crit}}, \quad I > I_{\text{crit}}, \quad D > D_{\text{crit}}
 $$
 
-System remains viable. Competition occurs inside Structures.
+System remains viable. Competition occurs inside SID.
 
 ### Warning Region
 
@@ -406,7 +392,7 @@ The system is no longer viable.
 
 Examples: purge, political extermination, ethnic cleansing, elimination of all opposition.
 
-## Structual Viability Metric
+## SID Viability Metric
 
 Define:
 
@@ -437,7 +423,7 @@ $$
 
 (or below).
 
-Equivalent Structual form:
+Equivalent SID form:
 
 $$
 \frac{dV}{dt} < 0
@@ -454,45 +440,7 @@ and $X$ intentionally drives at least one of:
 - $D \to 0$ — **Dynamics destruction**  
   Examples: enforced monopoly, elimination of alternatives, compulsory ideological uniformity  
 
-## Logical Distinction
-
-### Logical Paradox
-
-```text
-A => NOT A
-```
-
-Examples: Russell Paradox, Liar Paradox.
-
-### Dynamical Instability
-
-```text
-A(t₀) → A(t₁) → A(t₂) → … → NOT A(tₙ)
-```
-
-**Interpretation:** The contradiction is temporal, not logical.
-
-## RDG / Structual Interpretation
-
-### Ordinary Intolerance
-
-“I disagree with you.”  
-
-**Result:** No boundary crossed.
-
-### Strong Intolerance
-
-“You should not participate.”  
-
-**Result:** Approaching boundary.
-
-### Destructive Intolerance
-
-“You must not exist as a participant.”  
-
-**Result:** Boundary crossed.
-
-## Most Compact RDG Criterion
+## Compact Criterion
 
 ```text
 ALLOW:
@@ -506,91 +454,23 @@ DEFEND:
     under which D can exist
 ```
 
-The critical transition occurs when a dynamic ceases competing **within** the structual cycle and begins degrading the structual cycle itself.
+The critical transition occurs when a dynamic ceases competing **within** the SID cycle and begins degrading the SID cycle itself.
 
-## Appendix B: Structural Boundary of Intolerance
+## Interpretation Levels
 
-### Core Proposition
-
-> Destructive intolerance begins when a dynamic stops competing within the structual cycle and starts reducing the future capacity of agents to participate in the structual cycle itself.
-
----
-
-### Fundamental Variable
+- Ordinary Intolerance (“I disagree with you.”) — no boundary crossed.  
+- Strong Intolerance (“You should not participate.”) — approaching boundary.  
+- Destructive Intolerance (“You must not exist as a participant.”) — boundary crossed.  
 
 ```text
-R = Reciprocal Participation Capacity
+Ordinary Conflict     -> modifies D
+Serious Conflict      -> modifies I
+Dangerous Conflict    -> modifies S
+Destructive Intolerance -> destroys SID viability
 ```
 
 ```text
-R measures the ability of agents
-to continue participating in SID.
-```
-
----
-
-### Structural Definition
-
-A dynamic is destructively intolerant if:
-
-```math
-\frac{dR}{dt} < 0
-```
-
-and
-
-```math
-\lim_{t\to\infty} R(t) < R_{crit}
-```
-
-where:
-
-```text
-Rcrit = minimum viable reciprocity
-```
-
----
-
-### Boundary Matrix
-
-| Level | Dynamic | Effect | Response |
-|---------|---------|---------|---------|
-| 0 | Disagreement | SID preserved | ALLOW |
-| 1 | Competition | SID preserved | ALLOW |
-| 2 | Suppression | SID weakened | MONITOR |
-| 3 | Coercion | I degraded | INTERVENE |
-| 4 | Capture | S degraded | DEFEND |
-| 5 | Elimination | SID destroyed | SUPPRESS |
-
----
-
-### Structual Interpretation
-
-```text
-Ordinary Conflict
-    -> modifies D
-
-Serious Conflict
-    -> modifies I
-
-Dangerous Conflict
-    -> modifies S
-
-Destructive Intolerance
-    -> destroys SID viability
-```
-
----
-
-### Boundary Criterion
-
-```text
-Competition within SID
-    -> Allowed
-
-Suppression of SID participants
-    -> Boundary
-
-Destruction of SID participation
-    -> Boundary Crossed
+Competition within SID          -> Allowed
+Suppression of SID participants -> Boundary
+Destruction of SID participation -> Boundary Crossed
 ```
