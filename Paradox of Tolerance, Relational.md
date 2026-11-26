@@ -16,7 +16,7 @@ The mathematics begins only after defining:
 - thresholds  
 - control mechanisms
 
-### Core SID Variables
+### Core Structual Variables
 
 ```text
 S : Structure
@@ -260,7 +260,7 @@ Meaning: entire population is tolerant.
 
 **Interpretation:** Intolerance successfully invades a tolerant population.
 
-## SID Interpretation
+## Structual Interpretation
 
 ### Cyclic Dependence
 
@@ -282,7 +282,7 @@ I depends on SD
 D depends on SI
 ```
 
-## SID Lesson
+## Structual Lesson
 
 Tolerance cannot be defined solely at $I$.
 
@@ -328,7 +328,7 @@ Everything else follows from the answer to that boundary condition.
 
 # Appendix A: Destructive Intolerance
 
-> **Destructive Intolerance** = any dynamic whose objective or effect is to reduce the future possibility of reciprocal participation below a viable SID threshold.
+> **Destructive Intolerance** = any dynamic whose objective or effect is to reduce the future possibility of reciprocal participation below a viable structual threshold.
 
 ## Refined Definition
 
@@ -347,7 +347,7 @@ where:
 
 ## Boundary Condition Matrix
 
-| Level | State       | Effect on Reciprocity ($R$) | Effect on SID     | Action     |
+| Level | State       | Effect on Reciprocity ($R$) | Effect on Structure     | Action     |
 |-------|-------------|-------------------------------|-------------------|------------|
 | 0     | Disagreement| Neutral                       | SID intact        | ALLOW      |
 | 1     | Competition | Local stress                  | SID intact        | ALLOW      |
@@ -356,7 +356,7 @@ where:
 | 4     | Capture     | Reciprocity collapse          | $S$ degraded    | DEFEND     |
 | 5     | Elimination | Participation impossible      | SID destroyed     | SUPPRESS   |
 
-## SID Boundary Conditions
+## Structual Boundary Conditions
 
 ### Safe Region
 
@@ -364,7 +364,7 @@ $$
 S > S_{\text{crit}}, \quad I > I_{\text{crit}}, \quad D > D_{\text{crit}}
 $$
 
-System remains viable. Competition occurs inside SID.
+System remains viable. Competition occurs inside Structures.
 
 ### Warning Region
 
@@ -406,7 +406,7 @@ The system is no longer viable.
 
 Examples: purge, political extermination, ethnic cleansing, elimination of all opposition.
 
-## SID Viability Metric
+## Structual Viability Metric
 
 Define:
 
@@ -437,7 +437,7 @@ $$
 
 (or below).
 
-Equivalent SID form:
+Equivalent Structual form:
 
 $$
 \frac{dV}{dt} < 0
@@ -472,7 +472,7 @@ A(t₀) → A(t₁) → A(t₂) → … → NOT A(tₙ)
 
 **Interpretation:** The contradiction is temporal, not logical.
 
-## RDG / SID Interpretation
+## RDG / Structual Interpretation
 
 ### Ordinary Intolerance
 
@@ -506,13 +506,13 @@ DEFEND:
     under which D can exist
 ```
 
-The critical transition occurs when a dynamic ceases competing **within** the SID cycle and begins degrading the SID cycle itself.
+The critical transition occurs when a dynamic ceases competing **within** the structual cycle and begins degrading the structual cycle itself.
 
 ## Appendix B: Structural Boundary of Intolerance
 
 ### Core Proposition
 
-> Destructive intolerance begins when a dynamic stops competing within the SID cycle and starts reducing the future capacity of agents to participate in the SID cycle itself.
+> Destructive intolerance begins when a dynamic stops competing within the structual cycle and starts reducing the future capacity of agents to participate in the structual cycle itself.
 
 ---
 
@@ -564,7 +564,7 @@ Rcrit = minimum viable reciprocity
 
 ---
 
-### SID Interpretation
+### Structual Interpretation
 
 ```text
 Ordinary Conflict
