@@ -743,12 +743,9 @@ A destructively intolerant system attempts to eliminate discomfort by reducing p
 ### Unified Principle
 
 ```text
-Tolerance is not the absence
-of discomfort.
+Tolerance is not the absence of discomfort.
 
-Tolerance is the capacity to
-remain functional despite
-discomfort.
+Tolerance is the capacity to remain functional despite discomfort.
 ```
 
 At the individual level:
