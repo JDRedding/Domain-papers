@@ -614,14 +614,13 @@ Destruction of SID participation -> Boundary Crossed
 
 ## Appendix B: Psychological Analogy
 
+At the psychological level, this means tolerating difficult emotions without self-destructive responses. At the social level, this means tolerating disagreement and competition without destroying the conditions that make participation possible.
+
 ```text
 Healthy tolerance is not the absence of discomfort.
 
 Healthy tolerance is the capacity to remain functional despite discomfort.
 ```
-
-At the psychological level, this means tolerating difficult emotions without self-destructive responses. At the social level, this means tolerating disagreement and competition without destroying the conditions that make participation possible.
-
 
 ### Distress Intolerance and Destructive Intolerance
 
