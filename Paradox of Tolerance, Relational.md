@@ -1,7 +1,12 @@
 # **Paradox of Tolerance**
 
-Tolerance permits competition among dynamics. A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in the structural cycle at all.
+## Thesis
 
+Tolerance permits competition among dynamics.
+
+A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in that cycle at all.
+
+Destructive intolerance therefore begins when a dynamic reduces the future possibility of reciprocal participation itself.
 ## Fundamental Boundary Condition
 
 The mathematics begins only after defining:
