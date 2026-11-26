@@ -1,6 +1,6 @@
 # Paradox of Tolerance
 
-A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in the structural cycle at all.
+Tolerance permits competition among dynamics. A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in the structural cycle at all. Destructive intolerance begins when a dynamic reduces the future possibility of reciprocal participation itself.
 
 ## Fundamental Boundary Condition
 
@@ -326,7 +326,7 @@ Everything else follows from the answer to that boundary condition.
 
 ---
 
-# Appendix: Destructive Intolerance
+# Appendix A: Destructive Intolerance
 
 > **Destructive Intolerance** = any dynamic whose objective or effect is to reduce the future possibility of reciprocal participation below a viable SID threshold.
 
@@ -507,3 +507,90 @@ DEFEND:
 ```
 
 The critical transition occurs when a dynamic ceases competing **within** the SID cycle and begins degrading the SID cycle itself.
+
+## Appendix B: Structural Boundary of Intolerance
+
+### Core Proposition
+
+> Destructive intolerance begins when a dynamic stops competing within the SID cycle and starts reducing the future capacity of agents to participate in the SID cycle itself.
+
+---
+
+### Fundamental Variable
+
+```text
+R = Reciprocal Participation Capacity
+```
+
+```text
+R measures the ability of agents
+to continue participating in SID.
+```
+
+---
+
+### Structural Definition
+
+A dynamic is destructively intolerant if:
+
+```math
+\frac{dR}{dt} < 0
+```
+
+and
+
+```math
+\lim_{t\to\infty} R(t) < R_{crit}
+```
+
+where:
+
+```text
+Rcrit = minimum viable reciprocity
+```
+
+---
+
+### Boundary Matrix
+
+| Level | Dynamic | Effect | Response |
+|---------|---------|---------|---------|
+| 0 | Disagreement | SID preserved | ALLOW |
+| 1 | Competition | SID preserved | ALLOW |
+| 2 | Suppression | SID weakened | MONITOR |
+| 3 | Coercion | I degraded | INTERVENE |
+| 4 | Capture | S degraded | DEFEND |
+| 5 | Elimination | SID destroyed | SUPPRESS |
+
+---
+
+### SID Interpretation
+
+```text
+Ordinary Conflict
+    -> modifies D
+
+Serious Conflict
+    -> modifies I
+
+Dangerous Conflict
+    -> modifies S
+
+Destructive Intolerance
+    -> destroys SID viability
+```
+
+---
+
+### Boundary Criterion
+
+```text
+Competition within SID
+    -> Allowed
+
+Suppression of SID participants
+    -> Boundary
+
+Destruction of SID participation
+    -> Boundary Crossed
+```
