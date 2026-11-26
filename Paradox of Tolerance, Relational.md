@@ -2,11 +2,10 @@
 
 ## Thesis
 
-Tolerance permits competition among dynamics.
+Tolerance permits competition among dynamics. A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in that cycle at all. Destructive intolerance therefore begins when a dynamic reduces the future possibility of reciprocal participation itself.
 
-A dynamic becomes destructively intolerant when it ceases competing for influence within the structural cycle and begins reducing the future capacity of agents to participate in that cycle at all.
+Monitoring too late allows coercion. Defense too late allows capture. Capture unchecked permits elimination. Elimination ends reciprocity. The purpose of defense is not to preserve agreement. The purpose of defense is to preserve participation.
 
-Destructive intolerance therefore begins when a dynamic reduces the future possibility of reciprocal participation itself.
 ## Fundamental Boundary Condition
 
 The mathematics begins only after defining:
@@ -481,3 +480,134 @@ Competition within SID          -> Allowed
 Suppression of SID participants -> Boundary
 Destruction of SID participation -> Boundary Crossed
 ```
+
+## Appendix B: Failure Modes of Monitoring and Defense
+
+The greatest danger is not necessarily destructive intolerance itself, but the failure to respond while the system still remains recoverable.
+
+### Monitoring Failure
+
+Monitoring fails when a system correctly observes degrading reciprocity but takes no corrective action.
+
+Formally:
+
+```math
+\frac{dR}{dt} < 0
+```
+
+is recognized, but
+
+```math
+C(D) = 0
+```
+
+remains unchanged.
+
+Consequences:
+
+```text
+Suppression normalizes
+Coercive behaviors spread
+Participation declines
+Reciprocity weakens
+Thresholds are crossed unnoticed
+```
+
+In SID terms:
+
+```text
+D degrades I
+
+while
+
+S fails to adapt
+```
+
+The danger is that intervention becomes progressively more expensive as reciprocity declines.
+
+---
+
+### Defense Failure
+
+Defense fails when destructive dynamics have already begun degrading structural viability, but the system still refuses to act.
+
+Formally:
+
+```math
+I < Icrit
+```
+
+or
+
+```math
+S < Scrit
+```
+
+while defensive mechanisms remain inactive.
+
+Consequences:
+
+```text
+Institutional capture
+Procedural asymmetry
+Loss of opposition
+Structural lock-in
+```
+
+In SID terms:
+
+```text
+D begins rewriting S
+```
+
+instead of merely competing within S.
+
+---
+
+### The Recovery Problem
+
+Response costs are not linear.
+
+The earlier intervention occurs, the smaller the required correction.
+
+Conceptually:
+
+```text
+Level 2 -> small correction
+
+Level 3 -> significant correction
+
+Level 4 -> structural defense
+
+Level 5 -> recovery may be impossible
+```
+
+As viability decreases:
+
+```math
+V = SID
+```
+
+the cost of restoring viability tends to increase.
+
+---
+
+### The Defensive Paradox
+
+A system that refuses all defense in the name of tolerance may eventually lose the capacity for tolerance entirely.
+
+```text
+No monitoring
+    ->
+No defense
+    ->
+Structural degradation
+    ->
+Loss of reciprocal participation
+    ->
+Loss of tolerance
+```
+
+The goal of monitoring and defense is therefore not the suppression of competition.
+
+The goal is the preservation of the conditions that make future competition possible.
