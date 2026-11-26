@@ -449,14 +449,16 @@ and $X$ intentionally drives at least one of:
 
 ```text
 ALLOW:
-    D competes with D
+    D competes within SID
 
 MONITOR:
-    D suppresses D
+    D suppresses rival D
 
 DEFEND:
-    D eliminates the conditions
-    under which D can exist
+    D degrades SID viability
+
+SUPPRESS:
+    D destroys SID viability
 ```
 
 The critical transition occurs when a dynamic ceases competing **within** the SID cycle and begins degrading the SID cycle itself.
