@@ -49,7 +49,7 @@ $$
 
 ## Appendix: Non-Existence of Injective Relational Embeddings
 
-### Context
+### Corollary Context
 
 If a theorem is equivalent to a globally distributed relational constraint, then every successful local formulation must contain a mechanism for reconstructing that distributed information. Observers unable to identify that mechanism will naturally interpret the result as hidden assumption, circularity, or definitional closure.
 
