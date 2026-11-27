@@ -49,6 +49,12 @@ Recurring themes include:
 - Closure and stability
 - Emergent continuum models
 
+### Research Lineage
+
+Ideas are treated as evolving artifacts rather than isolated documents.
+
+The repository preserves exploratory notes, intermediate drafts, alternative formulations, abandoned approaches, and mature versions whenever practical. The goal is not merely to store conclusions but to preserve the developmental path that produced them.
+
 ---
 
 ## Intended Use  
