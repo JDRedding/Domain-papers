@@ -178,7 +178,7 @@ The closest analogy is the distinction between reduced states and global states.
 Given an entangled state $\lvert\Psi\rangle_{ABC}$, the reduced state of subsystem $A$ is obtained by the partial trace
 
 $$
-\rho_A = ${Tr}_{BC}(\lvert\Psi\rangle\langle\Psi\rvert).
+\rho_A = {Tr}_{BC}(\lvert\Psi\rangle\langle\Psi\rvert).
 $$
 
 In general, $\rho_A$ does not determine $\lvert\Psi\rangle_{ABC}$. Distinct global states may yield identical local states. The map
@@ -218,7 +218,7 @@ In the triad, vertex $A$ sees the morphisms corresponding to $AB$ and $CA$ but n
 The forgotten morphism is not recoverable from the localized image alone. The complete relational state behaves as a global section rather than a local section. Let $U_A$, $U_B$, $U_C$ denote local charts. Each chart contains only partial relational information. The global closure arises only through a gluing operation:
 
 $$
-\Omega = ${Glue}(U_A, U_B, U_C).
+\Omega = {Glue}(U_A, U_B, U_C).
 $$
 
 Having all local sections does not entail the existence of a global section. This is a central theme of sheaf theory. Under RIP, global relational closure need not reside in any local section.
