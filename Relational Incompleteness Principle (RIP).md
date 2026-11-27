@@ -284,6 +284,32 @@ $$
 
 This path describes traversal of existing relations. No statement of the form $A \Rightarrow A$ is employed as a premise. The final occurrence of $A$ is obtained through composition of relations rather than reuse of an assumption. The cycle therefore exhibits closure of the relational structure, not inferential circularity. $\square$ 
 
+## Appendix: Existence versus Local Recoverability
+
+The Relational Incompleteness Principle does not assert the non-existence of the global relational state. Rather, RIP asserts that the global relational state is not recoverable from any single local viewpoint.
+
+For the triad
+
+$$
+\tau=(A,B,C),
+$$
+
+the closure
+
+$$
+\Omega(\tau)=R_{AB}+R_{BC}+R_{CA}
+$$
+
+exists as a well-defined global object. However, no individual vertex contains the relational information required to recover it. Thus RIP concerns localization and recoverability rather than existence.
+
+$$
+\text{Global Existence}
+\neq
+\text{Local Recoverability}.
+$$
+
+The complete relational state may exist globally while remaining inaccessible from every individual local chart.
+
 ## Appendix: Čech Cohomology Interpretation
 The Relational Incompleteness Principle may be viewed through the lens of Čech cohomology. Let
 
