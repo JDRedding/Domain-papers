@@ -90,7 +90,7 @@ For example:
 530 → Physics
 ```
 
-The classification hierarchy allows documents to be organized, discovered, and related through a shared numerical framework rather than relying solely on folders or keyword tags. The sub-classifications are listing within the individual papers. As the repository grows, additional decimal subdivisions may be introduced to support new research areas while maintaining continuity with the broader taxonomy.
+The classification hierarchy allows documents to be organized, discovered, and related through a shared numerical framework rather than relying solely on folders or keyword tags. Sub-classifications may be defined within individual papers, allowing additional levels of specialization while remaining connected to the broader classification hierarchy. Additional decimal subdivisions may be introduced to provide greater specificity while preserving their relationship to broader classifications. As the repository grows, additional decimal subdivisions may be introduced to support new research areas while maintaining continuity with the broader taxonomy.
 
 ### Local Extensions
 
