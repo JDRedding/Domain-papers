@@ -1,4 +1,4 @@
-Relational Incompleteness Principle (RIP)
+# Relational Incompleteness Principle (RIP)
 
 Let
 
