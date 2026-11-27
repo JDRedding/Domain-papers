@@ -7,6 +7,21 @@ This repository functions as a **living research library**. Works may remain her
 
 ---
 
+## What is Domain-Papers?
+
+Domain-Papers is the primary research archive behind most of the larger projects on this GitHub account.
+
+Many ideas begin here as notes, sketches, mathematical explorations, or conceptual frameworks. As projects mature, they may be extracted into dedicated repositories while retaining their developmental history within Domain-Papers.
+
+In this sense, Domain-Papers functions simultaneously as:
+
+- A research notebook
+- A knowledge library
+- A theory incubator
+- A historical archive
+
+---
+
 ## Purpose and Identity  
 At its core, domain‑papers is a **long‑horizon intellectual workspace**. It is not merely a storage system but a dynamic environment for:
 
