@@ -113,6 +113,27 @@ Key themes: **literary criticism**, **poetics**.
 World history, geography, biography, archaeology, and civilizational timelines.  
 Key themes: **civilizational timelines**, **archaeology**.
 
+### Classification as Metadata
+
+Domain-Papers uses a decimal classification structure inspired by the Dewey Decimal Classification (DDC) system. The classification number serves not only as a location within the repository but also as descriptive metadata. Each additional decimal place increases specificity while preserving the document's broader context within the overall knowledge structure. For example:
+
+000 → Computer science, information & general works
+001 → Knowledge
+004 → Data processing & computer science
+005 → Computer programming, programs & data
+
+500 → Science
+510 → Mathematics
+516 → Geometry
+523 → Cosmology
+530 → Physics
+
+The classification hierarchy allows documents to be organized, discovered, and related through a shared numerical framework rather than relying solely on folders or keyword tags. As the repository grows, additional decimal subdivisions may be introduced to support new research areas while maintaining continuity with the broader taxonomy.
+
+### Local Extensions
+
+While the repository is broadly inspired by the Dewey Decimal Classification system, selected unassigned or lightly used ranges may be repurposed to accommodate subjects relevant to the research program. These extensions remain compatible with the broader domain structure while providing room for new classifications not represented in the standard schedules.
+
 ---
 
 ## Workflow Philosophy
