@@ -71,48 +71,6 @@ This library is meant for active researchers, collaborators, and future users wh
 
 ## Domain Structure
 
-Each domain corresponds to a 100-range class, forming a complete top-level taxonomy. This structure mirrors classical decimal classification systems while remaining adaptable to modern interdisciplinary research.
-
-### 000–099 Knowledge  
-General works, encyclopedias, information theory, meta-knowledge, classification theory, and papers about knowledge systems themselves.  
-Key themes: **classification theory**, **meta-knowledge**.
-
-### 100–199 Philosophy  
-Logic, metaphysics, epistemology, ethics, philosophical systems, and conceptual frameworks.  
-Key themes: **epistemology**, **conceptual frameworks**.
-
-### 200–299 Religion  
-Comparative religion, theology, myth, ritual systems, and cultural religious structures.  
-Key themes: **comparative religion**, **myth systems**.
-
-### 300–399 Social Sciences  
-Sociology, economics, political science, law, public policy, anthropology, and human social behavior.  
-Key themes: **social systems**, **anthropology**.
-
-### 400–499 Language  
-Linguistics, grammar, semantics, language families, writing systems, and communication theory.  
-Key themes: **linguistics**, **semantics**.
-
-### 500–599 Science  
-Mathematics, physics, chemistry, biology, earth sciences — the natural sciences in their pure form.  
-Key themes: **mathematics**, **physics**.
-
-### 600–699 Technology  
-Engineering, applied sciences, medicine, agriculture, manufacturing, and practical technological systems.  
-Key themes: **engineering**, **applied sciences**.
-
-### 700–799 Arts  
-Visual arts, music, architecture, design, performing arts, and aesthetic theory.  
-Key themes: **aesthetic theory**, **architecture**.
-
-### 800–899 Literature  
-Poetry, drama, fiction, literary criticism, and textual analysis across cultures.  
-Key themes: **literary criticism**, **poetics**.
-
-### 900–999 History  
-World history, geography, biography, archaeology, and civilizational timelines.  
-Key themes: **civilizational timelines**, **archaeology**.
-
 ### Classification as Metadata
 
 Domain-Papers uses a decimal classification structure inspired by the Dewey Decimal Classification (DDC) system. The classification number serves not only as a location within the repository but also as descriptive metadata. Each additional decimal place increases specificity while preserving the document's broader context within the overall knowledge structure. For example:
@@ -135,6 +93,50 @@ The classification hierarchy allows documents to be organized, discovered, and r
 ### Local Extensions
 
 While the repository is broadly inspired by the Dewey Decimal Classification system, selected unassigned or lightly used ranges may be repurposed to accommodate subjects relevant to the research program. These extensions remain compatible with the broader domain structure while providing room for new classifications not represented in the standard schedules.
+
+### Knowledge Domains
+
+Each domain corresponds to a 100-range class, forming a complete top-level taxonomy. This structure mirrors classical decimal classification systems while remaining adaptable to modern interdisciplinary research.
+
+#### 000–099 Knowledge  
+General works, encyclopedias, information theory, meta-knowledge, classification theory, and papers about knowledge systems themselves.  
+Key themes: **classification theory**, **meta-knowledge**.
+
+#### 100–199 Philosophy  
+Logic, metaphysics, epistemology, ethics, philosophical systems, and conceptual frameworks.  
+Key themes: **epistemology**, **conceptual frameworks**.
+
+#### 200–299 Religion  
+Comparative religion, theology, myth, ritual systems, and cultural religious structures.  
+Key themes: **comparative religion**, **myth systems**.
+
+#### 300–399 Social Sciences  
+Sociology, economics, political science, law, public policy, anthropology, and human social behavior.  
+Key themes: **social systems**, **anthropology**.
+
+#### 400–499 Language  
+Linguistics, grammar, semantics, language families, writing systems, and communication theory.  
+Key themes: **linguistics**, **semantics**.
+
+#### 500–599 Science  
+Mathematics, physics, chemistry, biology, earth sciences — the natural sciences in their pure form.  
+Key themes: **mathematics**, **physics**.
+
+#### 600–699 Technology  
+Engineering, applied sciences, medicine, agriculture, manufacturing, and practical technological systems.  
+Key themes: **engineering**, **applied sciences**.
+
+#### 700–799 Arts  
+Visual arts, music, architecture, design, performing arts, and aesthetic theory.  
+Key themes: **aesthetic theory**, **architecture**.
+
+#### 800–899 Literature  
+Poetry, drama, fiction, literary criticism, and textual analysis across cultures.  
+Key themes: **literary criticism**, **poetics**.
+
+#### 900–999 History  
+World history, geography, biography, archaeology, and civilizational timelines.  
+Key themes: **civilizational timelines**, **archaeology**.
 
 ---
 
