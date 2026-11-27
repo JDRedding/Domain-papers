@@ -75,4 +75,4 @@ When intermediate constructions (localizations, lifts, or embeddings) are examin
 
 In the SID (Structure–Interaction–Dynamics) and relational-projection framework, geometry itself is recovered as the closure-stable residue of finite relational dynamics. An injective, fully relation-preserving map into a localization would amount to an embedding that does not discard any of that residue. The claim asserts that no such embedding exists.
 
-Consequently, any successful localization must employ an additional reconstruction mechanism. When that mechanism is not explicitly identified, the resulting dependence may appear as hidden assumption, circularity, or definitional closure.
+Consequently, any successful localization must employ an additional reconstruction mechanism. When that mechanism is not explicitly identified, the resulting dependence may appear as hidden assumption, circularity, or definitional closure. The triadic construction provides the minimal witness of this constraint. The embedding result generalizes the same non-locality from finite triadic closures to arbitrary relational geometries.
