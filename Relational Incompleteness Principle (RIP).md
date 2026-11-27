@@ -202,6 +202,7 @@ $$
 $$
 
 ### Category-Theoretic Interpretation
+Localization is a forgetful functor whose forgotten morphisms are necessary for global closure. The forgotten morphism is not recoverable from the localized image alone.
 
 Let $G$ be a global relational geometry and $${Local}(A)$$ a local chart. Localization defines a functor
 
