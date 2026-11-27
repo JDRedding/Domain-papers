@@ -434,7 +434,7 @@ At the internal level, a system may encounter structural limits on direct inspec
 
 A relational sector may remain beyond direct access while still participating in a globally consistent structure. In this sense, ROD treats incompleteness as an admissible feature of finite relational systems rather than as evidence of structural failure.
 
-## # Appendix: Relational Incompleteness Principle
+## Appendix: Relational Incompleteness Principle
 
 Let
 
