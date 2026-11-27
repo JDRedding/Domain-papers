@@ -80,7 +80,7 @@ $$
 R_{AB} &= K - R_{BC} - R_{CA}, \\
 R_{BC} &= K - R_{CA} - R_{AB}, \\
 R_{CA} &= K - R_{AB} - R_{BC}.
-\end{alig\n*}
+\end{alig\*}
 $$
 
 6. **Local Balance**
