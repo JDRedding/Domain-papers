@@ -1,4 +1,5 @@
 # Relational Incompleteness Principle (RIP)
+*The complete relational state is not localized.*
 
 Let
 
