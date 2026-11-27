@@ -922,8 +922,7 @@ $$
 Three observations:
 
 $$
-LOP_1\cap LOP_2\cap LOP_3
-=
+LOP_1\cap LOP_2\cap LOP_3 =
 Best\ Fix
 $$
 
