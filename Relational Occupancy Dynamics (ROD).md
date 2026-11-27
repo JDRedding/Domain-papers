@@ -58,14 +58,16 @@ S = K \cup Q, \qquad K \cap Q = \emptyset.
 $$
 
 3. **Relational Potential**
+4. 
 $$
 \Phi(S, I, Q) = \sum_{(i,j)} w_{ij}\, R_{ij} + \lambda\, |Q|
 $$
+
 $$
 \Phi = \Phi_K + T_Q, \qquad T_Q = \lambda\, |Q|.
 $$
 
-4. **Triadic Closure** (canonical triad $\tau = (A, B, C)$)
+5. **Triadic Closure** (canonical triad $\tau = (A, B, C)$)
 
 $$
 \Omega(\tau) = R_{AB} + R_{BC} + R_{CA}
