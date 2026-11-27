@@ -210,7 +210,7 @@ $$
 L_A : \mathcal{G} \to \mathcal{L}_A.
 $$
 
-RIP expresses the existence of relational information that is forgotten under localization and cannot, in general, be recovered from the localized image alone. RIP is both faithful and reconstructive: the local category forgets morphisms that cannot be recovered from the image alone.
+RIP expresses the existence of relational information that is forgotten under localization and cannot, in general, be recovered from the localized image alone.
 
 In the triad, vertex $A$ sees the morphisms corresponding to $AB$ and $CA$ but not $BC$. A category theorist would therefore phrase RIP as: localization is a forgetful functor, and the forgotten morphisms are not recoverable from the image object.
 
