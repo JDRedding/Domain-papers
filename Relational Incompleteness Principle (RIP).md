@@ -78,7 +78,6 @@ In the SID (Structure–Interaction–Dynamics) and relational-projection framew
 
 Consequently, any successful localization must employ an additional reconstruction mechanism. When that mechanism is not explicitly identified, the resulting dependence may appear as hidden assumption, circularity, or definitional closure. The triadic construction provides the minimal witness of this constraint. The embedding result generalizes the same non-locality from finite triadic closures to arbitrary relational geometries.
 
-
 ## Appendix: Closure versus Circularity
 Relational Closure versus Inferential Circularity
 
@@ -162,7 +161,7 @@ $$
 A \xrightarrow{R_{AB}} B \xrightarrow{R_{BC}} C \xrightarrow{R_{CA}} A
 $$
 
-is the cyclic traversal of the triad itself. The final recovery of $A$ is a consequence of relational closure, not a local deduction. Therefore
+is the cyclic traversal of the triad itself. **The final recovery of $A$ is a consequence of relational closure, not a local deduction.** Therefore
 
 $$
 \text{Relational Closure} \neq \text{Inferential Circularity}.
