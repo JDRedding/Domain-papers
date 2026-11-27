@@ -129,7 +129,8 @@ $$
 
    path $\gamma_t = (x_0, x_1, \ldots, x_t)$.
 
-10. **Compact SIDQC Summary**
+## Relational Constraint Dynamics
+**SIDQC Summary**  
 
 $$
 \begin{align\*}
@@ -139,9 +140,6 @@ C(S, I) &= 0, \\
 x_{t+1} &= D(x_t, R, Q).
 \end{align\*}
 $$
-
-## Relational Constraint Dynamics
-**SIDQC Summary**  
 
 **Core Notation**
 - $S$: finite set of nodes  
