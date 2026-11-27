@@ -1,5 +1,5 @@
 # Relational Occupancy Dynamics (ROD)
-SIDQC Framework
+SIDQC Framework : Consistency without Closure • Potential without Defect • Evolution without Failure
 
 $$
 C(S, I) = 0 \quad | \quad \Phi = \sum w_{ij} R_{ij} + \lambda |Q| \quad | \quad \rho_{t+1} = \rho_t \cdot \alpha \cdot \left(1 + \beta \frac{|Q|}{|S|}\right) 
