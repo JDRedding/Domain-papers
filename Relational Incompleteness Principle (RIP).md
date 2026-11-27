@@ -210,14 +210,12 @@ $$
 L_A : \mathcal{G} \to \mathcal{L}_A.
 $$
 
-RIP expresses the failure of $L_A$ to be both faithful and essentially reconstructive: the local category forgets morphisms that cannot be recovered from the image alone.
+RIP expresses the existence of relational information that is forgotten under localization and cannot, in general, be recovered from the localized image alone. RIP is both faithful and reconstructive: the local category forgets morphisms that cannot be recovered from the image alone.
 
 In the triad, vertex $A$ sees the morphisms corresponding to $AB$ and $CA$ but not $BC$. A category theorist would therefore phrase RIP as: localization is a forgetful functor, and the forgotten morphisms are not recoverable from the image object.
 
 ### Sheaf-Theoretic Interpretation
-The forgotten morphism is not recoverable from the localized image alone.
-
-Local charts $U_A$, $U_B$, $U_C$ hold partial information. The global object exists only after gluing:
+The forgotten morphism is not recoverable from the localized image alone. The complete relational state behaves as a global section rather than a local section. Let $U_A$, $U_B$, $U_C$ denote local charts. Each chart contains only partial relational information. The global closure arises only through a gluing operation:
 
 $$
 \Omega = ${Glue}(U_A, U_B, U_C).
