@@ -1,7 +1,8 @@
 ## Domain-Papers  
 **005.1 Software documentation**
 
-The **Domain-Papers** repository is a ten-domain container that mirrors the top-level classes of a decimal classification system. Each folder represents a distinct knowledge territory — a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross-pollinate. The structure is intentionally broad and durable. It provides a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
+The **Domain-Papers** repository is a ten-domain research library organized around the top-level classes of a decimal classification system. Each folder represents a distinct knowledge territory — a conceptual region
+where papers, notes, mappings, and analyses can accumulate, evolve, and cross-pollinate. The structure is intentionally broad and durable. It provides a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
 
 ---
 
