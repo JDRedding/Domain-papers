@@ -46,3 +46,22 @@ Consequently:
 $$
 \text{Incomplete local access} \neq \text{Structural inconsistency}.
 $$
+
+## **Appendix: Non-Existence of Injective Relational Embeddings**
+
+### Context
+If a theorem is equivalent to a globally distributed relational constraint, then every successful local formulation must contain a mechanism for reconstructing that distributed information. Observers unable to identify that mechanism will naturally interpret the result as hidden assumption, circularity, or definitional closure. Let G denote a relational geometric skeleton whose complete structure is partially encoded in non-local closure relations. The supposition asserts that no such localization-preserving embedding exists, such that:
+
+$$
+K_A : G \to {Local}(A)
+$$
+
+that is simultaneously: (1) injective, (2) fully relationally preserving, and (3) sufficient for complete reconstruction of G from Local(A) alone. The surrounding frames a common suspicion that certain arguments become circular once intermediate constructions (localizations, lifts, or embeddings) are examined. This simply records a structural non-existence result inside the relational-archaeology setting: once all relational information must be retained, the desired injective map into the localized object is unavailable. Consequently, any successful localization must employ an additional reconstruction mechanism. When that mechanism is not explicitly identified, the resulting dependence may appear as hidden assumption, circularity, or definitional closure.
+
+### Alignment
+
+- $G$ denotes a relational geometric skeleton (objects plus a relation set ${Rel} \subseteq {Obj} \times {Obj}$).
+- ${Local}(A)$ refers to a localization or local refinement of a structure $A$.
+- “Preserves all relational information” requires that every distinction, adjacency, nesting, cycle, and invariant present in $G$ remains recoverable after the map; no edges or closure properties may be lost or collapsed.
+
+In the SID (Structure–Interaction–Dynamics) and a relational-projection framework, geometry itself is recovered as the closure-stable residue of finite relational dynamics. An injective, fully relation-preserving map into a localization would amount to an embedding that does not discard any of that residue. The supposition asserts that no such embedding exists.
