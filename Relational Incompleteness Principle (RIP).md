@@ -225,7 +225,7 @@ $$
 denote local charts. Each chart contains only partial relational information. The global closure arises only through a gluing operation
 
 $$
-\Omega = \operatorname{Glue}(U_A,U_B,U_C).
+\Omega = {Glue}(U_A,U_B,U_C).
 $$
 
 Under RIP,
