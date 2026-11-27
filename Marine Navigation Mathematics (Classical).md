@@ -525,8 +525,7 @@ $$
 # 15. Velocity Made Good (VMG)
 
 $$
-\text{VMG}
-=
+\text{VMG} =
 V_b\cos\theta
 $$
 
