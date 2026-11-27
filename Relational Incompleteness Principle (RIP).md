@@ -261,6 +261,30 @@ $$
 
 This path describes traversal of existing relations. No statement of the form $A \Rightarrow A$ is employed as a premise. The final occurrence of $A$ is obtained through composition of relations rather than reuse of an assumption. The cycle therefore exhibits closure of the relational structure, not inferential circularity. $\square$ 
 
+## Appendix: Čech Cohomology Interpretation
+The Relational Incompleteness Principle may be viewed through the lens of Čech cohomology. Let
+
+$$
+\mathcal U = \{U_A,U_B,U_C\}
+$$
+
+be local charts associated with the vertices of the triad.  Each chart contains only the relations visible from that vertex. Local compatibility data may be assembled across pairwise overlaps, but the complete relational closure
+
+$$
+\Omega(\tau) =
+R_{AB}+R_{BC}+R_{CA}
+$$
+
+is a global object. From a sheaf-theoretic perspective, RIP asserts that global relational closure is not contained in any individual local chart. The obstruction is therefore not the absence of local information, but the non-local nature of the closure itself. In this interpretation, cohomological obstructions measure the failure of local data to encode the complete global relational state.
+
+Thus RIP may be viewed as a local-to-global constraint:
+
+$$
+\text{Local Data}
+\neq
+\text{Global Closure}.
+$$
+
 $$
 \square
 $$
