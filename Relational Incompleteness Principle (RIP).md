@@ -203,7 +203,7 @@ $$
 
 ### Category-Theoretic Interpretation
 
-Let $G$ be a global relational geometry and $${Local}(A)$ a local chart. Localization defines a functor
+Let $G$ be a global relational geometry and $${Local}(A)$$ a local chart. Localization defines a functor
 
 $$
 L_A : \mathcal{G} \to \mathcal{L}_A.
