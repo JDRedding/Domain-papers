@@ -148,6 +148,8 @@ This repository is designed to support the full arc of research activity:
 - **Extraction and expansion** — mature works may be split into their own repositories, where they become formal papers, frameworks, or software implementations  
 - **Archival continuity** — even after extraction, early versions and developmental notes remain here as part of the historical record of the research process
 
+---
+
 ## Core Principles
 
 - **Ongoing evolution** — The repository is never “finished.” It expands organically as new insights emerge, old ideas are revisited, and connections between works become clearer.  
