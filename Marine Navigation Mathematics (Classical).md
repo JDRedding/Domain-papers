@@ -661,8 +661,7 @@ $$
 Observed altitude:
 
 $$
-H_a
-=
+H_a =
 H_s+I_c
 $$
 
