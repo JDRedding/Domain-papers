@@ -310,6 +310,8 @@ $$
 
 The complete relational state may exist globally while remaining inaccessible from every individual local chart.
 
+
+
 ## Appendix: Čech Cohomology Interpretation
 The Relational Incompleteness Principle may be viewed through the lens of Čech cohomology. Let
 
