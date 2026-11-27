@@ -259,7 +259,7 @@ $$
 A \xrightarrow{R_{AB}} B \xrightarrow{R_{BC}} C \xrightarrow{R_{CA}} A.
 $$
 
-This path describes traversal of existing relations. No statement of the form $A \Rightarrow A$ is employed as a premise. The final occurrence of $A$ is obtained through composition of relations rather than reuse of an assumption. The cycle therefore exhibits closure of the relational structure, not inferential circularity. 
+This path describes traversal of existing relations. No statement of the form $A \Rightarrow A$ is employed as a premise. The final occurrence of $A$ is obtained through composition of relations rather than reuse of an assumption. The cycle therefore exhibits closure of the relational structure, not inferential circularity. $\square$ 
 
 $$
 \square
