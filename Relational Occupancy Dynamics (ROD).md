@@ -1,6 +1,14 @@
 # Relational Occupancy Dynamics (ROD)
 SIDQC Framework
 
+$$
+C(S, I) = 0 \quad | \quad \Phi = \sum w_{ij} R_{ij} + \lambda |Q| \quad | \quad \rho_{t+1} = \rho_t \cdot \alpha \cdot \left(1 + \beta \frac{|Q|}{|S|}\right) 
+$$  
+
+$$
+x_{t+1} = D(x_t, R, Q) 
+$$
+
 ## Types
 
 | Symbol | Description |
@@ -131,15 +139,7 @@ x_{t+1} &= D(x_t, R, Q).
 $$
 
 ## Relational Constraint Dynamics
-**Compact SIDQC Summary**  
-
-$$
-C(S, I) = 0 \quad | \quad \Phi = \sum w_{ij} R_{ij} + \lambda |Q| \quad | \quad \rho_{t+1} = \rho_t \cdot \alpha \cdot \left(1 + \beta \frac{|Q|}{|S|}\right) 
-$$  
-
-$$
-x_{t+1} = D(x_t, R, Q) 
-$$
+**SIDQC Summary**  
 
 **Core Notation**
 - $S$: finite set of nodes  
