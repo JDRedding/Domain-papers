@@ -47,7 +47,8 @@ $$
 \text{Incomplete local access} \neq \text{Structural inconsistency}.
 $$
 
-## Appendix: Non-Existence of Injective Relational Embeddings
+## Appendix A: Relational Embedding Constraint (REC)
+Corollary (Non-Existence of Injective Relational Embeddings)
 
 ### Corollary Context
 
