@@ -1,7 +1,7 @@
 ## Domain-Papers  
 **005.1 Software documentation**
 
-The **Domain-Papers** repository is a ten-domain container that mirrors the top-level classes of a decimal classification system. Each folder represents a distinct knowledge territory—a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross-pollinate. The structure is intentionally broad and durable. It provides a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
+The **Domain-Papers** repository is a ten-domain container that mirrors the top-level classes of a decimal classification system. Each folder represents a distinct knowledge territory — a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross-pollinate. The structure is intentionally broad and durable. It provides a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
 
 ---
 
@@ -94,7 +94,8 @@ The classification hierarchy allows documents to be organized, discovered, and r
 
 ### Local Extensions
 
-While the repository is broadly inspired by the Dewey Decimal Classification system, selected unassigned or lightly used ranges may be repurposed to accommodate subjects relevant to the research program. These extensions remain compatible with the broader domain structure while providing room for new classifications not represented in the standard schedules.
+The repository primarily follows Dewey Decimal Classification (DDC) conventions. Where appropriate, unused or sparsely defined extensions may be allocated to support subjects, frameworks, or organizational needs
+specific to this research program. While the repository is broadly inspired by the Dewey Decimal Classification system, selected ranges may also be repurposed to accommodate subjects relevant to the research program. These extensions preserve compatibility with the broader taxonomy while allowing the classification system to evolve alongside the repository.
 
 ### Knowledge Domains
 
