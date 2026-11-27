@@ -242,7 +242,7 @@ Each omits one edge, so $\pi_A(E) \neq E$, $\pi_B(E) \neq E$, and $\pi_C(E) \neq
 **Proposition.** Assume RIP. Then no localization-preserving embedding
 
 $$
-K_A : G \to ${Local}(A)
+K_A : G \to {Local}(A)
 $$
 
 is simultaneously injective, fully relationally preserving, and reconstructively complete.
