@@ -56,21 +56,21 @@ If a theorem is equivalent to a globally distributed relational constraint, then
 Let $G$ denote a relational geometric skeleton whose complete structure is partially encoded in non-local closure relations. The claim asserts that no localization-preserving embedding
 
 $$
-K_A : G \to \operatorname{Local}(A)
+K_A : G \to {Local}(A)
 $$
 
 exists that is simultaneously:
 
 1. injective,
 2. fully relationally preserving, and
-3. sufficient for complete reconstruction of $G$ from $\operatorname{Local}(A)$ alone.
+3. sufficient for complete reconstruction of $G$ from ${Local}(A)$ alone.
 
 When intermediate constructions (localizations, lifts, or embeddings) are examined without an explicit reconstruction mechanism, the dependence on non-local structure may appear as hidden assumption, circularity, or definitional closure.
 
 ### Alignment
 
-- $G$ denotes a relational geometric skeleton (objects plus a relation set $\operatorname{Rel} \subseteq \operatorname{Obj} \times \operatorname{Obj}$).
-- $\operatorname{Local}(A)$ refers to a localization or local refinement of a structure $A$.
+- $G$ denotes a relational geometric skeleton (objects plus a relation set ${Rel} \subseteq {Obj} \times {Obj}$).
+- ${Local}(A)$ refers to a localization or local refinement of a structure $A$.
 - “Preserves all relational information” requires that every distinction, adjacency, nesting, cycle, and invariant present in $G$ remains recoverable after the map; no edges or closure properties may be lost or collapsed.
 
 In the SID (Structure–Interaction–Dynamics) and relational-projection framework, geometry itself is recovered as the closure-stable residue of finite relational dynamics. An injective, fully relation-preserving map into a localization would amount to an embedding that does not discard any of that residue. The claim asserts that no such embedding exists.
