@@ -132,6 +132,8 @@ $$
 ## Relational Constraint Dynamics
 **SIDQC Summary**  
 
+Unresolved does not mean defective — it is a source of relational potential and tension.
+
 $$
 \begin{align\*}
 C(S, I) &= 0, \\
