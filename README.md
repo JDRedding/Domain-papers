@@ -73,7 +73,9 @@ This library is meant for active researchers, collaborators, and future users wh
 
 ### Classification as Metadata
 
-Domain-Papers uses a decimal classification structure inspired by the Dewey Decimal Classification (DDC) system. The classification number serves not only as a location within the repository but also as descriptive metadata. Each additional decimal place increases specificity while preserving the document's broader context within the overall knowledge structure. For example:
+Domain-Papers uses a decimal classification structure inspired by the Dewey Decimal Classification (DDC) system. The classification number serves not only as a location within the repository but also as descriptive metadata. Each additional decimal place increases specificity while preserving its relationship to broader classifications. A document classified as 523.4 remains part of 523 (Cosmology), 500 (Science), and the overall repository structure simultaneously.
+
+For example:
 
 ```text
 000 → Computer science, information & general works
@@ -88,7 +90,7 @@ Domain-Papers uses a decimal classification structure inspired by the Dewey Deci
 530 → Physics
 ```
 
-The classification hierarchy allows documents to be organized, discovered, and related through a shared numerical framework rather than relying solely on folders or keyword tags. As the repository grows, additional decimal subdivisions may be introduced to support new research areas while maintaining continuity with the broader taxonomy.
+The sub-classifications are listing within the individual papers. The classification hierarchy allows documents to be organized, discovered, and related through a shared numerical framework rather than relying solely on folders or keyword tags. As the repository grows, additional decimal subdivisions may be introduced to support new research areas while maintaining continuity with the broader taxonomy.
 
 ### Local Extensions
 
