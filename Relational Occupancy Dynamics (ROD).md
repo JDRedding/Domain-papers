@@ -164,6 +164,7 @@ $$
 $$
 \Sigma = (S, I, D, Q, C) 
 $$  
+
 subject to
 
 $$
