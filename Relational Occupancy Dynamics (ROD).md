@@ -189,7 +189,7 @@ $$
 \Phi = \Phi_K + T_Q, \quad T_Q = \lambda |Q| 
 $$
 
-**4. Triadic Closure** (canonical triad $\tau = (A, B, C)$)  
+**4. Triadic Closure** (canonical triad $\tau = (A, B, C)$ )  
 
 $$
 \Omega(\tau) = R_{AB} + R_{BC} + R_{CA} $$  
