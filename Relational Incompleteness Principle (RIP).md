@@ -202,7 +202,7 @@ $$
 $$
 
 ### Category-Theoretic Interpretation
-Localization is a forgetful functor whose forgotten morphisms are necessary for global closure. The forgotten morphism is not recoverable from the localized image alone.
+Localization is a forgetful functor whose forgotten morphisms are necessary for global closure. 
 
 Let $G$ be a global relational geometry and $${Local}(A)$$ a local chart. Localization defines a functor
 
@@ -215,6 +215,7 @@ RIP expresses the failure of $L_A$ to be both faithful and essentially reconstru
 In the triad, vertex $A$ sees the morphisms corresponding to $AB$ and $CA$ but not $BC$. A category theorist would therefore phrase RIP as: localization is a forgetful functor, and the forgotten morphisms are not recoverable from the image object.
 
 ### Sheaf-Theoretic Interpretation
+The forgotten morphism is not recoverable from the localized image alone.
 
 Local charts $U_A$, $U_B$, $U_C$ hold partial information. The global object exists only after gluing:
 
