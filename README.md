@@ -117,6 +117,7 @@ Key themes: **civilizational timelines**, **archaeology**.
 
 Domain-Papers uses a decimal classification structure inspired by the Dewey Decimal Classification (DDC) system. The classification number serves not only as a location within the repository but also as descriptive metadata. Each additional decimal place increases specificity while preserving the document's broader context within the overall knowledge structure. For example:
 
+```text
 000 → Computer science, information & general works
 001 → Knowledge
 004 → Data processing & computer science
@@ -127,6 +128,7 @@ Domain-Papers uses a decimal classification structure inspired by the Dewey Deci
 516 → Geometry
 523 → Cosmology
 530 → Physics
+```
 
 The classification hierarchy allows documents to be organized, discovered, and related through a shared numerical framework rather than relying solely on folders or keyword tags. As the repository grows, additional decimal subdivisions may be introduced to support new research areas while maintaining continuity with the broader taxonomy.
 
