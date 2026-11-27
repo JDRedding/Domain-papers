@@ -3,8 +3,6 @@
 
 The **domain‑papers** repository is a ten‑domain container that mirrors a decimal system’s top‑level classes. Each folder represents a distinct knowledge territory — a conceptual region where papers, notes, mappings, and analyses can accumulate, evolve, and cross‑pollinate. The structure is intentionally broad and durable, giving a stable taxonomy for organizing research across disciplines while remaining flexible enough to support emergent, interdisciplinary work.
 
-This repository functions as a **living research library**. Works may remain here indefinitely as standalone artifacts, or they may later be extracted into dedicated repositories as they mature into larger research programs, formal papers, or software projects. The library is designed to support both incubation and expansion without forcing premature consolidation.
-
 ---
 
 ## What is Domain-Papers?
@@ -20,6 +18,8 @@ In this sense, Domain-Papers functions simultaneously as:
 - A theory incubator
 - A historical archive
 
+This repository functions as a **living research library**. Works may remain here indefinitely as standalone artifacts, or they may later be extracted into dedicated repositories as they mature into larger research programs, formal papers, or software projects. The library is designed to support both incubation and expansion without forcing premature consolidation.
+
 ---
 
 ## Purpose and Identity  
@@ -32,6 +32,22 @@ At its core, domain‑papers is a **long‑horizon intellectual workspace**. It 
 - **Continuity** — preserving the lineage of ideas, even after extraction.
 
 This makes the repository valuable not only for active researchers but also for future users who want to understand how concepts emerged, interacted, and transformed over time.
+
+### Major Research Themes
+
+Recurring themes include:
+
+- Relational Dynamic Geometry (RDG)
+- Momentum Flux Engine (MFE)
+- Quotient / Residual (Q) structures
+- Structure–Interaction–Dynamics (SID)
+- Power–Evaluation–Dynamics (PED)
+- Relational Incompleteness Principle (RIP)
+- Mathematical archaeology
+- Cosmology and large-scale structure
+- Systems theory
+- Closure and stability
+- Emergent continuum models
 
 ---
 
