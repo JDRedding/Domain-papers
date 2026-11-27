@@ -249,7 +249,7 @@ $$
 
 is simultaneously injective, fully relationally preserving, and reconstructively complete.
 
-*Proof sketch.* RIP asserts that the complete relational state $\Omega(G)$ is not localized. Suppose such an embedding exists. Injectivity and full preservation imply that all relational information survives localization; reconstructive completeness implies that $\Omega(G)$ can be recovered from $${Local}(A)$. The complete relational state would therefore reside in the local chart, contradicting RIP. Hence no such embedding exists. $\square$
+*Proof sketch.* RIP asserts that the complete relational state $\Omega(G)$ is not localized. Suppose such an embedding exists. Injectivity and full preservation imply that all relational information survives localization; reconstructive completeness implies that $\Omega(G)$ can be recovered from $${Local}(A)$$. The complete relational state would therefore reside in the local chart, contradicting RIP. Hence no such embedding exists. $\square$
 
 ### Formal Proof Sketch 3: Closure Is Not Circularity
 
