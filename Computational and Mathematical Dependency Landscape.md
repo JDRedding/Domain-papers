@@ -408,6 +408,9 @@ Most effects occur through:
 
 rather than immediate technological disruption.
 
+## Closing Summary
+The dependency graph highlights an asymmetry between mathematical fame and practical importance. Many celebrated open problems occupy the outer branches of the mathematical landscape. By contrast, the assumptions that quietly support modern civilization are often less famous: computational hardness, one-way functions, and the cryptographic primitives built upon them. In practical terms, a breakthrough affecting these intermediate assumptions would likely have far greater economic and technological consequences than the resolution of most classical conjectures. The center of the graph is not where the most famous mathematics lives; it is where modern civilization is anchored.
+
 ## Appendix: Mathematical Foundations and Reference Equations
 
 ### Dependency Convention
