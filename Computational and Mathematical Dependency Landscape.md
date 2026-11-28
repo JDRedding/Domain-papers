@@ -408,44 +408,6 @@ Most effects occur through:
 
 rather than immediate technological disruption.
 
-## Appendix: Confidence Spectrum
-
-```text
-EXTREMELY HIGH
-│
-├─ Arithmetic consistency
-├─ AES security
-├─ SHA-2 security
-├─ SHA-3 security
-│
-HIGH
-│
-├─ P ≠ NP
-├─ OWF existence
-├─ Factoring hardness
-├─ ECC hardness
-│
-MODERATE-HIGH
-│
-├─ ETH
-├─ LWE
-├─ SIS
-├─ Code-based assumptions
-│
-MODERATE
-│
-├─ NTRU
-├─ FHE assumptions
-├─ Various ZK assumptions
-│
-LOW CERTAINTY
-│
-├─ RH
-├─ BSD
-├─ Navier-Stokes
-└─ Hodge
-```
-
 ## Appendix: Mathematical Foundations and Reference Equations
 
 ### A.1 Dependency Convention
@@ -995,3 +957,41 @@ $$
 $$  
 
 must be strictly positive.
+
+## Appendix: Confidence Spectrum
+
+```text
+EXTREMELY HIGH
+│
+├─ Arithmetic consistency
+├─ AES security
+├─ SHA-2 security
+├─ SHA-3 security
+│
+HIGH
+│
+├─ P ≠ NP
+├─ OWF existence
+├─ Factoring hardness
+├─ ECC hardness
+│
+MODERATE-HIGH
+│
+├─ ETH
+├─ LWE
+├─ SIS
+├─ Code-based assumptions
+│
+MODERATE
+│
+├─ NTRU
+├─ FHE assumptions
+├─ Various ZK assumptions
+│
+LOW CERTAINTY
+│
+├─ RH
+├─ BSD
+├─ Navier-Stokes
+└─ Hodge
+```
