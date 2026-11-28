@@ -914,7 +914,7 @@ The smallest eigenvalue yields $E_0$.
 #### Riemann Hypothesis
 
 $$
-\zeta(s) = 0 \implies \operatorname{Re}(s) = \tfrac{1}{2}
+\zeta(s) = 0 \implies {Re}(s) = \tfrac{1}{2}
 $$
 
 **Type:** Analytic number theory  
@@ -927,17 +927,17 @@ $$
 \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}
 $$  
 
-for $\operatorname{Re}(s) > 1$, and analytically continued elsewhere.
+for ${Re}(s) > 1$, and analytically continued elsewhere.
 
-**Critical strip:** $0 < \operatorname{Re}(s) < 1$  
-**Critical line:** $\operatorname{Re}(s) = \tfrac{1}{2}$
+**Critical strip:** $0 < {Re}(s) < 1$  
+**Critical line:** ${Re}(s) = \tfrac{1}{2}$
 
 **Claim:** All nontrivial zeros lie on the critical line.
 
 #### Birch–Swinnerton-Dyer
 
 $$
-\operatorname{ord}_{s=1} L(E, s) = \operatorname{rank}(E(\mathbb{Q}))
+{ord}_{s=1} L(E, s) = {rank}(E(\mathbb{Q}))
 $$
 
 **Type:** Arithmetic geometry  
