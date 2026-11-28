@@ -2,6 +2,26 @@
 
 ## A Research Philosophy for Foundational, Constructive, and Democratized Mathematics
 
+#### The Four Generative Outcomes
+
+Throughout this manifesto, the term **generative** refers to discoveries whose dominant effect is to increase the following four outcomes:
+
+1. **Understanding**  
+   Deeper knowledge of structure, mechanism, proof, information, computation, and the nature of systems.
+
+2. **Capability**  
+   Expanded ability to build, reason, teach, verify, and create new tools and methods.
+
+3. **Participation**  
+   Broader access, teachability, independent verification, and intellectual involvement by individuals and communities.
+
+4. **Resilience**  
+   Greater robustness, reduced fragility, and stronger foundations that leave society better able to withstand disruption.
+
+A discovery is considered generative to the degree that it advances these four outcomes more than it increases fragility, attack surface, or dependency failure.
+
+These four outcomes reappear as the recurring criteria by which research is evaluated.
+
 ---
 
 ## Guiding Principle
