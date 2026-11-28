@@ -410,7 +410,7 @@ rather than immediate technological disruption.
 
 ## Appendix: Mathematical Foundations and Reference Equations
 
-### A.1 Dependency Convention
+### Dependency Convention
 
 Throughout this appendix,
 
@@ -426,12 +426,9 @@ $$
 
 indicates that no known direct implication exists.
 
-Cross-references use the form $(\text{Eq. A.n})$.  
-Dependency references use the form $[\text{Depends on A.n}]$.
+### Foundational Consistency
 
-### A.2 Foundational Consistency
-
-#### Equation A.1 — ZFC Consistency
+#### ZFC Consistency
 
 $$
 \mathrm{ZFC} \nvdash 0 = 1
@@ -455,11 +452,11 @@ Complexity theory
 Cryptography  
 
 **Dependencies:**  
-A.1 supports A.2, A.3, A.4, and all later equations.
+Supports Peano arithmetic consistency, P versus NP, SAT, and all later results.
 
 **Confidence:** Extremely high
 
-#### Equation A.2 — Peano Arithmetic Consistency
+#### Peano Arithmetic Consistency
 
 $$
 \mathrm{PA} \nvdash 0 = 1
@@ -483,11 +480,11 @@ Factorization
 ↓  
 RSA  
 
-**Depends on:** (A.1)
+**Depends on:** ZFC consistency
 
-### A.3 Computational Complexity
+### Computational Complexity
 
-#### Equation A.3 — P versus NP
+#### P versus NP
 
 $$
 \mathrm{P} \neq \mathrm{NP}
@@ -520,7 +517,7 @@ Modern cryptography
 - 50+ years of failed attacks  
 - Thousands of reductions  
 
-#### Equation A.4 — SAT
+#### SAT
 
 $$
 \mathrm{SAT}(\varphi) = 1 \quad\text{iff}\quad \exists x : \varphi(x) = \mathrm{True}
@@ -540,9 +537,9 @@ SAT
 ↓  
 Every NP-complete problem  
 
-**References:** (A.3)
+**References:** P versus NP
 
-#### Equation A.5 — Exponential Time Hypothesis
+#### Exponential Time Hypothesis
 
 $$
 T_{3\mathrm{SAT}}(n) = 2^{\Omega(n)}
@@ -563,18 +560,18 @@ SETH
 ↓  
 Hardness of many optimization problems  
 
-#### Equation A.6 — One-Way Functions
+#### One-Way Functions
 
 **Forward direction:**  
 
 $$
-y = f(x) \tag{A.6a}
+y = f(x)
 $$
 
 **Inverse problem:**  
 
 $$
-x = f^{-1}(y) \tag{A.6b}
+x = f^{-1}(y)
 $$
 
 **Type:** Complexity-theoretic primitive  
@@ -596,11 +593,11 @@ Digital signatures
 ↓  
 Public-key cryptography  
 
-**References:** (A.3)
+**References:** P versus NP
 
-### A.4 Integer Factorization
+### Integer Factorization
 
-#### Equation A.7 — Factorization
+#### Factorization
 
 $$
 N = pq
@@ -617,13 +614,13 @@ $$
 **Derivation:** RSA begins from  
 
 $$
-\varphi(N) = (p-1)(q-1) \tag{A.7a}
+\varphi(N) = (p-1)(q-1)
 $$  
 
 Without the factors, $\varphi(N)$ is unknown. Hence the private exponent  
 
 $$
-d \equiv e^{-1} \pmod{\varphi(N)} \tag{A.7b}
+d \equiv e^{-1} \pmod{\varphi(N)}
 $$  
 
 cannot be efficiently computed.
@@ -637,18 +634,18 @@ PKI
 ↓  
 TLS  
 
-#### Equation A.8 — Shor’s Algorithm
+#### Shor’s Algorithm
 
 **Period relation:**  
 
 $$
-a^r \equiv 1 \pmod{N} \tag{A.8a}
+a^r \equiv 1 \pmod{N}
 $$
 
 **Factor extraction:**  
 
 $$
-\gcd(a^{r/2}-1, N) \tag{A.8b}
+\gcd(a^{r/2}-1, N)
 $$
 
 **Type:** Quantum algorithms  
@@ -660,9 +657,9 @@ Factoring
 ↓  
 RSA break  
 
-### A.5 Discrete Logarithms
+### Discrete Logarithms
 
-#### Equation A.9 — Discrete Logarithm
+#### Discrete Logarithm
 
 $$
 g^x \equiv h \pmod{p}
@@ -679,18 +676,18 @@ $$
 **Forward:**  
 
 $$
-h = g^x \tag{A.9a}
+h = g^x
 $$
 
 **Inverse:**  
 
 $$
-x = \log_g(h) \tag{A.9b}
+x = \log_g(h)
 $$
 
 **Hard problem:** Recover $x$ from $(g, h)$.
 
-#### Equation A.10 — Elliptic-Curve Discrete Logarithm
+#### Elliptic-Curve Discrete Logarithm
 
 $$
 Q = kP
@@ -706,13 +703,13 @@ $$
 **Expansion:**  
 
 $$
-Q = \underbrace{P + P + \cdots + P}_{k\text{ times}} \tag{A.10a}
+Q = \underbrace{P + P + \cdots + P}_{k\text{ times}}
 $$
 
 **Inverse problem:**  
 
 $$
-k = \log_P(Q) \tag{A.10b}
+k = \log_P(Q)
 $$
 
 **Dependency:**  
@@ -724,9 +721,9 @@ TLS
 ↓  
 Cryptocurrency wallets  
 
-### A.6 Lattice Cryptography
+### Lattice Cryptography
 
-#### Equation A.11 — Learning With Errors
+#### Learning With Errors
 
 $$
 \mathbf{b} = A\mathbf{s} + \mathbf{e} \pmod{q}
@@ -743,13 +740,13 @@ $$
 **Expansion:** Without noise,  
 
 $$
-\mathbf{b} = A\mathbf{s} \tag{A.11a}
+\mathbf{b} = A\mathbf{s}
 $$  
 
 is easily solved. Adding the noise vector $\mathbf{e}$ produces  
 
 $$
-\mathbf{b} = A\mathbf{s} + \mathbf{e} \tag{A.11b}
+\mathbf{b} = A\mathbf{s} + \mathbf{e}
 $$  
 
 and makes recovery difficult.
@@ -763,7 +760,7 @@ Module-LWE
 ↓  
 ML-KEM  
 
-#### Equation A.12 — Short Integer Solution
+#### Short Integer Solution
 
 $$
 A\mathbf{z} = \mathbf{0} \pmod{q}
@@ -781,7 +778,7 @@ $$
 
 **Applications:** Signatures, commitments, zero-knowledge systems.
 
-#### Equation A.13 — Shortest Vector Problem
+#### Shortest Vector Problem
 
 $$
 \lambda_1(L) = \min_{\mathbf{v} \neq \mathbf{0}} \|\mathbf{v}\|
@@ -802,9 +799,9 @@ Approx-SVP
 ↓  
 LWE security arguments  
 
-### A.7 Hash Functions
+### Hash Functions
 
-#### Equation A.14 — Preimage Resistance
+#### Preimage Resistance
 
 $$
 H(x) = y
@@ -816,7 +813,7 @@ $$
 
 **Difficulty:** Approximately $2^n$ operations for an $n$-bit hash.
 
-#### Equation A.15 — Collision Resistance
+#### Collision Resistance
 
 $$
 H(x) = H(x') \quad\text{with}\quad x \neq x'
@@ -824,11 +821,11 @@ $$
 
 **Expected complexity:** Approximately $2^{n/2}$ via birthday bounds.
 
-**References:** (A.6)
+**References:** One-way functions
 
-### A.8 Zero-Knowledge Systems
+### Zero-Knowledge Systems
 
-#### Equation A.16 — Verifier Acceptance
+#### Verifier Acceptance
 
 $$
 V(x, \pi) = 1
@@ -839,7 +836,7 @@ $$
 **Soundness failure:**  
 
 $$
-V(x, \pi) = 1 \quad\text{while}\quad x \notin L \tag{A.16a}
+V(x, \pi) = 1 \quad\text{while}\quad x \notin L
 $$
 
 **Variables:**  
@@ -854,9 +851,9 @@ Polynomial commitments
 ↓  
 SNARKs  
 
-### A.9 Statistical Physics
+### Statistical Physics
 
-#### Equation A.17 — Partition Function
+#### Partition Function
 
 $$
 Z(\beta) = \sum_s \exp(-\beta H(s))
@@ -872,12 +869,12 @@ $$
 **Derived probability:**  
 
 $$
-P(s) = \frac{\exp(-\beta H(s))}{Z(\beta)} \tag{A.17a}
+P(s) = \frac{\exp(-\beta H(s))}{Z(\beta)}
 $$
 
 **Fundamental:** Every equilibrium expectation derives from $Z(\beta)$.
 
-#### Equation A.18 — Ground-State Energy
+#### Ground-State Energy
 
 $$
 E_0 = \lambda_{\min}(H)
@@ -888,14 +885,14 @@ $$
 **Expansion:**  
 
 $$
-H\mathbf{v} = \lambda\mathbf{v} \tag{A.18a}
+H\mathbf{v} = \lambda\mathbf{v}
 $$
 
 The smallest eigenvalue yields $E_0$.
 
-### A.10 Millennium Problems
+### Millennium Problems
 
-#### Equation A.19 — Riemann Hypothesis
+#### Riemann Hypothesis
 
 $$
 \zeta(s) = 0 \implies \operatorname{Re}(s) = \tfrac{1}{2}
@@ -908,7 +905,7 @@ $$
 **Expansion:**  
 
 $$
-\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} \tag{A.19a}
+\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}
 $$  
 
 for $\operatorname{Re}(s) > 1$, and analytically continued elsewhere.
@@ -918,7 +915,7 @@ for $\operatorname{Re}(s) > 1$, and analytically continued elsewhere.
 
 **Claim:** All nontrivial zeros lie on the critical line.
 
-#### Equation A.20 — Birch–Swinnerton-Dyer
+#### Birch–Swinnerton-Dyer
 
 $$
 \operatorname{ord}_{s=1} L(E, s) = \operatorname{rank}(E(\mathbb{Q}))
@@ -928,7 +925,7 @@ $$
 
 **Interpretation:** The analytic behavior of $L(E, s)$ encodes the number of independent rational points on $E$.
 
-#### Equation A.21 — Navier–Stokes
+#### Navier–Stokes
 
 $$
 \frac{\partial\mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u} = -\nabla p + \nu\Delta\mathbf{u}
@@ -942,7 +939,7 @@ $$
 - $-\nabla p$: Pressure force  
 - $\nu\Delta\mathbf{u}$: Viscous diffusion  
 
-#### Equation A.22 — Yang–Mills Mass Gap
+#### Yang–Mills Mass Gap
 
 $$
 \Delta_{\mathrm{YM}} > 0
