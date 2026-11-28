@@ -592,6 +592,7 @@ $$
 - Inverse: $\mathrm{superpoly}(n)$  
 
 **Dependency graph:**  
+```
 OWF  
 ↓  
 Hashes  
@@ -599,6 +600,7 @@ Hashes
 Digital signatures  
 ↓  
 Public-key cryptography  
+```
 
 **References:** P versus NP
 
