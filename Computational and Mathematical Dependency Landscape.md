@@ -442,7 +442,8 @@ $$
 
 **Fundamental:** A contradiction must not be derivable from the ZFC axioms.
 
-**Derivation chain:**  
+**Derivation chain:** 
+```
 ZFC  
 ↓  
 Modern mathematics  
@@ -450,6 +451,7 @@ Modern mathematics
 Complexity theory  
 ↓  
 Cryptography  
+```
 
 **Dependencies:**  
 Supports Peano arithmetic consistency, P versus NP, SAT, and all later results.
@@ -470,6 +472,7 @@ $$
 **Fundamental:** Arithmetic itself remains non-contradictory.
 
 **Derivation:**  
+```
 PA  
 ↓  
 Natural numbers  
@@ -479,6 +482,7 @@ Number theory
 Factorization  
 ↓  
 RSA  
+```
 
 **Depends on:** ZFC consistency
 
@@ -501,6 +505,7 @@ $$
 **Equivalent view:** $\mathrm{SAT} \notin \mathrm{P}$ under standard reductions.
 
 **Derivation path:**  
+```
 SAT  
 ↓  
 NP-complete problems  
@@ -510,6 +515,7 @@ Search hardness
 One-way functions (candidate)  
 ↓  
 Modern cryptography  
+```
 
 **Confidence:** High  
 
@@ -530,12 +536,13 @@ $$
 - $x$: Assignment  
 
 **Derivation:** Cook–Levin  
-
+```
 NP  
 ↓  
 SAT  
 ↓  
 Every NP-complete problem  
+```
 
 **References:** P versus NP
 
@@ -626,6 +633,7 @@ $$
 cannot be efficiently computed.
 
 **Dependency chain:**  
+```
 Factorization  
 ↓  
 RSA  
@@ -633,6 +641,7 @@ RSA
 PKI  
 ↓  
 TLS  
+```
 
 #### Shor’s Algorithm
 
@@ -651,11 +660,13 @@ $$
 **Type:** Quantum algorithms  
 
 **Derivation:**  
+```
 Period finding  
 ↓  
 Factoring  
 ↓  
 RSA break  
+```
 
 ### Discrete Logarithms
 
@@ -713,6 +724,7 @@ k = \log_P(Q)
 $$
 
 **Dependency:**  
+```
 ECDLP  
 ↓  
 ECC  
@@ -720,6 +732,7 @@ ECC
 TLS  
 ↓  
 Cryptocurrency wallets  
+```
 
 ### Lattice Cryptography
 
@@ -752,6 +765,7 @@ $$
 and makes recovery difficult.
 
 **Reduction chain:**  
+```
 Worst-case lattice problems  
 ↓  
 LWE  
@@ -759,6 +773,7 @@ LWE
 Module-LWE  
 ↓  
 ML-KEM  
+```
 
 #### Short Integer Solution
 
@@ -793,11 +808,13 @@ $$
 **Interpretation:** Find the first successive minimum.
 
 **Dependency:**  
+```
 SVP  
 ↓  
 Approx-SVP  
 ↓  
 LWE security arguments  
+```
 
 ### Hash Functions
 
@@ -845,11 +862,13 @@ $$
 - $L$: Language  
 
 **Dependency:**  
+```
 LWE  
 ↓  
 Polynomial commitments  
 ↓  
 SNARKs  
+```
 
 ### Statistical Physics
 
