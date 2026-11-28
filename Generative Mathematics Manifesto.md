@@ -52,7 +52,6 @@ That’s the essence of a generative research philosophy: mathematics as a force
 - [Principle 10: Leave More Structure Behind Than You Found](#principle-10-leave-more-structure-behind-than-you-found)
 - [On Limits and Downstream Effects](#on-limits-and-downstream-effects)
 - [Generative Research Oath](#generative-research-oath)
-- [Guiding Principle](#guiding-principle)
 
 ---
 
