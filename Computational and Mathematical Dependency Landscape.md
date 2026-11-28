@@ -437,7 +437,7 @@ $$
 \mathrm{ZFC} \nvdash 0 = 1
 $$
 
-**Type:** Axiomatic Set Theory  
+**Type:** Axiomatic set theory  
 
 **Variables:**  
 - $0, 1$: Distinguished numerals  
@@ -448,16 +448,16 @@ $$
 **Derivation chain:**  
 ZFC  
 ↓  
-Modern Mathematics  
+Modern mathematics  
 ↓  
-Complexity Theory  
+Complexity theory  
 ↓  
 Cryptography  
 
 **Dependencies:**  
 A.1 supports A.2, A.3, A.4, and all later equations.
 
-**Confidence:** Extremely High
+**Confidence:** Extremely high
 
 #### Equation A.2 — Peano Arithmetic Consistency
 
@@ -465,19 +465,19 @@ $$
 \mathrm{PA} \nvdash 0 = 1
 $$
 
-**Type:** Arithmetic Logic  
+**Type:** Arithmetic logic  
 
 **Variables:**  
-- $\mathrm{PA}$: Peano Arithmetic  
+- $\mathrm{PA}$: Peano arithmetic  
 
 **Fundamental:** Arithmetic itself remains non-contradictory.
 
 **Derivation:**  
 PA  
 ↓  
-Natural Numbers  
+Natural numbers  
 ↓  
-Number Theory  
+Number theory  
 ↓  
 Factorization  
 ↓  
@@ -493,7 +493,7 @@ $$
 \mathrm{P} \neq \mathrm{NP}
 $$
 
-**Type:** Complexity Classes  
+**Type:** Complexity classes  
 
 **Variables:**  
 - $\mathrm{P}$: Deterministic polynomial time  
@@ -506,13 +506,13 @@ $$
 **Derivation path:**  
 SAT  
 ↓  
-NP-Complete Problems  
+NP-complete problems  
 ↓  
-Search Hardness  
+Search hardness  
 ↓  
-One-Way Functions (candidate)  
+One-way functions (candidate)  
 ↓  
-Modern Cryptography  
+Modern cryptography  
 
 **Confidence:** High  
 
@@ -526,7 +526,7 @@ $$
 \mathrm{SAT}(\varphi) = 1 \quad\text{iff}\quad \exists x : \varphi(x) = \mathrm{True}
 $$
 
-**Type:** Boolean Logic  
+**Type:** Boolean logic  
 
 **Variables:**  
 - $\varphi$: Boolean formula  
@@ -548,7 +548,7 @@ $$
 T_{3\mathrm{SAT}}(n) = 2^{\Omega(n)}
 $$
 
-**Type:** Fine-Grained Complexity  
+**Type:** Fine-grained complexity  
 
 **Variables:**  
 - $T_{3\mathrm{SAT}}$: Running time  
@@ -577,7 +577,7 @@ $$
 x = f^{-1}(y) \tag{A.6b}
 $$
 
-**Type:** Complexity-Theoretic Primitive  
+**Type:** Complexity-theoretic primitive  
 
 **Variables:**  
 - $x$: Secret input  
@@ -592,9 +592,9 @@ OWF
 ↓  
 Hashes  
 ↓  
-Digital Signatures  
+Digital signatures  
 ↓  
-Public-Key Cryptography  
+Public-key cryptography  
 
 **References:** (A.3)
 
@@ -606,7 +606,7 @@ $$
 N = pq
 $$
 
-**Type:** Algebraic Number Theory  
+**Type:** Algebraic number theory  
 
 **Variables:**  
 - $p, q$: Large primes  
@@ -618,7 +618,7 @@ $$
 
 $$
 \varphi(N) = (p-1)(q-1) \tag{A.7a}
-$$ 
+$$  
 
 Without the factors, $\varphi(N)$ is unknown. Hence the private exponent  
 
@@ -651,14 +651,14 @@ $$
 \gcd(a^{r/2}-1, N) \tag{A.8b}
 $$
 
-**Type:** Quantum Algorithms  
+**Type:** Quantum algorithms  
 
 **Derivation:**  
-Period Finding  
+Period finding  
 ↓  
 Factoring  
 ↓  
-RSA Break  
+RSA break  
 
 ### A.5 Discrete Logarithms
 
@@ -668,7 +668,7 @@ $$
 g^x \equiv h \pmod{p}
 $$
 
-**Type:** Finite-Field Group Theory  
+**Type:** Finite-field group theory  
 
 **Variables:**  
 - $g$: Generator  
@@ -696,7 +696,7 @@ $$
 Q = kP
 $$
 
-**Type:** Elliptic-Curve Groups  
+**Type:** Elliptic-curve groups  
 
 **Variables:**  
 - $P$: Generator point  
@@ -732,7 +732,7 @@ $$
 \mathbf{b} = A\mathbf{s} + \mathbf{e} \pmod{q}
 $$
 
-**Type:** Lattice Hardness  
+**Type:** Lattice hardness  
 
 **Variables:**  
 - $A$: Public matrix  
@@ -775,7 +775,7 @@ $$
 0 < \|\mathbf{z}\| \leq \beta
 $$
 
-**Type:** Lattice Geometry  
+**Type:** Lattice geometry  
 
 **Derivation:** The trivial solution $\mathbf{z} = \mathbf{0}$ is forbidden. The search target is a small, nonzero $\mathbf{z}$ satisfying the modular equation.
 
@@ -787,7 +787,7 @@ $$
 \lambda_1(L) = \min_{\mathbf{v} \neq \mathbf{0}} \|\mathbf{v}\|
 $$
 
-**Type:** Geometry of Numbers  
+**Type:** Geometry of numbers  
 
 **Variables:**  
 - $L$: Lattice  
@@ -810,7 +810,7 @@ $$
 H(x) = y
 $$
 
-**Type:** Cryptographic Hash  
+**Type:** Cryptographic hash  
 
 **Inverse problem:** Given $y$, find $x$.
 
@@ -834,7 +834,7 @@ $$
 V(x, \pi) = 1
 $$
 
-**Type:** Proof Systems  
+**Type:** Proof systems  
 
 **Soundness failure:**  
 
@@ -850,7 +850,7 @@ $$
 **Dependency:**  
 LWE  
 ↓  
-Polynomial Commitments  
+Polynomial commitments  
 ↓  
 SNARKs  
 
@@ -862,7 +862,7 @@ $$
 Z(\beta) = \sum_s \exp(-\beta H(s))
 $$
 
-**Type:** Statistical Mechanics  
+**Type:** Statistical mechanics  
 
 **Variables:**  
 - $\beta$: Inverse temperature  
@@ -883,7 +883,7 @@ $$
 E_0 = \lambda_{\min}(H)
 $$
 
-**Type:** Quantum Mechanics  
+**Type:** Quantum mechanics  
 
 **Expansion:**  
 
@@ -898,10 +898,10 @@ The smallest eigenvalue yields $E_0$.
 #### Equation A.19 — Riemann Hypothesis
 
 $$
-\zeta(s) = 0 \implies {Re}(s) = \tfrac12
+\zeta(s) = 0 \implies \operatorname{Re}(s) = \tfrac{1}{2}
 $$
 
-**Type:** Analytic Number Theory  
+**Type:** Analytic number theory  
 
 **Variables:** $s = \sigma + it$
 
@@ -911,20 +911,20 @@ $$
 \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} \tag{A.19a}
 $$  
 
-for ${Re}(s) > 1$, and analytically continued elsewhere.
+for $\operatorname{Re}(s) > 1$, and analytically continued elsewhere.
 
-**Critical strip:** $0 < {Re}(s) < 1$  
-**Critical line:** ${Re}(s) = \tfrac12$
+**Critical strip:** $0 < \operatorname{Re}(s) < 1$  
+**Critical line:** $\operatorname{Re}(s) = \tfrac{1}{2}$
 
 **Claim:** All nontrivial zeros lie on the critical line.
 
 #### Equation A.20 — Birch–Swinnerton-Dyer
 
 $$
-{ord}_{s=1} L(E, s) = {rank}(E(\mathbb{Q}))
+\operatorname{ord}_{s=1} L(E, s) = \operatorname{rank}(E(\mathbb{Q}))
 $$
 
-**Type:** Arithmetic Geometry  
+**Type:** Arithmetic geometry  
 
 **Interpretation:** The analytic behavior of $L(E, s)$ encodes the number of independent rational points on $E$.
 
@@ -934,7 +934,7 @@ $$
 \frac{\partial\mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u} = -\nabla p + \nu\Delta\mathbf{u}
 $$
 
-**Type:** Fluid Dynamics  
+**Type:** Fluid dynamics  
 
 **Term-by-term:**  
 - $\partial\mathbf{u}/\partial t$: Local acceleration  
@@ -948,7 +948,7 @@ $$
 \Delta_{\mathrm{YM}} > 0
 $$
 
-**Type:** Quantum Field Theory  
+**Type:** Quantum field theory  
 
 **Interpretation:**  
 
