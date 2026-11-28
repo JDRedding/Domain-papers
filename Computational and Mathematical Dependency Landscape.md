@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Not all mathematical breakthroughs have equal consequences. Some results would be intellectually profound yet have limited immediate practical impact. Others would undermine assumptions that support modern computing, cryptography, finance, and digital infrastructure. The structure below organizes major conjectures, hardness assumptions, and cryptographic primitives according to their dependency relationships, along with an assessment of current evidence and confidence. The folling dependency graph suggests three distinct categories:
+Not all mathematical breakthroughs have equal consequences. Some results would be intellectually profound yet have limited immediate practical impact. Others would undermine assumptions that support modern computing, cryptography, finance, and digital infrastructure. The structure below organizes major conjectures, hardness assumptions, and cryptographic primitives according to their dependency relationships, along with an assessment of current evidence and confidence. The following dependency graph suggests three distinct categories:
 
 ### Foundational
 ZFC → PA → Complexity Theory
