@@ -979,41 +979,114 @@ must be strictly positive.
 
 ## Appendix: Confidence Spectrum
 
-```text
+The confidence spectrum provides a qualitative assessment of the current mathematical and cryptographic consensus regarding the major assumptions, conjectures, and hardness hypotheses discussed in this paper.
+
+It is an informal synthesis of:
+
+- Theoretical evidence  
+- Empirical evidence  
+- Cryptanalytic scrutiny  
+- Historical stability  
+- Expert consensus  
+
+**The spectrum does not represent a formal probability of truth, a Bayesian posterior, or any quantitative measure of certainty.** It is intended solely as a qualitative map of present-day expert judgment.
+
+### Confidence Hierarchy
+
+```
 EXTREMELY HIGH
 │
 ├─ Arithmetic consistency
 ├─ AES security
 ├─ SHA-2 security
-├─ SHA-3 security
-│
+└─ SHA-3 security
+
 HIGH
 │
 ├─ P ≠ NP
-├─ OWF existence
-├─ Factoring hardness
-├─ ECC hardness
-│
+├─ Existence of one-way functions
+├─ Integer-factorization hardness
+└─ Elliptic-curve discrete-log hardness
+
 MODERATE-HIGH
 │
-├─ ETH
-├─ LWE
-├─ SIS
-├─ Code-based assumptions
-│
+├─ Exponential Time Hypothesis (ETH)
+├─ Learning With Errors (LWE)
+├─ Short Integer Solution (SIS)
+└─ Code-based assumptions
+
 MODERATE
 │
-├─ NTRU
-├─ FHE assumptions
-├─ Various ZK assumptions
-├─ RH
-│
+├─ NTRU assumptions
+├─ Fully homomorphic encryption assumptions
+├─ Various zero-knowledge assumptions
+└─ Riemann Hypothesis
+
 LOW CERTAINTY
 │
-├─ BSD
-├─ Navier-Stokes
-└─ Hodge
+├─ Birch–Swinnerton-Dyer conjecture
+├─ Navier–Stokes existence and smoothness
+└─ Hodge conjecture
 ```
+
+### Interpretation
+
+**Extremely High**  
+Assumptions or constructions that have survived decades of intense mathematical and cryptographic scrutiny with no credible evidence of failure.  
+
+Representative examples: arithmetic consistency, AES, SHA-2, SHA-3.  
+
+A failure would be regarded as highly surprising given current knowledge.
+
+**High**  
+Problems or assumptions supported by substantial theoretical and empirical evidence, yet lacking formal proof.  
+
+Representative examples: P ≠ NP, existence of one-way functions, factoring hardness, elliptic-curve discrete-log hardness.  
+
+Most experts currently regard these assumptions as likely true.
+
+**Moderate-High**  
+Assumptions with strong supporting evidence but a comparatively shorter history of analysis or a less mature theoretical foundation.  
+
+Representative examples: ETH, LWE, SIS, code-based cryptography.  
+
+These assumptions are widely trusted in practice yet remain active areas of research.
+
+**Moderate**  
+Assumptions or conjectures with meaningful supporting evidence but greater residual uncertainty regarding their long-term status.  
+
+Representative examples: NTRU assumptions, fully homomorphic encryption assumptions, certain zero-knowledge assumptions, Riemann Hypothesis.  
+
+Support exists, yet confidence is lower than for the assumptions that underpin mainstream cryptography.
+
+**Low Certainty**  
+Major open conjectures for which existing evidence remains insufficient to support a strong consensus regarding ultimate resolution.  
+
+Representative examples: Birch–Swinnerton-Dyer conjecture, Navier–Stokes existence and smoothness, Hodge conjecture.  
+
+These problems remain among the most uncertain high-profile statements in modern mathematics.
+
+### Notes
+
+Confidence should not be confused with importance. An assumption may enjoy very high confidence while occupying a comparatively low position in the dependency hierarchy of Appendix B.
+
+Confidence and severity measure distinct quantities:
+
+- **Confidence**: “How strong is the current evidence that the statement is true?”  
+- **Severity**: “How widely do systems break if the statement is false?”  
+
+Mathematical significance and dependency significance are likewise distinct. The Riemann Hypothesis is arguably more mathematically celebrated than the security of AES, yet a practical break of AES would have vastly greater immediate societal consequences.
+
+The confidence spectrum is offered as a qualitative snapshot of current understanding, not as a definitive or permanent ranking.
+
+### Relationship to the Dependency Graph
+
+```
+High Confidence   ≠   High Severity
+Low Confidence    ≠   Low Importance
+```
+
+A statement’s position on the confidence spectrum reflects the strength of present evidence, while its position on the dependency graph reflects the breadth of systems that rely upon it. Together, the two dimensions provide a more complete picture of the computational and mathematical dependency landscape.
 
 ## Appendix: Severity Scale
 
