@@ -398,9 +398,7 @@ Potential acceleration of:
 
 ### Practical Consequence
 
-Usually indirect.
-
-Most effects occur through:
+Usually indirect. Most Millennium Problems are mathematically deeper than many cryptographic assumptions but are less central to the operation of modern technological infrastructure. Most effects occur through:
 
 - new techniques
 - new theories
@@ -1016,3 +1014,27 @@ LOW CERTAINTY
 ├─ Navier-Stokes
 └─ Hodge
 ```
+
+## Appendix: Severity Scale
+
+The paper already implicitly relies on a severity scale for cryptographic assumptions and their consequences. This appendix makes the scale explicit.
+
+### Severity Levels
+
+| Level | Emoji | Category       | Description                                      |
+|-------|-------|----------------|--------------------------------------------------|
+| S0    | 🟩    | Foundational   | Mathematics itself                               |
+| S1    | 🟩    | Complexity     | Efficient computation assumptions                |
+| S2    | 🟨    | Hardness       | Algebraic and combinatorial hardness assumptions |
+| S3    | 🟨    | Primitive      | Encryption, hashing, and digital signatures      |
+| S4    | 🟧    | Protocol       | TLS, PKI, zero-knowledge proofs, and blockchains |
+| S5    | 🟥    | Infrastructure | Internet trust and financial systems             |
+| S6    | 🟥    | Societal       | Economic and institutional impacts               |
+
+**Spectrum colors**  
+🟩 green → 🟨 yellow → 🟧 orange → 🟥 red  
+
+**Notes**  
+- Levels are cumulative: each higher level depends on the assumptions of the levels below it.  
+- “Hardness” (S2) refers to specific computational hardness assumptions (e.g., discrete log, factoring, lattice problems).  
+- Protocol-level systems (S4) are composed of primitives (S3) and rest on the hardness and complexity assumptions of S1–S2.
