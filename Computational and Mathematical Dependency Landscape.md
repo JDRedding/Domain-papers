@@ -1017,24 +1017,134 @@ LOW CERTAINTY
 
 ## Appendix: Severity Scale
 
-The paper already implicitly relies on a severity scale for cryptographic assumptions and their consequences. This appendix makes the scale explicit.
+The paper implicitly relies on a hierarchy of consequences associated with mathematical, computational, and cryptographic assumptions. This appendix makes that hierarchy explicit.
 
 ### Severity Levels
 
-| Level | Emoji | Category       | Description                                      |
-|-------|-------|----------------|--------------------------------------------------|
-| S0    | 🟩    | Foundational   | Mathematics itself                               |
-| S1    | 🟩    | Complexity     | Efficient computation assumptions                |
-| S2    | 🟨    | Hardness       | Algebraic and combinatorial hardness assumptions |
-| S3    | 🟨    | Primitive      | Encryption, hashing, and digital signatures      |
-| S4    | 🟧    | Protocol       | TLS, PKI, zero-knowledge proofs, and blockchains |
-| S5    | 🟥    | Infrastructure | Internet trust and financial systems             |
-| S6    | 🟥    | Societal       | Economic and institutional impacts               |
+| Level | Emoji | Category       | Description                                                                 |
+|-------|-------|----------------|-----------------------------------------------------------------------------|
+| S0    | 🟩    | Foundational   | Mathematics itself                                                          |
+| S1    | 🟩    | Complexity     | Efficient-computation assumptions                                           |
+| S2    | 🟨    | Hardness       | Algebraic and combinatorial hardness assumptions                            |
+| S3    | 🟨    | Primitive      | Encryption, hashing, and digital-signature primitives                       |
+| S4    | 🟧    | Protocol       | TLS, PKI, zero-knowledge systems, and blockchain protocols                  |
+| S5    | 🟥    | Infrastructure | Internet trust, financial systems, software distribution, and digital identity |
+| S6    | 🟥    | Societal       | Economic, governmental, and institutional consequences                      |
 
-**Spectrum colors**  
-🟩 green → 🟨 yellow → 🟧 orange → 🟥 red  
+**Spectrum**  
+🟩 Green → 🟨 Yellow → 🟧 Orange → 🟥 Red  
 
-**Notes**  
-- Levels are cumulative: each higher level depends on the assumptions of the levels below it.  
-- “Hardness” (S2) refers to specific computational hardness assumptions (e.g., discrete log, factoring, lattice problems).  
-- Protocol-level systems (S4) are composed of primitives (S3) and rest on the hardness and complexity assumptions of S1–S2.
+The color spectrum reflects increasing dependency breadth and real-world impact. Movement upward in the scale corresponds to progressively larger portions of modern civilization relying on the assumptions below.
+
+### Dependency Structure
+
+```
+S0  Foundational
+ │
+ ▼
+S1  Complexity
+ │
+ ▼
+S2  Hardness
+ │
+ ▼
+S3  Primitives
+ │
+ ▼
+S4  Protocols
+ │
+ ▼
+S5  Infrastructure
+ │
+ ▼
+S6  Societal Systems
+```
+
+### Interpretation
+
+**S0: Foundational**  
+Representative assumptions:  
+- Consistency of ZFC (ZFC ⊬ 0 = 1)  
+- Consistency of Peano arithmetic (PA ⊬ 0 = 1)  
+
+Failure would call into question the consistency of formal mathematics itself.
+
+**S1: Complexity**  
+Representative assumptions:  
+- P ≠ NP  
+- Exponential Time Hypothesis (ETH)  
+- Strong Exponential Time Hypothesis (SETH)  
+- Existence of one-way functions  
+
+Failure would fundamentally alter the landscape of efficient computation.
+
+**S2: Hardness**  
+Representative assumptions:  
+- Integer factorization  
+- Discrete logarithm  
+- Learning With Errors (LWE)  
+- Short Integer Solution (SIS)  
+- NTRU  
+- Syndrome decoding  
+
+Failure would invalidate specific computational hardness assumptions used throughout cryptography.
+
+**S3: Primitive**  
+Representative constructions:  
+- RSA  
+- Elliptic-curve cryptography (ECC)  
+- Diffie–Hellman  
+- AES  
+- SHA-2 / SHA-3  
+- ChaCha20  
+- ML-KEM  
+- ML-DSA  
+
+Failure would compromise the cryptographic building blocks upon which protocols are constructed.
+
+**S4: Protocol**  
+Representative systems:  
+- TLS  
+- Public-key infrastructure (PKI)  
+- VPNs  
+- SNARKs  
+- Fully homomorphic encryption (FHE) schemes  
+- Blockchain protocols  
+
+Failure would undermine trust, authentication, and secure communication systems.
+
+**S5: Infrastructure**  
+Representative systems:  
+- Internet trust  
+- Software distribution  
+- Digital identity  
+- Financial networks  
+- Cloud infrastructure  
+
+Failure would impair large-scale technological infrastructure.
+
+**S6: Societal**  
+Representative consequences:  
+- Banking disruption  
+- E-commerce disruption  
+- Government-service disruption  
+- Institutional trust failures  
+- Economic instability  
+
+Failure would propagate beyond technical systems into social, economic, and governmental domains.
+
+### Notes
+
+- Severity levels are cumulative: each level depends upon the assumptions and systems below it.
+- The scale measures consequence propagation rather than mathematical difficulty. A mathematically deep result may occupy a lower severity level than a comparatively simple cryptographic assumption.
+- “Hardness” (S2) refers to specific computational hardness assumptions, including factorization, discrete logarithms, lattice problems, and coding-theoretic problems.
+- Protocol-level systems (S4) are constructed from primitives (S3) and ultimately rest upon complexity and hardness assumptions at levels S1–S2.
+- Mathematical importance and dependency importance are distinct concepts. A conjecture may be mathematically profound while occupying a relatively peripheral position in the dependency hierarchy.
+
+### Guiding Principle
+
+```
+Mathematical Importance  ≠  Dependency Importance
+```
+
+The severity scale measures dependency importance: how widely a failure propagates through the computational, cryptographic, technological, and societal stack. A result’s position in this hierarchy should not be interpreted as a measure of mathematical depth, elegance, or intellectual significance.
