@@ -1008,10 +1008,10 @@ MODERATE
 ├─ NTRU
 ├─ FHE assumptions
 ├─ Various ZK assumptions
+├─ RH
 │
 LOW CERTAINTY
 │
-├─ RH
 ├─ BSD
 ├─ Navier-Stokes
 └─ Hodge
